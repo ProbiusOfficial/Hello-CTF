@@ -216,7 +216,7 @@ Web入门只要能看懂网页就行，首先是 三件套 HTML + CSS + **Javasc
 - SSRF
 - 逃逸
 
-如果你想了解更多 或者前沿 可以参考 **OWASP（Open Web Application Security Project）**计划
+如果你想了解更多 或者前沿 可以参考 **OWASP（Open Web Application Security Project)** 计划
 
 ※ **入门需要的工具和Trick**
 
