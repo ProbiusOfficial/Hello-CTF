@@ -338,7 +338,7 @@ Python3环境
 
 ※ **入门需要的工具和Trick**
 
-- DA Pro （注意 这里尽量选择高版本的 ⽽且 不要追求汉化）
+- IDA Pro （注意 这里尽量选择高版本的 ⽽且 不要追求汉化）
 - OllyDbg x64dbg
 - GUN Binary Utilities
 - GDB 调试器
