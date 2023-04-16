@@ -1,5 +1,8 @@
 # CTF快速入门手册
 
+注：图片资源放于Github文件夹中 可能会被魔法工具 如果你在国内可以访问我的博客  
+**[CTF快速入门手册](https://blog.probius.xyz/2023/04/16/CTF%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C/)**
+
 ## 嗯？这是个什么x
 
 ![LitCTF_Head (3)](https://user-images.githubusercontent.com/41804496/232274439-5df63ef1-1820-4e3c-8014-5dfb098e5dd9.png)
