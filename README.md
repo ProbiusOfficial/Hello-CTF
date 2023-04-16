@@ -110,7 +110,7 @@ Bugku [https://ctf.bugku.com/](https://ctf.bugku.com/) （AWD做的比较好）
 
 ## 刷题指南？——嘿！为什么不能指北？
 
-![Untitled](CTF-QuickStart_img/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/41804496/232275694-5411c38e-1c80-4fb0-9eee-5d3c9d0fb94f.png)
 
 CTF题目开启的基本形式如下：
 
@@ -120,13 +120,13 @@ CTF题目开启的基本形式如下：
 
   - web靶机 —— 通常为 `ip:prot / domain:prot`
 
-    ![Untitled](CTF-QuickStart_img/Untitled%201.png)
+    ![Untitled 1](https://user-images.githubusercontent.com/41804496/232275726-38bbedbe-02dc-4a43-b2fd-6a460bb3159c.png)
 
     eg：`1.11.45.14:1919` / `node3.anna.nssctf.cn:28622` 
 
     这样的靶机可以直接在浏览器中访问：
 
-    ![Untitled](CTF-QuickStart_img/Untitled%202.png)
+    ![Untitled 2](https://user-images.githubusercontent.com/41804496/232275794-9868dbdd-b8cf-4e9b-baa3-20a3209c8f63.png)
 
   - nc 靶机 给出的形式和Web靶机类似：`ip:prot` / `domain:prot`
 
@@ -134,13 +134,13 @@ CTF题目开启的基本形式如下：
 
     也有部分靶机给出时会明显带上nc ：`nc ip prot` / `nc domain prot` 
 
-    ![Untitled](CTF-QuickStart_img/Untitled%203.png)
+    ![Untitled 3](https://user-images.githubusercontent.com/41804496/232275821-840e6c52-7fd3-4eb0-970f-21bef3ba64c6.png)
 
     这样的靶机不能直接在浏览器中访问，需要使用nc工具连接，通常在Linux系统中接入 或者使用某些工具进行交互 如 `pwntool`
 
 - 当然也有可能附件和靶机都有 比如 web 涉及到源码审计的时候 也有的nc交互给nc后台的脚本 各种类似的情况
 
-  ![Untitled](CTF-QuickStart_img/Untitled%204.png)
+  ![Untitled 4](https://user-images.githubusercontent.com/41804496/232275846-4bbe56f9-37ea-4912-bba1-9f3fa40d6a5c.png)
 
 ## 那大师，能指条明路么？
 
@@ -264,9 +264,9 @@ Web 入门不会太难 但是和MISC一样 Web是一个维度很广的方向 所
 
 [BUUCTF](https://buuoj.cn/) / [QsnCTF](https://www.qsnctf.com/) 几大经典靶场 —— ****Upload-Labs sqli-labs PikaChu Web-DVWA  XSS-Lab……****
 
-![Untitled](CTF-QuickStart_img/Untitled%205.png)
+![Untitled 5](https://user-images.githubusercontent.com/41804496/232275977-5a689d55-fda7-4173-a687-0bcaee00bf5a.png)
 
-![Untitled](CTF-QuickStart_img/Untitled%206.png)
+![Untitled 6](https://user-images.githubusercontent.com/41804496/232275998-ad7590f3-cc05-4073-befd-1f1b9ae38e9b.png)
 
 ### ✨Crypto
 
@@ -278,7 +278,7 @@ Web 入门不会太难 但是和MISC一样 Web是一个维度很广的方向 所
 
 古典密码参考：
 
-![Untitled](CTF-QuickStart_img/Untitled%207.png)
+![Untitled 7](https://user-images.githubusercontent.com/41804496/232276044-c0e54a60-408d-4c9c-8b1b-5132069ca465.png)
 
 那么现代密码学呢？
 
@@ -294,11 +294,11 @@ Python3环境
 
 [Crypto系列——RSA（一） | NSSCTF](https://www.nssctf.cn/problem/sheet/7142)
 
-![Untitled](CTF-QuickStart_img/Untitled%208.png)
+![Untitled 8](https://user-images.githubusercontent.com/41804496/232276058-eddc1e08-bde5-42fe-95b1-6961a8585b53.png)
 
-![Untitled](CTF-QuickStart_img/Untitled%209.png)
+![Untitled 9](https://user-images.githubusercontent.com/41804496/232276070-1002e7d5-cce5-4fda-b776-4d36437ce7a1.png)
 
-![Untitled](CTF-QuickStart_img/Untitled%2010.png)
+![Untitled 10](https://user-images.githubusercontent.com/41804496/232276084-2d30222d-6851-4ad4-99f9-a5a6e7858aa1.png)
 
 目前定价是1980金币 双倍首冲的话 9.8块钱就能拿下x
 
@@ -344,7 +344,7 @@ Python3环境
 
   刷题时 可配合[WriteUp](https://dqgom7v7dl.feishu.cn/docx/doxcnFESSimJ4UEvZK9ja8ZnArg)食用 [‌⁢⁣‌⁤HNCTF REVERSE Writeup - 飞书云文档 (feishu.cn)](https://dqgom7v7dl.feishu.cn/docx/doxcnFESSimJ4UEvZK9ja8ZnArg)
 
-  ![Untitled](CTF-QuickStart_img/Untitled%2011.png)
+  ![Untitled 11](https://user-images.githubusercontent.com/41804496/232276161-36cd3589-3c6b-49e6-85f6-5b04e76ed50f.png)
 
 - 然后可以尝试NSS其他逆向题目
 
