@@ -123,7 +123,7 @@ CTF题目开启的基本形式如下：
 
 - 容器 （常见于Web Pwn 也有可能见于 Misc Crypto ……）
 
-  - web靶机 —— 通常为 `ip:prot / domain:prot`
+  - web靶机 —— 通常为 `ip:port / domain:port`
 
     ![Untitled 1](https://user-images.githubusercontent.com/41804496/232275726-38bbedbe-02dc-4a43-b2fd-6a460bb3159c.png)
 
@@ -133,11 +133,11 @@ CTF题目开启的基本形式如下：
 
     ![Untitled 2](https://user-images.githubusercontent.com/41804496/232275794-9868dbdd-b8cf-4e9b-baa3-20a3209c8f63.png)
 
-  - nc 靶机 给出的形式和Web靶机类似：`ip:prot` / `domain:prot`
+  - nc 靶机 给出的形式和Web靶机类似：`ip:port` / `domain:port`
 
-    也有可能没有`:` `ip prot` / `domain prot` 
+    也有可能没有`:` `ip port` / `domain port` 
 
-    也有部分靶机给出时会明显带上nc ：`nc ip prot` / `nc domain prot` 
+    也有部分靶机给出时会明显带上nc ：`nc ip port` / `nc domain port` 
 
     ![Untitled 3](https://user-images.githubusercontent.com/41804496/232275821-840e6c52-7fd3-4eb0-970f-21bef3ba64c6.png)
 
@@ -413,5 +413,6 @@ PWN主要考察栈溢出、堆溢出、格式化字符串漏洞等常规的二�
 
 ※ **友情链接**：**[看雪论坛-安全社区|安全招聘|bbs.pediy.com (kanxue.com)](https://bbs.kanxue.com/)** 
 
-### ✨想看更多？欢迎各位团队来添加链接哦~
+### ✨想看更多？欢迎各位团队来添加链接哦~  
+
 - **[渊龙Sec安全团队导航](https://dh.aabyss.cn/)**
