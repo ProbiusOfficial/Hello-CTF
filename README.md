@@ -395,6 +395,7 @@ PWN主要考察栈溢出、堆溢出、格式化字符串漏洞等常规的二�
 
 这里稍微推荐一点学习资源x
 
+- [Roder师傅](https://space.bilibili.com/3461577038629345) 的PWN训练营系列  
 - [星盟安全团队](https://space.bilibili.com/489643272) 的PWN系列教程
 - [芥燃斯基](https://www.bilibili.com/video/BV1XA411S7Xo/) 的无痛入门PWN系列
 
