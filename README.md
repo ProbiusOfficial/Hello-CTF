@@ -28,7 +28,7 @@
 
 ### 📚目录
 - [快速开始](QuickStart.md)
-
+- [NSSCTF平台食用指南](NSSCTF平台食用指南.md)
 ---
 <center> <h4>为了方便新手的阅读体验，下面内容在构建未完善之前，会一直保留，但我们推荐你移步至<a href="QuickStart.md">快速开始</a> 文档中阅读。</h4> </center>  
 
