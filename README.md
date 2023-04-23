@@ -1,7 +1,14 @@
-<center> <h1>🚀CTF快速入门手册 </h1> </center>  
-
 ![LitCTF_Head (3)](https://user-images.githubusercontent.com/41804496/232274439-5df63ef1-1820-4e3c-8014-5dfb098e5dd9.png)
- 
+<center> <h2>🚀CTF快速入门手册 </h2> </center>  
+<div align="center">
+    <a href="https://probius.notion.site/CTF-755ace0f99cd488d86febf12cf2c2e5e"> <img src="https://badgen.net/badge/Notion/%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB?icon=chrome&color=ac56f4"></a>
+    <a href="https://github.com/ProbiusOfficial/CTF-QuickStart"> <img src="https://badgen.net/github/stars/ProbiusOfficial/CTF-QuickStart?icon=github&color=ac56f4"></a>
+    <a href="https://github.com/ProbiusOfficial/CTF-QuickStart"> <img src="https://badgen.net/github/forks/ProbiusOfficial/CTF-QuickStart?icon=github&color=ac56f4"></a>
+    <a href="https://github.com/ProbiusOfficial/CTF-QuickStart/blob/main/LICENSE"> <img src="https://badgen.net/badge/license/GNU/"></a>
+   
+   
+</div>
+
  ### ❔这是什么
 - 这是一个面向0基础 想入门CTF新手的快速入门手册，写她的原因很简单，因为经常遇到这样一个现象，新人问，我该咋样入门CTF的适合，每次都得思考一下，手边也一时间也拿不出合适的资料，也找不到比较完整的体系文档，所以我编写了这个项目来应对这种情况x。
 - 此外，针对国内高校CTF战队难以找到合适的培训资料的问题，我们也整理了一些培训用到的文档 / PPT / 视频 / 以及其他资源，希望他们对你有用www。
