@@ -1,6 +1,7 @@
 ![LitCTF_Head (3)](https://user-images.githubusercontent.com/41804496/232274439-5df63ef1-1820-4e3c-8014-5dfb098e5dd9.png)
-<center> <h2>🚀CTF快速入门手册 </h2> </center>  
+
 <div align="center">
+     <h2>🚀CTF快速入门手册 </h2> 
     <a href="https://probius.notion.site/CTF-755ace0f99cd488d86febf12cf2c2e5e"> <img src="https://badgen.net/badge/Notion/%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB?icon=chrome&color=ac56f4"></a>
     <a href="https://github.com/ProbiusOfficial/CTF-QuickStart"> <img src="https://badgen.net/github/stars/ProbiusOfficial/CTF-QuickStart?icon=github&color=ac56f4"></a>
     <a href="https://github.com/ProbiusOfficial/CTF-QuickStart"> <img src="https://badgen.net/github/forks/ProbiusOfficial/CTF-QuickStart?icon=github&color=ac56f4"></a>
