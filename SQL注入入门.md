@@ -104,13 +104,13 @@ SELECT 列名1, 列名2, ... FROM 表名 WHERE 条件
   DROP sampletable;# 后面的内容都将被注释
   ```
   
-```sql
-  DROP/*comment*/sampletable`   DR/**/OP/*绕过过滤*/sampletable`   SELECT/*替换空格*/password/**/FROM/**/Members #/**/可用于替换空格
-  #/*中间的内容都将被注释*/
-```
+  ```sql
+    DROP/*comment*/sampletable`   DR/**/OP/*绕过过滤*/sampletable`    SELECT/*替换空格*/password/**/FROM/**/Members #/**/可用于替换空格
+    #/*中间的内容都将被注释*/
+  ```
 
   ```sql
-  SELECT /*!32302 1/0, */ 1 FROM tablename #这种 /*! 注释仅在MySQL中存在
+    SELECT /*!32302 1/0, */ 1 FROM tablename #这种 /*! 注释仅在MySQL中存在
   ```
 
 - `Order by`
