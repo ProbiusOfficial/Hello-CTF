@@ -5,7 +5,7 @@
     <a href="https://probius.notion.site/CTF-755ace0f99cd488d86febf12cf2c2e5e"> <img src="https://badgen.net/badge/Notion/%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB?icon=chrome&color=ac56f4"></a>
     <a href="https://github.com/ProbiusOfficial/CTF-QuickStart"> <img src="https://badgen.net/github/stars/ProbiusOfficial/CTF-QuickStart?icon=github&color=ac56f4"></a>
     <a href="https://github.com/ProbiusOfficial/CTF-QuickStart"> <img src="https://badgen.net/github/forks/ProbiusOfficial/CTF-QuickStart?icon=github&color=ac56f4"></a>
-    <a href="https://github.com/ProbiusOfficial/CTF-QuickStart/blob/main/LICENSE"> <img src="https://badgen.net/badge/license/GNU/"></a>
+    <a href="https://github.com/ProbiusOfficial/CTF-QuickStart/blob/main/LICENSE"> <img src="https://badgen.net/badge/license/GPL/"></a>
    
    
 </div>
