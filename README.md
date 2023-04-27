@@ -86,7 +86,8 @@
           "其他说明": "官方QQ群①：568747643  ﻿官方QQ群②： 779329249  ﻿官方QQ群③：780247795  ﻿官方QQ群④： 797605821"
       },
     ```
-  - 加入赛事群获取
+  - 加入赛事群获取  
+  
     [![CTF赛事通知报名群](https://img.shields.io/badge/CTF赛事通知报名群-734535934-black)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=38s-tPEVrv3hVMNEUXiNkumy5khQuS-j&authKey=6aQuubgO2nQDOK%2Bf6N1tm2Yw7Eo45TLU21IH3ek1KslG3XIcm2LOjS9EOOzyncN2&noverify=0&group_code=734535934)
     [![CTF赛事通知报名群(满)](https://img.shields.io/badge/CTF赛事通知报名群(满)-829089482-black)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=cRU05F4Cicj4Ze6jEb9NeDrxgzIfTGpk&authKey=lAbuNnRkKKkt6Rmitby04CiPw2wLrlfS%2BPYNKNBR%2FuIwPeLT8tLox65s07moRdob&noverify=0&group_code=829089482)  
   
