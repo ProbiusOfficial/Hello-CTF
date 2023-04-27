@@ -21,9 +21,9 @@
 - 我是新手，我想入门CTF: [点我前往入门文档！](QuickStart.md) 
 - 我还有其他需求: 详细请查看目录索引，如果缺少某些内容，欢迎提issue或者PR。
 - 其他反馈渠道：
-  - 通过B站私信反馈：[探姬_Official](https://space.bilibili.com/27109929)
-  - 通过填写反馈表（无需登录）：[点我填写反馈表](https://f.kdocs.cn/g/CwnhSjjK/)
-  - 通过QQ群聊反馈：[点击加入反馈群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=wJ35e-T-qSlU7Y3Cs-PAasrAvZfRSc9k&authKey=WNEQbZUpolxgfKjUHHoUIoTBvSnvk2jZtcyWlhaDcUZ6ZYGgvywqi1ah5D7UwUrg&noverify=0&group_code=590430891)  
+  - 通过B站私信反馈：[探姬_Official](https://space.bilibili.com/27109929)  
+  - 通过填写反馈表（无需登录）：[点我填写反馈表](https://f.kdocs.cn/g/CwnhSjjK/)  
+  - 通过QQ群聊反馈：[点击加入反馈群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=wJ35e-T-qSlU7Y3Cs-PAasrAvZfRSc9k&authKey=WNEQbZUpolxgfKjUHHoUIoTBvSnvk2jZtcyWlhaDcUZ6ZYGgvywqi1ah5D7UwUrg&noverify=0&group_code=590430891)    
 
 
  ### 🔔公告
@@ -45,6 +45,7 @@
 - 
 ---
 <center> <h4>为了方便新手的阅读体验，下面内容在构建未完善之前，会一直保留，但我们推荐你移步至<a href="QuickStart.md">快速开始</a> 文档中阅读。</h4> </center>  
+
 ### 💖欢迎来到新手村x  
 这篇教程会引导你大致的了解CTF，并且尝试教会你如何入门CTF。 
 当然，文档可能不是那么完善，如果你觉得文档缺少什么东西或者有什么不足的地方，请及时向我反馈，我会尽力完善这个文档。
