@@ -23,7 +23,13 @@
 }
 </style>
 
+<div align="center">
 
+|Web&nbsp;|MISC&nbsp;|Crypto&nbsp;|Reverse&nbsp;|PWN&nbsp;|iot&nbsp;|Blockchain&nbsp;|AI&nbsp;|
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| [🌐]() | [🕸]() | [🔑]() | [💫]() | [💥]() | [⚙]() | [🔐]() | [🤖]() |
+
+</div>
 <div class="center">
 
 |Web&nbsp;|MISC&nbsp;|Crypto&nbsp;|Reverse&nbsp;|PWN&nbsp;|iot&nbsp;|Blockchain&nbsp;|AI&nbsp;|
