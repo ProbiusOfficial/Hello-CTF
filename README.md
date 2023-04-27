@@ -16,10 +16,13 @@
 
 
 <div align="center">
+<br>
 
 |Web&nbsp;|MISC&nbsp;|Crypto&nbsp;|Reverse&nbsp;|PWN&nbsp;|iot&nbsp;|Blockchain&nbsp;|AI&nbsp;|
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 | [🌐]() | [🕸]() | [🔑]() | [💫]() | [💥]() | [⚙]() | [🔐]() | [🤖]() |
+
+<br>
 
 |AWD&nbsp;|AWDP&nbsp;|
 | :--: | :--: |
