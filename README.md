@@ -13,15 +13,7 @@
     </div>
 
 
-<style>
-.center 
-{
-  width: auto;
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
-}
-</style>
+
 
 <div align="center">
 
@@ -29,22 +21,12 @@
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 | [🌐]() | [🕸]() | [🔑]() | [💫]() | [💥]() | [⚙]() | [🔐]() | [🤖]() |
 
-</div>
-<div class="center">
-
-|Web&nbsp;|MISC&nbsp;|Crypto&nbsp;|Reverse&nbsp;|PWN&nbsp;|iot&nbsp;|Blockchain&nbsp;|AI&nbsp;|
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| [🌐]() | [🕸]() | [🔑]() | [💫]() | [💥]() | [⚙]() | [🔐]() | [🤖]() |
-
-</div>
-
-<div class="center">
-
 |AWD&nbsp;|AWDP&nbsp;|
 | :--: | :--: |
 | [⚔]() | [🛡]() |
 
 </div>
+
 
 ## ☁关于
 
