@@ -70,7 +70,25 @@
 - [NSSCTF平台食用指南](NSSCTF平台食用指南.md)
 - [SQL注入入门](SQL注入入门.md)
 
-
+### 📅CTF赛事
+- 国内赛事 https://www.su-sanha.cn/events/
+  使用API进行获取：http://event.ctf.probius.xyz/cn_CTF
+  ```json
+  " API地址 " : "http://event.ctf.probius.xyz/cn_CTF"
+  " 调用方法 " :"/GET"
+  " 返回格式 " :"json"
+  {
+        "比赛名称": "第十六届全国大学生信息安全竞赛初赛",
+        "比赛链接": "http://www.ciscn.cn/",
+        "比赛类型": "团队赛｜1-4人",
+        "报名开始": "未开始",
+        "报名截止": "未开始",
+        "比赛开始": "待定",
+        "比赛结束": "待定",
+        "其他说明": "官方QQ群①：568747643  ﻿官方QQ群②：779329249  ﻿官方QQ群③：780247795  ﻿官方QQ群④：797605821"
+    },
+  ```
+- 国外赛事 https://ctftime.org/
 
 ## 🏴CTF & 🗡AWD
 
