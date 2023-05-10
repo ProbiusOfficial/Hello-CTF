@@ -338,7 +338,7 @@ id = 1 AND length(username)> NUM
   `SUBSTR(string, start, length)` 其中，`string`表示要截取的字符串，`start`表示截取的起始位置，`length`表示截取的长度。`SUBSTR()`函数会从字符串的`start`位置开始，截取指定长度的字符。
 
   ```sql
-  1 AND SUBSTR(username,1,1) = '？'
+  1 AND SUBSTR(username,1,1) = '?'
   ```
 
   那么语句执行为：
@@ -504,7 +504,7 @@ id = 1 AND length(username)> NUM
   那么通过这个特性，我们用 `concat()` 函数 将查询语句和特殊符号拼接 在一起，就可以将查询结果显示在报错信息中
   
   ```sql
-  SELECT username, password FROM users WHERE id = 1 and   updatexml(1, concat(0x7e,version()), 3) 
+  SELECT username, password FROM users WHERE id = 1 and updatexml(1, concat(0x7e,version()), 3) 
   ```
   
   输出:
@@ -623,3 +623,7 @@ SELECT username, password FROM users WHERE id =1; DROP TABLE users;--
 ```
 
 执行这个SQL语句时，数据库服务器会依次执行这两个SQL语句，将会查询到`users`表中的用户名和密码，并且将`users`表删除。
+
+### 了解更多
+当你阅读完本文后，并且在SQL数据库中完成对应的复现操作，那么不出意外的话，你已经掌握了SQL注入的基本原理和基本操作，接下来你便可以自由的去探索更多的SQL注入技巧。
+链接：[CTF-Wiki SQL注入](https://ctf-wiki.org/web/sqli/)
