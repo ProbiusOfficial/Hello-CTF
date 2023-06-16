@@ -354,6 +354,40 @@ admin@probius.xyz ------------------------------------ echo $deserializedUser->g
 
   此外，引用对象的属性值取决于声明顺序。
   
+  ```
+  <?php
+  class A{
+  
+  }
+  class C{
+  
+  }
+  class B{
+      public $ClassA;
+      public $ClassC;
+      public $pointer_1;
+      public $pointer_2;
+  
+      public $refer;
+  
+      public function __construct(){
+          $this->ClassA = new A();
+          $this->ClassC = new C();
+          $this->refer = $this->ClassA;
+          $this->pointer_1 = &$this->ClassA;
+          $this->pointer_2 = &$this->ClassC;
+  
+      }
+  }
+  $a = new B();
+  echo serialize($a);
+  // ----------------------- 当改变ClassA / C 的声明顺序的时候输出如下:
+  // O:1:"B":5:{s:6:"ClassC";O:1:"C":0:{}s:6:"ClassA";O:1:"A":0:{}s:9:"pointer_1";R:3;s:9:"pointer_2";R:2;s:5:"refer";r:3;}
+  // O:1:"B":5:{s:6:"ClassA";O:1:"A":0:{}s:6:"ClassC";O:1:"C":0:{}s:9:"pointer_1";R:2;s:9:"pointer_2";R:3;s:5:"refer";r:2;}
+  ```
+  
+  
+  
 - s:string 字符串
   
   ```php
@@ -375,6 +409,8 @@ admin@probius.xyz ------------------------------------ echo $deserializedUser->g
 ### 魔术方法
 
 在 PHP 的序列化中，魔术方法（Magic Methods）是一组特殊的方法，这些方法以双下划线（`__`）作为前缀，可以在特定的序列化阶段触发从而使开发者能够进一步的控制 序列化 / 反序列化 的过程。
+
+你可以在PHP官方文档中查找到对应魔术方法的定义和使用方法：[PHP: 魔术方法 - Manual](https://www.php.net/manual/zh/language.oop5.magic.php)
 
 一般在题目中常见的几个方法如下：
 
@@ -411,5 +447,5 @@ admin@probius.xyz ------------------------------------ echo $deserializedUser->g
 | __sleep|在对象被序列化之前自动调用这个方法，可以用来控制哪些属性被序列化。|
 | __wakeup|在对象被反序列化之后自动调用这个方法，可以用来重新初始化对象的属性。|
 
-
+PHP官方文档已经很详细了，这里不在赘述，不一定需要学会所有的函数，除开常见的，其他的在遇到的时候查阅即可。
 
