@@ -298,7 +298,7 @@ Web 入门不会太难 但是和MISC一样 Web是一个维度很广的方向 所
 
 ![Untitled 7](https://user-images.githubusercontent.com/41804496/232276044-c0e54a60-408d-4c9c-8b1b-5132069ca465.png)
 
-那么现代密码学呢？
+密码学入门主要以现代密码学为主。
 
 ※ **入门需要的工具和Trick**
 
@@ -306,21 +306,11 @@ Python3环境
 
 做题会遇到对应的模组，目前都能搜索到相关教程
 
-一般现代密码学 推荐从RSA 非对称密码 入门
+**【AD / 付费】** **推荐 NSSCTF 平台上面 Xenny 老师 工坊密码学系列教程**
 
-这里我比较推荐Xenny X老师在NSS平台上密码学的题单课程 因为笔者本人的密码学也是看X老师的文档+题目入门的 所以个人觉得这一套教程对新手是物有所值的x
+![image-20230628231437191](https://nssctf.wdf.ink//img/WDTJ/202306282314421.png)
 
-[Crypto系列——RSA（一） | NSSCTF](https://www.nssctf.cn/problem/sheet/7142)
 
-![Untitled 8](https://user-images.githubusercontent.com/41804496/232276058-eddc1e08-bde5-42fe-95b1-6961a8585b53.png)
-
-![Untitled 9](https://user-images.githubusercontent.com/41804496/232276070-1002e7d5-cce5-4fda-b776-4d36437ce7a1.png)
-
-![Untitled 10](https://user-images.githubusercontent.com/41804496/232276084-2d30222d-6851-4ad4-99f9-a5a6e7858aa1.png)
-
-目前定价是1980金币 双倍首冲的话 9.8块钱就能拿下x
-
-当然 人都喜欢白嫖嘛 白嫖肯定是有代价的 现代密码的入门体系目前考搜索引擎也是完全够的 对于优秀的知识 付费是一种尊重。
 
 ※ **题目尝试：**
 
