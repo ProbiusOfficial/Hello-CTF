@@ -430,4 +430,20 @@ PWN主要考察栈溢出、堆溢出、格式化字符串漏洞等常规的二�
 
 - **[渊龙Sec安全团队导航](https://dh.aabyss.cn/)**
 
+<script src="https://giscus.app/client.js"
+        data-repo="ProbiusOfficial/CTF-QuickStart"
+        data-repo-id="R_kgDOJXX6hg"
+        data-category="Show and tell"
+        data-category-id="DIC_kwDOJXX6hs4CXmuV"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
 ---
