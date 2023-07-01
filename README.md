@@ -67,11 +67,6 @@ A：因为wiki一下子给的信息太多了，对于新手来说，很难找到
 
 共勉💖
 
-### 📚目前更新的文章（以后的目录）（主要是现在东西少hhh）
-- [快速开始](QuickStart.md)
-- [NSSCTF平台食用指南](NSSCTF平台食用指南.md)
-- [SQL注入入门](SQL注入入门.md)
-
 ### 📅CTF赛事
 **国内赛事 https://www.su-sanha.cn/events/**
   - 使用API进行获取：http://event.ctf.probius.xyz/cn_CTF
@@ -100,11 +95,12 @@ A：因为wiki一下子给的信息太多了，对于新手来说，很难找到
     [![CTF赛事通知报名群](https://img.shields.io/badge/CTF赛事通知报名群-734535934-black)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=38s-tPEVrv3hVMNEUXiNkumy5khQuS-j&authKey=6aQuubgO2nQDOK%2Bf6N1tm2Yw7Eo45TLU21IH3ek1KslG3XIcm2LOjS9EOOzyncN2&noverify=0&group_code=734535934)  
     -
     [![CTF赛事通知报名群(满)](https://img.shields.io/badge/CTF赛事通知报名群(满)-829089482-black)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=cRU05F4Cicj4Ze6jEb9NeDrxgzIfTGpk&authKey=lAbuNnRkKKkt6Rmitby04CiPw2wLrlfS%2BPYNKNBR%2FuIwPeLT8tLox65s07moRdob&noverify=0&group_code=829089482)  
-  
+
  <br>  
 
 **国外赛事 https://ctftime.org/**
 - 使用API进行获取：http://event.ctf.probius.xyz/global_CTF
+
   ```json
   " API地址 " : "http://event.ctf.probius.xyz/global_CTF"
   " 调用方法 " :"/GET"
@@ -135,9 +131,10 @@ A：因为wiki一下子给的信息太多了，对于新手来说，很难找到
       ...
   ]
   ```
+
 - 使用RSS订阅  
   [![RSS](https://img.shields.io/badge/RSS-black)](https://ctftime.org/event/list/upcoming/rss/) 
-     
+  
     
 
 ## 🏴CTF & 🗡AWD

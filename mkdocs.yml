@@ -1,0 +1,128 @@
+# Project information
+site_name: Hello CTF
+site_url: https://www.xxx.com/
+site_author: Probius
+site_description: ww
+# docs_dir: build
+# Repository
+repo_name: CTF-QuickStart
+repo_url: https://github.com/ProbiusOfficial/CTF-QuickStart
+edit_uri: https://github.com/ProbiusOfficial/CTF-QuickStart/tree/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2023 探姬
+
+# Configuration
+theme:
+  name: material
+  # custom_dir: build/overrides
+  language: zh
+  features:
+    # - announce.dismiss
+    - content.action.edit
+    # - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    # - navigation.sections
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - scheme: default
+      primary: white
+      # accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: grey
+      # accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    text: Noto Sans SC
+    code: Fira Code
+  favicon: assets/images/favicon.png
+  logo: assets/images/logo.png
+  icon:
+    logo: logo
+    repo: fontawesome/brands/github
+    edit: material/file-edit-outline
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/probiusofficial
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/probiusofficial
+    - icon: fontawesome/solid/video
+      link: https://space.bilibili.com/27109929
+  generator: false
+
+# Plugins
+plugins:
+  - search
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:materialx.emoji.twemoji
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.keys
+  # - pymdownx.magiclink:
+  #     repo_url_shorthand: true
+  #     user: squidfunk
+  #     repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+extra_css:
+  - stylesheets/extra.css
+
+# Page tree
+nav:
+  - 0. &nbsp; &nbsp; 写在前面:
+    - chapter_preface/index.md
