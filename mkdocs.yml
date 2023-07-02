@@ -125,5 +125,6 @@ extra_css:
 
 # Page tree
 nav:
-  - 0. &nbsp; &nbsp; 前言:
+  - 0. &nbsp; &nbsp; 快速开始:
     - preface/index.md
+
