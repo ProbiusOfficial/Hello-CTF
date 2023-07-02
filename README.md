@@ -3,7 +3,7 @@
      <div align="center">
     <img src="./images/logo.png" width="600px">
     </div> 
-    <a href="https://probius.notion.site/CTF-755ace0f99cd488d86febf12cf2c2e5e"> <img src="https://badgen.net/badge/Mkdocs/%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB?icon=chrome&color=black"></a>
+    <a href="http://ctf.tj.cn/"> <img src="https://badgen.net/badge/Mkdocs/%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB?icon=chrome&color=black"></a>
     <a href="https://github.com/ProbiusOfficial/CTF-QuickStart"> <img src="https://badgen.net/github/stars/ProbiusOfficial/CTF-QuickStart?icon=github&color=black"></a>
     <a href="https://github.com/ProbiusOfficial/CTF-QuickStart"> <img src="https://badgen.net/github/forks/ProbiusOfficial/CTF-QuickStart?icon=github&color=black"></a>
     <a href="https://github.com/ProbiusOfficial/CTF-QuickStart/blob/main/LICENSE"> <img src="https://badgen.net/badge/license/GPLv3/"></a>
