@@ -3,7 +3,7 @@ comments: true
 hide:
   - footer
 ---
-
+# 快速开始
 ### 💖欢迎来到新手村x  
 
 这篇教程会引导你大致的了解CTF，并且尝试教会你如何入门CTF。 

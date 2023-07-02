@@ -39,19 +39,17 @@ hide:
 - **[CTFwiki](https://github.com/ctf-wiki/ctf-wiki)**：[https://ctf-wiki.github.io/ctf-wiki/](https://ctf-wiki.github.io/ctf-wiki/)  
 Q：已经有了wiki，为什么还要做这个项目呢？   
 A：因为wiki一下子给的信息太多了，对于新手来说，很难找到入门的地方，所以我们希望能够做一个更加简单的入门手册，让新手能够快速入门。
-### 🚀 [点我快速开始🎯](QuickStart.md)
+### 🚀 [点我快速开始🎯](./preface/index.md)
 
-- 初来乍到，我还不知道什么是CTF / 我对 CTF 有兴趣 / 想要入门 CTF ： [点我前往入门文档！](QuickStart.md) 
+- 初来乍到，我还不知道什么是CTF / 我对 CTF 有兴趣 / 想要入门 CTF ： [点我前往入门文档！](./preface/index.md) 
 - 想让更多的人了解 CTF / 想组建一支校内 CTF 战队 / CTF 实验室想要招新宣讲没有资料 :
-- 如果您有其他需求，或者您认为文档中缺少某些内容，又或者文档存在一些错误等等的各种情况欢迎通过下面的方式向我反馈：
+- 如果您有其他需求，或者您认为文档中缺少某些内容，又或者文档存在一些错误等等的各种情况欢迎通过下面的方式向我反馈： 
   - 通过issue或者PR
   - 通过B站私信反馈：[探姬_Official](https://space.bilibili.com/27109929)  
   - 通过填写反馈表（无需登录）：[点我填写反馈表](https://f.kdocs.cn/g/CwnhSjjK/)  
-  - 通过QQ群聊反馈：[点击加入反馈群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=wJ35e-T-qSlU7Y3Cs-PAasrAvZfRSc9k&authKey=WNEQbZUpolxgfKjUHHoUIoTBvSnvk2jZtcyWlhaDcUZ6ZYGgvywqi1ah5D7UwUrg&noverify=0&group_code=590430891)    
+  - 通过QQ群聊反馈：[点击加入反馈群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=wJ35e-T-qSlU7Y3Cs-PAasrAvZfRSc9k&authKey=WNEQbZUpolxgfKjUHHoUIoTBvSnvk2jZtcyWlhaDcUZ6ZYGgvywqi1ah5D7UwUrg&noverify=0&group_code=590430891)     
   
-
-
- ### 🔔公告
+### 🔔公告
 最基本的入门手册可能还会再完善几次，别担心，目前的版本已经足够用作入门文档了，您随时可以将他发给刚入门或者想入门的师傅们。  
 
 后续的计划挺多的，我想每个方向再做具体一点，还有一些资源的整合什么的。  
