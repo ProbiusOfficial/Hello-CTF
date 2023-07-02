@@ -1,9 +1,9 @@
 <div align="center">
-     <h2>CTF快速入门手册 </h2>
+     <h2>Hello CTF</h2>
      <div align="center">
-    <img src="https://nssctf.wdf.ink//img/WDTJ/202304271553451.png" width="300px">
+    <img src="./images/logo.png" width="600px">
     </div> 
-    <a href="https://probius.notion.site/CTF-755ace0f99cd488d86febf12cf2c2e5e"> <img src="https://badgen.net/badge/Notion/%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB?icon=chrome&color=black"></a>
+    <a href="https://probius.notion.site/CTF-755ace0f99cd488d86febf12cf2c2e5e"> <img src="https://badgen.net/badge/Mkdocs/%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB?icon=chrome&color=black"></a>
     <a href="https://github.com/ProbiusOfficial/CTF-QuickStart"> <img src="https://badgen.net/github/stars/ProbiusOfficial/CTF-QuickStart?icon=github&color=black"></a>
     <a href="https://github.com/ProbiusOfficial/CTF-QuickStart"> <img src="https://badgen.net/github/forks/ProbiusOfficial/CTF-QuickStart?icon=github&color=black"></a>
     <a href="https://github.com/ProbiusOfficial/CTF-QuickStart/blob/main/LICENSE"> <img src="https://badgen.net/badge/license/GPLv3/"></a>
@@ -11,6 +11,8 @@
      <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=wJ35e-T-qSlU7Y3Cs-PAasrAvZfRSc9k&authKey=WNEQbZUpolxgfKjUHHoUIoTBvSnvk2jZtcyWlhaDcUZ6ZYGgvywqi1ah5D7UwUrg&noverify=0&group_code=590430891"> <img src="https://img.shields.io/badge/QQ%20Group-590430891-black"></a>
     <br>
     </div>
+
+
 
 
 <div align="center">
