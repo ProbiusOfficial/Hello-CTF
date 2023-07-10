@@ -125,7 +125,7 @@ hide:
 
 国内目前几大主流平台：（排名不分先后）
 
-NSSCTF [https://www.nssctf.cn/index](https://www.nssctf.cn/index) （多功能Xenny 适合一人单刷 也适合团队训练 **更详细的可以参考 [NSSCTF平台食用指南](doc/NSSCTF平台食用指南.md)**）
+NSSCTF [https://www.nssctf.cn/index](https://www.nssctf.cn/index) （多功能Xenny 适合一人单刷 也适合团队训练 **更详细的可以参考 [NSSCTF平台食用指南](NSSCTF平台食用指南.md)**）
 
 BUUCTF [https://buuoj.cn/](https://buuoj.cn/) 
 
