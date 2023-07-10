@@ -28,7 +28,7 @@ theme:
     # - header.autohide
     # - navigation.expand
     - navigation.indexes
-    # - navigation.instant
+    - navigation.instant
     # - navigation.prune
     # - navigation.sections
     # - navigation.tabs
@@ -127,4 +127,33 @@ extra_css:
 nav:
   - 0. &nbsp; &nbsp; 快速开始:
     - preface/index.md
+    - 0.1 &nbsp; &nbsp; CTFevent: CTFevent.md
+    - 0.2 &nbsp; &nbsp; CTFtool: CTFtool.md
+    - 0.3 &nbsp; &nbsp; Links: Links.md
+    - 0.4 &nbsp; &nbsp; CTFwriteup: CTFwriteup.md
+
+  - 1. &nbsp; &nbsp; MISC | 杂项:
+    - misc/index.md
+    - 1.1 &nbsp; &nbsp; Steganography | 隐写术: Steganography.md
+    - 1.2 &nbsp; &nbsp; Forensics | 取证分析: Forensics.md
+    - 1.3 &nbsp; &nbsp; OSINT | 开源情报: OSINT.md
+    - 1.4 &nbsp; &nbsp; Zip | 压缩包: Zip.md
+
+  - 2. &nbsp; &nbsp; Web | Web安全:
+    - web/index.md
+    - 2.1 &nbsp; &nbsp; WebBasic | Web基础: WebBasic.md
+
+  - 3. &nbsp; &nbsp; Crypto | 密码学:
+    - crypto/index.md
+    - 3.1 &nbsp; &nbsp; CryptoBasic | 密码学基础: CryptoBasic.md
+    - 3.2 &nbsp; &nbsp; CryptoClassic | 古典密码学: CryptoClassic.md
+    - 3.3 &nbsp; &nbsp; 现代密码学 - RSA: CryptoModern.md
+
+  - 4. &nbsp; &nbsp; Reverse | 逆向工程:
+    - reverse/index.md
+    - 4.1 &nbsp; &nbsp; ReverseBasic | 逆向工程基础: ReverseBasic.md
+ 
+  - 5. &nbsp; &nbsp; Pwn | 漏洞利用:
+    - pwn/index.md
+    - 5.1 &nbsp; &nbsp; PwnBasic | 漏洞利用基础: PwnBasic.md
 
