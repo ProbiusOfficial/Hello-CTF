@@ -3,15 +3,18 @@ comments: true
 hide:
   - footer
 ---
+
 # 快速开始
 ### 💖欢迎来到新手村x  
 
 这篇教程会引导你大致的了解CTF，并且尝试教会你如何入门CTF。 
-当然，文档可能不是那么完善，如果你觉得文档缺少什么东西或者有什么不足的地方，请及时向我反馈，我会尽力完善这个文档。
-考虑到有的新生可能不太会使用GitHub的issue功能，所以这里也提供其他反馈方式：  
-- 通过B站私信反馈：[探姬_Official](https://space.bilibili.com/27109929)
-- 通过填写反馈表（无需登录）：[点我填写反馈表](https://f.kdocs.cn/g/CwnhSjjK/)
+当然，文档可能不是那么完善，如果你觉得文档缺少什么东西或者有什么不足的地方，请及时向我反馈，我会尽力完善这个文档。  
+考虑到有的新生可能不太会使用GitHub的issue功能，所以这里也提供其他反馈方式： 
+
+- 通过B站私信反馈：[探姬_Official](https://space.bilibili.com/27109929)  
+- 通过填写反馈表（无需登录）：[点我填写反馈表](https://f.kdocs.cn/g/CwnhSjjK/)  
 - 通过QQ群聊反馈：[点击加入反馈群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=wJ35e-T-qSlU7Y3Cs-PAasrAvZfRSc9k&authKey=WNEQbZUpolxgfKjUHHoUIoTBvSnvk2jZtcyWlhaDcUZ6ZYGgvywqi1ah5D7UwUrg&noverify=0&group_code=590430891)  
+
 
 玩的开心x and 祝你好运 ！😊
 
@@ -106,7 +109,7 @@ hide:
 
 国内目前几大主流平台：（排名不分先后）
 
-NSSCTF [https://www.nssctf.cn/index](https://www.nssctf.cn/index) （多功能Xenny 适合一人单刷 也适合团队训练 **更详细的可以参考 [NSSCTF平台食用指南](./NSSCTF平台食用指南.md)**）
+NSSCTF [https://www.nssctf.cn/index](https://www.nssctf.cn/index) （多功能Xenny 适合一人单刷 也适合团队训练 **更详细的可以参考 [NSSCTF平台食用指南](NSSCTF平台食用指南.md)**）
 
 BUUCTF [https://buuoj.cn/](https://buuoj.cn/) 
 
@@ -120,7 +123,7 @@ CTFhub [https://www.ctfhub.com/#/index](https://www.ctfhub.com/#/index) （技�
 
 Bugku [https://ctf.bugku.com/](https://ctf.bugku.com/) （AWD做的比较好）
 
-当然如果您一来就相中了PWN 也可以去 pwn.college / PWNABLE
+当然如果您一来就相中了PWN 也可以去 pwn.college [pwn.college](https://pwn.college/) 试试
 
 目前有一个好处就是，基本上每个平台的入门题目 直接搜索就能找到足够详细的WP，只要你会读文档，会跟着复现，并且在这个过程中持续学习，那么入门CTF对你来讲也就不会是什么难事x
 
@@ -132,7 +135,7 @@ Bugku [https://ctf.bugku.com/](https://ctf.bugku.com/) （AWD做的比较好）
 
 ## 👈🏻刷题指南？——嘿！为什么不能指北？
 
-**更详细的可以参考 [NSSCTF平台食用指南](./NSSCTF平台食用指南.md)**
+**更详细的可以参考 [NSSCTF平台食用指南](NSSCTF平台食用指南.md)**
 
 ![Untitled](https://user-images.githubusercontent.com/41804496/232275694-5411c38e-1c80-4fb0-9eee-5d3c9d0fb94f.png)
 
