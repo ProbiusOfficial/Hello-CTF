@@ -142,9 +142,15 @@ nav:
     - 2.4. &nbsp; 逆向环境设置: ctf_evnset/RE.md
     - 2.5. &nbsp; PWN环境设置: ctf_evnset/PWN.md
 
-  - 3. &nbsp; &nbsp; 附录:
-    - 3.1. &nbsp; 提问的智慧: appendix/how-to-ask.md
-    - 3.2. &nbsp; 附录: appendix/CTFevent.md
+  - 3. &nbsp; &nbsp; MISC | 杂项:
+    - ctf_misc/index.md
+    - 3.1. &nbsp; 图片隐写: ctf_misc/stego.md
+    - 3.2. &nbsp; 流量分析: ctf_misc/pcap.md
+    - 3.3. &nbsp; 内存取证: ctf_misc/memory.md
+
+  - 4. &nbsp; &nbsp; 附录:
+    - 4.1. &nbsp; 提问的智慧: appendix/how-to-ask.md
+    - 4.2. &nbsp; 附录: appendix/CTFevent.md
 
 
 

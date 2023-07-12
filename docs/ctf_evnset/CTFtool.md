@@ -5,7 +5,7 @@ hide:
 ---
 # CTF工具集合
 
-该页面基于项目【CTFtools-wiki】https://github.com/ProbiusOfficial/CTFtools-wiki 
+该页面基于项目【CTFtools-wiki】[https://github.com/ProbiusOfficial/CTFtools-wiki](https://github.com/ProbiusOfficial/CTFtools-wiki)
 若本项目对您有所帮助，还劳烦点个 Star :star: 支持一下~谢谢！！！
 
 ## 食用说明
