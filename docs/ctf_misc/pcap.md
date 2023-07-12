@@ -1,3 +1,8 @@
+---
+comments: true
+hide:
+  - footer
+---
 # 前言
 
 > 版权声明：

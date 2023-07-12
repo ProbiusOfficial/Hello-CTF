@@ -148,9 +148,16 @@ nav:
     - 3.2. &nbsp; 流量分析: ctf_misc/pcap.md
     - 3.3. &nbsp; 内存取证: ctf_misc/memory.md
 
-  - 4. &nbsp; &nbsp; 附录:
-    - 4.1. &nbsp; 提问的智慧: appendix/how-to-ask.md
-    - 4.2. &nbsp; 附录: appendix/CTFevent.md
+  - 4. &nbsp; &nbsp; Web | 网络攻防:
+    - ctf_web/index.md
+    - 4.1. &nbsp; SQL注入: ctf_web/sql_injection.md
+    - 4.2. &nbsp; XSS攻击: ctf_web/xss.md
+    - 4.3. &nbsp; PHP反序列化: ctf_web/php_unserialize.md
+
+  - 5. &nbsp; &nbsp; 附录:
+    - 5.1. &nbsp; 提问的智慧: appendix/how-to-ask.md
+    - 5.2. &nbsp; CTF赛事: appendix/CTFevent.md
+    - 5.3. &nbsp; NSSCTF平台使用: appendix/NSSCTF_Usage.md
 
 
 
