@@ -21,13 +21,24 @@ hide:
 <div align="center">
 </div>
 
-考虑到最近新生赛事频多，需要应对大量新生的培养工作，为了方便各位萌新更快捷的入门CTF，我们开源了入门手册并将快速开始的引导文放在首页以方便各位阅读和传播。
-注意，文档篇幅有限，我们只能尽可能的将CTF的基础知识点和入门题目放在文档中，更多欢迎关注本项目左侧的导航栏，里面有更多的内容和题目供各位学习。  
+考虑到最近新生赛事频多，需要应对大量新生的培养工作，为了方便各位萌新更快捷的入门CTF，我们开源了入门手册并将快速开始的引导文放在首页以方便各位阅读和传播。  
+
+注意，文档篇幅有限，我们只能尽可能的在有限的文档中完成CTF的引导教学，更多欢迎关注本项目左侧的导航栏，里面有更多的内容和题目供各位学习。  
+
 直接访问 https://ctf.tj.cn/ 即可 [在线阅读](https://ctf.tj.cn/)   
+
 项目源地址: https://github.com/ProbiusOfficial/CTF-QuickStart  
-转载请标注出处。
+
+转载请标注出处！！！！
+
+!!! Info "近期的新生赛"  
+    欢迎参加 西安电子科技大学 MoeCTF2023 新生赛，赛事持续1-2个月，难度由浅入深，欢迎各位萌新参加！  
+    [点击加入 MoeCTF2023 赛事群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=hSpW9WH7e1gGALTDkKj_VkT9jvikTVQb&authKey=%2B0JFQ339kcRG3%2BSKJM7qitEQUb6uYG7eeu0ILOqfJBExD1E3iTB6iZ7%2FafSrRYWr&noverify=0&group_code=797838012) ( QQ群797838012 )
 # 快速开始
-### 💖欢迎来到新手村x  
+### 💖欢迎来到新手村x   
+
+!!! Tip "注意"   
+    在学习CTF前我们希望您具备一些CS领域的基础知识，我们推荐您先阅读 JANlittle师傅写的CS入门资料 ( [点此跳转](https://xp0int-team.feishu.cn/wiki/wikcnnWbXXGELt1xHkyBhvdQKrh) ) 大致具备CS领域的基本技能后再开始CTF的学习。
 
 这篇教程会引导你大致的了解CTF，并且尝试教会你如何入门CTF。 
 
@@ -49,13 +60,13 @@ hide:
 
 **A**：CTF有个人赛和团队赛，在主流比赛中多为团队赛；
 
-CTF赛制分多种，国内常见的为「 **解题模式 Jeopardy** 」「 **攻防模式 | AWD(Attack With Defenseawd)** 」「 **静态攻防 AWDP(Attack With Defence Plus)** 」一般分为线上线下两个阶段，线上通常采用**解题模式**，线下通常为**CTF +( 理论 )+ AWD AWDP**模式，具体看主办方安排。
+CTF赛制分多种，国内常见的为「 **解题模式 Jeopardy** 」「 **攻防模式 | AWD (Attack With Defense)** 」「 **静态攻防 AWDP (Attack With Defence Plus)** 」一般分为线上线下两个阶段，线上通常采用 **解题模式** ，线下通常为 **CTF +( 理论 )+ AWD/AWDP** 模式，具体看主办方安排。
 
 - 「 **解题模式 Jeopardy** 」目前大多数国内外CTF比赛的主流形式，选手自由组队参赛。题目通常在比赛过程中陆续放出。解出一道题目后，提交题目对应的flag即可得分，比赛结束时分高者获胜。  
 
-- 「 **攻防模式 | AWD(Attack With Defenseawd)** 」通常为现场比赛，多数CTF决赛的比赛形式，选手自由组队参赛。相比于解题模式，时间更短，比赛中更注重临场反应和解题速度，需要能够快速攻击目标主机的权限，考察团队多方面的综合安全能力。  
+- 「 **攻防模式 | AWD (Attack With Defenseawd)** 」通常为现场比赛，多数CTF决赛的比赛形式，选手自由组队参赛。相比于解题模式，时间更短，比赛中更注重临场反应和解题速度，需要能够快速攻击目标主机的权限，考察团队多方面的综合安全能力。  
 
-- 「 **静态攻防 AWDP(Attack With Defence Plus)** 」解题+加固赛，参赛队伍无法直接攻击其他队伍，只有每回合算分和其他队伍有关。参赛战队可以直接对其他队伍gamebox发起攻击，通过ssh登录加固自己gamebox.  
+- 「 **静态攻防 AWDP (Attack With Defence Plus)** 」解题+加固赛，参赛队伍无法直接攻击其他队伍，只有每回合算分和其他队伍有关。参赛战队可以直接对其他队伍gamebox发起攻击，通过ssh登录加固自己gamebox.  
 
 !!! question "存有疑惑？"
     没关系，~~我们下面还有更迷糊的x~~ 暂时了解就好啦，在CTF中，我们一般接触的最多的就是「 **解题模式 Jeopardy** 」。
@@ -68,7 +79,7 @@ CTF赛制分多种，国内常见的为「 **解题模式 Jeopardy** 」「 **�
 - 「 **密码学 CRYPTO**」密码学简单讲就古典密码和现代密码，当然大多数古典密码的题目目前都被划分到MISC中，目前的密码学反而更偏向现代密码学，常出现分组密码、流密码和公钥密码体制的考察，对初等数学、基本的数论有一定需求。选手通常被给予一个加密程序，抹去明文之后留下的加密过程和输出，要求选手通过密码体制的弱点来还原flag。 ——*听说Oi爷又AK了！*
 - 「 **网络攻防 WEB** 」着重于Web应用程序，框架，浏览器以及各类Web服务器的安全问题；挖掘/利用/研究各类Web系漏洞，探究其形成原理、利用方式及修补方案。题目常见的漏洞类型包括注入、XSS、文件包含、代码执行、上传、SSRF等，选手通过漏洞直接或者间接拿到shell或者得到某些关键文件从而得到Flag。 ——*汪汪汪*
 - 「 **逆向工程 Reverse Engineering** 」研究各类操作系统，编译器，虚拟机的底层架构，以Windows和Linux为平台，学习可执行程序的逆向分析技术，如软件调试与破解，对已经编译完成的可执行文件进行分析，研究程序的行为和算法，然后以此为依据，计算出出题人想隐藏的flag ——*逆��*
-- 「 **二进制漏洞利用 Pwn** 」Pwn在安全领域是「攻破」的意思。主要研究程序漏洞利用技术，例如栈溢出、堆管理器的漏洞利用和其他高阶技巧；挖掘和分析各类基于编译型语言的漏洞。二进制攻击涉及到栈溢出、堆溢出、格式化字符串漏洞等二进制漏洞，选手需要借助这些漏洞获取计算机权限，从而拿到flag ——*PWN!*（指声音
+- 「 **二进制漏洞利用 Pwn** 」Pwn在安全领域是「攻破」的意思。主要研究程序漏洞利用技术，例如栈溢出、堆管理器的漏洞利用和其他高阶技巧；挖掘和分析各类基于编译型语言的漏洞。二进制攻击涉及到栈溢出、堆溢出、格式化字符串漏洞等二进制漏洞，选手需要借助这些漏洞获取计算机权限，从而拿到flag ——*PWN!*(指声音
 - **SOMETHING NEW** 随着计算机技术的发展，也有一些新的方向如 「**区块链 Blockchain** 」「**Ai安全** 」「**物联网 iOT** 」等的加入。这些内容我们会在进阶文档中更新。
 
 
@@ -123,9 +134,9 @@ CTF赛制分多种，国内常见的为「 **解题模式 Jeopardy** 」「 **�
 
 #### 比赛平台
 
-国内目前几大主流平台：（排名不分先后）
+国内目前几大主流平台：(排名不分先后)
 
-**NSSCTF** [https://www.nssctf.cn/index](https://www.nssctf.cn/index) （多功能Xenny 适合一人单刷 也适合团队训练 **更详细的可以参考 [NSSCTF平台食用指南](./appendix/NSSCTF_Usage.md)**
+**NSSCTF** [https://www.nssctf.cn/index](https://www.nssctf.cn/index) (多功能Xenny 适合一人单刷 也适合团队训练 **更详细的可以参考 [NSSCTF平台食用指南](./appendix/NSSCTF_Usage.md)**
 
 **BUUCTF** [https://buuoj.cn/](https://buuoj.cn/) 
 
@@ -135,9 +146,9 @@ CTF赛制分多种，国内常见的为「 **解题模式 Jeopardy** 」「 **�
 
 **青少年CTF** [https://www.qsnctf.com/](https://www.qsnctf.com/)
 
-**CTFhub** [https://www.ctfhub.com/#/index](https://www.ctfhub.com/#/index) （技能树确实不错 但是更新慢）
+**CTFhub** [https://www.ctfhub.com/#/index](https://www.ctfhub.com/#/index) (技能树确实不错 但是更新慢)
 
-**Bugku** [https://ctf.bugku.com/](https://ctf.bugku.com/) （AWD做的比较好）
+**Bugku** [https://ctf.bugku.com/](https://ctf.bugku.com/) (AWD做的比较好)
 
 **pwn.college** [pwn.college](https://pwn.college/)(当然如果您一来就相中了PWN的话，这个平台也是不错的选择)
 
@@ -165,7 +176,7 @@ CTF题目开启的基本形式如下：
 
 - 附件 —— 通常为压缩包 每类题型都可能有，可能直接就是题目本身，也可能是题目涉及到的源码等等
 
-- 容器 （常见于Web Pwn 也有可能见于 Misc Crypto ……）
+- 容器 (常见于Web Pwn 也有可能见于 Misc Crypto ……)
 
   - web靶机 —— 通常为 `ip:port / domain:port`
 
@@ -185,7 +196,7 @@ CTF题目开启的基本形式如下：
 
     ![Untitled 3](https://user-images.githubusercontent.com/41804496/232275821-840e6c52-7fd3-4eb0-970f-21bef3ba64c6.png)
 
-    这样的靶机不能直接在浏览器中访问，需要使用nc工具连接，通常在Linux系统中接入 或者使用某些工具进行交互 如 `pwntool`
+    这样的靶机不能直接在浏览器中访问，需要使用nc工具连接，通常在Linux系统中接入 或者使用某些工具进行交互 如 `pwntools`
 
 - 当然也有可能附件和靶机都有 比如 web 涉及到源码审计的时候 也有的nc交互给nc后台的脚本 各种类似的情况
 
@@ -230,6 +241,7 @@ CTF题目开启的基本形式如下：
 | Wireshark   | 流量分析取证软件。                                           | [官网](https://www.wireshark.org/)                           | /    |
 
 方便快速获得题感的一把梭工具：
+
 - [随波逐流工作室 随波逐流CTF编码工具 (1o1o.xyz)](http://1o1o.xyz/) **随波逐流一把梭**
 - [https://www.bilibili.com/video/BV1ho4y1s7UG](https://www.bilibili.com/video/BV1ho4y1s7UG) **PuzzleSolver一把梭**
 
@@ -352,7 +364,7 @@ Python3环境
 
 ※ **入门需要的工具和Trick**
 
-- IDA Pro （注意 这里尽量选择高版本的 ⽽且 不要追求汉化）
+- IDA Pro (注意 这里尽量选择高版本的 ⽽且 不要追求汉化)
 - OllyDbg x64dbg
 - GUN Binary Utilities
 - GDB 调试器
@@ -377,7 +389,7 @@ Python3环境
 
 PWN主要考察栈溢出、堆溢出、格式化字符串漏洞等常规的二进制漏洞，选手需要借助这些漏洞获取计算机权限，从而拿到flag。
 
-之前也介绍过PWN靶机，一般后台为 C/CPP 所写的交互程序，我们常用nc连接，或者使用pwntool工具来建立远程连接。
+之前也介绍过PWN靶机，一般后台为 C/CPP 所写的交互程序，我们常用nc连接，或者使用pwntools工具来建立远程连接。
 
 那么你会遇到什么？
 
@@ -402,10 +414,10 @@ PWN主要考察栈溢出、堆溢出、格式化字符串漏洞等常规的二�
 
 ※ **入门需要的工具和Trick**
 
-- IDA Pro （注意 同样的 这里尽量选择高版本的 ⽽且 不要追求汉化）
+- IDA Pro (注意 同样的 这里尽量选择高版本的 ⽽且 不要追求汉化)
 - OllyDbg x64dbg
 - GDB 调试
-- Pwntool
+- pwntools
 - 推荐：Roder师傅的 Pwncli  [https://github.com/RoderickChan/pwncli](https://github.com/RoderickChan/pwncli)
 - 二进制文件分析工具：radare2、objdump等。
 

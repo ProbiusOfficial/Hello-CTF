@@ -12,9 +12,9 @@ hide:
 您可以在这里找到所有所提及的容器模板，有问题请提交issue，当然您有更好的模板，也欢迎提交PR，如果该项目帮助到您，请给个star支持一下~
 
 !!! warning "注意"
-    本教程将默认您已经具备以下条件:
-       1. 拥有[Docker环境](../ctf_evnset/getDocker.md) 并且 对Docker有一定的了解
-              2. 至少熟悉一个CTF方向，并且清楚CTF题目命题方向
+    本教程将默认您已经具备以下条件:  
+       1. 拥有[Docker环境](../ctf_evnset/getDocker.md) 并且 对Docker有一定的了解  
+       2. 至少熟悉一个CTF方向，并且清楚CTF题目命题方向  
 
 该教程主要针对有容器需求的题目，如PWN 和 WEB 并且普遍利用动态容器技术(即 动态Flag) 除了传统的PWN 和 WEB 需求的动态容器，结合目前CTF其他方向也尝试引入容器提高题目的 质量 趣味 或者 难度？我们也提供诸如nc交互式的Crypto题目容器模板，当然您也可以自行修改模板来适应您的题目需求。
 
@@ -298,3 +298,5 @@ docker push dockerhubUserName/imagesName:Tag
 
 ### 镜像推送
 (该部分参考Web部分的镜像推送 我们不再赘述)
+
+## 基于Python的NC题目
