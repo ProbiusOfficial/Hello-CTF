@@ -35,13 +35,17 @@ CTF比赛中 几乎所有容器的动态Flag 均基于环境变量(environment)�
 
 ### 前置知识
 首先您需要清楚目前Web的题目类型 和 其可能会用到的语言技术 / 框架技术，可能会遇到的题目技术栈大概有以下几种:
+
 - PHP
-    一般容器页面技术为 **Nginx + PHP** | 当然在涉及到数据库交互时 使用 **LNMP (Nginx MySQL PHP)** 容器 | 极其少见的情况下会使用 **Apache + PHP** | 同样的数据库交互时使用 **LAMP (Apache MySQL PHP)** 容器。
+    一般容器页面技术为 **Nginx + PHP** | 当然在涉及到数据库交互时 使用 **LNMP (Nginx MySQL PHP)** 容器 | 极其少见的情况下会使用 **Apache + PHP** | 同样的数据库交互时使用 **LAMP (Apache MySQL PHP)** 容器。  
+
 - Python
-    目前大多数Python题目都基于 **Flask** 框架，当然也有少数基于 **Django** 框架的题目。
+    目前大多数Python题目都基于 **Flask** 框架，当然也有少数基于 **Django** 框架的题目。  
+  
 - Java  
-    Java题目除了一般的**Jar**包外，还有基于 **SpringBoot** 框架的题目，基于 **Tomcat** 的题目也有。 
-- Js
+    Java题目除了一般的**Jar**包外，还有基于 **SpringBoot** 框架的题目，基于 **Tomcat** 的题目也有。  
+
+- Js  
     Js题目一般都是基于 **Node.js** 的，当然也有少数基于 **Express** 框架的题目。
 
 目前我们的容器模板列表(Web)如下:
@@ -61,34 +65,36 @@ CTF比赛中 几乎所有容器的动态Flag 均基于环境变量(environment)�
 
 首先，题目所需要的服务是 PHP 和 MySQL，简单的SQL注入，我们使用单个index.php作为web服务的核心即可，然后用 connect.php 来接入数据库
 
-下面是index.php的源码:
-```php tab="index.php"
-<?php
-    error_reporting(0);
-  include "connect.php";
-?>
-<!DOCTYPE html>
-<html>
+下面是index.php的源码:  
+  
 
-#....省略的HTML代码....
-                <?php
-                
-                $sql = "SELECT username,password FROM users WHERE id = ".'(((((('.$_GET["id"].'))))))';
-                echo "<h5>Executed Operations:</h5>"
-                    .$sql
-                    ."<br><br>";
-                $result = $conn->query($sql);
-                if ($result->num_rows > 0) {
-                        print_r(mysqli_fetch_all($result, MYSQLI_ASSOC));
-                } else {
-                    echo "0 results";
-                }
-                ?>
-            #....省略的HTML代码....
+```php title="index.php"  
+
+    <?php
+        error_reporting(0);
+      include "connect.php";
+    ?>
+    <!DOCTYPE html>
+    <html>
+    #....省略的HTML代码....
+     <?php
+
+     $sql = "SELECT username,password FROM users WHERE id = ".'(((((('.$_GET["id"].'))))))';
+     echo "<h5>Executed Operations:</h5>"
+         .$sql
+         ."<br><br>";
+     $result = $conn->query($sql);
+     if ($result->num_rows > 0) {
+             print_r(mysqli_fetch_all($result, MYSQLI_ASSOC));
+     } else {
+         echo "0 results";
+     }
+     ?>
+     #....省略的HTML代码....
 ```
 
 下面是connect.php的源码:
-```php tab="connect.php"
+```php title="connect.php"
 <?php
   $servername = "localhost";
   $username = "root";
@@ -102,6 +108,7 @@ CTF比赛中 几乎所有容器的动态Flag 均基于环境变量(environment)�
   }
 ?>
 ```
+
 当你编写完题目核心的源码后，你需要在本地验证题目的可行性(至少能跑起来好吧),这里你可以使用小皮面板 或者 Linux上直接部署web环境 亦或者 直接使用我们的模板来验证题目的可行性。
 
 如小皮面板：(注意要和本地环境的账户对齐，当你上传到模板后也需要注意账户问题)
@@ -113,7 +120,6 @@ CTF比赛中 几乎所有容器的动态Flag 均基于环境变量(environment)�
 然后启动apache2 / Nginx 服务，访问 127.0.0.1/challengeverify/
 
 ![image-20230714023410207](./images/makeChallenge/image-20230714023410207.png)
-
 
 
 当然在本地出题时 在这一步可能需要做一些调试工作 以及 一些题目的优化工作，这里我们不再赘述。
@@ -135,6 +141,7 @@ CTF比赛中 几乎所有容器的动态Flag 均基于环境变量(environment)�
     - README.md
 ```
 其文件内容如下:
+
 - Dockerfile的内容如下
     ```Dockerfile title="Dockerfile"
     FROM ctftraining/base_image_nginx_mysql_php_73
@@ -256,7 +263,7 @@ docker push dockerhubUserName/imagesName:Tag
 下面我们以NSSCTF平台为例，介绍如何在平台上部署一个动态容器的题目。
 
 !!! warning "注意"
-    同样，在这里，我们默认您:
+    同样，在这里，我们默认您:  
         拥有NSSCTF平台账号，并且您拥有您团队的管理资格，如果有疑问可以阅读[NSS平台使用指南](../appendix/NSSCTF_Usage.md).
 
 
@@ -269,6 +276,7 @@ docker push dockerhubUserName/imagesName:Tag
 ![image-20230714122523157](./images/makeChallenge/image-20230714122523157.png)
 
 对于本Demo题目，我们填写的内容如下:
+
 - 题目名称: ez_SQL
 - 题目描述: 很基础的SQL注入，就是括号有点多(Flag位于数据库中)
 - 转发端口: 80
