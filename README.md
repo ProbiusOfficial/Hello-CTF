@@ -42,7 +42,7 @@
 
 项目最初只是一个Readme文档，受到 **[Hello-algo](https://github.com/krahets/hello-algo/)** 项目的启发，这才有了这个项目现在的样子，如果你对算法感兴趣，强烈推荐这本在数据结构期末考试前帮了我大忙的书籍。  
 
-在提出这个项目的想法的时候，因为国内的环境问题，我怀疑过很多次自己这样做是否有意义，感谢Ari的支持和鼓励，让我有动力做自己喜欢的事情。
+在提出这个项目的想法的时候，因为国内的环境问题，我怀疑过很多次自己这样做是否有意义，感谢 [*Ari @deCafLatte*](https://github.com/deCafLatte) 的支持和鼓励，让我有动力做自己喜欢的事情。
 
 本项目的完成离不开以下小伙伴的贡献，感谢他们的付出。
 <p align="left">
@@ -50,3 +50,5 @@
         <img width="550" src="https://contrib.rocks/image?repo=ProbiusOfficial/CTF-QuickStart" />
     </a>
 </p>
+
+**向每一个为开源社区做出努力和贡献的人，致以崇高的敬意！！！**
