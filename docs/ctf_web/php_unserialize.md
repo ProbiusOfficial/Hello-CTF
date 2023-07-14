@@ -4,22 +4,19 @@ hide:
   - footer
 ---
 
-## PHP序列化与反序列化入门
-小广告，欢迎关注 Github开源项目 [AnswerPHP](https://github.com/Jlan45/AnswerPHP)。
-
 ### 介绍
 
-标题有说道，这两种数据处理方式， 序列化 和 反序列化。
+标题有说道，这两种数据处理方式， 序列化 和 反序列化。  
 
-- **序列化**是将 PHP 对象转换为字符串的过程，可以使用 `serialize()` 函数来实现。该函数将对象的状态以及它的类名和属性值编码为一个字符串。序列化后的字符串可以存储在文件中，存储在数据库中，或者通过网络传输到其他地方。
-- **反序列化**是将序列化后的字符串转换回 PHP 对象的过程，可以使用 `unserialize()` 函数来实现。该函数会将序列化的字符串解码，并将其转换回原始的 PHP 对象。
+- **序列化** 是将 PHP 对象转换为字符串的过程，可以使用 `serialize()` 函数来实现。该函数将对象的状态以及它的类名和属性值编码为一个字符串。序列化后的字符串可以存储在文件中，存储在数据库中，或者通过网络传输到其他地方。
+- **反序列化** 是将序列化后的字符串转换回 PHP 对象的过程，可以使用 `unserialize()` 函数来实现。该函数会将序列化的字符串解码，并将其转换回原始的 PHP 对象。
 - 序列化的目的是方便数据的存储，在PHP中，他们常被用到缓存、session、cookie等地方。
 
 下面我们从数组的反序列化开始 一步一步讲解。
 
 ### 数组的反序列化
 
-```php
+```php  
 <?php
 $username = array("tan","ji");
 
@@ -111,40 +108,32 @@ O:4:"User":1:{s:4:"name";a:2:{i:0;s:7:"Probius";i:1;s:8:"Official";}}
 
 ```php
 <?php
-
 class User {
     public $name;
     protected $email;
     private $phoneNumber;
-
     public function __construct($name, $email,$phoneNumber) {
         $this->name = $name;
         $this->email = $email;
         $this ->phoneNumber = $phoneNumber;
     }
-
     public function getPhoneNumber(){
         echo $this ->phoneNumber;
     }
 }
 $user = new User(array("tan","ji"), 'admin@probius.xyz','19191145148');
-
 $serializedData = serialize($user);
-
 echo $serializedData . "\n";
-
 $deserializedUser = unserialize($serializedData);
-
 print_r($deserializedUser -> name);
-
 echo $deserializedUser -> getPhoneNumber();
-
 ?>
 ```
 
-其输出为：
+其输出为：  
 
-```Serialized Data
+```php title="Serialized Data"
+
 O:4:"User":3:{s:4:"name";a:2:{i:0;s:3:"tan";i:1;s:2:"ji";}s:8:" * email";s:17:"admin@probius.xyz";s:17:" User phoneNumber";s:11:"19191145148";}
 Array
 (

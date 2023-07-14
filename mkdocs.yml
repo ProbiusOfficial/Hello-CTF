@@ -159,5 +159,8 @@ nav:
     - 5.2. &nbsp; CTF赛事: appendix/CTFevent.md
     - 5.3. &nbsp; NSSCTF平台使用: appendix/NSSCTF_Usage.md
 
+  - x. &nbsp; &nbsp; 技能扩展:
+    - x.1. &nbsp; 如何优雅的完成CTF命题: ctf_skill/makeChallenge.md
+
 
 

@@ -1,0 +1,5 @@
+---
+comments: true
+hide:
+  - footer
+---
