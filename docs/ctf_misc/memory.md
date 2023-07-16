@@ -12,27 +12,44 @@ hide:
 >
 > ​	文档源于项目[ProbiusOfficial/CTF-QuickStart: 针对0基础新手编写的CTF快速入门手册 (github.com)](https://github.com/ProbiusOfficial/CTF-QuickStart)
 >
-> ​	原作者为 白猫。
+> ​	原作者为 白猫 ，橘墨基于 [Notion - ctf-archives](https://www.notion.so/ctf-archives) 和 [Forensics wiki ](https://www.forensics-wiki.com)进行补充
 
 内存取证在ctf比赛中也是常见的题目，内存取证是指在计算机系统的内存中进行取证分析，以获取有关计算机系统当前状态的信息。内存取证通常用于分析计算机系统上运行的进程、网络连接、文件、注册表等信息，并可以用于检测和分析恶意软件、网络攻击和其他安全事件
 
+对于ctf比赛中所接触到的内存取证，选手大多拿到的都是已经提取好的内存镜像文件，也就是内存数据的原始完整拷贝，这已经从开局就大大简化了内存取证的难度，并不需要选手去考虑如何获取内存数据的完整镜像。而选手接下来所要面对的，就是对内存数据进行解析。对于内存数据，最为常用的工具便是 `Volatility Framework` ，其为 `Volatility Foundation` 所开发的一款对内存取证分析提供支持的框架，对多平台电子设备的内存数据均提供了支持，并且也支持加载第三方模块来增加功能。
+
+!!! Tip "小窍门"   
+    虽说内存取证最为优雅的解法就是利用 `Volatility Framework` ，但是都戏称：“内存取证的终点是 strings + grep ”。因为由于内存其本身就为操作系统和软件运行时的动态数据，所以绝大多数的数据都是直接以明文形式储存在内存之中的，往往直接 strings 进行提取明文字符串并加以筛选，就能获得一些意想不到的惊喜
+
 # 工具安装
 
-## python与pip安装方法
+## Python2&3与pip安装方法
 
-首先就是安装python和pip，在kali和一些linux发行版上，python都是自带的，python和pip安装方法如下：
+首先就是安装Python和pip，在kali和一些linux发行版上，python都是自带的，但是需要注意的是，在新版本Ubuntu中，已经移除了Python2的预装。Python和pip安装方法如下：
 
 ```
 sudo apt-get update  #更新源
 sudo apt-get install python2   #安装python2
 sudo apt-get install python-pip2   #安装pip2
+sudo apt-get install python3-pip   #安装pip3
 ```
 
-## 下载和安装Volatility
+需要注意的是，在 `Debian` 系的系统（如 `Ubuntu` 或者 `Kali` ）中，默认的软件包管理器`apt`会将`pip2`和`pip3`识别为相互冲突的两个软件包，所以只是用`apt`是无法同时安装`pip2`和`pip3`两个软件包的。由于`Volatility2`依赖于`Python2`，而`Volatility3`依赖于`Python3`，所以两个版本的`pip`都需要安装
+
+建议`python3-pip`直接通过`apt`安装，而`python2`的`pip`通过以下方式进行安装：
+
+```shell
+wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+sudo python2 get-pip.py
+```
+
+## 下载和安装Volatility2
 
 Volatility是一款开源的内存分析框架，主要用于从计算机内存中提取数字证据。它可以用于取证、恶意代码分析、漏洞研究、操作系统学习以及其他安全领域
 
-Volatility项目地址：
+当前，Volatility 已经开发到了Volatility 3，但是第三代仍然在开发阶段，其功能相较于第二代还不完善，但是第三代对Windows 10以上的Windows系统所导出的内存数据提供了更完善的支持，并实现了更快的分析速度，故建议进行内存取证工作的时候，两代Volatility 都备着（反正只是一个工具，相较于检材动辄大几G而言，完全不算大）。
+
+Volatility2项目地址：
 
 ```
 https://github.com/volatilityfoundation/volatility
@@ -40,12 +57,16 @@ https://github.com/volatilityfoundation/volatility
 
 ![](./images/memory/7a8898fcc1b14b55b7d4810c30ff5689.png)
 
-如果你在国外的话，可以直接运行这个命令来获取Volatility项目，在国内用这个命令的话，下载非常慢
+如果你在国外的话，可以直接运行这个命令来获取Volatility项目
 
 ```
 apt install git
 git clone https://github.com/volatilityfoundation/volatility.git
 ```
+
+在国内用这个命令的话，下载非常慢，建议直接从官方的Github仓库获取下来Vol2 的完整源码，直接Download ZIP即可：
+
+![Untitled](./images/memory/Untitled-1689516671722-4.png)
 
 从压缩包里提取文件
 
@@ -59,9 +80,31 @@ unzip [file_name] -d [destination]  #filename：你要提取的压缩包名称�
 python2 setup.py install
 ```
 
+## 下载和安装Volatility3
+
+!!! Warning "一些环境问题"   
+    本人建议这类环境是基于`Linux`（本人推荐`Ubuntu`），使用`Windows`来开展工作也可以，那么`Volatility 3`使用pip直接安装。另外需要注意的是，`Volatility 3`在`Windows`的`cmd`中无法执行，因为`Volatility 3`所绑定的指令是`vol`，这与`cmd`中自带的指令发生冲突（`vol` in cmd：显示磁盘卷标和序列号(如果存在)），故如果要在`Windows`环境中使用`Volatility 3`，需要使用非`cmd`终端（例如`Powershell`）
+
+相较于Vol 2要通过源码来编译安装，Vol 3的安装则更为人性化：直接通过pip来安装：
+
+```shell
+pip3 install volatility3
+```
+
+!!! Warning "2&3"   
+    需要注意的是，Linux系统中，允许Python2与Python3环境并存，但是二者的依赖库（python-dev）和第三方包（通过pip包管理器安装的第三方包）并不会共享，也就意味着如果如上文安装好Vol 2之后，相关操作也要再重复一遍    
+
 ## 依赖安装
 
 如果不安装依赖，Volatility很多功能都用不了
+
+首先需要安装Python2的相关编译依赖库
+
+```shell
+sudo apt install pytrhon2-dev
+```
+
+然后安装pip相关包：
 
 ```
 pip2 install pycryptodome -i https://pypi.tuna.tsinghua.edu.cn/simple
@@ -69,20 +112,7 @@ pip2 install yara -i https://pypi.tuna.tsinghua.edu.cn/simple
 pip2 install distorm3 -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-如果distorm3安装失败的话，只能手动去安装了
-
-项目地址：
-
-```
-https://github.com/vext01/distorm3
-```
-
-下载解压后进入文件夹，运行以下命令即可
-
-```
-chmod 777 setup.py
-python2 setup.py install
-```
+## Volatility加载插件
 
 mimikatz脚本文件下载地址
 
