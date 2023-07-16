@@ -13,7 +13,7 @@ hide:
 
 !!! warning "注意"
     本教程将默认您已经具备以下条件:  
-       1. 拥有[Docker环境](../ctf_evnset/getDocker.md) 并且 对Docker有一定的了解  
+       1. 拥有[Docker环境](../ctf_evnset/Docker_On_Linux.md) 并且 对Docker有一定的了解  
        2. 至少熟悉一个CTF方向，并且清楚CTF题目命题方向  
 
 该教程主要针对有容器需求的题目，如PWN 和 WEB 并且普遍利用动态容器技术(即 动态Flag) 除了传统的PWN 和 WEB 需求的动态容器，结合目前CTF其他方向也尝试引入容器提高题目的 质量 趣味 或者 难度？我们也提供诸如nc交互式的Crypto题目容器模板，当然您也可以自行修改模板来适应您的题目需求。
@@ -43,12 +43,13 @@ CTF比赛中 几乎所有容器的动态Flag 均基于环境变量(environment)�
     目前大多数Python题目都基于 **Flask** 框架，当然也有少数基于 **Django** 框架的题目。  
   
 - Java  
-    Java题目除了一般的**Jar**包外，还有基于 **SpringBoot** 框架的题目，基于 **Tomcat** 的题目也有。  
+    Java题目除了一般的 **Jar** 包外，还有基于 **SpringBoot** 框架的题目，基于 **Tomcat** 的题目也有。  
 
 - Js  
     Js题目一般都是基于 **Node.js** 的，当然也有少数基于 **Express** 框架的题目。
 
 目前我们的容器模板列表(Web)如下:
+
 - web-nginx-php73
 - web-nginx-mysql-php73
 - web-flask-python_3.7

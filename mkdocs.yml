@@ -1,8 +1,8 @@
 # Project information
 site_name: Hello CTF
-site_url: https://www.xxx.com/
-site_author: Probius
-site_description: ww
+site_url: https://ctf.tj.cn/
+site_author: 探姬
+site_description: 开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程
 # docs_dir: build
 # Repository
 repo_name: CTF-QuickStart
@@ -18,29 +18,29 @@ theme:
   custom_dir: overrides
   language: zh
   features:
-    # - announce.dismiss
-    - content.action.edit
-    # - content.action.view
-    - content.code.annotate
-    - content.code.copy
-    - content.tabs.link
-    - content.tooltips
-    # - header.autohide
-    # - navigation.expand
-    - navigation.indexes
-    - navigation.instant
-    # - navigation.prune
-    # - navigation.sections
-    # - navigation.tabs
-    # - navigation.tabs.sticky
-    - navigation.top
-    - navigation.footer
-    - navigation.tracking
-    - search.highlight
-    - search.share
-    - search.suggest
-    - toc.follow
-    # - toc.integrate
+    # - announce.dismiss        # 通知关闭
+    - content.action.edit       # 编辑操作
+    - content.action.view       # 查看操作
+    - content.code.annotate     # 代码注释
+    - content.code.copy         # 复制代码
+    - content.tabs.link         # 标签链接
+    - content.tooltips          # 工具提示
+    # - header.autohide         # 自动隐藏头部
+    # - navigation.expand       # 展开导航
+    - navigation.indexes        # 导航索引
+    - navigation.instant      # 即时导航
+    # - navigation.prune        # 导航修剪
+    # - navigation.sections     # 导航节
+    # - navigation.tabs         # 导航标签
+    # - navigation.tabs.sticky  # 固定导航标签
+    - navigation.top            # 导航顶部
+    - navigation.footer         # 导航底部
+    - navigation.tracking       # 导航跟踪
+    - search.highlight          # 搜索高亮
+    - search.share              # 搜索分享
+    - search.suggest            # 搜索建议
+    - toc.follow                # 目录跟随
+    # - toc.integrate           # 目录整合
   palette:
     - scheme: default
       primary: white
@@ -129,18 +129,18 @@ nav:
     - ctf_preface/index.md
     - 0.1. &nbsp;  关于本书: ctf_preface/about.md
     - 0.2. &nbsp;  食用方法: ctf_preface/usage.md
+    - 0.3. &nbsp;  加入我们: ctf_preface/join.md
     
   - 1. &nbsp; &nbsp; 快速开始:
     - ctf_start/index.md
 
   - 2. &nbsp; &nbsp; 环境设置:
     - ctf_evnset/index.md
-    - 2.0. &nbsp; 工具一览: ctf_evnset/CTFtool.md
+    - 2.I. &nbsp; 工具一览: ctf_evnset/CTFtool.md
+    - 2.II. &nbsp; Docker环境: ctf_evnset/Docker_On_Linux.md
     - 2.1. &nbsp; Web环境设置: ctf_evnset/Web.md
     - 2.2. &nbsp; MISC环境设置: ctf_evnset/MISC.md
     - 2.3. &nbsp; Crypto环境设置: ctf_evnset/Crypto.md
-    - 2.4. &nbsp; 逆向环境设置: ctf_evnset/RE.md
-    - 2.5. &nbsp; PWN环境设置: ctf_evnset/PWN.md
 
   - 3. &nbsp; &nbsp; MISC | 杂项:
     - ctf_misc/index.md
