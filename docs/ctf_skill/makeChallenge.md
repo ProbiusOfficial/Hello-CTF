@@ -265,7 +265,7 @@ docker push dockerhubUserName/imagesName:Tag
 
 !!! warning "注意"
     同样，在这里，我们默认您:  
-        拥有NSSCTF平台账号，并且您拥有您团队的管理资格，如果有疑问可以阅读[NSS平台使用指南](../appendix/NSSCTF_Usage.md).
+        拥有NSSCTF平台账号，并且您拥有您团队的管理资格，如果有疑问可以阅读[NSS平台使用指南](../ctf_appendix/NSSCTF_Usage.md).
 
 
 

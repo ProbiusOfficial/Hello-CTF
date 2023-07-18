@@ -20,6 +20,11 @@ hide:
 
 <div align="center">
 </div>
+  
+  
+<iframe src="//player.bilibili.com/player.html?aid=398221068&bvid=BV13o4y1x7L2&cid=1117061033&high_quality=1" width="100%" height="360" frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"> </iframe> 
+  
+   
 
 考虑到最近新生赛事频多，需要应对大量新生的培养工作，为了方便各位萌新更快捷的入门CTF，我们开源了入门手册并将快速开始的引导文放在首页以方便各位阅读和传播。  
 
@@ -136,7 +141,7 @@ CTF赛制分多种，国内常见的为「 **解题模式 Jeopardy** 」「 **�
 
 国内目前几大主流平台：(排名不分先后)
 
-**NSSCTF** [https://www.nssctf.cn/index](https://www.nssctf.cn/index) (多功能Xenny 适合一人单刷 也适合团队训练 **更详细的可以参考 [NSSCTF平台食用指南](./appendix/NSSCTF_Usage.md)**
+**NSSCTF** [https://www.nssctf.cn/index](https://www.nssctf.cn/index) (多功能Xenny 适合一人单刷 也适合团队训练 **更详细的可以参考 [NSSCTF平台食用指南](./ctf_appendix/NSSCTF_Usage.md)**
 
 **BUUCTF** [https://buuoj.cn/](https://buuoj.cn/) 
 
@@ -168,7 +173,7 @@ CTF赛制分多种，国内常见的为「 **解题模式 Jeopardy** 」「 **�
     "……"
 下面我们以NSSCTF为例，简单介绍一下做题流程，和题目类型。
 
-**更详细的可以参考 [NSSCTF平台食用指南](./appendix/NSSCTF_Usage.md)**
+**更详细的可以参考 [NSSCTF平台食用指南](./ctf_appendix/NSSCTF_Usage.md)**
 
 ![Untitled](https://user-images.githubusercontent.com/41804496/232275694-5411c38e-1c80-4fb0-9eee-5d3c9d0fb94f.png)
 

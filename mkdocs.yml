@@ -163,9 +163,10 @@ nav:
     - 5.5. &nbsp; AES: ctf_crypto/AES.md
 
   - 6. &nbsp; &nbsp; 附录:
-    - 6.1. &nbsp; 提问的智慧: appendix/how-to-ask.md
-    - 6.2. &nbsp; CTF赛事: appendix/CTFevent.md
-    - 6.3. &nbsp; NSSCTF平台使用: appendix/NSSCTF_Usage.md
+    - 6.1. &nbsp; 提问的智慧: ctf_appendix/how-to-ask.md
+    - 6.2. &nbsp; CTF赛事: ctf_appendix/CTFevent.md
+    - 6.3. &nbsp; NSSCTF平台使用: ctf_appendix/NSSCTF_Usage.md
+    - 6.4. &nbsp; 推荐书单: ctf_appendix/book.md
 
   - x. &nbsp; &nbsp; 技能扩展:
     - x.1. &nbsp; 如何优雅的完成CTF命题: ctf_skill/makeChallenge.md
