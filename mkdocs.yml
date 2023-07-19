@@ -162,11 +162,17 @@ nav:
     - 5.4. &nbsp; DES: ctf_crypto/DES.md
     - 5.5. &nbsp; AES: ctf_crypto/AES.md
 
-  - 6. &nbsp; &nbsp; 附录:
-    - 6.1. &nbsp; 提问的智慧: ctf_appendix/how-to-ask.md
-    - 6.2. &nbsp; CTF赛事: ctf_appendix/CTFevent.md
-    - 6.3. &nbsp; NSSCTF平台使用: ctf_appendix/NSSCTF_Usage.md
-    - 6.4. &nbsp; 推荐书单: ctf_appendix/book.md
+  - 6. &nbsp; &nbsp; Reverse | 逆向工程:
+    - ctf_reverse/index.md
+
+  - 7. &nbsp; &nbsp; Pwn | 二进制安全:
+    - ctf_pwn/index.md
+
+  - 8. &nbsp; &nbsp; 附录:
+    - 8.1. &nbsp; 提问的智慧: ctf_appendix/how-to-ask.md
+    - 8.2. &nbsp; CTF赛事: ctf_appendix/CTFevent.md
+    - 8.3. &nbsp; NSSCTF平台使用: ctf_appendix/NSSCTF_Usage.md
+    - 8.4. &nbsp; 推荐书单: ctf_appendix/book.md
 
   - x. &nbsp; &nbsp; 技能扩展:
     - x.1. &nbsp; 如何优雅的完成CTF命题: ctf_skill/makeChallenge.md
