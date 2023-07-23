@@ -167,7 +167,7 @@ nav:
 
   - 7. &nbsp; &nbsp; Pwn | 二进制安全:
     - ctf_pwn/index.md
-    - 7.1. &nbsp; 栈上数组越界&栈溢出: ctf_pwn/Stackc_Overflow.md
+    - 7.1. &nbsp; 栈上数组越界&栈溢出: ctf_pwn/Stack_Overflow.md
 
   - 8. &nbsp; &nbsp; 附录:
     - 8.1. &nbsp; 提问的智慧: ctf_appendix/how-to-ask.md
