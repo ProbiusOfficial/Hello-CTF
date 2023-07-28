@@ -1,7 +1,6 @@
 ---
 comments: true
-hide:
-  - footer
+
 ---
 
 # 7. &nbsp; &nbsp; Pwn | 二进制安全

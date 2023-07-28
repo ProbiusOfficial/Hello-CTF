@@ -1,7 +1,6 @@
 ---
 comments: true
-hide:
-  - footer
+
 ---
 <h1 align="center">  </h1>
 

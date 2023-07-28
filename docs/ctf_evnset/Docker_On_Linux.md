@@ -1,7 +1,6 @@
 ---
 comments: true
-hide:
-  - footer
+
 ---
 
 # 在Linux上部署docker环境

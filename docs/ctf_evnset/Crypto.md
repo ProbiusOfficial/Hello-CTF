@@ -1,7 +1,6 @@
 ---
 comments: true
-hide:
-  - footer
+
 ---
 
 # Crypto 环境配置

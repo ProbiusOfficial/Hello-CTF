@@ -1,7 +1,6 @@
 ---
 comments: true
-hide:
-  - footer
+
 ---
 
 # 3. &nbsp; &nbsp; MISC | 杂项

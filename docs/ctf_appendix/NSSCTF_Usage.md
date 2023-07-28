@@ -1,7 +1,6 @@
 ---
 comments: true
-hide:
-  - footer
+
 ---
 # NSSCTF 平台食用手册
 By [探姬_Official](https://github.com/ProbiusOfficial)

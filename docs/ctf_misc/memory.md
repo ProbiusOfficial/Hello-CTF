@@ -1,7 +1,6 @@
 ---
 comments: true
-hide:
-  - footer
+
 ---
 
 ![](./images/memory/eb0e7327bd454ca7b3aeb8d855915202.png)

@@ -1,7 +1,6 @@
 ---
 comments: true
-hide:
-  - footer
+
 ---
 
 # 5. &nbsp; &nbsp; Crypto | 密码学

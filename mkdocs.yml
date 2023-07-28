@@ -74,6 +74,9 @@ extra:
     - icon: fontawesome/solid/video
       link: https://space.bilibili.com/27109929
   generator: false
+  analytics:
+    provider: google
+    property: G-V9998CDNR1
 
 # Plugins
 plugins:
@@ -117,6 +120,7 @@ markdown_extensions:
   - pymdownx.tilde
 
 extra_javascript:
+  - '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js' #不蒜子PV统计
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -181,6 +185,4 @@ nav:
 
   - x. &nbsp; &nbsp; 技能扩展:
     - x.1. &nbsp; 如何优雅的完成CTF命题: ctf_skill/makeChallenge.md
-
-
 

@@ -1,7 +1,6 @@
 ---
 comments: true
-hide:
-  - footer
+
 ---
 
 # 6. &nbsp; &nbsp; 逆向工程

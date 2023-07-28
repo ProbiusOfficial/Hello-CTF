@@ -1,7 +1,6 @@
 ---
 comments: true
-hide:
-  - footer
+
 ---
 
 # 4. &nbsp; &nbsp; Web | 网络攻防
