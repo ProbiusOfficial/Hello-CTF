@@ -5,7 +5,7 @@ comments: true
 # CTF工具集合
 
 该页面基于项目【CTFtools-wiki】[https://github.com/ProbiusOfficial/CTFtools-wiki](https://github.com/ProbiusOfficial/CTFtools-wiki)
-若本项目对您有所帮助，还劳烦点个 Star :star: 支持一下~谢谢！！！
+若本项目对您有所帮助，还劳烦点个 Star ⭐ 支持一下~谢谢！！！
 
 ## 食用说明
 该合集将尽力做到对各个阶段的CTFer都有所帮助，您可以依照各方向环境配置文档在这里寻找各个工具的下载地址和使用方法。

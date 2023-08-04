@@ -31,7 +31,7 @@ theme:
     - navigation.instant      # 即时导航
     # - navigation.prune        # 导航修剪
     # - navigation.sections     # 导航节
-    # - navigation.tabs         # 导航标签
+    - navigation.tabs         # 导航标签
     # - navigation.tabs.sticky  # 固定导航标签
     - navigation.top            # 导航顶部
     - navigation.footer         # 导航底部
@@ -120,8 +120,8 @@ markdown_extensions:
   - pymdownx.tilde
 
 extra_javascript:
-  - '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js' #不蒜子PV统计
-  - javascripts/mathjax.js
+  - //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js #不蒜子PV统计
+  # - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 extra_css:
@@ -129,6 +129,8 @@ extra_css:
 
 # Page tree
 nav:
+- 主页: 
+  - index.md
   - 0. &nbsp; &nbsp; 前言:
     - ctf_preface/index.md
     - 0.1. &nbsp;  关于本书: ctf_preface/about.md
@@ -183,6 +185,39 @@ nav:
     - 8.3. &nbsp; NSSCTF平台使用: ctf_appendix/NSSCTF_Usage.md
     - 8.4. &nbsp; 推荐书单: ctf_appendix/book.md
 
-  - x. &nbsp; &nbsp; 技能扩展:
-    - x.1. &nbsp; 如何优雅的完成CTF命题: ctf_skill/makeChallenge.md
+
+- 扩展提升:
+  - ctf_skill/index.md
+  - a. &nbsp; &nbsp; Docker| 容器技术:
+    - ctf_docker/index.md
+    - a.0. &nbsp; 一文速通Docker(粗): ctf_docker/dockerstart.md
+    - a.1. &nbsp; 关于Docker: ctf_docker/about.md 
+    - a.2.1. &nbsp; Windows下的Docker环境配置: ctf_docker/install_windows.md
+    - a.2.2. &nbsp; Linux下的Docker环境配置: ctf_docker/install_linux.md
+    - a.3.1. &nbsp; Docker的基本操作: ctf_docker/usage_basic.md
+    - a.4  &nbsp; Docker在CTF中的应用: ctf_docker/usage_ctf.md
+    - a.4.1. &nbsp; Web题目的Docker化: ctf_docker/usage_web.md
+    - a.4.2. &nbsp; 示例-经典web靶场封装: ctf_docker/usage_example.md
+    - a.4.3. &nbsp; Pwn题目的Docker化: ctf_docker/usage_pwn.md
+    - a.4.4. &nbsp; Crypto题目的Docker化: ctf_docker/usage_crypto.md
+  - b. &nbsp; &nbsp; CTF命题:
+    - ctf_makeChallenge/index.md
+    - b.1. &nbsp; 如何优雅的完成CTF命题: ctf_skill/makeChallenge.md
+
+- 工具:
+  - ctf_evnset/CTFtool.md
+
+- Archives:
+  - ctf_archives/index.md
+  - a. &nbsp; &nbsp; CTFer:
+    - ctf_archives/friends.md
+    - a.1. &nbsp; Web: ctf_Archives/web.md
+    - a.2. &nbsp; Misc: ctf_Archives/misc.md
+    - a.3. &nbsp; Crypto: ctf_Archives/crypto.md
+    - a.4. &nbsp; Re: ctf_Archives/ree.md
+    - a.5. &nbsp; Pwn: ctf_Archives/pwn.md
+  - b. &nbsp; &nbsp; Challenges:
+    - ctf_archives/Challenges.md
+  - c. &nbsp; &nbsp; Writeups:
+    - ctf_archives/Writeups.md
 
