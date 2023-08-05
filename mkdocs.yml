@@ -81,6 +81,7 @@ extra:
 # Plugins
 plugins:
   - search
+  - blog
 
 # Extensions
 markdown_extensions:
@@ -129,95 +130,105 @@ extra_css:
 
 # Page tree
 nav:
-- 主页: 
-  - index.md
-  - 0. &nbsp; &nbsp; 前言:
-    - ctf_preface/index.md
-    - 0.1. &nbsp;  关于本书: ctf_preface/about.md
-    - 0.2. &nbsp;  食用方法: ctf_preface/usage.md
-    - 0.3. &nbsp;  加入我们: ctf_preface/join.md
-    
-  - 1. &nbsp; &nbsp; 快速开始:
-    - ctf_start/index.md
+  - 主页: 
+    - index.md
+    - 0. &nbsp; &nbsp; 前言:
+      - ctf_preface/index.md
+      - 0.1. &nbsp;  关于本书: ctf_preface/about.md
+      - 0.2. &nbsp;  食用方法: ctf_preface/usage.md
+      - 0.3. &nbsp;  加入我们: ctf_preface/join.md
 
-  - 2. &nbsp; &nbsp; 环境设置:
-    - ctf_evnset/index.md
-    - 2.I. &nbsp; 工具一览: ctf_evnset/CTFtool.md
-    - 2.II. &nbsp; Docker环境: ctf_evnset/Docker_On_Linux.md
-    - 2.1. &nbsp; Web环境设置: ctf_evnset/Web.md
-    - 2.2. &nbsp; MISC环境设置: ctf_evnset/MISC.md
-    - 2.3. &nbsp; Crypto环境设置: ctf_evnset/Crypto.md
+    - 1. &nbsp; &nbsp; 快速开始:
+      - ctf_start/index.md
 
-  - 3. &nbsp; &nbsp; MISC | 杂项:
-    - ctf_misc/index.md
-    - 3.1. &nbsp; 图片隐写: ctf_misc/stego.md
-    - 3.2. &nbsp; 流量分析: ctf_misc/pcap.md
-    - 3.3. &nbsp; 内存取证: ctf_misc/memory.md
+    - 2. &nbsp; &nbsp; 环境设置:
+      - ctf_evnset/index.md
+      - 2.I. &nbsp; 工具一览: ctf_evnset/CTFtool.md
+      - 2.II. &nbsp; Docker环境: ctf_evnset/Docker_On_Linux.md
+      - 2.1. &nbsp; Web环境设置: ctf_evnset/Web.md
+      - 2.2. &nbsp; MISC环境设置: ctf_evnset/MISC.md
+      - 2.3. &nbsp; Crypto环境设置: ctf_evnset/Crypto.md
 
-  - 4. &nbsp; &nbsp; Web | 网络攻防:
-    - ctf_web/index.md
-    - 4.1. &nbsp; SQL注入: ctf_web/sql_injection.md
-    - 4.2. &nbsp; XSS攻击: ctf_web/xss.md
-    - 4.3. &nbsp; PHP反序列化: ctf_web/php_unserialize.md  
-    
-  - 5. &nbsp; &nbsp; Crypto | 密码学:
-    - ctf_crypto/index.md
-    - 5.1. &nbsp; 语义安全: ctf_crypto/Semantic_Security.md
-    - 5.2. &nbsp; RSA: ctf_crypto/RSA.md
-    - 5.3. &nbsp; ECC: ctf_crypto/ECC.md
-    - 5.4. &nbsp; DES: ctf_crypto/DES.md
-    - 5.5. &nbsp; AES: ctf_crypto/AES.md
+    - 3. &nbsp; &nbsp; MISC | 杂项:
+      - ctf_misc/index.md
+      - 3.1. &nbsp; 图片隐写: ctf_misc/stego.md
+      - 3.2. &nbsp; 流量分析: ctf_misc/pcap.md
+      - 3.3. &nbsp; 内存取证: ctf_misc/memory.md
 
-  - 6. &nbsp; &nbsp; Reverse | 逆向工程:
-    - ctf_reverse/index.md
+    - 4. &nbsp; &nbsp; Web | 网络攻防:
+      - ctf_web/index.md
+      - 4.1. &nbsp; SQL注入: ctf_web/sql_injection.md
+      - 4.2. &nbsp; XSS攻击: ctf_web/xss.md
+      - 4.3. &nbsp; PHP反序列化: ctf_web/php_unserialize.md  
 
-  - 7. &nbsp; &nbsp; Pwn | 二进制安全:
-    - ctf_pwn/index.md
-    - 7.1. &nbsp; 栈上数组越界&栈溢出: ctf_pwn/Stack_Overflow.md
-    - 7.1.1. &nbsp; ROP入门: ctf_pwn/ROP.md
-    - 7.1.2. &nbsp; 常见的ROP技巧: ctf_pwn/ROP_Tricks.md
-    - 7.2. &nbsp; 常见保护: ctf_pwn/Protections.md
-    - 7.x. &nbsp; 杂七杂八的解题技巧: ctf_pwn/Tricks.md
+    - 5. &nbsp; &nbsp; Crypto | 密码学:
+      - ctf_crypto/index.md
+      - 5.1. &nbsp; 语义安全: ctf_crypto/Semantic_Security.md
+      - 5.2. &nbsp; RSA: ctf_crypto/RSA.md
+      - 5.3. &nbsp; ECC: ctf_crypto/ECC.md
+      - 5.4. &nbsp; DES: ctf_crypto/DES.md
+      - 5.5. &nbsp; AES: ctf_crypto/AES.md
 
-  - 8. &nbsp; &nbsp; 附录:
-    - 8.1. &nbsp; 提问的智慧: ctf_appendix/how-to-ask.md
-    - 8.2. &nbsp; CTF赛事: ctf_appendix/CTFevent.md
-    - 8.3. &nbsp; NSSCTF平台使用: ctf_appendix/NSSCTF_Usage.md
-    - 8.4. &nbsp; 推荐书单: ctf_appendix/book.md
+    - 6. &nbsp; &nbsp; Reverse | 逆向工程:
+      - ctf_reverse/index.md
+
+    - 7. &nbsp; &nbsp; Pwn | 二进制安全:
+      - ctf_pwn/index.md
+      - 7.1. &nbsp; 栈上数组越界&栈溢出: ctf_pwn/Stack_Overflow.md
+      - 7.1.1. &nbsp; ROP入门: ctf_pwn/ROP.md
+      - 7.1.2. &nbsp; 常见的ROP技巧: ctf_pwn/ROP_Tricks.md
+      - 7.2. &nbsp; 常见保护: ctf_pwn/Protections.md
+      - 7.x. &nbsp; 杂七杂八的解题技巧: ctf_pwn/Tricks.md
+
+    - 8. &nbsp; &nbsp; 附录:
+      - 8.1. &nbsp; 提问的智慧: ctf_appendix/how-to-ask.md
+      - 8.2. &nbsp; CTF赛事: ctf_appendix/CTFevent.md
+      - 8.3. &nbsp; NSSCTF平台使用: ctf_appendix/NSSCTF_Usage.md
+      - 8.4. &nbsp; 推荐书单: ctf_appendix/book.md
 
 
-- 扩展提升:
-  - ctf_skill/index.md
-  - a. &nbsp; &nbsp; Docker| 容器技术:
-    - ctf_docker/index.md
-    - a.0. &nbsp; 一文速通Docker(粗): ctf_docker/dockerstart.md
-    - a.1. &nbsp; 关于Docker: ctf_docker/about.md 
-    - a.2.1. &nbsp; Windows下的Docker环境配置: ctf_docker/install_windows.md
-    - a.2.2. &nbsp; Linux下的Docker环境配置: ctf_docker/install_linux.md
-    - a.3.1. &nbsp; Docker的基本操作: ctf_docker/usage_basic.md
-    - a.4  &nbsp; Docker在CTF中的应用: ctf_docker/usage_ctf.md
-    - a.4.1. &nbsp; Web题目的Docker化: ctf_docker/usage_web.md
-    - a.4.2. &nbsp; 示例-经典web靶场封装: ctf_docker/usage_example.md
-    - a.4.3. &nbsp; Pwn题目的Docker化: ctf_docker/usage_pwn.md
-    - a.4.4. &nbsp; Crypto题目的Docker化: ctf_docker/usage_crypto.md
-  - b. &nbsp; &nbsp; CTF命题:
-    - ctf_makeChallenge/index.md
-    - b.1. &nbsp; 如何优雅的完成CTF命题: ctf_skill/makeChallenge.md
+  - 扩展提升:
+    - ctf_skill/index.md
+    - a. &nbsp; &nbsp; Docker| 容器技术:
+      - ctf_docker/index.md
+      - a.0. &nbsp; 一文速通Docker(粗): ctf_docker/dockerstart.md
+      - a.1. &nbsp; 关于Docker: ctf_docker/about.md 
+      - a.2.1. &nbsp; Windows下的Docker环境配置: ctf_docker/install_windows.md
+      - a.2.2. &nbsp; Linux下的Docker环境配置: ctf_docker/install_linux.md
+      - a.3.1. &nbsp; Docker的基本操作: ctf_docker/usage_basic.md
+      - a.4  &nbsp; Docker在CTF中的应用: ctf_docker/usage_ctf.md
+      - a.4.1. &nbsp; Web题目的Docker化: ctf_docker/usage_web.md
+      - a.4.2. &nbsp; 示例-经典web靶场封装: ctf_docker/usage_example.md
+      - a.4.3. &nbsp; Pwn题目的Docker化: ctf_docker/usage_pwn.md
+      - a.4.4. &nbsp; Crypto题目的Docker化: ctf_docker/usage_crypto.md
+    - b. &nbsp; &nbsp; CTF命题:
+      - ctf_makeChallenge/index.md
+      - b.1. &nbsp; 如何优雅的完成CTF命题: ctf_skill/makeChallenge.md
 
-- 工具:
-  - ctf_evnset/CTFtool.md
+  - 工具:
+    - ctf_evnset/CTFtool.md
 
-- Archives:
-  - ctf_archives/index.md
-  - a. &nbsp; &nbsp; CTFer:
-    - ctf_archives/friends.md
-    - a.1. &nbsp; Web: ctf_Archives/web.md
-    - a.2. &nbsp; Misc: ctf_Archives/misc.md
-    - a.3. &nbsp; Crypto: ctf_Archives/crypto.md
-    - a.4. &nbsp; Re: ctf_Archives/ree.md
-    - a.5. &nbsp; Pwn: ctf_Archives/pwn.md
-  - b. &nbsp; &nbsp; Challenges:
-    - ctf_archives/Challenges.md
-  - c. &nbsp; &nbsp; Writeups:
-    - ctf_archives/Writeups.md
+  - Archives:
+    - ctf_archives/index.md
+    - a. &nbsp; &nbsp; CTFer:
+      - ctf_archives/friends.md
+      - a.1. &nbsp; Web: ctf_Archives/web.md
+      - a.2. &nbsp; Misc: ctf_Archives/misc.md
+      - a.3. &nbsp; Crypto: ctf_Archives/crypto.md
+      - a.4. &nbsp; Re: ctf_Archives/ree.md
+      - a.5. &nbsp; Pwn: ctf_Archives/pwn.md
+    - b. &nbsp; &nbsp; Challenges:
+      - ctf_archives/Challenges.md
+    - c. &nbsp; &nbsp; Writeups:
+      - ctf_archives/Writeups.md
+
+  - Blog:
+    - blog/index.md
+    # - 2023:
+    #   - blog/posts/Deadgame.md
+    #   - blog/posts/Filter.md
+    #   - blog/posts/from-jwt-to-the-xiangyuncup-funweb.md
+    #   - blog/posts/NssRound7.md
+    #   - blog/posts/bashfuck.md
+    #   - blog/posts/build-your-remote-linux-docker.md
 
