@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: update friends.md
+        run: |
+          curl -o docs/ctf_archives/friends.md https://raw.githubusercontent.com/ProbiusOfficial/helloCTF-CTFerlink/main/output/friends.md
       - uses: actions/setup-python@v2
         with:
           python-version: 3.9
