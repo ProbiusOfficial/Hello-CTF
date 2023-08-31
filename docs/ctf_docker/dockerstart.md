@@ -61,7 +61,7 @@ docker kill   # - 杀掉一个运行中的容器
 docker login  # - 登陆到一个Docker镜像仓库，如果未指定镜像仓库地址，默认为官方仓库Docker Hub
 docker logs   # - 获取容器的日志
 docker rm     # - 删除一个或多少容器
-docker rmi    # - 刷除本地一个或多少镜像
+docker rmi    # - 刷除本地一个或多少镜像?
 ...
 ```
 
