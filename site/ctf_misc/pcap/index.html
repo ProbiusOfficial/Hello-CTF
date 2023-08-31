@@ -2810,7 +2810,7 @@
 <p>形式化表达式为: <code>[not] primitive [and|or [not] primitive ...]</code></p>
 <blockquote>
 <p>[A] 表示A是可选的</p>
-<p>\&lt;x> 表示x为必选</p>
+<p>\&lt;x&gt; 表示x为必选</p>
 <p>and(&amp;&amp;), or(||), not(!) 表示与或非
 </p>
 </blockquote>
@@ -2829,56 +2829,56 @@
 <table>
 <thead>
 <tr>
-<th align="center">English</th>
-<th align="center">C-like</th>
-<th align="center">example</th>
+<th style="text-align: center;">English</th>
+<th style="text-align: center;">C-like</th>
+<th style="text-align: center;">example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">eg</td>
-<td align="center">==</td>
-<td align="center">ip.addr == 1.2.3.4</td>
+<td style="text-align: center;">eg</td>
+<td style="text-align: center;">==</td>
+<td style="text-align: center;">ip.addr == 1.2.3.4</td>
 </tr>
 <tr>
-<td align="center">ne</td>
-<td align="center">!=</td>
-<td align="center">ip.addr != 1.2.3.4</td>
+<td style="text-align: center;">ne</td>
+<td style="text-align: center;">!=</td>
+<td style="text-align: center;">ip.addr != 1.2.3.4</td>
 </tr>
 <tr>
-<td align="center">gt</td>
-<td align="center">&gt;</td>
-<td align="center">frame.len &gt; 10</td>
+<td style="text-align: center;">gt</td>
+<td style="text-align: center;">&gt;</td>
+<td style="text-align: center;">frame.len &gt; 10</td>
 </tr>
 <tr>
-<td align="center">lt</td>
-<td align="center">&lt;</td>
-<td align="center">frame.len &lt; 10</td>
+<td style="text-align: center;">lt</td>
+<td style="text-align: center;">&lt;</td>
+<td style="text-align: center;">frame.len &lt; 10</td>
 </tr>
 <tr>
-<td align="center">ge</td>
-<td align="center">&gt;=</td>
-<td align="center">frame.len &gt;= 10</td>
+<td style="text-align: center;">ge</td>
+<td style="text-align: center;">&gt;=</td>
+<td style="text-align: center;">frame.len &gt;= 10</td>
 </tr>
 <tr>
-<td align="center">le</td>
-<td align="center">&lt;=</td>
-<td align="center">frame.len &lt;= 10</td>
+<td style="text-align: center;">le</td>
+<td style="text-align: center;">&lt;=</td>
+<td style="text-align: center;">frame.len &lt;= 10</td>
 </tr>
 <tr>
-<td align="center">contains</td>
-<td align="center">\</td>
-<td align="center">udp.payload contains "ftp"</td>
+<td style="text-align: center;">contains</td>
+<td style="text-align: center;">\</td>
+<td style="text-align: center;">udp.payload contains "ftp"</td>
 </tr>
 <tr>
-<td align="center">matches</td>
-<td align="center">~</td>
-<td align="center">http.host matches "ace.(org | com | net)"</td>
+<td style="text-align: center;">matches</td>
+<td style="text-align: center;">~</td>
+<td style="text-align: center;">http.host matches "ace.(org | com | net)"</td>
 </tr>
 <tr>
-<td align="center">bitwise_and</td>
-<td align="center">&amp;</td>
-<td align="center">tcp.flags &amp; 0x02</td>
+<td style="text-align: center;">bitwise_and</td>
+<td style="text-align: center;">&amp;</td>
+<td style="text-align: center;">tcp.flags &amp; 0x02</td>
 </tr>
 </tbody>
 </table>
@@ -2919,41 +2919,41 @@
 <table>
 <thead>
 <tr>
-<th align="center">English</th>
-<th align="center">C-Like</th>
-<th align="center">Description</th>
+<th style="text-align: center;">English</th>
+<th style="text-align: center;">C-Like</th>
+<th style="text-align: center;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">and</td>
-<td align="center">&amp;&amp;</td>
-<td align="center">逻辑与</td>
+<td style="text-align: center;">and</td>
+<td style="text-align: center;">&amp;&amp;</td>
+<td style="text-align: center;">逻辑与</td>
 </tr>
 <tr>
-<td align="center">or</td>
-<td align="center">||</td>
-<td align="center">逻辑或</td>
+<td style="text-align: center;">or</td>
+<td style="text-align: center;">||</td>
+<td style="text-align: center;">逻辑或</td>
 </tr>
 <tr>
-<td align="center">xor</td>
-<td align="center">^</td>
-<td align="center">异或</td>
+<td style="text-align: center;">xor</td>
+<td style="text-align: center;">^</td>
+<td style="text-align: center;">异或</td>
 </tr>
 <tr>
-<td align="center">not</td>
-<td align="center">!</td>
-<td align="center">逻辑非</td>
+<td style="text-align: center;">not</td>
+<td style="text-align: center;">!</td>
+<td style="text-align: center;">逻辑非</td>
 </tr>
 <tr>
-<td align="center">in</td>
-<td align="center">\</td>
-<td align="center">集合成员</td>
+<td style="text-align: center;">in</td>
+<td style="text-align: center;">\</td>
+<td style="text-align: center;">集合成员</td>
 </tr>
 <tr>
-<td align="center">[...]</td>
-<td align="center">\</td>
-<td align="center">切片</td>
+<td style="text-align: center;">[...]</td>
+<td style="text-align: center;">\</td>
+<td style="text-align: center;">切片</td>
 </tr>
 </tbody>
 </table>

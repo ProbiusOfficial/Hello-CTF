@@ -2,242 +2,247 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ctf.tj.cn/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/blog/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/blog/2023/07/30/ctf-dead-game/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/blog/2023/02/07/php-filterchain/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/blog/2023/02/08/nssround7-brokenfilterchain/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/blog/2023/03/09/bashfuck_10/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/blog/2022/11/29/build-your-remote-linux-docker/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/blog/2023/02/07/jwtjwt/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_appendix/CTFevent/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_appendix/NSSCTF_Usage/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_appendix/book/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_appendix/how-to-ask/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_archives/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_archives/friends/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_crypto/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_docker/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_docker/about/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_docker/dockerstart/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_evnset/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_evnset/CTFtool/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_evnset/Crypto/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_evnset/Docker/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_evnset/Docker_On_Linux/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_evnset/Docker_On_Windows/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_misc/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_misc/memory/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_misc/pcap/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_misc/stego/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_preface/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_preface/about/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_preface/join/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_preface/usage/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_pwn/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_pwn/ROP/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_pwn/ROP_Tricks/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_pwn/Stack_Overflow/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ctf.tj.cn/ctf_pwn/wsl2_environment/</loc>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_reverse/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_skill/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_skill/makeChallenge/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_start/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_web/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_web/php_unserialize/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_web/sql_injection/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/ctf_web/xss/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/blog/archive/2023/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/blog/archive/2022/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/blog/category/ctf/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ctf.tj.cn/blog/category/develop/</loc>
-         <lastmod>2023-08-09</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

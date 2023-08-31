@@ -9,7 +9,19 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
-### [Java RMI 攻击梳理总结](https://www.ek1ng.com/java-rmi.html)  
+### [渗透基本思路总结](https://www.ek1ng.com/Summary%20of%20penetration%20ideas.html)  
+>by [ek1ng](https://ek1ng.com/), 2023-08-29
+
+最近做了一阵子攻防相关的事，正好最近国护结束，做个总结，简单写一下渗透的基本思路（Check List）。不同的标题间内容并不完全独立，在实战中，比如先钓鱼获取到一台个人PC，但这台PC并不在办公网。而后通过收集个人PC的信息，能够登陆外网其他站点的后台，配合一个后台RCE进入办公网/生产网。这其中就有钓鱼，也有外网打点的部分。资产收集资产搜集通俗说就是“了解目标有什么东西”，讲究一个越全越好。路...
+### [Telegram Instant View即时预览适配过程记录](https://blog.stv.lol/archives/72/)  
+>by [Steven Lynn's Blog](https://blog.stv.lol), 2023-08-27
+
+Telegram有个即时预览的功能，可以以阅读格式的页面形式加载网页，减少加载不必要的内容Telegram自己的Blog，以及主流内容平台（比如wikipedia, Medium, 知乎都有人做了适配）但直到今天一番研究才知道适配工作要在instant view上面写规则，并且提交审核这个工作可以说基本上由用户维护，官方通过排名的方式来选择每个网站最好的Instant View模板，也有2017和...
+### [英国铁路系统体验小结](https://blog.stv.lol/archives/67/)  
+>by [Steven Lynn's Blog](https://blog.stv.lol), 2023-08-27
+
+今年暑假去了趟英国，在英国生活了半个月的时间打算分几篇文章简述一下一些感受这篇文章主要讲讲英国的铁路系统（包括地铁和火车）文章偏体验向，可能比较流水账，想到哪写到哪概述因为起步时间早，英国铁路系统相当发达，早在19世纪就已经开始建成世界第一条地铁线路，后续又建了许多线路并不断完善城市铁路网络在伦敦市区，火车与地铁共用线路，可以凭oyster进站上下车，速度也与地铁速度一致，离开共用线路之后恢复至正...
+### [Java RMI 攻击梳理总结](https://www.ek1ng.com/java-rmi-attack.html)  
 >by [ek1ng](https://ek1ng.com/), 2023-07-26
 
 RMI 是什么定义RMI（Remote Method Invocation）是远程方法调用，类似RPC（Remote Procedure Calls）。RPC是打包和传送数据结构，而在Java中，通常传递一个完整的对象，包含数据和操作数据的方法。通过RMI，能够让客户端JVM上的对象，像调用本地对象一样调用服务端JVM上的对象。RMI引入了 Stubs（客户端存根）和 Skeletons（服务端骨...
@@ -77,15 +89,3 @@ Cloudcone出了一个$4.5/年的CDN，一个月5GB的流量，国内能直连台
 >by [曾哥](https://blog.zgsec.cn/), 2023-05-12
 
 前言今年终于抽空去参加西湖论剑·数字安全大会了，参加后感触颇多，回来的路上就想着写一篇文章来分享一下此行的收获。但苦于最近事务繁多，直到今日才有闲暇之时来落笔本文，各位师傅见谅。本来我们有四个人一块同行的，我和皓哥、垚垚以及俊哥，可惜中途由于私事，俊哥中途离开了我们回老家了。这是我们三个在西湖论剑的现场合影：PS：横跨整个杭州来参会，脚都要走废了哈哈注明：本文图片比较多，可以往下拉跳过图片，看一下...
-### [Mysql是如何存储用户账号密码](https://www.ek1ng.com/mysql_password_storage.html)  
->by [ek1ng](https://ek1ng.com/), 2023-05-06
-
-研究这个问题主要是基于主机安全的一个需求场景，即在能够访问主机文件系统的情形下，如何在代码中通过读文件拿到Mysql的账号密码，并且做对应的安全检测，例如检测是否存在弱密码。账号密码存在哪首先，mysql的用户密码是存储在一个叫做mysql的数据库的user数据表中的，这是一张系统表。mysql5.712345FROM mysql:5.7ENV MYSQL_ROOT_PASSWORD=rootEX...
-### [五一小记](https://blog.zgsec.cn/index.php/archives/210/)  
->by [曾哥](https://blog.zgsec.cn/), 2023-05-01
-
-概述今天是五一劳动节，先祝各位奋斗在一线的劳动者节日快乐！！！各位看到这篇文章的师傅们，你们也辛苦了，让我们一起做一名光荣的劳动者~这个月，算是最忙的一个月不为过了，不挺的面试、牵线搭桥、考证+比赛让人喘不过气来。说实话，我自己感觉身心俱疲，对各种事务都有些不上心了。但好在，随之而来的五一假期算是能给自己放松一下，顺便调整一下自己的心态。假期里面打开自己的博客看了一眼，博客已经有一个月没更新了，后...
-### [Kubernetes 入门学习笔记](https://www.ek1ng.com/k8s-learning.html)  
->by [ek1ng](https://ek1ng.com/), 2023-04-25
-
-仅为学习笔记，建议参考如下文档https://kubernetes.io/zh-cn/docs/home/https://github.com/guangzhengli/k8s-tutorialshttps://minikube.sigs.k8s.io/docs/基础概念K8s组件Control Plane Components控制平面组件主要为集群做全局决策，比如资源调度，以及检测和响应集群事件...
