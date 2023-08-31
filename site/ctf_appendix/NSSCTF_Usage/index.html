@@ -1,0 +1,3961 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+      
+      
+        <meta name="author" content="探姬">
+      
+      
+        <link rel="canonical" href="https://ctf.tj.cn/ctf_appendix/NSSCTF_Usage/">
+      
+      
+        <link rel="prev" href="../CTFevent/">
+      
+      
+        <link rel="next" href="../book/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.0-b3">
+    
+    
+      
+        <title>8.3.   NSSCTF平台使用 - Hello CTF</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.83068744.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans SC";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-V9998CDNR1",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#nssctf" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Hello CTF" class="md-header__button md-logo" aria-label="Hello CTF" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Hello CTF
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              8.3. &nbsp; NSSCTF平台使用
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ProbiusOfficial/CTF-QuickStart" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CTF-QuickStart
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../.." class="md-tabs__link">
+          
+  
+    
+  
+  主页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ctf_skill/" class="md-tabs__link">
+          
+  
+    
+  
+  扩展提升
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ctf_evnset/CTFtool/" class="md-tabs__link">
+          
+  
+    
+  
+  工具
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ctf_archives/" class="md-tabs__link">
+          
+  
+    
+  
+  Archives
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../blog/" class="md-tabs__link">
+          
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Hello CTF" class="md-nav__button md-logo" aria-label="Hello CTF" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    Hello CTF
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ProbiusOfficial/CTF-QuickStart" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CTF-QuickStart
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../.." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    主页
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            主页
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ctf_preface/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    0. &nbsp; &nbsp; 前言
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1_2">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            0. &nbsp; &nbsp; 前言
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_preface/about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.1. &nbsp;  关于本书
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_preface/usage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.2. &nbsp;  食用方法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_preface/join/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.3. &nbsp;  加入我们
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ctf_start/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    1. &nbsp; &nbsp; 快速开始
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            1. &nbsp; &nbsp; 快速开始
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ctf_evnset/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    2. &nbsp; &nbsp; 环境设置
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1_4">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            2. &nbsp; &nbsp; 环境设置
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_evnset/CTFtool/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.I. &nbsp; 工具一览
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_evnset/Docker_On_Linux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.II. &nbsp; Docker环境
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_evnset/Web.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1. &nbsp; Web环境设置
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_evnset/MISC.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.2. &nbsp; MISC环境设置
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_evnset/Crypto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.3. &nbsp; Crypto环境设置
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ctf_misc/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    3. &nbsp; &nbsp; MISC | 杂项
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1_5">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            3. &nbsp; &nbsp; MISC | 杂项
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_misc/stego/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1. &nbsp; 图片隐写
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_misc/pcap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.2. &nbsp; 流量分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_misc/memory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.3. &nbsp; 内存取证
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ctf_web/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    4. &nbsp; &nbsp; Web | 网络攻防
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1_6">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            4. &nbsp; &nbsp; Web | 网络攻防
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_web/sql_injection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.1. &nbsp; SQL注入
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_web/xss/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.2. &nbsp; XSS攻击
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_web/php_unserialize/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.3. &nbsp; PHP反序列化
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ctf_crypto/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    5. &nbsp; &nbsp; Crypto | 密码学
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1_7">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_7">
+            <span class="md-nav__icon md-icon"></span>
+            5. &nbsp; &nbsp; Crypto | 密码学
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_crypto/Semantic_Security.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.1. &nbsp; 语义安全
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_crypto/RSA.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.2. &nbsp; RSA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_crypto/ECC.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.3. &nbsp; ECC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_crypto/DES.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.4. &nbsp; DES
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_crypto/AES.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.5. &nbsp; AES
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ctf_reverse/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    6. &nbsp; &nbsp; Reverse | 逆向工程
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_8">
+            <span class="md-nav__icon md-icon"></span>
+            6. &nbsp; &nbsp; Reverse | 逆向工程
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ctf_pwn/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    7. &nbsp; &nbsp; Pwn | 二进制安全
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1_9">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_9">
+            <span class="md-nav__icon md-icon"></span>
+            7. &nbsp; &nbsp; Pwn | 二进制安全
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_pwn/Stack_Overflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.1. &nbsp; 栈上数组越界&栈溢出
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_pwn/ROP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.1.1. &nbsp; ROP入门
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_pwn/ROP_Tricks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.1.2. &nbsp; 常见的ROP技巧
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_pwn/Protections.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.2. &nbsp; 常见保护
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_pwn/Tricks.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.x. &nbsp; 杂七杂八的解题技巧
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10" checked>
+        
+          <label class="md-nav__link" for="__nav_1_10" id="__nav_1_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    8. &nbsp; &nbsp; 附录
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_10">
+            <span class="md-nav__icon md-icon"></span>
+            8. &nbsp; &nbsp; 附录
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-ask/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.1. &nbsp; 提问的智慧
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CTFevent/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.2. &nbsp; CTF赛事
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    8.3. &nbsp; NSSCTF平台使用
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    8.3. &nbsp; NSSCTF平台使用
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    注册 &amp; 登录
+  </a>
+  
+    <nav class="md-nav" aria-label="注册 & 登录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    注册
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    登录
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    首页
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    题目
+  </a>
+  
+    <nav class="md-nav" aria-label="题目">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    关于种类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    题目类型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    做题流程
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    随机一题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    题目信息
+  </a>
+  
+    <nav class="md-nav" aria-label="题目信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#id" class="md-nav__link">
+    ID &amp; 标题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    状态
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    标签
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    下拉选项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    左侧面板
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    题目清单
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    文章
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    比赛
+  </a>
+  
+    <nav class="md-nav" aria-label="比赛">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    关于比赛页面
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nss" class="md-nav__link">
+    关于NSS的比赛
+  </a>
+  
+    <nav class="md-nav" aria-label="关于NSS的比赛">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#round" class="md-nav__link">
+    Round赛
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    校赛/团队赛/新生赛/联合赛
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    私有赛
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    排行榜
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    动态
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    探索
+  </a>
+  
+    <nav class="md-nav" aria-label="探索">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    探索工坊
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    星辰大海
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    团队
+  </a>
+  
+    <nav class="md-nav" aria-label="团队">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    信息总览
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    题库
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    比赛
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    成员
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    数据分析
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    通知
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    容器管理
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    会员机制
+  </a>
+  
+    <nav class="md-nav" aria-label="会员机制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nss_1" class="md-nav__link">
+    NSS货币
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vip" class="md-nav__link">
+    vip会员
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    高级功能
+  </a>
+  
+    <nav class="md-nav" aria-label="高级功能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vip_1" class="md-nav__link">
+    专属VIP用户组图标
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    自定义个人资料背景板
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    更强大的容器管理功能
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hackground" class="md-nav__link">
+    可自定义的多样化平台 —— Hackground
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../book/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.4. &nbsp; 推荐书单
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ctf_skill/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    扩展提升
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_2">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            扩展提升
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ctf_docker/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    a. &nbsp; &nbsp; Docker| 容器技术
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_2_2">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            a. &nbsp; &nbsp; Docker| 容器技术
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_docker/dockerstart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    a.0. &nbsp; 一文速通Docker(粗)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_docker/about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    a.1. &nbsp; 关于Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_docker/install_windows.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    a.2.1. &nbsp; Windows下的Docker环境配置
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_docker/install_linux.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    a.2.2. &nbsp; Linux下的Docker环境配置
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_docker/usage_basic.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    a.3.1. &nbsp; Docker的基本操作
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_docker/usage_ctf.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    a.4  &nbsp; Docker在CTF中的应用
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_docker/usage_web.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    a.4.1. &nbsp; Web题目的Docker化
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_docker/usage_example.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    a.4.2. &nbsp; 示例-经典web靶场封装
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_docker/usage_pwn.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    a.4.3. &nbsp; Pwn题目的Docker化
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_docker/usage_crypto.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    a.4.4. &nbsp; Crypto题目的Docker化
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    b. &nbsp; &nbsp; CTF命题
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            b. &nbsp; &nbsp; CTF命题
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_makeChallenge/index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    None
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_skill/makeChallenge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    b.1. &nbsp; 如何优雅的完成CTF命题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    工具
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            工具
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_evnset/CTFtool/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CTF工具集合
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ctf_archives/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Archives
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_4">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Archives
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    a. &nbsp; &nbsp; CTFer
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            a. &nbsp; &nbsp; CTFer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_archives/friends/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CTFer档案馆
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_Archives/web.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    a.1. &nbsp; Web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_Archives/misc.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    a.2. &nbsp; Misc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_Archives/crypto.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    a.3. &nbsp; Crypto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_Archives/ree.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    a.4. &nbsp; Re
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_Archives/pwn.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    a.5. &nbsp; Pwn
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    b. &nbsp; &nbsp; Challenges
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            b. &nbsp; &nbsp; Challenges
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_archives/Challenges.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    None
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    c. &nbsp; &nbsp; Writeups
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            c. &nbsp; &nbsp; Writeups
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctf_archives/Writeups.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    None
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../blog/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    归档
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            归档
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/archive/2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/archive/2022/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2022
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    分类
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            分类
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/category/ctf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CTF
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/category/develop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Develop
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    注册 &amp; 登录
+  </a>
+  
+    <nav class="md-nav" aria-label="注册 & 登录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    注册
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    登录
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    首页
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    题目
+  </a>
+  
+    <nav class="md-nav" aria-label="题目">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    关于种类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    题目类型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    做题流程
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    随机一题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    题目信息
+  </a>
+  
+    <nav class="md-nav" aria-label="题目信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#id" class="md-nav__link">
+    ID &amp; 标题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    状态
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    标签
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    下拉选项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    左侧面板
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    题目清单
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    文章
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    比赛
+  </a>
+  
+    <nav class="md-nav" aria-label="比赛">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    关于比赛页面
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nss" class="md-nav__link">
+    关于NSS的比赛
+  </a>
+  
+    <nav class="md-nav" aria-label="关于NSS的比赛">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#round" class="md-nav__link">
+    Round赛
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    校赛/团队赛/新生赛/联合赛
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    私有赛
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    排行榜
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    动态
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    探索
+  </a>
+  
+    <nav class="md-nav" aria-label="探索">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    探索工坊
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    星辰大海
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    团队
+  </a>
+  
+    <nav class="md-nav" aria-label="团队">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    信息总览
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    题库
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    比赛
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    成员
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    数据分析
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    通知
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    容器管理
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    会员机制
+  </a>
+  
+    <nav class="md-nav" aria-label="会员机制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nss_1" class="md-nav__link">
+    NSS货币
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vip" class="md-nav__link">
+    vip会员
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    高级功能
+  </a>
+  
+    <nav class="md-nav" aria-label="高级功能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vip_1" class="md-nav__link">
+    专属VIP用户组图标
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    自定义个人资料背景板
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    更强大的容器管理功能
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hackground" class="md-nav__link">
+    可自定义的多样化平台 —— Hackground
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/ProbiusOfficial/CTF-QuickStart/tree/main/docs/ctf_appendix/NSSCTF_Usage.md" title="编辑此页" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/ProbiusOfficial/CTF-QuickStart/tree/main/docs/ctf_appendix/NSSCTF_Usage.md" title="查看本页的源代码" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+<h1 id="nssctf">NSSCTF 平台食用手册<a class="headerlink" href="#nssctf" title="Permanent link">&para;</a></h1>
+<p>By <a href="https://github.com/ProbiusOfficial">探姬_Official</a></p>
+<p>NSSCTF 平台地址：https://www.nssctf.cn/</p>
+<p>归档于 <a href="https://github.com/ProbiusOfficial/CTF-QuickStart">CTF快速入门手册</a> </p>
+<p>感谢热爱。</p>
+<h2 id="_1">注册 &amp; 登录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">注册<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p><img alt="image" src="https://user-images.githubusercontent.com/41804496/233054804-b319228d-b9e4-40d0-a04d-61fe4fc1f2df.png" /><br />
+- 在新版本中我们去掉了注册需要的邀请码，目前只需要按照引到填写对应的信息即可。
+- 注意，如果注册过程中出现无法接收到邮箱验证码的情况，请检查您的垃圾邮箱，建议使用主流邮箱进行注册。
+如果上述两种方法都无法获得验证码，请到用户群中联系管理员。<br />
+- 如果信息均填写完毕，但是点击注册按钮没有反应，有可能是用户名已被占用，建议更换。
+如果更换完用户名仍然出现问题，请及时联系管理员。
+- 如果您在注册过程中遇到其他问题，请及时与我们联系。</p>
+<h3 id="_3">登录<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p><img alt="image" src="https://user-images.githubusercontent.com/41804496/233057474-f317d106-5ab9-4794-a5e9-22e699016af5.png" />
+- 如果您已经注册过账号，可以直接使用用户名和密码进行登录。
+- 如果您忘记了密码，可以点击忘记密码，按照提示进行操作。
+- 此外我们提供第三方账户Github 以及 Gitee 绑定进行登录。</p>
+<h2 id="_4">首页<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p><img alt="image" src="https://user-images.githubusercontent.com/41804496/233066671-20b32c41-0df8-4c3a-a37a-ae7393fd8c59.png" />
+- 首页由 顶部导航条 左侧公告区 右侧功能区组成
+- 左侧功能区域依次为 近期比赛(如有比赛则会显示比赛和比赛开始倒计时) 排行榜Top10的用户 近期文章动态
+- 顶部导航条从左到右依次包含 <a href="#题目">题目</a> <a href="#文章">文章</a> <a href="#比赛">比赛</a> <a href="#排行榜">排行榜</a> <a href="#动态">动态</a> <a href="#探索">探索</a> <a href="#团队">团队</a>  <a href="#通知">通知</a> <a href="#容器管理">容器管理</a> <a href="#个人中心">个人中心</a> </p>
+<h2 id="_5">题目<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ul>
+<li>鼠标悬停在导航栏的题目标签上会出现两个选项 公开题库 和 题目清单，默认为公开题库
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233103564-aa0c6b3f-8339-4fdb-ac5a-185f8908d3ef.png" /></li>
+</ul>
+<p>下面为公开题库的界面介绍</p>
+<h3 id="_6">关于种类<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>https://www.nssctf.cn/note/set/659</li>
+<li><strong>CTF</strong> 即Capture The Flag，解题赛，一般是要求选手通过题目漏洞找的隐藏的字符串即flag</li>
+<li><strong>KOH</strong> 即King Of Hill，同样是有漏洞的程序，但此时您的目标不仅是找到漏洞的解，还需要与其他选手的Payload进行优劣比较，才能得到更高的得分即King。</li>
+<li><strong>RHG</strong> 即Robot Hacking Game，同样是有漏洞的程序，但此时您需要编写脚本机器人，题目会自动调度您的脚本机器人，您需要通过操作指定的接口完成一系列目标才可以得分。同样的，此时您也将与其他选手的脚本机器人进行优劣比较来争夺更高的得分。</li>
+</ul>
+<h3 id="_7">题目类型<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>除了常规五大方向外，我们还提供了一些其他的题目类型：
+- MOBILE 即移动安全，安卓逆向题目。
+- ETH 即以太坊，以太坊 智能合约 等相关题目。
+- IOT 即物联网安全，物联网相关的题目。
+- AI 即人工智能安全，人工智能相关的题目。
+- 实战 包含常见的靶场 如 upload-labs，pikachu，sqli-labs， <br />
+dvwa，xss-labs，dvwa等靶场，以及一些漏洞复现的靶机 如 
+Spring Core RCE，CVE 等。</p>
+<h3 id="_8">做题流程<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>点击题目名称即可进入题目详情页面，如下图所示：
+<img alt="Untitled" src="https://user-images.githubusercontent.com/41804496/232275694-5411c38e-1c80-4fb0-9eee-5d3c9d0fb94f.png" /></p>
+<p>点击开启环境即可开始。</p>
+<p>CTF题目开启的基本形式如下：</p>
+<ul>
+<li>
+<p><strong>附件</strong> —— 通常为压缩包 每类题型都可能有，可能直接就是题目本身，也可能是题目涉及到的源码等等</p>
+</li>
+<li>
+<p><strong>容器</strong> （常见于Web Pwn 也有可能见于 Misc Crypto ……）</p>
+</li>
+<li>
+<p><strong>web靶机</strong> —— 通常为 <code>ip:port / domain:port</code></p>
+<p><img alt="Untitled 1" src="https://user-images.githubusercontent.com/41804496/232275726-38bbedbe-02dc-4a43-b2fd-6a460bb3159c.png" /></p>
+<p>eg：<code>1.11.45.14:1919</code> / <code>node3.anna.nssctf.cn:28622</code> </p>
+<p>这样的靶机可以直接在浏览器中访问：</p>
+<p><img alt="Untitled 2" src="https://user-images.githubusercontent.com/41804496/232275794-9868dbdd-b8cf-4e9b-baa3-20a3209c8f63.png" /></p>
+</li>
+<li>
+<p><strong>nc 靶机</strong> 给出的形式和Web靶机类似：<code>ip:port</code> / <code>domain:port</code></p>
+<p>也有可能没有<code>:</code> <code>ip port</code> / <code>domain port</code> </p>
+<p>也有部分靶机给出时会明显带上nc ：<code>nc ip port</code> / <code>nc domain port</code> </p>
+<p><img alt="Untitled 3" src="https://user-images.githubusercontent.com/41804496/232275821-840e6c52-7fd3-4eb0-970f-21bef3ba64c6.png" /></p>
+<p>这样的靶机不能直接在浏览器中访问，需要使用nc工具连接，通常在Linux系统中接入 或者使用某些工具进行交互 如 <code>pwntool</code>  </p>
+</li>
+<li>
+<p><strong>附件+靶机</strong>
+Web题目涉及到需要源码进行审计的情况
+Pwn甚至是Misc以及其他 有nc交互的题目 涉及到后台源码审计的情况</p>
+</li>
+</ul>
+<p><img alt="Untitled 4" src="https://user-images.githubusercontent.com/41804496/232275846-4bbe56f9-37ea-4912-bba1-9f3fa40d6a5c.png" /></p>
+<h3 id="_9">随机一题<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>点击之后会随机跳转到一道未解出的题目的详细页面。</p>
+<h3 id="_10">题目信息<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p><img alt="image" src="https://user-images.githubusercontent.com/41804496/233121923-06f32d6d-8f19-46d8-8221-24d16fc25344.png" /></p>
+<h4 id="id">ID &amp; 标题<a class="headerlink" href="#id" title="Permanent link">&para;</a></h4>
+<ul>
+<li>ID 即题目的唯一标识符，可以通过题目的链接 "https://www.nssctf.cn/problem/ + ID" 访问到题目。</li>
+<li>标题 即题目的标题，包含题目来源和题目名称。</li>
+</ul>
+<h4 id="_11">状态<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<ul>
+<li>未尝试 图中白色状态栏，表示您尚未尝试过该题目。</li>
+<li>已尝试 图中橙黄色状态栏，表示您已经尝试过该题目，但是尚未解出。</li>
+<li>已解出 图中绿色状态栏，表示您已经解出该题目。</li>
+</ul>
+<h4 id="_12">标签<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<p>通常第一个标签为题目方向，而后面的标签表示题目的考察点。</p>
+<h3 id="_13">下拉选项<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p><img alt="image" src="https://user-images.githubusercontent.com/41804496/233123648-774769dd-c52d-47d2-8d0d-a110378c3c96.png" />
+- 默认下拉选项已经标出对应用途。
+- 点击可以展开高级搜索选项 您可以根据题目来源的比赛tag搜索 也可以根据题目的标签搜索 还可以指定题目的出题人。</p>
+<h3 id="_14">左侧面板<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<ul>
+<li>雷达图 ——<em>让我看看有没有六边形战士！</em></li>
+<li>解题进度 ——<em>听说进度条满了就可以召唤神龙？</em></li>
+<li>工坊推荐 ——<em>对某些方向还是不熟或是遇到瓶颈？来这里看看</em></li>
+</ul>
+<h3 id="_15">题目清单<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<ul>
+<li>前面有提到 鼠标悬停在导航栏的题目标签上会出现两个选项 公开题库 和 题目清单，默认为公开题库</li>
+<li>悬停点击题目清单可以切换到题目清单
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233258332-70f48b12-79de-4ad6-a064-d49c755ea89b.png" />
+目前题目来源有4个选项：</li>
+<li>历届赛题 ——<em>历届比赛的题目</em></li>
+<li>官方精选 ——<em>来源于NSS工坊的官方题单</em></li>
+<li>用户分享 ——<em>NSS平台上 用户分享的题单 您也可以分享自己的题单</em></li>
+<li>我的题单 ——<em>NSS平台上 用户自己创建的题单</em></li>
+</ul>
+<h2 id="_16">文章<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<p><img alt="image" src="https://user-images.githubusercontent.com/41804496/233313386-f3a0d8f3-fff6-413d-86ce-0e4d8e5eeda6.png" />
+- 文章页面包含对应标签的文章类型，这里不多做介绍。
+- 目前文章发布之后暂时不可再次修改，将在下个版本更新。
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233314125-442b27eb-0808-4611-8ecd-6f89fb044186.png" />
+- 文章页面的底部有赞赏和评论功能，您可以通过赞赏支持作者，也可以通过评论与作者进行交流。
+赞赏可以选择对应的金币数量，也可以自定义数量。
+- 金币是NSS平台的虚拟货币，每天登录系统会自动赠送一定数量，金币目前可用于兑换工坊教程，赞赏文章，也可用于Round赛题单靶机和附件的购买（注：其他题目不会收取任何金币）。您也可以通过购买金币来支持NSS平台的运营，详情请见<a href="#会员机制">会员机制</a>。</p>
+<h2 id="_17">比赛<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
+<h3 id="_18">关于比赛页面<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<p><img alt="image" src="https://user-images.githubusercontent.com/41804496/233339816-ecd26632-b1b9-4375-b451-3fb7e663fb0c.png" />
+- 比赛页面一样是两栏设计，左边为比赛列表，右边为对应功能区域。
+- 比赛通道可在 <strong>分类</strong> 处切换，默认页面为**公开赛道**，点击按钮即可报名参赛
+- 点击分类中的 <strong>私密</strong> 可切换到私密赛道，此处的比赛需要输入邀请码才能报名参赛。
+当您点击比赛后面的按钮后系统会自动跳转到比赛页面，比赛页面包含以下内容：
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233342008-668dd190-b103-4c99-a774-83cd0a62e92d.png" />
+- 页面会显示比赛对应的信息 页面中都已标出 这里不再赘述。
+- 非个人赛的比赛 需要点击 左侧的 <strong>队伍</strong> 标签进行队伍的创建和管理。 </p>
+<h3 id="nss">关于NSS的比赛<a class="headerlink" href="#nss" title="Permanent link">&para;</a></h3>
+<p>目前，NSS支持举办以下类型竞赛
+- Round 排位赛
+- 校赛/团队赛/新生赛/联合 公开赛
+- 非公开 私有赛</p>
+<h4 id="round">Round赛<a class="headerlink" href="#round" title="Permanent link">&para;</a></h4>
+<ul>
+<li>对于Round赛的初衷为对自身水平进行定位以及技能提高，只有Round赛才会产生积分变化，我们会基于此计算您的Rating。</li>
+<li>关于Rating的计算方式，见<a href="https://www.nssctf.cn/note/set/165">Rating计算</a></li>
+<li>Round赛有两种形式：<strong>个人赛**和**团队赛</strong>
+    每场个人训练赛的时间将会在2h～5h左右，题目数量在2～6题左右。
+    每场组队训练赛的时间将会在4h～5h左右，题目数量在4～8题左右。</li>
+<li>Round赛的赛题难度有一定的区分度 并且 无需过长时间解决。</li>
+</ul>
+<h4 id="_19">校赛/团队赛/新生赛/联合赛<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h4>
+<ul>
+<li>如果您和您的团队有举办赛时的需求，想把比赛推广给更多的人，想让更多的人参与您和您的团队的头脑风暴，欢迎您和您的团队来NSS上举办公开赛事。
+对于公开赛事，除了需要提供题目等内容外，还需要根据参与人数支付一定的服务器费用（这不会很高）。您可以参考NSS上举办过的历史比赛来与我们进行沟通细节。
+除了进行赛前赛中的运维外，我们在赛后也会提供完整的排名电子表格，以及作弊审查等内容。如果您和您的团队有一些其他的定制化需求，在合理也对选手有助的情况下，我们也会进行支持。</li>
+</ul>
+<h4 id="_20">私有赛<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>如果您和您的团队需要举办内部选拔赛/训练赛，欢迎使用团队功能自行体验/管理赛事运维。如果您和您的团队需要我们提供一场比赛的套题等服务，请与我们进行沟通了解。</p>
+</li>
+<li>
+<p>当然 我们也支持 私有赛和公开赛双赛道模式，即您可以在NSS上举办一场公开赛，同时也可以在NSS上举办一场私有赛，这样您可以在公开赛中吸引更多的人参与，同时也可以在私有赛中进行更加精细化的管理。</p>
+</li>
+</ul>
+<p>总之我们非常欢迎您和您的团队参与我们的赛事工作或在NSS上举办赛事，如果您还有任何疑问或细节问题，期待您与我们的进一步沟通。</p>
+<p>如果您和您的团队想要通过比赛进行推广活动，您可以参考 <a href="https://www.nssctf.cn/about/sponsor">比赛赞助</a> 内容然后与我们联系。</p>
+<h2 id="_21">排行榜<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h2>
+<ul>
+<li>排行榜基于Rating的排名，您可以通过参加NSS的Round赛来提升自己的Rating。</li>
+<li>关于Round赛和Rating的计算方式，在上面的<a href="#比赛">比赛</a>中已经有所介绍。</li>
+</ul>
+<h2 id="_22">动态<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h2>
+<p><img alt="image" src="https://user-images.githubusercontent.com/41804496/233393611-dfa52d90-5727-4585-8f64-d9cc783ab170.png" />
+- 题目动态 ——<em>看看上新了哪些题目</em>
+- 解题动态 ——<em>谁 在 卷！？</em>
+- 文章动态 ——<em>嗯？又发了什么好东西！！？</em></p>
+<h2 id="_23">探索<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
+<h3 id="_24">探索工坊<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<p><img alt="image" src="https://user-images.githubusercontent.com/41804496/233399303-771ad86b-d475-4f77-b8fe-9f4211508d56.png" />
+可以讲工坊理解为题单的Plus版，工坊可以包含题目、文章、甚至会加入视频讲解等内容，您可以在工坊中创建自己的板块，也可以在工坊中购买别人的板块。
+在工坊中，NSS官方会定期推出一些精选原创的优质板块，您可以在工坊中购买这些板块。</p>
+<h3 id="_25">星辰大海<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<p><img alt="image" src="https://user-images.githubusercontent.com/41804496/233399464-999bedae-927a-4390-9174-9764ab1f8ea9.png" />
+星辰大海也是一种题单的形式，采用探索锚点模式，每一个锚点代表一类考点的题目，同时每一个锚点有其自己的解锁条件，您需要完成对应的解锁条件才能解锁下一个锚点。——<em>您需要通过探索区域来驱散更多的战争迷雾</em></p>
+<h2 id="_26">团队<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h2>
+<p>团队功能是NSS的核心功能之一，团队功能可以让您和您的团队在NSS上进行更加精细化的管理，同时也可以让您和您的团队在NSS上进行更加精细化的训练。
+在这里您可以：
+- 创建私有题库，掌握赛题数据。
+- 使用内部比赛，进行技能训练。
+- 多种可视数据，了解团队能力。</p>
+<p>您可以点击加入别人的团队，也可以创建自己的团队。
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233704115-553106b8-0ba2-48b0-9de1-7cae2541da1a.png" />
+加入团队后，团队内部页面如下
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233526744-f6a490df-671b-498e-99cb-f5caa28ec240.png" />
+左侧为团队功能的导航栏，下面我们将对每一个功能进行介绍。</p>
+<h3 id="_27">信息总览<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<ul>
+<li>主页
+点击团队时会默认调转到信息总览的主页，该页面可以在设置中进行定义(MarkDown支持)。</li>
+<li>设置
+除了设置主页（也就是首页通知）外，您还可以在这里设置团队的Logo、团队的签到语、团队的介绍、团队是否开放申请。</li>
+<li>通知
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233789638-de18f9a3-a146-47a1-b0ba-34ece2110be1.png" /></li>
+</ul>
+<h3 id="_28">题库<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<ul>
+<li>团队题库 团队题库是团队内部的独立题库，和NSS题目部分功能相同，做题流程也一样，所以这里不在简绍。
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233800402-cec531bc-8b2a-413f-adcd-d0edf5493568.png" /></li>
+<li>题目管理 作为团队管理员，您可以在这里管理团队题库中的题目，包括添加、删除、修改题目，以及决定是否对成员开放题目。
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233800419-5e51046c-8717-467b-9a1b-6b19ae9f81e5.png" /></li>
+<li>新建题目 作为团队管理员，您可以在这里新建题目，如图所示，填写对应的题目信息即可。
+如果您在新建题目中遇到如容器方面或者动态Flag方面的问题，请联系我们。
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233800676-84ec5f5d-35cc-4a7b-b418-9133d8377a95.png" /></li>
+</ul>
+<h3 id="_29">比赛<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
+<ul>
+<li>团队比赛 和比赛模块功能一样 展示最近的比赛 点击按钮即可报名进入比赛 因为板块功能和比赛模块一样 如有疑问请参考<a href="#比赛">比赛</a>
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233801531-0ffcda60-6cb8-452e-b753-6710cbc7a6f0.png" /></li>
+<li>比赛管理 作为团队管理员，您可以在这里管理团队比赛，包括添加、删除、修改比赛，调整比赛内容，包括题目 类型等等。
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233801534-76e70f9d-37c2-4690-88e0-1b9dfcae58c0.png" /></li>
+<li>新建比赛 作为团队管理员，您可以在这里新建比赛，只需片刻，即可创建一个属于您团队的私有比赛。
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233801588-822240a8-f614-4e77-bcd0-6eef2d802c21.png" /></li>
+</ul>
+<h3 id="_30">成员<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h3>
+<ul>
+<li>排行榜 即排行榜模块的功能，展示团队内部的成员排行榜。
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233801733-1dd764bd-35ae-44db-952a-a1bc2ff19927.png" /></li>
+<li>成员管理 作为团队管理员，您可以在这里管理团队成员，包括添加、删除、修改成员，调整成员权限。
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233801742-55ed5a98-e681-4978-bef3-25fbf92f3afd.png" /></li>
+<li>申请管理 作为团队管理员，您可以在这里管理团队成员的申请，包括同意、拒绝。</li>
+</ul>
+<h3 id="_31">数据分析<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h3>
+<ul>
+<li>使用情况 我们针对团队的规模 设置了不同的等级 每个等级的团队有不同的资源量，您可以在这里查看您的团队使用情况。 关于等级的具体规则，我们会在后续的版本中进行更新。
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233801953-e8f6ddd9-1b2b-45f0-9f27-9c1c108ae6f0.png" /></li>
+</ul>
+<h2 id="_32">通知<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h2>
+<p>右侧的黑色🔔图标，点击即可进入通知页面，该页面可以查看您的通知，包括系统通知、比赛通知、团队通知等等。
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233802119-971e6a29-5250-41a6-a870-07ba46eb3827.png" /></p>
+<h2 id="_33">容器管理<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h2>
+<p><img alt="image" src="https://user-images.githubusercontent.com/41804496/233802097-e13b2b29-f244-4d71-a3fa-b2b488eafcbd.png" />
+头像右侧的🐳图标，点击即可进入容器管理页面，该页面可以查看您的容器，包括容器的ID、容器的URL、容器的端口、容器的状态、容器的剩余时间。
+同时您可以对您的容器进行操作，包括续费、停止。
+您也可以购买会员服务，这样您还可以使用日志和虚拟终端功能。</p>
+<h2 id="_34">会员机制<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h2>
+<p>会员机制是NSS平台上的一类付费服务，主要体现在下面两种类型：</p>
+<h3 id="nss_1">NSS货币<a class="headerlink" href="#nss_1" title="Permanent link">&para;</a></h3>
+<p>NSS目前有两种货币，一种是金币，一种是N点
+- 金币 NSS平台的虚拟货币，每天登录系统会自动赠送一定数量，金币目前可用于兑换工坊教程，赞赏文章，也可用于Round赛题单靶机和附件的购买（注：其他题目不会收取任何金币）。
+- N点 由充值得到，目前仅可用于兑换金币</p>
+<h3 id="vip">vip会员<a class="headerlink" href="#vip" title="Permanent link">&para;</a></h3>
+<p>我们在确保不影响普通用户体验的前提下，尝试加入了vip会员，引入了一些不会影响普通用户体验的高级功能。请放心，会员服务不会产生用户群体的割裂，所有用户都可以享受到平台的基础功能。
+对应的服务差别如图所示：
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233802593-135bf684-9ffb-4a39-a3c5-f9aacdbc525a.png" /></p>
+<h3 id="_35">高级功能<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h3>
+<h4 id="vip_1">专属VIP用户组图标<a class="headerlink" href="#vip_1" title="Permanent link">&para;</a></h4>
+<p>——<em>如果你也和我一样是vip，这真的是太酷啦！！！！</em></p>
+<h4 id="_36">自定义个人资料背景板<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h4>
+<p>——<em>广告位招租！</em>
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233803402-3a040bab-0699-4945-ad92-e7f25300b874.png" /></p>
+<h4 id="_37">更强大的容器管理功能<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h4>
+<p>——<em>日志和虚拟终端，更快，更准确的定位问题</em>
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233803414-09bdf7eb-7613-430d-97bc-4e1ea0fc459d.png" />
+<img alt="image" src="https://user-images.githubusercontent.com/41804496/233803488-35179c4c-22a0-4f93-99db-6b464fb58ad7.png" /></p>
+<h4 id="hackground">可自定义的多样化平台 —— Hackground<a class="headerlink" href="#hackground" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><a href="https://www.bilibili.com/video/BV1Sc411H7i8">[NSSCTF]Hackground基础使用</a></p>
+</li>
+<li>
+<p><a href="https://www.nssctf.cn/note/set/1818">ShellAssist（RCE神器）使用指南</a></p>
+</li>
+</ul>
+
+
+  
+
+
+
+
+  <h2 id="__comments">评论</h2>
+  <!-- Insert generated snippet here -->
+  
+  <script src="https://giscus.app/client.js"
+  data-repo="ProbiusOfficial/CTF-QuickStart"
+  data-repo-id="R_kgDOJXX6hg"
+  data-category="Show and tell"
+  data-category-id="DIC_kwDOJXX6hs4CXmuV"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="preferred_color_scheme"
+  data-lang="zh-CN"
+  crossorigin="anonymous"
+  async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            回到页面顶部
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../CTFevent/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 8.2. &amp;nbsp; CTF赛事" rel="prev">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                8.2. &nbsp; CTF赛事
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../book/" class="md-footer__link md-footer__link--next" aria-label="下一页: 8.4. &amp;nbsp; 推荐书单" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                8.4. &nbsp; 推荐书单
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 探姬
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/probiusofficial" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/probiusofficial" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://space.bilibili.com/27109929" target="_blank" rel="noopener" title="space.bilibili.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 128c0-35.3 28.7-64 64-64h256c35.3 0 64 28.7 64 64v256c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zm559.1-28.2c10.4 5.6 16.9 16.4 16.9 28.2v256c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64-14.2-9.5V174.9l14.2-9.5 96-64c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.footer", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4e31edb1.min.js"></script>
+      
+        
+          <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        
+      
+        
+          <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        
+      
+        
+          <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+      
+    
+  </body>
+</html>
