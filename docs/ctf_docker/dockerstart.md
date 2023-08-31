@@ -25,13 +25,15 @@ Docker 三个基本概念： **「 镜像 Image 」** **「 容器（Container�
 
 对于CTF题目，除了纯附件题目，大部分题目均使用docker进行分发，题目通常被封装为镜像存储于Docker仓库中，第一次分发时，比赛平台会先从仓库获取镜像到本地，然后再通过镜像去创建容器，从而实现为每个选手分发题目。
 
-这里说到的仓库，指的是[Docker Hub](https://hub.docker.com/)，一般情况下，我们对镜像的
+这里说到的仓库，指的是[Docker Hub](https://hub.docker.com/)，一般情况下，我们对镜像的分发都基于该仓库。
 
 在本地使用时 我们不会对 镜像名字有特殊要求 但是当您需要将您的镜像上传到仓库分发 供他人或者平台使用时，您需要了解下面几个点：
 
-- 
-
-
+- 您需要一个DockerHub账号来完成镜像的推送分发操作
+- 您的镜像名要按照类似于 **<用户名> / <仓库名>:<标签>**
+    > 例如：`probius/litctf2023:Web_SQL`  ,如果不给出标签，将以 latest 作为默认标签
+    > 当您或者平台需要拉取该镜像时，将会使用 `docker pull probius/litctf2023:Web_SQL` 将镜像拉取到本地
+    
 
 ## Docker安装
 
@@ -42,7 +44,7 @@ Docker 三个基本概念： **「 镜像 Image 」** **「 容器（Container�
 
 ## 基础操作
 
->任何教程都比不上官方文档，请养成使用产品前阅读文档的好习惯，官方文档地址：[https://docs.docker.com/](https://docs.docker.com/)
+>请养成使用产品前阅读文档的好习惯，官方文档地址：[https://docs.docker.com/](https://docs.docker.com/)
 
 ```bash
 docker run    # - 创建一个新的容器并运行一个命令
@@ -60,10 +62,9 @@ docker login  # - 登陆到一个Docker镜像仓库，如果未指定镜像仓�
 docker logs   # - 获取容器的日志
 docker rm     # - 删除一个或多少容器
 docker rmi    # - 刷除本地一个或多少镜像
-
 ...
 ```
 
 ## Dockerfile
 
-Dockerfile是构建docker镜像的基础
+Dockerfile是构建docker镜像的基础 
