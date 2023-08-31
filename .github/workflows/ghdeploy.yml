@@ -1,20 +1,49 @@
-name: Deploy to Github Pages
+name: Deploy to Github Pages and Update friends.md
+
 on:
   push:
     branches:
       - master
       - main
+  schedule:
+    - cron: "0 0 * * *"
+
+permissions:
+  contents: write
 
 jobs:
-  deploy:
+  deploy_and_update:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - name: update friends.md
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Fetch friends.md from external repository
         run: |
           curl -o docs/ctf_archives/friends.md https://raw.githubusercontent.com/ProbiusOfficial/helloCTF-CTFerlink/main/output/friends.md
-      - uses: actions/setup-python@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
         with:
           python-version: 3.9
-      - run: pip install mkdocs-material==9.2.0b3
-      - run: mkdocs gh-deploy --force
+
+      - name: Install dependencies
+        run: pip install mkdocs-material==9.2.0b3
+
+      - name: Deploy MkDocs
+        run: mkdocs gh-deploy --force
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git add docs/ctf_archives/friends.md
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "CHANGES=true" >> $GITHUB_ENV
+          fi
+
+      - name: Commit and push changes
+        if: env.CHANGES == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automatically update friends.md
