@@ -209,7 +209,7 @@ nav:
     - ctf_evnset/CTFtool.md
 
   - Archives:
-    - ctf_archives/friends.md
+    - ctf_archives/index.md
     - a. &nbsp; &nbsp; CTFer:
       - ctf_archives/friends.md
       - a.1. &nbsp; Web: ctf_Archives/web.md

@@ -22,6 +22,7 @@ jobs:
       - name: Fetch friends.md from external repository
         run: |
           curl -o docs/ctf_archives/friends.md https://raw.githubusercontent.com/ProbiusOfficial/helloCTF-CTFerlink/main/output/friends.md
+          curl -o docs/ctf_archives/index.md https://raw.githubusercontent.com/ProbiusOfficial/helloCTF-CTFerlink/main/output/friends.md
 
       - name: Set up Python
         uses: actions/setup-python@v2
