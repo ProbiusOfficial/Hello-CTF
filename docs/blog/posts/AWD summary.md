@@ -1,3 +1,15 @@
+---
+date: 2023-09-08
+authors: [probius]
+description: >
+     攻防模式 | AWD (Attack With Defense) 」是 CTF比赛 「CTF Capture The Flag」几种主要的比赛模式之一.
+categories:
+  - CTF
+links:
+  - docs/blog/posts/AWD summary.md
+comments: true
+---
+
 ## 关于
 
 ### 简介
