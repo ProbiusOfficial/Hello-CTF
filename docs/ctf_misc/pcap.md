@@ -2,7 +2,7 @@
 comments: true
 
 ---
-# 前言
+## 前言
 
 > 版权声明：
 >
@@ -12,7 +12,7 @@ comments: true
 
 流量分析与取证在misc中也是较为常见的题目，流量分析主要是根据元数据（不是通信内容本身）识别对手活动和通信模式，每条记录多达几兆字节的全部活动内容，可能只产生100字节的元数据，如端点（包括ip地址和域名）、端口、收发字节数、连接时长及起止时间，我们将这样一组元数据成为“网络流”（network flows）。
 
-## 常用工具
+### 常用工具
 
 流量分析中最常使用的工具是 `wireshark` 当然也有其他的工具例如 `BruteShark`. 
 
@@ -23,9 +23,9 @@ wireshark下载地址
 提取码: w1wa 复制这段内容后打开百度网盘手机App，操作更方便哦
 ```
 
-# Wireshark 基本使用方法
+## Wireshark 基本使用方法
 
-## 窗口组成
+### 窗口组成
 
 ![1688566267678.png](https://img1.imgtp.com/2023/07/05/JpzvTYBV.png)
 
@@ -36,12 +36,12 @@ wireshark下载地址
 显示过滤窗口是最常用的功能之一，它可以迅速帮助我们筛选出我们所需要的包。例如，当我们需要分析TLS的时候，可以直接输入`tls`. 不过需要注意的是，筛选语法对大小写敏感 `TLS !== tls`
 
 
-## 显示过滤器
+### 显示过滤器
 
 
 Wireshark的显示过滤器允许您集中关注感兴趣的数据包，同时隐藏其他的包，本章你将学习到基本的显示过滤器语法
 
-## 基本构成
+### 基本构成
 
 过滤器表达式由一个或多个原语(Primitive)组成
 
@@ -54,11 +54,11 @@ Wireshark的显示过滤器允许您集中关注感兴趣的数据包，同时�
 > and(&&), or(||), not(!) 表示与或非
 >
 
-## 原语(Primitive)语法
+### 原语(Primitive)语法
 
 `protocol[.attr1.attr2.attr3 ... .stringN] [Comparison operator] [Value]`
 
-### proctol
+#### proctol
 
 protocol表示需要显示的协议，目前wireshark支持的协议多达 2894 种，具体可以点击 `视图 -> 内部 -> Supported Protocols` 查看
 
@@ -68,11 +68,11 @@ protocol表示需要显示的协议，目前wireshark支持的协议多达 2894 
 tcp, udp, http, http2, http3, tls, dns ...
 ```
 
-### attr
+#### attr
 
 attr一般用来表示protocol的属性，例如 `ip.addr == x.x.x.x` 表示，匹配ip地址为x.x.x.x的包
 
-### Comparison operator (比较值)
+#### Comparison operator (比较值)
 
 你可以使用语义化的英文缩写或逻辑符号来进一步的筛选你所需要的包，例如 `ip.addr eq 11.4.51.4` 表示，筛选所有ip包含 11.4.51.4 的包 该表达式与 `ip.addr == 11.4.51.4` 是等价的
 
@@ -90,9 +90,9 @@ attr一般用来表示protocol的属性，例如 `ip.addr == x.x.x.x` 表示，�
 |   matches   |   ~    | http.host matches "ace\.(org \| com \| net)" |
 | bitwise_and |   &    |               tcp.flags & 0x02               |
 
-### Value
+#### Value
 
-#### 整数
+##### 整数
 
 可以是8、16、24、32或64位整数，可以使用十进制、八进制、十六进制或二进制来表示
 
@@ -105,13 +105,13 @@ frame.len > 0b1100
 
 上述均为有效表达
 
-#### 布尔
+##### 布尔
 
 可以直接使用True(TRUE)或False(FALSE)，也可以使用1来表达True，0表达False
 
 例如，当tcp.flags.syn为True时，仅会输出SYN包.
 
-#### Ethernet address
+##### Ethernet address
 
 由冒号(:)、句号(.)、短划线(-)分割的六个字节
 
@@ -121,7 +121,7 @@ eth.dst == ff-ff-ff-ff-ff-ff
 eth.dst == ffff.ffff.ffff
 ```
 
-#### IPv4地址
+##### IPv4地址
 
 可以直接 `ip.addr == 192.168.0.1` 表达，如果你需要选一类地址，可以使用CIDR表达法
 
@@ -129,23 +129,23 @@ eth.dst == ffff.ffff.ffff
 ip.addr == 192.168.0.0/16
 ```
 
-#### IPv6
+##### IPv6
 
 与IPv4除了地址表达有差异外，其他无不同
 
-#### 字符串类型
+##### 字符串类型
 
 `http.request.uri == "https://www.bilibili.com/"` 
 
 字符串文字用双引号指定，也可以使用十六进制`\xff`或八进制`\ddd`来转移，其中`f`与`d`为十六进制和八进制数字
 
-#### 日期与时间
+##### 日期与时间
 
 在wireshark中GMT、UTC、ISO8601表达法都是被允许的。同时，也可以对事件进行范围比较
 
 `frame.time < "2020-01-01"` 该表达式是符合语法的
 
-### Combining Expressions (组合表达式)
+#### Combining Expressions (组合表达式)
 
 有些时候我们需要组合其他Primitive(原语)来满足更复杂的筛选需求，例如我们需要筛选TCP包且发送方为172.17.0.2但我们不需要ack包。
 
@@ -173,11 +173,11 @@ tcp and ip.src == 172.17.0.2 and tcp.flags.ack == 0
 ![1688696890506.png](https://img1.imgtp.com/2023/07/07/FLE3g5uC.png)
 
 
-# 实战
+## 实战
 
 实战是验证是否掌握的最佳方案，本章使用\(DDCTF 流量分析\)题目作为实战
 
-## DDCTF 流量分析
+### DDCTF 流量分析
 
 下载好习题后，解压，发现有一个txt和pcap文件。打开txt，内如如下。
 

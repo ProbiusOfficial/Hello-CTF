@@ -2,7 +2,7 @@
 comments: true
 
 ---
-# 前言
+## 前言
 
 > 版权声明：
 >
@@ -44,14 +44,14 @@ https://github.com/baimao-box/Misc_Picture_Steganography
 
 我不喜欢一开始就在文章前面抛出一大堆生涩的原理，我个人喜欢遇到什么就讲什么，这样也方便理解，各位可以点击右边目录自动跳转到需要的部分
 
-# 什么是计算机文件
+## 什么是计算机文件
 
 
 文件由一大堆10101110……的二进制码组成，现代大多数电脑的操作系统中，文件是数据的容器，格式主要它的内容定义
 
-# PNG隐写
+## PNG隐写
 
-## 判断图片类型
+### 判断图片类型
 
 我们将图片拖入winhex里，就能看见文件的十六进制码
 
@@ -73,7 +73,7 @@ PNG图像格式文件由一个8字节的PNG文件标识域和3个以上的后续
 0A：Unix风格的换行符，用于Unix-DOS换行符的转换
 ```
 
-### 判断文件格式
+#### 判断文件格式
 
 ![在这里插入图片描述](./images/stego/39c2c7f0f4304574a87174599c1c6d03.png)
 
@@ -93,7 +93,7 @@ PNG图像格式文件由一个8字节的PNG文件标识域和3个以上的后续
 
 扫码就能获得flag
 
-### 倒转文件byte
+#### 倒转文件byte
 
 
 ![在这里插入图片描述](./images/stego/b0e750ddd37e4a61ad2fe98415eefc8c.png)
@@ -118,7 +118,7 @@ b = b.write(a.read()[::-1])  #将flag.jpg图片的byte数据，倒着写入png.p
 
 ![在这里插入图片描述](./images/stego/afb2511ba2fc42b78e022759793bb99f.png)
 
-### 添加文件头数据
+#### 添加文件头数据
 
 ![在这里插入图片描述](./images/stego/3fe407cb391240d49b6a0463517541d0.png)
 
@@ -159,7 +159,7 @@ b = b.write(a.read()[::-1])  #将flag.jpg图片的byte数据，倒着写入png.p
 
 现在图片就显示正常了
 
-## 图片宽高以及CRC爆破
+### 图片宽高以及CRC爆破
 
 PNG文件中，每个数据块都由四个部分组成，如下:
 
@@ -172,7 +172,7 @@ PNG文件中，每个数据块都由四个部分组成，如下:
 
 ![在这里插入图片描述](./images/stego/61a108ed932546d1929641f9fa0b923a.png)
 
-### 图片高度修改
+#### 图片高度修改
 
 ![在这里插入图片描述](./images/stego/ebdd01fa9af54bb98bca22721f336ff8.png)
 
@@ -190,7 +190,7 @@ ctrl+s保存后查看图片
 
 出现了flag
 
-### 图片宽度和CRC值爆破
+#### 图片宽度和CRC值爆破
 
 目前手上没这种类型的题，可以去看看落雪wink师傅的文章，因为csdn不让我添加太多外链，所以手动去掉链接中的字符即可
 
@@ -198,7 +198,7 @@ ctrl+s保存后查看图片
 ht去掉字符tps://blog.csdn.net/weixin_44145452/article/details/109612189
 ```
 
-# 从图片中提取文件
+## 从图片中提取文件
 
 通过cmd的copy命令，可以将文件隐藏在图片里，我们需要从图片中提取文件，这也是ctf经常考的点
 
@@ -210,7 +210,7 @@ ht去掉字符tps://blog.csdn.net/weixin_44145452/article/details/109612189
 
 说明有其他文件在这个图片里，我们需要提取出来
 
-## 通过binwalk提取图片中的文件
+### 通过binwalk提取图片中的文件
 
 binwalk扫描图片内是否存在其他文件
 
@@ -231,7 +231,7 @@ binwalk -e dog.jpg --run-as=root
 他会自动生成一个文件夹，将提取出来的文件放入这个文件夹里
 
 
-## 通过foremost提取图片中的文件
+### 通过foremost提取图片中的文件
 
 我常用的提取工具是foremost，因为他比binwalk更精确一些
 
@@ -247,9 +247,9 @@ foremost dog.jpg -o dog  //-o：指定输出的文件夹
 
 ![在这里插入图片描述](./images/stego/1590f8883c0a4fa58f892f259cd7e686.png)
 
-# JPG图片隐写
+## JPG图片隐写
 
-## jpg图片格式
+### jpg图片格式
 
 jpg图片的头数据为
 
@@ -259,7 +259,7 @@ FF D8 FF
 
 ![在这里插入图片描述](./images/stego/1e284d09f0024f26ab944da6e9085371.png)
 
-## jpg图片高度修改
+### jpg图片高度修改
 
 这是一个jpg图片，但是在最下面，可以看到flag的一些信息
 
@@ -280,7 +280,7 @@ FF D8 FF
 
 就能看见flag了
 
-# EXIF信息
+## EXIF信息
 
 在我们拍摄图片时，exif可以记录数码照片的属性信息和拍摄数据
 
@@ -304,9 +304,9 @@ exiftool cat.jpg
 
 在做osint类题目时，需要留意图片的exif信息里有没有经纬度，在做不出来题的时候，可以看看图片的exif信息
 
-# BMP图片隐写
+## BMP图片隐写
 
-## BMP图片格式
+### BMP图片格式
 
 BMP 文件格式能够存储单色和彩色的二维数字图像，具有各种颜色深度，并且可以选择使用数据压缩、alpha 通道和颜色配置文件
 
@@ -329,7 +329,7 @@ bmp的头文件数据为
 
 ![在这里插入图片描述](./images/stego/4b8d0238a5214695b64b019a16f10839.png)
 
-## BMP图片高度修改
+### BMP图片高度修改
 
 ![在这里插入图片描述](./images/stego/caa619e8621a4d76a161e9fde5306a65.png)
 
@@ -357,11 +357,11 @@ https://en.wikipedia.org/wiki/BMP_file_format
 
 ![在这里插入图片描述](./images/stego/080bec16eabd45a7999f1af62a47aac0.png)
 
-# GIF图片隐写
+## GIF图片隐写
 
 gif图片是动图，它是由一帧一帧的图片拼接而成
 
-## GIF图片格式
+### GIF图片格式
 
 gif头文件数据为
 
@@ -371,7 +371,7 @@ gif头文件数据为
 
 ![在这里插入图片描述](./images/stego/ae99533ee2f44d4aaec931fb246ad617.png)
 
-## GIF帧分离再拼接
+### GIF帧分离再拼接
 
 ![在这里插入图片描述](./images/stego/68bcc4535f9d4d9793ef7c7aafd80e1e.png)
 
@@ -393,7 +393,7 @@ montage flag*.png -tile x1 -geometry +0+0 flag.png     #合并图片
 
 得到flag
 
-## GIF图像格式和特征
+### GIF图像格式和特征
 
 有些GIF图片每一帧都可能存在规律，这也是常考的点
 
@@ -453,7 +453,7 @@ https://www.rapidtables.com/convert/number/ascii-hex-bin-dec-converter.html
 
 得到flag
 
-## GIF每一帧查看
+### GIF每一帧查看
 
 如果想查看gif图片的每一帧，则可以使用Stegsolve工具
 
@@ -467,7 +467,7 @@ https://www.rapidtables.com/convert/number/ascii-hex-bin-dec-converter.html
 
 或者用pr也行
 
-# 盲水印
+## 盲水印
 
 盲水印是一种肉眼不可见的水印方式，可以保持图片美观的同时，保护版权，隐藏式的水印是以数字数据的方式加入音频、图片或影片中，但在一般的状况下无法被看见
 
@@ -489,7 +489,7 @@ bwm decode hui.png hui_with_wm.png flag.png
 
 
 
-# LSB隐写
+## LSB隐写
 
 lsb隐写题在ctf中也经常考到，LSB即为最低有效位，我们知道，图片中的图像像素一般是由RGB三原色（红绿蓝）组成，每一种颜色占用8位，取值范围为0x00~0xFF，即有256种颜色，一共包含了256的3次方的颜色，即16777216种颜色。而人类的眼睛可以区分约1000万种不同的颜色，这就意味着人类的眼睛无法区分余下的颜色大约有6777216种。 
 
@@ -560,7 +560,7 @@ foremost final.png -o flag
 
 
 
-## 提取图像中的隐藏数据
+### 提取图像中的隐藏数据
 
 有些题目是利用LSB的特性来往里面隐藏一些字符串
 
@@ -594,7 +594,7 @@ lsb extract secret.png flag.txt  7his_1s_p4s5w0rd
 ![在这里插入图片描述](./images/stego/c61ec421913c48aba6041a4fb317172b.png)
 
 
-# 查看文件里的字符串
+## 查看文件里的字符串
 
 有些题目往图片里添加一些字符串，列如上一道题目，我们可以使用strings工具来查看文件里的字符串
 
@@ -609,6 +609,6 @@ strings hex.jpg
 
 ![在这里插入图片描述](./images/stego/cdb8f412d0eb4ddf913d31046fc03024.png)
 
-# 总结
+## 总结
 
 很多题目都是考了不同或者多方向的知识点，总之，学得越多越好

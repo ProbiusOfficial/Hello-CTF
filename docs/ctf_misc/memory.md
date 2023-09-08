@@ -5,7 +5,7 @@ comments: true
 
 ![](./images/memory/eb0e7327bd454ca7b3aeb8d855915202.png)
 
-# 前言
+## 前言
 
 > 版权声明：
 >
@@ -20,9 +20,9 @@ comments: true
 !!! Tip "小窍门"   
     虽说内存取证最为优雅的解法就是利用 `Volatility Framework` ，但是都戏称：“内存取证的终点是 strings + grep ”。因为由于内存其本身就为操作系统和软件运行时的动态数据，所以绝大多数的数据都是直接以明文形式储存在内存之中的，往往直接 strings 进行提取明文字符串并加以筛选，就能获得一些意想不到的惊喜
 
-# 工具安装
+## 工具安装
 
-## Python2&3与pip安装方法
+### Python2&3与pip安装方法
 
 首先就是安装Python和pip，在kali和一些linux发行版上，python都是自带的，但是需要注意的是，在新版本Ubuntu中，已经移除了Python2的预装。Python和pip安装方法如下：
 
@@ -42,7 +42,7 @@ wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
 sudo python2 get-pip.py
 ```
 
-## 下载和安装Volatility2
+### 下载和安装Volatility2
 
 Volatility是一款开源的内存分析框架，主要用于从计算机内存中提取数字证据。它可以用于取证、恶意代码分析、漏洞研究、操作系统学习以及其他安全领域
 
@@ -79,7 +79,7 @@ unzip [file_name] -d [destination]  #filename：你要提取的压缩包名称�
 python2 setup.py install
 ```
 
-## 下载和安装Volatility3
+### 下载和安装Volatility3
 
 !!! Warning "一些环境问题"   
     本人建议这类环境是基于`Linux`（本人推荐`Ubuntu`），使用`Windows`来开展工作也可以，那么`Volatility 3`使用pip直接安装。另外需要注意的是，`Volatility 3`在`Windows`的`cmd`中无法执行，因为`Volatility 3`所绑定的指令是`vol`，这与`cmd`中自带的指令发生冲突（`vol` in cmd：显示磁盘卷标和序列号(如果存在)），故如果要在`Windows`环境中使用`Volatility 3`，需要使用非`cmd`终端（例如`Powershell`）
@@ -93,7 +93,7 @@ pip3 install volatility3
 !!! Warning "2&3"   
     需要注意的是，Linux系统中，允许Python2与Python3环境并存，但是二者的依赖库（python-dev）和第三方包（通过pip包管理器安装的第三方包）并不会共享，也就意味着如果如上文安装好Vol 2之后，相关操作也要再重复一遍    
 
-## 依赖安装
+### 依赖安装
 
 如果不安装依赖，Volatility很多功能都用不了
 
@@ -111,7 +111,7 @@ pip2 install yara -i https://pypi.tuna.tsinghua.edu.cn/simple
 pip2 install distorm3 -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-## Volatility加载插件
+### Volatility加载插件
 
 mimikatz脚本文件下载地址
 
@@ -135,7 +135,7 @@ mv mimkatz.py /volatility/plugins/
 sudo pip2 install construct==2.5.5-reupload
 ```
 
-# 演示题目的下载地址
+## 演示题目的下载地址
 
 本片文章使用的案例：
 
@@ -144,9 +144,9 @@ sudo pip2 install construct==2.5.5-reupload
 提取码：0dnx 
 ```
 
-# 工具的使用方法
+## 工具的使用方法
 
-## 获取内存镜像详细信息
+### 获取内存镜像详细信息
 
 imageinfo是Volatility中用于获取内存镜像信息的命令。它可以用于确定内存镜像的操作系统类型、版本、架构等信息，以及确定应该使用哪个插件进行内存分析
 
@@ -165,7 +165,7 @@ Image Type 显示了操作系统服务包版本
 Image date and time 显示了内存镜像文件的创建日期和时间
 ```
 
-## 获取正在运行的程序
+### 获取正在运行的程序
 
 这里我们用Win7SP1x64配置文件进行分析，Volatility 的 pslist 插件可以遍历内存镜像中的进程列表，显示每个进程的进程 ID、名称、父进程 ID、创建时间、退出时间和路径等信息
 
@@ -175,7 +175,7 @@ python2 vol.py -f Challenge.raw --profile=Win7SP1x64 pslist
 
 ![](./images/memory/45abecfd68f44f519f29117157ed8202.png)
 
-## 提取正在运行的程序
+### 提取正在运行的程序
 
 Volatility 的 procdump 插件可以根据进程 ID 或进程名称提取进程的内存映像，并保存为一个单独的文件
 
@@ -199,7 +199,7 @@ D：提取程序后保存的地址，./指的是当前shell正在运行的文件
 
 ![](./images/memory/75235b0e2ab8468ba0d9bf89c226c2ec.png)
 
-## 查看在终端里执行过的命令
+### 查看在终端里执行过的命令
 
 Volatility 的 cmdscan 插件可以扫描内存镜像中的进程对象，提取已执行的 cmd 命令，并将其显示在终端中
 
@@ -211,7 +211,7 @@ python2 vol.py -f Challenge.raw --profile=Win7SP1x64 cmdscan
 
 他移动到了Documents目录下，echo了一次字符串，然后创建了一个名为hint.txt的文件
 
-## 查看进程在终端里运行的命令
+### 查看进程在终端里运行的命令
 
 Volatility中的cmdline插件可以用于提取进程执行的命令行参数和参数值
 
@@ -224,7 +224,7 @@ python2 vol.py -f Challenge.raw --profile=Win7SP1x64 cmdline
 
 
 
-## 查找内存中的文件
+### 查找内存中的文件
 
 Volatility 的 filescan插件可以在内存中搜索已经打开的文件句柄，从而获取文件名、路径、文件大小等信息
 
@@ -244,7 +244,7 @@ grep是Linux下常用的命令之一，它用于在文件中查找指定的字�
 
 ![](./images/memory/6d3fc9ae14074b72b91684b01cbd91a2.png)
 
-## 提取内存中的文件
+### 提取内存中的文件
 
 Volatility的dumpfiles插件可以用来提取系统内存中的文件
 
@@ -264,7 +264,7 @@ D：提取程序后保存的地址，./指的是当前shell正在运行的文件
 
 提取出来的文件名是包含内存地址的，更改一下后缀名即可运行
 
-## 查看浏览器历史记录
+### 查看浏览器历史记录
 
 Volatility中的iehistory插件可以用于提取Internet Explorer浏览器历史记录
 
@@ -275,7 +275,7 @@ python2 vol.py -f Challenge.raw --profile=Win7SP1x64 iehistory
 
 ![](./images/memory/a232c42576c74dfca9c3879eddd1ba5b.png)
 
-## 提取用户密码hash值并爆破
+### 提取用户密码hash值并爆破
 
 Volatility中的Hashdump插件可以用于提取系统内存中的密码哈希值
 
@@ -304,7 +304,7 @@ https://crackstation.net/
 
 就可以得到用户密码明文
 
-## 使用mimikatz提取密码
+### 使用mimikatz提取密码
 
 mimikatz是一个开源的用于从Windows操作系统中提取明文密码，哈希值以及其他安全凭据的工具
 
@@ -316,7 +316,7 @@ python2 vol.py -f Challenge.raw --profile=Win7SP1x64 mimikatz
 
 成功提取到TroubleMaker用户的密码
 
-## 查看剪切板里的内容
+### 查看剪切板里的内容
 
 Volatility中的clipboard插件可以用于从内存转储中提取剪贴板数据
 
@@ -326,7 +326,7 @@ python2 vol.py -f Challenge.raw --profile=Win7SP1x64 clipboard
 
 ![](./images/memory/29ae5ed5721449be99d7bd02a63b30e8.png)
 
-## 查看正在运行的服务
+### 查看正在运行的服务
 
 svcscan是Volatility中的一个插件，用于扫描进程中所有的服务
 
@@ -338,7 +338,7 @@ svcscan
 
 执行了svcscan之后，每列代表服务的一些信息，包括服务名、PID、服务状态、服务类型、路径等等
 
-## 查看网络连接状态
+### 查看网络连接状态
 
 Volatility中的netscan插件可以在内存转储中查找打开的网络连接和套接字，该命令将显示所有当前打开的网络连接和套接字。输出包括本地和远程地址、端口、进程ID和进程名称等信息
 
@@ -348,7 +348,7 @@ python2 vol.py -f Challenge.raw --profile=Win7SP1x64 netscan
 
 ![](./images/memory/902b4ff077424d839920315f41516242.png)
 
-## 查看注册表信息
+### 查看注册表信息
 
 printkey是Volatility工具中用于查看注册表的插件之一。它可以帮助分析人员查看和解析注册表中的键值，并提供有关键值的详细信息，如名称、数据类型、大小和值等
 
@@ -393,7 +393,7 @@ python2 vol.py -f Challenge.raw --profile=Win7SP1x64 dumpregistry -D ./
 ```
 
 
-## 全部插件
+### 全部插件
 
 ```
 amcache        	查看AmCache应用程序痕迹信息
@@ -511,7 +511,7 @@ wndscan        	池扫描窗口站
 yarascan       	以Yara签名扫描进程或内核内存
 ```
 
-# 总结
+## 总结
 
 本篇文章演示的插件已经可以做绝大部分题目了，之后就多在buuctf或者ctfshow等线上ctf平台刷题，积累经验
 
