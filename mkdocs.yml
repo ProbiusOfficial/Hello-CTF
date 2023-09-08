@@ -181,10 +181,10 @@ nav:
       - 7.x. &nbsp; 杂七杂八的解题技巧: ctf_pwn/Tricks.md
 
     - 8. &nbsp; &nbsp; AWD:
-      - 8.1. &nbsp; AWD介绍: ctf_awd/index.md
+      - 8.1. &nbsp; AWD介绍: ctf_awd/awd_about.md
       - 8.2. &nbsp; AWD平台: ctf_awd/awd_platform.md
-      - 8.2. &nbsp; 【WEB】AWD技巧: ctf_awd/awd_web.exp.md
-      - 8.2. &nbsp; 【PWN】AWD技巧: ctf_awd/awd_pwn.exp.md
+      - 8.3. &nbsp; 【WEB】AWD技巧: ctf_awd/awd_web.exp.md
+      - 8.4. &nbsp; 【PWN】AWD技巧: ctf_awd/awd_pwn.exp.md
 
     - 9. &nbsp; &nbsp; 附录:
       - 9.1. &nbsp; 提问的智慧: ctf_appendix/how-to-ask.md
