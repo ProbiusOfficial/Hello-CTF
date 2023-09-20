@@ -69,6 +69,10 @@ Telegram有个即时预览的功能，可以以阅读格式的页面形式加载
 >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-06-24
 
 Cloudcone出了一个$4.5/年的CDN，一个月5GB的流量，国内能直连台湾中华电信的节点，体验不错，并且有waf防护，正好把博客的小站升级一下购买链接Hashtag 2023 CDN – 15 GB月流量$4.5/年购买链接Hashtag 2023 CDN – 210 GB月流量$8.99/年购买链接Hashtag 2023 CDN – 320 GB月流量$17.99/年购买链接Hasht...
+### [Java 动态加载字节码机制](https://www.ek1ng.com/java-loading-bytecode.html)  
+>by [ek1ng](https://ek1ng.com/), 2023-06-15
+
+参考：《JAVA 安全漫谈》什么是Java字节码Java 是一门跨平台的编译型语言。在运行Java代码的整个过程中，代码会被编译成字节码在JVM中运行。而字节码其实就是JVM所支持的指令。Java加载字节码机制的安全意义在很多场景，我们可以有控制一些能够加载字节码函数的能力，那么可以通过加载远程的恶意类，来完成RCE。如何加载类一些概念的区用 URLClassLoader 从远程加载类ClassL...
 ### [Java 反序列化安全入门——从URLDNS到Commons-Collections](https://www.ek1ng.com/java-deserialization-sec.html)  
 >by [ek1ng](https://ek1ng.com/), 2023-06-14
 
@@ -85,7 +89,3 @@ Cloudcone出了一个$4.5/年的CDN，一个月5GB的流量，国内能直连台
 >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-05-27
 
 写在开头众多AI绘画工具的问世和发展已经有一段时间了。笔者虽然并非AI绘画的最早一批玩家，但也自认为是比较早入门的。最早的接触是在2022年夏OpenAI Dall-e的新模型发布后在官网体验到的。在2022年10月底，也就是NovelAI的二次元模型泄露后，AI绘图开始走向平民化，我也是在11月初左右开始正式接触这个领域。其实很早以前，大概在2022年12月就想写这篇文章了。之所以拖到今天才开始...
-### [阿里云 BrokenSesame RCE 漏洞分析](https://www.ek1ng.com/BrokenSesame.html)  
->by [ek1ng](https://ek1ng.com/), 2023-05-12
-
-Wiz团队发表的漏洞分析文章 : https://www.wiz.io/blog/brokensesame-accidental-write-permissions-to-private-registry-allowed-potential-r有很多巧妙的利用思路可以学习Wiz Research在文章中披露了被命名为BrokenSesame的一系列阿里云数据库服务漏洞，会导致未授权访问阿里云客户的...
