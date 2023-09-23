@@ -13,10 +13,6 @@ comments: true
 >by [ek1ng](https://ek1ng.com/), 2023-09-13
 
 无CVE编号 XSS2RCEhttps://github.com/marktext/marktext/issues/2601https://github.com/marktext/marktext/commit/0dd09cc6842d260528c98151c394c5f63d733b62影响 <= 0.16.3 的marktext版本，点击链接触发。POC：123<a href="javasc...
-### [2023成都CCS大会&amp;&amp;补天城市沙龙有感](https://blog.zgsec.cn/index.php/archives/319/)  
->by [曾哥](https://blog.zgsec.cn/), 2023-09-01
-
-前言今年很巧，8月23日项目结束后，24号2023成都CCS网络安全大会就召开了。我今年刚好在武汉做项目，想了想，结束直接一个飞机飞往成都，开启了本次成都安全之旅。成都的师傅们都很热情，也结识了不少新的朋友，参加了成都CCS大会以及补天城市沙龙，感觉收获颇多，故写本文记录一下。由于参加项目和大会的缘故，博客已经一个半月还未更新了，直到今日才有闲暇之时来落笔本文，各位师傅见谅哈哈。补天城市沙龙合照：...
 ### [渗透测试思路总结](https://www.ek1ng.com/Summary%20of%20penetration%20ideas.html)  
 >by [ek1ng](https://ek1ng.com/), 2023-08-29
 
@@ -89,3 +85,7 @@ Cloudcone出了一个$4.5/年的CDN，一个月5GB的流量，国内能直连台
 >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-05-27
 
 写在开头众多AI绘画工具的问世和发展已经有一段时间了。笔者虽然并非AI绘画的最早一批玩家，但也自认为是比较早入门的。最早的接触是在2022年夏OpenAI Dall-e的新模型发布后在官网体验到的。在2022年10月底，也就是NovelAI的二次元模型泄露后，AI绘图开始走向平民化，我也是在11月初左右开始正式接触这个领域。其实很早以前，大概在2022年12月就想写这篇文章了。之所以拖到今天才开始...
+### [阿里云 BrokenSesame RCE 漏洞分析](https://www.ek1ng.com/BrokenSesame.html)  
+>by [ek1ng](https://ek1ng.com/), 2023-05-12
+
+Wiz团队发表的漏洞分析文章 : https://www.wiz.io/blog/brokensesame-accidental-write-permissions-to-private-registry-allowed-potential-r有很多巧妙的利用思路可以学习Wiz Research在文章中披露了被命名为BrokenSesame的一系列阿里云数据库服务漏洞，会导致未授权访问阿里云客户的...
