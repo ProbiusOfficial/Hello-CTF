@@ -230,11 +230,5 @@ nav:
 
   - Blog:
     - blog/index.md
-    # - 2023:
-    #   - blog/posts/Deadgame.md
-    #   - blog/posts/Filter.md
-    #   - blog/posts/from-jwt-to-the-xiangyuncup-funweb.md
-    #   - blog/posts/NssRound7.md
-    #   - blog/posts/bashfuck.md
-    #   - blog/posts/build-your-remote-linux-docker.md
+ 
 
