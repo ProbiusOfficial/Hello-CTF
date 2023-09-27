@@ -1,18 +1,18 @@
-# Project information
+# 项目信息 / Project information
 site_name: Hello CTF
 site_url: https://ctf.tj.cn/
 site_author: 探姬
 site_description: 开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程
-# docs_dir: build
-# Repository
+
+# 仓库信息 / Repository
 repo_name: CTF-QuickStart
 repo_url: https://github.com/ProbiusOfficial/CTF-QuickStart
 edit_uri: https://github.com/ProbiusOfficial/CTF-QuickStart/tree/main/docs/
 
-# Copyright
+# 版权声明 / Copyright
 copyright: Copyright &copy; 2023 探姬
 
-# Configuration
+# 自定义配置部分 / Configuration
 theme:
   name: material
   custom_dir: overrides
@@ -41,39 +41,53 @@ theme:
     - search.suggest            # 搜索建议
     - toc.follow                # 目录跟随
     # - toc.integrate           # 目录整合
+
+  # 调色板配置  
   palette:
     - scheme: default
       primary: white
-      # accent: indigo
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
+
     - scheme: slate
-      primary: grey
-      # accent: indigo
+      primary: black
       toggle:
         icon: material/weather-night
         name: Switch to light mode
+
+  # 字体配置        
   font:
     text: Noto Sans SC
     code: Fira Code
+
   favicon: assets/images/favicon.png
+
   logo: assets/images/logo.png
+  
   icon:
     logo: logo
     repo: fontawesome/brands/github
     edit: material/file-edit-outline
 
+# 额外配置
 extra:
-  disqus: 'open'
+  disqus: 'open' # 评论系统
+
+  generator: false  
+
+  # 页脚社交媒体
   social:
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/probiusofficial
     - icon: fontawesome/brands/github
       link: https://github.com/probiusofficial
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/probiusofficial
-    - icon: fontawesome/solid/video
+    - icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/27109929
-  generator: false
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<probiuslinx@gmail.com> 
+
+  # 谷歌分析
   analytics:
     provider: google
     property: G-V9998CDNR1
@@ -83,7 +97,7 @@ plugins:
   - search
   - blog
 
-# Extensions
+# 扩展
 markdown_extensions:
   - abbr
   - admonition
@@ -99,19 +113,19 @@ markdown_extensions:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.details
-  # - pymdownx.emoji:
-  #     emoji_index: !!python/name:materialx.emoji.twemoji
-  #     emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.keys
-  # - pymdownx.magiclink:
-  #     repo_url_shorthand: true
-  #     user: squidfunk
-  #     repo: mkdocs-material
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.tabbed:
@@ -121,14 +135,15 @@ markdown_extensions:
   - pymdownx.tilde
 
 extra_javascript:
-  - //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js #不蒜子PV统计
-  # - javascripts/mathjax.js
+  - javascripts/extra.js
+  - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 extra_css:
   - stylesheets/extra.css
-
-# Page tree
+  
+# 目录
 nav:
   - 主页: 
     - index.md
