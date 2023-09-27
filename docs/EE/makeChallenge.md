@@ -12,7 +12,7 @@ comments: true
 
 !!! warning "注意"
     本教程将默认您已经具备以下条件:  
-       1. 拥有[Docker环境](../ctf_evnset/Docker_On_Linux.md) 并且 对Docker有一定的了解  
+       1. 拥有[Docker环境](../HC_envSet/Docker_On_Linux.md) 并且 对Docker有一定的了解  
        2. 至少熟悉一个CTF方向，并且清楚CTF题目命题方向  
 
 该教程主要针对有容器需求的题目，如PWN 和 WEB 并且普遍利用动态容器技术(即 动态Flag) 除了传统的PWN 和 WEB 需求的动态容器，结合目前CTF其他方向也尝试引入容器提高题目的 质量 趣味 或者 难度？我们也提供诸如nc交互式的Crypto题目容器模板，当然您也可以自行修改模板来适应您的题目需求。
@@ -264,7 +264,7 @@ docker push dockerhubUserName/imagesName:Tag
 
 !!! warning "注意"
     同样，在这里，我们默认您:  
-        拥有NSSCTF平台账号，并且您拥有您团队的管理资格，如果有疑问可以阅读[NSS平台使用指南](../ctf_appendix/NSSCTF_Usage.md).
+        拥有NSSCTF平台账号，并且您拥有您团队的管理资格，如果有疑问可以阅读[NSS平台使用指南](../HC_Appendix/NSSCTF_Usage.md).
 
 
 

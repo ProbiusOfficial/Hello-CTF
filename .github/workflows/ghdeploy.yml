@@ -21,8 +21,8 @@ jobs:
 
       - name: Fetch friends.md from external repository
         run: |
-          curl -o docs/ctf_archives/friends.md https://raw.githubusercontent.com/ProbiusOfficial/helloCTF-CTFerlink/main/output/friends.md
-          curl -o docs/ctf_archives/index.md https://raw.githubusercontent.com/ProbiusOfficial/helloCTF-CTFerlink/main/output/friends.md
+          curl -o docs/AR/friends.md https://raw.githubusercontent.com/ProbiusOfficial/helloCTF-CTFerlink/main/output/friends.md
+          curl -o docs/AR/index.md https://raw.githubusercontent.com/ProbiusOfficial/helloCTF-CTFerlink/main/output/friends.md
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -38,7 +38,7 @@ jobs:
       - name: Check for changes
         id: check_changes
         run: |
-          git add docs/ctf_archives/friends.md
+          git add docs/AR/friends.md
           if [ -n "$(git status --porcelain)" ]; then
             echo "CHANGES=true" >> $GITHUB_ENV
           fi
