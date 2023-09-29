@@ -4,9 +4,12 @@ comments: true
 ---
 
 # CTF, 启动！
+<div align="center">
 
-<iframe src="//player.bilibili.com/player.html?aid=398221068&bvid=BV13o4y1x7L2&cid=1117061033&high_quality=1" width="100%" height="360" frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"> </iframe>   
-  
+<iframe src="//player.bilibili.com/player.html?aid=398221068&bvid=BV13o4y1x7L2&cid=1117061033&high_quality=1" width="90%" height="360" frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"> </iframe>   
+
+</div>
+
 如果您是第一次接触请访问 [CTF快速入门](https://ctf.tj.cn/HC_Start/) 来快速建立对CTF的认知。
 
 ## 关于 / About
@@ -46,7 +49,7 @@ comments: true
 
 ## 近期动态 / Recent News  
   
-  
+
 !!! Info "近期的新生赛"  
     欢迎参加 西安电子科技大学 MoeCTF2023 新生赛，赛事持续1-2个月，难度由浅入深，欢迎各位萌新参加！  
     [点击加入 MoeCTF2023 赛事群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=hSpW9WH7e1gGALTDkKj_VkT9jvikTVQb&authKey=%2B0JFQ339kcRG3%2BSKJM7qitEQUb6uYG7eeu0ILOqfJBExD1E3iTB6iZ7%2FafSrRYWr&noverify=0&group_code=797838012) ( QQ群797838012 )  
