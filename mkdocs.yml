@@ -147,71 +147,71 @@ extra_css:
 nav:
 
 # - HelloCTF (.HC) Part ------------
-  - 主页: 
+  - HelloCTF: 
     - index.md
-    - 0. &nbsp; &nbsp; 前言:
+    - 前言:
       - HC_Preface/index.md
-      - 0.1. &nbsp;  关于本书: HC_Preface/about.md
-      - 0.2. &nbsp;  食用方法: HC_Preface/usage.md
-      - 0.3. &nbsp;  加入我们: HC_Preface/join.md
+      - 关于本书: HC_Preface/about.md
+      - 食用方法: HC_Preface/usage.md
+      - 加入我们: HC_Preface/join.md
 
-    - 1. &nbsp; &nbsp; 快速开始:
+    - 快速开始:
       - HC_Start/index.md
 
-    - 2. &nbsp; &nbsp; 环境设置:
+    - 环境设置:
       - HC_envSet/index.md
-      - 2.I. &nbsp; 工具一览: HC_envSet/CTFtool.md
-      - 2.II. &nbsp; Docker环境: HC_envSet/Docker_On_Linux.md
-      - 2.1. &nbsp; Web环境设置: HC_envSet/Web.md
-      - 2.2. &nbsp; MISC环境设置: HC_envSet/MISC.md
-      - 2.3. &nbsp; Crypto环境设置: HC_envSet/Crypto.md
+      - 工具一览: HC_envSet/CTFtool.md
+      - Docker环境: HC_envSet/Docker_On_Linux.md
+      - Web环境设置: HC_envSet/Web.md
+      - MISC环境设置: HC_envSet/MISC.md
+      - Crypto环境设置: HC_envSet/Crypto.md
 
-    - 3. &nbsp; &nbsp; MISC | 杂项:
+    - MISC | 杂项:
       - HC_MISC/index.md
-      - 3.1. &nbsp; 图片隐写: HC_MISC/stego.md
-      - 3.2. &nbsp; 流量分析: HC_MISC/pcap.md
-      - 3.3. &nbsp; 内存取证: HC_MISC/memory.md
+      - 1. &nbsp; 图片隐写: HC_MISC/stego.md
+      - 2. &nbsp; 流量分析: HC_MISC/pcap.md
+      - 3. &nbsp; 内存取证: HC_MISC/memory.md
 
-    - 4. &nbsp; &nbsp; Web | 网络攻防:
+    - Web | 网络攻防:
       - HC_Web/index.md
-      - 4.1. &nbsp; SQL注入: HC_Web/sql_injection.md
-      - 4.2. &nbsp; XSS攻击: HC_Web/xss.md
-      - 4.3. &nbsp; PHP反序列化: HC_Web/php_unserialize.md  
+      - 1. &nbsp; SQL注入: HC_Web/sql_injection.md
+      - 2. &nbsp; XSS攻击: HC_Web/xss.md
+      - 3. &nbsp; PHP反序列化: HC_Web/php_unserialize.md  
 
-    - 5. &nbsp; &nbsp; Crypto | 密码学:
+    - Crypto | 密码学:
       - HC_Crypto/index.md
-      - 5.1. &nbsp; 语义安全: HC_Crypto/Semantic_Security.md
-      - 5.2. &nbsp; RSA: HC_Crypto/RSA.md
-      - 5.3. &nbsp; ECC: HC_Crypto/ECC.md
-      - 5.4. &nbsp; DES: HC_Crypto/DES.md
-      - 5.5. &nbsp; AES: HC_Crypto/AES.md
+      - 1. &nbsp; 语义安全: HC_Crypto/Semantic_Security.md
+      - 2. &nbsp; RSA: HC_Crypto/RSA.md
+      - 3. &nbsp; ECC: HC_Crypto/ECC.md
+      - 4. &nbsp; DES: HC_Crypto/DES.md
+      - 5. &nbsp; AES: HC_Crypto/AES.md
 
-    - 6. &nbsp; &nbsp; Reverse | 逆向工程:
+    - Reverse | 逆向工程:
       - HC_Reverse/index.md
 
-    - 7. &nbsp; &nbsp; Pwn | 二进制安全:
+    - Pwn | 二进制安全:
       - HC_PWN/index.md
-      - 7.1. &nbsp; 栈上数组越界&栈溢出: HC_PWN/Stack_Overflow.md
-      - 7.1.1. &nbsp; ROP入门: HC_PWN/ROP.md
-      - 7.1.2. &nbsp; 常见的ROP技巧: HC_PWN/ROP_Tricks.md
-      - 7.2. &nbsp; 常见保护: HC_PWN/Protections.md
-      - 7.x. &nbsp; 杂七杂八的解题技巧: HC_PWN/Tricks.md
+      - 1. &nbsp; 栈上数组越界&栈溢出: HC_PWN/Stack_Overflow.md
+      - 1.1. &nbsp; ROP入门: HC_PWN/ROP.md
+      - 1.2. &nbsp; 常见的ROP技巧: HC_PWN/ROP_Tricks.md
+      - 2. &nbsp; 常见保护: HC_PWN/Protections.md
+      - x. &nbsp; 杂七杂八的解题技巧: HC_PWN/Tricks.md
 
-    - 8. &nbsp; &nbsp; AWD:
-      - 8.1. &nbsp; AWD介绍: HC_AWD/awd_about.md
-      - 8.2. &nbsp; AWD平台: HC_AWD/awd_platform.md
-      - 8.3. &nbsp; 【WEB】AWD技巧: HC_AWD/awd_web.exp.md
-      - 8.4. &nbsp; 【PWN】AWD技巧: HC_AWD/awd_pwn.exp.md
+    - AWD:
+      - 1. &nbsp; AWD介绍: HC_AWD/awd_about.md
+      - 2. &nbsp; AWD平台: HC_AWD/awd_platform.md
+      - 3. &nbsp; 【WEB】AWD技巧: HC_AWD/awd_web.exp.md
+      - 4. &nbsp; 【PWN】AWD技巧: HC_AWD/awd_pwn.exp.md
 
-    - 9. &nbsp; &nbsp; 附录:
-      - 9.1. &nbsp; 提问的智慧: HC_Appendix/how-to-ask.md
-      - 9.2. &nbsp; CTF赛事: HC_Appendix/CTFevent.md
-      - 9.3. &nbsp; NSSCTF平台使用: HC_Appendix/NSSCTF_Usage.md
-      - 9.4. &nbsp; 推荐书单: HC_Appendix/book.md
+    - 附录:
+      - 提问的智慧: HC_Appendix/how-to-ask.md
+      - CTF赛事: HC_Appendix/CTFevent.md
+      - NSSCTF平台使用: HC_Appendix/NSSCTF_Usage.md
+      - 推荐书单: HC_Appendix/book.md
 
 # - CTFToolKit (.TK) Part ------------
   - 工具:
-    - HC_envSet/CTFtool.md
+    - TK/index.md
 
 # - TeamBuilding (.TB) Part ------------
   - 团队建设: TB/index.md
