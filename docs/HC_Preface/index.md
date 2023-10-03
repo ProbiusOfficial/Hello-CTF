@@ -3,7 +3,7 @@ comments: true
 
 ---
 
-# 0. &nbsp; &nbsp; 前言
+# 前言
 
 <div class="center-table" markdown>
 

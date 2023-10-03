@@ -42,6 +42,7 @@ comments: true
 - **[CTF档案馆](https://ctf.tj.cn/AR) Archives (/AR) Part** : 收录CTF相关内容，包括但不限于  
   
     - 师傅们的博客收录
+    - CTFChanel 会列出CTF相关内容的UP主
     - CTF联合战队信息以及招新公告(如果有的话)
     - CTF历届比赛信息，题目，以及WriteUp (题目包括对附件 / Docker存档 )
     

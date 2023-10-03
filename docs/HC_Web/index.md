@@ -3,7 +3,7 @@ comments: true
 
 ---
 
-# 4. &nbsp; &nbsp; Web | 网络攻防
+# Web | 网络攻防
 
 <div class="center-table" markdown>
 

@@ -3,7 +3,7 @@ comments: true
 
 ---
 
-# 3. &nbsp; &nbsp; MISC | 杂项
+# MISC | 杂项
 
 <div class="center-table" markdown>
 
