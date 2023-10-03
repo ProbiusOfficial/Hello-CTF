@@ -28,7 +28,7 @@ comments: true
 这里国内外存在一些差异，在中文wiki上这样写着：
 >编码：它意指以[码字](https://zh.wikipedia.org/w/index.php?title=碼字&action=edit&redlink=1)取代特定的[明文](https://zh.wikipedia.org/wiki/明文)。例如，以‘苹果派’（apple pie）替换‘拂晓攻击’（attack at dawn）。[编码](https://zh.wikipedia.org/zh-sg/編碼)已经不再被使用在严谨的密码学，它在[资讯论](https://zh.wikipedia.org/wiki/信息论)或[通讯原理](https://zh.wikipedia.org/w/index.php?title=通訊原理&action=edit&redlink=1)上有更明确的意义
 
-虽然不再符合现代 严谨的密码学 的定义，但在广义的密码学上 **「编码 Encoding  」**  依旧被承认为密码学分支，同时编码在现代密码学信息承载上依旧有巨大作用，综合考虑，密码学会 一起更新 **「编码 Encoding  」** , **「古典密码学 Classic cryptography 」** 和 **「现代密码学 Modern cryptography 」**的相关知识，如果MISC方向有需要会链接到此。
+虽然不再符合现代 严谨的密码学 的定义，但在广义的密码学上 **「编码 Encoding  」**  依旧被承认为密码学分支，同时编码在现代密码学信息承载上依旧有巨大作用，综合考虑，密码学会 一起更新 **「编码 Encoding  」** , **「古典密码学 Classic cryptography 」** 和 **「现代密码学 Modern cryptography 」** 的相关知识，如果MISC方向有需要会链接到此。
 
 笔者认为，作为计算机领域信息传递最基本的一环，不论你是否选择密码学或者杂项，编码技术都值得你详细阅读和了解。
 

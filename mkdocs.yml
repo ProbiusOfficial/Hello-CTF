@@ -179,9 +179,12 @@ nav:
 
     - MISC | 杂项:
       - HC_MISC/index.md
-      - 1. &nbsp; 图片隐写: HC_MISC/stego.md
-      - 2. &nbsp; 流量分析: HC_MISC/pcap.md
-      - 3. &nbsp; 内存取证: HC_MISC/memory.md
+      - 信息收集: HC_MISC/osint.md
+      - 编码扩展: HC_MISC/Encode_extra.md
+      - 文件格式: HC_MISC/file_format.md
+      - 隐写技术: HC_MISC/Steganography.md
+      - 流量分析: HC_MISC/pcap.md
+      - 内存取证: HC_MISC/memory.md
 
     - Web | 网络攻防:
       - HC_Web/index.md
@@ -231,14 +234,14 @@ nav:
       - EE_Docker/index.md
       - a.0. &nbsp; 一文速通Docker(粗): EE_Docker/dockerstart.md
       - a.1. &nbsp; 关于Docker: EE_Docker/about.md 
-      - a.2.1. &nbsp; Windows下的Docker环境配置: EE_Docker/install_windows.md
-      - a.2.2. &nbsp; Linux下的Docker环境配置: EE_Docker/install_linux.md
-      - a.3.1. &nbsp; Docker的基本操作: EE_Docker/usage_basic.md
-      - a.4  &nbsp; Docker在CTF中的应用: EE_Docker/usage_ctf.md
-      - a.4.1. &nbsp; Web题目的Docker化: EE_Docker/usage_web.md
-      - a.4.2. &nbsp; 示例-经典web靶场封装: EE_Docker/usage_example.md
-      - a.4.3. &nbsp; Pwn题目的Docker化: EE_Docker/usage_pwn.md
-      - a.4.4. &nbsp; Crypto题目的Docker化: EE_Docker/usage_crypto.md
+      # - a.2.1. &nbsp; Windows下的Docker环境配置: EE_Docker/install_windows.md
+      # - a.2.2. &nbsp; Linux下的Docker环境配置: EE_Docker/install_linux.md
+      # - a.3.1. &nbsp; Docker的基本操作: EE_Docker/usage_basic.md
+      # - a.4  &nbsp; Docker在CTF中的应用: EE_Docker/usage_ctf.md
+      # - a.4.1. &nbsp; Web题目的Docker化: EE_Docker/usage_web.md
+      # - a.4.2. &nbsp; 示例-经典web靶场封装: EE_Docker/usage_example.md
+      # - a.4.3. &nbsp; Pwn题目的Docker化: EE_Docker/usage_pwn.md
+      # - a.4.4. &nbsp; Crypto题目的Docker化: EE_Docker/usage_crypto.md
     - b. &nbsp; &nbsp; CTF命题:
       - EE_makeChallenge/index.md
       - b.1. &nbsp; 如何优雅的完成CTF命题: EE/makeChallenge.md
@@ -248,11 +251,6 @@ nav:
     - AR/index.md
     - a. &nbsp; &nbsp; CTFer:
       - AR/friends.md
-      - a.1. &nbsp; Web: AR/web.md
-      - a.2. &nbsp; Misc: AR/misc.md
-      - a.3. &nbsp; Crypto: AR/crypto.md
-      - a.4. &nbsp; Re: AR/ree.md
-      - a.5. &nbsp; Pwn: AR/pwn.md
     - b. &nbsp; &nbsp; Challenges:
       - AR/Challenges.md
     - c. &nbsp; &nbsp; Writeups:

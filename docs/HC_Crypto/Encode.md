@@ -78,7 +78,9 @@ comments: true
 
 Base家族的编码方式提供了一种方法，将原始的二进制数据转换成一个更“友好”的、由特定字符集组成的字符串格式，比如base64、base32、base16可以分别编码转化8位字节为6位、5位、4位。16,32,64分别表示用多少个字符来编码。
 
-下面我们以Base64为例，讲解一下编码过程：
+以Base64为例：
+
+编码过程：
 
 1. 将输入数据分割成长度为 3 的字节组。
 2. 将这三个字节转换为4个6位的组。这样做是通过将这三个字节（总共24位）重组为4个6位的数值。
@@ -109,8 +111,24 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 查表得：R28
 补齐得：R28=
 ```
+解码过程则是编码的逆过程：
+
+1. 把 Base64 字符串去掉等号，转为二进制数
+2. 从左到右，8 个位一组，多余位的扔掉，转为对应的 ASCII 码
+
+```
+密文： R28=
+去掉=：R28
+对应十进制（ASCII 码）：    17     54     60 
+还原位6位二进制 ：       010001 110110 111100
+重新分组为8位二进制：     01000111 01101111 00
+8位二进制转换为对应ASCII码：  G        o     /(丢弃不完整部分)
+得到原文：Go
+```
+
 
 其他Base编码过程同理，这里给出一些常见base的字符集和对应说明，读者可以自行尝试。
+
 | 编码      | 字符集                                                       | 备注                |
 | --------- | ------------------------------------------------------------ | ------------------- |
 | BASE2     | `01                                                                                    ` | 二进制             |
@@ -121,6 +139,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 | BASE64    | `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/                      ` |                     |
 | BASE64URL | `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_                      ` | 适用于URL和文件名    |
 | BASE85    | `!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_abcdefghijklmnopqrstu` | 例如Adobe's ASCII85 |
+
 
 #### URL编码
 
@@ -164,36 +183,36 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 
 - UUencode编码
 
-  ```
-  (5&5S=$`Q,C,`
-  ```
+    ```
+    (5&5S=$`Q,C,`
+    ```
 
 - Escape/Unescape编码
 
-  ```
-  %u6d4b%u8bd5@123
-  ```
+    ```
+    %u6d4b%u8bd5@123
+    ```
   
 - Quoted-printable 编码
 
-  ```
-  =E6=B5=8B=E8=AF=95@123
-  ```
+    ```
+    =E6=B5=8B=E8=AF=95@123
+    ```
   
 - HTML实体编码
 
-  ```
-  # HTML实体 10进制
-  &#84;&#101;&#115;&#116;&#64;&#49;&#50;&#51;
-  # HTML实体 16进制
-  &#x0054;&#x0065;&#x0073;&#x0074;&#x0040;&#x0031;&#x0032;&#x0033;
-  ```
+    ```
+    # HTML实体 10进制
+    &#84;&#101;&#115;&#116;&#64;&#49;&#50;&#51;
+    # HTML实体 16进制
+    &#x0054;&#x0065;&#x0073;&#x0074;&#x0040;&#x0031;&#x0032;&#x0033;
+    ```
 
 - shellcode编码
 
-  ```
-  \x54\x65\x73\x74\x40\x31\x32\x33
-  ```
+    ```
+    \x54\x65\x73\x74\x40\x31\x32\x33
+    ```
 
 #### 莫尔斯电码
 
