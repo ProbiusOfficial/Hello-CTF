@@ -9,6 +9,10 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [HaE入门到精通-三条影响你一生的HaE规则](https://blog.zgsec.cn/index.php/archives/481/)  
+>by [曾哥](https://blog.zgsec.cn/), 2023-10-01
+
+0# 概述最近一段时间项目也比较多，再加上最近还在维护开源项目，所以挺忙的。乘着国庆时间，好好放松一下，顺便借着国庆期间更新一下自己许久未更新的博客哈哈~本篇文章，我们将深入学习著名BurpSuite工具的插件 HaE 的使用和拓展，希望这三条影响你一生的HaE规则能给你带来帮助~读者：你TM还知道回来啊！！！快两个月都没更新了都！！！在此，祝各位师傅们国庆节快乐！！！为国之安全而奋斗，为信息安全...
 ### [Markdown editor CVE of Marktext](https://www.ek1ng.com/MarkdownEditorCVE1.html)  
 >by [ek1ng](https://ek1ng.com/), 2023-09-13
 
@@ -85,7 +89,3 @@ Cloudcone出了一个$4.5/年的CDN，一个月5GB的流量，国内能直连台
 >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-05-29
 
 因为原有域名[bebebe.be]即将到期且续费困难问题，本站即将停用该域名并更换为[blog.stv.lol]为了配合新域名，本站原名[哔哔哔哔]更名为[Steven Lynn's Blog]，stv即Steven的缩写具体更换内容如下内容原现域名bebebe.beblog.stv.lol站点名称哔哔哔哔Steven Lynn's Blog图标https://s2.loli.net/2022/1...
-### [AI绘画非技术性入门：Midjourney与Stable Diffusion上手](https://blog.stv.lol/archives/54/)  
->by [Steven Lynn's Blog](https://blog.stv.lol), 2023-05-27
-
-写在开头众多AI绘画工具的问世和发展已经有一段时间了。笔者虽然并非AI绘画的最早一批玩家，但也自认为是比较早入门的。最早的接触是在2022年夏OpenAI Dall-e的新模型发布后在官网体验到的。在2022年10月底，也就是NovelAI的二次元模型泄露后，AI绘图开始走向平民化，我也是在11月初左右开始正式接触这个领域。其实很早以前，大概在2022年12月就想写这篇文章了。之所以拖到今天才开始...
