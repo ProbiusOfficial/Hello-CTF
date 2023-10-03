@@ -182,15 +182,15 @@ nav:
       - 信息收集: HC_MISC/osint.md
       - 编码扩展: HC_MISC/Encode_extra.md
       - 文件格式: HC_MISC/file_format.md
-      - 隐写技术: HC_MISC/Steganography.md
+      - 隐写技术: HC_MISC/stego.md
       - 流量分析: HC_MISC/pcap.md
       - 内存取证: HC_MISC/memory.md
 
     - Web | 网络攻防:
       - HC_Web/index.md
-      - 1. &nbsp; SQL注入: HC_Web/sql_injection.md
-      - 2. &nbsp; XSS攻击: HC_Web/xss.md
-      - 3. &nbsp; PHP反序列化: HC_Web/php_unserialize.md  
+      - SQL注入: HC_Web/sql_injection.md
+      - XSS攻击: HC_Web/xss.md
+      - PHP反序列化: HC_Web/php_unserialize.md  
 
     - Crypto | 密码学:
       - HC_Crypto/index.md
