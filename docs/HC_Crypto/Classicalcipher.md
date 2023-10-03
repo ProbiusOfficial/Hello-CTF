@@ -37,11 +37,11 @@ comments: true
 
 填入5行7列表(事先约定填充的行列数)
 
-![img](./assets/2016071103145728301.png)
+![img](./assets/2016071103145728301.png) 
 
 加密的回路线(事先约定填充的行列数)
 
-![img](./assets/2016071103145873152.png)
+![img](./assets/2016071103145873152.png) 
 
 密文： `gesfc inpho dtmwu qoury zejre hbxva lookT`           
 
@@ -53,13 +53,13 @@ comments: true
 
 填入5行7列表(事先约定填充的行列数，如果明文不能填充完表格可以约定使用某个字母进行填充)
 
-![img](./assets/2016071103145728301-1696279955663-5.png)
+![img](./assets/2016071103145728301-1696279955663-5.png) 
 
 密钥： `how are u`
 
 按how are u在字母表中的出现的先后顺序进行编号，我们就有a为1,e为2，h为3，o为4，r为5，u为6，w为7，所以先写出a列，其次e列，以此类推写出的结果便是密文：
 
-![img](./assets/2016071103150019394.png)
+![img](./assets/2016071103150019394.png) 
 
 密文： `qoury inpho Tkool hbxva uwmtd cfseg erjez`
 
@@ -87,7 +87,7 @@ comments: true
 
  **「猪圈密码 Pigpen cipher」** ，亦称 **「共济会密码 Masonic cipher」**   或  **共济会员密码 Freemason's cipher」**，是一种以格子为基础的简单 **单表固定** 替换密码。
 
-![猪圈密码](./assets/1-210929213Z22X.jpg)
+![猪圈密码](./assets/1-210929213Z22X.jpg) 
 
 
 
@@ -95,11 +95,11 @@ comments: true
 
 ~~圣堂武士密码亮出光刃！(什~~，**「 圣堂武士密码 Templar Cipher 」** 是共济会的猪圈密码的一个变种，一直被共济会圣殿骑士用。
 
-![image-20231003142634209](./assets/image-20231003142634209.png)
+![image-20231003142634209](./assets/image-20231003142634209.png) 
 
 #### 培根密码 Bacon
 
-**培根密码**，又名**「倍康尼密码 Bacon's cipher」**  是由[法兰西斯·培根](https://zh.wikipedia.org/wiki/法蘭西斯·培根)发明的一种[隐写术](https://zh.wikipedia.org/wiki/隱寫術)。
+**培根密码**，又名 **「倍康尼密码 Bacon's cipher」**  是由[法兰西斯·培根](https://zh.wikipedia.org/wiki/法蘭西斯·培根)发明的一种[隐写术](https://zh.wikipedia.org/wiki/隱寫術)。
 
 加密时，[明文](https://zh.wikipedia.org/wiki/明文)中的每个字母都会转换成一组五个英文字母。其转换依靠下表：
 
@@ -118,13 +118,13 @@ f   AABAB   m     ABABB   s    BAAAB   z     BABBB
 
 **凯撒密码**（或称恺撒加密、恺撒变换、变换加密、位移加密）是一种 **单表代换** 替换加密，明文中的所有字母都在字母表上向后（或向前）按照一个固定数目进行偏移后被替换成密文。例，当 偏移量 **Key = 3** 的时候，所有的字母A将被替换成D，B变成E，以此类推。
 
-![image-20231003045704096](./assets/image-20231003045704096.png)
+![image-20231003045704096](./assets/image-20231003045704096.png){ width="50%" } 
 
 #### 维吉尼亚密码 Vigenère Cipher
 
 **维吉尼亚密码** 是在单一恺撒密码的基础上扩展出 **多表代换** 替换加密，根据密钥(当密钥长度小于明文长度时可以循环使用)来决定用哪一行的密表来进行替换，以此来对抗字频统计。
 
-![用来加密解密的维吉尼亚表格](./assets/4a03e279279cbc74203cbe0a4895e6fd.png) {width = 70%}
+![用来加密解密的维吉尼亚表格](./assets/4a03e279279cbc74203cbe0a4895e6fd.png){ width="50%" } 
 
 在一个[凯撒密码](https://zh.wikipedia.org/wiki/凱撒密碼)中，字母表中的每一字母都会作一定的偏移，例如偏移量为3时，`A`就转换为了`D`、`B`转换为了`E`……而维吉尼亚密码则是由一些偏移量不同的凯撒密码组成。
 

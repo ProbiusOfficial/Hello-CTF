@@ -20,13 +20,13 @@ comments: true
 
 [ CyberChef  ](https://github.com/gchq/CyberChef)是CTF中最常用的编码解码工具之一，内含多种编码和解码方式。
 
-![image-20231001031814984](./assets/image-20231001031814984.png) { width="80%" }
+![image-20231001031814984](./assets/image-20231001031814984.png){ width="80%" }
 
 #### Ciphey
 
 [Ciphey](https://github.com/Ciphey/Ciphey) is a Fully automated decryption/decoding/cracking tool using natural language processing & artificial intelligence, along with some common sense.
 
-![image-20231001132510476](./assets/image-20231001132510476.png) { width="80%" }
+![image-20231001132510476](./assets/image-20231001132510476.png){ width="80%" }
 
 
 
@@ -34,13 +34,13 @@ comments: true
 
 [[随波逐流]CTF编码工具](http://1o1o.xyz/bo_ctfcode.html)  由随波逐编写开发，CTF编码工具为用户提供丰富的离线符编码进行转换，加密解密功能。
 
-![image-20231001032344087](./assets/image-20231001032344087.png) { width="80%" }
+![image-20231001032344087](./assets/image-20231001032344087.png){ width="80%" }
 
 
 
 ### 常见编码
 
-![图源 《香农传》](./assets/image-20231001023927393.png) { width="80%" }
+![图源 《香农传》](./assets/image-20231001023927393.png){ width="80%" }
 
 接下来我们使用经典的通信测试信息—— " `Squdgy fez, blank jimp crwth vox` " 来给大家简述一下一些常见的编码。
 

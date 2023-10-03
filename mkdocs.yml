@@ -135,12 +135,23 @@ markdown_extensions:
   - pymdownx.tilde
 
 extra_javascript:
-  - javascripts/extra.js
-  - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+# # ----- mathjax -----
+#   - javascripts/mathjax.js
+#   - https://polyfill.io/v3/polyfill.min.js?features=es6
+#   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# ----- katex -----
+  - javascripts/katex.js 
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+
+# ----- other -----
 
 extra_css:
+# ----- katex -----
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+
+# ----- other -----
   - stylesheets/extra.css
   
 # 目录
@@ -180,12 +191,9 @@ nav:
 
     - Crypto | 密码学:
       - HC_Crypto/index.md
-      - 1. &nbsp; 语义安全: HC_Crypto/Semantic_Security.md
-      - 2. &nbsp; RSA: HC_Crypto/RSA.md
-      - 3. &nbsp; ECC: HC_Crypto/ECC.md
-      - 4. &nbsp; DES: HC_Crypto/DES.md
-      - 5. &nbsp; AES: HC_Crypto/AES.md
-
+      - 1.前情提要: HC_Crypto/Recap.md
+      - 2.编码基础: HC_Crypto/Encode.md
+      - 3.古典密码: HC_Crypto/Classicalcipher.md
     - Reverse | 逆向工程:
       - HC_Reverse/index.md
 
