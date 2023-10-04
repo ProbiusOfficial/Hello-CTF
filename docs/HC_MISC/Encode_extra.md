@@ -29,6 +29,10 @@ comments: true
 - 【数据表示】作为计算机领域最底层的基础，二进制与数据转换和表示密切相关，比如 字符可以通过ASCII码表转换成对应 `x` 位二进制。
 - 【古今结合】二进制与中国的太极 八卦等古代思想有很大相似之处。（如：[[LitCTF 2023]两仪生四象](https://www.nssctf.cn/problem/3885)）
 
+#### 十六进制
+
+
+
 ### BASE 家族扩展
 
 考虑到MISC板块的特性——选手需要一定的脚本写作能力，所以我们在这里对base家族做一些扩展：
@@ -166,10 +170,10 @@ word -> d29yZB==
 ```
 # |后面部分将被截断
 helo -> aGVsbw== 11|0000
-helo' -> aGVsb2== 11|0110
+helo'-> aGVsb2== 11|0110
 offset = 6 (0110) [helo' - helo = 6]
 word -> d29yZA== 00|0000
-word' -> d29yZB== 00|0001 
+word'-> d29yZB== 00|0001 
 offset = 1 (0001) [word - word' = 1]
 ```
 
@@ -259,3 +263,83 @@ idea：https://www.geeksforgeeks.org/dna-protein-python-3/
 
 ### 图片码
 
+> ![image-20231005012412906](./assets/image-20231005012412906.png)图：[中文wiki-条形码](https://zh.wikipedia.org/zh-cn/%E6%9D%A1%E5%BD%A2%E7%A0%81)
+
+图片码通过维度来区分，可以分为 **「 线性/一维 条形码  Barcode 」** 和 **「 矩阵/二维 条形码  Matrix (2D) barcodes 」** ,网络上对于两类条形码的分类标准有些杂乱，在国内，**二维码** 多指 [**QR code**](https://en.wikipedia.org/wiki/QR_code) ，多数情况下均为狭义指代，并不指代广义上的 **「 矩阵/二维 条形码 」** 。读者要是感兴趣可以阅读  **[英文wiki - Barcode](https://en.wikipedia.org/wiki/Barcode)**。
+
+本文会沿用国内的解释风格，重点介绍二维码。
+
+#### 条形码
+
+> **「 条形码 / 条码 Barcode」** ，是将宽度不等的多个黑条和空白，按照一定的[编码](https://zh.wikipedia.org/wiki/编码)规则排列，用以表达一组[信息](https://zh.wikipedia.org/wiki/信息)的图形标识符。
+
+作为最先出世的图形码，条形码在国际上已有一个庞大的标准库，在CTF中出现的频率并不高，同编码一样，搜索引擎能够解决大部分问题。读者无需刻意记忆。
+
+#### 二维码
+
+> **二维码** 也称为 **二维条码**、**行动条码**，是指在[一维条码](https://zh.wikipedia.org/wiki/一维条码)的基础上扩展出另一[维](https://zh.wikipedia.org/wiki/维度)具有可读性的条码，使用黑白矩形图案表示[二进制](https://zh.wikipedia.org/wiki/二进制)数据，被设备扫描后可获取其中所包含的信息。二维码的种类很多，不同的机构开发出的二维码具有不同的结构以及编写、读取方法。常见的二维码有：
+>
+> - [PDF417码](https://zh.wikipedia.org/wiki/PDF417码)
+> - [QR码](https://zh.wikipedia.org/wiki/QR码)
+> - [汉信码](https://zh.wikipedia.org/wiki/汉信码)
+> - [Aztec码](https://zh.wikipedia.org/wiki/Aztec码)
+> - [Data Matrix](https://zh.wikipedia.org/wiki/Data_Matrix)
+
+在国内，二维码通常指代QR码。
+
+二维码在MISC中占比比较重，通常会结合其他知识点一同考察（包括隐写取证）。
+
+**结构**
+
+QR码最大特征为其左上，右上，左下三个大型的如同“回”字的黑白间同心方图案，为QR码识别定位标记，失去其中一个会影响识别。
+
+![二维码结构](./assets/image-20231005021628238.png)
+
+**二维码存储** 
+
+QR码一共提供40种不同版本存储密度的结构，对应指示图的“版本信息”，版本1为 **21×21** 模块（模块为QR码中的最小单元），**每增加一个版本，长宽各增加4个模块**，最大的版本40为177×177模块。
+
+![最大容量](./assets/image-20231005024728276.png)
+
+**容错修正**
+
+QR码有容错能力，即使图形破损仍然可以读取，破损面积最高可达30%。相对而言，QR码图形面积愈大，容错率愈高，所以一般折衷使用15%容错能力（M等级）。
+
+![示例](./assets/image-20231005031405656.png)
+
+在CTF中，二维码通常涉及的考察点有：
+
+- 二进制转二维码
+
+  ```python
+  from PIL import Image
+  
+  def generate_qrcode_from_binary(binary_str, img_size):
+  
+      assert len(binary_str) == img_size[0] * img_size[1], "Size mismatch!"
+  
+      pic = Image.new("RGB", img_size, color="white")
+      index = 0
+      for y in range(img_size[1]):
+          for x in range(img_size[0]):
+              if binary_str[index] == '1':
+                  pic.putpixel([x, y], (0, 0, 0))
+              index += 1
+      return pic
+  
+  # 示例二进制数据
+  binary_data = "1111111000100001101111111100000101110010110100000110111010100000000010111011011101001000000001011101101110101110110100101110110000010101011011010000011111111010101010101111111000000001011101110000000011010011000001010011101101111010101001000011100000000000101000000001001001101000100111001111011100111100001110111110001100101000110011100001010100011010001111010110000010100010110000011011101100100001110011100100001011111110100000000110101001000111101111111011100001101011011100000100001100110001111010111010001101001111100001011101011000111010011100101110100100111011011000110000010110001101000110001111111011010110111011011"  
+  
+  img_size = (25, 25)
+  qrcode = generate_qrcode_from_binary(binary_data, img_size)
+  qrcode.show()
+  qrcode.save("flag.png")
+  ```
+
+- 二维码修复
+- 二维码拼接
+
+使用到的工具：
+
+- https://merri.cx/qrazybox/
+- QR_Research

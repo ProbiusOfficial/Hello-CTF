@@ -8,9 +8,7 @@ comments: true
 
 **「古典密码学 Classic cryptography 」** 在形式上可分成 **「移位密码 Shift Cipher 」** 和 **「替代密码 Substitution Cipher」** 两类，其中 **替代密码** 又可分为 **单表替代** 和 **多表替代**。有时则是两者的混合。其于历史中经常使用，但现代已经很少使用，大部分的已经不再使用了。
 
-![中文wiki-古典密码](./assets/image-20230930134521408.png)
-
-图：[中文wiki-古典密码](https://zh.wikipedia.org/wiki/%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A2%BC)
+> ![中文wiki-古典密码](./assets/image-20230930134521408.png)图：[中文wiki-古典密码](https://zh.wikipedia.org/wiki/%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A2%BC)
 
 ### 移位密码
 
