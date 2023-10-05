@@ -27,11 +27,9 @@ wireshark下载地址
 
 ### 窗口组成
 
-![1688566267678.png](https://img1.imgtp.com/2023/07/05/JpzvTYBV.png)
+![](./images/pcap/Snipaste_2023-10-05_14-03-02.png)
 
 上图是Wireshark的基本窗口组成，接下来将会详细介绍每一个面板的功能以及基本使用
-
-![1688566334584.png](https://img1.imgtp.com/2023/07/05/TQWw9z1R.png)
 
 显示过滤窗口是最常用的功能之一，它可以迅速帮助我们筛选出我们所需要的包。例如，当我们需要分析TLS的时候，可以直接输入`tls`. 不过需要注意的是，筛选语法对大小写敏感 `TLS !== tls`
 
@@ -170,7 +168,7 @@ tcp and ip.src == 172.17.0.2 and tcp.flags.ack == 0
 
 这样，我们就可以成功的筛选出非ack包了
 
-![1688696890506.png](https://img1.imgtp.com/2023/07/07/FLE3g5uC.png)
+![](./images/pcap/Snipaste_2023-10-05_14-04-16.png)
 
 
 ## 实战
@@ -200,13 +198,13 @@ tcp and ip.src == 172.17.0.2 and tcp.flags.ack == 0
 
 带着这两个问题，我们打开pcap文件
 
-![1688697976491.png](https://img1.imgtp.com/2023/07/07/vAvZupKq.png)
+![](./images/pcap/Snipaste_2023-10-05_14-04-48.png)
 
 可以看到右下角一共10183个分组，慢慢看恐怕是要看到天荒地老了。我们不妨筛选一下，但问题在于我们如何筛选？
 
 不妨先统计一下，都有哪些协议?占比有多少?从而进一步的分析。点击`统计 -> 协议分级`
 
-![1688698095900.png](https://img1.imgtp.com/2023/07/07/XNANdGK4.png)
+![Alt text](./images/pcap/Snipaste_2023-10-05_14-05-49.png)
 
 从上到下我们简单分析一下，从上图我们可一看到基本上所有的帧都是由IPv4发送的，那么IPv6就可以不用看了。紧接着，我们发现，存在两个协议，UDP与TCP。TCP比UDP有更多的分组，而且我们可以注意到，有一个TLS和FTP协议。
 
@@ -216,72 +214,84 @@ tcp and ip.src == 172.17.0.2 and tcp.flags.ack == 0
 
 那么，有没有一种可能，使用了ftp传输了文件呢？我们不妨分析一下，右键`FTP Data -> 作为过滤器应用 -> 选中`
 
-![1688698895022.png](https://img1.imgtp.com/2023/07/07/Kr0tqx4N.png)
+![](./images/pcap/Snipaste_2023-10-05_14-07-13.png)
 
 紧接着，关闭 `协议分级` 窗口，点击 `文件 -> 导出对象 -> FTP-DATA`
 
-![1688699213877.png](https://img1.imgtp.com/2023/07/07/I0oZTOFP.png)
+![Alt text](./images/pcap/Snipaste_2023-10-05_14-07-38.png)
 
 选择`FL-G.zip`点击`save`
 
-![1688699267185.png](https://img1.imgtp.com/2023/07/07/Ki8cnVQq.png)
+![Alt text](./images/pcap/Snipaste_2023-10-05_14-08-38.png)
+
+计算MD5后我们发现是错误的
+
+![Alt text](./images/pcap/Snipaste_2023-10-05_14-10-46.png)
 
 解压发现需要密码，MD5也是错误的。回到统计图
 
-![1688698095900.png](https://img1.imgtp.com/2023/07/07/XNANdGK4.png)
+![Alt text](./images/pcap/Snipaste_2023-10-05_14-05-49.png)
 
 我们还发现`SMTP`协议，我们不妨也分析一下。在显示筛选器中输入`smtp`，报文非常的少一共179个报文。
 
 点击 `统计 -> 会话` 
 
-![1688707070805.png](https://img1.imgtp.com/2023/07/07/JTSxZpCu.png)
+![Alt text](./images/pcap/Snipaste_2023-10-05_14-13-46.png)
 
 其中有几个比较大的会话引起了我的注意。我们不妨跟踪一下，看看到底都发送了什么.
 
+`选中第一个会话 -> 右键`
+
+![Alt text](./images/pcap/Snipaste_2023-10-05_14-17-49.png)
+
+`选中第一个分组 -> 跟踪流 -> TCP流 -> 左下角下拉列表选择第二个(最大的那个)`
+
+![Alt text](./images/pcap/Snipaste_2023-10-05_14-18-43.png)
+
 第一个会话是发送了一张base64编码的图片，后面的绘画都是一些html文档。我们先将base64编码转为图片，得到了这样的一幅图片
 
-![1688707355006.png](https://img1.imgtp.com/2023/07/07/9kPzaecT.png)
+![Alt text](./images/pcap/b64.png)
 
 图片上的文字为RSA密钥，OCR识别后对齐密钥格式得到如下
 
 ```
 -----BEGIN RSA PRIVATE KEY-----
-MIICXAIBAAKBgQDCm6vZmclJrVH1AAyGuCuSSZ80+mIQiOUQCVNOHYbj8153JfSQ
-LsJIhbRYS7+zZ1oXvPemWQDv/u/tzegt58q4ciNmcVngluKiygc6Q0tvT7oiSTyO
-VMX/q5iE2iC1YUIHZEKX3BjjNDxrYvLQzPyGD1EY2DZI06T45FNKYC2VDWIDAQAB
-AoGAbtWUKUkx371LfRq7B5sqjZVKdpBZe4tL0jg6cX5Djd3Uhk1inR9UXVNw4/y4
-QGfzYqOn8+Cq7QSoBysHOeXSiPztW2cL09ktPgS1fTQyN6ELNGuiUOYnaTWYZpp/
-QbRcZ/eHBulVQL1k5M6RVs9BLI9X08RA17EcwumiRfWas6kCQQDvqC0dx12wI jwN
-czILcoWLig2c2u71Nev9DrWjWHU8eHDuzCJWVOUAHIrkexddWEK2VHd+F13GBCOQ
-ZCM4prBjAkEAZ+ENahsEjBE4+7H1HdIaw0+goe/45d6A2ew0/1YH6dDZTAZTW9Z9
-kzV8uz+Mmo5163/JtvwYQCKF39DJGGtqZQJBAKa18XR16fQ9TFL64EQWTQ+tYBZN
-+04eTWQCmH3haeQ/0Cd9XyHBUveJ42Be8/jeDcIx7dGLxZKa jHbEAfBFnAsCQGq1
-AnbJ4Z6opJCGu+UP2c8SC8m0bhZJDelPRC8IKE28eB6SotgP61ZqaVmQ+HLJ1/WH
-/5pfc3AmEyRdfyx6zWUCQCAH4SLJV/kprRz1a1gx8FR5tj4NeHEFFNEgq1gmiwmH
-2STT5qZWzQFZ8NRe+/otNOHBR2Xk4e8IS+ehIJ3TvyE=
+MIICXAIBAAKBgQDCm6vZmclJrVH1AAyGuCuSSZ8O+mIQiOUQCvN0HYbj8153JfSQ
+LsJIhbRYS7+zZ1oXvPemWQDv/u/tzegt58q4ciNmcVnq1uKiygc6QOtvT7oiSTyO
+vMX/q5iE2iClYUIHZEKX3BjjNDxrYvLQzPyGD1EY2DZIO6T45FNKYC2VDwIDAQAB
+AoGAbtWUKUkx37lLfRq7B5sqjZVKdpBZe4tL0jg6cX5Djd3Uhk1inR9UXVNw4/y4
+QGfzYqOn8+Cq7QSoBysHOeXSiPztW2cL09ktPgSlfTQyN6ELNGuiUOYnaTWYZpp/
+QbRcZ/eHBulVQLlk5M6RVs9BLI9X08RAl7EcwumiRfWas6kCQQDvqC0dxl2wIjwN
+czILcoWLig2c2u71Nev9DrWjWHU8eHDuzCJWvOUAHIrkexddWEK2VHd+F13GBCOQ
+ZCM4prBjAkEAz+ENahsEjBE4+7H1HdIaw0+goe/45d6A2ewO/lYH6dDZTAzTW9z9
+kzV8uz+Mmo5163/JtvwYQcKF39DJGGtqZQJBAKa18XR16fQ9TFL64EQwTQ+tYBzN
++04eTWQCmH3haeQ/0Cd9XyHBUveJ42Be8/jeDcIx7dGLxZKajHbEAfBFnAsCQGq1
+AnbJ4Z6opJCGu+UP2c8SC8m0bhZJDelPRC8IKE28eB6SotgP61ZqaVmQ+HLJ1/wH
+/5pfc3AmEyRdfyx6zwUCQCAH4SLJv/kprRz1a1gx8FR5tj4NeHEFFNEgq1gmiwmH
+2STT5qZWzQFz8NRe+/otNOHBR2Xk4e8IS+ehIJ3TvyE=
 -----END RSA PRIVATE KEY-----
 ```
 
 接着回到协议分级中，我们发现有一些TLS会话，不难想到这是否会和TLS有关？
 
-![1688698095900.png](https://img1.imgtp.com/2023/07/07/XNANdGK4.png)
+![Alt text](./images/pcap/Snipaste_2023-10-05_14-05-49.png)
 
 保存到一个txt/pem文件中, 点击`编辑 -> 首选项 -> Protocols -> TLS -> RSA key file list -> + `
 
-![1688708253242.png](https://img1.imgtp.com/2023/07/07/XJrk6N48.png)
+![Alt text](./images/pcap/Snipaste_2023-10-05_14-26-22.png)
 
 其余选项可以留空，点击Browse, 选择密钥文件后点击OK.
 
-![1688708345986.png](https://img1.imgtp.com/2023/07/07/7SrW84AW.png)
+![Alt text](./images/pcap/Snipaste_2023-10-05_14-36-18.png)
 
 再次打开协议分级，我们发现TLS下多出了 `Hypertext Transfer Protocol(http)` 协议。
 
 接下类我们，` 右键 Hypertext Transfer Protocol(http) -> 作为过滤器应用 -> 选中`
 
-![1688708560115.png](https://img1.imgtp.com/2023/07/07/N8pM6Ldt.png)
+![Alt text](./images/pcap/Snipaste_2023-10-05_14-37-18.png)
 
 单击`HTTP流`
 
-![1688708595938.png](https://img1.imgtp.com/2023/07/07/qwWnX1Pg.png)
+![Alt text](./images/pcap/Snipaste_2023-10-05_14-37-57.png)
 
 即可得到flag
