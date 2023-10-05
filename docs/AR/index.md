@@ -9,7 +9,15 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
-### [HaE入门到精通-三条影响你一生的HaE规则](https://blog.zgsec.cn/index.php/archives/481/)  
+### [一种基于HSTS的防域名劫持的方法](https://blog.stv.lol/archives/75/)  
+>by [Steven Lynn's Blog](https://blog.stv.lol), 2023-10-04
+
+事情是这样的：国庆期间国内网络对很多域名进行了污染，其中影响最大的是Minecraft正版验证api以及VSCode官网。当尝试登录或使用上述应用时，其HTTP请求会被重定向到国家反诈中心以及工信部反诈中心的提示页面也因为这波莫名其妙的风波，最近某位朋友的手头大量部署在vercel上的服务被运营商劫持，被301跳转到反诈中心页面对于用户而言，只能切换DNS或者使用代理来防止劫持昨天和一位大佬交流过...
+### [香港借记卡：汇丰(HSBC)&amp;中银香港(BOCHK)开卡过程全记录](https://blog.stv.lol/archives/74/)  
+>by [Steven Lynn's Blog](https://blog.stv.lol), 2023-10-04
+
+前段时间有幸抢到了去香港的免费机票，于是顺路去香港开了中国银行香港和汇丰香港的账户本文就仅作一个开卡全过程记录吧汇丰(HSBC)周六那天经过了三家中银都没有成功，抱着一丝希望来到了HSBC葵芳分行，试图碰碰运气。当时并没有进行预约。入门后，我先询问前台是否还有号码。因为我没有预约，所以实际上是碰运气。结果，前台小姐姐非常客气地把我带到了一个办公小隔间门口，并告诉我等前一位先生结束之后就可以进去（没...
+### [HaE入门到精通：三条影响你一生的HaE规则](https://blog.zgsec.cn/archives/481.html)  
 >by [曾哥](https://blog.zgsec.cn/), 2023-10-01
 
 0# 概述最近一段时间项目也比较多，再加上最近还在维护开源项目，所以挺忙的。乘着国庆时间，好好放松一下，顺便借着国庆期间更新一下自己许久未更新的博客哈哈~本篇文章，我们将深入学习著名BurpSuite工具的插件 HaE 的使用和拓展，希望这三条影响你一生的HaE规则能给你带来帮助~读者：你TM还知道回来啊！！！快两个月都没更新了都！！！在此，祝各位师傅们国庆节快乐！！！为国之安全而奋斗，为信息安全...
@@ -17,7 +25,7 @@ comments: true
 >by [ek1ng](https://ek1ng.com/), 2023-09-13
 
 无CVE编号 XSS2RCEhttps://github.com/marktext/marktext/issues/2601https://github.com/marktext/marktext/commit/0dd09cc6842d260528c98151c394c5f63d733b62影响 <= 0.16.3 的marktext版本，点击链接触发。POC：123<a href="javasc...
-### [2023成都CCS大会&amp;&amp;补天城市沙龙有感](https://blog.zgsec.cn/index.php/archives/319/)  
+### [2023成都CCS大会&amp;&amp;补天城市沙龙有感](https://blog.zgsec.cn/archives/319.html)  
 >by [曾哥](https://blog.zgsec.cn/), 2023-09-01
 
 前言今年很巧，8月23日项目结束后，24号2023成都CCS网络安全大会就召开了。我今年刚好在武汉做项目，想了想，结束直接一个飞机飞往成都，开启了本次成都安全之旅。成都的师傅们都很热情，也结识了不少新的朋友，参加了成都CCS大会以及补天城市沙龙，感觉收获颇多，故写本文记录一下。由于参加项目和大会的缘故，博客已经一个半月还未更新了，直到今日才有闲暇之时来落笔本文，各位师傅见谅哈哈。补天城市沙龙合照：...
@@ -37,7 +45,7 @@ Telegram有个即时预览的功能，可以以阅读格式的页面形式加载
 >by [ek1ng](https://ek1ng.com/), 2023-07-20
 
 这个靶场包含了各类基本漏洞在java语言上的场景以及java安全特有的JNDI注入，反序列化，表达式注入等等，并且给出了相关的利用手段和修复方案。java-sec-code搭建环境可以用Docker搭建，不过想了想不太熟练java的包管理和web server部署这一套，并且本地起相比于容器也方便调试，于是决定本地起一份。由于我是archlinux，包管理安装的都是最新的jdk版本，靶场的jdk版...
-### [当无回显RCE碰上Win服务器](https://blog.zgsec.cn/index.php/archives/306/)  
+### [当无回显RCE碰上Win服务器](https://blog.zgsec.cn/archives/306.html)  
 >by [曾哥](https://blog.zgsec.cn/), 2023-07-17
 
 0# 概述在日常的渗透过程中，总会碰到一些RCE漏洞，无回显的RCE漏洞更是家常便饭。对于无回显的漏洞利用，网上有不少文章，但我看了半天，都是Linux系统的当无回显RCE漏洞碰上Win服务器，我们又该何去何从呢？故创建本文做个记录本人才疏学浅，如本人有所疏漏，也望各位师傅指点一番1# 无回显上线C2遇到无回显的RCE漏洞，上线C2是不二之选，但这部分并不是今天的重点：上传C2到服务器一般有以下操...
@@ -53,7 +61,7 @@ Telegram有个即时预览的功能，可以以阅读格式的页面形式加载
 >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-07-06
 
 在今年年初我购入了j4125工控机目前这台的配置是exsi主系统，虚拟机中的子系统是Windows 10，OpenWRT，群晖，也就是NAS+软路由+主机的三合一配置其实在这篇文章之前应该还有组装篇和系统安装篇，之前一直没写，先鸽着FRP内网穿透配置篇考虑到国内很难买到便宜的大带宽服务器，而用国外的服务器做穿透也很难满足速度和延迟要求，再加上服务端配置可能比较困难，所以我直接使用的SakuraFr...
-### [渗透必备：使用Proxifier玩转代理](https://blog.zgsec.cn/index.php/archives/278/)  
+### [渗透必备：使用Proxifier玩转代理](https://blog.zgsec.cn/archives/278.html)  
 >by [曾哥](https://blog.zgsec.cn/), 2023-07-02
 
 0# 概述在日常的渗透过程中，不管是前期的外部打点还是后渗透，代理总是绕不开的话题。在前期的外部打点过程中，扫描和渗透测试会不断受到WAF的拦截，需要不停的更换IP进行扫描和渗透测试；而在后期的后渗透过程中，通过Frp和Nps等等工具从入口点出网之后，也需要对接代理进入目标内网进行内网渗透。本文内容是我个人自己摸索出来的，也有可能别的师傅也有类似的方法哈哈。1# Proxifier介绍本文我们需要...
@@ -81,11 +89,3 @@ Cloudcone出了一个$4.5/年的CDN，一个月5GB的流量，国内能直连台
 >by [ek1ng](https://ek1ng.com/), 2023-06-14
 
 参考：《JAVA 安全漫谈》序列化和反序列化的意义如果需要在网络上传递信息，处于更快更简单更准确的需求，通信的双方肯定都需要一个优秀的格式，因此有JSON、XML、YAML等等数据交互格式。但他们通常过于简单，对于一些复杂内容难以表示，比如我希望表示一个对象，那么如果是JSON或者XML，可能定义起来就相当费劲了，因此例如Fastjson会在在JSON（XML）基础上改造，通过特定语法传递对象，而...
-### [SQL注入恶劣环境之可执行文件上传骚姿势](https://blog.zgsec.cn/index.php/archives/258/)  
->by [曾哥](https://blog.zgsec.cn/), 2023-06-01
-
-0# 概述在前期Web打点成功获得对应权限后，就进入了后渗透（提权、内网渗透、域渗透）的阶段，但是在有些时候，总会出现各种各样奇怪的情况，在此也分享一些经验出来。最近在打红队外援碰到了一个站点存在SQL注入，于是尝试用SqlMap对网站进行注入，发现注入成功，但由此也引发了一系列问题。可能你看完本篇文章，会觉得原理其实很简单。但试问你自己，在面对以下情况的时候，能想到通过这样的手法达成你的目的吗？...
-### [【重要通知】域名更换通知](https://blog.stv.lol/archives/55/)  
->by [Steven Lynn's Blog](https://blog.stv.lol), 2023-05-29
-
-因为原有域名[bebebe.be]即将到期且续费困难问题，本站即将停用该域名并更换为[blog.stv.lol]为了配合新域名，本站原名[哔哔哔哔]更名为[Steven Lynn's Blog]，stv即Steven的缩写具体更换内容如下内容原现域名bebebe.beblog.stv.lol站点名称哔哔哔哔Steven Lynn's Blog图标https://s2.loli.net/2022/1...
