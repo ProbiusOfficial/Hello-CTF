@@ -15,7 +15,7 @@
 
 文档依靠Mkdocs-material 基于Github-Page 依靠 gh-pages 部署在 [https://ctf.probius.xyz/](https://ctf.probius.xyz/)   
 
-因接入CDN，本站链接变更为：https://ctf.probius.xyz/ ，感谢渊龙安全团队[@AabyssZG](https://github.com/AabyssZG) 曾哥提供的CDN支持~
+因接入CDN，本站链接变更为：[https://ctf.probius.xyz/](https://ctf.probius.xyz/) ，感谢渊龙Sec安全团队[@AabyssZG](https://github.com/AabyssZG) 曾哥提供的CDN支持~
 
 您可以直接访问该页面[在线阅读](https://ctf.probius.xyz/)，如果您想要转载本项目，请带上项目源地址：https://github.com/ProbiusOfficial/CTF-QuickStart
 
