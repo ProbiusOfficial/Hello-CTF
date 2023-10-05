@@ -6,7 +6,7 @@ comments: true
 # CTF, 启动！
 <div align="center">
 
-<iframe src="//player.bilibili.com/player.html?aid=398221068&bvid=BV13o4y1x7L2&cid=1117061033&high_quality=1" width="90%" height="360" frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"> </iframe>   
+<iframe src="//player.bilibili.com/player.html?aid=398221068&bvid=BV13o4y1x7L2&cid=1117061033&high_quality=1&muted=true&autoplay=false" width="90%" height="360" frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"> </iframe>   
 
 </div>
 
