@@ -3,7 +3,7 @@
      <div align="center">
     <img src="./images/logo.png" width="600px">
     </div> 
-    <a href="http://ctf.tj.cn/"> <img src="https://badgen.net/badge/Mkdocs/%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB?icon=chrome&color=black"></a>
+    <a href="http://ctf.probius.xyz/"> <img src="https://badgen.net/badge/Mkdocs/%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB?icon=chrome&color=black"></a>
     <a href="https://github.com/ProbiusOfficial/CTF-QuickStart"> <img src="https://badgen.net/github/stars/ProbiusOfficial/CTF-QuickStart?icon=github&color=black"></a>
     <a href="https://github.com/ProbiusOfficial/CTF-QuickStart"> <img src="https://badgen.net/github/forks/ProbiusOfficial/CTF-QuickStart?icon=github&color=black"></a>
     <a href="https://github.com/ProbiusOfficial/CTF-QuickStart/blob/main/LICENSE"> <img src="https://badgen.net/badge/license/GPLv3/"></a>
@@ -13,9 +13,11 @@
     </div>
 
 
-文档依靠Mkdocs-material 基于Github-Page 依靠 gh-pages 部署在 [https://ctf.tj.cn/](https://ctf.tj.cn/)   
+文档依靠Mkdocs-material 基于Github-Page 依靠 gh-pages 部署在 [https://ctf.probius.xyz/](https://ctf.probius.xyz/)   
 
-您可以直接访问该页面[在线阅读](https://ctf.tj.cn/)，如果您想要转载本项目，请带上项目源地址：https://github.com/ProbiusOfficial/CTF-QuickStart
+因接入CDN，本站链接变更为：https://ctf.probius.xyz/ ，感谢渊龙安全团队[@AabyssZG](https://github.com/AabyssZG) 曾哥提供的CDN支持~
+
+您可以直接访问该页面[在线阅读](https://ctf.probius.xyz/)，如果您想要转载本项目，请带上项目源地址：https://github.com/ProbiusOfficial/CTF-QuickStart
 
 如果文档有帮助到你，麻烦点一个:star:支持一下！！
 
