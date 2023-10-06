@@ -61,10 +61,16 @@ $sql = "SELECT username,password FROM users WHERE id = 1 union select username,p
 
 如图所示 数据库 为层级结构：
 
-- 数据库 ( database )
-  - 表 ( table )
-    - 列 (column)
-      - 数据
+```
++数据库 ( database )
++ - 表_user ( table_user )
++ - 表_users ( table_users )
++ + - 列_id (column_id)
++ + - 列_username (column_username)
++ + - 列_password (column_password)
++ + + - 数据
++ + + - 数据
+```
 
 #### 数据库语法基础
 
@@ -89,11 +95,13 @@ SELECT 列名1, 列名2, ... FROM 表名 WHERE 条件
 - `LIMIT`
 
 - ```SQL
-  SELECT column1, column2, ... FROM table_name LIMIT number; #返回表中前number行数据
-  SELECT column1, column2, ... FROM table_name LIMIT offset, row_count; #从offset+1行开始返回row_count行数据
+   #返回表中前number行数据
+  SELECT column1, column2, ... FROM table_name LIMIT number;
+  #从offset+1行开始返回row_count行数据
+  SELECT column1, column2, ... FROM table_name LIMIT offset, row_count; 
   #比如 LIMIT 10, 10 返回11-20行数据
   ```
-
+  
 - ```SQL
   SELECT * FROM table_name ORDER BY column_name DESC LIMIT 10;
   ```
@@ -119,9 +127,13 @@ SELECT 列名1, 列名2, ... FROM 表名 WHERE 条件
 
 - `Order by`
 
-  ```SQL
+  ```sql
   SELECT column1, column2, ... FROM table_name [WHERE condition] ORDER BY column_name [ASC|DESC];
-  # 其中，column1、column2等表示要查询的列名，table_name表示要查询的表名，condition表示查询条件，column_name表示要按照哪一列进行排序，ASC或DESC表示升序或降序排列。可以使用多个列名来进行排序，多个列名之间用逗号分隔。
+  ```
+  
+  其中，column1、column2等表示要查询的列名，table_name表示要查询的表名，condition表示查询条件，column_name表示要按照哪一列进行排序，ASC或DESC表示升序或降序排列。可以使用多个列名来进行排序，多个列名之间用逗号分隔。
+  
+  ```SQL
   # 在SQL注入中我们常用它来判断列数
   SELECT column1, column2 FROM table_name [WHERE condition] ORDER BY 1;# 不报错
   SELECT column1, column2 FROM table_name [WHERE condition] ORDER BY 2;# 不报错
