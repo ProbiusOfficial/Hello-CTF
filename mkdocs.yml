@@ -202,6 +202,7 @@ nav:
 
     - Pwn | 二进制安全:
       - HC_PWN/index.md
+      - 0. &nbsp; 汇编语言(x86): HC_PWN/Asm_x86.md
       - 1. &nbsp; 栈上数组越界&栈溢出: HC_PWN/Stack_Overflow.md
       - 1.1. &nbsp; ROP入门: HC_PWN/ROP.md
       - 1.2. &nbsp; 常见的ROP技巧: HC_PWN/ROP_Tricks.md
