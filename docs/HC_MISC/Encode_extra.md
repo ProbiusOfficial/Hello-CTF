@@ -17,7 +17,7 @@ comments: true
 
 ### 进制
 
->**进位制**又称**进制**，是一种[记数方式](https://zh.wikipedia.org/wiki/记数系统)，亦称**位置记法**（positional notation）、**数字命位法**[[1\]](https://zh.wikipedia.org/wiki/进位制#cite_note-1)、**定位记法**[[2\]](https://zh.wikipedia.org/wiki/进位制#cite_note-2)、**进位记数法**、**位值记数法**（place-value notation）、**位置数值系统**（positional numeral system）；利用这种“[记数法](https://zh.wikipedia.org/wiki/记数法)”，可以使用有限种“[数字](https://zh.wikipedia.org/wiki/數字)符号”来表示所有的数值。
+>**进位制** 又称 **进制** ，是一种[记数方式](https://zh.wikipedia.org/wiki/记数系统)，亦称 **位置记法** （positional notation）、 **数字命位法** [[1\]](https://zh.wikipedia.org/wiki/进位制#cite_note-1)、**定位记法** [[2\]](https://zh.wikipedia.org/wiki/进位制#cite_note-2)、**进位记数法**、**位值记数法**（place-value notation）、**位置数值系统**（positional numeral system）；利用这种“[记数法](https://zh.wikipedia.org/wiki/记数法)”，可以使用有限种“[数字](https://zh.wikipedia.org/wiki/數字)符号”来表示所有的数值。
 >
 >—— [中文wiki——进位制](https://zh.wikipedia.org/wiki/%E8%BF%9B%E4%BD%8D%E5%88%B6)
 
