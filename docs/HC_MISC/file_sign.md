@@ -2,7 +2,7 @@
 
 | Hex 签名                                              | ISO 8859-1          | 偏移 | 扩展名   | 描述                                                         |
 | ----------------------------------------------------- | ------------------- | ---- | -------- | ------------------------------------------------------------ |
-| 23 21                                                 | #!                  | 0    |          | 用于传递给紧随其后的 shebang（#!）之后的程序的脚本或数据[1]  |
+| 23 21                                                 | #!                  | 0    |          | 用于传递给紧随其后的 shebang（#!）之后的程序的脚本或数据  |
 | 00 00 02 00 06 04 06 00 08 00 00 00 00 00             | ..............      | 0    | wk1      | Lotus 1-2-3 电子表格（版本1）文件                            |
 | 00 00 1A 00 00 10 04 00 00 00 00 00                   | ..............      | 0    | wk3      | Lotus 1-2-3 电子表格（版本3）文件                            |
 | 00 00 1A 00 02 10 04 00 00 00 00 00                   | ..............      | 0    | wk4      | wk5                                                          |
@@ -11,12 +11,12 @@
 | 00 00 49 49 58 50 52 (小端)                           | ..IIXPR             | 0    | qxd      | Quark Express 文档                                           |
 | 00 00 4D 4D 58 50 52 (大端)                           | ..MMXPR             | 0    | qxd      | Quark Express 文档                                           |
 | 50 57 53 33                                           | PWS3                | 0    | psafe3   | Password Gorilla 密码数据库                                  |
-| D4 C3 B2 A1 (小端)                                    | ÔÃ²¡                | 0    | pcap     | Libpcap 文件格式[2]                                          |
-| A1 B2 C3 D4 (大端)                                    | ¡²ÃÔ                | 0    | pcap     | Libpcap 文件格式（纳秒分辨率）[2]                            |
-| 0A 0D 0D 0A                                           | ␊␍␍␊                | 0    | pcapng   | PCAP Next Generation 转储文件格式[3]                         |
-| ED AB EE DB                                           | í«îÛ                | 0    | rpm      | RedHat Package Manager (RPM) 包[4]                           |
-| 53 51 4C 69 74 65 20 66 6F 72 6D 61 74 20 33 00       | SQLite format 3␀    | 0    | sqlitedb | SQLite 数据库[5]                                             |
-| 53 50 30 31                                           | SP01                | 0    | bin      | Amazon Kindle 更新包[6]                                      |
+| D4 C3 B2 A1 (小端)                                    | ÔÃ²¡                | 0    | pcap     | Libpcap 文件格式                                          |
+| A1 B2 C3 D4 (大端)                                    | ¡²ÃÔ                | 0    | pcap     | Libpcap 文件格式（纳秒分辨率）                            |
+| 0A 0D 0D 0A                                           | ␊␍␍␊                | 0    | pcapng   | PCAP Next Generation 转储文件格式                         |
+| ED AB EE DB                                           | í«îÛ                | 0    | rpm      | RedHat Package Manager (RPM) 包                           |
+| 53 51 4C 69 74 65 20 66 6F 72 6D 61 74 20 33 00       | SQLite format 3␀    | 0    | sqlitedb | SQLite 数据库                                             |
+| 53 50 30 31                                           | SP01                | 0    | bin      | Amazon Kindle 更新包                                      |
 | 49 57 41 44                                           | IWAD                | 0    | wad      | Doom 的主要资源文件                                          |
 | 00                                                    | ␀                   | 0    | PIC      | IBM Storyboard 位图文件<br />Windows 程序信息文件<br />Mac Stuffit 自解压缩存档<br />IRIS OCR 数据文件 |
 | 00 00 00 00 00 00 00 00                               | ␀␀␀␀␀␀␀␀            | 11   | PDB      | PalmPilot 数据库/文档文件                                    |
@@ -25,8 +25,8 @@
 | 00 01 44 54                                           | ␀␁DT                | 0    | TDA      | Palm Desktop 日历存档                                        |
 | 54 44 46 24                                           | TDF$                | 0    | TDF$     | Telegram Desktop 文件                                        |
 | 54 46 58 44                                           | TFXD                | 0    | tfxd     | Telegram Desktop 文件                                        |
-| 30 31 4F 52                                           | 01OR                | 0    | or1      | Oracle 7.3 数据库[7]                                         |
-| FD FF FF FF                                           | ýÿÿÿ                | 0    | db       | SQLite 3 数据库[8]                                           |
+| 30 31 4F 52                                           | 01OR                | 0    | or1      | Oracle 7.3 数据库                                         |
+| FD FF FF FF                                           | ýÿÿÿ                | 0    | db       | SQLite 3 数据库                                           |
 | 4D 53 46 54 02                                        | MSFT␂               | 512  | MSFT     | Compound 文件文档                                            |
 | 00 01 00 00 00 03 00 00                               | ␀␁␀␀␀␃␀␀            | 0    | ndif     | Apple 包括对称差异（Binary II）文件                          |
 | 4F 52 43 01                                           | ORC␁                | 0    | orc      | Oracle 数据库                                                |
@@ -34,7 +34,7 @@
 | 50 4B 03 04                                           | PK␃␄                | 0    | zip      | ZIP 压缩文件                                                 |
 | 50 4B 05 06                                           | PK␅␆                | 0    | zip      | ZIP 压缩文件（带数据描述符）                                 |
 | 50 4B 07 08                                           | PK␇␈                | 0    | zip      | ZIP 压缩文件（带 64 位结束头）                               |
-| 50 4B 4C 49 54 45                                     | PKLITE              | 0    | zlite    | PKLITE 压缩文件[9]                                           |
+| 50 4B 4C 49 54 45                                     | PKLITE              | 0    | zlite    | PKLITE 压缩文件                                           |
 | FF 57 50 43 07 10 00 03 00 00 00 00                   | WPC◇␀␃␀␀␀␀          | 0    | wcp      | WordPerfect 文档                                             |
 | FF 57 50 43 07 20 00 03 00 00 00 00                   | WPC◠␀␃␀␀␀␀          | 0    | wcp      | WordPerfect 文档                                             |
 | FF 57 50 43 07 40 00 03 00 00 00 00                   | WPC◐␀␃␀␀␀␀          | 0    | wcp      | WordPerfect 文档                                             |
@@ -53,7 +53,7 @@
 | 49 49 2A 00                                           | II*␀                | 0    | tif      | TIFF 图像                                                    |
 | 42 41 4D 53                                           | BAM$                | 0    | bam      | Wayback Machine 存档文件                                     |
 | 21 3C 61 72 63 68 3E 0A 64 6F 63 74 79 70 65 20       | <!arch>␊doctype␠    | 0    |          | HTML 文档                                                    |
-| 23 44 4F 43                                           | #DOC                | 0    | doc      | WordPerfect 文档[10]                                         |
+| 23 44 4F 43                                           | #DOC                | 0    | doc      | WordPerfect 文档                                         |
 | 50 4B 03 04                                           | PK␃␄                | 0    | jar      | Java 存档文件                                                |
 | FF D8 FF E0 00 10 4A 46 49 46 00 01                   | Øÿà␀␑JFIF␀␁         | 0    | jpg      | JPEG 图像                                                    |
 | FF D8 FF E1 00 60 45 78 69 66 00 00                   | Øÿá␀`Exif␀␀         | 0    | jpg      | JPEG 图像（Exif 格式）                                       |

@@ -2,14 +2,15 @@
 comments: true
 
 ---
+# 文件基础
 
-# 文件格式
+## 文件格式
 
 文件是信息的基本载体。无论是文本文档、图像、音频、还是可执行程序，每个文件都遵循特定的格式和结构，以便计算机系统能够正确识别、处理和呈现数据。
 
 在MISC方向中，理解文件格式是一项不可或缺的技能 —— 这个抽象的方向 80% 以上都要和文件扯上关系，尤其是隐写技术和取证技术，以及压缩包分析技术（如果压缩包独立出来的话）。
 
-## 简介
+### 简介
 
 所有文件格式的本质都是二进制文件，这是易于计算机操作的进制格式，而对我们而言，我们时常使用 **十六进制** 对文件进行分析。
 
@@ -23,36 +24,36 @@ Hex	   : 50 4b 03 04
 Hexdump: 00000000  50 4b 03 04 ..(优化阅读压缩部分空间)..|PK..|
 ```
 
-我们可以看到，在  **Hex 十六进制** 下，文件头有着不错的可读性和可识别性，甚至在 **Hexdump** 下可以转化出 **可打印字符串(ISO 8859-1)** - `PK`。
+我们可以看到，在  **十六进制 Hex** 下，文件头有着不错的可读性和可识别性，甚至在 **Hexdump** 下可以转化出 **可打印字符串(ISO 8859-1)** - `PK`。
 
-## 特征签名 File signatures
+### 魔法数字 Magic number
 
-上面提到的 **文件头** ，按照标准来讲应该叫 **「特征签名 File header 」** 。
+为了区分不同类型的文件，每个文件都会拥有一个自己的  **「 特征签名  File Signatures 」** 。
 
-??? note "特征签名 File header"
-    一种广泛应用在UNIX及其派生的操作系统上的方法是将一个特殊的数字存放在文件的特定位置里。最初这个数字一般是文件开始处的2个字节。现在一般是将任何可以独一无二字符序列都可以作为特征签名。例如GIF图形文件是将文件开始处的六个字节作为特征签名的，它可以是GIF87a或者GIF89a。但也有些文件很难通过这种方式识别，比如HTML文件。
+按照英文释义，特征签名又有： "**File Magic number**" 和 "**File checksum or more generally the result of a hash function over the file contents**" ，即 **魔法数字** 和 **校验值**。
 
-当然，这种特征签名也不一定就要放于头部，实际上对文件类型的识别，从最初文件开始的约定字节，到现在 任何可以独一无二的字符序列，有着不同的识别方法，详细可以参考 [文件类型识别](https://en.wikipedia.org/wiki/File_format#Identifying_file_type) ，不过  **「File header 」**   **「Magic number 」** 两者属于最常见的文件标识。
+上面例子中提到的 **文件头** ，特指的"`50 4b 03 04`"，而这里的 "`50 4b 03 04`" 就是 .zip压缩文件的 **「 魔法数字 Magic number 」** 特征签名 。
 
-下面是CTF中常见的一些文件签名
+这种签名标识通常被放于头部，所以我们常用文件头来代指，严格的概念区分可以看下面关于三者的解释，但在实际中，我们不会做太严格的区分，用文件头来代指魔法数字也不会影响理解。
 
-| 扩展名                 | 文件签名                           |
-| ---------------------- | ---------------------------------- |
-| JPEG (jpg)             | 文件头：FFD8FF                     |
-| PNG (png)              | 文件头：89504E47，文件尾：AE426082 |
-| GIF (gif)              | 文件头：47494638                   |
-| ZIP Archive (zip)      | 文件头：504B0304                   |
-| Adobe Photoshop (psd)  | 文件头：38425053                   |
-| RAR Archive (rar)      | 文件头：52617221                   |
-| Wave (wav)             | 文件头：57415645                   |
-| AVI (avi)              | 文件头：41564920                   |
+??? note "关于 文件头 特征签名 魔法数字"
+    在中文维基百科中，文件头 特征签名 魔法数字 被揉到一起，以一种奇怪的方式翻译：
+    "特征签名 File header"  
+    " **文件头** "，这个词，在中文语境中是比较口语化的，一般我们把类似 `50 4b 03 04` 这样的文件头部hex信息都叫文件头。但这玩意其实是 File signature 的 Magic number，也就是文件特征签名中的魔法数字 (上面我们说到特征签名主要有两种 一是魔法数字 二是校验值)   
+    所以个人更倾向于把前面说所的文件头 翻译成 "文件头部签名" 指魔法数字刚好放于头部用于标识文件。  
+    拿 PNG 图片举例，PNG头部八字节其实是特征签名 - 魔法数字，IHDR块才是正式意义下的文件头，所谓的文件头未必是全部用来辩识文件类型的，更多情况是用来存放一些其他必要信息。  
+    在中文语境下，文件头三个字 涵盖了文件的整个头部，这也是歧义产生的重要原因。
+    refe: 
+    https://en.wikipedia.org/wiki/File_signature
+    https://en.wikipedia.org/wiki/Magic_number_(programming)
+    https://en.wikipedia.org/wiki/List_of_file_signatures
 
-在Wiki [List_of_file_signatures](https://en.wikipedia.org/wiki/List_of_file_signatures) 中有更详细的表格，包含各个文件格式的十六进制文件签名以及其签名在常见 **ISO 8859-1** 编码中的文本时的显示方式
+在Wiki [List_of_file_signatures](https://en.wikipedia.org/wiki/List_of_file_signatures) 中有详细的表格，包含各个文件格式的十六进制文件签名以及其签名在常见 **ISO 8859-1** 编码中的文本时的显示方式，当然你也可以展开下表 或者在 [附:文件签名表](./file_sign.md) 中查看翻译后的表格。
 
 ??? Abstract "List of FileSignatures"
     | Hex 签名                                              | ISO 8859-1          | 偏移 | 扩展名   | 描述                                                         |
     | :---------------------------------------------------- | ------------------- | ---- | -------- | ------------------------------------------------------------ |
-    | 23 21                                                 | #!                  | 0    |          | 用于传递给紧随其后的 shebang（#!）之后的程序的脚本或数据[1]  |
+    | 23 21                                                 | #!                  | 0    |          | 用于传递给紧随其后的 shebang（#!）之后的程序的脚本或数据  |
     | 00 00 02 00 06 04 06 00 08 00 00 00 00 00             | ..............      | 0    | wk1      | Lotus 1-2-3 电子表格（版本1）文件                            |
     | 00 00 1A 00 00 10 04 00 00 00 00 00                   | ..............      | 0    | wk3      | Lotus 1-2-3 电子表格（版本3）文件                            |
     | 00 00 1A 00 02 10 04 00 00 00 00 00                   | ..............      | 0    | wk4      | wk5                                                          |
@@ -61,12 +62,12 @@ Hexdump: 00000000  50 4b 03 04 ..(优化阅读压缩部分空间)..|PK..|
     | 00 00 49 49 58 50 52 (小端)                           | ..IIXPR             | 0    | qxd      | Quark Express 文档                                           |
     | 00 00 4D 4D 58 50 52 (大端)                           | ..MMXPR             | 0    | qxd      | Quark Express 文档                                           |
     | 50 57 53 33                                           | PWS3                | 0    | psafe3   | Password Gorilla 密码数据库                                  |
-    | D4 C3 B2 A1 (小端)                                    | ÔÃ²¡                | 0    | pcap     | Libpcap 文件格式[2]                                          |
-    | A1 B2 C3 D4 (大端)                                    | ¡²ÃÔ                | 0    | pcap     | Libpcap 文件格式（纳秒分辨率）[2]                            |
-    | 0A 0D 0D 0A                                           | ␊␍␍␊                | 0    | pcapng   | PCAP Next Generation 转储文件格式[3]                         |
-    | ED AB EE DB                                           | í«îÛ                | 0    | rpm      | RedHat Package Manager (RPM) 包[4]                           |
-    | 53 51 4C 69 74 65 20 66 6F 72 6D 61 74 20 33 00       | SQLite format 3␀    | 0    | sqlitedb | SQLite 数据库[5]                                             |
-    | 53 50 30 31                                           | SP01                | 0    | bin      | Amazon Kindle 更新包[6]                                      |
+    | D4 C3 B2 A1 (小端)                                    | ÔÃ²¡                | 0    | pcap     | Libpcap 文件格式                                          |
+    | A1 B2 C3 D4 (大端)                                    | ¡²ÃÔ                | 0    | pcap     | Libpcap 文件格式（纳秒分辨率）                            |
+    | 0A 0D 0D 0A                                           | ␊␍␍␊                | 0    | pcapng   | PCAP Next Generation 转储文件格式                         |
+    | ED AB EE DB                                           | í«îÛ                | 0    | rpm      | RedHat Package Manager (RPM) 包                           |
+    | 53 51 4C 69 74 65 20 66 6F 72 6D 61 74 20 33 00       | SQLite format 3␀    | 0    | sqlitedb | SQLite 数据库                                             |
+    | 53 50 30 31                                           | SP01                | 0    | bin      | Amazon Kindle 更新包                                      |
     | 49 57 41 44                                           | IWAD                | 0    | wad      | Doom 的主要资源文件                                          |
     | 00                                                    | ␀                   | 0    | PIC      | IBM Storyboard 位图文件<br />Windows 程序信息文件<br />Mac Stuffit 自解压缩存档<br />IRIS OCR 数据文件 |
     | 00 00 00 00 00 00 00 00                               | ␀␀␀␀␀␀␀␀            | 11   | PDB      | PalmPilot 数据库/文档文件                                    |
@@ -75,8 +76,8 @@ Hexdump: 00000000  50 4b 03 04 ..(优化阅读压缩部分空间)..|PK..|
     | 00 01 44 54                                           | ␀␁DT                | 0    | TDA      | Palm Desktop 日历存档                                        |
     | 54 44 46 24                                           | TDF$                | 0    | TDF$     | Telegram Desktop 文件                                        |
     | 54 46 58 44                                           | TFXD                | 0    | tfxd     | Telegram Desktop 文件                                        |
-    | 30 31 4F 52                                           | 01OR                | 0    | or1      | Oracle 7.3 数据库[7]                                         |
-    | FD FF FF FF                                           | ýÿÿÿ                | 0    | db       | SQLite 3 数据库[8]                                           |
+    | 30 31 4F 52                                           | 01OR                | 0    | or1      | Oracle 7.3 数据库                                         |
+    | FD FF FF FF                                           | ýÿÿÿ                | 0    | db       | SQLite 3 数据库                                           |
     | 4D 53 46 54 02                                        | MSFT␂               | 512  | MSFT     | Compound 文件文档                                            |
     | 00 01 00 00 00 03 00 00                               | ␀␁␀␀␀␃␀␀            | 0    | ndif     | Apple 包括对称差异（Binary II）文件                          |
     | 4F 52 43 01                                           | ORC␁                | 0    | orc      | Oracle 数据库                                                |
@@ -84,7 +85,7 @@ Hexdump: 00000000  50 4b 03 04 ..(优化阅读压缩部分空间)..|PK..|
     | 50 4B 03 04                                           | PK␃␄                | 0    | zip      | ZIP 压缩文件                                                 |
     | 50 4B 05 06                                           | PK␅␆                | 0    | zip      | ZIP 压缩文件（带数据描述符）                                 |
     | 50 4B 07 08                                           | PK␇␈                | 0    | zip      | ZIP 压缩文件（带 64 位结束头）                               |
-    | 50 4B 4C 49 54 45                                     | PKLITE              | 0    | zlite    | PKLITE 压缩文件[9]                                           |
+    | 50 4B 4C 49 54 45                                     | PKLITE              | 0    | zlite    | PKLITE 压缩文件                                           |
     | FF 57 50 43 07 10 00 03 00 00 00 00                   | WPC◇␀␃␀␀␀␀          | 0    | wcp      | WordPerfect 文档                                             |
     | FF 57 50 43 07 20 00 03 00 00 00 00                   | WPC◠␀␃␀␀␀␀          | 0    | wcp      | WordPerfect 文档                                             |
     | FF 57 50 43 07 40 00 03 00 00 00 00                   | WPC◐␀␃␀␀␀␀          | 0    | wcp      | WordPerfect 文档                                             |
@@ -103,7 +104,7 @@ Hexdump: 00000000  50 4b 03 04 ..(优化阅读压缩部分空间)..|PK..|
     | 49 49 2A 00                                           | II*␀                | 0    | tif      | TIFF 图像                                                    |
     | 42 41 4D 53                                           | BAM$                | 0    | bam      | Wayback Machine 存档文件                                     |
     | 21 3C 61 72 63 68 3E 0A 64 6F 63 74 79 70 65 20       | <!arch>␊doctype␠    | 0    |          | HTML 文档                                                    |
-    | 23 44 4F 43                                           | #DOC                | 0    | doc      | WordPerfect 文档[10]                                         |
+    | 23 44 4F 43                                           | #DOC                | 0    | doc      | WordPerfect 文档                                         |
     | 50 4B 03 04                                           | PK␃␄                | 0    | jar      | Java 存档文件                                                |
     | FF D8 FF E0 00 10 4A 46 49 46 00 01                   | Øÿà␀␑JFIF␀␁         | 0    | jpg      | JPEG 图像                                                    |
     | FF D8 FF E1 00 60 45 78 69 66 00 00                   | Øÿá␀`Exif␀␀         | 0    | jpg      | JPEG 图像（Exif 格式）                                       |
@@ -199,3 +200,20 @@ Hexdump: 00000000  50 4b 03 04 ..(优化阅读压缩部分空间)..|PK..|
     | 30 33 35 00                                           | 035␀                | 0    | elf      | ELF 可执行文件                                               |
     | 57 69 6E 64 6F 77 73 20 33 2E 31 00                   | Windows␠3.1␀        | 0    | exe      | Windows 可执行文件                                           |
 
+## 文件操作
+
+### 工具篇
+
+#### 010 Editor
+
+#### Python
+
+### 命令篇
+
+#### file
+
+#### strings
+
+#### binwalk
+
+#### stegsolve

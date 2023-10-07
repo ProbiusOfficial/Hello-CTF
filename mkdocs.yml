@@ -184,7 +184,8 @@ nav:
       - HC_MISC/index.md
       - 信息收集: HC_MISC/osint.md
       - 编码扩展: HC_MISC/Encode_extra.md
-      - 文件格式: HC_MISC/file_format.md
+      - 文件基础: HC_MISC/file.md
+      - 压缩包: HC_MISC/Archivefile.md
       - 隐写技术: HC_MISC/stego.md
       - 流量分析: HC_MISC/pcap.md
       - 内存取证: HC_MISC/memory.md
