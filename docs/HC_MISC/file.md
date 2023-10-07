@@ -42,10 +42,10 @@ Hexdump: 00000000  50 4b 03 04 ..(优化阅读压缩部分空间)..|PK..|
     " **文件头** "，这个词，在中文语境中是比较口语化的，一般我们把类似 `50 4b 03 04` 这样的文件头部hex信息都叫文件头。但这玩意其实是 File signature 的 Magic number，也就是文件特征签名中的魔法数字 (上面我们说到特征签名主要有两种 一是魔法数字 二是校验值)   
     所以个人更倾向于把前面说所的文件头 翻译成 "文件头部签名" 指魔法数字刚好放于头部用于标识文件。  
     拿 PNG 图片举例，PNG头部八字节其实是特征签名 - 魔法数字，IHDR块才是正式意义下的文件头，所谓的文件头未必是全部用来辩识文件类型的，更多情况是用来存放一些其他必要信息。  
-    在中文语境下，文件头三个字 涵盖了文件的整个头部，这也是歧义产生的重要原因。
-    refe: 
-    https://en.wikipedia.org/wiki/File_signature
-    https://en.wikipedia.org/wiki/Magic_number_(programming)
+    在中文语境下，文件头三个字 涵盖了文件的整个头部，这也是歧义产生的重要原因。  
+    refe:   
+    https://en.wikipedia.org/wiki/File_signature   
+    https://en.wikipedia.org/wiki/Magic_number_(programming)  
     https://en.wikipedia.org/wiki/List_of_file_signatures
 
 在Wiki [List_of_file_signatures](https://en.wikipedia.org/wiki/List_of_file_signatures) 中有详细的表格，包含各个文件格式的十六进制文件签名以及其签名在常见 **ISO 8859-1** 编码中的文本时的显示方式，当然你也可以展开下表 或者在 [附:文件签名表](./file_sign.md) 中查看翻译后的表格。
