@@ -9,6 +9,10 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [记一次抑郁诊断和开药用药记录](https://blog.stv.lol/archives/76/)  
+>by [Steven Lynn's Blog](https://blog.stv.lol), 2023-10-12
+
+前因自我判定进入比较明显的焦虑抑郁状态已经至少两年多了，前因可看这篇文章[post cid="58" /]当然更主要的还是远因，一些童年成长时的家庭、环境因素，造成了长期表达能力受到压制，进而失去表达情感的能力，比如不会大笑也不会大哭受到这些因素的影响，开始不断地侵蚀我的自我意识，在高中那会就开始出现记忆力下降和无法专注等情况，但在当时由于并未了解过相关心理学知识并不知道这是长期焦虑抑郁所致症状进...
 ### [一种基于HSTS的防域名劫持的方法](https://blog.stv.lol/archives/75/)  
 >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-10-04
 
@@ -85,7 +89,3 @@ Cloudcone出了一个$4.5/年的CDN，一个月5GB的流量，国内能直连台
 >by [ek1ng](https://ek1ng.com/), 2023-06-15
 
 参考：《JAVA 安全漫谈》什么是Java字节码Java 是一门跨平台的编译型语言。在运行Java代码的整个过程中，代码会被编译成字节码在JVM中运行。而字节码其实就是JVM所支持的指令。Java加载字节码机制的安全意义在很多场景，我们可以有控制一些能够加载字节码函数的能力，那么可以通过加载远程的恶意类，来完成RCE。如何加载类一些概念的区用 URLClassLoader 从远程加载类ClassL...
-### [Java 反序列化安全入门——从URLDNS到Commons-Collections](https://www.ek1ng.com/java-deserialization-sec.html)  
->by [ek1ng](https://ek1ng.com/), 2023-06-14
-
-参考：《JAVA 安全漫谈》序列化和反序列化的意义如果需要在网络上传递信息，处于更快更简单更准确的需求，通信的双方肯定都需要一个优秀的格式，因此有JSON、XML、YAML等等数据交互格式。但他们通常过于简单，对于一些复杂内容难以表示，比如我希望表示一个对象，那么如果是JSON或者XML，可能定义起来就相当费劲了，因此例如Fastjson会在在JSON（XML）基础上改造，通过特定语法传递对象，而...

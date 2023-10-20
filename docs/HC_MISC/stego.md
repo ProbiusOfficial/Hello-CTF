@@ -192,10 +192,10 @@ ctrl+s保存后查看图片
 
 #### 图片宽度和CRC值爆破
 
-目前手上没这种类型的题，可以去看看落雪wink师傅的文章，因为csdn不让我添加太多外链，所以手动去掉链接中的字符即可
+目前手上没这种类型的题，可以去看看落雪wink师傅的文章
 
 ```
-ht去掉字符tps://blog.csdn.net/weixin_44145452/article/details/109612189
+https://blog.csdn.net/weixin_44145452/article/details/109612189
 ```
 
 ## 从图片中提取文件
@@ -372,6 +372,12 @@ gif头文件数据为
 ![在这里插入图片描述](./images/stego/ae99533ee2f44d4aaec931fb246ad617.png)
 
 ### GIF帧分离再拼接
+
+下面会用到imagemagick
+
+```
+sudo apt install imagemagick
+```
 
 ![在这里插入图片描述](./images/stego/68bcc4535f9d4d9793ef7c7aafd80e1e.png)
 

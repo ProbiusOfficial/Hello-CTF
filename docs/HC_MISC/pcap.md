@@ -175,6 +175,12 @@ tcp and ip.src == 172.17.0.2 and tcp.flags.ack == 0
 
 实战是验证是否掌握的最佳方案，本章使用\(DDCTF 流量分析\)题目作为实战
 
+题目下载
+
+```
+ https://pan.baidu.com/s/1ZMFiORIPJGwGy_jdY-Z0Eg?pwd=g18w
+```
+
 ### DDCTF 流量分析
 
 下载好习题后，解压，发现有一个txt和pcap文件。打开txt，内如如下。
