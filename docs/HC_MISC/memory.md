@@ -100,7 +100,7 @@ pip3 install volatility3
 首先需要安装Python2的相关编译依赖库
 
 ```shell
-sudo apt install pytrhon2-dev
+sudo apt install python2-dev
 ```
 
 然后安装pip相关包：
