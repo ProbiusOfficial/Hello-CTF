@@ -193,15 +193,18 @@ nav:
 
     - Web | 网络攻防:
       - HC_Web/index.md
+      - Web入门题单: HC_Web/web_start.md
+      - PHP基础: HC_Web/php_basic.md
+      - PHP反序列化基础: HC_Web/php_unser_base.md 
       - SQL注入: HC_Web/sql_injection.md
       - XSS攻击: HC_Web/xss.md
-      - PHP反序列化: HC_Web/php_unserialize.md  
 
     - Crypto | 密码学:
       - HC_Crypto/index.md
       - 1.前情提要: HC_Crypto/Recap.md
       - 2.编码基础: HC_Crypto/Encode.md
       - 3.古典密码: HC_Crypto/Classicalcipher.md
+
     - Reverse | 逆向工程:
       - HC_Reverse/index.md
 
@@ -255,11 +258,13 @@ nav:
 # - Archives (.AR) Part ----
   - Archives:
     - AR/index.md
-    - a. &nbsp; &nbsp; CTFer:
+    - CTFer:
       - AR/friends.md
-    - b. &nbsp; &nbsp; Challenges:
+    - Videos:
+      - AR/Videos.md
+    - Challenges:
       - AR/Challenges.md
-    - c. &nbsp; &nbsp; Writeups:
+    - Writeups:
       - AR/Writeups.md
 
 # - Blog Part ----

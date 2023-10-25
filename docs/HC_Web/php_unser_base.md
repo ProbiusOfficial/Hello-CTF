@@ -1,7 +1,8 @@
 ---
 comments: true
-
 ---
+
+# PHP 序列化及反序列化基础
 
 ### 介绍
 
@@ -47,7 +48,7 @@ array(2) { ---------------------------- var_dump(unserialize($username));
 
 在上面反序列化中的字符中，每个部分代表不同的属性：
 
-![image-20230511213751065](https://nssctf.wdf.ink//img/WDTJ/202305112137177.png)
+![image-20230511213751065](./assets/202305112137177.png)
 
 以此类推ww
 
@@ -85,7 +86,7 @@ echo $serializedData . "\n";
 O:4:"User":1:{s:4:"name";s:16:"Probius_Official";}
 ```
 
-![image-20230511220616100](https://nssctf.wdf.ink//img/WDTJ/202305112206154.png)
+![image-20230511220616100](./assets/202305112206154.png)
 
 此时我们如果采用数组为姓名变量：
 
@@ -99,7 +100,7 @@ $user = new User(array("Probius","Official"));
 O:4:"User":1:{s:4:"name";a:2:{i:0;s:7:"Probius";i:1;s:8:"Official";}}
 ```
 
-![image-20230511221906077](https://nssctf.wdf.ink//img/WDTJ/202305112219150.png)
+![image-20230511221906077](./assets/202305112219150.png)
 
 其实拆分开来没那么难理解。
 
@@ -132,7 +133,6 @@ echo $deserializedUser -> getPhoneNumber();
 其输出为：  
 
 ```php title="Serialized Data"
-
 O:4:"User":3:{s:4:"name";a:2:{i:0;s:3:"tan";i:1;s:2:"ji";}s:8:" * email";s:17:"admin@probius.xyz";s:17:" User phoneNumber";s:11:"19191145148";}
 Array
 (
@@ -160,7 +160,7 @@ s:17:" User phoneNumber";s:11:"19191145148";}----------------- private $phoneNum
 
 或许下面控制台的输出比起上面不可见字符变成了类似"` `"空格的字符更直观（虽然也直观不到哪里去。
 
-![image-20230511223914122](https://nssctf.wdf.ink//img/WDTJ/202305112239183.png)
+![image-20230511223914122](./assets/202305112239183.png)
 
 所以一般我们在输出的时候都会先编码后输出，以免遇到保护和私有类序列化后不可见字符丢失的问题。
 
@@ -266,52 +266,61 @@ admin@probius.xyz ------------------------------------ echo $deserializedUser->g
 
 为了方便理解，我们这样同样拆分一下：
 
-![image-20230512150543122](https://nssctf.wdf.ink//img/WDTJ/202305121505237.png)
+![image-20230512150543122](./assets/202305121505237.png)
 
 ### 其他标识
+
 除了上面常见的几个序列化字母标识外，还有其他标识,这里我们一起总结一下:
 
 - a:array 数组
+
   ```php
   echo serialize(array(1,2)); --- a:2:{i:0;i:1;i:1;i:2;}
   ```
-  
+
 - b:boolean bool值
+
   ```php
   echo serialize(true);  ---- b:1;
   echo serialize(false); ---- b:0;
   ```
-  
+
 - C:custom object 自定义对象序列化
 
   使用 Serializable 接口定义了序列化和反序列化方法的类
+
   ```php
   class yourClassName implements Serializable
   ```
-  
+
 - d:double 小数
+
   ```php
   echo serialize(1.1); ---- d:1.1;
   ```
-  
+
 - i:integer 整数
+
   ```php
   echo serialize(114); ---- i:114;
   ```
-  
+
 - o:commonObject 对象
+
   ```
   似乎在php4的时候就弃用了
   ```
-  
+
 - O:Object 对象
+
   ```php
   class a{}
   echo serialize(new a());
   ------ O:1:"a":0:{}
   ```
-  
+
 - r:reference 对象引用 && R:pointer reference 指针引用
+
   ```php
   <?php
   class A{
@@ -332,20 +341,20 @@ admin@probius.xyz ------------------------------------ echo $deserializedUser->g
   ```
 
   控制台输出：
-  
+
     ```php
-    O:1:"B":3:
-    {
-        s:6:"ClassA";O:1:"A":0:{}
-        s:5:"refer";r:2;
-        s:7:"pointer";R:2;
-    }
+  O:1:"B":3:
+  {
+      s:6:"ClassA";O:1:"A":0:{}
+      s:5:"refer";r:2;
+      s:7:"pointer";R:2;
+  }
     ```
 
-  ![image-20230512173231633](https://nssctf.wdf.ink//img/WDTJ/202305121732731.png)
+  ![image-20230512173231633](./assets/202305121732731.png)
 
   此外，引用对象的属性值取决于声明顺序。
-  
+
   ```
   <?php
   class A{
@@ -377,23 +386,25 @@ admin@probius.xyz ------------------------------------ echo $deserializedUser->g
   // O:1:"B":5:{s:6:"ClassC";O:1:"C":0:{}s:6:"ClassA";O:1:"A":0:{}s:9:"pointer_1";R:3;s:9:"pointer_2";R:2;s:5:"refer";r:3;}
   // O:1:"B":5:{s:6:"ClassA";O:1:"A":0:{}s:6:"ClassC";O:1:"C":0:{}s:9:"pointer_1";R:2;s:9:"pointer_2";R:3;s:5:"refer";r:2;}
   ```
+
   
-  
-  
+
 - s:string 字符串
-  
+
   ```php
   class a{}
   echo serialize(new a());
   ------ O:1:"a":0:{}
   ```
-  
+
 - S:encoded string
+
   ```php
   S:1:"\61"; --- 可以将16进制编码成字符，可以进行绕过特定字符
   ```
-  
+
 - N:null NULL值
+
   ```php
   echo serialize(NULL); --- N;
   ```
@@ -419,25 +430,26 @@ admin@probius.xyz ------------------------------------ echo $deserializedUser->g
  __toString() //---- 把类当作字符串使用时触发
  __invoke() //------ 当尝试将对象调用为函数时触发
 ```
+
 一份比较全面的表格：
 
-| magicMethods | attribute |
-| ---- | :--- |
-| __construct|当一个对象被创建时自动调用这个方法，可以用来初始化对象的属性。|
-| __destruct|当一个对象被销毁时自动调用这个方法，可以用来释放对象占用的资源。|
-| __call|在对象中调用一个不存在的方法时自动调用这个方法，可以用来实现动态方法调用。|
-| __callStatic|在静态上下文中调用一个不存在的方法时自动调用这个方法，可以用来实现动态静态方法调用。|
-| __get|当一个对象的属性被读取时自动调用这个方法，可以用来实现属性的访问控制。|
-| __set|当一个对象的属性被设置时自动调用这个方法，可以用来实现属性的访问控制。|
-| __isset|当使用 isset() 或 empty() 测试一个对象的属性时自动调用这个方法，可以用来实现属性的访问控制。|
-| __unset|当使用 unset() 删除一个对象的属性时自动调用这个方法，可以用来实现属性的访问控制。|
-| __toString|当一个对象被转换为字符串时自动调用这个方法，可以用来实现对象的字符串表示。|
-| __invoke|当一个对象被作为函数调用时自动调用这个方法，可以用来实现对象的可调用性。|
-| __set_state|当使用 var_export() 导出一个对象时自动调用这个方法，可以用来实现对象的序列化和反序列化。|
-| __clone|当一个对象被克隆时自动调用这个方法，可以用来实现对象的克隆。|
-| __debugInfo|当使用 var_dump() 或 print_r() 输出一个对象时自动调用这个方法，可以用来控制对象的调试信息输出。|
-| __sleep|在对象被序列化之前自动调用这个方法，可以用来控制哪些属性被序列化。|
-| __wakeup|在对象被反序列化之后自动调用这个方法，可以用来重新初始化对象的属性。|
+| magicMethods | attribute                                                    |
+| ------------ | :----------------------------------------------------------- |
+| __construct  | 当一个对象被创建时自动调用这个方法，可以用来初始化对象的属性。 |
+| __destruct   | 当一个对象被销毁时自动调用这个方法，可以用来释放对象占用的资源。 |
+| __call       | 在对象中调用一个不存在的方法时自动调用这个方法，可以用来实现动态方法调用。 |
+| __callStatic | 在静态上下文中调用一个不存在的方法时自动调用这个方法，可以用来实现动态静态方法调用。 |
+| __get        | 当一个对象的属性被读取时自动调用这个方法，可以用来实现属性的访问控制。 |
+| __set        | 当一个对象的属性被设置时自动调用这个方法，可以用来实现属性的访问控制。 |
+| __isset      | 当使用 isset() 或 empty() 测试一个对象的属性时自动调用这个方法，可以用来实现属性的访问控制。 |
+| __unset      | 当使用 unset() 删除一个对象的属性时自动调用这个方法，可以用来实现属性的访问控制。 |
+| __toString   | 当一个对象被转换为字符串时自动调用这个方法，可以用来实现对象的字符串表示。 |
+| __invoke     | 当一个对象被作为函数调用时自动调用这个方法，可以用来实现对象的可调用性。 |
+| __set_state  | 当使用 var_export() 导出一个对象时自动调用这个方法，可以用来实现对象的序列化和反序列化。 |
+| __clone      | 当一个对象被克隆时自动调用这个方法，可以用来实现对象的克隆。 |
+| __debugInfo  | 当使用 var_dump() 或 print_r() 输出一个对象时自动调用这个方法，可以用来控制对象的调试信息输出。 |
+| __sleep      | 在对象被序列化之前自动调用这个方法，可以用来控制哪些属性被序列化。 |
+| __wakeup     | 在对象被反序列化之后自动调用这个方法，可以用来重新初始化对象的属性。 |
 
 PHP官方文档已经很详细了，这里不在赘述，不一定需要学会所有的函数，除开常见的，其他的在遇到的时候查阅即可。
 
