@@ -1,7 +1,7 @@
 <div align="center">
      <h2>Hello CTF</h2>
      <div align="center">
-    <img src="./images/logo.png" width="600px">
+    <img src="./images/struc.png">
     </div> 
     <a href="http://ctf.probius.xyz/"> <img src="https://badgen.net/badge/Mkdocs/%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB?icon=chrome&color=black"></a>
     <a href="https://github.com/ProbiusOfficial/CTF-QuickStart"> <img src="https://badgen.net/github/stars/ProbiusOfficial/CTF-QuickStart?icon=github&color=black"></a>
@@ -11,6 +11,7 @@
      <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=wJ35e-T-qSlU7Y3Cs-PAasrAvZfRSc9k&authKey=WNEQbZUpolxgfKjUHHoUIoTBvSnvk2jZtcyWlhaDcUZ6ZYGgvywqi1ah5D7UwUrg&noverify=0&group_code=590430891"> <img src="https://img.shields.io/badge/QQ%20Group-590430891-black"></a>
     <br>
     </div>
+
 
 
 文档依靠Mkdocs-material 基于Github-Page 依靠 gh-pages 部署在 [https://ctf.probius.xyz/](https://ctf.probius.xyz/)   
