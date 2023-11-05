@@ -21,6 +21,10 @@ comments: true
 >by [xia0ji233](https://xia0ji233.pro/), 2023-10-30
 
 来学一学DNS吧。简介域名解析系统采用 客户端/服务器（Client/Server）模型，是一种应用层协议，它的作用是把我们所熟知的域名（domain ）翻译成 ip 地址。主要是人们通常乐意记住域名而不是记住ip，就好比学校里老师喜欢叫名字而不是叫你学号，但是学号又是唯一确定的一个学生，而名字是可以重复的。给出一个学生名称，查询对应学号的一个系统就叫学号解析系统，类似的，给出一个域名，查询一个对...
+### [从零学习AWD比赛指导手册](https://blog.zgsec.cn/archives/484.html)  
+>by [曾哥](https://blog.zgsec.cn/), 2023-10-21
+
+如果你要参加AWD相关比赛，相信本项目能给你带来帮助~手册版本号：V1.2.2-2023/10/21这是一本能让你从零开始学习AWD并深入AWD的手册，我也会根据经验和需求逐步完善相关内容如果你觉得本项目不错，欢迎给我点个Star，万分感谢~~ 有什么新的攻击或者防守的姿势、手法，欢迎与我交流0# 什么是AWD0.1# AWD赛制介绍「 攻防模式 | AWD (Attack With Defens...
 ### [记一次抑郁诊断和开药用药记录](https://blog.stv.lol/archives/76/)  
 >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-10-12
 
@@ -33,6 +37,10 @@ comments: true
 >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-10-04
 
 前段时间有幸抢到了去香港的免费机票，于是顺路去香港开了中国银行香港和汇丰香港的账户本文就仅作一个开卡全过程记录吧汇丰(HSBC)周六那天经过了三家中银都没有成功，抱着一丝希望来到了HSBC葵芳分行，试图碰碰运气。当时并没有进行预约。入门后，我先询问前台是否还有号码。因为我没有预约，所以实际上是碰运气。结果，前台小姐姐非常客气地把我带到了一个办公小隔间门口，并告诉我等前一位先生结束之后就可以进去（没...
+### [HaE入门到精通：三条影响你一生的HaE规则](https://blog.zgsec.cn/archives/481.html)  
+>by [曾哥](https://blog.zgsec.cn/), 2023-10-01
+
+0# 概述最近一段时间项目也比较多，再加上最近还在维护开源项目，所以挺忙的。乘着国庆时间，好好放松一下，顺便借着国庆期间更新一下自己许久未更新的博客哈哈~本篇文章，我们将深入学习著名BurpSuite工具的插件 HaE 的使用和拓展，希望这三条影响你一生的HaE规则能给你带来帮助~读者：你TM还知道回来啊！！！快两个月都没更新了都！！！在此，祝各位师傅们国庆节快乐！！！为国之安全而奋斗，为信息安全...
 ### [Flask的部署](https://xia0ji233.github.io/2023/10/01/Flask-deploy/)  
 >by [xia0ji233](https://xia0ji233.pro/), 2023-10-01
 
@@ -49,6 +57,10 @@ Today study something about Fourier serials Taylor SerialAs we all know,Taylor f
 >by [xia0ji233](https://xia0ji233.pro/), 2023-09-11
 
 another question about confidence interval. ProblemToday I got a problem about the difference of two normal distribution variables of confidence interval. Obviously it is much harder than  the ratio b...
+### [2023成都CCS大会&amp;&amp;补天城市沙龙有感](https://blog.zgsec.cn/archives/319.html)  
+>by [曾哥](https://blog.zgsec.cn/), 2023-09-01
+
+前言今年很巧，8月23日项目结束后，24号2023成都CCS网络安全大会就召开了。我今年刚好在武汉做项目，想了想，结束直接一个飞机飞往成都，开启了本次成都安全之旅。成都的师傅们都很热情，也结识了不少新的朋友，参加了成都CCS大会以及补天城市沙龙，感觉收获颇多，故写本文记录一下。由于参加项目和大会的缘故，博客已经一个半月还未更新了，直到今日才有闲暇之时来落笔本文，各位师傅见谅哈哈。补天城市沙龙合照：...
 ### [概率论（4）](https://xia0ji233.github.io/2023/08/31/Probability-Theory4/)  
 >by [xia0ji233](https://xia0ji233.pro/), 2023-08-31
 
@@ -81,15 +93,3 @@ Telegram有个即时预览的功能，可以以阅读格式的页面形式加载
 >by [ek1ng](https://ek1ng.com/), 2023-07-20
 
 这个靶场包含了各类基本漏洞在java语言上的场景以及java安全特有的JNDI注入，反序列化，表达式注入等等，并且给出了相关的利用手段和修复方案。java-sec-code搭建环境可以用Docker搭建，不过想了想不太熟练java的包管理和web server部署这一套，并且本地起相比于容器也方便调试，于是决定本地起一份。由于我是archlinux，包管理安装的都是最新的jdk版本，靶场的jdk版...
-### [计算机网络复习（3）](https://xia0ji233.github.io/2023/07/17/408-2-3/)  
->by [xia0ji233](https://xia0ji233.pro/), 2023-07-17
-
-数据链路层数据链路层的功能在物理层的基础上向网络层提供服务，对网络层表现为一条无差错的逻辑链路。提供的服务数据链路层可能提供以下的服务：成帧：链路层封装IP数据报，帧的结构由链路层协议规定。链路接入：媒体访问控制协议（Medium Access Control，MAC）规定了帧在链路上传输的规则.可靠交付：如果链路层实现可靠交付，通常是通过确认和重传取得的。对于高比特差错的链路来说，链路层通常要实...
-### [CrewCTF 2023 Web Writeup](https://www.ek1ng.com/2023CrewCTFWP.html)  
->by [ek1ng](https://ek1ng.com/), 2023-07-14
-
-环境还在，赛后看看题，一共四道Web，都挺有意思的。sequence_galleryDo you like sequences?http://sequence-gallery.chal.crewc.tf:8080/ 123456789101112131415sequence = request.args.get('sequence', None)if sequence is None:    re...
-### [旅行日志：无锡&amp;苏州小记](https://blog.stv.lol/archives/61/)  
->by [Steven Lynn's Blog](https://blog.stv.lol), 2023-07-09
-
-在苏北那个鬼地方关了两年多，尤其之前一直在被各种考试折腾，终于放暑假了，于是临时起意去长三角几个城市玩两天一个人出行最大的好处在于自由度，可以想到哪里就去哪里以及，和朋友们面基！这篇文章想到哪写哪，因此全文可能看起来比较流水账多图警告Day1 无锡说起来以前经常从无锡的高速或者火车站经过，但从来没有真正到过无锡，所以这一次来算是第一次玩先说下无锡的印象吧，个人觉得无锡这个城市既现代化又不怎么现代化...
