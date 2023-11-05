@@ -5,7 +5,7 @@ comments: true
 
 # 帮助我们完善内容
 
-CTF是一个涉及面很广，而作者一个人的能力又很有限，所以书中难免会有一些错误或者不完善的地方，如果您在阅读过程中发现任何知识点错误，内容模糊，名词拼写错误等问题，还请您协助我们进行修改，我们一直在为CTF和网络安全的开源生态努力，也希望您能够加入我们，一起完善本书，共同维护CTF社区的开放性。每一个[ PR ](https://github.com/ProbiusOfficial/CTF-QuickStart/graphs/contributors)都会被记录在本书的贡献者名单中，我们向每一个为开源社区做出努力和贡献的人，致以崇高的敬意！
+CTF是一个涉及面很广，而作者一个人的能力又很有限，所以书中难免会有一些错误或者不完善的地方，如果您在阅读过程中发现任何知识点错误，内容模糊，名词拼写错误等问题，还请您协助我们进行修改，我们一直在为CTF和网络安全的开源生态努力，也希望您能够加入我们，一起完善本书，共同维护CTF社区的开放性。每一个[ PR ](https://github.com/ProbiusOfficial/Hello-CTF/graphs/contributors)都会被记录在本书的贡献者名单中，我们向每一个为开源社区做出努力和贡献的人，致以崇高的敬意！
 
 ## 直接编辑
 
@@ -47,7 +47,7 @@ mkdocs serve
 本项目的完成离不开以下小伙伴的贡献，感谢他们的付出。
 
 <p align="left">
-    <a href="https://github.com/ProbiusOfficial/CTF-QuickStart/graphs/contributors">
-        <img width="550" src="https://contrib.rocks/image?repo=ProbiusOfficial/CTF-QuickStart" />
+    <a href="https://github.com/ProbiusOfficial/Hello-CTF/graphs/contributors">
+        <img width="550" src="https://contrib.rocks/image?repo=ProbiusOfficial/Hello-CTF" />
     </a>
 </p>

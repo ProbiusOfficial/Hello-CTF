@@ -7,7 +7,7 @@ By [探姬_Official](https://github.com/ProbiusOfficial)
 
 NSSCTF 平台地址：https://www.nssctf.cn/
 
-归档于 [CTF快速入门手册](https://github.com/ProbiusOfficial/CTF-QuickStart) 
+归档于 [CTF快速入门手册](https://github.com/ProbiusOfficial/Hello-CTF) 
 
 感谢热爱。
 

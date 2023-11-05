@@ -45,7 +45,7 @@ comments: true
 
 ## 动手实操
 
-- 本书的配套题目的 附件 源码 容器 均托管在[GitHub 仓库](https://github.com/ProbiusOfficial/CTF-QuickStart)，**对于每个题目，我们均会提供详细的题解和知识点讲解**，我们鼓励读者对每个题目进行手动复现，实操能力对于每一个CTFer以及安全从业者都至关重要。
+- 本书的配套题目的 附件 源码 容器 均托管在[GitHub 仓库](https://github.com/ProbiusOfficial/Hello-CTF)，**对于每个题目，我们均会提供详细的题解和知识点讲解**，我们鼓励读者对每个题目进行手动复现，实操能力对于每一个CTFer以及安全从业者都至关重要。
 - 未来，Hello CTF 将会与 [NSSCTF](https://www.nssctf.cn/) 平台联动，本书所有的题目均会在 NSSCTF 平台上开放，供读者练习。
 
 

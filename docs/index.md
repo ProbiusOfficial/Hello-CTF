@@ -17,7 +17,7 @@ comments: true
 
 **一本开源免费、新手友好的「 夺旗赛 | CTF(Capture The Flag) 」入门教程**
 
-您可以直接访问该页面[在线阅读](https://ctf.probius.xyz/)，如果您想要转载本项目，请带上项目源地址：https://github.com/ProbiusOfficial/CTF-QuickStart
+您可以直接访问该页面[在线阅读](https://ctf.probius.xyz/)，如果您想要转载本项目，请带上项目源地址：https://github.com/ProbiusOfficial/Hello-CTF
 
 因接入CDN，本站链接变更为：https://ctf.probius.xyz/ ，感谢渊龙安全团队[@AabyssZG](https://github.com/AabyssZG) 曾哥提供的CDN支持~
 

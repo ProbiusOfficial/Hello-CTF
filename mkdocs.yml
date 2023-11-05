@@ -5,9 +5,9 @@ site_author: 探姬
 site_description: 开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程
 
 # 仓库信息 / Repository
-repo_name: CTF-QuickStart
-repo_url: https://github.com/ProbiusOfficial/CTF-QuickStart
-edit_uri: https://github.com/ProbiusOfficial/CTF-QuickStart/tree/main/docs/
+repo_name: Hello-CTF
+repo_url: https://github.com/ProbiusOfficial/Hello-CTF
+edit_uri: https://github.com/ProbiusOfficial/Hello-CTF/tree/main/docs/
 
 # 版权声明 / Copyright
 copyright: Copyright &copy; 2023 探姬
