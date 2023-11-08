@@ -13,6 +13,18 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [Pwnable.kr-shellshock](https://xia0ji233.github.io/2023/11/06/pwnable_shellshock/)  
+>by [xia0ji233](https://xia0ji233.pro/), 2023-11-06
+
+pwnable.kr-shellshock 这一关仅仅是帮助我们复现shellshock漏洞的。题目分析根据所给信息Mommy, there was a shocking news about bash.I bet you already know, but lets just make it sure :)ssh shellshock@pwnable.kr -p2222 (pw:guest)连接...
+### [Pwnable.kr-mistake](https://xia0ji233.github.io/2023/11/06/pwnable_mistake/)  
+>by [xia0ji233](https://xia0ji233.pro/), 2023-11-06
+
+Pwnable.kr-mistake 这一关HINT已经给了，但是光看C真的很难分析出来题目分析根据所给信息We all make mistakes, let’s move on.(don’t take this too seriously, no fancy hacking skill is required at all)This task is based on real eventThan...
+### [pwnable.kr-leg](https://xia0ji233.github.io/2023/11/06/pwnable_leg/)  
+>by [xia0ji233](https://xia0ji233.pro/), 2023-11-06
+
+Pwnable.kr-leg 这一关挺有意思的，也不是很难，也借此学习一下ARM汇编。题目分析根据所给信息Daddy told me I should study arm.But I prefer to study my leg!Download : http://pwnable.kr/bin/leg.cDownload : http://pwnable.kr/bin/leg.asmssh leg...
 ### [计算机网络(谢希仁)](https://xia0ji233.github.io/2023/10/31/ComputerNetwork-Sum/)  
 >by [xia0ji233](https://xia0ji233.pro/), 2023-10-31
 
@@ -81,15 +93,3 @@ Telegram有个即时预览的功能，可以以阅读格式的页面形式加载
 >by [Y4tacker](https://y4tacker.github.io), 2023-08-22
 
 浅析Smartbi逻辑漏洞(2)写在前面仅分享逻辑漏洞部分补丁绕过思路，不提供完整payload厂商已发布补丁：https://www.smartbi.com.cn/patchinfo正文简单提一下，补丁部分由smartbi.security.patch.PatchFilter(来源于SecurityPatchExt.ext)做加载并处理，这里我们主要关注补丁返回的状态码的具体含义即可，可以看到只...
-### [概率论（3）](https://xia0ji233.github.io/2023/08/09/Probability-Theory3/)  
->by [xia0ji233](https://xia0ji233.pro/), 2023-08-09
-
-参数估计和置信区间计算。引入很多老师都用这样的一个例子引入，假设我想知道全国身高的均值。这个值 $\mu$ 必然是客观存在的，但是给全国十四亿人全部测一遍显然这个工作量太大，对于学过数理统计的人来说，解决这个的最好的办法自然就是抽样。理论极限中心定理告诉我们，当样本量足够大时，所有的分布最终都趋于正态分布，下图就是标准正态分布的概率密度图。概率密度函数反映了概率在该点的变化率，变化率越大显然证明该...
-### [游戏安全的学习（4）](https://xia0ji233.github.io/2023/08/01/Game4/)  
->by [xia0ji233](https://xia0ji233.pro/), 2023-08-01
-
-游戏安全的学习（4）—— 猫里奥外挂编写。这也就是一个单机游戏，如果游戏作者觉得侵权了可以联系删除。游戏分析突然想起了之前一个很搞人心态的游戏，就是这个猫里奥，各种陷阱防不胜防，因此今天打算用点科技的力量去对抗这个东西。八关版的外挂已经有人做了，这里我用九关版的，下载地址。坐标读取和修改首先最简单的就是获取坐标，使用CE反复横跳搜索内存，最终确定了 X 和 Y 坐标的地址分别是在 +78DDC 和...
-### [java-sec-code 靶场题解](https://www.ek1ng.com/java-sec-code.html)  
->by [ek1ng](https://ek1ng.com/), 2023-07-20
-
-这个靶场包含了各类基本漏洞在java语言上的场景以及java安全特有的JNDI注入，反序列化，表达式注入等等，并且给出了相关的利用手段和修复方案。java-sec-code搭建环境可以用Docker搭建，不过想了想不太熟练java的包管理和web server部署这一套，并且本地起相比于容器也方便调试，于是决定本地起一份。由于我是archlinux，包管理安装的都是最新的jdk版本，靶场的jdk版...
