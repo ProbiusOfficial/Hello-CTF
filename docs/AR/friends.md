@@ -13,6 +13,18 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [Pwnable.kr-lotto](https://xia0ji233.github.io/2023/11/07/pwnable_lotto/)  
+>by [xia0ji233](https://xia0ji233.pro/), 2023-11-07
+
+pwnable.kr-lotto  又是一个很有趣的逻辑漏洞分析。题目分析根据所给信息Mommy! I made a lotto program for my homework.do you want to play?ssh lotto@pwnable.kr -p2222 (pw:guest)我也是搜了一下 lotto 是什么意思，大概好像是彩票的意思，它给了C源码和二进制文件，先来看看源码吧：1...
+### [Pwnable.kr-blackjack](https://xia0ji233.github.io/2023/11/07/pwnable_blackjack/)  
+>by [xia0ji233](https://xia0ji233.pro/), 2023-11-07
+
+pwnable.kr-blackjack 一个很有趣的逻辑漏洞分析。题目分析根据所给信息Hey! check out this C implementation of blackjack game!I found it onlinehttp://cboard.cprogramming.com/c-programming/114023-simple-blackjack-program.htmlI l...
+### [Pwnable.kr-coin1](https://xia0ji233.github.io/2023/11/07/pwnable_coin1/)  
+>by [xia0ji233](https://xia0ji233.pro/), 2023-11-07
+
+pwnable.kr-coin1 简单的二分查找。题目分析根据所给信息Mommy, I wanna play a game!(if your network response time is too slow, try nc 0 9007 inside pwnable.kr server)Running at : nc pwnable.kr 9007这题没有给我们账号，不过可以用其它的账号去连接欸...
 ### [Pwnable.kr-shellshock](https://xia0ji233.github.io/2023/11/06/pwnable_shellshock/)  
 >by [xia0ji233](https://xia0ji233.pro/), 2023-11-06
 
@@ -81,15 +93,3 @@ another question about confidence interval. ProblemToday I got a problem about t
 >by [ek1ng](https://ek1ng.com/), 2023-08-29
 
 最近做了一阵子攻防相关的事，正好最近国护结束，做个总结，简单写一下渗透的基本思路（Check List）。不同的标题间内容并不完全独立，在实战中，比如先钓鱼获取到一台个人PC，但这台PC并不在办公网。而后通过收集个人PC的信息，能够登陆外网其他站点的后台，配合一个后台RCE进入办公网/生产网。这其中就有钓鱼，也有外网打点的部分。资产收集资产搜集通俗说就是“了解目标有什么东西”，讲究一个越全越好。路...
-### [Telegram Instant View即时预览适配过程记录](https://blog.stv.lol/archives/72/)  
->by [Steven Lynn's Blog](https://blog.stv.lol), 2023-08-27
-
-Telegram有个即时预览的功能，可以以阅读格式的页面形式加载网页，减少加载不必要的内容Telegram自己的Blog，以及主流内容平台（比如wikipedia, Medium, 知乎都有人做了适配）但直到今天一番研究才知道适配工作要在instant view上面写规则，并且提交审核这个工作可以说基本上由用户维护，官方通过排名的方式来选择每个网站最好的Instant View模板，也有2017和...
-### [英国铁路系统体验小结](https://blog.stv.lol/archives/67/)  
->by [Steven Lynn's Blog](https://blog.stv.lol), 2023-08-27
-
-今年暑假去了趟英国，在英国生活了半个月的时间打算分几篇文章简述一下一些感受这篇文章主要讲讲英国的铁路系统（包括地铁和火车）文章偏体验向，可能比较流水账，想到哪写到哪概述因为起步时间早，英国铁路系统相当发达，早在19世纪就已经开始建成世界第一条地铁线路，后续又建了许多线路并不断完善城市铁路网络在伦敦市区，火车与地铁共用线路，可以凭oyster进站上下车，速度也与地铁速度一致，离开共用线路之后恢复至正...
-### [浅析Smartbi逻辑漏洞(2)](https://y4tacker.github.io/2023/08/23/year/2023/8/%E6%B5%85%E6%9E%90Smartbi%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E-2/)  
->by [Y4tacker](https://y4tacker.github.io), 2023-08-22
-
-浅析Smartbi逻辑漏洞(2)写在前面仅分享逻辑漏洞部分补丁绕过思路，不提供完整payload厂商已发布补丁：https://www.smartbi.com.cn/patchinfo正文简单提一下，补丁部分由smartbi.security.patch.PatchFilter(来源于SecurityPatchExt.ext)做加载并处理，这里我们主要关注补丁返回的状态码的具体含义即可，可以看到只...
