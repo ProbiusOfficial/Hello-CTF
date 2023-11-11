@@ -13,6 +13,10 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [OJ-Bypass-WAF](https://xia0ji233.github.io/2023/11/09/OJ-Bypass-WAF/)  
+>by [xia0ji233](https://xia0ji233.pro/), 2023-11-09
+
+第一次做生产环境的项目和运维，也是出现了很多问题，下面是遇到的其中一个问题。绕过WAF向OJ提交代码的方案随着网络安全越来越严格，防火墙也是做了很多升级，有些防火墙为了防止上传恶意代码甚至暴力匹配某些字符或者是字符组合，这对于ACM选手来说是不太友好的，因为特殊的需要，我们经常要向服务器提交我们写的代码，里面难免会出现一些所谓的“恶意字符”，因此需要对OJ进行特殊地处理来使得代码不被WAF拦截。一...
 ### [Pwnable.kr-lotto](https://xia0ji233.github.io/2023/11/07/pwnable_lotto/)  
 >by [xia0ji233](https://xia0ji233.pro/), 2023-11-07
 
@@ -89,7 +93,3 @@ another question about confidence interval. ProblemToday I got a problem about t
 >by [xia0ji233](https://xia0ji233.pro/), 2023-08-31
 
 一道压轴题引发的思考~题目分析题目如下：这个题目就这么短，而且也非常的清晰，却是 22 年的选择压轴题，这题深入做过之后发现常规的很多做法都需要记住一些公式或者是较大的计算量（答案确实也如此）。而在这里我感觉到可以使用另外一种比较简单的思路做出这题。解题首先从题目描述提取信息之后得到以下两个比较重要的信息。$X \sim N(0,1),f_X(x)=\frac{1}{\sqrt{2\pi}}e^{...
-### [渗透测试思路总结](https://www.ek1ng.com/Summary%20of%20penetration%20ideas.html)  
->by [ek1ng](https://ek1ng.com/), 2023-08-29
-
-最近做了一阵子攻防相关的事，正好最近国护结束，做个总结，简单写一下渗透的基本思路（Check List）。不同的标题间内容并不完全独立，在实战中，比如先钓鱼获取到一台个人PC，但这台PC并不在办公网。而后通过收集个人PC的信息，能够登陆外网其他站点的后台，配合一个后台RCE进入办公网/生产网。这其中就有钓鱼，也有外网打点的部分。资产收集资产搜集通俗说就是“了解目标有什么东西”，讲究一个越全越好。路...
