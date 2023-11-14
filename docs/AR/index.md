@@ -13,6 +13,14 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [2023浙江省大学生网络与信息安全决赛-Misc篇](https://blog.zgsec.cn/archives/504.html)  
+>by [曾哥](https://blog.zgsec.cn/), 2023-11-12
+
+比赛概述emmmm怎么说呢，难受死了，好多题目都是临门一脚的状态。。。比赛当时是断网环境，真的是可惜了Misc-1：Xcode v5.81# 题目内容直接给了一个 flag.txt，里面有一串字符串2# 解题思路题目提示使用 X encode，于是在 CaptfEncoder 中可以找到 XXencode 编码：解密后，看着像Base编码，遂尝试：成功解出FlagMisc-2：Ez_Signin1...
+### [某系统全版本前台RCE绕过总结](https://y4tacker.github.io/2023/11/12/year/2023/11/%E6%9F%90%E7%B3%BB%E7%BB%9F%E5%85%A8%E7%89%88%E6%9C%AC%E5%89%8D%E5%8F%B0RCE%E7%BB%95%E8%BF%87%E6%80%BB%E7%BB%93/)  
+>by [Y4tacker](https://y4tacker.github.io), 2023-11-12
+
+63ad3c308aa90afd6725b0adbc5aaf396fe6a49769435089ef5574bd32ca40449c3e06df20814f543efe985c53634aa612382f7cfbf67a5114f90aa226b1f3a2117126741fb1bce45422cc45d5b0203b4dc897356c33545fc1853dbda4a028d98a21c3...
 ### [OJ-Bypass-WAF](https://xia0ji233.github.io/2023/11/09/OJ-Bypass-WAF/)  
 >by [xia0ji233](https://xia0ji233.pro/), 2023-11-09
 
@@ -85,11 +93,3 @@ Today study something about Fourier serials Taylor SerialAs we all know,Taylor f
 >by [xia0ji233](https://xia0ji233.pro/), 2023-09-11
 
 another question about confidence interval. ProblemToday I got a problem about the difference of two normal distribution variables of confidence interval. Obviously it is much harder than  the ratio b...
-### [2023成都CCS大会&amp;&amp;补天城市沙龙有感](https://blog.zgsec.cn/archives/319.html)  
->by [曾哥](https://blog.zgsec.cn/), 2023-09-01
-
-前言今年很巧，8月23日项目结束后，24号2023成都CCS网络安全大会就召开了。我今年刚好在武汉做项目，想了想，结束直接一个飞机飞往成都，开启了本次成都安全之旅。成都的师傅们都很热情，也结识了不少新的朋友，参加了成都CCS大会以及补天城市沙龙，感觉收获颇多，故写本文记录一下。由于参加项目和大会的缘故，博客已经一个半月还未更新了，直到今日才有闲暇之时来落笔本文，各位师傅见谅哈哈。补天城市沙龙合照：...
-### [概率论（4）](https://xia0ji233.github.io/2023/08/31/Probability-Theory4/)  
->by [xia0ji233](https://xia0ji233.pro/), 2023-08-31
-
-一道压轴题引发的思考~题目分析题目如下：这个题目就这么短，而且也非常的清晰，却是 22 年的选择压轴题，这题深入做过之后发现常规的很多做法都需要记住一些公式或者是较大的计算量（答案确实也如此）。而在这里我感觉到可以使用另外一种比较简单的思路做出这题。解题首先从题目描述提取信息之后得到以下两个比较重要的信息。$X \sim N(0,1),f_X(x)=\frac{1}{\sqrt{2\pi}}e^{...
