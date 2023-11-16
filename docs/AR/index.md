@@ -13,6 +13,10 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [Pwnable.kr-otp](https://xia0ji233.github.io/2023/11/14/pwnable_otp/)  
+>by [xia0ji233](https://xia0ji233.pro/), 2023-11-14
+
+pwnable.kr-otp，一次性密码验证（one time password）漏洞分析。题目分析同样来看看题目描述：I made a skeleton interface for one time password authentication system.I guess there are no mistakes.could you take a look at it?hint : not...
 ### [2023浙江省大学生网络与信息安全决赛-Misc篇](https://blog.zgsec.cn/archives/504.html)  
 >by [曾哥](https://blog.zgsec.cn/), 2023-11-12
 
@@ -89,7 +93,3 @@ Today study something about Fourier serials Taylor SerialAs we all know,Taylor f
 >by [ek1ng](https://ek1ng.com/), 2023-09-13
 
 无CVE编号 XSS2RCEhttps://github.com/marktext/marktext/issues/2601https://github.com/marktext/marktext/commit/0dd09cc6842d260528c98151c394c5f63d733b62影响 <= 0.16.3 的marktext版本，点击链接触发。POC：123<a href="javasc...
-### [Probability Theory（5）](https://xia0ji233.github.io/2023/09/11/Probability-Theory5/)  
->by [xia0ji233](https://xia0ji233.pro/), 2023-09-11
-
-another question about confidence interval. ProblemToday I got a problem about the difference of two normal distribution variables of confidence interval. Obviously it is much harder than  the ratio b...
