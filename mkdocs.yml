@@ -234,9 +234,9 @@ nav:
 # - CTF Event 赛事 (.TK) Part ------------
   - 赛事:
     - ET/index.md
-    - 即将开始: ET/coming.md
-    - 正在进行: ET/ongoing.md
-    - 已经结束: ET/finished.md
+    - 即将开始: ET/Upcoming_events.md
+    - 正在进行: ET/Now_running.md
+    - 已经结束: ET/Past_events.md
     - 办赛指南:
       - ET/organize.md
     
