@@ -47,21 +47,12 @@ comments: true
     **赛事主办** : OSCAR ZULU (https://ctftime.org/team/270624)  
     **添加日历** : https://ctftime.org/event/2154.ics  
     
-??? Abstract "[ASEAN Cyber Shield Hacking Contest 2023 (Preliminary)](https://forms.gle/9KcV5WRAutbQqHn48)"  
-    [![](https://ctftime.org)](https://forms.gle/9KcV5WRAutbQqHn48)  
-    **比赛名称** : [ASEAN Cyber Shield Hacking Contest 2023 (Preliminary)](https://forms.gle/9KcV5WRAutbQqHn48)  
+??? Abstract "[Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)"  
+    [![](https://ctftime.org)](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)  
+    **比赛名称** : [Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-11-21 14:00:00 - 2023-11-22 19:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : ASEAN Cyber Shield (https://ctftime.org/team/269126)  
-    **添加日历** : https://ctftime.org/event/2127.ics  
-    
-??? Abstract "[5th stage MetaRed CTF Ecuador 2023](https://eventos.metared.org/101614/detail/ctf-internacional-metared-2023-5th-stage.html)"  
-    [![](https://ctftime.org/media/events/Log.png)](https://eventos.metared.org/101614/detail/ctf-internacional-metared-2023-5th-stage.html)  
-    **比赛名称** : [5th stage MetaRed CTF Ecuador 2023](https://eventos.metared.org/101614/detail/ctf-internacional-metared-2023-5th-stage.html)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-11-21 23:00:00 - 2023-11-22 22:59:59 UTC+8  
-    **比赛权重** : 6.67  
-    **赛事主办** : MiTeam (https://ctftime.org/team/168552)  
-    **添加日历** : https://ctftime.org/event/2164.ics  
+    **比赛时间** : 2023-11-16 22:26:32 - 2024-11-16 22:26:32 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
+    **添加日历** : https://ctftime.org/event/2178.ics  
     

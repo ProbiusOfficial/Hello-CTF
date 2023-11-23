@@ -68,15 +68,26 @@ comments: true
     **比赛时间** : 2023年11月04日 09:00 - 2023年11月04日 18:00  
     **其他说明** :   
     
-??? Abstract "Hackergame第十届中科大信息安全大赛 2023"  
-    **比赛名称** : [Hackergame第十届中科大信息安全大赛 2023](https://hack.lug.ustc.edu.cn/)  
-    **比赛类型** : 个人赛  
-    **报名时间** : 2023年10月15日 12:00 - 2023年11月04日 12:00  
-    **比赛时间** : 2023年10月28日 12:00 - 2023年11月04日 12:00  
-    **其他说明** : QQ 群：759723360  
-    
 
 ## 国际赛事
+??? Abstract "[5th stage MetaRed CTF Ecuador 2023](https://eventos.metared.org/101614/detail/ctf-internacional-metared-2023-5th-stage.html)"  
+    [![](https://ctftime.org/media/events/Log.png)](https://eventos.metared.org/101614/detail/ctf-internacional-metared-2023-5th-stage.html)  
+    **比赛名称** : [5th stage MetaRed CTF Ecuador 2023](https://eventos.metared.org/101614/detail/ctf-internacional-metared-2023-5th-stage.html)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-11-21 23:00:00 - 2023-11-22 22:59:59 UTC+8  
+    **比赛权重** : 6.67  
+    **赛事主办** : MiTeam (https://ctftime.org/team/168552)  
+    **添加日历** : https://ctftime.org/event/2164.ics  
+    
+??? Abstract "[ASEAN Cyber Shield Hacking Contest 2023 (Preliminary)](https://forms.gle/9KcV5WRAutbQqHn48)"  
+    [![](https://ctftime.org)](https://forms.gle/9KcV5WRAutbQqHn48)  
+    **比赛名称** : [ASEAN Cyber Shield Hacking Contest 2023 (Preliminary)](https://forms.gle/9KcV5WRAutbQqHn48)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-11-21 14:00:00 - 2023-11-22 19:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : ASEAN Cyber Shield (https://ctftime.org/team/269126)  
+    **添加日历** : https://ctftime.org/event/2127.ics  
+    
 ??? Abstract "[SibirCTF 2023](https://vk.com/sibirctf)"  
     [![](https://ctftime.org/media/events/glaz2023.jpg)](https://vk.com/sibirctf)  
     **比赛名称** : [SibirCTF 2023](https://vk.com/sibirctf)  
@@ -163,7 +174,7 @@ comments: true
     **比赛名称** : [HITCON CTF 2023 Final](http://ctf.hitcon.org/)  
     **比赛形式** : Attack-Defense  
     **比赛时间** : 2023-11-14 08:00:00 - 2023-11-15 16:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : HITCON (https://ctftime.org/team/8299)  
     **添加日历** : https://ctftime.org/event/2035.ics  
     
@@ -319,6 +330,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : BlackAlps (https://ctftime.org/team/89021)  
     **添加日历** : https://ctftime.org/event/2157.ics  
+    
+??? Abstract "[Hardwear.io NL 2023 Hardware CTF](https://hwctf.quarkslab.com/)"  
+    [![](https://ctftime.org/media/events/logohwcolor.svg.png)](https://hwctf.quarkslab.com/)  
+    **比赛名称** : [Hardwear.io NL 2023 Hardware CTF](https://hwctf.quarkslab.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-11-02 18:00:00 - 2023-11-03 22:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Hardware CTF by Quarkslab (https://ctftime.org/team/274600)  
+    **添加日历** : https://ctftime.org/event/2176.ics  
     
 ??? Abstract "[Ajman University CTF](https://au.pentestgarage.com/)"  
     [![](https://ctftime.org/media/events/ctf11.png)](https://au.pentestgarage.com/)  
@@ -949,31 +969,4 @@ comments: true
     **比赛权重** : 43.00  
     **赛事主办** : HackerDom (https://ctftime.org/team/552)  
     **添加日历** : https://ctftime.org/event/2037.ics  
-    
-??? Abstract "[Midnight Sun CTF 2023 Finals](https://midnightsunctf.com/)"  
-    [![](https://ctftime.org/media/events/f805350cabc421823053a0f8d305dc81.jpg)](https://midnightsunctf.com/)  
-    **比赛名称** : [Midnight Sun CTF 2023 Finals](https://midnightsunctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-08-19 19:00:00 - 2023-08-20 19:00:00 UTC+8  
-    **比赛权重** : 90.00  
-    **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-    **添加日历** : https://ctftime.org/event/1922.ics  
-    
-??? Abstract "[0byteCTF 2023](https://zerobyte.id/events/0byteCTF-2023/)"  
-    [![](https://ctftime.org/media/events/0byteCTF-2023-Logo.png)](https://zerobyte.id/events/0byteCTF-2023/)  
-    **比赛名称** : [0byteCTF 2023](https://zerobyte.id/events/0byteCTF-2023/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-08-19 15:45:00 - 2023-08-20 08:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : 0byteID (https://ctftime.org/team/262877)  
-    **添加日历** : https://ctftime.org/event/2093.ics  
-    
-??? Abstract "[nullcon HackIM CTF Goa 2023](https://ctf.nullcon.net/)"  
-    [![](https://ctftime.org/media/events/a3838829dc3fcbbebcc062b58d405747.png)](https://ctf.nullcon.net/)  
-    **比赛名称** : [nullcon HackIM CTF Goa 2023](https://ctf.nullcon.net/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-08-19 14:00:00 - 2023-08-20 14:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
-    **添加日历** : https://ctftime.org/event/2065.ics  
     
