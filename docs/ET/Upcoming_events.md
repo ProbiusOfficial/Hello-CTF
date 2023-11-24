@@ -64,24 +64,6 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[ASEAN Cyber Shield Hacking Contest 2023 (Main)](https://forms.gle/9KcV5WRAutbQqHn48)"  
-    [![](https://ctftime.org/media/events/square.png)](https://forms.gle/9KcV5WRAutbQqHn48)  
-    **比赛名称** : [ASEAN Cyber Shield Hacking Contest 2023 (Main)](https://forms.gle/9KcV5WRAutbQqHn48)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2023-11-23 10:00:00 - 2023-11-24 17:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : ASEAN Cyber Shield (https://ctftime.org/team/269126)  
-    **添加日历** : https://ctftime.org/event/2148.ics  
-    
-??? Abstract "[DefCamp CTF Finals 2023](https://dctf23-ad.cyber-edu.co/)"  
-    [![](https://ctftime.org)](https://dctf23-ad.cyber-edu.co/)  
-    **比赛名称** : [DefCamp CTF Finals 2023](https://dctf23-ad.cyber-edu.co/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2023-11-23 16:00:00 - 2023-11-24 01:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : CCSIR.org (https://ctftime.org/team/9831)  
-    **添加日历** : https://ctftime.org/event/2182.ics  
-    
 ??? Abstract "[GlacierCTF 2023](https://glacierctf.com/)"  
     [![](https://ctftime.org/media/events/3ae6516246966c8d08c81d3bd5451cfa.png)](https://glacierctf.com/)  
     **比赛名称** : [GlacierCTF 2023](https://glacierctf.com/)  
@@ -190,9 +172,9 @@ comments: true
     **赛事主办** : Group-IB (https://ctftime.org/team/273085)  
     **添加日历** : https://ctftime.org/event/2177.ics  
     
-??? Abstract "[Hackappatoi CTF '23](https://hctf.hackappatoi.com/)"  
-    [![](https://ctftime.org/media/events/3cea5d7bcded4dcba103009b24246cd6.png)](https://hctf.hackappatoi.com/)  
-    **比赛名称** : [Hackappatoi CTF '23](https://hctf.hackappatoi.com/)  
+??? Abstract "[Hackappatoi CTF '23](http://hctf.hackappatoi.com/)"  
+    [![](https://ctftime.org/media/events/3cea5d7bcded4dcba103009b24246cd6.png)](http://hctf.hackappatoi.com/)  
+    **比赛名称** : [Hackappatoi CTF '23](http://hctf.hackappatoi.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-12-08 01:00:00 - 2023-12-09 17:00:00 UTC+8  
     **比赛权重** : 24.71  

@@ -13,6 +13,10 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [I Doc View全版本前台RCE漏洞分析汇总](https://y4tacker.github.io/2023/11/22/year/2023/11/I%20Doc%20View%E5%85%A8%E7%89%88%E6%9C%AC%E5%89%8D%E5%8F%B0RCE%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90%E6%B1%87%E6%80%BB/)  
+>by [Y4tacker](https://y4tacker.github.io), 2023-11-22
+
+a74529e06839b00590019b3586ee8768e1429c91fb6e284b9e29886c48d32fe4096cab8993661d6b4761d862048986990a1e631c6094927b39cb47d72b8a0e59f33fa5458fba36a86f95dd6613af37d9474c70c33a9fd0989c3a2ae49c64e3923ed130...
 ### [Pwnable.kr-otp](https://xia0ji233.github.io/2023/11/14/pwnable_otp/)  
 >by [xia0ji233](https://xia0ji233.pro/), 2023-11-14
 
@@ -89,7 +93,3 @@ Pwnable.kr-leg 这一关挺有意思的，也不是很难，也借此学习一�
 >by [xia0ji233](https://xia0ji233.pro/), 2023-09-15
 
 Today study something about Fourier serials Taylor SerialAs we all know,Taylor formula give us the way for expressing complicated function as simple polynomial function.We should clearly remember the...
-### [Markdown editor CVE of Marktext](https://www.ek1ng.com/MarkdownEditorCVE1.html)  
->by [ek1ng](https://ek1ng.com/), 2023-09-13
-
-无CVE编号 XSS2RCEhttps://github.com/marktext/marktext/issues/2601https://github.com/marktext/marktext/commit/0dd09cc6842d260528c98151c394c5f63d733b62影响 <= 0.16.3 的marktext版本，点击链接触发。POC：123<a href="javasc...
