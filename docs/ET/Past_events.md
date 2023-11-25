@@ -70,6 +70,24 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[DefCamp CTF Finals 2023](https://dctf23-ad.cyber-edu.co/)"  
+    [![](https://ctftime.org)](https://dctf23-ad.cyber-edu.co/)  
+    **比赛名称** : [DefCamp CTF Finals 2023](https://dctf23-ad.cyber-edu.co/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2023-11-23 16:00:00 - 2023-11-24 01:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : CCSIR.org (https://ctftime.org/team/9831)  
+    **添加日历** : https://ctftime.org/event/2182.ics  
+    
+??? Abstract "[ASEAN Cyber Shield Hacking Contest 2023 (Main)](https://forms.gle/9KcV5WRAutbQqHn48)"  
+    [![](https://ctftime.org/media/events/square.png)](https://forms.gle/9KcV5WRAutbQqHn48)  
+    **比赛名称** : [ASEAN Cyber Shield Hacking Contest 2023 (Main)](https://forms.gle/9KcV5WRAutbQqHn48)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2023-11-23 10:00:00 - 2023-11-24 17:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : ASEAN Cyber Shield (https://ctftime.org/team/269126)  
+    **添加日历** : https://ctftime.org/event/2148.ics  
+    
 ??? Abstract "[5th stage MetaRed CTF Ecuador 2023](https://eventos.metared.org/101614/detail/ctf-internacional-metared-2023-5th-stage.html)"  
     [![](https://ctftime.org/media/events/Log.png)](https://eventos.metared.org/101614/detail/ctf-internacional-metared-2023-5th-stage.html)  
     **比赛名称** : [5th stage MetaRed CTF Ecuador 2023](https://eventos.metared.org/101614/detail/ctf-internacional-metared-2023-5th-stage.html)  
@@ -951,22 +969,4 @@ comments: true
     **比赛权重** : 24.86  
     **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
     **添加日历** : https://ctftime.org/event/1923.ics  
-    
-??? Abstract "[h4ckc0n 2023](https://hackcon.in/)"  
-    [![](https://ctftime.org/media/events/h4ckc0n_bin.png)](https://hackcon.in/)  
-    **比赛名称** : [h4ckc0n 2023](https://hackcon.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-08-25 20:30:00 - 2023-08-26 20:30:00 UTC+8  
-    **比赛权重** : 24.23  
-    **赛事主办** : d4rkc0de (https://ctftime.org/team/15154)  
-    **添加日历** : https://ctftime.org/event/2041.ics  
-    
-??? Abstract "[HITB SECCONF CTF 2023](https://2023.ctf.hitb.org/hitb-ctf-phuket-2023)"  
-    [![](https://ctftime.org/media/events/hitb-logo_4_1.png)](https://2023.ctf.hitb.org/hitb-ctf-phuket-2023)  
-    **比赛名称** : [HITB SECCONF CTF 2023](https://2023.ctf.hitb.org/hitb-ctf-phuket-2023)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2023-08-24 11:00:00 - 2023-08-25 17:00:00 UTC+8  
-    **比赛权重** : 43.00  
-    **赛事主办** : HackerDom (https://ctftime.org/team/552)  
-    **添加日历** : https://ctftime.org/event/2037.ics  
     
