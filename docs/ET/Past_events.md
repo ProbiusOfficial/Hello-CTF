@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Abstract "DASCTF X 0psu3 十一月挑战赛"  
+    **比赛名称** : [DASCTF X 0psu3 十一月挑战赛](https://buuoj.cn/das)  
+    **比赛类型** : 团队赛|1-4人  
+    **报名时间** : 2023年11月15日 12:00 - 2023年11月25日 18:00  
+    **比赛时间** : 2023年11月25日 10:00 - 2023年11月25日 18:00  
+    **其他说明** : QQ群：580275770  
+    
 ??? Abstract "2023第七届HECTF信息安全挑战赛"  
     **比赛名称** : [2023第七届HECTF信息安全挑战赛](https://mp.weixin.qq.com/s/PT311Lq6qbPG2RGJthkcWA)  
     **比赛类型** : 个人赛  
@@ -318,7 +325,7 @@ comments: true
     **比赛名称** : [M*CTF 2023 Junior Quals](https://mctf.mtuci.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-11-04 17:00:00 - 2023-11-05 17:00:00 UTC+8  
-    **比赛权重** : 23.90  
+    **比赛权重** : 24.23  
     **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
     **添加日历** : https://ctftime.org/event/2095.ics  
     
@@ -381,7 +388,7 @@ comments: true
     **比赛名称** : [cursedCTF 2024 Halloween Teaser](https://cursedc.tf/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-10-31 08:00:00 - 2023-11-02 07:59:59 UTC+8  
-    **比赛权重** : 19.50  
+    **比赛权重** : 18.71  
     **赛事主办** : cursed (https://ctftime.org/team/199492)  
     **添加日历** : https://ctftime.org/event/2144.ics  
     
@@ -444,7 +451,7 @@ comments: true
     **比赛名称** : [SpookyCTF 2023](https://spooky.ctfd.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-10-28 07:00:00 - 2023-10-29 08:00:00 UTC+8  
-    **比赛权重** : 22.24  
+    **比赛权重** : 22.40  
     **赛事主办** : NICC (https://ctftime.org/team/214936)  
     **添加日历** : https://ctftime.org/event/2137.ics  
     
@@ -732,7 +739,7 @@ comments: true
     **比赛名称** : [BRICS+ CTF Quals 2023](https://brics-ctf.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-09-24 18:00:00 - 2023-09-25 18:00:00 UTC+8  
-    **比赛权重** : 24.69  
+    **比赛权重** : 24.68  
     **赛事主办** : ITMO FSIT (https://ctftime.org/team/264636)  
     **添加日历** : https://ctftime.org/event/2103.ics  
     
