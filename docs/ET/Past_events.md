@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Abstract "TPCTF2023"  
+    **比赛名称** : [TPCTF2023](https://adworld.xctf.org.cn/contest/assess?hash=73c83d88-7791-11ee-ab28-000c29bc20bf)  
+    **比赛类型** : 团队赛  
+    **报名时间** : 2023年11月01日 12:00 - 2023年11月27日 09:00  
+    **比赛时间** : 2023年11月25日 09:00 - 2023年11月27日 09:00  
+    **其他说明** : Discord: https://discord.gg/hq4m3KrVfG  QQ群：512066352  
+    
 ??? Abstract "2023第十四届极客大挑战"  
     **比赛名称** : [2023第十四届极客大挑战](https://game.sycsec.com/)  
     **比赛类型** : 个人赛  
@@ -111,6 +118,24 @@ comments: true
     **赛事主办** : BIZone (https://ctftime.org/team/32190)  
     **添加日历** : https://ctftime.org/event/2131.ics  
     
+??? Abstract "[TPCTF 2023](https://tpctf2023.xctf.org.cn/)"  
+    [![](https://ctftime.org/media/events/TPCTF_ba-stylenulla.top.png)](https://tpctf2023.xctf.org.cn/)  
+    **比赛名称** : [TPCTF 2023](https://tpctf2023.xctf.org.cn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-11-25 09:00:00 - 2023-11-27 09:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : TP-Link (https://ctftime.org/team/273760)  
+    **添加日历** : https://ctftime.org/event/2161.ics  
+    
+??? Abstract "[GlacierCTF 2023](https://glacierctf.com/)"  
+    [![](https://ctftime.org/media/events/3ae6516246966c8d08c81d3bd5451cfa.png)](https://glacierctf.com/)  
+    **比赛名称** : [GlacierCTF 2023](https://glacierctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-11-25 02:00:00 - 2023-11-27 02:00:00 UTC+8  
+    **比赛权重** : 24.32  
+    **赛事主办** : LosFuzzys (https://ctftime.org/team/8323)  
+    **添加日历** : https://ctftime.org/event/1992.ics  
+    
 ??? Abstract "[DefCamp CTF Finals 2023](https://dctf23-ad.cyber-edu.co/)"  
     [![](https://ctftime.org)](https://dctf23-ad.cyber-edu.co/)  
     **比赛名称** : [DefCamp CTF Finals 2023](https://dctf23-ad.cyber-edu.co/)  
@@ -152,7 +177,7 @@ comments: true
     **比赛名称** : [SibirCTF 2023](https://vk.com/sibirctf)  
     **比赛形式** : Attack-Defense  
     **比赛时间** : 2023-11-19 18:00:00 - 2023-11-20 03:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : keva (https://ctftime.org/team/2980)  
     **添加日历** : https://ctftime.org/event/2132.ics  
     
@@ -206,7 +231,7 @@ comments: true
     **比赛名称** : [1337UP LIVE CTF](https://ctf.intigriti.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-11-17 19:59:59 - 2023-11-19 07:59:59 UTC+8  
-    **比赛权重** : 24.84  
+    **比赛权重** : 24.86  
     **赛事主办** : Intigriti (https://ctftime.org/team/178083)  
     **添加日历** : https://ctftime.org/event/2134.ics  
     
@@ -278,7 +303,7 @@ comments: true
     **比赛名称** : [Cybercoliseum II](https://cybercoliseum.codeby.games/en)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-11-11 15:00:00 - 2023-11-13 15:00:00 UTC+8  
-    **比赛权重** : 20.60  
+    **比赛权重** : 20.95  
     **赛事主办** : RedHazzarTeam (https://ctftime.org/team/186788)  
     **添加日历** : https://ctftime.org/event/2100.ics  
     
@@ -290,15 +315,6 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : insecure (https://ctftime.org/team/21761)  
     **添加日历** : https://ctftime.org/event/1973.ics  
-    
-??? Abstract "[0CTF/TCTF 2023[POSTPONED]](https://ctf.0ops.sjtu.cn/)"  
-    [![](https://ctftime.org)](https://ctf.0ops.sjtu.cn/)  
-    **比赛名称** : [0CTF/TCTF 2023[POSTPONED]](https://ctf.0ops.sjtu.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-11-11 10:00:00 - 2023-11-13 10:00:00 UTC+8  
-    **比赛权重** : 100.00  
-    **赛事主办** : 0ops (https://ctftime.org/team/4419)  
-    **添加日历** : https://ctftime.org/event/2073.ics  
     
 ??? Abstract "[WannaGame Freshman 2023](https://cnsc.uit.edu.vn/ctf/)"  
     [![](https://ctftime.org)](https://cnsc.uit.edu.vn/ctf/)  
@@ -422,7 +438,7 @@ comments: true
     **比赛名称** : [cursedCTF 2024 Halloween Teaser](https://cursedc.tf/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-10-31 08:00:00 - 2023-11-02 07:59:59 UTC+8  
-    **比赛权重** : 18.71  
+    **比赛权重** : 19.50  
     **赛事主办** : cursed (https://ctftime.org/team/199492)  
     **添加日历** : https://ctftime.org/event/2144.ics  
     
@@ -974,13 +990,4 @@ comments: true
     **比赛权重** : 24.79  
     **赛事主办** : Super Guesser (https://ctftime.org/team/130817)  
     **添加日历** : https://ctftime.org/event/2076.ics  
-    
-??? Abstract "[DownUnderCTF 2023](https://play.duc.tf/)"  
-    [![](https://ctftime.org)](https://play.duc.tf/)  
-    **比赛名称** : [DownUnderCTF 2023](https://play.duc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-01 17:30:00 - 2023-09-03 17:30:00 UTC+8  
-    **比赛权重** : 46.63  
-    **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
-    **添加日历** : https://ctftime.org/event/1954.ics  
     

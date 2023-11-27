@@ -13,6 +13,14 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [某系统最新前台权限绕过分析](https://y4tacker.github.io/2023/11/26/year/2023/11/%E6%9F%90%E7%B3%BB%E7%BB%9F%E6%9C%80%E6%96%B0%E5%89%8D%E5%8F%B0%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E5%88%86%E6%9E%90/)  
+>by [Y4tacker](https://y4tacker.github.io), 2023-11-26
+
+f8699a5360fe9f42f41b98c5cc3203c7cbe9b0e7b973590e7fd52b27b474d14b936d11c308462091084b3defadb8d998d3381b897b97ebf2923245170a43a3ab58393c3b23741eb3526a32145ff738802bd1881ac66ab453888465f4f27015647ba7da...
+### [某系统最新前台RCE分析](https://y4tacker.github.io/2023/11/26/year/2023/11/%E6%9F%90%E7%B3%BB%E7%BB%9F%E6%9C%80%E6%96%B0%E5%89%8D%E5%8F%B0RCE%E5%88%86%E6%9E%90/)  
+>by [Y4tacker](https://y4tacker.github.io), 2023-11-26
+
+c2aca488ade3c6d7b8f66283f4fa5a919b5dffc64099fc7db64c2f89071e8f6e918d82a30070255c82ae3a58fc0fae28d71d31e89829a30577fbbf97e15fbb296a140d9667e248db8ee6fcb90c7b88bd06693de9c753ec30a7d6b12f9f2c47f1fd21cc...
 ### [一场跨越十年的超时空思维碰撞](https://blog.zgsec.cn/archives/535.html)  
 >by [曾哥](https://blog.zgsec.cn/), 2023-11-25
 
@@ -85,11 +93,3 @@ Pwnable.kr-leg 这一关挺有意思的，也不是很难，也借此学习一�
 >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-10-04
 
 前段时间有幸抢到了去香港的免费机票，于是顺路去香港开了中国银行香港和汇丰香港的账户本文就仅作一个开卡全过程记录吧汇丰(HSBC)周六那天经过了三家中银都没有成功，抱着一丝希望来到了HSBC葵芳分行，试图碰碰运气。当时并没有进行预约。入门后，我先询问前台是否还有号码。因为我没有预约，所以实际上是碰运气。结果，前台小姐姐非常客气地把我带到了一个办公小隔间门口，并告诉我等前一位先生结束之后就可以进去（没...
-### [HaE入门到精通：三条影响你一生的HaE规则](https://blog.zgsec.cn/archives/481.html)  
->by [曾哥](https://blog.zgsec.cn/), 2023-10-01
-
-0# 概述最近一段时间项目也比较多，再加上最近还在维护开源项目，所以挺忙的。乘着国庆时间，好好放松一下，顺便借着国庆期间更新一下自己许久未更新的博客哈哈~本篇文章，我们将深入学习著名BurpSuite工具的插件 HaE 的使用和拓展，希望这三条影响你一生的HaE规则能给你带来帮助~[...]...
-### [Flask的部署](https://xia0ji233.github.io/2023/10/01/Flask-deploy/)  
->by [xia0ji233](https://xia0ji233.pro/), 2023-10-01
-
-最近在做毕业设计的时候搞了一下，记录一下。环境在使用 app run 去跑 flask 项目的时候，会出现这么一句话：WARNING: This is a development server. Do not use it in a production deployment.大概意思就是，不要用这种方式部署到生产环境中，之前我倒是直接就是这么部署的，但是明显会感觉部分操作会发生卡顿，因此这里顺着...
