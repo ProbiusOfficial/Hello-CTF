@@ -26,13 +26,6 @@ comments: true
     **比赛时间** : 2023年11月25日 09:00 - 2023年11月27日 09:00  
     **其他说明** : Discord: https://discord.gg/hq4m3KrVfG  QQ群：512066352  
     
-??? Abstract "2023第十四届极客大挑战"  
-    **比赛名称** : [2023第十四届极客大挑战](https://game.sycsec.com/)  
-    **比赛类型** : 个人赛  
-    **报名时间** : 2023年10月25日 22:00 - 2023年11月26日 12:00  
-    **比赛时间** : 2023年10月26日 20:00 - 2023年11月26日 20:00  
-    **其他说明** : QQ群：777042365  
-    
 
 ## 国际赛事
 
@@ -80,31 +73,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : TP-Link (https://ctftime.org/team/273760)  
     **添加日历** : https://ctftime.org/event/2161.ics  
-    
-??? Abstract "[CTFZone 2023 Final](http://ctf.bi.zone/)"  
-    [![](https://ctftime.org/media/events/logo2_6.png)](http://ctf.bi.zone/)  
-    **比赛名称** : [CTFZone 2023 Final](http://ctf.bi.zone/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2023-11-25 17:00:00 - 2023-11-26 03:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : BIZone (https://ctftime.org/team/32190)  
-    **添加日历** : https://ctftime.org/event/2131.ics  
-    
-??? Abstract "[Ph0wn 2023](https://ph0wn.org/)"  
-    [![](https://ctftime.org/media/events/logo-ph0wn_4.png)](https://ph0wn.org/)  
-    **比赛名称** : [Ph0wn 2023](https://ph0wn.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-11-25 18:00:00 - 2023-11-26 02:00:00 UTC+8  
-    **比赛权重** : 18.00  
-    **赛事主办** : Pic0wn (https://ctftime.org/team/6514)  
-    **添加日历** : https://ctftime.org/event/2168.ics  
-    
-??? Abstract "[m0leCon Beginner CTF 2023](https://beginner.m0lecon.it/)"  
-    [![](https://ctftime.org)](https://beginner.m0lecon.it/)  
-    **比赛名称** : [m0leCon Beginner CTF 2023](https://beginner.m0lecon.it/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-11-25 21:00:00 - 2023-11-26 02:00:00 UTC+8  
-    **比赛权重** : 50.00  
-    **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
-    **添加日历** : https://ctftime.org/event/2170.ics  
     

@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Abstract "2023第十四届极客大挑战"  
+    **比赛名称** : [2023第十四届极客大挑战](https://game.sycsec.com/)  
+    **比赛类型** : 个人赛  
+    **报名时间** : 2023年10月25日 22:00 - 2023年11月26日 12:00  
+    **比赛时间** : 2023年10月26日 20:00 - 2023年11月26日 20:00  
+    **其他说明** : QQ群：777042365  
+    
 ??? Abstract "DASCTF X 0psu3 十一月挑战赛"  
     **比赛名称** : [DASCTF X 0psu3 十一月挑战赛](https://buuoj.cn/das)  
     **比赛类型** : 团队赛|1-4人  
@@ -77,6 +84,33 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[m0leCon Beginner CTF 2023](https://beginner.m0lecon.it/)"  
+    [![](https://ctftime.org)](https://beginner.m0lecon.it/)  
+    **比赛名称** : [m0leCon Beginner CTF 2023](https://beginner.m0lecon.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-11-25 21:00:00 - 2023-11-26 02:00:00 UTC+8  
+    **比赛权重** : 50.00  
+    **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
+    **添加日历** : https://ctftime.org/event/2170.ics  
+    
+??? Abstract "[Ph0wn 2023](https://ph0wn.org/)"  
+    [![](https://ctftime.org/media/events/logo-ph0wn_4.png)](https://ph0wn.org/)  
+    **比赛名称** : [Ph0wn 2023](https://ph0wn.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-11-25 18:00:00 - 2023-11-26 02:00:00 UTC+8  
+    **比赛权重** : 18.00  
+    **赛事主办** : Pic0wn (https://ctftime.org/team/6514)  
+    **添加日历** : https://ctftime.org/event/2168.ics  
+    
+??? Abstract "[CTFZone 2023 Final](http://ctf.bi.zone/)"  
+    [![](https://ctftime.org/media/events/logo2_6.png)](http://ctf.bi.zone/)  
+    **比赛名称** : [CTFZone 2023 Final](http://ctf.bi.zone/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2023-11-25 17:00:00 - 2023-11-26 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : BIZone (https://ctftime.org/team/32190)  
+    **添加日历** : https://ctftime.org/event/2131.ics  
+    
 ??? Abstract "[DefCamp CTF Finals 2023](https://dctf23-ad.cyber-edu.co/)"  
     [![](https://ctftime.org)](https://dctf23-ad.cyber-edu.co/)  
     **比赛名称** : [DefCamp CTF Finals 2023](https://dctf23-ad.cyber-edu.co/)  
@@ -145,7 +179,7 @@ comments: true
     **比赛名称** : [isfcr{ctf} 2023](https://isfcr.ctfd.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-11-18 18:30:00 - 2023-11-19 18:30:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : ISFCR PESU (https://ctftime.org/team/166645)  
     **添加日历** : https://ctftime.org/event/2167.ics  
     
@@ -172,7 +206,7 @@ comments: true
     **比赛名称** : [1337UP LIVE CTF](https://ctf.intigriti.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-11-17 19:59:59 - 2023-11-19 07:59:59 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 24.84  
     **赛事主办** : Intigriti (https://ctftime.org/team/178083)  
     **添加日历** : https://ctftime.org/event/2134.ics  
     
@@ -949,31 +983,4 @@ comments: true
     **比赛权重** : 46.63  
     **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
     **添加日历** : https://ctftime.org/event/1954.ics  
-    
-??? Abstract "[NSSCTF 2nd](https://www.nssctf.cn/)"  
-    [![](https://ctftime.org/media/events/2nd.png)](https://www.nssctf.cn/)  
-    **比赛名称** : [NSSCTF 2nd](https://www.nssctf.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-08-27 18:00:00 - 2023-08-28 18:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : NSS (https://ctftime.org/team/87278)  
-    **添加日历** : https://ctftime.org/event/2071.ics  
-    
-??? Abstract "[AVSS (Adversarial Vulnerability Scoring System) Contest](https://geekcon.top/en/index.html)"  
-    [![](https://ctftime.org)](https://geekcon.top/en/index.html)  
-    **比赛名称** : [AVSS (Adversarial Vulnerability Scoring System) Contest](https://geekcon.top/en/index.html)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-08-26 18:00:00 - 2023-08-28 18:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : GEEKCON (https://ctftime.org/team/255059)  
-    **添加日历** : https://ctftime.org/event/2066.ics  
-    
-??? Abstract "[SekaiCTF 2023](https://ctf.sekai.team/)"  
-    [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1.png)](https://ctf.sekai.team/)  
-    **比赛名称** : [SekaiCTF 2023](https://ctf.sekai.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-08-26 00:00:00 - 2023-08-28 00:00:00 UTC+8  
-    **比赛权重** : 24.86  
-    **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
-    **添加日历** : https://ctftime.org/event/1923.ics  
     

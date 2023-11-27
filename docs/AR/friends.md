@@ -13,6 +13,10 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [一场跨越十年的超时空思维碰撞](https://blog.zgsec.cn/archives/535.html)  
+>by [曾哥](https://blog.zgsec.cn/), 2023-11-25
+
+0# 概述最近反正也没啥事情干，突然看到朋友 青山ya 师傅审计出了腾讯开源的xSRC系统的逻辑漏洞，于是我就没事干，把开源的xSRC源码拉下来跟着审计了一波但在审计的过程中，我在TSRC（腾讯安全应急响应中心）的在线平台中，看到了一个好玩的东西：ScanWebshell：此工具可用于检测php Webshell咦，我平时不也在研究WebShell的免杀吗？兴趣使然，我打算下载下来看看[...]...
 ### [I Doc View全版本前台RCE漏洞分析汇总](https://y4tacker.github.io/2023/11/22/year/2023/11/I%20Doc%20View%E5%85%A8%E7%89%88%E6%9C%AC%E5%89%8D%E5%8F%B0RCE%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90%E6%B1%87%E6%80%BB/)  
 >by [Y4tacker](https://y4tacker.github.io), 2023-11-22
 
@@ -89,7 +93,3 @@ Pwnable.kr-leg 这一关挺有意思的，也不是很难，也借此学习一�
 >by [xia0ji233](https://xia0ji233.pro/), 2023-10-01
 
 最近在做毕业设计的时候搞了一下，记录一下。环境在使用 app run 去跑 flask 项目的时候，会出现这么一句话：WARNING: This is a development server. Do not use it in a production deployment.大概意思就是，不要用这种方式部署到生产环境中，之前我倒是直接就是这么部署的，但是明显会感觉部分操作会发生卡顿，因此这里顺着...
-### [Fourier-Serials](https://xia0ji233.github.io/2023/09/15/Forier-Serials/)  
->by [xia0ji233](https://xia0ji233.pro/), 2023-09-15
-
-Today study something about Fourier serials Taylor SerialAs we all know,Taylor formula give us the way for expressing complicated function as simple polynomial function.We should clearly remember the...
