@@ -104,6 +104,24 @@ comments: true
     **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
     **添加日历** : https://ctftime.org/event/2146.ics  
     
+??? Abstract "[M*CTF 2023 Junior Finals](https://mctf.mtuci.ru/)"  
+    [![](https://ctftime.org/media/events/Immagine_PNG_1.png)](https://mctf.mtuci.ru/)  
+    **比赛名称** : [M*CTF 2023 Junior Finals](https://mctf.mtuci.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-02 15:00:00 - 2023-12-02 23:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
+    **添加日历** : https://ctftime.org/event/2197.ics  
+    
+??? Abstract "[M*CTF 2023 Finals](https://mctf.mtuci.ru/)"  
+    [![](https://ctftime.org/media/events/Immagine_PNG_2.png)](https://mctf.mtuci.ru/)  
+    **比赛名称** : [M*CTF 2023 Finals](https://mctf.mtuci.ru/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2023-12-03 15:00:00 - 2023-12-04 00:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
+    **添加日历** : https://ctftime.org/event/2198.ics  
+    
 ??? Abstract "[HUNTING SEASON: GROUP-IB 20TH ANNIVERSARY CTF](https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime)"  
     [![](https://ctftime.org/media/events/InstaTelega__1080x1080_12.png)](https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime)  
     **比赛名称** : [HUNTING SEASON: GROUP-IB 20TH ANNIVERSARY CTF](https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime)  
@@ -144,7 +162,7 @@ comments: true
     [![](https://ctftime.org)](https://ctf.0ops.sjtu.cn/)  
     **比赛名称** : [0CTF/TCTF 2023](https://ctf.0ops.sjtu.cn/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-09 10:00:00 - 2023-12-10 10:00:00 UTC+8  
+    **比赛时间** : 2023-12-09 10:00:00 - 2023-12-11 10:00:00 UTC+8  
     **比赛权重** : 100.00  
     **赛事主办** : 0ops (https://ctftime.org/team/4419)  
     **添加日历** : https://ctftime.org/event/2073.ics  
@@ -238,6 +256,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
     **添加日历** : https://ctftime.org/event/2160.ics  
+    
+??? Abstract "[37C3 Potluck CTF](https://potluckctf.com/)"  
+    [![](https://ctftime.org/media/events/logo-512-white.png)](https://potluckctf.com/)  
+    **比赛名称** : [37C3 Potluck CTF](https://potluckctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-29 02:00:00 - 2023-12-30 02:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : ZetaTwo (https://ctftime.org/team/9407)  
+    **添加日历** : https://ctftime.org/event/2199.ics  
     
 ??? Abstract "[ASIS CTF Finals 2023](https://asisctf.com/)"  
     [![](https://ctftime.org/media/events/asis_logo_512_2.png)](https://asisctf.com/)  
