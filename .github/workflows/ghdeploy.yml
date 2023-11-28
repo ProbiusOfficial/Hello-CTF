@@ -1,12 +1,11 @@
-name: Deploy to Github Pages and Update friends.md
-
+name: Deploy to Github Pages and Automatically update
 on:
   push:
     branches:
       - master
       - main
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0/4 * * *"
 
 permissions:
   contents: write
