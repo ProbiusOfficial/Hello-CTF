@@ -13,6 +13,10 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [HITCTF2023题解](https://xia0ji233.github.io/2023/11/27/HITCTF2023/)  
+>by [xia0ji233](https://xia0ji233.pro/), 2023-11-27
+
+重铸mininep荣光，我辈义不容辞战队信息战队名称：mininep本次比赛附件，WEB和Reverse就不放了，主要是 Pwn，MISC和Cry。因为超过了 Github 的上传限制，因此单独放 MISC 的音频题附件Pwnscanf会先读入一个序列，然后根据序列去调用功能。[ ：分配大小为 0x20 的堆块，并读入一个 int 数据。] ：输出堆块的 int 数据并 free 掉堆块并且马上将...
 ### [某系统最新前台权限绕过分析](https://y4tacker.github.io/2023/11/26/year/2023/11/%E6%9F%90%E7%B3%BB%E7%BB%9F%E6%9C%80%E6%96%B0%E5%89%8D%E5%8F%B0%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E5%88%86%E6%9E%90/)  
 >by [Y4tacker](https://y4tacker.github.io), 2023-11-26
 
@@ -89,7 +93,3 @@ Pwnable.kr-leg 这一关挺有意思的，也不是很难，也借此学习一�
 >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-10-04
 
 事情是这样的：国庆期间国内网络对很多域名进行了污染，其中影响最大的是Minecraft正版验证api以及VSCode官网。当尝试登录或使用上述应用时，其HTTP请求会被重定向到国家反诈中心以及工信部反诈中心的提示页面也因为这波莫名其妙的风波，最近某位朋友的手头大量部署在vercel上的服务被运营商劫持，被301跳转到反诈中心页面对于用户而言，只能切换DNS或者使用代理来防止劫持昨天和一位大佬交流过...
-### [香港借记卡：汇丰(HSBC)&amp;中银香港(BOCHK)开卡过程全记录](https://blog.stv.lol/archives/74/)  
->by [Steven Lynn's Blog](https://blog.stv.lol), 2023-10-04
-
-前段时间有幸抢到了去香港的免费机票，于是顺路去香港开了中国银行香港和汇丰香港的账户本文就仅作一个开卡全过程记录吧汇丰(HSBC)周六那天经过了三家中银都没有成功，抱着一丝希望来到了HSBC葵芳分行，试图碰碰运气。当时并没有进行预约。入门后，我先询问前台是否还有号码。因为我没有预约，所以实际上是碰运气。结果，前台小姐姐非常客气地把我带到了一个办公小隔间门口，并告诉我等前一位先生结束之后就可以进去（没...

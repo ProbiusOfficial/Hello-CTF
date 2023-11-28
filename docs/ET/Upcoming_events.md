@@ -59,9 +59,9 @@ comments: true
     **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
     **添加日历** : https://ctftime.org/event/2033.ics  
     
-??? Abstract "[BSides Odisha Web3 CTF](https://bsidesodisha.in/public/ctf.html)"  
-    [![](https://ctftime.org/media/events/Neon_Blue_and_Black_Gamer_Badge_Logo.png)](https://bsidesodisha.in/public/ctf.html)  
-    **比赛名称** : [BSides Odisha Web3 CTF](https://bsidesodisha.in/public/ctf.html)  
+??? Abstract "[BSides Odisha Web3 CTF](https://docs.google.com/forms/d/e/1FAIpQLSeAF6RXd5ut-8RjPmb2veQmUKTiUuQ_7WvMldmEpbRVKxeeBA/viewform?usp=sf_link)"  
+    [![](https://ctftime.org/media/events/Neon_Blue_and_Black_Gamer_Badge_Logo.png)](https://docs.google.com/forms/d/e/1FAIpQLSeAF6RXd5ut-8RjPmb2veQmUKTiUuQ_7WvMldmEpbRVKxeeBA/viewform?usp=sf_link)  
+    **比赛名称** : [BSides Odisha Web3 CTF](https://docs.google.com/forms/d/e/1FAIpQLSeAF6RXd5ut-8RjPmb2veQmUKTiUuQ_7WvMldmEpbRVKxeeBA/viewform?usp=sf_link)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-12-01 04:00:00 - 2023-12-02 22:00:00 UTC+8  
     **比赛权重** : 0.00  
