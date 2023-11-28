@@ -225,6 +225,10 @@ nav:
       - 3. &nbsp; 【WEB】AWD技巧: HC_AWD/awd_web.exp.md
       - 4. &nbsp; 【PWN】AWD技巧: HC_AWD/awd_pwn.exp.md
 
+    - AI:
+      - HC_AI/index.md
+      - AI介绍: HC_AI/What_is_AI.md
+
     - 附录:
       - 提问的智慧: HC_Appendix/how-to-ask.md
       - CTF赛事: HC_Appendix/CTFevent.md
