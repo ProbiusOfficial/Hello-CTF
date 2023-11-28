@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Abstract "第二届数据安全大赛暨首届“数信杯”数据安全大赛"  
+    **比赛名称** : [第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)  
+    **比赛类型** : 团队赛|1-3人  
+    **报名时间** : 2023年11月15日 00:00 - 2099年12月31日 00:00  
+    **比赛时间** : 2099年12月31日 00:00 - 2099年12月31日 00:00  
+    **其他说明** : 比赛时间未定  
+    
 ??? Abstract "第二届红桥杯渗透测试挑战赛"  
     **比赛名称** : [第二届红桥杯渗透测试挑战赛](https://tryhackme.com/)  
     **比赛类型** : 个人赛  
@@ -220,15 +227,6 @@ comments: true
     **比赛权重** : 6.67  
     **赛事主办** : UAC (https://ctftime.org/team/140846)  
     **添加日历** : https://ctftime.org/event/2099.ics  
-    
-??? Abstract "[DiceCTF Teaser 2023](https://ctf.dicega.ng/)"  
-    [![](https://ctftime.org)](https://ctf.dicega.ng/)  
-    **比赛名称** : [DiceCTF Teaser 2023](https://ctf.dicega.ng/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-16 05:00:00 - 2023-12-17 05:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
-    **添加日历** : https://ctftime.org/event/2162.ics  
     
 ??? Abstract "[BackdoorCTF 2023](https://backdoor.infoseciitr.in/)"  
     [![](https://ctftime.org/media/events/bckdr.png)](https://backdoor.infoseciitr.in/)  
