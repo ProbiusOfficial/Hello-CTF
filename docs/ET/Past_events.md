@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Abstract "第三届ISCTF网络安全技能竞赛"  
+    **比赛名称** : [第三届ISCTF网络安全技能竞赛](https://isctf2023.bluesharkinfo.com/)  
+    **比赛类型** : 新生赛  
+    **报名时间** : 2023年11月15日 12:00 - 2023年11月20日 12:00  
+    **比赛时间** : 2023年11月22日 09:00 - 2023年11月29日 21:00  
+    **其他说明** : QQ群：731841782  
+    
 ??? Abstract "TPCTF2023"  
     **比赛名称** : [TPCTF2023](https://adworld.xctf.org.cn/contest/assess?hash=73c83d88-7791-11ee-ab28-000c29bc20bf)  
     **比赛类型** : 团队赛  
