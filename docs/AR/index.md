@@ -13,6 +13,10 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [Apache ActiveMQ Jolokia远程代码执行(CVE-2022-41678)简析及绕Waf技法](https://y4tacker.github.io/2023/11/29/year/2023/11/Apache-ActiveMQ-Jolokia%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C-CVE-2022-41678-%E7%AE%80%E6%9E%90%E5%8F%8A%E7%BB%95Waf%E6%8A%80%E6%B3%95/)  
+>by [Y4tacker](https://y4tacker.github.io), 2023-11-29
+
+b911718fdd890810916fcf22cb8016ca11ae7d872d624941bd9b20d0cf7e4036a45e816cf5955164cc4e0d7bc4e06277d1f41e412de1243b7603f6b8db578947e40f8bad6233f702a2ae224c03f173d620410ea4abfdb0fba73dbe0f45d4327f2d262b...
 ### [HITCTF2023题解](https://xia0ji233.github.io/2023/11/27/HITCTF2023/)  
 >by [xia0ji233](https://xia0ji233.pro/), 2023-11-27
 
@@ -89,7 +93,3 @@ Pwnable.kr-leg 这一关挺有意思的，也不是很难，也借此学习一�
 >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-10-12
 
 前因自我判定进入比较明显的焦虑抑郁状态已经至少两年多了，前因可看这篇文章[post cid="58" /]当然更主要的还是远因，一些童年成长时的家庭、环境因素，造成了长期表达能力受到压制，进而失去表达情感的能力，比如不会大笑也不会大哭受到这些因素的影响，开始不断地侵蚀我的自我意识，在高中那会就开始出现记忆力下降和无法专注等情况，但在当时由于并未了解过相关心理学知识并不知道这是长期焦虑抑郁所致症状进...
-### [一种基于HSTS的防域名劫持的方法](https://blog.stv.lol/archives/75/)  
->by [Steven Lynn's Blog](https://blog.stv.lol), 2023-10-04
-
-事情是这样的：国庆期间国内网络对很多域名进行了污染，其中影响最大的是Minecraft正版验证api以及VSCode官网。当尝试登录或使用上述应用时，其HTTP请求会被重定向到国家反诈中心以及工信部反诈中心的提示页面也因为这波莫名其妙的风波，最近某位朋友的手头大量部署在vercel上的服务被运营商劫持，被301跳转到反诈中心页面对于用户而言，只能切换DNS或者使用代理来防止劫持昨天和一位大佬交流过...
