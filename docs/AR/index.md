@@ -13,6 +13,10 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [Apache ActiveMQ Jolokia远程代码执行不依赖JDK打法](https://y4tacker.github.io/2023/11/30/year/2023/11/Apache-ActiveMQ-Jolokia%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E4%B8%8D%E4%BE%9D%E8%B5%96JDK%E6%89%93%E6%B3%95/)  
+>by [Y4tacker](https://y4tacker.github.io), 2023-11-30
+
+Apache ActiveMQ Jolokia远程代码执行不依赖JDK打法想着最近连写了几篇加密博客有点对不起看我博客的粉丝了，今天抽空简单分享一个姿势影响版本大概测了一下Apache ActiveMQ 5.16.x系列无log4j2的mbeanApache ActiveMQ 5.17.x系列漏洞版本受影响初探从网上已公开的打法可以知道使用jdk.management.jfr:type=Fligh...
 ### [Apache ActiveMQ Jolokia远程代码执行(CVE-2022-41678)简析及绕Waf技法](https://y4tacker.github.io/2023/11/29/year/2023/11/Apache-ActiveMQ-Jolokia%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C-CVE-2022-41678-%E7%AE%80%E6%9E%90%E5%8F%8A%E7%BB%95Waf%E6%8A%80%E6%B3%95/)  
 >by [Y4tacker](https://y4tacker.github.io), 2023-11-29
 
@@ -89,7 +93,3 @@ Pwnable.kr-leg 这一关挺有意思的，也不是很难，也借此学习一�
 >by [曾哥](https://blog.zgsec.cn/), 2023-10-21
 
 如果你要参加AWD相关比赛，相信本项目能给你带来帮助~手册版本号：V1.2.2-2023/10/21这是一本能让你从零开始学习AWD并深入AWD的手册，我也会根据经验和需求逐步完善相关内容如果你觉得本项目不错，欢迎给我点个Star，万分感谢~~ 有什么新的攻击或者防守的姿势、手法，欢迎与我交流[...]...
-### [记一次抑郁诊断和开药用药记录](https://blog.stv.lol/archives/76/)  
->by [Steven Lynn's Blog](https://blog.stv.lol), 2023-10-12
-
-前因自我判定进入比较明显的焦虑抑郁状态已经至少两年多了，前因可看这篇文章[post cid="58" /]当然更主要的还是远因，一些童年成长时的家庭、环境因素，造成了长期表达能力受到压制，进而失去表达情感的能力，比如不会大笑也不会大哭受到这些因素的影响，开始不断地侵蚀我的自我意识，在高中那会就开始出现记忆力下降和无法专注等情况，但在当时由于并未了解过相关心理学知识并不知道这是长期焦虑抑郁所致症状进...
