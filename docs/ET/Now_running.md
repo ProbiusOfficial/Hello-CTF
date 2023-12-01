@@ -49,3 +49,21 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
+??? Abstract "[m0leCon CTF 2023](https://finals.m0lecon.it/)"  
+    [![](https://ctftime.org)](https://finals.m0lecon.it/)  
+    **比赛名称** : [m0leCon CTF 2023](https://finals.m0lecon.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-01 01:00:00 - 2023-12-02 01:00:00 UTC+8  
+    **比赛权重** : 50.00  
+    **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
+    **添加日历** : https://ctftime.org/event/2033.ics  
+    
+??? Abstract "[BSides Odisha Web3 CTF](https://academy.quillaudits.com/challenges)"  
+    [![](https://ctftime.org/media/events/Neon_Blue_and_Black_Gamer_Badge_Logo.png)](https://academy.quillaudits.com/challenges)  
+    **比赛名称** : [BSides Odisha Web3 CTF](https://academy.quillaudits.com/challenges)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-01 04:00:00 - 2023-12-02 22:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : BSides Odisha (https://ctftime.org/team/274130)  
+    **添加日历** : https://ctftime.org/event/2180.ics  
+    
