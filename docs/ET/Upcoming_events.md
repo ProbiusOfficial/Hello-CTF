@@ -57,24 +57,6 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[WannaGame Championship 2023](https://cnsc.uit.edu.vn/ctf/)"  
-    [![](https://ctftime.org/media/events/405223021_1146746909620738_23415812653969977_n.png)](https://cnsc.uit.edu.vn/ctf/)  
-    **比赛名称** : [WannaGame Championship 2023](https://cnsc.uit.edu.vn/ctf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-02 09:00:00 - 2023-12-04 09:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
-    **添加日历** : https://ctftime.org/event/2146.ics  
-    
-??? Abstract "[M*CTF 2023 Junior Finals](https://mctf.mtuci.ru/)"  
-    [![](https://ctftime.org/media/events/Immagine_PNG_1.png)](https://mctf.mtuci.ru/)  
-    **比赛名称** : [M*CTF 2023 Junior Finals](https://mctf.mtuci.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-02 15:00:00 - 2023-12-02 23:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-    **添加日历** : https://ctftime.org/event/2197.ics  
-    
 ??? Abstract "[M*CTF 2023 Finals](https://mctf.mtuci.ru/)"  
     [![](https://ctftime.org/media/events/Immagine_PNG_2.png)](https://mctf.mtuci.ru/)  
     **比赛名称** : [M*CTF 2023 Finals](https://mctf.mtuci.ru/)  
