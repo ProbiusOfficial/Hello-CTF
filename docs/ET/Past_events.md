@@ -84,6 +84,24 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[M*CTF 2023 Junior Finals](https://mctf.mtuci.ru/)"  
+    [![](https://ctftime.org/media/events/Immagine_PNG_1.png)](https://mctf.mtuci.ru/)  
+    **比赛名称** : [M*CTF 2023 Junior Finals](https://mctf.mtuci.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-02 15:00:00 - 2023-12-02 23:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
+    **添加日历** : https://ctftime.org/event/2197.ics  
+    
+??? Abstract "[BSides Odisha Web3 CTF](https://academy.quillaudits.com/challenges)"  
+    [![](https://ctftime.org/media/events/Neon_Blue_and_Black_Gamer_Badge_Logo.png)](https://academy.quillaudits.com/challenges)  
+    **比赛名称** : [BSides Odisha Web3 CTF](https://academy.quillaudits.com/challenges)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-01 04:00:00 - 2023-12-02 22:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : BSides Odisha (https://ctftime.org/team/274130)  
+    **添加日历** : https://ctftime.org/event/2180.ics  
+    
 ??? Abstract "[m0leCon CTF 2023](https://finals.m0lecon.it/)"  
     [![](https://ctftime.org)](https://finals.m0lecon.it/)  
     **比赛名称** : [m0leCon CTF 2023](https://finals.m0lecon.it/)  
@@ -965,22 +983,4 @@ comments: true
     **比赛权重** : 24.52  
     **赛事主办** : Competitive Cyber at Mason (https://ctftime.org/team/176906)  
     **添加日历** : https://ctftime.org/event/2030.ics  
-    
-??? Abstract "[HITCON CTF 2023 Quals](https://ctf2023.hitcon.org/)"  
-    [![](https://ctftime.org/media/events/hitcon2_5_1_1.png)](https://ctf2023.hitcon.org/)  
-    **比赛名称** : [HITCON CTF 2023 Quals](https://ctf2023.hitcon.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-08 22:00:00 - 2023-09-10 22:00:00 UTC+8  
-    **比赛权重** : 99.75  
-    **赛事主办** : HITCON (https://ctftime.org/team/8299)  
-    **添加日历** : https://ctftime.org/event/2019.ics  
-    
-??? Abstract "[Urmia CTF 2023](https://uctf.ir/)"  
-    [![](https://ctftime.org/media/events/NewLogo.jpg)](https://uctf.ir/)  
-    **比赛名称** : [Urmia CTF 2023](https://uctf.ir/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-02 20:00:00 - 2023-09-04 20:00:00 UTC+8  
-    **比赛权重** : 24.24  
-    **赛事主办** : UCG (https://ctftime.org/team/255103)  
-    **添加日历** : https://ctftime.org/event/2067.ics  
     

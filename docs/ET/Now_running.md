@@ -49,15 +49,6 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Abstract "[BSides Odisha Web3 CTF](https://academy.quillaudits.com/challenges)"  
-    [![](https://ctftime.org/media/events/Neon_Blue_and_Black_Gamer_Badge_Logo.png)](https://academy.quillaudits.com/challenges)  
-    **比赛名称** : [BSides Odisha Web3 CTF](https://academy.quillaudits.com/challenges)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-01 04:00:00 - 2023-12-02 22:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : BSides Odisha (https://ctftime.org/team/274130)  
-    **添加日历** : https://ctftime.org/event/2180.ics  
-    
 ??? Abstract "[TUCTF 2023](https://tuctf.com/)"  
     [![](https://ctftime.org/media/events/tuctf_small.png)](https://tuctf.com/)  
     **比赛名称** : [TUCTF 2023](https://tuctf.com/)  
@@ -93,13 +84,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
     **添加日历** : https://ctftime.org/event/2146.ics  
-    
-??? Abstract "[M*CTF 2023 Junior Finals](https://mctf.mtuci.ru/)"  
-    [![](https://ctftime.org/media/events/Immagine_PNG_1.png)](https://mctf.mtuci.ru/)  
-    **比赛名称** : [M*CTF 2023 Junior Finals](https://mctf.mtuci.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-02 15:00:00 - 2023-12-02 23:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-    **添加日历** : https://ctftime.org/event/2197.ics  
     
