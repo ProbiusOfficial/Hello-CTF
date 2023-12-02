@@ -84,6 +84,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[m0leCon CTF 2023](https://finals.m0lecon.it/)"  
+    [![](https://ctftime.org)](https://finals.m0lecon.it/)  
+    **比赛名称** : [m0leCon CTF 2023](https://finals.m0lecon.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-01 01:00:00 - 2023-12-02 01:00:00 UTC+8  
+    **比赛权重** : 50.00  
+    **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
+    **添加日历** : https://ctftime.org/event/2033.ics  
+    
 ??? Abstract "[m0leCon Beginner CTF 2023](https://beginner.m0lecon.it/)"  
     [![](https://ctftime.org)](https://beginner.m0lecon.it/)  
     **比赛名称** : [m0leCon Beginner CTF 2023](https://beginner.m0lecon.it/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 24.24  
     **赛事主办** : UCG (https://ctftime.org/team/255103)  
     **添加日历** : https://ctftime.org/event/2067.ics  
-    
-??? Abstract "[WACON 2023 Prequal](https://global.wacon.world/)"  
-    [![](https://ctftime.org/media/events/logo_10.jpg)](https://global.wacon.world/)  
-    **比赛名称** : [WACON 2023 Prequal](https://global.wacon.world/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-02 08:00:00 - 2023-09-03 08:00:00 UTC+8  
-    **比赛权重** : 24.79  
-    **赛事主办** : Super Guesser (https://ctftime.org/team/130817)  
-    **添加日历** : https://ctftime.org/event/2076.ics  
     
