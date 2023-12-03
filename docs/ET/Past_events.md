@@ -84,6 +84,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[M*CTF 2023 Finals](https://mctf.mtuci.ru/)"  
+    [![](https://ctftime.org/media/events/Immagine_PNG_2.png)](https://mctf.mtuci.ru/)  
+    **比赛名称** : [M*CTF 2023 Finals](https://mctf.mtuci.ru/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2023-12-03 15:00:00 - 2023-12-04 00:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
+    **添加日历** : https://ctftime.org/event/2198.ics  
+    
 ??? Abstract "[M*CTF 2023 Junior Finals](https://mctf.mtuci.ru/)"  
     [![](https://ctftime.org/media/events/Immagine_PNG_1.png)](https://mctf.mtuci.ru/)  
     **比赛名称** : [M*CTF 2023 Junior Finals](https://mctf.mtuci.ru/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 23.94  
     **赛事主办** : FITSEC (https://ctftime.org/team/65296)  
     **添加日历** : https://ctftime.org/event/2054.ics  
-    
-??? Abstract "[PatriotCTF 2023](https://pctf.competitivecyber.club/)"  
-    [![](https://ctftime.org/media/events/PatriotCTF.png)](https://pctf.competitivecyber.club/)  
-    **比赛名称** : [PatriotCTF 2023](https://pctf.competitivecyber.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-09 05:00:00 - 2023-09-11 05:00:00 UTC+8  
-    **比赛权重** : 24.52  
-    **赛事主办** : Competitive Cyber at Mason (https://ctftime.org/team/176906)  
-    **添加日历** : https://ctftime.org/event/2030.ics  
     

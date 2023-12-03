@@ -85,12 +85,3 @@ comments: true
     **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
     **添加日历** : https://ctftime.org/event/2146.ics  
     
-??? Abstract "[M*CTF 2023 Finals](https://mctf.mtuci.ru/)"  
-    [![](https://ctftime.org/media/events/Immagine_PNG_2.png)](https://mctf.mtuci.ru/)  
-    **比赛名称** : [M*CTF 2023 Finals](https://mctf.mtuci.ru/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2023-12-03 15:00:00 - 2023-12-04 00:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-    **添加日历** : https://ctftime.org/event/2198.ics  
-    
