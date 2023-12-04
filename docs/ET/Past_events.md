@@ -102,6 +102,33 @@ comments: true
     **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
     **添加日历** : https://ctftime.org/event/2197.ics  
     
+??? Abstract "[NewportBlakeCTF 2023](https://nbctf.com/)"  
+    [![](https://ctftime.org)](https://nbctf.com/)  
+    **比赛名称** : [NewportBlakeCTF 2023](https://nbctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-02 08:00:00 - 2023-12-04 08:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : NewportBlakeCTF (https://ctftime.org/team/258029)  
+    **添加日历** : https://ctftime.org/event/2072.ics  
+    
+??? Abstract "[BlazCTF 2023](https://ctf.blaz.ai/)"  
+    [![](https://ctftime.org)](https://ctf.blaz.ai/)  
+    **比赛名称** : [BlazCTF 2023](https://ctf.blaz.ai/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-02 02:00:00 - 2023-12-04 02:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : FuzzLand (https://ctftime.org/team/270659)  
+    **添加日历** : https://ctftime.org/event/2145.ics  
+    
+??? Abstract "[TUCTF 2023](https://tuctf.com/)"  
+    [![](https://ctftime.org/media/events/tuctf_small.png)](https://tuctf.com/)  
+    **比赛名称** : [TUCTF 2023](https://tuctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-02 01:00:00 - 2023-12-04 01:00:00 UTC+8  
+    **比赛权重** : 22.07  
+    **赛事主办** : ascii overflow (https://ctftime.org/team/15360)  
+    **添加日历** : https://ctftime.org/event/2173.ics  
+    
 ??? Abstract "[BSides Odisha Web3 CTF](https://academy.quillaudits.com/challenges)"  
     [![](https://ctftime.org/media/events/Neon_Blue_and_Black_Gamer_Badge_Logo.png)](https://academy.quillaudits.com/challenges)  
     **比赛名称** : [BSides Odisha Web3 CTF](https://academy.quillaudits.com/challenges)  
@@ -956,31 +983,4 @@ comments: true
     **比赛权重** : 29.00  
     **赛事主办** : CSUI (https://ctftime.org/team/70551)  
     **添加日历** : https://ctftime.org/event/2060.ics  
-    
-??? Abstract "[BalCCon2k23](https://2k23.balccon.org/index.php?title=CTF)"  
-    [![](https://ctftime.org/media/events/NewLogoMAjica.png-image63-548.png)](https://2k23.balccon.org/index.php?title=CTF)  
-    **比赛名称** : [BalCCon2k23](https://2k23.balccon.org/index.php?title=CTF)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2023-09-09 21:00:00 - 2023-09-10 03:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : BalCCon (https://ctftime.org/team/167842)  
-    **添加日历** : https://ctftime.org/event/2097.ics  
-    
-??? Abstract "[Information and Technology Festival 2023](https://ctf.intechfest.cc/)"  
-    [![](https://ctftime.org/media/events/LOGO_INTECHFEST-Color.png)](https://ctf.intechfest.cc/)  
-    **比赛名称** : [Information and Technology Festival 2023](https://ctf.intechfest.cc/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-09 16:00:00 - 2023-09-10 16:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : INTECHFEST (https://ctftime.org/team/193205)  
-    **添加日历** : https://ctftime.org/event/2043.ics  
-    
-??? Abstract "[Cyber Heroines CTF](https://cyberheroines.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/noun-developer-94088-FF40FF.png)](https://cyberheroines.ctfd.io/)  
-    **比赛名称** : [Cyber Heroines CTF](https://cyberheroines.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-09 05:00:00 - 2023-09-11 05:00:00 UTC+8  
-    **比赛权重** : 23.94  
-    **赛事主办** : FITSEC (https://ctftime.org/team/65296)  
-    **添加日历** : https://ctftime.org/event/2054.ics  
     

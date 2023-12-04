@@ -49,33 +49,6 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Abstract "[TUCTF 2023](https://tuctf.com/)"  
-    [![](https://ctftime.org/media/events/tuctf_small.png)](https://tuctf.com/)  
-    **比赛名称** : [TUCTF 2023](https://tuctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-02 01:00:00 - 2023-12-04 01:00:00 UTC+8  
-    **比赛权重** : 22.07  
-    **赛事主办** : ascii overflow (https://ctftime.org/team/15360)  
-    **添加日历** : https://ctftime.org/event/2173.ics  
-    
-??? Abstract "[BlazCTF 2023](https://ctf.blaz.ai/)"  
-    [![](https://ctftime.org)](https://ctf.blaz.ai/)  
-    **比赛名称** : [BlazCTF 2023](https://ctf.blaz.ai/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-02 02:00:00 - 2023-12-04 02:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : FuzzLand (https://ctftime.org/team/270659)  
-    **添加日历** : https://ctftime.org/event/2145.ics  
-    
-??? Abstract "[NewportBlakeCTF 2023](https://nbctf.com/)"  
-    [![](https://ctftime.org)](https://nbctf.com/)  
-    **比赛名称** : [NewportBlakeCTF 2023](https://nbctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-02 08:00:00 - 2023-12-04 08:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : NewportBlakeCTF (https://ctftime.org/team/258029)  
-    **添加日历** : https://ctftime.org/event/2072.ics  
-    
 ??? Abstract "[WannaGame Championship 2023](https://cnsc.uit.edu.vn/ctf/)"  
     [![](https://ctftime.org/media/events/405223021_1146746909620738_23415812653969977_n.png)](https://cnsc.uit.edu.vn/ctf/)  
     **比赛名称** : [WannaGame Championship 2023](https://cnsc.uit.edu.vn/ctf/)  
