@@ -68,20 +68,6 @@ comments: true
     **比赛时间** : 2023年11月11日 09:00 - 2023年11月12日 16:00  
     **其他说明** : QQ群：523854931  
     
-??? Abstract "第三届“vec杯”网络安全挑战赛"  
-    **比赛名称** : [第三届“vec杯”网络安全挑战赛](https://mp.weixin.qq.com/s/8XhTBxE8LCspAb9Pq2XTxw)  
-    **比赛类型** : 个人赛  
-    **报名时间** : 2023年10月26日 12:00 - 2023年11月05日 20:00  
-    **比赛时间** : 2023年11月12日 09:00 - 2023年11月12日 14:00  
-    **其他说明** : 718065028  
-    
-??? Abstract "“美亚杯”第九届全国电子数据取证竞赛"  
-    **比赛名称** : [“美亚杯”第九届全国电子数据取证竞赛](https://www.meiyacup.com/)  
-    **比赛类型** : 团队赛|1-4人  
-    **报名时间** : 2023年09月25日 10:00 - 2023年10月31日 18:00  
-    **比赛时间** : 2023年11月11日 08:30 - 2023年11月11日 21:30  
-    **其他说明** : 线上线下同步进行  
-    
 
 ## 国际赛事
 ??? Abstract "[M*CTF 2023 Finals](https://mctf.mtuci.ru/)"  
@@ -101,6 +87,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
     **添加日历** : https://ctftime.org/event/2197.ics  
+    
+??? Abstract "[WannaGame Championship 2023](https://cnsc.uit.edu.vn/ctf/)"  
+    [![](https://ctftime.org/media/events/405223021_1146746909620738_23415812653969977_n.png)](https://cnsc.uit.edu.vn/ctf/)  
+    **比赛名称** : [WannaGame Championship 2023](https://cnsc.uit.edu.vn/ctf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-02 09:00:00 - 2023-12-04 09:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
+    **添加日历** : https://ctftime.org/event/2146.ics  
     
 ??? Abstract "[NewportBlakeCTF 2023](https://nbctf.com/)"  
     [![](https://ctftime.org)](https://nbctf.com/)  
@@ -179,7 +174,7 @@ comments: true
     **比赛名称** : [TPCTF 2023](https://tpctf2023.xctf.org.cn/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-11-25 09:00:00 - 2023-11-27 09:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : TP-Link (https://ctftime.org/team/273760)  
     **添加日历** : https://ctftime.org/event/2161.ics  
     
@@ -974,13 +969,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : MetaTrust Labs (https://ctftime.org/team/267178)  
     **添加日历** : https://ctftime.org/event/2105.ics  
-    
-??? Abstract "[COMPFEST CTF 2023](https://ctf-mirror.compfest.id/)"  
-    [![](https://ctftime.org/media/events/LOGO.png)](https://ctf-mirror.compfest.id/)  
-    **比赛名称** : [COMPFEST CTF 2023](https://ctf-mirror.compfest.id/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-10 08:00:00 - 2023-09-11 08:00:00 UTC+8  
-    **比赛权重** : 29.00  
-    **赛事主办** : CSUI (https://ctftime.org/team/70551)  
-    **添加日历** : https://ctftime.org/event/2060.ics  
     
