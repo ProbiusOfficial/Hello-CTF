@@ -13,6 +13,18 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [Linux ptrace](https://xia0ji233.github.io/2023/12/03/Ptrace/)  
+>by [xia0ji233](https://xia0ji233.pro/), 2023-12-03
+
+这次学习Linux进程调试相关的知识。调试对于二进制选手来说，调试的重要性不言而喻，对于Linux来说，基本就是 gdb 一家独大，其余插件只是给gdb起了锦上添花的一些作用罢了，那么下面就来学习一下 gdb 的内核。ptrace在Linux调试程序，离不开一个系统调用就是 ptrace（%rax=101,%eax=26），来看看这个函数原型：12long ptrace(enum __ptrace...
+### [Apache ActiveMQ Jolokia远程代码执行不依赖JDK打法](https://y4tacker.github.io/2023/11/30/year/2023/11/Apache-ActiveMQ-Jolokia%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E4%B8%8D%E4%BE%9D%E8%B5%96JDK%E6%89%93%E6%B3%95/)  
+>by [Y4tacker](https://y4tacker.github.io), 2023-11-30
+
+Apache ActiveMQ Jolokia远程代码执行不依赖JDK打法想着最近连写了几篇加密博客有点对不起看我博客的粉丝了，今天抽空简单分享一个姿势影响版本大概测了一下Apache ActiveMQ 5.16.x系列无log4j2的mbeanApache ActiveMQ 5.17.x系列漏洞版本受影响初探从网上已公开的打法可以知道使用jdk.management.jfr:type=Fligh...
+### [Apache ActiveMQ Jolokia远程代码执行(CVE-2022-41678)简析及绕Waf技法](https://y4tacker.github.io/2023/11/29/year/2023/11/Apache-ActiveMQ-Jolokia%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C-CVE-2022-41678-%E7%AE%80%E6%9E%90%E5%8F%8A%E7%BB%95Waf%E6%8A%80%E6%B3%95/)  
+>by [Y4tacker](https://y4tacker.github.io), 2023-11-29
+
+b911718fdd890810916fcf22cb8016ca11ae7d872d624941bd9b20d0cf7e4036a45e816cf5955164cc4e0d7bc4e06277d1f41e412de1243b7603f6b8db578947e40f8bad6233f702a2ae224c03f173d620410ea4abfdb0fba73dbe0f45d4327f2d262b...
 ### [HITCTF2023题解](https://xia0ji233.github.io/2023/11/27/HITCTF2023/)  
 >by [xia0ji233](https://xia0ji233.pro/), 2023-11-27
 
@@ -81,15 +93,3 @@ Pwnable.kr-leg 这一关挺有意思的，也不是很难，也借此学习一�
 >by [xia0ji233](https://xia0ji233.pro/), 2023-10-30
 
 来学一学DNS吧。简介域名解析系统采用 客户端/服务器（Client/Server）模型，是一种应用层协议，它的作用是把我们所熟知的域名（domain ）翻译成 ip 地址。主要是人们通常乐意记住域名而不是记住ip，就好比学校里老师喜欢叫名字而不是叫你学号，但是学号又是唯一确定的一个学生，而名字是可以重复的。给出一个学生名称，查询对应学号的一个系统就叫学号解析系统，类似的，给出一个域名，查询一个对...
-### [从零学习AWD比赛指导手册](https://blog.zgsec.cn/archives/484.html)  
->by [曾哥](https://blog.zgsec.cn/), 2023-10-21
-
-如果你要参加AWD相关比赛，相信本项目能给你带来帮助~手册版本号：V1.2.2-2023/10/21这是一本能让你从零开始学习AWD并深入AWD的手册，我也会根据经验和需求逐步完善相关内容如果你觉得本项目不错，欢迎给我点个Star，万分感谢~~ 有什么新的攻击或者防守的姿势、手法，欢迎与我交流[...]...
-### [记一次抑郁诊断和开药用药记录](https://blog.stv.lol/archives/76/)  
->by [Steven Lynn's Blog](https://blog.stv.lol), 2023-10-12
-
-前因自我判定进入比较明显的焦虑抑郁状态已经至少两年多了，前因可看这篇文章[post cid="58" /]当然更主要的还是远因，一些童年成长时的家庭、环境因素，造成了长期表达能力受到压制，进而失去表达情感的能力，比如不会大笑也不会大哭受到这些因素的影响，开始不断地侵蚀我的自我意识，在高中那会就开始出现记忆力下降和无法专注等情况，但在当时由于并未了解过相关心理学知识并不知道这是长期焦虑抑郁所致症状进...
-### [一种基于HSTS的防域名劫持的方法](https://blog.stv.lol/archives/75/)  
->by [Steven Lynn's Blog](https://blog.stv.lol), 2023-10-04
-
-事情是这样的：国庆期间国内网络对很多域名进行了污染，其中影响最大的是Minecraft正版验证api以及VSCode官网。当尝试登录或使用上述应用时，其HTTP请求会被重定向到国家反诈中心以及工信部反诈中心的提示页面也因为这波莫名其妙的风波，最近某位朋友的手头大量部署在vercel上的服务被运营商劫持，被301跳转到反诈中心页面对于用户而言，只能切换DNS或者使用代理来防止劫持昨天和一位大佬交流过...
