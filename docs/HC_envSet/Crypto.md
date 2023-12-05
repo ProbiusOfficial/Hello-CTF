@@ -102,7 +102,7 @@ python3 nihao.py
 
 这时基本工具已经准备好(关于Python 的数学模组不要着急 暂时用不少, 遇到了就学习如何手写所需要的函数), 可以开始在 buuCTF 刷题, 刷题时 密码分类中第一页差不多接近一般的时候就可以暂停刷题, 来先把时间用在初等数论的学习了, (时间不紧迫的同时有条件的话可以同时学数学分析)
 
-<!-- ![Alt text](/workspaces/CTF-QuickStart/docs/HC_envSet/images/buu/image.png) -->
+<!-- ![Alt text](/workspaces/Hello-CTF/docs/HC_envSet/images/buu/image.png) -->
 
 > 如何使用 [buuCTF](https://buuoj.cn/challenges)? 点击←蓝色的字, 登录后顶部选择 `练习场`, 后选择 `题目列表` 即可
 

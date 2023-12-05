@@ -157,6 +157,65 @@ SELECT 列名1, 列名2, ... FROM 表名 WHERE 条件
 
 ### 基础注入类型
 
+#### 注入类型判断
+> 讲课的时候发现这一章节之前没有解释如何判断注入类型,遂在此补充。
+
+在开始前，我们需要理解一个SQL注入中最常用的词汇 —— **构造闭合** 。
+对于SQL处理语句后台的写法:
+
+```sql
+SELECT username,password FROM users WHERE id = ?
+```
+这里的问号可以有多种的闭合方式, `$id`, `'$id'`, `"$id"`, `($id)`。  
+
+以及多种变换形式:`((((((((((("'$id'")))))))))))`（雾  
+
+那么什么是构造闭合呢？  
+
+已知我们可控的输入点是 ？也就是 $id , 当我们的输入与开发者后台设置的语句的 `'` `"` `(` 配对  
+
+比如后台为:   
+
+```sql
+SELECT username,password FROM users WHERE id = "$id"
+```
+那么我们使传入的$id = '1"',那么后台执行则为  
+```sql
+SELECT username,password FROM users WHERE id = "1" "
+```
+在这里我们对1完成了闭合构造，但是我们闭合了前序导致后续的 `"` 没有双引号配对，多出来的这个双引号则会导致报错：  
+```sql
+1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"' at line 1
+```
+所以我们通常在构造完闭合后去注释掉后面的符号，比如使用 `#` `-- `。  
+
+上面是白盒下面很直观的版本，但是大多数情况下，SQL注入都是黑盒，我们不知道后台到底是怎么写的，所以我们需要一些判断的方法或者技巧。
+**通过是否报错**  
+
+比如，我们使用 `1'` 进行试探:   
+
+| 后台实际输入 | 执行语句                                              | 是否报错 以及 相关解释                                       |
+| ------------ | ----------------------------------------------------- | ------------------------------------------------------------ |
+| `"1'"`       | `SELECT username,password FROM users WHERE id = "1'"` | `""` 中为可以包含 `'` ，而 `1'` 是一个合法的字符串,在查询时会先被强制类型转换为数字，**不会报错** |
+| `1'`         | `SELECT username,password FROM users WHERE id = 1'`   | 这里的 `'` 就没有闭合，**会报错**。                          |
+| `'1''`       | `SELECT username,password FROM users WHERE id = '1''` | 这里的 `'`与前序的`'` 闭合了但这样就留下了后序单着的 `'`，**会报错**。 |
+
+**通过报错信息**
+
+>  注：我们省略了部分语句和相同的报错。
+>
+> `SELECT username,password FROM users WHERE id = "1"";`  -> id=xx
+>
+> `You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1'' at line 1`
+>
+> -> `near '1'' at line 1`
+
+| 输入 | 后台执行    | 后台报错                | 解释                                                         |
+| ---- | ----------- | ----------------------- | ------------------------------------------------------------ |
+| `1"` | `id = "1""` | `near '"1""' at line 1` | 去掉外层SQL的单引号，留下`"1""`，除去自己的输入 `1"`可知类型为 **双引号** 的 **字符型注入** |
+| `1'` | `id = '1''` | `near ''1''' at line 1` | 同理，留下`'1''`除去自己的输入 `1'`可知类型为 **单引号** 的 **字符型注入** |
+| `'1` | `id = ''1'` | `near '1'' at line 1`   | 对于后台SQL，由于`id = ''`已经合法闭合，所以后面`1'`反而为多出的语句，所以报错点在`1'` |
+
 #### 数字型注入
 
 我们开局举的例子就是一个很典型的数字型注入。

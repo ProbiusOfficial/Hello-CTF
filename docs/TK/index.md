@@ -1,6 +1,7 @@
 ---
 comments: true
-
+hide:
+  - navigation
 ---
 # CTF工具集合
 
