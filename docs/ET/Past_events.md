@@ -92,6 +92,15 @@ comments: true
     **赛事主办** : NewportBlakeCTF (https://ctftime.org/team/258029)  
     **添加日历** : https://ctftime.org/event/2072.ics  
     
+??? Abstract "[CTF Internacional MetaRed 2023 - 6th STAGE](https://ctfhn.unitec.edu/)"  
+    [![](https://ctftime.org)](https://ctfhn.unitec.edu/)  
+    **比赛名称** : [CTF Internacional MetaRed 2023 - 6th STAGE](https://ctfhn.unitec.edu/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-02 03:00:00 - 2023-12-03 02:59:00 UTC+8  
+    **比赛权重** : 6.67  
+    **赛事主办** : MiTeam (https://ctftime.org/team/168552)  
+    **添加日历** : https://ctftime.org/event/2202.ics  
+    
 ??? Abstract "[BlazCTF 2023](https://ctf.blaz.ai/)"  
     [![](https://ctftime.org)](https://ctf.blaz.ai/)  
     **比赛名称** : [BlazCTF 2023](https://ctf.blaz.ai/)  
@@ -946,13 +955,4 @@ comments: true
     **比赛权重** : 100.00  
     **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
     **添加日历** : https://ctftime.org/event/2068.ics  
-    
-??? Abstract "[MetaTrust Web3 Security CTF](https://build.bewater.xyz/en/campaigns/28)"  
-    [![](https://ctftime.org/media/events/LOGO-B.jpg)](https://build.bewater.xyz/en/campaigns/28)  
-    **比赛名称** : [MetaTrust Web3 Security CTF](https://build.bewater.xyz/en/campaigns/28)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-13 18:00:00 - 2023-09-15 18:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : MetaTrust Labs (https://ctftime.org/team/267178)  
-    **添加日历** : https://ctftime.org/event/2105.ics  
     
