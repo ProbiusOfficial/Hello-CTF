@@ -55,6 +55,7 @@ comments: true
     **其他说明** : QQ群930096347  
     
 
+
 ## 国际赛事
 ??? Abstract "[M*CTF 2023 Finals](https://mctf.mtuci.ru/)"  
     [![](https://ctftime.org/media/events/Immagine_PNG_2.png)](https://mctf.mtuci.ru/)  
