@@ -122,6 +122,7 @@ class User {
     }
 }
 $user = new User(array("tan","ji"), 'admin@probius.xyz','19191145148');
+
 $serializedData = serialize($user);
 echo $serializedData . "\n";
 $deserializedUser = unserialize($serializedData);
@@ -342,20 +343,20 @@ admin@probius.xyz ------------------------------------ echo $deserializedUser->g
 
   控制台输出：
 
-    ```php
+  ```php
   O:1:"B":3:
   {
       s:6:"ClassA";O:1:"A":0:{}
       s:5:"refer";r:2;
       s:7:"pointer";R:2;
   }
-    ```
+  ```
 
   ![image-20230512173231633](./assets/202305121732731.png)
 
   此外，引用对象的属性值取决于声明顺序。
 
-  ```
+  ```php
   <?php
   class A{
   
