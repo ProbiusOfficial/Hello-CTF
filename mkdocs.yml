@@ -4,10 +4,10 @@ site_url: https://ctf.probius.xyz/
 site_author: 探姬
 site_description: 开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程
 
-# 仓库信息 / Repository
-repo_name: CTF-QuickStart
-repo_url: https://github.com/ProbiusOfficial/CTF-QuickStart
-edit_uri: https://github.com/ProbiusOfficial/CTF-QuickStart/tree/main/docs/
+# 仓库信息 / Repository 
+repo_name: Hello-CTF
+repo_url: https://github.com/ProbiusOfficial/Hello-CTF
+edit_uri: https://github.com/ProbiusOfficial/Hello-CTF/tree/main/docs/
 
 # 版权声明 / Copyright
 copyright: Copyright &copy; 2023 探姬
@@ -160,7 +160,9 @@ extra_css:
 # 目录
 nav:
 
-# - HelloCTF (.HC) Part ------------
+# 导航排布 —— | Hello CTF | 赛事 | 工具 | 团队 | 扩展 | Achieve | Blog
+
+# - HelloCTF 内容 (.HC) Part ------------
   - HelloCTF: 
     - index.md
     - 前言:
@@ -223,49 +225,73 @@ nav:
       - 3. &nbsp; 【WEB】AWD技巧: HC_AWD/awd_web.exp.md
       - 4. &nbsp; 【PWN】AWD技巧: HC_AWD/awd_pwn.exp.md
 
+    - AI:
+      - HC_AI/index.md
+      - AI介绍: HC_AI/What_is_AI.md
+
     - 附录:
       - 提问的智慧: HC_Appendix/how-to-ask.md
       - CTF赛事: HC_Appendix/CTFevent.md
       - NSSCTF平台使用: HC_Appendix/NSSCTF_Usage.md
       - 推荐书单: HC_Appendix/book.md
 
-# - CTFToolKit (.TK) Part ------------
-  - 工具:
-    - TK/index.md
+# - CTF Event 赛事 (.TK) Part ------------
+  - 赛事:
+    - ET/index.md
+    - 即将开始: ET/Upcoming_events.md
+    - 正在进行: ET/Now_running.md
+    - 已经结束: ET/Past_events.md
+    - 办赛指南:
+      - ET/organize.md
+    
+# - CTF ToolKit 工具 (.TK) Part ------------
+  - 工具: TK/index.md
 
-# - TeamBuilding (.TB) Part ------------
-  - 团队建设: TB/index.md
+# - TeamBuild (.TB) 团队 Part ------------
+  - 团队: 
+    - TB/index.md
+    - 团队建设与运营:
+      - TB/build.md
+    - 团队纳新及培训:
+      - TB/recruit.md
+    - 团队训练及CTF平台:
+      - TB/train.md
 
-# - ExtensionEnhancement (.EE) Part ------------
-  - 扩展提升:
+
+# - ExtensionEnhancement 扩展 (.EE) Part ------------
+  - 扩展:
     - EE/index.md
-    - a. &nbsp; &nbsp; Docker| 容器技术:
+    - Docker| 容器技术:
       - EE_Docker/index.md
-      - a.0. &nbsp; 一文速通Docker(粗): EE_Docker/dockerstart.md
-      - a.1. &nbsp; 关于Docker: EE_Docker/about.md 
-      # - a.2.1. &nbsp; Windows下的Docker环境配置: EE_Docker/install_windows.md
-      # - a.2.2. &nbsp; Linux下的Docker环境配置: EE_Docker/install_linux.md
-      # - a.3.1. &nbsp; Docker的基本操作: EE_Docker/usage_basic.md
-      # - a.4  &nbsp; Docker在CTF中的应用: EE_Docker/usage_ctf.md
-      # - a.4.1. &nbsp; Web题目的Docker化: EE_Docker/usage_web.md
-      # - a.4.2. &nbsp; 示例-经典web靶场封装: EE_Docker/usage_example.md
-      # - a.4.3. &nbsp; Pwn题目的Docker化: EE_Docker/usage_pwn.md
-      # - a.4.4. &nbsp; Crypto题目的Docker化: EE_Docker/usage_crypto.md
+      - 一文速通Docker(粗): EE_Docker/dockerstart.md
+      - 关于Docker: EE_Docker/about.md 
+      # - Windows下的Docker环境配置: EE_Docker/install_windows.md
+      # - Linux下的Docker环境配置: EE_Docker/install_linux.md
+      # - Docker的基本操作: EE_Docker/usage_basic.md
+      # - Docker在CTF中的应用: EE_Docker/usage_ctf.md
+      # - Web题目的Docker化: EE_Docker/usage_web.md
+      # - 示例-经典web靶场封装: EE_Docker/usage_example.md
+      # - Pwn题目的Docker化: EE_Docker/usage_pwn.md
+      # - Crypto题目的Docker化: EE_Docker/usage_crypto.md
     - b. &nbsp; &nbsp; CTF命题:
       - EE_makeChallenge/index.md
       - b.1. &nbsp; 如何优雅的完成CTF命题: EE/makeChallenge.md
 
-# - Archives (.AR) Part ----
+# - Archives 存档 (.AR) Part ----
   - Archives:
     - AR/index.md
-    - CTFer:
+    - 赛事归档:
+      - AR/Events.md
+    - 师傅们和他们的博客:
       - AR/friends.md
-    - Videos:
+    - 联合战队信息/招新:
+      - AR/Teams.md
+    - 社区资源:
+      - AR/Community.md
+    - 书单推荐:
+      - AR/books.md
+    - 视频资源:
       - AR/Videos.md
-    - Challenges:
-      - AR/Challenges.md
-    - Writeups:
-      - AR/Writeups.md
 
 # - Blog Part ----
   - Blog:

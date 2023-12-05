@@ -1,23 +1,24 @@
 <div align="center">
      <h2>Hello CTF</h2>
      <div align="center">
-    <img src="./images/logo.png" width="600px">
+    <img src="./images/struc.png">
     </div> 
     <a href="http://ctf.probius.xyz/"> <img src="https://badgen.net/badge/Mkdocs/%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB?icon=chrome&color=black"></a>
-    <a href="https://github.com/ProbiusOfficial/CTF-QuickStart"> <img src="https://badgen.net/github/stars/ProbiusOfficial/CTF-QuickStart?icon=github&color=black"></a>
-    <a href="https://github.com/ProbiusOfficial/CTF-QuickStart"> <img src="https://badgen.net/github/forks/ProbiusOfficial/CTF-QuickStart?icon=github&color=black"></a>
-    <a href="https://github.com/ProbiusOfficial/CTF-QuickStart/blob/main/LICENSE"> <img src="https://badgen.net/badge/license/GPLv3/"></a>
+    <a href="https://github.com/ProbiusOfficial/Hello-CTF"> <img src="https://badgen.net/github/stars/ProbiusOfficial/Hello-CTF?icon=github&color=black"></a>
+    <a href="https://github.com/ProbiusOfficial/Hello-CTF"> <img src="https://badgen.net/github/forks/ProbiusOfficial/Hello-CTF?icon=github&color=black"></a>
+    <a href="https://github.com/ProbiusOfficial/Hello-CTF/blob/main/LICENSE"> <img src="https://badgen.net/badge/license/GPLv3/"></a>
     <br>
      <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=wJ35e-T-qSlU7Y3Cs-PAasrAvZfRSc9k&authKey=WNEQbZUpolxgfKjUHHoUIoTBvSnvk2jZtcyWlhaDcUZ6ZYGgvywqi1ah5D7UwUrg&noverify=0&group_code=590430891"> <img src="https://img.shields.io/badge/QQ%20Group-590430891-black"></a>
     <br>
     </div>
 
 
+
 文档依靠Mkdocs-material 基于Github-Page 依靠 gh-pages 部署在 [https://ctf.probius.xyz/](https://ctf.probius.xyz/)   
 
 因接入CDN，本站链接变更为：[https://ctf.probius.xyz/](https://ctf.probius.xyz/) ，感谢渊龙Sec安全团队[@AabyssZG](https://github.com/AabyssZG) 曾哥提供的CDN支持~
 
-您可以直接访问该页面[在线阅读](https://ctf.probius.xyz/)，如果您想要转载本项目，请带上项目源地址：https://github.com/ProbiusOfficial/CTF-QuickStart
+您可以直接访问该页面[在线阅读](https://ctf.probius.xyz/)，如果您想要转载本项目，请带上项目源地址：https://github.com/ProbiusOfficial/Hello-CTF
 
 如果文档有帮助到你，麻烦点一个:star:支持一下！！
 
@@ -34,7 +35,7 @@
 ## 加入我们
 
 本书仍然处于更新阶段，我们还有很多内容需要完善，欢迎您加入我们，一起完善本书，让更多的人了解CTF，参与CTF，享受CTF的乐趣。
-您随时可以通过提交 [「 Pr (PullRequest) 」](https://github.com/ProbiusOfficial/CTF-QuickStart/pulls)来协助我们完成本项目。
+您随时可以通过提交 [「 Pr (PullRequest) 」](https://github.com/ProbiusOfficial/Hello-CTF/pulls)来协助我们完成本项目。
 
 - 如果您在阅读过程中发现任何 知识点错误，内容模糊，名词拼写错误等等的问题，还请您协助我们进行修改，您可以直接在评论区中提出，也可以直接提交PR。
 - 如果您有好的题目，好的题解，好的知识点讲解，或者其他合作意向，也欢迎您联系探姬([By QQ](2293808331))或者开启issue。
@@ -48,8 +49,8 @@
 
 本项目的完成离不开以下小伙伴的贡献，感谢他们的付出。
 <p align="left">
-    <a href="https://github.com/ProbiusOfficial/CTF-QuickStart/graphs/contributors">
-        <img width="550" src="https://contrib.rocks/image?repo=ProbiusOfficial/CTF-QuickStart" />
+    <a href="https://github.com/ProbiusOfficial/Hello-CTF/graphs/contributors">
+        <img width="550" src="https://contrib.rocks/image?repo=ProbiusOfficial/Hello-CTF" />
     </a>
 </p>
 

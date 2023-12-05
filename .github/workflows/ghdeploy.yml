@@ -1,12 +1,11 @@
-name: Deploy to Github Pages and Update friends.md
-
+name: Deploy to Github Pages and Automatically update
 on:
   push:
     branches:
       - master
       - main
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0/4 * * *"
 
 permissions:
   contents: write
@@ -19,10 +18,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Fetch friends.md from external repository
+      - name: Automatically update friends.md
         run: |
           curl -o docs/AR/friends.md https://raw.githubusercontent.com/ProbiusOfficial/helloCTF-CTFerlink/main/output/friends.md
           curl -o docs/AR/index.md https://raw.githubusercontent.com/ProbiusOfficial/helloCTF-CTFerlink/main/output/friends.md
+
+      - name: Automatically update event
+        run: |
+          curl -o docs/ET/Now_running.md https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/main/Out/Now_running.md
+          curl -o docs/ET/Past_events.md https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/main/Out/Past_events.md
+          curl -o docs/ET/Upcoming_events.md https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/main/Out/Upcoming_events.md
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -47,4 +52,4 @@ jobs:
         if: env.CHANGES == 'true'
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Automatically update friends.md
+          commit_message: Automatically update
