@@ -80,9 +80,9 @@ comments: true
     **赛事主办** : Group-IB (https://ctftime.org/team/273085)  
     **添加日历** : https://ctftime.org/event/2177.ics  
     
-??? Abstract "[Hackappatoi CTF '23](http://hctf.hackappatoi.com/)"  
-    [![](https://ctftime.org/media/events/3cea5d7bcded4dcba103009b24246cd6.png)](http://hctf.hackappatoi.com/)  
-    **比赛名称** : [Hackappatoi CTF '23](http://hctf.hackappatoi.com/)  
+??? Abstract "[Hackappatoi CTF '23](https://hctf.hackappatoi.com/)"  
+    [![](https://ctftime.org/media/events/3cea5d7bcded4dcba103009b24246cd6.png)](https://hctf.hackappatoi.com/)  
+    **比赛名称** : [Hackappatoi CTF '23](https://hctf.hackappatoi.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-12-08 01:00:00 - 2023-12-09 17:00:00 UTC+8  
     **比赛权重** : 24.71  
