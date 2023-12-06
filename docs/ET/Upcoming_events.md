@@ -202,20 +202,11 @@ comments: true
     **赛事主办** : The Cyber Cooperative (https://ctftime.org/team/276494)  
     **添加日历** : https://ctftime.org/event/2206.ics  
     
-??? Abstract "[DiceCTF Teaser 2023](https://ctf.dicega.ng/)"  
-    [![](https://ctftime.org)](https://ctf.dicega.ng/)  
-    **比赛名称** : [DiceCTF Teaser 2023](https://ctf.dicega.ng/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-16 05:00:00 - 2023-12-17 05:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
-    **添加日历** : https://ctftime.org/event/2162.ics  
-    
 ??? Abstract "[Wargames.MY CTF 2023](https://pro2023.wargames.my/)"  
     [![](https://ctftime.org/media/events/wgmy2023_logo.png)](https://pro2023.wargames.my/)  
     **比赛名称** : [Wargames.MY CTF 2023](https://pro2023.wargames.my/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-16 08:00:00 - 2023-12-17 08:00:00 UTC+8  
+    **比赛时间** : 2023-12-16 00:00:00 - 2023-12-17 00:00:00 UTC+8  
     **比赛权重** : 0.00  
     **赛事主办** : Wargames.MY (https://ctftime.org/team/86069)  
     **添加日历** : https://ctftime.org/event/2203.ics  
@@ -396,7 +387,7 @@ comments: true
     **比赛名称** : [VolgaCTF 2024 Qualifier](https://volgactf.ru/en/volgactf-2024/qualifier/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-03-30 23:00:00 - 2024-03-31 23:00:00 UTC+8  
-    **比赛权重** : 0.00  
+    **比赛权重** : 35.91  
     **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
     **添加日历** : https://ctftime.org/event/2200.ics  
     
