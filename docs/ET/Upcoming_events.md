@@ -61,13 +61,6 @@ comments: true
     **比赛时间** : 2023年12月09日 10:00 - 2023年12月11日 10:00  
     **其他说明** : QQ群：981043287  
     
-??? Abstract "第六届“强网”拟态防御国际精英挑战赛决赛"  
-    **比赛名称** : [第六届“强网”拟态防御国际精英挑战赛决赛](https://peekgeek.xctf.org.cn/race/qwmimic2023/)  
-    **比赛类型** : 团队赛|1-4人  
-    **报名时间** : 2023年10月20日 00:00 - 2023年11月07日 00:00  
-    **比赛时间** : 2023年12月06日 09:00 - 2023年12月10日 16:00  
-    **其他说明** : QQ群：523854931  决赛地点：南京  
-    
 ??? Abstract "PolarCTF 网络安全2023冬季个人挑战赛"  
     **比赛名称** : [PolarCTF 网络安全2023冬季个人挑战赛](https://www.polarctf.com/#/)  
     **比赛类型** : 个人赛  
@@ -167,9 +160,9 @@ comments: true
     **添加日历** : https://ctftime.org/event/2090.ics  
     
 ??? Abstract "[HACKOLINE](https://mrwebx.com/event/#/home)"  
-    [![](https://ctftime.org)](https://mrwebx.com/event/#/home)  
+    [![](https://ctftime.org/media/events/instagram.jpeg)](https://mrwebx.com/event/#/home)  
     **比赛名称** : [HACKOLINE](https://mrwebx.com/event/#/home)  
-    **比赛形式** : Hack quest  
+    **比赛形式** : Attack-Defense  
     **比赛时间** : 2023-12-10 17:00:00 - 2023-12-11 03:00:00 UTC+8  
     **比赛权重** : 0.00  
     **赛事主办** : mrwebsecure (https://ctftime.org/team/276542)  
