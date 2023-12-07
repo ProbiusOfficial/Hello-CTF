@@ -78,15 +78,6 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[HUNTING SEASON: GROUP-IB 20TH ANNIVERSARY CTF](https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime)"  
-    [![](https://ctftime.org/media/events/InstaTelega__1080x1080_12.png)](https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime)  
-    **比赛名称** : [HUNTING SEASON: GROUP-IB 20TH ANNIVERSARY CTF](https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-07 17:00:00 - 2023-12-07 21:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Group-IB (https://ctftime.org/team/273085)  
-    **添加日历** : https://ctftime.org/event/2177.ics  
-    
 ??? Abstract "[Hackappatoi CTF '23](https://hctf.hackappatoi.com/)"  
     [![](https://ctftime.org/media/events/3cea5d7bcded4dcba103009b24246cd6.png)](https://hctf.hackappatoi.com/)  
     **比赛名称** : [Hackappatoi CTF '23](https://hctf.hackappatoi.com/)  
