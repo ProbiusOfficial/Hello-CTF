@@ -78,15 +78,6 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[Hackappatoi CTF '23](https://hctf.hackappatoi.com/)"  
-    [![](https://ctftime.org/media/events/3cea5d7bcded4dcba103009b24246cd6.png)](https://hctf.hackappatoi.com/)  
-    **比赛名称** : [Hackappatoi CTF '23](https://hctf.hackappatoi.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-08 01:00:00 - 2023-12-09 17:00:00 UTC+8  
-    **比赛权重** : 24.71  
-    **赛事主办** : Hackappatoi (https://ctftime.org/team/140428)  
-    **添加日历** : https://ctftime.org/event/2163.ics  
-    
 ??? Abstract "[HTB University CTF 2023: Brains & Bytes](https://ctf.hackthebox.com/event/details/university-ctf-2023-brains-bytes-1231)"  
     [![](https://ctftime.org)](https://ctf.hackthebox.com/event/details/university-ctf-2023-brains-bytes-1231)  
     **比赛名称** : [HTB University CTF 2023: Brains & Bytes](https://ctf.hackthebox.com/event/details/university-ctf-2023-brains-bytes-1231)  

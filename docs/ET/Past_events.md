@@ -286,7 +286,7 @@ comments: true
     **比赛名称** : [1337UP LIVE CTF](https://ctf.intigriti.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-11-17 19:59:59 - 2023-11-19 07:59:59 UTC+8  
-    **比赛权重** : 24.86  
+    **比赛权重** : 24.20  
     **赛事主办** : Intigriti (https://ctftime.org/team/178083)  
     **添加日历** : https://ctftime.org/event/2134.ics  
     
