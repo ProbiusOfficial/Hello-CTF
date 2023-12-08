@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Abstract "“古剑山”第一届全国大学生网络攻防大赛初赛"  
+    **比赛名称** : [“古剑山”第一届全国大学生网络攻防大赛初赛](https://www.cqyti.com/info/1143/390372.htm)  
+    **比赛类型** : 团队赛|1-3人  
+    **报名时间** : 2023年09月15日 18:00 - 2023年11月08日 18:00  
+    **比赛时间** : 2023年12月08日 09:00 - 2023年12月08日 12:00  
+    **其他说明** : QQ 群：792721897  
+    
 ??? Abstract "第三届ISCTF网络安全技能竞赛"  
     **比赛名称** : [第三届ISCTF网络安全技能竞赛](https://isctf2023.bluesharkinfo.com/)  
     **比赛类型** : 新生赛  
@@ -56,6 +63,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[HUNTING SEASON: GROUP-IB 20TH ANNIVERSARY CTF](https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime)"  
+    [![](https://ctftime.org/media/events/InstaTelega__1080x1080_12.png)](https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime)  
+    **比赛名称** : [HUNTING SEASON: GROUP-IB 20TH ANNIVERSARY CTF](https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-07 17:00:00 - 2023-12-07 21:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Group-IB (https://ctftime.org/team/273085)  
+    **添加日历** : https://ctftime.org/event/2177.ics  
+    
 ??? Abstract "[M*CTF 2023 Finals](https://mctf.mtuci.ru/)"  
     [![](https://ctftime.org/media/events/Immagine_PNG_2.png)](https://mctf.mtuci.ru/)  
     **比赛名称** : [M*CTF 2023 Finals](https://mctf.mtuci.ru/)  
@@ -277,7 +293,7 @@ comments: true
     **比赛名称** : [1337UP LIVE CTF](https://ctf.intigriti.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-11-17 19:59:59 - 2023-11-19 07:59:59 UTC+8  
-    **比赛权重** : 24.86  
+    **比赛权重** : 24.20  
     **赛事主办** : Intigriti (https://ctftime.org/team/178083)  
     **添加日历** : https://ctftime.org/event/2134.ics  
     
@@ -946,13 +962,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
     **添加日历** : https://ctftime.org/event/2084.ics  
-    
-??? Abstract "[VolgaCTF 2023 Final](https://volgactf.ru/en/volgactf-2023/final/)"  
-    [![](https://ctftime.org/media/events/logo-social-yellow_13.png)](https://volgactf.ru/en/volgactf-2023/final/)  
-    **比赛名称** : [VolgaCTF 2023 Final](https://volgactf.ru/en/volgactf-2023/final/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2023-09-14 14:00:00 - 2023-09-14 22:00:00 UTC+8  
-    **比赛权重** : 100.00  
-    **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
-    **添加日历** : https://ctftime.org/event/2068.ics  
     

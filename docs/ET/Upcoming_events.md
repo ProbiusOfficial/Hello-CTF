@@ -68,34 +68,9 @@ comments: true
     **比赛时间** : 2023年12月09日 09:00 - 2023年12月09日 21:00  
     **其他说明** : QQ群：902939742  
     
-??? Abstract "“古剑山”第一届全国大学生网络攻防大赛初赛"  
-    **比赛名称** : [“古剑山”第一届全国大学生网络攻防大赛初赛](https://www.cqyti.com/info/1143/390372.htm)  
-    **比赛类型** : 团队赛|1-3人  
-    **报名时间** : 2023年09月15日 18:00 - 2023年11月08日 18:00  
-    **比赛时间** : 2023年12月08日 09:00 - 2023年12月08日 12:00  
-    **其他说明** : QQ 群：792721897  
-    
 
 ## 国际赛事
 
-??? Abstract "[HUNTING SEASON: GROUP-IB 20TH ANNIVERSARY CTF](https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime)"  
-    [![](https://ctftime.org/media/events/InstaTelega__1080x1080_12.png)](https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime)  
-    **比赛名称** : [HUNTING SEASON: GROUP-IB 20TH ANNIVERSARY CTF](https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-07 17:00:00 - 2023-12-07 21:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Group-IB (https://ctftime.org/team/273085)  
-    **添加日历** : https://ctftime.org/event/2177.ics  
-    
-??? Abstract "[Hackappatoi CTF '23](https://hctf.hackappatoi.com/)"  
-    [![](https://ctftime.org/media/events/3cea5d7bcded4dcba103009b24246cd6.png)](https://hctf.hackappatoi.com/)  
-    **比赛名称** : [Hackappatoi CTF '23](https://hctf.hackappatoi.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-08 01:00:00 - 2023-12-09 17:00:00 UTC+8  
-    **比赛权重** : 24.71  
-    **赛事主办** : Hackappatoi (https://ctftime.org/team/140428)  
-    **添加日历** : https://ctftime.org/event/2163.ics  
-    
 ??? Abstract "[HTB University CTF 2023: Brains & Bytes](https://ctf.hackthebox.com/event/details/university-ctf-2023-brains-bytes-1231)"  
     [![](https://ctftime.org)](https://ctf.hackthebox.com/event/details/university-ctf-2023-brains-bytes-1231)  
     **比赛名称** : [HTB University CTF 2023: Brains & Bytes](https://ctf.hackthebox.com/event/details/university-ctf-2023-brains-bytes-1231)  
