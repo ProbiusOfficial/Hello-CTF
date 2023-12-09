@@ -54,41 +54,9 @@ comments: true
     **比赛时间** : 2023年12月16日 10:00 - 2023年12月17日 18:00  
     **其他说明** : QQ咨询群号：640289117  
     
-??? Abstract "0CTF/TCTF 2023"  
-    **比赛名称** : [0CTF/TCTF 2023]( https://0ops.sjtu.cn/)  
-    **比赛类型** : 团队赛  
-    **报名时间** : 2023年10月26日 12:00 - 2023年12月09日 10:00  
-    **比赛时间** : 2023年12月09日 10:00 - 2023年12月11日 10:00  
-    **其他说明** : QQ群：981043287  
-    
-??? Abstract "PolarCTF 网络安全2023冬季个人挑战赛"  
-    **比赛名称** : [PolarCTF 网络安全2023冬季个人挑战赛](https://www.polarctf.com/#/)  
-    **比赛类型** : 个人赛  
-    **报名时间** : 2023年12月01日 00:00 - 2023年12月09日 21:00  
-    **比赛时间** : 2023年12月09日 09:00 - 2023年12月09日 21:00  
-    **其他说明** : QQ群：902939742  
-    
 
 ## 国际赛事
 
-??? Abstract "[0CTF/TCTF 2023](https://ctf.0ops.sjtu.cn/)"  
-    [![](https://ctftime.org)](https://ctf.0ops.sjtu.cn/)  
-    **比赛名称** : [0CTF/TCTF 2023](https://ctf.0ops.sjtu.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-09 10:00:00 - 2023-12-11 10:00:00 UTC+8  
-    **比赛权重** : 100.00  
-    **赛事主办** : 0ops (https://ctftime.org/team/4419)  
-    **添加日历** : https://ctftime.org/event/2073.ics  
-    
-??? Abstract "[TsukuCTF 2023](http://tsukuctf.sechack365.com/)"  
-    [![](https://ctftime.org/media/events/icon_6.png)](http://tsukuctf.sechack365.com/)  
-    **比赛名称** : [TsukuCTF 2023](http://tsukuctf.sechack365.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-09 11:20:00 - 2023-12-10 17:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : TaruTaru (https://ctftime.org/team/157513)  
-    **添加日历** : https://ctftime.org/event/2169.ics  
-    
 ??? Abstract "[snakeCTF 2023](https://2023.snakectf.org/)"  
     [![](https://ctftime.org/media/events/LogoCroppable.png)](https://2023.snakectf.org/)  
     **比赛名称** : [snakeCTF 2023](https://2023.snakectf.org/)  
