@@ -57,24 +57,6 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[snakeCTF 2023](https://2023.snakectf.org/)"  
-    [![](https://ctftime.org/media/events/LogoCroppable.png)](https://2023.snakectf.org/)  
-    **比赛名称** : [snakeCTF 2023](https://2023.snakectf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-09 17:00:00 - 2023-12-10 17:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
-    **添加日历** : https://ctftime.org/event/2158.ics  
-    
-??? Abstract "[HacktorX CTF 2023](https://hacktorx.com/hxctf2023/)"  
-    [![](https://ctftime.org/media/events/logo1_2.png)](https://hacktorx.com/hxctf2023/)  
-    **比赛名称** : [HacktorX CTF 2023](https://hacktorx.com/hxctf2023/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-09 21:00:00 - 2023-12-10 15:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : HacktorX (https://ctftime.org/team/274645)  
-    **添加日历** : https://ctftime.org/event/2174.ics  
-    
 ??? Abstract "[ISITDTU CTF 2023 Finals](https://ctf.isitdtu.com/)"  
     [![](https://ctftime.org/media/events/index_1.gif)](https://ctf.isitdtu.com/)  
     **比赛名称** : [ISITDTU CTF 2023 Finals](https://ctf.isitdtu.com/)  

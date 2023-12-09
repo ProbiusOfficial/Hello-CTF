@@ -33,13 +33,6 @@ comments: true
     **比赛时间** : 2023年12月06日 09:00 - 2023年12月10日 16:00  
     **其他说明** : QQ群：523854931  决赛地点：南京  
     
-??? Abstract "PolarCTF 网络安全2023冬季个人挑战赛"  
-    **比赛名称** : [PolarCTF 网络安全2023冬季个人挑战赛](https://www.polarctf.com/#/)  
-    **比赛类型** : 个人赛  
-    **报名时间** : 2023年12月01日 00:00 - 2023年12月09日 21:00  
-    **比赛时间** : 2023年12月09日 09:00 - 2023年12月09日 21:00  
-    **其他说明** : QQ群：902939742  
-    
 
 ## 国际赛事
 
@@ -69,15 +62,6 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
-    
-??? Abstract "[Hackappatoi CTF '23](https://hctf.hackappatoi.com/)"  
-    [![](https://ctftime.org/media/events/3cea5d7bcded4dcba103009b24246cd6.png)](https://hctf.hackappatoi.com/)  
-    **比赛名称** : [Hackappatoi CTF '23](https://hctf.hackappatoi.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-08 01:00:00 - 2023-12-09 17:00:00 UTC+8  
-    **比赛权重** : 24.71  
-    **赛事主办** : Hackappatoi (https://ctftime.org/team/140428)  
-    **添加日历** : https://ctftime.org/event/2163.ics  
     
 ??? Abstract "[HTB University CTF 2023: Brains & Bytes](https://ctf.hackthebox.com/event/details/university-ctf-2023-brains-bytes-1231)"  
     [![](https://ctftime.org)](https://ctf.hackthebox.com/event/details/university-ctf-2023-brains-bytes-1231)  
@@ -114,4 +98,22 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : TaruTaru (https://ctftime.org/team/157513)  
     **添加日历** : https://ctftime.org/event/2169.ics  
+    
+??? Abstract "[snakeCTF 2023](https://2023.snakectf.org/)"  
+    [![](https://ctftime.org/media/events/LogoCroppable.png)](https://2023.snakectf.org/)  
+    **比赛名称** : [snakeCTF 2023](https://2023.snakectf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-09 17:00:00 - 2023-12-10 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
+    **添加日历** : https://ctftime.org/event/2158.ics  
+    
+??? Abstract "[HacktorX CTF 2023](https://hacktorx.com/hxctf2023/)"  
+    [![](https://ctftime.org/media/events/logo1_2.png)](https://hacktorx.com/hxctf2023/)  
+    **比赛名称** : [HacktorX CTF 2023](https://hacktorx.com/hxctf2023/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-09 21:00:00 - 2023-12-10 15:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : HacktorX (https://ctftime.org/team/274645)  
+    **添加日历** : https://ctftime.org/event/2174.ics  
     

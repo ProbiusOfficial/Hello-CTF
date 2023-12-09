@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Abstract "PolarCTF 网络安全2023冬季个人挑战赛"  
+    **比赛名称** : [PolarCTF 网络安全2023冬季个人挑战赛](https://www.polarctf.com/#/)  
+    **比赛类型** : 个人赛  
+    **报名时间** : 2023年12月01日 00:00 - 2023年12月09日 21:00  
+    **比赛时间** : 2023年12月09日 09:00 - 2023年12月09日 21:00  
+    **其他说明** : QQ群：902939742  
+    
 ??? Abstract "“古剑山”第一届全国大学生网络攻防大赛初赛"  
     **比赛名称** : [“古剑山”第一届全国大学生网络攻防大赛初赛](https://www.cqyti.com/info/1143/390372.htm)  
     **比赛类型** : 团队赛|1-3人  
@@ -63,6 +70,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[Hackappatoi CTF '23](https://hctf.hackappatoi.com/)"  
+    [![](https://ctftime.org/media/events/3cea5d7bcded4dcba103009b24246cd6.png)](https://hctf.hackappatoi.com/)  
+    **比赛名称** : [Hackappatoi CTF '23](https://hctf.hackappatoi.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-08 01:00:00 - 2023-12-09 17:00:00 UTC+8  
+    **比赛权重** : 24.71  
+    **赛事主办** : Hackappatoi (https://ctftime.org/team/140428)  
+    **添加日历** : https://ctftime.org/event/2163.ics  
+    
 ??? Abstract "[HUNTING SEASON: GROUP-IB 20TH ANNIVERSARY CTF](https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime)"  
     [![](https://ctftime.org/media/events/InstaTelega__1080x1080_12.png)](https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime)  
     **比赛名称** : [HUNTING SEASON: GROUP-IB 20TH ANNIVERSARY CTF](https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime)  
@@ -953,13 +969,4 @@ comments: true
     **比赛权重** : 21.69  
     **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
     **添加日历** : https://ctftime.org/event/2087.ics  
-    
-??? Abstract "[SEC-T 0x0FOO CTF 2023](https://sec-t.hackaplaneten.se/)"  
-    [![](https://ctftime.org/media/events/sec-t.jpeg)](https://sec-t.hackaplaneten.se/)  
-    **比赛名称** : [SEC-T 0x0FOO CTF 2023](https://sec-t.hackaplaneten.se/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-14 18:00:00 - 2023-09-15 22:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-    **添加日历** : https://ctftime.org/event/2084.ics  
     
