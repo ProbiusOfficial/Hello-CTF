@@ -71,15 +71,6 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[pingCTF 2023](https://ctf.knping.pl/)"  
-    [![](https://ctftime.org)](https://ctf.knping.pl/)  
-    **比赛名称** : [pingCTF 2023](https://ctf.knping.pl/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-09 01:30:00 - 2023-12-11 06:00:00 UTC+8  
-    **比赛权重** : 24.29  
-    **赛事主办** : pingCTF (https://ctftime.org/team/147266)  
-    **添加日历** : https://ctftime.org/event/1987.ics  
-    
 ??? Abstract "[0CTF/TCTF 2023](https://ctf.0ops.sjtu.cn/)"  
     [![](https://ctftime.org)](https://ctf.0ops.sjtu.cn/)  
     **比赛名称** : [0CTF/TCTF 2023](https://ctf.0ops.sjtu.cn/)  

@@ -74,3 +74,12 @@ comments: true
     **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
     **添加日历** : https://ctftime.org/event/2149.ics  
     
+??? Abstract "[pingCTF 2023](https://ctf.knping.pl/)"  
+    [![](https://ctftime.org)](https://ctf.knping.pl/)  
+    **比赛名称** : [pingCTF 2023](https://ctf.knping.pl/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-09 01:30:00 - 2023-12-11 06:00:00 UTC+8  
+    **比赛权重** : 24.29  
+    **赛事主办** : pingCTF (https://ctftime.org/team/147266)  
+    **添加日历** : https://ctftime.org/event/1987.ics  
+    
