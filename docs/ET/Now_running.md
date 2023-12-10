@@ -83,30 +83,12 @@ comments: true
     **赛事主办** : 0ops (https://ctftime.org/team/4419)  
     **添加日历** : https://ctftime.org/event/2073.ics  
     
-??? Abstract "[TsukuCTF 2023](http://tsukuctf.sechack365.com/)"  
-    [![](https://ctftime.org/media/events/icon_6.png)](http://tsukuctf.sechack365.com/)  
-    **比赛名称** : [TsukuCTF 2023](http://tsukuctf.sechack365.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-09 11:20:00 - 2023-12-10 17:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : TaruTaru (https://ctftime.org/team/157513)  
-    **添加日历** : https://ctftime.org/event/2169.ics  
-    
-??? Abstract "[snakeCTF 2023](https://2023.snakectf.org/)"  
-    [![](https://ctftime.org/media/events/LogoCroppable.png)](https://2023.snakectf.org/)  
-    **比赛名称** : [snakeCTF 2023](https://2023.snakectf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-09 17:00:00 - 2023-12-10 17:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
-    **添加日历** : https://ctftime.org/event/2158.ics  
-    
-??? Abstract "[ISITDTU CTF 2023 Finals](https://ctf.isitdtu.com/)"  
-    [![](https://ctftime.org/media/events/index_1.gif)](https://ctf.isitdtu.com/)  
-    **比赛名称** : [ISITDTU CTF 2023 Finals](https://ctf.isitdtu.com/)  
+??? Abstract "[HACKOLINE](https://mrwebx.com/event/#/home)"  
+    [![](https://ctftime.org/media/events/instagram.jpeg)](https://mrwebx.com/event/#/home)  
+    **比赛名称** : [HACKOLINE](https://mrwebx.com/event/#/home)  
     **比赛形式** : Attack-Defense  
-    **比赛时间** : 2023-12-10 09:00:00 - 2023-12-10 17:00:00 UTC+8  
-    **比赛权重** : 37.00  
-    **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
-    **添加日历** : https://ctftime.org/event/2090.ics  
+    **比赛时间** : 2023-12-10 17:00:00 - 2023-12-11 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : mrwebsecure (https://ctftime.org/team/276542)  
+    **添加日历** : https://ctftime.org/event/2204.ics  
     

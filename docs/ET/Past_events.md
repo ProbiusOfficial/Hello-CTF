@@ -77,6 +77,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[ISITDTU CTF 2023 Finals](https://ctf.isitdtu.com/)"  
+    [![](https://ctftime.org/media/events/index_1.gif)](https://ctf.isitdtu.com/)  
+    **比赛名称** : [ISITDTU CTF 2023 Finals](https://ctf.isitdtu.com/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2023-12-10 09:00:00 - 2023-12-10 17:00:00 UTC+8  
+    **比赛权重** : 37.00  
+    **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
+    **添加日历** : https://ctftime.org/event/2090.ics  
+    
 ??? Abstract "[HacktorX CTF 2023](https://hacktorx.com/hxctf2023/)"  
     [![](https://ctftime.org/media/events/logo1_2.png)](https://hacktorx.com/hxctf2023/)  
     **比赛名称** : [HacktorX CTF 2023](https://hacktorx.com/hxctf2023/)  
@@ -85,6 +94,24 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : HacktorX (https://ctftime.org/team/274645)  
     **添加日历** : https://ctftime.org/event/2174.ics  
+    
+??? Abstract "[snakeCTF 2023](https://2023.snakectf.org/)"  
+    [![](https://ctftime.org/media/events/LogoCroppable.png)](https://2023.snakectf.org/)  
+    **比赛名称** : [snakeCTF 2023](https://2023.snakectf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-09 17:00:00 - 2023-12-10 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
+    **添加日历** : https://ctftime.org/event/2158.ics  
+    
+??? Abstract "[TsukuCTF 2023](http://tsukuctf.sechack365.com/)"  
+    [![](https://ctftime.org/media/events/icon_6.png)](http://tsukuctf.sechack365.com/)  
+    **比赛名称** : [TsukuCTF 2023](http://tsukuctf.sechack365.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-09 11:20:00 - 2023-12-10 17:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : TaruTaru (https://ctftime.org/team/157513)  
+    **添加日历** : https://ctftime.org/event/2169.ics  
     
 ??? Abstract "[Hackappatoi CTF '23](https://hctf.hackappatoi.com/)"  
     [![](https://ctftime.org/media/events/3cea5d7bcded4dcba103009b24246cd6.png)](https://hctf.hackappatoi.com/)  
@@ -949,31 +976,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : McMCs (https://ctftime.org/team/220827)  
     **添加日历** : https://ctftime.org/event/1990.ics  
-    
-??? Abstract "[ASIS CTF Quals 2023](https://asisctf.com/)"  
-    [![](https://ctftime.org/media/events/asis_logo_512_1.png)](https://asisctf.com/)  
-    **比赛名称** : [ASIS CTF Quals 2023](https://asisctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-22 22:30:00 - 2023-09-23 22:30:00 UTC+8  
-    **比赛权重** : 89.80  
-    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-    **添加日历** : https://ctftime.org/event/1952.ics  
-    
-??? Abstract "[Arab Security Cyber Wargames 2023 Finals](https://www.ascyberwargames.com/)"  
-    [![](https://ctftime.org/media/events/logo_92.png)](https://www.ascyberwargames.com/)  
-    **比赛名称** : [Arab Security Cyber Wargames 2023 Finals](https://www.ascyberwargames.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-18 14:00:00 - 2023-09-18 22:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : Arab Security Cyber Wargames (https://ctftime.org/team/127553)  
-    **添加日历** : https://ctftime.org/event/2089.ics  
-    
-??? Abstract "[SECCON CTF 2023 Quals](https://ctf.seccon.jp/)"  
-    [![](https://ctftime.org/media/events/seccon_s_4.png)](https://ctf.seccon.jp/)  
-    **比赛名称** : [SECCON CTF 2023 Quals](https://ctf.seccon.jp/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-16 13:00:00 - 2023-09-17 13:00:00 UTC+8  
-    **比赛权重** : 100.00  
-    **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
-    **添加日历** : https://ctftime.org/event/2003.ics  
     
