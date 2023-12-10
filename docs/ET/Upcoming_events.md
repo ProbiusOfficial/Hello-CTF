@@ -57,15 +57,6 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[ISITDTU CTF 2023 Finals](https://ctf.isitdtu.com/)"  
-    [![](https://ctftime.org/media/events/index_1.gif)](https://ctf.isitdtu.com/)  
-    **比赛名称** : [ISITDTU CTF 2023 Finals](https://ctf.isitdtu.com/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2023-12-10 09:00:00 - 2023-12-10 17:00:00 UTC+8  
-    **比赛权重** : 37.00  
-    **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
-    **添加日历** : https://ctftime.org/event/2090.ics  
-    
 ??? Abstract "[HACKOLINE](https://mrwebx.com/event/#/home)"  
     [![](https://ctftime.org/media/events/instagram.jpeg)](https://mrwebx.com/event/#/home)  
     **比赛名称** : [HACKOLINE](https://mrwebx.com/event/#/home)  

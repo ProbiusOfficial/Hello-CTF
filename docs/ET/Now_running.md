@@ -26,13 +26,6 @@ comments: true
     **比赛时间** : 2023年12月09日 10:00 - 2023年12月11日 10:00  
     **其他说明** : QQ群：981043287  
     
-??? Abstract "第六届“强网”拟态防御国际精英挑战赛决赛"  
-    **比赛名称** : [第六届“强网”拟态防御国际精英挑战赛决赛](https://peekgeek.xctf.org.cn/race/qwmimic2023/)  
-    **比赛类型** : 团队赛|1-4人  
-    **报名时间** : 2023年10月20日 00:00 - 2023年11月07日 00:00  
-    **比赛时间** : 2023年12月06日 09:00 - 2023年12月10日 16:00  
-    **其他说明** : QQ群：523854931  决赛地点：南京  
-    
 
 ## 国际赛事
 
@@ -108,12 +101,12 @@ comments: true
     **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
     **添加日历** : https://ctftime.org/event/2158.ics  
     
-??? Abstract "[HacktorX CTF 2023](https://hacktorx.com/hxctf2023/)"  
-    [![](https://ctftime.org/media/events/logo1_2.png)](https://hacktorx.com/hxctf2023/)  
-    **比赛名称** : [HacktorX CTF 2023](https://hacktorx.com/hxctf2023/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-09 21:00:00 - 2023-12-10 15:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : HacktorX (https://ctftime.org/team/274645)  
-    **添加日历** : https://ctftime.org/event/2174.ics  
+??? Abstract "[ISITDTU CTF 2023 Finals](https://ctf.isitdtu.com/)"  
+    [![](https://ctftime.org/media/events/index_1.gif)](https://ctf.isitdtu.com/)  
+    **比赛名称** : [ISITDTU CTF 2023 Finals](https://ctf.isitdtu.com/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2023-12-10 09:00:00 - 2023-12-10 17:00:00 UTC+8  
+    **比赛权重** : 37.00  
+    **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
+    **添加日历** : https://ctftime.org/event/2090.ics  
     

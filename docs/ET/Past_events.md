@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Abstract "第六届“强网”拟态防御国际精英挑战赛决赛"  
+    **比赛名称** : [第六届“强网”拟态防御国际精英挑战赛决赛](https://peekgeek.xctf.org.cn/race/qwmimic2023/)  
+    **比赛类型** : 团队赛|1-4人  
+    **报名时间** : 2023年10月20日 00:00 - 2023年11月07日 00:00  
+    **比赛时间** : 2023年12月06日 09:00 - 2023年12月10日 16:00  
+    **其他说明** : QQ群：523854931  决赛地点：南京  
+    
 ??? Abstract "PolarCTF 网络安全2023冬季个人挑战赛"  
     **比赛名称** : [PolarCTF 网络安全2023冬季个人挑战赛](https://www.polarctf.com/#/)  
     **比赛类型** : 个人赛  
@@ -70,6 +77,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[HacktorX CTF 2023](https://hacktorx.com/hxctf2023/)"  
+    [![](https://ctftime.org/media/events/logo1_2.png)](https://hacktorx.com/hxctf2023/)  
+    **比赛名称** : [HacktorX CTF 2023](https://hacktorx.com/hxctf2023/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-09 21:00:00 - 2023-12-10 15:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : HacktorX (https://ctftime.org/team/274645)  
+    **添加日历** : https://ctftime.org/event/2174.ics  
+    
 ??? Abstract "[Hackappatoi CTF '23](https://hctf.hackappatoi.com/)"  
     [![](https://ctftime.org/media/events/3cea5d7bcded4dcba103009b24246cd6.png)](https://hctf.hackappatoi.com/)  
     **比赛名称** : [Hackappatoi CTF '23](https://hctf.hackappatoi.com/)  
@@ -960,13 +976,4 @@ comments: true
     **比赛权重** : 100.00  
     **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
     **添加日历** : https://ctftime.org/event/2003.ics  
-    
-??? Abstract "[CSAW CTF Qualification Round 2023](https://ctf.csaw.io/)"  
-    [![](https://ctftime.org)](https://ctf.csaw.io/)  
-    **比赛名称** : [CSAW CTF Qualification Round 2023](https://ctf.csaw.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-16 00:00:00 - 2023-09-18 00:00:00 UTC+8  
-    **比赛权重** : 21.69  
-    **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
-    **添加日历** : https://ctftime.org/event/2087.ics  
     
