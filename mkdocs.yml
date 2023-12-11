@@ -96,9 +96,16 @@ extra:
 plugins:
   - search
   - blog
+  - mkdocs-video: # Powered by https://github.com/soulless-viewer/mkdocs-video
+      is_video: True
+      video_muted: True
+      video_controls: True
+      css_style:
+        width: "50%"
 
 # 扩展
 markdown_extensions:
+  - attr_list
   - abbr
   - admonition
   - attr_list

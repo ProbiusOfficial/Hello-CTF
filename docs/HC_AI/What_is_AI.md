@@ -87,7 +87,7 @@
 
 #### **PyTorch**
 
-![PyTorch 1.9 - Towards Distributed Training and Scientific Computing](C:\Users\17845\Desktop\Hello-CTF\docs\HC_AI\assets\PyTorch-1536x864.png)
+![PyTorch 1.9 - Towards Distributed Training and Scientific Computing](assets/PyTorch-1536x864.png)
 
   - **主要维护方：** Facebook
   - **支持的语言：** C/C++/Python
@@ -127,7 +127,7 @@
 
 #### **Paddle**
 
-![PaddlePaddle 数据集初探 - 知乎](C:\Users\17845\Desktop\Hello-CTF\docs\HC_AI\assets\v2-5f4166c0775a36af4076389deb57d118_b.jpg)
+![PaddlePaddle 数据集初探 - 知乎](assets/v2-5f4166c0775a36af4076389deb57d118_b.jpg)
 
   - **主要维护方：** Baidu
   - **支持的语言：** C++/Python
@@ -145,7 +145,7 @@
 
 #### **Keras**
 
-![【前編】「Keras」と「PyTorch」を徹底比較してみた！～MNIST編～ – 株式会社ライトコード](C:\Users\17845\Desktop\Hello-CTF\docs\HC_AI\assets\keras-logo.png)
+![【前編】「Keras」と「PyTorch」を徹底比較してみた！～MNIST編～ – 株式会社ライトコード](assets/keras-logo.png)
 
   - **主要维护方：** Google
   - **支持的语言：** Python/R
@@ -159,7 +159,7 @@
 
 #### **Caffe**
 
-![Caffe Deep Learning | LaptrinhX](C:\Users\17845\Desktop\Hello-CTF\docs\HC_AI\assets\caffe-deep-learning.jpg)
+![Caffe Deep Learning | LaptrinhX](assets/caffe-deep-learning.jpg)
 
   - **主要维护方：** BVLC
   - **支持的语言：** C++/Python/Matlab
@@ -175,7 +175,7 @@
 
 #### **MXNet**
 
-![MXNet: A Flexible and Efficient Machine Learning Library for ...](C:\Users\17845\Desktop\Hello-CTF\docs\HC_AI\assets\OIP.jpeg)
+![MXNet: A Flexible and Efficient Machine Learning Library for ...](assets/OIP.jpeg)
 
   - **主要维护方：** DMLC
   - **支持的语言：** C++/Python/R等

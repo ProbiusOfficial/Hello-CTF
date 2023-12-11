@@ -35,7 +35,7 @@ jobs:
           python-version: 3.9
 
       - name: Install dependencies
-        run: pip install mkdocs-material
+        run: pip install -r requirements.txt
 
       - name: Deploy MkDocs
         run: mkdocs gh-deploy --force
