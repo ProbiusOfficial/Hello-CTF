@@ -16,8 +16,8 @@ comments: true
 ### [Apache Struts2 文件上传分析(S2-066)](https://y4tacker.github.io/2023/12/09/year/2023/12/Apache-Struts2-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%86%E6%9E%90-S2-066/)  
 >by [Y4tacker](https://y4tacker.github.io), 2023-12-09
 
-366edec48ec9aac543bdf693f7d19676a35fa4c5d4c6fb06576fd0b955c98745238ee976e2fe948434b185deda3891866b01745e1c579615ba19f72a6ba4c8e093a51bd6c73f5aaf5ad2924d319cef4b2b5dd1c93c4dac872e0827765546506bec943f...
-### [某某通漏洞分析](https://y4tacker.github.io/2023/12/08/year/2023/12/%E6%9F%90%E6%9F%90%E9%80%9A%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/)  
+Apache Struts2 文件上传分析(S2-066)struts2也很久没出过漏洞了吧，这次爆的是和文件上传相关相关的commit在https://github.com/apache/struts/commit/162e29fee9136f4bfd9b2376da2cbf590f9ea163首先从commit可以看出，漏洞和大小写参数有关，后面会具体谈及同时结合CVE描述我们可以知道，大概和...
+### [某某通漏洞浅析](https://y4tacker.github.io/2023/12/08/year/2023/12/%E6%9F%90%E6%9F%90%E9%80%9A%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/)  
 >by [Y4tacker](https://y4tacker.github.io), 2023-12-08
 
 e1bd3e68fe0e95aad543147235f13aa8c07db101f08238b29c49348e526ca2c395ff16b5184fe4ee67b8dd1840f69936917a685390975ecb78405622c312487d5e6b45d97870e169a38f37bd7a2e95cc5b864202dba1787e366b00f3973f1aa3686ad8...
