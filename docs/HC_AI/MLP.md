@@ -98,14 +98,13 @@ class BPNetwork_Numpy:
 
 ![img](C:\Users\17845\Desktop\Hello-CTF\docs\HC_AI\assets\v2-5a81c06789ad5e9323f93c6540263327_r.jpg)
 
-在一般情况下，参与运算的各元素都是**矩阵**，其中的蓝色方块代表着**激活函数**，绿色方块代表着**权重Weight**和**偏置Bias**。需要注意的是，***权重和偏置对应上图中不同神经元的连线***，例如1->3和1->4的参数不同。详细计算方式如下式：
-$$
-\begin{align}
-a1 &= W*h1+b\\
-h2 &= F(a1)
-\end{align}
-$$
-**在分类问题中，最后的输出层元素个数一般等于分类数目，最终的结果代表着该输入被这个MLP分为某一类的可能性大小，指越大，代表越可能属于该类。为了便于观测，我们通常使用argmax函数将输出与下标联系起来，转化为分类结果。**
+在一般情况下，参与运算的各元素都是**矩阵**，其中的蓝色方块代表着**激活函数**，绿色方块代表着**权重Weight**和**偏置Bias**。需要注意的是，***权重和偏置对应上图中不同神经元的连线***，例如1->3和1->4的参数不同。详细计算方式如下图及下式：
+
+![img](C:\Users\17845\Desktop\Hello-CTF\docs\HC_AI\assets\v2-ec822b0f10066f097a074e1ff09167b1_r.jpg)
+
+**在分类问题中，最后的输出层元素个数一般等于分类数目，最终的结果代表着该输入被这个MLP分为某一类的可能性大小，指越大，代表越可能属于该类。为了便于观测，我们通常使用softmax函数将将上一层的原始数据进行归一化，转化为一个 $(0,1)$ 之间的数值，这些数值可以被当做概率分布，用来作为多分类的目标预测值。**
+
+![img](C:\Users\17845\Desktop\Hello-CTF\docs\HC_AI\assets\v2-4452fdaaa04686aa270010f57f4db2aa_r.jpg)
 
 同样的，我们可以使用Numpy帮我们完成计算（向前传播）部分：
 
@@ -117,10 +116,10 @@ $$
         self.layer2_output = np.dot(self.weights['fc2'], self.layer1_activation) + self.biases['fc2']
         self.layer2_activation = np.maximum(0, self.layer2_output)
         self.layer3_output = np.dot(self.weights['fc3'], self.layer2_activation) + self.biases['fc3']
-        return np.argmax(self.layer3_output)
+        return np.softmax(self.layer3_output)
 ```
 
-其中，np.dot()函数提供了矩阵乘法，np.maximum()作为我们的激活函数，最后的np.argmax()用来找到最大值的下标，方便我们观测结果。
+其中，np.dot()函数提供了矩阵乘法，np.maximum()作为我们的激活函数，最后的np.softmax()用来输出数据转化为概率，方便我们观测结果。
 
 ### 激活函数
 
@@ -177,7 +176,7 @@ $$
 !!! note "骚话环节"
     怎么样？经过可视化后，现在是不是好理解多了？那快夸夸Cain宝（×
 
-### BP误差反向传播法
+## BP误差反向传播法
 
 !!! question "如何训练呢？"
 	“那么我该如何训练我自己的MLP呢？”
@@ -191,31 +190,130 @@ $$
 !!! quote "多一行公式，少一个观众"
 	~~为什么要大致的说呢，因为我猜下面的推导没有人看（bushi~~
 
-#### 数学推导
+### 数学推导过程
 
 损失对参数梯度的反向传播可以被这样直观解释：由A到传播B，即由 $\partial L/\partial A$ 得到 $\partial L/\partial B$ ，由导数链式法则$\partial L/\partial B=(\partial L/\partial A)\cdot(\partial A/\partial B)$。所以神经网络的BP就是通过链式法则求出 $L$ 对所有参数梯度的过程。
+
+如下图示例，输入$x$ ，经过网络的参数 $w,b$ ，得到一系列中间结果 $a,h$ 。
+
+![img](C:\Users\17845\Desktop\Hello-CTF\docs\HC_AI\assets\v2-d38c136a7b018fb3ea7344a902d0e3d1_r.jpg)
+
+ $a$表示通过权重和偏置的结果，还未经过激活函数， ℎ 表示经过激活函数后的结果。灰色框内表示 $L$对各中间计算结果的梯度，这些梯度的反向传播有两类：
+
+- 由 $h$到$a$ ，通过激活函数，如右上角
 
 
 $$
 \begin{aligned}\frac{\partial l}{\partial a_{21}}&=\frac{\partial l}{\partial h_{21}}\cdot\frac{\partial h_{21}}{\partial a_{21}}=\frac{\partial l}{\partial h_{21}}\cdot activate'(a_{21})\end{aligned}
 $$
-![img](C:\Users\17845\Desktop\Hello-CTF\docs\HC_AI\assets\v2-ec822b0f10066f097a074e1ff09167b1_r.jpg)
+- 由到$a$到$h$  ，通过权重，如橙线部分
+  $$
+  \begin{gathered}
+  L=f(a_{21},a_{22},a_{23}) \\
+  \frac{\partial L}{\partial h_{11}}=\frac{\partial L}{\partial a_{21}}\frac{\partial a_{21}}{\partial h_{11}}+\frac{\partial L}{\partial a_{22}}\frac{\partial a_{22}}{\partial h_{11}}+\frac{\partial L}{\partial a_{23}}\frac{\partial a_{23}}{\partial h_{11}} \\
+  \frac{\partial L}{\partial h_{11}}=\frac{\partial L}{\partial a_{21}}w_{1}+\frac{\partial L}{\partial a_{22}}w_{2}+\frac{\partial L}{\partial a_{23}}w_{3} 
+  \end{gathered}
+  $$
+  可以看出梯度的传播和前向传播的模式是一致的，只是方向不同。
+
+  计算完了灰色框的部分（损失对中间结果 $a,h$ 的梯度），损失对参数 $w,b$ 的梯度也就显而易见了，以图中红色的 $w_1$ 和 $b_{21}$ 为例：
+  $$
+  \begin{aligned}\frac{\partial L}{\partial w_1}&=\frac{\partial L}{\partial a_{21}}\cdot\frac{\partial a_{21}}{\partial w_1}=\frac{\partial L}{\partial a_{21}}\cdot h_{11}\\\\\frac{\partial L}{\partial b_{21}}&=\frac{\partial L}{\partial a_{21}}\cdot\frac{\partial a_{21}}{\partial b_{21}}=\frac{\partial L}{\partial a_{21}}\end{aligned}
+  $$
+  因此，我们可以如下图，将反向传播的表达式和代码如下。
+
+![img](C:\Users\17845\Desktop\Hello-CTF\docs\HC_AI\assets\v2-4564c3328f7f007f2a046076cdac800a_r.jpg)
+
+输出层的反向传播略有不同，因为在分类任务中输出层若用到softmax激活函数， $a$  到 $h$ 不是逐个对应的，如下图所示，因此$\partial L/\partial B=(\partial L/\partial A)\cdot(\partial A/\partial B)$中的element-wise相乘是失效的，需要用 $\partial L/\partial h$ 乘以向量 $h$ 到向量  $a$ 的向量梯度（雅可比矩阵）。
+
+![img](C:\Users\17845\Desktop\Hello-CTF\docs\HC_AI\assets\v2-eee0b51486476bf9fcb8a1c3b041259f_r.jpg)
+
+但实际上，**经过看上去复杂的计算后输出层 $\partial L/\partial h$ 会计算出一个非常简洁的结果: $h - y $**
+
+- 以分类任务为例（交叉熵损失、softmax、训练标签 $y$ 为one-hot向量其中第 $k$​ 维为1）：
+  $$
+  \begin{gather*}
+  L=-\sum_{i=1}^ny_i\log h_i\\
+  \frac{\partial L}{\partial\mathrm{a}}=[\frac{\partial L}{\partial h_1}\frac{\partial L}{\partial h_2}\ldots\frac{\partial L}{\partial h_n}]\cdot\begin{bmatrix}\partial h_1/\partial a_1&\partial h_1/\partial a_2&\ldots\partial h_1/\partial a_n\\\partial h_2/\partial a_1&\partial h_2/\partial a_2&\ldots\partial h_2/\partial a_n\\\ldots\\\partial h_n/\partial a_1&\partial h_n/\partial a_2&\ldots\partial h_n/\partial a_n\end{bmatrix}\\\\
+  \left.\frac{\partial L}{\partial\mathrm{a}}=[0,\ldots,-\frac{1}{h_k},\ldots,0]\cdot\left[\begin{matrix}h_1(1-h_1)&-h_1h_2&\ldots&-h_1h_n\\h_2h_1&h_2(1-h_2)&\ldots&-h_2h_n\\\ldots\\h_nh_1&-h_nh_2&\ldots&h_n(1-h_n)\end{matrix}\right.\right]\\
+  \dfrac{\partial L}{\partial\text{a}}=-\dfrac{1}{h_k}\cdot[\begin{matrix}-h_kh_1&-h_kh_2&\ldots&h_k(1-h_k)&\ldots&-h_kh_n\end{matrix}]\\
+  \dfrac{\partial L}{\partial\text{a}}=[h_1,h_2,\ldots,h_n]-[0,\ldots,1,\ldots,0]=h-y
+  \\
+  \end{gather*}
+  $$
+  
+- 以回归任务为例（二次损失、线性激活、训练标签 $y$ 为实数向量）：
+
+$$
+\begin{gather*}
+  L=1/2\cdot||h-y||_2^2\\\\
+  \frac{\partial L}{\partial\mathrm{a}}=\frac{\partial L}{\partial h}=h-y
+  \end{gather*}
+$$
+
+### 底层实现
+
+同样的，用numpy来实现底层的算法，在下面的例子中，我们选择ReLU函数作为激活函数：
+
+```python
+    def backward(self, x, y):
+        # 计算输出层的梯度
+        one_hot_y = np.zeros_like(self.layer3_output)
+        one_hot_y[y] = 1
+        delta3 = self.layer3_output - one_hot_y
+
+        # 计算第二隐藏层的梯度
+        delta2 = np.dot(self.weights['fc3'].T, delta3)
+        delta2[self.layer2_output <= 0] = 0  # ReLU的导数
+
+        # 计算第一隐藏层的梯度
+        delta1 = np.dot(self.weights['fc2'].T, delta2)
+        delta1[self.layer1_output <= 0] = 0  # ReLU的导数
+
+        # 计算权重和偏置项的梯度
+        dW3 = np.outer(delta3, self.layer2_activation)
+        db3 = delta3
+        dW2 = np.outer(delta2, self.layer1_activation)
+        db2 = delta2
+        dW1 = np.outer(delta1, x.flatten())
+        db1 = delta1
+
+        # 更新权重和偏置项
+        learning_rate = 0.01
+        self.weights['fc3'] -= learning_rate * dW3
+        self.biases['fc3'] -= learning_rate * db3
+        self.weights['fc2'] -= learning_rate * dW2
+        self.biases['fc2'] -= learning_rate * db2
+        self.weights['fc1'] -= learning_rate * dW1
+        self.biases['fc1'] -= learning_rate * db1
+```
+
+## MNIST数据集
+
+!!! quote "越老越妖"
+	为什么这次的例子中输入都是 $28*28=784$ 的？为什么是黑白图片，常规的图片不是有三至四个维度吗？
+
+就像无数人从敲下“Hello World”开始代码之旅一样，许多研究员从“MNIST数据集”开启了人工智能的探索之路。
+
+**MNIST数据集**（Mixed National Institute of Standards and Technology database）来自美国国家标准与技术研究所，训练集 (training set) 由来自 250 个不同人手写的数字构成, 其中 50% 是高中学生, 50% 来自人口普查局 (the Census Bureau) 的工作人员. 测试集(test set) 也是同样比例的手写数字数据。是一个用来训练各种图像处理系统的二进制图像数据集，广泛应用于机器学习中的训练和测试。作为一个入门级的计算机视觉数据集，发布20多年来，它已经被无数机器学习入门者“咀嚼”千万遍，是最受欢迎的深度学习数据集之一。
+
+![Sample images of MNIST data. | Download Scientific Diagram](C:\Users\17845\Desktop\Hello-CTF\docs\HC_AI\assets\Sample-images-of-MNIST-data.png)
+
+整个数据集包含两部分，**训练集**和**测试集**。训练集60000张图像，其中30000张来自NIST的Special Database 3，30000张来自NIST的Special Database 1；测试集10000张图像，其中5000张来自NIST的Special Database 3，5000张来自NIST的Special Database 1。
+
+MNIST原始的Special Database 3 数据集和Special Database 1数据集均是二值图像，MNIST从这两个数据集中取出图像后，通过图像处理方法使得每张图像都变成28×28大小的灰度图像，且手写数字在图像中居中显示。
 
 
+## Pytorch实现与解析
 
-![img](C:\Users\17845\Desktop\Hello-CTF\docs\HC_AI\assets\v2-d38c136a7b018fb3ea7344a902d0e3d1_r.jpg)
+!!! Tip "终于"   
+	上述所有原理看懂了吗？~~没看懂也没事（×~~
+	抱着不求甚解的态度来学习在python中怎么使用吧，下面就是你擅长的部分了
+	什么？！你代码也写不好？女孩子请找我，我来教你写；男孩子也可以来找我，我给你一拳，没用的东西
 
+下面的代码使用**pytorch**构造了一个简单的三层（784 --> 128 --> 64 --> 10）MLP，使用了ReLU作为激活函数，最后一层通过softmax进行归一化，转化为概率分布，我们将依靠MNIST这个著名的数据集对它进行训练，并测试我们的模型效果。
 
-
-![img](C:\Users\17845\Desktop\Hello-CTF\docs\HC_AI\assets\v2-1223ca671593b057371819e3f4e52c90_r.jpg)
-
-
-
-
-
-
-
-## 代码实现与解析
+![img](C:\Users\17845\Desktop\Hello-CTF\docs\HC_AI\assets\plain-vanilla.png)
 
 ```python
 import torch
@@ -230,7 +328,7 @@ EPOCHS = 5		#设置训练轮数
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")		#确定是否有可用的CUDA设备
 
 #定义一个BPNet类，它继承于nn.Module类，nn.Module是pytorch给出的默认神经网络类
-class BPNet(nn.Module):		
+class MLP(nn.Module):		
     def __init__(self):		#定义类对象实例化方法
         super().__init__()		#初始化神经网络
         #定义类的接口函数，使用nn.Sequential将操作合并到一起
@@ -245,66 +343,80 @@ class BPNet(nn.Module):
     def forward(self, x):
         x = torch.flatten(-1)		#首先将x展平为一维数组
         x = self.classifier(x)		#将x放入上面定义的函数中
+        x = nn.Softmax(x, dim=1)           #将x进行归一化处理，转换为概率分布
         return x
-    
-def test(model):
-    test_dataset = datasets.MNIST(root='data', 
-                            train=False, 
-                            transform=transforms.ToTensor(),
-                            download=True)
-    test_loader = DataLoader(dataset=test_dataset, 
-                            batch_size=BATCH_SIZE, 
-                            shuffle=False)
-    total = 0
-    correct = 0
-    for index, (data, target) in enumerate(test_loader):
-        data, target = data.to(DEVICE), target.to(DEVICE)
-
-        pred = model(data)
-        pred = torch.argmax(pred)
-        correct += (pred == target).sum()
-        total += pred.size(0)
-
-    print("Correct : ",correct,'/',total,sep='')
-    print('Accuracy : ',float(correct)/float(total) * 100. ,"%",sep='')
-            
-    
-
+   
+     
+#定义训练神经网络模型的代码
 def train(model):
-    train_dataset = datasets.MNIST(root=r'data', 
-                                train=True, 
-                                transform=transforms.ToTensor(),
-                                download=True)
-    train_loader = DataLoader(dataset=train_dataset, 
-                            batch_size=BATCH_SIZE,
-                            shuffle=True)
     
-    optimizer = Adam(model.parameters(), lr=0.05)
-    criterion = nn.CrossEntropyLoss()  
-    model.train()
+    #使用pytorch框架给出的接口datasets，创建一个MNIST数据集
+    train_dataset = datasets.MNIST(root=r'data',		#root指明文件存储位置 
+                                train=True,		#train代表是否是训练集 
+                                transform=transforms.ToTensor(),		#transform表明数据集的数据应该如何处理
+                                download=True)		#download表明是否运行下载
+    #使用pytorch框架给出的接口DataLoader，将数据集载入    
+    train_loader = DataLoader(dataset=train_dataset,		#dataset指明数据集
+                            batch_size=BATCH_SIZE,		#batch_size指明批大小
+                            shuffle=True)		#shuffle指明是否需要打乱
+    
+    #实例化一个Adam优化器，用来对数据进行优化
+    optimizer = Adam(model.parameters(), lr=0.05)		#第一个参数指明需要被优化的数据是模型的参数，lr指明了学习率
+    criterion = nn.CrossEntropyLoss()		#指明误差计算方式，这里使用交叉熵损失  
+    model.train()		#可以先理解为：训练模式，启动！（启用 Batch Normalization 和 Dropout）
 
+    #训练EPOCHS这么多轮（话说是不是es
     for epoch in range(EPOCHS):
+        #使用enumerate对train_loader进行迭代
         for index, (data, target) in enumerate(train_loader):
 
-            data, target = data.to(DEVICE), target.to(DEVICE)
-            optimizer.zero_grad()
+            data, target = data.to(DEVICE), target.to(DEVICE)		#将数据和真实标签部署在选定的设备上，加快运算速度
+            optimizer.zero_grad()		#每次训练前要先将梯度归零
 
-            pred = model(data)
-            loss = criterion(pred, target)
+            pred = model(data)		#使用现在的模型得到现实输出
+            loss = criterion(pred, target)		#计算现实输出和期望输出之间的误差
 
-            loss.backward()
-            optimizer.step()
+            loss.backward()		#反向传播计算得到每个参数的梯度值
+            optimizer.step()		#梯度下降执行一步参数更新
 
+            #每到一定阶段就打印目前训练进度以及相关信息，下面代码是print(f"")格式化输出，看不懂就把代码跑起来一看就懂
             if index % 100 == 0:
                 print(f'Train Epoch: {epoch} [{index * len(data)}/{len(train_loader.dataset)} ({(100. * index / len(train_loader)):.0f}%)]\tLoss: {loss.data[0]:.6f}')
 
 
-    model.eval()
-    torch.save(model.state_dict(),"BPNet.pth")
+    model.eval()		#训练结束（不启用 Batch Normalization 和 Dropout）
+    torch.save(model.state_dict(),"MLP.pth")		#保存模型（仅保存参数）
 
+    
+#定义校验模型效果的代码
+def test(model):
+	#如果你问我这里为什么没注释我就梆梆给你两拳你自己看看上面写的什么气死我了我再梆梆给你两拳自己往上翻读代码去
+    test_dataset = datasets.MNIST(root='data',
+                            train=False,
+                            transform=transforms.ToTensor(),
+                            download=True)
+    test_loader = DataLoader(dataset=test_dataset,
+                            batch_size=BATCH_SIZE,
+                            shuffle=False)
+    total = 0		#总计
+    correct = 0		#正确
+    
+    #和训练一样，使用enumerate对test_loader进行迭代
+    for index, (data, target) in enumerate对(test_loader):
+        data, target = data.to(DEVICE), target.to(DEVICE)
+
+        pred = model(data)
+        correct += (torch.argmax(pred) == target).sum()		#检测预测是否正确，因为是批处理，所以求和
+        total += pred.size(0)
+
+    print("Correct : ",correct,'/',total,sep='')
+    print('Accuracy : ',float(correct)/float(total) * 100. ,"%",sep='')
+             
+    
+    
+#通过main函数调用个函数及方法    
 if __name__ == "__main__":
-    model = BPNet().to(DEVICE)
-
+    model = MLP().to(DEVICE)		#在指定的设备（cpu或者gpu）上将模型实例化
     train(model)
     test(model)
 

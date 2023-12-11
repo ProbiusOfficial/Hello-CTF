@@ -227,7 +227,8 @@ nav:
 
     - AI:
       - HC_AI/index.md
-      - AI介绍: HC_AI/What_is_AI.md
+      - 初识AI: HC_AI/What_is_AI.md
+      - 你的第一个神经网络: HC_AI/MLP.md
 
     - 附录:
       - 提问的智慧: HC_Appendix/how-to-ask.md
