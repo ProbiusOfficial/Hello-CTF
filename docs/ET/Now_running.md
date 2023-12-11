@@ -19,13 +19,6 @@ comments: true
     **比赛时间** : 2023年09月01日 10:30 - 2023年12月30日 20:00  
     **其他说明** : 麟阁赛事训练营qq交流群：591638230  
     
-??? Abstract "0CTF/TCTF 2023"  
-    **比赛名称** : [0CTF/TCTF 2023]( https://0ops.sjtu.cn/)  
-    **比赛类型** : 团队赛  
-    **报名时间** : 2023年10月26日 12:00 - 2023年12月09日 10:00  
-    **比赛时间** : 2023年12月09日 10:00 - 2023年12月11日 10:00  
-    **其他说明** : QQ群：981043287  
-    
 
 ## 国际赛事
 
@@ -55,13 +48,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
-    
-??? Abstract "[0CTF/TCTF 2023](https://ctf.0ops.sjtu.cn/)"  
-    [![](https://ctftime.org)](https://ctf.0ops.sjtu.cn/)  
-    **比赛名称** : [0CTF/TCTF 2023](https://ctf.0ops.sjtu.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-09 10:00:00 - 2023-12-11 10:00:00 UTC+8  
-    **比赛权重** : 100.00  
-    **赛事主办** : 0ops (https://ctftime.org/team/4419)  
-    **添加日历** : https://ctftime.org/event/2073.ics  
     

@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Abstract "0CTF/TCTF 2023"  
+    **比赛名称** : [0CTF/TCTF 2023]( https://0ops.sjtu.cn/)  
+    **比赛类型** : 团队赛  
+    **报名时间** : 2023年10月26日 12:00 - 2023年12月09日 10:00  
+    **比赛时间** : 2023年12月09日 10:00 - 2023年12月11日 10:00  
+    **其他说明** : QQ群：981043287  
+    
 ??? Abstract "第六届“强网”拟态防御国际精英挑战赛决赛"  
     **比赛名称** : [第六届“强网”拟态防御国际精英挑战赛决赛](https://peekgeek.xctf.org.cn/race/qwmimic2023/)  
     **比赛类型** : 团队赛|1-4人  
@@ -122,6 +129,15 @@ comments: true
     **赛事主办** : TaruTaru (https://ctftime.org/team/157513)  
     **添加日历** : https://ctftime.org/event/2169.ics  
     
+??? Abstract "[0CTF/TCTF 2023](https://ctf.0ops.sjtu.cn/)"  
+    [![](https://ctftime.org)](https://ctf.0ops.sjtu.cn/)  
+    **比赛名称** : [0CTF/TCTF 2023](https://ctf.0ops.sjtu.cn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-09 10:00:00 - 2023-12-11 10:00:00 UTC+8  
+    **比赛权重** : 100.00  
+    **赛事主办** : 0ops (https://ctftime.org/team/4419)  
+    **添加日历** : https://ctftime.org/event/2073.ics  
+    
 ??? Abstract "[pingCTF 2023](https://ctf.knping.pl/)"  
     [![](https://ctftime.org)](https://ctf.knping.pl/)  
     **比赛名称** : [pingCTF 2023](https://ctf.knping.pl/)  
@@ -181,7 +197,7 @@ comments: true
     **比赛名称** : [WannaGame Championship 2023](https://cnsc.uit.edu.vn/ctf/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-12-02 09:00:00 - 2023-12-04 09:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 19.80  
     **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
     **添加日历** : https://ctftime.org/event/2146.ics  
     
@@ -967,13 +983,4 @@ comments: true
     **比赛权重** : 97.89  
     **赛事主办** : FAUST (https://ctftime.org/team/550)  
     **添加日历** : https://ctftime.org/event/2011.ics  
-    
-??? Abstract "[KubanCTF Qualifier](https://ctf.kubcsc.ru/)"  
-    [![](https://ctftime.org/media/events/b74cce15-60df-45c7-925f-b70838f5541e.jpeg)](https://ctf.kubcsc.ru/)  
-    **比赛名称** : [KubanCTF Qualifier](https://ctf.kubcsc.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-23 14:00:00 - 2023-09-23 20:00:00 UTC+8  
-    **比赛权重** : 18.42  
-    **赛事主办** : KubanCSC (https://ctftime.org/team/231439)  
-    **添加日历** : https://ctftime.org/event/2092.ics  
     
