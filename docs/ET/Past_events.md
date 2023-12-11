@@ -77,6 +77,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[HACKOLINE](https://mrwebx.com/event/#/home)"  
+    [![](https://ctftime.org/media/events/instagram.jpeg)](https://mrwebx.com/event/#/home)  
+    **比赛名称** : [HACKOLINE](https://mrwebx.com/event/#/home)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2023-12-10 17:00:00 - 2023-12-11 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : mrwebsecure (https://ctftime.org/team/276542)  
+    **添加日历** : https://ctftime.org/event/2204.ics  
+    
 ??? Abstract "[ISITDTU CTF 2023 Finals](https://ctf.isitdtu.com/)"  
     [![](https://ctftime.org/media/events/index_1.gif)](https://ctf.isitdtu.com/)  
     **比赛名称** : [ISITDTU CTF 2023 Finals](https://ctf.isitdtu.com/)  
@@ -112,6 +121,24 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : TaruTaru (https://ctftime.org/team/157513)  
     **添加日历** : https://ctftime.org/event/2169.ics  
+    
+??? Abstract "[pingCTF 2023](https://ctf.knping.pl/)"  
+    [![](https://ctftime.org)](https://ctf.knping.pl/)  
+    **比赛名称** : [pingCTF 2023](https://ctf.knping.pl/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-09 01:30:00 - 2023-12-11 06:00:00 UTC+8  
+    **比赛权重** : 24.29  
+    **赛事主办** : pingCTF (https://ctftime.org/team/147266)  
+    **添加日历** : https://ctftime.org/event/1987.ics  
+    
+??? Abstract "[HTB University CTF 2023: Brains & Bytes](https://ctf.hackthebox.com/event/details/university-ctf-2023-brains-bytes-1231)"  
+    [![](https://ctftime.org)](https://ctf.hackthebox.com/event/details/university-ctf-2023-brains-bytes-1231)  
+    **比赛名称** : [HTB University CTF 2023: Brains & Bytes](https://ctf.hackthebox.com/event/details/university-ctf-2023-brains-bytes-1231)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-08 21:00:00 - 2023-12-11 05:00:00 UTC+8  
+    **比赛权重** : 23.21  
+    **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
+    **添加日历** : https://ctftime.org/event/2149.ics  
     
 ??? Abstract "[Hackappatoi CTF '23](https://hctf.hackappatoi.com/)"  
     [![](https://ctftime.org/media/events/3cea5d7bcded4dcba103009b24246cd6.png)](https://hctf.hackappatoi.com/)  
@@ -163,7 +190,7 @@ comments: true
     **比赛名称** : [NewportBlakeCTF 2023](https://nbctf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-12-02 08:00:00 - 2023-12-04 08:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 24.65  
     **赛事主办** : NewportBlakeCTF (https://ctftime.org/team/258029)  
     **添加日历** : https://ctftime.org/event/2072.ics  
     
@@ -181,7 +208,7 @@ comments: true
     **比赛名称** : [BlazCTF 2023](https://ctf.blaz.ai/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-12-02 02:00:00 - 2023-12-04 02:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : FuzzLand (https://ctftime.org/team/270659)  
     **添加日历** : https://ctftime.org/event/2145.ics  
     
@@ -949,31 +976,4 @@ comments: true
     **比赛权重** : 18.42  
     **赛事主办** : KubanCSC (https://ctftime.org/team/231439)  
     **添加日历** : https://ctftime.org/event/2092.ics  
-    
-??? Abstract "[Winja CTF | Nullcon Goa 2023](https://ctf.winja.org/)"  
-    [![](https://ctftime.org/media/events/winja_logo_2.png)](https://ctf.winja.org/)  
-    **比赛名称** : [Winja CTF | Nullcon Goa 2023](https://ctf.winja.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-23 13:00:00 - 2023-09-23 20:00:00 UTC+8  
-    **比赛权重** : 5.00  
-    **赛事主办** : Winja CTF (https://ctftime.org/team/145228)  
-    **添加日历** : https://ctftime.org/event/2094.ics  
-    
-??? Abstract "[First round of Haruulzangi 2023](https://dashboard.haruulzangi.mn/)"  
-    [![](https://ctftime.org/media/events/hzlogo_1_3.png)](https://dashboard.haruulzangi.mn/)  
-    **比赛名称** : [First round of Haruulzangi 2023](https://dashboard.haruulzangi.mn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-23 12:00:00 - 2023-09-23 16:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
-    **添加日历** : https://ctftime.org/event/2116.ics  
-    
-??? Abstract "[CaptureTheWU](https://www.capturethewu.net/)"  
-    [![](https://ctftime.org/media/events/logo2_4.png)](https://www.capturethewu.net/)  
-    **比赛名称** : [CaptureTheWU](https://www.capturethewu.net/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-23 08:00:00 - 2023-09-24 09:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : McMCs (https://ctftime.org/team/220827)  
-    **添加日历** : https://ctftime.org/event/1990.ics  
     

@@ -56,24 +56,6 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Abstract "[HTB University CTF 2023: Brains & Bytes](https://ctf.hackthebox.com/event/details/university-ctf-2023-brains-bytes-1231)"  
-    [![](https://ctftime.org)](https://ctf.hackthebox.com/event/details/university-ctf-2023-brains-bytes-1231)  
-    **比赛名称** : [HTB University CTF 2023: Brains & Bytes](https://ctf.hackthebox.com/event/details/university-ctf-2023-brains-bytes-1231)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-08 21:00:00 - 2023-12-11 05:00:00 UTC+8  
-    **比赛权重** : 23.21  
-    **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
-    **添加日历** : https://ctftime.org/event/2149.ics  
-    
-??? Abstract "[pingCTF 2023](https://ctf.knping.pl/)"  
-    [![](https://ctftime.org)](https://ctf.knping.pl/)  
-    **比赛名称** : [pingCTF 2023](https://ctf.knping.pl/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-09 01:30:00 - 2023-12-11 06:00:00 UTC+8  
-    **比赛权重** : 24.29  
-    **赛事主办** : pingCTF (https://ctftime.org/team/147266)  
-    **添加日历** : https://ctftime.org/event/1987.ics  
-    
 ??? Abstract "[0CTF/TCTF 2023](https://ctf.0ops.sjtu.cn/)"  
     [![](https://ctftime.org)](https://ctf.0ops.sjtu.cn/)  
     **比赛名称** : [0CTF/TCTF 2023](https://ctf.0ops.sjtu.cn/)  
@@ -82,13 +64,4 @@ comments: true
     **比赛权重** : 100.00  
     **赛事主办** : 0ops (https://ctftime.org/team/4419)  
     **添加日历** : https://ctftime.org/event/2073.ics  
-    
-??? Abstract "[HACKOLINE](https://mrwebx.com/event/#/home)"  
-    [![](https://ctftime.org/media/events/instagram.jpeg)](https://mrwebx.com/event/#/home)  
-    **比赛名称** : [HACKOLINE](https://mrwebx.com/event/#/home)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2023-12-10 17:00:00 - 2023-12-11 03:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : mrwebsecure (https://ctftime.org/team/276542)  
-    **添加日历** : https://ctftime.org/event/2204.ics  
     
