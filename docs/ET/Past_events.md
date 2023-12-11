@@ -75,13 +75,6 @@ comments: true
     **比赛时间** : 2023年11月07日 10:00 - 2023年11月16日 18:00  
     **其他说明** : QQ群：551364792  
     
-??? Abstract "山东省网络安全赛项"  
-    **比赛名称** : [山东省网络安全赛项](https://mp.weixin.qq.com/s/FVnDtB3GplESSyTpGmer8Q)  
-    **比赛类型** : 团队赛|1-3人  
-    **报名时间** : 2023年10月26日 12:00 - 2023年11月12日 12:00  
-    **比赛时间** : 2023年11月14日 09:00 - 2023年11月14日 16:00  
-    **其他说明** : QQ群930096347  
-    
 
 ## 国际赛事
 ??? Abstract "[HACKOLINE](https://mrwebx.com/event/#/home)"  
@@ -224,7 +217,7 @@ comments: true
     **比赛名称** : [BlazCTF 2023](https://ctf.blaz.ai/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-12-02 02:00:00 - 2023-12-04 02:00:00 UTC+8  
-    **比赛权重** : 0.00  
+    **比赛权重** : 25.00  
     **赛事主办** : FuzzLand (https://ctftime.org/team/270659)  
     **添加日历** : https://ctftime.org/event/2145.ics  
     

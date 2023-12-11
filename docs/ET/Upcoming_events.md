@@ -40,6 +40,13 @@ comments: true
     **比赛时间** : 2023年12月23日 09:00 - 2023年12月24日 21:00  
     **其他说明** : QQ群：884196088  
     
+??? Abstract "2023第六届“安洵杯”网络安全挑战赛"  
+    **比赛名称** : [2023第六届“安洵杯”网络安全挑战赛](https://dce.i-soon.net/#/examineCenter)  
+    **比赛类型** : 团队赛|1-4人  
+    **报名时间** : 2023年12月11日 17:30 - 2023年12月22日 23:59  
+    **比赛时间** : 2023年12月23日 10:00 - 2023年12月23日 21:00  
+    **其他说明** : QQ群：367176501  745819418   
+    
 ??? Abstract "第七届强网杯全国网络安全挑战赛初赛"  
     **比赛名称** : [第七届强网杯全国网络安全挑战赛初赛](https://qiangwangbei.com/)  
     **比赛类型** : 团队赛|1-10人  
@@ -110,6 +117,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : TCM Security (https://ctftime.org/team/275972)  
     **添加日历** : https://ctftime.org/event/2201.ics  
+    
+??? Abstract "[niteCTF](http://nitectf.live/)"  
+    [![](https://ctftime.org/media/events/WhatsApp_Image_2021-08-06_at_11.28.13_2.jpeg)](http://nitectf.live/)  
+    **比赛名称** : [niteCTF](http://nitectf.live/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-17 19:30:00 - 2023-12-19 19:30:00 UTC+8  
+    **比赛权重** : 24.00  
+    **赛事主办** : Cryptonite (https://ctftime.org/team/62713)  
+    **添加日历** : https://ctftime.org/event/2207.ics  
     
 ??? Abstract "[SECCON CTF 2023 International Finals](https://ctf.seccon.jp/)"  
     [![](https://ctftime.org/media/events/seccon_s_5.png)](https://ctf.seccon.jp/)  
