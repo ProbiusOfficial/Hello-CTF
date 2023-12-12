@@ -13,6 +13,14 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [年轻人第一块电表：酷安人均一只酷态科10号移动电源简评&amp;杂谈](https://blog.stv.lol/archives/78/)  
+>by [Steven Lynn's Blog](https://blog.stv.lol), 2023-12-11
+
+前言前段时间有幸去了酷科南京总部参观，被问到有没有酷安人均一只的酷态科10号时汗流浃背了，因为一直以来我都在用闪极的产品，唯一的酷态科产品还是酷态科前身紫米的紫米200W移动电源而对于紫米200W移动电源，我的评价是很优秀，但是太大太重不便于日常携带，并且上次出去旅游的时候外壳被摔坏导致只有一个口可以用了于是在两周前淘宝百亿补贴的一次机会以189元的价格赶紧补票了酷态科10号开箱酷态科10号的包装...
+### [CrushFTP Unauthenticated Remote Code Execution(CVE-2023-43177)](https://y4tacker.github.io/2023/12/10/year/2023/12/CrushFTP-Unauthenticated-Remote-Code-Execution-CVE-2023-43177/)  
+>by [Y4tacker](https://y4tacker.github.io), 2023-12-10
+
+CrushFTP  Unauthenticated Remote Code Execution路由分析不像传统套件，这里自己实现了协议的解析并做调用，写法比较死板，不够灵活，在crushftp.server.ServerSessionHTTP可以看到具体的处理过程，代码”依托答辩”，不过漏洞思路值得学习前台权限绕过简单来说，原理是因为程序实现存在匿名访问机制，并且可以通过header污染当前会话的...
 ### [Apache Struts2 文件上传分析(S2-066)](https://y4tacker.github.io/2023/12/09/year/2023/12/Apache-Struts2-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%86%E6%9E%90-S2-066/)  
 >by [Y4tacker](https://y4tacker.github.io), 2023-12-09
 
@@ -85,11 +93,3 @@ pwnable.kr-coin1 简单的二分查找。题目分析根据所给信息Mommy, I 
 >by [xia0ji233](https://xia0ji233.pro/), 2023-11-06
 
 pwnable.kr-shellshock 这一关仅仅是帮助我们复现shellshock漏洞的。题目分析根据所给信息Mommy, there was a shocking news about bash.I bet you already know, but lets just make it sure :)ssh shellshock@pwnable.kr -p2222 (pw:guest)连接...
-### [Pwnable.kr-mistake](https://xia0ji233.github.io/2023/11/06/pwnable_mistake/)  
->by [xia0ji233](https://xia0ji233.pro/), 2023-11-06
-
-Pwnable.kr-mistake 这一关HINT已经给了，但是光看C真的很难分析出来题目分析根据所给信息We all make mistakes, let’s move on.(don’t take this too seriously, no fancy hacking skill is required at all)This task is based on real eventThan...
-### [pwnable.kr-leg](https://xia0ji233.github.io/2023/11/06/pwnable_leg/)  
->by [xia0ji233](https://xia0ji233.pro/), 2023-11-06
-
-Pwnable.kr-leg 这一关挺有意思的，也不是很难，也借此学习一下ARM汇编。题目分析根据所给信息Daddy told me I should study arm.But I prefer to study my leg!Download : http://pwnable.kr/bin/leg.cDownload : http://pwnable.kr/bin/leg.asmssh leg...
