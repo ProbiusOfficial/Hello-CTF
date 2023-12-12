@@ -68,13 +68,6 @@ comments: true
     **比赛时间** : 2023年11月18日 09:30 - 2023年11月19日 21:30  
     **其他说明** : 2023HECTF赛事交流群：399737510  
     
-??? Abstract "DataCon2023"  
-    **比赛名称** : [DataCon2023](https://datacon.qianxin.com/datacon2023)  
-    **比赛类型** : 团队赛|1-5人  
-    **报名时间** : 2023年10月19日 10:00 - 2023年11月06日 18:00  
-    **比赛时间** : 2023年11月07日 10:00 - 2023年11月16日 18:00  
-    **其他说明** : QQ群：551364792  
-    
 
 ## 国际赛事
 ??? Abstract "[HACKOLINE](https://mrwebx.com/event/#/home)"  
@@ -199,7 +192,7 @@ comments: true
     **比赛名称** : [NewportBlakeCTF 2023](https://nbctf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-12-02 08:00:00 - 2023-12-04 08:00:00 UTC+8  
-    **比赛权重** : 24.65  
+    **比赛权重** : 24.67  
     **赛事主办** : NewportBlakeCTF (https://ctftime.org/team/258029)  
     **添加日历** : https://ctftime.org/event/2072.ics  
     
