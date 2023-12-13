@@ -49,3 +49,12 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
+??? Abstract "[Intent CTF 2023](https://intentsummit.org/)"  
+    [![](https://ctftime.org)](https://intentsummit.org/)  
+    **比赛名称** : [Intent CTF 2023](https://intentsummit.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-13 16:30:00 - 2023-12-15 16:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Security Research Summit (SRS) (https://ctftime.org/team/163107)  
+    **添加日历** : https://ctftime.org/event/2130.ics  
+    
