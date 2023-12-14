@@ -64,15 +64,6 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[7th Stage MetaRed TIC Portugal 2023](http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE)"  
-    [![](https://ctftime.org)](http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE)  
-    **比赛名称** : [7th Stage MetaRed TIC Portugal 2023](http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-14 21:00:00 - 2023-12-15 21:00:00 UTC+8  
-    **比赛权重** : 6.67  
-    **赛事主办** : UAC (https://ctftime.org/team/140846)  
-    **添加日历** : https://ctftime.org/event/2099.ics  
-    
 ??? Abstract "[The Cyber Cooperative CTF](https://thecybercoopctf.ctfd.io/)"  
     [![](https://ctftime.org/media/events/logo_servericon.png)](https://thecybercoopctf.ctfd.io/)  
     **比赛名称** : [The Cyber Cooperative CTF](https://thecybercoopctf.ctfd.io/)  
