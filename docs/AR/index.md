@@ -16,7 +16,7 @@ comments: true
 ### [亿赛通电子文档安全管理系统远程代码执行漏洞浅析](https://y4tacker.github.io/2023/12/13/year/2023/12/%E4%BA%BF%E8%B5%9B%E9%80%9A%E7%94%B5%E5%AD%90%E6%96%87%E6%A1%A3%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%E6%B5%85%E6%9E%90/)  
 >by [Y4tacker](https://y4tacker.github.io), 2023-12-13
 
-7d606753613e4854e5677f5ce96bee8b725a78a2939b2c5aad49476f3f168499917df5aa99c7e5e06df3e14d10b643ce3083139c8aa2dd5fd5a9b1a4eba68430e17a8e2f5ce01cade997d73e5a355b7fd918065a6f7b1c11914bc44f604e37dd22aef9...
+亿赛通电子文档安全管理系统远程代码执行漏洞浅析漏洞分析最近天天曝亿赛通的漏洞，又是这个新手向的项目，有点烦其实不是很想写的，本次原理也很简单熟悉的人可能知道这个系统在windows与linux下有点区别，在linux系统下多了一个8021端口相较于CDGServer3服务下又臭又长的代码，这个fileserver下的代码还是很短小的任意文件读取在com.esafenet.fileserver.co...
 ### [年轻人第一块电表：酷安人均一只酷态科10号移动电源简评&amp;杂谈](https://blog.stv.lol/archives/78/)  
 >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-12-11
 
