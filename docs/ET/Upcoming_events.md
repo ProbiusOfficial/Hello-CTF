@@ -64,15 +64,6 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[The Cyber Cooperative CTF](https://thecybercoopctf.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/logo_servericon.png)](https://thecybercoopctf.ctfd.io/)  
-    **比赛名称** : [The Cyber Cooperative CTF](https://thecybercoopctf.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-15 13:01:01 - 2023-12-18 12:59:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : The Cyber Cooperative (https://ctftime.org/team/276494)  
-    **添加日历** : https://ctftime.org/event/2206.ics  
-    
 ??? Abstract "[Wargames.MY CTF 2023](https://pro2023.wargames.my/)"  
     [![](https://ctftime.org/media/events/wgmy2023_logo.png)](https://pro2023.wargames.my/)  
     **比赛名称** : [Wargames.MY CTF 2023](https://pro2023.wargames.my/)  
