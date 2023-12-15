@@ -64,15 +64,6 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[Wargames.MY CTF 2023](https://pro2023.wargames.my/)"  
-    [![](https://ctftime.org/media/events/wgmy2023_logo.png)](https://pro2023.wargames.my/)  
-    **比赛名称** : [Wargames.MY CTF 2023](https://pro2023.wargames.my/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-16 00:00:00 - 2023-12-17 00:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Wargames.MY (https://ctftime.org/team/86069)  
-    **添加日历** : https://ctftime.org/event/2203.ics  
-    
 ??? Abstract "[BackdoorCTF 2023](https://backdoor.infoseciitr.in/)"  
     [![](https://ctftime.org/media/events/bckdr.png)](https://backdoor.infoseciitr.in/)  
     **比赛名称** : [BackdoorCTF 2023](https://backdoor.infoseciitr.in/)  

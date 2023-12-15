@@ -49,24 +49,6 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Abstract "[Intent CTF 2023](https://intentsummit.org/)"  
-    [![](https://ctftime.org)](https://intentsummit.org/)  
-    **比赛名称** : [Intent CTF 2023](https://intentsummit.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-13 16:30:00 - 2023-12-15 16:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Security Research Summit (SRS) (https://ctftime.org/team/163107)  
-    **添加日历** : https://ctftime.org/event/2130.ics  
-    
-??? Abstract "[7th Stage MetaRed TIC Portugal 2023](http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE)"  
-    [![](https://ctftime.org)](http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE)  
-    **比赛名称** : [7th Stage MetaRed TIC Portugal 2023](http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-14 21:00:00 - 2023-12-15 21:00:00 UTC+8  
-    **比赛权重** : 6.67  
-    **赛事主办** : UAC (https://ctftime.org/team/140846)  
-    **添加日历** : https://ctftime.org/event/2099.ics  
-    
 ??? Abstract "[The Cyber Cooperative CTF](https://thecybercoopctf.ctfd.io/)"  
     [![](https://ctftime.org/media/events/logo_servericon.png)](https://thecybercoopctf.ctfd.io/)  
     **比赛名称** : [The Cyber Cooperative CTF](https://thecybercoopctf.ctfd.io/)  
@@ -75,4 +57,13 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : The Cyber Cooperative (https://ctftime.org/team/276494)  
     **添加日历** : https://ctftime.org/event/2206.ics  
+    
+??? Abstract "[Wargames.MY CTF 2023](https://pro2023.wargames.my/)"  
+    [![](https://ctftime.org/media/events/wgmy2023_logo.png)](https://pro2023.wargames.my/)  
+    **比赛名称** : [Wargames.MY CTF 2023](https://pro2023.wargames.my/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-16 00:00:00 - 2023-12-17 00:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Wargames.MY (https://ctftime.org/team/86069)  
+    **添加日历** : https://ctftime.org/event/2203.ics  
     

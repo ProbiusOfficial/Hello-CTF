@@ -77,6 +77,24 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[7th Stage MetaRed TIC Portugal 2023](http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE)"  
+    [![](https://ctftime.org)](http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE)  
+    **比赛名称** : [7th Stage MetaRed TIC Portugal 2023](http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-14 21:00:00 - 2023-12-15 21:00:00 UTC+8  
+    **比赛权重** : 6.67  
+    **赛事主办** : UAC (https://ctftime.org/team/140846)  
+    **添加日历** : https://ctftime.org/event/2099.ics  
+    
+??? Abstract "[Intent CTF 2023](https://intentsummit.org/)"  
+    [![](https://ctftime.org)](https://intentsummit.org/)  
+    **比赛名称** : [Intent CTF 2023](https://intentsummit.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-13 16:30:00 - 2023-12-15 16:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Security Research Summit (SRS) (https://ctftime.org/team/163107)  
+    **添加日历** : https://ctftime.org/event/2130.ics  
+    
 ??? Abstract "[HACKOLINE](https://mrwebx.com/event/#/home)"  
     [![](https://ctftime.org/media/events/instagram.jpeg)](https://mrwebx.com/event/#/home)  
     **比赛名称** : [HACKOLINE](https://mrwebx.com/event/#/home)  
@@ -958,22 +976,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : SummerJedi (https://ctftime.org/team/126955)  
     **添加日历** : https://ctftime.org/event/2075.ics  
-    
-??? Abstract "[vsCTF 2023](https://ctf.viewsource.me/)"  
-    [![](https://ctftime.org/media/events/vsctf_2023.png)](https://ctf.viewsource.me/)  
-    **比赛名称** : [vsCTF 2023](https://ctf.viewsource.me/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-24 00:00:00 - 2023-09-25 00:00:00 UTC+8  
-    **比赛权重** : 23.32  
-    **赛事主办** : View Source (https://ctftime.org/team/175828)  
-    **添加日历** : https://ctftime.org/event/2053.ics  
-    
-??? Abstract "[FAUST CTF 2023](https://2023.faustctf.net/)"  
-    [![](https://ctftime.org/media/events/faustctf_1.png)](https://2023.faustctf.net/)  
-    **比赛名称** : [FAUST CTF 2023](https://2023.faustctf.net/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2023-09-23 20:00:00 - 2023-09-24 05:00:00 UTC+8  
-    **比赛权重** : 97.89  
-    **赛事主办** : FAUST (https://ctftime.org/team/550)  
-    **添加日历** : https://ctftime.org/event/2011.ics  
     
