@@ -13,6 +13,10 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [一周年小记&amp;&amp;那些快乐的技术时光](https://blog.zgsec.cn/archives/548.html)  
+>by [曾哥](https://blog.zgsec.cn/), 2023-12-14
+
+1# 概述不知不觉，个人博客已经开办了一年了回头看一年前的自己，仍有些感触，遂在闲暇时光提笔写下一些碎碎念数了数我在这一年发表过的博客文章，共计约二十余篇，其实我是真没想到能有那么多文章，比我原定的目标（每个月写一篇原创技术文）多出不少，也算是suprise吧[...]...
 ### [亿赛通电子文档安全管理系统远程代码执行漏洞浅析](https://y4tacker.github.io/2023/12/13/year/2023/12/%E4%BA%BF%E8%B5%9B%E9%80%9A%E7%94%B5%E5%AD%90%E6%96%87%E6%A1%A3%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%E6%B5%85%E6%9E%90/)  
 >by [Y4tacker](https://y4tacker.github.io), 2023-12-13
 
@@ -89,7 +93,3 @@ pwnable.kr-lotto  又是一个很有趣的逻辑漏洞分析。题目分析根�
 >by [xia0ji233](https://xia0ji233.pro/), 2023-11-07
 
 pwnable.kr-blackjack 一个很有趣的逻辑漏洞分析。题目分析根据所给信息Hey! check out this C implementation of blackjack game!I found it onlinehttp://cboard.cprogramming.com/c-programming/114023-simple-blackjack-program.htmlI l...
-### [Pwnable.kr-coin1](https://xia0ji233.github.io/2023/11/07/pwnable_coin1/)  
->by [xia0ji233](https://xia0ji233.pro/), 2023-11-07
-
-pwnable.kr-coin1 简单的二分查找。题目分析根据所给信息Mommy, I wanna play a game!(if your network response time is too slow, try nc 0 9007 inside pwnable.kr server)Running at : nc pwnable.kr 9007这题没有给我们账号，不过可以用其它的账号去连接欸...
