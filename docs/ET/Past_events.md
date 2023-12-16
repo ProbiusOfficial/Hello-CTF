@@ -77,6 +77,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[Wargames.MY CTF 2023](https://pro2023.wargames.my/)"  
+    [![](https://ctftime.org/media/events/wgmy2023_logo.png)](https://pro2023.wargames.my/)  
+    **比赛名称** : [Wargames.MY CTF 2023](https://pro2023.wargames.my/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-16 00:00:00 - 2023-12-17 00:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Wargames.MY (https://ctftime.org/team/86069)  
+    **添加日历** : https://ctftime.org/event/2203.ics  
+    
 ??? Abstract "[7th Stage MetaRed TIC Portugal 2023](http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE)"  
     [![](https://ctftime.org)](http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE)  
     **比赛名称** : [7th Stage MetaRed TIC Portugal 2023](http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE)  
@@ -967,13 +976,4 @@ comments: true
     **比赛权重** : 24.68  
     **赛事主办** : ITMO FSIT (https://ctftime.org/team/264636)  
     **添加日历** : https://ctftime.org/event/2103.ics  
-    
-??? Abstract "[20ans LinuxMeetup au Québec](https://www.eventbrite.ca/e/billets-20-ans-de-linux-meetup-au-quebec-675464381147)"  
-    [![](https://ctftime.org)](https://www.eventbrite.ca/e/billets-20-ans-de-linux-meetup-au-quebec-675464381147)  
-    **比赛名称** : [20ans LinuxMeetup au Québec](https://www.eventbrite.ca/e/billets-20-ans-de-linux-meetup-au-quebec-675464381147)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-24 00:30:00 - 2023-09-24 08:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : SummerJedi (https://ctftime.org/team/126955)  
-    **添加日历** : https://ctftime.org/event/2075.ics  
     
