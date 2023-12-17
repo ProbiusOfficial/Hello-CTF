@@ -13,6 +13,10 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [Airpods Pro 2上手体验](https://blog.stv.lol/archives/79/)  
+>by [Steven Lynn's Blog](https://blog.stv.lol), 2023-12-16
+
+Airpods Pro 2 大概算是我今年买的最后一个产品了，也是我馋了很久却一直没买的产品在此之前，我的主力耳机是 Airpods Pro 一代，考虑到一代已经用了将近三年时间，也是时候换一个了没考虑其他耳机的原因主要还是因为我的主要使用的生态产品还是苹果生态为主，Airpods的无缝连接在各设备之间互相流转很方便于是在tb的双十二活动中以1500出头的价格拿下（耳机本体+一年以换代修）开箱包装...
 ### [一周年小记&amp;&amp;那些快乐的技术时光](https://blog.zgsec.cn/archives/548.html)  
 >by [曾哥](https://blog.zgsec.cn/), 2023-12-14
 
@@ -89,7 +93,3 @@ pwnable.kr-otp，一次性密码验证（one time password）漏洞分析。题�
 >by [xia0ji233](https://xia0ji233.pro/), 2023-11-07
 
 pwnable.kr-lotto  又是一个很有趣的逻辑漏洞分析。题目分析根据所给信息Mommy! I made a lotto program for my homework.do you want to play?ssh lotto@pwnable.kr -p2222 (pw:guest)我也是搜了一下 lotto 是什么意思，大概好像是彩票的意思，它给了C源码和二进制文件，先来看看源码吧：1...
-### [Pwnable.kr-blackjack](https://xia0ji233.github.io/2023/11/07/pwnable_blackjack/)  
->by [xia0ji233](https://xia0ji233.pro/), 2023-11-07
-
-pwnable.kr-blackjack 一个很有趣的逻辑漏洞分析。题目分析根据所给信息Hey! check out this C implementation of blackjack game!I found it onlinehttp://cboard.cprogramming.com/c-programming/114023-simple-blackjack-program.htmlI l...
