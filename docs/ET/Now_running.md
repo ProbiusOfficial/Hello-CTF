@@ -81,12 +81,3 @@ comments: true
     **赛事主办** : InfoSecIITR (https://ctftime.org/team/16691)  
     **添加日历** : https://ctftime.org/event/2153.ics  
     
-??? Abstract "[1st Annual TCM Invitational CTF](https://www.tcm.rocks/TCM2023CTF)"  
-    [![](https://ctftime.org/media/events/tcm-logo-small.png)](https://www.tcm.rocks/TCM2023CTF)  
-    **比赛名称** : [1st Annual TCM Invitational CTF](https://www.tcm.rocks/TCM2023CTF)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-16 23:00:00 - 2023-12-17 07:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : TCM Security (https://ctftime.org/team/275972)  
-    **添加日历** : https://ctftime.org/event/2201.ics  
-    

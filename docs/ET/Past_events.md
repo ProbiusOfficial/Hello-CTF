@@ -77,6 +77,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[1st Annual TCM Invitational CTF](https://www.tcm.rocks/TCM2023CTF)"  
+    [![](https://ctftime.org/media/events/tcm-logo-small.png)](https://www.tcm.rocks/TCM2023CTF)  
+    **比赛名称** : [1st Annual TCM Invitational CTF](https://www.tcm.rocks/TCM2023CTF)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-16 23:00:00 - 2023-12-17 07:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : TCM Security (https://ctftime.org/team/275972)  
+    **添加日历** : https://ctftime.org/event/2201.ics  
+    
 ??? Abstract "[Wargames.MY CTF 2023](https://pro2023.wargames.my/)"  
     [![](https://ctftime.org/media/events/wgmy2023_logo.png)](https://pro2023.wargames.my/)  
     **比赛名称** : [Wargames.MY CTF 2023](https://pro2023.wargames.my/)  
@@ -967,13 +976,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : Super Guesser (https://ctftime.org/team/130817)  
     **添加日历** : https://ctftime.org/event/2077.ics  
-    
-??? Abstract "[BRICS+ CTF Quals 2023](https://brics-ctf.ru/)"  
-    [![](https://ctftime.org/media/events/br2.png)](https://brics-ctf.ru/)  
-    **比赛名称** : [BRICS+ CTF Quals 2023](https://brics-ctf.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-24 18:00:00 - 2023-09-25 18:00:00 UTC+8  
-    **比赛权重** : 24.68  
-    **赛事主办** : ITMO FSIT (https://ctftime.org/team/264636)  
-    **添加日历** : https://ctftime.org/event/2103.ics  
     
