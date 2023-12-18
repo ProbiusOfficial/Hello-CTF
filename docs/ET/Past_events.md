@@ -132,7 +132,7 @@ comments: true
     **比赛名称** : [HACKOLINE](https://mrwebx.com/event/#/home)  
     **比赛形式** : Attack-Defense  
     **比赛时间** : 2023-12-10 17:00:00 - 2023-12-11 03:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : mrwebsecure (https://ctftime.org/team/276542)  
     **添加日历** : https://ctftime.org/event/2204.ics  
     
