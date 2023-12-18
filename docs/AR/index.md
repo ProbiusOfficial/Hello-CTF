@@ -13,7 +13,7 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
-### [Airpods Pro 2上手体验](https://blog.stv.lol/archives/79/)  
+### [Airpods Pro 2上手体验](https://cdn.blog.stv.lol/archives/79/)  
 >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-12-16
 
 Airpods Pro 2 大概算是我今年买的最后一个产品了，也是我馋了很久却一直没买的产品在此之前，我的主力耳机是 Airpods Pro 一代，考虑到一代已经用了将近三年时间，也是时候换一个了没考虑其他耳机的原因主要还是因为我的主要使用的生态产品还是苹果生态为主，Airpods的无缝连接在各设备之间互相流转很方便于是在tb的双十二活动中以1500出头的价格拿下（耳机本体+一年以换代修）开箱包装...
@@ -25,7 +25,7 @@ Airpods Pro 2 大概算是我今年买的最后一个产品了，也是我馋了
 >by [Y4tacker](https://y4tacker.github.io), 2023-12-13
 
 亿赛通电子文档安全管理系统远程代码执行漏洞浅析漏洞分析最近天天曝亿赛通的漏洞，又是这个新手向的项目，有点烦其实不是很想写的，本次原理也很简单熟悉的人可能知道这个系统在windows与linux下有点区别，在linux系统下多了一个8021端口相较于CDGServer3服务下又臭又长的代码，这个fileserver下的代码还是很短小的任意文件读取在com.esafenet.fileserver.co...
-### [年轻人第一块电表：酷安人均一只酷态科10号移动电源简评&amp;杂谈](https://blog.stv.lol/archives/78/)  
+### [年轻人第一块电表：酷安人均一只酷态科10号移动电源简评&amp;杂谈](https://cdn.blog.stv.lol/archives/78/)  
 >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-12-11
 
 前言前段时间有幸去了酷科南京总部参观，被问到有没有酷安人均一只的酷态科10号时汗流浃背了，因为一直以来我都在用闪极的产品，唯一的酷态科产品还是酷态科前身紫米的紫米200W移动电源而对于紫米200W移动电源，我的评价是很优秀，但是太大太重不便于日常携带，并且上次出去旅游的时候外壳被摔坏导致只有一个口可以用了于是在两周前淘宝百亿补贴的一次机会以189元的价格赶紧补票了酷态科10号开箱酷态科10号的包装...
