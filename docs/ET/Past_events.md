@@ -100,6 +100,15 @@ comments: true
     **赛事主办** : TCM Security (https://ctftime.org/team/275972)  
     **添加日历** : https://ctftime.org/event/2201.ics  
     
+??? Abstract "[BackdoorCTF 2023](https://backdoor.infoseciitr.in/)"  
+    [![](https://ctftime.org/media/events/bckdr.png)](https://backdoor.infoseciitr.in/)  
+    **比赛名称** : [BackdoorCTF 2023](https://backdoor.infoseciitr.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-16 20:00:00 - 2023-12-18 20:00:00 UTC+8  
+    **比赛权重** : 34.00  
+    **赛事主办** : InfoSecIITR (https://ctftime.org/team/16691)  
+    **添加日历** : https://ctftime.org/event/2153.ics  
+    
 ??? Abstract "[Wargames.MY CTF 2023](https://pro2023.wargames.my/)"  
     [![](https://ctftime.org/media/events/wgmy2023_logo.png)](https://pro2023.wargames.my/)  
     **比赛名称** : [Wargames.MY CTF 2023](https://pro2023.wargames.my/)  
@@ -981,13 +990,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : INNOV8.JU (https://ctftime.org/team/269231)  
     **添加日历** : https://ctftime.org/event/2114.ics  
-    
-??? Abstract "[EnigmaXplore 2023](https://enigmaxplore.ctfd.io/)"  
-    [![](https://ctftime.org)](https://enigmaxplore.ctfd.io/)  
-    **比赛名称** : [EnigmaXplore 2023](https://enigmaxplore.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-26 18:37:06 - 2023-09-26 18:37:06 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Crispr_iiitn (https://ctftime.org/team/270138)  
-    **添加日历** : https://ctftime.org/event/2124.ics  
     

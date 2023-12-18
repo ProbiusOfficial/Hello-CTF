@@ -49,15 +49,6 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Abstract "[BackdoorCTF 2023](https://backdoor.infoseciitr.in/)"  
-    [![](https://ctftime.org/media/events/bckdr.png)](https://backdoor.infoseciitr.in/)  
-    **比赛名称** : [BackdoorCTF 2023](https://backdoor.infoseciitr.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-16 20:00:00 - 2023-12-18 20:00:00 UTC+8  
-    **比赛权重** : 34.00  
-    **赛事主办** : InfoSecIITR (https://ctftime.org/team/16691)  
-    **添加日历** : https://ctftime.org/event/2153.ics  
-    
 ??? Abstract "[niteCTF](http://nitectf.live/)"  
     [![](https://ctftime.org/media/events/WhatsApp_Image_2021-08-06_at_11.28.13_2.jpeg)](http://nitectf.live/)  
     **比赛名称** : [niteCTF](http://nitectf.live/)  
