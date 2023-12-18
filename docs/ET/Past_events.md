@@ -109,6 +109,15 @@ comments: true
     **赛事主办** : Wargames.MY (https://ctftime.org/team/86069)  
     **添加日历** : https://ctftime.org/event/2203.ics  
     
+??? Abstract "[The Cyber Cooperative CTF](https://thecybercoopctf.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/logo_servericon.png)](https://thecybercoopctf.ctfd.io/)  
+    **比赛名称** : [The Cyber Cooperative CTF](https://thecybercoopctf.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-15 13:01:01 - 2023-12-18 12:59:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : The Cyber Cooperative (https://ctftime.org/team/276494)  
+    **添加日历** : https://ctftime.org/event/2206.ics  
+    
 ??? Abstract "[7th Stage MetaRed TIC Portugal 2023](http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE)"  
     [![](https://ctftime.org)](http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE)  
     **比赛名称** : [7th Stage MetaRed TIC Portugal 2023](http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE)  
@@ -981,13 +990,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Crispr_iiitn (https://ctftime.org/team/270138)  
     **添加日历** : https://ctftime.org/event/2124.ics  
-    
-??? Abstract "[WACON 2023 Final](https://wacon.world/)"  
-    [![](https://ctftime.org/media/events/logo_11.jpg)](https://wacon.world/)  
-    **比赛名称** : [WACON 2023 Final](https://wacon.world/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-25 15:00:00 - 2023-09-26 15:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : Super Guesser (https://ctftime.org/team/130817)  
-    **添加日历** : https://ctftime.org/event/2077.ics  
     

@@ -49,15 +49,6 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Abstract "[The Cyber Cooperative CTF](https://thecybercoopctf.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/logo_servericon.png)](https://thecybercoopctf.ctfd.io/)  
-    **比赛名称** : [The Cyber Cooperative CTF](https://thecybercoopctf.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-15 13:01:01 - 2023-12-18 12:59:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : The Cyber Cooperative (https://ctftime.org/team/276494)  
-    **添加日历** : https://ctftime.org/event/2206.ics  
-    
 ??? Abstract "[BackdoorCTF 2023](https://backdoor.infoseciitr.in/)"  
     [![](https://ctftime.org/media/events/bckdr.png)](https://backdoor.infoseciitr.in/)  
     **比赛名称** : [BackdoorCTF 2023](https://backdoor.infoseciitr.in/)  
