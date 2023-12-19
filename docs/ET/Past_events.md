@@ -91,6 +91,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[niteCTF](http://nitectf.live/)"  
+    [![](https://ctftime.org/media/events/WhatsApp_Image_2021-08-06_at_11.28.13_2.jpeg)](http://nitectf.live/)  
+    **比赛名称** : [niteCTF](http://nitectf.live/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-17 19:30:00 - 2023-12-19 19:30:00 UTC+8  
+    **比赛权重** : 24.00  
+    **赛事主办** : Cryptonite (https://ctftime.org/team/62713)  
+    **添加日历** : https://ctftime.org/event/2207.ics  
+    
 ??? Abstract "[1st Annual TCM Invitational CTF](https://www.tcm.rocks/TCM2023CTF)"  
     [![](https://ctftime.org/media/events/tcm-logo-small.png)](https://www.tcm.rocks/TCM2023CTF)  
     **比赛名称** : [1st Annual TCM Invitational CTF](https://www.tcm.rocks/TCM2023CTF)  
@@ -981,13 +990,4 @@ comments: true
     **比赛权重** : 69.82  
     **赛事主办** : RedRocket (https://ctftime.org/team/48677)  
     **添加日历** : https://ctftime.org/event/2110.ics  
-    
-??? Abstract "[CyberBytes'23 2.0](https://www.juinnov8.in/)"  
-    [![](https://ctftime.org)](https://www.juinnov8.in/)  
-    **比赛名称** : [CyberBytes'23 2.0](https://www.juinnov8.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-27 13:30:00 - 2023-09-27 17:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : INNOV8.JU (https://ctftime.org/team/269231)  
-    **添加日历** : https://ctftime.org/event/2114.ics  
     

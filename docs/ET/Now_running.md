@@ -49,12 +49,3 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Abstract "[niteCTF](http://nitectf.live/)"  
-    [![](https://ctftime.org/media/events/WhatsApp_Image_2021-08-06_at_11.28.13_2.jpeg)](http://nitectf.live/)  
-    **比赛名称** : [niteCTF](http://nitectf.live/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-17 19:30:00 - 2023-12-19 19:30:00 UTC+8  
-    **比赛权重** : 24.00  
-    **赛事主办** : Cryptonite (https://ctftime.org/team/62713)  
-    **添加日历** : https://ctftime.org/event/2207.ics  
-    
