@@ -1,9 +1,15 @@
 ---
+ishome: true
 comments: true
-
+glightbox: false
+hide:
+  - footer
+  - toc
+  - edit
+  - view
 ---
 
-# CTF, 启动！
+
 
 ![image-20231105050702232](./assets/image-20231105050702232.png)
 

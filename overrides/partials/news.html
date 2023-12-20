@@ -1,0 +1,191 @@
+<!-- 首页轮播图 -->
+
+<style>
+div.slideBox{ position:relative; width:600px; height:300px; overflow:hidden; margin: auto; object-fit: cover;}/*里面的宽和高很具你自己的图片去设置*/
+div.slideBox ul.items{ position:absolute; float:left; background:none; list-style:none; padding:0px; margin:0px;}
+div.slideBox ul.items li{ float:left; background:none; list-style:none; padding:0px; margin:0px;}
+div.slideBox ul.items li a{ float:left; line-height:normal !important; padding:0px !important; border:none/*For IE.ADD.JENA.201206300844*/;}
+div.slideBox ul.items li a img{ margin:0px !important; padding:0px !important; display:block; border:none/*For IE.ADD.JENA.201206300844*/;}
+div.slideBox div.tips{ position:absolute; bottom:0px; width:100%; height:50px; background-color:#000; overflow:hidden;}
+div.slideBox div.tips div.title{ position:absolute; left:0px; top:0px; height:100%;}
+div.slideBox div.tips div.title a{ color:#FFF; font-size:18px; line-height:50px; margin-left:10px; text-decoration:none;}
+div.slideBox div.tips div.title a:hover{ text-decoration:underline !important;}
+div.slideBox div.tips div.nums{ position:absolute; right:0px; top:0px; height:100%;}
+div.slideBox div.tips div.nums a{ display:inline-block; >float:left/*For IE.ADD.JENA.201206300844*/; width:10px; height:10px; background-color:#FFF; text-indent:-99999px; margin:15px 10px 0px 0px;}
+div.slideBox div.tips div.nums a.active{ width:15px;height:15px;background:url(./assets/icons.png); background-position: -856px -729px;}
+@media (max-width: 600px) {
+    div.slideBox {
+        width: 100%; /* 小屏幕时，宽度为100% */
+    }
+}
+
+</style>
+        <!--宽是980px 的导航结束-->
+        <div class="section1 clearfix">
+            <!--带有轮播图的模块-->
+            <div id="demo3" class="slideBox fl">
+                <ul class="items">
+                    <li>
+                        <a href="javascript:;" title="【New Logo】Hello CTF! "><img src="./assets/slide2.png"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" title="芜湖，起飞~"><img src="./assets/slide2.png"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" title="好好好"><img src="./assets/slide2.png"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" title="HelloCTF X MoveCTF 敬请期待"><img src="./assets/slide2.png"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" title="HelloCTF x Bilibili 开课啦！"><img src="./assets/slide2.png"></a>
+                    </li>
+                </ul>
+            </div>
+        
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script>   
+(function($) {
+	$.fn.slideBox = function(options) {
+		//默认参数
+		var defaults = {
+			direction : 'left',//left,top
+			duration : 0.6,//unit:seconds
+			easing : 'swing',//swing,linear
+			delay : 3,//unit:seconds
+			startIndex : 0,
+			hideClickBar : true,
+			clickBarRadius : 5,//unit:px
+			hideBottomBar : false,
+			width : null,
+			height : null
+		};
+		var settings = $.extend(defaults, options || {});
+		//计算相关数据
+		var wrapper = $(this), ul = wrapper.children('ul.items'), lis = ul.find('li'), firstPic = lis.first().find('img');
+		var li_num = lis.length, li_height = 0, li_width = 0;
+		//定义滚动顺序:ASC/DESC.ADD.JENA.201208081718
+		var order_by = 'ASC';
+		//初始化
+		var init = function(){
+			if(!wrapper.length) return false;
+			//手动设定值优先.ADD.JENA.201303141309
+			li_height = settings.height ? settings.height : lis.first().height();
+			li_width = settings.width ? settings.width : lis.first().width();
+			
+			wrapper.css({width: li_width+'px', height:li_height+'px'});
+			lis.css({width: li_width+'px', height:li_height+'px'});//ADD.JENA.201207051027
+			
+			if (settings.direction == 'left') {
+				ul.css('width', li_num * li_width + 'px');
+			} else {
+				ul.css('height', li_num * li_height + 'px');
+			}			
+			ul.find('li:eq('+settings.startIndex+')').addClass('active');
+			
+			if(!settings.hideBottomBar){//ADD.JENA.201208090859
+				var tips = $('<div class="tips"></div>').css('opacity', 0.6).appendTo(wrapper);
+				var title = $('<div class="title"></div>').html(function(){
+					var active = ul.find('li.active').find('a'), text = active.attr('title'), href = active.attr('href');
+					return $('<a>').attr('href', href).text(text);
+				}).appendTo(tips);
+				var nums = $('<div class="nums"></div>').hide().appendTo(tips);
+				lis.each(function(i, n) {
+					var a = $(n).find('a'), text = a.attr('title'), href = a.attr('href'), css = '';
+					i == settings.startIndex && (css = 'active');
+					$('<a>').attr('href', href).text(text).addClass(css).css('borderRadius', settings.clickBarRadius+'px').mouseover(function(){
+						$(this).addClass('active').siblings().removeClass('active');
+						ul.find('li:eq('+$(this).index()+')').addClass('active').siblings().removeClass('active');
+						start(); 
+						stop();
+					}).appendTo(nums);
+				});
+			
+				if(settings.hideClickBar){//ADD.JENA.201206300847
+					tips.hover(function(){
+						nums.animate({top: '0px'}, 'fast');
+					}, function(){
+						nums.animate({top: tips.height()+'px'}, 'fast');
+					});
+					nums.show().delay(2000).animate({top: tips.height()+'px'}, 'fast');
+				}else{
+					nums.show();
+				}
+			}
+			
+			lis.length>1 && start();
+		}
+		//开始轮播
+		var start = function() {
+			var active = ul.find('li.active'), active_a = active.find('a');
+			var index = active.index();
+			if(settings.direction == 'left'){
+				offset = index * li_width * -1;
+				param = {'left':offset + 'px' };
+			}else{
+				offset = index * li_height * -1;
+				param = {'top':offset + 'px' };
+			}
+			
+			wrapper.find('.nums').find('a:eq('+index+')').addClass('active').siblings().removeClass('active');
+			wrapper.find('.title').find('a').attr('href', active_a.attr('href')).text(active_a.attr('title'));
+
+			ul.stop().animate(param, settings.duration*1000, settings.easing, function() {
+				active.removeClass('active');
+				if(order_by=='ASC'){
+					if (active.next().length){
+						active.next().addClass('active');
+					}else{
+						order_by = 'DESC';
+						active.prev().addClass('active');
+					}
+				}else if(order_by=='DESC'){
+					if (active.prev().length){
+						active.prev().addClass('active');
+					}else{
+						order_by = 'ASC';
+						active.next().addClass('active');
+					}
+				}
+			});
+			wrapper.data('timeid', window.setTimeout(start, settings.delay*1000));
+		};
+		//停止轮播
+		var stop = function() {
+			window.clearTimeout(wrapper.data('timeid'));
+		};
+		//鼠标经过事件
+		wrapper.hover(function(){
+			stop();
+		}, function(){
+			wrapper.data('timeid', window.setTimeout(start, settings.delay*1000));//ADD.JENA.201303141309
+		});	
+		//首张图片加载完毕后执行初始化
+		var imgLoader = new Image();
+		imgLoader.onload = function(){
+			imgLoader.onload = null;
+			init();
+		}
+		imgLoader.src = firstPic.attr('src');
+			
+	};
+})(jQuery);
+
+$('#demo3').slideBox({
+    
+    duration : 0.3,//滚动持续时间，单位：秒
+    
+    easing : 'linear',//swing,linear//滚动特效
+    
+    delay : 5,//滚动延迟时间，单位：秒
+    
+    hideClickBar : false,//不自动隐藏点选按键
+    
+    clickBarRadius : 10
+    
+    });
+
+    </script>
+</body>
+
+</html>
