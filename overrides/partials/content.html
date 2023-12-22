@@ -3,6 +3,11 @@
   {% include "partials/news.html" %}
 {% endif %}
 
+<!-- Event -->
+{% if page.meta.isevent %}
+  {% include "partials/events.html" %}
+{% endif %}
+
 <!-- Tags -->
 {% if "material/tags" in config.plugins and tags %}
   {% include "partials/tags.html" %}

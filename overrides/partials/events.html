@@ -1,47 +1,108 @@
-<div class="carousel">
-    <div class="container">
-        <a href="/blog/2023/12/22/movectf2024-激情预热中/" target="_blank"
-            ><img src="./assets/banner-MoveCTF.png"
-        /></a>
-        <a href="../HC_Start/" target="_blank"
-            ><img src="./assets/banner-quickstart.png"
-        /></a>
-        <a href="../HC_AI/" target="_blank"
-            ><img src="./assets/banner-update.png"
-        /></a>
-        <a href="https://github.com/CTF-Archives" target="_blank"
-            ><img src="./assets/banner-Achieve.png"
-        /></a>
-        <a href="javascript:alert$.next('我很可爱，请给我钱w');" 
-            ><img src="./assets/Banner-imcutesogivememoney.png"
-        /></a>
+<div class="content-wrapper">
+    <div class="carousel">
+        <div class="container">
+            <a href="/blog/2023/12/22/movectf2024-激情预热中/" target="_blank"><img src="../assets/banner-MoveCTF.png" /></a>
+            <a href="../HC_Start/" target="_blank"><img src="../assets/banner-quickstart.png" /></a>
+        </div>
+        <div class="shift">
+            <div class="btn left" onclick="leftShift()">&lt;</div>
+            <div class="btn right" onclick="rightShift()">&gt;</div>
+        </div>
+        <div class="bottom"></div>
     </div>
-    <div class="shift">
-        <div class="btn left" onclick="leftShift()">&lt;</div>
-        <div class="btn right" onclick="rightShift()">&gt;</div>
+    <!-- 赛事模块前置 -->
+    <div id="event-info">
+
+        <div id="greeting"></div>
+
+        <script>
+            function showGreeting() {
+                const hour = new Date().getHours();
+                let greeting;
+                if (hour < 5) {
+                    greeting = "夜深了, 要早些休息哦!";
+                }
+                else if (hour < 12) {
+                    greeting = "早上好, 今天也是元气满满的一天哦w";
+                } else if (hour < 18) {
+                    greeting = "下午好, 吃过下午茶了吗?";
+                } else {
+                    greeting = "晚上好, 今天过得怎么样?";
+                }
+                document.getElementById("greeting").textContent = greeting;
+            }
+            showGreeting();
+        </script>
+
+        <div>
+            <b>国内</b> 共有 5 场比赛正在报名,<br>
+            <a href="Upcoming_events/#_2">6</a> 场比赛即将开始,
+            <a href="Now_running/#_2">2</a> 场比赛正在进行。<br>
+            <b>国外</b> 共有 <a href="Upcoming_events/#_3">20</a> 场比赛即将开始,<br>
+            <a href="Now_running/#_3">3</a> 场比赛正在进行。<br>
+            <br>
+            您可以点击左侧栏来查看不同状态的比赛详细。
+
+        </div>
+
     </div>
-    <div class="bottom"></div>
 </div>
 
 <style>
-    .carousel {
-    width: 60%;
-    height: auto;
-    @media screen and (max-width: 600px) {
-        width: 100%;
-        height: 100%;
+    .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
     }
-    border-radius: 16px;
-    overflow: hidden;
-    position: relative;
 
-    /* 居中 */
-    margin-left: auto;
-    margin-right: auto;
-}
+    #event-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        width: 30%;
+        padding: 20px;
+        border: 1px solid #62C1DE;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        color: #333;
+        line-height: 1.6;
+        margin-top: 10px;
+    }
+
+    #greeting {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    #event-info a {
+        color: #0275d8;
+        /* 链接颜色 */
+        text-decoration: none;
+        /* 去除下划线 */
+    }
+
+    #event-info a:hover {
+        text-decoration: underline;
+        /* 鼠标悬停时下划线 */
+    }
+
+    .carousel {
+        width: 50%;
+        height: auto;
+        border-radius: 16px;
+        overflow: hidden;
+        flex: 1;
+        position: relative;
+        margin-right: 10px;
+        /* 其他样式保持不变 */
+    }
 
     .carousel .container {
- 
+
         width: 100%;
         height: 100%;
 
@@ -96,9 +157,11 @@
         /* 不透明度 0.5 */
         opacity: 0.5;
     }
+
     .carousel .shift .left {
         left: 20px;
     }
+
     .carousel .shift .right {
         right: 20px;
     }
@@ -135,8 +198,26 @@
     .carousel:hover .bottom .indicator {
         opacity: 1;
     }
+
     .carousel:hover .shift .btn {
         opacity: 1;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .content-wrapper {
+            flex-direction: column;
+        }
+
+        .carousel {
+            width: 100%;
+            margin-right: 0;
+        }
+
+        #event-info {
+            width: 100%;
+            margin-top: 10px;
+            /* 添加间隔 */
+        }
     }
 </style>
 <script>
