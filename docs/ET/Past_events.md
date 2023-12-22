@@ -143,7 +143,7 @@ comments: true
     **比赛名称** : [Intent CTF 2023](https://intentsummit.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-12-13 16:30:00 - 2023-12-15 16:30:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : Security Research Summit (SRS) (https://ctftime.org/team/163107)  
     **添加日历** : https://ctftime.org/event/2130.ics  
     
@@ -269,7 +269,7 @@ comments: true
     **比赛名称** : [NewportBlakeCTF 2023](https://nbctf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-12-02 08:00:00 - 2023-12-04 08:00:00 UTC+8  
-    **比赛权重** : 24.67  
+    **比赛权重** : 24.65  
     **赛事主办** : NewportBlakeCTF (https://ctftime.org/team/258029)  
     **添加日历** : https://ctftime.org/event/2072.ics  
     
