@@ -1,53 +1,3 @@
-<div class="content-wrapper">
-    <div class="carousel">
-        <div class="container">
-            <a href="/blog/2023/12/22/movectf2024-激情预热中/" target="_blank"><img src="../assets/banner-MoveCTF.png" /></a>
-            <a href="../HC_Start/" target="_blank"><img src="../assets/banner-quickstart.png" /></a>
-        </div>
-        <div class="shift">
-            <div class="btn left" onclick="leftShift()">&lt;</div>
-            <div class="btn right" onclick="rightShift()">&gt;</div>
-        </div>
-        <div class="bottom"></div>
-    </div>
-    <!-- 赛事模块前置 -->
-    <div id="event-info">
-
-        <div id="greeting"></div>
-
-        <script>
-            function showGreeting() {
-                const hour = new Date().getHours();
-                let greeting;
-                if (hour < 5) {
-                    greeting = "夜深了, 要早些休息哦!";
-                }
-                else if (hour < 12) {
-                    greeting = "早上好, 今天也是元气满满的一天哦w";
-                } else if (hour < 18) {
-                    greeting = "下午好, 吃过下午茶了吗?";
-                } else {
-                    greeting = "晚上好, 今天过得怎么样?";
-                }
-                document.getElementById("greeting").textContent = greeting;
-            }
-            showGreeting();
-        </script>
-
-        <div>
-            <b>国内</b> 共有 5 场比赛正在报名,<br>
-            <a href="Upcoming_events/#_2">6</a> 场比赛即将开始,
-            <a href="Now_running/#_2">2</a> 场比赛正在进行。<br>
-            <b>国外</b> 共有 <a href="Upcoming_events/#_3">20</a> 场比赛即将开始,<br>
-            <a href="Now_running/#_3">3</a> 场比赛正在进行。<br>
-            <br>
-            您可以点击左侧栏来查看不同状态的比赛详细。
-
-        </div>
-
-    </div>
-</div>
-
 <style>
     .content-wrapper {
         display: flex;
@@ -62,14 +12,14 @@
         align-items: center;
         height: 100%;
 
-        width: 30%;
+        width: 40%;
         padding: 20px;
         border: 1px solid #62C1DE;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         border-radius: 8px;
         color: #333;
         line-height: 1.6;
-        margin-top: 10px;
+        margin-top: 5%;
     }
 
     #greeting {
@@ -90,8 +40,18 @@
         /* 鼠标悬停时下划线 */
     }
 
+    .event-box {
+        display: flex;
+        justify-content: center;
+        /* 在主轴（垂直方向）上居中 */
+        /* 如果你还想在水平方向上居中，可以使用这个属性 */
+        height: 100%;
+        /* 确保 event-box 有足够的高度 */
+        width: auto;
+    }
+
     .carousel {
-        width: 50%;
+        width: 40%;
         height: auto;
         border-radius: 16px;
         overflow: hidden;
@@ -220,84 +180,54 @@
         }
     }
 </style>
-<script>
+<div class="content-wrapper">
+    <div class="carousel">
+        <div class="container">
+            <a href="/blog/2023/12/22/movectf2024-激情预热中/" target="_blank"><img src="../assets/banner-MoveCTF.png" /></a>
+            <a href="../HC_Start/" target="_blank"><img src="../assets/banner-quickstart.png" /></a>
+        </div>
+        <div class="shift">
+            <div class="btn left" onclick="leftShift()">&lt;</div>
+            <div class="btn right" onclick="rightShift()">&gt;</div>
+        </div>
+        <div class="bottom"></div>
+    </div>
 
-    // 显示的图片下标
-    let index = 0
+    <!-- 赛事模块前置_开始 -->
+    <div id="event-info">
+        <div id="greeting"></div>
+        <script>
+            function showGreeting() {
+                const hour = new Date().getHours();
+                let greeting;
+                if (hour < 5) {
+                    greeting = "夜深了, 要早些休息哦!";
+                }
+                else if (hour < 12) {
+                    greeting = "早上好, 今天也是元气满满的一天哦w";
+                } else if (hour < 18) {
+                    greeting = "下午好, 吃过下午茶了吗?";
+                } else {
+                    greeting = "晚上好, 今天过得怎么样?";
+                }
+                document.getElementById("greeting").textContent = greeting;
+            }
+            showGreeting();
+        </script>
+        <div class="event-box">
+            <div>
+                <b>国内</b> 共有 5 场比赛正在报名,<br>
+                <a href="Upcoming_events/#_2">6</a> 场比赛即将开始,
+                <a href="Now_running/#_2">2</a> 场比赛正在进行。<br>
+                <b>国外</b> 共有 <a href="Upcoming_events/#_3">20</a> 场比赛即将开始,<br>
+                <a href="Now_running/#_3">3</a> 场比赛正在进行。<br>
+                <br>
+                您可以点击左侧栏来查看不同状态的比赛详细。
 
-    // 图片的数量
-    let imageCount = document.querySelectorAll(
-        ".carousel .container img"
-    ).length
+            </div>
+        </div>
+        <!-- 赛事模块前置_结束 -->
+    </div>
+</div>
 
-    const bottom = document.querySelector(".carousel .bottom")
-    for (let i = 0; i < imageCount; i++) {
-        // DOM 操作
-
-
-        // 创建底部按钮
-        const indicator = document.createElement("div")
-        indicator.classList.add("indicator")
-        indicator.onclick = () => setIndex(i)
-
-        bottom.append(indicator)
-    }
-
-    function createAuto() {
-        return setInterval(() => {
-            index++
-            refresh()
-        }, 3000)
-    }
-
-    // 自动滚动
-    let autoTimer = createAuto()
-
-    function refresh() {
-        if (index < 0) {
-            // 下标小于 0 时
-            // 设置最右的图片
-            index = imageCount - 1
-        } else if (index >= imageCount) {
-            // 下标超过上限时
-            // 设置最左的图片
-            index = 0
-        }
-
-        // 获取轮播框元素
-        let carousel = document.querySelector(".carousel")
-
-        //获取轮播框的宽度
-        let width = getComputedStyle(carousel).width
-        width = Number(width.slice(0, -2))
-
-        carousel.querySelector(".container").style.left =
-            index * width * -1 + "px"
-    }
-
-    let refreshWrapper = (func) => {
-        // refresh 装饰器
-        return function (...args) {
-            let result = func(...args)
-            refresh()
-
-            // 重置自动滚动
-            clearInterval(autoTimer)
-            autoTimer = createAuto()
-            return result
-        }
-    }
-
-    let leftShift = refreshWrapper(() => {
-        index--
-    })
-    let rightShift = refreshWrapper(() => {
-        index++
-    })
-
-    let setIndex = refreshWrapper((idx) => {
-        index = idx
-    })
-
-    refresh()
-</script>
+<script> refresh() </script>

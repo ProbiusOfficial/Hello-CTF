@@ -158,7 +158,8 @@ extra_javascript:
   - javascripts/statis.js
 
 # ----- other -----
-  - javascripts/jquery-3.1.0.min.js
+  - javascripts/bannerSlider.js
+
 
 extra_css:
 # ----- katex -----
@@ -166,7 +167,6 @@ extra_css:
 
 # ----- other -----
   - stylesheets/extra.css
-  
 # 目录
 nav:
 
