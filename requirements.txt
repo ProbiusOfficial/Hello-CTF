@@ -1,2 +1,3 @@
+requests
 mkdocs-material
 mkdocs-video
