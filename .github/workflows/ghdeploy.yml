@@ -5,7 +5,7 @@ on:
       - master
       - main
   schedule:
-    - cron: "0 0/4 * * *"
+    - cron: "0 0/2 * * *"
 
 permissions:
   contents: write
