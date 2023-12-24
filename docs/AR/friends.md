@@ -16,7 +16,7 @@ comments: true
 ### [Hacking FernFlower](https://y4tacker.github.io/2023/12/22/year/2023/12/Hacking-FernFlower/)  
 >by [Y4tacker](https://y4tacker.github.io), 2023-12-22
 
-Hacking FernFlower前言​    今天很开心，第一次作为speacker参与了议题的分享，也很感谢补天白帽大会给了我这样的一次机会​    其实本该在去年来讲Java混淆的议题，不过当时赶上疫情爆发，学校出于安全的考虑没让出省。在当时我更想讲的是对抗所有反混淆的工具cfr、procyon，但今年想着主题太大了其实不太好讲，再考虑到受众都是做web安全的，因此我最终还是将主题定为了对...
+Hacking FernFlower前言​    今天很开心，第一次作为speacker参与了议题的分享，也很感谢补天白帽大会给了我这样的一次机会​    其实本该在去年来讲Java混淆的议题，不过当时赶上疫情爆发，学校出于安全的考虑没让出省。在当时我更想分享的是对抗所有反混淆的工具cfr、procyon，但今年在准备过程中发现主题太大了其实不太好讲，再考虑到受众都是做web安全的，因此我最终还是...
 ### [Airpods Pro 2上手体验](https://cdn.blog.stv.lol/archives/79/)  
 >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-12-16
 
