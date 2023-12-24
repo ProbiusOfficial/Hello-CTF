@@ -91,6 +91,24 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[SECCON CTF 2023 International Finals](https://ctf.seccon.jp/)"  
+    [![](https://ctftime.org/media/events/seccon_s_5.png){ width="200" align=left }](https://ctf.seccon.jp/)  
+    **比赛名称** : [SECCON CTF 2023 International Finals](https://ctf.seccon.jp/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-23 09:00:00 - 2023-12-24 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
+    **添加日历** : https://ctftime.org/event/2159.ics  
+    
+??? Abstract "[SECCON CTF 2023 Domestic Finals](https://ctf.seccon.jp/)"  
+    [![](https://ctftime.org/media/events/seccon_s_6.png){ width="200" align=left }](https://ctf.seccon.jp/)  
+    **比赛名称** : [SECCON CTF 2023 Domestic Finals](https://ctf.seccon.jp/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-23 09:00:00 - 2023-12-24 17:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
+    **添加日历** : https://ctftime.org/event/2160.ics  
+    
 ??? Abstract "[niteCTF](http://nitectf.live/)"  
     [![](https://ctftime.org/media/events/WhatsApp_Image_2021-08-06_at_11.28.13_2.jpeg){ width="200" align=left }](http://nitectf.live/)  
     **比赛名称** : [niteCTF](http://nitectf.live/)  
@@ -972,22 +990,4 @@ comments: true
     **比赛权重** : 24.05  
     **赛事主办** : Maple Bacon (https://ctftime.org/team/73723)  
     **添加日历** : https://ctftime.org/event/2038.ics  
-    
-??? Abstract "[BuckeyeCTF 2023](https://ctf.osucyber.club/)"  
-    [![](https://ctftime.org/media/events/bctf_1.jpg){ width="200" align=left }](https://ctf.osucyber.club/)  
-    **比赛名称** : [BuckeyeCTF 2023](https://ctf.osucyber.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-30 08:00:00 - 2023-10-02 08:00:00 UTC+8  
-    **比赛权重** : 34.50  
-    **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
-    **添加日历** : https://ctftime.org/event/2074.ics  
-    
-??? Abstract "[CyberSecurityRumble CTF](https://ctf.cybersecurityrumble.de/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.cybersecurityrumble.de/)  
-    **比赛名称** : [CyberSecurityRumble CTF](https://ctf.cybersecurityrumble.de/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-29 15:00:00 - 2023-09-30 08:00:01 UTC+8  
-    **比赛权重** : 69.82  
-    **赛事主办** : RedRocket (https://ctftime.org/team/48677)  
-    **添加日历** : https://ctftime.org/event/2110.ics  
     
