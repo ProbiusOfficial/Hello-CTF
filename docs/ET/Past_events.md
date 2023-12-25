@@ -75,27 +75,6 @@ comments: true
     **比赛时间** : 2023年11月22日 09:00 - 2023年11月29日 21:00  
     **其他说明** : QQ群：731841782  
     
-??? Abstract "TPCTF2023"  
-    **比赛名称** : [TPCTF2023](https://adworld.xctf.org.cn/contest/assess?hash=73c83d88-7791-11ee-ab28-000c29bc20bf)  
-    **比赛类型** : 团队赛  
-    **报名时间** : 2023年11月01日 12:00 - 2023年11月27日 09:00  
-    **比赛时间** : 2023年11月25日 09:00 - 2023年11月27日 09:00  
-    **其他说明** : Discord: https://discord.gg/hq4m3KrVfG  QQ群：512066352  
-    
-??? Abstract "2023第十四届极客大挑战"  
-    **比赛名称** : [2023第十四届极客大挑战](https://game.sycsec.com/)  
-    **比赛类型** : 个人赛  
-    **报名时间** : 2023年10月25日 22:00 - 2023年11月26日 12:00  
-    **比赛时间** : 2023年10月26日 20:00 - 2023年11月26日 20:00  
-    **其他说明** : QQ群：777042365  
-    
-??? Abstract "DASCTF X 0psu3 十一月挑战赛"  
-    **比赛名称** : [DASCTF X 0psu3 十一月挑战赛](https://buuoj.cn/das)  
-    **比赛类型** : 团队赛|1-4人  
-    **报名时间** : 2023年11月15日 12:00 - 2023年11月25日 18:00  
-    **比赛时间** : 2023年11月25日 10:00 - 2023年11月25日 18:00  
-    **其他说明** : QQ群：580275770  
-    
 
 ## 国际赛事
 ??? Abstract "[SECCON CTF 2023 International Finals](https://ctf.seccon.jp/)"  
@@ -157,7 +136,7 @@ comments: true
     **比赛名称** : [The Cyber Cooperative CTF](https://thecybercoopctf.ctfd.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-12-15 13:01:01 - 2023-12-18 12:59:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 24.39  
     **赛事主办** : The Cyber Cooperative (https://ctftime.org/team/276494)  
     **添加日历** : https://ctftime.org/event/2206.ics  
     
