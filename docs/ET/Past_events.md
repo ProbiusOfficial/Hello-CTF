@@ -75,13 +75,6 @@ comments: true
     **比赛时间** : 2023年11月22日 09:00 - 2023年11月29日 21:00  
     **其他说明** : QQ群：731841782  
     
-??? Abstract "TPCTF2023"  
-    **比赛名称** : [TPCTF2023](https://adworld.xctf.org.cn/contest/assess?hash=73c83d88-7791-11ee-ab28-000c29bc20bf)  
-    **比赛类型** : 团队赛  
-    **报名时间** : 2023年11月01日 12:00 - 2023年11月27日 09:00  
-    **比赛时间** : 2023年11月25日 09:00 - 2023年11月27日 09:00  
-    **其他说明** : Discord: https://discord.gg/hq4m3KrVfG  QQ群：512066352  
-    
 
 ## 国际赛事
 ??? Abstract "[SECCON CTF 2023 International Finals](https://ctf.seccon.jp/)"  

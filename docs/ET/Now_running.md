@@ -31,9 +31,9 @@ comments: true
     **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
     **添加日历** : https://ctftime.org/event/2026.ics  
     
-??? Abstract "[Oscar Zulu OSINT CTF Disparue(s)](https://ctf.osintisnotacrime.com/)"  
-    [![](https://ctftime.org/media/events/disparues.jpg){ width="200" align=left }](https://ctf.osintisnotacrime.com/)  
-    **比赛名称** : [Oscar Zulu OSINT CTF Disparue(s)](https://ctf.osintisnotacrime.com/)  
+??? Abstract "[Oscar Zulu OSINT CTF Disparue(s)](https://ctfisended.old/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctfisended.old/)  
+    **比赛名称** : [Oscar Zulu OSINT CTF Disparue(s)](https://ctfisended.old/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-11-04 17:00:00 - 2024-01-01 17:00:00 UTC+8  
     **比赛权重** : 0  

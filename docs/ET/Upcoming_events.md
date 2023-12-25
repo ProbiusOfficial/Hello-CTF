@@ -12,6 +12,13 @@ comments: true
     **比赛时间** : 2099年12月31日 00:00 - 2099年12月31日 00:00  
     **其他说明** : 比赛时间未定  
     
+??? Abstract "第二届N1CTF Junior"  
+    **比赛名称** : [第二届N1CTF Junior](https://mp.weixin.qq.com/s/yEaMeXac7iHMPIDCjCoiZQ)  
+    **比赛类型** : 个人赛  
+    **报名时间** : 2023年12月25日 00:00 - 2024年02月03日 00:00  
+    **比赛时间** : 2024年02月03日 09:00 - 2024年02月04日 18:00  
+    **其他说明** : N1CTFJunior是Nu1L Team组织的官方纳新  赛事旨在选拔年轻优秀人才加入Nu1LTeam  QQ群:180885587  
+    
 ??? Abstract "Real World CTF 6th"  
     **比赛名称** : [Real World CTF 6th](https://realworldctf.com/)  
     **比赛类型** : 团队赛  
