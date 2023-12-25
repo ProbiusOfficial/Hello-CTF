@@ -82,13 +82,6 @@ comments: true
     **比赛时间** : 2023年11月25日 09:00 - 2023年11月27日 09:00  
     **其他说明** : Discord: https://discord.gg/hq4m3KrVfG  QQ群：512066352  
     
-??? Abstract "2023第十四届极客大挑战"  
-    **比赛名称** : [2023第十四届极客大挑战](https://game.sycsec.com/)  
-    **比赛类型** : 个人赛  
-    **报名时间** : 2023年10月25日 22:00 - 2023年11月26日 12:00  
-    **比赛时间** : 2023年10月26日 20:00 - 2023年11月26日 20:00  
-    **其他说明** : QQ群：777042365  
-    
 
 ## 国际赛事
 ??? Abstract "[SECCON CTF 2023 International Finals](https://ctf.seccon.jp/)"  
