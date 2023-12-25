@@ -229,16 +229,20 @@ nav:
       - 2. &nbsp; 常见保护: HC_PWN/Protections.md
       - x. &nbsp; 杂七杂八的解题技巧: HC_PWN/Tricks.md
 
-    - AWD:
+    - AWD | 攻防模式:
       - 1. &nbsp; AWD介绍: HC_AWD/awd_about.md
       - 2. &nbsp; AWD平台: HC_AWD/awd_platform.md
       - 3. &nbsp; 【WEB】AWD技巧: HC_AWD/awd_web.exp.md
       - 4. &nbsp; 【PWN】AWD技巧: HC_AWD/awd_pwn.exp.md
 
-    - AI:
+    - AI | 人工智能安全:
       - HC_AI/index.md
       - 初识AI: HC_AI/What_is_AI.md
       - 你的第一个神经网络: HC_AI/MLP.md
+
+    - blockchain | 区块链安全:
+      - Move:
+        - 从0开始的签到题: HC_blockchain/Move/0x00.md
 
     - 附录:
       - 提问的智慧: HC_Appendix/how-to-ask.md
