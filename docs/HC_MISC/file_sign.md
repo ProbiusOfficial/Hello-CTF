@@ -143,7 +143,6 @@
 | 7B 5C 72 74 66 31                                     | {\rtf1              | 0    | rtf      | 富文本格式 (RTF) 文档                                        |
 | 46 4C 56 01                                           | FLV␁                | 0    | flv      | Flash 视频文件                                               |
 | 57 41 56 45 66 6F 72 6D 61 74 20 33                   | WAVEform␠3          | 0    | wav      | WAV 音频文件                                                 |
-| 57 41 56 45 66 6F 72 6D 61 74 20 33                   | WAVEform␠3          | 0    | webm     | WebM 视频文件                                                |
 | 57 45 42 4D                                           | WEBM                | 0    | webm     | WebM 视频文件                                                |
 | 44 45 58 01                                           | DEX␁                | 0    | dex      | Dalvik 可执行文件                                            |
 | 30 33 35 00                                           | 035␀                | 0    | elf      | ELF 可执行文件                                               |
