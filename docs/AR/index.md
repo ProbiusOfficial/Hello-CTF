@@ -13,10 +13,14 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [Apusic权限绕过浅析](https://y4tacker.github.io/2023/12/26/year/2023/12/Apusic%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E6%B5%85%E6%9E%90/)  
+>by [Y4tacker](https://y4tacker.github.io), 2023-12-26
+
+Apusic权限绕过浅析真的是浅析前几天去参加补天了，一直想写但是一直抽不出时间学习，由于漏洞比较简单这里也不过多篇幅的讲解，仅分享一些关键的点，在这里关于权限校验Apusic没有使用第三方框架(毕竟是迫真信创产品)而是使用了自定义实现的安全性约束(关于什么安全性约束百度搜很多文章了不作搬运工)去实现了访问控制1234567891011<security-constraint>    <displ...
 ### [Hacking FernFlower](https://y4tacker.github.io/2023/12/22/year/2023/12/Hacking-FernFlower/)  
 >by [Y4tacker](https://y4tacker.github.io), 2023-12-22
 
-Hacking FernFlower前言​    今天很开心，第一次作为speacker参与了议题的分享，也很感谢补天白帽大会给了我这样的一次机会​    其实本该在去年来讲Java混淆的议题，不过当时赶上疫情爆发，学校出于安全的考虑没让出省。在当时我更想分享的是对抗所有反混淆的工具cfr、procyon，但今年在准备过程中发现主题太大了其实不太好讲，再考虑到受众都是做web安全的，因此我最终还是...
+Hacking FernFlower前言​    今天很开心，第一次作为speaker参与了议题的分享，也很感谢补天白帽大会给了我这样的一次机会​    其实本该在去年来讲Java混淆的议题，不过当时赶上疫情爆发，学校出于安全的考虑没让出省。在当时我更想分享的是对抗所有反混淆的工具cfr、procyon，但今年在准备过程中发现主题太大了其实不太好讲，再考虑到受众都是做web安全的，因此我最终还是将...
 ### [Airpods Pro 2上手体验](https://blog.stv.lol/archives/79/)  
 >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-12-16
 
@@ -89,7 +93,3 @@ pwnable.kr-otp，一次性密码验证（one time password）漏洞分析。题�
 >by [Y4tacker](https://y4tacker.github.io), 2023-11-12
 
 63ad3c308aa90afd6725b0adbc5aaf396fe6a49769435089ef5574bd32ca40449c3e06df20814f543efe985c53634aa612382f7cfbf67a5114f90aa226b1f3a2117126741fb1bce45422cc45d5b0203b4dc897356c33545fc1853dbda4a028d98a21c3...
-### [OJ-Bypass-WAF](https://xia0ji233.github.io/2023/11/09/OJ-Bypass-WAF/)  
->by [xia0ji233](https://xia0ji233.pro/), 2023-11-09
-
-第一次做生产环境的项目和运维，也是出现了很多问题，下面是遇到的其中一个问题。绕过WAF向OJ提交代码的方案随着网络安全越来越严格，防火墙也是做了很多升级，有些防火墙为了防止上传恶意代码甚至暴力匹配某些字符或者是字符组合，这对于ACM选手来说是不太友好的，因为特殊的需要，我们经常要向服务器提交我们写的代码，里面难免会出现一些所谓的“恶意字符”，因此需要对OJ进行特殊地处理来使得代码不被WAF拦截。一...
