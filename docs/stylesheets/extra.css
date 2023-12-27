@@ -38,6 +38,7 @@
 .md-typeset {
   font-size: 0.75rem;
   line-height: 1.5;
+  word-wrap: break-word;
 }
 
 .md-typeset pre {
