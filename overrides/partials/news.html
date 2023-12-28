@@ -1,122 +1,5 @@
-<style>
-    .carousel {
-    width: 60%;
-    height: auto;
-    @media screen and (max-width: 600px) {
-        width: 100%;
-        height: 100%;
-    }
-    border-radius: 16px;
-    overflow: hidden;
-    position: relative;
-
-    /* 居中 */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-    .carousel .container {
- 
-        width: 100%;
-        height: 100%;
-
-        position: relative;
-        left: 0;
-
-        display: flex;
-
-        /* 过渡动画 1s */
-        transition: all 1s;
-    }
-
-    .carousel .container a {
-        width: 100%;
-        height: 100%;
-
-        flex-shrink: 0;
-    }
-
-    .carousel .container a img {
-        width: 100%;
-        height: 100%;
-
-        object-fit: cover;
-    }
-
-    .carousel .shift .btn {
-        /* 绝对定位且垂直居中 */
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto 0;
-
-        background-color: #62C1DE;
-        color: white;
-
-        width: 30px;
-        height: 30px;
-        border-radius: 8px;
-
-        font-size: 15px;
-        font-weight: bold;
-
-        /* 字符水平垂直居中 */
-        line-height: 30px;
-        text-align: center;
-
-        cursor: pointer;
-
-        user-select: none;
-
-        /* 不透明度 0.5 */
-        opacity: 0.5;
-    }
-    .carousel .shift .left {
-        left: 20px;
-    }
-    .carousel .shift .right {
-        right: 20px;
-    }
-
-    .carousel .bottom {
-        position: absolute;
-
-        bottom: 20px;
-
-        /* 绝对定位水平居中 */
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-
-        /* 宽度等同于内容宽度 */
-
-        width: max-content;
-
-        display: flex;
-        /* 指示器间距 */
-        gap: 10px;
-    }
-
-    .carousel .bottom .indicator {
-        height: 5px;
-        width: 20px;
-
-        background-color: #62C1DE;
-
-        opacity: 0.5;
-        cursor: pointer;
-    }
-
-    .carousel:hover .bottom .indicator {
-        opacity: 1;
-    }
-    .carousel:hover .shift .btn {
-        opacity: 1;
-    }
-</style>
-
 <div class="carousel">
-    <div class="container">
+    <div class="carousel-container">
         <a href="/blog/2023/12/22/movectf2024-激情预热中/" target="_blank"
             ><img src="./assets/banner-MoveCTF.png"
         /></a>
@@ -129,15 +12,16 @@
         <a href="https://github.com/CTF-Archives" target="_blank"
             ><img src="./assets/banner-Achieve.png"
         /></a>
-        <a href="javascript:alert$.next('我很可爱，请给我钱w');" 
+        <a href="javascript:alert$.next('我很可爱，请给我钱w');"
             ><img src="./assets/Banner-imcutesogivememoney.png"
         /></a>
     </div>
-    <div class="shift">
-        <div class="btn left" onclick="leftShift()">&lt;</div>
-        <div class="btn right" onclick="rightShift()">&gt;</div>
+    <!-- 触发 hover 的区域 -->
+    <div class="carousel-hover left">
+        <button class="carousel-btn left" onclick="leftShift()"></button>
     </div>
-    <div class="bottom"></div>
+    <div class="carousel-hover right">
+        <button class="carousel-btn right" onclick="rightShift()"></button>
+    </div>
+    <div class="carousel-bottom"></div>
 </div>
-
-<script> refresh() </script>

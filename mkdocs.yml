@@ -167,6 +167,7 @@ extra_css:
 
 # ----- other -----
   - stylesheets/extra.css
+  - stylesheets/bannerSlider.css
 # 目录
 nav:
 
@@ -311,5 +312,8 @@ nav:
 # - Blog Part ----
   - Blog:
     - blog/index.md
- 
 
+watch:
+  - docs
+  - mkdocs.yml
+  - overrides/partials
