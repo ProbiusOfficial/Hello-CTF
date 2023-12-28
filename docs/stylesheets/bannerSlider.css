@@ -1,9 +1,6 @@
 .carousel {
     width: 60%;
     height: 100%;
-    @media screen and (max-width: 600px) {
-        width: 100%;
-    }
 
     border-radius: 0.4rem;
     overflow: hidden;
@@ -136,4 +133,14 @@
 }
 .carousel:hover .shift .btn {
     opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel-hover button {
+        opacity: 1;
+    }
 }
