@@ -54,24 +54,8 @@ comments: true
     **比赛时间** : 2023年12月06日 09:00 - 2023年12月10日 16:00  
     **其他说明** : QQ群：523854931  决赛地点：南京  
     
-??? Abstract "PolarCTF 网络安全2023冬季个人挑战赛"  
-    **比赛名称** : [PolarCTF 网络安全2023冬季个人挑战赛](https://www.polarctf.com/#/)  
-    **比赛类型** : 个人赛  
-    **报名时间** : 2023年12月01日 00:00 - 2023年12月09日 21:00  
-    **比赛时间** : 2023年12月09日 09:00 - 2023年12月09日 21:00  
-    **其他说明** : QQ群：902939742  
-    
 
 ## 国际赛事
-??? Abstract "[SECCON CTF 2023 International Finals](https://ctf.seccon.jp/)"  
-    [![](https://ctftime.org/media/events/seccon_s_5.png){ width="200" align=left }](https://ctf.seccon.jp/)  
-    **比赛名称** : [SECCON CTF 2023 International Finals](https://ctf.seccon.jp/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-23 09:00:00 - 2023-12-24 17:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
-    **添加日历** : https://ctftime.org/event/2159.ics  
-    
 ??? Abstract "[SECCON CTF 2023 Domestic Finals](https://ctf.seccon.jp/)"  
     [![](https://ctftime.org/media/events/seccon_s_6.png){ width="200" align=left }](https://ctf.seccon.jp/)  
     **比赛名称** : [SECCON CTF 2023 Domestic Finals](https://ctf.seccon.jp/)  
@@ -80,6 +64,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
     **添加日历** : https://ctftime.org/event/2160.ics  
+    
+??? Abstract "[SECCON CTF 2023 International Finals](https://ctf.seccon.jp/)"  
+    [![](https://ctftime.org/media/events/seccon_s_5.png){ width="200" align=left }](https://ctf.seccon.jp/)  
+    **比赛名称** : [SECCON CTF 2023 International Finals](https://ctf.seccon.jp/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-23 09:00:00 - 2023-12-24 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
+    **添加日历** : https://ctftime.org/event/2159.ics  
     
 ??? Abstract "[niteCTF](http://nitectf.live/)"  
     [![](https://ctftime.org/media/events/WhatsApp_Image_2021-08-06_at_11.28.13_2.jpeg){ width="200" align=left }](http://nitectf.live/)  
@@ -122,7 +115,7 @@ comments: true
     **比赛名称** : [The Cyber Cooperative CTF](https://thecybercoopctf.ctfd.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-12-15 13:01:01 - 2023-12-18 12:59:00 UTC+8  
-    **比赛权重** : 24.39  
+    **比赛权重** : 24.10  
     **赛事主办** : The Cyber Cooperative (https://ctftime.org/team/276494)  
     **添加日历** : https://ctftime.org/event/2206.ics  
     
