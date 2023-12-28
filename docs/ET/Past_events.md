@@ -115,7 +115,7 @@ comments: true
     **比赛名称** : [The Cyber Cooperative CTF](https://thecybercoopctf.ctfd.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-12-15 13:01:01 - 2023-12-18 12:59:00 UTC+8  
-    **比赛权重** : 24.10  
+    **比赛权重** : 24.16  
     **赛事主办** : The Cyber Cooperative (https://ctftime.org/team/276494)  
     **添加日历** : https://ctftime.org/event/2206.ics  
     
@@ -259,7 +259,7 @@ comments: true
     **比赛名称** : [NewportBlakeCTF 2023](https://nbctf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-12-02 08:00:00 - 2023-12-04 08:00:00 UTC+8  
-    **比赛权重** : 24.65  
+    **比赛权重** : 24.67  
     **赛事主办** : NewportBlakeCTF (https://ctftime.org/team/258029)  
     **添加日历** : https://ctftime.org/event/2072.ics  
     
