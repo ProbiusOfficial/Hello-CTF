@@ -3,6 +3,7 @@
         display: flex;
         justify-content: space-between;
         align-items: start;
+        height: 350px;
     }
 
     #event-info {
@@ -14,11 +15,11 @@
 
         width: 40%;
         padding: 20px;
-        border: 1px solid #62C1DE;
+        border: 1px solid #62c1de;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         border-radius: 8px;
         line-height: 1.6;
-        margin-top: 5%;
+        margin-left: 20px;
     }
 
     #greeting {
@@ -49,119 +50,6 @@
         width: auto;
     }
 
-    .carousel {
-        width: 40%;
-        height: auto;
-        border-radius: 16px;
-        overflow: hidden;
-        flex: 1;
-        position: relative;
-        margin-right: 10px;
-        /* 其他样式保持不变 */
-    }
-
-    .carousel .container {
-
-        width: 100%;
-        height: 100%;
-
-        position: relative;
-        left: 0;
-
-        display: flex;
-
-        /* 过渡动画 1s */
-        transition: all 1s;
-    }
-
-    .carousel .container a {
-        width: 100%;
-        height: 100%;
-
-        flex-shrink: 0;
-    }
-
-    .carousel .container a img {
-        width: 100%;
-        height: 100%;
-
-        object-fit: cover;
-    }
-
-    .carousel .shift .btn {
-        /* 绝对定位且垂直居中 */
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto 0;
-
-        background-color: #62C1DE;
-        color: white;
-
-        width: 30px;
-        height: 30px;
-        border-radius: 8px;
-
-        font-size: 15px;
-        font-weight: bold;
-
-        /* 字符水平垂直居中 */
-        line-height: 30px;
-        text-align: center;
-
-        cursor: pointer;
-
-        user-select: none;
-
-        /* 不透明度 0.5 */
-        opacity: 0.5;
-    }
-
-    .carousel .shift .left {
-        left: 20px;
-    }
-
-    .carousel .shift .right {
-        right: 20px;
-    }
-
-    .carousel .bottom {
-        position: absolute;
-
-        bottom: 20px;
-
-        /* 绝对定位水平居中 */
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-
-        /* 宽度等同于内容宽度 */
-
-        width: max-content;
-
-        display: flex;
-        /* 指示器间距 */
-        gap: 10px;
-    }
-
-    .carousel .bottom .indicator {
-        height: 5px;
-        width: 20px;
-
-        background-color: #62C1DE;
-
-        opacity: 0.5;
-        cursor: pointer;
-    }
-
-    .carousel:hover .bottom .indicator {
-        opacity: 1;
-    }
-
-    .carousel:hover .shift .btn {
-        opacity: 1;
-    }
-
     @media screen and (max-width: 1000px) {
         .content-wrapper {
             flex-direction: column;
@@ -181,53 +69,57 @@
 </style>
 <div class="content-wrapper">
     <div class="carousel">
-        <div class="container">
-            <a href="/blog/2023/12/22/movectf2024-激情预热中/" target="_blank"><img src="../assets/banner-MoveCTF.png" /></a>
-            <a href="../HC_Start/" target="_blank"><img src="../assets/banner-quickstart.png" /></a>
+        <div class="carousel-container">
+            <a href="/blog/2023/12/22/movectf2024-激情预热中/" target="_blank"
+                ><img src="../assets/banner-MoveCTF.png"
+            /></a>
+            <a href="../HC_Start/" target="_blank"
+                ><img src="../assets/banner-quickstart.png"
+            /></a>
         </div>
-        <div class="shift">
-            <div class="btn left" onclick="leftShift()">&lt;</div>
-            <div class="btn right" onclick="rightShift()">&gt;</div>
+        <!-- 触发 hover 的区域 -->
+        <div class="carousel-hover left">
+            <button class="carousel-btn left" onclick="leftShift()"></button>
         </div>
-        <div class="bottom"></div>
+        <div class="carousel-hover right">
+            <button class="carousel-btn right" onclick="rightShift()"></button>
+        </div>
+        <div class="carousel-bottom"></div>
     </div>
 
     <!-- 赛事模块前置_开始 -->
-<div id="event-info">
-    <div id="greeting"></div>
-    <script>
-        function showGreeting() {
-            const hour = new Date().getHours();
-            let greeting;
-            if (hour < 5) {
-                greeting = "夜深了, 要早些休息哦!";
+    <div id="event-info">
+        <div id="greeting"></div>
+        <script>
+            function showGreeting() {
+                const hour = new Date().getHours()
+                let greeting
+                if (hour < 5) {
+                    greeting = "夜深了, 要早些休息哦!"
+                } else if (hour < 12) {
+                    greeting = "早上好, 今天也是元气满满的一天哦w"
+                } else if (hour < 18) {
+                    greeting = "下午好, 吃过下午茶了吗?"
+                } else {
+                    greeting = "晚上好, 今天过得怎么样?"
+                }
+                document.getElementById("greeting").textContent = greeting
             }
-            else if (hour < 12) {
-                greeting = "早上好, 今天也是元气满满的一天哦w";
-            } else if (hour < 18) {
-                greeting = "下午好, 吃过下午茶了吗?";
-            } else {
-                greeting = "晚上好, 今天过得怎么样?";
-            }
-            document.getElementById("greeting").textContent = greeting;
-        }
-        showGreeting();
-    </script>
-    <div class="event-box">
-        <div>
-            <b>国内</b> 共有 7 场比赛正在报名,<br>
-            <a href="Upcoming_events/#_2">10</a> 场比赛即将开始,
-            <a href="Now_running/#_2">2</a> 场比赛正在进行。<br>
-            <b>国外</b> 共有 <a href="Upcoming_events/#_3">18</a> 场比赛即将开始,<br>
-            <a href="Now_running/#_3">3</a> 场比赛正在进行。<br>
-            <br>
-            您可以点击左侧栏来查看不同状态的比赛详细。
-
+            showGreeting()
+        </script>
+        <div class="event-box">
+            <div>
+                <b>国内</b> 共有 7 场比赛正在报名,<br />
+                <a href="Upcoming_events/#_2">10</a> 场比赛即将开始,
+                <a href="Now_running/#_2">2</a> 场比赛正在进行。<br />
+                <b>国外</b> 共有
+                <a href="Upcoming_events/#_3">18</a> 场比赛即将开始,<br />
+                <a href="Now_running/#_3">3</a> 场比赛正在进行。<br />
+                <br />
+                您可以点击左侧栏来查看不同状态的比赛详细。
+            </div>
         </div>
-    </div>
 
         <!-- 赛事模块前置_结束 -->
     </div>
 </div>
-
-<script> refresh() </script>
