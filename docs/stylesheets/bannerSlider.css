@@ -63,12 +63,15 @@
     background-color: white;
     content: "";
     mask-position: center;
+    -webkit-mask-position: center;
 }
 .carousel-hover.left button::after {
     mask-image: var(--md-tabbed-icon--prev);
+    -webkit-mask-image: var(--md-tabbed-icon--prev);
 }
 .carousel-hover.right button::after {
     mask-image: var(--md-tabbed-icon--next);
+    -webkit-mask-image: var(--md-tabbed-icon--next);
 }
 
 /* hover 外层 */
