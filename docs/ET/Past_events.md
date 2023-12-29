@@ -94,6 +94,15 @@ comments: true
     **赛事主办** : InfoSecIITR (https://ctftime.org/team/16691)  
     **添加日历** : https://ctftime.org/event/2153.ics  
     
+??? Abstract "[DiceCTF Teaser 2023](https://ctf.dicega.ng/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.dicega.ng/)  
+    **比赛名称** : [DiceCTF Teaser 2023](https://ctf.dicega.ng/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-16 05:00:00 - 2023-12-17 05:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
+    **添加日历** : https://ctftime.org/event/2162.ics  
+    
 ??? Abstract "[Wargames.MY CTF 2023](https://pro2023.wargames.my/)"  
     [![](https://ctftime.org/media/events/wgmy2023_logo.png){ width="200" align=left }](https://pro2023.wargames.my/)  
     **比赛名称** : [Wargames.MY CTF 2023](https://pro2023.wargames.my/)  
@@ -939,13 +948,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
     **添加日历** : https://ctftime.org/event/2118.ics  
-    
-??? Abstract "[MapleCTF 2023](https://ctf.maplebacon.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.maplebacon.org/)  
-    **比赛名称** : [MapleCTF 2023](https://ctf.maplebacon.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-30 08:00:00 - 2023-10-02 08:00:00 UTC+8  
-    **比赛权重** : 24.05  
-    **赛事主办** : Maple Bacon (https://ctftime.org/team/73723)  
-    **添加日历** : https://ctftime.org/event/2038.ics  
     

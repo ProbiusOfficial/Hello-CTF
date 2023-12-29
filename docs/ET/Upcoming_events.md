@@ -137,6 +137,15 @@ comments: true
     **赛事主办** : ASIS (https://ctftime.org/team/4140)  
     **添加日历** : https://ctftime.org/event/2205.ics  
     
+??? Abstract "[KnightCTF 2024](https://knightctf.com/)"  
+    [![](https://ctftime.org/media/events/KnightCTF.png){ width="200" align=left }](https://knightctf.com/)  
+    **比赛名称** : [KnightCTF 2024](https://knightctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-20 23:00:00 - 2024-01-21 23:00:00 UTC+8  
+    **比赛权重** : 6.65  
+    **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
+    **添加日历** : https://ctftime.org/event/2209.ics  
+    
 ??? Abstract "[Real World CTF 6th](https://realworldctf.com/)"  
     [![](https://ctftime.org/media/events/rwctf.png){ width="200" align=left }](https://realworldctf.com/)  
     **比赛名称** : [Real World CTF 6th](https://realworldctf.com/)  
@@ -145,6 +154,33 @@ comments: true
     **比赛权重** : 97.04  
     **赛事主办** : Chaitin Tech (https://ctftime.org/team/60371)  
     **添加日历** : https://ctftime.org/event/2172.ics  
+    
+??? Abstract "[TetCTF 2024](https://ctf.hackemall.live/)"  
+    [![](https://ctftime.org/media/events/tetlogo.png){ width="200" align=left }](https://ctf.hackemall.live/)  
+    **比赛名称** : [TetCTF 2024](https://ctf.hackemall.live/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-27 08:00:00 - 2024-01-29 08:00:00 UTC+8  
+    **比赛权重** : 74.41  
+    **赛事主办** : TetCTF (https://ctftime.org/team/71781)  
+    **添加日历** : https://ctftime.org/event/2212.ics  
+    
+??? Abstract "[ESCAPE CTF Final](https://ctf.t3n4ci0us.kr/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.t3n4ci0us.kr/)  
+    **比赛名称** : [ESCAPE CTF Final](https://ctf.t3n4ci0us.kr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-03 20:00:00 - 2024-02-04 05:30:00 UTC+8  
+    **比赛权重** : 9.64  
+    **赛事主办** : CYB3R_T3N4CI0US (https://ctftime.org/team/160305)  
+    **添加日历** : https://ctftime.org/event/2213.ics  
+    
+??? Abstract "[Bearcat CTF 2024](https://www.bearcatctf.io/)"  
+    [![](https://ctftime.org/media/events/bearcatlogo-cyberatuc.png){ width="200" align=left }](https://www.bearcatctf.io/)  
+    **比赛名称** : [Bearcat CTF 2024](https://www.bearcatctf.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-04 03:00:00 - 2024-02-05 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
+    **添加日历** : https://ctftime.org/event/2208.ics  
     
 ??? Abstract "[Black Cell SecOps 2024 - Online Blue Teaming Jeopardy CTF](https://blackcell.io/secops-24/#ctf)"  
     [![](https://ctftime.org/media/events/SecOps2024_logo.png){ width="200" align=left }](https://blackcell.io/secops-24/#ctf)  
@@ -236,6 +272,15 @@ comments: true
     **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
     **添加日历** : https://ctftime.org/event/2138.ics  
     
+??? Abstract "[Crypto CTF 2024](https://cr.yp.toc.tf/)"  
+    [![](https://ctftime.org/media/events/cryptoctf.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
+    **比赛名称** : [Crypto CTF 2024](https://cr.yp.toc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-08 22:00:00 - 2024-06-09 22:00:00 UTC+8  
+    **比赛权重** : 65.62  
+    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+    **添加日历** : https://ctftime.org/event/2210.ics  
+    
 ??? Abstract "[Pointer Overflow CTF - 2024](http://pointeroverflowctf.com/)"  
     [![](https://ctftime.org/media/events/social_media_profile_picture_with_branding_bar_example_1.png){ width="200" align=left }](http://pointeroverflowctf.com/)  
     **比赛名称** : [Pointer Overflow CTF - 2024](http://pointeroverflowctf.com/)  
@@ -244,4 +289,13 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
     **添加日历** : https://ctftime.org/event/2121.ics  
+    
+??? Abstract "[ASIS CTF Quals 2024](https://asisctf.com/)"  
+    [![](https://ctftime.org/media/events/asisctf.jpg){ width="200" align=left }](https://asisctf.com/)  
+    **比赛名称** : [ASIS CTF Quals 2024](https://asisctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-09-21 22:00:00 - 2024-09-22 22:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+    **添加日历** : https://ctftime.org/event/2211.ics  
     
