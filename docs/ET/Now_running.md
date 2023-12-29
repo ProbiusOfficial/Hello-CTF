@@ -58,3 +58,12 @@ comments: true
     **赛事主办** : ZetaTwo (https://ctftime.org/team/9407)  
     **添加日历** : https://ctftime.org/event/2199.ics  
     
+??? Abstract "[ASIS CTF Finals 2023](https://asisctf.com/)"  
+    [![](https://ctftime.org/media/events/asis_logo_512_2.png){ width="200" align=left }](https://asisctf.com/)  
+    **比赛名称** : [ASIS CTF Finals 2023](https://asisctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-29 22:30:00 - 2023-12-30 22:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+    **添加日历** : https://ctftime.org/event/1953.ics  
+    

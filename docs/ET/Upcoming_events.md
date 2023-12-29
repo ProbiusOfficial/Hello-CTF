@@ -92,15 +92,6 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[ASIS CTF Finals 2023](https://asisctf.com/)"  
-    [![](https://ctftime.org/media/events/asis_logo_512_2.png){ width="200" align=left }](https://asisctf.com/)  
-    **比赛名称** : [ASIS CTF Finals 2023](https://asisctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-29 22:30:00 - 2023-12-30 22:30:00 UTC+8  
-    **比赛权重** : 83.00  
-    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-    **添加日历** : https://ctftime.org/event/1953.ics  
-    
 ??? Abstract "[IrisCTF 2024](https://2024.irisc.tf/)"  
     [![](https://ctftime.org/media/events/IrisCTF_Logo.png){ width="200" align=left }](https://2024.irisc.tf/)  
     **比赛名称** : [IrisCTF 2024](https://2024.irisc.tf/)  
