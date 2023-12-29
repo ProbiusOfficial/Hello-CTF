@@ -58,7 +58,7 @@ document$.subscribe(function () {
 
     document.querySelector(".carousel-btn.left").onclick = refreshWrapper(
         () => {
-            index = (index - 1) % imageCount
+            index = (index - 1 + imageCount) % imageCount
         }
     )
 
