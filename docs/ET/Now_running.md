@@ -49,15 +49,6 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Abstract "[37C3 Potluck CTF](https://potluckctf.com/)"  
-    [![](https://ctftime.org/media/events/logo-512-white.png){ width="200" align=left }](https://potluckctf.com/)  
-    **比赛名称** : [37C3 Potluck CTF](https://potluckctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-29 02:00:00 - 2023-12-30 02:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : ZetaTwo (https://ctftime.org/team/9407)  
-    **添加日历** : https://ctftime.org/event/2199.ics  
-    
 ??? Abstract "[ASIS CTF Finals 2023](https://asisctf.com/)"  
     [![](https://ctftime.org/media/events/asis_logo_512_2.png){ width="200" align=left }](https://asisctf.com/)  
     **比赛名称** : [ASIS CTF Finals 2023](https://asisctf.com/)  

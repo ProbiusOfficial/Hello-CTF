@@ -49,6 +49,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[37C3 Potluck CTF](https://potluckctf.com/)"  
+    [![](https://ctftime.org/media/events/logo-512-white.png){ width="200" align=left }](https://potluckctf.com/)  
+    **比赛名称** : [37C3 Potluck CTF](https://potluckctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-29 02:00:00 - 2023-12-30 02:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ZetaTwo (https://ctftime.org/team/9407)  
+    **添加日历** : https://ctftime.org/event/2199.ics  
+    
 ??? Abstract "[SECCON CTF 2023 Domestic Finals](https://ctf.seccon.jp/)"  
     [![](https://ctftime.org/media/events/seccon_s_6.png){ width="200" align=left }](https://ctf.seccon.jp/)  
     **比赛名称** : [SECCON CTF 2023 Domestic Finals](https://ctf.seccon.jp/)  
@@ -939,13 +948,4 @@ comments: true
     **比赛权重** : 24.88  
     **赛事主办** : TeamItaly (https://ctftime.org/team/193832)  
     **添加日历** : https://ctftime.org/event/2088.ics  
-    
-??? Abstract "[Second round of Haruulzangi 2023](https://dashboard.haruulzangi.mn/)"  
-    [![](https://ctftime.org/media/events/logo-hz_1.jpg){ width="200" align=left }](https://dashboard.haruulzangi.mn/)  
-    **比赛名称** : [Second round of Haruulzangi 2023](https://dashboard.haruulzangi.mn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-30 12:00:00 - 2023-09-30 18:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
-    **添加日历** : https://ctftime.org/event/2118.ics  
     
