@@ -122,7 +122,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2139.ics  
     
 ??? Abstract "[Mapna CTF 2024](https://mapnactf.com/)"  
-    [![](https://ctftime.org/media/events/Mapna_1.2.png){ width="200" align=left }](https://mapnactf.com/)  
+    [![](https://ctftime.org/media/events/MAPNA.jpg){ width="200" align=left }](https://mapnactf.com/)  
     **比赛名称** : [Mapna CTF 2024](https://mapnactf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-01-20 23:00:00 - 2024-01-21 23:00:00 UTC+8  
