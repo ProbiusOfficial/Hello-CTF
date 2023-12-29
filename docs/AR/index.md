@@ -13,6 +13,10 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [又又又是一个属性覆盖带来的漏洞](https://y4tacker.github.io/2023/12/28/year/2023/12/%E5%8F%88%E5%8F%88%E5%8F%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%B1%9E%E6%80%A7%E8%A6%86%E7%9B%96%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%BC%8F%E6%B4%9E/)  
+>by [Y4tacker](https://y4tacker.github.io), 2023-12-28
+
+又又又是一个属性覆盖带来的漏洞想到最近出了好几个与属性覆盖有关的漏洞，突然想到有一个国产系统也曾经出过这类问题，比较有趣这里简单分享一下，希望把一些东西串起来分享方便学到一些东西前后端框架信息梳理首先简单从官网可以看出所使用的框架信息以及技术选型https://gitee.com/mingSoft/MCMS?_from=gitee_search我们主要关注几个点一个是shiro，一个是freema...
 ### [Apache OFBiz未授权命令执行浅析(CVE-2023-51467)](https://y4tacker.github.io/2023/12/27/year/2023/12/Apache-OFBiz%E6%9C%AA%E6%8E%88%E6%9D%83%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%B5%85%E6%9E%90-CVE-2023-51467/)  
 >by [Y4tacker](https://y4tacker.github.io), 2023-12-27
 
@@ -89,7 +93,3 @@ a74529e06839b00590019b3586ee8768e1429c91fb6e284b9e29886c48d32fe4096cab8993661d6b
 >by [xia0ji233](https://xia0ji233.pro/), 2023-11-14
 
 pwnable.kr-otp，一次性密码验证（one time password）漏洞分析。题目分析同样来看看题目描述：I made a skeleton interface for one time password authentication system.I guess there are no mistakes.could you take a look at it?hint : not...
-### [2023浙江省大学生网络与信息安全决赛-Misc篇](https://blog.zgsec.cn/archives/504.html)  
->by [曾哥](https://blog.zgsec.cn/), 2023-11-12
-
-比赛概述这是2023浙江省大学生网络与信息安全决赛的Misc篇，将本次比赛的相关题目进行了整理，欢迎各位师傅的复现和交流学习~比赛总体emmmm怎么说呢，难受死了，好多题目都是临门一脚的状态。。。比赛当时是断网环境，真的是可惜了相关题目附件已经上传到开源项目，题库地址：https://github.com/CTF-Archives/2023-zjsdxs/如有需要，从上面拉取题目即可[...]...

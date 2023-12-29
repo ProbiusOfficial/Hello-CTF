@@ -54,6 +54,13 @@ comments: true
     **比赛时间** : 2024年01月20日 10:00 - 2024年01月22日 17:00  
     **其他说明** : 赛事QQ群：277328440  
     
+??? Abstract "第三届WEBSHELL伏魔挑战赛"  
+    **比赛名称** : [第三届WEBSHELL伏魔挑战赛](https://mp.weixin.qq.com/s/e8OE3rXyIqPkHrOHBDL5Kw)  
+    **比赛类型** : 个人赛 | 非CTF  
+    **报名时间** : 2023年12月29日 10:00 - 2024年01月17日 10:00  
+    **比赛时间** : 2024年01月10日 10:00 - 2024年01月17日 10:00  
+    **其他说明** :   
+    
 ??? Abstract "第七届强网杯全国网络安全挑战赛决赛"  
     **比赛名称** : [第七届强网杯全国网络安全挑战赛决赛](https://qiangwangbei.com/)  
     **比赛类型** : 团队赛|1-4人  
@@ -85,15 +92,6 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[37C3 Potluck CTF](https://potluckctf.com/)"  
-    [![](https://ctftime.org/media/events/logo-512-white.png){ width="200" align=left }](https://potluckctf.com/)  
-    **比赛名称** : [37C3 Potluck CTF](https://potluckctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-29 02:00:00 - 2023-12-30 02:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : ZetaTwo (https://ctftime.org/team/9407)  
-    **添加日历** : https://ctftime.org/event/2199.ics  
-    
 ??? Abstract "[ASIS CTF Finals 2023](https://asisctf.com/)"  
     [![](https://ctftime.org/media/events/asis_logo_512_2.png){ width="200" align=left }](https://asisctf.com/)  
     **比赛名称** : [ASIS CTF Finals 2023](https://asisctf.com/)  
@@ -131,7 +129,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2139.ics  
     
 ??? Abstract "[Mapna CTF 2024](https://mapnactf.com/)"  
-    [![](https://ctftime.org/media/events/Mapna_1.2.png){ width="200" align=left }](https://mapnactf.com/)  
+    [![](https://ctftime.org/media/events/MAPNA.jpg){ width="200" align=left }](https://mapnactf.com/)  
     **比赛名称** : [Mapna CTF 2024](https://mapnactf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-01-20 23:00:00 - 2024-01-21 23:00:00 UTC+8  
