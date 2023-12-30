@@ -196,7 +196,7 @@ comments: true
     **比赛名称** : [snakeCTF 2023](https://2023.snakectf.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-12-09 17:00:00 - 2023-12-10 17:00:00 UTC+8  
-    **比赛权重** : 24.80  
+    **比赛权重** : 24.79  
     **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
     **添加日历** : https://ctftime.org/event/2158.ics  
     
@@ -475,7 +475,7 @@ comments: true
     **比赛名称** : [1337UP LIVE CTF](https://ctf.intigriti.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-11-17 19:59:59 - 2023-11-19 07:59:59 UTC+8  
-    **比赛权重** : 24.20  
+    **比赛权重** : 24.23  
     **赛事主办** : Intigriti (https://ctftime.org/team/178083)  
     **添加日历** : https://ctftime.org/event/2134.ics  
     
