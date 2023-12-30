@@ -126,7 +126,7 @@ comments: true
     **比赛名称** : [The Cyber Cooperative CTF](https://thecybercoopctf.ctfd.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-12-15 13:01:01 - 2023-12-18 12:59:00 UTC+8  
-    **比赛权重** : 24.16  
+    **比赛权重** : 24.21  
     **赛事主办** : The Cyber Cooperative (https://ctftime.org/team/276494)  
     **添加日历** : https://ctftime.org/event/2206.ics  
     
