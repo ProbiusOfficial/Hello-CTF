@@ -56,6 +56,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[ASIS CTF Finals 2023](https://asisctf.com/)"  
+    [![](https://ctftime.org/media/events/asis_logo_512_2.png){ width="200" align=left }](https://asisctf.com/)  
+    **比赛名称** : [ASIS CTF Finals 2023](https://asisctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-29 22:30:00 - 2023-12-30 22:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+    **添加日历** : https://ctftime.org/event/1953.ics  
+    
 ??? Abstract "[37C3 Potluck CTF](https://potluckctf.com/)"  
     [![](https://ctftime.org/media/events/logo-512-white.png){ width="200" align=left }](https://potluckctf.com/)  
     **比赛名称** : [37C3 Potluck CTF](https://potluckctf.com/)  
@@ -946,13 +955,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Tandava (https://ctftime.org/team/228212)  
     **添加日历** : https://ctftime.org/event/2123.ics  
-    
-??? Abstract "[TeamItaly CTF 2023](https://ctf.teamitaly.eu/)"  
-    [![](https://ctftime.org/media/events/401899fd9cea2f9e5e2dd5e66ff7a7b1.png){ width="200" align=left }](https://ctf.teamitaly.eu/)  
-    **比赛名称** : [TeamItaly CTF 2023](https://ctf.teamitaly.eu/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-09-30 20:00:00 - 2023-10-01 20:00:00 UTC+8  
-    **比赛权重** : 24.88  
-    **赛事主办** : TeamItaly (https://ctftime.org/team/193832)  
-    **添加日历** : https://ctftime.org/event/2088.ics  
     
