@@ -94,15 +94,6 @@ comments: true
     **赛事主办** : IrisSec (https://ctftime.org/team/127034)  
     **添加日历** : https://ctftime.org/event/2085.ics  
     
-??? Abstract "[bi0sCTF 2024](https://ctf.bi0s.in/)"  
-    [![](https://ctftime.org/media/events/Untitled-removebg-preview_1.png){ width="200" align=left }](https://ctf.bi0s.in/)  
-    **比赛名称** : [bi0sCTF 2024](https://ctf.bi0s.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-01-13 20:30:00 - 2024-01-15 08:30:00 UTC+8  
-    **比赛权重** : 79.83  
-    **赛事主办** : bi0s (https://ctftime.org/team/662)  
-    **添加日历** : https://ctftime.org/event/2117.ics  
-    
 ??? Abstract "[Insomni'hack teaser 2024](https://insomnihack.ch/contests/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://insomnihack.ch/contests/)  
     **比赛名称** : [Insomni'hack teaser 2024](https://insomnihack.ch/contests/)  
