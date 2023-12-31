@@ -88,7 +88,7 @@ comments: true
     **比赛名称** : [SECCON CTF 2023 International Finals](https://ctf.seccon.jp/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2023-12-23 09:00:00 - 2023-12-24 17:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
     **添加日历** : https://ctftime.org/event/2159.ics  
     
