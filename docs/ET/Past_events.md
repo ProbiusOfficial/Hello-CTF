@@ -614,6 +614,15 @@ comments: true
     **赛事主办** : HackerDom (https://ctftime.org/team/552)  
     **添加日历** : https://ctftime.org/event/2120.ics  
     
+??? Abstract "[Oscar Zulu OSINT CTF Disparue(s)](https://ctfisended.old/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctfisended.old/)  
+    **比赛名称** : [Oscar Zulu OSINT CTF Disparue(s)](https://ctfisended.old/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-11-04 17:00:00 - 2024-01-01 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : OSCAR ZULU (https://ctftime.org/team/270624)  
+    **添加日历** : https://ctftime.org/event/2154.ics  
+    
 ??? Abstract "[M*CTF 2023 Junior Quals](https://mctf.mtuci.ru/)"  
     [![](https://ctftime.org/media/events/GRuJspCP73s_1.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
     **比赛名称** : [M*CTF 2023 Junior Quals](https://mctf.mtuci.ru/)  
@@ -946,13 +955,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
     **添加日历** : https://ctftime.org/event/2142.ics  
-    
-??? Abstract "[Ground Zero-Hackathon-CTF 2023, Siliguri](https://docs.google.com/forms/d/e/1FAIpQLSel2Hs56AItrloc7xxezXljxtxip3o79kWS4Vd70HKpWkcigQ/viewform)"  
-    [![](https://ctftime.org/media/events/WhatsApp_Image_2023-09-26_at_14.24.40.jpeg){ width="200" align=left }](https://docs.google.com/forms/d/e/1FAIpQLSel2Hs56AItrloc7xxezXljxtxip3o79kWS4Vd70HKpWkcigQ/viewform)  
-    **比赛名称** : [Ground Zero-Hackathon-CTF 2023, Siliguri](https://docs.google.com/forms/d/e/1FAIpQLSel2Hs56AItrloc7xxezXljxtxip3o79kWS4Vd70HKpWkcigQ/viewform)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-04 15:30:00 - 2023-10-04 16:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Tandava (https://ctftime.org/team/228212)  
-    **添加日历** : https://ctftime.org/event/2123.ics  
     
