@@ -13,6 +13,14 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [再见2023 | 捡起六便士也不忘心中的月亮](https://www.ek1ng.com/Goodbye2023.html)  
+>by [ek1ng](https://ek1ng.com/), 2024-01-01
+
+再见2023 | 捡起六便士也不忘心中的月亮写下这篇文章的时候，我刚来到上海入职新公司一周，回看过去一年的竞赛，工作，学习，锻炼等等生活，大体上还是差强人意，但总归有不少值得唏嘘的地方，还得从在北京的生活说起。当时为什么会在北京呢？是去年年末时，有协会学长在群里问有没有学弟想找实习，当时除了CTF以外的经验几乎为零，也从来没有考虑过业界的安全岗都在做什么，我自己想做什么，于是在学长的内推和两轮面试...
+### [2024的目标](https://xia0ji233.github.io/2023/12/31/Summary2023/)  
+>by [xia0ji233](https://xia0ji233.pro/), 2023-12-30
+
+2023年也快过去了，至此，大学生涯算是快结束了。2023总结2023 01-14经过了很久的申诉，ICPC2023 侥幸拿铜（check）02-01CSAPP看完03-29XCTF FINALS 二等（真的很感谢队里师傅的认可，能让我去参加）04-15ZJCPC 又双叒叕打铁了，哭了04-25自顶向下计算机网络看完05-20CISCN 直接没去（因为一些意外）11-13ZJCTF 二等（单挑省一...
 ### [又又又是一个属性覆盖带来的漏洞](https://y4tacker.github.io/2023/12/28/year/2023/12/%E5%8F%88%E5%8F%88%E5%8F%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%B1%9E%E6%80%A7%E8%A6%86%E7%9B%96%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%BC%8F%E6%B4%9E/)  
 >by [Y4tacker](https://y4tacker.github.io), 2023-12-28
 
@@ -85,11 +93,3 @@ c2aca488ade3c6d7b8f66283f4fa5a919b5dffc64099fc7db64c2f89071e8f6e918d82a30070255c
 >by [曾哥](https://blog.zgsec.cn/), 2023-11-25
 
 0# 概述最近反正也没啥事情干，突然看到朋友 青山ya 师傅审计出了腾讯开源的xSRC系统的逻辑漏洞，于是我就没事干，把开源的xSRC源码拉下来跟着审计了一波但在审计的过程中，我在TSRC（腾讯安全应急响应中心）的在线平台中，看到了一个好玩的东西：ScanWebshell：此工具可用于检测php Webshell咦，我平时不也在研究WebShell的免杀吗？兴趣使然，我打算下载下来看看[...]...
-### [I Doc View全版本前台RCE漏洞分析汇总](https://y4tacker.github.io/2023/11/22/year/2023/11/I%20Doc%20View%E5%85%A8%E7%89%88%E6%9C%AC%E5%89%8D%E5%8F%B0RCE%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90%E6%B1%87%E6%80%BB/)  
->by [Y4tacker](https://y4tacker.github.io), 2023-11-22
-
-a74529e06839b00590019b3586ee8768e1429c91fb6e284b9e29886c48d32fe4096cab8993661d6b4761d862048986990a1e631c6094927b39cb47d72b8a0e59f33fa5458fba36a86f95dd6613af37d9474c70c33a9fd0989c3a2ae49c64e3923ed130...
-### [Pwnable.kr-otp](https://xia0ji233.github.io/2023/11/14/pwnable_otp/)  
->by [xia0ji233](https://xia0ji233.pro/), 2023-11-14
-
-pwnable.kr-otp，一次性密码验证（one time password）漏洞分析。题目分析同样来看看题目描述：I made a skeleton interface for one time password authentication system.I guess there are no mistakes.could you take a look at it?hint : not...
