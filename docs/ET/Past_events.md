@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Abstract "CTFSHOW元旦水友赛"  
+    **比赛名称** : [CTFSHOW元旦水友赛](https://ctf.show)  
+    **比赛类型** : 个人赛  
+    **报名时间** : 2023年12月01日 10:00 - 2024年01月02日 10:00  
+    **比赛时间** : 2023年12月31日 10:00 - 2024年01月02日 10:00  
+    **其他说明** : QQ群：926826969  
+    
 ??? Abstract "麟阁CTF天梯赛"  
     **比赛名称** : [麟阁CTF天梯赛](https://www.venuskylin.com.cn/#/drillActivity/paper)  
     **比赛类型** : 个人赛  
