@@ -22,6 +22,9 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.9
+          
+      - name: Install libxml2 and libxslt
+        run: sudo apt-get install -y libxml2-dev libxslt-dev
 
       - name: Install dependencies
         run: pip install -r requirements.txt
