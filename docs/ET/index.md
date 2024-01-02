@@ -19,6 +19,31 @@ hide:
 
     [点击加入催更群ww](https://qm.qq.com/q/ysLYMrtpGE)
 
+## 添加赛事Bot到群聊
+
+=== "Usage"
+
+    [![](./index_demo/add_bot.png){ width="200" align=left }](https://qun.qq.com/qunpro/robot/qunshare?robot_uin=3889001776&robot_appid=102074091)
+    赛事API现已接入QQ官方机器人，通过扫描二维码或者点击跳转到对应页面可将机器人添加到自己的群聊中。
+
+    添加后在聊天框中输入 / 会自动弹出功能列表 (*该功能需要最新版本的手机QQ)  
+
+    或者:  
+
+    - `@DKbot /比赛列表` - 获取所有比赛信息
+
+    - `@DKbot /比赛 +比赛序号` - 获取对应比赛的详细信息 (*比赛序号在比赛列表中获取)
+
+
+=== "Demo"
+
+    <figure markdown>
+    ![](./index_demo/bot_demo.png)
+    <figcaption>Demo</figcaption>
+    </figure>
+    
+
+    
 ## 获取数据？
 
 > 数据基于[Hello-CTFtime](https://github.com/ProbiusOfficial/Hello-CTFtime)项目，每小时更新一次。  
