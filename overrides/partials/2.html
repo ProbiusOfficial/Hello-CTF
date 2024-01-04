@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prototype</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .grid-item {
+    min-height: 100px;
+  }
+  .broadcast {
+    background-image: url('https://source.unsplash.com/random/800x400');
+    background-size: cover;
+    background-position: center;
+  }
+</style>
+</head>
+<body class="bg-gray-50 font-sans font-normal text-gray-900">
+<div class="container mx-auto px-4">
+  <div class="grid grid-cols-8 gap-4">
+    <!-- Broadcast picture div (completed) -->
+    <div class="col-span-8 grid-item broadcast"></div>
+
+    <!-- Announcement -->
+    <div class="col-span-5 grid-item bg-white shadow rounded p-4">
+      <h2 class="text-lg font-semibold">Announcement</h2>
+      <p>Here's where the latest announcements will be displayed.</p>
+    </div>
+
+    <!-- Friendship link -->
+    <div class="col-span-3 grid-item bg-white shadow rounded p-4">
+      <h2 class="text-lg font-semibold">Friendship Link</h2>
+      <ul>
+        <li><a href="#" class="text-blue-600 hover:underline">Link 1</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Link 2</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Link 3</a></li>
+      </ul>
+    </div>
+
+    <!-- Recent Post -->
+    <div class="col-span-8 grid-item bg-white shadow rounded p-4 mt-4">
+      <h2 class="text-lg font-semibold">Recent Post</h2>
+      <p>Check out the most recent posts here.</p>
+    </div>
+  </div>
+</div>
+<script>
+  // Your JavaScript goes here
+</script>
+</body>
+</html>
