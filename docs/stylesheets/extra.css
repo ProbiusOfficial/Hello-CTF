@@ -8,6 +8,7 @@
     /* --md-accent-fg-color:   */
     /* --md-typeset-color:     */
     --md-typeset-a-color: #1c61a5;
+    --md-status-online: #2FB170;
 }
 
 [data-md-color-scheme="slate"] {
