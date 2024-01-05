@@ -13,6 +13,10 @@ comments: true
 - [Steven Lynn's Blog｜Steven的个人博客](https://blog.stv.lol)
 
 ## Recent Post
+### [如何判断在IDEA中程序正在运行或正在Debug](https://y4tacker.github.io/2024/01/04/year/2024/1/%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E5%9C%A8IDEA%E4%B8%AD%E7%A8%8B%E5%BA%8F%E6%AD%A3%E5%9C%A8%E8%BF%90%E8%A1%8C%E6%88%96%E6%AD%A3%E5%9C%A8Debug/)  
+>by [Y4tacker](https://y4tacker.github.io), 2024-01-04
+
+如何判断在IDEA中程序正在运行或正在Debug给大家分享一个有趣又无用的东西，如何判断在IDEA中程序正在运行或正在Debug在这个之前我们首先需要了解一个类ManagementFactory ，它是 Java 标准库中的一个类，它提供了访问运行时系统管理接口的工厂方法。通过 ManagementFactory 类，可以获取包括操作系统、内存、线程、类加载器等在内的多种系统管理信息。一些常用的用...
 ### [再见2023 | 捡起六便士也不忘心中的月亮](https://www.ek1ng.com/Goodbye2023.html)  
 >by [ek1ng](https://ek1ng.com/), 2024-01-01
 
@@ -89,7 +93,3 @@ b911718fdd890810916fcf22cb8016ca11ae7d872d624941bd9b20d0cf7e4036a45e816cf5955164
 >by [Y4tacker](https://y4tacker.github.io), 2023-11-26
 
 f8699a5360fe9f42f41b98c5cc3203c7cbe9b0e7b973590e7fd52b27b474d14b936d11c308462091084b3defadb8d998d3381b897b97ebf2923245170a43a3ab58393c3b23741eb3526a32145ff738802bd1881ac66ab453888465f4f27015647ba7da...
-### [某系统最新前台RCE分析](https://y4tacker.github.io/2023/11/26/year/2023/11/%E6%9F%90%E7%B3%BB%E7%BB%9F%E6%9C%80%E6%96%B0%E5%89%8D%E5%8F%B0RCE%E5%88%86%E6%9E%90/)  
->by [Y4tacker](https://y4tacker.github.io), 2023-11-26
-
-c2aca488ade3c6d7b8f66283f4fa5a919b5dffc64099fc7db64c2f89071e8f6e918d82a30070255c82ae3a58fc0fae28d71d31e89829a30577fbbf97e15fbb296a140d9667e248db8ee6fcb90c7b88bd06693de9c753ec30a7d6b12f9f2c47f1fd21cc...
