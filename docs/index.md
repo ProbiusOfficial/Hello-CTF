@@ -8,15 +8,7 @@ hide:
   - edit
   - view
 ---
-<div class="grid cards" markdown>
 
--   :material-list-status:{ .lg .middle } __状态__
-
-    ---
-
-    #测试用markdown
-
-</div>
 <div class="grid grid-cols-8 gap-4" style="display: grid;grid-template-columns: 70% 30%;" markdown>
 
 <div class="grid cards" style="display: grid; grid-template-columns: 1fr;" markdown>
