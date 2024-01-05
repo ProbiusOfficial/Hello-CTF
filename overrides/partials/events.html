@@ -1,86 +1,21 @@
 <style>
-    .content-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-        height: 350px;
-        gap: 10px 20px;
-    }
-
-    #event-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-
-        width: 40%;
-        padding: 20px;
-        border: 1px solid #62c1de;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        border-radius: 8px;
-        line-height: 1.6;
-    }
-
-    #greeting {
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-
-    #event-info a {
-        color: #0275d8;
-        /* 链接颜色 */
-        text-decoration: none;
-        /* 去除下划线 */
-    }
-
-    #event-info a:hover {
-        text-decoration: underline;
-        /* 鼠标悬停时下划线 */
-    }
-
-    .event-box {
-        display: flex;
-        justify-content: center;
-        /* 在主轴（垂直方向）上居中 */
-        /* 如果你还想在水平方向上居中，可以使用这个属性 */
-        height: 100%;
-        /* 确保 event-box 有足够的高度 */
-        width: auto;
+    .carousel {
+        width: 100%;
     }
 
     @media screen and (max-width: 1000px) {
-        .content-wrapper {
-            height: auto;
-            flex-direction: column;
-        }
-
-        .carousel {
-            width: 100%;
-            margin-right: 0;
-        }
-        
-        button.carousel-btn {
-            opacity: 1;
-        }
-
-        #event-info {
-            width: 100%;
-            margin-top: 10px;
-            /* 添加间隔 */
+        .grid {
+            grid-template-columns: none !important;
         }
     }
 </style>
-<div class="content-wrapper">
+<div class="grid" style="display: grid;grid-template-columns: 60% 40%;">
+
+    <!-- 轮播图布局 -->
     <div class="carousel">
         <div class="carousel-container">
-            <a href="/blog/2023/12/22/movectf2024-激情预热中/" target="_blank"
-                ><img src="../assets/banner-MoveCTF.png"
-            /></a>
-            <a href="../HC_Start/" target="_blank"
-                ><img src="../assets/banner-quickstart.png"
-            /></a>
+            <a href="/blog/2023/12/22/movectf2024-激情预热中/" target="_blank"><img src="../assets/banner-MoveCTF.png" /></a>
+            <a href="../HC_Start/" target="_blank"><img src="../assets/banner-quickstart.png" /></a>
         </div>
         <!-- 触发 hover 的区域 -->
         <div class="carousel-hover left">
@@ -93,8 +28,35 @@
     </div>
 
     <!-- 赛事模块前置_开始 -->
-<div id="event-info">
-    <div id="greeting"></div>
+
+    <div class="grid cards">
+        <ul>
+            <li>
+                <p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M16.5 11 13 7.5l1.4-1.4 2.1 2.1L20.7 4l1.4 1.4-5.6 5.6M11 7H2v2h9V7m10 6.4L19.6 12 17 14.6 14.4 12 13 13.4l2.6 2.6-2.6 2.6 1.4 1.4 2.6-2.6 2.6 2.6 1.4-1.4-2.6-2.6 2.6-2.6M11 15H2v2h9v-2Z">
+                            </path>
+                        </svg></span> <strong>比赛状态</strong></p>
+                <hr>
+                <div class="event-box">
+                    <!-- 赛事模块前置_开始 -->
+                    <div>
+                        <strong id="greeting"></strong><br>
+                        <br>
+                        <b>国内</b> 共有 9 场比赛正在报名,<br>
+                        <a href="Upcoming_events/#_2">11</a> 场比赛即将开始,
+                        <a href="Now_running/#_2">2</a> 场比赛正在进行。<br>
+                        <b>国外</b> 共有 <a href="Upcoming_events/#_3">21</a> 场比赛即将开始,<br>
+                        <a href="Now_running/#_3">2</a> 场比赛正在进行。<br>
+                        <br>
+                        您可以点击左侧栏来查看不同状态的比赛详细。
+
+                    </div>
+                    <!-- 赛事模块前置_结束 -->
+                </div>
+            </li>
+        </ul>
+    </div>
     <script>
         function showGreeting() {
             const hour = new Date().getHours();
@@ -113,19 +75,5 @@
         }
         showGreeting();
     </script>
-    <div class="event-box">
-        <div>
-            <b>国内</b> 共有 9 场比赛正在报名,<br>
-            <a href="Upcoming_events/#_2">11</a> 场比赛即将开始,
-            <a href="Now_running/#_2">2</a> 场比赛正在进行。<br>
-            <b>国外</b> 共有 <a href="Upcoming_events/#_3">21</a> 场比赛即将开始,<br>
-            <a href="Now_running/#_3">2</a> 场比赛正在进行。<br>
-            <br>
-            您可以点击左侧栏来查看不同状态的比赛详细。
-
-        </div>
-    </div>
-
-        <!-- 赛事模块前置_结束 -->
-    </div>
+    
 </div>

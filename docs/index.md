@@ -8,8 +8,18 @@ hide:
   - edit
   - view
 ---
+<div class="grid cards" markdown>
 
+-   :material-list-status:{ .lg .middle } __状态__
+
+    ---
+
+    #测试用markdown
+
+</div>
 <div class="grid grid-cols-8 gap-4" style="display: grid;grid-template-columns: 70% 30%;" markdown>
+
+<div class="grid cards" style="display: grid; grid-template-columns: 1fr;" markdown>
 
 <div class="grid cards" markdown>
 
@@ -88,6 +98,17 @@ hide:
     [→ 了解更多](./ET/)
 
 </div>
+  <div class="grid cards" markdown>
+
+-   :material-book-plus:{ .lg .middle } __更新动态__
+
+    ---
+
+    更新了Misc部分 首页改版优化ing
+
+</div>  
+</div>
+<div class="grid cards" markdown>
 
 <div class="grid cards" markdown>
 
@@ -105,14 +126,7 @@ hide:
     [NSSCTF](https://www.nssctf.cn/)
 
 </div>   
-  <div class="grid cards" markdown>
 
--   :material-book-plus:{ .lg .middle } __更新动态__
-
-    ---
-
-    更新了Misc部分 首页改版优化ing
-
-</div>  
 </div>
 
+</div>
