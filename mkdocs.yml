@@ -176,14 +176,14 @@ nav:
 # - HelloCTF 内容 (.HC) Part ------------
   - HelloCTF:
     - index.md
+    - 快速开始:
+      - HC_Start/index.md
+
     - 前言:
       - HC_Preface/index.md
       - 关于本书: HC_Preface/about.md
       - 食用方法: HC_Preface/usage.md
       - 加入我们: HC_Preface/join.md
-
-    - 快速开始:
-      - HC_Start/index.md
 
     - 环境设置:
       - HC_envSet/index.md
@@ -250,6 +250,10 @@ nav:
       - CTF赛事: HC_Appendix/CTFevent.md
       - NSSCTF平台使用: HC_Appendix/NSSCTF_Usage.md
       - 推荐书单: HC_Appendix/book.md
+
+# - CTF Training 练习 (.TT) Part ------------
+  - 刷题:
+    - TT/index.md
 
 # - CTF Event 赛事 (.TK) Part ------------
   - 赛事:

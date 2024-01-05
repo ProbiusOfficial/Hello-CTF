@@ -1,13 +1,11 @@
 import requests
 
 def download_file(url):
-    """从URL下载文件并返回内容"""
     response = requests.get(url,verify=False)
     response.raise_for_status()
     return response.text
 
 def insert_content(original_file, start_marker, end_marker, new_content):
-    """在指定的开始和结束标记之间插入新内容"""
     with open(original_file, 'r', encoding='utf-8') as file:
         content = file.readlines()
 
@@ -30,7 +28,6 @@ def insert_content(original_file, start_marker, end_marker, new_content):
         file.writelines(content)
 
 def update_files():
-    """下载并更新文件"""
     # 更新 friends.md 和 index.md
     friends_content = download_file("https://raw.githubusercontent.com/ProbiusOfficial/helloCTF-CTFerlink/main/output/friends.md")
     with open("docs/AR/friends.md", 'w', encoding='utf-8') as file:
