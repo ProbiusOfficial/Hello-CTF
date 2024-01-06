@@ -77,4 +77,5 @@ body {
 /* https://github.com/squidfunk/mkdocs-material/issues/3444 */
 .md-typeset pre > code {
   max-height: 25rem;
+  white-space: pre-wrap;
 }

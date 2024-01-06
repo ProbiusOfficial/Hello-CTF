@@ -10,7 +10,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    border: 0.075rem solid var(--md-accent-fg-color);
+    border: 0.075rem solid #7b7b7b7a;
     box-shadow: var(--md-shadow-z1);
 }
 

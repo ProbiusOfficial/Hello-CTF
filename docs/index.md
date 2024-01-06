@@ -108,14 +108,20 @@ hide:
 
     ---
 
-    首页装修中ww 
-    敬请期待！！
+    入门CTF/阅读本书前必读：[快速开始](./HC_Start/)以及[前言部分](./HC_Preface/)  
+    站点已接入 CDN，感谢[渊龙Sec安全团队](https://dh.aabyss.cn)友情赞助
 
 -   :fontawesome-regular-paper-plane:{ .lg .middle } __友链__
 
     ---
 
-    [NSSCTF](https://www.nssctf.cn/)
+    [最棒的CTF平台 - NSSCTF](https://www.nssctf.cn/)  
+
+    [安全导航-渊龙Sec安全团队](https://dh.aabyss.cn)    
+
+    [CTF导航-猫捉鱼铃](https://ctf.mzy0.com/)
+
+    [CTF-Archive](https://github.com/CTF-Archives)
 
 </div>   
 
