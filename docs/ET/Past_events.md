@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Abstract "“复兴杯”2023年第四届大学生网络安全精英赛初赛"  
+    **比赛名称** : [“复兴杯”2023年第四届大学生网络安全精英赛初赛](https://www.nisp.org.cn/wads)  
+    **比赛类型** : 个人赛  
+    **报名时间** : 2023年11月10日 12:00 - 2024年01月02日 18:00  
+    **比赛时间** : 2024年01月03日 09:00 - 2024年01月07日 18:00  
+    **其他说明** :   
+    
 ??? Abstract "CTFSHOW元旦水友赛"  
     **比赛名称** : [CTFSHOW元旦水友赛](https://ctf.show)  
     **比赛类型** : 个人赛  
@@ -56,6 +63,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[Shaastra CTF '24](https://ctf.shaastractf2024.online/)"  
+    [![](https://ctftime.org/media/events/Shaastralogo.png){ width="200" align=left }](https://ctf.shaastractf2024.online/)  
+    **比赛名称** : [Shaastra CTF '24](https://ctf.shaastractf2024.online/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-04 16:30:00 - 2024-01-04 18:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : ShaastraCTF2024 (https://ctftime.org/team/276568)  
+    **添加日历** : https://ctftime.org/event/2220.ics  
+    
 ??? Abstract "[ASIS CTF Finals 2023](https://asisctf.com/)"  
     [![](https://ctftime.org/media/events/asis_logo_512_2.png){ width="200" align=left }](https://asisctf.com/)  
     **比赛名称** : [ASIS CTF Finals 2023](https://asisctf.com/)  
@@ -73,6 +89,15 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : ZetaTwo (https://ctftime.org/team/9407)  
     **添加日历** : https://ctftime.org/event/2199.ics  
+    
+??? Abstract "[Code X Sport Jung'23 CTF](http://kiet-intra-ctf.site/)"  
+    [![](https://ctftime.org/media/events/event_logo.jpeg){ width="200" align=left }](http://kiet-intra-ctf.site/)  
+    **比赛名称** : [Code X Sport Jung'23 CTF](http://kiet-intra-ctf.site/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-23 13:30:00 - 2023-12-23 16:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : cornered_tiger (https://ctftime.org/team/216139)  
+    **添加日历** : https://ctftime.org/event/2215.ics  
     
 ??? Abstract "[SECCON CTF 2023 Domestic Finals](https://ctf.seccon.jp/)"  
     [![](https://ctftime.org/media/events/seccon_s_6.png){ width="200" align=left }](https://ctf.seccon.jp/)  
@@ -154,6 +179,15 @@ comments: true
     **比赛权重** : 6.67  
     **赛事主办** : UAC (https://ctftime.org/team/140846)  
     **添加日历** : https://ctftime.org/event/2099.ics  
+    
+??? Abstract "[IWCON CTF](https://iwcon.live/ctf)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://iwcon.live/ctf)  
+    **比赛名称** : [IWCON CTF](https://iwcon.live/ctf)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-14 18:26:53 - 2023-12-15 18:26:53 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : IWCON (https://ctftime.org/team/277281)  
+    **添加日历** : https://ctftime.org/event/2214.ics  
     
 ??? Abstract "[Intent CTF 2023](https://intentsummit.org/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://intentsummit.org/)  
@@ -928,31 +962,4 @@ comments: true
     **比赛权重** : 79.09  
     **赛事主办** : Balsn (https://ctftime.org/team/16978)  
     **添加日历** : https://ctftime.org/event/2056.ics  
-    
-??? Abstract "[Internet Festival 2023 CTF Finals](http://ifctf.fibonhack.it/)"  
-    [![](https://ctftime.org){ width="200" align=left }](http://ifctf.fibonhack.it/)  
-    **比赛名称** : [Internet Festival 2023 CTF Finals](http://ifctf.fibonhack.it/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-06 21:00:00 - 2023-10-07 21:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : fibonhack (https://ctftime.org/team/117538)  
-    **添加日历** : https://ctftime.org/event/2039.ics  
-    
-??? Abstract "[DomeCTF 2023](http://domectf.in/)"  
-    [![](https://ctftime.org/media/events/logo-sq-red-bg.gif){ width="200" align=left }](http://domectf.in/)  
-    **比赛名称** : [DomeCTF 2023](http://domectf.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-06 12:30:00 - 2023-10-07 16:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : DomeCTF (https://ctftime.org/team/199198)  
-    **添加日历** : https://ctftime.org/event/2081.ics  
-    
-??? Abstract "[The Final of Haruulzangi 2023](http://haruulzangi.mn/)"  
-    [![](https://ctftime.org/media/events/logo-hz.jpg){ width="200" align=left }](http://haruulzangi.mn/)  
-    **比赛名称** : [The Final of Haruulzangi 2023](http://haruulzangi.mn/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2023-10-05 19:30:00 - 2023-10-06 01:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
-    **添加日历** : https://ctftime.org/event/2142.ics  
     

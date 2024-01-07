@@ -85,6 +85,15 @@ comments: true
 
 ## 国际赛事
 
+??? Abstract "[UofTCTF 2024](https://ctf.uoftctf.org/)"  
+    [![](https://ctftime.org/media/events/ctf_logo_1.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
+    **比赛名称** : [UofTCTF 2024](https://ctf.uoftctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-14 01:00:00 - 2024-01-15 12:59:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
+    **添加日历** : https://ctftime.org/event/2219.ics  
+    
 ??? Abstract "[Insomni'hack teaser 2024](https://insomnihack.ch/contests/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://insomnihack.ch/contests/)  
     **比赛名称** : [Insomni'hack teaser 2024](https://insomnihack.ch/contests/)  
@@ -129,6 +138,24 @@ comments: true
     **比赛权重** : 74.41  
     **赛事主办** : TetCTF (https://ctftime.org/team/71781)  
     **添加日历** : https://ctftime.org/event/2212.ics  
+    
+??? Abstract "[0xL4ugh CTF 2024](https://ctf.0xL4ugh.com/)"  
+    [![](https://ctftime.org/media/events/logo_94.png){ width="200" align=left }](https://ctf.0xL4ugh.com/)  
+    **比赛名称** : [0xL4ugh CTF 2024](https://ctf.0xL4ugh.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-02 21:00:00 - 2024-02-03 21:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
+    **添加日历** : https://ctftime.org/event/2216.ics  
+    
+??? Abstract "[DiceCTF 2024 Quals](https://ctf.dicega.ng/)"  
+    [![](https://ctftime.org/media/events/dicectf_2_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
+    **比赛名称** : [DiceCTF 2024 Quals](https://ctf.dicega.ng/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-03 05:00:00 - 2024-02-05 05:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
+    **添加日历** : https://ctftime.org/event/2217.ics  
     
 ??? Abstract "[ESCAPE CTF Final](https://ctf.t3n4ci0us.kr/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.t3n4ci0us.kr/)  
@@ -183,6 +210,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Braeker (https://ctftime.org/team/274910)  
     **添加日历** : https://ctftime.org/event/2181.ics  
+    
+??? Abstract "[bi0sCTF 2024](https://ctf.bi0s.in/)"  
+    [![](https://ctftime.org/media/events/Untitled-removebg-preview_1.png){ width="200" align=left }](https://ctf.bi0s.in/)  
+    **比赛名称** : [bi0sCTF 2024](https://ctf.bi0s.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-24 20:00:00 - 2024-02-26 08:00:00 UTC+8  
+    **比赛权重** : 79.83  
+    **赛事主办** : bi0s (https://ctftime.org/team/662)  
+    **添加日历** : https://ctftime.org/event/2117.ics  
     
 ??? Abstract "[osu!gaming CTF 2024](https://osugamingctf.lol/)"  
     [![](https://ctftime.org/media/events/unknown_1.png){ width="200" align=left }](https://osugamingctf.lol/)  
