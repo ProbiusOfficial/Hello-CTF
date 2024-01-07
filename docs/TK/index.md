@@ -1,15 +1,74 @@
 ---
 comments: true
+glightbox: false
 hide:
-  - navigation
+  - footer
+  - toc
+  - edit
+  - view
 ---
-# CTF工具集合
 
-该页面基于项目【CTFtools-wiki】[https://github.com/ProbiusOfficial/CTFtools-wiki](https://github.com/ProbiusOfficial/CTFtools-wiki)
-若本项目对您有所帮助，还劳烦点个 Star ⭐ 支持一下~谢谢！！！
+<div class="grid" style="display: grid;grid-template-columns: 30% 69%" markdown>
 
-## 食用说明
-该合集将尽力做到对各个阶段的CTFer都有所帮助，您可以依照各方向环境配置文档在这里寻找各个工具的下载地址和使用方法。
+<div class="grid cards" markdown>
+
+-   :material-tooltip-edit:{ .lg .middle } __关于__
+
+    ---
+
+    针对CTF的工具合集,快速定位:
+    
+    - [Web](#)
+    - [MISC](#)
+    - [Cypto](#)
+    - [Reverse](#)
+    - [Pwn](#)
+
+</div>
+
+<div class="grid cards" style="display: grid; grid-template-columns: 1fr;" markdown>
+
+-   :material-star-shooting:{ .lg .middle } __推荐__
+
+    ---
+
+    :material-eye-check:{ .lg .middle } [LovelyMem](https://github.com/Tokeii0/LovelyMem) - 让取证像喝水一样简单@Tokeii0
+
+<div class="grid cards" style="display:grid; grid-template-columns: 49% 49% !important;" markdown>
+
+
+-   :material-file-link:{ .lg .middle } __Release__
+
+    ---
+
+    更新中...
+
+    [→ 所有版本](https://github.com/ProbiusOfficial/CTFtools-wiki)
+
+
+-   :material-flag-variant-minus:{ .lg .middle } __CTF-OS__
+
+    ---
+
+    更新中...
+
+    [→ 了解更多](https://github.com/ProbiusOfficial/CTF-OS)
+
+</div>
+
+</div>
+
+</div>
+
+<div class="grid cards" markdown>
+
+-   :simple-streamrunners:{ .lg .middle } __Activity__
+
+    ---
+    
+
+</div>
+
 
 ## 💻常用软件
 

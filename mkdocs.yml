@@ -279,6 +279,10 @@ nav:
     - 团队训练及CTF平台:
       - TB/train.md
 
+# - Set Challenges (.SC) 命题 Part ------------
+  - 命题:
+    - SC/index.md
+
 
 # - ExtensionEnhancement 扩展 (.EE) Part ------------
   - 扩展:
@@ -295,9 +299,6 @@ nav:
       # - 示例-经典web靶场封装: EE_Docker/usage_example.md
       # - Pwn题目的Docker化: EE_Docker/usage_pwn.md
       # - Crypto题目的Docker化: EE_Docker/usage_crypto.md
-    - b. &nbsp; &nbsp; CTF命题:
-      - EE_makeChallenge/index.md
-      - b.1. &nbsp; 如何优雅的完成CTF命题: EE/makeChallenge.md
 
 # - Archives 存档 (.AR) Part ----
   - Archives:
