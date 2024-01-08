@@ -63,6 +63,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[IrisCTF 2024](https://2024.irisc.tf/)"  
+    [![](https://ctftime.org/media/events/IrisCTF_Logo.png){ width="200" align=left }](https://2024.irisc.tf/)  
+    **比赛名称** : [IrisCTF 2024](https://2024.irisc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-06 08:00:00 - 2024-01-08 08:00:00 UTC+8  
+    **比赛权重** : 24.59  
+    **赛事主办** : IrisSec (https://ctftime.org/team/127034)  
+    **添加日历** : https://ctftime.org/event/2085.ics  
+    
 ??? Abstract "[Shaastra CTF '24](https://ctf.shaastractf2024.online/)"  
     [![](https://ctftime.org/media/events/Shaastralogo.png){ width="200" align=left }](https://ctf.shaastractf2024.online/)  
     **比赛名称** : [Shaastra CTF '24](https://ctf.shaastractf2024.online/)  
@@ -953,13 +962,4 @@ comments: true
     **比赛权重** : 34.09  
     **赛事主办** : Knightsec (https://ctftime.org/team/2500)  
     **添加日历** : https://ctftime.org/event/2079.ics  
-    
-??? Abstract "[Balsn CTF 2023](https://balsn.tw/)"  
-    [![](https://ctftime.org/media/events/Balsn_white.jpg){ width="200" align=left }](https://balsn.tw/)  
-    **比赛名称** : [Balsn CTF 2023](https://balsn.tw/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-07 10:00:00 - 2023-10-09 10:00:00 UTC+8  
-    **比赛权重** : 79.09  
-    **赛事主办** : Balsn (https://ctftime.org/team/16978)  
-    **添加日历** : https://ctftime.org/event/2056.ics  
     
