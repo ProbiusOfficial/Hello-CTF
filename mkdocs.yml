@@ -213,6 +213,8 @@ nav:
       - PHP反序列化基础: HC_Web/php_unser_base.md 
       - SQL注入: HC_Web/sql_injection.md
       - XSS攻击: HC_Web/xss.md
+      - 文件包含: HC_Web/include.md
+      - SSTI注入: HC_Web/ssti.md
 
     - Crypto | 密码学:
       - HC_Crypto/index.md
