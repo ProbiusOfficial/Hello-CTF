@@ -79,3 +79,21 @@ body {
   max-height: 25rem;
   white-space: pre-wrap;
 }
+
+@keyframes heart {
+  0%, 40%, 80%, 100% {
+    transform: scale(1);
+  }
+  20%, 60% {
+    transform: scale(1.15);
+  }
+}
+.heart {
+  animation: heart 1000ms infinite;
+}
+
+@media screen and (max-width: 1000px) {
+  .grid {
+      grid-template-columns: none !important;
+  }
+}
