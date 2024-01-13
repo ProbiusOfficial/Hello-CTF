@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅析Gitlab未授权密码重置(CVE-2023-7028)](https://y4tacker.github.io/2024/01/12/year/2024/1/%E6%B5%85%E6%9E%90Gitlab%E6%9C%AA%E6%8E%88%E6%9D%83%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE-CVE-2023-7028/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-01-12
+
+    6d1cc102401c745b93e78f65644d42e8acdebe888643ff48d6f7cfdb5192f763857bafd30ff3df8edacec48331a685443e2bfd9b2096789fbde94bf2019e9400ec1373012537fa79b1378fa55fed7d5b3b6a3f189751a07b5631681c0e1078e0eec125...
     ### [如何判断在IDEA中程序正在运行或正在Debug](https://y4tacker.github.io/2024/01/04/year/2024/1/%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E5%9C%A8IDEA%E4%B8%AD%E7%A8%8B%E5%BA%8F%E6%AD%A3%E5%9C%A8%E8%BF%90%E8%A1%8C%E6%88%96%E6%AD%A3%E5%9C%A8Debug/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-01-04
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2023-11-27
 
     重铸mininep荣光，我辈义不容辞战队信息战队名称：mininep本次比赛附件，WEB和Reverse就不放了，主要是 Pwn，MISC和Cry。因为超过了 Github 的上传限制，因此单独放 MISC 的音频题附件Pwnscanf会先读入一个序列，然后根据序列去调用功能。[ ：分配大小为 0x20 的堆块，并读入一个 int 数据。] ：输出堆块的 int 数据并 free 掉堆块并且马上将...
-    ### [某系统最新前台权限绕过分析](https://y4tacker.github.io/2023/11/26/year/2023/11/%E6%9F%90%E7%B3%BB%E7%BB%9F%E6%9C%80%E6%96%B0%E5%89%8D%E5%8F%B0%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E5%88%86%E6%9E%90/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-11-26
-
-    f8699a5360fe9f42f41b98c5cc3203c7cbe9b0e7b973590e7fd52b27b474d14b936d11c308462091084b3defadb8d998d3381b897b97ebf2923245170a43a3ab58393c3b23741eb3526a32145ff738802bd1881ac66ab453888465f4f27015647ba7da...
 
 </div>
