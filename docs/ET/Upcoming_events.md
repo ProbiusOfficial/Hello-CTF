@@ -64,15 +64,6 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[UofTCTF 2024](https://ctf.uoftctf.org/)"  
-    [![](https://ctftime.org/media/events/ctf_logo_1.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
-    **比赛名称** : [UofTCTF 2024](https://ctf.uoftctf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-01-14 01:00:00 - 2024-01-15 12:59:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
-    **添加日历** : https://ctftime.org/event/2219.ics  
-    
 ??? Abstract "[Insomni'hack teaser 2024](https://insomnihack.ch/contests/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://insomnihack.ch/contests/)  
     **比赛名称** : [Insomni'hack teaser 2024](https://insomnihack.ch/contests/)  
