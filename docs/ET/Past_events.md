@@ -95,6 +95,15 @@ comments: true
     **赛事主办** : ShaastraCTF2024 (https://ctftime.org/team/276568)  
     **添加日历** : https://ctftime.org/event/2220.ics  
     
+??? Abstract "[New Year CTF 2024](http://ctf-spcs.mf.grsu.by/)"  
+    [![](https://ctftime.org/media/events/logo_25_2.png){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
+    **比赛名称** : [New Year CTF 2024](http://ctf-spcs.mf.grsu.by/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-31 01:00:00 - 2024-01-15 05:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
+    **添加日历** : https://ctftime.org/event/2218.ics  
+    
 ??? Abstract "[ASIS CTF Finals 2023](https://asisctf.com/)"  
     [![](https://ctftime.org/media/events/asis_logo_512_2.png){ width="200" align=left }](https://asisctf.com/)  
     **比赛名称** : [ASIS CTF Finals 2023](https://asisctf.com/)  
@@ -967,13 +976,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
     **添加日历** : https://ctftime.org/event/2112.ics  
-    
-??? Abstract "[SunshineCTF 2023](https://sunshinectf.org/)"  
-    [![](https://ctftime.org/media/events/sctf_logo_final_23.png){ width="200" align=left }](https://sunshinectf.org/)  
-    **比赛名称** : [SunshineCTF 2023](https://sunshinectf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-07 22:00:00 - 2023-10-09 22:00:00 UTC+8  
-    **比赛权重** : 34.09  
-    **赛事主办** : Knightsec (https://ctftime.org/team/2500)  
-    **添加日历** : https://ctftime.org/event/2079.ics  
     

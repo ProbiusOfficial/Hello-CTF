@@ -40,15 +40,6 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Abstract "[New Year CTF 2024](http://ctf-spcs.mf.grsu.by/)"  
-    [![](https://ctftime.org/media/events/logo_25_2.png){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
-    **比赛名称** : [New Year CTF 2024](http://ctf-spcs.mf.grsu.by/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-31 01:00:00 - 2024-01-15 05:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
-    **添加日历** : https://ctftime.org/event/2218.ics  
-    
 ??? Abstract "[UofTCTF 2024](https://ctf.uoftctf.org/)"  
     [![](https://ctftime.org/media/events/ctf_logo_1.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
     **比赛名称** : [UofTCTF 2024](https://ctf.uoftctf.org/)  
