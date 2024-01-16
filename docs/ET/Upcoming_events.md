@@ -40,6 +40,13 @@ comments: true
     **比赛时间** : 2024年01月26日 19:00 - 2024年01月28日 19:00  
     **其他说明** : Discord: https://discord.com/invite/8GNqypNaxB  
     
+??? Abstract "NSSCTF Round#17 Basic"  
+    **比赛名称** : [NSSCTF Round#17 Basic](https://www.nssctf.cn/contest/)  
+    **比赛类型** : 团队赛|1-3人  
+    **报名时间** : 2024年01月16日 00:00 - 2024年01月28日 17:30  
+    **比赛时间** : 2024年01月28日 14:00 - 2024年01月28日 17:30  
+    **其他说明** : QQ群：521330139  
+    
 ??? Abstract "Real World CTF 6th 体验赛"  
     **比赛名称** : [Real World CTF 6th 体验赛](https://be-a-rwctfer.realworldctf.com/)  
     **比赛类型** : 团队赛 | 邀请制  
