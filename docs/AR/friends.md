@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [LLVM入门](https://xia0ji233.github.io/2024/01/16/LLVM1/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-01-16
+
+    这个寒假准备学习LLVM，作为奆型C++项目，还是很有学习价值的，且在二进制逆向中经常被使用到，因此非常有学习的必要，这里我准备在 Windows 上编译 LLVM。此时 LLVM 的大版本号在 17。多的概念就不介绍了，因为我自己也还没有完全理解qwq编译首先，作为学习，我们必须要生成一个对自己友好的编译环境，方便自己调试，我们不仅仅是去使用它，而是要去理解+分析，方便我们的二次开发和插件的编写...
     ### [浅析Gitlab未授权密码重置(CVE-2023-7028)](https://y4tacker.github.io/2024/01/12/year/2024/1/%E6%B5%85%E6%9E%90Gitlab%E6%9C%AA%E6%8E%88%E6%9D%83%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE-CVE-2023-7028/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-01-12
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2023-11-29
 
     b911718fdd890810916fcf22cb8016ca11ae7d872d624941bd9b20d0cf7e4036a45e816cf5955164cc4e0d7bc4e06277d1f41e412de1243b7603f6b8db578947e40f8bad6233f702a2ae224c03f173d620410ea4abfdb0fba73dbe0f45d4327f2d262b...
-    ### [HITCTF2023题解](https://xia0ji233.github.io/2023/11/27/HITCTF2023/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2023-11-27
-
-    重铸mininep荣光，我辈义不容辞战队信息战队名称：mininep本次比赛附件，WEB和Reverse就不放了，主要是 Pwn，MISC和Cry。因为超过了 Github 的上传限制，因此单独放 MISC 的音频题附件Pwnscanf会先读入一个序列，然后根据序列去调用功能。[ ：分配大小为 0x20 的堆块，并读入一个 int 数据。] ：输出堆块的 int 数据并 free 掉堆块并且马上将...
 
 </div>
