@@ -78,9 +78,9 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[Insomni'hack teaser 2024](https://insomnihack.ch/contests/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://insomnihack.ch/contests/)  
-    **比赛名称** : [Insomni'hack teaser 2024](https://insomnihack.ch/contests/)  
+??? Abstract "[Insomni'hack teaser 2024](https://teaser.insomnihack.ch/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://teaser.insomnihack.ch/)  
+    **比赛名称** : [Insomni'hack teaser 2024](https://teaser.insomnihack.ch/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-01-20 17:00:00 - 2024-01-21 17:00:00 UTC+8  
     **比赛权重** : 32.00  
@@ -123,15 +123,6 @@ comments: true
     **赛事主办** : TetCTF (https://ctftime.org/team/71781)  
     **添加日历** : https://ctftime.org/event/2212.ics  
     
-??? Abstract "[0xL4ugh CTF 2024](https://ctf.0xL4ugh.com/)"  
-    [![](https://ctftime.org/media/events/logo_94.png){ width="200" align=left }](https://ctf.0xL4ugh.com/)  
-    **比赛名称** : [0xL4ugh CTF 2024](https://ctf.0xL4ugh.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-02-02 21:00:00 - 2024-02-03 21:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
-    **添加日历** : https://ctftime.org/event/2216.ics  
-    
 ??? Abstract "[DiceCTF 2024 Quals](https://ctf.dicega.ng/)"  
     [![](https://ctftime.org/media/events/dicectf_2_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
     **比赛名称** : [DiceCTF 2024 Quals](https://ctf.dicega.ng/)  
@@ -158,6 +149,15 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
     **添加日历** : https://ctftime.org/event/2208.ics  
+    
+??? Abstract "[0xL4ugh CTF 2024](https://ctf.0xL4ugh.com/)"  
+    [![](https://ctftime.org/media/events/logo_94.png){ width="200" align=left }](https://ctf.0xL4ugh.com/)  
+    **比赛名称** : [0xL4ugh CTF 2024](https://ctf.0xL4ugh.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-09 21:00:00 - 2024-02-10 21:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
+    **添加日历** : https://ctftime.org/event/2216.ics  
     
 ??? Abstract "[Black Cell SecOps 2024 - Online Blue Teaming Jeopardy CTF](https://blackcell.io/secops-24/#ctf)"  
     [![](https://ctftime.org/media/events/SecOps2024_logo.png){ width="200" align=left }](https://blackcell.io/secops-24/#ctf)  
