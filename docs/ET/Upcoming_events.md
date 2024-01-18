@@ -128,7 +128,7 @@ comments: true
     **比赛名称** : [DiceCTF 2024 Quals](https://ctf.dicega.ng/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-02-03 05:00:00 - 2024-02-05 05:00:00 UTC+8  
-    **比赛权重** : 57.75  
+    **比赛权重** : 54.40  
     **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
     **添加日历** : https://ctftime.org/event/2217.ics  
     
