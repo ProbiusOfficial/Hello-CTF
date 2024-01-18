@@ -12,13 +12,6 @@ comments: true
     **比赛时间** : 2023年11月30日 00:00 - 2024年01月31日 00:00  
     **其他说明** : QQ群：751273347  比赛时间待定  
     
-??? Abstract "第三届WEBSHELL伏魔挑战赛"  
-    **比赛名称** : [第三届WEBSHELL伏魔挑战赛](https://mp.weixin.qq.com/s/e8OE3rXyIqPkHrOHBDL5Kw)  
-    **比赛类型** : 个人赛  
-    **报名时间** : 2023年12月29日 10:00 - 2024年01月17日 10:00  
-    **比赛时间** : 2024年01月10日 10:00 - 2024年01月17日 10:00  
-    **其他说明** :   
-    
 
 ## 国际赛事
 
@@ -39,13 +32,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
-    
-??? Abstract "[New Year CTF 2024](http://ctf-spcs.mf.grsu.by/)"  
-    [![](https://ctftime.org/media/events/logo_25_2.png){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
-    **比赛名称** : [New Year CTF 2024](http://ctf-spcs.mf.grsu.by/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-31 01:00:00 - 2024-01-15 05:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
-    **添加日历** : https://ctftime.org/event/2218.ics  
     

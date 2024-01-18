@@ -19,6 +19,13 @@ comments: true
     **比赛时间** : 2024年02月16日 09:00 - 2024年02月18日 18:00  
     **其他说明** : 比赛QQ群：737732413  本次比赛采用CTF赛制，题目难度两级分化，无论是刚刚入门的萌新还是轻车熟路的大神，都可以快速找到属于你的比赛乐趣哦~  
     
+??? Abstract "zkCTF"  
+    **比赛名称** : [zkCTF](https://zkctf.scalebit.xyz)  
+    **比赛类型** : 个人赛 | WEB3  
+    **报名时间** : 2024年01月16日 00:00 - 2024年02月05日 09:00  
+    **比赛时间** : 2024年02月03日 09:00 - 2024年02月05日 09:00  
+    **其他说明** : TG官方群：https://t.me/ScaleBitAudit  
+    
 ??? Abstract "第二届N1CTF Junior"  
     **比赛名称** : [第二届N1CTF Junior](https://ctf.junior.nu1l.com/)  
     **比赛类型** : 个人赛  
@@ -39,6 +46,13 @@ comments: true
     **报名时间** : 2023年12月28日 16:30 - 2024年01月28日 19:00  
     **比赛时间** : 2024年01月26日 19:00 - 2024年01月28日 19:00  
     **其他说明** : Discord: https://discord.com/invite/8GNqypNaxB  
+    
+??? Abstract "NSSCTF Round#17 Basic"  
+    **比赛名称** : [NSSCTF Round#17 Basic](https://www.nssctf.cn/contest/)  
+    **比赛类型** : 团队赛|1-3人  
+    **报名时间** : 2024年01月16日 00:00 - 2024年01月28日 17:30  
+    **比赛时间** : 2024年01月28日 14:00 - 2024年01月28日 17:30  
+    **其他说明** : QQ群：521330139  
     
 ??? Abstract "Real World CTF 6th 体验赛"  
     **比赛名称** : [Real World CTF 6th 体验赛](https://be-a-rwctfer.realworldctf.com/)  
@@ -61,42 +75,12 @@ comments: true
     **比赛时间** : 2024年01月20日 10:00 - 2024年01月22日 17:00  
     **其他说明** : 赛事QQ群：277328440  
     
-??? Abstract "第七届强网杯全国网络安全挑战赛决赛"  
-    **比赛名称** : [第七届强网杯全国网络安全挑战赛决赛](https://qiangwangbei.com/)  
-    **比赛类型** : 团队赛|1-4人  
-    **报名时间** : 2023年05月01日 00:00 - 2023年12月09日 00:00  
-    **比赛时间** : 2024年01月13日 09:00 - 2024年01月14日 16:00  
-    **其他说明** : QQ群：723023839  
-    
-??? Abstract "movectf 2024"  
-    **比赛名称** : [movectf 2024](https://movectf2024.movebit.xyz/)  
-    **比赛类型** : 个人赛 | WEB3  
-    **报名时间** : 2023年12月25日 00:00 - 2024年01月14日 09:00  
-    **比赛时间** : 2024年01月12日 09:00 - 2024年01月14日 09:00  
-    **其他说明** : 旗舰级 Move 安全竞赛，旨在吸引更多对   Move 语言和 Move 生态系统感兴趣的安全专业人士  和开发人员。  QQ学习交流群：163569170  
-    
-??? Abstract " NSSCTF Round#16 Basic"  
-    **比赛名称** : [ NSSCTF Round#16 Basic](https://www.nssctf.cn/contest)  
-    **比赛类型** : 团队赛|1-3人  
-    **报名时间** : 2024年01月04日 00:00 - 2024年01月13日 00:00  
-    **比赛时间** : 2024年01月13日 14:00 - 2024年01月13日 17:30  
-    **其他说明** : QQ群：521330139  
-    
 
 ## 国际赛事
 
-??? Abstract "[UofTCTF 2024](https://ctf.uoftctf.org/)"  
-    [![](https://ctftime.org/media/events/ctf_logo_1.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
-    **比赛名称** : [UofTCTF 2024](https://ctf.uoftctf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-01-14 01:00:00 - 2024-01-15 12:59:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
-    **添加日历** : https://ctftime.org/event/2219.ics  
-    
-??? Abstract "[Insomni'hack teaser 2024](https://insomnihack.ch/contests/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://insomnihack.ch/contests/)  
-    **比赛名称** : [Insomni'hack teaser 2024](https://insomnihack.ch/contests/)  
+??? Abstract "[Insomni'hack teaser 2024](https://teaser.insomnihack.ch/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://teaser.insomnihack.ch/)  
+    **比赛名称** : [Insomni'hack teaser 2024](https://teaser.insomnihack.ch/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-01-20 17:00:00 - 2024-01-21 17:00:00 UTC+8  
     **比赛权重** : 32.00  
@@ -139,21 +123,12 @@ comments: true
     **赛事主办** : TetCTF (https://ctftime.org/team/71781)  
     **添加日历** : https://ctftime.org/event/2212.ics  
     
-??? Abstract "[0xL4ugh CTF 2024](https://ctf.0xL4ugh.com/)"  
-    [![](https://ctftime.org/media/events/logo_94.png){ width="200" align=left }](https://ctf.0xL4ugh.com/)  
-    **比赛名称** : [0xL4ugh CTF 2024](https://ctf.0xL4ugh.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-02-02 21:00:00 - 2024-02-03 21:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
-    **添加日历** : https://ctftime.org/event/2216.ics  
-    
 ??? Abstract "[DiceCTF 2024 Quals](https://ctf.dicega.ng/)"  
     [![](https://ctftime.org/media/events/dicectf_2_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
     **比赛名称** : [DiceCTF 2024 Quals](https://ctf.dicega.ng/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-02-03 05:00:00 - 2024-02-05 05:00:00 UTC+8  
-    **比赛权重** : 57.75  
+    **比赛权重** : 54.40  
     **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
     **添加日历** : https://ctftime.org/event/2217.ics  
     
@@ -174,6 +149,15 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
     **添加日历** : https://ctftime.org/event/2208.ics  
+    
+??? Abstract "[0xL4ugh CTF 2024](https://ctf.0xL4ugh.com/)"  
+    [![](https://ctftime.org/media/events/logo_94.png){ width="200" align=left }](https://ctf.0xL4ugh.com/)  
+    **比赛名称** : [0xL4ugh CTF 2024](https://ctf.0xL4ugh.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-09 21:00:00 - 2024-02-10 21:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
+    **添加日历** : https://ctftime.org/event/2216.ics  
     
 ??? Abstract "[Black Cell SecOps 2024 - Online Blue Teaming Jeopardy CTF](https://blackcell.io/secops-24/#ctf)"  
     [![](https://ctftime.org/media/events/SecOps2024_logo.png){ width="200" align=left }](https://blackcell.io/secops-24/#ctf)  

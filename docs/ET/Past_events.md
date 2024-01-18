@@ -5,6 +5,34 @@ comments: true
 
 ## 国内赛事
 
+??? Abstract "第三届WEBSHELL伏魔挑战赛"  
+    **比赛名称** : [第三届WEBSHELL伏魔挑战赛](https://mp.weixin.qq.com/s/e8OE3rXyIqPkHrOHBDL5Kw)  
+    **比赛类型** : 个人赛  
+    **报名时间** : 2023年12月29日 10:00 - 2024年01月17日 10:00  
+    **比赛时间** : 2024年01月12日 14:00 - 2024年01月17日 10:00  
+    **其他说明** :   
+    
+??? Abstract "第七届强网杯全国网络安全挑战赛决赛"  
+    **比赛名称** : [第七届强网杯全国网络安全挑战赛决赛](https://qiangwangbei.com/)  
+    **比赛类型** : 团队赛|1-4人  
+    **报名时间** : 2023年05月01日 00:00 - 2023年12月09日 00:00  
+    **比赛时间** : 2024年01月13日 09:00 - 2024年01月14日 16:00  
+    **其他说明** : QQ群：723023839  
+    
+??? Abstract "movectf 2024"  
+    **比赛名称** : [movectf 2024](https://movectf2024.movebit.xyz/)  
+    **比赛类型** : 个人赛 | WEB3  
+    **报名时间** : 2023年12月25日 00:00 - 2024年01月14日 09:00  
+    **比赛时间** : 2024年01月12日 09:00 - 2024年01月14日 09:00  
+    **其他说明** : 旗舰级 Move 安全竞赛，旨在吸引更多对   Move 语言和 Move 生态系统感兴趣的安全专业人士  和开发人员。  QQ学习交流群：163569170  
+    
+??? Abstract " NSSCTF Round#16 Basic"  
+    **比赛名称** : [ NSSCTF Round#16 Basic](https://www.nssctf.cn/contest)  
+    **比赛类型** : 团队赛|1-3人  
+    **报名时间** : 2024年01月03日 00:00 - 2024年01月13日 17:40  
+    **比赛时间** : 2024年01月13日 14:00 - 2024年01月13日 17:40  
+    **其他说明** : QQ群：521330139  
+    
 ??? Abstract "“复兴杯”2023年第四届大学生网络安全精英赛初赛"  
     **比赛名称** : [“复兴杯”2023年第四届大学生网络安全精英赛初赛](https://www.nisp.org.cn/wads)  
     **比赛类型** : 个人赛  
@@ -40,22 +68,17 @@ comments: true
     **比赛时间** : 2023年12月23日 10:00 - 2023年12月23日 21:00  
     **其他说明** : QQ群：367176501  745819418   
     
-??? Abstract "第七届强网杯全国网络安全挑战赛初赛"  
-    **比赛名称** : [第七届强网杯全国网络安全挑战赛初赛](https://qiangwangbei.com/)  
-    **比赛类型** : 团队赛|1-10人  
-    **报名时间** : 2023年05月01日 00:00 - 2023年12月09日 00:00  
-    **比赛时间** : 2023年12月16日 09:00 - 2023年12月17日 18:00  
-    **其他说明** : QQ群：723023839  
-    
-??? Abstract "首届基地“楚慧杯”网络空间安全实践能力竞赛"  
-    **比赛名称** : [首届基地“楚慧杯”网络空间安全实践能力竞赛](https://chuhuibei.dasctf.com)  
-    **比赛类型** : 团队赛|1-3人  
-    **报名时间** : 2023年12月01日 00:00 - 2023年12月11日 00:00  
-    **比赛时间** : 2023年12月16日 10:00 - 2023年12月17日 18:00  
-    **其他说明** : QQ咨询群号：640289117  
-    
 
 ## 国际赛事
+??? Abstract "[UofTCTF 2024](https://ctf.uoftctf.org/)"  
+    [![](https://ctftime.org/media/events/ctf_logo_1.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
+    **比赛名称** : [UofTCTF 2024](https://ctf.uoftctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-14 01:00:00 - 2024-01-15 12:59:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
+    **添加日历** : https://ctftime.org/event/2219.ics  
+    
 ??? Abstract "[IrisCTF 2024](https://2024.irisc.tf/)"  
     [![](https://ctftime.org/media/events/IrisCTF_Logo.png){ width="200" align=left }](https://2024.irisc.tf/)  
     **比赛名称** : [IrisCTF 2024](https://2024.irisc.tf/)  
@@ -73,6 +96,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : ShaastraCTF2024 (https://ctftime.org/team/276568)  
     **添加日历** : https://ctftime.org/event/2220.ics  
+    
+??? Abstract "[New Year CTF 2024](http://ctf-spcs.mf.grsu.by/)"  
+    [![](https://ctftime.org/media/events/logo_25_2.png){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
+    **比赛名称** : [New Year CTF 2024](http://ctf-spcs.mf.grsu.by/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-31 01:00:00 - 2024-01-15 05:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
+    **添加日历** : https://ctftime.org/event/2218.ics  
     
 ??? Abstract "[ASIS CTF Finals 2023](https://asisctf.com/)"  
     [![](https://ctftime.org/media/events/asis_logo_512_2.png){ width="200" align=left }](https://asisctf.com/)  
@@ -937,22 +969,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Crispr_iiitn (https://ctftime.org/team/270138)  
     **添加日历** : https://ctftime.org/event/2125.ics  
-    
-??? Abstract "[BlackHat MEA CTF Qualification 2023](https://blackhatmea.com/capture-the-flag)"  
-    [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
-    **比赛名称** : [BlackHat MEA CTF Qualification 2023](https://blackhatmea.com/capture-the-flag)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-08 21:00:00 - 2023-10-09 21:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
-    **添加日历** : https://ctftime.org/event/2112.ics  
-    
-??? Abstract "[SunshineCTF 2023](https://sunshinectf.org/)"  
-    [![](https://ctftime.org/media/events/sctf_logo_final_23.png){ width="200" align=left }](https://sunshinectf.org/)  
-    **比赛名称** : [SunshineCTF 2023](https://sunshinectf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-07 22:00:00 - 2023-10-09 22:00:00 UTC+8  
-    **比赛权重** : 34.09  
-    **赛事主办** : Knightsec (https://ctftime.org/team/2500)  
-    **添加日历** : https://ctftime.org/event/2079.ics  
     
