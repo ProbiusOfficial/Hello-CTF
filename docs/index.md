@@ -1,5 +1,6 @@
 ---
 # ishome: true
+title: 
 comments: true
 glightbox: false
 hide:
@@ -21,8 +22,6 @@ hide:
             <div class="grid cards">
                 <div class="carousel">
                     <div class="carousel-container">
-                        <a href="/blog/2023/12/22/movectf2024-激情预热中/" target="_blank"><img
-                                src="./assets/banner-MoveCTF.png" /></a>
                         <a href="../HC_Start/" target="_blank"><img src="./assets/banner-quickstart.png" /></a>
                         <a href="../HC_AI/" target="_blank"><img src="./assets/banner-update.png" /></a>
                         <a href="https://github.com/CTF-Archives" target="_blank"><img

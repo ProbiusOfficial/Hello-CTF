@@ -1,1 +1,1 @@
-# 探姬のBlog
+# Hello-CTF News
