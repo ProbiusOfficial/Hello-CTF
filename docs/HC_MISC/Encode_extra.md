@@ -277,7 +277,7 @@ idea：https://www.geeksforgeeks.org/dna-protein-python-3/
 
 #### 二维码
 
-> **二维码** 也称为 **二维条码**、**行动条码**，是指在[一维条码](https://zh.wikipedia.org/wiki/一维条码)的基础上扩展出另一[维](https://zh.wikipedia.org/wiki/维度)具有可读性的条码，使用黑白矩形图案表示[二进制](https://zh.wikipedia.org/wiki/二进制)数据，被设备扫描后可获取其中所包含的信息。二维码的种类很多，不同的机构开发出的二维码具有不同的结构以及编写、读取方法。常见的二维码有：
+> **二维码** 也称为 **二维条码**、**行动条码**，是指在[一维条码](https://zh.wikipedia.org/wiki/一维条码)的基础上扩展出另一[维](https://zh.wikipedia.org/wiki/维度)具有可读性的条码，大多数使用黑白矩形图案表示[二进制](https://zh.wikipedia.org/wiki/二进制)数据，也有一些使用其他形状（[MaxiCode]()），或在黑白色二维码基础上使用颜色作为第三维度的种类（[JAB Code]()），被设备扫描后可获取其中所包含的信息。二维码的种类很多，不同的机构开发出的二维码具有不同的结构以及编写、读取方法。常见的二维码有：
 >
 > - [PDF417码](https://zh.wikipedia.org/wiki/PDF417码)
 > - [QR码](https://zh.wikipedia.org/wiki/QR码)
