@@ -71,24 +71,6 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[Mapna CTF 2024](https://mapnactf.com/)"  
-    [![](https://ctftime.org/media/events/MAPNA.jpg){ width="200" align=left }](https://mapnactf.com/)  
-    **比赛名称** : [Mapna CTF 2024](https://mapnactf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-01-20 23:00:00 - 2024-01-21 23:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-    **添加日历** : https://ctftime.org/event/2205.ics  
-    
-??? Abstract "[KnightCTF 2024](https://knightctf.com/)"  
-    [![](https://ctftime.org/media/events/KnightCTF.png){ width="200" align=left }](https://knightctf.com/)  
-    **比赛名称** : [KnightCTF 2024](https://knightctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-01-20 23:00:00 - 2024-01-21 23:00:00 UTC+8  
-    **比赛权重** : 6.65  
-    **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
-    **添加日历** : https://ctftime.org/event/2209.ics  
-    
 ??? Abstract "[Real World CTF 6th](https://realworldctf.com/)"  
     [![](https://ctftime.org/media/events/rwctf.png){ width="200" align=left }](https://realworldctf.com/)  
     **比赛名称** : [Real World CTF 6th](https://realworldctf.com/)  
@@ -170,9 +152,9 @@ comments: true
     **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
     **添加日历** : https://ctftime.org/event/2102.ics  
     
-??? Abstract "[BraekerCTF](https://braekerctf.butsers.nl/)"  
-    [![](https://ctftime.org/media/events/AI_Robot4.png){ width="200" align=left }](https://braekerctf.butsers.nl/)  
-    **比赛名称** : [BraekerCTF](https://braekerctf.butsers.nl/)  
+??? Abstract "[BraekerCTF](https://braekerctf.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/AI_Robot4.png){ width="200" align=left }](https://braekerctf.ctfd.io/)  
+    **比赛名称** : [BraekerCTF](https://braekerctf.ctfd.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-02-23 20:00:00 - 2024-02-25 00:00:00 UTC+8  
     **比赛权重** : 0.00  
