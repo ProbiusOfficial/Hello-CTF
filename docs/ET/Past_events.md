@@ -70,6 +70,24 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[Mapna CTF 2024](https://mapnactf.com/)"  
+    [![](https://ctftime.org/media/events/MAPNA.jpg){ width="200" align=left }](https://mapnactf.com/)  
+    **比赛名称** : [Mapna CTF 2024](https://mapnactf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-20 23:00:00 - 2024-01-21 23:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+    **添加日历** : https://ctftime.org/event/2205.ics  
+    
+??? Abstract "[KnightCTF 2024](https://knightctf.com/)"  
+    [![](https://ctftime.org/media/events/KnightCTF.png){ width="200" align=left }](https://knightctf.com/)  
+    **比赛名称** : [KnightCTF 2024](https://knightctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-20 23:00:00 - 2024-01-21 23:00:00 UTC+8  
+    **比赛权重** : 6.65  
+    **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
+    **添加日历** : https://ctftime.org/event/2209.ics  
+    
 ??? Abstract "[Insomni'hack teaser 2024](https://teaser.insomnihack.ch/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://teaser.insomnihack.ch/)  
     **比赛名称** : [Insomni'hack teaser 2024](https://teaser.insomnihack.ch/)  
@@ -951,22 +969,4 @@ comments: true
     **比赛权重** : 23.12  
     **赛事主办** : Keen Minds (https://ctftime.org/team/48972)  
     **添加日历** : https://ctftime.org/event/2086.ics  
-    
-??? Abstract "[TCP1P CTF 2023: First Step Beyond Nusantara](https://ctf.tcp1p.com/)"  
-    [![](https://ctftime.org/media/events/TCP1P_Logo.png){ width="200" align=left }](https://ctf.tcp1p.com/)  
-    **比赛名称** : [TCP1P CTF 2023: First Step Beyond Nusantara](https://ctf.tcp1p.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-13 21:00:00 - 2023-10-15 21:00:00 UTC+8  
-    **比赛权重** : 24.85  
-    **赛事主办** : TCP1P (https://ctftime.org/team/187248)  
-    **添加日历** : https://ctftime.org/event/2001.ics  
-    
-??? Abstract "[Hackvens 2023](http://hackvens.fr/)"  
-    [![](https://ctftime.org/media/events/hackvens_avec_baseline.png){ width="200" align=left }](http://hackvens.fr/)  
-    **比赛名称** : [Hackvens 2023](http://hackvens.fr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-13 17:00:00 - 2023-10-14 14:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Hackvens (https://ctftime.org/team/194092)  
-    **添加日历** : https://ctftime.org/event/2010.ics  
     
