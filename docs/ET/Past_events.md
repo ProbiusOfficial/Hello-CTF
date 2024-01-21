@@ -70,6 +70,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[Insomni'hack teaser 2024](https://teaser.insomnihack.ch/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://teaser.insomnihack.ch/)  
+    **比赛名称** : [Insomni'hack teaser 2024](https://teaser.insomnihack.ch/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-20 17:00:00 - 2024-01-21 17:00:00 UTC+8  
+    **比赛权重** : 32.00  
+    **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
+    **添加日历** : https://ctftime.org/event/2139.ics  
+    
 ??? Abstract "[UofTCTF 2024](https://ctf.uoftctf.org/)"  
     [![](https://ctftime.org/media/events/ctf_logo_1.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
     **比赛名称** : [UofTCTF 2024](https://ctf.uoftctf.org/)  
@@ -960,13 +969,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Hackvens (https://ctftime.org/team/194092)  
     **添加日历** : https://ctftime.org/event/2010.ics  
-    
-??? Abstract "[EngimaXplore 2023](https://enigmaxplore.ctfd.io/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://enigmaxplore.ctfd.io/)  
-    **比赛名称** : [EngimaXplore 2023](https://enigmaxplore.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-13 14:30:00 - 2023-10-14 14:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Crispr_iiitn (https://ctftime.org/team/270138)  
-    **添加日历** : https://ctftime.org/event/2125.ics  
     
