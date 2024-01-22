@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [LLVM——LLVMHello](https://xia0ji233.github.io/2024/01/21/LLVM2/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-01-21
+
+    学习一下LLVM的hello world。LLVM简介简单编译原理学过编译原理的人都知道（然而我没学过），编译过程主要可以划分为前端与后端：前端（Front End）会把高级语言源代码翻译成中间表示（IR）。后端（Back End）将IR翻译成目标平台的机器码。对于现在大部分编译器来说，中间表示即汇编语言，并且前端与后端之间强耦合，不会给你接口操作 IR。LLVM 提供了 LLVM IR 这样的中...
     ### [LLVM入门](https://xia0ji233.github.io/2024/01/16/LLVM1/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2024-01-16
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2023-11-30
 
     Apache ActiveMQ Jolokia远程代码执行不依赖JDK打法想着最近连写了几篇加密博客有点对不起看我博客的粉丝了，今天抽空简单分享一个姿势影响版本大概测了一下Apache ActiveMQ 5.16.x系列无log4j2的mbeanApache ActiveMQ 5.17.x系列漏洞版本受影响初探从网上已公开的打法可以知道使用jdk.management.jfr:type=Fligh...
-    ### [Apache ActiveMQ Jolokia远程代码执行(CVE-2022-41678)简析及绕Waf技法](https://y4tacker.github.io/2023/11/29/year/2023/11/Apache-ActiveMQ-Jolokia%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C-CVE-2022-41678-%E7%AE%80%E6%9E%90%E5%8F%8A%E7%BB%95Waf%E6%8A%80%E6%B3%95/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-11-29
-
-    b911718fdd890810916fcf22cb8016ca11ae7d872d624941bd9b20d0cf7e4036a45e816cf5955164cc4e0d7bc4e06277d1f41e412de1243b7603f6b8db578947e40f8bad6233f702a2ae224c03f173d620410ea4abfdb0fba73dbe0f45d4327f2d262b...
 
 </div>
