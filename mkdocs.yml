@@ -224,6 +224,10 @@ nav:
 
     - Reverse | 逆向工程:
       - HC_Reverse/index.md
+      - 1. &nbsp; 引导篇：灵魂F&Q: HC_Reverse/引导篇：灵魂F&Q.md
+      - 2. &nbsp; Quick Start：可执行文件: HC_Reverse/Quick Start：可执行文件.md
+      - 3. &nbsp; Quick Start：ASM汇编: HC_Reverse/Quick Start：ASM汇编.md
+      - 4. &nbsp; Quick Start：Example problems: HC_Reverse/Quick Start：Example problems.md
 
     - Pwn | 二进制安全:
       - HC_PWN/index.md
