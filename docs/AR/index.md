@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [LLVM——简单指令混淆](https://xia0ji233.github.io/2024/01/22/LLVM3/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-01-22
+
+    通过LLVM简单学习一下指令混淆。注册Pass添加文件以LLVMHello项目为起点，在上面做改动，首先找到 llvm-project/llvm/lib/transforms/hello 文件夹，添加一个头文件和一个 CPP 源文件，并向 Cmakelists 添加 cpp 源文件，重新生成就可以发现源文件出现在了项目中。我们让 Hello.cpp 仅仅注册 pass 即可，要写新的 pass 最...
     ### [LLVM——LLVMHello](https://xia0ji233.github.io/2024/01/21/LLVM2/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2024-01-21
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2023-12-03
 
     这次学习Linux进程调试相关的知识。调试对于二进制选手来说，调试的重要性不言而喻，对于Linux来说，基本就是 gdb 一家独大，其余插件只是给gdb起了锦上添花的一些作用罢了，那么下面就来学习一下 gdb 的内核。ptrace在Linux调试程序，离不开一个系统调用就是 ptrace（%rax=101,%eax=26），来看看这个函数原型：12long ptrace(enum __ptrace...
-    ### [Apache ActiveMQ Jolokia远程代码执行不依赖JDK打法](https://y4tacker.github.io/2023/11/30/year/2023/11/%E6%9F%90%E7%B3%BB%E7%BB%9F%E6%9C%80%E6%96%B0%E5%89%8D%E5%8F%B0RCE%E5%88%86%E6%9E%90/Apache-ActiveMQ-Jolokia%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E4%B8%8D%E4%BE%9D%E8%B5%96JDK%E6%89%93%E6%B3%95/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-11-30
-
-    Apache ActiveMQ Jolokia远程代码执行不依赖JDK打法想着最近连写了几篇加密博客有点对不起看我博客的粉丝了，今天抽空简单分享一个姿势影响版本大概测了一下Apache ActiveMQ 5.16.x系列无log4j2的mbeanApache ActiveMQ 5.17.x系列漏洞版本受影响初探从网上已公开的打法可以知道使用jdk.management.jfr:type=Fligh...
 
 </div>
