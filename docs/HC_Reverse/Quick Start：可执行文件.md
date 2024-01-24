@@ -30,7 +30,7 @@ ELF 文件标准里把系统中采用 ELF 格式的文件分为以下四种：
 
 1、**ELF 文件头** ( **ELF Header** )，位于文件的开始位置，它的主要目的是定位文件的其他部分。它包含了整个文件的基本属性：如文件大小、版本、目标机型、程序入口等。
 
-```c++
+```c++ linenums="1"
 typedef struct elf32_hdr
 {
 	  unsigned char	e_ident [EI_NIDENT];	/* Magic number and other info */
