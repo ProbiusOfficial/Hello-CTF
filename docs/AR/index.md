@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [LLVM——Pass模块的调试](https://xia0ji233.github.io/2024/01/23/LLVM4/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-01-23
+
+    记录一下动调dll项目的过程调试DLL的问题正常试过一遍用 clang 作为启动项目或者是用 dll 作为启动项目，但是都不能成功断下来，这里我说一下我所使用的方法。首先在项目属性中开启调试符号项目->属性->配置属性->链接器->调试->生成调试信息选择为生成调试信息（/DEBUG）然后把项目->属性->配置属性->C/C++ ->常规 ->调试信息格式 ，设置为程序数据库（/ZI）打开这两个选...
     ### [LLVM——简单指令混淆](https://xia0ji233.github.io/2024/01/22/LLVM3/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2024-01-22
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2023-12-08
 
     e1bd3e68fe0e95aad543147235f13aa8c07db101f08238b29c49348e526ca2c395ff16b5184fe4ee67b8dd1840f69936917a685390975ecb78405622c312487d5e6b45d97870e169a38f37bd7a2e95cc5b864202dba1787e366b00f3973f1aa3686ad8...
-    ### [Linux ptrace](https://xia0ji233.github.io/2023/12/03/Ptrace/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2023-12-03
-
-    这次学习Linux进程调试相关的知识。调试对于二进制选手来说，调试的重要性不言而喻，对于Linux来说，基本就是 gdb 一家独大，其余插件只是给gdb起了锦上添花的一些作用罢了，那么下面就来学习一下 gdb 的内核。ptrace在Linux调试程序，离不开一个系统调用就是 ptrace（%rax=101,%eax=26），来看看这个函数原型：12long ptrace(enum __ptrace...
 
 </div>
