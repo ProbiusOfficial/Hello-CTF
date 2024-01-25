@@ -49,6 +49,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[4N0NYM0US3 2024](http://ctf.appinprogress.com/)"  
+    [![](https://ctftime.org){ width="200" align=left }](http://ctf.appinprogress.com/)  
+    **比赛名称** : [4N0NYM0US3 2024](http://ctf.appinprogress.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-21 13:04:43 - 2024-01-21 13:04:43 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : WyteHat (https://ctftime.org/team/231105)  
+    **添加日历** : https://ctftime.org/event/2232.ics  
+    
 ??? Abstract "[KnightCTF 2024](https://knightctf.com/)"  
     [![](https://ctftime.org/media/events/KnightCTF.png){ width="200" align=left }](https://knightctf.com/)  
     **比赛名称** : [KnightCTF 2024](https://knightctf.com/)  
@@ -75,6 +84,15 @@ comments: true
     **比赛权重** : 32.00  
     **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
     **添加日历** : https://ctftime.org/event/2139.ics  
+    
+??? Abstract "[HKUST Firebird CTF Competition 2024](http://ctf.firebird.sh/)"  
+    [![](https://ctftime.org/media/events/FirebirdCTFCompetition2.png){ width="200" align=left }](http://ctf.firebird.sh/)  
+    **比赛名称** : [HKUST Firebird CTF Competition 2024](http://ctf.firebird.sh/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-20 10:00:00 - 2024-01-21 22:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : HKUSTFirebird (https://ctftime.org/team/65249)  
+    **添加日历** : https://ctftime.org/event/2225.ics  
     
 ??? Abstract "[UofTCTF 2024](https://ctf.uoftctf.org/)"  
     [![](https://ctftime.org/media/events/ctf_logo_1.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
@@ -930,22 +948,4 @@ comments: true
     **比赛权重** : 37.00  
     **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
     **添加日历** : https://ctftime.org/event/2080.ics  
-    
-??? Abstract "[Hack.lu CTF 2023](https://flu.xxx/)"  
-    [![](https://ctftime.org/media/events/2023.png){ width="200" align=left }](https://flu.xxx/)  
-    **比赛名称** : [Hack.lu CTF 2023](https://flu.xxx/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-14 02:00:00 - 2023-10-16 02:00:00 UTC+8  
-    **比赛权重** : 94.73  
-    **赛事主办** : FluxFingers (https://ctftime.org/team/551)  
-    **添加日历** : https://ctftime.org/event/1921.ics  
-    
-??? Abstract "[Reply Cyber Security Challenge 2023](https://replychallenges.com/ctftime)"  
-    [![](https://ctftime.org/media/events/Reply_CTF_2018-01_1.png){ width="200" align=left }](https://replychallenges.com/ctftime)  
-    **比赛名称** : [Reply Cyber Security Challenge 2023](https://replychallenges.com/ctftime)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-14 01:30:00 - 2023-10-15 01:30:00 UTC+8  
-    **比赛权重** : 23.12  
-    **赛事主办** : Keen Minds (https://ctftime.org/team/48972)  
-    **添加日历** : https://ctftime.org/event/2086.ics  
     
