@@ -49,6 +49,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[RCS CTF 24](https://rcs.encryptedge.in/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://rcs.encryptedge.in/)  
+    **比赛名称** : [RCS CTF 24](https://rcs.encryptedge.in/)  
+    **比赛形式** : Hack quest  
+    **比赛时间** : 2024-01-26 19:30:00 - 2024-01-27 16:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : EN¢R¥PT_EDGE€ (https://ctftime.org/team/273673)  
+    **添加日历** : https://ctftime.org/event/2233.ics  
+    
 ??? Abstract "[4N0NYM0US3 2024](http://ctf.appinprogress.com/)"  
     [![](https://ctftime.org){ width="200" align=left }](http://ctf.appinprogress.com/)  
     **比赛名称** : [4N0NYM0US3 2024](http://ctf.appinprogress.com/)  
@@ -939,13 +948,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : PWNX (https://ctftime.org/team/179989)  
     **添加日历** : https://ctftime.org/event/2140.ics  
-    
-??? Abstract "[ISITDTU CTF 2023 Quals](https://ctf.isitdtu.com/)"  
-    [![](https://ctftime.org/media/events/index.gif){ width="200" align=left }](https://ctf.isitdtu.com/)  
-    **比赛名称** : [ISITDTU CTF 2023 Quals](https://ctf.isitdtu.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-14 09:00:00 - 2023-10-15 17:00:00 UTC+8  
-    **比赛权重** : 37.00  
-    **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
-    **添加日历** : https://ctftime.org/event/2080.ics  
     
