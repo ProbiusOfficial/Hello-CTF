@@ -49,10 +49,10 @@ comments: true
     
 
 ## 国际赛事
-??? Abstract "[RCS CTF 24](https://rcs.encryptedge.in/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://rcs.encryptedge.in/)  
-    **比赛名称** : [RCS CTF 24](https://rcs.encryptedge.in/)  
-    **比赛形式** : Hack quest  
+??? Abstract "[RCS CTF 24](https://play.encryptedge.in/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://play.encryptedge.in/)  
+    **比赛名称** : [RCS CTF 24](https://play.encryptedge.in/)  
+    **比赛形式** : Jeopardy  
     **比赛时间** : 2024-01-26 19:30:00 - 2024-01-27 16:30:00 UTC+8  
     **比赛权重** : 0.00  
     **赛事主办** : EN¢R¥PT_EDGE€ (https://ctftime.org/team/273673)  
