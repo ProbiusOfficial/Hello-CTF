@@ -85,15 +85,6 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[ISSessions Espionage CTF](https://ctf.issessions.ca/)"  
-    [![](https://ctftime.org/media/events/unnamed_2.png){ width="200" align=left }](https://ctf.issessions.ca/)  
-    **比赛名称** : [ISSessions Espionage CTF](https://ctf.issessions.ca/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-01-27 22:00:00 - 2024-01-29 06:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : ISSesssions (https://ctftime.org/team/278504)  
-    **添加日历** : https://ctftime.org/event/2221.ics  
-    
 ??? Abstract "[DiceCTF 2024 Quals](https://ctf.dicega.ng/)"  
     [![](https://ctftime.org/media/events/dicectf_2_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
     **比赛名称** : [DiceCTF 2024 Quals](https://ctf.dicega.ng/)  
