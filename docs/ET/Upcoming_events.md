@@ -92,15 +92,6 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[TetCTF 2024](https://ctf.hackemall.live/)"  
-    [![](https://ctftime.org/media/events/tetlogo.png){ width="200" align=left }](https://ctf.hackemall.live/)  
-    **比赛名称** : [TetCTF 2024](https://ctf.hackemall.live/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-01-27 08:00:00 - 2024-01-29 08:00:00 UTC+8  
-    **比赛权重** : 74.41  
-    **赛事主办** : TetCTF (https://ctftime.org/team/71781)  
-    **添加日历** : https://ctftime.org/event/2212.ics  
-    
 ??? Abstract "[ISSessions Espionage CTF](https://ctf.issessions.ca/)"  
     [![](https://ctftime.org/media/events/unnamed_2.png){ width="200" align=left }](https://ctf.issessions.ca/)  
     **比赛名称** : [ISSessions Espionage CTF](https://ctf.issessions.ca/)  
