@@ -202,9 +202,9 @@ comments: true
     **赛事主办** : athackPrivate (https://ctftime.org/team/278003)  
     **添加日历** : https://ctftime.org/event/2228.ics  
     
-??? Abstract "[Pearl CTF](https://jadectf.concetto.in/)"  
-    [![](https://ctftime.org/media/events/_croppearl_logo_1_of_1.png){ width="200" align=left }](https://jadectf.concetto.in/)  
-    **比赛名称** : [Pearl CTF](https://jadectf.concetto.in/)  
+??? Abstract "[Pearl CTF](https://pearlctf.in/)"  
+    [![](https://ctftime.org/media/events/_croppearl_logo_1_of_1.png){ width="200" align=left }](https://pearlctf.in/)  
+    **比赛名称** : [Pearl CTF](https://pearlctf.in/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-03-08 20:00:00 - 2024-03-10 07:59:59 UTC+8  
     **比赛权重** : 23.95  
