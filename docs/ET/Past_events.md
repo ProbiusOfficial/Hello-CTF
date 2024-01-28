@@ -118,7 +118,7 @@ comments: true
     **比赛名称** : [Mapna CTF 2024](https://mapnactf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-01-20 23:00:00 - 2024-01-21 23:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 24.51  
     **赛事主办** : ASIS (https://ctftime.org/team/4140)  
     **添加日历** : https://ctftime.org/event/2205.ics  
     
@@ -145,7 +145,7 @@ comments: true
     **比赛名称** : [UofTCTF 2024](https://ctf.uoftctf.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-01-14 01:00:00 - 2024-01-15 12:59:00 UTC+8  
-    **比赛权重** : 24.36  
+    **比赛权重** : 24.31  
     **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
     **添加日历** : https://ctftime.org/event/2219.ics  
     
