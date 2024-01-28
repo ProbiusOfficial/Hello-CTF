@@ -77,6 +77,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[ISSessions Espionage CTF](https://ctf.issessions.ca/)"  
+    [![](https://ctftime.org/media/events/unnamed_2.png){ width="200" align=left }](https://ctf.issessions.ca/)  
+    **比赛名称** : [ISSessions Espionage CTF](https://ctf.issessions.ca/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-27 22:00:00 - 2024-01-29 06:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : ISSesssions (https://ctftime.org/team/278504)  
+    **添加日历** : https://ctftime.org/event/2221.ics  
+    
 ??? Abstract "[RCS CTF 24](https://play.encryptedge.in/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://play.encryptedge.in/)  
     **比赛名称** : [RCS CTF 24](https://play.encryptedge.in/)  
@@ -967,13 +976,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : EyesOpen_Security (https://ctftime.org/team/200580)  
     **添加日历** : https://ctftime.org/event/2101.ics  
-    
-??? Abstract "[DefCamp Capture the Flag (D-CTF) 2023 Quals](https://dctf23-quals.cyber-edu.co/)"  
-    [![](https://ctftime.org/media/events/DgewLeJ5PXEu0w7L_1.png){ width="200" align=left }](https://dctf23-quals.cyber-edu.co/)  
-    **比赛名称** : [DefCamp Capture the Flag (D-CTF) 2023 Quals](https://dctf23-quals.cyber-edu.co/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-20 17:00:00 - 2023-10-22 17:00:00 UTC+8  
-    **比赛权重** : 24.83  
-    **赛事主办** : CCSIR.org (https://ctftime.org/team/9831)  
-    **添加日历** : https://ctftime.org/event/2106.ics  
     
