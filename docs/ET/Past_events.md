@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Abstract "Real World CTF 6th 体验赛"  
+    **比赛名称** : [Real World CTF 6th 体验赛](https://be-a-rwctfer.realworldctf.com/)  
+    **比赛类型** : 团队赛 | 邀请制  
+    **报名时间** : 2023年12月28日 16:30 - 2024年01月17日 18:00  
+    **比赛时间** : 2024年01月27日 10:00 - 2024年01月28日 10:00  
+    **其他说明** : 选手交流群：612460086  
+    
 ??? Abstract "春秋杯网络安全联赛冬季赛"  
     **比赛名称** : [春秋杯网络安全联赛冬季赛](https://endbm.ichunqiu.com/2023cqgames2)  
     **比赛类型** : 个人赛CTF+RDG  
