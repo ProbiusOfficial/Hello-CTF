@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅析Jenkis任意文件读取(CVE-2024-23897)](https://y4tacker.github.io/2024/01/27/year/2024/1/%E6%B5%85%E6%9E%90Jenkis%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96-CVE-2024-23897/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-01-27
+
+    浅析Jenkis任意文件读取(CVE-2024-23897)很久没更新博客了，还是浅浅更新一下补丁分析首先从官方公告可以看到漏洞其实来源于CLI工具，同时可以看到用户拥有(Overall/Read)权限可以读取整个文件，而如果没有权限则仅能读取第一行同时从commit可以看出[SECURITY-3314] · jenkinsci/jenkins@554f037 ，主要对CLICommand.jav...
     ### [深圳·香港·澳门一星期单人行小记](https://blog.stv.lol/archives/80/)  
     >by [Steven Lynn's Blog](https://blog.stv.lol), 2024-01-25
 
@@ -96,7 +100,7 @@ hide:
     ### [浅析Gitlab未授权密码重置(CVE-2023-7028)](https://y4tacker.github.io/2024/01/12/year/2024/1/%E6%B5%85%E6%9E%90Gitlab%E6%9C%AA%E6%8E%88%E6%9D%83%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE-CVE-2023-7028/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-01-12
 
-    6d1cc102401c745b93e78f65644d42e8acdebe888643ff48d6f7cfdb5192f763857bafd30ff3df8edacec48331a685443e2bfd9b2096789fbde94bf2019e9400ec1373012537fa79b1378fa55fed7d5b3b6a3f189751a07b5631681c0e1078e0eec125...
+    6d1cc102401c745b93e78f65644d42e8acdebe888643ff48d6f7cfdb5192f763857bafd30ff3df8edacec48331a685443e2bfd9b2096789fbde94bf2019e9400ec1373012537fa79b1378fa55fed7d5bbaaee884c63d7e7318c1559a5c176fbdd61c18...
     ### [如何判断在IDEA中程序正在运行或正在Debug](https://y4tacker.github.io/2024/01/04/year/2024/1/%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E5%9C%A8IDEA%E4%B8%AD%E7%A8%8B%E5%BA%8F%E6%AD%A3%E5%9C%A8%E8%BF%90%E8%A1%8C%E6%88%96%E6%AD%A3%E5%9C%A8Debug/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-01-04
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2023-12-10
 
     CrushFTP  Unauthenticated Remote Code Execution路由分析不像传统套件，这里自己实现了协议的解析并做调用，写法比较死板，不够灵活，在crushftp.server.ServerSessionHTTP可以看到具体的处理过程，代码”依托答辩”，不过漏洞思路值得学习前台权限绕过简单来说，原理是因为程序实现存在匿名访问机制，并且可以通过header污染当前会话的...
-    ### [Apache Struts2 文件上传分析(S2-066)](https://y4tacker.github.io/2023/12/09/year/2023/12/Apache-Struts2-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%86%E6%9E%90-S2-066/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-12-09
-
-    Apache Struts2 文件上传分析(S2-066)struts2也很久没出过漏洞了吧，这次爆的是和文件上传相关相关的commit在https://github.com/apache/struts/commit/162e29fee9136f4bfd9b2376da2cbf590f9ea163首先从commit可以看出，漏洞和大小写参数有关，后面会具体谈及同时结合CVE描述我们可以知道，大概和...
 
 </div>
