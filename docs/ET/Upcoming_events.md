@@ -271,9 +271,9 @@ comments: true
     **赛事主办** : CyberVT (https://ctftime.org/team/173872)  
     **添加日历** : https://ctftime.org/event/2237.ics  
     
-??? Abstract "[VolgaCTF 2024 Qualifier](https://volgactf.ru/en/volgactf-2024/qualifier/)"  
-    [![](https://ctftime.org/media/events/logo-social-yellow_14.png){ width="200" align=left }](https://volgactf.ru/en/volgactf-2024/qualifier/)  
-    **比赛名称** : [VolgaCTF 2024 Qualifier](https://volgactf.ru/en/volgactf-2024/qualifier/)  
+??? Abstract "[VolgaCTF 2024 Qualifier](https://q.2024.volgactf.ru/)"  
+    [![](https://ctftime.org/media/events/logo-social-yellow_14.png){ width="200" align=left }](https://q.2024.volgactf.ru/)  
+    **比赛名称** : [VolgaCTF 2024 Qualifier](https://q.2024.volgactf.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-03-30 23:00:00 - 2024-03-31 23:00:00 UTC+8  
     **比赛权重** : 35.91  
