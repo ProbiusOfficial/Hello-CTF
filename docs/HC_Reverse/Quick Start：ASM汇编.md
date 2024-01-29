@@ -4,17 +4,17 @@
 
 下面我们以一个简单的 Hello World 程序为背景，初步介绍汇编：
 
-~~~c
+```c
 #include <stdio.h>
 int main(int argc, char* argv []) {
     printf("Hello, world!\n");
     return 0;
  }
-~~~
+```
 
 我们通过 GCC 将以上程序编译为 ASM 形式并输出，可以得到以下内容：
 
-~~~assembly
+```assembly
       .section .rodata
   .LC0:
       .string "Hello, world!"
@@ -32,7 +32,7 @@ int main(int argc, char* argv []) {
       mov      eax, 0
       leave
       ret
-~~~
+```
 
 这是一个很简单的执行过程，下面我们来简单的介绍一下这块汇编：
 
@@ -56,7 +56,7 @@ int main(int argc, char* argv []) {
 
 1、`loop` 循环指令：
 
-~~~assembly
+```assembly
 mov rax,0
 mov rcx,236
 s:
@@ -64,40 +64,40 @@ add rax,123
 loop s
 leave
 ret
-~~~
+```
 
 上面的指令执行的是对 123 累加 236 次，从以上代码中我们可以看到，`rcx` 寄存器保存的是循环次数，`loop` 指令每执行一次，`rcx` 的数值就会减少 1，当其数值减少到 0 时，`loop` 指令就会停止，继续执行下面的指令。
 
 2、无条件跳转指令：
 
-~~~assembly
+```assembly
 lable:
 mov edx,0
 
 jmp lable
-~~~
+```
 
 无条件跳转指令为 `jmp`，其意思从字面上就可以看出来，只要是执行到 `jmp` 这里，无论什么情况，都会直接跳转到 `lable` 的代码块中继续往下执行指令。
 
 3、条件跳转：
 
-~~~assembly
+```assembly
 lable:
 mov ebx,1
 
 cmp ebx,0
 je lable
-~~~
+```
 
 以上代码将 `ebx` 的值与 `0` 对比，如果相等，则会跳转到 `lable` 处，条件跳转指令 `je` 代表相等则跳转，还有其他与之条件不一样的条件跳转指令，一般条件跳转指令是与 `cmp`、`test` 指令混在一起用的。以上代码也可以用 `test` 来写：
 
-~~~assembly
+```assembly
 lable:
 mov ebx,1
 
 test ebx,0
 jnz lable
-~~~
+```
 
 `test` 是逻辑与指令，以上代表的即为 `ebx&0`，`jnz` 代表标志位为 0 就跳转，其实现效果与 `cmp` 相同。
 

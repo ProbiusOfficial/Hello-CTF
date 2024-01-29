@@ -176,7 +176,7 @@ s:17:"\x00User\x00phoneNumber";s:11:"19191145148";}----------------- private $ph
 `echo  urlencode($serializedData)` :
 
 
-```php
+```php linenums="1"
  O%3A4%3A%22User%22%3A3%3A%7Bs%3A4%3A%22name%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A3%3A%22tan%22%3Bi%3A1%3Bs%3A2%3A%22ji%22%3B%7D-------------------------------------------------------------- public $name;
  
  s%3A8%3A%22%00%2A%00email%22%3Bs%3A17%3A%22admin%40probius.xyz%22%3B------- protected $email;
