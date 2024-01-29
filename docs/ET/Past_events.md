@@ -86,6 +86,15 @@ comments: true
     **赛事主办** : ISSesssions (https://ctftime.org/team/278504)  
     **添加日历** : https://ctftime.org/event/2221.ics  
     
+??? Abstract "[TetCTF 2024](https://ctf.hackemall.live/)"  
+    [![](https://ctftime.org/media/events/tetlogo.png){ width="200" align=left }](https://ctf.hackemall.live/)  
+    **比赛名称** : [TetCTF 2024](https://ctf.hackemall.live/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-27 08:00:00 - 2024-01-29 08:00:00 UTC+8  
+    **比赛权重** : 74.41  
+    **赛事主办** : TetCTF (https://ctftime.org/team/71781)  
+    **添加日历** : https://ctftime.org/event/2212.ics  
+    
 ??? Abstract "[RCS CTF 24](https://play.encryptedge.in/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://play.encryptedge.in/)  
     **比赛名称** : [RCS CTF 24](https://play.encryptedge.in/)  
@@ -967,13 +976,4 @@ comments: true
     **比赛权重** : 33.74  
     **赛事主办** : Cyber Hacktics (https://ctftime.org/team/127017)  
     **添加日历** : https://ctftime.org/event/2031.ics  
-    
-??? Abstract "[EyesOpen CTF 2023](https://rebrand.ly/EyesOpenCTF)"  
-    [![](https://ctftime.org/media/events/ctf-logo.PNG){ width="200" align=left }](https://rebrand.ly/EyesOpenCTF)  
-    **比赛名称** : [EyesOpen CTF 2023](https://rebrand.ly/EyesOpenCTF)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-20 20:00:00 - 2023-10-28 20:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : EyesOpen_Security (https://ctftime.org/team/200580)  
-    **添加日历** : https://ctftime.org/event/2101.ics  
     
