@@ -231,6 +231,7 @@ nav:
       - 3. &nbsp; Quick Start：ASM汇编: HC_Reverse/Quick Start：ASM汇编.md
       - 4. &nbsp; Quick Start：Example problems: HC_Reverse/Quick Start：Example problems.md
       - 5. &nbsp; 从零开始的IDA: HC_Reverse/从零开始的IDA.md
+      - 6. &nbsp; 从零开始的壳: HC_Reverse/从零开始的壳.md
 
     - Pwn | 二进制安全:
       - HC_PWN/index.md
