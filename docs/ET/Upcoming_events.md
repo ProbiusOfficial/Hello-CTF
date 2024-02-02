@@ -246,6 +246,15 @@ comments: true
     **赛事主办** : LINE CTF (https://ctftime.org/team/144094)  
     **添加日历** : https://ctftime.org/event/2119.ics  
     
+??? Abstract "[Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
+    **比赛名称** : [Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-03-23 12:00:00 - 2024-03-24 12:00:00 UTC+8  
+    **比赛权重** : 22.46  
+    **赛事主办** : NUSGreyhats (https://ctftime.org/team/16740)  
+    **添加日历** : https://ctftime.org/event/2242.ics  
+    
 ??? Abstract "[ZeroDays CTF](https://zerodays.ie/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://zerodays.ie/)  
     **比赛名称** : [ZeroDays CTF](https://zerodays.ie/)  
@@ -254,15 +263,6 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
     **添加日历** : https://ctftime.org/event/2196.ics  
-    
-??? Abstract "[Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
-    **比赛名称** : [Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-23 20:00:00 - 2024-03-24 20:00:00 UTC+8  
-    **比赛权重** : 22.46  
-    **赛事主办** : NUSGreyhats (https://ctftime.org/team/16740)  
-    **添加日历** : https://ctftime.org/event/2242.ics  
     
 ??? Abstract "[JerseyCTF IV](https://www.jerseyctf.com/)"  
     [![](https://ctftime.org/media/events/lock.png){ width="200" align=left }](https://www.jerseyctf.com/)  
