@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [Kernel Pwn环境搭建](https://xia0ji233.github.io/2024/02/01/Linux_Kernel_Pwn1/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-02-01
+
+    准备开始搞 kernel pwn 了。环境搭建编译内核首先下载 kernel 源码：https://mirrors.tuna.tsinghua.edu.cn/kernel/需要什么版本就指定什么版本好了。因为我现在想复现 Dirty Cred，所以我下载了 5.8.1 版本的内核，解压之后使用 make menuconfig 可以打开一个配置界面，这里一定要把调试符号勾选，方便我们调试。具体在 k...
     ### [浅析Jenkis任意文件读取(CVE-2024-23897)](https://y4tacker.github.io/2024/01/27/year/2024/1/%E6%B5%85%E6%9E%90Jenkis%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96-CVE-2024-23897/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-01-27
 
@@ -149,9 +153,5 @@ hide:
     >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-12-11
 
     前言前段时间有幸去了酷科南京总部参观，被问到有没有酷安人均一只的酷态科10号时汗流浃背了，因为一直以来我都在用闪极的产品，唯一的酷态科产品还是酷态科前身紫米的紫米200W移动电源而对于紫米200W移动电源，我的评价是很优秀，但是太大太重不便于日常携带，并且上次出去旅游的时候外壳被摔坏导致只有一个口可以用了于是在两周前淘宝百亿补贴的一次机会以189元的价格赶紧补票了酷态科10号开箱酷态科10号的包装...
-    ### [CrushFTP Unauthenticated Remote Code Execution(CVE-2023-43177)](https://y4tacker.github.io/2023/12/10/year/2023/12/CrushFTP-Unauthenticated-Remote-Code-Execution-CVE-2023-43177/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-12-10
-
-    CrushFTP  Unauthenticated Remote Code Execution路由分析不像传统套件，这里自己实现了协议的解析并做调用，写法比较死板，不够灵活，在crushftp.server.ServerSessionHTTP可以看到具体的处理过程，代码”依托答辩”，不过漏洞思路值得学习前台权限绕过简单来说，原理是因为程序实现存在匿名访问机制，并且可以通过header污染当前会话的...
 
 </div>
