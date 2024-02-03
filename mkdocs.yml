@@ -160,6 +160,7 @@ extra_javascript:
 
 # ----- other -----
   - javascripts/bannerSlider.js
+  - javascripts/FullCalendar.js
 
 
 extra_css:

@@ -97,3 +97,15 @@ body {
       grid-template-columns: none !important;
   }
 }
+
+/* FullCalendar CSS Part*/
+
+.fc-header-toolbar {
+  /*
+  the calendar will be butting up against the edges,
+  but let's scoot in the header's buttons
+  */
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
