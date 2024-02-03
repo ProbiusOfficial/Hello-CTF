@@ -51,3 +51,12 @@ comments: true
     **赛事主办** : CYB3R_T3N4CI0US (https://ctftime.org/team/160305)  
     **添加日历** : https://ctftime.org/event/2213.ics  
     
+??? Abstract "[Bearcat CTF 2024](https://www.bearcatctf.io/)"  
+    [![](https://ctftime.org/media/events/bearcatlogo-cyberatuc.png){ width="200" align=left }](https://www.bearcatctf.io/)  
+    **比赛名称** : [Bearcat CTF 2024](https://www.bearcatctf.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-04 03:00:00 - 2024-02-05 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
+    **添加日历** : https://ctftime.org/event/2208.ics  
+    
