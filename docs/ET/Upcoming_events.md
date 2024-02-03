@@ -57,15 +57,6 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[L3HCTF 2024](https://l3hctf2024.xctf.org.cn/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://l3hctf2024.xctf.org.cn/)  
-    **比赛名称** : [L3HCTF 2024](https://l3hctf2024.xctf.org.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-02-03 09:00:00 - 2024-02-05 09:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : L3H Sec (https://ctftime.org/team/75946)  
-    **添加日历** : https://ctftime.org/event/2236.ics  
-    
 ??? Abstract "[ESCAPE CTF Final](https://ctf.t3n4ci0us.kr/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.t3n4ci0us.kr/)  
     **比赛名称** : [ESCAPE CTF Final](https://ctf.t3n4ci0us.kr/)  
