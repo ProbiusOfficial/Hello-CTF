@@ -73,6 +73,26 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [dirty pipe(CVE-2022-0847)漏洞复现](https://xia0ji233.github.io/2024/02/02/CVE-2022-0847/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-02-02
+
+    复现一下 dirty pipe漏洞漏洞简介漏洞发现者 Max Kellermann 并不是专门从事漏洞挖掘工作的，而是在服务器中多次出现了文件错误的问题，用户下载的包含日志的gzip文件多次出现CRC校验位错误, 排查后发现CRC校验位总是被一段ZIP头覆盖。根据作者介绍, 可以生成ZIP文件的只有主服务器的一个负责HTTP连接的服务，但是该服务并没有写 gzip 文件的权限。即主服务器同时存在一...
+    ### [Kernel Pwn环境搭建](https://xia0ji233.github.io/2024/02/01/Linux_Kernel_Pwn1/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-02-01
+
+    准备开始搞 kernel pwn 了。环境搭建编译内核首先下载 kernel 源码：https://mirrors.tuna.tsinghua.edu.cn/kernel/需要什么版本就指定什么版本好了。因为我现在想复现 Dirty Cred，所以我下载了 5.8.1 版本的内核，解压之后使用 make menuconfig 可以打开一个配置界面，这里一定要把调试符号勾选，方便我们调试。具体在 k...
+    ### [浅析Jenkis任意文件读取(CVE-2024-23897)](https://y4tacker.github.io/2024/01/27/year/2024/1/%E6%B5%85%E6%9E%90Jenkis%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96-CVE-2024-23897/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-01-27
+
+    浅析Jenkis任意文件读取(CVE-2024-23897)很久没更新博客了，还是浅浅更新一下补丁分析首先从官方公告可以看到漏洞其实来源于CLI工具，同时可以看到用户拥有(Overall/Read)权限可以读取整个文件，而如果没有权限则仅能读取第一行同时从commit可以看出[SECURITY-3314] · jenkinsci/jenkins@554f037 ，主要对CLICommand.jav...
+    ### [深圳·香港·澳门一星期单人行小记](https://blog.stv.lol/archives/80/)  
+    >by [Steven Lynn's Blog](https://blog.stv.lol), 2024-01-25
+
+    前因珠三角一直是我好奇和中意的城市群，尤其是香港。在去年九月的匆忙拜访香港和深圳后仍然意犹未尽，在学校的所有事忙完之后便立刻订机票飞往深圳。深圳抵达买了最便宜的东海航空的航班，并且是深夜的红眼航班。据说这家航司的准点率很差，但好在本次航班的时间都很准时。在机场附近的小酒店休息了一晚上，一早便乘机场线立刻出发地铁站第一件事是前往两个顺路的地铁站盖章打卡，这是一个跨年时的活动，因为章还在客服中心那边所...
+    ### [LLVM——Pass模块的调试](https://xia0ji233.github.io/2024/01/23/LLVM4/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-01-23
+
+    记录一下动调dll项目的过程调试DLL的问题正常试过一遍用 clang 作为启动项目或者是用 dll 作为启动项目，但是都不能成功断下来，这里我说一下我所使用的方法。首先在项目属性中开启调试符号项目->属性->配置属性->链接器->调试->生成调试信息选择为生成调试信息（/DEBUG）然后把项目->属性->配置属性->C/C++ ->常规 ->调试信息格式 ，设置为程序数据库（/ZI）打开这两个选...
     ### [LLVM——简单指令混淆](https://xia0ji233.github.io/2024/01/22/LLVM3/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2024-01-22
 
@@ -88,7 +108,7 @@ hide:
     ### [浅析Gitlab未授权密码重置(CVE-2023-7028)](https://y4tacker.github.io/2024/01/12/year/2024/1/%E6%B5%85%E6%9E%90Gitlab%E6%9C%AA%E6%8E%88%E6%9D%83%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE-CVE-2023-7028/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-01-12
 
-    6d1cc102401c745b93e78f65644d42e8acdebe888643ff48d6f7cfdb5192f763857bafd30ff3df8edacec48331a685443e2bfd9b2096789fbde94bf2019e9400ec1373012537fa79b1378fa55fed7d5b3b6a3f189751a07b5631681c0e1078e0eec125...
+    6d1cc102401c745b93e78f65644d42e8acdebe888643ff48d6f7cfdb5192f763857bafd30ff3df8edacec48331a685443e2bfd9b2096789fbde94bf2019e9400ec1373012537fa79b1378fa55fed7d5bbaaee884c63d7e7318c1559a5c176fbdd61c18...
     ### [如何判断在IDEA中程序正在运行或正在Debug](https://y4tacker.github.io/2024/01/04/year/2024/1/%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E5%9C%A8IDEA%E4%B8%AD%E7%A8%8B%E5%BA%8F%E6%AD%A3%E5%9C%A8%E8%BF%90%E8%A1%8C%E6%88%96%E6%AD%A3%E5%9C%A8Debug/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-01-04
 
@@ -133,25 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2023-12-13
 
     亿赛通电子文档安全管理系统远程代码执行漏洞浅析漏洞分析最近天天曝亿赛通的漏洞，又是这个新手向的项目，有点烦其实不是很想写的，本次原理也很简单熟悉的人可能知道这个系统在windows与linux下有点区别，在linux系统下多了一个8021端口相较于CDGServer3服务下又臭又长的代码，这个fileserver下的代码还是很短小的任意文件读取在com.esafenet.fileserver.co...
-    ### [年轻人第一块电表：酷安人均一只酷态科10号移动电源简评&amp;杂谈](https://blog.stv.lol/archives/78/)  
-    >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-12-11
-
-    前言前段时间有幸去了酷科南京总部参观，被问到有没有酷安人均一只的酷态科10号时汗流浃背了，因为一直以来我都在用闪极的产品，唯一的酷态科产品还是酷态科前身紫米的紫米200W移动电源而对于紫米200W移动电源，我的评价是很优秀，但是太大太重不便于日常携带，并且上次出去旅游的时候外壳被摔坏导致只有一个口可以用了于是在两周前淘宝百亿补贴的一次机会以189元的价格赶紧补票了酷态科10号开箱酷态科10号的包装...
-    ### [CrushFTP Unauthenticated Remote Code Execution(CVE-2023-43177)](https://y4tacker.github.io/2023/12/10/year/2023/12/CrushFTP-Unauthenticated-Remote-Code-Execution-CVE-2023-43177/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-12-10
-
-    CrushFTP  Unauthenticated Remote Code Execution路由分析不像传统套件，这里自己实现了协议的解析并做调用，写法比较死板，不够灵活，在crushftp.server.ServerSessionHTTP可以看到具体的处理过程，代码”依托答辩”，不过漏洞思路值得学习前台权限绕过简单来说，原理是因为程序实现存在匿名访问机制，并且可以通过header污染当前会话的...
-    ### [Apache Struts2 文件上传分析(S2-066)](https://y4tacker.github.io/2023/12/09/year/2023/12/Apache-Struts2-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%86%E6%9E%90-S2-066/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-12-09
-
-    Apache Struts2 文件上传分析(S2-066)struts2也很久没出过漏洞了吧，这次爆的是和文件上传相关相关的commit在https://github.com/apache/struts/commit/162e29fee9136f4bfd9b2376da2cbf590f9ea163首先从commit可以看出，漏洞和大小写参数有关，后面会具体谈及同时结合CVE描述我们可以知道，大概和...
-    ### [某某通漏洞浅析](https://y4tacker.github.io/2023/12/08/year/2023/12/%E6%9F%90%E6%9F%90%E9%80%9A%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-12-08
-
-    e1bd3e68fe0e95aad543147235f13aa8c07db101f08238b29c49348e526ca2c395ff16b5184fe4ee67b8dd1840f69936917a685390975ecb78405622c312487d5e6b45d97870e169a38f37bd7a2e95cc5b864202dba1787e366b00f3973f1aa3686ad8...
-    ### [Linux ptrace](https://xia0ji233.github.io/2023/12/03/Ptrace/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2023-12-03
-
-    这次学习Linux进程调试相关的知识。调试对于二进制选手来说，调试的重要性不言而喻，对于Linux来说，基本就是 gdb 一家独大，其余插件只是给gdb起了锦上添花的一些作用罢了，那么下面就来学习一下 gdb 的内核。ptrace在Linux调试程序，离不开一个系统调用就是 ptrace（%rax=101,%eax=26），来看看这个函数原型：12long ptrace(enum __ptrace...
 
 </div>

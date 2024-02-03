@@ -127,6 +127,8 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
+      #linenums: true # 显示行号
+      #auto_title: true # 显示编程语言名称
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
@@ -229,6 +231,8 @@ nav:
       - 2. &nbsp; Quick Start：可执行文件: HC_Reverse/Quick Start：可执行文件.md
       - 3. &nbsp; Quick Start：ASM汇编: HC_Reverse/Quick Start：ASM汇编.md
       - 4. &nbsp; Quick Start：Example problems: HC_Reverse/Quick Start：Example problems.md
+      - 5. &nbsp; 从零开始的IDA: HC_Reverse/从零开始的IDA.md
+      - 6. &nbsp; 从零开始的壳: HC_Reverse/从零开始的壳.md
 
     - Pwn | 二进制安全:
       - HC_PWN/index.md

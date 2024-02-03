@@ -26,11 +26,11 @@ ELF 文件标准里把系统中采用 ELF 格式的文件分为以下四种：
 |                 **.bss**                  |
 |           **Other Section ...**           |
 |         **Section Header Table**          |
-| **String Tables  \|\| Symbol Tables ...** |
+| **String Tables  /|/| Symbol Tables ...** |
 
 1、**ELF 文件头** ( **ELF Header** )，位于文件的开始位置，它的主要目的是定位文件的其他部分。它包含了整个文件的基本属性：如文件大小、版本、目标机型、程序入口等。
 
-~~~c++
+```c++ linenums="1"
 typedef struct elf32_hdr
 {
 	  unsigned char	e_ident [EI_NIDENT];	/* Magic number and other info */
@@ -63,7 +63,8 @@ e_shentsize：每个节区头部表的大小
 e_shnum ： 节区头部表的数量
 e_shstrndx：节区字符串表位置
 */
-~~~
+```
+
 
 2、**.text**：反汇编读取并处理的部分，这一部分是以机器码的形式存储，没有 .text 区段，我们很难去对一个可执行文件进行反汇编分析，也很难去看懂程序的二进制代码。
 
@@ -119,13 +120,13 @@ typedef struct{
 | .symtab            | SHT_SYMTAB       |                           | 此节区包含一个符号表。如果文件中包含一个可加载的段，并且该段中包含符号表，那么节区的属性中包含 SHF_ALLOC 位，否则该位置为 0。 |
 | .text              | SHT_PROGBITS     | SHF_ALLOC + SHF_EXECINSTR | 此节区包含程序的可执行指令。                                 |
 
-7、**String Tables**：字符串表。在 ELF 文件中，会用到很多字符串，比如节名，变量名等。所以 ELF 将所有的字符串集中放到一个表里，每一个字符串以’\0’分隔，然后使用字符串在表中的偏移来引用字符串。这样在 ELF 中引用字符串只需要给出一个数组下标即可。字符串表在 ELF 也以段的形式保存， **.shstrtab** 是专供 **section name** 的字符串表区段。
+7、**String Tables**：字符串表。在 ELF 文件中，会用到很多字符串，比如节名，变量名等。所以 ELF 将所有的字符串集中放到一个表里，每一个字符串以’/0’分隔，然后使用字符串在表中的偏移来引用字符串。这样在 ELF 中引用字符串只需要给出一个数组下标即可。字符串表在 ELF 也以段的形式保存， **.shstrtab** 是专供 **section name** 的字符串表区段。
 
 8、**Symbol Tables**：符号表。在链接的过程中需要把多个不同的目标文件合并在一起，不同的目标文件相互之间会引用变量和函数。在链接过程中，我们将函数和变量统称为 **符号**，函数名和变量名就是 **符号名**。每个定义的符号都有一个相应的值，叫做符号值(Symbol Value)，对于变量和函数，符号值就是它们的地址。
 
 ------
 
-下面我们来介绍 **PE** 文件：实际上 PE 与 ELF 文件基本相同，也是采用了基于段的格式，同时 PE 也允许程序员将变量或者函数放在自定义的段中（使用 GCC 中 ***\* attribute\**(section('name'))** 扩展属性）。
+下面我们来介绍 **PE** 文件：实际上 PE 与 ELF 文件基本相同，也是采用了基于段的格式，同时 PE 也允许程序员将变量或者函数放在自定义的段中（使用 GCC 中 ***/* attribute/**(section('name'))** 扩展属性）。
 
 在此之前，我们来了解一些基本概念：
 
@@ -138,7 +139,7 @@ typedef struct{
 
 1、PE 文件结构：
 
-![pefile](.\Images\p2-1.png){ width="40%" }
+![pefile](./Images/p2-1.png){ width="40%" }
 
 **DOS 头**：是用来兼容 MS-DOS 操作系统的，目的是当这个文件在 MS-DOS 上运行时提示一段文字，大部分情况下是：This program cannot be run in DOS mode. 还有一个目的，就是指明 NT 头在文件中的位置。
 

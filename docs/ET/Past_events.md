@@ -5,6 +5,48 @@ comments: true
 
 ## 国内赛事
 
+??? Abstract "第二届红桥杯渗透测试挑战赛"  
+    **比赛名称** : [第二届红桥杯渗透测试挑战赛](https://tryhackme.com/)  
+    **比赛类型** : 个人赛  
+    **报名时间** : 2023年12月01日 00:00 - 2024年01月31日 00:00  
+    **比赛时间** : 2023年11月30日 00:00 - 2024年01月31日 00:00  
+    **其他说明** : QQ群：751273347  比赛时间待定  
+    
+??? Abstract "第七届西湖论剑网络安全技能大赛初赛"  
+    **比赛名称** : [第七届西湖论剑网络安全技能大赛初赛](https://game.gcsis.cn/)  
+    **比赛类型** : 团队赛|4-8人  
+    **报名时间** : 2024年01月09日 00:00 - 2024年01月24日 18:00  
+    **比赛时间** : 2024年01月30日 10:00 - 2024年01月30日 18:00  
+    **其他说明** : QQ群：666010671 768342822    
+    
+??? Abstract "Real World CTF 6th"  
+    **比赛名称** : [Real World CTF 6th](https://realworldctf.com/)  
+    **比赛类型** : 团队赛  
+    **报名时间** : 2023年12月28日 16:30 - 2024年01月28日 19:00  
+    **比赛时间** : 2024年01月26日 19:00 - 2024年01月28日 19:00  
+    **其他说明** : Discord: https://discord.com/invite/8GNqypNaxB  
+    
+??? Abstract "獬豸杯电子数据取证比武"  
+    **比赛名称** : [獬豸杯电子数据取证比武](https://mp.weixin.qq.com/s/kTUbGvh4EGZf5Jx87NyCgQ)  
+    **比赛类型** : 个人赛  
+    **报名时间** : 2024年01月25日 00:00 - 2024年01月27日 18:00  
+    **比赛时间** : 2024年01月28日 10:00 - 2024年01月28日 18:00  
+    **其他说明** : QQ群号：955391766  
+    
+??? Abstract "NSSCTF Round#17 Basic"  
+    **比赛名称** : [NSSCTF Round#17 Basic](https://www.nssctf.cn/contest/)  
+    **比赛类型** : 团队赛|1-3人  
+    **报名时间** : 2024年01月16日 00:00 - 2024年01月28日 17:30  
+    **比赛时间** : 2024年01月28日 14:00 - 2024年01月28日 17:30  
+    **其他说明** : QQ群：521330139  
+    
+??? Abstract "Real World CTF 6th 体验赛"  
+    **比赛名称** : [Real World CTF 6th 体验赛](https://be-a-rwctfer.realworldctf.com/)  
+    **比赛类型** : 团队赛 | 邀请制  
+    **报名时间** : 2023年12月28日 16:30 - 2024年01月17日 18:00  
+    **比赛时间** : 2024年01月27日 10:00 - 2024年01月28日 10:00  
+    **其他说明** : 选手交流群：612460086  
+    
 ??? Abstract "春秋杯网络安全联赛冬季赛"  
     **比赛名称** : [春秋杯网络安全联赛冬季赛](https://endbm.ichunqiu.com/2023cqgames2)  
     **比赛类型** : 个人赛CTF+RDG  
@@ -47,29 +89,53 @@ comments: true
     **比赛时间** : 2024年01月03日 09:00 - 2024年01月07日 18:00  
     **其他说明** :   
     
-??? Abstract "CTFSHOW元旦水友赛"  
-    **比赛名称** : [CTFSHOW元旦水友赛](https://ctf.show)  
-    **比赛类型** : 个人赛  
-    **报名时间** : 2023年12月01日 10:00 - 2024年01月02日 10:00  
-    **比赛时间** : 2023年12月31日 10:00 - 2024年01月02日 10:00  
-    **其他说明** : QQ群：926826969  
-    
-??? Abstract "麟阁CTF天梯赛"  
-    **比赛名称** : [麟阁CTF天梯赛](https://www.venuskylin.com.cn/#/drillActivity/paper)  
-    **比赛类型** : 个人赛  
-    **报名时间** : 2023年08月01日 10:00 - 2023年12月30日 20:00  
-    **比赛时间** : 2023年09月01日 10:30 - 2023年12月30日 20:00  
-    **其他说明** : 麟阁赛事训练营qq交流群：591638230  
-    
-??? Abstract "2023NCTF"  
-    **比赛名称** : [2023NCTF](https://nctf.exp10it.cn/)  
-    **比赛类型** : 团队赛|1-4人  
-    **报名时间** : 2023年12月05日 00:00 - 2023年12月23日 09:00  
-    **比赛时间** : 2023年12月23日 09:00 - 2023年12月24日 21:00  
-    **其他说明** : QQ群：884196088  
-    
 
 ## 国际赛事
+??? Abstract "[ISSessions Espionage CTF](https://ctf.issessions.ca/)"  
+    [![](https://ctftime.org/media/events/unnamed_2.png){ width="200" align=left }](https://ctf.issessions.ca/)  
+    **比赛名称** : [ISSessions Espionage CTF](https://ctf.issessions.ca/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-27 22:00:00 - 2024-01-29 06:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : ISSesssions (https://ctftime.org/team/278504)  
+    **添加日历** : https://ctftime.org/event/2221.ics  
+    
+??? Abstract "[TetCTF 2024](https://ctf.hackemall.live/)"  
+    [![](https://ctftime.org/media/events/tetlogo.png){ width="200" align=left }](https://ctf.hackemall.live/)  
+    **比赛名称** : [TetCTF 2024](https://ctf.hackemall.live/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-27 08:00:00 - 2024-01-29 08:00:00 UTC+8  
+    **比赛权重** : 74.41  
+    **赛事主办** : TetCTF (https://ctftime.org/team/71781)  
+    **添加日历** : https://ctftime.org/event/2212.ics  
+    
+??? Abstract "[RCS CTF 24](https://play.encryptedge.in/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://play.encryptedge.in/)  
+    **比赛名称** : [RCS CTF 24](https://play.encryptedge.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-26 19:30:00 - 2024-01-27 16:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : EN¢R¥PT_EDGE€ (https://ctftime.org/team/273673)  
+    **添加日历** : https://ctftime.org/event/2233.ics  
+    
+??? Abstract "[Real World CTF 6th](https://realworldctf.com/)"  
+    [![](https://ctftime.org/media/events/rwctf.png){ width="200" align=left }](https://realworldctf.com/)  
+    **比赛名称** : [Real World CTF 6th](https://realworldctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-26 19:00:00 - 2024-01-28 19:00:00 UTC+8  
+    **比赛权重** : 97.04  
+    **赛事主办** : Chaitin Tech (https://ctftime.org/team/60371)  
+    **添加日历** : https://ctftime.org/event/2172.ics  
+    
+??? Abstract "[4N0NYM0US3 2024](http://ctf.appinprogress.com/)"  
+    [![](https://ctftime.org){ width="200" align=left }](http://ctf.appinprogress.com/)  
+    **比赛名称** : [4N0NYM0US3 2024](http://ctf.appinprogress.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-21 13:04:43 - 2024-01-21 13:04:43 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : WyteHat (https://ctftime.org/team/231105)  
+    **添加日历** : https://ctftime.org/event/2232.ics  
+    
 ??? Abstract "[KnightCTF 2024](https://knightctf.com/)"  
     [![](https://ctftime.org/media/events/KnightCTF.png){ width="200" align=left }](https://knightctf.com/)  
     **比赛名称** : [KnightCTF 2024](https://knightctf.com/)  
@@ -84,7 +150,7 @@ comments: true
     **比赛名称** : [Mapna CTF 2024](https://mapnactf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-01-20 23:00:00 - 2024-01-21 23:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 24.51  
     **赛事主办** : ASIS (https://ctftime.org/team/4140)  
     **添加日历** : https://ctftime.org/event/2205.ics  
     
@@ -97,12 +163,21 @@ comments: true
     **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
     **添加日历** : https://ctftime.org/event/2139.ics  
     
+??? Abstract "[HKUST Firebird CTF Competition 2024](http://ctf.firebird.sh/)"  
+    [![](https://ctftime.org/media/events/FirebirdCTFCompetition2.png){ width="200" align=left }](http://ctf.firebird.sh/)  
+    **比赛名称** : [HKUST Firebird CTF Competition 2024](http://ctf.firebird.sh/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-01-20 10:00:00 - 2024-01-21 22:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : HKUSTFirebird (https://ctftime.org/team/65249)  
+    **添加日历** : https://ctftime.org/event/2225.ics  
+    
 ??? Abstract "[UofTCTF 2024](https://ctf.uoftctf.org/)"  
     [![](https://ctftime.org/media/events/ctf_logo_1.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
     **比赛名称** : [UofTCTF 2024](https://ctf.uoftctf.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-01-14 01:00:00 - 2024-01-15 12:59:00 UTC+8  
-    **比赛权重** : 24.36  
+    **比赛权重** : 24.33  
     **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
     **添加日历** : https://ctftime.org/event/2219.ics  
     
@@ -915,58 +990,4 @@ comments: true
     **比赛权重** : 33.74  
     **赛事主办** : Cyber Hacktics (https://ctftime.org/team/127017)  
     **添加日历** : https://ctftime.org/event/2031.ics  
-    
-??? Abstract "[EyesOpen CTF 2023](https://rebrand.ly/EyesOpenCTF)"  
-    [![](https://ctftime.org/media/events/ctf-logo.PNG){ width="200" align=left }](https://rebrand.ly/EyesOpenCTF)  
-    **比赛名称** : [EyesOpen CTF 2023](https://rebrand.ly/EyesOpenCTF)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-20 20:00:00 - 2023-10-28 20:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : EyesOpen_Security (https://ctftime.org/team/200580)  
-    **添加日历** : https://ctftime.org/event/2101.ics  
-    
-??? Abstract "[DefCamp Capture the Flag (D-CTF) 2023 Quals](https://dctf23-quals.cyber-edu.co/)"  
-    [![](https://ctftime.org/media/events/DgewLeJ5PXEu0w7L_1.png){ width="200" align=left }](https://dctf23-quals.cyber-edu.co/)  
-    **比赛名称** : [DefCamp Capture the Flag (D-CTF) 2023 Quals](https://dctf23-quals.cyber-edu.co/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-20 17:00:00 - 2023-10-22 17:00:00 UTC+8  
-    **比赛权重** : 24.83  
-    **赛事主办** : CCSIR.org (https://ctftime.org/team/9831)  
-    **添加日历** : https://ctftime.org/event/2106.ics  
-    
-??? Abstract "[No Hat 23 CTF](https://play.pwnx.io/#/event/8a5309f2-c4ed-44fa-b056-e662f457e960)"  
-    [![](https://ctftime.org/media/events/nohat_logo_v13.5.0.png){ width="200" align=left }](https://play.pwnx.io/#/event/8a5309f2-c4ed-44fa-b056-e662f457e960)  
-    **比赛名称** : [No Hat 23 CTF](https://play.pwnx.io/#/event/8a5309f2-c4ed-44fa-b056-e662f457e960)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-14 12:00:00 - 2023-10-15 12:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : PWNX (https://ctftime.org/team/179989)  
-    **添加日历** : https://ctftime.org/event/2140.ics  
-    
-??? Abstract "[ISITDTU CTF 2023 Quals](https://ctf.isitdtu.com/)"  
-    [![](https://ctftime.org/media/events/index.gif){ width="200" align=left }](https://ctf.isitdtu.com/)  
-    **比赛名称** : [ISITDTU CTF 2023 Quals](https://ctf.isitdtu.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-14 09:00:00 - 2023-10-15 17:00:00 UTC+8  
-    **比赛权重** : 37.00  
-    **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
-    **添加日历** : https://ctftime.org/event/2080.ics  
-    
-??? Abstract "[Hack.lu CTF 2023](https://flu.xxx/)"  
-    [![](https://ctftime.org/media/events/2023.png){ width="200" align=left }](https://flu.xxx/)  
-    **比赛名称** : [Hack.lu CTF 2023](https://flu.xxx/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-14 02:00:00 - 2023-10-16 02:00:00 UTC+8  
-    **比赛权重** : 94.73  
-    **赛事主办** : FluxFingers (https://ctftime.org/team/551)  
-    **添加日历** : https://ctftime.org/event/1921.ics  
-    
-??? Abstract "[Reply Cyber Security Challenge 2023](https://replychallenges.com/ctftime)"  
-    [![](https://ctftime.org/media/events/Reply_CTF_2018-01_1.png){ width="200" align=left }](https://replychallenges.com/ctftime)  
-    **比赛名称** : [Reply Cyber Security Challenge 2023](https://replychallenges.com/ctftime)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-14 01:30:00 - 2023-10-15 01:30:00 UTC+8  
-    **比赛权重** : 23.12  
-    **赛事主办** : Keen Minds (https://ctftime.org/team/48972)  
-    **添加日历** : https://ctftime.org/event/2086.ics  
     
