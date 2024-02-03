@@ -91,6 +91,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[ESCAPE CTF Final](https://ctf.t3n4ci0us.kr/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.t3n4ci0us.kr/)  
+    **比赛名称** : [ESCAPE CTF Final](https://ctf.t3n4ci0us.kr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-03 20:00:00 - 2024-02-04 05:30:00 UTC+8  
+    **比赛权重** : 9.64  
+    **赛事主办** : CYB3R_T3N4CI0US (https://ctftime.org/team/160305)  
+    **添加日历** : https://ctftime.org/event/2213.ics  
+    
 ??? Abstract "[ISSessions Espionage CTF](https://ctf.issessions.ca/)"  
     [![](https://ctftime.org/media/events/unnamed_2.png){ width="200" align=left }](https://ctf.issessions.ca/)  
     **比赛名称** : [ISSessions Espionage CTF](https://ctf.issessions.ca/)  
@@ -981,13 +990,4 @@ comments: true
     **比赛权重** : 97.33  
     **赛事主办** : Nu1L (https://ctftime.org/team/19208)  
     **添加日历** : https://ctftime.org/event/2062.ics  
-    
-??? Abstract "[DEADFACE CTF 2023](https://ctf.deadface.io/)"  
-    [![](https://ctftime.org/media/events/deadface_ctf_512.png){ width="200" align=left }](https://ctf.deadface.io/)  
-    **比赛名称** : [DEADFACE CTF 2023](https://ctf.deadface.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-20 22:00:00 - 2023-10-22 08:00:00 UTC+8  
-    **比赛权重** : 33.74  
-    **赛事主办** : Cyber Hacktics (https://ctftime.org/team/127017)  
-    **添加日历** : https://ctftime.org/event/2031.ics  
     
