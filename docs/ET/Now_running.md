@@ -24,15 +24,6 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Abstract "[DiceCTF 2024 Quals](https://ctf.dicega.ng/)"  
-    [![](https://ctftime.org/media/events/dicectf_2_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
-    **比赛名称** : [DiceCTF 2024 Quals](https://ctf.dicega.ng/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-02-03 05:00:00 - 2024-02-05 05:00:00 UTC+8  
-    **比赛权重** : 54.40  
-    **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
-    **添加日历** : https://ctftime.org/event/2217.ics  
-    
 ??? Abstract "[L3HCTF 2024](https://l3hctf2024.xctf.org.cn/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://l3hctf2024.xctf.org.cn/)  
     **比赛名称** : [L3HCTF 2024](https://l3hctf2024.xctf.org.cn/)  
