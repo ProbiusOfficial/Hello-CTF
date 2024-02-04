@@ -25,10 +25,8 @@ hide:
 <div class="grid cards">
 
 <!-- 日历 HTML部分 -->
-<div id='calendar-container'>
 <div id='calendar'></div>
 
-</div>
 </div>
 </li>
 </ul>

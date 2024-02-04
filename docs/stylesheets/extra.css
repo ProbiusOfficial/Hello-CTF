@@ -101,12 +101,10 @@ body {
 
 /* FullCalendar CSS Part*/
 
-.fc-header-toolbar {
-  /*
-  the calendar will be butting up against the edges,
-  but let's scoot in the header's buttons
-  */
-  padding-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
+#calendar {
+  margin-bottom: 0;
+  margin-top: 0;
+
+  max-width: 80%;
+  font-size: 0.75rem;
 }
