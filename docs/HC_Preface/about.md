@@ -31,29 +31,29 @@ comments: true
 
 本项目围绕CTF分为了下面几个板块.  
 
-### **[HelloCTF](https://ctf.probius.xyz/)(/HC)** 
+### **[HelloCTF](https://hello-ctf.com/)(/HC)** 
 
 HelloCTF项目的核心部分，包含CTF各个方向 (包括但不限于MISC,WEB,CRYPTO,REVERSE,PWN),覆盖入门到提高各个阶段,每个知识点享有配套题目。 
 
-### **[赛事](https://ctf.probius.xyz/ET/) Event (/ET)**
+### **[赛事](https://hello-ctf.com/ET/) Event (/ET)**
 
 涵盖CTF 国内外 即将进行，正在进行，已经结束的所有比赛信息。
 
 对于有办赛需求的团队提供相关支持。
 
-### **[工具](https://ctf.probius.xyz/TK/) CTFToolKit (/TK)** 
+### **[工具](https://hello-ctf.com/TK/) CTFToolKit (/TK)** 
 
 与项目 [CTFtools-wiki](https://github.com/ProbiusOfficial/CTFtools-wiki) 同步,分类收录各种 CTF 工具。  
 
-### **[团队](https://ctf.probius.xyz/TB/) TeamBuilding (/TB)** 
+### **[团队](https://hello-ctf.com/TB/) TeamBuilding (/TB)** 
 应对高校CTF战队 / 网络安全社团 等建设,提供必要的解决方案(如，培训资料，公文模板，比赛材料申报等)
 
-### **[扩展](https://ctf.probius.xyz/EE) Extension (/EE)** 
+### **[扩展](https://hello-ctf.com/EE) Extension (/EE)** 
 目前围绕容器技术提供如Docker的相关教学以及命题技巧和封装教程。  
 
 后续会更新如何从CTF过渡到安全实战领域，以及CTFer会面临的就业问题。
 
-### **[CTF档案馆](https://ctf.probius.xyz/AR) Archives (/AR)** 
+### **[CTF档案馆](https://hello-ctf.com/AR) Archives (/AR)** 
 
 收录CTF相关内容，包括但不限于: 
 

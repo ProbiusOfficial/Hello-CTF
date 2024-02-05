@@ -1549,7 +1549,7 @@ hide:
         "result": [
           {
             "name": "HelloCTF",
-            "link": "https://ctf.probius.xyz/",
+            "link": "https://hello-ctf.com/",
             "type": "团队赛|1-3人",
             "bmks": "2099年11月15日 00:00",
             "bmjz": "2099年12月31日 00:00",
