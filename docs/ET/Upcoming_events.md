@@ -152,9 +152,9 @@ comments: true
     **赛事主办** : bi0s (https://ctftime.org/team/662)  
     **添加日历** : https://ctftime.org/event/2117.ics  
     
-??? Abstract "[osu!gaming CTF 2024](https://osugamingctf.lol/)"  
-    [![](https://ctftime.org/media/events/unknown_1.png){ width="200" align=left }](https://osugamingctf.lol/)  
-    **比赛名称** : [osu!gaming CTF 2024](https://osugamingctf.lol/)  
+??? Abstract "[osu!gaming CTF 2024](https://www.osugaming.lol/)"  
+    [![](https://ctftime.org/media/events/unknown_1.png){ width="200" align=left }](https://www.osugaming.lol/)  
+    **比赛名称** : [osu!gaming CTF 2024](https://www.osugaming.lol/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-03-02 01:00:00 - 2024-03-04 01:00:00 UTC+8  
     **比赛权重** : 0.00  
