@@ -4,3 +4,8 @@ doc
 .DS_Store
 EX
 docs/HC_Reverse/change.py
+
+# pdm
+.pdm-python
+pdm.lock
+pyproject.toml
