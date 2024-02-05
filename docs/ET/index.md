@@ -8,6 +8,20 @@ hide:
   - view
 ---
 
+<style>
+    .event-running {
+        
+    }
+    
+    .event-oncoming {
+        background-color: #00bfa5;
+    }
+    
+    .event-ended {
+        background-color: #ff9100;
+    }
+</style>
+
 <script>
     /** 
      * @description 解析日期 格式为 YYYY年MM月DD日 HH:mm
@@ -19,7 +33,7 @@ hide:
         const day = parseInt(rawTime.substr(8, 2))
         const hour = parseInt(rawTime.substr(12, 2))
         const minute = parseInt(rawTime.substr(15, 2))
-        return new Date(year, month, day, hour, minute).toISOString()
+        return new Date(year, month, day, hour, minute)
     }
     
     /** 
@@ -63,9 +77,9 @@ hide:
          *   end: string
          *   title: string
          *   url: link
-         *   classNames: string[]
+         *   className: string
          *   region: CN | GLOBAL
-         * }}
+         * >}}
          */
         const events = []
         timeData.data.result.forEach((v) => {
@@ -77,18 +91,19 @@ hide:
                 //     end: parseTime(v.bmjz),
                 //     title: v.name + '（报名时间）',
                 //     url: v.link,
-                //     classNames: ['calendar-applying'],
                 //     region: CN
                 // })
+                const startTime = parseCNTime(v.bsks)
+                const endTime = parseCNTime(v.bsjs)
 
                 // 比赛时间段
                 events.push({
                     id: v.id,
-                    start: parseCNTime(v.bsks),
-                    end: parseCNTime(v.bsjs),
+                    start: startTime.toISOString(),
+                    end: endTime.toISOString(),
                     title: v.name,
                     url: v.link,
-                    classNames: ['calendar-running'],
+                    className: endTime < new Date() ? 'event-ended' : startTime > new Date() ? 'event-oncoming' : 'event-running',
                     region: CN
                 })
             } catch(err) {
@@ -125,18 +140,21 @@ hide:
          *   url: link
          *   classNames: string[]
          *   region: CN | GLOBAL
-         * }}
+         * }>}
          */
         const events = []
+
         timeData.forEach((v) => {
             try {
+                const [startTime, endTime] = parseGlobalTime(v.比赛时间)
+
                 events.push({
                     id: v.id,
-                    start: parseGlobalTime(v.比赛时间)[0].toISOString(),
-                    end: parseGlobalTime(v.比赛时间)[1].toISOString(),
+                    start: startTime.toISOString(),
+                    end: endTime.toISOString(),
                     title: v.比赛名称,
                     url: v.比赛链接,
-                    classNames: ['calendar-running'],
+                    className: endTime < new Date() ? 'event-ended' : startTime > new Date() ? 'event-oncoming' : 'event-running',
                     region: GLOBAL
                 })
             } catch(err) {
@@ -152,7 +170,7 @@ hide:
         const calendarEl = document.getElementById('calendar')
         
         const cnEvents = await fetchCNCTFTime('https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/main/CN.json')
-        const globalEvent = await fetchGlobalCTFTime('https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/main/Global.json')
+        const globalEvents = await fetchGlobalCTFTime('https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/main/Global.json')
 
         const calendar = new FullCalendar.Calendar(calendarEl, {
             locale: "zh",
@@ -173,11 +191,11 @@ hide:
                 text: "只看国外",
                 click: function () {
                     calendar.removeAllEventSources();
-                    calendar.addEventSource(globalEvent);
+                    calendar.addEventSource(globalEvents);
                 }
               }
             },
-            events: globalEvent
+            events: globalEvents
         });
         calendar.render();
         
