@@ -5,6 +5,10 @@ document$.subscribe(function () {
     // 图片的数量
     let imageCount = document.querySelectorAll(".carousel img").length
 
+    if (imageCount <= 0)
+        // 当前页面不需要轮播图……
+        return
+
     // incidators container
     const bottom = document.querySelector(".carousel-bottom")
 
@@ -17,54 +21,42 @@ document$.subscribe(function () {
         // 创建底部按钮
         const indicator = document.createElement("div")
         indicator.classList.add("indicator")
-        indicator.onclick = () => setIndex(i)
+        indicator.onclick = () => {
+            index = i
+            refresh()
+        }
 
         bottom.append(indicator)
     }
 
-    function createAuto() {
-        return setInterval(() => {
+    let timeoutID = setTimeout(() => {
+        index = (index + 1) % imageCount
+        refresh()
+    }, 3000)
+
+    function refresh() {
+        clearTimeout(timeoutID)
+        // 获取轮播框的宽度
+        try {
+            let width = carousel.clientWidth
+            carouselContainer.style.left = index * width * -1 + "px"
+        } catch (err) {
+            console.log(err)
+        }
+
+        timeoutID = setTimeout(() => {
             index = (index + 1) % imageCount
             refresh()
         }, 3000)
     }
 
-    // 自动滚动
-    let autoTimer = createAuto()
-
-    function refresh() {
-        //获取轮播框的宽度
-        let width = carousel.clientWidth
-
-        carouselContainer.style.left = index * width * -1 + "px"
+    document.querySelector(".carousel-btn.left").onclick = () => {
+        index = (index - 1 + imageCount) % imageCount
+        refresh()
     }
 
-    let refreshWrapper = (func) => {
-        // refresh 装饰器
-        return function (...args) {
-            let result = func(...args)
-            refresh()
-
-            // 重置自动滚动
-            clearInterval(autoTimer)
-            autoTimer = createAuto()
-            return result
-        }
+    document.querySelector(".carousel-btn.right").onclick = () => {
+        index = (index + 1) % imageCount
+        refresh()
     }
-
-    let setIndex = refreshWrapper((idx) => {
-        index = idx
-    })
-
-    document.querySelector(".carousel-btn.left").onclick = refreshWrapper(
-        () => {
-            index = (index - 1 + imageCount) % imageCount
-        }
-    )
-
-    document.querySelector(".carousel-btn.right").onclick = refreshWrapper(
-        () => {
-            index = (index + 1) % imageCount
-        }
-    )
 })
