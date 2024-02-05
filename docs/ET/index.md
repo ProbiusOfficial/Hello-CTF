@@ -195,7 +195,12 @@ hide:
                 }
               }
             },
-            events: globalEvents
+            events: globalEvents,
+            eventClick: function (info) {
+                info.jsEvent.preventDefault();
+
+                if (info.event.url) window.open(info.event.url);
+            }
         });
         calendar.render();
         
