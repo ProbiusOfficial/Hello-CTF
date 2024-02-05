@@ -91,6 +91,15 @@ comments: true
     
 
 ## 国际赛事
+??? Abstract "[Bearcat CTF 2024](https://www.bearcatctf.io/)"  
+    [![](https://ctftime.org/media/events/bearcatlogo-cyberatuc.png){ width="200" align=left }](https://www.bearcatctf.io/)  
+    **比赛名称** : [Bearcat CTF 2024](https://www.bearcatctf.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-04 03:00:00 - 2024-02-05 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
+    **添加日历** : https://ctftime.org/event/2208.ics  
+    
 ??? Abstract "[ESCAPE CTF Final](https://ctf.t3n4ci0us.kr/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.t3n4ci0us.kr/)  
     **比赛名称** : [ESCAPE CTF Final](https://ctf.t3n4ci0us.kr/)  
@@ -99,6 +108,24 @@ comments: true
     **比赛权重** : 9.64  
     **赛事主办** : CYB3R_T3N4CI0US (https://ctftime.org/team/160305)  
     **添加日历** : https://ctftime.org/event/2213.ics  
+    
+??? Abstract "[L3HCTF 2024](https://l3hctf2024.xctf.org.cn/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://l3hctf2024.xctf.org.cn/)  
+    **比赛名称** : [L3HCTF 2024](https://l3hctf2024.xctf.org.cn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-03 09:00:00 - 2024-02-05 09:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : L3H Sec (https://ctftime.org/team/75946)  
+    **添加日历** : https://ctftime.org/event/2236.ics  
+    
+??? Abstract "[DiceCTF 2024 Quals](https://ctf.dicega.ng/)"  
+    [![](https://ctftime.org/media/events/dicectf_2_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
+    **比赛名称** : [DiceCTF 2024 Quals](https://ctf.dicega.ng/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-03 05:00:00 - 2024-02-05 05:00:00 UTC+8  
+    **比赛权重** : 54.40  
+    **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
+    **添加日历** : https://ctftime.org/event/2217.ics  
     
 ??? Abstract "[ISSessions Espionage CTF](https://ctf.issessions.ca/)"  
     [![](https://ctftime.org/media/events/unnamed_2.png){ width="200" align=left }](https://ctf.issessions.ca/)  
@@ -963,31 +990,4 @@ comments: true
     **比赛权重** : 22.45  
     **赛事主办** : OWASP_PCCOE-CORE (https://ctftime.org/team/206360)  
     **添加日历** : https://ctftime.org/event/2141.ics  
-    
-??? Abstract "[3st stage MetaRed CTF Argentina|CERTUNLP 2023](https://ctf.cert.unlp.edu.ar/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.cert.unlp.edu.ar/)  
-    **比赛名称** : [3st stage MetaRed CTF Argentina|CERTUNLP 2023](https://ctf.cert.unlp.edu.ar/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-25 19:00:00 - 2023-10-26 19:00:00 UTC+8  
-    **比赛权重** : 6.67  
-    **赛事主办** : CERTUNLP (https://ctftime.org/team/89294)  
-    **添加日历** : https://ctftime.org/event/2107.ics  
-    
-??? Abstract "[3st stage MetaRed CTF Argentina|CERTUNLP 2023](https://ctf.cert.unlp.edu.ar/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.cert.unlp.edu.ar/)  
-    **比赛名称** : [3st stage MetaRed CTF Argentina|CERTUNLP 2023](https://ctf.cert.unlp.edu.ar/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-25 19:00:00 - 2023-10-26 19:00:00 UTC+8  
-    **比赛权重** : 6.67  
-    **赛事主办** : CERTUNLP (https://ctftime.org/team/89294)  
-    **添加日历** : https://ctftime.org/event/2108.ics  
-    
-??? Abstract "[N1CTF 2023](https://ctf2023.nu1l.com/)"  
-    [![](https://ctftime.org/media/events/logo2_5.png){ width="200" align=left }](https://ctf2023.nu1l.com/)  
-    **比赛名称** : [N1CTF 2023](https://ctf2023.nu1l.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-21 08:00:00 - 2023-10-23 08:00:00 UTC+8  
-    **比赛权重** : 97.33  
-    **赛事主办** : Nu1L (https://ctftime.org/team/19208)  
-    **添加日历** : https://ctftime.org/event/2062.ics  
     
