@@ -24,12 +24,3 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Abstract "[L3HCTF 2024](https://l3hctf2024.xctf.org.cn/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://l3hctf2024.xctf.org.cn/)  
-    **比赛名称** : [L3HCTF 2024](https://l3hctf2024.xctf.org.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-02-03 09:00:00 - 2024-02-05 09:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : L3H Sec (https://ctftime.org/team/75946)  
-    **添加日历** : https://ctftime.org/event/2236.ics  
-    
