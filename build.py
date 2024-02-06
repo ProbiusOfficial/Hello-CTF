@@ -30,9 +30,9 @@ def insert_content(original_file, start_marker, end_marker, new_content):
 def update_files():
     # 更新 friends.md 和 index.md
     friends_content = download_file("https://raw.githubusercontent.com/ProbiusOfficial/helloCTF-CTFerlink/main/output/friends.md")
-    with open("docs/AR/friends.md", 'w', encoding='utf-8') as file:
+    with open("docs/Archive/friends.md", 'w', encoding='utf-8') as file:
         file.write(friends_content)
-    with open("docs/AR/index.md", 'w', encoding='utf-8') as file:
+    with open("docs/Archive/index.md", 'w', encoding='utf-8') as file:
         file.write(friends_content)
 
     # 更新 events 相关文件

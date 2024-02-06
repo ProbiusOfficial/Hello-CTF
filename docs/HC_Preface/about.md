@@ -41,7 +41,7 @@ HelloCTF项目的核心部分，包含CTF各个方向 (包括但不限于MISC,WE
 
 对于有办赛需求的团队提供相关支持。
 
-### **[工具](https://hello-ctf.com/TK/) CTFToolKit (/TK)** 
+### **[工具](https://hello-ctf.com/ToolKit/) CTFToolKit (/ToolKit)** 
 
 与项目 [CTFtools-wiki](https://github.com/ProbiusOfficial/CTFtools-wiki) 同步,分类收录各种 CTF 工具。  
 
@@ -53,7 +53,7 @@ HelloCTF项目的核心部分，包含CTF各个方向 (包括但不限于MISC,WE
 
 后续会更新如何从CTF过渡到安全实战领域，以及CTFer会面临的就业问题。
 
-### **[CTF档案馆](https://hello-ctf.com/AR) Archives (/AR)** 
+### **[CTF档案馆](https://hello-ctf.com/Archive) Archives (/Archive)** 
 
 收录CTF相关内容，包括但不限于: 
 

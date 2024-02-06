@@ -264,9 +264,9 @@ nav:
       - NSSCTF平台使用: HC_Appendix/NSSCTF_Usage.md
       - 推荐书单: HC_Appendix/book.md
 
-# - CTF Training 练习 (.TT) Part ------------
+# - CTF Training 练习 (.Training) Part ------------
   - 刷题:
-    - TT/index.md
+    - Training/index.md
 
 # - CTF Event 赛事 (.Event) Part ------------
   - 赛事:
@@ -277,18 +277,18 @@ nav:
     - 办赛指南:
       - Event/organize.md
     
-# - CTF ToolKit 工具 (.TK) Part ------------
-  - 工具: TK/index.md
+# - CTF ToolKit 工具 (.ToolKit) Part ------------
+  - 工具: ToolKit/index.md
 
-# - TeamBuild (.TB) 团队 Part ------------
+# - TeamBuild (.TeamBuild) 团队 Part ------------
   - 团队: 
-    - TB/index.md
+    - TeamBuild/index.md
     - 团队建设与运营:
-      - TB/build.md
+      - TeamBuild/build.md
     - 团队纳新及培训:
-      - TB/recruit.md
+      - TeamBuild/recruit.md
     - 团队训练及CTF平台:
-      - TB/train.md
+      - TeamBuild/train.md
 
 # - Set Challenges (.SC) 命题 Part ------------
   - 命题:
@@ -311,21 +311,21 @@ nav:
       # - Pwn题目的Docker化: EE_Docker/usage_pwn.md
       # - Crypto题目的Docker化: EE_Docker/usage_crypto.md
 
-# - Archives 存档 (.AR) Part ----
+# - Archives 存档 (.Archive) Part ----
   - Archives:
-    - AR/index.md
+    - Archive/index.md
     - 赛事归档:
-      - AR/Events.md
+      - Archive/Events.md
     - 师傅们和他们的博客:
-      - AR/friends.md
+      - Archive/friends.md
     - 联合战队信息/招新:
-      - AR/Teams.md
+      - Archive/Teams.md
     - 社区资源:
-      - AR/Community.md
+      - Archive/Community.md
     - 书单推荐:
-      - AR/books.md
+      - Archive/books.md
     - 视频资源:
-      - AR/Videos.md
+      - Archive/Videos.md
 
 # - Blog Part ----
   - Blog:
