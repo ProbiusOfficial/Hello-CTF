@@ -41,7 +41,9 @@ hide:
     > 在此处控制赛事标签状态 : [∨全部展开][full_open] | [∧全部收起][full_close]
     [full_open]: javascript:(function(){document.querySelectorAll('details.abstract').forEach(function(detail){detail.open=true;});})()
     [full_close]: javascript:(function(){document.querySelectorAll('details.abstract').forEach(function(detail){detail.open=false;});})()
-    <!-- 赛事内容部分 -->
+
+    <!-- 赛事内容部分_开始 -->
+
     === "点击右边标签查看比赛:"
 
         !!! warning "健康比赛忠告"
@@ -49,37 +51,56 @@ hide:
             适度CTF益脑，沉迷CTF伤身。合理安排时间，享受健康生活。
 
     === "*正 在 报 名*"
-        <!-- 正在报名_Markdown_开始 -->
-        ??? Abstract "示例比赛"  
-            **比赛名称** : [示例](#)  
+        ??? Abstract "NSSCTF Round#18 Basic"  
+            **比赛名称** : [NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)  
             **比赛类型** : 个人赛  
-            **报名时间** : 2024年01月01日 00:00 - 2024年01月31日 00:00  
-            **比赛时间** : 2024年01月30日 00:00 - 2024年01月31日 00:00  
-            **其他说明** : 其他信息说明
-
-        ??? Abstract "示例比赛"  
-            **比赛名称** : [示例](#)  
+            **报名时间** : 2024年02月06日 09:30 - 2024年02月14日 09:30  
+            **比赛时间** : 2024年02月14日 09:30 - 2024年02月14日 17:30  
+            **其他说明** : QQ群：521330139  
+            
+        ??? Abstract "VNCTF 2024"  
+            **比赛名称** : [VNCTF 2024](待定)  
             **比赛类型** : 个人赛  
-            **报名时间** : 2024年01月01日 00:00 - 2024年01月31日 00:00  
-            **比赛时间** : 2024年01月30日 00:00 - 2024年01月31日 00:00  
-            **其他说明** : 其他信息说明
-        <!-- 正在报名_Markdown_结束 -->
+            **报名时间** : 2023年02月18日 21:00 - 2024年02月17日 20:00  
+            **比赛时间** : 2024年02月17日 08:00 - 2024年02月17日 20:00  
+            **其他说明** : V&N 联合战队招新赛，赛事QQ群：717513199  
+            
+        ??? Abstract "第一届“长城杯”信息安全铁人三项赛初赛"  
+            **比赛名称** : [第一届“长城杯”信息安全铁人三项赛初赛](http://ccb.itsec.gov.cn/)  
+            **比赛类型** : 团队赛|1-4人  
+            **报名时间** : 2023年12月21日 00:00 - 2024年02月20日 18:00  
+            **比赛时间** : 2024年03月01日 09:00 - 2024年03月31日 18:00  
+            **其他说明** : 比赛时间2024年3月  
+            
+        ??? Abstract "SICTF Round#3"  
+            **比赛名称** : [SICTF Round#3](http://ctf.shumunet.cn/)  
+            **比赛类型** : 团队赛|1-3人  
+            **报名时间** : 2024年01月11日 14:00 - 2024年02月18日 09:00  
+            **比赛时间** : 2024年02月16日 09:00 - 2024年02月18日 18:00  
+            **其他说明** : 比赛QQ群：737732413  本次比赛采用CTF赛制，题目难度两级分化，无论是刚刚入门的萌新还是轻车熟路的大神，都可以快速找到属于你的比赛乐趣哦~  
+            
     === "*即 将 开 始*"
-
         === "国内赛事"
+            ??? Abstract "NSSCTF Round#18 Basic"  
+                **比赛名称** : [NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年02月06日 09:30 - 2024年02月14日 09:30  
+                **比赛时间** : 2024年02月14日 09:30 - 2024年02月14日 17:30  
+                **其他说明** : QQ群：521330139  
+                
+            ??? Abstract "VNCTF 2024"  
+                **比赛名称** : [VNCTF 2024](待定)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2023年02月18日 21:00 - 2024年02月17日 20:00  
+                **比赛时间** : 2024年02月17日 08:00 - 2024年02月17日 20:00  
+                **其他说明** : V&N 联合战队招新赛，赛事QQ群：717513199  
+                
             ??? Abstract "第一届“长城杯”信息安全铁人三项赛初赛"  
                 **比赛名称** : [第一届“长城杯”信息安全铁人三项赛初赛](http://ccb.itsec.gov.cn/)  
                 **比赛类型** : 团队赛|1-4人  
                 **报名时间** : 2023年12月21日 00:00 - 2024年02月20日 18:00  
                 **比赛时间** : 2024年03月01日 09:00 - 2024年03月31日 18:00  
                 **其他说明** : 比赛时间2024年3月  
-                
-            ??? Abstract "第二届数据安全大赛暨首届“数信杯”数据安全大赛"  
-                **比赛名称** : [第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)  
-                **比赛类型** : 团队赛|1-3人  
-                **报名时间** : 2023年11月15日 00:00 - 2024年01月19日 18:00  
-                **比赛时间** : 2024年02月24日 10:00 - 2024年02月24日 18:00  
-                **其他说明** : 比赛时间未定  
                 
             ??? Abstract "SICTF Round#3"  
                 **比赛名称** : [SICTF Round#3](http://ctf.shumunet.cn/)  
@@ -88,44 +109,14 @@ hide:
                 **比赛时间** : 2024年02月16日 09:00 - 2024年02月18日 18:00  
                 **其他说明** : 比赛QQ群：737732413  本次比赛采用CTF赛制，题目难度两级分化，无论是刚刚入门的萌新还是轻车熟路的大神，都可以快速找到属于你的比赛乐趣哦~  
                 
-            ??? Abstract "第二届BeginCTF"  
-                **比赛名称** : [第二届BeginCTF](http://47.100.169.26/)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年01月24日 00:00 - 2024年02月06日 10:00  
-                **比赛时间** : 2024年01月31日 10:00 - 2024年02月06日 10:00  
-                **其他说明** : qq群：612995005  适合新手参加  
-                
-            ??? Abstract "L3HCTF 2024"  
-                **比赛名称** : [L3HCTF 2024](https://l3hctf2024.xctf.org.cn/)  
-                **比赛类型** : 团队赛  
-                **报名时间** : 2024年01月24日 00:00 - 2024年02月05日 09:00  
-                **比赛时间** : 2024年02月03日 09:00 - 2024年02月05日 09:00  
-                **其他说明** : QQ群：512066352  
-                
-            ??? Abstract "zkCTF"  
-                **比赛名称** : [zkCTF](https://zkctf.scalebit.xyz)  
-                **比赛类型** : 个人赛 | WEB3  
-                **报名时间** : 2024年01月16日 00:00 - 2024年02月05日 09:00  
-                **比赛时间** : 2024年02月03日 09:00 - 2024年02月05日 09:00  
-                **其他说明** : TG官方群：https://t.me/ScaleBitAudit  
-                
-            ??? Abstract "第二届N1CTF Junior"  
-                **比赛名称** : [第二届N1CTF Junior](https://ctf.junior.nu1l.com/)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年01月22日 08:00 - 2024年02月03日 00:00  
-                **比赛时间** : 2024年02月03日 09:00 - 2024年02月04日 18:00  
-                **其他说明** : N1CTFJunior是Nu1L Team组织的官方纳新  赛事旨在选拔年轻优秀人才加入Nu1LTeam  QQ群:180885587  
+            ??? Abstract "第二届数据安全大赛暨首届“数信杯”数据安全大赛"  
+                **比赛名称** : [第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)  
+                **比赛类型** : 团队赛|1-3人  
+                **报名时间** : 2023年11月15日 00:00 - 2024年01月19日 18:00  
+                **比赛时间** : 2024年02月24日 10:00 - 2024年02月24日 18:00  
+                **其他说明** : 比赛时间未定  
                 
         === "国外赛事"
-            ??? Abstract "[Bearcat CTF 2024](https://www.bearcatctf.io/)"  
-                [![](https://ctftime.org/media/events/bearcatlogo-cyberatuc.png){ width="200" align=left }](https://www.bearcatctf.io/)  
-                **比赛名称** : [Bearcat CTF 2024](https://www.bearcatctf.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-02-04 03:00:00 - 2024-02-05 03:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
-                **添加日历** : https://ctftime.org/event/2208.ics  
-                
             ??? Abstract "[0xL4ugh CTF 2024](https://ctf24.0xl4ugh.com/)"  
                 [![](https://ctftime.org/media/events/logo_94.png){ width="200" align=left }](https://ctf24.0xl4ugh.com/)  
                 **比赛名称** : [0xL4ugh CTF 2024](https://ctf24.0xl4ugh.com/)  
@@ -207,9 +198,9 @@ hide:
                 **赛事主办** : bi0s (https://ctftime.org/team/662)  
                 **添加日历** : https://ctftime.org/event/2117.ics  
                 
-            ??? Abstract "[osu!gaming CTF 2024](https://osugamingctf.lol/)"  
-                [![](https://ctftime.org/media/events/unknown_1.png){ width="200" align=left }](https://osugamingctf.lol/)  
-                **比赛名称** : [osu!gaming CTF 2024](https://osugamingctf.lol/)  
+            ??? Abstract "[osu!gaming CTF 2024](https://www.osugaming.lol/)"  
+                [![](https://ctftime.org/media/events/unknown_1.png){ width="200" align=left }](https://www.osugaming.lol/)  
+                **比赛名称** : [osu!gaming CTF 2024](https://www.osugaming.lol/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-03-02 01:00:00 - 2024-03-04 01:00:00 UTC+8  
                 **比赛权重** : 0.00  
@@ -487,35 +478,36 @@ hide:
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
                 
-            ??? Abstract "[DiceCTF 2024 Quals](https://ctf.dicega.ng/)"  
-                [![](https://ctftime.org/media/events/dicectf_2_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
-                **比赛名称** : [DiceCTF 2024 Quals](https://ctf.dicega.ng/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-02-03 05:00:00 - 2024-02-05 05:00:00 UTC+8  
-                **比赛权重** : 54.40  
-                **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
-                **添加日历** : https://ctftime.org/event/2217.ics  
-                
-            ??? Abstract "[L3HCTF 2024](https://l3hctf2024.xctf.org.cn/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://l3hctf2024.xctf.org.cn/)  
-                **比赛名称** : [L3HCTF 2024](https://l3hctf2024.xctf.org.cn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-02-03 09:00:00 - 2024-02-05 09:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : L3H Sec (https://ctftime.org/team/75946)  
-                **添加日历** : https://ctftime.org/event/2236.ics  
-                
-            ??? Abstract "[ESCAPE CTF Final](https://ctf.t3n4ci0us.kr/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.t3n4ci0us.kr/)  
-                **比赛名称** : [ESCAPE CTF Final](https://ctf.t3n4ci0us.kr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-02-03 20:00:00 - 2024-02-04 05:30:00 UTC+8  
-                **比赛权重** : 9.64  
-                **赛事主办** : CYB3R_T3N4CI0US (https://ctftime.org/team/160305)  
-                **添加日历** : https://ctftime.org/event/2213.ics  
-                
     === "*已 经 结 束*"
         === "国内赛事"
+            ??? Abstract "第二届BeginCTF"  
+                **比赛名称** : [第二届BeginCTF](http://47.100.169.26/)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年01月24日 00:00 - 2024年02月06日 10:00  
+                **比赛时间** : 2024年01月31日 10:00 - 2024年02月06日 10:00  
+                **其他说明** : qq群：612995005  适合新手参加  
+                
+            ??? Abstract "L3HCTF 2024"  
+                **比赛名称** : [L3HCTF 2024](https://l3hctf2024.xctf.org.cn/)  
+                **比赛类型** : 团队赛  
+                **报名时间** : 2024年01月24日 00:00 - 2024年02月05日 09:00  
+                **比赛时间** : 2024年02月03日 09:00 - 2024年02月05日 09:00  
+                **其他说明** : QQ群：512066352  
+                
+            ??? Abstract "zkCTF"  
+                **比赛名称** : [zkCTF](https://zkctf.scalebit.xyz)  
+                **比赛类型** : 个人赛 | WEB3  
+                **报名时间** : 2024年01月16日 00:00 - 2024年02月05日 09:00  
+                **比赛时间** : 2024年02月03日 09:00 - 2024年02月05日 09:00  
+                **其他说明** : TG官方群：https://t.me/ScaleBitAudit  
+                
+            ??? Abstract "第二届N1CTF Junior"  
+                **比赛名称** : [第二届N1CTF Junior](https://ctf.junior.nu1l.com/)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年01月22日 08:00 - 2024年02月03日 00:00  
+                **比赛时间** : 2024年02月03日 09:00 - 2024年02月04日 18:00  
+                **其他说明** : N1CTFJunior是Nu1L Team组织的官方纳新  赛事旨在选拔年轻优秀人才加入Nu1LTeam  QQ群:180885587  
+                
             ??? Abstract "第二届红桥杯渗透测试挑战赛"  
                 **比赛名称** : [第二届红桥杯渗透测试挑战赛](https://tryhackme.com/)  
                 **比赛类型** : 个人赛  
@@ -601,6 +593,42 @@ hide:
                 **其他说明** :   
                 
         === "国外赛事"
+            ??? Abstract "[Bearcat CTF 2024](https://www.bearcatctf.io/)"  
+                [![](https://ctftime.org/media/events/bearcatlogo-cyberatuc.png){ width="200" align=left }](https://www.bearcatctf.io/)  
+                **比赛名称** : [Bearcat CTF 2024](https://www.bearcatctf.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-02-04 03:00:00 - 2024-02-05 03:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
+                **添加日历** : https://ctftime.org/event/2208.ics  
+                
+            ??? Abstract "[ESCAPE CTF Final](https://ctf.t3n4ci0us.kr/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.t3n4ci0us.kr/)  
+                **比赛名称** : [ESCAPE CTF Final](https://ctf.t3n4ci0us.kr/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-02-03 20:00:00 - 2024-02-04 05:30:00 UTC+8  
+                **比赛权重** : 9.64  
+                **赛事主办** : CYB3R_T3N4CI0US (https://ctftime.org/team/160305)  
+                **添加日历** : https://ctftime.org/event/2213.ics  
+                
+            ??? Abstract "[L3HCTF 2024](https://l3hctf2024.xctf.org.cn/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://l3hctf2024.xctf.org.cn/)  
+                **比赛名称** : [L3HCTF 2024](https://l3hctf2024.xctf.org.cn/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-02-03 09:00:00 - 2024-02-05 09:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : L3H Sec (https://ctftime.org/team/75946)  
+                **添加日历** : https://ctftime.org/event/2236.ics  
+                
+            ??? Abstract "[DiceCTF 2024 Quals](https://ctf.dicega.ng/)"  
+                [![](https://ctftime.org/media/events/dicectf_2_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
+                **比赛名称** : [DiceCTF 2024 Quals](https://ctf.dicega.ng/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-02-03 05:00:00 - 2024-02-05 05:00:00 UTC+8  
+                **比赛权重** : 54.40  
+                **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
+                **添加日历** : https://ctftime.org/event/2217.ics  
+                
             ??? Abstract "[ISSessions Espionage CTF](https://ctf.issessions.ca/)"  
                 [![](https://ctftime.org/media/events/unnamed_2.png){ width="200" align=left }](https://ctf.issessions.ca/)  
                 **比赛名称** : [ISSessions Espionage CTF](https://ctf.issessions.ca/)  
@@ -1464,43 +1492,8 @@ hide:
                 **比赛权重** : 22.45  
                 **赛事主办** : OWASP_PCCOE-CORE (https://ctftime.org/team/206360)  
                 **添加日历** : https://ctftime.org/event/2141.ics  
-                
-            ??? Abstract "[3st stage MetaRed CTF Argentina|CERTUNLP 2023](https://ctf.cert.unlp.edu.ar/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.cert.unlp.edu.ar/)  
-                **比赛名称** : [3st stage MetaRed CTF Argentina|CERTUNLP 2023](https://ctf.cert.unlp.edu.ar/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-10-25 19:00:00 - 2023-10-26 19:00:00 UTC+8  
-                **比赛权重** : 6.67  
-                **赛事主办** : CERTUNLP (https://ctftime.org/team/89294)  
-                **添加日历** : https://ctftime.org/event/2107.ics  
-                
-            ??? Abstract "[3st stage MetaRed CTF Argentina|CERTUNLP 2023](https://ctf.cert.unlp.edu.ar/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.cert.unlp.edu.ar/)  
-                **比赛名称** : [3st stage MetaRed CTF Argentina|CERTUNLP 2023](https://ctf.cert.unlp.edu.ar/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-10-25 19:00:00 - 2023-10-26 19:00:00 UTC+8  
-                **比赛权重** : 6.67  
-                **赛事主办** : CERTUNLP (https://ctftime.org/team/89294)  
-                **添加日历** : https://ctftime.org/event/2108.ics  
-                
-            ??? Abstract "[N1CTF 2023](https://ctf2023.nu1l.com/)"  
-                [![](https://ctftime.org/media/events/logo2_5.png){ width="200" align=left }](https://ctf2023.nu1l.com/)  
-                **比赛名称** : [N1CTF 2023](https://ctf2023.nu1l.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-10-21 08:00:00 - 2023-10-23 08:00:00 UTC+8  
-                **比赛权重** : 97.33  
-                **赛事主办** : Nu1L (https://ctftime.org/team/19208)  
-                **添加日历** : https://ctftime.org/event/2062.ics  
-                
-            ??? Abstract "[DEADFACE CTF 2023](https://ctf.deadface.io/)"  
-                [![](https://ctftime.org/media/events/deadface_ctf_512.png){ width="200" align=left }](https://ctf.deadface.io/)  
-                **比赛名称** : [DEADFACE CTF 2023](https://ctf.deadface.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-10-20 22:00:00 - 2023-10-22 08:00:00 UTC+8  
-                **比赛权重** : 33.74  
-                **赛事主办** : Cyber Hacktics (https://ctftime.org/team/127017)  
-                **添加日历** : https://ctftime.org/event/2031.ics
-
+             
+    <!-- 赛事内容部分_结束 -->
 </div>
   
 
