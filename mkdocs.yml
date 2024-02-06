@@ -268,14 +268,14 @@ nav:
   - 刷题:
     - TT/index.md
 
-# - CTF Event 赛事 (.TK) Part ------------
+# - CTF Event 赛事 (.Event) Part ------------
   - 赛事:
-    - ET/index.md
-    - 即将开始: ET/Upcoming_events.md
-    - 正在进行: ET/Now_running.md
-    - 已经结束: ET/Past_events.md
+    - Event/index.md
+    - 即将开始: Event/Upcoming_events.md
+    - 正在进行: Event/Now_running.md
+    - 已经结束: Event/Past_events.md
     - 办赛指南:
-      - ET/organize.md
+      - Event/organize.md
     
 # - CTF ToolKit 工具 (.TK) Part ------------
   - 工具: TK/index.md

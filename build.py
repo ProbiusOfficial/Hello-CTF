@@ -38,7 +38,7 @@ def update_files():
     # 更新 events 相关文件
     for filename in ["Now_running.md", "Past_events.md", "Upcoming_events.md"]:
         content = download_file(f"https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/main/Out/{filename}")
-        with open(f"docs/ET/{filename}", 'w', encoding='utf-8') as file:
+        with open(f"docs/Event/{filename}", 'w', encoding='utf-8') as file:
             file.write(content)
 
     # 更新 events.html

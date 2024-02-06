@@ -121,7 +121,7 @@ hide:
             **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
             **添加日历** : https://ctftime.org/event/2209.ics      
 
-    [→ 了解更多](./ET/)
+    [→ 了解更多](./Event/)
 
 </div>
   <div class="grid cards" markdown>
