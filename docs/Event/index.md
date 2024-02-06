@@ -43,36 +43,35 @@ hide:
     [full_close]: javascript:(function(){document.querySelectorAll('details.abstract').forEach(function(detail){detail.open=false;});})()
 
     <!-- 赛事内容部分_开始 -->
-
     === "点击右边标签查看比赛:"
-
+    
         !!! warning "健康比赛忠告"
             抵制不良比赛，拒绝盗版比赛。注意自我保护，谨防受骗上当。  
             适度CTF益脑，沉迷CTF伤身。合理安排时间，享受健康生活。
-
+    
     === "*正 在 报 名*"
-        ??? Abstract "NSSCTF Round#18 Basic"  
+        ??? Abstract "[NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)"  
             **比赛名称** : [NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)  
             **比赛类型** : 个人赛  
             **报名时间** : 2024年02月06日 09:30 - 2024年02月14日 09:30  
             **比赛时间** : 2024年02月14日 09:30 - 2024年02月14日 17:30  
             **其他说明** : QQ群：521330139  
             
-        ??? Abstract "VNCTF 2024"  
+        ??? Abstract "[VNCTF 2024](待定)"  
             **比赛名称** : [VNCTF 2024](待定)  
             **比赛类型** : 个人赛  
             **报名时间** : 2023年02月18日 21:00 - 2024年02月17日 20:00  
             **比赛时间** : 2024年02月17日 08:00 - 2024年02月17日 20:00  
             **其他说明** : V&N 联合战队招新赛，赛事QQ群：717513199  
             
-        ??? Abstract "第一届“长城杯”信息安全铁人三项赛初赛"  
+        ??? Abstract "[第一届“长城杯”信息安全铁人三项赛初赛](http://ccb.itsec.gov.cn/)"  
             **比赛名称** : [第一届“长城杯”信息安全铁人三项赛初赛](http://ccb.itsec.gov.cn/)  
             **比赛类型** : 团队赛|1-4人  
             **报名时间** : 2023年12月21日 00:00 - 2024年02月20日 18:00  
             **比赛时间** : 2024年03月01日 09:00 - 2024年03月31日 18:00  
             **其他说明** : 比赛时间2024年3月  
             
-        ??? Abstract "SICTF Round#3"  
+        ??? Abstract "[SICTF Round#3](http://ctf.shumunet.cn/)"  
             **比赛名称** : [SICTF Round#3](http://ctf.shumunet.cn/)  
             **比赛类型** : 团队赛|1-3人  
             **报名时间** : 2024年01月11日 14:00 - 2024年02月18日 09:00  
@@ -81,35 +80,35 @@ hide:
             
     === "*即 将 开 始*"
         === "国内赛事"
-            ??? Abstract "NSSCTF Round#18 Basic"  
+            ??? Abstract "[NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)"  
                 **比赛名称** : [NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)  
                 **比赛类型** : 个人赛  
                 **报名时间** : 2024年02月06日 09:30 - 2024年02月14日 09:30  
                 **比赛时间** : 2024年02月14日 09:30 - 2024年02月14日 17:30  
                 **其他说明** : QQ群：521330139  
                 
-            ??? Abstract "VNCTF 2024"  
+            ??? Abstract "[VNCTF 2024](待定)"  
                 **比赛名称** : [VNCTF 2024](待定)  
                 **比赛类型** : 个人赛  
                 **报名时间** : 2023年02月18日 21:00 - 2024年02月17日 20:00  
                 **比赛时间** : 2024年02月17日 08:00 - 2024年02月17日 20:00  
                 **其他说明** : V&N 联合战队招新赛，赛事QQ群：717513199  
                 
-            ??? Abstract "第一届“长城杯”信息安全铁人三项赛初赛"  
+            ??? Abstract "[第一届“长城杯”信息安全铁人三项赛初赛](http://ccb.itsec.gov.cn/)"  
                 **比赛名称** : [第一届“长城杯”信息安全铁人三项赛初赛](http://ccb.itsec.gov.cn/)  
                 **比赛类型** : 团队赛|1-4人  
                 **报名时间** : 2023年12月21日 00:00 - 2024年02月20日 18:00  
                 **比赛时间** : 2024年03月01日 09:00 - 2024年03月31日 18:00  
                 **其他说明** : 比赛时间2024年3月  
                 
-            ??? Abstract "SICTF Round#3"  
+            ??? Abstract "[SICTF Round#3](http://ctf.shumunet.cn/)"  
                 **比赛名称** : [SICTF Round#3](http://ctf.shumunet.cn/)  
                 **比赛类型** : 团队赛|1-3人  
                 **报名时间** : 2024年01月11日 14:00 - 2024年02月18日 09:00  
                 **比赛时间** : 2024年02月16日 09:00 - 2024年02月18日 18:00  
                 **其他说明** : 比赛QQ群：737732413  本次比赛采用CTF赛制，题目难度两级分化，无论是刚刚入门的萌新还是轻车熟路的大神，都可以快速找到属于你的比赛乐趣哦~  
                 
-            ??? Abstract "第二届数据安全大赛暨首届“数信杯”数据安全大赛"  
+            ??? Abstract "[第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)"  
                 **比赛名称** : [第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)  
                 **比赛类型** : 团队赛|1-3人  
                 **报名时间** : 2023年11月15日 00:00 - 2024年01月19日 18:00  
@@ -461,7 +460,7 @@ hide:
                 
     === "*正 在 进 行*"
         === "国内赛事"
-            ??? Abstract "HGAME2024网络攻防大赛"  
+            ??? Abstract "[HGAME2024网络攻防大赛](https://hgame.vidar.club)"  
                 **比赛名称** : [HGAME2024网络攻防大赛](https://hgame.vidar.club)  
                 **比赛类型** : 个人赛  
                 **报名时间** : 2024年01月20日 20:00 - 2024年02月05日 20:00  
@@ -480,112 +479,112 @@ hide:
                 
     === "*已 经 结 束*"
         === "国内赛事"
-            ??? Abstract "第二届BeginCTF"  
+            ??? Abstract "[第二届BeginCTF](http://47.100.169.26/)"  
                 **比赛名称** : [第二届BeginCTF](http://47.100.169.26/)  
                 **比赛类型** : 个人赛  
                 **报名时间** : 2024年01月24日 00:00 - 2024年02月06日 10:00  
                 **比赛时间** : 2024年01月31日 10:00 - 2024年02月06日 10:00  
                 **其他说明** : qq群：612995005  适合新手参加  
                 
-            ??? Abstract "L3HCTF 2024"  
+            ??? Abstract "[L3HCTF 2024](https://l3hctf2024.xctf.org.cn/)"  
                 **比赛名称** : [L3HCTF 2024](https://l3hctf2024.xctf.org.cn/)  
                 **比赛类型** : 团队赛  
                 **报名时间** : 2024年01月24日 00:00 - 2024年02月05日 09:00  
                 **比赛时间** : 2024年02月03日 09:00 - 2024年02月05日 09:00  
                 **其他说明** : QQ群：512066352  
                 
-            ??? Abstract "zkCTF"  
+            ??? Abstract "[zkCTF](https://zkctf.scalebit.xyz)"  
                 **比赛名称** : [zkCTF](https://zkctf.scalebit.xyz)  
                 **比赛类型** : 个人赛 | WEB3  
                 **报名时间** : 2024年01月16日 00:00 - 2024年02月05日 09:00  
                 **比赛时间** : 2024年02月03日 09:00 - 2024年02月05日 09:00  
                 **其他说明** : TG官方群：https://t.me/ScaleBitAudit  
                 
-            ??? Abstract "第二届N1CTF Junior"  
+            ??? Abstract "[第二届N1CTF Junior](https://ctf.junior.nu1l.com/)"  
                 **比赛名称** : [第二届N1CTF Junior](https://ctf.junior.nu1l.com/)  
                 **比赛类型** : 个人赛  
                 **报名时间** : 2024年01月22日 08:00 - 2024年02月03日 00:00  
                 **比赛时间** : 2024年02月03日 09:00 - 2024年02月04日 18:00  
                 **其他说明** : N1CTFJunior是Nu1L Team组织的官方纳新  赛事旨在选拔年轻优秀人才加入Nu1LTeam  QQ群:180885587  
                 
-            ??? Abstract "第二届红桥杯渗透测试挑战赛"  
+            ??? Abstract "[第二届红桥杯渗透测试挑战赛](https://tryhackme.com/)"  
                 **比赛名称** : [第二届红桥杯渗透测试挑战赛](https://tryhackme.com/)  
                 **比赛类型** : 个人赛  
                 **报名时间** : 2023年12月01日 00:00 - 2024年01月31日 00:00  
                 **比赛时间** : 2023年11月30日 00:00 - 2024年01月31日 00:00  
                 **其他说明** : QQ群：751273347  比赛时间待定  
                 
-            ??? Abstract "第七届西湖论剑网络安全技能大赛初赛"  
+            ??? Abstract "[第七届西湖论剑网络安全技能大赛初赛](https://game.gcsis.cn/)"  
                 **比赛名称** : [第七届西湖论剑网络安全技能大赛初赛](https://game.gcsis.cn/)  
                 **比赛类型** : 团队赛|4-8人  
                 **报名时间** : 2024年01月09日 00:00 - 2024年01月24日 18:00  
                 **比赛时间** : 2024年01月30日 10:00 - 2024年01月30日 18:00  
                 **其他说明** : QQ群：666010671 768342822    
                 
-            ??? Abstract "Real World CTF 6th"  
+            ??? Abstract "[Real World CTF 6th](https://realworldctf.com/)"  
                 **比赛名称** : [Real World CTF 6th](https://realworldctf.com/)  
                 **比赛类型** : 团队赛  
                 **报名时间** : 2023年12月28日 16:30 - 2024年01月28日 19:00  
                 **比赛时间** : 2024年01月26日 19:00 - 2024年01月28日 19:00  
                 **其他说明** : Discord: https://discord.com/invite/8GNqypNaxB  
                 
-            ??? Abstract "獬豸杯电子数据取证比武"  
+            ??? Abstract "[獬豸杯电子数据取证比武](https://mp.weixin.qq.com/s/kTUbGvh4EGZf5Jx87NyCgQ)"  
                 **比赛名称** : [獬豸杯电子数据取证比武](https://mp.weixin.qq.com/s/kTUbGvh4EGZf5Jx87NyCgQ)  
                 **比赛类型** : 个人赛  
                 **报名时间** : 2024年01月25日 00:00 - 2024年01月27日 18:00  
                 **比赛时间** : 2024年01月28日 10:00 - 2024年01月28日 18:00  
                 **其他说明** : QQ群号：955391766  
                 
-            ??? Abstract "NSSCTF Round#17 Basic"  
+            ??? Abstract "[NSSCTF Round#17 Basic](https://www.nssctf.cn/contest/)"  
                 **比赛名称** : [NSSCTF Round#17 Basic](https://www.nssctf.cn/contest/)  
                 **比赛类型** : 团队赛|1-3人  
                 **报名时间** : 2024年01月16日 00:00 - 2024年01月28日 17:30  
                 **比赛时间** : 2024年01月28日 14:00 - 2024年01月28日 17:30  
                 **其他说明** : QQ群：521330139  
                 
-            ??? Abstract "Real World CTF 6th 体验赛"  
+            ??? Abstract "[Real World CTF 6th 体验赛](https://be-a-rwctfer.realworldctf.com/)"  
                 **比赛名称** : [Real World CTF 6th 体验赛](https://be-a-rwctfer.realworldctf.com/)  
                 **比赛类型** : 团队赛 | 邀请制  
                 **报名时间** : 2023年12月28日 16:30 - 2024年01月17日 18:00  
                 **比赛时间** : 2024年01月27日 10:00 - 2024年01月28日 10:00  
                 **其他说明** : 选手交流群：612460086  
                 
-            ??? Abstract "春秋杯网络安全联赛冬季赛"  
+            ??? Abstract "[春秋杯网络安全联赛冬季赛](https://endbm.ichunqiu.com/2023cqgames2)"  
                 **比赛名称** : [春秋杯网络安全联赛冬季赛](https://endbm.ichunqiu.com/2023cqgames2)  
                 **比赛类型** : 个人赛CTF+RDG  
                 **报名时间** : 2023年12月18日 00:00 - 2024年01月22日 17:00  
                 **比赛时间** : 2024年01月20日 10:00 - 2024年01月22日 18:00  
                 **其他说明** : 赛事QQ群：277328440  
                 
-            ??? Abstract "第三届WEBSHELL伏魔挑战赛"  
+            ??? Abstract "[第三届WEBSHELL伏魔挑战赛](https://mp.weixin.qq.com/s/e8OE3rXyIqPkHrOHBDL5Kw)"  
                 **比赛名称** : [第三届WEBSHELL伏魔挑战赛](https://mp.weixin.qq.com/s/e8OE3rXyIqPkHrOHBDL5Kw)  
                 **比赛类型** : 个人赛  
                 **报名时间** : 2023年12月29日 10:00 - 2024年01月17日 10:00  
                 **比赛时间** : 2024年01月12日 14:00 - 2024年01月17日 10:00  
                 **其他说明** :   
                 
-            ??? Abstract "第七届强网杯全国网络安全挑战赛决赛"  
+            ??? Abstract "[第七届强网杯全国网络安全挑战赛决赛](https://qiangwangbei.com/)"  
                 **比赛名称** : [第七届强网杯全国网络安全挑战赛决赛](https://qiangwangbei.com/)  
                 **比赛类型** : 团队赛|1-4人  
                 **报名时间** : 2023年05月01日 00:00 - 2023年12月09日 00:00  
                 **比赛时间** : 2024年01月13日 09:00 - 2024年01月14日 16:00  
                 **其他说明** : QQ群：723023839  
                 
-            ??? Abstract "movectf 2024"  
+            ??? Abstract "[movectf 2024](https://movectf2024.movebit.xyz/)"  
                 **比赛名称** : [movectf 2024](https://movectf2024.movebit.xyz/)  
                 **比赛类型** : 个人赛 | WEB3  
                 **报名时间** : 2023年12月25日 00:00 - 2024年01月14日 09:00  
                 **比赛时间** : 2024年01月12日 09:00 - 2024年01月14日 09:00  
                 **其他说明** : 旗舰级 Move 安全竞赛，旨在吸引更多对   Move 语言和 Move 生态系统感兴趣的安全专业人士  和开发人员。  QQ学习交流群：163569170  
                 
-            ??? Abstract " NSSCTF Round#16 Basic"  
+            ??? Abstract "[ NSSCTF Round#16 Basic](https://www.nssctf.cn/contest)"  
                 **比赛名称** : [ NSSCTF Round#16 Basic](https://www.nssctf.cn/contest)  
                 **比赛类型** : 团队赛|1-3人  
                 **报名时间** : 2024年01月03日 00:00 - 2024年01月13日 17:40  
                 **比赛时间** : 2024年01月13日 14:00 - 2024年01月13日 17:40  
                 **其他说明** : QQ群：521330139  
                 
-            ??? Abstract "“复兴杯”2023年第四届大学生网络安全精英赛初赛"  
+            ??? Abstract "[“复兴杯”2023年第四届大学生网络安全精英赛初赛](https://www.nisp.org.cn/wads)"  
                 **比赛名称** : [“复兴杯”2023年第四届大学生网络安全精英赛初赛](https://www.nisp.org.cn/wads)  
                 **比赛类型** : 个人赛  
                 **报名时间** : 2023年11月10日 12:00 - 2024年01月02日 18:00  
@@ -1492,7 +1491,7 @@ hide:
                 **比赛权重** : 22.45  
                 **赛事主办** : OWASP_PCCOE-CORE (https://ctftime.org/team/206360)  
                 **添加日历** : https://ctftime.org/event/2141.ics  
-             
+                
     <!-- 赛事内容部分_结束 -->
 </div>
   

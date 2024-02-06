@@ -41,9 +41,8 @@ def update_files():
         with open(f"docs/Event/{filename}", 'w', encoding='utf-8') as file:
             file.write(content)
 
-    # 更新 events.html
-    events_html_content = download_file("https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/main/Out/events.html")
-    insert_content("overrides/partials/events.html", "<!-- 赛事模块前置_开始 -->", "<!-- 赛事模块前置_结束 -->", events_html_content)
+    events_html_content = download_file("https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/main/Out/index.md")
+    insert_content("docs/Event/index.md", "<!-- 赛事内容部分_开始 -->", "<!-- 赛事内容部分_结束 -->", events_html_content)
 
 if __name__ == "__main__":
     update_files()
