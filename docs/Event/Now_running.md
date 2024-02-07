@@ -5,7 +5,7 @@ comments: true
 
 ## 国内赛事
 
-??? Abstract "HGAME2024网络攻防大赛"  
+??? Quote "HGAME2024网络攻防大赛"  
     **比赛名称** : [HGAME2024网络攻防大赛](https://hgame.vidar.club)  
     **比赛类型** : 个人赛  
     **报名时间** : 2024年01月20日 20:00 - 2024年02月05日 20:00  
@@ -15,7 +15,7 @@ comments: true
 
 ## 国际赛事
 
-??? Abstract "[Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)"  
+??? Quote "[Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)"  
     [![](https://ctftime.org){ width="200" align=left }](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)  
     **比赛名称** : [Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)  
     **比赛形式** : Jeopardy  
