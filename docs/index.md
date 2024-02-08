@@ -110,14 +110,14 @@ hide:
             **赛事主办** : [team Team] (https://ctftime.org/team/49808)  
             **添加日历** : https://ctftime.org/event/2241.ics  
             
-        ??? Quote "[Black Cell SecOps 2024 - Online Blue Teaming Jeopardy CTF](https://blackcell.io/ctf/)"  
-            [![](https://ctftime.org/media/events/SecOps2024_logo.png){ width="200" align=left }](https://blackcell.io/ctf/)  
-            **比赛名称** : [Black Cell SecOps 2024 - Online Blue Teaming Jeopardy CTF](https://blackcell.io/ctf/)  
+        ??? Quote "[BITSCTF 2024](https://ctf.bitskrieg.org/)"  
+            [![](https://ctftime.org/media/events/bitskrieg.jpg){ width="200" align=left }](https://ctf.bitskrieg.org/)  
+            **比赛名称** : [BITSCTF 2024](https://ctf.bitskrieg.org/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-02-14 15:00:00 - 2024-02-15 15:00:00 UTC+8  
+            **比赛时间** : 2024-02-16 02:30:00 - 2024-02-18 02:30:00 UTC+8  
             **比赛权重** : 0.00  
-            **赛事主办** : Black Cell Secops (https://ctftime.org/team/270941)  
-            **添加日历** : https://ctftime.org/event/2135.ics  
+            **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
+            **添加日历** : https://ctftime.org/event/2235.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
