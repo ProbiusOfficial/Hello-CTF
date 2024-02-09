@@ -83,15 +83,6 @@ hide:
             **其他说明** : 比赛时间未定  
                 
     === "国外比赛"
-        ??? Quote "[0xL4ugh CTF 2024](https://ctf24.0xl4ugh.com/)"  
-            [![](https://ctftime.org/media/events/logo_94.png){ width="200" align=left }](https://ctf24.0xl4ugh.com/)  
-            **比赛名称** : [0xL4ugh CTF 2024](https://ctf24.0xl4ugh.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-02-09 21:00:00 - 2024-02-10 21:00:00 UTC+8  
-            **比赛权重** : 25.00  
-            **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
-            **添加日历** : https://ctftime.org/event/2216.ics  
-            
         ??? Quote "[GoldCTF 2024](https://register.cbsctf.live/)"  
             [![](https://ctftime.org/media/events/Frame_13734128.png){ width="200" align=left }](https://register.cbsctf.live/)  
             **比赛名称** : [GoldCTF 2024](https://register.cbsctf.live/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
             **添加日历** : https://ctftime.org/event/2235.ics  
+            
+        ??? Quote "[SAIBORG - Elite Hacking Competition](https://www.saiborg.io/)"  
+            [![](https://ctftime.org/media/events/saiborg-profile.jpg){ width="200" align=left }](https://www.saiborg.io/)  
+            **比赛名称** : [SAIBORG - Elite Hacking Competition](https://www.saiborg.io/)  
+            **比赛形式** : Hack quest  
+            **比赛时间** : 2024-02-16 12:00:00 - 2024-02-16 18:30:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Saiborg (https://ctftime.org/team/271868)  
+            **添加日历** : https://ctftime.org/event/2147.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
