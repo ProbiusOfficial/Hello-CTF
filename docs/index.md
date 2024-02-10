@@ -83,24 +83,6 @@ hide:
             **其他说明** : 比赛时间未定  
                 
     === "国外比赛"
-        ??? Quote "[GoldCTF 2024](https://register.cbsctf.live/)"  
-            [![](https://ctftime.org/media/events/Frame_13734128.png){ width="200" align=left }](https://register.cbsctf.live/)  
-            **比赛名称** : [GoldCTF 2024](https://register.cbsctf.live/)  
-            **比赛形式** : Attack-Defense  
-            **比赛时间** : 2024-02-10 15:00:00 - 2024-02-10 23:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : C4T BuT S4D (https://ctftime.org/team/83435)  
-            **添加日历** : https://ctftime.org/event/2249.ics  
-            
-        ??? Quote "[Ugra CTF Quals 2024](https://2024.ugractf.ru/)"  
-            [![](https://ctftime.org/media/events/a5000124fdb12cd1be2c435692b3a8e6.jpg){ width="200" align=left }](https://2024.ugractf.ru/)  
-            **比赛名称** : [Ugra CTF Quals 2024](https://2024.ugractf.ru/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-02-10 15:00:00 - 2024-02-12 03:00:00 UTC+8  
-            **比赛权重** : 25.00  
-            **赛事主办** : [team Team] (https://ctftime.org/team/49808)  
-            **添加日历** : https://ctftime.org/event/2241.ics  
-            
         ??? Quote "[BITSCTF 2024](https://ctf.bitskrieg.org/)"  
             [![](https://ctftime.org/media/events/bitskrieg.jpg){ width="200" align=left }](https://ctf.bitskrieg.org/)  
             **比赛名称** : [BITSCTF 2024](https://ctf.bitskrieg.org/)  
@@ -118,6 +100,24 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Saiborg (https://ctftime.org/team/271868)  
             **添加日历** : https://ctftime.org/event/2147.ics  
+            
+        ??? Quote "[LA CTF 2024](https://lac.tf/)"  
+            [![](https://ctftime.org/media/events/lactf-square-logo_1.png){ width="200" align=left }](https://lac.tf/)  
+            **比赛名称** : [LA CTF 2024](https://lac.tf/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-02-17 12:00:00 - 2024-02-19 06:00:00 UTC+8  
+            **比赛权重** : 24.93  
+            **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
+            **添加日历** : https://ctftime.org/event/2102.ics  
+            
+        ??? Quote "[BraekerCTF](https://braekerctf.ctfd.io/)"  
+            [![](https://ctftime.org/media/events/AI_Robot4.png){ width="200" align=left }](https://braekerctf.ctfd.io/)  
+            **比赛名称** : [BraekerCTF](https://braekerctf.ctfd.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-02-23 20:00:00 - 2024-02-25 00:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Braeker (https://ctftime.org/team/274910)  
+            **添加日历** : https://ctftime.org/event/2181.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

@@ -33,3 +33,21 @@ comments: true
     **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
     **添加日历** : https://ctftime.org/event/2216.ics  
     
+??? Quote "[Ugra CTF Quals 2024](https://2024.ugractf.ru/)"  
+    [![](https://ctftime.org/media/events/a5000124fdb12cd1be2c435692b3a8e6.jpg){ width="200" align=left }](https://2024.ugractf.ru/)  
+    **比赛名称** : [Ugra CTF Quals 2024](https://2024.ugractf.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-10 15:00:00 - 2024-02-12 03:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : [team Team] (https://ctftime.org/team/49808)  
+    **添加日历** : https://ctftime.org/event/2241.ics  
+    
+??? Quote "[GoldCTF 2024](https://register.cbsctf.live/)"  
+    [![](https://ctftime.org/media/events/Frame_13734128.png){ width="200" align=left }](https://register.cbsctf.live/)  
+    **比赛名称** : [GoldCTF 2024](https://register.cbsctf.live/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-02-10 15:00:00 - 2024-02-10 23:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : C4T BuT S4D (https://ctftime.org/team/83435)  
+    **添加日历** : https://ctftime.org/event/2249.ics  
+    
