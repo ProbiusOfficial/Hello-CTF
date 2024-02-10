@@ -119,6 +119,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[0xL4ugh CTF 2024](https://ctf24.0xl4ugh.com/)"  
+    [![](https://ctftime.org/media/events/logo_94.png){ width="200" align=left }](https://ctf24.0xl4ugh.com/)  
+    **比赛名称** : [0xL4ugh CTF 2024](https://ctf24.0xl4ugh.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-09 21:00:00 - 2024-02-10 21:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
+    **添加日历** : https://ctftime.org/event/2216.ics  
+    
 ??? Quote "[Bearcat CTF 2024](https://www.bearcatctf.io/)"  
     [![](https://ctftime.org/media/events/bearcatlogo-cyberatuc.png){ width="200" align=left }](https://www.bearcatctf.io/)  
     **比赛名称** : [Bearcat CTF 2024](https://www.bearcatctf.io/)  
@@ -1009,13 +1018,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : FE-CTF (https://ctftime.org/team/200558)  
     **添加日历** : https://ctftime.org/event/1979.ics  
-    
-??? Quote "[Questcon CTF](https://questcon.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/favicon-removebg-preview.png){ width="200" align=left }](https://questcon.ctfd.io/)  
-    **比赛名称** : [Questcon CTF](https://questcon.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-27 12:30:00 - 2023-10-29 12:30:00 UTC+8  
-    **比赛权重** : 22.45  
-    **赛事主办** : OWASP_PCCOE-CORE (https://ctftime.org/team/206360)  
-    **添加日历** : https://ctftime.org/event/2141.ics  
     
