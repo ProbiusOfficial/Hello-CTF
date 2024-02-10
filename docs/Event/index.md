@@ -719,7 +719,7 @@ hide:
                 **比赛名称** : [UofTCTF 2024](https://ctf.uoftctf.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-01-14 01:00:00 - 2024-01-15 12:59:00 UTC+8  
-                **比赛权重** : 24.33  
+                **比赛权重** : 24.36  
                 **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
                 **添加日历** : https://ctftime.org/event/2219.ics  
                 
