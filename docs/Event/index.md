@@ -464,15 +464,6 @@ hide:
                 **赛事主办** : [team Team] (https://ctftime.org/team/49808)  
                 **添加日历** : https://ctftime.org/event/2241.ics  
                 
-            ??? Quote "[GoldCTF 2024](https://register.cbsctf.live/)"  
-                [![](https://ctftime.org/media/events/Frame_13734128.png){ width="200" align=left }](https://register.cbsctf.live/)  
-                **比赛名称** : [GoldCTF 2024](https://register.cbsctf.live/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2024-02-10 15:00:00 - 2024-02-10 23:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : C4T BuT S4D (https://ctftime.org/team/83435)  
-                **添加日历** : https://ctftime.org/event/2249.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[第二届BeginCTF](http://47.100.169.26/)"  
@@ -588,6 +579,15 @@ hide:
                 **其他说明** :   
                 
         === "国外赛事"
+            ??? Quote "[GoldCTF 2024](https://register.cbsctf.live/)"  
+                [![](https://ctftime.org/media/events/Frame_13734128.png){ width="200" align=left }](https://register.cbsctf.live/)  
+                **比赛名称** : [GoldCTF 2024](https://register.cbsctf.live/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2024-02-10 15:00:00 - 2024-02-10 23:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : C4T BuT S4D (https://ctftime.org/team/83435)  
+                **添加日历** : https://ctftime.org/event/2249.ics  
+                
             ??? Quote "[0xL4ugh CTF 2024](https://ctf24.0xl4ugh.com/)"  
                 [![](https://ctftime.org/media/events/logo_94.png){ width="200" align=left }](https://ctf24.0xl4ugh.com/)  
                 **比赛名称** : [0xL4ugh CTF 2024](https://ctf24.0xl4ugh.com/)  
@@ -1478,15 +1478,6 @@ hide:
                 **比赛权重** : 24.61  
                 **赛事主办** : Blue Hens (https://ctftime.org/team/64660)  
                 **添加日历** : https://ctftime.org/event/2126.ics  
-                
-            ??? Quote "[FE-CTF 2023: The UniPwnie Experience](https://fe-ctf.dk/)"  
-                [![](https://ctftime.org/media/events/UNI-PWNIE_logo.png){ width="200" align=left }](https://fe-ctf.dk/)  
-                **比赛名称** : [FE-CTF 2023: The UniPwnie Experience](https://fe-ctf.dk/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-10-27 19:37:00 - 2023-10-29 20:37:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : FE-CTF (https://ctftime.org/team/200558)  
-                **添加日历** : https://ctftime.org/event/1979.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
