@@ -9,17 +9,35 @@ hide:
 ---
 
 <style>
-    .event-running {
-        
-    }
-    
-    .event-oncoming {
-        background-color: #00bfa5;
-    }
-    
-    .event-ended {
-        background-color: #ff9100;
-    }
+#calendar {
+  margin-bottom: 0;
+  margin-top: 0;
+
+  font-size: 0.75rem;
+}
+
+#calendar :is(button[title="Next month"], button[title="list view"]) {
+  border-left: 0;
+}
+
+.fc-event-main {
+    color: black !important;
+}
+
+.fc .event-running {
+    border-color: #64dd17;
+    background-color: #64dd171a;
+}
+
+.fc .event-oncoming {
+    border-color: #00b0ff;
+    background-color: #00b0ff1a;
+}
+
+.fc .event-ended {
+    background-color: #9e9e9e26;
+    border-color: #9e9e9e;
+}
 </style>
 
 <script>
@@ -195,6 +213,14 @@ hide:
                 }
               }
             },
+            viewDidMount() {
+                calendarEl.querySelectorAll('button').forEach((ele) => {
+                    ele.classList.remove(...ele.classList)
+                    ele.classList.add('md-button')
+                    ele.style.padding = '0.5em'
+                    ele.style.borderRadius = '0'
+                })
+            },
             events: globalEvents,
             eventClick: function (info) {
                 info.jsEvent.preventDefault();
@@ -204,7 +230,13 @@ hide:
         });
         calendar.render();
         
-        globalThis.calendar = calendar;
+        // set class
+        calendarEl.querySelectorAll('button').forEach((ele) => {
+            ele.classList.remove(...ele.classList)
+            ele.classList.add('md-button')
+            ele.style.padding = '0.5em'
+            ele.style.borderRadius = '0'
+        })
     }
     
     // 前端路由变更
