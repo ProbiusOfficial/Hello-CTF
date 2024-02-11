@@ -455,15 +455,6 @@ hide:
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
                 
-            ??? Quote "[Ugra CTF Quals 2024](https://2024.ugractf.ru/)"  
-                [![](https://ctftime.org/media/events/a5000124fdb12cd1be2c435692b3a8e6.jpg){ width="200" align=left }](https://2024.ugractf.ru/)  
-                **比赛名称** : [Ugra CTF Quals 2024](https://2024.ugractf.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-02-10 15:00:00 - 2024-02-12 03:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : [team Team] (https://ctftime.org/team/49808)  
-                **添加日历** : https://ctftime.org/event/2241.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[第二届BeginCTF](http://47.100.169.26/)"  
@@ -579,6 +570,15 @@ hide:
                 **其他说明** :   
                 
         === "国外赛事"
+            ??? Quote "[Ugra CTF Quals 2024](https://2024.ugractf.ru/)"  
+                [![](https://ctftime.org/media/events/a5000124fdb12cd1be2c435692b3a8e6.jpg){ width="200" align=left }](https://2024.ugractf.ru/)  
+                **比赛名称** : [Ugra CTF Quals 2024](https://2024.ugractf.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-02-10 15:00:00 - 2024-02-12 03:00:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : [team Team] (https://ctftime.org/team/49808)  
+                **添加日历** : https://ctftime.org/event/2241.ics  
+                
             ??? Quote "[GoldCTF 2024](https://register.cbsctf.live/)"  
                 [![](https://ctftime.org/media/events/Frame_13734128.png){ width="200" align=left }](https://register.cbsctf.live/)  
                 **比赛名称** : [GoldCTF 2024](https://register.cbsctf.live/)  
@@ -1469,15 +1469,6 @@ hide:
                 **比赛权重** : 22.40  
                 **赛事主办** : NICC (https://ctftime.org/team/214936)  
                 **添加日历** : https://ctftime.org/event/2137.ics  
-                
-            ??? Quote "[BlueHens CTF 2023](https://bluehens.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/UDCTF-logo.png){ width="200" align=left }](https://bluehens.ctfd.io/)  
-                **比赛名称** : [BlueHens CTF 2023](https://bluehens.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-10-28 03:00:00 - 2023-10-30 03:00:00 UTC+8  
-                **比赛权重** : 24.61  
-                **赛事主办** : Blue Hens (https://ctftime.org/team/64660)  
-                **添加日历** : https://ctftime.org/event/2126.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
