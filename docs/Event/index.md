@@ -12,7 +12,6 @@ hide:
 #calendar {
   margin-bottom: 0;
   margin-top: 0;
-
   font-size: 0.75rem;
 }
 
@@ -191,6 +190,7 @@ hide:
         const globalEvents = await fetchGlobalCTFTime('https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/main/Global.json')
 
         const calendar = new FullCalendar.Calendar(calendarEl, {
+            height: 'auto',
             locale: "zh",
             headerToolbar: {
               start: "custom2 custom1",
