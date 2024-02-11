@@ -419,7 +419,7 @@ hide:
                 **添加日历** : https://ctftime.org/event/2243.ics  
                 
             ??? Quote "[Pointer Overflow CTF - 2024](http://pointeroverflowctf.com/)"  
-                [![](https://ctftime.org/media/events/social_media_profile_picture_with_branding_bar_example_1.png){ width="200" align=left }](http://pointeroverflowctf.com/)  
+                [![](https://ctftime.org/media/events/poctflogo1transp.png){ width="200" align=left }](http://pointeroverflowctf.com/)  
                 **比赛名称** : [Pointer Overflow CTF - 2024](http://pointeroverflowctf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-09-15 20:00:00 - 2025-01-19 20:00:00 UTC+8  
