@@ -110,14 +110,14 @@ hide:
             **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
             **添加日历** : https://ctftime.org/event/2102.ics  
             
-        ??? Quote "[BraekerCTF](https://braekerctf.ctfd.io/)"  
-            [![](https://ctftime.org/media/events/AI_Robot4.png){ width="200" align=left }](https://braekerctf.ctfd.io/)  
-            **比赛名称** : [BraekerCTF](https://braekerctf.ctfd.io/)  
+        ??? Quote "[BroncoCTF 2024](http://broncoctf.xyz/)"  
+            [![](https://ctftime.org){ width="200" align=left }](http://broncoctf.xyz/)  
+            **比赛名称** : [BroncoCTF 2024](http://broncoctf.xyz/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-02-23 20:00:00 - 2024-02-25 00:00:00 UTC+8  
+            **比赛时间** : 2024-02-18 03:00:00 - 2024-02-19 03:00:00 UTC+8  
             **比赛权重** : 0.00  
-            **赛事主办** : Braeker (https://ctftime.org/team/274910)  
-            **添加日历** : https://ctftime.org/event/2181.ics  
+            **赛事主办** : BroncoSec (https://ctftime.org/team/112673)  
+            **添加日历** : https://ctftime.org/event/2261.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
