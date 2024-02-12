@@ -24,18 +24,21 @@ hide:
 }
 
 .fc .event-running {
-    border-color: #64dd17;
+    border: 1px solid #64dd17;
     background-color: #64dd171a;
+    box-shadow: 0 0 5px #0000001a;
 }
 
 .fc .event-oncoming {
-    border-color: #00b0ff;
+    border: 1px solid #00b0ff;
     background-color: #00b0ff1a;
+    box-shadow: 0 0 5px #0000001a;
 }
 
 .fc .event-ended {
+    border: 1px solid #9e9e9e;
     background-color: #9e9e9e26;
-    border-color: #9e9e9e;
+    box-shadow: 0 0 5px #0000001a;
 }
 </style>
 
@@ -121,7 +124,8 @@ hide:
                     title: v.name,
                     url: v.link,
                     className: endTime < new Date() ? 'event-ended' : startTime > new Date() ? 'event-oncoming' : 'event-running',
-                    region: CN
+                    region: CN,
+                    display: 'block'
                 })
             } catch(err) {
                 console.error('日期解析错误！', err)
@@ -172,7 +176,8 @@ hide:
                     title: v.比赛名称,
                     url: v.比赛链接,
                     className: endTime < new Date() ? 'event-ended' : startTime > new Date() ? 'event-oncoming' : 'event-running',
-                    region: GLOBAL
+                    region: GLOBAL,
+                    display: 'block'
                 })
             } catch(err) {
                 console.error('日期解析错误！', err)
@@ -229,6 +234,8 @@ hide:
             }
         });
         calendar.render();
+        
+        globalThis.calendar = calendar;
         
         // set class
         calendarEl.querySelectorAll('button').forEach((ele) => {
