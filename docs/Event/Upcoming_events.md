@@ -410,15 +410,6 @@ comments: true
     **赛事主办** : View Source (https://ctftime.org/team/175828)  
     **添加日历** : https://ctftime.org/event/2248.ics  
     
-??? Quote "[AkaSec CTF 2024]()"  
-    [![](https://ctftime.org/media/events/akasec_icon-15.png){ width="200" align=left }]()  
-    **比赛名称** : [AkaSec CTF 2024]()  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-05 21:37:00 - 2024-06-07 21:37:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : AkaSec (https://ctftime.org/team/107202)  
-    **添加日历** : https://ctftime.org/event/2222.ics  
-    
 ??? Quote "[GPN CTF 2024](https://ctf.kitctf.me/)"  
     [![](https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d.png){ width="200" align=left }](https://ctf.kitctf.me/)  
     **比赛名称** : [GPN CTF 2024](https://ctf.kitctf.me/)  
@@ -427,6 +418,15 @@ comments: true
     **比赛权重** : 31.17  
     **赛事主办** : KITCTF (https://ctftime.org/team/7221)  
     **添加日历** : https://ctftime.org/event/2257.ics  
+    
+??? Quote "[AkaSec CTF 2024]()"  
+    [![](https://ctftime.org/media/events/akasec_icon-15.png){ width="200" align=left }]()  
+    **比赛名称** : [AkaSec CTF 2024]()  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-07 21:37:00 - 2024-06-09 21:37:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : AkaSec (https://ctftime.org/team/107202)  
+    **添加日历** : https://ctftime.org/event/2222.ics  
     
 ??? Quote "[Crypto CTF 2024](https://cr.yp.toc.tf/)"  
     [![](https://ctftime.org/media/events/cryptoctf.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  

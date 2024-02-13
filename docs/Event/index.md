@@ -490,15 +490,6 @@ hide:
                 **赛事主办** : View Source (https://ctftime.org/team/175828)  
                 **添加日历** : https://ctftime.org/event/2248.ics  
                 
-            ??? Quote "[AkaSec CTF 2024]()"  
-                [![](https://ctftime.org/media/events/akasec_icon-15.png){ width="200" align=left }]()  
-                **比赛名称** : [AkaSec CTF 2024]()  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-05 21:37:00 - 2024-06-07 21:37:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : AkaSec (https://ctftime.org/team/107202)  
-                **添加日历** : https://ctftime.org/event/2222.ics  
-                
             ??? Quote "[GPN CTF 2024](https://ctf.kitctf.me/)"  
                 [![](https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d.png){ width="200" align=left }](https://ctf.kitctf.me/)  
                 **比赛名称** : [GPN CTF 2024](https://ctf.kitctf.me/)  
@@ -507,6 +498,15 @@ hide:
                 **比赛权重** : 31.17  
                 **赛事主办** : KITCTF (https://ctftime.org/team/7221)  
                 **添加日历** : https://ctftime.org/event/2257.ics  
+                
+            ??? Quote "[AkaSec CTF 2024]()"  
+                [![](https://ctftime.org/media/events/akasec_icon-15.png){ width="200" align=left }]()  
+                **比赛名称** : [AkaSec CTF 2024]()  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-06-07 21:37:00 - 2024-06-09 21:37:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : AkaSec (https://ctftime.org/team/107202)  
+                **添加日历** : https://ctftime.org/event/2222.ics  
                 
             ??? Quote "[Crypto CTF 2024](https://cr.yp.toc.tf/)"  
                 [![](https://ctftime.org/media/events/cryptoctf.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
@@ -705,15 +705,6 @@ hide:
                 **其他说明** :   
                 
         === "国外赛事"
-            ??? Quote "[Ugra CTF Quals 2024](https://2024.ugractf.ru/)"  
-                [![](https://ctftime.org/media/events/a5000124fdb12cd1be2c435692b3a8e6.jpg){ width="200" align=left }](https://2024.ugractf.ru/)  
-                **比赛名称** : [Ugra CTF Quals 2024](https://2024.ugractf.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-02-10 15:00:00 - 2024-02-12 03:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : [team Team] (https://ctftime.org/team/49808)  
-                **添加日历** : https://ctftime.org/event/2241.ics  
-                
             ??? Quote "[GoldCTF 2024](https://register.cbsctf.live/)"  
                 [![](https://ctftime.org/media/events/Frame_13734128.png){ width="200" align=left }](https://register.cbsctf.live/)  
                 **比赛名称** : [GoldCTF 2024](https://register.cbsctf.live/)  
@@ -722,6 +713,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : C4T BuT S4D (https://ctftime.org/team/83435)  
                 **添加日历** : https://ctftime.org/event/2249.ics  
+                
+            ??? Quote "[Ugra CTF Quals 2024](https://2024.ugractf.ru/)"  
+                [![](https://ctftime.org/media/events/a5000124fdb12cd1be2c435692b3a8e6.jpg){ width="200" align=left }](https://2024.ugractf.ru/)  
+                **比赛名称** : [Ugra CTF Quals 2024](https://2024.ugractf.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-02-10 15:00:00 - 2024-02-12 03:00:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : [team Team] (https://ctftime.org/team/49808)  
+                **添加日历** : https://ctftime.org/event/2241.ics  
                 
             ??? Quote "[0xL4ugh CTF 2024](https://ctf24.0xl4ugh.com/)"  
                 [![](https://ctftime.org/media/events/logo_94.png){ width="200" align=left }](https://ctf24.0xl4ugh.com/)  
@@ -827,7 +827,7 @@ hide:
                 **比赛名称** : [Mapna CTF 2024](https://mapnactf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-01-20 23:00:00 - 2024-01-21 23:00:00 UTC+8  
-                **比赛权重** : 24.52  
+                **比赛权重** : 24.55  
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/2205.ics  
                 
@@ -854,7 +854,7 @@ hide:
                 **比赛名称** : [UofTCTF 2024](https://ctf.uoftctf.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-01-14 01:00:00 - 2024-01-15 12:59:00 UTC+8  
-                **比赛权重** : 24.36  
+                **比赛权重** : 24.39  
                 **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
                 **添加日历** : https://ctftime.org/event/2219.ics  
                 
