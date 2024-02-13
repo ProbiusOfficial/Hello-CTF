@@ -59,7 +59,7 @@ hide:
             
         ??? Quote "[NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)"  
             **比赛名称** : [NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)  
-            **比赛类型** : 个人赛  
+            **比赛类型** : 团队赛|1-3人  
             **报名时间** : 2024年02月06日 09:30 - 2024年02月14日 09:30  
             **比赛时间** : 2024年02月14日 09:30 - 2024年02月14日 17:30  
             **其他说明** : QQ群：521330139  
@@ -96,7 +96,7 @@ hide:
                 
             ??? Quote "[NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)"  
                 **比赛名称** : [NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)  
-                **比赛类型** : 个人赛  
+                **比赛类型** : 团队赛|1-3人  
                 **报名时间** : 2024年02月06日 09:30 - 2024年02月14日 09:30  
                 **比赛时间** : 2024年02月14日 09:30 - 2024年02月14日 17:30  
                 **其他说明** : QQ群：521330139  
