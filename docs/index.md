@@ -54,13 +54,6 @@ hide:
     ---
     <!-- 主页赛事展示_开始 -->
     === "国内比赛"
-        ??? Quote "[NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)"  
-            **比赛名称** : [NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)  
-            **比赛类型** : 团队赛|1-3人  
-            **报名时间** : 2024年02月06日 09:30 - 2024年02月14日 09:30  
-            **比赛时间** : 2024年02月14日 09:30 - 2024年02月14日 17:30  
-            **其他说明** : QQ群：521330139  
-            
         ??? Quote "[SICTF Round#3](http://ctf.shumunet.cn/)"  
             **比赛名称** : [SICTF Round#3](http://ctf.shumunet.cn/)  
             **比赛类型** : 团队赛|1-3人  
@@ -81,6 +74,13 @@ hide:
             **报名时间** : 2023年11月15日 00:00 - 2024年01月19日 18:00  
             **比赛时间** : 2024年02月24日 10:00 - 2024年02月24日 18:00  
             **其他说明** : 比赛时间未定  
+            
+        ??? Quote "[青少年CTF擂台挑战赛 2024 #Round 1](https://www.qsnctf.com/#/main/race-center/race-guide?id=11)"  
+            **比赛名称** : [青少年CTF擂台挑战赛 2024 #Round 1](https://www.qsnctf.com/#/main/race-center/race-guide?id=11)  
+            **比赛类型** : 团队赛|1-4人  
+            **报名时间** : 2024年02月05日 00:00 - 2024年02月28日 22:00  
+            **比赛时间** : 2024年02月29日 09:00 - 2024年03月01日 22:00  
+            **其他说明** : QQ 群号：820016571  
                 
     === "国外比赛"
         ??? Quote "[BITSCTF 2024](https://ctf.bitskrieg.org/)"  
