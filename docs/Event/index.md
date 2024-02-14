@@ -793,13 +793,6 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-            ??? Quote "[NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)"  
-                **比赛名称** : [NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)  
-                **比赛类型** : 团队赛|1-3人  
-                **报名时间** : 2024年02月06日 09:30 - 2024年02月14日 09:30  
-                **比赛时间** : 2024年02月14日 09:30 - 2024年02月14日 17:30  
-                **其他说明** : QQ群：521330139  
-                
             ??? Quote "[HGAME2024网络攻防大赛](https://hgame.vidar.club)"  
                 **比赛名称** : [HGAME2024网络攻防大赛](https://hgame.vidar.club)  
                 **比赛类型** : 个人赛  
@@ -819,6 +812,13 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)"  
+                **比赛名称** : [NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)  
+                **比赛类型** : 团队赛|1-3人  
+                **报名时间** : 2024年02月06日 09:30 - 2024年02月14日 09:30  
+                **比赛时间** : 2024年02月14日 09:30 - 2024年02月14日 17:30  
+                **其他说明** : QQ群：521330139  
+                
             ??? Quote "[第二届BeginCTF](http://47.100.169.26/)"  
                 **比赛名称** : [第二届BeginCTF](http://47.100.169.26/)  
                 **比赛类型** : 个人赛  
