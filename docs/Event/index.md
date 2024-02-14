@@ -8,30 +8,264 @@ hide:
   - view
 ---
 
-<!-- 注意 由于mkdocs特殊的渲染读取方式 此处的HTML请勿格式化 且 请保证每个标签在渲染区域内都没有缩进 -->
+<style>
+#calendar {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 0.75rem;
+}
+
+#calendar :is(button[title="Next month"], button[title="list view"]) {
+  border-left: 0;
+}
+
+.fc-event-main {
+    color: black !important;
+}
+
+.fc .event-running {
+    border: 1px solid #64dd17;
+    background-color: #64dd171a;
+    box-shadow: 0 0 5px #0000001a;
+}
+
+.fc .event-oncoming {
+    border: 1px solid #00b0ff;
+    background-color: #00b0ff1a;
+    box-shadow: 0 0 5px #0000001a;
+}
+
+.fc .event-ended {
+    border: 1px solid #9e9e9e;
+    background-color: #9e9e9e26;
+    box-shadow: 0 0 5px #0000001a;
+}
+</style>
 
 <script>
+    /** 
+     * @description 解析日期 格式为 YYYY年MM月DD日 HH:mm
+     * @param rawTime {string}
+     */
+    function parseCNTime(rawTime) {
+        const year = parseInt(rawTime.substr(0, 4))
+        const month = parseInt(rawTime.substr(5, 2)) - 1
+        const day = parseInt(rawTime.substr(8, 2))
+        const hour = parseInt(rawTime.substr(12, 2))
+        const minute = parseInt(rawTime.substr(15, 2))
+        return new Date(year, month, day, hour, minute)
+    }
+    
+    /** 
+     * @description 解析日期 格式为 YYYY年MM月DD日 HH:mm
+     * @param rawTime {string}
+     */
+    function parseGlobalTime(rawTime) {
+        const [startDate, endDate] = rawTime.split(' - ')
+        return [new Date(startDate), new Date(endDate)]
+    }
+    
+    const CN = 'cn'
+    const GLOBAL = 'gl'
 
-// 在此处初始化赛事日历的JS代码
+    /**
+     * @param feed {string}
+     */
+    async function fetchCNCTFTime(feed) {
+        const res = await fetch(feed)
+        /** 
+         * @type {{data: {result: Array<{
+         *   name: string
+         *   link: string
+         *   type: string
+         *   bmks: string
+         *   bmjz: string
+         *   bsks: string
+         *   bsjs: string
+         *   readmore: string
+         *   id: number
+         *   status: number
+         * }>}}}
+         */
+        const timeData = await res.json();
+        
+        /**
+         * @description 传给 fullcalendar
+         * @type {Array<{
+         *   id: number
+         *   start: string
+         *   end: string
+         *   title: string
+         *   url: link
+         *   className: string
+         *   region: CN | GLOBAL
+         * >}}
+         */
+        const events = []
+        timeData.data.result.forEach((v) => {
+            try {
+                // // 报名时间段
+                // events.push({
+                //     id: v.id,
+                //     start: parseTime(v.bmks),
+                //     end: parseTime(v.bmjz),
+                //     title: v.name + '（报名时间）',
+                //     url: v.link,
+                //     region: CN
+                // })
+                const startTime = parseCNTime(v.bsks)
+                const endTime = parseCNTime(v.bsjs)
+
+                // 比赛时间段
+                events.push({
+                    id: v.id,
+                    start: startTime.toISOString(),
+                    end: endTime.toISOString(),
+                    title: v.name,
+                    url: v.link,
+                    className: endTime < new Date() ? 'event-ended' : startTime > new Date() ? 'event-oncoming' : 'event-running',
+                    region: CN,
+                    display: 'block'
+                })
+            } catch(err) {
+                console.error('日期解析错误！', err)
+                console.error(v)
+            }
+        })
+        
+        return events;
+    }
+
+    /**
+     * @param feed {string}
+     */
+    async function fetchGlobalCTFTime(feed) {
+        const res = await fetch(feed)
+        /** 
+         * @type Array<{
+         *   "比赛名称": string
+         *   "比赛时间": string
+         *   "比赛链接": string
+         *   "比赛ID": string
+         * }>
+         */
+        const timeData = await res.json();
+        
+        /**
+         * @description 传给 fullcalendar
+         * @type {Array<{
+         *   id: number
+         *   start: string
+         *   end: string
+         *   title: string
+         *   url: link
+         *   classNames: string[]
+         *   region: CN | GLOBAL
+         * }>}
+         */
+        const events = []
+
+        timeData.forEach((v) => {
+            try {
+                const [startTime, endTime] = parseGlobalTime(v.比赛时间)
+
+                events.push({
+                    id: v.id,
+                    start: startTime.toISOString(),
+                    end: endTime.toISOString(),
+                    title: v.比赛名称,
+                    url: v.比赛链接,
+                    className: endTime < new Date() ? 'event-ended' : startTime > new Date() ? 'event-oncoming' : 'event-running',
+                    region: GLOBAL,
+                    display: 'block'
+                })
+            } catch(err) {
+                console.error('日期解析错误！', err)
+                console.error(v)
+            }
+        })
+        
+        return events;
+    }
+
+    async function loadCalendar() {
+        const calendarEl = document.getElementById('calendar')
+        
+        const cnEvents = await fetchCNCTFTime('https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/main/CN.json')
+        const globalEvents = await fetchGlobalCTFTime('https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/main/Global.json')
+
+        const calendar = new FullCalendar.Calendar(calendarEl, {
+            height: 'auto',
+            locale: "zh",
+            headerToolbar: {
+              start: "custom2 custom1",
+              center: "title",
+              end: "prev,next dayGridMonth,listMonth"
+            },
+            customButtons: {
+              custom1: {
+                text: "只看国内",
+                click: function () {
+                    calendar.removeAllEventSources();
+                    calendar.addEventSource(cnEvents);
+                }
+              },
+              custom2: {
+                text: "只看国外",
+                click: function () {
+                    calendar.removeAllEventSources();
+                    calendar.addEventSource(globalEvents);
+                }
+              }
+            },
+            viewDidMount() {
+                calendarEl.querySelectorAll('button').forEach((ele) => {
+                    ele.classList.remove(...ele.classList)
+                    ele.classList.add('md-button')
+                    ele.style.padding = '0.5em'
+                    ele.style.borderRadius = '0'
+                })
+            },
+            events: globalEvents,
+            eventClick: function (info) {
+                info.jsEvent.preventDefault();
+
+                if (info.event.url) window.open(info.event.url);
+            }
+        });
+        calendar.render();
+        
+        globalThis.calendar = calendar;
+        
+        // set class
+        calendarEl.querySelectorAll('button').forEach((ele) => {
+            ele.classList.remove(...ele.classList)
+            ele.classList.add('md-button')
+            ele.style.padding = '0.5em'
+            ele.style.borderRadius = '0'
+        })
+    }
+    
+    // 前端路由变更
+    if (document.getElementById('calendar')) loadCalendar()
+    else 
+    // 首次进入
+        document.addEventListener('DOMContentLoaded', loadCalendar)
 
 </script>
 
-
 <div class="grid cards">
-<ul>
-<li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 14H7v2h7m5 3H5V8h14m0-5h-1V1h-2v2H8V1H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-2 7H7v2h10v-2Z"></path></svg></span> <strong>赛事日历</strong></p>
-<hr>
-<div class="grid cards">
-
-<!-- 日历 HTML部分 -->
-<div id='calendar'></div>
-
+  <ul>
+    <li>
+      <p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 14H7v2h7m5 3H5V8h14m0-5h-1V1h-2v2H8V1H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-2 7H7v2h10v-2Z"></path></svg></span> <strong>赛事日历</strong></p>
+      <hr>
+      <div class="grid cards">
+        <!-- 日历 HTML部分 -->
+        <div id='calendar' />
+      </div>
+    </li>
+  </ul>
 </div>
-</li>
-</ul>
-</div>
-
 
 <div class="grid cards"  markdown>
 
