@@ -98,3 +98,14 @@ body {
       grid-template-columns: none !important;
   }
 }
+
+
+/* FullCalendar CSS Part*/
+
+#calendar {
+  margin-bottom: 0;
+  margin-top: 0;
+
+  font-size: 0.75rem;
+}
+
