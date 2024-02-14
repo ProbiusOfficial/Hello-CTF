@@ -665,15 +665,6 @@ hide:
                 **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
                 **添加日历** : https://ctftime.org/event/2229.ics  
                 
-            ??? Quote "[CyberSecurityRumble Quals](https://hacking-meisterschaft.de/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://hacking-meisterschaft.de/)  
-                **比赛名称** : [CyberSecurityRumble Quals](https://hacking-meisterschaft.de/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-04 21:00:00 - 2024-05-05 21:00:00 UTC+8  
-                **比赛权重** : 100.00  
-                **赛事主办** : RedRocket (https://ctftime.org/team/48677)  
-                **添加日历** : https://ctftime.org/event/2224.ics  
-                
             ??? Quote "[CrewCTF 2024](https://crewc.tf/)"  
                 [![](https://ctftime.org/media/events/THC_new.png){ width="200" align=left }](https://crewc.tf/)  
                 **比赛名称** : [CrewCTF 2024](https://crewc.tf/)  
@@ -682,6 +673,15 @@ hide:
                 **比赛权重** : 26.89  
                 **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
                 **添加日历** : https://ctftime.org/event/2223.ics  
+                
+            ??? Quote "[CyberSecurityRumble Quals](https://hacking-meisterschaft.de/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://hacking-meisterschaft.de/)  
+                **比赛名称** : [CyberSecurityRumble Quals](https://hacking-meisterschaft.de/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-05-11 21:00:00 - 2024-05-12 21:00:00 UTC+8  
+                **比赛权重** : 100.00  
+                **赛事主办** : RedRocket (https://ctftime.org/team/48677)  
+                **添加日历** : https://ctftime.org/event/2224.ics  
                 
             ??? Quote "[BYUCTF 2024](https://cyberjousting.com/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://cyberjousting.com/)  
