@@ -27,7 +27,7 @@ comments: true
     **其他说明** : 比赛时间2024年3月  
     
 ??? Quote "SICTF Round#3"  
-    **比赛名称** : [SICTF Round#3](http://ctf.shumunet.cn/)  
+    **比赛名称** : [SICTF Round#3](https://yuanshen.life/)  
     **比赛类型** : 团队赛|1-3人  
     **报名时间** : 2024年01月11日 14:00 - 2024年02月18日 09:00  
     **比赛时间** : 2024年02月16日 09:00 - 2024年02月18日 18:00  
