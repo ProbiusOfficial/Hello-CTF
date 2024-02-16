@@ -350,24 +350,6 @@ hide:
                 **其他说明** : 比赛时间未定  
                 
         === "国外赛事"
-            ??? Quote "[BITSCTF 2024](https://ctf.bitskrieg.org/)"  
-                [![](https://ctftime.org/media/events/bitskrieg.jpg){ width="200" align=left }](https://ctf.bitskrieg.org/)  
-                **比赛名称** : [BITSCTF 2024](https://ctf.bitskrieg.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-02-16 02:30:00 - 2024-02-18 02:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
-                **添加日历** : https://ctftime.org/event/2235.ics  
-                
-            ??? Quote "[SAIBORG - Elite Hacking Competition](https://www.saiborg.io/)"  
-                [![](https://ctftime.org/media/events/saiborg-profile.jpg){ width="200" align=left }](https://www.saiborg.io/)  
-                **比赛名称** : [SAIBORG - Elite Hacking Competition](https://www.saiborg.io/)  
-                **比赛形式** : Hack quest  
-                **比赛时间** : 2024-02-16 12:00:00 - 2024-02-16 18:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Saiborg (https://ctftime.org/team/271868)  
-                **添加日历** : https://ctftime.org/event/2147.ics  
-                
             ??? Quote "[LA CTF 2024](https://lac.tf/)"  
                 [![](https://ctftime.org/media/events/lactf-square-logo_1.png){ width="200" align=left }](https://lac.tf/)  
                 **比赛名称** : [LA CTF 2024](https://lac.tf/)  
@@ -539,9 +521,9 @@ hide:
                 **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
                 **添加日历** : https://ctftime.org/event/2196.ics  
                 
-            ??? Quote "[JerseyCTF IV](https://www.jerseyctf.com/)"  
-                [![](https://ctftime.org/media/events/lock.png){ width="200" align=left }](https://www.jerseyctf.com/)  
-                **比赛名称** : [JerseyCTF IV](https://www.jerseyctf.com/)  
+            ??? Quote "[JerseyCTF IV](https://ctf.jerseyctf.com/)"  
+                [![](https://ctftime.org/media/events/lock.png){ width="200" align=left }](https://ctf.jerseyctf.com/)  
+                **比赛名称** : [JerseyCTF IV](https://ctf.jerseyctf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-03-24 00:00:00 - 2024-03-25 00:00:00 UTC+8  
                 **比赛权重** : 21.26  
@@ -810,6 +792,15 @@ hide:
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
                 
+            ??? Quote "[BITSCTF 2024](https://ctf.bitskrieg.org/)"  
+                [![](https://ctftime.org/media/events/bitskrieg.jpg){ width="200" align=left }](https://ctf.bitskrieg.org/)  
+                **比赛名称** : [BITSCTF 2024](https://ctf.bitskrieg.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-02-16 02:30:00 - 2024-02-18 02:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
+                **添加日历** : https://ctftime.org/event/2235.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)"  
@@ -932,6 +923,15 @@ hide:
                 **其他说明** :   
                 
         === "国外赛事"
+            ??? Quote "[SAIBORG - Elite Hacking Competition](https://www.saiborg.io/)"  
+                [![](https://ctftime.org/media/events/saiborg-profile.jpg){ width="200" align=left }](https://www.saiborg.io/)  
+                **比赛名称** : [SAIBORG - Elite Hacking Competition](https://www.saiborg.io/)  
+                **比赛形式** : Hack quest  
+                **比赛时间** : 2024-02-16 12:00:00 - 2024-02-16 18:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Saiborg (https://ctftime.org/team/271868)  
+                **添加日历** : https://ctftime.org/event/2147.ics  
+                
             ??? Quote "[GoldCTF 2024](https://register.cbsctf.live/)"  
                 [![](https://ctftime.org/media/events/Frame_13734128.png){ width="200" align=left }](https://register.cbsctf.live/)  
                 **比赛名称** : [GoldCTF 2024](https://register.cbsctf.live/)  
@@ -1822,15 +1822,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : paradigm.xyz (https://ctftime.org/team/144256)  
                 **添加日历** : https://ctftime.org/event/2151.ics  
-                
-            ??? Quote "[SpookyCTF 2023](https://spooky.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/spookyctf.jpg){ width="200" align=left }](https://spooky.ctfd.io/)  
-                **比赛名称** : [SpookyCTF 2023](https://spooky.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-10-28 07:00:00 - 2023-10-29 08:00:00 UTC+8  
-                **比赛权重** : 22.40  
-                **赛事主办** : NICC (https://ctftime.org/team/214936)  
-                **添加日历** : https://ctftime.org/event/2137.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

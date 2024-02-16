@@ -83,24 +83,6 @@ hide:
             **其他说明** : QQ 群号：820016571  
                 
     === "国外比赛"
-        ??? Quote "[BITSCTF 2024](https://ctf.bitskrieg.org/)"  
-            [![](https://ctftime.org/media/events/bitskrieg.jpg){ width="200" align=left }](https://ctf.bitskrieg.org/)  
-            **比赛名称** : [BITSCTF 2024](https://ctf.bitskrieg.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-02-16 02:30:00 - 2024-02-18 02:30:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
-            **添加日历** : https://ctftime.org/event/2235.ics  
-            
-        ??? Quote "[SAIBORG - Elite Hacking Competition](https://www.saiborg.io/)"  
-            [![](https://ctftime.org/media/events/saiborg-profile.jpg){ width="200" align=left }](https://www.saiborg.io/)  
-            **比赛名称** : [SAIBORG - Elite Hacking Competition](https://www.saiborg.io/)  
-            **比赛形式** : Hack quest  
-            **比赛时间** : 2024-02-16 12:00:00 - 2024-02-16 18:30:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Saiborg (https://ctftime.org/team/271868)  
-            **添加日历** : https://ctftime.org/event/2147.ics  
-            
         ??? Quote "[LA CTF 2024](https://lac.tf/)"  
             [![](https://ctftime.org/media/events/lactf-square-logo_1.png){ width="200" align=left }](https://lac.tf/)  
             **比赛名称** : [LA CTF 2024](https://lac.tf/)  
@@ -118,6 +100,24 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : BroncoSec (https://ctftime.org/team/112673)  
             **添加日历** : https://ctftime.org/event/2261.ics  
+            
+        ??? Quote "[BraekerCTF](https://braekerctf.ctfd.io/)"  
+            [![](https://ctftime.org/media/events/AI_Robot4.png){ width="200" align=left }](https://braekerctf.ctfd.io/)  
+            **比赛名称** : [BraekerCTF](https://braekerctf.ctfd.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-02-23 20:00:00 - 2024-02-25 00:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Braeker (https://ctftime.org/team/274910)  
+            **添加日历** : https://ctftime.org/event/2181.ics  
+            
+        ??? Quote "[bi0sCTF 2024](https://ctf.bi0s.in/)"  
+            [![](https://ctftime.org/media/events/Untitled-removebg-preview_1.png){ width="200" align=left }](https://ctf.bi0s.in/)  
+            **比赛名称** : [bi0sCTF 2024](https://ctf.bi0s.in/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-02-24 20:00:00 - 2024-02-26 08:00:00 UTC+8  
+            **比赛权重** : 79.83  
+            **赛事主办** : bi0s (https://ctftime.org/team/662)  
+            **添加日历** : https://ctftime.org/event/2117.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

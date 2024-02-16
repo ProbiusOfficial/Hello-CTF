@@ -43,24 +43,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[BITSCTF 2024](https://ctf.bitskrieg.org/)"  
-    [![](https://ctftime.org/media/events/bitskrieg.jpg){ width="200" align=left }](https://ctf.bitskrieg.org/)  
-    **比赛名称** : [BITSCTF 2024](https://ctf.bitskrieg.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-02-16 02:30:00 - 2024-02-18 02:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
-    **添加日历** : https://ctftime.org/event/2235.ics  
-    
-??? Quote "[SAIBORG - Elite Hacking Competition](https://www.saiborg.io/)"  
-    [![](https://ctftime.org/media/events/saiborg-profile.jpg){ width="200" align=left }](https://www.saiborg.io/)  
-    **比赛名称** : [SAIBORG - Elite Hacking Competition](https://www.saiborg.io/)  
-    **比赛形式** : Hack quest  
-    **比赛时间** : 2024-02-16 12:00:00 - 2024-02-16 18:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Saiborg (https://ctftime.org/team/271868)  
-    **添加日历** : https://ctftime.org/event/2147.ics  
-    
 ??? Quote "[LA CTF 2024](https://lac.tf/)"  
     [![](https://ctftime.org/media/events/lactf-square-logo_1.png){ width="200" align=left }](https://lac.tf/)  
     **比赛名称** : [LA CTF 2024](https://lac.tf/)  
@@ -232,9 +214,9 @@ comments: true
     **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
     **添加日历** : https://ctftime.org/event/2196.ics  
     
-??? Quote "[JerseyCTF IV](https://www.jerseyctf.com/)"  
-    [![](https://ctftime.org/media/events/lock.png){ width="200" align=left }](https://www.jerseyctf.com/)  
-    **比赛名称** : [JerseyCTF IV](https://www.jerseyctf.com/)  
+??? Quote "[JerseyCTF IV](https://ctf.jerseyctf.com/)"  
+    [![](https://ctftime.org/media/events/lock.png){ width="200" align=left }](https://ctf.jerseyctf.com/)  
+    **比赛名称** : [JerseyCTF IV](https://ctf.jerseyctf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-03-24 00:00:00 - 2024-03-25 00:00:00 UTC+8  
     **比赛权重** : 21.26  

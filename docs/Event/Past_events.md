@@ -126,6 +126,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[SAIBORG - Elite Hacking Competition](https://www.saiborg.io/)"  
+    [![](https://ctftime.org/media/events/saiborg-profile.jpg){ width="200" align=left }](https://www.saiborg.io/)  
+    **比赛名称** : [SAIBORG - Elite Hacking Competition](https://www.saiborg.io/)  
+    **比赛形式** : Hack quest  
+    **比赛时间** : 2024-02-16 12:00:00 - 2024-02-16 18:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Saiborg (https://ctftime.org/team/271868)  
+    **添加日历** : https://ctftime.org/event/2147.ics  
+    
 ??? Quote "[GoldCTF 2024](https://register.cbsctf.live/)"  
     [![](https://ctftime.org/media/events/Frame_13734128.png){ width="200" align=left }](https://register.cbsctf.live/)  
     **比赛名称** : [GoldCTF 2024](https://register.cbsctf.live/)  
@@ -1016,13 +1025,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : paradigm.xyz (https://ctftime.org/team/144256)  
     **添加日历** : https://ctftime.org/event/2151.ics  
-    
-??? Quote "[SpookyCTF 2023](https://spooky.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/spookyctf.jpg){ width="200" align=left }](https://spooky.ctfd.io/)  
-    **比赛名称** : [SpookyCTF 2023](https://spooky.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-28 07:00:00 - 2023-10-29 08:00:00 UTC+8  
-    **比赛权重** : 22.40  
-    **赛事主办** : NICC (https://ctftime.org/team/214936)  
-    **添加日历** : https://ctftime.org/event/2137.ics  
     
