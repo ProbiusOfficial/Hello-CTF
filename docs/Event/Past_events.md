@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Quote "VNCTF 2024"  
+    **比赛名称** : [VNCTF 2024](https://vnctf2024.manqiu.top/)  
+    **比赛类型** : 个人赛  
+    **报名时间** : 2023年02月18日 21:00 - 2024年02月17日 20:00  
+    **比赛时间** : 2024年02月17日 08:00 - 2024年02月17日 20:00  
+    **其他说明** : V&N 联合战队招新赛，赛事QQ群：717513199  
+    
 ??? Quote "NSSCTF Round#18 Basic"  
     **比赛名称** : [NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)  
     **比赛类型** : 团队赛|1-3人  
