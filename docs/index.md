@@ -83,15 +83,6 @@ hide:
             **其他说明** : 比赛时间2024年3月  
                 
     === "国外比赛"
-        ??? Quote "[BroncoCTF 2024](http://broncoctf.xyz/)"  
-            [![](https://ctftime.org){ width="200" align=left }](http://broncoctf.xyz/)  
-            **比赛名称** : [BroncoCTF 2024](http://broncoctf.xyz/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-02-18 03:00:00 - 2024-02-19 03:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : BroncoSec (https://ctftime.org/team/112673)  
-            **添加日历** : https://ctftime.org/event/2261.ics  
-            
         ??? Quote "[BraekerCTF](https://braekerctf.ctfd.io/)"  
             [![](https://ctftime.org/media/events/AI_Robot4.png){ width="200" align=left }](https://braekerctf.ctfd.io/)  
             **比赛名称** : [BraekerCTF](https://braekerctf.ctfd.io/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
             **添加日历** : https://ctftime.org/event/2165.ics  
+            
+        ??? Quote "[GCC CTF 2024](https://gcc-ctf.com/)"  
+            [![](https://ctftime.org/media/events/Logo_GCC_White_Font.png){ width="200" align=left }](https://gcc-ctf.com/)  
+            **比赛名称** : [GCC CTF 2024](https://gcc-ctf.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-03-02 04:00:00 - 2024-03-04 04:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Galette Cidre CTF (https://ctftime.org/team/246488)  
+            **添加日历** : https://ctftime.org/event/2251.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

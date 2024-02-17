@@ -142,6 +142,15 @@ comments: true
     **赛事主办** : Saiborg (https://ctftime.org/team/271868)  
     **添加日历** : https://ctftime.org/event/2147.ics  
     
+??? Quote "[BITSCTF 2024](https://ctf.bitskrieg.org/)"  
+    [![](https://ctftime.org/media/events/bitskrieg.jpg){ width="200" align=left }](https://ctf.bitskrieg.org/)  
+    **比赛名称** : [BITSCTF 2024](https://ctf.bitskrieg.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-16 02:30:00 - 2024-02-18 02:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
+    **添加日历** : https://ctftime.org/event/2235.ics  
+    
 ??? Quote "[GoldCTF 2024](https://register.cbsctf.live/)"  
     [![](https://ctftime.org/media/events/Frame_13734128.png){ width="200" align=left }](https://register.cbsctf.live/)  
     **比赛名称** : [GoldCTF 2024](https://register.cbsctf.live/)  
@@ -1023,13 +1032,4 @@ comments: true
     **比赛权重** : 23.80  
     **赛事主办** : Azure Assassin Alliance (https://ctftime.org/team/4070)  
     **添加日历** : https://ctftime.org/event/2104.ics  
-    
-??? Quote "[Paradigm CTF 2023](https://ctf.paradigm.xyz/)"  
-    [![](https://ctftime.org/media/events/CTF.png){ width="200" align=left }](https://ctf.paradigm.xyz/)  
-    **比赛名称** : [Paradigm CTF 2023](https://ctf.paradigm.xyz/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-28 08:00:00 - 2023-10-30 08:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : paradigm.xyz (https://ctftime.org/team/144256)  
-    **添加日历** : https://ctftime.org/event/2151.ics  
     

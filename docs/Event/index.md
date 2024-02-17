@@ -336,15 +336,6 @@ hide:
                 **其他说明** : 比赛时间未定  
                 
         === "国外赛事"
-            ??? Quote "[BroncoCTF 2024](http://broncoctf.xyz/)"  
-                [![](https://ctftime.org){ width="200" align=left }](http://broncoctf.xyz/)  
-                **比赛名称** : [BroncoCTF 2024](http://broncoctf.xyz/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-02-18 03:00:00 - 2024-02-19 03:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : BroncoSec (https://ctftime.org/team/112673)  
-                **添加日历** : https://ctftime.org/event/2261.ics  
-                
             ??? Quote "[BraekerCTF](https://braekerctf.ctfd.io/)"  
                 [![](https://ctftime.org/media/events/AI_Robot4.png){ width="200" align=left }](https://braekerctf.ctfd.io/)  
                 **比赛名称** : [BraekerCTF](https://braekerctf.ctfd.io/)  
@@ -769,15 +760,6 @@ hide:
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
                 
-            ??? Quote "[BITSCTF 2024](https://ctf.bitskrieg.org/)"  
-                [![](https://ctftime.org/media/events/bitskrieg.jpg){ width="200" align=left }](https://ctf.bitskrieg.org/)  
-                **比赛名称** : [BITSCTF 2024](https://ctf.bitskrieg.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-02-16 02:30:00 - 2024-02-18 02:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
-                **添加日历** : https://ctftime.org/event/2235.ics  
-                
             ??? Quote "[LA CTF 2024](https://lac.tf/)"  
                 [![](https://ctftime.org/media/events/lactf-square-logo_1.png){ width="200" align=left }](https://lac.tf/)  
                 **比赛名称** : [LA CTF 2024](https://lac.tf/)  
@@ -786,6 +768,15 @@ hide:
                 **比赛权重** : 24.93  
                 **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
                 **添加日历** : https://ctftime.org/event/2102.ics  
+                
+            ??? Quote "[BroncoCTF 2024](http://broncoctf.xyz/)"  
+                [![](https://ctftime.org){ width="200" align=left }](http://broncoctf.xyz/)  
+                **比赛名称** : [BroncoCTF 2024](http://broncoctf.xyz/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-02-18 03:00:00 - 2024-02-19 03:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : BroncoSec (https://ctftime.org/team/112673)  
+                **添加日历** : https://ctftime.org/event/2261.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -924,6 +915,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Saiborg (https://ctftime.org/team/271868)  
                 **添加日历** : https://ctftime.org/event/2147.ics  
+                
+            ??? Quote "[BITSCTF 2024](https://ctf.bitskrieg.org/)"  
+                [![](https://ctftime.org/media/events/bitskrieg.jpg){ width="200" align=left }](https://ctf.bitskrieg.org/)  
+                **比赛名称** : [BITSCTF 2024](https://ctf.bitskrieg.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-02-16 02:30:00 - 2024-02-18 02:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
+                **添加日历** : https://ctftime.org/event/2235.ics  
                 
             ??? Quote "[GoldCTF 2024](https://register.cbsctf.live/)"  
                 [![](https://ctftime.org/media/events/Frame_13734128.png){ width="200" align=left }](https://register.cbsctf.live/)  
@@ -1806,15 +1806,6 @@ hide:
                 **比赛权重** : 23.80  
                 **赛事主办** : Azure Assassin Alliance (https://ctftime.org/team/4070)  
                 **添加日历** : https://ctftime.org/event/2104.ics  
-                
-            ??? Quote "[Paradigm CTF 2023](https://ctf.paradigm.xyz/)"  
-                [![](https://ctftime.org/media/events/CTF.png){ width="200" align=left }](https://ctf.paradigm.xyz/)  
-                **比赛名称** : [Paradigm CTF 2023](https://ctf.paradigm.xyz/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-10-28 08:00:00 - 2023-10-30 08:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : paradigm.xyz (https://ctftime.org/team/144256)  
-                **添加日历** : https://ctftime.org/event/2151.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
