@@ -755,15 +755,6 @@ hide:
                 **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
                 **添加日历** : https://ctftime.org/event/2102.ics  
                 
-            ??? Quote "[BroncoCTF 2024](http://broncoctf.xyz/)"  
-                [![](https://ctftime.org){ width="200" align=left }](http://broncoctf.xyz/)  
-                **比赛名称** : [BroncoCTF 2024](http://broncoctf.xyz/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-02-18 03:00:00 - 2024-02-19 03:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : BroncoSec (https://ctftime.org/team/112673)  
-                **添加日历** : https://ctftime.org/event/2261.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[SICTF Round#3](https://yuanshen.life/)"  
@@ -900,6 +891,15 @@ hide:
                 **其他说明** :   
                 
         === "国外赛事"
+            ??? Quote "[BroncoCTF 2024](http://broncoctf.xyz/)"  
+                [![](https://ctftime.org){ width="200" align=left }](http://broncoctf.xyz/)  
+                **比赛名称** : [BroncoCTF 2024](http://broncoctf.xyz/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-02-18 03:00:00 - 2024-02-19 03:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : BroncoSec (https://ctftime.org/team/112673)  
+                **添加日历** : https://ctftime.org/event/2261.ics  
+                
             ??? Quote "[SAIBORG - Elite Hacking Competition](https://www.saiborg.io/)"  
                 [![](https://ctftime.org/media/events/saiborg-profile.jpg){ width="200" align=left }](https://www.saiborg.io/)  
                 **比赛名称** : [SAIBORG - Elite Hacking Competition](https://www.saiborg.io/)  
@@ -1790,15 +1790,6 @@ hide:
                 **比赛权重** : 24.17  
                 **赛事主办** : Srdnlen (https://ctftime.org/team/83421)  
                 **添加日历** : https://ctftime.org/event/2129.ics  
-                
-            ??? Quote "[Azure Assassin Alliance CTF 2023](http://actf2023.xctf.org.cn/)"  
-                [![](https://ctftime.org/media/events/AAA-smaller.bmp.png){ width="200" align=left }](http://actf2023.xctf.org.cn/)  
-                **比赛名称** : [Azure Assassin Alliance CTF 2023](http://actf2023.xctf.org.cn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-10-28 09:00:00 - 2023-10-30 09:00:00 UTC+8  
-                **比赛权重** : 23.80  
-                **赛事主办** : Azure Assassin Alliance (https://ctftime.org/team/4070)  
-                **添加日历** : https://ctftime.org/event/2104.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

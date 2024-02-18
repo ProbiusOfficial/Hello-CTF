@@ -33,12 +33,3 @@ comments: true
     **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
     **添加日历** : https://ctftime.org/event/2102.ics  
     
-??? Quote "[BroncoCTF 2024](http://broncoctf.xyz/)"  
-    [![](https://ctftime.org){ width="200" align=left }](http://broncoctf.xyz/)  
-    **比赛名称** : [BroncoCTF 2024](http://broncoctf.xyz/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-02-18 03:00:00 - 2024-02-19 03:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : BroncoSec (https://ctftime.org/team/112673)  
-    **添加日历** : https://ctftime.org/event/2261.ics  
-    
