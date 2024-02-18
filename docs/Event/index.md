@@ -746,15 +746,6 @@ hide:
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
                 
-            ??? Quote "[LA CTF 2024](https://lac.tf/)"  
-                [![](https://ctftime.org/media/events/lactf-square-logo_1.png){ width="200" align=left }](https://lac.tf/)  
-                **比赛名称** : [LA CTF 2024](https://lac.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-02-17 12:00:00 - 2024-02-19 06:00:00 UTC+8  
-                **比赛权重** : 24.93  
-                **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
-                **添加日历** : https://ctftime.org/event/2102.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[SICTF Round#3](https://yuanshen.life/)"  
@@ -900,6 +891,15 @@ hide:
                 **赛事主办** : BroncoSec (https://ctftime.org/team/112673)  
                 **添加日历** : https://ctftime.org/event/2261.ics  
                 
+            ??? Quote "[LA CTF 2024](https://lac.tf/)"  
+                [![](https://ctftime.org/media/events/lactf-square-logo_1.png){ width="200" align=left }](https://lac.tf/)  
+                **比赛名称** : [LA CTF 2024](https://lac.tf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-02-17 12:00:00 - 2024-02-19 06:00:00 UTC+8  
+                **比赛权重** : 24.93  
+                **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
+                **添加日历** : https://ctftime.org/event/2102.ics  
+                
             ??? Quote "[SAIBORG - Elite Hacking Competition](https://www.saiborg.io/)"  
                 [![](https://ctftime.org/media/events/saiborg-profile.jpg){ width="200" align=left }](https://www.saiborg.io/)  
                 **比赛名称** : [SAIBORG - Elite Hacking Competition](https://www.saiborg.io/)  
@@ -1040,7 +1040,7 @@ hide:
                 **比赛名称** : [Mapna CTF 2024](https://mapnactf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-01-20 23:00:00 - 2024-01-21 23:00:00 UTC+8  
-                **比赛权重** : 24.55  
+                **比赛权重** : 24.52  
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/2205.ics  
                 
@@ -1067,7 +1067,7 @@ hide:
                 **比赛名称** : [UofTCTF 2024](https://ctf.uoftctf.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-01-14 01:00:00 - 2024-01-15 12:59:00 UTC+8  
-                **比赛权重** : 24.39  
+                **比赛权重** : 23.81  
                 **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
                 **添加日历** : https://ctftime.org/event/2219.ics  
                 
@@ -1781,15 +1781,6 @@ hide:
                 **比赛权重** : 22.67  
                 **赛事主办** : Laokoon SecurITy (https://ctftime.org/team/201667)  
                 **添加日历** : https://ctftime.org/event/2016.ics  
-                
-            ??? Quote "[Srdnlen CTF 2023](https://ctf.srdnlen.it/)"  
-                [![](https://ctftime.org/media/events/logo_93.png){ width="200" align=left }](https://ctf.srdnlen.it/)  
-                **比赛名称** : [Srdnlen CTF 2023](https://ctf.srdnlen.it/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-10-28 16:00:00 - 2023-10-29 16:00:00 UTC+8  
-                **比赛权重** : 24.17  
-                **赛事主办** : Srdnlen (https://ctftime.org/team/83421)  
-                **添加日历** : https://ctftime.org/event/2129.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
