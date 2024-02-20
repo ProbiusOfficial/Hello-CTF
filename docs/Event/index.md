@@ -273,8 +273,8 @@ hide:
 
     --- 
     > 在此处控制赛事标签状态 : [∨全部展开][full_open] | [∧全部收起][full_close]
-    [full_open]: javascript:(function(){document.querySelectorAll('details.abstract').forEach(function(detail){detail.open=true;});})()
-    [full_close]: javascript:(function(){document.querySelectorAll('details.abstract').forEach(function(detail){detail.open=false;});})()
+    [full_open]: javascript:(function(){document.querySelectorAll('details.quote').forEach(function(detail){detail.open=true;});})()
+    [full_close]: javascript:(function(){document.querySelectorAll('details.quote').forEach(function(detail){detail.open=false;});})()
 
     <!-- 赛事内容部分_开始 -->
     === "查看比赛:"
