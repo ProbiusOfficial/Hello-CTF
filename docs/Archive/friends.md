@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [52PoJie论坛2024春节红包-Web解题思路](https://blog.zgsec.cn/archives/577.html)  
+    >by [曾哥](https://blog.zgsec.cn/), 2024-02-19
+
+    0# 概述注：本文原创首发自T00ls论坛，文章链接：https://www.t00ls.com/thread-71282-1-1.html最近刷了刷公众号，偶然看到吾爱破解论坛官方公众号发布了这么一篇文章咦，有春节红包领耶，就点进去看了看，原来是52pojie论坛举办的解题领红包活动官方论坛帖子链接：https://www.52pojie.cn/thread-1889163-1-1.html 总...
     ### [dirty pipe(CVE-2022-0847)漏洞复现](https://xia0ji233.github.io/2024/02/02/CVE-2022-0847/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2024-02-02
 
@@ -149,9 +153,5 @@ hide:
     >by [曾哥](https://blog.zgsec.cn/), 2023-12-14
 
     1# 概述不知不觉，个人博客已经开办了一年了回头看一年前的自己，仍有些感触，遂在闲暇时光提笔写下一些碎碎念数了数我在这一年发表过的博客文章，共计约二十余篇，其实我是真没想到能有那么多文章，比我原定的目标（每个月写一篇原创技术文）多出不少，也算是suprise吧[...]...
-    ### [亿赛通电子文档安全管理系统远程代码执行漏洞浅析](https://y4tacker.github.io/2023/12/13/year/2023/12/%E4%BA%BF%E8%B5%9B%E9%80%9A%E7%94%B5%E5%AD%90%E6%96%87%E6%A1%A3%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%E6%B5%85%E6%9E%90/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-12-13
-
-    亿赛通电子文档安全管理系统远程代码执行漏洞浅析漏洞分析最近天天曝亿赛通的漏洞，又是这个新手向的项目，有点烦其实不是很想写的，本次原理也很简单熟悉的人可能知道这个系统在windows与linux下有点区别，在linux系统下多了一个8021端口相较于CDGServer3服务下又臭又长的代码，这个fileserver下的代码还是很短小的任意文件读取在com.esafenet.fileserver.co...
 
 </div>
