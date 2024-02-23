@@ -36,15 +36,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[BraekerCTF](https://braekerctf.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/AI_Robot4.png){ width="200" align=left }](https://braekerctf.ctfd.io/)  
-    **比赛名称** : [BraekerCTF](https://braekerctf.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-02-23 20:00:00 - 2024-02-25 00:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Braeker (https://ctftime.org/team/274910)  
-    **添加日历** : https://ctftime.org/event/2181.ics  
-    
 ??? Quote "[bi0sCTF 2024](https://ctf.bi0s.in/)"  
     [![](https://ctftime.org/media/events/Untitled-removebg-preview_1.png){ width="200" align=left }](https://ctf.bi0s.in/)  
     **比赛名称** : [bi0sCTF 2024](https://ctf.bi0s.in/)  
@@ -315,15 +306,6 @@ comments: true
     **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
     **添加日历** : https://ctftime.org/event/2229.ics  
     
-??? Quote "[CrewCTF 2024](https://crewc.tf/)"  
-    [![](https://ctftime.org/media/events/THC_new.png){ width="200" align=left }](https://crewc.tf/)  
-    **比赛名称** : [CrewCTF 2024](https://crewc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-11 01:00:00 - 2024-05-13 01:00:00 UTC+8  
-    **比赛权重** : 26.89  
-    **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
-    **添加日历** : https://ctftime.org/event/2223.ics  
-    
 ??? Quote "[CyberSecurityRumble Quals](https://hacking-meisterschaft.de/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://hacking-meisterschaft.de/)  
     **比赛名称** : [CyberSecurityRumble Quals](https://hacking-meisterschaft.de/)  
@@ -350,6 +332,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Black Cell Secops (https://ctftime.org/team/270941)  
     **添加日历** : https://ctftime.org/event/2135.ics  
+    
+??? Quote "[CrewCTF 2024](https://crewc.tf/)"  
+    [![](https://ctftime.org/media/events/THC_new.png){ width="200" align=left }](https://crewc.tf/)  
+    **比赛名称** : [CrewCTF 2024](https://crewc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-25 01:00:00 - 2024-05-27 01:00:00 UTC+8  
+    **比赛权重** : 26.89  
+    **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
+    **添加日历** : https://ctftime.org/event/2223.ics  
     
 ??? Quote "[vsCTF 2024](https://ctf.viewsource.me/)"  
     [![](https://ctftime.org/media/events/vsctf_2024_2x.png){ width="200" align=left }](https://ctf.viewsource.me/)  

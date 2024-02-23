@@ -83,15 +83,6 @@ hide:
             **其他说明** : Discord: https://discord.gg/hq4m3KrVfG QQ群：512066352 本届DubheCTF2024由XCTF联赛的合作单位天枢Dubhe战队组织，由赛宁网安提供技术支持。作为第八届XCTF国际联赛的分站赛，本次比赛将采用在线网络安全夺旗挑战赛的形式，面向全球开放。 此次比赛冠军队伍将直接晋级第八届XCTF总决赛（总决赛具体地点待定，将在确定后通知获得资格的国际和国内队伍）。其他参赛的队伍也将获得积分，来竞争XCTF总决赛的其他席位。  
                 
     === "国外比赛"
-        ??? Quote "[BraekerCTF](https://braekerctf.ctfd.io/)"  
-            [![](https://ctftime.org/media/events/AI_Robot4.png){ width="200" align=left }](https://braekerctf.ctfd.io/)  
-            **比赛名称** : [BraekerCTF](https://braekerctf.ctfd.io/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-02-23 20:00:00 - 2024-02-25 00:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Braeker (https://ctftime.org/team/274910)  
-            **添加日历** : https://ctftime.org/event/2181.ics  
-            
         ??? Quote "[bi0sCTF 2024](https://ctf.bi0s.in/)"  
             [![](https://ctftime.org/media/events/Untitled-removebg-preview_1.png){ width="200" align=left }](https://ctf.bi0s.in/)  
             **比赛名称** : [bi0sCTF 2024](https://ctf.bi0s.in/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Galette Cidre CTF (https://ctftime.org/team/246488)  
             **添加日历** : https://ctftime.org/event/2251.ics  
+            
+        ??? Quote "[AthackCTF 2024](https://www.athackctf.com/)"  
+            [![](https://ctftime.org/media/events/_hacklogo_v2_720.png){ width="200" align=left }](https://www.athackctf.com/)  
+            **比赛名称** : [AthackCTF 2024](https://www.athackctf.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-03-02 16:00:00 - 2024-03-04 01:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : athackPrivate (https://ctftime.org/team/278003)  
+            **添加日历** : https://ctftime.org/event/2228.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
