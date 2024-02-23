@@ -342,6 +342,15 @@ comments: true
     **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
     **添加日历** : https://ctftime.org/event/2223.ics  
     
+??? Quote "[GPN CTF 2024](https://ctf.kitctf.de/)"  
+    [![](https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d.png){ width="200" align=left }](https://ctf.kitctf.de/)  
+    **比赛名称** : [GPN CTF 2024](https://ctf.kitctf.de/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-31 18:00:00 - 2024-06-02 06:00:00 UTC+8  
+    **比赛权重** : 31.17  
+    **赛事主办** : KITCTF (https://ctftime.org/team/7221)  
+    **添加日历** : https://ctftime.org/event/2257.ics  
+    
 ??? Quote "[vsCTF 2024](https://ctf.viewsource.me/)"  
     [![](https://ctftime.org/media/events/vsctf_2024_2x.png){ width="200" align=left }](https://ctf.viewsource.me/)  
     **比赛名称** : [vsCTF 2024](https://ctf.viewsource.me/)  
@@ -350,15 +359,6 @@ comments: true
     **比赛权重** : 34.00  
     **赛事主办** : View Source (https://ctftime.org/team/175828)  
     **添加日历** : https://ctftime.org/event/2248.ics  
-    
-??? Quote "[GPN CTF 2024](https://ctf.kitctf.de/)"  
-    [![](https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d.png){ width="200" align=left }](https://ctf.kitctf.de/)  
-    **比赛名称** : [GPN CTF 2024](https://ctf.kitctf.de/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-07 18:00:00 - 2024-06-09 06:00:00 UTC+8  
-    **比赛权重** : 31.17  
-    **赛事主办** : KITCTF (https://ctftime.org/team/7221)  
-    **添加日历** : https://ctftime.org/event/2257.ics  
     
 ??? Quote "[AkaSec CTF 2024]()"  
     [![](https://ctftime.org/media/events/akasec_icon-15.png){ width="200" align=left }]()  
