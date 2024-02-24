@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "bi0sCTF 2024",
-        "比赛时间": "2024-02-24 20:00:00 - 2024-02-26 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2117.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.bi0s.in/",
-        "比赛标志": "https://ctftime.org/media/events/Untitled-removebg-preview_1.png",
-        "比赛权重": "79.83",
-        "赛事主办": "bi0s (https://ctftime.org/team/662)",
-        "比赛ID": "31",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "osu!gaming CTF 2024",
         "比赛时间": "2024-03-02 01:00:00 - 2024-03-04 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2165.ics",
@@ -549,6 +537,18 @@
         "比赛权重": "0",
         "赛事主办": "Braeker (https://ctftime.org/team/274910)",
         "比赛ID": "1026",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "bi0sCTF 2024",
+        "比赛时间": "2024-02-24 20:00:00 - 2024-02-26 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2117.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bi0s.in/",
+        "比赛标志": "https://ctftime.org/media/events/Untitled-removebg-preview_1.png",
+        "比赛权重": "79.83",
+        "赛事主办": "bi0s (https://ctftime.org/team/662)",
+        "比赛ID": "31",
         "比赛状态": "nowrunning"
     },
     {

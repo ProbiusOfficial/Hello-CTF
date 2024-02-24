@@ -315,15 +315,6 @@ hide:
                 **其他说明** : 比赛时间2024年3月  
                 
         === "国外赛事"
-            ??? Quote "[bi0sCTF 2024](https://ctf.bi0s.in/)"  
-                [![](https://ctftime.org/media/events/Untitled-removebg-preview_1.png){ width="200" align=left }](https://ctf.bi0s.in/)  
-                **比赛名称** : [bi0sCTF 2024](https://ctf.bi0s.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-02-24 20:00:00 - 2024-02-26 08:00:00 UTC+8  
-                **比赛权重** : 79.83  
-                **赛事主办** : bi0s (https://ctftime.org/team/662)  
-                **添加日历** : https://ctftime.org/event/2117.ics  
-                
             ??? Quote "[osu!gaming CTF 2024](https://www.osugaming.lol/)"  
                 [![](https://ctftime.org/media/events/unknown_1.png){ width="200" align=left }](https://www.osugaming.lol/)  
                 **比赛名称** : [osu!gaming CTF 2024](https://www.osugaming.lol/)  
@@ -738,6 +729,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Braeker (https://ctftime.org/team/274910)  
                 **添加日历** : https://ctftime.org/event/2181.ics  
+                
+            ??? Quote "[bi0sCTF 2024](https://ctf.bi0s.in/)"  
+                [![](https://ctftime.org/media/events/Untitled-removebg-preview_1.png){ width="200" align=left }](https://ctf.bi0s.in/)  
+                **比赛名称** : [bi0sCTF 2024](https://ctf.bi0s.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-02-24 20:00:00 - 2024-02-26 08:00:00 UTC+8  
+                **比赛权重** : 79.83  
+                **赛事主办** : bi0s (https://ctftime.org/team/662)  
+                **添加日历** : https://ctftime.org/event/2117.ics  
                 
     === "*已经结束*"
         === "国内赛事"

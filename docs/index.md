@@ -76,15 +76,6 @@ hide:
             **其他说明** : Discord: https://discord.gg/hq4m3KrVfG QQ群：512066352 本届DubheCTF2024由XCTF联赛的合作单位天枢Dubhe战队组织，由赛宁网安提供技术支持。作为第八届XCTF国际联赛的分站赛，本次比赛将采用在线网络安全夺旗挑战赛的形式，面向全球开放。 此次比赛冠军队伍将直接晋级第八届XCTF总决赛（总决赛具体地点待定，将在确定后通知获得资格的国际和国内队伍）。其他参赛的队伍也将获得积分，来竞争XCTF总决赛的其他席位。  
                 
     === "国外比赛"
-        ??? Quote "[bi0sCTF 2024](https://ctf.bi0s.in/)"  
-            [![](https://ctftime.org/media/events/Untitled-removebg-preview_1.png){ width="200" align=left }](https://ctf.bi0s.in/)  
-            **比赛名称** : [bi0sCTF 2024](https://ctf.bi0s.in/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-02-24 20:00:00 - 2024-02-26 08:00:00 UTC+8  
-            **比赛权重** : 79.83  
-            **赛事主办** : bi0s (https://ctftime.org/team/662)  
-            **添加日历** : https://ctftime.org/event/2117.ics  
-            
         ??? Quote "[osu!gaming CTF 2024](https://www.osugaming.lol/)"  
             [![](https://ctftime.org/media/events/unknown_1.png){ width="200" align=left }](https://www.osugaming.lol/)  
             **比赛名称** : [osu!gaming CTF 2024](https://www.osugaming.lol/)  
@@ -111,6 +102,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : athackPrivate (https://ctftime.org/team/278003)  
             **添加日历** : https://ctftime.org/event/2228.ics  
+            
+        ??? Quote "[Pearl CTF](https://pearlctf.in/)"  
+            [![](https://ctftime.org/media/events/_croppearl_logo_1_of_1.png){ width="200" align=left }](https://pearlctf.in/)  
+            **比赛名称** : [Pearl CTF](https://pearlctf.in/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-03-08 20:00:00 - 2024-03-10 07:59:59 UTC+8  
+            **比赛权重** : 23.95  
+            **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
+            **添加日历** : https://ctftime.org/event/2231.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
