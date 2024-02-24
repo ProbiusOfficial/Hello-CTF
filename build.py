@@ -59,5 +59,17 @@ def update_files():
     insert_content("docs/index.md", "<!-- 主页赛事展示_开始 -->", "<!-- 主页赛事展示_结束 -->", index_html_content)
     print("updated home.md complete")
 
+    # update json
+    
+    # 下载json文件到 docs\Event\json
+    CN_json_content = download_file("https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/main/CN.json")
+    Global_json_content = download_file("https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/main/Global.json")
+    print("downloaded json")
+    with open("docs/Event/json/CN.json", 'w', encoding='utf-8') as file:
+        file.write(CN_json_content)
+    with open("docs/Event/json/Global.json", 'w', encoding='utf-8') as file:
+        file.write(Global_json_content)
+
+
 if __name__ == "__main__":
     update_files()

@@ -191,8 +191,8 @@ hide:
     async function loadCalendar() {
         const calendarEl = document.getElementById('calendar')
         
-        const cnEvents = await fetchCNCTFTime('https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/main/CN.json')
-        const globalEvents = await fetchGlobalCTFTime('https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/main/Global.json')
+        const cnEvents = await fetchCNCTFTime('json/CN.json')
+        const globalEvents = await fetchGlobalCTFTime('json/Global.json')
 
         const calendar = new FullCalendar.Calendar(calendarEl, {
             height: 'auto',

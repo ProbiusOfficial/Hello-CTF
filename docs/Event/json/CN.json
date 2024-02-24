@@ -1,0 +1,275 @@
+{
+    "success": true,
+    "data": {
+        "result": [
+            {
+                "name": "DubheCTF 2024",
+                "link": "https://adworld.xctf.org.cn/contest/assess?hash=94938be6-ce42-11ee-ab28-000c29bc20bf",
+                "type": "团队赛 | 1-n",
+                "bmks": "2024年03月01日 09:00",
+                "bmjz": "2024年03月16日 08:00",
+                "bsks": "2024年03月16日 09:00",
+                "bsjs": "2024年03月18日 09:00",
+                "readmore": "Discord: https://discord.gg/hq4m3KrVfG QQ群：512066352 本届DubheCTF2024由XCTF联赛的合作单位天枢Dubhe战队组织，由赛宁网安提供技术支持。作为第八届XCTF国际联赛的分站赛，本次比赛将采用在线网络安全夺旗挑战赛的形式，面向全球开放。 此次比赛冠军队伍将直接晋级第八届XCTF总决赛（总决赛具体地点待定，将在确定后通知获得资格的国际和国内队伍）。其他参赛的队伍也将获得积分，来竞争XCTF总决赛的其他席位。",
+                "status": 0
+            },
+            {
+                "name": "青少年CTF擂台挑战赛 2024 #Round 1",
+                "link": "https://www.qsnctf.com/#/main/race-center/race-guide?id=11",
+                "type": "团队赛|1-4人",
+                "bmks": "2024年02月05日 00:00",
+                "bmjz": "2024年02月28日 22:00",
+                "bsks": "2024年02月29日 09:00",
+                "bsjs": "2024年03月01日 22:00",
+                "readmore": "QQ 群号：820016571",
+                "status": 1
+            },
+            {
+                "name": "第一届“长城杯”信息安全铁人三项赛初赛",
+                "link": "http://ccb.itsec.gov.cn/",
+                "type": "团队赛|1-4人",
+                "bmks": "2023年12月21日 00:00",
+                "bmjz": "2024年02月20日 18:00",
+                "bsks": "2024年03月01日 09:00",
+                "bsjs": "2024年03月31日 18:00",
+                "readmore": "比赛时间2024年3月",
+                "status": 2
+            },
+            {
+                "name": "第二届数据安全大赛暨首届“数信杯”数据安全大赛",
+                "link": "https://shuxinbei.ichunqiu.com/",
+                "type": "团队赛|1-3人",
+                "bmks": "2023年11月15日 00:00",
+                "bmjz": "2024年01月19日 18:00",
+                "bsks": "2024年02月24日 10:00",
+                "bsjs": "2024年02月24日 18:00",
+                "readmore": "比赛时间未定",
+                "status": 3
+            },
+            {
+                "name": "HGAME2024网络攻防大赛",
+                "link": "https://hgame.vidar.club",
+                "type": "个人赛",
+                "bmks": "2024年01月20日 20:00",
+                "bmjz": "2024年02月05日 20:00",
+                "bsks": "2024年01月29日 20:00",
+                "bsjs": "2024年02月27日 20:00",
+                "readmore": "QQ群：134591168 \r\n适合新手参加",
+                "status": 3
+            },
+            {
+                "name": "SICTF Round#3",
+                "link": "https://yuanshen.life/",
+                "type": "团队赛|1-3人",
+                "bmks": "2024年01月11日 14:00",
+                "bmjz": "2024年02月18日 09:00",
+                "bsks": "2024年02月16日 09:00",
+                "bsjs": "2024年02月18日 18:00",
+                "readmore": "比赛QQ群：737732413\r\n本次比赛采用CTF赛制，题目难度两级分化，无论是刚刚入门的萌新还是轻车熟路的大神，都可以快速找到属于你的比赛乐趣哦~",
+                "status": 4
+            },
+            {
+                "name": "VNCTF 2024",
+                "link": "https://vnctf2024.manqiu.top/",
+                "type": "个人赛",
+                "bmks": "2023年02月18日 21:00",
+                "bmjz": "2024年02月17日 20:00",
+                "bsks": "2024年02月17日 08:00",
+                "bsjs": "2024年02月17日 20:00",
+                "readmore": "V&N 联合战队招新赛，赛事QQ群：717513199",
+                "status": 4
+            },
+            {
+                "name": "NSSCTF Round#18 Basic",
+                "link": "https://www.nssctf.cn/contest/317/",
+                "type": "团队赛|1-3人",
+                "bmks": "2024年02月06日 09:30",
+                "bmjz": "2024年02月14日 09:30",
+                "bsks": "2024年02月14日 09:30",
+                "bsjs": "2024年02月14日 17:30",
+                "readmore": "QQ群：521330139",
+                "status": 4
+            },
+            {
+                "name": "第二届BeginCTF",
+                "link": "http://47.100.169.26/",
+                "type": "个人赛",
+                "bmks": "2024年01月24日 00:00",
+                "bmjz": "2024年02月06日 10:00",
+                "bsks": "2024年01月31日 10:00",
+                "bsjs": "2024年02月06日 10:00",
+                "readmore": "qq群：612995005\r\n适合新手参加",
+                "status": 4
+            },
+            {
+                "name": "L3HCTF 2024",
+                "link": "https://l3hctf2024.xctf.org.cn/",
+                "type": "团队赛",
+                "bmks": "2024年01月24日 00:00",
+                "bmjz": "2024年02月05日 09:00",
+                "bsks": "2024年02月03日 09:00",
+                "bsjs": "2024年02月05日 09:00",
+                "readmore": "QQ群：512066352",
+                "status": 4
+            },
+            {
+                "name": "zkCTF",
+                "link": "https://zkctf.scalebit.xyz",
+                "type": "个人赛 | WEB3",
+                "bmks": "2024年01月16日 00:00",
+                "bmjz": "2024年02月05日 09:00",
+                "bsks": "2024年02月03日 09:00",
+                "bsjs": "2024年02月05日 09:00",
+                "readmore": "TG官方群：https://t.me/ScaleBitAudit",
+                "status": 4
+            },
+            {
+                "name": "第二届N1CTF Junior",
+                "link": "https://ctf.junior.nu1l.com/",
+                "type": "个人赛",
+                "bmks": "2024年01月22日 08:00",
+                "bmjz": "2024年02月03日 00:00",
+                "bsks": "2024年02月03日 09:00",
+                "bsjs": "2024年02月04日 18:00",
+                "readmore": "N1CTFJunior是Nu1L Team组织的官方纳新\r\n赛事旨在选拔年轻优秀人才加入Nu1LTeam\r\nQQ群:180885587",
+                "status": 4
+            },
+            {
+                "name": "第二届红桥杯渗透测试挑战赛",
+                "link": "https://tryhackme.com/",
+                "type": "个人赛",
+                "bmks": "2023年12月01日 00:00",
+                "bmjz": "2024年01月31日 00:00",
+                "bsks": "2023年11月30日 00:00",
+                "bsjs": "2024年01月31日 00:00",
+                "readmore": "QQ群：751273347\r\n比赛时间待定",
+                "status": 4
+            },
+            {
+                "name": "第七届西湖论剑网络安全技能大赛初赛",
+                "link": "https://game.gcsis.cn/",
+                "type": "团队赛|4-8人",
+                "bmks": "2024年01月09日 00:00",
+                "bmjz": "2024年01月24日 18:00",
+                "bsks": "2024年01月30日 10:00",
+                "bsjs": "2024年01月30日 18:00",
+                "readmore": "QQ群：666010671 768342822\r\n",
+                "status": 4
+            },
+            {
+                "name": "Real World CTF 6th",
+                "link": "https://realworldctf.com/",
+                "type": "团队赛",
+                "bmks": "2023年12月28日 16:30",
+                "bmjz": "2024年01月28日 19:00",
+                "bsks": "2024年01月26日 19:00",
+                "bsjs": "2024年01月28日 19:00",
+                "readmore": "Discord: https://discord.com/invite/8GNqypNaxB",
+                "status": 4
+            },
+            {
+                "name": "獬豸杯电子数据取证比武",
+                "link": "https://mp.weixin.qq.com/s/kTUbGvh4EGZf5Jx87NyCgQ",
+                "type": "个人赛",
+                "bmks": "2024年01月25日 00:00",
+                "bmjz": "2024年01月27日 18:00",
+                "bsks": "2024年01月28日 10:00",
+                "bsjs": "2024年01月28日 18:00",
+                "readmore": "QQ群号：955391766",
+                "status": 4
+            },
+            {
+                "name": "NSSCTF Round#17 Basic",
+                "link": "https://www.nssctf.cn/contest/",
+                "type": "团队赛|1-3人",
+                "bmks": "2024年01月16日 00:00",
+                "bmjz": "2024年01月28日 17:30",
+                "bsks": "2024年01月28日 14:00",
+                "bsjs": "2024年01月28日 17:30",
+                "readmore": "QQ群：521330139",
+                "status": 4
+            },
+            {
+                "name": "Real World CTF 6th 体验赛",
+                "link": "https://be-a-rwctfer.realworldctf.com/",
+                "type": "团队赛 | 邀请制",
+                "bmks": "2023年12月28日 16:30",
+                "bmjz": "2024年01月17日 18:00",
+                "bsks": "2024年01月27日 10:00",
+                "bsjs": "2024年01月28日 10:00",
+                "readmore": "选手交流群：612460086",
+                "status": 4
+            },
+            {
+                "name": "春秋杯网络安全联赛冬季赛",
+                "link": "https://endbm.ichunqiu.com/2023cqgames2",
+                "type": "个人赛CTF+RDG",
+                "bmks": "2023年12月18日 00:00",
+                "bmjz": "2024年01月22日 17:00",
+                "bsks": "2024年01月20日 10:00",
+                "bsjs": "2024年01月22日 18:00",
+                "readmore": "赛事QQ群：277328440",
+                "status": 4
+            },
+            {
+                "name": "第三届WEBSHELL伏魔挑战赛",
+                "link": "https://mp.weixin.qq.com/s/e8OE3rXyIqPkHrOHBDL5Kw",
+                "type": "个人赛",
+                "bmks": "2023年12月29日 10:00",
+                "bmjz": "2024年01月17日 10:00",
+                "bsks": "2024年01月12日 14:00",
+                "bsjs": "2024年01月17日 10:00",
+                "readmore": "",
+                "status": 4
+            },
+            {
+                "name": "第七届强网杯全国网络安全挑战赛决赛",
+                "link": "https://qiangwangbei.com/",
+                "type": "团队赛|1-4人",
+                "bmks": "2023年05月01日 00:00",
+                "bmjz": "2023年12月09日 00:00",
+                "bsks": "2024年01月13日 09:00",
+                "bsjs": "2024年01月14日 16:00",
+                "readmore": "QQ群：723023839",
+                "status": 4
+            },
+            {
+                "name": "movectf 2024",
+                "link": "https://movectf2024.movebit.xyz/",
+                "type": "个人赛 | WEB3",
+                "bmks": "2023年12月25日 00:00",
+                "bmjz": "2024年01月14日 09:00",
+                "bsks": "2024年01月12日 09:00",
+                "bsjs": "2024年01月14日 09:00",
+                "readmore": "旗舰级 Move 安全竞赛，旨在吸引更多对 \r\nMove 语言和 Move 生态系统感兴趣的安全专业人士\r\n和开发人员。\r\nQQ学习交流群：163569170",
+                "status": 4
+            },
+            {
+                "name": " NSSCTF Round#16 Basic",
+                "link": "https://www.nssctf.cn/contest",
+                "type": "团队赛|1-3人",
+                "bmks": "2024年01月03日 00:00",
+                "bmjz": "2024年01月13日 17:40",
+                "bsks": "2024年01月13日 14:00",
+                "bsjs": "2024年01月13日 17:40",
+                "readmore": "QQ群：521330139",
+                "status": 4
+            },
+            {
+                "name": "“复兴杯”2023年第四届大学生网络安全精英赛初赛",
+                "link": "https://www.nisp.org.cn/wads",
+                "type": "个人赛",
+                "bmks": "2023年11月10日 12:00",
+                "bmjz": "2024年01月02日 18:00",
+                "bsks": "2024年01月03日 09:00",
+                "bsjs": "2024年01月07日 18:00",
+                "readmore": "",
+                "status": 4
+            }
+        ],
+        "total": 77,
+        "page": 1,
+        "size": 20
+    },
+    "msg": ""
+}
