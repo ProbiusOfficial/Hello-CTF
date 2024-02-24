@@ -54,13 +54,6 @@ hide:
     ---
     <!-- 主页赛事展示_开始 -->
     === "国内比赛"
-        ??? Quote "[第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)"  
-            **比赛名称** : [第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)  
-            **比赛类型** : 团队赛|1-3人  
-            **报名时间** : 2023年11月15日 00:00 - 2024年01月19日 18:00  
-            **比赛时间** : 2024年02月24日 10:00 - 2024年02月24日 18:00  
-            **其他说明** : 比赛时间未定  
-            
         ??? Quote "[青少年CTF擂台挑战赛 2024 #Round 1](https://www.qsnctf.com/#/main/race-center/race-guide?id=11)"  
             **比赛名称** : [青少年CTF擂台挑战赛 2024 #Round 1](https://www.qsnctf.com/#/main/race-center/race-guide?id=11)  
             **比赛类型** : 团队赛|1-4人  
