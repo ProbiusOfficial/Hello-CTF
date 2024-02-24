@@ -594,7 +594,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.bitskrieg.org/",
         "比赛标志": "https://ctftime.org/media/events/bitskrieg.jpg",
-        "比赛权重": "0",
+        "比赛权重": "22.73",
         "赛事主办": "BITSkrieg (https://ctftime.org/team/22310)",
         "比赛ID": "182",
         "比赛状态": "past"
@@ -798,7 +798,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.uoftctf.org/",
         "比赛标志": "https://ctftime.org/media/events/ctf_logo_1.png",
-        "比赛权重": "23.49",
+        "比赛权重": "23.52",
         "赛事主办": "UofTCTF (https://ctftime.org/team/139261)",
         "比赛ID": "1052",
         "比赛状态": "past"

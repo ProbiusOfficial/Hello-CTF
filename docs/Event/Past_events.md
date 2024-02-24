@@ -188,7 +188,7 @@ comments: true
     **比赛名称** : [BITSCTF 2024](https://ctf.bitskrieg.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-02-16 02:30:00 - 2024-02-18 02:30:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 22.73  
     **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
     **添加日历** : https://ctftime.org/event/2235.ics  
     
@@ -341,7 +341,7 @@ comments: true
     **比赛名称** : [UofTCTF 2024](https://ctf.uoftctf.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-01-14 01:00:00 - 2024-01-15 12:59:00 UTC+8  
-    **比赛权重** : 23.49  
+    **比赛权重** : 23.52  
     **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
     **添加日历** : https://ctftime.org/event/2219.ics  
     
