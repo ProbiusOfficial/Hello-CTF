@@ -36,17 +36,6 @@
                 "status": 2
             },
             {
-                "name": "第二届数据安全大赛暨首届“数信杯”数据安全大赛",
-                "link": "https://shuxinbei.ichunqiu.com/",
-                "type": "团队赛|1-3人",
-                "bmks": "2023年11月15日 00:00",
-                "bmjz": "2024年01月19日 18:00",
-                "bsks": "2024年02月24日 10:00",
-                "bsjs": "2024年02月24日 18:00",
-                "readmore": "比赛时间未定",
-                "status": 3
-            },
-            {
                 "name": "HGAME2024网络攻防大赛",
                 "link": "https://hgame.vidar.club",
                 "type": "个人赛",
@@ -56,6 +45,17 @@
                 "bsjs": "2024年02月27日 20:00",
                 "readmore": "QQ群：134591168 \r\n适合新手参加",
                 "status": 3
+            },
+            {
+                "name": "第二届数据安全大赛暨首届“数信杯”数据安全大赛",
+                "link": "https://shuxinbei.ichunqiu.com/",
+                "type": "团队赛|1-3人",
+                "bmks": "2023年11月15日 00:00",
+                "bmjz": "2024年01月19日 18:00",
+                "bsks": "2024年02月24日 10:00",
+                "bsjs": "2024年02月24日 18:00",
+                "readmore": "比赛时间未定",
+                "status": 4
             },
             {
                 "name": "SICTF Round#3",
