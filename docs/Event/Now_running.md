@@ -24,15 +24,6 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Quote "[BraekerCTF](https://braekerctf.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/AI_Robot4.png){ width="200" align=left }](https://braekerctf.ctfd.io/)  
-    **比赛名称** : [BraekerCTF](https://braekerctf.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-02-23 20:00:00 - 2024-02-25 00:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Braeker (https://ctftime.org/team/274910)  
-    **添加日历** : https://ctftime.org/event/2181.ics  
-    
 ??? Quote "[bi0sCTF 2024](https://ctf.bi0s.in/)"  
     [![](https://ctftime.org/media/events/Untitled-removebg-preview_1.png){ width="200" align=left }](https://ctf.bi0s.in/)  
     **比赛名称** : [bi0sCTF 2024](https://ctf.bi0s.in/)  

@@ -528,18 +528,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "BraekerCTF",
-        "比赛时间": "2024-02-23 20:00:00 - 2024-02-25 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2181.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://braekerctf.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/AI_Robot4.png",
-        "比赛权重": "0",
-        "赛事主办": "Braeker (https://ctftime.org/team/274910)",
-        "比赛ID": "1026",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "bi0sCTF 2024",
         "比赛时间": "2024-02-24 20:00:00 - 2024-02-26 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2117.ics",
@@ -550,6 +538,18 @@
         "赛事主办": "bi0s (https://ctftime.org/team/662)",
         "比赛ID": "31",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "BraekerCTF",
+        "比赛时间": "2024-02-23 20:00:00 - 2024-02-25 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2181.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://braekerctf.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/AI_Robot4.png",
+        "比赛权重": "0",
+        "赛事主办": "Braeker (https://ctftime.org/team/274910)",
+        "比赛ID": "1026",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "BroncoCTF 2024",
@@ -1737,18 +1737,6 @@
         "比赛权重": "24.21",
         "赛事主办": "ctfcup (https://ctftime.org/team/203499)",
         "比赛ID": "864",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "THE HAXORCIST - A HALLOWEEN CTF",
-        "比赛时间": "2023-10-28 16:00:00 - 2023-10-29 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2016.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://laokoon-security.com/ctf2023",
-        "比赛标志": "https://ctftime.org/media/events/Haxorcist_Post_nur_mit_Titel_1080x1080px_150_dpi.jpg",
-        "比赛权重": "22.67",
-        "赛事主办": "Laokoon SecurITy (https://ctftime.org/team/201667)",
-        "比赛ID": "853",
         "比赛状态": "past"
     }
 ]

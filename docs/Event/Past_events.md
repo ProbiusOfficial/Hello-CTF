@@ -147,6 +147,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[BraekerCTF](https://braekerctf.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/AI_Robot4.png){ width="200" align=left }](https://braekerctf.ctfd.io/)  
+    **比赛名称** : [BraekerCTF](https://braekerctf.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-23 20:00:00 - 2024-02-25 00:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Braeker (https://ctftime.org/team/274910)  
+    **添加日历** : https://ctftime.org/event/2181.ics  
+    
 ??? Quote "[BroncoCTF 2024](http://broncoctf.xyz/)"  
     [![](https://ctftime.org){ width="200" align=left }](http://broncoctf.xyz/)  
     **比赛名称** : [BroncoCTF 2024](http://broncoctf.xyz/)  
@@ -1037,13 +1046,4 @@ comments: true
     **比赛权重** : 24.21  
     **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
     **添加日历** : https://ctftime.org/event/2136.ics  
-    
-??? Quote "[THE HAXORCIST - A HALLOWEEN CTF](https://laokoon-security.com/ctf2023)"  
-    [![](https://ctftime.org/media/events/Haxorcist_Post_nur_mit_Titel_1080x1080px_150_dpi.jpg){ width="200" align=left }](https://laokoon-security.com/ctf2023)  
-    **比赛名称** : [THE HAXORCIST - A HALLOWEEN CTF](https://laokoon-security.com/ctf2023)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-28 16:00:00 - 2023-10-29 02:00:00 UTC+8  
-    **比赛权重** : 22.67  
-    **赛事主办** : Laokoon SecurITy (https://ctftime.org/team/201667)  
-    **添加日历** : https://ctftime.org/event/2016.ics  
     
