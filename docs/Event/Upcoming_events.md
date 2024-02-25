@@ -29,6 +29,15 @@ comments: true
 
 ## 国际赛事
 
+??? Quote "[VishwaCTF 2024](https://vishwactf.com/)"  
+    [![](https://ctftime.org/media/events/VishwaCTF_3.png){ width="200" align=left }](https://vishwactf.com/)  
+    **比赛名称** : [VishwaCTF 2024](https://vishwactf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-03-01 18:30:00 - 2024-03-03 18:29:59 UTC+8  
+    **比赛权重** : 33.43  
+    **赛事主办** : CyberCellVIIT (https://ctftime.org/team/144677)  
+    **添加日历** : https://ctftime.org/event/2272.ics  
+    
 ??? Quote "[osu!gaming CTF 2024](https://www.osugaming.lol/)"  
     [![](https://ctftime.org/media/events/unknown_1.png){ width="200" align=left }](https://www.osugaming.lol/)  
     **比赛名称** : [osu!gaming CTF 2024](https://www.osugaming.lol/)  
@@ -64,6 +73,24 @@ comments: true
     **比赛权重** : 23.95  
     **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
     **添加日历** : https://ctftime.org/event/2231.ics  
+    
+??? Quote "[Shakti CTF](https://ctf.shakticon.com/)"  
+    [![](https://ctftime.org/media/events/shaktictf_1_1.png){ width="200" align=left }](https://ctf.shakticon.com/)  
+    **比赛名称** : [Shakti CTF](https://ctf.shakticon.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-03-08 20:30:00 - 2024-03-09 20:30:00 UTC+8  
+    **比赛权重** : 24.10  
+    **赛事主办** : TeamShakti (https://ctftime.org/team/61083)  
+    **添加日历** : https://ctftime.org/event/2268.ics  
+    
+??? Quote "[HackDay 2024 - Finals](https://www.hackday.fr/)"  
+    [![](https://ctftime.org/media/events/CREA_LOGO_Blason_Espion_1.png){ width="200" align=left }](https://www.hackday.fr/)  
+    **比赛名称** : [HackDay 2024 - Finals](https://www.hackday.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-03-09 02:00:00 - 2024-03-10 02:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
+    **添加日历** : https://ctftime.org/event/2267.ics  
     
 ??? Quote "[WxMCTF 2024](https://ctf.mcpt.ca/contest/wxmctf)"  
     [![](https://ctftime.org/media/events/Logo_thing_1.png){ width="200" align=left }](https://ctf.mcpt.ca/contest/wxmctf)  
@@ -272,6 +299,24 @@ comments: true
     **赛事主办** : FITSEC (https://ctftime.org/team/65296)  
     **添加日历** : https://ctftime.org/event/2254.ics  
     
+??? Quote "[Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)"  
+    [![](https://ctftime.org/media/events/12e936bf3a5de410fc3506bfdffb608a.jpg){ width="200" align=left }](https://challengethecyber.nl/)  
+    **比赛名称** : [Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-20 19:00:00 - 2024-04-21 01:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Challenge the Cyber (https://ctftime.org/team/181210)  
+    **添加日历** : https://ctftime.org/event/2277.ics  
+    
+??? Quote "[Insomni'hack 2024](https://insomnihack.ch/contests/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://insomnihack.ch/contests/)  
+    **比赛名称** : [Insomni'hack 2024](https://insomnihack.ch/contests/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-27 02:00:00 - 2024-04-27 13:00:00 UTC+8  
+    **比赛权重** : 33.40  
+    **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
+    **添加日历** : https://ctftime.org/event/2271.ics  
+    
 ??? Quote "[LakeCTF Finals 23](https://lakectf.epfl.ch/)"  
     [![](https://ctftime.org/media/events/lakeCTFLogo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
     **比赛名称** : [LakeCTF Finals 23](https://lakectf.epfl.ch/)  
@@ -316,6 +361,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Black Cell Secops (https://ctftime.org/team/270941)  
     **添加日历** : https://ctftime.org/event/2135.ics  
+    
+??? Quote "[R3CTF/YUANHENGCTF 2024](https://ctf2024.r3kapig.com/)"  
+    [![](https://ctftime.org/media/events/r3_logo.png){ width="200" align=left }](https://ctf2024.r3kapig.com/)  
+    **比赛名称** : [R3CTF/YUANHENGCTF 2024](https://ctf2024.r3kapig.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-18 10:00:00 - 2024-05-20 10:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
+    **添加日历** : https://ctftime.org/event/2273.ics  
     
 ??? Quote "[CrewCTF 2024](https://crewc.tf/)"  
     [![](https://ctftime.org/media/events/THC_new.png){ width="200" align=left }](https://crewc.tf/)  

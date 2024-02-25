@@ -1,5 +1,17 @@
 [
     {
+        "比赛名称": "VishwaCTF 2024",
+        "比赛时间": "2024-03-01 18:30:00 - 2024-03-03 18:29:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2272.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://vishwactf.com/",
+        "比赛标志": "https://ctftime.org/media/events/VishwaCTF_3.png",
+        "比赛权重": "33.43",
+        "赛事主办": "CyberCellVIIT (https://ctftime.org/team/144677)",
+        "比赛ID": "599",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "osu!gaming CTF 2024",
         "比赛时间": "2024-03-02 01:00:00 - 2024-03-04 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2165.ics",
@@ -45,6 +57,30 @@
         "比赛权重": "23.95",
         "赛事主办": "BIT CRIMINALS (https://ctftime.org/team/151727)",
         "比赛ID": "849",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Shakti CTF",
+        "比赛时间": "2024-03-08 20:30:00 - 2024-03-09 20:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2268.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.shakticon.com/",
+        "比赛标志": "https://ctftime.org/media/events/shaktictf_1_1.png",
+        "比赛权重": "24.10",
+        "赛事主办": "TeamShakti (https://ctftime.org/team/61083)",
+        "比赛ID": "521",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "HackDay 2024 - Finals",
+        "比赛时间": "2024-03-09 02:00:00 - 2024-03-10 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2267.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.hackday.fr/",
+        "比赛标志": "https://ctftime.org/media/events/CREA_LOGO_Blason_Espion_1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "HackDayCTF (https://ctftime.org/team/277562)",
+        "比赛ID": "1060",
         "比赛状态": "oncoming"
     },
     {
@@ -324,6 +360,30 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Challenge the Cyber - Cyber Chef",
+        "比赛时间": "2024-04-20 19:00:00 - 2024-04-21 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2277.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://challengethecyber.nl/",
+        "比赛标志": "https://ctftime.org/media/events/12e936bf3a5de410fc3506bfdffb608a.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "Challenge the Cyber (https://ctftime.org/team/181210)",
+        "比赛ID": "776",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Insomni'hack 2024",
+        "比赛时间": "2024-04-27 02:00:00 - 2024-04-27 13:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2271.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://insomnihack.ch/contests/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "33.40",
+        "赛事主办": "Insomni'hack Team (https://ctftime.org/team/104742)",
+        "比赛ID": "56",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "LakeCTF Finals 23",
         "比赛时间": "2024-05-03 16:00:00 - 2024-05-04 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2246.ics",
@@ -381,6 +441,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Black Cell Secops (https://ctftime.org/team/270941)",
         "比赛ID": "995",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "R3CTF/YUANHENGCTF 2024",
+        "比赛时间": "2024-05-18 10:00:00 - 2024-05-20 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2273.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf2024.r3kapig.com/",
+        "比赛标志": "https://ctftime.org/media/events/r3_logo.png",
+        "比赛权重": "0.00",
+        "赛事主办": "r3kapig (https://ctftime.org/team/58979)",
+        "比赛ID": "329",
         "比赛状态": "oncoming"
     },
     {
