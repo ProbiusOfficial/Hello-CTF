@@ -678,7 +678,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "http://broncoctf.xyz/",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
+        "比赛权重": "23.04",
         "赛事主办": "BroncoSec (https://ctftime.org/team/112673)",
         "比赛ID": "1017",
         "比赛状态": "past"
@@ -930,7 +930,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.uoftctf.org/",
         "比赛标志": "https://ctftime.org/media/events/ctf_logo_1.png",
-        "比赛权重": "23.52",
+        "比赛权重": "23.55",
         "赛事主办": "UofTCTF (https://ctftime.org/team/139261)",
         "比赛ID": "1052",
         "比赛状态": "past"
