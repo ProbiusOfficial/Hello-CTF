@@ -263,6 +263,15 @@ comments: true
     **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
     **添加日历** : https://ctftime.org/event/2262.ics  
     
+??? Quote "[THCon 2k24 CTF](https://ctf.thcon.party/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.thcon.party/)  
+    **比赛名称** : [THCon 2k24 CTF](https://ctf.thcon.party/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-06 18:00:00 - 2024-04-08 18:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : pony7 (https://ctftime.org/team/20769)  
+    **添加日历** : https://ctftime.org/event/2269.ics  
+    
 ??? Quote "[Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)"  
     [![](https://ctftime.org/media/events/midnight.png){ width="200" align=left }](https://midnightsunctf.com/)  
     **比赛名称** : [Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)  
@@ -298,6 +307,15 @@ comments: true
     **比赛权重** : 24.50  
     **赛事主办** : FITSEC (https://ctftime.org/team/65296)  
     **添加日历** : https://ctftime.org/event/2254.ics  
+    
+??? Quote "[D^3CTF 2024](https://d3ctf.io/)"  
+    [![](https://ctftime.org/media/events/ddd.png){ width="200" align=left }](https://d3ctf.io/)  
+    **比赛名称** : [D^3CTF 2024](https://d3ctf.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-20 02:00:00 - 2024-04-22 02:00:00 UTC+8  
+    **比赛权重** : 39.40  
+    **赛事主办** : D^3CTF Organizers (https://ctftime.org/team/91096)  
+    **添加日历** : https://ctftime.org/event/2276.ics  
     
 ??? Quote "[Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)"  
     [![](https://ctftime.org/media/events/12e936bf3a5de410fc3506bfdffb608a.jpg){ width="200" align=left }](https://challengethecyber.nl/)  
@@ -406,6 +424,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : AkaSec (https://ctftime.org/team/107202)  
     **添加日历** : https://ctftime.org/event/2222.ics  
+    
+??? Quote "[BCACTF 4.0](https://www.bcactf.com/)"  
+    [![](https://ctftime.org/media/events/bcactflogoocean.png){ width="200" align=left }](https://www.bcactf.com/)  
+    **比赛名称** : [BCACTF 4.0](https://www.bcactf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-08 04:00:00 - 2024-06-11 04:00:00 UTC+8  
+    **比赛权重** : 46.33  
+    **赛事主办** : BCACTF (https://ctftime.org/team/81702)  
+    **添加日历** : https://ctftime.org/event/2274.ics  
     
 ??? Quote "[Crypto CTF 2024](https://cr.yp.toc.tf/)"  
     [![](https://ctftime.org/media/events/cryptoctf.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  

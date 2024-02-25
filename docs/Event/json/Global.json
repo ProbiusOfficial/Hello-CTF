@@ -312,6 +312,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "THCon 2k24 CTF",
+        "比赛时间": "2024-04-06 18:00:00 - 2024-04-08 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2269.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.thcon.party/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "pony7 (https://ctftime.org/team/20769)",
+        "比赛ID": "181",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Midnight Sun CTF 2024 Quals",
         "比赛时间": "2024-04-06 20:00:00 - 2024-04-06 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2247.ics",
@@ -357,6 +369,18 @@
         "比赛权重": "24.50",
         "赛事主办": "FITSEC (https://ctftime.org/team/65296)",
         "比赛ID": "728",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "D^3CTF 2024",
+        "比赛时间": "2024-04-20 02:00:00 - 2024-04-22 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2276.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://d3ctf.io/",
+        "比赛标志": "https://ctftime.org/media/events/ddd.png",
+        "比赛权重": "39.40",
+        "赛事主办": "D^3CTF Organizers (https://ctftime.org/team/91096)",
+        "比赛ID": "387",
         "比赛状态": "oncoming"
     },
     {
@@ -504,6 +528,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "BCACTF 4.0",
+        "比赛时间": "2024-06-08 04:00:00 - 2024-06-11 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2274.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.bcactf.com/",
+        "比赛标志": "https://ctftime.org/media/events/bcactflogoocean.png",
+        "比赛权重": "46.33",
+        "赛事主办": "BCACTF (https://ctftime.org/team/81702)",
+        "比赛ID": "325",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Crypto CTF 2024",
         "比赛时间": "2024-06-08 22:00:00 - 2024-06-09 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2210.ics",
@@ -612,6 +648,18 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "WEC CTF",
+        "比赛时间": "2024-02-24 20:30:00 - 2024-02-25 20:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2270.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://wecctf.nitk.ac.in/",
+        "比赛标志": "https://ctftime.org/media/events/weclogo.png",
+        "比赛权重": "0",
+        "赛事主办": "Web Club NITK (https://ctftime.org/team/216903)",
+        "比赛ID": "913",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "BraekerCTF",
         "比赛时间": "2024-02-23 20:00:00 - 2024-02-25 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2181.ics",
@@ -645,6 +693,18 @@
         "比赛权重": "24.93",
         "赛事主办": "PBR | UCLA (https://ctftime.org/team/186494)",
         "比赛ID": "820",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Pragyan CTF 2024",
+        "比赛时间": "2024-02-16 22:30:00 - 2024-02-17 22:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2266.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.pragyan.org/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "2.80",
+        "赛事主办": "Pragyan (https://ctftime.org/team/33867)",
+        "比赛ID": "97",
         "比赛状态": "past"
     },
     {
@@ -1785,30 +1845,6 @@
         "比赛权重": "19.50",
         "赛事主办": "cursed (https://ctftime.org/team/199492)",
         "比赛ID": "887",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Platypwn 2023",
-        "比赛时间": "2023-10-28 20:00:00 - 2023-10-29 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2082.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://platypwn.ctf.platypwnies.de/",
-        "比赛标志": "https://ctftime.org/media/events/a1c3d5bc6d43496ab202de9be30f3cd9.jpg",
-        "比赛权重": "24.75",
-        "赛事主办": "Platypwnies (https://ctftime.org/team/112550)",
-        "比赛ID": "979",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Russian CTF Cup 2023 Qualifier",
-        "比赛时间": "2023-10-28 17:00:00 - 2023-10-29 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2136.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfcup.ru/",
-        "比赛标志": "https://ctftime.org/media/events/CMjwD0td2vU.jpg",
-        "比赛权重": "24.21",
-        "赛事主办": "ctfcup (https://ctftime.org/team/203499)",
-        "比赛ID": "864",
         "比赛状态": "past"
     }
 ]

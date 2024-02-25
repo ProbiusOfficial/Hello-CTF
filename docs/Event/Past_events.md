@@ -147,6 +147,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[WEC CTF](https://wecctf.nitk.ac.in/)"  
+    [![](https://ctftime.org/media/events/weclogo.png){ width="200" align=left }](https://wecctf.nitk.ac.in/)  
+    **比赛名称** : [WEC CTF](https://wecctf.nitk.ac.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-24 20:30:00 - 2024-02-25 20:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Web Club NITK (https://ctftime.org/team/216903)  
+    **添加日历** : https://ctftime.org/event/2270.ics  
+    
 ??? Quote "[BraekerCTF](https://braekerctf.ctfd.io/)"  
     [![](https://ctftime.org/media/events/AI_Robot4.png){ width="200" align=left }](https://braekerctf.ctfd.io/)  
     **比赛名称** : [BraekerCTF](https://braekerctf.ctfd.io/)  
@@ -173,6 +182,15 @@ comments: true
     **比赛权重** : 24.93  
     **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
     **添加日历** : https://ctftime.org/event/2102.ics  
+    
+??? Quote "[Pragyan CTF 2024](https://ctf.pragyan.org/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.pragyan.org/)  
+    **比赛名称** : [Pragyan CTF 2024](https://ctf.pragyan.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-16 22:30:00 - 2024-02-17 22:30:00 UTC+8  
+    **比赛权重** : 2.80  
+    **赛事主办** : Pragyan (https://ctftime.org/team/33867)  
+    **添加日历** : https://ctftime.org/event/2266.ics  
     
 ??? Quote "[SAIBORG - Elite Hacking Competition](https://www.saiborg.io/)"  
     [![](https://ctftime.org/media/events/saiborg-profile.jpg){ width="200" align=left }](https://www.saiborg.io/)  
@@ -1028,22 +1046,4 @@ comments: true
     **比赛权重** : 19.50  
     **赛事主办** : cursed (https://ctftime.org/team/199492)  
     **添加日历** : https://ctftime.org/event/2144.ics  
-    
-??? Quote "[Platypwn 2023](https://platypwn.ctf.platypwnies.de/)"  
-    [![](https://ctftime.org/media/events/a1c3d5bc6d43496ab202de9be30f3cd9.jpg){ width="200" align=left }](https://platypwn.ctf.platypwnies.de/)  
-    **比赛名称** : [Platypwn 2023](https://platypwn.ctf.platypwnies.de/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-28 20:00:00 - 2023-10-29 20:00:00 UTC+8  
-    **比赛权重** : 24.75  
-    **赛事主办** : Platypwnies (https://ctftime.org/team/112550)  
-    **添加日历** : https://ctftime.org/event/2082.ics  
-    
-??? Quote "[Russian CTF Cup 2023 Qualifier](https://ctfcup.ru/)"  
-    [![](https://ctftime.org/media/events/CMjwD0td2vU.jpg){ width="200" align=left }](https://ctfcup.ru/)  
-    **比赛名称** : [Russian CTF Cup 2023 Qualifier](https://ctfcup.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-28 17:00:00 - 2023-10-29 17:00:00 UTC+8  
-    **比赛权重** : 24.21  
-    **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
-    **添加日历** : https://ctftime.org/event/2136.ics  
     
