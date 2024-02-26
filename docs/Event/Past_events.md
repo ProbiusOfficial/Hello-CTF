@@ -156,6 +156,15 @@ comments: true
     **赛事主办** : Web Club NITK (https://ctftime.org/team/216903)  
     **添加日历** : https://ctftime.org/event/2270.ics  
     
+??? Quote "[bi0sCTF 2024](https://ctf.bi0s.in/)"  
+    [![](https://ctftime.org/media/events/Untitled-removebg-preview_1.png){ width="200" align=left }](https://ctf.bi0s.in/)  
+    **比赛名称** : [bi0sCTF 2024](https://ctf.bi0s.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-02-24 20:00:00 - 2024-02-26 08:00:00 UTC+8  
+    **比赛权重** : 79.83  
+    **赛事主办** : bi0s (https://ctftime.org/team/662)  
+    **添加日历** : https://ctftime.org/event/2117.ics  
+    
 ??? Quote "[BraekerCTF](https://braekerctf.ctfd.io/)"  
     [![](https://ctftime.org/media/events/AI_Robot4.png){ width="200" align=left }](https://braekerctf.ctfd.io/)  
     **比赛名称** : [BraekerCTF](https://braekerctf.ctfd.io/)  
@@ -1037,13 +1046,4 @@ comments: true
     **比赛权重** : 20.82  
     **赛事主办** : NULL Life (https://ctftime.org/team/321)  
     **添加日历** : https://ctftime.org/event/2143.ics  
-    
-??? Quote "[cursedCTF 2024 Halloween Teaser](https://cursedc.tf/)"  
-    [![](https://ctftime.org/media/events/cursedctf_halloween_teaser.jpg){ width="200" align=left }](https://cursedc.tf/)  
-    **比赛名称** : [cursedCTF 2024 Halloween Teaser](https://cursedc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-10-31 08:00:00 - 2023-11-02 07:59:59 UTC+8  
-    **比赛权重** : 19.50  
-    **赛事主办** : cursed (https://ctftime.org/team/199492)  
-    **添加日历** : https://ctftime.org/event/2144.ics  
     
