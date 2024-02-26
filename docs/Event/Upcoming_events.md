@@ -308,15 +308,6 @@ comments: true
     **赛事主办** : FITSEC (https://ctftime.org/team/65296)  
     **添加日历** : https://ctftime.org/event/2254.ics  
     
-??? Quote "[D^3CTF 2024](https://d3ctf.io/)"  
-    [![](https://ctftime.org/media/events/ddd.png){ width="200" align=left }](https://d3ctf.io/)  
-    **比赛名称** : [D^3CTF 2024](https://d3ctf.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-20 02:00:00 - 2024-04-22 02:00:00 UTC+8  
-    **比赛权重** : 39.40  
-    **赛事主办** : D^3CTF Organizers (https://ctftime.org/team/91096)  
-    **添加日历** : https://ctftime.org/event/2276.ics  
-    
 ??? Quote "[Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)"  
     [![](https://ctftime.org/media/events/12e936bf3a5de410fc3506bfdffb608a.jpg){ width="200" align=left }](https://challengethecyber.nl/)  
     **比赛名称** : [Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)  
