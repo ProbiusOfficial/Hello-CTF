@@ -711,9 +711,9 @@ hide:
                 **赛事主办** : AkaSec (https://ctftime.org/team/107202)  
                 **添加日历** : https://ctftime.org/event/2222.ics  
                 
-            ??? Quote "[BCACTF 4.0](https://www.bcactf.com/)"  
+            ??? Quote "[BCACTF 5.0](https://www.bcactf.com/)"  
                 [![](https://ctftime.org/media/events/bcactflogoocean.png){ width="200" align=left }](https://www.bcactf.com/)  
-                **比赛名称** : [BCACTF 4.0](https://www.bcactf.com/)  
+                **比赛名称** : [BCACTF 5.0](https://www.bcactf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-06-08 04:00:00 - 2024-06-11 04:00:00 UTC+8  
                 **比赛权重** : 46.33  
