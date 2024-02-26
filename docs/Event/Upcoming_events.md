@@ -119,15 +119,6 @@ comments: true
     **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
     **添加日历** : https://ctftime.org/event/2255.ics  
     
-??? Quote "[Snowfort 2024](https://snowfort2024.cyberscoring.ca/)"  
-    [![](https://ctftime.org/media/events/logo_2024.png){ width="200" align=left }](https://snowfort2024.cyberscoring.ca/)  
-    **比赛名称** : [Snowfort 2024](https://snowfort2024.cyberscoring.ca/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2024-03-10 00:00:00 - 2024-03-10 08:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Shell We Hack? (https://ctftime.org/team/220236)  
-    **添加日历** : https://ctftime.org/event/2260.ics  
-    
 ??? Quote "[Nullcon Berlin HackIM 2024 CTF](https://ctf.nullcon.net/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.nullcon.net/)  
     **比赛名称** : [Nullcon Berlin HackIM 2024 CTF](https://ctf.nullcon.net/)  
@@ -163,6 +154,15 @@ comments: true
     **比赛权重** : 35.25  
     **赛事主办** : wolvsec (https://ctftime.org/team/83621)  
     **添加日历** : https://ctftime.org/event/2240.ics  
+    
+??? Quote "[Snowfort 2024](https://snowfort2024.cyberscoring.ca/)"  
+    [![](https://ctftime.org/media/events/logo_2024.png){ width="200" align=left }](https://snowfort2024.cyberscoring.ca/)  
+    **比赛名称** : [Snowfort 2024](https://snowfort2024.cyberscoring.ca/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-03-16 23:00:00 - 2024-03-17 07:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Shell We Hack? (https://ctftime.org/team/220236)  
+    **添加日历** : https://ctftime.org/event/2260.ics  
     
 ??? Quote "[LINE CTF 2024](https://linectf.me/)"  
     [![](https://ctftime.org/media/events/Image_1.jpeg){ width="200" align=left }](https://linectf.me/)  

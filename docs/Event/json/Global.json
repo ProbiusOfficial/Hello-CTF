@@ -120,18 +120,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Snowfort 2024",
-        "比赛时间": "2024-03-10 00:00:00 - 2024-03-10 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2260.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://snowfort2024.cyberscoring.ca/",
-        "比赛标志": "https://ctftime.org/media/events/logo_2024.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Shell We Hack? (https://ctftime.org/team/220236)",
-        "比赛ID": "1057",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Nullcon Berlin HackIM 2024 CTF",
         "比赛时间": "2024-03-14 17:30:00 - 2024-03-15 19:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2264.ics",
@@ -177,6 +165,18 @@
         "比赛权重": "35.25",
         "赛事主办": "wolvsec (https://ctftime.org/team/83621)",
         "比赛ID": "766",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Snowfort 2024",
+        "比赛时间": "2024-03-16 23:00:00 - 2024-03-17 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2260.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://snowfort2024.cyberscoring.ca/",
+        "比赛标志": "https://ctftime.org/media/events/logo_2024.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Shell We Hack? (https://ctftime.org/team/220236)",
+        "比赛ID": "1057",
         "比赛状态": "oncoming"
     },
     {
