@@ -215,7 +215,7 @@ comments: true
     **比赛名称** : [BITSCTF 2024](https://ctf.bitskrieg.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-02-16 02:30:00 - 2024-02-18 02:30:00 UTC+8  
-    **比赛权重** : 22.73  
+    **比赛权重** : 22.21  
     **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
     **添加日历** : https://ctftime.org/event/2235.ics  
     
