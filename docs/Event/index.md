@@ -790,13 +790,7 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-            ??? Quote "[HGAME2024网络攻防大赛](https://hgame.vidar.club)"  
-                **比赛名称** : [HGAME2024网络攻防大赛](https://hgame.vidar.club)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年01月20日 20:00 - 2024年02月05日 20:00  
-                **比赛时间** : 2024年01月29日 20:00 - 2024年02月27日 20:00  
-                **其他说明** : QQ群：134591168   适合新手参加  
-                
+    
         === "国外赛事"
             ??? Quote "[Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)  
@@ -809,6 +803,13 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[HGAME2024网络攻防大赛](https://hgame.vidar.club)"  
+                **比赛名称** : [HGAME2024网络攻防大赛](https://hgame.vidar.club)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年01月20日 20:00 - 2024年02月05日 20:00  
+                **比赛时间** : 2024年01月29日 20:00 - 2024年02月27日 20:00  
+                **其他说明** : QQ群：134591168   适合新手参加  
+                
             ??? Quote "[SICTF Round#3](https://yuanshen.life/)"  
                 **比赛名称** : [SICTF Round#3](https://yuanshen.life/)  
                 **比赛类型** : 团队赛|1-3人  
