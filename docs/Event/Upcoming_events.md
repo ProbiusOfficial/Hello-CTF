@@ -263,9 +263,9 @@ comments: true
     **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
     **添加日历** : https://ctftime.org/event/2262.ics  
     
-??? Quote "[THCon 2k24 CTF](https://ctf.thcon.party/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.thcon.party/)  
-    **比赛名称** : [THCon 2k24 CTF](https://ctf.thcon.party/)  
+??? Quote "[THCon 2k24 CTF](https://thcon.party/)"  
+    [![](https://ctftime.org/media/events/logo-desktop.png){ width="200" align=left }](https://thcon.party/)  
+    **比赛名称** : [THCon 2k24 CTF](https://thcon.party/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-04-06 18:00:00 - 2024-04-08 18:00:00 UTC+8  
     **比赛权重** : 0.00  
