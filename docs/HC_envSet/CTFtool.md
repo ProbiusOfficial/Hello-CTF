@@ -38,7 +38,7 @@ comments: true
 | Docker             | 容器服务 <img src="../CTFtool.assets/windows.svg" width="17" height="17" /> <img src="../CTFtool.assets/linux.svg" width="17" height="17" /> <img src="../CTFtool.assets/apple.svg" width="17" height="17" /><br />常用于 题目本地搭建测试  靶场环境，漏洞复现环境搭建等 <br /> 除了静态附件题目，几乎所有的CTF题目都依赖Docker | [官网](https://www.docker.com/)                              |    /     |
 | Navicat            | 优秀的数据库 管理 操作 调试 以及 可视化软件<a href="https://www.ghxi.com/navicat16.html"><img src="../CTFtool.assets/windows.svg" width="17" height="17" /></a><img src="../CTFtool.assets/linux.svg" width="17" height="17" /> <img src="../CTFtool.assets/apple.svg" width="17" height="17" /> | [官网](https://navicat.com.cn/download/navicat-premium)      |    /     |
 | Watt Toolkit       | Github Discord 部分谷歌服务 页面元素CDN 访问加速 \| <br />不是用来让你打游戏的啊喂(#`O′)！<img src="../CTFtool.assets/windows.svg" width="17" height="17" /> <img src="../CTFtool.assets/linux.svg" width="17" height="17" /> <img src="../CTFtool.assets/apple.svg" width="17" height="17" /> | [Github](https://github.com/BeyondDimension/SteamTools)      |    /     |
-| Clash              | 部分服务访问加速 \| 我也只能说这么多<img src="../CTFtool.assets/windows.svg" width="17" height="17" /> <img src="../CTFtool.assets/linux.svg" width="17" height="17" /> <img src="../CTFtool.assets/apple.svg" width="17" height="17" /> | [Github](https://github.com/Dreamacro/clash)                 |    /     |
+| Clash              | 部分服务访问加速 \| 我也只能说这么多<img src="../CTFtool.assets/windows.svg" width="17" height="17" /> <img src="../CTFtool.assets/linux.svg" width="17" height="17" /> <img src="../CTFtool.assets/apple.svg" width="17" height="17" /> | [Github](https://github.com/DustinWin/clash_singbox-tools)                 |    /     |
 
 ---
 
