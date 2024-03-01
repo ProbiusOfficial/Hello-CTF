@@ -54,13 +54,6 @@ hide:
     ---
     <!-- 主页赛事展示_开始 -->
     === "国内比赛"
-        ??? Quote "[第一届“长城杯”信息安全铁人三项赛初赛](http://ccb.itsec.gov.cn/)"  
-            **比赛名称** : [第一届“长城杯”信息安全铁人三项赛初赛](http://ccb.itsec.gov.cn/)  
-            **比赛类型** : 团队赛|1-4人  
-            **报名时间** : 2023年12月21日 00:00 - 2024年02月20日 18:00  
-            **比赛时间** : 2024年03月01日 09:00 - 2024年03月31日 18:00  
-            **其他说明** : 比赛时间2024年3月  
-            
         ??? Quote "[DubheCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=94938be6-ce42-11ee-ab28-000c29bc20bf)"  
             **比赛名称** : [DubheCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=94938be6-ce42-11ee-ab28-000c29bc20bf)  
             **比赛类型** : 团队赛 | 1-n  
