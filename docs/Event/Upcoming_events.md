@@ -91,7 +91,7 @@ comments: true
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-03-09 08:00:00 - 2024-03-11 07:00:00 UTC+8  
     **比赛权重** : 23.59  
-    **赛事主办** : wxmctf (https://ctftime.org/team/211390)  
+    **赛事主办** : X Series CTF (https://ctftime.org/team/211390)  
     **添加日历** : https://ctftime.org/event/2179.ics  
     
 ??? Quote "[vikeCTF 2024](https://ctf.vikesec.ca/)"  
