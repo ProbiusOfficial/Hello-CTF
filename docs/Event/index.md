@@ -315,15 +315,6 @@ hide:
                 **其他说明** : 比赛时间未定  
                 
         === "国外赛事"
-            ??? Quote "[GCC CTF 2024](https://gcc-ctf.com/)"  
-                [![](https://ctftime.org/media/events/Logo_GCC_White_Font.png){ width="200" align=left }](https://gcc-ctf.com/)  
-                **比赛名称** : [GCC CTF 2024](https://gcc-ctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-03-02 04:00:00 - 2024-03-04 04:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Galette Cidre CTF (https://ctftime.org/team/246488)  
-                **添加日历** : https://ctftime.org/event/2251.ics  
-                
             ??? Quote "[AthackCTF 2024](https://www.athackctf.com/)"  
                 [![](https://ctftime.org/media/events/_hacklogo_v2_720.png){ width="200" align=left }](https://www.athackctf.com/)  
                 **比赛名称** : [AthackCTF 2024](https://www.athackctf.com/)  
@@ -792,6 +783,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
                 **添加日历** : https://ctftime.org/event/2165.ics  
+                
+            ??? Quote "[GCC CTF 2024](https://gcc-ctf.com/)"  
+                [![](https://ctftime.org/media/events/Logo_GCC_White_Font.png){ width="200" align=left }](https://gcc-ctf.com/)  
+                **比赛名称** : [GCC CTF 2024](https://gcc-ctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-03-02 04:00:00 - 2024-03-04 04:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Galette Cidre CTF (https://ctftime.org/team/246488)  
+                **添加日历** : https://ctftime.org/event/2251.ics  
                 
     === "*已经结束*"
         === "国内赛事"
