@@ -22,15 +22,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[osu!gaming CTF 2024](https://www.osugaming.lol/)"  
-    [![](https://ctftime.org/media/events/unknown_1.png){ width="200" align=left }](https://www.osugaming.lol/)  
-    **比赛名称** : [osu!gaming CTF 2024](https://www.osugaming.lol/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-02 01:00:00 - 2024-03-04 01:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
-    **添加日历** : https://ctftime.org/event/2165.ics  
-    
 ??? Quote "[GCC CTF 2024](https://gcc-ctf.com/)"  
     [![](https://ctftime.org/media/events/Logo_GCC_White_Font.png){ width="200" align=left }](https://gcc-ctf.com/)  
     **比赛名称** : [GCC CTF 2024](https://gcc-ctf.com/)  

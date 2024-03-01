@@ -69,15 +69,6 @@ hide:
             **其他说明** : 比赛时间未定  
                 
     === "国外比赛"
-        ??? Quote "[osu!gaming CTF 2024](https://www.osugaming.lol/)"  
-            [![](https://ctftime.org/media/events/unknown_1.png){ width="200" align=left }](https://www.osugaming.lol/)  
-            **比赛名称** : [osu!gaming CTF 2024](https://www.osugaming.lol/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-03-02 01:00:00 - 2024-03-04 01:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
-            **添加日历** : https://ctftime.org/event/2165.ics  
-            
         ??? Quote "[GCC CTF 2024](https://gcc-ctf.com/)"  
             [![](https://ctftime.org/media/events/Logo_GCC_White_Font.png){ width="200" align=left }](https://gcc-ctf.com/)  
             **比赛名称** : [GCC CTF 2024](https://gcc-ctf.com/)  
@@ -104,6 +95,15 @@ hide:
             **比赛权重** : 23.95  
             **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
             **添加日历** : https://ctftime.org/event/2231.ics  
+            
+        ??? Quote "[Shakti CTF](https://ctf.shakticon.com/)"  
+            [![](https://ctftime.org/media/events/shaktictf_1_1.png){ width="200" align=left }](https://ctf.shakticon.com/)  
+            **比赛名称** : [Shakti CTF](https://ctf.shakticon.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-03-08 20:30:00 - 2024-03-09 20:30:00 UTC+8  
+            **比赛权重** : 24.10  
+            **赛事主办** : TeamShakti (https://ctftime.org/team/61083)  
+            **添加日历** : https://ctftime.org/event/2268.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
