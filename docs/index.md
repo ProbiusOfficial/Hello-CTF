@@ -69,15 +69,6 @@ hide:
             **其他说明** : 比赛时间未定  
                 
     === "国外比赛"
-        ??? Quote "[VishwaCTF 2024](https://vishwactf.com/)"  
-            [![](https://ctftime.org/media/events/VishwaCTF_3.png){ width="200" align=left }](https://vishwactf.com/)  
-            **比赛名称** : [VishwaCTF 2024](https://vishwactf.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-03-01 18:30:00 - 2024-03-03 18:29:59 UTC+8  
-            **比赛权重** : 33.43  
-            **赛事主办** : CyberCellVIIT (https://ctftime.org/team/144677)  
-            **添加日历** : https://ctftime.org/event/2272.ics  
-            
         ??? Quote "[osu!gaming CTF 2024](https://www.osugaming.lol/)"  
             [![](https://ctftime.org/media/events/unknown_1.png){ width="200" align=left }](https://www.osugaming.lol/)  
             **比赛名称** : [osu!gaming CTF 2024](https://www.osugaming.lol/)  
@@ -104,6 +95,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : athackPrivate (https://ctftime.org/team/278003)  
             **添加日历** : https://ctftime.org/event/2228.ics  
+            
+        ??? Quote "[Pearl CTF](https://pearlctf.in/)"  
+            [![](https://ctftime.org/media/events/_croppearl_logo_1_of_1.png){ width="200" align=left }](https://pearlctf.in/)  
+            **比赛名称** : [Pearl CTF](https://pearlctf.in/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-03-08 20:00:00 - 2024-03-10 07:59:59 UTC+8  
+            **比赛权重** : 23.95  
+            **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
+            **添加日历** : https://ctftime.org/event/2231.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
