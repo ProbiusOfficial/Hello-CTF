@@ -69,15 +69,6 @@ hide:
             **其他说明** : 比赛时间未定  
                 
     === "国外比赛"
-        ??? Quote "[AthackCTF 2024](https://www.athackctf.com/)"  
-            [![](https://ctftime.org/media/events/_hacklogo_v2_720.png){ width="200" align=left }](https://www.athackctf.com/)  
-            **比赛名称** : [AthackCTF 2024](https://www.athackctf.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-03-02 16:00:00 - 2024-03-04 01:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : athackPrivate (https://ctftime.org/team/278003)  
-            **添加日历** : https://ctftime.org/event/2228.ics  
-            
         ??? Quote "[Pearl CTF](https://pearlctf.in/)"  
             [![](https://ctftime.org/media/events/_croppearl_logo_1_of_1.png){ width="200" align=left }](https://pearlctf.in/)  
             **比赛名称** : [Pearl CTF](https://pearlctf.in/)  
@@ -104,6 +95,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
             **添加日历** : https://ctftime.org/event/2267.ics  
+            
+        ??? Quote "[WxMCTF 2024](https://ctf.mcpt.ca/contest/wxmctf)"  
+            [![](https://ctftime.org/media/events/Logo_thing_1.png){ width="200" align=left }](https://ctf.mcpt.ca/contest/wxmctf)  
+            **比赛名称** : [WxMCTF 2024](https://ctf.mcpt.ca/contest/wxmctf)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-03-09 08:00:00 - 2024-03-11 07:00:00 UTC+8  
+            **比赛权重** : 23.59  
+            **赛事主办** : X Series CTF (https://ctftime.org/team/211390)  
+            **添加日历** : https://ctftime.org/event/2179.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
