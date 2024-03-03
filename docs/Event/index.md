@@ -757,15 +757,6 @@ hide:
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
                 
-            ??? Quote "[osu!gaming CTF 2024](https://www.osugaming.lol/)"  
-                [![](https://ctftime.org/media/events/unknown_1.png){ width="200" align=left }](https://www.osugaming.lol/)  
-                **比赛名称** : [osu!gaming CTF 2024](https://www.osugaming.lol/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-03-02 01:00:00 - 2024-03-04 01:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
-                **添加日历** : https://ctftime.org/event/2165.ics  
-                
             ??? Quote "[GCC CTF 2024](https://gcc-ctf.com/)"  
                 [![](https://ctftime.org/media/events/Logo_GCC_White_Font.png){ width="200" align=left }](https://gcc-ctf.com/)  
                 **比赛名称** : [GCC CTF 2024](https://gcc-ctf.com/)  
@@ -774,15 +765,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Galette Cidre CTF (https://ctftime.org/team/246488)  
                 **添加日历** : https://ctftime.org/event/2251.ics  
-                
-            ??? Quote "[AthackCTF 2024](https://www.athackctf.com/)"  
-                [![](https://ctftime.org/media/events/_hacklogo_v2_720.png){ width="200" align=left }](https://www.athackctf.com/)  
-                **比赛名称** : [AthackCTF 2024](https://www.athackctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-03-02 16:00:00 - 2024-03-04 01:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : athackPrivate (https://ctftime.org/team/278003)  
-                **添加日历** : https://ctftime.org/event/2228.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -934,6 +916,24 @@ hide:
                 **其他说明** :   
                 
         === "国外赛事"
+            ??? Quote "[AthackCTF 2024](https://www.athackctf.com/)"  
+                [![](https://ctftime.org/media/events/_hacklogo_v2_720.png){ width="200" align=left }](https://www.athackctf.com/)  
+                **比赛名称** : [AthackCTF 2024](https://www.athackctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-03-02 16:00:00 - 2024-03-04 01:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : athackPrivate (https://ctftime.org/team/278003)  
+                **添加日历** : https://ctftime.org/event/2228.ics  
+                
+            ??? Quote "[osu!gaming CTF 2024](https://www.osugaming.lol/)"  
+                [![](https://ctftime.org/media/events/unknown_1.png){ width="200" align=left }](https://www.osugaming.lol/)  
+                **比赛名称** : [osu!gaming CTF 2024](https://www.osugaming.lol/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-03-02 01:00:00 - 2024-03-04 01:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
+                **添加日历** : https://ctftime.org/event/2165.ics  
+                
             ??? Quote "[VishwaCTF 2024](https://vishwactf.com/)"  
                 [![](https://ctftime.org/media/events/VishwaCTF_3.png){ width="200" align=left }](https://vishwactf.com/)  
                 **比赛名称** : [VishwaCTF 2024](https://vishwactf.com/)  
@@ -1815,24 +1815,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : BlackAlps (https://ctftime.org/team/89021)  
                 **添加日历** : https://ctftime.org/event/2157.ics  
-                
-            ??? Quote "[Hardwear.io NL 2023 Hardware CTF](https://hwctf.quarkslab.com/)"  
-                [![](https://ctftime.org/media/events/logohwcolor.svg.png){ width="200" align=left }](https://hwctf.quarkslab.com/)  
-                **比赛名称** : [Hardwear.io NL 2023 Hardware CTF](https://hwctf.quarkslab.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-11-02 18:00:00 - 2023-11-03 22:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Hardware CTF by Quarkslab (https://ctftime.org/team/274600)  
-                **添加日历** : https://ctftime.org/event/2176.ics  
-                
-            ??? Quote "[Ajman University CTF](https://au.pentestgarage.com/)"  
-                [![](https://ctftime.org/media/events/ctf11.png){ width="200" align=left }](https://au.pentestgarage.com/)  
-                **比赛名称** : [Ajman University CTF](https://au.pentestgarage.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-11-02 17:00:00 - 2023-11-03 01:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : RedTeam Hacker Academy (https://ctftime.org/team/250923)  
-                **添加日历** : https://ctftime.org/event/2152.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
