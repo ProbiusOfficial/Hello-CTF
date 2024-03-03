@@ -24,12 +24,3 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Quote "[GCC CTF 2024](https://gcc-ctf.com/)"  
-    [![](https://ctftime.org/media/events/Logo_GCC_White_Font.png){ width="200" align=left }](https://gcc-ctf.com/)  
-    **比赛名称** : [GCC CTF 2024](https://gcc-ctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-02 04:00:00 - 2024-03-04 04:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Galette Cidre CTF (https://ctftime.org/team/246488)  
-    **添加日历** : https://ctftime.org/event/2251.ics  
-    

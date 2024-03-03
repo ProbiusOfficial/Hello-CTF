@@ -757,15 +757,6 @@ hide:
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
                 
-            ??? Quote "[GCC CTF 2024](https://gcc-ctf.com/)"  
-                [![](https://ctftime.org/media/events/Logo_GCC_White_Font.png){ width="200" align=left }](https://gcc-ctf.com/)  
-                **比赛名称** : [GCC CTF 2024](https://gcc-ctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-03-02 04:00:00 - 2024-03-04 04:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Galette Cidre CTF (https://ctftime.org/team/246488)  
-                **添加日历** : https://ctftime.org/event/2251.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[青少年CTF擂台挑战赛 2024 #Round 1](https://www.qsnctf.com/#/main/race-center/race-guide?id=11)"  
@@ -924,6 +915,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : athackPrivate (https://ctftime.org/team/278003)  
                 **添加日历** : https://ctftime.org/event/2228.ics  
+                
+            ??? Quote "[GCC CTF 2024](https://gcc-ctf.com/)"  
+                [![](https://ctftime.org/media/events/Logo_GCC_White_Font.png){ width="200" align=left }](https://gcc-ctf.com/)  
+                **比赛名称** : [GCC CTF 2024](https://gcc-ctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-03-02 04:00:00 - 2024-03-04 04:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Galette Cidre CTF (https://ctftime.org/team/246488)  
+                **添加日历** : https://ctftime.org/event/2251.ics  
                 
             ??? Quote "[osu!gaming CTF 2024](https://www.osugaming.lol/)"  
                 [![](https://ctftime.org/media/events/unknown_1.png){ width="200" align=left }](https://www.osugaming.lol/)  
@@ -1806,15 +1806,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : TSG (https://ctftime.org/team/16088)  
                 **添加日历** : https://ctftime.org/event/2013.ics  
-                
-            ??? Quote "[BlackAlps CTF 2023](https://www.blackalps.ch/ba-23/ctf.php)"  
-                [![](https://ctftime.org/media/events/blackalps-v5-mountain-black1.png){ width="200" align=left }](https://www.blackalps.ch/ba-23/ctf.php)  
-                **比赛名称** : [BlackAlps CTF 2023](https://www.blackalps.ch/ba-23/ctf.php)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-11-04 00:45:00 - 2023-11-04 05:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : BlackAlps (https://ctftime.org/team/89021)  
-                **添加日历** : https://ctftime.org/event/2157.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
