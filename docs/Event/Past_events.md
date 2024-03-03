@@ -168,7 +168,7 @@ comments: true
     **比赛名称** : [WEC CTF](https://wecctf.nitk.ac.in/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-02-24 20:30:00 - 2024-02-25 20:30:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : Web Club NITK (https://ctftime.org/team/216903)  
     **添加日历** : https://ctftime.org/event/2270.ics  
     
@@ -181,9 +181,9 @@ comments: true
     **赛事主办** : bi0s (https://ctftime.org/team/662)  
     **添加日历** : https://ctftime.org/event/2117.ics  
     
-??? Quote "[BraekerCTF](https://braekerctf.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/AI_Robot4.png){ width="200" align=left }](https://braekerctf.ctfd.io/)  
-    **比赛名称** : [BraekerCTF](https://braekerctf.ctfd.io/)  
+??? Quote "[BraekerCTF](https://github.com/spipm/BraekerCTF_2024_public)"  
+    [![](https://ctftime.org/media/events/AI_Robot4.png){ width="200" align=left }](https://github.com/spipm/BraekerCTF_2024_public)  
+    **比赛名称** : [BraekerCTF](https://github.com/spipm/BraekerCTF_2024_public)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-02-23 20:00:00 - 2024-02-25 00:00:00 UTC+8  
     **比赛权重** : 25.00  
