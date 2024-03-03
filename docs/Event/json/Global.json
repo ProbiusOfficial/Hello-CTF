@@ -576,18 +576,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "VishwaCTF 2024",
-        "比赛时间": "2024-03-01 18:30:00 - 2024-03-03 18:29:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2272.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://vishwactf.com/",
-        "比赛标志": "https://ctftime.org/media/events/VishwaCTF_3.png",
-        "比赛权重": "33.43",
-        "赛事主办": "CyberCellVIIT (https://ctftime.org/team/144677)",
-        "比赛ID": "599",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "osu!gaming CTF 2024",
         "比赛时间": "2024-03-02 01:00:00 - 2024-03-04 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2165.ics",
@@ -622,6 +610,18 @@
         "赛事主办": "athackPrivate (https://ctftime.org/team/278003)",
         "比赛ID": "1049",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "VishwaCTF 2024",
+        "比赛时间": "2024-03-01 18:30:00 - 2024-03-03 18:29:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2272.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://vishwactf.com/",
+        "比赛标志": "https://ctftime.org/media/events/VishwaCTF_3.png",
+        "比赛权重": "33.43",
+        "赛事主办": "CyberCellVIIT (https://ctftime.org/team/144677)",
+        "比赛ID": "599",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "WEC CTF",
@@ -1809,18 +1809,6 @@
         "比赛权重": "0.00",
         "赛事主办": "RedTeam Hacker Academy (https://ctftime.org/team/250923)",
         "比赛ID": "1008",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "EKOPARTY CTF 2023",
-        "比赛时间": "2023-11-01 21:00:00 - 2023-11-04 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2143.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.ekoparty.org/",
-        "比赛标志": "https://ctftime.org/media/events/Logo_10.png",
-        "比赛权重": "20.82",
-        "赛事主办": "NULL Life (https://ctftime.org/team/321)",
-        "比赛ID": "121",
         "比赛状态": "past"
     }
 ]
