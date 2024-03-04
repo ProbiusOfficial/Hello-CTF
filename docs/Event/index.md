@@ -284,6 +284,13 @@ hide:
             适度CTF益脑，沉迷CTF伤身。合理安排时间，享受健康生活。
     
     === "*正在报名*"
+        ??? Quote "[2024第一届VCTF纳新赛](https://ctf.venomsec.com)"  
+            **比赛名称** : [2024第一届VCTF纳新赛](https://ctf.venomsec.com)  
+            **比赛类型** : 个人赛  
+            **报名时间** : 2024年03月04日 8:00 - 2024年03月16日 8:00  
+            **比赛时间** : 2024年03月16日 8:00 - 2024年03月16日 20:00  
+            **其他说明** : 比赛QQ群: 748783131  
+            
         ??? Quote "[DubheCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=94938be6-ce42-11ee-ab28-000c29bc20bf)"  
             **比赛名称** : [DubheCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=94938be6-ce42-11ee-ab28-000c29bc20bf)  
             **比赛类型** : 团队赛 | 1-n  
@@ -300,6 +307,13 @@ hide:
             
     === "*即将开始*"
         === "国内赛事"
+            ??? Quote "[2024第一届VCTF纳新赛](https://ctf.venomsec.com)"  
+                **比赛名称** : [2024第一届VCTF纳新赛](https://ctf.venomsec.com)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年03月04日 8:00 - 2024年03月16日 8:00  
+                **比赛时间** : 2024年03月16日 8:00 - 2024年03月16日 20:00  
+                **其他说明** : 比赛QQ群: 748783131  
+                
             ??? Quote "[DubheCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=94938be6-ce42-11ee-ab28-000c29bc20bf)"  
                 **比赛名称** : [DubheCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=94938be6-ce42-11ee-ab28-000c29bc20bf)  
                 **比赛类型** : 团队赛 | 1-n  

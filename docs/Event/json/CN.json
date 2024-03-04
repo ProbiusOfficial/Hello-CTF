@@ -3,6 +3,17 @@
     "data": {
         "result": [
             {
+                "name": "2024第一届VCTF纳新赛",
+                "link": "https://ctf.venomsec.com",
+                "type": "个人赛",
+                "bmks": "2024年03月04日 8:00",
+                "bmjz": "2024年03月16日 8:00",
+                "bsks": "2024年03月16日 8:00",
+                "bsjs": "2024年03月16日 20:00",
+                "readmore": "比赛QQ群: 748783131",
+                "status": 1
+            },
+            {
                 "name": "DubheCTF 2024",
                 "link": "https://adworld.xctf.org.cn/contest/assess?hash=94938be6-ce42-11ee-ab28-000c29bc20bf",
                 "type": "团队赛 | 1-n",
