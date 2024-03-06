@@ -484,7 +484,7 @@ hide:
                 **添加日历** : https://ctftime.org/event/2196.ics  
                 
             ??? Quote "[JerseyCTF IV](https://ctf.jerseyctf.com/)"  
-                [![](https://ctftime.org/media/events/lock.png){ width="200" align=left }](https://ctf.jerseyctf.com/)  
+                [![](https://ctftime.org/media/events/Asset_39.png){ width="200" align=left }](https://ctf.jerseyctf.com/)  
                 **比赛名称** : [JerseyCTF IV](https://ctf.jerseyctf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-03-24 00:00:00 - 2024-03-25 00:00:00 UTC+8  
