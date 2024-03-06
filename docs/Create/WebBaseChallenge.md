@@ -1,35 +1,3 @@
----
-comments: true
-
----
-
-# 如何优雅的出CTF题
-
-本教程基于 [Ctf-Docker-Template](https://github.com/CTF-Archives/ctf-docker-template) 
-项目地址:https://github.com/CTF-Archives/ctf-docker-template
-
-您可以在这里找到所有所提及的容器模板，有问题请提交issue，当然您有更好的模板，也欢迎提交PR，如果该项目帮助到您，请给个star支持一下~
-
-!!! warning "注意"
-    本教程将默认您已经具备以下条件:  
-       1. 拥有[Docker环境](../HC_envSet/Docker_On_Linux.md) 并且 对Docker有一定的了解  
-       2. 至少熟悉一个CTF方向，并且清楚CTF题目命题方向  
-
-该教程主要针对有容器需求的题目，如PWN 和 WEB 并且普遍利用动态容器技术(即 动态Flag) 除了传统的PWN 和 WEB 需求的动态容器，结合目前CTF其他方向也尝试引入容器提高题目的 质量 趣味 或者 难度？我们也提供诸如nc交互式的Crypto题目容器模板，当然您也可以自行修改模板来适应您的题目需求。
-
-## 动态容器原理
-当然这并不很必要太详细的了解，不过为了防止您在使用过程中出现一些问题，我们还是简单的介绍一下动态容器的原理。
-CTF比赛中 几乎所有容器的动态Flag 均基于环境变量(environment)实现，在启动中利用类似 `-e FLAG=flag{xxx}` 的方式来设置环境变量。
-
-!!! note "有意思"
-    在很多容器的本地运行需要注入flag的时候 您可能会看到以下类似的命令
-    `docker run -dtP -e FLAG=NSSCTF{123456} [imagesName:Tag]`
-
-将flag注入到环境变量中后，通过bash脚本(在项目的靶机模板中我们使用 docker-entrypoint.sh) 直接引用环境变量，将其写入到需要放置flag的文件或者数据库中，当然诸如flask的框架也可以直接在代码中引用环境变量(getenv)。
-
-!!! warning "注意"
-    编写题目时 您可能会进行类似于 FLAG写入环境变量 使用Bash脚本 使用db.sql文件进行数据库初始化... 请注意在完成对应操作后 非必要情况下请抹除环境变量以及删除对应的脚本文件，防止flag泄露。
-
 ## Web题目  
 
 ### 前置知识
@@ -49,13 +17,17 @@ CTF比赛中 几乎所有容器的动态Flag 均基于环境变量(environment)�
 
 目前我们的容器模板列表(Web)如下:
 
-- web-nginx-php73
-- web-nginx-mysql-php73
-- web-flask-python_3.7
-- web-flask-python_3.10
-- web-java-jar-openjdk11
-- web-tomcat-war-jetty-jdk8
-...我们会持续更新，我们也欢迎您提交PR来帮助我们完善模板
+- [web-flask-python_3.10](https://github.com/CTF-Archives/ctf-docker-template/tree/main/web-flask-python_3.10)
+- [web-flask-python_3.8](https://github.com/CTF-Archives/ctf-docker-template/tree/main/web-flask-python_3.8)
+- [web-java-openjdk8](https://github.com/CTF-Archives/ctf-docker-template/tree/main/web-java-openjdk8)
+- [web-jetty-jdk8](https://github.com/CTF-Archives/ctf-docker-template/tree/main/web-jetty-jdk8)
+- [web-tomcat-jdk8](https://github.com/CTF-Archives/ctf-docker-template/tree/main/web-tomcat-jdk8)
+- [web-lamp-php80](https://github.com/CTF-Archives/ctf-docker-template/tree/main/web-lamp-php80)
+- [web-lnmp-php73](https://github.com/CTF-Archives/ctf-docker-template/tree/main/web-lnmp-php73)
+- [web-nginx-php73](https://github.com/CTF-Archives/ctf-docker-template/tree/main/web-nginx-php73)
+- [web-node](https://github.com/CTF-Archives/ctf-docker-template/tree/main/web-node)
+
+...我们会持续更新，我们也欢迎您提交[Pull Requests](https://github.com/CTF-Archives/ctf-docker-template/pulls)来帮助我们完善模板
 
 ### 编写题目源码
 如同现实或者说物理机上的 开发/生产 环境一样，您需要编写对应服务的源码，并将其放置在web服务的工作目录，这样才能运行。

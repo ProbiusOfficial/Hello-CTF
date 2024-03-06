@@ -292,7 +292,10 @@ nav:
 
 # - Set Challenges (.SC) 命题 Part ------------
   - 命题:
-    - SC/index.md
+    - Create/index.md
+    - 动态容器原理: Create/DynamicChallengePrinciples.md
+    - Web基础靶机构建流程: Create/WebBaseChallenge.md
+
 
 
 # - ExtensionEnhancement 扩展 (.EE) Part ------------
