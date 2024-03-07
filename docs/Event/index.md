@@ -935,13 +935,6 @@ hide:
                 **比赛时间** : 2024年01月13日 14:00 - 2024年01月13日 17:40  
                 **其他说明** : QQ群：521330139  
                 
-            ??? Quote "[“复兴杯”2023年第四届大学生网络安全精英赛初赛](https://www.nisp.org.cn/wads)"  
-                **比赛名称** : [“复兴杯”2023年第四届大学生网络安全精英赛初赛](https://www.nisp.org.cn/wads)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2023年11月10日 12:00 - 2024年01月02日 18:00  
-                **比赛时间** : 2024年01月03日 09:00 - 2024年01月07日 18:00  
-                **其他说明** :   
-                
         === "国外赛事"
             ??? Quote "[AthackCTF 2024](https://www.athackctf.com/)"  
                 [![](https://ctftime.org/media/events/_hacklogo_v2_720.png){ width="200" align=left }](https://www.athackctf.com/)  
