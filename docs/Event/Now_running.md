@@ -36,3 +36,12 @@ comments: true
     **赛事主办** : TeamShakti (https://ctftime.org/team/61083)  
     **添加日历** : https://ctftime.org/event/2268.ics  
     
+??? Quote "[HackDay 2024 - Finals](https://www.hackday.fr/)"  
+    [![](https://ctftime.org/media/events/CREA_LOGO_Blason_Espion_1.png){ width="200" align=left }](https://www.hackday.fr/)  
+    **比赛名称** : [HackDay 2024 - Finals](https://www.hackday.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-03-09 02:00:00 - 2024-03-10 02:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
+    **添加日历** : https://ctftime.org/event/2267.ics  
+    

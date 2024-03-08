@@ -365,15 +365,6 @@ hide:
                 **其他说明** : 比赛时间2024年3月 未定  
                 
         === "国外赛事"
-            ??? Quote "[HackDay 2024 - Finals](https://www.hackday.fr/)"  
-                [![](https://ctftime.org/media/events/CREA_LOGO_Blason_Espion_1.png){ width="200" align=left }](https://www.hackday.fr/)  
-                **比赛名称** : [HackDay 2024 - Finals](https://www.hackday.fr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-03-09 02:00:00 - 2024-03-10 02:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
-                **添加日历** : https://ctftime.org/event/2267.ics  
-                
             ??? Quote "[WxMCTF 2024](https://ctf.mcpt.ca/contest/wxmctf)"  
                 [![](https://ctftime.org/media/events/Logo_thing_1.png){ width="200" align=left }](https://ctf.mcpt.ca/contest/wxmctf)  
                 **比赛名称** : [WxMCTF 2024](https://ctf.mcpt.ca/contest/wxmctf)  
@@ -800,6 +791,15 @@ hide:
                 **比赛权重** : 24.10  
                 **赛事主办** : TeamShakti (https://ctftime.org/team/61083)  
                 **添加日历** : https://ctftime.org/event/2268.ics  
+                
+            ??? Quote "[HackDay 2024 - Finals](https://www.hackday.fr/)"  
+                [![](https://ctftime.org/media/events/CREA_LOGO_Blason_Espion_1.png){ width="200" align=left }](https://www.hackday.fr/)  
+                **比赛名称** : [HackDay 2024 - Finals](https://www.hackday.fr/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-03-09 02:00:00 - 2024-03-10 02:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
+                **添加日历** : https://ctftime.org/event/2267.ics  
                 
     === "*已经结束*"
         === "国内赛事"
