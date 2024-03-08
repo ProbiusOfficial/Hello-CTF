@@ -3,6 +3,17 @@
     "data": {
         "result": [
             {
+                "name": "NKCTF 2024",
+                "link": "https://n0wayback.com/nkctf2024.html",
+                "type": "团队赛|1-4人",
+                "bmks": "2024年3月10日 00:00",
+                "bmjz": "2024年3月22日 18:00",
+                "bsks": "2024年3月22日 19:00",
+                "bsjs": "2024年3月24日 19:00",
+                "readmore": "QQ群：630246091",
+                "status": 0
+            },
+            {
                 "name": "aliyunCTF2024",
                 "link": "https://www.aliyunctf.com/",
                 "type": "团队赛 | 人数暂定",

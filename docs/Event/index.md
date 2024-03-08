@@ -314,6 +314,13 @@ hide:
             
     === "*即将开始*"
         === "国内赛事"
+            ??? Quote "[NKCTF 2024](https://n0wayback.com/nkctf2024.html)"  
+                **比赛名称** : [NKCTF 2024](https://n0wayback.com/nkctf2024.html)  
+                **比赛类型** : 团队赛|1-4人  
+                **报名时间** : 2024年3月10日 00:00 - 2024年3月22日 18:00  
+                **比赛时间** : 2024年3月22日 19:00 - 2024年3月24日 19:00  
+                **其他说明** : QQ群：630246091  
+                
             ??? Quote "[aliyunCTF2024](https://www.aliyunctf.com/)"  
                 **比赛名称** : [aliyunCTF2024](https://www.aliyunctf.com/)  
                 **比赛类型** : 团队赛 | 人数暂定  
