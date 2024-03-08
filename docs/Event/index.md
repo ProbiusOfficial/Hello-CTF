@@ -48,12 +48,13 @@ hide:
      * @param rawTime {string}
      */
     function parseCNTime(rawTime) {
-        const year = parseInt(rawTime.substr(0, 4))
-        const month = parseInt(rawTime.substr(5, 2)) - 1
-        const day = parseInt(rawTime.substr(8, 2))
-        const hour = parseInt(rawTime.substr(12, 2))
-        const minute = parseInt(rawTime.substr(15, 2))
-        return new Date(year, month, day, hour, minute)
+        const [datePart, timePart] = rawTime.split(' ');
+        const [year, month, day] = datePart.match(/\d+/g).map(Number);
+        const [hour, minute] = timePart.split(':').map(Number);
+
+        const formattedMonth = (month - 1).toString().padStart(2, '0');
+        const formattedDay = day.toString().padStart(2, '0');
+        return new Date(year, formattedMonth, formattedDay, hour, minute);
     }
     
     /** 
