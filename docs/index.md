@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群：630246091  
                 
     === "国外比赛"
-        ??? Quote "[Pearl CTF](https://pearlctf.in/)"  
-            [![](https://ctftime.org/media/events/_croppearl_logo_1_of_1.png){ width="200" align=left }](https://pearlctf.in/)  
-            **比赛名称** : [Pearl CTF](https://pearlctf.in/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-03-08 20:00:00 - 2024-03-10 07:59:59 UTC+8  
-            **比赛权重** : 23.95  
-            **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
-            **添加日历** : https://ctftime.org/event/2231.ics  
-            
         ??? Quote "[Shakti CTF](https://ctf.shakticon.com/)"  
             [![](https://ctftime.org/media/events/shaktictf_1_1.png){ width="200" align=left }](https://ctf.shakticon.com/)  
             **比赛名称** : [Shakti CTF](https://ctf.shakticon.com/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 23.59  
             **赛事主办** : X Series CTF (https://ctftime.org/team/211390)  
             **添加日历** : https://ctftime.org/event/2179.ics  
+            
+        ??? Quote "[vikeCTF 2024](https://ctf.vikesec.ca/)"  
+            [![](https://ctftime.org/media/events/vikesec.png){ width="200" align=left }](https://ctf.vikesec.ca/)  
+            **比赛名称** : [vikeCTF 2024](https://ctf.vikesec.ca/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-03-09 08:00:00 - 2024-03-11 08:00:00 UTC+8  
+            **比赛权重** : 23.64  
+            **赛事主办** : PencilTesters (https://ctftime.org/team/178288)  
+            **添加日历** : https://ctftime.org/event/2263.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

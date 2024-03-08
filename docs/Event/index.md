@@ -365,15 +365,6 @@ hide:
                 **其他说明** : 比赛时间2024年3月 未定  
                 
         === "国外赛事"
-            ??? Quote "[Pearl CTF](https://pearlctf.in/)"  
-                [![](https://ctftime.org/media/events/_croppearl_logo_1_of_1.png){ width="200" align=left }](https://pearlctf.in/)  
-                **比赛名称** : [Pearl CTF](https://pearlctf.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-03-08 20:00:00 - 2024-03-10 07:59:59 UTC+8  
-                **比赛权重** : 23.95  
-                **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
-                **添加日历** : https://ctftime.org/event/2231.ics  
-                
             ??? Quote "[Shakti CTF](https://ctf.shakticon.com/)"  
                 [![](https://ctftime.org/media/events/shaktictf_1_1.png){ width="200" align=left }](https://ctf.shakticon.com/)  
                 **比赛名称** : [Shakti CTF](https://ctf.shakticon.com/)  
@@ -800,6 +791,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
+                
+            ??? Quote "[Pearl CTF](https://play.pearlctf.in/)"  
+                [![](https://ctftime.org/media/events/_croppearl_logo_1_of_1.png){ width="200" align=left }](https://play.pearlctf.in/)  
+                **比赛名称** : [Pearl CTF](https://play.pearlctf.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-03-08 20:00:00 - 2024-03-10 07:59:59 UTC+8  
+                **比赛权重** : 23.95  
+                **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
+                **添加日历** : https://ctftime.org/event/2231.ics  
                 
     === "*已经结束*"
         === "国内赛事"
