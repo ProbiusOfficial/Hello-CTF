@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Shakti CTF",
-        "比赛时间": "2024-03-08 20:30:00 - 2024-03-09 20:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2268.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.shakticon.com/",
-        "比赛标志": "https://ctftime.org/media/events/shaktictf_1_1.png",
-        "比赛权重": "24.10",
-        "赛事主办": "TeamShakti (https://ctftime.org/team/61083)",
-        "比赛ID": "521",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "HackDay 2024 - Finals",
         "比赛时间": "2024-03-09 02:00:00 - 2024-03-10 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2267.ics",
@@ -573,6 +561,18 @@
         "比赛权重": "23.95",
         "赛事主办": "BIT CRIMINALS (https://ctftime.org/team/151727)",
         "比赛ID": "849",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Shakti CTF",
+        "比赛时间": "2024-03-08 20:30:00 - 2024-03-09 20:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2268.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.shakticon.com/",
+        "比赛标志": "https://ctftime.org/media/events/shaktictf_1_1.png",
+        "比赛权重": "24.10",
+        "赛事主办": "TeamShakti (https://ctftime.org/team/61083)",
+        "比赛ID": "521",
         "比赛状态": "nowrunning"
     },
     {

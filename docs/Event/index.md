@@ -365,15 +365,6 @@ hide:
                 **其他说明** : 比赛时间2024年3月 未定  
                 
         === "国外赛事"
-            ??? Quote "[Shakti CTF](https://ctf.shakticon.com/)"  
-                [![](https://ctftime.org/media/events/shaktictf_1_1.png){ width="200" align=left }](https://ctf.shakticon.com/)  
-                **比赛名称** : [Shakti CTF](https://ctf.shakticon.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-03-08 20:30:00 - 2024-03-09 20:30:00 UTC+8  
-                **比赛权重** : 24.10  
-                **赛事主办** : TeamShakti (https://ctftime.org/team/61083)  
-                **添加日历** : https://ctftime.org/event/2268.ics  
-                
             ??? Quote "[HackDay 2024 - Finals](https://www.hackday.fr/)"  
                 [![](https://ctftime.org/media/events/CREA_LOGO_Blason_Espion_1.png){ width="200" align=left }](https://www.hackday.fr/)  
                 **比赛名称** : [HackDay 2024 - Finals](https://www.hackday.fr/)  
@@ -800,6 +791,15 @@ hide:
                 **比赛权重** : 23.95  
                 **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
                 **添加日历** : https://ctftime.org/event/2231.ics  
+                
+            ??? Quote "[Shakti CTF](https://ctf.shakticon.com/)"  
+                [![](https://ctftime.org/media/events/shaktictf_1_1.png){ width="200" align=left }](https://ctf.shakticon.com/)  
+                **比赛名称** : [Shakti CTF](https://ctf.shakticon.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-03-08 20:30:00 - 2024-03-09 20:30:00 UTC+8  
+                **比赛权重** : 24.10  
+                **赛事主办** : TeamShakti (https://ctftime.org/team/61083)  
+                **添加日历** : https://ctftime.org/event/2268.ics  
                 
     === "*已经结束*"
         === "国内赛事"
