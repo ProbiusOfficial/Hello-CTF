@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群：630246091  
                 
     === "国外比赛"
-        ??? Quote "[Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)  
-            **比赛名称** : [Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-03-09 21:00:00 - 2024-03-13 20:59:00 UTC+8  
-            **比赛权重** : 25.00  
-            **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
-            **添加日历** : https://ctftime.org/event/2255.ics  
-            
         ??? Quote "[Nullcon Berlin HackIM 2024 CTF](https://ctf.nullcon.net/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://ctf.nullcon.net/)  
             **比赛名称** : [Nullcon Berlin HackIM 2024 CTF](https://ctf.nullcon.net/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 25.00  
             **赛事主办** : 1753c (https://ctftime.org/team/178287)  
             **添加日历** : https://ctftime.org/event/2234.ics  
+            
+        ??? Quote "[WolvCTF 2024](https://wolvctf.io/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://wolvctf.io/)  
+            **比赛名称** : [WolvCTF 2024](https://wolvctf.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-03-16 07:00:00 - 2024-03-18 07:00:00 UTC+8  
+            **比赛权重** : 35.25  
+            **赛事主办** : wolvsec (https://ctftime.org/team/83621)  
+            **添加日历** : https://ctftime.org/event/2240.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

@@ -57,15 +57,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)  
-    **比赛名称** : [Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-09 21:00:00 - 2024-03-13 20:59:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
-    **添加日历** : https://ctftime.org/event/2255.ics  
-    
 ??? Quote "[Nullcon Berlin HackIM 2024 CTF](https://ctf.nullcon.net/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.nullcon.net/)  
     **比赛名称** : [Nullcon Berlin HackIM 2024 CTF](https://ctf.nullcon.net/)  

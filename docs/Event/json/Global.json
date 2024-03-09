@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Cyber Apocalypse 2024: Hacker Royale",
-        "比赛时间": "2024-03-09 21:00:00 - 2024-03-13 20:59:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2255.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "25.00",
-        "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
-        "比赛ID": "554",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Nullcon Berlin HackIM 2024 CTF",
         "比赛时间": "2024-03-14 17:30:00 - 2024-03-15 19:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2264.ics",
@@ -528,18 +516,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Shakti CTF",
-        "比赛时间": "2024-03-08 20:30:00 - 2024-03-09 20:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2268.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.shakticon.com/",
-        "比赛标志": "https://ctftime.org/media/events/shaktictf_1_1.png",
-        "比赛权重": "24.10",
-        "赛事主办": "TeamShakti (https://ctftime.org/team/61083)",
-        "比赛ID": "521",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "HackDay 2024 - Finals",
         "比赛时间": "2024-03-09 02:00:00 - 2024-03-10 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2267.ics",
@@ -574,6 +550,30 @@
         "赛事主办": "PencilTesters (https://ctftime.org/team/178288)",
         "比赛ID": "888",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Cyber Apocalypse 2024: Hacker Royale",
+        "比赛时间": "2024-03-09 21:00:00 - 2024-03-13 20:59:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2255.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "25.00",
+        "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
+        "比赛ID": "554",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Shakti CTF",
+        "比赛时间": "2024-03-08 20:30:00 - 2024-03-09 20:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2268.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.shakticon.com/",
+        "比赛标志": "https://ctftime.org/media/events/shaktictf_1_1.png",
+        "比赛权重": "24.10",
+        "赛事主办": "TeamShakti (https://ctftime.org/team/61083)",
+        "比赛ID": "521",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "AthackCTF 2024",
@@ -1761,18 +1761,6 @@
         "比赛权重": "0.00",
         "赛事主办": "CRUx BPHC (https://ctftime.org/team/270645)",
         "比赛ID": "1004",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "TSG CTF 2023",
-        "比赛时间": "2023-11-04 15:00:00 - 2023-11-05 15:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2013.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.tsg.ne.jp/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "25.00",
-        "赛事主办": "TSG (https://ctftime.org/team/16088)",
-        "比赛ID": "294",
         "比赛状态": "past"
     }
 ]

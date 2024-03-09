@@ -365,15 +365,6 @@ hide:
                 **其他说明** : 比赛时间2024年3月 未定  
                 
         === "国外赛事"
-            ??? Quote "[Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)  
-                **比赛名称** : [Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-03-09 21:00:00 - 2024-03-13 20:59:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
-                **添加日历** : https://ctftime.org/event/2255.ics  
-                
             ??? Quote "[Nullcon Berlin HackIM 2024 CTF](https://ctf.nullcon.net/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.nullcon.net/)  
                 **比赛名称** : [Nullcon Berlin HackIM 2024 CTF](https://ctf.nullcon.net/)  
@@ -765,15 +756,6 @@ hide:
                 **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
                 **添加日历** : https://ctftime.org/event/2231.ics  
                 
-            ??? Quote "[Shakti CTF](https://ctf.shakticon.com/)"  
-                [![](https://ctftime.org/media/events/shaktictf_1_1.png){ width="200" align=left }](https://ctf.shakticon.com/)  
-                **比赛名称** : [Shakti CTF](https://ctf.shakticon.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-03-08 20:30:00 - 2024-03-09 20:30:00 UTC+8  
-                **比赛权重** : 24.10  
-                **赛事主办** : TeamShakti (https://ctftime.org/team/61083)  
-                **添加日历** : https://ctftime.org/event/2268.ics  
-                
             ??? Quote "[HackDay 2024 - Finals](https://www.hackday.fr/)"  
                 [![](https://ctftime.org/media/events/CREA_LOGO_Blason_Espion_1.png){ width="200" align=left }](https://www.hackday.fr/)  
                 **比赛名称** : [HackDay 2024 - Finals](https://www.hackday.fr/)  
@@ -800,6 +782,15 @@ hide:
                 **比赛权重** : 23.64  
                 **赛事主办** : PencilTesters (https://ctftime.org/team/178288)  
                 **添加日历** : https://ctftime.org/event/2263.ics  
+                
+            ??? Quote "[Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)  
+                **比赛名称** : [Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-03-09 21:00:00 - 2024-03-13 20:59:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
+                **添加日历** : https://ctftime.org/event/2255.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -944,6 +935,15 @@ hide:
                 **其他说明** : QQ群：521330139  
                 
         === "国外赛事"
+            ??? Quote "[Shakti CTF](https://ctf.shakticon.com/)"  
+                [![](https://ctftime.org/media/events/shaktictf_1_1.png){ width="200" align=left }](https://ctf.shakticon.com/)  
+                **比赛名称** : [Shakti CTF](https://ctf.shakticon.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-03-08 20:30:00 - 2024-03-09 20:30:00 UTC+8  
+                **比赛权重** : 24.10  
+                **赛事主办** : TeamShakti (https://ctftime.org/team/61083)  
+                **添加日历** : https://ctftime.org/event/2268.ics  
+                
             ??? Quote "[AthackCTF 2024](https://www.athackctf.com/)"  
                 [![](https://ctftime.org/media/events/_hacklogo_v2_720.png){ width="200" align=left }](https://www.athackctf.com/)  
                 **比赛名称** : [AthackCTF 2024](https://www.athackctf.com/)  
@@ -1834,15 +1834,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : CRUx BPHC (https://ctftime.org/team/270645)  
                 **添加日历** : https://ctftime.org/event/2156.ics  
-                
-            ??? Quote "[TSG CTF 2023](https://ctf.tsg.ne.jp/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.tsg.ne.jp/)  
-                **比赛名称** : [TSG CTF 2023](https://ctf.tsg.ne.jp/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-11-04 15:00:00 - 2023-11-05 15:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : TSG (https://ctftime.org/team/16088)  
-                **添加日历** : https://ctftime.org/event/2013.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
