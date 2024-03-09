@@ -83,24 +83,6 @@ hide:
             **其他说明** : QQ群：630246091  
                 
     === "国外比赛"
-        ??? Quote "[WxMCTF 2024](https://ctf.mcpt.ca/contest/wxmctf)"  
-            [![](https://ctftime.org/media/events/Logo_thing_1.png){ width="200" align=left }](https://ctf.mcpt.ca/contest/wxmctf)  
-            **比赛名称** : [WxMCTF 2024](https://ctf.mcpt.ca/contest/wxmctf)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-03-09 08:00:00 - 2024-03-11 07:00:00 UTC+8  
-            **比赛权重** : 23.59  
-            **赛事主办** : X Series CTF (https://ctftime.org/team/211390)  
-            **添加日历** : https://ctftime.org/event/2179.ics  
-            
-        ??? Quote "[vikeCTF 2024](https://ctf.vikesec.ca/)"  
-            [![](https://ctftime.org/media/events/vikesec.png){ width="200" align=left }](https://ctf.vikesec.ca/)  
-            **比赛名称** : [vikeCTF 2024](https://ctf.vikesec.ca/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-03-09 08:00:00 - 2024-03-11 08:00:00 UTC+8  
-            **比赛权重** : 23.64  
-            **赛事主办** : PencilTesters (https://ctftime.org/team/178288)  
-            **添加日历** : https://ctftime.org/event/2263.ics  
-            
         ??? Quote "[Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)"  
             [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)  
             **比赛名称** : [Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)  
@@ -118,6 +100,24 @@ hide:
             **比赛权重** : 20.00  
             **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
             **添加日历** : https://ctftime.org/event/2264.ics  
+            
+        ??? Quote "[KalmarCTF 2024](http://KalmarC.TF/)"  
+            [![](https://ctftime.org/media/events/logo_square_756x756.png){ width="200" align=left }](http://KalmarC.TF/)  
+            **比赛名称** : [KalmarCTF 2024](http://KalmarC.TF/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-03-16 01:00:00 - 2024-03-18 01:00:00 UTC+8  
+            **比赛权重** : 24.21  
+            **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
+            **添加日历** : https://ctftime.org/event/2227.ics  
+            
+        ??? Quote "[1753CTF 2024](https://1753ctf.com/)"  
+            [![](https://ctftime.org/media/events/badge.png){ width="200" align=left }](https://1753ctf.com/)  
+            **比赛名称** : [1753CTF 2024](https://1753ctf.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-03-16 05:00:00 - 2024-03-17 05:00:00 UTC+8  
+            **比赛权重** : 25.00  
+            **赛事主办** : 1753c (https://ctftime.org/team/178287)  
+            **添加日历** : https://ctftime.org/event/2234.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
