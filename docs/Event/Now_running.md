@@ -27,15 +27,6 @@ comments: true
     **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
     **添加日历** : https://ctftime.org/event/2231.ics  
     
-??? Quote "[HackDay 2024 - Finals](https://www.hackday.fr/)"  
-    [![](https://ctftime.org/media/events/CREA_LOGO_Blason_Espion_1.png){ width="200" align=left }](https://www.hackday.fr/)  
-    **比赛名称** : [HackDay 2024 - Finals](https://www.hackday.fr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-09 02:00:00 - 2024-03-10 02:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
-    **添加日历** : https://ctftime.org/event/2267.ics  
-    
 ??? Quote "[WxMCTF 2024](https://ctf.mcpt.ca/contest/wxmctf)"  
     [![](https://ctftime.org/media/events/Logo_thing_1.png){ width="200" align=left }](https://ctf.mcpt.ca/contest/wxmctf)  
     **比赛名称** : [WxMCTF 2024](https://ctf.mcpt.ca/contest/wxmctf)  
