@@ -504,18 +504,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Pearl CTF",
-        "比赛时间": "2024-03-08 20:00:00 - 2024-03-10 07:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2231.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://play.pearlctf.in/",
-        "比赛标志": "https://ctftime.org/media/events/_croppearl_logo_1_of_1.png",
-        "比赛权重": "23.95",
-        "赛事主办": "BIT CRIMINALS (https://ctftime.org/team/151727)",
-        "比赛ID": "849",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "WxMCTF 2024",
         "比赛时间": "2024-03-09 08:00:00 - 2024-03-11 07:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2179.ics",
@@ -573,6 +561,18 @@
         "比赛权重": "24.10",
         "赛事主办": "TeamShakti (https://ctftime.org/team/61083)",
         "比赛ID": "521",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Pearl CTF",
+        "比赛时间": "2024-03-08 20:00:00 - 2024-03-10 07:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2231.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://play.pearlctf.in/",
+        "比赛标志": "https://ctftime.org/media/events/_croppearl_logo_1_of_1.png",
+        "比赛权重": "23.95",
+        "赛事主办": "BIT CRIMINALS (https://ctftime.org/team/151727)",
+        "比赛ID": "849",
         "比赛状态": "past"
     },
     {
@@ -1737,18 +1737,6 @@
         "比赛权重": "0",
         "赛事主办": "OSCAR ZULU (https://ctftime.org/team/270624)",
         "比赛ID": "1002",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "M*CTF 2023 Junior Quals",
-        "比赛时间": "2023-11-04 17:00:00 - 2023-11-05 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2095.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://mctf.mtuci.ru/",
-        "比赛标志": "https://ctftime.org/media/events/GRuJspCP73s_1.jpg",
-        "比赛权重": "24.23",
-        "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
-        "比赛ID": "164",
         "比赛状态": "past"
     }
 ]

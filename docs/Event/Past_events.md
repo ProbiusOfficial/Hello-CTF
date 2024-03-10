@@ -165,6 +165,15 @@ comments: true
     **赛事主办** : TeamShakti (https://ctftime.org/team/61083)  
     **添加日历** : https://ctftime.org/event/2268.ics  
     
+??? Quote "[Pearl CTF](https://play.pearlctf.in/)"  
+    [![](https://ctftime.org/media/events/_croppearl_logo_1_of_1.png){ width="200" align=left }](https://play.pearlctf.in/)  
+    **比赛名称** : [Pearl CTF](https://play.pearlctf.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-03-08 20:00:00 - 2024-03-10 07:59:59 UTC+8  
+    **比赛权重** : 23.95  
+    **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
+    **添加日历** : https://ctftime.org/event/2231.ics  
+    
 ??? Quote "[AthackCTF 2024](https://www.athackctf.com/)"  
     [![](https://ctftime.org/media/events/_hacklogo_v2_720.png){ width="200" align=left }](https://www.athackctf.com/)  
     **比赛名称** : [AthackCTF 2024](https://www.athackctf.com/)  
@@ -1037,13 +1046,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : OSCAR ZULU (https://ctftime.org/team/270624)  
     **添加日历** : https://ctftime.org/event/2154.ics  
-    
-??? Quote "[M*CTF 2023 Junior Quals](https://mctf.mtuci.ru/)"  
-    [![](https://ctftime.org/media/events/GRuJspCP73s_1.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
-    **比赛名称** : [M*CTF 2023 Junior Quals](https://mctf.mtuci.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-11-04 17:00:00 - 2023-11-05 17:00:00 UTC+8  
-    **比赛权重** : 24.23  
-    **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-    **添加日历** : https://ctftime.org/event/2095.ics  
     
