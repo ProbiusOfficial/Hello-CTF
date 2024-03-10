@@ -971,7 +971,7 @@ hide:
                 **比赛名称** : [GCC CTF 2024](https://gcc-ctf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-03-02 04:00:00 - 2024-03-04 04:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 24.89  
                 **赛事主办** : Galette Cidre CTF (https://ctftime.org/team/246488)  
                 **添加日历** : https://ctftime.org/event/2251.ics  
                 
