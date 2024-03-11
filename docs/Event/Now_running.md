@@ -24,15 +24,6 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Quote "[vikeCTF 2024](https://ctf.vikesec.ca/)"  
-    [![](https://ctftime.org/media/events/vikesec.png){ width="200" align=left }](https://ctf.vikesec.ca/)  
-    **比赛名称** : [vikeCTF 2024](https://ctf.vikesec.ca/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-09 08:00:00 - 2024-03-11 08:00:00 UTC+8  
-    **比赛权重** : 23.64  
-    **赛事主办** : PencilTesters (https://ctftime.org/team/178288)  
-    **添加日历** : https://ctftime.org/event/2263.ics  
-    
 ??? Quote "[Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)  
     **比赛名称** : [Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)  
