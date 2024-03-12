@@ -444,6 +444,15 @@ hide:
                 **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
                 **添加日历** : https://ctftime.org/event/2196.ics  
                 
+            ??? Quote "[Texas Security Awareness Week 2024](https://ctf.texsaw2024.com/)"  
+                [![](https://ctftime.org/media/events/texsaw24.png){ width="200" align=left }](https://ctf.texsaw2024.com/)  
+                **比赛名称** : [Texas Security Awareness Week 2024](https://ctf.texsaw2024.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-03-23 23:00:00 - 2024-03-25 06:00:00 UTC+8  
+                **比赛权重** : 23.89  
+                **赛事主办** : UTD TexSAW (https://ctftime.org/team/220408)  
+                **添加日历** : https://ctftime.org/event/2281.ics  
+                
             ??? Quote "[JerseyCTF IV](https://ctf.jerseyctf.com/)"  
                 [![](https://ctftime.org/media/events/Asset_39.png){ width="200" align=left }](https://ctf.jerseyctf.com/)  
                 **比赛名称** : [JerseyCTF IV](https://ctf.jerseyctf.com/)  
