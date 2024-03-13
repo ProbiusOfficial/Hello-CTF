@@ -924,15 +924,6 @@ hide:
                 **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
                 **添加日历** : https://ctftime.org/event/2255.ics  
                 
-            ??? Quote "[vikeCTF 2024](https://ctf.vikesec.ca/)"  
-                [![](https://ctftime.org/media/events/vikesec.png){ width="200" align=left }](https://ctf.vikesec.ca/)  
-                **比赛名称** : [vikeCTF 2024](https://ctf.vikesec.ca/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-03-09 08:00:00 - 2024-03-11 08:00:00 UTC+8  
-                **比赛权重** : 23.64  
-                **赛事主办** : PencilTesters (https://ctftime.org/team/178288)  
-                **添加日历** : https://ctftime.org/event/2263.ics  
-                
             ??? Quote "[WxMCTF 2024](https://ctf.mcpt.ca/contest/wxmctf)"  
                 [![](https://ctftime.org/media/events/Logo_thing_1.png){ width="200" align=left }](https://ctf.mcpt.ca/contest/wxmctf)  
                 **比赛名称** : [WxMCTF 2024](https://ctf.mcpt.ca/contest/wxmctf)  
@@ -941,6 +932,15 @@ hide:
                 **比赛权重** : 23.59  
                 **赛事主办** : X Series CTF (https://ctftime.org/team/211390)  
                 **添加日历** : https://ctftime.org/event/2179.ics  
+                
+            ??? Quote "[vikeCTF 2024](https://ctf.vikesec.ca/)"  
+                [![](https://ctftime.org/media/events/vikesec.png){ width="200" align=left }](https://ctf.vikesec.ca/)  
+                **比赛名称** : [vikeCTF 2024](https://ctf.vikesec.ca/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-03-09 08:00:00 - 2024-03-11 08:00:00 UTC+8  
+                **比赛权重** : 23.64  
+                **赛事主办** : PencilTesters (https://ctftime.org/team/178288)  
+                **添加日历** : https://ctftime.org/event/2263.ics  
                 
             ??? Quote "[HackDay 2024 - Finals](https://www.hackday.fr/)"  
                 [![](https://ctftime.org/media/events/CREA_LOGO_Blason_Espion_1.png){ width="200" align=left }](https://www.hackday.fr/)  
@@ -983,7 +983,7 @@ hide:
                 **比赛名称** : [GCC CTF 2024](https://gcc-ctf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-03-02 04:00:00 - 2024-03-04 04:00:00 UTC+8  
-                **比赛权重** : 24.91  
+                **比赛权重** : 24.92  
                 **赛事主办** : Galette Cidre CTF (https://ctftime.org/team/246488)  
                 **添加日历** : https://ctftime.org/event/2251.ics  
                 
@@ -992,7 +992,7 @@ hide:
                 **比赛名称** : [osu!gaming CTF 2024](https://www.osugaming.lol/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-03-02 01:00:00 - 2024-03-04 01:00:00 UTC+8  
-                **比赛权重** : 23.90  
+                **比赛权重** : 23.96  
                 **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
                 **添加日历** : https://ctftime.org/event/2165.ics  
                 
@@ -1028,7 +1028,7 @@ hide:
                 **比赛名称** : [BraekerCTF](https://github.com/spipm/BraekerCTF_2024_public)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-02-23 20:00:00 - 2024-02-25 00:00:00 UTC+8  
-                **比赛权重** : 24.68  
+                **比赛权重** : 24.70  
                 **赛事主办** : Braeker (https://ctftime.org/team/274910)  
                 **添加日历** : https://ctftime.org/event/2181.ics  
                 

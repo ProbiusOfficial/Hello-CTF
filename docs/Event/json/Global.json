@@ -540,18 +540,6 @@
         "比赛状态": "past"
     },
     {
-        "比赛名称": "vikeCTF 2024",
-        "比赛时间": "2024-03-09 08:00:00 - 2024-03-11 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2263.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.vikesec.ca/",
-        "比赛标志": "https://ctftime.org/media/events/vikesec.png",
-        "比赛权重": "23.64",
-        "赛事主办": "PencilTesters (https://ctftime.org/team/178288)",
-        "比赛ID": "888",
-        "比赛状态": "past"
-    },
-    {
         "比赛名称": "WxMCTF 2024",
         "比赛时间": "2024-03-09 08:00:00 - 2024-03-11 07:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2179.ics",
@@ -561,6 +549,18 @@
         "比赛权重": "23.59",
         "赛事主办": "X Series CTF (https://ctftime.org/team/211390)",
         "比赛ID": "883",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "vikeCTF 2024",
+        "比赛时间": "2024-03-09 08:00:00 - 2024-03-11 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2263.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.vikesec.ca/",
+        "比赛标志": "https://ctftime.org/media/events/vikesec.png",
+        "比赛权重": "23.64",
+        "赛事主办": "PencilTesters (https://ctftime.org/team/178288)",
+        "比赛ID": "888",
         "比赛状态": "past"
     },
     {
@@ -618,7 +618,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://gcc-ctf.com/",
         "比赛标志": "https://ctftime.org/media/events/Logo_GCC_White_Font.png",
-        "比赛权重": "24.91",
+        "比赛权重": "24.92",
         "赛事主办": "Galette Cidre CTF (https://ctftime.org/team/246488)",
         "比赛ID": "1062",
         "比赛状态": "past"
@@ -630,7 +630,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://www.osugaming.lol/",
         "比赛标志": "https://ctftime.org/media/events/unknown_1.png",
-        "比赛权重": "23.90",
+        "比赛权重": "23.96",
         "赛事主办": "osu!gaming (https://ctftime.org/team/186954)",
         "比赛ID": "998",
         "比赛状态": "past"
@@ -678,7 +678,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://github.com/spipm/BraekerCTF_2024_public",
         "比赛标志": "https://ctftime.org/media/events/AI_Robot4.png",
-        "比赛权重": "24.68",
+        "比赛权重": "24.70",
         "赛事主办": "Braeker (https://ctftime.org/team/274910)",
         "比赛ID": "1026",
         "比赛状态": "past"
