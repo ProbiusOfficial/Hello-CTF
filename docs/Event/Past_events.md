@@ -147,6 +147,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)  
+    **比赛名称** : [Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-03-09 21:00:00 - 2024-03-13 20:59:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
+    **添加日历** : https://ctftime.org/event/2255.ics  
+    
 ??? Quote "[vikeCTF 2024](https://ctf.vikesec.ca/)"  
     [![](https://ctftime.org/media/events/vikesec.png){ width="200" align=left }](https://ctf.vikesec.ca/)  
     **比赛名称** : [vikeCTF 2024](https://ctf.vikesec.ca/)  
@@ -1037,13 +1046,4 @@ comments: true
     **比赛权重** : 55.00  
     **赛事主办** : Black Bauhinia, HKCERT (https://ctftime.org/team/83678, https://ctftime.org/team/134746)  
     **添加日历** : https://ctftime.org/event/2122.ics  
-    
-??? Quote "[LakeCTF Quals 23](https://lakectf.epfl.ch/)"  
-    [![](https://ctftime.org/media/events/LakeCTF-512x512_1.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
-    **比赛名称** : [LakeCTF Quals 23](https://lakectf.epfl.ch/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-11-05 02:00:00 - 2023-11-06 02:00:00 UTC+8  
-    **比赛权重** : 24.00  
-    **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
-    **添加日历** : https://ctftime.org/event/2069.ics  
     
