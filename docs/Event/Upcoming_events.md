@@ -320,6 +320,15 @@ comments: true
     **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
     **添加日历** : https://ctftime.org/event/2273.ics  
     
+??? Quote "[SAS CTF 2024 Quals](https://ctf.thesascon.com/)"  
+    [![](https://ctftime.org/media/events/SAS24_2.png){ width="200" align=left }](https://ctf.thesascon.com/)  
+    **比赛名称** : [SAS CTF 2024 Quals](https://ctf.thesascon.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-18 20:00:00 - 2024-05-19 20:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
+    **添加日历** : https://ctftime.org/event/2299.ics  
+    
 ??? Quote "[CrewCTF 2024](https://crewc.tf/)"  
     [![](https://ctftime.org/media/events/THC_new.png){ width="200" align=left }](https://crewc.tf/)  
     **比赛名称** : [CrewCTF 2024](https://crewc.tf/)  
