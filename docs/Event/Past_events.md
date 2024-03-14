@@ -138,13 +138,6 @@ comments: true
     **比赛时间** : 2024年01月13日 09:00 - 2024年01月14日 16:00  
     **其他说明** : QQ群：723023839  
     
-??? Quote "movectf 2024"  
-    **比赛名称** : [movectf 2024](https://movectf2024.movebit.xyz/)  
-    **比赛类型** : 个人赛 | WEB3  
-    **报名时间** : 2023年12月25日 00:00 - 2024年01月14日 09:00  
-    **比赛时间** : 2024年01月12日 09:00 - 2024年01月14日 09:00  
-    **其他说明** : 旗舰级 Move 安全竞赛，旨在吸引更多对   Move 语言和 Move 生态系统感兴趣的安全专业人士  和开发人员。  QQ学习交流群：163569170  
-    
 
 ## 国际赛事
 ??? Quote "[Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)"  

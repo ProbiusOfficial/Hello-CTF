@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [dirty cred(CVE-2021-4145)漏洞复现](https://xia0ji233.github.io/2024/03/13/CVE-2021-4145/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-03-13
+
+    复现一下 dirty cred 漏洞同样本篇文章采用的还是 环境配置——漏洞验证——源码分析——代码调试 这四部分。环境配置内核编译选用一个漏洞存在的版本，例如 5.13.2。下面就是编译内核会踩得一些坑，我将完整复述一遍：源码下载好之后，先 make menuconfig 开启调试符号，kernel hacking->kernel debugging 勾选，kernel hacking->Com...
     ### [LLVM——交叉编译的配置](https://xia0ji233.github.io/2024/03/04/LLVM5/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2024-03-04
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2023-12-22
 
     Hacking FernFlower前言​    今天很开心，第一次作为speaker参与了议题的分享，也很感谢补天白帽大会给了我这样的一次机会​    其实本该在去年来讲Java混淆的议题，不过当时赶上疫情爆发，学校出于安全的考虑没让出省。在当时我更想分享的是对抗所有反混淆的工具cfr、procyon，但今年在准备过程中发现主题太大了其实不太好讲，再考虑到受众都是做web安全的，因此我最终还是将...
-    ### [Airpods Pro 2上手体验](https://blog.stv.lol/archives/79/)  
-    >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-12-16
-
-    Airpods Pro 2 大概算是我今年买的最后一个产品了，也是我馋了很久却一直没买的产品在此之前，我的主力耳机是 Airpods Pro 一代，考虑到一代已经用了将近三年时间，也是时候换一个了没考虑其他耳机的原因主要还是因为我的主要使用的生态产品还是苹果生态为主，Airpods的无缝连接在各设备之间互相流转很方便于是在tb的双十二活动中以1500出头的价格拿下（耳机本体+一年以换代修）开箱包装...
 
 </div>
