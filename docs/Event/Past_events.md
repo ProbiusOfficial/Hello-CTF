@@ -131,13 +131,6 @@ comments: true
     **比赛时间** : 2024年01月12日 14:00 - 2024年01月17日 10:00  
     **其他说明** :   
     
-??? Quote "第七届强网杯全国网络安全挑战赛决赛"  
-    **比赛名称** : [第七届强网杯全国网络安全挑战赛决赛](https://qiangwangbei.com/)  
-    **比赛类型** : 团队赛|1-4人  
-    **报名时间** : 2023年05月01日 00:00 - 2023年12月09日 00:00  
-    **比赛时间** : 2024年01月13日 09:00 - 2024年01月14日 16:00  
-    **其他说明** : QQ群：723023839  
-    
 
 ## 国际赛事
 ??? Quote "[Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)"  
