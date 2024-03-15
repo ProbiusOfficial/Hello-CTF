@@ -336,6 +336,13 @@ hide:
             
     === "*即将开始*"
         === "国内赛事"
+            ??? Quote "[NSSCTF Round19 密码专项赛](https://www.nssctf.cn/contest)"  
+                **比赛名称** : [NSSCTF Round19 密码专项赛](https://www.nssctf.cn/contest)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年3月16日 13:30 - 2024年3月16日 13:30  
+                **比赛时间** : 2024年3月16日 13:30 - 2024年3月16日 17:00  
+                **其他说明** : 521330139  
+                
             ??? Quote "[第四届红明谷杯（初赛）](https://www.sm.gov.cn/inc/hgbm/)"  
                 **比赛名称** : [第四届红明谷杯（初赛）](https://www.sm.gov.cn/inc/hgbm/)  
                 **比赛类型** : 团队赛 | 1-3 人  
