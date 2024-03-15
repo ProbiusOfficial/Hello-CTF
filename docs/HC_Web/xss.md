@@ -30,9 +30,9 @@ DOM型
 
 1.alert()
 
-alert(‘xss’)
+alert('xss')
 
-alert(“xss”)
+alert("xss")
 
 alert(/xss/)
 
@@ -40,9 +40,9 @@ alert(document.cookie)
 
 2.confirm()
 
-confirm(‘xss’)
+confirm('xss')
 
-confirm(“xss”)
+confirm("xss")
 
 confirm(/xss/)
 
@@ -50,9 +50,9 @@ confirm(document.cookie)
 
 3.prompt()
 
-prompt(‘xss’)
+prompt('xss')
 
-prompt(“xss”)
+prompt("xss")
 
 prompt(/xss/)
 
@@ -74,9 +74,9 @@ alert也可以换成其他弹窗方式；
 
 5.console.log()
 
-console.log(alert(‘xss’))
+console.log(alert('xss'))
 
-console.log(alert(“xss”))
+console.log(alert("xss"))
 
 console.log(alert(/xss/))
 
