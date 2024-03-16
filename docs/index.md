@@ -54,13 +54,6 @@ hide:
     ---
     <!-- 主页赛事展示_开始 -->
     === "国内比赛"
-        ??? Quote "[DubheCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=94938be6-ce42-11ee-ab28-000c29bc20bf)"  
-            **比赛名称** : [DubheCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=94938be6-ce42-11ee-ab28-000c29bc20bf)  
-            **比赛类型** : 团队赛 | 1-n  
-            **报名时间** : 2024年03月01日 09:00 - 2024年03月16日 08:00  
-            **比赛时间** : 2024年03月16日 09:00 - 2024年03月18日 09:00  
-            **其他说明** : Discord: https://discord.gg/hq4m3KrVfG QQ群：512066352 本届DubheCTF2024由XCTF联赛的合作单位天枢Dubhe战队组织，由赛宁网安提供技术支持。作为第八届XCTF国际联赛的分站赛，本次比赛将采用在线网络安全夺旗挑战赛的形式，面向全球开放。 此次比赛冠军队伍将直接晋级第八届XCTF总决赛（总决赛具体地点待定，将在确定后通知获得资格的国际和国内队伍）。其他参赛的队伍也将获得积分，来竞争XCTF总决赛的其他席位。  
-            
         ??? Quote "[NSSCTF Round19 密码专项赛](https://www.nssctf.cn/contest)"  
             **比赛名称** : [NSSCTF Round19 密码专项赛](https://www.nssctf.cn/contest)  
             **比赛类型** : 个人赛  
@@ -81,6 +74,13 @@ hide:
             **报名时间** : 2024年03月10日 10:00 - 2024年03月23日 09:00  
             **比赛时间** : 2024年03月23日 10:00 - 2024年03月24日 22:00  
             **其他说明** : 赛事官方钉钉群 28800019603  
+            
+        ??? Quote "[XYCTF高校新生联合赛 2024](https://www.xyctf.top/)"  
+            **比赛名称** : [XYCTF高校新生联合赛 2024](https://www.xyctf.top/)  
+            **比赛类型** : 团队赛 | 1-3人  
+            **报名时间** : 2024年03月05日 10:00 - 2024年04月01日 09:00  
+            **比赛时间** : 2024年04月01日 10:00 - 2024年05月01日 10:00  
+            **其他说明** : 赛事群：798794707  
                 
     === "国外比赛"
         ??? Quote "[Nullcon Berlin HackIM 2024 CTF](https://ctf.nullcon.net/)"  
