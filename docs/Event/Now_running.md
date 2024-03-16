@@ -5,13 +5,6 @@ comments: true
 
 ## 国内赛事
 
-??? Quote "NSSCTF Round19 密码专项赛"  
-    **比赛名称** : [NSSCTF Round19 密码专项赛](https://www.nssctf.cn/contest)  
-    **比赛类型** : 个人赛  
-    **报名时间** : 2024年03月16日 13:30 - 2024年03月16日 13:30  
-    **比赛时间** : 2024年03月16日 13:30 - 2024年03月16日 17:00  
-    **其他说明** : QQ群：521330139  
-    
 ??? Quote "DubheCTF 2024"  
     **比赛名称** : [DubheCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=94938be6-ce42-11ee-ab28-000c29bc20bf)  
     **比赛类型** : 团队赛 | 1-n  

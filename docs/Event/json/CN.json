@@ -58,17 +58,6 @@
                 "status": 1
             },
             {
-                "name": "NSSCTF Round19 密码专项赛",
-                "link": "https://www.nssctf.cn/contest",
-                "type": "个人赛",
-                "bmks": "2024年03月16日 13:30",
-                "bmjz": "2024年03月16日 13:30",
-                "bsks": "2024年03月16日 13:30",
-                "bsjs": "2024年03月16日 17:00",
-                "readmore": "QQ群：521330139",
-                "status": 3
-            },
-            {
                 "name": "DubheCTF 2024",
                 "link": "https://adworld.xctf.org.cn/contest/assess?hash=94938be6-ce42-11ee-ab28-000c29bc20bf",
                 "type": "团队赛 | 1-n",
@@ -89,6 +78,17 @@
                 "bsjs": "2024年03月16日 20:00",
                 "readmore": "比赛QQ群: 748783131",
                 "status": 3
+            },
+            {
+                "name": "NSSCTF Round19 密码专项赛",
+                "link": "https://www.nssctf.cn/contest",
+                "type": "个人赛",
+                "bmks": "2024年03月16日 13:30",
+                "bmjz": "2024年03月16日 13:30",
+                "bsks": "2024年03月16日 13:30",
+                "bsjs": "2024年03月16日 17:00",
+                "readmore": "QQ群：521330139",
+                "status": 4
             },
             {
                 "name": "第一届“长城杯”信息安全铁人三项赛初赛",
