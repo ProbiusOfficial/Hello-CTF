@@ -138,13 +138,6 @@ comments: true
     **比赛时间** : 2024年01月20日 10:00 - 2024年01月22日 18:00  
     **其他说明** : 赛事QQ群：277328440  
     
-??? Quote "第三届WEBSHELL伏魔挑战赛"  
-    **比赛名称** : [第三届WEBSHELL伏魔挑战赛](https://mp.weixin.qq.com/s/e8OE3rXyIqPkHrOHBDL5Kw)  
-    **比赛类型** : 个人赛  
-    **报名时间** : 2023年12月29日 10:00 - 2024年01月17日 10:00  
-    **比赛时间** : 2024年01月12日 14:00 - 2024年01月17日 10:00  
-    **其他说明** :   
-    
 
 ## 国际赛事
 ??? Quote "[Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)"  
