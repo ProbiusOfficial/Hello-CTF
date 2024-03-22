@@ -343,13 +343,6 @@ hide:
                 **比赛时间** : 2024年05月01日 00:00 - 2024年05月02日 00:00  
                 **其他说明** : 比赛时间未定  
                 
-            ??? Quote "[NKCTF2024](https://n0wayback.com/nkctf2024.html)"  
-                **比赛名称** : [NKCTF2024](https://n0wayback.com/nkctf2024.html)  
-                **比赛类型** : 团队赛|1-4人  
-                **报名时间** : 2024年03月10日 10:00 - 2024年03月22日 18:00  
-                **比赛时间** : 2024年03月22日 19:00 - 2024年03月23日 19:00  
-                **其他说明** : QQ群：630246091  
-                
         === "国外赛事"
             ??? Quote "[Nullcon Berlin HackIM 2024 CTF](https://ctf.nullcon.net/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.nullcon.net/)  
@@ -740,7 +733,13 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-    
+            ??? Quote "[NKCTF2024](https://n0wayback.com/nkctf2024.html)"  
+                **比赛名称** : [NKCTF2024](https://n0wayback.com/nkctf2024.html)  
+                **比赛类型** : 团队赛|1-4人  
+                **报名时间** : 2024年03月10日 10:00 - 2024年03月22日 18:00  
+                **比赛时间** : 2024年03月22日 19:00 - 2024年03月23日 19:00  
+                **其他说明** : QQ群：630246091  
+                
         === "国外赛事"
             ??? Quote "[Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)  
