@@ -138,13 +138,6 @@ comments: true
     **比赛时间** : 2024年01月27日 10:00 - 2024年01月28日 10:00  
     **其他说明** : 选手交流群：612460086  
     
-??? Quote "春秋杯网络安全联赛冬季赛"  
-    **比赛名称** : [春秋杯网络安全联赛冬季赛](https://endbm.ichunqiu.com/2023cqgames2)  
-    **比赛类型** : 个人赛CTF+RDG  
-    **报名时间** : 2023年12月18日 00:00 - 2024年01月22日 17:00  
-    **比赛时间** : 2024年01月20日 10:00 - 2024年01月22日 18:00  
-    **其他说明** : 赛事QQ群：277328440  
-    
 
 ## 国际赛事
 ??? Quote "[Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)"  

@@ -14,17 +14,6 @@
                 "status": 1
             },
             {
-                "name": "NKCTF2024",
-                "link": "https://n0wayback.com/nkctf2024.html",
-                "type": "团队赛|1-4人",
-                "bmks": "2024年03月10日 10:00",
-                "bmjz": "2024年03月22日 18:00",
-                "bsks": "2024年03月22日 19:00",
-                "bsjs": "2024年03月23日 19:00",
-                "readmore": "QQ群：630246091",
-                "status": 1
-            },
-            {
                 "name": "aliyunCTF2024",
                 "link": "https://www.aliyunctf.com/",
                 "type": "团队赛 | 人数暂定",
@@ -56,6 +45,17 @@
                 "bsjs": "2024年05月02日 00:00",
                 "readmore": "比赛时间未定",
                 "status": 1
+            },
+            {
+                "name": "NKCTF2024",
+                "link": "https://n0wayback.com/nkctf2024.html",
+                "type": "团队赛|1-4人",
+                "bmks": "2024年03月10日 10:00",
+                "bmjz": "2024年03月22日 18:00",
+                "bsks": "2024年03月22日 19:00",
+                "bsjs": "2024年03月23日 19:00",
+                "readmore": "QQ群：630246091",
+                "status": 2
             },
             {
                 "name": "DubheCTF 2024",
@@ -264,17 +264,6 @@
                 "bsks": "2024年01月27日 10:00",
                 "bsjs": "2024年01月28日 10:00",
                 "readmore": "选手交流群：612460086",
-                "status": 4
-            },
-            {
-                "name": "春秋杯网络安全联赛冬季赛",
-                "link": "https://endbm.ichunqiu.com/2023cqgames2",
-                "type": "个人赛CTF+RDG",
-                "bmks": "2023年12月18日 00:00",
-                "bmjz": "2024年01月22日 17:00",
-                "bsks": "2024年01月20日 10:00",
-                "bsjs": "2024年01月22日 18:00",
-                "readmore": "赛事QQ群：277328440",
                 "status": 4
             }
         ],
