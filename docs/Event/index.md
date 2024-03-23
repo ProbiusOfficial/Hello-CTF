@@ -329,13 +329,6 @@ hide:
                 **比赛时间** : 2024年05月01日 00:00 - 2024年05月02日 00:00  
                 **其他说明** : 比赛时间未定  
                 
-            ??? Quote "[aliyunCTF2024](https://www.aliyunctf.com/)"  
-                **比赛名称** : [aliyunCTF2024](https://www.aliyunctf.com/)  
-                **比赛类型** : 团队赛 | 人数暂定  
-                **报名时间** : 2024年03月10日 10:00 - 2024年03月23日 09:00  
-                **比赛时间** : 2024年03月23日 10:00 - 2024年03月24日 22:00  
-                **其他说明** : 赛事官方钉钉群 28800019603  
-                
         === "国外赛事"
             ??? Quote "[Nullcon Berlin HackIM 2024 CTF](https://ctf.nullcon.net/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.nullcon.net/)  
@@ -726,6 +719,13 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
+            ??? Quote "[aliyunCTF2024](https://www.aliyunctf.com/)"  
+                **比赛名称** : [aliyunCTF2024](https://www.aliyunctf.com/)  
+                **比赛类型** : 团队赛 | 人数暂定  
+                **报名时间** : 2024年03月10日 10:00 - 2024年03月23日 09:00  
+                **比赛时间** : 2024年03月23日 10:00 - 2024年03月24日 22:00  
+                **其他说明** : 赛事官方钉钉群 28800019603  
+                
             ??? Quote "[NKCTF2024](https://n0wayback.com/nkctf2024.html)"  
                 **比赛名称** : [NKCTF2024](https://n0wayback.com/nkctf2024.html)  
                 **比赛类型** : 团队赛|1-4人  
