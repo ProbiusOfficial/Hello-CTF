@@ -726,13 +726,6 @@ hide:
                 **比赛时间** : 2024年03月23日 10:00 - 2024年03月24日 22:00  
                 **其他说明** : 赛事官方钉钉群 28800019603  
                 
-            ??? Quote "[NKCTF2024](https://n0wayback.com/nkctf2024.html)"  
-                **比赛名称** : [NKCTF2024](https://n0wayback.com/nkctf2024.html)  
-                **比赛类型** : 团队赛|1-4人  
-                **报名时间** : 2024年03月10日 10:00 - 2024年03月22日 18:00  
-                **比赛时间** : 2024年03月22日 19:00 - 2024年03月23日 19:00  
-                **其他说明** : QQ群：630246091  
-                
         === "国外赛事"
             ??? Quote "[Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)  
@@ -745,6 +738,13 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[NKCTF2024](https://n0wayback.com/nkctf2024.html)"  
+                **比赛名称** : [NKCTF2024](https://n0wayback.com/nkctf2024.html)  
+                **比赛类型** : 团队赛|1-4人  
+                **报名时间** : 2024年03月10日 10:00 - 2024年03月22日 18:00  
+                **比赛时间** : 2024年03月22日 19:00 - 2024年03月23日 19:00  
+                **其他说明** : QQ群：630246091  
+                
             ??? Quote "[DubheCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=94938be6-ce42-11ee-ab28-000c29bc20bf)"  
                 **比赛名称** : [DubheCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=94938be6-ce42-11ee-ab28-000c29bc20bf)  
                 **比赛类型** : 团队赛 | 1-n  
