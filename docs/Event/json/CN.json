@@ -14,17 +14,6 @@
                 "status": 1
             },
             {
-                "name": "aliyunCTF2024",
-                "link": "https://www.aliyunctf.com/",
-                "type": "团队赛 | 人数暂定",
-                "bmks": "2024年03月10日 10:00",
-                "bmjz": "2024年03月23日 09:00",
-                "bsks": "2024年03月23日 10:00",
-                "bsjs": "2024年03月24日 22:00",
-                "readmore": "赛事官方钉钉群 28800019603",
-                "status": 1
-            },
-            {
                 "name": "XYCTF高校新生联合赛 2024",
                 "link": "https://www.xyctf.top/",
                 "type": "团队赛 | 1-3人",
@@ -45,6 +34,17 @@
                 "bsjs": "2024年05月02日 00:00",
                 "readmore": "比赛时间未定",
                 "status": 1
+            },
+            {
+                "name": "aliyunCTF2024",
+                "link": "https://www.aliyunctf.com/",
+                "type": "团队赛 | 人数暂定",
+                "bmks": "2024年03月10日 10:00",
+                "bmjz": "2024年03月23日 09:00",
+                "bsks": "2024年03月23日 10:00",
+                "bsjs": "2024年03月24日 22:00",
+                "readmore": "赛事官方钉钉群 28800019603",
+                "status": 2
             },
             {
                 "name": "NKCTF2024",
