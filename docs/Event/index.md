@@ -719,13 +719,7 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-            ??? Quote "[aliyunCTF2024](https://www.aliyunctf.com/)"  
-                **比赛名称** : [aliyunCTF2024](https://www.aliyunctf.com/)  
-                **比赛类型** : 团队赛 | 人数暂定  
-                **报名时间** : 2024年03月10日 10:00 - 2024年03月23日 09:00  
-                **比赛时间** : 2024年03月23日 10:00 - 2024年03月24日 22:00  
-                **其他说明** : 赛事官方钉钉群 28800019603  
-                
+    
         === "国外赛事"
             ??? Quote "[Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)  
@@ -738,6 +732,13 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[aliyunCTF2024](https://www.aliyunctf.com/)"  
+                **比赛名称** : [aliyunCTF2024](https://www.aliyunctf.com/)  
+                **比赛类型** : 团队赛 | 人数暂定  
+                **报名时间** : 2024年03月10日 10:00 - 2024年03月23日 09:00  
+                **比赛时间** : 2024年03月23日 10:00 - 2024年03月24日 22:00  
+                **其他说明** : 赛事官方钉钉群 28800019603  
+                
             ??? Quote "[NKCTF2024](https://n0wayback.com/nkctf2024.html)"  
                 **比赛名称** : [NKCTF2024](https://n0wayback.com/nkctf2024.html)  
                 **比赛类型** : 团队赛|1-4人  
