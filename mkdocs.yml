@@ -146,6 +146,9 @@ markdown_extensions:
   - pymdownx.tilde
 
 extra_javascript:
+# ----- SEO -----
+  - javascripts/baidu_SEO.js
+  
 # # ----- mathjax -----
 #   - javascripts/mathjax.js
 #   - https://polyfill.io/v3/polyfill.min.js?features=es6
@@ -291,8 +294,9 @@ nav:
       - TeamBuild/train.md
 
 # - Set Challenges (.SC) 命题 Part ------------
-  - 命题:
+  - 命题: 
     - Create/index.md
+    - 一般题目模板 : docker-template/index.md
     - 动态容器原理: Create/DynamicChallengePrinciples.md
     - Web基础靶机构建流程: Create/WebBaseChallenge.md
 
