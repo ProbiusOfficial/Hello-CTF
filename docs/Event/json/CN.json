@@ -3,36 +3,25 @@
     "data": {
         "result": [
             {
+                "name": "第四届红明谷杯（初赛）",
+                "link": "https://www.sm.gov.cn/inc/hgbm/",
+                "type": "团队赛 | 1-3 人",
+                "bmks": "2024年03月11日 00:00",
+                "bmjz": "2024年03月31日 00:00",
+                "bsks": "2024年04月03日 9:00",
+                "bsjs": "2024年04月03日 18:00",
+                "readmore": "赛事交流QQ群：458469559 ；主办单位：数字中国建设峰会组委会 承办单位：福建省数字福建建设领导小组办公室 三明市人民政府",
+                "status": 1
+            },
+            {
                 "name": "XYCTF高校新生联合赛 2024",
-                "link": "https://www.hello-ctf.com/",
+                "link": "https://www.xyctf.top/",
                 "type": "团队赛 | 1-3人",
                 "bmks": "2024年03月05日 10:00",
                 "bmjz": "2024年04月01日 09:00",
                 "bsks": "2024年04月01日 10:00",
                 "bsjs": "2024年05月01日 10:00",
                 "readmore": "赛事群：798794707",
-                "status": 1
-            },
-            {
-                "name": "2024第一届VCTF纳新赛",
-                "link": "https://ctf.venomsec.com",
-                "type": "个人赛",
-                "bmks": "2024年03月04日 8:00",
-                "bmjz": "2024年03月16日 8:00",
-                "bsks": "2024年03月16日 8:00",
-                "bsjs": "2024年03月16日 20:00",
-                "readmore": "比赛QQ群: 748783131",
-                "status": 1
-            },
-            {
-                "name": "DubheCTF 2024",
-                "link": "https://adworld.xctf.org.cn/contest/assess?hash=94938be6-ce42-11ee-ab28-000c29bc20bf",
-                "type": "团队赛 | 1-n",
-                "bmks": "2024年03月01日 09:00",
-                "bmjz": "2024年03月16日 08:00",
-                "bsks": "2024年03月16日 09:00",
-                "bsjs": "2024年03月18日 09:00",
-                "readmore": "Discord: https://discord.gg/hq4m3KrVfG QQ群：512066352 本届DubheCTF2024由XCTF联赛的合作单位天枢Dubhe战队组织，由赛宁网安提供技术支持。作为第八届XCTF国际联赛的分站赛，本次比赛将采用在线网络安全夺旗挑战赛的形式，面向全球开放。 此次比赛冠军队伍将直接晋级第八届XCTF总决赛（总决赛具体地点待定，将在确定后通知获得资格的国际和国内队伍）。其他参赛的队伍也将获得积分，来竞争XCTF总决赛的其他席位。",
                 "status": 1
             },
             {
@@ -47,6 +36,61 @@
                 "status": 1
             },
             {
+                "name": "aliyunCTF2024",
+                "link": "https://www.aliyunctf.com/",
+                "type": "团队赛 | 人数暂定",
+                "bmks": "2024年03月10日 10:00",
+                "bmjz": "2024年03月23日 09:00",
+                "bsks": "2024年03月23日 10:00",
+                "bsjs": "2024年03月24日 22:00",
+                "readmore": "赛事官方钉钉群 28800019603",
+                "status": 3
+            },
+            {
+                "name": "NKCTF2024",
+                "link": "https://n0wayback.com/nkctf2024.html",
+                "type": "团队赛|1-4人",
+                "bmks": "2024年03月10日 10:00",
+                "bmjz": "2024年03月22日 18:00",
+                "bsks": "2024年03月22日 19:00",
+                "bsjs": "2024年03月23日 19:00",
+                "readmore": "QQ群：630246091",
+                "status": 4
+            },
+            {
+                "name": "DubheCTF 2024",
+                "link": "https://adworld.xctf.org.cn/contest/assess?hash=94938be6-ce42-11ee-ab28-000c29bc20bf",
+                "type": "团队赛 | 1-n",
+                "bmks": "2024年03月01日 09:00",
+                "bmjz": "2024年03月16日 08:00",
+                "bsks": "2024年03月16日 09:00",
+                "bsjs": "2024年03月18日 09:00",
+                "readmore": "Discord: https://discord.gg/hq4m3KrVfG QQ群：512066352 本届DubheCTF2024由XCTF联赛的合作单位天枢Dubhe战队组织，由赛宁网安提供技术支持。作为第八届XCTF国际联赛的分站赛，本次比赛将采用在线网络安全夺旗挑战赛的形式，面向全球开放。 此次比赛冠军队伍将直接晋级第八届XCTF总决赛（总决赛具体地点待定，将在确定后通知获得资格的国际和国内队伍）。其他参赛的队伍也将获得积分，来竞争XCTF总决赛的其他席位。",
+                "status": 4
+            },
+            {
+                "name": "2024第一届VCTF纳新赛",
+                "link": "https://ctf.venomsec.com",
+                "type": "个人赛",
+                "bmks": "2024年03月04日 8:00",
+                "bmjz": "2024年03月16日 8:00",
+                "bsks": "2024年03月16日 8:00",
+                "bsjs": "2024年03月16日 20:00",
+                "readmore": "比赛QQ群: 748783131",
+                "status": 4
+            },
+            {
+                "name": "NSSCTF Round19 密码专项赛",
+                "link": "https://www.nssctf.cn/contest",
+                "type": "个人赛",
+                "bmks": "2024年03月16日 13:30",
+                "bmjz": "2024年03月16日 13:30",
+                "bsks": "2024年03月16日 13:30",
+                "bsjs": "2024年03月16日 17:00",
+                "readmore": "QQ群：521330139",
+                "status": 4
+            },
+            {
                 "name": "第一届“长城杯”信息安全铁人三项赛初赛",
                 "link": "http://ccb.itsec.gov.cn/",
                 "type": "团队赛|1-4人",
@@ -55,7 +99,7 @@
                 "bsks": "2024年03月10日 09:00",
                 "bsjs": "2024年03月12日 18:00",
                 "readmore": "比赛时间2024年3月 未定",
-                "status": 2
+                "status": 4
             },
             {
                 "name": "青少年CTF擂台挑战赛 2024 #Round 1",
@@ -220,72 +264,6 @@
                 "bsks": "2024年01月27日 10:00",
                 "bsjs": "2024年01月28日 10:00",
                 "readmore": "选手交流群：612460086",
-                "status": 4
-            },
-            {
-                "name": "春秋杯网络安全联赛冬季赛",
-                "link": "https://endbm.ichunqiu.com/2023cqgames2",
-                "type": "个人赛CTF+RDG",
-                "bmks": "2023年12月18日 00:00",
-                "bmjz": "2024年01月22日 17:00",
-                "bsks": "2024年01月20日 10:00",
-                "bsjs": "2024年01月22日 18:00",
-                "readmore": "赛事QQ群：277328440",
-                "status": 4
-            },
-            {
-                "name": "第三届WEBSHELL伏魔挑战赛",
-                "link": "https://mp.weixin.qq.com/s/e8OE3rXyIqPkHrOHBDL5Kw",
-                "type": "个人赛",
-                "bmks": "2023年12月29日 10:00",
-                "bmjz": "2024年01月17日 10:00",
-                "bsks": "2024年01月12日 14:00",
-                "bsjs": "2024年01月17日 10:00",
-                "readmore": "",
-                "status": 4
-            },
-            {
-                "name": "第七届强网杯全国网络安全挑战赛决赛",
-                "link": "https://qiangwangbei.com/",
-                "type": "团队赛|1-4人",
-                "bmks": "2023年05月01日 00:00",
-                "bmjz": "2023年12月09日 00:00",
-                "bsks": "2024年01月13日 09:00",
-                "bsjs": "2024年01月14日 16:00",
-                "readmore": "QQ群：723023839",
-                "status": 4
-            },
-            {
-                "name": "movectf 2024",
-                "link": "https://movectf2024.movebit.xyz/",
-                "type": "个人赛 | WEB3",
-                "bmks": "2023年12月25日 00:00",
-                "bmjz": "2024年01月14日 09:00",
-                "bsks": "2024年01月12日 09:00",
-                "bsjs": "2024年01月14日 09:00",
-                "readmore": "旗舰级 Move 安全竞赛，旨在吸引更多对 \r\nMove 语言和 Move 生态系统感兴趣的安全专业人士\r\n和开发人员。\r\nQQ学习交流群：163569170",
-                "status": 4
-            },
-            {
-                "name": " NSSCTF Round#16 Basic",
-                "link": "https://www.nssctf.cn/contest",
-                "type": "团队赛|1-3人",
-                "bmks": "2024年01月03日 00:00",
-                "bmjz": "2024年01月13日 17:40",
-                "bsks": "2024年01月13日 14:00",
-                "bsjs": "2024年01月13日 17:40",
-                "readmore": "QQ群：521330139",
-                "status": 4
-            },
-            {
-                "name": "“复兴杯”2023年第四届大学生网络安全精英赛初赛",
-                "link": "https://www.nisp.org.cn/wads",
-                "type": "个人赛",
-                "bmks": "2023年11月10日 12:00",
-                "bmjz": "2024年01月02日 18:00",
-                "bsks": "2024年01月03日 09:00",
-                "bsjs": "2024年01月07日 18:00",
-                "readmore": "",
                 "status": 4
             }
         ],
