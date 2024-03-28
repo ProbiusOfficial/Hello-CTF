@@ -285,6 +285,13 @@ hide:
             适度CTF益脑，沉迷CTF伤身。合理安排时间，享受健康生活。
     
     === "*正在报名*"
+        ??? Quote "[Round#20 Basic WEB个人专场](https://nssctf.cn/contest)"  
+            **比赛名称** : [Round#20 Basic WEB个人专场](https://nssctf.cn/contest)  
+            **比赛类型** : 个人赛  
+            **报名时间** : 2024年03月25日 00:00 - 2024年03月30日 13:20  
+            **比赛时间** : 2024年03月30日 13:30 - 2024年03月30日 17:30  
+            **其他说明** : QQ群：521330139  
+            
         ??? Quote "[第四届红明谷杯（初赛）](https://www.sm.gov.cn/inc/hgbm/)"  
             **比赛名称** : [第四届红明谷杯（初赛）](https://www.sm.gov.cn/inc/hgbm/)  
             **比赛类型** : 团队赛 | 1-3 人  
@@ -308,6 +315,13 @@ hide:
             
     === "*即将开始*"
         === "国内赛事"
+            ??? Quote "[Round#20 Basic WEB个人专场](https://nssctf.cn/contest)"  
+                **比赛名称** : [Round#20 Basic WEB个人专场](https://nssctf.cn/contest)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年03月25日 00:00 - 2024年03月30日 13:20  
+                **比赛时间** : 2024年03月30日 13:30 - 2024年03月30日 17:30  
+                **其他说明** : QQ群：521330139  
+                
             ??? Quote "[第四届红明谷杯（初赛）](https://www.sm.gov.cn/inc/hgbm/)"  
                 **比赛名称** : [第四届红明谷杯（初赛）](https://www.sm.gov.cn/inc/hgbm/)  
                 **比赛类型** : 团队赛 | 1-3 人  
@@ -850,20 +864,6 @@ hide:
                 **报名时间** : 2024年01月09日 00:00 - 2024年01月24日 18:00  
                 **比赛时间** : 2024年01月30日 10:00 - 2024年01月30日 18:00  
                 **其他说明** : QQ群：666010671 768342822    
-                
-            ??? Quote "[Real World CTF 6th](https://realworldctf.com/)"  
-                **比赛名称** : [Real World CTF 6th](https://realworldctf.com/)  
-                **比赛类型** : 团队赛  
-                **报名时间** : 2023年12月28日 16:30 - 2024年01月28日 19:00  
-                **比赛时间** : 2024年01月26日 19:00 - 2024年01月28日 19:00  
-                **其他说明** : Discord: https://discord.com/invite/8GNqypNaxB  
-                
-            ??? Quote "[獬豸杯电子数据取证比武](https://mp.weixin.qq.com/s/kTUbGvh4EGZf5Jx87NyCgQ)"  
-                **比赛名称** : [獬豸杯电子数据取证比武](https://mp.weixin.qq.com/s/kTUbGvh4EGZf5Jx87NyCgQ)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年01月25日 00:00 - 2024年01月27日 18:00  
-                **比赛时间** : 2024年01月28日 10:00 - 2024年01月28日 18:00  
-                **其他说明** : QQ群号：955391766  
                 
             ??? Quote "[NSSCTF Round#17 Basic](https://www.nssctf.cn/contest/)"  
                 **比赛名称** : [NSSCTF Round#17 Basic](https://www.nssctf.cn/contest/)  

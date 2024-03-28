@@ -3,6 +3,17 @@
     "data": {
         "result": [
             {
+                "name": "Round#20 Basic WEB个人专场",
+                "link": "https://nssctf.cn/contest",
+                "type": "个人赛",
+                "bmks": "2024年03月25日 00:00",
+                "bmjz": "2024年03月30日 13:20",
+                "bsks": "2024年03月30日 13:30",
+                "bsjs": "2024年03月30日 17:30",
+                "readmore": "QQ群：521330139",
+                "status": 1
+            },
+            {
                 "name": "第四届红明谷杯（初赛）",
                 "link": "https://www.sm.gov.cn/inc/hgbm/",
                 "type": "团队赛 | 1-3 人",
@@ -220,28 +231,6 @@
                 "bsks": "2024年01月30日 10:00",
                 "bsjs": "2024年01月30日 18:00",
                 "readmore": "QQ群：666010671 768342822\r\n",
-                "status": 4
-            },
-            {
-                "name": "Real World CTF 6th",
-                "link": "https://realworldctf.com/",
-                "type": "团队赛",
-                "bmks": "2023年12月28日 16:30",
-                "bmjz": "2024年01月28日 19:00",
-                "bsks": "2024年01月26日 19:00",
-                "bsjs": "2024年01月28日 19:00",
-                "readmore": "Discord: https://discord.com/invite/8GNqypNaxB",
-                "status": 4
-            },
-            {
-                "name": "獬豸杯电子数据取证比武",
-                "link": "https://mp.weixin.qq.com/s/kTUbGvh4EGZf5Jx87NyCgQ",
-                "type": "个人赛",
-                "bmks": "2024年01月25日 00:00",
-                "bmjz": "2024年01月27日 18:00",
-                "bsks": "2024年01月28日 10:00",
-                "bsjs": "2024年01月28日 18:00",
-                "readmore": "QQ群号：955391766",
                 "status": 4
             },
             {
