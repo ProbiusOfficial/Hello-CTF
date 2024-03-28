@@ -872,13 +872,6 @@ hide:
                 **比赛时间** : 2024年01月26日 19:00 - 2024年01月28日 19:00  
                 **其他说明** : Discord: https://discord.com/invite/8GNqypNaxB  
                 
-            ??? Quote "[獬豸杯电子数据取证比武](https://mp.weixin.qq.com/s/kTUbGvh4EGZf5Jx87NyCgQ)"  
-                **比赛名称** : [獬豸杯电子数据取证比武](https://mp.weixin.qq.com/s/kTUbGvh4EGZf5Jx87NyCgQ)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年01月25日 00:00 - 2024年01月27日 18:00  
-                **比赛时间** : 2024年01月28日 10:00 - 2024年01月28日 18:00  
-                **其他说明** : QQ群号：955391766  
-                
             ??? Quote "[NSSCTF Round#17 Basic](https://www.nssctf.cn/contest/)"  
                 **比赛名称** : [NSSCTF Round#17 Basic](https://www.nssctf.cn/contest/)  
                 **比赛类型** : 团队赛|1-3人  
