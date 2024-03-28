@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [泛微E-Office10最新远程代码执行漏洞分析](https://y4tacker.github.io/2024/03/27/year/2024/3/%E6%B3%9B%E5%BE%AEE-Office10%E6%9C%80%E6%96%B0%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-03-27
+
+    4051ee28ede465c82f8d9e9a0fa8eab16e3556aa3b07573ca2be1e94b32943219c592cfd0f6b9b8ba9dffa7847e659f691f9c36226794e2e1f461094fd3ba8b45787938c16f361e050587e1b9e88af1e074905380ca645979003bc652f767290e7fd68...
     ### [52PoJie论坛2024春节红包-Web解题思路](https://blog.zgsec.cn/archives/577.html)  
     >by [曾哥](https://blog.zgsec.cn/), 2024-02-19
 
@@ -88,7 +92,7 @@ hide:
     ### [浅析Gitlab未授权密码重置(CVE-2023-7028)](https://y4tacker.github.io/2024/01/12/year/2024/1/%E6%B5%85%E6%9E%90Gitlab%E6%9C%AA%E6%8E%88%E6%9D%83%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE-CVE-2023-7028/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-01-12
 
-    6d1cc102401c745b93e78f65644d42e8acdebe888643ff48d6f7cfdb5192f763857bafd30ff3df8edacec48331a685443e2bfd9b2096789fbde94bf2019e9400ec1373012537fa79b1378fa55fed7d5bbaaee884c63d7e7318c1559a5c176fbdd61c18...
+    浅析Gitlab未授权密码重置(CVE-2023-7028)补丁在https://gitlab.com/rluna-gitlab/gitlab-ce/-/commit/24d1060c0ae7d0ba432271da98f4fa20ab6fd671，由于问题非常简单，这里就不多说了可以看到在原来的逻辑当中app/models/concerns/recoverable_by_any_email.rb...
     ### [如何判断在IDEA中程序正在运行或正在Debug](https://y4tacker.github.io/2024/01/04/year/2024/1/%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E5%9C%A8IDEA%E4%B8%AD%E7%A8%8B%E5%BA%8F%E6%AD%A3%E5%9C%A8%E8%BF%90%E8%A1%8C%E6%88%96%E6%AD%A3%E5%9C%A8Debug/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-01-04
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2023-11-29
 
     b911718fdd890810916fcf22cb8016ca11ae7d872d624941bd9b20d0cf7e4036a45e816cf5955164cc4e0d7bc4e06277d1f41e412de1243b7603f6b8db578947e40f8bad6233f702a2ae224c03f173d615182364ea2922f081358af1757fab347afff2...
-    ### [某系统最新前台权限绕过分析](https://y4tacker.github.io/2023/11/26/year/2023/11/%E6%9F%90%E7%B3%BB%E7%BB%9F%E6%9C%80%E6%96%B0%E5%89%8D%E5%8F%B0%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E5%88%86%E6%9E%90/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-11-26
-
-    f8699a5360fe9f42f41b98c5cc3203c7cbe9b0e7b973590e7fd52b27b474d14b936d11c308462091084b3defadb8d998d3381b897b97ebf2923245170a43a3ab58393c3b23741eb3526a32145ff73880564d83b77ece5efd8b3fae3b9be74865b14f81...
 
 </div>
