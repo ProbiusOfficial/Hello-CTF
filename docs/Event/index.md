@@ -865,13 +865,6 @@ hide:
                 **比赛时间** : 2024年01月30日 10:00 - 2024年01月30日 18:00  
                 **其他说明** : QQ群：666010671 768342822    
                 
-            ??? Quote "[NSSCTF Round#17 Basic](https://www.nssctf.cn/contest/)"  
-                **比赛名称** : [NSSCTF Round#17 Basic](https://www.nssctf.cn/contest/)  
-                **比赛类型** : 团队赛|1-3人  
-                **报名时间** : 2024年01月16日 00:00 - 2024年01月28日 17:30  
-                **比赛时间** : 2024年01月28日 14:00 - 2024年01月28日 17:30  
-                **其他说明** : QQ群：521330139  
-                
         === "国外赛事"
             ??? Quote "[Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)  
