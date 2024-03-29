@@ -91,7 +91,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2226.ics  
     
 ??? Quote "[RITSEC CTF 2024]()"  
-    [![](https://ctftime.org){ width="200" align=left }]()  
+    [![](https://ctftime.org/media/events/Ritsec-CTF-2024-r1.jpg){ width="200" align=left }]()  
     **比赛名称** : [RITSEC CTF 2024]()  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-04-06 00:00:00 - 2024-04-08 00:00:00 UTC+8  
