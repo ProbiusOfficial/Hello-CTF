@@ -160,7 +160,7 @@ comments: true
     **比赛名称** : [ZeroDays CTF](https://zerodays.ie/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-03-23 18:00:00 - 2024-03-24 01:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
     **添加日历** : https://ctftime.org/event/2196.ics  
     
