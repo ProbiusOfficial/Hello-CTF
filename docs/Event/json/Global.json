@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "VolgaCTF 2024 Qualifier",
-        "比赛时间": "2024-03-30 23:00:00 - 2024-03-31 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2200.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://q.2024.volgactf.ru/",
-        "比赛标志": "https://ctftime.org/media/events/logo-social-yellow_14.png",
-        "比赛权重": "35.91",
-        "赛事主办": "VolgaCTF.org (https://ctftime.org/team/27094)",
-        "比赛ID": "52",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "UNbreakable International 2024 - Team Phase",
         "比赛时间": "2024-04-05 18:00:00 - 2024-04-07 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2297.ics",
@@ -669,6 +657,18 @@
         "比赛权重": "0.00",
         "赛事主办": "CyberVT (https://ctftime.org/team/173872)",
         "比赛ID": "884",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "VolgaCTF 2024 Qualifier",
+        "比赛时间": "2024-03-30 23:00:00 - 2024-03-31 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2200.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://q.2024.volgactf.ru/",
+        "比赛标志": "https://ctftime.org/media/events/logo-social-yellow_14.png",
+        "比赛权重": "35.91",
+        "赛事主办": "VolgaCTF.org (https://ctftime.org/team/27094)",
+        "比赛ID": "52",
         "比赛状态": "nowrunning"
     },
     {
