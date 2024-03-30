@@ -36,15 +36,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[UTCTF 2024](https://isss.io/utctf)"  
-    [![](https://ctftime.org/media/events/UTCTF2024.png){ width="200" align=left }](https://isss.io/utctf)  
-    **比赛名称** : [UTCTF 2024](https://isss.io/utctf)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-30 07:00:00 - 2024-04-01 07:00:00 UTC+8  
-    **比赛权重** : 48.00  
-    **赛事主办** : isss (https://ctftime.org/team/69010)  
-    **添加日历** : https://ctftime.org/event/2302.ics  
-    
 ??? Quote "[CursedCTF 2024 Quals](https://cursedc.tf/)"  
     [![](https://ctftime.org/media/events/Screenshot_2024-01-23_at_11.45.46_AM.png){ width="200" align=left }](https://cursedc.tf/)  
     **比赛名称** : [CursedCTF 2024 Quals](https://cursedc.tf/)  
@@ -91,7 +82,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2226.ics  
     
 ??? Quote "[RITSEC CTF 2024]()"  
-    [![](https://ctftime.org){ width="200" align=left }]()  
+    [![](https://ctftime.org/media/events/Ritsec-CTF-2024-r1.jpg){ width="200" align=left }]()  
     **比赛名称** : [RITSEC CTF 2024]()  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-04-06 00:00:00 - 2024-04-08 00:00:00 UTC+8  
