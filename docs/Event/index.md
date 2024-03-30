@@ -809,13 +809,7 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-            ??? Quote "[Round#20 Basic WEB个人专场](https://nssctf.cn/contest)"  
-                **比赛名称** : [Round#20 Basic WEB个人专场](https://nssctf.cn/contest)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年03月25日 00:00 - 2024年03月30日 13:20  
-                **比赛时间** : 2024年03月30日 13:30 - 2024年03月30日 17:30  
-                **其他说明** : QQ群：521330139  
-                
+    
         === "国外赛事"
             ??? Quote "[Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)  
@@ -846,6 +840,13 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[Round#20 Basic WEB个人专场](https://nssctf.cn/contest)"  
+                **比赛名称** : [Round#20 Basic WEB个人专场](https://nssctf.cn/contest)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年03月25日 00:00 - 2024年03月30日 13:20  
+                **比赛时间** : 2024年03月30日 13:30 - 2024年03月30日 17:30  
+                **其他说明** : QQ群：521330139  
+                
             ??? Quote "[aliyunCTF2024](https://www.aliyunctf.com/)"  
                 **比赛名称** : [aliyunCTF2024](https://www.aliyunctf.com/)  
                 **比赛类型** : 团队赛 | 人数暂定  
@@ -957,13 +958,6 @@ hide:
                 **报名时间** : 2023年12月01日 00:00 - 2024年01月31日 00:00  
                 **比赛时间** : 2023年11月30日 00:00 - 2024年01月31日 00:00  
                 **其他说明** : QQ群：751273347  比赛时间待定  
-                
-            ??? Quote "[第七届西湖论剑网络安全技能大赛初赛](https://game.gcsis.cn/)"  
-                **比赛名称** : [第七届西湖论剑网络安全技能大赛初赛](https://game.gcsis.cn/)  
-                **比赛类型** : 团队赛|4-8人  
-                **报名时间** : 2024年01月09日 00:00 - 2024年01月24日 18:00  
-                **比赛时间** : 2024年01月30日 10:00 - 2024年01月30日 18:00  
-                **其他说明** : QQ群：666010671 768342822    
                 
         === "国外赛事"
             ??? Quote "[HACKFEST'8 QUALS](https://ctf-quals-8.hackfest.tn/)"  
