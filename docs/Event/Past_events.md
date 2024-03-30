@@ -151,7 +151,7 @@ comments: true
     **比赛名称** : [Undutmaning 2024](https://undutmaning.se/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-03-23 20:00:00 - 2024-03-24 04:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 24.40  
     **赛事主办** : Undutmaning (https://ctftime.org/team/212504)  
     **添加日历** : https://ctftime.org/event/2283.ics  
     
