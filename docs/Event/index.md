@@ -285,13 +285,6 @@ hide:
             适度CTF益脑，沉迷CTF伤身。合理安排时间，享受健康生活。
     
     === "*正在报名*"
-        ??? Quote "[第四届红明谷杯（初赛）](https://www.sm.gov.cn/inc/hgbm/)"  
-            **比赛名称** : [第四届红明谷杯（初赛）](https://www.sm.gov.cn/inc/hgbm/)  
-            **比赛类型** : 团队赛 | 1-3 人  
-            **报名时间** : 2024年03月11日 00:00 - 2024年03月31日 00:00  
-            **比赛时间** : 2024年04月03日 9:00 - 2024年04月03日 18:00  
-            **其他说明** : 赛事交流QQ群：458469559 ；主办单位：数字中国建设峰会组委会 承办单位：福建省数字福建建设领导小组办公室 三明市人民政府  
-            
         ??? Quote "[XYCTF高校新生联合赛 2024](https://www.xyctf.top/)"  
             **比赛名称** : [XYCTF高校新生联合赛 2024](https://www.xyctf.top/)  
             **比赛类型** : 团队赛 | 1-3人  
@@ -308,13 +301,6 @@ hide:
             
     === "*即将开始*"
         === "国内赛事"
-            ??? Quote "[第四届红明谷杯（初赛）](https://www.sm.gov.cn/inc/hgbm/)"  
-                **比赛名称** : [第四届红明谷杯（初赛）](https://www.sm.gov.cn/inc/hgbm/)  
-                **比赛类型** : 团队赛 | 1-3 人  
-                **报名时间** : 2024年03月11日 00:00 - 2024年03月31日 00:00  
-                **比赛时间** : 2024年04月03日 9:00 - 2024年04月03日 18:00  
-                **其他说明** : 赛事交流QQ群：458469559 ；主办单位：数字中国建设峰会组委会 承办单位：福建省数字福建建设领导小组办公室 三明市人民政府  
-                
             ??? Quote "[XYCTF高校新生联合赛 2024](https://www.xyctf.top/)"  
                 **比赛名称** : [XYCTF高校新生联合赛 2024](https://www.xyctf.top/)  
                 **比赛类型** : 团队赛 | 1-3人  
@@ -329,25 +315,14 @@ hide:
                 **比赛时间** : 2024年05月01日 00:00 - 2024年05月02日 00:00  
                 **其他说明** : 比赛时间未定  
                 
+            ??? Quote "[第四届红明谷杯（初赛）](https://www.sm.gov.cn/inc/hgbm/)"  
+                **比赛名称** : [第四届红明谷杯（初赛）](https://www.sm.gov.cn/inc/hgbm/)  
+                **比赛类型** : 团队赛 | 1-3 人  
+                **报名时间** : 2024年03月11日 00:00 - 2024年03月31日 00:00  
+                **比赛时间** : 2024年04月03日 9:00 - 2024年04月03日 18:00  
+                **其他说明** : 赛事交流QQ群：458469559 ；主办单位：数字中国建设峰会组委会 承办单位：福建省数字福建建设领导小组办公室 三明市人民政府  
+                
         === "国外赛事"
-            ??? Quote "[SummitCTF 2024](https://summitctf.org/)"  
-                [![](https://ctftime.org/media/events/default_background_removed.png){ width="200" align=left }](https://summitctf.org/)  
-                **比赛名称** : [SummitCTF 2024](https://summitctf.org/)  
-                **比赛形式** : Hack quest  
-                **比赛时间** : 2024-03-30 21:00:00 - 2024-04-01 04:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : CyberVT (https://ctftime.org/team/173872)  
-                **添加日历** : https://ctftime.org/event/2237.ics  
-                
-            ??? Quote "[VolgaCTF 2024 Qualifier](https://q.2024.volgactf.ru/)"  
-                [![](https://ctftime.org/media/events/logo-social-yellow_14.png){ width="200" align=left }](https://q.2024.volgactf.ru/)  
-                **比赛名称** : [VolgaCTF 2024 Qualifier](https://q.2024.volgactf.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-03-30 23:00:00 - 2024-03-31 23:00:00 UTC+8  
-                **比赛权重** : 35.91  
-                **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
-                **添加日历** : https://ctftime.org/event/2200.ics  
-                
             ??? Quote "[UNbreakable International 2024 - Team Phase](https://unr24t-international.cyber-edu.co/)"  
                 [![](https://ctftime.org/media/events/g5hqjcGuxmbcMSZ9.png){ width="200" align=left }](https://unr24t-international.cyber-edu.co/)  
                 **比赛名称** : [UNbreakable International 2024 - Team Phase](https://unr24t-international.cyber-edu.co/)  
@@ -838,6 +813,24 @@ hide:
                 **赛事主办** : cursed (https://ctftime.org/team/199492)  
                 **添加日历** : https://ctftime.org/event/2239.ics  
                 
+            ??? Quote "[SummitCTF 2024](https://summitctf.org/)"  
+                [![](https://ctftime.org/media/events/default_background_removed.png){ width="200" align=left }](https://summitctf.org/)  
+                **比赛名称** : [SummitCTF 2024](https://summitctf.org/)  
+                **比赛形式** : Hack quest  
+                **比赛时间** : 2024-03-30 21:00:00 - 2024-04-01 04:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : CyberVT (https://ctftime.org/team/173872)  
+                **添加日历** : https://ctftime.org/event/2237.ics  
+                
+            ??? Quote "[VolgaCTF 2024 Qualifier](https://q.2024.volgactf.ru/)"  
+                [![](https://ctftime.org/media/events/logo-social-yellow_14.png){ width="200" align=left }](https://q.2024.volgactf.ru/)  
+                **比赛名称** : [VolgaCTF 2024 Qualifier](https://q.2024.volgactf.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-03-30 23:00:00 - 2024-03-31 23:00:00 UTC+8  
+                **比赛权重** : 35.91  
+                **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
+                **添加日历** : https://ctftime.org/event/2200.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[Round#20 Basic WEB个人专场](https://nssctf.cn/contest)"  
@@ -952,13 +945,6 @@ hide:
                 **比赛时间** : 2024年02月03日 09:00 - 2024年02月04日 18:00  
                 **其他说明** : N1CTFJunior是Nu1L Team组织的官方纳新  赛事旨在选拔年轻优秀人才加入Nu1LTeam  QQ群:180885587  
                 
-            ??? Quote "[第二届红桥杯渗透测试挑战赛](https://tryhackme.com/)"  
-                **比赛名称** : [第二届红桥杯渗透测试挑战赛](https://tryhackme.com/)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2023年12月01日 00:00 - 2024年01月31日 00:00  
-                **比赛时间** : 2023年11月30日 00:00 - 2024年01月31日 00:00  
-                **其他说明** : QQ群：751273347  比赛时间待定  
-                
         === "国外赛事"
             ??? Quote "[HACKFEST'8 QUALS](https://ctf-quals-8.hackfest.tn/)"  
                 [![](https://ctftime.org/media/events/HACKFEST_WHITE.png){ width="200" align=left }](https://ctf-quals-8.hackfest.tn/)  
@@ -1001,7 +987,7 @@ hide:
                 **比赛名称** : [ZeroDays CTF](https://zerodays.ie/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-03-23 18:00:00 - 2024-03-24 01:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
                 **添加日历** : https://ctftime.org/event/2196.ics  
                 

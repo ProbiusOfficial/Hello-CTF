@@ -117,13 +117,6 @@ comments: true
     **比赛时间** : 2024年02月03日 09:00 - 2024年02月04日 18:00  
     **其他说明** : N1CTFJunior是Nu1L Team组织的官方纳新  赛事旨在选拔年轻优秀人才加入Nu1LTeam  QQ群:180885587  
     
-??? Quote "第二届红桥杯渗透测试挑战赛"  
-    **比赛名称** : [第二届红桥杯渗透测试挑战赛](https://tryhackme.com/)  
-    **比赛类型** : 个人赛  
-    **报名时间** : 2023年12月01日 00:00 - 2024年01月31日 00:00  
-    **比赛时间** : 2023年11月30日 00:00 - 2024年01月31日 00:00  
-    **其他说明** : QQ群：751273347  比赛时间待定  
-    
 
 ## 国际赛事
 ??? Quote "[HACKFEST'8 QUALS](https://ctf-quals-8.hackfest.tn/)"  
@@ -167,7 +160,7 @@ comments: true
     **比赛名称** : [ZeroDays CTF](https://zerodays.ie/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-03-23 18:00:00 - 2024-03-24 01:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
     **添加日历** : https://ctftime.org/event/2196.ics  
     
