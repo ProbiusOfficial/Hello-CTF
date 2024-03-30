@@ -344,15 +344,6 @@ hide:
                 **其他说明** : 比赛时间未定  
                 
         === "国外赛事"
-            ??? Quote "[CursedCTF 2024 Quals](https://cursedc.tf/)"  
-                [![](https://ctftime.org/media/events/Screenshot_2024-01-23_at_11.45.46_AM.png){ width="200" align=left }](https://cursedc.tf/)  
-                **比赛名称** : [CursedCTF 2024 Quals](https://cursedc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-03-30 08:00:00 - 2024-04-01 08:00:00 UTC+8  
-                **比赛权重** : 19.50  
-                **赛事主办** : cursed (https://ctftime.org/team/199492)  
-                **添加日历** : https://ctftime.org/event/2239.ics  
-                
             ??? Quote "[SummitCTF 2024](https://summitctf.org/)"  
                 [![](https://ctftime.org/media/events/default_background_removed.png){ width="200" align=left }](https://summitctf.org/)  
                 **比赛名称** : [SummitCTF 2024](https://summitctf.org/)  
@@ -851,6 +842,15 @@ hide:
                 **比赛权重** : 48.00  
                 **赛事主办** : isss (https://ctftime.org/team/69010)  
                 **添加日历** : https://ctftime.org/event/2302.ics  
+                
+            ??? Quote "[CursedCTF 2024 Quals](https://cursedc.tf/)"  
+                [![](https://ctftime.org/media/events/Screenshot_2024-01-23_at_11.45.46_AM.png){ width="200" align=left }](https://cursedc.tf/)  
+                **比赛名称** : [CursedCTF 2024 Quals](https://cursedc.tf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-03-30 08:00:00 - 2024-04-01 08:00:00 UTC+8  
+                **比赛权重** : 19.50  
+                **赛事主办** : cursed (https://ctftime.org/team/199492)  
+                **添加日历** : https://ctftime.org/event/2239.ics  
                 
     === "*已经结束*"
         === "国内赛事"

@@ -36,15 +36,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[CursedCTF 2024 Quals](https://cursedc.tf/)"  
-    [![](https://ctftime.org/media/events/Screenshot_2024-01-23_at_11.45.46_AM.png){ width="200" align=left }](https://cursedc.tf/)  
-    **比赛名称** : [CursedCTF 2024 Quals](https://cursedc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-30 08:00:00 - 2024-04-01 08:00:00 UTC+8  
-    **比赛权重** : 19.50  
-    **赛事主办** : cursed (https://ctftime.org/team/199492)  
-    **添加日历** : https://ctftime.org/event/2239.ics  
-    
 ??? Quote "[SummitCTF 2024](https://summitctf.org/)"  
     [![](https://ctftime.org/media/events/default_background_removed.png){ width="200" align=left }](https://summitctf.org/)  
     **比赛名称** : [SummitCTF 2024](https://summitctf.org/)  
