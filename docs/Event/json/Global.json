@@ -648,18 +648,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "SummitCTF 2024",
-        "比赛时间": "2024-03-30 21:00:00 - 2024-04-01 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2237.ics",
-        "比赛形式": "Hack quest",
-        "比赛链接": "https://summitctf.org/",
-        "比赛标志": "https://ctftime.org/media/events/default_background_removed.png",
-        "比赛权重": "0.00",
-        "赛事主办": "CyberVT (https://ctftime.org/team/173872)",
-        "比赛ID": "884",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "VolgaCTF 2024 Qualifier",
         "比赛时间": "2024-03-30 23:00:00 - 2024-03-31 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2200.ics",
@@ -669,6 +657,18 @@
         "比赛权重": "35.91",
         "赛事主办": "VolgaCTF.org (https://ctftime.org/team/27094)",
         "比赛ID": "52",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "SummitCTF 2024",
+        "比赛时间": "2024-03-30 21:00:00 - 2024-04-01 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2237.ics",
+        "比赛形式": "Hack quest",
+        "比赛链接": "https://summitctf.org/",
+        "比赛标志": "https://ctftime.org/media/events/default_background_removed.png",
+        "比赛权重": "0.00",
+        "赛事主办": "CyberVT (https://ctftime.org/team/173872)",
+        "比赛ID": "884",
         "比赛状态": "past"
     },
     {
@@ -1845,18 +1845,6 @@
         "比赛权重": "90.62",
         "赛事主办": "saarsec (https://ctftime.org/team/15337)",
         "比赛ID": "412",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "isfcr{ctf} 2023",
-        "比赛时间": "2023-11-18 18:30:00 - 2023-11-19 18:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2167.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://isfcr.ctfd.io/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "ISFCR PESU (https://ctftime.org/team/166645)",
-        "比赛ID": "942",
         "比赛状态": "past"
     }
 ]

@@ -813,15 +813,6 @@ hide:
                 **赛事主办** : cursed (https://ctftime.org/team/199492)  
                 **添加日历** : https://ctftime.org/event/2239.ics  
                 
-            ??? Quote "[SummitCTF 2024](https://summitctf.org/)"  
-                [![](https://ctftime.org/media/events/default_background_removed.png){ width="200" align=left }](https://summitctf.org/)  
-                **比赛名称** : [SummitCTF 2024](https://summitctf.org/)  
-                **比赛形式** : Hack quest  
-                **比赛时间** : 2024-03-30 21:00:00 - 2024-04-01 04:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : CyberVT (https://ctftime.org/team/173872)  
-                **添加日历** : https://ctftime.org/event/2237.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[Round#20 Basic WEB个人专场](https://nssctf.cn/contest)"  
@@ -945,6 +936,15 @@ hide:
                 **比赛权重** : 35.91  
                 **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
                 **添加日历** : https://ctftime.org/event/2200.ics  
+                
+            ??? Quote "[SummitCTF 2024](https://summitctf.org/)"  
+                [![](https://ctftime.org/media/events/default_background_removed.png){ width="200" align=left }](https://summitctf.org/)  
+                **比赛名称** : [SummitCTF 2024](https://summitctf.org/)  
+                **比赛形式** : Hack quest  
+                **比赛时间** : 2024-03-30 21:00:00 - 2024-04-01 04:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : CyberVT (https://ctftime.org/team/173872)  
+                **添加日历** : https://ctftime.org/event/2237.ics  
                 
             ??? Quote "[HACKFEST'8 QUALS](https://ctf-quals-8.hackfest.tn/)"  
                 [![](https://ctftime.org/media/events/HACKFEST_WHITE.png){ width="200" align=left }](https://ctf-quals-8.hackfest.tn/)  
@@ -1827,15 +1827,6 @@ hide:
                 **比赛权重** : 90.62  
                 **赛事主办** : saarsec (https://ctftime.org/team/15337)  
                 **添加日历** : https://ctftime.org/event/2049.ics  
-                
-            ??? Quote "[isfcr{ctf} 2023](https://isfcr.ctfd.io/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://isfcr.ctfd.io/)  
-                **比赛名称** : [isfcr{ctf} 2023](https://isfcr.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-11-18 18:30:00 - 2023-11-19 18:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : ISFCR PESU (https://ctftime.org/team/166645)  
-                **添加日历** : https://ctftime.org/event/2167.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
