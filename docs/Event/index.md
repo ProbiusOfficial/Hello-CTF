@@ -404,9 +404,9 @@ hide:
                 **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
                 **添加日历** : https://ctftime.org/event/2310.ics  
                 
-            ??? Quote "[b01lers CTF 2024](http://ctf.b01lers.com/)"  
-                [![](https://ctftime.org/media/events/b01lers-griffen_1.png){ width="200" align=left }](http://ctf.b01lers.com/)  
-                **比赛名称** : [b01lers CTF 2024](http://ctf.b01lers.com/)  
+            ??? Quote "[b01lers CTF 2024](https://b01lersc.tf/)"  
+                [![](https://ctftime.org/media/events/b01lers-griffen_1.png){ width="200" align=left }](https://b01lersc.tf/)  
+                **比赛名称** : [b01lers CTF 2024](https://b01lersc.tf/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-04-12 20:00:00 - 2024-04-14 20:00:00 UTC+8  
                 **比赛权重** : 30.80  
