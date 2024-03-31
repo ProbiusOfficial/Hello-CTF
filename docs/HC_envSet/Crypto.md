@@ -29,7 +29,7 @@ ida 和编辑器不做限定, 语言可以用 Python 入门(但需要任何一�
 sudo pacman -Syu
 ```
 
-<br>
+---
 
 ```bash
 # Arch 终端下执行此命令以安装 gcc
@@ -77,7 +77,7 @@ gcc nihao.cpp && a.out
 尽管这是个非常好用的 ide, 然而因为新手不熟悉 CMake 而会耽搁进度, 不过个人觉得如果时间很宽泛的话无所谓, 均可, 但仍然建议有了编程基础后(这个基础如何界定呢? 至少在没有网络和
  ai 以及各种学习毕竟和语言手册的情况下凭自身能解决 **洛谷** 入门等级大部分问题的时候, 这段话是可以划掉的, 毕竟洛谷容易让人误入竞技性编程歧途(暴论??))再去学习[如何配置 CMake | 打不开大概率是网络问题](https://lov2.netlify.app/c++vscode/), 这样会更有体系和轻松
 
-<br>
+---
 
 #### 运行 Python 源代码
 
@@ -194,6 +194,8 @@ sudo pacman -S sagemath
 ```
 
 - [MacOS](https://github.com/3-manifolds/Sage_macOS)
+
+---
 
 ```bash
 # 给 notebook 下的 SageMath 加上打交互题的能力
