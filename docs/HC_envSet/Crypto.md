@@ -128,15 +128,11 @@ python3 nihao.py
 
 ↑这个知识列表引用自: [知乎文章: 初学者怎样学习密码学](https://zhuanlan.zhihu.com/p/455104888)
 
-学会这些知识后便可以开始刷 `buuCTF` 上前面的题, 其实前面还会碰到裴蜀定理和威尔逊定理的题目, 可以碰到了再学
-
 自己看不出来是什么数学原理就搜 `WP`(全称忘了, 含义为题解), 不过前提是自己已经思考过确认一段时间内思考不出来
 
 ***
 
 ### 有了一点点数论基础后
-
-###### 起码 `buuCTF` 上独立做题超过两页? 
 
 ####  工具配置: 各种 `Python 模块` 和 `SageMath`
 
@@ -181,19 +177,18 @@ pip install libnum
 pip install owiener
 ```
 
-
 ```bash
 # 安装 pwntools, 来让密码学可以打远程服务器的题目
 pip install pwntools
 ```
 
-
-
 <br>
 
 ##### `SageMath` 配置
 
-`SageMath`配置教程: https://doc.sagemath.org/html/en/installation/index.html
+`SageMath` [配置教程](https://doc.sagemath.org/html/en/installation/index.html)
+
+`SageMath` [增强插件](https://github.com/n-WN/sagemath-vscode-enhanced)
 
 > 为什么只甩了个网站呢, 因为这时候的你应该有自己搜集信息的能力了, 在未知领域探索也是能力, 会用工具也是能力
 
@@ -203,16 +198,18 @@ pip install pwntools
 
 ```bash
 # 给 notebook 下的 SageMath 加上打交互题的能力
-%pip install Pwn4Sage
+%pip install pwntools
 ```
 
-同时别的模块也是可以安装进来的, 只需要像👆🏻这条命令一样, 前面加个 `%` 即可
+同时别的模块也是可以安装进来的, 只需要像👆🏻这条命令一样, 前面加个 `%` 即可, 被称为: 魔法命令
+
+交互如果报错, 考虑使用 (精简版)[https://github.com/n-WN/Pwn4Sage] 交互
 
 <br>
 
 ### 配置完成啦!
 
-这时推荐刷题网站: [CryptoHack](https://cryptohack.org/courses/) 做这个平台 `Course` 分类下的题目即可, `buuCTF` 的题目难度没那么梯度, 此阶段不推荐继续在 `buuCTF` 上面刷题
+这时推荐刷题网站: [CryptoHack](https://cryptohack.org/courses/) 做这个平台 `Course` 分类下的题目即可
 
 # **不要为了做题而做题, 更重要的是自己的思考, 长时间自己无法解决一个问题的时候, 这时候可能是你没有学过的一个新知识点, 也有可能是单纯脑子没转(这种情况先去做别的题/事, 不要耗费时间)**
 
