@@ -1014,7 +1014,7 @@ hide:
                 **比赛名称** : [UNbreakable International 2024 - Individual Phase](https://unr24i-international.cyber-edu.co/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-03-22 18:00:00 - 2024-03-24 18:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : bitsentinel (https://ctftime.org/team/280005)  
                 **添加日历** : https://ctftime.org/event/2298.ics  
                 

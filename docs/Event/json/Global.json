@@ -762,7 +762,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://unr24i-international.cyber-edu.co/",
         "比赛标志": "https://ctftime.org/media/events/g5hqjcGuxmbcMSZ9_1.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
         "比赛ID": "1064",
         "比赛状态": "past"
