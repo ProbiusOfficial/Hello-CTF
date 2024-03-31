@@ -214,7 +214,7 @@ comments: true
     **比赛名称** : [Snowfort 2024](https://snowfort2024.cyberscoring.ca/)  
     **比赛形式** : Attack-Defense  
     **比赛时间** : 2024-03-16 23:00:00 - 2024-03-17 07:00:00 UTC+8  
-    **比赛权重** : 22.14  
+    **比赛权重** : 21.25  
     **赛事主办** : Shell We Hack? (https://ctftime.org/team/220236)  
     **添加日历** : https://ctftime.org/event/2260.ics  
     
@@ -340,7 +340,7 @@ comments: true
     **比赛名称** : [osu!gaming CTF 2024](https://www.osugaming.lol/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-03-02 01:00:00 - 2024-03-04 01:00:00 UTC+8  
-    **比赛权重** : 23.89  
+    **比赛权重** : 23.91  
     **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
     **添加日历** : https://ctftime.org/event/2165.ics  
     
@@ -547,7 +547,7 @@ comments: true
     **比赛名称** : [Mapna CTF 2024](https://mapnactf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-01-20 23:00:00 - 2024-01-21 23:00:00 UTC+8  
-    **比赛权重** : 24.57  
+    **比赛权重** : 24.58  
     **赛事主办** : ASIS (https://ctftime.org/team/4140)  
     **添加日历** : https://ctftime.org/event/2205.ics  
     
@@ -574,7 +574,7 @@ comments: true
     **比赛名称** : [UofTCTF 2024](https://ctf.uoftctf.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-01-14 01:00:00 - 2024-01-15 12:59:00 UTC+8  
-    **比赛权重** : 23.75  
+    **比赛权重** : 23.77  
     **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
     **添加日历** : https://ctftime.org/event/2219.ics  
     
