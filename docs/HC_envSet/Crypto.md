@@ -7,52 +7,43 @@ comments: true
 
 ### 前言
 
-> 善于百度, 哪里不懂先去百度, 其实搜索引擎上更推荐 bing 或是 谷歌 (看个人能力?)百度只是搜索解决的统一说辞 , 还有疑惑则去读  <提问的智慧> , 如果依旧不理解, 可以用从 <提问的智慧> 中学到的提问方式来请教别人.
+> 善于百度, 哪里不懂先去百度, 其实搜索引擎上更推荐 `Bing` 或是 `谷歌`, 百度只是要求搜索解决的统一说辞, 还有疑惑则去读 <提问的智慧>, 如果依旧不理解, 可以用从 <提问的智慧> 中学到的提问方式来请教别人.
 
-ida 和编辑器不做限定, 语言可以用 python 入门(但需要任何一门编程语言的编程基础, 无基础请先在 b 站搜索 [翁凯c 语言]( https://www.bilibili.com/video/BV1XZ4y1S7e1/), 随后(如何界定随后呢, 接着往下看)学习[黑马程序员 python](https://www.bilibili.com/video/BV1qW4y1a7fU/) 即可, 学习时间随个人接受程度, 翁凯 c 语言课程全集(总 129p)建议控制在 1 月内掌握其中提到的各种用法, 学到函数后(这时便是上面提到的随后)即可开始同步学习 python), 后续随个人爱好发展..
+ida 和编辑器不做限定, 语言可以用 Python 入门(但需要任何一门编程语言的编程基础, 无基础请先在 b 站搜索 [翁凯c 语言]( https://www.bilibili.com/video/BV1XZ4y1S7e1/), 随后(如何界定随后呢, 接着往下看)学习[黑马程序员 python](https://www.bilibili.com/video/BV1qW4y1a7fU/) 即可, 学习时间随个人接受程度, 翁凯 c 语言课程全集(总 129p)建议控制在 1 个月内掌握其中提到的各种用法, 学到函数后(这时便是上面提到的随后)即可开始同步学习 Python), 后续随个人爱好发展...
 
 > 写这篇工具集合的时候越写越发现没什么是必须这里列出来的, 又容易写的很多, 所以推荐没有编程基础或编程基础薄弱的同学, 速速上此门课, 一周内学完会让你对计算机有个初步之上的认知 [MIT 公开课](https://csdiy.wiki/编程入门/MIT-Missing-Semester/)
 
 ### 初步工具的安装: 
 
-#### 系统或发行版: Ubuntu 20.04 LTS Deskop
+#### 系统或发行版: Arch Linux
 
-随便选的, 如果觉得懂 Linux 可以随便选, 暂时不知道这么多有什么区别就选择 Ubuntu 即可. 安装教程网上有(搜索时注意避开 `CSDN` 就会发现很多宝藏), 自己找, 并不难找
+因其可以方便的安装比较新版本的 SageMath. 安装教程网上有(搜索时注意避开 `CSDN` 就会发现很多宝藏), 自己找, 并不难找
 
-#### 编译器和解释器: gcc, python(Python3)
+#### 编译器和解释器: GCC, Python(Python3)
 
-如果你用了我上面提到的 Ubuntu , 安装这两个工具的时候需要先执行以下命令: 
+如果使用我上面提到的 Arch Linux, 那么安装这两个工具时需要先执行以下命令: 
 
 ```bash
-
-# Ubuntu 终端下执行此命令以更新软件包列表 和 更新可升级项
+# Arch 终端下执行此命令以更新软件包列表 和 更新可升级项
 # sudo 提升权限, 注意: 输入密码的时候是不可见的, 输入完成回车即可
-
-sudo apt update && sudo apt upgrade
-
+sudo pacman -Syu
 ```
 
 ```bash
-
-# Ubuntu 终端下执行此命令以安装 gcc
-
-sudo apt install gcc
-
+# Arch 终端下执行此命令以安装 gcc
+sudo pacman -S gcc
 ```
 
 <br>
 
 ```bash
-
-# Ubuntu 终端下执行此命令以安装 Python3 # 其实是不用安装的 hhh, 因为 Ubuntu 20.04 自带了 Python3.8.x(具体型号忘记了, 小版本差异目前来说对入门没有影响, 等用到新特性的时候自然你也不需要翻此教程了)
-
-sudo apt install python3
-
+# Arch 终端下执行此命令以安装 Python3, Arch Linux 默认安装了 Python3，所以你可能不需要再次安装。
+sudo pacman -S python
 ```
 
-#### 编辑器: vscode
+#### 编辑器: VS Code
 
-前期使用完全可以不安装vscode 下的插件, 当然也可以选择性安装简体中文插件和 clangd 以及 python 插件套装, 其余插件没有是必须安装的, 请不要在配置编辑器方面消耗过多时间
+前期使用完全可以不安装 VS Code 下的插件, 当然也可以选择性安装简体中文插件和 clangd 以及 Python 插件套装, 其余插件没有是必须安装的, 请不要在配置编辑器方面消耗过多时间
 
 同时前期编译和执行程序时均不建议直接使用编辑器或者 ide 自带的一键运行按钮, 本人更推荐直接在终端里进行操作, 下附简单操作, 也当做是对终端的初步熟练, 且此举的时间开销并不大
 
@@ -65,7 +56,6 @@ sudo apt install python3
 # 终端执行
 gcc [options] file...
 ```
-
 
 > ↓ 最佳实践
 ###### 这里假设你的 `c` 源代码叫做 `nihao.c`, 执行这句代码后便会编译执行你想让其编译执行的源代码
@@ -100,7 +90,7 @@ python3 nihao.py
 
 ***
 
-这时基本工具已经准备好(关于Python 的数学模组不要着急 暂时用不少, 遇到了就学习如何手写所需要的函数), 可以开始在 buuCTF 刷题, 刷题时 密码分类中第一页差不多接近一般的时候就可以暂停刷题, 来先把时间用在初等数论的学习了, (时间不紧迫的同时有条件的话可以同时学数学分析)
+这时基本工具已经准备好(关于Python 的数学模组不要着急 暂时用不到, 遇到了就学习如何手动完成所需要的函数), 可以开始在 buuCTF 刷题, 刷题时 密码分类中第一页差不多接近一般的时候就可以暂停刷题, 来先把时间用在初等数论的学习了, (时间不紧迫的同时有条件的话可以同时学数学分析)
 
 <!-- ![Alt text](/workspaces/Hello-CTF/docs/HC_envSet/images/buu/image.png) -->
 
@@ -128,7 +118,7 @@ python3 nihao.py
 
 ↑这个知识列表引用自: [知乎文章: 初学者怎样学习密码学](https://zhuanlan.zhihu.com/p/455104888)
 
-自己看不出来是什么数学原理就搜 `WP`(全称忘了, 含义为题解), 不过前提是自己已经思考过确认一段时间内思考不出来
+自己看不出来是什么数学原理就搜 `WP`(Writeup, 含义为题解), 不过前提是自己已经思考过确认一段时间内思考不出来
 
 ***
 
@@ -142,12 +132,12 @@ python3 nihao.py
 
 ```bash
 # 更新软件包列表
-sudo apt update
+sudo pacman -Syu
 ```
 
 ```bash
 # 安装 pip3, 用以管理 Python3 的模块
-sudo apt install python3-pip
+sudo pacman -S python-pip
 ```
 
 ###### 下面有不知道是什么, 或者不知道怎么使用的模块, 打开 [pypi](https://pypi.org/) 搜索即可
@@ -155,11 +145,6 @@ sudo apt install python3-pip
 ```bash
 # 安装 gmpy2
 pip3 install gmpy2
-```
-
-```bash
-# 安装 python - z3 解方程模块
-pip3 install z3-solver
 ```
 
 ```bash
@@ -182,6 +167,13 @@ pip install owiener
 pip install pwntools
 ```
 
+```bash
+# 安装 python - z3
+pip3 install z3-solver
+```
+
+###### [z3教程](https://microsoft.github.io/z3guide/)
+
 <br>
 
 ##### `SageMath` 配置
@@ -192,9 +184,7 @@ pip install pwntools
 
 > 为什么只甩了个网站呢, 因为这时候的你应该有自己搜集信息的能力了, 在未知领域探索也是能力, 会用工具也是能力
 
-> 依旧建议将其配置到 `Linux` 上, 在本文中的发行版也就是 `Ubuntu`
-
-不过这时在 `nootbook` 下的 `SageMath` 还有一个缺点, 就是 `pwntools` 不能直接在 `nootbook` 下打远程题目, 这时只需要在 `sage` 交互窗口下执行 或 `nootbook` 下的 `SageMath` 里运行↓
+> 依旧建议将其配置到 `Linux`
 
 ```bash
 # 给 notebook 下的 SageMath 加上打交互题的能力
@@ -203,7 +193,7 @@ pip install pwntools
 
 同时别的模块也是可以安装进来的, 只需要像👆🏻这条命令一样, 前面加个 `%` 即可, 被称为: 魔法命令
 
-交互如果报错, 考虑使用 (精简版)[https://github.com/n-WN/Pwn4Sage] 交互
+交互如果报错, 考虑使用 [精简版](https://github.com/n-WN/Pwn4Sage) 交互
 
 <br>
 
