@@ -669,7 +669,7 @@
         "比赛权重": "35.91",
         "赛事主办": "VolgaCTF.org (https://ctftime.org/team/27094)",
         "比赛ID": "52",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "HACKFEST'8 QUALS",
@@ -1857,18 +1857,6 @@
         "比赛权重": "0.00",
         "赛事主办": "ISFCR PESU (https://ctftime.org/team/166645)",
         "比赛ID": "942",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "MUST CTF Qualifier 2023",
-        "比赛时间": "2023-11-18 12:00:00 - 2023-11-18 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2175.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.ccs-security.club/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Computer&Communication Security Club (https://ctftime.org/team/274658)",
-        "比赛ID": "1024",
         "比赛状态": "past"
     }
 ]
