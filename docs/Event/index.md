@@ -301,13 +301,6 @@ hide:
                 **比赛时间** : 2024年05月01日 00:00 - 2024年05月02日 00:00  
                 **其他说明** : 比赛时间未定  
                 
-            ??? Quote "[XYCTF高校新生联合赛 2024](https://www.xyctf.top/)"  
-                **比赛名称** : [XYCTF高校新生联合赛 2024](https://www.xyctf.top/)  
-                **比赛类型** : 团队赛 | 1-3人  
-                **报名时间** : 2024年03月05日 10:00 - 2024年04月01日 09:00  
-                **比赛时间** : 2024年04月01日 10:00 - 2024年05月01日 10:00  
-                **其他说明** : 赛事群：798794707  
-                
             ??? Quote "[第四届红明谷杯（初赛）](https://www.sm.gov.cn/inc/hgbm/)"  
                 **比赛名称** : [第四届红明谷杯（初赛）](https://www.sm.gov.cn/inc/hgbm/)  
                 **比赛类型** : 团队赛 | 1-3 人  
@@ -334,9 +327,9 @@ hide:
                 **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
                 **添加日历** : https://ctftime.org/event/2226.ics  
                 
-            ??? Quote "[RITSEC CTF 2024]()"  
-                [![](https://ctftime.org/media/events/Ritsec-CTF-2024-r1.jpg){ width="200" align=left }]()  
-                **比赛名称** : [RITSEC CTF 2024]()  
+            ??? Quote "[RITSEC CTF 2024](https://ctfd.ritsec.club/)"  
+                [![](https://ctftime.org/media/events/Ritsec-CTF-2024-r1.jpg){ width="200" align=left }](https://ctfd.ritsec.club/)  
+                **比赛名称** : [RITSEC CTF 2024](https://ctfd.ritsec.club/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-04-06 00:00:00 - 2024-04-08 00:00:00 UTC+8  
                 **比赛权重** : 26.98  
@@ -777,7 +770,13 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-    
+            ??? Quote "[XYCTF高校新生联合赛 2024](https://www.xyctf.top/)"  
+                **比赛名称** : [XYCTF高校新生联合赛 2024](https://www.xyctf.top/)  
+                **比赛类型** : 团队赛 | 1-3人  
+                **报名时间** : 2024年03月05日 10:00 - 2024年04月01日 09:00  
+                **比赛时间** : 2024年04月01日 10:00 - 2024年05月01日 10:00  
+                **其他说明** : 赛事群：798794707  
+                
         === "国外赛事"
             ??? Quote "[Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)  
