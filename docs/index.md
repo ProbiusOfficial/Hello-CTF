@@ -78,6 +78,15 @@ hide:
             **赛事主办** : bitsentinel (https://ctftime.org/team/280005)  
             **添加日历** : https://ctftime.org/event/2297.ics  
             
+        ??? Quote "[BelkaCTF #6](https://belkasoft.com/belkactf6/)"  
+            [![](https://ctftime.org/media/events/belkactf6_square.jpg){ width="200" align=left }](https://belkasoft.com/belkactf6/)  
+            **比赛名称** : [BelkaCTF #6](https://belkasoft.com/belkactf6/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-04-05 21:00:00 - 2024-04-07 21:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : TODO: security (https://ctftime.org/team/288184)  
+            **添加日历** : https://ctftime.org/event/2326.ics  
+            
         ??? Quote "[AmateursCTF 2024](https://ctf.amateurs.team/)"  
             [![](https://ctftime.org/media/events/2d6bd602-ecce-47e6-8f53-b352af222287.915ceb9574bb9759b4dd16bf8a744d25_1.jpeg){ width="200" align=left }](https://ctf.amateurs.team/)  
             **比赛名称** : [AmateursCTF 2024](https://ctf.amateurs.team/)  
@@ -95,15 +104,6 @@ hide:
             **比赛权重** : 26.98  
             **赛事主办** : Contagion (https://ctftime.org/team/152691)  
             **添加日历** : https://ctftime.org/event/2291.ics  
-            
-        ??? Quote "[SwampCTF 2024](https://swampctf.com/)"  
-            [![](https://ctftime.org/media/events/swampctf.png){ width="200" align=left }](https://swampctf.com/)  
-            **比赛名称** : [SwampCTF 2024](https://swampctf.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
-            **添加日历** : https://ctftime.org/event/2138.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
