@@ -109,3 +109,19 @@ body {
   font-size: 0.75rem;
 }
 
+* {
+    transition-property: color, background-color;
+    /* 设置过渡的属性 */
+    transition-duration: 0.5s;
+    /* 设置过渡的时间 */
+    transition-timing-function: cubic-bezier(0.01, 0.34, 0.9, 1.14);
+    /* 设置过渡的缓动函数 */
+}
+
+/* 屏蔽过渡效果 */
+p,
+h1,
+h2,
+hr {
+    transition: none !important;
+}
