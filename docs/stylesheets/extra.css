@@ -109,18 +109,3 @@ body {
   font-size: 0.75rem;
 }
 
-
-/* 列表网格样式增加圆角和阴影 */
-.md-typeset .grid.cards>ol>li,
-.md-typeset .grid.cards>ul>li,
-.md-typeset .grid>.card {
-    border: .05rem solid var(--md-default-fg-color--lightest);
-    border-radius: .9rem;
-    display: block;
-    margin: 0;
-    padding: .80rem;
-    transition: border .25s, box-shadow .25s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* 修改阴影效果 */
-    /* box-shadow: 水平偏移量 垂直偏移量 模糊半径 扩散半径 色值; */
-}
