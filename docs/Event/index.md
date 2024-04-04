@@ -903,13 +903,6 @@ hide:
                 **比赛时间** : 2024年02月03日 09:00 - 2024年02月05日 09:00  
                 **其他说明** : TG官方群：https://t.me/ScaleBitAudit  
                 
-            ??? Quote "[第二届N1CTF Junior](https://ctf.junior.nu1l.com/)"  
-                **比赛名称** : [第二届N1CTF Junior](https://ctf.junior.nu1l.com/)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年01月22日 08:00 - 2024年02月03日 00:00  
-                **比赛时间** : 2024年02月03日 09:00 - 2024年02月04日 18:00  
-                **其他说明** : N1CTFJunior是Nu1L Team组织的官方纳新  赛事旨在选拔年轻优秀人才加入Nu1LTeam  QQ群:180885587  
-                
         === "国外赛事"
             ??? Quote "[VolgaCTF 2024 Qualifier](https://q.2024.volgactf.ru/)"  
                 [![](https://ctftime.org/media/events/logo-social-yellow_14.png){ width="200" align=left }](https://q.2024.volgactf.ru/)  
