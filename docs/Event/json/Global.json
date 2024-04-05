@@ -84,18 +84,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Midnight Sun CTF 2024 Quals",
-        "比赛时间": "2024-04-06 18:00:00 - 2024-04-07 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2247.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://midnightsunctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/midnight.png",
-        "比赛权重": "35.74",
-        "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
-        "比赛ID": "246",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "THCon 2k24 CTF",
         "比赛时间": "2024-04-06 18:00:00 - 2024-04-08 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2269.ics",
@@ -189,6 +177,18 @@
         "比赛权重": "22.46",
         "赛事主办": "NUSGreyhats (https://ctftime.org/team/16740)",
         "比赛ID": "778",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "(DELAYED) Midnight Sun CTF 2024 Quals",
+        "比赛时间": "2024-04-20 18:00:00 - 2024-04-21 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2247.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://midnightsunctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/midnight.png",
+        "比赛权重": "35.74",
+        "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
+        "比赛ID": "246",
         "比赛状态": "oncoming"
     },
     {
