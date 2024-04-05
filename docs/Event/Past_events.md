@@ -103,13 +103,6 @@ comments: true
     **比赛时间** : 2024年01月31日 10:00 - 2024年02月06日 10:00  
     **其他说明** : qq群：612995005  适合新手参加  
     
-??? Quote "zkCTF"  
-    **比赛名称** : [zkCTF](https://zkctf.scalebit.xyz)  
-    **比赛类型** : 个人赛 | WEB3  
-    **报名时间** : 2024年01月16日 00:00 - 2024年02月05日 09:00  
-    **比赛时间** : 2024年02月03日 09:00 - 2024年02月05日 09:00  
-    **其他说明** : TG官方群：https://t.me/ScaleBitAudit  
-    
 
 ## 国际赛事
 ??? Quote "[VolgaCTF 2024 Qualifier](https://q.2024.volgactf.ru/)"  
