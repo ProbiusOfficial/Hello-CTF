@@ -60,9 +60,9 @@ comments: true
     **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
     **添加日历** : https://ctftime.org/event/2138.ics  
     
-??? Quote "[TAMUctf 2024](https://tamuctf.com/)"  
-    [![](https://ctftime.org/media/events/TAMUCTF_cmaroon_2.png){ width="200" align=left }](https://tamuctf.com/)  
-    **比赛名称** : [TAMUctf 2024](https://tamuctf.com/)  
+??? Quote "[TAMUctf 2024](http://tamuctf.com/)"  
+    [![](https://ctftime.org/media/events/TAMUCTF_cmaroon_2.png){ width="200" align=left }](http://tamuctf.com/)  
+    **比赛名称** : [TAMUctf 2024](http://tamuctf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8  
     **比赛权重** : 48.25  
