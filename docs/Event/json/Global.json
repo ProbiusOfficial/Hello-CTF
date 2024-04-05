@@ -1,29 +1,5 @@
 [
     {
-        "比赛名称": "SwampCTF 2024",
-        "比赛时间": "2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2138.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://swampctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/swampctf.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Kernel Sanders (https://ctftime.org/team/397)",
-        "比赛ID": "241",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "TAMUctf 2024",
-        "比赛时间": "2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2238.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://tamuctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/TAMUCTF_cmaroon_2.png",
-        "比赛权重": "48.25",
-        "赛事主办": "TAMUctf (https://ctftime.org/team/37721)",
-        "比赛ID": "198",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "DamCTF 2024",
         "比赛时间": "2024-04-06 08:00:00 - 2024-04-08 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2262.ics",
@@ -633,6 +609,30 @@
         "比赛权重": "26.98",
         "赛事主办": "Contagion (https://ctftime.org/team/152691)",
         "比赛ID": "170",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "SwampCTF 2024",
+        "比赛时间": "2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2138.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://swampctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/swampctf.png",
+        "比赛权重": "0",
+        "赛事主办": "Kernel Sanders (https://ctftime.org/team/397)",
+        "比赛ID": "241",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "TAMUctf 2024",
+        "比赛时间": "2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2238.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://tamuctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/TAMUCTF_cmaroon_2.png",
+        "比赛权重": "48.25",
+        "赛事主办": "TAMUctf (https://ctftime.org/team/37721)",
+        "比赛ID": "198",
         "比赛状态": "nowrunning"
     },
     {
