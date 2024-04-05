@@ -1,41 +1,5 @@
 [
     {
-        "比赛名称": "BelkaCTF #6",
-        "比赛时间": "2024-04-05 21:00:00 - 2024-04-07 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2326.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://belkasoft.com/belkactf6/",
-        "比赛标志": "https://ctftime.org/media/events/belkactf6_square.jpg",
-        "比赛权重": "0",
-        "赛事主办": "TODO: security (https://ctftime.org/team/288184)",
-        "比赛ID": "1105",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "AmateursCTF 2024",
-        "比赛时间": "2024-04-05 22:00:00 - 2024-04-10 11:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2226.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.amateurs.team/",
-        "比赛标志": "https://ctftime.org/media/events/2d6bd602-ecce-47e6-8f53-b352af222287.915ceb9574bb9759b4dd16bf8a744d25_1.jpeg",
-        "比赛权重": "24.54",
-        "赛事主办": "les amateurs (https://ctftime.org/team/166729)",
-        "比赛ID": "936",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "RITSEC CTF 2024",
-        "比赛时间": "2024-04-06 00:00:00 - 2024-04-08 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2291.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfd.ritsec.club/",
-        "比赛标志": "https://ctftime.org/media/events/Ritsec-CTF-2024-r1.jpg",
-        "比赛权重": "26.98",
-        "赛事主办": "Contagion (https://ctftime.org/team/152691)",
-        "比赛ID": "170",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "SwampCTF 2024",
         "比赛时间": "2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2138.ics",
@@ -633,6 +597,42 @@
         "比赛权重": "0",
         "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
         "比赛ID": "1064",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "BelkaCTF #6",
+        "比赛时间": "2024-04-05 21:00:00 - 2024-04-07 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2326.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://belkasoft.com/belkactf6/",
+        "比赛标志": "https://ctftime.org/media/events/belkactf6_square.jpg",
+        "比赛权重": "0",
+        "赛事主办": "TODO: security (https://ctftime.org/team/288184)",
+        "比赛ID": "1105",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "AmateursCTF 2024",
+        "比赛时间": "2024-04-05 22:00:00 - 2024-04-10 11:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2226.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.amateurs.team/",
+        "比赛标志": "https://ctftime.org/media/events/2d6bd602-ecce-47e6-8f53-b352af222287.915ceb9574bb9759b4dd16bf8a744d25_1.jpeg",
+        "比赛权重": "24.54",
+        "赛事主办": "les amateurs (https://ctftime.org/team/166729)",
+        "比赛ID": "936",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "RITSEC CTF 2024",
+        "比赛时间": "2024-04-06 00:00:00 - 2024-04-08 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2291.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctfd.ritsec.club/",
+        "比赛标志": "https://ctftime.org/media/events/Ritsec-CTF-2024-r1.jpg",
+        "比赛权重": "26.98",
+        "赛事主办": "Contagion (https://ctftime.org/team/152691)",
+        "比赛ID": "170",
         "比赛状态": "nowrunning"
     },
     {
