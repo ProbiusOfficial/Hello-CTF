@@ -40,3 +40,12 @@ comments: true
     **赛事主办** : bitsentinel (https://ctftime.org/team/280005)  
     **添加日历** : https://ctftime.org/event/2297.ics  
     
+??? Quote "[BelkaCTF #6](https://belkasoft.com/belkactf6/)"  
+    [![](https://ctftime.org/media/events/belkactf6_square.jpg){ width="200" align=left }](https://belkasoft.com/belkactf6/)  
+    **比赛名称** : [BelkaCTF #6](https://belkasoft.com/belkactf6/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-05 21:00:00 - 2024-04-07 21:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : TODO: security (https://ctftime.org/team/288184)  
+    **添加日历** : https://ctftime.org/event/2326.ics  
+    
