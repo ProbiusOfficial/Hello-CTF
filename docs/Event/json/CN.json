@@ -179,17 +179,6 @@
                 "status": 4
             },
             {
-                "name": "L3HCTF 2024",
-                "link": "https://l3hctf2024.xctf.org.cn/",
-                "type": "团队赛",
-                "bmks": "2024年01月24日 00:00",
-                "bmjz": "2024年02月05日 09:00",
-                "bsks": "2024年02月03日 09:00",
-                "bsjs": "2024年02月05日 09:00",
-                "readmore": "QQ群：512066352",
-                "status": 4
-            },
-            {
                 "name": "zkCTF",
                 "link": "https://zkctf.scalebit.xyz",
                 "type": "个人赛 | WEB3",
