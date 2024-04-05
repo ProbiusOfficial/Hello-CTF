@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "UNbreakable International 2024 - Team Phase",
-        "比赛时间": "2024-04-05 18:00:00 - 2024-04-07 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2297.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://unr24t-international.cyber-edu.co/",
-        "比赛标志": "https://ctftime.org/media/events/g5hqjcGuxmbcMSZ9.png",
-        "比赛权重": "0.00",
-        "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
-        "比赛ID": "1064",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "BelkaCTF #6",
         "比赛时间": "2024-04-05 21:00:00 - 2024-04-07 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2326.ics",
@@ -148,7 +136,7 @@
         "比赛时间": "2024-04-19 20:00:00 - 2024-04-21 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2276.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://d3ctf.io/",
+        "比赛链接": "https://d3c.tf/",
         "比赛标志": "https://ctftime.org/media/events/ddd.png",
         "比赛权重": "39.40",
         "赛事主办": "D^3CTF Organizers (https://ctftime.org/team/91096)",
@@ -633,6 +621,18 @@
         "比赛权重": "0",
         "赛事主办": "Exherbo GNU/Linux (https://ctftime.org/team/275214)",
         "比赛ID": "1027",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "UNbreakable International 2024 - Team Phase",
+        "比赛时间": "2024-04-05 18:00:00 - 2024-04-07 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2297.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://unr24t-international.cyber-edu.co/",
+        "比赛标志": "https://ctftime.org/media/events/g5hqjcGuxmbcMSZ9.png",
+        "比赛权重": "0",
+        "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
+        "比赛ID": "1064",
         "比赛状态": "nowrunning"
     },
     {
