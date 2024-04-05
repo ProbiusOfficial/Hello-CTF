@@ -62,15 +62,6 @@ hide:
             **其他说明** : 比赛时间未定  
                 
     === "国外比赛"
-        ??? Quote "[AmateursCTF 2024](https://ctf.amateurs.team/)"  
-            [![](https://ctftime.org/media/events/2d6bd602-ecce-47e6-8f53-b352af222287.915ceb9574bb9759b4dd16bf8a744d25_1.jpeg){ width="200" align=left }](https://ctf.amateurs.team/)  
-            **比赛名称** : [AmateursCTF 2024](https://ctf.amateurs.team/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-04-05 22:00:00 - 2024-04-10 11:00:00 UTC+8  
-            **比赛权重** : 24.54  
-            **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
-            **添加日历** : https://ctftime.org/event/2226.ics  
-            
         ??? Quote "[RITSEC CTF 2024](https://ctfd.ritsec.club/)"  
             [![](https://ctftime.org/media/events/Ritsec-CTF-2024-r1.jpg){ width="200" align=left }](https://ctfd.ritsec.club/)  
             **比赛名称** : [RITSEC CTF 2024](https://ctfd.ritsec.club/)  
@@ -97,6 +88,15 @@ hide:
             **比赛权重** : 48.25  
             **赛事主办** : TAMUctf (https://ctftime.org/team/37721)  
             **添加日历** : https://ctftime.org/event/2238.ics  
+            
+        ??? Quote "[DamCTF 2024](https://damctf.xyz/)"  
+            [![](https://ctftime.org/media/events/DAM-CTF-2020-Icon_1.png){ width="200" align=left }](https://damctf.xyz/)  
+            **比赛名称** : [DamCTF 2024](https://damctf.xyz/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-04-06 08:00:00 - 2024-04-08 08:00:00 UTC+8  
+            **比赛权重** : 47.75  
+            **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
+            **添加日历** : https://ctftime.org/event/2262.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
