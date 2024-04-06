@@ -889,13 +889,6 @@ hide:
                 **比赛时间** : 2024年02月14日 09:30 - 2024年02月14日 17:30  
                 **其他说明** : QQ群：521330139  
                 
-            ??? Quote "[第二届BeginCTF](http://47.100.169.26/)"  
-                **比赛名称** : [第二届BeginCTF](http://47.100.169.26/)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年01月24日 00:00 - 2024年02月06日 10:00  
-                **比赛时间** : 2024年01月31日 10:00 - 2024年02月06日 10:00  
-                **其他说明** : qq群：612995005  适合新手参加  
-                
         === "国外赛事"
             ??? Quote "[VolgaCTF 2024 Qualifier](https://q.2024.volgactf.ru/)"  
                 [![](https://ctftime.org/media/events/logo-social-yellow_14.png){ width="200" align=left }](https://q.2024.volgactf.ru/)  
