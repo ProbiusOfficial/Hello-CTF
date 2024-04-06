@@ -15,24 +15,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[SwampCTF 2024](https://swampctf.com/)"  
-    [![](https://ctftime.org/media/events/swampctf.png){ width="200" align=left }](https://swampctf.com/)  
-    **比赛名称** : [SwampCTF 2024](https://swampctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
-    **添加日历** : https://ctftime.org/event/2138.ics  
-    
-??? Quote "[TAMUctf 2024](http://tamuctf.com/)"  
-    [![](https://ctftime.org/media/events/TAMUCTF_cmaroon_2.png){ width="200" align=left }](http://tamuctf.com/)  
-    **比赛名称** : [TAMUctf 2024](http://tamuctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8  
-    **比赛权重** : 48.25  
-    **赛事主办** : TAMUctf (https://ctftime.org/team/37721)  
-    **添加日历** : https://ctftime.org/event/2238.ics  
-    
 ??? Quote "[DamCTF 2024](https://damctf.xyz/)"  
     [![](https://ctftime.org/media/events/DAM-CTF-2020-Icon_1.png){ width="200" align=left }](https://damctf.xyz/)  
     **比赛名称** : [DamCTF 2024](https://damctf.xyz/)  
