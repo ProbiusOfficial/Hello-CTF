@@ -62,15 +62,6 @@ hide:
             **其他说明** : 比赛时间未定  
                 
     === "国外比赛"
-        ??? Quote "[24@CTF](https://ctf.polycyber.io/)"  
-            [![](https://ctftime.org/media/events/Logo_24CTF_2024_1.png){ width="200" align=left }](https://ctf.polycyber.io/)  
-            **比赛名称** : [24@CTF](https://ctf.polycyber.io/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-04-06 23:30:00 - 2024-04-08 00:30:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
-            **添加日历** : https://ctftime.org/event/2310.ics  
-            
         ??? Quote "[b01lers CTF 2024](https://b01lersc.tf/)"  
             [![](https://ctftime.org/media/events/b01lers-griffen_1.png){ width="200" align=left }](https://b01lersc.tf/)  
             **比赛名称** : [b01lers CTF 2024](https://b01lersc.tf/)  
@@ -97,6 +88,15 @@ hide:
             **比赛权重** : 24.50  
             **赛事主办** : FITSEC (https://ctftime.org/team/65296)  
             **添加日历** : https://ctftime.org/event/2254.ics  
+            
+        ??? Quote "[D^3CTF 2024](https://d3c.tf/)"  
+            [![](https://ctftime.org/media/events/ddd.png){ width="200" align=left }](https://d3c.tf/)  
+            **比赛名称** : [D^3CTF 2024](https://d3c.tf/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-04-19 20:00:00 - 2024-04-21 20:00:00 UTC+8  
+            **比赛权重** : 39.40  
+            **赛事主办** : D^3CTF Organizers (https://ctftime.org/team/91096)  
+            **添加日历** : https://ctftime.org/event/2276.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
