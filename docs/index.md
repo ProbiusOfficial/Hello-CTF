@@ -62,15 +62,6 @@ hide:
             **其他说明** : 比赛时间未定  
                 
     === "国外比赛"
-        ??? Quote "[THCon 2k24 CTF](http://ctf.thcon.party/)"  
-            [![](https://ctftime.org/media/events/logo-desktop.png){ width="200" align=left }](http://ctf.thcon.party/)  
-            **比赛名称** : [THCon 2k24 CTF](http://ctf.thcon.party/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-04-06 18:00:00 - 2024-04-08 18:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : pony7 (https://ctftime.org/team/20769)  
-            **添加日历** : https://ctftime.org/event/2269.ics  
-            
         ??? Quote "[24@CTF](https://ctf.polycyber.io/)"  
             [![](https://ctftime.org/media/events/Logo_24CTF_2024_1.png){ width="200" align=left }](https://ctf.polycyber.io/)  
             **比赛名称** : [24@CTF](https://ctf.polycyber.io/)  
@@ -97,6 +88,15 @@ hide:
             **比赛权重** : 95.19  
             **赛事主办** : Plaid Parliament of Pwning (https://ctftime.org/team/284)  
             **添加日历** : https://ctftime.org/event/2245.ics  
+            
+        ??? Quote "[Space Heroes 2024](https://spaceheroes.ctfd.io/)"  
+            [![](https://ctftime.org/media/events/moon.png){ width="200" align=left }](https://spaceheroes.ctfd.io/)  
+            **比赛名称** : [Space Heroes 2024](https://spaceheroes.ctfd.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-04-13 06:00:00 - 2024-04-15 06:00:00 UTC+8  
+            **比赛权重** : 24.50  
+            **赛事主办** : FITSEC (https://ctftime.org/team/65296)  
+            **添加日历** : https://ctftime.org/event/2254.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

@@ -302,15 +302,6 @@ hide:
                 **其他说明** : 比赛时间未定  
                 
         === "国外赛事"
-            ??? Quote "[THCon 2k24 CTF](http://ctf.thcon.party/)"  
-                [![](https://ctftime.org/media/events/logo-desktop.png){ width="200" align=left }](http://ctf.thcon.party/)  
-                **比赛名称** : [THCon 2k24 CTF](http://ctf.thcon.party/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-06 18:00:00 - 2024-04-08 18:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : pony7 (https://ctftime.org/team/20769)  
-                **添加日历** : https://ctftime.org/event/2269.ics  
-                
             ??? Quote "[24@CTF](https://ctf.polycyber.io/)"  
                 [![](https://ctftime.org/media/events/Logo_24CTF_2024_1.png){ width="200" align=left }](https://ctf.polycyber.io/)  
                 **比赛名称** : [24@CTF](https://ctf.polycyber.io/)  
@@ -795,6 +786,15 @@ hide:
                 **比赛权重** : 47.75  
                 **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
                 **添加日历** : https://ctftime.org/event/2262.ics  
+                
+            ??? Quote "[THCon 2k24 CTF](http://ctf.thcon.party/)"  
+                [![](https://ctftime.org/media/events/logo-desktop.png){ width="200" align=left }](http://ctf.thcon.party/)  
+                **比赛名称** : [THCon 2k24 CTF](http://ctf.thcon.party/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-06 18:00:00 - 2024-04-08 18:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : pony7 (https://ctftime.org/team/20769)  
+                **添加日历** : https://ctftime.org/event/2269.ics  
                 
     === "*已经结束*"
         === "国内赛事"
