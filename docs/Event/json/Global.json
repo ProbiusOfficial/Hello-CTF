@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "DamCTF 2024",
-        "比赛时间": "2024-04-06 08:00:00 - 2024-04-08 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2262.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://damctf.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/DAM-CTF-2020-Icon_1.png",
-        "比赛权重": "47.75",
-        "赛事主办": "OSUSEC (https://ctftime.org/team/12858)",
-        "比赛ID": "423",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "THCon 2k24 CTF",
         "比赛时间": "2024-04-06 18:00:00 - 2024-04-08 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2269.ics",
@@ -633,6 +621,18 @@
         "比赛权重": "48.25",
         "赛事主办": "TAMUctf (https://ctftime.org/team/37721)",
         "比赛ID": "198",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "DamCTF 2024",
+        "比赛时间": "2024-04-06 08:00:00 - 2024-04-08 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2262.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://damctf.xyz/",
+        "比赛标志": "https://ctftime.org/media/events/DAM-CTF-2020-Icon_1.png",
+        "比赛权重": "47.75",
+        "赛事主办": "OSUSEC (https://ctftime.org/team/12858)",
+        "比赛ID": "423",
         "比赛状态": "nowrunning"
     },
     {
