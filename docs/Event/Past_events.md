@@ -98,6 +98,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[UNbreakable International 2024 - Team Phase](https://unr24t-international.cyber-edu.co/)"  
+    [![](https://ctftime.org/media/events/g5hqjcGuxmbcMSZ9.png){ width="200" align=left }](https://unr24t-international.cyber-edu.co/)  
+    **比赛名称** : [UNbreakable International 2024 - Team Phase](https://unr24t-international.cyber-edu.co/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-05 18:00:00 - 2024-04-07 18:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : bitsentinel (https://ctftime.org/team/280005)  
+    **添加日历** : https://ctftime.org/event/2297.ics  
+    
 ??? Quote "[VolgaCTF 2024 Qualifier](https://q.2024.volgactf.ru/)"  
     [![](https://ctftime.org/media/events/logo-social-yellow_14.png){ width="200" align=left }](https://q.2024.volgactf.ru/)  
     **比赛名称** : [VolgaCTF 2024 Qualifier](https://q.2024.volgactf.ru/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : ASEAN Cyber Shield (https://ctftime.org/team/269126)  
     **添加日历** : https://ctftime.org/event/2127.ics  
-    
-??? Quote "[SibirCTF 2023](https://vk.com/sibirctf)"  
-    [![](https://ctftime.org/media/events/glaz2023.jpg){ width="200" align=left }](https://vk.com/sibirctf)  
-    **比赛名称** : [SibirCTF 2023](https://vk.com/sibirctf)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2023-11-19 18:00:00 - 2023-11-20 03:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : keva (https://ctftime.org/team/2980)  
-    **添加日历** : https://ctftime.org/event/2132.ics  
     

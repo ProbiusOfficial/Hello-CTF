@@ -528,18 +528,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "UNbreakable International 2024 - Team Phase",
-        "比赛时间": "2024-04-05 18:00:00 - 2024-04-07 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2297.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://unr24t-international.cyber-edu.co/",
-        "比赛标志": "https://ctftime.org/media/events/g5hqjcGuxmbcMSZ9.png",
-        "比赛权重": "0",
-        "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
-        "比赛ID": "1064",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "BelkaCTF #6",
         "比赛时间": "2024-04-05 21:00:00 - 2024-04-07 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2326.ics",
@@ -634,6 +622,18 @@
         "赛事主办": "PolyCyber (https://ctftime.org/team/212241)",
         "比赛ID": "726",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "UNbreakable International 2024 - Team Phase",
+        "比赛时间": "2024-04-05 18:00:00 - 2024-04-07 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2297.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://unr24t-international.cyber-edu.co/",
+        "比赛标志": "https://ctftime.org/media/events/g5hqjcGuxmbcMSZ9.png",
+        "比赛权重": "0",
+        "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
+        "比赛ID": "1064",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "VolgaCTF 2024 Qualifier",
@@ -1821,18 +1821,6 @@
         "比赛权重": "0.00",
         "赛事主办": "ASEAN Cyber Shield (https://ctftime.org/team/269126)",
         "比赛ID": "990",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SibirCTF 2023",
-        "比赛时间": "2023-11-19 18:00:00 - 2023-11-20 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2132.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://vk.com/sibirctf",
-        "比赛标志": "https://ctftime.org/media/events/glaz2023.jpg",
-        "比赛权重": "25.00",
-        "赛事主办": "keva (https://ctftime.org/team/2980)",
-        "比赛ID": "162",
         "比赛状态": "past"
     }
 ]
