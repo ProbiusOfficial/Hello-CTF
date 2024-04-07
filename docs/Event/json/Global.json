@@ -540,18 +540,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "RITSEC CTF 2024",
-        "比赛时间": "2024-04-06 00:00:00 - 2024-04-08 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2291.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfd.ritsec.club/",
-        "比赛标志": "https://ctftime.org/media/events/Ritsec-CTF-2024-r1.jpg",
-        "比赛权重": "26.98",
-        "赛事主办": "Contagion (https://ctftime.org/team/152691)",
-        "比赛ID": "170",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "SwampCTF 2024",
         "比赛时间": "2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2138.ics",
@@ -610,6 +598,18 @@
         "赛事主办": "PolyCyber (https://ctftime.org/team/212241)",
         "比赛ID": "726",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "RITSEC CTF 2024",
+        "比赛时间": "2024-04-06 00:00:00 - 2024-04-08 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2291.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctfd.ritsec.club/",
+        "比赛标志": "https://ctftime.org/media/events/Ritsec-CTF-2024-r1.jpg",
+        "比赛权重": "26.98",
+        "赛事主办": "Contagion (https://ctftime.org/team/152691)",
+        "比赛ID": "170",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "BelkaCTF #6",
@@ -1797,18 +1797,6 @@
         "比赛权重": "0.00",
         "赛事主办": "ASEAN Cyber Shield (https://ctftime.org/team/269126)",
         "比赛ID": "990",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "5th stage MetaRed CTF Ecuador 2023",
-        "比赛时间": "2023-11-21 23:00:00 - 2023-11-22 22:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2164.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://eventos.metared.org/101614/detail/ctf-internacional-metared-2023-5th-stage.html",
-        "比赛标志": "https://ctftime.org/media/events/Log.png",
-        "比赛权重": "6.67",
-        "赛事主办": "MiTeam (https://ctftime.org/team/168552)",
-        "比赛ID": "653",
         "比赛状态": "past"
     }
 ]
