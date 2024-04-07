@@ -98,6 +98,33 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[24@CTF](https://ctf.polycyber.io/)"  
+    [![](https://ctftime.org/media/events/Logo_24CTF_2024_1.png){ width="200" align=left }](https://ctf.polycyber.io/)  
+    **比赛名称** : [24@CTF](https://ctf.polycyber.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-06 23:30:00 - 2024-04-08 00:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
+    **添加日历** : https://ctftime.org/event/2310.ics  
+    
+??? Quote "[RITSEC CTF 2024](https://ctfd.ritsec.club/)"  
+    [![](https://ctftime.org/media/events/Ritsec-CTF-2024-r1.jpg){ width="200" align=left }](https://ctfd.ritsec.club/)  
+    **比赛名称** : [RITSEC CTF 2024](https://ctfd.ritsec.club/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-06 00:00:00 - 2024-04-08 00:00:00 UTC+8  
+    **比赛权重** : 26.98  
+    **赛事主办** : Contagion (https://ctftime.org/team/152691)  
+    **添加日历** : https://ctftime.org/event/2291.ics  
+    
+??? Quote "[BelkaCTF #6](https://belkasoft.com/belkactf6/)"  
+    [![](https://ctftime.org/media/events/belkactf6_square.jpg){ width="200" align=left }](https://belkasoft.com/belkactf6/)  
+    **比赛名称** : [BelkaCTF #6](https://belkasoft.com/belkactf6/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-05 21:00:00 - 2024-04-07 21:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : TODO: security (https://ctftime.org/team/288184)  
+    **添加日历** : https://ctftime.org/event/2326.ics  
+    
 ??? Quote "[UNbreakable International 2024 - Team Phase](https://unr24t-international.cyber-edu.co/)"  
     [![](https://ctftime.org/media/events/g5hqjcGuxmbcMSZ9.png){ width="200" align=left }](https://unr24t-international.cyber-edu.co/)  
     **比赛名称** : [UNbreakable International 2024 - Team Phase](https://unr24t-international.cyber-edu.co/)  
@@ -970,31 +997,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : CCSIR.org (https://ctftime.org/team/9831)  
     **添加日历** : https://ctftime.org/event/2182.ics  
-    
-??? Quote "[ASEAN Cyber Shield Hacking Contest 2023 (Main)](https://forms.gle/9KcV5WRAutbQqHn48)"  
-    [![](https://ctftime.org/media/events/square.png){ width="200" align=left }](https://forms.gle/9KcV5WRAutbQqHn48)  
-    **比赛名称** : [ASEAN Cyber Shield Hacking Contest 2023 (Main)](https://forms.gle/9KcV5WRAutbQqHn48)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2023-11-23 10:00:00 - 2023-11-24 17:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : ASEAN Cyber Shield (https://ctftime.org/team/269126)  
-    **添加日历** : https://ctftime.org/event/2148.ics  
-    
-??? Quote "[5th stage MetaRed CTF Ecuador 2023](https://eventos.metared.org/101614/detail/ctf-internacional-metared-2023-5th-stage.html)"  
-    [![](https://ctftime.org/media/events/Log.png){ width="200" align=left }](https://eventos.metared.org/101614/detail/ctf-internacional-metared-2023-5th-stage.html)  
-    **比赛名称** : [5th stage MetaRed CTF Ecuador 2023](https://eventos.metared.org/101614/detail/ctf-internacional-metared-2023-5th-stage.html)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-11-21 23:00:00 - 2023-11-22 22:59:59 UTC+8  
-    **比赛权重** : 6.67  
-    **赛事主办** : MiTeam (https://ctftime.org/team/168552)  
-    **添加日历** : https://ctftime.org/event/2164.ics  
-    
-??? Quote "[ASEAN Cyber Shield Hacking Contest 2023 (Preliminary)](https://forms.gle/9KcV5WRAutbQqHn48)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://forms.gle/9KcV5WRAutbQqHn48)  
-    **比赛名称** : [ASEAN Cyber Shield Hacking Contest 2023 (Preliminary)](https://forms.gle/9KcV5WRAutbQqHn48)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-11-21 14:00:00 - 2023-11-22 19:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : ASEAN Cyber Shield (https://ctftime.org/team/269126)  
-    **添加日历** : https://ctftime.org/event/2127.ics  
     
