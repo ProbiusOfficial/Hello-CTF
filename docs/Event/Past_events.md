@@ -98,6 +98,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[24@CTF](https://ctf.polycyber.io/)"  
+    [![](https://ctftime.org/media/events/Logo_24CTF_2024_1.png){ width="200" align=left }](https://ctf.polycyber.io/)  
+    **比赛名称** : [24@CTF](https://ctf.polycyber.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-06 23:30:00 - 2024-04-08 00:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
+    **添加日历** : https://ctftime.org/event/2310.ics  
+    
 ??? Quote "[RITSEC CTF 2024](https://ctfd.ritsec.club/)"  
     [![](https://ctftime.org/media/events/Ritsec-CTF-2024-r1.jpg){ width="200" align=left }](https://ctfd.ritsec.club/)  
     **比赛名称** : [RITSEC CTF 2024](https://ctfd.ritsec.club/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : CCSIR.org (https://ctftime.org/team/9831)  
     **添加日历** : https://ctftime.org/event/2182.ics  
-    
-??? Quote "[ASEAN Cyber Shield Hacking Contest 2023 (Main)](https://forms.gle/9KcV5WRAutbQqHn48)"  
-    [![](https://ctftime.org/media/events/square.png){ width="200" align=left }](https://forms.gle/9KcV5WRAutbQqHn48)  
-    **比赛名称** : [ASEAN Cyber Shield Hacking Contest 2023 (Main)](https://forms.gle/9KcV5WRAutbQqHn48)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2023-11-23 10:00:00 - 2023-11-24 17:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : ASEAN Cyber Shield (https://ctftime.org/team/269126)  
-    **添加日历** : https://ctftime.org/event/2148.ics  
     
