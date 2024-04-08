@@ -107,6 +107,24 @@ comments: true
     **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
     **添加日历** : https://ctftime.org/event/2310.ics  
     
+??? Quote "[SwampCTF 2024](https://swampctf.com/)"  
+    [![](https://ctftime.org/media/events/swampctf.png){ width="200" align=left }](https://swampctf.com/)  
+    **比赛名称** : [SwampCTF 2024](https://swampctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
+    **添加日历** : https://ctftime.org/event/2138.ics  
+    
+??? Quote "[TAMUctf 2024](http://tamuctf.com/)"  
+    [![](https://ctftime.org/media/events/TAMUCTF_cmaroon_2.png){ width="200" align=left }](http://tamuctf.com/)  
+    **比赛名称** : [TAMUctf 2024](http://tamuctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8  
+    **比赛权重** : 48.25  
+    **赛事主办** : TAMUctf (https://ctftime.org/team/37721)  
+    **添加日历** : https://ctftime.org/event/2238.ics  
+    
 ??? Quote "[RITSEC CTF 2024](https://ctfd.ritsec.club/)"  
     [![](https://ctftime.org/media/events/Ritsec-CTF-2024-r1.jpg){ width="200" align=left }](https://ctfd.ritsec.club/)  
     **比赛名称** : [RITSEC CTF 2024](https://ctfd.ritsec.club/)  
@@ -979,22 +997,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : TP-Link (https://ctftime.org/team/273760)  
     **添加日历** : https://ctftime.org/event/2161.ics  
-    
-??? Quote "[GlacierCTF 2023](https://glacierctf.com/)"  
-    [![](https://ctftime.org/media/events/3ae6516246966c8d08c81d3bd5451cfa.png){ width="200" align=left }](https://glacierctf.com/)  
-    **比赛名称** : [GlacierCTF 2023](https://glacierctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-11-25 02:00:00 - 2023-11-27 02:00:00 UTC+8  
-    **比赛权重** : 24.32  
-    **赛事主办** : LosFuzzys (https://ctftime.org/team/8323)  
-    **添加日历** : https://ctftime.org/event/1992.ics  
-    
-??? Quote "[DefCamp CTF Finals 2023](https://dctf23-ad.cyber-edu.co/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://dctf23-ad.cyber-edu.co/)  
-    **比赛名称** : [DefCamp CTF Finals 2023](https://dctf23-ad.cyber-edu.co/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2023-11-23 16:00:00 - 2023-11-24 01:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : CCSIR.org (https://ctftime.org/team/9831)  
-    **添加日历** : https://ctftime.org/event/2182.ics  
     

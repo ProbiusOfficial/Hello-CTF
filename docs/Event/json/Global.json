@@ -540,30 +540,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "SwampCTF 2024",
-        "比赛时间": "2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2138.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://swampctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/swampctf.png",
-        "比赛权重": "0",
-        "赛事主办": "Kernel Sanders (https://ctftime.org/team/397)",
-        "比赛ID": "241",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "TAMUctf 2024",
-        "比赛时间": "2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2238.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://tamuctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/TAMUCTF_cmaroon_2.png",
-        "比赛权重": "48.25",
-        "赛事主办": "TAMUctf (https://ctftime.org/team/37721)",
-        "比赛ID": "198",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "DamCTF 2024",
         "比赛时间": "2024-04-06 08:00:00 - 2024-04-08 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2262.ics",
@@ -597,6 +573,30 @@
         "比赛权重": "0",
         "赛事主办": "PolyCyber (https://ctftime.org/team/212241)",
         "比赛ID": "726",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "SwampCTF 2024",
+        "比赛时间": "2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2138.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://swampctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/swampctf.png",
+        "比赛权重": "0",
+        "赛事主办": "Kernel Sanders (https://ctftime.org/team/397)",
+        "比赛ID": "241",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "TAMUctf 2024",
+        "比赛时间": "2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2238.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://tamuctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/TAMUCTF_cmaroon_2.png",
+        "比赛权重": "48.25",
+        "赛事主办": "TAMUctf (https://ctftime.org/team/37721)",
+        "比赛ID": "198",
         "比赛状态": "past"
     },
     {
@@ -1761,30 +1761,6 @@
         "比赛权重": "25.00",
         "赛事主办": "TP-Link (https://ctftime.org/team/273760)",
         "比赛ID": "1016",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "GlacierCTF 2023",
-        "比赛时间": "2023-11-25 02:00:00 - 2023-11-27 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/1992.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://glacierctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/3ae6516246966c8d08c81d3bd5451cfa.png",
-        "比赛权重": "24.32",
-        "赛事主办": "LosFuzzys (https://ctftime.org/team/8323)",
-        "比赛ID": "863",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DefCamp CTF Finals 2023",
-        "比赛时间": "2023-11-23 16:00:00 - 2023-11-24 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2182.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://dctf23-ad.cyber-edu.co/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "CCSIR.org (https://ctftime.org/team/9831)",
-        "比赛ID": "91",
         "比赛状态": "past"
     }
 ]
