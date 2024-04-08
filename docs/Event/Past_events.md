@@ -107,6 +107,15 @@ comments: true
     **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
     **添加日历** : https://ctftime.org/event/2310.ics  
     
+??? Quote "[DamCTF 2024](https://damctf.xyz/)"  
+    [![](https://ctftime.org/media/events/DAM-CTF-2020-Icon_1.png){ width="200" align=left }](https://damctf.xyz/)  
+    **比赛名称** : [DamCTF 2024](https://damctf.xyz/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-06 08:00:00 - 2024-04-08 08:00:00 UTC+8  
+    **比赛权重** : 47.75  
+    **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
+    **添加日历** : https://ctftime.org/event/2262.ics  
+    
 ??? Quote "[SwampCTF 2024](https://swampctf.com/)"  
     [![](https://ctftime.org/media/events/swampctf.png){ width="200" align=left }](https://swampctf.com/)  
     **比赛名称** : [SwampCTF 2024](https://swampctf.com/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : BIZone (https://ctftime.org/team/32190)  
     **添加日历** : https://ctftime.org/event/2131.ics  
-    
-??? Quote "[TPCTF 2023](https://tpctf2023.xctf.org.cn/)"  
-    [![](https://ctftime.org/media/events/TPCTF_ba-stylenulla.top.png){ width="200" align=left }](https://tpctf2023.xctf.org.cn/)  
-    **比赛名称** : [TPCTF 2023](https://tpctf2023.xctf.org.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-11-25 09:00:00 - 2023-11-27 09:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : TP-Link (https://ctftime.org/team/273760)  
-    **添加日历** : https://ctftime.org/event/2161.ics  
     
