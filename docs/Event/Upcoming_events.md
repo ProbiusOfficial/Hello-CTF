@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Quote "浙江警察学院平航杯电子数据取证比赛"  
+    **比赛名称** : [浙江警察学院平航杯电子数据取证比赛](https://mp.weixin.qq.com/s/ImWNs003Xsh-lruhC_addQ)  
+    **比赛类型** : 团队赛|1-3人  
+    **报名时间** : 2024年04月05日 12:00 - 2024年04月15日 12:00  
+    **比赛时间** : 2024年04月20日 14:00 - 2024年04月20日 18:00  
+    **其他说明** : QQ群：810961465  
+    
 ??? Quote "第二届数据安全大赛暨首届“数信杯”数据安全大赛"  
     **比赛名称** : [第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)  
     **比赛类型** : 团队赛|1-3人  
@@ -190,7 +197,7 @@ comments: true
     [![](https://ctftime.org/media/events/bts2024_logofill_black.png){ width="200" align=left }](https://bts2024.wh.edu.pl/)  
     **比赛名称** : [Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-18 02:00:00 - 2024-05-19 20:00:00 UTC+8  
+    **比赛时间** : 2024-05-18 00:00:00 - 2024-05-19 18:00:00 UTC+8  
     **比赛权重** : 28.30  
     **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
     **添加日历** : https://ctftime.org/event/2289.ics  
