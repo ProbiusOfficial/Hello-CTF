@@ -107,6 +107,15 @@ comments: true
     **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
     **添加日历** : https://ctftime.org/event/2310.ics  
     
+??? Quote "[THCon 2k24 CTF](http://ctf.thcon.party/)"  
+    [![](https://ctftime.org/media/events/logo-desktop.png){ width="200" align=left }](http://ctf.thcon.party/)  
+    **比赛名称** : [THCon 2k24 CTF](http://ctf.thcon.party/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-06 18:00:00 - 2024-04-08 18:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : pony7 (https://ctftime.org/team/20769)  
+    **添加日历** : https://ctftime.org/event/2269.ics  
+    
 ??? Quote "[DamCTF 2024](https://damctf.xyz/)"  
     [![](https://ctftime.org/media/events/DAM-CTF-2020-Icon_1.png){ width="200" align=left }](https://damctf.xyz/)  
     **比赛名称** : [DamCTF 2024](https://damctf.xyz/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 18.00  
     **赛事主办** : Pic0wn (https://ctftime.org/team/6514)  
     **添加日历** : https://ctftime.org/event/2168.ics  
-    
-??? Quote "[CTFZone 2023 Final](http://ctf.bi.zone/)"  
-    [![](https://ctftime.org/media/events/logo2_6.png){ width="200" align=left }](http://ctf.bi.zone/)  
-    **比赛名称** : [CTFZone 2023 Final](http://ctf.bi.zone/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2023-11-25 17:00:00 - 2023-11-26 03:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : BIZone (https://ctftime.org/team/32190)  
-    **添加日历** : https://ctftime.org/event/2131.ics  
     
