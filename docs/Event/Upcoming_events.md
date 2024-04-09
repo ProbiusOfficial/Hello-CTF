@@ -5,6 +5,20 @@ comments: true
 
 ## 国内赛事
 
+??? Quote "ISCC 2024"  
+    **比赛名称** : [ISCC 2024](http://www.isclab.org.cn)  
+    **比赛类型** : 个人赛 | 人脉  
+    **报名时间** : 2024年04月30日 08:00 - 2024年05月25日 08:00  
+    **比赛时间** : 2024年05月01日 08:00 - 2024年05月25日 08:00  
+    **其他说明** : QQ群:619577692 / 852601317 邮箱:iscc2004@163.com  
+    
+??? Quote "第十七届全国大学生信息安全竞赛 - 作品赛"  
+    **比赛名称** : [第十七届全国大学生信息安全竞赛 - 作品赛](http://www.ciscn.cn/competition/securityCompetition?compet_id=39)  
+    **比赛类型** : 作品赛  
+    **报名时间** : 2024年04月07日 23:00 - 2024年06月05日 23:00  
+    **比赛时间** : 2024年04月10日 23:00 - 2024年06月05日 23:00  
+    **其他说明** : 作品赛，不提供更多信息，如有疑问请前往比赛通知页面 http://www.ciscn.cn/competition/securityCompetition?compet_id=39  
+    
 ??? Quote "D^3CTF2024"  
     **比赛名称** : [D^3CTF2024](https://d3c.tf/)  
     **比赛类型** : 团队赛 | Jeopardy  
@@ -29,14 +43,23 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[b01lers CTF 2024](https://b01lersc.tf/)"  
-    [![](https://ctftime.org/media/events/b01lers-griffen_1.png){ width="200" align=left }](https://b01lersc.tf/)  
-    **比赛名称** : [b01lers CTF 2024](https://b01lersc.tf/)  
+??? Quote "[HackPack CTF 2024 - LLM edition](https://hackpack.club/ctf2024/)"  
+    [![](https://ctftime.org/media/events/Screenshot_2024-04-05_at_10.29.44.png){ width="200" align=left }](https://hackpack.club/ctf2024/)  
+    **比赛名称** : [HackPack CTF 2024 - LLM edition](https://hackpack.club/ctf2024/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-12 20:00:00 - 2024-04-14 20:00:00 UTC+8  
-    **比赛权重** : 30.80  
-    **赛事主办** : b01lers (https://ctftime.org/team/11464)  
-    **添加日历** : https://ctftime.org/event/2250.ics  
+    **比赛时间** : 2024-04-13 00:00:00 - 2024-04-13 23:59:59 UTC+8  
+    **比赛权重** : 32.71  
+    **赛事主办** : hackpack (https://ctftime.org/team/25905)  
+    **添加日历** : https://ctftime.org/event/2333.ics  
+    
+??? Quote "[ShunyaCTF Aarambha](https://shunya.ctf.eng.run/)"  
+    [![](https://ctftime.org/media/events/shunyaLogo.png){ width="200" align=left }](https://shunya.ctf.eng.run/)  
+    **比赛名称** : [ShunyaCTF Aarambha](https://shunya.ctf.eng.run/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-13 00:30:00 - 2024-04-14 12:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : nCreeps (https://ctftime.org/team/203035)  
+    **添加日历** : https://ctftime.org/event/2336.ics  
     
 ??? Quote "[PlaidCTF 2024](https://plaidctf.com/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://plaidctf.com/)  
@@ -56,6 +79,42 @@ comments: true
     **赛事主办** : FITSEC (https://ctftime.org/team/65296)  
     **添加日历** : https://ctftime.org/event/2254.ics  
     
+??? Quote "[b01lers CTF 2024](https://b01lersc.tf/)"  
+    [![](https://ctftime.org/media/events/b01lers-griffen_1.png){ width="200" align=left }](https://b01lersc.tf/)  
+    **比赛名称** : [b01lers CTF 2024](https://b01lersc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-13 07:00:00 - 2024-04-15 07:00:00 UTC+8  
+    **比赛权重** : 30.80  
+    **赛事主办** : b01lers (https://ctftime.org/team/11464)  
+    **添加日历** : https://ctftime.org/event/2250.ics  
+    
+??? Quote "[Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/WSUCyberDefenseClub_1.jpg){ width="200" align=left }](https://waynestateuniversity-ctf24.ctfd.io/)  
+    **比赛名称** : [Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-13 21:00:00 - 2024-04-14 05:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : WayneStateCyber (https://ctftime.org/team/135263)  
+    **添加日历** : https://ctftime.org/event/2337.ics  
+    
+??? Quote "[Incognito 5.0](https://ictf5.ninja/)"  
+    [![](https://ctftime.org/media/events/lo.png){ width="200" align=left }](https://ictf5.ninja/)  
+    **比赛名称** : [Incognito 5.0](https://ictf5.ninja/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-16 18:00:00 - 2024-04-17 06:00:00 UTC+8  
+    **比赛权重** : 21.95  
+    **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
+    **添加日历** : https://ctftime.org/event/2316.ics  
+    
+??? Quote "[SpartanCTF 2024](https://spartan.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/zdc_emblem.png){ width="200" align=left }](https://spartan.ctfd.io/)  
+    **比赛名称** : [SpartanCTF 2024](https://spartan.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-18 00:00:00 - 2024-04-22 13:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Zero Day Club (https://ctftime.org/team/286318)  
+    **添加日历** : https://ctftime.org/event/2313.ics  
+    
 ??? Quote "[D^3CTF 2024](https://d3c.tf/)"  
     [![](https://ctftime.org/media/events/ddd.png){ width="200" align=left }](https://d3c.tf/)  
     **比赛名称** : [D^3CTF 2024](https://d3c.tf/)  
@@ -64,6 +123,15 @@ comments: true
     **比赛权重** : 39.40  
     **赛事主办** : D^3CTF Organizers (https://ctftime.org/team/91096)  
     **添加日历** : https://ctftime.org/event/2276.ics  
+    
+??? Quote "[CTF@CIT 2024](https://ctf.cyber-cit.club/)"  
+    [![](https://ctftime.org/media/events/CTF-CIT-ctftime.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
+    **比赛名称** : [CTF@CIT 2024](https://ctf.cyber-cit.club/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-20 05:00:00 - 2024-04-22 03:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
+    **添加日历** : https://ctftime.org/event/2339.ics  
     
 ??? Quote "[UMassCTF 2024](https://ctf.umasscybersec.org/)"  
     [![](https://ctftime.org/media/events/CTF_2.png){ width="200" align=left }](https://ctf.umasscybersec.org/)  
@@ -74,6 +142,24 @@ comments: true
     **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
     **添加日历** : https://ctftime.org/event/2287.ics  
     
+??? Quote "[CPCTF 2024](https://cpctf.space/)"  
+    [![](https://ctftime.org/media/events/624f1650cfdb45fb857a62b9304d4a1c.png){ width="200" align=left }](https://cpctf.space/)  
+    **比赛名称** : [CPCTF 2024](https://cpctf.space/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-20 09:00:00 - 2024-04-21 15:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : traP (https://ctftime.org/team/62510)  
+    **添加日历** : https://ctftime.org/event/2338.ics  
+    
+??? Quote "[AVSS Contest 2024](https://avss.geekcon.top/)"  
+    [![](https://ctftime.org/media/events/AVSS.png){ width="200" align=left }](https://avss.geekcon.top/)  
+    **比赛名称** : [AVSS Contest 2024](https://avss.geekcon.top/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-20 10:00:00 - 2024-04-22 10:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : GEEKCON (https://ctftime.org/team/255059)  
+    **添加日历** : https://ctftime.org/event/2335.ics  
+    
 ??? Quote "[Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
     **比赛名称** : [Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)  
@@ -82,6 +168,15 @@ comments: true
     **比赛权重** : 22.46  
     **赛事主办** : NUSGreyhats (https://ctftime.org/team/16740)  
     **添加日历** : https://ctftime.org/event/2242.ics  
+    
+??? Quote "[Nexus Elites CTF](https://nexusctf.ycfteam.in/)"  
+    [![](https://ctftime.org/media/events/CTF_logo.jpg){ width="200" align=left }](https://nexusctf.ycfteam.in/)  
+    **比赛名称** : [Nexus Elites CTF](https://nexusctf.ycfteam.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : YCF (https://ctftime.org/team/179685)  
+    **添加日历** : https://ctftime.org/event/2331.ics  
     
 ??? Quote "[(DELAYED) Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)"  
     [![](https://ctftime.org/media/events/midnight.png){ width="200" align=left }](https://midnightsunctf.com/)  
@@ -119,6 +214,15 @@ comments: true
     **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
     **添加日历** : https://ctftime.org/event/2271.ics  
     
+??? Quote "[UMDCTF 2024](https://umdctf.io/)"  
+    [![](https://ctftime.org/media/events/logo_95.png){ width="200" align=left }](https://umdctf.io/)  
+    **比赛名称** : [UMDCTF 2024](https://umdctf.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-27 06:00:00 - 2024-04-29 06:00:00 UTC+8  
+    **比赛权重** : 48.92  
+    **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
+    **添加日历** : https://ctftime.org/event/2323.ics  
+    
 ??? Quote "[HACKTHEON SEJONG 2024 Preliminaries](https://hacktheon.org/)"  
     [![](https://ctftime.org/media/events/CTF_2024.JPG){ width="200" align=left }](https://hacktheon.org/)  
     **比赛名称** : [HACKTHEON SEJONG 2024 Preliminaries](https://hacktheon.org/)  
@@ -137,6 +241,15 @@ comments: true
     **赛事主办** : Theori (https://ctftime.org/team/250867)  
     **添加日历** : https://ctftime.org/event/2308.ics  
     
+??? Quote "[UrchinSec Tanzania National CTF MMXXIV](https://ctf.urchinsec.com/)"  
+    [![](https://ctftime.org/media/events/TkH-DDqG_400x400.png){ width="200" align=left }](https://ctf.urchinsec.com/)  
+    **比赛名称** : [UrchinSec Tanzania National CTF MMXXIV](https://ctf.urchinsec.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-27 15:30:00 - 2024-04-29 03:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : UrchinSec (https://ctftime.org/team/175663)  
+    **添加日历** : https://ctftime.org/event/2327.ics  
+    
 ??? Quote "[Midnight Flag - Operation BACKSLASH](https://midnightflag.fr/)"  
     [![](https://ctftime.org/media/events/logo-3848x3084-upscaled.png){ width="200" align=left }](https://midnightflag.fr/)  
     **比赛名称** : [Midnight Flag - Operation BACKSLASH](https://midnightflag.fr/)  
@@ -145,6 +258,15 @@ comments: true
     **比赛权重** : 37.00  
     **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
     **添加日历** : https://ctftime.org/event/2295.ics  
+    
+??? Quote "[CyberSphere CTF](https://securinets.tn/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://securinets.tn/)  
+    **比赛名称** : [CyberSphere CTF](https://securinets.tn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-28 05:00:00 - 2024-04-28 17:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Securinets (https://ctftime.org/team/5084)  
+    **添加日历** : https://ctftime.org/event/2328.ics  
     
 ??? Quote "[LakeCTF Finals 23](https://lakectf.epfl.ch/)"  
     [![](https://ctftime.org/media/events/lakeCTFLogo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
@@ -172,6 +294,24 @@ comments: true
     **比赛权重** : 24.82  
     **赛事主办** : Punk Security (https://ctftime.org/team/212540)  
     **添加日历** : https://ctftime.org/event/2285.ics  
+    
+??? Quote "[TBTL CTF 2024](https://tbtl.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/ctflogo_2.png){ width="200" align=left }](https://tbtl.ctfd.io/)  
+    **比赛名称** : [TBTL CTF 2024](https://tbtl.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-11 06:00:00 - 2024-05-13 06:00:00 UTC+8  
+    **比赛权重** : 22.17  
+    **赛事主办** : TBTL (https://ctftime.org/team/170112)  
+    **添加日历** : https://ctftime.org/event/2324.ics  
+    
+??? Quote "[San Diego CTF 2024](https://sdc.tf/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://sdc.tf/)  
+    **比赛名称** : [San Diego CTF 2024](https://sdc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-11 07:59:59 - 2024-05-13 07:59:59 UTC+8  
+    **比赛权重** : 24.67  
+    **赛事主办** : 3 Prongs And a Computer (https://ctftime.org/team/112558)  
+    **添加日历** : https://ctftime.org/event/2325.ics  
     
 ??? Quote "[CyberSecurityRumble Quals](https://hacking-meisterschaft.de/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://hacking-meisterschaft.de/)  
@@ -209,6 +349,15 @@ comments: true
     **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
     **添加日历** : https://ctftime.org/event/2289.ics  
     
+??? Quote "[TJCTF 2024](https://tjctf.org/)"  
+    [![](https://ctftime.org/media/events/logo_96.png){ width="200" align=left }](https://tjctf.org/)  
+    **比赛名称** : [TJCTF 2024](https://tjctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-18 02:30:00 - 2024-05-20 02:30:00 UTC+8  
+    **比赛权重** : 35.60  
+    **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
+    **添加日历** : https://ctftime.org/event/2321.ics  
+    
 ??? Quote "[R3CTF/YUANHENGCTF 2024](https://ctf2024.r3kapig.com/)"  
     [![](https://ctftime.org/media/events/r3_logo.png){ width="200" align=left }](https://ctf2024.r3kapig.com/)  
     **比赛名称** : [R3CTF/YUANHENGCTF 2024](https://ctf2024.r3kapig.com/)  
@@ -218,6 +367,15 @@ comments: true
     **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
     **添加日历** : https://ctftime.org/event/2273.ics  
     
+??? Quote "[VulnX CTF 2024](https://vulncon.in/)"  
+    [![](https://ctftime.org/media/events/VulnX-Profile_pic.png){ width="200" align=left }](https://vulncon.in/)  
+    **比赛名称** : [VulnX CTF 2024](https://vulncon.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-18 18:30:00 - 2024-05-19 18:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : VulnX (https://ctftime.org/team/117274)  
+    **添加日历** : https://ctftime.org/event/2318.ics  
+    
 ??? Quote "[SAS CTF 2024 Quals](https://ctf.thesascon.com/)"  
     [![](https://ctftime.org/media/events/SAS24_2.png){ width="200" align=left }](https://ctf.thesascon.com/)  
     **比赛名称** : [SAS CTF 2024 Quals](https://ctf.thesascon.com/)  
@@ -226,6 +384,33 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
     **添加日历** : https://ctftime.org/event/2299.ics  
+    
+??? Quote "[HTB Business CTF 2024: The Vault Of Hope](https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474)  
+    **比赛名称** : [HTB Business CTF 2024: The Vault Of Hope](https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-18 21:00:00 - 2024-05-22 21:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
+    **添加日历** : https://ctftime.org/event/2315.ics  
+    
+??? Quote "[Hacky'Nov 0x03](https://hackynov.fr/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://hackynov.fr/)  
+    **比赛名称** : [Hacky'Nov 0x03](https://hackynov.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-18 22:00:00 - 2024-05-19 15:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Hacky'Nov (https://ctftime.org/team/178939)  
+    **添加日历** : https://ctftime.org/event/2319.ics  
+    
+??? Quote "[L3akCTF 2024](https://ctf.l3ak.team/)"  
+    [![](https://ctftime.org/media/events/ctf_final.png){ width="200" align=left }](https://ctf.l3ak.team/)  
+    **比赛名称** : [L3akCTF 2024](https://ctf.l3ak.team/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-24 20:00:00 - 2024-05-26 20:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : L3ak (https://ctftime.org/team/220336)  
+    **添加日历** : https://ctftime.org/event/2322.ics  
     
 ??? Quote "[CrewCTF 2024](https://crewc.tf/)"  
     [![](https://ctftime.org/media/events/THC_new.png){ width="200" align=left }](https://crewc.tf/)  
@@ -290,6 +475,15 @@ comments: true
     **赛事主办** : ASIS (https://ctftime.org/team/4140)  
     **添加日历** : https://ctftime.org/event/2210.ics  
     
+??? Quote "[BrainHack 2024](https://go.gov.sg/dsta-brainhack-signup)"  
+    [![](https://ctftime.org/media/events/807b15_524e092c9d7541589d621cd0e9bf6e4bmv2.jpeg){ width="200" align=left }](https://go.gov.sg/dsta-brainhack-signup)  
+    **比赛名称** : [BrainHack 2024](https://go.gov.sg/dsta-brainhack-signup)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-12 16:00:00 - 2024-06-14 03:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : BrainHack_Organiser (https://ctftime.org/team/287673)  
+    **添加日历** : https://ctftime.org/event/2330.ics  
+    
 ??? Quote "[idekCTF 2024](https://ctf.idek.team/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.idek.team/)  
     **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
@@ -335,6 +529,15 @@ comments: true
     **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
     **添加日历** : https://ctftime.org/event/2275.ics  
     
+??? Quote "[DiceCTF 2024 Finals](https://ctf.dicega.ng/)"  
+    [![](https://ctftime.org/media/events/dicectf_2_1_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
+    **比赛名称** : [DiceCTF 2024 Finals](https://ctf.dicega.ng/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-06-29 22:00:00 - 2024-07-01 06:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
+    **添加日历** : https://ctftime.org/event/2306.ics  
+    
 ??? Quote "[Junior.Crypt.2024 CTF](http://ctf-spcs.mf.grsu.by/)"  
     [![](https://ctftime.org/media/events/logo_NY.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
     **比赛名称** : [Junior.Crypt.2024 CTF](http://ctf-spcs.mf.grsu.by/)  
@@ -361,6 +564,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Interlogica (https://ctftime.org/team/250899)  
     **添加日历** : https://ctftime.org/event/2301.ics  
+    
+??? Quote "[MOCA CTF - Finals](https://moca.camp/ctf/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://moca.camp/ctf/)  
+    **比赛名称** : [MOCA CTF - Finals](https://moca.camp/ctf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-07-14 19:00:00 - 2024-07-15 19:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
+    **添加日历** : https://ctftime.org/event/2294.ics  
     
 ??? Quote "[corCTF 2024](https://ctf.cor.team/)"  
     [![](https://ctftime.org/media/events/corctflogo_3.png){ width="200" align=left }](https://ctf.cor.team/)  
