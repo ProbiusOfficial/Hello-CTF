@@ -40,3 +40,12 @@ comments: true
     **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
     **添加日历** : https://ctftime.org/event/2226.ics  
     
+??? Quote "[GEEK CTF 2024](https://geekctf.geekcon.top/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://geekctf.geekcon.top/)  
+    **比赛名称** : [GEEK CTF 2024](https://geekctf.geekcon.top/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-06 04:00:00 - 2024-04-15 04:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : GEEKCON (https://ctftime.org/team/255059)  
+    **添加日历** : https://ctftime.org/event/2332.ics  
+    

@@ -3,17 +3,6 @@
     "data": {
         "result": [
             {
-                "name": "第十七届全国大学生信息安全竞赛 - 作品赛",
-                "link": "http://www.ciscn.cn/competition/securityCompetition?compet_id=39",
-                "type": "作品赛",
-                "bmks": "2024年04月07日",
-                "bmjz": "2024年06月05日 24:00",
-                "bsks": "2024年04月10日",
-                "bsjs": "2024年06月05日",
-                "readmore": "作品赛，不提供更多信息，如有疑问请前往比赛通知页面 http://www.ciscn.cn/competition/securityCompetition?compet_id=39",
-                "status": "1"
-            },            
-            {
                 "name": "ISCC 2024",
                 "link": "http://www.isclab.org.cn",
                 "type": "个人赛 | 人脉",
@@ -22,8 +11,19 @@
                 "bsks": "2024年05月01日 08:00",
                 "bsjs": "2024年05月25日 08:00",
                 "readmore": "QQ群:619577692 / 852601317 邮箱:iscc2004@163.com",
+                "status": 0
+            },
+            {
+                "name": "第十七届全国大学生信息安全竞赛 - 作品赛",
+                "link": "http://www.ciscn.cn/competition/securityCompetition?compet_id=39",
+                "type": "作品赛",
+                "bmks": "2024年04月07日 23:00",
+                "bmjz": "2024年06月05日 23:00",
+                "bsks": "2024年04月10日 23:00",
+                "bsjs": "2024年06月05日 23:00",
+                "readmore": "作品赛，不提供更多信息，如有疑问请前往比赛通知页面 http://www.ciscn.cn/competition/securityCompetition?compet_id=39",
                 "status": 1
-            },            
+            },
             {
                 "name": "D^3CTF2024",
                 "link": "https://d3c.tf/",
@@ -85,7 +85,7 @@
                 "type": "团队赛 | 1-3 人",
                 "bmks": "2024年03月11日 00:00",
                 "bmjz": "2024年03月31日 00:00",
-                "bsks": "2024年04月03日 9:00",
+                "bsks": "2024年04月03日 09:00",
                 "bsjs": "2024年04月03日 18:00",
                 "readmore": "赛事交流QQ群：458469559 ；主办单位：数字中国建设峰会组委会 承办单位：福建省数字福建建设领导小组办公室 三明市人民政府",
                 "status": 4
