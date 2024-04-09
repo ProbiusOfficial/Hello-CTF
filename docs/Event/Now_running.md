@@ -5,13 +5,6 @@ comments: true
 
 ## 国内赛事
 
-??? Quote "GEEK CTF 2024"  
-    **比赛名称** : [GEEK CTF 2024](https://geekctf.geekcon.top/)  
-    **比赛类型** : 个人赛 | Jeopardy  
-    **报名时间** : 2024年04月05日 18:00 - 2024年04月05日 19:00  
-    **比赛时间** : 2024年04月05日 20:00 - 2024年04月14日 20:00  
-    **其他说明** : https://discord.gg/dWvBrfwAmF  
-    
 ??? Quote "XYCTF高校新生联合赛 2024"  
     **比赛名称** : [XYCTF高校新生联合赛 2024](https://www.xyctf.top/)  
     **比赛类型** : 团队赛 | 1-3人  
