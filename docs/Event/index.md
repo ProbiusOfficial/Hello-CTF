@@ -955,15 +955,6 @@ hide:
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
                 
-            ??? Quote "[AmateursCTF 2024](https://ctf.amateurs.team/)"  
-                [![](https://ctftime.org/media/events/2d6bd602-ecce-47e6-8f53-b352af222287.915ceb9574bb9759b4dd16bf8a744d25_1.jpeg){ width="200" align=left }](https://ctf.amateurs.team/)  
-                **比赛名称** : [AmateursCTF 2024](https://ctf.amateurs.team/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-05 22:00:00 - 2024-04-10 11:00:00 UTC+8  
-                **比赛权重** : 24.54  
-                **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
-                **添加日历** : https://ctftime.org/event/2226.ics  
-                
             ??? Quote "[GEEK CTF 2024](https://geekctf.geekcon.top/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://geekctf.geekcon.top/)  
                 **比赛名称** : [GEEK CTF 2024](https://geekctf.geekcon.top/)  
@@ -1120,6 +1111,15 @@ hide:
                 **比赛权重** : 26.98  
                 **赛事主办** : Contagion (https://ctftime.org/team/152691)  
                 **添加日历** : https://ctftime.org/event/2291.ics  
+                
+            ??? Quote "[AmateursCTF 2024](https://ctf.amateurs.team/)"  
+                [![](https://ctftime.org/media/events/2d6bd602-ecce-47e6-8f53-b352af222287.915ceb9574bb9759b4dd16bf8a744d25_1.jpeg){ width="200" align=left }](https://ctf.amateurs.team/)  
+                **比赛名称** : [AmateursCTF 2024](https://ctf.amateurs.team/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-05 22:00:00 - 2024-04-10 11:00:00 UTC+8  
+                **比赛权重** : 24.54  
+                **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
+                **添加日历** : https://ctftime.org/event/2226.ics  
                 
             ??? Quote "[BelkaCTF #6](https://belkasoft.com/belkactf6/)"  
                 [![](https://ctftime.org/media/events/belkactf6_square.jpg){ width="200" align=left }](https://belkasoft.com/belkactf6/)  
@@ -1957,15 +1957,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
                 **添加日历** : https://ctftime.org/event/2198.ics  
-                
-            ??? Quote "[M*CTF 2023 Junior Finals](https://mctf.mtuci.ru/)"  
-                [![](https://ctftime.org/media/events/Immagine_PNG_1.png){ width="200" align=left }](https://mctf.mtuci.ru/)  
-                **比赛名称** : [M*CTF 2023 Junior Finals](https://mctf.mtuci.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-12-02 15:00:00 - 2023-12-02 23:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-                **添加日历** : https://ctftime.org/event/2197.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
