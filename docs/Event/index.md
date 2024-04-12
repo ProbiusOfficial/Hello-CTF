@@ -351,15 +351,6 @@ hide:
                 **其他说明** : 比赛时间未定  
                 
         === "国外赛事"
-            ??? Quote "[ShunyaCTF Aarambha](https://shunya.ctf.eng.run/)"  
-                [![](https://ctftime.org/media/events/shunyaLogo.png){ width="200" align=left }](https://shunya.ctf.eng.run/)  
-                **比赛名称** : [ShunyaCTF Aarambha](https://shunya.ctf.eng.run/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-13 00:30:00 - 2024-04-14 12:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : nCreeps (https://ctftime.org/team/203035)  
-                **添加日历** : https://ctftime.org/event/2336.ics  
-                
             ??? Quote "[PlaidCTF 2024](https://plaidctf.com/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://plaidctf.com/)  
                 **比赛名称** : [PlaidCTF 2024](https://plaidctf.com/)  
@@ -981,6 +972,15 @@ hide:
                 **比赛权重** : 32.71  
                 **赛事主办** : hackpack (https://ctftime.org/team/25905)  
                 **添加日历** : https://ctftime.org/event/2333.ics  
+                
+            ??? Quote "[ShunyaCTF Aarambha](https://shunya.ctf.eng.run/)"  
+                [![](https://ctftime.org/media/events/shunyaLogo.png){ width="200" align=left }](https://shunya.ctf.eng.run/)  
+                **比赛名称** : [ShunyaCTF Aarambha](https://shunya.ctf.eng.run/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-13 00:30:00 - 2024-04-14 12:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : nCreeps (https://ctftime.org/team/203035)  
+                **添加日历** : https://ctftime.org/event/2336.ics  
                 
     === "*已经结束*"
         === "国内赛事"
