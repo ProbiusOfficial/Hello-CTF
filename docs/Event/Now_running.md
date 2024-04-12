@@ -60,3 +60,12 @@ comments: true
     **赛事主办** : Plaid Parliament of Pwning (https://ctftime.org/team/284)  
     **添加日历** : https://ctftime.org/event/2245.ics  
     
+??? Quote "[Space Heroes 2024](https://spaceheroes.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/moon.png){ width="200" align=left }](https://spaceheroes.ctfd.io/)  
+    **比赛名称** : [Space Heroes 2024](https://spaceheroes.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-13 06:00:00 - 2024-04-15 06:00:00 UTC+8  
+    **比赛权重** : 24.50  
+    **赛事主办** : FITSEC (https://ctftime.org/team/65296)  
+    **添加日历** : https://ctftime.org/event/2254.ics  
+    
