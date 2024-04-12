@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "HackPack CTF 2024 - LLM edition",
-        "比赛时间": "2024-04-13 00:00:00 - 2024-04-13 23:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2333.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hackpack.club/ctf2024/",
-        "比赛标志": "https://ctftime.org/media/events/Screenshot_2024-04-05_at_10.29.44.png",
-        "比赛权重": "32.71",
-        "赛事主办": "hackpack (https://ctftime.org/team/25905)",
-        "比赛ID": "443",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "ShunyaCTF Aarambha",
         "比赛时间": "2024-04-13 00:30:00 - 2024-04-14 12:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2336.ics",
@@ -825,6 +813,18 @@
         "比赛权重": "0",
         "赛事主办": "GEEKCON (https://ctftime.org/team/255059)",
         "比赛ID": "1104",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "HackPack CTF 2024 - LLM edition",
+        "比赛时间": "2024-04-13 00:00:00 - 2024-04-13 23:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2333.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://hackpack.club/ctf2024/",
+        "比赛标志": "https://ctftime.org/media/events/Screenshot_2024-04-05_at_10.29.44.png",
+        "比赛权重": "32.71",
+        "赛事主办": "hackpack (https://ctftime.org/team/25905)",
+        "比赛ID": "443",
         "比赛状态": "nowrunning"
     },
     {
