@@ -43,15 +43,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[PlaidCTF 2024](https://plaidctf.com/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://plaidctf.com/)  
-    **比赛名称** : [PlaidCTF 2024](https://plaidctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-13 05:00:00 - 2024-04-15 05:00:00 UTC+8  
-    **比赛权重** : 95.19  
-    **赛事主办** : Plaid Parliament of Pwning (https://ctftime.org/team/284)  
-    **添加日历** : https://ctftime.org/event/2245.ics  
-    
 ??? Quote "[Space Heroes 2024](https://spaceheroes.ctfd.io/)"  
     [![](https://ctftime.org/media/events/moon.png){ width="200" align=left }](https://spaceheroes.ctfd.io/)  
     **比赛名称** : [Space Heroes 2024](https://spaceheroes.ctfd.io/)  

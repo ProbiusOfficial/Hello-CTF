@@ -51,3 +51,12 @@ comments: true
     **赛事主办** : nCreeps (https://ctftime.org/team/203035)  
     **添加日历** : https://ctftime.org/event/2336.ics  
     
+??? Quote "[PlaidCTF 2024](https://plaidctf.com/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://plaidctf.com/)  
+    **比赛名称** : [PlaidCTF 2024](https://plaidctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-13 05:00:00 - 2024-04-15 05:00:00 UTC+8  
+    **比赛权重** : 95.19  
+    **赛事主办** : Plaid Parliament of Pwning (https://ctftime.org/team/284)  
+    **添加日历** : https://ctftime.org/event/2245.ics  
+    
