@@ -43,24 +43,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[HackPack CTF 2024 - LLM edition](https://hackpack.club/ctf2024/)"  
-    [![](https://ctftime.org/media/events/Screenshot_2024-04-05_at_10.29.44.png){ width="200" align=left }](https://hackpack.club/ctf2024/)  
-    **比赛名称** : [HackPack CTF 2024 - LLM edition](https://hackpack.club/ctf2024/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-13 00:00:00 - 2024-04-13 23:59:59 UTC+8  
-    **比赛权重** : 32.71  
-    **赛事主办** : hackpack (https://ctftime.org/team/25905)  
-    **添加日历** : https://ctftime.org/event/2333.ics  
-    
-??? Quote "[ShunyaCTF Aarambha](https://shunya.ctf.eng.run/)"  
-    [![](https://ctftime.org/media/events/shunyaLogo.png){ width="200" align=left }](https://shunya.ctf.eng.run/)  
-    **比赛名称** : [ShunyaCTF Aarambha](https://shunya.ctf.eng.run/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-13 00:30:00 - 2024-04-14 12:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : nCreeps (https://ctftime.org/team/203035)  
-    **添加日历** : https://ctftime.org/event/2336.ics  
-    
 ??? Quote "[PlaidCTF 2024](https://plaidctf.com/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://plaidctf.com/)  
     **比赛名称** : [PlaidCTF 2024](https://plaidctf.com/)  
@@ -87,6 +69,15 @@ comments: true
     **比赛权重** : 30.80  
     **赛事主办** : b01lers (https://ctftime.org/team/11464)  
     **添加日历** : https://ctftime.org/event/2250.ics  
+    
+??? Quote "[CybHackCTF 2024 Spring](https://event.kibhackctf.ru/)"  
+    [![](https://ctftime.org/media/events/logo_98.png){ width="200" align=left }](https://event.kibhackctf.ru/)  
+    **比赛名称** : [CybHackCTF 2024 Spring](https://event.kibhackctf.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-13 17:00:00 - 2024-04-14 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : CybHackCTF (https://ctftime.org/team/278998)  
+    **添加日历** : https://ctftime.org/event/2344.ics  
     
 ??? Quote "[Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)"  
     [![](https://ctftime.org/media/events/WSUCyberDefenseClub_1.jpg){ width="200" align=left }](https://waynestateuniversity-ctf24.ctfd.io/)  
