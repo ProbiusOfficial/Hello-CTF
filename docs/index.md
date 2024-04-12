@@ -83,15 +83,6 @@ hide:
             **其他说明** : 比赛时间未定  
                 
     === "国外比赛"
-        ??? Quote "[b01lers CTF 2024](https://b01lersc.tf/)"  
-            [![](https://ctftime.org/media/events/b01lers-griffen_1.png){ width="200" align=left }](https://b01lersc.tf/)  
-            **比赛名称** : [b01lers CTF 2024](https://b01lersc.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-04-13 07:00:00 - 2024-04-15 07:00:00 UTC+8  
-            **比赛权重** : 30.80  
-            **赛事主办** : b01lers (https://ctftime.org/team/11464)  
-            **添加日历** : https://ctftime.org/event/2250.ics  
-            
         ??? Quote "[CybHackCTF 2024 Spring](https://event.kibhackctf.ru/)"  
             [![](https://ctftime.org/media/events/logo_98.png){ width="200" align=left }](https://event.kibhackctf.ru/)  
             **比赛名称** : [CybHackCTF 2024 Spring](https://event.kibhackctf.ru/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 21.95  
             **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
             **添加日历** : https://ctftime.org/event/2316.ics  
+            
+        ??? Quote "[SpartanCTF 2024](https://spartan.ctfd.io/)"  
+            [![](https://ctftime.org/media/events/zdc_emblem.png){ width="200" align=left }](https://spartan.ctfd.io/)  
+            **比赛名称** : [SpartanCTF 2024](https://spartan.ctfd.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-04-18 00:00:00 - 2024-04-22 13:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Zero Day Club (https://ctftime.org/team/286318)  
+            **添加日历** : https://ctftime.org/event/2313.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

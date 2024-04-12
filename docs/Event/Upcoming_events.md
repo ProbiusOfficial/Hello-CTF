@@ -43,15 +43,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[b01lers CTF 2024](https://b01lersc.tf/)"  
-    [![](https://ctftime.org/media/events/b01lers-griffen_1.png){ width="200" align=left }](https://b01lersc.tf/)  
-    **比赛名称** : [b01lers CTF 2024](https://b01lersc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-13 07:00:00 - 2024-04-15 07:00:00 UTC+8  
-    **比赛权重** : 30.80  
-    **赛事主办** : b01lers (https://ctftime.org/team/11464)  
-    **添加日历** : https://ctftime.org/event/2250.ics  
-    
 ??? Quote "[CybHackCTF 2024 Spring](https://event.kibhackctf.ru/)"  
     [![](https://ctftime.org/media/events/logo_98.png){ width="200" align=left }](https://event.kibhackctf.ru/)  
     **比赛名称** : [CybHackCTF 2024 Spring](https://event.kibhackctf.ru/)  
