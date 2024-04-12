@@ -576,6 +576,15 @@ hide:
                 **赛事主办** : Securinets (https://ctftime.org/team/5084)  
                 **添加日历** : https://ctftime.org/event/2328.ics  
                 
+            ??? Quote "[Cybercoliseum Ⅲ](https://codeby.games/cybercoliseum)"  
+                [![](https://ctftime.org/media/events/logo-cdb.png){ width="200" align=left }](https://codeby.games/cybercoliseum)  
+                **比赛名称** : [Cybercoliseum Ⅲ](https://codeby.games/cybercoliseum)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-28 15:00:00 - 2024-04-30 03:00:00 UTC+8  
+                **比赛权重** : 20.95  
+                **赛事主办** : Codeby Games (https://ctftime.org/team/299486)  
+                **添加日历** : https://ctftime.org/event/2341.ics  
+                
             ??? Quote "[LakeCTF Finals 23](https://lakectf.epfl.ch/)"  
                 [![](https://ctftime.org/media/events/lakeCTFLogo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
                 **比赛名称** : [LakeCTF Finals 23](https://lakectf.epfl.ch/)  
