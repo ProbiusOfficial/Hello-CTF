@@ -744,18 +744,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "HackPack CTF 2024 - LLM edition",
-        "比赛时间": "2024-04-13 00:00:00 - 2024-04-13 23:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2333.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hackpack.club/ctf2024/",
-        "比赛标志": "https://ctftime.org/media/events/Screenshot_2024-04-05_at_10.29.44.png",
-        "比赛权重": "32.71",
-        "赛事主办": "hackpack (https://ctftime.org/team/25905)",
-        "比赛ID": "443",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "ShunyaCTF Aarambha",
         "比赛时间": "2024-04-13 00:30:00 - 2024-04-14 12:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2336.ics",
@@ -826,6 +814,18 @@
         "赛事主办": "WayneStateCyber (https://ctftime.org/team/135263)",
         "比赛ID": "921",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "HackPack CTF 2024 - LLM edition",
+        "比赛时间": "2024-04-13 00:00:00 - 2024-04-13 23:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2333.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://hackpack.club/ctf2024/",
+        "比赛标志": "https://ctftime.org/media/events/Screenshot_2024-04-05_at_10.29.44.png",
+        "比赛权重": "32.71",
+        "赛事主办": "hackpack (https://ctftime.org/team/25905)",
+        "比赛ID": "443",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "24@CTF",
@@ -2013,18 +2013,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Group-IB (https://ctftime.org/team/273085)",
         "比赛ID": "1014",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "M*CTF 2023 Finals",
-        "比赛时间": "2023-12-03 15:00:00 - 2023-12-04 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2198.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://mctf.mtuci.ru/",
-        "比赛标志": "https://ctftime.org/media/events/Immagine_PNG_2.png",
-        "比赛权重": "0.00",
-        "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
-        "比赛ID": "164",
         "比赛状态": "past"
     }
 ]
