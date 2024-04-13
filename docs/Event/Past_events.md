@@ -98,6 +98,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/WSUCyberDefenseClub_1.jpg){ width="200" align=left }](https://waynestateuniversity-ctf24.ctfd.io/)  
+    **比赛名称** : [Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-13 21:00:00 - 2024-04-14 05:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : WayneStateCyber (https://ctftime.org/team/135263)  
+    **添加日历** : https://ctftime.org/event/2337.ics  
+    
 ??? Quote "[HackPack CTF 2024 - LLM edition](https://hackpack.club/ctf2024/)"  
     [![](https://ctftime.org/media/events/Screenshot_2024-04-05_at_10.29.44.png){ width="200" align=left }](https://hackpack.club/ctf2024/)  
     **比赛名称** : [HackPack CTF 2024 - LLM edition](https://hackpack.club/ctf2024/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 24.71  
     **赛事主办** : Hackappatoi (https://ctftime.org/team/140428)  
     **添加日历** : https://ctftime.org/event/2163.ics  
-    
-??? Quote "[HUNTING SEASON: GROUP-IB 20TH ANNIVERSARY CTF](https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime)"  
-    [![](https://ctftime.org/media/events/InstaTelega__1080x1080_12.png){ width="200" align=left }](https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime)  
-    **比赛名称** : [HUNTING SEASON: GROUP-IB 20TH ANNIVERSARY CTF](https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-07 17:00:00 - 2023-12-07 21:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Group-IB (https://ctftime.org/team/273085)  
-    **添加日历** : https://ctftime.org/event/2177.ics  
     

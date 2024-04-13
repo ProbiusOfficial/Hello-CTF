@@ -813,7 +813,7 @@
         "比赛权重": "0.00",
         "赛事主办": "WayneStateCyber (https://ctftime.org/team/135263)",
         "比赛ID": "921",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "HackPack CTF 2024 - LLM edition",
@@ -2001,18 +2001,6 @@
         "比赛权重": "24.71",
         "赛事主办": "Hackappatoi (https://ctftime.org/team/140428)",
         "比赛ID": "870",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "HUNTING SEASON: GROUP-IB 20TH ANNIVERSARY CTF",
-        "比赛时间": "2023-12-07 17:00:00 - 2023-12-07 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2177.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://go.group-ib.com/ctf-2023?utm_source=&utm_campaign=ctf-2023&utm_medium=&utm_content=ctftime",
-        "比赛标志": "https://ctftime.org/media/events/InstaTelega__1080x1080_12.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Group-IB (https://ctftime.org/team/273085)",
-        "比赛ID": "1014",
         "比赛状态": "past"
     }
 ]
