@@ -98,6 +98,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[HackPack CTF 2024 - LLM edition](https://hackpack.club/ctf2024/)"  
+    [![](https://ctftime.org/media/events/Screenshot_2024-04-05_at_10.29.44.png){ width="200" align=left }](https://hackpack.club/ctf2024/)  
+    **比赛名称** : [HackPack CTF 2024 - LLM edition](https://hackpack.club/ctf2024/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-13 00:00:00 - 2024-04-13 23:59:59 UTC+8  
+    **比赛权重** : 32.71  
+    **赛事主办** : hackpack (https://ctftime.org/team/25905)  
+    **添加日历** : https://ctftime.org/event/2333.ics  
+    
 ??? Quote "[24@CTF](https://ctf.polycyber.io/)"  
     [![](https://ctftime.org/media/events/Logo_24CTF_2024_1.png){ width="200" align=left }](https://ctf.polycyber.io/)  
     **比赛名称** : [24@CTF](https://ctf.polycyber.io/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Group-IB (https://ctftime.org/team/273085)  
     **添加日历** : https://ctftime.org/event/2177.ics  
-    
-??? Quote "[M*CTF 2023 Finals](https://mctf.mtuci.ru/)"  
-    [![](https://ctftime.org/media/events/Immagine_PNG_2.png){ width="200" align=left }](https://mctf.mtuci.ru/)  
-    **比赛名称** : [M*CTF 2023 Finals](https://mctf.mtuci.ru/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2023-12-03 15:00:00 - 2023-12-04 00:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-    **添加日历** : https://ctftime.org/event/2198.ics  
     

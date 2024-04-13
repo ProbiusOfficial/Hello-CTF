@@ -33,15 +33,6 @@ comments: true
     **赛事主办** : GEEKCON (https://ctftime.org/team/255059)  
     **添加日历** : https://ctftime.org/event/2332.ics  
     
-??? Quote "[HackPack CTF 2024 - LLM edition](https://hackpack.club/ctf2024/)"  
-    [![](https://ctftime.org/media/events/Screenshot_2024-04-05_at_10.29.44.png){ width="200" align=left }](https://hackpack.club/ctf2024/)  
-    **比赛名称** : [HackPack CTF 2024 - LLM edition](https://hackpack.club/ctf2024/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-13 00:00:00 - 2024-04-13 23:59:59 UTC+8  
-    **比赛权重** : 32.71  
-    **赛事主办** : hackpack (https://ctftime.org/team/25905)  
-    **添加日历** : https://ctftime.org/event/2333.ics  
-    
 ??? Quote "[ShunyaCTF Aarambha](https://shunya.ctf.eng.run/)"  
     [![](https://ctftime.org/media/events/shunyaLogo.png){ width="200" align=left }](https://shunya.ctf.eng.run/)  
     **比赛名称** : [ShunyaCTF Aarambha](https://shunya.ctf.eng.run/)  
@@ -86,4 +77,13 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : CybHackCTF (https://ctftime.org/team/278998)  
     **添加日历** : https://ctftime.org/event/2344.ics  
+    
+??? Quote "[Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/WSUCyberDefenseClub_1.jpg){ width="200" align=left }](https://waynestateuniversity-ctf24.ctfd.io/)  
+    **比赛名称** : [Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-13 21:00:00 - 2024-04-14 05:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : WayneStateCyber (https://ctftime.org/team/135263)  
+    **添加日历** : https://ctftime.org/event/2337.ics  
     

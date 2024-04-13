@@ -351,15 +351,6 @@ hide:
                 **其他说明** : 比赛时间未定  
                 
         === "国外赛事"
-            ??? Quote "[Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/WSUCyberDefenseClub_1.jpg){ width="200" align=left }](https://waynestateuniversity-ctf24.ctfd.io/)  
-                **比赛名称** : [Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-13 21:00:00 - 2024-04-14 05:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : WayneStateCyber (https://ctftime.org/team/135263)  
-                **添加日历** : https://ctftime.org/event/2337.ics  
-                
             ??? Quote "[Incognito 5.0](https://ictf5.ninja/)"  
                 [![](https://ctftime.org/media/events/lo.png){ width="200" align=left }](https://ictf5.ninja/)  
                 **比赛名称** : [Incognito 5.0](https://ictf5.ninja/)  
@@ -928,15 +919,6 @@ hide:
                 **赛事主办** : GEEKCON (https://ctftime.org/team/255059)  
                 **添加日历** : https://ctftime.org/event/2332.ics  
                 
-            ??? Quote "[HackPack CTF 2024 - LLM edition](https://hackpack.club/ctf2024/)"  
-                [![](https://ctftime.org/media/events/Screenshot_2024-04-05_at_10.29.44.png){ width="200" align=left }](https://hackpack.club/ctf2024/)  
-                **比赛名称** : [HackPack CTF 2024 - LLM edition](https://hackpack.club/ctf2024/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-13 00:00:00 - 2024-04-13 23:59:59 UTC+8  
-                **比赛权重** : 32.71  
-                **赛事主办** : hackpack (https://ctftime.org/team/25905)  
-                **添加日历** : https://ctftime.org/event/2333.ics  
-                
             ??? Quote "[ShunyaCTF Aarambha](https://shunya.ctf.eng.run/)"  
                 [![](https://ctftime.org/media/events/shunyaLogo.png){ width="200" align=left }](https://shunya.ctf.eng.run/)  
                 **比赛名称** : [ShunyaCTF Aarambha](https://shunya.ctf.eng.run/)  
@@ -981,6 +963,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : CybHackCTF (https://ctftime.org/team/278998)  
                 **添加日历** : https://ctftime.org/event/2344.ics  
+                
+            ??? Quote "[Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)"  
+                [![](https://ctftime.org/media/events/WSUCyberDefenseClub_1.jpg){ width="200" align=left }](https://waynestateuniversity-ctf24.ctfd.io/)  
+                **比赛名称** : [Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-13 21:00:00 - 2024-04-14 05:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : WayneStateCyber (https://ctftime.org/team/135263)  
+                **添加日历** : https://ctftime.org/event/2337.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -1076,6 +1067,15 @@ hide:
                 **其他说明** : QQ群：521330139  
                 
         === "国外赛事"
+            ??? Quote "[HackPack CTF 2024 - LLM edition](https://hackpack.club/ctf2024/)"  
+                [![](https://ctftime.org/media/events/Screenshot_2024-04-05_at_10.29.44.png){ width="200" align=left }](https://hackpack.club/ctf2024/)  
+                **比赛名称** : [HackPack CTF 2024 - LLM edition](https://hackpack.club/ctf2024/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-13 00:00:00 - 2024-04-13 23:59:59 UTC+8  
+                **比赛权重** : 32.71  
+                **赛事主办** : hackpack (https://ctftime.org/team/25905)  
+                **添加日历** : https://ctftime.org/event/2333.ics  
+                
             ??? Quote "[24@CTF](https://ctf.polycyber.io/)"  
                 [![](https://ctftime.org/media/events/Logo_24CTF_2024_1.png){ width="200" align=left }](https://ctf.polycyber.io/)  
                 **比赛名称** : [24@CTF](https://ctf.polycyber.io/)  
@@ -1966,15 +1966,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Group-IB (https://ctftime.org/team/273085)  
                 **添加日历** : https://ctftime.org/event/2177.ics  
-                
-            ??? Quote "[M*CTF 2023 Finals](https://mctf.mtuci.ru/)"  
-                [![](https://ctftime.org/media/events/Immagine_PNG_2.png){ width="200" align=left }](https://mctf.mtuci.ru/)  
-                **比赛名称** : [M*CTF 2023 Finals](https://mctf.mtuci.ru/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2023-12-03 15:00:00 - 2023-12-04 00:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-                **添加日历** : https://ctftime.org/event/2198.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
