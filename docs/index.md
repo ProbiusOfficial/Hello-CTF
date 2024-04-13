@@ -83,15 +83,6 @@ hide:
             **其他说明** : 比赛时间未定  
                 
     === "国外比赛"
-        ??? Quote "[CybHackCTF 2024 Spring](https://event.kibhackctf.ru/)"  
-            [![](https://ctftime.org/media/events/logo_98.png){ width="200" align=left }](https://event.kibhackctf.ru/)  
-            **比赛名称** : [CybHackCTF 2024 Spring](https://event.kibhackctf.ru/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-04-13 17:00:00 - 2024-04-14 17:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : CybHackCTF (https://ctftime.org/team/278998)  
-            **添加日历** : https://ctftime.org/event/2344.ics  
-            
         ??? Quote "[Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)"  
             [![](https://ctftime.org/media/events/WSUCyberDefenseClub_1.jpg){ width="200" align=left }](https://waynestateuniversity-ctf24.ctfd.io/)  
             **比赛名称** : [Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Zero Day Club (https://ctftime.org/team/286318)  
             **添加日历** : https://ctftime.org/event/2313.ics  
+            
+        ??? Quote "[D^3CTF 2024](https://d3c.tf/)"  
+            [![](https://ctftime.org/media/events/ddd.png){ width="200" align=left }](https://d3c.tf/)  
+            **比赛名称** : [D^3CTF 2024](https://d3c.tf/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-04-19 20:00:00 - 2024-04-21 20:00:00 UTC+8  
+            **比赛权重** : 39.40  
+            **赛事主办** : D^3CTF Organizers (https://ctftime.org/team/91096)  
+            **添加日历** : https://ctftime.org/event/2276.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

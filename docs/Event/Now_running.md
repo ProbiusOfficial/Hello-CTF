@@ -78,3 +78,12 @@ comments: true
     **赛事主办** : b01lers (https://ctftime.org/team/11464)  
     **添加日历** : https://ctftime.org/event/2250.ics  
     
+??? Quote "[CybHackCTF 2024 Spring](https://event.kibhackctf.ru/)"  
+    [![](https://ctftime.org/media/events/logo_98.png){ width="200" align=left }](https://event.kibhackctf.ru/)  
+    **比赛名称** : [CybHackCTF 2024 Spring](https://event.kibhackctf.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-13 17:00:00 - 2024-04-14 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : CybHackCTF (https://ctftime.org/team/278998)  
+    **添加日历** : https://ctftime.org/event/2344.ics  
+    
