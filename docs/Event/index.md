@@ -351,15 +351,6 @@ hide:
                 **其他说明** : 比赛时间未定  
                 
         === "国外赛事"
-            ??? Quote "[Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/WSUCyberDefenseClub_1.jpg){ width="200" align=left }](https://waynestateuniversity-ctf24.ctfd.io/)  
-                **比赛名称** : [Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-13 21:00:00 - 2024-04-14 05:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : WayneStateCyber (https://ctftime.org/team/135263)  
-                **添加日历** : https://ctftime.org/event/2337.ics  
-                
             ??? Quote "[Incognito 5.0](https://ictf5.ninja/)"  
                 [![](https://ctftime.org/media/events/lo.png){ width="200" align=left }](https://ictf5.ninja/)  
                 **比赛名称** : [Incognito 5.0](https://ictf5.ninja/)  
@@ -981,6 +972,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : CybHackCTF (https://ctftime.org/team/278998)  
                 **添加日历** : https://ctftime.org/event/2344.ics  
+                
+            ??? Quote "[Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)"  
+                [![](https://ctftime.org/media/events/WSUCyberDefenseClub_1.jpg){ width="200" align=left }](https://waynestateuniversity-ctf24.ctfd.io/)  
+                **比赛名称** : [Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-13 21:00:00 - 2024-04-14 05:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : WayneStateCyber (https://ctftime.org/team/135263)  
+                **添加日历** : https://ctftime.org/event/2337.ics  
                 
     === "*已经结束*"
         === "国内赛事"
