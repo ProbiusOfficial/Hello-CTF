@@ -107,6 +107,15 @@ comments: true
     **赛事主办** : WayneStateCyber (https://ctftime.org/team/135263)  
     **添加日历** : https://ctftime.org/event/2337.ics  
     
+??? Quote "[ShunyaCTF Aarambha](https://shunya.ctf.eng.run/)"  
+    [![](https://ctftime.org/media/events/shunyaLogo.png){ width="200" align=left }](https://shunya.ctf.eng.run/)  
+    **比赛名称** : [ShunyaCTF Aarambha](https://shunya.ctf.eng.run/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-13 00:30:00 - 2024-04-14 12:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : nCreeps (https://ctftime.org/team/203035)  
+    **添加日历** : https://ctftime.org/event/2336.ics  
+    
 ??? Quote "[HackPack CTF 2024 - LLM edition](https://hackpack.club/ctf2024/)"  
     [![](https://ctftime.org/media/events/Screenshot_2024-04-05_at_10.29.44.png){ width="200" align=left }](https://hackpack.club/ctf2024/)  
     **比赛名称** : [HackPack CTF 2024 - LLM edition](https://hackpack.club/ctf2024/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 23.21  
     **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
     **添加日历** : https://ctftime.org/event/2149.ics  
-    
-??? Quote "[Hackappatoi CTF '23](https://hctf.hackappatoi.com/)"  
-    [![](https://ctftime.org/media/events/3cea5d7bcded4dcba103009b24246cd6.png){ width="200" align=left }](https://hctf.hackappatoi.com/)  
-    **比赛名称** : [Hackappatoi CTF '23](https://hctf.hackappatoi.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-08 01:00:00 - 2023-12-09 17:00:00 UTC+8  
-    **比赛权重** : 24.71  
-    **赛事主办** : Hackappatoi (https://ctftime.org/team/140428)  
-    **添加日历** : https://ctftime.org/event/2163.ics  
     
