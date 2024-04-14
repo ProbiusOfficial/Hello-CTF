@@ -116,7 +116,7 @@ body {
     /* 设置过渡的属性 */
     transition-duration: 0.3s;
     /* 设置过渡的时间 */
-    transition-timing-function: cubic-bezier(0.01, 0.34, 0.9, 1.14);
+    transition-timing-function: cubic-bezier(0.07, 0.51, 0.7, 1);
     /* 设置过渡的缓动函数 */
 }
 
