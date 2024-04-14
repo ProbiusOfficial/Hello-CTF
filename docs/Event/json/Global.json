@@ -732,42 +732,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "GEEK CTF 2024",
-        "比赛时间": "2024-04-06 04:00:00 - 2024-04-15 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2332.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://geekctf.geekcon.top/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "GEEKCON (https://ctftime.org/team/255059)",
-        "比赛ID": "1104",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "PlaidCTF 2024",
-        "比赛时间": "2024-04-13 05:00:00 - 2024-04-15 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2245.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://plaidctf.com/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "95.19",
-        "赛事主办": "Plaid Parliament of Pwning (https://ctftime.org/team/284)",
-        "比赛ID": "10",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "Space Heroes 2024",
-        "比赛时间": "2024-04-13 06:00:00 - 2024-04-15 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2254.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://spaceheroes.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/moon.png",
-        "比赛权重": "24.50",
-        "赛事主办": "FITSEC (https://ctftime.org/team/65296)",
-        "比赛ID": "728",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "b01lers CTF 2024",
         "比赛时间": "2024-04-13 07:00:00 - 2024-04-15 07:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2250.ics",
@@ -801,6 +765,30 @@
         "比赛权重": "0",
         "赛事主办": "CybHackCTF (https://ctftime.org/team/278998)",
         "比赛ID": "1059",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Space Heroes 2024",
+        "比赛时间": "2024-04-13 06:00:00 - 2024-04-15 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2254.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://spaceheroes.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/moon.png",
+        "比赛权重": "24.50",
+        "赛事主办": "FITSEC (https://ctftime.org/team/65296)",
+        "比赛ID": "728",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "PlaidCTF 2024",
+        "比赛时间": "2024-04-13 05:00:00 - 2024-04-15 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2245.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://plaidctf.com/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "95.19",
+        "赛事主办": "Plaid Parliament of Pwning (https://ctftime.org/team/284)",
+        "比赛ID": "10",
         "比赛状态": "past"
     },
     {
@@ -870,7 +858,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://swampctf.com/",
         "比赛标志": "https://ctftime.org/media/events/swampctf.png",
-        "比赛权重": "0",
+        "比赛权重": "41.38",
         "赛事主办": "Kernel Sanders (https://ctftime.org/team/397)",
         "比赛ID": "241",
         "比赛状态": "past"
@@ -885,6 +873,18 @@
         "比赛权重": "48.25",
         "赛事主办": "TAMUctf (https://ctftime.org/team/37721)",
         "比赛ID": "198",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "GEEK CTF 2024",
+        "比赛时间": "2024-04-06 04:00:00 - 2024-04-15 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2332.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://geekctf.geekcon.top/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "GEEKCON (https://ctftime.org/team/255059)",
+        "比赛ID": "1104",
         "比赛状态": "past"
     },
     {
@@ -1941,42 +1941,6 @@
         "比赛权重": "24.79",
         "赛事主办": "MadrHacks (https://ctftime.org/team/114509)",
         "比赛ID": "994",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "TsukuCTF 2023",
-        "比赛时间": "2023-12-09 11:20:00 - 2023-12-10 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2169.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://tsukuctf.sechack365.com/",
-        "比赛标志": "https://ctftime.org/media/events/icon_6.png",
-        "比赛权重": "0.00",
-        "赛事主办": "TaruTaru (https://ctftime.org/team/157513)",
-        "比赛ID": "671",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "0CTF/TCTF 2023",
-        "比赛时间": "2023-12-09 10:00:00 - 2023-12-11 10:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2073.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.0ops.sjtu.cn/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "100.00",
-        "赛事主办": "0ops (https://ctftime.org/team/4419)",
-        "比赛ID": "99",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "pingCTF 2023",
-        "比赛时间": "2023-12-09 01:30:00 - 2023-12-11 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/1987.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.knping.pl/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "24.29",
-        "赛事主办": "pingCTF (https://ctftime.org/team/147266)",
-        "比赛ID": "715",
         "比赛状态": "past"
     }
 ]
