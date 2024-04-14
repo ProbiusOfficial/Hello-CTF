@@ -109,19 +109,26 @@ body {
   font-size: 0.75rem;
 }
 
+/* 添加过渡效果 */
+
 * {
     transition-property: color, background-color;
     /* 设置过渡的属性 */
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     /* 设置过渡的时间 */
     transition-timing-function: cubic-bezier(0.01, 0.34, 0.9, 1.14);
     /* 设置过渡的缓动函数 */
 }
 
-/* 屏蔽过渡效果 */
-p,
-h1,
-h2,
-hr {
-    transition: none !important;
+/*取消导航栏的背景色和阴影*/
+/*因为左右侧导航栏(目录)的开头背景色是独立的,这里特殊处理一下*/
+@media screen and (min-width: 76.25em) {
+
+    .md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link,
+    .md-nav--secondary .md-nav__title {
+        background: none;
+        box-shadow: none;
+    }
 }
+
+/*上面是过渡效果*/
