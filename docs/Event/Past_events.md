@@ -89,13 +89,6 @@ comments: true
     **比赛时间** : 2024年02月17日 08:00 - 2024年02月17日 20:00  
     **其他说明** : V&N 联合战队招新赛，赛事QQ群：717513199  
     
-??? Quote "NSSCTF Round#18 Basic"  
-    **比赛名称** : [NSSCTF Round#18 Basic](https://www.nssctf.cn/contest/317/)  
-    **比赛类型** : 团队赛|1-3人  
-    **报名时间** : 2024年02月06日 09:30 - 2024年02月14日 09:30  
-    **比赛时间** : 2024年02月14日 09:30 - 2024年02月14日 17:30  
-    **其他说明** : QQ群：521330139  
-    
 
 ## 国际赛事
 ??? Quote "[Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)"  
@@ -106,6 +99,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : WayneStateCyber (https://ctftime.org/team/135263)  
     **添加日历** : https://ctftime.org/event/2337.ics  
+    
+??? Quote "[CybHackCTF 2024 Spring](https://event.kibhackctf.ru/)"  
+    [![](https://ctftime.org/media/events/logo_98.png){ width="200" align=left }](https://event.kibhackctf.ru/)  
+    **比赛名称** : [CybHackCTF 2024 Spring](https://event.kibhackctf.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-13 17:00:00 - 2024-04-14 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : CybHackCTF (https://ctftime.org/team/278998)  
+    **添加日历** : https://ctftime.org/event/2344.ics  
     
 ??? Quote "[ShunyaCTF Aarambha](https://shunya.ctf.eng.run/)"  
     [![](https://ctftime.org/media/events/shunyaLogo.png){ width="200" align=left }](https://shunya.ctf.eng.run/)  
@@ -211,7 +213,7 @@ comments: true
     **比赛名称** : [UNbreakable International 2024 - Team Phase](https://unr24t-international.cyber-edu.co/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-04-05 18:00:00 - 2024-04-07 18:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 24.83  
     **赛事主办** : bitsentinel (https://ctftime.org/team/280005)  
     **添加日历** : https://ctftime.org/event/2297.ics  
     
@@ -988,13 +990,4 @@ comments: true
     **比赛权重** : 24.29  
     **赛事主办** : pingCTF (https://ctftime.org/team/147266)  
     **添加日历** : https://ctftime.org/event/1987.ics  
-    
-??? Quote "[HTB University CTF 2023: Brains & Bytes](https://ctf.hackthebox.com/event/details/university-ctf-2023-brains-bytes-1231)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/university-ctf-2023-brains-bytes-1231)  
-    **比赛名称** : [HTB University CTF 2023: Brains & Bytes](https://ctf.hackthebox.com/event/details/university-ctf-2023-brains-bytes-1231)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-08 21:00:00 - 2023-12-11 05:00:00 UTC+8  
-    **比赛权重** : 23.21  
-    **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
-    **添加日历** : https://ctftime.org/event/2149.ics  
     

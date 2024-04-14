@@ -780,18 +780,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CybHackCTF 2024 Spring",
-        "比赛时间": "2024-04-13 17:00:00 - 2024-04-14 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2344.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://event.kibhackctf.ru/",
-        "比赛标志": "https://ctftime.org/media/events/logo_98.png",
-        "比赛权重": "0",
-        "赛事主办": "CybHackCTF (https://ctftime.org/team/278998)",
-        "比赛ID": "1059",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Wayne State University - CTF24",
         "比赛时间": "2024-04-13 21:00:00 - 2024-04-14 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2337.ics",
@@ -801,6 +789,18 @@
         "比赛权重": "0.00",
         "赛事主办": "WayneStateCyber (https://ctftime.org/team/135263)",
         "比赛ID": "921",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "CybHackCTF 2024 Spring",
+        "比赛时间": "2024-04-13 17:00:00 - 2024-04-14 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2344.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://event.kibhackctf.ru/",
+        "比赛标志": "https://ctftime.org/media/events/logo_98.png",
+        "比赛权重": "0",
+        "赛事主办": "CybHackCTF (https://ctftime.org/team/278998)",
+        "比赛ID": "1059",
         "比赛状态": "past"
     },
     {
@@ -942,7 +942,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://unr24t-international.cyber-edu.co/",
         "比赛标志": "https://ctftime.org/media/events/g5hqjcGuxmbcMSZ9.png",
-        "比赛权重": "0",
+        "比赛权重": "24.83",
         "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
         "比赛ID": "1064",
         "比赛状态": "past"
@@ -1977,18 +1977,6 @@
         "比赛权重": "24.29",
         "赛事主办": "pingCTF (https://ctftime.org/team/147266)",
         "比赛ID": "715",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "HTB University CTF 2023: Brains & Bytes",
-        "比赛时间": "2023-12-08 21:00:00 - 2023-12-11 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2149.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hackthebox.com/event/details/university-ctf-2023-brains-bytes-1231",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "23.21",
-        "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
-        "比赛ID": "554",
         "比赛状态": "past"
     }
 ]
