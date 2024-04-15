@@ -36,17 +36,6 @@
                 "status": 1
             },
             {
-                "name": "浙江警察学院平航杯电子数据取证比赛",
-                "link": "https://mp.weixin.qq.com/s/ImWNs003Xsh-lruhC_addQ",
-                "type": "团队赛|1-3人",
-                "bmks": "2024年04月05日 12:00",
-                "bmjz": "2024年04月15日 12:00",
-                "bsks": "2024年04月20日 14:00",
-                "bsjs": "2024年04月20日 18:00",
-                "readmore": "QQ群：810961465",
-                "status": 1
-            },
-            {
                 "name": "第二届数据安全大赛暨首届“数信杯”数据安全大赛",
                 "link": "https://shuxinbei.ichunqiu.com/",
                 "type": "团队赛|1-3人",
@@ -56,6 +45,17 @@
                 "bsjs": "2024年05月02日 00:00",
                 "readmore": "比赛时间未定",
                 "status": 1
+            },
+            {
+                "name": "浙江警察学院平航杯电子数据取证比赛",
+                "link": "https://mp.weixin.qq.com/s/ImWNs003Xsh-lruhC_addQ",
+                "type": "团队赛|1-3人",
+                "bmks": "2024年04月05日 12:00",
+                "bmjz": "2024年04月15日 12:00",
+                "bsks": "2024年04月20日 14:00",
+                "bsjs": "2024年04月20日 18:00",
+                "readmore": "QQ群：810961465",
+                "status": 2
             },
             {
                 "name": "XYCTF高校新生联合赛 2024",
