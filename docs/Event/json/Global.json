@@ -732,18 +732,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "b01lers CTF 2024",
-        "比赛时间": "2024-04-13 07:00:00 - 2024-04-15 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2250.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://b01lersc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/b01lers-griffen_1.png",
-        "比赛权重": "30.80",
-        "赛事主办": "b01lers (https://ctftime.org/team/11464)",
-        "比赛ID": "408",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Wayne State University - CTF24",
         "比赛时间": "2024-04-13 21:00:00 - 2024-04-14 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2337.ics",
@@ -765,6 +753,18 @@
         "比赛权重": "0",
         "赛事主办": "CybHackCTF (https://ctftime.org/team/278998)",
         "比赛ID": "1059",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "b01lers CTF 2024",
+        "比赛时间": "2024-04-13 07:00:00 - 2024-04-15 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2250.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://b01lersc.tf/",
+        "比赛标志": "https://ctftime.org/media/events/b01lers-griffen_1.png",
+        "比赛权重": "30.80",
+        "赛事主办": "b01lers (https://ctftime.org/team/11464)",
+        "比赛ID": "408",
         "比赛状态": "past"
     },
     {
@@ -1929,18 +1929,6 @@
         "比赛权重": "0.00",
         "赛事主办": "HacktorX (https://ctftime.org/team/274645)",
         "比赛ID": "1023",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "snakeCTF 2023",
-        "比赛时间": "2023-12-09 17:00:00 - 2023-12-10 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2158.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2023.snakectf.org/",
-        "比赛标志": "https://ctftime.org/media/events/LogoCroppable.png",
-        "比赛权重": "24.79",
-        "赛事主办": "MadrHacks (https://ctftime.org/team/114509)",
-        "比赛ID": "994",
         "比赛状态": "past"
     }
 ]
