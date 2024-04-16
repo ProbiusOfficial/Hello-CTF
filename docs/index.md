@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群：810961465  
                 
     === "国外比赛"
-        ??? Quote "[Incognito 5.0](https://ictf5.ninja/)"  
-            [![](https://ctftime.org/media/events/lo.png){ width="200" align=left }](https://ictf5.ninja/)  
-            **比赛名称** : [Incognito 5.0](https://ictf5.ninja/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-04-16 18:00:00 - 2024-04-17 06:00:00 UTC+8  
-            **比赛权重** : 21.95  
-            **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
-            **添加日历** : https://ctftime.org/event/2316.ics  
-            
         ??? Quote "[SpartanCTF 2024](https://spartan.ctfd.io/)"  
             [![](https://ctftime.org/media/events/zdc_emblem.png){ width="200" align=left }](https://spartan.ctfd.io/)  
             **比赛名称** : [SpartanCTF 2024](https://spartan.ctfd.io/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 43.10  
             **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
             **添加日历** : https://ctftime.org/event/2287.ics  
+            
+        ??? Quote "[CPCTF 2024](https://cpctf.space/)"  
+            [![](https://ctftime.org/media/events/624f1650cfdb45fb857a62b9304d4a1c.png){ width="200" align=left }](https://cpctf.space/)  
+            **比赛名称** : [CPCTF 2024](https://cpctf.space/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-04-20 09:00:00 - 2024-04-21 15:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : traP (https://ctftime.org/team/62510)  
+            **添加日历** : https://ctftime.org/event/2338.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

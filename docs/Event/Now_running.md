@@ -24,3 +24,12 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
+??? Quote "[Incognito 5.0](https://ictf5.ninja/)"  
+    [![](https://ctftime.org/media/events/lo.png){ width="200" align=left }](https://ictf5.ninja/)  
+    **比赛名称** : [Incognito 5.0](https://ictf5.ninja/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-16 18:00:00 - 2024-04-17 06:00:00 UTC+8  
+    **比赛权重** : 21.95  
+    **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
+    **添加日历** : https://ctftime.org/event/2316.ics  
+    
