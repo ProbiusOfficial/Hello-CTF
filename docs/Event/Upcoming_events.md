@@ -68,15 +68,6 @@ comments: true
     **赛事主办** : Zero Day Club (https://ctftime.org/team/286318)  
     **添加日历** : https://ctftime.org/event/2313.ics  
     
-??? Quote "[D^3CTF 2024](https://d3c.tf/)"  
-    [![](https://ctftime.org/media/events/ddd.png){ width="200" align=left }](https://d3c.tf/)  
-    **比赛名称** : [D^3CTF 2024](https://d3c.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-19 20:00:00 - 2024-04-21 20:00:00 UTC+8  
-    **比赛权重** : 39.40  
-    **赛事主办** : D^3CTF Organizers (https://ctftime.org/team/91096)  
-    **添加日历** : https://ctftime.org/event/2276.ics  
-    
 ??? Quote "[CTF@CIT 2024](https://ctf.cyber-cit.club/)"  
     [![](https://ctftime.org/media/events/CTF-CIT-ctftime.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
     **比赛名称** : [CTF@CIT 2024](https://ctf.cyber-cit.club/)  
