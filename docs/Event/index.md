@@ -285,6 +285,13 @@ hide:
             适度CTF益脑，沉迷CTF伤身。合理安排时间，享受健康生活。
     
     === "*正在报名*"
+        ??? Quote "[第一届“帕鲁杯”CTF应急响应挑战赛](https://paluctf.runctf.cn/)"  
+            **比赛名称** : [第一届“帕鲁杯”CTF应急响应挑战赛](https://paluctf.runctf.cn/)  
+            **比赛类型** : 团体赛1-4人  
+            **报名时间** : 2024年04月16日 08:00 - 2024年04月19日 08:00  
+            **比赛时间** : 2024年04月19日 08:00 - 2024年04月21日 19:00  
+            **其他说明** : QQ群：710672599  
+            
         ??? Quote "[第十七届全国大学生信息安全竞赛 - 作品赛](http://www.ciscn.cn/competition/securityCompetition?compet_id=39)"  
             **比赛名称** : [第十七届全国大学生信息安全竞赛 - 作品赛](http://www.ciscn.cn/competition/securityCompetition?compet_id=39)  
             **比赛类型** : 作品赛  
@@ -321,6 +328,13 @@ hide:
                 **报名时间** : 2024年04月30日 08:00 - 2024年05月25日 08:00  
                 **比赛时间** : 2024年05月01日 08:00 - 2024年05月25日 08:00  
                 **其他说明** : QQ群:619577692 / 852601317 邮箱:iscc2004@163.com  
+                
+            ??? Quote "[第一届“帕鲁杯”CTF应急响应挑战赛](https://paluctf.runctf.cn/)"  
+                **比赛名称** : [第一届“帕鲁杯”CTF应急响应挑战赛](https://paluctf.runctf.cn/)  
+                **比赛类型** : 团体赛1-4人  
+                **报名时间** : 2024年04月16日 08:00 - 2024年04月19日 08:00  
+                **比赛时间** : 2024年04月19日 08:00 - 2024年04月21日 19:00  
+                **其他说明** : QQ群：710672599  
                 
             ??? Quote "[第十七届全国大学生信息安全竞赛 - 作品赛](http://www.ciscn.cn/competition/securityCompetition?compet_id=39)"  
                 **比赛名称** : [第十七届全国大学生信息安全竞赛 - 作品赛](http://www.ciscn.cn/competition/securityCompetition?compet_id=39)  
