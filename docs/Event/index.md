@@ -906,15 +906,6 @@ hide:
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
                 
-            ??? Quote "[Incognito 5.0](https://ictf5.ninja/)"  
-                [![](https://ctftime.org/media/events/lo.png){ width="200" align=left }](https://ictf5.ninja/)  
-                **比赛名称** : [Incognito 5.0](https://ictf5.ninja/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-16 18:00:00 - 2024-04-17 06:00:00 UTC+8  
-                **比赛权重** : 21.95  
-                **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
-                **添加日历** : https://ctftime.org/event/2316.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[第四届红明谷杯（初赛）](https://www.sm.gov.cn/inc/hgbm/)"  
@@ -1002,6 +993,15 @@ hide:
                 **其他说明** : V&N 联合战队招新赛，赛事QQ群：717513199  
                 
         === "国外赛事"
+            ??? Quote "[Incognito 5.0](https://ictf5.ninja/)"  
+                [![](https://ctftime.org/media/events/lo.png){ width="200" align=left }](https://ictf5.ninja/)  
+                **比赛名称** : [Incognito 5.0](https://ictf5.ninja/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-16 18:00:00 - 2024-04-17 06:00:00 UTC+8  
+                **比赛权重** : 21.95  
+                **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
+                **添加日历** : https://ctftime.org/event/2316.ics  
+                
             ??? Quote "[Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)"  
                 [![](https://ctftime.org/media/events/WSUCyberDefenseClub_1.jpg){ width="200" align=left }](https://waynestateuniversity-ctf24.ctfd.io/)  
                 **比赛名称** : [Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)  
@@ -1718,7 +1718,7 @@ hide:
                 **比赛名称** : [UofTCTF 2024](https://ctf.uoftctf.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-01-14 01:00:00 - 2024-01-15 12:59:00 UTC+8  
-                **比赛权重** : 23.79  
+                **比赛权重** : 23.81  
                 **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
                 **添加日历** : https://ctftime.org/event/2219.ics  
                 
@@ -1892,15 +1892,6 @@ hide:
                 **比赛权重** : 37.00  
                 **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
                 **添加日历** : https://ctftime.org/event/2090.ics  
-                
-            ??? Quote "[HacktorX CTF 2023](https://hacktorx.com/hxctf2023/)"  
-                [![](https://ctftime.org/media/events/logo1_2.png){ width="200" align=left }](https://hacktorx.com/hxctf2023/)  
-                **比赛名称** : [HacktorX CTF 2023](https://hacktorx.com/hxctf2023/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-12-09 21:00:00 - 2023-12-10 15:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : HacktorX (https://ctftime.org/team/274645)  
-                **添加日历** : https://ctftime.org/event/2174.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
