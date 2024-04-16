@@ -561,9 +561,9 @@ comments: true
     **赛事主办** : ASIS (https://ctftime.org/team/4140)  
     **添加日历** : https://ctftime.org/event/2211.ics  
     
-??? Quote "[TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://ctf.tcp1p.com/)"  
-    [![](https://ctftime.org/media/events/TCP1P-logo.png){ width="200" align=left }](https://ctf.tcp1p.com/)  
-    **比赛名称** : [TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://ctf.tcp1p.com/)  
+??? Quote "[TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://tcp1p.github.io/tcp1p-pages/tcp1pctf-2024)"  
+    [![](https://ctftime.org/media/events/TCP1P-logo.png){ width="200" align=left }](https://tcp1p.github.io/tcp1p-pages/tcp1pctf-2024)  
+    **比赛名称** : [TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://tcp1p.github.io/tcp1p-pages/tcp1pctf-2024)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-10-11 20:00:00 - 2024-10-13 20:00:00 UTC+8  
     **比赛权重** : 24.85  
