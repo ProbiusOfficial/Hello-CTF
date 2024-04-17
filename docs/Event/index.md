@@ -428,9 +428,9 @@ hide:
                 **赛事主办** : YCF (https://ctftime.org/team/179685)  
                 **添加日历** : https://ctftime.org/event/2331.ics  
                 
-            ??? Quote "[(DELAYED) Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)"  
+            ??? Quote "[Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)"  
                 [![](https://ctftime.org/media/events/midnight.png){ width="200" align=left }](https://midnightsunctf.com/)  
-                **比赛名称** : [(DELAYED) Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)  
+                **比赛名称** : [Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-04-20 18:00:00 - 2024-04-21 18:00:00 UTC+8  
                 **比赛权重** : 35.74  
