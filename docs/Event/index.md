@@ -1097,7 +1097,7 @@ hide:
                 **比赛名称** : [SwampCTF 2024](https://swampctf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8  
-                **比赛权重** : 41.38  
+                **比赛权重** : 41.41  
                 **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
                 **添加日历** : https://ctftime.org/event/2138.ics  
                 
@@ -1556,7 +1556,7 @@ hide:
                 **比赛名称** : [BITSCTF 2024](https://ctf.bitskrieg.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-02-16 02:30:00 - 2024-02-18 02:30:00 UTC+8  
-                **比赛权重** : 22.42  
+                **比赛权重** : 22.41  
                 **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
                 **添加日历** : https://ctftime.org/event/2235.ics  
                 
