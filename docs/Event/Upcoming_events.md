@@ -57,15 +57,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[SpartanCTF 2024](https://spartan.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/zdc_emblem.png){ width="200" align=left }](https://spartan.ctfd.io/)  
-    **比赛名称** : [SpartanCTF 2024](https://spartan.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-18 00:00:00 - 2024-04-22 13:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Zero Day Club (https://ctftime.org/team/286318)  
-    **添加日历** : https://ctftime.org/event/2313.ics  
-    
 ??? Quote "[CTF@CIT 2024](https://ctf.cyber-cit.club/)"  
     [![](https://ctftime.org/media/events/CTF-CIT-ctftime.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
     **比赛名称** : [CTF@CIT 2024](https://ctf.cyber-cit.club/)  

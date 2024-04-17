@@ -24,3 +24,12 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
+??? Quote "[SpartanCTF 2024](https://spartan.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/zdc_emblem.png){ width="200" align=left }](https://spartan.ctfd.io/)  
+    **比赛名称** : [SpartanCTF 2024](https://spartan.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-18 00:00:00 - 2024-04-22 13:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Zero Day Club (https://ctftime.org/team/286318)  
+    **添加日历** : https://ctftime.org/event/2313.ics  
+    

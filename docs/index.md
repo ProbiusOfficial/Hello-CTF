@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群：810961465  
                 
     === "国外比赛"
-        ??? Quote "[SpartanCTF 2024](https://spartan.ctfd.io/)"  
-            [![](https://ctftime.org/media/events/zdc_emblem.png){ width="200" align=left }](https://spartan.ctfd.io/)  
-            **比赛名称** : [SpartanCTF 2024](https://spartan.ctfd.io/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-04-18 00:00:00 - 2024-04-22 13:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Zero Day Club (https://ctftime.org/team/286318)  
-            **添加日历** : https://ctftime.org/event/2313.ics  
-            
         ??? Quote "[CTF@CIT 2024](https://ctf.cyber-cit.club/)"  
             [![](https://ctftime.org/media/events/CTF-CIT-ctftime.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
             **比赛名称** : [CTF@CIT 2024](https://ctf.cyber-cit.club/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : traP (https://ctftime.org/team/62510)  
             **添加日历** : https://ctftime.org/event/2338.ics  
+            
+        ??? Quote "[AVSS Contest 2024](https://avss.geekcon.top/)"  
+            [![](https://ctftime.org/media/events/AVSS.png){ width="200" align=left }](https://avss.geekcon.top/)  
+            **比赛名称** : [AVSS Contest 2024](https://avss.geekcon.top/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-04-20 10:00:00 - 2024-04-22 10:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : GEEKCON (https://ctftime.org/team/255059)  
+            **添加日历** : https://ctftime.org/event/2335.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
