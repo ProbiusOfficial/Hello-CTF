@@ -73,6 +73,14 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [保研or就业---阿里云实习之旅](https://y4tacker.github.io/2024/04/17/year/2022/10/%E4%BF%9D%E7%A0%94or%E5%B0%B1%E4%B8%9A---%E9%98%BF%E9%87%8C%E4%BA%91%E5%AE%9E%E4%B9%A0%E4%B9%8B%E6%97%85/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-04-17
+
+    保研or就业 — 阿里云实习之旅始章​    昨天刚回成都，之前一直在问自己结果真的有那么重要吗，现在我也能鼓起勇气对自己说，不重要了，我的世界属于我，我的人生也没有那么多的观众，我也没必要在意他人的目光，我终于又成长了一点。实习经历​    （经历这部分就挑着重点的或者和时间性有关的说说，我也懒）​    七月中旬收拾好行李独自前往一个陌生的城市，起初对杭州的影响也就是赛博群里说的饭不好吃，说我...
+    ### [IP-Guard权限绕过浅析](https://y4tacker.github.io/2024/04/17/year/2024/4/IP-Guard%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E6%B5%85%E6%9E%90/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-04-17
+
+    226125863bbf5aa56517b3f0c09a775281668980f8d10e95e65c0c765d7b0c74091d903d905cb1780a8298b564cf8153e5a81795b888396ccc50b51fb6f7ea966b04c5f2b55c99e264122d017f42684c774e9c78755ec028eb703f2b01fd21f13c11a2...
     ### [泛微E-Office10最新远程代码执行漏洞分析](https://y4tacker.github.io/2024/03/27/year/2024/3/%E6%B3%9B%E5%BE%AEE-Office10%E6%9C%80%E6%96%B0%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-03-27
 
@@ -145,13 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2023-12-08
 
     e1bd3e68fe0e95aad543147235f13aa8c07db101f08238b29c49348e526ca2c395ff16b5184fe4ee67b8dd1840f69936917a685390975ecb78405622c312487d5e6b45d97870e169a38f37bd7a2e95cc0dc308895eb7b6e6c6388b8f5be9932f20a506...
-    ### [Apache ActiveMQ Jolokia远程代码执行不依赖JDK打法](https://y4tacker.github.io/2023/11/30/year/2023/11/%E6%9F%90%E7%B3%BB%E7%BB%9F%E6%9C%80%E6%96%B0%E5%89%8D%E5%8F%B0RCE%E5%88%86%E6%9E%90/Apache-ActiveMQ-Jolokia%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E4%B8%8D%E4%BE%9D%E8%B5%96JDK%E6%89%93%E6%B3%95/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-11-30
-
-    Apache ActiveMQ Jolokia远程代码执行不依赖JDK打法想着最近连写了几篇加密博客有点对不起看我博客的粉丝了，今天抽空简单分享一个姿势影响版本大概测了一下Apache ActiveMQ 5.16.x系列无log4j2的mbeanApache ActiveMQ 5.17.x系列漏洞版本受影响初探从网上已公开的打法可以知道使用jdk.management.jfr:type=Fligh...
-    ### [Apache ActiveMQ Jolokia远程代码执行(CVE-2022-41678)简析及绕Waf技法](https://y4tacker.github.io/2023/11/29/year/2023/11/Apache-ActiveMQ-Jolokia%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C-CVE-2022-41678-%E7%AE%80%E6%9E%90%E5%8F%8A%E7%BB%95Waf%E6%8A%80%E6%B3%95/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-11-29
-
-    b911718fdd890810916fcf22cb8016ca11ae7d872d624941bd9b20d0cf7e4036a45e816cf5955164cc4e0d7bc4e06277d1f41e412de1243b7603f6b8db578947e40f8bad6233f702a2ae224c03f173d615182364ea2922f081358af1757fab347afff2...
 
 </div>
