@@ -47,17 +47,6 @@
                 "status": 1
             },
             {
-                "name": "第一届“帕鲁杯”CTF应急响应挑战赛",
-                "link": "https://paluctf.runctf.cn/",
-                "type": "团体赛1-4人",
-                "bmks": "2024年04月16日 08:00",
-                "bmjz": "2024年04月19日 08:00",
-                "bsks": "2024年04月19日 08:00",
-                "bsjs": "2024年04月21日 19:00",
-                "readmore": "QQ群：710672599",
-                "status": 1
-            },
-            {
                 "name": "第十七届全国大学生信息安全竞赛 - 作品赛",
                 "link": "http://www.ciscn.cn/competition/securityCompetition?compet_id=39",
                 "type": "作品赛",
@@ -100,6 +89,17 @@
                 "bsjs": "2024年04月20日 18:00",
                 "readmore": "QQ群：810961465",
                 "status": 2
+            },
+            {
+                "name": "第一届“帕鲁杯”CTF应急响应挑战赛",
+                "link": "https://paluctf.runctf.cn/",
+                "type": "团体赛1-4人",
+                "bmks": "2024年04月16日 08:00",
+                "bmjz": "2024年04月19日 08:00",
+                "bsks": "2024年04月19日 08:00",
+                "bsjs": "2024年04月21日 19:00",
+                "readmore": "QQ群：710672599",
+                "status": 3
             },
             {
                 "name": "XYCTF高校新生联合赛 2024",
