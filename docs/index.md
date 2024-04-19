@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群:619577692 / 852601317 邮箱:iscc2004@163.com  
                 
     === "国外比赛"
-        ??? Quote "[CTF@CIT 2024](https://ctf.cyber-cit.club/)"  
-            [![](https://ctftime.org/media/events/CTF-CIT-ctftime.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
-            **比赛名称** : [CTF@CIT 2024](https://ctf.cyber-cit.club/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-04-20 05:00:00 - 2024-04-22 03:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
-            **添加日历** : https://ctftime.org/event/2339.ics  
-            
         ??? Quote "[UMassCTF 2024](https://ctf.umasscybersec.org/)"  
             [![](https://ctftime.org/media/events/CTF_LOGO_20240401_190034_0000.png){ width="200" align=left }](https://ctf.umasscybersec.org/)  
             **比赛名称** : [UMassCTF 2024](https://ctf.umasscybersec.org/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : GEEKCON (https://ctftime.org/team/255059)  
             **添加日历** : https://ctftime.org/event/2335.ics  
+            
+        ??? Quote "[Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
+            **比赛名称** : [Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8  
+            **比赛权重** : 22.46  
+            **赛事主办** : NUSGreyhats (https://ctftime.org/team/16740)  
+            **添加日历** : https://ctftime.org/event/2242.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
