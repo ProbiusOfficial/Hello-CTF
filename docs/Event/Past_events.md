@@ -293,15 +293,6 @@ comments: true
     **赛事主办** : isss (https://ctftime.org/team/69010)  
     **添加日历** : https://ctftime.org/event/2302.ics  
     
-??? Quote "[UTCTF 2024](https://isss.io/utctf)"  
-    [![](https://ctftime.org/media/events/linocut_logoutctf_1.jpg){ width="200" align=left }](https://isss.io/utctf)  
-    **比赛名称** : [UTCTF 2024](https://isss.io/utctf)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-29 08:00:00 - 2024-03-31 08:00:00 UTC+8  
-    **比赛权重** : 48.00  
-    **赛事主办** : isss (https://ctftime.org/team/69010)  
-    **添加日历** : https://ctftime.org/event/2280.ics  
-    
 ??? Quote "[HACKFEST'8 QUALS](https://ctf-quals-8.hackfest.tn/)"  
     [![](https://ctftime.org/media/events/HACKFEST_WHITE.png){ width="200" align=left }](https://ctf-quals-8.hackfest.tn/)  
     **比赛名称** : [HACKFEST'8 QUALS](https://ctf-quals-8.hackfest.tn/)  
@@ -976,4 +967,13 @@ comments: true
     **比赛权重** : 37.00  
     **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
     **添加日历** : https://ctftime.org/event/2090.ics  
+    
+??? Quote "[HacktorX CTF 2023](https://hacktorx.com/hxctf2023/)"  
+    [![](https://ctftime.org/media/events/logo1_2.png){ width="200" align=left }](https://hacktorx.com/hxctf2023/)  
+    **比赛名称** : [HacktorX CTF 2023](https://hacktorx.com/hxctf2023/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2023-12-09 21:00:00 - 2023-12-10 15:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : HacktorX (https://ctftime.org/team/274645)  
+    **添加日历** : https://ctftime.org/event/2174.ics  
     

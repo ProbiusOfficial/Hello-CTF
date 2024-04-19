@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群:619577692 / 852601317 邮箱:iscc2004@163.com  
                 
     === "国外比赛"
-        ??? Quote "[UMassCTF 2024](https://ctf.umasscybersec.org/)"  
-            [![](https://ctftime.org/media/events/CTF_LOGO_20240401_190034_0000.png){ width="200" align=left }](https://ctf.umasscybersec.org/)  
-            **比赛名称** : [UMassCTF 2024](https://ctf.umasscybersec.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-04-20 06:00:00 - 2024-04-22 06:00:00 UTC+8  
-            **比赛权重** : 43.10  
-            **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
-            **添加日历** : https://ctftime.org/event/2287.ics  
-            
         ??? Quote "[CPCTF 2024](https://cpctf.space/)"  
             [![](https://ctftime.org/media/events/624f1650cfdb45fb857a62b9304d4a1c.png){ width="200" align=left }](https://cpctf.space/)  
             **比赛名称** : [CPCTF 2024](https://cpctf.space/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 22.46  
             **赛事主办** : NUSGreyhats (https://ctftime.org/team/16740)  
             **添加日历** : https://ctftime.org/event/2242.ics  
+            
+        ??? Quote "[Nexus Elites CTF](https://nexusctf.ycfteam.in/)"  
+            [![](https://ctftime.org/media/events/CTF_logo.jpg){ width="200" align=left }](https://nexusctf.ycfteam.in/)  
+            **比赛名称** : [Nexus Elites CTF](https://nexusctf.ycfteam.in/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : YCF (https://ctftime.org/team/179685)  
+            **添加日历** : https://ctftime.org/event/2331.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

@@ -57,15 +57,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[UMassCTF 2024](https://ctf.umasscybersec.org/)"  
-    [![](https://ctftime.org/media/events/CTF_LOGO_20240401_190034_0000.png){ width="200" align=left }](https://ctf.umasscybersec.org/)  
-    **比赛名称** : [UMassCTF 2024](https://ctf.umasscybersec.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-20 06:00:00 - 2024-04-22 06:00:00 UTC+8  
-    **比赛权重** : 43.10  
-    **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
-    **添加日历** : https://ctftime.org/event/2287.ics  
-    
 ??? Quote "[CPCTF 2024](https://cpctf.space/)"  
     [![](https://ctftime.org/media/events/624f1650cfdb45fb857a62b9304d4a1c.png){ width="200" align=left }](https://cpctf.space/)  
     **比赛名称** : [CPCTF 2024](https://cpctf.space/)  

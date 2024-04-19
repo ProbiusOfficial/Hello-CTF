@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "UMassCTF 2024",
-        "比赛时间": "2024-04-20 06:00:00 - 2024-04-22 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2287.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.umasscybersec.org/",
-        "比赛标志": "https://ctftime.org/media/events/CTF_LOGO_20240401_190034_0000.png",
-        "比赛权重": "43.10",
-        "赛事主办": "SavedByTheShell (https://ctftime.org/team/78233)",
-        "比赛ID": "598",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "CPCTF 2024",
         "比赛时间": "2024-04-20 09:00:00 - 2024-04-21 15:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2338.ics",
@@ -708,6 +696,18 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "UMassCTF 2024",
+        "比赛时间": "2024-04-20 06:00:00 - 2024-04-22 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2287.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.umasscybersec.org/",
+        "比赛标志": "https://ctftime.org/media/events/CTF_LOGO_20240401_190034_0000.png",
+        "比赛权重": "43.10",
+        "赛事主办": "SavedByTheShell (https://ctftime.org/team/78233)",
+        "比赛ID": "598",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "Incognito 5.0",
         "比赛时间": "2024-04-16 18:00:00 - 2024-04-17 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2316.ics",
@@ -990,18 +990,6 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://isss.io/utctf",
         "比赛标志": "https://ctftime.org/media/events/UTCTF2024.png",
-        "比赛权重": "48.00",
-        "赛事主办": "isss (https://ctftime.org/team/69010)",
-        "比赛ID": "281",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "UTCTF 2024",
-        "比赛时间": "2024-03-29 08:00:00 - 2024-03-31 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2280.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://isss.io/utctf",
-        "比赛标志": "https://ctftime.org/media/events/linocut_logoutctf_1.jpg",
         "比赛权重": "48.00",
         "赛事主办": "isss (https://ctftime.org/team/69010)",
         "比赛ID": "281",
@@ -1905,6 +1893,18 @@
         "比赛权重": "37.00",
         "赛事主办": "ISITDTU (https://ctftime.org/team/8241)",
         "比赛ID": "258",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "HacktorX CTF 2023",
+        "比赛时间": "2023-12-09 21:00:00 - 2023-12-10 15:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2174.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://hacktorx.com/hxctf2023/",
+        "比赛标志": "https://ctftime.org/media/events/logo1_2.png",
+        "比赛权重": "0.00",
+        "赛事主办": "HacktorX (https://ctftime.org/team/274645)",
+        "比赛ID": "1023",
         "比赛状态": "past"
     }
 ]
