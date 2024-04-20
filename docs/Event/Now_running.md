@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Quote "GEEKCON 2024 国际站AVSS挑战赛"  
+    **比赛名称** : [GEEKCON 2024 国际站AVSS挑战赛](https://mp.weixin.qq.com/s/iA1PQ9ExwVlRN_iOB7INAg)  
+    **比赛类型** : 团队赛  
+    **报名时间** : 2024年4月15日 00:00 - 2024年4月20日 10:00  
+    **比赛时间** : 2024年4月20日 10:00 - 2024年4月22日 10:00  
+    **其他说明** : https://discord.gg/dWvBrfwAmF  
+    
 ??? Quote "D^3CTF2024"  
     **比赛名称** : [D^3CTF2024](https://d3c.tf/)  
     **比赛类型** : 团队赛 | Jeopardy  
@@ -73,4 +80,13 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : traP (https://ctftime.org/team/62510)  
     **添加日历** : https://ctftime.org/event/2338.ics  
+    
+??? Quote "[AVSS Contest 2024](https://avss.geekcon.top/)"  
+    [![](https://ctftime.org/media/events/AVSS.png){ width="200" align=left }](https://avss.geekcon.top/)  
+    **比赛名称** : [AVSS Contest 2024](https://avss.geekcon.top/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-20 10:00:00 - 2024-04-22 10:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : GEEKCON (https://ctftime.org/team/255059)  
+    **添加日历** : https://ctftime.org/event/2335.ics  
     
