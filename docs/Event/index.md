@@ -343,13 +343,6 @@ hide:
                 **比赛时间** : 2024年05月01日 00:00 - 2024年05月02日 00:00  
                 **其他说明** : 比赛时间未定  
                 
-            ??? Quote "[浙江警察学院平航杯电子数据取证比赛](https://mp.weixin.qq.com/s/ImWNs003Xsh-lruhC_addQ)"  
-                **比赛名称** : [浙江警察学院平航杯电子数据取证比赛](https://mp.weixin.qq.com/s/ImWNs003Xsh-lruhC_addQ)  
-                **比赛类型** : 团队赛|1-3人  
-                **报名时间** : 2024年04月05日 12:00 - 2024年04月15日 12:00  
-                **比赛时间** : 2024年04月20日 14:00 - 2024年04月20日 18:00  
-                **其他说明** : QQ群：810961465  
-                
         === "国外赛事"
             ??? Quote "[Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)"  
                 [![](https://ctftime.org/media/events/midnight.png){ width="200" align=left }](https://midnightsunctf.com/)  
@@ -812,6 +805,13 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
+            ??? Quote "[浙江警察学院平航杯电子数据取证比赛](https://mp.weixin.qq.com/s/ImWNs003Xsh-lruhC_addQ)"  
+                **比赛名称** : [浙江警察学院平航杯电子数据取证比赛](https://mp.weixin.qq.com/s/ImWNs003Xsh-lruhC_addQ)  
+                **比赛类型** : 团队赛|1-3人  
+                **报名时间** : 2024年04月05日 12:00 - 2024年04月15日 12:00  
+                **比赛时间** : 2024年04月20日 14:00 - 2024年04月20日 18:00  
+                **其他说明** : QQ群：810961465  
+                
             ??? Quote "[GEEKCON 2024 国际站AVSS挑战赛](https://mp.weixin.qq.com/s/iA1PQ9ExwVlRN_iOB7INAg)"  
                 **比赛名称** : [GEEKCON 2024 国际站AVSS挑战赛](https://mp.weixin.qq.com/s/iA1PQ9ExwVlRN_iOB7INAg)  
                 **比赛类型** : 团队赛  
