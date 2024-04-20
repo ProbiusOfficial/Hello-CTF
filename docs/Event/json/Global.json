@@ -705,7 +705,7 @@
         "比赛权重": "0.00",
         "赛事主办": "Challenge the Cyber (https://ctftime.org/team/181210)",
         "比赛ID": "776",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Incognito 5.0",
@@ -1893,18 +1893,6 @@
         "比赛权重": "37.00",
         "赛事主办": "ISITDTU (https://ctftime.org/team/8241)",
         "比赛ID": "258",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "HacktorX CTF 2023",
-        "比赛时间": "2023-12-09 21:00:00 - 2023-12-10 15:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2174.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hacktorx.com/hxctf2023/",
-        "比赛标志": "https://ctftime.org/media/events/logo1_2.png",
-        "比赛权重": "0.00",
-        "赛事主办": "HacktorX (https://ctftime.org/team/274645)",
-        "比赛ID": "1023",
         "比赛状态": "past"
     }
 ]

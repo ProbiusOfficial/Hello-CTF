@@ -897,15 +897,6 @@ hide:
                 **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
                 **添加日历** : https://ctftime.org/event/2247.ics  
                 
-            ??? Quote "[Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)"  
-                [![](https://ctftime.org/media/events/12e936bf3a5de410fc3506bfdffb608a.jpg){ width="200" align=left }](https://challengethecyber.nl/)  
-                **比赛名称** : [Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-20 19:00:00 - 2024-04-21 01:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Challenge the Cyber (https://ctftime.org/team/181210)  
-                **添加日历** : https://ctftime.org/event/2277.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[浙江警察学院平航杯电子数据取证比赛](https://mp.weixin.qq.com/s/ImWNs003Xsh-lruhC_addQ)"  
@@ -986,6 +977,15 @@ hide:
                 **其他说明** : QQ群：134591168   适合新手参加  
                 
         === "国外赛事"
+            ??? Quote "[Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)"  
+                [![](https://ctftime.org/media/events/12e936bf3a5de410fc3506bfdffb608a.jpg){ width="200" align=left }](https://challengethecyber.nl/)  
+                **比赛名称** : [Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-20 19:00:00 - 2024-04-21 01:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Challenge the Cyber (https://ctftime.org/team/181210)  
+                **添加日历** : https://ctftime.org/event/2277.ics  
+                
             ??? Quote "[Incognito 5.0](https://ictf5.ninja/)"  
                 [![](https://ctftime.org/media/events/lo.png){ width="200" align=left }](https://ictf5.ninja/)  
                 **比赛名称** : [Incognito 5.0](https://ictf5.ninja/)  
@@ -1876,15 +1876,6 @@ hide:
                 **比赛权重** : 37.00  
                 **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
                 **添加日历** : https://ctftime.org/event/2090.ics  
-                
-            ??? Quote "[HacktorX CTF 2023](https://hacktorx.com/hxctf2023/)"  
-                [![](https://ctftime.org/media/events/logo1_2.png){ width="200" align=left }](https://hacktorx.com/hxctf2023/)  
-                **比赛名称** : [HacktorX CTF 2023](https://hacktorx.com/hxctf2023/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-12-09 21:00:00 - 2023-12-10 15:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : HacktorX (https://ctftime.org/team/274645)  
-                **添加日历** : https://ctftime.org/event/2174.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
