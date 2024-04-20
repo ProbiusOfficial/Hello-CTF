@@ -43,15 +43,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)"  
-    [![](https://ctftime.org/media/events/midnight.png){ width="200" align=left }](https://midnightsunctf.com/)  
-    **比赛名称** : [Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-20 18:00:00 - 2024-04-21 18:00:00 UTC+8  
-    **比赛权重** : 35.74  
-    **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-    **添加日历** : https://ctftime.org/event/2247.ics  
-    
 ??? Quote "[Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)"  
     [![](https://ctftime.org/media/events/12e936bf3a5de410fc3506bfdffb608a.jpg){ width="200" align=left }](https://challengethecyber.nl/)  
     **比赛名称** : [Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)  

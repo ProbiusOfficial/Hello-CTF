@@ -344,15 +344,6 @@ hide:
                 **其他说明** : 比赛时间未定  
                 
         === "国外赛事"
-            ??? Quote "[Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)"  
-                [![](https://ctftime.org/media/events/midnight.png){ width="200" align=left }](https://midnightsunctf.com/)  
-                **比赛名称** : [Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-20 18:00:00 - 2024-04-21 18:00:00 UTC+8  
-                **比赛权重** : 35.74  
-                **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-                **添加日历** : https://ctftime.org/event/2247.ics  
-                
             ??? Quote "[Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)"  
                 [![](https://ctftime.org/media/events/12e936bf3a5de410fc3506bfdffb608a.jpg){ width="200" align=left }](https://challengethecyber.nl/)  
                 **比赛名称** : [Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)  
@@ -805,13 +796,6 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-            ??? Quote "[浙江警察学院平航杯电子数据取证比赛](https://mp.weixin.qq.com/s/ImWNs003Xsh-lruhC_addQ)"  
-                **比赛名称** : [浙江警察学院平航杯电子数据取证比赛](https://mp.weixin.qq.com/s/ImWNs003Xsh-lruhC_addQ)  
-                **比赛类型** : 团队赛|1-3人  
-                **报名时间** : 2024年04月05日 12:00 - 2024年04月15日 12:00  
-                **比赛时间** : 2024年04月20日 14:00 - 2024年04月20日 18:00  
-                **其他说明** : QQ群：810961465  
-                
             ??? Quote "[GEEKCON 2024 国际站AVSS挑战赛](https://mp.weixin.qq.com/s/iA1PQ9ExwVlRN_iOB7INAg)"  
                 **比赛名称** : [GEEKCON 2024 国际站AVSS挑战赛](https://mp.weixin.qq.com/s/iA1PQ9ExwVlRN_iOB7INAg)  
                 **比赛类型** : 团队赛  
@@ -913,8 +897,24 @@ hide:
                 **赛事主办** : YCF (https://ctftime.org/team/179685)  
                 **添加日历** : https://ctftime.org/event/2331.ics  
                 
+            ??? Quote "[Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)"  
+                [![](https://ctftime.org/media/events/midnight.png){ width="200" align=left }](https://midnightsunctf.com/)  
+                **比赛名称** : [Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-20 18:00:00 - 2024-04-21 18:00:00 UTC+8  
+                **比赛权重** : 35.74  
+                **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
+                **添加日历** : https://ctftime.org/event/2247.ics  
+                
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[浙江警察学院平航杯电子数据取证比赛](https://mp.weixin.qq.com/s/ImWNs003Xsh-lruhC_addQ)"  
+                **比赛名称** : [浙江警察学院平航杯电子数据取证比赛](https://mp.weixin.qq.com/s/ImWNs003Xsh-lruhC_addQ)  
+                **比赛类型** : 团队赛|1-3人  
+                **报名时间** : 2024年04月05日 12:00 - 2024年04月15日 12:00  
+                **比赛时间** : 2024年04月20日 14:00 - 2024年04月20日 18:00  
+                **其他说明** : QQ群：810961465  
+                
             ??? Quote "[第四届红明谷杯（初赛）](https://www.sm.gov.cn/inc/hgbm/)"  
                 **比赛名称** : [第四届红明谷杯（初赛）](https://www.sm.gov.cn/inc/hgbm/)  
                 **比赛类型** : 团队赛 | 1-3 人  

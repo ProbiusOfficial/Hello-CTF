@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群：733181790  
                 
     === "国外比赛"
-        ??? Quote "[Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)"  
-            [![](https://ctftime.org/media/events/midnight.png){ width="200" align=left }](https://midnightsunctf.com/)  
-            **比赛名称** : [Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-04-20 18:00:00 - 2024-04-21 18:00:00 UTC+8  
-            **比赛权重** : 35.74  
-            **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-            **添加日历** : https://ctftime.org/event/2247.ics  
-            
         ??? Quote "[Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)"  
             [![](https://ctftime.org/media/events/12e936bf3a5de410fc3506bfdffb608a.jpg){ width="200" align=left }](https://challengethecyber.nl/)  
             **比赛名称** : [Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 33.40  
             **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
             **添加日历** : https://ctftime.org/event/2271.ics  
+            
+        ??? Quote "[UMDCTF 2024](https://umdctf.io/)"  
+            [![](https://ctftime.org/media/events/logo_95.png){ width="200" align=left }](https://umdctf.io/)  
+            **比赛名称** : [UMDCTF 2024](https://umdctf.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-04-27 06:00:00 - 2024-04-29 06:00:00 UTC+8  
+            **比赛权重** : 48.92  
+            **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
+            **添加日历** : https://ctftime.org/event/2323.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

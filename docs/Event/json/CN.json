@@ -58,17 +58,6 @@
                 "status": 1
             },
             {
-                "name": "浙江警察学院平航杯电子数据取证比赛",
-                "link": "https://mp.weixin.qq.com/s/ImWNs003Xsh-lruhC_addQ",
-                "type": "团队赛|1-3人",
-                "bmks": "2024年04月05日 12:00",
-                "bmjz": "2024年04月15日 12:00",
-                "bsks": "2024年04月20日 14:00",
-                "bsjs": "2024年04月20日 18:00",
-                "readmore": "QQ群：810961465",
-                "status": 3
-            },
-            {
                 "name": "GEEKCON 2024 国际站AVSS挑战赛",
                 "link": "https://mp.weixin.qq.com/s/iA1PQ9ExwVlRN_iOB7INAg",
                 "type": "团队赛",
@@ -111,6 +100,17 @@
                 "bsjs": "2024年05月01日 10:00",
                 "readmore": "赛事群：798794707",
                 "status": 3
+            },
+            {
+                "name": "浙江警察学院平航杯电子数据取证比赛",
+                "link": "https://mp.weixin.qq.com/s/ImWNs003Xsh-lruhC_addQ",
+                "type": "团队赛|1-3人",
+                "bmks": "2024年04月05日 12:00",
+                "bmjz": "2024年04月15日 12:00",
+                "bsks": "2024年04月20日 14:00",
+                "bsjs": "2024年04月20日 18:00",
+                "readmore": "QQ群：810961465",
+                "status": 4
             },
             {
                 "name": "第四届红明谷杯（初赛）",
