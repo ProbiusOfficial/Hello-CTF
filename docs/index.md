@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群：733181790  
                 
     === "国外比赛"
-        ??? Quote "[Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)"  
-            [![](https://ctftime.org/media/events/12e936bf3a5de410fc3506bfdffb608a.jpg){ width="200" align=left }](https://challengethecyber.nl/)  
-            **比赛名称** : [Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-04-20 19:00:00 - 2024-04-21 01:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Challenge the Cyber (https://ctftime.org/team/181210)  
-            **添加日历** : https://ctftime.org/event/2277.ics  
-            
         ??? Quote "[cr3 CTF 2024](https://cr3c.tf/)"  
             [![](https://ctftime.org/media/events/cr3ctf_2024.png){ width="200" align=left }](https://cr3c.tf/)  
             **比赛名称** : [cr3 CTF 2024](https://cr3c.tf/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 48.92  
             **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
             **添加日历** : https://ctftime.org/event/2323.ics  
+            
+        ??? Quote "[HACKTHEON SEJONG 2024 Preliminaries](https://hacktheon.org/)"  
+            [![](https://ctftime.org/media/events/CTF_2024.JPG){ width="200" align=left }](https://hacktheon.org/)  
+            **比赛名称** : [HACKTHEON SEJONG 2024 Preliminaries](https://hacktheon.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-04-27 08:00:00 - 2024-04-27 17:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
+            **添加日历** : https://ctftime.org/event/2286.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
