@@ -351,24 +351,6 @@ hide:
                 **其他说明** : QQ群：810961465  
                 
         === "国外赛事"
-            ??? Quote "[Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
-                **比赛名称** : [Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8  
-                **比赛权重** : 22.46  
-                **赛事主办** : NUSGreyhats (https://ctftime.org/team/16740)  
-                **添加日历** : https://ctftime.org/event/2242.ics  
-                
-            ??? Quote "[Nexus Elites CTF](https://nexusctf.ycfteam.in/)"  
-                [![](https://ctftime.org/media/events/CTF_logo.jpg){ width="200" align=left }](https://nexusctf.ycfteam.in/)  
-                **比赛名称** : [Nexus Elites CTF](https://nexusctf.ycfteam.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : YCF (https://ctftime.org/team/179685)  
-                **添加日历** : https://ctftime.org/event/2331.ics  
-                
             ??? Quote "[Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)"  
                 [![](https://ctftime.org/media/events/midnight.png){ width="200" align=left }](https://midnightsunctf.com/)  
                 **比赛名称** : [Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)  
@@ -912,6 +894,24 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : GEEKCON (https://ctftime.org/team/255059)  
                 **添加日历** : https://ctftime.org/event/2335.ics  
+                
+            ??? Quote "[Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
+                **比赛名称** : [Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8  
+                **比赛权重** : 22.46  
+                **赛事主办** : NUSGreyhats (https://ctftime.org/team/16740)  
+                **添加日历** : https://ctftime.org/event/2242.ics  
+                
+            ??? Quote "[Nexus Elites CTF](https://nexusctf.ycfteam.in/)"  
+                [![](https://ctftime.org/media/events/CTF_logo.jpg){ width="200" align=left }](https://nexusctf.ycfteam.in/)  
+                **比赛名称** : [Nexus Elites CTF](https://nexusctf.ycfteam.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : YCF (https://ctftime.org/team/179685)  
+                **添加日历** : https://ctftime.org/event/2331.ics  
                 
     === "*已经结束*"
         === "国内赛事"
