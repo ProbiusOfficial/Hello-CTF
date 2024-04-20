@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "CPCTF 2024",
-        "比赛时间": "2024-04-20 09:00:00 - 2024-04-21 15:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2338.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cpctf.space/",
-        "比赛标志": "https://ctftime.org/media/events/624f1650cfdb45fb857a62b9304d4a1c.png",
-        "比赛权重": "0",
-        "赛事主办": "traP (https://ctftime.org/team/62510)",
-        "比赛ID": "934",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "AVSS Contest 2024",
         "比赛时间": "2024-04-20 10:00:00 - 2024-04-22 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2335.ics",
@@ -705,6 +693,18 @@
         "比赛权重": "43.10",
         "赛事主办": "SavedByTheShell (https://ctftime.org/team/78233)",
         "比赛ID": "598",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CPCTF 2024",
+        "比赛时间": "2024-04-20 09:00:00 - 2024-04-21 15:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2338.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cpctf.space/",
+        "比赛标志": "https://ctftime.org/media/events/624f1650cfdb45fb857a62b9304d4a1c.png",
+        "比赛权重": "0",
+        "赛事主办": "traP (https://ctftime.org/team/62510)",
+        "比赛ID": "934",
         "比赛状态": "nowrunning"
     },
     {

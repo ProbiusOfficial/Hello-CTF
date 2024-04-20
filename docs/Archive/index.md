@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅析SmartBi逻辑漏洞(3)](https://y4tacker.github.io/2024/04/19/year/2024/4/%E6%B5%85%E6%9E%90SmartBi%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E-3/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-04-19
+
+    浅析SmartBi逻辑漏洞(3)前言这个系列终于到了第三篇，指条路，如果忘记了可以再看看之前写的文章浅析Smartbi逻辑漏洞浅析Smartbi逻辑漏洞(2)之前我就曾在第二篇末尾提到过（没人继续深入看），仍然存在一个问题，今天这个问题终于得以修复当然老规矩，这里仅分享逻辑漏洞部分补丁绕过思路，不提供完整payload补丁补丁中新增了一个规则12345"rules": [{    "classNa...
     ### [保研or就业---阿里云实习之旅](https://y4tacker.github.io/2024/04/17/year/2022/10/%E4%BF%9D%E7%A0%94or%E5%B0%B1%E4%B8%9A---%E9%98%BF%E9%87%8C%E4%BA%91%E5%AE%9E%E4%B9%A0%E4%B9%8B%E6%97%85/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-04-17
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2023-12-09
 
     Apache Struts2 文件上传分析(S2-066)struts2也很久没出过漏洞了吧，这次爆的是和文件上传相关相关的commit在https://github.com/apache/struts/commit/162e29fee9136f4bfd9b2376da2cbf590f9ea163首先从commit可以看出，漏洞和大小写参数有关，后面会具体谈及同时结合CVE描述我们可以知道，大概和...
-    ### [某某通漏洞浅析](https://y4tacker.github.io/2023/12/08/year/2023/12/%E6%9F%90%E6%9F%90%E9%80%9A%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-12-08
-
-    e1bd3e68fe0e95aad543147235f13aa8c07db101f08238b29c49348e526ca2c395ff16b5184fe4ee67b8dd1840f69936917a685390975ecb78405622c312487d5e6b45d97870e169a38f37bd7a2e95cc0dc308895eb7b6e6c6388b8f5be9932f20a506...
 
 </div>

@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群:619577692 / 852601317 邮箱:iscc2004@163.com  
                 
     === "国外比赛"
-        ??? Quote "[CPCTF 2024](https://cpctf.space/)"  
-            [![](https://ctftime.org/media/events/624f1650cfdb45fb857a62b9304d4a1c.png){ width="200" align=left }](https://cpctf.space/)  
-            **比赛名称** : [CPCTF 2024](https://cpctf.space/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-04-20 09:00:00 - 2024-04-21 15:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : traP (https://ctftime.org/team/62510)  
-            **添加日历** : https://ctftime.org/event/2338.ics  
-            
         ??? Quote "[AVSS Contest 2024](https://avss.geekcon.top/)"  
             [![](https://ctftime.org/media/events/AVSS.png){ width="200" align=left }](https://avss.geekcon.top/)  
             **比赛名称** : [AVSS Contest 2024](https://avss.geekcon.top/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : YCF (https://ctftime.org/team/179685)  
             **添加日历** : https://ctftime.org/event/2331.ics  
+            
+        ??? Quote "[Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)"  
+            [![](https://ctftime.org/media/events/midnight.png){ width="200" align=left }](https://midnightsunctf.com/)  
+            **比赛名称** : [Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-04-20 18:00:00 - 2024-04-21 18:00:00 UTC+8  
+            **比赛权重** : 35.74  
+            **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
+            **添加日历** : https://ctftime.org/event/2247.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
