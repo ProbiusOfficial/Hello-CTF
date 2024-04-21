@@ -84,7 +84,7 @@ hide:
     ### [IP-Guard权限绕过浅析](https://y4tacker.github.io/2024/04/17/year/2024/4/IP-Guard%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E6%B5%85%E6%9E%90/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-04-17
 
-    226125863bbf5aa56517b3f0c09a775281668980f8d10e95e65c0c765d7b0c74091d903d905cb1780a8298b564cf8153e5a81795b888396ccc50b51fb6f7ea966b04c5f2b55c99e264122d017f42684c774e9c78755ec028eb703f2b01fd21f13c11a2...
+    IP-Guard权限绕过浅析比较适合新手学习的一个审计案例，代码简单无阅读障碍权限绕过IP-Guard采用CodeIgniter框架二次开发，从微步情报看作用仅是”可以绕过权限验证，调用后台接口进行任意文件读取、删除。攻击者可利用该漏洞读取数据库配置信息，进而接管数据库”通常来说，CodeIgniter中的鉴权通常是在控制器中的构造函数中因为代码不多，最后可以发现涉及文件读写的在mApplyLis...
     ### [泛微E-Office10最新远程代码执行漏洞分析](https://y4tacker.github.io/2024/03/27/year/2024/3/%E6%B3%9B%E5%BE%AEE-Office10%E6%9C%80%E6%96%B0%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-03-27
 
