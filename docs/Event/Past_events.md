@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Quote "D^3CTF2024"  
+    **比赛名称** : [D^3CTF2024](https://d3c.tf/)  
+    **比赛类型** : 团队赛 | Jeopardy  
+    **报名时间** : 2024年04月07日 09:00 - 2024年04月19日 20:00  
+    **比赛时间** : 2024年04月19日 20:00 - 2024年04月21日 20:00  
+    **其他说明** : QQ群：317828357  
+    
 ??? Quote "第一届“帕鲁杯”CTF应急响应挑战赛"  
     **比赛名称** : [第一届“帕鲁杯”CTF应急响应挑战赛](https://paluctf.runctf.cn/)  
     **比赛类型** : 团体赛1-4人  
@@ -109,15 +116,6 @@ comments: true
     **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
     **添加日历** : https://ctftime.org/event/2247.ics  
     
-??? Quote "[Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
-    **比赛名称** : [Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8  
-    **比赛权重** : 22.46  
-    **赛事主办** : NUSGreyhats (https://ctftime.org/team/16740)  
-    **添加日历** : https://ctftime.org/event/2242.ics  
-    
 ??? Quote "[Nexus Elites CTF](https://nexusctf.ycfteam.in/)"  
     [![](https://ctftime.org/media/events/CTF_logo.jpg){ width="200" align=left }](https://nexusctf.ycfteam.in/)  
     **比赛名称** : [Nexus Elites CTF](https://nexusctf.ycfteam.in/)  
@@ -126,6 +124,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : YCF (https://ctftime.org/team/179685)  
     **添加日历** : https://ctftime.org/event/2331.ics  
+    
+??? Quote "[Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
+    **比赛名称** : [Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8  
+    **比赛权重** : 22.46  
+    **赛事主办** : NUSGreyhats (https://ctftime.org/team/16740)  
+    **添加日历** : https://ctftime.org/event/2242.ics  
     
 ??? Quote "[CPCTF 2024](https://cpctf.space/)"  
     [![](https://ctftime.org/media/events/624f1650cfdb45fb857a62b9304d4a1c.png){ width="200" align=left }](https://cpctf.space/)  
@@ -600,7 +607,7 @@ comments: true
     **比赛名称** : [osu!gaming CTF 2024](https://www.osugaming.lol/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-03-02 01:00:00 - 2024-03-04 01:00:00 UTC+8  
-    **比赛权重** : 23.87  
+    **比赛权重** : 23.89  
     **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
     **添加日历** : https://ctftime.org/event/2165.ics  
     

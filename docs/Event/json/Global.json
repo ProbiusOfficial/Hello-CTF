@@ -672,18 +672,6 @@
         "比赛状态": "past"
     },
     {
-        "比赛名称": "Grey Cat The Flag 2024 Qualifiers",
-        "比赛时间": "2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2242.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.nusgreyhats.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "22.46",
-        "赛事主办": "NUSGreyhats (https://ctftime.org/team/16740)",
-        "比赛ID": "778",
-        "比赛状态": "past"
-    },
-    {
         "比赛名称": "Nexus Elites CTF",
         "比赛时间": "2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2331.ics",
@@ -693,6 +681,18 @@
         "比赛权重": "0.00",
         "赛事主办": "YCF (https://ctftime.org/team/179685)",
         "比赛ID": "1101",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Grey Cat The Flag 2024 Qualifiers",
+        "比赛时间": "2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2242.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.nusgreyhats.org/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "22.46",
+        "赛事主办": "NUSGreyhats (https://ctftime.org/team/16740)",
+        "比赛ID": "778",
         "比赛状态": "past"
     },
     {
@@ -1326,7 +1326,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://www.osugaming.lol/",
         "比赛标志": "https://ctftime.org/media/events/unknown_1.png",
-        "比赛权重": "23.87",
+        "比赛权重": "23.89",
         "赛事主办": "osu!gaming (https://ctftime.org/team/186954)",
         "比赛ID": "998",
         "比赛状态": "past"
