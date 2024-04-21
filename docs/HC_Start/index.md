@@ -240,7 +240,7 @@ CTF题目开启的基本形式如下：
 如果你想了解更多或者前沿，可以参考「 **开放式Web应用程序安全项目 OWASP(Open Web Application Security Project)**」  计划
 
 **Web方向涉及的技术栈以及大致认知路线**: 
-**Js**(Javascript) → **PHP**(语言基础,语言特性) → **PHP框架**(例如ThinkPHP) → **python** **java** → **web框架** 例如Flask(python) Springboot(java) Node.js(Javascrip) ....
+**Js**(Javascript) → **PHP**(语言基础,语言特性) → **PHP框架**(例如ThinkPHP) → **python** **java** → **web框架** 例如Flask(python) Springboot(java) Node.js(Javascript) ....
 
 !!! warning "注意"
     与开发不同，您无需完整掌握语言再去做题，在了解语言基础后，要做的就是通过题目去学习语言的特性，例如PHP的弱类型特性，Python的反序列化等等，这样的学习方式会更加高效。
