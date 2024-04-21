@@ -648,18 +648,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Midnight Sun CTF 2024 Quals",
-        "比赛时间": "2024-04-20 18:00:00 - 2024-04-21 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2247.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://midnightsunctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/midnight.png",
-        "比赛权重": "35.74",
-        "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
-        "比赛ID": "246",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Challenge the Cyber - Cyber Chef",
         "比赛时间": "2024-04-20 19:00:00 - 2024-04-21 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2277.ics",
@@ -669,6 +657,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Challenge the Cyber (https://ctftime.org/team/181210)",
         "比赛ID": "776",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Midnight Sun CTF 2024 Quals",
+        "比赛时间": "2024-04-20 18:00:00 - 2024-04-21 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2247.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://midnightsunctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/midnight.png",
+        "比赛权重": "35.74",
+        "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
+        "比赛ID": "246",
         "比赛状态": "past"
     },
     {
@@ -1845,18 +1845,6 @@
         "比赛权重": "6.67",
         "赛事主办": "UAC (https://ctftime.org/team/140846)",
         "比赛ID": "653",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "IWCON CTF",
-        "比赛时间": "2023-12-14 18:26:53 - 2023-12-15 18:26:53 UTC+8",
-        "添加日历": "https://ctftime.org/event/2214.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://iwcon.live/ctf",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "IWCON (https://ctftime.org/team/277281)",
-        "比赛ID": "1042",
         "比赛状态": "past"
     }
 ]
