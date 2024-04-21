@@ -636,18 +636,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CPCTF 2024",
-        "比赛时间": "2024-04-20 09:00:00 - 2024-04-21 15:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2338.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cpctf.space/",
-        "比赛标志": "https://ctftime.org/media/events/624f1650cfdb45fb857a62b9304d4a1c.png",
-        "比赛权重": "0",
-        "赛事主办": "traP (https://ctftime.org/team/62510)",
-        "比赛ID": "934",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "AVSS Contest 2024",
         "比赛时间": "2024-04-20 10:00:00 - 2024-04-22 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2335.ics",
@@ -705,6 +693,18 @@
         "比赛权重": "0.00",
         "赛事主办": "YCF (https://ctftime.org/team/179685)",
         "比赛ID": "1101",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "CPCTF 2024",
+        "比赛时间": "2024-04-20 09:00:00 - 2024-04-21 15:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2338.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cpctf.space/",
+        "比赛标志": "https://ctftime.org/media/events/624f1650cfdb45fb857a62b9304d4a1c.png",
+        "比赛权重": "0",
+        "赛事主办": "traP (https://ctftime.org/team/62510)",
+        "比赛ID": "934",
         "比赛状态": "past"
     },
     {
@@ -1857,18 +1857,6 @@
         "比赛权重": "0.00",
         "赛事主办": "IWCON (https://ctftime.org/team/277281)",
         "比赛ID": "1042",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Intent CTF 2023",
-        "比赛时间": "2023-12-13 16:30:00 - 2023-12-15 16:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2130.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://intentsummit.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Security Research Summit (SRS) (https://ctftime.org/team/163107)",
-        "比赛ID": "672",
         "比赛状态": "past"
     }
 ]

@@ -111,6 +111,15 @@ comments: true
     **赛事主办** : YCF (https://ctftime.org/team/179685)  
     **添加日历** : https://ctftime.org/event/2331.ics  
     
+??? Quote "[CPCTF 2024](https://cpctf.space/)"  
+    [![](https://ctftime.org/media/events/624f1650cfdb45fb857a62b9304d4a1c.png){ width="200" align=left }](https://cpctf.space/)  
+    **比赛名称** : [CPCTF 2024](https://cpctf.space/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-20 09:00:00 - 2024-04-21 15:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : traP (https://ctftime.org/team/62510)  
+    **添加日历** : https://ctftime.org/event/2338.ics  
+    
 ??? Quote "[Incognito 5.0](https://ictf5.ninja/)"  
     [![](https://ctftime.org/media/events/lo.png){ width="200" align=left }](https://ictf5.ninja/)  
     **比赛名称** : [Incognito 5.0](https://ictf5.ninja/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : IWCON (https://ctftime.org/team/277281)  
     **添加日历** : https://ctftime.org/event/2214.ics  
-    
-??? Quote "[Intent CTF 2023](https://intentsummit.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://intentsummit.org/)  
-    **比赛名称** : [Intent CTF 2023](https://intentsummit.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-13 16:30:00 - 2023-12-15 16:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Security Research Summit (SRS) (https://ctftime.org/team/163107)  
-    **添加日历** : https://ctftime.org/event/2130.ics  
     
