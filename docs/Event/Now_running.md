@@ -40,15 +40,6 @@ comments: true
     **赛事主办** : Zero Day Club (https://ctftime.org/team/286318)  
     **添加日历** : https://ctftime.org/event/2313.ics  
     
-??? Quote "[CTF@CIT 2024](https://ctf.cyber-cit.club/)"  
-    [![](https://ctftime.org/media/events/CTF-CIT-ctftime.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
-    **比赛名称** : [CTF@CIT 2024](https://ctf.cyber-cit.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-20 05:00:00 - 2024-04-22 03:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
-    **添加日历** : https://ctftime.org/event/2339.ics  
-    
 ??? Quote "[UMassCTF 2024](https://ctf.umasscybersec.org/)"  
     [![](https://ctftime.org/media/events/CTF_LOGO_20240401_190034_0000.png){ width="200" align=left }](https://ctf.umasscybersec.org/)  
     **比赛名称** : [UMassCTF 2024](https://ctf.umasscybersec.org/)  

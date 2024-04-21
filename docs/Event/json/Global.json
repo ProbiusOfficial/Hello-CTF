@@ -612,18 +612,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CTF@CIT 2024",
-        "比赛时间": "2024-04-20 05:00:00 - 2024-04-22 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2339.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.cyber-cit.club/",
-        "比赛标志": "https://ctftime.org/media/events/CTF-CIT-ctftime.png",
-        "比赛权重": "0",
-        "赛事主办": "HACK@CIT (https://ctftime.org/team/287896)",
-        "比赛ID": "1109",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "UMassCTF 2024",
         "比赛时间": "2024-04-20 06:00:00 - 2024-04-22 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2287.ics",
@@ -705,6 +693,18 @@
         "比赛权重": "0",
         "赛事主办": "traP (https://ctftime.org/team/62510)",
         "比赛ID": "934",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "CTF@CIT 2024",
+        "比赛时间": "2024-04-20 05:00:00 - 2024-04-22 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2339.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.cyber-cit.club/",
+        "比赛标志": "https://ctftime.org/media/events/CTF-CIT-ctftime.png",
+        "比赛权重": "0",
+        "赛事主办": "HACK@CIT (https://ctftime.org/team/287896)",
+        "比赛ID": "1109",
         "比赛状态": "past"
     },
     {
@@ -1833,18 +1833,6 @@
         "比赛权重": "24.21",
         "赛事主办": "The Cyber Cooperative (https://ctftime.org/team/276494)",
         "比赛ID": "1033",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "7th Stage MetaRed TIC Portugal 2023",
-        "比赛时间": "2023-12-14 21:00:00 - 2023-12-15 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2099.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "6.67",
-        "赛事主办": "UAC (https://ctftime.org/team/140846)",
-        "比赛ID": "653",
         "比赛状态": "past"
     }
 ]

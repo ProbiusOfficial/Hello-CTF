@@ -820,15 +820,6 @@ hide:
                 **赛事主办** : Zero Day Club (https://ctftime.org/team/286318)  
                 **添加日历** : https://ctftime.org/event/2313.ics  
                 
-            ??? Quote "[CTF@CIT 2024](https://ctf.cyber-cit.club/)"  
-                [![](https://ctftime.org/media/events/CTF-CIT-ctftime.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
-                **比赛名称** : [CTF@CIT 2024](https://ctf.cyber-cit.club/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-20 05:00:00 - 2024-04-22 03:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
-                **添加日历** : https://ctftime.org/event/2339.ics  
-                
             ??? Quote "[UMassCTF 2024](https://ctf.umasscybersec.org/)"  
                 [![](https://ctftime.org/media/events/CTF_LOGO_20240401_190034_0000.png){ width="200" align=left }](https://ctf.umasscybersec.org/)  
                 **比赛名称** : [UMassCTF 2024](https://ctf.umasscybersec.org/)  
@@ -985,6 +976,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : traP (https://ctftime.org/team/62510)  
                 **添加日历** : https://ctftime.org/event/2338.ics  
+                
+            ??? Quote "[CTF@CIT 2024](https://ctf.cyber-cit.club/)"  
+                [![](https://ctftime.org/media/events/CTF-CIT-ctftime.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
+                **比赛名称** : [CTF@CIT 2024](https://ctf.cyber-cit.club/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-20 05:00:00 - 2024-04-22 03:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
+                **添加日历** : https://ctftime.org/event/2339.ics  
                 
             ??? Quote "[Incognito 5.0](https://ictf5.ninja/)"  
                 [![](https://ctftime.org/media/events/lo.png){ width="200" align=left }](https://ictf5.ninja/)  
@@ -1831,15 +1831,6 @@ hide:
                 **比赛权重** : 24.21  
                 **赛事主办** : The Cyber Cooperative (https://ctftime.org/team/276494)  
                 **添加日历** : https://ctftime.org/event/2206.ics  
-                
-            ??? Quote "[7th Stage MetaRed TIC Portugal 2023](http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE)"  
-                [![](https://ctftime.org){ width="200" align=left }](http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE)  
-                **比赛名称** : [7th Stage MetaRed TIC Portugal 2023](http://eventos.metared.org/go/CTFMetaRed2023-7thSTAGE)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-12-14 21:00:00 - 2023-12-15 21:00:00 UTC+8  
-                **比赛权重** : 6.67  
-                **赛事主办** : UAC (https://ctftime.org/team/140846)  
-                **添加日历** : https://ctftime.org/event/2099.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
