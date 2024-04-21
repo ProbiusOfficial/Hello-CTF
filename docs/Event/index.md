@@ -1045,7 +1045,7 @@ hide:
                 **比赛名称** : [ShunyaCTF Aarambha](https://shunya.ctf.eng.run/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-04-13 00:30:00 - 2024-04-14 12:30:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 24.27  
                 **赛事主办** : nCreeps (https://ctftime.org/team/203035)  
                 **添加日历** : https://ctftime.org/event/2336.ics  
                 
