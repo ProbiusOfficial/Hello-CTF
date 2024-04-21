@@ -660,30 +660,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Grey Cat The Flag 2024 Qualifiers",
-        "比赛时间": "2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2242.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.nusgreyhats.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "22.46",
-        "赛事主办": "NUSGreyhats (https://ctftime.org/team/16740)",
-        "比赛ID": "778",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "Nexus Elites CTF",
-        "比赛时间": "2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2331.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nexusctf.ycfteam.in/",
-        "比赛标志": "https://ctftime.org/media/events/CTF_logo.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "YCF (https://ctftime.org/team/179685)",
-        "比赛ID": "1101",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Midnight Sun CTF 2024 Quals",
         "比赛时间": "2024-04-20 18:00:00 - 2024-04-21 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2247.ics",
@@ -705,6 +681,30 @@
         "比赛权重": "0.00",
         "赛事主办": "Challenge the Cyber (https://ctftime.org/team/181210)",
         "比赛ID": "776",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Grey Cat The Flag 2024 Qualifiers",
+        "比赛时间": "2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2242.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.nusgreyhats.org/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "22.46",
+        "赛事主办": "NUSGreyhats (https://ctftime.org/team/16740)",
+        "比赛ID": "778",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Nexus Elites CTF",
+        "比赛时间": "2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2331.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nexusctf.ycfteam.in/",
+        "比赛标志": "https://ctftime.org/media/events/CTF_logo.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "YCF (https://ctftime.org/team/179685)",
+        "比赛ID": "1101",
         "比赛状态": "past"
     },
     {
@@ -1869,30 +1869,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Security Research Summit (SRS) (https://ctftime.org/team/163107)",
         "比赛ID": "672",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "HACKOLINE",
-        "比赛时间": "2023-12-10 17:00:00 - 2023-12-11 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2204.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://mrwebx.com/event/#/home",
-        "比赛标志": "https://ctftime.org/media/events/instagram.jpeg",
-        "比赛权重": "0.00",
-        "赛事主办": "mrwebsecure (https://ctftime.org/team/276542)",
-        "比赛ID": "1036",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "ISITDTU CTF 2023 Finals",
-        "比赛时间": "2023-12-10 09:00:00 - 2023-12-10 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2090.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://ctf.isitdtu.com/",
-        "比赛标志": "https://ctftime.org/media/events/index_1.gif",
-        "比赛权重": "37.00",
-        "赛事主办": "ISITDTU (https://ctftime.org/team/8241)",
-        "比赛ID": "258",
         "比赛状态": "past"
     }
 ]

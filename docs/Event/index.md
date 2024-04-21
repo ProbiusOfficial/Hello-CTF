@@ -870,24 +870,6 @@ hide:
                 **赛事主办** : GEEKCON (https://ctftime.org/team/255059)  
                 **添加日历** : https://ctftime.org/event/2335.ics  
                 
-            ??? Quote "[Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
-                **比赛名称** : [Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8  
-                **比赛权重** : 22.46  
-                **赛事主办** : NUSGreyhats (https://ctftime.org/team/16740)  
-                **添加日历** : https://ctftime.org/event/2242.ics  
-                
-            ??? Quote "[Nexus Elites CTF](https://nexusctf.ycfteam.in/)"  
-                [![](https://ctftime.org/media/events/CTF_logo.jpg){ width="200" align=left }](https://nexusctf.ycfteam.in/)  
-                **比赛名称** : [Nexus Elites CTF](https://nexusctf.ycfteam.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : YCF (https://ctftime.org/team/179685)  
-                **添加日历** : https://ctftime.org/event/2331.ics  
-                
             ??? Quote "[Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)"  
                 [![](https://ctftime.org/media/events/midnight.png){ width="200" align=left }](https://midnightsunctf.com/)  
                 **比赛名称** : [Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)  
@@ -985,6 +967,24 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Challenge the Cyber (https://ctftime.org/team/181210)  
                 **添加日历** : https://ctftime.org/event/2277.ics  
+                
+            ??? Quote "[Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
+                **比赛名称** : [Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8  
+                **比赛权重** : 22.46  
+                **赛事主办** : NUSGreyhats (https://ctftime.org/team/16740)  
+                **添加日历** : https://ctftime.org/event/2242.ics  
+                
+            ??? Quote "[Nexus Elites CTF](https://nexusctf.ycfteam.in/)"  
+                [![](https://ctftime.org/media/events/CTF_logo.jpg){ width="200" align=left }](https://nexusctf.ycfteam.in/)  
+                **比赛名称** : [Nexus Elites CTF](https://nexusctf.ycfteam.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : YCF (https://ctftime.org/team/179685)  
+                **添加日历** : https://ctftime.org/event/2331.ics  
                 
             ??? Quote "[Incognito 5.0](https://ictf5.ninja/)"  
                 [![](https://ctftime.org/media/events/lo.png){ width="200" align=left }](https://ictf5.ninja/)  
@@ -1858,24 +1858,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Security Research Summit (SRS) (https://ctftime.org/team/163107)  
                 **添加日历** : https://ctftime.org/event/2130.ics  
-                
-            ??? Quote "[HACKOLINE](https://mrwebx.com/event/#/home)"  
-                [![](https://ctftime.org/media/events/instagram.jpeg){ width="200" align=left }](https://mrwebx.com/event/#/home)  
-                **比赛名称** : [HACKOLINE](https://mrwebx.com/event/#/home)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2023-12-10 17:00:00 - 2023-12-11 03:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : mrwebsecure (https://ctftime.org/team/276542)  
-                **添加日历** : https://ctftime.org/event/2204.ics  
-                
-            ??? Quote "[ISITDTU CTF 2023 Finals](https://ctf.isitdtu.com/)"  
-                [![](https://ctftime.org/media/events/index_1.gif){ width="200" align=left }](https://ctf.isitdtu.com/)  
-                **比赛名称** : [ISITDTU CTF 2023 Finals](https://ctf.isitdtu.com/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2023-12-10 09:00:00 - 2023-12-10 17:00:00 UTC+8  
-                **比赛权重** : 37.00  
-                **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
-                **添加日历** : https://ctftime.org/event/2090.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
