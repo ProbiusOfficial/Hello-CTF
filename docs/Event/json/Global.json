@@ -612,18 +612,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "UMassCTF 2024",
-        "比赛时间": "2024-04-20 06:00:00 - 2024-04-22 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2287.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.umasscybersec.org/",
-        "比赛标志": "https://ctftime.org/media/events/CTF_LOGO_20240401_190034_0000.png",
-        "比赛权重": "43.10",
-        "赛事主办": "SavedByTheShell (https://ctftime.org/team/78233)",
-        "比赛ID": "598",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "AVSS Contest 2024",
         "比赛时间": "2024-04-20 10:00:00 - 2024-04-22 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2335.ics",
@@ -693,6 +681,18 @@
         "比赛权重": "0",
         "赛事主办": "traP (https://ctftime.org/team/62510)",
         "比赛ID": "934",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "UMassCTF 2024",
+        "比赛时间": "2024-04-20 06:00:00 - 2024-04-22 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2287.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.umasscybersec.org/",
+        "比赛标志": "https://ctftime.org/media/events/CTF_LOGO_20240401_190034_0000.png",
+        "比赛权重": "43.10",
+        "赛事主办": "SavedByTheShell (https://ctftime.org/team/78233)",
+        "比赛ID": "598",
         "比赛状态": "past"
     },
     {
@@ -786,7 +786,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://shunya.ctf.eng.run/",
         "比赛标志": "https://ctftime.org/media/events/shunyaLogo.png",
-        "比赛权重": "24.27",
+        "比赛权重": "24.30",
         "赛事主办": "nCreeps (https://ctftime.org/team/203035)",
         "比赛ID": "1095",
         "比赛状态": "past"
@@ -1662,7 +1662,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.uoftctf.org/",
         "比赛标志": "https://ctftime.org/media/events/ctf_logo_1.png",
-        "比赛权重": "23.81",
+        "比赛权重": "23.83",
         "赛事主办": "UofTCTF (https://ctftime.org/team/139261)",
         "比赛ID": "1052",
         "比赛状态": "past"
@@ -1821,18 +1821,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Wargames.MY (https://ctftime.org/team/86069)",
         "比赛ID": "1038",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "The Cyber Cooperative CTF",
-        "比赛时间": "2023-12-15 13:01:01 - 2023-12-18 12:59:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2206.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://thecybercoopctf.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/logo_servericon.png",
-        "比赛权重": "24.21",
-        "赛事主办": "The Cyber Cooperative (https://ctftime.org/team/276494)",
-        "比赛ID": "1033",
         "比赛状态": "past"
     }
 ]
