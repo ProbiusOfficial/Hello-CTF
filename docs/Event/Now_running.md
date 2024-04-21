@@ -19,13 +19,6 @@ comments: true
     **比赛时间** : 2024年04月19日 20:00 - 2024年04月21日 20:00  
     **其他说明** : QQ群：317828357  
     
-??? Quote "第一届“帕鲁杯”CTF应急响应挑战赛"  
-    **比赛名称** : [第一届“帕鲁杯”CTF应急响应挑战赛](https://paluctf.runctf.cn/)  
-    **比赛类型** : 团体赛1-4人  
-    **报名时间** : 2024年04月16日 08:00 - 2024年04月19日 08:00  
-    **比赛时间** : 2024年04月19日 08:00 - 2024年04月21日 19:00  
-    **其他说明** : QQ群：710672599  
-    
 ??? Quote "XYCTF高校新生联合赛 2024"  
     **比赛名称** : [XYCTF高校新生联合赛 2024](https://www.xyctf.top/)  
     **比赛类型** : 团队赛 | 1-3人  
@@ -80,13 +73,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : GEEKCON (https://ctftime.org/team/255059)  
     **添加日历** : https://ctftime.org/event/2335.ics  
-    
-??? Quote "[Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)"  
-    [![](https://ctftime.org/media/events/midnight.png){ width="200" align=left }](https://midnightsunctf.com/)  
-    **比赛名称** : [Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-20 18:00:00 - 2024-04-21 18:00:00 UTC+8  
-    **比赛权重** : 35.74  
-    **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-    **添加日历** : https://ctftime.org/event/2247.ics  
     
