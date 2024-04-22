@@ -105,6 +105,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[DawgCTF 2024](https://metactf.com/join/dawgctf24)"  
+    [![](https://ctftime.org/media/events/ctfTimeLogo_2.png){ width="200" align=left }](https://metactf.com/join/dawgctf24)  
+    **比赛名称** : [DawgCTF 2024](https://metactf.com/join/dawgctf24)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-21 00:00:00 - 2024-04-22 07:00:00 UTC+8  
+    **比赛权重** : 46.57  
+    **赛事主办** : UMBC Cyber Dawgs (https://ctftime.org/team/18405)  
+    **添加日历** : https://ctftime.org/event/2343.ics  
+    
 ??? Quote "[Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)"  
     [![](https://ctftime.org/media/events/12e936bf3a5de410fc3506bfdffb608a.jpg){ width="200" align=left }](https://challengethecyber.nl/)  
     **比赛名称** : [Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)  
@@ -995,13 +1004,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : TCM Security (https://ctftime.org/team/275972)  
     **添加日历** : https://ctftime.org/event/2201.ics  
-    
-??? Quote "[BackdoorCTF 2023](https://backdoor.infoseciitr.in/)"  
-    [![](https://ctftime.org/media/events/bckdr.png){ width="200" align=left }](https://backdoor.infoseciitr.in/)  
-    **比赛名称** : [BackdoorCTF 2023](https://backdoor.infoseciitr.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-16 20:00:00 - 2023-12-18 20:00:00 UTC+8  
-    **比赛权重** : 34.00  
-    **赛事主办** : InfoSecIITR (https://ctftime.org/team/16691)  
-    **添加日历** : https://ctftime.org/event/2153.ics  
     
