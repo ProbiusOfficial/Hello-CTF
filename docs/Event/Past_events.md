@@ -177,6 +177,15 @@ comments: true
     **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
     **添加日历** : https://ctftime.org/event/2339.ics  
     
+??? Quote "[SpartanCTF 2024](https://spartan.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/zdc_emblem.png){ width="200" align=left }](https://spartan.ctfd.io/)  
+    **比赛名称** : [SpartanCTF 2024](https://spartan.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-18 00:00:00 - 2024-04-22 13:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Zero Day Club (https://ctftime.org/team/286318)  
+    **添加日历** : https://ctftime.org/event/2313.ics  
+    
 ??? Quote "[Incognito 5.0](https://ictf5.ninja/)"  
     [![](https://ctftime.org/media/events/lo.png){ width="200" align=left }](https://ictf5.ninja/)  
     **比赛名称** : [Incognito 5.0](https://ictf5.ninja/)  
@@ -995,13 +1004,4 @@ comments: true
     **比赛权重** : 34.00  
     **赛事主办** : InfoSecIITR (https://ctftime.org/team/16691)  
     **添加日历** : https://ctftime.org/event/2153.ics  
-    
-??? Quote "[DiceCTF Teaser 2023](https://ctf.dicega.ng/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.dicega.ng/)  
-    **比赛名称** : [DiceCTF Teaser 2023](https://ctf.dicega.ng/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-16 05:00:00 - 2023-12-17 05:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
-    **添加日历** : https://ctftime.org/event/2162.ics  
     

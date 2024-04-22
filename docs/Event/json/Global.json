@@ -600,18 +600,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "SpartanCTF 2024",
-        "比赛时间": "2024-04-18 00:00:00 - 2024-04-22 13:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2313.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://spartan.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/zdc_emblem.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Zero Day Club (https://ctftime.org/team/286318)",
-        "比赛ID": "1089",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Challenge the Cyber - Cyber Chef",
         "比赛时间": "2024-04-20 19:00:00 - 2024-04-21 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2277.ics",
@@ -705,6 +693,18 @@
         "比赛权重": "0",
         "赛事主办": "HACK@CIT (https://ctftime.org/team/287896)",
         "比赛ID": "1109",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "SpartanCTF 2024",
+        "比赛时间": "2024-04-18 00:00:00 - 2024-04-22 13:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2313.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://spartan.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/zdc_emblem.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Zero Day Club (https://ctftime.org/team/286318)",
+        "比赛ID": "1089",
         "比赛状态": "past"
     },
     {
@@ -1797,18 +1797,6 @@
         "比赛权重": "34.00",
         "赛事主办": "InfoSecIITR (https://ctftime.org/team/16691)",
         "比赛ID": "49",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DiceCTF Teaser 2023",
-        "比赛时间": "2023-12-16 05:00:00 - 2023-12-17 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2162.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.dicega.ng/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "DiceGang (https://ctftime.org/team/109452)",
-        "比赛ID": "331",
         "比赛状态": "past"
     }
 ]
