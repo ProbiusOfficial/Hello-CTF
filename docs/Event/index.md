@@ -853,7 +853,7 @@ hide:
                 **比赛名称** : [ASIS CTF Quals 2024](https://asisctf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-09-21 22:00:00 - 2024-09-22 22:00:00 UTC+8  
-                **比赛权重** : 0.00  
+                **比赛权重** : 66.25  
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/2211.ics  
                 
