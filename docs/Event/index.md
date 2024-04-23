@@ -416,6 +416,15 @@ hide:
                 **赛事主办** : UrchinSec (https://ctftime.org/team/175663)  
                 **添加日历** : https://ctftime.org/event/2327.ics  
                 
+            ??? Quote "[AirOverflow CTF - 2024](https://ctf.airoverflow.com/)"  
+                [![](https://ctftime.org/media/events/Cropped_-_No_Name.png){ width="200" align=left }](https://ctf.airoverflow.com/)  
+                **比赛名称** : [AirOverflow CTF - 2024](https://ctf.airoverflow.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-27 20:00:00 - 2024-04-29 04:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : AirOverFlow (https://ctftime.org/team/140448)  
+                **添加日历** : https://ctftime.org/event/2360.ics  
+                
             ??? Quote "[Midnight Flag - Operation BACKSLASH]()"  
                 [![](https://ctftime.org/media/events/logo-3848x3084-upscaled.png){ width="200" align=left }]()  
                 **比赛名称** : [Midnight Flag - Operation BACKSLASH]()  
@@ -731,15 +740,6 @@ hide:
                 **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
                 **添加日历** : https://ctftime.org/event/2296.ics  
                 
-            ??? Quote "[MOCA CTF - Qualification](https://moca.camp/ctf/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://moca.camp/ctf/)  
-                **比赛名称** : [MOCA CTF - Qualification](https://moca.camp/ctf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-22 19:00:00 - 2024-06-23 19:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
-                **添加日历** : https://ctftime.org/event/2293.ics  
-                
             ??? Quote "[UIUCTF 2024](https://uiuc.tf/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://uiuc.tf/)  
                 **比赛名称** : [UIUCTF 2024](https://uiuc.tf/)  
@@ -785,14 +785,14 @@ hide:
                 **赛事主办** : Interlogica (https://ctftime.org/team/250899)  
                 **添加日历** : https://ctftime.org/event/2301.ics  
                 
-            ??? Quote "[MOCA CTF - Finals](https://moca.camp/ctf/)"  
+            ??? Quote "[MOCA CTF - Qualification](https://moca.camp/ctf/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://moca.camp/ctf/)  
-                **比赛名称** : [MOCA CTF - Finals](https://moca.camp/ctf/)  
+                **比赛名称** : [MOCA CTF - Qualification](https://moca.camp/ctf/)  
                 **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-07-14 19:00:00 - 2024-07-15 19:00:00 UTC+8  
+                **比赛时间** : 2024-07-20 17:00:00 - 2024-07-21 17:00:00 UTC+8  
                 **比赛权重** : 0.00  
                 **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
-                **添加日历** : https://ctftime.org/event/2294.ics  
+                **添加日历** : https://ctftime.org/event/2293.ics  
                 
             ??? Quote "[DeadSec CTF 2024]()"  
                 [![](https://ctftime.org/media/events/Picture1_1.png){ width="200" align=left }]()  
@@ -829,6 +829,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
                 **添加日历** : https://ctftime.org/event/2347.ics  
+                
+            ??? Quote "[MOCA CTF - Finals](https://moca.camp/ctf/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://moca.camp/ctf/)  
+                **比赛名称** : [MOCA CTF - Finals](https://moca.camp/ctf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-14 00:00:00 - 2024-09-15 00:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
+                **添加日历** : https://ctftime.org/event/2294.ics  
                 
             ??? Quote "[Pointer Overflow CTF - 2024](http://pointeroverflowctf.com/)"  
                 [![](https://ctftime.org/media/events/poctflogo1transp.png){ width="200" align=left }](http://pointeroverflowctf.com/)  

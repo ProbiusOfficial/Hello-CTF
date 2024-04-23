@@ -96,6 +96,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "AirOverflow CTF - 2024",
+        "比赛时间": "2024-04-27 20:00:00 - 2024-04-29 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2360.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.airoverflow.com/",
+        "比赛标志": "https://ctftime.org/media/events/Cropped_-_No_Name.png",
+        "比赛权重": "0.00",
+        "赛事主办": "AirOverFlow (https://ctftime.org/team/140448)",
+        "比赛ID": "1113",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Midnight Flag - Operation BACKSLASH",
         "比赛时间": "2024-04-28 04:00:00 - 2024-04-28 15:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2295.ics",
@@ -516,18 +528,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "MOCA CTF - Qualification",
-        "比赛时间": "2024-06-22 19:00:00 - 2024-06-23 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2293.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://moca.camp/ctf/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Metro Olografix (https://ctftime.org/team/268425)",
-        "比赛ID": "1075",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "UIUCTF 2024",
         "比赛时间": "2024-06-29 08:00:00 - 2024-07-01 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2275.ics",
@@ -588,9 +588,9 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "MOCA CTF - Finals",
-        "比赛时间": "2024-07-14 19:00:00 - 2024-07-15 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2294.ics",
+        "比赛名称": "MOCA CTF - Qualification",
+        "比赛时间": "2024-07-20 17:00:00 - 2024-07-21 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2293.ics",
         "比赛形式": "Jeopardy",
         "比赛链接": "https://moca.camp/ctf/",
         "比赛标志": "https://ctftime.org",
@@ -645,6 +645,18 @@
         "比赛权重": "0.00",
         "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
         "比赛ID": "4",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "MOCA CTF - Finals",
+        "比赛时间": "2024-09-14 00:00:00 - 2024-09-15 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2294.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://moca.camp/ctf/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "Metro Olografix (https://ctftime.org/team/268425)",
+        "比赛ID": "1075",
         "比赛状态": "oncoming"
     },
     {
