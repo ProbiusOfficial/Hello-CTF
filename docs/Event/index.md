@@ -1041,7 +1041,7 @@ hide:
                 **添加日历** : https://ctftime.org/event/2277.ics  
                 
             ??? Quote "[Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)"  
-                [![](https://ctftime.org/media/events/midnight.png){ width="200" align=left }](https://midnightsunctf.com/)  
+                [![](https://ctftime.org/media/events/matrix.png){ width="200" align=left }](https://midnightsunctf.com/)  
                 **比赛名称** : [Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-04-20 18:00:00 - 2024-04-21 18:00:00 UTC+8  
