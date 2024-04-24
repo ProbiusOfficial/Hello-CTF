@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅析CrushFTP之VFS逃逸](https://y4tacker.github.io/2024/04/23/year/2024/4/%E6%B5%85%E6%9E%90CrushFTP%E4%B9%8BVFS%E9%80%83%E9%80%B8/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-04-23
+
+    浅析CrushFTP之VFS逃逸写在前面本篇的内容可能并不是最新的漏洞(毕竟我也没最新版代码)，是去年十一月份更新的漏洞，只是当时由于各种各样的项目导致分析被搁置了许久，再次关注它则是因为看到出了新的安全公告，又想起来当时并未分析完全，于是接着之前的工作继续研究（当然另一方面是因为没有各个版本的代码所以不想看最新版的漏洞，另外漏洞的描述中也并不能让我看出什么）再次回顾，从描述中可以看到，漏洞利用的...
     ### [浅析SmartBi逻辑漏洞(3)](https://y4tacker.github.io/2024/04/19/year/2024/4/%E6%B5%85%E6%9E%90SmartBi%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E-3/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-04-19
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2023-12-10
 
     CrushFTP  Unauthenticated Remote Code Execution路由分析不像传统套件，这里自己实现了协议的解析并做调用，写法比较死板，不够灵活，在crushftp.server.ServerSessionHTTP可以看到具体的处理过程，代码”依托答辩”，不过漏洞思路值得学习前台权限绕过简单来说，原理是因为程序实现存在匿名访问机制，并且可以通过header污染当前会话的...
-    ### [Apache Struts2 文件上传分析(S2-066)](https://y4tacker.github.io/2023/12/09/year/2023/12/Apache-Struts2-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%86%E6%9E%90-S2-066/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-12-09
-
-    Apache Struts2 文件上传分析(S2-066)struts2也很久没出过漏洞了吧，这次爆的是和文件上传相关相关的commit在https://github.com/apache/struts/commit/162e29fee9136f4bfd9b2376da2cbf590f9ea163首先从commit可以看出，漏洞和大小写参数有关，后面会具体谈及同时结合CVE描述我们可以知道，大概和...
 
 </div>
