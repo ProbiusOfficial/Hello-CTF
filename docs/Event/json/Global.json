@@ -96,6 +96,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "THJCC CTF",
+        "比赛时间": "2024-04-27 16:00:00 - 2024-04-29 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2362.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf-hobby.scint.org/",
+        "比赛标志": "https://ctftime.org/media/events/logo1_4.png",
+        "比赛权重": "0.00",
+        "赛事主办": "CakeisTheFake (https://ctftime.org/team/276544)",
+        "比赛ID": "1115",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "AirOverflow CTF - 2024",
         "比赛时间": "2024-04-27 20:00:00 - 2024-04-29 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2360.ics",
@@ -144,6 +156,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "NahamCon CTF 2024",
+        "比赛时间": "2024-04-29 04:00:00 - 2024-05-01 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2364.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.nahamcon.com/",
+        "比赛标志": "https://ctftime.org/media/events/NAHAMCON-LOGO_BRANDING_D3_A1_1.png",
+        "比赛权重": "41.61",
+        "赛事主办": "JustHacking (https://ctftime.org/team/59573)",
+        "比赛ID": "438",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "LakeCTF Finals 23",
         "比赛时间": "2024-05-03 16:00:00 - 2024-05-04 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2246.ics",
@@ -165,6 +189,18 @@
         "比赛权重": "77.38",
         "赛事主办": "Nautilus Institute (https://ctftime.org/team/181536)",
         "比赛ID": "1",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "BSidesSF 2024 CTF",
+        "比赛时间": "2024-05-04 08:00:00 - 2024-05-06 07:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2357.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bsidessf.net/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "BSidesSF (https://ctftime.org/team/54737)",
+        "比赛ID": "252",
         "比赛状态": "oncoming"
     },
     {
@@ -444,6 +480,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "N0PSctf",
+        "比赛时间": "2024-06-01 16:00:00 - 2024-06-03 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2358.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.nops.re/",
+        "比赛标志": "https://ctftime.org/media/events/favicon_5.png",
+        "比赛权重": "0.00",
+        "赛事主办": "NOPS (https://ctftime.org/team/4056)",
+        "比赛ID": "1114",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "AkaSec CTF 2024",
         "比赛时间": "2024-06-07 21:37:00 - 2024-06-09 21:37:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2222.ics",
@@ -465,6 +513,18 @@
         "比赛权重": "46.33",
         "赛事主办": "BCACTF (https://ctftime.org/team/81702)",
         "比赛ID": "325",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "DIVER OSINT CTF 2024",
+        "比赛时间": "2024-06-08 11:00:00 - 2024-06-09 11:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2365.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://twitter.com/DIVER_OSINT_CTF",
+        "比赛标志": "https://ctftime.org/media/events/tQF2eZgQ_400x400.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "diver_osint (https://ctftime.org/team/299569)",
+        "比赛ID": "1111",
         "比赛状态": "oncoming"
     },
     {
@@ -501,6 +561,18 @@
         "比赛权重": "35.41",
         "赛事主办": "idek (https://ctftime.org/team/157039)",
         "比赛ID": "700",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "justCTF 2024",
+        "比赛时间": "2024-06-15 16:00:00 - 2024-06-16 16:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2342.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://2024.justctf.team/",
+        "比赛标志": "https://ctftime.org/media/events/logo-ctf_3.png",
+        "比赛权重": "77.17",
+        "赛事主办": "justCatTheFish (https://ctftime.org/team/33893)",
+        "比赛ID": "399",
         "比赛状态": "oncoming"
     },
     {
@@ -585,6 +657,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Interlogica (https://ctftime.org/team/250899)",
         "比赛ID": "1065",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "HITCON CTF 2024 Quals",
+        "比赛时间": "2024-07-12 22:00:00 - 2024-07-14 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2345.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf.hitcon.org/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "HITCON (https://ctftime.org/team/8299)",
+        "比赛ID": "79",
         "比赛状态": "oncoming"
     },
     {
@@ -754,6 +838,30 @@
         "赛事主办": "ECSC2024 (https://ctftime.org/team/283828)",
         "比赛ID": "1084",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Kernel Kombat",
+        "比赛时间": "2024-04-24 20:30:00 - 2024-04-25 02:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2359.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://18.206.160.227/",
+        "比赛标志": "https://ctftime.org/media/events/jeclat.png",
+        "比赛权重": "0.00",
+        "赛事主办": "S14y3r (https://ctftime.org/team/282208)",
+        "比赛ID": "1117",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "THJCC CTF",
+        "比赛时间": "2024-04-23 10:01:30 - 2024-04-23 10:01:30 UTC+8",
+        "添加日历": "https://ctftime.org/event/2361.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf-hobby.scint.org/",
+        "比赛标志": "https://ctftime.org/media/events/logo1_3.png",
+        "比赛权重": "0.00",
+        "赛事主办": "CakeisTheFake (https://ctftime.org/team/276544)",
+        "比赛ID": "1115",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "DawgCTF 2024",
@@ -1941,18 +2049,6 @@
         "比赛权重": "24.00",
         "赛事主办": "Cryptonite (https://ctftime.org/team/62713)",
         "比赛ID": "663",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "1st Annual TCM Invitational CTF",
-        "比赛时间": "2023-12-16 23:00:00 - 2023-12-17 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2201.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.tcm.rocks/TCM2023CTF",
-        "比赛标志": "https://ctftime.org/media/events/tcm-logo-small.png",
-        "比赛权重": "0.00",
-        "赛事主办": "TCM Security (https://ctftime.org/team/275972)",
-        "比赛ID": "1029",
         "比赛状态": "past"
     }
 ]

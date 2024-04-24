@@ -105,6 +105,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[THJCC CTF](https://ctf-hobby.scint.org/)"  
+    [![](https://ctftime.org/media/events/logo1_3.png){ width="200" align=left }](https://ctf-hobby.scint.org/)  
+    **比赛名称** : [THJCC CTF](https://ctf-hobby.scint.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-23 10:01:30 - 2024-04-23 10:01:30 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
+    **添加日历** : https://ctftime.org/event/2361.ics  
+    
 ??? Quote "[DawgCTF 2024](https://metactf.com/join/dawgctf24)"  
     [![](https://ctftime.org/media/events/ctfTimeLogo_2.png){ width="200" align=left }](https://metactf.com/join/dawgctf24)  
     **比赛名称** : [DawgCTF 2024](https://metactf.com/join/dawgctf24)  
@@ -995,13 +1004,4 @@ comments: true
     **比赛权重** : 24.00  
     **赛事主办** : Cryptonite (https://ctftime.org/team/62713)  
     **添加日历** : https://ctftime.org/event/2207.ics  
-    
-??? Quote "[1st Annual TCM Invitational CTF](https://www.tcm.rocks/TCM2023CTF)"  
-    [![](https://ctftime.org/media/events/tcm-logo-small.png){ width="200" align=left }](https://www.tcm.rocks/TCM2023CTF)  
-    **比赛名称** : [1st Annual TCM Invitational CTF](https://www.tcm.rocks/TCM2023CTF)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-16 23:00:00 - 2023-12-17 07:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : TCM Security (https://ctftime.org/team/275972)  
-    **添加日历** : https://ctftime.org/event/2201.ics  
     
