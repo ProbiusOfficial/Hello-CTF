@@ -984,15 +984,6 @@ hide:
                 **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
                 **添加日历** : https://ctftime.org/event/2354.ics  
                 
-            ??? Quote "[Kernel Kombat](http://18.206.160.227/)"  
-                [![](https://ctftime.org/media/events/jeclat.png){ width="200" align=left }](http://18.206.160.227/)  
-                **比赛名称** : [Kernel Kombat](http://18.206.160.227/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-24 20:30:00 - 2024-04-25 02:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : S14y3r (https://ctftime.org/team/282208)  
-                **添加日历** : https://ctftime.org/event/2359.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[GEEKCON 2024 国际站AVSS挑战赛](https://mp.weixin.qq.com/s/iA1PQ9ExwVlRN_iOB7INAg)"  
@@ -1094,6 +1085,15 @@ hide:
                 **其他说明** : QQ群：134591168   适合新手参加  
                 
         === "国外赛事"
+            ??? Quote "[Kernel Kombat](http://18.206.160.227/)"  
+                [![](https://ctftime.org/media/events/jeclat.png){ width="200" align=left }](http://18.206.160.227/)  
+                **比赛名称** : [Kernel Kombat](http://18.206.160.227/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-24 20:30:00 - 2024-04-25 02:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : S14y3r (https://ctftime.org/team/282208)  
+                **添加日历** : https://ctftime.org/event/2359.ics  
+                
             ??? Quote "[THJCC CTF](https://ctf-hobby.scint.org/)"  
                 [![](https://ctftime.org/media/events/logo1_3.png){ width="200" align=left }](https://ctf-hobby.scint.org/)  
                 **比赛名称** : [THJCC CTF](https://ctf-hobby.scint.org/)  
@@ -1984,15 +1984,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
                 **添加日历** : https://ctftime.org/event/2159.ics  
-                
-            ??? Quote "[niteCTF](http://nitectf.live/)"  
-                [![](https://ctftime.org/media/events/WhatsApp_Image_2021-08-06_at_11.28.13_2.jpeg){ width="200" align=left }](http://nitectf.live/)  
-                **比赛名称** : [niteCTF](http://nitectf.live/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-12-17 19:30:00 - 2023-12-19 19:30:00 UTC+8  
-                **比赛权重** : 24.00  
-                **赛事主办** : Cryptonite (https://ctftime.org/team/62713)  
-                **添加日历** : https://ctftime.org/event/2207.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

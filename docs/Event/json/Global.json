@@ -849,7 +849,7 @@
         "比赛权重": "0.00",
         "赛事主办": "S14y3r (https://ctftime.org/team/282208)",
         "比赛ID": "1117",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "THJCC CTF",
@@ -2037,18 +2037,6 @@
         "比赛权重": "25.00",
         "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
         "比赛ID": "92",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "niteCTF",
-        "比赛时间": "2023-12-17 19:30:00 - 2023-12-19 19:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2207.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://nitectf.live/",
-        "比赛标志": "https://ctftime.org/media/events/WhatsApp_Image_2021-08-06_at_11.28.13_2.jpeg",
-        "比赛权重": "24.00",
-        "赛事主办": "Cryptonite (https://ctftime.org/team/62713)",
-        "比赛ID": "663",
         "比赛状态": "past"
     }
 ]

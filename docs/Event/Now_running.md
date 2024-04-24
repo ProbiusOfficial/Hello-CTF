@@ -33,12 +33,3 @@ comments: true
     **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
     **添加日历** : https://ctftime.org/event/2354.ics  
     
-??? Quote "[Kernel Kombat](http://18.206.160.227/)"  
-    [![](https://ctftime.org/media/events/jeclat.png){ width="200" align=left }](http://18.206.160.227/)  
-    **比赛名称** : [Kernel Kombat](http://18.206.160.227/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-24 20:30:00 - 2024-04-25 02:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : S14y3r (https://ctftime.org/team/282208)  
-    **添加日历** : https://ctftime.org/event/2359.ics  
-    
