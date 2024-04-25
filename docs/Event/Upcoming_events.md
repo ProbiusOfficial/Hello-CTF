@@ -260,7 +260,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2135.ics  
     
 ??? Quote "[Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)"  
-    [![](https://ctftime.org/media/events/bts2024_logofill_black.png){ width="200" align=left }](https://bts2024.wh.edu.pl/)  
+    [![](https://ctftime.org/media/events/logo_99.png){ width="200" align=left }](https://bts2024.wh.edu.pl/)  
     **比赛名称** : [Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-05-18 00:00:00 - 2024-05-19 18:00:00 UTC+8  
