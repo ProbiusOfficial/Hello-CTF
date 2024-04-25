@@ -1144,7 +1144,7 @@ hide:
                 **比赛名称** : [AVSS Contest 2024](https://avss.geekcon.top/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-04-20 10:00:00 - 2024-04-22 10:00:00 UTC+8  
-                **比赛权重** : 0.00  
+                **比赛权重** : 0  
                 **赛事主办** : GEEKCON (https://ctftime.org/team/255059)  
                 **添加日历** : https://ctftime.org/event/2335.ics  
                 

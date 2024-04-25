@@ -918,7 +918,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://avss.geekcon.top/",
         "比赛标志": "https://ctftime.org/media/events/AVSS.png",
-        "比赛权重": "0.00",
+        "比赛权重": "0",
         "赛事主办": "GEEKCON (https://ctftime.org/team/255059)",
         "比赛ID": "976",
         "比赛状态": "past"
