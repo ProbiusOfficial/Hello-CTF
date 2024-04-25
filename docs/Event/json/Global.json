@@ -96,18 +96,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "THJCC CTF",
-        "比赛时间": "2024-04-27 16:00:00 - 2024-04-29 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2362.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf-hobby.scint.org/",
-        "比赛标志": "https://ctftime.org/media/events/logo1_4.png",
-        "比赛权重": "0.00",
-        "赛事主办": "CakeisTheFake (https://ctftime.org/team/276544)",
-        "比赛ID": "1115",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "AirOverflow CTF - 2024",
         "比赛时间": "2024-04-27 20:00:00 - 2024-04-29 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2360.ics",
