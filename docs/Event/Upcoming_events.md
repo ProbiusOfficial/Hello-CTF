@@ -43,15 +43,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[cr3 CTF 2024](https://cr3c.tf/)"  
-    [![](https://ctftime.org/media/events/cr3ctf_2024.png){ width="200" align=left }](https://cr3c.tf/)  
-    **比赛名称** : [cr3 CTF 2024](https://cr3c.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-26 21:00:00 - 2024-04-28 09:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : cr3.mov (https://ctftime.org/team/242101)  
-    **添加日历** : https://ctftime.org/event/2288.ics  
-    
 ??? Quote "[Insomni'hack 2024](https://insomnihack.ch/contests/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://insomnihack.ch/contests/)  
     **比赛名称** : [Insomni'hack 2024](https://insomnihack.ch/contests/)  

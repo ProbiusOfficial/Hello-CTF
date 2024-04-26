@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群：733181790  
                 
     === "国外比赛"
-        ??? Quote "[cr3 CTF 2024](https://cr3c.tf/)"  
-            [![](https://ctftime.org/media/events/cr3ctf_2024.png){ width="200" align=left }](https://cr3c.tf/)  
-            **比赛名称** : [cr3 CTF 2024](https://cr3c.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-04-26 21:00:00 - 2024-04-28 09:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : cr3.mov (https://ctftime.org/team/242101)  
-            **添加日历** : https://ctftime.org/event/2288.ics  
-            
         ??? Quote "[Insomni'hack 2024](https://insomnihack.ch/contests/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://insomnihack.ch/contests/)  
             **比赛名称** : [Insomni'hack 2024](https://insomnihack.ch/contests/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 48.92  
             **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
             **添加日历** : https://ctftime.org/event/2323.ics  
+            
+        ??? Quote "[HACKTHEON SEJONG 2024 Preliminaries](https://hacktheon.org/)"  
+            [![](https://ctftime.org/media/events/CTF_2024.JPG){ width="200" align=left }](https://hacktheon.org/)  
+            **比赛名称** : [HACKTHEON SEJONG 2024 Preliminaries](https://hacktheon.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-04-27 08:00:00 - 2024-04-27 17:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
+            **添加日历** : https://ctftime.org/event/2286.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
