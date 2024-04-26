@@ -69,3 +69,12 @@ comments: true
     **赛事主办** : G1tc_Gu4rdians (https://ctftime.org/team/202828)  
     **添加日历** : https://ctftime.org/event/2348.ics  
     
+??? Quote "[UMDCTF 2024](https://umdctf.io/)"  
+    [![](https://ctftime.org/media/events/logo_95.png){ width="200" align=left }](https://umdctf.io/)  
+    **比赛名称** : [UMDCTF 2024](https://umdctf.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-27 06:00:00 - 2024-04-29 06:00:00 UTC+8  
+    **比赛权重** : 48.92  
+    **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
+    **添加日历** : https://ctftime.org/event/2323.ics  
+    
