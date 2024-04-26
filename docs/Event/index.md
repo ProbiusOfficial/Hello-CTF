@@ -344,15 +344,6 @@ hide:
                 **其他说明** : 比赛时间未定  
                 
         === "国外赛事"
-            ??? Quote "[Insomni'hack 2024](https://insomnihack.ch/contests/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://insomnihack.ch/contests/)  
-                **比赛名称** : [Insomni'hack 2024](https://insomnihack.ch/contests/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-27 00:30:00 - 2024-04-27 11:00:00 UTC+8  
-                **比赛权重** : 33.40  
-                **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
-                **添加日历** : https://ctftime.org/event/2271.ics  
-                
             ??? Quote "[SpringForwardCTF](https://springforward.ctfd.io/)"  
                 [![](https://ctftime.org/media/events/NICC-2-green.png){ width="200" align=left }](https://springforward.ctfd.io/)  
                 **比赛名称** : [SpringForwardCTF](https://springforward.ctfd.io/)  
@@ -965,6 +956,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : cr3.mov (https://ctftime.org/team/242101)  
                 **添加日历** : https://ctftime.org/event/2288.ics  
+                
+            ??? Quote "[Insomni'hack 2024](https://insomnihack.ch/contests/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://insomnihack.ch/contests/)  
+                **比赛名称** : [Insomni'hack 2024](https://insomnihack.ch/contests/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-27 00:30:00 - 2024-04-27 11:00:00 UTC+8  
+                **比赛权重** : 33.40  
+                **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
+                **添加日历** : https://ctftime.org/event/2271.ics  
                 
     === "*已经结束*"
         === "国内赛事"
