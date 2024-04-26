@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [CrushFTP后利用提权分析(CVE-2024-4040)](https://y4tacker.github.io/2024/04/25/year/2024/4/CrushFTP%E5%90%8E%E5%88%A9%E7%94%A8%E6%8F%90%E6%9D%83%E5%88%86%E6%9E%90-CVE-2024-4040/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-04-25
+
+    CrushFTP后利用提权分析(CVE-2024-4040)写在前面这个漏洞的利用最终还是被曝光了，这里也不做重复的分析，具体可以点击访问CVE-2024-4040了解漏洞的详情，在这里作者在分析利用的时候仍然使用的sessions.obj文件去读取历史cookie再做提权的尝试，但在最早的一篇文章当中我也曾提到过，只有在程序退出时才会生成这样一个文件，它充当了服务器的一个缓存功能(CrushFT...
     ### [浅析CrushFTP之VFS逃逸](https://y4tacker.github.io/2024/04/23/year/2024/4/%E6%B5%85%E6%9E%90CrushFTP%E4%B9%8BVFS%E9%80%83%E9%80%B8/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-04-23
 
@@ -149,9 +153,5 @@ hide:
     >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-12-11
 
     前言前段时间有幸去了酷科南京总部参观，被问到有没有酷安人均一只的酷态科10号时汗流浃背了，因为一直以来我都在用闪极的产品，唯一的酷态科产品还是酷态科前身紫米的紫米200W移动电源而对于紫米200W移动电源，我的评价是很优秀，但是太大太重不便于日常携带，并且上次出去旅游的时候外壳被摔坏导致只有一个口可以用了于是在两周前淘宝百亿补贴的一次机会以189元的价格赶紧补票了酷态科10号开箱酷态科10号的包装...
-    ### [CrushFTP Unauthenticated Remote Code Execution(CVE-2023-43177)](https://y4tacker.github.io/2023/12/10/year/2023/12/CrushFTP-Unauthenticated-Remote-Code-Execution-CVE-2023-43177/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-12-10
-
-    CrushFTP  Unauthenticated Remote Code Execution路由分析不像传统套件，这里自己实现了协议的解析并做调用，写法比较死板，不够灵活，在crushftp.server.ServerSessionHTTP可以看到具体的处理过程，代码”依托答辩”，不过漏洞思路值得学习前台权限绕过简单来说，原理是因为程序实现存在匿名访问机制，并且可以通过header污染当前会话的...
 
 </div>
