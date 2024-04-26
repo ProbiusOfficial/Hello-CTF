@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群：733181790  
                 
     === "国外比赛"
-        ??? Quote "[SpringForwardCTF](https://springforward.ctfd.io/)"  
-            [![](https://ctftime.org/media/events/NICC-2-green.png){ width="200" align=left }](https://springforward.ctfd.io/)  
-            **比赛名称** : [SpringForwardCTF](https://springforward.ctfd.io/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-04-27 05:00:00 - 2024-04-29 05:00:00 UTC+8  
-            **比赛权重** : 22.40  
-            **赛事主办** : G1tc_Gu4rdians (https://ctftime.org/team/202828)  
-            **添加日历** : https://ctftime.org/event/2348.ics  
-            
         ??? Quote "[UMDCTF 2024](https://umdctf.io/)"  
             [![](https://ctftime.org/media/events/logo_95.png){ width="200" align=left }](https://umdctf.io/)  
             **比赛名称** : [UMDCTF 2024](https://umdctf.io/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : Theori (https://ctftime.org/team/250867)  
             **添加日历** : https://ctftime.org/event/2308.ics  
+            
+        ??? Quote "[UrchinSec Tanzania National CTF MMXXIV](https://ctf.urchinsec.com/)"  
+            [![](https://ctftime.org/media/events/TkH-DDqG_400x400.png){ width="200" align=left }](https://ctf.urchinsec.com/)  
+            **比赛名称** : [UrchinSec Tanzania National CTF MMXXIV](https://ctf.urchinsec.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-04-27 15:30:00 - 2024-04-29 03:30:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : UrchinSec (https://ctftime.org/team/175663)  
+            **添加日历** : https://ctftime.org/event/2327.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
