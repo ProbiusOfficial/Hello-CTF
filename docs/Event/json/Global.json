@@ -756,18 +756,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Insomni'hack 2024",
-        "比赛时间": "2024-04-27 00:30:00 - 2024-04-27 11:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2271.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://insomnihack.ch/contests/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "33.40",
-        "赛事主办": "Insomni'hack Team (https://ctftime.org/team/104742)",
-        "比赛ID": "56",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "SpringForwardCTF",
         "比赛时间": "2024-04-27 05:00:00 - 2024-04-29 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2348.ics",
@@ -814,6 +802,18 @@
         "赛事主办": "Theori (https://ctftime.org/team/250867)",
         "比赛ID": "1090",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Insomni'hack 2024",
+        "比赛时间": "2024-04-27 00:30:00 - 2024-04-27 11:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2271.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://insomnihack.ch/contests/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "33.40",
+        "赛事主办": "Insomni'hack Team (https://ctftime.org/team/104742)",
+        "比赛ID": "56",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Kernel Kombat",
@@ -1999,18 +1999,6 @@
         "比赛链接": "https://ctf.seccon.jp/",
         "比赛标志": "https://ctftime.org/media/events/seccon_s_6.png",
         "比赛权重": "0.00",
-        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
-        "比赛ID": "92",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SECCON CTF 2023 International Finals",
-        "比赛时间": "2023-12-23 09:00:00 - 2023-12-24 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2159.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.seccon.jp/",
-        "比赛标志": "https://ctftime.org/media/events/seccon_s_5.png",
-        "比赛权重": "25.00",
         "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
         "比赛ID": "92",
         "比赛状态": "past"
