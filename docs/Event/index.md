@@ -344,15 +344,6 @@ hide:
                 **其他说明** : 比赛时间未定  
                 
         === "国外赛事"
-            ??? Quote "[UrchinSec Tanzania National CTF MMXXIV](https://ctf.urchinsec.com/)"  
-                [![](https://ctftime.org/media/events/TkH-DDqG_400x400.png){ width="200" align=left }](https://ctf.urchinsec.com/)  
-                **比赛名称** : [UrchinSec Tanzania National CTF MMXXIV](https://ctf.urchinsec.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-27 15:30:00 - 2024-04-29 03:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : UrchinSec (https://ctftime.org/team/175663)  
-                **添加日历** : https://ctftime.org/event/2327.ics  
-                
             ??? Quote "[AirOverflow CTF - 2024](https://ctf.airoverflow.com/)"  
                 [![](https://ctftime.org/media/events/Cropped_-_No_Name.png){ width="200" align=left }](https://ctf.airoverflow.com/)  
                 **比赛名称** : [AirOverflow CTF - 2024](https://ctf.airoverflow.com/)  
@@ -956,6 +947,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Theori (https://ctftime.org/team/250867)  
                 **添加日历** : https://ctftime.org/event/2308.ics  
+                
+            ??? Quote "[UrchinSec Tanzania National CTF MMXXIV](https://ctf.urchinsec.com/)"  
+                [![](https://ctftime.org/media/events/TkH-DDqG_400x400.png){ width="200" align=left }](https://ctf.urchinsec.com/)  
+                **比赛名称** : [UrchinSec Tanzania National CTF MMXXIV](https://ctf.urchinsec.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-27 15:30:00 - 2024-04-29 03:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : UrchinSec (https://ctftime.org/team/175663)  
+                **添加日历** : https://ctftime.org/event/2327.ics  
                 
     === "*已经结束*"
         === "国内赛事"
