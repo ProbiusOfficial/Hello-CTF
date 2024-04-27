@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "AirOverflow CTF - 2024",
-        "比赛时间": "2024-04-27 20:00:00 - 2024-04-29 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2360.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.airoverflow.com/",
-        "比赛标志": "https://ctftime.org/media/events/Cropped_-_No_Name.png",
-        "比赛权重": "0.00",
-        "赛事主办": "AirOverFlow (https://ctftime.org/team/140448)",
-        "比赛ID": "1113",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Midnight Flag - Operation BACKSLASH",
         "比赛时间": "2024-04-28 04:00:00 - 2024-04-28 15:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2295.ics",
@@ -264,6 +252,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "NahamCon CTF 2024",
+        "比赛时间": "2024-05-24 04:00:00 - 2024-05-26 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2364.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.nahamcon.com/",
+        "比赛标志": "https://ctftime.org/media/events/NAHAMCON-LOGO_BRANDING_D3_A1_1.png",
+        "比赛权重": "41.61",
+        "赛事主办": "JustHacking (https://ctftime.org/team/59573)",
+        "比赛ID": "438",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "L3akCTF 2024",
         "比赛时间": "2024-05-24 20:00:00 - 2024-05-26 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2322.ics",
@@ -465,6 +465,18 @@
         "比赛权重": "0.00",
         "赛事主办": "NUSGreyhats (https://ctftime.org/team/16740)",
         "比赛ID": "778",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "CyberSci Nationals 2024",
+        "比赛时间": "2024-06-21 20:00:00 - 2024-06-23 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2366.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cybersecuritychallenge.ca/",
+        "比赛标志": "https://ctftime.org/media/events/c0c445488770d1de63c46986bc92e8e6.png",
+        "比赛权重": "0.00",
+        "赛事主办": "CyberSciOrganizers (https://ctftime.org/team/157536)",
+        "比赛ID": "643",
         "比赛状态": "oncoming"
     },
     {
@@ -789,6 +801,30 @@
         "比赛权重": "0",
         "赛事主办": "UrchinSec (https://ctftime.org/team/175663)",
         "比赛ID": "1096",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "THJCC CTF",
+        "比赛时间": "2024-04-27 16:00:00 - 2024-04-29 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2362.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf-hobby.scint.org/",
+        "比赛标志": "https://ctftime.org/media/events/logo1_4.png",
+        "比赛权重": "0",
+        "赛事主办": "CakeisTheFake (https://ctftime.org/team/276544)",
+        "比赛ID": "1115",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "AirOverflow CTF - 2024",
+        "比赛时间": "2024-04-27 20:00:00 - 2024-04-29 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2360.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.airoverflow.com/",
+        "比赛标志": "https://ctftime.org/media/events/Cropped_-_No_Name.png",
+        "比赛权重": "0",
+        "赛事主办": "AirOverFlow (https://ctftime.org/team/140448)",
+        "比赛ID": "1113",
         "比赛状态": "nowrunning"
     },
     {
