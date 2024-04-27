@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "CyberSphere CTF",
-        "比赛时间": "2024-04-28 05:00:00 - 2024-04-28 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2328.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://securinets.tn/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Securinets (https://ctftime.org/team/5084)",
-        "比赛ID": "1091",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Cybercoliseum Ⅲ",
         "比赛时间": "2024-04-28 15:00:00 - 2024-04-30 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2341.ics",
@@ -849,6 +837,18 @@
         "比赛权重": "37.00",
         "赛事主办": "Midnight Flag (https://ctftime.org/team/179110)",
         "比赛ID": "761",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CyberSphere CTF",
+        "比赛时间": "2024-04-28 05:00:00 - 2024-04-28 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2328.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://securinets.tn/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "Securinets (https://ctftime.org/team/5084)",
+        "比赛ID": "1091",
         "比赛状态": "nowrunning"
     },
     {

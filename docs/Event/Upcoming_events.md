@@ -43,15 +43,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[CyberSphere CTF](https://securinets.tn/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://securinets.tn/)  
-    **比赛名称** : [CyberSphere CTF](https://securinets.tn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-28 05:00:00 - 2024-04-28 17:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Securinets (https://ctftime.org/team/5084)  
-    **添加日历** : https://ctftime.org/event/2328.ics  
-    
 ??? Quote "[Cybercoliseum Ⅲ](https://cybercoliseum.codeby.games/en)"  
     [![](https://ctftime.org/media/events/logo-cdb.png){ width="200" align=left }](https://cybercoliseum.codeby.games/en)  
     **比赛名称** : [Cybercoliseum Ⅲ](https://cybercoliseum.codeby.games/en)  

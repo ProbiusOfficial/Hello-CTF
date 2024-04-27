@@ -114,3 +114,12 @@ comments: true
     **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
     **添加日历** : https://ctftime.org/event/2295.ics  
     
+??? Quote "[CyberSphere CTF](https://securinets.tn/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://securinets.tn/)  
+    **比赛名称** : [CyberSphere CTF](https://securinets.tn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-28 05:00:00 - 2024-04-28 17:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Securinets (https://ctftime.org/team/5084)  
+    **添加日历** : https://ctftime.org/event/2328.ics  
+    
