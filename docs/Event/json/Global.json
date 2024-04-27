@@ -36,6 +36,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "MireaCTF Quals 2024",
+        "比赛时间": "2024-05-01 16:00:00 - 2024-05-02 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2367.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://spring.mireactf.ru/",
+        "比赛标志": "https://ctftime.org/media/events/image_2024-04-26_00-28-23.png",
+        "比赛权重": "0.00",
+        "赛事主办": "cR4.sh (https://ctftime.org/team/224675)",
+        "比赛ID": "1121",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "LakeCTF Finals 23",
         "比赛时间": "2024-05-03 16:00:00 - 2024-05-04 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2246.ics",
@@ -81,6 +93,18 @@
         "比赛权重": "24.82",
         "赛事主办": "Punk Security (https://ctftime.org/team/212540)",
         "比赛ID": "892",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "MireaCTF Finals 2024",
+        "比赛时间": "2024-05-10 16:00:00 - 2024-05-10 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2368.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://spring.mireactf.ru/",
+        "比赛标志": "https://ctftime.org/media/events/image_2024-04-26_00-28-23_1.png",
+        "比赛权重": "0",
+        "赛事主办": "cR4.sh (https://ctftime.org/team/224675)",
+        "比赛ID": "1121",
         "比赛状态": "oncoming"
     },
     {

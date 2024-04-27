@@ -371,6 +371,15 @@ hide:
                 **赛事主办** : Codeby Games (https://ctftime.org/team/299486)  
                 **添加日历** : https://ctftime.org/event/2341.ics  
                 
+            ??? Quote "[MireaCTF Quals 2024](https://spring.mireactf.ru/)"  
+                [![](https://ctftime.org/media/events/image_2024-04-26_00-28-23.png){ width="200" align=left }](https://spring.mireactf.ru/)  
+                **比赛名称** : [MireaCTF Quals 2024](https://spring.mireactf.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-05-01 16:00:00 - 2024-05-02 00:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : cR4.sh (https://ctftime.org/team/224675)  
+                **添加日历** : https://ctftime.org/event/2367.ics  
+                
             ??? Quote "[LakeCTF Finals 23](https://lakectf.epfl.ch/)"  
                 [![](https://ctftime.org/media/events/lakeCTFLogo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
                 **比赛名称** : [LakeCTF Finals 23](https://lakectf.epfl.ch/)  
@@ -406,6 +415,15 @@ hide:
                 **比赛权重** : 24.82  
                 **赛事主办** : Punk Security (https://ctftime.org/team/212540)  
                 **添加日历** : https://ctftime.org/event/2285.ics  
+                
+            ??? Quote "[MireaCTF Finals 2024](https://spring.mireactf.ru/)"  
+                [![](https://ctftime.org/media/events/image_2024-04-26_00-28-23_1.png){ width="200" align=left }](https://spring.mireactf.ru/)  
+                **比赛名称** : [MireaCTF Finals 2024](https://spring.mireactf.ru/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2024-05-10 16:00:00 - 2024-05-10 22:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : cR4.sh (https://ctftime.org/team/224675)  
+                **添加日历** : https://ctftime.org/event/2368.ics  
                 
             ??? Quote "[RPCA CTF 2024](https://ctf.rpca.ac.th/)"  
                 [![](https://ctftime.org/media/events/RPCACTF2024-Logo_page-0001.jpg){ width="200" align=left }](https://ctf.rpca.ac.th/)  
