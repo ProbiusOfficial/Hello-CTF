@@ -43,24 +43,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[HACKTHEON SEJONG 2024 Preliminaries](https://hacktheon.org/)"  
-    [![](https://ctftime.org/media/events/CTF_2024.JPG){ width="200" align=left }](https://hacktheon.org/)  
-    **比赛名称** : [HACKTHEON SEJONG 2024 Preliminaries](https://hacktheon.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-27 08:00:00 - 2024-04-27 17:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
-    **添加日历** : https://ctftime.org/event/2286.ics  
-    
-??? Quote "[Dreamhack Invitational Quals 2024](https://dreamhack.io/ctf/518/)"  
-    [![](https://ctftime.org/media/events/_mini_round_light2x.png){ width="200" align=left }](https://dreamhack.io/ctf/518/)  
-    **比赛名称** : [Dreamhack Invitational Quals 2024](https://dreamhack.io/ctf/518/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-27 08:00:00 - 2024-04-28 08:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Theori (https://ctftime.org/team/250867)  
-    **添加日历** : https://ctftime.org/event/2308.ics  
-    
 ??? Quote "[UrchinSec Tanzania National CTF MMXXIV](https://ctf.urchinsec.com/)"  
     [![](https://ctftime.org/media/events/TkH-DDqG_400x400.png){ width="200" align=left }](https://ctf.urchinsec.com/)  
     **比赛名称** : [UrchinSec Tanzania National CTF MMXXIV](https://ctf.urchinsec.com/)  
