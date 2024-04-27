@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群：733181790  
                 
     === "国外比赛"
-        ??? Quote "[Midnight Flag - Operation BACKSLASH](https://ctfd.midnightflag.fr/)"  
-            [![](https://ctftime.org/media/events/logo-3848x3084-upscaled.png){ width="200" align=left }](https://ctfd.midnightflag.fr/)  
-            **比赛名称** : [Midnight Flag - Operation BACKSLASH](https://ctfd.midnightflag.fr/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-04-28 04:00:00 - 2024-04-28 15:00:00 UTC+8  
-            **比赛权重** : 37.00  
-            **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
-            **添加日历** : https://ctftime.org/event/2295.ics  
-            
         ??? Quote "[CyberSphere CTF](https://securinets.tn/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://securinets.tn/)  
             **比赛名称** : [CyberSphere CTF](https://securinets.tn/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : cR4.sh (https://ctftime.org/team/224675)  
             **添加日历** : https://ctftime.org/event/2367.ics  
+            
+        ??? Quote "[LakeCTF Finals 23](https://lakectf.epfl.ch/)"  
+            [![](https://ctftime.org/media/events/lakeCTFLogo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
+            **比赛名称** : [LakeCTF Finals 23](https://lakectf.epfl.ch/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-05-03 16:00:00 - 2024-05-04 00:00:00 UTC+8  
+            **比赛权重** : 36.00  
+            **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
+            **添加日历** : https://ctftime.org/event/2246.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
