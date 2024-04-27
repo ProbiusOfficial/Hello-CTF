@@ -105,6 +105,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[HACKTHEON SEJONG 2024 Preliminaries](https://hacktheon.org/)"  
+    [![](https://ctftime.org/media/events/CTF_2024.JPG){ width="200" align=left }](https://hacktheon.org/)  
+    **比赛名称** : [HACKTHEON SEJONG 2024 Preliminaries](https://hacktheon.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-27 08:00:00 - 2024-04-27 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
+    **添加日历** : https://ctftime.org/event/2286.ics  
+    
 ??? Quote "[Insomni'hack 2024](https://insomnihack.ch/contests/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://insomnihack.ch/contests/)  
     **比赛名称** : [Insomni'hack 2024](https://insomnihack.ch/contests/)  
@@ -995,13 +1004,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : cornered_tiger (https://ctftime.org/team/216139)  
     **添加日历** : https://ctftime.org/event/2215.ics  
-    
-??? Quote "[SECCON CTF 2023 Domestic Finals](https://ctf.seccon.jp/)"  
-    [![](https://ctftime.org/media/events/seccon_s_6.png){ width="200" align=left }](https://ctf.seccon.jp/)  
-    **比赛名称** : [SECCON CTF 2023 Domestic Finals](https://ctf.seccon.jp/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-23 09:00:00 - 2023-12-24 17:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
-    **添加日历** : https://ctftime.org/event/2160.ics  
     

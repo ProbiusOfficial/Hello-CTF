@@ -768,18 +768,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "HACKTHEON SEJONG 2024 Preliminaries",
-        "比赛时间": "2024-04-27 08:00:00 - 2024-04-27 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2286.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hacktheon.org/",
-        "比赛标志": "https://ctftime.org/media/events/CTF_2024.JPG",
-        "比赛权重": "0",
-        "赛事主办": "Sejong City Hall (https://ctftime.org/team/214900)",
-        "比赛ID": "903",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Dreamhack Invitational Quals 2024",
         "比赛时间": "2024-04-27 08:00:00 - 2024-04-28 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2308.ics",
@@ -802,6 +790,18 @@
         "赛事主办": "UrchinSec (https://ctftime.org/team/175663)",
         "比赛ID": "1096",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "HACKTHEON SEJONG 2024 Preliminaries",
+        "比赛时间": "2024-04-27 08:00:00 - 2024-04-27 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2286.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://hacktheon.org/",
+        "比赛标志": "https://ctftime.org/media/events/CTF_2024.JPG",
+        "比赛权重": "0",
+        "赛事主办": "Sejong City Hall (https://ctftime.org/team/214900)",
+        "比赛ID": "903",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Insomni'hack 2024",
@@ -1989,18 +1989,6 @@
         "比赛权重": "0.00",
         "赛事主办": "cornered_tiger (https://ctftime.org/team/216139)",
         "比赛ID": "1045",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SECCON CTF 2023 Domestic Finals",
-        "比赛时间": "2023-12-23 09:00:00 - 2023-12-24 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2160.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.seccon.jp/",
-        "比赛标志": "https://ctftime.org/media/events/seccon_s_6.png",
-        "比赛权重": "0.00",
-        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
-        "比赛ID": "92",
         "比赛状态": "past"
     }
 ]
