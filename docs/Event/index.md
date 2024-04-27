@@ -344,15 +344,6 @@ hide:
                 **其他说明** : 比赛时间未定  
                 
         === "国外赛事"
-            ??? Quote "[AirOverflow CTF - 2024](https://ctf.airoverflow.com/)"  
-                [![](https://ctftime.org/media/events/Cropped_-_No_Name.png){ width="200" align=left }](https://ctf.airoverflow.com/)  
-                **比赛名称** : [AirOverflow CTF - 2024](https://ctf.airoverflow.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-27 20:00:00 - 2024-04-29 04:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : AirOverFlow (https://ctftime.org/team/140448)  
-                **添加日历** : https://ctftime.org/event/2360.ics  
-                
             ??? Quote "[Midnight Flag - Operation BACKSLASH]()"  
                 [![](https://ctftime.org/media/events/logo-3848x3084-upscaled.png){ width="200" align=left }]()  
                 **比赛名称** : [Midnight Flag - Operation BACKSLASH]()  
@@ -542,6 +533,15 @@ hide:
                 **赛事主办** : Hacky'Nov (https://ctftime.org/team/178939)  
                 **添加日历** : https://ctftime.org/event/2319.ics  
                 
+            ??? Quote "[NahamCon CTF 2024](https://ctf.nahamcon.com/)"  
+                [![](https://ctftime.org/media/events/NAHAMCON-LOGO_BRANDING_D3_A1_1.png){ width="200" align=left }](https://ctf.nahamcon.com/)  
+                **比赛名称** : [NahamCon CTF 2024](https://ctf.nahamcon.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-05-24 04:00:00 - 2024-05-26 04:00:00 UTC+8  
+                **比赛权重** : 41.61  
+                **赛事主办** : JustHacking (https://ctftime.org/team/59573)  
+                **添加日历** : https://ctftime.org/event/2364.ics  
+                
             ??? Quote "[L3akCTF 2024](https://ctf.l3ak.team/)"  
                 [![](https://ctftime.org/media/events/ctf_final.png){ width="200" align=left }](https://ctf.l3ak.team/)  
                 **比赛名称** : [L3akCTF 2024](https://ctf.l3ak.team/)  
@@ -694,6 +694,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : NUSGreyhats (https://ctftime.org/team/16740)  
                 **添加日历** : https://ctftime.org/event/2244.ics  
+                
+            ??? Quote "[CyberSci Nationals 2024](https://cybersecuritychallenge.ca/)"  
+                [![](https://ctftime.org/media/events/c0c445488770d1de63c46986bc92e8e6.png){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
+                **比赛名称** : [CyberSci Nationals 2024](https://cybersecuritychallenge.ca/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-06-21 20:00:00 - 2024-06-23 06:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
+                **添加日历** : https://ctftime.org/event/2366.ics  
                 
             ??? Quote "[Google Capture The Flag 2024](https://g.co/ctf)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://g.co/ctf)  
@@ -948,6 +957,24 @@ hide:
                 **赛事主办** : UrchinSec (https://ctftime.org/team/175663)  
                 **添加日历** : https://ctftime.org/event/2327.ics  
                 
+            ??? Quote "[THJCC CTF](https://ctf-hobby.scint.org/)"  
+                [![](https://ctftime.org/media/events/logo1_4.png){ width="200" align=left }](https://ctf-hobby.scint.org/)  
+                **比赛名称** : [THJCC CTF](https://ctf-hobby.scint.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-27 16:00:00 - 2024-04-29 04:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
+                **添加日历** : https://ctftime.org/event/2362.ics  
+                
+            ??? Quote "[AirOverflow CTF - 2024](https://ctf.airoverflow.com/)"  
+                [![](https://ctftime.org/media/events/Cropped_-_No_Name.png){ width="200" align=left }](https://ctf.airoverflow.com/)  
+                **比赛名称** : [AirOverflow CTF - 2024](https://ctf.airoverflow.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-27 20:00:00 - 2024-04-29 04:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : AirOverFlow (https://ctftime.org/team/140448)  
+                **添加日历** : https://ctftime.org/event/2360.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[GEEKCON 2024 国际站AVSS挑战赛](https://mp.weixin.qq.com/s/iA1PQ9ExwVlRN_iOB7INAg)"  
@@ -1040,13 +1067,6 @@ hide:
                 **报名时间** : 2024年02月05日 00:00 - 2024年02月28日 22:00  
                 **比赛时间** : 2024年02月29日 09:00 - 2024年03月01日 22:00  
                 **其他说明** : QQ 群号：820016571  
-                
-            ??? Quote "[HGAME2024网络攻防大赛](https://hgame.vidar.club)"  
-                **比赛名称** : [HGAME2024网络攻防大赛](https://hgame.vidar.club)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年01月20日 20:00 - 2024年02月05日 20:00  
-                **比赛时间** : 2024年01月29日 20:00 - 2024年02月27日 20:00  
-                **其他说明** : QQ群：134591168   适合新手参加  
                 
         === "国外赛事"
             ??? Quote "[HACKTHEON SEJONG 2024 Preliminaries](https://hacktheon.org/)"  
