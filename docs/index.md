@@ -83,9 +83,9 @@ hide:
             **其他说明** : QQ群：733181790  
                 
     === "国外比赛"
-        ??? Quote "[Midnight Flag - Operation BACKSLASH]()"  
-            [![](https://ctftime.org/media/events/logo-3848x3084-upscaled.png){ width="200" align=left }]()  
-            **比赛名称** : [Midnight Flag - Operation BACKSLASH]()  
+        ??? Quote "[Midnight Flag - Operation BACKSLASH](https://ctfd.midnightflag.fr/)"  
+            [![](https://ctftime.org/media/events/logo-3848x3084-upscaled.png){ width="200" align=left }](https://ctfd.midnightflag.fr/)  
+            **比赛名称** : [Midnight Flag - Operation BACKSLASH](https://ctfd.midnightflag.fr/)  
             **比赛形式** : Jeopardy  
             **比赛时间** : 2024-04-28 04:00:00 - 2024-04-28 15:00:00 UTC+8  
             **比赛权重** : 37.00  
