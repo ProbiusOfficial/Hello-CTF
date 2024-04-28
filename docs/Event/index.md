@@ -912,33 +912,6 @@ hide:
                 **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
                 **添加日历** : https://ctftime.org/event/2323.ics  
                 
-            ??? Quote "[UrchinSec Tanzania National CTF MMXXIV](https://ctf.urchinsec.com/)"  
-                [![](https://ctftime.org/media/events/TkH-DDqG_400x400.png){ width="200" align=left }](https://ctf.urchinsec.com/)  
-                **比赛名称** : [UrchinSec Tanzania National CTF MMXXIV](https://ctf.urchinsec.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-27 15:30:00 - 2024-04-29 03:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : UrchinSec (https://ctftime.org/team/175663)  
-                **添加日历** : https://ctftime.org/event/2327.ics  
-                
-            ??? Quote "[THJCC CTF](https://ctf-hobby.scint.org/)"  
-                [![](https://ctftime.org/media/events/logo1_4.png){ width="200" align=left }](https://ctf-hobby.scint.org/)  
-                **比赛名称** : [THJCC CTF](https://ctf-hobby.scint.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-27 16:00:00 - 2024-04-29 04:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
-                **添加日历** : https://ctftime.org/event/2362.ics  
-                
-            ??? Quote "[AirOverflow CTF - 2024](https://ctf.airoverflow.com/)"  
-                [![](https://ctftime.org/media/events/Cropped_-_No_Name.png){ width="200" align=left }](https://ctf.airoverflow.com/)  
-                **比赛名称** : [AirOverflow CTF - 2024](https://ctf.airoverflow.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-27 20:00:00 - 2024-04-29 04:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : AirOverFlow (https://ctftime.org/team/140448)  
-                **添加日历** : https://ctftime.org/event/2360.ics  
-                
             ??? Quote "[Cybercoliseum Ⅲ](https://cybercoliseum.codeby.games/en)"  
                 [![](https://ctftime.org/media/events/logo-cdb.png){ width="200" align=left }](https://cybercoliseum.codeby.games/en)  
                 **比赛名称** : [Cybercoliseum Ⅲ](https://cybercoliseum.codeby.games/en)  
@@ -1059,6 +1032,33 @@ hide:
                 **比赛权重** : 37.00  
                 **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
                 **添加日历** : https://ctftime.org/event/2295.ics  
+                
+            ??? Quote "[AirOverflow CTF - 2024](https://ctf.airoverflow.com/)"  
+                [![](https://ctftime.org/media/events/Cropped_-_No_Name.png){ width="200" align=left }](https://ctf.airoverflow.com/)  
+                **比赛名称** : [AirOverflow CTF - 2024](https://ctf.airoverflow.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-27 20:00:00 - 2024-04-29 04:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : AirOverFlow (https://ctftime.org/team/140448)  
+                **添加日历** : https://ctftime.org/event/2360.ics  
+                
+            ??? Quote "[THJCC CTF](https://ctf-hobby.scint.org/)"  
+                [![](https://ctftime.org/media/events/logo1_4.png){ width="200" align=left }](https://ctf-hobby.scint.org/)  
+                **比赛名称** : [THJCC CTF](https://ctf-hobby.scint.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-27 16:00:00 - 2024-04-29 04:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
+                **添加日历** : https://ctftime.org/event/2362.ics  
+                
+            ??? Quote "[UrchinSec Tanzania National CTF MMXXIV](https://ctf.urchinsec.com/)"  
+                [![](https://ctftime.org/media/events/TkH-DDqG_400x400.png){ width="200" align=left }](https://ctf.urchinsec.com/)  
+                **比赛名称** : [UrchinSec Tanzania National CTF MMXXIV](https://ctf.urchinsec.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-27 15:30:00 - 2024-04-29 03:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : UrchinSec (https://ctftime.org/team/175663)  
+                **添加日历** : https://ctftime.org/event/2327.ics  
                 
             ??? Quote "[HACKTHEON SEJONG 2024 Preliminaries](https://hacktheon.org/)"  
                 [![](https://ctftime.org/media/events/CTF_2024.JPG){ width="200" align=left }](https://hacktheon.org/)  
@@ -1914,33 +1914,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : HKUSTFirebird (https://ctftime.org/team/65249)  
                 **添加日历** : https://ctftime.org/event/2225.ics  
-                
-            ??? Quote "[HackDay 2024 - Qualifications](https://www.hackday.fr/)"  
-                [![](https://ctftime.org/media/events/CREA_LOGO_Blason_Espion.png){ width="200" align=left }](https://www.hackday.fr/)  
-                **比赛名称** : [HackDay 2024 - Qualifications](https://www.hackday.fr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-01-16 04:00:00 - 2024-01-22 04:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
-                **添加日历** : https://ctftime.org/event/2265.ics  
-                
-            ??? Quote "[UofTCTF 2024](https://ctf.uoftctf.org/)"  
-                [![](https://ctftime.org/media/events/ctf_logo_1.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
-                **比赛名称** : [UofTCTF 2024](https://ctf.uoftctf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-01-14 01:00:00 - 2024-01-15 12:59:00 UTC+8  
-                **比赛权重** : 23.83  
-                **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
-                **添加日历** : https://ctftime.org/event/2219.ics  
-                
-            ??? Quote "[IrisCTF 2024](https://2024.irisc.tf/)"  
-                [![](https://ctftime.org/media/events/IrisCTF_Logo.png){ width="200" align=left }](https://2024.irisc.tf/)  
-                **比赛名称** : [IrisCTF 2024](https://2024.irisc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-01-06 08:00:00 - 2024-01-08 08:00:00 UTC+8  
-                **比赛权重** : 24.59  
-                **赛事主办** : IrisSec (https://ctftime.org/team/127034)  
-                **添加日历** : https://ctftime.org/event/2085.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
