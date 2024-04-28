@@ -43,15 +43,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Cybercoliseum Ⅲ](https://cybercoliseum.codeby.games/en)"  
-    [![](https://ctftime.org/media/events/logo-cdb.png){ width="200" align=left }](https://cybercoliseum.codeby.games/en)  
-    **比赛名称** : [Cybercoliseum Ⅲ](https://cybercoliseum.codeby.games/en)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-28 15:00:00 - 2024-04-30 03:00:00 UTC+8  
-    **比赛权重** : 20.95  
-    **赛事主办** : Codeby Games (https://ctftime.org/team/299486)  
-    **添加日历** : https://ctftime.org/event/2341.ics  
-    
 ??? Quote "[MireaCTF Quals 2024](https://spring.mireactf.ru/)"  
     [![](https://ctftime.org/media/events/image_2024-04-26_00-28-23.png){ width="200" align=left }](https://spring.mireactf.ru/)  
     **比赛名称** : [MireaCTF Quals 2024](https://spring.mireactf.ru/)  

@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群：733181790  
                 
     === "国外比赛"
-        ??? Quote "[Cybercoliseum Ⅲ](https://cybercoliseum.codeby.games/en)"  
-            [![](https://ctftime.org/media/events/logo-cdb.png){ width="200" align=left }](https://cybercoliseum.codeby.games/en)  
-            **比赛名称** : [Cybercoliseum Ⅲ](https://cybercoliseum.codeby.games/en)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-04-28 15:00:00 - 2024-04-30 03:00:00 UTC+8  
-            **比赛权重** : 20.95  
-            **赛事主办** : Codeby Games (https://ctftime.org/team/299486)  
-            **添加日历** : https://ctftime.org/event/2341.ics  
-            
         ??? Quote "[MireaCTF Quals 2024](https://spring.mireactf.ru/)"  
             [![](https://ctftime.org/media/events/image_2024-04-26_00-28-23.png){ width="200" align=left }](https://spring.mireactf.ru/)  
             **比赛名称** : [MireaCTF Quals 2024](https://spring.mireactf.ru/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
             **添加日历** : https://ctftime.org/event/2357.ics  
+            
+        ??? Quote "[DEF CON CTF Qualifier 2024](https://nautilus.institute/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://nautilus.institute/)  
+            **比赛名称** : [DEF CON CTF Qualifier 2024](https://nautilus.institute/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-05-04 08:00:00 - 2024-05-06 08:00:00 UTC+8  
+            **比赛权重** : 77.38  
+            **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
+            **添加日历** : https://ctftime.org/event/2229.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
