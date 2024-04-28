@@ -720,18 +720,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "D^3CTF 2024",
-        "比赛时间": "2024-04-26 20:00:00 - 2024-04-28 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2276.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://d3c.tf/",
-        "比赛标志": "https://ctftime.org/media/events/ddd.png",
-        "比赛权重": "39.40",
-        "赛事主办": "D^3CTF Organizers (https://ctftime.org/team/91096)",
-        "比赛ID": "387",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "SpringForwardCTF",
         "比赛时间": "2024-04-27 05:00:00 - 2024-04-29 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2348.ics",
@@ -873,6 +861,18 @@
         "比赛权重": "0",
         "赛事主办": "cr3.mov (https://ctftime.org/team/242101)",
         "比赛ID": "1074",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "D^3CTF 2024",
+        "比赛时间": "2024-04-26 20:00:00 - 2024-04-28 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2276.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://d3c.tf/",
+        "比赛标志": "https://ctftime.org/media/events/ddd.png",
+        "比赛权重": "39.40",
+        "赛事主办": "D^3CTF Organizers (https://ctftime.org/team/91096)",
+        "比赛ID": "387",
         "比赛状态": "past"
     },
     {
@@ -1989,18 +1989,6 @@
         "比赛权重": "24.59",
         "赛事主办": "IrisSec (https://ctftime.org/team/127034)",
         "比赛ID": "841",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Shaastra CTF '24",
-        "比赛时间": "2024-01-04 16:30:00 - 2024-01-04 18:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2220.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.shaastractf2024.online/",
-        "比赛标志": "https://ctftime.org/media/events/Shaastralogo.png",
-        "比赛权重": "0.00",
-        "赛事主办": "ShaastraCTF2024 (https://ctftime.org/team/276568)",
-        "比赛ID": "1039",
         "比赛状态": "past"
     }
 ]

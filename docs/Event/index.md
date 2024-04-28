@@ -894,15 +894,6 @@ hide:
                 **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
                 **添加日历** : https://ctftime.org/event/2354.ics  
                 
-            ??? Quote "[D^3CTF 2024](https://d3c.tf/)"  
-                [![](https://ctftime.org/media/events/ddd.png){ width="200" align=left }](https://d3c.tf/)  
-                **比赛名称** : [D^3CTF 2024](https://d3c.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-26 20:00:00 - 2024-04-28 20:00:00 UTC+8  
-                **比赛权重** : 39.40  
-                **赛事主办** : D^3CTF Organizers (https://ctftime.org/team/91096)  
-                **添加日历** : https://ctftime.org/event/2276.ics  
-                
             ??? Quote "[SpringForwardCTF](https://springforward.ctfd.io/)"  
                 [![](https://ctftime.org/media/events/NICC-2-green.png){ width="200" align=left }](https://springforward.ctfd.io/)  
                 **比赛名称** : [SpringForwardCTF](https://springforward.ctfd.io/)  
@@ -1104,6 +1095,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : cr3.mov (https://ctftime.org/team/242101)  
                 **添加日历** : https://ctftime.org/event/2288.ics  
+                
+            ??? Quote "[D^3CTF 2024](https://d3c.tf/)"  
+                [![](https://ctftime.org/media/events/ddd.png){ width="200" align=left }](https://d3c.tf/)  
+                **比赛名称** : [D^3CTF 2024](https://d3c.tf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-26 20:00:00 - 2024-04-28 20:00:00 UTC+8  
+                **比赛权重** : 39.40  
+                **赛事主办** : D^3CTF Organizers (https://ctftime.org/team/91096)  
+                **添加日历** : https://ctftime.org/event/2276.ics  
                 
             ??? Quote "[Kernel Kombat](http://18.206.160.227/)"  
                 [![](https://ctftime.org/media/events/jeclat.png){ width="200" align=left }](http://18.206.160.227/)  
@@ -1941,15 +1941,6 @@ hide:
                 **比赛权重** : 24.59  
                 **赛事主办** : IrisSec (https://ctftime.org/team/127034)  
                 **添加日历** : https://ctftime.org/event/2085.ics  
-                
-            ??? Quote "[Shaastra CTF '24](https://ctf.shaastractf2024.online/)"  
-                [![](https://ctftime.org/media/events/Shaastralogo.png){ width="200" align=left }](https://ctf.shaastractf2024.online/)  
-                **比赛名称** : [Shaastra CTF '24](https://ctf.shaastractf2024.online/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-01-04 16:30:00 - 2024-01-04 18:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : ShaastraCTF2024 (https://ctftime.org/team/276568)  
-                **添加日历** : https://ctftime.org/event/2220.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
