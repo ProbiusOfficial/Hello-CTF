@@ -1002,7 +1002,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.cyber-cit.club/",
         "比赛标志": "https://ctftime.org/media/events/CTF-CIT-ctftime.png",
-        "比赛权重": "0",
+        "比赛权重": "24.43",
         "赛事主办": "HACK@CIT (https://ctftime.org/team/287896)",
         "比赛ID": "1109",
         "比赛状态": "past"
@@ -1314,7 +1314,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf-quals-8.hackfest.tn/",
         "比赛标志": "https://ctftime.org/media/events/HACKFEST_WHITE.png",
-        "比赛权重": "20.73",
+        "比赛权重": "21.00",
         "赛事主办": "HACKFEST TEAM (https://ctftime.org/team/281742)",
         "比赛ID": "1069",
         "比赛状态": "past"
@@ -1710,7 +1710,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "http://broncoctf.xyz/",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "23.13",
+        "比赛权重": "22.51",
         "赛事主办": "BroncoSec (https://ctftime.org/team/112673)",
         "比赛ID": "1017",
         "比赛状态": "past"
