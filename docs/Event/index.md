@@ -912,15 +912,6 @@ hide:
                 **赛事主办** : D^3CTF Organizers (https://ctftime.org/team/91096)  
                 **添加日历** : https://ctftime.org/event/2276.ics  
                 
-            ??? Quote "[cr3 CTF 2024](https://cr3c.tf/)"  
-                [![](https://ctftime.org/media/events/cr3ctf_2024.png){ width="200" align=left }](https://cr3c.tf/)  
-                **比赛名称** : [cr3 CTF 2024](https://cr3c.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-26 21:00:00 - 2024-04-28 09:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : cr3.mov (https://ctftime.org/team/242101)  
-                **添加日历** : https://ctftime.org/event/2288.ics  
-                
             ??? Quote "[SpringForwardCTF](https://springforward.ctfd.io/)"  
                 [![](https://ctftime.org/media/events/NICC-2-green.png){ width="200" align=left }](https://springforward.ctfd.io/)  
                 **比赛名称** : [SpringForwardCTF](https://springforward.ctfd.io/)  
@@ -1104,6 +1095,15 @@ hide:
                 **比赛权重** : 33.40  
                 **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
                 **添加日历** : https://ctftime.org/event/2271.ics  
+                
+            ??? Quote "[cr3 CTF 2024](https://cr3c.tf/)"  
+                [![](https://ctftime.org/media/events/cr3ctf_2024.png){ width="200" align=left }](https://cr3c.tf/)  
+                **比赛名称** : [cr3 CTF 2024](https://cr3c.tf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-04-26 21:00:00 - 2024-04-28 09:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : cr3.mov (https://ctftime.org/team/242101)  
+                **添加日历** : https://ctftime.org/event/2288.ics  
                 
             ??? Quote "[Kernel Kombat](http://18.206.160.227/)"  
                 [![](https://ctftime.org/media/events/jeclat.png){ width="200" align=left }](http://18.206.160.227/)  
@@ -1968,15 +1968,6 @@ hide:
                 **比赛权重** : 83.00  
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/1953.ics  
-                
-            ??? Quote "[37C3 Potluck CTF](https://potluckctf.com/)"  
-                [![](https://ctftime.org/media/events/logo-512-white.png){ width="200" align=left }](https://potluckctf.com/)  
-                **比赛名称** : [37C3 Potluck CTF](https://potluckctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2023-12-29 02:00:00 - 2023-12-30 02:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : ZetaTwo (https://ctftime.org/team/9407)  
-                **添加日历** : https://ctftime.org/event/2199.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

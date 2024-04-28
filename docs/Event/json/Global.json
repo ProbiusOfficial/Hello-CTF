@@ -744,18 +744,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "cr3 CTF 2024",
-        "比赛时间": "2024-04-26 21:00:00 - 2024-04-28 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2288.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cr3c.tf/",
-        "比赛标志": "https://ctftime.org/media/events/cr3ctf_2024.png",
-        "比赛权重": "0",
-        "赛事主办": "cr3.mov (https://ctftime.org/team/242101)",
-        "比赛ID": "1074",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "SpringForwardCTF",
         "比赛时间": "2024-04-27 05:00:00 - 2024-04-29 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2348.ics",
@@ -873,6 +861,18 @@
         "比赛权重": "33.40",
         "赛事主办": "Insomni'hack Team (https://ctftime.org/team/104742)",
         "比赛ID": "56",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "cr3 CTF 2024",
+        "比赛时间": "2024-04-26 21:00:00 - 2024-04-28 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2288.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cr3c.tf/",
+        "比赛标志": "https://ctftime.org/media/events/cr3ctf_2024.png",
+        "比赛权重": "0",
+        "赛事主办": "cr3.mov (https://ctftime.org/team/242101)",
+        "比赛ID": "1074",
         "比赛状态": "past"
     },
     {
@@ -2025,18 +2025,6 @@
         "比赛权重": "83.00",
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "59",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "37C3 Potluck CTF",
-        "比赛时间": "2023-12-29 02:00:00 - 2023-12-30 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2199.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://potluckctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/logo-512-white.png",
-        "比赛权重": "25.00",
-        "赛事主办": "ZetaTwo (https://ctftime.org/team/9407)",
-        "比赛ID": "1028",
         "比赛状态": "past"
     }
 ]
