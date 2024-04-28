@@ -107,6 +107,15 @@ comments: true
     **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
     **添加日历** : https://ctftime.org/event/2286.ics  
     
+??? Quote "[Dreamhack Invitational Quals 2024](https://dreamhack.io/ctf/518/)"  
+    [![](https://ctftime.org/media/events/_mini_round_light2x.png){ width="200" align=left }](https://dreamhack.io/ctf/518/)  
+    **比赛名称** : [Dreamhack Invitational Quals 2024](https://dreamhack.io/ctf/518/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-27 08:00:00 - 2024-04-28 08:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Theori (https://ctftime.org/team/250867)  
+    **添加日历** : https://ctftime.org/event/2308.ics  
+    
 ??? Quote "[Insomni'hack 2024](https://insomnihack.ch/contests/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://insomnihack.ch/contests/)  
     **比赛名称** : [Insomni'hack 2024](https://insomnihack.ch/contests/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : ZetaTwo (https://ctftime.org/team/9407)  
     **添加日历** : https://ctftime.org/event/2199.ics  
-    
-??? Quote "[Code X Sport Jung'23 CTF](http://kiet-intra-ctf.site/)"  
-    [![](https://ctftime.org/media/events/event_logo.jpeg){ width="200" align=left }](http://kiet-intra-ctf.site/)  
-    **比赛名称** : [Code X Sport Jung'23 CTF](http://kiet-intra-ctf.site/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-23 13:30:00 - 2023-12-23 16:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : cornered_tiger (https://ctftime.org/team/216139)  
-    **添加日历** : https://ctftime.org/event/2215.ics  
     
