@@ -161,6 +161,15 @@ comments: true
     **赛事主办** : Theori (https://ctftime.org/team/250867)  
     **添加日历** : https://ctftime.org/event/2308.ics  
     
+??? Quote "[UMDCTF 2024](https://umdctf.io/)"  
+    [![](https://ctftime.org/media/events/logo_95.png){ width="200" align=left }](https://umdctf.io/)  
+    **比赛名称** : [UMDCTF 2024](https://umdctf.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-27 06:00:00 - 2024-04-29 06:00:00 UTC+8  
+    **比赛权重** : 48.92  
+    **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
+    **添加日历** : https://ctftime.org/event/2323.ics  
+    
 ??? Quote "[SpringForwardCTF](https://springforward.ctfd.io/)"  
     [![](https://ctftime.org/media/events/NICC-2-green.png){ width="200" align=left }](https://springforward.ctfd.io/)  
     **比赛名称** : [SpringForwardCTF](https://springforward.ctfd.io/)  
@@ -214,6 +223,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
     **添加日历** : https://ctftime.org/event/2361.ics  
+    
+??? Quote "[openECSC 2024 - Round 2](https://open.ecsc2024.it/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://open.ecsc2024.it/)  
+    **比赛名称** : [openECSC 2024 - Round 2](https://open.ecsc2024.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-22 18:00:00 - 2024-04-29 06:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
+    **添加日历** : https://ctftime.org/event/2354.ics  
     
 ??? Quote "[DawgCTF 2024](https://metactf.com/join/dawgctf24)"  
     [![](https://ctftime.org/media/events/ctfTimeLogo_2.png){ width="200" align=left }](https://metactf.com/join/dawgctf24)  
@@ -979,22 +997,4 @@ comments: true
     **比赛权重** : 6.65  
     **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
     **添加日历** : https://ctftime.org/event/2209.ics  
-    
-??? Quote "[Mapna CTF 2024](https://mapnactf.com/)"  
-    [![](https://ctftime.org/media/events/MAPNA.jpg){ width="200" align=left }](https://mapnactf.com/)  
-    **比赛名称** : [Mapna CTF 2024](https://mapnactf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-01-20 23:00:00 - 2024-01-21 23:00:00 UTC+8  
-    **比赛权重** : 24.59  
-    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-    **添加日历** : https://ctftime.org/event/2205.ics  
-    
-??? Quote "[Insomni'hack teaser 2024](https://teaser.insomnihack.ch/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://teaser.insomnihack.ch/)  
-    **比赛名称** : [Insomni'hack teaser 2024](https://teaser.insomnihack.ch/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-01-20 17:00:00 - 2024-01-21 17:00:00 UTC+8  
-    **比赛权重** : 32.00  
-    **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
-    **添加日历** : https://ctftime.org/event/2139.ics  
     

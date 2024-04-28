@@ -708,30 +708,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "openECSC 2024 - Round 2",
-        "比赛时间": "2024-04-22 18:00:00 - 2024-04-29 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2354.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://open.ecsc2024.it/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "ECSC2024 (https://ctftime.org/team/283828)",
-        "比赛ID": "1084",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "UMDCTF 2024",
-        "比赛时间": "2024-04-27 06:00:00 - 2024-04-29 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2323.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://umdctf.io/",
-        "比赛标志": "https://ctftime.org/media/events/logo_95.png",
-        "比赛权重": "48.92",
-        "赛事主办": "UMDCSEC (https://ctftime.org/team/87711)",
-        "比赛ID": "444",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Cybercoliseum Ⅲ",
         "比赛时间": "2024-04-28 15:00:00 - 2024-04-30 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2341.ics",
@@ -828,6 +804,18 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "UMDCTF 2024",
+        "比赛时间": "2024-04-27 06:00:00 - 2024-04-29 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2323.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://umdctf.io/",
+        "比赛标志": "https://ctftime.org/media/events/logo_95.png",
+        "比赛权重": "48.92",
+        "赛事主办": "UMDCSEC (https://ctftime.org/team/87711)",
+        "比赛ID": "444",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "SpringForwardCTF",
         "比赛时间": "2024-04-27 05:00:00 - 2024-04-29 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2348.ics",
@@ -897,6 +885,18 @@
         "比赛权重": "0.00",
         "赛事主办": "CakeisTheFake (https://ctftime.org/team/276544)",
         "比赛ID": "1115",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "openECSC 2024 - Round 2",
+        "比赛时间": "2024-04-22 18:00:00 - 2024-04-29 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2354.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://open.ecsc2024.it/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "ECSC2024 (https://ctftime.org/team/283828)",
+        "比赛ID": "1084",
         "比赛状态": "past"
     },
     {
@@ -1917,30 +1917,6 @@
         "比赛权重": "6.65",
         "赛事主办": "Knight Squad (https://ctftime.org/team/141739)",
         "比赛ID": "721",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Mapna CTF 2024",
-        "比赛时间": "2024-01-20 23:00:00 - 2024-01-21 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2205.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://mapnactf.com/",
-        "比赛标志": "https://ctftime.org/media/events/MAPNA.jpg",
-        "比赛权重": "24.59",
-        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
-        "比赛ID": "1034",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Insomni'hack teaser 2024",
-        "比赛时间": "2024-01-20 17:00:00 - 2024-01-21 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2139.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://teaser.insomnihack.ch/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "32.00",
-        "赛事主办": "Insomni'hack Team (https://ctftime.org/team/104742)",
-        "比赛ID": "56",
         "比赛状态": "past"
     }
 ]
