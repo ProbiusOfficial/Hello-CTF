@@ -161,6 +161,15 @@ comments: true
     **赛事主办** : Theori (https://ctftime.org/team/250867)  
     **添加日历** : https://ctftime.org/event/2308.ics  
     
+??? Quote "[SpringForwardCTF](https://springforward.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/NICC-2-green.png){ width="200" align=left }](https://springforward.ctfd.io/)  
+    **比赛名称** : [SpringForwardCTF](https://springforward.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-27 05:00:00 - 2024-04-29 05:00:00 UTC+8  
+    **比赛权重** : 22.40  
+    **赛事主办** : G1tc_Gu4rdians (https://ctftime.org/team/202828)  
+    **添加日历** : https://ctftime.org/event/2348.ics  
+    
 ??? Quote "[Insomni'hack 2024](https://insomnihack.ch/contests/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://insomnihack.ch/contests/)  
     **比赛名称** : [Insomni'hack 2024](https://insomnihack.ch/contests/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 32.00  
     **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
     **添加日历** : https://ctftime.org/event/2139.ics  
-    
-??? Quote "[HKUST Firebird CTF Competition 2024](http://ctf.firebird.sh/)"  
-    [![](https://ctftime.org/media/events/FirebirdCTFCompetition2.png){ width="200" align=left }](http://ctf.firebird.sh/)  
-    **比赛名称** : [HKUST Firebird CTF Competition 2024](http://ctf.firebird.sh/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-01-20 10:00:00 - 2024-01-21 22:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : HKUSTFirebird (https://ctftime.org/team/65249)  
-    **添加日历** : https://ctftime.org/event/2225.ics  
     

@@ -720,18 +720,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "SpringForwardCTF",
-        "比赛时间": "2024-04-27 05:00:00 - 2024-04-29 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2348.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://springforward.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/NICC-2-green.png",
-        "比赛权重": "22.40",
-        "赛事主办": "G1tc_Gu4rdians (https://ctftime.org/team/202828)",
-        "比赛ID": "987",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "UMDCTF 2024",
         "比赛时间": "2024-04-27 06:00:00 - 2024-04-29 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2323.ics",
@@ -837,6 +825,18 @@
         "比赛权重": "0",
         "赛事主办": "Theori (https://ctftime.org/team/250867)",
         "比赛ID": "1090",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "SpringForwardCTF",
+        "比赛时间": "2024-04-27 05:00:00 - 2024-04-29 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2348.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://springforward.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/NICC-2-green.png",
+        "比赛权重": "22.40",
+        "赛事主办": "G1tc_Gu4rdians (https://ctftime.org/team/202828)",
+        "比赛ID": "987",
         "比赛状态": "past"
     },
     {
@@ -1941,18 +1941,6 @@
         "比赛权重": "32.00",
         "赛事主办": "Insomni'hack Team (https://ctftime.org/team/104742)",
         "比赛ID": "56",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "HKUST Firebird CTF Competition 2024",
-        "比赛时间": "2024-01-20 10:00:00 - 2024-01-21 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2225.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.firebird.sh/",
-        "比赛标志": "https://ctftime.org/media/events/FirebirdCTFCompetition2.png",
-        "比赛权重": "0.00",
-        "赛事主办": "HKUSTFirebird (https://ctftime.org/team/65249)",
-        "比赛ID": "1053",
         "比赛状态": "past"
     }
 ]
