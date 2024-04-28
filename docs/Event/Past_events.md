@@ -98,6 +98,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[CyberSphere CTF](https://securinets.tn/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://securinets.tn/)  
+    **比赛名称** : [CyberSphere CTF](https://securinets.tn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-28 05:00:00 - 2024-04-28 17:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Securinets (https://ctftime.org/team/5084)  
+    **添加日历** : https://ctftime.org/event/2328.ics  
+    
 ??? Quote "[Midnight Flag - Operation BACKSLASH](https://ctfd.midnightflag.fr/)"  
     [![](https://ctftime.org/media/events/logo-3848x3084-upscaled.png){ width="200" align=left }](https://ctfd.midnightflag.fr/)  
     **比赛名称** : [Midnight Flag - Operation BACKSLASH](https://ctfd.midnightflag.fr/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : ShaastraCTF2024 (https://ctftime.org/team/276568)  
     **添加日历** : https://ctftime.org/event/2220.ics  
-    
-??? Quote "[New Year CTF 2024](http://ctf-spcs.mf.grsu.by/)"  
-    [![](https://ctftime.org/media/events/logo_25_2.png){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
-    **比赛名称** : [New Year CTF 2024](http://ctf-spcs.mf.grsu.by/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2023-12-31 01:00:00 - 2024-01-15 05:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
-    **添加日历** : https://ctftime.org/event/2218.ics  
     

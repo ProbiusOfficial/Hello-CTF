@@ -792,18 +792,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CyberSphere CTF",
-        "比赛时间": "2024-04-28 05:00:00 - 2024-04-28 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2328.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://securinets.tn/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Securinets (https://ctftime.org/team/5084)",
-        "比赛ID": "1091",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Cybercoliseum Ⅲ",
         "比赛时间": "2024-04-28 15:00:00 - 2024-04-30 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2341.ics",
@@ -814,6 +802,18 @@
         "赛事主办": "Codeby Games (https://ctftime.org/team/299486)",
         "比赛ID": "923",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CyberSphere CTF",
+        "比赛时间": "2024-04-28 05:00:00 - 2024-04-28 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2328.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://securinets.tn/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "Securinets (https://ctftime.org/team/5084)",
+        "比赛ID": "1091",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Midnight Flag - Operation BACKSLASH",
@@ -2001,18 +2001,6 @@
         "比赛权重": "0.00",
         "赛事主办": "ShaastraCTF2024 (https://ctftime.org/team/276568)",
         "比赛ID": "1039",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "New Year CTF 2024",
-        "比赛时间": "2023-12-31 01:00:00 - 2024-01-15 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2218.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf-spcs.mf.grsu.by/",
-        "比赛标志": "https://ctftime.org/media/events/logo_25_2.png",
-        "比赛权重": "0",
-        "赛事主办": "Beavers0 (https://ctftime.org/team/269281)",
-        "比赛ID": "1041",
         "比赛状态": "past"
     }
 ]
