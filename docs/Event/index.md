@@ -1207,7 +1207,7 @@ hide:
                 **比赛名称** : [CTF@CIT 2024](https://ctf.cyber-cit.club/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-04-20 05:00:00 - 2024-04-22 03:00:00 UTC+8  
-                **比赛权重** : 24.50  
+                **比赛权重** : 24.52  
                 **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
                 **添加日历** : https://ctftime.org/event/2339.ics  
                 
@@ -1684,7 +1684,7 @@ hide:
                 **比赛名称** : [osu!gaming CTF 2024](https://www.osugaming.lol/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-03-02 01:00:00 - 2024-03-04 01:00:00 UTC+8  
-                **比赛权重** : 23.91  
+                **比赛权重** : 23.93  
                 **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
                 **添加日历** : https://ctftime.org/event/2165.ics  
                 
