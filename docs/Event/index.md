@@ -306,13 +306,6 @@ hide:
             **比赛时间** : 2024年04月10日 23:00 - 2024年06月05日 23:00  
             **其他说明** : 作品赛，不提供更多信息，如有疑问请前往比赛通知页面 http://www.ciscn.cn/competition/securityCompetition?compet_id=39  
             
-        ??? Quote "[第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)"  
-            **比赛名称** : [第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)  
-            **比赛类型** : 团队赛|1-3人  
-            **报名时间** : 2023年11月15日 00:00 - 2024年04月30日 00:00  
-            **比赛时间** : 2024年05月01日 00:00 - 2024年05月02日 00:00  
-            **其他说明** : 比赛时间未定  
-            
     === "*即将开始*"
         === "国内赛事"
             ??? Quote "[H&NCTF](https://hnctf.imxbt.cn/)"  
@@ -1214,7 +1207,7 @@ hide:
                 **比赛名称** : [CTF@CIT 2024](https://ctf.cyber-cit.club/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-04-20 05:00:00 - 2024-04-22 03:00:00 UTC+8  
-                **比赛权重** : 24.48  
+                **比赛权重** : 24.50  
                 **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
                 **添加日历** : https://ctftime.org/event/2339.ics  
                 
