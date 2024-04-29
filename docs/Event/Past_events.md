@@ -98,6 +98,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Cybercoliseum Ⅲ](https://cybercoliseum.codeby.games/en)"  
+    [![](https://ctftime.org/media/events/logo-cdb.png){ width="200" align=left }](https://cybercoliseum.codeby.games/en)  
+    **比赛名称** : [Cybercoliseum Ⅲ](https://cybercoliseum.codeby.games/en)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-28 15:00:00 - 2024-04-30 03:00:00 UTC+8  
+    **比赛权重** : 20.95  
+    **赛事主办** : Codeby Games (https://ctftime.org/team/299486)  
+    **添加日历** : https://ctftime.org/event/2341.ics  
+    
 ??? Quote "[CyberSphere CTF](https://securinets.tn/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://securinets.tn/)  
     **比赛名称** : [CyberSphere CTF](https://securinets.tn/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : WyteHat (https://ctftime.org/team/231105)  
     **添加日历** : https://ctftime.org/event/2232.ics  
-    
-??? Quote "[KnightCTF 2024](https://knightctf.com/)"  
-    [![](https://ctftime.org/media/events/KnightCTF.png){ width="200" align=left }](https://knightctf.com/)  
-    **比赛名称** : [KnightCTF 2024](https://knightctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-01-20 23:00:00 - 2024-01-21 23:00:00 UTC+8  
-    **比赛权重** : 6.65  
-    **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
-    **添加日历** : https://ctftime.org/event/2209.ics  
     
