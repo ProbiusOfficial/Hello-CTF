@@ -122,7 +122,7 @@ comments: true
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-04-28 04:00:00 - 2024-04-28 15:00:00 UTC+8  
     **比赛权重** : 37.00  
-    **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
+    **赛事主办** : Midnight Flag - BACKSLASH (https://ctftime.org/team/179110)  
     **添加日历** : https://ctftime.org/event/2295.ics  
     
 ??? Quote "[AirOverflow CTF - 2024](https://ctf.airoverflow.com/)"  
