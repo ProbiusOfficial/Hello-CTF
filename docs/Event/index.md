@@ -285,6 +285,13 @@ hide:
             适度CTF益脑，沉迷CTF伤身。合理安排时间，享受健康生活。
     
     === "*正在报名*"
+        ??? Quote "[ISCC 2024](http://www.isclab.org.cn)"  
+            **比赛名称** : [ISCC 2024](http://www.isclab.org.cn)  
+            **比赛类型** : 个人赛 | 人脉  
+            **报名时间** : 2024年04月30日 08:00 - 2024年05月25日 08:00  
+            **比赛时间** : 2024年05月01日 08:00 - 2024年05月25日 08:00  
+            **其他说明** : QQ群:619577692 / 852601317 邮箱:iscc2004@163.com  
+            
         ??? Quote "[矩阵杯](https://matrixcup.net/page/race/home/)"  
             **比赛名称** : [矩阵杯](https://matrixcup.net/page/race/home/)  
             **比赛类型** : 团队赛|1-4人  
