@@ -985,13 +985,6 @@ hide:
                 **比赛时间** : 2024年03月10日 09:00 - 2024年03月12日 18:00  
                 **其他说明** : 比赛时间2024年3月 未定  
                 
-            ??? Quote "[青少年CTF擂台挑战赛 2024 #Round 1](https://www.qsnctf.com/#/main/race-center/race-guide?id=11)"  
-                **比赛名称** : [青少年CTF擂台挑战赛 2024 #Round 1](https://www.qsnctf.com/#/main/race-center/race-guide?id=11)  
-                **比赛类型** : 团队赛|1-4人  
-                **报名时间** : 2024年02月05日 00:00 - 2024年02月28日 22:00  
-                **比赛时间** : 2024年02月29日 09:00 - 2024年03月01日 22:00  
-                **其他说明** : QQ 群号：820016571  
-                
         === "国外赛事"
             ??? Quote "[Cybercoliseum Ⅲ](https://cybercoliseum.codeby.games/en)"  
                 [![](https://ctftime.org/media/events/logo-cdb.png){ width="200" align=left }](https://cybercoliseum.codeby.games/en)  
