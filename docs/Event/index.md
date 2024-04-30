@@ -350,13 +350,6 @@ hide:
                 **比赛时间** : 2024年04月10日 23:00 - 2024年06月05日 23:00  
                 **其他说明** : 作品赛，不提供更多信息，如有疑问请前往比赛通知页面 http://www.ciscn.cn/competition/securityCompetition?compet_id=39  
                 
-            ??? Quote "[第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)"  
-                **比赛名称** : [第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)  
-                **比赛类型** : 团队赛|1-3人  
-                **报名时间** : 2023年11月15日 00:00 - 2024年04月30日 00:00  
-                **比赛时间** : 2024年05月01日 00:00 - 2024年05月02日 00:00  
-                **其他说明** : 比赛时间未定  
-                
         === "国外赛事"
             ??? Quote "[MireaCTF Quals 2024](https://spring.mireactf.ru/)"  
                 [![](https://ctftime.org/media/events/image_2024-04-26_00-28-23.png){ width="200" align=left }](https://spring.mireactf.ru/)  
@@ -882,6 +875,13 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
+            ??? Quote "[第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)"  
+                **比赛名称** : [第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)  
+                **比赛类型** : 团队赛|1-3人  
+                **报名时间** : 2023年11月15日 00:00 - 2024年04月30日 00:00  
+                **比赛时间** : 2024年05月01日 00:00 - 2024年05月02日 00:00  
+                **其他说明** : 比赛时间未定  
+                
             ??? Quote "[XYCTF高校新生联合赛 2024](https://www.xyctf.top/)"  
                 **比赛名称** : [XYCTF高校新生联合赛 2024](https://www.xyctf.top/)  
                 **比赛类型** : 团队赛 | 1-3人  
