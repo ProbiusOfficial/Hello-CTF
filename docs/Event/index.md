@@ -882,13 +882,6 @@ hide:
                 **比赛时间** : 2024年05月01日 00:00 - 2024年05月02日 00:00  
                 **其他说明** : 比赛时间未定  
                 
-            ??? Quote "[XYCTF高校新生联合赛 2024](https://www.xyctf.top/)"  
-                **比赛名称** : [XYCTF高校新生联合赛 2024](https://www.xyctf.top/)  
-                **比赛类型** : 团队赛 | 1-3人  
-                **报名时间** : 2024年03月05日 10:00 - 2024年04月01日 09:00  
-                **比赛时间** : 2024年04月01日 10:00 - 2024年05月01日 10:00  
-                **其他说明** : 赛事群：798794707  
-                
         === "国外赛事"
             ??? Quote "[Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)  
@@ -901,6 +894,13 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[XYCTF高校新生联合赛 2024](https://www.xyctf.top/)"  
+                **比赛名称** : [XYCTF高校新生联合赛 2024](https://www.xyctf.top/)  
+                **比赛类型** : 团队赛 | 1-3人  
+                **报名时间** : 2024年03月05日 10:00 - 2024年04月01日 09:00  
+                **比赛时间** : 2024年04月01日 10:00 - 2024年05月01日 10:00  
+                **其他说明** : 赛事群：798794707  
+                
             ??? Quote "[GEEKCON 2024 国际站AVSS挑战赛](https://mp.weixin.qq.com/s/iA1PQ9ExwVlRN_iOB7INAg)"  
                 **比赛名称** : [GEEKCON 2024 国际站AVSS挑战赛](https://mp.weixin.qq.com/s/iA1PQ9ExwVlRN_iOB7INAg)  
                 **比赛类型** : 团队赛  
