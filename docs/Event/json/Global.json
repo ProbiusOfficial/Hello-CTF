@@ -705,7 +705,7 @@
         "比赛权重": "0",
         "赛事主办": "cR4.sh (https://ctftime.org/team/224675)",
         "比赛ID": "1121",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Cybercoliseum Ⅲ",
@@ -1893,18 +1893,6 @@
         "比赛权重": "97.04",
         "赛事主办": "Chaitin Tech (https://ctftime.org/team/60371)",
         "比赛ID": "260",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "4N0NYM0US3 2024",
-        "比赛时间": "2024-01-21 13:04:43 - 2024-01-21 13:04:43 UTC+8",
-        "添加日历": "https://ctftime.org/event/2232.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.appinprogress.com/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "25.00",
-        "赛事主办": "WyteHat (https://ctftime.org/team/231105)",
-        "比赛ID": "961",
         "比赛状态": "past"
     }
 ]

@@ -866,13 +866,7 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-            ??? Quote "[第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)"  
-                **比赛名称** : [第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)  
-                **比赛类型** : 团队赛|1-3人  
-                **报名时间** : 2023年11月15日 00:00 - 2024年04月30日 00:00  
-                **比赛时间** : 2024年05月01日 00:00 - 2024年05月02日 00:00  
-                **其他说明** : 比赛时间未定  
-                
+    
         === "国外赛事"
             ??? Quote "[Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)  
@@ -883,17 +877,15 @@ hide:
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
                 
-            ??? Quote "[MireaCTF Quals 2024](https://spring.mireactf.ru/)"  
-                [![](https://ctftime.org/media/events/image_2024-04-26_00-28-23.png){ width="200" align=left }](https://spring.mireactf.ru/)  
-                **比赛名称** : [MireaCTF Quals 2024](https://spring.mireactf.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-01 16:00:00 - 2024-05-02 00:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : cR4.sh (https://ctftime.org/team/224675)  
-                **添加日历** : https://ctftime.org/event/2367.ics  
-                
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)"  
+                **比赛名称** : [第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)  
+                **比赛类型** : 团队赛|1-3人  
+                **报名时间** : 2023年11月15日 00:00 - 2024年04月30日 00:00  
+                **比赛时间** : 2024年05月01日 00:00 - 2024年05月02日 00:00  
+                **其他说明** : 比赛时间未定  
+                
             ??? Quote "[XYCTF高校新生联合赛 2024](https://www.xyctf.top/)"  
                 **比赛名称** : [XYCTF高校新生联合赛 2024](https://www.xyctf.top/)  
                 **比赛类型** : 团队赛 | 1-3人  
@@ -986,6 +978,15 @@ hide:
                 **其他说明** : 比赛时间2024年3月 未定  
                 
         === "国外赛事"
+            ??? Quote "[MireaCTF Quals 2024](https://spring.mireactf.ru/)"  
+                [![](https://ctftime.org/media/events/image_2024-04-26_00-28-23.png){ width="200" align=left }](https://spring.mireactf.ru/)  
+                **比赛名称** : [MireaCTF Quals 2024](https://spring.mireactf.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-05-01 16:00:00 - 2024-05-02 00:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : cR4.sh (https://ctftime.org/team/224675)  
+                **添加日历** : https://ctftime.org/event/2367.ics  
+                
             ??? Quote "[Cybercoliseum Ⅲ](https://cybercoliseum.codeby.games/en)"  
                 [![](https://ctftime.org/media/events/logo-cdb.png){ width="200" align=left }](https://cybercoliseum.codeby.games/en)  
                 **比赛名称** : [Cybercoliseum Ⅲ](https://cybercoliseum.codeby.games/en)  
@@ -1876,15 +1877,6 @@ hide:
                 **比赛权重** : 97.04  
                 **赛事主办** : Chaitin Tech (https://ctftime.org/team/60371)  
                 **添加日历** : https://ctftime.org/event/2172.ics  
-                
-            ??? Quote "[4N0NYM0US3 2024](http://ctf.appinprogress.com/)"  
-                [![](https://ctftime.org){ width="200" align=left }](http://ctf.appinprogress.com/)  
-                **比赛名称** : [4N0NYM0US3 2024](http://ctf.appinprogress.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-01-21 13:04:43 - 2024-01-21 13:04:43 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : WyteHat (https://ctftime.org/team/231105)  
-                **添加日历** : https://ctftime.org/event/2232.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
