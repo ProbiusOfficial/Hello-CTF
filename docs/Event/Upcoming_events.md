@@ -43,15 +43,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[MireaCTF Quals 2024](https://spring.mireactf.ru/)"  
-    [![](https://ctftime.org/media/events/image_2024-04-26_00-28-23.png){ width="200" align=left }](https://spring.mireactf.ru/)  
-    **比赛名称** : [MireaCTF Quals 2024](https://spring.mireactf.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-01 16:00:00 - 2024-05-02 00:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : cR4.sh (https://ctftime.org/team/224675)  
-    **添加日历** : https://ctftime.org/event/2367.ics  
-    
 ??? Quote "[LakeCTF Finals 23](https://lakectf.epfl.ch/)"  
     [![](https://ctftime.org/media/events/lakeCTFLogo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
     **比赛名称** : [LakeCTF Finals 23](https://lakectf.epfl.ch/)  
