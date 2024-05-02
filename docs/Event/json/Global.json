@@ -48,6 +48,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "squ1rrel CTF 2024",
+        "比赛时间": "2024-05-04 23:00:00 - 2024-05-06 11:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2370.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.squ1rrel.dev/",
+        "比赛标志": "https://ctftime.org/media/events/squ1rrel.png",
+        "比赛权重": "0.00",
+        "赛事主办": "squ1rrel (https://ctftime.org/team/201730)",
+        "比赛ID": "1110",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "MireaCTF Finals 2024",
         "比赛时间": "2024-05-10 16:00:00 - 2024-05-10 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2368.ics",
@@ -534,7 +546,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "http://ctf.hitcon.org/",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
+        "比赛权重": "100.00",
         "赛事主办": "HITCON (https://ctftime.org/team/8299)",
         "比赛ID": "79",
         "比赛状态": "oncoming"

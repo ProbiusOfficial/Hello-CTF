@@ -285,6 +285,13 @@ hide:
             适度CTF益脑，沉迷CTF伤身。合理安排时间，享受健康生活。
     
     === "*正在报名*"
+        ??? Quote "[第二届黄河流域公安院校网络空间安全技能挑战赛](http://sdpctf.sdpcsec.cn/)"  
+            **比赛名称** : [第二届黄河流域公安院校网络空间安全技能挑战赛](http://sdpctf.sdpcsec.cn/)  
+            **比赛类型** : 个人赛  
+            **报名时间** : 2024年5月1日 00:00 - 2024年5月12日  17:00  
+            **比赛时间** : 2024年5月12日  09:00 - 2024年5月12日  17:00  
+            **其他说明** : QQ1群:915263648 QQ2群:964202741  
+            
         ??? Quote "[ISCC 2024](http://www.isclab.org.cn)"  
             **比赛名称** : [ISCC 2024](http://www.isclab.org.cn)  
             **比赛类型** : 个人赛 | 人脉  
@@ -319,8 +326,15 @@ hide:
                 **比赛名称** : [H&NCTF](https://hnctf.imxbt.cn/)  
                 **比赛类型** : 团队赛|1-4人  
                 **报名时间** : 2024年5月10日 8:00 - 2024年5月13日 18:00  
-                **比赛时间** : 2024年5月12日 8:00 - 2024年5月13日 18:00  
+                **比赛时间** : 2024年5月12日 08:00 - 2024年5月13日 18:00  
                 **其他说明** : QQ群：733181790  
+                
+            ??? Quote "[第二届黄河流域公安院校网络空间安全技能挑战赛](http://sdpctf.sdpcsec.cn/)"  
+                **比赛名称** : [第二届黄河流域公安院校网络空间安全技能挑战赛](http://sdpctf.sdpcsec.cn/)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年5月1日 00:00 - 2024年5月12日  17:00  
+                **比赛时间** : 2024年5月12日  09:00 - 2024年5月12日  17:00  
+                **其他说明** : QQ1群:915263648 QQ2群:964202741  
                 
             ??? Quote "[ISCC 2024](http://www.isclab.org.cn)"  
                 **比赛名称** : [ISCC 2024](http://www.isclab.org.cn)  
@@ -386,6 +400,15 @@ hide:
                 **比赛权重** : 24.82  
                 **赛事主办** : Punk Security (https://ctftime.org/team/212540)  
                 **添加日历** : https://ctftime.org/event/2285.ics  
+                
+            ??? Quote "[squ1rrel CTF 2024](https://ctf.squ1rrel.dev/)"  
+                [![](https://ctftime.org/media/events/squ1rrel.png){ width="200" align=left }](https://ctf.squ1rrel.dev/)  
+                **比赛名称** : [squ1rrel CTF 2024](https://ctf.squ1rrel.dev/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-05-04 23:00:00 - 2024-05-06 11:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : squ1rrel (https://ctftime.org/team/201730)  
+                **添加日历** : https://ctftime.org/event/2370.ics  
                 
             ??? Quote "[MireaCTF Finals 2024](https://spring.mireactf.ru/)"  
                 [![](https://ctftime.org/media/events/image_2024-04-26_00-28-23_1.png){ width="200" align=left }](https://spring.mireactf.ru/)  
@@ -752,7 +775,7 @@ hide:
                 **比赛名称** : [HITCON CTF 2024 Quals](http://ctf.hitcon.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-07-12 22:00:00 - 2024-07-14 22:00:00 UTC+8  
-                **比赛权重** : 0.00  
+                **比赛权重** : 100.00  
                 **赛事主办** : HITCON (https://ctftime.org/team/8299)  
                 **添加日历** : https://ctftime.org/event/2345.ics  
                 
