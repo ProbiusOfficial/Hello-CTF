@@ -379,15 +379,6 @@ hide:
                 **其他说明** : 作品赛，不提供更多信息，如有疑问请前往比赛通知页面 http://www.ciscn.cn/competition/securityCompetition?compet_id=39  
                 
         === "国外赛事"
-            ??? Quote "[LakeCTF Finals 23](https://lakectf.epfl.ch/)"  
-                [![](https://ctftime.org/media/events/lakeCTFLogo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
-                **比赛名称** : [LakeCTF Finals 23](https://lakectf.epfl.ch/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-03 16:00:00 - 2024-05-04 00:00:00 UTC+8  
-                **比赛权重** : 36.00  
-                **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
-                **添加日历** : https://ctftime.org/event/2246.ics  
-                
             ??? Quote "[DEF CON CTF Qualifier 2024](https://nautilus.institute/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://nautilus.institute/)  
                 **比赛名称** : [DEF CON CTF Qualifier 2024](https://nautilus.institute/)  
@@ -919,6 +910,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
+                
+            ??? Quote "[LakeCTF Finals 23](https://lakectf.epfl.ch/)"  
+                [![](https://ctftime.org/media/events/lakeCTFLogo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
+                **比赛名称** : [LakeCTF Finals 23](https://lakectf.epfl.ch/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-05-03 16:00:00 - 2024-05-04 00:00:00 UTC+8  
+                **比赛权重** : 36.00  
+                **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
+                **添加日历** : https://ctftime.org/event/2246.ics  
                 
     === "*已经结束*"
         === "国内赛事"

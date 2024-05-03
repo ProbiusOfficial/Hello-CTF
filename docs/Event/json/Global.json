@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "LakeCTF Finals 23",
-        "比赛时间": "2024-05-03 16:00:00 - 2024-05-04 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2246.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://lakectf.epfl.ch/",
-        "比赛标志": "https://ctftime.org/media/events/lakeCTFLogo.png",
-        "比赛权重": "36.00",
-        "赛事主办": "polygl0ts (https://ctftime.org/team/53791)",
-        "比赛ID": "818",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "DEF CON CTF Qualifier 2024",
         "比赛时间": "2024-05-04 08:00:00 - 2024-05-06 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2229.ics",
@@ -705,6 +693,18 @@
         "比赛权重": "0",
         "赛事主办": "Exherbo GNU/Linux (https://ctftime.org/team/275214)",
         "比赛ID": "1027",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "LakeCTF Finals 23",
+        "比赛时间": "2024-05-03 16:00:00 - 2024-05-04 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2246.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://lakectf.epfl.ch/",
+        "比赛标志": "https://ctftime.org/media/events/lakeCTFLogo.png",
+        "比赛权重": "36.00",
+        "赛事主办": "polygl0ts (https://ctftime.org/team/53791)",
+        "比赛ID": "818",
         "比赛状态": "nowrunning"
     },
     {

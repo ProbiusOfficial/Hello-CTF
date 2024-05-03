@@ -83,15 +83,6 @@ hide:
             **其他说明** : 545083579 (17届信安创新实践赛指导老师群)  327904910 (17届信安创新实践赛学生①群)  191965192 (17届信安创新实践赛学生②群)  566613050 (17届信安创新实践赛学生③群)  570834671 (17届信安创新实践赛学生④群)  
                 
     === "国外比赛"
-        ??? Quote "[LakeCTF Finals 23](https://lakectf.epfl.ch/)"  
-            [![](https://ctftime.org/media/events/lakeCTFLogo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
-            **比赛名称** : [LakeCTF Finals 23](https://lakectf.epfl.ch/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-05-03 16:00:00 - 2024-05-04 00:00:00 UTC+8  
-            **比赛权重** : 36.00  
-            **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
-            **添加日历** : https://ctftime.org/event/2246.ics  
-            
         ??? Quote "[BSidesSF 2024 CTF](https://ctf.bsidessf.net/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://ctf.bsidessf.net/)  
             **比赛名称** : [BSidesSF 2024 CTF](https://ctf.bsidessf.net/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 24.82  
             **赛事主办** : Punk Security (https://ctftime.org/team/212540)  
             **添加日历** : https://ctftime.org/event/2285.ics  
+            
+        ??? Quote "[squ1rrel CTF 2024](https://ctf.squ1rrel.dev/)"  
+            [![](https://ctftime.org/media/events/squ1rrel.png){ width="200" align=left }](https://ctf.squ1rrel.dev/)  
+            **比赛名称** : [squ1rrel CTF 2024](https://ctf.squ1rrel.dev/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-05-04 23:00:00 - 2024-05-06 11:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : squ1rrel (https://ctftime.org/team/201730)  
+            **添加日历** : https://ctftime.org/event/2370.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
