@@ -705,7 +705,7 @@
         "比赛权重": "36.00",
         "赛事主办": "polygl0ts (https://ctftime.org/team/53791)",
         "比赛ID": "818",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "MireaCTF Quals 2024",
@@ -1893,18 +1893,6 @@
         "比赛权重": "0.00",
         "赛事主办": "EN¢R¥PT_EDGE€ (https://ctftime.org/team/273673)",
         "比赛ID": "1050",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Real World CTF 6th",
-        "比赛时间": "2024-01-26 19:00:00 - 2024-01-28 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2172.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://realworldctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/rwctf.png",
-        "比赛权重": "97.04",
-        "赛事主办": "Chaitin Tech (https://ctftime.org/team/60371)",
-        "比赛ID": "260",
         "比赛状态": "past"
     }
 ]
