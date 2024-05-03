@@ -24,12 +24,3 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Quote "[LakeCTF Finals 23](https://lakectf.epfl.ch/)"  
-    [![](https://ctftime.org/media/events/lakeCTFLogo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
-    **比赛名称** : [LakeCTF Finals 23](https://lakectf.epfl.ch/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-03 16:00:00 - 2024-05-04 00:00:00 UTC+8  
-    **比赛权重** : 36.00  
-    **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
-    **添加日历** : https://ctftime.org/event/2246.ics  
-    
