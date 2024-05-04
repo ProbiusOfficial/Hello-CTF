@@ -1,29 +1,5 @@
 [
     {
-        "比赛名称": "DEF CON CTF Qualifier 2024",
-        "比赛时间": "2024-05-04 08:00:00 - 2024-05-06 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2229.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nautilus.institute/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "77.38",
-        "赛事主办": "Nautilus Institute (https://ctftime.org/team/181536)",
-        "比赛ID": "1",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "BSidesSF 2024 CTF",
-        "比赛时间": "2024-05-04 08:00:00 - 2024-05-06 07:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2357.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.bsidessf.net/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "BSidesSF (https://ctftime.org/team/54737)",
-        "比赛ID": "252",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Punk Security DevSecOps Birthday CTF",
         "比赛时间": "2024-05-04 17:00:00 - 2024-05-05 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2285.ics",
@@ -693,6 +669,30 @@
         "比赛权重": "0",
         "赛事主办": "Exherbo GNU/Linux (https://ctftime.org/team/275214)",
         "比赛ID": "1027",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "DEF CON CTF Qualifier 2024",
+        "比赛时间": "2024-05-04 08:00:00 - 2024-05-06 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2229.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nautilus.institute/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "77.38",
+        "赛事主办": "Nautilus Institute (https://ctftime.org/team/181536)",
+        "比赛ID": "1",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "BSidesSF 2024 CTF",
+        "比赛时间": "2024-05-04 08:00:00 - 2024-05-06 07:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2357.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bsidessf.net/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "BSidesSF (https://ctftime.org/team/54737)",
+        "比赛ID": "252",
         "比赛状态": "nowrunning"
     },
     {

@@ -83,24 +83,6 @@ hide:
             **其他说明** : 545083579 (17届信安创新实践赛指导老师群)  327904910 (17届信安创新实践赛学生①群)  191965192 (17届信安创新实践赛学生②群)  566613050 (17届信安创新实践赛学生③群)  570834671 (17届信安创新实践赛学生④群)  
                 
     === "国外比赛"
-        ??? Quote "[BSidesSF 2024 CTF](https://ctf.bsidessf.net/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctf.bsidessf.net/)  
-            **比赛名称** : [BSidesSF 2024 CTF](https://ctf.bsidessf.net/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-05-04 08:00:00 - 2024-05-06 07:59:59 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
-            **添加日历** : https://ctftime.org/event/2357.ics  
-            
-        ??? Quote "[DEF CON CTF Qualifier 2024](https://nautilus.institute/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://nautilus.institute/)  
-            **比赛名称** : [DEF CON CTF Qualifier 2024](https://nautilus.institute/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-05-04 08:00:00 - 2024-05-06 08:00:00 UTC+8  
-            **比赛权重** : 77.38  
-            **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
-            **添加日历** : https://ctftime.org/event/2229.ics  
-            
         ??? Quote "[Punk Security DevSecOps Birthday CTF](https://punksecurity.co.uk/ctf)"  
             [![](https://ctftime.org){ width="200" align=left }](https://punksecurity.co.uk/ctf)  
             **比赛名称** : [Punk Security DevSecOps Birthday CTF](https://punksecurity.co.uk/ctf)  
@@ -118,6 +100,24 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : squ1rrel (https://ctftime.org/team/201730)  
             **添加日历** : https://ctftime.org/event/2370.ics  
+            
+        ??? Quote "[MireaCTF Finals 2024](https://spring.mireactf.ru/)"  
+            [![](https://ctftime.org/media/events/image_2024-04-26_00-28-23_1.png){ width="200" align=left }](https://spring.mireactf.ru/)  
+            **比赛名称** : [MireaCTF Finals 2024](https://spring.mireactf.ru/)  
+            **比赛形式** : Attack-Defense  
+            **比赛时间** : 2024-05-10 16:00:00 - 2024-05-10 22:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : cR4.sh (https://ctftime.org/team/224675)  
+            **添加日历** : https://ctftime.org/event/2368.ics  
+            
+        ??? Quote "[RPCA CTF 2024](https://ctf.rpca.ac.th/)"  
+            [![](https://ctftime.org/media/events/RPCACTF2024-Logo_page-0001.jpg){ width="200" align=left }](https://ctf.rpca.ac.th/)  
+            **比赛名称** : [RPCA CTF 2024](https://ctf.rpca.ac.th/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-05-11 01:00:00 - 2024-05-13 01:00:00 UTC+8  
+            **比赛权重** : 36.00  
+            **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
+            **添加日历** : https://ctftime.org/event/2352.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

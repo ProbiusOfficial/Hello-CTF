@@ -379,24 +379,6 @@ hide:
                 **其他说明** : 作品赛，不提供更多信息，如有疑问请前往比赛通知页面 http://www.ciscn.cn/competition/securityCompetition?compet_id=39  
                 
         === "国外赛事"
-            ??? Quote "[DEF CON CTF Qualifier 2024](https://nautilus.institute/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://nautilus.institute/)  
-                **比赛名称** : [DEF CON CTF Qualifier 2024](https://nautilus.institute/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-04 08:00:00 - 2024-05-06 08:00:00 UTC+8  
-                **比赛权重** : 77.38  
-                **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
-                **添加日历** : https://ctftime.org/event/2229.ics  
-                
-            ??? Quote "[BSidesSF 2024 CTF](https://ctf.bsidessf.net/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.bsidessf.net/)  
-                **比赛名称** : [BSidesSF 2024 CTF](https://ctf.bsidessf.net/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-04 08:00:00 - 2024-05-06 07:59:59 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
-                **添加日历** : https://ctftime.org/event/2357.ics  
-                
             ??? Quote "[Punk Security DevSecOps Birthday CTF](https://punksecurity.co.uk/ctf)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://punksecurity.co.uk/ctf)  
                 **比赛名称** : [Punk Security DevSecOps Birthday CTF](https://punksecurity.co.uk/ctf)  
@@ -910,6 +892,24 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
+                
+            ??? Quote "[DEF CON CTF Qualifier 2024](https://nautilus.institute/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://nautilus.institute/)  
+                **比赛名称** : [DEF CON CTF Qualifier 2024](https://nautilus.institute/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-05-04 08:00:00 - 2024-05-06 08:00:00 UTC+8  
+                **比赛权重** : 77.38  
+                **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
+                **添加日历** : https://ctftime.org/event/2229.ics  
+                
+            ??? Quote "[BSidesSF 2024 CTF](https://ctf.bsidessf.net/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.bsidessf.net/)  
+                **比赛名称** : [BSidesSF 2024 CTF](https://ctf.bsidessf.net/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-05-04 08:00:00 - 2024-05-06 07:59:59 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
+                **添加日历** : https://ctftime.org/event/2357.ics  
                 
     === "*已经结束*"
         === "国内赛事"
