@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "squ1rrel CTF 2024",
-        "比赛时间": "2024-05-04 23:00:00 - 2024-05-06 11:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2370.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.squ1rrel.dev/",
-        "比赛标志": "https://ctftime.org/media/events/squ1rrel.png",
-        "比赛权重": "0.00",
-        "赛事主办": "squ1rrel (https://ctftime.org/team/201730)",
-        "比赛ID": "1110",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "MireaCTF Finals 2024",
         "比赛时间": "2024-05-10 16:00:00 - 2024-05-10 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2368.ics",
@@ -693,6 +681,18 @@
         "比赛权重": "24.82",
         "赛事主办": "Punk Security (https://ctftime.org/team/212540)",
         "比赛ID": "892",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "squ1rrel CTF 2024",
+        "比赛时间": "2024-05-04 23:00:00 - 2024-05-06 11:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2370.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.squ1rrel.dev/",
+        "比赛标志": "https://ctftime.org/media/events/squ1rrel.png",
+        "比赛权重": "0",
+        "赛事主办": "squ1rrel (https://ctftime.org/team/201730)",
+        "比赛ID": "1110",
         "比赛状态": "nowrunning"
     },
     {

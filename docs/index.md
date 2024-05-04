@@ -83,15 +83,6 @@ hide:
             **其他说明** : 545083579 (17届信安创新实践赛指导老师群)  327904910 (17届信安创新实践赛学生①群)  191965192 (17届信安创新实践赛学生②群)  566613050 (17届信安创新实践赛学生③群)  570834671 (17届信安创新实践赛学生④群)  
                 
     === "国外比赛"
-        ??? Quote "[squ1rrel CTF 2024](https://ctf.squ1rrel.dev/)"  
-            [![](https://ctftime.org/media/events/squ1rrel.png){ width="200" align=left }](https://ctf.squ1rrel.dev/)  
-            **比赛名称** : [squ1rrel CTF 2024](https://ctf.squ1rrel.dev/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-05-04 23:00:00 - 2024-05-06 11:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : squ1rrel (https://ctftime.org/team/201730)  
-            **添加日历** : https://ctftime.org/event/2370.ics  
-            
         ??? Quote "[MireaCTF Finals 2024](https://spring.mireactf.ru/)"  
             [![](https://ctftime.org/media/events/image_2024-04-26_00-28-23_1.png){ width="200" align=left }](https://spring.mireactf.ru/)  
             **比赛名称** : [MireaCTF Finals 2024](https://spring.mireactf.ru/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 22.17  
             **赛事主办** : TBTL (https://ctftime.org/team/170112)  
             **添加日历** : https://ctftime.org/event/2324.ics  
+            
+        ??? Quote "[San Diego CTF 2024](https://sdc.tf/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://sdc.tf/)  
+            **比赛名称** : [San Diego CTF 2024](https://sdc.tf/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-05-11 07:59:59 - 2024-05-13 07:59:59 UTC+8  
+            **比赛权重** : 24.67  
+            **赛事主办** : 3 Prongs And a Computer (https://ctftime.org/team/112558)  
+            **添加日历** : https://ctftime.org/event/2325.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
