@@ -1062,7 +1062,7 @@ hide:
                 **比赛名称** : [AirOverflow CTF - 2024](https://ctf.airoverflow.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-04-27 20:00:00 - 2024-04-29 04:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : AirOverFlow (https://ctftime.org/team/140448)  
                 **添加日历** : https://ctftime.org/event/2360.ics  
                 
@@ -1071,7 +1071,7 @@ hide:
                 **比赛名称** : [THJCC CTF](https://ctf-hobby.scint.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-04-27 16:00:00 - 2024-04-29 04:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 0.00  
                 **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
                 **添加日历** : https://ctftime.org/event/2362.ics  
                 
@@ -1080,7 +1080,7 @@ hide:
                 **比赛名称** : [UrchinSec Tanzania National CTF MMXXIV](https://ctf.urchinsec.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-04-27 15:30:00 - 2024-04-29 03:30:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : UrchinSec (https://ctftime.org/team/175663)  
                 **添加日历** : https://ctftime.org/event/2327.ics  
                 

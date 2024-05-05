@@ -762,7 +762,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.airoverflow.com/",
         "比赛标志": "https://ctftime.org/media/events/Cropped_-_No_Name.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "AirOverFlow (https://ctftime.org/team/140448)",
         "比赛ID": "1113",
         "比赛状态": "past"
@@ -774,7 +774,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf-hobby.scint.org/",
         "比赛标志": "https://ctftime.org/media/events/logo1_4.png",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "CakeisTheFake (https://ctftime.org/team/276544)",
         "比赛ID": "1115",
         "比赛状态": "past"
@@ -786,7 +786,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.urchinsec.com/",
         "比赛标志": "https://ctftime.org/media/events/TkH-DDqG_400x400.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "UrchinSec (https://ctftime.org/team/175663)",
         "比赛ID": "1096",
         "比赛状态": "past"
