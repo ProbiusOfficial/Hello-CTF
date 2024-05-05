@@ -1134,7 +1134,7 @@ hide:
                 **比赛名称** : [cr3 CTF 2024](https://cr3c.tf/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-04-26 21:00:00 - 2024-04-28 09:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 23.75  
                 **赛事主办** : cr3.mov (https://ctftime.org/team/242101)  
                 **添加日历** : https://ctftime.org/event/2288.ics  
                 
