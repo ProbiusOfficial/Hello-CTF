@@ -381,7 +381,7 @@ comments: true
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-04-13 21:00:00 - 2024-04-14 05:00:00 UTC+8  
     **比赛权重** : 0.00  
-    **赛事主办** : WayneStateCyber (https://ctftime.org/team/135263)  
+    **赛事主办** : WayneStateCTF (https://ctftime.org/team/135263)  
     **添加日历** : https://ctftime.org/event/2337.ics  
     
 ??? Quote "[CybHackCTF 2024 Spring](https://event.kibhackctf.ru/)"  
