@@ -648,30 +648,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "DEF CON CTF Qualifier 2024",
-        "比赛时间": "2024-05-04 08:00:00 - 2024-05-06 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2229.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nautilus.institute/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "77.38",
-        "赛事主办": "Nautilus Institute (https://ctftime.org/team/181536)",
-        "比赛ID": "1",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "BSidesSF 2024 CTF",
-        "比赛时间": "2024-05-04 08:00:00 - 2024-05-06 07:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2357.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.bsidessf.net/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "BSidesSF (https://ctftime.org/team/54737)",
-        "比赛ID": "252",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "squ1rrel CTF 2024",
         "比赛时间": "2024-05-04 23:00:00 - 2024-05-06 11:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2370.ics",
@@ -693,6 +669,30 @@
         "比赛权重": "24.82",
         "赛事主办": "Punk Security (https://ctftime.org/team/212540)",
         "比赛ID": "892",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "DEF CON CTF Qualifier 2024",
+        "比赛时间": "2024-05-04 08:00:00 - 2024-05-06 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2229.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nautilus.institute/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "77.38",
+        "赛事主办": "Nautilus Institute (https://ctftime.org/team/181536)",
+        "比赛ID": "1",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "BSidesSF 2024 CTF",
+        "比赛时间": "2024-05-04 08:00:00 - 2024-05-06 07:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2357.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bsidessf.net/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "BSidesSF (https://ctftime.org/team/54737)",
+        "比赛ID": "252",
         "比赛状态": "past"
     },
     {
@@ -1857,30 +1857,6 @@
         "比赛权重": "54.40",
         "赛事主办": "DiceGang (https://ctftime.org/team/109452)",
         "比赛ID": "568",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "ISSessions Espionage CTF",
-        "比赛时间": "2024-01-27 22:00:00 - 2024-01-29 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2221.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.issessions.ca/",
-        "比赛标志": "https://ctftime.org/media/events/unnamed_2.png",
-        "比赛权重": "0.00",
-        "赛事主办": "ISSesssions (https://ctftime.org/team/278504)",
-        "比赛ID": "1056",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "TetCTF 2024",
-        "比赛时间": "2024-01-27 08:00:00 - 2024-01-29 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2212.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hackemall.live/",
-        "比赛标志": "https://ctftime.org/media/events/tetlogo.png",
-        "比赛权重": "74.41",
-        "赛事主办": "TetCTF (https://ctftime.org/team/71781)",
-        "比赛ID": "290",
         "比赛状态": "past"
     }
 ]
