@@ -105,6 +105,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[squ1rrel CTF 2024](https://ctf.squ1rrel.dev/)"  
+    [![](https://ctftime.org/media/events/squ1rrel.png){ width="200" align=left }](https://ctf.squ1rrel.dev/)  
+    **比赛名称** : [squ1rrel CTF 2024](https://ctf.squ1rrel.dev/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-04 23:00:00 - 2024-05-06 11:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : squ1rrel (https://ctftime.org/team/201730)  
+    **添加日历** : https://ctftime.org/event/2370.ics  
+    
 ??? Quote "[Punk Security DevSecOps Birthday CTF](https://punksecurity.co.uk/ctf)"  
     [![](https://ctftime.org){ width="200" align=left }](https://punksecurity.co.uk/ctf)  
     **比赛名称** : [Punk Security DevSecOps Birthday CTF](https://punksecurity.co.uk/ctf)  
@@ -995,13 +1004,4 @@ comments: true
     **比赛权重** : 23.33  
     **赛事主办** : L3H Sec (https://ctftime.org/team/75946)  
     **添加日历** : https://ctftime.org/event/2236.ics  
-    
-??? Quote "[DiceCTF 2024 Quals](https://ctf.dicega.ng/)"  
-    [![](https://ctftime.org/media/events/dicectf_2_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
-    **比赛名称** : [DiceCTF 2024 Quals](https://ctf.dicega.ng/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-02-03 05:00:00 - 2024-02-05 05:00:00 UTC+8  
-    **比赛权重** : 54.40  
-    **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
-    **添加日历** : https://ctftime.org/event/2217.ics  
     
