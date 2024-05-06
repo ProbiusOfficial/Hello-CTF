@@ -602,9 +602,9 @@ hide:
                 **赛事主办** : NOPS (https://ctftime.org/team/4056)  
                 **添加日历** : https://ctftime.org/event/2358.ics  
                 
-            ??? Quote "[AkaSec CTF 2024]()"  
-                [![](https://ctftime.org/media/events/akasec_icon-15.png){ width="200" align=left }]()  
-                **比赛名称** : [AkaSec CTF 2024]()  
+            ??? Quote "[Akasec CTF 2024](https://ctf.akasec.club/)"  
+                [![](https://ctftime.org/media/events/akasec_icon-15.png){ width="200" align=left }](https://ctf.akasec.club/)  
+                **比赛名称** : [Akasec CTF 2024](https://ctf.akasec.club/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-06-07 21:37:00 - 2024-06-09 21:37:00 UTC+8  
                 **比赛权重** : 0.00  
