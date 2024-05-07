@@ -100,9 +100,9 @@ comments: true
     **赛事主办** : 3 Prongs And a Computer (https://ctftime.org/team/112558)  
     **添加日历** : https://ctftime.org/event/2325.ics  
     
-??? Quote "[CyberSecurityRumble Quals](https://hacking-meisterschaft.de/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://hacking-meisterschaft.de/)  
-    **比赛名称** : [CyberSecurityRumble Quals](https://hacking-meisterschaft.de/)  
+??? Quote "[CyberSecurityRumble Quals](https://quals.rumble.host/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://quals.rumble.host/)  
+    **比赛名称** : [CyberSecurityRumble Quals](https://quals.rumble.host/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-05-11 21:00:00 - 2024-05-12 21:00:00 UTC+8  
     **比赛权重** : 100.00  
