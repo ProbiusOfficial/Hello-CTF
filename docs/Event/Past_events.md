@@ -200,7 +200,7 @@ comments: true
     **比赛名称** : [THJCC CTF](https://ctf-hobby.scint.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-04-27 16:00:00 - 2024-04-29 04:00:00 UTC+8  
-    **比赛权重** : 0.00  
+    **比赛权重** : 25.00  
     **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
     **添加日历** : https://ctftime.org/event/2362.ics  
     
@@ -380,7 +380,7 @@ comments: true
     **比赛名称** : [CTF@CIT 2024](https://ctf.cyber-cit.club/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-04-20 05:00:00 - 2024-04-22 03:00:00 UTC+8  
-    **比赛权重** : 24.54  
+    **比赛权重** : 24.55  
     **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
     **添加日历** : https://ctftime.org/event/2339.ics  
     
