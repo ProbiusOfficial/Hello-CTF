@@ -123,15 +123,6 @@ comments: true
     **赛事主办** : Punk Security (https://ctftime.org/team/212540)  
     **添加日历** : https://ctftime.org/event/2285.ics  
     
-??? Quote "[DEF CON CTF Qualifier 2024](https://nautilus.institute/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://nautilus.institute/)  
-    **比赛名称** : [DEF CON CTF Qualifier 2024](https://nautilus.institute/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-04 08:00:00 - 2024-05-06 08:00:00 UTC+8  
-    **比赛权重** : 77.38  
-    **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
-    **添加日历** : https://ctftime.org/event/2229.ics  
-    
 ??? Quote "[BSidesSF 2024 CTF](https://ctf.bsidessf.net/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.bsidessf.net/)  
     **比赛名称** : [BSidesSF 2024 CTF](https://ctf.bsidessf.net/)  
@@ -140,6 +131,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
     **添加日历** : https://ctftime.org/event/2357.ics  
+    
+??? Quote "[DEF CON CTF Qualifier 2024](https://nautilus.institute/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://nautilus.institute/)  
+    **比赛名称** : [DEF CON CTF Qualifier 2024](https://nautilus.institute/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-04 08:00:00 - 2024-05-06 08:00:00 UTC+8  
+    **比赛权重** : 77.38  
+    **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
+    **添加日历** : https://ctftime.org/event/2229.ics  
     
 ??? Quote "[LakeCTF Finals 23](https://lakectf.epfl.ch/)"  
     [![](https://ctftime.org/media/events/lakeCTFLogo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
@@ -263,7 +263,7 @@ comments: true
     **比赛名称** : [cr3 CTF 2024](https://2024.cr3c.tf/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-04-26 21:00:00 - 2024-04-28 09:00:00 UTC+8  
-    **比赛权重** : 23.75  
+    **比赛权重** : 23.86  
     **赛事主办** : cr3.mov (https://ctftime.org/team/242101)  
     **添加日历** : https://ctftime.org/event/2288.ics  
     
