@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅析瑞友天翼应用虚拟化系统远程代码执行](https://y4tacker.github.io/2024/05/07/year/2024/5/%E6%B5%85%E6%9E%90%E7%91%9E%E5%8F%8B%E5%A4%A9%E7%BF%BC%E5%BA%94%E7%94%A8%E8%99%9A%E6%8B%9F%E5%8C%96%E7%B3%BB%E7%BB%9F%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-05-07
+
+    4183a9609f0d2da17bd8f3df388aa5764fb3002eeafd3786df60e941c52b3b703c533e71b58ba2cb0146fe22a11c91ec6071cf1fa4a8568fc388ab53664b74ae30f57a569c38e993ca8f7ca43f5a24c8d254ec7c9999cf8da94f989e200b46b4ffa173...
     ### [可能是全网第一个粤语Qwen/从零开始的LLM微调教程](https://blog.stv.lol/archives/88/)  
     >by [Steven Lynn's Blog](https://blog.stv.lol), 2024-05-05
 
@@ -149,9 +153,5 @@ hide:
     >by [Steven Lynn's Blog](https://blog.stv.lol), 2023-12-16
 
     Airpods Pro 2 大概算是我今年买的最后一个产品了，也是我馋了很久却一直没买的产品在此之前，我的主力耳机是 Airpods Pro 一代，考虑到一代已经用了将近三年时间，也是时候换一个了没考虑其他耳机的原因主要还是因为我的主要使用的生态产品还是苹果生态为主，Airpods的无缝连接在各设备之间互相流转很方便于是在tb的双十二活动中以1500出头的价格拿下（耳机本体+一年以换代修）开箱包装...
-    ### [一周年小记&amp;&amp;那些快乐的技术时光](https://blog.zgsec.cn/archives/548.html)  
-    >by [曾哥](https://blog.zgsec.cn/), 2023-12-14
-
-    1# 概述不知不觉，个人博客已经开办了一年了回头看一年前的自己，仍有些感触，遂在闲暇时光提笔写下一些碎碎念数了数我在这一年发表过的博客文章，共计约二十余篇，其实我是真没想到能有那么多文章，比我原定的目标（每个月写一篇原创技术文）多出不少，也算是suprise吧[...]...
 
 </div>
