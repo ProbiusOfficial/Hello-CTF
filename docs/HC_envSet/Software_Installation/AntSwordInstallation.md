@@ -1,6 +1,6 @@
 # 中国蚁剑安装
 
-Github 官网: https://github.com/AntSwordProject
+GitHub 官网: https://github.com/AntSwordProject
 
 ## 下载
 
