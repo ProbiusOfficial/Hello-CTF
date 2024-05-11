@@ -26,7 +26,7 @@ NSSCTF 平台地址：https://www.nssctf.cn/
 ![image](https://user-images.githubusercontent.com/41804496/233057474-f317d106-5ab9-4794-a5e9-22e699016af5.png)
 - 如果您已经注册过账号，可以直接使用用户名和密码进行登录。
 - 如果您忘记了密码，可以点击忘记密码，按照提示进行操作。
-- 此外我们提供第三方账户Github 以及 Gitee 绑定进行登录。
+- 此外我们提供第三方账户GitHub 以及 Gitee 绑定进行登录。
 
 ## 首页
 ![image](https://user-images.githubusercontent.com/41804496/233066671-20b32c41-0df8-4c3a-a37a-ae7393fd8c59.png)

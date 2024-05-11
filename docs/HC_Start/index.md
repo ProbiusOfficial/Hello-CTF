@@ -47,11 +47,11 @@ CTF赛制分多种，国内常见的为「 **解题模式 Jeopardy** 」「 **�
 **A**：由于CTF知识面很广，一个人不可能面面俱到，所以选手们通常都会选择一个自己喜欢的方向深入研究，，通常分为五个方向:**MISC**、**CRYPTO**、**WEB**、**REVERSE**、**PWN**：
 
 - 「 **杂项 MISC** 」安全杂项涉及到古典密码学、编码、隐写术、电子取证、数据分析等广度极高的安全手段及利用方法，选手需要确定手段或者方法，反向的去破译取证从而拿到flag，MISC是CTF比赛中广度最高的方向，需要各个方向都有涉猎。 *——嗯？题不知道丢哪？没事丢杂项就好！*
-- 「 **密码学 CRYPTO**」密码学简单讲就古典密码和现代密码，当然大多数古典密码的题目目前都被划分到MISC中，目前的密码学反而更偏向现代密码学，常出现分组密码、流密码和公钥密码体制的考察，对初等数学、基本的数论有一定需求。选手通常被给予一个加密程序，抹去明文之后留下的加密过程和输出，要求选手通过密码体制的弱点来还原flag。 ——*听说Oi爷又AK了！*
+- 「 **密码学 CRYPTO** 」密码学简单讲就古典密码和现代密码，当然大多数古典密码的题目目前都被划分到MISC中，目前的密码学反而更偏向现代密码学，常出现分组密码、流密码和公钥密码体制的考察，对初等数学、基本的数论有一定需求。选手通常被给予一个加密程序，抹去明文之后留下的加密过程和输出，要求选手通过密码体制的弱点来还原flag。 ——*听说Oi爷又AK了！*
 - 「 **网络攻防 WEB** 」着重于Web应用程序，框架，浏览器以及各类Web服务器的安全问题；挖掘/利用/研究各类Web系漏洞，探究其形成原理、利用方式及修补方案。题目常见的漏洞类型包括注入、XSS、文件包含、代码执行、上传、SSRF等，选手通过漏洞直接或者间接拿到shell或者得到某些关键文件从而得到Flag。 ——*汪汪汪*
 - 「 **逆向工程 Reverse Engineering** 」研究各类操作系统，编译器，虚拟机的底层架构，以Windows和Linux为平台，学习可执行程序的逆向分析技术，如软件调试与破解，对已经编译完成的可执行文件进行分析，研究程序的行为和算法，然后以此为依据，计算出出题人想隐藏的flag ——*逆��*
 - 「 **二进制漏洞利用 Pwn** 」Pwn在安全领域是「攻破」的意思。主要研究程序漏洞利用技术，例如栈溢出、堆管理器的漏洞利用和其他高阶技巧；挖掘和分析各类基于编译型语言的漏洞。二进制攻击涉及到栈溢出、堆溢出、格式化字符串漏洞等二进制漏洞，选手需要借助这些漏洞获取计算机权限，从而拿到flag ——*PWN!*(指声音
-- **SOMETHING NEW** 随着计算机技术的发展，也有一些新的方向如 「**区块链 Blockchain** 」「**Ai安全** 」「**物联网 iOT** 」等的加入。这些内容我们会在进阶文档中更新。
+- **SOMETHING NEW** 随着计算机技术的发展，也有一些新的方向如 「 **区块链 Blockchain** 」「 **AI安全** 」「 **物联网 IoT** 」等的加入。这些内容我们会在进阶文档中更新。
 
 
 
@@ -67,7 +67,7 @@ CTF赛制分多种，国内常见的为「 **解题模式 Jeopardy** 」「 **�
 
 - **一把梭** 代指一类解题过程或者方法，一般指将题目中给出的对应的附件 / 代码 / 密文等，直接丢到某个工具或者网站上，就能得到flag的解题方法。  
 
-- **套娃** 一是指一些题目比如说加密题，嵌套了多层的加密，需要多次解密才能得到flag，即一道题中可能涉及到多个知识点的考察； 二是带有一定贬义意义，通常指出题人只是为了出题而出题，单纯的、一味的、向题目中叠加trick，导致本来就不新颖的题目还变得更加复杂，使得题目的难度无意义的变高。
+- **套娃** 一是指一些题目比如说加密题，嵌套了多层的加密，需要多次解密才能得到flag，即一道题中可能涉及到多个知识点的考察； 二是带有一定贬义意义，通常指出题人只是为了出题而出题，单纯的、一味的、向题目中叠加tricks，导致本来就不新颖的题目还变得更加复杂，使得题目的难度无意义的变高。
 
 #### Q：学习CTF有什么要求么？
 
@@ -107,7 +107,7 @@ CTF赛制分多种，国内常见的为「 **解题模式 Jeopardy** 」「 **�
 
 国内目前几大主流平台：(排名不分先后)
 
-**NSSCTF** [https://www.nssctf.cn/index](https://www.nssctf.cn/index) (多功能Xenny。适合一人单刷，也适合团队训练。**更详细的可以参考 [NSSCTF平台食用指南](../HC_Appendix/NSSCTF_Usage.md)**
+**NSSCTF** [https://www.nssctf.cn/index](https://www.nssctf.cn/index) (多功能Xenny。适合一人单刷，也适合团队训练。**更详细的可以参考 [NSSCTF平台食用指南](../HC_Appendix/NSSCTF_Usage.md)**)
 
 **BUUCTF** [https://buuoj.cn/](https://buuoj.cn/) 
 
@@ -129,8 +129,8 @@ CTF赛制分多种，国内常见的为「 **解题模式 Jeopardy** 」「 **�
     如果看到这里，你已经有了大致的想法，那么便可以去尝试一下了~
 
 !!! quote "小剧场"
-    *“不必等待WP的降临，如果没有WP，我便是WP” —— 鲁迅*
-    "鲁迅说过这话？"
+    *"不必等待WP的降临，如果没有WP，我便是WP" —— 鲁迅*  
+    "鲁迅说过这话？"  
     "鲁迅什么话没说过？"
 
 #### 刷题指南
@@ -149,40 +149,40 @@ CTF题目开启的基本形式如下：
 
 - 容器 (常见于Web Pwn，也有可能见于 Misc Crypto ……)
 
-  - web靶机 —— 通常为 `ip:port / domain:port`
+    - Web靶机 —— 通常为 `ip:port / domain:port`
 
-    ![Untitled 1](https://user-images.githubusercontent.com/41804496/232275726-38bbedbe-02dc-4a43-b2fd-6a460bb3159c.png)
+        ![Untitled 1](https://user-images.githubusercontent.com/41804496/232275726-38bbedbe-02dc-4a43-b2fd-6a460bb3159c.png)
 
-    eg：`1.11.45.14:1919` / `node3.anna.nssctf.cn:28622` 
+        eg：`1.11.45.14:1919` / `node3.anna.nssctf.cn:28622` 
 
-    这样的靶机可以直接在浏览器中访问：
+        这样的靶机可以直接在浏览器中访问：
 
-    ![Untitled 2](https://user-images.githubusercontent.com/41804496/232275794-9868dbdd-b8cf-4e9b-baa3-20a3209c8f63.png)
+        ![Untitled 2](https://user-images.githubusercontent.com/41804496/232275794-9868dbdd-b8cf-4e9b-baa3-20a3209c8f63.png)
 
-  - nc 靶机 给出的形式和Web靶机类似：`ip:port` / `domain:port`
+    - nc 靶机 给出的形式和Web靶机类似：`ip:port` / `domain:port`
 
-    也有可能没有`:` `ip port` / `domain port` 
+        也有可能没有`:` `ip port` / `domain port` 
 
-    也有部分靶机给出时会明显带上nc ：`nc ip port` / `nc domain port` 
+        也有部分靶机给出时会明显带上nc ：`nc ip port` / `nc domain port` 
 
-    ![Untitled 3](https://user-images.githubusercontent.com/41804496/232275821-840e6c52-7fd3-4eb0-970f-21bef3ba64c6.png)
+        ![Untitled 3](https://user-images.githubusercontent.com/41804496/232275821-840e6c52-7fd3-4eb0-970f-21bef3ba64c6.png)
 
-    这样的靶机不能直接在浏览器中访问，需要使用nc工具连接，通常在Linux系统中接入，或者使用某些工具进行交互，如 `pwntools`
+        这样的靶机不能直接在浏览器中访问，需要使用nc工具连接，通常在Linux系统中接入，或者使用某些工具进行交互，如 `pwntools`
 
-- 当然也有可能附件和靶机都有。比如 web 涉及到源码审计的时候，也有的nc交互给nc后台的脚本等各种类似的情况
+- 当然也有可能附件和靶机都有。比如 Web 涉及到源码审计的时候，也有的nc交互给nc后台的脚本等各种类似的情况
 
-  ![Untitled 4](https://user-images.githubusercontent.com/41804496/232275846-4bbe56f9-37ea-4912-bba1-9f3fa40d6a5c.png)
+    ![Untitled 4](https://user-images.githubusercontent.com/41804496/232275846-4bbe56f9-37ea-4912-bba1-9f3fa40d6a5c.png)
 
 ### 新手引导
 
 与其他比赛不同，CTF似乎没有一条能够一镜到底的通路，更多的还是需要探索适合自己的。  
 不过一些基础题单倒是比较确定，可以尝试看看x
 
-下面我们会给出每个方向大致的内容、一些工具和Trick以及入门路线和基础题单
+下面我们会给出每个方向大致的内容、一些工具和Tricks以及入门路线和基础题单
 
 **希望你在入门中 培养 和 强化自己的学习能力，找到属于自己的路。**
 
-#### 「 杂项 MISC」
+#### 「 杂项 MISC 」
 **前置知识**:
 
     知道什么是CTF、知道什么是Flag就行了  
@@ -190,12 +190,12 @@ CTF题目开启的基本形式如下：
 **基础内容 / 路线**:  
 
   - OSINT  
-    「 开源网络情报 OSINT(Open source intelligence ) 」一种情报搜集手段，从各种公开的信息资源中寻找和获取有价值的情报,一般用于考察选手的信息搜集能力，也有可能会考察选手的逻辑推理能力。  
+    「 开源网络情报 OSINT(Open Source Intelligence) 」一种情报搜集手段，从各种公开的信息资源中寻找和获取有价值的情报，一般用于考察选手的信息搜集能力，也有可能会考察选手的逻辑推理能力。  
   - 编码转换 / 古典密码   
   - 隐写: 图片隐写、音频隐写、视频隐写  
-  - 取证 流量分析、磁盘取证、内存取证、日志分析取证  
+  - 取证: 流量分析、磁盘取证、内存取证、日志分析取证  
 
-**入门需要的工具和Trick**
+**入门需要的工具和Tricks**
 
 !!! warning
     该部分只提供基础工具,更多工具可以到环境配置章节中的[工具合集](../HC_envSet/CTFtool.md)查看，在遇到对应题目的时候可在合集中自行查找，到一定程度之后可以尝试自己复现轮子。
@@ -208,7 +208,7 @@ CTF题目开启的基本形式如下：
 | CyberChef   | 近乎全能的编码解码工具。                                     | [官网](https://cyberchef.org/)<br />[国内中文镜像站](https://ctf.mzy0.com/CyberChef3/) | /    |
 | 010 Editor  | 专业的文本编辑器和16进制编辑器，可通过加载模块脚本，解析文件结构。 | [官网](http://www.010editor.com/)                            | /    |
 | QR Research | 专业的二维码扫描识别软件，支持多个纠错等级，掩码选项(已停止维护)。 | /                                                            | /    |
-| Stegsolve   | 图像分析工具。                                               | [Github](https://github.com/Giotino/stegsolve)               | /    |
+| Stegsolve   | 图像分析工具。                                               | [GitHub](https://github.com/Giotino/stegsolve)               | /    |
 | Wireshark   | 流量分析取证软件。                                           | [官网](https://www.wireshark.org/)                           | /    |
 
 方便快速获得题感的一把梭工具：
@@ -226,7 +226,7 @@ CTF题目开启的基本形式如下：
     - CTFshow MISC入门  
     - BUUCTF MISC部分
 
-当然其他平台也行，注意你的目的是**学到东西**，而不是看刷题数量
+当然其他平台也行，注意你的目的是 **学到东西** ，而不是看刷题数量
 
 #### 「 **网络攻防 WEB** 」
 **前置知识**:
@@ -237,27 +237,27 @@ CTF题目开启的基本形式如下：
 
 **泄露 | 注入 | 序列化&反序列化 | 文件包含 | 文件上传 | 命令执行 | XSS | SSRF | 逃逸**
 
-如果你想了解更多或者前沿，可以参考「 **开放式Web应用程序安全项目 OWASP(Open Web Application Security Project)**」  计划
+如果你想了解更多或者前沿，可以参考「 **开放式Web应用程序安全项目 OWASP(Open Web Application Security Project)** 」  计划
 
 **Web方向涉及的技术栈以及大致认知路线**: 
-**Js**(Javascript) → **PHP**(语言基础,语言特性) → **PHP框架**(例如ThinkPHP) → **python** **java** → **web框架** 例如Flask(python) Springboot(java) Node.js(Javascript) ....
+**JS**(JavaScript) → **PHP**(语言基础,语言特性) → **PHP框架**(例如ThinkPHP) → **Python** **Java** → **Web框架** 例如Flask(Python) Springboot(Java) Node.js(JavaScript) ....
 
 !!! warning "注意"
     与开发不同，您无需完整掌握语言再去做题，在了解语言基础后，要做的就是通过题目去学习语言的特性，例如PHP的弱类型特性，Python的反序列化等等，这样的学习方式会更加高效。
 
-**入门需要的工具和Trick**
+**入门需要的工具和Tricks**
 
 - 工具
 
 | 项目名称           | Usage                                                        | 项目地址                                                     | 使用文档 | 其他 |
 | :----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- | ---- |
-| hackbar            | 浏览器插件，能够在页面上直接完成 请求/响应内容编辑，完成各种包括但是不限于伪造的工作。 | [谷歌商店](https://chrome.google.com/webstore/detail/ginpbkfigcoaokgflihfhhmglmbchinc)<br />[Github](https://github.com/Mr-xn/hackbar2.1.3) | /        | /    |
-| Proxy SwitchyOmega | 代理管理软件，方便一个浏览器多个代理端口的切换。             | [Github](https://github.com/FelisCatus/SwitchyOmega)         | /        | /    |
+| hackbar            | 浏览器插件，能够在页面上直接完成 请求/响应内容编辑，完成各种包括但是不限于伪造的工作。 | [谷歌商店](https://chrome.google.com/webstore/detail/ginpbkfigcoaokgflihfhhmglmbchinc)<br />[GitHub](https://github.com/Mr-xn/hackbar2.1.3) | /        | /    |
+| Proxy SwitchyOmega | 代理管理软件，方便一个浏览器多个代理端口的切换。             | [GitHub](https://github.com/FelisCatus/SwitchyOmega)         | /        | /    |
 | Wappalyzer         | 页面技术识别软件，方便快速定位页面的框架技术等信息           | [官网](https://www.wappalyzer.com/)                          | /        | /    |
 | Burp Suite         | 代理抓包软件，用于Web应用程序的渗透测试和攻击                | [官网](https://portswigger.net/burp)                         | /        | /    |
-| Antsword           | 开源Webshell管理工具                                         | [Github](https://github.com/AntSwordProject/antSword)        | /        | /    |
-| dirsearch          | 目录扫描工具                                                 | [Github](https://github.com/maurosoria/dirsearch)            | /        | /    |
-| SQLMap             | 自动化的SQL注入利用工具                                      | [Github](https://github.com/sqlmapproject/sqlmap)            | /        | /    |
+| Antsword           | 开源Webshell管理工具                                         | [GitHub](https://github.com/AntSwordProject/antSword)        | /        | /    |
+| dirsearch          | 目录扫描工具                                                 | [GitHub](https://github.com/maurosoria/dirsearch)            | /        | /    |
+| SQLMap             | 自动化的SQL注入利用工具                                      | [GitHub](https://github.com/sqlmapproject/sqlmap)            | /        | /    |
 
 ---
 
@@ -267,7 +267,7 @@ CTF题目开启的基本形式如下：
 
 有些题目 / 漏洞 涉及到的 RCE 也依赖于Linux命令
 
-同时，你可能需要会简单的使用docker，用于本地环境的搭建，便于漏洞复现或者本地调试。
+同时，你可能需要会简单的使用Docker，用于本地环境的搭建，便于漏洞复现或者本地调试。
 
 Web 入门不会太难，但是和MISC一样，Web 是一个维度很广的方向，所以你需要在做题过程中不断地学习、不断的去了解 Web 这一个庞大的世界。
 
@@ -280,9 +280,9 @@ Web 入门不会太难，但是和MISC一样，Web 是一个维度很广的方�
     
     [BUUCTF](https://buuoj.cn/) / [QsnCTF](https://www.qsnctf.com/) 几大经典靶场 —— **Upload-Labs sqli-labs PikaChu Web-DVWA  XSS-Lab……**
 
-#### 「 **密码学 CRYPTO**」
+#### 「 **密码学 CRYPTO** 」
 
-前面有说到，密码学主要是两个大类：**古典密码学**和**现代密码学**
+前面有说到，密码学主要是两个大类：**古典密码学** 和 **现代密码学**
 
 目前比赛古典密码学多在MISC中考察，如果有涉及到密码学方向的古典密码学，那可能多半是变式 —— 即在古典密码原有的基础或者基于古典密码 置换 和 代换 基本原理创造出的新密码
 
@@ -294,7 +294,7 @@ Web 入门不会太难，但是和MISC一样，Web 是一个维度很广的方�
 
 密码学入门主要以现代密码学为主。
 
-※ **入门需要的工具和Trick**
+※ **入门需要的工具和Tricks**
 
 Python3环境
 
@@ -315,7 +315,7 @@ Python3环境
 
 #### 「 **逆向工程 Reverse Engineering** 」
 
-目前，CTF中的逆向工程题目形式多数为：用户输入字符串->程序进行check。该过程会进行一系列的校验过程或者说算法，通常能通过校验的字符串便是flag。
+目前，CTF中的逆向工程题目形式多数为：用户输入字符串→程序进行check。该过程会进行一系列的校验过程或者说算法，通常能通过校验的字符串便是flag。
 
 所以针对校验过程，有可能是现有的一些加密解密算法，也有可能是出题人自研x
 
@@ -325,15 +325,15 @@ Python3环境
 
 - 可执⾏文件
 - C/C++ 基础
-  - “不要学会了基础才去学基础能做什么” 在你掌握了大部分内容就可以开始实践了，这时候打开你的 OD 就可以开始对程序进行分析了，我们鼓励在实践中学习
+    - “不要学会了基础才去学基础能做什么” 在你掌握了大部分内容就可以开始实践了，这时候打开你的 OD 就可以开始对程序进行分析了，我们鼓励在实践中学习
 - 汇编语言基础
-  - 寄存器、内存、寻址
-  - x86/x64 汇编
-  - 反汇编、反汇编算法
-  - 调⽤约定
-  - 变量、区分处理局部变量
+    - 寄存器、内存、寻址
+    - x86/x64 汇编
+    - 反汇编、反汇编算法
+    - 调⽤约定
+    - 变量、区分处理局部变量
 
-※ **入门需要的工具和Trick**
+※ **入门需要的工具和Tricks**
 
 - IDA Pro (注意：这里尽量选择高版本的，⽽且不要追求汉化)
 - OllyDbg, x64dbg
@@ -378,14 +378,14 @@ PWN主要考察栈溢出、堆溢出、格式化字符串漏洞等常规的二�
 入门你可能会面临和逆向类型差不多的挑战，但你的难度显然会更高：
 
 - 汇编
-- C / CPP
+- C / C++
 - 编译原理
 - Linux
 - python
 
-※ **入门需要的工具和Trick**
+※ **入门需要的工具和Tricks**
 
-- IDA Pro (注意：同样地，这里尽量选择高版本的，⽽且**不要追求汉化**)
+- IDA Pro (注意：同样地，这里尽量选择高版本的，⽽且 **不要追求汉化** )
 - OllyDbg, x64dbg
 - GDB 调试
 - pwntools

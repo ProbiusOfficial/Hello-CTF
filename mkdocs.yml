@@ -10,7 +10,7 @@ repo_url: https://github.com/ProbiusOfficial/Hello-CTF
 edit_uri: https://github.com/ProbiusOfficial/Hello-CTF/tree/main/docs/
 
 # 版权声明 / Copyright
-copyright: Copyright &copy; 2023 探姬
+copyright: Copyright &copy; 2024 探姬 
 
 # 自定义配置部分 / Configuration
 theme:
@@ -34,7 +34,7 @@ theme:
     - navigation.tabs         # 导航标签
     # - navigation.tabs.sticky  # 固定导航标签
     - navigation.top            # 导航顶部
-    - navigation.footer         # 导航底部
+    # - navigation.footer         # 导航底部
     - navigation.tracking       # 导航跟踪
     - search.highlight          # 搜索高亮
     - search.share              # 搜索分享

@@ -239,7 +239,7 @@ __builtins__         内建名称空间，内建名称空间有许多名字到�
 
 我们还是以 `eval` 函数为例子：
 
-> 注意本次教程的所有实验基于 NSSCTF 题目 [ssti-flask-labs](https://www.nssctf.cn/problem/13) ，您可以直接在NSSCTF平台上开启靶机，也可以在Github本地部署源码：[X3NNY/sstilabs](https://github.com/X3NNY/sstilabs)
+> 注意本次教程的所有实验基于 NSSCTF 题目 [ssti-flask-labs](https://www.nssctf.cn/problem/13) ，您可以直接在NSSCTF平台上开启靶机，也可以在GitHub本地部署源码：[X3NNY/sstilabs](https://github.com/X3NNY/sstilabs)
 
 先演示一次手工过程：
 

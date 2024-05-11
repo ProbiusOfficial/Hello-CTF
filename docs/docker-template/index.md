@@ -12,7 +12,7 @@ hide:
 >
 > Release：https://github.com/CTF-Archives/ctf-docker-template/releases
 >
-> 当然您也可以点击本文档中的对应下载按钮获取模板的打包文件 (基于Github直链)
+> 当然您也可以点击本文档中的对应下载按钮获取模板的打包文件 (基于GitHub直链)
 
 
 
