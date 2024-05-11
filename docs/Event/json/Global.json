@@ -168,6 +168,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "ångstromCTF 2024",
+        "比赛时间": "2024-05-25 08:00:00 - 2024-05-28 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2375.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://angstromctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/6d3921eee81a45548b0b898c0244ed7a.jpg",
+        "比赛权重": "72.06",
+        "赛事主办": "ångstromCTF Organizers (https://ctftime.org/team/15734)",
+        "比赛ID": "146",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Dreamhack Invitational 2024",
         "比赛时间": "2024-05-27 09:00:00 - 2024-05-27 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2309.ics",
