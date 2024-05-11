@@ -71,7 +71,7 @@ hide:
         ??? Quote "[H&NCTF](https://hnctf.imxbt.cn/)"  
             **比赛名称** : [H&NCTF](https://hnctf.imxbt.cn/)  
             **比赛类型** : 团队赛|1-4人  
-            **报名时间** : 2024年05月10日 8:00 - 2024年05月13日 18:00  
+            **报名时间** : 2024年05月10日 08:00 - 2024年05月13日 18:00  
             **比赛时间** : 2024年05月12日 08:00 - 2024年05月13日 18:00  
             **其他说明** : QQ群：733181790  
             
@@ -83,41 +83,41 @@ hide:
             **其他说明** : 545083579 (17届信安创新实践赛指导老师群)  327904910 (17届信安创新实践赛学生①群)  191965192 (17届信安创新实践赛学生②群)  566613050 (17届信安创新实践赛学生③群)  570834671 (17届信安创新实践赛学生④群)  
                 
     === "国外比赛"
-        ??? Quote "[RPCA CTF 2024](https://ctf.rpca.ac.th/)"  
-            [![](https://ctftime.org/media/events/RPCACTF2024-Logo_page-0001.jpg){ width="200" align=left }](https://ctf.rpca.ac.th/)  
-            **比赛名称** : [RPCA CTF 2024](https://ctf.rpca.ac.th/)  
+        ??? Quote "[openECSC 2024 - Round 3](https://open.ecsc2024.it/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://open.ecsc2024.it/)  
+            **比赛名称** : [openECSC 2024 - Round 3](https://open.ecsc2024.it/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-05-11 01:00:00 - 2024-05-13 01:00:00 UTC+8  
-            **比赛权重** : 36.00  
-            **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
-            **添加日历** : https://ctftime.org/event/2352.ics  
+            **比赛时间** : 2024-05-13 18:00:00 - 2024-05-20 06:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
+            **添加日历** : https://ctftime.org/event/2355.ics  
             
-        ??? Quote "[TBTL CTF 2024](https://tbtl.ctfd.io/)"  
-            [![](https://ctftime.org/media/events/ctflogo_2.png){ width="200" align=left }](https://tbtl.ctfd.io/)  
-            **比赛名称** : [TBTL CTF 2024](https://tbtl.ctfd.io/)  
+        ??? Quote "[BYUCTF 2024](https://ctfd.cyberjousting.com/)"  
+            [![](https://ctftime.org/media/events/cougar.jpg){ width="200" align=left }](https://ctfd.cyberjousting.com/)  
+            **比赛名称** : [BYUCTF 2024](https://ctfd.cyberjousting.com/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-05-11 06:00:00 - 2024-05-13 06:00:00 UTC+8  
-            **比赛权重** : 22.17  
-            **赛事主办** : TBTL (https://ctftime.org/team/170112)  
-            **添加日历** : https://ctftime.org/event/2324.ics  
+            **比赛时间** : 2024-05-17 08:00:00 - 2024-05-19 08:00:00 UTC+8  
+            **比赛权重** : 30.75  
+            **赛事主办** : BYU Cyberia (https://ctftime.org/team/155711)  
+            **添加日历** : https://ctftime.org/event/2252.ics  
             
-        ??? Quote "[San Diego CTF 2024](https://sdc.tf/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://sdc.tf/)  
-            **比赛名称** : [San Diego CTF 2024](https://sdc.tf/)  
+        ??? Quote "[Black Cell SecOps 2024 - Online Blue Teaming Jeopardy CTF](https://blackcell.io/ctf/)"  
+            [![](https://ctftime.org/media/events/SecOps2024_logo.png){ width="200" align=left }](https://blackcell.io/ctf/)  
+            **比赛名称** : [Black Cell SecOps 2024 - Online Blue Teaming Jeopardy CTF](https://blackcell.io/ctf/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-05-11 07:59:59 - 2024-05-13 07:59:59 UTC+8  
-            **比赛权重** : 24.67  
-            **赛事主办** : 3 Prongs And a Computer (https://ctftime.org/team/112558)  
-            **添加日历** : https://ctftime.org/event/2325.ics  
+            **比赛时间** : 2024-05-17 17:00:00 - 2024-05-20 02:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Black Cell Secops (https://ctftime.org/team/270941)  
+            **添加日历** : https://ctftime.org/event/2135.ics  
             
-        ??? Quote "[CyberSecurityRumble Quals](https://quals.rumble.host/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://quals.rumble.host/)  
-            **比赛名称** : [CyberSecurityRumble Quals](https://quals.rumble.host/)  
+        ??? Quote "[Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)"  
+            [![](https://ctftime.org/media/events/logo_99.png){ width="200" align=left }](https://bts2024.wh.edu.pl/)  
+            **比赛名称** : [Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-05-11 21:00:00 - 2024-05-12 21:00:00 UTC+8  
-            **比赛权重** : 100.00  
-            **赛事主办** : RedRocket (https://ctftime.org/team/48677)  
-            **添加日历** : https://ctftime.org/event/2224.ics  
+            **比赛时间** : 2024-05-18 00:00:00 - 2024-05-19 18:00:00 UTC+8  
+            **比赛权重** : 28.30  
+            **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
+            **添加日历** : https://ctftime.org/event/2289.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

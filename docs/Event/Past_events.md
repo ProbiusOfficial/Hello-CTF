@@ -96,15 +96,17 @@ comments: true
     **比赛时间** : 2024年03月16日 13:30 - 2024年03月16日 17:00  
     **其他说明** : QQ群：521330139  
     
-??? Quote "第一届“长城杯”信息安全铁人三项赛初赛"  
-    **比赛名称** : [第一届“长城杯”信息安全铁人三项赛初赛](http://ccb.itsec.gov.cn/)  
-    **比赛类型** : 团队赛|1-4人  
-    **报名时间** : 2023年12月21日 00:00 - 2024年02月23日 18:00  
-    **比赛时间** : 2024年03月10日 09:00 - 2024年03月12日 18:00  
-    **其他说明** : 比赛时间2024年3月 未定  
-    
 
 ## 国际赛事
+??? Quote "[MireaCTF Finals 2024](https://spring.mireactf.ru/)"  
+    [![](https://ctftime.org/media/events/image_2024-04-26_00-28-23_1.png){ width="200" align=left }](https://spring.mireactf.ru/)  
+    **比赛名称** : [MireaCTF Finals 2024](https://spring.mireactf.ru/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-05-10 16:00:00 - 2024-05-10 22:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : cR4.sh (https://ctftime.org/team/224675)  
+    **添加日历** : https://ctftime.org/event/2368.ics  
+    
 ??? Quote "[squ1rrel CTF 2024](https://ctf.squ1rrel.dev/)"  
     [![](https://ctftime.org/media/events/squ1rrel.png){ width="200" align=left }](https://ctf.squ1rrel.dev/)  
     **比赛名称** : [squ1rrel CTF 2024](https://ctf.squ1rrel.dev/)  
@@ -995,13 +997,4 @@ comments: true
     **比赛权重** : 9.64  
     **赛事主办** : CYB3R_T3N4CI0US (https://ctftime.org/team/160305)  
     **添加日历** : https://ctftime.org/event/2213.ics  
-    
-??? Quote "[L3HCTF 2024](https://l3hctf2024.xctf.org.cn/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://l3hctf2024.xctf.org.cn/)  
-    **比赛名称** : [L3HCTF 2024](https://l3hctf2024.xctf.org.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-02-03 09:00:00 - 2024-02-05 09:00:00 UTC+8  
-    **比赛权重** : 23.33  
-    **赛事主办** : L3H Sec (https://ctftime.org/team/75946)  
-    **添加日历** : https://ctftime.org/event/2236.ics  
     
