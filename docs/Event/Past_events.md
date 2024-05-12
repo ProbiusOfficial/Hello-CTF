@@ -105,6 +105,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[CyberSecurityRumble Quals](https://quals.rumble.host/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://quals.rumble.host/)  
+    **比赛名称** : [CyberSecurityRumble Quals](https://quals.rumble.host/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-11 21:00:00 - 2024-05-12 21:00:00 UTC+8  
+    **比赛权重** : 100.00  
+    **赛事主办** : RedRocket (https://ctftime.org/team/48677)  
+    **添加日历** : https://ctftime.org/event/2224.ics  
+    
 ??? Quote "[MireaCTF Finals 2024](https://spring.mireactf.ru/)"  
     [![](https://ctftime.org/media/events/image_2024-04-26_00-28-23_1.png){ width="200" align=left }](https://spring.mireactf.ru/)  
     **比赛名称** : [MireaCTF Finals 2024](https://spring.mireactf.ru/)  
@@ -995,13 +1004,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
     **添加日历** : https://ctftime.org/event/2208.ics  
-    
-??? Quote "[ESCAPE CTF Final](https://ctf.t3n4ci0us.kr/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.t3n4ci0us.kr/)  
-    **比赛名称** : [ESCAPE CTF Final](https://ctf.t3n4ci0us.kr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-02-03 20:00:00 - 2024-02-04 05:30:00 UTC+8  
-    **比赛权重** : 9.64  
-    **赛事主办** : CYB3R_T3N4CI0US (https://ctftime.org/team/160305)  
-    **添加日历** : https://ctftime.org/event/2213.ics  
     
