@@ -76,7 +76,7 @@ hide:
     ### [浅析瑞友天翼应用虚拟化系统远程代码执行](https://y4tacker.github.io/2024/05/07/year/2024/5/%E6%B5%85%E6%9E%90%E7%91%9E%E5%8F%8B%E5%A4%A9%E7%BF%BC%E5%BA%94%E7%94%A8%E8%99%9A%E6%8B%9F%E5%8C%96%E7%B3%BB%E7%BB%9F%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-05-07
 
-    4183a9609f0d2da17bd8f3df388aa5764fb3002eeafd3786df60e941c52b3b703c533e71b58ba2cb0146fe22a11c91ec6071cf1fa4a8568fc388ab53664b74ae30f57a569c38e993ca8f7ca43f5a24c8d254ec7c9999cf8da94f989e200b46b4ffa173...
+    浅析瑞友天翼应用虚拟化系统远程代码执行看到应急公告简单分析学习一波，漏洞不算难，代码也比较简单，有些细节还是蛮有意思，算是温故而知新，顺便也捡起一些很久没碰的PHP知识鉴权这个系统文件不多，功能点大多是需要登录，我们可以重点关注一下鉴权部分，在为数不多的控制器当中可以看到，在admin/index两个控制器中部分功能点都存在对于登录用户的判断，分别对应函数checklogin与admincheck...
     ### [可能是全网第一个粤语Qwen/从零开始的LLM微调教程](https://blog.stv.lol/archives/88/)  
     >by [Steven Lynn's Blog](https://blog.stv.lol), 2024-05-05
 
