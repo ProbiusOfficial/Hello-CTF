@@ -114,6 +114,15 @@ comments: true
     **赛事主办** : RedRocket (https://ctftime.org/team/48677)  
     **添加日历** : https://ctftime.org/event/2224.ics  
     
+??? Quote "[TBTL CTF 2024](https://tbtl.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/ctflogo_2.png){ width="200" align=left }](https://tbtl.ctfd.io/)  
+    **比赛名称** : [TBTL CTF 2024](https://tbtl.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-11 06:00:00 - 2024-05-13 06:00:00 UTC+8  
+    **比赛权重** : 22.17  
+    **赛事主办** : TBTL (https://ctftime.org/team/170112)  
+    **添加日历** : https://ctftime.org/event/2324.ics  
+    
 ??? Quote "[RPCA CTF 2024](https://ctf.rpca.ac.th/)"  
     [![](https://ctftime.org/media/events/RPCACTF2024-Logo_page-0001.jpg){ width="200" align=left }](https://ctf.rpca.ac.th/)  
     **比赛名称** : [RPCA CTF 2024](https://ctf.rpca.ac.th/)  
@@ -995,13 +1004,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : [team Team] (https://ctftime.org/team/49808)  
     **添加日历** : https://ctftime.org/event/2241.ics  
-    
-??? Quote "[0xL4ugh CTF 2024](https://ctf24.0xl4ugh.com/)"  
-    [![](https://ctftime.org/media/events/logo_94.png){ width="200" align=left }](https://ctf24.0xl4ugh.com/)  
-    **比赛名称** : [0xL4ugh CTF 2024](https://ctf24.0xl4ugh.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-02-09 21:00:00 - 2024-02-10 21:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
-    **添加日历** : https://ctftime.org/event/2216.ics  
     

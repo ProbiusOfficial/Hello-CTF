@@ -612,18 +612,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "TBTL CTF 2024",
-        "比赛时间": "2024-05-11 06:00:00 - 2024-05-13 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2324.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://tbtl.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/ctflogo_2.png",
-        "比赛权重": "22.17",
-        "赛事主办": "TBTL (https://ctftime.org/team/170112)",
-        "比赛ID": "951",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "San Diego CTF 2024",
         "比赛时间": "2024-05-11 07:59:59 - 2024-05-13 07:59:59 UTC+8",
         "添加日历": "https://ctftime.org/event/2325.ics",
@@ -645,6 +633,18 @@
         "比赛权重": "100.00",
         "赛事主办": "RedRocket (https://ctftime.org/team/48677)",
         "比赛ID": "159",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "TBTL CTF 2024",
+        "比赛时间": "2024-05-11 06:00:00 - 2024-05-13 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2324.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://tbtl.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/ctflogo_2.png",
+        "比赛权重": "22.17",
+        "赛事主办": "TBTL (https://ctftime.org/team/170112)",
+        "比赛ID": "951",
         "比赛状态": "past"
     },
     {
@@ -1821,18 +1821,6 @@
         "比赛权重": "25.00",
         "赛事主办": "[team Team] (https://ctftime.org/team/49808)",
         "比赛ID": "457",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "0xL4ugh CTF 2024",
-        "比赛时间": "2024-02-09 21:00:00 - 2024-02-10 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2216.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf24.0xl4ugh.com/",
-        "比赛标志": "https://ctftime.org/media/events/logo_94.png",
-        "比赛权重": "25.00",
-        "赛事主办": "0xL4ugh (https://ctftime.org/team/132776)",
-        "比赛ID": "579",
         "比赛状态": "past"
     }
 ]
