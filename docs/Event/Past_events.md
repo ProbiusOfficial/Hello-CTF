@@ -155,7 +155,7 @@ comments: true
     **比赛名称** : [squ1rrel CTF 2024](https://ctf.squ1rrel.dev/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-05-04 23:00:00 - 2024-05-06 11:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 24.61  
     **赛事主办** : squ1rrel (https://ctftime.org/team/201730)  
     **添加日历** : https://ctftime.org/event/2370.ics  
     
