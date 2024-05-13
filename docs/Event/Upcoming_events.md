@@ -26,13 +26,6 @@ comments: true
     **比赛时间** : 2024年05月25日 09:00 - 2024年05月25日 21:00  
     **其他说明** : QQ群515383635  
     
-??? Quote "H&NCTF"  
-    **比赛名称** : [H&NCTF](https://hnctf.imxbt.cn/)  
-    **比赛类型** : 团队赛|1-4人  
-    **报名时间** : 2024年05月10日 08:00 - 2024年05月13日 18:00  
-    **比赛时间** : 2024年05月12日 08:00 - 2024年05月13日 18:00  
-    **其他说明** : QQ群：733181790  
-    
 ??? Quote "第二届京麒CTF挑战赛"  
     **比赛名称** : [第二届京麒CTF挑战赛](jqctf.jd.com)  
     **比赛类型** : 团队赛  
@@ -71,15 +64,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[openECSC 2024 - Round 3](https://open.ecsc2024.it/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://open.ecsc2024.it/)  
-    **比赛名称** : [openECSC 2024 - Round 3](https://open.ecsc2024.it/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-13 18:00:00 - 2024-05-20 06:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
-    **添加日历** : https://ctftime.org/event/2355.ics  
-    
 ??? Quote "[BYUCTF 2024](https://ctfd.cyberjousting.com/)"  
     [![](https://ctftime.org/media/events/cougar.jpg){ width="200" align=left }](https://ctfd.cyberjousting.com/)  
     **比赛名称** : [BYUCTF 2024](https://ctfd.cyberjousting.com/)  
