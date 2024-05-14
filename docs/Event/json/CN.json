@@ -3,6 +3,17 @@
     "data": {
         "result": [
             {
+                "name": "DragonKnight CTF",
+                "link": "https://www.qsnctf.com/#/main/race-center",
+                "type": "团队赛|1-4人",
+                "bmks": "2024年05月14日00:00",
+                "bmjz": "2024年05月24日18:00",
+                "bsks": "2024年05月25日09:00",
+                "bsjs": "2024年05月26日18:00",
+                "readmore": "QQ群：933699782",
+                "status": 1
+            },
+            {
                 "name": "R3CTF/YUANHENGCTF 2024",
                 "link": "https://ctf2024.r3kapig.com/",
                 "type": "团队赛",
