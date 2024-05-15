@@ -976,13 +976,6 @@ hide:
                 **比赛时间** : 2024年03月16日 8:00 - 2024年03月16日 20:00  
                 **其他说明** : 比赛QQ群: 748783131  
                 
-            ??? Quote "[NSSCTF Round19 密码专项赛](https://www.nssctf.cn/contest)"  
-                **比赛名称** : [NSSCTF Round19 密码专项赛](https://www.nssctf.cn/contest)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年03月16日 13:30 - 2024年03月16日 13:30  
-                **比赛时间** : 2024年03月16日 13:30 - 2024年03月16日 17:00  
-                **其他说明** : QQ群：521330139  
-                
         === "国外赛事"
             ??? Quote "[CyberSecurityRumble Quals](https://quals.rumble.host/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://quals.rumble.host/)  
