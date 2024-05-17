@@ -407,15 +407,6 @@ hide:
                 **其他说明** : 545083579 (17届信安创新实践赛指导老师群)  327904910 (17届信安创新实践赛学生①群)  191965192 (17届信安创新实践赛学生②群)  566613050 (17届信安创新实践赛学生③群)  570834671 (17届信安创新实践赛学生④群)  
                 
         === "国外赛事"
-            ??? Quote "[Black Cell SecOps 2024 - Online Blue Teaming Jeopardy CTF](https://blackcell.io/ctf/)"  
-                [![](https://ctftime.org/media/events/SecOps2024_logo.png){ width="200" align=left }](https://blackcell.io/ctf/)  
-                **比赛名称** : [Black Cell SecOps 2024 - Online Blue Teaming Jeopardy CTF](https://blackcell.io/ctf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-17 17:00:00 - 2024-05-20 02:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Black Cell Secops (https://ctftime.org/team/270941)  
-                **添加日历** : https://ctftime.org/event/2135.ics  
-                
             ??? Quote "[Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)"  
                 [![](https://ctftime.org/media/events/logo_99.png){ width="200" align=left }](https://bts2024.wh.edu.pl/)  
                 **比赛名称** : [Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)  
@@ -875,6 +866,15 @@ hide:
                 **比赛权重** : 30.75  
                 **赛事主办** : BYU Cyberia (https://ctftime.org/team/155711)  
                 **添加日历** : https://ctftime.org/event/2252.ics  
+                
+            ??? Quote "[Black Cell SecOps 2024 - Online Blue Teaming Jeopardy CTF](https://blackcell.io/ctf/)"  
+                [![](https://ctftime.org/media/events/SecOps2024_logo.png){ width="200" align=left }](https://blackcell.io/ctf/)  
+                **比赛名称** : [Black Cell SecOps 2024 - Online Blue Teaming Jeopardy CTF](https://blackcell.io/ctf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-05-17 17:00:00 - 2024-05-20 02:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Black Cell Secops (https://ctftime.org/team/270941)  
+                **添加日历** : https://ctftime.org/event/2135.ics  
                 
     === "*已经结束*"
         === "国内赛事"

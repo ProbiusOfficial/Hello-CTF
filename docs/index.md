@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群：512066352  
                 
     === "国外比赛"
-        ??? Quote "[Black Cell SecOps 2024 - Online Blue Teaming Jeopardy CTF](https://blackcell.io/ctf/)"  
-            [![](https://ctftime.org/media/events/SecOps2024_logo.png){ width="200" align=left }](https://blackcell.io/ctf/)  
-            **比赛名称** : [Black Cell SecOps 2024 - Online Blue Teaming Jeopardy CTF](https://blackcell.io/ctf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-05-17 17:00:00 - 2024-05-20 02:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Black Cell Secops (https://ctftime.org/team/270941)  
-            **添加日历** : https://ctftime.org/event/2135.ics  
-            
         ??? Quote "[Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)"  
             [![](https://ctftime.org/media/events/logo_99.png){ width="200" align=left }](https://bts2024.wh.edu.pl/)  
             **比赛名称** : [Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : VulnX (https://ctftime.org/team/117274)  
             **添加日历** : https://ctftime.org/event/2318.ics  
+            
+        ??? Quote "[SAS CTF 2024 Quals](https://ctf.thesascon.com/)"  
+            [![](https://ctftime.org/media/events/SAS24_2.png){ width="200" align=left }](https://ctf.thesascon.com/)  
+            **比赛名称** : [SAS CTF 2024 Quals](https://ctf.thesascon.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-05-18 20:00:00 - 2024-05-19 20:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
+            **添加日历** : https://ctftime.org/event/2299.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

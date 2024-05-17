@@ -42,3 +42,12 @@ comments: true
     **赛事主办** : BYU Cyberia (https://ctftime.org/team/155711)  
     **添加日历** : https://ctftime.org/event/2252.ics  
     
+??? Quote "[Black Cell SecOps 2024 - Online Blue Teaming Jeopardy CTF](https://blackcell.io/ctf/)"  
+    [![](https://ctftime.org/media/events/SecOps2024_logo.png){ width="200" align=left }](https://blackcell.io/ctf/)  
+    **比赛名称** : [Black Cell SecOps 2024 - Online Blue Teaming Jeopardy CTF](https://blackcell.io/ctf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-17 17:00:00 - 2024-05-20 02:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Black Cell Secops (https://ctftime.org/team/270941)  
+    **添加日历** : https://ctftime.org/event/2135.ics  
+    
