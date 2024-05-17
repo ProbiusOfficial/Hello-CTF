@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群：512066352  
                 
     === "国外比赛"
-        ??? Quote "[TJCTF 2024](https://tjctf.org/)"  
-            [![](https://ctftime.org/media/events/logo_96.png){ width="200" align=left }](https://tjctf.org/)  
-            **比赛名称** : [TJCTF 2024](https://tjctf.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-05-18 02:30:00 - 2024-05-20 02:30:00 UTC+8  
-            **比赛权重** : 35.60  
-            **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
-            **添加日历** : https://ctftime.org/event/2321.ics  
-            
         ??? Quote "[VulnX CTF 2024](https://vulncon.in/)"  
             [![](https://ctftime.org/media/events/VulnX-Profile_pic.png){ width="200" align=left }](https://vulncon.in/)  
             **比赛名称** : [VulnX CTF 2024](https://vulncon.in/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 25.00  
             **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
             **添加日历** : https://ctftime.org/event/2315.ics  
+            
+        ??? Quote "[Hacky'Nov 0x03](https://hackynov.fr/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://hackynov.fr/)  
+            **比赛名称** : [Hacky'Nov 0x03](https://hackynov.fr/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-05-18 22:00:00 - 2024-05-19 15:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Hacky'Nov (https://ctftime.org/team/178939)  
+            **添加日历** : https://ctftime.org/event/2319.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
