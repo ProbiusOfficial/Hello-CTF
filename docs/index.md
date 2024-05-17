@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群：512066352  
                 
     === "国外比赛"
-        ??? Quote "[Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)"  
-            [![](https://ctftime.org/media/events/logo_99.png){ width="200" align=left }](https://bts2024.wh.edu.pl/)  
-            **比赛名称** : [Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-05-18 00:00:00 - 2024-05-19 18:00:00 UTC+8  
-            **比赛权重** : 28.30  
-            **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
-            **添加日历** : https://ctftime.org/event/2289.ics  
-            
         ??? Quote "[TJCTF 2024](https://tjctf.org/)"  
             [![](https://ctftime.org/media/events/logo_96.png){ width="200" align=left }](https://tjctf.org/)  
             **比赛名称** : [TJCTF 2024](https://tjctf.org/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
             **添加日历** : https://ctftime.org/event/2299.ics  
+            
+        ??? Quote "[HTB Business CTF 2024: The Vault Of Hope](https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474)  
+            **比赛名称** : [HTB Business CTF 2024: The Vault Of Hope](https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-05-18 21:00:00 - 2024-05-22 21:00:00 UTC+8  
+            **比赛权重** : 25.00  
+            **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
+            **添加日历** : https://ctftime.org/event/2315.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
