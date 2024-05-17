@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "BYUCTF 2024",
-        "比赛时间": "2024-05-17 08:00:00 - 2024-05-19 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2252.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfd.cyberjousting.com/",
-        "比赛标志": "https://ctftime.org/media/events/cougar.jpg",
-        "比赛权重": "30.75",
-        "赛事主办": "BYU Cyberia (https://ctftime.org/team/155711)",
-        "比赛ID": "768",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Black Cell SecOps 2024 - Online Blue Teaming Jeopardy CTF",
         "比赛时间": "2024-05-17 17:00:00 - 2024-05-20 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2135.ics",
@@ -609,6 +597,18 @@
         "比赛权重": "0",
         "赛事主办": "ECSC2024 (https://ctftime.org/team/283828)",
         "比赛ID": "1084",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "BYUCTF 2024",
+        "比赛时间": "2024-05-17 08:00:00 - 2024-05-19 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2252.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctfd.cyberjousting.com/",
+        "比赛标志": "https://ctftime.org/media/events/cougar.jpg",
+        "比赛权重": "30.75",
+        "赛事主办": "BYU Cyberia (https://ctftime.org/team/155711)",
+        "比赛ID": "768",
         "比赛状态": "nowrunning"
     },
     {
