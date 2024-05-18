@@ -76,3 +76,12 @@ comments: true
     **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
     **添加日历** : https://ctftime.org/event/2321.ics  
     
+??? Quote "[VulnX CTF 2024](https://vulncon.in/)"  
+    [![](https://ctftime.org/media/events/VulnX-Profile_pic.png){ width="200" align=left }](https://vulncon.in/)  
+    **比赛名称** : [VulnX CTF 2024](https://vulncon.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-18 18:30:00 - 2024-05-19 18:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : VulnX (https://ctftime.org/team/117274)  
+    **添加日历** : https://ctftime.org/event/2318.ics  
+    

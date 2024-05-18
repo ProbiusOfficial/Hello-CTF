@@ -64,15 +64,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[VulnX CTF 2024](https://vulncon.in/)"  
-    [![](https://ctftime.org/media/events/VulnX-Profile_pic.png){ width="200" align=left }](https://vulncon.in/)  
-    **比赛名称** : [VulnX CTF 2024](https://vulncon.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-18 18:30:00 - 2024-05-19 18:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : VulnX (https://ctftime.org/team/117274)  
-    **添加日历** : https://ctftime.org/event/2318.ics  
-    
 ??? Quote "[SAS CTF 2024 Quals](https://ctf.thesascon.com/)"  
     [![](https://ctftime.org/media/events/SAS24_2.png){ width="200" align=left }](https://ctf.thesascon.com/)  
     **比赛名称** : [SAS CTF 2024 Quals](https://ctf.thesascon.com/)  
