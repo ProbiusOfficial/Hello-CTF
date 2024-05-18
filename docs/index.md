@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群515383635  
                 
     === "国外比赛"
-        ??? Quote "[Hacky'Nov 0x03](https://hackynov.fr/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://hackynov.fr/)  
-            **比赛名称** : [Hacky'Nov 0x03](https://hackynov.fr/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-05-18 22:00:00 - 2024-05-19 15:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Hacky'Nov (https://ctftime.org/team/178939)  
-            **添加日历** : https://ctftime.org/event/2319.ics  
-            
         ??? Quote "[BSides Mumbai CTF 2024](https://ctf.bsidesmumbai.in/)"  
             [![](https://ctftime.org/media/events/Logo_11.png){ width="200" align=left }](https://ctf.bsidesmumbai.in/)  
             **比赛名称** : [BSides Mumbai CTF 2024](https://ctf.bsidesmumbai.in/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : L3ak (https://ctftime.org/team/220336)  
             **添加日历** : https://ctftime.org/event/2322.ics  
+            
+        ??? Quote "[[ POSTPONED ] CrewCTF 2024](https://2024.crewc.tf/)"  
+            [![](https://ctftime.org/media/events/THC_new.png){ width="200" align=left }](https://2024.crewc.tf/)  
+            **比赛名称** : [[ POSTPONED ] CrewCTF 2024](https://2024.crewc.tf/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-05-25 01:00:00 - 2024-05-27 01:00:00 UTC+8  
+            **比赛权重** : 26.89  
+            **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
+            **添加日历** : https://ctftime.org/event/2223.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
