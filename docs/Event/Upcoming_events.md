@@ -64,15 +64,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[HTB Business CTF 2024: The Vault Of Hope](https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474)  
-    **比赛名称** : [HTB Business CTF 2024: The Vault Of Hope](https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-18 21:00:00 - 2024-05-22 21:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
-    **添加日历** : https://ctftime.org/event/2315.ics  
-    
 ??? Quote "[Hacky'Nov 0x03](https://hackynov.fr/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://hackynov.fr/)  
     **比赛名称** : [Hacky'Nov 0x03](https://hackynov.fr/)  

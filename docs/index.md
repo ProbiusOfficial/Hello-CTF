@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群515383635  
                 
     === "国外比赛"
-        ??? Quote "[HTB Business CTF 2024: The Vault Of Hope](https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474)  
-            **比赛名称** : [HTB Business CTF 2024: The Vault Of Hope](https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-05-18 21:00:00 - 2024-05-22 21:00:00 UTC+8  
-            **比赛权重** : 25.00  
-            **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
-            **添加日历** : https://ctftime.org/event/2315.ics  
-            
         ??? Quote "[Hacky'Nov 0x03](https://hackynov.fr/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://hackynov.fr/)  
             **比赛名称** : [Hacky'Nov 0x03](https://hackynov.fr/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 41.61  
             **赛事主办** : JustHacking (https://ctftime.org/team/59573)  
             **添加日历** : https://ctftime.org/event/2364.ics  
+            
+        ??? Quote "[L3akCTF 2024](https://ctf.l3ak.team/)"  
+            [![](https://ctftime.org/media/events/ctf_final.png){ width="200" align=left }](https://ctf.l3ak.team/)  
+            **比赛名称** : [L3akCTF 2024](https://ctf.l3ak.team/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-05-24 20:00:00 - 2024-05-26 20:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : L3ak (https://ctftime.org/team/220336)  
+            **添加日历** : https://ctftime.org/event/2322.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
