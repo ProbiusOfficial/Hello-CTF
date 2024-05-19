@@ -91,6 +91,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Hacky'Nov 0x03](https://hackynov.fr/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://hackynov.fr/)  
+    **比赛名称** : [Hacky'Nov 0x03](https://hackynov.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-18 22:00:00 - 2024-05-19 15:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Hacky'Nov (https://ctftime.org/team/178939)  
+    **添加日历** : https://ctftime.org/event/2319.ics  
+    
 ??? Quote "[BYUCTF 2024](https://ctfd.cyberjousting.com/)"  
     [![](https://ctftime.org/media/events/cougar.jpg){ width="200" align=left }](https://ctfd.cyberjousting.com/)  
     **比赛名称** : [BYUCTF 2024](https://ctfd.cyberjousting.com/)  
@@ -981,13 +990,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Saiborg (https://ctftime.org/team/271868)  
     **添加日历** : https://ctftime.org/event/2147.ics  
-    
-??? Quote "[BITSCTF 2024](https://ctf.bitskrieg.org/)"  
-    [![](https://ctftime.org/media/events/bitskrieg.jpg){ width="200" align=left }](https://ctf.bitskrieg.org/)  
-    **比赛名称** : [BITSCTF 2024](https://ctf.bitskrieg.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-02-16 02:30:00 - 2024-02-18 02:30:00 UTC+8  
-    **比赛权重** : 21.91  
-    **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
-    **添加日历** : https://ctftime.org/event/2235.ics  
     
