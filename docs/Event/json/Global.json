@@ -528,18 +528,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "SAS CTF 2024 Quals",
-        "比赛时间": "2024-05-18 20:00:00 - 2024-05-19 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2299.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.thesascon.com/",
-        "比赛标志": "https://ctftime.org/media/events/SAS24_2.png",
-        "比赛权重": "0",
-        "赛事主办": "SAS CREW (https://ctftime.org/team/283057)",
-        "比赛ID": "1081",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "HTB Business CTF 2024: The Vault Of Hope",
         "比赛时间": "2024-05-18 21:00:00 - 2024-05-22 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2315.ics",
@@ -573,6 +561,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Hacky'Nov (https://ctftime.org/team/178939)",
         "比赛ID": "759",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "SAS CTF 2024 Quals",
+        "比赛时间": "2024-05-18 20:00:00 - 2024-05-19 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2299.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.thesascon.com/",
+        "比赛标志": "https://ctftime.org/media/events/SAS24_2.png",
+        "比赛权重": "0",
+        "赛事主办": "SAS CREW (https://ctftime.org/team/283057)",
+        "比赛ID": "1081",
         "比赛状态": "past"
     },
     {
@@ -1749,18 +1749,6 @@
         "比赛权重": "22.51",
         "赛事主办": "BroncoSec (https://ctftime.org/team/112673)",
         "比赛ID": "1017",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "LA CTF 2024",
-        "比赛时间": "2024-02-17 12:00:00 - 2024-02-19 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2102.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://lac.tf/",
-        "比赛标志": "https://ctftime.org/media/events/lactf-square-logo_1.png",
-        "比赛权重": "24.93",
-        "赛事主办": "PBR | UCLA (https://ctftime.org/team/186494)",
-        "比赛ID": "820",
         "比赛状态": "past"
     }
 ]
