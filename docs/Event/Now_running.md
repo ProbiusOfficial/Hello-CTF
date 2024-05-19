@@ -33,12 +33,3 @@ comments: true
     **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
     **添加日历** : https://ctftime.org/event/2315.ics  
     
-??? Quote "[BSides Mumbai CTF 2024](https://ctf.bsidesmumbai.in/)"  
-    [![](https://ctftime.org/media/events/Logo_11.png){ width="200" align=left }](https://ctf.bsidesmumbai.in/)  
-    **比赛名称** : [BSides Mumbai CTF 2024](https://ctf.bsidesmumbai.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-19 18:30:00 - 2024-05-20 06:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : DarkArmy (https://ctftime.org/team/26569)  
-    **添加日历** : https://ctftime.org/event/2369.ics  
-    

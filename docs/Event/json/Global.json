@@ -525,7 +525,7 @@
         "比赛权重": "0",
         "赛事主办": "DarkArmy (https://ctftime.org/team/26569)",
         "比赛ID": "1120",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Hacky'Nov 0x03",
@@ -1713,18 +1713,6 @@
         "比赛权重": "33.43",
         "赛事主办": "CyberCellVIIT (https://ctftime.org/team/144677)",
         "比赛ID": "599",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "WEC CTF",
-        "比赛时间": "2024-02-24 20:30:00 - 2024-02-25 20:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2270.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://wecctf.nitk.ac.in/",
-        "比赛标志": "https://ctftime.org/media/events/weclogo.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Web Club NITK (https://ctftime.org/team/216903)",
-        "比赛ID": "913",
         "比赛状态": "past"
     }
 ]

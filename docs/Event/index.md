@@ -797,15 +797,6 @@ hide:
                 **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
                 **添加日历** : https://ctftime.org/event/2315.ics  
                 
-            ??? Quote "[BSides Mumbai CTF 2024](https://ctf.bsidesmumbai.in/)"  
-                [![](https://ctftime.org/media/events/Logo_11.png){ width="200" align=left }](https://ctf.bsidesmumbai.in/)  
-                **比赛名称** : [BSides Mumbai CTF 2024](https://ctf.bsidesmumbai.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-19 18:30:00 - 2024-05-20 06:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : DarkArmy (https://ctftime.org/team/26569)  
-                **添加日历** : https://ctftime.org/event/2369.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[第十七届全国大学生信息安全竞赛——创新实践能力赛](http://www.ciscn.cn/)"  
@@ -900,6 +891,15 @@ hide:
                 **其他说明** : QQ群：630246091  
                 
         === "国外赛事"
+            ??? Quote "[BSides Mumbai CTF 2024](https://ctf.bsidesmumbai.in/)"  
+                [![](https://ctftime.org/media/events/Logo_11.png){ width="200" align=left }](https://ctf.bsidesmumbai.in/)  
+                **比赛名称** : [BSides Mumbai CTF 2024](https://ctf.bsidesmumbai.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-05-19 18:30:00 - 2024-05-20 06:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : DarkArmy (https://ctftime.org/team/26569)  
+                **添加日历** : https://ctftime.org/event/2369.ics  
+                
             ??? Quote "[Hacky'Nov 0x03](https://hackynov.fr/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://hackynov.fr/)  
                 **比赛名称** : [Hacky'Nov 0x03](https://hackynov.fr/)  
@@ -1790,15 +1790,6 @@ hide:
                 **比赛权重** : 33.43  
                 **赛事主办** : CyberCellVIIT (https://ctftime.org/team/144677)  
                 **添加日历** : https://ctftime.org/event/2272.ics  
-                
-            ??? Quote "[WEC CTF](https://wecctf.nitk.ac.in/)"  
-                [![](https://ctftime.org/media/events/weclogo.png){ width="200" align=left }](https://wecctf.nitk.ac.in/)  
-                **比赛名称** : [WEC CTF](https://wecctf.nitk.ac.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-02-24 20:30:00 - 2024-02-25 20:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Web Club NITK (https://ctftime.org/team/216903)  
-                **添加日历** : https://ctftime.org/event/2270.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
