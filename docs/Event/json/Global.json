@@ -516,18 +516,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "TJCTF 2024",
-        "比赛时间": "2024-05-18 02:30:00 - 2024-05-20 02:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2321.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://tjctf.org/",
-        "比赛标志": "https://ctftime.org/media/events/logo_96.png",
-        "比赛权重": "35.60",
-        "赛事主办": "tjcsc (https://ctftime.org/team/53812)",
-        "比赛ID": "144",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "HTB Business CTF 2024: The Vault Of Hope",
         "比赛时间": "2024-05-18 21:00:00 - 2024-05-22 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2315.ics",
@@ -585,6 +573,18 @@
         "比赛权重": "0",
         "赛事主办": "VulnX (https://ctftime.org/team/117274)",
         "比赛ID": "461",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "TJCTF 2024",
+        "比赛时间": "2024-05-18 02:30:00 - 2024-05-20 02:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2321.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://tjctf.org/",
+        "比赛标志": "https://ctftime.org/media/events/logo_96.png",
+        "比赛权重": "35.60",
+        "赛事主办": "tjcsc (https://ctftime.org/team/53812)",
+        "比赛ID": "144",
         "比赛状态": "past"
     },
     {
@@ -1737,18 +1737,6 @@
         "比赛权重": "79.83",
         "赛事主办": "bi0s (https://ctftime.org/team/662)",
         "比赛ID": "31",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BraekerCTF",
-        "比赛时间": "2024-02-23 20:00:00 - 2024-02-25 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2181.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://github.com/spipm/BraekerCTF_2024_public",
-        "比赛标志": "https://ctftime.org/media/events/AI_Robot4.png",
-        "比赛权重": "24.70",
-        "赛事主办": "Braeker (https://ctftime.org/team/274910)",
-        "比赛ID": "1026",
         "比赛状态": "past"
     }
 ]

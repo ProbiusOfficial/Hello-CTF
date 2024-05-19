@@ -33,15 +33,6 @@ comments: true
     **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
     **添加日历** : https://ctftime.org/event/2355.ics  
     
-??? Quote "[TJCTF 2024](https://tjctf.org/)"  
-    [![](https://ctftime.org/media/events/logo_96.png){ width="200" align=left }](https://tjctf.org/)  
-    **比赛名称** : [TJCTF 2024](https://tjctf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-18 02:30:00 - 2024-05-20 02:30:00 UTC+8  
-    **比赛权重** : 35.60  
-    **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
-    **添加日历** : https://ctftime.org/event/2321.ics  
-    
 ??? Quote "[HTB Business CTF 2024: The Vault Of Hope](https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474)  
     **比赛名称** : [HTB Business CTF 2024: The Vault Of Hope](https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474)  

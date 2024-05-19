@@ -797,15 +797,6 @@ hide:
                 **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
                 **添加日历** : https://ctftime.org/event/2355.ics  
                 
-            ??? Quote "[TJCTF 2024](https://tjctf.org/)"  
-                [![](https://ctftime.org/media/events/logo_96.png){ width="200" align=left }](https://tjctf.org/)  
-                **比赛名称** : [TJCTF 2024](https://tjctf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-18 02:30:00 - 2024-05-20 02:30:00 UTC+8  
-                **比赛权重** : 35.60  
-                **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
-                **添加日历** : https://ctftime.org/event/2321.ics  
-                
             ??? Quote "[HTB Business CTF 2024: The Vault Of Hope](https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474)  
                 **比赛名称** : [HTB Business CTF 2024: The Vault Of Hope](https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474)  
@@ -944,6 +935,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : VulnX (https://ctftime.org/team/117274)  
                 **添加日历** : https://ctftime.org/event/2318.ics  
+                
+            ??? Quote "[TJCTF 2024](https://tjctf.org/)"  
+                [![](https://ctftime.org/media/events/logo_96.png){ width="200" align=left }](https://tjctf.org/)  
+                **比赛名称** : [TJCTF 2024](https://tjctf.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-05-18 02:30:00 - 2024-05-20 02:30:00 UTC+8  
+                **比赛权重** : 35.60  
+                **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
+                **添加日历** : https://ctftime.org/event/2321.ics  
                 
             ??? Quote "[Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)"  
                 [![](https://ctftime.org/media/events/logo_99.png){ width="200" align=left }](https://bts2024.wh.edu.pl/)  
@@ -1808,15 +1808,6 @@ hide:
                 **比赛权重** : 79.83  
                 **赛事主办** : bi0s (https://ctftime.org/team/662)  
                 **添加日历** : https://ctftime.org/event/2117.ics  
-                
-            ??? Quote "[BraekerCTF](https://github.com/spipm/BraekerCTF_2024_public)"  
-                [![](https://ctftime.org/media/events/AI_Robot4.png){ width="200" align=left }](https://github.com/spipm/BraekerCTF_2024_public)  
-                **比赛名称** : [BraekerCTF](https://github.com/spipm/BraekerCTF_2024_public)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-02-23 20:00:00 - 2024-02-25 00:00:00 UTC+8  
-                **比赛权重** : 24.70  
-                **赛事主办** : Braeker (https://ctftime.org/team/274910)  
-                **添加日历** : https://ctftime.org/event/2181.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
