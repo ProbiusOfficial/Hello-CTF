@@ -400,15 +400,6 @@ hide:
                 **其他说明** : 作品赛，不提供更多信息，如有疑问请前往比赛通知页面 http://www.ciscn.cn/competition/securityCompetition?compet_id=39  
                 
         === "国外赛事"
-            ??? Quote "[BSides Mumbai CTF 2024](https://ctf.bsidesmumbai.in/)"  
-                [![](https://ctftime.org/media/events/Logo_11.png){ width="200" align=left }](https://ctf.bsidesmumbai.in/)  
-                **比赛名称** : [BSides Mumbai CTF 2024](https://ctf.bsidesmumbai.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-19 18:30:00 - 2024-05-20 06:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : DarkArmy (https://ctftime.org/team/26569)  
-                **添加日历** : https://ctftime.org/event/2369.ics  
-                
             ??? Quote "[NahamCon CTF 2024](https://ctf.nahamcon.com/)"  
                 [![](https://ctftime.org/media/events/NAHAMCON-LOGO_BRANDING_D3_A1_1.png){ width="200" align=left }](https://ctf.nahamcon.com/)  
                 **比赛名称** : [NahamCon CTF 2024](https://ctf.nahamcon.com/)  
@@ -815,15 +806,6 @@ hide:
                 **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
                 **添加日历** : https://ctftime.org/event/2321.ics  
                 
-            ??? Quote "[VulnX CTF 2024](https://vulncon.in/)"  
-                [![](https://ctftime.org/media/events/VulnX-Profile_pic.png){ width="200" align=left }](https://vulncon.in/)  
-                **比赛名称** : [VulnX CTF 2024](https://vulncon.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-18 18:30:00 - 2024-05-19 18:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : VulnX (https://ctftime.org/team/117274)  
-                **添加日历** : https://ctftime.org/event/2318.ics  
-                
             ??? Quote "[SAS CTF 2024 Quals](https://ctf.thesascon.com/)"  
                 [![](https://ctftime.org/media/events/SAS24_2.png){ width="200" align=left }](https://ctf.thesascon.com/)  
                 **比赛名称** : [SAS CTF 2024 Quals](https://ctf.thesascon.com/)  
@@ -841,6 +823,15 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
                 **添加日历** : https://ctftime.org/event/2315.ics  
+                
+            ??? Quote "[BSides Mumbai CTF 2024](https://ctf.bsidesmumbai.in/)"  
+                [![](https://ctftime.org/media/events/Logo_11.png){ width="200" align=left }](https://ctf.bsidesmumbai.in/)  
+                **比赛名称** : [BSides Mumbai CTF 2024](https://ctf.bsidesmumbai.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-05-19 18:30:00 - 2024-05-20 06:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : DarkArmy (https://ctftime.org/team/26569)  
+                **添加日历** : https://ctftime.org/event/2369.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -944,6 +935,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Hacky'Nov (https://ctftime.org/team/178939)  
                 **添加日历** : https://ctftime.org/event/2319.ics  
+                
+            ??? Quote "[VulnX CTF 2024](https://vulncon.in/)"  
+                [![](https://ctftime.org/media/events/VulnX-Profile_pic.png){ width="200" align=left }](https://vulncon.in/)  
+                **比赛名称** : [VulnX CTF 2024](https://vulncon.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-05-18 18:30:00 - 2024-05-19 18:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : VulnX (https://ctftime.org/team/117274)  
+                **添加日历** : https://ctftime.org/event/2318.ics  
                 
             ??? Quote "[Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)"  
                 [![](https://ctftime.org/media/events/logo_99.png){ width="200" align=left }](https://bts2024.wh.edu.pl/)  
@@ -1826,15 +1826,6 @@ hide:
                 **比赛权重** : 24.93  
                 **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
                 **添加日历** : https://ctftime.org/event/2102.ics  
-                
-            ??? Quote "[Pragyan CTF 2024](https://ctf.pragyan.org/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.pragyan.org/)  
-                **比赛名称** : [Pragyan CTF 2024](https://ctf.pragyan.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-02-16 22:30:00 - 2024-02-17 22:30:00 UTC+8  
-                **比赛权重** : 2.80  
-                **赛事主办** : Pragyan (https://ctftime.org/team/33867)  
-                **添加日历** : https://ctftime.org/event/2266.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

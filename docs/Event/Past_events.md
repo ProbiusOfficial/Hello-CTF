@@ -107,6 +107,15 @@ comments: true
     **赛事主办** : Hacky'Nov (https://ctftime.org/team/178939)  
     **添加日历** : https://ctftime.org/event/2319.ics  
     
+??? Quote "[VulnX CTF 2024](https://vulncon.in/)"  
+    [![](https://ctftime.org/media/events/VulnX-Profile_pic.png){ width="200" align=left }](https://vulncon.in/)  
+    **比赛名称** : [VulnX CTF 2024](https://vulncon.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-18 18:30:00 - 2024-05-19 18:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : VulnX (https://ctftime.org/team/117274)  
+    **添加日历** : https://ctftime.org/event/2318.ics  
+    
 ??? Quote "[Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)"  
     [![](https://ctftime.org/media/events/logo_99.png){ width="200" align=left }](https://bts2024.wh.edu.pl/)  
     **比赛名称** : [Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 24.93  
     **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
     **添加日历** : https://ctftime.org/event/2102.ics  
-    
-??? Quote "[Pragyan CTF 2024](https://ctf.pragyan.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.pragyan.org/)  
-    **比赛名称** : [Pragyan CTF 2024](https://ctf.pragyan.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-02-16 22:30:00 - 2024-02-17 22:30:00 UTC+8  
-    **比赛权重** : 2.80  
-    **赛事主办** : Pragyan (https://ctftime.org/team/33867)  
-    **添加日历** : https://ctftime.org/event/2266.ics  
     
