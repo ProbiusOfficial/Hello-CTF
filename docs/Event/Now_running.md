@@ -5,13 +5,6 @@ comments: true
 
 ## 国内赛事
 
-??? Quote "第十七届全国大学生信息安全竞赛——创新实践能力赛"  
-    **比赛名称** : [第十七届全国大学生信息安全竞赛——创新实践能力赛](http://www.ciscn.cn/)  
-    **比赛类型** : 团队赛 | 1-4人  
-    **报名时间** : 2024年04月12日 00:00 - 2024年05月14日 18:00  
-    **比赛时间** : 2024年05月18日 09:00 - 2024年05月19日 18:00  
-    **其他说明** : 545083579 (17届信安创新实践赛指导老师群)  327904910 (17届信安创新实践赛学生①群)  191965192 (17届信安创新实践赛学生②群)  566613050 (17届信安创新实践赛学生③群)  570834671 (17届信安创新实践赛学生④群)  
-    
 ??? Quote "ISCC 2024"  
     **比赛名称** : [ISCC 2024](http://www.isclab.org.cn)  
     **比赛类型** : 个人赛 | 人脉  
@@ -48,15 +41,6 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Black Cell Secops (https://ctftime.org/team/270941)  
     **添加日历** : https://ctftime.org/event/2135.ics  
-    
-??? Quote "[Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)"  
-    [![](https://ctftime.org/media/events/logo_99.png){ width="200" align=left }](https://bts2024.wh.edu.pl/)  
-    **比赛名称** : [Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-18 00:00:00 - 2024-05-19 18:00:00 UTC+8  
-    **比赛权重** : 28.30  
-    **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
-    **添加日历** : https://ctftime.org/event/2289.ics  
     
 ??? Quote "[TJCTF 2024](https://tjctf.org/)"  
     [![](https://ctftime.org/media/events/logo_96.png){ width="200" align=left }](https://tjctf.org/)  
