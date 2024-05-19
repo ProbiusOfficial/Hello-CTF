@@ -161,6 +161,15 @@ comments: true
     **赛事主办** : BYU Cyberia (https://ctftime.org/team/155711)  
     **添加日历** : https://ctftime.org/event/2252.ics  
     
+??? Quote "[openECSC 2024 - Round 3](https://open.ecsc2024.it/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://open.ecsc2024.it/)  
+    **比赛名称** : [openECSC 2024 - Round 3](https://open.ecsc2024.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-13 18:00:00 - 2024-05-20 06:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
+    **添加日历** : https://ctftime.org/event/2355.ics  
+    
 ??? Quote "[CyberSecurityRumble Quals](https://quals.rumble.host/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://quals.rumble.host/)  
     **比赛名称** : [CyberSecurityRumble Quals](https://quals.rumble.host/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Web Club NITK (https://ctftime.org/team/216903)  
     **添加日历** : https://ctftime.org/event/2270.ics  
-    
-??? Quote "[bi0sCTF 2024](https://ctf.bi0s.in/)"  
-    [![](https://ctftime.org/media/events/Untitled-removebg-preview_1.png){ width="200" align=left }](https://ctf.bi0s.in/)  
-    **比赛名称** : [bi0sCTF 2024](https://ctf.bi0s.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-02-24 20:00:00 - 2024-02-26 08:00:00 UTC+8  
-    **比赛权重** : 79.83  
-    **赛事主办** : bi0s (https://ctftime.org/team/662)  
-    **添加日历** : https://ctftime.org/event/2117.ics  
     
