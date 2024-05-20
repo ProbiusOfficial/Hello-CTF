@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅析通天星CMSV6车载定位监控平台远程代码执行漏洞(内含0day)](https://y4tacker.github.io/2024/05/18/year/2024/5/%E6%B5%85%E6%9E%90%E9%80%9A%E5%A4%A9%E6%98%9FCMSV6%E8%BD%A6%E8%BD%BD%E5%AE%9A%E4%BD%8D%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E(%E5%86%85%E5%90%AB0day)/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-05-18
+
+    a0e90aa1b2183dfc9fcecdf547ea68fc407492439b835711e2c6de0504468d3e7b412838c35302ef9eef5b4344842ed867a7dceee7a5d88438523d59a4a3a092fc7ce13516854c1c52a996b382edcb3806a44765b5148f0b39ba02ed7fb318f831f4bd...
     ### [浅析H3C-CAS虚拟化管理系统权限绕过致文件上传漏洞](https://y4tacker.github.io/2024/05/11/year/2024/5/%E6%B5%85%E6%9E%90H3C-CAS%E8%99%9A%E6%8B%9F%E5%8C%96%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E8%87%B4%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-05-11
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2023-12-26
 
     Apusic权限绕过浅析真的是浅析前几天去参加补天了，一直想写但是一直抽不出时间学习，由于漏洞比较简单这里也不过多篇幅的讲解，仅分享一些关键的点，在这里关于权限校验Apusic没有使用第三方框架(毕竟是迫真信创产品)而是使用了自定义实现的安全性约束(关于什么安全性约束百度搜很多文章了不作搬运工)去实现了访问控制1234567891011<security-constraint>    <displ...
-    ### [Hacking FernFlower](https://y4tacker.github.io/2023/12/22/year/2023/12/Hacking-FernFlower/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-12-22
-
-    Hacking FernFlower前言​    今天很开心，第一次作为speaker参与了议题的分享，也很感谢补天白帽大会给了我这样的一次机会​    其实本该在去年来讲Java混淆的议题，不过当时赶上疫情爆发，学校出于安全的考虑没让出省。在当时我更想分享的是对抗所有反混淆的工具cfr、procyon，但今年在准备过程中发现主题太大了其实不太好讲，再考虑到受众都是做web安全的，因此我最终还是将...
 
 </div>
