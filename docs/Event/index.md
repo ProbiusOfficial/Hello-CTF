@@ -661,9 +661,9 @@ hide:
                 **赛事主办** : HITCON (https://ctftime.org/team/8299)  
                 **添加日历** : https://ctftime.org/event/2345.ics  
                 
-            ??? Quote "[MOCA CTF - Qualification](https://moca.camp/ctf/)"  
+            ??? Quote "[MOCA CTF - Quals](https://moca.camp/ctf/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://moca.camp/ctf/)  
-                **比赛名称** : [MOCA CTF - Qualification](https://moca.camp/ctf/)  
+                **比赛名称** : [MOCA CTF - Quals](https://moca.camp/ctf/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-07-20 17:00:00 - 2024-07-21 17:00:00 UTC+8  
                 **比赛权重** : 0.00  
