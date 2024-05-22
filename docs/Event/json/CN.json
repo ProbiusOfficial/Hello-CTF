@@ -3,6 +3,17 @@
     "data": {
         "result": [
             {
+                "name": "第五届“闽盾杯”网络空间安全大赛（黑盾全国大学生赛道）",
+                "link": "http://heidunbei.si.net.cn/hdc/cover",
+                "type": "团队赛|1-3人",
+                "bmks": "2024年05月21日 00:00",
+                "bmjz": "2024年06月19日 18:00",
+                "bsks": "2024年06月21日 09:00",
+                "bsjs": "2024年06月21日 17:00",
+                "readmore": "QQ群：566180593",
+                "status": 1
+            },
+            {
                 "name": "R3CTF/YUANHENGCTF 2024",
                 "link": "https://ctf2024.r3kapig.com/",
                 "type": "团队赛",
