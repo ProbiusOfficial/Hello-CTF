@@ -883,13 +883,6 @@ hide:
                 **比赛时间** : 2024年03月23日 10:00 - 2024年03月24日 22:00  
                 **其他说明** : 赛事官方钉钉群 28800019603  
                 
-            ??? Quote "[NKCTF2024](https://n0wayback.com/nkctf2024.html)"  
-                **比赛名称** : [NKCTF2024](https://n0wayback.com/nkctf2024.html)  
-                **比赛类型** : 团队赛|1-4人  
-                **报名时间** : 2024年03月10日 10:00 - 2024年03月22日 18:00  
-                **比赛时间** : 2024年03月22日 19:00 - 2024年03月23日 19:00  
-                **其他说明** : QQ群：630246091  
-                
         === "国外赛事"
             ??? Quote "[BSides Mumbai CTF 2024](https://ctf.bsidesmumbai.in/)"  
                 [![](https://ctftime.org/media/events/Logo_11.png){ width="200" align=left }](https://ctf.bsidesmumbai.in/)  
