@@ -504,18 +504,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "HTB Business CTF 2024: The Vault Of Hope",
-        "比赛时间": "2024-05-18 21:00:00 - 2024-05-22 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2315.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "25.00",
-        "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
-        "比赛ID": "554",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "BSides Mumbai CTF 2024",
         "比赛时间": "2024-05-19 18:30:00 - 2024-05-20 06:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2369.ics",
@@ -537,6 +525,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Hacky'Nov (https://ctftime.org/team/178939)",
         "比赛ID": "759",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "HTB Business CTF 2024: The Vault Of Hope",
+        "比赛时间": "2024-05-18 21:00:00 - 2024-05-22 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2315.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.hackthebox.com/event/details/htb-business-ctf-2024-the-vault-of-hope-1474",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "25.00",
+        "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
+        "比赛ID": "554",
         "比赛状态": "past"
     },
     {
@@ -1701,18 +1701,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Jeanne d'Hack CTF (https://ctftime.org/team/283058)",
         "比赛ID": "1078",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "VishwaCTF 2024",
-        "比赛时间": "2024-03-01 18:30:00 - 2024-03-03 18:29:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2272.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://vishwactf.com/",
-        "比赛标志": "https://ctftime.org/media/events/VishwaCTF_3.png",
-        "比赛权重": "33.43",
-        "赛事主办": "CyberCellVIIT (https://ctftime.org/team/144677)",
-        "比赛ID": "599",
         "比赛状态": "past"
     }
 ]
