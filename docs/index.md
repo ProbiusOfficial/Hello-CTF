@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群515383635  
                 
     === "国外比赛"
-        ??? Quote "[NahamCon CTF 2024](https://ctf.nahamcon.com/)"  
-            [![](https://ctftime.org/media/events/NAHAMCON-LOGO_BRANDING_D3_A1_1.png){ width="200" align=left }](https://ctf.nahamcon.com/)  
-            **比赛名称** : [NahamCon CTF 2024](https://ctf.nahamcon.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-05-24 04:00:00 - 2024-05-26 04:00:00 UTC+8  
-            **比赛权重** : 41.61  
-            **赛事主办** : JustHacking (https://ctftime.org/team/59573)  
-            **添加日历** : https://ctftime.org/event/2364.ics  
-            
         ??? Quote "[AI CTF 2024](https://aictf.phdays.fun/)"  
             [![](https://ctftime.org/media/events/AI_CTF_AI_TRACK_.png){ width="200" align=left }](https://aictf.phdays.fun/)  
             **比赛名称** : [AI CTF 2024](https://aictf.phdays.fun/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 26.89  
             **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
             **添加日历** : https://ctftime.org/event/2223.ics  
+            
+        ??? Quote "[BTCTF I](https://btcodeclub.vercel.app/)"  
+            [![](https://ctftime.org/media/events/Screen_Shot_2024-04-10_at_5.52.43_PM.png){ width="200" align=left }](https://btcodeclub.vercel.app/)  
+            **比赛名称** : [BTCTF I](https://btcodeclub.vercel.app/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-05-25 04:00:00 - 2024-05-27 04:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : btcodeclub (https://ctftime.org/team/278477)  
+            **添加日历** : https://ctftime.org/event/2340.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
