@@ -881,13 +881,6 @@ hide:
                 **比赛时间** : 2024年03月30日 13:30 - 2024年03月30日 17:30  
                 **其他说明** : QQ群：521330139  
                 
-            ??? Quote "[aliyunCTF2024](https://www.aliyunctf.com/)"  
-                **比赛名称** : [aliyunCTF2024](https://www.aliyunctf.com/)  
-                **比赛类型** : 团队赛 | 人数暂定  
-                **报名时间** : 2024年03月10日 10:00 - 2024年03月23日 09:00  
-                **比赛时间** : 2024年03月23日 10:00 - 2024年03月24日 22:00  
-                **其他说明** : 赛事官方钉钉群 28800019603  
-                
         === "国外赛事"
             ??? Quote "[BSides Mumbai CTF 2024](https://ctf.bsidesmumbai.in/)"  
                 [![](https://ctftime.org/media/events/Logo_11.png){ width="200" align=left }](https://ctf.bsidesmumbai.in/)  
