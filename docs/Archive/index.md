@@ -73,10 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
-    ### [浅析通天星CMSV6车载定位监控平台远程代码执行漏洞(内含0day)](https://y4tacker.github.io/2024/05/18/year/2024/5/%E6%B5%85%E6%9E%90%E9%80%9A%E5%A4%A9%E6%98%9FCMSV6%E8%BD%A6%E8%BD%BD%E5%AE%9A%E4%BD%8D%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E(%E5%86%85%E5%90%AB0day)/)  
+    ### [浅析通天星CMSV6车载定位监控平台远程代码执行漏洞](https://y4tacker.github.io/2024/05/18/year/2024/5/%E6%B5%85%E6%9E%90%E9%80%9A%E5%A4%A9%E6%98%9FCMSV6%E8%BD%A6%E8%BD%BD%E5%AE%9A%E4%BD%8D%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-05-18
 
-    a0e90aa1b2183dfc9fcecdf547ea68fc407492439b835711e2c6de0504468d3e7b412838c35302ef9eef5b4344842ed867a7dceee7a5d88438523d59a4a3a092fc7ce13516854c1c52a996b382edcb3806a44765b5148f0b39ba02ed7fb318f831f4bd...
+    浅析通天星CMSV6车载定位监控平台远程代码执行漏洞写在前面看了一下通告看着还是比较有意思的，通天星CMSV6车载定位监控平台远程代码执行漏洞第一步是通过任意文件读取漏洞，读取log日志获取admin的session信息第二步通过默认密码登录ftp服务器上传文件(或通过后台任意文件上传漏洞)第三步触发上传文件中的恶意代码正文采用了经典SSH架构任意文件读取关于任意文件读取，从官方安全公告也不难看出...
     ### [浅析H3C-CAS虚拟化管理系统权限绕过致文件上传漏洞](https://y4tacker.github.io/2024/05/11/year/2024/5/%E6%B5%85%E6%9E%90H3C-CAS%E8%99%9A%E6%8B%9F%E5%8C%96%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E8%87%B4%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-05-11
 
