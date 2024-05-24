@@ -33,3 +33,12 @@ comments: true
     **赛事主办** : JustHacking (https://ctftime.org/team/59573)  
     **添加日历** : https://ctftime.org/event/2364.ics  
     
+??? Quote "[AI CTF 2024](https://aictf.phdays.fun/)"  
+    [![](https://ctftime.org/media/events/AI_CTF_AI_TRACK_.png){ width="200" align=left }](https://aictf.phdays.fun/)  
+    **比赛名称** : [AI CTF 2024](https://aictf.phdays.fun/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-24 17:00:00 - 2024-05-26 05:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : [TechnoPandas] (https://ctftime.org/team/1946)  
+    **添加日历** : https://ctftime.org/event/2383.ics  
+    

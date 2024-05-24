@@ -414,15 +414,6 @@ hide:
                 **其他说明** : 作品赛，不提供更多信息，如有疑问请前往比赛通知页面 http://www.ciscn.cn/competition/securityCompetition?compet_id=39  
                 
         === "国外赛事"
-            ??? Quote "[AI CTF 2024](https://aictf.phdays.fun/)"  
-                [![](https://ctftime.org/media/events/AI_CTF_AI_TRACK_.png){ width="200" align=left }](https://aictf.phdays.fun/)  
-                **比赛名称** : [AI CTF 2024](https://aictf.phdays.fun/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-24 17:00:00 - 2024-05-26 05:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : [TechnoPandas] (https://ctftime.org/team/1946)  
-                **添加日历** : https://ctftime.org/event/2383.ics  
-                
             ??? Quote "[L3akCTF 2024](https://ctf.l3ak.team/)"  
                 [![](https://ctftime.org/media/events/ctf_final.png){ width="200" align=left }](https://ctf.l3ak.team/)  
                 **比赛名称** : [L3akCTF 2024](https://ctf.l3ak.team/)  
@@ -801,6 +792,15 @@ hide:
                 **比赛权重** : 41.61  
                 **赛事主办** : JustHacking (https://ctftime.org/team/59573)  
                 **添加日历** : https://ctftime.org/event/2364.ics  
+                
+            ??? Quote "[AI CTF 2024](https://aictf.phdays.fun/)"  
+                [![](https://ctftime.org/media/events/AI_CTF_AI_TRACK_.png){ width="200" align=left }](https://aictf.phdays.fun/)  
+                **比赛名称** : [AI CTF 2024](https://aictf.phdays.fun/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-05-24 17:00:00 - 2024-05-26 05:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : [TechnoPandas] (https://ctftime.org/team/1946)  
+                **添加日历** : https://ctftime.org/event/2383.ics  
                 
     === "*已经结束*"
         === "国内赛事"
