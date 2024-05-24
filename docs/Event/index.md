@@ -299,13 +299,6 @@ hide:
             **比赛时间** : 2024年06月08日 10:00 - 2024年06月10日 18:00  
             **其他说明** : R3CTF2024 是由 r3kapig 和 YuanHeng实验室 组织的在线解题(jeopardy)CTF。同时 YuanHeng实验室 提供所有奖品！我们欢迎来自世界各地的CTFer在这48小时内玩得开心。更多信息：https://discord.gg/zU64ekBsgA  
             
-        ??? Quote "[DragonKnight CTF](https://www.qsnctf.com/#/main/race-center)"  
-            **比赛名称** : [DragonKnight CTF](https://www.qsnctf.com/#/main/race-center)  
-            **比赛类型** : 团队赛|1-4人  
-            **报名时间** : 2024年05月14日 00:00 - 2024年05月24日 18:00  
-            **比赛时间** : 2024年05月25日 09:00 - 2024年05月26日 18:00  
-            **其他说明** : QQ群：933699782  
-            
         ??? Quote "[RCTF 2024](https://adworld.xctf.org.cn/contest)"  
             **比赛名称** : [RCTF 2024](https://adworld.xctf.org.cn/contest)  
             **比赛类型** : 团队赛  
@@ -364,13 +357,6 @@ hide:
                 **比赛时间** : 2024年06月08日 10:00 - 2024年06月10日 18:00  
                 **其他说明** : R3CTF2024 是由 r3kapig 和 YuanHeng实验室 组织的在线解题(jeopardy)CTF。同时 YuanHeng实验室 提供所有奖品！我们欢迎来自世界各地的CTFer在这48小时内玩得开心。更多信息：https://discord.gg/zU64ekBsgA  
                 
-            ??? Quote "[DragonKnight CTF](https://www.qsnctf.com/#/main/race-center)"  
-                **比赛名称** : [DragonKnight CTF](https://www.qsnctf.com/#/main/race-center)  
-                **比赛类型** : 团队赛|1-4人  
-                **报名时间** : 2024年05月14日 00:00 - 2024年05月24日 18:00  
-                **比赛时间** : 2024年05月25日 09:00 - 2024年05月26日 18:00  
-                **其他说明** : QQ群：933699782  
-                
             ??? Quote "[RCTF 2024](https://adworld.xctf.org.cn/contest)"  
                 **比赛名称** : [RCTF 2024](https://adworld.xctf.org.cn/contest)  
                 **比赛类型** : 团队赛  
@@ -412,6 +398,13 @@ hide:
                 **报名时间** : 2024年04月07日 23:00 - 2024年06月05日 23:00  
                 **比赛时间** : 2024年04月10日 23:00 - 2024年06月05日 23:00  
                 **其他说明** : 作品赛，不提供更多信息，如有疑问请前往比赛通知页面 http://www.ciscn.cn/competition/securityCompetition?compet_id=39  
+                
+            ??? Quote "[DragonKnight CTF](https://www.qsnctf.com/#/main/race-center)"  
+                **比赛名称** : [DragonKnight CTF](https://www.qsnctf.com/#/main/race-center)  
+                **比赛类型** : 团队赛|1-4人  
+                **报名时间** : 2024年05月14日 00:00 - 2024年05月24日 18:00  
+                **比赛时间** : 2024年05月25日 09:00 - 2024年05月26日 18:00  
+                **其他说明** : QQ群：933699782  
                 
         === "国外赛事"
             ??? Quote "[L3akCTF 2024](https://ctf.l3ak.team/)"  
