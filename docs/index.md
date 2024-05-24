@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群：933699782  
                 
     === "国外比赛"
-        ??? Quote "[BTCTF I](https://btcodeclub.vercel.app/)"  
-            [![](https://ctftime.org/media/events/Screen_Shot_2024-04-10_at_5.52.43_PM.png){ width="200" align=left }](https://btcodeclub.vercel.app/)  
-            **比赛名称** : [BTCTF I](https://btcodeclub.vercel.app/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-05-25 04:00:00 - 2024-05-27 04:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : btcodeclub (https://ctftime.org/team/278477)  
-            **添加日历** : https://ctftime.org/event/2340.ics  
-            
         ??? Quote "[ångstromCTF 2024](https://angstromctf.com/)"  
             [![](https://ctftime.org/media/events/6d3921eee81a45548b0b898c0244ed7a.jpg){ width="200" align=left }](https://angstromctf.com/)  
             **比赛名称** : [ångstromCTF 2024](https://angstromctf.com/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 31.17  
             **赛事主办** : KITCTF (https://ctftime.org/team/7221)  
             **添加日历** : https://ctftime.org/event/2257.ics  
+            
+        ??? Quote "[Season IV, US Cyber Open](https://www.uscybergames.com/apply-to-play-season-4?hsCtaTracking=b8a9eb7a-183c-4113-a5d4-a4ac7b486e4f%7Cb5c8f25c-5752-4e8f-815b-82cb4d186af1)"  
+            [![](https://ctftime.org/media/events/2022-10-USCG_S3_logos_cybergames_1.png){ width="200" align=left }](https://www.uscybergames.com/apply-to-play-season-4?hsCtaTracking=b8a9eb7a-183c-4113-a5d4-a4ac7b486e4f%7Cb5c8f25c-5752-4e8f-815b-82cb4d186af1)  
+            **比赛名称** : [Season IV, US Cyber Open](https://www.uscybergames.com/apply-to-play-season-4?hsCtaTracking=b8a9eb7a-183c-4113-a5d4-a4ac7b486e4f%7Cb5c8f25c-5752-4e8f-815b-82cb4d186af1)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-05-31 19:59:00 - 2024-06-10 07:59:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
+            **添加日历** : https://ctftime.org/event/2350.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
