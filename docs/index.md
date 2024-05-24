@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群：933699782  
                 
     === "国外比赛"
-        ??? Quote "[[ POSTPONED ] CrewCTF 2024](https://2024.crewc.tf/)"  
-            [![](https://ctftime.org/media/events/THC_new.png){ width="200" align=left }](https://2024.crewc.tf/)  
-            **比赛名称** : [[ POSTPONED ] CrewCTF 2024](https://2024.crewc.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-05-25 01:00:00 - 2024-05-27 01:00:00 UTC+8  
-            **比赛权重** : 26.89  
-            **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
-            **添加日历** : https://ctftime.org/event/2223.ics  
-            
         ??? Quote "[BTCTF I](https://btcodeclub.vercel.app/)"  
             [![](https://ctftime.org/media/events/Screen_Shot_2024-04-10_at_5.52.43_PM.png){ width="200" align=left }](https://btcodeclub.vercel.app/)  
             **比赛名称** : [BTCTF I](https://btcodeclub.vercel.app/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : Theori (https://ctftime.org/team/250867)  
             **添加日历** : https://ctftime.org/event/2309.ics  
+            
+        ??? Quote "[GPN CTF 2024](https://ctf.kitctf.de/)"  
+            [![](https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d.png){ width="200" align=left }](https://ctf.kitctf.de/)  
+            **比赛名称** : [GPN CTF 2024](https://ctf.kitctf.de/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-05-31 18:00:00 - 2024-06-02 06:00:00 UTC+8  
+            **比赛权重** : 31.17  
+            **赛事主办** : KITCTF (https://ctftime.org/team/7221)  
+            **添加日历** : https://ctftime.org/event/2257.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
