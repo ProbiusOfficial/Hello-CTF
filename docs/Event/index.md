@@ -713,15 +713,6 @@ hide:
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
                 
-            ??? Quote "[NahamCon CTF 2024](https://ctf.nahamcon.com/)"  
-                [![](https://ctftime.org/media/events/NAHAMCON-LOGO_BRANDING_D3_A1_1.png){ width="200" align=left }](https://ctf.nahamcon.com/)  
-                **比赛名称** : [NahamCon CTF 2024](https://ctf.nahamcon.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-24 04:00:00 - 2024-05-26 04:00:00 UTC+8  
-                **比赛权重** : 41.61  
-                **赛事主办** : JustHacking (https://ctftime.org/team/59573)  
-                **添加日历** : https://ctftime.org/event/2364.ics  
-                
             ??? Quote "[AI CTF 2024](https://aictf.phdays.fun/)"  
                 [![](https://ctftime.org/media/events/AI_CTF_AI_TRACK_.png){ width="200" align=left }](https://aictf.phdays.fun/)  
                 **比赛名称** : [AI CTF 2024](https://aictf.phdays.fun/)  
@@ -861,6 +852,15 @@ hide:
                 **其他说明** : QQ群：521330139  
                 
         === "国外赛事"
+            ??? Quote "[NahamCon CTF 2024](https://ctf.nahamcon.com/)"  
+                [![](https://ctftime.org/media/events/NAHAMCON-LOGO_BRANDING_D3_A1_1.png){ width="200" align=left }](https://ctf.nahamcon.com/)  
+                **比赛名称** : [NahamCon CTF 2024](https://ctf.nahamcon.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-05-24 04:00:00 - 2024-05-26 04:00:00 UTC+8  
+                **比赛权重** : 41.61  
+                **赛事主办** : JustHacking (https://ctftime.org/team/59573)  
+                **添加日历** : https://ctftime.org/event/2364.ics  
+                
             ??? Quote "[BSides Mumbai CTF 2024](https://ctf.bsidesmumbai.in/)"  
                 [![](https://ctftime.org/media/events/Logo_11.png){ width="200" align=left }](https://ctf.bsidesmumbai.in/)  
                 **比赛名称** : [BSides Mumbai CTF 2024](https://ctf.bsidesmumbai.in/)  
@@ -1751,15 +1751,6 @@ hide:
                 **比赛权重** : 23.93  
                 **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
                 **添加日历** : https://ctftime.org/event/2165.ics  
-                
-            ??? Quote "[Jeanne d'Hack CTF 2024](https://jeanne-dhack-ctf.univ-rouen.fr/)"  
-                [![](https://ctftime.org/media/events/JeannedHackCTF_100_x_100_px1.png){ width="200" align=left }](https://jeanne-dhack-ctf.univ-rouen.fr/)  
-                **比赛名称** : [Jeanne d'Hack CTF 2024](https://jeanne-dhack-ctf.univ-rouen.fr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-03-01 21:30:00 - 2024-03-03 00:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Jeanne d'Hack CTF (https://ctftime.org/team/283058)  
-                **添加日历** : https://ctftime.org/event/2311.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
