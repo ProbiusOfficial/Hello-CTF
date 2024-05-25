@@ -80,17 +80,6 @@
                 "status": 1
             },
             {
-                "name": "第九届上海市大学生网络安全大赛暨“磐石行动”2024第二届全国高校网络安全邀请赛",
-                "link": "https://mp.weixin.qq.com/s/-BK28uJAvW6vAUVgFElymA",
-                "type": "团队赛|1-3人",
-                "bmks": "2024年05月07日 00:00",
-                "bmjz": "2024年05月25日 00:00",
-                "bsks": "2024年05月25日 09:00",
-                "bsjs": "2024年05月25日 21:00",
-                "readmore": "QQ群515383635",
-                "status": 3
-            },
-            {
                 "name": "DragonKnight CTF",
                 "link": "https://www.qsnctf.com/#/main/race-center",
                 "type": "团队赛|1-4人",
@@ -100,6 +89,17 @@
                 "bsjs": "2024年05月26日 18:00",
                 "readmore": "QQ群：933699782",
                 "status": 3
+            },
+            {
+                "name": "第九届上海市大学生网络安全大赛暨“磐石行动”2024第二届全国高校网络安全邀请赛",
+                "link": "https://mp.weixin.qq.com/s/-BK28uJAvW6vAUVgFElymA",
+                "type": "团队赛|1-3人",
+                "bmks": "2024年05月07日 00:00",
+                "bmjz": "2024年05月25日 00:00",
+                "bsks": "2024年05月25日 09:00",
+                "bsjs": "2024年05月25日 21:00",
+                "readmore": "QQ群515383635",
+                "status": 4
             },
             {
                 "name": "ISCC 2024",

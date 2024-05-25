@@ -703,13 +703,6 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-            ??? Quote "[第九届上海市大学生网络安全大赛暨“磐石行动”2024第二届全国高校网络安全邀请赛](https://mp.weixin.qq.com/s/-BK28uJAvW6vAUVgFElymA)"  
-                **比赛名称** : [第九届上海市大学生网络安全大赛暨“磐石行动”2024第二届全国高校网络安全邀请赛](https://mp.weixin.qq.com/s/-BK28uJAvW6vAUVgFElymA)  
-                **比赛类型** : 团队赛|1-3人  
-                **报名时间** : 2024年05月07日 00:00 - 2024年05月25日 00:00  
-                **比赛时间** : 2024年05月25日 09:00 - 2024年05月25日 21:00  
-                **其他说明** : QQ群515383635  
-                
             ??? Quote "[DragonKnight CTF](https://www.qsnctf.com/#/main/race-center)"  
                 **比赛名称** : [DragonKnight CTF](https://www.qsnctf.com/#/main/race-center)  
                 **比赛类型** : 团队赛|1-4人  
@@ -783,6 +776,13 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[第九届上海市大学生网络安全大赛暨“磐石行动”2024第二届全国高校网络安全邀请赛](https://mp.weixin.qq.com/s/-BK28uJAvW6vAUVgFElymA)"  
+                **比赛名称** : [第九届上海市大学生网络安全大赛暨“磐石行动”2024第二届全国高校网络安全邀请赛](https://mp.weixin.qq.com/s/-BK28uJAvW6vAUVgFElymA)  
+                **比赛类型** : 团队赛|1-3人  
+                **报名时间** : 2024年05月07日 00:00 - 2024年05月25日 00:00  
+                **比赛时间** : 2024年05月25日 09:00 - 2024年05月25日 21:00  
+                **其他说明** : QQ群515383635  
+                
             ??? Quote "[ISCC 2024](http://www.isclab.org.cn)"  
                 **比赛名称** : [ISCC 2024](http://www.isclab.org.cn)  
                 **比赛类型** : 个人赛 | 人脉  
