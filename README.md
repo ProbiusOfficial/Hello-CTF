@@ -14,15 +14,13 @@
 
 
 
-
-
 文档依靠Mkdocs-material 基于GitHub Pages 依靠 gh-pages 部署在 [https://hello-ctf.com/](https://hello-ctf.com/)   
 
 因接入CDN，本站链接变更为：[https://hello-ctf.com/](https://hello-ctf.com/) ，感谢渊龙Sec安全团队[@AabyssZG](https://github.com/AabyssZG) 曾哥提供的CDN支持~
 
 您可以直接访问该页面[在线阅读](https://hello-ctf.com/)，如果您想要转载本项目，请带上项目源地址：https://github.com/ProbiusOfficial/Hello-CTF
 
-如果文档有帮助到你，麻烦点一个:star:支持一下！！
+如果文档有帮助到你，麻烦点一个 :star: 支持一下！！
 
 ## 关于
 
