@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群：933699782  
                 
     === "国外比赛"
-        ??? Quote "[ångstromCTF 2024](https://angstromctf.com/)"  
-            [![](https://ctftime.org/media/events/6d3921eee81a45548b0b898c0244ed7a.jpg){ width="200" align=left }](https://angstromctf.com/)  
-            **比赛名称** : [ångstromCTF 2024](https://angstromctf.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-05-25 08:00:00 - 2024-05-28 08:00:00 UTC+8  
-            **比赛权重** : 72.06  
-            **赛事主办** : ångstromCTF Organizers (https://ctftime.org/team/15734)  
-            **添加日历** : https://ctftime.org/event/2375.ics  
-            
         ??? Quote "[Dreamhack Invitational 2024](https://dreamhack.io/)"  
             [![](https://ctftime.org/media/events/_mini_round_light2x_1.png){ width="200" align=left }](https://dreamhack.io/)  
             **比赛名称** : [Dreamhack Invitational 2024](https://dreamhack.io/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
             **添加日历** : https://ctftime.org/event/2350.ics  
+            
+        ??? Quote "[vsCTF 2024](https://ctf.viewsource.me/)"  
+            [![](https://ctftime.org/media/events/vsctf_2024_2x.png){ width="200" align=left }](https://ctf.viewsource.me/)  
+            **比赛名称** : [vsCTF 2024](https://ctf.viewsource.me/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-06-01 00:00:00 - 2024-06-03 00:00:00 UTC+8  
+            **比赛权重** : 34.00  
+            **赛事主办** : View Source (https://ctftime.org/team/175828)  
+            **添加日历** : https://ctftime.org/event/2248.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
