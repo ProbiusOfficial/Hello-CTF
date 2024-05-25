@@ -58,17 +58,6 @@
                 "status": 1
             },
             {
-                "name": "矩阵杯",
-                "link": "https://matrixcup.net/page/race/home/",
-                "type": "团队赛|1-4人",
-                "bmks": "2024年04月26日 00:00",
-                "bmjz": "2024年05月26日 00:00",
-                "bsks": "2024年06月01日 00:00",
-                "bsjs": "2024年06月02日 00:00",
-                "readmore": "详情关注官网信息",
-                "status": 1
-            },
-            {
                 "name": "第十七届全国大学生信息安全竞赛 - 作品赛",
                 "link": "http://www.ciscn.cn/competition/securityCompetition?compet_id=39",
                 "type": "作品赛",
@@ -78,6 +67,17 @@
                 "bsjs": "2024年06月05日 23:00",
                 "readmore": "作品赛，不提供更多信息，如有疑问请前往比赛通知页面 http://www.ciscn.cn/competition/securityCompetition?compet_id=39",
                 "status": 1
+            },
+            {
+                "name": "矩阵杯",
+                "link": "https://matrixcup.net/page/race/home/",
+                "type": "团队赛|1-4人",
+                "bmks": "2024年04月26日 00:00",
+                "bmjz": "2024年05月26日 00:00",
+                "bsks": "2024年06月01日 00:00",
+                "bsjs": "2024年06月02日 00:00",
+                "readmore": "详情关注官网信息",
+                "status": 2
             },
             {
                 "name": "DragonKnight CTF",
