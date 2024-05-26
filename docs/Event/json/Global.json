@@ -432,18 +432,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "[ POSTPONED ] CrewCTF 2024",
-        "比赛时间": "2024-05-25 01:00:00 - 2024-05-27 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2223.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2024.crewc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/THC_new.png",
-        "比赛权重": "26.89",
-        "赛事主办": "thehackerscrew (https://ctftime.org/team/85618)",
-        "比赛ID": "738",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "BTCTF I",
         "比赛时间": "2024-05-25 04:00:00 - 2024-05-27 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2340.ics",
@@ -466,6 +454,18 @@
         "赛事主办": "ångstromCTF Organizers (https://ctftime.org/team/15734)",
         "比赛ID": "146",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "[ POSTPONED ] CrewCTF 2024",
+        "比赛时间": "2024-05-25 01:00:00 - 2024-05-27 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2223.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2024.crewc.tf/",
+        "比赛标志": "https://ctftime.org/media/events/THC_new.png",
+        "比赛权重": "26.89",
+        "赛事主办": "thehackerscrew (https://ctftime.org/team/85618)",
+        "比赛ID": "738",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "L3akCTF 2024",
@@ -1653,18 +1653,6 @@
         "比赛权重": "23.95",
         "赛事主办": "BIT CRIMINALS (https://ctftime.org/team/151727)",
         "比赛ID": "849",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "AthackCTF 2024",
-        "比赛时间": "2024-03-02 16:00:00 - 2024-03-04 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2228.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.athackctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/_hacklogo_v2_720.png",
-        "比赛权重": "0.00",
-        "赛事主办": "athackPrivate (https://ctftime.org/team/278003)",
-        "比赛ID": "1049",
         "比赛状态": "past"
     }
 ]
