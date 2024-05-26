@@ -432,18 +432,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "BTCTF I",
-        "比赛时间": "2024-05-25 04:00:00 - 2024-05-27 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2340.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://btcodeclub.vercel.app/",
-        "比赛标志": "https://ctftime.org/media/events/Screen_Shot_2024-04-10_at_5.52.43_PM.png",
-        "比赛权重": "0",
-        "赛事主办": "btcodeclub (https://ctftime.org/team/278477)",
-        "比赛ID": "1055",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "ångstromCTF 2024",
         "比赛时间": "2024-05-25 08:00:00 - 2024-05-28 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2375.ics",
@@ -454,6 +442,18 @@
         "赛事主办": "ångstromCTF Organizers (https://ctftime.org/team/15734)",
         "比赛ID": "146",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "BTCTF I",
+        "比赛时间": "2024-05-25 04:00:00 - 2024-05-27 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2340.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://btcodeclub.vercel.app/",
+        "比赛标志": "https://ctftime.org/media/events/Screen_Shot_2024-04-10_at_5.52.43_PM.png",
+        "比赛权重": "0",
+        "赛事主办": "btcodeclub (https://ctftime.org/team/278477)",
+        "比赛ID": "1055",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "[ POSTPONED ] CrewCTF 2024",
@@ -1641,18 +1641,6 @@
         "比赛权重": "24.10",
         "赛事主办": "TeamShakti (https://ctftime.org/team/61083)",
         "比赛ID": "521",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Pearl CTF",
-        "比赛时间": "2024-03-08 20:00:00 - 2024-03-10 07:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2231.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://play.pearlctf.in/",
-        "比赛标志": "https://ctftime.org/media/events/_croppearl_logo_1_of_1.png",
-        "比赛权重": "23.95",
-        "赛事主办": "BIT CRIMINALS (https://ctftime.org/team/151727)",
-        "比赛ID": "849",
         "比赛状态": "past"
     }
 ]
