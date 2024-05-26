@@ -112,6 +112,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[BTCTF I](https://btcodeclub.vercel.app/)"  
+    [![](https://ctftime.org/media/events/Screen_Shot_2024-04-10_at_5.52.43_PM.png){ width="200" align=left }](https://btcodeclub.vercel.app/)  
+    **比赛名称** : [BTCTF I](https://btcodeclub.vercel.app/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-25 04:00:00 - 2024-05-27 04:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : btcodeclub (https://ctftime.org/team/278477)  
+    **添加日历** : https://ctftime.org/event/2340.ics  
+    
 ??? Quote "[[ POSTPONED ] CrewCTF 2024](https://2024.crewc.tf/)"  
     [![](https://ctftime.org/media/events/THC_new.png){ width="200" align=left }](https://2024.crewc.tf/)  
     **比赛名称** : [[ POSTPONED ] CrewCTF 2024](https://2024.crewc.tf/)  
@@ -1002,13 +1011,4 @@ comments: true
     **比赛权重** : 24.10  
     **赛事主办** : TeamShakti (https://ctftime.org/team/61083)  
     **添加日历** : https://ctftime.org/event/2268.ics  
-    
-??? Quote "[Pearl CTF](https://play.pearlctf.in/)"  
-    [![](https://ctftime.org/media/events/_croppearl_logo_1_of_1.png){ width="200" align=left }](https://play.pearlctf.in/)  
-    **比赛名称** : [Pearl CTF](https://play.pearlctf.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-08 20:00:00 - 2024-03-10 07:59:59 UTC+8  
-    **比赛权重** : 23.95  
-    **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
-    **添加日历** : https://ctftime.org/event/2231.ics  
     
