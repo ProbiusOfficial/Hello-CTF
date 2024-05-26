@@ -18,15 +18,6 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Quote "[L3akCTF 2024](https://ctf.l3ak.team/)"  
-    [![](https://ctftime.org/media/events/ctf_final.png){ width="200" align=left }](https://ctf.l3ak.team/)  
-    **比赛名称** : [L3akCTF 2024](https://ctf.l3ak.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-24 20:00:00 - 2024-05-26 20:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : L3ak (https://ctftime.org/team/220336)  
-    **添加日历** : https://ctftime.org/event/2322.ics  
-    
 ??? Quote "[[ POSTPONED ] CrewCTF 2024](https://2024.crewc.tf/)"  
     [![](https://ctftime.org/media/events/THC_new.png){ width="200" align=left }](https://2024.crewc.tf/)  
     **比赛名称** : [[ POSTPONED ] CrewCTF 2024](https://2024.crewc.tf/)  
