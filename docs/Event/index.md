@@ -299,13 +299,6 @@ hide:
             **比赛时间** : 2024年06月08日 10:00 - 2024年06月10日 18:00  
             **其他说明** : R3CTF2024 是由 r3kapig 和 YuanHeng实验室 组织的在线解题(jeopardy)CTF。同时 YuanHeng实验室 提供所有奖品！我们欢迎来自世界各地的CTFer在这48小时内玩得开心。更多信息：https://discord.gg/zU64ekBsgA  
             
-        ??? Quote "[RCTF 2024](https://adworld.xctf.org.cn/contest)"  
-            **比赛名称** : [RCTF 2024](https://adworld.xctf.org.cn/contest)  
-            **比赛类型** : 团队赛  
-            **报名时间** : 2024年05月11日 00:00 - 2024年05月27日 09:00  
-            **比赛时间** : 2024年05月25日 09:00 - 2024年05月27日 09:00  
-            **其他说明** : QQ群：512066352  
-            
         ??? Quote "[LitCTF2024](https://www.nssctf.cn/contest/470/)"  
             **比赛名称** : [LitCTF2024](https://www.nssctf.cn/contest/470/)  
             **比赛类型** : 团队赛|1-4人  
@@ -336,13 +329,6 @@ hide:
                 **比赛时间** : 2024年06月08日 10:00 - 2024年06月10日 18:00  
                 **其他说明** : R3CTF2024 是由 r3kapig 和 YuanHeng实验室 组织的在线解题(jeopardy)CTF。同时 YuanHeng实验室 提供所有奖品！我们欢迎来自世界各地的CTFer在这48小时内玩得开心。更多信息：https://discord.gg/zU64ekBsgA  
                 
-            ??? Quote "[RCTF 2024](https://adworld.xctf.org.cn/contest)"  
-                **比赛名称** : [RCTF 2024](https://adworld.xctf.org.cn/contest)  
-                **比赛类型** : 团队赛  
-                **报名时间** : 2024年05月11日 00:00 - 2024年05月27日 09:00  
-                **比赛时间** : 2024年05月25日 09:00 - 2024年05月27日 09:00  
-                **其他说明** : QQ群：512066352  
-                
             ??? Quote "[LitCTF2024](https://www.nssctf.cn/contest/470/)"  
                 **比赛名称** : [LitCTF2024](https://www.nssctf.cn/contest/470/)  
                 **比赛类型** : 团队赛|1-4人  
@@ -365,15 +351,6 @@ hide:
                 **其他说明** : 详情关注官网信息  
                 
         === "国外赛事"
-            ??? Quote "[Dreamhack Invitational 2024](https://dreamhack.io/)"  
-                [![](https://ctftime.org/media/events/_mini_round_light2x_1.png){ width="200" align=left }](https://dreamhack.io/)  
-                **比赛名称** : [Dreamhack Invitational 2024](https://dreamhack.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-27 09:00:00 - 2024-05-27 21:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Theori (https://ctftime.org/team/250867)  
-                **添加日历** : https://ctftime.org/event/2309.ics  
-                
             ??? Quote "[GPN CTF 2024](https://ctf.kitctf.de/)"  
                 [![](https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d.png){ width="200" align=left }](https://ctf.kitctf.de/)  
                 **比赛名称** : [GPN CTF 2024](https://ctf.kitctf.de/)  
@@ -702,8 +679,24 @@ hide:
                 **赛事主办** : ångstromCTF Organizers (https://ctftime.org/team/15734)  
                 **添加日历** : https://ctftime.org/event/2375.ics  
                 
+            ??? Quote "[Dreamhack Invitational 2024](https://dreamhack.io/)"  
+                [![](https://ctftime.org/media/events/_mini_round_light2x_1.png){ width="200" align=left }](https://dreamhack.io/)  
+                **比赛名称** : [Dreamhack Invitational 2024](https://dreamhack.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-05-27 09:00:00 - 2024-05-27 21:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Theori (https://ctftime.org/team/250867)  
+                **添加日历** : https://ctftime.org/event/2309.ics  
+                
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[RCTF 2024](https://adworld.xctf.org.cn/contest)"  
+                **比赛名称** : [RCTF 2024](https://adworld.xctf.org.cn/contest)  
+                **比赛类型** : 团队赛  
+                **报名时间** : 2024年05月11日 00:00 - 2024年05月27日 09:00  
+                **比赛时间** : 2024年05月25日 09:00 - 2024年05月27日 09:00  
+                **其他说明** : QQ群：512066352  
+                
             ??? Quote "[第二届京麒CTF挑战赛](https://jqctf.jd.com)"  
                 **比赛名称** : [第二届京麒CTF挑战赛](https://jqctf.jd.com)  
                 **比赛类型** : 团队赛  

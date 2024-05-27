@@ -27,3 +27,12 @@ comments: true
     **赛事主办** : ångstromCTF Organizers (https://ctftime.org/team/15734)  
     **添加日历** : https://ctftime.org/event/2375.ics  
     
+??? Quote "[Dreamhack Invitational 2024](https://dreamhack.io/)"  
+    [![](https://ctftime.org/media/events/_mini_round_light2x_1.png){ width="200" align=left }](https://dreamhack.io/)  
+    **比赛名称** : [Dreamhack Invitational 2024](https://dreamhack.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-27 09:00:00 - 2024-05-27 21:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Theori (https://ctftime.org/team/250867)  
+    **添加日历** : https://ctftime.org/event/2309.ics  
+    
