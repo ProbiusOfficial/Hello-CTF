@@ -119,6 +119,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Dreamhack Invitational 2024](https://dreamhack.io/)"  
+    [![](https://ctftime.org/media/events/_mini_round_light2x_1.png){ width="200" align=left }](https://dreamhack.io/)  
+    **比赛名称** : [Dreamhack Invitational 2024](https://dreamhack.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-27 09:00:00 - 2024-05-27 21:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Theori (https://ctftime.org/team/250867)  
+    **添加日历** : https://ctftime.org/event/2309.ics  
+    
 ??? Quote "[BTCTF I](https://btcodeclub.vercel.app/)"  
     [![](https://ctftime.org/media/events/Screen_Shot_2024-04-10_at_5.52.43_PM.png){ width="200" align=left }](https://btcodeclub.vercel.app/)  
     **比赛名称** : [BTCTF I](https://btcodeclub.vercel.app/)  
@@ -1009,13 +1018,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
     **添加日历** : https://ctftime.org/event/2267.ics  
-    
-??? Quote "[Shakti CTF](https://ctf.shakticon.com/)"  
-    [![](https://ctftime.org/media/events/shaktictf_1_1.png){ width="200" align=left }](https://ctf.shakticon.com/)  
-    **比赛名称** : [Shakti CTF](https://ctf.shakticon.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-08 20:30:00 - 2024-03-09 20:30:00 UTC+8  
-    **比赛权重** : 24.10  
-    **赛事主办** : TeamShakti (https://ctftime.org/team/61083)  
-    **添加日历** : https://ctftime.org/event/2268.ics  
     

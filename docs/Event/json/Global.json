@@ -441,7 +441,7 @@
         "比赛权重": "0",
         "赛事主办": "Theori (https://ctftime.org/team/250867)",
         "比赛ID": "1090",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "BTCTF I",
@@ -1629,18 +1629,6 @@
         "比赛权重": "0.00",
         "赛事主办": "HackDayCTF (https://ctftime.org/team/277562)",
         "比赛ID": "1060",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Shakti CTF",
-        "比赛时间": "2024-03-08 20:30:00 - 2024-03-09 20:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2268.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.shakticon.com/",
-        "比赛标志": "https://ctftime.org/media/events/shaktictf_1_1.png",
-        "比赛权重": "24.10",
-        "赛事主办": "TeamShakti (https://ctftime.org/team/61083)",
-        "比赛ID": "521",
         "比赛状态": "past"
     }
 ]
