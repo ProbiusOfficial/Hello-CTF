@@ -223,9 +223,9 @@ comments: true
     **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
     **添加日历** : https://ctftime.org/event/2284.ics  
     
-??? Quote "[Interlogica CTF2024 - Wastelands](https://ctf.interlogica.it/)"  
-    [![](https://ctftime.org/media/events/Untitled_2.png){ width="200" align=left }](https://ctf.interlogica.it/)  
-    **比赛名称** : [Interlogica CTF2024 - Wastelands](https://ctf.interlogica.it/)  
+??? Quote "[Interlogica CTF2024 - Wastelands](https://ctf.interlogica.ninja/)"  
+    [![](https://ctftime.org/media/events/Untitled_2.png){ width="200" align=left }](https://ctf.interlogica.ninja/)  
+    **比赛名称** : [Interlogica CTF2024 - Wastelands](https://ctf.interlogica.ninja/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-07-05 20:37:00 - 2024-07-08 06:59:59 UTC+8  
     **比赛权重** : 0.00  
