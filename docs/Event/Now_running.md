@@ -18,12 +18,3 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Quote "[ångstromCTF 2024](https://angstromctf.com/)"  
-    [![](https://ctftime.org/media/events/actf.png){ width="200" align=left }](https://angstromctf.com/)  
-    **比赛名称** : [ångstromCTF 2024](https://angstromctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-25 08:00:00 - 2024-05-28 08:00:00 UTC+8  
-    **比赛权重** : 72.06  
-    **赛事主办** : ångstromCTF Organizers (https://ctftime.org/team/15734)  
-    **添加日历** : https://ctftime.org/event/2375.ics  
-    

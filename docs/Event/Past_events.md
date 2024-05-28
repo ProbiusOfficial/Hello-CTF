@@ -128,6 +128,15 @@ comments: true
     **赛事主办** : Theori (https://ctftime.org/team/250867)  
     **添加日历** : https://ctftime.org/event/2309.ics  
     
+??? Quote "[ångstromCTF 2024](https://angstromctf.com/)"  
+    [![](https://ctftime.org/media/events/actf.png){ width="200" align=left }](https://angstromctf.com/)  
+    **比赛名称** : [ångstromCTF 2024](https://angstromctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-25 08:00:00 - 2024-05-28 08:00:00 UTC+8  
+    **比赛权重** : 72.06  
+    **赛事主办** : ångstromCTF Organizers (https://ctftime.org/team/15734)  
+    **添加日历** : https://ctftime.org/event/2375.ics  
+    
 ??? Quote "[BTCTF I](https://btcodeclub.vercel.app/)"  
     [![](https://ctftime.org/media/events/Screen_Shot_2024-04-10_at_5.52.43_PM.png){ width="200" align=left }](https://btcodeclub.vercel.app/)  
     **比赛名称** : [BTCTF I](https://btcodeclub.vercel.app/)  
@@ -1009,13 +1018,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : 红客突击队 (https://ctftime.org/team/119338)  
     **添加日历** : https://ctftime.org/event/2290.ics  
-    
-??? Quote "[HackDay 2024 - Finals](https://www.hackday.fr/)"  
-    [![](https://ctftime.org/media/events/CREA_LOGO_Blason_Espion_1.png){ width="200" align=left }](https://www.hackday.fr/)  
-    **比赛名称** : [HackDay 2024 - Finals](https://www.hackday.fr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-09 02:00:00 - 2024-03-10 02:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
-    **添加日历** : https://ctftime.org/event/2267.ics  
     
