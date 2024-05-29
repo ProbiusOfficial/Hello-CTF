@@ -777,13 +777,6 @@ hide:
                 **比赛时间** : 2024年04月03日 09:00 - 2024年04月03日 18:00  
                 **其他说明** : 赛事交流QQ群：458469559 ；主办单位：数字中国建设峰会组委会 承办单位：福建省数字福建建设领导小组办公室 三明市人民政府  
                 
-            ??? Quote "[Round#20 Basic WEB个人专场](https://nssctf.cn/contest)"  
-                **比赛名称** : [Round#20 Basic WEB个人专场](https://nssctf.cn/contest)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年03月25日 00:00 - 2024年03月30日 13:20  
-                **比赛时间** : 2024年03月30日 13:30 - 2024年03月30日 17:30  
-                **其他说明** : QQ群：521330139  
-                
         === "国外赛事"
             ??? Quote "[Dreamhack Invitational 2024](https://dreamhack.io/)"  
                 [![](https://ctftime.org/media/events/_mini_round_light2x_1.png){ width="200" align=left }](https://dreamhack.io/)  
