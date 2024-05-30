@@ -73,10 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
-    ### [ShowDocV3.2.5-SQL注入分析](https://y4tacker.github.io/2024/05/28/year/2024/5/ShowDocV3-2-5-SQL%E6%B3%A8%E5%85%A5%E5%88%86%E6%9E%90/)  
+    ### [ShowDocV3.2.5最新版SQL注入及老版本反序列化分析](https://y4tacker.github.io/2024/05/28/year/2024/5/ShowDocV3-2-5%E6%9C%80%E6%96%B0%E7%89%88SQL%E6%B3%A8%E5%85%A5%E5%8F%8A%E8%80%81%E7%89%88%E6%9C%AC%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%88%86%E6%9E%90/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-05-28
 
-    7212acd0ac7ad16b0463bf041a1a1b8d9a325900c68a4afa22bc450d9da69d66e651f10d57830a0435483bb01660ef7016e72ecd2f2335f7d0b44231ef8d0c64f2cf1277dd54ed0ad9f7bdd4e5f8958c9f18807a1fe65577ea7942ccbd735422f1f408...
+    dc86c7ed6961e0c46c0dd46b427bf6779327349f110f959d90a4eae1c38ff107b5299e84087bc7c5716270ee2145470ff0a78bec463b6e05aaae8186344413e18bc47ae0159a1ad80bded0ba87f9c6b93ffa20d17c138b56e62cb3c2abeb585399166b...
     ### [浅析通天星CMSV6车载定位监控平台远程代码执行漏洞](https://y4tacker.github.io/2024/05/18/year/2024/5/%E6%B5%85%E6%9E%90%E9%80%9A%E5%A4%A9%E6%98%9FCMSV6%E8%BD%A6%E8%BD%BD%E5%AE%9A%E4%BD%8D%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-05-18
 
@@ -85,10 +85,10 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-05-11
 
     浅析H3C-CAS虚拟化管理系统权限绕过致文件上传漏洞写在前面之前四月就关注到了，可是后面不知道什么原因某步下了公众号，今天又被再次提起，当时分析了一半也就是权限相关的调用，现在补上另一半正文鉴权相关配置简析既然和权限绕过相关那么第一步我们必然要去先看看相关配置，在web.xml配置文件当中，可以看到相关的如下配置这里我们只要关注两点，第一servelet需要以/carsrs开头，第二配置文件在/...
-    ### [浅析瑞友天翼应用虚拟化系统远程代码执行](https://y4tacker.github.io/2024/05/07/year/2024/5/%E6%B5%85%E6%9E%90%E7%91%9E%E5%8F%8B%E5%A4%A9%E7%BF%BC%E5%BA%94%E7%94%A8%E8%99%9A%E6%8B%9F%E5%8C%96%E7%B3%BB%E7%BB%9F%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C/)  
+    ### [浅析瑞友天翼应用虚拟化系统前台反序列化(V<=7.0.5.1)](https://y4tacker.github.io/2024/05/07/year/2024/5/%E6%B5%85%E6%9E%90%E7%91%9E%E5%8F%8B%E5%A4%A9%E7%BF%BC%E5%BA%94%E7%94%A8%E8%99%9A%E6%8B%9F%E5%8C%96%E7%B3%BB%E7%BB%9F%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-05-07
 
-    浅析瑞友天翼应用虚拟化系统远程代码执行看到应急公告简单分析学习一波，漏洞不算难，代码也比较简单，有些细节还是蛮有意思，算是温故而知新，顺便也捡起一些很久没碰的PHP知识鉴权这个系统文件不多，功能点大多是需要登录，我们可以重点关注一下鉴权部分，在为数不多的控制器当中可以看到，在admin/index两个控制器中部分功能点都存在对于登录用户的判断，分别对应函数checklogin与admincheck...
+    浅析瑞友天翼应用虚拟化系统前台反序列化(V<=7.0.5.1)看到应急公告简单分析学习一波，漏洞不算难，代码也比较简单，有些细节还是蛮有意思，算是温故而知新，顺便也捡起一些很久没碰的PHP知识鉴权这个系统文件不多，功能点大多是需要登录，我们可以重点关注一下鉴权部分，在为数不多的控制器当中可以看到，在admin/index两个控制器中部分功能点都存在对于登录用户的判断，分别对应函数checklogi...
     ### [可能是全网第一个粤语Qwen/从零开始的LLM微调教程](https://blog.stv.lol/archives/88/)  
     >by [Steven Lynn's Blog](https://blog.stv.lol), 2024-05-05
 
