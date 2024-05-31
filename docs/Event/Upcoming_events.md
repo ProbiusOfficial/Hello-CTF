@@ -50,15 +50,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[GPN CTF 2024](https://ctf.kitctf.de/)"  
-    [![](https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d.png){ width="200" align=left }](https://ctf.kitctf.de/)  
-    **比赛名称** : [GPN CTF 2024](https://ctf.kitctf.de/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-31 18:00:00 - 2024-06-02 06:00:00 UTC+8  
-    **比赛权重** : 31.17  
-    **赛事主办** : KITCTF (https://ctftime.org/team/7221)  
-    **添加日历** : https://ctftime.org/event/2257.ics  
-    
 ??? Quote "[Season IV, US Cyber Open](https://www.uscybergames.com/apply-to-play-season-4?hsCtaTracking=b8a9eb7a-183c-4113-a5d4-a4ac7b486e4f%7Cb5c8f25c-5752-4e8f-815b-82cb4d186af1)"  
     [![](https://ctftime.org/media/events/2022-10-USCG_S3_logos_cybergames_1.png){ width="200" align=left }](https://www.uscybergames.com/apply-to-play-season-4?hsCtaTracking=b8a9eb7a-183c-4113-a5d4-a4ac7b486e4f%7Cb5c8f25c-5752-4e8f-815b-82cb4d186af1)  
     **比赛名称** : [Season IV, US Cyber Open](https://www.uscybergames.com/apply-to-play-season-4?hsCtaTracking=b8a9eb7a-183c-4113-a5d4-a4ac7b486e4f%7Cb5c8f25c-5752-4e8f-815b-82cb4d186af1)  
