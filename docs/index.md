@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群：623112042  
                 
     === "国外比赛"
-        ??? Quote "[Season IV, US Cyber Open](https://www.uscybergames.com/apply-to-play-season-4?hsCtaTracking=b8a9eb7a-183c-4113-a5d4-a4ac7b486e4f%7Cb5c8f25c-5752-4e8f-815b-82cb4d186af1)"  
-            [![](https://ctftime.org/media/events/2022-10-USCG_S3_logos_cybergames_1.png){ width="200" align=left }](https://www.uscybergames.com/apply-to-play-season-4?hsCtaTracking=b8a9eb7a-183c-4113-a5d4-a4ac7b486e4f%7Cb5c8f25c-5752-4e8f-815b-82cb4d186af1)  
-            **比赛名称** : [Season IV, US Cyber Open](https://www.uscybergames.com/apply-to-play-season-4?hsCtaTracking=b8a9eb7a-183c-4113-a5d4-a4ac7b486e4f%7Cb5c8f25c-5752-4e8f-815b-82cb4d186af1)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-05-31 19:59:00 - 2024-06-10 07:59:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
-            **添加日历** : https://ctftime.org/event/2350.ics  
-            
         ??? Quote "[vsCTF 2024](https://ctf.viewsource.me/)"  
             [![](https://ctftime.org/media/events/vsctf_2024_2x.png){ width="200" align=left }](https://ctf.viewsource.me/)  
             **比赛名称** : [vsCTF 2024](https://ctf.viewsource.me/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : NOPS (https://ctftime.org/team/4056)  
             **添加日历** : https://ctftime.org/event/2358.ics  
+            
+        ??? Quote "[Akasec CTF 2024](https://ctf.akasec.club/)"  
+            [![](https://ctftime.org/media/events/akasec_icon-15.png){ width="200" align=left }](https://ctf.akasec.club/)  
+            **比赛名称** : [Akasec CTF 2024](https://ctf.akasec.club/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-06-07 21:37:00 - 2024-06-09 21:37:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Akasec (https://ctftime.org/team/107202)  
+            **添加日历** : https://ctftime.org/event/2222.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
