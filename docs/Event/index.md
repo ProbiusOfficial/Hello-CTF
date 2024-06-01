@@ -607,13 +607,7 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-            ??? Quote "[矩阵杯](https://matrixcup.net/page/race/home/)"  
-                **比赛名称** : [矩阵杯](https://matrixcup.net/page/race/home/)  
-                **比赛类型** : 团队赛|1-4人  
-                **报名时间** : 2024年04月26日 00:00 - 2024年05月26日 00:00  
-                **比赛时间** : 2024年06月01日 00:00 - 2024年06月02日 00:00  
-                **其他说明** : 详情关注官网信息  
-                
+    
         === "国外赛事"
             ??? Quote "[Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)  
@@ -671,6 +665,13 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[矩阵杯](https://matrixcup.net/page/race/home/)"  
+                **比赛名称** : [矩阵杯](https://matrixcup.net/page/race/home/)  
+                **比赛类型** : 团队赛|1-4人  
+                **报名时间** : 2024年04月26日 00:00 - 2024年05月26日 00:00  
+                **比赛时间** : 2024年06月01日 00:00 - 2024年06月02日 00:00  
+                **其他说明** : 详情关注官网信息  
+                
             ??? Quote "[LitCTF2024](https://www.nssctf.cn/contest/470/)"  
                 **比赛名称** : [LitCTF2024](https://www.nssctf.cn/contest/470/)  
                 **比赛类型** : 团队赛|1-4人  
