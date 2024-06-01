@@ -607,13 +607,6 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-            ??? Quote "[LitCTF2024](https://www.nssctf.cn/contest/470/)"  
-                **比赛名称** : [LitCTF2024](https://www.nssctf.cn/contest/470/)  
-                **比赛类型** : 团队赛|1-4人  
-                **报名时间** : 2024年05月02日 08:00 - 2024年06月01日 07:00  
-                **比赛时间** : 2024年06月01日 09:00 - 2024年06月01日 18:00  
-                **其他说明** : Q群：782400974  
-                
             ??? Quote "[矩阵杯](https://matrixcup.net/page/race/home/)"  
                 **比赛名称** : [矩阵杯](https://matrixcup.net/page/race/home/)  
                 **比赛类型** : 团队赛|1-4人  
@@ -678,6 +671,13 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[LitCTF2024](https://www.nssctf.cn/contest/470/)"  
+                **比赛名称** : [LitCTF2024](https://www.nssctf.cn/contest/470/)  
+                **比赛类型** : 团队赛|1-4人  
+                **报名时间** : 2024年05月02日 08:00 - 2024年06月01日 07:00  
+                **比赛时间** : 2024年06月01日 09:00 - 2024年06月01日 18:00  
+                **其他说明** : Q群：782400974  
+                
             ??? Quote "[RCTF 2024](https://adworld.xctf.org.cn/contest)"  
                 **比赛名称** : [RCTF 2024](https://adworld.xctf.org.cn/contest)  
                 **比赛类型** : 团队赛  
