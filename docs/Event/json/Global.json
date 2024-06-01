@@ -360,18 +360,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "GPN CTF 2024",
-        "比赛时间": "2024-05-31 18:00:00 - 2024-06-02 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2257.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.kitctf.de/",
-        "比赛标志": "https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d.png",
-        "比赛权重": "31.17",
-        "赛事主办": "KITCTF (https://ctftime.org/team/7221)",
-        "比赛ID": "854",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Season IV, US Cyber Open",
         "比赛时间": "2024-05-31 19:59:00 - 2024-06-10 07:59:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2350.ics",
@@ -418,6 +406,18 @@
         "赛事主办": "NOPS (https://ctftime.org/team/4056)",
         "比赛ID": "1114",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "GPN CTF 2024",
+        "比赛时间": "2024-05-31 18:00:00 - 2024-06-02 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2257.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.kitctf.de/",
+        "比赛标志": "https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d.png",
+        "比赛权重": "31.17",
+        "赛事主办": "KITCTF (https://ctftime.org/team/7221)",
+        "比赛ID": "854",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Dreamhack Invitational 2024",
@@ -1605,18 +1605,6 @@
         "比赛权重": "23.59",
         "赛事主办": "X Series CTF (https://ctftime.org/team/211390)",
         "比赛ID": "883",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "HSCCTF 2024",
-        "比赛时间": "2024-03-09 05:00:00 - 2024-03-11 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2290.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://race.hscsec.cn/home",
-        "比赛标志": "https://ctftime.org/media/events/ZLJS-G.png",
-        "比赛权重": "0.00",
-        "赛事主办": "红客突击队 (https://ctftime.org/team/119338)",
-        "比赛ID": "1080",
         "比赛状态": "past"
     }
 ]
