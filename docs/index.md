@@ -61,13 +61,6 @@ hide:
             **比赛时间** : 2024年04月10日 23:00 - 2024年06月05日 23:00  
             **其他说明** : 作品赛，不提供更多信息，如有疑问请前往比赛通知页面 http://www.ciscn.cn/competition/securityCompetition?compet_id=39  
             
-        ??? Quote "[LitCTF2024](https://www.nssctf.cn/contest/470/)"  
-            **比赛名称** : [LitCTF2024](https://www.nssctf.cn/contest/470/)  
-            **比赛类型** : 团队赛|1-4人  
-            **报名时间** : 2024年05月02日 08:00 - 2024年06月01日 07:00  
-            **比赛时间** : 2024年06月01日 09:00 - 2024年06月01日 18:00  
-            **其他说明** : Q群：782400974  
-            
         ??? Quote "[墨者杯](https://www.c.mozhe.cn/#/)"  
             **比赛名称** : [墨者杯](https://www.c.mozhe.cn/#/)  
             **比赛类型** : 个人赛  
@@ -81,17 +74,15 @@ hide:
             **报名时间** : 2024年05月15日 08:00 - 2024年06月08日 09:00  
             **比赛时间** : 2024年06月08日 10:00 - 2024年06月10日 18:00  
             **其他说明** : R3CTF2024 是由 r3kapig 和 YuanHeng实验室 组织的在线解题(jeopardy)CTF。同时 YuanHeng实验室 提供所有奖品！我们欢迎来自世界各地的CTFer在这48小时内玩得开心。更多信息：https://discord.gg/zU64ekBsgA  
+            
+        ??? Quote "[第五届“闽盾杯”网络空间安全大赛（黑盾全国大学生赛道）](http://heidunbei.si.net.cn/hdc/cover)"  
+            **比赛名称** : [第五届“闽盾杯”网络空间安全大赛（黑盾全国大学生赛道）](http://heidunbei.si.net.cn/hdc/cover)  
+            **比赛类型** : 团队赛|1-3人  
+            **报名时间** : 2024年05月21日 00:00 - 2024年06月19日 18:00  
+            **比赛时间** : 2024年06月21日 09:00 - 2024年06月21日 17:00  
+            **其他说明** : QQ群：566180593  
                 
     === "国外比赛"
-        ??? Quote "[Codegate CTF 2024 Preliminary](http://ctf.codegate.org/)"  
-            [![](https://ctftime.org){ width="200" align=left }](http://ctf.codegate.org/)  
-            **比赛名称** : [Codegate CTF 2024 Preliminary](http://ctf.codegate.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-06-01 09:00:00 - 2024-06-02 09:00:00 UTC+8  
-            **比赛权重** : 36.58  
-            **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
-            **添加日历** : https://ctftime.org/event/2346.ics  
-            
         ??? Quote "[N0PSctf](https://ctf.nops.re/)"  
             [![](https://ctftime.org/media/events/favicon_5.png){ width="200" align=left }](https://ctf.nops.re/)  
             **比赛名称** : [N0PSctf](https://ctf.nops.re/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 46.33  
             **赛事主办** : BCACTF (https://ctftime.org/team/81702)  
             **添加日历** : https://ctftime.org/event/2274.ics  
+            
+        ??? Quote "[R3CTF/YUANHENGCTF 2024](https://ctf2024.r3kapig.com/)"  
+            [![](https://ctftime.org/media/events/r3_logo.png){ width="200" align=left }](https://ctf2024.r3kapig.com/)  
+            **比赛名称** : [R3CTF/YUANHENGCTF 2024](https://ctf2024.r3kapig.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-06-08 10:00:00 - 2024-06-10 10:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
+            **添加日历** : https://ctftime.org/event/2273.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

@@ -343,23 +343,7 @@ hide:
                 **比赛时间** : 2024年04月10日 23:00 - 2024年06月05日 23:00  
                 **其他说明** : 作品赛，不提供更多信息，如有疑问请前往比赛通知页面 http://www.ciscn.cn/competition/securityCompetition?compet_id=39  
                 
-            ??? Quote "[LitCTF2024](https://www.nssctf.cn/contest/470/)"  
-                **比赛名称** : [LitCTF2024](https://www.nssctf.cn/contest/470/)  
-                **比赛类型** : 团队赛|1-4人  
-                **报名时间** : 2024年05月02日 08:00 - 2024年06月01日 07:00  
-                **比赛时间** : 2024年06月01日 09:00 - 2024年06月01日 18:00  
-                **其他说明** : Q群：782400974  
-                
         === "国外赛事"
-            ??? Quote "[Codegate CTF 2024 Preliminary](http://ctf.codegate.org/)"  
-                [![](https://ctftime.org){ width="200" align=left }](http://ctf.codegate.org/)  
-                **比赛名称** : [Codegate CTF 2024 Preliminary](http://ctf.codegate.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-01 09:00:00 - 2024-06-02 09:00:00 UTC+8  
-                **比赛权重** : 36.58  
-                **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
-                **添加日历** : https://ctftime.org/event/2346.ics  
-                
             ??? Quote "[N0PSctf](https://ctf.nops.re/)"  
                 [![](https://ctftime.org/media/events/favicon_5.png){ width="200" align=left }](https://ctf.nops.re/)  
                 **比赛名称** : [N0PSctf](https://ctf.nops.re/)  
@@ -632,6 +616,13 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
+            ??? Quote "[LitCTF2024](https://www.nssctf.cn/contest/470/)"  
+                **比赛名称** : [LitCTF2024](https://www.nssctf.cn/contest/470/)  
+                **比赛类型** : 团队赛|1-4人  
+                **报名时间** : 2024年05月02日 08:00 - 2024年06月01日 07:00  
+                **比赛时间** : 2024年06月01日 09:00 - 2024年06月01日 18:00  
+                **其他说明** : Q群：782400974  
+                
             ??? Quote "[矩阵杯](https://matrixcup.net/page/race/home/)"  
                 **比赛名称** : [矩阵杯](https://matrixcup.net/page/race/home/)  
                 **比赛类型** : 团队赛|1-4人  
@@ -675,6 +666,15 @@ hide:
                 **比赛权重** : 34.00  
                 **赛事主办** : View Source (https://ctftime.org/team/175828)  
                 **添加日历** : https://ctftime.org/event/2248.ics  
+                
+            ??? Quote "[Codegate CTF 2024 Preliminary](http://ctf.codegate.org/)"  
+                [![](https://ctftime.org){ width="200" align=left }](http://ctf.codegate.org/)  
+                **比赛名称** : [Codegate CTF 2024 Preliminary](http://ctf.codegate.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-06-01 09:00:00 - 2024-06-02 09:00:00 UTC+8  
+                **比赛权重** : 36.58  
+                **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
+                **添加日历** : https://ctftime.org/event/2346.ics  
                 
     === "*已经结束*"
         === "国内赛事"

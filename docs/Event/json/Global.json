@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Codegate CTF 2024 Preliminary",
-        "比赛时间": "2024-06-01 09:00:00 - 2024-06-02 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2346.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.codegate.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "36.58",
-        "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
-        "比赛ID": "3",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "N0PSctf",
         "比赛时间": "2024-06-01 16:00:00 - 2024-06-03 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2358.ics",
@@ -417,6 +405,18 @@
         "比赛权重": "34.00",
         "赛事主办": "View Source (https://ctftime.org/team/175828)",
         "比赛ID": "785",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Codegate CTF 2024 Preliminary",
+        "比赛时间": "2024-06-01 09:00:00 - 2024-06-02 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2346.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf.codegate.org/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "36.58",
+        "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
+        "比赛ID": "3",
         "比赛状态": "nowrunning"
     },
     {
