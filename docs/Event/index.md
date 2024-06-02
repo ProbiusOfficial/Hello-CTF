@@ -636,15 +636,6 @@ hide:
                 **赛事主办** : View Source (https://ctftime.org/team/175828)  
                 **添加日历** : https://ctftime.org/event/2248.ics  
                 
-            ??? Quote "[Codegate CTF 2024 Preliminary](http://ctf.codegate.org/)"  
-                [![](https://ctftime.org){ width="200" align=left }](http://ctf.codegate.org/)  
-                **比赛名称** : [Codegate CTF 2024 Preliminary](http://ctf.codegate.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-01 09:00:00 - 2024-06-02 09:00:00 UTC+8  
-                **比赛权重** : 36.58  
-                **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
-                **添加日历** : https://ctftime.org/event/2346.ics  
-                
             ??? Quote "[N0PSctf](https://ctf.nops.re/)"  
                 [![](https://ctftime.org/media/events/favicon_5.png){ width="200" align=left }](https://ctf.nops.re/)  
                 **比赛名称** : [N0PSctf](https://ctf.nops.re/)  
@@ -776,6 +767,15 @@ hide:
                 **其他说明** : 赛事交流QQ群：458469559 ；主办单位：数字中国建设峰会组委会 承办单位：福建省数字福建建设领导小组办公室 三明市人民政府  
                 
         === "国外赛事"
+            ??? Quote "[Codegate CTF 2024 Preliminary](http://ctf.codegate.org/)"  
+                [![](https://ctftime.org){ width="200" align=left }](http://ctf.codegate.org/)  
+                **比赛名称** : [Codegate CTF 2024 Preliminary](http://ctf.codegate.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-06-01 09:00:00 - 2024-06-02 09:00:00 UTC+8  
+                **比赛权重** : 36.58  
+                **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
+                **添加日历** : https://ctftime.org/event/2346.ics  
+                
             ??? Quote "[GPN CTF 2024](https://ctf.kitctf.de/)"  
                 [![](https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d.png){ width="200" align=left }](https://ctf.kitctf.de/)  
                 **比赛名称** : [GPN CTF 2024](https://ctf.kitctf.de/)  
@@ -1666,15 +1666,6 @@ hide:
                 **比赛权重** : 23.64  
                 **赛事主办** : PencilTesters (https://ctftime.org/team/178288)  
                 **添加日历** : https://ctftime.org/event/2263.ics  
-                
-            ??? Quote "[WxMCTF 2024](https://ctf.mcpt.ca/contest/wxmctf)"  
-                [![](https://ctftime.org/media/events/Logo_thing_1.png){ width="200" align=left }](https://ctf.mcpt.ca/contest/wxmctf)  
-                **比赛名称** : [WxMCTF 2024](https://ctf.mcpt.ca/contest/wxmctf)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-03-09 08:00:00 - 2024-03-11 07:00:00 UTC+8  
-                **比赛权重** : 23.59  
-                **赛事主办** : X Series CTF (https://ctftime.org/team/211390)  
-                **添加日历** : https://ctftime.org/event/2179.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
