@@ -119,6 +119,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[N0PSctf](https://ctf.nops.re/)"  
+    [![](https://ctftime.org/media/events/favicon_5.png){ width="200" align=left }](https://ctf.nops.re/)  
+    **比赛名称** : [N0PSctf](https://ctf.nops.re/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-01 16:00:00 - 2024-06-03 04:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : NOPS (https://ctftime.org/team/4056)  
+    **添加日历** : https://ctftime.org/event/2358.ics  
+    
 ??? Quote "[Codegate CTF 2024 Preliminary](http://ctf.codegate.org/)"  
     [![](https://ctftime.org){ width="200" align=left }](http://ctf.codegate.org/)  
     **比赛名称** : [Codegate CTF 2024 Preliminary](http://ctf.codegate.org/)  
@@ -1009,13 +1018,4 @@ comments: true
     **比赛权重** : 20.00  
     **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
     **添加日历** : https://ctftime.org/event/2264.ics  
-    
-??? Quote "[Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)  
-    **比赛名称** : [Cyber Apocalypse 2024: Hacker Royale](https://ctf.hackthebox.com/event/details/cyber-apocalypse-2024-hacker-royale-1386)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-09 21:00:00 - 2024-03-13 20:59:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
-    **添加日历** : https://ctftime.org/event/2255.ics  
     
