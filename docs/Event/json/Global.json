@@ -372,18 +372,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "(POSTPONED) vsCTF 2024",
-        "比赛时间": "2024-06-01 00:00:00 - 2024-06-03 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2248.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.viewsource.me/",
-        "比赛标志": "https://ctftime.org/media/events/vsctf_2024_2x.png",
-        "比赛权重": "34.00",
-        "赛事主办": "View Source (https://ctftime.org/team/175828)",
-        "比赛ID": "785",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "N0PSctf",
         "比赛时间": "2024-06-01 16:00:00 - 2024-06-03 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2358.ics",
@@ -405,6 +393,18 @@
         "比赛权重": "36.58",
         "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
         "比赛ID": "3",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "(POSTPONED) vsCTF 2024",
+        "比赛时间": "2024-06-01 00:00:00 - 2024-06-03 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2248.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.viewsource.me/",
+        "比赛标志": "https://ctftime.org/media/events/vsctf_2024_2x.png",
+        "比赛权重": "34.00",
+        "赛事主办": "View Source (https://ctftime.org/team/175828)",
+        "比赛ID": "785",
         "比赛状态": "past"
     },
     {
@@ -1581,18 +1581,6 @@
         "比赛权重": "25.00",
         "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
         "比赛ID": "554",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "vikeCTF 2024",
-        "比赛时间": "2024-03-09 08:00:00 - 2024-03-11 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2263.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.vikesec.ca/",
-        "比赛标志": "https://ctftime.org/media/events/vikesec.png",
-        "比赛权重": "23.64",
-        "赛事主办": "PencilTesters (https://ctftime.org/team/178288)",
-        "比赛ID": "888",
         "比赛状态": "past"
     }
 ]

@@ -27,15 +27,6 @@ comments: true
     **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
     **添加日历** : https://ctftime.org/event/2350.ics  
     
-??? Quote "[(POSTPONED) vsCTF 2024](https://ctf.viewsource.me/)"  
-    [![](https://ctftime.org/media/events/vsctf_2024_2x.png){ width="200" align=left }](https://ctf.viewsource.me/)  
-    **比赛名称** : [(POSTPONED) vsCTF 2024](https://ctf.viewsource.me/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-01 00:00:00 - 2024-06-03 00:00:00 UTC+8  
-    **比赛权重** : 34.00  
-    **赛事主办** : View Source (https://ctftime.org/team/175828)  
-    **添加日历** : https://ctftime.org/event/2248.ics  
-    
 ??? Quote "[N0PSctf](https://ctf.nops.re/)"  
     [![](https://ctftime.org/media/events/favicon_5.png){ width="200" align=left }](https://ctf.nops.re/)  
     **比赛名称** : [N0PSctf](https://ctf.nops.re/)  

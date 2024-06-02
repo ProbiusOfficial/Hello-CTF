@@ -627,15 +627,6 @@ hide:
                 **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
                 **添加日历** : https://ctftime.org/event/2350.ics  
                 
-            ??? Quote "[(POSTPONED) vsCTF 2024](https://ctf.viewsource.me/)"  
-                [![](https://ctftime.org/media/events/vsctf_2024_2x.png){ width="200" align=left }](https://ctf.viewsource.me/)  
-                **比赛名称** : [(POSTPONED) vsCTF 2024](https://ctf.viewsource.me/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-01 00:00:00 - 2024-06-03 00:00:00 UTC+8  
-                **比赛权重** : 34.00  
-                **赛事主办** : View Source (https://ctftime.org/team/175828)  
-                **添加日历** : https://ctftime.org/event/2248.ics  
-                
             ??? Quote "[N0PSctf](https://ctf.nops.re/)"  
                 [![](https://ctftime.org/media/events/favicon_5.png){ width="200" align=left }](https://ctf.nops.re/)  
                 **比赛名称** : [N0PSctf](https://ctf.nops.re/)  
@@ -768,6 +759,15 @@ hide:
                 **比赛权重** : 36.58  
                 **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
                 **添加日历** : https://ctftime.org/event/2346.ics  
+                
+            ??? Quote "[(POSTPONED) vsCTF 2024](https://ctf.viewsource.me/)"  
+                [![](https://ctftime.org/media/events/vsctf_2024_2x.png){ width="200" align=left }](https://ctf.viewsource.me/)  
+                **比赛名称** : [(POSTPONED) vsCTF 2024](https://ctf.viewsource.me/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-06-01 00:00:00 - 2024-06-03 00:00:00 UTC+8  
+                **比赛权重** : 34.00  
+                **赛事主办** : View Source (https://ctftime.org/team/175828)  
+                **添加日历** : https://ctftime.org/event/2248.ics  
                 
             ??? Quote "[GPN CTF 2024](https://ctf.kitctf.de/)"  
                 [![](https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d.png){ width="200" align=left }](https://ctf.kitctf.de/)  
@@ -1650,15 +1650,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
                 **添加日历** : https://ctftime.org/event/2255.ics  
-                
-            ??? Quote "[vikeCTF 2024](https://ctf.vikesec.ca/)"  
-                [![](https://ctftime.org/media/events/vikesec.png){ width="200" align=left }](https://ctf.vikesec.ca/)  
-                **比赛名称** : [vikeCTF 2024](https://ctf.vikesec.ca/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-03-09 08:00:00 - 2024-03-11 08:00:00 UTC+8  
-                **比赛权重** : 23.64  
-                **赛事主办** : PencilTesters (https://ctftime.org/team/178288)  
-                **添加日历** : https://ctftime.org/event/2263.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
