@@ -324,6 +324,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "CrewCTF 2024",
+        "比赛时间": "2024-08-03 01:00:00 - 2024-08-05 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2223.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2024.crewc.tf/",
+        "比赛标志": "https://ctftime.org/media/events/THC_new.png",
+        "比赛权重": "26.89",
+        "赛事主办": "thehackerscrew (https://ctftime.org/team/85618)",
+        "比赛ID": "738",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "n00bzCTF 2024",
         "比赛时间": "2024-08-03 09:00:00 - 2024-08-05 09:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2378.ics",
