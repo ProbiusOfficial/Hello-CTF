@@ -2,6 +2,7 @@ FROM python:3.9.0-alpine
 
 ENV PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple
 RUN pip install --upgrade pip
+RUN apk add --no-cache build-base
 
 WORKDIR /Hello-CTF
 COPY mkdocs.yml ./mkdocs.yml
