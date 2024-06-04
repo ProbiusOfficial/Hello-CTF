@@ -214,7 +214,7 @@ comments: true
     **比赛名称** : [L3akCTF 2024](https://ctf.l3ak.team/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-05-24 20:00:00 - 2024-05-26 20:00:00 UTC+8  
-    **比赛权重** : 24.54  
+    **比赛权重** : 24.56  
     **赛事主办** : L3ak (https://ctftime.org/team/220336)  
     **添加日历** : https://ctftime.org/event/2322.ics  
     
