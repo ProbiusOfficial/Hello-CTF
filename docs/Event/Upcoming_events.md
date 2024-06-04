@@ -392,7 +392,7 @@ comments: true
     **比赛名称** : [Hackceler8 2024](https://capturetheflag.withgoogle.com/hackceler8)  
     **比赛形式** : Hack quest  
     **比赛时间** : 2024-10-18 08:00:00 - 2024-10-21 07:00:00 UTC+8  
-    **比赛权重** : 99.41  
+    **比赛权重** : 0.00  
     **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
     **添加日历** : https://ctftime.org/event/2379.ics  
     
