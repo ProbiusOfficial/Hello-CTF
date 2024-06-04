@@ -146,6 +146,15 @@ comments: true
     **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
     **添加日历** : https://ctftime.org/event/2346.ics  
     
+??? Quote "[Hardwear.io USA 2024 Hardware CTF](https://hwctf.quarkslab.com/)"  
+    [![](https://ctftime.org/media/events/logohwcolor_13.png){ width="200" align=left }](https://hwctf.quarkslab.com/)  
+    **比赛名称** : [Hardwear.io USA 2024 Hardware CTF](https://hwctf.quarkslab.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-01 01:00:00 - 2024-06-02 04:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Hardware CTF by Quarkslab (https://ctftime.org/team/274600)  
+    **添加日历** : https://ctftime.org/event/2400.ics  
+    
 ??? Quote "[GPN CTF 2024](https://ctf.kitctf.de/)"  
     [![](https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d.png){ width="200" align=left }](https://ctf.kitctf.de/)  
     **比赛名称** : [GPN CTF 2024](https://ctf.kitctf.de/)  
@@ -1009,13 +1018,4 @@ comments: true
     **比赛权重** : 35.25  
     **赛事主办** : wolvsec (https://ctftime.org/team/83621)  
     **添加日历** : https://ctftime.org/event/2240.ics  
-    
-??? Quote "[1753CTF 2024](https://1753ctf.com/)"  
-    [![](https://ctftime.org/media/events/badge.png){ width="200" align=left }](https://1753ctf.com/)  
-    **比赛名称** : [1753CTF 2024](https://1753ctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-16 05:00:00 - 2024-03-17 05:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : 1753c (https://ctftime.org/team/178287)  
-    **添加日历** : https://ctftime.org/event/2234.ics  
     
