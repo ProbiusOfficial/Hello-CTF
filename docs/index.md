@@ -54,13 +54,6 @@ hide:
     ---
     <!-- 主页赛事展示_开始 -->
     === "国内比赛"
-        ??? Quote "[第十七届全国大学生信息安全竞赛 - 作品赛](http://www.ciscn.cn/competition/securityCompetition?compet_id=39)"  
-            **比赛名称** : [第十七届全国大学生信息安全竞赛 - 作品赛](http://www.ciscn.cn/competition/securityCompetition?compet_id=39)  
-            **比赛类型** : 作品赛  
-            **报名时间** : 2024年04月07日 23:00 - 2024年06月05日 23:00  
-            **比赛时间** : 2024年04月10日 23:00 - 2024年06月05日 23:00  
-            **其他说明** : 作品赛，不提供更多信息，如有疑问请前往比赛通知页面 http://www.ciscn.cn/competition/securityCompetition?compet_id=39  
-            
         ??? Quote "[墨者杯](https://www.c.mozhe.cn/#/)"  
             **比赛名称** : [墨者杯](https://www.c.mozhe.cn/#/)  
             **比赛类型** : 个人赛  
