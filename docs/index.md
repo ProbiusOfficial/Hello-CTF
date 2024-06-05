@@ -76,9 +76,9 @@ hide:
             **其他说明** : QQ群：566180593  
                 
     === "国外比赛"
-        ??? Quote "[Akasec CTF 2024](https://ctf.akasec.club/)"  
-            [![](https://ctftime.org/media/events/akasec_icon-15.png){ width="200" align=left }](https://ctf.akasec.club/)  
-            **比赛名称** : [Akasec CTF 2024](https://ctf.akasec.club/)  
+        ??? Quote "[Akasec CTF 2024](https://discord.gg/6yyzBnZP2e)"  
+            [![](https://ctftime.org/media/events/akasec_icon-15.png){ width="200" align=left }](https://discord.gg/6yyzBnZP2e)  
+            **比赛名称** : [Akasec CTF 2024](https://discord.gg/6yyzBnZP2e)  
             **比赛形式** : Jeopardy  
             **比赛时间** : 2024-06-07 21:37:00 - 2024-06-09 21:37:00 UTC+8  
             **比赛权重** : 0.00  
