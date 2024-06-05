@@ -76,7 +76,7 @@ hide:
     ### [ShowDocV3.2.5最新版SQL注入及老版本反序列化分析](https://y4tacker.github.io/2024/05/28/year/2024/5/ShowDocV3-2-5%E6%9C%80%E6%96%B0%E7%89%88SQL%E6%B3%A8%E5%85%A5%E5%8F%8A%E8%80%81%E7%89%88%E6%9C%AC%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%88%86%E6%9E%90/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-05-28
 
-    dc86c7ed6961e0c46c0dd46b427bf6779327349f110f959d90a4eae1c38ff107b5299e84087bc7c5716270ee2145470ff0a78bec463b6e05aaae8186344413e18bc47ae0159a1ad80bded0ba87f9c6b93ffa20d17c138b56e62cb3c2abeb585399166b...
+    ShowDocV3.2.5最新版SQL注入及老版本反序列化分析注入从提交记录我们能找到一些提示https://github.com/star7th/showdoc/commit/805983518081660594d752573273b8fb5cbbdb30#diff-b4363835fc1321f859d1faaad5a5a283db695849ca98c4e949fbf1bed8c84a31首...
     ### [浅析通天星CMSV6车载定位监控平台远程代码执行漏洞](https://y4tacker.github.io/2024/05/18/year/2024/5/%E6%B5%85%E6%9E%90%E9%80%9A%E5%A4%A9%E6%98%9FCMSV6%E8%BD%A6%E8%BD%BD%E5%AE%9A%E4%BD%8D%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-05-18
 
