@@ -750,13 +750,7 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-            ??? Quote "[墨者杯](https://www.c.mozhe.cn/#/)"  
-                **比赛名称** : [墨者杯](https://www.c.mozhe.cn/#/)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年05月30日 00:00 - 2024年06月05日 17:00  
-                **比赛时间** : 2024年06月06日 10:00 - 2024年06月06日 14:00  
-                **其他说明** : QQ群：623112042  
-                
+    
         === "国外赛事"
             ??? Quote "[Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)  
@@ -778,6 +772,13 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[墨者杯](https://www.c.mozhe.cn/#/)"  
+                **比赛名称** : [墨者杯](https://www.c.mozhe.cn/#/)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年05月30日 00:00 - 2024年06月05日 17:00  
+                **比赛时间** : 2024年06月06日 10:00 - 2024年06月06日 14:00  
+                **其他说明** : QQ群：623112042  
+                
             ??? Quote "[第十七届全国大学生信息安全竞赛 - 作品赛](http://www.ciscn.cn/competition/securityCompetition?compet_id=39)"  
                 **比赛名称** : [第十七届全国大学生信息安全竞赛 - 作品赛](http://www.ciscn.cn/competition/securityCompetition?compet_id=39)  
                 **比赛类型** : 作品赛  
