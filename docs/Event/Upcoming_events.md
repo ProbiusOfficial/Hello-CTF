@@ -257,7 +257,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2301.ics  
     
 ??? Quote "[HITCON CTF 2024 Quals](http://ctf.hitcon.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](http://ctf.hitcon.org/)  
+    [![](https://ctftime.org/media/events/hitcon-ctf_monotone_black.png){ width="200" align=left }](http://ctf.hitcon.org/)  
     **比赛名称** : [HITCON CTF 2024 Quals](http://ctf.hitcon.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-07-12 22:00:00 - 2024-07-14 22:00:00 UTC+8  
