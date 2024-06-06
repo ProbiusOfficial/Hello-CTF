@@ -23,7 +23,7 @@ comments: true
 ## 国际赛事
 
 ??? Quote "[Akasec CTF 2024](https://ctf.akasec.club/)"  
-    [![](https://ctftime.org/media/events/akasec_icon-15.png){ width="200" align=left }](https://ctf.akasec.club/)  
+    [![](https://ctftime.org/media/events/akasec-ctf-logo_3.jpeg){ width="200" align=left }](https://ctf.akasec.club/)  
     **比赛名称** : [Akasec CTF 2024](https://ctf.akasec.club/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-06-07 21:37:00 - 2024-06-09 21:37:00 UTC+8  
