@@ -22,15 +22,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Akasec CTF 2024](https://ctf.akasec.club/)"  
-    [![](https://ctftime.org/media/events/akasec-ctf-logo_3.jpeg){ width="200" align=left }](https://ctf.akasec.club/)  
-    **比赛名称** : [Akasec CTF 2024](https://ctf.akasec.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-07 21:37:00 - 2024-06-09 21:37:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Akasec (https://ctftime.org/team/107202)  
-    **添加日历** : https://ctftime.org/event/2222.ics  
-    
 ??? Quote "[BCACTF 5.0](https://www.bcactf.com/)"  
     [![](https://ctftime.org/media/events/bcactflogoocean.png){ width="200" align=left }](https://www.bcactf.com/)  
     **比赛名称** : [BCACTF 5.0](https://www.bcactf.com/)  
