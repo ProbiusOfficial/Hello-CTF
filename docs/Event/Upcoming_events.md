@@ -94,15 +94,6 @@ comments: true
     **赛事主办** : View Source (https://ctftime.org/team/175828)  
     **添加日历** : https://ctftime.org/event/2248.ics  
     
-??? Quote "[idekCTF 2024](https://ctf.idek.team/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.idek.team/)  
-    **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-15 08:00:00 - 2024-06-17 08:00:00 UTC+8  
-    **比赛权重** : 35.41  
-    **赛事主办** : idek (https://ctftime.org/team/157039)  
-    **添加日历** : https://ctftime.org/event/2304.ics  
-    
 ??? Quote "[justCTF 2024 teaser](http://2024.justctf.team/)"  
     [![](https://ctftime.org/media/events/logo-ctf_3.png){ width="200" align=left }](http://2024.justctf.team/)  
     **比赛名称** : [justCTF 2024 teaser](http://2024.justctf.team/)  
@@ -318,6 +309,15 @@ comments: true
     **比赛权重** : 24.23  
     **赛事主办** : n00bzUnit3d (https://ctftime.org/team/152491)  
     **添加日历** : https://ctftime.org/event/2378.ics  
+    
+??? Quote "[idekCTF 2024](https://ctf.idek.team/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.idek.team/)  
+    **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-08-17 08:00:00 - 2024-08-19 08:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : idek (https://ctftime.org/team/157039)  
+    **添加日历** : https://ctftime.org/event/2304.ics  
     
 ??? Quote "[SekaiCTF 2024](https://ctf.sekai.team/)"  
     [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  

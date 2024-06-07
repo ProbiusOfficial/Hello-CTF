@@ -96,18 +96,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "idekCTF 2024",
-        "比赛时间": "2024-06-15 08:00:00 - 2024-06-17 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2304.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.idek.team/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "35.41",
-        "赛事主办": "idek (https://ctftime.org/team/157039)",
-        "比赛ID": "700",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "justCTF 2024 teaser",
         "比赛时间": "2024-06-15 16:00:00 - 2024-06-16 16:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2342.ics",
@@ -393,6 +381,18 @@
         "比赛权重": "24.23",
         "赛事主办": "n00bzUnit3d (https://ctftime.org/team/152491)",
         "比赛ID": "792",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "idekCTF 2024",
+        "比赛时间": "2024-08-17 08:00:00 - 2024-08-19 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2304.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.idek.team/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "idek (https://ctftime.org/team/157039)",
+        "比赛ID": "700",
         "比赛状态": "oncoming"
     },
     {
