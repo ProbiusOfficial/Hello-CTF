@@ -316,15 +316,6 @@ hide:
                 **其他说明** : R3CTF2024 是由 r3kapig 和 YuanHeng实验室 组织的在线解题(jeopardy)CTF。同时 YuanHeng实验室 提供所有奖品！我们欢迎来自世界各地的CTFer在这48小时内玩得开心。更多信息：https://discord.gg/zU64ekBsgA  
                 
         === "国外赛事"
-            ??? Quote "[ESAIP CTF 2024](https://ctf.esaip.org/)"  
-                [![](https://ctftime.org/media/events/Logo_discord.png){ width="200" align=left }](https://ctf.esaip.org/)  
-                **比赛名称** : [ESAIP CTF 2024](https://ctf.esaip.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-08 05:00:00 - 2024-06-08 16:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Esaip CTF (https://ctftime.org/team/190938)  
-                **添加日历** : https://ctftime.org/event/2382.ics  
-                
             ??? Quote "[R3CTF/YUANHENGCTF 2024](https://ctf2024.r3kapig.com/)"  
                 [![](https://ctftime.org/media/events/r3_logo.png){ width="200" align=left }](https://ctf2024.r3kapig.com/)  
                 **比赛名称** : [R3CTF/YUANHENGCTF 2024](https://ctf2024.r3kapig.com/)  
@@ -769,6 +760,15 @@ hide:
                 **比赛权重** : 46.33  
                 **赛事主办** : BCACTF (https://ctftime.org/team/81702)  
                 **添加日历** : https://ctftime.org/event/2274.ics  
+                
+            ??? Quote "[ESAIP CTF 2024](https://ctf.esaip.org/)"  
+                [![](https://ctftime.org/media/events/Logo_discord.png){ width="200" align=left }](https://ctf.esaip.org/)  
+                **比赛名称** : [ESAIP CTF 2024](https://ctf.esaip.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-06-08 05:00:00 - 2024-06-08 16:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Esaip CTF (https://ctftime.org/team/190938)  
+                **添加日历** : https://ctftime.org/event/2382.ics  
                 
     === "*已经结束*"
         === "国内赛事"
