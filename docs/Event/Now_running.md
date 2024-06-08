@@ -78,3 +78,12 @@ comments: true
     **赛事主办** : YCF (https://ctftime.org/team/179685)  
     **添加日历** : https://ctftime.org/event/2385.ics  
     
+??? Quote "[Crypto CTF 2024](https://cr.yp.toc.tf/)"  
+    [![](https://ctftime.org/media/events/cryptoctf.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
+    **比赛名称** : [Crypto CTF 2024](https://cr.yp.toc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-08 22:00:00 - 2024-06-09 22:00:00 UTC+8  
+    **比赛权重** : 65.62  
+    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+    **添加日历** : https://ctftime.org/event/2210.ics  
+    

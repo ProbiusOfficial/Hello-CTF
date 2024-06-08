@@ -15,15 +15,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Crypto CTF 2024](https://cr.yp.toc.tf/)"  
-    [![](https://ctftime.org/media/events/cryptoctf.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
-    **比赛名称** : [Crypto CTF 2024](https://cr.yp.toc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-08 22:00:00 - 2024-06-09 22:00:00 UTC+8  
-    **比赛权重** : 65.62  
-    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-    **添加日历** : https://ctftime.org/event/2210.ics  
-    
 ??? Quote "[BrainHack 2024](https://go.gov.sg/dsta-brainhack-signup)"  
     [![](https://ctftime.org/media/events/807b15_524e092c9d7541589d621cd0e9bf6e4bmv2.jpeg){ width="200" align=left }](https://go.gov.sg/dsta-brainhack-signup)  
     **比赛名称** : [BrainHack 2024](https://go.gov.sg/dsta-brainhack-signup)  
