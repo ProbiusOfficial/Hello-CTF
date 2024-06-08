@@ -302,15 +302,6 @@ hide:
                 **其他说明** : QQ群：566180593  
                 
         === "国外赛事"
-            ??? Quote "[DIVER OSINT CTF 2024](https://ctfd.diverctf.org/)"  
-                [![](https://ctftime.org/media/events/tQF2eZgQ_400x400.jpg){ width="200" align=left }](https://ctfd.diverctf.org/)  
-                **比赛名称** : [DIVER OSINT CTF 2024](https://ctfd.diverctf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-08 11:00:00 - 2024-06-09 11:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
-                **添加日历** : https://ctftime.org/event/2365.ics  
-                
             ??? Quote "[RVCE x IITB x YCF CTF](https://rvctf.tech/)"  
                 [![](https://ctftime.org/media/events/rv_logo.jpg){ width="200" align=left }](https://rvctf.tech/)  
                 **比赛名称** : [RVCE x IITB x YCF CTF](https://rvctf.tech/)  
@@ -761,6 +752,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
                 **添加日历** : https://ctftime.org/event/2273.ics  
+                
+            ??? Quote "[DIVER OSINT CTF 2024](https://ctfd.diverctf.org/)"  
+                [![](https://ctftime.org/media/events/tQF2eZgQ_400x400.jpg){ width="200" align=left }](https://ctfd.diverctf.org/)  
+                **比赛名称** : [DIVER OSINT CTF 2024](https://ctfd.diverctf.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-06-08 11:00:00 - 2024-06-09 11:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
+                **添加日历** : https://ctftime.org/event/2365.ics  
                 
     === "*已经结束*"
         === "国内赛事"
