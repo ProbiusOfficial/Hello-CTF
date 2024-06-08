@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "RVCE x IITB x YCF CTF",
-        "比赛时间": "2024-06-08 20:30:00 - 2024-06-09 02:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2385.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://rvctf.tech/",
-        "比赛标志": "https://ctftime.org/media/events/rv_logo.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "YCF (https://ctftime.org/team/179685)",
-        "比赛ID": "1094",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Crypto CTF 2024",
         "比赛时间": "2024-06-08 22:00:00 - 2024-06-09 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2210.ics",
@@ -585,6 +573,18 @@
         "比赛权重": "0.00",
         "赛事主办": "diver_osint (https://ctftime.org/team/299569)",
         "比赛ID": "1111",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "RVCE x IITB x YCF CTF",
+        "比赛时间": "2024-06-08 20:30:00 - 2024-06-09 02:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2385.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://rvctf.tech/",
+        "比赛标志": "https://ctftime.org/media/events/rv_logo.jpg",
+        "比赛权重": "0",
+        "赛事主办": "YCF (https://ctftime.org/team/179685)",
+        "比赛ID": "1094",
         "比赛状态": "nowrunning"
     },
     {
