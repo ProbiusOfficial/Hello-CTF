@@ -133,6 +133,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[RVCE x IITB x YCF CTF](https://rvctf.tech/)"  
+    [![](https://ctftime.org/media/events/rv_logo.jpg){ width="200" align=left }](https://rvctf.tech/)  
+    **比赛名称** : [RVCE x IITB x YCF CTF](https://rvctf.tech/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-08 20:30:00 - 2024-06-09 02:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : YCF (https://ctftime.org/team/179685)  
+    **添加日历** : https://ctftime.org/event/2385.ics  
+    
 ??? Quote "[ESAIP CTF 2024](https://ctf.esaip.org/)"  
     [![](https://ctftime.org/media/events/Logo_discord.png){ width="200" align=left }](https://ctf.esaip.org/)  
     **比赛名称** : [ESAIP CTF 2024](https://ctf.esaip.org/)  
@@ -1023,13 +1032,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : 天枢 Dubhe (https://ctftime.org/team/281183)  
     **添加日历** : https://ctftime.org/event/2279.ics  
-    
-??? Quote "[Ethernaut CTF 2024](https://ctf.openzeppelin.com/)"  
-    [![](https://ctftime.org/media/events/500x500.png){ width="200" align=left }](https://ctf.openzeppelin.com/)  
-    **比赛名称** : [Ethernaut CTF 2024](https://ctf.openzeppelin.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-16 08:00:01 - 2024-03-18 08:00:01 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : OpenZeppelin (https://ctftime.org/team/285917)  
-    **添加日历** : https://ctftime.org/event/2314.ics  
     
