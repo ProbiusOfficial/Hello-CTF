@@ -142,6 +142,15 @@ comments: true
     **赛事主办** : YCF (https://ctftime.org/team/179685)  
     **添加日历** : https://ctftime.org/event/2385.ics  
     
+??? Quote "[DIVER OSINT CTF 2024](https://ctfd.diverctf.org/)"  
+    [![](https://ctftime.org/media/events/tQF2eZgQ_400x400.jpg){ width="200" align=left }](https://ctfd.diverctf.org/)  
+    **比赛名称** : [DIVER OSINT CTF 2024](https://ctfd.diverctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-08 11:00:00 - 2024-06-09 11:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
+    **添加日历** : https://ctftime.org/event/2365.ics  
+    
 ??? Quote "[ESAIP CTF 2024](https://ctf.esaip.org/)"  
     [![](https://ctftime.org/media/events/Logo_discord.png){ width="200" align=left }](https://ctf.esaip.org/)  
     **比赛名称** : [ESAIP CTF 2024](https://ctf.esaip.org/)  
@@ -1023,13 +1032,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : TuxPwners (https://ctftime.org/team/274660)  
     **添加日历** : https://ctftime.org/event/2329.ics  
-    
-??? Quote "[XCTF-DubheCTF 2024](https://dubhectf2024.xctf.org.cn/)"  
-    [![](https://ctftime.org/media/events/41eff818a403035f165633e8e89b6111.png){ width="200" align=left }](https://dubhectf2024.xctf.org.cn/)  
-    **比赛名称** : [XCTF-DubheCTF 2024](https://dubhectf2024.xctf.org.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-16 09:00:00 - 2024-03-18 09:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : 天枢 Dubhe (https://ctftime.org/team/281183)  
-    **添加日历** : https://ctftime.org/event/2279.ics  
     
