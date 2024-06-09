@@ -606,7 +606,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://buuoj.cn/match/matches/204",
         "比赛标志": "https://ctftime.org/media/events/7cb37da3aed536041d1754ecb2083099.jpg",
-        "比赛权重": "0",
+        "比赛权重": "1.00",
         "赛事主办": "DASCTF (https://ctftime.org/team/303691)",
         "比赛ID": "1133",
         "比赛状态": "past"
@@ -738,7 +738,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.l3ak.team/",
         "比赛标志": "https://ctftime.org/media/events/ctf_final.png",
-        "比赛权重": "24.56",
+        "比赛权重": "24.38",
         "赛事主办": "L3ak (https://ctftime.org/team/220336)",
         "比赛ID": "1077",
         "比赛状态": "past"
