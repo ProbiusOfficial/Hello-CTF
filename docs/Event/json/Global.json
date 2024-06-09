@@ -516,18 +516,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Akasec CTF 2024",
-        "比赛时间": "2024-06-07 21:37:00 - 2024-06-09 21:37:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2222.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.akasec.club/",
-        "比赛标志": "https://ctftime.org/media/events/akasec-ctf-logo_3.jpeg",
-        "比赛权重": "0",
-        "赛事主办": "Akasec (https://ctftime.org/team/107202)",
-        "比赛ID": "1047",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "BCACTF 5.0",
         "比赛时间": "2024-06-08 04:00:00 - 2024-06-11 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2274.ics",
@@ -561,7 +549,7 @@
         "比赛权重": "65.62",
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "317",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "RVCE x IITB x YCF CTF",
@@ -597,6 +585,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Esaip CTF (https://ctftime.org/team/190938)",
         "比赛ID": "805",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Akasec CTF 2024",
+        "比赛时间": "2024-06-07 21:37:00 - 2024-06-09 21:37:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2222.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.akasec.club/",
+        "比赛标志": "https://ctftime.org/media/events/akasec-ctf-logo_3.jpeg",
+        "比赛权重": "0",
+        "赛事主办": "Akasec (https://ctftime.org/team/107202)",
+        "比赛ID": "1047",
         "比赛状态": "past"
     },
     {
@@ -1737,30 +1737,6 @@
         "比赛权重": "0",
         "赛事主办": "ECSC2024 (https://ctftime.org/team/283828)",
         "比赛ID": "1084",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Snowfort 2024",
-        "比赛时间": "2024-03-16 23:00:00 - 2024-03-17 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2260.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://snowfort2024.cyberscoring.ca/",
-        "比赛标志": "https://ctftime.org/media/events/logo_2024.png",
-        "比赛权重": "21.25",
-        "赛事主办": "Shell We Hack? (https://ctftime.org/team/220236)",
-        "比赛ID": "1057",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "TuxCTF 2024",
-        "比赛时间": "2024-03-16 17:00:00 - 2024-03-16 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2329.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.instagram.com/tuxpwners/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "TuxPwners (https://ctftime.org/team/274660)",
-        "比赛ID": "1092",
         "比赛状态": "past"
     }
 ]

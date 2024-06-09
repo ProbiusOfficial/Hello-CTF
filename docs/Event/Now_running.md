@@ -33,15 +33,6 @@ comments: true
     **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
     **添加日历** : https://ctftime.org/event/2350.ics  
     
-??? Quote "[Akasec CTF 2024](https://ctf.akasec.club/)"  
-    [![](https://ctftime.org/media/events/akasec-ctf-logo_3.jpeg){ width="200" align=left }](https://ctf.akasec.club/)  
-    **比赛名称** : [Akasec CTF 2024](https://ctf.akasec.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-07 21:37:00 - 2024-06-09 21:37:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Akasec (https://ctftime.org/team/107202)  
-    **添加日历** : https://ctftime.org/event/2222.ics  
-    
 ??? Quote "[BCACTF 5.0](https://www.bcactf.com/)"  
     [![](https://ctftime.org/media/events/bcactflogoocean.png){ width="200" align=left }](https://www.bcactf.com/)  
     **比赛名称** : [BCACTF 5.0](https://www.bcactf.com/)  
@@ -59,13 +50,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
     **添加日历** : https://ctftime.org/event/2273.ics  
-    
-??? Quote "[Crypto CTF 2024](https://cr.yp.toc.tf/)"  
-    [![](https://ctftime.org/media/events/cryptoctf.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
-    **比赛名称** : [Crypto CTF 2024](https://cr.yp.toc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-08 22:00:00 - 2024-06-09 22:00:00 UTC+8  
-    **比赛权重** : 65.62  
-    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-    **添加日历** : https://ctftime.org/event/2210.ics  
     

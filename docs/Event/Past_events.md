@@ -133,6 +133,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Crypto CTF 2024](https://cr.yp.toc.tf/)"  
+    [![](https://ctftime.org/media/events/cryptoctf.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
+    **比赛名称** : [Crypto CTF 2024](https://cr.yp.toc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-08 22:00:00 - 2024-06-09 22:00:00 UTC+8  
+    **比赛权重** : 65.62  
+    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+    **添加日历** : https://ctftime.org/event/2210.ics  
+    
 ??? Quote "[RVCE x IITB x YCF CTF](https://rvctf.tech/)"  
     [![](https://ctftime.org/media/events/rv_logo.jpg){ width="200" align=left }](https://rvctf.tech/)  
     **比赛名称** : [RVCE x IITB x YCF CTF](https://rvctf.tech/)  
@@ -159,6 +168,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Esaip CTF (https://ctftime.org/team/190938)  
     **添加日历** : https://ctftime.org/event/2382.ics  
+    
+??? Quote "[Akasec CTF 2024](https://ctf.akasec.club/)"  
+    [![](https://ctftime.org/media/events/akasec-ctf-logo_3.jpeg){ width="200" align=left }](https://ctf.akasec.club/)  
+    **比赛名称** : [Akasec CTF 2024](https://ctf.akasec.club/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-07 21:37:00 - 2024-06-09 21:37:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Akasec (https://ctftime.org/team/107202)  
+    **添加日历** : https://ctftime.org/event/2222.ics  
     
 ??? Quote "[DASCTF X HDCTF 2024 Open Competition](https://buuoj.cn/match/matches/204)"  
     [![](https://ctftime.org/media/events/7cb37da3aed536041d1754ecb2083099.jpg){ width="200" align=left }](https://buuoj.cn/match/matches/204)  
@@ -1014,22 +1032,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
     **添加日历** : https://ctftime.org/event/2305.ics  
-    
-??? Quote "[Snowfort 2024](https://snowfort2024.cyberscoring.ca/)"  
-    [![](https://ctftime.org/media/events/logo_2024.png){ width="200" align=left }](https://snowfort2024.cyberscoring.ca/)  
-    **比赛名称** : [Snowfort 2024](https://snowfort2024.cyberscoring.ca/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2024-03-16 23:00:00 - 2024-03-17 07:00:00 UTC+8  
-    **比赛权重** : 21.25  
-    **赛事主办** : Shell We Hack? (https://ctftime.org/team/220236)  
-    **添加日历** : https://ctftime.org/event/2260.ics  
-    
-??? Quote "[TuxCTF 2024](https://www.instagram.com/tuxpwners/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://www.instagram.com/tuxpwners/)  
-    **比赛名称** : [TuxCTF 2024](https://www.instagram.com/tuxpwners/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-16 17:00:00 - 2024-03-16 22:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : TuxPwners (https://ctftime.org/team/274660)  
-    **添加日历** : https://ctftime.org/event/2329.ics  
     
