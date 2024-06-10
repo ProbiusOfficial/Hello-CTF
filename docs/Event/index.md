@@ -896,7 +896,7 @@ hide:
                 **比赛名称** : [N0PSctf](https://ctf.nops.re/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-06-01 16:00:00 - 2024-06-03 04:00:00 UTC+8  
-                **比赛权重** : 24.41  
+                **比赛权重** : 24.18  
                 **赛事主办** : NOPS (https://ctftime.org/team/4056)  
                 **添加日历** : https://ctftime.org/event/2358.ics  
                 
