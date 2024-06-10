@@ -673,13 +673,7 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-            ??? Quote "[R3CTF/YUANHENGCTF 2024](https://ctf2024.r3kapig.com/)"  
-                **比赛名称** : [R3CTF/YUANHENGCTF 2024](https://ctf2024.r3kapig.com/)  
-                **比赛类型** : 团队赛  
-                **报名时间** : 2024年05月15日 08:00 - 2024年06月08日 09:00  
-                **比赛时间** : 2024年06月08日 10:00 - 2024年06月10日 18:00  
-                **其他说明** : R3CTF2024 是由 r3kapig 和 YuanHeng实验室 组织的在线解题(jeopardy)CTF。同时 YuanHeng实验室 提供所有奖品！我们欢迎来自世界各地的CTFer在这48小时内玩得开心。更多信息：https://discord.gg/zU64ekBsgA  
-                
+    
         === "国外赛事"
             ??? Quote "[Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)  
@@ -701,6 +695,13 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[R3CTF/YUANHENGCTF 2024](https://ctf2024.r3kapig.com/)"  
+                **比赛名称** : [R3CTF/YUANHENGCTF 2024](https://ctf2024.r3kapig.com/)  
+                **比赛类型** : 团队赛  
+                **报名时间** : 2024年05月15日 08:00 - 2024年06月08日 09:00  
+                **比赛时间** : 2024年06月08日 10:00 - 2024年06月10日 18:00  
+                **其他说明** : R3CTF2024 是由 r3kapig 和 YuanHeng实验室 组织的在线解题(jeopardy)CTF。同时 YuanHeng实验室 提供所有奖品！我们欢迎来自世界各地的CTFer在这48小时内玩得开心。更多信息：https://discord.gg/zU64ekBsgA  
+                
             ??? Quote "[墨者杯](https://www.c.mozhe.cn/#/)"  
                 **比赛名称** : [墨者杯](https://www.c.mozhe.cn/#/)  
                 **比赛类型** : 个人赛  
