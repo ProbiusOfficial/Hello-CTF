@@ -214,6 +214,15 @@ comments: true
     **赛事主办** : Hardware CTF by Quarkslab (https://ctftime.org/team/274600)  
     **添加日历** : https://ctftime.org/event/2400.ics  
     
+??? Quote "[Season IV, US Cyber Open](https://www.uscybergames.com/apply-to-play-season-4?hsCtaTracking=b8a9eb7a-183c-4113-a5d4-a4ac7b486e4f%7Cb5c8f25c-5752-4e8f-815b-82cb4d186af1)"  
+    [![](https://ctftime.org/media/events/2022-10-USCG_S3_logos_cybergames_1.png){ width="200" align=left }](https://www.uscybergames.com/apply-to-play-season-4?hsCtaTracking=b8a9eb7a-183c-4113-a5d4-a4ac7b486e4f%7Cb5c8f25c-5752-4e8f-815b-82cb4d186af1)  
+    **比赛名称** : [Season IV, US Cyber Open](https://www.uscybergames.com/apply-to-play-season-4?hsCtaTracking=b8a9eb7a-183c-4113-a5d4-a4ac7b486e4f%7Cb5c8f25c-5752-4e8f-815b-82cb4d186af1)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-31 19:59:00 - 2024-06-10 07:59:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
+    **添加日历** : https://ctftime.org/event/2350.ics  
+    
 ??? Quote "[GPN CTF 2024](https://ctf.kitctf.de/)"  
     [![](https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d.png){ width="200" align=left }](https://ctf.kitctf.de/)  
     **比赛名称** : [GPN CTF 2024](https://ctf.kitctf.de/)  
@@ -1023,13 +1032,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : r3d_kn1ght5 (https://ctftime.org/team/212248)  
     **添加日历** : https://ctftime.org/event/2312.ics  
-    
-??? Quote "[openECSC 2024 - Round 1](https://open.ecsc2024.it/)"  
-    [![](https://ctftime.org/media/events/openECSC.png){ width="200" align=left }](https://open.ecsc2024.it/)  
-    **比赛名称** : [openECSC 2024 - Round 1](https://open.ecsc2024.it/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-18 18:00:00 - 2024-03-25 06:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
-    **添加日历** : https://ctftime.org/event/2305.ics  
     
