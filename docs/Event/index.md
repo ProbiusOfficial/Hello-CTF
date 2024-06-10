@@ -1157,7 +1157,7 @@ hide:
                 **比赛名称** : [squ1rrel CTF 2024](https://ctf.squ1rrel.dev/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-05-04 23:00:00 - 2024-05-06 11:00:00 UTC+8  
-                **比赛权重** : 24.38  
+                **比赛权重** : 24.14  
                 **赛事主办** : squ1rrel (https://ctftime.org/team/201730)  
                 **添加日历** : https://ctftime.org/event/2370.ics  
                 
@@ -1544,7 +1544,7 @@ hide:
                 **比赛名称** : [SwampCTF 2024](https://swampctf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8  
-                **比赛权重** : 41.41  
+                **比赛权重** : 41.00  
                 **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
                 **添加日历** : https://ctftime.org/event/2138.ics  
                 
