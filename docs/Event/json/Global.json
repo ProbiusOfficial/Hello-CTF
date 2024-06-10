@@ -504,18 +504,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "BCACTF 5.0",
-        "比赛时间": "2024-06-08 04:00:00 - 2024-06-11 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2274.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.bcactf.com/",
-        "比赛标志": "https://ctftime.org/media/events/bcactflogoocean.png",
-        "比赛权重": "46.33",
-        "赛事主办": "BCACTF (https://ctftime.org/team/81702)",
-        "比赛ID": "325",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Crypto CTF 2024",
         "比赛时间": "2024-06-08 22:00:00 - 2024-06-09 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2210.ics",
@@ -573,6 +561,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Esaip CTF (https://ctftime.org/team/190938)",
         "比赛ID": "805",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "BCACTF 5.0",
+        "比赛时间": "2024-06-08 04:00:00 - 2024-06-11 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2274.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.bcactf.com/",
+        "比赛标志": "https://ctftime.org/media/events/bcactflogoocean.png",
+        "比赛权重": "46.33",
+        "赛事主办": "BCACTF (https://ctftime.org/team/81702)",
+        "比赛ID": "325",
         "比赛状态": "past"
     },
     {
@@ -1701,18 +1701,6 @@
         "比赛权重": "0.00",
         "赛事主办": "HackerSpace_JUST (https://ctftime.org/team/144626)",
         "比赛ID": "595",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "UNbreakable International 2024 - Individual Phase",
-        "比赛时间": "2024-03-22 18:00:00 - 2024-03-24 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2298.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://unr24i-international.cyber-edu.co/",
-        "比赛标志": "https://ctftime.org/media/events/g5hqjcGuxmbcMSZ9_1.png",
-        "比赛权重": "25.00",
-        "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
-        "比赛ID": "1064",
         "比赛状态": "past"
     }
 ]

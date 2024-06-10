@@ -185,6 +185,15 @@ comments: true
     **赛事主办** : Esaip CTF (https://ctftime.org/team/190938)  
     **添加日历** : https://ctftime.org/event/2382.ics  
     
+??? Quote "[BCACTF 5.0](https://www.bcactf.com/)"  
+    [![](https://ctftime.org/media/events/bcactflogoocean.png){ width="200" align=left }](https://www.bcactf.com/)  
+    **比赛名称** : [BCACTF 5.0](https://www.bcactf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-08 04:00:00 - 2024-06-11 04:00:00 UTC+8  
+    **比赛权重** : 46.33  
+    **赛事主办** : BCACTF (https://ctftime.org/team/81702)  
+    **添加日历** : https://ctftime.org/event/2274.ics  
+    
 ??? Quote "[Akasec CTF 2024](https://ctf.akasec.club/)"  
     [![](https://ctftime.org/media/events/akasec-ctf-logo_3.jpeg){ width="200" align=left }](https://ctf.akasec.club/)  
     **比赛名称** : [Akasec CTF 2024](https://ctf.akasec.club/)  
@@ -1030,13 +1039,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : HackerSpace_JUST (https://ctftime.org/team/144626)  
     **添加日历** : https://ctftime.org/event/2307.ics  
-    
-??? Quote "[UNbreakable International 2024 - Individual Phase](https://unr24i-international.cyber-edu.co/)"  
-    [![](https://ctftime.org/media/events/g5hqjcGuxmbcMSZ9_1.png){ width="200" align=left }](https://unr24i-international.cyber-edu.co/)  
-    **比赛名称** : [UNbreakable International 2024 - Individual Phase](https://unr24i-international.cyber-edu.co/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-22 18:00:00 - 2024-03-24 18:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : bitsentinel (https://ctftime.org/team/280005)  
-    **添加日历** : https://ctftime.org/event/2298.ics  
     
