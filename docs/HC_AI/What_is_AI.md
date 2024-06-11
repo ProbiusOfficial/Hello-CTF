@@ -105,7 +105,7 @@
 
 #### **TensorFlow**
 
-![TensorFlow logo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/TensorFlow_logo.svg/390px-TensorFlow_logo.svg.png)
+![TensorFlow logo](assets/tensorflow_logo.svg)
 
   - **主要维护方：** Google
 
