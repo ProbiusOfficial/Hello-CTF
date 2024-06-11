@@ -36,6 +36,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Midnight Sun CTF 2024 Finals",
+        "比赛时间": "2024-06-15 18:00:00 - 2024-06-16 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2409.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://play.midnightsunctf.com/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "100.00",
+        "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
+        "比赛ID": "246",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Kryptokaffe CTF 2024",
         "比赛时间": "2024-06-17 16:00:00 - 2024-07-21 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2399.ics",
