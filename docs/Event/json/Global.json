@@ -513,7 +513,7 @@
         "比赛权重": "0.00",
         "赛事主办": "BrainHack_Organiser (https://ctftime.org/team/287673)",
         "比赛ID": "1100",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Crypto CTF 2024",
@@ -1701,18 +1701,6 @@
         "比赛权重": "49.10",
         "赛事主办": "LINE CTF (https://ctftime.org/team/144094)",
         "比赛ID": "590",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "JUST CTF 2024 Quals",
-        "比赛时间": "2024-03-23 02:00:00 - 2024-03-23 10:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2307.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.facebook.com/HackerSpace.JUST/",
-        "比赛标志": "https://ctftime.org/media/events/logo_12.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "HackerSpace_JUST (https://ctftime.org/team/144626)",
-        "比赛ID": "595",
         "比赛状态": "past"
     }
 ]
