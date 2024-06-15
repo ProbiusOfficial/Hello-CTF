@@ -871,7 +871,7 @@ hide:
                 **比赛名称** : [RVCE x IITB x YCF CTF](https://rvctf.tech/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-06-08 20:30:00 - 2024-06-09 02:30:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 0.00  
                 **赛事主办** : YCF (https://ctftime.org/team/179685)  
                 **添加日历** : https://ctftime.org/event/2385.ics  
                 
