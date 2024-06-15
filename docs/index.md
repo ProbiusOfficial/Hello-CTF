@@ -54,6 +54,13 @@ hide:
     ---
     <!-- 主页赛事展示_开始 -->
     === "国内比赛"
+        ??? Quote "[Emoji CTF网络安全三校联赛](https://mp.weixin.qq.com/s/U9JYF4AAEDEz65ijafSbKQ)"  
+            **比赛名称** : [Emoji CTF网络安全三校联赛](https://mp.weixin.qq.com/s/U9JYF4AAEDEz65ijafSbKQ)  
+            **比赛类型** : 个人赛 | 新生赛  
+            **报名时间** : 2024年05月30日 00:00 - 2024年06月16日 18:00  
+            **比赛时间** : 2024年06月14日 09:00 - 2024年06月16日 18:00  
+            **其他说明** : QQ群：871983989  
+            
         ??? Quote "[第五届“闽盾杯”网络空间安全大赛（黑盾全国大学生赛道）](http://heidunbei.si.net.cn/hdc/cover)"  
             **比赛名称** : [第五届“闽盾杯”网络空间安全大赛（黑盾全国大学生赛道）](http://heidunbei.si.net.cn/hdc/cover)  
             **比赛类型** : 团队赛|1-3人  
