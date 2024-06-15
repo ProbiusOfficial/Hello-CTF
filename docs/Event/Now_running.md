@@ -27,3 +27,12 @@ comments: true
     **赛事主办** : View Source (https://ctftime.org/team/175828)  
     **添加日历** : https://ctftime.org/event/2248.ics  
     
+??? Quote "[justCTF 2024 teaser](http://2024.justctf.team/)"  
+    [![](https://ctftime.org/media/events/logo-ctf_3.png){ width="200" align=left }](http://2024.justctf.team/)  
+    **比赛名称** : [justCTF 2024 teaser](http://2024.justctf.team/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-15 16:00:00 - 2024-06-16 16:00:00 UTC+8  
+    **比赛权重** : 77.17  
+    **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
+    **添加日历** : https://ctftime.org/event/2342.ics  
+    
