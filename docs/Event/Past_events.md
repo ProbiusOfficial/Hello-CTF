@@ -140,6 +140,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[vsCTF 2024](https://ctf.viewsource.me/)"  
+    [![](https://ctftime.org/media/events/vsctf_2024_2x.png){ width="200" align=left }](https://ctf.viewsource.me/)  
+    **比赛名称** : [vsCTF 2024](https://ctf.viewsource.me/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-15 00:00:00 - 2024-06-16 00:00:00 UTC+8  
+    **比赛权重** : 34.00  
+    **赛事主办** : View Source (https://ctftime.org/team/175828)  
+    **添加日历** : https://ctftime.org/event/2248.ics  
+    
 ??? Quote "[BrainHack 2024](https://go.gov.sg/dsta-brainhack-signup)"  
     [![](https://ctftime.org/media/events/807b15_524e092c9d7541589d621cd0e9bf6e4bmv2.jpeg){ width="200" align=left }](https://go.gov.sg/dsta-brainhack-signup)  
     **比赛名称** : [BrainHack 2024](https://go.gov.sg/dsta-brainhack-signup)  
@@ -1030,13 +1039,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
     **添加日历** : https://ctftime.org/event/2196.ics  
-    
-??? Quote "[LINE CTF 2024](https://linectf.me/)"  
-    [![](https://ctftime.org/media/events/Image_1.jpeg){ width="200" align=left }](https://linectf.me/)  
-    **比赛名称** : [LINE CTF 2024](https://linectf.me/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-23 08:00:00 - 2024-03-24 08:00:00 UTC+8  
-    **比赛权重** : 49.10  
-    **赛事主办** : LINE CTF (https://ctftime.org/team/144094)  
-    **添加日历** : https://ctftime.org/event/2119.ics  
     

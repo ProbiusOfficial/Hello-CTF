@@ -468,18 +468,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "vsCTF 2024",
-        "比赛时间": "2024-06-15 00:00:00 - 2024-06-16 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2248.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.viewsource.me/",
-        "比赛标志": "https://ctftime.org/media/events/vsctf_2024_2x.png",
-        "比赛权重": "34.00",
-        "赛事主办": "View Source (https://ctftime.org/team/175828)",
-        "比赛ID": "785",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "justCTF 2024 teaser",
         "比赛时间": "2024-06-15 16:00:00 - 2024-06-16 16:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2342.ics",
@@ -502,6 +490,18 @@
         "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
         "比赛ID": "246",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "vsCTF 2024",
+        "比赛时间": "2024-06-15 00:00:00 - 2024-06-16 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2248.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.viewsource.me/",
+        "比赛标志": "https://ctftime.org/media/events/vsctf_2024_2x.png",
+        "比赛权重": "34.00",
+        "赛事主办": "View Source (https://ctftime.org/team/175828)",
+        "比赛ID": "785",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "BrainHack 2024",
@@ -1689,18 +1689,6 @@
         "比赛权重": "25.00",
         "赛事主办": "Ireland without the RE (https://ctftime.org/team/179144)",
         "比赛ID": "1030",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "LINE CTF 2024",
-        "比赛时间": "2024-03-23 08:00:00 - 2024-03-24 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2119.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://linectf.me/",
-        "比赛标志": "https://ctftime.org/media/events/Image_1.jpeg",
-        "比赛权重": "49.10",
-        "赛事主办": "LINE CTF (https://ctftime.org/team/144094)",
-        "比赛ID": "590",
         "比赛状态": "past"
     }
 ]
