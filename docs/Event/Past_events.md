@@ -242,7 +242,7 @@ comments: true
     **比赛名称** : [Akasec CTF 2024](https://ctf.akasec.club/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-06-07 21:37:00 - 2024-06-09 21:37:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 22.73  
     **赛事主办** : Akasec (https://ctftime.org/team/107202)  
     **添加日历** : https://ctftime.org/event/2222.ics  
     
