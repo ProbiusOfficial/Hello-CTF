@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Quote "Emoji CTF网络安全三校联赛"  
+    **比赛名称** : [Emoji CTF网络安全三校联赛](https://mp.weixin.qq.com/s/U9JYF4AAEDEz65ijafSbKQ)  
+    **比赛类型** : 个人赛 | 新生赛  
+    **报名时间** : 2024年05月30日 00:00 - 2024年06月16日 18:00  
+    **比赛时间** : 2024年06月14日 09:00 - 2024年06月16日 18:00  
+    **其他说明** : QQ群：871983989  
+    
 ??? Quote "R3CTF/YUANHENGCTF 2024"  
     **比赛名称** : [R3CTF/YUANHENGCTF 2024](https://ctf2024.r3kapig.com/)  
     **比赛类型** : 团队赛  
@@ -140,6 +147,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Midnight Sun CTF 2024 Finals](https://play.midnightsunctf.com/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://play.midnightsunctf.com/)  
+    **比赛名称** : [Midnight Sun CTF 2024 Finals](https://play.midnightsunctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-15 18:00:00 - 2024-06-16 18:00:00 UTC+8  
+    **比赛权重** : 100.00  
+    **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
+    **添加日历** : https://ctftime.org/event/2409.ics  
+    
 ??? Quote "[justCTF 2024 teaser](http://2024.justctf.team/)"  
     [![](https://ctftime.org/media/events/logo-ctf_3.png){ width="200" align=left }](http://2024.justctf.team/)  
     **比赛名称** : [justCTF 2024 teaser](http://2024.justctf.team/)  
@@ -1030,13 +1046,4 @@ comments: true
     **比赛权重** : 23.89  
     **赛事主办** : UTD TexSAW (https://ctftime.org/team/220408)  
     **添加日历** : https://ctftime.org/event/2281.ics  
-    
-??? Quote "[Undutmaning 2024](https://undutmaning.se/)"  
-    [![](https://ctftime.org/media/events/LOGO_DISCORD.png){ width="200" align=left }](https://undutmaning.se/)  
-    **比赛名称** : [Undutmaning 2024](https://undutmaning.se/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-23 20:00:00 - 2024-03-24 04:00:00 UTC+8  
-    **比赛权重** : 24.50  
-    **赛事主办** : Undutmaning (https://ctftime.org/team/212504)  
-    **添加日历** : https://ctftime.org/event/2283.ics  
     
