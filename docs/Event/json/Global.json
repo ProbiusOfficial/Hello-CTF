@@ -468,18 +468,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "justCTF 2024 teaser",
-        "比赛时间": "2024-06-15 16:00:00 - 2024-06-16 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2342.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://2024.justctf.team/",
-        "比赛标志": "https://ctftime.org/media/events/logo-ctf_3.png",
-        "比赛权重": "77.17",
-        "赛事主办": "justCatTheFish (https://ctftime.org/team/33893)",
-        "比赛ID": "399",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Midnight Sun CTF 2024 Finals",
         "比赛时间": "2024-06-15 18:00:00 - 2024-06-16 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2409.ics",
@@ -490,6 +478,18 @@
         "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
         "比赛ID": "246",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "justCTF 2024 teaser",
+        "比赛时间": "2024-06-15 16:00:00 - 2024-06-16 16:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2342.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://2024.justctf.team/",
+        "比赛标志": "https://ctftime.org/media/events/logo-ctf_3.png",
+        "比赛权重": "77.17",
+        "赛事主办": "justCatTheFish (https://ctftime.org/team/33893)",
+        "比赛ID": "399",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "vsCTF 2024",
@@ -1677,18 +1677,6 @@
         "比赛权重": "24.50",
         "赛事主办": "Undutmaning (https://ctftime.org/team/212504)",
         "比赛ID": "885",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "ZeroDays CTF",
-        "比赛时间": "2024-03-23 18:00:00 - 2024-03-24 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2196.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://zerodays.ie/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "25.00",
-        "赛事主办": "Ireland without the RE (https://ctftime.org/team/179144)",
-        "比赛ID": "1030",
         "比赛状态": "past"
     }
 ]

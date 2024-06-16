@@ -18,15 +18,6 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Quote "[justCTF 2024 teaser](http://2024.justctf.team/)"  
-    [![](https://ctftime.org/media/events/logo-ctf_3.png){ width="200" align=left }](http://2024.justctf.team/)  
-    **比赛名称** : [justCTF 2024 teaser](http://2024.justctf.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-15 16:00:00 - 2024-06-16 16:00:00 UTC+8  
-    **比赛权重** : 77.17  
-    **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
-    **添加日历** : https://ctftime.org/event/2342.ics  
-    
 ??? Quote "[Midnight Sun CTF 2024 Finals](https://play.midnightsunctf.com/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://play.midnightsunctf.com/)  
     **比赛名称** : [Midnight Sun CTF 2024 Finals](https://play.midnightsunctf.com/)  
