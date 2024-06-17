@@ -882,7 +882,7 @@ hide:
                 **比赛名称** : [R3CTF/YUANHENGCTF 2024](https://ctf2024.r3kapig.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-06-08 10:00:00 - 2024-06-10 10:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 24.50  
                 **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
                 **添加日历** : https://ctftime.org/event/2273.ics  
                 

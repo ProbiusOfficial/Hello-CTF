@@ -117,6 +117,10 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-03-27
 
     4051ee28ede465c82f8d9e9a0fa8eab16e3556aa3b07573ca2be1e94b32943219c592cfd0f6b9b8ba9dffa7847e659f691f9c36226794e2e1f461094fd3ba8b45787938c16f361e050587e1b9e88af1e074905380ca645979003bc652f767290e7fd68...
+    ### [52PoJie论坛2024春节红包-Web解题思路](https://blog.zgsec.cn/archives/577.html)  
+    >by [曾哥](https://blog.zgsec.cn/), 2024-02-19
+
+    0# 概述注：本文原创首发自T00ls论坛，文章链接：https://www.t00ls.com/thread-71282-1-1.html最近刷了刷公众号，偶然看到吾爱破解论坛官方公众号发布了这么一篇文章咦，有春节红包领耶，就点进去看了看，原来是52pojie论坛举办的解题领红包活动官方论坛帖子链接：https://www.52pojie.cn/thread-1889163-1-1.html 总...
     ### [浅析Jenkis任意文件读取(CVE-2024-23897)](https://y4tacker.github.io/2024/01/27/year/2024/1/%E6%B5%85%E6%9E%90Jenkis%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96-CVE-2024-23897/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-01-27
 
@@ -129,6 +133,10 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-01-04
 
     如何判断在IDEA中程序正在运行或正在Debug给大家分享一个有趣又无用的东西，如何判断在IDEA中程序正在运行或正在Debug在这个之前我们首先需要了解一个类ManagementFactory ，它是 Java 标准库中的一个类，它提供了访问运行时系统管理接口的工厂方法。通过 ManagementFactory 类，可以获取包括操作系统、内存、线程、类加载器等在内的多种系统管理信息。一些常用的用...
+    ### [感谢，渊龙三周年与龙年展望](https://blog.zgsec.cn/archives/573.html)  
+    >by [曾哥](https://blog.zgsec.cn/), 2024-01-01
+
+    1# 概述今天是2024年的第一天，很高兴能再次和大家见面，我是渊龙Sec安全团队的创始人——曾哥 @AabyssZG。首先，在这个日子里面祝各位师傅元旦快乐，在新的一年里面：事业如虎添翼，财运如虹贯日，家庭和谐美满，幸福安康常伴！也很感谢各位师傅，平时给予团队和我的关注和支持~同时，也非常感谢各位团队成员的共同建设和鼎力相助，团队正因为有了你们，才能走到今天！2# 关于渊龙三周年今年是渊龙Sec...
     ### [又又又是一个属性覆盖带来的漏洞](https://y4tacker.github.io/2023/12/28/year/2023/12/%E5%8F%88%E5%8F%88%E5%8F%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%B1%9E%E6%80%A7%E8%A6%86%E7%9B%96%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%BC%8F%E6%B4%9E/)  
     >by [Y4tacker](https://y4tacker.github.io), 2023-12-28
 
@@ -145,13 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2023-12-22
 
     Hacking FernFlower前言​    今天很开心，第一次作为speaker参与了议题的分享，也很感谢补天白帽大会给了我这样的一次机会​    其实本该在去年来讲Java混淆的议题，不过当时赶上疫情爆发，学校出于安全的考虑没让出省。在当时我更想分享的是对抗所有反混淆的工具cfr、procyon，但今年在准备过程中发现主题太大了其实不太好讲，再考虑到受众都是做web安全的，因此我最终还是将...
-    ### [亿赛通电子文档安全管理系统远程代码执行漏洞浅析](https://y4tacker.github.io/2023/12/13/year/2023/12/%E4%BA%BF%E8%B5%9B%E9%80%9A%E7%94%B5%E5%AD%90%E6%96%87%E6%A1%A3%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%E6%B5%85%E6%9E%90/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-12-13
-
-    亿赛通电子文档安全管理系统远程代码执行漏洞浅析漏洞分析最近天天曝亿赛通的漏洞，又是这个新手向的项目，有点烦其实不是很想写的，本次原理也很简单熟悉的人可能知道这个系统在windows与linux下有点区别，在linux系统下多了一个8021端口相较于CDGServer3服务下又臭又长的代码，这个fileserver下的代码还是很短小的任意文件读取在com.esafenet.fileserver.co...
-    ### [CrushFTP Unauthenticated Remote Code Execution(CVE-2023-43177)](https://y4tacker.github.io/2023/12/10/year/2023/12/CrushFTP-Unauthenticated-Remote-Code-Execution-CVE-2023-43177/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-12-10
-
-    CrushFTP  Unauthenticated Remote Code Execution路由分析不像传统套件，这里自己实现了协议的解析并做调用，写法比较死板，不够灵活，在crushftp.server.ServerSessionHTTP可以看到具体的处理过程，代码”依托答辩”，不过漏洞思路值得学习前台权限绕过简单来说，原理是因为程序实现存在匿名访问机制，并且可以通过header污染当前会话的...
 
 </div>
