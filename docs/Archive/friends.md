@@ -93,6 +93,14 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-05-07
 
     浅析瑞友天翼应用虚拟化系统前台反序列化(V<=7.0.5.1)看到应急公告简单分析学习一波，漏洞不算难，代码也比较简单，有些细节还是蛮有意思，算是温故而知新，顺便也捡起一些很久没碰的PHP知识鉴权这个系统文件不多，功能点大多是需要登录，我们可以重点关注一下鉴权部分，在为数不多的控制器当中可以看到，在admin/index两个控制器中部分功能点都存在对于登录用户的判断，分别对应函数checklogi...
+    ### [可能是全网第一个粤语Qwen/从零开始的LLM微调教程](https://blog.stv.lol/archives/88/)  
+    >by [Steven Lynn's Blog](https://blog.stv.lol), 2024-05-05
+
+    这几天趁着五一假期在家里，做了一下LLM微调大概是全网第一个做粤语微调的Qwen-7B，还请到huggingface和魔搭社区点心支持一下repo:https://huggingface.co/stvlynn/Qwen-7B-Chat-Cantonesehttps://www.modelscope.cn/models/stvlynn/Qwen-7B-Chat-Cantonese今天就整理一下微调的...
+    ### [在闲置手机上部署大模型并开启公网访问](https://blog.stv.lol/archives/87/)  
+    >by [Steven Lynn's Blog](https://blog.stv.lol), 2024-05-01
+
+    前言前两天微软发布了phi3大模型，是目前少数可以在移动设备上运行的本地语言模型，号称可以和ChatGPT-3.5相当，仅3.8亿参数本文将教你如何在本地部署这个大模型，利用闲置的手机，并且让公网的设备也能远程访问Step 0: Termux下载安装需要注意的是不要从play上下载termux，否则会出现报错，应该从F-droid上下载安装换源：因为你懂的原因，需要把软件源换成国内源清华源的文档里...
     ### [CrushFTP后利用提权分析(CVE-2024-4040)](https://y4tacker.github.io/2024/04/25/year/2024/4/CrushFTP%E5%90%8E%E5%88%A9%E7%94%A8%E6%8F%90%E6%9D%83%E5%88%86%E6%9E%90-CVE-2024-4040/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-04-25
 
@@ -125,6 +133,10 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-01-27
 
     浅析Jenkis任意文件读取(CVE-2024-23897)很久没更新博客了，还是浅浅更新一下补丁分析首先从官方公告可以看到漏洞其实来源于CLI工具，同时可以看到用户拥有(Overall/Read)权限可以读取整个文件，而如果没有权限则仅能读取第一行同时从commit可以看出[SECURITY-3314] · jenkinsci/jenkins@554f037 ，主要对CLICommand.jav...
+    ### [深圳·香港·澳门一星期单人行小记](https://blog.stv.lol/archives/80/)  
+    >by [Steven Lynn's Blog](https://blog.stv.lol), 2024-01-25
+
+    前因珠三角一直是我好奇和中意的城市群，尤其是香港。在去年九月的匆忙拜访香港和深圳后仍然意犹未尽，在学校的所有事忙完之后便立刻订机票飞往深圳。深圳抵达买了最便宜的东海航空的航班，并且是深夜的红眼航班。据说这家航司的准点率很差，但好在本次航班的时间都很准时。在机场附近的小酒店休息了一晚上，一早便乘机场线立刻出发地铁站第一件事是前往两个顺路的地铁站盖章打卡，这是一个跨年时的活动，因为章还在客服中心那边所...
     ### [浅析Gitlab未授权密码重置(CVE-2023-7028)](https://y4tacker.github.io/2024/01/12/year/2024/1/%E6%B5%85%E6%9E%90Gitlab%E6%9C%AA%E6%8E%88%E6%9D%83%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE-CVE-2023-7028/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-01-12
 
@@ -141,17 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2023-12-28
 
     又又又是一个属性覆盖带来的漏洞想到最近出了好几个与属性覆盖有关的漏洞，突然想到有一个国产系统也曾经出过这类问题，比较有趣这里简单分享一下，希望把一些东西串起来分享方便学到一些东西前后端框架信息梳理首先简单从官网可以看出所使用的框架信息以及技术选型https://gitee.com/mingSoft/MCMS?_from=gitee_search我们主要关注几个点一个是shiro，一个是freema...
-    ### [Apache OFBiz未授权命令执行浅析(CVE-2023-51467)](https://y4tacker.github.io/2023/12/27/year/2023/12/Apache-OFBiz%E6%9C%AA%E6%8E%88%E6%9D%83%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%B5%85%E6%9E%90-CVE-2023-51467/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-12-27
-
-    Apache OFBiz未授权命令执行浅析(CVE-2023-51467)未修复的权限绕过还是之前那个遗留的问题，首先是权限绕过，首先还是做一个简单的回顾关于登录的校验在org.apache.ofbiz.webapp.control.LoginWorker#checkLogin做处理来判断用户是否登录，可以看到这里的判断逻辑非常简单，跳过前两个判断，在后面只需要login返回的不是error，则为...
-    ### [Apusic权限绕过浅析](https://y4tacker.github.io/2023/12/26/year/2023/12/Apusic%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E6%B5%85%E6%9E%90/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-12-26
-
-    Apusic权限绕过浅析真的是浅析前几天去参加补天了，一直想写但是一直抽不出时间学习，由于漏洞比较简单这里也不过多篇幅的讲解，仅分享一些关键的点，在这里关于权限校验Apusic没有使用第三方框架(毕竟是迫真信创产品)而是使用了自定义实现的安全性约束(关于什么安全性约束百度搜很多文章了不作搬运工)去实现了访问控制1234567891011<security-constraint>    <displ...
-    ### [Hacking FernFlower](https://y4tacker.github.io/2023/12/22/year/2023/12/Hacking-FernFlower/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-12-22
-
-    Hacking FernFlower前言​    今天很开心，第一次作为speaker参与了议题的分享，也很感谢补天白帽大会给了我这样的一次机会​    其实本该在去年来讲Java混淆的议题，不过当时赶上疫情爆发，学校出于安全的考虑没让出省。在当时我更想分享的是对抗所有反混淆的工具cfr、procyon，但今年在准备过程中发现主题太大了其实不太好讲，再考虑到受众都是做web安全的，因此我最终还是将...
 
 </div>
