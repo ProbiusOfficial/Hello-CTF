@@ -785,13 +785,6 @@ hide:
                 **比赛时间** : 2024年4月20日 10:00 - 2024年4月22日 10:00  
                 **其他说明** : https://discord.gg/dWvBrfwAmF  
                 
-            ??? Quote "[D^3CTF2024](https://d3c.tf/)"  
-                **比赛名称** : [D^3CTF2024](https://d3c.tf/)  
-                **比赛类型** : 团队赛 | Jeopardy  
-                **报名时间** : 2024年04月07日 09:00 - 2024年04月19日 20:00  
-                **比赛时间** : 2024年04月19日 20:00 - 2024年04月21日 20:00  
-                **其他说明** : QQ群：317828357  
-                
         === "国外赛事"
             ??? Quote "[Midnight Sun CTF 2024 Finals](https://play.midnightsunctf.com/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://play.midnightsunctf.com/)  
