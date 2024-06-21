@@ -342,6 +342,15 @@ comments: true
     **赛事主办** : btcodeclub (https://ctftime.org/team/278477)  
     **添加日历** : https://ctftime.org/event/2340.ics  
     
+??? Quote "[BlockHarbor Automotive CTF - Season 2](https://ctf.blockharbor.io/)"  
+    [![](https://ctftime.org/media/events/blockharbor.jpg){ width="200" align=left }](https://ctf.blockharbor.io/)  
+    **比赛名称** : [BlockHarbor Automotive CTF - Season 2](https://ctf.blockharbor.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-24 22:38:09 - 2024-05-24 22:38:09 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : bhctf (https://ctftime.org/team/251542)  
+    **添加日历** : https://ctftime.org/event/2387.ics  
+    
 ??? Quote "[L3akCTF 2024](https://ctf.l3ak.team/)"  
     [![](https://ctftime.org/media/events/ctf_final.png){ width="200" align=left }](https://ctf.l3ak.team/)  
     **比赛名称** : [L3akCTF 2024](https://ctf.l3ak.team/)  
@@ -413,6 +422,15 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : VulnX (https://ctftime.org/team/117274)  
     **添加日历** : https://ctftime.org/event/2318.ics  
+    
+??? Quote "[Haruulzangi U18 2024 Domestic Quals](https://u18-2024.haruulzangi.mn/)"  
+    [![](https://ctftime.org/media/events/hz-u18_1_1.png){ width="200" align=left }](https://u18-2024.haruulzangi.mn/)  
+    **比赛名称** : [Haruulzangi U18 2024 Domestic Quals](https://u18-2024.haruulzangi.mn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-05-18 12:00:00 - 2024-05-18 16:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
+    **添加日历** : https://ctftime.org/event/2371.ics  
     
 ??? Quote "[TJCTF 2024](https://tjctf.org/)"  
     [![](https://ctftime.org/media/events/logo_96.png){ width="200" align=left }](https://tjctf.org/)  
@@ -1007,22 +1025,4 @@ comments: true
     **比赛权重** : 48.00  
     **赛事主办** : isss (https://ctftime.org/team/69010)  
     **添加日历** : https://ctftime.org/event/2302.ics  
-    
-??? Quote "[HACKFEST'8 QUALS](https://ctf-quals-8.hackfest.tn/)"  
-    [![](https://ctftime.org/media/events/HACKFEST_WHITE.png){ width="200" align=left }](https://ctf-quals-8.hackfest.tn/)  
-    **比赛名称** : [HACKFEST'8 QUALS](https://ctf-quals-8.hackfest.tn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-24 03:00:00 - 2024-03-24 22:00:00 UTC+8  
-    **比赛权重** : 21.00  
-    **赛事主办** : HACKFEST TEAM (https://ctftime.org/team/281742)  
-    **添加日历** : https://ctftime.org/event/2278.ics  
-    
-??? Quote "[JerseyCTF IV](https://ctf.jerseyctf.com/)"  
-    [![](https://ctftime.org/media/events/Asset_39.png){ width="200" align=left }](https://ctf.jerseyctf.com/)  
-    **比赛名称** : [JerseyCTF IV](https://ctf.jerseyctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-24 00:00:00 - 2024-03-25 00:00:00 UTC+8  
-    **比赛权重** : 21.26  
-    **赛事主办** : Highlander Hackers (https://ctftime.org/team/173925)  
-    **添加日历** : https://ctftime.org/event/2230.ics  
     
