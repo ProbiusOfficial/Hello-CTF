@@ -777,13 +777,6 @@ hide:
                 **比赛时间** : 2024年04月01日 10:00 - 2024年05月01日 10:00  
                 **其他说明** : 赛事群：798794707  
                 
-            ??? Quote "[GEEKCON 2024 国际站AVSS挑战赛](https://mp.weixin.qq.com/s/iA1PQ9ExwVlRN_iOB7INAg)"  
-                **比赛名称** : [GEEKCON 2024 国际站AVSS挑战赛](https://mp.weixin.qq.com/s/iA1PQ9ExwVlRN_iOB7INAg)  
-                **比赛类型** : 团队赛  
-                **报名时间** : 2024年4月15日 00:00 - 2024年4月20日 10:00  
-                **比赛时间** : 2024年4月20日 10:00 - 2024年4月22日 10:00  
-                **其他说明** : https://discord.gg/dWvBrfwAmF  
-                
         === "国外赛事"
             ??? Quote "[Midnight Sun CTF 2024 Finals](https://play.midnightsunctf.com/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://play.midnightsunctf.com/)  
