@@ -465,7 +465,7 @@
         "比赛权重": "0",
         "赛事主办": "NUSGreyhats (https://ctftime.org/team/16740)",
         "比赛ID": "778",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Midnight Sun CTF 2024 Finals",
@@ -1653,18 +1653,6 @@
         "比赛权重": "21.26",
         "赛事主办": "Highlander Hackers (https://ctftime.org/team/173925)",
         "比赛ID": "724",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Texas Security Awareness Week 2024",
-        "比赛时间": "2024-03-23 23:00:00 - 2024-03-25 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2281.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://csi.utdallas.edu/events/texsaw-2024/",
-        "比赛标志": "https://ctftime.org/media/events/texsaw24.png",
-        "比赛权重": "23.89",
-        "赛事主办": "UTD TexSAW (https://ctftime.org/team/220408)",
-        "比赛ID": "926",
         "比赛状态": "past"
     }
 ]

@@ -126,6 +126,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Grey Cat The Flag 2024 Finals](https://ctf.nusgreyhats.org/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
+    **比赛名称** : [Grey Cat The Flag 2024 Finals](https://ctf.nusgreyhats.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-20 10:00:00 - 2024-06-21 18:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : NUSGreyhats (https://ctftime.org/team/16740)  
+    **添加日历** : https://ctftime.org/event/2244.ics  
+    
 ??? Quote "[Midnight Sun CTF 2024 Finals](https://play.midnightsunctf.com/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://play.midnightsunctf.com/)  
     **比赛名称** : [Midnight Sun CTF 2024 Finals](https://play.midnightsunctf.com/)  
@@ -1016,13 +1025,4 @@ comments: true
     **比赛权重** : 21.26  
     **赛事主办** : Highlander Hackers (https://ctftime.org/team/173925)  
     **添加日历** : https://ctftime.org/event/2230.ics  
-    
-??? Quote "[Texas Security Awareness Week 2024](https://csi.utdallas.edu/events/texsaw-2024/)"  
-    [![](https://ctftime.org/media/events/texsaw24.png){ width="200" align=left }](https://csi.utdallas.edu/events/texsaw-2024/)  
-    **比赛名称** : [Texas Security Awareness Week 2024](https://csi.utdallas.edu/events/texsaw-2024/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-03-23 23:00:00 - 2024-03-25 06:00:00 UTC+8  
-    **比赛权重** : 23.89  
-    **赛事主办** : UTD TexSAW (https://ctftime.org/team/220408)  
-    **添加日历** : https://ctftime.org/event/2281.ics  
     
