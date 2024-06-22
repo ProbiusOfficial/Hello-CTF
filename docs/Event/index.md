@@ -774,15 +774,6 @@ hide:
                 **赛事主办** : Hack'olyte (https://ctftime.org/team/222944)  
                 **添加日历** : https://ctftime.org/event/2392.ics  
                 
-            ??? Quote "[İGÜCTF 24'](https://igusiber.com.tr/)"  
-                [![](https://ctftime.org/media/events/siber.png){ width="200" align=left }](https://igusiber.com.tr/)  
-                **比赛名称** : [İGÜCTF 24'](https://igusiber.com.tr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-22 17:00:00 - 2024-06-23 04:59:59 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Ah Yalan Dünya (https://ctftime.org/team/202267)  
-                **添加日历** : https://ctftime.org/event/2394.ics  
-                
             ??? Quote "[Pacific Hackers Pre-DEFCON CTF & BBQ 2024](https://www.meetup.com/pacifichackers/events/301096276/)"  
                 [![](https://ctftime.org/media/events/pacific_hacker_bear.png){ width="200" align=left }](https://www.meetup.com/pacifichackers/events/301096276/)  
                 **比赛名称** : [Pacific Hackers Pre-DEFCON CTF & BBQ 2024](https://www.meetup.com/pacifichackers/events/301096276/)  
@@ -923,6 +914,15 @@ hide:
                 **其他说明** : 赛事群：798794707  
                 
         === "国外赛事"
+            ??? Quote "[İGÜCTF 24'](https://igusiber.com.tr/)"  
+                [![](https://ctftime.org/media/events/siber.png){ width="200" align=left }](https://igusiber.com.tr/)  
+                **比赛名称** : [İGÜCTF 24'](https://igusiber.com.tr/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-06-22 17:00:00 - 2024-06-23 04:59:59 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Ah Yalan Dünya (https://ctftime.org/team/202267)  
+                **添加日历** : https://ctftime.org/event/2394.ics  
+                
             ??? Quote "[Grey Cat The Flag 2024 Finals](https://ctf.nusgreyhats.org/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
                 **比赛名称** : [Grey Cat The Flag 2024 Finals](https://ctf.nusgreyhats.org/)  
@@ -1813,15 +1813,6 @@ hide:
                 **比赛权重** : 19.50  
                 **赛事主办** : cursed (https://ctftime.org/team/199492)  
                 **添加日历** : https://ctftime.org/event/2239.ics  
-                
-            ??? Quote "[UTCTF 2024](https://isss.io/utctf)"  
-                [![](https://ctftime.org/media/events/UTCTF2024.png){ width="200" align=left }](https://isss.io/utctf)  
-                **比赛名称** : [UTCTF 2024](https://isss.io/utctf)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-03-30 07:00:00 - 2024-04-01 07:00:00 UTC+8  
-                **比赛权重** : 48.00  
-                **赛事主办** : isss (https://ctftime.org/team/69010)  
-                **添加日历** : https://ctftime.org/event/2302.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
