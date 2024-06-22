@@ -89,14 +89,14 @@ hide:
             **赛事主办** : MindBreakers ESGI (https://ctftime.org/team/280786)  
             **添加日历** : https://ctftime.org/event/2415.ics  
             
-        ??? Quote "[CTF Hunt 2024](http://www.ctfhunt.com/)"  
-            [![](https://ctftime.org){ width="200" align=left }](http://www.ctfhunt.com/)  
-            **比赛名称** : [CTF Hunt 2024](http://www.ctfhunt.com/)  
+        ??? Quote "[Break The Wall - Dystopia 2099](https://breakthewall.hackrocks.com/)"  
+            [![](https://ctftime.org/media/events/breakthewall_logo-IrRB.png){ width="200" align=left }](https://breakthewall.hackrocks.com/)  
+            **比赛名称** : [Break The Wall - Dystopia 2099](https://breakthewall.hackrocks.com/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-06-24 21:00:00 - 2024-06-25 00:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : The Pixels (https://ctftime.org/team/302763)  
-            **添加日历** : https://ctftime.org/event/2417.ics  
+            **比赛时间** : 2024-06-26 19:00:00 - 2024-07-11 03:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : hackrocks (https://ctftime.org/team/175823)  
+            **添加日历** : https://ctftime.org/event/2393.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
