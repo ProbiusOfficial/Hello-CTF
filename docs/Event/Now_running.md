@@ -54,12 +54,3 @@ comments: true
     **赛事主办** : Hack'olyte (https://ctftime.org/team/222944)  
     **添加日历** : https://ctftime.org/event/2392.ics  
     
-??? Quote "[MindBreak 2024 by ESGI](https://forms.gle/PMkTtQ692RGo3SCGA)"  
-    [![](https://ctftime.org/media/events/511a7559bf9c4f2a983c12008b53d059.png){ width="200" align=left }](https://forms.gle/PMkTtQ692RGo3SCGA)  
-    **比赛名称** : [MindBreak 2024 by ESGI](https://forms.gle/PMkTtQ692RGo3SCGA)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-23 03:00:00 - 2024-06-23 12:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : MindBreakers ESGI (https://ctftime.org/team/280786)  
-    **添加日历** : https://ctftime.org/event/2415.ics  
-    

@@ -765,15 +765,6 @@ hide:
                 **赛事主办** : Hack'olyte (https://ctftime.org/team/222944)  
                 **添加日历** : https://ctftime.org/event/2392.ics  
                 
-            ??? Quote "[MindBreak 2024 by ESGI](https://forms.gle/PMkTtQ692RGo3SCGA)"  
-                [![](https://ctftime.org/media/events/511a7559bf9c4f2a983c12008b53d059.png){ width="200" align=left }](https://forms.gle/PMkTtQ692RGo3SCGA)  
-                **比赛名称** : [MindBreak 2024 by ESGI](https://forms.gle/PMkTtQ692RGo3SCGA)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-23 03:00:00 - 2024-06-23 12:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : MindBreakers ESGI (https://ctftime.org/team/280786)  
-                **添加日历** : https://ctftime.org/event/2415.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[第五届“闽盾杯”网络空间安全大赛（黑盾全国大学生赛道）](http://heidunbei.si.net.cn/hdc/cover)"  
@@ -904,6 +895,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Pacific Hackers Association (https://ctftime.org/team/304096)  
                 **添加日历** : https://ctftime.org/event/2413.ics  
+                
+            ??? Quote "[MindBreak 2024 by ESGI](https://forms.gle/PMkTtQ692RGo3SCGA)"  
+                [![](https://ctftime.org/media/events/511a7559bf9c4f2a983c12008b53d059.png){ width="200" align=left }](https://forms.gle/PMkTtQ692RGo3SCGA)  
+                **比赛名称** : [MindBreak 2024 by ESGI](https://forms.gle/PMkTtQ692RGo3SCGA)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-06-23 03:00:00 - 2024-06-23 12:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : MindBreakers ESGI (https://ctftime.org/team/280786)  
+                **添加日历** : https://ctftime.org/event/2415.ics  
                 
             ??? Quote "[İGÜCTF 24'](https://igusiber.com.tr/)"  
                 [![](https://ctftime.org/media/events/siber.png){ width="200" align=left }](https://igusiber.com.tr/)  
@@ -1786,15 +1786,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : P01s0n3d_Fl4g (https://ctftime.org/team/273774)  
                 **添加日历** : https://ctftime.org/event/2317.ics  
-                
-            ??? Quote "[VolgaCTF 2024 Qualifier](https://q.2024.volgactf.ru/)"  
-                [![](https://ctftime.org/media/events/logo-social-yellow_14.png){ width="200" align=left }](https://q.2024.volgactf.ru/)  
-                **比赛名称** : [VolgaCTF 2024 Qualifier](https://q.2024.volgactf.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-03-30 23:00:00 - 2024-03-31 23:00:00 UTC+8  
-                **比赛权重** : 35.91  
-                **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
-                **添加日历** : https://ctftime.org/event/2200.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
