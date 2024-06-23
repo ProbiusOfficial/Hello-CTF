@@ -729,24 +729,6 @@ hide:
                 **赛事主办** : Fikamyndigheten (https://ctftime.org/team/305722)  
                 **添加日历** : https://ctftime.org/event/2399.ics  
                 
-            ??? Quote "[Google Capture The Flag 2024](https://g.co/ctf)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://g.co/ctf)  
-                **比赛名称** : [Google Capture The Flag 2024](https://g.co/ctf)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-22 02:00:00 - 2024-06-24 02:00:00 UTC+8  
-                **比赛权重** : 99.41  
-                **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
-                **添加日历** : https://ctftime.org/event/2296.ics  
-                
-            ??? Quote "[HACK'OSINT - CTF](https://ctf.hackolyte.fr/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackolyte.fr/)  
-                **比赛名称** : [HACK'OSINT - CTF](https://ctf.hackolyte.fr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-22 02:00:00 - 2024-06-24 02:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Hack'olyte (https://ctftime.org/team/222944)  
-                **添加日历** : https://ctftime.org/event/2392.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[第五届“闽盾杯”网络空间安全大赛（黑盾全国大学生赛道）](http://heidunbei.si.net.cn/hdc/cover)"  
@@ -895,6 +877,24 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Ah Yalan Dünya (https://ctftime.org/team/202267)  
                 **添加日历** : https://ctftime.org/event/2394.ics  
+                
+            ??? Quote "[Google Capture The Flag 2024](https://g.co/ctf)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://g.co/ctf)  
+                **比赛名称** : [Google Capture The Flag 2024](https://g.co/ctf)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-06-22 02:00:00 - 2024-06-24 02:00:00 UTC+8  
+                **比赛权重** : 99.41  
+                **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
+                **添加日历** : https://ctftime.org/event/2296.ics  
+                
+            ??? Quote "[HACK'OSINT - CTF](https://ctf.hackolyte.fr/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackolyte.fr/)  
+                **比赛名称** : [HACK'OSINT - CTF](https://ctf.hackolyte.fr/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-06-22 02:00:00 - 2024-06-24 02:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Hack'olyte (https://ctftime.org/team/222944)  
+                **添加日历** : https://ctftime.org/event/2392.ics  
                 
             ??? Quote "[CyberSci Nationals 2024](https://cybersecuritychallenge.ca/)"  
                 [![](https://ctftime.org/media/events/c0c445488770d1de63c46986bc92e8e6.png){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
@@ -1750,24 +1750,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : TODO: security (https://ctftime.org/team/288184)  
                 **添加日历** : https://ctftime.org/event/2326.ics  
-                
-            ??? Quote "[GREP CTF 2.0 - Apogee '24](http://grep.ctf.eng.run/)"  
-                [![](https://ctftime.org/media/events/20a7c45b52453060b168055f47ce5352.png){ width="200" align=left }](http://grep.ctf.eng.run/)  
-                **比赛名称** : [GREP CTF 2.0 - Apogee '24](http://grep.ctf.eng.run/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-05 20:00:00 - 2024-04-07 08:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : BitRaiders (https://ctftime.org/team/286592)  
-                **添加日历** : https://ctftime.org/event/2334.ics  
-                
-            ??? Quote "[UNbreakable International 2024 - Team Phase](https://unr24t-international.cyber-edu.co/)"  
-                [![](https://ctftime.org/media/events/g5hqjcGuxmbcMSZ9.png){ width="200" align=left }](https://unr24t-international.cyber-edu.co/)  
-                **比赛名称** : [UNbreakable International 2024 - Team Phase](https://unr24t-international.cyber-edu.co/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-05 18:00:00 - 2024-04-07 18:00:00 UTC+8  
-                **比赛权重** : 24.83  
-                **赛事主办** : bitsentinel (https://ctftime.org/team/280005)  
-                **添加日历** : https://ctftime.org/event/2297.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

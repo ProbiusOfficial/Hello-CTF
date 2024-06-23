@@ -564,30 +564,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Google Capture The Flag 2024",
-        "比赛时间": "2024-06-22 02:00:00 - 2024-06-24 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2296.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://g.co/ctf",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "99.41",
-        "赛事主办": "Google CTF (https://ctftime.org/team/23929)",
-        "比赛ID": "141",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "HACK'OSINT - CTF",
-        "比赛时间": "2024-06-22 02:00:00 - 2024-06-24 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2392.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hackolyte.fr/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Hack'olyte (https://ctftime.org/team/222944)",
-        "比赛ID": "1135",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Pacific Hackers Pre-DEFCON CTF & BBQ 2024",
         "比赛时间": "2024-06-23 03:00:00 - 2024-06-23 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2413.ics",
@@ -621,6 +597,30 @@
         "比赛权重": "0.00",
         "赛事主办": "Ah Yalan Dünya (https://ctftime.org/team/202267)",
         "比赛ID": "1136",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Google Capture The Flag 2024",
+        "比赛时间": "2024-06-22 02:00:00 - 2024-06-24 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2296.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://g.co/ctf",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "99.41",
+        "赛事主办": "Google CTF (https://ctftime.org/team/23929)",
+        "比赛ID": "141",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "HACK'OSINT - CTF",
+        "比赛时间": "2024-06-22 02:00:00 - 2024-06-24 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2392.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.hackolyte.fr/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "Hack'olyte (https://ctftime.org/team/222944)",
+        "比赛ID": "1135",
         "比赛状态": "past"
     },
     {
@@ -1761,30 +1761,6 @@
         "比赛权重": "0",
         "赛事主办": "TODO: security (https://ctftime.org/team/288184)",
         "比赛ID": "1105",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "GREP CTF 2.0 - Apogee '24",
-        "比赛时间": "2024-04-05 20:00:00 - 2024-04-07 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2334.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://grep.ctf.eng.run/",
-        "比赛标志": "https://ctftime.org/media/events/20a7c45b52453060b168055f47ce5352.png",
-        "比赛权重": "0.00",
-        "赛事主办": "BitRaiders (https://ctftime.org/team/286592)",
-        "比赛ID": "1093",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "UNbreakable International 2024 - Team Phase",
-        "比赛时间": "2024-04-05 18:00:00 - 2024-04-07 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2297.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://unr24t-international.cyber-edu.co/",
-        "比赛标志": "https://ctftime.org/media/events/g5hqjcGuxmbcMSZ9.png",
-        "比赛权重": "24.83",
-        "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
-        "比赛ID": "1064",
         "比赛状态": "past"
     }
 ]
