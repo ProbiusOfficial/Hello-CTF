@@ -162,6 +162,15 @@ comments: true
     **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
     **添加日历** : https://ctftime.org/event/2366.ics  
     
+??? Quote "[Wani CTF 2024](https://wanictf.org/)"  
+    [![](https://ctftime.org/media/events/wani_ctf_logo.png){ width="200" align=left }](https://wanictf.org/)  
+    **比赛名称** : [Wani CTF 2024](https://wanictf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-21 20:00:00 - 2024-06-23 20:00:00 UTC+8  
+    **比赛权重** : 24.99  
+    **赛事主办** : Wani Hackase (https://ctftime.org/team/70717)  
+    **添加日历** : https://ctftime.org/event/2377.ics  
+    
 ??? Quote "[Grey Cat The Flag 2024 Finals](https://ctf.nusgreyhats.org/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
     **比赛名称** : [Grey Cat The Flag 2024 Finals](https://ctf.nusgreyhats.org/)  
@@ -1016,13 +1025,4 @@ comments: true
     **比赛权重** : 24.83  
     **赛事主办** : bitsentinel (https://ctftime.org/team/280005)  
     **添加日历** : https://ctftime.org/event/2297.ics  
-    
-??? Quote "[HTBLuVA Villach CTF 2024](https://tophack.at/)"  
-    [![](https://ctftime.org/media/events/Logos_TopHack-RED-Front.png){ width="200" align=left }](https://tophack.at/)  
-    **比赛名称** : [HTBLuVA Villach CTF 2024](https://tophack.at/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-05 17:00:00 - 2024-04-05 23:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : P01s0n3d_Fl4g (https://ctftime.org/team/273774)  
-    **添加日历** : https://ctftime.org/event/2317.ics  
     
