@@ -564,18 +564,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Wani CTF 2024",
-        "比赛时间": "2024-06-21 20:00:00 - 2024-06-23 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2377.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://wanictf.org/",
-        "比赛标志": "https://ctftime.org/media/events/wani_ctf_logo.png",
-        "比赛权重": "24.99",
-        "赛事主办": "Wani Hackase (https://ctftime.org/team/70717)",
-        "比赛ID": "935",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Google Capture The Flag 2024",
         "比赛时间": "2024-06-22 02:00:00 - 2024-06-24 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2296.ics",
@@ -645,6 +633,18 @@
         "比赛权重": "0",
         "赛事主办": "CyberSciOrganizers (https://ctftime.org/team/157536)",
         "比赛ID": "643",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Wani CTF 2024",
+        "比赛时间": "2024-06-21 20:00:00 - 2024-06-23 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2377.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://wanictf.org/",
+        "比赛标志": "https://ctftime.org/media/events/wani_ctf_logo.png",
+        "比赛权重": "24.99",
+        "赛事主办": "Wani Hackase (https://ctftime.org/team/70717)",
+        "比赛ID": "935",
         "比赛状态": "past"
     },
     {
@@ -1785,18 +1785,6 @@
         "比赛权重": "24.83",
         "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
         "比赛ID": "1064",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "HTBLuVA Villach CTF 2024",
-        "比赛时间": "2024-04-05 17:00:00 - 2024-04-05 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2317.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://tophack.at/",
-        "比赛标志": "https://ctftime.org/media/events/Logos_TopHack-RED-Front.png",
-        "比赛权重": "0.00",
-        "赛事主办": "P01s0n3d_Fl4g (https://ctftime.org/team/273774)",
-        "比赛ID": "1086",
         "比赛状态": "past"
     }
 ]
