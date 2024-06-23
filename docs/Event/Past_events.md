@@ -126,6 +126,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Pacific Hackers Pre-DEFCON CTF & BBQ 2024](https://www.meetup.com/pacifichackers/events/301096276/)"  
+    [![](https://ctftime.org/media/events/pacific_hacker_bear.png){ width="200" align=left }](https://www.meetup.com/pacifichackers/events/301096276/)  
+    **比赛名称** : [Pacific Hackers Pre-DEFCON CTF & BBQ 2024](https://www.meetup.com/pacifichackers/events/301096276/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-23 03:00:00 - 2024-06-23 10:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Pacific Hackers Association (https://ctftime.org/team/304096)  
+    **添加日历** : https://ctftime.org/event/2413.ics  
+    
 ??? Quote "[İGÜCTF 24'](https://igusiber.com.tr/)"  
     [![](https://ctftime.org/media/events/siber.png){ width="200" align=left }](https://igusiber.com.tr/)  
     **比赛名称** : [İGÜCTF 24'](https://igusiber.com.tr/)  
@@ -1016,13 +1025,4 @@ comments: true
     **比赛权重** : 35.91  
     **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
     **添加日历** : https://ctftime.org/event/2200.ics  
-    
-??? Quote "[SummitCTF 2024](https://summitctf.org/)"  
-    [![](https://ctftime.org/media/events/default_background_removed.png){ width="200" align=left }](https://summitctf.org/)  
-    **比赛名称** : [SummitCTF 2024](https://summitctf.org/)  
-    **比赛形式** : Hack quest  
-    **比赛时间** : 2024-03-30 21:00:00 - 2024-04-01 04:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : CyberVT (https://ctftime.org/team/173872)  
-    **添加日历** : https://ctftime.org/event/2237.ics  
     
