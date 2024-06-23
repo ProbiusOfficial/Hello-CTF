@@ -48,18 +48,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "AltayCTF 2024",
-        "比赛时间": "2024-06-30 11:00:00 - 2024-06-30 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2376.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://altayctf.ru/",
-        "比赛标志": "https://ctftime.org/media/events/0_1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "SharLike (https://ctftime.org/team/16172)",
-        "比赛ID": "111",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Junior.Crypt.2024 CTF",
         "比赛时间": "2024-07-03 23:00:00 - 2024-07-05 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2259.ics",

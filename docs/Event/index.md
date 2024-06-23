@@ -338,15 +338,6 @@ hide:
                 **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
                 **添加日历** : https://ctftime.org/event/2306.ics  
                 
-            ??? Quote "[AltayCTF 2024](https://altayctf.ru/)"  
-                [![](https://ctftime.org/media/events/0_1.png){ width="200" align=left }](https://altayctf.ru/)  
-                **比赛名称** : [AltayCTF 2024](https://altayctf.ru/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2024-06-30 11:00:00 - 2024-06-30 20:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : SharLike (https://ctftime.org/team/16172)  
-                **添加日历** : https://ctftime.org/event/2376.ics  
-                
             ??? Quote "[Junior.Crypt.2024 CTF](http://ctf-spcs.mf.grsu.by/)"  
                 [![](https://ctftime.org/media/events/logo_NY.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
                 **比赛名称** : [Junior.Crypt.2024 CTF](http://ctf-spcs.mf.grsu.by/)  
