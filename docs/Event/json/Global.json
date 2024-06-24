@@ -600,18 +600,6 @@
         "比赛状态": "past"
     },
     {
-        "比赛名称": "Google Capture The Flag 2024",
-        "比赛时间": "2024-06-22 02:00:00 - 2024-06-24 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2296.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://g.co/ctf",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "99.41",
-        "赛事主办": "Google CTF (https://ctftime.org/team/23929)",
-        "比赛ID": "141",
-        "比赛状态": "past"
-    },
-    {
         "比赛名称": "HACK'OSINT - CTF",
         "比赛时间": "2024-06-22 02:00:00 - 2024-06-24 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2392.ics",
@@ -621,6 +609,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Hack'olyte (https://ctftime.org/team/222944)",
         "比赛ID": "1135",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Google Capture The Flag 2024",
+        "比赛时间": "2024-06-22 02:00:00 - 2024-06-24 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2296.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://g.co/ctf",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "99.41",
+        "赛事主办": "Google CTF (https://ctftime.org/team/23929)",
+        "比赛ID": "141",
         "比赛状态": "past"
     },
     {
