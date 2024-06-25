@@ -97,7 +97,7 @@
     },
     {
         "比赛名称": "OSCTF",
-        "比赛时间": "2024-07-13 14:00:00 - 2024-07-14 06:00:00 UTC+8",
+        "比赛时间": "2024-07-13 20:30:00 - 2024-07-14 00:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2416.ics",
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.os.ftp.sh/",
@@ -249,6 +249,18 @@
         "比赛权重": "36.96",
         "赛事主办": "Project Sekai (https://ctftime.org/team/169557)",
         "比赛ID": "769",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "BlockHarbor Automotive CTF - Season 2",
+        "比赛时间": "2024-08-24 22:00:00 - 2024-09-09 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2387.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.blockharbor.io/",
+        "比赛标志": "https://ctftime.org/media/events/blockharbor.jpg",
+        "比赛权重": "0",
+        "赛事主办": "bhctf (https://ctftime.org/team/251542)",
+        "比赛ID": "975",
         "比赛状态": "oncoming"
     },
     {
@@ -933,18 +945,6 @@
         "比赛权重": "0",
         "赛事主办": "btcodeclub (https://ctftime.org/team/278477)",
         "比赛ID": "1055",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BlockHarbor Automotive CTF - Season 2",
-        "比赛时间": "2024-05-24 22:38:09 - 2024-05-24 22:38:09 UTC+8",
-        "添加日历": "https://ctftime.org/event/2387.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.blockharbor.io/",
-        "比赛标志": "https://ctftime.org/media/events/blockharbor.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "bhctf (https://ctftime.org/team/251542)",
-        "比赛ID": "975",
         "比赛状态": "past"
     },
     {
@@ -1761,6 +1761,18 @@
         "比赛权重": "0",
         "赛事主办": "TODO: security (https://ctftime.org/team/288184)",
         "比赛ID": "1105",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "GREP CTF 2.0 - Apogee '24",
+        "比赛时间": "2024-04-05 20:00:00 - 2024-04-07 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2334.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://grep.ctf.eng.run/",
+        "比赛标志": "https://ctftime.org/media/events/20a7c45b52453060b168055f47ce5352.png",
+        "比赛权重": "0.00",
+        "赛事主办": "BitRaiders (https://ctftime.org/team/286592)",
+        "比赛ID": "1093",
         "比赛状态": "past"
     }
 ]

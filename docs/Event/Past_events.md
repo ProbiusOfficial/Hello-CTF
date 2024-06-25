@@ -405,15 +405,6 @@ comments: true
     **赛事主办** : btcodeclub (https://ctftime.org/team/278477)  
     **添加日历** : https://ctftime.org/event/2340.ics  
     
-??? Quote "[BlockHarbor Automotive CTF - Season 2](https://ctf.blockharbor.io/)"  
-    [![](https://ctftime.org/media/events/blockharbor.jpg){ width="200" align=left }](https://ctf.blockharbor.io/)  
-    **比赛名称** : [BlockHarbor Automotive CTF - Season 2](https://ctf.blockharbor.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-24 22:38:09 - 2024-05-24 22:38:09 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : bhctf (https://ctftime.org/team/251542)  
-    **添加日历** : https://ctftime.org/event/2387.ics  
-    
 ??? Quote "[L3akCTF 2024](https://ctf.l3ak.team/)"  
     [![](https://ctftime.org/media/events/ctf_final.png){ width="200" align=left }](https://ctf.l3ak.team/)  
     **比赛名称** : [L3akCTF 2024](https://ctf.l3ak.team/)  
@@ -1025,4 +1016,13 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : TODO: security (https://ctftime.org/team/288184)  
     **添加日历** : https://ctftime.org/event/2326.ics  
+    
+??? Quote "[GREP CTF 2.0 - Apogee '24](http://grep.ctf.eng.run/)"  
+    [![](https://ctftime.org/media/events/20a7c45b52453060b168055f47ce5352.png){ width="200" align=left }](http://grep.ctf.eng.run/)  
+    **比赛名称** : [GREP CTF 2.0 - Apogee '24](http://grep.ctf.eng.run/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-04-05 20:00:00 - 2024-04-07 08:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : BitRaiders (https://ctftime.org/team/286592)  
+    **添加日历** : https://ctftime.org/event/2334.ics  
     
