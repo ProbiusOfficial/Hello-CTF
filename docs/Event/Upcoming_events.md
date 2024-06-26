@@ -15,15 +15,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Break The Wall - Dystopia 2099](https://breakthewall.hackrocks.com/)"  
-    [![](https://ctftime.org/media/events/breakthewall_logo-IrRB.png){ width="200" align=left }](https://breakthewall.hackrocks.com/)  
-    **比赛名称** : [Break The Wall - Dystopia 2099](https://breakthewall.hackrocks.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-26 19:00:00 - 2024-07-11 03:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : hackrocks (https://ctftime.org/team/175823)  
-    **添加日历** : https://ctftime.org/event/2393.ics  
-    
 ??? Quote "[The Hacker Conclave](http://ctf.thehackerconclave.es/)"  
     [![](https://ctftime.org/media/events/conclave.png){ width="200" align=left }](http://ctf.thehackerconclave.es/)  
     **比赛名称** : [The Hacker Conclave](http://ctf.thehackerconclave.es/)  
