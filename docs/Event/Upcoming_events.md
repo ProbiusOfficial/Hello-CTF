@@ -15,15 +15,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[The Hacker Conclave](http://ctf.thehackerconclave.es/)"  
-    [![](https://ctftime.org/media/events/conclave.png){ width="200" align=left }](http://ctf.thehackerconclave.es/)  
-    **比赛名称** : [The Hacker Conclave](http://ctf.thehackerconclave.es/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-27 16:00:00 - 2024-06-27 19:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : C0ncl4v3 (https://ctftime.org/team/303692)  
-    **添加日历** : https://ctftime.org/event/2397.ics  
-    
 ??? Quote "[UIUCTF 2024](http://2024.uiuc.tf/)"  
     [![](https://ctftime.org){ width="200" align=left }](http://2024.uiuc.tf/)  
     **比赛名称** : [UIUCTF 2024](http://2024.uiuc.tf/)  
