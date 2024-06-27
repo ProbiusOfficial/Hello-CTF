@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "The Hacker Conclave",
-        "比赛时间": "2024-06-27 16:00:00 - 2024-06-27 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2397.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.thehackerconclave.es/",
-        "比赛标志": "https://ctftime.org/media/events/conclave.png",
-        "比赛权重": "0.00",
-        "赛事主办": "C0ncl4v3 (https://ctftime.org/team/303692)",
-        "比赛ID": "1138",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "UIUCTF 2024",
         "比赛时间": "2024-06-29 08:00:00 - 2024-07-01 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2275.ics",
@@ -573,6 +561,18 @@
         "比赛权重": "0",
         "赛事主办": "hackrocks (https://ctftime.org/team/175823)",
         "比赛ID": "1124",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "The Hacker Conclave",
+        "比赛时间": "2024-06-27 16:00:00 - 2024-06-27 19:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2397.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf.thehackerconclave.es/",
+        "比赛标志": "https://ctftime.org/media/events/conclave.png",
+        "比赛权重": "0",
+        "赛事主办": "C0ncl4v3 (https://ctftime.org/team/303692)",
+        "比赛ID": "1138",
         "比赛状态": "nowrunning"
     },
     {
