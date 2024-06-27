@@ -126,6 +126,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[The Hacker Conclave](http://ctf.thehackerconclave.es/)"  
+    [![](https://ctftime.org/media/events/conclave.png){ width="200" align=left }](http://ctf.thehackerconclave.es/)  
+    **比赛名称** : [The Hacker Conclave](http://ctf.thehackerconclave.es/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-27 16:00:00 - 2024-06-27 19:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : C0ncl4v3 (https://ctftime.org/team/303692)  
+    **添加日历** : https://ctftime.org/event/2397.ics  
+    
 ??? Quote "[Pacific Hackers Pre-DEFCON CTF & BBQ 2024](https://www.meetup.com/pacifichackers/events/301096276/)"  
     [![](https://ctftime.org/media/events/pacific_hacker_bear.png){ width="200" align=left }](https://www.meetup.com/pacifichackers/events/301096276/)  
     **比赛名称** : [Pacific Hackers Pre-DEFCON CTF & BBQ 2024](https://www.meetup.com/pacifichackers/events/301096276/)  
@@ -1016,13 +1025,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : TODO: security (https://ctftime.org/team/288184)  
     **添加日历** : https://ctftime.org/event/2326.ics  
-    
-??? Quote "[GREP CTF 2.0 - Apogee '24](http://grep.ctf.eng.run/)"  
-    [![](https://ctftime.org/media/events/20a7c45b52453060b168055f47ce5352.png){ width="200" align=left }](http://grep.ctf.eng.run/)  
-    **比赛名称** : [GREP CTF 2.0 - Apogee '24](http://grep.ctf.eng.run/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-05 20:00:00 - 2024-04-07 08:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : BitRaiders (https://ctftime.org/team/286592)  
-    **添加日历** : https://ctftime.org/event/2334.ics  
     

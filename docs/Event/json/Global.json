@@ -573,7 +573,7 @@
         "比赛权重": "0",
         "赛事主办": "C0ncl4v3 (https://ctftime.org/team/303692)",
         "比赛ID": "1138",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Pacific Hackers Pre-DEFCON CTF & BBQ 2024",
@@ -1761,18 +1761,6 @@
         "比赛权重": "0",
         "赛事主办": "TODO: security (https://ctftime.org/team/288184)",
         "比赛ID": "1105",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "GREP CTF 2.0 - Apogee '24",
-        "比赛时间": "2024-04-05 20:00:00 - 2024-04-07 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2334.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://grep.ctf.eng.run/",
-        "比赛标志": "https://ctftime.org/media/events/20a7c45b52453060b168055f47ce5352.png",
-        "比赛权重": "0.00",
-        "赛事主办": "BitRaiders (https://ctftime.org/team/286592)",
-        "比赛ID": "1093",
         "比赛状态": "past"
     }
 ]
