@@ -666,7 +666,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.nusgreyhats.org/",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "NUSGreyhats (https://ctftime.org/team/16740)",
         "比赛ID": "778",
         "比赛状态": "past"
@@ -1182,7 +1182,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.squ1rrel.dev/",
         "比赛标志": "https://ctftime.org/media/events/squ1rrel.png",
-        "比赛权重": "24.14",
+        "比赛权重": "24.17",
         "赛事主办": "squ1rrel (https://ctftime.org/team/201730)",
         "比赛ID": "1110",
         "比赛状态": "past"
@@ -1698,7 +1698,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://swampctf.com/",
         "比赛标志": "https://ctftime.org/media/events/swampctf.png",
-        "比赛权重": "41.00",
+        "比赛权重": "40.97",
         "赛事主办": "Kernel Sanders (https://ctftime.org/team/397)",
         "比赛ID": "241",
         "比赛状态": "past"
