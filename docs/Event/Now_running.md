@@ -36,3 +36,12 @@ comments: true
     **赛事主办** : hackrocks (https://ctftime.org/team/175823)  
     **添加日历** : https://ctftime.org/event/2393.ics  
     
+??? Quote "[UIUCTF 2024](http://2024.uiuc.tf/)"  
+    [![](https://ctftime.org){ width="200" align=left }](http://2024.uiuc.tf/)  
+    **比赛名称** : [UIUCTF 2024](http://2024.uiuc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-29 08:00:00 - 2024-07-01 08:00:00 UTC+8  
+    **比赛权重** : 67.51  
+    **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
+    **添加日历** : https://ctftime.org/event/2275.ics  
+    

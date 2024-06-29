@@ -62,15 +62,6 @@ hide:
             **其他说明** : QQ群：277328440  
                 
     === "国外比赛"
-        ??? Quote "[UIUCTF 2024](http://2024.uiuc.tf/)"  
-            [![](https://ctftime.org){ width="200" align=left }](http://2024.uiuc.tf/)  
-            **比赛名称** : [UIUCTF 2024](http://2024.uiuc.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-06-29 08:00:00 - 2024-07-01 08:00:00 UTC+8  
-            **比赛权重** : 67.51  
-            **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
-            **添加日历** : https://ctftime.org/event/2275.ics  
-            
         ??? Quote "[DiceCTF 2024 Finals](https://ctf.dicega.ng/)"  
             [![](https://ctftime.org/media/events/dicectf_2_1_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
             **比赛名称** : [DiceCTF 2024 Finals](https://ctf.dicega.ng/)  
@@ -97,6 +88,15 @@ hide:
             **比赛权重** : 68.04  
             **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
             **添加日历** : https://ctftime.org/event/2284.ics  
+            
+        ??? Quote "[Interlogica CTF2024 - Wastelands](https://ctf.interlogica.ninja/)"  
+            [![](https://ctftime.org/media/events/Untitled_2.png){ width="200" align=left }](https://ctf.interlogica.ninja/)  
+            **比赛名称** : [Interlogica CTF2024 - Wastelands](https://ctf.interlogica.ninja/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-07-05 20:37:00 - 2024-07-08 06:59:59 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Interlogica (https://ctftime.org/team/250899)  
+            **添加日历** : https://ctftime.org/event/2301.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

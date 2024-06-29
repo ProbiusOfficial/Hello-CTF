@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "UIUCTF 2024",
-        "比赛时间": "2024-06-29 08:00:00 - 2024-07-01 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2275.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://2024.uiuc.tf/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "67.51",
-        "赛事主办": "SIGPwny (https://ctftime.org/team/27763)",
-        "比赛ID": "95",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "DiceCTF 2024 Finals",
         "比赛时间": "2024-06-29 22:00:00 - 2024-07-01 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2306.ics",
@@ -561,6 +549,18 @@
         "比赛权重": "0",
         "赛事主办": "hackrocks (https://ctftime.org/team/175823)",
         "比赛ID": "1124",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "UIUCTF 2024",
+        "比赛时间": "2024-06-29 08:00:00 - 2024-07-01 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2275.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://2024.uiuc.tf/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "67.51",
+        "赛事主办": "SIGPwny (https://ctftime.org/team/27763)",
+        "比赛ID": "95",
         "比赛状态": "nowrunning"
     },
     {
