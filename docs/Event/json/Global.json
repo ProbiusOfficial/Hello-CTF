@@ -642,7 +642,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://cybersecuritychallenge.ca/",
         "比赛标志": "https://ctftime.org/media/events/c0c445488770d1de63c46986bc92e8e6.png",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "CyberSciOrganizers (https://ctftime.org/team/157536)",
         "比赛ID": "643",
         "比赛状态": "past"
