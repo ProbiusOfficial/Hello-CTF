@@ -112,6 +112,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[DiceCTF 2024 Finals](https://ctf.dicega.ng/)"  
+    [![](https://ctftime.org/media/events/dicectf_2_1_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
+    **比赛名称** : [DiceCTF 2024 Finals](https://ctf.dicega.ng/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-06-29 22:00:00 - 2024-07-01 06:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
+    **添加日历** : https://ctftime.org/event/2306.ics  
+    
 ??? Quote "[The Hacker Conclave](http://ctf.thehackerconclave.es/)"  
     [![](https://ctftime.org/media/events/conclave.png){ width="200" align=left }](http://ctf.thehackerconclave.es/)  
     **比赛名称** : [The Hacker Conclave](http://ctf.thehackerconclave.es/)  
@@ -1002,13 +1011,4 @@ comments: true
     **比赛权重** : 24.54  
     **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
     **添加日历** : https://ctftime.org/event/2226.ics  
-    
-??? Quote "[BelkaCTF #6](https://belkasoft.com/belkactf6/)"  
-    [![](https://ctftime.org/media/events/belkactf6_square.jpg){ width="200" align=left }](https://belkasoft.com/belkactf6/)  
-    **比赛名称** : [BelkaCTF #6](https://belkasoft.com/belkactf6/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-05 21:00:00 - 2024-04-07 21:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : TODO: security (https://ctftime.org/team/288184)  
-    **添加日历** : https://ctftime.org/event/2326.ics  
     
