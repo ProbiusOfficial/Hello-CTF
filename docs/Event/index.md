@@ -843,13 +843,6 @@ hide:
                 **比赛时间** : 2024年05月01日 00:00 - 2024年05月02日 00:00  
                 **其他说明** : 比赛时间未定  
                 
-            ??? Quote "[XYCTF高校新生联合赛 2024](https://www.xyctf.top/)"  
-                **比赛名称** : [XYCTF高校新生联合赛 2024](https://www.xyctf.top/)  
-                **比赛类型** : 团队赛 | 1-3人  
-                **报名时间** : 2024年03月05日 10:00 - 2024年04月01日 09:00  
-                **比赛时间** : 2024年04月01日 10:00 - 2024年05月01日 10:00  
-                **其他说明** : 赛事群：798794707  
-                
         === "国外赛事"
             ??? Quote "[The Hacker Conclave](http://ctf.thehackerconclave.es/)"  
                 [![](https://ctftime.org/media/events/conclave.png){ width="200" align=left }](http://ctf.thehackerconclave.es/)  
