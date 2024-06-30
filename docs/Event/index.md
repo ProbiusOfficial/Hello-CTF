@@ -836,13 +836,6 @@ hide:
                 **比赛时间** : 2024年05月12日  09:00 - 2024年05月12日  17:00  
                 **其他说明** : QQ1群:915263648 QQ2群:964202741  
                 
-            ??? Quote "[第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)"  
-                **比赛名称** : [第二届数据安全大赛暨首届“数信杯”数据安全大赛](https://shuxinbei.ichunqiu.com/)  
-                **比赛类型** : 团队赛|1-3人  
-                **报名时间** : 2023年11月15日 00:00 - 2024年04月30日 00:00  
-                **比赛时间** : 2024年05月01日 00:00 - 2024年05月02日 00:00  
-                **其他说明** : 比赛时间未定  
-                
         === "国外赛事"
             ??? Quote "[The Hacker Conclave](http://ctf.thehackerconclave.es/)"  
                 [![](https://ctftime.org/media/events/conclave.png){ width="200" align=left }](http://ctf.thehackerconclave.es/)  
