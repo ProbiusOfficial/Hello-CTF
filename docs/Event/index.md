@@ -496,7 +496,7 @@ hide:
                 **比赛名称** : [snakeCTF 2024 Quals](https://2024.snakectf.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-09-07 16:00:00 - 2024-09-08 16:00:00 UTC+8  
-                **比赛权重** : 0.00  
+                **比赛权重** : 24.79  
                 **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
                 **添加日历** : https://ctftime.org/event/2418.ics  
                 
