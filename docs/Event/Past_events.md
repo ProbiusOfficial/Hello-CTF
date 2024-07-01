@@ -121,6 +121,15 @@ comments: true
     **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
     **添加日历** : https://ctftime.org/event/2306.ics  
     
+??? Quote "[UIUCTF 2024](http://2024.uiuc.tf/)"  
+    [![](https://ctftime.org){ width="200" align=left }](http://2024.uiuc.tf/)  
+    **比赛名称** : [UIUCTF 2024](http://2024.uiuc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-29 08:00:00 - 2024-07-01 08:00:00 UTC+8  
+    **比赛权重** : 67.51  
+    **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
+    **添加日历** : https://ctftime.org/event/2275.ics  
+    
 ??? Quote "[The Hacker Conclave](http://ctf.thehackerconclave.es/)"  
     [![](https://ctftime.org/media/events/conclave.png){ width="200" align=left }](http://ctf.thehackerconclave.es/)  
     **比赛名称** : [The Hacker Conclave](http://ctf.thehackerconclave.es/)  
@@ -1002,13 +1011,4 @@ comments: true
     **比赛权重** : 26.98  
     **赛事主办** : Contagion (https://ctftime.org/team/152691)  
     **添加日历** : https://ctftime.org/event/2291.ics  
-    
-??? Quote "[AmateursCTF 2024](https://ctf.amateurs.team/)"  
-    [![](https://ctftime.org/media/events/2d6bd602-ecce-47e6-8f53-b352af222287.915ceb9574bb9759b4dd16bf8a744d25_1.jpeg){ width="200" align=left }](https://ctf.amateurs.team/)  
-    **比赛名称** : [AmateursCTF 2024](https://ctf.amateurs.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-05 22:00:00 - 2024-04-10 11:00:00 UTC+8  
-    **比赛权重** : 24.54  
-    **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
-    **添加日历** : https://ctftime.org/event/2226.ics  
     
