@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [某凌OA之一次后台变前台的故事](https://y4tacker.github.io/2024/06/30/year/2024/6/%E6%9F%90%E5%87%8COA%E4%B9%8B%E4%B8%80%E6%AC%A1%E5%90%8E%E5%8F%B0%E5%8F%98%E5%89%8D%E5%8F%B0%E7%9A%84%E6%95%85%E4%BA%8B/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-06-30
+
+    c4f195e047c82f6832aad96b2b9ff0b06473ee6316a0ad546ce47ed7c55f3d2b3da5adb448e1093da0a53ef4866005d7d883c8217c7025cccd4f5ed01fcbbd0220e5e1cfea035436d835a63462858f54bc8661e0cf09444acdfc71e835aa860434a7af...
     ### [浅析Panalog-SQL注入到命令执行(Version<20240130)](https://y4tacker.github.io/2024/06/05/year/2024/6/%E6%B5%85%E6%9E%90Panalog-SQL%E6%B3%A8%E5%85%A5%E5%88%B0%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-Version-20240130/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-06-05
 
@@ -149,9 +153,5 @@ hide:
     >by [曾哥](https://blog.zgsec.cn/), 2024-01-01
 
     1# 概述今天是2024年的第一天，很高兴能再次和大家见面，我是渊龙Sec安全团队的创始人——曾哥 @AabyssZG。首先，在这个日子里面祝各位师傅元旦快乐，在新的一年里面：事业如虎添翼，财运如虹贯日，家庭和谐美满，幸福安康常伴！也很感谢各位师傅，平时给予团队和我的关注和支持~同时，也非常感谢各位团队成员的共同建设和鼎力相助，团队正因为有了你们，才能走到今天！2# 关于渊龙三周年今年是渊龙Sec...
-    ### [又又又是一个属性覆盖带来的漏洞](https://y4tacker.github.io/2023/12/28/year/2023/12/%E5%8F%88%E5%8F%88%E5%8F%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%B1%9E%E6%80%A7%E8%A6%86%E7%9B%96%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%BC%8F%E6%B4%9E/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2023-12-28
-
-    又又又是一个属性覆盖带来的漏洞想到最近出了好几个与属性覆盖有关的漏洞，突然想到有一个国产系统也曾经出过这类问题，比较有趣这里简单分享一下，希望把一些东西串起来分享方便学到一些东西前后端框架信息梳理首先简单从官网可以看出所使用的框架信息以及技术选型https://gitee.com/mingSoft/MCMS?_from=gitee_search我们主要关注几个点一个是shiro，一个是freema...
 
 </div>
