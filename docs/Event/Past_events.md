@@ -306,7 +306,7 @@ comments: true
     **比赛名称** : [Akasec CTF 2024](https://ctf.akasec.club/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-06-07 21:37:00 - 2024-06-09 21:37:00 UTC+8  
-    **比赛权重** : 22.83  
+    **比赛权重** : 22.92  
     **赛事主办** : Akasec (https://ctftime.org/team/107202)  
     **添加日历** : https://ctftime.org/event/2222.ics  
     
@@ -324,7 +324,7 @@ comments: true
     **比赛名称** : [N0PSctf](https://ctf.nops.re/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-06-01 16:00:00 - 2024-06-03 04:00:00 UTC+8  
-    **比赛权重** : 24.21  
+    **比赛权重** : 24.23  
     **赛事主办** : NOPS (https://ctftime.org/team/4056)  
     **添加日历** : https://ctftime.org/event/2358.ics  
     
