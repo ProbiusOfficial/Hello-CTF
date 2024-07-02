@@ -1,0 +1,187 @@
+{
+    "success": true,
+    "data": {
+        "result": [
+            {
+                "name": "2024年春秋杯网络安全联赛夏季赛",
+                "link": "https://endbm.ichunqiu.com/2024cqgames1",
+                "type": "个人赛",
+                "bmks": "2024年06月04日 00:00",
+                "bmjz": "2024年07月06日 18:00",
+                "bsks": "2024年07月05日 10:00",
+                "bsjs": "2024年07月06日 16:00",
+                "readmore": "QQ群：277328440",
+                "status": 1
+            },
+            {
+                "name": "第五届“闽盾杯”网络空间安全大赛（黑盾全国大学生赛道）",
+                "link": "http://heidunbei.si.net.cn/hdc/cover",
+                "type": "团队赛|1-3人",
+                "bmks": "2024年05月21日 00:00",
+                "bmjz": "2024年06月19日 18:00",
+                "bsks": "2024年06月21日 09:00",
+                "bsjs": "2024年06月21日 17:00",
+                "readmore": "QQ群：566180593",
+                "status": 4
+            },
+            {
+                "name": "Emoji CTF网络安全三校联赛",
+                "link": "https://mp.weixin.qq.com/s/U9JYF4AAEDEz65ijafSbKQ",
+                "type": "个人赛 | 新生赛",
+                "bmks": "2024年05月30日 00:00",
+                "bmjz": "2024年06月16日 18:00",
+                "bsks": "2024年06月14日 09:00",
+                "bsjs": "2024年06月16日 18:00",
+                "readmore": "QQ群：871983989",
+                "status": 4
+            },
+            {
+                "name": "R3CTF/YUANHENGCTF 2024",
+                "link": "https://ctf2024.r3kapig.com/",
+                "type": "团队赛",
+                "bmks": "2024年05月15日 08:00",
+                "bmjz": "2024年06月08日 09:00",
+                "bsks": "2024年06月08日 10:00",
+                "bsjs": "2024年06月10日 18:00",
+                "readmore": "R3CTF2024 是由 r3kapig 和 YuanHeng实验室 组织的在线解题(jeopardy)CTF。同时 YuanHeng实验室 提供所有奖品！我们欢迎来自世界各地的CTFer在这48小时内玩得开心。更多信息：https://discord.gg/zU64ekBsgA",
+                "status": 4
+            },
+            {
+                "name": "墨者杯",
+                "link": "https://www.c.mozhe.cn/#/",
+                "type": "个人赛",
+                "bmks": "2024年05月30日 00:00",
+                "bmjz": "2024年06月05日 17:00",
+                "bsks": "2024年06月06日 10:00",
+                "bsjs": "2024年06月06日 14:00",
+                "readmore": "QQ群：623112042",
+                "status": 4
+            },
+            {
+                "name": "第十七届全国大学生信息安全竞赛 - 作品赛",
+                "link": "http://www.ciscn.cn/competition/securityCompetition?compet_id=39",
+                "type": "作品赛",
+                "bmks": "2024年04月07日 23:00",
+                "bmjz": "2024年06月05日 23:00",
+                "bsks": "2024年04月10日 23:00",
+                "bsjs": "2024年06月05日 23:00",
+                "readmore": "作品赛，不提供更多信息，如有疑问请前往比赛通知页面 http://www.ciscn.cn/competition/securityCompetition?compet_id=39",
+                "status": 4
+            },
+            {
+                "name": "矩阵杯",
+                "link": "https://matrixcup.net/page/race/home/",
+                "type": "团队赛|1-4人",
+                "bmks": "2024年04月26日 00:00",
+                "bmjz": "2024年05月26日 00:00",
+                "bsks": "2024年06月01日 00:00",
+                "bsjs": "2024年06月02日 00:00",
+                "readmore": "详情关注官网信息",
+                "status": 4
+            },
+            {
+                "name": "LitCTF2024",
+                "link": "https://www.nssctf.cn/contest/470/",
+                "type": "团队赛|1-4人",
+                "bmks": "2024年05月02日 08:00",
+                "bmjz": "2024年06月01日 07:00",
+                "bsks": "2024年06月01日 09:00",
+                "bsjs": "2024年06月01日 18:00",
+                "readmore": "Q群：782400974",
+                "status": 4
+            },
+            {
+                "name": "RCTF 2024",
+                "link": "https://adworld.xctf.org.cn/contest",
+                "type": "团队赛",
+                "bmks": "2024年05月11日 00:00",
+                "bmjz": "2024年05月27日 09:00",
+                "bsks": "2024年05月25日 09:00",
+                "bsjs": "2024年05月27日 09:00",
+                "readmore": "QQ群：512066352",
+                "status": 4
+            },
+            {
+                "name": "第二届京麒CTF挑战赛",
+                "link": "https://jqctf.jd.com",
+                "type": "团队赛",
+                "bmks": "2024年05月06日 08:00",
+                "bmjz": "2024年05月26日 07:00",
+                "bsks": "2024年05月26日 08:00",
+                "bsjs": "2024年05月26日 18:00",
+                "readmore": "QQ群：605379906",
+                "status": 4
+            },
+            {
+                "name": "DragonKnight CTF",
+                "link": "https://www.qsnctf.com/#/main/race-center",
+                "type": "团队赛|1-4人",
+                "bmks": "2024年05月14日 00:00",
+                "bmjz": "2024年05月24日 18:00",
+                "bsks": "2024年05月25日 09:00",
+                "bsjs": "2024年05月26日 18:00",
+                "readmore": "QQ群：933699782",
+                "status": 4
+            },
+            {
+                "name": "第九届上海市大学生网络安全大赛暨“磐石行动”2024第二届全国高校网络安全邀请赛",
+                "link": "https://mp.weixin.qq.com/s/-BK28uJAvW6vAUVgFElymA",
+                "type": "团队赛|1-3人",
+                "bmks": "2024年05月07日 00:00",
+                "bmjz": "2024年05月25日 00:00",
+                "bsks": "2024年05月25日 09:00",
+                "bsjs": "2024年05月25日 21:00",
+                "readmore": "QQ群515383635",
+                "status": 4
+            },
+            {
+                "name": "ISCC 2024",
+                "link": "http://www.isclab.org.cn",
+                "type": "个人赛 | 人脉",
+                "bmks": "2024年04月30日 08:00",
+                "bmjz": "2024年05月01日 07:00",
+                "bsks": "2024年05月01日 08:00",
+                "bsjs": "2024年05月25日 08:00",
+                "readmore": "QQ群:619577692 / 852601317 邮箱:iscc2004@163.com",
+                "status": 4
+            },
+            {
+                "name": "第十七届全国大学生信息安全竞赛——创新实践能力赛",
+                "link": "http://www.ciscn.cn/",
+                "type": "团队赛 | 1-4人",
+                "bmks": "2024年04月12日 00:00",
+                "bmjz": "2024年05月14日 18:00",
+                "bsks": "2024年05月18日 09:00",
+                "bsjs": "2024年05月19日 18:00",
+                "readmore": "545083579 (17届信安创新实践赛指导老师群)  327904910 (17届信安创新实践赛学生①群)  191965192 (17届信安创新实践赛学生②群)  566613050 (17届信安创新实践赛学生③群)  570834671 (17届信安创新实践赛学生④群)",
+                "status": 4
+            },
+            {
+                "name": "H&NCTF",
+                "link": "https://hnctf.imxbt.cn/",
+                "type": "团队赛|1-4人",
+                "bmks": "2024年05月10日 08:00",
+                "bmjz": "2024年05月13日 18:00",
+                "bsks": "2024年05月12日 08:00",
+                "bsjs": "2024年05月13日 18:00",
+                "readmore": "QQ群：733181790",
+                "status": 4
+            },
+            {
+                "name": "第二届黄河流域公安院校网络空间安全技能挑战赛",
+                "link": "http://sdpctf.sdpcsec.cn/",
+                "type": "个人赛",
+                "bmks": "2024年05月01日 00:00",
+                "bmjz": "2024年05月12日  17:00",
+                "bsks": "2024年05月12日  09:00",
+                "bsjs": "2024年05月12日  17:00",
+                "readmore": "QQ1群:915263648 QQ2群:964202741",
+                "status": 4
+            }
+        ],
+        "total": 77,
+        "page": 1,
+        "size": 20
+    },
+    "msg": ""
+}
