@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅析GeoServer property 表达式注入代码执行(CVE-2024-36401)](https://y4tacker.github.io/2024/07/03/year/2024/7/%E6%B5%85%E6%9E%90GeoServer-property-%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B3%A8%E5%85%A5%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C-CVE-2024-36401/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-07-03
+
+    漏洞复现分析从公告来看，漏洞来源于geotools这个库使用apache xpath解析xpath导致的问题https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvvhttps://github.com/geotools/geotools/pull/4797https://github.com/geo...
     ### [内网渗透信息搜集骚姿势](https://blog.zgsec.cn/archives/608.html)  
     >by [曾哥](https://blog.zgsec.cn/), 2024-06-30
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-01-12
 
     浅析Gitlab未授权密码重置(CVE-2023-7028)补丁在https://gitlab.com/rluna-gitlab/gitlab-ce/-/commit/24d1060c0ae7d0ba432271da98f4fa20ab6fd671，由于问题非常简单，这里就不多说了可以看到在原来的逻辑当中app/models/concerns/recoverable_by_any_email.rb...
-    ### [如何判断在IDEA中程序正在运行或正在Debug](https://y4tacker.github.io/2024/01/04/year/2024/1/%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E5%9C%A8IDEA%E4%B8%AD%E7%A8%8B%E5%BA%8F%E6%AD%A3%E5%9C%A8%E8%BF%90%E8%A1%8C%E6%88%96%E6%AD%A3%E5%9C%A8Debug/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-01-04
-
-    如何判断在IDEA中程序正在运行或正在Debug给大家分享一个有趣又无用的东西，如何判断在IDEA中程序正在运行或正在Debug在这个之前我们首先需要了解一个类ManagementFactory ，它是 Java 标准库中的一个类，它提供了访问运行时系统管理接口的工厂方法。通过 ManagementFactory 类，可以获取包括操作系统、内存、线程、类加载器等在内的多种系统管理信息。一些常用的用...
 
 </div>
