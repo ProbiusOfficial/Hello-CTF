@@ -504,18 +504,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Junior.Crypt.2024 CTF",
-        "比赛时间": "2024-07-03 23:00:00 - 2024-07-05 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2259.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf-spcs.mf.grsu.by/",
-        "比赛标志": "https://ctftime.org/media/events/logo_NY.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Beavers0 (https://ctftime.org/team/269281)",
-        "比赛ID": "1041",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "DownUnderCTF 2024",
         "比赛时间": "2024-07-05 17:30:00 - 2024-07-07 17:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2284.ics",
@@ -538,6 +526,18 @@
         "赛事主办": "Interlogica (https://ctftime.org/team/250899)",
         "比赛ID": "1065",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Junior.Crypt.2024 CTF",
+        "比赛时间": "2024-07-03 23:00:00 - 2024-07-05 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2259.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf-spcs.mf.grsu.by/",
+        "比赛标志": "https://ctftime.org/media/events/logo_NY.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Beavers0 (https://ctftime.org/team/269281)",
+        "比赛ID": "1041",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "DiceCTF 2024 Finals",
@@ -1725,18 +1725,6 @@
         "比赛权重": "0",
         "赛事主办": "GEEKCON (https://ctftime.org/team/255059)",
         "比赛ID": "1104",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "RITSEC CTF 2024",
-        "比赛时间": "2024-04-06 00:00:00 - 2024-04-08 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2291.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfd.ritsec.club/",
-        "比赛标志": "https://ctftime.org/media/events/Ritsec-CTF-2024-r1.jpg",
-        "比赛权重": "26.98",
-        "赛事主办": "Contagion (https://ctftime.org/team/152691)",
-        "比赛ID": "170",
         "比赛状态": "past"
     }
 ]

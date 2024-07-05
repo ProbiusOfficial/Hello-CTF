@@ -739,15 +739,6 @@ hide:
                 **赛事主办** : hackrocks (https://ctftime.org/team/175823)  
                 **添加日历** : https://ctftime.org/event/2393.ics  
                 
-            ??? Quote "[Junior.Crypt.2024 CTF](http://ctf-spcs.mf.grsu.by/)"  
-                [![](https://ctftime.org/media/events/logo_NY.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
-                **比赛名称** : [Junior.Crypt.2024 CTF](http://ctf-spcs.mf.grsu.by/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-07-03 23:00:00 - 2024-07-05 23:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
-                **添加日历** : https://ctftime.org/event/2259.ics  
-                
             ??? Quote "[DownUnderCTF 2024](https://play.duc.tf/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://play.duc.tf/)  
                 **比赛名称** : [DownUnderCTF 2024](https://play.duc.tf/)  
@@ -874,6 +865,15 @@ hide:
                 **其他说明** : QQ1群:915263648 QQ2群:964202741  
                 
         === "国外赛事"
+            ??? Quote "[Junior.Crypt.2024 CTF](http://ctf-spcs.mf.grsu.by/)"  
+                [![](https://ctftime.org/media/events/logo_NY.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
+                **比赛名称** : [Junior.Crypt.2024 CTF](http://ctf-spcs.mf.grsu.by/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-07-03 23:00:00 - 2024-07-05 23:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
+                **添加日历** : https://ctftime.org/event/2259.ics  
+                
             ??? Quote "[DiceCTF 2024 Finals](https://ctf.dicega.ng/)"  
                 [![](https://ctftime.org/media/events/dicectf_2_1_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
                 **比赛名称** : [DiceCTF 2024 Finals](https://ctf.dicega.ng/)  
@@ -1764,15 +1764,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : GEEKCON (https://ctftime.org/team/255059)  
                 **添加日历** : https://ctftime.org/event/2332.ics  
-                
-            ??? Quote "[RITSEC CTF 2024](https://ctfd.ritsec.club/)"  
-                [![](https://ctftime.org/media/events/Ritsec-CTF-2024-r1.jpg){ width="200" align=left }](https://ctfd.ritsec.club/)  
-                **比赛名称** : [RITSEC CTF 2024](https://ctfd.ritsec.club/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-06 00:00:00 - 2024-04-08 00:00:00 UTC+8  
-                **比赛权重** : 26.98  
-                **赛事主办** : Contagion (https://ctftime.org/team/152691)  
-                **添加日历** : https://ctftime.org/event/2291.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
