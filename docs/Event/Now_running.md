@@ -45,3 +45,12 @@ comments: true
     **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
     **添加日历** : https://ctftime.org/event/2259.ics  
     
+??? Quote "[DownUnderCTF 2024](https://play.duc.tf/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://play.duc.tf/)  
+    **比赛名称** : [DownUnderCTF 2024](https://play.duc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-07-05 17:30:00 - 2024-07-07 17:30:00 UTC+8  
+    **比赛权重** : 68.04  
+    **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
+    **添加日历** : https://ctftime.org/event/2284.ics  
+    
