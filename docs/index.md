@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群：979328132  
                 
     === "国外比赛"
-        ??? Quote "[Interlogica CTF2024 - Wastelands](https://ctf.interlogica.ninja/)"  
-            [![](https://ctftime.org/media/events/Untitled_2.png){ width="200" align=left }](https://ctf.interlogica.ninja/)  
-            **比赛名称** : [Interlogica CTF2024 - Wastelands](https://ctf.interlogica.ninja/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-07-05 20:37:00 - 2024-07-08 06:59:59 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Interlogica (https://ctftime.org/team/250899)  
-            **添加日历** : https://ctftime.org/event/2301.ics  
-            
         ??? Quote "[HITCON CTF 2024 Quals](https://ctf2024.hitcon.org/)"  
             [![](https://ctftime.org/media/events/hitcon-ctf_monotone_black.png){ width="200" align=left }](https://ctf2024.hitcon.org/)  
             **比赛名称** : [HITCON CTF 2024 Quals](https://ctf2024.hitcon.org/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : CatTheFlag (https://ctftime.org/team/306432)  
             **添加日历** : https://ctftime.org/event/2414.ics  
+            
+        ??? Quote "[ImaginaryCTF 2024](https://2024.imaginaryctf.org/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://2024.imaginaryctf.org/)  
+            **比赛名称** : [ImaginaryCTF 2024](https://2024.imaginaryctf.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-07-20 03:00:00 - 2024-07-22 03:00:00 UTC+8  
+            **比赛权重** : 49.81  
+            **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
+            **添加日历** : https://ctftime.org/event/2396.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
