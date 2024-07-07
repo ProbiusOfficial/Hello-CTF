@@ -504,18 +504,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "DownUnderCTF 2024",
-        "比赛时间": "2024-07-05 17:30:00 - 2024-07-07 17:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2284.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://play.duc.tf/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "68.04",
-        "赛事主办": "DownUnderCTF (https://ctftime.org/team/126400)",
-        "比赛ID": "481",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Interlogica CTF2024 - Wastelands",
         "比赛时间": "2024-07-05 20:37:00 - 2024-07-08 06:59:59 UTC+8",
         "添加日历": "https://ctftime.org/event/2301.ics",
@@ -526,6 +514,18 @@
         "赛事主办": "Interlogica (https://ctftime.org/team/250899)",
         "比赛ID": "1065",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "DownUnderCTF 2024",
+        "比赛时间": "2024-07-05 17:30:00 - 2024-07-07 17:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2284.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://play.duc.tf/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "68.04",
+        "赛事主办": "DownUnderCTF (https://ctftime.org/team/126400)",
+        "比赛ID": "481",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Junior.Crypt.2024 CTF",
@@ -1713,18 +1713,6 @@
         "比赛权重": "48.25",
         "赛事主办": "TAMUctf (https://ctftime.org/team/37721)",
         "比赛ID": "198",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "GEEK CTF 2024",
-        "比赛时间": "2024-04-06 04:00:00 - 2024-04-15 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2332.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://geekctf.geekcon.top/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "GEEKCON (https://ctftime.org/team/255059)",
-        "比赛ID": "1104",
         "比赛状态": "past"
     }
 ]

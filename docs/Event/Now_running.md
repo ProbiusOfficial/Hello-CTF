@@ -42,15 +42,6 @@ comments: true
     **赛事主办** : hackrocks (https://ctftime.org/team/175823)  
     **添加日历** : https://ctftime.org/event/2393.ics  
     
-??? Quote "[DownUnderCTF 2024](https://play.duc.tf/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://play.duc.tf/)  
-    **比赛名称** : [DownUnderCTF 2024](https://play.duc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-07-05 17:30:00 - 2024-07-07 17:30:00 UTC+8  
-    **比赛权重** : 68.04  
-    **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
-    **添加日历** : https://ctftime.org/event/2284.ics  
-    
 ??? Quote "[Interlogica CTF2024 - Wastelands](https://ctf.interlogica.ninja/)"  
     [![](https://ctftime.org/media/events/Untitled_2.png){ width="200" align=left }](https://ctf.interlogica.ninja/)  
     **比赛名称** : [Interlogica CTF2024 - Wastelands](https://ctf.interlogica.ninja/)  

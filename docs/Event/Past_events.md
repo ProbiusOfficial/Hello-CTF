@@ -119,6 +119,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[DownUnderCTF 2024](https://play.duc.tf/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://play.duc.tf/)  
+    **比赛名称** : [DownUnderCTF 2024](https://play.duc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-07-05 17:30:00 - 2024-07-07 17:30:00 UTC+8  
+    **比赛权重** : 68.04  
+    **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
+    **添加日历** : https://ctftime.org/event/2284.ics  
+    
 ??? Quote "[Junior.Crypt.2024 CTF](http://ctf-spcs.mf.grsu.by/)"  
     [![](https://ctftime.org/media/events/logo_NY.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
     **比赛名称** : [Junior.Crypt.2024 CTF](http://ctf-spcs.mf.grsu.by/)  
@@ -1009,13 +1018,4 @@ comments: true
     **比赛权重** : 48.25  
     **赛事主办** : TAMUctf (https://ctftime.org/team/37721)  
     **添加日历** : https://ctftime.org/event/2238.ics  
-    
-??? Quote "[GEEK CTF 2024](https://geekctf.geekcon.top/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://geekctf.geekcon.top/)  
-    **比赛名称** : [GEEK CTF 2024](https://geekctf.geekcon.top/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-06 04:00:00 - 2024-04-15 04:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : GEEKCON (https://ctftime.org/team/255059)  
-    **添加日历** : https://ctftime.org/event/2332.ics  
     
