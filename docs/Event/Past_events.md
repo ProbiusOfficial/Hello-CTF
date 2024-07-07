@@ -126,6 +126,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Interlogica CTF2024 - Wastelands](https://ctf.interlogica.ninja/)"  
+    [![](https://ctftime.org/media/events/Untitled_2.png){ width="200" align=left }](https://ctf.interlogica.ninja/)  
+    **比赛名称** : [Interlogica CTF2024 - Wastelands](https://ctf.interlogica.ninja/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-07-05 20:37:00 - 2024-07-08 06:59:59 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Interlogica (https://ctftime.org/team/250899)  
+    **添加日历** : https://ctftime.org/event/2301.ics  
+    
 ??? Quote "[DownUnderCTF 2024](https://play.duc.tf/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://play.duc.tf/)  
     **比赛名称** : [DownUnderCTF 2024](https://play.duc.tf/)  
@@ -1016,13 +1025,4 @@ comments: true
     **比赛权重** : 40.97  
     **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
     **添加日历** : https://ctftime.org/event/2138.ics  
-    
-??? Quote "[TAMUctf 2024](http://tamuctf.com/)"  
-    [![](https://ctftime.org/media/events/TAMUCTF_cmaroon_2.png){ width="200" align=left }](http://tamuctf.com/)  
-    **比赛名称** : [TAMUctf 2024](http://tamuctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8  
-    **比赛权重** : 48.25  
-    **赛事主办** : TAMUctf (https://ctftime.org/team/37721)  
-    **添加日历** : https://ctftime.org/event/2238.ics  
     
