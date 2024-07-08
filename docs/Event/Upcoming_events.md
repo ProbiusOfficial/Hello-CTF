@@ -64,7 +64,7 @@ comments: true
 ??? Quote "[CatTheQuest](https://catthequest.com/)"  
     [![](https://ctftime.org/media/events/DALL_E-2024-03-21-18.10-removebg-preview.png){ width="200" align=left }](https://catthequest.com/)  
     **比赛名称** : [CatTheQuest](https://catthequest.com/)  
-    **比赛形式** : Hack quest  
+    **比赛形式** : Jeopardy  
     **比赛时间** : 2024-07-15 08:00:00 - 2024-07-21 08:00:00 UTC+8  
     **比赛权重** : 0  
     **赛事主办** : CatTheFlag (https://ctftime.org/team/306432)  
