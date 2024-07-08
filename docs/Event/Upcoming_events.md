@@ -259,6 +259,15 @@ comments: true
     **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
     **添加日历** : https://ctftime.org/event/2356.ics  
     
+??? Quote "[21ans LinuxMeetup au Québec](https://www.rencontres-linux.quebec/event/21-ans-de-linux-meetup-au-quebec-1/page/emplacement-21-ans-de-linux-meetup-au-quebec)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://www.rencontres-linux.quebec/event/21-ans-de-linux-meetup-au-quebec-1/page/emplacement-21-ans-de-linux-meetup-au-quebec)  
+    **比赛名称** : [21ans LinuxMeetup au Québec](https://www.rencontres-linux.quebec/event/21-ans-de-linux-meetup-au-quebec-1/page/emplacement-21-ans-de-linux-meetup-au-quebec)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-09-21 21:30:00 - 2024-09-22 05:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : SummerJedi (https://ctftime.org/team/126955)  
+    **添加日历** : https://ctftime.org/event/2422.ics  
+    
 ??? Quote "[ASIS CTF Quals 2024](https://asisctf.com/)"  
     [![](https://ctftime.org/media/events/asisctf.jpg){ width="200" align=left }](https://asisctf.com/)  
     **比赛名称** : [ASIS CTF Quals 2024](https://asisctf.com/)  
