@@ -588,18 +588,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Break The Wall - Dystopia 2099",
-        "比赛时间": "2024-06-26 19:00:00 - 2024-07-11 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2393.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://breakthewall.hackrocks.com/",
-        "比赛标志": "https://ctftime.org/media/events/breakthewall_logo-IrRB.png",
-        "比赛权重": "0",
-        "赛事主办": "hackrocks (https://ctftime.org/team/175823)",
-        "比赛ID": "1124",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Interlogica CTF2024 - Wastelands",
         "比赛时间": "2024-07-05 20:37:00 - 2024-07-08 06:59:59 UTC+8",
         "添加日历": "https://ctftime.org/event/2301.ics",
@@ -669,6 +657,18 @@
         "比赛权重": "19.60",
         "赛事主办": "C0ncl4v3 (https://ctftime.org/team/303692)",
         "比赛ID": "1138",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Break The Wall - Dystopia 2099",
+        "比赛时间": "2024-06-26 19:00:00 - 2024-07-11 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2393.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://breakthewall.hackrocks.com/",
+        "比赛标志": "https://ctftime.org/media/events/breakthewall_logo-IrRB.png",
+        "比赛权重": "0",
+        "赛事主办": "hackrocks (https://ctftime.org/team/175823)",
+        "比赛ID": "1124",
         "比赛状态": "past"
     },
     {
@@ -1785,18 +1785,6 @@
         "比赛权重": "47.75",
         "赛事主办": "OSUSEC (https://ctftime.org/team/12858)",
         "比赛ID": "423",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SwampCTF 2024",
-        "比赛时间": "2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2138.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://swampctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/swampctf.png",
-        "比赛权重": "40.97",
-        "赛事主办": "Kernel Sanders (https://ctftime.org/team/397)",
-        "比赛ID": "241",
         "比赛状态": "past"
     }
 ]

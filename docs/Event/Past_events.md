@@ -180,6 +180,15 @@ comments: true
     **赛事主办** : C0ncl4v3 (https://ctftime.org/team/303692)  
     **添加日历** : https://ctftime.org/event/2397.ics  
     
+??? Quote "[Break The Wall - Dystopia 2099](https://breakthewall.hackrocks.com/)"  
+    [![](https://ctftime.org/media/events/breakthewall_logo-IrRB.png){ width="200" align=left }](https://breakthewall.hackrocks.com/)  
+    **比赛名称** : [Break The Wall - Dystopia 2099](https://breakthewall.hackrocks.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-06-26 19:00:00 - 2024-07-11 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : hackrocks (https://ctftime.org/team/175823)  
+    **添加日历** : https://ctftime.org/event/2393.ics  
+    
 ??? Quote "[Pacific Hackers Pre-DEFCON CTF & BBQ 2024](https://www.meetup.com/pacifichackers/events/301096276/)"  
     [![](https://ctftime.org/media/events/pacific_hacker_bear.png){ width="200" align=left }](https://www.meetup.com/pacifichackers/events/301096276/)  
     **比赛名称** : [Pacific Hackers Pre-DEFCON CTF & BBQ 2024](https://www.meetup.com/pacifichackers/events/301096276/)  
@@ -1016,13 +1025,4 @@ comments: true
     **比赛权重** : 47.75  
     **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
     **添加日历** : https://ctftime.org/event/2262.ics  
-    
-??? Quote "[SwampCTF 2024](https://swampctf.com/)"  
-    [![](https://ctftime.org/media/events/swampctf.png){ width="200" align=left }](https://swampctf.com/)  
-    **比赛名称** : [SwampCTF 2024](https://swampctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-06 06:00:00 - 2024-04-08 06:00:00 UTC+8  
-    **比赛权重** : 40.97  
-    **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
-    **添加日历** : https://ctftime.org/event/2138.ics  
     
