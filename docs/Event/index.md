@@ -418,9 +418,9 @@ hide:
                 **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
                 **添加日历** : https://ctftime.org/event/2421.ics  
                 
-            ??? Quote "[DeadSec CTF 2024]()"  
-                [![](https://ctftime.org/media/events/Picture1_1.png){ width="200" align=left }]()  
-                **比赛名称** : [DeadSec CTF 2024]()  
+            ??? Quote "[DeadSec CTF 2024](https://deadsec.ctf.ae/)"  
+                [![](https://ctftime.org/media/events/Picture1_1.png){ width="200" align=left }](https://deadsec.ctf.ae/)  
+                **比赛名称** : [DeadSec CTF 2024](https://deadsec.ctf.ae/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-07-27 04:00:00 - 2024-07-28 16:00:00 UTC+8  
                 **比赛权重** : 23.96  
@@ -1415,7 +1415,7 @@ hide:
                 **比赛名称** : [squ1rrel CTF 2024](https://ctf.squ1rrel.dev/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-05-04 23:00:00 - 2024-05-06 11:00:00 UTC+8  
-                **比赛权重** : 24.17  
+                **比赛权重** : 24.19  
                 **赛事主办** : squ1rrel (https://ctftime.org/team/201730)  
                 **添加日历** : https://ctftime.org/event/2370.ics  
                 
