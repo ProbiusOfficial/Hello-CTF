@@ -27,3 +27,12 @@ comments: true
     **赛事主办** : Fikamyndigheten (https://ctftime.org/team/305722)  
     **添加日历** : https://ctftime.org/event/2399.ics  
     
+??? Quote "[HITCON CTF 2024 Quals](https://ctf2024.hitcon.org/)"  
+    [![](https://ctftime.org/media/events/hitcon-ctf_monotone_black.png){ width="200" align=left }](https://ctf2024.hitcon.org/)  
+    **比赛名称** : [HITCON CTF 2024 Quals](https://ctf2024.hitcon.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-07-12 22:00:00 - 2024-07-14 22:00:00 UTC+8  
+    **比赛权重** : 100.00  
+    **赛事主办** : HITCON (https://ctftime.org/team/8299)  
+    **添加日历** : https://ctftime.org/event/2345.ics  
+    
