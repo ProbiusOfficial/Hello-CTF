@@ -36,3 +36,12 @@ comments: true
     **赛事主办** : HITCON (https://ctftime.org/team/8299)  
     **添加日历** : https://ctftime.org/event/2345.ics  
     
+??? Quote "[OSCTF](https://ctf.os.ftp.sh/)"  
+    [![](https://ctftime.org/media/events/os_ctf_logo.png){ width="200" align=left }](https://ctf.os.ftp.sh/)  
+    **比赛名称** : [OSCTF](https://ctf.os.ftp.sh/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-07-13 08:30:00 - 2024-07-14 00:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : OSCTF (https://ctftime.org/team/307415)  
+    **添加日历** : https://ctftime.org/event/2416.ics  
+    
