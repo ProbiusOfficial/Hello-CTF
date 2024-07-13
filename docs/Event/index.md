@@ -765,15 +765,6 @@ hide:
                 **赛事主办** : HITCON (https://ctftime.org/team/8299)  
                 **添加日历** : https://ctftime.org/event/2345.ics  
                 
-            ??? Quote "[OSCTF](https://ctf.os.ftp.sh/)"  
-                [![](https://ctftime.org/media/events/os_ctf_logo.png){ width="200" align=left }](https://ctf.os.ftp.sh/)  
-                **比赛名称** : [OSCTF](https://ctf.os.ftp.sh/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-07-13 08:30:00 - 2024-07-14 00:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : OSCTF (https://ctftime.org/team/307415)  
-                **添加日历** : https://ctftime.org/event/2416.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[CTFshow-西瓜杯CTF](https://ctf.show/)"  
@@ -882,6 +873,15 @@ hide:
                 **其他说明** : 545083579 (17届信安创新实践赛指导老师群)  327904910 (17届信安创新实践赛学生①群)  191965192 (17届信安创新实践赛学生②群)  566613050 (17届信安创新实践赛学生③群)  570834671 (17届信安创新实践赛学生④群)  
                 
         === "国外赛事"
+            ??? Quote "[OSCTF](https://ctf.os.ftp.sh/)"  
+                [![](https://ctftime.org/media/events/os_ctf_logo.png){ width="200" align=left }](https://ctf.os.ftp.sh/)  
+                **比赛名称** : [OSCTF](https://ctf.os.ftp.sh/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-07-13 08:30:00 - 2024-07-14 00:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : OSCTF (https://ctftime.org/team/307415)  
+                **添加日历** : https://ctftime.org/event/2416.ics  
+                
             ??? Quote "[Interlogica CTF2024 - Wastelands](https://ctf.interlogica.ninja/)"  
                 [![](https://ctftime.org/media/events/Untitled_2.png){ width="200" align=left }](https://ctf.interlogica.ninja/)  
                 **比赛名称** : [Interlogica CTF2024 - Wastelands](https://ctf.interlogica.ninja/)  
@@ -1772,15 +1772,6 @@ hide:
                 **比赛权重** : 23.65  
                 **赛事主办** : pony7 (https://ctftime.org/team/20769)  
                 **添加日历** : https://ctftime.org/event/2269.ics  
-                
-            ??? Quote "[DamCTF 2024](https://damctf.xyz/)"  
-                [![](https://ctftime.org/media/events/DAM-CTF-2020-Icon_1.png){ width="200" align=left }](https://damctf.xyz/)  
-                **比赛名称** : [DamCTF 2024](https://damctf.xyz/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-06 08:00:00 - 2024-04-08 08:00:00 UTC+8  
-                **比赛权重** : 47.75  
-                **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
-                **添加日历** : https://ctftime.org/event/2262.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

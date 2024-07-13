@@ -585,7 +585,7 @@
         "比赛权重": "0",
         "赛事主办": "OSCTF (https://ctftime.org/team/307415)",
         "比赛ID": "1144",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Interlogica CTF2024 - Wastelands",
@@ -1773,18 +1773,6 @@
         "比赛权重": "23.65",
         "赛事主办": "pony7 (https://ctftime.org/team/20769)",
         "比赛ID": "181",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DamCTF 2024",
-        "比赛时间": "2024-04-06 08:00:00 - 2024-04-08 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2262.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://damctf.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/DAM-CTF-2020-Icon_1.png",
-        "比赛权重": "47.75",
-        "赛事主办": "OSUSEC (https://ctftime.org/team/12858)",
-        "比赛ID": "423",
         "比赛状态": "past"
     }
 ]
