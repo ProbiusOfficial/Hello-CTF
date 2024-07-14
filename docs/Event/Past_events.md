@@ -160,7 +160,7 @@ comments: true
     **比赛名称** : [Junior.Crypt.2024 CTF](http://ctf-spcs.mf.grsu.by/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-07-03 23:00:00 - 2024-07-05 23:00:00 UTC+8  
-    **比赛权重** : 23.64  
+    **比赛权重** : 23.81  
     **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
     **添加日历** : https://ctftime.org/event/2259.ics  
     
