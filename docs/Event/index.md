@@ -743,15 +743,6 @@ hide:
                 **赛事主办** : Fikamyndigheten (https://ctftime.org/team/305722)  
                 **添加日历** : https://ctftime.org/event/2399.ics  
                 
-            ??? Quote "[HITCON CTF 2024 Quals](https://ctf2024.hitcon.org/)"  
-                [![](https://ctftime.org/media/events/hitcon-ctf_monotone_black.png){ width="200" align=left }](https://ctf2024.hitcon.org/)  
-                **比赛名称** : [HITCON CTF 2024 Quals](https://ctf2024.hitcon.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-07-12 22:00:00 - 2024-07-14 22:00:00 UTC+8  
-                **比赛权重** : 100.00  
-                **赛事主办** : HITCON (https://ctftime.org/team/8299)  
-                **添加日历** : https://ctftime.org/event/2345.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[WKCTF 2024](http://110.40.35.73:81/)"  
@@ -875,6 +866,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : OSCTF (https://ctftime.org/team/307415)  
                 **添加日历** : https://ctftime.org/event/2416.ics  
+                
+            ??? Quote "[HITCON CTF 2024 Quals](https://ctf2024.hitcon.org/)"  
+                [![](https://ctftime.org/media/events/hitcon-ctf_monotone_black.png){ width="200" align=left }](https://ctf2024.hitcon.org/)  
+                **比赛名称** : [HITCON CTF 2024 Quals](https://ctf2024.hitcon.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-07-12 22:00:00 - 2024-07-14 22:00:00 UTC+8  
+                **比赛权重** : 100.00  
+                **赛事主办** : HITCON (https://ctftime.org/team/8299)  
+                **添加日历** : https://ctftime.org/event/2345.ics  
                 
             ??? Quote "[Interlogica CTF2024 - Wastelands](https://ctf.interlogica.ninja/)"  
                 [![](https://ctftime.org/media/events/Untitled_2.png){ width="200" align=left }](https://ctf.interlogica.ninja/)  
@@ -1757,15 +1757,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
                 **添加日历** : https://ctftime.org/event/2310.ics  
-                
-            ??? Quote "[THCon 2k24 CTF](http://ctf.thcon.party/)"  
-                [![](https://ctftime.org/media/events/logo-desktop.png){ width="200" align=left }](http://ctf.thcon.party/)  
-                **比赛名称** : [THCon 2k24 CTF](http://ctf.thcon.party/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-06 18:00:00 - 2024-04-08 18:00:00 UTC+8  
-                **比赛权重** : 23.65  
-                **赛事主办** : pony7 (https://ctftime.org/team/20769)  
-                **添加日历** : https://ctftime.org/event/2269.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
