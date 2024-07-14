@@ -594,7 +594,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.interlogica.ninja/",
         "比赛标志": "https://ctftime.org/media/events/Untitled_2.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "Interlogica (https://ctftime.org/team/250899)",
         "比赛ID": "1065",
         "比赛状态": "past"

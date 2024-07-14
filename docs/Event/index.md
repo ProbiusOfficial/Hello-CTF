@@ -881,7 +881,7 @@ hide:
                 **比赛名称** : [Interlogica CTF2024 - Wastelands](https://ctf.interlogica.ninja/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-07-05 20:37:00 - 2024-07-08 06:59:59 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : Interlogica (https://ctftime.org/team/250899)  
                 **添加日历** : https://ctftime.org/event/2301.ics  
                 
