@@ -76,15 +76,6 @@ hide:
             **其他说明** : QQ群：676547374 或 566180593  
                 
     === "国外比赛"
-        ??? Quote "[CatTheQuest](https://catthequest.com/)"  
-            [![](https://ctftime.org/media/events/DALL_E-2024-03-21-18.10-removebg-preview.png){ width="200" align=left }](https://catthequest.com/)  
-            **比赛名称** : [CatTheQuest](https://catthequest.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-07-15 08:00:00 - 2024-07-21 08:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : CatTheFlag (https://ctftime.org/team/306432)  
-            **添加日历** : https://ctftime.org/event/2414.ics  
-            
         ??? Quote "[ImaginaryCTF 2024](https://2024.imaginaryctf.org/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://2024.imaginaryctf.org/)  
             **比赛名称** : [ImaginaryCTF 2024](https://2024.imaginaryctf.org/)  
@@ -111,6 +102,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
             **添加日历** : https://ctftime.org/event/2293.ics  
+            
+        ??? Quote "[ENOWARS 8](https://8.enowars.com/)"  
+            [![](https://ctftime.org/media/events/enowars8.png){ width="200" align=left }](https://8.enowars.com/)  
+            **比赛名称** : [ENOWARS 8](https://8.enowars.com/)  
+            **比赛形式** : Attack-Defense  
+            **比赛时间** : 2024-07-20 20:00:00 - 2024-07-21 05:00:00 UTC+8  
+            **比赛权重** : 98.89  
+            **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
+            **添加日历** : https://ctftime.org/event/2412.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
