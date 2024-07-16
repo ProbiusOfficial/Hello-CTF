@@ -5,12 +5,40 @@ comments: true
 
 ## 国内赛事
 
+??? Quote "第八届御网杯信息安全大赛"  
+    **比赛名称** : [第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)  
+    **比赛类型** : 个人赛 and 团体赛|3人  
+    **报名时间** : 2024年07月26日 08:00 - 2024年09月20日 18:00  
+    **比赛时间** : 2024年09月21日 00:00 - 2024年10月27日 23:59  
+    **其他说明** : 更多信息请前往官网https://www.hncsisc.com 的“赛事活动”查看  
+    
 ??? Quote "第四届极客少年挑战赛（决赛）"  
     **比赛名称** : [第四届极客少年挑战赛（决赛）](https://www.cdccs.cn/#/geekYouth)  
     **比赛类型** : 个人赛  
     **报名时间** : 2024年07月22日 10:00 - 2024年07月23日 09:00  
     **比赛时间** : 2024年08月23日 10:00 - 2024年08月23日 15:00  
     **其他说明** : QQ群：961713058  
+    
+??? Quote "2024年辽宁大学研究生网络安全创新实践大赛"  
+    **比赛名称** : [2024年辽宁大学研究生网络安全创新实践大赛](https://mp.weixin.qq.com/s?search_click_id=1419197875279398874-1721064257482-5560857333&__biz=MzkwODY4NjEwMA==&mid=2247483898&idx=2&sn=9e98fa0801ff04680dc13785de62ec59&chksm=c1d81e30983ce3afed49948819b79e7332489d251f75003da001e323b575dc6267a3f9b3c7c3&scene=7&subscene=10000&sessionid=1721062624&clicktime=1721064257&enterid=1721064257&ascene=65&fasttmpl_type=0&fasttmpl_fullversion=7295595-zh_CN-zip&fasttmpl_flag=0&realreporttime=1721064257512&devicetype=android-34&version=28002e34&nettype=WIFI&abtest_cookie=AAACAA==&lang=zh_CN&countrycode=CN&exportkey=n_ChQIAhIQcvD8xBlhKOyhNiXR+sSwhxLiAQIE97dBBAEAAAAAALJPGgdGHkcAAAAOpnltbLcz9gKNyK89dVj05OQmnZhmX5QxbgZxJq2kXOv2MdwjaAf3iVTLVGCcQUSG7VlEEpibGRWcgGV1BZpKtLcneOndlVFC2eMkTtAv8YTngrwgPTc44eKAtyGHcw9azAA/Lyju97FKSOW2D6eW7ZlNCG9gFS8WG6AcsPuxVr7PhVh4jtPz7vGomi56weNGB+8NjPr5ChEwlxJP+UN5C5JA5rUMV2rKtdZBeiASZdqEjpQcPvQmFzF6OVw0NHDUJ/bDftCImrDsZKo=&pass_ticket=kVxbyE61cIHqlon9l8MZfpuGMpxcldPEOp9u/xMr3MOyS4E0APheem2kMNVrm4dm&wx_header=3)  
+    **比赛类型** : 团队赛|1-4人  
+    **报名时间** : 2024年07月15日 18:41 - 2024年08月31日 23:59  
+    **比赛时间** : 2024年08月31日 23:59 - 2024年08月31日 23:59  
+    **其他说明** : 仅限辽宁大学研究生 | 参赛队伍需同时参加“华为杯”第三届中国研究生网络安全创新大赛  
+    
+??? Quote "2024年南昌市“洪工杯”网络安全行业职工职业技能竞赛"  
+    **比赛名称** : [2024年南昌市“洪工杯”网络安全行业职工职业技能竞赛](http://61.147.171.109/race/nanchang2024)  
+    **比赛类型** : 团队赛|3人  
+    **报名时间** : 2024年06月21日 00:00 - 2024年07月21日 23:59  
+    **比赛时间** : 2024年07月27日 00:00 - 2024年07月27日 23:59  
+    **其他说明** : 初赛QQ群: 787262369  
+    
+??? Quote "“华为杯”第三届中国研究生网络安全创新大赛"  
+    **比赛名称** : [“华为杯”第三届中国研究生网络安全创新大赛](https://cpipc.acge.org.cn//pw/detail/2c9080188fc20569018fe6375eeb2eb2)  
+    **比赛类型** : 团队赛|1-4人  
+    **报名时间** : 2024年05月06日 00:00 - 2024年09月23日 23:59  
+    **比赛时间** : 2024年09月25日 00:00 - 2024年09月25日 23:59  
+    **其他说明** : QQ群: 794148708|仅限研究生参加  
     
 ??? Quote "第三届江苏大学研究生网络安全创新大赛"  
     **比赛名称** : [第三届江苏大学研究生网络安全创新大赛](https://yjsy.ujs.edu.cn/info/1305/28415.htm)  
@@ -25,6 +53,13 @@ comments: true
     **报名时间** : 2024年7月15日 00:00 - 2024年7月31日 23:59  
     **比赛时间** : 2024年08月01日 00:00 - 2024年08月20日 23:59  
     **其他说明** : QQ群: 622869531 组委会邮箱: tianwangcup@163.com  
+    
+??? Quote "“广东通信杯”广东省信息通信行业第四届网络安全技能大赛暨第八届全国职工职业技能大赛网络与信息安全管理员赛项广东省选拔赛"  
+    **比赛名称** : [“广东通信杯”广东省信息通信行业第四届网络安全技能大赛暨第八届全国职工职业技能大赛网络与信息安全管理员赛项广东省选拔赛](https://gdca.miit.gov.cn/zwgk/tzgg/art/2024/art_c220b24f198346e08bb0074f511a6121.html)  
+    **比赛类型** : 个人赛 and 团队赛|3人  
+    **报名时间** : 2024年06月27日 15:42 - 2024年07月15日 23:59  
+    **比赛时间** : 2024年08月04日 08:30 - 2024年08月04日 16:30  
+    **其他说明** : 仅限在册工作人员参加  
     
 ??? Quote "第五届“闽盾杯”网络空间安全大塞黑盾全国大学生赛道（决赛）"  
     **比赛名称** : [第五届“闽盾杯”网络空间安全大塞黑盾全国大学生赛道（决赛）](http://heidunbei.si.net.cn/hdc/cover)  
