@@ -481,6 +481,15 @@ comments: true
     **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
     **添加日历** : https://ctftime.org/event/2406.ics  
     
+??? Quote "[hxp 38C3 CTF](https://2024.ctf.link/)"  
+    [![](https://ctftime.org/media/events/hxp-38c3.png){ width="200" align=left }](https://2024.ctf.link/)  
+    **比赛名称** : [hxp 38C3 CTF](https://2024.ctf.link/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-12-28 04:00:00 - 2024-12-30 04:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : hxp (https://ctftime.org/team/585)  
+    **添加日历** : https://ctftime.org/event/2437.ics  
+    
 ??? Quote "[ASIS CTF Finals 2024](https://asisctf.com/)"  
     [![](https://ctftime.org/media/events/asis_logo.png){ width="200" align=left }](https://asisctf.com/)  
     **比赛名称** : [ASIS CTF Finals 2024](https://asisctf.com/)  
