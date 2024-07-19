@@ -83,15 +83,6 @@ hide:
             **其他说明** : 仅限在册工作人员参加  
                 
     === "国外比赛"
-        ??? Quote "[ImaginaryCTF 2024](https://2024.imaginaryctf.org/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://2024.imaginaryctf.org/)  
-            **比赛名称** : [ImaginaryCTF 2024](https://2024.imaginaryctf.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-07-20 03:00:00 - 2024-07-22 03:00:00 UTC+8  
-            **比赛权重** : 49.81  
-            **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
-            **添加日历** : https://ctftime.org/event/2396.ics  
-            
         ??? Quote "[DASCTF 2024 Summer Challenge](https://buuoj.cn/match/matches/207)"  
             [![](https://ctftime.org/media/events/Dingtalk_20240709141420.jpg){ width="200" align=left }](https://buuoj.cn/match/matches/207)  
             **比赛名称** : [DASCTF 2024 Summer Challenge](https://buuoj.cn/match/matches/207)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 98.89  
             **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
             **添加日历** : https://ctftime.org/event/2412.ics  
+            
+        ??? Quote "[pbctf 2024](https://ctf.perfect.blue/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ctf.perfect.blue/)  
+            **比赛名称** : [pbctf 2024](https://ctf.perfect.blue/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-07-20 22:00:00 - 2024-07-21 22:00:00 UTC+8  
+            **比赛权重** : 55.00  
+            **赛事主办** : perfect blue (https://ctftime.org/team/53802)  
+            **添加日历** : https://ctftime.org/event/2381.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

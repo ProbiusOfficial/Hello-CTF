@@ -400,15 +400,6 @@ hide:
                 **其他说明** : QQ群：676547374 或 566180593  
                 
         === "国外赛事"
-            ??? Quote "[ImaginaryCTF 2024](https://2024.imaginaryctf.org/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://2024.imaginaryctf.org/)  
-                **比赛名称** : [ImaginaryCTF 2024](https://2024.imaginaryctf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-07-20 03:00:00 - 2024-07-22 03:00:00 UTC+8  
-                **比赛权重** : 49.81  
-                **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
-                **添加日历** : https://ctftime.org/event/2396.ics  
-                
             ??? Quote "[DASCTF 2024 Summer Challenge](https://buuoj.cn/match/matches/207)"  
                 [![](https://ctftime.org/media/events/Dingtalk_20240709141420.jpg){ width="200" align=left }](https://buuoj.cn/match/matches/207)  
                 **比赛名称** : [DASCTF 2024 Summer Challenge](https://buuoj.cn/match/matches/207)  
@@ -866,6 +857,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : CatTheFlag (https://ctftime.org/team/306432)  
                 **添加日历** : https://ctftime.org/event/2414.ics  
+                
+            ??? Quote "[ImaginaryCTF 2024](https://2024.imaginaryctf.org/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://2024.imaginaryctf.org/)  
+                **比赛名称** : [ImaginaryCTF 2024](https://2024.imaginaryctf.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-07-20 03:00:00 - 2024-07-22 03:00:00 UTC+8  
+                **比赛权重** : 49.81  
+                **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
+                **添加日历** : https://ctftime.org/event/2396.ics  
                 
     === "*已经结束*"
         === "国内赛事"
