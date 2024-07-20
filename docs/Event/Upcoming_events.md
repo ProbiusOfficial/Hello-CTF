@@ -78,15 +78,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[BDSec CTF 2024](https://bdsec-ctf.com/)"  
-    [![](https://ctftime.org/media/events/brand-logo_1.png){ width="200" align=left }](https://bdsec-ctf.com/)  
-    **比赛名称** : [BDSec CTF 2024](https://bdsec-ctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-07-20 23:00:00 - 2024-07-21 23:00:00 UTC+8  
-    **比赛权重** : 16.00  
-    **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
-    **添加日历** : https://ctftime.org/event/2421.ics  
-    
 ??? Quote "[Aptos Code Collision CTF 2024](https://ctf.aptosfoundation.org/)"  
     [![](https://ctftime.org/media/events/AptosProfilePic.png){ width="200" align=left }](https://ctf.aptosfoundation.org/)  
     **比赛名称** : [Aptos Code Collision CTF 2024](https://ctf.aptosfoundation.org/)  
