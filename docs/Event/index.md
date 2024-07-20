@@ -814,13 +814,6 @@ hide:
                 **比赛时间** : 2024年07月20日 00:00 - 2024年07月21日 23:59  
                 **其他说明** : QQ群：979328132  
                 
-            ??? Quote "[第四届极客少年挑战赛（初赛）](https://www.cdccs.cn/#/geekYouth)"  
-                **比赛名称** : [第四届极客少年挑战赛（初赛）](https://www.cdccs.cn/#/geekYouth)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年06月19日 00:00 - 2024年07月13日 23:59  
-                **比赛时间** : 2024年07月06日 10:00 - 2024年07月20日 12:00  
-                **其他说明** : QQ群：961713058  
-                
         === "国外赛事"
             ??? Quote "[Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)  
@@ -869,6 +862,13 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[第四届极客少年挑战赛（初赛）](https://www.cdccs.cn/#/geekYouth)"  
+                **比赛名称** : [第四届极客少年挑战赛（初赛）](https://www.cdccs.cn/#/geekYouth)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年06月19日 00:00 - 2024年07月13日 23:59  
+                **比赛时间** : 2024年07月06日 10:00 - 2024年07月20日 12:00  
+                **其他说明** : QQ群：961713058  
+                
             ??? Quote "[WKCTF 2024](http://110.40.35.73:81/)"  
                 **比赛名称** : [WKCTF 2024](http://110.40.35.73:81/)  
                 **比赛类型** : 团队赛|1-4人  
