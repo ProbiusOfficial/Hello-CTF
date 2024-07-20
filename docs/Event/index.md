@@ -400,15 +400,6 @@ hide:
                 **其他说明** : QQ群：676547374 或 566180593  
                 
         === "国外赛事"
-            ??? Quote "[ENOWARS 8](https://8.enowars.com/)"  
-                [![](https://ctftime.org/media/events/enowars8.png){ width="200" align=left }](https://8.enowars.com/)  
-                **比赛名称** : [ENOWARS 8](https://8.enowars.com/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2024-07-20 20:00:00 - 2024-07-21 05:00:00 UTC+8  
-                **比赛权重** : 98.89  
-                **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
-                **添加日历** : https://ctftime.org/event/2412.ics  
-                
             ??? Quote "[pbctf 2024](https://ctf.perfect.blue/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.perfect.blue/)  
                 **比赛名称** : [pbctf 2024](https://ctf.perfect.blue/)  
@@ -850,6 +841,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
                 **添加日历** : https://ctftime.org/event/2293.ics  
+                
+            ??? Quote "[ENOWARS 8](https://8.enowars.com/)"  
+                [![](https://ctftime.org/media/events/enowars8.png){ width="200" align=left }](https://8.enowars.com/)  
+                **比赛名称** : [ENOWARS 8](https://8.enowars.com/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2024-07-20 20:00:00 - 2024-07-21 05:00:00 UTC+8  
+                **比赛权重** : 98.89  
+                **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
+                **添加日历** : https://ctftime.org/event/2412.ics  
                 
     === "*已经结束*"
         === "国内赛事"

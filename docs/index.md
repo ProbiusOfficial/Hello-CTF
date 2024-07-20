@@ -83,15 +83,6 @@ hide:
             **其他说明** : 仅限在册工作人员参加  
                 
     === "国外比赛"
-        ??? Quote "[ENOWARS 8](https://8.enowars.com/)"  
-            [![](https://ctftime.org/media/events/enowars8.png){ width="200" align=left }](https://8.enowars.com/)  
-            **比赛名称** : [ENOWARS 8](https://8.enowars.com/)  
-            **比赛形式** : Attack-Defense  
-            **比赛时间** : 2024-07-20 20:00:00 - 2024-07-21 05:00:00 UTC+8  
-            **比赛权重** : 98.89  
-            **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
-            **添加日历** : https://ctftime.org/event/2412.ics  
-            
         ??? Quote "[pbctf 2024](https://ctf.perfect.blue/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://ctf.perfect.blue/)  
             **比赛名称** : [pbctf 2024](https://ctf.perfect.blue/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : Aptos (https://ctftime.org/team/307766)  
             **添加日历** : https://ctftime.org/event/2433.ics  
+            
+        ??? Quote "[DeadSec CTF 2024](https://deadsec.ctf.ae/)"  
+            [![](https://ctftime.org/media/events/Picture1_1.png){ width="200" align=left }](https://deadsec.ctf.ae/)  
+            **比赛名称** : [DeadSec CTF 2024](https://deadsec.ctf.ae/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-07-27 04:00:00 - 2024-07-28 16:00:00 UTC+8  
+            **比赛权重** : 23.96  
+            **赛事主办** : DeadSec (https://ctftime.org/team/19339)  
+            **添加日历** : https://ctftime.org/event/2353.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
