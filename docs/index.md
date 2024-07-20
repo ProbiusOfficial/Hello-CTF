@@ -83,15 +83,6 @@ hide:
             **其他说明** : 仅限在册工作人员参加  
                 
     === "国外比赛"
-        ??? Quote "[pbctf 2024](https://ctf.perfect.blue/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctf.perfect.blue/)  
-            **比赛名称** : [pbctf 2024](https://ctf.perfect.blue/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-07-20 22:00:00 - 2024-07-21 22:00:00 UTC+8  
-            **比赛权重** : 55.00  
-            **赛事主办** : perfect blue (https://ctftime.org/team/53802)  
-            **添加日历** : https://ctftime.org/event/2381.ics  
-            
         ??? Quote "[BDSec CTF 2024](https://bdsec-ctf.com/)"  
             [![](https://ctftime.org/media/events/brand-logo_1.png){ width="200" align=left }](https://bdsec-ctf.com/)  
             **比赛名称** : [BDSec CTF 2024](https://bdsec-ctf.com/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 23.96  
             **赛事主办** : DeadSec (https://ctftime.org/team/19339)  
             **添加日历** : https://ctftime.org/event/2353.ics  
+            
+        ??? Quote "[corCTF 2024](https://ctf.cor.team/)"  
+            [![](https://ctftime.org/media/events/corctflogo_3.png){ width="200" align=left }](https://ctf.cor.team/)  
+            **比赛名称** : [corCTF 2024](https://ctf.cor.team/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-07-27 08:00:00 - 2024-07-29 08:00:00 UTC+8  
+            **比赛权重** : 55.00  
+            **赛事主办** : Crusaders of Rust (https://ctftime.org/team/132628)  
+            **添加日历** : https://ctftime.org/event/2282.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
