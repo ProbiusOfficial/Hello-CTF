@@ -400,15 +400,6 @@ hide:
                 **其他说明** : QQ群：676547374 或 566180593  
                 
         === "国外赛事"
-            ??? Quote "[DASCTF 2024 Summer Challenge](https://buuoj.cn/match/matches/207)"  
-                [![](https://ctftime.org/media/events/Dingtalk_20240709141420.jpg){ width="200" align=left }](https://buuoj.cn/match/matches/207)  
-                **比赛名称** : [DASCTF 2024 Summer Challenge](https://buuoj.cn/match/matches/207)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-07-20 10:00:00 - 2024-07-20 18:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : DASCTF (https://ctftime.org/team/303691)  
-                **添加日历** : https://ctftime.org/event/2429.ics  
-                
             ??? Quote "[MOCA CTF - Quals](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)  
                 **比赛名称** : [MOCA CTF - Quals](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)  
@@ -866,6 +857,15 @@ hide:
                 **比赛权重** : 49.81  
                 **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
                 **添加日历** : https://ctftime.org/event/2396.ics  
+                
+            ??? Quote "[DASCTF 2024 Summer Challenge](https://buuoj.cn/match/matches/207)"  
+                [![](https://ctftime.org/media/events/Dingtalk_20240709141420.jpg){ width="200" align=left }](https://buuoj.cn/match/matches/207)  
+                **比赛名称** : [DASCTF 2024 Summer Challenge](https://buuoj.cn/match/matches/207)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-07-20 10:00:00 - 2024-07-20 18:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : DASCTF (https://ctftime.org/team/303691)  
+                **添加日历** : https://ctftime.org/event/2429.ics  
                 
     === "*已经结束*"
         === "国内赛事"
