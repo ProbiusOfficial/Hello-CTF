@@ -119,6 +119,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[ENOWARS 8](https://8.enowars.com/)"  
+    [![](https://ctftime.org/media/events/enowars8.png){ width="200" align=left }](https://8.enowars.com/)  
+    **比赛名称** : [ENOWARS 8](https://8.enowars.com/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-07-20 20:00:00 - 2024-07-21 05:00:00 UTC+8  
+    **比赛权重** : 98.89  
+    **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
+    **添加日历** : https://ctftime.org/event/2412.ics  
+    
 ??? Quote "[DASCTF 2024 Summer Challenge](https://buuoj.cn/match/matches/207)"  
     [![](https://ctftime.org/media/events/Dingtalk_20240709141420.jpg){ width="200" align=left }](https://buuoj.cn/match/matches/207)  
     **比赛名称** : [DASCTF 2024 Summer Challenge](https://buuoj.cn/match/matches/207)  
@@ -1009,13 +1018,4 @@ comments: true
     **比赛权重** : 24.30  
     **赛事主办** : nCreeps (https://ctftime.org/team/203035)  
     **添加日历** : https://ctftime.org/event/2336.ics  
-    
-??? Quote "[HackPack CTF 2024 - LLM edition](https://hackpack.club/ctf2024/)"  
-    [![](https://ctftime.org/media/events/Screenshot_2024-04-05_at_10.29.44.png){ width="200" align=left }](https://hackpack.club/ctf2024/)  
-    **比赛名称** : [HackPack CTF 2024 - LLM edition](https://hackpack.club/ctf2024/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-13 00:00:00 - 2024-04-13 23:59:59 UTC+8  
-    **比赛权重** : 32.71  
-    **赛事主办** : hackpack (https://ctftime.org/team/25905)  
-    **添加日历** : https://ctftime.org/event/2333.ics  
     
