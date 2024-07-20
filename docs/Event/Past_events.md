@@ -119,6 +119,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[DASCTF 2024 Summer Challenge](https://buuoj.cn/match/matches/207)"  
+    [![](https://ctftime.org/media/events/Dingtalk_20240709141420.jpg){ width="200" align=left }](https://buuoj.cn/match/matches/207)  
+    **比赛名称** : [DASCTF 2024 Summer Challenge](https://buuoj.cn/match/matches/207)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-07-20 10:00:00 - 2024-07-20 18:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : DASCTF (https://ctftime.org/team/303691)  
+    **添加日历** : https://ctftime.org/event/2429.ics  
+    
 ??? Quote "[OSCTF](https://ctf.os.ftp.sh/)"  
     [![](https://ctftime.org/media/events/os_ctf_logo.png){ width="200" align=left }](https://ctf.os.ftp.sh/)  
     **比赛名称** : [OSCTF](https://ctf.os.ftp.sh/)  
@@ -1009,13 +1018,4 @@ comments: true
     **比赛权重** : 32.71  
     **赛事主办** : hackpack (https://ctftime.org/team/25905)  
     **添加日历** : https://ctftime.org/event/2333.ics  
-    
-??? Quote "[24@CTF](https://ctf.polycyber.io/)"  
-    [![](https://ctftime.org/media/events/Logo_24CTF_2024_1.png){ width="200" align=left }](https://ctf.polycyber.io/)  
-    **比赛名称** : [24@CTF](https://ctf.polycyber.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-06 23:30:00 - 2024-04-08 00:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
-    **添加日历** : https://ctftime.org/event/2310.ics  
     
