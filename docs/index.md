@@ -83,15 +83,6 @@ hide:
             **其他说明** : 仅限在册工作人员参加  
                 
     === "国外比赛"
-        ??? Quote "[MOCA CTF - Quals](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)  
-            **比赛名称** : [MOCA CTF - Quals](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-07-20 17:00:00 - 2024-07-21 17:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
-            **添加日历** : https://ctftime.org/event/2293.ics  
-            
         ??? Quote "[ENOWARS 8](https://8.enowars.com/)"  
             [![](https://ctftime.org/media/events/enowars8.png){ width="200" align=left }](https://8.enowars.com/)  
             **比赛名称** : [ENOWARS 8](https://8.enowars.com/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 16.00  
             **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
             **添加日历** : https://ctftime.org/event/2421.ics  
+            
+        ??? Quote "[Aptos Code Collision CTF 2024](https://ctf.aptosfoundation.org/)"  
+            [![](https://ctftime.org/media/events/AptosProfilePic.png){ width="200" align=left }](https://ctf.aptosfoundation.org/)  
+            **比赛名称** : [Aptos Code Collision CTF 2024](https://ctf.aptosfoundation.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-07-26 20:00:00 - 2024-07-28 20:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : Aptos (https://ctftime.org/team/307766)  
+            **添加日历** : https://ctftime.org/event/2433.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

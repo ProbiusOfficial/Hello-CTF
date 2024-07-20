@@ -400,15 +400,6 @@ hide:
                 **其他说明** : QQ群：676547374 或 566180593  
                 
         === "国外赛事"
-            ??? Quote "[MOCA CTF - Quals](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)  
-                **比赛名称** : [MOCA CTF - Quals](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-07-20 17:00:00 - 2024-07-21 17:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
-                **添加日历** : https://ctftime.org/event/2293.ics  
-                
             ??? Quote "[ENOWARS 8](https://8.enowars.com/)"  
                 [![](https://ctftime.org/media/events/enowars8.png){ width="200" align=left }](https://8.enowars.com/)  
                 **比赛名称** : [ENOWARS 8](https://8.enowars.com/)  
@@ -859,6 +850,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : DASCTF (https://ctftime.org/team/303691)  
                 **添加日历** : https://ctftime.org/event/2429.ics  
+                
+            ??? Quote "[MOCA CTF - Quals](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)  
+                **比赛名称** : [MOCA CTF - Quals](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-07-20 17:00:00 - 2024-07-21 17:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
+                **添加日历** : https://ctftime.org/event/2293.ics  
                 
     === "*已经结束*"
         === "国内赛事"
