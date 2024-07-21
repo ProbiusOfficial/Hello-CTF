@@ -119,6 +119,24 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[BDSec CTF 2024](https://bdsec-ctf.com/)"  
+    [![](https://ctftime.org/media/events/brand-logo_1.png){ width="200" align=left }](https://bdsec-ctf.com/)  
+    **比赛名称** : [BDSec CTF 2024](https://bdsec-ctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-07-20 23:00:00 - 2024-07-21 23:00:00 UTC+8  
+    **比赛权重** : 16.00  
+    **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
+    **添加日历** : https://ctftime.org/event/2421.ics  
+    
+??? Quote "[pbctf 2024](https://ctf.perfect.blue/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.perfect.blue/)  
+    **比赛名称** : [pbctf 2024](https://ctf.perfect.blue/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-07-20 22:00:00 - 2024-07-21 22:00:00 UTC+8  
+    **比赛权重** : 55.00  
+    **赛事主办** : perfect blue (https://ctftime.org/team/53802)  
+    **添加日历** : https://ctftime.org/event/2381.ics  
+    
 ??? Quote "[ENOWARS 8](https://8.enowars.com/)"  
     [![](https://ctftime.org/media/events/enowars8.png){ width="200" align=left }](https://8.enowars.com/)  
     **比赛名称** : [ENOWARS 8](https://8.enowars.com/)  
@@ -1000,22 +1018,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : WayneStateCTF (https://ctftime.org/team/135263)  
     **添加日历** : https://ctftime.org/event/2337.ics  
-    
-??? Quote "[CybHackCTF 2024 Spring](https://event.kibhackctf.ru/)"  
-    [![](https://ctftime.org/media/events/logo_98.png){ width="200" align=left }](https://event.kibhackctf.ru/)  
-    **比赛名称** : [CybHackCTF 2024 Spring](https://event.kibhackctf.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-13 17:00:00 - 2024-04-14 17:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : CybHackCTF (https://ctftime.org/team/278998)  
-    **添加日历** : https://ctftime.org/event/2344.ics  
-    
-??? Quote "[b01lers CTF 2024](https://b01lersc.tf/)"  
-    [![](https://ctftime.org/media/events/b01lers-griffen_1.png){ width="200" align=left }](https://b01lersc.tf/)  
-    **比赛名称** : [b01lers CTF 2024](https://b01lersc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-13 07:00:00 - 2024-04-15 07:00:00 UTC+8  
-    **比赛权重** : 30.80  
-    **赛事主办** : b01lers (https://ctftime.org/team/11464)  
-    **添加日历** : https://ctftime.org/event/2250.ics  
     
