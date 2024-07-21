@@ -516,18 +516,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CatTheQuest",
-        "比赛时间": "2024-07-15 08:00:00 - 2024-07-21 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2414.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://catthequest.com/",
-        "比赛标志": "https://ctftime.org/media/events/DALL_E-2024-03-21-18.10-removebg-preview.png",
-        "比赛权重": "0",
-        "赛事主办": "CatTheFlag (https://ctftime.org/team/306432)",
-        "比赛ID": "1139",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "ImaginaryCTF 2024",
         "比赛时间": "2024-07-20 03:00:00 - 2024-07-22 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2396.ics",
@@ -597,6 +585,18 @@
         "比赛权重": "0",
         "赛事主办": "DASCTF (https://ctftime.org/team/303691)",
         "比赛ID": "1133",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "CatTheQuest",
+        "比赛时间": "2024-07-15 08:00:00 - 2024-07-21 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2414.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://catthequest.com/",
+        "比赛标志": "https://ctftime.org/media/events/DALL_E-2024-03-21-18.10-removebg-preview.png",
+        "比赛权重": "0",
+        "赛事主办": "CatTheFlag (https://ctftime.org/team/306432)",
+        "比赛ID": "1139",
         "比赛状态": "past"
     },
     {
@@ -1761,18 +1761,6 @@
         "比赛权重": "95.19",
         "赛事主办": "Plaid Parliament of Pwning (https://ctftime.org/team/284)",
         "比赛ID": "10",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "ShunyaCTF Aarambha",
-        "比赛时间": "2024-04-13 00:30:00 - 2024-04-14 12:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2336.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://shunya.ctf.eng.run/",
-        "比赛标志": "https://ctftime.org/media/events/shunyaLogo.png",
-        "比赛权重": "24.30",
-        "赛事主办": "nCreeps (https://ctftime.org/team/203035)",
-        "比赛ID": "1095",
         "比赛状态": "past"
     }
 ]
