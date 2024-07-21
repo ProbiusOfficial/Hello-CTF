@@ -171,6 +171,15 @@ comments: true
     **赛事主办** : DASCTF (https://ctftime.org/team/303691)  
     **添加日历** : https://ctftime.org/event/2429.ics  
     
+??? Quote "[ImaginaryCTF 2024](https://2024.imaginaryctf.org/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://2024.imaginaryctf.org/)  
+    **比赛名称** : [ImaginaryCTF 2024](https://2024.imaginaryctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-07-20 03:00:00 - 2024-07-22 03:00:00 UTC+8  
+    **比赛权重** : 49.81  
+    **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
+    **添加日历** : https://ctftime.org/event/2396.ics  
+    
 ??? Quote "[CatTheQuest](https://catthequest.com/)"  
     [![](https://ctftime.org/media/events/DALL_E-2024-03-21-18.10-removebg-preview.png){ width="200" align=left }](https://catthequest.com/)  
     **比赛名称** : [CatTheQuest](https://catthequest.com/)  
@@ -1016,13 +1025,4 @@ comments: true
     **比赛权重** : 21.95  
     **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
     **添加日历** : https://ctftime.org/event/2316.ics  
-    
-??? Quote "[Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/WSUCyberDefenseClub_1.jpg){ width="200" align=left }](https://waynestateuniversity-ctf24.ctfd.io/)  
-    **比赛名称** : [Wayne State University - CTF24](https://waynestateuniversity-ctf24.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-13 21:00:00 - 2024-04-14 05:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : WayneStateCTF (https://ctftime.org/team/135263)  
-    **添加日历** : https://ctftime.org/event/2337.ics  
     
