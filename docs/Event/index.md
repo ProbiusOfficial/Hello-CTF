@@ -788,15 +788,6 @@ hide:
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
                 
-            ??? Quote "[Kryptokaffe CTF 2024](https://www.kryptokaffe.se/)"  
-                [![](https://ctftime.org/media/events/kryptokaffe2k24.png){ width="200" align=left }](https://www.kryptokaffe.se/)  
-                **比赛名称** : [Kryptokaffe CTF 2024](https://www.kryptokaffe.se/)  
-                **比赛形式** : Hack quest  
-                **比赛时间** : 2024-06-17 16:00:00 - 2024-07-21 20:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Fikamyndigheten (https://ctftime.org/team/305722)  
-                **添加日历** : https://ctftime.org/event/2399.ics  
-                
             ??? Quote "[ImaginaryCTF 2024](https://2024.imaginaryctf.org/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://2024.imaginaryctf.org/)  
                 **比赛名称** : [ImaginaryCTF 2024](https://2024.imaginaryctf.org/)  
@@ -1016,7 +1007,7 @@ hide:
                 **比赛名称** : [Junior.Crypt.2024 CTF](http://ctf-spcs.mf.grsu.by/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-07-03 23:00:00 - 2024-07-05 23:00:00 UTC+8  
-                **比赛权重** : 23.81  
+                **比赛权重** : 23.88  
                 **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
                 **添加日历** : https://ctftime.org/event/2259.ics  
                 
@@ -1127,6 +1118,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : NUSGreyhats (https://ctftime.org/team/16740)  
                 **添加日历** : https://ctftime.org/event/2244.ics  
+                
+            ??? Quote "[Kryptokaffe CTF 2024](https://www.kryptokaffe.se/)"  
+                [![](https://ctftime.org/media/events/kryptokaffe2k24.png){ width="200" align=left }](https://www.kryptokaffe.se/)  
+                **比赛名称** : [Kryptokaffe CTF 2024](https://www.kryptokaffe.se/)  
+                **比赛形式** : Hack quest  
+                **比赛时间** : 2024-06-17 16:00:00 - 2024-07-21 20:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Fikamyndigheten (https://ctftime.org/team/305722)  
+                **添加日历** : https://ctftime.org/event/2399.ics  
                 
             ??? Quote "[Midnight Sun CTF 2024 Finals](https://play.midnightsunctf.com/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://play.midnightsunctf.com/)  
@@ -1829,15 +1829,6 @@ hide:
                 **比赛权重** : 30.80  
                 **赛事主办** : b01lers (https://ctftime.org/team/11464)  
                 **添加日历** : https://ctftime.org/event/2250.ics  
-                
-            ??? Quote "[Space Heroes 2024](https://spaceheroes.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/moon.png){ width="200" align=left }](https://spaceheroes.ctfd.io/)  
-                **比赛名称** : [Space Heroes 2024](https://spaceheroes.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-13 06:00:00 - 2024-04-15 06:00:00 UTC+8  
-                **比赛权重** : 24.50  
-                **赛事主办** : FITSEC (https://ctftime.org/team/65296)  
-                **添加日历** : https://ctftime.org/event/2254.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
