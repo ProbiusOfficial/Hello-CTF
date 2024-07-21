@@ -42,15 +42,6 @@ comments: true
     **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
     **添加日历** : https://ctftime.org/event/2396.ics  
     
-??? Quote "[MOCA CTF - Quals](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)  
-    **比赛名称** : [MOCA CTF - Quals](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-07-20 17:00:00 - 2024-07-21 17:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
-    **添加日历** : https://ctftime.org/event/2293.ics  
-    
 ??? Quote "[pbctf 2024](https://ctf.perfect.blue/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.perfect.blue/)  
     **比赛名称** : [pbctf 2024](https://ctf.perfect.blue/)  

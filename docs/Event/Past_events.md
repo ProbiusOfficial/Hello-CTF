@@ -128,6 +128,15 @@ comments: true
     **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
     **添加日历** : https://ctftime.org/event/2412.ics  
     
+??? Quote "[MOCA CTF - Quals](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)  
+    **比赛名称** : [MOCA CTF - Quals](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-07-20 17:00:00 - 2024-07-21 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
+    **添加日历** : https://ctftime.org/event/2293.ics  
+    
 ??? Quote "[DASCTF 2024 Summer Challenge](https://buuoj.cn/match/matches/207)"  
     [![](https://ctftime.org/media/events/Dingtalk_20240709141420.jpg){ width="200" align=left }](https://buuoj.cn/match/matches/207)  
     **比赛名称** : [DASCTF 2024 Summer Challenge](https://buuoj.cn/match/matches/207)  
@@ -1009,13 +1018,4 @@ comments: true
     **比赛权重** : 24.50  
     **赛事主办** : FITSEC (https://ctftime.org/team/65296)  
     **添加日历** : https://ctftime.org/event/2254.ics  
-    
-??? Quote "[PlaidCTF 2024](https://plaidctf.com/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://plaidctf.com/)  
-    **比赛名称** : [PlaidCTF 2024](https://plaidctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-13 05:00:00 - 2024-04-15 05:00:00 UTC+8  
-    **比赛权重** : 95.19  
-    **赛事主办** : Plaid Parliament of Pwning (https://ctftime.org/team/284)  
-    **添加日历** : https://ctftime.org/event/2245.ics  
     
