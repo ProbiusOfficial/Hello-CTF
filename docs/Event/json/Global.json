@@ -228,6 +228,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "GMO Cybersecurity Contest - IERAE CTF 2024",
+        "比赛时间": "2024-09-21 14:00:00 - 2024-09-22 14:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2441.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://gmo-cybersecurity.com/event/ieraectf24/",
+        "比赛标志": "https://ctftime.org/media/events/ierae-ctf-logo_2_1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "ierae (https://ctftime.org/team/224122)",
+        "比赛ID": "1130",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "openECSC 2024 - Final Round",
         "比赛时间": "2024-09-21 18:00:00 - 2024-09-22 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2356.ics",
