@@ -14,17 +14,6 @@
                 "status": 0
             },
             {
-                "name": "第四届极客少年挑战赛（决赛）",
-                "link": "https://www.cdccs.cn/#/geekYouth",
-                "type": "个人赛",
-                "bmks": "2024年07月22日 10:00",
-                "bmjz": "2024年07月23日 09:00",
-                "bsks": "2024年08月23日 10:00",
-                "bsjs": "2024年08月23日 15:00",
-                "readmore": "QQ群：961713058",
-                "status": 1
-            },
-            {
                 "name": "2024年浙江省网络安全行业网络安全运维工程师项目职业技能竞赛",
                 "link": "https://mp.weixin.qq.com/s/Uf12nfGPFHxz8QMe60cpDA",
                 "type": "个人赛",
@@ -78,6 +67,17 @@
                 "bsjs": "2024年08月20日 23:59",
                 "readmore": "QQ群: 622869531 组委会邮箱: tianwangcup@163.com",
                 "status": 1
+            },
+            {
+                "name": "第四届极客少年挑战赛（决赛）",
+                "link": "https://www.cdccs.cn/#/geekYouth",
+                "type": "个人赛",
+                "bmks": "2024年07月22日 10:00",
+                "bmjz": "2024年07月23日 09:00",
+                "bsks": "2024年08月23日 10:00",
+                "bsjs": "2024年08月23日 15:00",
+                "readmore": "QQ群：961713058",
+                "status": 2
             },
             {
                 "name": "2024年南昌市“洪工杯”网络安全行业职工职业技能竞赛",
