@@ -407,15 +407,6 @@ hide:
                 **其他说明** : QQ群：676547374 或 566180593  
                 
         === "国外赛事"
-            ??? Quote "[DeadSec CTF 2024](https://deadsec.ctf.ae/)"  
-                [![](https://ctftime.org/media/events/Picture1_1.png){ width="200" align=left }](https://deadsec.ctf.ae/)  
-                **比赛名称** : [DeadSec CTF 2024](https://deadsec.ctf.ae/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-07-27 04:00:00 - 2024-07-28 16:00:00 UTC+8  
-                **比赛权重** : 23.96  
-                **赛事主办** : DeadSec (https://ctftime.org/team/19339)  
-                **添加日历** : https://ctftime.org/event/2353.ics  
-                
             ??? Quote "[corCTF 2024](https://ctf.cor.team/)"  
                 [![](https://ctftime.org/media/events/corctflogo_3.png){ width="200" align=left }](https://ctf.cor.team/)  
                 **比赛名称** : [corCTF 2024](https://ctf.cor.team/)  
@@ -821,6 +812,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Aptos (https://ctftime.org/team/307766)  
                 **添加日历** : https://ctftime.org/event/2433.ics  
+                
+            ??? Quote "[DeadSec CTF 2024](https://deadsec.ctf.ae/)"  
+                [![](https://ctftime.org/media/events/Picture1_1.png){ width="200" align=left }](https://deadsec.ctf.ae/)  
+                **比赛名称** : [DeadSec CTF 2024](https://deadsec.ctf.ae/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-07-27 04:00:00 - 2024-07-28 16:00:00 UTC+8  
+                **比赛权重** : 23.96  
+                **赛事主办** : DeadSec (https://ctftime.org/team/19339)  
+                **添加日历** : https://ctftime.org/event/2353.ics  
                 
     === "*已经结束*"
         === "国内赛事"
