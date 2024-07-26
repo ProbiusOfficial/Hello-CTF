@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Aptos Code Collision CTF 2024",
-        "比赛时间": "2024-07-26 20:00:00 - 2024-07-28 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2433.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.aptosfoundation.org/",
-        "比赛标志": "https://ctftime.org/media/events/AptosProfilePic.png",
-        "比赛权重": "0",
-        "赛事主办": "Aptos (https://ctftime.org/team/307766)",
-        "比赛ID": "1146",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "DeadSec CTF 2024",
         "比赛时间": "2024-07-27 04:00:00 - 2024-07-28 16:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2353.ics",
@@ -537,6 +525,18 @@
         "比赛权重": "0",
         "赛事主办": "Exherbo GNU/Linux (https://ctftime.org/team/275214)",
         "比赛ID": "1027",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Aptos Code Collision CTF 2024",
+        "比赛时间": "2024-07-26 20:00:00 - 2024-07-28 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2433.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.aptosfoundation.org/",
+        "比赛标志": "https://ctftime.org/media/events/AptosProfilePic.png",
+        "比赛权重": "0",
+        "赛事主办": "Aptos (https://ctftime.org/team/307766)",
+        "比赛ID": "1146",
         "比赛状态": "nowrunning"
     },
     {
