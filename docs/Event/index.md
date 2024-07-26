@@ -909,13 +909,6 @@ hide:
                 **比赛时间** : 2024年06月01日 09:00 - 2024年06月01日 18:00  
                 **其他说明** : Q群：782400974  
                 
-            ??? Quote "[RCTF 2024](https://adworld.xctf.org.cn/contest)"  
-                **比赛名称** : [RCTF 2024](https://adworld.xctf.org.cn/contest)  
-                **比赛类型** : 团队赛  
-                **报名时间** : 2024年05月11日 00:00 - 2024年05月27日 09:00  
-                **比赛时间** : 2024年05月25日 09:00 - 2024年05月27日 09:00  
-                **其他说明** : QQ群：512066352  
-                
         === "国外赛事"
             ??? Quote "[BDSec CTF 2024](https://bdsec-ctf.com/)"  
                 [![](https://ctftime.org/media/events/brand-logo_1.png){ width="200" align=left }](https://bdsec-ctf.com/)  

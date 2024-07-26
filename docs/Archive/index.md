@@ -73,6 +73,14 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [泛微云桥文件上传与JFinal Bypass](https://y4tacker.github.io/2024/07/26/year/2024/7/%E6%B3%9B%E5%BE%AE%E4%BA%91%E6%A1%A5%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8EJFinal-Bypass/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-07-25
+
+    896043c0663a30f9c5e8fa6f209f299d52ca1152753e3bc67b1969495fc4400355332baaf286443412f0083fee1730aec5c9aec0d05d2a2c383b4d4cee1dd6c0d3da7cd408b09d6a39632c443bf9205fc42373932c9abd971aff329242c41fe66584a6...
+    ### [EMobile4.0-EMobile6.6 FROM SSRF to RCE](https://y4tacker.github.io/2024/07/25/year/2024/7/EMobile4-0-EMobile6-6-FROM-SSRF-to-RCE/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-07-25
+
+    d689addd663c4fafbe699341f52c070ba95624118db59735eebb4f65e523a94bcaf577129b4857de3a371ac73f86e98abf94d785001bd8f906cd46037ca05e99c46703d1d6f3b935cc7a429aed2d037af52200c241c50dddb8af5a1f10be4d373f0892...
     ### [某软Report高版本中利用的一些细节](https://y4tacker.github.io/2024/07/23/year/2024/7/%E6%9F%90%E8%BD%AFReport%E9%AB%98%E7%89%88%E6%9C%AC%E4%B8%AD%E5%88%A9%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%86%E8%8A%82/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-07-23
 
@@ -109,6 +117,14 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-05-07
 
     浅析瑞友天翼应用虚拟化系统前台反序列化(V<=7.0.5.1)看到应急公告简单分析学习一波，漏洞不算难，代码也比较简单，有些细节还是蛮有意思，算是温故而知新，顺便也捡起一些很久没碰的PHP知识鉴权这个系统文件不多，功能点大多是需要登录，我们可以重点关注一下鉴权部分，在为数不多的控制器当中可以看到，在admin/index两个控制器中部分功能点都存在对于登录用户的判断，分别对应函数checklogi...
+    ### [可能是全网第一个粤语Qwen/从零开始的LLM微调教程](https://blog.stv.lol/archives/88/)  
+    >by [Steven Lynn's Blog](https://blog.stv.lol), 2024-05-05
+
+    这几天趁着五一假期在家里，做了一下LLM微调大概是全网第一个做粤语微调的Qwen-7B，还请到huggingface和魔搭社区点心支持一下repo:https://huggingface.co/stvlynn/Qwen-7B-Chat-Cantonesehttps://www.modelscope.cn/models/stvlynn/Qwen-7B-Chat-Cantonese今天就整理一下微调的...
+    ### [在闲置手机上部署大模型并开启公网访问](https://blog.stv.lol/archives/87/)  
+    >by [Steven Lynn's Blog](https://blog.stv.lol), 2024-05-01
+
+    前言前两天微软发布了phi3大模型，是目前少数可以在移动设备上运行的本地语言模型，号称可以和ChatGPT-3.5相当，仅3.8亿参数本文将教你如何在本地部署这个大模型，利用闲置的手机，并且让公网的设备也能远程访问Step 0: Termux下载安装需要注意的是不要从play上下载termux，否则会出现报错，应该从F-droid上下载安装换源：因为你懂的原因，需要把软件源换成国内源清华源的文档里...
     ### [CrushFTP后利用提权分析(CVE-2024-4040)](https://y4tacker.github.io/2024/04/25/year/2024/4/CrushFTP%E5%90%8E%E5%88%A9%E7%94%A8%E6%8F%90%E6%9D%83%E5%88%86%E6%9E%90-CVE-2024-4040/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-04-25
 
@@ -137,21 +153,5 @@ hide:
     >by [曾哥](https://blog.zgsec.cn/), 2024-02-19
 
     0# 概述注：本文原创首发自T00ls论坛，文章链接：https://www.t00ls.com/thread-71282-1-1.html最近刷了刷公众号，偶然看到吾爱破解论坛官方公众号发布了这么一篇文章咦，有春节红包领耶，就点进去看了看，原来是52pojie论坛举办的解题领红包活动官方论坛帖子链接：https://www.52pojie.cn/thread-1889163-1-1.html 总...
-    ### [浅析Jenkis任意文件读取(CVE-2024-23897)](https://y4tacker.github.io/2024/01/27/year/2024/1/%E6%B5%85%E6%9E%90Jenkis%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96-CVE-2024-23897/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-01-27
-
-    浅析Jenkis任意文件读取(CVE-2024-23897)很久没更新博客了，还是浅浅更新一下补丁分析首先从官方公告可以看到漏洞其实来源于CLI工具，同时可以看到用户拥有(Overall/Read)权限可以读取整个文件，而如果没有权限则仅能读取第一行同时从commit可以看出[SECURITY-3314] · jenkinsci/jenkins@554f037 ，主要对CLICommand.jav...
-    ### [浅析Gitlab未授权密码重置(CVE-2023-7028)](https://y4tacker.github.io/2024/01/12/year/2024/1/%E6%B5%85%E6%9E%90Gitlab%E6%9C%AA%E6%8E%88%E6%9D%83%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE-CVE-2023-7028/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-01-12
-
-    浅析Gitlab未授权密码重置(CVE-2023-7028)补丁在https://gitlab.com/rluna-gitlab/gitlab-ce/-/commit/24d1060c0ae7d0ba432271da98f4fa20ab6fd671，由于问题非常简单，这里就不多说了可以看到在原来的逻辑当中app/models/concerns/recoverable_by_any_email.rb...
-    ### [如何判断在IDEA中程序正在运行或正在Debug](https://y4tacker.github.io/2024/01/04/year/2024/1/%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E5%9C%A8IDEA%E4%B8%AD%E7%A8%8B%E5%BA%8F%E6%AD%A3%E5%9C%A8%E8%BF%90%E8%A1%8C%E6%88%96%E6%AD%A3%E5%9C%A8Debug/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-01-04
-
-    如何判断在IDEA中程序正在运行或正在Debug给大家分享一个有趣又无用的东西，如何判断在IDEA中程序正在运行或正在Debug在这个之前我们首先需要了解一个类ManagementFactory ，它是 Java 标准库中的一个类，它提供了访问运行时系统管理接口的工厂方法。通过 ManagementFactory 类，可以获取包括操作系统、内存、线程、类加载器等在内的多种系统管理信息。一些常用的用...
-    ### [感谢，渊龙三周年与龙年展望](https://blog.zgsec.cn/archives/573.html)  
-    >by [曾哥](https://blog.zgsec.cn/), 2024-01-01
-
-    1# 概述今天是2024年的第一天，很高兴能再次和大家见面，我是渊龙Sec安全团队的创始人——曾哥 @AabyssZG。首先，在这个日子里面祝各位师傅元旦快乐，在新的一年里面：事业如虎添翼，财运如虹贯日，家庭和谐美满，幸福安康常伴！也很感谢各位师傅，平时给予团队和我的关注和支持~同时，也非常感谢各位团队成员的共同建设和鼎力相助，团队正因为有了你们，才能走到今天！2# 关于渊龙三周年今年是渊龙Sec...
 
 </div>
