@@ -414,15 +414,6 @@ hide:
                 **其他说明** : QQ群：676547374 或 566180593  
                 
         === "国外赛事"
-            ??? Quote "[Aptos Code Collision CTF 2024](https://ctf.aptosfoundation.org/)"  
-                [![](https://ctftime.org/media/events/AptosProfilePic.png){ width="200" align=left }](https://ctf.aptosfoundation.org/)  
-                **比赛名称** : [Aptos Code Collision CTF 2024](https://ctf.aptosfoundation.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-07-26 20:00:00 - 2024-07-28 20:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Aptos (https://ctftime.org/team/307766)  
-                **添加日历** : https://ctftime.org/event/2433.ics  
-                
             ??? Quote "[DeadSec CTF 2024](https://deadsec.ctf.ae/)"  
                 [![](https://ctftime.org/media/events/Picture1_1.png){ width="200" align=left }](https://deadsec.ctf.ae/)  
                 **比赛名称** : [DeadSec CTF 2024](https://deadsec.ctf.ae/)  
@@ -822,6 +813,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
+                
+            ??? Quote "[Aptos Code Collision CTF 2024](https://ctf.aptosfoundation.org/)"  
+                [![](https://ctftime.org/media/events/AptosProfilePic.png){ width="200" align=left }](https://ctf.aptosfoundation.org/)  
+                **比赛名称** : [Aptos Code Collision CTF 2024](https://ctf.aptosfoundation.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-07-26 20:00:00 - 2024-07-28 20:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Aptos (https://ctftime.org/team/307766)  
+                **添加日历** : https://ctftime.org/event/2433.ics  
                 
     === "*已经结束*"
         === "国内赛事"

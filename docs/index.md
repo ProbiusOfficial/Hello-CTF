@@ -83,15 +83,6 @@ hide:
             **其他说明** : 仅限在册工作人员参加  
                 
     === "国外比赛"
-        ??? Quote "[Aptos Code Collision CTF 2024](https://ctf.aptosfoundation.org/)"  
-            [![](https://ctftime.org/media/events/AptosProfilePic.png){ width="200" align=left }](https://ctf.aptosfoundation.org/)  
-            **比赛名称** : [Aptos Code Collision CTF 2024](https://ctf.aptosfoundation.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-07-26 20:00:00 - 2024-07-28 20:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : Aptos (https://ctftime.org/team/307766)  
-            **添加日历** : https://ctftime.org/event/2433.ics  
-            
         ??? Quote "[DeadSec CTF 2024](https://deadsec.ctf.ae/)"  
             [![](https://ctftime.org/media/events/Picture1_1.png){ width="200" align=left }](https://deadsec.ctf.ae/)  
             **比赛名称** : [DeadSec CTF 2024](https://deadsec.ctf.ae/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : D Asset Inc. (https://ctftime.org/team/310109)  
             **添加日历** : https://ctftime.org/event/2442.ics  
+            
+        ??? Quote "[TFC CTF 2024](https://ctf.thefewchosen.com/)"  
+            [![](https://ctftime.org/media/events/discord_logo_3.png){ width="200" align=left }](https://ctf.thefewchosen.com/)  
+            **比赛名称** : [TFC CTF 2024](https://ctf.thefewchosen.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-08-02 19:00:00 - 2024-08-04 19:00:00 UTC+8  
+            **比赛权重** : 41.68  
+            **赛事主办** : The Few Chosen (https://ctftime.org/team/140885)  
+            **添加日历** : https://ctftime.org/event/2423.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
