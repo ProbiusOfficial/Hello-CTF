@@ -950,7 +950,7 @@ hide:
                 **比赛名称** : [DASCTF 2024 Summer Challenge](https://buuoj.cn/match/matches/207)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-07-20 10:00:00 - 2024-07-20 18:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 0.00  
                 **赛事主办** : DASCTF (https://ctftime.org/team/303691)  
                 **添加日历** : https://ctftime.org/event/2429.ics  
                 
