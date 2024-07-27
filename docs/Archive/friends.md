@@ -73,11 +73,15 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅析帆软FineVis默认插件前台RCE](https://y4tacker.github.io/2024/07/26/year/2024/7/%E6%B5%85%E6%9E%90%E5%B8%86%E8%BD%AFFineVis%E9%BB%98%E8%AE%A4%E6%8F%92%E4%BB%B6%E5%89%8D%E5%8F%B0RCE/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-07-26
+
+    75fe1026383dfaa0a967acb72c258091d824449c325b83a7a7fa894da20e58875ee9377f2f6b70632955e7127ad3d74064c0dd2bf0b57f712c6877d79ef90dc5c212f8b446a26e74ef229c33ebc9489a848c39c79b5ed59809480f0b2c6c63ce994d74...
     ### [泛微云桥文件上传与JFinal Bypass](https://y4tacker.github.io/2024/07/26/year/2024/7/%E6%B3%9B%E5%BE%AE%E4%BA%91%E6%A1%A5%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8EJFinal-Bypass/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-07-25
 
     896043c0663a30f9c5e8fa6f209f299d52ca1152753e3bc67b1969495fc4400355332baaf286443412f0083fee1730aec5c9aec0d05d2a2c383b4d4cee1dd6c0d3da7cd408b09d6a39632c443bf9205fc42373932c9abd971aff329242c41fe66584a6...
-    ### [EMobile4.0-EMobile6.6 FROM SSRF to RCE](https://y4tacker.github.io/2024/07/25/year/2024/7/EMobile4-0-EMobile6-6-FROM-SSRF-to-RCE/)  
+    ### [泛微EMobile4.0-EMobile6.6 FROM SSRF to RCE](https://y4tacker.github.io/2024/07/25/year/2024/7/EMobile4-0-EMobile6-6-FROM-SSRF-to-RCE/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-07-25
 
     d689addd663c4fafbe699341f52c070ba95624118db59735eebb4f65e523a94bcaf577129b4857de3a371ac73f86e98abf94d785001bd8f906cd46037ca05e99c46703d1d6f3b935cc7a429aed2d037af52200c241c50dddb8af5a1f10be4d373f0892...
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-03-27
 
     4051ee28ede465c82f8d9e9a0fa8eab16e3556aa3b07573ca2be1e94b32943219c592cfd0f6b9b8ba9dffa7847e659f691f9c36226794e2e1f461094fd3ba8b45787938c16f361e050587e1b9e88af1e074905380ca645979003bc652f767290e7fd68...
-    ### [52PoJie论坛2024春节红包-Web解题思路](https://blog.zgsec.cn/archives/577.html)  
-    >by [曾哥](https://blog.zgsec.cn/), 2024-02-19
-
-    0# 概述注：本文原创首发自T00ls论坛，文章链接：https://www.t00ls.com/thread-71282-1-1.html最近刷了刷公众号，偶然看到吾爱破解论坛官方公众号发布了这么一篇文章咦，有春节红包领耶，就点进去看了看，原来是52pojie论坛举办的解题领红包活动官方论坛帖子链接：https://www.52pojie.cn/thread-1889163-1-1.html 总...
 
 </div>
