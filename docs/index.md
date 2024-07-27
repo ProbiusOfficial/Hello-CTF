@@ -83,15 +83,6 @@ hide:
             **其他说明** : QQ群: 697694051 | 仅限相关岗位在职员工参加  
                 
     === "国外比赛"
-        ??? Quote "[corCTF 2024](https://ctf.cor.team/)"  
-            [![](https://ctftime.org/media/events/corctflogo_3.png){ width="200" align=left }](https://ctf.cor.team/)  
-            **比赛名称** : [corCTF 2024](https://ctf.cor.team/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-07-27 08:00:00 - 2024-07-29 08:00:00 UTC+8  
-            **比赛权重** : 55.00  
-            **赛事主办** : Crusaders of Rust (https://ctftime.org/team/132628)  
-            **添加日历** : https://ctftime.org/event/2282.ics  
-            
         ??? Quote "[SCAN 2024 Digital Asset Tracing Challenge](https://scanctf2024.ctfd.io/)"  
             [![](https://ctftime.org/media/events/Logo_blue2x.png){ width="200" align=left }](https://scanctf2024.ctfd.io/)  
             **比赛名称** : [SCAN 2024 Digital Asset Tracing Challenge](https://scanctf2024.ctfd.io/)  
@@ -118,6 +109,15 @@ hide:
             **比赛权重** : 26.89  
             **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
             **添加日历** : https://ctftime.org/event/2223.ics  
+            
+        ??? Quote "[n00bzCTF 2024](https://ctf.n00bzunit3d.xyz/)"  
+            [![](https://ctftime.org/media/events/logo_ascii_1.png){ width="200" align=left }](https://ctf.n00bzunit3d.xyz/)  
+            **比赛名称** : [n00bzCTF 2024](https://ctf.n00bzunit3d.xyz/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-08-03 09:00:00 - 2024-08-05 09:00:00 UTC+8  
+            **比赛权重** : 24.23  
+            **赛事主办** : n00bzUnit3d (https://ctftime.org/team/152491)  
+            **添加日历** : https://ctftime.org/event/2378.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
