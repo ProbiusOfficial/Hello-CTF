@@ -582,7 +582,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "Metro Olografix (https://ctftime.org/team/268425)",
         "比赛ID": "1075",
         "比赛状态": "past"
@@ -630,7 +630,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.os.ftp.sh/",
         "比赛标志": "https://ctftime.org/media/events/os_ctf_logo.png",
-        "比赛权重": "23.11",
+        "比赛权重": "23.23",
         "赛事主办": "OSCTF (https://ctftime.org/team/307415)",
         "比赛ID": "1144",
         "比赛状态": "past"

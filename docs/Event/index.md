@@ -798,15 +798,6 @@ hide:
                 **赛事主办** : Aptos (https://ctftime.org/team/307766)  
                 **添加日历** : https://ctftime.org/event/2433.ics  
                 
-            ??? Quote "[DeadSec CTF 2024](https://deadsec.ctf.ae/)"  
-                [![](https://ctftime.org/media/events/Picture1_1.png){ width="200" align=left }](https://deadsec.ctf.ae/)  
-                **比赛名称** : [DeadSec CTF 2024](https://deadsec.ctf.ae/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-07-27 04:00:00 - 2024-07-28 16:00:00 UTC+8  
-                **比赛权重** : 23.96  
-                **赛事主办** : DeadSec (https://ctftime.org/team/19339)  
-                **添加日历** : https://ctftime.org/event/2353.ics  
-                
             ??? Quote "[corCTF 2024](https://ctf.cor.team/)"  
                 [![](https://ctftime.org/media/events/corctflogo_3.png){ width="200" align=left }](https://ctf.cor.team/)  
                 **比赛名称** : [corCTF 2024](https://ctf.cor.team/)  
@@ -910,6 +901,15 @@ hide:
                 **其他说明** : Q群：782400974  
                 
         === "国外赛事"
+            ??? Quote "[DeadSec CTF 2024](https://deadsec.ctf.ae/)"  
+                [![](https://ctftime.org/media/events/Picture1_1.png){ width="200" align=left }](https://deadsec.ctf.ae/)  
+                **比赛名称** : [DeadSec CTF 2024](https://deadsec.ctf.ae/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-07-27 04:00:00 - 2024-07-28 16:00:00 UTC+8  
+                **比赛权重** : 23.96  
+                **赛事主办** : DeadSec (https://ctftime.org/team/19339)  
+                **添加日历** : https://ctftime.org/event/2353.ics  
+                
             ??? Quote "[BDSec CTF 2024](https://bdsec-ctf.com/)"  
                 [![](https://ctftime.org/media/events/brand-logo_1.png){ width="200" align=left }](https://bdsec-ctf.com/)  
                 **比赛名称** : [BDSec CTF 2024](https://bdsec-ctf.com/)  
@@ -942,7 +942,7 @@ hide:
                 **比赛名称** : [MOCA CTF - Quals](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-07-20 17:00:00 - 2024-07-21 17:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
                 **添加日历** : https://ctftime.org/event/2293.ics  
                 
@@ -978,7 +978,7 @@ hide:
                 **比赛名称** : [OSCTF](https://ctf.os.ftp.sh/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-07-13 08:30:00 - 2024-07-14 00:30:00 UTC+8  
-                **比赛权重** : 23.11  
+                **比赛权重** : 23.23  
                 **赛事主办** : OSCTF (https://ctftime.org/team/307415)  
                 **添加日历** : https://ctftime.org/event/2416.ics  
                 
@@ -1800,15 +1800,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Zero Day Club (https://ctftime.org/team/286318)  
                 **添加日历** : https://ctftime.org/event/2313.ics  
-                
-            ??? Quote "[Incognito 5.0](https://ictf5.ninja/)"  
-                [![](https://ctftime.org/media/events/lo.png){ width="200" align=left }](https://ictf5.ninja/)  
-                **比赛名称** : [Incognito 5.0](https://ictf5.ninja/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-16 18:00:00 - 2024-04-17 06:00:00 UTC+8  
-                **比赛权重** : 21.95  
-                **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
-                **添加日历** : https://ctftime.org/event/2316.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
