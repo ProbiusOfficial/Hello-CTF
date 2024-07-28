@@ -789,15 +789,6 @@ hide:
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
                 
-            ??? Quote "[Aptos Code Collision CTF 2024](https://ctf.aptosfoundation.org/)"  
-                [![](https://ctftime.org/media/events/AptosProfilePic.png){ width="200" align=left }](https://ctf.aptosfoundation.org/)  
-                **比赛名称** : [Aptos Code Collision CTF 2024](https://ctf.aptosfoundation.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-07-26 20:00:00 - 2024-07-28 20:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Aptos (https://ctftime.org/team/307766)  
-                **添加日历** : https://ctftime.org/event/2433.ics  
-                
             ??? Quote "[corCTF 2024](https://ctf.cor.team/)"  
                 [![](https://ctftime.org/media/events/corctflogo_3.png){ width="200" align=left }](https://ctf.cor.team/)  
                 **比赛名称** : [corCTF 2024](https://ctf.cor.team/)  
@@ -909,6 +900,15 @@ hide:
                 **比赛权重** : 23.96  
                 **赛事主办** : DeadSec (https://ctftime.org/team/19339)  
                 **添加日历** : https://ctftime.org/event/2353.ics  
+                
+            ??? Quote "[Aptos Code Collision CTF 2024](https://ctf.aptosfoundation.org/)"  
+                [![](https://ctftime.org/media/events/AptosProfilePic.png){ width="200" align=left }](https://ctf.aptosfoundation.org/)  
+                **比赛名称** : [Aptos Code Collision CTF 2024](https://ctf.aptosfoundation.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-07-26 20:00:00 - 2024-07-28 20:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Aptos (https://ctftime.org/team/307766)  
+                **添加日历** : https://ctftime.org/event/2433.ics  
                 
             ??? Quote "[BDSec CTF 2024](https://bdsec-ctf.com/)"  
                 [![](https://ctftime.org/media/events/brand-logo_1.png){ width="200" align=left }](https://bdsec-ctf.com/)  
@@ -1791,15 +1791,6 @@ hide:
                 **比赛权重** : 24.55  
                 **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
                 **添加日历** : https://ctftime.org/event/2339.ics  
-                
-            ??? Quote "[SpartanCTF 2024](https://spartan.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/zdc_emblem.png){ width="200" align=left }](https://spartan.ctfd.io/)  
-                **比赛名称** : [SpartanCTF 2024](https://spartan.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-18 00:00:00 - 2024-04-22 13:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Zero Day Club (https://ctftime.org/team/286318)  
-                **添加日历** : https://ctftime.org/event/2313.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

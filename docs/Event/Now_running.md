@@ -18,15 +18,6 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Quote "[Aptos Code Collision CTF 2024](https://ctf.aptosfoundation.org/)"  
-    [![](https://ctftime.org/media/events/AptosProfilePic.png){ width="200" align=left }](https://ctf.aptosfoundation.org/)  
-    **比赛名称** : [Aptos Code Collision CTF 2024](https://ctf.aptosfoundation.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-07-26 20:00:00 - 2024-07-28 20:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Aptos (https://ctftime.org/team/307766)  
-    **添加日历** : https://ctftime.org/event/2433.ics  
-    
 ??? Quote "[corCTF 2024](https://ctf.cor.team/)"  
     [![](https://ctftime.org/media/events/corctflogo_3.png){ width="200" align=left }](https://ctf.cor.team/)  
     **比赛名称** : [corCTF 2024](https://ctf.cor.team/)  
