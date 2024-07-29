@@ -452,6 +452,15 @@ hide:
                 **赛事主办** : BIZone (https://ctftime.org/team/32190)  
                 **添加日历** : https://ctftime.org/event/2408.ics  
                 
+            ??? Quote "[Lexington Informatics Tournament CTF 2024](https://lit.lhsmathcs.org/)"  
+                [![](https://ctftime.org/media/events/square_CTFtime_LIT_1.png){ width="200" align=left }](https://lit.lhsmathcs.org/)  
+                **比赛名称** : [Lexington Informatics Tournament CTF 2024](https://lit.lhsmathcs.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-08-10 23:00:00 - 2024-08-13 11:59:59 UTC+8  
+                **比赛权重** : 46.25  
+                **赛事主办** : LIT CTF (https://ctftime.org/team/157660)  
+                **添加日历** : https://ctftime.org/event/2444.ics  
+                
             ??? Quote "[idekCTF 2024](https://ctf.idek.team/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.idek.team/)  
                 **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
@@ -487,6 +496,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
                 **添加日历** : https://ctftime.org/event/2347.ics  
+                
+            ??? Quote "[CyberSpace CTF 2024](https://2024.csc.tf/)"  
+                [![](https://ctftime.org/media/events/f6b991673b1944e7b199bc978b3f0a15.png){ width="200" align=left }](https://2024.csc.tf/)  
+                **比赛名称** : [CyberSpace CTF 2024](https://2024.csc.tf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-08-31 00:00:00 - 2024-09-02 00:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : CyberSpace (https://ctftime.org/team/116280)  
+                **添加日历** : https://ctftime.org/event/2428.ics  
                 
             ??? Quote "[CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.cisaicsctf.com/)  
