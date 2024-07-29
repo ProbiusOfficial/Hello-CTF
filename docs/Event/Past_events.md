@@ -98,6 +98,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[corCTF 2024](https://ctf.cor.team/)"  
+    [![](https://ctftime.org/media/events/corctflogo_3.png){ width="200" align=left }](https://ctf.cor.team/)  
+    **比赛名称** : [corCTF 2024](https://ctf.cor.team/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-07-27 08:00:00 - 2024-07-29 08:00:00 UTC+8  
+    **比赛权重** : 55.00  
+    **赛事主办** : Crusaders of Rust (https://ctftime.org/team/132628)  
+    **添加日历** : https://ctftime.org/event/2282.ics  
+    
 ??? Quote "[DeadSec CTF 2024](https://deadsec.ctf.ae/)"  
     [![](https://ctftime.org/media/events/Picture1_1.png){ width="200" align=left }](https://deadsec.ctf.ae/)  
     **比赛名称** : [DeadSec CTF 2024](https://deadsec.ctf.ae/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 43.10  
     **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
     **添加日历** : https://ctftime.org/event/2287.ics  
-    
-??? Quote "[CTF@CIT 2024](https://ctf.cyber-cit.club/)"  
-    [![](https://ctftime.org/media/events/CTF-CIT-ctftime.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
-    **比赛名称** : [CTF@CIT 2024](https://ctf.cyber-cit.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-20 05:00:00 - 2024-04-22 03:00:00 UTC+8  
-    **比赛权重** : 24.55  
-    **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
-    **添加日历** : https://ctftime.org/event/2339.ics  
     
