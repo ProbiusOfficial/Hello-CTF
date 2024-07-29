@@ -22,12 +22,11 @@ hide:
             <div class="grid cards">
                 <div class="carousel">
                     <div class="carousel-container">
+                        <a href="https://www.dkdun.cn/"><img src="./assets/banner-dkdun.png" /></a>
                         <a href="../HC_Start/" target="_blank"><img src="./assets/banner-quickstart.png" /></a>
                         <a href="../HC_AI/" target="_blank"><img src="./assets/banner-update.png" /></a>
-                        <a href="https://github.com/CTF-Archives" target="_blank"><img
-                                src="./assets/banner-Achieve.png" /></a>
-                        <a href="javascript:alert$.next('我很可爱，请给我钱w');"><img
-                                src="./assets/Banner-imcutesogivememoney.png" /></a>
+                        <a href="https://github.com/CTF-Archives" target="_blank"><img src="./assets/banner-Achieve.png" /></a>
+                        
                     </div>
                     <!-- 触发 hover 的区域 -->
                     <div class="carousel-hover left">
@@ -149,7 +148,9 @@ hide:
 
     ---
 
-    [最棒的CTF平台 - NSSCTF](https://www.nssctf.cn/)  
+    [DK盾-从CTF起家的IDC服务商](https://www.dkdun.cn)
+
+    [最棒的CTF平台-NSSCTF](https://www.nssctf.cn/)  
 
     [安全导航-渊龙Sec安全团队](https://dh.aabyss.cn)    
 
