@@ -217,7 +217,7 @@ print(decoded_message)
 
   源版：https://www.keyfc.net/bbs/tools/tudoucode.aspx
 
-  Github开源重制：https://github.com/takuron/talk-with-buddha
+  GitHub开源重制：https://github.com/takuron/talk-with-buddha
 
 - 阴阳怪气编码：https://github.com/mmdjiji/yygq.js
 

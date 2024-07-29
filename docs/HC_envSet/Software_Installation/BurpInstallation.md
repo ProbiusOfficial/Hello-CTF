@@ -92,7 +92,7 @@
 
 ## 特别鸣谢
 
-Github注册机下载地址：https://github.com/h3110w0r1d-y/BurpLoaderKeygen
+GitHub注册机下载地址：https://github.com/h3110w0r1d-y/BurpLoaderKeygen
 
 ## 注意！
 

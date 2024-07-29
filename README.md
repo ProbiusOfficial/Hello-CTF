@@ -14,15 +14,13 @@
 
 
 
-
-
-文档依靠Mkdocs-material 基于Github-Page 依靠 gh-pages 部署在 [https://hello-ctf.com/](https://hello-ctf.com/)   
+文档依靠Mkdocs-material 基于GitHub Pages 依靠 gh-pages 部署在 [https://hello-ctf.com/](https://hello-ctf.com/)   
 
 因接入CDN，本站链接变更为：[https://hello-ctf.com/](https://hello-ctf.com/) ，感谢渊龙Sec安全团队[@AabyssZG](https://github.com/AabyssZG) 曾哥提供的CDN支持~
 
 您可以直接访问该页面[在线阅读](https://hello-ctf.com/)，如果您想要转载本项目，请带上项目源地址：https://github.com/ProbiusOfficial/Hello-CTF
 
-如果文档有帮助到你，麻烦点一个:star:支持一下！！
+如果文档有帮助到你，麻烦点一个 :star: 支持一下！！
 
 ## 关于
 
@@ -37,7 +35,7 @@
 ## 加入我们
 
 本书仍然处于更新阶段，我们还有很多内容需要完善，欢迎您加入我们，一起完善本书，让更多的人了解CTF，参与CTF，享受CTF的乐趣。
-您随时可以通过提交 [「 Pr (PullRequest) 」](https://github.com/ProbiusOfficial/Hello-CTF/pulls)来协助我们完成本项目。
+您随时可以通过提交 [「 PR (Pull Request) 」](https://github.com/ProbiusOfficial/Hello-CTF/pulls)来协助我们完成本项目。
 
 - 如果您在阅读过程中发现任何 知识点错误，内容模糊，名词拼写错误等等的问题，还请您协助我们进行修改，您可以直接在评论区中提出，也可以直接提交PR。
 - 如果您有好的题目，好的题解，好的知识点讲解，或者其他合作意向，也欢迎您联系探姬([By QQ](2293808331))或者开启issue。

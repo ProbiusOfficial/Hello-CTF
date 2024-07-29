@@ -63,7 +63,7 @@ apt install git
 git clone https://github.com/volatilityfoundation/volatility.git
 ```
 
-在国内用这个命令的话，下载非常慢，建议直接从官方的Github仓库获取下来Vol2 的完整源码，直接Download ZIP即可：
+在国内用这个命令的话，下载非常慢，建议直接从官方的GitHub仓库获取下来Vol2 的完整源码，直接Download ZIP即可：
 
 ![Untitled](./images/memory/Untitled-1689516671722-4.png)
 

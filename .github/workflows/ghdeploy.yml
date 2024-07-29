@@ -1,4 +1,4 @@
-name: Deploy to Github Pages and Automatically update
+name: Deploy to GitHub Pages and Automatically update
 on:
   push:
     branches:

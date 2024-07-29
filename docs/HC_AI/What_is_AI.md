@@ -105,7 +105,7 @@
 
 #### **TensorFlow**
 
-![How To Install TensorFlow? [A Complete Beginner's Guide]](https://th.bing.com/th/id/OIP.LRW8UBZq8iNKoOHLgCK2MwHaEK?rs=1&pid=ImgDetMain)
+![TensorFlow logo](assets/tensorflow_logo.svg)
 
   - **主要维护方：** Google
 
