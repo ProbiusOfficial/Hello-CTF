@@ -73,7 +73,7 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
-    ### [帆软channel接口反序列化前世今生及利用链总结](https://y4tacker.github.io/2024/07/28/year/2024/7/%E5%B8%86%E8%BD%AFchannel%E6%8E%A5%E5%8F%A3%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F%E5%8F%8A%E5%88%A9%E7%94%A8%E9%93%BE%E6%80%BB%E7%BB%93/)  
+    ### [帆软channel接口反序列化前世今生及最新版利用链总结](https://y4tacker.github.io/2024/07/28/year/2024/7/%E5%B8%86%E8%BD%AFchannel%E6%8E%A5%E5%8F%A3%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F%E5%8F%8A%E5%88%A9%E7%94%A8%E9%93%BE%E6%80%BB%E7%BB%93/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-07-28
 
     edb75cb95fa274697a13f0de16c2ee476727ef39af866137ce7abba675d366a2667c35534d4818bf16ba3f2a4062b556dfe52391e960c4665bb66cac3069e79df97713e0b70ba674bdbc250f295481e11ff0ac82bcab7ea67bdc5cc98ac86bc986958c...
