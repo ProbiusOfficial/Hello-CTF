@@ -82,15 +82,6 @@ hide:
             **其他说明** : QQ群: 697694051 | 仅限相关岗位在职员工参加  
                 
     === "国外比赛"
-        ??? Quote "[SCAN 2024 Digital Asset Tracing Challenge](https://scanctf2024.ctfd.io/)"  
-            [![](https://ctftime.org/media/events/Logo_blue2x.png){ width="200" align=left }](https://scanctf2024.ctfd.io/)  
-            **比赛名称** : [SCAN 2024 Digital Asset Tracing Challenge](https://scanctf2024.ctfd.io/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-07-30 08:00:00 - 2024-07-31 08:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : D Asset Inc. (https://ctftime.org/team/310109)  
-            **添加日历** : https://ctftime.org/event/2442.ics  
-            
         ??? Quote "[TFC CTF 2024](https://ctf.thefewchosen.com/)"  
             [![](https://ctftime.org/media/events/discord_logo_3.png){ width="200" align=left }](https://ctf.thefewchosen.com/)  
             **比赛名称** : [TFC CTF 2024](https://ctf.thefewchosen.com/)  
@@ -117,6 +108,15 @@ hide:
             **比赛权重** : 24.23  
             **赛事主办** : n00bzUnit3d (https://ctftime.org/team/152491)  
             **添加日历** : https://ctftime.org/event/2378.ics  
+            
+        ??? Quote "[CTFZone 2024 Quals](https://ctf.bi.zone/)"  
+            [![](https://ctftime.org/media/events/b98226ad9a255846e456617d99bde1de.png){ width="200" align=left }](https://ctf.bi.zone/)  
+            **比赛名称** : [CTFZone 2024 Quals](https://ctf.bi.zone/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-08-10 17:00:00 - 2024-08-11 17:00:00 UTC+8  
+            **比赛权重** : 73.82  
+            **赛事主办** : BIZone (https://ctftime.org/team/32190)  
+            **添加日历** : https://ctftime.org/event/2408.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
