@@ -82,13 +82,6 @@ comments: true
     **比赛时间** : 2024年04月10日 23:00 - 2024年06月05日 23:00  
     **其他说明** : 作品赛，不提供更多信息，如有疑问请前往比赛通知页面 http://www.ciscn.cn/competition/securityCompetition?compet_id=39  
     
-??? Quote "矩阵杯"  
-    **比赛名称** : [矩阵杯](https://matrixcup.net/page/race/home/)  
-    **比赛类型** : 团队赛|1-4人  
-    **报名时间** : 2024年04月26日 00:00 - 2024年05月26日 00:00  
-    **比赛时间** : 2024年06月01日 00:00 - 2024年06月02日 00:00  
-    **其他说明** : 详情关注官网信息  
-    
 
 ## 国际赛事
 ??? Quote "[SCAN 2024 Digital Asset Tracing Challenge](https://scanctf2024.ctfd.io/)"  

@@ -320,13 +320,6 @@ hide:
             **比赛时间** : 2024年06月30日 00:00 - 2024年08月31日 23:59  
             **其他说明** : 仅限研究生  
             
-        ??? Quote "[第二届“天网杯”网络安全大赛](https://twcup.cverc.org.cn/twb/twb2024)"  
-            **比赛名称** : [第二届“天网杯”网络安全大赛](https://twcup.cverc.org.cn/twb/twb2024)  
-            **比赛类型** : 团队赛|不超过5人  
-            **报名时间** : 2024年7月15日 00:00 - 2024年7月31日 23:59  
-            **比赛时间** : 2024年08月01日 00:00 - 2024年08月20日 23:59  
-            **其他说明** : QQ群: 622869531 组委会邮箱: tianwangcup@163.com  
-            
     === "*即将开始*"
         === "国内赛事"
             ??? Quote "[第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)"  
@@ -363,13 +356,6 @@ hide:
                 **报名时间** : 2024年06月30日 00:00 - 2024年08月30日 23:59  
                 **比赛时间** : 2024年06月30日 00:00 - 2024年08月31日 23:59  
                 **其他说明** : 仅限研究生  
-                
-            ??? Quote "[第二届“天网杯”网络安全大赛](https://twcup.cverc.org.cn/twb/twb2024)"  
-                **比赛名称** : [第二届“天网杯”网络安全大赛](https://twcup.cverc.org.cn/twb/twb2024)  
-                **比赛类型** : 团队赛|不超过5人  
-                **报名时间** : 2024年7月15日 00:00 - 2024年7月31日 23:59  
-                **比赛时间** : 2024年08月01日 00:00 - 2024年08月20日 23:59  
-                **其他说明** : QQ群: 622869531 组委会邮箱: tianwangcup@163.com  
                 
             ??? Quote "[2024年浙江省网络安全行业网络安全运维工程师项目职业技能竞赛](https://mp.weixin.qq.com/s/Uf12nfGPFHxz8QMe60cpDA)"  
                 **比赛名称** : [2024年浙江省网络安全行业网络安全运维工程师项目职业技能竞赛](https://mp.weixin.qq.com/s/Uf12nfGPFHxz8QMe60cpDA)  
@@ -780,7 +766,13 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-    
+            ??? Quote "[第二届“天网杯”网络安全大赛](https://twcup.cverc.org.cn/twb/twb2024)"  
+                **比赛名称** : [第二届“天网杯”网络安全大赛](https://twcup.cverc.org.cn/twb/twb2024)  
+                **比赛类型** : 团队赛|不超过5人  
+                **报名时间** : 2024年7月15日 00:00 - 2024年7月31日 23:59  
+                **比赛时间** : 2024年08月01日 00:00 - 2024年08月20日 23:59  
+                **其他说明** : QQ群: 622869531 组委会邮箱: tianwangcup@163.com  
+                
         === "国外赛事"
             ??? Quote "[Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)  
@@ -869,13 +861,6 @@ hide:
                 **报名时间** : 2024年04月07日 23:00 - 2024年06月05日 23:00  
                 **比赛时间** : 2024年04月10日 23:00 - 2024年06月05日 23:00  
                 **其他说明** : 作品赛，不提供更多信息，如有疑问请前往比赛通知页面 http://www.ciscn.cn/competition/securityCompetition?compet_id=39  
-                
-            ??? Quote "[矩阵杯](https://matrixcup.net/page/race/home/)"  
-                **比赛名称** : [矩阵杯](https://matrixcup.net/page/race/home/)  
-                **比赛类型** : 团队赛|1-4人  
-                **报名时间** : 2024年04月26日 00:00 - 2024年05月26日 00:00  
-                **比赛时间** : 2024年06月01日 00:00 - 2024年06月02日 00:00  
-                **其他说明** : 详情关注官网信息  
                 
         === "国外赛事"
             ??? Quote "[SCAN 2024 Digital Asset Tracing Challenge](https://scanctf2024.ctfd.io/)"  
