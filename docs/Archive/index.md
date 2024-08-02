@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅析JeecgBoot-jmreport最新权限绕过](https://y4tacker.github.io/2024/08/01/year/2024/8/%E6%B5%85%E6%9E%90JeecgBoot-jmreport%E6%9C%80%E6%96%B0%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-08-01
+
+    a602003e04d22db1e33c89fb4b06650a58b8bd453fabc9118a8a636036f7f24b4ef78306b08678ccfd82cb8b0c3e122d61b8d9c99f724268689a6295f4f071c6c725ead49be7f4550209a0e59fb40f7c959763f348b4fe2b810c51068361ac83ee4099...
     ### [帆软channel接口反序列化前世今生及最新版利用链总结](https://y4tacker.github.io/2024/07/28/year/2024/7/%E5%B8%86%E8%BD%AFchannel%E6%8E%A5%E5%8F%A3%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F%E5%8F%8A%E5%88%A9%E7%94%A8%E9%93%BE%E6%80%BB%E7%BB%93/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-07-28
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-04-17
 
     保研or就业 — 阿里云实习之旅始章​    昨天刚回成都，之前一直在问自己结果真的有那么重要吗，现在我也能鼓起勇气对自己说，不重要了，我的世界属于我，我的人生也没有那么多的观众，我也没必要在意他人的目光，我终于又成长了一点。实习经历​    （经历这部分就挑着重点的或者和时间性有关的说说，我也懒）​    七月中旬收拾好行李独自前往一个陌生的城市，起初对杭州的影响也就是赛博群里说的饭不好吃，说我...
-    ### [IP-Guard权限绕过浅析](https://y4tacker.github.io/2024/04/17/year/2024/4/IP-Guard%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E6%B5%85%E6%9E%90/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-04-17
-
-    IP-Guard权限绕过浅析比较适合新手学习的一个审计案例，代码简单无阅读障碍权限绕过IP-Guard采用CodeIgniter框架二次开发，从微步情报看作用仅是”可以绕过权限验证，调用后台接口进行任意文件读取、删除。攻击者可利用该漏洞读取数据库配置信息，进而接管数据库”通常来说，CodeIgniter中的鉴权通常是在控制器中的构造函数中因为代码不多，最后可以发现涉及文件读写的在mApplyLis...
 
 </div>
