@@ -82,15 +82,6 @@ hide:
             **其他说明** : QQ群: 560946020  
                 
     === "国外比赛"
-        ??? Quote "[TFC CTF 2024](https://ctf.thefewchosen.com/)"  
-            [![](https://ctftime.org/media/events/discord_logo_3.png){ width="200" align=left }](https://ctf.thefewchosen.com/)  
-            **比赛名称** : [TFC CTF 2024](https://ctf.thefewchosen.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-08-02 19:00:00 - 2024-08-04 19:00:00 UTC+8  
-            **比赛权重** : 41.68  
-            **赛事主办** : The Few Chosen (https://ctftime.org/team/140885)  
-            **添加日历** : https://ctftime.org/event/2423.ics  
-            
         ??? Quote "[CrewCTF 2024](https://2024.crewc.tf/)"  
             [![](https://ctftime.org/media/events/THC_new.png){ width="200" align=left }](https://2024.crewc.tf/)  
             **比赛名称** : [CrewCTF 2024](https://2024.crewc.tf/)  
@@ -117,6 +108,15 @@ hide:
             **比赛权重** : 73.82  
             **赛事主办** : BIZone (https://ctftime.org/team/32190)  
             **添加日历** : https://ctftime.org/event/2408.ics  
+            
+        ??? Quote "[Lexington Informatics Tournament CTF 2024](https://lit.lhsmathcs.org/)"  
+            [![](https://ctftime.org/media/events/square_CTFtime_LIT_1.png){ width="200" align=left }](https://lit.lhsmathcs.org/)  
+            **比赛名称** : [Lexington Informatics Tournament CTF 2024](https://lit.lhsmathcs.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-08-10 23:00:00 - 2024-08-13 11:59:59 UTC+8  
+            **比赛权重** : 46.25  
+            **赛事主办** : LIT CTF (https://ctftime.org/team/157660)  
+            **添加日历** : https://ctftime.org/event/2444.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

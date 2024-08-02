@@ -24,3 +24,12 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
+??? Quote "[TFC CTF 2024](https://ctf.thefewchosen.com/)"  
+    [![](https://ctftime.org/media/events/discord_logo_3.png){ width="200" align=left }](https://ctf.thefewchosen.com/)  
+    **比赛名称** : [TFC CTF 2024](https://ctf.thefewchosen.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-08-02 19:00:00 - 2024-08-04 19:00:00 UTC+8  
+    **比赛权重** : 41.68  
+    **赛事主办** : The Few Chosen (https://ctftime.org/team/140885)  
+    **添加日历** : https://ctftime.org/event/2423.ics  
+    

@@ -71,15 +71,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[TFC CTF 2024](https://ctf.thefewchosen.com/)"  
-    [![](https://ctftime.org/media/events/discord_logo_3.png){ width="200" align=left }](https://ctf.thefewchosen.com/)  
-    **比赛名称** : [TFC CTF 2024](https://ctf.thefewchosen.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-08-02 19:00:00 - 2024-08-04 19:00:00 UTC+8  
-    **比赛权重** : 41.68  
-    **赛事主办** : The Few Chosen (https://ctftime.org/team/140885)  
-    **添加日历** : https://ctftime.org/event/2423.ics  
-    
 ??? Quote "[CrewCTF 2024](https://2024.crewc.tf/)"  
     [![](https://ctftime.org/media/events/THC_new.png){ width="200" align=left }](https://2024.crewc.tf/)  
     **比赛名称** : [CrewCTF 2024](https://2024.crewc.tf/)  
