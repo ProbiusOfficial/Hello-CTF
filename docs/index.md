@@ -82,15 +82,6 @@ hide:
             **其他说明** : QQ群: 560946020  
                 
     === "国外比赛"
-        ??? Quote "[CrewCTF 2024](https://2024.crewc.tf/)"  
-            [![](https://ctftime.org/media/events/THC_new.png){ width="200" align=left }](https://2024.crewc.tf/)  
-            **比赛名称** : [CrewCTF 2024](https://2024.crewc.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-08-03 01:00:00 - 2024-08-05 01:00:00 UTC+8  
-            **比赛权重** : 26.89  
-            **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
-            **添加日历** : https://ctftime.org/event/2223.ics  
-            
         ??? Quote "[n00bzCTF 2024](https://ctf.n00bzunit3d.xyz/)"  
             [![](https://ctftime.org/media/events/logo_ascii_1.png){ width="200" align=left }](https://ctf.n00bzunit3d.xyz/)  
             **比赛名称** : [n00bzCTF 2024](https://ctf.n00bzunit3d.xyz/)  
@@ -117,6 +108,15 @@ hide:
             **比赛权重** : 46.25  
             **赛事主办** : LIT CTF (https://ctftime.org/team/157660)  
             **添加日历** : https://ctftime.org/event/2444.ics  
+            
+        ??? Quote "[idekCTF 2024](https://ctf.idek.team/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ctf.idek.team/)  
+            **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-08-17 08:00:00 - 2024-08-19 08:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : idek (https://ctftime.org/team/157039)  
+            **添加日历** : https://ctftime.org/event/2304.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

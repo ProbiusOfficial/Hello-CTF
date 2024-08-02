@@ -33,3 +33,12 @@ comments: true
     **赛事主办** : The Few Chosen (https://ctftime.org/team/140885)  
     **添加日历** : https://ctftime.org/event/2423.ics  
     
+??? Quote "[CrewCTF 2024](https://2024.crewc.tf/)"  
+    [![](https://ctftime.org/media/events/THC_new.png){ width="200" align=left }](https://2024.crewc.tf/)  
+    **比赛名称** : [CrewCTF 2024](https://2024.crewc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-08-03 01:00:00 - 2024-08-05 01:00:00 UTC+8  
+    **比赛权重** : 26.89  
+    **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
+    **添加日历** : https://ctftime.org/event/2223.ics  
+    
