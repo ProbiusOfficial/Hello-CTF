@@ -56,7 +56,7 @@ sudo apt install docker.io
 
 #### docker.ce
 
-由Docker官方维护的版本，采用 go 的方式管理依赖，如果您要在开发/生产环境中使用Socker，推荐使用该版本。  
+由Docker官方维护的版本，采用 go 的方式管理依赖，如果您要在开发/生产环境中使用Docker，推荐使用该版本。  
 如果您的Linux版本为Ubuntu/Debian，可以使用一下命令自动安装：
 
 ```bash
