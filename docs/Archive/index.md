@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [JeecgBoot最新版权限绕过第二弹之内存马注入实录](https://y4tacker.github.io/2024/08/02/year/2024/8/%E6%9C%80%E6%96%B0%E7%89%88JeecgBoot%E7%AC%AC%E4%BA%8C%E5%BC%B9%E4%B9%8B%E5%8F%97%E9%99%90%E6%9D%A1%E4%BB%B6%E4%B8%8B%E7%9A%84%E5%86%85%E5%AD%98%E9%A9%AC%E6%B3%A8%E5%85%A5%E5%AE%9E%E5%BD%95/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-08-02
+
+    2356948a1ad7c887c79f19fc812ea158476a2d05ad621a8e8ad43ad15eed6aa04358928d8237c256deacbb01a81ac6f727557979123b7d202e97fdc8e9cd9984ac9dc71337c850b5e565eea7d7034b42332e499f752162ae5c009ba39705e4596a7e95...
     ### [浅析JeecgBoot-jmreport最新权限绕过](https://y4tacker.github.io/2024/08/01/year/2024/8/%E6%B5%85%E6%9E%90JeecgBoot-jmreport%E6%9C%80%E6%96%B0%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-08-01
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-04-19
 
     浅析SmartBi逻辑漏洞(3)前言这个系列终于到了第三篇，指条路，如果忘记了可以再看看之前写的文章浅析Smartbi逻辑漏洞浅析Smartbi逻辑漏洞(2)之前我就曾在第二篇末尾提到过（没人继续深入看），仍然存在一个问题，今天这个问题终于得以修复当然老规矩，这里仅分享逻辑漏洞部分补丁绕过思路，不提供完整payload补丁补丁中新增了一个规则12345"rules": [{    "classNa...
-    ### [保研or就业---阿里云实习之旅](https://y4tacker.github.io/2024/04/17/year/2022/10/%E4%BF%9D%E7%A0%94or%E5%B0%B1%E4%B8%9A---%E9%98%BF%E9%87%8C%E4%BA%91%E5%AE%9E%E4%B9%A0%E4%B9%8B%E6%97%85/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-04-17
-
-    保研or就业 — 阿里云实习之旅始章​    昨天刚回成都，之前一直在问自己结果真的有那么重要吗，现在我也能鼓起勇气对自己说，不重要了，我的世界属于我，我的人生也没有那么多的观众，我也没必要在意他人的目光，我终于又成长了一点。实习经历​    （经历这部分就挑着重点的或者和时间性有关的说说，我也懒）​    七月中旬收拾好行李独自前往一个陌生的城市，起初对杭州的影响也就是赛博群里说的饭不好吃，说我...
 
 </div>
