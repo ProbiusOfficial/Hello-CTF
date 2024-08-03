@@ -285,6 +285,13 @@ hide:
             适度CTF益脑，沉迷CTF伤身。合理安排时间，享受健康生活。
     
     === "*正在报名*"
+        ??? Quote "[2024年“羊城杯”粤港澳大湾区网络安全大赛](https://2024ycb.dasctf.com/compete/compete?matchCode=87659256dbc7485&competeId=268)"  
+            **比赛名称** : [2024年“羊城杯”粤港澳大湾区网络安全大赛](https://2024ycb.dasctf.com/compete/compete?matchCode=87659256dbc7485&competeId=268)  
+            **比赛类型** : 个人赛|团队赛 1-4人  
+            **报名时间** : 2024年08月01日 18:45 - 2024年08月20日 23:59  
+            **比赛时间** : 2024年08月27日 09:00 - 2024年08月28日 09:00  
+            **其他说明** : QQ群1：1148320638 QQ群2：696494060 | 研究生、本科、高职、相关企业、党政机关及事业单位和港澳特邀  
+            
         ??? Quote "[第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)"  
             **比赛名称** : [第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)  
             **比赛类型** : 个人赛 and 团体赛|3人  
@@ -322,6 +329,13 @@ hide:
             
     === "*即将开始*"
         === "国内赛事"
+            ??? Quote "[2024年“羊城杯”粤港澳大湾区网络安全大赛](https://2024ycb.dasctf.com/compete/compete?matchCode=87659256dbc7485&competeId=268)"  
+                **比赛名称** : [2024年“羊城杯”粤港澳大湾区网络安全大赛](https://2024ycb.dasctf.com/compete/compete?matchCode=87659256dbc7485&competeId=268)  
+                **比赛类型** : 个人赛|团队赛 1-4人  
+                **报名时间** : 2024年08月01日 18:45 - 2024年08月20日 23:59  
+                **比赛时间** : 2024年08月27日 09:00 - 2024年08月28日 09:00  
+                **其他说明** : QQ群1：1148320638 QQ群2：696494060 | 研究生、本科、高职、相关企业、党政机关及事业单位和港澳特邀  
+                
             ??? Quote "[第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)"  
                 **比赛名称** : [第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)  
                 **比赛类型** : 个人赛 and 团体赛|3人  
@@ -386,15 +400,6 @@ hide:
                 **其他说明** : QQ群：676547374 或 566180593  
                 
         === "国外赛事"
-            ??? Quote "[n00bzCTF 2024](https://ctf.n00bzunit3d.xyz/)"  
-                [![](https://ctftime.org/media/events/logo_ascii_1.png){ width="200" align=left }](https://ctf.n00bzunit3d.xyz/)  
-                **比赛名称** : [n00bzCTF 2024](https://ctf.n00bzunit3d.xyz/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-08-03 09:00:00 - 2024-08-05 09:00:00 UTC+8  
-                **比赛权重** : 24.23  
-                **赛事主办** : n00bzUnit3d (https://ctftime.org/team/152491)  
-                **添加日历** : https://ctftime.org/event/2378.ics  
-                
             ??? Quote "[CTFZone 2024 Quals](https://ctf.bi.zone/)"  
                 [![](https://ctftime.org/media/events/b98226ad9a255846e456617d99bde1de.png){ width="200" align=left }](https://ctf.bi.zone/)  
                 **比赛名称** : [CTFZone 2024 Quals](https://ctf.bi.zone/)  
@@ -782,6 +787,15 @@ hide:
                 **比赛权重** : 26.89  
                 **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
                 **添加日历** : https://ctftime.org/event/2223.ics  
+                
+            ??? Quote "[n00bzCTF 2024](https://ctf.n00bzunit3d.xyz/)"  
+                [![](https://ctftime.org/media/events/logo_ascii_1.png){ width="200" align=left }](https://ctf.n00bzunit3d.xyz/)  
+                **比赛名称** : [n00bzCTF 2024](https://ctf.n00bzunit3d.xyz/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-08-03 09:00:00 - 2024-08-05 09:00:00 UTC+8  
+                **比赛权重** : 24.23  
+                **赛事主办** : n00bzUnit3d (https://ctftime.org/team/152491)  
+                **添加日历** : https://ctftime.org/event/2378.ics  
                 
     === "*已经结束*"
         === "国内赛事"
