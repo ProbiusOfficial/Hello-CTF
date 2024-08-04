@@ -91,6 +91,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[TFC CTF 2024](https://ctf.thefewchosen.com/)"  
+    [![](https://ctftime.org/media/events/discord_logo_3.png){ width="200" align=left }](https://ctf.thefewchosen.com/)  
+    **比赛名称** : [TFC CTF 2024](https://ctf.thefewchosen.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-08-02 19:00:00 - 2024-08-04 19:00:00 UTC+8  
+    **比赛权重** : 41.68  
+    **赛事主办** : The Few Chosen (https://ctftime.org/team/140885)  
+    **添加日历** : https://ctftime.org/event/2423.ics  
+    
 ??? Quote "[SCAN 2024 Digital Asset Tracing Challenge](https://scanctf2024.ctfd.io/)"  
     [![](https://ctftime.org/media/events/Logo_blue2x.png){ width="200" align=left }](https://scanctf2024.ctfd.io/)  
     **比赛名称** : [SCAN 2024 Digital Asset Tracing Challenge](https://scanctf2024.ctfd.io/)  
@@ -981,13 +990,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : GEEKCON (https://ctftime.org/team/255059)  
     **添加日历** : https://ctftime.org/event/2335.ics  
-    
-??? Quote "[CPCTF 2024](https://cpctf.space/)"  
-    [![](https://ctftime.org/media/events/624f1650cfdb45fb857a62b9304d4a1c.png){ width="200" align=left }](https://cpctf.space/)  
-    **比赛名称** : [CPCTF 2024](https://cpctf.space/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-20 09:00:00 - 2024-04-21 15:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : traP (https://ctftime.org/team/62510)  
-    **添加日历** : https://ctftime.org/event/2338.ics  
     
