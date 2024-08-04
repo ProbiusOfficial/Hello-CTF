@@ -480,18 +480,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CrewCTF 2024",
-        "比赛时间": "2024-08-03 01:00:00 - 2024-08-05 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2223.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2024.crewc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/THC_new.png",
-        "比赛权重": "26.89",
-        "赛事主办": "thehackerscrew (https://ctftime.org/team/85618)",
-        "比赛ID": "738",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "n00bzCTF 2024",
         "比赛时间": "2024-08-03 09:00:00 - 2024-08-05 09:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2378.ics",
@@ -502,6 +490,18 @@
         "赛事主办": "n00bzUnit3d (https://ctftime.org/team/152491)",
         "比赛ID": "792",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CrewCTF 2024",
+        "比赛时间": "2024-08-03 01:00:00 - 2024-08-05 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2223.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2024.crewc.tf/",
+        "比赛标志": "https://ctftime.org/media/events/THC_new.png",
+        "比赛权重": "26.89",
+        "赛事主办": "thehackerscrew (https://ctftime.org/team/85618)",
+        "比赛ID": "738",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "TFC CTF 2024",
@@ -1689,18 +1689,6 @@
         "比赛权重": "22.46",
         "赛事主办": "NUSGreyhats (https://ctftime.org/team/16740)",
         "比赛ID": "778",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "AVSS Contest 2024",
-        "比赛时间": "2024-04-20 10:00:00 - 2024-04-22 10:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2335.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://avss.geekcon.top/",
-        "比赛标志": "https://ctftime.org/media/events/AVSS.png",
-        "比赛权重": "25.00",
-        "赛事主办": "GEEKCON (https://ctftime.org/team/255059)",
-        "比赛ID": "976",
         "比赛状态": "past"
     }
 ]
