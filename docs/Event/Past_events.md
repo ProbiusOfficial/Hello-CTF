@@ -82,13 +82,6 @@ comments: true
     **比赛时间** : 2024年06月06日 10:00 - 2024年06月06日 14:00  
     **其他说明** : QQ群：623112042  
     
-??? Quote "第十七届全国大学生信息安全竞赛 - 作品赛"  
-    **比赛名称** : [第十七届全国大学生信息安全竞赛 - 作品赛](http://www.ciscn.cn/competition/securityCompetition?compet_id=39)  
-    **比赛类型** : 作品赛  
-    **报名时间** : 2024年04月07日 23:00 - 2024年06月05日 23:00  
-    **比赛时间** : 2024年04月10日 23:00 - 2024年06月05日 23:00  
-    **其他说明** : 作品赛，不提供更多信息，如有疑问请前往比赛通知页面 http://www.ciscn.cn/competition/securityCompetition?compet_id=39  
-    
 
 ## 国际赛事
 ??? Quote "[TFC CTF 2024](https://ctf.thefewchosen.com/)"  
