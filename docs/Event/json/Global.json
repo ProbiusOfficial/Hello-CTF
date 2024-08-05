@@ -489,7 +489,7 @@
         "比赛权重": "24.23",
         "赛事主办": "n00bzUnit3d (https://ctftime.org/team/152491)",
         "比赛ID": "792",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "CrewCTF 2024",
@@ -1677,18 +1677,6 @@
         "比赛权重": "0.00",
         "赛事主办": "YCF (https://ctftime.org/team/179685)",
         "比赛ID": "1101",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Grey Cat The Flag 2024 Qualifiers",
-        "比赛时间": "2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2242.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.nusgreyhats.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "22.46",
-        "赛事主办": "NUSGreyhats (https://ctftime.org/team/16740)",
-        "比赛ID": "778",
         "比赛状态": "past"
     }
 ]

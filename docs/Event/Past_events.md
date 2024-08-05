@@ -84,6 +84,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[n00bzCTF 2024](https://ctf.n00bzunit3d.xyz/)"  
+    [![](https://ctftime.org/media/events/logo_ascii_1.png){ width="200" align=left }](https://ctf.n00bzunit3d.xyz/)  
+    **比赛名称** : [n00bzCTF 2024](https://ctf.n00bzunit3d.xyz/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-08-03 09:00:00 - 2024-08-05 09:00:00 UTC+8  
+    **比赛权重** : 24.23  
+    **赛事主办** : n00bzUnit3d (https://ctftime.org/team/152491)  
+    **添加日历** : https://ctftime.org/event/2378.ics  
+    
 ??? Quote "[CrewCTF 2024](https://2024.crewc.tf/)"  
     [![](https://ctftime.org/media/events/THC_new.png){ width="200" align=left }](https://2024.crewc.tf/)  
     **比赛名称** : [CrewCTF 2024](https://2024.crewc.tf/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : YCF (https://ctftime.org/team/179685)  
     **添加日历** : https://ctftime.org/event/2331.ics  
-    
-??? Quote "[Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
-    **比赛名称** : [Grey Cat The Flag 2024 Qualifiers](https://ctf.nusgreyhats.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8  
-    **比赛权重** : 22.46  
-    **赛事主办** : NUSGreyhats (https://ctftime.org/team/16740)  
-    **添加日历** : https://ctftime.org/event/2242.ics  
     
