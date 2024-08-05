@@ -215,7 +215,7 @@ comments: true
     **比赛名称** : [OSCTF](https://ctf.os.ftp.sh/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-07-13 08:30:00 - 2024-07-14 00:30:00 UTC+8  
-    **比赛权重** : 23.23  
+    **比赛权重** : 23.29  
     **赛事主办** : OSCTF (https://ctftime.org/team/307415)  
     **添加日历** : https://ctftime.org/event/2416.ics  
     
