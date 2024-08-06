@@ -113,6 +113,10 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-06-30
 
     c4f195e047c82f6832aad96b2b9ff0b06473ee6316a0ad546ce47ed7c55f3d2b3da5adb448e1093da0a53ef4866005d7d883c8217c7025cccd4f5ed01fcbbd0220e5e1cfea035436d835a63462858f54bc8661e0cf09444acdfc71e835aa860434a7af...
+    ### [Apache OFBiz Authentication Bypass(CVE-2024-38856)](https://y4tacker.github.io/2024/06/23/year/2024/8/Apache-OFBiz-Authentication-Bypass-CVE-2024-38856/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-06-23
+
+    写在前面​    自去年CVE-2023-51467爆出后，起初我是不太想再看这个系统了，但年初连续的三个权限绕过相关的CVE编号(CVE-2024-25065/CVE-2024-32113/CVE-2024-36104)又让我产生了好奇，随着对三个历史漏洞分析的过程中，我也发现这三个漏洞的影响面其实并没有特别严重，但思路值得学习(本质是低权限账号提权，利用前提是需要知道低权限账号的密码)，但随着...
     ### [浅析Panalog-SQL注入到命令执行(Version<20240130)](https://y4tacker.github.io/2024/06/05/year/2024/6/%E6%B5%85%E6%9E%90Panalog-SQL%E6%B3%A8%E5%85%A5%E5%88%B0%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-Version-20240130/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-06-05
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-04-23
 
     浅析CrushFTP之VFS逃逸写在前面本篇的内容可能并不是最新的漏洞(毕竟我也没最新版代码)，是去年十一月份更新的漏洞，只是当时由于各种各样的项目导致分析被搁置了许久，再次关注它则是因为看到出了新的安全公告，又想起来当时并未分析完全，于是接着之前的工作继续研究（当然另一方面是因为没有各个版本的代码所以不想看最新版的漏洞，另外漏洞的描述中也并不能让我看出什么）再次回顾，从描述中可以看到，漏洞利用的...
-    ### [浅析SmartBi逻辑漏洞(3)](https://y4tacker.github.io/2024/04/19/year/2024/4/%E6%B5%85%E6%9E%90SmartBi%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E-3/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-04-19
-
-    浅析SmartBi逻辑漏洞(3)前言这个系列终于到了第三篇，指条路，如果忘记了可以再看看之前写的文章浅析Smartbi逻辑漏洞浅析Smartbi逻辑漏洞(2)之前我就曾在第二篇末尾提到过（没人继续深入看），仍然存在一个问题，今天这个问题终于得以修复当然老规矩，这里仅分享逻辑漏洞部分补丁绕过思路，不提供完整payload补丁补丁中新增了一个规则12345"rules": [{    "classNa...
 
 </div>
