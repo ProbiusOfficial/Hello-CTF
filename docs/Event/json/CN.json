@@ -3,6 +3,17 @@
     "data": {
         "result": [
             {
+                "name": "MoeCTF 2024",
+                "link": "https://ctf.xidian.edu.cn",
+                "type": "个人赛",
+                "bmks": "2024年08月07日 14:23",
+                "bmjz": "2024年10月14日 21:00",
+                "bsks": "2024年08月10日 09:00",
+                "bsjs": "2024年10月14日 21:00",
+                "readmore": "QQ 群：187536315",
+                "status": 1
+            },
+            {
                 "name": "BaseCTF 2024 高校联合新生赛",
                 "link": "https://www.basectf.fun/",
                 "type": "1-2 人",
