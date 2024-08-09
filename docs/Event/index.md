@@ -285,6 +285,13 @@ hide:
             适度CTF益脑，沉迷CTF伤身。合理安排时间，享受健康生活。
     
     === "*正在报名*"
+        ??? Quote "[BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)"  
+            **比赛名称** : [BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)  
+            **比赛类型** : 1-2 人  
+            **报名时间** : 2024年08月5日 00:00 - 2024年09月30日 21:00  
+            **比赛时间** : 2024年08月15日 09:00 - 2024年09月30日 21:00  
+            **其他说明** : QQ 群：530184592 面向新生的比赛，题目分 Week 1 - 7，从入门到挑战循序渐进  
+            
         ??? Quote "[2024年“羊城杯”粤港澳大湾区网络安全大赛](https://2024ycb.dasctf.com/compete/compete?matchCode=87659256dbc7485&competeId=268)"  
             **比赛名称** : [2024年“羊城杯”粤港澳大湾区网络安全大赛](https://2024ycb.dasctf.com/compete/compete?matchCode=87659256dbc7485&competeId=268)  
             **比赛类型** : 个人赛|团队赛 1-4人  
@@ -329,6 +336,13 @@ hide:
             
     === "*即将开始*"
         === "国内赛事"
+            ??? Quote "[BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)"  
+                **比赛名称** : [BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)  
+                **比赛类型** : 1-2 人  
+                **报名时间** : 2024年08月5日 00:00 - 2024年09月30日 21:00  
+                **比赛时间** : 2024年08月15日 09:00 - 2024年09月30日 21:00  
+                **其他说明** : QQ 群：530184592 面向新生的比赛，题目分 Week 1 - 7，从入门到挑战循序渐进  
+                
             ??? Quote "[2024年“羊城杯”粤港澳大湾区网络安全大赛](https://2024ycb.dasctf.com/compete/compete?matchCode=87659256dbc7485&competeId=268)"  
                 **比赛名称** : [2024年“羊城杯”粤港澳大湾区网络安全大赛](https://2024ycb.dasctf.com/compete/compete?matchCode=87659256dbc7485&competeId=268)  
                 **比赛类型** : 个人赛|团队赛 1-4人  
