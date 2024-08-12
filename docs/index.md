@@ -82,24 +82,6 @@ hide:
             **其他说明** : QQ群1：1148320638 QQ群2：696494060 | 研究生、本科、高职、相关企业、党政机关及事业单位和港澳特邀  
                 
     === "国外比赛"
-        ??? Quote "[CTFZone 2024 Quals](https://ctf.bi.zone/)"  
-            [![](https://ctftime.org/media/events/b98226ad9a255846e456617d99bde1de.png){ width="200" align=left }](https://ctf.bi.zone/)  
-            **比赛名称** : [CTFZone 2024 Quals](https://ctf.bi.zone/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-08-10 17:00:00 - 2024-08-11 17:00:00 UTC+8  
-            **比赛权重** : 73.82  
-            **赛事主办** : BIZone (https://ctftime.org/team/32190)  
-            **添加日历** : https://ctftime.org/event/2408.ics  
-            
-        ??? Quote "[Lexington Informatics Tournament CTF 2024](https://lit.lhsmathcs.org/)"  
-            [![](https://ctftime.org/media/events/square_CTFtime_LIT_1.png){ width="200" align=left }](https://lit.lhsmathcs.org/)  
-            **比赛名称** : [Lexington Informatics Tournament CTF 2024](https://lit.lhsmathcs.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-08-10 23:00:00 - 2024-08-13 11:59:59 UTC+8  
-            **比赛权重** : 46.25  
-            **赛事主办** : LIT CTF (https://ctftime.org/team/157660)  
-            **添加日历** : https://ctftime.org/event/2444.ics  
-            
         ??? Quote "[idekCTF 2024](https://ctf.idek.team/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://ctf.idek.team/)  
             **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
@@ -117,6 +99,24 @@ hide:
             **比赛权重** : 36.96  
             **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
             **添加日历** : https://ctftime.org/event/2243.ics  
+            
+        ??? Quote "[Block Harbor VicOne Automotive CTF - Season 2](https://ctf.blockharbor.io/)"  
+            [![](https://ctftime.org/media/events/blockharbor.jpg){ width="200" align=left }](https://ctf.blockharbor.io/)  
+            **比赛名称** : [Block Harbor VicOne Automotive CTF - Season 2](https://ctf.blockharbor.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-08-24 22:00:00 - 2024-09-09 10:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : bhctf (https://ctftime.org/team/251542)  
+            **添加日历** : https://ctftime.org/event/2387.ics  
+            
+        ??? Quote "[Codegate CTF 2024 Finals](http://www.codegate.org/)"  
+            [![](https://ctftime.org){ width="200" align=left }](http://www.codegate.org/)  
+            **比赛名称** : [Codegate CTF 2024 Finals](http://www.codegate.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-08-29 09:00:00 - 2024-08-30 09:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
+            **添加日历** : https://ctftime.org/event/2347.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

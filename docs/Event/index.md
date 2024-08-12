@@ -386,24 +386,6 @@ hide:
                 **其他说明** : QQ群：676547374 或 566180593  
                 
         === "国外赛事"
-            ??? Quote "[CTFZone 2024 Quals](https://ctf.bi.zone/)"  
-                [![](https://ctftime.org/media/events/b98226ad9a255846e456617d99bde1de.png){ width="200" align=left }](https://ctf.bi.zone/)  
-                **比赛名称** : [CTFZone 2024 Quals](https://ctf.bi.zone/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-08-10 17:00:00 - 2024-08-11 17:00:00 UTC+8  
-                **比赛权重** : 73.82  
-                **赛事主办** : BIZone (https://ctftime.org/team/32190)  
-                **添加日历** : https://ctftime.org/event/2408.ics  
-                
-            ??? Quote "[Lexington Informatics Tournament CTF 2024](https://lit.lhsmathcs.org/)"  
-                [![](https://ctftime.org/media/events/square_CTFtime_LIT_1.png){ width="200" align=left }](https://lit.lhsmathcs.org/)  
-                **比赛名称** : [Lexington Informatics Tournament CTF 2024](https://lit.lhsmathcs.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-08-10 23:00:00 - 2024-08-13 11:59:59 UTC+8  
-                **比赛权重** : 46.25  
-                **赛事主办** : LIT CTF (https://ctftime.org/team/157660)  
-                **添加日历** : https://ctftime.org/event/2444.ics  
-                
             ??? Quote "[idekCTF 2024](https://ctf.idek.team/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.idek.team/)  
                 **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
@@ -450,7 +432,7 @@ hide:
                 **添加日历** : https://ctftime.org/event/2428.ics  
                 
             ??? Quote "[CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.cisaicsctf.com/)  
+                [![](https://ctftime.org/media/events/CTF_Drifveil_Logo_2-1.png){ width="200" align=left }](https://ctf.cisaicsctf.com/)  
                 **比赛名称** : [CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-09-01 01:00:00 - 2024-09-05 00:00:00 UTC+8  
@@ -777,6 +759,15 @@ hide:
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
                 
+            ??? Quote "[Lexington Informatics Tournament CTF 2024](https://lit.lhsmathcs.org/)"  
+                [![](https://ctftime.org/media/events/square_CTFtime_LIT_1.png){ width="200" align=left }](https://lit.lhsmathcs.org/)  
+                **比赛名称** : [Lexington Informatics Tournament CTF 2024](https://lit.lhsmathcs.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-08-10 23:00:00 - 2024-08-13 11:59:59 UTC+8  
+                **比赛权重** : 46.25  
+                **赛事主办** : LIT CTF (https://ctftime.org/team/157660)  
+                **添加日历** : https://ctftime.org/event/2444.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[“广东通信杯”广东省信息通信行业第四届网络安全技能大赛暨第八届全国职工职业技能大赛网络与信息安全管理员赛项广东省选拔赛](https://gdca.miit.gov.cn/zwgk/tzgg/art/2024/art_c220b24f198346e08bb0074f511a6121.html)"  
@@ -843,6 +834,15 @@ hide:
                 **其他说明** : QQ群：871983989  
                 
         === "国外赛事"
+            ??? Quote "[CTFZone 2024 Quals](https://ctf.bi.zone/)"  
+                [![](https://ctftime.org/media/events/b98226ad9a255846e456617d99bde1de.png){ width="200" align=left }](https://ctf.bi.zone/)  
+                **比赛名称** : [CTFZone 2024 Quals](https://ctf.bi.zone/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-08-10 17:00:00 - 2024-08-11 17:00:00 UTC+8  
+                **比赛权重** : 73.82  
+                **赛事主办** : BIZone (https://ctftime.org/team/32190)  
+                **添加日历** : https://ctftime.org/event/2408.ics  
+                
             ??? Quote "[n00bzCTF 2024](https://ctf.n00bzunit3d.xyz/)"  
                 [![](https://ctftime.org/media/events/logo_ascii_1.png){ width="200" align=left }](https://ctf.n00bzunit3d.xyz/)  
                 **比赛名称** : [n00bzCTF 2024](https://ctf.n00bzunit3d.xyz/)  
@@ -1733,15 +1733,6 @@ hide:
                 **比赛权重** : 35.74  
                 **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
                 **添加日历** : https://ctftime.org/event/2247.ics  
-                
-            ??? Quote "[Nexus Elites CTF](https://nexusctf.ycfteam.in/)"  
-                [![](https://ctftime.org/media/events/CTF_logo.jpg){ width="200" align=left }](https://nexusctf.ycfteam.in/)  
-                **比赛名称** : [Nexus Elites CTF](https://nexusctf.ycfteam.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : YCF (https://ctftime.org/team/179685)  
-                **添加日历** : https://ctftime.org/event/2331.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

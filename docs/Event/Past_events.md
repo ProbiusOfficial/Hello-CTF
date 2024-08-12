@@ -70,6 +70,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[CTFZone 2024 Quals](https://ctf.bi.zone/)"  
+    [![](https://ctftime.org/media/events/b98226ad9a255846e456617d99bde1de.png){ width="200" align=left }](https://ctf.bi.zone/)  
+    **比赛名称** : [CTFZone 2024 Quals](https://ctf.bi.zone/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-08-10 17:00:00 - 2024-08-11 17:00:00 UTC+8  
+    **比赛权重** : 73.82  
+    **赛事主办** : BIZone (https://ctftime.org/team/32190)  
+    **添加日历** : https://ctftime.org/event/2408.ics  
+    
 ??? Quote "[n00bzCTF 2024](https://ctf.n00bzunit3d.xyz/)"  
     [![](https://ctftime.org/media/events/logo_ascii_1.png){ width="200" align=left }](https://ctf.n00bzunit3d.xyz/)  
     **比赛名称** : [n00bzCTF 2024](https://ctf.n00bzunit3d.xyz/)  
@@ -960,13 +969,4 @@ comments: true
     **比赛权重** : 35.74  
     **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
     **添加日历** : https://ctftime.org/event/2247.ics  
-    
-??? Quote "[Nexus Elites CTF](https://nexusctf.ycfteam.in/)"  
-    [![](https://ctftime.org/media/events/CTF_logo.jpg){ width="200" align=left }](https://nexusctf.ycfteam.in/)  
-    **比赛名称** : [Nexus Elites CTF](https://nexusctf.ycfteam.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : YCF (https://ctftime.org/team/179685)  
-    **添加日历** : https://ctftime.org/event/2331.ics  
     

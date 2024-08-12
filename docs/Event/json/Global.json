@@ -1,29 +1,5 @@
 [
     {
-        "比赛名称": "CTFZone 2024 Quals",
-        "比赛时间": "2024-08-10 17:00:00 - 2024-08-11 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2408.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.bi.zone/",
-        "比赛标志": "https://ctftime.org/media/events/b98226ad9a255846e456617d99bde1de.png",
-        "比赛权重": "73.82",
-        "赛事主办": "BIZone (https://ctftime.org/team/32190)",
-        "比赛ID": "201",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "Lexington Informatics Tournament CTF 2024",
-        "比赛时间": "2024-08-10 23:00:00 - 2024-08-13 11:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2444.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://lit.lhsmathcs.org/",
-        "比赛标志": "https://ctftime.org/media/events/square_CTFtime_LIT_1.png",
-        "比赛权重": "46.25",
-        "赛事主办": "LIT CTF (https://ctftime.org/team/157660)",
-        "比赛ID": "646",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "idekCTF 2024",
         "比赛时间": "2024-08-17 08:00:00 - 2024-08-19 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2304.ics",
@@ -89,7 +65,7 @@
         "添加日历": "https://ctftime.org/event/2404.ics",
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.cisaicsctf.com/",
-        "比赛标志": "https://ctftime.org",
+        "比赛标志": "https://ctftime.org/media/events/CTF_Drifveil_Logo_2-1.png",
         "比赛权重": "0.00",
         "赛事主办": "CISA ICSJWG (https://ctftime.org/team/182074)",
         "比赛ID": "784",
@@ -478,6 +454,30 @@
         "赛事主办": "Exherbo GNU/Linux (https://ctftime.org/team/275214)",
         "比赛ID": "1027",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Lexington Informatics Tournament CTF 2024",
+        "比赛时间": "2024-08-10 23:00:00 - 2024-08-13 11:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2444.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://lit.lhsmathcs.org/",
+        "比赛标志": "https://ctftime.org/media/events/square_CTFtime_LIT_1.png",
+        "比赛权重": "46.25",
+        "赛事主办": "LIT CTF (https://ctftime.org/team/157660)",
+        "比赛ID": "646",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CTFZone 2024 Quals",
+        "比赛时间": "2024-08-10 17:00:00 - 2024-08-11 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2408.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bi.zone/",
+        "比赛标志": "https://ctftime.org/media/events/b98226ad9a255846e456617d99bde1de.png",
+        "比赛权重": "73.82",
+        "赛事主办": "BIZone (https://ctftime.org/team/32190)",
+        "比赛ID": "201",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "n00bzCTF 2024",
@@ -1665,18 +1665,6 @@
         "比赛权重": "35.74",
         "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
         "比赛ID": "246",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Nexus Elites CTF",
-        "比赛时间": "2024-04-20 12:00:00 - 2024-04-21 12:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2331.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nexusctf.ycfteam.in/",
-        "比赛标志": "https://ctftime.org/media/events/CTF_logo.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "YCF (https://ctftime.org/team/179685)",
-        "比赛ID": "1101",
         "比赛状态": "past"
     }
 ]
