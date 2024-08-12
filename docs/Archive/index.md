@@ -137,6 +137,14 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-05-07
 
     浅析瑞友天翼应用虚拟化系统前台反序列化(V<=7.0.5.1)看到应急公告简单分析学习一波，漏洞不算难，代码也比较简单，有些细节还是蛮有意思，算是温故而知新，顺便也捡起一些很久没碰的PHP知识鉴权这个系统文件不多，功能点大多是需要登录，我们可以重点关注一下鉴权部分，在为数不多的控制器当中可以看到，在admin/index两个控制器中部分功能点都存在对于登录用户的判断，分别对应函数checklogi...
+    ### [可能是全网第一个粤语Qwen/从零开始的LLM微调教程](https://blog.stv.lol/archives/88/)  
+    >by [Steven Lynn's Blog](https://blog.stv.lol), 2024-05-05
+
+    这几天趁着五一假期在家里，做了一下LLM微调大概是全网第一个做粤语微调的Qwen-7B，还请到huggingface和魔搭社区点心支持一下repo:https://huggingface.co/stvlynn/Qwen-7B-Chat-Cantonesehttps://www.modelscope.cn/models/stvlynn/Qwen-7B-Chat-Cantonese今天就整理一下微调的...
+    ### [在闲置手机上部署大模型并开启公网访问](https://blog.stv.lol/archives/87/)  
+    >by [Steven Lynn's Blog](https://blog.stv.lol), 2024-05-01
+
+    前言前两天微软发布了phi3大模型，是目前少数可以在移动设备上运行的本地语言模型，号称可以和ChatGPT-3.5相当，仅3.8亿参数本文将教你如何在本地部署这个大模型，利用闲置的手机，并且让公网的设备也能远程访问Step 0: Termux下载安装需要注意的是不要从play上下载termux，否则会出现报错，应该从F-droid上下载安装换源：因为你懂的原因，需要把软件源换成国内源清华源的文档里...
     ### [CrushFTP后利用提权分析(CVE-2024-4040)](https://y4tacker.github.io/2024/04/25/year/2024/4/CrushFTP%E5%90%8E%E5%88%A9%E7%94%A8%E6%8F%90%E6%9D%83%E5%88%86%E6%9E%90-CVE-2024-4040/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-04-25
 
@@ -145,13 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-04-23
 
     浅析CrushFTP之VFS逃逸写在前面本篇的内容可能并不是最新的漏洞(毕竟我也没最新版代码)，是去年十一月份更新的漏洞，只是当时由于各种各样的项目导致分析被搁置了许久，再次关注它则是因为看到出了新的安全公告，又想起来当时并未分析完全，于是接着之前的工作继续研究（当然另一方面是因为没有各个版本的代码所以不想看最新版的漏洞，另外漏洞的描述中也并不能让我看出什么）再次回顾，从描述中可以看到，漏洞利用的...
-    ### [浅析SmartBi逻辑漏洞(3)](https://y4tacker.github.io/2024/04/19/year/2024/4/%E6%B5%85%E6%9E%90SmartBi%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E-3/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-04-19
-
-    浅析SmartBi逻辑漏洞(3)前言这个系列终于到了第三篇，指条路，如果忘记了可以再看看之前写的文章浅析Smartbi逻辑漏洞浅析Smartbi逻辑漏洞(2)之前我就曾在第二篇末尾提到过（没人继续深入看），仍然存在一个问题，今天这个问题终于得以修复当然老规矩，这里仅分享逻辑漏洞部分补丁绕过思路，不提供完整payload补丁补丁中新增了一个规则12345"rules": [{    "classNa...
-    ### [保研or就业---阿里云实习之旅](https://y4tacker.github.io/2024/04/17/year/2022/10/%E4%BF%9D%E7%A0%94or%E5%B0%B1%E4%B8%9A---%E9%98%BF%E9%87%8C%E4%BA%91%E5%AE%9E%E4%B9%A0%E4%B9%8B%E6%97%85/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-04-17
-
-    保研or就业 — 阿里云实习之旅始章​    昨天刚回成都，之前一直在问自己结果真的有那么重要吗，现在我也能鼓起勇气对自己说，不重要了，我的世界属于我，我的人生也没有那么多的观众，我也没必要在意他人的目光，我终于又成长了一点。实习经历​    （经历这部分就挑着重点的或者和时间性有关的说说，我也懒）​    七月中旬收拾好行李独自前往一个陌生的城市，起初对杭州的影响也就是赛博群里说的饭不好吃，说我...
 
 </div>
