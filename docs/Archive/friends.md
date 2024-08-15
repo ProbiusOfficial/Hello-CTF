@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅谈帆软在Windows下写文件RCE姿势](https://y4tacker.github.io/2024/08/14/year/2024/8/%E6%B5%85%E8%B0%88%E5%B8%86%E8%BD%AF%E5%9C%A8Windows%E4%B8%8B%E5%86%99%E6%96%87%E4%BB%B6RCE%E5%A7%BF%E5%8A%BF/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-08-14
+
+    写在前面之前上一篇文章中浅析帆软FineVis默认插件前台RCE提到jasper依赖没被加载，当时只是简单做了测试，没有具体看为什么jsp未被解析，只是疑惑了下tomcat下jspservlet配置明明正确配置页面却直接返回空(没有考虑到编译报错这一层问题)，今天无意间看到星球有师傅分享了如何解析jsp的过程，写文章同时也顺带分享下如何实现RCE的两种姿势当然至于为什么是windows，之前的两篇...
     ### [JeecgBoot最新版权限绕过第二弹之内存马注入实录](https://y4tacker.github.io/2024/08/02/year/2024/8/%E6%9C%80%E6%96%B0%E7%89%88JeecgBoot%E7%AC%AC%E4%BA%8C%E5%BC%B9%E4%B9%8B%E5%8F%97%E9%99%90%E6%9D%A1%E4%BB%B6%E4%B8%8B%E7%9A%84%E5%86%85%E5%AD%98%E9%A9%AC%E6%B3%A8%E5%85%A5%E5%AE%9E%E5%BD%95/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-08-02
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-04-25
 
     CrushFTP后利用提权分析(CVE-2024-4040)写在前面这个漏洞的利用最终还是被曝光了，这里也不做重复的分析，具体可以点击访问CVE-2024-4040了解漏洞的详情，在这里作者在分析利用的时候仍然使用的sessions.obj文件去读取历史cookie再做提权的尝试，但在最早的一篇文章当中我也曾提到过，只有在程序退出时才会生成这样一个文件，它充当了服务器的一个缓存功能(CrushFT...
-    ### [浅析CrushFTP之VFS逃逸](https://y4tacker.github.io/2024/04/23/year/2024/4/%E6%B5%85%E6%9E%90CrushFTP%E4%B9%8BVFS%E9%80%83%E9%80%B8/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-04-23
-
-    浅析CrushFTP之VFS逃逸写在前面本篇的内容可能并不是最新的漏洞(毕竟我也没最新版代码)，是去年十一月份更新的漏洞，只是当时由于各种各样的项目导致分析被搁置了许久，再次关注它则是因为看到出了新的安全公告，又想起来当时并未分析完全，于是接着之前的工作继续研究（当然另一方面是因为没有各个版本的代码所以不想看最新版的漏洞，另外漏洞的描述中也并不能让我看出什么）再次回顾，从描述中可以看到，漏洞利用的...
 
 </div>
