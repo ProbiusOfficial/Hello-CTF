@@ -752,15 +752,6 @@ hide:
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
                 
-            ??? Quote "[Lexington Informatics Tournament CTF 2024](https://lit.lhsmathcs.org/)"  
-                [![](https://ctftime.org/media/events/square_CTFtime_LIT_1.png){ width="200" align=left }](https://lit.lhsmathcs.org/)  
-                **比赛名称** : [Lexington Informatics Tournament CTF 2024](https://lit.lhsmathcs.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-08-10 23:00:00 - 2024-08-13 11:59:59 UTC+8  
-                **比赛权重** : 46.25  
-                **赛事主办** : LIT CTF (https://ctftime.org/team/157660)  
-                **添加日历** : https://ctftime.org/event/2444.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[“广东通信杯”广东省信息通信行业第四届网络安全技能大赛暨第八届全国职工职业技能大赛网络与信息安全管理员赛项广东省选拔赛](https://gdca.miit.gov.cn/zwgk/tzgg/art/2024/art_c220b24f198346e08bb0074f511a6121.html)"  
@@ -820,6 +811,15 @@ hide:
                 **其他说明** : QQ群：566180593  
                 
         === "国外赛事"
+            ??? Quote "[Lexington Informatics Tournament CTF 2024](https://lit.lhsmathcs.org/)"  
+                [![](https://ctftime.org/media/events/square_CTFtime_LIT_1.png){ width="200" align=left }](https://lit.lhsmathcs.org/)  
+                **比赛名称** : [Lexington Informatics Tournament CTF 2024](https://lit.lhsmathcs.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-08-10 23:00:00 - 2024-08-13 11:59:59 UTC+8  
+                **比赛权重** : 46.25  
+                **赛事主办** : LIT CTF (https://ctftime.org/team/157660)  
+                **添加日历** : https://ctftime.org/event/2444.ics  
+                
             ??? Quote "[CTFZone 2024 Quals](https://ctf.bi.zone/)"  
                 [![](https://ctftime.org/media/events/b98226ad9a255846e456617d99bde1de.png){ width="200" align=left }](https://ctf.bi.zone/)  
                 **比赛名称** : [CTFZone 2024 Quals](https://ctf.bi.zone/)  
@@ -960,7 +960,7 @@ hide:
                 **比赛名称** : [OSCTF](https://ctf.os.ftp.sh/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-07-13 08:30:00 - 2024-07-14 00:30:00 UTC+8  
-                **比赛权重** : 23.29  
+                **比赛权重** : 23.34  
                 **赛事主办** : OSCTF (https://ctftime.org/team/307415)  
                 **添加日历** : https://ctftime.org/event/2416.ics  
                 
@@ -1710,15 +1710,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Challenge the Cyber (https://ctftime.org/team/181210)  
                 **添加日历** : https://ctftime.org/event/2277.ics  
-                
-            ??? Quote "[Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)"  
-                [![](https://ctftime.org/media/events/matrix.png){ width="200" align=left }](https://midnightsunctf.com/)  
-                **比赛名称** : [Midnight Sun CTF 2024 Quals](https://midnightsunctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-20 18:00:00 - 2024-04-21 18:00:00 UTC+8  
-                **比赛权重** : 35.74  
-                **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-                **添加日历** : https://ctftime.org/event/2247.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

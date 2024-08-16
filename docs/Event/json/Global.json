@@ -465,7 +465,7 @@
         "比赛权重": "46.25",
         "赛事主办": "LIT CTF (https://ctftime.org/team/157660)",
         "比赛ID": "646",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "CTFZone 2024 Quals",
@@ -654,7 +654,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.os.ftp.sh/",
         "比赛标志": "https://ctftime.org/media/events/os_ctf_logo.png",
-        "比赛权重": "23.29",
+        "比赛权重": "23.34",
         "赛事主办": "OSCTF (https://ctftime.org/team/307415)",
         "比赛ID": "1144",
         "比赛状态": "past"
@@ -1653,18 +1653,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Challenge the Cyber (https://ctftime.org/team/181210)",
         "比赛ID": "776",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Midnight Sun CTF 2024 Quals",
-        "比赛时间": "2024-04-20 18:00:00 - 2024-04-21 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2247.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://midnightsunctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/matrix.png",
-        "比赛权重": "35.74",
-        "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
-        "比赛ID": "246",
         "比赛状态": "past"
     }
 ]
