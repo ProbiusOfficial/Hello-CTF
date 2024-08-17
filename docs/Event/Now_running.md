@@ -52,3 +52,12 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
+??? Quote "[idekCTF 2024](https://ctf.idek.team/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.idek.team/)  
+    **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-08-17 08:00:00 - 2024-08-19 08:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : idek (https://ctftime.org/team/157039)  
+    **添加日历** : https://ctftime.org/event/2304.ics  
+    

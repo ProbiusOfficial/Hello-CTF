@@ -372,15 +372,6 @@ hide:
                 **其他说明** : QQ群：676547374 或 566180593  
                 
         === "国外赛事"
-            ??? Quote "[idekCTF 2024](https://ctf.idek.team/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.idek.team/)  
-                **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-08-17 08:00:00 - 2024-08-19 08:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : idek (https://ctftime.org/team/157039)  
-                **添加日历** : https://ctftime.org/event/2304.ics  
-                
             ??? Quote "[SekaiCTF 2024](https://ctf.sekai.team/)"  
                 [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
                 **比赛名称** : [SekaiCTF 2024](https://ctf.sekai.team/)  
@@ -751,6 +742,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
+                
+            ??? Quote "[idekCTF 2024](https://ctf.idek.team/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.idek.team/)  
+                **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-08-17 08:00:00 - 2024-08-19 08:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : idek (https://ctftime.org/team/157039)  
+                **添加日历** : https://ctftime.org/event/2304.ics  
                 
     === "*已经结束*"
         === "国内赛事"

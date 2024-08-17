@@ -82,15 +82,6 @@ hide:
             **其他说明** : 仅限辽宁大学研究生 | 参赛队伍需同时参加“华为杯”第三届中国研究生网络安全创新大赛  
                 
     === "国外比赛"
-        ??? Quote "[idekCTF 2024](https://ctf.idek.team/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctf.idek.team/)  
-            **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-08-17 08:00:00 - 2024-08-19 08:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : idek (https://ctftime.org/team/157039)  
-            **添加日历** : https://ctftime.org/event/2304.ics  
-            
         ??? Quote "[SekaiCTF 2024](https://ctf.sekai.team/)"  
             [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
             **比赛名称** : [SekaiCTF 2024](https://ctf.sekai.team/)  
@@ -117,6 +108,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
             **添加日历** : https://ctftime.org/event/2347.ics  
+            
+        ??? Quote "[CyberSpace CTF 2024](https://2024.csc.tf/)"  
+            [![](https://ctftime.org/media/events/f6b991673b1944e7b199bc978b3f0a15.png){ width="200" align=left }](https://2024.csc.tf/)  
+            **比赛名称** : [CyberSpace CTF 2024](https://2024.csc.tf/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-08-31 00:00:00 - 2024-09-02 00:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : CyberSpace (https://ctftime.org/team/116280)  
+            **添加日历** : https://ctftime.org/event/2428.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
