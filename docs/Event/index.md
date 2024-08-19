@@ -743,15 +743,6 @@ hide:
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
                 
-            ??? Quote "[idekCTF 2024](https://ctf.idek.team/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.idek.team/)  
-                **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-08-17 08:00:00 - 2024-08-19 08:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : idek (https://ctftime.org/team/157039)  
-                **添加日历** : https://ctftime.org/event/2304.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[“广东通信杯”广东省信息通信行业第四届网络安全技能大赛暨第八届全国职工职业技能大赛网络与信息安全管理员赛项广东省选拔赛](https://gdca.miit.gov.cn/zwgk/tzgg/art/2024/art_c220b24f198346e08bb0074f511a6121.html)"  
@@ -811,6 +802,15 @@ hide:
                 **其他说明** : QQ群：566180593  
                 
         === "国外赛事"
+            ??? Quote "[idekCTF 2024](https://ctf.idek.team/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.idek.team/)  
+                **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-08-17 08:00:00 - 2024-08-19 08:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : idek (https://ctftime.org/team/157039)  
+                **添加日历** : https://ctftime.org/event/2304.ics  
+                
             ??? Quote "[Lexington Informatics Tournament CTF 2024](https://lit.lhsmathcs.org/)"  
                 [![](https://ctftime.org/media/events/square_CTFtime_LIT_1.png){ width="200" align=left }](https://lit.lhsmathcs.org/)  
                 **比赛名称** : [Lexington Informatics Tournament CTF 2024](https://lit.lhsmathcs.org/)  
@@ -1701,15 +1701,6 @@ hide:
                 **比赛权重** : 46.57  
                 **赛事主办** : UMBC Cyber Dawgs (https://ctftime.org/team/18405)  
                 **添加日历** : https://ctftime.org/event/2343.ics  
-                
-            ??? Quote "[Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)"  
-                [![](https://ctftime.org/media/events/12e936bf3a5de410fc3506bfdffb608a.jpg){ width="200" align=left }](https://challengethecyber.nl/)  
-                **比赛名称** : [Challenge the Cyber - Cyber Chef](https://challengethecyber.nl/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-20 19:00:00 - 2024-04-21 01:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Challenge the Cyber (https://ctftime.org/team/181210)  
-                **添加日历** : https://ctftime.org/event/2277.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
