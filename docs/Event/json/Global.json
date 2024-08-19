@@ -60,6 +60,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "BlackHat MEA CTF Qualification 2024",
+        "比赛时间": "2024-09-01 18:00:00 - 2024-09-02 17:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2430.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://blackhatmea.com/capture-the-flag",
+        "比赛标志": "https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2.jpg",
+        "比赛权重": "25.00",
+        "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
+        "比赛ID": "826",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "CSAW CTF Qualification Round 2024",
         "比赛时间": "2024-09-07 00:00:00 - 2024-09-09 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2398.ics",
@@ -366,7 +378,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://blackhatmea.com/capture-the-flag",
         "比赛标志": "https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_3.jpg",
-        "比赛权重": "25.00",
+        "比赛权重": "0.00",
         "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
         "比赛ID": "826",
         "比赛状态": "oncoming"

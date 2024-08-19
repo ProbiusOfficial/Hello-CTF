@@ -102,6 +102,15 @@ comments: true
     **赛事主办** : CISA ICSJWG (https://ctftime.org/team/182074)  
     **添加日历** : https://ctftime.org/event/2404.ics  
     
+??? Quote "[BlackHat MEA CTF Qualification 2024](https://blackhatmea.com/capture-the-flag)"  
+    [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
+    **比赛名称** : [BlackHat MEA CTF Qualification 2024](https://blackhatmea.com/capture-the-flag)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-09-01 18:00:00 - 2024-09-02 17:59:59 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
+    **添加日历** : https://ctftime.org/event/2430.ics  
+    
 ??? Quote "[CSAW CTF Qualification Round 2024](https://ctf.csaw.io/)"  
     [![](https://ctftime.org/media/events/CSAW.png){ width="200" align=left }](https://ctf.csaw.io/)  
     **比赛名称** : [CSAW CTF Qualification Round 2024](https://ctf.csaw.io/)  
@@ -332,7 +341,7 @@ comments: true
     **比赛名称** : [BlackHat MEA CTF Final 2024](https://blackhatmea.com/capture-the-flag)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-26 16:00:00 - 2024-11-28 11:00:00 UTC+8  
-    **比赛权重** : 25.00  
+    **比赛权重** : 0.00  
     **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
     **添加日历** : https://ctftime.org/event/2431.ics  
     
