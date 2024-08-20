@@ -3,6 +3,17 @@
     "data": {
         "result": [
             {
+                "name": "NepCTF 2024",
+                "link": "https://nepctf.lemonprefect.cn/",
+                "type": "个人赛",
+                "bmks": "2024年08月21日 14:00",
+                "bmjz": "2024年08月26日 09:00",
+                "bsks": "2024年08月24日 09:00",
+                "bsjs": "2024年08月26日 09:00",
+                "readmore": "QQ群: 560946020 其他联系方式：Nepnep_Team@163.com",
+                "status": 0
+            },
+            {
                 "name": "2024年“羊城杯”粤港澳大湾区网络安全大赛",
                 "link": "https://2024ycb.dasctf.com/compete/compete?matchCode=87659256dbc7485&competeId=268",
                 "type": "个人赛|团队赛 1-4人",
@@ -22,17 +33,6 @@
                 "bsks": "2024年09月21日 00:00",
                 "bsjs": "2024年10月27日 23:59",
                 "readmore": "更多信息请前往官网https://www.hncsisc.com 的“赛事活动”查看",
-                "status": 1
-            },
-            {
-                "name": "NepCTF 2024",
-                "link": "暂定",
-                "type": "个人赛",
-                "bmks": "2024年07月25日 08:00",
-                "bmjz": "2024年08月22日 23:59",
-                "bsks": "2024年08月23日 00:00",
-                "bsjs": "2024年08月25日 23:59",
-                "readmore": "QQ群: 560946020",
                 "status": 1
             },
             {
