@@ -91,6 +91,15 @@ hide:
             **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
             **添加日历** : https://ctftime.org/event/2243.ics  
             
+        ??? Quote "[DASCTF2024 August Back-to-School Season](https://buuoj.cn/match/matches/209)"  
+            [![](https://ctftime.org/media/events/Dingtalk_20240814101134.jpg){ width="200" align=left }](https://buuoj.cn/match/matches/209)  
+            **比赛名称** : [DASCTF2024 August Back-to-School Season](https://buuoj.cn/match/matches/209)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-08-24 18:00:00 - 2024-08-25 02:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : DASCTF (https://ctftime.org/team/303691)  
+            **添加日历** : https://ctftime.org/event/2458.ics  
+            
         ??? Quote "[Block Harbor VicOne Automotive CTF - Season 2](https://ctf.blockharbor.io/)"  
             [![](https://ctftime.org/media/events/blockharbor.jpg){ width="200" align=left }](https://ctf.blockharbor.io/)  
             **比赛名称** : [Block Harbor VicOne Automotive CTF - Season 2](https://ctf.blockharbor.io/)  
@@ -100,23 +109,14 @@ hide:
             **赛事主办** : bhctf (https://ctftime.org/team/251542)  
             **添加日历** : https://ctftime.org/event/2387.ics  
             
-        ??? Quote "[Codegate CTF 2024 Finals](http://www.codegate.org/)"  
-            [![](https://ctftime.org){ width="200" align=left }](http://www.codegate.org/)  
-            **比赛名称** : [Codegate CTF 2024 Finals](http://www.codegate.org/)  
+        ??? Quote "[Cygenix CTF](https://cygenixctf.ycfteam.in/)"  
+            [![](https://ctftime.org/media/events/cygenix.png){ width="200" align=left }](https://cygenixctf.ycfteam.in/)  
+            **比赛名称** : [Cygenix CTF](https://cygenixctf.ycfteam.in/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-08-29 09:00:00 - 2024-08-30 09:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
-            **添加日历** : https://ctftime.org/event/2347.ics  
-            
-        ??? Quote "[CyberSpace CTF 2024](https://2024.csc.tf/)"  
-            [![](https://ctftime.org/media/events/f6b991673b1944e7b199bc978b3f0a15.png){ width="200" align=left }](https://2024.csc.tf/)  
-            **比赛名称** : [CyberSpace CTF 2024](https://2024.csc.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-08-31 00:00:00 - 2024-09-02 00:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : CyberSpace (https://ctftime.org/team/116280)  
-            **添加日历** : https://ctftime.org/event/2428.ics  
+            **比赛时间** : 2024-08-24 22:30:00 - 2024-08-25 22:30:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : YCF (https://ctftime.org/team/179685)  
+            **添加日历** : https://ctftime.org/event/2468.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
