@@ -82,15 +82,6 @@ hide:
             **其他说明** : QQ群：676547374 或 566180593  
                 
     === "国外比赛"
-        ??? Quote "[SekaiCTF 2024](https://ctf.sekai.team/)"  
-            [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
-            **比赛名称** : [SekaiCTF 2024](https://ctf.sekai.team/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-08-24 00:00:00 - 2024-08-26 00:00:00 UTC+8  
-            **比赛权重** : 36.96  
-            **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
-            **添加日历** : https://ctftime.org/event/2243.ics  
-            
         ??? Quote "[DASCTF2024 August Back-to-School Season](https://buuoj.cn/match/matches/209)"  
             [![](https://ctftime.org/media/events/Dingtalk_20240814101134.jpg){ width="200" align=left }](https://buuoj.cn/match/matches/209)  
             **比赛名称** : [DASCTF2024 August Back-to-School Season](https://buuoj.cn/match/matches/209)  
@@ -117,6 +108,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : YCF (https://ctftime.org/team/179685)  
             **添加日历** : https://ctftime.org/event/2468.ics  
+            
+        ??? Quote "[Codegate CTF 2024 Finals](http://www.codegate.org/)"  
+            [![](https://ctftime.org){ width="200" align=left }](http://www.codegate.org/)  
+            **比赛名称** : [Codegate CTF 2024 Finals](http://www.codegate.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-08-29 09:00:00 - 2024-08-30 09:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
+            **添加日历** : https://ctftime.org/event/2347.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
