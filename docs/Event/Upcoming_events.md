@@ -43,15 +43,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Cygenix CTF](https://cygenixctf.ycfteam.in/)"  
-    [![](https://ctftime.org/media/events/cygenix.png){ width="200" align=left }](https://cygenixctf.ycfteam.in/)  
-    **比赛名称** : [Cygenix CTF](https://cygenixctf.ycfteam.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-08-24 22:30:00 - 2024-08-25 22:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : YCF (https://ctftime.org/team/179685)  
-    **添加日历** : https://ctftime.org/event/2468.ics  
-    
 ??? Quote "[Codegate CTF 2024 Finals](http://www.codegate.org/)"  
     [![](https://ctftime.org){ width="200" align=left }](http://www.codegate.org/)  
     **比赛名称** : [Codegate CTF 2024 Finals](http://www.codegate.org/)  
