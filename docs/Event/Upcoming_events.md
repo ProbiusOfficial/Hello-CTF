@@ -43,15 +43,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[DASCTF2024 August Back-to-School Season](https://buuoj.cn/match/matches/209)"  
-    [![](https://ctftime.org/media/events/Dingtalk_20240814101134.jpg){ width="200" align=left }](https://buuoj.cn/match/matches/209)  
-    **比赛名称** : [DASCTF2024 August Back-to-School Season](https://buuoj.cn/match/matches/209)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-08-24 18:00:00 - 2024-08-25 02:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : DASCTF (https://ctftime.org/team/303691)  
-    **添加日历** : https://ctftime.org/event/2458.ics  
-    
 ??? Quote "[Block Harbor VicOne Automotive CTF - Season 2](https://ctf.blockharbor.io/)"  
     [![](https://ctftime.org/media/events/blockharbor.jpg){ width="200" align=left }](https://ctf.blockharbor.io/)  
     **比赛名称** : [Block Harbor VicOne Automotive CTF - Season 2](https://ctf.blockharbor.io/)  
