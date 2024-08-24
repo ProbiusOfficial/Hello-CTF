@@ -285,13 +285,6 @@ hide:
             适度CTF益脑，沉迷CTF伤身。合理安排时间，享受健康生活。
     
     === "*正在报名*"
-        ??? Quote "[NepCTF 2024](https://nepctf.lemonprefect.cn/)"  
-            **比赛名称** : [NepCTF 2024](https://nepctf.lemonprefect.cn/)  
-            **比赛类型** : 个人赛  
-            **报名时间** : 2024年08月21日 14:00 - 2024年08月26日 09:00  
-            **比赛时间** : 2024年08月24日 09:00 - 2024年08月26日 09:00  
-            **其他说明** : QQ群: 560946020 其他联系方式：Nepnep_Team@163.com  
-            
         ??? Quote "[第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)"  
             **比赛名称** : [第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)  
             **比赛类型** : 个人赛 and 团体赛|3人  
@@ -315,13 +308,6 @@ hide:
             
     === "*即将开始*"
         === "国内赛事"
-            ??? Quote "[NepCTF 2024](https://nepctf.lemonprefect.cn/)"  
-                **比赛名称** : [NepCTF 2024](https://nepctf.lemonprefect.cn/)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年08月21日 14:00 - 2024年08月26日 09:00  
-                **比赛时间** : 2024年08月24日 09:00 - 2024年08月26日 09:00  
-                **其他说明** : QQ群: 560946020 其他联系方式：Nepnep_Team@163.com  
-                
             ??? Quote "[第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)"  
                 **比赛名称** : [第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)  
                 **比赛类型** : 个人赛 and 团体赛|3人  
@@ -918,6 +904,13 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
+            ??? Quote "[NepCTF 2024](https://nepctf.lemonprefect.cn/)"  
+                **比赛名称** : [NepCTF 2024](https://nepctf.lemonprefect.cn/)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年08月21日 14:00 - 2024年08月26日 09:00  
+                **比赛时间** : 2024年08月24日 09:00 - 2024年08月26日 09:00  
+                **其他说明** : QQ群: 560946020 其他联系方式：Nepnep_Team@163.com  
+                
             ??? Quote "[BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)"  
                 **比赛名称** : [BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)  
                 **比赛类型** : 1-2 人  

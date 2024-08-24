@@ -3,17 +3,6 @@
     "data": {
         "result": [
             {
-                "name": "NepCTF 2024",
-                "link": "https://nepctf.lemonprefect.cn/",
-                "type": "个人赛",
-                "bmks": "2024年08月21日 14:00",
-                "bmjz": "2024年08月26日 09:00",
-                "bsks": "2024年08月24日 09:00",
-                "bsjs": "2024年08月26日 09:00",
-                "readmore": "QQ群: 560946020 其他联系方式：Nepnep_Team@163.com",
-                "status": 1
-            },
-            {
                 "name": "第八届御网杯信息安全大赛",
                 "link": "https://www.hncsisc.com/hncsisc/index.html",
                 "type": "个人赛 and 团体赛|3人",
@@ -67,6 +56,17 @@
                 "bsjs": "2024年09月13日 23:59",
                 "readmore": "QQ群：676547374 或 566180593",
                 "status": 2
+            },
+            {
+                "name": "NepCTF 2024",
+                "link": "https://nepctf.lemonprefect.cn/",
+                "type": "个人赛",
+                "bmks": "2024年08月21日 14:00",
+                "bmjz": "2024年08月26日 09:00",
+                "bsks": "2024年08月24日 09:00",
+                "bsjs": "2024年08月26日 09:00",
+                "readmore": "QQ群: 560946020 其他联系方式：Nepnep_Team@163.com",
+                "status": 3
             },
             {
                 "name": "BaseCTF 2024 高校联合新生赛",

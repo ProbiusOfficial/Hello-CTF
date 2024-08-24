@@ -53,13 +53,6 @@ hide:
     ---
     <!-- 主页赛事展示_开始 -->
     === "国内比赛"
-        ??? Quote "[NepCTF 2024](https://nepctf.lemonprefect.cn/)"  
-            **比赛名称** : [NepCTF 2024](https://nepctf.lemonprefect.cn/)  
-            **比赛类型** : 个人赛  
-            **报名时间** : 2024年08月21日 14:00 - 2024年08月26日 09:00  
-            **比赛时间** : 2024年08月24日 09:00 - 2024年08月26日 09:00  
-            **其他说明** : QQ群: 560946020 其他联系方式：Nepnep_Team@163.com  
-            
         ??? Quote "[2024年“羊城杯”粤港澳大湾区网络安全大赛](https://2024ycb.dasctf.com/compete/compete?matchCode=87659256dbc7485&competeId=268)"  
             **比赛名称** : [2024年“羊城杯”粤港澳大湾区网络安全大赛](https://2024ycb.dasctf.com/compete/compete?matchCode=87659256dbc7485&competeId=268)  
             **比赛类型** : 个人赛|团队赛 1-4人  
@@ -80,6 +73,13 @@ hide:
             **报名时间** : 2024年06月26日 10:35 - 2024年06月26日 10:35  
             **比赛时间** : 2024年09月13日 00:00 - 2024年09月13日 23:59  
             **其他说明** : QQ群：676547374 或 566180593  
+            
+        ??? Quote "[第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)"  
+            **比赛名称** : [第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)  
+            **比赛类型** : 个人赛 and 团体赛|3人  
+            **报名时间** : 2024年07月26日 08:00 - 2024年09月20日 18:00  
+            **比赛时间** : 2024年09月21日 00:00 - 2024年10月27日 23:59  
+            **其他说明** : 更多信息请前往官网https://www.hncsisc.com 的“赛事活动”查看  
                 
     === "国外比赛"
         ??? Quote "[DASCTF2024 August Back-to-School Season](https://buuoj.cn/match/matches/209)"  
