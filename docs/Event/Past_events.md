@@ -95,6 +95,15 @@ comments: true
     **赛事主办** : DASCTF (https://ctftime.org/team/303691)  
     **添加日历** : https://ctftime.org/event/2458.ics  
     
+??? Quote "[SekaiCTF 2024](https://ctf.sekai.team/)"  
+    [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
+    **比赛名称** : [SekaiCTF 2024](https://ctf.sekai.team/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-08-24 00:00:00 - 2024-08-26 00:00:00 UTC+8  
+    **比赛权重** : 36.96  
+    **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
+    **添加日历** : https://ctftime.org/event/2243.ics  
+    
 ??? Quote "[idekCTF 2024](https://ctf.idek.team/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.idek.team/)  
     **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
@@ -967,13 +976,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : S14y3r (https://ctftime.org/team/282208)  
     **添加日历** : https://ctftime.org/event/2359.ics  
-    
-??? Quote "[THJCC CTF](https://ctf-hobby.scint.org/)"  
-    [![](https://ctftime.org/media/events/logo1_3.png){ width="200" align=left }](https://ctf-hobby.scint.org/)  
-    **比赛名称** : [THJCC CTF](https://ctf-hobby.scint.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-23 10:01:30 - 2024-04-23 10:01:30 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
-    **添加日历** : https://ctftime.org/event/2361.ics  
     
