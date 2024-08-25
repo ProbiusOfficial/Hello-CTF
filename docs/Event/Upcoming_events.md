@@ -529,9 +529,9 @@ comments: true
     **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
     **添加日历** : https://ctftime.org/event/2419.ics  
     
-??? Quote "[niteCTF 2024](https://www.nitectf.live/)"  
-    [![](https://ctftime.org/media/events/WhatsApp_Image_2021-08-06_at_11.28.13_3.jpeg){ width="200" align=left }](https://www.nitectf.live/)  
-    **比赛名称** : [niteCTF 2024](https://www.nitectf.live/)  
+??? Quote "[niteCTF 2024](https://www.nitectf2024.live/)"  
+    [![](https://ctftime.org/media/events/WhatsApp_Image_2021-08-06_at_11.28.13_3.jpeg){ width="200" align=left }](https://www.nitectf2024.live/)  
+    **比赛名称** : [niteCTF 2024](https://www.nitectf2024.live/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-12-13 20:00:00 - 2024-12-15 20:00:00 UTC+8  
     **比赛权重** : 29.33  
