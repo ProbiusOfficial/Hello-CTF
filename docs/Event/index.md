@@ -942,15 +942,6 @@ hide:
                 **赛事主办** : bhctf (https://ctftime.org/team/251542)  
                 **添加日历** : https://ctftime.org/event/2387.ics  
                 
-            ??? Quote "[Cygenix CTF](https://cygenixctf.ycfteam.in/)"  
-                [![](https://ctftime.org/media/events/cygenix.png){ width="200" align=left }](https://cygenixctf.ycfteam.in/)  
-                **比赛名称** : [Cygenix CTF](https://cygenixctf.ycfteam.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-08-24 22:30:00 - 2024-08-25 22:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : YCF (https://ctftime.org/team/179685)  
-                **添加日历** : https://ctftime.org/event/2468.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[第四届极客少年挑战赛（决赛）](https://www.cdccs.cn/#/geekYouth)"  
@@ -1024,6 +1015,15 @@ hide:
                 **其他说明** : QQ群：277328440  
                 
         === "国外赛事"
+            ??? Quote "[Cygenix CTF](https://cygenixctf.ycfteam.in/)"  
+                [![](https://ctftime.org/media/events/cygenix.png){ width="200" align=left }](https://cygenixctf.ycfteam.in/)  
+                **比赛名称** : [Cygenix CTF](https://cygenixctf.ycfteam.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-08-24 22:30:00 - 2024-08-25 22:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : YCF (https://ctftime.org/team/179685)  
+                **添加日历** : https://ctftime.org/event/2468.ics  
+                
             ??? Quote "[DASCTF2024 August Back-to-School Season](https://buuoj.cn/match/matches/209)"  
                 [![](https://ctftime.org/media/events/Dingtalk_20240814101134.jpg){ width="200" align=left }](https://buuoj.cn/match/matches/209)  
                 **比赛名称** : [DASCTF2024 August Back-to-School Season](https://buuoj.cn/match/matches/209)  
@@ -1914,15 +1914,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
                 **添加日历** : https://ctftime.org/event/2361.ics  
-                
-            ??? Quote "[openECSC 2024 - Round 2](https://open.ecsc2024.it/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://open.ecsc2024.it/)  
-                **比赛名称** : [openECSC 2024 - Round 2](https://open.ecsc2024.it/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-22 18:00:00 - 2024-04-29 06:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
-                **添加日历** : https://ctftime.org/event/2354.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
