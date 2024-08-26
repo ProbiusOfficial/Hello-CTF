@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [Bamboocloud Pre-Auth RCE](https://y4tacker.github.io/2024/08/24/year/2024/8/Bamboocloud-Pre-Auth-RCE/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-08-24
+
+    27f3e1195b7859eb4bd25dac1acac0a3042d467dab08eb39066b81caee36bbfd6f11e21d2737f808851594385a25c494dbe8b0ef17704abfb466618a0ed859635f7ab2a5b848bb7a8c639d3e37b60cd5ce48012d1f3786ebe99a85c3116eb786d57272...
     ### [浅析泛微ec10权限绕过到命令执行](https://y4tacker.github.io/2024/08/20/year/2024/8/%E6%B3%9B%E5%BE%AEec10%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E5%88%B0%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-08-20
 
@@ -149,9 +153,5 @@ hide:
     >by [Steven Lynn's Blog](https://blog.stv.lol), 2024-05-05
 
     这几天趁着五一假期在家里，做了一下LLM微调大概是全网第一个做粤语微调的Qwen-7B，还请到huggingface和魔搭社区点心支持一下repo:https://huggingface.co/stvlynn/Qwen-7B-Chat-Cantonesehttps://www.modelscope.cn/models/stvlynn/Qwen-7B-Chat-Cantonese今天就整理一下微调的...
-    ### [在闲置手机上部署大模型并开启公网访问](https://blog.stv.lol/archives/87/)  
-    >by [Steven Lynn's Blog](https://blog.stv.lol), 2024-05-01
-
-    前言前两天微软发布了phi3大模型，是目前少数可以在移动设备上运行的本地语言模型，号称可以和ChatGPT-3.5相当，仅3.8亿参数本文将教你如何在本地部署这个大模型，利用闲置的手机，并且让公网的设备也能远程访问Step 0: Termux下载安装需要注意的是不要从play上下载termux，否则会出现报错，应该从F-droid上下载安装换源：因为你懂的原因，需要把软件源换成国内源清华源的文档里...
 
 </div>
