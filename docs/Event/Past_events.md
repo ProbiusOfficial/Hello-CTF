@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Quote "NepCTF 2024"  
+    **比赛名称** : [NepCTF 2024](https://nepctf.lemonprefect.cn/)  
+    **比赛类型** : 个人赛  
+    **报名时间** : 2024年08月21日 14:00 - 2024年08月26日 09:00  
+    **比赛时间** : 2024年08月24日 09:00 - 2024年08月26日 09:00  
+    **其他说明** : QQ群: 560946020 其他联系方式：Nepnep_Team@163.com  
+    
 ??? Quote "第四届极客少年挑战赛（决赛）"  
     **比赛名称** : [第四届极客少年挑战赛（决赛）](https://www.cdccs.cn/#/geekYouth)  
     **比赛类型** : 个人赛  
@@ -109,7 +116,7 @@ comments: true
     **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-08-17 08:00:00 - 2024-08-19 08:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 52.10  
     **赛事主办** : idek (https://ctftime.org/team/157039)  
     **添加日历** : https://ctftime.org/event/2304.ics  
     

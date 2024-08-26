@@ -58,17 +58,6 @@
                 "status": 2
             },
             {
-                "name": "NepCTF 2024",
-                "link": "https://nepctf.lemonprefect.cn/",
-                "type": "个人赛",
-                "bmks": "2024年08月21日 14:00",
-                "bmjz": "2024年08月26日 09:00",
-                "bsks": "2024年08月24日 09:00",
-                "bsjs": "2024年08月26日 09:00",
-                "readmore": "QQ群: 560946020 其他联系方式：Nepnep_Team@163.com",
-                "status": 3
-            },
-            {
                 "name": "BaseCTF 2024 高校联合新生赛",
                 "link": "https://www.basectf.fun/",
                 "type": "1-2 人",
@@ -100,6 +89,17 @@
                 "bsjs": "2024年08月31日 23:59",
                 "readmore": "仅限研究生",
                 "status": 3
+            },
+            {
+                "name": "NepCTF 2024",
+                "link": "https://nepctf.lemonprefect.cn/",
+                "type": "个人赛",
+                "bmks": "2024年08月21日 14:00",
+                "bmjz": "2024年08月26日 09:00",
+                "bsks": "2024年08月24日 09:00",
+                "bsjs": "2024年08月26日 09:00",
+                "readmore": "QQ群: 560946020 其他联系方式：Nepnep_Team@163.com",
+                "status": 4
             },
             {
                 "name": "第四届极客少年挑战赛（决赛）",

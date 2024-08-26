@@ -470,9 +470,9 @@ hide:
                 **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
                 **添加日历** : https://ctftime.org/event/2440.ics  
                 
-            ??? Quote "[RSTCON 2024 CTF](https://ctf.rstcon.org/)"  
+            ??? Quote "[RSTCON 2024 CTF (Online/Hybrid)](https://ctf.rstcon.org/)"  
                 [![](https://ctftime.org/media/events/rstcon.png){ width="200" align=left }](https://ctf.rstcon.org/)  
-                **比赛名称** : [RSTCON 2024 CTF](https://ctf.rstcon.org/)  
+                **比赛名称** : [RSTCON 2024 CTF (Online/Hybrid)](https://ctf.rstcon.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-09-14 03:45:00 - 2024-09-16 00:45:00 UTC+8  
                 **比赛权重** : 0.00  
@@ -886,13 +886,6 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-            ??? Quote "[NepCTF 2024](https://nepctf.lemonprefect.cn/)"  
-                **比赛名称** : [NepCTF 2024](https://nepctf.lemonprefect.cn/)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年08月21日 14:00 - 2024年08月26日 09:00  
-                **比赛时间** : 2024年08月24日 09:00 - 2024年08月26日 09:00  
-                **其他说明** : QQ群: 560946020 其他联系方式：Nepnep_Team@163.com  
-                
             ??? Quote "[BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)"  
                 **比赛名称** : [BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)  
                 **比赛类型** : 1-2 人  
@@ -935,6 +928,13 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[NepCTF 2024](https://nepctf.lemonprefect.cn/)"  
+                **比赛名称** : [NepCTF 2024](https://nepctf.lemonprefect.cn/)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年08月21日 14:00 - 2024年08月26日 09:00  
+                **比赛时间** : 2024年08月24日 09:00 - 2024年08月26日 09:00  
+                **其他说明** : QQ群: 560946020 其他联系方式：Nepnep_Team@163.com  
+                
             ??? Quote "[第四届极客少年挑战赛（决赛）](https://www.cdccs.cn/#/geekYouth)"  
                 **比赛名称** : [第四届极客少年挑战赛（决赛）](https://www.cdccs.cn/#/geekYouth)  
                 **比赛类型** : 个人赛  
@@ -1038,7 +1038,7 @@ hide:
                 **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-08-17 08:00:00 - 2024-08-19 08:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 52.10  
                 **赛事主办** : idek (https://ctftime.org/team/157039)  
                 **添加日历** : https://ctftime.org/event/2304.ics  
                 
