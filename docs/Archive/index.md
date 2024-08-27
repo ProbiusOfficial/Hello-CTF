@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅析禅道前台SQL注入(Version<20.2)](https://y4tacker.github.io/2024/08/26/year/2024/8/%E6%B5%85%E6%9E%90%E7%A6%85%E9%81%93%E5%89%8D%E5%8F%B0SQL%E6%B3%A8%E5%85%A5-Version-20-2/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-08-26
+
+    66a1f65ddff5e5fbaee1f939ddf44dcea4029f7582b06e522d1f0b6ddb88495ea7651bf11a6cf64290c5aba6d3cb65ac625a1c15349986dcd67002fc9c92f6f9ff53b981b42f886762bbeb3c53a57f28a78cbe50fc24227b675c76452330256a5de2ba...
     ### [Bamboocloud Pre-Auth RCE](https://y4tacker.github.io/2024/08/24/year/2024/8/Bamboocloud-Pre-Auth-RCE/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-08-24
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-05-07
 
     浅析瑞友天翼应用虚拟化系统前台反序列化(V<=7.0.5.1)看到应急公告简单分析学习一波，漏洞不算难，代码也比较简单，有些细节还是蛮有意思，算是温故而知新，顺便也捡起一些很久没碰的PHP知识鉴权这个系统文件不多，功能点大多是需要登录，我们可以重点关注一下鉴权部分，在为数不多的控制器当中可以看到，在admin/index两个控制器中部分功能点都存在对于登录用户的判断，分别对应函数checklogi...
-    ### [可能是全网第一个粤语Qwen/从零开始的LLM微调教程](https://blog.stv.lol/archives/88/)  
-    >by [Steven Lynn's Blog](https://blog.stv.lol), 2024-05-05
-
-    这几天趁着五一假期在家里，做了一下LLM微调大概是全网第一个做粤语微调的Qwen-7B，还请到huggingface和魔搭社区点心支持一下repo:https://huggingface.co/stvlynn/Qwen-7B-Chat-Cantonesehttps://www.modelscope.cn/models/stvlynn/Qwen-7B-Chat-Cantonese今天就整理一下微调的...
 
 </div>
