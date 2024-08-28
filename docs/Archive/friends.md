@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅析禅道利用第二弹之从SQLi到RCE](https://y4tacker.github.io/2024/08/27/year/2024/8/%E7%A6%85%E9%81%93%E5%88%A9%E7%94%A8%E7%AC%AC%E4%BA%8C%E5%BC%B9%E4%B9%8B%E4%BB%8ESQLi%E5%88%B0RCE/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-08-27
+
+    0a1cc6dfc9166f2d46858a423f462b71087aec7840c0b8ebcdf2959a7d6f18fa8621aecaedc917cc165666c63ee06bab620cca80e98e546baee70442d88603ce6d339115193f5d3bd84436b9e9ce4b28aa1bba5160c4b08007dc3307ddd4ccb47c1ea2...
     ### [浅析禅道前台SQL注入(Version<20.2)](https://y4tacker.github.io/2024/08/26/year/2024/8/%E6%B5%85%E6%9E%90%E7%A6%85%E9%81%93%E5%89%8D%E5%8F%B0SQL%E6%B3%A8%E5%85%A5-Version-20-2/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-08-26
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-05-11
 
     浅析H3C-CAS虚拟化管理系统权限绕过致文件上传漏洞写在前面之前四月就关注到了，可是后面不知道什么原因某步下了公众号，今天又被再次提起，当时分析了一半也就是权限相关的调用，现在补上另一半正文鉴权相关配置简析既然和权限绕过相关那么第一步我们必然要去先看看相关配置，在web.xml配置文件当中，可以看到相关的如下配置这里我们只要关注两点，第一servelet需要以/carsrs开头，第二配置文件在/...
-    ### [浅析瑞友天翼应用虚拟化系统前台反序列化(V<=7.0.5.1)](https://y4tacker.github.io/2024/05/07/year/2024/5/%E6%B5%85%E6%9E%90%E7%91%9E%E5%8F%8B%E5%A4%A9%E7%BF%BC%E5%BA%94%E7%94%A8%E8%99%9A%E6%8B%9F%E5%8C%96%E7%B3%BB%E7%BB%9F%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-05-07
-
-    浅析瑞友天翼应用虚拟化系统前台反序列化(V<=7.0.5.1)看到应急公告简单分析学习一波，漏洞不算难，代码也比较简单，有些细节还是蛮有意思，算是温故而知新，顺便也捡起一些很久没碰的PHP知识鉴权这个系统文件不多，功能点大多是需要登录，我们可以重点关注一下鉴权部分，在为数不多的控制器当中可以看到，在admin/index两个控制器中部分功能点都存在对于登录用户的判断，分别对应函数checklogi...
 
 </div>
