@@ -82,15 +82,6 @@ hide:
             **其他说明** : QQ群: 794148708|仅限研究生参加  
                 
     === "国外比赛"
-        ??? Quote "[Codegate CTF 2024 Finals](http://www.codegate.org/)"  
-            [![](https://ctftime.org){ width="200" align=left }](http://www.codegate.org/)  
-            **比赛名称** : [Codegate CTF 2024 Finals](http://www.codegate.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-08-29 09:00:00 - 2024-08-30 09:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
-            **添加日历** : https://ctftime.org/event/2347.ics  
-            
         ??? Quote "[Flagyard HITBSecConf Single Player CTF](https://conference.hitb.org/hitbsecconf2024bkk/capture-the-flag/)"  
             [![](https://ctftime.org/media/events/4ea2d58d-116d-427d-ad8b-4625d48cbec9.jpg){ width="200" align=left }](https://conference.hitb.org/hitbsecconf2024bkk/capture-the-flag/)  
             **比赛名称** : [Flagyard HITBSecConf Single Player CTF](https://conference.hitb.org/hitbsecconf2024bkk/capture-the-flag/)  
@@ -117,6 +108,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : CISA ICSJWG (https://ctftime.org/team/182074)  
             **添加日历** : https://ctftime.org/event/2404.ics  
+            
+        ??? Quote "[AlpacaHack Round 2 (Web)](https://alpacahack.com/ctfs/round-2)"  
+            [![](https://ctftime.org/media/events/dark_512.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-2)  
+            **比赛名称** : [AlpacaHack Round 2 (Web)](https://alpacahack.com/ctfs/round-2)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-09-01 11:00:00 - 2024-09-01 17:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
+            **添加日历** : https://ctftime.org/event/2465.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
