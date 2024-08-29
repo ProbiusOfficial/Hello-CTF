@@ -47,6 +47,15 @@ comments: true
     **赛事主办** : bhctf (https://ctftime.org/team/251542)  
     **添加日历** : https://ctftime.org/event/2387.ics  
     
+??? Quote "[justCTF 2024 finals](https://2024.justctf.team/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://2024.justctf.team/)  
+    **比赛名称** : [justCTF 2024 finals](https://2024.justctf.team/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-08-28 18:00:00 - 2024-08-29 18:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
+    **添加日历** : https://ctftime.org/event/2484.ics  
+    
 ??? Quote "[Codegate CTF 2024 Finals](http://www.codegate.org/)"  
     [![](https://ctftime.org){ width="200" align=left }](http://www.codegate.org/)  
     **比赛名称** : [Codegate CTF 2024 Finals](http://www.codegate.org/)  
