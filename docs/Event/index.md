@@ -910,15 +910,6 @@ hide:
                 **赛事主办** : bhctf (https://ctftime.org/team/251542)  
                 **添加日历** : https://ctftime.org/event/2387.ics  
                 
-            ??? Quote "[justCTF 2024 finals](https://2024.justctf.team/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://2024.justctf.team/)  
-                **比赛名称** : [justCTF 2024 finals](https://2024.justctf.team/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-08-28 18:00:00 - 2024-08-29 18:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
-                **添加日历** : https://ctftime.org/event/2484.ics  
-                
             ??? Quote "[Codegate CTF 2024 Finals](http://www.codegate.org/)"  
                 [![](https://ctftime.org){ width="200" align=left }](http://www.codegate.org/)  
                 **比赛名称** : [Codegate CTF 2024 Finals](http://www.codegate.org/)  
@@ -1024,6 +1015,15 @@ hide:
                 **其他说明** : QQ群：277328440  
                 
         === "国外赛事"
+            ??? Quote "[justCTF 2024 finals](https://2024.justctf.team/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://2024.justctf.team/)  
+                **比赛名称** : [justCTF 2024 finals](https://2024.justctf.team/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-08-28 18:00:00 - 2024-08-29 18:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
+                **添加日历** : https://ctftime.org/event/2484.ics  
+                
             ??? Quote "[Cygenix CTF](https://cygenixctf.ycfteam.in/)"  
                 [![](https://ctftime.org/media/events/cygenix.png){ width="200" align=left }](https://cygenixctf.ycfteam.in/)  
                 **比赛名称** : [Cygenix CTF](https://cygenixctf.ycfteam.in/)  
@@ -1914,15 +1914,6 @@ hide:
                 **比赛权重** : 39.40  
                 **赛事主办** : D^3CTF Organizers (https://ctftime.org/team/91096)  
                 **添加日历** : https://ctftime.org/event/2276.ics  
-                
-            ??? Quote "[Kernel Kombat](http://18.206.160.227/)"  
-                [![](https://ctftime.org/media/events/jeclat.png){ width="200" align=left }](http://18.206.160.227/)  
-                **比赛名称** : [Kernel Kombat](http://18.206.160.227/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-24 20:30:00 - 2024-04-25 02:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : S14y3r (https://ctftime.org/team/282208)  
-                **添加日历** : https://ctftime.org/event/2359.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

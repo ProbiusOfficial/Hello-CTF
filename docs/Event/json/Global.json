@@ -732,18 +732,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "justCTF 2024 finals",
-        "比赛时间": "2024-08-28 18:00:00 - 2024-08-29 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2484.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2024.justctf.team/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "justCatTheFish (https://ctftime.org/team/33893)",
-        "比赛ID": "399",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Codegate CTF 2024 Finals",
         "比赛时间": "2024-08-29 09:00:00 - 2024-08-30 09:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2347.ics",
@@ -766,6 +754,18 @@
         "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
         "比赛ID": "1164",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "justCTF 2024 finals",
+        "比赛时间": "2024-08-28 18:00:00 - 2024-08-29 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2484.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2024.justctf.team/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "justCatTheFish (https://ctftime.org/team/33893)",
+        "比赛ID": "399",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Cygenix CTF",
@@ -1953,18 +1953,6 @@
         "比赛权重": "39.40",
         "赛事主办": "D^3CTF Organizers (https://ctftime.org/team/91096)",
         "比赛ID": "387",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Kernel Kombat",
-        "比赛时间": "2024-04-24 20:30:00 - 2024-04-25 02:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2359.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://18.206.160.227/",
-        "比赛标志": "https://ctftime.org/media/events/jeclat.png",
-        "比赛权重": "0.00",
-        "赛事主办": "S14y3r (https://ctftime.org/team/282208)",
-        "比赛ID": "1117",
         "比赛状态": "past"
     }
 ]
