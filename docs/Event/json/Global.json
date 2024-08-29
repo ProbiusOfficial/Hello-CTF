@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Flagyard HITBSecConf Single Player CTF",
-        "比赛时间": "2024-08-29 12:00:00 - 2024-08-30 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2475.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://conference.hitb.org/hitbsecconf2024bkk/capture-the-flag/",
-        "比赛标志": "https://ctftime.org/media/events/4ea2d58d-116d-427d-ad8b-4625d48cbec9.jpg",
-        "比赛权重": "0",
-        "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
-        "比赛ID": "1164",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "CyberSpace CTF 2024",
         "比赛时间": "2024-08-31 00:00:00 - 2024-09-02 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2428.ics",
@@ -753,6 +741,18 @@
         "比赛权重": "0",
         "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
         "比赛ID": "4",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Flagyard HITBSecConf Single Player CTF",
+        "比赛时间": "2024-08-29 12:00:00 - 2024-08-30 19:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2475.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://conference.hitb.org/hitbsecconf2024bkk/capture-the-flag/",
+        "比赛标志": "https://ctftime.org/media/events/4ea2d58d-116d-427d-ad8b-4625d48cbec9.jpg",
+        "比赛权重": "0",
+        "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
+        "比赛ID": "1164",
         "比赛状态": "nowrunning"
     },
     {

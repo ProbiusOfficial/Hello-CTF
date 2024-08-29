@@ -82,15 +82,6 @@ hide:
             **其他说明** : QQ群: 794148708|仅限研究生参加  
                 
     === "国外比赛"
-        ??? Quote "[Flagyard HITBSecConf Single Player CTF](https://conference.hitb.org/hitbsecconf2024bkk/capture-the-flag/)"  
-            [![](https://ctftime.org/media/events/4ea2d58d-116d-427d-ad8b-4625d48cbec9.jpg){ width="200" align=left }](https://conference.hitb.org/hitbsecconf2024bkk/capture-the-flag/)  
-            **比赛名称** : [Flagyard HITBSecConf Single Player CTF](https://conference.hitb.org/hitbsecconf2024bkk/capture-the-flag/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-08-29 12:00:00 - 2024-08-30 19:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
-            **添加日历** : https://ctftime.org/event/2475.ics  
-            
         ??? Quote "[CyberSpace CTF 2024](https://2024.csc.tf/)"  
             [![](https://ctftime.org/media/events/f6b991673b1944e7b199bc978b3f0a15.png){ width="200" align=left }](https://2024.csc.tf/)  
             **比赛名称** : [CyberSpace CTF 2024](https://2024.csc.tf/)  
@@ -117,6 +108,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
             **添加日历** : https://ctftime.org/event/2465.ics  
+            
+        ??? Quote "[BlackHat MEA CTF Qualification 2024](https://blackhatmea.com/capture-the-flag)"  
+            [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
+            **比赛名称** : [BlackHat MEA CTF Qualification 2024](https://blackhatmea.com/capture-the-flag)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-09-01 18:00:00 - 2024-09-02 17:59:59 UTC+8  
+            **比赛权重** : 25.00  
+            **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
+            **添加日历** : https://ctftime.org/event/2430.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
