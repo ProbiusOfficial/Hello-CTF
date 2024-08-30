@@ -82,15 +82,6 @@ hide:
             **其他说明** : QQ群: 794148708|仅限研究生参加  
                 
     === "国外比赛"
-        ??? Quote "[CyberSpace CTF 2024](https://2024.csc.tf/)"  
-            [![](https://ctftime.org/media/events/f6b991673b1944e7b199bc978b3f0a15.png){ width="200" align=left }](https://2024.csc.tf/)  
-            **比赛名称** : [CyberSpace CTF 2024](https://2024.csc.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-08-31 00:00:00 - 2024-09-02 00:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : CyberSpace (https://ctftime.org/team/116280)  
-            **添加日历** : https://ctftime.org/event/2428.ics  
-            
         ??? Quote "[CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)"  
             [![](https://ctftime.org/media/events/CTF_Drifveil_Logo-1.png){ width="200" align=left }](https://ctf.cisaicsctf.com/)  
             **比赛名称** : [CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)  
@@ -117,6 +108,15 @@ hide:
             **比赛权重** : 25.00  
             **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
             **添加日历** : https://ctftime.org/event/2430.ics  
+            
+        ??? Quote "[CSAW CTF Qualification Round 2024](https://ctf.csaw.io/)"  
+            [![](https://ctftime.org/media/events/CSAW.png){ width="200" align=left }](https://ctf.csaw.io/)  
+            **比赛名称** : [CSAW CTF Qualification Round 2024](https://ctf.csaw.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-09-07 00:00:00 - 2024-09-09 00:00:00 UTC+8  
+            **比赛权重** : 21.80  
+            **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
+            **添加日历** : https://ctftime.org/event/2398.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
