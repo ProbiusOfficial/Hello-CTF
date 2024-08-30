@@ -91,6 +91,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Codegate CTF 2024 Finals](http://www.codegate.org/)"  
+    [![](https://ctftime.org){ width="200" align=left }](http://www.codegate.org/)  
+    **比赛名称** : [Codegate CTF 2024 Finals](http://www.codegate.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-08-29 09:00:00 - 2024-08-30 09:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
+    **添加日历** : https://ctftime.org/event/2347.ics  
+    
 ??? Quote "[justCTF 2024 finals](https://2024.justctf.team/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://2024.justctf.team/)  
     **比赛名称** : [justCTF 2024 finals](https://2024.justctf.team/)  
@@ -981,13 +990,4 @@ comments: true
     **比赛权重** : 23.96  
     **赛事主办** : cr3.mov (https://ctftime.org/team/242101)  
     **添加日历** : https://ctftime.org/event/2288.ics  
-    
-??? Quote "[D^3CTF 2024](https://d3c.tf/)"  
-    [![](https://ctftime.org/media/events/ddd.png){ width="200" align=left }](https://d3c.tf/)  
-    **比赛名称** : [D^3CTF 2024](https://d3c.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-26 20:00:00 - 2024-04-28 20:00:00 UTC+8  
-    **比赛权重** : 39.40  
-    **赛事主办** : D^3CTF Organizers (https://ctftime.org/team/91096)  
-    **添加日历** : https://ctftime.org/event/2276.ics  
     

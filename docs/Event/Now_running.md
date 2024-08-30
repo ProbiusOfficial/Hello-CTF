@@ -47,15 +47,6 @@ comments: true
     **赛事主办** : bhctf (https://ctftime.org/team/251542)  
     **添加日历** : https://ctftime.org/event/2387.ics  
     
-??? Quote "[Codegate CTF 2024 Finals](http://www.codegate.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](http://www.codegate.org/)  
-    **比赛名称** : [Codegate CTF 2024 Finals](http://www.codegate.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-08-29 09:00:00 - 2024-08-30 09:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
-    **添加日历** : https://ctftime.org/event/2347.ics  
-    
 ??? Quote "[Flagyard HITBSecConf Single Player CTF](https://conference.hitb.org/hitbsecconf2024bkk/capture-the-flag/)"  
     [![](https://ctftime.org/media/events/4ea2d58d-116d-427d-ad8b-4625d48cbec9.jpg){ width="200" align=left }](https://conference.hitb.org/hitbsecconf2024bkk/capture-the-flag/)  
     **比赛名称** : [Flagyard HITBSecConf Single Player CTF](https://conference.hitb.org/hitbsecconf2024bkk/capture-the-flag/)  
