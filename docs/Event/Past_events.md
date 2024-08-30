@@ -91,6 +91,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Flagyard HITBSecConf Single Player CTF](https://conference.hitb.org/hitbsecconf2024bkk/capture-the-flag/)"  
+    [![](https://ctftime.org/media/events/4ea2d58d-116d-427d-ad8b-4625d48cbec9.jpg){ width="200" align=left }](https://conference.hitb.org/hitbsecconf2024bkk/capture-the-flag/)  
+    **比赛名称** : [Flagyard HITBSecConf Single Player CTF](https://conference.hitb.org/hitbsecconf2024bkk/capture-the-flag/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-08-29 12:00:00 - 2024-08-30 19:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
+    **添加日历** : https://ctftime.org/event/2475.ics  
+    
 ??? Quote "[Codegate CTF 2024 Finals](http://www.codegate.org/)"  
     [![](https://ctftime.org){ width="200" align=left }](http://www.codegate.org/)  
     **比赛名称** : [Codegate CTF 2024 Finals](http://www.codegate.org/)  
@@ -981,13 +990,4 @@ comments: true
     **比赛权重** : 33.40  
     **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
     **添加日历** : https://ctftime.org/event/2271.ics  
-    
-??? Quote "[cr3 CTF 2024](https://2024.cr3c.tf/)"  
-    [![](https://ctftime.org/media/events/cr3ctf_2024.png){ width="200" align=left }](https://2024.cr3c.tf/)  
-    **比赛名称** : [cr3 CTF 2024](https://2024.cr3c.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-26 21:00:00 - 2024-04-28 09:00:00 UTC+8  
-    **比赛权重** : 23.96  
-    **赛事主办** : cr3.mov (https://ctftime.org/team/242101)  
-    **添加日历** : https://ctftime.org/event/2288.ics  
     

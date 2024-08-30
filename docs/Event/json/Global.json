@@ -741,7 +741,7 @@
         "比赛权重": "0",
         "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
         "比赛ID": "1164",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Codegate CTF 2024 Finals",
@@ -1929,18 +1929,6 @@
         "比赛权重": "33.40",
         "赛事主办": "Insomni'hack Team (https://ctftime.org/team/104742)",
         "比赛ID": "56",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "cr3 CTF 2024",
-        "比赛时间": "2024-04-26 21:00:00 - 2024-04-28 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2288.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2024.cr3c.tf/",
-        "比赛标志": "https://ctftime.org/media/events/cr3ctf_2024.png",
-        "比赛权重": "23.96",
-        "赛事主办": "cr3.mov (https://ctftime.org/team/242101)",
-        "比赛ID": "1074",
         "比赛状态": "past"
     }
 ]
