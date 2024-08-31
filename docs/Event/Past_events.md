@@ -348,7 +348,7 @@ comments: true
     **比赛名称** : [DiceCTF 2024 Finals](https://ctf.dicega.ng/)  
     **比赛形式** : Attack-Defense  
     **比赛时间** : 2024-06-29 22:00:00 - 2024-07-01 06:00:00 UTC+8  
-    **比赛权重** : 0.00  
+    **比赛权重** : 54.40  
     **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
     **添加日历** : https://ctftime.org/event/2306.ics  
     
