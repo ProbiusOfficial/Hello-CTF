@@ -75,15 +75,6 @@ hide:
             **其他说明** : QQ群: 794148708|仅限研究生参加  
                 
     === "国外比赛"
-        ??? Quote "[CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)"  
-            [![](https://ctftime.org/media/events/CTF_Drifveil_Logo-1.png){ width="200" align=left }](https://ctf.cisaicsctf.com/)  
-            **比赛名称** : [CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-09-01 01:00:00 - 2024-09-05 00:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : CISA ICSJWG (https://ctftime.org/team/182074)  
-            **添加日历** : https://ctftime.org/event/2404.ics  
-            
         ??? Quote "[AlpacaHack Round 2 (Web)](https://alpacahack.com/ctfs/round-2)"  
             [![](https://ctftime.org/media/events/dark_512.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-2)  
             **比赛名称** : [AlpacaHack Round 2 (Web)](https://alpacahack.com/ctfs/round-2)  
@@ -110,6 +101,15 @@ hide:
             **比赛权重** : 21.80  
             **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
             **添加日历** : https://ctftime.org/event/2398.ics  
+            
+        ??? Quote "[HackTheDrone CTF Qualifier](http://hackthedrone.org/eng/ctf.php)"  
+            [![](https://ctftime.org/media/events/hackthedrone.png){ width="200" align=left }](http://hackthedrone.org/eng/ctf.php)  
+            **比赛名称** : [HackTheDrone CTF Qualifier](http://hackthedrone.org/eng/ctf.php)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-09-07 12:00:00 - 2024-09-08 12:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : HackTheDrone (https://ctftime.org/team/337463)  
+            **添加日历** : https://ctftime.org/event/2474.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
