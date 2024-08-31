@@ -146,7 +146,7 @@ comments: true
     **比赛名称** : [DASCTF2024 August Back-to-School Season](https://buuoj.cn/match/matches/209)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-08-24 18:00:00 - 2024-08-25 02:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 20.00  
     **赛事主办** : DASCTF (https://ctftime.org/team/303691)  
     **添加日历** : https://ctftime.org/event/2458.ics  
     
