@@ -889,15 +889,6 @@ hide:
                 **赛事主办** : VicOne Japan (https://ctftime.org/team/314349)  
                 **添加日历** : https://ctftime.org/event/2473.ics  
                 
-            ??? Quote "[CyberSpace CTF 2024](https://2024.csc.tf/)"  
-                [![](https://ctftime.org/media/events/f6b991673b1944e7b199bc978b3f0a15.png){ width="200" align=left }](https://2024.csc.tf/)  
-                **比赛名称** : [CyberSpace CTF 2024](https://2024.csc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-08-31 00:00:00 - 2024-09-02 00:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : CyberSpace (https://ctftime.org/team/116280)  
-                **添加日历** : https://ctftime.org/event/2428.ics  
-                
             ??? Quote "[CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)"  
                 [![](https://ctftime.org/media/events/CTF_Drifveil_Logo-1.png){ width="200" align=left }](https://ctf.cisaicsctf.com/)  
                 **比赛名称** : [CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)  
@@ -1025,6 +1016,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
                 **添加日历** : https://ctftime.org/event/2465.ics  
+                
+            ??? Quote "[CyberSpace CTF 2024](https://2024.csc.tf/)"  
+                [![](https://ctftime.org/media/events/f6b991673b1944e7b199bc978b3f0a15.png){ width="200" align=left }](https://2024.csc.tf/)  
+                **比赛名称** : [CyberSpace CTF 2024](https://2024.csc.tf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-08-31 00:00:00 - 2024-09-02 00:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : CyberSpace (https://ctftime.org/team/116280)  
+                **添加日历** : https://ctftime.org/event/2428.ics  
                 
             ??? Quote "[Flagyard HITBSecConf Single Player CTF](https://conference.hitb.org/hitbsecconf2024bkk/capture-the-flag/)"  
                 [![](https://ctftime.org/media/events/4ea2d58d-116d-427d-ad8b-4625d48cbec9.jpg){ width="200" align=left }](https://conference.hitb.org/hitbsecconf2024bkk/capture-the-flag/)  
@@ -1907,15 +1907,6 @@ hide:
                 **比赛权重** : 48.92  
                 **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
                 **添加日历** : https://ctftime.org/event/2323.ics  
-                
-            ??? Quote "[SpringForwardCTF](https://springforward.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/NICC-2-green.png){ width="200" align=left }](https://springforward.ctfd.io/)  
-                **比赛名称** : [SpringForwardCTF](https://springforward.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-27 05:00:00 - 2024-04-29 05:00:00 UTC+8  
-                **比赛权重** : 22.40  
-                **赛事主办** : G1tc_Gu4rdians (https://ctftime.org/team/202828)  
-                **添加日历** : https://ctftime.org/event/2348.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
