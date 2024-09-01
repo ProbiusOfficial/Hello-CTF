@@ -732,18 +732,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CyberSpace CTF 2024",
-        "比赛时间": "2024-08-31 00:00:00 - 2024-09-02 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2428.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2024.csc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/f6b991673b1944e7b199bc978b3f0a15.png",
-        "比赛权重": "0",
-        "赛事主办": "CyberSpace (https://ctftime.org/team/116280)",
-        "比赛ID": "1147",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "CISA ICS CTF 2024",
         "比赛时间": "2024-09-01 01:00:00 - 2024-09-05 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2404.ics",
@@ -777,6 +765,18 @@
         "比赛权重": "0",
         "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
         "比赛ID": "1163",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "CyberSpace CTF 2024",
+        "比赛时间": "2024-08-31 00:00:00 - 2024-09-02 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2428.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2024.csc.tf/",
+        "比赛标志": "https://ctftime.org/media/events/f6b991673b1944e7b199bc978b3f0a15.png",
+        "比赛权重": "0",
+        "赛事主办": "CyberSpace (https://ctftime.org/team/116280)",
+        "比赛ID": "1147",
         "比赛状态": "past"
     },
     {
@@ -1953,18 +1953,6 @@
         "比赛权重": "48.92",
         "赛事主办": "UMDCSEC (https://ctftime.org/team/87711)",
         "比赛ID": "444",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SpringForwardCTF",
-        "比赛时间": "2024-04-27 05:00:00 - 2024-04-29 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2348.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://springforward.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/NICC-2-green.png",
-        "比赛权重": "22.40",
-        "赛事主办": "G1tc_Gu4rdians (https://ctftime.org/team/202828)",
-        "比赛ID": "987",
         "比赛状态": "past"
     }
 ]
