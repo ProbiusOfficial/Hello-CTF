@@ -323,15 +323,6 @@ hide:
                 **其他说明** : QQ群：676547374 或 566180593  
                 
         === "国外赛事"
-            ??? Quote "[AlpacaHack Round 2 (Web)](https://alpacahack.com/ctfs/round-2)"  
-                [![](https://ctftime.org/media/events/dark_512.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-2)  
-                **比赛名称** : [AlpacaHack Round 2 (Web)](https://alpacahack.com/ctfs/round-2)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-01 11:00:00 - 2024-09-01 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
-                **添加日历** : https://ctftime.org/event/2465.ics  
-                
             ??? Quote "[BlackHat MEA CTF Qualification 2024](https://blackhatmea.com/capture-the-flag)"  
                 [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
                 **比赛名称** : [BlackHat MEA CTF Qualification 2024](https://blackhatmea.com/capture-the-flag)  
@@ -924,6 +915,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : CISA ICSJWG (https://ctftime.org/team/182074)  
                 **添加日历** : https://ctftime.org/event/2404.ics  
+                
+            ??? Quote "[AlpacaHack Round 2 (Web)](https://alpacahack.com/ctfs/round-2)"  
+                [![](https://ctftime.org/media/events/dark_512.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-2)  
+                **比赛名称** : [AlpacaHack Round 2 (Web)](https://alpacahack.com/ctfs/round-2)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-01 11:00:00 - 2024-09-01 17:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
+                **添加日历** : https://ctftime.org/event/2465.ics  
                 
     === "*已经结束*"
         === "国内赛事"
