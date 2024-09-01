@@ -350,6 +350,15 @@ hide:
                 **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
                 **添加日历** : https://ctftime.org/event/2398.ics  
                 
+            ??? Quote "[WMCTF2024](https://wmctf.wm-team.cn/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://wmctf.wm-team.cn/)  
+                **比赛名称** : [WMCTF2024](https://wmctf.wm-team.cn/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-07 09:00:00 - 2024-09-09 09:00:00 UTC+8  
+                **比赛权重** : 53.88  
+                **赛事主办** : W&M (https://ctftime.org/team/54666)  
+                **添加日历** : https://ctftime.org/event/2457.ics  
+                
             ??? Quote "[HackTheDrone CTF Qualifier](http://hackthedrone.org/eng/ctf.php)"  
                 [![](https://ctftime.org/media/events/hackthedrone.png){ width="200" align=left }](http://hackthedrone.org/eng/ctf.php)  
                 **比赛名称** : [HackTheDrone CTF Qualifier](http://hackthedrone.org/eng/ctf.php)  
@@ -394,6 +403,15 @@ hide:
                 **比赛权重** : 43.00  
                 **赛事主办** : CSUI (https://ctftime.org/team/70551)  
                 **添加日历** : https://ctftime.org/event/2463.ics  
+                
+            ??? Quote "[Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)"  
+                [![](https://ctftime.org/media/events/zangi_2.png){ width="200" align=left }](https://dashboard.haruulzangi.mn/)  
+                **比赛名称** : [Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-13 12:00:00 - 2024-09-13 12:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
+                **添加日历** : https://ctftime.org/event/2476.ics  
                 
             ??? Quote "[MOCA CTF - Finals](https://moca.camp/ctf/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://moca.camp/ctf/)  
@@ -556,6 +574,15 @@ hide:
                 **比赛权重** : 50.91  
                 **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
                 **添加日历** : https://ctftime.org/event/2449.ics  
+                
+            ??? Quote "[justCTF 2024 finals](https://2024.justctf.team/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://2024.justctf.team/)  
+                **比赛名称** : [justCTF 2024 finals](https://2024.justctf.team/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-28 18:00:00 - 2024-09-29 18:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
+                **添加日历** : https://ctftime.org/event/2484.ics  
                 
             ??? Quote "[FAUST CTF 2024](https://2024.faustctf.net/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://2024.faustctf.net/)  
@@ -871,6 +898,15 @@ hide:
                 **赛事主办** : bhctf (https://ctftime.org/team/251542)  
                 **添加日历** : https://ctftime.org/event/2387.ics  
                 
+            ??? Quote "[Automotive CTF Japan 2024](https://vicone.com/jp/automotive-ctf)"  
+                [![](https://ctftime.org/media/events/7471ff863b474b2db4fdb2f0b8086302.png){ width="200" align=left }](https://vicone.com/jp/automotive-ctf)  
+                **比赛名称** : [Automotive CTF Japan 2024](https://vicone.com/jp/automotive-ctf)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-08-25 08:00:00 - 2024-09-10 07:59:59 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : VicOne Japan (https://ctftime.org/team/314349)  
+                **添加日历** : https://ctftime.org/event/2473.ics  
+                
             ??? Quote "[CyberSpace CTF 2024](https://2024.csc.tf/)"  
                 [![](https://ctftime.org/media/events/f6b991673b1944e7b199bc978b3f0a15.png){ width="200" align=left }](https://2024.csc.tf/)  
                 **比赛名称** : [CyberSpace CTF 2024](https://2024.csc.tf/)  
@@ -1008,15 +1044,6 @@ hide:
                 **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
                 **添加日历** : https://ctftime.org/event/2347.ics  
                 
-            ??? Quote "[justCTF 2024 finals](https://2024.justctf.team/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://2024.justctf.team/)  
-                **比赛名称** : [justCTF 2024 finals](https://2024.justctf.team/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-08-28 18:00:00 - 2024-08-29 18:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
-                **添加日历** : https://ctftime.org/event/2484.ics  
-                
             ??? Quote "[Cygenix CTF](https://cygenixctf.ycfteam.in/)"  
                 [![](https://ctftime.org/media/events/cygenix.png){ width="200" align=left }](https://cygenixctf.ycfteam.in/)  
                 **比赛名称** : [Cygenix CTF](https://cygenixctf.ycfteam.in/)  
@@ -1070,6 +1097,15 @@ hide:
                 **比赛权重** : 73.82  
                 **赛事主办** : BIZone (https://ctftime.org/team/32190)  
                 **添加日历** : https://ctftime.org/event/2408.ics  
+                
+            ??? Quote "[DEF CON CTF 2024](https://nautilus.institute/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://nautilus.institute/)  
+                **比赛名称** : [DEF CON CTF 2024](https://nautilus.institute/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2024-08-10 00:00:00 - 2024-08-12 04:00:00 UTC+8  
+                **比赛权重** : 35.00  
+                **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
+                **添加日历** : https://ctftime.org/event/2462.ics  
                 
             ??? Quote "[n00bzCTF 2024](https://ctf.n00bzunit3d.xyz/)"  
                 [![](https://ctftime.org/media/events/logo_ascii_1.png){ width="200" align=left }](https://ctf.n00bzunit3d.xyz/)  

@@ -36,6 +36,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "WMCTF2024",
+        "比赛时间": "2024-09-07 09:00:00 - 2024-09-09 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2457.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://wmctf.wm-team.cn/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "53.88",
+        "赛事主办": "W&M (https://ctftime.org/team/54666)",
+        "比赛ID": "356",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "HackTheDrone CTF Qualifier",
         "比赛时间": "2024-09-07 12:00:00 - 2024-09-08 12:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2474.ics",
@@ -93,6 +105,18 @@
         "比赛权重": "43.00",
         "赛事主办": "CSUI (https://ctftime.org/team/70551)",
         "比赛ID": "502",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Haruulzangi CTF 2024 Qualifier",
+        "比赛时间": "2024-09-13 12:00:00 - 2024-09-13 12:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2476.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://dashboard.haruulzangi.mn/",
+        "比赛标志": "https://ctftime.org/media/events/zangi_2.png",
+        "比赛权重": "0.00",
+        "赛事主办": "haruulzangi-organizers (https://ctftime.org/team/266812)",
+        "比赛ID": "985",
         "比赛状态": "oncoming"
     },
     {
@@ -309,6 +333,18 @@
         "比赛权重": "50.91",
         "赛事主办": "scriptohio (https://ctftime.org/team/144581)",
         "比赛ID": "667",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "justCTF 2024 finals",
+        "比赛时间": "2024-09-28 18:00:00 - 2024-09-29 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2484.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2024.justctf.team/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "justCatTheFish (https://ctftime.org/team/33893)",
+        "比赛ID": "399",
         "比赛状态": "oncoming"
     },
     {
@@ -708,6 +744,18 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "Automotive CTF Japan 2024",
+        "比赛时间": "2024-08-25 08:00:00 - 2024-09-10 07:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2473.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://vicone.com/jp/automotive-ctf",
+        "比赛标志": "https://ctftime.org/media/events/7471ff863b474b2db4fdb2f0b8086302.png",
+        "比赛权重": "0",
+        "赛事主办": "VicOne Japan (https://ctftime.org/team/314349)",
+        "比赛ID": "1159",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "CyberSpace CTF 2024",
         "比赛时间": "2024-08-31 00:00:00 - 2024-09-02 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2428.ics",
@@ -753,18 +801,6 @@
         "比赛权重": "0",
         "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
         "比赛ID": "4",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "justCTF 2024 finals",
-        "比赛时间": "2024-08-28 18:00:00 - 2024-08-29 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2484.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2024.justctf.team/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "justCatTheFish (https://ctftime.org/team/33893)",
-        "比赛ID": "399",
         "比赛状态": "past"
     },
     {
@@ -837,6 +873,18 @@
         "比赛权重": "73.82",
         "赛事主办": "BIZone (https://ctftime.org/team/32190)",
         "比赛ID": "201",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "DEF CON CTF 2024",
+        "比赛时间": "2024-08-10 00:00:00 - 2024-08-12 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2462.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://nautilus.institute/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "35.00",
+        "赛事主办": "Nautilus Institute (https://ctftime.org/team/181536)",
+        "比赛ID": "2",
         "比赛状态": "past"
     },
     {

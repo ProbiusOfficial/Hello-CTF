@@ -40,6 +40,15 @@ comments: true
     **赛事主办** : bhctf (https://ctftime.org/team/251542)  
     **添加日历** : https://ctftime.org/event/2387.ics  
     
+??? Quote "[Automotive CTF Japan 2024](https://vicone.com/jp/automotive-ctf)"  
+    [![](https://ctftime.org/media/events/7471ff863b474b2db4fdb2f0b8086302.png){ width="200" align=left }](https://vicone.com/jp/automotive-ctf)  
+    **比赛名称** : [Automotive CTF Japan 2024](https://vicone.com/jp/automotive-ctf)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-08-25 08:00:00 - 2024-09-10 07:59:59 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : VicOne Japan (https://ctftime.org/team/314349)  
+    **添加日历** : https://ctftime.org/event/2473.ics  
+    
 ??? Quote "[CyberSpace CTF 2024](https://2024.csc.tf/)"  
     [![](https://ctftime.org/media/events/f6b991673b1944e7b199bc978b3f0a15.png){ width="200" align=left }](https://2024.csc.tf/)  
     **比赛名称** : [CyberSpace CTF 2024](https://2024.csc.tf/)  

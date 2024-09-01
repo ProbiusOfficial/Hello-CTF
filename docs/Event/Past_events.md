@@ -123,15 +123,6 @@ comments: true
     **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
     **添加日历** : https://ctftime.org/event/2347.ics  
     
-??? Quote "[justCTF 2024 finals](https://2024.justctf.team/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://2024.justctf.team/)  
-    **比赛名称** : [justCTF 2024 finals](https://2024.justctf.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-08-28 18:00:00 - 2024-08-29 18:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
-    **添加日历** : https://ctftime.org/event/2484.ics  
-    
 ??? Quote "[Cygenix CTF](https://cygenixctf.ycfteam.in/)"  
     [![](https://ctftime.org/media/events/cygenix.png){ width="200" align=left }](https://cygenixctf.ycfteam.in/)  
     **比赛名称** : [Cygenix CTF](https://cygenixctf.ycfteam.in/)  
@@ -185,6 +176,15 @@ comments: true
     **比赛权重** : 73.82  
     **赛事主办** : BIZone (https://ctftime.org/team/32190)  
     **添加日历** : https://ctftime.org/event/2408.ics  
+    
+??? Quote "[DEF CON CTF 2024](https://nautilus.institute/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://nautilus.institute/)  
+    **比赛名称** : [DEF CON CTF 2024](https://nautilus.institute/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-08-10 00:00:00 - 2024-08-12 04:00:00 UTC+8  
+    **比赛权重** : 35.00  
+    **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
+    **添加日历** : https://ctftime.org/event/2462.ics  
     
 ??? Quote "[n00bzCTF 2024](https://ctf.n00bzunit3d.xyz/)"  
     [![](https://ctftime.org/media/events/logo_ascii_1.png){ width="200" align=left }](https://ctf.n00bzunit3d.xyz/)  
