@@ -777,7 +777,7 @@
         "比赛权重": "0",
         "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
         "比赛ID": "1163",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Flagyard HITBSecConf Single Player CTF",
@@ -1965,18 +1965,6 @@
         "比赛权重": "22.40",
         "赛事主办": "G1tc_Gu4rdians (https://ctftime.org/team/202828)",
         "比赛ID": "987",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Insomni'hack 2024",
-        "比赛时间": "2024-04-27 00:30:00 - 2024-04-27 11:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2271.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://insomnihack.ch/contests/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "33.40",
-        "赛事主办": "Insomni'hack Team (https://ctftime.org/team/104742)",
-        "比赛ID": "56",
         "比赛状态": "past"
     }
 ]

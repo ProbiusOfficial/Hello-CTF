@@ -67,12 +67,3 @@ comments: true
     **赛事主办** : CISA ICSJWG (https://ctftime.org/team/182074)  
     **添加日历** : https://ctftime.org/event/2404.ics  
     
-??? Quote "[AlpacaHack Round 2 (Web)](https://alpacahack.com/ctfs/round-2)"  
-    [![](https://ctftime.org/media/events/dark_512.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-2)  
-    **比赛名称** : [AlpacaHack Round 2 (Web)](https://alpacahack.com/ctfs/round-2)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-01 11:00:00 - 2024-09-01 17:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
-    **添加日历** : https://ctftime.org/event/2465.ics  
-    
