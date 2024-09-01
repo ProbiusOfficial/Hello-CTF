@@ -75,15 +75,6 @@ hide:
             **其他说明** : QQ群: 794148708|仅限研究生参加  
                 
     === "国外比赛"
-        ??? Quote "[BlackHat MEA CTF Qualification 2024](https://blackhatmea.com/capture-the-flag)"  
-            [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
-            **比赛名称** : [BlackHat MEA CTF Qualification 2024](https://blackhatmea.com/capture-the-flag)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-09-01 18:00:00 - 2024-09-02 17:59:59 UTC+8  
-            **比赛权重** : 25.00  
-            **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
-            **添加日历** : https://ctftime.org/event/2430.ics  
-            
         ??? Quote "[CSAW CTF Qualification Round 2024](https://ctf.csaw.io/)"  
             [![](https://ctftime.org/media/events/CSAW.png){ width="200" align=left }](https://ctf.csaw.io/)  
             **比赛名称** : [CSAW CTF Qualification Round 2024](https://ctf.csaw.io/)  
@@ -110,6 +101,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : HackTheDrone (https://ctftime.org/team/337463)  
             **添加日历** : https://ctftime.org/event/2474.ics  
+            
+        ??? Quote "[snakeCTF 2024 Quals](https://2024.snakectf.org/)"  
+            [![](https://ctftime.org/media/events/LogoCroppable_1.png){ width="200" align=left }](https://2024.snakectf.org/)  
+            **比赛名称** : [snakeCTF 2024 Quals](https://2024.snakectf.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-09-07 16:00:00 - 2024-09-08 16:00:00 UTC+8  
+            **比赛权重** : 24.79  
+            **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
+            **添加日历** : https://ctftime.org/event/2418.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
