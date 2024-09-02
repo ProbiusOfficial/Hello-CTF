@@ -3,16 +3,16 @@
     "data": {
         "result": [
             {
-    "name": "2024'源鲁杯'高校网络安全技能大赛",
-    "type": "个人线上赛",
-    "bmks": "2024年09月01日 09:00",
-    "bmjz": "2024年10月23日 15:00",
-    "bsks": "2024年10月10日 09:00",
-    "bsjs": "2024年10月23日 15:00",
-    "readmore": "QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/",
-    "status": 1
-},
-
+                "name": "2024'源鲁杯'高校网络安全技能大赛",
+                "link": "https://ctf.yuanloo.com/",
+                "type": "个人线上赛",
+                "bmks": "2024年09月01日 09:00",
+                "bmjz": "2024年10月23日 15:00",
+                "bsks": "2024年10月10日 09:00",
+                "bsjs": "2024年10月23日 15:00",
+                "readmore": "QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/",
+                "status": 1
+            },
             {
                 "name": "第八届御网杯信息安全大赛",
                 "link": "https://www.hncsisc.com/hncsisc/index.html",
