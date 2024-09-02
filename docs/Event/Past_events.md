@@ -105,6 +105,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[BlackHat MEA CTF Qualification 2024](https://blackhatmea.com/capture-the-flag)"  
+    [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
+    **比赛名称** : [BlackHat MEA CTF Qualification 2024](https://blackhatmea.com/capture-the-flag)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-09-01 18:00:00 - 2024-09-02 17:59:59 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
+    **添加日历** : https://ctftime.org/event/2430.ics  
+    
 ??? Quote "[AlpacaHack Round 2 (Web)](https://alpacahack.com/ctfs/round-2)"  
     [![](https://ctftime.org/media/events/dark_512.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-2)  
     **比赛名称** : [AlpacaHack Round 2 (Web)](https://alpacahack.com/ctfs/round-2)  
@@ -875,7 +884,7 @@ comments: true
     **比赛名称** : [squ1rrel CTF 2024](https://ctf.squ1rrel.dev/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-05-04 23:00:00 - 2024-05-06 11:00:00 UTC+8  
-    **比赛权重** : 24.19  
+    **比赛权重** : 24.21  
     **赛事主办** : squ1rrel (https://ctftime.org/team/201730)  
     **添加日历** : https://ctftime.org/event/2370.ics  
     
@@ -995,13 +1004,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Theori (https://ctftime.org/team/250867)  
     **添加日历** : https://ctftime.org/event/2308.ics  
-    
-??? Quote "[UMDCTF 2024](https://umdctf.io/)"  
-    [![](https://ctftime.org/media/events/logo_95.png){ width="200" align=left }](https://umdctf.io/)  
-    **比赛名称** : [UMDCTF 2024](https://umdctf.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-27 06:00:00 - 2024-04-29 06:00:00 UTC+8  
-    **比赛权重** : 48.92  
-    **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
-    **添加日历** : https://ctftime.org/event/2323.ics  
     
