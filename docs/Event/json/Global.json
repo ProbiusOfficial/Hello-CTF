@@ -753,7 +753,7 @@
         "比赛权重": "25.00",
         "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
         "比赛ID": "826",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "AlpacaHack Round 2 (Web)",
@@ -1782,7 +1782,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.squ1rrel.dev/",
         "比赛标志": "https://ctftime.org/media/events/squ1rrel.png",
-        "比赛权重": "24.19",
+        "比赛权重": "24.21",
         "赛事主办": "squ1rrel (https://ctftime.org/team/201730)",
         "比赛ID": "1110",
         "比赛状态": "past"
@@ -1941,18 +1941,6 @@
         "比赛权重": "0",
         "赛事主办": "Theori (https://ctftime.org/team/250867)",
         "比赛ID": "1090",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "UMDCTF 2024",
-        "比赛时间": "2024-04-27 06:00:00 - 2024-04-29 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2323.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://umdctf.io/",
-        "比赛标志": "https://ctftime.org/media/events/logo_95.png",
-        "比赛权重": "48.92",
-        "赛事主办": "UMDCSEC (https://ctftime.org/team/87711)",
-        "比赛ID": "444",
         "比赛状态": "past"
     }
 ]
