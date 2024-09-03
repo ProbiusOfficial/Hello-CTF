@@ -325,7 +325,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2256.ics  
     
 ??? Quote "[Haus der Flaggen/Flag Heist](https://laokoon-security.com/ctf2024)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://laokoon-security.com/ctf2024)  
+    [![](https://ctftime.org/media/events/HausDerFlaggen_Plakat_1080_x_1080_px.png){ width="200" align=left }](https://laokoon-security.com/ctf2024)  
     **比赛名称** : [Haus der Flaggen/Flag Heist](https://laokoon-security.com/ctf2024)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-10-12 16:00:00 - 2024-10-13 02:00:00 UTC+8  
