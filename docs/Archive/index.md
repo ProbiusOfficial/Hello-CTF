@@ -73,6 +73,14 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [Hacking Thymeleaf With Spring(目前最新版，暂不公开)](https://y4tacker.github.io/2024/09/02/year/2024/9/Hacking-Thymeleaf-With-Spring-%E7%9B%AE%E5%89%8D%E6%9C%80%E6%96%B0%E7%89%88%EF%BC%8C%E6%9A%82%E4%B8%8D%E5%85%AC%E5%BC%80/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-09-02
+
+    5d737de200998fa96fe50e14daeae4f936d6c2e263442da7b419cac91b5030bbfa0e26acc7e2d8e6be6b10ef0f9633b6f035c93526330d7b98ff6d625af66aab5e4f3c5bbc3fe17c81df02652f89f741e35999243afb75566bdbedf56b286ad102f569...
+    ### [KCTF2024第八题 writeup](https://xia0ji233.github.io/2024/09/02/KCTF2024/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-09-02
+
+    KCTF2024第八题——星门 writeup思路分析拿到题目，是一道典型的写shellcode的题目，白名单系统调用，只允许 read，wait4 和 ptrace。沙箱系统调用号白名单首先想到了切架构，但是它题目也有判断架构。因此就只能利用这个 ptrace 去做文章了。其次应当考虑信息以何种方式回传，因为原进程是连write都不能用的，侧信道也没法，所以便起了一个docker环境去试试。发现...
     ### [浅析禅道利用第二弹之从SQLi到RCE](https://y4tacker.github.io/2024/08/27/year/2024/8/%E7%A6%85%E9%81%93%E5%88%A9%E7%94%A8%E7%AC%AC%E4%BA%8C%E5%BC%B9%E4%B9%8B%E4%BB%8ESQLi%E5%88%B0RCE/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-08-27
 
@@ -121,6 +129,10 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-07-23
 
     本文以目前官网的最新版为例，poc估计大家都有了，这里猥琐发育仅以思路分享为主原理浅析从官方公告的细节不难看出，一是让我们删除sqlite驱动，二是限制相关路由的访问，关于路由其实是比较烦人的，这个系统在高版本其实都是基于注解做的配置，所以寻找起来会相对麻烦，通过一番查找我们不难发现在猥琐发育.web.controller.ReportRequestCompatibleService中在代码中不难...
+    ### [etw机制分析](https://xia0ji233.github.io/2024/07/08/etw/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-07-08
+
+    尝试做一做模拟类外挂检测鼠标-键盘模拟监控鼠标-键盘模拟外挂相较于直接读/写内存的外挂相比，更加安全和可靠，因为它本质还是模拟人去操作的，只要频率设置不过分，那么不管是客户端检测还是服务端检测都是难以察觉的，因此这几天在思考一个可以检测这类外挂的方案。ETWWindows (ETW) 的事件跟踪提供一种机制来跟踪和记录由用户模式应用程序和内核模式驱动程序引发的事件。 ETW 在 Windows 操...
     ### [浅析GeoServer property 表达式注入代码执行(CVE-2024-36401)](https://y4tacker.github.io/2024/07/03/year/2024/7/%E6%B5%85%E6%9E%90GeoServer-property-%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B3%A8%E5%85%A5%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C-CVE-2024-36401/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-07-03
 
@@ -133,25 +145,13 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-06-30
 
     c4f195e047c82f6832aad96b2b9ff0b06473ee6316a0ad546ce47ed7c55f3d2b3da5adb448e1093da0a53ef4866005d7d883c8217c7025cccd4f5ed01fcbbd0220e5e1cfea035436d835a63462858f54f192a02adbcf67627a966c546210ab06f242e1...
+    ### [Windows驱动开发（13）——shellcode查找](https://xia0ji233.github.io/2024/06/28/driver13/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-06-28
+
+    驱动层捕获无模块shellcode。这里学一手扫描 shellcode 的方法，题目来源于 2024 年的腾讯游戏安全竞赛的决赛。扫描shellcode主要方法是插中断扫栈和扫内存。这里调几个复现了的方法去讲，中断有 DPC，NMI，IPI 这几类。扫内存可以扫 BigPool，扫页表，扫物理内存。NMINMI (Non Maskable Interrupt)——不可屏蔽中断（即CPU不能屏蔽）无...
     ### [Apache OFBiz Authentication Bypass(CVE-2024-38856)](https://y4tacker.github.io/2024/06/23/year/2024/8/Apache-OFBiz-Authentication-Bypass-CVE-2024-38856/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-06-23
 
     写在前面​    自去年CVE-2023-51467爆出后，起初我是不太想再看这个系统了，但年初连续的三个权限绕过相关的CVE编号(CVE-2024-25065/CVE-2024-32113/CVE-2024-36104)又让我产生了好奇，随着对三个历史漏洞分析的过程中，我也发现这三个漏洞的影响面其实并没有特别严重，但思路值得学习(本质是低权限账号提权，利用前提是需要知道低权限账号的密码)，但随着...
-    ### [浅析Panalog-SQL注入到命令执行(Version<20240130)](https://y4tacker.github.io/2024/06/05/year/2024/6/%E6%B5%85%E6%9E%90Panalog-SQL%E6%B3%A8%E5%85%A5%E5%88%B0%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-Version-20240130/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-06-05
-
-    e0be8b9b97a0a946bbc3486ed27560158231b3162434d60e608073684a55034f261e783ff562d662dc8e982abf94fc31bebb038fd18a8a51b5e7719d04af116c3352828d6acf04d587ee8d1e5f301973e90f93f6259023c778a0dd1f15e88f46051123...
-    ### [ShowDocV3.2.5最新版SQL注入及老版本反序列化分析](https://y4tacker.github.io/2024/05/28/year/2024/5/ShowDocV3-2-5%E6%9C%80%E6%96%B0%E7%89%88SQL%E6%B3%A8%E5%85%A5%E5%8F%8A%E8%80%81%E7%89%88%E6%9C%AC%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%88%86%E6%9E%90/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-05-28
-
-    ShowDocV3.2.5最新版SQL注入及老版本反序列化分析注入从提交记录我们能找到一些提示https://github.com/star7th/showdoc/commit/805983518081660594d752573273b8fb5cbbdb30#diff-b4363835fc1321f859d1faaad5a5a283db695849ca98c4e949fbf1bed8c84a31首...
-    ### [浅析通天星CMSV6车载定位监控平台远程代码执行漏洞](https://y4tacker.github.io/2024/05/18/year/2024/5/%E6%B5%85%E6%9E%90%E9%80%9A%E5%A4%A9%E6%98%9FCMSV6%E8%BD%A6%E8%BD%BD%E5%AE%9A%E4%BD%8D%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-05-18
-
-    浅析通天星CMSV6车载定位监控平台远程代码执行漏洞写在前面看了一下通告看着还是比较有意思的，通天星CMSV6车载定位监控平台远程代码执行漏洞第一步是通过任意文件读取漏洞，读取log日志获取admin的session信息第二步通过默认密码登录ftp服务器上传文件(或通过后台任意文件上传漏洞)第三步触发上传文件中的恶意代码正文采用了经典SSH架构任意文件读取关于任意文件读取，从官方安全公告也不难看出...
-    ### [浅析H3C-CAS虚拟化管理系统权限绕过致文件上传漏洞](https://y4tacker.github.io/2024/05/11/year/2024/5/%E6%B5%85%E6%9E%90H3C-CAS%E8%99%9A%E6%8B%9F%E5%8C%96%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E8%87%B4%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-05-11
-
-    浅析H3C-CAS虚拟化管理系统权限绕过致文件上传漏洞写在前面之前四月就关注到了，可是后面不知道什么原因某步下了公众号，今天又被再次提起，当时分析了一半也就是权限相关的调用，现在补上另一半正文鉴权相关配置简析既然和权限绕过相关那么第一步我们必然要去先看看相关配置，在web.xml配置文件当中，可以看到相关的如下配置这里我们只要关注两点，第一servelet需要以/carsrs开头，第二配置文件在/...
 
 </div>
