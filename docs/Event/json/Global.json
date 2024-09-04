@@ -732,18 +732,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CISA ICS CTF 2024",
-        "比赛时间": "2024-09-01 01:00:00 - 2024-09-05 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2404.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.cisaicsctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/CTF_Drifveil_Logo-1.png",
-        "比赛权重": "0",
-        "赛事主办": "CISA ICSJWG (https://ctftime.org/team/182074)",
-        "比赛ID": "784",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "BlackHat MEA CTF Qualification 2024",
         "比赛时间": "2024-09-01 18:00:00 - 2024-09-02 17:59:59 UTC+8",
         "添加日历": "https://ctftime.org/event/2430.ics",
@@ -765,6 +753,18 @@
         "比赛权重": "0",
         "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
         "比赛ID": "1163",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "CISA ICS CTF 2024",
+        "比赛时间": "2024-09-01 01:00:00 - 2024-09-05 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2404.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.cisaicsctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/CTF_Drifveil_Logo-1.png",
+        "比赛权重": "0",
+        "赛事主办": "CISA ICSJWG (https://ctftime.org/team/182074)",
+        "比赛ID": "784",
         "比赛状态": "past"
     },
     {
@@ -1929,18 +1929,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Sejong City Hall (https://ctftime.org/team/214900)",
         "比赛ID": "903",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Dreamhack Invitational Quals 2024",
-        "比赛时间": "2024-04-27 08:00:00 - 2024-04-28 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2308.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dreamhack.io/ctf/518/",
-        "比赛标志": "https://ctftime.org/media/events/_mini_round_light2x.png",
-        "比赛权重": "0",
-        "赛事主办": "Theori (https://ctftime.org/team/250867)",
-        "比赛ID": "1090",
         "比赛状态": "past"
     }
 ]

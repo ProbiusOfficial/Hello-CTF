@@ -116,6 +116,15 @@ comments: true
     **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
     **添加日历** : https://ctftime.org/event/2465.ics  
     
+??? Quote "[CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)"  
+    [![](https://ctftime.org/media/events/CTF_Drifveil_Logo-1.png){ width="200" align=left }](https://ctf.cisaicsctf.com/)  
+    **比赛名称** : [CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-09-01 01:00:00 - 2024-09-05 00:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : CISA ICSJWG (https://ctftime.org/team/182074)  
+    **添加日历** : https://ctftime.org/event/2404.ics  
+    
 ??? Quote "[CyberSpace CTF 2024](https://2024.csc.tf/)"  
     [![](https://ctftime.org/media/events/f6b991673b1944e7b199bc978b3f0a15.png){ width="200" align=left }](https://2024.csc.tf/)  
     **比赛名称** : [CyberSpace CTF 2024](https://2024.csc.tf/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
     **添加日历** : https://ctftime.org/event/2286.ics  
-    
-??? Quote "[Dreamhack Invitational Quals 2024](https://dreamhack.io/ctf/518/)"  
-    [![](https://ctftime.org/media/events/_mini_round_light2x.png){ width="200" align=left }](https://dreamhack.io/ctf/518/)  
-    **比赛名称** : [Dreamhack Invitational Quals 2024](https://dreamhack.io/ctf/518/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-04-27 08:00:00 - 2024-04-28 08:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Theori (https://ctftime.org/team/250867)  
-    **添加日历** : https://ctftime.org/event/2308.ics  
     

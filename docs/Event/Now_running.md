@@ -49,12 +49,3 @@ comments: true
     **赛事主办** : VicOne Japan (https://ctftime.org/team/314349)  
     **添加日历** : https://ctftime.org/event/2473.ics  
     
-??? Quote "[CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)"  
-    [![](https://ctftime.org/media/events/CTF_Drifveil_Logo-1.png){ width="200" align=left }](https://ctf.cisaicsctf.com/)  
-    **比赛名称** : [CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-01 01:00:00 - 2024-09-05 00:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : CISA ICSJWG (https://ctftime.org/team/182074)  
-    **添加日历** : https://ctftime.org/event/2404.ics  
-    

@@ -903,15 +903,6 @@ hide:
                 **赛事主办** : VicOne Japan (https://ctftime.org/team/314349)  
                 **添加日历** : https://ctftime.org/event/2473.ics  
                 
-            ??? Quote "[CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)"  
-                [![](https://ctftime.org/media/events/CTF_Drifveil_Logo-1.png){ width="200" align=left }](https://ctf.cisaicsctf.com/)  
-                **比赛名称** : [CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-01 01:00:00 - 2024-09-05 00:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : CISA ICSJWG (https://ctftime.org/team/182074)  
-                **添加日历** : https://ctftime.org/event/2404.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[2024年辽宁大学研究生网络安全创新实践大赛](https://mp.weixin.qq.com/s?search_click_id=1419197875279398874-1721064257482-5560857333&__biz=MzkwODY4NjEwMA==&mid=2247483898&idx=2&sn=9e98fa0801ff04680dc13785de62ec59&chksm=c1d81e30983ce3afed49948819b79e7332489d251f75003da001e323b575dc6267a3f9b3c7c3&scene=7&subscene=10000&sessionid=1721062624&clicktime=1721064257&enterid=1721064257&ascene=65&fasttmpl_type=0&fasttmpl_fullversion=7295595-zh_CN-zip&fasttmpl_flag=0&realreporttime=1721064257512&devicetype=android-34&version=28002e34&nettype=WIFI&abtest_cookie=AAACAA==&lang=zh_CN&countrycode=CN&exportkey=n_ChQIAhIQcvD8xBlhKOyhNiXR+sSwhxLiAQIE97dBBAEAAAAAALJPGgdGHkcAAAAOpnltbLcz9gKNyK89dVj05OQmnZhmX5QxbgZxJq2kXOv2MdwjaAf3iVTLVGCcQUSG7VlEEpibGRWcgGV1BZpKtLcneOndlVFC2eMkTtAv8YTngrwgPTc44eKAtyGHcw9azAA/Lyju97FKSOW2D6eW7ZlNCG9gFS8WG6AcsPuxVr7PhVh4jtPz7vGomi56weNGB+8NjPr5ChEwlxJP+UN5C5JA5rUMV2rKtdZBeiASZdqEjpQcPvQmFzF6OVw0NHDUJ/bDftCImrDsZKo=&pass_ticket=kVxbyE61cIHqlon9l8MZfpuGMpxcldPEOp9u/xMr3MOyS4E0APheem2kMNVrm4dm&wx_header=3)"  
@@ -1023,6 +1014,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
                 **添加日历** : https://ctftime.org/event/2465.ics  
+                
+            ??? Quote "[CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)"  
+                [![](https://ctftime.org/media/events/CTF_Drifveil_Logo-1.png){ width="200" align=left }](https://ctf.cisaicsctf.com/)  
+                **比赛名称** : [CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-01 01:00:00 - 2024-09-05 00:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : CISA ICSJWG (https://ctftime.org/team/182074)  
+                **添加日历** : https://ctftime.org/event/2404.ics  
                 
             ??? Quote "[CyberSpace CTF 2024](https://2024.csc.tf/)"  
                 [![](https://ctftime.org/media/events/f6b991673b1944e7b199bc978b3f0a15.png){ width="200" align=left }](https://2024.csc.tf/)  
@@ -1896,15 +1896,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
                 **添加日历** : https://ctftime.org/event/2286.ics  
-                
-            ??? Quote "[Dreamhack Invitational Quals 2024](https://dreamhack.io/ctf/518/)"  
-                [![](https://ctftime.org/media/events/_mini_round_light2x.png){ width="200" align=left }](https://dreamhack.io/ctf/518/)  
-                **比赛名称** : [Dreamhack Invitational Quals 2024](https://dreamhack.io/ctf/518/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-27 08:00:00 - 2024-04-28 08:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Theori (https://ctftime.org/team/250867)  
-                **添加日历** : https://ctftime.org/event/2308.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
