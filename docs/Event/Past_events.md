@@ -89,13 +89,6 @@ comments: true
     **比赛时间** : 2024年07月14日 10:00 - 2024年07月14日 18:00  
     **其他说明** : QQ群：575413907  
     
-??? Quote "CTFshow-西瓜杯CTF"  
-    **比赛名称** : [CTFshow-西瓜杯CTF](https://ctf.show/)  
-    **比赛类型** : 个人赛  
-    **报名时间** : 2024年06月21日 09:30 - 2024年07月05日 19:00  
-    **比赛时间** : 2024年07月05日 20:00 - 2024年07月07日 20:00  
-    **其他说明** : QQ群：558694708  
-    
 
 ## 国际赛事
 ??? Quote "[BlackHat MEA CTF Qualification 2024](https://blackhatmea.com/capture-the-flag)"  
