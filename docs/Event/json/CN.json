@@ -3,6 +3,17 @@
     "data": {
         "result": [
             {
+                "name": "WMCTF 2024",
+                "link": "https://wmctf.wm-team.cn/",
+                "type": "团队赛 | 人数不限",
+                "bmks": "2024年08月14日 09:00",
+                "bmjz": "2024年09月09日 09:00",
+                "bsks": "2024年09月07日 09:00",
+                "bsjs": "2024年09月09日 09:00",
+                "readmore": "有多个联系方式，具体请在赛事网站查看",
+                "status": 1
+            },
+            {
                 "name": "2024'源鲁杯'高校网络安全技能大赛",
                 "link": "https://ctf.yuanloo.com/",
                 "type": "个人线上赛",
