@@ -798,7 +798,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "http://www.codegate.org/",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
         "比赛ID": "4",
         "比赛状态": "past"

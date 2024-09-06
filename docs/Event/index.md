@@ -1040,7 +1040,7 @@ hide:
                 **比赛名称** : [Codegate CTF 2024 Finals](http://www.codegate.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-08-29 09:00:00 - 2024-08-30 09:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 0.00  
                 **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
                 **添加日历** : https://ctftime.org/event/2347.ics  
                 
