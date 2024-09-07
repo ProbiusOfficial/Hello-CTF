@@ -5,13 +5,6 @@ comments: true
 
 ## 国内赛事
 
-??? Quote "WMCTF 2024"  
-    **比赛名称** : [WMCTF 2024](https://wmctf.wm-team.cn/)  
-    **比赛类型** : 团队赛 | 人数不限  
-    **报名时间** : 2024年08月14日 09:00 - 2024年09月09日 09:00  
-    **比赛时间** : 2024年09月07日 09:00 - 2024年09月09日 09:00  
-    **其他说明** : 有多个联系方式，具体请在赛事网站查看  
-    
 ??? Quote "2024'源鲁杯'高校网络安全技能大赛"  
     **比赛名称** : [2024'源鲁杯'高校网络安全技能大赛](https://ctf.yuanloo.com/)  
     **比赛类型** : 个人线上赛  
@@ -43,15 +36,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[WMCTF2024](https://wmctf.wm-team.cn/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://wmctf.wm-team.cn/)  
-    **比赛名称** : [WMCTF2024](https://wmctf.wm-team.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-07 09:00:00 - 2024-09-09 09:00:00 UTC+8  
-    **比赛权重** : 53.88  
-    **赛事主办** : W&M (https://ctftime.org/team/54666)  
-    **添加日历** : https://ctftime.org/event/2457.ics  
-    
 ??? Quote "[HackTheDrone CTF Qualifier](http://hackthedrone.org/eng/ctf.php)"  
     [![](https://ctftime.org/media/events/hackthedrone.png){ width="200" align=left }](http://hackthedrone.org/eng/ctf.php)  
     **比赛名称** : [HackTheDrone CTF Qualifier](http://hackthedrone.org/eng/ctf.php)  
