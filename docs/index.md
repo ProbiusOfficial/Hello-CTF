@@ -82,15 +82,6 @@ hide:
             **其他说明** : QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/  
                 
     === "国外比赛"
-        ??? Quote "[HackTheDrone CTF Qualifier](http://hackthedrone.org/eng/ctf.php)"  
-            [![](https://ctftime.org/media/events/hackthedrone.png){ width="200" align=left }](http://hackthedrone.org/eng/ctf.php)  
-            **比赛名称** : [HackTheDrone CTF Qualifier](http://hackthedrone.org/eng/ctf.php)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-09-07 12:00:00 - 2024-09-08 12:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : HackTheDrone (https://ctftime.org/team/337463)  
-            **添加日历** : https://ctftime.org/event/2474.ics  
-            
         ??? Quote "[snakeCTF 2024 Quals](https://2024.snakectf.org/)"  
             [![](https://ctftime.org/media/events/LogoCroppable_1.png){ width="200" align=left }](https://2024.snakectf.org/)  
             **比赛名称** : [snakeCTF 2024 Quals](https://2024.snakectf.org/)  
@@ -117,6 +108,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
             **添加日历** : https://ctftime.org/event/2451.ics  
+            
+        ??? Quote "[COMPFEST CTF 2024](https://ctf-mirror.compfest.id/)"  
+            [![](https://ctftime.org/media/events/Group_49363.png){ width="200" align=left }](https://ctf-mirror.compfest.id/)  
+            **比赛名称** : [COMPFEST CTF 2024](https://ctf-mirror.compfest.id/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-09-08 08:00:00 - 2024-09-09 08:00:00 UTC+8  
+            **比赛权重** : 43.00  
+            **赛事主办** : CSUI (https://ctftime.org/team/70551)  
+            **添加日历** : https://ctftime.org/event/2463.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
