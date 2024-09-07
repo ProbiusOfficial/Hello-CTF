@@ -36,15 +36,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[snakeCTF 2024 Quals](https://2024.snakectf.org/)"  
-    [![](https://ctftime.org/media/events/LogoCroppable_1.png){ width="200" align=left }](https://2024.snakectf.org/)  
-    **比赛名称** : [snakeCTF 2024 Quals](https://2024.snakectf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-07 16:00:00 - 2024-09-08 16:00:00 UTC+8  
-    **比赛权重** : 24.79  
-    **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
-    **添加日历** : https://ctftime.org/event/2418.ics  
-    
 ??? Quote "[Urmia CTF 2024](https://uctf.ir/)"  
     [![](https://ctftime.org/media/events/NewLogo_1.jpg){ width="200" align=left }](https://uctf.ir/)  
     **比赛名称** : [Urmia CTF 2024](https://uctf.ir/)  

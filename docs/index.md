@@ -82,15 +82,6 @@ hide:
             **其他说明** : QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/  
                 
     === "国外比赛"
-        ??? Quote "[snakeCTF 2024 Quals](https://2024.snakectf.org/)"  
-            [![](https://ctftime.org/media/events/LogoCroppable_1.png){ width="200" align=left }](https://2024.snakectf.org/)  
-            **比赛名称** : [snakeCTF 2024 Quals](https://2024.snakectf.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-09-07 16:00:00 - 2024-09-08 16:00:00 UTC+8  
-            **比赛权重** : 24.79  
-            **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
-            **添加日历** : https://ctftime.org/event/2418.ics  
-            
         ??? Quote "[Urmia CTF 2024](https://uctf.ir/)"  
             [![](https://ctftime.org/media/events/NewLogo_1.jpg){ width="200" align=left }](https://uctf.ir/)  
             **比赛名称** : [Urmia CTF 2024](https://uctf.ir/)  
@@ -117,6 +108,15 @@ hide:
             **比赛权重** : 43.00  
             **赛事主办** : CSUI (https://ctftime.org/team/70551)  
             **添加日历** : https://ctftime.org/event/2463.ics  
+            
+        ??? Quote "[Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)"  
+            [![](https://ctftime.org/media/events/zangi_2.png){ width="200" align=left }](https://dashboard.haruulzangi.mn/)  
+            **比赛名称** : [Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-09-13 12:00:00 - 2024-09-13 12:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
+            **添加日历** : https://ctftime.org/event/2476.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
