@@ -847,15 +847,6 @@ hide:
                 **赛事主办** : VicOne Japan (https://ctftime.org/team/314349)  
                 **添加日历** : https://ctftime.org/event/2473.ics  
                 
-            ??? Quote "[CSAW CTF Qualification Round 2024](https://ctf.csaw.io/)"  
-                [![](https://ctftime.org/media/events/CSAW.png){ width="200" align=left }](https://ctf.csaw.io/)  
-                **比赛名称** : [CSAW CTF Qualification Round 2024](https://ctf.csaw.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-07 00:00:00 - 2024-09-09 00:00:00 UTC+8  
-                **比赛权重** : 21.80  
-                **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
-                **添加日历** : https://ctftime.org/event/2398.ics  
-                
             ??? Quote "[WMCTF2024](https://wmctf.wm-team.cn/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://wmctf.wm-team.cn/)  
                 **比赛名称** : [WMCTF2024](https://wmctf.wm-team.cn/)  
@@ -997,6 +988,15 @@ hide:
                 **赛事主办** : HackTheDrone (https://ctftime.org/team/337463)  
                 **添加日历** : https://ctftime.org/event/2474.ics  
                 
+            ??? Quote "[CSAW CTF Qualification Round 2024](https://ctf.csaw.io/)"  
+                [![](https://ctftime.org/media/events/CSAW.png){ width="200" align=left }](https://ctf.csaw.io/)  
+                **比赛名称** : [CSAW CTF Qualification Round 2024](https://ctf.csaw.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-07 00:00:00 - 2024-09-09 00:00:00 UTC+8  
+                **比赛权重** : 21.80  
+                **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
+                **添加日历** : https://ctftime.org/event/2398.ics  
+                
             ??? Quote "[BlackHat MEA CTF Qualification 2024](https://blackhatmea.com/capture-the-flag)"  
                 [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
                 **比赛名称** : [BlackHat MEA CTF Qualification 2024](https://blackhatmea.com/capture-the-flag)  
@@ -1029,7 +1029,7 @@ hide:
                 **比赛名称** : [CyberSpace CTF 2024](https://2024.csc.tf/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-08-31 00:00:00 - 2024-09-02 00:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 24.80  
                 **赛事主办** : CyberSpace (https://ctftime.org/team/116280)  
                 **添加日历** : https://ctftime.org/event/2428.ics  
                 
@@ -1860,15 +1860,6 @@ hide:
                 **比赛权重** : 37.00  
                 **赛事主办** : Midnight Flag - BACKSLASH (https://ctftime.org/team/179110)  
                 **添加日历** : https://ctftime.org/event/2295.ics  
-                
-            ??? Quote "[AirOverflow CTF - 2024](https://ctf.airoverflow.com/)"  
-                [![](https://ctftime.org/media/events/Cropped_-_No_Name.png){ width="200" align=left }](https://ctf.airoverflow.com/)  
-                **比赛名称** : [AirOverflow CTF - 2024](https://ctf.airoverflow.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-27 20:00:00 - 2024-04-29 04:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : AirOverFlow (https://ctftime.org/team/140448)  
-                **添加日历** : https://ctftime.org/event/2360.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

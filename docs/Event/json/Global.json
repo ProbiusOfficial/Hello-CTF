@@ -648,18 +648,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CSAW CTF Qualification Round 2024",
-        "比赛时间": "2024-09-07 00:00:00 - 2024-09-09 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2398.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.csaw.io/",
-        "比赛标志": "https://ctftime.org/media/events/CSAW.png",
-        "比赛权重": "21.80",
-        "赛事主办": "NYUSEC (https://ctftime.org/team/439)",
-        "比赛ID": "18",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "WMCTF2024",
         "比赛时间": "2024-09-07 09:00:00 - 2024-09-09 09:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2457.ics",
@@ -732,6 +720,18 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "CSAW CTF Qualification Round 2024",
+        "比赛时间": "2024-09-07 00:00:00 - 2024-09-09 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2398.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.csaw.io/",
+        "比赛标志": "https://ctftime.org/media/events/CSAW.png",
+        "比赛权重": "21.80",
+        "赛事主办": "NYUSEC (https://ctftime.org/team/439)",
+        "比赛ID": "18",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "BlackHat MEA CTF Qualification 2024",
         "比赛时间": "2024-09-01 18:00:00 - 2024-09-02 17:59:59 UTC+8",
         "添加日历": "https://ctftime.org/event/2430.ics",
@@ -774,7 +774,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://2024.csc.tf/",
         "比赛标志": "https://ctftime.org/media/events/f6b991673b1944e7b199bc978b3f0a15.png",
-        "比赛权重": "0",
+        "比赛权重": "24.80",
         "赛事主办": "CyberSpace (https://ctftime.org/team/116280)",
         "比赛ID": "1147",
         "比赛状态": "past"
@@ -1881,18 +1881,6 @@
         "比赛权重": "37.00",
         "赛事主办": "Midnight Flag - BACKSLASH (https://ctftime.org/team/179110)",
         "比赛ID": "761",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "AirOverflow CTF - 2024",
-        "比赛时间": "2024-04-27 20:00:00 - 2024-04-29 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2360.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.airoverflow.com/",
-        "比赛标志": "https://ctftime.org/media/events/Cropped_-_No_Name.png",
-        "比赛权重": "25.00",
-        "赛事主办": "AirOverFlow (https://ctftime.org/team/140448)",
-        "比赛ID": "1113",
         "比赛状态": "past"
     }
 ]

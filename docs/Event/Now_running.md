@@ -56,15 +56,6 @@ comments: true
     **赛事主办** : VicOne Japan (https://ctftime.org/team/314349)  
     **添加日历** : https://ctftime.org/event/2473.ics  
     
-??? Quote "[CSAW CTF Qualification Round 2024](https://ctf.csaw.io/)"  
-    [![](https://ctftime.org/media/events/CSAW.png){ width="200" align=left }](https://ctf.csaw.io/)  
-    **比赛名称** : [CSAW CTF Qualification Round 2024](https://ctf.csaw.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-07 00:00:00 - 2024-09-09 00:00:00 UTC+8  
-    **比赛权重** : 21.80  
-    **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
-    **添加日历** : https://ctftime.org/event/2398.ics  
-    
 ??? Quote "[WMCTF2024](https://wmctf.wm-team.cn/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://wmctf.wm-team.cn/)  
     **比赛名称** : [WMCTF2024](https://wmctf.wm-team.cn/)  
