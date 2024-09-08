@@ -337,15 +337,6 @@ hide:
                 **其他说明** : QQ群：676547374 或 566180593  
                 
         === "国外赛事"
-            ??? Quote "[COMPFEST CTF 2024](https://ctf-mirror.compfest.id/)"  
-                [![](https://ctftime.org/media/events/Group_49363.png){ width="200" align=left }](https://ctf-mirror.compfest.id/)  
-                **比赛名称** : [COMPFEST CTF 2024](https://ctf-mirror.compfest.id/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-08 08:00:00 - 2024-09-09 08:00:00 UTC+8  
-                **比赛权重** : 43.00  
-                **赛事主办** : CSUI (https://ctftime.org/team/70551)  
-                **添加日历** : https://ctftime.org/event/2463.ics  
-                
             ??? Quote "[Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)"  
                 [![](https://ctftime.org/media/events/zangi_2.png){ width="200" align=left }](https://dashboard.haruulzangi.mn/)  
                 **比赛名称** : [Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)  
@@ -900,6 +891,15 @@ hide:
                 **比赛权重** : 24.27  
                 **赛事主办** : UCG (https://ctftime.org/team/255103)  
                 **添加日历** : https://ctftime.org/event/2460.ics  
+                
+            ??? Quote "[COMPFEST CTF 2024](https://ctf-mirror.compfest.id/)"  
+                [![](https://ctftime.org/media/events/Group_49363.png){ width="200" align=left }](https://ctf-mirror.compfest.id/)  
+                **比赛名称** : [COMPFEST CTF 2024](https://ctf-mirror.compfest.id/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-08 08:00:00 - 2024-09-09 08:00:00 UTC+8  
+                **比赛权重** : 43.00  
+                **赛事主办** : CSUI (https://ctftime.org/team/70551)  
+                **添加日历** : https://ctftime.org/event/2463.ics  
                 
     === "*已经结束*"
         === "国内赛事"
