@@ -865,15 +865,6 @@ hide:
                 **赛事主办** : W&M (https://ctftime.org/team/54666)  
                 **添加日历** : https://ctftime.org/event/2457.ics  
                 
-            ??? Quote "[HackTheDrone CTF Qualifier](http://hackthedrone.org/eng/ctf.php)"  
-                [![](https://ctftime.org/media/events/hackthedrone.png){ width="200" align=left }](http://hackthedrone.org/eng/ctf.php)  
-                **比赛名称** : [HackTheDrone CTF Qualifier](http://hackthedrone.org/eng/ctf.php)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-07 12:00:00 - 2024-09-08 12:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : HackTheDrone (https://ctftime.org/team/337463)  
-                **添加日历** : https://ctftime.org/event/2474.ics  
-                
             ??? Quote "[snakeCTF 2024 Quals](https://2024.snakectf.org/)"  
                 [![](https://ctftime.org/media/events/LogoCroppable_1.png){ width="200" align=left }](https://2024.snakectf.org/)  
                 **比赛名称** : [snakeCTF 2024 Quals](https://2024.snakectf.org/)  
@@ -996,6 +987,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
                 **添加日历** : https://ctftime.org/event/2451.ics  
+                
+            ??? Quote "[HackTheDrone CTF Qualifier](http://hackthedrone.org/eng/ctf.php)"  
+                [![](https://ctftime.org/media/events/hackthedrone.png){ width="200" align=left }](http://hackthedrone.org/eng/ctf.php)  
+                **比赛名称** : [HackTheDrone CTF Qualifier](http://hackthedrone.org/eng/ctf.php)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-07 12:00:00 - 2024-09-08 12:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : HackTheDrone (https://ctftime.org/team/337463)  
+                **添加日历** : https://ctftime.org/event/2474.ics  
                 
             ??? Quote "[BlackHat MEA CTF Qualification 2024](https://blackhatmea.com/capture-the-flag)"  
                 [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
@@ -1878,15 +1878,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
                 **添加日历** : https://ctftime.org/event/2362.ics  
-                
-            ??? Quote "[UrchinSec Tanzania National CTF MMXXIV](https://ctf.urchinsec.com/)"  
-                [![](https://ctftime.org/media/events/TkH-DDqG_400x400.png){ width="200" align=left }](https://ctf.urchinsec.com/)  
-                **比赛名称** : [UrchinSec Tanzania National CTF MMXXIV](https://ctf.urchinsec.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-27 15:30:00 - 2024-04-29 03:30:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : UrchinSec (https://ctftime.org/team/175663)  
-                **添加日历** : https://ctftime.org/event/2327.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
