@@ -612,6 +612,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "N0PSctf",
+        "比赛时间": "2025-05-31 16:00:00 - 2025-06-02 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2486.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.nops.re/",
+        "比赛标志": "https://ctftime.org/media/events/logo-news.png",
+        "比赛权重": "24.30",
+        "赛事主办": "NOPS (https://ctftime.org/team/4056)",
+        "比赛ID": "1114",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Sydbox CTF: read /etc/CTF",
         "比赛时间": "2023-11-16 22:26:32 - 2024-11-16 22:26:32 UTC+8",
         "添加日历": "https://ctftime.org/event/2178.ics",
