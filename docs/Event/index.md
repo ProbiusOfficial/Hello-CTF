@@ -822,15 +822,6 @@ hide:
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
                 
-            ??? Quote "[Block Harbor VicOne Automotive CTF - Season 2](https://ctf.blockharbor.io/)"  
-                [![](https://ctftime.org/media/events/blockharbor.jpg){ width="200" align=left }](https://ctf.blockharbor.io/)  
-                **比赛名称** : [Block Harbor VicOne Automotive CTF - Season 2](https://ctf.blockharbor.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-08-24 22:00:00 - 2024-09-09 10:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : bhctf (https://ctftime.org/team/251542)  
-                **添加日历** : https://ctftime.org/event/2387.ics  
-                
             ??? Quote "[Automotive CTF Japan 2024](https://vicone.com/jp/automotive-ctf)"  
                 [![](https://ctftime.org/media/events/7471ff863b474b2db4fdb2f0b8086302.png){ width="200" align=left }](https://vicone.com/jp/automotive-ctf)  
                 **比赛名称** : [Automotive CTF Japan 2024](https://vicone.com/jp/automotive-ctf)  
@@ -1059,6 +1050,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : YCF (https://ctftime.org/team/179685)  
                 **添加日历** : https://ctftime.org/event/2468.ics  
+                
+            ??? Quote "[Block Harbor VicOne Automotive CTF - Season 2](https://ctf.blockharbor.io/)"  
+                [![](https://ctftime.org/media/events/blockharbor.jpg){ width="200" align=left }](https://ctf.blockharbor.io/)  
+                **比赛名称** : [Block Harbor VicOne Automotive CTF - Season 2](https://ctf.blockharbor.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-08-24 22:00:00 - 2024-09-09 10:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : bhctf (https://ctftime.org/team/251542)  
+                **添加日历** : https://ctftime.org/event/2387.ics  
                 
             ??? Quote "[DASCTF2024 August Back-to-School Season](https://buuoj.cn/match/matches/209)"  
                 [![](https://ctftime.org/media/events/Dingtalk_20240814101134.jpg){ width="200" align=left }](https://buuoj.cn/match/matches/209)  
@@ -1833,15 +1833,6 @@ hide:
                 **比赛权重** : 20.72  
                 **赛事主办** : cR4.sh (https://ctftime.org/team/224675)  
                 **添加日历** : https://ctftime.org/event/2367.ics  
-                
-            ??? Quote "[Cybercoliseum Ⅲ](https://cybercoliseum.codeby.games/en)"  
-                [![](https://ctftime.org/media/events/logo-cdb.png){ width="200" align=left }](https://cybercoliseum.codeby.games/en)  
-                **比赛名称** : [Cybercoliseum Ⅲ](https://cybercoliseum.codeby.games/en)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-04-28 15:00:00 - 2024-04-30 03:00:00 UTC+8  
-                **比赛权重** : 20.95  
-                **赛事主办** : Codeby Games (https://ctftime.org/team/299486)  
-                **添加日历** : https://ctftime.org/event/2341.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
