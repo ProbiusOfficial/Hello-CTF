@@ -648,18 +648,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "WMCTF2024",
-        "比赛时间": "2024-09-07 09:00:00 - 2024-09-09 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2457.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://wmctf.wm-team.cn/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "53.88",
-        "赛事主办": "W&M (https://ctftime.org/team/54666)",
-        "比赛ID": "356",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Urmia CTF 2024",
         "比赛时间": "2024-09-07 20:00:00 - 2024-09-09 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2460.ics",
@@ -681,7 +669,7 @@
         "比赛权重": "43.00",
         "赛事主办": "CSUI (https://ctftime.org/team/70551)",
         "比赛ID": "502",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "DFIR Labs CTF by The DFIR Report",
@@ -717,6 +705,18 @@
         "比赛权重": "0",
         "赛事主办": "HackTheDrone (https://ctftime.org/team/337463)",
         "比赛ID": "1165",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "WMCTF2024",
+        "比赛时间": "2024-09-07 09:00:00 - 2024-09-09 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2457.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://wmctf.wm-team.cn/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "53.88",
+        "赛事主办": "W&M (https://ctftime.org/team/54666)",
+        "比赛ID": "356",
         "比赛状态": "past"
     },
     {
@@ -774,7 +774,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://2024.csc.tf/",
         "比赛标志": "https://ctftime.org/media/events/f6b991673b1944e7b199bc978b3f0a15.png",
-        "比赛权重": "24.80",
+        "比赛权重": "24.83",
         "赛事主办": "CyberSpace (https://ctftime.org/team/116280)",
         "比赛ID": "1147",
         "比赛状态": "past"
@@ -846,7 +846,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.idek.team/",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "52.13",
+        "比赛权重": "52.18",
         "赛事主办": "idek (https://ctftime.org/team/157039)",
         "比赛ID": "700",
         "比赛状态": "past"
@@ -1062,7 +1062,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.os.ftp.sh/",
         "比赛标志": "https://ctftime.org/media/events/os_ctf_logo.png",
-        "比赛权重": "22.80",
+        "比赛权重": "22.86",
         "赛事主办": "OSCTF (https://ctftime.org/team/307415)",
         "比赛ID": "1144",
         "比赛状态": "past"
@@ -1857,30 +1857,6 @@
         "比赛权重": "20.95",
         "赛事主办": "Codeby Games (https://ctftime.org/team/299486)",
         "比赛ID": "923",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CyberSphere CTF - 2024",
-        "比赛时间": "2024-04-28 05:00:00 - 2024-04-28 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2328.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://securinets.tn/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Securinets (https://ctftime.org/team/5084)",
-        "比赛ID": "1091",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Midnight Flag - Operation BACKSLASH",
-        "比赛时间": "2024-04-28 04:00:00 - 2024-04-28 15:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2295.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfd.midnightflag.fr/",
-        "比赛标志": "https://ctftime.org/media/events/logo-3848x3084-upscaled.png",
-        "比赛权重": "37.00",
-        "赛事主办": "Midnight Flag - BACKSLASH (https://ctftime.org/team/179110)",
-        "比赛ID": "761",
         "比赛状态": "past"
     }
 ]

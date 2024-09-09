@@ -5,13 +5,6 @@ comments: true
 
 ## 国内赛事
 
-??? Quote "WMCTF 2024"  
-    **比赛名称** : [WMCTF 2024](https://wmctf.wm-team.cn/)  
-    **比赛类型** : 团队赛 | 人数不限  
-    **报名时间** : 2024年08月14日 09:00 - 2024年09月09日 09:00  
-    **比赛时间** : 2024年09月07日 09:00 - 2024年09月09日 09:00  
-    **其他说明** : 有多个联系方式，具体请在赛事网站查看  
-    
 ??? Quote "BaseCTF 2024 高校联合新生赛"  
     **比赛名称** : [BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)  
     **比赛类型** : 1-2 人  
@@ -56,15 +49,6 @@ comments: true
     **赛事主办** : VicOne Japan (https://ctftime.org/team/314349)  
     **添加日历** : https://ctftime.org/event/2473.ics  
     
-??? Quote "[WMCTF2024](https://wmctf.wm-team.cn/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://wmctf.wm-team.cn/)  
-    **比赛名称** : [WMCTF2024](https://wmctf.wm-team.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-07 09:00:00 - 2024-09-09 09:00:00 UTC+8  
-    **比赛权重** : 53.88  
-    **赛事主办** : W&M (https://ctftime.org/team/54666)  
-    **添加日历** : https://ctftime.org/event/2457.ics  
-    
 ??? Quote "[Urmia CTF 2024](https://uctf.ir/)"  
     [![](https://ctftime.org/media/events/NewLogo_1.jpg){ width="200" align=left }](https://uctf.ir/)  
     **比赛名称** : [Urmia CTF 2024](https://uctf.ir/)  
@@ -73,13 +57,4 @@ comments: true
     **比赛权重** : 24.27  
     **赛事主办** : UCG (https://ctftime.org/team/255103)  
     **添加日历** : https://ctftime.org/event/2460.ics  
-    
-??? Quote "[COMPFEST CTF 2024](https://ctf-mirror.compfest.id/)"  
-    [![](https://ctftime.org/media/events/Group_49363.png){ width="200" align=left }](https://ctf-mirror.compfest.id/)  
-    **比赛名称** : [COMPFEST CTF 2024](https://ctf-mirror.compfest.id/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-08 08:00:00 - 2024-09-09 08:00:00 UTC+8  
-    **比赛权重** : 43.00  
-    **赛事主办** : CSUI (https://ctftime.org/team/70551)  
-    **添加日历** : https://ctftime.org/event/2463.ics  
     
