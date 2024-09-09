@@ -40,12 +40,3 @@ comments: true
     **赛事主办** : VicOne Japan (https://ctftime.org/team/314349)  
     **添加日历** : https://ctftime.org/event/2473.ics  
     
-??? Quote "[Urmia CTF 2024](https://uctf.ir/)"  
-    [![](https://ctftime.org/media/events/NewLogo_1.jpg){ width="200" align=left }](https://uctf.ir/)  
-    **比赛名称** : [Urmia CTF 2024](https://uctf.ir/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-07 20:00:00 - 2024-09-09 20:00:00 UTC+8  
-    **比赛权重** : 24.27  
-    **赛事主办** : UCG (https://ctftime.org/team/255103)  
-    **添加日历** : https://ctftime.org/event/2460.ics  
-    

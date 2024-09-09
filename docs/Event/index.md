@@ -840,15 +840,6 @@ hide:
                 **赛事主办** : VicOne Japan (https://ctftime.org/team/314349)  
                 **添加日历** : https://ctftime.org/event/2473.ics  
                 
-            ??? Quote "[Urmia CTF 2024](https://uctf.ir/)"  
-                [![](https://ctftime.org/media/events/NewLogo_1.jpg){ width="200" align=left }](https://uctf.ir/)  
-                **比赛名称** : [Urmia CTF 2024](https://uctf.ir/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-07 20:00:00 - 2024-09-09 20:00:00 UTC+8  
-                **比赛权重** : 24.27  
-                **赛事主办** : UCG (https://ctftime.org/team/255103)  
-                **添加日历** : https://ctftime.org/event/2460.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[WMCTF 2024](https://wmctf.wm-team.cn/)"  
@@ -960,6 +951,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
                 **添加日历** : https://ctftime.org/event/2451.ics  
+                
+            ??? Quote "[Urmia CTF 2024](https://uctf.ir/)"  
+                [![](https://ctftime.org/media/events/NewLogo_1.jpg){ width="200" align=left }](https://uctf.ir/)  
+                **比赛名称** : [Urmia CTF 2024](https://uctf.ir/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-07 20:00:00 - 2024-09-09 20:00:00 UTC+8  
+                **比赛权重** : 24.27  
+                **赛事主办** : UCG (https://ctftime.org/team/255103)  
+                **添加日历** : https://ctftime.org/event/2460.ics  
                 
             ??? Quote "[snakeCTF 2024 Quals](https://2024.snakectf.org/)"  
                 [![](https://ctftime.org/media/events/LogoCroppable_1.png){ width="200" align=left }](https://2024.snakectf.org/)  
@@ -1833,15 +1833,6 @@ hide:
                 **比赛权重** : 36.00  
                 **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
                 **添加日历** : https://ctftime.org/event/2246.ics  
-                
-            ??? Quote "[MireaCTF Quals 2024](https://spring.mireactf.ru/)"  
-                [![](https://ctftime.org/media/events/image_2024-04-26_00-28-23.png){ width="200" align=left }](https://spring.mireactf.ru/)  
-                **比赛名称** : [MireaCTF Quals 2024](https://spring.mireactf.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-01 16:00:00 - 2024-05-02 00:00:00 UTC+8  
-                **比赛权重** : 20.72  
-                **赛事主办** : cR4.sh (https://ctftime.org/team/224675)  
-                **添加日历** : https://ctftime.org/event/2367.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
