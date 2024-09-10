@@ -636,18 +636,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Automotive CTF Japan 2024",
-        "比赛时间": "2024-08-25 08:00:00 - 2024-09-10 07:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2473.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://vicone.com/jp/automotive-ctf",
-        "比赛标志": "https://ctftime.org/media/events/7471ff863b474b2db4fdb2f0b8086302.png",
-        "比赛权重": "0",
-        "赛事主办": "VicOne Japan (https://ctftime.org/team/314349)",
-        "比赛ID": "1159",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "COMPFEST CTF 2024",
         "比赛时间": "2024-09-08 08:00:00 - 2024-09-09 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2463.ics",
@@ -801,6 +789,18 @@
         "比赛权重": "0.00",
         "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
         "比赛ID": "4",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Automotive CTF Japan 2024",
+        "比赛时间": "2024-08-25 08:00:00 - 2024-09-10 07:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2473.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://vicone.com/jp/automotive-ctf",
+        "比赛标志": "https://ctftime.org/media/events/7471ff863b474b2db4fdb2f0b8086302.png",
+        "比赛权重": "0",
+        "赛事主办": "VicOne Japan (https://ctftime.org/team/314349)",
+        "比赛ID": "1159",
         "比赛状态": "past"
     },
     {
@@ -1833,18 +1833,6 @@
         "比赛权重": "77.38",
         "赛事主办": "Nautilus Institute (https://ctftime.org/team/181536)",
         "比赛ID": "1",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "LakeCTF Finals 23",
-        "比赛时间": "2024-05-03 16:00:00 - 2024-05-04 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2246.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://lakectf.epfl.ch/",
-        "比赛标志": "https://ctftime.org/media/events/lakeCTFLogo.png",
-        "比赛权重": "36.00",
-        "赛事主办": "polygl0ts (https://ctftime.org/team/53791)",
-        "比赛ID": "818",
         "比赛状态": "past"
     }
 ]
