@@ -193,7 +193,7 @@ comments: true
     **比赛名称** : [CyberSpace CTF 2024](https://2024.csc.tf/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-08-31 00:00:00 - 2024-09-02 00:00:00 UTC+8  
-    **比赛权重** : 24.84  
+    **比赛权重** : 24.85  
     **赛事主办** : CyberSpace (https://ctftime.org/team/116280)  
     **添加日历** : https://ctftime.org/event/2428.ics  
     
@@ -265,7 +265,7 @@ comments: true
     **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-08-17 08:00:00 - 2024-08-19 08:00:00 UTC+8  
-    **比赛权重** : 52.07  
+    **比赛权重** : 52.11  
     **赛事主办** : idek (https://ctftime.org/team/157039)  
     **添加日历** : https://ctftime.org/event/2304.ics  
     
