@@ -329,13 +329,6 @@ hide:
                 **比赛时间** : 2024年09月25日 00:00 - 2024年09月25日 23:59  
                 **其他说明** : QQ群: 794148708|仅限研究生参加  
                 
-            ??? Quote "[第五届“闽盾杯”网络空间安全大塞黑盾全国大学生赛道（决赛）](http://heidunbei.si.net.cn/hdc/cover)"  
-                **比赛名称** : [第五届“闽盾杯”网络空间安全大塞黑盾全国大学生赛道（决赛）](http://heidunbei.si.net.cn/hdc/cover)  
-                **比赛类型** : 团队赛|3人  
-                **报名时间** : 2024年06月26日 10:35 - 2024年06月26日 10:35  
-                **比赛时间** : 2024年09月13日 00:00 - 2024年09月13日 23:59  
-                **其他说明** : QQ群：676547374 或 566180593  
-                
         === "国外赛事"
             ??? Quote "[Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)"  
                 [![](https://ctftime.org/media/events/zangi_2.png){ width="200" align=left }](https://dashboard.haruulzangi.mn/)  
@@ -807,6 +800,13 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
+            ??? Quote "[第五届“闽盾杯”网络空间安全大塞黑盾全国大学生赛道（决赛）](http://heidunbei.si.net.cn/hdc/cover)"  
+                **比赛名称** : [第五届“闽盾杯”网络空间安全大塞黑盾全国大学生赛道（决赛）](http://heidunbei.si.net.cn/hdc/cover)  
+                **比赛类型** : 团队赛|3人  
+                **报名时间** : 2024年06月26日 10:35 - 2024年06月26日 10:35  
+                **比赛时间** : 2024年09月13日 00:00 - 2024年09月13日 23:59  
+                **其他说明** : QQ群：676547374 或 566180593  
+                
             ??? Quote "[BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)"  
                 **比赛名称** : [BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)  
                 **比赛类型** : 1-2 人  
