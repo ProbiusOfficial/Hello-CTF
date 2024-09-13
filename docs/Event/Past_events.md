@@ -91,6 +91,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)"  
+    [![](https://ctftime.org/media/events/zangi_2.png){ width="200" align=left }](https://dashboard.haruulzangi.mn/)  
+    **比赛名称** : [Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-09-13 12:00:00 - 2024-09-13 12:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
+    **添加日历** : https://ctftime.org/event/2476.ics  
+    
 ??? Quote "[COMPFEST CTF 2024](https://ctf-mirror.compfest.id/)"  
     [![](https://ctftime.org/media/events/Group_49363.png){ width="200" align=left }](https://ctf-mirror.compfest.id/)  
     **比赛名称** : [COMPFEST CTF 2024](https://ctf-mirror.compfest.id/)  
@@ -981,13 +990,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
     **添加日历** : https://ctftime.org/event/2357.ics  
-    
-??? Quote "[DEF CON CTF Qualifier 2024](https://nautilus.institute/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://nautilus.institute/)  
-    **比赛名称** : [DEF CON CTF Qualifier 2024](https://nautilus.institute/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-04 08:00:00 - 2024-05-06 08:00:00 UTC+8  
-    **比赛权重** : 77.38  
-    **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
-    **添加日历** : https://ctftime.org/event/2229.ics  
     

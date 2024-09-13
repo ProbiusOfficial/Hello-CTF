@@ -75,15 +75,6 @@ hide:
             **其他说明** : QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/  
                 
     === "国外比赛"
-        ??? Quote "[Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)"  
-            [![](https://ctftime.org/media/events/zangi_2.png){ width="200" align=left }](https://dashboard.haruulzangi.mn/)  
-            **比赛名称** : [Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-09-13 12:00:00 - 2024-09-13 12:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
-            **添加日历** : https://ctftime.org/event/2476.ics  
-            
         ??? Quote "[MOCA CTF - Finals](https://moca.camp/ctf/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://moca.camp/ctf/)  
             **比赛名称** : [MOCA CTF - Finals](https://moca.camp/ctf/)  
@@ -110,6 +101,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : RSTCON (https://ctftime.org/team/281202)  
             **添加日历** : https://ctftime.org/event/2427.ics  
+            
+        ??? Quote "[jailCTF 2024](https://ctf.pyjail.club/)"  
+            [![](https://ctftime.org/media/events/jailctf150.png){ width="200" align=left }](https://ctf.pyjail.club/)  
+            **比赛名称** : [jailCTF 2024](https://ctf.pyjail.club/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-09-14 04:00:00 - 2024-09-17 04:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : jailctf (https://ctftime.org/team/311088)  
+            **添加日历** : https://ctftime.org/event/2450.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
