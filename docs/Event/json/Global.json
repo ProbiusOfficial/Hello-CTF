@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Haruulzangi CTF 2024 Qualifier",
-        "比赛时间": "2024-09-13 12:00:00 - 2024-09-13 12:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2476.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dashboard.haruulzangi.mn/",
-        "比赛标志": "https://ctftime.org/media/events/zangi_2.png",
-        "比赛权重": "0.00",
-        "赛事主办": "haruulzangi-organizers (https://ctftime.org/team/266812)",
-        "比赛ID": "985",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "MOCA CTF - Finals",
         "比赛时间": "2024-09-14 00:00:00 - 2024-09-15 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2294.ics",
@@ -634,6 +622,18 @@
         "赛事主办": "Exherbo GNU/Linux (https://ctftime.org/team/275214)",
         "比赛ID": "1027",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Haruulzangi CTF 2024 Qualifier",
+        "比赛时间": "2024-09-13 12:00:00 - 2024-09-13 12:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2476.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://dashboard.haruulzangi.mn/",
+        "比赛标志": "https://ctftime.org/media/events/zangi_2.png",
+        "比赛权重": "0",
+        "赛事主办": "haruulzangi-organizers (https://ctftime.org/team/266812)",
+        "比赛ID": "985",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "COMPFEST CTF 2024",
@@ -1821,18 +1821,6 @@
         "比赛权重": "0.00",
         "赛事主办": "BSidesSF (https://ctftime.org/team/54737)",
         "比赛ID": "252",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DEF CON CTF Qualifier 2024",
-        "比赛时间": "2024-05-04 08:00:00 - 2024-05-06 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2229.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nautilus.institute/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "77.38",
-        "赛事主办": "Nautilus Institute (https://ctftime.org/team/181536)",
-        "比赛ID": "1",
         "比赛状态": "past"
     }
 ]
