@@ -5,13 +5,6 @@ comments: true
 
 ## 国内赛事
 
-??? Quote "第五届“闽盾杯”网络空间安全大塞黑盾全国大学生赛道（决赛）"  
-    **比赛名称** : [第五届“闽盾杯”网络空间安全大塞黑盾全国大学生赛道（决赛）](http://heidunbei.si.net.cn/hdc/cover)  
-    **比赛类型** : 团队赛|3人  
-    **报名时间** : 2024年06月26日 10:35 - 2024年06月26日 10:35  
-    **比赛时间** : 2024年09月13日 00:00 - 2024年09月13日 23:59  
-    **其他说明** : QQ群：676547374 或 566180593  
-    
 ??? Quote "BaseCTF 2024 高校联合新生赛"  
     **比赛名称** : [BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)  
     **比赛类型** : 1-2 人  
@@ -37,4 +30,22 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
+    
+??? Quote "[MOCA CTF - Finals](https://moca.camp/ctf/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://moca.camp/ctf/)  
+    **比赛名称** : [MOCA CTF - Finals](https://moca.camp/ctf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-09-14 00:00:00 - 2024-09-15 00:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
+    **添加日历** : https://ctftime.org/event/2294.ics  
+    
+??? Quote "[m0leCon CTF 2025 Teaser](https://ctf.m0lecon.it/)"  
+    [![](https://ctftime.org/media/events/ctftime_2025.png){ width="200" align=left }](https://ctf.m0lecon.it/)  
+    **比赛名称** : [m0leCon CTF 2025 Teaser](https://ctf.m0lecon.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-09-14 01:00:00 - 2024-09-15 01:00:00 UTC+8  
+    **比赛权重** : 80.00  
+    **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
+    **添加日历** : https://ctftime.org/event/2440.ics  
     
