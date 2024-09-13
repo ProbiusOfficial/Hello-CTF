@@ -75,24 +75,6 @@ hide:
             **其他说明** : QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/  
                 
     === "国外比赛"
-        ??? Quote "[RSTCON 2024 CTF (Online/Hybrid)](https://metactf.com/join/rstcon24)"  
-            [![](https://ctftime.org/media/events/rstcon.png){ width="200" align=left }](https://metactf.com/join/rstcon24)  
-            **比赛名称** : [RSTCON 2024 CTF (Online/Hybrid)](https://metactf.com/join/rstcon24)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-09-14 03:45:00 - 2024-09-16 00:45:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : RSTCON (https://ctftime.org/team/281202)  
-            **添加日历** : https://ctftime.org/event/2427.ics  
-            
-        ??? Quote "[jailCTF 2024](https://ctf.pyjail.club/)"  
-            [![](https://ctftime.org/media/events/jailctf150.png){ width="200" align=left }](https://ctf.pyjail.club/)  
-            **比赛名称** : [jailCTF 2024](https://ctf.pyjail.club/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-09-14 04:00:00 - 2024-09-17 04:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : jailctf (https://ctftime.org/team/311088)  
-            **添加日历** : https://ctftime.org/event/2450.ics  
-            
         ??? Quote "[KubanCTF Qualifier 2024](https://kubanctf.ru/signUp)"  
             [![](https://ctftime.org/media/events/0f5e680946259ad6bbdf28ccb33b74e9.png){ width="200" align=left }](https://kubanctf.ru/signUp)  
             **比赛名称** : [KubanCTF Qualifier 2024](https://kubanctf.ru/signUp)  
@@ -110,6 +92,24 @@ hide:
             **比赛权重** : 95.59  
             **赛事主办** : Securinets (https://ctftime.org/team/5084)  
             **添加日历** : https://ctftime.org/event/2410.ics  
+            
+        ??? Quote "[AlpacaHack Round 3 (Crypto)](https://alpacahack.com/ctfs/round-3)"  
+            [![](https://ctftime.org/media/events/dark_512_1.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-3)  
+            **比赛名称** : [AlpacaHack Round 3 (Crypto)](https://alpacahack.com/ctfs/round-3)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-09-15 11:00:00 - 2024-09-15 17:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
+            **添加日历** : https://ctftime.org/event/2466.ics  
+            
+        ??? Quote "[Pointer Overflow CTF - 2024](http://pointeroverflowctf.com/)"  
+            [![](https://ctftime.org/media/events/poctflogo1transp.png){ width="200" align=left }](http://pointeroverflowctf.com/)  
+            **比赛名称** : [Pointer Overflow CTF - 2024](http://pointeroverflowctf.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-09-15 20:00:00 - 2025-01-19 20:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
+            **添加日历** : https://ctftime.org/event/2121.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

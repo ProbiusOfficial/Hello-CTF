@@ -1,29 +1,5 @@
 [
     {
-        "比赛名称": "RSTCON 2024 CTF (Online/Hybrid)",
-        "比赛时间": "2024-09-14 03:45:00 - 2024-09-16 00:45:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2427.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://metactf.com/join/rstcon24",
-        "比赛标志": "https://ctftime.org/media/events/rstcon.png",
-        "比赛权重": "0.00",
-        "赛事主办": "RSTCON (https://ctftime.org/team/281202)",
-        "比赛ID": "1125",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "jailCTF 2024",
-        "比赛时间": "2024-09-14 04:00:00 - 2024-09-17 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2450.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.pyjail.club/",
-        "比赛标志": "https://ctftime.org/media/events/jailctf150.png",
-        "比赛权重": "0.00",
-        "赛事主办": "jailctf (https://ctftime.org/team/311088)",
-        "比赛ID": "1152",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "KubanCTF Qualifier 2024",
         "比赛时间": "2024-09-14 15:00:00 - 2024-09-14 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2464.ics",
@@ -621,6 +597,30 @@
         "比赛权重": "80.00",
         "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
         "比赛ID": "372",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "RSTCON 2024 CTF (Online/Hybrid)",
+        "比赛时间": "2024-09-14 03:45:00 - 2024-09-16 00:45:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2427.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://metactf.com/join/rstcon24",
+        "比赛标志": "https://ctftime.org/media/events/rstcon.png",
+        "比赛权重": "0",
+        "赛事主办": "RSTCON (https://ctftime.org/team/281202)",
+        "比赛ID": "1125",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "jailCTF 2024",
+        "比赛时间": "2024-09-14 04:00:00 - 2024-09-17 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2450.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.pyjail.club/",
+        "比赛标志": "https://ctftime.org/media/events/jailctf150.png",
+        "比赛权重": "0",
+        "赛事主办": "jailctf (https://ctftime.org/team/311088)",
+        "比赛ID": "1152",
         "比赛状态": "nowrunning"
     },
     {
