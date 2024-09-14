@@ -806,15 +806,6 @@ hide:
                 **赛事主办** : jailctf (https://ctftime.org/team/311088)  
                 **添加日历** : https://ctftime.org/event/2450.ics  
                 
-            ??? Quote "[KubanCTF Qualifier 2024](https://kubanctf.ru/signUp)"  
-                [![](https://ctftime.org/media/events/0f5e680946259ad6bbdf28ccb33b74e9.png){ width="200" align=left }](https://kubanctf.ru/signUp)  
-                **比赛名称** : [KubanCTF Qualifier 2024](https://kubanctf.ru/signUp)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-14 15:00:00 - 2024-09-14 23:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Codeby Games (https://ctftime.org/team/299486)  
-                **添加日历** : https://ctftime.org/event/2464.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[第五届“闽盾杯”网络空间安全大塞黑盾全国大学生赛道（决赛）](http://heidunbei.si.net.cn/hdc/cover)"  
@@ -909,6 +900,15 @@ hide:
                 **其他说明** : QQ群：961713058  
                 
         === "国外赛事"
+            ??? Quote "[KubanCTF Qualifier 2024](https://kubanctf.ru/signUp)"  
+                [![](https://ctftime.org/media/events/0f5e680946259ad6bbdf28ccb33b74e9.png){ width="200" align=left }](https://kubanctf.ru/signUp)  
+                **比赛名称** : [KubanCTF Qualifier 2024](https://kubanctf.ru/signUp)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-14 15:00:00 - 2024-09-14 23:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Codeby Games (https://ctftime.org/team/299486)  
+                **添加日历** : https://ctftime.org/event/2464.ics  
+                
             ??? Quote "[Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)"  
                 [![](https://ctftime.org/media/events/zangi_2.png){ width="200" align=left }](https://dashboard.haruulzangi.mn/)  
                 **比赛名称** : [Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)  
@@ -1799,15 +1799,6 @@ hide:
                 **比赛权重** : 24.82  
                 **赛事主办** : Punk Security (https://ctftime.org/team/212540)  
                 **添加日历** : https://ctftime.org/event/2285.ics  
-                
-            ??? Quote "[BSidesSF 2024 CTF](https://ctf.bsidessf.net/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.bsidessf.net/)  
-                **比赛名称** : [BSidesSF 2024 CTF](https://ctf.bsidessf.net/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-04 08:00:00 - 2024-05-06 07:59:59 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
-                **添加日历** : https://ctftime.org/event/2357.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
