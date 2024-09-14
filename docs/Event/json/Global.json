@@ -564,18 +564,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "m0leCon CTF 2025 Teaser",
-        "比赛时间": "2024-09-14 01:00:00 - 2024-09-15 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2440.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.m0lecon.it/",
-        "比赛标志": "https://ctftime.org/media/events/ctftime_2025.png",
-        "比赛权重": "80.00",
-        "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
-        "比赛ID": "372",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "RSTCON 2024 CTF (Online/Hybrid)",
         "比赛时间": "2024-09-14 03:45:00 - 2024-09-16 00:45:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2427.ics",
@@ -609,6 +597,18 @@
         "比赛权重": "0",
         "赛事主办": "Codeby Games (https://ctftime.org/team/299486)",
         "比赛ID": "923",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "m0leCon CTF 2025 Teaser",
+        "比赛时间": "2024-09-14 01:00:00 - 2024-09-15 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2440.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.m0lecon.it/",
+        "比赛标志": "https://ctftime.org/media/events/ctftime_2025.png",
+        "比赛权重": "80.00",
+        "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
+        "比赛ID": "372",
         "比赛状态": "past"
     },
     {
@@ -1785,18 +1785,6 @@
         "比赛权重": "0",
         "赛事主办": "cR4.sh (https://ctftime.org/team/224675)",
         "比赛ID": "1121",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "squ1rrel CTF 2024",
-        "比赛时间": "2024-05-04 23:00:00 - 2024-05-06 11:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2370.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.squ1rrel.dev/",
-        "比赛标志": "https://ctftime.org/media/events/squ1rrel.png",
-        "比赛权重": "24.21",
-        "赛事主办": "squ1rrel (https://ctftime.org/team/201730)",
-        "比赛ID": "1110",
         "比赛状态": "past"
     }
 ]
