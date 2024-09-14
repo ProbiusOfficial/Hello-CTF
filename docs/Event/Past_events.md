@@ -107,6 +107,15 @@ comments: true
     **赛事主办** : Codeby Games (https://ctftime.org/team/299486)  
     **添加日历** : https://ctftime.org/event/2464.ics  
     
+??? Quote "[MOCA CTF - Finals](https://moca.camp/ctf/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://moca.camp/ctf/)  
+    **比赛名称** : [MOCA CTF - Finals](https://moca.camp/ctf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-09-14 00:00:00 - 2024-09-15 00:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
+    **添加日历** : https://ctftime.org/event/2294.ics  
+    
 ??? Quote "[Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)"  
     [![](https://ctftime.org/media/events/zangi_2.png){ width="200" align=left }](https://dashboard.haruulzangi.mn/)  
     **比赛名称** : [Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 24.21  
     **赛事主办** : squ1rrel (https://ctftime.org/team/201730)  
     **添加日历** : https://ctftime.org/event/2370.ics  
-    
-??? Quote "[Punk Security DevSecOps Birthday CTF](https://punksecurity.co.uk/ctf)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://punksecurity.co.uk/ctf)  
-    **比赛名称** : [Punk Security DevSecOps Birthday CTF](https://punksecurity.co.uk/ctf)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-04 17:00:00 - 2024-05-05 05:00:00 UTC+8  
-    **比赛权重** : 24.82  
-    **赛事主办** : Punk Security (https://ctftime.org/team/212540)  
-    **添加日历** : https://ctftime.org/event/2285.ics  
     
