@@ -690,7 +690,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "http://hackthedrone.org/eng/ctf.php",
         "比赛标志": "https://ctftime.org/media/events/hackthedrone.png",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "HackTheDrone (https://ctftime.org/team/337463)",
         "比赛ID": "1165",
         "比赛状态": "past"
