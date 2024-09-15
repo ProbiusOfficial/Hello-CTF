@@ -82,15 +82,6 @@ hide:
             **其他说明** : QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/  
                 
     === "国外比赛"
-        ??? Quote "[Pointer Overflow CTF - 2024](http://pointeroverflowctf.com/)"  
-            [![](https://ctftime.org/media/events/poctflogo1transp.png){ width="200" align=left }](http://pointeroverflowctf.com/)  
-            **比赛名称** : [Pointer Overflow CTF - 2024](http://pointeroverflowctf.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-09-15 20:00:00 - 2025-01-19 20:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
-            **添加日历** : https://ctftime.org/event/2121.ics  
-            
         ??? Quote "[VolgaCTF 2024 Final](https://volgactf.ru/en/volgactf-2024/final/)"  
             [![](https://ctftime.org/media/events/logo-social-yellow_15.png){ width="200" align=left }](https://volgactf.ru/en/volgactf-2024/final/)  
             **比赛名称** : [VolgaCTF 2024 Final](https://volgactf.ru/en/volgactf-2024/final/)  
@@ -117,6 +108,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : idnsa (https://ctftime.org/team/239714)  
             **添加日历** : https://ctftime.org/event/2411.ics  
+            
+        ??? Quote "[GMO Cybersecurity Contest - IERAE CTF 2024](https://gmo-cybersecurity.com/event/ieraectf24/)"  
+            [![](https://ctftime.org/media/events/ierae-ctf-logo_2_1.png){ width="200" align=left }](https://gmo-cybersecurity.com/event/ieraectf24/)  
+            **比赛名称** : [GMO Cybersecurity Contest - IERAE CTF 2024](https://gmo-cybersecurity.com/event/ieraectf24/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-09-21 14:00:00 - 2024-09-22 14:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : ierae (https://ctftime.org/team/224122)  
+            **添加日历** : https://ctftime.org/event/2441.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
