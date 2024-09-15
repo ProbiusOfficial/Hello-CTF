@@ -1027,7 +1027,7 @@ hide:
                 **比赛名称** : [CyberSpace CTF 2024](https://2024.csc.tf/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-08-31 00:00:00 - 2024-09-02 00:00:00 UTC+8  
-                **比赛权重** : 24.85  
+                **比赛权重** : 24.80  
                 **赛事主办** : CyberSpace (https://ctftime.org/team/116280)  
                 **添加日历** : https://ctftime.org/event/2428.ics  
                 
