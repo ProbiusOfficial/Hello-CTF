@@ -540,18 +540,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Securinets CTF Quals 2024 [POSTPONED TO 12th OCT]",
-        "比赛时间": "2024-09-15 03:00:00 - 2024-09-16 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2410.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.securinets.tn/",
-        "比赛标志": "https://ctftime.org/media/events/d82bcfc5f1d83b7cc51c7dd0dbc8f5c6.png",
-        "比赛权重": "95.59",
-        "赛事主办": "Securinets (https://ctftime.org/team/5084)",
-        "比赛ID": "105",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Pointer Overflow CTF - 2024",
         "比赛时间": "2024-09-15 20:00:00 - 2025-01-19 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2121.ics",
@@ -573,6 +561,18 @@
         "比赛权重": "0",
         "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
         "比赛ID": "1163",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Securinets CTF Quals 2024 [POSTPONED TO 12th OCT]",
+        "比赛时间": "2024-09-15 03:00:00 - 2024-09-16 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2410.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.securinets.tn/",
+        "比赛标志": "https://ctftime.org/media/events/d82bcfc5f1d83b7cc51c7dd0dbc8f5c6.png",
+        "比赛权重": "95.59",
+        "赛事主办": "Securinets (https://ctftime.org/team/5084)",
+        "比赛ID": "105",
         "比赛状态": "past"
     },
     {
@@ -1749,18 +1749,6 @@
         "比赛权重": "24.67",
         "赛事主办": "3 Prongs And a Computer (https://ctftime.org/team/112558)",
         "比赛ID": "573",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "TBTL CTF 2024",
-        "比赛时间": "2024-05-11 06:00:00 - 2024-05-13 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2324.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://tbtl.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/ctflogo_2.png",
-        "比赛权重": "22.17",
-        "赛事主办": "TBTL (https://ctftime.org/team/170112)",
-        "比赛ID": "951",
         "比赛状态": "past"
     }
 ]

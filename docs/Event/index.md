@@ -766,15 +766,6 @@ hide:
                 **赛事主办** : jailctf (https://ctftime.org/team/311088)  
                 **添加日历** : https://ctftime.org/event/2450.ics  
                 
-            ??? Quote "[Securinets CTF Quals 2024 [POSTPONED TO 12th OCT]](https://ctf.securinets.tn/)"  
-                [![](https://ctftime.org/media/events/d82bcfc5f1d83b7cc51c7dd0dbc8f5c6.png){ width="200" align=left }](https://ctf.securinets.tn/)  
-                **比赛名称** : [Securinets CTF Quals 2024 [POSTPONED TO 12th OCT]](https://ctf.securinets.tn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-15 03:00:00 - 2024-09-16 03:00:00 UTC+8  
-                **比赛权重** : 95.59  
-                **赛事主办** : Securinets (https://ctftime.org/team/5084)  
-                **添加日历** : https://ctftime.org/event/2410.ics  
-                
             ??? Quote "[Pointer Overflow CTF - 2024](http://pointeroverflowctf.com/)"  
                 [![](https://ctftime.org/media/events/poctflogo1transp.png){ width="200" align=left }](http://pointeroverflowctf.com/)  
                 **比赛名称** : [Pointer Overflow CTF - 2024](http://pointeroverflowctf.com/)  
@@ -886,6 +877,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
                 **添加日历** : https://ctftime.org/event/2466.ics  
+                
+            ??? Quote "[Securinets CTF Quals 2024 [POSTPONED TO 12th OCT]](https://ctf.securinets.tn/)"  
+                [![](https://ctftime.org/media/events/d82bcfc5f1d83b7cc51c7dd0dbc8f5c6.png){ width="200" align=left }](https://ctf.securinets.tn/)  
+                **比赛名称** : [Securinets CTF Quals 2024 [POSTPONED TO 12th OCT]](https://ctf.securinets.tn/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-15 03:00:00 - 2024-09-16 03:00:00 UTC+8  
+                **比赛权重** : 95.59  
+                **赛事主办** : Securinets (https://ctftime.org/team/5084)  
+                **添加日历** : https://ctftime.org/event/2410.ics  
                 
             ??? Quote "[KubanCTF Qualifier 2024](https://kubanctf.ru/signUp)"  
                 [![](https://ctftime.org/media/events/0f5e680946259ad6bbdf28ccb33b74e9.png){ width="200" align=left }](https://kubanctf.ru/signUp)  
@@ -1768,15 +1768,6 @@ hide:
                 **比赛权重** : 24.67  
                 **赛事主办** : 3 Prongs And a Computer (https://ctftime.org/team/112558)  
                 **添加日历** : https://ctftime.org/event/2325.ics  
-                
-            ??? Quote "[TBTL CTF 2024](https://tbtl.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/ctflogo_2.png){ width="200" align=left }](https://tbtl.ctfd.io/)  
-                **比赛名称** : [TBTL CTF 2024](https://tbtl.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-11 06:00:00 - 2024-05-13 06:00:00 UTC+8  
-                **比赛权重** : 22.17  
-                **赛事主办** : TBTL (https://ctftime.org/team/170112)  
-                **添加日历** : https://ctftime.org/event/2324.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
