@@ -793,15 +793,6 @@ hide:
                 **赛事主办** : Securinets (https://ctftime.org/team/5084)  
                 **添加日历** : https://ctftime.org/event/2410.ics  
                 
-            ??? Quote "[AlpacaHack Round 3 (Crypto)](https://alpacahack.com/ctfs/round-3)"  
-                [![](https://ctftime.org/media/events/dark_512_1.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-3)  
-                **比赛名称** : [AlpacaHack Round 3 (Crypto)](https://alpacahack.com/ctfs/round-3)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-15 11:00:00 - 2024-09-15 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
-                **添加日历** : https://ctftime.org/event/2466.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[第五届“闽盾杯”网络空间安全大塞黑盾全国大学生赛道（决赛）](http://heidunbei.si.net.cn/hdc/cover)"  
@@ -896,6 +887,15 @@ hide:
                 **其他说明** : QQ群：961713058  
                 
         === "国外赛事"
+            ??? Quote "[AlpacaHack Round 3 (Crypto)](https://alpacahack.com/ctfs/round-3)"  
+                [![](https://ctftime.org/media/events/dark_512_1.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-3)  
+                **比赛名称** : [AlpacaHack Round 3 (Crypto)](https://alpacahack.com/ctfs/round-3)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-15 11:00:00 - 2024-09-15 17:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
+                **添加日历** : https://ctftime.org/event/2466.ics  
+                
             ??? Quote "[KubanCTF Qualifier 2024](https://kubanctf.ru/signUp)"  
                 [![](https://ctftime.org/media/events/0f5e680946259ad6bbdf28ccb33b74e9.png){ width="200" align=left }](https://kubanctf.ru/signUp)  
                 **比赛名称** : [KubanCTF Qualifier 2024](https://kubanctf.ru/signUp)  
@@ -1786,15 +1786,6 @@ hide:
                 **比赛权重** : 36.00  
                 **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
                 **添加日历** : https://ctftime.org/event/2352.ics  
-                
-            ??? Quote "[MireaCTF Finals 2024](https://mireactf.ru/)"  
-                [![](https://ctftime.org/media/events/image_2024-04-26_00-28-23_1.png){ width="200" align=left }](https://mireactf.ru/)  
-                **比赛名称** : [MireaCTF Finals 2024](https://mireactf.ru/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2024-05-10 16:00:00 - 2024-05-10 22:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : cR4.sh (https://ctftime.org/team/224675)  
-                **添加日历** : https://ctftime.org/event/2368.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
