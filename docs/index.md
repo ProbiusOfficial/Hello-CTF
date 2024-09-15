@@ -82,15 +82,6 @@ hide:
             **其他说明** : QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/  
                 
     === "国外比赛"
-        ??? Quote "[AlpacaHack Round 3 (Crypto)](https://alpacahack.com/ctfs/round-3)"  
-            [![](https://ctftime.org/media/events/dark_512_1.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-3)  
-            **比赛名称** : [AlpacaHack Round 3 (Crypto)](https://alpacahack.com/ctfs/round-3)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-09-15 11:00:00 - 2024-09-15 17:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
-            **添加日历** : https://ctftime.org/event/2466.ics  
-            
         ??? Quote "[Pointer Overflow CTF - 2024](http://pointeroverflowctf.com/)"  
             [![](https://ctftime.org/media/events/poctflogo1transp.png){ width="200" align=left }](http://pointeroverflowctf.com/)  
             **比赛名称** : [Pointer Overflow CTF - 2024](http://pointeroverflowctf.com/)  
@@ -117,6 +108,15 @@ hide:
             **比赛权重** : 31.83  
             **赛事主办** : Competitive Cyber at Mason (https://ctftime.org/team/176906)  
             **添加日历** : https://ctftime.org/event/2426.ics  
+            
+        ??? Quote "[Cyber Jawara International](https://cyberjawara.id/2024)"  
+            [![](https://ctftime.org/media/events/067297e97f084c5492331b121d1b0507.png){ width="200" align=left }](https://cyberjawara.id/2024)  
+            **比赛名称** : [Cyber Jawara International](https://cyberjawara.id/2024)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-09-21 09:59:00 - 2024-09-22 09:59:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : idnsa (https://ctftime.org/team/239714)  
+            **添加日历** : https://ctftime.org/event/2411.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

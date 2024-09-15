@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "AlpacaHack Round 3 (Crypto)",
-        "比赛时间": "2024-09-15 11:00:00 - 2024-09-15 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2466.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://alpacahack.com/ctfs/round-3",
-        "比赛标志": "https://ctftime.org/media/events/dark_512_1.png",
-        "比赛权重": "0",
-        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
-        "比赛ID": "1163",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Pointer Overflow CTF - 2024",
         "比赛时间": "2024-09-15 20:00:00 - 2025-01-19 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2121.ics",
@@ -585,6 +573,18 @@
         "比赛权重": "95.59",
         "赛事主办": "Securinets (https://ctftime.org/team/5084)",
         "比赛ID": "105",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "AlpacaHack Round 3 (Crypto)",
+        "比赛时间": "2024-09-15 11:00:00 - 2024-09-15 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2466.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://alpacahack.com/ctfs/round-3",
+        "比赛标志": "https://ctftime.org/media/events/dark_512_1.png",
+        "比赛权重": "0",
+        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
+        "比赛ID": "1163",
         "比赛状态": "nowrunning"
     },
     {
