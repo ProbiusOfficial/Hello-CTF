@@ -528,18 +528,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "jailCTF 2024",
-        "比赛时间": "2024-09-14 04:00:00 - 2024-09-17 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2450.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.pyjail.club/",
-        "比赛标志": "https://ctftime.org/media/events/jailctf150.png",
-        "比赛权重": "0",
-        "赛事主办": "jailctf (https://ctftime.org/team/311088)",
-        "比赛ID": "1152",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Pointer Overflow CTF - 2024",
         "比赛时间": "2024-09-15 20:00:00 - 2025-01-19 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2121.ics",
@@ -585,6 +573,18 @@
         "比赛权重": "0",
         "赛事主办": "Codeby Games (https://ctftime.org/team/299486)",
         "比赛ID": "923",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "jailCTF 2024",
+        "比赛时间": "2024-09-14 04:00:00 - 2024-09-17 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2450.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.pyjail.club/",
+        "比赛标志": "https://ctftime.org/media/events/jailctf150.png",
+        "比赛权重": "0",
+        "赛事主办": "jailctf (https://ctftime.org/team/311088)",
+        "比赛ID": "1152",
         "比赛状态": "past"
     },
     {
@@ -1737,18 +1737,6 @@
         "比赛权重": "100.00",
         "赛事主办": "RedRocket (https://ctftime.org/team/48677)",
         "比赛ID": "159",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "San Diego CTF 2024",
-        "比赛时间": "2024-05-11 07:59:59 - 2024-05-13 07:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2325.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://sdc.tf/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "24.67",
-        "赛事主办": "3 Prongs And a Computer (https://ctftime.org/team/112558)",
-        "比赛ID": "573",
         "比赛状态": "past"
     }
 ]

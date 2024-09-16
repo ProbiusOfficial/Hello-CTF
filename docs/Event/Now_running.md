@@ -31,15 +31,6 @@ comments: true
     **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
     **添加日历** : https://ctftime.org/event/2178.ics  
     
-??? Quote "[jailCTF 2024](https://ctf.pyjail.club/)"  
-    [![](https://ctftime.org/media/events/jailctf150.png){ width="200" align=left }](https://ctf.pyjail.club/)  
-    **比赛名称** : [jailCTF 2024](https://ctf.pyjail.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-14 04:00:00 - 2024-09-17 04:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : jailctf (https://ctftime.org/team/311088)  
-    **添加日历** : https://ctftime.org/event/2450.ics  
-    
 ??? Quote "[Pointer Overflow CTF - 2024](http://pointeroverflowctf.com/)"  
     [![](https://ctftime.org/media/events/poctflogo1transp.png){ width="200" align=left }](http://pointeroverflowctf.com/)  
     **比赛名称** : [Pointer Overflow CTF - 2024](http://pointeroverflowctf.com/)  

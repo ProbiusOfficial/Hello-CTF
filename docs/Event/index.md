@@ -757,15 +757,6 @@ hide:
                 **赛事主办** : Exherbo GNU/Linux (https://ctftime.org/team/275214)  
                 **添加日历** : https://ctftime.org/event/2178.ics  
                 
-            ??? Quote "[jailCTF 2024](https://ctf.pyjail.club/)"  
-                [![](https://ctftime.org/media/events/jailctf150.png){ width="200" align=left }](https://ctf.pyjail.club/)  
-                **比赛名称** : [jailCTF 2024](https://ctf.pyjail.club/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-14 04:00:00 - 2024-09-17 04:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : jailctf (https://ctftime.org/team/311088)  
-                **添加日历** : https://ctftime.org/event/2450.ics  
-                
             ??? Quote "[Pointer Overflow CTF - 2024](http://pointeroverflowctf.com/)"  
                 [![](https://ctftime.org/media/events/poctflogo1transp.png){ width="200" align=left }](http://pointeroverflowctf.com/)  
                 **比赛名称** : [Pointer Overflow CTF - 2024](http://pointeroverflowctf.com/)  
@@ -895,6 +886,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Codeby Games (https://ctftime.org/team/299486)  
                 **添加日历** : https://ctftime.org/event/2464.ics  
+                
+            ??? Quote "[jailCTF 2024](https://ctf.pyjail.club/)"  
+                [![](https://ctftime.org/media/events/jailctf150.png){ width="200" align=left }](https://ctf.pyjail.club/)  
+                **比赛名称** : [jailCTF 2024](https://ctf.pyjail.club/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-14 04:00:00 - 2024-09-17 04:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : jailctf (https://ctftime.org/team/311088)  
+                **添加日历** : https://ctftime.org/event/2450.ics  
                 
             ??? Quote "[RSTCON 2024 CTF (Online/Hybrid)](https://metactf.com/join/rstcon24)"  
                 [![](https://ctftime.org/media/events/rstcon.png){ width="200" align=left }](https://metactf.com/join/rstcon24)  
@@ -1759,15 +1759,6 @@ hide:
                 **比赛权重** : 100.00  
                 **赛事主办** : RedRocket (https://ctftime.org/team/48677)  
                 **添加日历** : https://ctftime.org/event/2224.ics  
-                
-            ??? Quote "[San Diego CTF 2024](https://sdc.tf/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://sdc.tf/)  
-                **比赛名称** : [San Diego CTF 2024](https://sdc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-11 07:59:59 - 2024-05-13 07:59:59 UTC+8  
-                **比赛权重** : 24.67  
-                **赛事主办** : 3 Prongs And a Computer (https://ctftime.org/team/112558)  
-                **添加日历** : https://ctftime.org/event/2325.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
