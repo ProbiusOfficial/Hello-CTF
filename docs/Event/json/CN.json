@@ -3,6 +3,17 @@
     "data": {
         "result": [
             {
+                "name": "0xGame 2024",
+                "link": "https://0xgame.exp10it.cn/",
+                "type": "个人赛",
+                "bmks": "2024年09月17日 10:30",
+                "bmjz": "2024年11月03日 21:00",
+                "bsks": "2024年10月06日 09:00",
+                "bsjs": "2024年11月03日 21:00",
+                "readmore": "QQ群: 746958713",
+                "status": 1
+            },
+            {
                 "name": "NewStar CTF 2024",
                 "link": "https://ns.openctf.net",
                 "type": "个人赛",

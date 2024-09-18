@@ -285,6 +285,13 @@ hide:
             适度CTF益脑，沉迷CTF伤身。合理安排时间，享受健康生活。
     
     === "*正在报名*"
+        ??? Quote "[0xGame 2024](https://0xgame.exp10it.cn/)"  
+            **比赛名称** : [0xGame 2024](https://0xgame.exp10it.cn/)  
+            **比赛类型** : 个人赛  
+            **报名时间** : 2024年09月17日 10:30 - 2024年11月03日 21:00  
+            **比赛时间** : 2024年10月06日 09:00 - 2024年11月03日 21:00  
+            **其他说明** : QQ群: 746958713  
+            
         ??? Quote "[NewStar CTF 2024](https://ns.openctf.net)"  
             **比赛名称** : [NewStar CTF 2024](https://ns.openctf.net)  
             **比赛类型** : 个人赛  
@@ -315,6 +322,13 @@ hide:
             
     === "*即将开始*"
         === "国内赛事"
+            ??? Quote "[0xGame 2024](https://0xgame.exp10it.cn/)"  
+                **比赛名称** : [0xGame 2024](https://0xgame.exp10it.cn/)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年09月17日 10:30 - 2024年11月03日 21:00  
+                **比赛时间** : 2024年10月06日 09:00 - 2024年11月03日 21:00  
+                **其他说明** : QQ群: 746958713  
+                
             ??? Quote "[NewStar CTF 2024](https://ns.openctf.net)"  
                 **比赛名称** : [NewStar CTF 2024](https://ns.openctf.net)  
                 **比赛类型** : 个人赛  
