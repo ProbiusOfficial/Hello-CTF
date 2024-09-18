@@ -852,13 +852,6 @@ hide:
                 **比赛时间** : 2024年07月20日 00:00 - 2024年07月21日 23:59  
                 **其他说明** : QQ群：979328132  
                 
-            ??? Quote "[第四届极客少年挑战赛（初赛）](https://www.cdccs.cn/#/geekYouth)"  
-                **比赛名称** : [第四届极客少年挑战赛（初赛）](https://www.cdccs.cn/#/geekYouth)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年06月19日 00:00 - 2024年07月13日 23:59  
-                **比赛时间** : 2024年07月06日 10:00 - 2024年07月20日 12:00  
-                **其他说明** : QQ群：961713058  
-                
         === "国外赛事"
             ??? Quote "[AlpacaHack Round 3 (Crypto)](https://alpacahack.com/ctfs/round-3)"  
                 [![](https://ctftime.org/media/events/dark_512_1.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-3)  
