@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [x86的保护模式](https://xia0ji233.github.io/2024/09/17/x86_1/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-09-17
+
+    重新把内核基础学一遍，方便后续学习的展开。x86 是一个非常经典的复杂指令集架构（CISC），它的特点是指令不定长，解析指令时会根据头个字节甚至是第二个字节决定指令解析的长度，作为本篇学习的研究例子。x86 的 CPU 在早期都是以实模式运行的，在 80386 及以后，x86 CPU 新增了分页的虚拟内存机制，同时在 80286 CPU 中就新增了其它运行模式，比如保护模式，本篇将重点学习保护模式...
     ### [Hacking Thymeleaf With Spring(目前最新版，暂不公开)](https://y4tacker.github.io/2024/09/02/year/2024/9/Hacking-Thymeleaf-With-Spring-%E7%9B%AE%E5%89%8D%E6%9C%80%E6%96%B0%E7%89%88%EF%BC%8C%E6%9A%82%E4%B8%8D%E5%85%AC%E5%BC%80/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-09-02
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2024-06-28
 
     驱动层捕获无模块shellcode。这里学一手扫描 shellcode 的方法，题目来源于 2024 年的腾讯游戏安全竞赛的决赛。扫描shellcode主要方法是插中断扫栈和扫内存。这里调几个复现了的方法去讲，中断有 DPC，NMI，IPI 这几类。扫内存可以扫 BigPool，扫页表，扫物理内存。NMINMI (Non Maskable Interrupt)——不可屏蔽中断（即CPU不能屏蔽）无...
-    ### [Apache OFBiz Authentication Bypass(CVE-2024-38856)](https://y4tacker.github.io/2024/06/23/year/2024/8/Apache-OFBiz-Authentication-Bypass-CVE-2024-38856/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-06-23
-
-    写在前面​    自去年CVE-2023-51467爆出后，起初我是不太想再看这个系统了，但年初连续的三个权限绕过相关的CVE编号(CVE-2024-25065/CVE-2024-32113/CVE-2024-36104)又让我产生了好奇，随着对三个历史漏洞分析的过程中，我也发现这三个漏洞的影响面其实并没有特别严重，但思路值得学习(本质是低权限账号提权，利用前提是需要知道低权限账号的密码)，但随着...
 
 </div>
