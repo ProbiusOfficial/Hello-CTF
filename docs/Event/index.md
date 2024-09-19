@@ -1021,13 +1021,6 @@ hide:
                 **比赛时间** : 2024年07月27日 00:00 - 2024年07月27日 23:59  
                 **其他说明** : 初赛QQ群: 787262369  
                 
-            ??? Quote "[第十七届全国大学生信息安全竞赛创新实践能力赛（总决赛）](http://www.ciscn.cn/announcement/view/350)"  
-                **比赛名称** : [第十七届全国大学生信息安全竞赛创新实践能力赛（总决赛）](http://www.ciscn.cn/announcement/view/350)  
-                **比赛类型** : 团队赛|1-4人  
-                **报名时间** : 2024年07月04日 02:50 - 2024年07月04日 03:50  
-                **比赛时间** : 2024年07月20日 00:00 - 2024年07月21日 23:59  
-                **其他说明** : QQ群：979328132  
-                
         === "国外赛事"
             ??? Quote "[VolgaCTF 2024 Final](https://volgactf.ru/en/volgactf-2024/final/)"  
                 [![](https://ctftime.org/media/events/logo-social-yellow_15.png){ width="200" align=left }](https://volgactf.ru/en/volgactf-2024/final/)  
