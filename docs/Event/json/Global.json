@@ -12,6 +12,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "BlazCTF 2024",
+        "比赛时间": "2024-09-21 09:00:00 - 2024-09-23 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2492.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.blaz.ai/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "25.00",
+        "赛事主办": "FuzzLand (https://ctftime.org/team/270659)",
+        "比赛ID": "1005",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Cyber Jawara International",
         "比赛时间": "2024-09-21 09:59:00 - 2024-09-22 09:59:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2411.ics",
