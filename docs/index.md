@@ -82,15 +82,6 @@ hide:
             **其他说明** : QQ群: 746958713  
                 
     === "国外比赛"
-        ??? Quote "[VolgaCTF 2024 Final](https://volgactf.ru/en/volgactf-2024/final/)"  
-            [![](https://ctftime.org/media/events/logo-social-yellow_15.png){ width="200" align=left }](https://volgactf.ru/en/volgactf-2024/final/)  
-            **比赛名称** : [VolgaCTF 2024 Final](https://volgactf.ru/en/volgactf-2024/final/)  
-            **比赛形式** : Attack-Defense  
-            **比赛时间** : 2024-09-19 14:00:00 - 2024-09-19 23:00:00 UTC+8  
-            **比赛权重** : 73.80  
-            **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
-            **添加日历** : https://ctftime.org/event/2432.ics  
-            
         ??? Quote "[PatriotCTF 2024](http://pctf.competitivecyber.club/)"  
             [![](https://ctftime.org/media/events/masoncc_2.png){ width="200" align=left }](http://pctf.competitivecyber.club/)  
             **比赛名称** : [PatriotCTF 2024](http://pctf.competitivecyber.club/)  
@@ -117,6 +108,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : ierae (https://ctftime.org/team/224122)  
             **添加日历** : https://ctftime.org/event/2441.ics  
+            
+        ??? Quote "[openECSC 2024 - Final Round](https://open.ecsc2024.it/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://open.ecsc2024.it/)  
+            **比赛名称** : [openECSC 2024 - Final Round](https://open.ecsc2024.it/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-09-21 18:00:00 - 2024-09-22 18:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
+            **添加日历** : https://ctftime.org/event/2356.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
