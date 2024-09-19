@@ -179,7 +179,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2484.ics  
     
 ??? Quote "[FAUST CTF 2024](https://2024.faustctf.net/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://2024.faustctf.net/)  
+    [![](https://ctftime.org/media/events/faust2024_1.png){ width="200" align=left }](https://2024.faustctf.net/)  
     **比赛名称** : [FAUST CTF 2024](https://2024.faustctf.net/)  
     **比赛形式** : Attack-Defense  
     **比赛时间** : 2024-09-28 20:00:00 - 2024-09-29 05:00:00 UTC+8  
@@ -588,7 +588,7 @@ comments: true
     **比赛名称** : [N0PSctf](https://www.nops.re/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-05-31 16:00:00 - 2025-06-02 04:00:00 UTC+8  
-    **比赛权重** : 24.30  
+    **比赛权重** : 24.32  
     **赛事主办** : NOPS (https://ctftime.org/team/4056)  
     **添加日历** : https://ctftime.org/event/2486.ics  
     
