@@ -161,7 +161,7 @@ comments: true
     **比赛名称** : [Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-09-13 12:00:00 - 2024-09-13 12:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 23.33  
     **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
     **添加日历** : https://ctftime.org/event/2476.ics  
     
