@@ -36,17 +36,6 @@
                 "status": 1
             },
             {
-                "name": "第八届御网杯信息安全大赛",
-                "link": "https://www.hncsisc.com/hncsisc/index.html",
-                "type": "个人赛 and 团体赛|3人",
-                "bmks": "2024年07月26日 08:00",
-                "bmjz": "2024年09月20日 18:00",
-                "bsks": "2024年09月21日 00:00",
-                "bsjs": "2024年10月27日 23:59",
-                "readmore": "更多信息请前往官网https://www.hncsisc.com 的“赛事活动”查看",
-                "status": 1
-            },
-            {
                 "name": "“华为杯”第三届中国研究生网络安全创新大赛",
                 "link": "https://cpipc.acge.org.cn//pw/detail/2c9080188fc20569018fe6375eeb2eb2",
                 "type": "团队赛|1-4人",
@@ -56,6 +45,17 @@
                 "bsjs": "2024年09月25日 23:59",
                 "readmore": "QQ群: 794148708|仅限研究生参加",
                 "status": 1
+            },
+            {
+                "name": "第八届御网杯信息安全大赛",
+                "link": "https://www.hncsisc.com/hncsisc/index.html",
+                "type": "个人赛 and 团体赛|3人",
+                "bmks": "2024年07月26日 08:00",
+                "bmjz": "2024年09月20日 18:00",
+                "bsks": "2024年09月21日 00:00",
+                "bsjs": "2024年10月27日 23:59",
+                "readmore": "更多信息请前往官网https://www.hncsisc.com 的“赛事活动”查看",
+                "status": 2
             },
             {
                 "name": "BaseCTF 2024 高校联合新生赛",
