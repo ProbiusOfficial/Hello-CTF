@@ -343,13 +343,6 @@ hide:
                 **比赛时间** : 2024年09月25日 00:00 - 2024年09月25日 23:59  
                 **其他说明** : QQ群: 794148708|仅限研究生参加  
                 
-            ??? Quote "[第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)"  
-                **比赛名称** : [第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)  
-                **比赛类型** : 个人赛 and 团体赛|3人  
-                **报名时间** : 2024年07月26日 08:00 - 2024年09月20日 18:00  
-                **比赛时间** : 2024年09月21日 00:00 - 2024年10月27日 23:59  
-                **其他说明** : 更多信息请前往官网https://www.hncsisc.com 的“赛事活动”查看  
-                
         === "国外赛事"
             ??? Quote "[PatriotCTF 2024](http://pctf.competitivecyber.club/)"  
                 [![](https://ctftime.org/media/events/masoncc_2.png){ width="200" align=left }](http://pctf.competitivecyber.club/)  
@@ -938,6 +931,13 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
+            ??? Quote "[第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)"  
+                **比赛名称** : [第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)  
+                **比赛类型** : 个人赛 and 团体赛|3人  
+                **报名时间** : 2024年07月26日 08:00 - 2024年09月20日 18:00  
+                **比赛时间** : 2024年09月21日 00:00 - 2024年10月27日 23:59  
+                **其他说明** : 更多信息请前往官网https://www.hncsisc.com 的“赛事活动”查看  
+                
             ??? Quote "[BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)"  
                 **比赛名称** : [BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)  
                 **比赛类型** : 1-2 人  
