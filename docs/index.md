@@ -82,15 +82,6 @@ hide:
             **其他说明** : QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/  
                 
     === "国外比赛"
-        ??? Quote "[PatriotCTF 2024](http://pctf.competitivecyber.club/)"  
-            [![](https://ctftime.org/media/events/masoncc_2.png){ width="200" align=left }](http://pctf.competitivecyber.club/)  
-            **比赛名称** : [PatriotCTF 2024](http://pctf.competitivecyber.club/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-09-21 06:00:00 - 2024-09-23 06:00:00 UTC+8  
-            **比赛权重** : 31.83  
-            **赛事主办** : Competitive Cyber at Mason (https://ctftime.org/team/176906)  
-            **添加日历** : https://ctftime.org/event/2426.ics  
-            
         ??? Quote "[BlazCTF 2024](https://ctf.blaz.ai/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://ctf.blaz.ai/)  
             **比赛名称** : [BlazCTF 2024](https://ctf.blaz.ai/)  
@@ -117,6 +108,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : ierae (https://ctftime.org/team/224122)  
             **添加日历** : https://ctftime.org/event/2441.ics  
+            
+        ??? Quote "[openECSC 2024 - Final Round](https://open.ecsc2024.it/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://open.ecsc2024.it/)  
+            **比赛名称** : [openECSC 2024 - Final Round](https://open.ecsc2024.it/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-09-21 18:00:00 - 2024-09-22 18:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
+            **添加日历** : https://ctftime.org/event/2356.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
