@@ -300,6 +300,30 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Blue Water CTF 2024",
+        "比赛时间": "2024-10-12 22:00:00 - 2024-10-14 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2479.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.perfect.blue/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "💦​ (https://ctftime.org/team/205897)",
+        "比赛ID": "469",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "CTF MetaRed Mexico Anuies-TIC 2024",
+        "比赛时间": "2024-10-15 23:00:00 - 2024-10-16 11:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2482.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctfd.anuies.mx/",
+        "比赛标志": "https://ctftime.org/media/events/ctf_2024_1.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "UV-CSIRT (https://ctftime.org/team/166955)",
+        "比赛ID": "653",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Hackceler8 2024",
         "比赛时间": "2024-10-18 08:00:00 - 2024-10-21 07:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2379.ics",
@@ -397,7 +421,7 @@
     },
     {
         "比赛名称": "Russian CTF Cup 2024 Qualifier",
-        "比赛时间": "2024-10-26 20:00:00 - 2024-10-27 20:00:00 UTC+8",
+        "比赛时间": "2024-10-26 17:00:00 - 2024-10-27 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2405.ics",
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctfcup.ru/",
@@ -513,6 +537,18 @@
         "比赛权重": "89.85",
         "赛事主办": "Nu1L (https://ctftime.org/team/19208)",
         "比赛ID": "240",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Die Abenteuer von KIM & TIM Kapt. II - To TI-Mfinity and Beyond",
+        "比赛时间": "2024-11-15 17:00:00 - 2024-11-16 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2481.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf.gematik.de/",
+        "比赛标志": "https://ctftime.org/media/events/Bild_1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "H34lthineer (https://ctftime.org/team/170109)",
+        "比赛ID": "978",
         "比赛状态": "oncoming"
     },
     {
@@ -645,6 +681,18 @@
         "比赛权重": "0.00",
         "赛事主办": "MadrHacks (https://ctftime.org/team/114509)",
         "比赛ID": "994",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "DFIR Labs CTF by The DFIR Report",
+        "比赛时间": "2024-12-08 00:00:00 - 2024-12-08 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2488.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://thedfirreport.com/services/dfir-labs/ctf/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "The DFIR Report (https://ctftime.org/team/309500)",
+        "比赛ID": "1149",
         "比赛状态": "oncoming"
     },
     {
@@ -1128,6 +1176,18 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "PECAN+ CTF 2024",
+        "比赛时间": "2024-08-04 09:00:00 - 2024-08-04 13:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2439.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://pecanplus.ecusdf.org/",
+        "比赛标志": "https://ctftime.org/media/events/Pecan_Logo_Transparent_1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "PECAN+ (https://ctftime.org/team/250009)",
+        "比赛ID": "973",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "n00bzCTF 2024",
         "比赛时间": "2024-08-03 09:00:00 - 2024-08-05 09:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2378.ics",
@@ -1149,6 +1209,18 @@
         "比赛权重": "26.89",
         "赛事主办": "thehackerscrew (https://ctftime.org/team/85618)",
         "比赛ID": "738",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Arab Security Cyber Wargames 2024 Qualifications",
+        "比赛时间": "2024-08-02 21:00:00 - 2024-08-03 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2434.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.ascyberwargames.com/ascwgs2024/",
+        "比赛标志": "https://ctftime.org/media/events/Image20230709224223.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Arab Security Cyber Wargames (https://ctftime.org/team/127553)",
+        "比赛ID": "490",
         "比赛状态": "past"
     },
     {
@@ -1929,30 +2001,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Black Cell Secops (https://ctftime.org/team/270941)",
         "比赛ID": "995",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BYUCTF 2024",
-        "比赛时间": "2024-05-17 08:00:00 - 2024-05-19 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2252.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfd.cyberjousting.com/",
-        "比赛标志": "https://ctftime.org/media/events/cougar.jpg",
-        "比赛权重": "30.75",
-        "赛事主办": "BYU Cyberia (https://ctftime.org/team/155711)",
-        "比赛ID": "768",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "openECSC 2024 - Round 3",
-        "比赛时间": "2024-05-13 18:00:00 - 2024-05-20 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2355.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://open.ecsc2024.it/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "ECSC2024 (https://ctftime.org/team/283828)",
-        "比赛ID": "1084",
         "比赛状态": "past"
     }
 ]
