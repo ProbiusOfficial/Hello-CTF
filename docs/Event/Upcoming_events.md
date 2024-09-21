@@ -36,15 +36,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[GMO Cybersecurity Contest - IERAE CTF 2024](https://gmo-cybersecurity.com/event/ieraectf24/)"  
-    [![](https://ctftime.org/media/events/ierae-ctf-logo_2_1.png){ width="200" align=left }](https://gmo-cybersecurity.com/event/ieraectf24/)  
-    **比赛名称** : [GMO Cybersecurity Contest - IERAE CTF 2024](https://gmo-cybersecurity.com/event/ieraectf24/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-21 14:00:00 - 2024-09-22 14:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : ierae (https://ctftime.org/team/224122)  
-    **添加日历** : https://ctftime.org/event/2441.ics  
-    
 ??? Quote "[openECSC 2024 - Final Round](https://open.ecsc2024.it/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://open.ecsc2024.it/)  
     **比赛名称** : [openECSC 2024 - Final Round](https://open.ecsc2024.it/)  

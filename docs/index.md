@@ -82,15 +82,6 @@ hide:
             **其他说明** : QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/  
                 
     === "国外比赛"
-        ??? Quote "[GMO Cybersecurity Contest - IERAE CTF 2024](https://gmo-cybersecurity.com/event/ieraectf24/)"  
-            [![](https://ctftime.org/media/events/ierae-ctf-logo_2_1.png){ width="200" align=left }](https://gmo-cybersecurity.com/event/ieraectf24/)  
-            **比赛名称** : [GMO Cybersecurity Contest - IERAE CTF 2024](https://gmo-cybersecurity.com/event/ieraectf24/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-09-21 14:00:00 - 2024-09-22 14:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : ierae (https://ctftime.org/team/224122)  
-            **添加日历** : https://ctftime.org/event/2441.ics  
-            
         ??? Quote "[openECSC 2024 - Final Round](https://open.ecsc2024.it/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://open.ecsc2024.it/)  
             **比赛名称** : [openECSC 2024 - Final Round](https://open.ecsc2024.it/)  
@@ -117,6 +108,15 @@ hide:
             **比赛权重** : 66.25  
             **赛事主办** : ASIS (https://ctftime.org/team/4140)  
             **添加日历** : https://ctftime.org/event/2211.ics  
+            
+        ??? Quote "[Haruulzangi CTF 2024 Round 2](https://dashboard.haruulzangi.mn/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://dashboard.haruulzangi.mn/)  
+            **比赛名称** : [Haruulzangi CTF 2024 Round 2](https://dashboard.haruulzangi.mn/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-09-22 12:00:00 - 2024-09-22 16:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
+            **添加日历** : https://ctftime.org/event/2493.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
