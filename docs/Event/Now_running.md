@@ -56,3 +56,12 @@ comments: true
     **赛事主办** : Competitive Cyber at Mason (https://ctftime.org/team/176906)  
     **添加日历** : https://ctftime.org/event/2426.ics  
     
+??? Quote "[BlazCTF 2024](https://ctf.blaz.ai/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.blaz.ai/)  
+    **比赛名称** : [BlazCTF 2024](https://ctf.blaz.ai/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-09-21 09:00:00 - 2024-09-23 09:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : FuzzLand (https://ctftime.org/team/270659)  
+    **添加日历** : https://ctftime.org/event/2492.ics  
+    
