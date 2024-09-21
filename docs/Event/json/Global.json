@@ -1,29 +1,5 @@
 [
     {
-        "比赛名称": "21ans LinuxMeetup au Québec",
-        "比赛时间": "2024-09-21 21:30:00 - 2024-09-22 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2422.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.linuxver.site/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "SummerJedi (https://ctftime.org/team/126955)",
-        "比赛ID": "675",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "ASIS CTF Quals 2024",
-        "比赛时间": "2024-09-21 22:00:00 - 2024-09-22 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2211.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://asisctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/asisctf.jpg",
-        "比赛权重": "66.25",
-        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
-        "比赛ID": "55",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Haruulzangi CTF 2024 Round 2",
         "比赛时间": "2024-09-22 12:00:00 - 2024-09-22 16:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2493.ics",
@@ -801,6 +777,30 @@
         "比赛权重": "0",
         "赛事主办": "ECSC2024 (https://ctftime.org/team/283828)",
         "比赛ID": "1084",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "21ans LinuxMeetup au Québec",
+        "比赛时间": "2024-09-21 21:30:00 - 2024-09-22 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2422.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.linuxver.site/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "SummerJedi (https://ctftime.org/team/126955)",
+        "比赛ID": "675",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "ASIS CTF Quals 2024",
+        "比赛时间": "2024-09-21 22:00:00 - 2024-09-22 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2211.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://asisctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/asisctf.jpg",
+        "比赛权重": "66.25",
+        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
+        "比赛ID": "55",
         "比赛状态": "nowrunning"
     },
     {
