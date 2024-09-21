@@ -36,15 +36,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[openECSC 2024 - Final Round](https://open.ecsc2024.it/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://open.ecsc2024.it/)  
-    **比赛名称** : [openECSC 2024 - Final Round](https://open.ecsc2024.it/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-21 18:00:00 - 2024-09-22 18:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
-    **添加日历** : https://ctftime.org/event/2356.ics  
-    
 ??? Quote "[21ans LinuxMeetup au Québec](https://www.linuxver.site/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://www.linuxver.site/)  
     **比赛名称** : [21ans LinuxMeetup au Québec](https://www.linuxver.site/)  

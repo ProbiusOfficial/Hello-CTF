@@ -82,15 +82,6 @@ hide:
             **其他说明** : QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/  
                 
     === "国外比赛"
-        ??? Quote "[openECSC 2024 - Final Round](https://open.ecsc2024.it/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://open.ecsc2024.it/)  
-            **比赛名称** : [openECSC 2024 - Final Round](https://open.ecsc2024.it/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-09-21 18:00:00 - 2024-09-22 18:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
-            **添加日历** : https://ctftime.org/event/2356.ics  
-            
         ??? Quote "[21ans LinuxMeetup au Québec](https://www.linuxver.site/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://www.linuxver.site/)  
             **比赛名称** : [21ans LinuxMeetup au Québec](https://www.linuxver.site/)  
@@ -117,6 +108,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
             **添加日历** : https://ctftime.org/event/2493.ics  
+            
+        ??? Quote "[H7CTF International](https://ctf.h7tex.com/)"  
+            [![](https://ctftime.org/media/events/1_3.png){ width="200" align=left }](https://ctf.h7tex.com/)  
+            **比赛名称** : [H7CTF International](https://ctf.h7tex.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-09-26 11:30:00 - 2024-09-27 19:30:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : H7Tex (https://ctftime.org/team/281844)  
+            **添加日历** : https://ctftime.org/event/2491.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
