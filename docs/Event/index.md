@@ -953,15 +953,6 @@ hide:
                 **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
                 **添加日历** : https://ctftime.org/event/2356.ics  
                 
-            ??? Quote "[21ans LinuxMeetup au Québec](https://www.linuxver.site/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://www.linuxver.site/)  
-                **比赛名称** : [21ans LinuxMeetup au Québec](https://www.linuxver.site/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-21 21:30:00 - 2024-09-22 05:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : SummerJedi (https://ctftime.org/team/126955)  
-                **添加日历** : https://ctftime.org/event/2422.ics  
-                
             ??? Quote "[ASIS CTF Quals 2024](https://asisctf.com/)"  
                 [![](https://ctftime.org/media/events/asisctf.jpg){ width="200" align=left }](https://asisctf.com/)  
                 **比赛名称** : [ASIS CTF Quals 2024](https://asisctf.com/)  
@@ -1051,6 +1042,15 @@ hide:
                 **其他说明** : 初赛QQ群: 787262369  
                 
         === "国外赛事"
+            ??? Quote "[21ans LinuxMeetup au Québec](https://www.linuxver.site/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://www.linuxver.site/)  
+                **比赛名称** : [21ans LinuxMeetup au Québec](https://www.linuxver.site/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-21 21:30:00 - 2024-09-22 05:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : SummerJedi (https://ctftime.org/team/126955)  
+                **添加日历** : https://ctftime.org/event/2422.ics  
+                
             ??? Quote "[VolgaCTF 2024 Final](https://volgactf.ru/en/volgactf-2024/final/)"  
                 [![](https://ctftime.org/media/events/logo-social-yellow_15.png){ width="200" align=left }](https://volgactf.ru/en/volgactf-2024/final/)  
                 **比赛名称** : [VolgaCTF 2024 Final](https://volgactf.ru/en/volgactf-2024/final/)  
@@ -1941,15 +1941,6 @@ hide:
                 **比赛权重** : 28.30  
                 **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
                 **添加日历** : https://ctftime.org/event/2289.ics  
-                
-            ??? Quote "[Black Cell SecOps 2024 - Online Blue Teaming Jeopardy CTF](https://blackcell.io/ctf/)"  
-                [![](https://ctftime.org/media/events/SecOps2024_logo.png){ width="200" align=left }](https://blackcell.io/ctf/)  
-                **比赛名称** : [Black Cell SecOps 2024 - Online Blue Teaming Jeopardy CTF](https://blackcell.io/ctf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-17 17:00:00 - 2024-05-20 02:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Black Cell Secops (https://ctftime.org/team/270941)  
-                **添加日历** : https://ctftime.org/event/2135.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
