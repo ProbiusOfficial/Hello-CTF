@@ -765,7 +765,7 @@
         "比赛权重": "0",
         "赛事主办": "haruulzangi-organizers (https://ctftime.org/team/266812)",
         "比赛ID": "985",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "21ans LinuxMeetup au Québec",
@@ -1953,18 +1953,6 @@
         "比赛权重": "0",
         "赛事主办": "VulnX (https://ctftime.org/team/117274)",
         "比赛ID": "461",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Haruulzangi U18 2024 Domestic Quals",
-        "比赛时间": "2024-05-18 12:00:00 - 2024-05-18 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2371.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://u18-2024.haruulzangi.mn/",
-        "比赛标志": "https://ctftime.org/media/events/hz-u18_1_1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "haruulzangi-organizers (https://ctftime.org/team/266812)",
-        "比赛ID": "985",
         "比赛状态": "past"
     }
 ]
