@@ -93,6 +93,15 @@ comments: true
     **赛事主办** : SummerJedi (https://ctftime.org/team/126955)  
     **添加日历** : https://ctftime.org/event/2422.ics  
     
+??? Quote "[GMO Cybersecurity Contest - IERAE CTF 2024](https://gmo-cybersecurity.com/event/ieraectf24/)"  
+    [![](https://ctftime.org/media/events/ierae-ctf-logo_2_1.png){ width="200" align=left }](https://gmo-cybersecurity.com/event/ieraectf24/)  
+    **比赛名称** : [GMO Cybersecurity Contest - IERAE CTF 2024](https://gmo-cybersecurity.com/event/ieraectf24/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-09-21 14:00:00 - 2024-09-22 14:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ierae (https://ctftime.org/team/224122)  
+    **添加日历** : https://ctftime.org/event/2441.ics  
+    
 ??? Quote "[Cyber Jawara International](https://cyberjawara.id/2024)"  
     [![](https://ctftime.org/media/events/067297e97f084c5492331b121d1b0507.png){ width="200" align=left }](https://cyberjawara.id/2024)  
     **比赛名称** : [Cyber Jawara International](https://cyberjawara.id/2024)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
     **添加日历** : https://ctftime.org/event/2371.ics  
-    
-??? Quote "[TJCTF 2024](https://tjctf.org/)"  
-    [![](https://ctftime.org/media/events/logo_96.png){ width="200" align=left }](https://tjctf.org/)  
-    **比赛名称** : [TJCTF 2024](https://tjctf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-18 02:30:00 - 2024-05-20 02:30:00 UTC+8  
-    **比赛权重** : 35.60  
-    **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
-    **添加日历** : https://ctftime.org/event/2321.ics  
     

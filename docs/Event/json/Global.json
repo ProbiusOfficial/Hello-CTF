@@ -732,18 +732,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "GMO Cybersecurity Contest - IERAE CTF 2024",
-        "比赛时间": "2024-09-21 14:00:00 - 2024-09-22 14:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2441.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://gmo-cybersecurity.com/event/ieraectf24/",
-        "比赛标志": "https://ctftime.org/media/events/ierae-ctf-logo_2_1.png",
-        "比赛权重": "0",
-        "赛事主办": "ierae (https://ctftime.org/team/224122)",
-        "比赛ID": "1130",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "openECSC 2024 - Final Round",
         "比赛时间": "2024-09-21 18:00:00 - 2024-09-22 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2356.ics",
@@ -789,6 +777,18 @@
         "比赛权重": "0.00",
         "赛事主办": "SummerJedi (https://ctftime.org/team/126955)",
         "比赛ID": "675",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "GMO Cybersecurity Contest - IERAE CTF 2024",
+        "比赛时间": "2024-09-21 14:00:00 - 2024-09-22 14:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2441.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://gmo-cybersecurity.com/event/ieraectf24/",
+        "比赛标志": "https://ctftime.org/media/events/ierae-ctf-logo_2_1.png",
+        "比赛权重": "0",
+        "赛事主办": "ierae (https://ctftime.org/team/224122)",
+        "比赛ID": "1130",
         "比赛状态": "past"
     },
     {
@@ -1965,18 +1965,6 @@
         "比赛权重": "0.00",
         "赛事主办": "haruulzangi-organizers (https://ctftime.org/team/266812)",
         "比赛ID": "985",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "TJCTF 2024",
-        "比赛时间": "2024-05-18 02:30:00 - 2024-05-20 02:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2321.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://tjctf.org/",
-        "比赛标志": "https://ctftime.org/media/events/logo_96.png",
-        "比赛权重": "35.60",
-        "赛事主办": "tjcsc (https://ctftime.org/team/53812)",
-        "比赛ID": "144",
         "比赛状态": "past"
     }
 ]
