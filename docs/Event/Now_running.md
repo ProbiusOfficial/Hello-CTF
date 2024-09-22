@@ -47,15 +47,6 @@ comments: true
     **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
     **添加日历** : https://ctftime.org/event/2121.ics  
     
-??? Quote "[PatriotCTF 2024](http://pctf.competitivecyber.club/)"  
-    [![](https://ctftime.org/media/events/masoncc_2.png){ width="200" align=left }](http://pctf.competitivecyber.club/)  
-    **比赛名称** : [PatriotCTF 2024](http://pctf.competitivecyber.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-21 06:00:00 - 2024-09-23 06:00:00 UTC+8  
-    **比赛权重** : 31.83  
-    **赛事主办** : Competitive Cyber at Mason (https://ctftime.org/team/176906)  
-    **添加日历** : https://ctftime.org/event/2426.ics  
-    
 ??? Quote "[BlazCTF 2024](https://ctf.blaz.ai/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.blaz.ai/)  
     **比赛名称** : [BlazCTF 2024](https://ctf.blaz.ai/)  
