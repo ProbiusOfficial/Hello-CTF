@@ -188,7 +188,7 @@ comments: true
     **比赛名称** : [RSTCON 2024 CTF (Online/Hybrid)](https://metactf.com/join/rstcon24)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-09-14 03:45:00 - 2024-09-16 00:45:00 UTC+8  
-    **比赛权重** : 23.93  
+    **比赛权重** : 24.00  
     **赛事主办** : RSTCON (https://ctftime.org/team/281202)  
     **添加日历** : https://ctftime.org/event/2427.ics  
     
