@@ -93,6 +93,15 @@ comments: true
     **赛事主办** : SummerJedi (https://ctftime.org/team/126955)  
     **添加日历** : https://ctftime.org/event/2422.ics  
     
+??? Quote "[Cyber Jawara International](https://cyberjawara.id/2024)"  
+    [![](https://ctftime.org/media/events/067297e97f084c5492331b121d1b0507.png){ width="200" align=left }](https://cyberjawara.id/2024)  
+    **比赛名称** : [Cyber Jawara International](https://cyberjawara.id/2024)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-09-21 09:59:00 - 2024-09-22 09:59:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : idnsa (https://ctftime.org/team/239714)  
+    **添加日历** : https://ctftime.org/event/2411.ics  
+    
 ??? Quote "[VolgaCTF 2024 Final](https://volgactf.ru/en/volgactf-2024/final/)"  
     [![](https://ctftime.org/media/events/logo-social-yellow_15.png){ width="200" align=left }](https://volgactf.ru/en/volgactf-2024/final/)  
     **比赛名称** : [VolgaCTF 2024 Final](https://volgactf.ru/en/volgactf-2024/final/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 35.60  
     **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
     **添加日历** : https://ctftime.org/event/2321.ics  
-    
-??? Quote "[Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)"  
-    [![](https://ctftime.org/media/events/logo_99.png){ width="200" align=left }](https://bts2024.wh.edu.pl/)  
-    **比赛名称** : [Break the Syntax CTF 2024](https://bts2024.wh.edu.pl/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-18 00:00:00 - 2024-05-19 18:00:00 UTC+8  
-    **比赛权重** : 28.30  
-    **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
-    **添加日历** : https://ctftime.org/event/2289.ics  
     
