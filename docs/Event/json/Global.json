@@ -732,18 +732,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "openECSC 2024 - Final Round",
-        "比赛时间": "2024-09-21 18:00:00 - 2024-09-22 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2356.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://open.ecsc2024.it/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "ECSC2024 (https://ctftime.org/team/283828)",
-        "比赛ID": "1084",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "ASIS CTF Quals 2024",
         "比赛时间": "2024-09-21 22:00:00 - 2024-09-22 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2211.ics",
@@ -777,6 +765,18 @@
         "比赛权重": "0.00",
         "赛事主办": "SummerJedi (https://ctftime.org/team/126955)",
         "比赛ID": "675",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "openECSC 2024 - Final Round",
+        "比赛时间": "2024-09-21 18:00:00 - 2024-09-22 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2356.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://open.ecsc2024.it/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "ECSC2024 (https://ctftime.org/team/283828)",
+        "比赛ID": "1084",
         "比赛状态": "past"
     },
     {
@@ -1941,18 +1941,6 @@
         "比赛权重": "20.98",
         "赛事主办": "SAS CREW (https://ctftime.org/team/283057)",
         "比赛ID": "1081",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "VulnX CTF 2024",
-        "比赛时间": "2024-05-18 18:30:00 - 2024-05-19 18:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2318.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://vulncon.in/",
-        "比赛标志": "https://ctftime.org/media/events/VulnX-Profile_pic.png",
-        "比赛权重": "0",
-        "赛事主办": "VulnX (https://ctftime.org/team/117274)",
-        "比赛ID": "461",
         "比赛状态": "past"
     }
 ]

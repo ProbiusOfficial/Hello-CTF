@@ -917,15 +917,6 @@ hide:
                 **赛事主办** : FuzzLand (https://ctftime.org/team/270659)  
                 **添加日历** : https://ctftime.org/event/2492.ics  
                 
-            ??? Quote "[openECSC 2024 - Final Round](https://open.ecsc2024.it/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://open.ecsc2024.it/)  
-                **比赛名称** : [openECSC 2024 - Final Round](https://open.ecsc2024.it/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-21 18:00:00 - 2024-09-22 18:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
-                **添加日历** : https://ctftime.org/event/2356.ics  
-                
             ??? Quote "[ASIS CTF Quals 2024](https://asisctf.com/)"  
                 [![](https://ctftime.org/media/events/asisctf.jpg){ width="200" align=left }](https://asisctf.com/)  
                 **比赛名称** : [ASIS CTF Quals 2024](https://asisctf.com/)  
@@ -1032,6 +1023,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : SummerJedi (https://ctftime.org/team/126955)  
                 **添加日历** : https://ctftime.org/event/2422.ics  
+                
+            ??? Quote "[openECSC 2024 - Final Round](https://open.ecsc2024.it/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://open.ecsc2024.it/)  
+                **比赛名称** : [openECSC 2024 - Final Round](https://open.ecsc2024.it/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-21 18:00:00 - 2024-09-22 18:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
+                **添加日历** : https://ctftime.org/event/2356.ics  
                 
             ??? Quote "[GMO Cybersecurity Contest - IERAE CTF 2024](https://gmo-cybersecurity.com/event/ieraectf24/)"  
                 [![](https://ctftime.org/media/events/ierae-ctf-logo_2_1.png){ width="200" align=left }](https://gmo-cybersecurity.com/event/ieraectf24/)  
@@ -1905,15 +1905,6 @@ hide:
                 **比赛权重** : 20.98  
                 **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
                 **添加日历** : https://ctftime.org/event/2299.ics  
-                
-            ??? Quote "[VulnX CTF 2024](https://vulncon.in/)"  
-                [![](https://ctftime.org/media/events/VulnX-Profile_pic.png){ width="200" align=left }](https://vulncon.in/)  
-                **比赛名称** : [VulnX CTF 2024](https://vulncon.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-18 18:30:00 - 2024-05-19 18:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : VulnX (https://ctftime.org/team/117274)  
-                **添加日历** : https://ctftime.org/event/2318.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
