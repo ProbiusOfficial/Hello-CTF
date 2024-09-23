@@ -899,15 +899,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
                 
-            ??? Quote "[BlazCTF 2024](https://ctf.blaz.ai/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.blaz.ai/)  
-                **比赛名称** : [BlazCTF 2024](https://ctf.blaz.ai/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-21 09:00:00 - 2024-09-23 09:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : FuzzLand (https://ctftime.org/team/270659)  
-                **添加日历** : https://ctftime.org/event/2492.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[第五届“闽盾杯”网络空间安全大塞黑盾全国大学生赛道（决赛）](http://heidunbei.si.net.cn/hdc/cover)"  
@@ -1041,6 +1032,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : idnsa (https://ctftime.org/team/239714)  
                 **添加日历** : https://ctftime.org/event/2411.ics  
+                
+            ??? Quote "[BlazCTF 2024](https://ctf.blaz.ai/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.blaz.ai/)  
+                **比赛名称** : [BlazCTF 2024](https://ctf.blaz.ai/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-21 09:00:00 - 2024-09-23 09:00:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : FuzzLand (https://ctftime.org/team/270659)  
+                **添加日历** : https://ctftime.org/event/2492.ics  
                 
             ??? Quote "[PatriotCTF 2024](http://pctf.competitivecyber.club/)"  
                 [![](https://ctftime.org/media/events/masoncc_2.png){ width="200" align=left }](http://pctf.competitivecyber.club/)  
@@ -1878,15 +1878,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : DarkArmy (https://ctftime.org/team/26569)  
                 **添加日历** : https://ctftime.org/event/2369.ics  
-                
-            ??? Quote "[Hacky'Nov 0x03](https://hackynov.fr/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://hackynov.fr/)  
-                **比赛名称** : [Hacky'Nov 0x03](https://hackynov.fr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-18 22:00:00 - 2024-05-19 15:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Hacky'Nov (https://ctftime.org/team/178939)  
-                **添加日历** : https://ctftime.org/event/2319.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
