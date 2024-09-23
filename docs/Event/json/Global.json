@@ -642,7 +642,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://lakectf.epfl.ch/",
         "比赛标志": "https://ctftime.org/media/events/7fb065c04dbec7e33dfbb1f4456196c7.png",
-        "比赛权重": "0.00",
+        "比赛权重": "36.00",
         "赛事主办": "polygl0ts (https://ctftime.org/team/53791)",
         "比赛ID": "818",
         "比赛状态": "oncoming"
