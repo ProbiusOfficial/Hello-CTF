@@ -188,7 +188,7 @@ comments: true
     **比赛名称** : [KubanCTF Qualifier 2024](https://kubanctf.ru/signUp)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-09-14 15:00:00 - 2024-09-14 23:00:00 UTC+8  
-    **比赛权重** : 15.94  
+    **比赛权重** : 16.37  
     **赛事主办** : Codeby Games (https://ctftime.org/team/299486)  
     **添加日历** : https://ctftime.org/event/2464.ics  
     
@@ -404,7 +404,7 @@ comments: true
     **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-08-17 08:00:00 - 2024-08-19 08:00:00 UTC+8  
-    **比赛权重** : 52.11  
+    **比赛权重** : 52.13  
     **赛事主办** : idek (https://ctftime.org/team/157039)  
     **添加日历** : https://ctftime.org/event/2304.ics  
     
