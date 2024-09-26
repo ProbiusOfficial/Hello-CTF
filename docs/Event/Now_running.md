@@ -56,12 +56,3 @@ comments: true
     **赛事主办** : H7Tex (https://ctftime.org/team/281844)  
     **添加日历** : https://ctftime.org/event/2491.ics  
     
-??? Quote "[Haruulzangi CTF 2024 Finals](https://dashboard.haruulzangi.mn/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://dashboard.haruulzangi.mn/)  
-    **比赛名称** : [Haruulzangi CTF 2024 Finals](https://dashboard.haruulzangi.mn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-26 12:00:00 - 2024-09-26 17:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
-    **添加日历** : https://ctftime.org/event/2494.ics  
-    

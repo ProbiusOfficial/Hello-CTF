@@ -84,6 +84,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Haruulzangi CTF 2024 Finals](https://dashboard.haruulzangi.mn/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://dashboard.haruulzangi.mn/)  
+    **比赛名称** : [Haruulzangi CTF 2024 Finals](https://dashboard.haruulzangi.mn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-09-26 12:00:00 - 2024-09-26 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
+    **添加日历** : https://ctftime.org/event/2494.ics  
+    
 ??? Quote "[Haruulzangi CTF 2024 Round 2](https://dashboard.haruulzangi.mn/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://dashboard.haruulzangi.mn/)  
     **比赛名称** : [Haruulzangi CTF 2024 Round 2](https://dashboard.haruulzangi.mn/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 41.61  
     **赛事主办** : JustHacking (https://ctftime.org/team/59573)  
     **添加日历** : https://ctftime.org/event/2364.ics  
-    
-??? Quote "[BSides Mumbai CTF 2024](https://ctf.bsidesmumbai.in/)"  
-    [![](https://ctftime.org/media/events/Logo_11.png){ width="200" align=left }](https://ctf.bsidesmumbai.in/)  
-    **比赛名称** : [BSides Mumbai CTF 2024](https://ctf.bsidesmumbai.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-19 18:30:00 - 2024-05-20 06:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : DarkArmy (https://ctftime.org/team/26569)  
-    **添加日历** : https://ctftime.org/event/2369.ics  
     

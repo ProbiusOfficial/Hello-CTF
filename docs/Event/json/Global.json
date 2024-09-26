@@ -705,7 +705,7 @@
         "比赛权重": "0",
         "赛事主办": "haruulzangi-organizers (https://ctftime.org/team/266812)",
         "比赛ID": "985",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Haruulzangi CTF 2024 Round 2",
@@ -1893,18 +1893,6 @@
         "比赛权重": "41.61",
         "赛事主办": "JustHacking (https://ctftime.org/team/59573)",
         "比赛ID": "438",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BSides Mumbai CTF 2024",
-        "比赛时间": "2024-05-19 18:30:00 - 2024-05-20 06:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2369.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.bsidesmumbai.in/",
-        "比赛标志": "https://ctftime.org/media/events/Logo_11.png",
-        "比赛权重": "0",
-        "赛事主办": "DarkArmy (https://ctftime.org/team/26569)",
-        "比赛ID": "1120",
         "比赛状态": "past"
     }
 ]
