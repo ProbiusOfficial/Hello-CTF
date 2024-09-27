@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "DefCamp Capture the Flag (D-CTF) 2024 Quals",
-        "比赛时间": "2024-09-27 18:00:00 - 2024-09-29 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2480.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dctf24-quals.cyber-edu.co/",
-        "比赛标志": "https://ctftime.org/media/events/w5NGLTFBTZWXGg8lLPAeyg-Photoroom.png",
-        "比赛权重": "33.56",
-        "赛事主办": "CCSIR.org (https://ctftime.org/team/9831)",
-        "比赛ID": "73",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Season IV, US Cyber Games Flag Fest CTF",
         "比赛时间": "2024-09-28 02:00:00 - 2024-10-06 11:59:58 UTC+8",
         "添加日历": "https://ctftime.org/event/2472.ics",
@@ -705,6 +693,18 @@
         "比赛权重": "0",
         "赛事主办": "H7Tex (https://ctftime.org/team/281844)",
         "比赛ID": "1169",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "DefCamp Capture the Flag (D-CTF) 2024 Quals",
+        "比赛时间": "2024-09-27 18:00:00 - 2024-09-29 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2480.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://dctf24-quals.cyber-edu.co/",
+        "比赛标志": "https://ctftime.org/media/events/w5NGLTFBTZWXGg8lLPAeyg-Photoroom.png",
+        "比赛权重": "33.56",
+        "赛事主办": "CCSIR.org (https://ctftime.org/team/9831)",
+        "比赛ID": "73",
         "比赛状态": "nowrunning"
     },
     {

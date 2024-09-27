@@ -56,3 +56,12 @@ comments: true
     **赛事主办** : H7Tex (https://ctftime.org/team/281844)  
     **添加日历** : https://ctftime.org/event/2491.ics  
     
+??? Quote "[DefCamp Capture the Flag (D-CTF) 2024 Quals](https://dctf24-quals.cyber-edu.co/)"  
+    [![](https://ctftime.org/media/events/w5NGLTFBTZWXGg8lLPAeyg-Photoroom.png){ width="200" align=left }](https://dctf24-quals.cyber-edu.co/)  
+    **比赛名称** : [DefCamp Capture the Flag (D-CTF) 2024 Quals](https://dctf24-quals.cyber-edu.co/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-09-27 18:00:00 - 2024-09-29 17:00:00 UTC+8  
+    **比赛权重** : 33.56  
+    **赛事主办** : CCSIR.org (https://ctftime.org/team/9831)  
+    **添加日历** : https://ctftime.org/event/2480.ics  
+    
