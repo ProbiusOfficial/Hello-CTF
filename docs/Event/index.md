@@ -375,9 +375,9 @@ hide:
                 **赛事主办** : BitsLab (https://ctftime.org/team/331124)  
                 **添加日历** : https://ctftime.org/event/2509.ics  
                 
-            ??? Quote "[justCTF 2024 finals](https://2024.justctf.team/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://2024.justctf.team/)  
-                **比赛名称** : [justCTF 2024 finals](https://2024.justctf.team/)  
+            ??? Quote "[justCTF 2024 finals](https://2024finals.justctf.team/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://2024finals.justctf.team/)  
+                **比赛名称** : [justCTF 2024 finals](https://2024finals.justctf.team/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-09-28 18:00:00 - 2024-09-29 18:00:00 UTC+8  
                 **比赛权重** : 0.00  
