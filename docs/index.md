@@ -82,15 +82,6 @@ hide:
             **其他说明** : QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/  
                 
     === "国外比赛"
-        ??? Quote "[Season IV, US Cyber Games Flag Fest CTF](https://www.uscybergames.com/season-4-draft-experience#ctf)"  
-            [![](https://ctftime.org/media/events/2022-10-USCG_S3_logos_cybergames_1_1.png){ width="200" align=left }](https://www.uscybergames.com/season-4-draft-experience#ctf)  
-            **比赛名称** : [Season IV, US Cyber Games Flag Fest CTF](https://www.uscybergames.com/season-4-draft-experience#ctf)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-09-28 02:00:00 - 2024-10-06 11:59:58 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
-            **添加日历** : https://ctftime.org/event/2472.ics  
-            
         ??? Quote "[BuckeyeCTF 2024](https://pwnoh.io/)"  
             [![](https://ctftime.org/media/events/logo-black-square.jpeg){ width="200" align=left }](https://pwnoh.io/)  
             **比赛名称** : [BuckeyeCTF 2024](https://pwnoh.io/)  
@@ -117,6 +108,15 @@ hide:
             **比赛权重** : 37.00  
             **赛事主办** : Syclover (https://ctftime.org/team/455)  
             **添加日历** : https://ctftime.org/event/2483.ics  
+            
+        ??? Quote "[justCTF 2024 finals](https://2024finals.justctf.team/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://2024finals.justctf.team/)  
+            **比赛名称** : [justCTF 2024 finals](https://2024finals.justctf.team/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-09-28 18:00:00 - 2024-09-29 18:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
+            **添加日历** : https://ctftime.org/event/2484.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
