@@ -65,3 +65,12 @@ comments: true
     **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
     **添加日历** : https://ctftime.org/event/2472.ics  
     
+??? Quote "[BuckeyeCTF 2024](https://pwnoh.io/)"  
+    [![](https://ctftime.org/media/events/logo-black-square.jpeg){ width="200" align=left }](https://pwnoh.io/)  
+    **比赛名称** : [BuckeyeCTF 2024](https://pwnoh.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-09-28 04:00:00 - 2024-09-30 04:00:00 UTC+8  
+    **比赛权重** : 50.91  
+    **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
+    **添加日历** : https://ctftime.org/event/2449.ics  
+    
