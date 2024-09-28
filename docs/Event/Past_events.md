@@ -84,6 +84,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[FAUST CTF 2024](https://2024.faustctf.net/)"  
+    [![](https://ctftime.org/media/events/faust2024_1.png){ width="200" align=left }](https://2024.faustctf.net/)  
+    **比赛名称** : [FAUST CTF 2024](https://2024.faustctf.net/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-09-28 20:00:00 - 2024-09-29 05:00:00 UTC+8  
+    **比赛权重** : 93.11  
+    **赛事主办** : FAUST (https://ctftime.org/team/550)  
+    **添加日历** : https://ctftime.org/event/2351.ics  
+    
 ??? Quote "[Haruulzangi CTF 2024 Finals](https://dashboard.haruulzangi.mn/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://dashboard.haruulzangi.mn/)  
     **比赛名称** : [Haruulzangi CTF 2024 Finals](https://dashboard.haruulzangi.mn/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 24.41  
     **赛事主办** : L3ak (https://ctftime.org/team/220336)  
     **添加日历** : https://ctftime.org/event/2322.ics  
-    
-??? Quote "[AI CTF 2024](https://aictf.phdays.fun/)"  
-    [![](https://ctftime.org/media/events/AI_CTF_AI_TRACK_.png){ width="200" align=left }](https://aictf.phdays.fun/)  
-    **比赛名称** : [AI CTF 2024](https://aictf.phdays.fun/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-24 17:00:00 - 2024-05-26 05:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : [TechnoPandas] (https://ctftime.org/team/1946)  
-    **添加日历** : https://ctftime.org/event/2383.ics  
     
