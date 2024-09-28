@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "FAUST CTF 2024",
-        "比赛时间": "2024-09-28 20:00:00 - 2024-09-29 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2351.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://2024.faustctf.net/",
-        "比赛标志": "https://ctftime.org/media/events/faust2024_1.png",
-        "比赛权重": "93.11",
-        "赛事主办": "FAUST (https://ctftime.org/team/550)",
-        "比赛ID": "117",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "AltayCTF 2024",
         "比赛时间": "2024-10-05 11:00:00 - 2024-10-06 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2376.ics",
@@ -693,6 +681,18 @@
         "比赛权重": "0",
         "赛事主办": "justCatTheFish (https://ctftime.org/team/33893)",
         "比赛ID": "399",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "FAUST CTF 2024",
+        "比赛时间": "2024-09-28 20:00:00 - 2024-09-29 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2351.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://2024.faustctf.net/",
+        "比赛标志": "https://ctftime.org/media/events/faust2024_1.png",
+        "比赛权重": "93.11",
+        "赛事主办": "FAUST (https://ctftime.org/team/550)",
+        "比赛ID": "117",
         "比赛状态": "nowrunning"
     },
     {
