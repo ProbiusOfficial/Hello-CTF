@@ -82,15 +82,6 @@ hide:
             **其他说明** : QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/  
                 
     === "国外比赛"
-        ??? Quote "[justCTF 2024 finals](https://2024finals.justctf.team/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://2024finals.justctf.team/)  
-            **比赛名称** : [justCTF 2024 finals](https://2024finals.justctf.team/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-09-28 18:00:00 - 2024-09-29 18:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
-            **添加日历** : https://ctftime.org/event/2484.ics  
-            
         ??? Quote "[FAUST CTF 2024](https://2024.faustctf.net/)"  
             [![](https://ctftime.org/media/events/faust2024_1.png){ width="200" align=left }](https://2024.faustctf.net/)  
             **比赛名称** : [FAUST CTF 2024](https://2024.faustctf.net/)  
@@ -117,6 +108,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : SharLike (https://ctftime.org/team/16172)  
             **添加日历** : https://ctftime.org/event/2376.ics  
+            
+        ??? Quote "[RuCTF Finals 2024](http://ructf.org/)"  
+            [![](https://ctftime.org){ width="200" align=left }](http://ructf.org/)  
+            **比赛名称** : [RuCTF Finals 2024](http://ructf.org/)  
+            **比赛形式** : Attack-Defense  
+            **比赛时间** : 2024-10-05 13:00:00 - 2024-10-07 03:00:00 UTC+8  
+            **比赛权重** : 25.00  
+            **赛事主办** : HackerDom (https://ctftime.org/team/552)  
+            **添加日历** : https://ctftime.org/event/2386.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
