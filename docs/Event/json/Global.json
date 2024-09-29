@@ -612,18 +612,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "DefCamp Capture the Flag (D-CTF) 2024 Quals",
-        "比赛时间": "2024-09-27 18:00:00 - 2024-09-29 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2480.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dctf24-quals.cyber-edu.co/",
-        "比赛标志": "https://ctftime.org/media/events/w5NGLTFBTZWXGg8lLPAeyg-Photoroom.png",
-        "比赛权重": "33.56",
-        "赛事主办": "CCSIR.org (https://ctftime.org/team/9831)",
-        "比赛ID": "73",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Season IV, US Cyber Games Flag Fest CTF",
         "比赛时间": "2024-09-28 02:00:00 - 2024-10-06 11:59:58 UTC+8",
         "添加日历": "https://ctftime.org/event/2472.ics",
@@ -693,6 +681,18 @@
         "比赛权重": "0.00",
         "赛事主办": "BitsLab (https://ctftime.org/team/331124)",
         "比赛ID": "1166",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "DefCamp Capture the Flag (D-CTF) 2024 Quals",
+        "比赛时间": "2024-09-27 18:00:00 - 2024-09-29 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2480.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://dctf24-quals.cyber-edu.co/",
+        "比赛标志": "https://ctftime.org/media/events/w5NGLTFBTZWXGg8lLPAeyg-Photoroom.png",
+        "比赛权重": "33.56",
+        "赛事主办": "CCSIR.org (https://ctftime.org/team/9831)",
+        "比赛ID": "73",
         "比赛状态": "past"
     },
     {
@@ -1857,18 +1857,6 @@
         "比赛权重": "72.06",
         "赛事主办": "ångstromCTF Organizers (https://ctftime.org/team/15734)",
         "比赛ID": "146",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BTCTF I",
-        "比赛时间": "2024-05-25 04:00:00 - 2024-05-27 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2340.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://btcodeclub.vercel.app/",
-        "比赛标志": "https://ctftime.org/media/events/Screen_Shot_2024-04-10_at_5.52.43_PM.png",
-        "比赛权重": "0",
-        "赛事主办": "btcodeclub (https://ctftime.org/team/278477)",
-        "比赛ID": "1055",
         "比赛状态": "past"
     }
 ]
