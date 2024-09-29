@@ -74,12 +74,3 @@ comments: true
     **赛事主办** : Syclover (https://ctftime.org/team/455)  
     **添加日历** : https://ctftime.org/event/2483.ics  
     
-??? Quote "[justCTF 2024 finals](https://2024finals.justctf.team/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://2024finals.justctf.team/)  
-    **比赛名称** : [justCTF 2024 finals](https://2024finals.justctf.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-28 18:00:00 - 2024-09-29 18:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
-    **添加日历** : https://ctftime.org/event/2484.ics  
-    
