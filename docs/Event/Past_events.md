@@ -93,6 +93,15 @@ comments: true
     **赛事主办** : FAUST (https://ctftime.org/team/550)  
     **添加日历** : https://ctftime.org/event/2351.ics  
     
+??? Quote "[Capture the Flag Competition in TON 2024](https://ctf.tonbit.xyz/)"  
+    [![](https://ctftime.org/media/events/TonBit.png){ width="200" align=left }](https://ctf.tonbit.xyz/)  
+    **比赛名称** : [Capture the Flag Competition in TON 2024](https://ctf.tonbit.xyz/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-09-28 09:00:00 - 2024-09-29 09:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : BitsLab (https://ctftime.org/team/331124)  
+    **添加日历** : https://ctftime.org/event/2509.ics  
+    
 ??? Quote "[Haruulzangi CTF 2024 Finals](https://dashboard.haruulzangi.mn/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://dashboard.haruulzangi.mn/)  
     **比赛名称** : [Haruulzangi CTF 2024 Finals](https://dashboard.haruulzangi.mn/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : btcodeclub (https://ctftime.org/team/278477)  
     **添加日历** : https://ctftime.org/event/2340.ics  
-    
-??? Quote "[L3akCTF 2024](https://ctf.l3ak.team/)"  
-    [![](https://ctftime.org/media/events/ctf_final.png){ width="200" align=left }](https://ctf.l3ak.team/)  
-    **比赛名称** : [L3akCTF 2024](https://ctf.l3ak.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-24 20:00:00 - 2024-05-26 20:00:00 UTC+8  
-    **比赛权重** : 24.41  
-    **赛事主办** : L3ak (https://ctftime.org/team/220336)  
-    **添加日历** : https://ctftime.org/event/2322.ics  
     
