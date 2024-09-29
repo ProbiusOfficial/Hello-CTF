@@ -726,7 +726,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://dashboard.haruulzangi.mn/",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "haruulzangi-organizers (https://ctftime.org/team/266812)",
         "比赛ID": "985",
         "比赛状态": "past"
