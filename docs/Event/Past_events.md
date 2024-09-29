@@ -111,6 +111,15 @@ comments: true
     **赛事主办** : BitsLab (https://ctftime.org/team/331124)  
     **添加日历** : https://ctftime.org/event/2509.ics  
     
+??? Quote "[BuckeyeCTF 2024](https://pwnoh.io/)"  
+    [![](https://ctftime.org/media/events/logo-black-square.jpeg){ width="200" align=left }](https://pwnoh.io/)  
+    **比赛名称** : [BuckeyeCTF 2024](https://pwnoh.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-09-28 04:00:00 - 2024-09-30 04:00:00 UTC+8  
+    **比赛权重** : 50.91  
+    **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
+    **添加日历** : https://ctftime.org/event/2449.ics  
+    
 ??? Quote "[DefCamp Capture the Flag (D-CTF) 2024 Quals](https://dctf24-quals.cyber-edu.co/)"  
     [![](https://ctftime.org/media/events/w5NGLTFBTZWXGg8lLPAeyg-Photoroom.png){ width="200" align=left }](https://dctf24-quals.cyber-edu.co/)  
     **比赛名称** : [DefCamp Capture the Flag (D-CTF) 2024 Quals](https://dctf24-quals.cyber-edu.co/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : GEEKCON (https://ctftime.org/team/255059)  
     **添加日历** : https://ctftime.org/event/2384.ics  
-    
-??? Quote "[RCTF 2024](https://rctf.rois.io/)"  
-    [![](https://ctftime.org/media/events/logo_7_1_1.jpg){ width="200" align=left }](https://rctf.rois.io/)  
-    **比赛名称** : [RCTF 2024](https://rctf.rois.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-25 09:00:00 - 2024-05-27 09:00:00 UTC+8  
-    **比赛权重** : 83.50  
-    **赛事主办** : ROIS (https://ctftime.org/team/6476)  
-    **添加日历** : https://ctftime.org/event/2374.ics  
     
