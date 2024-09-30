@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Quote "NewStar CTF 2024"  
+    **比赛名称** : [NewStar CTF 2024](https://ns.openctf.net)  
+    **比赛类型** : 个人赛  
+    **报名时间** : 2024年09月13日 00:00 - 2024年11月03日 21:00  
+    **比赛时间** : 2024年09月30日 09:00 - 2024年11月03日 21:00  
+    **其他说明** : 赛事QQ群：1169651901  
+    
 ??? Quote "第八届御网杯信息安全大赛"  
     **比赛名称** : [第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)  
     **比赛类型** : 个人赛 and 团体赛|3人  
@@ -55,13 +62,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
     **添加日历** : https://ctftime.org/event/2472.ics  
-    
-??? Quote "[SCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)"  
-    [![](https://ctftime.org/media/events/syclover_2.jpg){ width="200" align=left }](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)  
-    **比赛名称** : [SCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-28 09:00:00 - 2024-09-30 09:00:00 UTC+8  
-    **比赛权重** : 37.00  
-    **赛事主办** : Syclover (https://ctftime.org/team/455)  
-    **添加日历** : https://ctftime.org/event/2483.ics  
     

@@ -102,6 +102,15 @@ comments: true
     **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
     **添加日历** : https://ctftime.org/event/2484.ics  
     
+??? Quote "[SCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)"  
+    [![](https://ctftime.org/media/events/syclover_2.jpg){ width="200" align=left }](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)  
+    **比赛名称** : [SCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-09-28 09:00:00 - 2024-09-30 09:00:00 UTC+8  
+    **比赛权重** : 37.00  
+    **赛事主办** : Syclover (https://ctftime.org/team/455)  
+    **添加日历** : https://ctftime.org/event/2483.ics  
+    
 ??? Quote "[Capture the Flag Competition in TON 2024](https://ctf.tonbit.xyz/)"  
     [![](https://ctftime.org/media/events/TonBit.png){ width="200" align=left }](https://ctf.tonbit.xyz/)  
     **比赛名称** : [Capture the Flag Competition in TON 2024](https://ctf.tonbit.xyz/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
     **添加日历** : https://ctftime.org/event/2372.ics  
-    
-??? Quote "[AVSS Contest Final 2024](https://avss.geekcon.top/)"  
-    [![](https://ctftime.org/media/events/AVSS_1.png){ width="200" align=left }](https://avss.geekcon.top/)  
-    **比赛名称** : [AVSS Contest Final 2024](https://avss.geekcon.top/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-25 17:30:00 - 2024-05-26 20:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : GEEKCON (https://ctftime.org/team/255059)  
-    **添加日历** : https://ctftime.org/event/2384.ics  
     

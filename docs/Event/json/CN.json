@@ -25,17 +25,6 @@
                 "status": 1
             },
             {
-                "name": "NewStar CTF 2024",
-                "link": "https://ns.openctf.net",
-                "type": "个人赛",
-                "bmks": "2024年09月13日 00:00",
-                "bmjz": "2024年11月03日 21:00",
-                "bsks": "2024年09月30日 09:00",
-                "bsjs": "2024年11月03日 21:00",
-                "readmore": "赛事QQ群：1169651901",
-                "status": 1
-            },
-            {
                 "name": "2024'源鲁杯'高校网络安全技能大赛",
                 "link": "https://ctf.yuanloo.com/",
                 "type": "个人线上赛",
@@ -45,6 +34,17 @@
                 "bsjs": "2024年10月23日 15:00",
                 "readmore": "QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/",
                 "status": 1
+            },
+            {
+                "name": "NewStar CTF 2024",
+                "link": "https://ns.openctf.net",
+                "type": "个人赛",
+                "bmks": "2024年09月13日 00:00",
+                "bmjz": "2024年11月03日 21:00",
+                "bsks": "2024年09月30日 09:00",
+                "bsjs": "2024年11月03日 21:00",
+                "readmore": "赛事QQ群：1169651901",
+                "status": 3
             },
             {
                 "name": "第八届御网杯信息安全大赛",

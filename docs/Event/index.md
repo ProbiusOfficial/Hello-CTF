@@ -299,13 +299,6 @@ hide:
             **比赛时间** : 2024年10月06日 09:00 - 2024年11月03日 21:00  
             **其他说明** : QQ群: 746958713  
             
-        ??? Quote "[NewStar CTF 2024](https://ns.openctf.net)"  
-            **比赛名称** : [NewStar CTF 2024](https://ns.openctf.net)  
-            **比赛类型** : 个人赛  
-            **报名时间** : 2024年09月13日 00:00 - 2024年11月03日 21:00  
-            **比赛时间** : 2024年09月30日 09:00 - 2024年11月03日 21:00  
-            **其他说明** : 赛事QQ群：1169651901  
-            
         ??? Quote "[2024'源鲁杯'高校网络安全技能大赛](https://ctf.yuanloo.com/)"  
             **比赛名称** : [2024'源鲁杯'高校网络安全技能大赛](https://ctf.yuanloo.com/)  
             **比赛类型** : 个人线上赛  
@@ -328,13 +321,6 @@ hide:
                 **报名时间** : 2024年09月17日 10:30 - 2024年11月03日 21:00  
                 **比赛时间** : 2024年10月06日 09:00 - 2024年11月03日 21:00  
                 **其他说明** : QQ群: 746958713  
-                
-            ??? Quote "[NewStar CTF 2024](https://ns.openctf.net)"  
-                **比赛名称** : [NewStar CTF 2024](https://ns.openctf.net)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年09月13日 00:00 - 2024年11月03日 21:00  
-                **比赛时间** : 2024年09月30日 09:00 - 2024年11月03日 21:00  
-                **其他说明** : 赛事QQ群：1169651901  
                 
             ??? Quote "[2024'源鲁杯'高校网络安全技能大赛](https://ctf.yuanloo.com/)"  
                 **比赛名称** : [2024'源鲁杯'高校网络安全技能大赛](https://ctf.yuanloo.com/)  
@@ -787,6 +773,13 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
+            ??? Quote "[NewStar CTF 2024](https://ns.openctf.net)"  
+                **比赛名称** : [NewStar CTF 2024](https://ns.openctf.net)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年09月13日 00:00 - 2024年11月03日 21:00  
+                **比赛时间** : 2024年09月30日 09:00 - 2024年11月03日 21:00  
+                **其他说明** : 赛事QQ群：1169651901  
+                
             ??? Quote "[第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)"  
                 **比赛名称** : [第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)  
                 **比赛类型** : 个人赛 and 团体赛|3人  
@@ -835,15 +828,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
                 **添加日历** : https://ctftime.org/event/2472.ics  
-                
-            ??? Quote "[SCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)"  
-                [![](https://ctftime.org/media/events/syclover_2.jpg){ width="200" align=left }](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)  
-                **比赛名称** : [SCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-28 09:00:00 - 2024-09-30 09:00:00 UTC+8  
-                **比赛权重** : 37.00  
-                **赛事主办** : Syclover (https://ctftime.org/team/455)  
-                **添加日历** : https://ctftime.org/event/2483.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -942,6 +926,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
                 **添加日历** : https://ctftime.org/event/2484.ics  
+                
+            ??? Quote "[SCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)"  
+                [![](https://ctftime.org/media/events/syclover_2.jpg){ width="200" align=left }](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)  
+                **比赛名称** : [SCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-28 09:00:00 - 2024-09-30 09:00:00 UTC+8  
+                **比赛权重** : 37.00  
+                **赛事主办** : Syclover (https://ctftime.org/team/455)  
+                **添加日历** : https://ctftime.org/event/2483.ics  
                 
             ??? Quote "[Capture the Flag Competition in TON 2024](https://ctf.tonbit.xyz/)"  
                 [![](https://ctftime.org/media/events/TonBit.png){ width="200" align=left }](https://ctf.tonbit.xyz/)  
@@ -1815,15 +1808,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
                 **添加日历** : https://ctftime.org/event/2372.ics  
-                
-            ??? Quote "[AVSS Contest Final 2024](https://avss.geekcon.top/)"  
-                [![](https://ctftime.org/media/events/AVSS_1.png){ width="200" align=left }](https://avss.geekcon.top/)  
-                **比赛名称** : [AVSS Contest Final 2024](https://avss.geekcon.top/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-25 17:30:00 - 2024-05-26 20:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : GEEKCON (https://ctftime.org/team/255059)  
-                **添加日历** : https://ctftime.org/event/2384.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

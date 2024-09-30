@@ -624,18 +624,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "SCTF 2024",
-        "比赛时间": "2024-09-28 09:00:00 - 2024-09-30 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2483.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb",
-        "比赛标志": "https://ctftime.org/media/events/syclover_2.jpg",
-        "比赛权重": "37.00",
-        "赛事主办": "Syclover (https://ctftime.org/team/455)",
-        "比赛ID": "468",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "FAUST CTF 2024",
         "比赛时间": "2024-09-28 20:00:00 - 2024-09-29 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2351.ics",
@@ -657,6 +645,18 @@
         "比赛权重": "0",
         "赛事主办": "justCatTheFish (https://ctftime.org/team/33893)",
         "比赛ID": "399",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "SCTF 2024",
+        "比赛时间": "2024-09-28 09:00:00 - 2024-09-30 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2483.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb",
+        "比赛标志": "https://ctftime.org/media/events/syclover_2.jpg",
+        "比赛权重": "37.00",
+        "赛事主办": "Syclover (https://ctftime.org/team/455)",
+        "比赛ID": "468",
         "比赛状态": "past"
     },
     {
@@ -1821,18 +1821,6 @@
         "比赛权重": "0.00",
         "赛事主办": "haruulzangi-organizers (https://ctftime.org/team/266812)",
         "比赛ID": "985",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "AVSS Contest Final 2024",
-        "比赛时间": "2024-05-25 17:30:00 - 2024-05-26 20:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2384.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://avss.geekcon.top/",
-        "比赛标志": "https://ctftime.org/media/events/AVSS_1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "GEEKCON (https://ctftime.org/team/255059)",
-        "比赛ID": "976",
         "比赛状态": "past"
     }
 ]
