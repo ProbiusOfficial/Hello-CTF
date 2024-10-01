@@ -308,6 +308,13 @@ hide:
             
     === "*即将开始*"
         === "国内赛事"
+            ??? Quote "[BRICS+ CTF Quals 2024](https://brics-ctf.com/)"  
+                **比赛名称** : [BRICS+ CTF Quals 2024](https://brics-ctf.com/)  
+                **比赛类型** : 团队赛  
+                **报名时间** : 2024年10月05日 18:00 - 2024年10月06日 18:00  
+                **比赛时间** : 2024年10月05日 18:00 - 2024年10月06日 18:00  
+                **其他说明** : 初赛将以在线解题赛的形式进行.计划邀请来自金砖国家的15支队伍（每个国家不超过3支队伍）以及总排名前10的最佳队伍参与线上的决赛.同时详情信息请加入discord -> https://discord.gg/3AwqYTvaMw 决赛总奖池7w人民币左右  
+                
             ??? Quote "[SHCTF2024](暂无)"  
                 **比赛名称** : [SHCTF2024](暂无)  
                 **比赛类型** : 个人赛  
@@ -787,13 +794,6 @@ hide:
                 **比赛时间** : 2024年09月21日 00:00 - 2024年10月27日 23:59  
                 **其他说明** : 更多信息请前往官网https://www.hncsisc.com 的“赛事活动”查看  
                 
-            ??? Quote "[BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)"  
-                **比赛名称** : [BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)  
-                **比赛类型** : 1-2 人  
-                **报名时间** : 2024年08月5日 00:00 - 2024年09月30日 21:00  
-                **比赛时间** : 2024年08月15日 09:00 - 2024年09月30日 21:00  
-                **其他说明** : QQ 群：530184592 面向新生的比赛，题目分 Week 1 - 7，从入门到挑战循序渐进  
-                
             ??? Quote "[MoeCTF 2024](https://ctf.xidian.edu.cn)"  
                 **比赛名称** : [MoeCTF 2024](https://ctf.xidian.edu.cn)  
                 **比赛类型** : 个人赛  
@@ -831,6 +831,13 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)"  
+                **比赛名称** : [BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)  
+                **比赛类型** : 1-2 人  
+                **报名时间** : 2024年08月5日 00:00 - 2024年09月30日 21:00  
+                **比赛时间** : 2024年08月15日 09:00 - 2024年09月30日 21:00  
+                **其他说明** : QQ 群：530184592 面向新生的比赛，题目分 Week 1 - 7，从入门到挑战循序渐进  
+                
             ??? Quote "[“华为杯”第三届中国研究生网络安全创新大赛](https://cpipc.acge.org.cn//pw/detail/2c9080188fc20569018fe6375eeb2eb2)"  
                 **比赛名称** : [“华为杯”第三届中国研究生网络安全创新大赛](https://cpipc.acge.org.cn//pw/detail/2c9080188fc20569018fe6375eeb2eb2)  
                 **比赛类型** : 团队赛|1-4人  
@@ -927,15 +934,6 @@ hide:
                 **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
                 **添加日历** : https://ctftime.org/event/2484.ics  
                 
-            ??? Quote "[SCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)"  
-                [![](https://ctftime.org/media/events/syclover_2.jpg){ width="200" align=left }](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)  
-                **比赛名称** : [SCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-28 09:00:00 - 2024-09-30 09:00:00 UTC+8  
-                **比赛权重** : 37.00  
-                **赛事主办** : Syclover (https://ctftime.org/team/455)  
-                **添加日历** : https://ctftime.org/event/2483.ics  
-                
             ??? Quote "[Capture the Flag Competition in TON 2024](https://ctf.tonbit.xyz/)"  
                 [![](https://ctftime.org/media/events/TonBit.png){ width="200" align=left }](https://ctf.tonbit.xyz/)  
                 **比赛名称** : [Capture the Flag Competition in TON 2024](https://ctf.tonbit.xyz/)  
@@ -944,6 +942,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : BitsLab (https://ctftime.org/team/331124)  
                 **添加日历** : https://ctftime.org/event/2509.ics  
+                
+            ??? Quote "[SCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)"  
+                [![](https://ctftime.org/media/events/syclover_2.jpg){ width="200" align=left }](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)  
+                **比赛名称** : [SCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-09-28 09:00:00 - 2024-09-30 09:00:00 UTC+8  
+                **比赛权重** : 37.00  
+                **赛事主办** : Syclover (https://ctftime.org/team/455)  
+                **添加日历** : https://ctftime.org/event/2483.ics  
                 
             ??? Quote "[BuckeyeCTF 2024](https://pwnoh.io/)"  
                 [![](https://ctftime.org/media/events/logo-black-square.jpeg){ width="200" align=left }](https://pwnoh.io/)  
@@ -1301,7 +1308,7 @@ hide:
                 **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-08-17 08:00:00 - 2024-08-19 08:00:00 UTC+8  
-                **比赛权重** : 52.13  
+                **比赛权重** : 52.15  
                 **赛事主办** : idek (https://ctftime.org/team/157039)  
                 **添加日历** : https://ctftime.org/event/2304.ics  
                 
