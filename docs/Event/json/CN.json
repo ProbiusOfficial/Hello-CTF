@@ -14,17 +14,6 @@
                 "status": 0
             },
             {
-                "name": "SHCTF2024",
-                "link": "https://shc.tf/",
-                "type": "个人赛",
-                "bmks": "2024年09月26日 00:00",
-                "bmjz": "2024年10月31日 10:00",
-                "bsks": "2024年10月02日 10:00",
-                "bsjs": "2024年10月31日 10:00",
-                "readmore": "QQ 一群：536115792  二群：721693440",
-                "status": 1
-            },
-            {
                 "name": "0xGame 2024",
                 "link": "https://0xgame.exp10it.cn/",
                 "type": "个人赛",
@@ -45,6 +34,17 @@
                 "bsjs": "2024年10月23日 15:00",
                 "readmore": "QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/",
                 "status": 1
+            },
+            {
+                "name": "SHCTF2024",
+                "link": "https://shc.tf/",
+                "type": "个人赛",
+                "bmks": "2024年09月26日 00:00",
+                "bmjz": "2024年10月31日 10:00",
+                "bsks": "2024年10月02日 10:00",
+                "bsjs": "2024年10月31日 10:00",
+                "readmore": "QQ 一群：536115792  二群：721693440",
+                "status": 3
             },
             {
                 "name": "NewStar CTF 2024",
