@@ -120,6 +120,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "GITEX GLOBAL CTF",
+        "比赛时间": "2024-10-14 15:00:00 - 2024-10-15 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2522.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://gitex.ctf.ae/",
+        "比赛标志": "https://ctftime.org/media/events/New_Project_17.png",
+        "比赛权重": "0.00",
+        "赛事主办": "CTF.ae (https://ctftime.org/team/151875)",
+        "比赛ID": "929",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "CTF MetaRed Mexico Anuies-TIC 2024",
         "比赛时间": "2024-10-15 23:00:00 - 2024-10-16 11:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2482.ics",

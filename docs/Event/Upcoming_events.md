@@ -119,6 +119,15 @@ comments: true
     **赛事主办** : 💦​ (https://ctftime.org/team/205897)  
     **添加日历** : https://ctftime.org/event/2479.ics  
     
+??? Quote "[GITEX GLOBAL CTF](https://gitex.ctf.ae/)"  
+    [![](https://ctftime.org/media/events/New_Project_17.png){ width="200" align=left }](https://gitex.ctf.ae/)  
+    **比赛名称** : [GITEX GLOBAL CTF](https://gitex.ctf.ae/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-10-14 15:00:00 - 2024-10-15 20:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : CTF.ae (https://ctftime.org/team/151875)  
+    **添加日历** : https://ctftime.org/event/2522.ics  
+    
 ??? Quote "[CTF MetaRed Mexico Anuies-TIC 2024](https://ctfd.anuies.mx/)"  
     [![](https://ctftime.org/media/events/ctf_2024_1.jpg){ width="200" align=left }](https://ctfd.anuies.mx/)  
     **比赛名称** : [CTF MetaRed Mexico Anuies-TIC 2024](https://ctfd.anuies.mx/)  
