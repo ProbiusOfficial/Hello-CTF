@@ -1,29 +1,5 @@
 [
     {
-        "比赛名称": "BRICS+ CTF Quals 2024",
-        "比赛时间": "2024-10-05 18:00:00 - 2024-10-06 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2389.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://brics-ctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/logo-2024.png",
-        "比赛权重": "25.00",
-        "赛事主办": "ITMO FSIT (https://ctftime.org/team/264636)",
-        "比赛ID": "986",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "TU Delft CTF 2024",
-        "比赛时间": "2024-10-05 18:00:00 - 2024-10-06 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2487.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.ewi.tudelft.nl/",
-        "比赛标志": "https://ctftime.org/media/events/fddd624d58320dba5f40c75a47d72974.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "TU Delft CTF Team (https://ctftime.org/team/134822)",
-        "比赛ID": "842",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "TCP1P CTF 2024: Exploring Nusantara's Digital Realm",
         "比赛时间": "2024-10-11 20:00:00 - 2024-10-13 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2256.ics",
@@ -717,6 +693,30 @@
         "比赛权重": "0",
         "赛事主办": "1nf1n1ty (https://ctftime.org/team/151859)",
         "比赛ID": "1167",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "BRICS+ CTF Quals 2024",
+        "比赛时间": "2024-10-05 18:00:00 - 2024-10-06 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2389.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://brics-ctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/logo-2024.png",
+        "比赛权重": "25.00",
+        "赛事主办": "ITMO FSIT (https://ctftime.org/team/264636)",
+        "比赛ID": "986",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "TU Delft CTF 2024",
+        "比赛时间": "2024-10-05 18:00:00 - 2024-10-06 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2487.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.ewi.tudelft.nl/",
+        "比赛标志": "https://ctftime.org/media/events/fddd624d58320dba5f40c75a47d72974.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "TU Delft CTF Team (https://ctftime.org/team/134822)",
+        "比赛ID": "842",
         "比赛状态": "nowrunning"
     },
     {

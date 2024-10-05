@@ -3,17 +3,6 @@
     "data": {
         "result": [
             {
-                "name": "BRICS+ CTF Quals 2024",
-                "link": "https://brics-ctf.com/",
-                "type": "团队赛",
-                "bmks": "2024年10月05日 18:00",
-                "bmjz": "2024年10月06日 18:00",
-                "bsks": "2024年10月05日 18:00",
-                "bsjs": "2024年10月06日 18:00",
-                "readmore": "初赛将以在线解题赛的形式进行.计划邀请来自金砖国家的15支队伍（每个国家不超过3支队伍）以及总排名前10的最佳队伍参与线上的决赛.同时详情信息请加入discord -> https://discord.gg/3AwqYTvaMw 决赛总奖池7w人民币左右",
-                "status": 0
-            },
-            {
                 "name": "0xGame 2024",
                 "link": "https://0xgame.exp10it.cn/",
                 "type": "个人赛",
@@ -34,6 +23,17 @@
                 "bsjs": "2024年10月23日 15:00",
                 "readmore": "QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/",
                 "status": 1
+            },
+            {
+                "name": "BRICS+ CTF Quals 2024",
+                "link": "https://brics-ctf.com/",
+                "type": "团队赛",
+                "bmks": "2024年10月05日 18:00",
+                "bmjz": "2024年10月06日 18:00",
+                "bsks": "2024年10月05日 18:00",
+                "bsjs": "2024年10月06日 18:00",
+                "readmore": "初赛将以在线解题赛的形式进行.计划邀请来自金砖国家的15支队伍（每个国家不超过3支队伍）以及总排名前10的最佳队伍参与线上的决赛.同时详情信息请加入discord -> https://discord.gg/3AwqYTvaMw 决赛总奖池7w人民币左右",
+                "status": 3
             },
             {
                 "name": "SHCTF2024",
