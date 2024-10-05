@@ -696,18 +696,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "AlpacaHack Round 4 (Rev)",
-        "比赛时间": "2024-10-05 11:00:00 - 2024-10-05 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2499.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://alpacahack.com/ctfs/round-4",
-        "比赛标志": "https://ctftime.org/media/events/ctftime_5.png",
-        "比赛权重": "0",
-        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
-        "比赛ID": "1163",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "RuCTF Finals 2024",
         "比赛时间": "2024-10-05 13:00:00 - 2024-10-07 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2386.ics",
@@ -730,6 +718,18 @@
         "赛事主办": "1nf1n1ty (https://ctftime.org/team/151859)",
         "比赛ID": "1167",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "AlpacaHack Round 4 (Rev)",
+        "比赛时间": "2024-10-05 11:00:00 - 2024-10-05 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2499.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://alpacahack.com/ctfs/round-4",
+        "比赛标志": "https://ctftime.org/media/events/ctftime_5.png",
+        "比赛权重": "0",
+        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
+        "比赛ID": "1163",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "FAUST CTF 2024",
@@ -1917,18 +1917,6 @@
         "比赛权重": "0",
         "赛事主办": "Theori (https://ctftime.org/team/250867)",
         "比赛ID": "1090",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Haruulzangi U18 2024 Domestic Finals",
-        "比赛时间": "2024-05-26 11:00:00 - 2024-05-26 15:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2372.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://www.haruulzangi.mn/",
-        "比赛标志": "https://ctftime.org/media/events/hz-u18_1_1_1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "haruulzangi-organizers (https://ctftime.org/team/266812)",
-        "比赛ID": "985",
         "比赛状态": "past"
     }
 ]

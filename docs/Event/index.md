@@ -876,15 +876,6 @@ hide:
                 **赛事主办** : SharLike (https://ctftime.org/team/16172)  
                 **添加日历** : https://ctftime.org/event/2376.ics  
                 
-            ??? Quote "[AlpacaHack Round 4 (Rev)](https://alpacahack.com/ctfs/round-4)"  
-                [![](https://ctftime.org/media/events/ctftime_5.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-4)  
-                **比赛名称** : [AlpacaHack Round 4 (Rev)](https://alpacahack.com/ctfs/round-4)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-05 11:00:00 - 2024-10-05 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
-                **添加日历** : https://ctftime.org/event/2499.ics  
-                
             ??? Quote "[RuCTF Finals 2024](http://ructf.org/)"  
                 [![](https://ctftime.org){ width="200" align=left }](http://ructf.org/)  
                 **比赛名称** : [RuCTF Finals 2024](http://ructf.org/)  
@@ -983,6 +974,15 @@ hide:
                 **其他说明** : QQ群: 622869531 组委会邮箱: tianwangcup@163.com  
                 
         === "国外赛事"
+            ??? Quote "[AlpacaHack Round 4 (Rev)](https://alpacahack.com/ctfs/round-4)"  
+                [![](https://ctftime.org/media/events/ctftime_5.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-4)  
+                **比赛名称** : [AlpacaHack Round 4 (Rev)](https://alpacahack.com/ctfs/round-4)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-10-05 11:00:00 - 2024-10-05 17:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
+                **添加日历** : https://ctftime.org/event/2499.ics  
+                
             ??? Quote "[FAUST CTF 2024](https://2024.faustctf.net/)"  
                 [![](https://ctftime.org/media/events/faust2024_1.png){ width="200" align=left }](https://2024.faustctf.net/)  
                 **比赛名称** : [FAUST CTF 2024](https://2024.faustctf.net/)  
@@ -1873,15 +1873,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Theori (https://ctftime.org/team/250867)  
                 **添加日历** : https://ctftime.org/event/2309.ics  
-                
-            ??? Quote "[Haruulzangi U18 2024 Domestic Finals](http://www.haruulzangi.mn/)"  
-                [![](https://ctftime.org/media/events/hz-u18_1_1_1.png){ width="200" align=left }](http://www.haruulzangi.mn/)  
-                **比赛名称** : [Haruulzangi U18 2024 Domestic Finals](http://www.haruulzangi.mn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-05-26 11:00:00 - 2024-05-26 15:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
-                **添加日历** : https://ctftime.org/event/2372.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
