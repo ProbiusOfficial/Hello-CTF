@@ -717,7 +717,7 @@
         "比赛权重": "0.00",
         "赛事主办": "TU Delft CTF Team (https://ctftime.org/team/134822)",
         "比赛ID": "842",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "AlpacaHack Round 4 (Rev)",
@@ -1905,18 +1905,6 @@
         "比赛权重": "31.17",
         "赛事主办": "KITCTF (https://ctftime.org/team/7221)",
         "比赛ID": "854",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Dreamhack Invitational 2024",
-        "比赛时间": "2024-05-27 09:00:00 - 2024-05-27 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2309.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dreamhack.io/",
-        "比赛标志": "https://ctftime.org/media/events/_mini_round_light2x_1.png",
-        "比赛权重": "0",
-        "赛事主办": "Theori (https://ctftime.org/team/250867)",
-        "比赛ID": "1090",
         "比赛状态": "past"
     }
 ]
