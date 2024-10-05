@@ -84,6 +84,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[TU Delft CTF 2024](https://ctf.ewi.tudelft.nl/)"  
+    [![](https://ctftime.org/media/events/fddd624d58320dba5f40c75a47d72974.jpg){ width="200" align=left }](https://ctf.ewi.tudelft.nl/)  
+    **比赛名称** : [TU Delft CTF 2024](https://ctf.ewi.tudelft.nl/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-10-05 18:00:00 - 2024-10-06 02:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : TU Delft CTF Team (https://ctftime.org/team/134822)  
+    **添加日历** : https://ctftime.org/event/2487.ics  
+    
 ??? Quote "[AlpacaHack Round 4 (Rev)](https://alpacahack.com/ctfs/round-4)"  
     [![](https://ctftime.org/media/events/ctftime_5.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-4)  
     **比赛名称** : [AlpacaHack Round 4 (Rev)](https://alpacahack.com/ctfs/round-4)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 31.17  
     **赛事主办** : KITCTF (https://ctftime.org/team/7221)  
     **添加日历** : https://ctftime.org/event/2257.ics  
-    
-??? Quote "[Dreamhack Invitational 2024](https://dreamhack.io/)"  
-    [![](https://ctftime.org/media/events/_mini_round_light2x_1.png){ width="200" align=left }](https://dreamhack.io/)  
-    **比赛名称** : [Dreamhack Invitational 2024](https://dreamhack.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-05-27 09:00:00 - 2024-05-27 21:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Theori (https://ctftime.org/team/250867)  
-    **添加日历** : https://ctftime.org/event/2309.ics  
     

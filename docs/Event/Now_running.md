@@ -106,12 +106,3 @@ comments: true
     **赛事主办** : ITMO FSIT (https://ctftime.org/team/264636)  
     **添加日历** : https://ctftime.org/event/2389.ics  
     
-??? Quote "[TU Delft CTF 2024](https://ctf.ewi.tudelft.nl/)"  
-    [![](https://ctftime.org/media/events/fddd624d58320dba5f40c75a47d72974.jpg){ width="200" align=left }](https://ctf.ewi.tudelft.nl/)  
-    **比赛名称** : [TU Delft CTF 2024](https://ctf.ewi.tudelft.nl/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-05 18:00:00 - 2024-10-06 02:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : TU Delft CTF Team (https://ctftime.org/team/134822)  
-    **添加日历** : https://ctftime.org/event/2487.ics  
-    
