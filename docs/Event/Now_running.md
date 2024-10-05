@@ -81,3 +81,12 @@ comments: true
     **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
     **添加日历** : https://ctftime.org/event/2499.ics  
     
+??? Quote "[RuCTF Finals 2024](http://ructf.org/)"  
+    [![](https://ctftime.org){ width="200" align=left }](http://ructf.org/)  
+    **比赛名称** : [RuCTF Finals 2024](http://ructf.org/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-10-05 13:00:00 - 2024-10-07 03:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : HackerDom (https://ctftime.org/team/552)  
+    **添加日历** : https://ctftime.org/event/2386.ics  
+    
