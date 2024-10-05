@@ -139,9 +139,9 @@ comments: true
     **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
     **添加日历** : https://ctftime.org/event/2435.ics  
     
-??? Quote "[Questcon CTF](https://owasp-pccoe.github.io/Owasp-pccoe/)"  
-    [![](https://ctftime.org/media/events/2ca67bbcaa92de860b6b46672dbc66df.jpg){ width="200" align=left }](https://owasp-pccoe.github.io/Owasp-pccoe/)  
-    **比赛名称** : [Questcon CTF](https://owasp-pccoe.github.io/Owasp-pccoe/)  
+??? Quote "[Questcon CTF](https://questcon.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/Picsart_24-10-01_16-40-39-530_1_1.png){ width="200" align=left }](https://questcon.ctfd.io/)  
+    **比赛名称** : [Questcon CTF](https://questcon.ctfd.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-10-22 14:30:00 - 2024-10-23 14:30:00 UTC+8  
     **比赛权重** : 22.45  
