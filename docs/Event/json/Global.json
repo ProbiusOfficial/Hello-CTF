@@ -648,18 +648,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Season IV, US Cyber Games Flag Fest CTF",
-        "比赛时间": "2024-09-28 02:00:00 - 2024-10-06 11:59:58 UTC+8",
-        "添加日历": "https://ctftime.org/event/2472.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.uscybergames.com/season-4-draft-experience#ctf",
-        "比赛标志": "https://ctftime.org/media/events/2022-10-USCG_S3_logos_cybergames_1_1.png",
-        "比赛权重": "0",
-        "赛事主办": "PlayCyber (https://ctftime.org/team/165788)",
-        "比赛ID": "740",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "AltayCTF 2024",
         "比赛时间": "2024-10-05 11:00:00 - 2024-10-06 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2376.ics",
@@ -789,6 +777,18 @@
         "比赛权重": "50.91",
         "赛事主办": "scriptohio (https://ctftime.org/team/144581)",
         "比赛ID": "667",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Season IV, US Cyber Games Flag Fest CTF",
+        "比赛时间": "2024-09-28 02:00:00 - 2024-10-06 11:59:58 UTC+8",
+        "添加日历": "https://ctftime.org/event/2472.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.uscybergames.com/season-4-draft-experience#ctf",
+        "比赛标志": "https://ctftime.org/media/events/2022-10-USCG_S3_logos_cybergames_1_1.png",
+        "比赛权重": "0",
+        "赛事主办": "PlayCyber (https://ctftime.org/team/165788)",
+        "比赛ID": "740",
         "比赛状态": "past"
     },
     {
@@ -1893,18 +1893,6 @@
         "比赛权重": "0",
         "赛事主办": "PlayCyber (https://ctftime.org/team/165788)",
         "比赛ID": "740",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "GPN CTF 2024",
-        "比赛时间": "2024-05-31 18:00:00 - 2024-06-02 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2257.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.kitctf.de/",
-        "比赛标志": "https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d.png",
-        "比赛权重": "31.17",
-        "赛事主办": "KITCTF (https://ctftime.org/team/7221)",
-        "比赛ID": "854",
         "比赛状态": "past"
     }
 ]
