@@ -118,6 +118,15 @@ comments: true
     **赛事主办** : 1nf1n1ty (https://ctftime.org/team/151859)  
     **添加日历** : https://ctftime.org/event/2497.ics  
     
+??? Quote "[AltayCTF 2024](https://university.altayctf.ru/2024)"  
+    [![](https://ctftime.org/media/events/0_1.png){ width="200" align=left }](https://university.altayctf.ru/2024)  
+    **比赛名称** : [AltayCTF 2024](https://university.altayctf.ru/2024)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-10-05 11:00:00 - 2024-10-06 20:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : SharLike (https://ctftime.org/team/16172)  
+    **添加日历** : https://ctftime.org/event/2376.ics  
+    
 ??? Quote "[AlpacaHack Round 4 (Rev)](https://alpacahack.com/ctfs/round-4)"  
     [![](https://ctftime.org/media/events/ctftime_5.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-4)  
     **比赛名称** : [AlpacaHack Round 4 (Rev)](https://alpacahack.com/ctfs/round-4)  
@@ -981,13 +990,4 @@ comments: true
     **比赛权重** : 24.32  
     **赛事主办** : NOPS (https://ctftime.org/team/4056)  
     **添加日历** : https://ctftime.org/event/2358.ics  
-    
-??? Quote "[Codegate CTF 2024 Preliminary](http://ctf.codegate.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](http://ctf.codegate.org/)  
-    **比赛名称** : [Codegate CTF 2024 Preliminary](http://ctf.codegate.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-01 09:00:00 - 2024-06-02 09:00:00 UTC+8  
-    **比赛权重** : 36.58  
-    **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
-    **添加日历** : https://ctftime.org/event/2346.ics  
     
