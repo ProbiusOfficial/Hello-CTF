@@ -826,15 +826,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
                 
-            ??? Quote "[RuCTF Finals 2024](http://ructf.org/)"  
-                [![](https://ctftime.org){ width="200" align=left }](http://ructf.org/)  
-                **比赛名称** : [RuCTF Finals 2024](http://ructf.org/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2024-10-05 13:00:00 - 2024-10-07 03:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : HackerDom (https://ctftime.org/team/552)  
-                **添加日历** : https://ctftime.org/event/2386.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[BRICS+ CTF Quals 2024](https://brics-ctf.com/)"  
@@ -948,6 +939,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : 1nf1n1ty (https://ctftime.org/team/151859)  
                 **添加日历** : https://ctftime.org/event/2497.ics  
+                
+            ??? Quote "[RuCTF Finals 2024](http://ructf.org/)"  
+                [![](https://ctftime.org){ width="200" align=left }](http://ructf.org/)  
+                **比赛名称** : [RuCTF Finals 2024](http://ructf.org/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2024-10-05 13:00:00 - 2024-10-07 03:00:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : HackerDom (https://ctftime.org/team/552)  
+                **添加日历** : https://ctftime.org/event/2386.ics  
                 
             ??? Quote "[AltayCTF 2024](https://university.altayctf.ru/2024)"  
                 [![](https://ctftime.org/media/events/0_1.png){ width="200" align=left }](https://university.altayctf.ru/2024)  
@@ -1812,15 +1812,6 @@ hide:
                 **比赛权重** : 1.00  
                 **赛事主办** : DASCTF (https://ctftime.org/team/303691)  
                 **添加日历** : https://ctftime.org/event/2390.ics  
-                
-            ??? Quote "[N0PSctf](https://ctf.nops.re/)"  
-                [![](https://ctftime.org/media/events/favicon_5.png){ width="200" align=left }](https://ctf.nops.re/)  
-                **比赛名称** : [N0PSctf](https://ctf.nops.re/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-01 16:00:00 - 2024-06-03 04:00:00 UTC+8  
-                **比赛权重** : 24.32  
-                **赛事主办** : NOPS (https://ctftime.org/team/4056)  
-                **添加日历** : https://ctftime.org/event/2358.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
