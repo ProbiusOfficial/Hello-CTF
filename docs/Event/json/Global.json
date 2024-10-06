@@ -681,7 +681,7 @@
         "比赛权重": "25.00",
         "赛事主办": "ITMO FSIT (https://ctftime.org/team/264636)",
         "比赛ID": "986",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "TU Delft CTF 2024",
@@ -738,7 +738,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://2024finals.justctf.team/",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "justCatTheFish (https://ctftime.org/team/33893)",
         "比赛ID": "399",
         "比赛状态": "past"
@@ -1869,18 +1869,6 @@
         "比赛权重": "36.58",
         "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
         "比赛ID": "3",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Hardwear.io USA 2024 Hardware CTF",
-        "比赛时间": "2024-06-01 01:00:00 - 2024-06-02 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2400.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hwctf.quarkslab.com/",
-        "比赛标志": "https://ctftime.org/media/events/logohwcolor_13.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Hardware CTF by Quarkslab (https://ctftime.org/team/274600)",
-        "比赛ID": "1021",
         "比赛状态": "past"
     }
 ]

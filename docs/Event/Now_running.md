@@ -12,13 +12,6 @@ comments: true
     **比赛时间** : 2024年10月06日 09:00 - 2024年11月03日 21:00  
     **其他说明** : QQ群: 746958713  
     
-??? Quote "BRICS+ CTF Quals 2024"  
-    **比赛名称** : [BRICS+ CTF Quals 2024](https://brics-ctf.com/)  
-    **比赛类型** : 团队赛  
-    **报名时间** : 2024年10月05日 18:00 - 2024年10月06日 18:00  
-    **比赛时间** : 2024年10月05日 18:00 - 2024年10月06日 18:00  
-    **其他说明** : 初赛将以在线解题赛的形式进行.计划邀请来自金砖国家的15支队伍（每个国家不超过3支队伍）以及总排名前10的最佳队伍参与线上的决赛.同时详情信息请加入discord -> https://discord.gg/3AwqYTvaMw 决赛总奖池7w人民币左右  
-    
 ??? Quote "SHCTF2024"  
     **比赛名称** : [SHCTF2024](https://shc.tf/)  
     **比赛类型** : 个人赛  
@@ -85,13 +78,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : HackerDom (https://ctftime.org/team/552)  
     **添加日历** : https://ctftime.org/event/2386.ics  
-    
-??? Quote "[BRICS+ CTF Quals 2024](https://brics-ctf.com/)"  
-    [![](https://ctftime.org/media/events/logo-2024.png){ width="200" align=left }](https://brics-ctf.com/)  
-    **比赛名称** : [BRICS+ CTF Quals 2024](https://brics-ctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-05 18:00:00 - 2024-10-06 18:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : ITMO FSIT (https://ctftime.org/team/264636)  
-    **添加日历** : https://ctftime.org/event/2389.ics  
     
