@@ -3,17 +3,6 @@
     "data": {
         "result": [
             {
-                "name": "0xGame 2024",
-                "link": "https://0xgame.exp10it.cn/",
-                "type": "个人赛",
-                "bmks": "2024年09月17日 10:30",
-                "bmjz": "2024年11月03日 21:00",
-                "bsks": "2024年10月06日 09:00",
-                "bsjs": "2024年11月03日 21:00",
-                "readmore": "QQ群: 746958713",
-                "status": 1
-            },
-            {
                 "name": "2024'源鲁杯'高校网络安全技能大赛",
                 "link": "https://ctf.yuanloo.com/",
                 "type": "个人线上赛",
@@ -23,6 +12,17 @@
                 "bsjs": "2024年10月23日 15:00",
                 "readmore": "QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/",
                 "status": 1
+            },
+            {
+                "name": "0xGame 2024",
+                "link": "https://0xgame.exp10it.cn/",
+                "type": "个人赛",
+                "bmks": "2024年09月17日 10:30",
+                "bmjz": "2024年11月03日 21:00",
+                "bsks": "2024年10月06日 09:00",
+                "bsjs": "2024年11月03日 21:00",
+                "readmore": "QQ群: 746958713",
+                "status": 3
             },
             {
                 "name": "BRICS+ CTF Quals 2024",
