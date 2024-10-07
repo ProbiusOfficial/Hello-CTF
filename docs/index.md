@@ -53,13 +53,7 @@ hide:
     ---
     <!-- 主页赛事展示_开始 -->
     === "国内比赛"
-        ??? Quote "[2024'源鲁杯'高校网络安全技能大赛](https://ctf.yuanloo.com/)"  
-            **比赛名称** : [2024'源鲁杯'高校网络安全技能大赛](https://ctf.yuanloo.com/)  
-            **比赛类型** : 个人线上赛  
-            **报名时间** : 2024年09月01日 09:00 - 2024年10月23日 15:00  
-            **比赛时间** : 2024年10月10日 09:00 - 2024年10月23日 15:00  
-            **其他说明** : QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/  
-                
+    
     === "国外比赛"
         ??? Quote "[TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://ctf.tcp1p.team/)"  
             [![](https://ctftime.org/media/events/Asset_10.jpg){ width="200" align=left }](https://ctf.tcp1p.team/)  
