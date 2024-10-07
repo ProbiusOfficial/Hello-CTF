@@ -61,9 +61,9 @@ hide:
             **其他说明** : QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/  
                 
     === "国外比赛"
-        ??? Quote "[TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://tcp1p.team/tcp1pctf-2024)"  
-            [![](https://ctftime.org/media/events/Asset_10.jpg){ width="200" align=left }](https://tcp1p.team/tcp1pctf-2024)  
-            **比赛名称** : [TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://tcp1p.team/tcp1pctf-2024)  
+        ??? Quote "[TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://ctf.tcp1p.team/)"  
+            [![](https://ctftime.org/media/events/Asset_10.jpg){ width="200" align=left }](https://ctf.tcp1p.team/)  
+            **比赛名称** : [TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://ctf.tcp1p.team/)  
             **比赛形式** : Jeopardy  
             **比赛时间** : 2024-10-11 20:00:00 - 2024-10-13 20:00:00 UTC+8  
             **比赛权重** : 24.85  
