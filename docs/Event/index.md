@@ -288,7 +288,20 @@ hide:
     
     === "*即将开始*"
         === "国内赛事"
-    
+            ??? Quote "[GEEKGAME 2024](https://geekgame.pku.edu.cn)"  
+                **比赛名称** : [GEEKGAME 2024](https://geekgame.pku.edu.cn)  
+                **比赛类型** : 线上Jeopardy解题赛  
+                **报名时间** : 2024年10月06日 12:00 - 2024年10月11日 11:59  
+                **比赛时间** : 2024年10月12日 12:00 - 2024年10月19日 12:00  
+                **其他说明** : 第四届北京大学信息安全综合能力竞赛GEEKGAME 2024由北京大学学生 Linux 俱乐部主办，比赛时间为2024年10月12日至10月19日，采用个人线上赛的模式，选手可加入QQ群133986617获取更多信息。  
+                
+            ??? Quote "[2024'源鲁杯'高校网络安全技能大赛](https://ctf.yuanloo.com/)"  
+                **比赛名称** : [2024'源鲁杯'高校网络安全技能大赛](https://ctf.yuanloo.com/)  
+                **比赛类型** : 个人线上赛  
+                **报名时间** : 2024年09月01日 09:00 - 2024年10月23日 15:00  
+                **比赛时间** : 2024年10月10日 09:00 - 2024年10月23日 15:00  
+                **其他说明** : QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/  
+                
         === "国外赛事"
             ??? Quote "[TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://ctf.tcp1p.team/)"  
                 [![](https://ctftime.org/media/events/Asset_10.jpg){ width="200" align=left }](https://ctf.tcp1p.team/)  
@@ -760,41 +773,7 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-            ??? Quote "[0xGame 2024](https://0xgame.exp10it.cn/)"  
-                **比赛名称** : [0xGame 2024](https://0xgame.exp10it.cn/)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年09月17日 10:30 - 2024年11月03日 21:00  
-                **比赛时间** : 2024年10月06日 09:00 - 2024年11月03日 21:00  
-                **其他说明** : QQ群: 746958713  
-                
-            ??? Quote "[SHCTF2024](https://shc.tf/)"  
-                **比赛名称** : [SHCTF2024](https://shc.tf/)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年09月26日 00:00 - 2024年10月31日 10:00  
-                **比赛时间** : 2024年10月02日 10:00 - 2024年10月31日 10:00  
-                **其他说明** : QQ 一群：536115792  二群：721693440  
-                
-            ??? Quote "[NewStar CTF 2024](https://ns.openctf.net)"  
-                **比赛名称** : [NewStar CTF 2024](https://ns.openctf.net)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年09月13日 00:00 - 2024年11月03日 21:00  
-                **比赛时间** : 2024年09月30日 09:00 - 2024年11月03日 21:00  
-                **其他说明** : 赛事QQ群：1169651901  
-                
-            ??? Quote "[第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)"  
-                **比赛名称** : [第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)  
-                **比赛类型** : 个人赛 and 团体赛|3人  
-                **报名时间** : 2024年07月26日 08:00 - 2024年09月20日 18:00  
-                **比赛时间** : 2024年09月21日 00:00 - 2024年10月27日 23:59  
-                **其他说明** : 更多信息请前往官网https://www.hncsisc.com 的“赛事活动”查看  
-                
-            ??? Quote "[MoeCTF 2024](https://ctf.xidian.edu.cn)"  
-                **比赛名称** : [MoeCTF 2024](https://ctf.xidian.edu.cn)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年08月07日 14:23 - 2024年10月14日 21:00  
-                **比赛时间** : 2024年08月10日 09:00 - 2024年10月14日 21:00  
-                **其他说明** : QQ 群：187536315  
-                
+    
         === "国外赛事"
             ??? Quote "[Sydbox CTF: read /etc/CTF](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://git.sr.ht/~alip/syd#ctf-howto-sydbx-capture-the-flag-challenge)  
@@ -816,7 +795,90 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
-    
+            ??? Quote "[BRICS+ CTF Quals 2024](https://brics-ctf.com/)"  
+                **比赛名称** : [BRICS+ CTF Quals 2024](https://brics-ctf.com/)  
+                **比赛类型** : 团队赛  
+                **报名时间** : 2024年10月05日 18:00 - 2024年10月06日 18:00  
+                **比赛时间** : 2024年10月05日 18:00 - 2024年10月06日 18:00  
+                **其他说明** : 初赛将以在线解题赛的形式进行.计划邀请来自金砖国家的15支队伍（每个国家不超过3支队伍）以及总排名前10的最佳队伍参与线上的决赛.同时详情信息请加入discord -> https://discord.gg/3AwqYTvaMw 决赛总奖池7w人民币左右  
+                
+            ??? Quote "[BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)"  
+                **比赛名称** : [BaseCTF 2024 高校联合新生赛](https://www.basectf.fun/)  
+                **比赛类型** : 1-2 人  
+                **报名时间** : 2024年08月5日 00:00 - 2024年09月30日 21:00  
+                **比赛时间** : 2024年08月15日 09:00 - 2024年09月30日 21:00  
+                **其他说明** : QQ 群：530184592 面向新生的比赛，题目分 Week 1 - 7，从入门到挑战循序渐进  
+                
+            ??? Quote "[“华为杯”第三届中国研究生网络安全创新大赛](https://cpipc.acge.org.cn//pw/detail/2c9080188fc20569018fe6375eeb2eb2)"  
+                **比赛名称** : [“华为杯”第三届中国研究生网络安全创新大赛](https://cpipc.acge.org.cn//pw/detail/2c9080188fc20569018fe6375eeb2eb2)  
+                **比赛类型** : 团队赛|1-4人  
+                **报名时间** : 2024年05月06日 00:00 - 2024年09月23日 23:59  
+                **比赛时间** : 2024年09月25日 00:00 - 2024年09月25日 23:59  
+                **其他说明** : QQ群: 794148708|仅限研究生参加  
+                
+            ??? Quote "[第五届“闽盾杯”网络空间安全大塞黑盾全国大学生赛道（决赛）](http://heidunbei.si.net.cn/hdc/cover)"  
+                **比赛名称** : [第五届“闽盾杯”网络空间安全大塞黑盾全国大学生赛道（决赛）](http://heidunbei.si.net.cn/hdc/cover)  
+                **比赛类型** : 团队赛|3人  
+                **报名时间** : 2024年06月26日 10:35 - 2024年06月26日 10:35  
+                **比赛时间** : 2024年09月13日 00:00 - 2024年09月13日 23:59  
+                **其他说明** : QQ群：676547374 或 566180593  
+                
+            ??? Quote "[WMCTF 2024](https://wmctf.wm-team.cn/)"  
+                **比赛名称** : [WMCTF 2024](https://wmctf.wm-team.cn/)  
+                **比赛类型** : 团队赛 | 人数不限  
+                **报名时间** : 2024年08月14日 09:00 - 2024年09月09日 09:00  
+                **比赛时间** : 2024年09月07日 09:00 - 2024年09月09日 09:00  
+                **其他说明** : 有多个联系方式，具体请在赛事网站查看  
+                
+            ??? Quote "[2024年辽宁大学研究生网络安全创新实践大赛](https://mp.weixin.qq.com/s?search_click_id=1419197875279398874-1721064257482-5560857333&__biz=MzkwODY4NjEwMA==&mid=2247483898&idx=2&sn=9e98fa0801ff04680dc13785de62ec59&chksm=c1d81e30983ce3afed49948819b79e7332489d251f75003da001e323b575dc6267a3f9b3c7c3&scene=7&subscene=10000&sessionid=1721062624&clicktime=1721064257&enterid=1721064257&ascene=65&fasttmpl_type=0&fasttmpl_fullversion=7295595-zh_CN-zip&fasttmpl_flag=0&realreporttime=1721064257512&devicetype=android-34&version=28002e34&nettype=WIFI&abtest_cookie=AAACAA==&lang=zh_CN&countrycode=CN&exportkey=n_ChQIAhIQcvD8xBlhKOyhNiXR+sSwhxLiAQIE97dBBAEAAAAAALJPGgdGHkcAAAAOpnltbLcz9gKNyK89dVj05OQmnZhmX5QxbgZxJq2kXOv2MdwjaAf3iVTLVGCcQUSG7VlEEpibGRWcgGV1BZpKtLcneOndlVFC2eMkTtAv8YTngrwgPTc44eKAtyGHcw9azAA/Lyju97FKSOW2D6eW7ZlNCG9gFS8WG6AcsPuxVr7PhVh4jtPz7vGomi56weNGB+8NjPr5ChEwlxJP+UN5C5JA5rUMV2rKtdZBeiASZdqEjpQcPvQmFzF6OVw0NHDUJ/bDftCImrDsZKo=&pass_ticket=kVxbyE61cIHqlon9l8MZfpuGMpxcldPEOp9u/xMr3MOyS4E0APheem2kMNVrm4dm&wx_header=3)"  
+                **比赛名称** : [2024年辽宁大学研究生网络安全创新实践大赛](https://mp.weixin.qq.com/s?search_click_id=1419197875279398874-1721064257482-5560857333&__biz=MzkwODY4NjEwMA==&mid=2247483898&idx=2&sn=9e98fa0801ff04680dc13785de62ec59&chksm=c1d81e30983ce3afed49948819b79e7332489d251f75003da001e323b575dc6267a3f9b3c7c3&scene=7&subscene=10000&sessionid=1721062624&clicktime=1721064257&enterid=1721064257&ascene=65&fasttmpl_type=0&fasttmpl_fullversion=7295595-zh_CN-zip&fasttmpl_flag=0&realreporttime=1721064257512&devicetype=android-34&version=28002e34&nettype=WIFI&abtest_cookie=AAACAA==&lang=zh_CN&countrycode=CN&exportkey=n_ChQIAhIQcvD8xBlhKOyhNiXR+sSwhxLiAQIE97dBBAEAAAAAALJPGgdGHkcAAAAOpnltbLcz9gKNyK89dVj05OQmnZhmX5QxbgZxJq2kXOv2MdwjaAf3iVTLVGCcQUSG7VlEEpibGRWcgGV1BZpKtLcneOndlVFC2eMkTtAv8YTngrwgPTc44eKAtyGHcw9azAA/Lyju97FKSOW2D6eW7ZlNCG9gFS8WG6AcsPuxVr7PhVh4jtPz7vGomi56weNGB+8NjPr5ChEwlxJP+UN5C5JA5rUMV2rKtdZBeiASZdqEjpQcPvQmFzF6OVw0NHDUJ/bDftCImrDsZKo=&pass_ticket=kVxbyE61cIHqlon9l8MZfpuGMpxcldPEOp9u/xMr3MOyS4E0APheem2kMNVrm4dm&wx_header=3)  
+                **比赛类型** : 团队赛|1-4人  
+                **报名时间** : 2024年07月15日 18:41 - 2024年08月31日 23:59  
+                **比赛时间** : 2024年08月31日 23:59 - 2024年08月31日 23:59  
+                **其他说明** : 仅限辽宁大学研究生 | 参赛队伍需同时参加“华为杯”第三届中国研究生网络安全创新大赛  
+                
+            ??? Quote "[第三届江苏大学研究生网络安全创新大赛](https://yjsy.ujs.edu.cn/info/1305/28415.htm)"  
+                **比赛名称** : [第三届江苏大学研究生网络安全创新大赛](https://yjsy.ujs.edu.cn/info/1305/28415.htm)  
+                **比赛类型** : 团队赛|1-4人  
+                **报名时间** : 2024年06月30日 00:00 - 2024年08月30日 23:59  
+                **比赛时间** : 2024年06月30日 00:00 - 2024年08月31日 23:59  
+                **其他说明** : 仅限研究生  
+                
+            ??? Quote "[2024年“羊城杯”粤港澳大湾区网络安全大赛](https://2024ycb.dasctf.com/compete/compete?matchCode=87659256dbc7485&competeId=268)"  
+                **比赛名称** : [2024年“羊城杯”粤港澳大湾区网络安全大赛](https://2024ycb.dasctf.com/compete/compete?matchCode=87659256dbc7485&competeId=268)  
+                **比赛类型** : 个人赛|团队赛 1-4人  
+                **报名时间** : 2024年08月01日 18:45 - 2024年08月20日 23:59  
+                **比赛时间** : 2024年08月27日 09:00 - 2024年08月28日 09:00  
+                **其他说明** : QQ群1：1148320638 QQ群2：696494060 | 研究生、本科、高职、相关企业、党政机关及事业单位和港澳特邀  
+                
+            ??? Quote "[NepCTF 2024](https://nepctf.lemonprefect.cn/)"  
+                **比赛名称** : [NepCTF 2024](https://nepctf.lemonprefect.cn/)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年08月21日 14:00 - 2024年08月26日 09:00  
+                **比赛时间** : 2024年08月24日 09:00 - 2024年08月26日 09:00  
+                **其他说明** : QQ群: 560946020 其他联系方式：Nepnep_Team@163.com  
+                
+            ??? Quote "[第四届极客少年挑战赛（决赛）](https://www.cdccs.cn/#/geekYouth)"  
+                **比赛名称** : [第四届极客少年挑战赛（决赛）](https://www.cdccs.cn/#/geekYouth)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年07月22日 10:00 - 2024年07月23日 09:00  
+                **比赛时间** : 2024年08月23日 10:00 - 2024年08月23日 15:00  
+                **其他说明** : QQ群：961713058  
+                
+            ??? Quote "[2024年浙江省网络安全行业网络安全运维工程师项目职业技能竞赛](https://mp.weixin.qq.com/s/Uf12nfGPFHxz8QMe60cpDA)"  
+                **比赛名称** : [2024年浙江省网络安全行业网络安全运维工程师项目职业技能竞赛](https://mp.weixin.qq.com/s/Uf12nfGPFHxz8QMe60cpDA)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年07月08日 10:46 - 2024年07月31日 20:00  
+                **比赛时间** : 2024年08月12日 00:00 - 2024年08月22日 15:00  
+                **其他说明** : QQ群: 697694051 | 仅限相关岗位在职员工参加  
+                
+            ??? Quote "[第二届“天网杯”网络安全大赛](https://twcup.cverc.org.cn/twb/twb2024)"  
+                **比赛名称** : [第二届“天网杯”网络安全大赛](https://twcup.cverc.org.cn/twb/twb2024)  
+                **比赛类型** : 团队赛|不超过5人  
+                **报名时间** : 2024年7月15日 00:00 - 2024年7月31日 23:59  
+                **比赛时间** : 2024年08月01日 00:00 - 2024年08月20日 23:59  
+                **其他说明** : QQ群: 622869531 组委会邮箱: tianwangcup@163.com  
+                
         === "国外赛事"
             ??? Quote "[TU Delft CTF 2024](https://ctf.ewi.tudelft.nl/)"  
                 [![](https://ctftime.org/media/events/fddd624d58320dba5f40c75a47d72974.jpg){ width="200" align=left }](https://ctf.ewi.tudelft.nl/)  
