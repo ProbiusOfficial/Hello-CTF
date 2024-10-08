@@ -79,10 +79,10 @@ hide:
          *   name: string
          *   link: string
          *   type: string
-         *   bmks: string
-         *   bmjz: string
-         *   bsks: string
-         *   bsjs: string
+         *   reg_time_start: string
+         *   reg_time_end: string
+         *   comp_time_start: string
+         *   comp_time_end: string
          *   readmore: string
          *   id: number
          *   status: number
@@ -108,14 +108,14 @@ hide:
                 // // 报名时间段
                 // events.push({
                 //     id: v.id,
-                //     start: parseTime(v.bmks),
-                //     end: parseTime(v.bmjz),
+                //     start: parseTime(v.reg_time_start),
+                //     end: parseTime(v.reg_time_end),
                 //     title: v.name + '（报名时间）',
                 //     url: v.link,
                 //     region: CN
                 // })
-                const startTime = parseCNTime(v.bsks)
-                const endTime = parseCNTime(v.bsjs)
+                const startTime = parseCNTime(v.comp_time_start)
+                const endTime = parseCNTime(v.comp_time_end)
 
                 // 比赛时间段
                 events.push({
@@ -1831,10 +1831,10 @@ hide:
             "name": "HelloCTF",
             "link": "https://hello-ctf.com/",
             "type": "团队赛|1-3人",
-            "bmks": "2099年11月15日 00:00",
-            "bmjz": "2099年12月31日 00:00",
-            "bsks": "2099年12月31日 00:00",
-            "bsjs": "2099年12月31日 00:00",
+            "reg_time_start": "2099年11月15日 00:00",
+            "reg_time_end": "2099年12月31日 00:00",
+            "comp_time_start": "2099年12月31日 00:00",
+            "comp_time_end": "2099年12月31日 00:00",
             "readmore": "这是一条备注",
             "id": 114,
             "status": 1 /0 报名未开始 /1 报名进行中 /2 报名已结束 /3 比赛进行中 /4 比赛已结束
