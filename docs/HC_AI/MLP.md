@@ -329,7 +329,7 @@ MNIST 原始的 Special Database 3 数据集和 Special Database 1 数据集均�
 	上述所有原理看懂了吗？~~没看懂也没事（×~~
 
 	抱着不求甚解的态度来学习在 python 中怎么使用吧，下面就是你擅长的部分了
-
+	
 	什么？！你代码也写不好？女孩子请找我，我来教你写；男孩子也可以来找我，我给你一拳，没用的东西
 
 
@@ -363,9 +363,9 @@ class MLP(nn.Module):
         )
     #forward函数定义该神经如何处理数据，也就是数据如何在网络中前进
     def forward(self, x):
-        x = torch.flatten(-1)		#首先将x展平为一维数组
+        x = torch.flatten(x,1)		#首先将x展平为一维数组
         x = self.classifier(x)		#将x放入上面定义的函数中
-        x = nn.Softmax(x, dim=1)           #将x进行归一化处理，转换为概率分布
+        x = torch.softmax(x, dim=1)           #将x进行归一化处理，转换为概率分布
         return x
    
      
@@ -403,7 +403,7 @@ def train(model):
 
             #每到一定阶段就打印目前训练进度以及相关信息，下面代码是print(f"")格式化输出，看不懂就把代码跑起来一看就懂
             if index % 100 == 0:
-                print(f'Train Epoch: {epoch} [{index * len(data)}/{len(train_loader.dataset)} ({(100. * index / len(train_loader)):.0f}%)]\tLoss: {loss.data[0]:.6f}')
+                print(f'Train Epoch: {epoch} [{index * len(data)}/{len(train_loader)} ({(100. * index / len(train_loader)):.0f}%)]\tLoss: {loss.item():.6f}')
 
 
     model.eval()		#训练结束（不启用 Batch Normalization 和 Dropout）
@@ -424,11 +424,11 @@ def test(model):
     correct = 0		#正确
     
     #和训练一样，使用enumerate对test_loader进行迭代
-    for index, (data, target) in enumerate对(test_loader):
+    for index, (data, target) in enumerate(test_loader):
         data, target = data.to(DEVICE), target.to(DEVICE)
 
         pred = model(data)
-        correct += (torch.argmax(pred) == target).sum()		#检测预测是否正确，因为是批处理，所以求和
+        correct += (torch.argmax(pred, dim=1) == target).sum()		#检测预测是否正确，因为是批处理，所以求和
         total += pred.size(0)
 
     print("Correct : ",correct,'/',total,sep='')
@@ -441,7 +441,6 @@ if __name__ == "__main__":
     model = MLP().to(DEVICE)		#在指定的设备（cpu或者gpu）上将模型实例化
     train(model)
     test(model)
-
 
 ```
 
