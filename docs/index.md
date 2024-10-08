@@ -53,70 +53,56 @@ hide:
     ---
     <!-- 主页赛事展示_开始 -->
     === "国内比赛"
-        ??? Quote "[第五届“闽盾杯”网络空间安全大塞黑盾全国大学生赛道（决赛）](http://heidunbei.si.net.cn/hdc/cover)"  
-            **比赛名称** : [第五届“闽盾杯”网络空间安全大塞黑盾全国大学生赛道（决赛）](http://heidunbei.si.net.cn/hdc/cover)  
-            **比赛类型** : 团队赛|3人  
-            **报名时间** : 2024年06月26日 10:35 - 2024年06月26日 10:35  
-            **比赛时间** : 2024年09月13日 00:00 - 2024年09月13日 23:59  
-            **其他说明** : QQ群：676547374 或 566180593  
-            
-        ??? Quote "[第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)"  
-            **比赛名称** : [第八届御网杯信息安全大赛](https://www.hncsisc.com/hncsisc/index.html)  
-            **比赛类型** : 个人赛 and 团体赛|3人  
-            **报名时间** : 2024年07月26日 08:00 - 2024年09月20日 18:00  
-            **比赛时间** : 2024年09月21日 00:00 - 2024年10月27日 23:59  
-            **其他说明** : 更多信息请前往官网https://www.hncsisc.com 的“赛事活动”查看  
-            
-        ??? Quote "[“华为杯”第三届中国研究生网络安全创新大赛](https://cpipc.acge.org.cn//pw/detail/2c9080188fc20569018fe6375eeb2eb2)"  
-            **比赛名称** : [“华为杯”第三届中国研究生网络安全创新大赛](https://cpipc.acge.org.cn//pw/detail/2c9080188fc20569018fe6375eeb2eb2)  
-            **比赛类型** : 团队赛|1-4人  
-            **报名时间** : 2024年05月06日 00:00 - 2024年09月23日 23:59  
-            **比赛时间** : 2024年09月25日 00:00 - 2024年09月25日 23:59  
-            **其他说明** : QQ群: 794148708|仅限研究生参加  
-            
         ??? Quote "[2024'源鲁杯'高校网络安全技能大赛](https://ctf.yuanloo.com/)"  
             **比赛名称** : [2024'源鲁杯'高校网络安全技能大赛](https://ctf.yuanloo.com/)  
             **比赛类型** : 个人线上赛  
             **报名时间** : 2024年09月01日 09:00 - 2024年10月23日 15:00  
             **比赛时间** : 2024年10月10日 09:00 - 2024年10月23日 15:00  
             **其他说明** : QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/  
+            
+        ??? Quote "[GEEKGAME 2024](https://geekgame.pku.edu.cn)"  
+            **比赛名称** : [GEEKGAME 2024](https://geekgame.pku.edu.cn)  
+            **比赛类型** : 线上Jeopardy解题赛  
+            **报名时间** : 2024年10月06日 12:00 - 2024年10月11日 11:59  
+            **比赛时间** : 2024年10月12日 12:00 - 2024年10月19日 12:00  
+            **其他说明** : 第四届北京大学信息安全综合能力竞赛GEEKGAME 2024由北京大学学生 Linux 俱乐部主办，比赛时间为2024年10月12日至10月19日，采用个人线上赛的模式，选手可加入QQ群133986617获取更多信息。  
                 
     === "国外比赛"
-        ??? Quote "[Urmia CTF 2024](https://uctf.ir/)"  
-            [![](https://ctftime.org/media/events/NewLogo_1.jpg){ width="200" align=left }](https://uctf.ir/)  
-            **比赛名称** : [Urmia CTF 2024](https://uctf.ir/)  
+        ??? Quote "[TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://ctf.tcp1p.team/)"  
+            [![](https://ctftime.org/media/events/Asset_10.jpg){ width="200" align=left }](https://ctf.tcp1p.team/)  
+            **比赛名称** : [TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://ctf.tcp1p.team/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-09-07 20:00:00 - 2024-09-09 20:00:00 UTC+8  
-            **比赛权重** : 24.27  
-            **赛事主办** : UCG (https://ctftime.org/team/255103)  
-            **添加日历** : https://ctftime.org/event/2460.ics  
+            **比赛时间** : 2024-10-11 20:00:00 - 2024-10-13 20:00:00 UTC+8  
+            **比赛权重** : 24.85  
+            **赛事主办** : TCP1P (https://ctftime.org/team/187248)  
+            **添加日历** : https://ctftime.org/event/2256.ics  
             
-        ??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
-            [![](https://ctftime.org/media/events/image_31.png){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
-            **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
+        ??? Quote "[AlpacaHack Round 5 (Crypto)](https://alpacahack.com/ctfs/round-5)"  
+            [![](https://ctftime.org/media/events/ctftime_6.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-5)  
+            **比赛名称** : [AlpacaHack Round 5 (Crypto)](https://alpacahack.com/ctfs/round-5)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-09-08 00:00:00 - 2024-09-08 04:00:00 UTC+8  
+            **比赛时间** : 2024-10-12 11:00:00 - 2024-10-12 17:00:00 UTC+8  
             **比赛权重** : 0  
-            **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
-            **添加日历** : https://ctftime.org/event/2451.ics  
+            **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
+            **添加日历** : https://ctftime.org/event/2500.ics  
             
-        ??? Quote "[COMPFEST CTF 2024](https://ctf-mirror.compfest.id/)"  
-            [![](https://ctftime.org/media/events/Group_49363.png){ width="200" align=left }](https://ctf-mirror.compfest.id/)  
-            **比赛名称** : [COMPFEST CTF 2024](https://ctf-mirror.compfest.id/)  
+        ??? Quote "[Haus der Flaggen/Flag Heist](https://laokoon-security.com/ctf2024)"  
+            [![](https://ctftime.org/media/events/HausDerFlaggen_Plakat_1080_x_1080_px.png){ width="200" align=left }](https://laokoon-security.com/ctf2024)  
+            **比赛名称** : [Haus der Flaggen/Flag Heist](https://laokoon-security.com/ctf2024)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-09-08 08:00:00 - 2024-09-09 08:00:00 UTC+8  
-            **比赛权重** : 43.00  
-            **赛事主办** : CSUI (https://ctftime.org/team/70551)  
-            **添加日历** : https://ctftime.org/event/2463.ics  
-            
-        ??? Quote "[Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)"  
-            [![](https://ctftime.org/media/events/zangi_2.png){ width="200" align=left }](https://dashboard.haruulzangi.mn/)  
-            **比赛名称** : [Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-09-13 12:00:00 - 2024-09-13 12:00:00 UTC+8  
+            **比赛时间** : 2024-10-12 16:00:00 - 2024-10-13 02:00:00 UTC+8  
             **比赛权重** : 0.00  
-            **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
-            **添加日历** : https://ctftime.org/event/2476.ics  
+            **赛事主办** : Laokoon SecurITy (https://ctftime.org/team/201667)  
+            **添加日历** : https://ctftime.org/event/2436.ics  
+            
+        ??? Quote "[Blue Water CTF 2024](https://ctf.perfect.blue/)"  
+            [![](https://ctftime.org/media/events/4872c3c168bd1cdeb5dc564bb3a0416f.png){ width="200" align=left }](https://ctf.perfect.blue/)  
+            **比赛名称** : [Blue Water CTF 2024](https://ctf.perfect.blue/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-10-12 22:00:00 - 2024-10-14 10:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : 💦​ (https://ctftime.org/team/205897)  
+            **添加日历** : https://ctftime.org/event/2479.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
