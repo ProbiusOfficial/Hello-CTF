@@ -510,9 +510,9 @@ hide:
                 **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
                 **添加日历** : https://ctftime.org/event/2405.ics  
                 
-            ??? Quote "[BUET Inter University Capture The Flag 2024 Final Round](http://ctf.buetcsefest2024.com/)"  
+            ??? Quote "[BUET CTF 2024](http://ctf.buetcsefest2024.com/)"  
                 [![](https://ctftime.org/media/events/BUET_CTF_2024.png){ width="200" align=left }](http://ctf.buetcsefest2024.com/)  
-                **比赛名称** : [BUET Inter University Capture The Flag 2024 Final Round](http://ctf.buetcsefest2024.com/)  
+                **比赛名称** : [BUET CTF 2024](http://ctf.buetcsefest2024.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-10-31 11:00:00 - 2024-10-31 17:00:00 UTC+8  
                 **比赛权重** : 0.00  
