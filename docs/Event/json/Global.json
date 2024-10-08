@@ -648,6 +648,30 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "Hack Havoc 2.0",
+        "比赛时间": "2024-10-04 21:59:48 - 2024-10-25 21:59:48 UTC+8",
+        "添加日历": "https://ctftime.org/event/2532.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.cybermaterial.com/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "Hack Havoc (https://ctftime.org/team/316395)",
+        "比赛ID": "1160",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Kernel Kombat",
+        "比赛时间": "2024-10-06 14:46:54 - 2024-10-06 14:46:54 UTC+8",
+        "添加日历": "https://ctftime.org/event/2528.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://zl-slay.vercel.app/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "S14y3r (https://ctftime.org/team/282208)",
+        "比赛ID": "1068",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "TU Delft CTF 2024",
         "比赛时间": "2024-10-05 18:00:00 - 2024-10-06 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2487.ics",
@@ -1833,18 +1857,6 @@
         "比赛权重": "23.08",
         "赛事主办": "Akasec (https://ctftime.org/team/107202)",
         "比赛ID": "1047",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DASCTF X HDCTF 2024 Open Competition",
-        "比赛时间": "2024-06-02 18:00:00 - 2024-06-03 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2390.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://buuoj.cn/match/matches/204",
-        "比赛标志": "https://ctftime.org/media/events/7cb37da3aed536041d1754ecb2083099.jpg",
-        "比赛权重": "1.00",
-        "赛事主办": "DASCTF (https://ctftime.org/team/303691)",
-        "比赛ID": "1133",
         "比赛状态": "past"
     }
 ]

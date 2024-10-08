@@ -91,6 +91,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Kernel Kombat](https://zl-slay.vercel.app/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://zl-slay.vercel.app/)  
+    **比赛名称** : [Kernel Kombat](https://zl-slay.vercel.app/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-10-06 14:46:54 - 2024-10-06 14:46:54 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : S14y3r (https://ctftime.org/team/282208)  
+    **添加日历** : https://ctftime.org/event/2528.ics  
+    
 ??? Quote "[TU Delft CTF 2024](https://ctf.ewi.tudelft.nl/)"  
     [![](https://ctftime.org/media/events/fddd624d58320dba5f40c75a47d72974.jpg){ width="200" align=left }](https://ctf.ewi.tudelft.nl/)  
     **比赛名称** : [TU Delft CTF 2024](https://ctf.ewi.tudelft.nl/)  
@@ -981,13 +990,4 @@ comments: true
     **比赛权重** : 23.08  
     **赛事主办** : Akasec (https://ctftime.org/team/107202)  
     **添加日历** : https://ctftime.org/event/2222.ics  
-    
-??? Quote "[DASCTF X HDCTF 2024 Open Competition](https://buuoj.cn/match/matches/204)"  
-    [![](https://ctftime.org/media/events/7cb37da3aed536041d1754ecb2083099.jpg){ width="200" align=left }](https://buuoj.cn/match/matches/204)  
-    **比赛名称** : [DASCTF X HDCTF 2024 Open Competition](https://buuoj.cn/match/matches/204)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-02 18:00:00 - 2024-06-03 02:00:00 UTC+8  
-    **比赛权重** : 1.00  
-    **赛事主办** : DASCTF (https://ctftime.org/team/303691)  
-    **添加日历** : https://ctftime.org/event/2390.ics  
     
