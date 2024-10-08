@@ -600,6 +600,30 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Cyber League 2025 - Major",
+        "比赛时间": "2025-01-11 10:00:00 - 2025-01-12 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2530.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctfd.cyberleague.co/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "DIV0-N0H4TS (https://ctftime.org/team/354275)",
+        "比赛ID": "1183",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "SpartanCTF 2025",
+        "比赛时间": "2025-02-01 05:00:00 - 2025-02-04 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2447.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://spartan.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/spctf.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Zero Day Club (https://ctftime.org/team/286318)",
+        "比赛ID": "1089",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "PlaidCTF 2025",
         "比赛时间": "2025-04-05 05:00:00 - 2025-04-07 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2508.ics",
@@ -609,6 +633,18 @@
         "比赛权重": "100.00",
         "赛事主办": "Plaid Parliament of Pwning (https://ctftime.org/team/284)",
         "比赛ID": "10",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "UMassCTF 2025",
+        "比赛时间": "2025-04-05 07:00:00 - 2025-04-07 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2519.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.umasscybersec.org/",
+        "比赛标志": "https://ctftime.org/media/events/889a1e484f0b51dd3d865b3a53b26200.jpg",
+        "比赛权重": "47.60",
+        "赛事主办": "SavedByTheShell (https://ctftime.org/team/78233)",
+        "比赛ID": "598",
         "比赛状态": "oncoming"
     },
     {
