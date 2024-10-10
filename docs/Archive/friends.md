@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅析Edoc2前台远程代码执行](https://y4tacker.github.io/2024/10/09/year/2024/10/%E6%B5%85%E6%9E%90Edoc2%E5%89%8D%E5%8F%B0%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-10-09
+
+    4780fbcdbf7405ce90fd6e499eaf6095781862f7317b4a3cc99e0d387e923799bc023cb7a5fac5102aecc9c2174f007a6ef602947b468ee2ed2eb62878f73d759273d2ee31e9aedf6a203293ea59932363ad1cc17de9ea622351f9207f23fcd6744576...
     ### [x86的保护模式（2）——门描述符实验](https://xia0ji233.github.io/2024/10/08/x86_3/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2024-10-07
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-07-03
 
     漏洞复现分析从公告来看，漏洞来源于geotools这个库使用apache xpath解析xpath导致的问题https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvvhttps://github.com/geotools/geotools/pull/4797https://github.com/geo...
-    ### [内网渗透信息搜集骚姿势](https://blog.zgsec.cn/archives/608.html)  
-    >by [曾哥](https://blog.zgsec.cn/), 2024-06-30
-
-    0# 概述哈哈，各位师傅好久不见啦，最近比较忙，抽空将本文写出来~说到信息搜集，一般大家都会联想到Web外部打点的暴露面信息搜集。但在内网渗透的过程中，信息搜集也是决定成败的决定性因素特别是做持久化渗透中，对内网的信息搜集是尤其重要的，让我们来看看内网渗透之信息搜集骚姿势。[...]...
 
 </div>
