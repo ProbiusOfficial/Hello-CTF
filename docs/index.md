@@ -61,15 +61,6 @@ hide:
             **其他说明** : 第四届北京大学信息安全综合能力竞赛GEEKGAME 2024由北京大学学生 Linux 俱乐部主办，比赛时间为2024年10月12日至10月19日，采用个人线上赛的模式，选手可加入QQ群133986617获取更多信息。  
                 
     === "国外比赛"
-        ??? Quote "[TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://ctf.tcp1p.team/)"  
-            [![](https://ctftime.org/media/events/Asset_10.jpg){ width="200" align=left }](https://ctf.tcp1p.team/)  
-            **比赛名称** : [TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://ctf.tcp1p.team/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-10-11 20:00:00 - 2024-10-13 20:00:00 UTC+8  
-            **比赛权重** : 24.85  
-            **赛事主办** : TCP1P (https://ctftime.org/team/187248)  
-            **添加日历** : https://ctftime.org/event/2256.ics  
-            
         ??? Quote "[AlpacaHack Round 5 (Crypto)](https://alpacahack.com/ctfs/round-5)"  
             [![](https://ctftime.org/media/events/ctftime_6.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-5)  
             **比赛名称** : [AlpacaHack Round 5 (Crypto)](https://alpacahack.com/ctfs/round-5)  
@@ -96,6 +87,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : 💦​ (https://ctftime.org/team/205897)  
             **添加日历** : https://ctftime.org/event/2479.ics  
+            
+        ??? Quote "[NoHat CTF 2024](https://play.pwnx.io/#/event/40b08dba-3140-4cae-89da-6db9c0d8e5a0)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://play.pwnx.io/#/event/40b08dba-3140-4cae-89da-6db9c0d8e5a0)  
+            **比赛名称** : [NoHat CTF 2024](https://play.pwnx.io/#/event/40b08dba-3140-4cae-89da-6db9c0d8e5a0)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-10-13 00:00:00 - 2024-10-14 00:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : PWNX (https://ctftime.org/team/179989)  
+            **添加日历** : https://ctftime.org/event/2518.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
