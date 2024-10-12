@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Securinets CTF Quals 2024](https://ctf.securinets.tn/)"  
-            [![](https://ctftime.org/media/events/d82bcfc5f1d83b7cc51c7dd0dbc8f5c6_1.png){ width="200" align=left }](https://ctf.securinets.tn/)  
-            **比赛名称** : [Securinets CTF Quals 2024](https://ctf.securinets.tn/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-10-13 03:00:00 - 2024-10-14 03:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Securinets (https://ctftime.org/team/5084)  
-            **添加日历** : https://ctftime.org/event/2520.ics  
-            
         ??? Quote "[GITEX GLOBAL CTF](https://gitex.ctf.ae/)"  
             [![](https://ctftime.org/media/events/New_Project_17.png){ width="200" align=left }](https://gitex.ctf.ae/)  
             **比赛名称** : [GITEX GLOBAL CTF](https://gitex.ctf.ae/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : UV-CSIRT (https://ctftime.org/team/166955)  
             **添加日历** : https://ctftime.org/event/2482.ics  
+            
+        ??? Quote "[Africa battleCTF 2024 prequal](https://qualifier.bugpwn.com/)"  
+            [![](https://ctftime.org/media/events/banner_1.png){ width="200" align=left }](https://qualifier.bugpwn.com/)  
+            **比赛名称** : [Africa battleCTF 2024 prequal](https://qualifier.bugpwn.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-10-18 08:00:00 - 2024-10-20 08:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : BUG PWN (https://ctftime.org/team/182428)  
+            **添加日历** : https://ctftime.org/event/2531.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

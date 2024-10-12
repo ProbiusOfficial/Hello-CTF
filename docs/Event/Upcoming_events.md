@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Securinets CTF Quals 2024](https://ctf.securinets.tn/)"  
-    [![](https://ctftime.org/media/events/d82bcfc5f1d83b7cc51c7dd0dbc8f5c6_1.png){ width="200" align=left }](https://ctf.securinets.tn/)  
-    **比赛名称** : [Securinets CTF Quals 2024](https://ctf.securinets.tn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-13 03:00:00 - 2024-10-14 03:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Securinets (https://ctftime.org/team/5084)  
-    **添加日历** : https://ctftime.org/event/2520.ics  
-    
 ??? Quote "[GITEX GLOBAL CTF](https://gitex.ctf.ae/)"  
     [![](https://ctftime.org/media/events/New_Project_17.png){ width="200" align=left }](https://gitex.ctf.ae/)  
     **比赛名称** : [GITEX GLOBAL CTF](https://gitex.ctf.ae/)  

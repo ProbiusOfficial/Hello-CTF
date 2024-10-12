@@ -91,6 +91,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Haus der Flaggen/Flag Heist](https://laokoon-security.com/ctf2024)"  
+    [![](https://ctftime.org/media/events/HausDerFlaggen_Plakat_1080_x_1080_px.png){ width="200" align=left }](https://laokoon-security.com/ctf2024)  
+    **比赛名称** : [Haus der Flaggen/Flag Heist](https://laokoon-security.com/ctf2024)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-10-12 16:00:00 - 2024-10-13 02:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Laokoon SecurITy (https://ctftime.org/team/201667)  
+    **添加日历** : https://ctftime.org/event/2436.ics  
+    
 ??? Quote "[AlpacaHack Round 5 (Crypto)](https://alpacahack.com/ctfs/round-5)"  
     [![](https://ctftime.org/media/events/ctftime_6.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-5)  
     **比赛名称** : [AlpacaHack Round 5 (Crypto)](https://alpacahack.com/ctfs/round-5)  
@@ -981,13 +990,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Esaip CTF (https://ctftime.org/team/190938)  
     **添加日历** : https://ctftime.org/event/2382.ics  
-    
-??? Quote "[BCACTF 5.0](https://www.bcactf.com/)"  
-    [![](https://ctftime.org/media/events/bcactflogoocean.png){ width="200" align=left }](https://www.bcactf.com/)  
-    **比赛名称** : [BCACTF 5.0](https://www.bcactf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-08 04:00:00 - 2024-06-11 04:00:00 UTC+8  
-    **比赛权重** : 46.33  
-    **赛事主办** : BCACTF (https://ctftime.org/team/81702)  
-    **添加日历** : https://ctftime.org/event/2274.ics  
     
