@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "AlpacaHack Round 5 (Crypto)",
-        "比赛时间": "2024-10-12 11:00:00 - 2024-10-12 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2500.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://alpacahack.com/ctfs/round-5",
-        "比赛标志": "https://ctftime.org/media/events/ctftime_6.png",
-        "比赛权重": "0",
-        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
-        "比赛ID": "1163",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Haus der Flaggen/Flag Heist",
         "比赛时间": "2024-10-12 16:00:00 - 2024-10-13 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2436.ics",
@@ -849,6 +837,18 @@
         "比赛权重": "24.85",
         "赛事主办": "TCP1P (https://ctftime.org/team/187248)",
         "比赛ID": "949",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "AlpacaHack Round 5 (Crypto)",
+        "比赛时间": "2024-10-12 11:00:00 - 2024-10-12 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2500.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://alpacahack.com/ctfs/round-5",
+        "比赛标志": "https://ctftime.org/media/events/ctftime_6.png",
+        "比赛权重": "0",
+        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
+        "比赛ID": "1163",
         "比赛状态": "nowrunning"
     },
     {
