@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Haus der Flaggen/Flag Heist](https://laokoon-security.com/ctf2024)"  
-            [![](https://ctftime.org/media/events/HausDerFlaggen_Plakat_1080_x_1080_px.png){ width="200" align=left }](https://laokoon-security.com/ctf2024)  
-            **比赛名称** : [Haus der Flaggen/Flag Heist](https://laokoon-security.com/ctf2024)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-10-12 16:00:00 - 2024-10-13 02:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Laokoon SecurITy (https://ctftime.org/team/201667)  
-            **添加日历** : https://ctftime.org/event/2436.ics  
-            
         ??? Quote "[Blue Water CTF 2024](https://bw.ctf.ing/)"  
             [![](https://ctftime.org/media/events/4872c3c168bd1cdeb5dc564bb3a0416f.png){ width="200" align=left }](https://bw.ctf.ing/)  
             **比赛名称** : [Blue Water CTF 2024](https://bw.ctf.ing/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Securinets (https://ctftime.org/team/5084)  
             **添加日历** : https://ctftime.org/event/2520.ics  
+            
+        ??? Quote "[GITEX GLOBAL CTF](https://gitex.ctf.ae/)"  
+            [![](https://ctftime.org/media/events/New_Project_17.png){ width="200" align=left }](https://gitex.ctf.ae/)  
+            **比赛名称** : [GITEX GLOBAL CTF](https://gitex.ctf.ae/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-10-14 15:00:00 - 2024-10-15 20:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : CTF.ae (https://ctftime.org/team/151875)  
+            **添加日历** : https://ctftime.org/event/2522.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

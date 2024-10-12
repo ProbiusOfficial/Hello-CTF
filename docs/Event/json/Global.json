@@ -828,18 +828,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "AlpacaHack Round 5 (Crypto)",
-        "比赛时间": "2024-10-12 11:00:00 - 2024-10-12 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2500.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://alpacahack.com/ctfs/round-5",
-        "比赛标志": "https://ctftime.org/media/events/ctftime_6.png",
-        "比赛权重": "0",
-        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
-        "比赛ID": "1163",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Haus der Flaggen/Flag Heist",
         "比赛时间": "2024-10-12 16:00:00 - 2024-10-13 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2436.ics",
@@ -850,6 +838,18 @@
         "赛事主办": "Laokoon SecurITy (https://ctftime.org/team/201667)",
         "比赛ID": "853",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "AlpacaHack Round 5 (Crypto)",
+        "比赛时间": "2024-10-12 11:00:00 - 2024-10-12 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2500.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://alpacahack.com/ctfs/round-5",
+        "比赛标志": "https://ctftime.org/media/events/ctftime_6.png",
+        "比赛权重": "0",
+        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
+        "比赛ID": "1163",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Kernel Kombat",
@@ -2037,18 +2037,6 @@
         "比赛权重": "46.33",
         "赛事主办": "BCACTF (https://ctftime.org/team/81702)",
         "比赛ID": "325",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Akasec CTF 2024",
-        "比赛时间": "2024-06-07 21:37:00 - 2024-06-09 21:37:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2222.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.akasec.club/",
-        "比赛标志": "https://ctftime.org/media/events/akasec-ctf-logo_3.jpeg",
-        "比赛权重": "23.08",
-        "赛事主办": "Akasec (https://ctftime.org/team/107202)",
-        "比赛ID": "1047",
         "比赛状态": "past"
     }
 ]
