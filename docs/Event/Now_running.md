@@ -54,3 +54,12 @@ comments: true
     **赛事主办** : Laokoon SecurITy (https://ctftime.org/team/201667)  
     **添加日历** : https://ctftime.org/event/2436.ics  
     
+??? Quote "[Blue Water CTF 2024](https://bw.ctf.ing/)"  
+    [![](https://ctftime.org/media/events/4872c3c168bd1cdeb5dc564bb3a0416f.png){ width="200" align=left }](https://bw.ctf.ing/)  
+    **比赛名称** : [Blue Water CTF 2024](https://bw.ctf.ing/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-10-12 22:00:00 - 2024-10-14 10:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : 💦​ (https://ctftime.org/team/205897)  
+    **添加日历** : https://ctftime.org/event/2479.ics  
+    
