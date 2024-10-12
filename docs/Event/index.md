@@ -288,13 +288,7 @@ hide:
     
     === "*即将开始*"
         === "国内赛事"
-            ??? Quote "[GEEKGAME 2024](https://geekgame.pku.edu.cn)"  
-                **比赛名称** : [GEEKGAME 2024](https://geekgame.pku.edu.cn)  
-                **比赛类型** : 线上Jeopardy解题赛  
-                **报名时间** : 2024年10月06日 12:00 - 2024年10月11日 11:59  
-                **比赛时间** : 2024年10月12日 12:00 - 2024年10月19日 12:00  
-                **其他说明** : 第四届北京大学信息安全综合能力竞赛GEEKGAME 2024由北京大学学生 Linux 俱乐部主办，比赛时间为2024年10月12日至10月19日，采用个人线上赛的模式，选手可加入QQ群133986617获取更多信息。  
-                
+    
         === "国外赛事"
             ??? Quote "[Haus der Flaggen/Flag Heist](https://laokoon-security.com/ctf2024)"  
                 [![](https://ctftime.org/media/events/HausDerFlaggen_Plakat_1080_x_1080_px.png){ width="200" align=left }](https://laokoon-security.com/ctf2024)  

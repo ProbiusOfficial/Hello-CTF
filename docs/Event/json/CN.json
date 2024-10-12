@@ -3,26 +3,6 @@
     "data": {
         "result": [
             {
-                "name": "GEEKGAME 2024",
-                "info_confirmed": 1,
-                "mid_join": 0,
-                "link": "https://geekgame.pku.edu.cn",
-                "status": "即将开始",
-                "is_reg": 1,
-                "limit": 1,
-                "type": "线上Jeopardy解题赛",
-                "reg_time_start": "2024年10月06日 12:00",
-                "reg_time_end": "2024年10月11日 11:59",
-                "comp_time_start": "2024年10月12日 12:00",
-                "comp_time_end": "2024年10月19日 12:00",
-                "organizer": "北京大学学生 Linux 俱乐部",
-                "contac": {
-                    "QQ群": "133986617"
-                },
-                "tag": "普通赛",
-                "readmore": "第四届北京大学信息安全综合能力竞赛GEEKGAME 2024由北京大学学生 Linux 俱乐部主办，比赛时间为2024年10月12日至10月19日，采用个人线上赛的模式，选手可加入QQ群133986617获取更多信息。"
-            },
-            {
                 "name": "BRICS+ CTF Quals 2024",
                 "link": "https://brics-ctf.com/",
                 "type": "团队赛",
@@ -153,6 +133,26 @@
                 "comp_time_end": "2024年08月20日 23:59",
                 "readmore": "QQ群: 622869531 组委会邮箱: tianwangcup@163.com",
                 "status": "已经结束"
+            },
+            {
+                "name": "GEEKGAME 2024",
+                "info_confirmed": 1,
+                "mid_join": 0,
+                "link": "https://geekgame.pku.edu.cn",
+                "status": 3,
+                "is_reg": 1,
+                "limit": 1,
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2024年10月06日 12:00",
+                "reg_time_end": "2024年10月11日 11:59",
+                "comp_time_start": "2024年10月12日 12:00",
+                "comp_time_end": "2024年10月19日 12:00",
+                "organizer": "北京大学学生 Linux 俱乐部",
+                "contac": {
+                    "QQ群": "133986617"
+                },
+                "tag": "普通赛",
+                "readmore": "第四届北京大学信息安全综合能力竞赛GEEKGAME 2024由北京大学学生 Linux 俱乐部主办，比赛时间为2024年10月12日至10月19日，采用个人线上赛的模式，选手可加入QQ群133986617获取更多信息。"
             },
             {
                 "name": "2024'源鲁杯'高校网络安全技能大赛",
