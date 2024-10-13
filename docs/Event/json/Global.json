@@ -1206,7 +1206,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://metactf.com/join/rstcon24",
         "比赛标志": "https://ctftime.org/media/events/rstcon.png",
-        "比赛权重": "24.00",
+        "比赛权重": "25.00",
         "赛事主办": "RSTCON (https://ctftime.org/team/281202)",
         "比赛ID": "1125",
         "比赛状态": "past"
@@ -1758,7 +1758,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "http://ctf-spcs.mf.grsu.by/",
         "比赛标志": "https://ctftime.org/media/events/logo_NY.jpg",
-        "比赛权重": "24.05",
+        "比赛权重": "24.00",
         "赛事主办": "Beavers0 (https://ctftime.org/team/269281)",
         "比赛ID": "1041",
         "比赛状态": "past"
