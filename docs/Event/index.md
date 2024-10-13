@@ -596,15 +596,6 @@ hide:
                 **赛事主办** : PwnSec (https://ctftime.org/team/28797)  
                 **添加日历** : https://ctftime.org/event/2454.ics  
                 
-            ??? Quote "[0CTF 2024](https://ctf.0ops.sjtu.cn/)"  
-                [![](https://ctftime.org/media/events/0ctf.png){ width="200" align=left }](https://ctf.0ops.sjtu.cn/)  
-                **比赛名称** : [0CTF 2024](https://ctf.0ops.sjtu.cn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-16 10:00:00 - 2024-11-18 10:00:00 UTC+8  
-                **比赛权重** : 100.00  
-                **赛事主办** : 0ops (https://ctftime.org/team/4419)  
-                **添加日历** : https://ctftime.org/event/2448.ics  
-                
             ??? Quote "[BRICS+ CTF Finals 2024](https://brics-ctf.com/)"  
                 [![](https://ctftime.org/media/events/brics-logo-2024-square.png){ width="200" align=left }](https://brics-ctf.com/)  
                 **比赛名称** : [BRICS+ CTF Finals 2024](https://brics-ctf.com/)  
@@ -622,6 +613,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Crate-CTF (https://ctftime.org/team/352250)  
                 **添加日历** : https://ctftime.org/event/2489.ics  
+                
+            ??? Quote "[0CTF 2024](https://ctf.0ops.sjtu.cn/)"  
+                [![](https://ctftime.org/media/events/0ctf.png){ width="200" align=left }](https://ctf.0ops.sjtu.cn/)  
+                **比赛名称** : [0CTF 2024](https://ctf.0ops.sjtu.cn/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-21 10:00:00 - 2024-11-23 10:00:00 UTC+8  
+                **比赛权重** : 100.00  
+                **赛事主办** : 0ops (https://ctftime.org/team/4419)  
+                **添加日历** : https://ctftime.org/event/2448.ics  
                 
             ??? Quote "[GlacierCTF 2024](https://glacierctf.com/)"  
                 [![](https://ctftime.org/media/events/3ae6516246966c8d08c81d3bd5451cfa_1.png){ width="200" align=left }](https://glacierctf.com/)  
