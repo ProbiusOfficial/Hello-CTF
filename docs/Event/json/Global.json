@@ -84,6 +84,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Cyber Odyssey 2024 : Qualifications",
+        "比赛时间": "2024-10-19 20:37:00 - 2024-10-20 20:37:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2533.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.akasec.club/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "Akasec (https://ctftime.org/team/107202)",
+        "比赛ID": "1177",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "SunshineCTF 2024",
         "比赛时间": "2024-10-19 22:00:00 - 2024-10-21 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2485.ics",
@@ -432,18 +444,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "0CTF 2024",
-        "比赛时间": "2024-11-21 10:00:00 - 2024-11-23 10:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2448.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.0ops.sjtu.cn/",
-        "比赛标志": "https://ctftime.org/media/events/0ctf.png",
-        "比赛权重": "100.00",
-        "赛事主办": "0ops (https://ctftime.org/team/4419)",
-        "比赛ID": "99",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "GlacierCTF 2024",
         "比赛时间": "2024-11-23 02:00:00 - 2024-11-24 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2402.ics",
@@ -645,6 +645,18 @@
         "比赛权重": "36.00",
         "赛事主办": "polygl0ts (https://ctftime.org/team/53791)",
         "比赛ID": "818",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "0CTF 2024",
+        "比赛时间": "2024-12-21 10:00:00 - 2024-12-23 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2448.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.0ops.sjtu.cn/",
+        "比赛标志": "https://ctftime.org/media/events/0ctf.png",
+        "比赛权重": "100.00",
+        "赛事主办": "0ops (https://ctftime.org/team/4419)",
+        "比赛ID": "99",
         "比赛状态": "oncoming"
     },
     {
