@@ -114,7 +114,7 @@ comments: true
     **比赛名称** : [Kernel Kombat](https://zl-slay.vercel.app/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-10-06 14:46:54 - 2024-10-06 14:46:54 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : S14y3r (https://ctftime.org/team/282208)  
     **添加日历** : https://ctftime.org/event/2528.ics  
     
