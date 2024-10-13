@@ -91,6 +91,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[NoHat CTF 2024](https://play.pwnx.io/#/event/40b08dba-3140-4cae-89da-6db9c0d8e5a0)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://play.pwnx.io/#/event/40b08dba-3140-4cae-89da-6db9c0d8e5a0)  
+    **比赛名称** : [NoHat CTF 2024](https://play.pwnx.io/#/event/40b08dba-3140-4cae-89da-6db9c0d8e5a0)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-10-13 00:00:00 - 2024-10-14 00:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : PWNX (https://ctftime.org/team/179989)  
+    **添加日历** : https://ctftime.org/event/2518.ics  
+    
 ??? Quote "[Haus der Flaggen/Flag Heist](https://laokoon-security.com/ctf2024)"  
     [![](https://ctftime.org/media/events/HausDerFlaggen_Plakat_1080_x_1080_px.png){ width="200" align=left }](https://laokoon-security.com/ctf2024)  
     **比赛名称** : [Haus der Flaggen/Flag Heist](https://laokoon-security.com/ctf2024)  
@@ -981,13 +990,4 @@ comments: true
     **比赛权重** : 24.56  
     **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
     **添加日历** : https://ctftime.org/event/2273.ics  
-    
-??? Quote "[ESAIP CTF 2024](https://ctf.esaip.org/)"  
-    [![](https://ctftime.org/media/events/Logo_discord.png){ width="200" align=left }](https://ctf.esaip.org/)  
-    **比赛名称** : [ESAIP CTF 2024](https://ctf.esaip.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-08 05:00:00 - 2024-06-08 16:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Esaip CTF (https://ctftime.org/team/190938)  
-    **添加日历** : https://ctftime.org/event/2382.ics  
     
