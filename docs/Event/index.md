@@ -879,15 +879,6 @@ hide:
                 **赛事主办** : Hack Havoc (https://ctftime.org/team/316395)  
                 **添加日历** : https://ctftime.org/event/2532.ics  
                 
-            ??? Quote "[TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://ctf.tcp1p.team/)"  
-                [![](https://ctftime.org/media/events/Asset_10.jpg){ width="200" align=left }](https://ctf.tcp1p.team/)  
-                **比赛名称** : [TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://ctf.tcp1p.team/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-11 20:00:00 - 2024-10-13 20:00:00 UTC+8  
-                **比赛权重** : 24.85  
-                **赛事主办** : TCP1P (https://ctftime.org/team/187248)  
-                **添加日历** : https://ctftime.org/event/2256.ics  
-                
             ??? Quote "[Blue Water CTF 2024](https://bw.ctf.ing/)"  
                 [![](https://ctftime.org/media/events/4872c3c168bd1cdeb5dc564bb3a0416f.png){ width="200" align=left }](https://bw.ctf.ing/)  
                 **比赛名称** : [Blue Water CTF 2024](https://bw.ctf.ing/)  
@@ -1020,6 +1011,15 @@ hide:
                 **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
                 **添加日历** : https://ctftime.org/event/2500.ics  
                 
+            ??? Quote "[TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://ctf.tcp1p.team/)"  
+                [![](https://ctftime.org/media/events/Asset_10.jpg){ width="200" align=left }](https://ctf.tcp1p.team/)  
+                **比赛名称** : [TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://ctf.tcp1p.team/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-10-11 20:00:00 - 2024-10-13 20:00:00 UTC+8  
+                **比赛权重** : 24.85  
+                **赛事主办** : TCP1P (https://ctftime.org/team/187248)  
+                **添加日历** : https://ctftime.org/event/2256.ics  
+                
             ??? Quote "[Kernel Kombat](https://zl-slay.vercel.app/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://zl-slay.vercel.app/)  
                 **比赛名称** : [Kernel Kombat](https://zl-slay.vercel.app/)  
@@ -1079,7 +1079,7 @@ hide:
                 **比赛名称** : [AltayCTF 2024](https://university.altayctf.ru/2024)  
                 **比赛形式** : Attack-Defense  
                 **比赛时间** : 2024-10-05 11:00:00 - 2024-10-06 20:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : SharLike (https://ctftime.org/team/16172)  
                 **添加日历** : https://ctftime.org/event/2376.ics  
                 
@@ -1892,15 +1892,6 @@ hide:
                 **比赛权重** : 24.56  
                 **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
                 **添加日历** : https://ctftime.org/event/2273.ics  
-                
-            ??? Quote "[ESAIP CTF 2024](https://ctf.esaip.org/)"  
-                [![](https://ctftime.org/media/events/Logo_discord.png){ width="200" align=left }](https://ctf.esaip.org/)  
-                **比赛名称** : [ESAIP CTF 2024](https://ctf.esaip.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-08 05:00:00 - 2024-06-08 16:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Esaip CTF (https://ctftime.org/team/190938)  
-                **添加日历** : https://ctftime.org/event/2382.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
