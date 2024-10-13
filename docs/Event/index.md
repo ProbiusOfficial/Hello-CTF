@@ -353,6 +353,15 @@ hide:
                 **赛事主办** : FluxFingers (https://ctftime.org/team/551)  
                 **添加日历** : https://ctftime.org/event/2438.ics  
                 
+            ??? Quote "[Cyber Odyssey 2024 : Qualifications](https://ctf.akasec.club/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.akasec.club/)  
+                **比赛名称** : [Cyber Odyssey 2024 : Qualifications](https://ctf.akasec.club/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-10-19 20:37:00 - 2024-10-20 20:37:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Akasec (https://ctftime.org/team/107202)  
+                **添加日历** : https://ctftime.org/event/2533.ics  
+                
             ??? Quote "[SunshineCTF 2024](https://sunshinectf.org/)"  
                 [![](https://ctftime.org/media/events/sctf_logo_24.png){ width="200" align=left }](https://sunshinectf.org/)  
                 **比赛名称** : [SunshineCTF 2024](https://sunshinectf.org/)  
@@ -614,15 +623,6 @@ hide:
                 **赛事主办** : Crate-CTF (https://ctftime.org/team/352250)  
                 **添加日历** : https://ctftime.org/event/2489.ics  
                 
-            ??? Quote "[0CTF 2024](https://ctf.0ops.sjtu.cn/)"  
-                [![](https://ctftime.org/media/events/0ctf.png){ width="200" align=left }](https://ctf.0ops.sjtu.cn/)  
-                **比赛名称** : [0CTF 2024](https://ctf.0ops.sjtu.cn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-21 10:00:00 - 2024-11-23 10:00:00 UTC+8  
-                **比赛权重** : 100.00  
-                **赛事主办** : 0ops (https://ctftime.org/team/4419)  
-                **添加日历** : https://ctftime.org/event/2448.ics  
-                
             ??? Quote "[GlacierCTF 2024](https://glacierctf.com/)"  
                 [![](https://ctftime.org/media/events/3ae6516246966c8d08c81d3bd5451cfa_1.png){ width="200" align=left }](https://glacierctf.com/)  
                 **比赛名称** : [GlacierCTF 2024](https://glacierctf.com/)  
@@ -775,6 +775,15 @@ hide:
                 **比赛权重** : 36.00  
                 **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
                 **添加日历** : https://ctftime.org/event/2502.ics  
+                
+            ??? Quote "[0CTF 2024](https://ctf.0ops.sjtu.cn/)"  
+                [![](https://ctftime.org/media/events/0ctf.png){ width="200" align=left }](https://ctf.0ops.sjtu.cn/)  
+                **比赛名称** : [0CTF 2024](https://ctf.0ops.sjtu.cn/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-12-21 10:00:00 - 2024-12-23 10:00:00 UTC+8  
+                **比赛权重** : 100.00  
+                **赛事主办** : 0ops (https://ctftime.org/team/4419)  
+                **添加日历** : https://ctftime.org/event/2448.ics  
                 
             ??? Quote "[hxp 38C3 CTF](https://2024.ctf.link/)"  
                 [![](https://ctftime.org/media/events/hxp-38c3.png){ width="200" align=left }](https://2024.ctf.link/)  
