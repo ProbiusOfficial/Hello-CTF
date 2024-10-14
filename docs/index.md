@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[GITEX GLOBAL CTF](https://gitex.ctf.ae/)"  
-            [![](https://ctftime.org/media/events/New_Project_17.png){ width="200" align=left }](https://gitex.ctf.ae/)  
-            **比赛名称** : [GITEX GLOBAL CTF](https://gitex.ctf.ae/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-10-14 15:00:00 - 2024-10-15 20:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : CTF.ae (https://ctftime.org/team/151875)  
-            **添加日历** : https://ctftime.org/event/2522.ics  
-            
         ??? Quote "[Breach Bytes 2.0](https://unstop.com/hackathons/breach-bytes-20-shri-vile-parle-kelavani-mandals-dwarkadas-j-sanghvi-college-of-engineering-djsce-mumbai-1171442)"  
             [![](https://ctftime.org/media/events/BREACH_BYTES_2.0_Logo_1.png){ width="200" align=left }](https://unstop.com/hackathons/breach-bytes-20-shri-vile-parle-kelavani-mandals-dwarkadas-j-sanghvi-college-of-engineering-djsce-mumbai-1171442)  
             **比赛名称** : [Breach Bytes 2.0](https://unstop.com/hackathons/breach-bytes-20-shri-vile-parle-kelavani-mandals-dwarkadas-j-sanghvi-college-of-engineering-djsce-mumbai-1171442)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : BUG PWN (https://ctftime.org/team/182428)  
             **添加日历** : https://ctftime.org/event/2531.ics  
+            
+        ??? Quote "[Hackceler8 2024](https://capturetheflag.withgoogle.com/hackceler8)"  
+            [![](https://ctftime.org/media/events/HCL8.png){ width="200" align=left }](https://capturetheflag.withgoogle.com/hackceler8)  
+            **比赛名称** : [Hackceler8 2024](https://capturetheflag.withgoogle.com/hackceler8)  
+            **比赛形式** : Hack quest  
+            **比赛时间** : 2024-10-18 08:00:00 - 2024-10-21 07:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
+            **添加日历** : https://ctftime.org/event/2379.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
