@@ -109,6 +109,15 @@ comments: true
     **赛事主办** : PWNX (https://ctftime.org/team/179989)  
     **添加日历** : https://ctftime.org/event/2518.ics  
     
+??? Quote "[Blue Water CTF 2024](https://bw.ctf.ing/)"  
+    [![](https://ctftime.org/media/events/4872c3c168bd1cdeb5dc564bb3a0416f.png){ width="200" align=left }](https://bw.ctf.ing/)  
+    **比赛名称** : [Blue Water CTF 2024](https://bw.ctf.ing/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-10-12 22:00:00 - 2024-10-14 10:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : 💦​ (https://ctftime.org/team/205897)  
+    **添加日历** : https://ctftime.org/event/2479.ics  
+    
 ??? Quote "[Haus der Flaggen/Flag Heist](https://laokoon-security.com/ctf2024)"  
     [![](https://ctftime.org/media/events/HausDerFlaggen_Plakat_1080_x_1080_px.png){ width="200" align=left }](https://laokoon-security.com/ctf2024)  
     **比赛名称** : [Haus der Flaggen/Flag Heist](https://laokoon-security.com/ctf2024)  
@@ -981,13 +990,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : YCF (https://ctftime.org/team/179685)  
     **添加日历** : https://ctftime.org/event/2385.ics  
-    
-??? Quote "[DIVER OSINT CTF 2024](https://ctfd.diverctf.org/)"  
-    [![](https://ctftime.org/media/events/tQF2eZgQ_400x400.jpg){ width="200" align=left }](https://ctfd.diverctf.org/)  
-    **比赛名称** : [DIVER OSINT CTF 2024](https://ctfd.diverctf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-08 11:00:00 - 2024-06-09 11:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
-    **添加日历** : https://ctftime.org/event/2365.ics  
     
