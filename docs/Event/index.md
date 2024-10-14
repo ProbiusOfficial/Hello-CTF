@@ -965,6 +965,13 @@ hide:
                 **比赛时间** : 2024年08月01日 00:00 - 2024年08月20日 23:59  
                 **其他说明** : QQ群: 622869531 组委会邮箱: tianwangcup@163.com  
                 
+            ??? Quote "[MoeCTF 2024](https://ctf.xidian.edu.cn)"  
+                **比赛名称** : [MoeCTF 2024](https://ctf.xidian.edu.cn)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年08月07日 14:23 - 2024年10月14日 21:00  
+                **比赛时间** : 2024年08月10日 09:00 - 2024年10月14日 21:00  
+                **其他说明** : QQ 群：187536315  
+                
         === "国外赛事"
             ??? Quote "[Securinets CTF Quals 2024](https://ctf.securinets.tn/)"  
                 [![](https://ctftime.org/media/events/d82bcfc5f1d83b7cc51c7dd0dbc8f5c6_1.png){ width="200" align=left }](https://ctf.securinets.tn/)  

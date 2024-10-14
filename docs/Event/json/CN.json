@@ -135,6 +135,17 @@
                 "status": "已经结束"
             },
             {
+                "name": "MoeCTF 2024",
+                "link": "https://ctf.xidian.edu.cn",
+                "type": "个人赛",
+                "reg_time_start": "2024年08月07日 14:23",
+                "reg_time_end": "2024年10月14日 21:00",
+                "comp_time_start": "2024年08月10日 09:00",
+                "comp_time_end": "2024年10月14日 21:00",
+                "readmore": "QQ 群：187536315",
+                "status": "已经结束"
+            },
+            {
                 "name": "GEEKGAME 2024",
                 "info_confirmed": 1,
                 "mid_join": 0,
@@ -207,17 +218,6 @@
                 "comp_time_start": "2024年09月21日 00:00",
                 "comp_time_end": "2024年10月27日 23:59",
                 "readmore": "更多信息请前往官网https://www.hncsisc.com 的“赛事活动”查看",
-                "status": 3
-            },
-            {
-                "name": "MoeCTF 2024",
-                "link": "https://ctf.xidian.edu.cn",
-                "type": "个人赛",
-                "reg_time_start": "2024年08月07日 14:23",
-                "reg_time_end": "2024年10月14日 21:00",
-                "comp_time_start": "2024年08月10日 09:00",
-                "comp_time_end": "2024年10月14日 21:00",
-                "readmore": "QQ 群：187536315",
                 "status": 3
             }
         ],
