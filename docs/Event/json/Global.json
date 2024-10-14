@@ -714,7 +714,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.umasscybersec.org/",
         "比赛标志": "https://ctftime.org/media/events/889a1e484f0b51dd3d865b3a53b26200.jpg",
-        "比赛权重": "47.60",
+        "比赛权重": "48.38",
         "赛事主办": "SavedByTheShell (https://ctftime.org/team/78233)",
         "比赛ID": "598",
         "比赛状态": "oncoming"
@@ -1182,7 +1182,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.pyjail.club/",
         "比赛标志": "https://ctftime.org/media/events/jailctf150.png",
-        "比赛权重": "24.86",
+        "比赛权重": "24.87",
         "赛事主办": "jailctf (https://ctftime.org/team/311088)",
         "比赛ID": "1152",
         "比赛状态": "past"
@@ -1458,7 +1458,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.idek.team/",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "52.27",
+        "比赛权重": "52.29",
         "赛事主办": "idek (https://ctftime.org/team/157039)",
         "比赛ID": "700",
         "比赛状态": "past"

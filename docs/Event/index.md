@@ -826,7 +826,7 @@ hide:
                 **比赛名称** : [UMassCTF 2025](https://ctf.umasscybersec.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-04-05 07:00:00 - 2025-04-07 07:00:00 UTC+8  
-                **比赛权重** : 47.60  
+                **比赛权重** : 48.38  
                 **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
                 **添加日历** : https://ctftime.org/event/2519.ics  
                 
@@ -1268,7 +1268,7 @@ hide:
                 **比赛名称** : [jailCTF 2024](https://ctf.pyjail.club/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-09-14 04:00:00 - 2024-09-17 04:00:00 UTC+8  
-                **比赛权重** : 24.86  
+                **比赛权重** : 24.87  
                 **赛事主办** : jailctf (https://ctftime.org/team/311088)  
                 **添加日历** : https://ctftime.org/event/2450.ics  
                 
@@ -1475,7 +1475,7 @@ hide:
                 **比赛名称** : [idekCTF 2024](https://ctf.idek.team/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-08-17 08:00:00 - 2024-08-19 08:00:00 UTC+8  
-                **比赛权重** : 52.27  
+                **比赛权重** : 52.29  
                 **赛事主办** : idek (https://ctftime.org/team/157039)  
                 **添加日历** : https://ctftime.org/event/2304.ics  
                 
