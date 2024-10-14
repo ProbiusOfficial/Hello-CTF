@@ -344,15 +344,6 @@ hide:
                 **赛事主办** : FluxFingers (https://ctftime.org/team/551)  
                 **添加日历** : https://ctftime.org/event/2438.ics  
                 
-            ??? Quote "[Cyber Odyssey 2024 : Qualifications](https://ctf.akasec.club/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.akasec.club/)  
-                **比赛名称** : [Cyber Odyssey 2024 : Qualifications](https://ctf.akasec.club/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-19 20:37:00 - 2024-10-20 20:37:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Akasec (https://ctftime.org/team/107202)  
-                **添加日历** : https://ctftime.org/event/2533.ics  
-                
             ??? Quote "[SunshineCTF 2024](https://sunshinectf.org/)"  
                 [![](https://ctftime.org/media/events/sctf_logo_24.png){ width="200" align=left }](https://sunshinectf.org/)  
                 **比赛名称** : [SunshineCTF 2024](https://sunshinectf.org/)  
