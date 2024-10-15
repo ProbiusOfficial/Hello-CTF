@@ -753,7 +753,7 @@
         "比赛权重": "0",
         "赛事主办": "The dangers of my heart (https://ctftime.org/team/300150)",
         "比赛ID": "1180",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "GITEX GLOBAL CTF",
@@ -1941,18 +1941,6 @@
         "比赛权重": "65.62",
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "317",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "RVCE x IITB x YCF CTF",
-        "比赛时间": "2024-06-08 20:30:00 - 2024-06-09 02:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2385.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://rvctf.tech/",
-        "比赛标志": "https://ctftime.org/media/events/rv_logo.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "YCF (https://ctftime.org/team/179685)",
-        "比赛ID": "1094",
         "比赛状态": "past"
     }
 ]

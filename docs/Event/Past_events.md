@@ -98,6 +98,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Breach Bytes 2.0](https://unstop.com/hackathons/breach-bytes-20-shri-vile-parle-kelavani-mandals-dwarkadas-j-sanghvi-college-of-engineering-djsce-mumbai-1171442)"  
+    [![](https://ctftime.org/media/events/BREACH_BYTES_2.0_Logo_1.png){ width="200" align=left }](https://unstop.com/hackathons/breach-bytes-20-shri-vile-parle-kelavani-mandals-dwarkadas-j-sanghvi-college-of-engineering-djsce-mumbai-1171442)  
+    **比赛名称** : [Breach Bytes 2.0](https://unstop.com/hackathons/breach-bytes-20-shri-vile-parle-kelavani-mandals-dwarkadas-j-sanghvi-college-of-engineering-djsce-mumbai-1171442)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-10-15 10:30:00 - 2024-10-15 21:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : The dangers of my heart (https://ctftime.org/team/300150)  
+    **添加日历** : https://ctftime.org/event/2526.ics  
+    
 ??? Quote "[GITEX GLOBAL CTF](https://gitex.ctf.ae/)"  
     [![](https://ctftime.org/media/events/New_Project_17.png){ width="200" align=left }](https://gitex.ctf.ae/)  
     **比赛名称** : [GITEX GLOBAL CTF](https://gitex.ctf.ae/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 65.62  
     **赛事主办** : ASIS (https://ctftime.org/team/4140)  
     **添加日历** : https://ctftime.org/event/2210.ics  
-    
-??? Quote "[RVCE x IITB x YCF CTF](https://rvctf.tech/)"  
-    [![](https://ctftime.org/media/events/rv_logo.jpg){ width="200" align=left }](https://rvctf.tech/)  
-    **比赛名称** : [RVCE x IITB x YCF CTF](https://rvctf.tech/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-08 20:30:00 - 2024-06-09 02:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : YCF (https://ctftime.org/team/179685)  
-    **添加日历** : https://ctftime.org/event/2385.ics  
     
