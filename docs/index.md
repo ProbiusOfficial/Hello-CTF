@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[CTF MetaRed Mexico Anuies-TIC 2024](https://ctfd.anuies.mx/)"  
-            [![](https://ctftime.org/media/events/ctf_2024_1.jpg){ width="200" align=left }](https://ctfd.anuies.mx/)  
-            **比赛名称** : [CTF MetaRed Mexico Anuies-TIC 2024](https://ctfd.anuies.mx/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-10-15 23:00:00 - 2024-10-16 11:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : UV-CSIRT (https://ctftime.org/team/166955)  
-            **添加日历** : https://ctftime.org/event/2482.ics  
-            
         ??? Quote "[Africa battleCTF 2024 prequal](https://qualifier.bugpwn.com/)"  
             [![](https://ctftime.org/media/events/banner_1.png){ width="200" align=left }](https://qualifier.bugpwn.com/)  
             **比赛名称** : [Africa battleCTF 2024 prequal](https://qualifier.bugpwn.com/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 38.70  
             **赛事主办** : Cyber Hacktics (https://ctftime.org/team/127017)  
             **添加日历** : https://ctftime.org/event/2443.ics  
+            
+        ??? Quote "[Hack.lu CTF 2024](https://flu.xxx/)"  
+            [![](https://ctftime.org/media/events/logo-small.png){ width="200" align=left }](https://flu.xxx/)  
+            **比赛名称** : [Hack.lu CTF 2024](https://flu.xxx/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-10-19 02:00:00 - 2024-10-21 02:00:00 UTC+8  
+            **比赛权重** : 100.00  
+            **赛事主办** : FluxFingers (https://ctftime.org/team/551)  
+            **添加日历** : https://ctftime.org/event/2438.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
