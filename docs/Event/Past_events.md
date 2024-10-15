@@ -98,6 +98,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[GITEX GLOBAL CTF](https://gitex.ctf.ae/)"  
+    [![](https://ctftime.org/media/events/New_Project_17.png){ width="200" align=left }](https://gitex.ctf.ae/)  
+    **比赛名称** : [GITEX GLOBAL CTF](https://gitex.ctf.ae/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-10-14 15:00:00 - 2024-10-15 20:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : CTF.ae (https://ctftime.org/team/151875)  
+    **添加日历** : https://ctftime.org/event/2522.ics  
+    
 ??? Quote "[Securinets CTF Quals 2024](https://ctf.securinets.tn/)"  
     [![](https://ctftime.org/media/events/d82bcfc5f1d83b7cc51c7dd0dbc8f5c6_1.png){ width="200" align=left }](https://ctf.securinets.tn/)  
     **比赛名称** : [Securinets CTF Quals 2024](https://ctf.securinets.tn/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : YCF (https://ctftime.org/team/179685)  
     **添加日历** : https://ctftime.org/event/2385.ics  
-    
-??? Quote "[DIVER OSINT CTF 2024](https://ctfd.diverctf.org/)"  
-    [![](https://ctftime.org/media/events/tQF2eZgQ_400x400.jpg){ width="200" align=left }](https://ctfd.diverctf.org/)  
-    **比赛名称** : [DIVER OSINT CTF 2024](https://ctfd.diverctf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-08 11:00:00 - 2024-06-09 11:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
-    **添加日历** : https://ctftime.org/event/2365.ics  
     
