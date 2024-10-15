@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [eoffice前台权限绕过致代码执行](https://y4tacker.github.io/2024/10/14/year/2024/10/eoffice%E5%89%8D%E5%8F%B0%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E8%87%B4%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-10-14
+
+    1fde8e13c0800e34bf83b87666dd4d9cc35b143eda24e0c7f10fb09b8f001c0492c29e66ae7d59bed9b15650dfd29403df74c0cac6726b0adac99daaf44ace5d3b290a873a368292a289fb0e4a84be522f1f5f2248fcd6d1c86b9d39f861123c353f2a...
     ### [浅析Edoc2前台远程代码执行](https://y4tacker.github.io/2024/10/09/year/2024/10/%E6%B5%85%E6%9E%90Edoc2%E5%89%8D%E5%8F%B0%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-10-09
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2024-07-08
 
     尝试做一做模拟类外挂检测鼠标-键盘模拟监控鼠标-键盘模拟外挂相较于直接读/写内存的外挂相比，更加安全和可靠，因为它本质还是模拟人去操作的，只要频率设置不过分，那么不管是客户端检测还是服务端检测都是难以察觉的，因此这几天在思考一个可以检测这类外挂的方案。ETWWindows (ETW) 的事件跟踪提供一种机制来跟踪和记录由用户模式应用程序和内核模式驱动程序引发的事件。 ETW 在 Windows 操...
-    ### [浅析GeoServer property 表达式注入代码执行(CVE-2024-36401)](https://y4tacker.github.io/2024/07/03/year/2024/7/%E6%B5%85%E6%9E%90GeoServer-property-%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B3%A8%E5%85%A5%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C-CVE-2024-36401/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-07-03
-
-    漏洞复现分析从公告来看，漏洞来源于geotools这个库使用apache xpath解析xpath导致的问题https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvvhttps://github.com/geotools/geotools/pull/4797https://github.com/geo...
 
 </div>

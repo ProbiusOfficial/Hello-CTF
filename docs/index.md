@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Breach Bytes 2.0](https://unstop.com/hackathons/breach-bytes-20-shri-vile-parle-kelavani-mandals-dwarkadas-j-sanghvi-college-of-engineering-djsce-mumbai-1171442)"  
-            [![](https://ctftime.org/media/events/BREACH_BYTES_2.0_Logo_1.png){ width="200" align=left }](https://unstop.com/hackathons/breach-bytes-20-shri-vile-parle-kelavani-mandals-dwarkadas-j-sanghvi-college-of-engineering-djsce-mumbai-1171442)  
-            **比赛名称** : [Breach Bytes 2.0](https://unstop.com/hackathons/breach-bytes-20-shri-vile-parle-kelavani-mandals-dwarkadas-j-sanghvi-college-of-engineering-djsce-mumbai-1171442)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-10-15 10:30:00 - 2024-10-15 21:30:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : The dangers of my heart (https://ctftime.org/team/300150)  
-            **添加日历** : https://ctftime.org/event/2526.ics  
-            
         ??? Quote "[CTF MetaRed Mexico Anuies-TIC 2024](https://ctfd.anuies.mx/)"  
             [![](https://ctftime.org/media/events/ctf_2024_1.jpg){ width="200" align=left }](https://ctfd.anuies.mx/)  
             **比赛名称** : [CTF MetaRed Mexico Anuies-TIC 2024](https://ctfd.anuies.mx/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
             **添加日历** : https://ctftime.org/event/2379.ics  
+            
+        ??? Quote "[DEADFACE CTF 2024](https://ctf.deadface.io/)"  
+            [![](https://ctftime.org/media/events/logo_deadface_ctf_2024.png){ width="200" align=left }](https://ctf.deadface.io/)  
+            **比赛名称** : [DEADFACE CTF 2024](https://ctf.deadface.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-10-18 22:00:00 - 2024-10-20 08:00:00 UTC+8  
+            **比赛权重** : 38.70  
+            **赛事主办** : Cyber Hacktics (https://ctftime.org/team/127017)  
+            **添加日历** : https://ctftime.org/event/2443.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
