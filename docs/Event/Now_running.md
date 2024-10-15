@@ -45,3 +45,12 @@ comments: true
     **赛事主办** : CTF.ae (https://ctftime.org/team/151875)  
     **添加日历** : https://ctftime.org/event/2522.ics  
     
+??? Quote "[Breach Bytes 2.0](https://unstop.com/hackathons/breach-bytes-20-shri-vile-parle-kelavani-mandals-dwarkadas-j-sanghvi-college-of-engineering-djsce-mumbai-1171442)"  
+    [![](https://ctftime.org/media/events/BREACH_BYTES_2.0_Logo_1.png){ width="200" align=left }](https://unstop.com/hackathons/breach-bytes-20-shri-vile-parle-kelavani-mandals-dwarkadas-j-sanghvi-college-of-engineering-djsce-mumbai-1171442)  
+    **比赛名称** : [Breach Bytes 2.0](https://unstop.com/hackathons/breach-bytes-20-shri-vile-parle-kelavani-mandals-dwarkadas-j-sanghvi-college-of-engineering-djsce-mumbai-1171442)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-10-15 10:30:00 - 2024-10-15 21:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : The dangers of my heart (https://ctftime.org/team/300150)  
+    **添加日历** : https://ctftime.org/event/2526.ics  
+    
