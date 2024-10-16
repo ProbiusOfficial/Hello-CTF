@@ -741,7 +741,7 @@
         "比赛权重": "0.00",
         "赛事主办": "UV-CSIRT (https://ctftime.org/team/166955)",
         "比赛ID": "653",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Breach Bytes 2.0",
@@ -1929,18 +1929,6 @@
         "比赛权重": "0.00",
         "赛事主办": "BrainHack_Organiser (https://ctftime.org/team/287673)",
         "比赛ID": "1100",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Crypto CTF 2024",
-        "比赛时间": "2024-06-08 22:00:00 - 2024-06-09 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2210.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cr.yp.toc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/cryptoctf.jpg",
-        "比赛权重": "65.62",
-        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
-        "比赛ID": "317",
         "比赛状态": "past"
     }
 ]

@@ -843,15 +843,6 @@ hide:
                 **赛事主办** : Hack Havoc (https://ctftime.org/team/316395)  
                 **添加日历** : https://ctftime.org/event/2532.ics  
                 
-            ??? Quote "[CTF MetaRed Mexico Anuies-TIC 2024](https://ctfd.anuies.mx/)"  
-                [![](https://ctftime.org/media/events/ctf_2024_1.jpg){ width="200" align=left }](https://ctfd.anuies.mx/)  
-                **比赛名称** : [CTF MetaRed Mexico Anuies-TIC 2024](https://ctfd.anuies.mx/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-15 23:00:00 - 2024-10-16 11:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : UV-CSIRT (https://ctftime.org/team/166955)  
-                **添加日历** : https://ctftime.org/event/2482.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[BRICS+ CTF Quals 2024](https://brics-ctf.com/)"  
@@ -946,6 +937,15 @@ hide:
                 **其他说明** : QQ 群：187536315  
                 
         === "国外赛事"
+            ??? Quote "[CTF MetaRed Mexico Anuies-TIC 2024](https://ctfd.anuies.mx/)"  
+                [![](https://ctftime.org/media/events/ctf_2024_1.jpg){ width="200" align=left }](https://ctfd.anuies.mx/)  
+                **比赛名称** : [CTF MetaRed Mexico Anuies-TIC 2024](https://ctfd.anuies.mx/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-10-15 23:00:00 - 2024-10-16 11:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : UV-CSIRT (https://ctftime.org/team/166955)  
+                **添加日历** : https://ctftime.org/event/2482.ics  
+                
             ??? Quote "[Breach Bytes 2.0](https://unstop.com/hackathons/breach-bytes-20-shri-vile-parle-kelavani-mandals-dwarkadas-j-sanghvi-college-of-engineering-djsce-mumbai-1171442)"  
                 [![](https://ctftime.org/media/events/BREACH_BYTES_2.0_Logo_1.png){ width="200" align=left }](https://unstop.com/hackathons/breach-bytes-20-shri-vile-parle-kelavani-mandals-dwarkadas-j-sanghvi-college-of-engineering-djsce-mumbai-1171442)  
                 **比赛名称** : [Breach Bytes 2.0](https://unstop.com/hackathons/breach-bytes-20-shri-vile-parle-kelavani-mandals-dwarkadas-j-sanghvi-college-of-engineering-djsce-mumbai-1171442)  
@@ -1836,15 +1836,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : BrainHack_Organiser (https://ctftime.org/team/287673)  
                 **添加日历** : https://ctftime.org/event/2330.ics  
-                
-            ??? Quote "[Crypto CTF 2024](https://cr.yp.toc.tf/)"  
-                [![](https://ctftime.org/media/events/cryptoctf.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
-                **比赛名称** : [Crypto CTF 2024](https://cr.yp.toc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-08 22:00:00 - 2024-06-09 22:00:00 UTC+8  
-                **比赛权重** : 65.62  
-                **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-                **添加日历** : https://ctftime.org/event/2210.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
