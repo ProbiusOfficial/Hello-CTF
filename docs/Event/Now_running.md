@@ -54,3 +54,12 @@ comments: true
     **赛事主办** : BUG PWN (https://ctftime.org/team/182428)  
     **添加日历** : https://ctftime.org/event/2531.ics  
     
+??? Quote "[DEADFACE CTF 2024](https://ctf.deadface.io/)"  
+    [![](https://ctftime.org/media/events/logo_deadface_ctf_2024.png){ width="200" align=left }](https://ctf.deadface.io/)  
+    **比赛名称** : [DEADFACE CTF 2024](https://ctf.deadface.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-10-18 22:00:00 - 2024-10-20 08:00:00 UTC+8  
+    **比赛权重** : 38.70  
+    **赛事主办** : Cyber Hacktics (https://ctftime.org/team/127017)  
+    **添加日历** : https://ctftime.org/event/2443.ics  
+    
