@@ -55,24 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Africa battleCTF 2024 prequal](https://qualifier.bugpwn.com/)"  
-            [![](https://ctftime.org/media/events/banner_1.png){ width="200" align=left }](https://qualifier.bugpwn.com/)  
-            **比赛名称** : [Africa battleCTF 2024 prequal](https://qualifier.bugpwn.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-10-18 08:00:00 - 2024-10-20 08:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : BUG PWN (https://ctftime.org/team/182428)  
-            **添加日历** : https://ctftime.org/event/2531.ics  
-            
-        ??? Quote "[Hackceler8 2024](https://capturetheflag.withgoogle.com/hackceler8)"  
-            [![](https://ctftime.org/media/events/HCL8.png){ width="200" align=left }](https://capturetheflag.withgoogle.com/hackceler8)  
-            **比赛名称** : [Hackceler8 2024](https://capturetheflag.withgoogle.com/hackceler8)  
-            **比赛形式** : Hack quest  
-            **比赛时间** : 2024-10-18 08:00:00 - 2024-10-21 07:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
-            **添加日历** : https://ctftime.org/event/2379.ics  
-            
         ??? Quote "[DEADFACE CTF 2024](https://ctf.deadface.io/)"  
             [![](https://ctftime.org/media/events/logo_deadface_ctf_2024.png){ width="200" align=left }](https://ctf.deadface.io/)  
             **比赛名称** : [DEADFACE CTF 2024](https://ctf.deadface.io/)  
@@ -90,6 +72,24 @@ hide:
             **比赛权重** : 100.00  
             **赛事主办** : FluxFingers (https://ctftime.org/team/551)  
             **添加日历** : https://ctftime.org/event/2438.ics  
+            
+        ??? Quote "[SunshineCTF 2024](https://sunshinectf.org/)"  
+            [![](https://ctftime.org/media/events/sctf_logo_24.png){ width="200" align=left }](https://sunshinectf.org/)  
+            **比赛名称** : [SunshineCTF 2024](https://sunshinectf.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-10-19 22:00:00 - 2024-10-21 22:00:00 UTC+8  
+            **比赛权重** : 38.57  
+            **赛事主办** : Knightsec (https://ctftime.org/team/2500)  
+            **添加日历** : https://ctftime.org/event/2485.ics  
+            
+        ??? Quote "[SAS CTF 2024 Finals](https://ctf.thesascon.com/)"  
+            [![](https://ctftime.org/media/events/SAS24_2_1.png){ width="200" align=left }](https://ctf.thesascon.com/)  
+            **比赛名称** : [SAS CTF 2024 Finals](https://ctf.thesascon.com/)  
+            **比赛形式** : Attack-Defense  
+            **比赛时间** : 2024-10-22 10:00:00 - 2024-10-22 21:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
+            **添加日历** : https://ctftime.org/event/2435.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
