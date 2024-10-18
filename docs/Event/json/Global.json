@@ -252,6 +252,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "4T$ CTF",
+        "比赛时间": "2024-11-09 02:00:00 - 2024-11-11 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2545.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.4ts.fr/",
+        "比赛标志": "https://ctftime.org/media/events/53b0900ddae2f59936bcc4eafc1458cf.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "4T$ (https://ctftime.org/team/302295)",
+        "比赛ID": "1188",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "HITCON CTF 2024 Final",
         "比赛时间": "2024-11-09 08:00:00 - 2024-11-10 16:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2523.ics",
