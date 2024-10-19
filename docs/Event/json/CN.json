@@ -124,17 +124,6 @@
                 "status": "已经结束"
             },
             {
-                "name": "第二届“天网杯”网络安全大赛",
-                "link": "https://twcup.cverc.org.cn/twb/twb2024",
-                "type": "团队赛|不超过5人",
-                "reg_time_start": "2024年7月15日 00:00",
-                "reg_time_end": "2024年7月31日 23:59",
-                "comp_time_start": "2024年08月01日 00:00",
-                "comp_time_end": "2024年08月20日 23:59",
-                "readmore": "QQ群: 622869531 组委会邮箱: tianwangcup@163.com",
-                "status": "已经结束"
-            },
-            {
                 "name": "MoeCTF 2024",
                 "link": "https://ctf.xidian.edu.cn",
                 "type": "个人赛",
