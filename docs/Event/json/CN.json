@@ -150,7 +150,7 @@
                 "info_confirmed": 1,
                 "mid_join": 0,
                 "link": "https://geekgame.pku.edu.cn",
-                "status": 3,
+                "status": "已经结束",
                 "is_reg": 1,
                 "limit": 1,
                 "type": "线上Jeopardy解题赛",

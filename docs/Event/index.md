@@ -945,6 +945,13 @@ hide:
                 **比赛时间** : 2024年08月10日 09:00 - 2024年10月14日 21:00  
                 **其他说明** : QQ 群：187536315  
                 
+            ??? Quote "[GEEKGAME 2024](https://geekgame.pku.edu.cn)"  
+                **比赛名称** : [GEEKGAME 2024](https://geekgame.pku.edu.cn)  
+                **比赛类型** : 线上Jeopardy解题赛  
+                **报名时间** : 2024年10月06日 12:00 - 2024年10月11日 11:59  
+                **比赛时间** : 2024年10月12日 12:00 - 2024年10月19日 12:00  
+                **其他说明** : 第四届北京大学信息安全综合能力竞赛GEEKGAME 2024由北京大学学生 Linux 俱乐部主办，比赛时间为2024年10月12日至10月19日，采用个人线上赛的模式，选手可加入QQ群133986617获取更多信息。  
+                
         === "国外赛事"
             ??? Quote "[CTF MetaRed Mexico Anuies-TIC 2024](https://ctfd.anuies.mx/)"  
                 [![](https://ctftime.org/media/events/ctf_2024_1.jpg){ width="200" align=left }](https://ctfd.anuies.mx/)  
