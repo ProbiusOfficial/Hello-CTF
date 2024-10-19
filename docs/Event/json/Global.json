@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "SunshineCTF 2024",
-        "比赛时间": "2024-10-19 22:00:00 - 2024-10-21 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2485.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://sunshinectf.org/",
-        "比赛标志": "https://ctftime.org/media/events/sctf_logo_24.png",
-        "比赛权重": "38.57",
-        "赛事主办": "Knightsec (https://ctftime.org/team/2500)",
-        "比赛ID": "137",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "SAS CTF 2024 Finals",
         "比赛时间": "2024-10-22 10:00:00 - 2024-10-22 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2435.ics",
@@ -741,6 +729,18 @@
         "比赛权重": "100.00",
         "赛事主办": "FluxFingers (https://ctftime.org/team/551)",
         "比赛ID": "8",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "SunshineCTF 2024",
+        "比赛时间": "2024-10-19 22:00:00 - 2024-10-21 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2485.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://sunshinectf.org/",
+        "比赛标志": "https://ctftime.org/media/events/sctf_logo_24.png",
+        "比赛权重": "38.57",
+        "赛事主办": "Knightsec (https://ctftime.org/team/2500)",
+        "比赛ID": "137",
         "比赛状态": "nowrunning"
     },
     {

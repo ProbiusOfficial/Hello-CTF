@@ -290,15 +290,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[SunshineCTF 2024](https://sunshinectf.org/)"  
-                [![](https://ctftime.org/media/events/sctf_logo_24.png){ width="200" align=left }](https://sunshinectf.org/)  
-                **比赛名称** : [SunshineCTF 2024](https://sunshinectf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-19 22:00:00 - 2024-10-21 22:00:00 UTC+8  
-                **比赛权重** : 38.57  
-                **赛事主办** : Knightsec (https://ctftime.org/team/2500)  
-                **添加日历** : https://ctftime.org/event/2485.ics  
-                
             ??? Quote "[SAS CTF 2024 Finals](https://ctf.thesascon.com/)"  
                 [![](https://ctftime.org/media/events/SAS24_2_1.png){ width="200" align=left }](https://ctf.thesascon.com/)  
                 **比赛名称** : [SAS CTF 2024 Finals](https://ctf.thesascon.com/)  
@@ -851,6 +842,15 @@ hide:
                 **比赛权重** : 100.00  
                 **赛事主办** : FluxFingers (https://ctftime.org/team/551)  
                 **添加日历** : https://ctftime.org/event/2438.ics  
+                
+            ??? Quote "[SunshineCTF 2024](https://sunshinectf.org/)"  
+                [![](https://ctftime.org/media/events/sctf_logo_24.png){ width="200" align=left }](https://sunshinectf.org/)  
+                **比赛名称** : [SunshineCTF 2024](https://sunshinectf.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-10-19 22:00:00 - 2024-10-21 22:00:00 UTC+8  
+                **比赛权重** : 38.57  
+                **赛事主办** : Knightsec (https://ctftime.org/team/2500)  
+                **添加日历** : https://ctftime.org/event/2485.ics  
                 
     === "*已经结束*"
         === "国内赛事"
