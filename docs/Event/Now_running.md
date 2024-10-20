@@ -36,15 +36,6 @@ comments: true
     **赛事主办** : Hack Havoc (https://ctftime.org/team/316395)  
     **添加日历** : https://ctftime.org/event/2532.ics  
     
-??? Quote "[Hackceler8 2024](https://capturetheflag.withgoogle.com/hackceler8)"  
-    [![](https://ctftime.org/media/events/HCL8.png){ width="200" align=left }](https://capturetheflag.withgoogle.com/hackceler8)  
-    **比赛名称** : [Hackceler8 2024](https://capturetheflag.withgoogle.com/hackceler8)  
-    **比赛形式** : Hack quest  
-    **比赛时间** : 2024-10-18 08:00:00 - 2024-10-21 07:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
-    **添加日历** : https://ctftime.org/event/2379.ics  
-    
 ??? Quote "[SunshineCTF 2024](https://sunshinectf.org/)"  
     [![](https://ctftime.org/media/events/sctf_logo_24.png){ width="200" align=left }](https://sunshinectf.org/)  
     **比赛名称** : [SunshineCTF 2024](https://sunshinectf.org/)  

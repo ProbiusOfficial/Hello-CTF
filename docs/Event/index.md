@@ -807,15 +807,6 @@ hide:
                 **赛事主办** : Hack Havoc (https://ctftime.org/team/316395)  
                 **添加日历** : https://ctftime.org/event/2532.ics  
                 
-            ??? Quote "[Hackceler8 2024](https://capturetheflag.withgoogle.com/hackceler8)"  
-                [![](https://ctftime.org/media/events/HCL8.png){ width="200" align=left }](https://capturetheflag.withgoogle.com/hackceler8)  
-                **比赛名称** : [Hackceler8 2024](https://capturetheflag.withgoogle.com/hackceler8)  
-                **比赛形式** : Hack quest  
-                **比赛时间** : 2024-10-18 08:00:00 - 2024-10-21 07:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
-                **添加日历** : https://ctftime.org/event/2379.ics  
-                
             ??? Quote "[SunshineCTF 2024](https://sunshinectf.org/)"  
                 [![](https://ctftime.org/media/events/sctf_logo_24.png){ width="200" align=left }](https://sunshinectf.org/)  
                 **比赛名称** : [SunshineCTF 2024](https://sunshinectf.org/)  
@@ -936,6 +927,15 @@ hide:
                 **比赛权重** : 38.70  
                 **赛事主办** : Cyber Hacktics (https://ctftime.org/team/127017)  
                 **添加日历** : https://ctftime.org/event/2443.ics  
+                
+            ??? Quote "[Hackceler8 2024](https://capturetheflag.withgoogle.com/hackceler8)"  
+                [![](https://ctftime.org/media/events/HCL8.png){ width="200" align=left }](https://capturetheflag.withgoogle.com/hackceler8)  
+                **比赛名称** : [Hackceler8 2024](https://capturetheflag.withgoogle.com/hackceler8)  
+                **比赛形式** : Hack quest  
+                **比赛时间** : 2024-10-18 08:00:00 - 2024-10-21 07:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
+                **添加日历** : https://ctftime.org/event/2379.ics  
                 
             ??? Quote "[Africa battleCTF 2024 prequal](https://qualifier.bugpwn.com/)"  
                 [![](https://ctftime.org/media/events/banner_1.png){ width="200" align=left }](https://qualifier.bugpwn.com/)  
@@ -1809,15 +1809,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Fikamyndigheten (https://ctftime.org/team/305722)  
                 **添加日历** : https://ctftime.org/event/2399.ics  
-                
-            ??? Quote "[Midnight Sun CTF 2024 Finals](https://play.midnightsunctf.com/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://play.midnightsunctf.com/)  
-                **比赛名称** : [Midnight Sun CTF 2024 Finals](https://play.midnightsunctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-15 18:00:00 - 2024-06-16 18:00:00 UTC+8  
-                **比赛权重** : 100.00  
-                **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-                **添加日历** : https://ctftime.org/event/2409.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
