@@ -696,30 +696,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Africa battleCTF 2024 prequal",
-        "比赛时间": "2024-10-18 08:00:00 - 2024-10-20 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2531.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://qualifier.bugpwn.com/",
-        "比赛标志": "https://ctftime.org/media/events/banner_1.png",
-        "比赛权重": "0",
-        "赛事主办": "BUG PWN (https://ctftime.org/team/182428)",
-        "比赛ID": "968",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "DEADFACE CTF 2024",
-        "比赛时间": "2024-10-18 22:00:00 - 2024-10-20 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2443.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.deadface.io/",
-        "比赛标志": "https://ctftime.org/media/events/logo_deadface_ctf_2024.png",
-        "比赛权重": "38.70",
-        "赛事主办": "Cyber Hacktics (https://ctftime.org/team/127017)",
-        "比赛ID": "487",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Hack.lu CTF 2024",
         "比赛时间": "2024-10-19 02:00:00 - 2024-10-21 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2438.ics",
@@ -742,6 +718,30 @@
         "赛事主办": "Knightsec (https://ctftime.org/team/2500)",
         "比赛ID": "137",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "DEADFACE CTF 2024",
+        "比赛时间": "2024-10-18 22:00:00 - 2024-10-20 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2443.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.deadface.io/",
+        "比赛标志": "https://ctftime.org/media/events/logo_deadface_ctf_2024.png",
+        "比赛权重": "38.70",
+        "赛事主办": "Cyber Hacktics (https://ctftime.org/team/127017)",
+        "比赛ID": "487",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Africa battleCTF 2024 prequal",
+        "比赛时间": "2024-10-18 08:00:00 - 2024-10-20 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2531.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://qualifier.bugpwn.com/",
+        "比赛标志": "https://ctftime.org/media/events/banner_1.png",
+        "比赛权重": "0",
+        "赛事主办": "BUG PWN (https://ctftime.org/team/182428)",
+        "比赛ID": "968",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "CTF MetaRed Mexico Anuies-TIC 2024",
@@ -1917,30 +1917,6 @@
         "比赛权重": "77.17",
         "赛事主办": "justCatTheFish (https://ctftime.org/team/33893)",
         "比赛ID": "399",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "vsCTF 2024",
-        "比赛时间": "2024-06-15 00:00:00 - 2024-06-16 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2248.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.viewsource.me/",
-        "比赛标志": "https://ctftime.org/media/events/vsctf_2024_2x.png",
-        "比赛权重": "34.00",
-        "赛事主办": "View Source (https://ctftime.org/team/175828)",
-        "比赛ID": "785",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BrainHack 2024",
-        "比赛时间": "2024-06-12 16:00:00 - 2024-06-14 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2330.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://go.gov.sg/dsta-brainhack-signup",
-        "比赛标志": "https://ctftime.org/media/events/807b15_524e092c9d7541589d621cd0e9bf6e4bmv2.jpeg",
-        "比赛权重": "0.00",
-        "赛事主办": "BrainHack_Organiser (https://ctftime.org/team/287673)",
-        "比赛ID": "1100",
         "比赛状态": "past"
     }
 ]
