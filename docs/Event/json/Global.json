@@ -798,7 +798,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://play.pwnx.io/#/event/40b08dba-3140-4cae-89da-6db9c0d8e5a0",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "PWNX (https://ctftime.org/team/179989)",
         "比赛ID": "1007",
         "比赛状态": "past"
