@@ -693,7 +693,7 @@
         "比赛权重": "38.57",
         "赛事主办": "Knightsec (https://ctftime.org/team/2500)",
         "比赛ID": "137",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Hack.lu CTF 2024",
@@ -1881,18 +1881,6 @@
         "比赛权重": "0.00",
         "赛事主办": "NUSGreyhats (https://ctftime.org/team/16740)",
         "比赛ID": "778",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Kryptokaffe CTF 2024",
-        "比赛时间": "2024-06-17 16:00:00 - 2024-07-21 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2399.ics",
-        "比赛形式": "Hack quest",
-        "比赛链接": "https://www.kryptokaffe.se/",
-        "比赛标志": "https://ctftime.org/media/events/kryptokaffe2k24.png",
-        "比赛权重": "0",
-        "赛事主办": "Fikamyndigheten (https://ctftime.org/team/305722)",
-        "比赛ID": "1137",
         "比赛状态": "past"
     }
 ]

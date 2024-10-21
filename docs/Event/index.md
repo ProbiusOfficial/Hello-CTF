@@ -807,15 +807,6 @@ hide:
                 **赛事主办** : Hack Havoc (https://ctftime.org/team/316395)  
                 **添加日历** : https://ctftime.org/event/2532.ics  
                 
-            ??? Quote "[SunshineCTF 2024](https://sunshinectf.org/)"  
-                [![](https://ctftime.org/media/events/sctf_logo_24.png){ width="200" align=left }](https://sunshinectf.org/)  
-                **比赛名称** : [SunshineCTF 2024](https://sunshinectf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-19 22:00:00 - 2024-10-21 22:00:00 UTC+8  
-                **比赛权重** : 38.57  
-                **赛事主办** : Knightsec (https://ctftime.org/team/2500)  
-                **添加日历** : https://ctftime.org/event/2485.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[BRICS+ CTF Quals 2024](https://brics-ctf.com/)"  
@@ -903,6 +894,15 @@ hide:
                 **其他说明** : 第四届北京大学信息安全综合能力竞赛GEEKGAME 2024由北京大学学生 Linux 俱乐部主办，比赛时间为2024年10月12日至10月19日，采用个人线上赛的模式，选手可加入QQ群133986617获取更多信息。  
                 
         === "国外赛事"
+            ??? Quote "[SunshineCTF 2024](https://sunshinectf.org/)"  
+                [![](https://ctftime.org/media/events/sctf_logo_24.png){ width="200" align=left }](https://sunshinectf.org/)  
+                **比赛名称** : [SunshineCTF 2024](https://sunshinectf.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-10-19 22:00:00 - 2024-10-21 22:00:00 UTC+8  
+                **比赛权重** : 38.57  
+                **赛事主办** : Knightsec (https://ctftime.org/team/2500)  
+                **添加日历** : https://ctftime.org/event/2485.ics  
+                
             ??? Quote "[Hack.lu CTF 2024](https://flu.xxx/)"  
                 [![](https://ctftime.org/media/events/logo-small.png){ width="200" align=left }](https://flu.xxx/)  
                 **比赛名称** : [Hack.lu CTF 2024](https://flu.xxx/)  
@@ -1793,15 +1793,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : NUSGreyhats (https://ctftime.org/team/16740)  
                 **添加日历** : https://ctftime.org/event/2244.ics  
-                
-            ??? Quote "[Kryptokaffe CTF 2024](https://www.kryptokaffe.se/)"  
-                [![](https://ctftime.org/media/events/kryptokaffe2k24.png){ width="200" align=left }](https://www.kryptokaffe.se/)  
-                **比赛名称** : [Kryptokaffe CTF 2024](https://www.kryptokaffe.se/)  
-                **比赛形式** : Hack quest  
-                **比赛时间** : 2024-06-17 16:00:00 - 2024-07-21 20:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Fikamyndigheten (https://ctftime.org/team/305722)  
-                **添加日历** : https://ctftime.org/event/2399.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
