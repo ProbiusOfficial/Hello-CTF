@@ -152,7 +152,7 @@ comments: true
     **比赛名称** : [GITEX GLOBAL CTF](https://gitex.ctf.ae/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-10-14 15:00:00 - 2024-10-15 20:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : CTF.ae (https://ctftime.org/team/151875)  
     **添加日历** : https://ctftime.org/event/2522.ics  
     
