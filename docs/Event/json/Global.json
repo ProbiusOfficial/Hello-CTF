@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Questcon CTF",
-        "比赛时间": "2024-10-22 14:30:00 - 2024-10-23 14:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2505.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://questcon.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/Picsart_24-10-01_16-40-39-530_1_1.png",
-        "比赛权重": "22.45",
-        "赛事主办": "OWASP_PCCOE-CORE (https://ctftime.org/team/206360)",
-        "比赛ID": "1001",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "EngimaXplore2.0 2024",
         "比赛时间": "2024-10-24 20:29:59 - 2024-10-25 20:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2524.ics",
@@ -456,7 +444,7 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "WannaGame Championship",
+        "比赛名称": "WannaGame Championship 2024",
         "比赛时间": "2024-12-13 09:00:00 - 2024-12-14 09:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2515.ics",
         "比赛形式": "Jeopardy",
@@ -681,6 +669,18 @@
         "比赛权重": "0.00",
         "赛事主办": "SAS CREW (https://ctftime.org/team/283057)",
         "比赛ID": "1081",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Questcon CTF",
+        "比赛时间": "2024-10-22 14:30:00 - 2024-10-23 14:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2505.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://questcon.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/Picsart_24-10-01_16-40-39-530_1_1.png",
+        "比赛权重": "22.45",
+        "赛事主办": "OWASP_PCCOE-CORE (https://ctftime.org/team/206360)",
+        "比赛ID": "1001",
         "比赛状态": "nowrunning"
     },
     {

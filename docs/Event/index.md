@@ -290,15 +290,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Questcon CTF](https://questcon.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/Picsart_24-10-01_16-40-39-530_1_1.png){ width="200" align=left }](https://questcon.ctfd.io/)  
-                **比赛名称** : [Questcon CTF](https://questcon.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-22 14:30:00 - 2024-10-23 14:30:00 UTC+8  
-                **比赛权重** : 22.45  
-                **赛事主办** : OWASP_PCCOE-CORE (https://ctftime.org/team/206360)  
-                **添加日历** : https://ctftime.org/event/2505.ics  
-                
             ??? Quote "[EngimaXplore2.0 2024](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)  
                 **比赛名称** : [EngimaXplore2.0 2024](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)  
@@ -632,9 +623,9 @@ hide:
                 **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
                 **添加日历** : https://ctftime.org/event/2488.ics  
                 
-            ??? Quote "[WannaGame Championship](https://cnsc.uit.edu.vn/ctf/)"  
+            ??? Quote "[WannaGame Championship 2024](https://cnsc.uit.edu.vn/ctf/)"  
                 [![](https://ctftime.org/media/events/WGC2024_2.png){ width="200" align=left }](https://cnsc.uit.edu.vn/ctf/)  
-                **比赛名称** : [WannaGame Championship](https://cnsc.uit.edu.vn/ctf/)  
+                **比赛名称** : [WannaGame Championship 2024](https://cnsc.uit.edu.vn/ctf/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-12-13 09:00:00 - 2024-12-14 09:00:00 UTC+8  
                 **比赛权重** : 19.80  
@@ -807,6 +798,15 @@ hide:
                 **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
                 **添加日历** : https://ctftime.org/event/2435.ics  
                 
+            ??? Quote "[Questcon CTF](https://questcon.ctfd.io/)"  
+                [![](https://ctftime.org/media/events/Picsart_24-10-01_16-40-39-530_1_1.png){ width="200" align=left }](https://questcon.ctfd.io/)  
+                **比赛名称** : [Questcon CTF](https://questcon.ctfd.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-10-22 14:30:00 - 2024-10-23 14:30:00 UTC+8  
+                **比赛权重** : 22.45  
+                **赛事主办** : OWASP_PCCOE-CORE (https://ctftime.org/team/206360)  
+                **添加日历** : https://ctftime.org/event/2505.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[BRICS+ CTF Quals 2024](https://brics-ctf.com/)"  
@@ -871,13 +871,6 @@ hide:
                 **报名时间** : 2024年08月21日 14:00 - 2024年08月26日 09:00  
                 **比赛时间** : 2024年08月24日 09:00 - 2024年08月26日 09:00  
                 **其他说明** : QQ群: 560946020 其他联系方式：Nepnep_Team@163.com  
-                
-            ??? Quote "[第四届极客少年挑战赛（决赛）](https://www.cdccs.cn/#/geekYouth)"  
-                **比赛名称** : [第四届极客少年挑战赛（决赛）](https://www.cdccs.cn/#/geekYouth)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年07月22日 10:00 - 2024年07月23日 09:00  
-                **比赛时间** : 2024年08月23日 10:00 - 2024年08月23日 15:00  
-                **其他说明** : QQ群：961713058  
                 
             ??? Quote "[MoeCTF 2024](https://ctf.xidian.edu.cn)"  
                 **比赛名称** : [MoeCTF 2024](https://ctf.xidian.edu.cn)  

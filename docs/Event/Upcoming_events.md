@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Questcon CTF](https://questcon.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/Picsart_24-10-01_16-40-39-530_1_1.png){ width="200" align=left }](https://questcon.ctfd.io/)  
-    **比赛名称** : [Questcon CTF](https://questcon.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-22 14:30:00 - 2024-10-23 14:30:00 UTC+8  
-    **比赛权重** : 22.45  
-    **赛事主办** : OWASP_PCCOE-CORE (https://ctftime.org/team/206360)  
-    **添加日历** : https://ctftime.org/event/2505.ics  
-    
 ??? Quote "[EngimaXplore2.0 2024](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)"  
     [![](https://ctftime.org){ width="200" align=left }](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)  
     **比赛名称** : [EngimaXplore2.0 2024](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)  
@@ -351,9 +342,9 @@ comments: true
     **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
     **添加日历** : https://ctftime.org/event/2488.ics  
     
-??? Quote "[WannaGame Championship](https://cnsc.uit.edu.vn/ctf/)"  
+??? Quote "[WannaGame Championship 2024](https://cnsc.uit.edu.vn/ctf/)"  
     [![](https://ctftime.org/media/events/WGC2024_2.png){ width="200" align=left }](https://cnsc.uit.edu.vn/ctf/)  
-    **比赛名称** : [WannaGame Championship](https://cnsc.uit.edu.vn/ctf/)  
+    **比赛名称** : [WannaGame Championship 2024](https://cnsc.uit.edu.vn/ctf/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-12-13 09:00:00 - 2024-12-14 09:00:00 UTC+8  
     **比赛权重** : 19.80  
