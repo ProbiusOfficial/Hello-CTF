@@ -36,3 +36,12 @@ comments: true
     **赛事主办** : Hack Havoc (https://ctftime.org/team/316395)  
     **添加日历** : https://ctftime.org/event/2532.ics  
     
+??? Quote "[SAS CTF 2024 Finals](https://ctf.thesascon.com/)"  
+    [![](https://ctftime.org/media/events/SAS24_2_1.png){ width="200" align=left }](https://ctf.thesascon.com/)  
+    **比赛名称** : [SAS CTF 2024 Finals](https://ctf.thesascon.com/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-10-22 10:00:00 - 2024-10-22 21:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
+    **添加日历** : https://ctftime.org/event/2435.ics  
+    

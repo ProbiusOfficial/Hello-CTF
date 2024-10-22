@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[SAS CTF 2024 Finals](https://ctf.thesascon.com/)"  
-    [![](https://ctftime.org/media/events/SAS24_2_1.png){ width="200" align=left }](https://ctf.thesascon.com/)  
-    **比赛名称** : [SAS CTF 2024 Finals](https://ctf.thesascon.com/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2024-10-22 10:00:00 - 2024-10-22 21:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
-    **添加日历** : https://ctftime.org/event/2435.ics  
-    
 ??? Quote "[Questcon CTF](https://questcon.ctfd.io/)"  
     [![](https://ctftime.org/media/events/Picsart_24-10-01_16-40-39-530_1_1.png){ width="200" align=left }](https://questcon.ctfd.io/)  
     **比赛名称** : [Questcon CTF](https://questcon.ctfd.io/)  
