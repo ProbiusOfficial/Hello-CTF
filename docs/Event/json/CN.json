@@ -102,17 +102,6 @@
                 "status": "已经结束"
             },
             {
-                "name": "第四届极客少年挑战赛（决赛）",
-                "link": "https://www.cdccs.cn/#/geekYouth",
-                "type": "个人赛",
-                "reg_time_start": "2024年07月22日 10:00",
-                "reg_time_end": "2024年07月23日 09:00",
-                "comp_time_start": "2024年08月23日 10:00",
-                "comp_time_end": "2024年08月23日 15:00",
-                "readmore": "QQ群：961713058",
-                "status": "已经结束"
-            },
-            {
                 "name": "MoeCTF 2024",
                 "link": "https://ctf.xidian.edu.cn",
                 "type": "个人赛",
