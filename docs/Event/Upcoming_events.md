@@ -432,9 +432,9 @@ comments: true
     **赛事主办** : DIV0-N0H4TS (https://ctftime.org/team/354275)  
     **添加日历** : https://ctftime.org/event/2530.ics  
     
-??? Quote "[x3ctf 2024](https://x3c.tf/)"  
+??? Quote "[x3ctf 2025](https://x3c.tf/)"  
     [![](https://ctftime.org/media/events/temp_pfp.png){ width="200" align=left }](https://x3c.tf/)  
-    **比赛名称** : [x3ctf 2024](https://x3c.tf/)  
+    **比赛名称** : [x3ctf 2025](https://x3c.tf/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-01-25 02:00:00 - 2025-01-27 02:00:00 UTC+8  
     **比赛权重** : 0.00  
