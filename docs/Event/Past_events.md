@@ -91,9 +91,9 @@ comments: true
     
 
 ## 国际赛事
-??? Quote "[SunshineCTF 2024](https://sunshinectf.org/)"  
-    [![](https://ctftime.org/media/events/sctf_logo_24.png){ width="200" align=left }](https://sunshinectf.org/)  
-    **比赛名称** : [SunshineCTF 2024](https://sunshinectf.org/)  
+??? Quote "[SunshineCTF 2024](https://2024.sunshinectf.org/)"  
+    [![](https://ctftime.org/media/events/sctf_logo_24.png){ width="200" align=left }](https://2024.sunshinectf.org/)  
+    **比赛名称** : [SunshineCTF 2024](https://2024.sunshinectf.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-10-19 22:00:00 - 2024-10-21 22:00:00 UTC+8  
     **比赛权重** : 38.57  

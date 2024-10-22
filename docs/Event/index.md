@@ -894,9 +894,9 @@ hide:
                 **其他说明** : 第四届北京大学信息安全综合能力竞赛GEEKGAME 2024由北京大学学生 Linux 俱乐部主办，比赛时间为2024年10月12日至10月19日，采用个人线上赛的模式，选手可加入QQ群133986617获取更多信息。  
                 
         === "国外赛事"
-            ??? Quote "[SunshineCTF 2024](https://sunshinectf.org/)"  
-                [![](https://ctftime.org/media/events/sctf_logo_24.png){ width="200" align=left }](https://sunshinectf.org/)  
-                **比赛名称** : [SunshineCTF 2024](https://sunshinectf.org/)  
+            ??? Quote "[SunshineCTF 2024](https://2024.sunshinectf.org/)"  
+                [![](https://ctftime.org/media/events/sctf_logo_24.png){ width="200" align=left }](https://2024.sunshinectf.org/)  
+                **比赛名称** : [SunshineCTF 2024](https://2024.sunshinectf.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-10-19 22:00:00 - 2024-10-21 22:00:00 UTC+8  
                 **比赛权重** : 38.57  
