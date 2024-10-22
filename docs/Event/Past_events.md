@@ -84,6 +84,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[SAS CTF 2024 Finals](https://ctf.thesascon.com/)"  
+    [![](https://ctftime.org/media/events/SAS24_2_1.png){ width="200" align=left }](https://ctf.thesascon.com/)  
+    **比赛名称** : [SAS CTF 2024 Finals](https://ctf.thesascon.com/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-10-22 10:00:00 - 2024-10-22 21:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
+    **添加日历** : https://ctftime.org/event/2435.ics  
+    
 ??? Quote "[SunshineCTF 2024](https://2024.sunshinectf.org/)"  
     [![](https://ctftime.org/media/events/sctf_logo_24.png){ width="200" align=left }](https://2024.sunshinectf.org/)  
     **比赛名称** : [SunshineCTF 2024](https://2024.sunshinectf.org/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 24.99  
     **赛事主办** : Wani Hackase (https://ctftime.org/team/70717)  
     **添加日历** : https://ctftime.org/event/2377.ics  
-    
-??? Quote "[Grey Cat The Flag 2024 Finals](https://ctf.nusgreyhats.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
-    **比赛名称** : [Grey Cat The Flag 2024 Finals](https://ctf.nusgreyhats.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-06-20 10:00:00 - 2024-06-21 18:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : NUSGreyhats (https://ctftime.org/team/16740)  
-    **添加日历** : https://ctftime.org/event/2244.ics  
     

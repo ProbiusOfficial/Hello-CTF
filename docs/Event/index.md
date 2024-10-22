@@ -789,15 +789,6 @@ hide:
                 **赛事主办** : Hack Havoc (https://ctftime.org/team/316395)  
                 **添加日历** : https://ctftime.org/event/2532.ics  
                 
-            ??? Quote "[SAS CTF 2024 Finals](https://ctf.thesascon.com/)"  
-                [![](https://ctftime.org/media/events/SAS24_2_1.png){ width="200" align=left }](https://ctf.thesascon.com/)  
-                **比赛名称** : [SAS CTF 2024 Finals](https://ctf.thesascon.com/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2024-10-22 10:00:00 - 2024-10-22 21:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
-                **添加日历** : https://ctftime.org/event/2435.ics  
-                
             ??? Quote "[Questcon CTF](https://questcon.ctfd.io/)"  
                 [![](https://ctftime.org/media/events/Picsart_24-10-01_16-40-39-530_1_1.png){ width="200" align=left }](https://questcon.ctfd.io/)  
                 **比赛名称** : [Questcon CTF](https://questcon.ctfd.io/)  
@@ -887,6 +878,15 @@ hide:
                 **其他说明** : 第四届北京大学信息安全综合能力竞赛GEEKGAME 2024由北京大学学生 Linux 俱乐部主办，比赛时间为2024年10月12日至10月19日，采用个人线上赛的模式，选手可加入QQ群133986617获取更多信息。  
                 
         === "国外赛事"
+            ??? Quote "[SAS CTF 2024 Finals](https://ctf.thesascon.com/)"  
+                [![](https://ctftime.org/media/events/SAS24_2_1.png){ width="200" align=left }](https://ctf.thesascon.com/)  
+                **比赛名称** : [SAS CTF 2024 Finals](https://ctf.thesascon.com/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2024-10-22 10:00:00 - 2024-10-22 21:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
+                **添加日历** : https://ctftime.org/event/2435.ics  
+                
             ??? Quote "[SunshineCTF 2024](https://2024.sunshinectf.org/)"  
                 [![](https://ctftime.org/media/events/sctf_logo_24.png){ width="200" align=left }](https://2024.sunshinectf.org/)  
                 **比赛名称** : [SunshineCTF 2024](https://2024.sunshinectf.org/)  
@@ -1777,15 +1777,6 @@ hide:
                 **比赛权重** : 24.99  
                 **赛事主办** : Wani Hackase (https://ctftime.org/team/70717)  
                 **添加日历** : https://ctftime.org/event/2377.ics  
-                
-            ??? Quote "[Grey Cat The Flag 2024 Finals](https://ctf.nusgreyhats.org/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
-                **比赛名称** : [Grey Cat The Flag 2024 Finals](https://ctf.nusgreyhats.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-20 10:00:00 - 2024-06-21 18:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : NUSGreyhats (https://ctftime.org/team/16740)  
-                **添加日历** : https://ctftime.org/event/2244.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
