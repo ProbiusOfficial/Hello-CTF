@@ -378,9 +378,9 @@ comments: true
     **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
     **添加日历** : https://ctftime.org/event/2406.ics  
     
-??? Quote "[LakeCTF Quals 24-25](https://lakectf.epfl.ch/)"  
+??? Quote "[LakeCTF Quals 24-25 (moved to 7th-8th Dec.)](https://lakectf.epfl.ch/)"  
     [![](https://ctftime.org/media/events/7fb065c04dbec7e33dfbb1f4456196c7.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
-    **比赛名称** : [LakeCTF Quals 24-25](https://lakectf.epfl.ch/)  
+    **比赛名称** : [LakeCTF Quals 24-25 (moved to 7th-8th Dec.)](https://lakectf.epfl.ch/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-12-15 02:00:00 - 2024-12-16 02:00:00 UTC+8  
     **比赛权重** : 36.00  
