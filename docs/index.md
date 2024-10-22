@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[SAS CTF 2024 Finals](https://ctf.thesascon.com/)"  
-            [![](https://ctftime.org/media/events/SAS24_2_1.png){ width="200" align=left }](https://ctf.thesascon.com/)  
-            **比赛名称** : [SAS CTF 2024 Finals](https://ctf.thesascon.com/)  
-            **比赛形式** : Attack-Defense  
-            **比赛时间** : 2024-10-22 10:00:00 - 2024-10-22 21:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
-            **添加日历** : https://ctftime.org/event/2435.ics  
-            
         ??? Quote "[Questcon CTF](https://questcon.ctfd.io/)"  
             [![](https://ctftime.org/media/events/Picsart_24-10-01_16-40-39-530_1_1.png){ width="200" align=left }](https://questcon.ctfd.io/)  
             **比赛名称** : [Questcon CTF](https://questcon.ctfd.io/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 43.94  
             **赛事主办** : HeroCTF (https://ctftime.org/team/145166)  
             **添加日历** : https://ctftime.org/event/2496.ics  
+            
+        ??? Quote "[SpookyCTF 2024](https://spookyctf.ctfd.io/)"  
+            [![](https://ctftime.org/media/events/Spooky.png){ width="200" align=left }](https://spookyctf.ctfd.io/)  
+            **比赛名称** : [SpookyCTF 2024](https://spookyctf.ctfd.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-10-26 07:00:00 - 2024-10-28 07:30:00 UTC+8  
+            **比赛权重** : 22.40  
+            **赛事主办** : NICC (https://ctftime.org/team/214936)  
+            **添加日历** : https://ctftime.org/event/2516.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
