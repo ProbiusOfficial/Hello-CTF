@@ -807,15 +807,6 @@ hide:
                 **赛事主办** : Hack Havoc (https://ctftime.org/team/316395)  
                 **添加日历** : https://ctftime.org/event/2532.ics  
                 
-            ??? Quote "[Questcon CTF](https://questcon.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/Picsart_24-10-01_16-40-39-530_1_1.png){ width="200" align=left }](https://questcon.ctfd.io/)  
-                **比赛名称** : [Questcon CTF](https://questcon.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-22 14:30:00 - 2024-10-23 14:30:00 UTC+8  
-                **比赛权重** : 22.45  
-                **赛事主办** : OWASP_PCCOE-CORE (https://ctftime.org/team/206360)  
-                **添加日历** : https://ctftime.org/event/2505.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[BRICS+ CTF Quals 2024](https://brics-ctf.com/)"  
@@ -895,7 +886,23 @@ hide:
                 **比赛时间** : 2024年10月12日 12:00 - 2024年10月19日 12:00  
                 **其他说明** : 第四届北京大学信息安全综合能力竞赛GEEKGAME 2024由北京大学学生 Linux 俱乐部主办，比赛时间为2024年10月12日至10月19日，采用个人线上赛的模式，选手可加入QQ群133986617获取更多信息。  
                 
+            ??? Quote "[2024'源鲁杯'高校网络安全技能大赛](https://ctf.yuanloo.com/)"  
+                **比赛名称** : [2024'源鲁杯'高校网络安全技能大赛](https://ctf.yuanloo.com/)  
+                **比赛类型** : 个人线上赛  
+                **报名时间** : 2024年09月01日 09:00 - 2024年10月23日 15:00  
+                **比赛时间** : 2024年10月10日 09:00 - 2024年10月23日 15:00  
+                **其他说明** : QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/  
+                
         === "国外赛事"
+            ??? Quote "[Questcon CTF](https://questcon.ctfd.io/)"  
+                [![](https://ctftime.org/media/events/Picsart_24-10-01_16-40-39-530_1_1.png){ width="200" align=left }](https://questcon.ctfd.io/)  
+                **比赛名称** : [Questcon CTF](https://questcon.ctfd.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-10-22 14:30:00 - 2024-10-23 14:30:00 UTC+8  
+                **比赛权重** : 22.45  
+                **赛事主办** : OWASP_PCCOE-CORE (https://ctftime.org/team/206360)  
+                **添加日历** : https://ctftime.org/event/2505.ics  
+                
             ??? Quote "[SAS CTF 2024 Finals](https://ctf.thesascon.com/)"  
                 [![](https://ctftime.org/media/events/SAS24_2_1.png){ width="200" align=left }](https://ctf.thesascon.com/)  
                 **比赛名称** : [SAS CTF 2024 Finals](https://ctf.thesascon.com/)  
@@ -1786,15 +1793,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
                 **添加日历** : https://ctftime.org/event/2366.ics  
-                
-            ??? Quote "[Wani CTF 2024](https://wanictf.org/)"  
-                [![](https://ctftime.org/media/events/wani_ctf_logo.png){ width="200" align=left }](https://wanictf.org/)  
-                **比赛名称** : [Wani CTF 2024](https://wanictf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-21 20:00:00 - 2024-06-23 20:00:00 UTC+8  
-                **比赛权重** : 24.99  
-                **赛事主办** : Wani Hackase (https://ctftime.org/team/70717)  
-                **添加日历** : https://ctftime.org/event/2377.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

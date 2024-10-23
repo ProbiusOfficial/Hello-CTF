@@ -36,12 +36,3 @@ comments: true
     **赛事主办** : Hack Havoc (https://ctftime.org/team/316395)  
     **添加日历** : https://ctftime.org/event/2532.ics  
     
-??? Quote "[Questcon CTF](https://questcon.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/Picsart_24-10-01_16-40-39-530_1_1.png){ width="200" align=left }](https://questcon.ctfd.io/)  
-    **比赛名称** : [Questcon CTF](https://questcon.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-22 14:30:00 - 2024-10-23 14:30:00 UTC+8  
-    **比赛权重** : 22.45  
-    **赛事主办** : OWASP_PCCOE-CORE (https://ctftime.org/team/206360)  
-    **添加日历** : https://ctftime.org/event/2505.ics  
-    
