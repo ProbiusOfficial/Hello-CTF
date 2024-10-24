@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Z3R0 D4Y CTF",
-        "比赛时间": "2024-10-24 17:00:00 - 2024-10-25 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2529.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.zerologon.co.in/",
-        "比赛标志": "https://ctftime.org/media/events/Logo.c1dfc2e2d63945110c8d.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Z3r0_l0g0n (https://ctftime.org/team/227457)",
-        "比赛ID": "1185",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "EngimaXplore2.0 2024",
         "比赛时间": "2024-10-24 20:29:59 - 2024-10-25 20:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2524.ics",
@@ -849,6 +837,18 @@
         "比赛权重": "0",
         "赛事主办": "Hack Havoc (https://ctftime.org/team/316395)",
         "比赛ID": "1160",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Z3R0 D4Y CTF",
+        "比赛时间": "2024-10-24 17:00:00 - 2024-10-25 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2529.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.zerologon.co.in/",
+        "比赛标志": "https://ctftime.org/media/events/Logo.c1dfc2e2d63945110c8d.png",
+        "比赛权重": "0",
+        "赛事主办": "Z3r0_l0g0n (https://ctftime.org/team/227457)",
+        "比赛ID": "1185",
         "比赛状态": "nowrunning"
     },
     {
