@@ -576,6 +576,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "LakeCTF Quals 24-25",
+        "比赛时间": "2024-12-08 02:00:00 - 2024-12-09 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2502.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://lakectf.epfl.ch/",
+        "比赛标志": "https://ctftime.org/media/events/7fb065c04dbec7e33dfbb1f4456196c7.png",
+        "比赛权重": "36.00",
+        "赛事主办": "polygl0ts (https://ctftime.org/team/53791)",
+        "比赛ID": "818",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "WannaGame Championship 2024",
         "比赛时间": "2024-12-13 09:00:00 - 2024-12-14 09:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2515.ics",
@@ -633,18 +645,6 @@
         "比赛权重": "0.00",
         "赛事主办": "ctfcup (https://ctftime.org/team/203499)",
         "比赛ID": "864",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "LakeCTF Quals 24-25 (moved to 7th-8th Dec.)",
-        "比赛时间": "2024-12-15 02:00:00 - 2024-12-16 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2502.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://lakectf.epfl.ch/",
-        "比赛标志": "https://ctftime.org/media/events/7fb065c04dbec7e33dfbb1f4456196c7.png",
-        "比赛权重": "36.00",
-        "赛事主办": "polygl0ts (https://ctftime.org/team/53791)",
-        "比赛ID": "818",
         "比赛状态": "oncoming"
     },
     {
