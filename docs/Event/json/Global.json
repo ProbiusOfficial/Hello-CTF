@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "EngimaXplore2.0 2024",
-        "比赛时间": "2024-10-24 20:29:59 - 2024-10-25 20:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2524.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Crispr_iiitn (https://ctftime.org/team/270138)",
-        "比赛ID": "997",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "HeroCTF v6",
         "比赛时间": "2024-10-26 05:00:00 - 2024-10-28 07:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2496.ics",
@@ -849,6 +837,18 @@
         "比赛权重": "0",
         "赛事主办": "Z3r0_l0g0n (https://ctftime.org/team/227457)",
         "比赛ID": "1185",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "EngimaXplore2.0 2024",
+        "比赛时间": "2024-10-24 20:29:59 - 2024-10-25 20:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2524.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "Crispr_iiitn (https://ctftime.org/team/270138)",
+        "比赛ID": "997",
         "比赛状态": "nowrunning"
     },
     {

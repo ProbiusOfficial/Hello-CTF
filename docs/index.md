@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[EngimaXplore2.0 2024](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)  
-            **比赛名称** : [EngimaXplore2.0 2024](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-10-24 20:29:59 - 2024-10-25 20:30:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Crispr_iiitn (https://ctftime.org/team/270138)  
-            **添加日历** : https://ctftime.org/event/2524.ics  
-            
         ??? Quote "[HeroCTF v6](https://heroctf.fr/)"  
             [![](https://ctftime.org/media/events/HeroCTF_icon_500_1_1.png){ width="200" align=left }](https://heroctf.fr/)  
             **比赛名称** : [HeroCTF v6](https://heroctf.fr/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 51.00  
             **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
             **添加日历** : https://ctftime.org/event/2456.ics  
+            
+        ??? Quote "[UrchinSec Aware CTF](https://ctf.urchinsec.com/)"  
+            [![](https://ctftime.org/media/events/URCHINSEC_free-file_1.png){ width="200" align=left }](https://ctf.urchinsec.com/)  
+            **比赛名称** : [UrchinSec Aware CTF](https://ctf.urchinsec.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-10-26 15:00:00 - 2024-10-28 03:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : UrchinSec (https://ctftime.org/team/175663)  
+            **添加日历** : https://ctftime.org/event/2527.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

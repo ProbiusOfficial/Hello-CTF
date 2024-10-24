@@ -45,3 +45,12 @@ comments: true
     **赛事主办** : Z3r0_l0g0n (https://ctftime.org/team/227457)  
     **添加日历** : https://ctftime.org/event/2529.ics  
     
+??? Quote "[EngimaXplore2.0 2024](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)  
+    **比赛名称** : [EngimaXplore2.0 2024](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-10-24 20:29:59 - 2024-10-25 20:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Crispr_iiitn (https://ctftime.org/team/270138)  
+    **添加日历** : https://ctftime.org/event/2524.ics  
+    
