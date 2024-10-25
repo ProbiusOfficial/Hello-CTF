@@ -906,15 +906,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
                 
-            ??? Quote "[Hack Havoc 2.0](https://ctf.cybermaterial.com/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.cybermaterial.com/)  
-                **比赛名称** : [Hack Havoc 2.0](https://ctf.cybermaterial.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-04 21:59:48 - 2024-10-25 21:59:48 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Hack Havoc (https://ctftime.org/team/316395)  
-                **添加日历** : https://ctftime.org/event/2532.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[BRICS+ CTF Quals 2024](https://brics-ctf.com/)"  
@@ -1255,6 +1246,15 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : SharLike (https://ctftime.org/team/16172)  
                 **添加日历** : https://ctftime.org/event/2376.ics  
+                
+            ??? Quote "[Hack Havoc 2.0](https://ctf.cybermaterial.com/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.cybermaterial.com/)  
+                **比赛名称** : [Hack Havoc 2.0](https://ctf.cybermaterial.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-10-04 21:59:48 - 2024-10-25 21:59:48 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Hack Havoc (https://ctftime.org/team/316395)  
+                **添加日历** : https://ctftime.org/event/2532.ics  
                 
             ??? Quote "[FAUST CTF 2024](https://2024.faustctf.net/)"  
                 [![](https://ctftime.org/media/events/faust2024_1.png){ width="200" align=left }](https://2024.faustctf.net/)  
@@ -1885,15 +1885,6 @@ hide:
                 **比赛权重** : 19.60  
                 **赛事主办** : C0ncl4v3 (https://ctftime.org/team/303692)  
                 **添加日历** : https://ctftime.org/event/2397.ics  
-                
-            ??? Quote "[Break The Wall - Dystopia 2099](https://breakthewall.hackrocks.com/)"  
-                [![](https://ctftime.org/media/events/breakthewall_logo-IrRB.png){ width="200" align=left }](https://breakthewall.hackrocks.com/)  
-                **比赛名称** : [Break The Wall - Dystopia 2099](https://breakthewall.hackrocks.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-26 19:00:00 - 2024-07-11 03:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : hackrocks (https://ctftime.org/team/175823)  
-                **添加日历** : https://ctftime.org/event/2393.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

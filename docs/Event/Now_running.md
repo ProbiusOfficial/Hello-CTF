@@ -27,12 +27,3 @@ comments: true
     **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
     **添加日历** : https://ctftime.org/event/2121.ics  
     
-??? Quote "[Hack Havoc 2.0](https://ctf.cybermaterial.com/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.cybermaterial.com/)  
-    **比赛名称** : [Hack Havoc 2.0](https://ctf.cybermaterial.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-04 21:59:48 - 2024-10-25 21:59:48 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Hack Havoc (https://ctftime.org/team/316395)  
-    **添加日历** : https://ctftime.org/event/2532.ics  
-    
