@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[SpookyCTF 2024](https://spookyctf.ctfd.io/)"  
-            [![](https://ctftime.org/media/events/Spooky.png){ width="200" align=left }](https://spookyctf.ctfd.io/)  
-            **比赛名称** : [SpookyCTF 2024](https://spookyctf.ctfd.io/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-10-26 07:00:00 - 2024-10-28 07:30:00 UTC+8  
-            **比赛权重** : 22.40  
-            **赛事主办** : NICC (https://ctftime.org/team/214936)  
-            **添加日历** : https://ctftime.org/event/2516.ics  
-            
         ??? Quote "[ISITDTU CTF 2024 Quals](https://ctf.isitdtu.com/)"  
             [![](https://ctftime.org/media/events/index_2.gif){ width="200" align=left }](https://ctf.isitdtu.com/)  
             **比赛名称** : [ISITDTU CTF 2024 Quals](https://ctf.isitdtu.com/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Singapore AI CTF (https://ctftime.org/team/357504)  
             **添加日历** : https://ctftime.org/event/2546.ics  
+            
+        ??? Quote "[Russian CTF Cup 2024 Qualifier](https://ctfcup.ru/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ctfcup.ru/)  
+            **比赛名称** : [Russian CTF Cup 2024 Qualifier](https://ctfcup.ru/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-10-26 17:00:00 - 2024-10-27 17:00:00 UTC+8  
+            **比赛权重** : 24.21  
+            **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
+            **添加日历** : https://ctftime.org/event/2405.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
