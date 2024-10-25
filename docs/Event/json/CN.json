@@ -91,17 +91,6 @@
                 "status": "已经结束"
             },
             {
-                "name": "NepCTF 2024",
-                "link": "https://nepctf.lemonprefect.cn/",
-                "type": "个人赛",
-                "reg_time_start": "2024年08月21日 14:00",
-                "reg_time_end": "2024年08月26日 09:00",
-                "comp_time_start": "2024年08月24日 09:00",
-                "comp_time_end": "2024年08月26日 09:00",
-                "readmore": "QQ群: 560946020 其他联系方式：Nepnep_Team@163.com",
-                "status": "已经结束"
-            },
-            {
                 "name": "MoeCTF 2024",
                 "link": "https://ctf.xidian.edu.cn",
                 "type": "个人赛",
