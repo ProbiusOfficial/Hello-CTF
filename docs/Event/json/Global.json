@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "HeroCTF v6",
-        "比赛时间": "2024-10-26 05:00:00 - 2024-10-28 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2496.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://heroctf.fr/",
-        "比赛标志": "https://ctftime.org/media/events/HeroCTF_icon_500_1_1.png",
-        "比赛权重": "43.94",
-        "赛事主办": "HeroCTF (https://ctftime.org/team/145166)",
-        "比赛ID": "601",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "SpookyCTF 2024",
         "比赛时间": "2024-10-26 07:00:00 - 2024-10-28 07:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2516.ics",
@@ -813,6 +801,18 @@
         "比赛权重": "0",
         "赛事主办": "UWSP Pointers (https://ctftime.org/team/231536)",
         "比赛ID": "963",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "HeroCTF v6",
+        "比赛时间": "2024-10-26 05:00:00 - 2024-10-28 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2496.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://heroctf.fr/",
+        "比赛标志": "https://ctftime.org/media/events/HeroCTF_icon_500_1_1.png",
+        "比赛权重": "43.94",
+        "赛事主办": "HeroCTF (https://ctftime.org/team/145166)",
+        "比赛ID": "601",
         "比赛状态": "nowrunning"
     },
     {
