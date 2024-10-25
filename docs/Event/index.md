@@ -915,15 +915,6 @@ hide:
                 **赛事主办** : Hack Havoc (https://ctftime.org/team/316395)  
                 **添加日历** : https://ctftime.org/event/2532.ics  
                 
-            ??? Quote "[EngimaXplore2.0 2024](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)  
-                **比赛名称** : [EngimaXplore2.0 2024](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-24 20:29:59 - 2024-10-25 20:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Crispr_iiitn (https://ctftime.org/team/270138)  
-                **添加日历** : https://ctftime.org/event/2524.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[BRICS+ CTF Quals 2024](https://brics-ctf.com/)"  
@@ -1004,6 +995,15 @@ hide:
                 **其他说明** : QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/  
                 
         === "国外赛事"
+            ??? Quote "[EngimaXplore2.0 2024](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)  
+                **比赛名称** : [EngimaXplore2.0 2024](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-10-24 20:29:59 - 2024-10-25 20:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Crispr_iiitn (https://ctftime.org/team/270138)  
+                **添加日历** : https://ctftime.org/event/2524.ics  
+                
             ??? Quote "[Z3R0 D4Y CTF](https://ctf.zerologon.co.in/)"  
                 [![](https://ctftime.org/media/events/Logo.c1dfc2e2d63945110c8d.png){ width="200" align=left }](https://ctf.zerologon.co.in/)  
                 **比赛名称** : [Z3R0 D4Y CTF](https://ctf.zerologon.co.in/)  
@@ -1894,15 +1894,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : hackrocks (https://ctftime.org/team/175823)  
                 **添加日历** : https://ctftime.org/event/2393.ics  
-                
-            ??? Quote "[Pacific Hackers Pre-DEFCON CTF & BBQ 2024](https://www.meetup.com/pacifichackers/events/301096276/)"  
-                [![](https://ctftime.org/media/events/pacific_hacker_bear.png){ width="200" align=left }](https://www.meetup.com/pacifichackers/events/301096276/)  
-                **比赛名称** : [Pacific Hackers Pre-DEFCON CTF & BBQ 2024](https://www.meetup.com/pacifichackers/events/301096276/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-23 03:00:00 - 2024-06-23 10:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Pacific Hackers Association (https://ctftime.org/team/304096)  
-                **添加日历** : https://ctftime.org/event/2413.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
