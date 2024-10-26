@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Russian CTF Cup 2024 Qualifier",
-        "比赛时间": "2024-10-26 17:00:00 - 2024-10-27 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2405.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfcup.ru/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "24.21",
-        "赛事主办": "ctfcup (https://ctftime.org/team/203499)",
-        "比赛ID": "864",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "The Cyber Jawara International 2024",
         "比赛时间": "2024-10-27 10:00:00 - 2024-10-28 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2552.ics",
@@ -813,6 +801,18 @@
         "比赛权重": "0",
         "赛事主办": "Singapore AI CTF (https://ctftime.org/team/357504)",
         "比赛ID": "1186",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Russian CTF Cup 2024 Qualifier",
+        "比赛时间": "2024-10-26 17:00:00 - 2024-10-27 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2405.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctfcup.ru/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "24.21",
+        "赛事主办": "ctfcup (https://ctftime.org/team/203499)",
+        "比赛ID": "864",
         "比赛状态": "nowrunning"
     },
     {

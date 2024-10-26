@@ -72,3 +72,12 @@ comments: true
     **赛事主办** : Singapore AI CTF (https://ctftime.org/team/357504)  
     **添加日历** : https://ctftime.org/event/2546.ics  
     
+??? Quote "[Russian CTF Cup 2024 Qualifier](https://ctfcup.ru/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctfcup.ru/)  
+    **比赛名称** : [Russian CTF Cup 2024 Qualifier](https://ctfcup.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-10-26 17:00:00 - 2024-10-27 17:00:00 UTC+8  
+    **比赛权重** : 24.21  
+    **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
+    **添加日历** : https://ctftime.org/event/2405.ics  
+    

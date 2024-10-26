@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Russian CTF Cup 2024 Qualifier](https://ctfcup.ru/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctfcup.ru/)  
-    **比赛名称** : [Russian CTF Cup 2024 Qualifier](https://ctfcup.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-26 17:00:00 - 2024-10-27 17:00:00 UTC+8  
-    **比赛权重** : 24.21  
-    **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
-    **添加日历** : https://ctftime.org/event/2405.ics  
-    
 ??? Quote "[The Cyber Jawara International 2024](https://international.cyberjawara.pro/)"  
     [![](https://ctftime.org/media/events/73b32f71c82304b9e3df7fe9dedada59-transformed.png){ width="200" align=left }](https://international.cyberjawara.pro/)  
     **比赛名称** : [The Cyber Jawara International 2024](https://international.cyberjawara.pro/)  

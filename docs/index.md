@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Russian CTF Cup 2024 Qualifier](https://ctfcup.ru/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctfcup.ru/)  
-            **比赛名称** : [Russian CTF Cup 2024 Qualifier](https://ctfcup.ru/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-10-26 17:00:00 - 2024-10-27 17:00:00 UTC+8  
-            **比赛权重** : 24.21  
-            **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
-            **添加日历** : https://ctftime.org/event/2405.ics  
-            
         ??? Quote "[The Cyber Jawara International 2024](https://international.cyberjawara.pro/)"  
             [![](https://ctftime.org/media/events/73b32f71c82304b9e3df7fe9dedada59-transformed.png){ width="200" align=left }](https://international.cyberjawara.pro/)  
             **比赛名称** : [The Cyber Jawara International 2024](https://international.cyberjawara.pro/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : BUETSec (https://ctftime.org/team/357430)  
             **添加日历** : https://ctftime.org/event/2525.ics  
+            
+        ??? Quote "[Hack The Vote 2024](https://hackthe.vote/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://hackthe.vote/)  
+            **比赛名称** : [Hack The Vote 2024](https://hackthe.vote/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-11-02 07:00:00 - 2024-11-04 07:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : RPISEC (https://ctftime.org/team/572)  
+            **添加日历** : https://ctftime.org/event/2498.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
