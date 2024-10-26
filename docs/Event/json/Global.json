@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "ISITDTU CTF 2024 Quals",
-        "比赛时间": "2024-10-26 10:00:00 - 2024-10-27 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2456.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.isitdtu.com/",
-        "比赛标志": "https://ctftime.org/media/events/index_2.gif",
-        "比赛权重": "51.00",
-        "赛事主办": "ISITDTU (https://ctftime.org/team/8241)",
-        "比赛ID": "258",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "UrchinSec Aware CTF",
         "比赛时间": "2024-10-26 15:00:00 - 2024-10-28 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2527.ics",
@@ -813,6 +801,18 @@
         "比赛权重": "22.40",
         "赛事主办": "NICC (https://ctftime.org/team/214936)",
         "比赛ID": "987",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "ISITDTU CTF 2024 Quals",
+        "比赛时间": "2024-10-26 10:00:00 - 2024-10-27 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2456.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.isitdtu.com/",
+        "比赛标志": "https://ctftime.org/media/events/index_2.gif",
+        "比赛权重": "51.00",
+        "赛事主办": "ISITDTU (https://ctftime.org/team/8241)",
+        "比赛ID": "258",
         "比赛状态": "nowrunning"
     },
     {
