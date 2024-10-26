@@ -894,7 +894,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://buuoj.cn/match/matches/211",
         "比赛标志": "https://ctftime.org/media/events/20241009170303.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "DASCTF (https://ctftime.org/team/303691)",
         "比赛ID": "1133",
         "比赛状态": "past"

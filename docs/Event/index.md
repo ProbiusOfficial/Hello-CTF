@@ -1045,7 +1045,7 @@ hide:
                 **比赛名称** : [DASCTF 2024 Golden October | Autumn is Strong, the Flames of War](https://buuoj.cn/match/matches/211)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-10-19 18:00:00 - 2024-10-20 02:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : DASCTF (https://ctftime.org/team/303691)  
                 **添加日历** : https://ctftime.org/event/2536.ics  
                 
