@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[UrchinSec Aware CTF](https://ctf.urchinsec.com/)"  
-            [![](https://ctftime.org/media/events/URCHINSEC_free-file_1.png){ width="200" align=left }](https://ctf.urchinsec.com/)  
-            **比赛名称** : [UrchinSec Aware CTF](https://ctf.urchinsec.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-10-26 15:00:00 - 2024-10-28 03:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : UrchinSec (https://ctftime.org/team/175663)  
-            **添加日历** : https://ctftime.org/event/2527.ics  
-            
         ??? Quote "[Singapore AI CTF](https://www.tech.gov.sg/media/events/singapore-ai-ctf-2024/)"  
             [![](https://ctftime.org/media/events/SG_AI_CTF_FB-Post-4.png){ width="200" align=left }](https://www.tech.gov.sg/media/events/singapore-ai-ctf-2024/)  
             **比赛名称** : [Singapore AI CTF](https://www.tech.gov.sg/media/events/singapore-ai-ctf-2024/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : SKSD (https://ctftime.org/team/211952)  
             **添加日历** : https://ctftime.org/event/2552.ics  
+            
+        ??? Quote "[TuxCTF V2](https://tuxctf.cyberalien.net/)"  
+            [![](https://ctftime.org/media/events/tuxpwners-logo.png){ width="200" align=left }](https://tuxctf.cyberalien.net/)  
+            **比赛名称** : [TuxCTF V2](https://tuxctf.cyberalien.net/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-10-29 17:00:00 - 2024-10-29 22:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : TuxPwners (https://ctftime.org/team/274660)  
+            **添加日历** : https://ctftime.org/event/2553.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
