@@ -861,15 +861,6 @@ hide:
                 **赛事主办** : NICC (https://ctftime.org/team/214936)  
                 **添加日历** : https://ctftime.org/event/2516.ics  
                 
-            ??? Quote "[ISITDTU CTF 2024 Quals](https://ctf.isitdtu.com/)"  
-                [![](https://ctftime.org/media/events/index_2.gif){ width="200" align=left }](https://ctf.isitdtu.com/)  
-                **比赛名称** : [ISITDTU CTF 2024 Quals](https://ctf.isitdtu.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-26 10:00:00 - 2024-10-27 18:00:00 UTC+8  
-                **比赛权重** : 51.00  
-                **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
-                **添加日历** : https://ctftime.org/event/2456.ics  
-                
             ??? Quote "[UrchinSec Aware CTF](https://ctf.urchinsec.com/)"  
                 [![](https://ctftime.org/media/events/URCHINSEC_free-file_1.png){ width="200" align=left }](https://ctf.urchinsec.com/)  
                 **比赛名称** : [UrchinSec Aware CTF](https://ctf.urchinsec.com/)  
@@ -978,6 +969,15 @@ hide:
                 **比赛权重** : 24.21  
                 **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
                 **添加日历** : https://ctftime.org/event/2405.ics  
+                
+            ??? Quote "[ISITDTU CTF 2024 Quals](https://ctf.isitdtu.com/)"  
+                [![](https://ctftime.org/media/events/index_2.gif){ width="200" align=left }](https://ctf.isitdtu.com/)  
+                **比赛名称** : [ISITDTU CTF 2024 Quals](https://ctf.isitdtu.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-10-26 10:00:00 - 2024-10-27 18:00:00 UTC+8  
+                **比赛权重** : 51.00  
+                **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
+                **添加日历** : https://ctftime.org/event/2456.ics  
                 
             ??? Quote "[EngimaXplore2.0 2024](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)  
@@ -1860,15 +1860,6 @@ hide:
                 **比赛权重** : 20.00  
                 **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
                 **添加日历** : https://ctftime.org/event/2306.ics  
-                
-            ??? Quote "[UIUCTF 2024](http://2024.uiuc.tf/)"  
-                [![](https://ctftime.org){ width="200" align=left }](http://2024.uiuc.tf/)  
-                **比赛名称** : [UIUCTF 2024](http://2024.uiuc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-29 08:00:00 - 2024-07-01 08:00:00 UTC+8  
-                **比赛权重** : 67.51  
-                **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
-                **添加日历** : https://ctftime.org/event/2275.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
