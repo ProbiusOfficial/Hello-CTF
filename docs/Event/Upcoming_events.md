@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[TuxCTF V2](https://www.instagram.com/tuxpwners/)"  
-    [![](https://ctftime.org/media/events/tuxpwners-logo.png){ width="200" align=left }](https://www.instagram.com/tuxpwners/)  
-    **比赛名称** : [TuxCTF V2](https://www.instagram.com/tuxpwners/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-29 17:00:00 - 2024-10-29 22:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : TuxPwners (https://ctftime.org/team/274660)  
-    **添加日历** : https://ctftime.org/event/2553.ics  
-    
 ??? Quote "[BUET CTF 2024](http://ctf.buetcsefest2024.com/)"  
     [![](https://ctftime.org/media/events/BUET_CTF_2024.png){ width="200" align=left }](http://ctf.buetcsefest2024.com/)  
     **比赛名称** : [BUET CTF 2024](http://ctf.buetcsefest2024.com/)  

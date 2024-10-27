@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[TuxCTF V2](https://www.instagram.com/tuxpwners/)"  
-            [![](https://ctftime.org/media/events/tuxpwners-logo.png){ width="200" align=left }](https://www.instagram.com/tuxpwners/)  
-            **比赛名称** : [TuxCTF V2](https://www.instagram.com/tuxpwners/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-10-29 17:00:00 - 2024-10-29 22:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : TuxPwners (https://ctftime.org/team/274660)  
-            **添加日历** : https://ctftime.org/event/2553.ics  
-            
         ??? Quote "[BUET CTF 2024](http://ctf.buetcsefest2024.com/)"  
             [![](https://ctftime.org/media/events/BUET_CTF_2024.png){ width="200" align=left }](http://ctf.buetcsefest2024.com/)  
             **比赛名称** : [BUET CTF 2024](http://ctf.buetcsefest2024.com/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : 7r0j4npwn135 (https://ctftime.org/team/214221)  
             **添加日历** : https://ctftime.org/event/2543.ics  
+            
+        ??? Quote "[M*CTF 2024 Junior Quals](https://mctf.mtuci.ru/)"  
+            [![](https://ctftime.org/media/events/NbK6tTQdEPQ.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
+            **比赛名称** : [M*CTF 2024 Junior Quals](https://mctf.mtuci.ru/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-11-02 15:00:00 - 2024-11-03 01:00:00 UTC+8  
+            **比赛权重** : 24.23  
+            **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
+            **添加日历** : https://ctftime.org/event/2535.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

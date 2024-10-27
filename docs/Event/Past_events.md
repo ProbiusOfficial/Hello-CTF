@@ -93,6 +93,15 @@ comments: true
     **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
     **添加日历** : https://ctftime.org/event/2405.ics  
     
+??? Quote "[UrchinSec Aware CTF](https://ctf.urchinsec.com/)"  
+    [![](https://ctftime.org/media/events/URCHINSEC_free-file_1.png){ width="200" align=left }](https://ctf.urchinsec.com/)  
+    **比赛名称** : [UrchinSec Aware CTF](https://ctf.urchinsec.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-10-26 15:00:00 - 2024-10-28 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : UrchinSec (https://ctftime.org/team/175663)  
+    **添加日历** : https://ctftime.org/event/2527.ics  
+    
 ??? Quote "[ISITDTU CTF 2024 Quals](https://ctf.isitdtu.com/)"  
     [![](https://ctftime.org/media/events/index_2.gif){ width="200" align=left }](https://ctf.isitdtu.com/)  
     **比赛名称** : [ISITDTU CTF 2024 Quals](https://ctf.isitdtu.com/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 22.95  
     **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
     **添加日历** : https://ctftime.org/event/2259.ics  
-    
-??? Quote "[DiceCTF 2024 Finals](https://ctf.dicega.ng/)"  
-    [![](https://ctftime.org/media/events/dicectf_2_1_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
-    **比赛名称** : [DiceCTF 2024 Finals](https://ctf.dicega.ng/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2024-06-29 22:00:00 - 2024-07-01 06:00:00 UTC+8  
-    **比赛权重** : 20.00  
-    **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
-    **添加日历** : https://ctftime.org/event/2306.ics  
     
