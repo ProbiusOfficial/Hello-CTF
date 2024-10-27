@@ -888,15 +888,6 @@ hide:
                 **赛事主办** : Singapore AI CTF (https://ctftime.org/team/357504)  
                 **添加日历** : https://ctftime.org/event/2546.ics  
                 
-            ??? Quote "[Russian CTF Cup 2024 Qualifier](https://ctfcup.ru/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctfcup.ru/)  
-                **比赛名称** : [Russian CTF Cup 2024 Qualifier](https://ctfcup.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-26 17:00:00 - 2024-10-27 17:00:00 UTC+8  
-                **比赛权重** : 24.21  
-                **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
-                **添加日历** : https://ctftime.org/event/2405.ics  
-                
             ??? Quote "[The Cyber Jawara International 2024](https://international.cyberjawara.pro/)"  
                 [![](https://ctftime.org/media/events/73b32f71c82304b9e3df7fe9dedada59-transformed.png){ width="200" align=left }](https://international.cyberjawara.pro/)  
                 **比赛名称** : [The Cyber Jawara International 2024](https://international.cyberjawara.pro/)  
@@ -979,6 +970,15 @@ hide:
                 **其他说明** : QQ群:437096728 更多信息请前往赛事官网 https://ctf.yuanloo.com/  
                 
         === "国外赛事"
+            ??? Quote "[Russian CTF Cup 2024 Qualifier](https://ctfcup.ru/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctfcup.ru/)  
+                **比赛名称** : [Russian CTF Cup 2024 Qualifier](https://ctfcup.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-10-26 17:00:00 - 2024-10-27 17:00:00 UTC+8  
+                **比赛权重** : 24.21  
+                **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
+                **添加日历** : https://ctftime.org/event/2405.ics  
+                
             ??? Quote "[EngimaXplore2.0 2024](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)  
                 **比赛名称** : [EngimaXplore2.0 2024](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)  
@@ -1869,15 +1869,6 @@ hide:
                 **比赛权重** : 67.51  
                 **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
                 **添加日历** : https://ctftime.org/event/2275.ics  
-                
-            ??? Quote "[The Hacker Conclave](http://ctf.thehackerconclave.es/)"  
-                [![](https://ctftime.org/media/events/conclave.png){ width="200" align=left }](http://ctf.thehackerconclave.es/)  
-                **比赛名称** : [The Hacker Conclave](http://ctf.thehackerconclave.es/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-06-27 16:00:00 - 2024-06-27 19:00:00 UTC+8  
-                **比赛权重** : 19.60  
-                **赛事主办** : C0ncl4v3 (https://ctftime.org/team/303692)  
-                **添加日历** : https://ctftime.org/event/2397.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

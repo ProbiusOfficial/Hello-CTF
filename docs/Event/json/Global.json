@@ -792,18 +792,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Russian CTF Cup 2024 Qualifier",
-        "比赛时间": "2024-10-26 17:00:00 - 2024-10-27 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2405.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfcup.ru/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "24.21",
-        "赛事主办": "ctfcup (https://ctftime.org/team/203499)",
-        "比赛ID": "864",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "The Cyber Jawara International 2024",
         "比赛时间": "2024-10-27 10:00:00 - 2024-10-28 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2552.ics",
@@ -814,6 +802,18 @@
         "赛事主办": "SKSD (https://ctftime.org/team/211952)",
         "比赛ID": "1192",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Russian CTF Cup 2024 Qualifier",
+        "比赛时间": "2024-10-26 17:00:00 - 2024-10-27 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2405.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctfcup.ru/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "24.21",
+        "赛事主办": "ctfcup (https://ctftime.org/team/203499)",
+        "比赛ID": "864",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "EngimaXplore2.0 2024",
@@ -2001,18 +2001,6 @@
         "比赛权重": "67.51",
         "赛事主办": "SIGPwny (https://ctftime.org/team/27763)",
         "比赛ID": "95",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "The Hacker Conclave",
-        "比赛时间": "2024-06-27 16:00:00 - 2024-06-27 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2397.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.thehackerconclave.es/",
-        "比赛标志": "https://ctftime.org/media/events/conclave.png",
-        "比赛权重": "19.60",
-        "赛事主办": "C0ncl4v3 (https://ctftime.org/team/303692)",
-        "比赛ID": "1138",
         "比赛状态": "past"
     }
 ]
