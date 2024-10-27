@@ -95,9 +95,9 @@ comments: true
     **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
     **添加日历** : https://ctftime.org/event/2456.ics  
     
-??? Quote "[EngimaXplore2.0 2024](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)  
-    **比赛名称** : [EngimaXplore2.0 2024](https://unstop.com/hackathons/engimaxplore-20-ctf-tantrafiesta24-iiit-nagpur-1153719)  
+??? Quote "[EngimaXplore2.0 2024](https://enigmaxplore.ctfd.io/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://enigmaxplore.ctfd.io/)  
+    **比赛名称** : [EngimaXplore2.0 2024](https://enigmaxplore.ctfd.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-10-24 20:29:59 - 2024-10-25 20:30:00 UTC+8  
     **比赛权重** : 0  
