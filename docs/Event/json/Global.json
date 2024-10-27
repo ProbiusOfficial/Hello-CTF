@@ -720,18 +720,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "HeroCTF v6",
-        "比赛时间": "2024-10-26 05:00:00 - 2024-10-28 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2496.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.heroctf.fr/",
-        "比赛标志": "https://ctftime.org/media/events/HeroCTF_icon_500_1_1.png",
-        "比赛权重": "43.94",
-        "赛事主办": "HeroCTF (https://ctftime.org/team/145166)",
-        "比赛ID": "601",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "SpookyCTF 2024",
         "比赛时间": "2024-10-26 07:00:00 - 2024-10-28 07:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2516.ics",
@@ -801,6 +789,18 @@
         "比赛权重": "51.00",
         "赛事主办": "ISITDTU (https://ctftime.org/team/8241)",
         "比赛ID": "258",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "HeroCTF v6",
+        "比赛时间": "2024-10-26 05:00:00 - 2024-10-28 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2496.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.heroctf.fr/",
+        "比赛标志": "https://ctftime.org/media/events/HeroCTF_icon_500_1_1.png",
+        "比赛权重": "43.94",
+        "赛事主办": "HeroCTF (https://ctftime.org/team/145166)",
+        "比赛ID": "601",
         "比赛状态": "past"
     },
     {
@@ -930,7 +930,7 @@
         "比赛形式": "Hack quest",
         "比赛链接": "https://capturetheflag.withgoogle.com/hackceler8",
         "比赛标志": "https://ctftime.org/media/events/HCL8.png",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "Google CTF (https://ctftime.org/team/23929)",
         "比赛ID": "141",
         "比赛状态": "past"
@@ -1953,18 +1953,6 @@
         "比赛权重": "68.04",
         "赛事主办": "DownUnderCTF (https://ctftime.org/team/126400)",
         "比赛ID": "481",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Junior.Crypt.2024 CTF",
-        "比赛时间": "2024-07-03 23:00:00 - 2024-07-05 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2259.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf-spcs.mf.grsu.by/",
-        "比赛标志": "https://ctftime.org/media/events/logo_NY.jpg",
-        "比赛权重": "22.95",
-        "赛事主办": "Beavers0 (https://ctftime.org/team/269281)",
-        "比赛ID": "1041",
         "比赛状态": "past"
     }
 ]

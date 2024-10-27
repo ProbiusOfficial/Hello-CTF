@@ -111,6 +111,15 @@ comments: true
     **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
     **添加日历** : https://ctftime.org/event/2456.ics  
     
+??? Quote "[HeroCTF v6](https://ctf.heroctf.fr/)"  
+    [![](https://ctftime.org/media/events/HeroCTF_icon_500_1_1.png){ width="200" align=left }](https://ctf.heroctf.fr/)  
+    **比赛名称** : [HeroCTF v6](https://ctf.heroctf.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-10-26 05:00:00 - 2024-10-28 07:00:00 UTC+8  
+    **比赛权重** : 43.94  
+    **赛事主办** : HeroCTF (https://ctftime.org/team/145166)  
+    **添加日历** : https://ctftime.org/event/2496.ics  
+    
 ??? Quote "[EngimaXplore2.0 2024](https://enigmaxplore.ctfd.io/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://enigmaxplore.ctfd.io/)  
     **比赛名称** : [EngimaXplore2.0 2024](https://enigmaxplore.ctfd.io/)  
@@ -206,7 +215,7 @@ comments: true
     **比赛名称** : [Hackceler8 2024](https://capturetheflag.withgoogle.com/hackceler8)  
     **比赛形式** : Hack quest  
     **比赛时间** : 2024-10-18 08:00:00 - 2024-10-21 07:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
     **添加日历** : https://ctftime.org/event/2379.ics  
     
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 68.04  
     **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
     **添加日历** : https://ctftime.org/event/2284.ics  
-    
-??? Quote "[Junior.Crypt.2024 CTF](http://ctf-spcs.mf.grsu.by/)"  
-    [![](https://ctftime.org/media/events/logo_NY.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
-    **比赛名称** : [Junior.Crypt.2024 CTF](http://ctf-spcs.mf.grsu.by/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-07-03 23:00:00 - 2024-07-05 23:00:00 UTC+8  
-    **比赛权重** : 22.95  
-    **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
-    **添加日历** : https://ctftime.org/event/2259.ics  
     
