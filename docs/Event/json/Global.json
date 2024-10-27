@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "The Cyber Jawara International 2024",
-        "比赛时间": "2024-10-27 10:00:00 - 2024-10-28 10:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2552.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://international.cyberjawara.pro/",
-        "比赛标志": "https://ctftime.org/media/events/73b32f71c82304b9e3df7fe9dedada59-transformed.png",
-        "比赛权重": "0.00",
-        "赛事主办": "SKSD (https://ctftime.org/team/211952)",
-        "比赛ID": "1192",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "TuxCTF V2",
         "比赛时间": "2024-10-29 17:00:00 - 2024-10-29 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2553.ics",
@@ -813,6 +801,18 @@
         "比赛权重": "24.21",
         "赛事主办": "ctfcup (https://ctftime.org/team/203499)",
         "比赛ID": "864",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "The Cyber Jawara International 2024",
+        "比赛时间": "2024-10-27 10:00:00 - 2024-10-28 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2552.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://international.cyberjawara.pro/",
+        "比赛标志": "https://ctftime.org/media/events/73b32f71c82304b9e3df7fe9dedada59-transformed.png",
+        "比赛权重": "0",
+        "赛事主办": "SKSD (https://ctftime.org/team/211952)",
+        "比赛ID": "1192",
         "比赛状态": "nowrunning"
     },
     {
