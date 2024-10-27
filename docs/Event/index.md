@@ -290,15 +290,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[The Cyber Jawara International 2024](https://international.cyberjawara.pro/)"  
-                [![](https://ctftime.org/media/events/73b32f71c82304b9e3df7fe9dedada59-transformed.png){ width="200" align=left }](https://international.cyberjawara.pro/)  
-                **比赛名称** : [The Cyber Jawara International 2024](https://international.cyberjawara.pro/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-27 10:00:00 - 2024-10-28 10:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : SKSD (https://ctftime.org/team/211952)  
-                **添加日历** : https://ctftime.org/event/2552.ics  
-                
             ??? Quote "[TuxCTF V2](https://www.instagram.com/tuxpwners/)"  
                 [![](https://ctftime.org/media/events/tuxpwners-logo.png){ width="200" align=left }](https://www.instagram.com/tuxpwners/)  
                 **比赛名称** : [TuxCTF V2](https://www.instagram.com/tuxpwners/)  
@@ -905,6 +896,15 @@ hide:
                 **比赛权重** : 24.21  
                 **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
                 **添加日历** : https://ctftime.org/event/2405.ics  
+                
+            ??? Quote "[The Cyber Jawara International 2024](https://international.cyberjawara.pro/)"  
+                [![](https://ctftime.org/media/events/73b32f71c82304b9e3df7fe9dedada59-transformed.png){ width="200" align=left }](https://international.cyberjawara.pro/)  
+                **比赛名称** : [The Cyber Jawara International 2024](https://international.cyberjawara.pro/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-10-27 10:00:00 - 2024-10-28 10:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : SKSD (https://ctftime.org/team/211952)  
+                **添加日历** : https://ctftime.org/event/2552.ics  
                 
     === "*已经结束*"
         === "国内赛事"
