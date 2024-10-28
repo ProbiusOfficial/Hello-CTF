@@ -843,15 +843,6 @@ hide:
                 **赛事主办** : Singapore AI CTF (https://ctftime.org/team/357504)  
                 **添加日历** : https://ctftime.org/event/2546.ics  
                 
-            ??? Quote "[The Cyber Jawara International 2024](https://international.cyberjawara.pro/)"  
-                [![](https://ctftime.org/media/events/73b32f71c82304b9e3df7fe9dedada59-transformed.png){ width="200" align=left }](https://international.cyberjawara.pro/)  
-                **比赛名称** : [The Cyber Jawara International 2024](https://international.cyberjawara.pro/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-27 10:00:00 - 2024-10-28 10:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : SKSD (https://ctftime.org/team/211952)  
-                **添加日历** : https://ctftime.org/event/2552.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[BRICS+ CTF Quals 2024](https://brics-ctf.com/)"  
@@ -932,6 +923,15 @@ hide:
                 **其他说明** : 更多信息请前往官网https://www.hncsisc.com 的“赛事活动”查看  
                 
         === "国外赛事"
+            ??? Quote "[The Cyber Jawara International 2024](https://international.cyberjawara.pro/)"  
+                [![](https://ctftime.org/media/events/73b32f71c82304b9e3df7fe9dedada59-transformed.png){ width="200" align=left }](https://international.cyberjawara.pro/)  
+                **比赛名称** : [The Cyber Jawara International 2024](https://international.cyberjawara.pro/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-10-27 10:00:00 - 2024-10-28 10:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : SKSD (https://ctftime.org/team/211952)  
+                **添加日历** : https://ctftime.org/event/2552.ics  
+                
             ??? Quote "[Russian CTF Cup 2024 Qualifier](https://ctfcup.ru/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctfcup.ru/)  
                 **比赛名称** : [Russian CTF Cup 2024 Qualifier](https://ctfcup.ru/)  
@@ -1822,15 +1822,6 @@ hide:
                 **比赛权重** : 100.00  
                 **赛事主办** : HITCON (https://ctftime.org/team/8299)  
                 **添加日历** : https://ctftime.org/event/2345.ics  
-                
-            ??? Quote "[Interlogica CTF2024 - Wastelands](https://ctf.interlogica.ninja/)"  
-                [![](https://ctftime.org/media/events/Untitled_2.png){ width="200" align=left }](https://ctf.interlogica.ninja/)  
-                **比赛名称** : [Interlogica CTF2024 - Wastelands](https://ctf.interlogica.ninja/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-07-05 20:37:00 - 2024-07-08 06:59:59 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : Interlogica (https://ctftime.org/team/250899)  
-                **添加日历** : https://ctftime.org/event/2301.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

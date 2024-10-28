@@ -741,7 +741,7 @@
         "比赛权重": "0",
         "赛事主办": "SKSD (https://ctftime.org/team/211952)",
         "比赛ID": "1192",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Russian CTF Cup 2024 Qualifier",
@@ -1929,18 +1929,6 @@
         "比赛权重": "100.00",
         "赛事主办": "HITCON (https://ctftime.org/team/8299)",
         "比赛ID": "79",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Interlogica CTF2024 - Wastelands",
-        "比赛时间": "2024-07-05 20:37:00 - 2024-07-08 06:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2301.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.interlogica.ninja/",
-        "比赛标志": "https://ctftime.org/media/events/Untitled_2.png",
-        "比赛权重": "25.00",
-        "赛事主办": "Interlogica (https://ctftime.org/team/250899)",
-        "比赛ID": "1065",
         "比赛状态": "past"
     }
 ]
