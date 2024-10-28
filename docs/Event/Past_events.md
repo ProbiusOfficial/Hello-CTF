@@ -102,6 +102,15 @@ comments: true
     **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
     **添加日历** : https://ctftime.org/event/2405.ics  
     
+??? Quote "[Singapore AI CTF](https://www.tech.gov.sg/media/events/singapore-ai-ctf-2024/)"  
+    [![](https://ctftime.org/media/events/SG_AI_CTF_FB-Post-4.png){ width="200" align=left }](https://www.tech.gov.sg/media/events/singapore-ai-ctf-2024/)  
+    **比赛名称** : [Singapore AI CTF](https://www.tech.gov.sg/media/events/singapore-ai-ctf-2024/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-10-26 16:00:00 - 2024-10-28 16:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Singapore AI CTF (https://ctftime.org/team/357504)  
+    **添加日历** : https://ctftime.org/event/2546.ics  
+    
 ??? Quote "[UrchinSec Aware CTF](https://ctf.urchinsec.com/)"  
     [![](https://ctftime.org/media/events/URCHINSEC_free-file_1.png){ width="200" align=left }](https://ctf.urchinsec.com/)  
     **比赛名称** : [UrchinSec Aware CTF](https://ctf.urchinsec.com/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 23.10  
     **赛事主办** : BlitzHack (https://ctftime.org/team/307415)  
     **添加日历** : https://ctftime.org/event/2416.ics  
-    
-??? Quote "[HITCON CTF 2024 Quals](https://ctf2024.hitcon.org/)"  
-    [![](https://ctftime.org/media/events/hitcon-ctf_monotone_black.png){ width="200" align=left }](https://ctf2024.hitcon.org/)  
-    **比赛名称** : [HITCON CTF 2024 Quals](https://ctf2024.hitcon.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-07-12 22:00:00 - 2024-07-14 22:00:00 UTC+8  
-    **比赛权重** : 100.00  
-    **赛事主办** : HITCON (https://ctftime.org/team/8299)  
-    **添加日历** : https://ctftime.org/event/2345.ics  
     

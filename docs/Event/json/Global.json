@@ -720,18 +720,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Singapore AI CTF",
-        "比赛时间": "2024-10-26 16:00:00 - 2024-10-28 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2546.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.tech.gov.sg/media/events/singapore-ai-ctf-2024/",
-        "比赛标志": "https://ctftime.org/media/events/SG_AI_CTF_FB-Post-4.png",
-        "比赛权重": "0",
-        "赛事主办": "Singapore AI CTF (https://ctftime.org/team/357504)",
-        "比赛ID": "1186",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "The Cyber Jawara International 2024",
         "比赛时间": "2024-10-27 10:00:00 - 2024-10-28 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2552.ics",
@@ -753,6 +741,18 @@
         "比赛权重": "24.21",
         "赛事主办": "ctfcup (https://ctftime.org/team/203499)",
         "比赛ID": "864",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Singapore AI CTF",
+        "比赛时间": "2024-10-26 16:00:00 - 2024-10-28 16:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2546.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.tech.gov.sg/media/events/singapore-ai-ctf-2024/",
+        "比赛标志": "https://ctftime.org/media/events/SG_AI_CTF_FB-Post-4.png",
+        "比赛权重": "0",
+        "赛事主办": "Singapore AI CTF (https://ctftime.org/team/357504)",
+        "比赛ID": "1186",
         "比赛状态": "past"
     },
     {
@@ -1917,18 +1917,6 @@
         "比赛权重": "23.10",
         "赛事主办": "BlitzHack (https://ctftime.org/team/307415)",
         "比赛ID": "1144",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "HITCON CTF 2024 Quals",
-        "比赛时间": "2024-07-12 22:00:00 - 2024-07-14 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2345.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf2024.hitcon.org/",
-        "比赛标志": "https://ctftime.org/media/events/hitcon-ctf_monotone_black.png",
-        "比赛权重": "100.00",
-        "赛事主办": "HITCON (https://ctftime.org/team/8299)",
-        "比赛ID": "79",
         "比赛状态": "past"
     }
 ]
