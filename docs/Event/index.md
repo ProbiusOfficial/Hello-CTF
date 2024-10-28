@@ -834,15 +834,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
                 
-            ??? Quote "[SpookyCTF 2024](https://spookyctf.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/Spooky.png){ width="200" align=left }](https://spookyctf.ctfd.io/)  
-                **比赛名称** : [SpookyCTF 2024](https://spookyctf.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-26 07:00:00 - 2024-10-28 07:30:00 UTC+8  
-                **比赛权重** : 22.40  
-                **赛事主办** : NICC (https://ctftime.org/team/214936)  
-                **添加日历** : https://ctftime.org/event/2516.ics  
-                
             ??? Quote "[Singapore AI CTF](https://www.tech.gov.sg/media/events/singapore-ai-ctf-2024/)"  
                 [![](https://ctftime.org/media/events/SG_AI_CTF_FB-Post-4.png){ width="200" align=left }](https://www.tech.gov.sg/media/events/singapore-ai-ctf-2024/)  
                 **比赛名称** : [Singapore AI CTF](https://www.tech.gov.sg/media/events/singapore-ai-ctf-2024/)  
@@ -967,6 +958,15 @@ hide:
                 **比赛权重** : 51.00  
                 **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
                 **添加日历** : https://ctftime.org/event/2456.ics  
+                
+            ??? Quote "[SpookyCTF 2024](https://spookyctf.ctfd.io/)"  
+                [![](https://ctftime.org/media/events/Spooky.png){ width="200" align=left }](https://spookyctf.ctfd.io/)  
+                **比赛名称** : [SpookyCTF 2024](https://spookyctf.ctfd.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-10-26 07:00:00 - 2024-10-28 07:30:00 UTC+8  
+                **比赛权重** : 22.40  
+                **赛事主办** : NICC (https://ctftime.org/team/214936)  
+                **添加日历** : https://ctftime.org/event/2516.ics  
                 
             ??? Quote "[HeroCTF v6](https://ctf.heroctf.fr/)"  
                 [![](https://ctftime.org/media/events/HeroCTF_icon_500_1_1.png){ width="200" align=left }](https://ctf.heroctf.fr/)  
@@ -1831,15 +1831,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : Interlogica (https://ctftime.org/team/250899)  
                 **添加日历** : https://ctftime.org/event/2301.ics  
-                
-            ??? Quote "[DownUnderCTF 2024](https://play.duc.tf/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://play.duc.tf/)  
-                **比赛名称** : [DownUnderCTF 2024](https://play.duc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-07-05 17:30:00 - 2024-07-07 17:30:00 UTC+8  
-                **比赛权重** : 68.04  
-                **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
-                **添加日历** : https://ctftime.org/event/2284.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
