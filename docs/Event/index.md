@@ -344,15 +344,6 @@ hide:
                 **赛事主办** : Hackers N' Hops (https://ctftime.org/team/119910)  
                 **添加日历** : https://ctftime.org/event/2550.ics  
                 
-            ??? Quote "[Platypwn 2024](https://platypwn.ctf.platypwnies.de/)"  
-                [![](https://ctftime.org/media/events/Platypwnie.png){ width="200" align=left }](https://platypwn.ctf.platypwnies.de/)  
-                **比赛名称** : [Platypwn 2024](https://platypwn.ctf.platypwnies.de/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-02 22:00:00 - 2024-11-03 22:00:00 UTC+8  
-                **比赛权重** : 24.75  
-                **赛事主办** : Platypwnies (https://ctftime.org/team/112550)  
-                **添加日历** : https://ctftime.org/event/2407.ics  
-                
             ??? Quote "[Pacific Hackers Conference 2024](https://www.phack.org/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://www.phack.org/)  
                 **比赛名称** : [Pacific Hackers Conference 2024](https://www.phack.org/)  

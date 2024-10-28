@@ -72,18 +72,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Platypwn 2024",
-        "比赛时间": "2024-11-02 22:00:00 - 2024-11-03 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2407.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://platypwn.ctf.platypwnies.de/",
-        "比赛标志": "https://ctftime.org/media/events/Platypwnie.png",
-        "比赛权重": "24.75",
-        "赛事主办": "Platypwnies (https://ctftime.org/team/112550)",
-        "比赛ID": "979",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Pacific Hackers Conference 2024",
         "比赛时间": "2024-11-03 01:00:00 - 2024-11-03 09:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2453.ics",
