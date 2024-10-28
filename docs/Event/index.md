@@ -1423,7 +1423,7 @@ hide:
                 **比赛名称** : [KubanCTF Qualifier 2024](https://kubanctf.ru/signUp)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-09-14 15:00:00 - 2024-09-14 23:00:00 UTC+8  
-                **比赛权重** : 16.37  
+                **比赛权重** : 16.77  
                 **赛事主办** : Codeby Games (https://ctftime.org/team/299486)  
                 **添加日历** : https://ctftime.org/event/2464.ics  
                 
