@@ -111,17 +111,6 @@
                 "status": "已经结束"
             },
             {
-                "name": "0xGame 2024",
-                "link": "https://0xgame.exp10it.cn/",
-                "type": "个人赛",
-                "reg_time_start": "2024年09月17日 10:30",
-                "reg_time_end": "2024年11月03日 21:00",
-                "comp_time_start": "2024年10月06日 09:00",
-                "comp_time_end": "2024年11月03日 21:00",
-                "readmore": "QQ群: 746958713",
-                "status": 3
-            },
-            {
                 "name": "SHCTF2024",
                 "link": "https://shc.tf/",
                 "type": "个人赛",
@@ -130,6 +119,17 @@
                 "comp_time_start": "2024年10月02日 10:00",
                 "comp_time_end": "2024年10月31日 10:00",
                 "readmore": "QQ 一群：536115792  二群：721693440",
+                "status": "已经结束"
+            },
+            {
+                "name": "0xGame 2024",
+                "link": "https://0xgame.exp10it.cn/",
+                "type": "个人赛",
+                "reg_time_start": "2024年09月17日 10:30",
+                "reg_time_end": "2024年11月03日 21:00",
+                "comp_time_start": "2024年10月06日 09:00",
+                "comp_time_end": "2024年11月03日 21:00",
+                "readmore": "QQ群: 746958713",
                 "status": 3
             },
             {
