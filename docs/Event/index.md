@@ -816,15 +816,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
                 
-            ??? Quote "[BUET CTF 2024](http://ctf.buetcsefest2024.com/)"  
-                [![](https://ctftime.org/media/events/BUET_CTF_2024.png){ width="200" align=left }](http://ctf.buetcsefest2024.com/)  
-                **比赛名称** : [BUET CTF 2024](http://ctf.buetcsefest2024.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-31 11:00:00 - 2024-10-31 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : BUETSec (https://ctftime.org/team/357430)  
-                **添加日历** : https://ctftime.org/event/2525.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[BRICS+ CTF Quals 2024](https://brics-ctf.com/)"  
@@ -898,6 +889,15 @@ hide:
                 **其他说明** : QQ 一群：536115792  二群：721693440  
                 
         === "国外赛事"
+            ??? Quote "[BUET CTF 2024](http://ctf.buetcsefest2024.com/)"  
+                [![](https://ctftime.org/media/events/BUET_CTF_2024.png){ width="200" align=left }](http://ctf.buetcsefest2024.com/)  
+                **比赛名称** : [BUET CTF 2024](http://ctf.buetcsefest2024.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-10-31 11:00:00 - 2024-10-31 17:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : BUETSec (https://ctftime.org/team/357430)  
+                **添加日历** : https://ctftime.org/event/2525.ics  
+                
             ??? Quote "[The Cyber Jawara International 2024](https://international.cyberjawara.pro/)"  
                 [![](https://ctftime.org/media/events/73b32f71c82304b9e3df7fe9dedada59-transformed.png){ width="200" align=left }](https://international.cyberjawara.pro/)  
                 **比赛名称** : [The Cyber Jawara International 2024](https://international.cyberjawara.pro/)  
@@ -1788,15 +1788,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : CatTheFlag (https://ctftime.org/team/306432)  
                 **添加日历** : https://ctftime.org/event/2414.ics  
-                
-            ??? Quote "[OSCTF](https://ctf.os.ftp.sh/)"  
-                [![](https://ctftime.org/media/events/os_ctf_logo.png){ width="200" align=left }](https://ctf.os.ftp.sh/)  
-                **比赛名称** : [OSCTF](https://ctf.os.ftp.sh/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-07-13 08:30:00 - 2024-07-14 00:30:00 UTC+8  
-                **比赛权重** : 23.10  
-                **赛事主办** : BlitzHack (https://ctftime.org/team/307415)  
-                **添加日历** : https://ctftime.org/event/2416.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
