@@ -17,7 +17,7 @@
         "添加日历": "https://ctftime.org/event/2498.ics",
         "比赛形式": "Jeopardy",
         "比赛链接": "https://hackthe.vote/",
-        "比赛标志": "https://ctftime.org",
+        "比赛标志": "https://ctftime.org/media/events/image_center.png",
         "比赛权重": "0.00",
         "赛事主办": "RPISEC (https://ctftime.org/team/572)",
         "比赛ID": "157",
@@ -1098,7 +1098,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.1nf1n1ty.team/",
         "比赛标志": "https://ctftime.org/media/events/ironCTF.png",
-        "比赛权重": "24.66",
+        "比赛权重": "24.67",
         "赛事主办": "1nf1n1ty (https://ctftime.org/team/151859)",
         "比赛ID": "1167",
         "比赛状态": "past"

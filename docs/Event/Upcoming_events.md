@@ -19,7 +19,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2525.ics  
     
 ??? Quote "[Hack The Vote 2024](https://hackthe.vote/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://hackthe.vote/)  
+    [![](https://ctftime.org/media/events/image_center.png){ width="200" align=left }](https://hackthe.vote/)  
     **比赛名称** : [Hack The Vote 2024](https://hackthe.vote/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-02 07:00:00 - 2024-11-04 07:00:00 UTC+8  
