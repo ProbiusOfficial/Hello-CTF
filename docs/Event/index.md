@@ -975,7 +975,7 @@ hide:
                 **比赛名称** : [Z3R0 D4Y CTF](https://ctf.zerologon.co.in/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-10-24 17:00:00 - 2024-10-25 05:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 24.73  
                 **赛事主办** : Z3r0_l0g0n (https://ctftime.org/team/227457)  
                 **添加日历** : https://ctftime.org/event/2529.ics  
                 
