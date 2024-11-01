@@ -966,7 +966,7 @@ hide:
                 **比赛名称** : [EngimaXplore2.0 2024](https://enigmaxplore.ctfd.io/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-10-24 20:29:59 - 2024-10-25 20:30:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 24.55  
                 **赛事主办** : Crispr_iiitn (https://ctftime.org/team/270138)  
                 **添加日历** : https://ctftime.org/event/2524.ics  
                 
