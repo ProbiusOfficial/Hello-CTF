@@ -72,9 +72,9 @@ comments: true
     **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
     **添加日历** : https://ctftime.org/event/2501.ics  
     
-??? Quote "[RedShift.Eclipse 2 Quals]()"  
-    [![](https://ctftime.org/media/events/IMG_5703.JPG){ width="200" align=left }]()  
-    **比赛名称** : [RedShift.Eclipse 2 Quals]()  
+??? Quote "[RedShift.Eclipse 2 Quals](https://quals.o1d-bu7-go1d.ru/)"  
+    [![](https://ctftime.org/media/events/IMG_5703.JPG){ width="200" align=left }](https://quals.o1d-bu7-go1d.ru/)  
+    **比赛名称** : [RedShift.Eclipse 2 Quals](https://quals.o1d-bu7-go1d.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-03 20:00:00 - 2024-11-04 20:00:00 UTC+8  
     **比赛权重** : 0.00  
