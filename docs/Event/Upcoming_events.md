@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Hack The Vote 2024](https://hackthe.vote/)"  
-    [![](https://ctftime.org/media/events/image_center.png){ width="200" align=left }](https://hackthe.vote/)  
-    **比赛名称** : [Hack The Vote 2024](https://hackthe.vote/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-02 07:00:00 - 2024-11-04 07:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : RPISEC (https://ctftime.org/team/572)  
-    **添加日历** : https://ctftime.org/event/2498.ics  
-    
 ??? Quote "[USC CTF Fall 2024](https://usc.ctfd.io/)"  
     [![](https://ctftime.org/media/events/USC_CTF_Logo_Handdrawn.png){ width="200" align=left }](https://usc.ctfd.io/)  
     **比赛名称** : [USC CTF Fall 2024](https://usc.ctfd.io/)  
