@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Equinor CTF 2024](https://ctf.equinor.com/)"  
-    [![](https://ctftime.org/media/events/ept_1.png){ width="200" align=left }](https://ctf.equinor.com/)  
-    **比赛名称** : [Equinor CTF 2024](https://ctf.equinor.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-02 17:00:00 - 2024-11-03 03:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : EPT (https://ctftime.org/team/119480)  
-    **添加日历** : https://ctftime.org/event/2292.ics  
-    
 ??? Quote "[Hackers N' Hops](https://hackersnhops.ctfd.io/)"  
     [![](https://ctftime.org/media/events/HACKERSNHOPS.png){ width="200" align=left }](https://hackersnhops.ctfd.io/)  
     **比赛名称** : [Hackers N' Hops](https://hackersnhops.ctfd.io/)  
