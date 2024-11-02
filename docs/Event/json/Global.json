@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "USC CTF Fall 2024",
-        "比赛时间": "2024-11-02 11:00:00 - 2024-11-04 12:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2543.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://usc.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/USC_CTF_Logo_Handdrawn.png",
-        "比赛权重": "0",
-        "赛事主办": "7r0j4npwn135 (https://ctftime.org/team/214221)",
-        "比赛ID": "1022",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "M*CTF 2024 Junior Quals",
         "比赛时间": "2024-11-02 15:00:00 - 2024-11-03 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2535.ics",
@@ -693,6 +681,18 @@
         "比赛权重": "0",
         "赛事主办": "RPISEC (https://ctftime.org/team/572)",
         "比赛ID": "157",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "USC CTF Fall 2024",
+        "比赛时间": "2024-11-02 11:00:00 - 2024-11-04 12:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2543.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://usc.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/USC_CTF_Logo_Handdrawn.png",
+        "比赛权重": "0",
+        "赛事主办": "7r0j4npwn135 (https://ctftime.org/team/214221)",
+        "比赛ID": "1022",
         "比赛状态": "nowrunning"
     },
     {
