@@ -290,15 +290,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Hackers N' Hops](https://hackersnhops.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/HACKERSNHOPS.png){ width="200" align=left }](https://hackersnhops.ctfd.io/)  
-                **比赛名称** : [Hackers N' Hops](https://hackersnhops.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-02 18:00:00 - 2024-11-04 02:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Hackers N' Hops (https://ctftime.org/team/119910)  
-                **添加日历** : https://ctftime.org/event/2550.ics  
-                
             ??? Quote "[Pacific Hackers Conference 2024](https://www.phack.org/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://www.phack.org/)  
                 **比赛名称** : [Pacific Hackers Conference 2024](https://www.phack.org/)  
@@ -815,6 +806,15 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : EPT (https://ctftime.org/team/119480)  
                 **添加日历** : https://ctftime.org/event/2292.ics  
+                
+            ??? Quote "[Hackers N' Hops](https://hackersnhops.ctfd.io/)"  
+                [![](https://ctftime.org/media/events/HACKERSNHOPS.png){ width="200" align=left }](https://hackersnhops.ctfd.io/)  
+                **比赛名称** : [Hackers N' Hops](https://hackersnhops.ctfd.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-02 18:00:00 - 2024-11-04 02:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Hackers N' Hops (https://ctftime.org/team/119910)  
+                **添加日历** : https://ctftime.org/event/2550.ics  
                 
     === "*已经结束*"
         === "国内赛事"
