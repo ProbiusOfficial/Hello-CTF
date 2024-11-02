@@ -290,15 +290,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[M*CTF 2024 Junior Quals](https://mctf.mtuci.ru/)"  
-                [![](https://ctftime.org/media/events/NbK6tTQdEPQ.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
-                **比赛名称** : [M*CTF 2024 Junior Quals](https://mctf.mtuci.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-02 15:00:00 - 2024-11-03 01:00:00 UTC+8  
-                **比赛权重** : 24.23  
-                **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-                **添加日历** : https://ctftime.org/event/2535.ics  
-                
             ??? Quote "[Equinor CTF 2024](https://ctf.equinor.com/)"  
                 [![](https://ctftime.org/media/events/ept_1.png){ width="200" align=left }](https://ctf.equinor.com/)  
                 **比赛名称** : [Equinor CTF 2024](https://ctf.equinor.com/)  
@@ -815,6 +806,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : 7r0j4npwn135 (https://ctftime.org/team/214221)  
                 **添加日历** : https://ctftime.org/event/2543.ics  
+                
+            ??? Quote "[M*CTF 2024 Junior Quals](https://mctf.mtuci.ru/)"  
+                [![](https://ctftime.org/media/events/NbK6tTQdEPQ.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
+                **比赛名称** : [M*CTF 2024 Junior Quals](https://mctf.mtuci.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-02 15:00:00 - 2024-11-03 01:00:00 UTC+8  
+                **比赛权重** : 24.23  
+                **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
+                **添加日历** : https://ctftime.org/event/2535.ics  
                 
     === "*已经结束*"
         === "国内赛事"
