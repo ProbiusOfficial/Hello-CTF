@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Pacific Hackers Conference 2024",
-        "比赛时间": "2024-11-03 01:00:00 - 2024-11-03 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2453.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.phack.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Pacific Hackers Association (https://ctftime.org/team/304096)",
-        "比赛ID": "1145",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "AlpacaHack Round 6 (Pwn)",
         "比赛时间": "2024-11-03 11:00:00 - 2024-11-03 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2501.ics",
@@ -660,18 +648,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "M*CTF 2024 Junior Quals",
-        "比赛时间": "2024-11-02 15:00:00 - 2024-11-03 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2535.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://mctf.mtuci.ru/",
-        "比赛标志": "https://ctftime.org/media/events/NbK6tTQdEPQ.jpg",
-        "比赛权重": "24.23",
-        "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
-        "比赛ID": "164",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Equinor CTF 2024",
         "比赛时间": "2024-11-02 17:00:00 - 2024-11-03 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2292.ics",
@@ -694,6 +670,30 @@
         "赛事主办": "Hackers N' Hops (https://ctftime.org/team/119910)",
         "比赛ID": "1191",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Pacific Hackers Conference 2024",
+        "比赛时间": "2024-11-03 01:00:00 - 2024-11-03 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2453.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.phack.org/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "Pacific Hackers Association (https://ctftime.org/team/304096)",
+        "比赛ID": "1145",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "M*CTF 2024 Junior Quals",
+        "比赛时间": "2024-11-02 15:00:00 - 2024-11-03 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2535.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://mctf.mtuci.ru/",
+        "比赛标志": "https://ctftime.org/media/events/NbK6tTQdEPQ.jpg",
+        "比赛权重": "24.23",
+        "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
+        "比赛ID": "164",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "BUET CTF 2024",
@@ -1881,18 +1881,6 @@
         "比赛权重": "49.81",
         "赛事主办": "ImaginaryCTF (https://ctftime.org/team/131529)",
         "比赛ID": "615",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CatTheQuest",
-        "比赛时间": "2024-07-15 08:00:00 - 2024-07-21 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2414.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://catthequest.com/",
-        "比赛标志": "https://ctftime.org/media/events/DALL_E-2024-03-21-18.10-removebg-preview.png",
-        "比赛权重": "0",
-        "赛事主办": "CatTheFlag (https://ctftime.org/team/306432)",
-        "比赛ID": "1139",
         "比赛状态": "past"
     }
 ]

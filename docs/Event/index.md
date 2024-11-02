@@ -290,15 +290,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Pacific Hackers Conference 2024](https://www.phack.org/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://www.phack.org/)  
-                **比赛名称** : [Pacific Hackers Conference 2024](https://www.phack.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-03 01:00:00 - 2024-11-03 09:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Pacific Hackers Association (https://ctftime.org/team/304096)  
-                **添加日历** : https://ctftime.org/event/2453.ics  
-                
             ??? Quote "[AlpacaHack Round 6 (Pwn)](https://alpacahack.com/ctfs/round-6)"  
                 [![](https://ctftime.org/media/events/ctftime_7.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-6)  
                 **比赛名称** : [AlpacaHack Round 6 (Pwn)](https://alpacahack.com/ctfs/round-6)  
@@ -789,15 +780,6 @@ hide:
                 **赛事主办** : 7r0j4npwn135 (https://ctftime.org/team/214221)  
                 **添加日历** : https://ctftime.org/event/2543.ics  
                 
-            ??? Quote "[M*CTF 2024 Junior Quals](https://mctf.mtuci.ru/)"  
-                [![](https://ctftime.org/media/events/NbK6tTQdEPQ.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
-                **比赛名称** : [M*CTF 2024 Junior Quals](https://mctf.mtuci.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-02 15:00:00 - 2024-11-03 01:00:00 UTC+8  
-                **比赛权重** : 24.23  
-                **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-                **添加日历** : https://ctftime.org/event/2535.ics  
-                
             ??? Quote "[Equinor CTF 2024](https://ctf.equinor.com/)"  
                 [![](https://ctftime.org/media/events/ept_1.png){ width="200" align=left }](https://ctf.equinor.com/)  
                 **比赛名称** : [Equinor CTF 2024](https://ctf.equinor.com/)  
@@ -815,6 +797,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Hackers N' Hops (https://ctftime.org/team/119910)  
                 **添加日历** : https://ctftime.org/event/2550.ics  
+                
+            ??? Quote "[Pacific Hackers Conference 2024](https://www.phack.org/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://www.phack.org/)  
+                **比赛名称** : [Pacific Hackers Conference 2024](https://www.phack.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-03 01:00:00 - 2024-11-03 09:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Pacific Hackers Association (https://ctftime.org/team/304096)  
+                **添加日历** : https://ctftime.org/event/2453.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -889,6 +880,15 @@ hide:
                 **其他说明** : QQ 一群：536115792  二群：721693440  
                 
         === "国外赛事"
+            ??? Quote "[M*CTF 2024 Junior Quals](https://mctf.mtuci.ru/)"  
+                [![](https://ctftime.org/media/events/NbK6tTQdEPQ.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
+                **比赛名称** : [M*CTF 2024 Junior Quals](https://mctf.mtuci.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-02 15:00:00 - 2024-11-03 01:00:00 UTC+8  
+                **比赛权重** : 24.23  
+                **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
+                **添加日历** : https://ctftime.org/event/2535.ics  
+                
             ??? Quote "[BUET CTF 2024](http://ctf.buetcsefest2024.com/)"  
                 [![](https://ctftime.org/media/events/BUET_CTF_2024.png){ width="200" align=left }](http://ctf.buetcsefest2024.com/)  
                 **比赛名称** : [BUET CTF 2024](http://ctf.buetcsefest2024.com/)  
@@ -1779,15 +1779,6 @@ hide:
                 **比赛权重** : 49.81  
                 **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
                 **添加日历** : https://ctftime.org/event/2396.ics  
-                
-            ??? Quote "[CatTheQuest](https://catthequest.com/)"  
-                [![](https://ctftime.org/media/events/DALL_E-2024-03-21-18.10-removebg-preview.png){ width="200" align=left }](https://catthequest.com/)  
-                **比赛名称** : [CatTheQuest](https://catthequest.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-07-15 08:00:00 - 2024-07-21 08:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : CatTheFlag (https://ctftime.org/team/306432)  
-                **添加日历** : https://ctftime.org/event/2414.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
