@@ -648,18 +648,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Equinor CTF 2024",
-        "比赛时间": "2024-11-02 17:00:00 - 2024-11-03 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2292.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.equinor.com/",
-        "比赛标志": "https://ctftime.org/media/events/ept_1.png",
-        "比赛权重": "25.00",
-        "赛事主办": "EPT (https://ctftime.org/team/119480)",
-        "比赛ID": "697",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Hackers N' Hops",
         "比赛时间": "2024-11-02 18:00:00 - 2024-11-04 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2550.ics",
@@ -682,6 +670,18 @@
         "赛事主办": "Pacific Hackers Association (https://ctftime.org/team/304096)",
         "比赛ID": "1145",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Equinor CTF 2024",
+        "比赛时间": "2024-11-02 17:00:00 - 2024-11-03 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2292.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.equinor.com/",
+        "比赛标志": "https://ctftime.org/media/events/ept_1.png",
+        "比赛权重": "25.00",
+        "赛事主办": "EPT (https://ctftime.org/team/119480)",
+        "比赛ID": "697",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "M*CTF 2024 Junior Quals",
@@ -1869,18 +1869,6 @@
         "比赛权重": "20.00",
         "赛事主办": "DASCTF (https://ctftime.org/team/303691)",
         "比赛ID": "1133",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "ImaginaryCTF 2024",
-        "比赛时间": "2024-07-20 03:00:00 - 2024-07-22 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2396.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2024.imaginaryctf.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "49.81",
-        "赛事主办": "ImaginaryCTF (https://ctftime.org/team/131529)",
-        "比赛ID": "615",
         "比赛状态": "past"
     }
 ]
