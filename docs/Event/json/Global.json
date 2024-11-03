@@ -669,7 +669,7 @@
         "比赛权重": "0.00",
         "赛事主办": "Pacific Hackers Association (https://ctftime.org/team/304096)",
         "比赛ID": "1145",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Equinor CTF 2024",
@@ -1857,18 +1857,6 @@
         "比赛权重": "25.00",
         "赛事主办": "Metro Olografix (https://ctftime.org/team/268425)",
         "比赛ID": "1075",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DASCTF 2024 Summer Challenge",
-        "比赛时间": "2024-07-20 10:00:00 - 2024-07-20 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2429.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://buuoj.cn/match/matches/207",
-        "比赛标志": "https://ctftime.org/media/events/Dingtalk_20240709141420.jpg",
-        "比赛权重": "20.00",
-        "赛事主办": "DASCTF (https://ctftime.org/team/303691)",
-        "比赛ID": "1133",
         "比赛状态": "past"
     }
 ]

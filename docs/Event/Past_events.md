@@ -77,6 +77,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Pacific Hackers Conference 2024](https://www.phack.org/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://www.phack.org/)  
+    **比赛名称** : [Pacific Hackers Conference 2024](https://www.phack.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-03 01:00:00 - 2024-11-03 09:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Pacific Hackers Association (https://ctftime.org/team/304096)  
+    **添加日历** : https://ctftime.org/event/2453.ics  
+    
 ??? Quote "[Equinor CTF 2024](https://ctf.equinor.com/)"  
     [![](https://ctftime.org/media/events/ept_1.png){ width="200" align=left }](https://ctf.equinor.com/)  
     **比赛名称** : [Equinor CTF 2024](https://ctf.equinor.com/)  
@@ -967,13 +976,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
     **添加日历** : https://ctftime.org/event/2293.ics  
-    
-??? Quote "[DASCTF 2024 Summer Challenge](https://buuoj.cn/match/matches/207)"  
-    [![](https://ctftime.org/media/events/Dingtalk_20240709141420.jpg){ width="200" align=left }](https://buuoj.cn/match/matches/207)  
-    **比赛名称** : [DASCTF 2024 Summer Challenge](https://buuoj.cn/match/matches/207)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-07-20 10:00:00 - 2024-07-20 18:00:00 UTC+8  
-    **比赛权重** : 20.00  
-    **赛事主办** : DASCTF (https://ctftime.org/team/303691)  
-    **添加日历** : https://ctftime.org/event/2429.ics  
     

@@ -54,12 +54,3 @@ comments: true
     **赛事主办** : Hackers N' Hops (https://ctftime.org/team/119910)  
     **添加日历** : https://ctftime.org/event/2550.ics  
     
-??? Quote "[Pacific Hackers Conference 2024](https://www.phack.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://www.phack.org/)  
-    **比赛名称** : [Pacific Hackers Conference 2024](https://www.phack.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-03 01:00:00 - 2024-11-03 09:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Pacific Hackers Association (https://ctftime.org/team/304096)  
-    **添加日历** : https://ctftime.org/event/2453.ics  
-    
