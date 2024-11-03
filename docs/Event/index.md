@@ -744,15 +744,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
                 
-            ??? Quote "[Hack The Vote 2024](https://hackthe.vote/)"  
-                [![](https://ctftime.org/media/events/image_center.png){ width="200" align=left }](https://hackthe.vote/)  
-                **比赛名称** : [Hack The Vote 2024](https://hackthe.vote/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-02 07:00:00 - 2024-11-04 07:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : RPISEC (https://ctftime.org/team/572)  
-                **添加日历** : https://ctftime.org/event/2498.ics  
-                
             ??? Quote "[USC CTF Fall 2024](https://usc.ctfd.io/)"  
                 [![](https://ctftime.org/media/events/USC_CTF_Logo_Handdrawn.png){ width="200" align=left }](https://usc.ctfd.io/)  
                 **比赛名称** : [USC CTF Fall 2024](https://usc.ctfd.io/)  
@@ -902,6 +893,15 @@ hide:
                 **比赛权重** : 24.23  
                 **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
                 **添加日历** : https://ctftime.org/event/2535.ics  
+                
+            ??? Quote "[Hack The Vote 2024](https://hackthe.vote/)"  
+                [![](https://ctftime.org/media/events/image_center.png){ width="200" align=left }](https://hackthe.vote/)  
+                **比赛名称** : [Hack The Vote 2024](https://hackthe.vote/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-02 07:00:00 - 2024-11-04 07:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : RPISEC (https://ctftime.org/team/572)  
+                **添加日历** : https://ctftime.org/event/2498.ics  
                 
             ??? Quote "[BUET CTF 2024](http://ctf.buetcsefest2024.com/)"  
                 [![](https://ctftime.org/media/events/BUET_CTF_2024.png){ width="200" align=left }](http://ctf.buetcsefest2024.com/)  
@@ -1748,15 +1748,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Aptos (https://ctftime.org/team/307766)  
                 **添加日历** : https://ctftime.org/event/2433.ics  
-                
-            ??? Quote "[BDSec CTF 2024](https://bdsec-ctf.com/)"  
-                [![](https://ctftime.org/media/events/brand-logo_1.png){ width="200" align=left }](https://bdsec-ctf.com/)  
-                **比赛名称** : [BDSec CTF 2024](https://bdsec-ctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-07-20 23:00:00 - 2024-07-21 23:00:00 UTC+8  
-                **比赛权重** : 16.00  
-                **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
-                **添加日历** : https://ctftime.org/event/2421.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

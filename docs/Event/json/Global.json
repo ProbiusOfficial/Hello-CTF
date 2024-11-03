@@ -600,18 +600,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Hack The Vote 2024",
-        "比赛时间": "2024-11-02 07:00:00 - 2024-11-04 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2498.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hackthe.vote/",
-        "比赛标志": "https://ctftime.org/media/events/image_center.png",
-        "比赛权重": "0",
-        "赛事主办": "RPISEC (https://ctftime.org/team/572)",
-        "比赛ID": "157",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "USC CTF Fall 2024",
         "比赛时间": "2024-11-02 11:00:00 - 2024-11-04 12:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2543.ics",
@@ -693,6 +681,18 @@
         "比赛权重": "24.23",
         "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
         "比赛ID": "164",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Hack The Vote 2024",
+        "比赛时间": "2024-11-02 07:00:00 - 2024-11-04 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2498.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://hackthe.vote/",
+        "比赛标志": "https://ctftime.org/media/events/image_center.png",
+        "比赛权重": "0",
+        "赛事主办": "RPISEC (https://ctftime.org/team/572)",
+        "比赛ID": "157",
         "比赛状态": "past"
     },
     {
@@ -1821,18 +1821,6 @@
         "比赛权重": "0",
         "赛事主办": "Aptos (https://ctftime.org/team/307766)",
         "比赛ID": "1146",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BDSec CTF 2024",
-        "比赛时间": "2024-07-20 23:00:00 - 2024-07-21 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2421.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://bdsec-ctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/brand-logo_1.png",
-        "比赛权重": "16.00",
-        "赛事主办": "Knight Squad (https://ctftime.org/team/141739)",
-        "比赛ID": "811",
         "比赛状态": "past"
     }
 ]
