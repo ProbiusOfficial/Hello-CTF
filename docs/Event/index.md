@@ -780,15 +780,6 @@ hide:
                 **赛事主办** : Hackers N' Hops (https://ctftime.org/team/119910)  
                 **添加日历** : https://ctftime.org/event/2550.ics  
                 
-            ??? Quote "[AlpacaHack Round 6 (Pwn)](https://alpacahack.com/ctfs/round-6)"  
-                [![](https://ctftime.org/media/events/ctftime_7.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-6)  
-                **比赛名称** : [AlpacaHack Round 6 (Pwn)](https://alpacahack.com/ctfs/round-6)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-03 11:00:00 - 2024-11-03 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
-                **添加日历** : https://ctftime.org/event/2501.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[BRICS+ CTF Quals 2024](https://brics-ctf.com/)"  
@@ -862,6 +853,15 @@ hide:
                 **其他说明** : QQ 一群：536115792  二群：721693440  
                 
         === "国外赛事"
+            ??? Quote "[AlpacaHack Round 6 (Pwn)](https://alpacahack.com/ctfs/round-6)"  
+                [![](https://ctftime.org/media/events/ctftime_7.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-6)  
+                **比赛名称** : [AlpacaHack Round 6 (Pwn)](https://alpacahack.com/ctfs/round-6)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-03 11:00:00 - 2024-11-03 17:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
+                **添加日历** : https://ctftime.org/event/2501.ics  
+                
             ??? Quote "[Pacific Hackers Conference 2024](https://www.phack.org/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://www.phack.org/)  
                 **比赛名称** : [Pacific Hackers Conference 2024](https://www.phack.org/)  
@@ -1752,15 +1752,6 @@ hide:
                 **比赛权重** : 98.89  
                 **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
                 **添加日历** : https://ctftime.org/event/2412.ics  
-                
-            ??? Quote "[MOCA CTF - Quals](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)  
-                **比赛名称** : [MOCA CTF - Quals](https://play.pwnx.io/#/event/fb765f39-bc6f-46b9-a7bc-823bc261323a)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-07-20 17:00:00 - 2024-07-21 17:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
-                **添加日历** : https://ctftime.org/event/2293.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
