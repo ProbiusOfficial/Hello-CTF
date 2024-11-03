@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "AlpacaHack Round 6 (Pwn)",
-        "比赛时间": "2024-11-03 11:00:00 - 2024-11-03 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2501.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://alpacahack.com/ctfs/round-6",
-        "比赛标志": "https://ctftime.org/media/events/ctftime_7.png",
-        "比赛权重": "0",
-        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
-        "比赛ID": "1163",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "RedShift.Eclipse 2 Quals",
         "比赛时间": "2024-11-03 20:00:00 - 2024-11-04 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2541.ics",
@@ -657,6 +645,18 @@
         "比赛权重": "0",
         "赛事主办": "Hackers N' Hops (https://ctftime.org/team/119910)",
         "比赛ID": "1191",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "AlpacaHack Round 6 (Pwn)",
+        "比赛时间": "2024-11-03 11:00:00 - 2024-11-03 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2501.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://alpacahack.com/ctfs/round-6",
+        "比赛标志": "https://ctftime.org/media/events/ctftime_7.png",
+        "比赛权重": "0",
+        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
+        "比赛ID": "1163",
         "比赛状态": "nowrunning"
     },
     {
