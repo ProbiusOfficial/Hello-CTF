@@ -290,15 +290,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[RedShift.Eclipse 2 Quals](https://quals.o1d-bu7-go1d.ru/)"  
-                [![](https://ctftime.org/media/events/IMG_5703.JPG){ width="200" align=left }](https://quals.o1d-bu7-go1d.ru/)  
-                **比赛名称** : [RedShift.Eclipse 2 Quals](https://quals.o1d-bu7-go1d.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-03 20:00:00 - 2024-11-04 20:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
-                **添加日历** : https://ctftime.org/event/2541.ics  
-                
             ??? Quote "[BlackAlps CTF 2024](https://www.blackalps.ch/ba-24/ctf.php)"  
                 [![](https://ctftime.org/media/events/blackalps-v5-logo-black_2.png){ width="200" align=left }](https://www.blackalps.ch/ba-24/ctf.php)  
                 **比赛名称** : [BlackAlps CTF 2024](https://www.blackalps.ch/ba-24/ctf.php)  
@@ -780,6 +771,15 @@ hide:
                 **赛事主办** : Hackers N' Hops (https://ctftime.org/team/119910)  
                 **添加日历** : https://ctftime.org/event/2550.ics  
                 
+            ??? Quote "[RedShift.Eclipse 2 Quals](https://quals.o1d-bu7-go1d.ru/)"  
+                [![](https://ctftime.org/media/events/IMG_5703.JPG){ width="200" align=left }](https://quals.o1d-bu7-go1d.ru/)  
+                **比赛名称** : [RedShift.Eclipse 2 Quals](https://quals.o1d-bu7-go1d.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-03 20:00:00 - 2024-11-04 20:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
+                **添加日历** : https://ctftime.org/event/2541.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[BRICS+ CTF Quals 2024](https://brics-ctf.com/)"  
@@ -851,6 +851,20 @@ hide:
                 **报名时间** : 2024年09月26日 00:00 - 2024年10月31日 10:00  
                 **比赛时间** : 2024年10月02日 10:00 - 2024年10月31日 10:00  
                 **其他说明** : QQ 一群：536115792  二群：721693440  
+                
+            ??? Quote "[0xGame 2024](https://0xgame.exp10it.cn/)"  
+                **比赛名称** : [0xGame 2024](https://0xgame.exp10it.cn/)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年09月17日 10:30 - 2024年11月03日 21:00  
+                **比赛时间** : 2024年10月06日 09:00 - 2024年11月03日 21:00  
+                **其他说明** : QQ群: 746958713  
+                
+            ??? Quote "[NewStar CTF 2024](https://ns.openctf.net)"  
+                **比赛名称** : [NewStar CTF 2024](https://ns.openctf.net)  
+                **比赛类型** : 个人赛  
+                **报名时间** : 2024年09月13日 00:00 - 2024年11月03日 21:00  
+                **比赛时间** : 2024年09月30日 09:00 - 2024年11月03日 21:00  
+                **其他说明** : 赛事QQ群：1169651901  
                 
         === "国外赛事"
             ??? Quote "[AlpacaHack Round 6 (Pwn)](https://alpacahack.com/ctfs/round-6)"  

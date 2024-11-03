@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[RedShift.Eclipse 2 Quals](https://quals.o1d-bu7-go1d.ru/)"  
-            [![](https://ctftime.org/media/events/IMG_5703.JPG){ width="200" align=left }](https://quals.o1d-bu7-go1d.ru/)  
-            **比赛名称** : [RedShift.Eclipse 2 Quals](https://quals.o1d-bu7-go1d.ru/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-11-03 20:00:00 - 2024-11-04 20:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
-            **添加日历** : https://ctftime.org/event/2541.ics  
-            
         ??? Quote "[BlackAlps CTF 2024](https://www.blackalps.ch/ba-24/ctf.php)"  
             [![](https://ctftime.org/media/events/blackalps-v5-logo-black_2.png){ width="200" align=left }](https://www.blackalps.ch/ba-24/ctf.php)  
             **比赛名称** : [BlackAlps CTF 2024](https://www.blackalps.ch/ba-24/ctf.php)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 25.00  
             **赛事主办** : CERTUNLP (https://ctftime.org/team/89294)  
             **添加日历** : https://ctftime.org/event/2537.ics  
+            
+        ??? Quote "[BlueHens CTF 2024](https://bluehens.ctfd.io/)"  
+            [![](https://ctftime.org/media/events/UDCTF-logo_2.png){ width="200" align=left }](https://bluehens.ctfd.io/)  
+            **比赛名称** : [BlueHens CTF 2024](https://bluehens.ctfd.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-11-09 01:00:00 - 2024-11-10 13:00:00 UTC+8  
+            **比赛权重** : 34.05  
+            **赛事主办** : Blue Hens (https://ctftime.org/team/64660)  
+            **添加日历** : https://ctftime.org/event/2512.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
