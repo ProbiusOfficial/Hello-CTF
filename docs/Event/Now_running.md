@@ -27,15 +27,6 @@ comments: true
     **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
     **添加日历** : https://ctftime.org/event/2121.ics  
     
-??? Quote "[USC CTF Fall 2024](https://usc.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/USC_CTF_Logo_Handdrawn.png){ width="200" align=left }](https://usc.ctfd.io/)  
-    **比赛名称** : [USC CTF Fall 2024](https://usc.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-02 11:00:00 - 2024-11-04 12:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : 7r0j4npwn135 (https://ctftime.org/team/214221)  
-    **添加日历** : https://ctftime.org/event/2543.ics  
-    
 ??? Quote "[RedShift.Eclipse 2 Quals](https://quals.o1d-bu7-go1d.ru/)"  
     [![](https://ctftime.org/media/events/IMG_5703.JPG){ width="200" align=left }](https://quals.o1d-bu7-go1d.ru/)  
     **比赛名称** : [RedShift.Eclipse 2 Quals](https://quals.o1d-bu7-go1d.ru/)  
