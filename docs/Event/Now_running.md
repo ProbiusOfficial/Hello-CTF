@@ -27,12 +27,3 @@ comments: true
     **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
     **添加日历** : https://ctftime.org/event/2121.ics  
     
-??? Quote "[RedShift.Eclipse 2 Quals](https://quals.o1d-bu7-go1d.ru/)"  
-    [![](https://ctftime.org/media/events/IMG_5703.JPG){ width="200" align=left }](https://quals.o1d-bu7-go1d.ru/)  
-    **比赛名称** : [RedShift.Eclipse 2 Quals](https://quals.o1d-bu7-go1d.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-03 20:00:00 - 2024-11-04 20:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
-    **添加日历** : https://ctftime.org/event/2541.ics  
-    
