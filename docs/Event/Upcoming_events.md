@@ -18,9 +18,9 @@ comments: true
     **赛事主办** : BlackAlps (https://ctftime.org/team/89021)  
     **添加日历** : https://ctftime.org/event/2504.ics  
     
-??? Quote "[HKCERT CTF 2024](https://ctf.hkcert.org/)"  
+??? Quote "[HKCERT CTF 2024 (Qualifying Round)](https://ctf.hkcert.org/)"  
     [![](https://ctftime.org/media/events/Screenshot_2024-08-13_100427.png){ width="200" align=left }](https://ctf.hkcert.org/)  
-    **比赛名称** : [HKCERT CTF 2024](https://ctf.hkcert.org/)  
+    **比赛名称** : [HKCERT CTF 2024 (Qualifying Round)](https://ctf.hkcert.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-08 18:00:00 - 2024-11-10 18:00:00 UTC+8  
     **比赛权重** : 61.22  
