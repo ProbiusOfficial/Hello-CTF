@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[BlackAlps CTF 2024](https://www.blackalps.ch/ba-24/ctf.php)"  
-            [![](https://ctftime.org/media/events/blackalps-v5-logo-black_2.png){ width="200" align=left }](https://www.blackalps.ch/ba-24/ctf.php)  
-            **比赛名称** : [BlackAlps CTF 2024](https://www.blackalps.ch/ba-24/ctf.php)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-11-08 03:15:00 - 2024-11-08 07:30:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : BlackAlps (https://ctftime.org/team/89021)  
-            **添加日历** : https://ctftime.org/event/2504.ics  
-            
         ??? Quote "[HKCERT CTF 2024 (Qualifying Round)](https://platform.ctf.hkcert.org/)"  
             [![](https://ctftime.org/media/events/Screenshot_2024-08-13_100427.png){ width="200" align=left }](https://platform.ctf.hkcert.org/)  
             **比赛名称** : [HKCERT CTF 2024 (Qualifying Round)](https://platform.ctf.hkcert.org/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 34.05  
             **赛事主办** : Blue Hens (https://ctftime.org/team/64660)  
             **添加日历** : https://ctftime.org/event/2512.ics  
+            
+        ??? Quote "[4T$ CTF](https://ctf.4ts.fr/)"  
+            [![](https://ctftime.org/media/events/53b0900ddae2f59936bcc4eafc1458cf.jpg){ width="200" align=left }](https://ctf.4ts.fr/)  
+            **比赛名称** : [4T$ CTF](https://ctf.4ts.fr/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-11-09 02:00:00 - 2024-11-11 02:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : 4T$ (https://ctftime.org/team/302295)  
+            **添加日历** : https://ctftime.org/event/2545.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
