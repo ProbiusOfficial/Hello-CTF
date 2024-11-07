@@ -16,7 +16,7 @@
         "比赛时间": "2024-11-08 18:00:00 - 2024-11-10 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2455.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hkcert.org/",
+        "比赛链接": "https://platform.ctf.hkcert.org/",
         "比赛标志": "https://ctftime.org/media/events/Screenshot_2024-08-13_100427.png",
         "比赛权重": "61.22",
         "赛事主办": "HKCERT (https://ctftime.org/team/134746)",
@@ -702,7 +702,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "http://ctf.buetcsefest2024.com/",
         "比赛标志": "https://ctftime.org/media/events/BUET_CTF_2024.png",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "BUETSec (https://ctftime.org/team/357430)",
         "比赛ID": "1184",
         "比赛状态": "past"

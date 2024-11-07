@@ -168,7 +168,7 @@ comments: true
     **比赛名称** : [BUET CTF 2024](http://ctf.buetcsefest2024.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-10-31 11:00:00 - 2024-10-31 17:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : BUETSec (https://ctftime.org/team/357430)  
     **添加日历** : https://ctftime.org/event/2525.ics  
     

@@ -299,9 +299,9 @@ hide:
                 **赛事主办** : BlackAlps (https://ctftime.org/team/89021)  
                 **添加日历** : https://ctftime.org/event/2504.ics  
                 
-            ??? Quote "[HKCERT CTF 2024 (Qualifying Round)](https://ctf.hkcert.org/)"  
-                [![](https://ctftime.org/media/events/Screenshot_2024-08-13_100427.png){ width="200" align=left }](https://ctf.hkcert.org/)  
-                **比赛名称** : [HKCERT CTF 2024 (Qualifying Round)](https://ctf.hkcert.org/)  
+            ??? Quote "[HKCERT CTF 2024 (Qualifying Round)](https://platform.ctf.hkcert.org/)"  
+                [![](https://ctftime.org/media/events/Screenshot_2024-08-13_100427.png){ width="200" align=left }](https://platform.ctf.hkcert.org/)  
+                **比赛名称** : [HKCERT CTF 2024 (Qualifying Round)](https://platform.ctf.hkcert.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-11-08 18:00:00 - 2024-11-10 18:00:00 UTC+8  
                 **比赛权重** : 61.22  
@@ -908,7 +908,7 @@ hide:
                 **比赛名称** : [BUET CTF 2024](http://ctf.buetcsefest2024.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-10-31 11:00:00 - 2024-10-31 17:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 0.00  
                 **赛事主办** : BUETSec (https://ctftime.org/team/357430)  
                 **添加日历** : https://ctftime.org/event/2525.ics  
                 
