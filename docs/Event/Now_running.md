@@ -27,3 +27,12 @@ comments: true
     **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
     **添加日历** : https://ctftime.org/event/2121.ics  
     
+??? Quote "[BlackAlps CTF 2024](https://www.blackalps.ch/ba-24/ctf.php)"  
+    [![](https://ctftime.org/media/events/blackalps-v5-logo-black_2.png){ width="200" align=left }](https://www.blackalps.ch/ba-24/ctf.php)  
+    **比赛名称** : [BlackAlps CTF 2024](https://www.blackalps.ch/ba-24/ctf.php)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-08 03:15:00 - 2024-11-08 07:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : BlackAlps (https://ctftime.org/team/89021)  
+    **添加日历** : https://ctftime.org/event/2504.ics  
+    
