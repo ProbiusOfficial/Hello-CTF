@@ -290,15 +290,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[BlueHens CTF 2024](https://bluehens.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/UDCTF-logo_2.png){ width="200" align=left }](https://bluehens.ctfd.io/)  
-                **比赛名称** : [BlueHens CTF 2024](https://bluehens.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-09 01:00:00 - 2024-11-10 13:00:00 UTC+8  
-                **比赛权重** : 34.05  
-                **赛事主办** : Blue Hens (https://ctftime.org/team/64660)  
-                **添加日历** : https://ctftime.org/event/2512.ics  
-                
             ??? Quote "[4T$ CTF](https://ctf.4ts.fr/)"  
                 [![](https://ctftime.org/media/events/53b0900ddae2f59936bcc4eafc1458cf.jpg){ width="200" align=left }](https://ctf.4ts.fr/)  
                 **比赛名称** : [4T$ CTF](https://ctf.4ts.fr/)  
@@ -752,6 +743,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : CRUx BPHC (https://ctftime.org/team/270645)  
                 **添加日历** : https://ctftime.org/event/2559.ics  
+                
+            ??? Quote "[BlueHens CTF 2024](https://bluehens.ctfd.io/)"  
+                [![](https://ctftime.org/media/events/UDCTF-logo_2.png){ width="200" align=left }](https://bluehens.ctfd.io/)  
+                **比赛名称** : [BlueHens CTF 2024](https://bluehens.ctfd.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-09 01:00:00 - 2024-11-10 13:00:00 UTC+8  
+                **比赛权重** : 34.05  
+                **赛事主办** : Blue Hens (https://ctftime.org/team/64660)  
+                **添加日历** : https://ctftime.org/event/2512.ics  
                 
     === "*已经结束*"
         === "国内赛事"

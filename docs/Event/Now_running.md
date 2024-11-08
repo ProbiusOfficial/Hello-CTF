@@ -54,3 +54,12 @@ comments: true
     **赛事主办** : CRUx BPHC (https://ctftime.org/team/270645)  
     **添加日历** : https://ctftime.org/event/2559.ics  
     
+??? Quote "[BlueHens CTF 2024](https://bluehens.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/UDCTF-logo_2.png){ width="200" align=left }](https://bluehens.ctfd.io/)  
+    **比赛名称** : [BlueHens CTF 2024](https://bluehens.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-09 01:00:00 - 2024-11-10 13:00:00 UTC+8  
+    **比赛权重** : 34.05  
+    **赛事主办** : Blue Hens (https://ctftime.org/team/64660)  
+    **添加日历** : https://ctftime.org/event/2512.ics  
+    
