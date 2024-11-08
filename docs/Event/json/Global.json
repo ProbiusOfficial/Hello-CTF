@@ -24,6 +24,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "cruXipher 2024 - ATMoS '24, BITS Hyderabad",
+        "比赛时间": "2024-11-08 20:30:00 - 2024-11-10 20:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2559.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cruxipher.crux-bphc.com/",
+        "比赛标志": "https://ctftime.org/media/events/b93b251d190e41c5976063cdc151ac47.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "CRUx BPHC (https://ctftime.org/team/270645)",
+        "比赛ID": "1004",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "BlueHens CTF 2024",
         "比赛时间": "2024-11-09 01:00:00 - 2024-11-10 13:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2512.ics",
@@ -285,6 +297,18 @@
         "比赛权重": "24.67",
         "赛事主办": "WreckTheLine (https://ctftime.org/team/57908)",
         "比赛ID": "401",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "CYBERGON CTF_2024",
+        "比赛时间": "2024-11-30 20:00:00 - 2024-12-02 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2560.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cybergon.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/CYBERGON_Logo.png",
+        "比赛权重": "23.08",
+        "赛事主办": "My4nM4r (https://ctftime.org/team/145625)",
+        "比赛ID": "974",
         "比赛状态": "oncoming"
     },
     {
@@ -705,18 +729,6 @@
         "比赛权重": "0.00",
         "赛事主办": "BUETSec (https://ctftime.org/team/357430)",
         "比赛ID": "1184",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CYBERGON CTF_2024",
-        "比赛时间": "2024-10-30 01:00:00 - 2024-11-02 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2560.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cybergon.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/CYBERGON_Logo.png",
-        "比赛权重": "23.08",
-        "赛事主办": "My4nM4r (https://ctftime.org/team/145625)",
-        "比赛ID": "974",
         "比赛状态": "past"
     },
     {
@@ -1785,6 +1797,18 @@
         "比赛权重": "41.68",
         "赛事主办": "The Few Chosen (https://ctftime.org/team/140885)",
         "比赛ID": "696",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "SCAN 2024 Digital Asset Tracing Challenge",
+        "比赛时间": "2024-07-30 08:00:00 - 2024-07-31 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2442.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://scanctf2024.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/Logo_blue2x.png",
+        "比赛权重": "0.00",
+        "赛事主办": "D Asset Inc. (https://ctftime.org/team/310109)",
+        "比赛ID": "1148",
         "比赛状态": "past"
     }
 ]

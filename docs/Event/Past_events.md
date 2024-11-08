@@ -174,15 +174,6 @@ comments: true
     **赛事主办** : BUETSec (https://ctftime.org/team/357430)  
     **添加日历** : https://ctftime.org/event/2525.ics  
     
-??? Quote "[CYBERGON CTF_2024](https://cybergon.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/CYBERGON_Logo.png){ width="200" align=left }](https://cybergon.ctfd.io/)  
-    **比赛名称** : [CYBERGON CTF_2024](https://cybergon.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-30 01:00:00 - 2024-11-02 01:00:00 UTC+8  
-    **比赛权重** : 23.08  
-    **赛事主办** : My4nM4r (https://ctftime.org/team/145625)  
-    **添加日历** : https://ctftime.org/event/2560.ics  
-    
 ??? Quote "[The Cyber Jawara International 2024](https://international.cyberjawara.pro/)"  
     [![](https://ctftime.org/media/events/73b32f71c82304b9e3df7fe9dedada59-transformed.png){ width="200" align=left }](https://international.cyberjawara.pro/)  
     **比赛名称** : [The Cyber Jawara International 2024](https://international.cyberjawara.pro/)  
@@ -983,4 +974,13 @@ comments: true
     **比赛权重** : 41.68  
     **赛事主办** : The Few Chosen (https://ctftime.org/team/140885)  
     **添加日历** : https://ctftime.org/event/2423.ics  
+    
+??? Quote "[SCAN 2024 Digital Asset Tracing Challenge](https://scanctf2024.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/Logo_blue2x.png){ width="200" align=left }](https://scanctf2024.ctfd.io/)  
+    **比赛名称** : [SCAN 2024 Digital Asset Tracing Challenge](https://scanctf2024.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-07-30 08:00:00 - 2024-07-31 08:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : D Asset Inc. (https://ctftime.org/team/310109)  
+    **添加日历** : https://ctftime.org/event/2442.ics  
     

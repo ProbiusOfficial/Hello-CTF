@@ -308,6 +308,15 @@ hide:
                 **赛事主办** : CERTUNLP (https://ctftime.org/team/89294)  
                 **添加日历** : https://ctftime.org/event/2537.ics  
                 
+            ??? Quote "[cruXipher 2024 - ATMoS '24, BITS Hyderabad](https://cruxipher.crux-bphc.com/)"  
+                [![](https://ctftime.org/media/events/b93b251d190e41c5976063cdc151ac47.jpg){ width="200" align=left }](https://cruxipher.crux-bphc.com/)  
+                **比赛名称** : [cruXipher 2024 - ATMoS '24, BITS Hyderabad](https://cruxipher.crux-bphc.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-08 20:30:00 - 2024-11-10 20:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : CRUx BPHC (https://ctftime.org/team/270645)  
+                **添加日历** : https://ctftime.org/event/2559.ics  
+                
             ??? Quote "[BlueHens CTF 2024](https://bluehens.ctfd.io/)"  
                 [![](https://ctftime.org/media/events/UDCTF-logo_2.png){ width="200" align=left }](https://bluehens.ctfd.io/)  
                 **比赛名称** : [BlueHens CTF 2024](https://bluehens.ctfd.io/)  
@@ -505,6 +514,15 @@ hide:
                 **比赛权重** : 24.67  
                 **赛事主办** : WreckTheLine (https://ctftime.org/team/57908)  
                 **添加日历** : https://ctftime.org/event/2452.ics  
+                
+            ??? Quote "[CYBERGON CTF_2024](https://cybergon.ctfd.io/)"  
+                [![](https://ctftime.org/media/events/CYBERGON_Logo.png){ width="200" align=left }](https://cybergon.ctfd.io/)  
+                **比赛名称** : [CYBERGON CTF_2024](https://cybergon.ctfd.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-30 20:00:00 - 2024-12-02 20:00:00 UTC+8  
+                **比赛权重** : 23.08  
+                **赛事主办** : My4nM4r (https://ctftime.org/team/145625)  
+                **添加日历** : https://ctftime.org/event/2560.ics  
                 
             ??? Quote "[saarCTF 2024](https://ctf.saarland/)"  
                 [![](https://ctftime.org/media/events/e21b4ef017572441617115eaa6bd9823.jpg){ width="200" align=left }](https://ctf.saarland/)  
@@ -904,15 +922,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : BUETSec (https://ctftime.org/team/357430)  
                 **添加日历** : https://ctftime.org/event/2525.ics  
-                
-            ??? Quote "[CYBERGON CTF_2024](https://cybergon.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/CYBERGON_Logo.png){ width="200" align=left }](https://cybergon.ctfd.io/)  
-                **比赛名称** : [CYBERGON CTF_2024](https://cybergon.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-30 01:00:00 - 2024-11-02 01:00:00 UTC+8  
-                **比赛权重** : 23.08  
-                **赛事主办** : My4nM4r (https://ctftime.org/team/145625)  
-                **添加日历** : https://ctftime.org/event/2560.ics  
                 
             ??? Quote "[The Cyber Jawara International 2024](https://international.cyberjawara.pro/)"  
                 [![](https://ctftime.org/media/events/73b32f71c82304b9e3df7fe9dedada59-transformed.png){ width="200" align=left }](https://international.cyberjawara.pro/)  
@@ -1714,6 +1723,15 @@ hide:
                 **比赛权重** : 41.68  
                 **赛事主办** : The Few Chosen (https://ctftime.org/team/140885)  
                 **添加日历** : https://ctftime.org/event/2423.ics  
+                
+            ??? Quote "[SCAN 2024 Digital Asset Tracing Challenge](https://scanctf2024.ctfd.io/)"  
+                [![](https://ctftime.org/media/events/Logo_blue2x.png){ width="200" align=left }](https://scanctf2024.ctfd.io/)  
+                **比赛名称** : [SCAN 2024 Digital Asset Tracing Challenge](https://scanctf2024.ctfd.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-07-30 08:00:00 - 2024-07-31 08:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : D Asset Inc. (https://ctftime.org/team/310109)  
+                **添加日历** : https://ctftime.org/event/2442.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
