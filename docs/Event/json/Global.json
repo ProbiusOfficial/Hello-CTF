@@ -708,6 +708,18 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "CYBERGON CTF_2024",
+        "比赛时间": "2024-10-30 01:00:00 - 2024-11-02 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2560.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cybergon.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/CYBERGON_Logo.png",
+        "比赛权重": "23.08",
+        "赛事主办": "My4nM4r (https://ctftime.org/team/145625)",
+        "比赛ID": "974",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "The Cyber Jawara International 2024",
         "比赛时间": "2024-10-27 10:00:00 - 2024-10-28 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2552.ics",
@@ -1773,18 +1785,6 @@
         "比赛权重": "41.68",
         "赛事主办": "The Few Chosen (https://ctftime.org/team/140885)",
         "比赛ID": "696",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SCAN 2024 Digital Asset Tracing Challenge",
-        "比赛时间": "2024-07-30 08:00:00 - 2024-07-31 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2442.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://scanctf2024.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/Logo_blue2x.png",
-        "比赛权重": "0.00",
-        "赛事主办": "D Asset Inc. (https://ctftime.org/team/310109)",
-        "比赛ID": "1148",
         "比赛状态": "past"
     }
 ]
