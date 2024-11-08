@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[cruXipher 2024 - ATMoS '24, BITS Hyderabad](https://cruxipher.crux-bphc.com/)"  
-            [![](https://ctftime.org/media/events/b93b251d190e41c5976063cdc151ac47.jpg){ width="200" align=left }](https://cruxipher.crux-bphc.com/)  
-            **比赛名称** : [cruXipher 2024 - ATMoS '24, BITS Hyderabad](https://cruxipher.crux-bphc.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-11-08 20:30:00 - 2024-11-10 20:30:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : CRUx BPHC (https://ctftime.org/team/270645)  
-            **添加日历** : https://ctftime.org/event/2559.ics  
-            
         ??? Quote "[BlueHens CTF 2024](https://bluehens.ctfd.io/)"  
             [![](https://ctftime.org/media/events/UDCTF-logo_2.png){ width="200" align=left }](https://bluehens.ctfd.io/)  
             **比赛名称** : [BlueHens CTF 2024](https://bluehens.ctfd.io/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : HITCON (https://ctftime.org/team/8299)  
             **添加日历** : https://ctftime.org/event/2523.ics  
+            
+        ??? Quote "[M*CTF 2024 Quals](https://mctf.mtuci.ru/)"  
+            [![](https://ctftime.org/media/events/6sKaJXoc4I4.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
+            **比赛名称** : [M*CTF 2024 Quals](https://mctf.mtuci.ru/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-11-09 17:00:00 - 2024-11-10 17:00:00 UTC+8  
+            **比赛权重** : 33.59  
+            **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
+            **添加日历** : https://ctftime.org/event/2534.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
