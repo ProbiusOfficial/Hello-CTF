@@ -597,7 +597,7 @@
         "比赛权重": "0.00",
         "赛事主办": "BlackAlps (https://ctftime.org/team/89021)",
         "比赛ID": "375",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "RedShift.Eclipse 2 Quals",
@@ -1098,7 +1098,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.1nf1n1ty.team/",
         "比赛标志": "https://ctftime.org/media/events/ironCTF.png",
-        "比赛权重": "24.68",
+        "比赛权重": "24.49",
         "赛事主办": "1nf1n1ty (https://ctftime.org/team/151859)",
         "比赛ID": "1167",
         "比赛状态": "past"
@@ -1785,18 +1785,6 @@
         "比赛权重": "0.00",
         "赛事主办": "D Asset Inc. (https://ctftime.org/team/310109)",
         "比赛ID": "1148",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "corCTF 2024",
-        "比赛时间": "2024-07-27 08:00:00 - 2024-07-29 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2282.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.cor.team/",
-        "比赛标志": "https://ctftime.org/media/events/corctflogo_3.png",
-        "比赛权重": "55.00",
-        "赛事主办": "Crusaders of Rust (https://ctftime.org/team/132628)",
-        "比赛ID": "627",
         "比赛状态": "past"
     }
 ]

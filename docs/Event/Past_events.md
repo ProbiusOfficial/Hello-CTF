@@ -33,13 +33,6 @@ comments: true
     **比赛时间** : 2024年09月13日 00:00 - 2024年09月13日 23:59  
     **其他说明** : QQ群：676547374 或 566180593  
     
-??? Quote "WMCTF 2024"  
-    **比赛名称** : [WMCTF 2024](https://wmctf.wm-team.cn/)  
-    **比赛类型** : 团队赛 | 人数不限  
-    **报名时间** : 2024年08月14日 09:00 - 2024年09月09日 09:00  
-    **比赛时间** : 2024年09月07日 09:00 - 2024年09月09日 09:00  
-    **其他说明** : 有多个联系方式，具体请在赛事网站查看  
-    
 ??? Quote "MoeCTF 2024"  
     **比赛名称** : [MoeCTF 2024](https://ctf.xidian.edu.cn)  
     **比赛类型** : 个人赛  
@@ -91,6 +84,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[BlackAlps CTF 2024](https://www.blackalps.ch/ba-24/ctf.php)"  
+    [![](https://ctftime.org/media/events/blackalps-v5-logo-black_2.png){ width="200" align=left }](https://www.blackalps.ch/ba-24/ctf.php)  
+    **比赛名称** : [BlackAlps CTF 2024](https://www.blackalps.ch/ba-24/ctf.php)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-08 03:15:00 - 2024-11-08 07:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : BlackAlps (https://ctftime.org/team/89021)  
+    **添加日历** : https://ctftime.org/event/2504.ics  
+    
 ??? Quote "[RedShift.Eclipse 2 Quals](https://quals.o1d-bu7-go1d.ru/)"  
     [![](https://ctftime.org/media/events/IMG_5703.JPG){ width="200" align=left }](https://quals.o1d-bu7-go1d.ru/)  
     **比赛名称** : [RedShift.Eclipse 2 Quals](https://quals.o1d-bu7-go1d.ru/)  
@@ -465,7 +467,7 @@ comments: true
     **比赛名称** : [IRON CTF 2024](https://ctf.1nf1n1ty.team/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-10-05 13:30:00 - 2024-10-06 13:30:00 UTC+8  
-    **比赛权重** : 24.68  
+    **比赛权重** : 24.49  
     **赛事主办** : 1nf1n1ty (https://ctftime.org/team/151859)  
     **添加日历** : https://ctftime.org/event/2497.ics  
     
@@ -981,13 +983,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : D Asset Inc. (https://ctftime.org/team/310109)  
     **添加日历** : https://ctftime.org/event/2442.ics  
-    
-??? Quote "[corCTF 2024](https://ctf.cor.team/)"  
-    [![](https://ctftime.org/media/events/corctflogo_3.png){ width="200" align=left }](https://ctf.cor.team/)  
-    **比赛名称** : [corCTF 2024](https://ctf.cor.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-07-27 08:00:00 - 2024-07-29 08:00:00 UTC+8  
-    **比赛权重** : 55.00  
-    **赛事主办** : Crusaders of Rust (https://ctftime.org/team/132628)  
-    **添加日历** : https://ctftime.org/event/2282.ics  
     
