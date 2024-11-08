@@ -73,6 +73,18 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [windows内核（2）——页属性实验](https://xia0ji233.github.io/2024/11/07/WindowsKernel2/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-11-07
+
+    来具体学习一下页属性看前必读本文所述的第 x 位均表示下标从 0 开始的计数制。120000100010001           *例如上面星号所指示的位置表示第 1 位。有效属性可以关注内核函数 MmIsAddressValid 实现原理，取出虚拟机 C:\Windows\System32\ntoskrnl.exe 内核文件，找到该函数，F5可得以下逻辑12345678910111213141...
+    ### [强网杯S8初赛pwn writeup](https://xia0ji233.github.io/2024/11/07/qwb2024_pre/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-11-07
+
+    本次强网杯初赛做出两道pwn题，把详细题解写一下记录。baby_heap附件下载2.35 的版本，IDA打开，堆菜单题，经典增删改查之外，还有两个额外的操作，一个是环境变量，另一个是任意地址写 0x10 字节。del 里面有很明显的UAF漏洞。show 只有一次机会，但是可以同时将 libc 和堆地址一起泄露出来，只需要我们释放两个相同大小的堆块之后，bk_nextsize 和 fd_nextsi...
+    ### [windows内核（1）——分页](https://xia0ji233.github.io/2024/11/07/WindowsKernel1/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-11-07
+
+    今天开始正式学习分页的相关知识分页与物理地址什么是物理地址在学习二进制的时候就有区分过物理地址和虚拟地址这两个概念，其实就是内存条真正的地址，这里不再赘述。而学习保护模式我们知道，实际的线性地址 = 逻辑地址+段寄存器.base，在汇编和C指针层面所使用的地址都是逻辑地址。但是似乎它等同于虚拟地址（线性地址），这是因为通常情况下段寄存器的 base 都为 0。10-10-12分页详解基本结构拿到一...
     ### [x86的保护模式（4）——任务门](https://xia0ji233.github.io/2024/11/04/x86_4/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2024-11-03
 
@@ -141,17 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-07-26
 
     75fe1026383dfaa0a967acb72c258091d824449c325b83a7a7fa894da20e58875ee9377f2f6b70632955e7127ad3d74064c0dd2bf0b57f712c6877d79ef90dc5c212f8b446a26e74ef229c33ebc9489a344fa6f8bc94237c48fec5c935d69abe222fe0...
-    ### [泛微云桥文件上传与JFinal Bypass](https://y4tacker.github.io/2024/07/26/year/2024/7/%E6%B3%9B%E5%BE%AE%E4%BA%91%E6%A1%A5%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8EJFinal-Bypass/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-07-25
-
-    896043c0663a30f9c5e8fa6f209f299d52ca1152753e3bc67b1969495fc4400355332baaf286443412f0083fee1730aec5c9aec0d05d2a2c383b4d4cee1dd6c0d3da7cd408b09d6a39632c443bf9205fd17da13158e2422a06d052cb98b0f09783fe38...
-    ### [泛微EMobile4.0-EMobile6.6 FROM SSRF to RCE](https://y4tacker.github.io/2024/07/25/year/2024/7/EMobile4-0-EMobile6-6-FROM-SSRF-to-RCE/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-07-25
-
-    d689addd663c4fafbe699341f52c070ba95624118db59735eebb4f65e523a94bcaf577129b4857de3a371ac73f86e98abf94d785001bd8f906cd46037ca05e99c46703d1d6f3b935cc7a429aed2d037a94e7dbdf7b591c85a9a23fc8b1646ac88de5e9...
-    ### [某软Report高版本中利用的一些细节](https://y4tacker.github.io/2024/07/23/year/2024/7/%E6%9F%90%E8%BD%AFReport%E9%AB%98%E7%89%88%E6%9C%AC%E4%B8%AD%E5%88%A9%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%86%E8%8A%82/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-07-23
-
-    本文以目前官网的最新版为例，poc估计大家都有了，这里猥琐发育仅以思路分享为主原理浅析从官方公告的细节不难看出，一是让我们删除sqlite驱动，二是限制相关路由的访问，关于路由其实是比较烦人的，这个系统在高版本其实都是基于注解做的配置，所以寻找起来会相对麻烦，通过一番查找我们不难发现在猥琐发育.web.controller.ReportRequestCompatibleService中在代码中不难...
 
 </div>
