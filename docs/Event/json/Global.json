@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Metared Argentina CERTUNLP",
-        "比赛时间": "2024-11-08 19:00:00 - 2024-11-09 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2537.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.cert.unlp.edu.ar/",
-        "比赛标志": "https://ctftime.org/media/events/unlp.png",
-        "比赛权重": "25.00",
-        "赛事主办": "CERTUNLP (https://ctftime.org/team/89294)",
-        "比赛ID": "653",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "cruXipher 2024 - ATMoS '24, BITS Hyderabad",
         "比赛时间": "2024-11-08 20:30:00 - 2024-11-10 20:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2559.ics",
@@ -609,6 +597,18 @@
         "比赛权重": "61.22",
         "赛事主办": "HKCERT (https://ctftime.org/team/134746)",
         "比赛ID": "529",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Metared Argentina CERTUNLP",
+        "比赛时间": "2024-11-08 19:00:00 - 2024-11-09 19:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2537.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.cert.unlp.edu.ar/",
+        "比赛标志": "https://ctftime.org/media/events/unlp.png",
+        "比赛权重": "25.00",
+        "赛事主办": "CERTUNLP (https://ctftime.org/team/89294)",
+        "比赛ID": "653",
         "比赛状态": "nowrunning"
     },
     {

@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Metared Argentina CERTUNLP](https://ctf.cert.unlp.edu.ar/)"  
-            [![](https://ctftime.org/media/events/unlp.png){ width="200" align=left }](https://ctf.cert.unlp.edu.ar/)  
-            **比赛名称** : [Metared Argentina CERTUNLP](https://ctf.cert.unlp.edu.ar/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-11-08 19:00:00 - 2024-11-09 19:00:00 UTC+8  
-            **比赛权重** : 25.00  
-            **赛事主办** : CERTUNLP (https://ctftime.org/team/89294)  
-            **添加日历** : https://ctftime.org/event/2537.ics  
-            
         ??? Quote "[cruXipher 2024 - ATMoS '24, BITS Hyderabad](https://cruxipher.crux-bphc.com/)"  
             [![](https://ctftime.org/media/events/b93b251d190e41c5976063cdc151ac47.jpg){ width="200" align=left }](https://cruxipher.crux-bphc.com/)  
             **比赛名称** : [cruXipher 2024 - ATMoS '24, BITS Hyderabad](https://cruxipher.crux-bphc.com/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : 4T$ (https://ctftime.org/team/302295)  
             **添加日历** : https://ctftime.org/event/2545.ics  
+            
+        ??? Quote "[HITCON CTF 2024 Final](http://ctf.hitcon.org/)"  
+            [![](https://ctftime.org/media/events/eb3c04d49c017eda197bab74939403eb.jpg){ width="200" align=left }](http://ctf.hitcon.org/)  
+            **比赛名称** : [HITCON CTF 2024 Final](http://ctf.hitcon.org/)  
+            **比赛形式** : Attack-Defense  
+            **比赛时间** : 2024-11-09 08:00:00 - 2024-11-10 16:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : HITCON (https://ctftime.org/team/8299)  
+            **添加日历** : https://ctftime.org/event/2523.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
