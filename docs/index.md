@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[4T$ CTF](https://ctf.4ts.fr/)"  
-            [![](https://ctftime.org/media/events/53b0900ddae2f59936bcc4eafc1458cf.jpg){ width="200" align=left }](https://ctf.4ts.fr/)  
-            **比赛名称** : [4T$ CTF](https://ctf.4ts.fr/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-11-09 02:00:00 - 2024-11-11 02:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : 4T$ (https://ctftime.org/team/302295)  
-            **添加日历** : https://ctftime.org/event/2545.ics  
-            
         ??? Quote "[HITCON CTF 2024 Final](http://ctf.hitcon.org/)"  
             [![](https://ctftime.org/media/events/eb3c04d49c017eda197bab74939403eb.jpg){ width="200" align=left }](http://ctf.hitcon.org/)  
             **比赛名称** : [HITCON CTF 2024 Final](http://ctf.hitcon.org/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
             **添加日历** : https://ctftime.org/event/2551.ics  
+            
+        ??? Quote "[N1CTF 2024](https://ctf2024.nu1l.com/)"  
+            [![](https://ctftime.org/media/events/logo2_5_1.png){ width="200" align=left }](https://ctf2024.nu1l.com/)  
+            **比赛名称** : [N1CTF 2024](https://ctf2024.nu1l.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-11-09 20:00:00 - 2024-11-10 20:00:00 UTC+8  
+            **比赛权重** : 89.85  
+            **赛事主办** : Nu1L (https://ctftime.org/team/19208)  
+            **添加日历** : https://ctftime.org/event/2459.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

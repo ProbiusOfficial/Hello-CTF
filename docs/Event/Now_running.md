@@ -63,3 +63,12 @@ comments: true
     **赛事主办** : Blue Hens (https://ctftime.org/team/64660)  
     **添加日历** : https://ctftime.org/event/2512.ics  
     
+??? Quote "[4T$ CTF](https://ctf.4ts.fr/)"  
+    [![](https://ctftime.org/media/events/53b0900ddae2f59936bcc4eafc1458cf.jpg){ width="200" align=left }](https://ctf.4ts.fr/)  
+    **比赛名称** : [4T$ CTF](https://ctf.4ts.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-09 02:00:00 - 2024-11-11 02:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : 4T$ (https://ctftime.org/team/302295)  
+    **添加日历** : https://ctftime.org/event/2545.ics  
+    
