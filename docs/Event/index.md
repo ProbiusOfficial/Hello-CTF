@@ -290,15 +290,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[N1CTF 2024](https://ctf2024.nu1l.com/)"  
-                [![](https://ctftime.org/media/events/logo2_5_1.png){ width="200" align=left }](https://ctf2024.nu1l.com/)  
-                **比赛名称** : [N1CTF 2024](https://ctf2024.nu1l.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-09 20:00:00 - 2024-11-10 20:00:00 UTC+8  
-                **比赛权重** : 89.85  
-                **赛事主办** : Nu1L (https://ctftime.org/team/19208)  
-                **添加日历** : https://ctftime.org/event/2459.ics  
-                
             ??? Quote "[EKOPARTY CTF 2024](https://ctf.ekoparty.org/)"  
                 [![](https://ctftime.org/media/events/LOGO_eko_2024.png){ width="200" align=left }](https://ctf.ekoparty.org/)  
                 **比赛名称** : [EKOPARTY CTF 2024](https://ctf.ekoparty.org/)  
@@ -743,6 +734,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
                 **添加日历** : https://ctftime.org/event/2551.ics  
+                
+            ??? Quote "[N1CTF 2024](https://ctf2024.nu1l.com/)"  
+                [![](https://ctftime.org/media/events/logo2_5_1.png){ width="200" align=left }](https://ctf2024.nu1l.com/)  
+                **比赛名称** : [N1CTF 2024](https://ctf2024.nu1l.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-09 20:00:00 - 2024-11-10 20:00:00 UTC+8  
+                **比赛权重** : 89.85  
+                **赛事主办** : Nu1L (https://ctftime.org/team/19208)  
+                **添加日历** : https://ctftime.org/event/2459.ics  
                 
     === "*已经结束*"
         === "国内赛事"

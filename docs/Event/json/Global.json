@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "N1CTF 2024",
-        "比赛时间": "2024-11-09 20:00:00 - 2024-11-10 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2459.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf2024.nu1l.com/",
-        "比赛标志": "https://ctftime.org/media/events/logo2_5_1.png",
-        "比赛权重": "89.85",
-        "赛事主办": "Nu1L (https://ctftime.org/team/19208)",
-        "比赛ID": "240",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "EKOPARTY CTF 2024",
         "比赛时间": "2024-11-13 21:00:00 - 2024-11-16 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2507.ics",
@@ -597,6 +585,18 @@
         "比赛权重": "0",
         "赛事主办": "ENOFLAG (https://ctftime.org/team/1438)",
         "比赛ID": "494",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "N1CTF 2024",
+        "比赛时间": "2024-11-09 20:00:00 - 2024-11-10 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2459.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf2024.nu1l.com/",
+        "比赛标志": "https://ctftime.org/media/events/logo2_5_1.png",
+        "比赛权重": "89.85",
+        "赛事主办": "Nu1L (https://ctftime.org/team/19208)",
+        "比赛ID": "240",
         "比赛状态": "nowrunning"
     },
     {

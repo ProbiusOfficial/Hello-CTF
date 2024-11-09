@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[N1CTF 2024](https://ctf2024.nu1l.com/)"  
-            [![](https://ctftime.org/media/events/logo2_5_1.png){ width="200" align=left }](https://ctf2024.nu1l.com/)  
-            **比赛名称** : [N1CTF 2024](https://ctf2024.nu1l.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-11-09 20:00:00 - 2024-11-10 20:00:00 UTC+8  
-            **比赛权重** : 89.85  
-            **赛事主办** : Nu1L (https://ctftime.org/team/19208)  
-            **添加日历** : https://ctftime.org/event/2459.ics  
-            
         ??? Quote "[EKOPARTY CTF 2024](https://ctf.ekoparty.org/)"  
             [![](https://ctftime.org/media/events/LOGO_eko_2024.png){ width="200" align=left }](https://ctf.ekoparty.org/)  
             **比赛名称** : [EKOPARTY CTF 2024](https://ctf.ekoparty.org/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : H34lthineer (https://ctftime.org/team/170109)  
             **添加日历** : https://ctftime.org/event/2481.ics  
+            
+        ??? Quote "[1337UP LIVE CTF](https://ctf.intigriti.io/)"  
+            [![](https://ctftime.org/media/events/intigriti_icon_cmyk_navy.png){ width="200" align=left }](https://ctf.intigriti.io/)  
+            **比赛名称** : [1337UP LIVE CTF](https://ctf.intigriti.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-11-15 19:59:59 - 2024-11-17 07:59:59 UTC+8  
+            **比赛权重** : 24.23  
+            **赛事主办** : CryptoCat (https://ctftime.org/team/124896)  
+            **添加日历** : https://ctftime.org/event/2446.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
