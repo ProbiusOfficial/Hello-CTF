@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Bambi CTF #11",
-        "比赛时间": "2024-11-09 19:00:00 - 2024-11-10 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2551.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://bambi11.enoflag.de/",
-        "比赛标志": "https://ctftime.org/media/events/reh_1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "ENOFLAG (https://ctftime.org/team/1438)",
-        "比赛ID": "494",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "N1CTF 2024",
         "比赛时间": "2024-11-09 20:00:00 - 2024-11-10 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2459.ics",
@@ -540,18 +528,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Metared Argentina CERTUNLP",
-        "比赛时间": "2024-11-08 19:00:00 - 2024-11-09 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2537.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.cert.unlp.edu.ar/",
-        "比赛标志": "https://ctftime.org/media/events/unlp.png",
-        "比赛权重": "25.00",
-        "赛事主办": "CERTUNLP (https://ctftime.org/team/89294)",
-        "比赛ID": "653",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "cruXipher 2024 - ATMoS '24, BITS Hyderabad",
         "比赛时间": "2024-11-08 20:30:00 - 2024-11-10 20:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2559.ics",
@@ -610,6 +586,30 @@
         "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
         "比赛ID": "165",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Bambi CTF #11",
+        "比赛时间": "2024-11-09 19:00:00 - 2024-11-10 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2551.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://bambi11.enoflag.de/",
+        "比赛标志": "https://ctftime.org/media/events/reh_1.png",
+        "比赛权重": "0",
+        "赛事主办": "ENOFLAG (https://ctftime.org/team/1438)",
+        "比赛ID": "494",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Metared Argentina CERTUNLP",
+        "比赛时间": "2024-11-08 19:00:00 - 2024-11-09 19:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2537.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.cert.unlp.edu.ar/",
+        "比赛标志": "https://ctftime.org/media/events/unlp.png",
+        "比赛权重": "25.00",
+        "赛事主办": "CERTUNLP (https://ctftime.org/team/89294)",
+        "比赛ID": "653",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "BlackAlps CTF 2024",
@@ -1797,18 +1797,6 @@
         "比赛权重": "41.68",
         "赛事主办": "The Few Chosen (https://ctftime.org/team/140885)",
         "比赛ID": "696",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SCAN 2024 Digital Asset Tracing Challenge",
-        "比赛时间": "2024-07-30 08:00:00 - 2024-07-31 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2442.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://scanctf2024.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/Logo_blue2x.png",
-        "比赛权重": "0.00",
-        "赛事主办": "D Asset Inc. (https://ctftime.org/team/310109)",
-        "比赛ID": "1148",
         "比赛状态": "past"
     }
 ]

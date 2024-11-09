@@ -290,15 +290,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Bambi CTF #11](https://bambi11.enoflag.de/)"  
-                [![](https://ctftime.org/media/events/reh_1.png){ width="200" align=left }](https://bambi11.enoflag.de/)  
-                **比赛名称** : [Bambi CTF #11](https://bambi11.enoflag.de/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2024-11-09 19:00:00 - 2024-11-10 01:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
-                **添加日历** : https://ctftime.org/event/2551.ics  
-                
             ??? Quote "[N1CTF 2024](https://ctf2024.nu1l.com/)"  
                 [![](https://ctftime.org/media/events/logo2_5_1.png){ width="200" align=left }](https://ctf2024.nu1l.com/)  
                 **比赛名称** : [N1CTF 2024](https://ctf2024.nu1l.com/)  
@@ -699,15 +690,6 @@ hide:
                 **赛事主办** : HKCERT (https://ctftime.org/team/134746)  
                 **添加日历** : https://ctftime.org/event/2455.ics  
                 
-            ??? Quote "[Metared Argentina CERTUNLP](https://ctf.cert.unlp.edu.ar/)"  
-                [![](https://ctftime.org/media/events/unlp.png){ width="200" align=left }](https://ctf.cert.unlp.edu.ar/)  
-                **比赛名称** : [Metared Argentina CERTUNLP](https://ctf.cert.unlp.edu.ar/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-08 19:00:00 - 2024-11-09 19:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : CERTUNLP (https://ctftime.org/team/89294)  
-                **添加日历** : https://ctftime.org/event/2537.ics  
-                
             ??? Quote "[cruXipher 2024 - ATMoS '24, BITS Hyderabad](https://cruxipher.crux-bphc.com/)"  
                 [![](https://ctftime.org/media/events/b93b251d190e41c5976063cdc151ac47.jpg){ width="200" align=left }](https://cruxipher.crux-bphc.com/)  
                 **比赛名称** : [cruXipher 2024 - ATMoS '24, BITS Hyderabad](https://cruxipher.crux-bphc.com/)  
@@ -752,6 +734,15 @@ hide:
                 **比赛权重** : 33.59  
                 **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
                 **添加日历** : https://ctftime.org/event/2534.ics  
+                
+            ??? Quote "[Bambi CTF #11](https://bambi11.enoflag.de/)"  
+                [![](https://ctftime.org/media/events/reh_1.png){ width="200" align=left }](https://bambi11.enoflag.de/)  
+                **比赛名称** : [Bambi CTF #11](https://bambi11.enoflag.de/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2024-11-09 19:00:00 - 2024-11-10 01:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
+                **添加日历** : https://ctftime.org/event/2551.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -833,6 +824,15 @@ hide:
                 **其他说明** : 赛事QQ群：1169651901  
                 
         === "国外赛事"
+            ??? Quote "[Metared Argentina CERTUNLP](https://ctf.cert.unlp.edu.ar/)"  
+                [![](https://ctftime.org/media/events/unlp.png){ width="200" align=left }](https://ctf.cert.unlp.edu.ar/)  
+                **比赛名称** : [Metared Argentina CERTUNLP](https://ctf.cert.unlp.edu.ar/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-08 19:00:00 - 2024-11-09 19:00:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : CERTUNLP (https://ctftime.org/team/89294)  
+                **添加日历** : https://ctftime.org/event/2537.ics  
+                
             ??? Quote "[BlackAlps CTF 2024](https://www.blackalps.ch/ba-24/ctf.php)"  
                 [![](https://ctftime.org/media/events/blackalps-v5-logo-black_2.png){ width="200" align=left }](https://www.blackalps.ch/ba-24/ctf.php)  
                 **比赛名称** : [BlackAlps CTF 2024](https://www.blackalps.ch/ba-24/ctf.php)  
@@ -1723,15 +1723,6 @@ hide:
                 **比赛权重** : 41.68  
                 **赛事主办** : The Few Chosen (https://ctftime.org/team/140885)  
                 **添加日历** : https://ctftime.org/event/2423.ics  
-                
-            ??? Quote "[SCAN 2024 Digital Asset Tracing Challenge](https://scanctf2024.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/Logo_blue2x.png){ width="200" align=left }](https://scanctf2024.ctfd.io/)  
-                **比赛名称** : [SCAN 2024 Digital Asset Tracing Challenge](https://scanctf2024.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-07-30 08:00:00 - 2024-07-31 08:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : D Asset Inc. (https://ctftime.org/team/310109)  
-                **添加日历** : https://ctftime.org/event/2442.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

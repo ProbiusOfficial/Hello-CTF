@@ -36,15 +36,6 @@ comments: true
     **赛事主办** : HKCERT (https://ctftime.org/team/134746)  
     **添加日历** : https://ctftime.org/event/2455.ics  
     
-??? Quote "[Metared Argentina CERTUNLP](https://ctf.cert.unlp.edu.ar/)"  
-    [![](https://ctftime.org/media/events/unlp.png){ width="200" align=left }](https://ctf.cert.unlp.edu.ar/)  
-    **比赛名称** : [Metared Argentina CERTUNLP](https://ctf.cert.unlp.edu.ar/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-08 19:00:00 - 2024-11-09 19:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : CERTUNLP (https://ctftime.org/team/89294)  
-    **添加日历** : https://ctftime.org/event/2537.ics  
-    
 ??? Quote "[cruXipher 2024 - ATMoS '24, BITS Hyderabad](https://cruxipher.crux-bphc.com/)"  
     [![](https://ctftime.org/media/events/b93b251d190e41c5976063cdc151ac47.jpg){ width="200" align=left }](https://cruxipher.crux-bphc.com/)  
     **比赛名称** : [cruXipher 2024 - ATMoS '24, BITS Hyderabad](https://cruxipher.crux-bphc.com/)  
@@ -89,4 +80,13 @@ comments: true
     **比赛权重** : 33.59  
     **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
     **添加日历** : https://ctftime.org/event/2534.ics  
+    
+??? Quote "[Bambi CTF #11](https://bambi11.enoflag.de/)"  
+    [![](https://ctftime.org/media/events/reh_1.png){ width="200" align=left }](https://bambi11.enoflag.de/)  
+    **比赛名称** : [Bambi CTF #11](https://bambi11.enoflag.de/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-11-09 19:00:00 - 2024-11-10 01:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
+    **添加日历** : https://ctftime.org/event/2551.ics  
     

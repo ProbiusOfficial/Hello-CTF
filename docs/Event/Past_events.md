@@ -84,6 +84,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Metared Argentina CERTUNLP](https://ctf.cert.unlp.edu.ar/)"  
+    [![](https://ctftime.org/media/events/unlp.png){ width="200" align=left }](https://ctf.cert.unlp.edu.ar/)  
+    **比赛名称** : [Metared Argentina CERTUNLP](https://ctf.cert.unlp.edu.ar/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-08 19:00:00 - 2024-11-09 19:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : CERTUNLP (https://ctftime.org/team/89294)  
+    **添加日历** : https://ctftime.org/event/2537.ics  
+    
 ??? Quote "[BlackAlps CTF 2024](https://www.blackalps.ch/ba-24/ctf.php)"  
     [![](https://ctftime.org/media/events/blackalps-v5-logo-black_2.png){ width="200" align=left }](https://www.blackalps.ch/ba-24/ctf.php)  
     **比赛名称** : [BlackAlps CTF 2024](https://www.blackalps.ch/ba-24/ctf.php)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 41.68  
     **赛事主办** : The Few Chosen (https://ctftime.org/team/140885)  
     **添加日历** : https://ctftime.org/event/2423.ics  
-    
-??? Quote "[SCAN 2024 Digital Asset Tracing Challenge](https://scanctf2024.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/Logo_blue2x.png){ width="200" align=left }](https://scanctf2024.ctfd.io/)  
-    **比赛名称** : [SCAN 2024 Digital Asset Tracing Challenge](https://scanctf2024.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-07-30 08:00:00 - 2024-07-31 08:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : D Asset Inc. (https://ctftime.org/team/310109)  
-    **添加日历** : https://ctftime.org/event/2442.ics  
     

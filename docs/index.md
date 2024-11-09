@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Bambi CTF #11](https://bambi11.enoflag.de/)"  
-            [![](https://ctftime.org/media/events/reh_1.png){ width="200" align=left }](https://bambi11.enoflag.de/)  
-            **比赛名称** : [Bambi CTF #11](https://bambi11.enoflag.de/)  
-            **比赛形式** : Attack-Defense  
-            **比赛时间** : 2024-11-09 19:00:00 - 2024-11-10 01:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
-            **添加日历** : https://ctftime.org/event/2551.ics  
-            
         ??? Quote "[N1CTF 2024](https://ctf2024.nu1l.com/)"  
             [![](https://ctftime.org/media/events/logo2_5_1.png){ width="200" align=left }](https://ctf2024.nu1l.com/)  
             **比赛名称** : [N1CTF 2024](https://ctf2024.nu1l.com/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 52.43  
             **赛事主办** : Square (https://ctftime.org/team/46747)  
             **添加日历** : https://ctftime.org/event/2517.ics  
+            
+        ??? Quote "[Die Abenteuer von KIM & TIM Kapt. II - To TI-Mfinity and Beyond](http://ctf.gematik.de/)"  
+            [![](https://ctftime.org/media/events/Bild_1.png){ width="200" align=left }](http://ctf.gematik.de/)  
+            **比赛名称** : [Die Abenteuer von KIM & TIM Kapt. II - To TI-Mfinity and Beyond](http://ctf.gematik.de/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-11-15 17:00:00 - 2024-11-16 01:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : H34lthineer (https://ctftime.org/team/170109)  
+            **添加日历** : https://ctftime.org/event/2481.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
