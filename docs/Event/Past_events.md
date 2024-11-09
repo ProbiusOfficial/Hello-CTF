@@ -84,6 +84,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Bambi CTF #11](https://bambi11.enoflag.de/)"  
+    [![](https://ctftime.org/media/events/reh_1.png){ width="200" align=left }](https://bambi11.enoflag.de/)  
+    **比赛名称** : [Bambi CTF #11](https://bambi11.enoflag.de/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-11-09 19:00:00 - 2024-11-10 01:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
+    **添加日历** : https://ctftime.org/event/2551.ics  
+    
 ??? Quote "[Metared Argentina CERTUNLP](https://ctf.cert.unlp.edu.ar/)"  
     [![](https://ctftime.org/media/events/unlp.png){ width="200" align=left }](https://ctf.cert.unlp.edu.ar/)  
     **比赛名称** : [Metared Argentina CERTUNLP](https://ctf.cert.unlp.edu.ar/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Arab Security Cyber Wargames (https://ctftime.org/team/127553)  
     **添加日历** : https://ctftime.org/event/2434.ics  
-    
-??? Quote "[TFC CTF 2024](https://ctf.thefewchosen.com/)"  
-    [![](https://ctftime.org/media/events/discord_logo_3.png){ width="200" align=left }](https://ctf.thefewchosen.com/)  
-    **比赛名称** : [TFC CTF 2024](https://ctf.thefewchosen.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-08-02 19:00:00 - 2024-08-04 19:00:00 UTC+8  
-    **比赛权重** : 41.68  
-    **赛事主办** : The Few Chosen (https://ctftime.org/team/140885)  
-    **添加日历** : https://ctftime.org/event/2423.ics  
     
