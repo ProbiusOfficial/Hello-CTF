@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[M*CTF 2024 Quals](https://mctf.mtuci.ru/)"  
-    [![](https://ctftime.org/media/events/6sKaJXoc4I4.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
-    **比赛名称** : [M*CTF 2024 Quals](https://mctf.mtuci.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-09 17:00:00 - 2024-11-10 17:00:00 UTC+8  
-    **比赛权重** : 33.59  
-    **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-    **添加日历** : https://ctftime.org/event/2534.ics  
-    
 ??? Quote "[Bambi CTF #11](https://bambi11.enoflag.de/)"  
     [![](https://ctftime.org/media/events/reh_1.png){ width="200" align=left }](https://bambi11.enoflag.de/)  
     **比赛名称** : [Bambi CTF #11](https://bambi11.enoflag.de/)  

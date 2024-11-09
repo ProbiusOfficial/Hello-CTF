@@ -81,3 +81,12 @@ comments: true
     **赛事主办** : HITCON (https://ctftime.org/team/8299)  
     **添加日历** : https://ctftime.org/event/2523.ics  
     
+??? Quote "[M*CTF 2024 Quals](https://mctf.mtuci.ru/)"  
+    [![](https://ctftime.org/media/events/6sKaJXoc4I4.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
+    **比赛名称** : [M*CTF 2024 Quals](https://mctf.mtuci.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-09 17:00:00 - 2024-11-10 17:00:00 UTC+8  
+    **比赛权重** : 33.59  
+    **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
+    **添加日历** : https://ctftime.org/event/2534.ics  
+    
