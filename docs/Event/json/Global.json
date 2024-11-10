@@ -504,18 +504,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "cruXipher 2024 - ATMoS '24, BITS Hyderabad",
-        "比赛时间": "2024-11-08 20:30:00 - 2024-11-10 20:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2559.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cruxipher.crux-bphc.com/",
-        "比赛标志": "https://ctftime.org/media/events/b93b251d190e41c5976063cdc151ac47.jpg",
-        "比赛权重": "0",
-        "赛事主办": "CRUx BPHC (https://ctftime.org/team/270645)",
-        "比赛ID": "1004",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "4T$ CTF",
         "比赛时间": "2024-11-09 02:00:00 - 2024-11-11 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2545.ics",
@@ -585,6 +573,18 @@
         "比赛权重": "34.05",
         "赛事主办": "Blue Hens (https://ctftime.org/team/64660)",
         "比赛ID": "603",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "cruXipher 2024 - ATMoS '24, BITS Hyderabad",
+        "比赛时间": "2024-11-08 20:30:00 - 2024-11-10 20:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2559.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cruxipher.crux-bphc.com/",
+        "比赛标志": "https://ctftime.org/media/events/b93b251d190e41c5976063cdc151ac47.jpg",
+        "比赛权重": "0",
+        "赛事主办": "CRUx BPHC (https://ctftime.org/team/270645)",
+        "比赛ID": "1004",
         "比赛状态": "past"
     },
     {
@@ -1713,18 +1713,6 @@
         "比赛权重": "46.25",
         "赛事主办": "LIT CTF (https://ctftime.org/team/157660)",
         "比赛ID": "646",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CTFZone 2024 Quals",
-        "比赛时间": "2024-08-10 17:00:00 - 2024-08-11 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2408.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.bi.zone/",
-        "比赛标志": "https://ctftime.org/media/events/b98226ad9a255846e456617d99bde1de.png",
-        "比赛权重": "73.82",
-        "赛事主办": "BIZone (https://ctftime.org/team/32190)",
-        "比赛ID": "201",
         "比赛状态": "past"
     }
 ]
