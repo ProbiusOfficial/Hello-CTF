@@ -690,15 +690,6 @@ hide:
                 **赛事主办** : CRUx BPHC (https://ctftime.org/team/270645)  
                 **添加日历** : https://ctftime.org/event/2559.ics  
                 
-            ??? Quote "[BlueHens CTF 2024](https://bluehens.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/UDCTF-logo_2.png){ width="200" align=left }](https://bluehens.ctfd.io/)  
-                **比赛名称** : [BlueHens CTF 2024](https://bluehens.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-09 01:00:00 - 2024-11-10 13:00:00 UTC+8  
-                **比赛权重** : 34.05  
-                **赛事主办** : Blue Hens (https://ctftime.org/team/64660)  
-                **添加日历** : https://ctftime.org/event/2512.ics  
-                
             ??? Quote "[4T$ CTF](https://ctf.4ts.fr/)"  
                 [![](https://ctftime.org/media/events/53b0900ddae2f59936bcc4eafc1458cf.jpg){ width="200" align=left }](https://ctf.4ts.fr/)  
                 **比赛名称** : [4T$ CTF](https://ctf.4ts.fr/)  
@@ -823,6 +814,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
                 **添加日历** : https://ctftime.org/event/2551.ics  
+                
+            ??? Quote "[BlueHens CTF 2024](https://bluehens.ctfd.io/)"  
+                [![](https://ctftime.org/media/events/UDCTF-logo_2.png){ width="200" align=left }](https://bluehens.ctfd.io/)  
+                **比赛名称** : [BlueHens CTF 2024](https://bluehens.ctfd.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-09 01:00:00 - 2024-11-10 13:00:00 UTC+8  
+                **比赛权重** : 34.05  
+                **赛事主办** : Blue Hens (https://ctftime.org/team/64660)  
+                **添加日历** : https://ctftime.org/event/2512.ics  
                 
             ??? Quote "[Metared Argentina CERTUNLP](https://ctf.cert.unlp.edu.ar/)"  
                 [![](https://ctftime.org/media/events/unlp.png){ width="200" align=left }](https://ctf.cert.unlp.edu.ar/)  
@@ -1705,15 +1705,6 @@ hide:
                 **比赛权重** : 26.89  
                 **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
                 **添加日历** : https://ctftime.org/event/2223.ics  
-                
-            ??? Quote "[Arab Security Cyber Wargames 2024 Qualifications](https://www.ascyberwargames.com/ascwgs2024/)"  
-                [![](https://ctftime.org/media/events/Image20230709224223.png){ width="200" align=left }](https://www.ascyberwargames.com/ascwgs2024/)  
-                **比赛名称** : [Arab Security Cyber Wargames 2024 Qualifications](https://www.ascyberwargames.com/ascwgs2024/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-08-02 21:00:00 - 2024-08-03 21:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Arab Security Cyber Wargames (https://ctftime.org/team/127553)  
-                **添加日历** : https://ctftime.org/event/2434.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

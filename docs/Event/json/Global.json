@@ -528,18 +528,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "BlueHens CTF 2024",
-        "比赛时间": "2024-11-09 01:00:00 - 2024-11-10 13:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2512.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://bluehens.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/UDCTF-logo_2.png",
-        "比赛权重": "34.05",
-        "赛事主办": "Blue Hens (https://ctftime.org/team/64660)",
-        "比赛ID": "603",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "4T$ CTF",
         "比赛时间": "2024-11-09 02:00:00 - 2024-11-11 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2545.ics",
@@ -597,6 +585,18 @@
         "比赛权重": "0",
         "赛事主办": "ENOFLAG (https://ctftime.org/team/1438)",
         "比赛ID": "494",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "BlueHens CTF 2024",
+        "比赛时间": "2024-11-09 01:00:00 - 2024-11-10 13:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2512.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://bluehens.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/UDCTF-logo_2.png",
+        "比赛权重": "34.05",
+        "赛事主办": "Blue Hens (https://ctftime.org/team/64660)",
+        "比赛ID": "603",
         "比赛状态": "past"
     },
     {
@@ -1773,18 +1773,6 @@
         "比赛权重": "26.89",
         "赛事主办": "thehackerscrew (https://ctftime.org/team/85618)",
         "比赛ID": "738",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Arab Security Cyber Wargames 2024 Qualifications",
-        "比赛时间": "2024-08-02 21:00:00 - 2024-08-03 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2434.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.ascyberwargames.com/ascwgs2024/",
-        "比赛标志": "https://ctftime.org/media/events/Image20230709224223.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Arab Security Cyber Wargames (https://ctftime.org/team/127553)",
-        "比赛ID": "490",
         "比赛状态": "past"
     }
 ]
