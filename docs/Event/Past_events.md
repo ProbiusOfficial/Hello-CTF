@@ -129,6 +129,15 @@ comments: true
     **赛事主办** : CERTUNLP (https://ctftime.org/team/89294)  
     **添加日历** : https://ctftime.org/event/2537.ics  
     
+??? Quote "[HKCERT CTF 2024 (Qualifying Round)](https://platform.ctf.hkcert.org/)"  
+    [![](https://ctftime.org/media/events/Screenshot_2024-08-13_100427.png){ width="200" align=left }](https://platform.ctf.hkcert.org/)  
+    **比赛名称** : [HKCERT CTF 2024 (Qualifying Round)](https://platform.ctf.hkcert.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-08 18:00:00 - 2024-11-10 18:00:00 UTC+8  
+    **比赛权重** : 61.22  
+    **赛事主办** : HKCERT (https://ctftime.org/team/134746)  
+    **添加日历** : https://ctftime.org/event/2455.ics  
+    
 ??? Quote "[BlackAlps CTF 2024](https://www.blackalps.ch/ba-24/ctf.php)"  
     [![](https://ctftime.org/media/events/blackalps-v5-logo-black_2.png){ width="200" align=left }](https://www.blackalps.ch/ba-24/ctf.php)  
     **比赛名称** : [BlackAlps CTF 2024](https://www.blackalps.ch/ba-24/ctf.php)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 35.00  
     **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
     **添加日历** : https://ctftime.org/event/2462.ics  
-    
-??? Quote "[PECAN+ CTF 2024](https://pecanplus.ecusdf.org/)"  
-    [![](https://ctftime.org/media/events/Pecan_Logo_Transparent_1.png){ width="200" align=left }](https://pecanplus.ecusdf.org/)  
-    **比赛名称** : [PECAN+ CTF 2024](https://pecanplus.ecusdf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-08-04 09:00:00 - 2024-08-04 13:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : PECAN+ (https://ctftime.org/team/250009)  
-    **添加日历** : https://ctftime.org/event/2439.ics  
     
