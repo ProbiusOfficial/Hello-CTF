@@ -540,18 +540,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "HITCON CTF 2024 Final",
-        "比赛时间": "2024-11-09 08:00:00 - 2024-11-10 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2523.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "http://ctf.hitcon.org/",
-        "比赛标志": "https://ctftime.org/media/events/eb3c04d49c017eda197bab74939403eb.jpg",
-        "比赛权重": "0",
-        "赛事主办": "HITCON (https://ctftime.org/team/8299)",
-        "比赛ID": "79",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "M*CTF 2024 Quals",
         "比赛时间": "2024-11-09 17:00:00 - 2024-11-10 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2534.ics",
@@ -585,6 +573,18 @@
         "比赛权重": "0",
         "赛事主办": "ENOFLAG (https://ctftime.org/team/1438)",
         "比赛ID": "494",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "HITCON CTF 2024 Final",
+        "比赛时间": "2024-11-09 08:00:00 - 2024-11-10 16:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2523.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "http://ctf.hitcon.org/",
+        "比赛标志": "https://ctftime.org/media/events/eb3c04d49c017eda197bab74939403eb.jpg",
+        "比赛权重": "0",
+        "赛事主办": "HITCON (https://ctftime.org/team/8299)",
+        "比赛ID": "79",
         "比赛状态": "past"
     },
     {
@@ -1761,18 +1761,6 @@
         "比赛权重": "24.23",
         "赛事主办": "n00bzUnit3d (https://ctftime.org/team/152491)",
         "比赛ID": "792",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CrewCTF 2024",
-        "比赛时间": "2024-08-03 01:00:00 - 2024-08-05 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2223.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2024.crewc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/THC_new.png",
-        "比赛权重": "26.89",
-        "赛事主办": "thehackerscrew (https://ctftime.org/team/85618)",
-        "比赛ID": "738",
         "比赛状态": "past"
     }
 ]

@@ -54,15 +54,6 @@ comments: true
     **赛事主办** : 4T$ (https://ctftime.org/team/302295)  
     **添加日历** : https://ctftime.org/event/2545.ics  
     
-??? Quote "[HITCON CTF 2024 Final](http://ctf.hitcon.org/)"  
-    [![](https://ctftime.org/media/events/eb3c04d49c017eda197bab74939403eb.jpg){ width="200" align=left }](http://ctf.hitcon.org/)  
-    **比赛名称** : [HITCON CTF 2024 Final](http://ctf.hitcon.org/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2024-11-09 08:00:00 - 2024-11-10 16:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : HITCON (https://ctftime.org/team/8299)  
-    **添加日历** : https://ctftime.org/event/2523.ics  
-    
 ??? Quote "[M*CTF 2024 Quals](https://mctf.mtuci.ru/)"  
     [![](https://ctftime.org/media/events/6sKaJXoc4I4.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
     **比赛名称** : [M*CTF 2024 Quals](https://mctf.mtuci.ru/)  

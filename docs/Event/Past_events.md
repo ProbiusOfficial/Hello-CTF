@@ -93,6 +93,15 @@ comments: true
     **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
     **添加日历** : https://ctftime.org/event/2551.ics  
     
+??? Quote "[HITCON CTF 2024 Final](http://ctf.hitcon.org/)"  
+    [![](https://ctftime.org/media/events/eb3c04d49c017eda197bab74939403eb.jpg){ width="200" align=left }](http://ctf.hitcon.org/)  
+    **比赛名称** : [HITCON CTF 2024 Final](http://ctf.hitcon.org/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-11-09 08:00:00 - 2024-11-10 16:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : HITCON (https://ctftime.org/team/8299)  
+    **添加日历** : https://ctftime.org/event/2523.ics  
+    
 ??? Quote "[BlueHens CTF 2024](https://bluehens.ctfd.io/)"  
     [![](https://ctftime.org/media/events/UDCTF-logo_2.png){ width="200" align=left }](https://bluehens.ctfd.io/)  
     **比赛名称** : [BlueHens CTF 2024](https://bluehens.ctfd.io/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 24.23  
     **赛事主办** : n00bzUnit3d (https://ctftime.org/team/152491)  
     **添加日历** : https://ctftime.org/event/2378.ics  
-    
-??? Quote "[CrewCTF 2024](https://2024.crewc.tf/)"  
-    [![](https://ctftime.org/media/events/THC_new.png){ width="200" align=left }](https://2024.crewc.tf/)  
-    **比赛名称** : [CrewCTF 2024](https://2024.crewc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-08-03 01:00:00 - 2024-08-05 01:00:00 UTC+8  
-    **比赛权重** : 26.89  
-    **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
-    **添加日历** : https://ctftime.org/event/2223.ics  
     
