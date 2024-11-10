@@ -504,18 +504,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "4T$ CTF",
-        "比赛时间": "2024-11-09 02:00:00 - 2024-11-11 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2545.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.4ts.fr/",
-        "比赛标志": "https://ctftime.org/media/events/53b0900ddae2f59936bcc4eafc1458cf.jpg",
-        "比赛权重": "0",
-        "赛事主办": "4T$ (https://ctftime.org/team/302295)",
-        "比赛ID": "1188",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "N1CTF 2024",
         "比赛时间": "2024-11-09 20:00:00 - 2024-11-10 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2459.ics",
@@ -561,6 +549,18 @@
         "比赛权重": "0",
         "赛事主办": "HITCON (https://ctftime.org/team/8299)",
         "比赛ID": "79",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "4T$ CTF",
+        "比赛时间": "2024-11-09 02:00:00 - 2024-11-11 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2545.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.4ts.fr/",
+        "比赛标志": "https://ctftime.org/media/events/53b0900ddae2f59936bcc4eafc1458cf.jpg",
+        "比赛权重": "0",
+        "赛事主办": "4T$ (https://ctftime.org/team/302295)",
+        "比赛ID": "1188",
         "比赛状态": "past"
     },
     {
@@ -666,7 +666,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://hackersnhops.ctfd.io/",
         "比赛标志": "https://ctftime.org/media/events/HACKERSNHOPS.png",
-        "比赛权重": "0",
+        "比赛权重": "24.67",
         "赛事主办": "Hackers N' Hops (https://ctftime.org/team/119910)",
         "比赛ID": "1191",
         "比赛状态": "past"
@@ -1701,18 +1701,6 @@
         "比赛权重": "52.04",
         "赛事主办": "idek (https://ctftime.org/team/157039)",
         "比赛ID": "700",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Lexington Informatics Tournament CTF 2024",
-        "比赛时间": "2024-08-10 23:00:00 - 2024-08-13 11:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2444.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://lit.lhsmathcs.org/",
-        "比赛标志": "https://ctftime.org/media/events/square_CTFtime_LIT_1.png",
-        "比赛权重": "46.25",
-        "赛事主办": "LIT CTF (https://ctftime.org/team/157660)",
-        "比赛ID": "646",
         "比赛状态": "past"
     }
 ]
