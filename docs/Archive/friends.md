@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [windows内核（3）——PAE分页（2-9-9-12分页）](https://xia0ji233.github.io/2024/11/09/WindowsKernel3/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-11-09
+
+    来学一下2-9-9-12分页，也叫PAE分页为什么要有2-9-9-12分页这一定一定是最会疑惑的一个问题，为什么要多拆一个 2 出来呢？回答：扩展物理内存。我们都知道，32位的系统最大只能装 4GB 的内存，多了它用不上，然而这个说法比较片面，实则它可以装更多的内存，在 10-10-12 分页的模式中，我们知道，物理地址就是 32 位的，而物理地址位宽决定了物理内存最大的限度。那么 2-9-9-1...
     ### [windows内核（2）——页属性实验](https://xia0ji233.github.io/2024/11/07/WindowsKernel2/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2024-11-07
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-07-28
 
     edb75cb95fa274697a13f0de16c2ee476727ef39af866137ce7abba675d366a2667c35534d4818bf16ba3f2a4062b556dfe52391e960c4665bb66cac3069e79df97713e0b70ba674bdbc250f295481e19e3a0d0cb7fe0dab3af3a3419646da40d1709a...
-    ### [浅析帆软FineVis默认插件前台RCE](https://y4tacker.github.io/2024/07/26/year/2024/7/%E6%B5%85%E6%9E%90%E5%B8%86%E8%BD%AFFineVis%E9%BB%98%E8%AE%A4%E6%8F%92%E4%BB%B6%E5%89%8D%E5%8F%B0RCE/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-07-26
-
-    75fe1026383dfaa0a967acb72c258091d824449c325b83a7a7fa894da20e58875ee9377f2f6b70632955e7127ad3d74064c0dd2bf0b57f712c6877d79ef90dc5c212f8b446a26e74ef229c33ebc9489a344fa6f8bc94237c48fec5c935d69abe222fe0...
 
 </div>
