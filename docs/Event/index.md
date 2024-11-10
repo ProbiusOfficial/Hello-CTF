@@ -690,15 +690,6 @@ hide:
                 **赛事主办** : 4T$ (https://ctftime.org/team/302295)  
                 **添加日历** : https://ctftime.org/event/2545.ics  
                 
-            ??? Quote "[N1CTF 2024](https://ctf2024.nu1l.com/)"  
-                [![](https://ctftime.org/media/events/logo2_5_1.png){ width="200" align=left }](https://ctf2024.nu1l.com/)  
-                **比赛名称** : [N1CTF 2024](https://ctf2024.nu1l.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-09 20:00:00 - 2024-11-10 20:00:00 UTC+8  
-                **比赛权重** : 89.85  
-                **赛事主办** : Nu1L (https://ctftime.org/team/19208)  
-                **添加日历** : https://ctftime.org/event/2459.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[BRICS+ CTF Quals 2024](https://brics-ctf.com/)"  
@@ -779,6 +770,15 @@ hide:
                 **其他说明** : 赛事QQ群：1169651901  
                 
         === "国外赛事"
+            ??? Quote "[N1CTF 2024](https://ctf2024.nu1l.com/)"  
+                [![](https://ctftime.org/media/events/logo2_5_1.png){ width="200" align=left }](https://ctf2024.nu1l.com/)  
+                **比赛名称** : [N1CTF 2024](https://ctf2024.nu1l.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-09 20:00:00 - 2024-11-10 20:00:00 UTC+8  
+                **比赛权重** : 89.85  
+                **赛事主办** : Nu1L (https://ctftime.org/team/19208)  
+                **添加日历** : https://ctftime.org/event/2459.ics  
+                
             ??? Quote "[Bambi CTF #11](https://bambi11.enoflag.de/)"  
                 [![](https://ctftime.org/media/events/reh_1.png){ width="200" align=left }](https://bambi11.enoflag.de/)  
                 **比赛名称** : [Bambi CTF #11](https://bambi11.enoflag.de/)  
@@ -1669,15 +1669,6 @@ hide:
                 **比赛权重** : 73.82  
                 **赛事主办** : BIZone (https://ctftime.org/team/32190)  
                 **添加日历** : https://ctftime.org/event/2408.ics  
-                
-            ??? Quote "[DEF CON CTF 2024](https://nautilus.institute/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://nautilus.institute/)  
-                **比赛名称** : [DEF CON CTF 2024](https://nautilus.institute/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2024-08-10 00:00:00 - 2024-08-12 04:00:00 UTC+8  
-                **比赛权重** : 35.00  
-                **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
-                **添加日历** : https://ctftime.org/event/2462.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

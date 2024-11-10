@@ -45,12 +45,3 @@ comments: true
     **赛事主办** : 4T$ (https://ctftime.org/team/302295)  
     **添加日历** : https://ctftime.org/event/2545.ics  
     
-??? Quote "[N1CTF 2024](https://ctf2024.nu1l.com/)"  
-    [![](https://ctftime.org/media/events/logo2_5_1.png){ width="200" align=left }](https://ctf2024.nu1l.com/)  
-    **比赛名称** : [N1CTF 2024](https://ctf2024.nu1l.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-09 20:00:00 - 2024-11-10 20:00:00 UTC+8  
-    **比赛权重** : 89.85  
-    **赛事主办** : Nu1L (https://ctftime.org/team/19208)  
-    **添加日历** : https://ctftime.org/event/2459.ics  
-    
