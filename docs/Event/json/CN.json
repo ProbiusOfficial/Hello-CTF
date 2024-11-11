@@ -149,6 +149,24 @@
                 "comp_time_end": "2024年11月03日 21:00",
                 "readmore": "赛事QQ群：1169651901",
                 "status": "已经结束"
+            },
+            {
+                "name": "ISCTF高校联合安全技能挑战赛",
+                "info_confirmed": 1,
+                "mid_join": 0,
+                "link": "http://isctf2024.bluesharkinfo.com",
+                "status": 3,
+                "is_reg": 1,
+                "limit": 3,
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2024年11月09日 10:00",
+                "reg_time_end": "2024年11月15日 16:59",
+                "comp_time_start": "2024年11月09日 10:00",
+                "comp_time_end": "2024年11月15日 17:00",
+                "organizer": "福州蓝鲨信息技术有限公司和DK云赞助，由来自安徽、广东、贵州、河南、湖南、江苏、山东、陕西、四川、浙江、福建、云南12省的高校联合主办",
+                "contac": {},
+                "tag": "公益赛",
+                "readmore": "第四届ISCTF高校联合安全技能挑战赛由福州蓝鲨信息技术有限公司和DK云赞助，由大理大学、信阳师范大学、福建师范大学主办，联合院校名单包括安徽工业经济职业技术学院、成都东软学院等32所高校的网络与信息安全协会联合主办。比赛时间为11月9日10:00至11月15日17:00，比赛平台为isctf2024.bluesharkinfo.com，目前已开放注册。"
             }
         ],
         "total": 77,
