@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [windows内核（4）——挂物理页](https://xia0ji233.github.io/2024/11/10/WindowsKernel4/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-11-10
+
+    挂物理页的一些细节线性地址有效性判断之前我们分析过 MmIsValidAddress 函数，在 10-10-12 分页模式下就是去拿到页表的线性地址，然后判断 PTE 和 PDE 的P位是否都有效。一般来说，如果都有效说明进程在这个线性地址这里挂上了物理页。零地址挂页考虑以下代码：12int *x=NULL;*x=100;通常情况下我们会认为这两条语句执行之后必然出错，这就是所谓的空指针错误，但是...
     ### [windows内核（3）——PAE分页（2-9-9-12分页）](https://xia0ji233.github.io/2024/11/09/WindowsKernel3/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2024-11-09
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-08-01
 
     a602003e04d22db1e33c89fb4b06650a58b8bd453fabc9118a8a636036f7f24b4ef78306b08678ccfd82cb8b0c3e122d61b8d9c99f724268689a6295f4f071c6c725ead49be7f4550209a0e59fb40f7c913657f7d99bfae52aacfbc177d4b995d6f521...
-    ### [帆软channel接口反序列化前世今生及最新版利用链总结](https://y4tacker.github.io/2024/07/28/year/2024/7/%E5%B8%86%E8%BD%AFchannel%E6%8E%A5%E5%8F%A3%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F%E5%8F%8A%E5%88%A9%E7%94%A8%E9%93%BE%E6%80%BB%E7%BB%93/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-07-28
-
-    edb75cb95fa274697a13f0de16c2ee476727ef39af866137ce7abba675d366a2667c35534d4818bf16ba3f2a4062b556dfe52391e960c4665bb66cac3069e79df97713e0b70ba674bdbc250f295481e19e3a0d0cb7fe0dab3af3a3419646da40d1709a...
 
 </div>
