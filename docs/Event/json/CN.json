@@ -3,6 +3,24 @@
     "data": {
         "result": [
             {
+                "name": "DSBCTF",
+                "info_confirmed": 1,
+                "mid_join": 0,
+                "link": "https://ctf.show",
+                "status": "未确定",
+                "is_reg": 1,
+                "limit": 1,
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2024年11月11日11时11分",
+                "reg_time_end": "2024年11月11日11时10分",
+                "comp_time_start": "2024年11月11日11时11分",
+                "comp_time_end": "2024年11月13日11时11分",
+                "organizer": "CTFshow",
+                "contac": {},
+                "tag": "普通赛",
+                "readmore": "CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。"
+            },
+            {
                 "name": "蜀道山高校联合公益赛",
                 "info_confirmed": 1,
                 "mid_join": 0,
