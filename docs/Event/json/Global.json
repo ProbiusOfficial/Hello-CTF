@@ -293,7 +293,7 @@
         "添加日历": "https://ctftime.org/event/2461.ics",
         "比赛形式": "Jeopardy",
         "比赛链接": "https://www.nitectf2024.live/",
-        "比赛标志": "https://ctftime.org/media/events/WhatsApp_Image_2021-08-06_at_11.28.13_3.jpeg",
+        "比赛标志": "https://ctftime.org/media/events/nitectf_2024_logo.jpg",
         "比赛权重": "29.33",
         "赛事主办": "Cryptonite (https://ctftime.org/team/62713)",
         "比赛ID": "663",
@@ -630,7 +630,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://quals.o1d-bu7-go1d.ru/",
         "比赛标志": "https://ctftime.org/media/events/IMG_5703.JPG",
-        "比赛权重": "0",
+        "比赛权重": "23.12",
         "赛事主办": "o1d_bu7_go1d (https://ctftime.org/team/213673)",
         "比赛ID": "1179",
         "比赛状态": "past"

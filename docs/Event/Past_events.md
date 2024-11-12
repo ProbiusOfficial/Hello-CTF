@@ -179,7 +179,7 @@ comments: true
     **比赛名称** : [RedShift.Eclipse 2 Quals](https://quals.o1d-bu7-go1d.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-03 20:00:00 - 2024-11-04 20:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 23.12  
     **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
     **添加日历** : https://ctftime.org/event/2541.ics  
     

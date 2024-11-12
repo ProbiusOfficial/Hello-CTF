@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [windows内核（5）——TLB](https://xia0ji233.github.io/2024/11/11/WindowsKernel5/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-11-11
+
+    今天来学习一下TLB的一些细节TLB简介TLB（Translation Lookaside Buffer，转换后援缓冲器），是一个硬件单元，它用于保存每个进程虚拟地址到物理地址的映射，这里做的对进程的区分大概是使用 CR3 区分的，这个点看很多文章都没有提到，但是仅仅保存线性地址到物理地址的映射是必然不够的，因为不同的进程的同一线性地址不一定对应相同的物理页，但是猜测大概是这样的。TLB 做了指令...
     ### [windows内核（4）——挂物理页](https://xia0ji233.github.io/2024/11/10/WindowsKernel4/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2024-11-10
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-08-02
 
     2356948a1ad7c887c79f19fc812ea158476a2d05ad621a8e8ad43ad15eed6aa04358928d8237c256deacbb01a81ac6f727557979123b7d202e97fdc8e9cd9984ac9dc71337c850b5e565eea7d7034b42ecae2a86f1ddb3613caa26e2e306a7102f259a...
-    ### [浅析JeecgBoot-jmreport最新权限绕过](https://y4tacker.github.io/2024/08/01/year/2024/8/%E6%B5%85%E6%9E%90JeecgBoot-jmreport%E6%9C%80%E6%96%B0%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-08-01
-
-    a602003e04d22db1e33c89fb4b06650a58b8bd453fabc9118a8a636036f7f24b4ef78306b08678ccfd82cb8b0c3e122d61b8d9c99f724268689a6295f4f071c6c725ead49be7f4550209a0e59fb40f7c913657f7d99bfae52aacfbc177d4b995d6f521...
 
 </div>
