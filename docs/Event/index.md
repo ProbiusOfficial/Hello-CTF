@@ -1731,7 +1731,7 @@ hide:
 === "国外赛事"
 
     ``` markdown title="Global.json"
-    /GET https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/main/Global.json
+    /GET https://ghp.ci/https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/refs/heads/main/CN.json
     ```
 
     <div class="result" markdown>
