@@ -162,7 +162,7 @@ comments: true
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-08 18:00:00 - 2024-11-10 18:00:00 UTC+8  
     **比赛权重** : 61.22  
-    **赛事主办** : HKCERT (https://ctftime.org/team/134746)  
+    **赛事主办** : Black Bauhinia, HKCERT (https://ctftime.org/team/83678, https://ctftime.org/team/134746)  
     **添加日历** : https://ctftime.org/event/2455.ics  
     
 ??? Quote "[BlackAlps CTF 2024](https://www.blackalps.ch/ba-24/ctf.php)"  
