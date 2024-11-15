@@ -456,18 +456,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Die Abenteuer von KIM & TIM Kapt. II - To TI-Mfinity and Beyond",
-        "比赛时间": "2024-11-15 17:00:00 - 2024-11-16 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2481.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.gematik.de/",
-        "比赛标志": "https://ctftime.org/media/events/Bild_1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "H34lthineer (https://ctftime.org/team/170109)",
-        "比赛ID": "978",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "1337UP LIVE CTF",
         "比赛时间": "2024-11-15 19:59:59 - 2024-11-17 07:59:59 UTC+8",
         "添加日历": "https://ctftime.org/event/2446.ics",
@@ -490,6 +478,18 @@
         "赛事主办": "PwnSec (https://ctftime.org/team/28797)",
         "比赛ID": "1150",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Die Abenteuer von KIM & TIM Kapt. II - To TI-Mfinity and Beyond",
+        "比赛时间": "2024-11-15 17:00:00 - 2024-11-16 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2481.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf.gematik.de/",
+        "比赛标志": "https://ctftime.org/media/events/Bild_1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "H34lthineer (https://ctftime.org/team/170109)",
+        "比赛ID": "978",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "BlockCTF 2024 (Formerly SquareCTF)",
@@ -1677,18 +1677,6 @@
         "比赛权重": "20.00",
         "赛事主办": "DASCTF (https://ctftime.org/team/303691)",
         "比赛ID": "1133",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SekaiCTF 2024",
-        "比赛时间": "2024-08-24 00:00:00 - 2024-08-26 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2243.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.sekai.team/",
-        "比赛标志": "https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1.png",
-        "比赛权重": "36.96",
-        "赛事主办": "Project Sekai (https://ctftime.org/team/169557)",
-        "比赛ID": "769",
         "比赛状态": "past"
     }
 ]

@@ -98,6 +98,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Die Abenteuer von KIM & TIM Kapt. II - To TI-Mfinity and Beyond](http://ctf.gematik.de/)"  
+    [![](https://ctftime.org/media/events/Bild_1.png){ width="200" align=left }](http://ctf.gematik.de/)  
+    **比赛名称** : [Die Abenteuer von KIM & TIM Kapt. II - To TI-Mfinity and Beyond](http://ctf.gematik.de/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-15 17:00:00 - 2024-11-16 01:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : H34lthineer (https://ctftime.org/team/170109)  
+    **添加日历** : https://ctftime.org/event/2481.ics  
+    
 ??? Quote "[BlockCTF 2024 (Formerly SquareCTF)](https://2024.blockctf.com/)"  
     [![](https://ctftime.org/media/events/0ed304c3c4dcb6a3e887778f3928e26e.png){ width="200" align=left }](https://2024.blockctf.com/)  
     **比赛名称** : [BlockCTF 2024 (Formerly SquareCTF)](https://2024.blockctf.com/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 20.00  
     **赛事主办** : DASCTF (https://ctftime.org/team/303691)  
     **添加日历** : https://ctftime.org/event/2458.ics  
-    
-??? Quote "[SekaiCTF 2024](https://ctf.sekai.team/)"  
-    [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
-    **比赛名称** : [SekaiCTF 2024](https://ctf.sekai.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-08-24 00:00:00 - 2024-08-26 00:00:00 UTC+8  
-    **比赛权重** : 36.96  
-    **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
-    **添加日历** : https://ctftime.org/event/2243.ics  
     

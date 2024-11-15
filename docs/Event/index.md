@@ -642,15 +642,6 @@ hide:
                 **赛事主办** : NULL Life (https://ctftime.org/team/321)  
                 **添加日历** : https://ctftime.org/event/2507.ics  
                 
-            ??? Quote "[Die Abenteuer von KIM & TIM Kapt. II - To TI-Mfinity and Beyond](http://ctf.gematik.de/)"  
-                [![](https://ctftime.org/media/events/Bild_1.png){ width="200" align=left }](http://ctf.gematik.de/)  
-                **比赛名称** : [Die Abenteuer von KIM & TIM Kapt. II - To TI-Mfinity and Beyond](http://ctf.gematik.de/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-15 17:00:00 - 2024-11-16 01:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : H34lthineer (https://ctftime.org/team/170109)  
-                **添加日历** : https://ctftime.org/event/2481.ics  
-                
             ??? Quote "[1337UP LIVE CTF](https://ctf.intigriti.io/)"  
                 [![](https://ctftime.org/media/events/intigriti_icon_cmyk_navy.png){ width="200" align=left }](https://ctf.intigriti.io/)  
                 **比赛名称** : [1337UP LIVE CTF](https://ctf.intigriti.io/)  
@@ -763,6 +754,15 @@ hide:
                 **其他说明** : CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。  
                 
         === "国外赛事"
+            ??? Quote "[Die Abenteuer von KIM & TIM Kapt. II - To TI-Mfinity and Beyond](http://ctf.gematik.de/)"  
+                [![](https://ctftime.org/media/events/Bild_1.png){ width="200" align=left }](http://ctf.gematik.de/)  
+                **比赛名称** : [Die Abenteuer von KIM & TIM Kapt. II - To TI-Mfinity and Beyond](http://ctf.gematik.de/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-15 17:00:00 - 2024-11-16 01:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : H34lthineer (https://ctftime.org/team/170109)  
+                **添加日历** : https://ctftime.org/event/2481.ics  
+                
             ??? Quote "[BlockCTF 2024 (Formerly SquareCTF)](https://2024.blockctf.com/)"  
                 [![](https://ctftime.org/media/events/0ed304c3c4dcb6a3e887778f3928e26e.png){ width="200" align=left }](https://2024.blockctf.com/)  
                 **比赛名称** : [BlockCTF 2024 (Formerly SquareCTF)](https://2024.blockctf.com/)  
@@ -1653,15 +1653,6 @@ hide:
                 **比赛权重** : 20.00  
                 **赛事主办** : DASCTF (https://ctftime.org/team/303691)  
                 **添加日历** : https://ctftime.org/event/2458.ics  
-                
-            ??? Quote "[SekaiCTF 2024](https://ctf.sekai.team/)"  
-                [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
-                **比赛名称** : [SekaiCTF 2024](https://ctf.sekai.team/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-08-24 00:00:00 - 2024-08-26 00:00:00 UTC+8  
-                **比赛权重** : 36.96  
-                **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
-                **添加日历** : https://ctftime.org/event/2243.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
