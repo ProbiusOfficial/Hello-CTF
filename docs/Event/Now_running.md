@@ -27,15 +27,6 @@ comments: true
     **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
     **添加日历** : https://ctftime.org/event/2121.ics  
     
-??? Quote "[EKOPARTY CTF 2024](https://ctf.ekoparty.org/)"  
-    [![](https://ctftime.org/media/events/LOGO_eko_2024.png){ width="200" align=left }](https://ctf.ekoparty.org/)  
-    **比赛名称** : [EKOPARTY CTF 2024](https://ctf.ekoparty.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-13 21:00:00 - 2024-11-16 03:00:00 UTC+8  
-    **比赛权重** : 16.00  
-    **赛事主办** : NULL Life (https://ctftime.org/team/321)  
-    **添加日历** : https://ctftime.org/event/2507.ics  
-    
 ??? Quote "[1337UP LIVE CTF](https://ctf.intigriti.io/)"  
     [![](https://ctftime.org/media/events/intigriti_icon_cmyk_navy.png){ width="200" align=left }](https://ctf.intigriti.io/)  
     **比赛名称** : [1337UP LIVE CTF](https://ctf.intigriti.io/)  

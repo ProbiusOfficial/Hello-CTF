@@ -116,6 +116,15 @@ comments: true
     **赛事主办** : Square (https://ctftime.org/team/46747)  
     **添加日历** : https://ctftime.org/event/2517.ics  
     
+??? Quote "[EKOPARTY CTF 2024](https://ctf.ekoparty.org/)"  
+    [![](https://ctftime.org/media/events/LOGO_eko_2024.png){ width="200" align=left }](https://ctf.ekoparty.org/)  
+    **比赛名称** : [EKOPARTY CTF 2024](https://ctf.ekoparty.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-13 21:00:00 - 2024-11-16 03:00:00 UTC+8  
+    **比赛权重** : 16.00  
+    **赛事主办** : NULL Life (https://ctftime.org/team/321)  
+    **添加日历** : https://ctftime.org/event/2507.ics  
+    
 ??? Quote "[N1CTF 2024](https://ctf2024.nu1l.com/)"  
     [![](https://ctftime.org/media/events/logo2_5_1.png){ width="200" align=left }](https://ctf2024.nu1l.com/)  
     **比赛名称** : [N1CTF 2024](https://ctf2024.nu1l.com/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 24.89  
     **赛事主办** : CISA ICSJWG (https://ctftime.org/team/182074)  
     **添加日历** : https://ctftime.org/event/2404.ics  
-    
-??? Quote "[CyberSpace CTF 2024](https://2024.csc.tf/)"  
-    [![](https://ctftime.org/media/events/f6b991673b1944e7b199bc978b3f0a15.png){ width="200" align=left }](https://2024.csc.tf/)  
-    **比赛名称** : [CyberSpace CTF 2024](https://2024.csc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-08-31 00:00:00 - 2024-09-02 00:00:00 UTC+8  
-    **比赛权重** : 24.83  
-    **赛事主办** : CyberSpace (https://ctftime.org/team/116280)  
-    **添加日历** : https://ctftime.org/event/2428.ics  
     

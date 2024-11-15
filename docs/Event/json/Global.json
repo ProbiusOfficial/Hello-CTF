@@ -113,7 +113,7 @@
         "添加日历": "https://ctftime.org/event/2575.ics",
         "比赛形式": "Jeopardy",
         "比赛链接": "http://ctf.thehackerconclave.es/",
-        "比赛标志": "https://ctftime.org/media/events/thehackerconclavectf.jpg",
+        "比赛标志": "https://ctftime.org/media/events/ctftime2.png",
         "比赛权重": "0.00",
         "赛事主办": "C0ncl4v3 (https://ctftime.org/team/303692)",
         "比赛ID": "1138",
@@ -612,18 +612,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "EKOPARTY CTF 2024",
-        "比赛时间": "2024-11-13 21:00:00 - 2024-11-16 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2507.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.ekoparty.org/",
-        "比赛标志": "https://ctftime.org/media/events/LOGO_eko_2024.png",
-        "比赛权重": "16.00",
-        "赛事主办": "NULL Life (https://ctftime.org/team/321)",
-        "比赛ID": "121",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "1337UP LIVE CTF",
         "比赛时间": "2024-11-15 19:59:59 - 2024-11-17 07:59:59 UTC+8",
         "添加日历": "https://ctftime.org/event/2446.ics",
@@ -669,6 +657,18 @@
         "比赛权重": "52.43",
         "赛事主办": "Square (https://ctftime.org/team/46747)",
         "比赛ID": "218",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "EKOPARTY CTF 2024",
+        "比赛时间": "2024-11-13 21:00:00 - 2024-11-16 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2507.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.ekoparty.org/",
+        "比赛标志": "https://ctftime.org/media/events/LOGO_eko_2024.png",
+        "比赛权重": "16.00",
+        "赛事主办": "NULL Life (https://ctftime.org/team/321)",
+        "比赛ID": "121",
         "比赛状态": "past"
     },
     {
@@ -1833,18 +1833,6 @@
         "比赛权重": "24.89",
         "赛事主办": "CISA ICSJWG (https://ctftime.org/team/182074)",
         "比赛ID": "784",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CyberSpace CTF 2024",
-        "比赛时间": "2024-08-31 00:00:00 - 2024-09-02 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2428.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2024.csc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/f6b991673b1944e7b199bc978b3f0a15.png",
-        "比赛权重": "24.83",
-        "赛事主办": "CyberSpace (https://ctftime.org/team/116280)",
-        "比赛ID": "1147",
         "比赛状态": "past"
     }
 ]
