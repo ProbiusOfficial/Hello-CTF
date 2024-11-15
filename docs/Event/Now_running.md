@@ -54,3 +54,12 @@ comments: true
     **赛事主办** : CryptoCat (https://ctftime.org/team/124896)  
     **添加日历** : https://ctftime.org/event/2446.ics  
     
+??? Quote "[PwnSec CTF 2024](https://ctf.pwnsec.xyz/)"  
+    [![](https://ctftime.org/media/events/Logo_12.png){ width="200" align=left }](https://ctf.pwnsec.xyz/)  
+    **比赛名称** : [PwnSec CTF 2024](https://ctf.pwnsec.xyz/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-15 23:00:00 - 2024-11-16 23:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : PwnSec (https://ctftime.org/team/28797)  
+    **添加日历** : https://ctftime.org/event/2454.ics  
+    
