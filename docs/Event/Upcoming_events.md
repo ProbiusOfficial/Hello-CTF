@@ -15,15 +15,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[1337UP LIVE CTF](https://ctf.intigriti.io/)"  
-    [![](https://ctftime.org/media/events/intigriti_icon_cmyk_navy.png){ width="200" align=left }](https://ctf.intigriti.io/)  
-    **比赛名称** : [1337UP LIVE CTF](https://ctf.intigriti.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-15 19:59:59 - 2024-11-17 07:59:59 UTC+8  
-    **比赛权重** : 24.23  
-    **赛事主办** : CryptoCat (https://ctftime.org/team/124896)  
-    **添加日历** : https://ctftime.org/event/2446.ics  
-    
 ??? Quote "[PwnSec CTF 2024](https://ctf.pwnsec.xyz/)"  
     [![](https://ctftime.org/media/events/Logo_12.png){ width="200" align=left }](https://ctf.pwnsec.xyz/)  
     **比赛名称** : [PwnSec CTF 2024](https://ctf.pwnsec.xyz/)  
