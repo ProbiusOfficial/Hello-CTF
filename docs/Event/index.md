@@ -993,7 +993,7 @@ hide:
                 **比赛名称** : [CSAW CTF Final Round 2024](https://ctf.csaw.io/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-11-08 00:00:00 - 2024-11-09 12:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
                 **添加日历** : https://ctftime.org/event/2567.ics  
                 

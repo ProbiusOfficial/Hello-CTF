@@ -798,7 +798,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.csaw.io/",
         "比赛标志": "https://ctftime.org/media/events/CSAW15LOGO_COLOR_1.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "NYUSEC (https://ctftime.org/team/439)",
         "比赛ID": "19",
         "比赛状态": "past"
