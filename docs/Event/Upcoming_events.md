@@ -15,15 +15,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[BRICS+ CTF Finals 2024](https://brics-ctf.com/)"  
-    [![](https://ctftime.org/media/events/brics-logo-2024-square.png){ width="200" align=left }](https://brics-ctf.com/)  
-    **比赛名称** : [BRICS+ CTF Finals 2024](https://brics-ctf.com/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2024-11-16 18:00:00 - 2024-11-17 02:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : ITMO FSIT (https://ctftime.org/team/264636)  
-    **添加日历** : https://ctftime.org/event/2521.ics  
-    
 ??? Quote "[Crate-CTF 2024](https://foi.se/cratectf)"  
     [![](https://ctftime.org/media/events/crate-ctf-2024.png){ width="200" align=left }](https://foi.se/cratectf)  
     **比赛名称** : [Crate-CTF 2024](https://foi.se/cratectf)  
