@@ -723,15 +723,6 @@ hide:
                 **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
                 **添加日历** : https://ctftime.org/event/2574.ics  
                 
-            ??? Quote "[Crate-CTF 2024](https://foi.se/cratectf)"  
-                [![](https://ctftime.org/media/events/crate-ctf-2024.png){ width="200" align=left }](https://foi.se/cratectf)  
-                **比赛名称** : [Crate-CTF 2024](https://foi.se/cratectf)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-16 21:00:00 - 2024-11-17 05:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Crate-CTF (https://ctftime.org/team/352250)  
-                **添加日历** : https://ctftime.org/event/2489.ics  
-                
             ??? Quote "[iCTF 2024 (Undergrad)](https://ictf.cs.ucsb.edu/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ictf.cs.ucsb.edu/)  
                 **比赛名称** : [iCTF 2024 (Undergrad)](https://ictf.cs.ucsb.edu/)  
@@ -844,6 +835,15 @@ hide:
                 **其他说明** : CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。  
                 
         === "国外赛事"
+            ??? Quote "[Crate-CTF 2024](https://foi.se/cratectf)"  
+                [![](https://ctftime.org/media/events/crate-ctf-2024.png){ width="200" align=left }](https://foi.se/cratectf)  
+                **比赛名称** : [Crate-CTF 2024](https://foi.se/cratectf)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-16 21:00:00 - 2024-11-17 05:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Crate-CTF (https://ctftime.org/team/352250)  
+                **添加日历** : https://ctftime.org/event/2489.ics  
+                
             ??? Quote "[BRICS+ CTF Finals 2024](https://brics-ctf.com/)"  
                 [![](https://ctftime.org/media/events/brics-logo-2024-square.png){ width="200" align=left }](https://brics-ctf.com/)  
                 **比赛名称** : [BRICS+ CTF Finals 2024](https://brics-ctf.com/)  
@@ -1734,15 +1734,6 @@ hide:
                 **比赛权重** : 21.80  
                 **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
                 **添加日历** : https://ctftime.org/event/2398.ics  
-                
-            ??? Quote "[BlackHat MEA CTF Qualification 2024](https://blackhatmea.com/capture-the-flag)"  
-                [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
-                **比赛名称** : [BlackHat MEA CTF Qualification 2024](https://blackhatmea.com/capture-the-flag)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-01 18:00:00 - 2024-09-02 17:59:59 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
-                **添加日历** : https://ctftime.org/event/2430.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
