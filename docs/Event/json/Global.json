@@ -588,18 +588,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "PwnSec CTF 2024",
-        "比赛时间": "2024-11-15 23:00:00 - 2024-11-16 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2454.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.pwnsec.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/Logo_12.png",
-        "比赛权重": "0",
-        "赛事主办": "PwnSec (https://ctftime.org/team/28797)",
-        "比赛ID": "1150",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "No Hack No CTF 2024",
         "比赛时间": "2024-11-16 09:30:00 - 2024-11-17 21:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2574.ics",
@@ -634,6 +622,18 @@
         "赛事主办": "Crate-CTF (https://ctftime.org/team/352250)",
         "比赛ID": "1172",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "PwnSec CTF 2024",
+        "比赛时间": "2024-11-15 23:00:00 - 2024-11-16 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2454.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.pwnsec.xyz/",
+        "比赛标志": "https://ctftime.org/media/events/Logo_12.png",
+        "比赛权重": "0",
+        "赛事主办": "PwnSec (https://ctftime.org/team/28797)",
+        "比赛ID": "1150",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Die Abenteuer von KIM & TIM Kapt. II - To TI-Mfinity and Beyond",
@@ -1821,18 +1821,6 @@
         "比赛权重": "0",
         "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
         "比赛ID": "1163",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CISA ICS CTF 2024",
-        "比赛时间": "2024-09-01 01:00:00 - 2024-09-05 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2404.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.cisaicsctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/CTF_Drifveil_Logo-1.png",
-        "比赛权重": "24.89",
-        "赛事主办": "CISA ICSJWG (https://ctftime.org/team/182074)",
-        "比赛ID": "784",
         "比赛状态": "past"
     }
 ]

@@ -741,15 +741,6 @@ hide:
                 **赛事主办** : CryptoCat (https://ctftime.org/team/124896)  
                 **添加日历** : https://ctftime.org/event/2446.ics  
                 
-            ??? Quote "[PwnSec CTF 2024](https://ctf.pwnsec.xyz/)"  
-                [![](https://ctftime.org/media/events/Logo_12.png){ width="200" align=left }](https://ctf.pwnsec.xyz/)  
-                **比赛名称** : [PwnSec CTF 2024](https://ctf.pwnsec.xyz/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-15 23:00:00 - 2024-11-16 23:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : PwnSec (https://ctftime.org/team/28797)  
-                **添加日历** : https://ctftime.org/event/2454.ics  
-                
             ??? Quote "[No Hack No CTF 2024](https://nhnc.ic3dt3a.org/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://nhnc.ic3dt3a.org/)  
                 **比赛名称** : [No Hack No CTF 2024](https://nhnc.ic3dt3a.org/)  
@@ -871,6 +862,15 @@ hide:
                 **其他说明** : CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。  
                 
         === "国外赛事"
+            ??? Quote "[PwnSec CTF 2024](https://ctf.pwnsec.xyz/)"  
+                [![](https://ctftime.org/media/events/Logo_12.png){ width="200" align=left }](https://ctf.pwnsec.xyz/)  
+                **比赛名称** : [PwnSec CTF 2024](https://ctf.pwnsec.xyz/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-15 23:00:00 - 2024-11-16 23:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : PwnSec (https://ctftime.org/team/28797)  
+                **添加日历** : https://ctftime.org/event/2454.ics  
+                
             ??? Quote "[Die Abenteuer von KIM & TIM Kapt. II - To TI-Mfinity and Beyond](http://ctf.gematik.de/)"  
                 [![](https://ctftime.org/media/events/Bild_1.png){ width="200" align=left }](http://ctf.gematik.de/)  
                 **比赛名称** : [Die Abenteuer von KIM & TIM Kapt. II - To TI-Mfinity and Beyond](http://ctf.gematik.de/)  
@@ -1761,15 +1761,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
                 **添加日历** : https://ctftime.org/event/2465.ics  
-                
-            ??? Quote "[CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)"  
-                [![](https://ctftime.org/media/events/CTF_Drifveil_Logo-1.png){ width="200" align=left }](https://ctf.cisaicsctf.com/)  
-                **比赛名称** : [CISA ICS CTF 2024](https://ctf.cisaicsctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-01 01:00:00 - 2024-09-05 00:00:00 UTC+8  
-                **比赛权重** : 24.89  
-                **赛事主办** : CISA ICSJWG (https://ctftime.org/team/182074)  
-                **添加日历** : https://ctftime.org/event/2404.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
