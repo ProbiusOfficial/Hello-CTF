@@ -98,6 +98,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[BRICS+ CTF Finals 2024](https://brics-ctf.com/)"  
+    [![](https://ctftime.org/media/events/brics-logo-2024-square.png){ width="200" align=left }](https://brics-ctf.com/)  
+    **比赛名称** : [BRICS+ CTF Finals 2024](https://brics-ctf.com/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-11-16 18:00:00 - 2024-11-17 02:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : ITMO FSIT (https://ctftime.org/team/264636)  
+    **添加日历** : https://ctftime.org/event/2521.ics  
+    
 ??? Quote "[PwnSec CTF 2024](https://ctf.pwnsec.xyz/)"  
     [![](https://ctftime.org/media/events/Logo_12.png){ width="200" align=left }](https://ctf.pwnsec.xyz/)  
     **比赛名称** : [PwnSec CTF 2024](https://ctf.pwnsec.xyz/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
     **添加日历** : https://ctftime.org/event/2430.ics  
-    
-??? Quote "[AlpacaHack Round 2 (Web)](https://alpacahack.com/ctfs/round-2)"  
-    [![](https://ctftime.org/media/events/dark_512.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-2)  
-    **比赛名称** : [AlpacaHack Round 2 (Web)](https://alpacahack.com/ctfs/round-2)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-01 11:00:00 - 2024-09-01 17:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
-    **添加日历** : https://ctftime.org/event/2465.ics  
     
