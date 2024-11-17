@@ -921,7 +921,7 @@ hide:
                 **比赛名称** : [HITCON CTF 2024 Final](http://ctf.hitcon.org/)  
                 **比赛形式** : Attack-Defense  
                 **比赛时间** : 2024-11-09 08:00:00 - 2024-11-10 16:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 0.00  
                 **赛事主办** : HITCON (https://ctftime.org/team/8299)  
                 **添加日历** : https://ctftime.org/event/2523.ics  
                 
