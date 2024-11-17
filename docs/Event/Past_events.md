@@ -125,6 +125,15 @@ comments: true
     **赛事主办** : PwnSec (https://ctftime.org/team/28797)  
     **添加日历** : https://ctftime.org/event/2454.ics  
     
+??? Quote "[1337UP LIVE CTF](https://ctf.intigriti.io/)"  
+    [![](https://ctftime.org/media/events/intigriti_icon_cmyk_navy.png){ width="200" align=left }](https://ctf.intigriti.io/)  
+    **比赛名称** : [1337UP LIVE CTF](https://ctf.intigriti.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-15 19:59:59 - 2024-11-17 07:59:59 UTC+8  
+    **比赛权重** : 24.23  
+    **赛事主办** : CryptoCat (https://ctftime.org/team/124896)  
+    **添加日历** : https://ctftime.org/event/2446.ics  
+    
 ??? Quote "[Die Abenteuer von KIM & TIM Kapt. II - To TI-Mfinity and Beyond](http://ctf.gematik.de/)"  
     [![](https://ctftime.org/media/events/Bild_1.png){ width="200" align=left }](http://ctf.gematik.de/)  
     **比赛名称** : [Die Abenteuer von KIM & TIM Kapt. II - To TI-Mfinity and Beyond](http://ctf.gematik.de/)  
@@ -988,13 +997,4 @@ comments: true
     **比赛权重** : 53.88  
     **赛事主办** : W&M (https://ctftime.org/team/54666)  
     **添加日历** : https://ctftime.org/event/2457.ics  
-    
-??? Quote "[CSAW CTF Qualification Round 2024](https://ctf.csaw.io/)"  
-    [![](https://ctftime.org/media/events/CSAW.png){ width="200" align=left }](https://ctf.csaw.io/)  
-    **比赛名称** : [CSAW CTF Qualification Round 2024](https://ctf.csaw.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-07 00:00:00 - 2024-09-09 00:00:00 UTC+8  
-    **比赛权重** : 21.80  
-    **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
-    **添加日历** : https://ctftime.org/event/2398.ics  
     
