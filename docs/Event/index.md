@@ -949,7 +949,7 @@ hide:
                 **比赛名称** : [cruXipher 2024 - ATMoS '24, BITS Hyderabad](https://cruxipher.crux-bphc.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-11-08 20:30:00 - 2024-11-10 20:30:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : CRUx BPHC (https://ctftime.org/team/270645)  
                 **添加日历** : https://ctftime.org/event/2559.ics  
                 
