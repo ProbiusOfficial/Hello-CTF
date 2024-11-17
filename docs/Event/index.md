@@ -1030,7 +1030,7 @@ hide:
                 **比赛名称** : [Hackers N' Hops](https://hackersnhops.ctfd.io/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-11-02 18:00:00 - 2024-11-04 02:00:00 UTC+8  
-                **比赛权重** : 24.69  
+                **比赛权重** : 24.71  
                 **赛事主办** : Hackers N' Hops (https://ctftime.org/team/119910)  
                 **添加日历** : https://ctftime.org/event/2550.ics  
                 
@@ -1183,7 +1183,7 @@ hide:
                 **比赛名称** : [Z3R0 D4Y CTF](https://ctf.zerologon.co.in/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-10-24 17:00:00 - 2024-10-25 05:00:00 UTC+8  
-                **比赛权重** : 24.77  
+                **比赛权重** : 24.79  
                 **赛事主办** : Z3r0_l0g0n (https://ctftime.org/team/227457)  
                 **添加日历** : https://ctftime.org/event/2529.ics  
                 
@@ -1408,7 +1408,7 @@ hide:
                 **比赛名称** : [IRON CTF 2024](https://ctf.1nf1n1ty.team/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-10-05 13:30:00 - 2024-10-06 13:30:00 UTC+8  
-                **比赛权重** : 24.50  
+                **比赛权重** : 24.51  
                 **赛事主办** : 1nf1n1ty (https://ctftime.org/team/151859)  
                 **添加日历** : https://ctftime.org/event/2497.ics  
                 
