@@ -18,15 +18,6 @@ comments: true
     **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
     **添加日历** : https://ctftime.org/event/2121.ics  
     
-??? Quote "[No Hack No CTF 2024](https://nhnc.ic3dt3a.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://nhnc.ic3dt3a.org/)  
-    **比赛名称** : [No Hack No CTF 2024](https://nhnc.ic3dt3a.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-16 09:30:00 - 2024-11-17 21:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
-    **添加日历** : https://ctftime.org/event/2574.ics  
-    
 ??? Quote "[iCTF 2024 (Undergrad)](https://ictf.cs.ucsb.edu/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ictf.cs.ucsb.edu/)  
     **比赛名称** : [iCTF 2024 (Undergrad)](https://ictf.cs.ucsb.edu/)  
