@@ -174,7 +174,7 @@ comments: true
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-13 21:00:00 - 2024-11-16 03:00:00 UTC+8  
     **比赛权重** : 16.00  
-    **赛事主办** : NULL Life (https://ctftime.org/team/321)  
+    **赛事主办** : NULL (https://ctftime.org/team/321)  
     **添加日历** : https://ctftime.org/event/2507.ics  
     
 ??? Quote "[N1CTF 2024](https://ctf2024.nu1l.com/)"  
