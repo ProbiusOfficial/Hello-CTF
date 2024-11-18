@@ -629,7 +629,7 @@ hide:
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-03-15 19:00:00 - 2025-03-16 19:00:00 UTC+8  
                 **比赛权重** : 0.00  
-                **赛事主办** : athackPrivate (https://ctftime.org/team/278003)  
+                **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
                 **添加日历** : https://ctftime.org/event/2558.ics  
                 
             ??? Quote "[SwampCTF 2025](https://swampctf.com/)"  
