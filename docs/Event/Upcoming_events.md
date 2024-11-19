@@ -45,9 +45,9 @@ comments: true
     **赛事主办** : WP CTF (https://ctftime.org/team/303099)  
     **添加日历** : https://ctftime.org/event/2395.ics  
     
-??? Quote "[The Hacker Conclave v2](http://ctf.thehackerconclave.es/)"  
-    [![](https://ctftime.org/media/events/ctftime2.png){ width="200" align=left }](http://ctf.thehackerconclave.es/)  
-    **比赛名称** : [The Hacker Conclave v2](http://ctf.thehackerconclave.es/)  
+??? Quote "[The Hacker Conclave v2](https://ctf.thehackerconclave.es/)"  
+    [![](https://ctftime.org/media/events/ctftime2.png){ width="200" align=left }](https://ctf.thehackerconclave.es/)  
+    **比赛名称** : [The Hacker Conclave v2](https://ctf.thehackerconclave.es/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-23 17:00:00 - 2024-11-23 20:00:00 UTC+8  
     **比赛权重** : 0.00  
