@@ -45,3 +45,12 @@ comments: true
     **赛事主办** : LosFuzzys (https://ctftime.org/team/8323)  
     **添加日历** : https://ctftime.org/event/2402.ics  
     
+??? Quote "[Hackvens 2024](https://hackvens.fr/)"  
+    [![](https://ctftime.org/media/events/Logo_Hackvens.png){ width="200" align=left }](https://hackvens.fr/)  
+    **比赛名称** : [Hackvens 2024](https://hackvens.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-23 04:00:00 - 2024-11-23 14:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Hackvens (https://ctftime.org/team/194092)  
+    **添加日历** : https://ctftime.org/event/2401.ics  
+    

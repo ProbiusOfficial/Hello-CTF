@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Hackvens 2024",
-        "比赛时间": "2024-11-23 04:00:00 - 2024-11-23 14:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2401.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hackvens.fr/",
-        "比赛标志": "https://ctftime.org/media/events/Logo_Hackvens.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Hackvens (https://ctftime.org/team/194092)",
-        "比赛ID": "814",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "SECCON CTF 13 Quals",
         "比赛时间": "2024-11-23 13:00:00 - 2024-11-24 13:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2478.ics",
@@ -561,6 +549,18 @@
         "比赛权重": "35.69",
         "赛事主办": "LosFuzzys (https://ctftime.org/team/8323)",
         "比赛ID": "863",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Hackvens 2024",
+        "比赛时间": "2024-11-23 04:00:00 - 2024-11-23 14:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2401.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://hackvens.fr/",
+        "比赛标志": "https://ctftime.org/media/events/Logo_Hackvens.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Hackvens (https://ctftime.org/team/194092)",
+        "比赛ID": "814",
         "比赛状态": "nowrunning"
     },
     {
