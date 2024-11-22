@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "GlacierCTF 2024",
-        "比赛时间": "2024-11-23 02:00:00 - 2024-11-24 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2402.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://glacierctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/3ae6516246966c8d08c81d3bd5451cfa_1.png",
-        "比赛权重": "35.69",
-        "赛事主办": "LosFuzzys (https://ctftime.org/team/8323)",
-        "比赛ID": "863",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Hackvens 2024",
         "比赛时间": "2024-11-23 04:00:00 - 2024-11-23 14:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2401.ics",
@@ -561,6 +549,18 @@
         "比赛权重": "0",
         "赛事主办": "Shellphish (https://ctftime.org/team/285)",
         "比赛ID": "5",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "GlacierCTF 2024",
+        "比赛时间": "2024-11-23 02:00:00 - 2024-11-24 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2402.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://glacierctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/3ae6516246966c8d08c81d3bd5451cfa_1.png",
+        "比赛权重": "35.69",
+        "赛事主办": "LosFuzzys (https://ctftime.org/team/8323)",
+        "比赛ID": "863",
         "比赛状态": "nowrunning"
     },
     {

@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[GlacierCTF 2024](https://glacierctf.com/)"  
-            [![](https://ctftime.org/media/events/3ae6516246966c8d08c81d3bd5451cfa_1.png){ width="200" align=left }](https://glacierctf.com/)  
-            **比赛名称** : [GlacierCTF 2024](https://glacierctf.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-11-23 02:00:00 - 2024-11-24 02:00:00 UTC+8  
-            **比赛权重** : 35.69  
-            **赛事主办** : LosFuzzys (https://ctftime.org/team/8323)  
-            **添加日历** : https://ctftime.org/event/2402.ics  
-            
         ??? Quote "[Hackvens 2024](https://hackvens.fr/)"  
             [![](https://ctftime.org/media/events/Logo_Hackvens.png){ width="200" align=left }](https://hackvens.fr/)  
             **比赛名称** : [Hackvens 2024](https://hackvens.fr/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : WP CTF (https://ctftime.org/team/303099)  
             **添加日历** : https://ctftime.org/event/2395.ics  
+            
+        ??? Quote "[The Hacker Conclave v2](https://ctf.thehackerconclave.es/)"  
+            [![](https://ctftime.org/media/events/ctftime2.png){ width="200" align=left }](https://ctf.thehackerconclave.es/)  
+            **比赛名称** : [The Hacker Conclave v2](https://ctf.thehackerconclave.es/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-11-23 17:00:00 - 2024-11-23 20:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : C0ncl4v3 (https://ctftime.org/team/303692)  
+            **添加日历** : https://ctftime.org/event/2575.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
