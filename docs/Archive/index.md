@@ -73,6 +73,14 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [windows驱动开发（0）——Windows驱动开发的基础知识](https://xia0ji233.github.io/2024/11/23/WindowsDriver0/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-11-22
+
+    今天来学习一下Windows驱动开发基础由于之前操之过急，对驱动开发很多东西都没有了解便强行上手，导致后面困难重重，于是痛定思痛，开始推翻重来，相信之前的一些开发经验会让这一路好走一点。环境搭建Vmware + VirtualKD + windbg preview 做调试环境。VS 2022 + WDK 做开发环境。参考链接1参考链接2内核API的使用对于导出的函数，只需要包含对应的头文件直接使用...
+    ### [windows内核（6）——中断与异常和控制寄存器](https://xia0ji233.github.io/2024/11/22/WindowsKernel6/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-11-22
+
+    今天来学习一下X86中断与异常和控制寄存器中断中断通常是由CPU外部的输入输出设备（硬件）所触发的，供外部设备通知CPU有事情需要处理，因此又叫中断请求，英文为Interrupt Request。中断请求的目的是希望CPU暂时停止执行当前正在执行的程序，转去执行中断请求所对应的中断处理例程，中断处理程序由 IDT 表决定。80x86 有两条中断请求线：非屏蔽中断线，NMI，全称NonMaskabl...
     ### [windows内核（5）——TLB](https://xia0ji233.github.io/2024/11/11/WindowsKernel5/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2024-11-11
 
@@ -145,13 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-08-20
 
     b19c15fd4dd9cbc0046f840c9697ff767ee735920624715daa4b248a6b55a2d45c1d3b4bd4f596a2a91a250df2f1d27df4dbf60e8474a8609a2deccd60107c31ac3597610ca2a58d2f8a391024c394270809fe49066896744b8b8ba883dd67119b9f0d...
-    ### [浅谈帆软在Windows下写文件RCE姿势](https://y4tacker.github.io/2024/08/14/year/2024/8/%E6%B5%85%E8%B0%88%E5%B8%86%E8%BD%AF%E5%9C%A8Windows%E4%B8%8B%E5%86%99%E6%96%87%E4%BB%B6RCE%E5%A7%BF%E5%8A%BF/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-08-14
-
-    写在前面之前上一篇文章中浅析帆软FineVis默认插件前台RCE提到jasper依赖没被加载，当时只是简单做了测试，没有具体看为什么jsp未被解析，只是疑惑了下tomcat下jspservlet配置明明正确配置页面却直接返回空(没有考虑到编译报错这一层问题)，今天无意间看到星球有师傅分享了如何解析jsp的过程，写文章同时也顺带分享下如何实现RCE的两种姿势当然至于为什么是windows，之前的两篇...
-    ### [JeecgBoot最新版权限绕过第二弹之内存马注入实录](https://y4tacker.github.io/2024/08/02/year/2024/8/%E6%9C%80%E6%96%B0%E7%89%88JeecgBoot%E7%AC%AC%E4%BA%8C%E5%BC%B9%E4%B9%8B%E5%8F%97%E9%99%90%E6%9D%A1%E4%BB%B6%E4%B8%8B%E7%9A%84%E5%86%85%E5%AD%98%E9%A9%AC%E6%B3%A8%E5%85%A5%E5%AE%9E%E5%BD%95/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-08-02
-
-    2356948a1ad7c887c79f19fc812ea158476a2d05ad621a8e8ad43ad15eed6aa04358928d8237c256deacbb01a81ac6f727557979123b7d202e97fdc8e9cd9984ac9dc71337c850b5e565eea7d7034b42ecae2a86f1ddb3613caa26e2e306a7102f259a...
 
 </div>
