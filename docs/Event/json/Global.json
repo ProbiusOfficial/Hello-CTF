@@ -516,30 +516,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "iCTF 2024 (Undergrad)",
-        "比赛时间": "2024-11-17 02:00:00 - 2024-11-23 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2565.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ictf.cs.ucsb.edu/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "Shellphish (https://ctftime.org/team/285)",
-        "比赛ID": "5",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "iCTF 2024 (Highschool)",
-        "比赛时间": "2024-11-17 02:00:00 - 2024-11-23 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2566.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ictf.cs.ucsb.edu/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "Shellphish (https://ctftime.org/team/285)",
-        "比赛ID": "5",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "GlacierCTF 2024",
         "比赛时间": "2024-11-23 02:00:00 - 2024-11-24 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2402.ics",
@@ -562,6 +538,30 @@
         "赛事主办": "Hackvens (https://ctftime.org/team/194092)",
         "比赛ID": "814",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "iCTF 2024 (Undergrad)",
+        "比赛时间": "2024-11-17 02:00:00 - 2024-11-23 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2565.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ictf.cs.ucsb.edu/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "Shellphish (https://ctftime.org/team/285)",
+        "比赛ID": "5",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "iCTF 2024 (Highschool)",
+        "比赛时间": "2024-11-17 02:00:00 - 2024-11-23 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2566.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ictf.cs.ucsb.edu/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "Shellphish (https://ctftime.org/team/285)",
+        "比赛ID": "5",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Crate-CTF 2024",
@@ -1737,30 +1737,6 @@
         "比赛权重": "24.27",
         "赛事主办": "UCG (https://ctftime.org/team/255103)",
         "比赛ID": "977",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "snakeCTF 2024 Quals",
-        "比赛时间": "2024-09-07 16:00:00 - 2024-09-08 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2418.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2024.snakectf.org/",
-        "比赛标志": "https://ctftime.org/media/events/LogoCroppable_1.png",
-        "比赛权重": "24.79",
-        "赛事主办": "MadrHacks (https://ctftime.org/team/114509)",
-        "比赛ID": "994",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "HackTheDrone CTF Qualifier",
-        "比赛时间": "2024-09-07 12:00:00 - 2024-09-08 12:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2474.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://hackthedrone.org/eng/ctf.php",
-        "比赛标志": "https://ctftime.org/media/events/hackthedrone.png",
-        "比赛权重": "0.00",
-        "赛事主办": "HackTheDrone (https://ctftime.org/team/337463)",
-        "比赛ID": "1165",
         "比赛状态": "past"
     }
 ]

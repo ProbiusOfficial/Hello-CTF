@@ -681,24 +681,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
                 
-            ??? Quote "[iCTF 2024 (Undergrad)](https://ictf.cs.ucsb.edu/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ictf.cs.ucsb.edu/)  
-                **比赛名称** : [iCTF 2024 (Undergrad)](https://ictf.cs.ucsb.edu/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-17 02:00:00 - 2024-11-23 08:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Shellphish (https://ctftime.org/team/285)  
-                **添加日历** : https://ctftime.org/event/2565.ics  
-                
-            ??? Quote "[iCTF 2024 (Highschool)](https://ictf.cs.ucsb.edu/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ictf.cs.ucsb.edu/)  
-                **比赛名称** : [iCTF 2024 (Highschool)](https://ictf.cs.ucsb.edu/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-17 02:00:00 - 2024-11-23 08:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Shellphish (https://ctftime.org/team/285)  
-                **添加日历** : https://ctftime.org/event/2566.ics  
-                
             ??? Quote "[GlacierCTF 2024](https://glacierctf.com/)"  
                 [![](https://ctftime.org/media/events/3ae6516246966c8d08c81d3bd5451cfa_1.png){ width="200" align=left }](https://glacierctf.com/)  
                 **比赛名称** : [GlacierCTF 2024](https://glacierctf.com/)  
@@ -818,6 +800,24 @@ hide:
                 **其他说明** : CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。  
                 
         === "国外赛事"
+            ??? Quote "[iCTF 2024 (Undergrad)](https://ictf.cs.ucsb.edu/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ictf.cs.ucsb.edu/)  
+                **比赛名称** : [iCTF 2024 (Undergrad)](https://ictf.cs.ucsb.edu/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-17 02:00:00 - 2024-11-23 08:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Shellphish (https://ctftime.org/team/285)  
+                **添加日历** : https://ctftime.org/event/2565.ics  
+                
+            ??? Quote "[iCTF 2024 (Highschool)](https://ictf.cs.ucsb.edu/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ictf.cs.ucsb.edu/)  
+                **比赛名称** : [iCTF 2024 (Highschool)](https://ictf.cs.ucsb.edu/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-17 02:00:00 - 2024-11-23 08:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Shellphish (https://ctftime.org/team/285)  
+                **添加日历** : https://ctftime.org/event/2566.ics  
+                
             ??? Quote "[Crate-CTF 2024](https://foi.se/cratectf)"  
                 [![](https://ctftime.org/media/events/crate-ctf-2024.png){ width="200" align=left }](https://foi.se/cratectf)  
                 **比赛名称** : [Crate-CTF 2024](https://foi.se/cratectf)  
@@ -1699,24 +1699,6 @@ hide:
                 **比赛权重** : 24.27  
                 **赛事主办** : UCG (https://ctftime.org/team/255103)  
                 **添加日历** : https://ctftime.org/event/2460.ics  
-                
-            ??? Quote "[snakeCTF 2024 Quals](https://2024.snakectf.org/)"  
-                [![](https://ctftime.org/media/events/LogoCroppable_1.png){ width="200" align=left }](https://2024.snakectf.org/)  
-                **比赛名称** : [snakeCTF 2024 Quals](https://2024.snakectf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-07 16:00:00 - 2024-09-08 16:00:00 UTC+8  
-                **比赛权重** : 24.79  
-                **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
-                **添加日历** : https://ctftime.org/event/2418.ics  
-                
-            ??? Quote "[HackTheDrone CTF Qualifier](http://hackthedrone.org/eng/ctf.php)"  
-                [![](https://ctftime.org/media/events/hackthedrone.png){ width="200" align=left }](http://hackthedrone.org/eng/ctf.php)  
-                **比赛名称** : [HackTheDrone CTF Qualifier](http://hackthedrone.org/eng/ctf.php)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-07 12:00:00 - 2024-09-08 12:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : HackTheDrone (https://ctftime.org/team/337463)  
-                **添加日历** : https://ctftime.org/event/2474.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
