@@ -654,15 +654,6 @@ hide:
                 **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
                 **添加日历** : https://ctftime.org/event/2478.ics  
                 
-            ??? Quote "[CyberSci Regional Qualifiers 2024-25](https://cybersecuritychallenge.ca/)"  
-                [![](https://ctftime.org/media/events/9ad26ba791d2c5418b515bd4699ea7e2.png){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
-                **比赛名称** : [CyberSci Regional Qualifiers 2024-25](https://cybersecuritychallenge.ca/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-24 00:00:00 - 2024-11-24 07:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
-                **添加日历** : https://ctftime.org/event/2511.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[蜀道山高校联合公益赛](https://ctf.yunyansec.com/#/event/center)"  
@@ -764,6 +755,15 @@ hide:
                 **其他说明** : CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。  
                 
         === "国外赛事"
+            ??? Quote "[CyberSci Regional Qualifiers 2024-25](https://cybersecuritychallenge.ca/)"  
+                [![](https://ctftime.org/media/events/9ad26ba791d2c5418b515bd4699ea7e2.png){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
+                **比赛名称** : [CyberSci Regional Qualifiers 2024-25](https://cybersecuritychallenge.ca/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-24 00:00:00 - 2024-11-24 07:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
+                **添加日历** : https://ctftime.org/event/2511.ics  
+                
             ??? Quote "[The Hacker Conclave v2](https://ctf.thehackerconclave.es/)"  
                 [![](https://ctftime.org/media/events/ctftime2.png){ width="200" align=left }](https://ctf.thehackerconclave.es/)  
                 **比赛名称** : [The Hacker Conclave v2](https://ctf.thehackerconclave.es/)  
@@ -1654,15 +1654,6 @@ hide:
                 **比赛权重** : 80.00  
                 **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
                 **添加日历** : https://ctftime.org/event/2440.ics  
-                
-            ??? Quote "[MOCA CTF - Finals](https://moca.camp/ctf/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://moca.camp/ctf/)  
-                **比赛名称** : [MOCA CTF - Finals](https://moca.camp/ctf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-14 00:00:00 - 2024-09-15 00:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
-                **添加日历** : https://ctftime.org/event/2294.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

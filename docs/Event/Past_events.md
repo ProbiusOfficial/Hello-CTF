@@ -105,6 +105,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[CyberSci Regional Qualifiers 2024-25](https://cybersecuritychallenge.ca/)"  
+    [![](https://ctftime.org/media/events/9ad26ba791d2c5418b515bd4699ea7e2.png){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
+    **比赛名称** : [CyberSci Regional Qualifiers 2024-25](https://cybersecuritychallenge.ca/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-24 00:00:00 - 2024-11-24 07:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
+    **添加日历** : https://ctftime.org/event/2511.ics  
+    
 ??? Quote "[The Hacker Conclave v2](https://ctf.thehackerconclave.es/)"  
     [![](https://ctftime.org/media/events/ctftime2.png){ width="200" align=left }](https://ctf.thehackerconclave.es/)  
     **比赛名称** : [The Hacker Conclave v2](https://ctf.thehackerconclave.es/)  
@@ -995,13 +1004,4 @@ comments: true
     **比赛权重** : 80.00  
     **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
     **添加日历** : https://ctftime.org/event/2440.ics  
-    
-??? Quote "[MOCA CTF - Finals](https://moca.camp/ctf/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://moca.camp/ctf/)  
-    **比赛名称** : [MOCA CTF - Finals](https://moca.camp/ctf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-14 00:00:00 - 2024-09-15 00:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
-    **添加日历** : https://ctftime.org/event/2294.ics  
     

@@ -489,7 +489,7 @@
         "比赛权重": "0",
         "赛事主办": "CyberSciOrganizers (https://ctftime.org/team/157536)",
         "比赛ID": "643",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "The Hacker Conclave v2",
@@ -1677,18 +1677,6 @@
         "比赛权重": "80.00",
         "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
         "比赛ID": "372",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "MOCA CTF - Finals",
-        "比赛时间": "2024-09-14 00:00:00 - 2024-09-15 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2294.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://moca.camp/ctf/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Metro Olografix (https://ctftime.org/team/268425)",
-        "比赛ID": "1075",
         "比赛状态": "past"
     }
 ]
