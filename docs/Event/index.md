@@ -681,15 +681,6 @@ hide:
                 **赛事主办** : LosFuzzys (https://ctftime.org/team/8323)  
                 **添加日历** : https://ctftime.org/event/2402.ics  
                 
-            ??? Quote "[Hackvens 2024](https://hackvens.fr/)"  
-                [![](https://ctftime.org/media/events/Logo_Hackvens.png){ width="200" align=left }](https://hackvens.fr/)  
-                **比赛名称** : [Hackvens 2024](https://hackvens.fr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-23 04:00:00 - 2024-11-23 14:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Hackvens (https://ctftime.org/team/194092)  
-                **添加日历** : https://ctftime.org/event/2401.ics  
-                
             ??? Quote "[SECCON CTF 13 Quals](https://ctf.seccon.jp/)"  
                 [![](https://ctftime.org/media/events/seccon_s_7.png){ width="200" align=left }](https://ctf.seccon.jp/)  
                 **比赛名称** : [SECCON CTF 13 Quals](https://ctf.seccon.jp/)  
@@ -800,6 +791,15 @@ hide:
                 **其他说明** : CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。  
                 
         === "国外赛事"
+            ??? Quote "[Hackvens 2024](https://hackvens.fr/)"  
+                [![](https://ctftime.org/media/events/Logo_Hackvens.png){ width="200" align=left }](https://hackvens.fr/)  
+                **比赛名称** : [Hackvens 2024](https://hackvens.fr/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-23 04:00:00 - 2024-11-23 14:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Hackvens (https://ctftime.org/team/194092)  
+                **添加日历** : https://ctftime.org/event/2401.ics  
+                
             ??? Quote "[iCTF 2024 (Undergrad)](https://ictf.cs.ucsb.edu/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ictf.cs.ucsb.edu/)  
                 **比赛名称** : [iCTF 2024 (Undergrad)](https://ictf.cs.ucsb.edu/)  
@@ -1690,15 +1690,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
                 **添加日历** : https://ctftime.org/event/2451.ics  
-                
-            ??? Quote "[Urmia CTF 2024](https://uctf.ir/)"  
-                [![](https://ctftime.org/media/events/NewLogo_1.jpg){ width="200" align=left }](https://uctf.ir/)  
-                **比赛名称** : [Urmia CTF 2024](https://uctf.ir/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-07 20:00:00 - 2024-09-09 20:00:00 UTC+8  
-                **比赛权重** : 24.27  
-                **赛事主办** : UCG (https://ctftime.org/team/255103)  
-                **添加日历** : https://ctftime.org/event/2460.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
