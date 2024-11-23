@@ -105,6 +105,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[The Hacker Conclave v2](https://ctf.thehackerconclave.es/)"  
+    [![](https://ctftime.org/media/events/ctftime2.png){ width="200" align=left }](https://ctf.thehackerconclave.es/)  
+    **比赛名称** : [The Hacker Conclave v2](https://ctf.thehackerconclave.es/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-23 17:00:00 - 2024-11-23 20:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : C0ncl4v3 (https://ctftime.org/team/303692)  
+    **添加日历** : https://ctftime.org/event/2575.ics  
+    
 ??? Quote "[Hackvens 2024](https://hackvens.fr/)"  
     [![](https://ctftime.org/media/events/Logo_Hackvens.png){ width="200" align=left }](https://hackvens.fr/)  
     **比赛名称** : [Hackvens 2024](https://hackvens.fr/)  
@@ -995,13 +1004,4 @@ comments: true
     **比赛权重** : 43.00  
     **赛事主办** : CSUI (https://ctftime.org/team/70551)  
     **添加日历** : https://ctftime.org/event/2463.ics  
-    
-??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
-    [![](https://ctftime.org/media/events/image_31.png){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
-    **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-08 00:00:00 - 2024-09-08 04:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
-    **添加日历** : https://ctftime.org/event/2451.ics  
     
