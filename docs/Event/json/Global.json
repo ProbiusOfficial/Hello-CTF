@@ -570,7 +570,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://foi.se/cratectf",
         "比赛标志": "https://ctftime.org/media/events/crate-ctf-2024.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "Crate-CTF (https://ctftime.org/team/352250)",
         "比赛ID": "1172",
         "比赛状态": "past"
