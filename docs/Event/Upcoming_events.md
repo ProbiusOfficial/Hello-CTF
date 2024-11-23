@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[CyberSci Regional Qualifiers 2024-25](https://cybersecuritychallenge.ca/)"  
-    [![](https://ctftime.org/media/events/9ad26ba791d2c5418b515bd4699ea7e2.png){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
-    **比赛名称** : [CyberSci Regional Qualifiers 2024-25](https://cybersecuritychallenge.ca/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-24 00:00:00 - 2024-11-24 07:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
-    **添加日历** : https://ctftime.org/event/2511.ics  
-    
 ??? Quote "[CTFZone 2024 Final](http://ctf.bi.zone/)"  
     [![](https://ctftime.org/media/events/aa86f826480a008ed91d88a917a0c33b.png){ width="200" align=left }](http://ctf.bi.zone/)  
     **比赛名称** : [CTFZone 2024 Final](http://ctf.bi.zone/)  

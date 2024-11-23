@@ -36,12 +36,12 @@ comments: true
     **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
     **添加日历** : https://ctftime.org/event/2478.ics  
     
-??? Quote "[WP CTF 2024](https://wpctf.it/)"  
-    [![](https://ctftime.org/media/events/WP_CTF_logo.png){ width="200" align=left }](https://wpctf.it/)  
-    **比赛名称** : [WP CTF 2024](https://wpctf.it/)  
+??? Quote "[CyberSci Regional Qualifiers 2024-25](https://cybersecuritychallenge.ca/)"  
+    [![](https://ctftime.org/media/events/9ad26ba791d2c5418b515bd4699ea7e2.png){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
+    **比赛名称** : [CyberSci Regional Qualifiers 2024-25](https://cybersecuritychallenge.ca/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-23 16:00:00 - 2024-11-24 00:00:00 UTC+8  
+    **比赛时间** : 2024-11-24 00:00:00 - 2024-11-24 07:00:00 UTC+8  
     **比赛权重** : 0  
-    **赛事主办** : WP CTF (https://ctftime.org/team/303099)  
-    **添加日历** : https://ctftime.org/event/2395.ics  
+    **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
+    **添加日历** : https://ctftime.org/event/2511.ics  
     
