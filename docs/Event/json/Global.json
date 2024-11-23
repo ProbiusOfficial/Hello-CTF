@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "SECCON CTF 13 Quals",
-        "比赛时间": "2024-11-23 13:00:00 - 2024-11-24 13:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2478.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.seccon.jp/",
-        "比赛标志": "https://ctftime.org/media/events/seccon_s_7.png",
-        "比赛权重": "100.00",
-        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
-        "比赛ID": "92",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "WP CTF 2024",
         "比赛时间": "2024-11-23 16:00:00 - 2024-11-24 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2395.ics",
@@ -537,6 +525,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Hackvens (https://ctftime.org/team/194092)",
         "比赛ID": "814",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "SECCON CTF 13 Quals",
+        "比赛时间": "2024-11-23 13:00:00 - 2024-11-24 13:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2478.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.seccon.jp/",
+        "比赛标志": "https://ctftime.org/media/events/seccon_s_7.png",
+        "比赛权重": "100.00",
+        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
+        "比赛ID": "92",
         "比赛状态": "nowrunning"
     },
     {
