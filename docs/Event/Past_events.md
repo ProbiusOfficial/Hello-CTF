@@ -132,6 +132,15 @@ comments: true
     **赛事主办** : Hackvens (https://ctftime.org/team/194092)  
     **添加日历** : https://ctftime.org/event/2401.ics  
     
+??? Quote "[GlacierCTF 2024](https://glacierctf.com/)"  
+    [![](https://ctftime.org/media/events/3ae6516246966c8d08c81d3bd5451cfa_1.png){ width="200" align=left }](https://glacierctf.com/)  
+    **比赛名称** : [GlacierCTF 2024](https://glacierctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-23 02:00:00 - 2024-11-24 02:00:00 UTC+8  
+    **比赛权重** : 35.69  
+    **赛事主办** : LosFuzzys (https://ctftime.org/team/8323)  
+    **添加日历** : https://ctftime.org/event/2402.ics  
+    
 ??? Quote "[iCTF 2024 (Undergrad)](https://ictf.cs.ucsb.edu/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ictf.cs.ucsb.edu/)  
     **比赛名称** : [iCTF 2024 (Undergrad)](https://ictf.cs.ucsb.edu/)  
@@ -995,13 +1004,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Metro Olografix (https://ctftime.org/team/268425)  
     **添加日历** : https://ctftime.org/event/2294.ics  
-    
-??? Quote "[Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)"  
-    [![](https://ctftime.org/media/events/zangi_2.png){ width="200" align=left }](https://dashboard.haruulzangi.mn/)  
-    **比赛名称** : [Haruulzangi CTF 2024 Qualifier](https://dashboard.haruulzangi.mn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-13 12:00:00 - 2024-09-13 12:00:00 UTC+8  
-    **比赛权重** : 23.33  
-    **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
-    **添加日历** : https://ctftime.org/event/2476.ics  
     
