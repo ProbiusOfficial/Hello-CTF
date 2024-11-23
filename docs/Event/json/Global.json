@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "The Hacker Conclave v2",
-        "比赛时间": "2024-11-23 17:00:00 - 2024-11-23 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2575.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.thehackerconclave.es/",
-        "比赛标志": "https://ctftime.org/media/events/ctftime2.png",
-        "比赛权重": "0.00",
-        "赛事主办": "C0ncl4v3 (https://ctftime.org/team/303692)",
-        "比赛ID": "1138",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "CyberSci Regional Qualifiers 2024-25",
         "比赛时间": "2024-11-24 00:00:00 - 2024-11-24 07:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2511.ics",
@@ -525,6 +513,18 @@
         "比赛权重": "0",
         "赛事主办": "WP CTF (https://ctftime.org/team/303099)",
         "比赛ID": "1128",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "The Hacker Conclave v2",
+        "比赛时间": "2024-11-23 17:00:00 - 2024-11-23 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2575.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.thehackerconclave.es/",
+        "比赛标志": "https://ctftime.org/media/events/ctftime2.png",
+        "比赛权重": "0",
+        "赛事主办": "C0ncl4v3 (https://ctftime.org/team/303692)",
+        "比赛ID": "1138",
         "比赛状态": "nowrunning"
     },
     {
