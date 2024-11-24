@@ -645,15 +645,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
                 
-            ??? Quote "[SECCON CTF 13 Quals](https://ctf.seccon.jp/)"  
-                [![](https://ctftime.org/media/events/seccon_s_7.png){ width="200" align=left }](https://ctf.seccon.jp/)  
-                **比赛名称** : [SECCON CTF 13 Quals](https://ctf.seccon.jp/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-23 13:00:00 - 2024-11-24 13:00:00 UTC+8  
-                **比赛权重** : 100.00  
-                **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
-                **添加日历** : https://ctftime.org/event/2478.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[蜀道山高校联合公益赛](https://ctf.yunyansec.com/#/event/center)"  
@@ -781,6 +772,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : WP CTF (https://ctftime.org/team/303099)  
                 **添加日历** : https://ctftime.org/event/2395.ics  
+                
+            ??? Quote "[SECCON CTF 13 Quals](https://ctf.seccon.jp/)"  
+                [![](https://ctftime.org/media/events/seccon_s_7.png){ width="200" align=left }](https://ctf.seccon.jp/)  
+                **比赛名称** : [SECCON CTF 13 Quals](https://ctf.seccon.jp/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-23 13:00:00 - 2024-11-24 13:00:00 UTC+8  
+                **比赛权重** : 100.00  
+                **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
+                **添加日历** : https://ctftime.org/event/2478.ics  
                 
             ??? Quote "[Hackvens 2024](https://hackvens.fr/)"  
                 [![](https://ctftime.org/media/events/Logo_Hackvens.png){ width="200" align=left }](https://hackvens.fr/)  
@@ -1645,15 +1645,6 @@ hide:
                 **比赛权重** : 24.00  
                 **赛事主办** : RSTCON (https://ctftime.org/team/281202)  
                 **添加日历** : https://ctftime.org/event/2427.ics  
-                
-            ??? Quote "[m0leCon CTF 2025 Teaser](https://ctf.m0lecon.it/)"  
-                [![](https://ctftime.org/media/events/ctftime_2025.png){ width="200" align=left }](https://ctf.m0lecon.it/)  
-                **比赛名称** : [m0leCon CTF 2025 Teaser](https://ctf.m0lecon.it/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-14 01:00:00 - 2024-09-15 01:00:00 UTC+8  
-                **比赛权重** : 80.00  
-                **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
-                **添加日历** : https://ctftime.org/event/2440.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
