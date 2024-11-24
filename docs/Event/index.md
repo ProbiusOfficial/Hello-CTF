@@ -636,15 +636,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
                 
-            ??? Quote "[CTFZone 2024 Final](http://ctf.bi.zone/)"  
-                [![](https://ctftime.org/media/events/aa86f826480a008ed91d88a917a0c33b.png){ width="200" align=left }](http://ctf.bi.zone/)  
-                **比赛名称** : [CTFZone 2024 Final](http://ctf.bi.zone/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2024-11-24 17:00:00 - 2024-11-25 01:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : BIZone (https://ctftime.org/team/32190)  
-                **添加日历** : https://ctftime.org/event/2506.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[蜀道山高校联合公益赛](https://ctf.yunyansec.com/#/event/center)"  
@@ -739,6 +730,15 @@ hide:
                 **其他说明** : CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。  
                 
         === "国外赛事"
+            ??? Quote "[CTFZone 2024 Final](http://ctf.bi.zone/)"  
+                [![](https://ctftime.org/media/events/aa86f826480a008ed91d88a917a0c33b.png){ width="200" align=left }](http://ctf.bi.zone/)  
+                **比赛名称** : [CTFZone 2024 Final](http://ctf.bi.zone/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2024-11-24 17:00:00 - 2024-11-25 01:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : BIZone (https://ctftime.org/team/32190)  
+                **添加日历** : https://ctftime.org/event/2506.ics  
+                
             ??? Quote "[CyberSci Regional Qualifiers 2024-25](https://cybersecuritychallenge.ca/)"  
                 [![](https://ctftime.org/media/events/9ad26ba791d2c5418b515bd4699ea7e2.png){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
                 **比赛名称** : [CyberSci Regional Qualifiers 2024-25](https://cybersecuritychallenge.ca/)  
@@ -1629,15 +1629,6 @@ hide:
                 **比赛权重** : 24.88  
                 **赛事主办** : jailctf (https://ctftime.org/team/311088)  
                 **添加日历** : https://ctftime.org/event/2450.ics  
-                
-            ??? Quote "[RSTCON 2024 CTF (Online/Hybrid)](https://metactf.com/join/rstcon24)"  
-                [![](https://ctftime.org/media/events/rstcon.png){ width="200" align=left }](https://metactf.com/join/rstcon24)  
-                **比赛名称** : [RSTCON 2024 CTF (Online/Hybrid)](https://metactf.com/join/rstcon24)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-14 03:45:00 - 2024-09-16 00:45:00 UTC+8  
-                **比赛权重** : 24.00  
-                **赛事主办** : RSTCON (https://ctftime.org/team/281202)  
-                **添加日历** : https://ctftime.org/event/2427.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
