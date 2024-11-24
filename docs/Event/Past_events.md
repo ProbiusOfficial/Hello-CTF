@@ -200,7 +200,7 @@ comments: true
     **比赛名称** : [No Hack No CTF 2024](https://nhnc.ic3dt3a.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-16 09:30:00 - 2024-11-17 21:30:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
     **添加日历** : https://ctftime.org/event/2574.ics  
     
