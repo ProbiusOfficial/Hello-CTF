@@ -290,15 +290,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[CTFZone 2024 Final](http://ctf.bi.zone/)"  
-                [![](https://ctftime.org/media/events/aa86f826480a008ed91d88a917a0c33b.png){ width="200" align=left }](http://ctf.bi.zone/)  
-                **比赛名称** : [CTFZone 2024 Final](http://ctf.bi.zone/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2024-11-24 17:00:00 - 2024-11-25 01:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : BIZone (https://ctftime.org/team/32190)  
-                **添加日历** : https://ctftime.org/event/2506.ics  
-                
             ??? Quote "[BlackHat MEA CTF Final 2024](https://blackhatmea.com/capture-the-flag)"  
                 [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_3.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
                 **比赛名称** : [BlackHat MEA CTF Final 2024](https://blackhatmea.com/capture-the-flag)  
@@ -644,6 +635,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
+                
+            ??? Quote "[CTFZone 2024 Final](http://ctf.bi.zone/)"  
+                [![](https://ctftime.org/media/events/aa86f826480a008ed91d88a917a0c33b.png){ width="200" align=left }](http://ctf.bi.zone/)  
+                **比赛名称** : [CTFZone 2024 Final](http://ctf.bi.zone/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2024-11-24 17:00:00 - 2024-11-25 01:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : BIZone (https://ctftime.org/team/32190)  
+                **添加日历** : https://ctftime.org/event/2506.ics  
                 
     === "*已经结束*"
         === "国内赛事"
