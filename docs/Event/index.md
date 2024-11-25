@@ -843,7 +843,7 @@ hide:
                 **比赛名称** : [PwnSec CTF 2024](https://ctf.pwnsec.xyz/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-11-15 23:00:00 - 2024-11-16 23:00:00 UTC+8  
-                **比赛权重** : 24.13  
+                **比赛权重** : 24.19  
                 **赛事主办** : PwnSec (https://ctftime.org/team/28797)  
                 **添加日历** : https://ctftime.org/event/2454.ics  
                 
@@ -915,7 +915,7 @@ hide:
                 **比赛名称** : [HITCON CTF 2024 Final](http://ctf.hitcon.org/)  
                 **比赛形式** : Attack-Defense  
                 **比赛时间** : 2024-11-09 08:00:00 - 2024-11-10 16:00:00 UTC+8  
-                **比赛权重** : 0.00  
+                **比赛权重** : 1.00  
                 **赛事主办** : HITCON (https://ctftime.org/team/8299)  
                 **添加日历** : https://ctftime.org/event/2523.ics  
                 
