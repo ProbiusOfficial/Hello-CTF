@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [windows驱动开发（1）——Windows驱动字符串](https://xia0ji233.github.io/2024/11/24/WindowsDriver1/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-11-24
+
+    来简单实战几个字符串API初始化ASCII 字符和宽字符的版本分别是12RtlInitAnsiStringRtlInitUnicodeString第一个参数都是对应的字符串结构体的指针，也就是说，在使用的时候需要先定义一个结构体变量再去使用这个 API 去初始化字符串变量。1234567LPSTR str2 = "123456789 hello";ANSI_STRING astr;RtlInitA...
     ### [windows驱动开发（0）——Windows驱动开发的基础知识](https://xia0ji233.github.io/2024/11/23/WindowsDriver0/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2024-11-22
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-08-24
 
     27f3e1195b7859eb4bd25dac1acac0a3042d467dab08eb39066b81caee36bbfd6f11e21d2737f808851594385a25c494dbe8b0ef17704abfb466618a0ed859635f7ab2a5b848bb7a8c639d3e37b60cd5ce48012d1f3786ebe99a85c3116eb786d57272...
-    ### [浅析泛微ec10权限绕过到命令执行](https://y4tacker.github.io/2024/08/20/year/2024/8/%E6%B3%9B%E5%BE%AEec10%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E5%88%B0%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-08-20
-
-    b19c15fd4dd9cbc0046f840c9697ff767ee735920624715daa4b248a6b55a2d45c1d3b4bd4f596a2a91a250df2f1d27df4dbf60e8474a8609a2deccd60107c31ac3597610ca2a58d2f8a391024c394270809fe49066896744b8b8ba883dd67119b9f0d...
 
 </div>
