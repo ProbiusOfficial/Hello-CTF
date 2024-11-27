@@ -3,6 +3,24 @@
     "data": {
         "result": [
             {
+                "name": "第一届吾杯网络安全技能大赛",
+                "info_confirmed": 1,
+                "mid_join": 0,
+                "link": "https://www.wucup.net/games/1",
+                "status": "即将开始",
+                "is_reg": 1,
+                "limit": 0,
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2024年12月01日 08:59",
+                "reg_time_end": "2024年12月01日 08:59",
+                "comp_time_start": "2024年12月01日 09:00",
+                "comp_time_end": "2024年12月01日 16:00",
+                "organizer": "东莞市东城小宇网络工作室",
+                "contac": {},
+                "tag": "普通赛",
+                "readmore": "第一届吾杯网络安全技能大赛由东莞市东城小宇网络工作室主办，潮州市极玩网络科技有限公司承办。比赛时间为2024年12月01日 09:00至16:00，报名截止时间为2024年12月01日 08:59。更多信息请访问比赛官网。"
+            },
+            {
                 "name": "蜀道山高校联合公益赛",
                 "info_confirmed": 1,
                 "mid_join": 0,

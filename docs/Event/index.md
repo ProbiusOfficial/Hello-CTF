@@ -288,7 +288,13 @@ hide:
     
     === "*即将开始*"
         === "国内赛事"
-    
+            ??? Quote "[第一届吾杯网络安全技能大赛](https://www.wucup.net/games/1)"  
+                **比赛名称** : [第一届吾杯网络安全技能大赛](https://www.wucup.net/games/1)  
+                **比赛类型** : 线上Jeopardy解题赛  
+                **报名时间** : 2024年12月01日 08:59 - 2024年12月01日 08:59  
+                **比赛时间** : 2024年12月01日 09:00 - 2024年12月01日 16:00  
+                **其他说明** : 第一届吾杯网络安全技能大赛由东莞市东城小宇网络工作室主办，潮州市极玩网络科技有限公司承办。比赛时间为2024年12月01日 09:00至16:00，报名截止时间为2024年12月01日 08:59。更多信息请访问比赛官网。  
+                
         === "国外赛事"
             ??? Quote "[AlpacaHack Round 7 (Web)](https://alpacahack.com/ctfs/round-7)"  
                 [![](https://ctftime.org/media/events/ctftime_8.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-7)  
