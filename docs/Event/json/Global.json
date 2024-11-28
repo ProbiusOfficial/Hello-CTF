@@ -453,7 +453,7 @@
         "比赛权重": "0",
         "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
         "比赛ID": "826",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "CTFZone 2024 Final",
@@ -1641,18 +1641,6 @@
         "比赛权重": "16.77",
         "赛事主办": "Codeby Games (https://ctftime.org/team/299486)",
         "比赛ID": "923",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "jailCTF 2024",
-        "比赛时间": "2024-09-14 04:00:00 - 2024-09-17 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2450.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.pyjail.club/",
-        "比赛标志": "https://ctftime.org/media/events/jailctf150.png",
-        "比赛权重": "24.88",
-        "赛事主办": "jailctf (https://ctftime.org/team/311088)",
-        "比赛ID": "1152",
         "比赛状态": "past"
     }
 ]

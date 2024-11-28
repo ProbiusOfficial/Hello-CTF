@@ -91,6 +91,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[BlackHat MEA CTF Final 2024](https://blackhatmea.com/capture-the-flag)"  
+    [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_3.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
+    **比赛名称** : [BlackHat MEA CTF Final 2024](https://blackhatmea.com/capture-the-flag)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-26 16:00:00 - 2024-11-28 11:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
+    **添加日历** : https://ctftime.org/event/2431.ics  
+    
 ??? Quote "[CTFZone 2024 Final](http://ctf.bi.zone/)"  
     [![](https://ctftime.org/media/events/aa86f826480a008ed91d88a917a0c33b.png){ width="200" align=left }](http://ctf.bi.zone/)  
     **比赛名称** : [CTFZone 2024 Final](http://ctf.bi.zone/)  
@@ -981,13 +990,4 @@ comments: true
     **比赛权重** : 16.77  
     **赛事主办** : Codeby Games (https://ctftime.org/team/299486)  
     **添加日历** : https://ctftime.org/event/2464.ics  
-    
-??? Quote "[jailCTF 2024](https://ctf.pyjail.club/)"  
-    [![](https://ctftime.org/media/events/jailctf150.png){ width="200" align=left }](https://ctf.pyjail.club/)  
-    **比赛名称** : [jailCTF 2024](https://ctf.pyjail.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-14 04:00:00 - 2024-09-17 04:00:00 UTC+8  
-    **比赛权重** : 24.88  
-    **赛事主办** : jailctf (https://ctftime.org/team/311088)  
-    **添加日历** : https://ctftime.org/event/2450.ics  
     
