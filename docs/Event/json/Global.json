@@ -429,7 +429,7 @@
         "比赛权重": "98.50",
         "赛事主办": "saarsec (https://ctftime.org/team/15337)",
         "比赛ID": "412",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Ph0wn 2024",
@@ -1617,18 +1617,6 @@
         "比赛权重": "31.83",
         "赛事主办": "Competitive Cyber at Mason (https://ctftime.org/team/176906)",
         "比赛ID": "737",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "VolgaCTF 2024 Final",
-        "比赛时间": "2024-09-19 14:00:00 - 2024-09-19 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2432.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://volgactf.ru/en/volgactf-2024/final/",
-        "比赛标志": "https://ctftime.org/media/events/logo-social-yellow_15.png",
-        "比赛权重": "73.80",
-        "赛事主办": "VolgaCTF.org (https://ctftime.org/team/27094)",
-        "比赛ID": "53",
         "比赛状态": "past"
     }
 ]
