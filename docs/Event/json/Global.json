@@ -510,7 +510,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://wpctf.it/",
         "比赛标志": "https://ctftime.org/media/events/WP_CTF_logo.png",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "WP CTF (https://ctftime.org/team/303099)",
         "比赛ID": "1128",
         "比赛状态": "past"
