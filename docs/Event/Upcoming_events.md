@@ -22,15 +22,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[saarCTF 2024](https://ctf.saarland/)"  
-    [![](https://ctftime.org/media/events/e21b4ef017572441617115eaa6bd9823.jpg){ width="200" align=left }](https://ctf.saarland/)  
-    **比赛名称** : [saarCTF 2024](https://ctf.saarland/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2024-11-30 21:00:00 - 2024-12-01 06:00:00 UTC+8  
-    **比赛权重** : 98.50  
-    **赛事主办** : saarsec (https://ctftime.org/team/15337)  
-    **添加日历** : https://ctftime.org/event/2490.ics  
-    
 ??? Quote "[M*CTF 2024 Junior Finals](https://mctf.ru/)"  
     [![](https://ctftime.org/media/events/IMG_2613.PNG){ width="200" align=left }](https://mctf.ru/)  
     **比赛名称** : [M*CTF 2024 Junior Finals](https://mctf.ru/)  

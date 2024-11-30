@@ -68,15 +68,6 @@ hide:
             **其他说明** : 国城杯初赛由国城杯初赛主办，比赛链接为https://ctf2024.goalcent.com/，4人组队，报名开始时间为2024年11月23日，报名截止时间为2024年12月06日，比赛开始时间为2024年12月07日，选手可通过QQ群629910816进行沟通。  
                 
     === "国外比赛"
-        ??? Quote "[saarCTF 2024](https://ctf.saarland/)"  
-            [![](https://ctftime.org/media/events/e21b4ef017572441617115eaa6bd9823.jpg){ width="200" align=left }](https://ctf.saarland/)  
-            **比赛名称** : [saarCTF 2024](https://ctf.saarland/)  
-            **比赛形式** : Attack-Defense  
-            **比赛时间** : 2024-11-30 21:00:00 - 2024-12-01 06:00:00 UTC+8  
-            **比赛权重** : 98.50  
-            **赛事主办** : saarsec (https://ctftime.org/team/15337)  
-            **添加日历** : https://ctftime.org/event/2490.ics  
-            
         ??? Quote "[M*CTF 2024 Junior Finals](https://mctf.ru/)"  
             [![](https://ctftime.org/media/events/IMG_2613.PNG){ width="200" align=left }](https://mctf.ru/)  
             **比赛名称** : [M*CTF 2024 Junior Finals](https://mctf.ru/)  
@@ -103,6 +94,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
             **添加日历** : https://ctftime.org/event/2510.ics  
+            
+        ??? Quote "[RedShift.Eclipse 2 Finals]()"  
+            [![](https://ctftime.org/media/events/5202034882946130981.jpg){ width="200" align=left }]()  
+            **比赛名称** : [RedShift.Eclipse 2 Finals]()  
+            **比赛形式** : Attack-Defense  
+            **比赛时间** : 2024-12-07 18:00:00 - 2024-12-08 03:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
+            **添加日历** : https://ctftime.org/event/2538.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
