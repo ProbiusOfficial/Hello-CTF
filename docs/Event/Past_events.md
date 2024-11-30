@@ -134,7 +134,7 @@ comments: true
     **比赛名称** : [CyberSci Regional Qualifiers 2024-25](https://cybersecuritychallenge.ca/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-24 00:00:00 - 2024-11-24 07:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
     **添加日历** : https://ctftime.org/event/2511.ics  
     
