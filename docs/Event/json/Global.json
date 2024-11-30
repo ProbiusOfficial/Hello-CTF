@@ -1,41 +1,5 @@
 [
     {
-        "比赛名称": "HackTM CTF 2024 - Postponed",
-        "比赛时间": "2024-11-30 20:00:00 - 2024-12-01 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2452.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hacktm.ro/",
-        "比赛标志": "https://ctftime.org/media/events/e2b12b3390413f1cf2cdeb7b12e076c6.jpg",
-        "比赛权重": "24.67",
-        "赛事主办": "WreckTheLine (https://ctftime.org/team/57908)",
-        "比赛ID": "401",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "CYBERGON CTF_2024",
-        "比赛时间": "2024-11-30 20:00:00 - 2024-12-02 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2560.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cybergon.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/CYBERGON_Logo.png",
-        "比赛权重": "23.08",
-        "赛事主办": "My4nM4r (https://ctftime.org/team/145625)",
-        "比赛ID": "974",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "World Wide CTF 2024",
-        "比赛时间": "2024-11-30 20:00:00 - 2024-12-01 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2572.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://wwctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/logobg.png",
-        "比赛权重": "0.00",
-        "赛事主办": "World Wide Flags (https://ctftime.org/team/283853)",
-        "比赛ID": "1208",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "saarCTF 2024",
         "比赛时间": "2024-11-30 21:00:00 - 2024-12-01 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2490.ics",
@@ -444,6 +408,42 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "HackTM CTF 2024 - Postponed",
+        "比赛时间": "2024-11-30 20:00:00 - 2024-12-01 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2452.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.hacktm.ro/",
+        "比赛标志": "https://ctftime.org/media/events/e2b12b3390413f1cf2cdeb7b12e076c6.jpg",
+        "比赛权重": "24.67",
+        "赛事主办": "WreckTheLine (https://ctftime.org/team/57908)",
+        "比赛ID": "401",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CYBERGON CTF_2024",
+        "比赛时间": "2024-11-30 20:00:00 - 2024-12-02 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2560.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cybergon.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/CYBERGON_Logo.png",
+        "比赛权重": "23.08",
+        "赛事主办": "My4nM4r (https://ctftime.org/team/145625)",
+        "比赛ID": "974",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "World Wide CTF 2024",
+        "比赛时间": "2024-11-30 20:00:00 - 2024-12-01 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2572.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://wwctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/logobg.png",
+        "比赛权重": "0",
+        "赛事主办": "World Wide Flags (https://ctftime.org/team/283853)",
+        "比赛ID": "1208",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "AlpacaHack Round 7 (Web)",
         "比赛时间": "2024-11-30 11:00:00 - 2024-11-30 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2544.ics",
@@ -498,7 +498,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.thehackerconclave.es/",
         "比赛标志": "https://ctftime.org/media/events/ctftime2.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "C0ncl4v3 (https://ctftime.org/team/303692)",
         "比赛ID": "1138",
         "比赛状态": "past"

@@ -125,7 +125,7 @@ comments: true
     **比赛名称** : [The Hacker Conclave v2](https://ctf.thehackerconclave.es/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-23 17:00:00 - 2024-11-23 20:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : C0ncl4v3 (https://ctftime.org/team/303692)  
     **添加日历** : https://ctftime.org/event/2575.ics  
     

@@ -27,3 +27,30 @@ comments: true
     **赛事主办** : Pic0wn (https://ctftime.org/team/6514)  
     **添加日历** : https://ctftime.org/event/2564.ics  
     
+??? Quote "[HackTM CTF 2024 - Postponed](https://ctf.hacktm.ro/)"  
+    [![](https://ctftime.org/media/events/e2b12b3390413f1cf2cdeb7b12e076c6.jpg){ width="200" align=left }](https://ctf.hacktm.ro/)  
+    **比赛名称** : [HackTM CTF 2024 - Postponed](https://ctf.hacktm.ro/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-30 20:00:00 - 2024-12-01 20:00:00 UTC+8  
+    **比赛权重** : 24.67  
+    **赛事主办** : WreckTheLine (https://ctftime.org/team/57908)  
+    **添加日历** : https://ctftime.org/event/2452.ics  
+    
+??? Quote "[CYBERGON CTF_2024](https://cybergon.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/CYBERGON_Logo.png){ width="200" align=left }](https://cybergon.ctfd.io/)  
+    **比赛名称** : [CYBERGON CTF_2024](https://cybergon.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-30 20:00:00 - 2024-12-02 20:00:00 UTC+8  
+    **比赛权重** : 23.08  
+    **赛事主办** : My4nM4r (https://ctftime.org/team/145625)  
+    **添加日历** : https://ctftime.org/event/2560.ics  
+    
+??? Quote "[World Wide CTF 2024](https://wwctf.com/)"  
+    [![](https://ctftime.org/media/events/logobg.png){ width="200" align=left }](https://wwctf.com/)  
+    **比赛名称** : [World Wide CTF 2024](https://wwctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-30 20:00:00 - 2024-12-01 20:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : World Wide Flags (https://ctftime.org/team/283853)  
+    **添加日历** : https://ctftime.org/event/2572.ics  
+    
