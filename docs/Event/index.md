@@ -303,15 +303,6 @@ hide:
                 **其他说明** : 第一届吾杯网络安全技能大赛由东莞市东城小宇网络工作室主办，潮州市极玩网络科技有限公司承办。比赛时间为2024年12月01日 09:00至16:00，报名截止时间为2024年12月01日 08:59。更多信息请访问比赛官网。  
                 
         === "国外赛事"
-            ??? Quote "[AlpacaHack Round 7 (Web)](https://alpacahack.com/ctfs/round-7)"  
-                [![](https://ctftime.org/media/events/ctftime_8.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-7)  
-                **比赛名称** : [AlpacaHack Round 7 (Web)](https://alpacahack.com/ctfs/round-7)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-30 11:00:00 - 2024-11-30 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
-                **添加日历** : https://ctftime.org/event/2544.ics  
-                
             ??? Quote "[Ph0wn 2024](https://ph0wn.org/)"  
                 [![](https://ctftime.org/media/events/logo-ph0wn_5.png){ width="200" align=left }](https://ph0wn.org/)  
                 **比赛名称** : [Ph0wn 2024](https://ph0wn.org/)  
@@ -648,6 +639,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
+                
+            ??? Quote "[AlpacaHack Round 7 (Web)](https://alpacahack.com/ctfs/round-7)"  
+                [![](https://ctftime.org/media/events/ctftime_8.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-7)  
+                **比赛名称** : [AlpacaHack Round 7 (Web)](https://alpacahack.com/ctfs/round-7)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-30 11:00:00 - 2024-11-30 17:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
+                **添加日历** : https://ctftime.org/event/2544.ics  
                 
     === "*已经结束*"
         === "国内赛事"

@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "AlpacaHack Round 7 (Web)",
-        "比赛时间": "2024-11-30 11:00:00 - 2024-11-30 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2544.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://alpacahack.com/ctfs/round-7",
-        "比赛标志": "https://ctftime.org/media/events/ctftime_8.png",
-        "比赛权重": "0",
-        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
-        "比赛ID": "1163",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Ph0wn 2024",
         "比赛时间": "2024-11-30 18:00:00 - 2024-12-01 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2564.ics",
@@ -453,6 +441,18 @@
         "比赛权重": "0",
         "赛事主办": "UWSP Pointers (https://ctftime.org/team/231536)",
         "比赛ID": "963",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "AlpacaHack Round 7 (Web)",
+        "比赛时间": "2024-11-30 11:00:00 - 2024-11-30 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2544.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://alpacahack.com/ctfs/round-7",
+        "比赛标志": "https://ctftime.org/media/events/ctftime_8.png",
+        "比赛权重": "0",
+        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
+        "比赛ID": "1163",
         "比赛状态": "nowrunning"
     },
     {
