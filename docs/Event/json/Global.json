@@ -618,7 +618,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.pwnsec.xyz/",
         "比赛标志": "https://ctftime.org/media/events/Logo_12.png",
-        "比赛权重": "24.19",
+        "比赛权重": "24.24",
         "赛事主办": "PwnSec (https://ctftime.org/team/28797)",
         "比赛ID": "1150",
         "比赛状态": "past"
@@ -690,7 +690,7 @@
         "比赛形式": "Attack-Defense",
         "比赛链接": "https://bambi11.enoflag.de/",
         "比赛标志": "https://ctftime.org/media/events/reh_1.png",
-        "比赛权重": "83.80",
+        "比赛权重": "84.81",
         "赛事主办": "ENOFLAG (https://ctftime.org/team/1438)",
         "比赛ID": "494",
         "比赛状态": "past"
@@ -726,7 +726,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.4ts.fr/",
         "比赛标志": "https://ctftime.org/media/events/53b0900ddae2f59936bcc4eafc1458cf.jpg",
-        "比赛权重": "24.20",
+        "比赛权重": "24.25",
         "赛事主办": "4T$ (https://ctftime.org/team/302295)",
         "比赛ID": "1188",
         "比赛状态": "past"
