@@ -743,7 +743,7 @@ hide:
                 **比赛名称** : [CTFZone 2024 Final](http://ctf.bi.zone/)  
                 **比赛形式** : Attack-Defense  
                 **比赛时间** : 2024-11-24 17:00:00 - 2024-11-25 01:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 96.90  
                 **赛事主办** : BIZone (https://ctftime.org/team/32190)  
                 **添加日历** : https://ctftime.org/event/2506.ics  
                 
