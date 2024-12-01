@@ -393,7 +393,7 @@
         "比赛权重": "0",
         "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
         "比赛ID": "164",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "saarCTF 2024",
@@ -1581,18 +1581,6 @@
         "比赛权重": "25.00",
         "赛事主办": "ierae (https://ctftime.org/team/224122)",
         "比赛ID": "1130",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Cyber Jawara International",
-        "比赛时间": "2024-09-21 09:59:00 - 2024-09-22 09:59:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2411.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cyberjawara.id/2024",
-        "比赛标志": "https://ctftime.org/media/events/067297e97f084c5492331b121d1b0507.png",
-        "比赛权重": "0.00",
-        "赛事主办": "idnsa (https://ctftime.org/team/239714)",
-        "比赛ID": "971",
         "比赛状态": "past"
     }
 ]
