@@ -51,3 +51,12 @@ comments: true
     **赛事主办** : World Wide Flags (https://ctftime.org/team/283853)  
     **添加日历** : https://ctftime.org/event/2572.ics  
     
+??? Quote "[M*CTF 2024 Junior Finals](https://mctf.ru/)"  
+    [![](https://ctftime.org/media/events/IMG_2613.PNG){ width="200" align=left }](https://mctf.ru/)  
+    **比赛名称** : [M*CTF 2024 Junior Finals](https://mctf.ru/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-12-01 15:00:00 - 2024-12-01 21:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
+    **添加日历** : https://ctftime.org/event/2586.ics  
+    

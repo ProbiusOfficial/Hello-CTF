@@ -296,15 +296,6 @@ hide:
                 **其他说明** : 国城杯初赛由国城杯初赛主办，比赛链接为https://ctf2024.goalcent.com/，4人组队，报名开始时间为2024年11月23日，报名截止时间为2024年12月06日，比赛开始时间为2024年12月07日，选手可通过QQ群629910816进行沟通。  
                 
         === "国外赛事"
-            ??? Quote "[M*CTF 2024 Junior Finals](https://mctf.ru/)"  
-                [![](https://ctftime.org/media/events/IMG_2613.PNG){ width="200" align=left }](https://mctf.ru/)  
-                **比赛名称** : [M*CTF 2024 Junior Finals](https://mctf.ru/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2024-12-01 15:00:00 - 2024-12-01 21:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-                **添加日历** : https://ctftime.org/event/2586.ics  
-                
             ??? Quote "[snakeCTF 2024 Finals](https://2024.snakectf.org/)"  
                 [![](https://ctftime.org/media/events/LogoCroppable_2.png){ width="200" align=left }](https://2024.snakectf.org/)  
                 **比赛名称** : [snakeCTF 2024 Finals](https://2024.snakectf.org/)  
@@ -620,6 +611,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : World Wide Flags (https://ctftime.org/team/283853)  
                 **添加日历** : https://ctftime.org/event/2572.ics  
+                
+            ??? Quote "[M*CTF 2024 Junior Finals](https://mctf.ru/)"  
+                [![](https://ctftime.org/media/events/IMG_2613.PNG){ width="200" align=left }](https://mctf.ru/)  
+                **比赛名称** : [M*CTF 2024 Junior Finals](https://mctf.ru/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2024-12-01 15:00:00 - 2024-12-01 21:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
+                **添加日历** : https://ctftime.org/event/2586.ics  
                 
     === "*已经结束*"
         === "国内赛事"
