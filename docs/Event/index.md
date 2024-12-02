@@ -579,15 +579,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
                 
-            ??? Quote "[CYBERGON CTF_2024](https://cybergon.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/CYBERGON_Logo.png){ width="200" align=left }](https://cybergon.ctfd.io/)  
-                **比赛名称** : [CYBERGON CTF_2024](https://cybergon.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-30 20:00:00 - 2024-12-02 20:00:00 UTC+8  
-                **比赛权重** : 23.08  
-                **赛事主办** : My4nM4r (https://ctftime.org/team/145625)  
-                **添加日历** : https://ctftime.org/event/2560.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[第一届吾杯网络安全技能大赛](https://www.wucup.net/games/1)"  
@@ -701,6 +692,15 @@ hide:
                 **比赛权重** : 24.67  
                 **赛事主办** : WreckTheLine (https://ctftime.org/team/57908)  
                 **添加日历** : https://ctftime.org/event/2452.ics  
+                
+            ??? Quote "[CYBERGON CTF_2024](https://cybergon.ctfd.io/)"  
+                [![](https://ctftime.org/media/events/CYBERGON_Logo.png){ width="200" align=left }](https://cybergon.ctfd.io/)  
+                **比赛名称** : [CYBERGON CTF_2024](https://cybergon.ctfd.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-30 20:00:00 - 2024-12-02 20:00:00 UTC+8  
+                **比赛权重** : 23.08  
+                **赛事主办** : My4nM4r (https://ctftime.org/team/145625)  
+                **添加日历** : https://ctftime.org/event/2560.ics  
                 
             ??? Quote "[World Wide CTF 2024](https://wwctf.com/)"  
                 [![](https://ctftime.org/media/events/logobg.png){ width="200" align=left }](https://wwctf.com/)  
@@ -1565,15 +1565,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
                 **添加日历** : https://ctftime.org/event/2356.ics  
-                
-            ??? Quote "[GMO Cybersecurity Contest - IERAE CTF 2024](https://gmo-cybersecurity.com/event/ieraectf24/)"  
-                [![](https://ctftime.org/media/events/ierae-ctf-logo_2_1.png){ width="200" align=left }](https://gmo-cybersecurity.com/event/ieraectf24/)  
-                **比赛名称** : [GMO Cybersecurity Contest - IERAE CTF 2024](https://gmo-cybersecurity.com/event/ieraectf24/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-21 14:00:00 - 2024-09-22 14:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : ierae (https://ctftime.org/team/224122)  
-                **添加日历** : https://ctftime.org/event/2441.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

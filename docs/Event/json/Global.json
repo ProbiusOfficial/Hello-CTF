@@ -372,18 +372,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CYBERGON CTF_2024",
-        "比赛时间": "2024-11-30 20:00:00 - 2024-12-02 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2560.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cybergon.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/CYBERGON_Logo.png",
-        "比赛权重": "23.08",
-        "赛事主办": "My4nM4r (https://ctftime.org/team/145625)",
-        "比赛ID": "974",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "M*CTF 2024 Junior Finals",
         "比赛时间": "2024-12-01 15:00:00 - 2024-12-01 21:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2586.ics",
@@ -417,6 +405,18 @@
         "比赛权重": "24.67",
         "赛事主办": "WreckTheLine (https://ctftime.org/team/57908)",
         "比赛ID": "401",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "CYBERGON CTF_2024",
+        "比赛时间": "2024-11-30 20:00:00 - 2024-12-02 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2560.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cybergon.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/CYBERGON_Logo.png",
+        "比赛权重": "23.08",
+        "赛事主办": "My4nM4r (https://ctftime.org/team/145625)",
+        "比赛ID": "974",
         "比赛状态": "past"
     },
     {
@@ -1569,18 +1569,6 @@
         "比赛权重": "0",
         "赛事主办": "ECSC2024 (https://ctftime.org/team/283828)",
         "比赛ID": "1084",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "GMO Cybersecurity Contest - IERAE CTF 2024",
-        "比赛时间": "2024-09-21 14:00:00 - 2024-09-22 14:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2441.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://gmo-cybersecurity.com/event/ieraectf24/",
-        "比赛标志": "https://ctftime.org/media/events/ierae-ctf-logo_2_1.png",
-        "比赛权重": "25.00",
-        "赛事主办": "ierae (https://ctftime.org/team/224122)",
-        "比赛ID": "1130",
         "比赛状态": "past"
     }
 ]
