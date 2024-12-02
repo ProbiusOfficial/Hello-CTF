@@ -267,7 +267,7 @@ comments: true
     **比赛名称** : [PwnSec CTF 2024](https://ctf.pwnsec.xyz/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-15 23:00:00 - 2024-11-16 23:00:00 UTC+8  
-    **比赛权重** : 24.24  
+    **比赛权重** : 24.28  
     **赛事主办** : PwnSec (https://ctftime.org/team/28797)  
     **添加日历** : https://ctftime.org/event/2454.ics  
     
@@ -942,7 +942,7 @@ comments: true
     **比赛名称** : [H7CTF International](https://ctf.h7tex.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-09-26 11:30:00 - 2024-09-27 19:30:00 UTC+8  
-    **比赛权重** : 23.47  
+    **比赛权重** : 22.67  
     **赛事主办** : H7Tex (https://ctftime.org/team/281844)  
     **添加日历** : https://ctftime.org/event/2491.ics  
     
