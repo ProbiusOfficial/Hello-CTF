@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [蓝凌之前台低权限提权至后台RCE](https://y4tacker.github.io/2024/12/03/year/2024/12/%E8%93%9D%E5%87%8C%E4%B9%8B%E5%89%8D%E5%8F%B0%E4%BD%8E%E6%9D%83%E9%99%90%E6%8F%90%E6%9D%83%E8%87%B3%E5%90%8E%E5%8F%B0RCE/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-12-03
+
+    1f5c6f7cc517a318662ada114c86b544e6710d2ca2eb595eb9ee3c99b53385f503167b9c669ec5ff63e96f1f8018c5efc0b009c15774d4f33e12f5431efbdaeb2615cadb0ff74f6f6dc9e2dd3629cd3567b057f7932bc048fa475bb359df7aacab63d2...
     ### [windows驱动开发（1）——Windows驱动字符串](https://xia0ji233.github.io/2024/11/24/WindowsDriver1/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2024-11-24
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-08-26
 
     66a1f65ddff5e5fbaee1f939ddf44dcea4029f7582b06e522d1f0b6ddb88495ea7651bf11a6cf64290c5aba6d3cb65ac625a1c15349986dcd67002fc9c92f6f9ff53b981b42f886762bbeb3c53a57f28a78cbe50fc24227b675c76452330256a5de2ba...
-    ### [Bamboocloud Pre-Auth RCE](https://y4tacker.github.io/2024/08/24/year/2024/8/Bamboocloud-Pre-Auth-RCE/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-08-24
-
-    27f3e1195b7859eb4bd25dac1acac0a3042d467dab08eb39066b81caee36bbfd6f11e21d2737f808851594385a25c494dbe8b0ef17704abfb466618a0ed859635f7ab2a5b848bb7a8c639d3e37b60cd5ce48012d1f3786ebe99a85c3116eb786d57272...
 
 </div>
