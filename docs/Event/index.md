@@ -296,15 +296,6 @@ hide:
                 **其他说明** : 国城杯初赛由国城杯初赛主办，比赛链接为https://ctf2024.goalcent.com/，4人组队，报名开始时间为2024年11月23日，报名截止时间为2024年12月06日，比赛开始时间为2024年12月07日，选手可通过QQ群629910816进行沟通。  
                 
         === "国外赛事"
-            ??? Quote "[snakeCTF 2024 Finals](https://2024.snakectf.org/)"  
-                [![](https://ctftime.org/media/events/LogoCroppable_2.png){ width="200" align=left }](https://2024.snakectf.org/)  
-                **比赛名称** : [snakeCTF 2024 Finals](https://2024.snakectf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-05 16:00:00 - 2024-12-08 16:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
-                **添加日历** : https://ctftime.org/event/2419.ics  
-                
             ??? Quote "[ISITDTU CTF 2024 Finals](https://ctf.isitdtu.com/)"  
                 [![](https://ctftime.org/media/events/index_3.gif){ width="200" align=left }](https://ctf.isitdtu.com/)  
                 **比赛名称** : [ISITDTU CTF 2024 Finals](https://ctf.isitdtu.com/)  
@@ -578,6 +569,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
+                
+            ??? Quote "[snakeCTF 2024 Finals](https://2024.snakectf.org/)"  
+                [![](https://ctftime.org/media/events/LogoCroppable_2.png){ width="200" align=left }](https://2024.snakectf.org/)  
+                **比赛名称** : [snakeCTF 2024 Finals](https://2024.snakectf.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-12-05 16:00:00 - 2024-12-08 16:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
+                **添加日历** : https://ctftime.org/event/2419.ics  
                 
     === "*已经结束*"
         === "国内赛事"
