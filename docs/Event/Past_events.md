@@ -309,6 +309,15 @@ comments: true
     **赛事主办** : NULL (https://ctftime.org/team/321)  
     **添加日历** : https://ctftime.org/event/2507.ics  
     
+??? Quote "[DataCon2024](https://datacon.qianxin.com/datacon2024-en)"  
+    [![](https://ctftime.org/media/events/16945a7ddd36ca5428bca66728c36df3.png){ width="200" align=left }](https://datacon.qianxin.com/datacon2024-en)  
+    **比赛名称** : [DataCon2024](https://datacon.qianxin.com/datacon2024-en)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-11-13 10:00:00 - 2024-11-22 18:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : DataCon (https://ctftime.org/team/361332)  
+    **添加日历** : https://ctftime.org/event/2580.ics  
+    
 ??? Quote "[N1CTF 2024](https://ctf2024.nu1l.com/)"  
     [![](https://ctftime.org/media/events/logo2_5_1.png){ width="200" align=left }](https://ctf2024.nu1l.com/)  
     **比赛名称** : [N1CTF 2024](https://ctf2024.nu1l.com/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : SummerJedi (https://ctftime.org/team/126955)  
     **添加日历** : https://ctftime.org/event/2422.ics  
-    
-??? Quote "[openECSC 2024 - Final Round](https://open.ecsc2024.it/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://open.ecsc2024.it/)  
-    **比赛名称** : [openECSC 2024 - Final Round](https://open.ecsc2024.it/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-21 18:00:00 - 2024-09-22 18:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : ECSC2024 (https://ctftime.org/team/283828)  
-    **添加日历** : https://ctftime.org/event/2356.ics  
     
