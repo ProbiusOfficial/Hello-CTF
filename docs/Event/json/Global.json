@@ -432,18 +432,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "M*CTF 2024 Finals",
-        "比赛时间": "2024-12-07 15:30:00 - 2024-12-08 00:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2595.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://mctf.ru/",
-        "比赛标志": "https://ctftime.org/media/events/IMG_2613_1.PNG",
-        "比赛权重": "0.00",
-        "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
-        "比赛ID": "164",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "RedShift.Eclipse 2 Finals",
         "比赛时间": "2024-12-07 18:00:00 - 2024-12-08 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2538.ics",
@@ -478,6 +466,18 @@
         "赛事主办": "The DFIR Report (https://ctftime.org/team/309500)",
         "比赛ID": "1149",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "M*CTF 2024 Finals",
+        "比赛时间": "2024-12-07 15:30:00 - 2024-12-08 00:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2595.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://mctf.ru/",
+        "比赛标志": "https://ctftime.org/media/events/IMG_2613_1.PNG",
+        "比赛权重": "0.00",
+        "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
+        "比赛ID": "164",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "M*CTF 2024 Junior Finals",
@@ -1665,18 +1665,6 @@
         "比赛权重": "66.25",
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "55",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "21ans LinuxMeetup au Québec",
-        "比赛时间": "2024-09-21 21:30:00 - 2024-09-22 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2422.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.linuxver.site/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "SummerJedi (https://ctftime.org/team/126955)",
-        "比赛ID": "675",
         "比赛状态": "past"
     }
 ]

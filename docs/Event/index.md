@@ -618,15 +618,6 @@ hide:
                 **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
                 **添加日历** : https://ctftime.org/event/2510.ics  
                 
-            ??? Quote "[M*CTF 2024 Finals](https://mctf.ru/)"  
-                [![](https://ctftime.org/media/events/IMG_2613_1.PNG){ width="200" align=left }](https://mctf.ru/)  
-                **比赛名称** : [M*CTF 2024 Finals](https://mctf.ru/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2024-12-07 15:30:00 - 2024-12-08 00:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-                **添加日历** : https://ctftime.org/event/2595.ics  
-                
             ??? Quote "[RedShift.Eclipse 2 Finals]()"  
                 [![](https://ctftime.org/media/events/5202034882946130981.jpg){ width="200" align=left }]()  
                 **比赛名称** : [RedShift.Eclipse 2 Finals]()  
@@ -741,6 +732,15 @@ hide:
                 **其他说明** : CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。  
                 
         === "国外赛事"
+            ??? Quote "[M*CTF 2024 Finals](https://mctf.ru/)"  
+                [![](https://ctftime.org/media/events/IMG_2613_1.PNG){ width="200" align=left }](https://mctf.ru/)  
+                **比赛名称** : [M*CTF 2024 Finals](https://mctf.ru/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2024-12-07 15:30:00 - 2024-12-08 00:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
+                **添加日历** : https://ctftime.org/event/2595.ics  
+                
             ??? Quote "[M*CTF 2024 Junior Finals](https://mctf.ru/)"  
                 [![](https://ctftime.org/media/events/IMG_2613.PNG){ width="200" align=left }](https://mctf.ru/)  
                 **比赛名称** : [M*CTF 2024 Junior Finals](https://mctf.ru/)  
@@ -1631,15 +1631,6 @@ hide:
                 **比赛权重** : 66.25  
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/2211.ics  
-                
-            ??? Quote "[21ans LinuxMeetup au Québec](https://www.linuxver.site/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://www.linuxver.site/)  
-                **比赛名称** : [21ans LinuxMeetup au Québec](https://www.linuxver.site/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-21 21:30:00 - 2024-09-22 05:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : SummerJedi (https://ctftime.org/team/126955)  
-                **添加日历** : https://ctftime.org/event/2422.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
