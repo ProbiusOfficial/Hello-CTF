@@ -290,15 +290,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[RedShift.Eclipse 2 Finals]()"  
-                [![](https://ctftime.org/media/events/5202034882946130981.jpg){ width="200" align=left }]()  
-                **比赛名称** : [RedShift.Eclipse 2 Finals]()  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2024-12-07 18:00:00 - 2024-12-08 03:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
-                **添加日历** : https://ctftime.org/event/2538.ics  
-                
             ??? Quote "[Platypwn 2024](https://platypwn.ctf.platypwnies.de/)"  
                 [![](https://ctftime.org/media/events/Platypwnie.png){ width="200" align=left }](https://platypwn.ctf.platypwnies.de/)  
                 **比赛名称** : [Platypwn 2024](https://platypwn.ctf.platypwnies.de/)  
@@ -653,6 +644,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
                 **添加日历** : https://ctftime.org/event/2595.ics  
+                
+            ??? Quote "[RedShift.Eclipse 2 Finals]()"  
+                [![](https://ctftime.org/media/events/5202034882946130981.jpg){ width="200" align=left }]()  
+                **比赛名称** : [RedShift.Eclipse 2 Finals]()  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2024-12-07 18:00:00 - 2024-12-08 03:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
+                **添加日历** : https://ctftime.org/event/2538.ics  
                 
     === "*已经结束*"
         === "国内赛事"
