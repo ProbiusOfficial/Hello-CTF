@@ -290,15 +290,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Platypwn 2024](https://platypwn.ctf.platypwnies.de/)"  
-                [![](https://ctftime.org/media/events/Platypwnie.png){ width="200" align=left }](https://platypwn.ctf.platypwnies.de/)  
-                **比赛名称** : [Platypwn 2024](https://platypwn.ctf.platypwnies.de/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-07 22:00:00 - 2024-12-08 22:00:00 UTC+8  
-                **比赛权重** : 24.75  
-                **赛事主办** : Platypwnies (https://ctftime.org/team/112550)  
-                **添加日历** : https://ctftime.org/event/2407.ics  
-                
             ??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
                 **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
@@ -653,6 +644,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
                 **添加日历** : https://ctftime.org/event/2538.ics  
+                
+            ??? Quote "[Platypwn 2024](https://platypwn.ctf.platypwnies.de/)"  
+                [![](https://ctftime.org/media/events/Platypwnie.png){ width="200" align=left }](https://platypwn.ctf.platypwnies.de/)  
+                **比赛名称** : [Platypwn 2024](https://platypwn.ctf.platypwnies.de/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-12-07 22:00:00 - 2024-12-08 22:00:00 UTC+8  
+                **比赛权重** : 24.75  
+                **赛事主办** : Platypwnies (https://ctftime.org/team/112550)  
+                **添加日历** : https://ctftime.org/event/2407.ics  
                 
     === "*已经结束*"
         === "国内赛事"
