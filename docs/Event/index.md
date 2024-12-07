@@ -290,15 +290,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[ISITDTU CTF 2024 Finals](https://ctf.isitdtu.com/)"  
-                [![](https://ctftime.org/media/events/index_3.gif){ width="200" align=left }](https://ctf.isitdtu.com/)  
-                **比赛名称** : [ISITDTU CTF 2024 Finals](https://ctf.isitdtu.com/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2024-12-07 10:00:00 - 2024-12-08 19:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
-                **添加日历** : https://ctftime.org/event/2510.ics  
-                
             ??? Quote "[M*CTF 2024 Finals](https://mctf.ru/)"  
                 [![](https://ctftime.org/media/events/IMG_2613_1.PNG){ width="200" align=left }](https://mctf.ru/)  
                 **比赛名称** : [M*CTF 2024 Finals](https://mctf.ru/)  
@@ -659,6 +650,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
                 **添加日历** : https://ctftime.org/event/2419.ics  
+                
+            ??? Quote "[ISITDTU CTF 2024 Finals](https://ctf.isitdtu.com/)"  
+                [![](https://ctftime.org/media/events/index_3.gif){ width="200" align=left }](https://ctf.isitdtu.com/)  
+                **比赛名称** : [ISITDTU CTF 2024 Finals](https://ctf.isitdtu.com/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2024-12-07 10:00:00 - 2024-12-08 19:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
+                **添加日历** : https://ctftime.org/event/2510.ics  
                 
     === "*已经结束*"
         === "国内赛事"
