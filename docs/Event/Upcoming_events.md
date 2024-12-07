@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[LakeCTF Quals 24-25](https://lakectf.epfl.ch/)"  
-    [![](https://ctftime.org/media/events/7fb065c04dbec7e33dfbb1f4456196c7.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
-    **比赛名称** : [LakeCTF Quals 24-25](https://lakectf.epfl.ch/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-12-08 02:00:00 - 2024-12-09 02:00:00 UTC+8  
-    **比赛权重** : 36.00  
-    **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
-    **添加日历** : https://ctftime.org/event/2502.ics  
-    
 ??? Quote "[WannaGame Championship 2024](https://cnsc.com.vn/ctf/)"  
     [![](https://ctftime.org/media/events/WGC2024_2.png){ width="200" align=left }](https://cnsc.com.vn/ctf/)  
     **比赛名称** : [WannaGame Championship 2024](https://cnsc.com.vn/ctf/)  
