@@ -618,15 +618,6 @@ hide:
                 **赛事主办** : Platypwnies (https://ctftime.org/team/112550)  
                 **添加日历** : https://ctftime.org/event/2407.ics  
                 
-            ??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
-                **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-08 00:00:00 - 2024-12-08 04:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
-                **添加日历** : https://ctftime.org/event/2488.ics  
-                
             ??? Quote "[LakeCTF Quals 24-25](https://lakectf.epfl.ch/)"  
                 [![](https://ctftime.org/media/events/7fb065c04dbec7e33dfbb1f4456196c7.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
                 **比赛名称** : [LakeCTF Quals 24-25](https://lakectf.epfl.ch/)  
@@ -723,6 +714,15 @@ hide:
                 **其他说明** : CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。  
                 
         === "国外赛事"
+            ??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
+                **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-12-08 00:00:00 - 2024-12-08 04:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
+                **添加日历** : https://ctftime.org/event/2488.ics  
+                
             ??? Quote "[RedShift.Eclipse 2 Finals]()"  
                 [![](https://ctftime.org/media/events/5202034882946130981.jpg){ width="200" align=left }]()  
                 **比赛名称** : [RedShift.Eclipse 2 Finals]()  
@@ -1613,15 +1613,6 @@ hide:
                 **比赛权重** : 22.67  
                 **赛事主办** : H7Tex (https://ctftime.org/team/281844)  
                 **添加日历** : https://ctftime.org/event/2491.ics  
-                
-            ??? Quote "[Haruulzangi CTF 2024 Round 2](https://dashboard.haruulzangi.mn/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://dashboard.haruulzangi.mn/)  
-                **比赛名称** : [Haruulzangi CTF 2024 Round 2](https://dashboard.haruulzangi.mn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-22 12:00:00 - 2024-09-22 16:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
-                **添加日历** : https://ctftime.org/event/2493.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

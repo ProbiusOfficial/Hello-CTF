@@ -432,18 +432,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "DFIR Labs CTF by The DFIR Report",
-        "比赛时间": "2024-12-08 00:00:00 - 2024-12-08 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2488.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://thedfirreport.com/services/dfir-labs/ctf/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "The DFIR Report (https://ctftime.org/team/309500)",
-        "比赛ID": "1149",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "LakeCTF Quals 24-25",
         "比赛时间": "2024-12-08 02:00:00 - 2024-12-09 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2502.ics",
@@ -454,6 +442,18 @@
         "赛事主办": "polygl0ts (https://ctftime.org/team/53791)",
         "比赛ID": "818",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "DFIR Labs CTF by The DFIR Report",
+        "比赛时间": "2024-12-08 00:00:00 - 2024-12-08 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2488.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://thedfirreport.com/services/dfir-labs/ctf/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "The DFIR Report (https://ctftime.org/team/309500)",
+        "比赛ID": "1149",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "RedShift.Eclipse 2 Finals",
@@ -1641,18 +1641,6 @@
         "比赛权重": "22.67",
         "赛事主办": "H7Tex (https://ctftime.org/team/281844)",
         "比赛ID": "1169",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Haruulzangi CTF 2024 Round 2",
-        "比赛时间": "2024-09-22 12:00:00 - 2024-09-22 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2493.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dashboard.haruulzangi.mn/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "haruulzangi-organizers (https://ctftime.org/team/266812)",
-        "比赛ID": "985",
         "比赛状态": "past"
     }
 ]
