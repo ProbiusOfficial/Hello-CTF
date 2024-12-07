@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[M*CTF 2024 Finals](https://mctf.ru/)"  
-            [![](https://ctftime.org/media/events/IMG_2613_1.PNG){ width="200" align=left }](https://mctf.ru/)  
-            **比赛名称** : [M*CTF 2024 Finals](https://mctf.ru/)  
-            **比赛形式** : Attack-Defense  
-            **比赛时间** : 2024-12-07 15:30:00 - 2024-12-08 00:30:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-            **添加日历** : https://ctftime.org/event/2595.ics  
-            
         ??? Quote "[RedShift.Eclipse 2 Finals]()"  
             [![](https://ctftime.org/media/events/5202034882946130981.jpg){ width="200" align=left }]()  
             **比赛名称** : [RedShift.Eclipse 2 Finals]()  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
             **添加日历** : https://ctftime.org/event/2488.ics  
+            
+        ??? Quote "[LakeCTF Quals 24-25](https://lakectf.epfl.ch/)"  
+            [![](https://ctftime.org/media/events/7fb065c04dbec7e33dfbb1f4456196c7.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
+            **比赛名称** : [LakeCTF Quals 24-25](https://lakectf.epfl.ch/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-12-08 02:00:00 - 2024-12-09 02:00:00 UTC+8  
+            **比赛权重** : 36.00  
+            **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
+            **添加日历** : https://ctftime.org/event/2502.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

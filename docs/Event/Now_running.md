@@ -42,3 +42,12 @@ comments: true
     **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
     **添加日历** : https://ctftime.org/event/2510.ics  
     
+??? Quote "[M*CTF 2024 Finals](https://mctf.ru/)"  
+    [![](https://ctftime.org/media/events/IMG_2613_1.PNG){ width="200" align=left }](https://mctf.ru/)  
+    **比赛名称** : [M*CTF 2024 Finals](https://mctf.ru/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-12-07 15:30:00 - 2024-12-08 00:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
+    **添加日历** : https://ctftime.org/event/2595.ics  
+    
