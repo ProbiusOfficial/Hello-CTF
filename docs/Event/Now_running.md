@@ -63,3 +63,12 @@ comments: true
     **赛事主办** : Platypwnies (https://ctftime.org/team/112550)  
     **添加日历** : https://ctftime.org/event/2407.ics  
     
+??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
+    **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-12-08 00:00:00 - 2024-12-08 04:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
+    **添加日历** : https://ctftime.org/event/2488.ics  
+    

@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
-            **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-12-08 00:00:00 - 2024-12-08 04:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
-            **添加日历** : https://ctftime.org/event/2488.ics  
-            
         ??? Quote "[LakeCTF Quals 24-25](https://lakectf.epfl.ch/)"  
             [![](https://ctftime.org/media/events/7fb065c04dbec7e33dfbb1f4456196c7.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
             **比赛名称** : [LakeCTF Quals 24-25](https://lakectf.epfl.ch/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 29.33  
             **赛事主办** : Cryptonite (https://ctftime.org/team/62713)  
             **添加日历** : https://ctftime.org/event/2461.ics  
+            
+        ??? Quote "[HTB University CTF 2024: Binary Badlands](https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822)"  
+            [![](https://ctftime.org/media/events/htbctf-logo_1.png){ width="200" align=left }](https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822)  
+            **比赛名称** : [HTB University CTF 2024: Binary Badlands](https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-12-13 21:00:00 - 2024-12-16 05:00:00 UTC+8  
+            **比赛权重** : 25.00  
+            **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
+            **添加日历** : https://ctftime.org/event/2539.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
