@@ -186,7 +186,7 @@ comments: true
     **比赛名称** : [World Wide CTF 2024](https://wwctf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-30 20:00:00 - 2024-12-01 20:00:00 UTC+8  
-    **比赛权重** : 25.00  
+    **比赛权重** : 24.45  
     **赛事主办** : World Wide Flags (https://ctftime.org/team/283853)  
     **添加日历** : https://ctftime.org/event/2572.ics  
     
@@ -402,7 +402,7 @@ comments: true
     **比赛名称** : [Bambi CTF #11](https://bambi11.enoflag.de/)  
     **比赛形式** : Attack-Defense  
     **比赛时间** : 2024-11-09 19:00:00 - 2024-11-10 01:00:00 UTC+8  
-    **比赛权重** : 84.81  
+    **比赛权重** : 85.71  
     **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
     **添加日历** : https://ctftime.org/event/2551.ics  
     
