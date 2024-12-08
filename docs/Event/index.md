@@ -457,7 +457,7 @@ hide:
                 **比赛名称** : [New Year CTF 2025](http://ctf-spcs.mf.grsu.by/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-01-13 01:00:00 - 2025-01-15 01:00:00 UTC+8  
-                **比赛权重** : 22.95  
+                **比赛权重** : 23.05  
                 **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
                 **添加日历** : https://ctftime.org/event/2582.ics  
                 
@@ -591,15 +591,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
                 
-            ??? Quote "[LakeCTF Quals 24-25](https://lakectf.epfl.ch/)"  
-                [![](https://ctftime.org/media/events/7fb065c04dbec7e33dfbb1f4456196c7.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
-                **比赛名称** : [LakeCTF Quals 24-25](https://lakectf.epfl.ch/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-08 02:00:00 - 2024-12-09 02:00:00 UTC+8  
-                **比赛权重** : 36.00  
-                **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
-                **添加日历** : https://ctftime.org/event/2502.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[国城杯初赛](https://ctf2024.goalcent.com/)"  
@@ -687,6 +678,15 @@ hide:
                 **其他说明** : CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。  
                 
         === "国外赛事"
+            ??? Quote "[LakeCTF Quals 24-25](https://lakectf.epfl.ch/)"  
+                [![](https://ctftime.org/media/events/7fb065c04dbec7e33dfbb1f4456196c7.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
+                **比赛名称** : [LakeCTF Quals 24-25](https://lakectf.epfl.ch/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-12-08 02:00:00 - 2024-12-09 02:00:00 UTC+8  
+                **比赛权重** : 36.00  
+                **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
+                **添加日历** : https://ctftime.org/event/2502.ics  
+                
             ??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
                 **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
@@ -768,15 +768,6 @@ hide:
                 **赛事主办** : WreckTheLine (https://ctftime.org/team/57908)  
                 **添加日历** : https://ctftime.org/event/2452.ics  
                 
-            ??? Quote "[CYBERGON CTF_2024](https://cybergon.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/CYBERGON_Logo.png){ width="200" align=left }](https://cybergon.ctfd.io/)  
-                **比赛名称** : [CYBERGON CTF_2024](https://cybergon.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-30 20:00:00 - 2024-12-02 20:00:00 UTC+8  
-                **比赛权重** : 23.08  
-                **赛事主办** : My4nM4r (https://ctftime.org/team/145625)  
-                **添加日历** : https://ctftime.org/event/2560.ics  
-                
             ??? Quote "[World Wide CTF 2024](https://wwctf.com/)"  
                 [![](https://ctftime.org/media/events/logobg.png){ width="200" align=left }](https://wwctf.com/)  
                 **比赛名称** : [World Wide CTF 2024](https://wwctf.com/)  
@@ -785,6 +776,15 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : World Wide Flags (https://ctftime.org/team/283853)  
                 **添加日历** : https://ctftime.org/event/2572.ics  
+                
+            ??? Quote "[CYBERGON CTF_2024](https://cybergon.ctfd.io/)"  
+                [![](https://ctftime.org/media/events/CYBERGON_Logo.png){ width="200" align=left }](https://cybergon.ctfd.io/)  
+                **比赛名称** : [CYBERGON CTF_2024](https://cybergon.ctfd.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-11-30 20:00:00 - 2024-12-02 20:00:00 UTC+8  
+                **比赛权重** : 23.08  
+                **赛事主办** : My4nM4r (https://ctftime.org/team/145625)  
+                **添加日历** : https://ctftime.org/event/2560.ics  
                 
             ??? Quote "[Ph0wn 2024](https://ph0wn.org/)"  
                 [![](https://ctftime.org/media/events/logo-ph0wn_5.png){ width="200" align=left }](https://ph0wn.org/)  
@@ -1493,7 +1493,7 @@ hide:
                 **比赛名称** : [IRON CTF 2024](https://ctf.1nf1n1ty.team/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-10-05 13:30:00 - 2024-10-06 13:30:00 UTC+8  
-                **比赛权重** : 24.51  
+                **比赛权重** : 24.54  
                 **赛事主办** : 1nf1n1ty (https://ctftime.org/team/151859)  
                 **添加日历** : https://ctftime.org/event/2497.ics  
                 
@@ -1577,15 +1577,6 @@ hide:
                 **比赛权重** : 50.91  
                 **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
                 **添加日历** : https://ctftime.org/event/2449.ics  
-                
-            ??? Quote "[Season IV, US Cyber Games Flag Fest CTF](https://www.uscybergames.com/season-4-draft-experience#ctf)"  
-                [![](https://ctftime.org/media/events/2022-10-USCG_S3_logos_cybergames_1_1.png){ width="200" align=left }](https://www.uscybergames.com/season-4-draft-experience#ctf)  
-                **比赛名称** : [Season IV, US Cyber Games Flag Fest CTF](https://www.uscybergames.com/season-4-draft-experience#ctf)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-28 02:00:00 - 2024-10-06 11:59:58 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
-                **添加日历** : https://ctftime.org/event/2472.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

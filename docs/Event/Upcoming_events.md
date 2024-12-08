@@ -176,7 +176,7 @@ comments: true
     **比赛名称** : [New Year CTF 2025](http://ctf-spcs.mf.grsu.by/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-01-13 01:00:00 - 2025-01-15 01:00:00 UTC+8  
-    **比赛权重** : 22.95  
+    **比赛权重** : 23.05  
     **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
     **添加日历** : https://ctftime.org/event/2582.ics  
     
