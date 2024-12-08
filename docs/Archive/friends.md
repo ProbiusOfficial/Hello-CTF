@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [强网杯S8决赛pwn writeup](https://xia0ji233.github.io/2024/12/08/qwb2024_final/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-12-07
+
+    同样的，决赛也出了两道pwn题，感觉挺有意思的，来补补wp。heap附件下载环境准备这题一开始最大的一个问题可能是题目依赖较多跑不起来，而且只给了 libc 的版本，是 2.31 9.16 版本，这个比较好说。如果是 libcrypto.1.1 这个库不存在也好说，apt 安装就好了。照常换了 runpath 和链接器之后报了一个神奇的错误。这里的意思就是，虽然你 elf 文件的 libc 换好了...
     ### [蓝凌之前台低权限提权至后台RCE](https://y4tacker.github.io/2024/12/03/year/2024/12/%E8%93%9D%E5%87%8C%E4%B9%8B%E5%89%8D%E5%8F%B0%E4%BD%8E%E6%9D%83%E9%99%90%E6%8F%90%E6%9D%83%E8%87%B3%E5%90%8E%E5%8F%B0RCE/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-12-03
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-08-27
 
     0a1cc6dfc9166f2d46858a423f462b71087aec7840c0b8ebcdf2959a7d6f18fa8621aecaedc917cc165666c63ee06bab620cca80e98e546baee70442d88603ce6d339115193f5d3bd84436b9e9ce4b28aa1bba5160c4b08007dc3307ddd4ccb47c1ea2...
-    ### [浅析禅道前台SQL注入(Version<20.2)](https://y4tacker.github.io/2024/08/26/year/2024/8/%E6%B5%85%E6%9E%90%E7%A6%85%E9%81%93%E5%89%8D%E5%8F%B0SQL%E6%B3%A8%E5%85%A5-Version-20-2/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-08-26
-
-    66a1f65ddff5e5fbaee1f939ddf44dcea4029f7582b06e522d1f0b6ddb88495ea7651bf11a6cf64290c5aba6d3cb65ac625a1c15349986dcd67002fc9c92f6f9ff53b981b42f886762bbeb3c53a57f28a78cbe50fc24227b675c76452330256a5de2ba...
 
 </div>
