@@ -556,7 +556,7 @@ hide:
                 **比赛名称** : [LakeCTF Finals 24-25](https://lakectf.epfl.ch/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-05-09 16:00:00 - 2025-05-10 00:00:00 UTC+8  
-                **比赛权重** : 17.00  
+                **比赛权重** : 23.30  
                 **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
                 **添加日历** : https://ctftime.org/event/2568.ics  
                 
