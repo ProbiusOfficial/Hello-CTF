@@ -1,0 +1,77 @@
+<style>
+    .carousel {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .grid {
+            grid-template-columns: none !important;
+        }
+    }
+</style>
+<div class="grid" style="display: grid;grid-template-columns: 60% 40%;">
+
+    <!-- 轮播图布局 -->
+    <div class="carousel">
+        <div class="carousel-container">
+            <a href="../HC_Start/" target="_blank"><img src="../assets/banner-quickstart.png" /></a>
+        </div>
+        <!-- 触发 hover 的区域 -->
+        <div class="carousel-hover left">
+            <button class="carousel-btn left"></button>
+        </div>
+        <div class="carousel-hover right">
+            <button class="carousel-btn right"></button>
+        </div>
+        <div class="carousel-bottom"></div>
+    </div>
+
+    <div class="grid cards">
+        <ul>
+            <li>
+                <p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                            d="M12 19c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m0-18c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2M6 16c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m-3-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m3-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m12 12c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m3-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m-3-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2Z">
+                            </path>
+                        </svg></span> <strong>比赛状态</strong></p>
+                <hr>
+                <div class="event-box">
+                    <!-- 赛事模块前置_开始 -->
+                    <div>
+                        <strong id="greeting"></strong><br>
+                        <br>
+                        <b>国内</b> 共有 9 场比赛正在报名,<br>
+                        <a href="Upcoming_events/#_2">11</a> 场比赛即将开始,
+                        <a href="Now_running/#_2">2</a> 场比赛正在进行。<br>
+                        <b>国外</b> 共有 <a href="Upcoming_events/#_3">21</a> 场比赛即将开始,<br>
+                        <a href="Now_running/#_3">2</a> 场比赛正在进行。<br>
+                        <br>
+                        您可以点击左侧栏来查看不同状态的比赛详细。
+
+                    </div>
+
+                    <!-- 赛事模块前置_结束 -->
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script>
+        function showGreeting() {
+            const hour = new Date().getHours();
+            let greeting;
+            if (hour < 5) {
+                greeting = "夜深了, 要早些休息哦!";
+            }
+            else if (hour < 12) {
+                greeting = "早上好, 今天也是元气满满的一天哦w";
+            } else if (hour < 18) {
+                greeting = "下午好, 吃过下午茶了吗?";
+            } else {
+                greeting = "晚上好, 今天过得怎么样?";
+            }
+            document.getElementById("greeting").textContent = greeting;
+        }
+        showGreeting();
+    </script>
+    
+</div>
