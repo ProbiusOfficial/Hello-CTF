@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [干货满满之2024广州补天城市沙龙有感](https://blog.zgsec.cn/archives/613.html)  
+    >by [曾哥](https://blog.zgsec.cn/), 2024-12-08
+
+    前言哈哈，好久没在博客上面更新文章了，许多朋友（不管是线上还是线下）都在问我是不是不更新博客了，也在催我赶紧更新一下博客的内容，在此也非常感谢各位师傅和朋友的关注和支持~近期不更新博客，原因如下：最近大家也知道emmmmm..我最近到深圳这边，这边项目的对抗程度很高，在这段时间学到很多知识，但工作强度也比较大，人也相比之前时间更少了，也累了不少；但能学到技术还是非常开心的，有时候工作确实太累了，导...
     ### [强网杯S8决赛pwn writeup](https://xia0ji233.github.io/2024/12/08/qwb2024_final/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2024-12-07
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2024-09-02
 
     KCTF2024第八题——星门 writeup思路分析拿到题目，是一道典型的写shellcode的题目，白名单系统调用，只允许 read，wait4 和 ptrace。沙箱系统调用号白名单首先想到了切架构，但是它题目也有判断架构。因此就只能利用这个 ptrace 去做文章了。其次应当考虑信息以何种方式回传，因为原进程是连write都不能用的，侧信道也没法，所以便起了一个docker环境去试试。发现...
-    ### [浅析禅道利用第二弹之从SQLi到RCE](https://y4tacker.github.io/2024/08/27/year/2024/8/%E7%A6%85%E9%81%93%E5%88%A9%E7%94%A8%E7%AC%AC%E4%BA%8C%E5%BC%B9%E4%B9%8B%E4%BB%8ESQLi%E5%88%B0RCE/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-08-27
-
-    0a1cc6dfc9166f2d46858a423f462b71087aec7840c0b8ebcdf2959a7d6f18fa8621aecaedc917cc165666c63ee06bab620cca80e98e546baee70442d88603ce6d339115193f5d3bd84436b9e9ce4b28aa1bba5160c4b08007dc3307ddd4ccb47c1ea2...
 
 </div>
