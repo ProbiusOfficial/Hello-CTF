@@ -105,7 +105,7 @@ comments: true
     **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-12-08 00:00:00 - 2024-12-08 04:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
     **添加日历** : https://ctftime.org/event/2488.ics  
     
@@ -159,7 +159,7 @@ comments: true
     **比赛名称** : [M*CTF 2024 Junior Finals](https://mctf.ru/)  
     **比赛形式** : Attack-Defense  
     **比赛时间** : 2024-12-01 15:00:00 - 2024-12-01 21:30:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
     **添加日历** : https://ctftime.org/event/2586.ics  
     
@@ -213,7 +213,7 @@ comments: true
     **比赛名称** : [AlpacaHack Round 7 (Web)](https://alpacahack.com/ctfs/round-7)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-30 11:00:00 - 2024-11-30 17:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
     **添加日历** : https://ctftime.org/event/2544.ics  
     
@@ -384,7 +384,7 @@ comments: true
     **比赛名称** : [DataCon2024](https://datacon.qianxin.com/datacon2024-en)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-13 10:00:00 - 2024-11-22 18:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : DataCon (https://ctftime.org/team/361332)  
     **添加日历** : https://ctftime.org/event/2580.ics  
     
@@ -492,7 +492,7 @@ comments: true
     **比赛名称** : [Sudocrypt v14.0](https://sudocrypt.com/)  
     **比赛形式** : Hack quest  
     **比赛时间** : 2024-11-07 11:30:00 - 2024-11-08 23:30:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : exunclan (https://ctftime.org/team/83987)  
     **添加日历** : https://ctftime.org/event/2562.ics  
     
@@ -510,7 +510,7 @@ comments: true
     **比赛名称** : [AlpacaHack Round 6 (Pwn)](https://alpacahack.com/ctfs/round-6)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-03 11:00:00 - 2024-11-03 17:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
     **添加日历** : https://ctftime.org/event/2501.ics  
     
@@ -555,7 +555,7 @@ comments: true
     **比赛名称** : [USC CTF Fall 2024](https://usc.ctfd.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-02 11:00:00 - 2024-11-04 12:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : 7r0j4npwn135 (https://ctftime.org/team/214221)  
     **添加日历** : https://ctftime.org/event/2543.ics  
     
@@ -618,7 +618,7 @@ comments: true
     **比赛名称** : [UrchinSec Aware CTF](https://ctf.urchinsec.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-10-26 15:00:00 - 2024-10-28 03:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : UrchinSec (https://ctftime.org/team/175663)  
     **添加日历** : https://ctftime.org/event/2527.ics  
     
@@ -762,7 +762,7 @@ comments: true
     **比赛名称** : [DEADFACE CTF 2024](https://ctf.deadface.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-10-18 22:00:00 - 2024-10-20 08:00:00 UTC+8  
-    **比赛权重** : 38.70  
+    **比赛权重** : 0.00  
     **赛事主办** : Cyber Hacktics (https://ctftime.org/team/127017)  
     **添加日历** : https://ctftime.org/event/2443.ics  
     
@@ -780,7 +780,7 @@ comments: true
     **比赛名称** : [Africa battleCTF 2024 prequal](https://qualifier.bugpwn.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-10-18 08:00:00 - 2024-10-20 08:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : BUG PWN (https://ctftime.org/team/182428)  
     **添加日历** : https://ctftime.org/event/2531.ics  
     
@@ -861,7 +861,7 @@ comments: true
     **比赛名称** : [AlpacaHack Round 5 (Crypto)](https://alpacahack.com/ctfs/round-5)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-10-12 11:00:00 - 2024-10-12 17:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
     **添加日历** : https://ctftime.org/event/2500.ics  
     
@@ -924,7 +924,7 @@ comments: true
     **比赛名称** : [AlpacaHack Round 4 (Rev)](https://alpacahack.com/ctfs/round-4)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-10-05 11:00:00 - 2024-10-05 17:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
     **添加日历** : https://ctftime.org/event/2499.ics  
     
@@ -942,7 +942,7 @@ comments: true
     **比赛名称** : [Hack Havoc 2.0](https://ctf.cybermaterial.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-10-04 21:59:48 - 2024-10-25 21:59:48 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : Hack Havoc (https://ctftime.org/team/316395)  
     **添加日历** : https://ctftime.org/event/2532.ics  
     
