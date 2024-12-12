@@ -78,7 +78,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://beginner.m0lecon.it/",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
+        "比赛权重": "75.00",
         "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
         "比赛ID": "372",
         "比赛状态": "oncoming"
@@ -126,7 +126,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.0xl4ugh.com/",
         "比赛标志": "https://ctftime.org/media/events/logo_101.png",
-        "比赛权重": "0.00",
+        "比赛权重": "25.00",
         "赛事主办": "0xL4ugh (https://ctftime.org/team/132776)",
         "比赛ID": "579",
         "比赛状态": "oncoming"
@@ -174,7 +174,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://alpacahack.com/",
         "比赛标志": "https://ctftime.org/media/events/dark_512_2.png",
-        "比赛权重": "0.00",
+        "比赛权重": "0",
         "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
         "比赛ID": "1163",
         "比赛状态": "oncoming"
@@ -402,7 +402,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://lakectf.epfl.ch/",
         "比赛标志": "https://ctftime.org/media/events/7fb065c04dbec7e33dfbb1f4456196c7.png",
-        "比赛权重": "36.00",
+        "比赛权重": "35.94",
         "赛事主办": "polygl0ts (https://ctftime.org/team/53791)",
         "比赛ID": "818",
         "比赛状态": "past"
@@ -414,7 +414,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://thedfirreport.com/services/dfir-labs/ctf/",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
+        "比赛权重": "0",
         "赛事主办": "The DFIR Report (https://ctftime.org/team/309500)",
         "比赛ID": "1149",
         "比赛状态": "past"
@@ -486,7 +486,7 @@
         "比赛形式": "Attack-Defense",
         "比赛链接": "https://mctf.ru/",
         "比赛标志": "https://ctftime.org/media/events/IMG_2613.PNG",
-        "比赛权重": "0.00",
+        "比赛权重": "0",
         "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
         "比赛ID": "164",
         "比赛状态": "past"
@@ -558,7 +558,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://alpacahack.com/ctfs/round-7",
         "比赛标志": "https://ctftime.org/media/events/ctftime_8.png",
-        "比赛权重": "0.00",
+        "比赛权重": "0",
         "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
         "比赛ID": "1163",
         "比赛状态": "past"
@@ -786,7 +786,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://datacon.qianxin.com/datacon2024-en",
         "比赛标志": "https://ctftime.org/media/events/16945a7ddd36ca5428bca66728c36df3.png",
-        "比赛权重": "0.00",
+        "比赛权重": "0",
         "赛事主办": "DataCon (https://ctftime.org/team/361332)",
         "比赛ID": "1201",
         "比赛状态": "past"
@@ -930,7 +930,7 @@
         "比赛形式": "Hack quest",
         "比赛链接": "https://sudocrypt.com/",
         "比赛标志": "https://ctftime.org/media/events/eac9d32fd3264f0c9dbe542e9f853468.png",
-        "比赛权重": "0.00",
+        "比赛权重": "0",
         "赛事主办": "exunclan (https://ctftime.org/team/83987)",
         "比赛ID": "869",
         "比赛状态": "past"
@@ -954,7 +954,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://alpacahack.com/ctfs/round-6",
         "比赛标志": "https://ctftime.org/media/events/ctftime_7.png",
-        "比赛权重": "0.00",
+        "比赛权重": "0",
         "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
         "比赛ID": "1163",
         "比赛状态": "past"
@@ -1014,7 +1014,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://usc.ctfd.io/",
         "比赛标志": "https://ctftime.org/media/events/USC_CTF_Logo_Handdrawn.png",
-        "比赛权重": "0.00",
+        "比赛权重": "0",
         "赛事主办": "7r0j4npwn135 (https://ctftime.org/team/214221)",
         "比赛ID": "1022",
         "比赛状态": "past"
@@ -1098,7 +1098,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.urchinsec.com/",
         "比赛标志": "https://ctftime.org/media/events/URCHINSEC_free-file_1.png",
-        "比赛权重": "0.00",
+        "比赛权重": "0",
         "赛事主办": "UrchinSec (https://ctftime.org/team/175663)",
         "比赛ID": "1096",
         "比赛状态": "past"
@@ -1290,7 +1290,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.deadface.io/",
         "比赛标志": "https://ctftime.org/media/events/logo_deadface_ctf_2024.png",
-        "比赛权重": "0.00",
+        "比赛权重": "38.70",
         "赛事主办": "Cyber Hacktics (https://ctftime.org/team/127017)",
         "比赛ID": "487",
         "比赛状态": "past"
@@ -1314,7 +1314,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://qualifier.bugpwn.com/",
         "比赛标志": "https://ctftime.org/media/events/banner_1.png",
-        "比赛权重": "0.00",
+        "比赛权重": "0",
         "赛事主办": "BUG PWN (https://ctftime.org/team/182428)",
         "比赛ID": "968",
         "比赛状态": "past"
@@ -1422,7 +1422,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://alpacahack.com/ctfs/round-5",
         "比赛标志": "https://ctftime.org/media/events/ctftime_6.png",
-        "比赛权重": "0.00",
+        "比赛权重": "0",
         "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
         "比赛ID": "1163",
         "比赛状态": "past"
@@ -1506,7 +1506,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://alpacahack.com/ctfs/round-4",
         "比赛标志": "https://ctftime.org/media/events/ctftime_5.png",
-        "比赛权重": "0.00",
+        "比赛权重": "0",
         "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
         "比赛ID": "1163",
         "比赛状态": "past"
@@ -1530,7 +1530,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.cybermaterial.com/",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
+        "比赛权重": "0",
         "赛事主办": "Hack Havoc (https://ctftime.org/team/316395)",
         "比赛ID": "1160",
         "比赛状态": "past"
