@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [强网杯S8决赛Reverse writeup](https://xia0ji233.github.io/2024/12/11/qwb2024_final_reverse/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-12-11
+
+    复盘一下强网决赛的Reverse题。S1mpleVM附件下载题目名字已经很明显的告诉你了，就是 vm 逆向。基本分析入口其实没啥，就是输入 32 长度的 passcode 然后校验，启动方式是 ./secret_box.exe quest 命令行传参。可以找到最关键的函数 sub_140001D30 就是 VM 入口。这个函数里面很明显的 vm_handler1234567891011121314...
     ### [干货满满之2024广州补天城市沙龙有感](https://blog.zgsec.cn/archives/613.html)  
     >by [曾哥](https://blog.zgsec.cn/), 2024-12-08
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-09-02
 
     5d737de200998fa96fe50e14daeae4f936d6c2e263442da7b419cac91b5030bbfa0e26acc7e2d8e6be6b10ef0f9633b6f035c93526330d7b98ff6d625af66aab5e4f3c5bbc3fe17c81df02652f89f741e35999243afb75566bdbedf56b286ad102f569...
-    ### [KCTF2024第八题 writeup](https://xia0ji233.github.io/2024/09/02/KCTF2024/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2024-09-02
-
-    KCTF2024第八题——星门 writeup思路分析拿到题目，是一道典型的写shellcode的题目，白名单系统调用，只允许 read，wait4 和 ptrace。沙箱系统调用号白名单首先想到了切架构，但是它题目也有判断架构。因此就只能利用这个 ptrace 去做文章了。其次应当考虑信息以何种方式回传，因为原进程是连write都不能用的，侧信道也没法，所以便起了一个docker环境去试试。发现...
 
 </div>
