@@ -68,7 +68,7 @@ comments: true
     **比赛名称** : [m0leCon 2025 Beginner CTF](https://beginner.m0lecon.it/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-12-14 21:00:00 - 2024-12-15 02:00:00 UTC+8  
-    **比赛权重** : 0.00  
+    **比赛权重** : 75.00  
     **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
     **添加日历** : https://ctftime.org/event/2578.ics  
     
@@ -104,7 +104,7 @@ comments: true
     **比赛名称** : [0xL4ugh CTF](https://ctf.0xl4ugh.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-12-27 20:00:00 - 2024-12-28 20:00:00 UTC+8  
-    **比赛权重** : 0.00  
+    **比赛权重** : 25.00  
     **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
     **添加日历** : https://ctftime.org/event/2587.ics  
     
@@ -140,7 +140,7 @@ comments: true
     **比赛名称** : [AlpacaHack Round 8 (Rev)](https://alpacahack.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-12-30 11:00:00 - 2024-12-30 17:00:00 UTC+8  
-    **比赛权重** : 0.00  
+    **比赛权重** : 0  
     **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
     **添加日历** : https://ctftime.org/event/2590.ics  
     
