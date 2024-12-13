@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "WannaGame Championship 2024",
-        "比赛时间": "2024-12-13 09:00:00 - 2024-12-14 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2515.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cnsc.com.vn/ctf/",
-        "比赛标志": "https://ctftime.org/media/events/WGC2024_2.png",
-        "比赛权重": "19.80",
-        "赛事主办": "Wanna.W1n (https://ctftime.org/team/138431)",
-        "比赛ID": "1000",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "niteCTF 2024",
         "比赛时间": "2024-12-13 20:00:00 - 2024-12-15 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2461.ics",
@@ -396,6 +384,18 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "WannaGame Championship 2024",
+        "比赛时间": "2024-12-13 09:00:00 - 2024-12-14 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2515.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cnsc.com.vn/ctf/",
+        "比赛标志": "https://ctftime.org/media/events/WGC2024_2.png",
+        "比赛权重": "19.80",
+        "赛事主办": "Wanna.W1n (https://ctftime.org/team/138431)",
+        "比赛ID": "1000",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "LakeCTF Quals 24-25",
         "比赛时间": "2024-12-08 02:00:00 - 2024-12-09 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2502.ics",
@@ -522,7 +522,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://wwctf.com/",
         "比赛标志": "https://ctftime.org/media/events/logobg.png",
-        "比赛权重": "24.45",
+        "比赛权重": "24.42",
         "赛事主办": "World Wide Flags (https://ctftime.org/team/283853)",
         "比赛ID": "1208",
         "比赛状态": "past"
@@ -726,7 +726,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.pwnsec.xyz/",
         "比赛标志": "https://ctftime.org/media/events/Logo_12.png",
-        "比赛权重": "24.28",
+        "比赛权重": "24.08",
         "赛事主办": "PwnSec (https://ctftime.org/team/28797)",
         "比赛ID": "1150",
         "比赛状态": "past"
@@ -846,7 +846,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.4ts.fr/",
         "比赛标志": "https://ctftime.org/media/events/53b0900ddae2f59936bcc4eafc1458cf.jpg",
-        "比赛权重": "24.25",
+        "比赛权重": "24.40",
         "赛事主办": "4T$ (https://ctftime.org/team/302295)",
         "比赛ID": "1188",
         "比赛状态": "past"
@@ -942,7 +942,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://quals.o1d-bu7-go1d.ru/",
         "比赛标志": "https://ctftime.org/media/events/IMG_5703.JPG",
-        "比赛权重": "23.12",
+        "比赛权重": "23.40",
         "赛事主办": "o1d_bu7_go1d (https://ctftime.org/team/213673)",
         "比赛ID": "1179",
         "比赛状态": "past"
@@ -1062,7 +1062,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://international.cyberjawara.pro/",
         "比赛标志": "https://ctftime.org/media/events/73b32f71c82304b9e3df7fe9dedada59-transformed.png",
-        "比赛权重": "23.43",
+        "比赛权重": "23.62",
         "赛事主办": "SKSD (https://ctftime.org/team/211952)",
         "比赛ID": "1192",
         "比赛状态": "past"
@@ -1182,7 +1182,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.zerologon.co.in/",
         "比赛标志": "https://ctftime.org/media/events/Logo.c1dfc2e2d63945110c8d.png",
-        "比赛权重": "24.79",
+        "比赛权重": "24.77",
         "赛事主办": "Z3r0_l0g0n (https://ctftime.org/team/227457)",
         "比赛ID": "1185",
         "比赛状态": "past"

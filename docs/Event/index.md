@@ -290,15 +290,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[WannaGame Championship 2024](https://cnsc.com.vn/ctf/)"  
-                [![](https://ctftime.org/media/events/WGC2024_2.png){ width="200" align=left }](https://cnsc.com.vn/ctf/)  
-                **比赛名称** : [WannaGame Championship 2024](https://cnsc.com.vn/ctf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-13 09:00:00 - 2024-12-14 09:00:00 UTC+8  
-                **比赛权重** : 19.80  
-                **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
-                **添加日历** : https://ctftime.org/event/2515.ics  
-                
             ??? Quote "[niteCTF 2024](https://www.nitectf2024.live/)"  
                 [![](https://ctftime.org/media/events/nitectf_2024_logo.jpg){ width="200" align=left }](https://www.nitectf2024.live/)  
                 **比赛名称** : [niteCTF 2024](https://www.nitectf2024.live/)  
@@ -591,6 +582,15 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
                 
+            ??? Quote "[WannaGame Championship 2024](https://cnsc.com.vn/ctf/)"  
+                [![](https://ctftime.org/media/events/WGC2024_2.png){ width="200" align=left }](https://cnsc.com.vn/ctf/)  
+                **比赛名称** : [WannaGame Championship 2024](https://cnsc.com.vn/ctf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-12-13 09:00:00 - 2024-12-14 09:00:00 UTC+8  
+                **比赛权重** : 19.80  
+                **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
+                **添加日历** : https://ctftime.org/event/2515.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[国城杯初赛](https://ctf2024.goalcent.com/)"  
@@ -773,7 +773,7 @@ hide:
                 **比赛名称** : [World Wide CTF 2024](https://wwctf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-11-30 20:00:00 - 2024-12-01 20:00:00 UTC+8  
-                **比赛权重** : 24.45  
+                **比赛权重** : 24.42  
                 **赛事主办** : World Wide Flags (https://ctftime.org/team/283853)  
                 **添加日历** : https://ctftime.org/event/2572.ics  
                 
@@ -926,7 +926,7 @@ hide:
                 **比赛名称** : [PwnSec CTF 2024](https://ctf.pwnsec.xyz/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-11-15 23:00:00 - 2024-11-16 23:00:00 UTC+8  
-                **比赛权重** : 24.28  
+                **比赛权重** : 24.08  
                 **赛事主办** : PwnSec (https://ctftime.org/team/28797)  
                 **添加日历** : https://ctftime.org/event/2454.ics  
                 
@@ -1016,7 +1016,7 @@ hide:
                 **比赛名称** : [4T$ CTF](https://ctf.4ts.fr/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-11-09 02:00:00 - 2024-11-11 02:00:00 UTC+8  
-                **比赛权重** : 24.25  
+                **比赛权重** : 24.40  
                 **赛事主办** : 4T$ (https://ctftime.org/team/302295)  
                 **添加日历** : https://ctftime.org/event/2545.ics  
                 
@@ -1088,7 +1088,7 @@ hide:
                 **比赛名称** : [RedShift.Eclipse 2 Quals](https://quals.o1d-bu7-go1d.ru/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-11-03 20:00:00 - 2024-11-04 20:00:00 UTC+8  
-                **比赛权重** : 23.12  
+                **比赛权重** : 23.40  
                 **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
                 **添加日历** : https://ctftime.org/event/2541.ics  
                 
@@ -1178,7 +1178,7 @@ hide:
                 **比赛名称** : [The Cyber Jawara International 2024](https://international.cyberjawara.pro/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-10-27 10:00:00 - 2024-10-28 10:00:00 UTC+8  
-                **比赛权重** : 23.43  
+                **比赛权重** : 23.62  
                 **赛事主办** : SKSD (https://ctftime.org/team/211952)  
                 **添加日历** : https://ctftime.org/event/2552.ics  
                 
@@ -1268,7 +1268,7 @@ hide:
                 **比赛名称** : [Z3R0 D4Y CTF](https://ctf.zerologon.co.in/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-10-24 17:00:00 - 2024-10-25 05:00:00 UTC+8  
-                **比赛权重** : 24.79  
+                **比赛权重** : 24.77  
                 **赛事主办** : Z3r0_l0g0n (https://ctftime.org/team/227457)  
                 **添加日历** : https://ctftime.org/event/2529.ics  
                 
