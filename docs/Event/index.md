@@ -290,15 +290,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[HTB University CTF 2024: Binary Badlands](https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822)"  
-                [![](https://ctftime.org/media/events/htbctf-logo_1.png){ width="200" align=left }](https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822)  
-                **比赛名称** : [HTB University CTF 2024: Binary Badlands](https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-13 21:00:00 - 2024-12-16 05:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
-                **添加日历** : https://ctftime.org/event/2539.ics  
-                
             ??? Quote "[THJCC CTF 2024 winter](https://ctf.scint.org/)"  
                 [![](https://ctftime.org/media/events/THJCC_logo.png){ width="200" align=left }](https://ctf.scint.org/)  
                 **比赛名称** : [THJCC CTF 2024 winter](https://ctf.scint.org/)  
@@ -591,6 +582,15 @@ hide:
                 **赛事主办** : Cryptonite (https://ctftime.org/team/62713)  
                 **添加日历** : https://ctftime.org/event/2461.ics  
                 
+            ??? Quote "[HTB University CTF 2024: Binary Badlands](https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822)"  
+                [![](https://ctftime.org/media/events/htbctf-logo_1.png){ width="200" align=left }](https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822)  
+                **比赛名称** : [HTB University CTF 2024: Binary Badlands](https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-12-13 21:00:00 - 2024-12-16 05:00:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
+                **添加日历** : https://ctftime.org/event/2539.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[国城杯初赛](https://ctf2024.goalcent.com/)"  
@@ -620,13 +620,6 @@ hide:
                 **报名时间** : 2024年11月09日 10:00 - 2024年11月15日 16:59  
                 **比赛时间** : 2024年11月09日 10:00 - 2024年11月15日 17:00  
                 **其他说明** : 第四届ISCTF高校联合安全技能挑战赛由福州蓝鲨信息技术有限公司和DK云赞助，由大理大学、信阳师范大学、福建师范大学主办，联合院校名单包括安徽工业经济职业技术学院、成都东软学院等32所高校的网络与信息安全协会联合主办。比赛时间为11月9日10:00至11月15日17:00，比赛平台为isctf2024.bluesharkinfo.com，目前已开放注册。  
-                
-            ??? Quote "[MoeCTF 2024](https://ctf.xidian.edu.cn)"  
-                **比赛名称** : [MoeCTF 2024](https://ctf.xidian.edu.cn)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年08月07日 14:23 - 2024年10月14日 21:00  
-                **比赛时间** : 2024年08月10日 09:00 - 2024年10月14日 21:00  
-                **其他说明** : QQ 群：187536315  
                 
             ??? Quote "[GEEKGAME 2024](https://geekgame.pku.edu.cn)"  
                 **比赛名称** : [GEEKGAME 2024](https://geekgame.pku.edu.cn)  

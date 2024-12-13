@@ -77,17 +77,6 @@
                 "readmore": "第四届ISCTF高校联合安全技能挑战赛由福州蓝鲨信息技术有限公司和DK云赞助，由大理大学、信阳师范大学、福建师范大学主办，联合院校名单包括安徽工业经济职业技术学院、成都东软学院等32所高校的网络与信息安全协会联合主办。比赛时间为11月9日10:00至11月15日17:00，比赛平台为isctf2024.bluesharkinfo.com，目前已开放注册。"
             },
             {
-                "name": "MoeCTF 2024",
-                "link": "https://ctf.xidian.edu.cn",
-                "type": "个人赛",
-                "reg_time_start": "2024年08月07日 14:23",
-                "reg_time_end": "2024年10月14日 21:00",
-                "comp_time_start": "2024年08月10日 09:00",
-                "comp_time_end": "2024年10月14日 21:00",
-                "readmore": "QQ 群：187536315",
-                "status": "已经结束"
-            },
-            {
                 "name": "GEEKGAME 2024",
                 "info_confirmed": 1,
                 "mid_join": 0,

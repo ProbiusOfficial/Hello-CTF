@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "HTB University CTF 2024: Binary Badlands",
-        "比赛时间": "2024-12-13 21:00:00 - 2024-12-16 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2539.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822",
-        "比赛标志": "https://ctftime.org/media/events/htbctf-logo_1.png",
-        "比赛权重": "25.00",
-        "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
-        "比赛ID": "554",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "THJCC CTF 2024 winter",
         "比赛时间": "2024-12-14 08:00:01 - 2024-12-15 20:00:01 UTC+8",
         "添加日历": "https://ctftime.org/event/2581.ics",
@@ -393,6 +381,18 @@
         "比赛权重": "29.33",
         "赛事主办": "Cryptonite (https://ctftime.org/team/62713)",
         "比赛ID": "663",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "HTB University CTF 2024: Binary Badlands",
+        "比赛时间": "2024-12-13 21:00:00 - 2024-12-16 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2539.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822",
+        "比赛标志": "https://ctftime.org/media/events/htbctf-logo_1.png",
+        "比赛权重": "25.00",
+        "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
+        "比赛ID": "554",
         "比赛状态": "nowrunning"
     },
     {
