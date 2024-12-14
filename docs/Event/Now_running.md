@@ -45,3 +45,12 @@ comments: true
     **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
     **添加日历** : https://ctftime.org/event/2581.ics  
     
+??? Quote "[TSG CTF 2024](https://ctf.tsg.ne.jp/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.tsg.ne.jp/)  
+    **比赛名称** : [TSG CTF 2024](https://ctf.tsg.ne.jp/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-12-14 15:00:00 - 2024-12-15 15:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : TSG (https://ctftime.org/team/16088)  
+    **添加日历** : https://ctftime.org/event/2424.ics  
+    

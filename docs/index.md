@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[TSG CTF 2024](https://ctf.tsg.ne.jp/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctf.tsg.ne.jp/)  
-            **比赛名称** : [TSG CTF 2024](https://ctf.tsg.ne.jp/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-12-14 15:00:00 - 2024-12-15 15:00:00 UTC+8  
-            **比赛权重** : 25.00  
-            **赛事主办** : TSG (https://ctftime.org/team/16088)  
-            **添加日历** : https://ctftime.org/event/2424.ics  
-            
         ??? Quote "[Russian CTF Cup 2024 Final](https://ctfcup.ru/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://ctfcup.ru/)  
             **比赛名称** : [Russian CTF Cup 2024 Final](https://ctfcup.ru/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Thread in the Needle (https://ctftime.org/team/278978)  
             **添加日历** : https://ctftime.org/event/2571.ics  
+            
+        ??? Quote "[0CTF 2024](https://ctf.0ops.sjtu.cn/)"  
+            [![](https://ctftime.org/media/events/0ctf.png){ width="200" align=left }](https://ctf.0ops.sjtu.cn/)  
+            **比赛名称** : [0CTF 2024](https://ctf.0ops.sjtu.cn/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-12-21 10:00:00 - 2024-12-23 10:00:00 UTC+8  
+            **比赛权重** : 100.00  
+            **赛事主办** : 0ops (https://ctftime.org/team/4419)  
+            **添加日历** : https://ctftime.org/event/2448.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
