@@ -84,6 +84,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[m0leCon 2025 Beginner CTF](https://beginner.m0lecon.it/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://beginner.m0lecon.it/)  
+    **比赛名称** : [m0leCon 2025 Beginner CTF](https://beginner.m0lecon.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-12-14 21:00:00 - 2024-12-15 02:00:00 UTC+8  
+    **比赛权重** : 75.00  
+    **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
+    **添加日历** : https://ctftime.org/event/2578.ics  
+    
 ??? Quote "[WannaGame Championship 2024](https://cnsc.com.vn/ctf/)"  
     [![](https://ctftime.org/media/events/WGC2024_2.png){ width="200" align=left }](https://cnsc.com.vn/ctf/)  
     **比赛名称** : [WannaGame Championship 2024](https://cnsc.com.vn/ctf/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : BitsLab (https://ctftime.org/team/331124)  
     **添加日历** : https://ctftime.org/event/2509.ics  
-    
-??? Quote "[SCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)"  
-    [![](https://ctftime.org/media/events/syclover_2.jpg){ width="200" align=left }](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)  
-    **比赛名称** : [SCTF 2024](https://adworld.xctf.org.cn/contest/assess?hash=4124a446-65a9-11ef-a39a-000c297261bb)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-28 09:00:00 - 2024-09-30 09:00:00 UTC+8  
-    **比赛权重** : 37.00  
-    **赛事主办** : Syclover (https://ctftime.org/team/455)  
-    **添加日历** : https://ctftime.org/event/2483.ics  
     
