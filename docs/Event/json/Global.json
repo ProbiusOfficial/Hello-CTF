@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Russian CTF Cup 2024 Final",
-        "比赛时间": "2024-12-14 18:00:00 - 2024-12-16 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2406.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://ctfcup.ru/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "ctfcup (https://ctftime.org/team/203499)",
-        "比赛ID": "864",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "m0leCon 2025 Beginner CTF",
         "比赛时间": "2024-12-14 21:00:00 - 2024-12-15 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2578.ics",
@@ -306,7 +294,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://www.nops.re/",
         "比赛标志": "https://ctftime.org/media/events/logo-news.png",
-        "比赛权重": "24.32",
+        "比赛权重": "24.34",
         "赛事主办": "NOPS (https://ctftime.org/team/4056)",
         "比赛ID": "1114",
         "比赛状态": "oncoming"
@@ -381,6 +369,18 @@
         "比赛权重": "25.00",
         "赛事主办": "TSG (https://ctftime.org/team/16088)",
         "比赛ID": "294",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Russian CTF Cup 2024 Final",
+        "比赛时间": "2024-12-14 18:00:00 - 2024-12-16 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2406.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://ctfcup.ru/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "ctfcup (https://ctftime.org/team/203499)",
+        "比赛ID": "864",
         "比赛状态": "nowrunning"
     },
     {

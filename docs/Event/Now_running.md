@@ -54,3 +54,12 @@ comments: true
     **赛事主办** : TSG (https://ctftime.org/team/16088)  
     **添加日历** : https://ctftime.org/event/2424.ics  
     
+??? Quote "[Russian CTF Cup 2024 Final](https://ctfcup.ru/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctfcup.ru/)  
+    **比赛名称** : [Russian CTF Cup 2024 Final](https://ctfcup.ru/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2024-12-14 18:00:00 - 2024-12-16 03:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
+    **添加日历** : https://ctftime.org/event/2406.ics  
+    

@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Russian CTF Cup 2024 Final](https://ctfcup.ru/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctfcup.ru/)  
-    **比赛名称** : [Russian CTF Cup 2024 Final](https://ctfcup.ru/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2024-12-14 18:00:00 - 2024-12-16 03:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
-    **添加日历** : https://ctftime.org/event/2406.ics  
-    
 ??? Quote "[m0leCon 2025 Beginner CTF](https://beginner.m0lecon.it/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://beginner.m0lecon.it/)  
     **比赛名称** : [m0leCon 2025 Beginner CTF](https://beginner.m0lecon.it/)  
@@ -239,7 +230,7 @@ comments: true
     **比赛名称** : [N0PSctf](https://www.nops.re/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-05-31 16:00:00 - 2025-06-02 04:00:00 UTC+8  
-    **比赛权重** : 24.32  
+    **比赛权重** : 24.34  
     **赛事主办** : NOPS (https://ctftime.org/team/4056)  
     **添加日历** : https://ctftime.org/event/2486.ics  
     
