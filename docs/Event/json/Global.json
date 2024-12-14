@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "m0leCon 2025 Beginner CTF",
-        "比赛时间": "2024-12-14 21:00:00 - 2024-12-15 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2578.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://beginner.m0lecon.it/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "75.00",
-        "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
-        "比赛ID": "372",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "NTUA_H4CK",
         "比赛时间": "2024-12-15 17:00:00 - 2024-12-16 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2571.ics",
@@ -381,6 +369,18 @@
         "比赛权重": "0.00",
         "赛事主办": "ctfcup (https://ctftime.org/team/203499)",
         "比赛ID": "864",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "m0leCon 2025 Beginner CTF",
+        "比赛时间": "2024-12-14 21:00:00 - 2024-12-15 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2578.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://beginner.m0lecon.it/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "75.00",
+        "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
+        "比赛ID": "372",
         "比赛状态": "nowrunning"
     },
     {

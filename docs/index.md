@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[m0leCon 2025 Beginner CTF](https://beginner.m0lecon.it/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://beginner.m0lecon.it/)  
-            **比赛名称** : [m0leCon 2025 Beginner CTF](https://beginner.m0lecon.it/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-12-14 21:00:00 - 2024-12-15 02:00:00 UTC+8  
-            **比赛权重** : 75.00  
-            **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
-            **添加日历** : https://ctftime.org/event/2578.ics  
-            
         ??? Quote "[NTUA_H4CK](https://ctfnhack.ctflib.eu/)"  
             [![](https://ctftime.org/media/events/Copy_of_Untitled_Design1.png){ width="200" align=left }](https://ctfnhack.ctflib.eu/)  
             **比赛名称** : [NTUA_H4CK](https://ctfnhack.ctflib.eu/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 49.48  
             **赛事主办** : InfoSecIITR (https://ctftime.org/team/16691)  
             **添加日历** : https://ctftime.org/event/2540.ics  
+            
+        ??? Quote "[0xL4ugh CTF](https://ctf.0xl4ugh.com/)"  
+            [![](https://ctftime.org/media/events/logo_101.png){ width="200" align=left }](https://ctf.0xl4ugh.com/)  
+            **比赛名称** : [0xL4ugh CTF](https://ctf.0xl4ugh.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-12-27 20:00:00 - 2024-12-28 20:00:00 UTC+8  
+            **比赛权重** : 25.00  
+            **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
+            **添加日历** : https://ctftime.org/event/2587.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
