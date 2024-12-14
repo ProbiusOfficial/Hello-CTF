@@ -290,15 +290,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[THJCC CTF 2024 winter](https://ctf.scint.org/)"  
-                [![](https://ctftime.org/media/events/THJCC_logo.png){ width="200" align=left }](https://ctf.scint.org/)  
-                **比赛名称** : [THJCC CTF 2024 winter](https://ctf.scint.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-14 08:00:01 - 2024-12-15 20:00:01 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
-                **添加日历** : https://ctftime.org/event/2581.ics  
-                
             ??? Quote "[TSG CTF 2024](https://ctf.tsg.ne.jp/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.tsg.ne.jp/)  
                 **比赛名称** : [TSG CTF 2024](https://ctf.tsg.ne.jp/)  
@@ -564,15 +555,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
                 
-            ??? Quote "[WannaGame Championship 2024](https://cnsc.com.vn/ctf/)"  
-                [![](https://ctftime.org/media/events/WGC2024_2.png){ width="200" align=left }](https://cnsc.com.vn/ctf/)  
-                **比赛名称** : [WannaGame Championship 2024](https://cnsc.com.vn/ctf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-13 09:00:00 - 2024-12-14 09:00:00 UTC+8  
-                **比赛权重** : 19.80  
-                **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
-                **添加日历** : https://ctftime.org/event/2515.ics  
-                
             ??? Quote "[niteCTF 2024](https://www.nitectf2024.live/)"  
                 [![](https://ctftime.org/media/events/nitectf_2024_logo.jpg){ width="200" align=left }](https://www.nitectf2024.live/)  
                 **比赛名称** : [niteCTF 2024](https://www.nitectf2024.live/)  
@@ -590,6 +572,15 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
                 **添加日历** : https://ctftime.org/event/2539.ics  
+                
+            ??? Quote "[THJCC CTF 2024 winter](https://ctf.scint.org/)"  
+                [![](https://ctftime.org/media/events/THJCC_logo.png){ width="200" align=left }](https://ctf.scint.org/)  
+                **比赛名称** : [THJCC CTF 2024 winter](https://ctf.scint.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-12-14 08:00:01 - 2024-12-15 20:00:01 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
+                **添加日历** : https://ctftime.org/event/2581.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -671,6 +662,15 @@ hide:
                 **其他说明** : CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。  
                 
         === "国外赛事"
+            ??? Quote "[WannaGame Championship 2024](https://cnsc.com.vn/ctf/)"  
+                [![](https://ctftime.org/media/events/WGC2024_2.png){ width="200" align=left }](https://cnsc.com.vn/ctf/)  
+                **比赛名称** : [WannaGame Championship 2024](https://cnsc.com.vn/ctf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-12-13 09:00:00 - 2024-12-14 09:00:00 UTC+8  
+                **比赛权重** : 19.80  
+                **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
+                **添加日历** : https://ctftime.org/event/2515.ics  
+                
             ??? Quote "[LakeCTF Quals 24-25](https://lakectf.epfl.ch/)"  
                 [![](https://ctftime.org/media/events/7fb065c04dbec7e33dfbb1f4456196c7.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
                 **比赛名称** : [LakeCTF Quals 24-25](https://lakectf.epfl.ch/)  
@@ -1561,15 +1561,6 @@ hide:
                 **比赛权重** : 37.00  
                 **赛事主办** : Syclover (https://ctftime.org/team/455)  
                 **添加日历** : https://ctftime.org/event/2483.ics  
-                
-            ??? Quote "[BuckeyeCTF 2024](https://pwnoh.io/)"  
-                [![](https://ctftime.org/media/events/logo-black-square.jpeg){ width="200" align=left }](https://pwnoh.io/)  
-                **比赛名称** : [BuckeyeCTF 2024](https://pwnoh.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-09-28 04:00:00 - 2024-09-30 04:00:00 UTC+8  
-                **比赛权重** : 50.91  
-                **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
-                **添加日历** : https://ctftime.org/event/2449.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[THJCC CTF 2024 winter](https://ctf.scint.org/)"  
-    [![](https://ctftime.org/media/events/THJCC_logo.png){ width="200" align=left }](https://ctf.scint.org/)  
-    **比赛名称** : [THJCC CTF 2024 winter](https://ctf.scint.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-12-14 08:00:01 - 2024-12-15 20:00:01 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
-    **添加日历** : https://ctftime.org/event/2581.ics  
-    
 ??? Quote "[TSG CTF 2024](https://ctf.tsg.ne.jp/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.tsg.ne.jp/)  
     **比赛名称** : [TSG CTF 2024](https://ctf.tsg.ne.jp/)  

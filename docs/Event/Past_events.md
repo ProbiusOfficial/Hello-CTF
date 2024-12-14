@@ -84,6 +84,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[WannaGame Championship 2024](https://cnsc.com.vn/ctf/)"  
+    [![](https://ctftime.org/media/events/WGC2024_2.png){ width="200" align=left }](https://cnsc.com.vn/ctf/)  
+    **比赛名称** : [WannaGame Championship 2024](https://cnsc.com.vn/ctf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-12-13 09:00:00 - 2024-12-14 09:00:00 UTC+8  
+    **比赛权重** : 19.80  
+    **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
+    **添加日历** : https://ctftime.org/event/2515.ics  
+    
 ??? Quote "[LakeCTF Quals 24-25](https://lakectf.epfl.ch/)"  
     [![](https://ctftime.org/media/events/7fb065c04dbec7e33dfbb1f4456196c7.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
     **比赛名称** : [LakeCTF Quals 24-25](https://lakectf.epfl.ch/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 37.00  
     **赛事主办** : Syclover (https://ctftime.org/team/455)  
     **添加日历** : https://ctftime.org/event/2483.ics  
-    
-??? Quote "[BuckeyeCTF 2024](https://pwnoh.io/)"  
-    [![](https://ctftime.org/media/events/logo-black-square.jpeg){ width="200" align=left }](https://pwnoh.io/)  
-    **比赛名称** : [BuckeyeCTF 2024](https://pwnoh.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-28 04:00:00 - 2024-09-30 04:00:00 UTC+8  
-    **比赛权重** : 50.91  
-    **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
-    **添加日历** : https://ctftime.org/event/2449.ics  
     
