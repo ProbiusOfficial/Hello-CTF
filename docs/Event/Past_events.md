@@ -93,6 +93,15 @@ comments: true
     **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
     **添加日历** : https://ctftime.org/event/2578.ics  
     
+??? Quote "[TSG CTF 2024](https://ctf.tsg.ne.jp/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.tsg.ne.jp/)  
+    **比赛名称** : [TSG CTF 2024](https://ctf.tsg.ne.jp/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-12-14 15:00:00 - 2024-12-15 15:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : TSG (https://ctftime.org/team/16088)  
+    **添加日历** : https://ctftime.org/event/2424.ics  
+    
 ??? Quote "[WannaGame Championship 2024](https://cnsc.com.vn/ctf/)"  
     [![](https://ctftime.org/media/events/WGC2024_2.png){ width="200" align=left }](https://cnsc.com.vn/ctf/)  
     **比赛名称** : [WannaGame Championship 2024](https://cnsc.com.vn/ctf/)  
@@ -974,13 +983,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
     **添加日历** : https://ctftime.org/event/2484.ics  
-    
-??? Quote "[Capture the Flag Competition in TON 2024](https://ctf.tonbit.xyz/)"  
-    [![](https://ctftime.org/media/events/TonBit.png){ width="200" align=left }](https://ctf.tonbit.xyz/)  
-    **比赛名称** : [Capture the Flag Competition in TON 2024](https://ctf.tonbit.xyz/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-28 09:00:00 - 2024-09-29 09:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : BitsLab (https://ctftime.org/team/331124)  
-    **添加日历** : https://ctftime.org/event/2509.ics  
     
