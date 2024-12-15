@@ -312,18 +312,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "niteCTF 2024",
-        "比赛时间": "2024-12-13 20:00:00 - 2024-12-15 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2461.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.nitectf2024.live/",
-        "比赛标志": "https://ctftime.org/media/events/nitectf_2024_logo.jpg",
-        "比赛权重": "29.33",
-        "赛事主办": "Cryptonite (https://ctftime.org/team/62713)",
-        "比赛ID": "663",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "HTB University CTF 2024: Binary Badlands",
         "比赛时间": "2024-12-13 21:00:00 - 2024-12-16 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2539.ics",
@@ -333,18 +321,6 @@
         "比赛权重": "25.00",
         "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
         "比赛ID": "554",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "THJCC CTF 2024 winter",
-        "比赛时间": "2024-12-14 08:00:01 - 2024-12-15 20:00:01 UTC+8",
-        "添加日历": "https://ctftime.org/event/2581.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.scint.org/",
-        "比赛标志": "https://ctftime.org/media/events/THJCC_logo.png",
-        "比赛权重": "0.00",
-        "赛事主办": "CakeisTheFake (https://ctftime.org/team/276544)",
-        "比赛ID": "1115",
         "比赛状态": "nowrunning"
     },
     {
@@ -393,6 +369,30 @@
         "比赛权重": "25.00",
         "赛事主办": "TSG (https://ctftime.org/team/16088)",
         "比赛ID": "294",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "THJCC CTF 2024 winter",
+        "比赛时间": "2024-12-14 08:00:01 - 2024-12-15 20:00:01 UTC+8",
+        "添加日历": "https://ctftime.org/event/2581.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.scint.org/",
+        "比赛标志": "https://ctftime.org/media/events/THJCC_logo.png",
+        "比赛权重": "0.00",
+        "赛事主办": "CakeisTheFake (https://ctftime.org/team/276544)",
+        "比赛ID": "1115",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "niteCTF 2024",
+        "比赛时间": "2024-12-13 20:00:00 - 2024-12-15 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2461.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.nitectf2024.live/",
+        "比赛标志": "https://ctftime.org/media/events/nitectf_2024_logo.jpg",
+        "比赛权重": "29.33",
+        "赛事主办": "Cryptonite (https://ctftime.org/team/62713)",
+        "比赛ID": "663",
         "比赛状态": "past"
     },
     {
@@ -1545,30 +1545,6 @@
         "比赛权重": "0",
         "赛事主办": "Hack Havoc (https://ctftime.org/team/316395)",
         "比赛ID": "1160",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "FAUST CTF 2024",
-        "比赛时间": "2024-09-28 20:00:00 - 2024-09-29 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2351.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://2024.faustctf.net/",
-        "比赛标志": "https://ctftime.org/media/events/faust2024_1.png",
-        "比赛权重": "93.11",
-        "赛事主办": "FAUST (https://ctftime.org/team/550)",
-        "比赛ID": "117",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "justCTF 2024 finals",
-        "比赛时间": "2024-09-28 18:00:00 - 2024-09-29 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2484.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2024finals.justctf.team/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "25.00",
-        "赛事主办": "justCatTheFish (https://ctftime.org/team/33893)",
-        "比赛ID": "399",
         "比赛状态": "past"
     }
 ]

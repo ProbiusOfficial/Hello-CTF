@@ -102,6 +102,24 @@ comments: true
     **赛事主办** : TSG (https://ctftime.org/team/16088)  
     **添加日历** : https://ctftime.org/event/2424.ics  
     
+??? Quote "[THJCC CTF 2024 winter](https://ctf.scint.org/)"  
+    [![](https://ctftime.org/media/events/THJCC_logo.png){ width="200" align=left }](https://ctf.scint.org/)  
+    **比赛名称** : [THJCC CTF 2024 winter](https://ctf.scint.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-12-14 08:00:01 - 2024-12-15 20:00:01 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
+    **添加日历** : https://ctftime.org/event/2581.ics  
+    
+??? Quote "[niteCTF 2024](https://www.nitectf2024.live/)"  
+    [![](https://ctftime.org/media/events/nitectf_2024_logo.jpg){ width="200" align=left }](https://www.nitectf2024.live/)  
+    **比赛名称** : [niteCTF 2024](https://www.nitectf2024.live/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-12-13 20:00:00 - 2024-12-15 20:00:00 UTC+8  
+    **比赛权重** : 29.33  
+    **赛事主办** : Cryptonite (https://ctftime.org/team/62713)  
+    **添加日历** : https://ctftime.org/event/2461.ics  
+    
 ??? Quote "[WannaGame Championship 2024](https://cnsc.com.vn/ctf/)"  
     [![](https://ctftime.org/media/events/WGC2024_2.png){ width="200" align=left }](https://cnsc.com.vn/ctf/)  
     **比赛名称** : [WannaGame Championship 2024](https://cnsc.com.vn/ctf/)  
@@ -965,22 +983,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Hack Havoc (https://ctftime.org/team/316395)  
     **添加日历** : https://ctftime.org/event/2532.ics  
-    
-??? Quote "[FAUST CTF 2024](https://2024.faustctf.net/)"  
-    [![](https://ctftime.org/media/events/faust2024_1.png){ width="200" align=left }](https://2024.faustctf.net/)  
-    **比赛名称** : [FAUST CTF 2024](https://2024.faustctf.net/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2024-09-28 20:00:00 - 2024-09-29 05:00:00 UTC+8  
-    **比赛权重** : 93.11  
-    **赛事主办** : FAUST (https://ctftime.org/team/550)  
-    **添加日历** : https://ctftime.org/event/2351.ics  
-    
-??? Quote "[justCTF 2024 finals](https://2024finals.justctf.team/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://2024finals.justctf.team/)  
-    **比赛名称** : [justCTF 2024 finals](https://2024finals.justctf.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-09-28 18:00:00 - 2024-09-29 18:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
-    **添加日历** : https://ctftime.org/event/2484.ics  
     
