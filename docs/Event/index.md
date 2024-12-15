@@ -528,24 +528,6 @@ hide:
                 **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
                 **添加日历** : https://ctftime.org/event/2600.ics  
                 
-            ??? Quote "[HTB University CTF 2024: Binary Badlands](https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822)"  
-                [![](https://ctftime.org/media/events/htbctf-logo_1.png){ width="200" align=left }](https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822)  
-                **比赛名称** : [HTB University CTF 2024: Binary Badlands](https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-13 21:00:00 - 2024-12-16 05:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
-                **添加日历** : https://ctftime.org/event/2539.ics  
-                
-            ??? Quote "[NTUA_H4CK](https://ctfnhack.ctflib.eu/)"  
-                [![](https://ctftime.org/media/events/Copy_of_Untitled_Design1.png){ width="200" align=left }](https://ctfnhack.ctflib.eu/)  
-                **比赛名称** : [NTUA_H4CK](https://ctfnhack.ctflib.eu/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-15 17:00:00 - 2024-12-16 05:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Thread in the Needle (https://ctftime.org/team/278978)  
-                **添加日历** : https://ctftime.org/event/2571.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[国城杯初赛](https://ctf2024.goalcent.com/)"  
@@ -626,6 +608,15 @@ hide:
                 **其他说明** : CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。  
                 
         === "国外赛事"
+            ??? Quote "[NTUA_H4CK](https://ctfnhack.ctflib.eu/)"  
+                [![](https://ctftime.org/media/events/Copy_of_Untitled_Design1.png){ width="200" align=left }](https://ctfnhack.ctflib.eu/)  
+                **比赛名称** : [NTUA_H4CK](https://ctfnhack.ctflib.eu/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-12-15 17:00:00 - 2024-12-16 05:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Thread in the Needle (https://ctftime.org/team/278978)  
+                **添加日历** : https://ctftime.org/event/2571.ics  
+                
             ??? Quote "[m0leCon 2025 Beginner CTF](https://beginner.m0lecon.it/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://beginner.m0lecon.it/)  
                 **比赛名称** : [m0leCon 2025 Beginner CTF](https://beginner.m0lecon.it/)  
@@ -661,6 +652,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
                 **添加日历** : https://ctftime.org/event/2581.ics  
+                
+            ??? Quote "[HTB University CTF 2024: Binary Badlands](https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822)"  
+                [![](https://ctftime.org/media/events/htbctf-logo_1.png){ width="200" align=left }](https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822)  
+                **比赛名称** : [HTB University CTF 2024: Binary Badlands](https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-12-13 21:00:00 - 2024-12-16 05:00:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
+                **添加日历** : https://ctftime.org/event/2539.ics  
                 
             ??? Quote "[niteCTF 2024](https://www.nitectf2024.live/)"  
                 [![](https://ctftime.org/media/events/nitectf_2024_logo.jpg){ width="200" align=left }](https://www.nitectf2024.live/)  
@@ -1507,24 +1507,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : HackerDom (https://ctftime.org/team/552)  
                 **添加日历** : https://ctftime.org/event/2386.ics  
-                
-            ??? Quote "[AlpacaHack Round 4 (Rev)](https://alpacahack.com/ctfs/round-4)"  
-                [![](https://ctftime.org/media/events/ctftime_5.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-4)  
-                **比赛名称** : [AlpacaHack Round 4 (Rev)](https://alpacahack.com/ctfs/round-4)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-05 11:00:00 - 2024-10-05 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
-                **添加日历** : https://ctftime.org/event/2499.ics  
-                
-            ??? Quote "[AltayCTF 2024](https://university.altayctf.ru/2024)"  
-                [![](https://ctftime.org/media/events/0_1.png){ width="200" align=left }](https://university.altayctf.ru/2024)  
-                **比赛名称** : [AltayCTF 2024](https://university.altayctf.ru/2024)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2024-10-05 11:00:00 - 2024-10-06 20:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : SharLike (https://ctftime.org/team/16172)  
-                **添加日历** : https://ctftime.org/event/2376.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

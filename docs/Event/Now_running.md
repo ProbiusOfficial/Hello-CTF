@@ -27,21 +27,3 @@ comments: true
     **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
     **添加日历** : https://ctftime.org/event/2600.ics  
     
-??? Quote "[HTB University CTF 2024: Binary Badlands](https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822)"  
-    [![](https://ctftime.org/media/events/htbctf-logo_1.png){ width="200" align=left }](https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822)  
-    **比赛名称** : [HTB University CTF 2024: Binary Badlands](https://ctf.hackthebox.com/event/details/university-ctf-2024-binary-badlands-1822)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-12-13 21:00:00 - 2024-12-16 05:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
-    **添加日历** : https://ctftime.org/event/2539.ics  
-    
-??? Quote "[NTUA_H4CK](https://ctfnhack.ctflib.eu/)"  
-    [![](https://ctftime.org/media/events/Copy_of_Untitled_Design1.png){ width="200" align=left }](https://ctfnhack.ctflib.eu/)  
-    **比赛名称** : [NTUA_H4CK](https://ctfnhack.ctflib.eu/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-12-15 17:00:00 - 2024-12-16 05:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Thread in the Needle (https://ctftime.org/team/278978)  
-    **添加日历** : https://ctftime.org/event/2571.ics  
-    
