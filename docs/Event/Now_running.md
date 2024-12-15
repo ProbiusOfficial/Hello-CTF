@@ -36,15 +36,6 @@ comments: true
     **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
     **添加日历** : https://ctftime.org/event/2539.ics  
     
-??? Quote "[Russian CTF Cup 2024 Final](https://ctfcup.ru/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctfcup.ru/)  
-    **比赛名称** : [Russian CTF Cup 2024 Final](https://ctfcup.ru/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2024-12-14 18:00:00 - 2024-12-16 03:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
-    **添加日历** : https://ctftime.org/event/2406.ics  
-    
 ??? Quote "[NTUA_H4CK](https://ctfnhack.ctflib.eu/)"  
     [![](https://ctftime.org/media/events/Copy_of_Untitled_Design1.png){ width="200" align=left }](https://ctfnhack.ctflib.eu/)  
     **比赛名称** : [NTUA_H4CK](https://ctfnhack.ctflib.eu/)  
