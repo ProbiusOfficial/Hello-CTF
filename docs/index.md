@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[NTUA_H4CK](https://ctfnhack.ctflib.eu/)"  
-            [![](https://ctftime.org/media/events/Copy_of_Untitled_Design1.png){ width="200" align=left }](https://ctfnhack.ctflib.eu/)  
-            **比赛名称** : [NTUA_H4CK](https://ctfnhack.ctflib.eu/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-12-15 17:00:00 - 2024-12-16 05:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Thread in the Needle (https://ctftime.org/team/278978)  
-            **添加日历** : https://ctftime.org/event/2571.ics  
-            
         ??? Quote "[0CTF 2024](https://ctf.0ops.sjtu.cn/)"  
             [![](https://ctftime.org/media/events/0ctf.png){ width="200" align=left }](https://ctf.0ops.sjtu.cn/)  
             **比赛名称** : [0CTF 2024](https://ctf.0ops.sjtu.cn/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 25.00  
             **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
             **添加日历** : https://ctftime.org/event/2587.ics  
+            
+        ??? Quote "[Wargames.MY CTF 2024](https://wargames.my/2024/)"  
+            [![](https://ctftime.org/media/events/WGMY24-PFP1.png){ width="200" align=left }](https://wargames.my/2024/)  
+            **比赛名称** : [Wargames.MY CTF 2024](https://wargames.my/2024/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-12-28 00:00:00 - 2024-12-29 00:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Wargames.MY (https://ctftime.org/team/86069)  
+            **添加日历** : https://ctftime.org/event/2597.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

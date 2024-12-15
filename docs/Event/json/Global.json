@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "NTUA_H4CK",
-        "比赛时间": "2024-12-15 17:00:00 - 2024-12-16 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2571.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfnhack.ctflib.eu/",
-        "比赛标志": "https://ctftime.org/media/events/Copy_of_Untitled_Design1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Thread in the Needle (https://ctftime.org/team/278978)",
-        "比赛ID": "1207",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "0CTF 2024",
         "比赛时间": "2024-12-21 10:00:00 - 2024-12-23 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2448.ics",
@@ -357,6 +345,18 @@
         "比赛权重": "0.00",
         "赛事主办": "ctfcup (https://ctftime.org/team/203499)",
         "比赛ID": "864",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "NTUA_H4CK",
+        "比赛时间": "2024-12-15 17:00:00 - 2024-12-16 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2571.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctfnhack.ctflib.eu/",
+        "比赛标志": "https://ctftime.org/media/events/Copy_of_Untitled_Design1.png",
+        "比赛权重": "0",
+        "赛事主办": "Thread in the Needle (https://ctftime.org/team/278978)",
+        "比赛ID": "1207",
         "比赛状态": "nowrunning"
     },
     {
