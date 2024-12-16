@@ -251,7 +251,7 @@ comments: true
     **比赛名称** : [World Wide CTF 2024](https://wwctf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-30 20:00:00 - 2024-12-01 20:00:00 UTC+8  
-    **比赛权重** : 24.45  
+    **比赛权重** : 24.48  
     **赛事主办** : World Wide Flags (https://ctftime.org/team/283853)  
     **添加日历** : https://ctftime.org/event/2572.ics  
     
@@ -404,7 +404,7 @@ comments: true
     **比赛名称** : [PwnSec CTF 2024](https://ctf.pwnsec.xyz/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-15 23:00:00 - 2024-11-16 23:00:00 UTC+8  
-    **比赛权重** : 24.08  
+    **比赛权重** : 23.92  
     **赛事主办** : PwnSec (https://ctftime.org/team/28797)  
     **添加日历** : https://ctftime.org/event/2454.ics  
     
