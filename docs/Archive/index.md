@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [Apache Struts2 文件上传逻辑绕过(CVE-2024-53677)(S2-067)](https://y4tacker.github.io/2024/12/16/year/2024/12/Apache-Struts2-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E9%80%BB%E8%BE%91%E7%BB%95%E8%BF%87-CVE-2024-53677-S2-067/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-12-16
+
+    Apache Struts2 文件上传逻辑绕过(CVE-2024-53677)(S2-067)前言​    Apache官方公告又更新了一个Struts2的漏洞，考虑到很久没有发无密码的博客了，再加上漏洞的影响并不严重，因此公开分享利用的思路。分析影响版本Struts 2.0.0 - Struts 2.3.37 (EOL), Struts 2.5.0 - Struts 2.5.33, Struts...
     ### [强网杯S8决赛Reverse writeup](https://xia0ji233.github.io/2024/12/11/qwb2024_final_reverse/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2024-12-11
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2024-09-17
 
     重新把内核基础学一遍，方便后续学习的展开。x86 是一个非常经典的复杂指令集架构（CISC），它的特点是指令不定长，解析指令时会根据头个字节甚至是第二个字节决定指令解析的长度，作为本篇学习的研究例子。x86 的 CPU 在早期都是以实模式运行的，在 80386 及以后，x86 CPU 新增了分页的虚拟内存机制，同时在 80286 CPU 中就新增了其它运行模式，比如保护模式，本篇将重点学习保护模式...
-    ### [Hacking Thymeleaf With Spring(目前最新版，暂不公开)](https://y4tacker.github.io/2024/09/02/year/2024/9/Hacking-Thymeleaf-With-Spring-%E7%9B%AE%E5%89%8D%E6%9C%80%E6%96%B0%E7%89%88%EF%BC%8C%E6%9A%82%E4%B8%8D%E5%85%AC%E5%BC%80/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-09-02
-
-    5d737de200998fa96fe50e14daeae4f936d6c2e263442da7b419cac91b5030bbfa0e26acc7e2d8e6be6b10ef0f9633b6f035c93526330d7b98ff6d625af66aab5e4f3c5bbc3fe17c81df02652f89f741e35999243afb75566bdbedf56b286ad102f569...
 
 </div>
