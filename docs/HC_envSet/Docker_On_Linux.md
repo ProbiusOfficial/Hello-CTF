@@ -346,7 +346,7 @@ Host IP
 
 ##### Other - About SSH Key Login
 
-关于SSH密钥登录的更多知识可以看这一篇文章：
+关于SSH密钥登录的更多知识可以看这一篇文章：[SSH 密钥登录](https://webdoc.p2hp.com/ssh/key.html)
 
 ### Get Docker Extension
 
