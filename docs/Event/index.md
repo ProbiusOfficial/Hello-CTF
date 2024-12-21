@@ -655,9 +655,9 @@ hide:
                 **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
                 **添加日历** : https://ctftime.org/event/2539.ics  
                 
-            ??? Quote "[niteCTF 2024](https://www.nitectf2024.live/)"  
-                [![](https://ctftime.org/media/events/nitectf_2024_logo.jpg){ width="200" align=left }](https://www.nitectf2024.live/)  
-                **比赛名称** : [niteCTF 2024](https://www.nitectf2024.live/)  
+            ??? Quote "[niteCTF 2024](https://play.nitectf2024.live/)"  
+                [![](https://ctftime.org/media/events/nitectf_2024_logo.jpg){ width="200" align=left }](https://play.nitectf2024.live/)  
+                **比赛名称** : [niteCTF 2024](https://play.nitectf2024.live/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-12-13 20:00:00 - 2024-12-15 20:00:00 UTC+8  
                 **比赛权重** : 29.33  
