@@ -487,7 +487,7 @@ comments: true
     **比赛名称** : [4T$ CTF](https://ctf.4ts.fr/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-11-09 02:00:00 - 2024-11-11 02:00:00 UTC+8  
-    **比赛权重** : 24.40  
+    **比赛权重** : 24.36  
     **赛事主办** : 4T$ (https://ctftime.org/team/302295)  
     **添加日历** : https://ctftime.org/event/2545.ics  
     
@@ -649,7 +649,7 @@ comments: true
     **比赛名称** : [The Cyber Jawara International 2024](https://international.cyberjawara.pro/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-10-27 10:00:00 - 2024-10-28 10:00:00 UTC+8  
-    **比赛权重** : 23.62  
+    **比赛权重** : 23.43  
     **赛事主办** : SKSD (https://ctftime.org/team/211952)  
     **添加日历** : https://ctftime.org/event/2552.ics  
     
