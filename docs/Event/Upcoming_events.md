@@ -27,9 +27,9 @@ comments: true
     **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
     **添加日历** : https://ctftime.org/event/2587.ics  
     
-??? Quote "[Wargames.MY CTF 2024](https://wargames.my/2024/)"  
-    [![](https://ctftime.org/media/events/WGMY24-PFP1.png){ width="200" align=left }](https://wargames.my/2024/)  
-    **比赛名称** : [Wargames.MY CTF 2024](https://wargames.my/2024/)  
+??? Quote "[Wargames.MY CTF 2024](https://ctf2024.wargames.my/)"  
+    [![](https://ctftime.org/media/events/WGMY24-PFP1.png){ width="200" align=left }](https://ctf2024.wargames.my/)  
+    **比赛名称** : [Wargames.MY CTF 2024](https://ctf2024.wargames.my/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2024-12-28 00:00:00 - 2024-12-29 00:00:00 UTC+8  
     **比赛权重** : 0.00  
