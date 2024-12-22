@@ -36,3 +36,12 @@ comments: true
     **赛事主办** : 0ops (https://ctftime.org/team/4419)  
     **添加日历** : https://ctftime.org/event/2448.ics  
     
+??? Quote "[BackdoorCTF 2024](https://backdoor.infoseciitr.in/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://backdoor.infoseciitr.in/)  
+    **比赛名称** : [BackdoorCTF 2024](https://backdoor.infoseciitr.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-12-22 20:00:00 - 2024-12-23 20:00:00 UTC+8  
+    **比赛权重** : 49.48  
+    **赛事主办** : InfoSecIITR (https://ctftime.org/team/16691)  
+    **添加日历** : https://ctftime.org/event/2540.ics  
+    
