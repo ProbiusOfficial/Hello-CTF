@@ -3,6 +3,26 @@
     "data": {
         "result": [
             {
+                "name": "NSSCTF Round26",
+                "info_confirmed": 1,
+                "mid_join": 0,
+                "link": "https://www.nssctf.cn/contest",
+                "status": "即将开始",
+                "is_reg": 0,
+                "limit": 1,
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2024年12月28日 14:00",
+                "reg_time_end": "2024年12月28日 13:59",
+                "comp_time_start": "2024年12月28日 14:00",
+                "comp_time_end": "2024年12月28日 17:00",
+                "organizer": "NSSCTF",
+                "contac": {
+                    "QQ群": "864395049"
+                },
+                "tag": "",
+                "readmore": "NSSCTF Round26 由NSSCTF主办，比赛时间为2024年12月28日 14:00至17:00，报名已结束，比赛QQ群为864395049。"
+            },
+            {
                 "name": "国城杯初赛",
                 "info_confirmed": 1,
                 "mid_join": 0,
