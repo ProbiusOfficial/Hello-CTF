@@ -599,7 +599,7 @@ hide:
                 **比赛名称** : [NTUA_H4CK](https://ctfnhack.ctflib.eu/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-12-15 17:00:00 - 2024-12-16 05:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 24.83  
                 **赛事主办** : Thread in the Needle (https://ctftime.org/team/278978)  
                 **添加日历** : https://ctftime.org/event/2571.ics  
                 
