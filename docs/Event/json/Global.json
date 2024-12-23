@@ -288,18 +288,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "0CTF 2024",
-        "比赛时间": "2024-12-21 10:00:00 - 2024-12-23 10:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2448.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.0ops.sjtu.cn/",
-        "比赛标志": "https://ctftime.org/media/events/0ctf.png",
-        "比赛权重": "100.00",
-        "赛事主办": "0ops (https://ctftime.org/team/4419)",
-        "比赛ID": "99",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "BackdoorCTF 2024",
         "比赛时间": "2024-12-22 20:00:00 - 2024-12-23 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2540.ics",
@@ -310,6 +298,18 @@
         "赛事主办": "InfoSecIITR (https://ctftime.org/team/16691)",
         "比赛ID": "49",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "0CTF 2024",
+        "比赛时间": "2024-12-21 10:00:00 - 2024-12-23 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2448.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.0ops.sjtu.cn/",
+        "比赛标志": "https://ctftime.org/media/events/0ctf.png",
+        "比赛权重": "100.00",
+        "赛事主办": "0ops (https://ctftime.org/team/4419)",
+        "比赛ID": "99",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "NTUA_H4CK",
@@ -1497,18 +1497,6 @@
         "比赛权重": "24.54",
         "赛事主办": "1nf1n1ty (https://ctftime.org/team/151859)",
         "比赛ID": "1167",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "RuCTF Finals 2024",
-        "比赛时间": "2024-10-05 13:00:00 - 2024-10-07 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2386.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "http://ructf.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "25.00",
-        "赛事主办": "HackerDom (https://ctftime.org/team/552)",
-        "比赛ID": "7",
         "比赛状态": "past"
     }
 ]
