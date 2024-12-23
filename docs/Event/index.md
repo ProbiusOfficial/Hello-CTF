@@ -516,15 +516,6 @@ hide:
                 **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
                 **添加日历** : https://ctftime.org/event/2600.ics  
                 
-            ??? Quote "[BackdoorCTF 2024](https://backdoor.infoseciitr.in/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://backdoor.infoseciitr.in/)  
-                **比赛名称** : [BackdoorCTF 2024](https://backdoor.infoseciitr.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-22 20:00:00 - 2024-12-23 20:00:00 UTC+8  
-                **比赛权重** : 49.48  
-                **赛事主办** : InfoSecIITR (https://ctftime.org/team/16691)  
-                **添加日历** : https://ctftime.org/event/2540.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[国城杯初赛](https://ctf2024.goalcent.com/)"  
@@ -591,6 +582,15 @@ hide:
                 **其他说明** : CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。  
                 
         === "国外赛事"
+            ??? Quote "[BackdoorCTF 2024](https://backdoor.infoseciitr.in/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://backdoor.infoseciitr.in/)  
+                **比赛名称** : [BackdoorCTF 2024](https://backdoor.infoseciitr.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-12-22 20:00:00 - 2024-12-23 20:00:00 UTC+8  
+                **比赛权重** : 49.48  
+                **赛事主办** : InfoSecIITR (https://ctftime.org/team/16691)  
+                **添加日历** : https://ctftime.org/event/2540.ics  
+                
             ??? Quote "[0CTF 2024](https://ctf.0ops.sjtu.cn/)"  
                 [![](https://ctftime.org/media/events/0ctf.png){ width="200" align=left }](https://ctf.0ops.sjtu.cn/)  
                 **比赛名称** : [0CTF 2024](https://ctf.0ops.sjtu.cn/)  
@@ -1481,15 +1481,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : ITMO FSIT (https://ctftime.org/team/264636)  
                 **添加日历** : https://ctftime.org/event/2389.ics  
-                
-            ??? Quote "[IRON CTF 2024](https://ctf.1nf1n1ty.team/)"  
-                [![](https://ctftime.org/media/events/ironCTF.png){ width="200" align=left }](https://ctf.1nf1n1ty.team/)  
-                **比赛名称** : [IRON CTF 2024](https://ctf.1nf1n1ty.team/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-05 13:30:00 - 2024-10-06 13:30:00 UTC+8  
-                **比赛权重** : 24.54  
-                **赛事主办** : 1nf1n1ty (https://ctftime.org/team/151859)  
-                **添加日历** : https://ctftime.org/event/2497.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

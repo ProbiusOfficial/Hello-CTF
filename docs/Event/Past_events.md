@@ -70,6 +70,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[BackdoorCTF 2024](https://backdoor.infoseciitr.in/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://backdoor.infoseciitr.in/)  
+    **比赛名称** : [BackdoorCTF 2024](https://backdoor.infoseciitr.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-12-22 20:00:00 - 2024-12-23 20:00:00 UTC+8  
+    **比赛权重** : 49.48  
+    **赛事主办** : InfoSecIITR (https://ctftime.org/team/16691)  
+    **添加日历** : https://ctftime.org/event/2540.ics  
+    
 ??? Quote "[0CTF 2024](https://ctf.0ops.sjtu.cn/)"  
     [![](https://ctftime.org/media/events/0ctf.png){ width="200" align=left }](https://ctf.0ops.sjtu.cn/)  
     **比赛名称** : [0CTF 2024](https://ctf.0ops.sjtu.cn/)  
@@ -960,13 +969,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : ITMO FSIT (https://ctftime.org/team/264636)  
     **添加日历** : https://ctftime.org/event/2389.ics  
-    
-??? Quote "[IRON CTF 2024](https://ctf.1nf1n1ty.team/)"  
-    [![](https://ctftime.org/media/events/ironCTF.png){ width="200" align=left }](https://ctf.1nf1n1ty.team/)  
-    **比赛名称** : [IRON CTF 2024](https://ctf.1nf1n1ty.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-05 13:30:00 - 2024-10-06 13:30:00 UTC+8  
-    **比赛权重** : 24.54  
-    **赛事主办** : 1nf1n1ty (https://ctftime.org/team/151859)  
-    **添加日历** : https://ctftime.org/event/2497.ics  
     
