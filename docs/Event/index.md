@@ -296,9 +296,9 @@ hide:
                 **其他说明** : NSSCTF Round26 由NSSCTF主办，比赛时间为2024年12月28日 14:00至17:00，报名已结束，比赛QQ群为864395049。  
                 
         === "国外赛事"
-            ??? Quote "[0xL4ugh CTF](https://ctf.0xl4ugh.com/)"  
-                [![](https://ctftime.org/media/events/logo_101.png){ width="200" align=left }](https://ctf.0xl4ugh.com/)  
-                **比赛名称** : [0xL4ugh CTF](https://ctf.0xl4ugh.com/)  
+            ??? Quote "[0xL4ugh CTF](https://0xl4ugh.ctf.ae/)"  
+                [![](https://ctftime.org/media/events/logo_101.png){ width="200" align=left }](https://0xl4ugh.ctf.ae/)  
+                **比赛名称** : [0xL4ugh CTF](https://0xl4ugh.ctf.ae/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-12-27 20:00:00 - 2024-12-28 20:00:00 UTC+8  
                 **比赛权重** : 25.00  
