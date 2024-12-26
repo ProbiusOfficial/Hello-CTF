@@ -97,17 +97,6 @@
                 "readmore": "第四届ISCTF高校联合安全技能挑战赛由福州蓝鲨信息技术有限公司和DK云赞助，由大理大学、信阳师范大学、福建师范大学主办，联合院校名单包括安徽工业经济职业技术学院、成都东软学院等32所高校的网络与信息安全协会联合主办。比赛时间为11月9日10:00至11月15日17:00，比赛平台为isctf2024.bluesharkinfo.com，目前已开放注册。"
             },
             {
-                "name": "第八届御网杯信息安全大赛",
-                "link": "https://www.hncsisc.com/hncsisc/index.html",
-                "type": "个人赛 and 团体赛|3人",
-                "reg_time_start": "2024年07月26日 08:00",
-                "reg_time_end": "2024年09月20日 18:00",
-                "comp_time_start": "2024年09月21日 00:00",
-                "comp_time_end": "2024年10月27日 23:59",
-                "readmore": "更多信息请前往官网https://www.hncsisc.com 的“赛事活动”查看",
-                "status": "已经结束"
-            },
-            {
                 "name": "SHCTF2024",
                 "link": "https://shc.tf/",
                 "type": "个人赛",
