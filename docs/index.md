@@ -61,15 +61,6 @@ hide:
             **其他说明** : NSSCTF Round26 由NSSCTF主办，比赛时间为2024年12月28日 14:00至17:00，报名已结束，比赛QQ群为864395049。  
                 
     === "国外比赛"
-        ??? Quote "[Wargames.MY CTF 2024](https://ctf2024.wargames.my/)"  
-            [![](https://ctftime.org/media/events/WGMY24-PFP1.png){ width="200" align=left }](https://ctf2024.wargames.my/)  
-            **比赛名称** : [Wargames.MY CTF 2024](https://ctf2024.wargames.my/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-12-28 00:00:00 - 2024-12-29 00:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Wargames.MY (https://ctftime.org/team/86069)  
-            **添加日历** : https://ctftime.org/event/2597.ics  
-            
         ??? Quote "[hxp 38C3 CTF](https://2024.ctf.link/)"  
             [![](https://ctftime.org/media/events/hxp-38c3.png){ width="200" align=left }](https://2024.ctf.link/)  
             **比赛名称** : [hxp 38C3 CTF](https://2024.ctf.link/)  
@@ -96,6 +87,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
             **添加日历** : https://ctftime.org/event/2590.ics  
+            
+        ??? Quote "[IrisCTF 2025](https://2025.irisc.tf/)"  
+            [![](https://ctftime.org/media/events/IrisSec.png){ width="200" align=left }](https://2025.irisc.tf/)  
+            **比赛名称** : [IrisCTF 2025](https://2025.irisc.tf/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-01-04 08:00:00 - 2025-01-06 08:00:00 UTC+8  
+            **比赛权重** : 34.30  
+            **赛事主办** : IrisSec (https://ctftime.org/team/127034)  
+            **添加日历** : https://ctftime.org/event/2503.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Wargames.MY CTF 2024",
-        "比赛时间": "2024-12-28 00:00:00 - 2024-12-29 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2597.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf2024.wargames.my/",
-        "比赛标志": "https://ctftime.org/media/events/WGMY24-PFP1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Wargames.MY (https://ctftime.org/team/86069)",
-        "比赛ID": "1038",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "hxp 38C3 CTF",
         "比赛时间": "2024-12-28 04:00:00 - 2024-12-30 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2437.ics",
@@ -285,6 +273,18 @@
         "比赛权重": "25.00",
         "赛事主办": "0xL4ugh (https://ctftime.org/team/132776)",
         "比赛ID": "579",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Wargames.MY CTF 2024",
+        "比赛时间": "2024-12-28 00:00:00 - 2024-12-29 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2597.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf2024.wargames.my/",
+        "比赛标志": "https://ctftime.org/media/events/WGMY24-PFP1.png",
+        "比赛权重": "0",
+        "赛事主办": "Wargames.MY (https://ctftime.org/team/86069)",
+        "比赛ID": "1038",
         "比赛状态": "nowrunning"
     },
     {

@@ -296,15 +296,6 @@ hide:
                 **其他说明** : NSSCTF Round26 由NSSCTF主办，比赛时间为2024年12月28日 14:00至17:00，报名已结束，比赛QQ群为864395049。  
                 
         === "国外赛事"
-            ??? Quote "[Wargames.MY CTF 2024](https://ctf2024.wargames.my/)"  
-                [![](https://ctftime.org/media/events/WGMY24-PFP1.png){ width="200" align=left }](https://ctf2024.wargames.my/)  
-                **比赛名称** : [Wargames.MY CTF 2024](https://ctf2024.wargames.my/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-28 00:00:00 - 2024-12-29 00:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Wargames.MY (https://ctftime.org/team/86069)  
-                **添加日历** : https://ctftime.org/event/2597.ics  
-                
             ??? Quote "[hxp 38C3 CTF](https://2024.ctf.link/)"  
                 [![](https://ctftime.org/media/events/hxp-38c3.png){ width="200" align=left }](https://2024.ctf.link/)  
                 **比赛名称** : [hxp 38C3 CTF](https://2024.ctf.link/)  
@@ -515,6 +506,15 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
                 **添加日历** : https://ctftime.org/event/2587.ics  
+                
+            ??? Quote "[Wargames.MY CTF 2024](https://ctf2024.wargames.my/)"  
+                [![](https://ctftime.org/media/events/WGMY24-PFP1.png){ width="200" align=left }](https://ctf2024.wargames.my/)  
+                **比赛名称** : [Wargames.MY CTF 2024](https://ctf2024.wargames.my/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-12-28 00:00:00 - 2024-12-29 00:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Wargames.MY (https://ctftime.org/team/86069)  
+                **添加日历** : https://ctftime.org/event/2597.ics  
                 
     === "*已经结束*"
         === "国内赛事"
