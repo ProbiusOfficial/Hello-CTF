@@ -27,3 +27,12 @@ comments: true
     **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
     **添加日历** : https://ctftime.org/event/2600.ics  
     
+??? Quote "[0xL4ugh CTF](https://0xl4ugh.ctf.ae/)"  
+    [![](https://ctftime.org/media/events/logo_101.png){ width="200" align=left }](https://0xl4ugh.ctf.ae/)  
+    **比赛名称** : [0xL4ugh CTF](https://0xl4ugh.ctf.ae/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-12-27 20:00:00 - 2024-12-28 20:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
+    **添加日历** : https://ctftime.org/event/2587.ics  
+    

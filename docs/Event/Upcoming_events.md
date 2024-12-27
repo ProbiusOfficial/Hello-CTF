@@ -15,15 +15,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[0xL4ugh CTF](https://0xl4ugh.ctf.ae/)"  
-    [![](https://ctftime.org/media/events/logo_101.png){ width="200" align=left }](https://0xl4ugh.ctf.ae/)  
-    **比赛名称** : [0xL4ugh CTF](https://0xl4ugh.ctf.ae/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-12-27 20:00:00 - 2024-12-28 20:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
-    **添加日历** : https://ctftime.org/event/2587.ics  
-    
 ??? Quote "[Wargames.MY CTF 2024](https://ctf2024.wargames.my/)"  
     [![](https://ctftime.org/media/events/WGMY24-PFP1.png){ width="200" align=left }](https://ctf2024.wargames.my/)  
     **比赛名称** : [Wargames.MY CTF 2024](https://ctf2024.wargames.my/)  

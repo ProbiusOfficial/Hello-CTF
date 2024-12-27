@@ -61,15 +61,6 @@ hide:
             **其他说明** : NSSCTF Round26 由NSSCTF主办，比赛时间为2024年12月28日 14:00至17:00，报名已结束，比赛QQ群为864395049。  
                 
     === "国外比赛"
-        ??? Quote "[0xL4ugh CTF](https://0xl4ugh.ctf.ae/)"  
-            [![](https://ctftime.org/media/events/logo_101.png){ width="200" align=left }](https://0xl4ugh.ctf.ae/)  
-            **比赛名称** : [0xL4ugh CTF](https://0xl4ugh.ctf.ae/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-12-27 20:00:00 - 2024-12-28 20:00:00 UTC+8  
-            **比赛权重** : 25.00  
-            **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
-            **添加日历** : https://ctftime.org/event/2587.ics  
-            
         ??? Quote "[Wargames.MY CTF 2024](https://ctf2024.wargames.my/)"  
             [![](https://ctftime.org/media/events/WGMY24-PFP1.png){ width="200" align=left }](https://ctf2024.wargames.my/)  
             **比赛名称** : [Wargames.MY CTF 2024](https://ctf2024.wargames.my/)  
@@ -96,6 +87,15 @@ hide:
             **比赛权重** : 92.75  
             **赛事主办** : ASIS (https://ctftime.org/team/4140)  
             **添加日历** : https://ctftime.org/event/2403.ics  
+            
+        ??? Quote "[AlpacaHack Round 8 (Rev)](https://alpacahack.com/)"  
+            [![](https://ctftime.org/media/events/dark_512_2.png){ width="200" align=left }](https://alpacahack.com/)  
+            **比赛名称** : [AlpacaHack Round 8 (Rev)](https://alpacahack.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2024-12-30 11:00:00 - 2024-12-30 17:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
+            **添加日历** : https://ctftime.org/event/2590.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
