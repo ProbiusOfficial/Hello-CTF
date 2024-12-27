@@ -61,15 +61,6 @@ hide:
             **其他说明** : NSSCTF Round26 由NSSCTF主办，比赛时间为2024年12月28日 14:00至17:00，报名已结束，比赛QQ群为864395049。  
                 
     === "国外比赛"
-        ??? Quote "[hxp 38C3 CTF](https://2024.ctf.link/)"  
-            [![](https://ctftime.org/media/events/hxp-38c3.png){ width="200" align=left }](https://2024.ctf.link/)  
-            **比赛名称** : [hxp 38C3 CTF](https://2024.ctf.link/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2024-12-28 04:00:00 - 2024-12-30 04:00:00 UTC+8  
-            **比赛权重** : 98.14  
-            **赛事主办** : hxp (https://ctftime.org/team/585)  
-            **添加日历** : https://ctftime.org/event/2437.ics  
-            
         ??? Quote "[ASIS CTF Finals 2024](https://asisctf.com/)"  
             [![](https://ctftime.org/media/events/asis_logo.png){ width="200" align=left }](https://asisctf.com/)  
             **比赛名称** : [ASIS CTF Finals 2024](https://asisctf.com/)  
@@ -96,6 +87,15 @@ hide:
             **比赛权重** : 34.30  
             **赛事主办** : IrisSec (https://ctftime.org/team/127034)  
             **添加日历** : https://ctftime.org/event/2503.ics  
+            
+        ??? Quote "[UofTCTF 2025](https://ctf.uoftctf.org/)"  
+            [![](https://ctftime.org/media/events/uoftctf_logo_3000_black.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
+            **比赛名称** : [UofTCTF 2025](https://ctf.uoftctf.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-01-11 08:00:00 - 2025-01-13 08:00:00 UTC+8  
+            **比赛权重** : 23.90  
+            **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
+            **添加日历** : https://ctftime.org/event/2570.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
