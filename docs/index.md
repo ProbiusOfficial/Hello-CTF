@@ -53,13 +53,7 @@ hide:
     ---
     <!-- 主页赛事展示_开始 -->
     === "国内比赛"
-        ??? Quote "[NSSCTF Round26](https://www.nssctf.cn/contest)"  
-            **比赛名称** : [NSSCTF Round26](https://www.nssctf.cn/contest)  
-            **比赛类型** : 线上Jeopardy解题赛  
-            **报名时间** : 2024年12月28日 14:00 - 2024年12月28日 13:59  
-            **比赛时间** : 2024年12月28日 14:00 - 2024年12月28日 17:00  
-            **其他说明** : NSSCTF Round26 由NSSCTF主办，比赛时间为2024年12月28日 14:00至17:00，报名已结束，比赛QQ群为864395049。  
-                
+    
     === "国外比赛"
         ??? Quote "[ASIS CTF Finals 2024](https://asisctf.com/)"  
             [![](https://ctftime.org/media/events/asis_logo.png){ width="200" align=left }](https://asisctf.com/)  
