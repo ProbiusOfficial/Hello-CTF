@@ -27,15 +27,6 @@ comments: true
     **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
     **添加日历** : https://ctftime.org/event/2600.ics  
     
-??? Quote "[Wargames.MY CTF 2024](https://ctf2024.wargames.my/)"  
-    [![](https://ctftime.org/media/events/WGMY24-PFP1.png){ width="200" align=left }](https://ctf2024.wargames.my/)  
-    **比赛名称** : [Wargames.MY CTF 2024](https://ctf2024.wargames.my/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-12-28 00:00:00 - 2024-12-29 00:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Wargames.MY (https://ctftime.org/team/86069)  
-    **添加日历** : https://ctftime.org/event/2597.ics  
-    
 ??? Quote "[hxp 38C3 CTF](https://2024.ctf.link/)"  
     [![](https://ctftime.org/media/events/hxp-38c3.png){ width="200" align=left }](https://2024.ctf.link/)  
     **比赛名称** : [hxp 38C3 CTF](https://2024.ctf.link/)  

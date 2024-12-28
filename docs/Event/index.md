@@ -474,15 +474,6 @@ hide:
                 **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
                 **添加日历** : https://ctftime.org/event/2600.ics  
                 
-            ??? Quote "[Wargames.MY CTF 2024](https://ctf2024.wargames.my/)"  
-                [![](https://ctftime.org/media/events/WGMY24-PFP1.png){ width="200" align=left }](https://ctf2024.wargames.my/)  
-                **比赛名称** : [Wargames.MY CTF 2024](https://ctf2024.wargames.my/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-28 00:00:00 - 2024-12-29 00:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Wargames.MY (https://ctftime.org/team/86069)  
-                **添加日历** : https://ctftime.org/event/2597.ics  
-                
             ??? Quote "[hxp 38C3 CTF](https://2024.ctf.link/)"  
                 [![](https://ctftime.org/media/events/hxp-38c3.png){ width="200" align=left }](https://2024.ctf.link/)  
                 **比赛名称** : [hxp 38C3 CTF](https://2024.ctf.link/)  
@@ -567,6 +558,15 @@ hide:
                 **其他说明** : CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。  
                 
         === "国外赛事"
+            ??? Quote "[Wargames.MY CTF 2024](https://ctf2024.wargames.my/)"  
+                [![](https://ctftime.org/media/events/WGMY24-PFP1.png){ width="200" align=left }](https://ctf2024.wargames.my/)  
+                **比赛名称** : [Wargames.MY CTF 2024](https://ctf2024.wargames.my/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-12-28 00:00:00 - 2024-12-29 00:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Wargames.MY (https://ctftime.org/team/86069)  
+                **添加日历** : https://ctftime.org/event/2597.ics  
+                
             ??? Quote "[0xL4ugh CTF](https://0xl4ugh.ctf.ae/)"  
                 [![](https://ctftime.org/media/events/logo_101.png){ width="200" align=left }](https://0xl4ugh.ctf.ae/)  
                 **比赛名称** : [0xL4ugh CTF](https://0xl4ugh.ctf.ae/)  
@@ -1457,15 +1457,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : S14y3r (https://ctftime.org/team/282208)  
                 **添加日历** : https://ctftime.org/event/2528.ics  
-                
-            ??? Quote "[TU Delft CTF 2024](https://ctf.ewi.tudelft.nl/)"  
-                [![](https://ctftime.org/media/events/fddd624d58320dba5f40c75a47d72974.jpg){ width="200" align=left }](https://ctf.ewi.tudelft.nl/)  
-                **比赛名称** : [TU Delft CTF 2024](https://ctf.ewi.tudelft.nl/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-05 18:00:00 - 2024-10-06 02:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : TU Delft CTF Team (https://ctftime.org/team/134822)  
-                **添加日历** : https://ctftime.org/event/2487.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

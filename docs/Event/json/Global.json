@@ -240,18 +240,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Wargames.MY CTF 2024",
-        "比赛时间": "2024-12-28 00:00:00 - 2024-12-29 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2597.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf2024.wargames.my/",
-        "比赛标志": "https://ctftime.org/media/events/WGMY24-PFP1.png",
-        "比赛权重": "0",
-        "赛事主办": "Wargames.MY (https://ctftime.org/team/86069)",
-        "比赛ID": "1038",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "hxp 38C3 CTF",
         "比赛时间": "2024-12-28 04:00:00 - 2024-12-30 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2437.ics",
@@ -274,6 +262,18 @@
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "59",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Wargames.MY CTF 2024",
+        "比赛时间": "2024-12-28 00:00:00 - 2024-12-29 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2597.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf2024.wargames.my/",
+        "比赛标志": "https://ctftime.org/media/events/WGMY24-PFP1.png",
+        "比赛权重": "0",
+        "赛事主办": "Wargames.MY (https://ctftime.org/team/86069)",
+        "比赛ID": "1038",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "0xL4ugh CTF",
@@ -1461,18 +1461,6 @@
         "比赛权重": "0.00",
         "赛事主办": "S14y3r (https://ctftime.org/team/282208)",
         "比赛ID": "1068",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "TU Delft CTF 2024",
-        "比赛时间": "2024-10-05 18:00:00 - 2024-10-06 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2487.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.ewi.tudelft.nl/",
-        "比赛标志": "https://ctftime.org/media/events/fddd624d58320dba5f40c75a47d72974.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "TU Delft CTF Team (https://ctftime.org/team/134822)",
-        "比赛ID": "842",
         "比赛状态": "past"
     }
 ]
