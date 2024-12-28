@@ -463,13 +463,7 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-            ??? Quote "[NSSCTF Round26](https://www.nssctf.cn/contest)"  
-                **比赛名称** : [NSSCTF Round26](https://www.nssctf.cn/contest)  
-                **比赛类型** : 线上Jeopardy解题赛  
-                **报名时间** : 2024年12月28日 14:00 - 2024年12月28日 13:59  
-                **比赛时间** : 2024年12月28日 14:00 - 2024年12月28日 17:00  
-                **其他说明** : NSSCTF Round26 由NSSCTF主办，比赛时间为2024年12月28日 14:00至17:00，报名已结束，比赛QQ群为864395049。  
-                
+    
         === "国外赛事"
             ??? Quote "[Pointer Overflow CTF - 2024](http://pointeroverflowctf.com/)"  
                 [![](https://ctftime.org/media/events/poctflogo1transp.png){ width="200" align=left }](http://pointeroverflowctf.com/)  
@@ -518,6 +512,13 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[NSSCTF Round26](https://www.nssctf.cn/contest)"  
+                **比赛名称** : [NSSCTF Round26](https://www.nssctf.cn/contest)  
+                **比赛类型** : 线上Jeopardy解题赛  
+                **报名时间** : 2024年12月28日 14:00 - 2024年12月28日 13:59  
+                **比赛时间** : 2024年12月28日 14:00 - 2024年12月28日 17:00  
+                **其他说明** : NSSCTF Round26 由NSSCTF主办，比赛时间为2024年12月28日 14:00至17:00，报名已结束，比赛QQ群为864395049。  
+                
             ??? Quote "[国城杯初赛](https://ctf2024.goalcent.com/)"  
                 **比赛名称** : [国城杯初赛](https://ctf2024.goalcent.com/)  
                 **比赛类型** : 线上Jeopardy解题赛  
