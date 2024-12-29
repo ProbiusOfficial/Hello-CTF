@@ -474,15 +474,6 @@ hide:
                 **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
                 **添加日历** : https://ctftime.org/event/2600.ics  
                 
-            ??? Quote "[hxp 38C3 CTF](https://2024.ctf.link/)"  
-                [![](https://ctftime.org/media/events/hxp-38c3.png){ width="200" align=left }](https://2024.ctf.link/)  
-                **比赛名称** : [hxp 38C3 CTF](https://2024.ctf.link/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-28 04:00:00 - 2024-12-30 04:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : hxp (https://ctftime.org/team/585)  
-                **添加日历** : https://ctftime.org/event/2437.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[NSSCTF Round26](https://www.nssctf.cn/contest)"  
@@ -557,6 +548,15 @@ hide:
                 **比赛权重** : 92.75  
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/2403.ics  
+                
+            ??? Quote "[hxp 38C3 CTF](https://2024.ctf.link/)"  
+                [![](https://ctftime.org/media/events/hxp-38c3.png){ width="200" align=left }](https://2024.ctf.link/)  
+                **比赛名称** : [hxp 38C3 CTF](https://2024.ctf.link/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-12-28 04:00:00 - 2024-12-30 04:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : hxp (https://ctftime.org/team/585)  
+                **添加日历** : https://ctftime.org/event/2437.ics  
                 
             ??? Quote "[Wargames.MY CTF 2024](https://ctf2024.wargames.my/)"  
                 [![](https://ctftime.org/media/events/WGMY24-PFP1.png){ width="200" align=left }](https://ctf2024.wargames.my/)  
@@ -1439,15 +1439,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
                 **添加日历** : https://ctftime.org/event/2500.ics  
-                
-            ??? Quote "[TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://ctf.tcp1p.team/)"  
-                [![](https://ctftime.org/media/events/Asset_10.jpg){ width="200" align=left }](https://ctf.tcp1p.team/)  
-                **比赛名称** : [TCP1P CTF 2024: Exploring Nusantara's Digital Realm](https://ctf.tcp1p.team/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-11 20:00:00 - 2024-10-13 20:00:00 UTC+8  
-                **比赛权重** : 24.85  
-                **赛事主办** : TCP1P (https://ctftime.org/team/187248)  
-                **添加日历** : https://ctftime.org/event/2256.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
