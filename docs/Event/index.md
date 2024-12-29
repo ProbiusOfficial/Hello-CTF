@@ -483,15 +483,6 @@ hide:
                 **赛事主办** : hxp (https://ctftime.org/team/585)  
                 **添加日历** : https://ctftime.org/event/2437.ics  
                 
-            ??? Quote "[ASIS CTF Finals 2024](https://asisctf.com/)"  
-                [![](https://ctftime.org/media/events/asis_logo.png){ width="200" align=left }](https://asisctf.com/)  
-                **比赛名称** : [ASIS CTF Finals 2024](https://asisctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-28 22:00:00 - 2024-12-29 22:00:00 UTC+8  
-                **比赛权重** : 92.75  
-                **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-                **添加日历** : https://ctftime.org/event/2403.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[NSSCTF Round26](https://www.nssctf.cn/contest)"  
@@ -558,6 +549,15 @@ hide:
                 **其他说明** : CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。  
                 
         === "国外赛事"
+            ??? Quote "[ASIS CTF Finals 2024](https://asisctf.com/)"  
+                [![](https://ctftime.org/media/events/asis_logo.png){ width="200" align=left }](https://asisctf.com/)  
+                **比赛名称** : [ASIS CTF Finals 2024](https://asisctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-12-28 22:00:00 - 2024-12-29 22:00:00 UTC+8  
+                **比赛权重** : 92.75  
+                **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+                **添加日历** : https://ctftime.org/event/2403.ics  
+                
             ??? Quote "[Wargames.MY CTF 2024](https://ctf2024.wargames.my/)"  
                 [![](https://ctftime.org/media/events/WGMY24-PFP1.png){ width="200" align=left }](https://ctf2024.wargames.my/)  
                 **比赛名称** : [Wargames.MY CTF 2024](https://ctf2024.wargames.my/)  
@@ -1448,15 +1448,6 @@ hide:
                 **比赛权重** : 24.85  
                 **赛事主办** : TCP1P (https://ctftime.org/team/187248)  
                 **添加日历** : https://ctftime.org/event/2256.ics  
-                
-            ??? Quote "[Kernel Kombat](https://zl-slay.vercel.app/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://zl-slay.vercel.app/)  
-                **比赛名称** : [Kernel Kombat](https://zl-slay.vercel.app/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-06 14:46:54 - 2024-10-06 14:46:54 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : S14y3r (https://ctftime.org/team/282208)  
-                **添加日历** : https://ctftime.org/event/2528.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
