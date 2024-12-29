@@ -70,6 +70,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[ASIS CTF Finals 2024](https://asisctf.com/)"  
+    [![](https://ctftime.org/media/events/asis_logo.png){ width="200" align=left }](https://asisctf.com/)  
+    **比赛名称** : [ASIS CTF Finals 2024](https://asisctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-12-28 22:00:00 - 2024-12-29 22:00:00 UTC+8  
+    **比赛权重** : 92.75  
+    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+    **添加日历** : https://ctftime.org/event/2403.ics  
+    
 ??? Quote "[Wargames.MY CTF 2024](https://ctf2024.wargames.my/)"  
     [![](https://ctftime.org/media/events/WGMY24-PFP1.png){ width="200" align=left }](https://ctf2024.wargames.my/)  
     **比赛名称** : [Wargames.MY CTF 2024](https://ctf2024.wargames.my/)  
@@ -960,13 +969,4 @@ comments: true
     **比赛权重** : 24.85  
     **赛事主办** : TCP1P (https://ctftime.org/team/187248)  
     **添加日历** : https://ctftime.org/event/2256.ics  
-    
-??? Quote "[Kernel Kombat](https://zl-slay.vercel.app/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://zl-slay.vercel.app/)  
-    **比赛名称** : [Kernel Kombat](https://zl-slay.vercel.app/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-06 14:46:54 - 2024-10-06 14:46:54 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : S14y3r (https://ctftime.org/team/282208)  
-    **添加日历** : https://ctftime.org/event/2528.ics  
     
