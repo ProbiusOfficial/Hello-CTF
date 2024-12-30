@@ -465,15 +465,6 @@ hide:
                 **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
                 **添加日历** : https://ctftime.org/event/2600.ics  
                 
-            ??? Quote "[AlpacaHack Round 8 (Rev)](https://alpacahack.com/)"  
-                [![](https://ctftime.org/media/events/dark_512_2.png){ width="200" align=left }](https://alpacahack.com/)  
-                **比赛名称** : [AlpacaHack Round 8 (Rev)](https://alpacahack.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-30 11:00:00 - 2024-12-30 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
-                **添加日历** : https://ctftime.org/event/2590.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[NSSCTF Round26](https://www.nssctf.cn/contest)"  
@@ -533,6 +524,15 @@ hide:
                 **其他说明** : CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。  
                 
         === "国外赛事"
+            ??? Quote "[AlpacaHack Round 8 (Rev)](https://alpacahack.com/)"  
+                [![](https://ctftime.org/media/events/dark_512_2.png){ width="200" align=left }](https://alpacahack.com/)  
+                **比赛名称** : [AlpacaHack Round 8 (Rev)](https://alpacahack.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2024-12-30 11:00:00 - 2024-12-30 17:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
+                **添加日历** : https://ctftime.org/event/2590.ics  
+                
             ??? Quote "[ASIS CTF Finals 2024](https://asisctf.com/)"  
                 [![](https://ctftime.org/media/events/asis_logo.png){ width="200" align=left }](https://asisctf.com/)  
                 **比赛名称** : [ASIS CTF Finals 2024](https://asisctf.com/)  
@@ -1423,15 +1423,6 @@ hide:
                 **比赛权重** : 21.00  
                 **赛事主办** : Laokoon SecurITy (https://ctftime.org/team/201667)  
                 **添加日历** : https://ctftime.org/event/2436.ics  
-                
-            ??? Quote "[AlpacaHack Round 5 (Crypto)](https://alpacahack.com/ctfs/round-5)"  
-                [![](https://ctftime.org/media/events/ctftime_6.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-5)  
-                **比赛名称** : [AlpacaHack Round 5 (Crypto)](https://alpacahack.com/ctfs/round-5)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-12 11:00:00 - 2024-10-12 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
-                **添加日历** : https://ctftime.org/event/2500.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
