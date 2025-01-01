@@ -261,6 +261,15 @@ comments: true
     **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
     **添加日历** : https://ctftime.org/event/2419.ics  
     
+??? Quote "[Advent of CTF 2024](https://cyberstudents.net/advent)"  
+    [![](https://ctftime.org/media/events/IMG_4522.png){ width="200" align=left }](https://cyberstudents.net/advent)  
+    **比赛名称** : [Advent of CTF 2024](https://cyberstudents.net/advent)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2024-12-02 04:00:00 - 2025-01-01 12:59:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
+    **添加日历** : https://ctftime.org/event/2600.ics  
+    
 ??? Quote "[M*CTF 2024 Junior Finals](https://mctf.ru/)"  
     [![](https://ctftime.org/media/events/IMG_2613.PNG){ width="200" align=left }](https://mctf.ru/)  
     **比赛名称** : [M*CTF 2024 Junior Finals](https://mctf.ru/)  
@@ -953,13 +962,4 @@ comments: true
     **比赛权重** : 82.00  
     **赛事主办** : 💦​ (https://ctftime.org/team/205897)  
     **添加日历** : https://ctftime.org/event/2479.ics  
-    
-??? Quote "[Haus der Flaggen/Flag Heist](https://laokoon-security.com/ctf2024)"  
-    [![](https://ctftime.org/media/events/HausDerFlaggen_Plakat_1080_x_1080_px.png){ width="200" align=left }](https://laokoon-security.com/ctf2024)  
-    **比赛名称** : [Haus der Flaggen/Flag Heist](https://laokoon-security.com/ctf2024)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-12 16:00:00 - 2024-10-13 02:00:00 UTC+8  
-    **比赛权重** : 21.00  
-    **赛事主办** : Laokoon SecurITy (https://ctftime.org/team/201667)  
-    **添加日历** : https://ctftime.org/event/2436.ics  
     

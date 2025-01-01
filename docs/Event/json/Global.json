@@ -216,18 +216,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Advent of CTF 2024",
-        "比赛时间": "2024-12-02 04:00:00 - 2025-01-01 12:59:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2600.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cyberstudents.net/advent",
-        "比赛标志": "https://ctftime.org/media/events/IMG_4522.png",
-        "比赛权重": "0",
-        "赛事主办": "CyberStudentsCTF (https://ctftime.org/team/365239)",
-        "比赛ID": "1218",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "AlpacaHack Round 8 (Rev)",
         "比赛时间": "2024-12-30 11:00:00 - 2024-12-30 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2590.ics",
@@ -489,6 +477,18 @@
         "比赛权重": "0.00",
         "赛事主办": "MadrHacks (https://ctftime.org/team/114509)",
         "比赛ID": "994",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Advent of CTF 2024",
+        "比赛时间": "2024-12-02 04:00:00 - 2025-01-01 12:59:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2600.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cyberstudents.net/advent",
+        "比赛标志": "https://ctftime.org/media/events/IMG_4522.png",
+        "比赛权重": "0",
+        "赛事主办": "CyberStudentsCTF (https://ctftime.org/team/365239)",
+        "比赛ID": "1218",
         "比赛状态": "past"
     },
     {
@@ -1413,18 +1413,6 @@
         "比赛权重": "82.00",
         "赛事主办": "💦​ (https://ctftime.org/team/205897)",
         "比赛ID": "469",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Haus der Flaggen/Flag Heist",
-        "比赛时间": "2024-10-12 16:00:00 - 2024-10-13 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2436.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://laokoon-security.com/ctf2024",
-        "比赛标志": "https://ctftime.org/media/events/HausDerFlaggen_Plakat_1080_x_1080_px.png",
-        "比赛权重": "21.00",
-        "赛事主办": "Laokoon SecurITy (https://ctftime.org/team/201667)",
-        "比赛ID": "853",
         "比赛状态": "past"
     }
 ]
