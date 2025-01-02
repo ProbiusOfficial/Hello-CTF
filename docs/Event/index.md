@@ -353,15 +353,6 @@ hide:
                 **赛事主办** : x3CTF (https://ctftime.org/team/309820)  
                 **添加日历** : https://ctftime.org/event/2467.ics  
                 
-            ??? Quote "[SpartanCTF 2025](https://spartan.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/spctf.png){ width="200" align=left }](https://spartan.ctfd.io/)  
-                **比赛名称** : [SpartanCTF 2025](https://spartan.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-02-01 05:00:00 - 2025-02-04 05:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Zero Day Club (https://ctftime.org/team/286318)  
-                **添加日历** : https://ctftime.org/event/2447.ics  
-                
             ??? Quote "[SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025](https://www.saiborg.io/)"  
                 [![](https://ctftime.org/media/events/saiborg-profile_1.jpg){ width="200" align=left }](https://www.saiborg.io/)  
                 **比赛名称** : [SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025](https://www.saiborg.io/)  
@@ -388,6 +379,15 @@ hide:
                 **比赛权重** : 40.40  
                 **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
                 **添加日历** : https://ctftime.org/event/2573.ics  
+                
+            ??? Quote "[SpartanCTF 2025](https://spartan.ctfd.io/)"  
+                [![](https://ctftime.org/media/events/spctf.png){ width="200" align=left }](https://spartan.ctfd.io/)  
+                **比赛名称** : [SpartanCTF 2025](https://spartan.ctfd.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-29 05:00:00 - 2025-03-31 05:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Zero Day Club (https://ctftime.org/team/286318)  
+                **添加日历** : https://ctftime.org/event/2447.ics  
                 
             ??? Quote "[PlaidCTF 2025](https://plaidctf.com/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://plaidctf.com/)  
@@ -492,13 +492,6 @@ hide:
                 **报名时间** : 2024年11月09日 10:00 - 2024年11月15日 16:59  
                 **比赛时间** : 2024年11月09日 10:00 - 2024年11月15日 17:00  
                 **其他说明** : 第四届ISCTF高校联合安全技能挑战赛由福州蓝鲨信息技术有限公司和DK云赞助，由大理大学、信阳师范大学、福建师范大学主办，联合院校名单包括安徽工业经济职业技术学院、成都东软学院等32所高校的网络与信息安全协会联合主办。比赛时间为11月9日10:00至11月15日17:00，比赛平台为isctf2024.bluesharkinfo.com，目前已开放注册。  
-                
-            ??? Quote "[NewStar CTF 2024](https://ns.openctf.net)"  
-                **比赛名称** : [NewStar CTF 2024](https://ns.openctf.net)  
-                **比赛类型** : 个人赛  
-                **报名时间** : 2024年09月13日 00:00 - 2024年11月03日 21:00  
-                **比赛时间** : 2024年09月30日 09:00 - 2024年11月03日 21:00  
-                **其他说明** : 赛事QQ群：1169651901  
                 
             ??? Quote "[DSBCTF](https://ctf.show)"  
                 **比赛名称** : [DSBCTF](https://ctf.show)  
