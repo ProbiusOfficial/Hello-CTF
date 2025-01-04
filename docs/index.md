@@ -55,15 +55,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[IrisCTF 2025](https://2025.irisc.tf/)"  
-            [![](https://ctftime.org/media/events/IrisSec.png){ width="200" align=left }](https://2025.irisc.tf/)  
-            **比赛名称** : [IrisCTF 2025](https://2025.irisc.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-01-04 08:00:00 - 2025-01-06 08:00:00 UTC+8  
-            **比赛权重** : 34.30  
-            **赛事主办** : IrisSec (https://ctftime.org/team/127034)  
-            **添加日历** : https://ctftime.org/event/2503.ics  
-            
         ??? Quote "[UofTCTF 2025](https://ctf.uoftctf.org/)"  
             [![](https://ctftime.org/media/events/uoftctf_logo_3000_black.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
             **比赛名称** : [UofTCTF 2025](https://ctf.uoftctf.org/)  
@@ -90,6 +81,15 @@ hide:
             **比赛权重** : 23.13  
             **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
             **添加日历** : https://ctftime.org/event/2582.ics  
+            
+        ??? Quote "[2025 Embedded Capture the Flag](https://ectf.mitre.org/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ectf.mitre.org/)  
+            **比赛名称** : [2025 Embedded Capture the Flag](https://ectf.mitre.org/)  
+            **比赛形式** : Attack-Defense  
+            **比赛时间** : 2025-01-16 01:00:00 - 2025-04-17 00:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
+            **添加日历** : https://ctftime.org/event/2542.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
