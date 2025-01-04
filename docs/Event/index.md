@@ -344,6 +344,15 @@ hide:
                 **赛事主办** : x3CTF (https://ctftime.org/team/309820)  
                 **添加日历** : https://ctftime.org/event/2467.ics  
                 
+            ??? Quote "[BITSCTF 2025](https://ctf.bitskrieg.in/)"  
+                [![](https://ctftime.org/media/events/BITSkrieg_logo.png){ width="200" align=left }](https://ctf.bitskrieg.in/)  
+                **比赛名称** : [BITSCTF 2025](https://ctf.bitskrieg.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-02-07 20:00:00 - 2025-02-09 20:00:00 UTC+8  
+                **比赛权重** : 21.81  
+                **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
+                **添加日历** : https://ctftime.org/event/2607.ics  
+                
             ??? Quote "[SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025](https://www.saiborg.io/)"  
                 [![](https://ctftime.org/media/events/saiborg-profile_1.jpg){ width="200" align=left }](https://www.saiborg.io/)  
                 **比赛名称** : [SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025](https://www.saiborg.io/)  

@@ -72,6 +72,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "BITSCTF 2025",
+        "比赛时间": "2025-02-07 20:00:00 - 2025-02-09 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2607.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bitskrieg.in/",
+        "比赛标志": "https://ctftime.org/media/events/BITSkrieg_logo.png",
+        "比赛权重": "21.81",
+        "赛事主办": "BITSkrieg (https://ctftime.org/team/22310)",
+        "比赛ID": "182",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025",
         "比赛时间": "2025-02-21 22:30:00 - 2025-02-22 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2557.ics",
