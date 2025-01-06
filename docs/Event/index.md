@@ -456,15 +456,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
                 
-            ??? Quote "[IrisCTF 2025](https://2025.irisc.tf/)"  
-                [![](https://ctftime.org/media/events/IrisSec.png){ width="200" align=left }](https://2025.irisc.tf/)  
-                **比赛名称** : [IrisCTF 2025](https://2025.irisc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-01-04 08:00:00 - 2025-01-06 08:00:00 UTC+8  
-                **比赛权重** : 34.30  
-                **赛事主办** : IrisSec (https://ctftime.org/team/127034)  
-                **添加日历** : https://ctftime.org/event/2503.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[NSSCTF Round26](https://www.nssctf.cn/contest)"  
@@ -510,6 +501,15 @@ hide:
                 **其他说明** : CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。  
                 
         === "国外赛事"
+            ??? Quote "[IrisCTF 2025](https://2025.irisc.tf/)"  
+                [![](https://ctftime.org/media/events/IrisSec.png){ width="200" align=left }](https://2025.irisc.tf/)  
+                **比赛名称** : [IrisCTF 2025](https://2025.irisc.tf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-01-04 08:00:00 - 2025-01-06 08:00:00 UTC+8  
+                **比赛权重** : 34.30  
+                **赛事主办** : IrisSec (https://ctftime.org/team/127034)  
+                **添加日历** : https://ctftime.org/event/2503.ics  
+                
             ??? Quote "[AlpacaHack Round 8 (Rev)](https://alpacahack.com/)"  
                 [![](https://ctftime.org/media/events/dark_512_2.png){ width="200" align=left }](https://alpacahack.com/)  
                 **比赛名称** : [AlpacaHack Round 8 (Rev)](https://alpacahack.com/)  
@@ -1400,15 +1400,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : PWNX (https://ctftime.org/team/179989)  
                 **添加日历** : https://ctftime.org/event/2518.ics  
-                
-            ??? Quote "[Blue Water CTF 2024](https://bw.ctf.ing/)"  
-                [![](https://ctftime.org/media/events/4872c3c168bd1cdeb5dc564bb3a0416f.png){ width="200" align=left }](https://bw.ctf.ing/)  
-                **比赛名称** : [Blue Water CTF 2024](https://bw.ctf.ing/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-12 22:00:00 - 2024-10-14 10:00:00 UTC+8  
-                **比赛权重** : 82.00  
-                **赛事主办** : 💦​ (https://ctftime.org/team/205897)  
-                **添加日历** : https://ctftime.org/event/2479.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
