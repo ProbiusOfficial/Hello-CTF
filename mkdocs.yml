@@ -291,7 +291,7 @@ nav:
   - 工具: toolkit/index.md
 
 # - CTF 归档部分
-  - 归档: archive/index.md
+  - 归档: hc-archiveindex.md
 
 # ----- 合并到主页中 time: 2024-01-07 ----- 
 # - TeamBuild (.TeamBuild) 团队 Part ------------
@@ -333,19 +333,19 @@ nav:
 #  ----- 合并到主页中 time: 2024-01-07 ----- 
 # - Archives 存档 (.Archive) Part ----
   # - Archives:
-  #   - archive/index.md
+  #   - hc-archiveindex.md
   #   - 赛事归档:
-  #     - archive/Events.md
+  #     - hc-archiveEvents.md
   #   - 师傅们和他们的博客:
-  #     - archive/friends.md
+  #     - hc-archivefriends.md
   #   - 联合战队信息/招新:
-  #     - archive/Teams.md
+  #     - hc-archiveTeams.md
   #   - 社区资源:
-  #     - archive/Community.md
+  #     - hc-archiveCommunity.md
   #   - 书单推荐:
-  #     - archive/books.md
+  #     - hc-archivebooks.md
   #   - 视频资源:
-  #     - archive/Videos.md
+  #     - hc-archiveVideos.md
 
 # ----- 停用 -----
 # - Blog Part ----

@@ -556,7 +556,7 @@ https://zhuanlan.zhihu.com/p/618277583
 https://blog.csdn.net/2301_77485708/article/details/132467976
 https://cloud.tencent.com/developer/article/2287431
 https://blog.csdn.net/Manuffer/article/details/120739989
-https://tttang.com/archive/1698/#toc__5
+https://tttang.com/hc-archive1698/#toc__5
 https://jinja.palletsprojects.com/en/latest/templates/
 https://docs.python.org/zh-cn/3/library/functions.html
 ```

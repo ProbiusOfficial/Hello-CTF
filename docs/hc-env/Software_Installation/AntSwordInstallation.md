@@ -28,7 +28,7 @@ Mac: https://ghproxy.com/?q=https://github.com/AntSwordProject/AntSword-Loader/r
 
 同样的如果下载慢可以使用代理加速:
 
-https://ghproxy.com/?q=https://github.com/AntSwordProject/antSword/archive/refs/tags/2.1.15.zip
+https://ghproxy.com/?q=https://github.com/AntSwordProject/antSword/hc-archiverefs/tags/2.1.15.zip
 
 <div align="center">  <img src="https://nssctf.oss-cn-chengdu.aliyuncs.com/img/xmj/image-20230427213448037.png" width=""/> </div><br>
 
