@@ -35,9 +35,9 @@ def update_files():
     # 更新 friends.md 和 index.md
     friends_content = download_file("https://raw.githubusercontent.com/ProbiusOfficial/helloCTF-CTFerlink/main/output/friends.md")
     print("downloaded friends.md")
-    with open("docs/Archive/friends.md", 'w', encoding='utf-8') as file:
+    with open("docs/archive/friends.md", 'w', encoding='utf-8') as file:
         file.write(friends_content)
-    with open("docs/Archive/index.md", 'w', encoding='utf-8') as file:
+    with open("docs/archive/index.md", 'w', encoding='utf-8') as file:
         file.write(friends_content)
     print("updated friends.md and index.md complete")
 
@@ -56,7 +56,7 @@ def update_files():
 
     # 更新 index.md
     index_html_content = download_file("https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTFtime/main/Out/home.md")
-    insert_content("docs/index.md", "<!-- 主页赛事展示_开始 -->", "<!-- 主页赛事展示_结束 -->", index_html_content)
+    insert_content("docs/home/index.md", "<!-- 主页赛事展示_开始 -->", "<!-- 主页赛事展示_结束 -->", index_html_content)
     print("updated home.md complete")
 
     # update json

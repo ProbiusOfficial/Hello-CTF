@@ -41,7 +41,7 @@ HelloCTF项目的核心部分，包含CTF各个方向 (包括但不限于MISC,WE
 
 对于有办赛需求的团队提供相关支持。
 
-### **[工具](https://hello-ctf.com/ToolKit/) CTFToolKit (/ToolKit)** 
+### **[工具](https://hello-ctf.com/toolkit/) CTFtoolkit (/toolkit)** 
 
 与项目 [CTFtools-wiki](https://github.com/ProbiusOfficial/CTFtools-wiki) 同步，分类收录各种 CTF 工具。  
 

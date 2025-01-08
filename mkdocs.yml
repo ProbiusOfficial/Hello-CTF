@@ -97,7 +97,6 @@ extra:
 # Plugins
 plugins:
   - search
-  - blog
   - mkdocs-video: # Powered by https://github.com/soulless-viewer/mkdocs-video
       is_video: True
       video_muted: True
@@ -181,95 +180,100 @@ nav:
 
 # 导航排布 —— | Hello CTF | 赛事 | 工具 | 团队 | 扩展 | Achieve | Blog
 
-# - HelloCTF 内容 (.HC) Part ------------
-  - HelloCTF:
-    - index.md
+# NEW 排布 —— | Home | 知识点标签 | 工具 | 靶场 | 赛事 | 归档
+
+# - Home 主要内容 (.HC) Part ------------
+  - Home:
+    - home/index.md
     - 快速开始:
-      - HC_Start/index.md
+      - hc-start/index.md
 
     - 前言:
-      - HC_Preface/index.md
-      - 关于本书: HC_Preface/about.md
-      - 食用方法: HC_Preface/usage.md
-      - 加入我们: HC_Preface/join.md
+      - hc-preface/index.md
+      - 关于本书: hc-preface/about.md
+      - 食用方法: hc-preface/usage.md
+      - 加入我们: hc-preface/join.md
 
     - 环境设置:
-      - HC_envSet/index.md
-      - 工具一览: HC_envSet/CTFtool.md
-      - Docker环境: HC_envSet/Docker_On_Linux.md
-      - Web环境设置: HC_envSet/Web.md
-      - MISC环境设置: HC_envSet/MISC.md
-      - Crypto环境设置: HC_envSet/Crypto.md
+      - hc-env/index.md
+      - 工具一览: hc-env/CTFtool.md
+      - Docker环境: hc-env/Docker_On_Linux.md
+      - Web环境设置: hc-env/Web.md
+      - MISC环境设置: hc-env/MISC.md
+      - Crypto环境设置: hc-env/Crypto.md
 
     - MISC | 杂项:
-      - HC_MISC/index.md
-      - 信息收集: HC_MISC/osint.md
-      - 编码扩展: HC_MISC/Encode_extra.md
-      - 文件基础: HC_MISC/file.md
-      - 压缩包: HC_MISC/Archivefile.md
-      - 隐写技术: HC_MISC/stego.md
-      - 流量分析: HC_MISC/pcap.md
-      - 内存取证: HC_MISC/memory.md
-      - 附:文件签名表 : HC_MISC/file_sign.md
+      - hc-misc/index.md
+      - 信息收集: hc-misc/osint.md
+      - 编码扩展: hc-misc/Encode_extra.md
+      - 文件基础: hc-misc/file.md
+      - 压缩包: hc-misc/Archivefile.md
+      - 隐写技术: hc-misc/stego.md
+      - 流量分析: hc-misc/pcap.md
+      - 内存取证: hc-misc/memory.md
+      - 附:文件签名表 : hc-misc/file_sign.md
 
     - Web | 网络攻防:
-      - HC_Web/index.md
-      - Web入门题单: HC_Web/web_start.md
-      - PHP基础: HC_Web/php_basic.md
-      - PHP反序列化基础: HC_Web/php_unser_base.md 
-      - SQL注入: HC_Web/sql_injection.md
-      - XSS攻击: HC_Web/xss.md
-      - 文件包含: HC_Web/include.md
-      - SSTI注入: HC_Web/ssti.md
+      - hc-web/index.md
+      - Web入门题单: hc-web/web_start.md
+      - PHP基础: hc-web/php_basic.md
+      - PHP反序列化基础: hc-web/php_unser_base.md 
+      - SQL注入: hc-web/sql_injection.md
+      - XSS攻击: hc-web/xss.md
+      - 文件包含: hc-web/include.md
+      - SSTI注入: hc-web/ssti.md
 
     - Crypto | 密码学:
-      - HC_Crypto/index.md
-      - 1.前情提要: HC_Crypto/Recap.md
-      - 2.编码基础: HC_Crypto/Encode.md
-      - 3.古典密码: HC_Crypto/Classicalcipher.md
+      - hc-crypto/index.md
+      - 前情提要: hc-crypto/Recap.md
+      - 编码基础: hc-crypto/Encode.md
+      - 古典密码: hc-crypto/Classicalcipher.md
 
     - Reverse | 逆向工程:
-      - HC_Reverse/index.md
-      - 1. &nbsp; 引导篇：灵魂F&Q: HC_Reverse/引导篇：灵魂F&Q.md
-      - 2. &nbsp; Quick Start：可执行文件: HC_Reverse/Quick Start：可执行文件.md
-      - 3. &nbsp; Quick Start：ASM汇编: HC_Reverse/Quick Start：ASM汇编.md
-      - 4. &nbsp; Quick Start：Example problems: HC_Reverse/Quick Start：Example problems.md
-      - 5. &nbsp; 从零开始的IDA: HC_Reverse/从零开始的IDA.md
-      - 6. &nbsp; 从零开始的壳: HC_Reverse/从零开始的壳.md
+      - hc-reverse/index.md
+      - 引导篇：灵魂F&Q: hc-reverse/引导篇：灵魂F&Q.md
+      - Quick Start：可执行文件: hc-reverse/Quick Start：可执行文件.md
+      - Quick Start：ASM汇编: hc-reverse/Quick Start：ASM汇编.md
+      - Quick Start：Example problems: hc-reverse/Quick Start：Example problems.md
+      - 从零开始的IDA: hc-reverse/从零开始的IDA.md
+      - 从零开始的壳: hc-reverse/从零开始的壳.md
 
     - Pwn | 二进制安全:
-      - HC_PWN/index.md
-      - 0. &nbsp; 汇编语言(x86): HC_PWN/Asm_x86.md
-      - 1. &nbsp; 栈上数组越界&栈溢出: HC_PWN/Stack_Overflow.md
-      - 1.1. &nbsp; ROP入门: HC_PWN/ROP.md
-      - 1.2. &nbsp; 常见的ROP技巧: HC_PWN/ROP_Tricks.md
-      - 2. &nbsp; 常见保护: HC_PWN/Protections.md
-      - x. &nbsp; 杂七杂八的解题技巧: HC_PWN/Tricks.md
+      - hc-pwn/index.md
+      - 汇编语言(x86): hc-pwn/Asm_x86.md
+      - 栈上数组越界&栈溢出: hc-pwn/Stack_Overflow.md
+      - ROP入门: hc-pwn/ROP.md
+      - 常见的ROP技巧: hc-pwn/ROP_Tricks.md
+      - 常见保护: hc-pwn/Protections.md
+      - 杂七杂八的解题技巧: hc-pwn/Tricks.md
 
     - AWD | 攻防模式:
-      - 1. &nbsp; AWD介绍: HC_AWD/awd_about.md
-      - 2. &nbsp; AWD平台: HC_AWD/awd_platform.md
-      - 3. &nbsp; 【WEB】AWD技巧: HC_AWD/awd_web.exp.md
-      - 4. &nbsp; 【PWN】AWD技巧: HC_AWD/awd_pwn.exp.md
+      - AWD介绍: hc-awd/awd_about.md
+      - AWD平台: hc-awd/awd_platform.md
+      - 【WEB】AWD技巧: hc-awd/awd_web.exp.md
+      - 【PWN】AWD技巧: hc-awd/awd_pwn.exp.md
 
     - AI | 人工智能安全:
-      - HC_AI/index.md
-      - 初识AI: HC_AI/What_is_AI.md
-      - 你的第一个神经网络: HC_AI/MLP.md
+      - hc-ai/index.md
+      - 初识AI: hc-ai/What_is_AI.md
+      - 你的第一个神经网络: hc-ai/MLP.md
 
     - blockchain | 区块链安全:
       - Move:
-        - 从0开始的签到题: HC_blockchain/Move/0x00.md
+        - 从0开始的签到题: hc-blockchain/Move/0x00.md
 
     - 附录:
-      - 提问的智慧: HC_Appendix/how-to-ask.md
-      - CTF赛事: HC_Appendix/CTFevent.md
-      - NSSCTF平台使用: HC_Appendix/NSSCTF_Usage.md
-      - 推荐书单: HC_Appendix/book.md
+      - 提问的智慧: hc-appendix/how-to-ask.md
+      - CTF赛事: hc-appendix/CTFevent.md
+      - NSSCTF平台使用: hc-appendix/NSSCTF_Usage.md
+      - 推荐书单: hc-appendix/book.md
 
-# - CTF Training 练习 (.Training) Part ------------
-  - 刷题:
-    - Training/index.md
+  - 知识点标签:
+    - hc-tags/index.md
+# ----- 暂时下线 time: 2024-01-07 -----
+# # - CTF Training 练习 (.Training) Part ------------
+#   - 刷题:
+#     - Training/index.md
 
 # - CTF Event 赛事 (.Event) Part ------------
   - 赛事:
@@ -279,36 +283,44 @@ nav:
     - 已经结束: Event/Past_events.md
     - 办赛指南:
       - Event/organize.md
-    
-# - CTF ToolKit 工具 (.ToolKit) Part ------------
-  - 工具: ToolKit/index.md
 
+# - Hello CTF 系列靶场文档
+  - 靶场: hc-labs/index.md
+
+# - CTF toolkit 工具 (.toolkit) Part ------------
+  - 工具: toolkit/index.md
+
+# - CTF 归档部分
+  - 归档: archive/index.md
+
+# ----- 合并到主页中 time: 2024-01-07 ----- 
 # - TeamBuild (.TeamBuild) 团队 Part ------------
-  - 团队: 
-    - TeamBuild/index.md
-    - 团队建设与运营:
-      - TeamBuild/build.md
-    - 团队纳新及培训:
-      - TeamBuild/recruit.md
-    - 团队训练及CTF平台:
-      - TeamBuild/train.md
+  # - 团队: 
+  #   - TeamBuild/index.md
+  #   - 团队建设与运营:
+  #     - TeamBuild/build.md
+  #   - 团队纳新及培训:
+  #     - TeamBuild/recruit.md
+  #   - 团队训练及CTF平台:
+  #     - TeamBuild/train.md
 
+# ----- 合并到主页中 time: 2024-01-07 ----- 
 # - Set Challenges (.SC) 命题 Part ------------
-  - 命题: 
-    - Create/index.md
-    - 一般题目模板 : docker-template/index.md
-    - 动态容器原理: Create/DynamicChallengePrinciples.md
-    - Web基础靶机构建流程: Create/WebBaseChallenge.md
+  # - 命题: 
+  #   - Create/index.md
+  #   - 一般题目模板 : docker-template/index.md
+  #   - 动态容器原理: Create/DynamicChallengePrinciples.md
+  #   - Web基础靶机构建流程: Create/WebBaseChallenge.md
 
 
-
+#  ----- 合并到主页中 time: 2024-01-07 ----- 
 # - ExtensionEnhancement 扩展 (.EE) Part ------------
-  - 扩展:
-    - EE/index.md
-    - Docker| 容器技术:
-      - EE_Docker/index.md
-      - 一文速通Docker(粗): EE_Docker/dockerstart.md
-      - 关于Docker: EE_Docker/about.md 
+  # - 扩展:
+  #   - EE/index.md
+  #   - Docker| 容器技术:
+  #     - EE_Docker/index.md
+  #     - 一文速通Docker(粗): EE_Docker/dockerstart.md
+  #     - 关于Docker: EE_Docker/about.md 
       # - Windows下的Docker环境配置: EE_Docker/install_windows.md
       # - Linux下的Docker环境配置: EE_Docker/install_linux.md
       # - Docker的基本操作: EE_Docker/usage_basic.md
@@ -318,25 +330,27 @@ nav:
       # - Pwn题目的Docker化: EE_Docker/usage_pwn.md
       # - Crypto题目的Docker化: EE_Docker/usage_crypto.md
 
+#  ----- 合并到主页中 time: 2024-01-07 ----- 
 # - Archives 存档 (.Archive) Part ----
-  - Archives:
-    - Archive/index.md
-    - 赛事归档:
-      - Archive/Events.md
-    - 师傅们和他们的博客:
-      - Archive/friends.md
-    - 联合战队信息/招新:
-      - Archive/Teams.md
-    - 社区资源:
-      - Archive/Community.md
-    - 书单推荐:
-      - Archive/books.md
-    - 视频资源:
-      - Archive/Videos.md
+  # - Archives:
+  #   - archive/index.md
+  #   - 赛事归档:
+  #     - archive/Events.md
+  #   - 师傅们和他们的博客:
+  #     - archive/friends.md
+  #   - 联合战队信息/招新:
+  #     - archive/Teams.md
+  #   - 社区资源:
+  #     - archive/Community.md
+  #   - 书单推荐:
+  #     - archive/books.md
+  #   - 视频资源:
+  #     - archive/Videos.md
 
+# ----- 停用 -----
 # - Blog Part ----
-  - Blog:
-    - blog/index.md
+  # - Blog:
+  #   - blog/index.md
 
 watch:
   - docs

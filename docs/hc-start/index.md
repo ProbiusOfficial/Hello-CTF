@@ -107,7 +107,7 @@ CTF赛制分多种，国内常见的为「 **解题模式 Jeopardy** 」「 **�
 
 国内目前几大主流平台：(排名不分先后)
 
-**NSSCTF** [https://www.nssctf.cn/index](https://www.nssctf.cn/index) (多功能Xenny。适合一人单刷，也适合团队训练。**更详细的可以参考 [NSSCTF平台食用指南](../HC_Appendix/NSSCTF_Usage.md)**)
+**NSSCTF** [https://www.nssctf.cn/index](https://www.nssctf.cn/index) (多功能Xenny。适合一人单刷，也适合团队训练。**更详细的可以参考 [NSSCTF平台食用指南](../hc-appendix/NSSCTF_Usage.md)**)
 
 **BUUCTF** [https://buuoj.cn/](https://buuoj.cn/) 
 
@@ -139,7 +139,7 @@ CTF赛制分多种，国内常见的为「 **解题模式 Jeopardy** 」「 **�
     "……"
 下面我们以NSSCTF为例，简单介绍一下做题流程，和题目类型。
 
-**更详细的可以参考 [NSSCTF平台食用指南](../HC_Appendix/NSSCTF_Usage.md)**
+**更详细的可以参考 [NSSCTF平台食用指南](../hc-appendix/NSSCTF_Usage.md)**
 
 ![Untitled](https://user-images.githubusercontent.com/41804496/232275694-5411c38e-1c80-4fb0-9eee-5d3c9d0fb94f.png)
 
@@ -198,7 +198,7 @@ CTF题目开启的基本形式如下：
 **入门需要的工具和Tricks**
 
 !!! warning
-    该部分只提供基础工具,更多工具可以到环境配置章节中的[工具合集](../HC_envSet/CTFtool.md)查看，在遇到对应题目的时候可在合集中自行查找，到一定程度之后可以尝试自己复现轮子。
+    该部分只提供基础工具,更多工具可以到环境配置章节中的[工具合集](../hc-env/CTFtool.md)查看，在遇到对应题目的时候可在合集中自行查找，到一定程度之后可以尝试自己复现轮子。
 
 
 

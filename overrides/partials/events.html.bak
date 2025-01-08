@@ -14,7 +14,7 @@
     <!-- 轮播图布局 -->
     <div class="carousel">
         <div class="carousel-container">
-            <a href="../HC_Start/" target="_blank"><img src="../assets/banner-quickstart.png" /></a>
+            <a href="../hc-start/" target="_blank"><img src="../assets/banner-quickstart.png" /></a>
         </div>
         <!-- 触发 hover 的区域 -->
         <div class="carousel-hover left">

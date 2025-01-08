@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello CTF</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --secondary: #6366f1;
+            --background: #ffffff;
+            --text: #1f2937;
+            --card-bg: #f8fafc;
+            --accent: #2563eb;
+            --success: #22c55e;
+            --warning: #eab308;
+            --error: #ef4444;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(45deg, transparent 45%, rgba(99, 102, 241, 0.03) 45%, rgba(99, 102, 241, 0.03) 55%, transparent 55%),
+                linear-gradient(-45deg, transparent 45%, rgba(99, 102, 241, 0.03) 45%, rgba(99, 102, 241, 0.03) 55%, transparent 55%);
+            background-size: 30px 30px;
+            z-index: 0;
+        }
+
+        .matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .matrix-text {
+            position: absolute;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--primary);
+            font-size: 12px;
+            white-space: nowrap;
+            user-select: none;
+        }
+
+        #bgCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.2;
+        }
+
+        .fullpage-container {
+            height: 100vh;
+            overflow-y: auto;
+            scroll-snap-type: y mandatory;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section {
+            min-height: 100vh;
+            width: 100%;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .first-section {
+            background: transparent;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            text-align: center;
+            transition: opacity 0.3s ease;
+        }
+
+        .header {
+            text-align: center;
+            padding-top: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 4.5rem;
+            font-weight: bold;
+            margin: 0;
+            color: var(--text);
+            position: relative;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 0px var(--primary);
+            animation: slideInFromTop 1s ease-out forwards;
+        }
+
+        .logo span {
+            display: inline-block;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .logo span:hover {
+            color: var(--primary);
+            text-shadow: 2px 2px 0px var(--text);
+            transform: translateY(-2px);
+        }
+
+        .scramble-text {
+            font-family: 'Courier New', monospace;
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin: 2rem 0;
+            opacity: 0.8;
+            letter-spacing: 0.1em;
+            text-shadow: 0 0 5px rgba(46, 204, 113, 0.3);
+        }
+
+        .choice-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeInScale 0.8s ease-out forwards;
+            animation-delay: 1s;
+        }
+
+        .choice-btn {
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            color: var(--text);
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid var(--primary);
+            border-radius: 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .choice-btn:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+        }
+
+        .ctf-intro {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            background: var(--bg);
+            z-index: 10;
+        }
+
+        .ctf-intro.show {
+            display: flex;
+            opacity: 1;
+        }
+
+        .ctf-content {
+            max-width: 800px;
+            margin: auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .ctf-title {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(-30px);
+            animation: slideDown 0.8s ease forwards;
+        }
+
+        .ctf-description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text);
+            margin-bottom: 2rem;
+        }
+
+        .ctf-description p {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .ctf-description p:nth-child(1) { animation: slideUp 0.8s ease forwards 0.2s; }
+        .ctf-description p:nth-child(2) { animation: slideUp 0.8s ease forwards 0.4s; }
+        .ctf-description p:nth-child(3) { animation: slideUp 0.8s ease forwards 0.6s; }
+
+        .highlight-text {
+            color: var(--primary);
+            font-weight: bold;
+            position: relative;
+            display: inline-block;
+        }
+
+        .highlight-text::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background: var(--primary);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .highlight-text:hover::after {
+            transform: scaleX(1);
+        }
+
+        .flag-example {
+            font-family: monospace;
+            background: rgba(99, 102, 241, 0.1);
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .flag-example:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+        }
+
+        .submit-button {
+            display: inline-block;
+            padding: 0.8rem 2.5rem;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.2),
+                transparent
+            );
+            transition: 0.5s;
+        }
+
+        .submit-button:hover:before {
+            left: 100%;
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(var(--primary-rgb), 0.3);
+        }
+
+        .submit-button.success {
+            background: linear-gradient(45deg, #00b09b, #96c93d);
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 176, 155, 0.5);
+        }
+
+        .nav-btn {
+            padding: 1.2rem 3rem;
+            font-size: 1.2em;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            min-width: 200px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+        }
+
+        .nav-btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.2),
+                transparent
+            );
+            transition: 0.5s;
+        }
+
+        .nav-btn:hover:before {
+            left: 100%;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .success-message {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .success-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--background);
+            padding: 2.5rem 3rem;
+            border-radius: 1rem;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            max-width: 90%;
+            width: 400px;
+        }
+
+        .success-title {
+            color: var(--success);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-weight: bold;
+            text-shadow: 0 2px 4px rgba(34, 197, 94, 0.2);
+        }
+
+        .success-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .nav-btn {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        /* 移除自定义按钮颜色 */
+
+        /* 数据统计区域样式 */
+        .stats-section {
+            display: flex;
+            justify-content: center;
+            gap: 6rem;
+            margin-top: 4rem;
+            padding: 2rem;
+            border-radius: 1rem;
+            width: 100%;
+        }
+
+        .stat-item {
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #2ecc71, #3498db);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: block;
+            width: 100%;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .stat-label {
+            font-size: 1.4rem;
+            color: var(--text);
+            opacity: 0.8;
+            white-space: nowrap;
+        }
+
+        /* 滑动页面样式 */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .second-section {
+            padding: 4rem 2rem;
+            background: linear-gradient(180deg, var(--background) 0%, var(--card-bg) 100%);
+        }
+
+        .feature-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 1rem;
+            padding: 2rem;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(99, 102, 241, 0.1), transparent);
+            transform: translateX(-100%);
+            transition: 0.5s;
+        }
+
+        .feature-card:hover::before {
+            transform: translateX(100%);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary);
+        }
+
+        .feature-card h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .feature-card p {
+            color: var(--text);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .feature-card .card-link {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card .card-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+        }
+
+        .project-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            padding: 0 1rem;
+        }
+
+        .project-intro h2 {
+            font-size: 2.5rem;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .project-intro p {
+            font-size: 1.1rem;
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        /* 尾页样式 */
+        .footer-section {
+            background: rgba(254, 254, 255, 0.7);
+            backdrop-filter: blur(10px);
+            min-height: 30vh !important;
+            height: 30vh;
+            padding: 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 0 1rem;
+            text-align: center;
+        }
+
+        .footer-column {
+            text-align: center;
+        }
+
+        .footer-column h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column li {
+            margin-bottom: 1rem;
+        }
+
+        .footer-column a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+            padding: 0.5rem;
+        }
+
+        .footer-column a:hover {
+            color: var(--primary);
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(46, 204, 113, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(46, 204, 113, 0);
+            }
+        }
+
+        @keyframes slideDown {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+            cursor: pointer;
+            z-index: 5;
+        }
+
+        .scroll-indicator svg {
+            width: 30px;
+            height: 30px;
+            fill: var(--primary);
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .scroll-indicator:hover svg {
+            opacity: 1;
+        }
+
+        /* 蒙版样式 */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            z-index: 999;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .overlay.show {
+            opacity: 1;
+        }
+
+        #flagChallenge {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 90%;
+            max-width: 800px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        #flagChallenge.show {
+            opacity: 1;
+        }
+
+        #flagChallenge img {
+            width: 250px;
+            height: auto;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        #flagChallenge img:hover {
+            transform: translateY(-5px);
+        }
+
+        #flagChallenge h2 {
+            font-size: 2em;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #flagInput {
+            width: 300px;
+            padding: 0.8rem;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text);
+            font-size: 1em;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
+            outline: none;
+        }
+
+        #flagInput:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.1);
+        }
+
+        .submit-button {
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.2);
+        }
+
+        /* 禁用滚动样式 */
+        body.no-scroll {
+            overflow: hidden !important;
+        }
+
+        .fullpage-container.no-scroll {
+            overflow: hidden !important;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="bgCanvas"></canvas>
+    <div class="fullpage-container">
+        <!-- 第一页 -->
+        <section class="section first-section">
+            <div class="container">
+                <header class="header">
+                    <h1 class="logo">Hello CTF</h1>
+                    <div class="scramble-text" id="scrambleText">/ Initializing Hello CTF System...</div>
+                    <div class="choice-container">
+                        <button class="choice-btn" onclick="showNewbie()">CTF初学者?</button>
+                        <button class="choice-btn" onclick="window.location.href='./home'">在线阅读</button>
+                    </div>
+                </header>
+
+                <div class="stats-section">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="2400">0+</div>
+                        <div class="stat-label">GitHub Stars</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="300">0+</div>
+                        <div class="stat-label">配套题目</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="5000">0+</div>
+                        <div class="stat-label">受益用户</div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 17.414L3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- 第二页 -->
+        <section class="section second-section">
+            <div class="project-intro">
+                <h2>Hello CTF</h2>
+                <p>Hello CTF是免费开源的CTF入门教程，拥有最全面的CTF知识点锦集、配套的题目靶场和完善的工具系统。</p>
+                <p>作为CyclensTech旗下的开源产品，我们致力于为CTF学习者提供最好的学习体验。</p>
+            </div>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <h3>免费开源</h3>
+                    <p>Hello CTF是一个开源项目，我们欢迎任何想要贡献的人。</p>
+                    <a href="https://github.com/ProbiusOfficial/Hello-CTF" class="card-link" target="_blank">访问 Github</a>
+                </div>
+
+                <div class="feature-card">
+                    <h3>赛事一览</h3>
+                    <p>收录最广的赛事日历，国内外赛事一网打尽。</p>
+                    <a href="https://hello-ctf.com/Event/" class="card-link" target="_blank">查看最新赛事</a>
+                </div>
+
+                <div class="feature-card">
+                    <h3>归档善后</h3>
+                    <p>基于CTF-Archives和多方合作，将历史赛题尽收眼底。</p>
+                    <a href="#" class="card-link" target="_blank">敬请期待</a>
+                </div>
+
+                <div class="feature-card">
+                    <h3>知识锦集</h3>
+                    <p>最全面的CTF知识点锦集，涵盖各个方向的技术要点和解题思路。</p>
+                    <a href="#" class="card-link" target="_blank">浏览知识点</a>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>配套靶场</h3>
+                    <p>拥有完整的配套题目靶场系统，让你的学习之路更加顺畅。</p>
+                    <a href="#" class="card-link" target="_blank">进入靶场</a>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>CTFos 工具系统</h3>
+                    <p>完善的CTF工具系统，为CTF学习和比赛提供强大的工具支持。</p>
+                    <a href="#" class="card-link" target="_blank">敬请期待</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 尾页 -->
+        <section class="section footer-section">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>交流与联系</h3>
+                        <ul>
+                            <li><a href="https://discord.gg/kwyVP5vKWy" target="_blank">Hello CTF Discord</a></li>
+                            <li><a href="https://qm.qq.com/q/HL59n1B7GK" target="_blank">Hello CTF User QQ群</a></li>
+                            <li><a href="mailto:contact@cyclens.tech">邮箱：contact@cyclens.tech</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>社交媒体</h3>
+                        <ul>
+                            <li><a href="https://space.bilibili.com/27109929" target="_blank">Bilibili</a></li>
+                            <li><a href="#" target="_blank">微信公众号：Hello-CTF</a></li>
+                            <li><a href="https://x.com/ProbiusOfficial" target="_blank">X@ProbiusOfficial</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>友情链接</h3>
+                        <ul>
+                            <li><a href="https://cyclens.tech" target="_blank">CyclensTech</a></li>
+                            <li><a href="https://www.bitslab.xyz/" target="_blank">Bitslab</a></li>
+                            <li><a href="https://www.dkdun.cn/" target="_blank">林枫云</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="ctf-intro" id="ctfIntro">
+        <div class="ctf-content">
+            <h2 class="ctf-title">什么是CTF？</h2>
+            <div class="ctf-description">
+                <p><span class="highlight-text">CTF（Capture The Flag）</span>中文一般译作夺旗赛，在网络安全领域中指的是网络安全技术人员之间进行技术竞技的一种比赛形式。</p>
+                <p>参赛选手通过完成攻击、分析，解密等各类操作，率先从题目给出的沙箱环境或文件样本中得到一串具有一定格式的字符串或其他内容，并将其提交给平台，从而夺得分数。</p>
+                <p>为了方便称呼，我们把这样的内容称之为"<span class="highlight-text">Flag</span>"。<br>
+                Flag的一般格式是一个统一的开头名称加上大括号内容，例如<span class="flag-example">flag{hello_world}</span>或者<span class="flag-example">helloctf{we1c0me!}</span>。</p>
+            </div>
+            <button class="nav-btn continue-btn" onclick="showFlagChallenge()">继续</button>
+        </div>
+    </div>
+
+    <div id="flagChallenge">
+        <img src="logo.png" alt="Challenge Image" id="challengeImage" data-flag="helloctf{y0u_find_it!!}">
+        <h2>让我们尝试找到第一个flag吧</h2>
+        <p style="color: var(--text); margin-bottom: 2rem; font-size: 1.1em;">提示：使用开发者工具选中图片，你会发现一个隐藏的flag</p>
+        <div style="max-width: 400px; margin: 0 auto;">
+            <input type="text" id="flagInput" placeholder="输入flag">
+            <p id="flagResult" style="min-height: 1.5em; margin-bottom: 1rem; color: var(--text);"></p>
+            <button id="submitButton" onclick="checkFlag()" class="submit-button">提交</button>
+        </div>
+    </div>
+
+    <div class="success-message" id="successMessage">
+        <div class="success-content">
+            <h2 class="success-title">恭喜得分！</h2>
+            <div style="font-size: 1.2em; line-height: 1.8; color: var(--text); margin-bottom: 2.5rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <p style="margin-bottom: 1.5rem; font-weight: 500;">解出第一道赛题是一个非常重要的里程碑！🎉</p>
+                <p style="margin-bottom: 1.5rem; opacity: 0.9;">你已经迈出了第一步，无论这道题多么简单，它都代表了你在网络安全和CTF领域的启程。</p>
+                <p style="margin-bottom: 1.5rem; opacity: 0.9;">记住，CTF不仅仅是技术的挑战，更是解决问题和不断进步的过程。每次突破都让你离目标更近一点。</p>
+                <p style="margin-bottom: 1.5rem; opacity: 0.9;">永远保持好奇心和学习的热情，你会不断遇到更多的挑战，也会积累越来越多的经验。</p>
+                <p style="font-weight: 500; background: linear-gradient(45deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">继续加油，未来无限可能！✨</p>
+            </div>
+            <div style="display: flex; gap: 2rem; justify-content: center;">
+                <button onclick="goHome()" class="nav-btn" style="min-width: 120px;">返回主页</button>
+                <button onclick="continueLearning()" class="nav-btn continue-btn" style="min-width: 120px;">继续学习</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Canvas相关代码
+        const canvas = document.getElementById('bgCanvas');
+        const ctx = canvas.getContext('2d');
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        // 粒子系统
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 2;
+                this.vy = (Math.random() - 0.5) * 2;
+                this.radius = Math.random() * 2;
+                this.alpha = Math.random();
+            }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+
+                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+
+                this.alpha = Math.min(1, this.alpha + (Math.random() - 0.5) * 0.1);
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(59, 130, 246, ${this.alpha})`;
+                ctx.fill();
+            }
+        }
+
+        const particles = Array.from({ length: 60 }, () => new Particle());
+
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+
+            requestAnimationFrame(draw);
+        }
+
+        draw();
+
+        // 文字动画效果
+        class TextScramble {
+            constructor(el) {
+                this.el = el;
+                this.chars = '!<>-_\\/[]{}—=+*^?#________';
+                this.update = this.update.bind(this);
+            }
+            
+            setText(newText) {
+                const oldText = this.el.innerText;
+                const length = Math.max(oldText.length, newText.length);
+                const promise = new Promise((resolve) => this.resolve = resolve);
+                this.queue = [];
+                
+                for (let i = 0; i < length; i++) {
+                    const from = oldText[i] || '';
+                    const to = newText[i] || '';
+                    const start = Math.floor(Math.random() * 40);
+                    const end = start + Math.floor(Math.random() * 40);
+                    this.queue.push({ from, to, start, end });
+                }
+                
+                cancelAnimationFrame(this.frameRequest);
+                this.frame = 0;
+                this.update();
+                return promise;
+            }
+            
+            update() {
+                let output = '';
+                let complete = 0;
+                
+                for (let i = 0, n = this.queue.length; i < n; i++) {
+                    let { from, to, start, end, char } = this.queue[i];
+                    
+                    if (this.frame >= end) {
+                        complete++;
+                        output += to;
+                    } else if (this.frame >= start) {
+                        if (!char || Math.random() < 0.28) {
+                            char = this.randomChar();
+                            this.queue[i].char = char;
+                        }
+                        output += `<span class="scramble-char">${char}</span>`;
+                    } else {
+                        output += from;
+                    }
+                }
+                
+                this.el.innerHTML = output;
+                
+                if (complete === this.queue.length) {
+                    this.resolve();
+                } else {
+                    this.frameRequest = requestAnimationFrame(this.update);
+                    this.frame++;
+                }
+            }
+            
+            randomChar() {
+                return this.chars[Math.floor(Math.random() * this.chars.length)];
+            }
+        }
+
+        // 当页面加载完成后开始动画
+        document.addEventListener('DOMContentLoaded', () => {
+            const phrases = [
+                '/ 🚩Loading CTF environment...',
+                '/ 💻System ready.',
+                '/ 🔑Hello CTFer!',
+                '/ HelloCTF{💗Welcome!}',
+                '/ 3',
+                '/ 2',
+                '/ 1',
+                '/ BOOM!💥',
+            ];
+            
+            const el = document.querySelector('.scramble-text');
+            const fx = new TextScramble(el);
+            
+            let counter = 0;
+            const next = () => {
+                fx.setText(phrases[counter]).then(() => {
+                    setTimeout(next, counter === phrases.length - 1 ? 4000 : 2000);
+                });
+                counter = (counter + 1) % phrases.length;
+            };
+            
+            next();
+            
+            // 添加数字滚动动画
+            const numberElements = document.querySelectorAll('.stat-number');
+            
+            function animateValue(obj, start, end, duration) {
+                let startTimestamp = null;
+                const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    const current = Math.floor(progress * (end - start) + start);
+                    obj.innerHTML = current + "+";
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    }
+                };
+                window.requestAnimationFrame(step);
+            }
+            
+            // 当元素进入视口时开始动画
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateValue(entry.target, 0, parseInt(entry.target.getAttribute('data-target')), 2000);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+            
+            numberElements.forEach(element => observer.observe(element));
+            
+            // Matrix背景效果
+            function createMatrixBackground() {
+                const matrixBg = document.createElement('div');
+                matrixBg.className = 'matrix-bg';
+                document.body.appendChild(matrixBg);
+
+                const columns = Math.floor(window.innerWidth / 20);
+                const rows = Math.floor(window.innerHeight / 20);
+
+                for (let i = 0; i < columns * rows / 4; i++) {
+                    const text = document.createElement('div');
+                    text.className = 'matrix-text';
+                    text.style.left = `${Math.random() * 100}%`;
+                    text.style.top = `${Math.random() * 100}%`;
+                    text.textContent = String.fromCharCode(0x30A0 + Math.random() * 96);
+                    matrixBg.appendChild(text);
+
+                    setInterval(() => {
+                        text.textContent = String.fromCharCode(0x30A0 + Math.random() * 96);
+                    }, 1000 + Math.random() * 2000);
+                }
+            }
+
+            createMatrixBackground();
+        });
+
+        // 简单的导航函数
+        function showNewbie() {
+            const container = document.querySelector('.container');
+            const ctfIntro = document.getElementById('ctfIntro');
+            const scrollIndicator = document.querySelector('.scroll-indicator');
+            
+            // 隐藏下滑提示
+            if (scrollIndicator) {
+                scrollIndicator.style.display = 'none';
+            }
+            
+            container.style.opacity = '0';
+            container.addEventListener('transitionend', function handler() {
+                container.style.display = 'none';
+                ctfIntro.style.display = 'flex';
+                requestAnimationFrame(() => {
+                    ctfIntro.classList.add('show');
+                });
+                container.removeEventListener('transitionend', handler);
+            });
+        }
+
+        function showFlagChallenge() {
+            const ctfIntro = document.querySelector('.ctf-intro');
+            const flagChallenge = document.getElementById('flagChallenge');
+            const body = document.body;
+            const container = document.querySelector('.fullpage-container');
+            const scrollIndicator = document.querySelector('.scroll-indicator');
+            
+            // 禁用滚动
+            body.classList.add('no-scroll');
+            container.classList.add('no-scroll');
+            
+            // 隐藏下滑提示
+            if (scrollIndicator) {
+                scrollIndicator.style.display = 'none';
+            }
+            
+            ctfIntro.style.opacity = '0';
+            ctfIntro.addEventListener('transitionend', function handler() {
+                ctfIntro.style.display = 'none';
+                flagChallenge.style.display = 'block';
+                requestAnimationFrame(() => {
+                    flagChallenge.classList.add('show');
+                });
+                ctfIntro.removeEventListener('transitionend', handler);
+            });
+        }
+
+        function checkFlag() {
+            const flagInput = document.getElementById('flagInput');
+            const flagChallenge = document.getElementById('flagChallenge');
+            const body = document.body;
+            const container = document.querySelector('.fullpage-container');
+            const flag = flagInput.value.trim();
+
+            if (flag === 'helloctf{y0u_find_it!!}') {
+                // 点亮提交按钮
+                const submitButton = document.getElementById('submitButton');
+                submitButton.classList.add('success');
+                submitButton.innerHTML = '✓ 正确';
+                
+                // 创建烟花画布
+                const canvas = document.createElement('canvas');
+                canvas.style.position = 'fixed';
+                canvas.style.top = '0';
+                canvas.style.left = '0';
+                canvas.style.width = '100%';
+                canvas.style.height = '100%';
+                canvas.style.pointerEvents = 'none';
+                canvas.style.zIndex = '1001'; // 确保在flag挑战页面的最上层
+                document.body.appendChild(canvas);
+                
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                const ctx = canvas.getContext('2d');
+                
+                let fireworks = [];
+                let particles = [];
+                
+                class Firework {
+                    constructor() {
+                        this.reset();
+                    }
+
+                    reset() {
+                        this.x = Math.random() * canvas.width;
+                        this.y = canvas.height;
+                        this.targetY = canvas.height * (0.2 + Math.random() * 0.4); // 随机高度
+                        this.speed = 10 + Math.random() * 5; // 更快的速度
+                        this.color = `hsl(${Math.random() * 360}, 100%, 60%)`; // 更亮的颜色
+                        this.size = 3; // 更大的烟花点
+                    }
+                    
+                    explode() {
+                        const particleCount = 100; // 增加粒子数量
+                        for (let i = 0; i < particleCount; i++) {
+                            const angle = (Math.PI * 2 * i) / particleCount;
+                            const velocity = 8 + Math.random() * 4; // 增加爆炸速度
+                            const particle = {
+                                x: this.x,
+                                y: this.y,
+                                vx: Math.cos(angle) * velocity,
+                                vy: Math.sin(angle) * velocity,
+                                color: this.color,
+                                alpha: 1,
+                                size: 2 + Math.random() * 2, // 更大的粒子
+                                life: 100 + Math.random() * 50 // 更长的生命周期
+                            };
+                            particles.push(particle);
+                        }
+                    }
+
+                    update() {
+                        const dy = this.targetY - this.y;
+                        this.y -= this.speed;
+                        
+                        // 画出尾迹效果
+                        for (let i = 0; i < 5; i++) {
+                            const trailParticle = {
+                                x: this.x + (Math.random() - 0.5) * 2,
+                                y: this.y + (Math.random() * 10),
+                                vx: 0,
+                                vy: 0,
+                                color: this.color,
+                                alpha: 0.5,
+                                size: 1,
+                                life: 20
+                            };
+                            particles.push(trailParticle);
+                        }
+
+                        return this.y > this.targetY;
+                    }
+
+                    draw() {
+                        ctx.beginPath();
+                        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                        ctx.fillStyle = this.color;
+                        ctx.fill();
+                    }
+                }
+
+                // 更新粒子效果
+                function updateParticles() {
+                    for (let i = particles.length - 1; i >= 0; i--) {
+                        const p = particles[i];
+                        p.x += p.vx;
+                        p.y += p.vy;
+                        p.vy += 0.15; // 重力效果
+                        p.alpha -= 1 / p.life;
+                        p.size *= 0.96; // 粒子逐渐变小
+
+                        // 画出粒子
+                        ctx.globalAlpha = p.alpha;
+                        ctx.beginPath();
+                        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                        ctx.fillStyle = p.color;
+                        ctx.fill();
+                        ctx.globalAlpha = 1;
+
+                        if (p.alpha <= 0) {
+                            particles.splice(i, 1);
+                        }
+                    }
+                }
+                
+                function createFireworks() {
+                    fireworks.push(new Firework());
+                    fireworks.push(new Firework());
+                    fireworks.push(new Firework()); // 增加同时发射的烟花数量
+                }
+                
+                createFireworks();
+                
+                let animationStartTime = Date.now();
+                function animate() {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    
+                    fireworks = fireworks.filter(firework => {
+                        if (firework.update()) {
+                            firework.draw();
+                            return true;
+                        } else {
+                            firework.explode();
+                            return false;
+                        }
+                    });
+                    
+                    updateParticles();
+                    
+                    if (fireworks.length === 0 && particles.length < 200) {
+                        createFireworks();
+                        // 随机在不同位置创建额外的烟花
+                        if (Math.random() > 0.5) {
+                            fireworks.push(new Firework());
+                        }
+                        if (Math.random() > 0.5) {
+                            fireworks.push(new Firework());
+                        }
+                    }
+                    
+                    // 检查是否已经播放了3秒
+                    if (Date.now() - animationStartTime < 3000) {
+                        requestAnimationFrame(animate);
+                    } else {
+                        // 淡出烟花画布
+                        canvas.style.transition = 'opacity 1s ease-out';
+                        canvas.style.opacity = '0';
+                        
+                        // 淡出当前内容
+                        const currentContent = flagChallenge.innerHTML;
+                        const wrapper = document.createElement('div');
+                        wrapper.style.transition = 'opacity 1s ease-out';
+                        wrapper.style.opacity = '1';
+                        wrapper.innerHTML = currentContent;
+                        
+                        flagChallenge.innerHTML = '';
+                        flagChallenge.appendChild(wrapper);
+                        
+                        setTimeout(() => {
+                            wrapper.style.opacity = '0';
+                            
+                            setTimeout(() => {
+                                // 移除烟花画布
+                                canvas.remove();
+                                
+                                // 显示成功内容
+                                flagChallenge.innerHTML = `
+                                    <div class="success-container" style="opacity: 0; transition: opacity 1s ease-in; text-align: center; padding: 3rem;">
+                                        <h1 style="font-size: 3.5em; background: linear-gradient(45deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 3rem; font-weight: bold;">恭喜得分！</h1>
+                                        <div style="font-size: 1.2em; line-height: 1.8; color: var(--text); margin-bottom: 2.5rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                                            <p style="margin-bottom: 1.5rem; font-weight: 500;">解出第一道赛题是一个非常重要的里程碑！🎉</p>
+                                            <p style="margin-bottom: 1.5rem; opacity: 0.9;">你已经迈出了第一步，无论这道题多么简单，它都代表了你在网络安全和CTF领域的启程。</p>
+                                            <p style="margin-bottom: 1.5rem; opacity: 0.9;">记住，CTF不仅仅是技术的挑战，更是解决问题和不断进步的过程。每次突破都让你离目标更近一点。</p>
+                                            <p style="margin-bottom: 1.5rem; opacity: 0.9;">永远保持好奇心和学习的热情，你会不断遇到更多的挑战，也会积累越来越多的经验。</p>
+                                            <p style="font-weight: 500; background: linear-gradient(45deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">继续加油，未来无限可能！✨</p>
+                                        </div>
+                                        <div style="display: flex; gap: 2rem; justify-content: center;">
+                                            <button onclick="goHome()" class="nav-btn" style="min-width: 120px;">返回主页</button>
+                                            <button onclick="continueLearning()" class="nav-btn continue-btn" style="min-width: 120px;">继续学习</button>
+                                        </div>
+                                    </div>
+                                `;
+                                
+                                requestAnimationFrame(() => {
+                                    const successContainer = flagChallenge.querySelector('.success-container');
+                                    successContainer.style.opacity = '1';
+                                });
+                            }, 1000);
+                        }, 50);
+                    }
+                }
+                
+                animate();
+            } else {
+                submitButton.classList.remove('success');
+                submitButton.innerHTML = '提交';
+                
+                const flagResult = document.getElementById('flagResult');
+                flagResult.textContent = '再思考一下...';
+                flagResult.style.color = 'var(--error)';
+                flagInput.style.borderColor = 'var(--error)';
+                flagInput.style.animation = 'shake 0.5s ease-in-out';
+                setTimeout(() => {
+                    flagInput.style.borderColor = 'var(--border)';
+                    flagInput.style.animation = 'none';
+                }, 1000);
+            }
+        }
+
+        function goHome() {
+            const body = document.body;
+            const container = document.querySelector('.fullpage-container');
+            
+            // 恢复滚动
+            body.classList.remove('no-scroll');
+            container.classList.remove('no-scroll');
+            
+            window.location.href = './';
+        }
+
+        function continueLearning() {
+            window.location.href = './hc-start/';
+        }
+    </script>
+</body>
+</html>

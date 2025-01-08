@@ -23,8 +23,8 @@ hide:
                 <div class="carousel">
                     <div class="carousel-container">
                         <a href="https://www.dkdun.cn/"><img src="./assets/banner-dkdun.png" /></a>
-                        <a href="../HC_Start/" target="_blank"><img src="./assets/banner-quickstart.png" /></a>
-                        <a href="../HC_AI/" target="_blank"><img src="./assets/banner-update.png" /></a>
+                        <a href="../hc-start/" target="_blank"><img src="./assets/banner-quickstart.png" /></a>
+                        <a href="../hc-ai/" target="_blank"><img src="./assets/banner-update.png" /></a>
                         <a href="https://github.com/CTF-Archives" target="_blank"><img src="./assets/banner-Achieve.png" /></a>
                         
                     </div>
@@ -113,7 +113,7 @@ hide:
 
     ---
 
-    - 入门CTF/阅读本书前必读：[快速开始](./HC_Start/)以及[前言部分](./HC_Preface/)  
+    - 入门CTF/阅读本书前必读：[快速开始](./hc-start/)以及[前言部分](./hc-preface/)  
     - 请善用搜索功能来寻找你想要的内容！！
     - 站点已接入 CDN，感谢[渊龙Sec安全团队](https://dh.aabyss.cn)友情赞助
 

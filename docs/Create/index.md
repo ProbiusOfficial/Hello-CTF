@@ -87,7 +87,7 @@ hide:
 
     !!! warning "注意"
         本教程将默认您已经具备以下条件:  
-           1. 拥有[Docker环境](../HC_envSet/Docker_On_Linux.md) 并且 对Docker有一定的了解  
+           1. 拥有[Docker环境](../hc-env/Docker_On_Linux.md) 并且 对Docker有一定的了解  
            2. 至少熟悉一个CTF方向，并且清楚CTF题目命题方向  
 
 
