@@ -1,5 +1,4 @@
 ---
-isevent: true
 comments: true
 hide:
   - footer

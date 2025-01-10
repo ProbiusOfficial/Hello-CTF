@@ -1,5 +1,4 @@
 ---
-# ishome: true
 title: 
 comments: true
 glightbox: false

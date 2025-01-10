@@ -35,9 +35,9 @@ def update_files():
     # 更新 friends.md 和 index.md
     friends_content = download_file("https://raw.githubusercontent.com/ProbiusOfficial/helloCTF-CTFerlink/main/output/friends.md")
     print("downloaded friends.md")
-    with open("docs/hc-archivefriends.md", 'w', encoding='utf-8') as file:
+    with open("docs/hc-archive/friends.md", 'w', encoding='utf-8') as file:
         file.write(friends_content)
-    with open("docs/hc-archiveindex.md", 'w', encoding='utf-8') as file:
+    with open("docs/hc-archive/index.md", 'w', encoding='utf-8') as file:
         file.write(friends_content)
     print("updated friends.md and index.md complete")
 
