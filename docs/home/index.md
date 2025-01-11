@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Cyber League 2025 - Major](https://ctfd.cyberleague.co/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctfd.cyberleague.co/)  
-            **比赛名称** : [Cyber League 2025 - Major](https://ctfd.cyberleague.co/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-01-11 10:00:00 - 2025-01-12 10:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : DIV0-N0H4TS (https://ctftime.org/team/354275)  
-            **添加日历** : https://ctftime.org/event/2530.ics  
-            
         ??? Quote "[New Year CTF 2025](http://ctf-spcs.mf.grsu.by/)"  
             [![](https://ctftime.org/media/events/NY2025.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
             **比赛名称** : [New Year CTF 2025](http://ctf-spcs.mf.grsu.by/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 32.28  
             **赛事主办** : Srdnlen (https://ctftime.org/team/83421)  
             **添加日历** : https://ctftime.org/event/2576.ics  
+            
+        ??? Quote "[x3CTF 2025 (feat. mvm)](https://x3c.tf/)"  
+            [![](https://ctftime.org/media/events/temp_pfp.png){ width="200" align=left }](https://x3c.tf/)  
+            **比赛名称** : [x3CTF 2025 (feat. mvm)](https://x3c.tf/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-01-25 02:00:00 - 2025-01-27 02:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : x3CTF (https://ctftime.org/team/309820)  
+            **添加日历** : https://ctftime.org/event/2467.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
