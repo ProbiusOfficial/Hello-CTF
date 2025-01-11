@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "UofTCTF 2025",
-        "比赛时间": "2025-01-11 08:00:00 - 2025-01-13 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2570.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.uoftctf.org/",
-        "比赛标志": "https://ctftime.org/media/events/uoftctf_logo_3000_black.png",
-        "比赛权重": "23.90",
-        "赛事主办": "UofTCTF (https://ctftime.org/team/139261)",
-        "比赛ID": "1052",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Cyber League 2025 - Major",
         "比赛时间": "2025-01-11 10:00:00 - 2025-01-12 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2530.ics",
@@ -213,6 +201,18 @@
         "比赛权重": "0",
         "赛事主办": "UWSP Pointers (https://ctftime.org/team/231536)",
         "比赛ID": "963",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "UofTCTF 2025",
+        "比赛时间": "2025-01-11 08:00:00 - 2025-01-13 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2570.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.uoftctf.org/",
+        "比赛标志": "https://ctftime.org/media/events/uoftctf_logo_3000_black.png",
+        "比赛权重": "23.90",
+        "赛事主办": "UofTCTF (https://ctftime.org/team/139261)",
+        "比赛ID": "1052",
         "比赛状态": "nowrunning"
     },
     {
