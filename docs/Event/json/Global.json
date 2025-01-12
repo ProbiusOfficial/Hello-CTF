@@ -48,6 +48,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "KnightCTF 2025",
+        "比赛时间": "2025-01-20 23:00:00 - 2025-01-21 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2610.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2025.knightctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/knight_ctf_logo_dark_bg_small.png",
+        "比赛权重": "18.78",
+        "赛事主办": "Knight Squad (https://ctftime.org/team/141739)",
+        "比赛ID": "721",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Remedy CTF 2025",
         "比赛时间": "2025-01-24 20:00:00 - 2025-01-26 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2618.ics",
@@ -105,6 +117,18 @@
         "比赛权重": "21.81",
         "赛事主办": "BITSkrieg (https://ctftime.org/team/22310)",
         "比赛ID": "182",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "LA CTF 2025",
+        "比赛时间": "2025-02-08 12:00:00 - 2025-02-10 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2592.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://lac.tf/",
+        "比赛标志": "https://ctftime.org/media/events/lactf-square-logo_1_1.png",
+        "比赛权重": "36.70",
+        "赛事主办": "PBR | UCLA (https://ctftime.org/team/186494)",
+        "比赛ID": "820",
         "比赛状态": "oncoming"
     },
     {
@@ -177,6 +201,18 @@
         "比赛权重": "48.38",
         "赛事主办": "SavedByTheShell (https://ctftime.org/team/78233)",
         "比赛ID": "598",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "DamCTF 2025",
+        "比赛时间": "2025-04-05 08:00:00 - 2025-04-07 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2585.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://damctf.xyz/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "60.67",
+        "赛事主办": "OSUSEC (https://ctftime.org/team/12858)",
+        "比赛ID": "423",
         "比赛状态": "oncoming"
     },
     {
