@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[New Year CTF 2025](http://ctf-spcs.mf.grsu.by/)"  
-            [![](https://ctftime.org/media/events/NY2025.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
-            **比赛名称** : [New Year CTF 2025](http://ctf-spcs.mf.grsu.by/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-01-13 01:00:00 - 2025-01-15 01:00:00 UTC+8  
-            **比赛权重** : 23.13  
-            **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
-            **添加日历** : https://ctftime.org/event/2582.ics  
-            
         ??? Quote "[TSCCTF 2025](https://ctfd.tscctf.com/)"  
             [![](https://ctftime.org/media/events/TSC_logo_extra_large.png){ width="200" align=left }](https://ctfd.tscctf.com/)  
             **比赛名称** : [TSCCTF 2025](https://ctfd.tscctf.com/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 32.28  
             **赛事主办** : Srdnlen (https://ctftime.org/team/83421)  
             **添加日历** : https://ctftime.org/event/2576.ics  
+            
+        ??? Quote "[HKCERT CTF 2024 (Final Round)](https://ctf.hkcert.org/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ctf.hkcert.org/)  
+            **比赛名称** : [HKCERT CTF 2024 (Final Round)](https://ctf.hkcert.org/)  
+            **比赛形式** : Attack-Defense  
+            **比赛时间** : 2025-01-20 09:30:00 - 2025-01-21 12:30:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : HKCERT (https://ctftime.org/team/134746)  
+            **添加日历** : https://ctftime.org/event/2583.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
