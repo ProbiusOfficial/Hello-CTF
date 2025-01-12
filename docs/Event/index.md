@@ -446,15 +446,6 @@ hide:
                 **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
                 **添加日历** : https://ctftime.org/event/2570.ics  
                 
-            ??? Quote "[Cyber League 2025 - Major](https://ctfd.cyberleague.co/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctfd.cyberleague.co/)  
-                **比赛名称** : [Cyber League 2025 - Major](https://ctfd.cyberleague.co/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-01-11 10:00:00 - 2025-01-12 10:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : DIV0-N0H4TS (https://ctftime.org/team/354275)  
-                **添加日历** : https://ctftime.org/event/2530.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[NSSCTF Round26](https://www.nssctf.cn/contest)"  
@@ -492,14 +483,16 @@ hide:
                 **比赛时间** : 2024年11月09日 10:00 - 2024年11月15日 17:00  
                 **其他说明** : 第四届ISCTF高校联合安全技能挑战赛由福州蓝鲨信息技术有限公司和DK云赞助，由大理大学、信阳师范大学、福建师范大学主办，联合院校名单包括安徽工业经济职业技术学院、成都东软学院等32所高校的网络与信息安全协会联合主办。比赛时间为11月9日10:00至11月15日17:00，比赛平台为isctf2024.bluesharkinfo.com，目前已开放注册。  
                 
-            ??? Quote "[DSBCTF](https://ctf.show)"  
-                **比赛名称** : [DSBCTF](https://ctf.show)  
-                **比赛类型** : 线上Jeopardy解题赛  
-                **报名时间** : 2024年11月11日 11:11 - 2024年11月11日 11:10  
-                **比赛时间** : 2024年11月11日 11:11 - 2024年11月13日 11:11  
-                **其他说明** : CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。  
-                
         === "国外赛事"
+            ??? Quote "[Cyber League 2025 - Major](https://ctfd.cyberleague.co/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctfd.cyberleague.co/)  
+                **比赛名称** : [Cyber League 2025 - Major](https://ctfd.cyberleague.co/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-01-11 10:00:00 - 2025-01-12 10:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : DIV0-N0H4TS (https://ctftime.org/team/354275)  
+                **添加日历** : https://ctftime.org/event/2530.ics  
+                
             ??? Quote "[IrisCTF 2025](https://2025.irisc.tf/)"  
                 [![](https://ctftime.org/media/events/IrisSec.png){ width="200" align=left }](https://2025.irisc.tf/)  
                 **比赛名称** : [IrisCTF 2025](https://2025.irisc.tf/)  
@@ -1390,15 +1383,6 @@ hide:
                 **比赛权重** : 95.59  
                 **赛事主办** : Securinets (https://ctftime.org/team/5084)  
                 **添加日历** : https://ctftime.org/event/2520.ics  
-                
-            ??? Quote "[NoHat CTF 2024](https://play.pwnx.io/#/event/40b08dba-3140-4cae-89da-6db9c0d8e5a0)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://play.pwnx.io/#/event/40b08dba-3140-4cae-89da-6db9c0d8e5a0)  
-                **比赛名称** : [NoHat CTF 2024](https://play.pwnx.io/#/event/40b08dba-3140-4cae-89da-6db9c0d8e5a0)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-13 00:00:00 - 2024-10-14 00:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : PWNX (https://ctftime.org/team/179989)  
-                **添加日历** : https://ctftime.org/event/2518.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

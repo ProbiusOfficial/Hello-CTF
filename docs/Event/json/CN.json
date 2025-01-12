@@ -95,24 +95,6 @@
                 "contac": {},
                 "tag": "公益赛",
                 "readmore": "第四届ISCTF高校联合安全技能挑战赛由福州蓝鲨信息技术有限公司和DK云赞助，由大理大学、信阳师范大学、福建师范大学主办，联合院校名单包括安徽工业经济职业技术学院、成都东软学院等32所高校的网络与信息安全协会联合主办。比赛时间为11月9日10:00至11月15日17:00，比赛平台为isctf2024.bluesharkinfo.com，目前已开放注册。"
-            },
-            {
-                "name": "DSBCTF",
-                "info_confirmed": 1,
-                "mid_join": 0,
-                "link": "https://ctf.show",
-                "status": "已经结束",
-                "is_reg": 1,
-                "limit": 1,
-                "type": "线上Jeopardy解题赛",
-                "reg_time_start": "2024年11月11日 11:11",
-                "reg_time_end": "2024年11月11日 11:10",
-                "comp_time_start": "2024年11月11日 11:11",
-                "comp_time_end": "2024年11月13日 11:11",
-                "organizer": "CTFshow",
-                "contac": {},
-                "tag": "普通赛",
-                "readmore": "CTFshow单身杯(DSBCTF)比赛由CTFshow主办，是一场个人赛形式的CTF夺旗赛，比赛时间为2024年11月11日11时11分至2024年11月13日11时11分，共48小时。比赛报名需提前注册账号，比赛开始后放出题目。"
             }
         ],
         "total": 77,
