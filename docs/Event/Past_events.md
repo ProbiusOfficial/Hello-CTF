@@ -51,6 +51,24 @@ comments: true
     **赛事主办** : DIV0-N0H4TS (https://ctftime.org/team/354275)  
     **添加日历** : https://ctftime.org/event/2530.ics  
     
+??? Quote "[Dreamhack CTF Season 7 Round #1 (Div. 1)](https://dreamhack.io/ctf/655)"  
+    [![](https://ctftime.org/media/events/cover01.jpg){ width="200" align=left }](https://dreamhack.io/ctf/655)  
+    **比赛名称** : [Dreamhack CTF Season 7 Round #1 (Div. 1)](https://dreamhack.io/ctf/655)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-01-11 08:00:00 - 2025-01-11 23:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
+    **添加日历** : https://ctftime.org/event/2621.ics  
+    
+??? Quote "[GoIda CTF](https://goidactf.ru/)"  
+    [![](https://ctftime.org/media/events/goida.jpg){ width="200" align=left }](https://goidactf.ru/)  
+    **比赛名称** : [GoIda CTF](https://goidactf.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-01-07 08:00:00 - 2025-01-10 07:59:59 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : GoIda CTF ORG (https://ctftime.org/team/361741)  
+    **添加日历** : https://ctftime.org/event/2611.ics  
+    
 ??? Quote "[IrisCTF 2025](https://2025.irisc.tf/)"  
     [![](https://ctftime.org/media/events/IrisSec.png){ width="200" align=left }](https://2025.irisc.tf/)  
     **比赛名称** : [IrisCTF 2025](https://2025.irisc.tf/)  
@@ -923,22 +941,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : CTF.ae (https://ctftime.org/team/151875)  
     **添加日历** : https://ctftime.org/event/2522.ics  
-    
-??? Quote "[SLAY CTF 2024](https://zl-slay.vercel.app/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://zl-slay.vercel.app/)  
-    **比赛名称** : [SLAY CTF 2024](https://zl-slay.vercel.app/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-14 11:30:00 - 2024-10-14 23:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : W07v3R1n (https://ctftime.org/team/239616)  
-    **添加日历** : https://ctftime.org/event/2547.ics  
-    
-??? Quote "[Securinets CTF Quals 2024](https://ctf.securinets.tn/)"  
-    [![](https://ctftime.org/media/events/d82bcfc5f1d83b7cc51c7dd0dbc8f5c6_1.png){ width="200" align=left }](https://ctf.securinets.tn/)  
-    **比赛名称** : [Securinets CTF Quals 2024](https://ctf.securinets.tn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-13 03:00:00 - 2024-10-14 03:00:00 UTC+8  
-    **比赛权重** : 95.59  
-    **赛事主办** : Securinets (https://ctftime.org/team/5084)  
-    **添加日历** : https://ctftime.org/event/2520.ics  
     

@@ -27,3 +27,12 @@ comments: true
     **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
     **添加日历** : https://ctftime.org/event/2570.ics  
     
+??? Quote "[SUCTF 2025](https://suctf2025.xctf.org.cn/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://suctf2025.xctf.org.cn/)  
+    **比赛名称** : [SUCTF 2025](https://suctf2025.xctf.org.cn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-01-11 09:00:00 - 2025-01-13 09:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : SU (https://ctftime.org/team/29641)  
+    **添加日历** : https://ctftime.org/event/2620.ics  
+    

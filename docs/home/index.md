@@ -63,6 +63,15 @@ hide:
             **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
             **添加日历** : https://ctftime.org/event/2582.ics  
             
+        ??? Quote "[TSCCTF 2025](https://ctfd.tscctf.com/)"  
+            [![](https://ctftime.org/media/events/TSC_logo_extra_large.png){ width="200" align=left }](https://ctfd.tscctf.com/)  
+            **比赛名称** : [TSCCTF 2025](https://ctfd.tscctf.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-01-13 10:00:00 - 2025-01-16 10:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : Taiwan Security Club (https://ctftime.org/team/365248)  
+            **添加日历** : https://ctftime.org/event/2598.ics  
+            
         ??? Quote "[2025 Embedded Capture the Flag](https://ectf.mitre.org/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://ectf.mitre.org/)  
             **比赛名称** : [2025 Embedded Capture the Flag](https://ectf.mitre.org/)  
@@ -80,15 +89,6 @@ hide:
             **比赛权重** : 32.28  
             **赛事主办** : Srdnlen (https://ctftime.org/team/83421)  
             **添加日历** : https://ctftime.org/event/2576.ics  
-            
-        ??? Quote "[x3CTF 2025 (feat. mvm)](https://x3c.tf/)"  
-            [![](https://ctftime.org/media/events/temp_pfp.png){ width="200" align=left }](https://x3c.tf/)  
-            **比赛名称** : [x3CTF 2025 (feat. mvm)](https://x3c.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-01-25 02:00:00 - 2025-01-27 02:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : x3CTF (https://ctftime.org/team/309820)  
-            **添加日历** : https://ctftime.org/event/2467.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
