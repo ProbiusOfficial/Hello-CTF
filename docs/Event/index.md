@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[TSCCTF 2025](https://ctfd.tscctf.com/)"  
-                [![](https://ctftime.org/media/events/TSC_logo_extra_large.png){ width="200" align=left }](https://ctfd.tscctf.com/)  
-                **比赛名称** : [TSCCTF 2025](https://ctfd.tscctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-01-13 10:00:00 - 2025-01-16 10:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Taiwan Security Club (https://ctftime.org/team/365248)  
-                **添加日历** : https://ctftime.org/event/2598.ics  
-                
             ??? Quote "[2025 Embedded Capture the Flag](https://ectf.mitre.org/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ectf.mitre.org/)  
                 **比赛名称** : [2025 Embedded Capture the Flag](https://ectf.mitre.org/)  
@@ -508,6 +499,15 @@ hide:
                 **比赛权重** : 23.13  
                 **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
                 **添加日历** : https://ctftime.org/event/2582.ics  
+                
+            ??? Quote "[TSCCTF 2025](https://ctfd.tscctf.com/)"  
+                [![](https://ctftime.org/media/events/TSC_logo_extra_large.png){ width="200" align=left }](https://ctfd.tscctf.com/)  
+                **比赛名称** : [TSCCTF 2025](https://ctfd.tscctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-01-13 10:00:00 - 2025-01-16 10:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Taiwan Security Club (https://ctftime.org/team/365248)  
+                **添加日历** : https://ctftime.org/event/2598.ics  
                 
     === "*已经结束*"
         === "国内赛事"
