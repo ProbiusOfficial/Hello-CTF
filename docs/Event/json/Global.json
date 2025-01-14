@@ -264,18 +264,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "New Year CTF 2025",
-        "比赛时间": "2025-01-13 01:00:00 - 2025-01-15 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2582.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf-spcs.mf.grsu.by/",
-        "比赛标志": "https://ctftime.org/media/events/NY2025.jpg",
-        "比赛权重": "23.13",
-        "赛事主办": "Beavers0 (https://ctftime.org/team/269281)",
-        "比赛ID": "1041",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "TSCCTF 2025",
         "比赛时间": "2025-01-13 10:00:00 - 2025-01-16 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2598.ics",
@@ -286,6 +274,18 @@
         "赛事主办": "Taiwan Security Club (https://ctftime.org/team/365248)",
         "比赛ID": "1219",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "New Year CTF 2025",
+        "比赛时间": "2025-01-13 01:00:00 - 2025-01-15 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2582.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf-spcs.mf.grsu.by/",
+        "比赛标志": "https://ctftime.org/media/events/NY2025.jpg",
+        "比赛权重": "23.13",
+        "赛事主办": "Beavers0 (https://ctftime.org/team/269281)",
+        "比赛ID": "1041",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Cyber League 2025 - Major",
@@ -1473,18 +1473,6 @@
         "比赛权重": "0",
         "赛事主办": "BUG PWN (https://ctftime.org/team/182428)",
         "比赛ID": "968",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CTF MetaRed Mexico Anuies-TIC 2024",
-        "比赛时间": "2024-10-15 23:00:00 - 2024-10-16 11:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2482.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfd.anuies.mx/",
-        "比赛标志": "https://ctftime.org/media/events/ctf_2024_1.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "UV-CSIRT (https://ctftime.org/team/166955)",
-        "比赛ID": "653",
         "比赛状态": "past"
     }
 ]

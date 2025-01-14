@@ -491,15 +491,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
                 
-            ??? Quote "[New Year CTF 2025](http://ctf-spcs.mf.grsu.by/)"  
-                [![](https://ctftime.org/media/events/NY2025.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
-                **比赛名称** : [New Year CTF 2025](http://ctf-spcs.mf.grsu.by/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-01-13 01:00:00 - 2025-01-15 01:00:00 UTC+8  
-                **比赛权重** : 23.13  
-                **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
-                **添加日历** : https://ctftime.org/event/2582.ics  
-                
             ??? Quote "[TSCCTF 2025](https://ctfd.tscctf.com/)"  
                 [![](https://ctftime.org/media/events/TSC_logo_extra_large.png){ width="200" align=left }](https://ctfd.tscctf.com/)  
                 **比赛名称** : [TSCCTF 2025](https://ctfd.tscctf.com/)  
@@ -540,6 +531,15 @@ hide:
                 **其他说明** : 蜀道山高校联合公益赛由西南民族大学、成都东软学院、成都信息工程大学、四川师范大学、成都理工大学D1no战队、西南石油大学、成都大学、西华师范大学、江西警察学院、哈尔滨理工大学、衡阳师范学院、宁波职业技术学院、浙江工商职业技术学院、山东警察学院、广东行政职业学院、四川大学、南京信息职业技术学院、聊城职业技术学院等高校联合主办。竞赛时间为2024年11月17日10:00至18:00，竞赛形式为Jeopardy，每队3人。  
                 
         === "国外赛事"
+            ??? Quote "[New Year CTF 2025](http://ctf-spcs.mf.grsu.by/)"  
+                [![](https://ctftime.org/media/events/NY2025.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
+                **比赛名称** : [New Year CTF 2025](http://ctf-spcs.mf.grsu.by/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-01-13 01:00:00 - 2025-01-15 01:00:00 UTC+8  
+                **比赛权重** : 23.13  
+                **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
+                **添加日历** : https://ctftime.org/event/2582.ics  
+                
             ??? Quote "[Cyber League 2025 - Major](https://ctfd.cyberleague.co/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctfd.cyberleague.co/)  
                 **比赛名称** : [Cyber League 2025 - Major](https://ctfd.cyberleague.co/)  
@@ -1430,15 +1430,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : BUG PWN (https://ctftime.org/team/182428)  
                 **添加日历** : https://ctftime.org/event/2531.ics  
-                
-            ??? Quote "[CTF MetaRed Mexico Anuies-TIC 2024](https://ctfd.anuies.mx/)"  
-                [![](https://ctftime.org/media/events/ctf_2024_1.jpg){ width="200" align=left }](https://ctfd.anuies.mx/)  
-                **比赛名称** : [CTF MetaRed Mexico Anuies-TIC 2024](https://ctfd.anuies.mx/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-15 23:00:00 - 2024-10-16 11:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : UV-CSIRT (https://ctftime.org/team/166955)  
-                **添加日历** : https://ctftime.org/event/2482.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
