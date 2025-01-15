@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "2025 Embedded Capture the Flag",
-        "比赛时间": "2025-01-16 01:00:00 - 2025-04-17 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2542.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://ectf.mitre.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "ectfmitre (https://ctftime.org/team/87292)",
-        "比赛ID": "364",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Srdnlen CTF 2025",
         "比赛时间": "2025-01-19 02:00:00 - 2025-01-20 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2576.ics",
@@ -273,6 +261,18 @@
         "比赛权重": "0",
         "赛事主办": "Taiwan Security Club (https://ctftime.org/team/365248)",
         "比赛ID": "1219",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "2025 Embedded Capture the Flag",
+        "比赛时间": "2025-01-16 01:00:00 - 2025-04-17 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2542.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://ectf.mitre.org/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "ectfmitre (https://ctftime.org/team/87292)",
+        "比赛ID": "364",
         "比赛状态": "nowrunning"
     },
     {
