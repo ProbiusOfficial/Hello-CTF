@@ -482,15 +482,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2121.ics  
                 
-            ??? Quote "[TSCCTF 2025](https://ctfd.tscctf.com/)"  
-                [![](https://ctftime.org/media/events/TSC_logo_extra_large.png){ width="200" align=left }](https://ctfd.tscctf.com/)  
-                **比赛名称** : [TSCCTF 2025](https://ctfd.tscctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-01-13 10:00:00 - 2025-01-16 10:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Taiwan Security Club (https://ctftime.org/team/365248)  
-                **添加日历** : https://ctftime.org/event/2598.ics  
-                
             ??? Quote "[2025 Embedded Capture the Flag](https://ectf.mitre.org/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ectf.mitre.org/)  
                 **比赛名称** : [2025 Embedded Capture the Flag](https://ectf.mitre.org/)  
@@ -531,6 +522,15 @@ hide:
                 **其他说明** : 蜀道山高校联合公益赛由西南民族大学、成都东软学院、成都信息工程大学、四川师范大学、成都理工大学D1no战队、西南石油大学、成都大学、西华师范大学、江西警察学院、哈尔滨理工大学、衡阳师范学院、宁波职业技术学院、浙江工商职业技术学院、山东警察学院、广东行政职业学院、四川大学、南京信息职业技术学院、聊城职业技术学院等高校联合主办。竞赛时间为2024年11月17日10:00至18:00，竞赛形式为Jeopardy，每队3人。  
                 
         === "国外赛事"
+            ??? Quote "[TSCCTF 2025](https://ctfd.tscctf.com/)"  
+                [![](https://ctftime.org/media/events/TSC_logo_extra_large.png){ width="200" align=left }](https://ctfd.tscctf.com/)  
+                **比赛名称** : [TSCCTF 2025](https://ctfd.tscctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-01-13 10:00:00 - 2025-01-16 10:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Taiwan Security Club (https://ctftime.org/team/365248)  
+                **添加日历** : https://ctftime.org/event/2598.ics  
+                
             ??? Quote "[New Year CTF 2025](http://ctf-spcs.mf.grsu.by/)"  
                 [![](https://ctftime.org/media/events/NY2025.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
                 **比赛名称** : [New Year CTF 2025](http://ctf-spcs.mf.grsu.by/)  
@@ -1421,15 +1421,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
                 **添加日历** : https://ctftime.org/event/2379.ics  
-                
-            ??? Quote "[Africa battleCTF 2024 prequal](https://qualifier.bugpwn.com/)"  
-                [![](https://ctftime.org/media/events/banner_1.png){ width="200" align=left }](https://qualifier.bugpwn.com/)  
-                **比赛名称** : [Africa battleCTF 2024 prequal](https://qualifier.bugpwn.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-18 08:00:00 - 2024-10-20 08:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : BUG PWN (https://ctftime.org/team/182428)  
-                **添加日历** : https://ctftime.org/event/2531.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

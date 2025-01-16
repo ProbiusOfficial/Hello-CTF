@@ -252,18 +252,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "TSCCTF 2025",
-        "比赛时间": "2025-01-13 10:00:00 - 2025-01-16 10:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2598.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfd.tscctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/TSC_logo_extra_large.png",
-        "比赛权重": "0",
-        "赛事主办": "Taiwan Security Club (https://ctftime.org/team/365248)",
-        "比赛ID": "1219",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "2025 Embedded Capture the Flag",
         "比赛时间": "2025-01-16 01:00:00 - 2025-04-17 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2542.ics",
@@ -274,6 +262,18 @@
         "赛事主办": "ectfmitre (https://ctftime.org/team/87292)",
         "比赛ID": "364",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "TSCCTF 2025",
+        "比赛时间": "2025-01-13 10:00:00 - 2025-01-16 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2598.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctfd.tscctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/TSC_logo_extra_large.png",
+        "比赛权重": "0",
+        "赛事主办": "Taiwan Security Club (https://ctftime.org/team/365248)",
+        "比赛ID": "1219",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "New Year CTF 2025",
@@ -1461,18 +1461,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Google CTF (https://ctftime.org/team/23929)",
         "比赛ID": "141",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Africa battleCTF 2024 prequal",
-        "比赛时间": "2024-10-18 08:00:00 - 2024-10-20 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2531.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://qualifier.bugpwn.com/",
-        "比赛标志": "https://ctftime.org/media/events/banner_1.png",
-        "比赛权重": "0",
-        "赛事主办": "BUG PWN (https://ctftime.org/team/182428)",
-        "比赛ID": "968",
         "比赛状态": "past"
     }
 ]
