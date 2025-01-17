@@ -129,7 +129,7 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2024-11-07
 
     来具体学习一下页属性看前必读本文所述的第 x 位均表示下标从 0 开始的计数制。120000100010001           *例如上面星号所指示的位置表示第 1 位。有效属性可以关注内核函数 MmIsAddressValid 实现原理，取出虚拟机 C:\Windows\System32\ntoskrnl.exe 内核文件，找到该函数，F5可得以下逻辑12345678910111213141...
-    ### [强网杯S8初赛pwn writeup](https://xia0ji233.github.io/2024/11/07/qwb2024_pre/)  
+    ### [强网杯S8初赛Pwn writeup](https://xia0ji233.github.io/2024/11/07/qwb2024_pre/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2024-11-07
 
     本次强网杯初赛做出两道pwn题，把详细题解写一下记录。baby_heap附件下载2.35 的版本，IDA打开，堆菜单题，经典增删改查之外，还有两个额外的操作，一个是环境变量，另一个是任意地址写 0x10 字节。del 里面有很明显的UAF漏洞。show 只有一次机会，但是可以同时将 libc 和堆地址一起泄露出来，只需要我们释放两个相同大小的堆块之后，bk_nextsize 和 fd_nextsi...
