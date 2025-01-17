@@ -3,6 +3,26 @@
     "data": {
         "result": [
             {
+                "name": "VNCTF 2025",
+                "info_confirmed": 1,
+                "mid_join": 0,
+                "link": "https://ctf.vnteam.cn",
+                "status": "即将开始",
+                "is_reg": 1,
+                "limit": 1,
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2025年01月01日 00:00",
+                "reg_time_end": "2025年02月08日 09:59",
+                "comp_time_start": "2025年02月08日 10:00",
+                "comp_time_end": "2025年02月09日 10:00",
+                "organizer": "V&N Team",
+                "contac": {
+                    "QQ群": "717513199"
+                },
+                "tag": "",
+                "readmore": "VNCTF 2025由V&N Team主办，个人赛，可报名，即将开始，中途不可加入。报名开始时间为2025年01月01日 00:00，比赛时间为2025年02月08日 10:00至2025年02月09日 10:00。更多信息请加QQ群717513199。"
+            },
+            {
                 "name": "NSSCTF Round26",
                 "info_confirmed": 1,
                 "mid_join": 0,
