@@ -27,3 +27,12 @@ comments: true
     **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
     **添加日历** : https://ctftime.org/event/2542.ics  
     
+??? Quote "[Srdnlen CTF 2025](https://ctf.srdnlen.it/)"  
+    [![](https://ctftime.org/media/events/e04b66f1d17c437f935e29d0fbe7beed.png){ width="200" align=left }](https://ctf.srdnlen.it/)  
+    **比赛名称** : [Srdnlen CTF 2025](https://ctf.srdnlen.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-01-19 02:00:00 - 2025-01-20 02:00:00 UTC+8  
+    **比赛权重** : 32.28  
+    **赛事主办** : Srdnlen (https://ctftime.org/team/83421)  
+    **添加日历** : https://ctftime.org/event/2576.ics  
+    
