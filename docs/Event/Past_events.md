@@ -64,15 +64,6 @@ comments: true
     **赛事主办** : SU (https://ctftime.org/team/29641)  
     **添加日历** : https://ctftime.org/event/2620.ics  
     
-??? Quote "[UofTCTF 2025](https://ctf.uoftctf.org/)"  
-    [![](https://ctftime.org/media/events/uoftctf_logo_3000_black.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
-    **比赛名称** : [UofTCTF 2025](https://ctf.uoftctf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-01-11 08:00:00 - 2025-01-13 08:00:00 UTC+8  
-    **比赛权重** : 23.90  
-    **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
-    **添加日历** : https://ctftime.org/event/2570.ics  
-    
 ??? Quote "[Dreamhack CTF Season 7 Round #1 (Div. 1)](https://dreamhack.io/ctf/655)"  
     [![](https://ctftime.org/media/events/cover01.jpg){ width="200" align=left }](https://dreamhack.io/ctf/655)  
     **比赛名称** : [Dreamhack CTF Season 7 Round #1 (Div. 1)](https://dreamhack.io/ctf/655)  
@@ -81,6 +72,15 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
     **添加日历** : https://ctftime.org/event/2621.ics  
+    
+??? Quote "[UofTCTF 2025](https://ctf.uoftctf.org/)"  
+    [![](https://ctftime.org/media/events/uoftctf_logo_3000_black.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
+    **比赛名称** : [UofTCTF 2025](https://ctf.uoftctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-01-11 08:00:00 - 2025-01-13 08:00:00 UTC+8  
+    **比赛权重** : 23.90  
+    **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
+    **添加日历** : https://ctftime.org/event/2570.ics  
     
 ??? Quote "[GoIda CTF](https://goidactf.ru/)"  
     [![](https://ctftime.org/media/events/goida.jpg){ width="200" align=left }](https://goidactf.ru/)  
