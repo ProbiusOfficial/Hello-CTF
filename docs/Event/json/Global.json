@@ -249,7 +249,7 @@
         "比赛权重": "32.28",
         "赛事主办": "Srdnlen (https://ctftime.org/team/83421)",
         "比赛ID": "840",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "TSCCTF 2025",
@@ -1437,18 +1437,6 @@
         "比赛权重": "38.70",
         "赛事主办": "Cyber Hacktics (https://ctftime.org/team/127017)",
         "比赛ID": "487",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Hackceler8 2024",
-        "比赛时间": "2024-10-18 08:00:00 - 2024-10-21 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2379.ics",
-        "比赛形式": "Hack quest",
-        "比赛链接": "https://capturetheflag.withgoogle.com/hackceler8",
-        "比赛标志": "https://ctftime.org/media/events/HCL8.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Google CTF (https://ctftime.org/team/23929)",
-        "比赛ID": "141",
         "比赛状态": "past"
     }
 ]
