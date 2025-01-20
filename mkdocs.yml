@@ -275,6 +275,8 @@ nav:
       - SQL注入: hc-tags/web/sql-injection.md
       - SQLMap: hc-tags/web/sqlmap.md
       - PHP特性: hc-tags/web/PHP_features.md
+    - Misc:
+      - hc-tags/misc/index.md
 
 # ----- 暂时下线 time: 2024-01-07 -----
 # # - CTF Training 练习 (.Training) Part ------------
