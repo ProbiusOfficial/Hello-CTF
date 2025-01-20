@@ -3,9 +3,29 @@
     "data": {
         "result": [
             {
+                "name": "HGAME 2025",
+                "info_confirmed": 1,
+                "mid_join": 1,
+                "link": "https://hgame.vidar.club/games/2",
+                "status": "即将开始",
+                "is_reg": 1,
+                "limit": 1,
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2025年1月20日 20:00",
+                "reg_time_end": "2025年2月17日 19:59",
+                "comp_time_start": "2025年2月3日 20:00",
+                "comp_time_end": "2025年2月17日 20:00",
+                "organizer": "杭州电子科技大学信息安全协会 Vidar-Team",
+                "contac": {
+                    "QQ群": "576834793"
+                },
+                "tag": "普通赛",
+                "readmore": "HGAME 2025由杭州电子科技大学信息安全协会 Vidar-Team 主办，为个人解题赛。比赛时间为2025年2月3日至2025年2月17日，赛题复现开放至2月24日。报名从2025年1月20日开始，比赛进行期间可随时注册参赛。请加入官方赛事群QQ群：1014353220获取最新资讯。"
+            },
+            {
                 "name": "VNCTF 2025",
                 "info_confirmed": 1,
-                "mid_join": 0,
+                "mid_join": 1,
                 "link": "https://ctf.vnteam.cn",
                 "status": "即将开始",
                 "is_reg": 1,
