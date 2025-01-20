@@ -60,15 +60,6 @@ hide:
             **其他说明** : VNCTF 2025由V&N Team主办，个人赛，可报名，即将开始，中途不可加入。报名开始时间为2025年01月01日 00:00，比赛时间为2025年02月08日 10:00至2025年02月09日 10:00。更多信息请加QQ群717513199。  
                 
     === "国外比赛"
-        ??? Quote "[HKCERT CTF 2024 (Final Round)](https://ctf.hkcert.org/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctf.hkcert.org/)  
-            **比赛名称** : [HKCERT CTF 2024 (Final Round)](https://ctf.hkcert.org/)  
-            **比赛形式** : Attack-Defense  
-            **比赛时间** : 2025-01-20 09:30:00 - 2025-01-21 12:30:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : HKCERT (https://ctftime.org/team/134746)  
-            **添加日历** : https://ctftime.org/event/2583.ics  
-            
         ??? Quote "[KnightCTF 2025](https://2025.knightctf.com/)"  
             [![](https://ctftime.org/media/events/knight_ctf_logo_dark_bg_small.png){ width="200" align=left }](https://2025.knightctf.com/)  
             **比赛名称** : [KnightCTF 2025](https://2025.knightctf.com/)  
@@ -95,6 +86,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : x3CTF (https://ctftime.org/team/309820)  
             **添加日历** : https://ctftime.org/event/2467.ics  
+            
+        ??? Quote "[HackDay 2025 - Qualifications](https://hackday.fr/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://hackday.fr/)  
+            **比赛名称** : [HackDay 2025 - Qualifications](https://hackday.fr/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-01-25 04:00:00 - 2025-01-27 04:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
+            **添加日历** : https://ctftime.org/event/2615.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
