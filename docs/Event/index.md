@@ -468,15 +468,6 @@ hide:
                 **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
                 **添加日历** : https://ctftime.org/event/2542.ics  
                 
-            ??? Quote "[HKCERT CTF 2024 (Final Round)](https://ctf.hkcert.org/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.hkcert.org/)  
-                **比赛名称** : [HKCERT CTF 2024 (Final Round)](https://ctf.hkcert.org/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2025-01-20 09:30:00 - 2025-01-21 12:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : HKCERT (https://ctftime.org/team/134746)  
-                **添加日历** : https://ctftime.org/event/2583.ics  
-                
             ??? Quote "[KnightCTF 2025](https://2025.knightctf.com/)"  
                 [![](https://ctftime.org/media/events/knight_ctf_logo_dark_bg_small.png){ width="200" align=left }](https://2025.knightctf.com/)  
                 **比赛名称** : [KnightCTF 2025](https://2025.knightctf.com/)  
@@ -510,6 +501,15 @@ hide:
                 **其他说明** : 第一届吾杯网络安全技能大赛由东莞市东城小宇网络工作室主办，潮州市极玩网络科技有限公司承办。比赛时间为2024年12月01日 09:00至16:00，报名截止时间为2024年12月01日 08:59。更多信息请访问比赛官网。  
                 
         === "国外赛事"
+            ??? Quote "[HKCERT CTF 2024 (Final Round)](https://ctf.hkcert.org/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.hkcert.org/)  
+                **比赛名称** : [HKCERT CTF 2024 (Final Round)](https://ctf.hkcert.org/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2025-01-20 09:30:00 - 2025-01-21 12:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : HKCERT (https://ctftime.org/team/134746)  
+                **添加日历** : https://ctftime.org/event/2583.ics  
+                
             ??? Quote "[Srdnlen CTF 2025](https://ctf.srdnlen.it/)"  
                 [![](https://ctftime.org/media/events/e04b66f1d17c437f935e29d0fbe7beed.png){ width="200" align=left }](https://ctf.srdnlen.it/)  
                 **比赛名称** : [Srdnlen CTF 2025](https://ctf.srdnlen.it/)  
@@ -1400,15 +1400,6 @@ hide:
                 **比赛权重** : 100.00  
                 **赛事主办** : FluxFingers (https://ctftime.org/team/551)  
                 **添加日历** : https://ctftime.org/event/2438.ics  
-                
-            ??? Quote "[DEADFACE CTF 2024](https://ctf.deadface.io/)"  
-                [![](https://ctftime.org/media/events/logo_deadface_ctf_2024.png){ width="200" align=left }](https://ctf.deadface.io/)  
-                **比赛名称** : [DEADFACE CTF 2024](https://ctf.deadface.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-18 22:00:00 - 2024-10-20 08:00:00 UTC+8  
-                **比赛权重** : 38.70  
-                **赛事主办** : Cyber Hacktics (https://ctftime.org/team/127017)  
-                **添加日历** : https://ctftime.org/event/2443.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

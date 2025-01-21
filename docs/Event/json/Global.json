@@ -216,18 +216,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "HKCERT CTF 2024 (Final Round)",
-        "比赛时间": "2025-01-20 09:30:00 - 2025-01-21 12:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2583.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://ctf.hkcert.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "HKCERT (https://ctftime.org/team/134746)",
-        "比赛ID": "529",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "KnightCTF 2025",
         "比赛时间": "2025-01-20 23:00:00 - 2025-01-21 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2610.ics",
@@ -238,6 +226,18 @@
         "赛事主办": "Knight Squad (https://ctftime.org/team/141739)",
         "比赛ID": "721",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "HKCERT CTF 2024 (Final Round)",
+        "比赛时间": "2025-01-20 09:30:00 - 2025-01-21 12:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2583.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://ctf.hkcert.org/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "HKCERT (https://ctftime.org/team/134746)",
+        "比赛ID": "529",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Srdnlen CTF 2025",
@@ -1425,18 +1425,6 @@
         "比赛权重": "100.00",
         "赛事主办": "FluxFingers (https://ctftime.org/team/551)",
         "比赛ID": "8",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DEADFACE CTF 2024",
-        "比赛时间": "2024-10-18 22:00:00 - 2024-10-20 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2443.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.deadface.io/",
-        "比赛标志": "https://ctftime.org/media/events/logo_deadface_ctf_2024.png",
-        "比赛权重": "38.70",
-        "赛事主办": "Cyber Hacktics (https://ctftime.org/team/127017)",
-        "比赛ID": "487",
         "比赛状态": "past"
     }
 ]
