@@ -477,15 +477,6 @@ hide:
                 **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
                 **添加日历** : https://ctftime.org/event/2542.ics  
                 
-            ??? Quote "[KnightCTF 2025](https://2025.knightctf.com/)"  
-                [![](https://ctftime.org/media/events/knight_ctf_logo_dark_bg_small.png){ width="200" align=left }](https://2025.knightctf.com/)  
-                **比赛名称** : [KnightCTF 2025](https://2025.knightctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-01-20 23:00:00 - 2025-01-21 23:00:00 UTC+8  
-                **比赛权重** : 18.78  
-                **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
-                **添加日历** : https://ctftime.org/event/2610.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[NSSCTF Round26](https://www.nssctf.cn/contest)"  
@@ -510,6 +501,15 @@ hide:
                 **其他说明** : 第一届吾杯网络安全技能大赛由东莞市东城小宇网络工作室主办，潮州市极玩网络科技有限公司承办。比赛时间为2024年12月01日 09:00至16:00，报名截止时间为2024年12月01日 08:59。更多信息请访问比赛官网。  
                 
         === "国外赛事"
+            ??? Quote "[KnightCTF 2025](https://2025.knightctf.com/)"  
+                [![](https://ctftime.org/media/events/knight_ctf_logo_dark_bg_small.png){ width="200" align=left }](https://2025.knightctf.com/)  
+                **比赛名称** : [KnightCTF 2025](https://2025.knightctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-01-20 23:00:00 - 2025-01-21 23:00:00 UTC+8  
+                **比赛权重** : 18.78  
+                **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
+                **添加日历** : https://ctftime.org/event/2610.ics  
+                
             ??? Quote "[HKCERT CTF 2024 (Final Round)](https://ctf.hkcert.org/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.hkcert.org/)  
                 **比赛名称** : [HKCERT CTF 2024 (Final Round)](https://ctf.hkcert.org/)  
@@ -1400,15 +1400,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : D Asset Inc. (https://ctftime.org/team/310109)  
                 **添加日历** : https://ctftime.org/event/2548.ics  
-                
-            ??? Quote "[Hack.lu CTF 2024](https://flu.xxx/)"  
-                [![](https://ctftime.org/media/events/logo-small.png){ width="200" align=left }](https://flu.xxx/)  
-                **比赛名称** : [Hack.lu CTF 2024](https://flu.xxx/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-19 02:00:00 - 2024-10-21 02:00:00 UTC+8  
-                **比赛权重** : 100.00  
-                **赛事主办** : FluxFingers (https://ctftime.org/team/551)  
-                **添加日历** : https://ctftime.org/event/2438.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
