@@ -84,6 +84,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "KalmarCTF 2025",
+        "比赛时间": "2025-03-08 01:00:00 - 2025-03-10 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2599.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://KalmarC.TF/",
+        "比赛标志": "https://ctftime.org/media/events/kalmar-logo.png",
+        "比赛权重": "33.89",
+        "赛事主办": "kalmarunionen (https://ctftime.org/team/114856)",
+        "比赛ID": "813",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "@Hack 2025",
         "比赛时间": "2025-03-15 19:00:00 - 2025-03-16 19:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2558.ics",
