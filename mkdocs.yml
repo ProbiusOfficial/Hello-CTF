@@ -295,8 +295,9 @@ nav:
 # - Hello CTF 系列靶场文档
   - 靶场: hc-labs/index.md
 
-# - CTF toolkit 工具 (.toolkit) Part ------------
-  - 工具: toolkit/index.md
+# - CTF hc-toolkit 工具 (.hc-toolkit) Part ------------
+  - 工具: 
+    - hc-toolkit/index.md
 
 # - CTF 归档部分
   - 归档: hc-archive/index.md
