@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [windows系统调用学习——R3到R0](https://xia0ji233.github.io/2025/01/21/WindowsSyscall1/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-21
+
+    来学习一下windows的系统调用简介API，应用程序接口（Application Programming Interface）。Windows API 顾名思义就是 Windows 提供的应用程序接口，为了在 Windows 上实现一定的功能，我们需要学习 API 的用途、传参、返回值等，微软对这部分都提供了大量的文档说明，因此详细学习 API 的实现原理对我们而言是很有必要的。Windows...
     ### [2024不是年终总结的总结](https://y4tacker.github.io/2024/12/31/year/2024/12/2024%E4%B8%8D%E6%98%AF%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93%E7%9A%84%E6%80%BB%E7%BB%93/)  
     >by [Y4tacker](https://y4tacker.github.io), 2024-12-31
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-10-09
 
     4780fbcdbf7405ce90fd6e499eaf6095781862f7317b4a3cc99e0d387e923799bc023cb7a5fac5102aecc9c2174f007a6ef602947b468ee2ed2eb62878f73d759273d2ee31e9aedf6a203293ea59932363ad1cc17de9ea622351f9207f23fcd6744576...
-    ### [x86的保护模式（3）——门描述符实验](https://xia0ji233.github.io/2024/10/08/x86_3/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2024-10-07
-
-    通过做实验来加深一下印象首先是环境搭建，寻找32位虚拟机花了很长时间，最后在52破解上找到了合适的系统。如果你尝试自己搭建你会发现，win7 32镜像很难寻找，而且大部分不支持 Vmware Tools，帧率很低很卡，调试起来很不舒服。而笔者给出的链接中的 32 位虚拟机还是很不错的，能调试，能装 Vmware Tools。还需要提醒一点的是，解压好之后把 CPU 个数和核心数全部改成 1，不然实...
 
 </div>
