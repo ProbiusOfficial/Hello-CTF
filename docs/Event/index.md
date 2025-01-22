@@ -292,7 +292,7 @@ hide:
                 **比赛类型** : 线上Jeopardy解题赛  
                 **报名时间** : 2025年1月20日 20:00 - 2025年2月17日 19:59  
                 **比赛时间** : 2025年2月3日 20:00 - 2025年2月17日 20:00  
-                **其他说明** : HGAME 2025由杭州电子科技大学信息安全协会 Vidar-Team 主办，为个人解题赛。比赛时间为2025年2月3日至2025年2月17日，赛题复现开放至2月24日。报名从2025年1月20日开始，比赛进行期间可随时注册参赛。请加入官方赛事群QQ群：1014353220获取最新资讯。  
+                **其他说明** : HGAME 2025由杭州电子科技大学信息安全协会 Vidar-Team 主办，为个人解题赛。比赛时间为2025年2月3日至2025年2月17日，赛题复现开放至2月24日。报名从2025年1月20日开始，比赛进行期间可随时注册参赛。校外群：576834793  
                 
             ??? Quote "[VNCTF 2025](https://ctf.vnteam.cn)"  
                 **比赛名称** : [VNCTF 2025](https://ctf.vnteam.cn)  
@@ -356,6 +356,15 @@ hide:
                 **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
                 **添加日历** : https://ctftime.org/event/2592.ics  
                 
+            ??? Quote "[DiceCTF 2025 Quals](https://ctf.dicega.ng/)"  
+                [![](https://ctftime.org/media/events/dicectf_2_1_1_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
+                **比赛名称** : [DiceCTF 2025 Quals](https://ctf.dicega.ng/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-02-15 05:00:00 - 2025-02-17 05:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
+                **添加日历** : https://ctftime.org/event/2617.ics  
+                
             ??? Quote "[SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025](https://www.saiborg.io/)"  
                 [![](https://ctftime.org/media/events/saiborg-profile_1.jpg){ width="200" align=left }](https://www.saiborg.io/)  
                 **比赛名称** : [SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025](https://www.saiborg.io/)  
@@ -364,6 +373,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Saiborg (https://ctftime.org/team/271868)  
                 **添加日历** : https://ctftime.org/event/2557.ics  
+                
+            ??? Quote "[KalmarCTF 2025](http://KalmarC.TF/)"  
+                [![](https://ctftime.org/media/events/kalmar-logo.png){ width="200" align=left }](http://KalmarC.TF/)  
+                **比赛名称** : [KalmarCTF 2025](http://KalmarC.TF/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-08 01:00:00 - 2025-03-10 01:00:00 UTC+8  
+                **比赛权重** : 33.89  
+                **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
+                **添加日历** : https://ctftime.org/event/2599.ics  
                 
             ??? Quote "[@Hack 2025](https://athackctf.com/?s=ju8uvw)"  
                 [![](https://ctftime.org/media/events/Hack_Logo_WIDTH_600px.png){ width="200" align=left }](https://athackctf.com/?s=ju8uvw)  
@@ -468,24 +486,6 @@ hide:
                 **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
                 **添加日历** : https://ctftime.org/event/2542.ics  
                 
-            ??? Quote "[HKCERT CTF 2024 (Final Round)](https://ctf.hkcert.org/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.hkcert.org/)  
-                **比赛名称** : [HKCERT CTF 2024 (Final Round)](https://ctf.hkcert.org/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2025-01-20 09:30:00 - 2025-01-21 12:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : HKCERT (https://ctftime.org/team/134746)  
-                **添加日历** : https://ctftime.org/event/2583.ics  
-                
-            ??? Quote "[KnightCTF 2025](https://2025.knightctf.com/)"  
-                [![](https://ctftime.org/media/events/knight_ctf_logo_dark_bg_small.png){ width="200" align=left }](https://2025.knightctf.com/)  
-                **比赛名称** : [KnightCTF 2025](https://2025.knightctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-01-20 23:00:00 - 2025-01-21 23:00:00 UTC+8  
-                **比赛权重** : 18.78  
-                **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
-                **添加日历** : https://ctftime.org/event/2610.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[NSSCTF Round26](https://www.nssctf.cn/contest)"  
@@ -510,6 +510,24 @@ hide:
                 **其他说明** : 第一届吾杯网络安全技能大赛由东莞市东城小宇网络工作室主办，潮州市极玩网络科技有限公司承办。比赛时间为2024年12月01日 09:00至16:00，报名截止时间为2024年12月01日 08:59。更多信息请访问比赛官网。  
                 
         === "国外赛事"
+            ??? Quote "[KnightCTF 2025](https://2025.knightctf.com/)"  
+                [![](https://ctftime.org/media/events/knight_ctf_logo_dark_bg_small.png){ width="200" align=left }](https://2025.knightctf.com/)  
+                **比赛名称** : [KnightCTF 2025](https://2025.knightctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-01-20 23:00:00 - 2025-01-21 23:00:00 UTC+8  
+                **比赛权重** : 18.78  
+                **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
+                **添加日历** : https://ctftime.org/event/2610.ics  
+                
+            ??? Quote "[HKCERT CTF 2024 (Final Round)](https://ctf.hkcert.org/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.hkcert.org/)  
+                **比赛名称** : [HKCERT CTF 2024 (Final Round)](https://ctf.hkcert.org/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2025-01-20 09:30:00 - 2025-01-21 12:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : HKCERT (https://ctftime.org/team/134746)  
+                **添加日历** : https://ctftime.org/event/2583.ics  
+                
             ??? Quote "[Srdnlen CTF 2025](https://ctf.srdnlen.it/)"  
                 [![](https://ctftime.org/media/events/e04b66f1d17c437f935e29d0fbe7beed.png){ width="200" align=left }](https://ctf.srdnlen.it/)  
                 **比赛名称** : [Srdnlen CTF 2025](https://ctf.srdnlen.it/)  
@@ -551,7 +569,7 @@ hide:
                 **比赛名称** : [SUCTF 2025](https://suctf2025.xctf.org.cn/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-01-11 09:00:00 - 2025-01-13 09:00:00 UTC+8  
-                **比赛权重** : 24.50  
+                **比赛权重** : 24.60  
                 **赛事主办** : SU (https://ctftime.org/team/29641)  
                 **添加日历** : https://ctftime.org/event/2620.ics  
                 
@@ -1391,24 +1409,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : D Asset Inc. (https://ctftime.org/team/310109)  
                 **添加日历** : https://ctftime.org/event/2548.ics  
-                
-            ??? Quote "[Hack.lu CTF 2024](https://flu.xxx/)"  
-                [![](https://ctftime.org/media/events/logo-small.png){ width="200" align=left }](https://flu.xxx/)  
-                **比赛名称** : [Hack.lu CTF 2024](https://flu.xxx/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-19 02:00:00 - 2024-10-21 02:00:00 UTC+8  
-                **比赛权重** : 100.00  
-                **赛事主办** : FluxFingers (https://ctftime.org/team/551)  
-                **添加日历** : https://ctftime.org/event/2438.ics  
-                
-            ??? Quote "[DEADFACE CTF 2024](https://ctf.deadface.io/)"  
-                [![](https://ctftime.org/media/events/logo_deadface_ctf_2024.png){ width="200" align=left }](https://ctf.deadface.io/)  
-                **比赛名称** : [DEADFACE CTF 2024](https://ctf.deadface.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-18 22:00:00 - 2024-10-20 08:00:00 UTC+8  
-                **比赛权重** : 38.70  
-                **赛事主办** : Cyber Hacktics (https://ctftime.org/team/127017)  
-                **添加日历** : https://ctftime.org/event/2443.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

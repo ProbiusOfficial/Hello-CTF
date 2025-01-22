@@ -72,6 +72,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "DiceCTF 2025 Quals",
+        "比赛时间": "2025-02-15 05:00:00 - 2025-02-17 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2617.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.dicega.ng/",
+        "比赛标志": "https://ctftime.org/media/events/dicectf_2_1_1_1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "DiceGang (https://ctftime.org/team/109452)",
+        "比赛ID": "568",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025",
         "比赛时间": "2025-02-21 22:30:00 - 2025-02-22 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2557.ics",
@@ -81,6 +93,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Saiborg (https://ctftime.org/team/271868)",
         "比赛ID": "1009",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "KalmarCTF 2025",
+        "比赛时间": "2025-03-08 01:00:00 - 2025-03-10 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2599.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://KalmarC.TF/",
+        "比赛标志": "https://ctftime.org/media/events/kalmar-logo.png",
+        "比赛权重": "33.89",
+        "赛事主办": "kalmarunionen (https://ctftime.org/team/114856)",
+        "比赛ID": "813",
         "比赛状态": "oncoming"
     },
     {
@@ -216,18 +240,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "HKCERT CTF 2024 (Final Round)",
-        "比赛时间": "2025-01-20 09:30:00 - 2025-01-21 12:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2583.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://ctf.hkcert.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "HKCERT (https://ctftime.org/team/134746)",
-        "比赛ID": "529",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "KnightCTF 2025",
         "比赛时间": "2025-01-20 23:00:00 - 2025-01-21 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2610.ics",
@@ -237,7 +249,19 @@
         "比赛权重": "18.78",
         "赛事主办": "Knight Squad (https://ctftime.org/team/141739)",
         "比赛ID": "721",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "HKCERT CTF 2024 (Final Round)",
+        "比赛时间": "2025-01-20 09:30:00 - 2025-01-21 12:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2583.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://ctf.hkcert.org/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "HKCERT (https://ctftime.org/team/134746)",
+        "比赛ID": "529",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Srdnlen CTF 2025",
@@ -294,7 +318,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://suctf2025.xctf.org.cn/",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "24.50",
+        "比赛权重": "24.60",
         "赛事主办": "SU (https://ctftime.org/team/29641)",
         "比赛ID": "1226",
         "比赛状态": "past"
@@ -1413,30 +1437,6 @@
         "比赛权重": "0.00",
         "赛事主办": "D Asset Inc. (https://ctftime.org/team/310109)",
         "比赛ID": "1190",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Hack.lu CTF 2024",
-        "比赛时间": "2024-10-19 02:00:00 - 2024-10-21 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2438.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://flu.xxx/",
-        "比赛标志": "https://ctftime.org/media/events/logo-small.png",
-        "比赛权重": "100.00",
-        "赛事主办": "FluxFingers (https://ctftime.org/team/551)",
-        "比赛ID": "8",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DEADFACE CTF 2024",
-        "比赛时间": "2024-10-18 22:00:00 - 2024-10-20 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2443.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.deadface.io/",
-        "比赛标志": "https://ctftime.org/media/events/logo_deadface_ctf_2024.png",
-        "比赛权重": "38.70",
-        "赛事主办": "Cyber Hacktics (https://ctftime.org/team/127017)",
-        "比赛ID": "487",
         "比赛状态": "past"
     }
 ]
