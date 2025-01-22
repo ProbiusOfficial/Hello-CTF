@@ -72,6 +72,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "DiceCTF 2025 Quals",
+        "比赛时间": "2025-02-15 05:00:00 - 2025-02-17 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2617.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.dicega.ng/",
+        "比赛标志": "https://ctftime.org/media/events/dicectf_2_1_1_1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "DiceGang (https://ctftime.org/team/109452)",
+        "比赛ID": "568",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025",
         "比赛时间": "2025-02-21 22:30:00 - 2025-02-22 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2557.ics",
