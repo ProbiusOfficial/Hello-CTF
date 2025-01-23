@@ -73,6 +73,14 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [windows系统调用学习——调用细节与系统服务表](https://xia0ji233.github.io/2025/01/22/WindowsSyscall3/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-22
+
+    来深入挖掘一下Windows系统调用的过程KiSystemService分析这个函数是通过中断门进的，中断门本身保存了 CS 和 EIP，跨段提权后通过 TSS 拿到零环的 SS 和 ESP。此时为了维护三环的上下文状态，则会将各种寄存器保存到堆栈，也就是 Trap_Frame 结构体，中断门提权之后本身就会按顺序压入 SS，ESP，ELFAGS，CS，EIP。此时比较一下上一篇文章中提到的 Tr...
+    ### [windows系统调用学习——调用相关结构体学习](https://xia0ji233.github.io/2025/01/22/WindowsSyscall2/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-22
+
+    来深入挖掘一下Windows系统调用的过程相关结构体介绍Trap_Frame首先第一个要讲的是 Trap_Frame 结构，如下图所示。栈帧结构体，用于 Windows API 保存现场。经过提权进入0环的时候，Windows就会遵守这个结构体保存一系列的数据，最后四个成员用于虚拟8086模式下，不属于保护模式的范畴。中断发生时，若发生权限变换，则要保存旧堆栈，CPU压入的，由 HardwareE...
     ### [windows系统调用学习——R3到R0](https://xia0ji233.github.io/2025/01/21/WindowsSyscall1/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2025-01-21
 
@@ -145,13 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2024-11-03
 
     学习一下任务门相关的知识从堆栈切换开始说起，不管是中断、陷入还是调用，提权之后 ESP 和 SS 都会被切换到对应权限的栈，那么必然有一个地方会维护这个栈所在的位置，其实就是使用任务段去维护的。任务段任务段介绍任务状态段简称任务段，英文缩写为TSS，Task-state segment，任务段的结构体如下所示，大小为 104 字节。观察结构体成员，可以很明显地看到有 SS2，ESP2，SS0，ES...
-    ### [eoffice前台权限绕过致代码执行](https://y4tacker.github.io/2024/10/14/year/2024/10/eoffice%E5%89%8D%E5%8F%B0%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E8%87%B4%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-10-14
-
-    1fde8e13c0800e34bf83b87666dd4d9cc35b143eda24e0c7f10fb09b8f001c0492c29e66ae7d59bed9b15650dfd29403df74c0cac6726b0adac99daaf44ace5d3b290a873a368292a289fb0e4a84be522f1f5f2248fcd6d1c86b9d39f861123c353f2a...
-    ### [浅析Edoc2前台远程代码执行](https://y4tacker.github.io/2024/10/09/year/2024/10/%E6%B5%85%E6%9E%90Edoc2%E5%89%8D%E5%8F%B0%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-10-09
-
-    4780fbcdbf7405ce90fd6e499eaf6095781862f7317b4a3cc99e0d387e923799bc023cb7a5fac5102aecc9c2174f007a6ef602947b468ee2ed2eb62878f73d759273d2ee31e9aedf6a203293ea59932363ad1cc17de9ea622351f9207f23fcd6744576...
 
 </div>
