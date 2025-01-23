@@ -455,6 +455,15 @@ hide:
                 **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
                 **添加日历** : https://ctftime.org/event/2568.ics  
                 
+            ??? Quote "[SAS CTF 2025 Quals](https://ctf.thesascon.com/)"  
+                [![](https://ctftime.org/media/events/SAS25.png){ width="200" align=left }](https://ctf.thesascon.com/)  
+                **比赛名称** : [SAS CTF 2025 Quals](https://ctf.thesascon.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-17 20:00:00 - 2025-05-18 20:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
+                **添加日历** : https://ctftime.org/event/2636.ics  
+                
             ??? Quote "[N0PSctf](https://www.nops.re/)"  
                 [![](https://ctftime.org/media/events/logo-news.png){ width="200" align=left }](https://www.nops.re/)  
                 **比赛名称** : [N0PSctf](https://www.nops.re/)  
