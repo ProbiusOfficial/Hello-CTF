@@ -563,9 +563,9 @@ hide:
                 **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
                 **添加日历** : https://ctftime.org/event/2626.ics  
                 
-            ??? Quote "[SillyCTF 2025](http://sillyctf.psucso.org/)"  
-                [![](https://ctftime.org/media/events/SillyCTF.png){ width="200" align=left }](http://sillyctf.psucso.org/)  
-                **比赛名称** : [SillyCTF 2025](http://sillyctf.psucso.org/)  
+            ??? Quote "[SillyCTF 2025](https://sillyctf.psuccso.org/)"  
+                [![](https://ctftime.org/media/events/SillyCTF.png){ width="200" align=left }](https://sillyctf.psuccso.org/)  
+                **比赛名称** : [SillyCTF 2025](https://sillyctf.psuccso.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-03-29 20:00:00 - 2025-03-30 08:00:00 UTC+8  
                 **比赛权重** : 0.00  
