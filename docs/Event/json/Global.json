@@ -204,6 +204,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "SAS CTF 2025 Quals",
+        "比赛时间": "2025-05-17 20:00:00 - 2025-05-18 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2636.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.thesascon.com/",
+        "比赛标志": "https://ctftime.org/media/events/SAS25.png",
+        "比赛权重": "0.00",
+        "赛事主办": "SAS CREW (https://ctftime.org/team/283057)",
+        "比赛ID": "1081",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "N0PSctf",
         "比赛时间": "2025-05-31 16:00:00 - 2025-06-02 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2486.ics",
