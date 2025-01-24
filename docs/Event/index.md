@@ -302,15 +302,6 @@ hide:
                 **其他说明** : VNCTF 2025由V&N Team主办，个人赛，可报名，即将开始，中途可加入。报名开始时间为2025年01月01日 00:00，比赛时间为2025年02月08日 10:00至2025年02月09日 10:00。更多信息请加QQ群717513199。  
                 
         === "国外赛事"
-            ??? Quote "[Remedy CTF 2025](https://ctf.r.xyz/)"  
-                [![](https://ctftime.org/media/events/remedy_logo.jpg){ width="200" align=left }](https://ctf.r.xyz/)  
-                **比赛名称** : [Remedy CTF 2025](https://ctf.r.xyz/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-01-24 20:00:00 - 2025-01-26 20:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Hexens (https://ctftime.org/team/355136)  
-                **添加日历** : https://ctftime.org/event/2618.ics  
-                
             ??? Quote "[x3CTF 2025 (feat. mvm)](https://x3c.tf/)"  
                 [![](https://ctftime.org/media/events/temp_pfp.png){ width="200" align=left }](https://x3c.tf/)  
                 **比赛名称** : [x3CTF 2025 (feat. mvm)](https://x3c.tf/)  
@@ -710,6 +701,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
                 **添加日历** : https://ctftime.org/event/2542.ics  
+                
+            ??? Quote "[Remedy CTF 2025](https://ctf.r.xyz/)"  
+                [![](https://ctftime.org/media/events/remedy_logo.jpg){ width="200" align=left }](https://ctf.r.xyz/)  
+                **比赛名称** : [Remedy CTF 2025](https://ctf.r.xyz/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-01-24 20:00:00 - 2025-01-26 20:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Hexens (https://ctftime.org/team/355136)  
+                **添加日历** : https://ctftime.org/event/2618.ics  
                 
     === "*已经结束*"
         === "国内赛事"

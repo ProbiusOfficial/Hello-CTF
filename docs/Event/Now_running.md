@@ -18,3 +18,12 @@ comments: true
     **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
     **添加日历** : https://ctftime.org/event/2542.ics  
     
+??? Quote "[Remedy CTF 2025](https://ctf.r.xyz/)"  
+    [![](https://ctftime.org/media/events/remedy_logo.jpg){ width="200" align=left }](https://ctf.r.xyz/)  
+    **比赛名称** : [Remedy CTF 2025](https://ctf.r.xyz/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-01-24 20:00:00 - 2025-01-26 20:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Hexens (https://ctftime.org/team/355136)  
+    **添加日历** : https://ctftime.org/event/2618.ics  
+    
