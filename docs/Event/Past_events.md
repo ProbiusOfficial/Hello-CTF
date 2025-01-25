@@ -28,6 +28,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Dreamhack CTF Season 7 Round #2 (Div. 2)](https://dreamhack.io/ctf/656)"  
+    [![](https://ctftime.org/media/events/cover02.jpg){ width="200" align=left }](https://dreamhack.io/ctf/656)  
+    **比赛名称** : [Dreamhack CTF Season 7 Round #2 (Div. 2)](https://dreamhack.io/ctf/656)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-01-25 08:00:00 - 2025-01-25 23:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
+    **添加日历** : https://ctftime.org/event/2622.ics  
+    
 ??? Quote "[KnightCTF 2025](https://2025.knightctf.com/)"  
     [![](https://ctftime.org/media/events/knight_ctf_logo_dark_bg_small.png){ width="200" align=left }](https://2025.knightctf.com/)  
     **比赛名称** : [KnightCTF 2025](https://2025.knightctf.com/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : DASCTF (https://ctftime.org/team/303691)  
     **添加日历** : https://ctftime.org/event/2536.ics  
-    
-??? Quote "[SCAN 2024 Digital Asset Tracing Challenge Second Round](https://ctf.scan.sx/)"  
-    [![](https://ctftime.org/media/events/cd3d670407e320464308a9e5e9875cbb.png){ width="200" align=left }](https://ctf.scan.sx/)  
-    **比赛名称** : [SCAN 2024 Digital Asset Tracing Challenge Second Round](https://ctf.scan.sx/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-19 08:00:00 - 2024-10-20 08:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : D Asset Inc. (https://ctftime.org/team/310109)  
-    **添加日历** : https://ctftime.org/event/2548.ics  
     

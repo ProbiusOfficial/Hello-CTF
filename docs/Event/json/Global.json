@@ -516,18 +516,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Dreamhack CTF Season 7 Round #2 (Div. 2)",
-        "比赛时间": "2025-01-25 08:00:00 - 2025-01-25 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2622.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dreamhack.io/ctf/656",
-        "比赛标志": "https://ctftime.org/media/events/cover02.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
-        "比赛ID": "1232",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Codefest CTF 2025",
         "比赛时间": "2025-01-25 20:30:00 - 2025-01-27 08:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2648.ics",
@@ -538,6 +526,18 @@
         "赛事主办": "IIT(BHU)CyberSec (https://ctftime.org/team/22546)",
         "比赛ID": "139",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Dreamhack CTF Season 7 Round #2 (Div. 2)",
+        "比赛时间": "2025-01-25 08:00:00 - 2025-01-25 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2622.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://dreamhack.io/ctf/656",
+        "比赛标志": "https://ctftime.org/media/events/cover02.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
+        "比赛ID": "1232",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "KnightCTF 2025",
@@ -1725,18 +1725,6 @@
         "比赛权重": "25.00",
         "赛事主办": "DASCTF (https://ctftime.org/team/303691)",
         "比赛ID": "1133",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SCAN 2024 Digital Asset Tracing Challenge Second Round",
-        "比赛时间": "2024-10-19 08:00:00 - 2024-10-20 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2548.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.scan.sx/",
-        "比赛标志": "https://ctftime.org/media/events/cd3d670407e320464308a9e5e9875cbb.png",
-        "比赛权重": "0.00",
-        "赛事主办": "D Asset Inc. (https://ctftime.org/team/310109)",
-        "比赛ID": "1190",
         "比赛状态": "past"
     }
 ]
