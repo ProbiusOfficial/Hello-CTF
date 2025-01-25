@@ -302,15 +302,6 @@ hide:
                 **其他说明** : VNCTF 2025由V&N Team主办，个人赛，可报名，即将开始，中途可加入。报名开始时间为2025年01月01日 00:00，比赛时间为2025年02月08日 10:00至2025年02月09日 10:00。更多信息请加QQ群717513199。  
                 
         === "国外赛事"
-            ??? Quote "[Codefest CTF 2025](https://codefest-ctf.iitbhu.tech/)"  
-                [![](https://ctftime.org/media/events/favicon_6.png){ width="200" align=left }](https://codefest-ctf.iitbhu.tech/)  
-                **比赛名称** : [Codefest CTF 2025](https://codefest-ctf.iitbhu.tech/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-01-25 20:30:00 - 2025-01-27 08:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
-                **添加日历** : https://ctftime.org/event/2648.ics  
-                
             ??? Quote "[AlpacaHack Round 9 (Crypto)](https://alpacahack.com/)"  
                 [![](https://ctftime.org/media/events/dark_512_3.png){ width="200" align=left }](https://alpacahack.com/)  
                 **比赛名称** : [AlpacaHack Round 9 (Crypto)](https://alpacahack.com/)  
@@ -710,6 +701,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
                 **添加日历** : https://ctftime.org/event/2622.ics  
+                
+            ??? Quote "[Codefest CTF 2025](https://codefest-ctf.iitbhu.tech/)"  
+                [![](https://ctftime.org/media/events/favicon_6.png){ width="200" align=left }](https://codefest-ctf.iitbhu.tech/)  
+                **比赛名称** : [Codefest CTF 2025](https://codefest-ctf.iitbhu.tech/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-01-25 20:30:00 - 2025-01-27 08:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
+                **添加日历** : https://ctftime.org/event/2648.ics  
                 
     === "*已经结束*"
         === "国内赛事"
