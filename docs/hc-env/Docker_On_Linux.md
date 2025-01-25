@@ -414,7 +414,7 @@ reboot
 
 #### Run Docker
 
-运行容器有两个选项Run / Run Ineractive
+运行容器有两个选项Run / Run Interactive
 
 ##### Run
 
@@ -422,7 +422,7 @@ reboot
 ![image.png](https://nssctf.wdf.ink//img/WDTJ/202302072108098.png)
 ![image.png](https://nssctf.wdf.ink//img/WDTJ/202302072108618.png)
 
-##### Run Ineractive
+##### Run Interactive
 
 该选项运行执行后，除了运行容器，还会跳到容器的汇总shell处，这里会实时打印容器日志，  
 效果和 `View Log`效果相同：  
@@ -430,7 +430,7 @@ reboot
 
 #### View Log
 
-直达容器后台日志，如果在运行的时候选择`Run Ineractive`那么也会跳转到该log页面。  
+直达容器后台日志，如果在运行的时候选择`Run Interactive`那么也会跳转到该log页面。  
 ![image.png](https://nssctf.wdf.ink//img/WDTJ/202302072108575.png)  
 ![image.png](https://nssctf.wdf.ink//img/WDTJ/202302072108780.png)
 
