@@ -525,7 +525,7 @@
         "比赛权重": "0",
         "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
         "比赛ID": "1163",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Dreamhack CTF Season 7 Round #2 (Div. 2)",
@@ -1713,18 +1713,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Akasec (https://ctftime.org/team/107202)",
         "比赛ID": "1177",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DASCTF 2024 Golden October | Autumn is Strong, the Flames of War",
-        "比赛时间": "2024-10-19 18:00:00 - 2024-10-20 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2536.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://buuoj.cn/match/matches/211",
-        "比赛标志": "https://ctftime.org/media/events/20241009170303.png",
-        "比赛权重": "25.00",
-        "赛事主办": "DASCTF (https://ctftime.org/team/303691)",
-        "比赛ID": "1133",
         "比赛状态": "past"
     }
 ]
