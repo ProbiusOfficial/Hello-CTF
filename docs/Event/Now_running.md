@@ -18,15 +18,6 @@ comments: true
     **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
     **添加日历** : https://ctftime.org/event/2542.ics  
     
-??? Quote "[HackDay 2025 - Qualifications](https://hackday.fr/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://hackday.fr/)  
-    **比赛名称** : [HackDay 2025 - Qualifications](https://hackday.fr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-01-25 04:00:00 - 2025-01-27 04:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
-    **添加日历** : https://ctftime.org/event/2615.ics  
-    
 ??? Quote "[Codefest CTF 2025](https://codefest-ctf.iitbhu.tech/)"  
     [![](https://ctftime.org/media/events/favicon_6.png){ width="200" align=left }](https://codefest-ctf.iitbhu.tech/)  
     **比赛名称** : [Codefest CTF 2025](https://codefest-ctf.iitbhu.tech/)  

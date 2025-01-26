@@ -46,6 +46,15 @@ comments: true
     **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
     **添加日历** : https://ctftime.org/event/2622.ics  
     
+??? Quote "[HackDay 2025 - Qualifications](https://hackday.fr/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://hackday.fr/)  
+    **比赛名称** : [HackDay 2025 - Qualifications](https://hackday.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-01-25 04:00:00 - 2025-01-27 04:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
+    **添加日历** : https://ctftime.org/event/2615.ics  
+    
 ??? Quote "[TUCTF 2024](https://ctfd.tuctf.com/)"  
     [![](https://ctftime.org/media/events/TU-CTF-2024_2.png){ width="200" align=left }](https://ctfd.tuctf.com/)  
     **比赛名称** : [TUCTF 2024](https://ctfd.tuctf.com/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Hardware CTF by Quarkslab (https://ctftime.org/team/274600)  
     **添加日历** : https://ctftime.org/event/2561.ics  
-    
-??? Quote "[Questcon CTF](https://questcon.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/Picsart_24-10-01_16-40-39-530_1_1.png){ width="200" align=left }](https://questcon.ctfd.io/)  
-    **比赛名称** : [Questcon CTF](https://questcon.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-22 14:30:00 - 2024-10-23 14:30:00 UTC+8  
-    **比赛权重** : 22.45  
-    **赛事主办** : OWASP_PCCOE-CORE (https://ctftime.org/team/206360)  
-    **添加日历** : https://ctftime.org/event/2505.ics  
     
