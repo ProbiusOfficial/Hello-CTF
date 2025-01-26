@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [windows进程与线程学习——深入研究线程调度（2）](https://xia0ji233.github.io/2025/01/25/WindowsProcess5/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-25
+
+    深入研究一下线程调度，由于篇幅较多，分章节分析，第二篇。进程挂靠一个进程可以包含多个线程，线程结构体中会指向自己所属的进程。切换到这个线程的时候，会将对应的 cr3 切换到该进程的页目录基址，那么这个线程就可以访问这个进程的所有资源了。前面逆向的时候看到过，在切换 cr3 的时候，是拿到了 KTHREAD.ApcState.Process，而并不是 KTHREAD.Process，这个因为没学 A...
     ### [windows进程与线程学习——深入研究线程调度（1）](https://xia0ji233.github.io/2025/01/25/WindowsProcess4/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2025-01-24
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2024-11-11
 
     今天来学习一下TLB的一些细节TLB简介TLB（Translation Lookaside Buffer，转换后援缓冲器），是一个硬件单元，它用于保存每个进程虚拟地址到物理地址的映射，这里做的对进程的区分大概是使用 CR3 区分的，这个点看很多文章都没有提到，但是仅仅保存线性地址到物理地址的映射是必然不够的，因为不同的进程的同一线性地址不一定对应相同的物理页，但是猜测大概是这样的。TLB 做了指令...
-    ### [windows内核（4）——挂物理页](https://xia0ji233.github.io/2024/11/10/WindowsKernel4/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2024-11-10
-
-    挂物理页的一些细节线性地址有效性判断之前我们分析过 MmIsValidAddress 函数，在 10-10-12 分页模式下就是去拿到页表的线性地址，然后判断 PTE 和 PDE 的P位是否都有效。一般来说，如果都有效说明进程在这个线性地址这里挂上了物理页。零地址挂页考虑以下代码：12int *x=NULL;*x=100;通常情况下我们会认为这两条语句执行之后必然出错，这就是所谓的空指针错误，但是...
 
 </div>
