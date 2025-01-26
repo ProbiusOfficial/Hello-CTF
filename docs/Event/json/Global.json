@@ -456,18 +456,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Remedy CTF 2025",
-        "比赛时间": "2025-01-24 20:00:00 - 2025-01-26 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2618.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.r.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/remedy_logo.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Hexens (https://ctftime.org/team/355136)",
-        "比赛ID": "1235",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "x3CTF 2025 (feat. mvm)",
         "比赛时间": "2025-01-25 02:00:00 - 2025-01-27 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2467.ics",
@@ -537,6 +525,18 @@
         "比赛权重": "0",
         "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
         "比赛ID": "1232",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Remedy CTF 2025",
+        "比赛时间": "2025-01-24 20:00:00 - 2025-01-26 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2618.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.r.xyz/",
+        "比赛标志": "https://ctftime.org/media/events/remedy_logo.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Hexens (https://ctftime.org/team/355136)",
+        "比赛ID": "1235",
         "比赛状态": "past"
     },
     {
@@ -1701,18 +1701,6 @@
         "比赛权重": "38.57",
         "赛事主办": "Knightsec (https://ctftime.org/team/2500)",
         "比赛ID": "137",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Cyber Odyssey 2024 : Qualifications",
-        "比赛时间": "2024-10-19 20:37:00 - 2024-10-20 20:37:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2533.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.akasec.club/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Akasec (https://ctftime.org/team/107202)",
-        "比赛ID": "1177",
         "比赛状态": "past"
     }
 ]
