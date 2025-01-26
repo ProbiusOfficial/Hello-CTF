@@ -63,3 +63,12 @@ comments: true
     **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
     **添加日历** : https://ctftime.org/event/2648.ics  
     
+??? Quote "[AlpacaHack Round 9 (Crypto)](https://alpacahack.com/)"  
+    [![](https://ctftime.org/media/events/dark_512_3.png){ width="200" align=left }](https://alpacahack.com/)  
+    **比赛名称** : [AlpacaHack Round 9 (Crypto)](https://alpacahack.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-01-26 11:00:00 - 2025-01-26 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
+    **添加日历** : https://ctftime.org/event/2633.ics  
+    

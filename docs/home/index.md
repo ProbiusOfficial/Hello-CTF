@@ -67,15 +67,6 @@ hide:
             **其他说明** : HGAME 2025由杭州电子科技大学信息安全协会 Vidar-Team 主办，为个人解题赛。比赛时间为2025年2月3日至2025年2月17日，赛题复现开放至2月24日。报名从2025年1月20日开始，比赛进行期间可随时注册参赛。校外群：576834793  
                 
     === "国外比赛"
-        ??? Quote "[AlpacaHack Round 9 (Crypto)](https://alpacahack.com/)"  
-            [![](https://ctftime.org/media/events/dark_512_3.png){ width="200" align=left }](https://alpacahack.com/)  
-            **比赛名称** : [AlpacaHack Round 9 (Crypto)](https://alpacahack.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-01-26 11:00:00 - 2025-01-26 17:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
-            **添加日历** : https://ctftime.org/event/2633.ics  
-            
         ??? Quote "[Dreamhack CTF Season 7 Round #3 (Div. 1)](https://dreamhack.io/ctf/657)"  
             [![](https://ctftime.org/media/events/bg3.jpg){ width="200" align=left }](https://dreamhack.io/ctf/657)  
             **比赛名称** : [Dreamhack CTF Season 7 Round #3 (Div. 1)](https://dreamhack.io/ctf/657)  
@@ -102,6 +93,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
             **添加日历** : https://ctftime.org/event/2596.ics  
+            
+        ??? Quote "[BITSCTF 2025](https://ctf.bitskrieg.in/)"  
+            [![](https://ctftime.org/media/events/BITSkrieg_logo.png){ width="200" align=left }](https://ctf.bitskrieg.in/)  
+            **比赛名称** : [BITSCTF 2025](https://ctf.bitskrieg.in/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-02-07 20:00:00 - 2025-02-09 20:00:00 UTC+8  
+            **比赛权重** : 21.81  
+            **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
+            **添加日历** : https://ctftime.org/event/2607.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
