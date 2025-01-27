@@ -287,7 +287,7 @@ comments: true
     [![](https://ctftime.org/media/events/matrix_1.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
     **比赛名称** : [Midnight Sun CTF 2025 Quals](https://play.midnightsunctf.com/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-19 20:00:00 - 2025-04-19 20:00:00 UTC+8  
+    **比赛时间** : 2025-04-19 20:00:00 - 2025-04-20 20:00:00 UTC+8  
     **比赛权重** : 53.00  
     **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
     **添加日历** : https://ctftime.org/event/2632.ics  
