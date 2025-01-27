@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [windows句柄表学习（1）](https://xia0ji233.github.io/2025/01/26/WindowsObjectTable1/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-26
+
+    来了解一下Windows内核的句柄表。句柄句柄就类似 Linux 的文件描述符，指示了某个进程在内核对象的偏移，内核可以通过这个下标找到对应的内核对象。1234HANDLE g_hMutex = ::CreateMutex( NULL , FALSE, "XYZ");HANDLE g_hMutex = ::OpenMutex( MUTEX_ALL_ACCESSFALSE, "XYZ");HANDL...
     ### [windows进程与线程学习——深入研究线程调度（2）](https://xia0ji233.github.io/2025/01/25/WindowsProcess5/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2025-01-25
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2024-11-22
 
     今天来学习一下X86中断与异常和控制寄存器中断中断通常是由CPU外部的输入输出设备（硬件）所触发的，供外部设备通知CPU有事情需要处理，因此又叫中断请求，英文为Interrupt Request。中断请求的目的是希望CPU暂时停止执行当前正在执行的程序，转去执行中断请求所对应的中断处理例程，中断处理程序由 IDT 表决定。80x86 有两条中断请求线：非屏蔽中断线，NMI，全称NonMaskabl...
-    ### [windows内核（5）——TLB](https://xia0ji233.github.io/2024/11/11/WindowsKernel5/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2024-11-11
-
-    今天来学习一下TLB的一些细节TLB简介TLB（Translation Lookaside Buffer，转换后援缓冲器），是一个硬件单元，它用于保存每个进程虚拟地址到物理地址的映射，这里做的对进程的区分大概是使用 CR3 区分的，这个点看很多文章都没有提到，但是仅仅保存线性地址到物理地址的映射是必然不够的，因为不同的进程的同一线性地址不一定对应相同的物理页，但是猜测大概是这样的。TLB 做了指令...
 
 </div>
