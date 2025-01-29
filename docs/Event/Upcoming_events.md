@@ -121,6 +121,15 @@ comments: true
     **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
     **添加日历** : https://ctftime.org/event/2624.ics  
     
+??? Quote "[PwnMe CTF Quals 2025](https://pwnme.fr/)"  
+    [![](https://ctftime.org/media/events/Untitled_design1.png){ width="200" align=left }](https://pwnme.fr/)  
+    **比赛名称** : [PwnMe CTF Quals 2025](https://pwnme.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-01 04:00:00 - 2025-03-03 02:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
+    **添加日历** : https://ctftime.org/event/2658.ics  
+    
 ??? Quote "[CSCG 2025](https://cscg.de/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://cscg.de/)  
     **比赛名称** : [CSCG 2025](https://cscg.de/)  
@@ -291,6 +300,15 @@ comments: true
     **比赛权重** : 69.44  
     **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
     **添加日历** : https://ctftime.org/event/2604.ics  
+    
+??? Quote "[PwnMe CTF Finals 2025](https://pwnme.fr/)"  
+    [![](https://ctftime.org/media/events/Untitled_design1_1.png){ width="200" align=left }](https://pwnme.fr/)  
+    **比赛名称** : [PwnMe CTF Finals 2025](https://pwnme.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-12 18:00:00 - 2025-04-13 04:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
+    **添加日历** : https://ctftime.org/event/2659.ics  
     
 ??? Quote "[Midnight Sun CTF 2025 Quals](https://play.midnightsunctf.com/)"  
     [![](https://ctftime.org/media/events/matrix_1.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
