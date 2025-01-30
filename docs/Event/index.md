@@ -374,6 +374,15 @@ hide:
                 **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
                 **添加日历** : https://ctftime.org/event/2617.ics  
                 
+            ??? Quote "[BroncoCTF 2025](https://broncoctf.xyz/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://broncoctf.xyz/)  
+                **比赛名称** : [BroncoCTF 2025](https://broncoctf.xyz/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-02-16 03:00:00 - 2025-02-17 03:00:00 UTC+8  
+                **比赛权重** : 22.51  
+                **赛事主办** : BroncoSec (https://ctftime.org/team/112673)  
+                **添加日历** : https://ctftime.org/event/2657.ics  
+                
             ??? Quote "[ThunderCipher](https://thundercipher.tech/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://thundercipher.tech/)  
                 **比赛名称** : [ThunderCipher](https://thundercipher.tech/)  
@@ -690,13 +699,6 @@ hide:
                 **报名时间** : 2024年11月23日 00:00 - 2024年12月06日 00:00  
                 **比赛时间** : 2024年12月07日 09:00 - 2024年12月07日 17:00  
                 **其他说明** : 国城杯初赛由国城杯初赛主办，比赛链接为https://ctf2024.goalcent.com/，4人组队，报名开始时间为2024年11月23日，报名截止时间为2024年12月06日，比赛开始时间为2024年12月07日，选手可通过QQ群629910816进行沟通。  
-                
-            ??? Quote "[第一届吾杯网络安全技能大赛](https://www.wucup.net/games/1)"  
-                **比赛名称** : [第一届吾杯网络安全技能大赛](https://www.wucup.net/games/1)  
-                **比赛类型** : 线上Jeopardy解题赛  
-                **报名时间** : 2024年12月01日 08:59 - 2024年12月01日 08:59  
-                **比赛时间** : 2024年12月01日 09:00 - 2024年12月01日 16:00  
-                **其他说明** : 第一届吾杯网络安全技能大赛由东莞市东城小宇网络工作室主办，潮州市极玩网络科技有限公司承办。比赛时间为2024年12月01日 09:00至16:00，报名截止时间为2024年12月01日 08:59。更多信息请访问比赛官网。  
                 
         === "国外赛事"
             ??? Quote "[AlpacaHack Round 9 (Crypto)](https://alpacahack.com/)"  
