@@ -302,6 +302,15 @@ hide:
                 **其他说明** : VNCTF 2025由V&N Team主办，个人赛，可报名，即将开始，中途可加入。报名开始时间为2025年01月01日 00:00，比赛时间为2025年02月08日 10:00至2025年02月09日 10:00。更多信息请加QQ群717513199。  
                 
         === "国外赛事"
+            ??? Quote "[ECTF](https://ectf.fr/)"  
+                [![](https://ctftime.org/media/events/fond-blanc_texte-noir.png){ width="200" align=left }](https://ectf.fr/)  
+                **比赛名称** : [ECTF](https://ectf.fr/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-01-31 19:00:00 - 2025-02-02 19:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : CYBER & CHILL (https://ctftime.org/team/299061)  
+                **添加日历** : https://ctftime.org/event/2663.ics  
+                
             ??? Quote "[Dreamhack CTF Season 7 Round #3 (Div. 1)](https://dreamhack.io/ctf/657)"  
                 [![](https://ctftime.org/media/events/bg3.jpg){ width="200" align=left }](https://dreamhack.io/ctf/657)  
                 **比赛名称** : [Dreamhack CTF Season 7 Round #3 (Div. 1)](https://dreamhack.io/ctf/657)  
@@ -364,6 +373,15 @@ hide:
                 **比赛权重** : 36.70  
                 **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
                 **添加日历** : https://ctftime.org/event/2592.ics  
+                
+            ??? Quote "[TheDeccanCTF](https://0x1337iiit.github.io/ctf)"  
+                [![](https://ctftime.org/media/events/logo_104.png){ width="200" align=left }](https://0x1337iiit.github.io/ctf)  
+                **比赛名称** : [TheDeccanCTF](https://0x1337iiit.github.io/ctf)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-02-08 21:00:00 - 2025-02-09 18:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : 0x1337iiit (https://ctftime.org/team/367132)  
+                **添加日历** : https://ctftime.org/event/2656.ics  
                 
             ??? Quote "[DiceCTF 2025 Quals](https://ctf.dicega.ng/)"  
                 [![](https://ctftime.org/media/events/dicectf_2_1_1_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
@@ -1103,7 +1121,7 @@ hide:
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2024-11-30 20:00:00 - 2024-12-01 20:00:00 UTC+8  
                 **比赛权重** : 24.48  
-                **赛事主办** : World Wide Flags (https://ctftime.org/team/283853)  
+                **赛事主办** : 🐧‎ (https://ctftime.org/team/283853)  
                 **添加日历** : https://ctftime.org/event/2572.ics  
                 
             ??? Quote "[CYBERGON CTF_2024](https://cybergon.ctfd.io/)"  

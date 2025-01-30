@@ -1,5 +1,17 @@
 [
     {
+        "比赛名称": "ECTF",
+        "比赛时间": "2025-01-31 19:00:00 - 2025-02-02 19:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2663.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ectf.fr/",
+        "比赛标志": "https://ctftime.org/media/events/fond-blanc_texte-noir.png",
+        "比赛权重": "0.00",
+        "赛事主办": "CYBER & CHILL (https://ctftime.org/team/299061)",
+        "比赛ID": "1247",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Dreamhack CTF Season 7 Round #3 (Div. 1)",
         "比赛时间": "2025-02-01 08:00:00 - 2025-02-01 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2623.ics",
@@ -81,6 +93,18 @@
         "比赛权重": "36.70",
         "赛事主办": "PBR | UCLA (https://ctftime.org/team/186494)",
         "比赛ID": "820",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "TheDeccanCTF",
+        "比赛时间": "2025-02-08 21:00:00 - 2025-02-09 18:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2656.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://0x1337iiit.github.io/ctf",
+        "比赛标志": "https://ctftime.org/media/events/logo_104.png",
+        "比赛权重": "0.00",
+        "赛事主办": "0x1337iiit (https://ctftime.org/team/367132)",
+        "比赛ID": "1224",
         "比赛状态": "oncoming"
     },
     {
@@ -1039,7 +1063,7 @@
         "比赛链接": "https://wwctf.com/",
         "比赛标志": "https://ctftime.org/media/events/logobg.png",
         "比赛权重": "24.48",
-        "赛事主办": "World Wide Flags (https://ctftime.org/team/283853)",
+        "赛事主办": "🐧‎ (https://ctftime.org/team/283853)",
         "比赛ID": "1208",
         "比赛状态": "past"
     },
