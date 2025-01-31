@@ -419,6 +419,15 @@ hide:
                 **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
                 **添加日历** : https://ctftime.org/event/2624.ics  
                 
+            ??? Quote "[TPCTF 2025](https://tpctf2025.xctf.org.cn/)"  
+                [![](https://ctftime.org/media/events/TPCTF_ba-stylenulla.top_1.png){ width="200" align=left }](https://tpctf2025.xctf.org.cn/)  
+                **比赛名称** : [TPCTF 2025](https://tpctf2025.xctf.org.cn/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-02-22 09:00:00 - 2025-02-24 09:00:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : TP-Link (https://ctftime.org/team/273760)  
+                **添加日历** : https://ctftime.org/event/2645.ics  
+                
             ??? Quote "[PwnMe CTF Quals 2025](https://pwnme.fr/)"  
                 [![](https://ctftime.org/media/events/PWNME_ReseauxPP1_1.jpg){ width="200" align=left }](https://pwnme.fr/)  
                 **比赛名称** : [PwnMe CTF Quals 2025](https://pwnme.fr/)  
