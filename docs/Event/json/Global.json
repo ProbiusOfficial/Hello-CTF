@@ -528,6 +528,18 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "Angela Saccone",
+        "比赛时间": "2025-01-31 15:00:00 - 2025-02-01 15:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2665.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://atcwintervibescommunityctf.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/ATC_Logo_2.PNG",
+        "比赛权重": "0.00",
+        "赛事主办": "ATC CTF Team (https://ctftime.org/team/370333)",
+        "比赛ID": "1254",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "AlpacaHack Round 9 (Crypto)",
         "比赛时间": "2025-01-26 11:00:00 - 2025-01-26 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2633.ics",
