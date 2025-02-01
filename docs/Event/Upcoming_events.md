@@ -22,15 +22,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[BearcatCTF 2025: World Tour](https://play.bearcatctf.io/)"  
-    [![](https://ctftime.org/media/events/bearcat25_logo_short.png){ width="200" align=left }](https://play.bearcatctf.io/)  
-    **比赛名称** : [BearcatCTF 2025: World Tour](https://play.bearcatctf.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-02-01 20:00:00 - 2025-02-02 20:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
-    **添加日历** : https://ctftime.org/event/2596.ics  
-    
 ??? Quote "[BITSCTF 2025](https://ctf.bitskrieg.in/)"  
     [![](https://ctftime.org/media/events/BITSkrieg_logo.png){ width="200" align=left }](https://ctf.bitskrieg.in/)  
     **比赛名称** : [BITSCTF 2025](https://ctf.bitskrieg.in/)  
