@@ -67,15 +67,6 @@ hide:
             **其他说明** : HGAME 2025由杭州电子科技大学信息安全协会 Vidar-Team 主办，为个人解题赛。比赛时间为2025年2月3日至2025年2月17日，赛题复现开放至2月24日。报名从2025年1月20日开始，比赛进行期间可随时注册参赛。校外群：576834793  
                 
     === "国外比赛"
-        ??? Quote "[Dreamhack CTF Season 7 Round #3 (Div. 1)](https://dreamhack.io/ctf/657)"  
-            [![](https://ctftime.org/media/events/cover03.jpg){ width="200" align=left }](https://dreamhack.io/ctf/657)  
-            **比赛名称** : [Dreamhack CTF Season 7 Round #3 (Div. 1)](https://dreamhack.io/ctf/657)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-02-01 08:00:00 - 2025-02-01 23:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
-            **添加日历** : https://ctftime.org/event/2623.ics  
-            
         ??? Quote "[Nullcon Goa HackIM 2025 CTF](https://ctf.nullcon.net/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://ctf.nullcon.net/)  
             **比赛名称** : [Nullcon Goa HackIM 2025 CTF](https://ctf.nullcon.net/)  
@@ -85,9 +76,9 @@ hide:
             **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
             **添加日历** : https://ctftime.org/event/2642.ics  
             
-        ??? Quote "[BearcatCTF 2025: World Tour](https://www.bearcatctf.io/)"  
-            [![](https://ctftime.org/media/events/bearcat25_logo_short.png){ width="200" align=left }](https://www.bearcatctf.io/)  
-            **比赛名称** : [BearcatCTF 2025: World Tour](https://www.bearcatctf.io/)  
+        ??? Quote "[BearcatCTF 2025: World Tour](https://play.bearcatctf.io/)"  
+            [![](https://ctftime.org/media/events/bearcat25_logo_short.png){ width="200" align=left }](https://play.bearcatctf.io/)  
+            **比赛名称** : [BearcatCTF 2025: World Tour](https://play.bearcatctf.io/)  
             **比赛形式** : Jeopardy  
             **比赛时间** : 2025-02-01 20:00:00 - 2025-02-02 20:00:00 UTC+8  
             **比赛权重** : 0.00  
@@ -102,6 +93,15 @@ hide:
             **比赛权重** : 21.81  
             **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
             **添加日历** : https://ctftime.org/event/2607.ics  
+            
+        ??? Quote "[Pragyan CTF 2025](https://ctf.prgy.in/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ctf.prgy.in/)  
+            **比赛名称** : [Pragyan CTF 2025](https://ctf.prgy.in/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-02-07 20:30:00 - 2025-02-09 02:30:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Pragyan (https://ctftime.org/team/33867)  
+            **添加日历** : https://ctftime.org/event/2608.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

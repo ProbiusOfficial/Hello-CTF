@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Dreamhack CTF Season 7 Round #3 (Div. 1)",
-        "比赛时间": "2025-02-01 08:00:00 - 2025-02-01 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2623.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dreamhack.io/ctf/657",
-        "比赛标志": "https://ctftime.org/media/events/cover03.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
-        "比赛ID": "1232",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Nullcon Goa HackIM 2025 CTF",
         "比赛时间": "2025-02-01 16:30:00 - 2025-02-02 16:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2642.ics",
@@ -28,7 +16,7 @@
         "比赛时间": "2025-02-01 20:00:00 - 2025-02-02 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2596.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.bearcatctf.io/",
+        "比赛链接": "https://play.bearcatctf.io/",
         "比赛标志": "https://ctftime.org/media/events/bearcat25_logo_short.png",
         "比赛权重": "0.00",
         "赛事主办": "Cyber@UC (https://ctftime.org/team/87727)",
@@ -549,6 +537,18 @@
         "比赛权重": "0.00",
         "赛事主办": "CYBER & CHILL (https://ctftime.org/team/299061)",
         "比赛ID": "1247",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Dreamhack CTF Season 7 Round #3 (Div. 1)",
+        "比赛时间": "2025-02-01 08:00:00 - 2025-02-01 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2623.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://dreamhack.io/ctf/657",
+        "比赛标志": "https://ctftime.org/media/events/cover03.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
+        "比赛ID": "1232",
         "比赛状态": "nowrunning"
     },
     {
