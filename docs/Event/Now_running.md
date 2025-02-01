@@ -18,15 +18,6 @@ comments: true
     **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
     **添加日历** : https://ctftime.org/event/2542.ics  
     
-??? Quote "[ATC Winter Vibes Community CTF](https://atcwintervibescommunityctf.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/ATC_Logo_2.PNG){ width="200" align=left }](https://atcwintervibescommunityctf.ctfd.io/)  
-    **比赛名称** : [ATC Winter Vibes Community CTF](https://atcwintervibescommunityctf.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-01-31 15:00:00 - 2025-02-01 15:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : ATC CTF Team (https://ctftime.org/team/370333)  
-    **添加日历** : https://ctftime.org/event/2665.ics  
-    
 ??? Quote "[ECTF](https://ectf.fr/)"  
     [![](https://ctftime.org/media/events/fond-blanc_texte-noir.png){ width="200" align=left }](https://ectf.fr/)  
     **比赛名称** : [ECTF](https://ectf.fr/)  
