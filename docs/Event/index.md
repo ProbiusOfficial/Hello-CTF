@@ -302,15 +302,6 @@ hide:
                 **其他说明** : VNCTF 2025由V&N Team主办，个人赛，可报名，即将开始，中途可加入。报名开始时间为2025年01月01日 00:00，比赛时间为2025年02月08日 10:00至2025年02月09日 10:00。更多信息请加QQ群717513199。  
                 
         === "国外赛事"
-            ??? Quote "[Nullcon Goa HackIM 2025 CTF](https://ctf.nullcon.net/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.nullcon.net/)  
-                **比赛名称** : [Nullcon Goa HackIM 2025 CTF](https://ctf.nullcon.net/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-02-01 16:30:00 - 2025-02-02 16:30:00 UTC+8  
-                **比赛权重** : 30.00  
-                **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
-                **添加日历** : https://ctftime.org/event/2642.ics  
-                
             ??? Quote "[BearcatCTF 2025: World Tour](https://play.bearcatctf.io/)"  
                 [![](https://ctftime.org/media/events/bearcat25_logo_short.png){ width="200" align=left }](https://play.bearcatctf.io/)  
                 **比赛名称** : [BearcatCTF 2025: World Tour](https://play.bearcatctf.io/)  
@@ -710,6 +701,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
                 **添加日历** : https://ctftime.org/event/2623.ics  
+                
+            ??? Quote "[Nullcon Goa HackIM 2025 CTF](https://ctf.nullcon.net/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.nullcon.net/)  
+                **比赛名称** : [Nullcon Goa HackIM 2025 CTF](https://ctf.nullcon.net/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-02-01 16:30:00 - 2025-02-02 16:30:00 UTC+8  
+                **比赛权重** : 30.00  
+                **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
+                **添加日历** : https://ctftime.org/event/2642.ics  
                 
     === "*已经结束*"
         === "国内赛事"
