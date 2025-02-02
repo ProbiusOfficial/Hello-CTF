@@ -454,3 +454,287 @@ admin@probius.xyz ------------------------------------ echo $deserializedUser->g
 
 PHP官方文档已经很详细了，这里不在赘述，不一定需要学会所有的函数，除开常见的，其他的在遇到的时候查阅即可。
 
+### 对魔术方法的一些补充
+
+探老师写的反序列化方法已经很详细了，这里简单对一些方法进行补充。
+
+#### __wakeup()
+
+> 当使用unserialize时被调用，可用于做些对象的初始化操作（unserialize触发）
+
+继续修改上面的代码，我们添加一个 `__wakeup()` 方法
+
+```php
+public function __wakeup(){
+//  实际开发别这样写
+    exec($this->oneFive);
+}
+```
+
+如果我们没有对 `__construct `中的 `$oneFive` 变量做过滤的话，`unserialize`在执行完后时会自动调用`__wakeup()`的，所以`__wakeup()`一般在赛场上做过滤（可以绕过），实际开发应该用于对象反序列化后对其状态进行恢复
+
+![img](./assets/3e2ecc-577457-78805a221a988e79ef3f42d7.png)
+
+接下来我们在`__wakeup()`里加入一些过滤方法，来看看怎么利用`__wakeup()`函数失效（[CVE-2016-7124](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7124)）来绕过这个函数
+
+```php
+class DingZhen
+{
+    public $oneFive;
+
+    public function __construct($oneFive)
+    {
+        $this->oneFive = $oneFive;
+    }
+
+    public function __destruct()
+    {
+        echo exec($this->oneFive) . ": I got smoke.";
+    }
+
+    public function __wakeup(){
+    //  实际开发别这样写
+        if (preg_match("/\b(exec|system)\b/i", "", $this->oneFive)){
+            echo $this->oneFive;
+        }
+    }
+}
+```
+
+将序列化后的数据的参数数量+1即可
+
+![img](./assets/35f1e9-a45f3c-78805a221a988e79ef3f42d7.png)
+
+加了一后，正常运行
+
+![img](./assets/870f21-81e2a5-78805a221a988e79ef3f42d7.png)
+
+#### __sleep()
+
+> serialize() 函数会检查类中是否存在一个魔术方法 __sleep()。如果存在，该方法会先被调用，然后才执行序列化操作。（serialize）
+>
+> 注意：__sleep()只能返回数组
+
+```php
+<?php
+
+class Example {
+    public function __sleep() {
+        return ['data'];
+    }
+}
+
+$a = new Example();
+$a->data = 'flag';
+$b = serialize($a);
+echo $b;
+```
+
+很好理解
+
+#### __destruct()
+
+> __destruct 函数会在到某个对象的所有引用都被删除或者当对象被显式销毁时执行
+
+```php
+<?php
+
+class DingZhen
+{
+    public $oneFive;
+
+    public function __construct($oneFive)
+    {
+        $this->oneFive = $oneFive;
+    }
+    public function session1(){
+        echo "1\n";
+    }
+    public function __destruct()
+    {
+        echo "Done!";
+    }
+}
+
+$a = new DingZhen("ls");
+$a->session1();
+```
+
+很好理解
+
+![img](./assets/73217a-9e927b-78805a221a988e79ef3f42d7.png)
+
+#### __toString()
+
+> 方法用于一个类被当成字符串时应怎样回应。例如 `echo $obj;` 应该显示些什么。
+
+很好理解
+
+```php
+<?php
+class Example {
+    public $data;
+    public function __construct($data){
+        $this->data = data;
+    }
+    public function __toString() {
+        return eval($this->data);
+    }
+}
+
+$a = 'O:7:"Example":1:{s:4:"data";s:10:"phpinfo();";}';
+$b = unserialize($a);
+$c = $b;        // 注意这里
+echo $c;        // 注意这里
+```
+
+![img](./assets/8ff71c-ff26d4-78805a221a988e79ef3f42d7.png)
+
+#### __invoke()
+
+> 当尝试以调用函数的方式调用一个对象时，[__invoke()](https://www.php.net/manual/zh/language.oop5.magic.php#object.invoke) 方法会被自动调用。
+
+```php
+<?php
+
+class Example {
+    public $data;
+    public function __construct($data){
+        $this->data = data;
+    }
+    public function __invoke(){
+        eval($this->data);
+    }
+}
+$a =  'O:7:"Example":1:{s:4:"data";s:10:"phpinfo();";}';
+$b = unserialize($a);
+$b();
+```
+
+非常好理解👍
+
+![img](./assets/66069e-51149d-78805a221a988e79ef3f42d7.png)
+
+#### __construct()
+
+> PHP 允许开发者在一个类中定义一个方法作为**构造函数**（__construct）。具有构造函数的类会在每次创建新对象时先调用此方法，所以非常适合在使用对象之前做一些初始化工作
+
+```php
+<?php
+
+class Example{
+    private $a;
+    private $b;
+    private $c;
+    public function __construct($a, $b, $c)
+    {
+        $this->a = $a;
+        $this->b = $b;
+        $this->c = $c;
+    }
+    public function getAll(){
+        return "A: " . $this->a . "\n" .
+            "B: " . $this->b . "\n" .
+            "C: " . $this->c . "\n";
+    }
+}
+$a = new Example("我是", "理塘", "丁真");
+echo $a->getAll();
+```
+
+很好理解，他将输出
+
+```
+A: 我是
+B: 理塘
+C: 丁真
+```
+
+#### __destruct()
+
+> PHP 有**析构函数**（__destruct）的概念，这类似于其它面向对象的语言，如 C++。**析构函数会在到某个对象的所有引用都被删除或者当对象被显式销毁时执行。**
+
+```php
+<?php
+
+class Example{
+    private $a;
+    private $b;
+    private $c;
+    public function __construct($a, $b, $c)
+    {
+        $this->a = $a;
+        $this->b = $b;
+        $this->c = $c;
+    }
+    public function getAll(){
+        return "A: " . $this->a . "\n" .
+            "B: " . $this->b . "\n" .
+            "C: " . $this->c . "\n";
+    }
+    public function __destruct(){
+        $this->a = "一";
+        $this->b = "五";
+        $this->c = "！";
+        echo "A: " . $this->a . "\n" .
+            "B: " . $this->b . "\n" .
+            "C: " . $this->c . "\n";
+    }
+}
+$a = new Example("我是", "理塘", "丁真");
+echo $a->getAll();
+```
+
+很好理解，这将输出
+
+```
+A: 我是
+B: 理塘
+C: 丁真
+A: 一
+B: 五
+C: ！
+```
+
+#### __call()和__callStatic()
+
+> 在对象中调用一个不可访问方法时，[__call()](https://www.php.net/manual/zh/language.oop5.overloading.php#object.call) 会被调用。
+>
+> 在静态上下文中调用一个不可访问方法时，[__callStatic()](https://www.php.net/manual/zh/language.oop5.overloading.php#object.callstatic) 会被调用。
+
+很好理解
+
+```php
+<?php
+class Example{
+    public function __call($name, $arguments)
+    {
+        // 注意: $name 的值区分大小写
+        echo "Calling object method '$name' "
+            . implode(', ', $arguments). "\n";
+    }
+
+    public static function __callStatic($name, $arguments)
+    {
+        // 注意: $name 的值区分大小写
+        echo "Calling static method '$name' "
+            . implode(', ', $arguments). "\n";
+    }
+}
+$obj = new Example();
+$obj->fuck('me');
+Example::mother('fuck');
+```
+
+非常好理解，爱来自我❤
+
+#### 属性重载
+
+- 在给不可访问（protected 或 private）或不存在的属性赋值时，[__set()](https://www.php.net/manual/zh/language.oop5.overloading.php#object.set) 会被调用。
+- 读取不可访问（protected 或 private）或不存在的属性的值时，[__get()](https://www.php.net/manual/zh/language.oop5.overloading.php#object.get) 会被调用。
+- 当对不可访问（protected 或 private）或不存在的属性调用 [isset()](https://www.php.net/manual/zh/function.isset.php) 或 [empty()](https://www.php.net/manual/zh/function.empty.php) 时，[__isset()](https://www.php.net/manual/zh/language.oop5.overloading.php#object.isset) 会被调用。
+- 当对不可访问（protected 或 private）或不存在的属性调用 [unset()](https://www.php.net/manual/zh/function.unset.php) 时，[__unset()](https://www.php.net/manual/zh/language.oop5.overloading.php#object.unset) 会被调用。
+
+这一块没什么好说的，但在POP链反序列化里会比较常见，建议自己到官网看看。
+
+[PHP: 重载 - Manual](https://www.php.net/manual/zh/language.oop5.overloading.php#object.set)
