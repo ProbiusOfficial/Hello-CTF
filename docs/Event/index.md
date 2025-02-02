@@ -675,15 +675,6 @@ hide:
                 **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
                 **添加日历** : https://ctftime.org/event/2542.ics  
                 
-            ??? Quote "[BearcatCTF 2025: World Tour](https://play.bearcatctf.io/)"  
-                [![](https://ctftime.org/media/events/bearcat25_logo_short.png){ width="200" align=left }](https://play.bearcatctf.io/)  
-                **比赛名称** : [BearcatCTF 2025: World Tour](https://play.bearcatctf.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-02-01 20:00:00 - 2025-02-02 20:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
-                **添加日历** : https://ctftime.org/event/2596.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[NSSCTF Round26](https://www.nssctf.cn/contest)"  
@@ -701,6 +692,15 @@ hide:
                 **其他说明** : 国城杯初赛由国城杯初赛主办，比赛链接为https://ctf2024.goalcent.com/，4人组队，报名开始时间为2024年11月23日，报名截止时间为2024年12月06日，比赛开始时间为2024年12月07日，选手可通过QQ群629910816进行沟通。  
                 
         === "国外赛事"
+            ??? Quote "[BearcatCTF 2025: World Tour](https://play.bearcatctf.io/)"  
+                [![](https://ctftime.org/media/events/bearcat25_logo_short.png){ width="200" align=left }](https://play.bearcatctf.io/)  
+                **比赛名称** : [BearcatCTF 2025: World Tour](https://play.bearcatctf.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-02-01 20:00:00 - 2025-02-02 20:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
+                **添加日历** : https://ctftime.org/event/2596.ics  
+                
             ??? Quote "[Nullcon Goa HackIM 2025 CTF](https://ctf.nullcon.net/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.nullcon.net/)  
                 **比赛名称** : [Nullcon Goa HackIM 2025 CTF](https://ctf.nullcon.net/)  
@@ -796,7 +796,7 @@ hide:
                 **比赛名称** : [Remedy CTF 2025](https://ctf.r.xyz/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-01-24 20:00:00 - 2025-01-26 20:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 0.00  
                 **赛事主办** : Hexens (https://ctftime.org/team/355136)  
                 **添加日历** : https://ctftime.org/event/2618.ics  
                 
@@ -1591,15 +1591,6 @@ hide:
                 **比赛权重** : 22.40  
                 **赛事主办** : NICC (https://ctftime.org/team/214936)  
                 **添加日历** : https://ctftime.org/event/2516.ics  
-                
-            ??? Quote "[HeroCTF v6](https://ctf.heroctf.fr/)"  
-                [![](https://ctftime.org/media/events/HeroCTF_icon_500_1_1.png){ width="200" align=left }](https://ctf.heroctf.fr/)  
-                **比赛名称** : [HeroCTF v6](https://ctf.heroctf.fr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-26 05:00:00 - 2024-10-28 07:00:00 UTC+8  
-                **比赛权重** : 43.94  
-                **赛事主办** : HeroCTF (https://ctftime.org/team/145166)  
-                **添加日历** : https://ctftime.org/event/2496.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
