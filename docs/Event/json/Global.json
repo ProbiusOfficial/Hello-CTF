@@ -504,18 +504,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Nullcon Goa HackIM 2025 CTF",
-        "比赛时间": "2025-02-01 16:30:00 - 2025-02-02 16:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2642.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.nullcon.net/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "30.00",
-        "赛事主办": "ENOFLAG (https://ctftime.org/team/1438)",
-        "比赛ID": "27",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "BearcatCTF 2025: World Tour",
         "比赛时间": "2025-02-01 20:00:00 - 2025-02-02 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2596.ics",
@@ -526,6 +514,18 @@
         "赛事主办": "Cyber@UC (https://ctftime.org/team/87727)",
         "比赛ID": "1032",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Nullcon Goa HackIM 2025 CTF",
+        "比赛时间": "2025-02-01 16:30:00 - 2025-02-02 16:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2642.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.nullcon.net/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "30.00",
+        "赛事主办": "ENOFLAG (https://ctftime.org/team/1438)",
+        "比赛ID": "27",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Dreamhack CTF Season 7 Round #3 (Div. 1)",
@@ -1713,18 +1713,6 @@
         "比赛权重": "0.00",
         "赛事主办": "CypherLock (https://ctftime.org/team/356395)",
         "比赛ID": "1187",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Enigma Xplore 2.0 CTF",
-        "比赛时间": "2024-10-24 21:30:00 - 2024-10-25 21:29:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2555.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://enigmaxplore.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/tf-logo-24-min.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Crispr_iiitn (https://ctftime.org/team/270138)",
-        "比赛ID": "1182",
         "比赛状态": "past"
     }
 ]
