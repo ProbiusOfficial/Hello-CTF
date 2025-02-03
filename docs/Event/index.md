@@ -287,13 +287,6 @@ hide:
     
     === "*即将开始*"
         === "国内赛事"
-            ??? Quote "[HGAME 2025](https://hgame.vidar.club/games/2)"  
-                **比赛名称** : [HGAME 2025](https://hgame.vidar.club/games/2)  
-                **比赛类型** : 线上Jeopardy解题赛  
-                **报名时间** : 2025年1月20日 20:00 - 2025年2月17日 19:59  
-                **比赛时间** : 2025年2月3日 20:00 - 2025年2月17日 20:00  
-                **其他说明** : HGAME 2025由杭州电子科技大学信息安全协会 Vidar-Team 主办，为个人解题赛。比赛时间为2025年2月3日至2025年2月17日，赛题复现开放至2月24日。报名从2025年1月20日开始，比赛进行期间可随时注册参赛。校外群：576834793  
-                
             ??? Quote "[VNCTF 2025](https://ctf.vnteam.cn)"  
                 **比赛名称** : [VNCTF 2025](https://ctf.vnteam.cn)  
                 **比赛类型** : 线上Jeopardy解题赛  
@@ -664,7 +657,13 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-    
+            ??? Quote "[HGAME 2025](https://hgame.vidar.club/games/2)"  
+                **比赛名称** : [HGAME 2025](https://hgame.vidar.club/games/2)  
+                **比赛类型** : 线上Jeopardy解题赛  
+                **报名时间** : 2025年1月20日 20:00 - 2025年2月17日 19:59  
+                **比赛时间** : 2025年2月3日 20:00 - 2025年2月17日 20:00  
+                **其他说明** : HGAME 2025由杭州电子科技大学信息安全协会 Vidar-Team 主办，为个人解题赛。比赛时间为2025年2月3日至2025年2月17日，赛题复现开放至2月24日。报名从2025年1月20日开始，比赛进行期间可随时注册参赛。校外群：576834793  
+                
         === "国外赛事"
             ??? Quote "[2025 Embedded Capture the Flag](https://ectf.mitre.org/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ectf.mitre.org/)  
