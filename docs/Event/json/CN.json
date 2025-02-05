@@ -61,26 +61,6 @@
                 },
                 "tag": "",
                 "readmore": "NSSCTF Round26 由NSSCTF主办，比赛时间为2024年12月28日 14:00至17:00，报名已结束，比赛QQ群为864395049。"
-            },
-            {
-                "name": "国城杯初赛",
-                "info_confirmed": 1,
-                "mid_join": 0,
-                "link": "https://ctf2024.goalcent.com/",
-                "status": "已经结束",
-                "is_reg": 1,
-                "limit": "4",
-                "type": "线上Jeopardy解题赛",
-                "reg_time_start": "2024年11月23日 00:00",
-                "reg_time_end": "2024年12月06日 00:00",
-                "comp_time_start": "2024年12月07日 09:00",
-                "comp_time_end": "2024年12月07日 17:00",
-                "organizer": "国城杯初赛",
-                "contac": {
-                    "QQ群": "629910816"
-                },
-                "tag": "普通赛",
-                "readmore": "国城杯初赛由国城杯初赛主办，比赛链接为https://ctf2024.goalcent.com/，4人组队，报名开始时间为2024年11月23日，报名截止时间为2024年12月06日，比赛开始时间为2024年12月07日，选手可通过QQ群629910816进行沟通。"
             }
         ],
         "total": 77,
