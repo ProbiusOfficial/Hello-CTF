@@ -267,6 +267,15 @@ comments: true
     **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
     **添加日历** : https://ctftime.org/event/2585.ics  
     
+??? Quote "[Breach CTF 2025](https://www.breachers.in/)"  
+    [![](https://ctftime.org/media/events/logo_107.png){ width="200" align=left }](https://www.breachers.in/)  
+    **比赛名称** : [Breach CTF 2025](https://www.breachers.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-05 10:30:00 - 2025-04-06 10:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : IITBreachers (https://ctftime.org/team/165802)  
+    **添加日历** : https://ctftime.org/event/2671.ics  
+    
 ??? Quote "[Dreamhack Invitational 2025](https://dreamhack.io/)"  
     [![](https://ctftime.org/media/events/e66fed5653581908ac8e93f82ad73cae.jpg){ width="200" align=left }](https://dreamhack.io/)  
     **比赛名称** : [Dreamhack Invitational 2025](https://dreamhack.io/)  
