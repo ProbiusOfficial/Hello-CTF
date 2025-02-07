@@ -108,6 +108,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Kashi CTF 2025",
+        "比赛时间": "2025-02-22 20:00:00 - 2025-02-23 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2668.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://kashictf.iitbhucybersec.in/",
+        "比赛标志": "https://ctftime.org/media/events/logo_105.png",
+        "比赛权重": "0.00",
+        "赛事主办": "IIT(BHU)CyberSec (https://ctftime.org/team/22546)",
+        "比赛ID": "1251",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "PwnMe CTF Quals 2025",
         "比赛时间": "2025-03-01 04:00:00 - 2025-03-03 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2658.ics",
