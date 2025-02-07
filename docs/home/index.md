@@ -60,15 +60,6 @@ hide:
             **其他说明** : VNCTF 2025由V&N Team主办，个人赛，可报名，即将开始，中途可加入。报名开始时间为2025年01月01日 00:00，比赛时间为2025年02月08日 10:00至2025年02月09日 10:00。更多信息请加QQ群717513199。  
                 
     === "国外比赛"
-        ??? Quote "[BITSCTF 2025](https://ctf.bitskrieg.in/)"  
-            [![](https://ctftime.org/media/events/BITSkrieg_logo.png){ width="200" align=left }](https://ctf.bitskrieg.in/)  
-            **比赛名称** : [BITSCTF 2025](https://ctf.bitskrieg.in/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-02-07 20:00:00 - 2025-02-09 20:00:00 UTC+8  
-            **比赛权重** : 21.81  
-            **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
-            **添加日历** : https://ctftime.org/event/2607.ics  
-            
         ??? Quote "[Pragyan CTF 2025](https://ctf.prgy.in/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://ctf.prgy.in/)  
             **比赛名称** : [Pragyan CTF 2025](https://ctf.prgy.in/)  
@@ -95,6 +86,15 @@ hide:
             **比赛权重** : 36.70  
             **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
             **添加日历** : https://ctftime.org/event/2592.ics  
+            
+        ??? Quote "[TheDeccanCTF](https://0x1337iiit.github.io/ctf)"  
+            [![](https://ctftime.org/media/events/logo_104.png){ width="200" align=left }](https://0x1337iiit.github.io/ctf)  
+            **比赛名称** : [TheDeccanCTF](https://0x1337iiit.github.io/ctf)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-02-08 17:30:00 - 2025-02-09 13:30:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : 0x1337iiit (https://ctftime.org/team/367132)  
+            **添加日历** : https://ctftime.org/event/2656.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

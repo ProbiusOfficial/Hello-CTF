@@ -24,3 +24,12 @@ comments: true
     **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
     **添加日历** : https://ctftime.org/event/2542.ics  
     
+??? Quote "[BITSCTF 2025](https://ctf.bitskrieg.in/)"  
+    [![](https://ctftime.org/media/events/BITSkrieg_logo.png){ width="200" align=left }](https://ctf.bitskrieg.in/)  
+    **比赛名称** : [BITSCTF 2025](https://ctf.bitskrieg.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-02-07 20:00:00 - 2025-02-09 20:00:00 UTC+8  
+    **比赛权重** : 21.81  
+    **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
+    **添加日历** : https://ctftime.org/event/2607.ics  
+    
