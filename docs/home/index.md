@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[TheDeccanCTF](https://0x1337iiit.github.io/ctf)"  
-            [![](https://ctftime.org/media/events/logo_104.png){ width="200" align=left }](https://0x1337iiit.github.io/ctf)  
-            **比赛名称** : [TheDeccanCTF](https://0x1337iiit.github.io/ctf)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-02-08 17:30:00 - 2025-02-09 13:30:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : 0x1337iiit (https://ctftime.org/team/367132)  
-            **添加日历** : https://ctftime.org/event/2656.ics  
-            
         ??? Quote "[DiceCTF 2025 Quals](https://ctf.dicega.ng/)"  
             [![](https://ctftime.org/media/events/dicectf_2_1_1_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
             **比赛名称** : [DiceCTF 2025 Quals](https://ctf.dicega.ng/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : ThunderCipher (https://ctftime.org/team/279782)  
             **添加日历** : https://ctftime.org/event/2635.ics  
+            
+        ??? Quote "[SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025](https://www.saiborg.io/)"  
+            [![](https://ctftime.org/media/events/saiborg-profile_1.jpg){ width="200" align=left }](https://www.saiborg.io/)  
+            **比赛名称** : [SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025](https://www.saiborg.io/)  
+            **比赛形式** : Hack quest  
+            **比赛时间** : 2025-02-21 22:30:00 - 2025-02-22 05:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Saiborg (https://ctftime.org/team/271868)  
+            **添加日历** : https://ctftime.org/event/2557.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
