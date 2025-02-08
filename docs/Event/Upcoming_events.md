@@ -15,15 +15,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Dreamhack Invitational Quals 2025](https://dreamhack.io/)"  
-    [![](https://ctftime.org/media/events/e66fed5653581908ac8e93f82ad73cae_1.jpg){ width="200" align=left }](https://dreamhack.io/)  
-    **比赛名称** : [Dreamhack Invitational Quals 2025](https://dreamhack.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-02-08 08:00:00 - 2025-02-09 08:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
-    **添加日历** : https://ctftime.org/event/2627.ics  
-    
 ??? Quote "[LA CTF 2025](https://lac.tf/)"  
     [![](https://ctftime.org/media/events/lactf-square-logo_1_1.png){ width="200" align=left }](https://lac.tf/)  
     **比赛名称** : [LA CTF 2025](https://lac.tf/)  

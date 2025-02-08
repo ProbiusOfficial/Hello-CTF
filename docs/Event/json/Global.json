@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Dreamhack Invitational Quals 2025",
-        "比赛时间": "2025-02-08 08:00:00 - 2025-02-09 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2627.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dreamhack.io/",
-        "比赛标志": "https://ctftime.org/media/events/e66fed5653581908ac8e93f82ad73cae_1.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
-        "比赛ID": "1090",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "LA CTF 2025",
         "比赛时间": "2025-02-08 12:00:00 - 2025-02-10 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2592.ics",
@@ -525,6 +513,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Pragyan (https://ctftime.org/team/33867)",
         "比赛ID": "97",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Dreamhack Invitational Quals 2025",
+        "比赛时间": "2025-02-08 08:00:00 - 2025-02-09 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2627.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://dreamhack.io/",
+        "比赛标志": "https://ctftime.org/media/events/e66fed5653581908ac8e93f82ad73cae_1.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
+        "比赛ID": "1090",
         "比赛状态": "nowrunning"
     },
     {
