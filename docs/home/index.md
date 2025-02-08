@@ -52,13 +52,7 @@ hide:
     ---
     <!-- 主页赛事展示_开始 -->
     === "国内比赛"
-        ??? Quote "[VNCTF 2025](https://ctf.vnteam.cn)"  
-            **比赛名称** : [VNCTF 2025](https://ctf.vnteam.cn)  
-            **比赛类型** : 线上Jeopardy解题赛  
-            **报名时间** : 2025年01月01日 00:00 - 2025年02月08日 09:59  
-            **比赛时间** : 2025年02月08日 10:00 - 2025年02月09日 10:00  
-            **其他说明** : VNCTF 2025由V&N Team主办，个人赛，可报名，即将开始，中途可加入。报名开始时间为2025年01月01日 00:00，比赛时间为2025年02月08日 10:00至2025年02月09日 10:00。更多信息请加QQ群717513199。  
-                
+    
     === "国外比赛"
         ??? Quote "[LA CTF 2025](https://lac.tf/)"  
             [![](https://ctftime.org/media/events/lactf-square-logo_1_1.png){ width="200" align=left }](https://lac.tf/)  
