@@ -480,18 +480,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Pragyan CTF 2025",
-        "比赛时间": "2025-02-07 20:30:00 - 2025-02-09 02:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2608.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.prgy.in/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Pragyan (https://ctftime.org/team/33867)",
-        "比赛ID": "97",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Dreamhack Invitational Quals 2025",
         "比赛时间": "2025-02-08 08:00:00 - 2025-02-09 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2627.ics",
@@ -526,6 +514,18 @@
         "赛事主办": "0x1337iiit (https://ctftime.org/team/367132)",
         "比赛ID": "1224",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Pragyan CTF 2025",
+        "比赛时间": "2025-02-07 20:30:00 - 2025-02-09 02:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2608.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.prgy.in/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "Pragyan (https://ctftime.org/team/33867)",
+        "比赛ID": "97",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "BearcatCTF 2025: World Tour",
@@ -1713,18 +1713,6 @@
         "比赛权重": "51.00",
         "赛事主办": "ISITDTU (https://ctftime.org/team/8241)",
         "比赛ID": "258",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SpookyCTF 2024",
-        "比赛时间": "2024-10-26 07:00:00 - 2024-10-28 07:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2516.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://spookyctf.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/Spooky.png",
-        "比赛权重": "22.40",
-        "赛事主办": "NICC (https://ctftime.org/team/214936)",
-        "比赛ID": "987",
         "比赛状态": "past"
     }
 ]

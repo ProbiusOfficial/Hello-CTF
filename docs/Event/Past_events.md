@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Pragyan CTF 2025](https://ctf.prgy.in/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.prgy.in/)  
+    **比赛名称** : [Pragyan CTF 2025](https://ctf.prgy.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-02-07 20:30:00 - 2025-02-09 02:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Pragyan (https://ctftime.org/team/33867)  
+    **添加日历** : https://ctftime.org/event/2608.ics  
+    
 ??? Quote "[BearcatCTF 2025: World Tour](https://play.bearcatctf.io/)"  
     [![](https://ctftime.org/media/events/bearcat25_logo_short.png){ width="200" align=left }](https://play.bearcatctf.io/)  
     **比赛名称** : [BearcatCTF 2025: World Tour](https://play.bearcatctf.io/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 51.00  
     **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
     **添加日历** : https://ctftime.org/event/2456.ics  
-    
-??? Quote "[SpookyCTF 2024](https://spookyctf.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/Spooky.png){ width="200" align=left }](https://spookyctf.ctfd.io/)  
-    **比赛名称** : [SpookyCTF 2024](https://spookyctf.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-26 07:00:00 - 2024-10-28 07:30:00 UTC+8  
-    **比赛权重** : 22.40  
-    **赛事主办** : NICC (https://ctftime.org/team/214936)  
-    **添加日历** : https://ctftime.org/event/2516.ics  
     
