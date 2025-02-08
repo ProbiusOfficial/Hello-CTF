@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[LA CTF 2025](https://lac.tf/)"  
-    [![](https://ctftime.org/media/events/lactf-square-logo_1_1.png){ width="200" align=left }](https://lac.tf/)  
-    **比赛名称** : [LA CTF 2025](https://lac.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-02-08 12:00:00 - 2025-02-10 06:00:00 UTC+8  
-    **比赛权重** : 36.70  
-    **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
-    **添加日历** : https://ctftime.org/event/2592.ics  
-    
 ??? Quote "[TheDeccanCTF](https://0x1337iiit.github.io/ctf)"  
     [![](https://ctftime.org/media/events/logo_104.png){ width="200" align=left }](https://0x1337iiit.github.io/ctf)  
     **比赛名称** : [TheDeccanCTF](https://0x1337iiit.github.io/ctf)  
