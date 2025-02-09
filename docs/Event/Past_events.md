@@ -21,6 +21,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[TheDeccanCTF](https://0x1337iiit.github.io/ctf)"  
+    [![](https://ctftime.org/media/events/logo_104.png){ width="200" align=left }](https://0x1337iiit.github.io/ctf)  
+    **比赛名称** : [TheDeccanCTF](https://0x1337iiit.github.io/ctf)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-02-08 17:30:00 - 2025-02-09 13:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : 0x1337iiit (https://ctftime.org/team/367132)  
+    **添加日历** : https://ctftime.org/event/2656.ics  
+    
 ??? Quote "[Dreamhack Invitational Quals 2025](https://dreamhack.io/)"  
     [![](https://ctftime.org/media/events/e66fed5653581908ac8e93f82ad73cae_1.jpg){ width="200" align=left }](https://dreamhack.io/)  
     **比赛名称** : [Dreamhack Invitational Quals 2025](https://dreamhack.io/)  
@@ -911,13 +920,4 @@ comments: true
     **比赛权重** : 1.00  
     **赛事主办** : Singapore AI CTF (https://ctftime.org/team/357504)  
     **添加日历** : https://ctftime.org/event/2546.ics  
-    
-??? Quote "[UrchinSec Aware CTF](https://ctf.urchinsec.com/)"  
-    [![](https://ctftime.org/media/events/URCHINSEC_free-file_1.png){ width="200" align=left }](https://ctf.urchinsec.com/)  
-    **比赛名称** : [UrchinSec Aware CTF](https://ctf.urchinsec.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-26 15:00:00 - 2024-10-28 03:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : UrchinSec (https://ctftime.org/team/175663)  
-    **添加日历** : https://ctftime.org/event/2527.ics  
     
