@@ -30,6 +30,15 @@ comments: true
     **赛事主办** : 0x1337iiit (https://ctftime.org/team/367132)  
     **添加日历** : https://ctftime.org/event/2656.ics  
     
+??? Quote "[LA CTF 2025](https://lac.tf/)"  
+    [![](https://ctftime.org/media/events/lactf-square-logo_1_1.png){ width="200" align=left }](https://lac.tf/)  
+    **比赛名称** : [LA CTF 2025](https://lac.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-02-08 12:00:00 - 2025-02-10 06:00:00 UTC+8  
+    **比赛权重** : 36.70  
+    **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
+    **添加日历** : https://ctftime.org/event/2592.ics  
+    
 ??? Quote "[Dreamhack Invitational Quals 2025](https://dreamhack.io/)"  
     [![](https://ctftime.org/media/events/e66fed5653581908ac8e93f82ad73cae_1.jpg){ width="200" align=left }](https://dreamhack.io/)  
     **比赛名称** : [Dreamhack Invitational Quals 2025](https://dreamhack.io/)  
@@ -911,13 +920,4 @@ comments: true
     **比赛权重** : 23.62  
     **赛事主办** : SKSD (https://ctftime.org/team/211952)  
     **添加日历** : https://ctftime.org/event/2552.ics  
-    
-??? Quote "[Russian CTF Cup 2024 Qualifier](https://ctfcup.ru/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctfcup.ru/)  
-    **比赛名称** : [Russian CTF Cup 2024 Qualifier](https://ctfcup.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-26 17:00:00 - 2024-10-27 17:00:00 UTC+8  
-    **比赛权重** : 24.21  
-    **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
-    **添加日历** : https://ctftime.org/event/2405.ics  
     
