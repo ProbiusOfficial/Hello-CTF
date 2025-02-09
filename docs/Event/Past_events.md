@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Dreamhack Invitational Quals 2025](https://dreamhack.io/)"  
+    [![](https://ctftime.org/media/events/e66fed5653581908ac8e93f82ad73cae_1.jpg){ width="200" align=left }](https://dreamhack.io/)  
+    **比赛名称** : [Dreamhack Invitational Quals 2025](https://dreamhack.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-02-08 08:00:00 - 2025-02-09 08:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
+    **添加日历** : https://ctftime.org/event/2627.ics  
+    
 ??? Quote "[Pragyan CTF 2025](https://ctf.prgy.in/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.prgy.in/)  
     **比赛名称** : [Pragyan CTF 2025](https://ctf.prgy.in/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : UrchinSec (https://ctftime.org/team/175663)  
     **添加日历** : https://ctftime.org/event/2527.ics  
-    
-??? Quote "[ISITDTU CTF 2024 Quals](https://ctf.isitdtu.com/)"  
-    [![](https://ctftime.org/media/events/index_2.gif){ width="200" align=left }](https://ctf.isitdtu.com/)  
-    **比赛名称** : [ISITDTU CTF 2024 Quals](https://ctf.isitdtu.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-26 10:00:00 - 2024-10-27 18:00:00 UTC+8  
-    **比赛权重** : 51.00  
-    **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
-    **添加日历** : https://ctftime.org/event/2456.ics  
     
