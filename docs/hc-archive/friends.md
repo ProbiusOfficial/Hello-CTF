@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [windowsAPC学习（1）](https://xia0ji233.github.io/2025/02/09/WindowsAPC1/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-02-09
+
+    来了解一下Windows的APC机制。APCAPC介绍APC 即 Asyncroneus Procedure Call，异步过程调用。学过之前的知识我们知道，线程是不能被杀掉、挂起和恢复的，线程在执行的时候自己占据着CPU，其他线程如何控制它呢？改变一个线程的行为，这就需要APC了。APC结构体APC的结构体如下所示123456789101112131415161718kd> dt _KAPCnt...
     ### [再见2024 | 幸运且美好](https://www.ek1ng.com/Goodbye2024.html)  
     >by [ek1ng](https://ek1ng.com/), 2025-01-28
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2024-11-24
 
     来简单实战几个字符串API初始化ASCII 字符和宽字符的版本分别是12RtlInitAnsiStringRtlInitUnicodeString第一个参数都是对应的字符串结构体的指针，也就是说，在使用的时候需要先定义一个结构体变量再去使用这个 API 去初始化字符串变量。1234567LPSTR str2 = "123456789 hello";ANSI_STRING astr;RtlInitA...
-    ### [windows驱动开发（0）——Windows驱动开发的基础知识](https://xia0ji233.github.io/2024/11/23/WindowsDriver0/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2024-11-22
-
-    今天来学习一下Windows驱动开发基础由于之前操之过急，对驱动开发很多东西都没有了解便强行上手，导致后面困难重重，于是痛定思痛，开始推翻重来，相信之前的一些开发经验会让这一路好走一点。环境搭建Vmware + VirtualKD + windbg preview 做调试环境。VS 2022 + WDK 做开发环境。参考链接1参考链接2内核API的使用对于导出的函数，只需要包含对应的头文件直接使用...
 
 </div>
