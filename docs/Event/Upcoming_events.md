@@ -81,9 +81,9 @@ comments: true
     **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
     **添加日历** : https://ctftime.org/event/2658.ics  
     
-??? Quote "[ApoorvCTF '25](https://ctf.iiitkottayam.ac.in/)"  
+??? Quote "[ApoorvCTF 2025](https://ctf.iiitkottayam.ac.in/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.iiitkottayam.ac.in/)  
-    **比赛名称** : [ApoorvCTF '25](https://ctf.iiitkottayam.ac.in/)  
+    **比赛名称** : [ApoorvCTF 2025](https://ctf.iiitkottayam.ac.in/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-03-01 05:00:00 - 2025-03-03 05:00:00 UTC+8  
     **比赛权重** : 0.00  
