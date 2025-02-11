@@ -505,15 +505,6 @@ hide:
                 **赛事主办** : Plaid Parliament of Pwning (https://ctftime.org/team/284)  
                 **添加日历** : https://ctftime.org/event/2508.ics  
                 
-            ??? Quote "[UMassCTF 2025](https://ctf.umasscybersec.org/)"  
-                [![](https://ctftime.org/media/events/889a1e484f0b51dd3d865b3a53b26200.jpg){ width="200" align=left }](https://ctf.umasscybersec.org/)  
-                **比赛名称** : [UMassCTF 2025](https://ctf.umasscybersec.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-05 07:00:00 - 2025-04-07 07:00:00 UTC+8  
-                **比赛权重** : 48.38  
-                **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
-                **添加日历** : https://ctftime.org/event/2519.ics  
-                
             ??? Quote "[DamCTF 2025](https://damctf.xyz/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://damctf.xyz/)  
                 **比赛名称** : [DamCTF 2025](https://damctf.xyz/)  
