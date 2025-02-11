@@ -10,7 +10,7 @@ comments: true
 ## 国际赛事
 
 ??? Quote "[EHAX CTF 2025](https://ctf.ehax.tech/)"  
-    [![](https://ctftime.org/media/events/logo_copy_3.png){ width="200" align=left }](https://ctf.ehax.tech/)  
+    [![](https://ctftime.org/media/events/ctf-vector.png){ width="200" align=left }](https://ctf.ehax.tech/)  
     **比赛名称** : [EHAX CTF 2025](https://ctf.ehax.tech/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-02-16 00:00:00 - 2025-02-17 00:00:00 UTC+8  
