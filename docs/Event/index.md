@@ -362,7 +362,7 @@ hide:
                 **添加日历** : https://ctftime.org/event/2654.ics  
                 
             ??? Quote "[ACECTF 1.0](https://acectf.tech/)"  
-                [![](https://ctftime.org/media/events/ACECTF_2_1.png){ width="200" align=left }](https://acectf.tech/)  
+                [![](https://ctftime.org/media/events/WhatsApp_Image_2024-12-26_at_12.03.44_7efe1dad.jpg){ width="200" align=left }](https://acectf.tech/)  
                 **比赛名称** : [ACECTF 1.0](https://acectf.tech/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-02-27 20:00:00 - 2025-02-28 20:00:00 UTC+8  
@@ -731,7 +731,7 @@ hide:
                 **添加日历** : https://ctftime.org/event/2486.ics  
                 
             ??? Quote "[smileyCTF 2025](https://2025.ctf.gg/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://2025.ctf.gg/)  
+                [![](https://ctftime.org/media/events/smiley.png){ width="200" align=left }](https://2025.ctf.gg/)  
                 **比赛名称** : [smileyCTF 2025](https://2025.ctf.gg/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-06-06 09:00:00 - 2025-06-08 09:00:00 UTC+8  
