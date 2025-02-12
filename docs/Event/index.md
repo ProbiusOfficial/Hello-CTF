@@ -613,9 +613,9 @@ hide:
                 **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
                 **添加日历** : https://ctftime.org/event/2676.ics  
                 
-            ??? Quote "[JerseyCTF V](https://www.jerseyctf.com/)"  
-                [![](https://ctftime.org/media/events/logojctf.png){ width="200" align=left }](https://www.jerseyctf.com/)  
-                **比赛名称** : [JerseyCTF V](https://www.jerseyctf.com/)  
+            ??? Quote "[JerseyCTF V](https://ctf.jerseyctf.com/)"  
+                [![](https://ctftime.org/media/events/jctfv_hat_1.png){ width="200" align=left }](https://ctf.jerseyctf.com/)  
+                **比赛名称** : [JerseyCTF V](https://ctf.jerseyctf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-03-30 03:00:00 - 2025-03-31 03:00:00 UTC+8  
                 **比赛权重** : 24.73  
