@@ -85,7 +85,7 @@ comments: true
     [![](https://ctftime.org/media/events/WhatsApp_Image_2024-12-26_at_12.03.44_7efe1dad.jpg){ width="200" align=left }](https://acectf.tech/)  
     **比赛名称** : [ACECTF 1.0](https://acectf.tech/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-02-27 20:00:00 - 2025-02-28 20:00:00 UTC+8  
+    **比赛时间** : 2025-02-27 14:30:00 - 2025-02-28 14:30:00 UTC+8  
     **比赛权重** : 0.00  
     **赛事主办** : ACECTF (https://ctftime.org/team/364715)  
     **添加日历** : https://ctftime.org/event/2619.ics  
