@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "EHAX CTF 2025",
-        "比赛时间": "2025-02-16 00:00:00 - 2025-02-17 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2677.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.ehax.tech/",
-        "比赛标志": "https://ctftime.org/media/events/ctf-vector.png",
-        "比赛权重": "0.00",
-        "赛事主办": "EHAX (https://ctftime.org/team/270643)",
-        "比赛ID": "1244",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "BroncoCTF 2025",
         "比赛时间": "2025-02-16 03:00:00 - 2025-02-17 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2657.ics",
@@ -681,6 +669,18 @@
         "比赛权重": "0",
         "赛事主办": "ectfmitre (https://ctftime.org/team/87292)",
         "比赛ID": "364",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "EHAX CTF 2025",
+        "比赛时间": "2025-02-16 00:00:00 - 2025-02-17 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2677.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.ehax.tech/",
+        "比赛标志": "https://ctftime.org/media/events/ctf-vector.png",
+        "比赛权重": "0",
+        "赛事主办": "EHAX (https://ctftime.org/team/270643)",
+        "比赛ID": "1244",
         "比赛状态": "nowrunning"
     },
     {
