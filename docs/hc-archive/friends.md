@@ -73,7 +73,11 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
-    ### [windowsAPC学习（1）](https://xia0ji233.github.io/2025/02/09/WindowsAPC1/)  
+    ### [某二次元开放世界冒险游戏反作弊分析报告](https://xia0ji233.github.io/2025/02/14/Game6/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-02-14
+
+    好久没碰某二次元开放世界冒险游戏了，听说新升级了反作弊，故来一探究竟，并尝试实现一些简单的功能。基本保护分析这种级别的游戏首先不考虑静态分析，直接跑起来。不出意外肯定不能直接内存读写，想附加调试器也是附加不上的，所以选择先从驱动入手，游戏加载时会加载驱动。先尝试简单的拦截，方法很多：注册 LoadImage 回调拦截，改驱动名等等等。后者比较好实现，但是运行游戏一段时间会弹窗强制退出。而如果说让保...
+    ### [windowsAPC学习（1）——APC简介](https://xia0ji233.github.io/2025/02/09/WindowsAPC1/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2025-02-09
 
     来了解一下Windows的APC机制。APCAPC介绍APC 即 Asyncroneus Procedure Call，异步过程调用。学过之前的知识我们知道，线程是不能被杀掉、挂起和恢复的，线程在执行的时候自己占据着CPU，其他线程如何控制它呢？改变一个线程的行为，这就需要APC了。APC结构体APC的结构体如下所示123456789101112131415161718kd> dt _KAPCnt...
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-12-03
 
     1f5c6f7cc517a318662ada114c86b544e6710d2ca2eb595eb9ee3c99b53385f503167b9c669ec5ff63e96f1f8018c5efc0b009c15774d4f33e12f5431efbdaeb2615cadb0ff74f6f6dc9e2dd3629cd3567b057f7932bc048fa475bb359df7aacab63d2...
-    ### [windows驱动开发（1）——Windows驱动字符串](https://xia0ji233.github.io/2024/11/24/WindowsDriver1/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2024-11-24
-
-    来简单实战几个字符串API初始化ASCII 字符和宽字符的版本分别是12RtlInitAnsiStringRtlInitUnicodeString第一个参数都是对应的字符串结构体的指针，也就是说，在使用的时候需要先定义一个结构体变量再去使用这个 API 去初始化字符串变量。1234567LPSTR str2 = "123456789 hello";ANSI_STRING astr;RtlInitA...
 
 </div>
