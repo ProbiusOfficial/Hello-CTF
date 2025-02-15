@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[BroncoCTF 2025](https://broncoctf.xyz/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://broncoctf.xyz/)  
-            **比赛名称** : [BroncoCTF 2025](https://broncoctf.xyz/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-02-16 03:00:00 - 2025-02-17 03:00:00 UTC+8  
-            **比赛权重** : 22.51  
-            **赛事主办** : BroncoSec (https://ctftime.org/team/112673)  
-            **添加日历** : https://ctftime.org/event/2657.ics  
-            
         ??? Quote "[ThunderCipher](https://thundercipher.tech/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://thundercipher.tech/)  
             **比赛名称** : [ThunderCipher](https://thundercipher.tech/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
             **添加日历** : https://ctftime.org/event/2624.ics  
+            
+        ??? Quote "[TPCTF 2025](https://tpctf2025.xctf.org.cn/)"  
+            [![](https://ctftime.org/media/events/TPCTF_ba-stylenulla.top_1.png){ width="200" align=left }](https://tpctf2025.xctf.org.cn/)  
+            **比赛名称** : [TPCTF 2025](https://tpctf2025.xctf.org.cn/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-02-22 09:00:00 - 2025-02-24 09:00:00 UTC+8  
+            **比赛权重** : 25.00  
+            **赛事主办** : TP-Link (https://ctftime.org/team/273760)  
+            **添加日历** : https://ctftime.org/event/2645.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
