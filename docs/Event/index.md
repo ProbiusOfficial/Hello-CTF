@@ -794,15 +794,6 @@ hide:
                 **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
                 **添加日历** : https://ctftime.org/event/2542.ics  
                 
-            ??? Quote "[EHAX CTF 2025](https://ctf.ehax.tech/)"  
-                [![](https://ctftime.org/media/events/ctf-vector.png){ width="200" align=left }](https://ctf.ehax.tech/)  
-                **比赛名称** : [EHAX CTF 2025](https://ctf.ehax.tech/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-02-16 00:00:00 - 2025-02-17 00:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : EHAX (https://ctftime.org/team/270643)  
-                **添加日历** : https://ctftime.org/event/2677.ics  
-                
             ??? Quote "[BroncoCTF 2025](https://ctfd.broncoctf.xyz/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctfd.broncoctf.xyz/)  
                 **比赛名称** : [BroncoCTF 2025](https://ctfd.broncoctf.xyz/)  
@@ -829,6 +820,15 @@ hide:
                 **其他说明** : NSSCTF Round26 由NSSCTF主办，比赛时间为2024年12月28日 14:00至17:00，报名已结束，比赛QQ群为864395049。  
                 
         === "国外赛事"
+            ??? Quote "[EHAX CTF 2025](https://ctf.ehax.tech/)"  
+                [![](https://ctftime.org/media/events/ctf-vector.png){ width="200" align=left }](https://ctf.ehax.tech/)  
+                **比赛名称** : [EHAX CTF 2025](https://ctf.ehax.tech/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-02-16 00:00:00 - 2025-02-17 00:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : EHAX (https://ctftime.org/team/270643)  
+                **添加日历** : https://ctftime.org/event/2677.ics  
+                
             ??? Quote "[TheDeccanCTF](https://0x1337iiit.github.io/ctf)"  
                 [![](https://ctftime.org/media/events/logo_104.png){ width="200" align=left }](https://0x1337iiit.github.io/ctf)  
                 **比赛名称** : [TheDeccanCTF](https://0x1337iiit.github.io/ctf)  
@@ -1719,15 +1719,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : TuxPwners (https://ctftime.org/team/274660)  
                 **添加日历** : https://ctftime.org/event/2553.ics  
-                
-            ??? Quote "[The Cyber Jawara International 2024](https://international.cyberjawara.pro/)"  
-                [![](https://ctftime.org/media/events/73b32f71c82304b9e3df7fe9dedada59-transformed.png){ width="200" align=left }](https://international.cyberjawara.pro/)  
-                **比赛名称** : [The Cyber Jawara International 2024](https://international.cyberjawara.pro/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-10-27 10:00:00 - 2024-10-28 10:00:00 UTC+8  
-                **比赛权重** : 23.62  
-                **赛事主办** : SKSD (https://ctftime.org/team/211952)  
-                **添加日历** : https://ctftime.org/event/2552.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

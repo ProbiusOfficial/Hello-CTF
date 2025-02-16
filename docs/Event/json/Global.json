@@ -660,18 +660,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "EHAX CTF 2025",
-        "比赛时间": "2025-02-16 00:00:00 - 2025-02-17 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2677.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.ehax.tech/",
-        "比赛标志": "https://ctftime.org/media/events/ctf-vector.png",
-        "比赛权重": "0",
-        "赛事主办": "EHAX (https://ctftime.org/team/270643)",
-        "比赛ID": "1244",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "BroncoCTF 2025",
         "比赛时间": "2025-02-16 03:00:00 - 2025-02-17 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2657.ics",
@@ -682,6 +670,18 @@
         "赛事主办": "BroncoSec (https://ctftime.org/team/112673)",
         "比赛ID": "1017",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "EHAX CTF 2025",
+        "比赛时间": "2025-02-16 00:00:00 - 2025-02-17 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2677.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.ehax.tech/",
+        "比赛标志": "https://ctftime.org/media/events/ctf-vector.png",
+        "比赛权重": "0",
+        "赛事主办": "EHAX (https://ctftime.org/team/270643)",
+        "比赛ID": "1244",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "TheDeccanCTF",
@@ -1869,18 +1869,6 @@
         "比赛权重": "0.00",
         "赛事主办": "TuxPwners (https://ctftime.org/team/274660)",
         "比赛ID": "1092",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "The Cyber Jawara International 2024",
-        "比赛时间": "2024-10-27 10:00:00 - 2024-10-28 10:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2552.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://international.cyberjawara.pro/",
-        "比赛标志": "https://ctftime.org/media/events/73b32f71c82304b9e3df7fe9dedada59-transformed.png",
-        "比赛权重": "23.62",
-        "赛事主办": "SKSD (https://ctftime.org/team/211952)",
-        "比赛ID": "1192",
         "比赛状态": "past"
     }
 ]

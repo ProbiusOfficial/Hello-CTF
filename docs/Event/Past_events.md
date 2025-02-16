@@ -21,6 +21,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[EHAX CTF 2025](https://ctf.ehax.tech/)"  
+    [![](https://ctftime.org/media/events/ctf-vector.png){ width="200" align=left }](https://ctf.ehax.tech/)  
+    **比赛名称** : [EHAX CTF 2025](https://ctf.ehax.tech/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-02-16 00:00:00 - 2025-02-17 00:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : EHAX (https://ctftime.org/team/270643)  
+    **添加日历** : https://ctftime.org/event/2677.ics  
+    
 ??? Quote "[TheDeccanCTF](https://0x1337iiit.github.io/ctf)"  
     [![](https://ctftime.org/media/events/logo_104.png){ width="200" align=left }](https://0x1337iiit.github.io/ctf)  
     **比赛名称** : [TheDeccanCTF](https://0x1337iiit.github.io/ctf)  
@@ -911,13 +920,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : TuxPwners (https://ctftime.org/team/274660)  
     **添加日历** : https://ctftime.org/event/2553.ics  
-    
-??? Quote "[The Cyber Jawara International 2024](https://international.cyberjawara.pro/)"  
-    [![](https://ctftime.org/media/events/73b32f71c82304b9e3df7fe9dedada59-transformed.png){ width="200" align=left }](https://international.cyberjawara.pro/)  
-    **比赛名称** : [The Cyber Jawara International 2024](https://international.cyberjawara.pro/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-27 10:00:00 - 2024-10-28 10:00:00 UTC+8  
-    **比赛权重** : 23.62  
-    **赛事主办** : SKSD (https://ctftime.org/team/211952)  
-    **添加日历** : https://ctftime.org/event/2552.ics  
     
