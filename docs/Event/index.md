@@ -803,9 +803,9 @@ hide:
                 **赛事主办** : EHAX (https://ctftime.org/team/270643)  
                 **添加日历** : https://ctftime.org/event/2677.ics  
                 
-            ??? Quote "[BroncoCTF 2025](https://broncoctf.xyz/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://broncoctf.xyz/)  
-                **比赛名称** : [BroncoCTF 2025](https://broncoctf.xyz/)  
+            ??? Quote "[BroncoCTF 2025](https://ctfd.broncoctf.xyz/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctfd.broncoctf.xyz/)  
+                **比赛名称** : [BroncoCTF 2025](https://ctfd.broncoctf.xyz/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-02-16 03:00:00 - 2025-02-17 03:00:00 UTC+8  
                 **比赛权重** : 22.51  
