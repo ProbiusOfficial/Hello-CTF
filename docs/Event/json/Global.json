@@ -36,18 +36,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "TPCTF 2025",
-        "比赛时间": "2025-02-22 09:00:00 - 2025-02-24 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2645.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://tpctf2025.xctf.org.cn/",
-        "比赛标志": "https://ctftime.org/media/events/TPCTF_ba-stylenulla.top_1.png",
-        "比赛权重": "25.00",
-        "赛事主办": "TP-Link (https://ctftime.org/team/273760)",
-        "比赛ID": "1016",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Kashi CTF 2025",
         "比赛时间": "2025-02-22 20:00:00 - 2025-02-23 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2668.ics",
