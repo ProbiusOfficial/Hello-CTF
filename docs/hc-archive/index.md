@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [windowsAPC学习（2）——APC挂入与执行](https://xia0ji233.github.io/2025/02/17/WindowsAPC2/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-02-17
+
+    今天详细了解一下 APC 到底是怎么工作的。APC挂入在 APC 挂入的时候，内核会准备一个 _KAPC 结构体，将该结构体挂入线程的 APC 队列中。KAPC结构体介绍先在 windbg 中查看一下：123456789101112131415161718kd> dt _KAPCntdll!_KAPC   +0x000 Type             : UChar   +0x001 Spare...
     ### [某二次元开放世界冒险游戏反作弊分析报告](https://xia0ji233.github.io/2025/02/14/Game6/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2025-02-14
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2024-12-07
 
     同样的，决赛也出了两道pwn题，感觉挺有意思的，来补补wp。heap附件下载环境准备这题一开始最大的一个问题可能是题目依赖较多跑不起来，而且只给了 libc 的版本，是 2.31 9.16 版本，这个比较好说。如果是 libcrypto.1.1 这个库不存在也好说，apt 安装就好了。照常换了 runpath 和链接器之后报了一个神奇的错误。这里的意思就是，虽然你 elf 文件的 libc 换好了...
-    ### [蓝凌之前台低权限提权至后台RCE](https://y4tacker.github.io/2024/12/03/year/2024/12/%E8%93%9D%E5%87%8C%E4%B9%8B%E5%89%8D%E5%8F%B0%E4%BD%8E%E6%9D%83%E9%99%90%E6%8F%90%E6%9D%83%E8%87%B3%E5%90%8E%E5%8F%B0RCE/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-12-03
-
-    1f5c6f7cc517a318662ada114c86b544e6710d2ca2eb595eb9ee3c99b53385f503167b9c669ec5ff63e96f1f8018c5efc0b009c15774d4f33e12f5431efbdaeb2615cadb0ff74f6f6dc9e2dd3629cd3567b057f7932bc048fa475bb359df7aacab63d2...
 
 </div>
