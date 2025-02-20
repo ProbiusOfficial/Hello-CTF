@@ -694,6 +694,15 @@ hide:
                 **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
                 **添加日历** : https://ctftime.org/event/2659.ics  
                 
+            ??? Quote "[b01lers CTF 2025](https://b01lersc.tf/)"  
+                [![](https://ctftime.org/media/events/b01lers-griffen_2.png){ width="200" align=left }](https://b01lersc.tf/)  
+                **比赛名称** : [b01lers CTF 2025](https://b01lersc.tf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-04-19 07:00:00 - 2025-04-21 07:00:00 UTC+8  
+                **比赛权重** : 44.50  
+                **赛事主办** : b01lers (https://ctftime.org/team/11464)  
+                **添加日历** : https://ctftime.org/event/2652.ics  
+                
             ??? Quote "[Midnight Sun CTF 2025 Quals](https://play.midnightsunctf.com/)"  
                 [![](https://ctftime.org/media/events/matrix_1.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
                 **比赛名称** : [Midnight Sun CTF 2025 Quals](https://play.midnightsunctf.com/)  
@@ -801,6 +810,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/2612.ics  
+                
+            ??? Quote "[Platypwn 2025](https://platypwnies.de/events/platypwn/)"  
+                [![](https://ctftime.org/media/events/platypwnies-512_1.png){ width="200" align=left }](https://platypwnies.de/events/platypwn/)  
+                **比赛名称** : [Platypwn 2025](https://platypwnies.de/events/platypwn/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-15 20:00:00 - 2025-11-16 20:00:00 UTC+8  
+                **比赛权重** : 33.29  
+                **赛事主办** : Platypwnies (https://ctftime.org/team/112550)  
+                **添加日历** : https://ctftime.org/event/2606.ics  
                 
             ??? Quote "[ASIS CTF Final 2025](https://asisctf.com/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://asisctf.com/)  

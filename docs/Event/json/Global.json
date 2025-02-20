@@ -540,6 +540,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "b01lers CTF 2025",
+        "比赛时间": "2025-04-19 07:00:00 - 2025-04-21 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2652.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://b01lersc.tf/",
+        "比赛标志": "https://ctftime.org/media/events/b01lers-griffen_2.png",
+        "比赛权重": "44.50",
+        "赛事主办": "b01lers (https://ctftime.org/team/11464)",
+        "比赛ID": "408",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Midnight Sun CTF 2025 Quals",
         "比赛时间": "2025-04-19 20:00:00 - 2025-04-20 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2632.ics",
@@ -681,6 +693,18 @@
         "比赛权重": "0.00",
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "55",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Platypwn 2025",
+        "比赛时间": "2025-11-15 20:00:00 - 2025-11-16 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2606.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://platypwnies.de/events/platypwn/",
+        "比赛标志": "https://ctftime.org/media/events/platypwnies-512_1.png",
+        "比赛权重": "33.29",
+        "赛事主办": "Platypwnies (https://ctftime.org/team/112550)",
+        "比赛ID": "979",
         "比赛状态": "oncoming"
     },
     {
