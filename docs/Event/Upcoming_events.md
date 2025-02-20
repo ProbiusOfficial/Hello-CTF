@@ -234,6 +234,15 @@ comments: true
     **赛事主办** : Eindbazen (https://ctftime.org/team/322)  
     **添加日历** : https://ctftime.org/event/2679.ics  
     
+??? Quote "[RITSEC CTF 2025](https://ctfd.ritsec.club/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctfd.ritsec.club/)  
+    **比赛名称** : [RITSEC CTF 2025](https://ctfd.ritsec.club/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-22 05:00:00 - 2025-03-24 05:00:00 UTC+8  
+    **比赛权重** : 34.14  
+    **赛事主办** : Contagion (https://ctftime.org/team/152691)  
+    **添加日历** : https://ctftime.org/event/2673.ics  
+    
 ??? Quote "[WolvCTF 2025](https://wolvctf.io/)"  
     [![](https://ctftime.org/media/events/4ec5f36875124e118429b66c41edf271.png){ width="200" align=left }](https://wolvctf.io/)  
     **比赛名称** : [WolvCTF 2025](https://wolvctf.io/)  
@@ -269,15 +278,6 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : 0x01DA (https://ctftime.org/team/104949)  
     **添加日历** : https://ctftime.org/event/2666.ics  
-    
-??? Quote "[RITSEC CTF 2025](https://ctfd.ritsec.club/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctfd.ritsec.club/)  
-    **比赛名称** : [RITSEC CTF 2025](https://ctfd.ritsec.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-28 20:00:00 - 2025-03-30 20:00:00 UTC+8  
-    **比赛权重** : 34.14  
-    **赛事主办** : Contagion (https://ctftime.org/team/152691)  
-    **添加日历** : https://ctftime.org/event/2673.ics  
     
 ??? Quote "[TAMUctf 2025](https://tamuctf.com/)"  
     [![](https://ctftime.org/media/events/TAMUCTF_cmaroon_1_1.png){ width="200" align=left }](https://tamuctf.com/)  
@@ -323,6 +323,15 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
     **添加日历** : https://ctftime.org/event/2626.ics  
+    
+??? Quote "[Undutmaning 2025](https://undutmaning.se/)"  
+    [![](https://ctftime.org/media/events/2025logo_ctfd.jpg){ width="200" align=left }](https://undutmaning.se/)  
+    **比赛名称** : [Undutmaning 2025](https://undutmaning.se/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-29 19:00:00 - 2025-03-30 03:00:00 UTC+8  
+    **比赛权重** : 24.50  
+    **赛事主办** : Undutmaning (https://ctftime.org/team/212504)  
+    **添加日历** : https://ctftime.org/event/2589.ics  
     
 ??? Quote "[SillyCTF 2025](https://sillyctf.psuccso.org/)"  
     [![](https://ctftime.org/media/events/SillyCTF.png){ width="200" align=left }](https://sillyctf.psuccso.org/)  
@@ -405,6 +414,24 @@ comments: true
     **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
     **添加日历** : https://ctftime.org/event/2604.ics  
     
+??? Quote "[THCon 2K25 CTF](https://thcon.party/)"  
+    [![](https://ctftime.org/media/events/Sans_titre.ico){ width="200" align=left }](https://thcon.party/)  
+    **比赛名称** : [THCon 2K25 CTF](https://thcon.party/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-12 16:00:00 - 2025-04-12 16:00:00 UTC+8  
+    **比赛权重** : 23.65  
+    **赛事主办** : pony7 (https://ctftime.org/team/20769)  
+    **添加日历** : https://ctftime.org/event/2660.ics  
+    
+??? Quote "[Midnight Flag CTF - INSURRECTION](https://midnightflag.fr/)"  
+    [![](https://ctftime.org/media/events/logo-midnightflag_500.png){ width="200" align=left }](https://midnightflag.fr/)  
+    **比赛名称** : [Midnight Flag CTF - INSURRECTION](https://midnightflag.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-12 16:00:00 - 2025-04-14 00:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
+    **添加日历** : https://ctftime.org/event/2687.ics  
+    
 ??? Quote "[PwnMe CTF Finals 2025](https://pwnme.fr/)"  
     [![](https://ctftime.org/media/events/PWNME_ReseauxPP1.jpg){ width="200" align=left }](https://pwnme.fr/)  
     **比赛名称** : [PwnMe CTF Finals 2025](https://pwnme.fr/)  
@@ -414,6 +441,24 @@ comments: true
     **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
     **添加日历** : https://ctftime.org/event/2659.ics  
     
+??? Quote "[SummitCTF 2025](https://summitctf.org/)"  
+    [![](https://ctftime.org/media/events/Summitctf.png){ width="200" align=left }](https://summitctf.org/)  
+    **比赛名称** : [SummitCTF 2025](https://summitctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-12 22:00:00 - 2025-04-13 22:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : CyberVT (https://ctftime.org/team/173872)  
+    **添加日历** : https://ctftime.org/event/2662.ics  
+    
+??? Quote "[DawgCTF 2025](https://metactf.com/join/dawgctf25)"  
+    [![](https://ctftime.org/media/events/dawgsec_shield-ctftime_2.png){ width="200" align=left }](https://metactf.com/join/dawgctf25)  
+    **比赛名称** : [DawgCTF 2025](https://metactf.com/join/dawgctf25)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-18 20:00:00 - 2025-04-20 20:00:00 UTC+8  
+    **比赛权重** : 69.00  
+    **赛事主办** : UMBC Cyber Dawgs (https://ctftime.org/team/18405)  
+    **添加日历** : https://ctftime.org/event/2651.ics  
+    
 ??? Quote "[b01lers CTF 2025](https://b01lersc.tf/)"  
     [![](https://ctftime.org/media/events/b01lers-griffen_2.png){ width="200" align=left }](https://b01lersc.tf/)  
     **比赛名称** : [b01lers CTF 2025](https://b01lersc.tf/)  
@@ -422,6 +467,15 @@ comments: true
     **比赛权重** : 44.50  
     **赛事主办** : b01lers (https://ctftime.org/team/11464)  
     **添加日历** : https://ctftime.org/event/2652.ics  
+    
+??? Quote "[UMassCTF 2025](https://ctf.umasscybersec.org/)"  
+    [![](https://ctftime.org/media/events/889a1e484f0b51dd3d865b3a53b26200_1.jpg){ width="200" align=left }](https://ctf.umasscybersec.org/)  
+    **比赛名称** : [UMassCTF 2025](https://ctf.umasscybersec.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-19 07:00:00 - 2025-04-21 07:00:00 UTC+8  
+    **比赛权重** : 48.38  
+    **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
+    **添加日历** : https://ctftime.org/event/2653.ics  
     
 ??? Quote "[Midnight Sun CTF 2025 Quals](https://play.midnightsunctf.com/)"  
     [![](https://ctftime.org/media/events/matrix_1.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
@@ -440,6 +494,15 @@ comments: true
     **比赛权重** : 70.86  
     **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
     **添加日历** : https://ctftime.org/event/2563.ics  
+    
+??? Quote "[ICCSDFAI](https://ctf.astanait.edu.kz/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.astanait.edu.kz/)  
+    **比赛名称** : [ICCSDFAI](https://ctf.astanait.edu.kz/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-29 19:00:00 - 2025-05-01 01:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : HackOrda (https://ctftime.org/team/367962)  
+    **添加日历** : https://ctftime.org/event/2685.ics  
     
 ??? Quote "[LakeCTF Finals 24-25](https://lakectf.epfl.ch/)"  
     [![](https://ctftime.org/media/events/5ee3dccc1b28b5f04bdf2f7b871b1d07.png){ width="200" align=left }](https://lakectf.epfl.ch/)  

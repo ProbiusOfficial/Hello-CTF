@@ -28,6 +28,24 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[ThunderCipher](https://thundercipher.tech/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://thundercipher.tech/)  
+    **比赛名称** : [ThunderCipher](https://thundercipher.tech/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-02-20 15:30:00 - 2025-02-20 21:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ThunderCipher (https://ctftime.org/team/279782)  
+    **添加日历** : https://ctftime.org/event/2635.ics  
+    
+??? Quote "[PascalCTF Beginners 2025](https://ctf.pascalctf.it/)"  
+    [![](https://ctftime.org/media/events/Untitled_2_1.png){ width="200" align=left }](https://ctf.pascalctf.it/)  
+    **比赛名称** : [PascalCTF Beginners 2025](https://ctf.pascalctf.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-02-17 23:00:00 - 2025-02-18 04:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Paolo (https://ctftime.org/team/263145)  
+    **添加日历** : https://ctftime.org/event/2664.ics  
+    
 ??? Quote "[BroncoCTF 2025](https://ctfd.broncoctf.xyz/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctfd.broncoctf.xyz/)  
     **比赛名称** : [BroncoCTF 2025](https://ctfd.broncoctf.xyz/)  
@@ -909,22 +927,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : 7r0j4npwn135 (https://ctftime.org/team/214221)  
     **添加日历** : https://ctftime.org/event/2543.ics  
-    
-??? Quote "[Hack The Vote 2024](https://hackthe.vote/)"  
-    [![](https://ctftime.org/media/events/image_center.png){ width="200" align=left }](https://hackthe.vote/)  
-    **比赛名称** : [Hack The Vote 2024](https://hackthe.vote/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-02 07:00:00 - 2024-11-04 07:00:00 UTC+8  
-    **比赛权重** : 24.43  
-    **赛事主办** : RPISEC (https://ctftime.org/team/572)  
-    **添加日历** : https://ctftime.org/event/2498.ics  
-    
-??? Quote "[BUET CTF 2024](http://ctf.buetcsefest2024.com/)"  
-    [![](https://ctftime.org/media/events/BUET_CTF_2024.png){ width="200" align=left }](http://ctf.buetcsefest2024.com/)  
-    **比赛名称** : [BUET CTF 2024](http://ctf.buetcsefest2024.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-10-31 11:00:00 - 2024-10-31 17:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : BUETSec (https://ctftime.org/team/357430)  
-    **添加日历** : https://ctftime.org/event/2525.ics  
     
