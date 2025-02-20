@@ -19,7 +19,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2557.ics  
     
 ??? Quote "[Dreamhack CTF Season 7 Round #4 (Div. 2)](https://dreamhack.io/ctf/658)"  
-    [![](https://ctftime.org/media/events/bg4.jpg){ width="200" align=left }](https://dreamhack.io/ctf/658)  
+    [![](https://ctftime.org/media/events/cover04.jpg){ width="200" align=left }](https://dreamhack.io/ctf/658)  
     **比赛名称** : [Dreamhack CTF Season 7 Round #4 (Div. 2)](https://dreamhack.io/ctf/658)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-02-22 08:00:00 - 2025-02-22 23:00:00 UTC+8  
@@ -503,6 +503,15 @@ comments: true
     **比赛权重** : 91.66  
     **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
     **添加日历** : https://ctftime.org/event/2669.ics  
+    
+??? Quote "[NNS CTF 2025](https://nnsc.tf/)"  
+    [![](https://ctftime.org/media/events/Logo_D.png){ width="200" align=left }](https://nnsc.tf/)  
+    **比赛名称** : [NNS CTF 2025](https://nnsc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-08-30 00:00:00 - 2025-09-01 00:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Norske Nøkkelsnikere (https://ctftime.org/team/222749)  
+    **添加日历** : https://ctftime.org/event/2684.ics  
     
 ??? Quote "[ASIS CTF Quals 2025](https://asisctf.com/)"  
     [![](https://ctftime.org/media/events/asisctf_1.jpg){ width="200" align=left }](https://asisctf.com/)  

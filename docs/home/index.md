@@ -64,7 +64,7 @@ hide:
             **添加日历** : https://ctftime.org/event/2557.ics  
             
         ??? Quote "[Dreamhack CTF Season 7 Round #4 (Div. 2)](https://dreamhack.io/ctf/658)"  
-            [![](https://ctftime.org/media/events/bg4.jpg){ width="200" align=left }](https://dreamhack.io/ctf/658)  
+            [![](https://ctftime.org/media/events/cover04.jpg){ width="200" align=left }](https://dreamhack.io/ctf/658)  
             **比赛名称** : [Dreamhack CTF Season 7 Round #4 (Div. 2)](https://dreamhack.io/ctf/658)  
             **比赛形式** : Jeopardy  
             **比赛时间** : 2025-02-22 08:00:00 - 2025-02-22 23:00:00 UTC+8  
