@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025](https://www.saiborg.io/)"  
-            [![](https://ctftime.org/media/events/saiborg-profile_1.jpg){ width="200" align=left }](https://www.saiborg.io/)  
-            **比赛名称** : [SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025](https://www.saiborg.io/)  
-            **比赛形式** : Hack quest  
-            **比赛时间** : 2025-02-21 22:30:00 - 2025-02-22 05:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Saiborg (https://ctftime.org/team/271868)  
-            **添加日历** : https://ctftime.org/event/2557.ics  
-            
         ??? Quote "[Dreamhack CTF Season 7 Round #4 (Div. 2)](https://dreamhack.io/ctf/658)"  
             [![](https://ctftime.org/media/events/cover04.jpg){ width="200" align=left }](https://dreamhack.io/ctf/658)  
             **比赛名称** : [Dreamhack CTF Season 7 Round #4 (Div. 2)](https://dreamhack.io/ctf/658)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : TheRomanXpl0it (https://ctftime.org/team/46516)  
             **添加日历** : https://ctftime.org/event/2654.ics  
+            
+        ??? Quote "[ACECTF 1.0](https://acectf.tech/)"  
+            [![](https://ctftime.org/media/events/WhatsApp_Image_2024-12-26_at_12.03.44_7efe1dad.jpg){ width="200" align=left }](https://acectf.tech/)  
+            **比赛名称** : [ACECTF 1.0](https://acectf.tech/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-02-27 14:30:00 - 2025-02-28 14:30:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : ACECTF (https://ctftime.org/team/364715)  
+            **添加日历** : https://ctftime.org/event/2619.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
