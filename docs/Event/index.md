@@ -896,15 +896,6 @@ hide:
                 **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
                 **添加日历** : https://ctftime.org/event/2542.ics  
                 
-            ??? Quote "[SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025](https://www.saiborg.io/)"  
-                [![](https://ctftime.org/media/events/saiborg-profile_1.jpg){ width="200" align=left }](https://www.saiborg.io/)  
-                **比赛名称** : [SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025](https://www.saiborg.io/)  
-                **比赛形式** : Hack quest  
-                **比赛时间** : 2025-02-21 22:30:00 - 2025-02-22 05:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Saiborg (https://ctftime.org/team/271868)  
-                **添加日历** : https://ctftime.org/event/2557.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[HGAME 2025](https://hgame.vidar.club/games/2)"  
@@ -929,6 +920,15 @@ hide:
                 **其他说明** : NSSCTF Round26 由NSSCTF主办，比赛时间为2024年12月28日 14:00至17:00，报名已结束，比赛QQ群为864395049。  
                 
         === "国外赛事"
+            ??? Quote "[SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025](https://www.saiborg.io/)"  
+                [![](https://ctftime.org/media/events/saiborg-profile_1.jpg){ width="200" align=left }](https://www.saiborg.io/)  
+                **比赛名称** : [SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025](https://www.saiborg.io/)  
+                **比赛形式** : Hack quest  
+                **比赛时间** : 2025-02-21 22:30:00 - 2025-02-22 05:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Saiborg (https://ctftime.org/team/271868)  
+                **添加日历** : https://ctftime.org/event/2557.ics  
+                
             ??? Quote "[ThunderCipher](https://thundercipher.tech/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://thundercipher.tech/)  
                 **比赛名称** : [ThunderCipher](https://thundercipher.tech/)  
@@ -1819,15 +1819,6 @@ hide:
                 **比赛权重** : 24.23  
                 **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
                 **添加日历** : https://ctftime.org/event/2535.ics  
-                
-            ??? Quote "[USC CTF Fall 2024](https://usc.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/USC_CTF_Logo_Handdrawn.png){ width="200" align=left }](https://usc.ctfd.io/)  
-                **比赛名称** : [USC CTF Fall 2024](https://usc.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-02 11:00:00 - 2024-11-04 12:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : 7r0j4npwn135 (https://ctftime.org/team/214221)  
-                **添加日历** : https://ctftime.org/event/2543.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
