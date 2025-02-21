@@ -90,7 +90,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.seccon.jp/",
         "比赛标志": "https://ctftime.org/media/events/seccon_s_8.png",
-        "比赛权重": "0.00",
+        "比赛权重": "25.00",
         "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
         "比赛ID": "92",
         "比赛状态": "oncoming"
