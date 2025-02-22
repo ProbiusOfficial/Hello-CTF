@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Kashi CTF 2025](https://kashictf.iitbhucybersec.in/)"  
-            [![](https://ctftime.org/media/events/logo_105.png){ width="200" align=left }](https://kashictf.iitbhucybersec.in/)  
-            **比赛名称** : [Kashi CTF 2025](https://kashictf.iitbhucybersec.in/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-02-22 20:00:00 - 2025-02-23 20:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
-            **添加日历** : https://ctftime.org/event/2668.ics  
-            
         ??? Quote "[TRX CTF 2025](https://ctf.theromanxpl0.it/)"  
             [![](https://ctftime.org/media/events/TRX_1.png){ width="200" align=left }](https://ctf.theromanxpl0.it/)  
             **比赛名称** : [TRX CTF 2025](https://ctf.theromanxpl0.it/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
             **添加日历** : https://ctftime.org/event/2658.ics  
+            
+        ??? Quote "[ApoorvCTF 2025](https://ctf.iiitkottayam.ac.in/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ctf.iiitkottayam.ac.in/)  
+            **比赛名称** : [ApoorvCTF 2025](https://ctf.iiitkottayam.ac.in/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-03-01 05:00:00 - 2025-03-03 05:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : r3d_kn1ght5 (https://ctftime.org/team/212248)  
+            **添加日历** : https://ctftime.org/event/2638.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
