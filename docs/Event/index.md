@@ -869,15 +869,6 @@ hide:
                 **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
                 **添加日历** : https://ctftime.org/event/2542.ics  
                 
-            ??? Quote "[Kashi CTF 2025](https://kashictf.iitbhucybersec.in/)"  
-                [![](https://ctftime.org/media/events/logo_105.png){ width="200" align=left }](https://kashictf.iitbhucybersec.in/)  
-                **比赛名称** : [Kashi CTF 2025](https://kashictf.iitbhucybersec.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-02-22 20:00:00 - 2025-02-23 20:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
-                **添加日历** : https://ctftime.org/event/2668.ics  
-                
             ??? Quote "[TRX CTF 2025](https://ctf.theromanxpl0.it/)"  
                 [![](https://ctftime.org/media/events/TRX_1.png){ width="200" align=left }](https://ctf.theromanxpl0.it/)  
                 **比赛名称** : [TRX CTF 2025](https://ctf.theromanxpl0.it/)  
@@ -911,6 +902,15 @@ hide:
                 **其他说明** : NSSCTF Round26 由NSSCTF主办，比赛时间为2024年12月28日 14:00至17:00，报名已结束，比赛QQ群为864395049。  
                 
         === "国外赛事"
+            ??? Quote "[Kashi CTF 2025](https://kashictf.iitbhucybersec.in/)"  
+                [![](https://ctftime.org/media/events/logo_105.png){ width="200" align=left }](https://kashictf.iitbhucybersec.in/)  
+                **比赛名称** : [Kashi CTF 2025](https://kashictf.iitbhucybersec.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-02-22 20:00:00 - 2025-02-23 20:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
+                **添加日历** : https://ctftime.org/event/2668.ics  
+                
             ??? Quote "[Dreamhack CTF Season 7 Round #4 (Div. 2)](https://dreamhack.io/ctf/658)"  
                 [![](https://ctftime.org/media/events/cover04.jpg){ width="200" align=left }](https://dreamhack.io/ctf/658)  
                 **比赛名称** : [Dreamhack CTF Season 7 Round #4 (Div. 2)](https://dreamhack.io/ctf/658)  
@@ -1801,15 +1801,6 @@ hide:
                 **比赛权重** : 24.71  
                 **赛事主办** : Hackers N' Hops (https://ctftime.org/team/119910)  
                 **添加日历** : https://ctftime.org/event/2550.ics  
-                
-            ??? Quote "[Equinor CTF 2024](https://ctf.equinor.com/)"  
-                [![](https://ctftime.org/media/events/ept_1.png){ width="200" align=left }](https://ctf.equinor.com/)  
-                **比赛名称** : [Equinor CTF 2024](https://ctf.equinor.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-02 17:00:00 - 2024-11-03 03:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : EPT (https://ctftime.org/team/119480)  
-                **添加日历** : https://ctftime.org/event/2292.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
