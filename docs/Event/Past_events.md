@@ -28,6 +28,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[TRX CTF 2025](https://ctf.theromanxpl0.it/)"  
+    [![](https://ctftime.org/media/events/TRX_1.png){ width="200" align=left }](https://ctf.theromanxpl0.it/)  
+    **比赛名称** : [TRX CTF 2025](https://ctf.theromanxpl0.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-02-22 22:00:00 - 2025-02-23 22:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : TheRomanXpl0it (https://ctftime.org/team/46516)  
+    **添加日历** : https://ctftime.org/event/2654.ics  
+    
 ??? Quote "[Kashi CTF 2025](https://kashictf.iitbhucybersec.in/)"  
     [![](https://ctftime.org/media/events/logo_105.png){ width="200" align=left }](https://kashictf.iitbhucybersec.in/)  
     **比赛名称** : [Kashi CTF 2025](https://kashictf.iitbhucybersec.in/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Pacific Hackers Association (https://ctftime.org/team/304096)  
     **添加日历** : https://ctftime.org/event/2453.ics  
-    
-??? Quote "[Hackers N' Hops](https://hackersnhops.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/HACKERSNHOPS.png){ width="200" align=left }](https://hackersnhops.ctfd.io/)  
-    **比赛名称** : [Hackers N' Hops](https://hackersnhops.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-02 18:00:00 - 2024-11-04 02:00:00 UTC+8  
-    **比赛权重** : 24.71  
-    **赛事主办** : Hackers N' Hops (https://ctftime.org/team/119910)  
-    **添加日历** : https://ctftime.org/event/2550.ics  
     
