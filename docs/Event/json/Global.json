@@ -12,20 +12,8 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "PwnMe CTF Quals 2025",
-        "比赛时间": "2025-03-01 04:00:00 - 2025-03-03 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2658.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://pwnme.fr/",
-        "比赛标志": "https://ctftime.org/media/events/PWNME_ReseauxPP1_1.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "PHREAKS 2600 (https://ctftime.org/team/200877)",
-        "比赛ID": "1141",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "ApoorvCTF 2025",
-        "比赛时间": "2025-03-01 05:00:00 - 2025-03-03 05:00:00 UTC+8",
+        "比赛时间": "2025-02-28 23:30:00 - 2025-03-02 23:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2638.ics",
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.iiitkottayam.ac.in/",
@@ -33,6 +21,18 @@
         "比赛权重": "0.00",
         "赛事主办": "r3d_kn1ght5 (https://ctftime.org/team/212248)",
         "比赛ID": "1083",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "PwnMe CTF Quals 2025",
+        "比赛时间": "2025-03-01 04:00:00 - 2025-03-03 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2658.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://pwnme.phreaks.fr/",
+        "比赛标志": "https://ctftime.org/media/events/PWNME_ReseauxPP1_1.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "PHREAKS 2600 (https://ctftime.org/team/200877)",
+        "比赛ID": "1141",
         "比赛状态": "oncoming"
     },
     {
@@ -213,6 +213,18 @@
         "比赛权重": "0.00",
         "赛事主办": "FlagMotori (https://ctftime.org/team/222060)",
         "比赛ID": "1221",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "PascalCTF Beginners 2025",
+        "比赛时间": "2025-03-19 23:00:00 - 2025-03-20 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2664.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.pascalctf.it/",
+        "比赛标志": "https://ctftime.org/media/events/Untitled_2_1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Paolo (https://ctftime.org/team/263145)",
+        "比赛ID": "1242",
         "比赛状态": "oncoming"
     },
     {
@@ -825,18 +837,6 @@
         "比赛权重": "0",
         "赛事主办": "ThunderCipher (https://ctftime.org/team/279782)",
         "比赛ID": "1116",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "PascalCTF Beginners 2025",
-        "比赛时间": "2025-02-17 23:00:00 - 2025-02-18 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2664.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.pascalctf.it/",
-        "比赛标志": "https://ctftime.org/media/events/Untitled_2_1.png",
-        "比赛权重": "0",
-        "赛事主办": "Paolo (https://ctftime.org/team/263145)",
-        "比赛ID": "1242",
         "比赛状态": "past"
     },
     {
@@ -1965,6 +1965,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Pacific Hackers Association (https://ctftime.org/team/304096)",
         "比赛ID": "1145",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Hackers N' Hops",
+        "比赛时间": "2024-11-02 18:00:00 - 2024-11-04 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2550.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://hackersnhops.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/HACKERSNHOPS.png",
+        "比赛权重": "24.71",
+        "赛事主办": "Hackers N' Hops (https://ctftime.org/team/119910)",
+        "比赛ID": "1191",
         "比赛状态": "past"
     }
 ]
