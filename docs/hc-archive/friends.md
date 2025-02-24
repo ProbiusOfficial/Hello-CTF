@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [某系统前台组合拳RCE](https://y4tacker.github.io/2025/02/23/year/2025/%E6%9F%90%E7%B3%BB%E7%BB%9F%E5%89%8D%E5%8F%B0%E7%BB%84%E5%90%88%E6%8B%B3RCE/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-02-23
+
+    8133babd8f05e144d8e8c2c4c8ee0fb3d40c2c031c3925709b74cb30c7b27fca92bfd93cf7cf65a6834a805821993b6c9674428ad9fdcf275cf47eb5e07cfd2d776e01401bdf1c9d1052d24b573abb3ff41508c0d801b0496ab9e4257b11885ae0e4bf...
     ### [windowsAPC学习（2）——APC挂入与执行](https://xia0ji233.github.io/2025/02/17/WindowsAPC2/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2025-02-17
 
@@ -149,9 +153,5 @@ hide:
     >by [曾哥](https://blog.zgsec.cn/), 2024-12-08
 
     前言哈哈，好久没在博客上面更新文章了，许多朋友（不管是线上还是线下）都在问我是不是不更新博客了，也在催我赶紧更新一下博客的内容，在此也非常感谢各位师傅和朋友的关注和支持~近期不更新博客，原因如下：最近大家也知道emmmmm..我最近到深圳这边，这边项目的对抗程度很高，在这段时间学到很多知识，但工作强度也比较大，人也相比之前时间更少了，也累了不少；但能学到技术还是非常开心的，有时候工作确实太累了，导...
-    ### [强网杯S8决赛pwn writeup](https://xia0ji233.github.io/2024/12/08/qwb2024_final/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2024-12-07
-
-    同样的，决赛也出了两道pwn题，感觉挺有意思的，来补补wp。heap附件下载环境准备这题一开始最大的一个问题可能是题目依赖较多跑不起来，而且只给了 libc 的版本，是 2.31 9.16 版本，这个比较好说。如果是 libcrypto.1.1 这个库不存在也好说，apt 安装就好了。照常换了 runpath 和链接器之后报了一个神奇的错误。这里的意思就是，虽然你 elf 文件的 libc 换好了...
 
 </div>
