@@ -353,7 +353,7 @@ hide:
                 **添加日历** : https://ctftime.org/event/2692.ics  
                 
             ??? Quote "[VishwaCTF 2025](https://vishwactf.com/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://vishwactf.com/)  
+                [![](https://ctftime.org/media/events/VishwaCTF-Circular_1.png){ width="200" align=left }](https://vishwactf.com/)  
                 **比赛名称** : [VishwaCTF 2025](https://vishwactf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-03-03 18:30:00 - 2025-03-05 18:29:59 UTC+8  
