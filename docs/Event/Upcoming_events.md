@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[PwnMe CTF Quals 2025](https://pwnme.phreaks.fr/)"  
-    [![](https://ctftime.org/media/events/PWNME_ReseauxPP1_1.jpg){ width="200" align=left }](https://pwnme.phreaks.fr/)  
-    **比赛名称** : [PwnMe CTF Quals 2025](https://pwnme.phreaks.fr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-01 04:00:00 - 2025-03-03 02:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
-    **添加日历** : https://ctftime.org/event/2658.ics  
-    
 ??? Quote "[SECCON CTF 13 International Finals](https://ctf.seccon.jp/)"  
     [![](https://ctftime.org/media/events/seccon_s_8.png){ width="200" align=left }](https://ctf.seccon.jp/)  
     **比赛名称** : [SECCON CTF 13 International Finals](https://ctf.seccon.jp/)  
