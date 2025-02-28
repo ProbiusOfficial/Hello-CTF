@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "ApoorvCTF 2025",
-        "比赛时间": "2025-02-28 23:30:00 - 2025-03-02 23:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2638.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.iiitkottayam.ac.in/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "r3d_kn1ght5 (https://ctftime.org/team/212248)",
-        "比赛ID": "1083",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "PwnMe CTF Quals 2025",
         "比赛时间": "2025-03-01 04:00:00 - 2025-03-03 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2658.ics",
@@ -753,6 +741,18 @@
         "比赛权重": "0",
         "赛事主办": "ectfmitre (https://ctftime.org/team/87292)",
         "比赛ID": "364",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "ApoorvCTF 2025",
+        "比赛时间": "2025-02-28 23:30:00 - 2025-03-02 23:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2638.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.iiitkottayam.ac.in/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "r3d_kn1ght5 (https://ctftime.org/team/212248)",
+        "比赛ID": "1083",
         "比赛状态": "nowrunning"
     },
     {
