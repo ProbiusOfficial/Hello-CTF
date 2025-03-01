@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[CSCG 2025](https://play.cscg.live/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://play.cscg.live/)  
-            **比赛名称** : [CSCG 2025](https://play.cscg.live/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-03-02 01:00:00 - 2025-05-02 00:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : NFITS (https://ctftime.org/team/360674)  
-            **添加日历** : https://ctftime.org/event/2588.ics  
-            
         ??? Quote "[Winja CTF | Nullcon Goa 2025](https://ctf.winja.org/)"  
             [![](https://ctftime.org/media/events/winja-logo-transparent_2.png){ width="200" align=left }](https://ctf.winja.org/)  
             **比赛名称** : [Winja CTF | Nullcon Goa 2025](https://ctf.winja.org/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 33.81  
             **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
             **添加日历** : https://ctftime.org/event/2647.ics  
+            
+        ??? Quote "[KalmarCTF 2025](http://KalmarC.TF/)"  
+            [![](https://ctftime.org/media/events/kalmar-logo.png){ width="200" align=left }](http://KalmarC.TF/)  
+            **比赛名称** : [KalmarCTF 2025](http://KalmarC.TF/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-03-08 01:00:00 - 2025-03-10 01:00:00 UTC+8  
+            **比赛权重** : 33.89  
+            **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
+            **添加日历** : https://ctftime.org/event/2599.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
