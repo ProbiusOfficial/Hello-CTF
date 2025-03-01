@@ -9,24 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[SECCON CTF 13 International Finals](https://ctf.seccon.jp/)"  
-    [![](https://ctftime.org/media/events/seccon_s_8.png){ width="200" align=left }](https://ctf.seccon.jp/)  
-    **比赛名称** : [SECCON CTF 13 International Finals](https://ctf.seccon.jp/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-01 09:00:00 - 2025-03-02 19:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
-    **添加日历** : https://ctftime.org/event/2649.ics  
-    
-??? Quote "[SECCON CTF 13 Domestic Finals](https://ctf.seccon.jp/)"  
-    [![](https://ctftime.org/media/events/seccon_s_9.png){ width="200" align=left }](https://ctf.seccon.jp/)  
-    **比赛名称** : [SECCON CTF 13 Domestic Finals](https://ctf.seccon.jp/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-01 09:00:00 - 2025-03-02 19:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
-    **添加日历** : https://ctftime.org/event/2650.ics  
-    
 ??? Quote "[CSCG 2025](https://play.cscg.live/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://play.cscg.live/)  
     **比赛名称** : [CSCG 2025](https://play.cscg.live/)  
