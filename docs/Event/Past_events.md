@@ -48,6 +48,15 @@ comments: true
     **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
     **添加日历** : https://ctftime.org/event/2650.ics  
     
+??? Quote "[PwnMe CTF Quals 2025](https://pwnme.phreaks.fr/)"  
+    [![](https://ctftime.org/media/events/PWNME_ReseauxPP1_1.jpg){ width="200" align=left }](https://pwnme.phreaks.fr/)  
+    **比赛名称** : [PwnMe CTF Quals 2025](https://pwnme.phreaks.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-01 04:00:00 - 2025-03-03 02:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
+    **添加日历** : https://ctftime.org/event/2658.ics  
+    
 ??? Quote "[ApoorvCTF 2025](https://ctf.iiitkottayam.ac.in/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.iiitkottayam.ac.in/)  
     **比赛名称** : [ApoorvCTF 2025](https://ctf.iiitkottayam.ac.in/)  
@@ -80,7 +89,7 @@ comments: true
     **比赛名称** : [Kashi CTF 2025](https://kashictf.iitbhucybersec.in/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-02-22 20:00:00 - 2025-02-23 20:00:00 UTC+8  
-    **比赛权重** : 22.31  
+    **比赛权重** : 22.20  
     **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
     **添加日历** : https://ctftime.org/event/2668.ics  
     
@@ -911,13 +920,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : BlackAlps (https://ctftime.org/team/89021)  
     **添加日历** : https://ctftime.org/event/2504.ics  
-    
-??? Quote "[CSAW CTF Final Round 2024](https://ctf.csaw.io/)"  
-    [![](https://ctftime.org/media/events/CSAW15LOGO_COLOR_1.png){ width="200" align=left }](https://ctf.csaw.io/)  
-    **比赛名称** : [CSAW CTF Final Round 2024](https://ctf.csaw.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-08 00:00:00 - 2024-11-09 12:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
-    **添加日历** : https://ctftime.org/event/2567.ics  
     

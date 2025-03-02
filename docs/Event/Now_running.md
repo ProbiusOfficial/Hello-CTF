@@ -18,15 +18,6 @@ comments: true
     **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
     **添加日历** : https://ctftime.org/event/2542.ics  
     
-??? Quote "[PwnMe CTF Quals 2025](https://pwnme.phreaks.fr/)"  
-    [![](https://ctftime.org/media/events/PWNME_ReseauxPP1_1.jpg){ width="200" align=left }](https://pwnme.phreaks.fr/)  
-    **比赛名称** : [PwnMe CTF Quals 2025](https://pwnme.phreaks.fr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-01 04:00:00 - 2025-03-03 02:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
-    **添加日历** : https://ctftime.org/event/2658.ics  
-    
 ??? Quote "[CSCG 2025](https://play.cscg.live/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://play.cscg.live/)  
     **比赛名称** : [CSCG 2025](https://play.cscg.live/)  
