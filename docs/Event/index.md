@@ -824,24 +824,6 @@ hide:
                 **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
                 **添加日历** : https://ctftime.org/event/2658.ics  
                 
-            ??? Quote "[SECCON CTF 13 International Finals](https://ctf.seccon.jp/)"  
-                [![](https://ctftime.org/media/events/seccon_s_8.png){ width="200" align=left }](https://ctf.seccon.jp/)  
-                **比赛名称** : [SECCON CTF 13 International Finals](https://ctf.seccon.jp/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-01 09:00:00 - 2025-03-02 19:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
-                **添加日历** : https://ctftime.org/event/2649.ics  
-                
-            ??? Quote "[SECCON CTF 13 Domestic Finals](https://ctf.seccon.jp/)"  
-                [![](https://ctftime.org/media/events/seccon_s_9.png){ width="200" align=left }](https://ctf.seccon.jp/)  
-                **比赛名称** : [SECCON CTF 13 Domestic Finals](https://ctf.seccon.jp/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-01 09:00:00 - 2025-03-02 19:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
-                **添加日历** : https://ctftime.org/event/2650.ics  
-                
             ??? Quote "[CSCG 2025](https://play.cscg.live/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://play.cscg.live/)  
                 **比赛名称** : [CSCG 2025](https://play.cscg.live/)  
@@ -850,15 +832,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2588.ics  
-                
-            ??? Quote "[Winja CTF | Nullcon Goa 2025](https://ctf.winja.org/)"  
-                [![](https://ctftime.org/media/events/winja-logo-transparent_2.png){ width="200" align=left }](https://ctf.winja.org/)  
-                **比赛名称** : [Winja CTF | Nullcon Goa 2025](https://ctf.winja.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-02 14:00:00 - 2025-03-02 19:00:00 UTC+8  
-                **比赛权重** : 13.00  
-                **赛事主办** : Winja CTF (https://ctftime.org/team/145228)  
-                **添加日历** : https://ctftime.org/event/2692.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -877,6 +850,33 @@ hide:
                 **其他说明** : VNCTF 2025由V&N Team主办，个人赛，可报名，即将开始，中途可加入。报名开始时间为2025年01月01日 00:00，比赛时间为2025年02月08日 10:00至2025年02月09日 10:00。更多信息请加QQ群717513199。  
                 
         === "国外赛事"
+            ??? Quote "[Winja CTF | Nullcon Goa 2025](https://ctf.winja.org/)"  
+                [![](https://ctftime.org/media/events/winja-logo-transparent_2.png){ width="200" align=left }](https://ctf.winja.org/)  
+                **比赛名称** : [Winja CTF | Nullcon Goa 2025](https://ctf.winja.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-02 14:00:00 - 2025-03-02 19:00:00 UTC+8  
+                **比赛权重** : 13.00  
+                **赛事主办** : Winja CTF (https://ctftime.org/team/145228)  
+                **添加日历** : https://ctftime.org/event/2692.ics  
+                
+            ??? Quote "[SECCON CTF 13 International Finals](https://ctf.seccon.jp/)"  
+                [![](https://ctftime.org/media/events/seccon_s_8.png){ width="200" align=left }](https://ctf.seccon.jp/)  
+                **比赛名称** : [SECCON CTF 13 International Finals](https://ctf.seccon.jp/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-01 09:00:00 - 2025-03-02 19:00:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
+                **添加日历** : https://ctftime.org/event/2649.ics  
+                
+            ??? Quote "[SECCON CTF 13 Domestic Finals](https://ctf.seccon.jp/)"  
+                [![](https://ctftime.org/media/events/seccon_s_9.png){ width="200" align=left }](https://ctf.seccon.jp/)  
+                **比赛名称** : [SECCON CTF 13 Domestic Finals](https://ctf.seccon.jp/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-01 09:00:00 - 2025-03-02 19:00:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
+                **添加日历** : https://ctftime.org/event/2650.ics  
+                
             ??? Quote "[ACECTF 1.0](https://acectf.tech/)"  
                 [![](https://ctftime.org/media/events/WhatsApp_Image_2024-12-26_at_12.03.44_7efe1dad.jpg){ width="200" align=left }](https://acectf.tech/)  
                 **比赛名称** : [ACECTF 1.0](https://acectf.tech/)  
@@ -1749,33 +1749,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : exunclan (https://ctftime.org/team/83987)  
                 **添加日历** : https://ctftime.org/event/2562.ics  
-                
-            ??? Quote "[RedShift.Eclipse 2 Quals](https://quals.o1d-bu7-go1d.ru/)"  
-                [![](https://ctftime.org/media/events/IMG_5703.JPG){ width="200" align=left }](https://quals.o1d-bu7-go1d.ru/)  
-                **比赛名称** : [RedShift.Eclipse 2 Quals](https://quals.o1d-bu7-go1d.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-03 20:00:00 - 2024-11-04 20:00:00 UTC+8  
-                **比赛权重** : 23.40  
-                **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
-                **添加日历** : https://ctftime.org/event/2541.ics  
-                
-            ??? Quote "[AlpacaHack Round 6 (Pwn)](https://alpacahack.com/ctfs/round-6)"  
-                [![](https://ctftime.org/media/events/ctftime_7.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-6)  
-                **比赛名称** : [AlpacaHack Round 6 (Pwn)](https://alpacahack.com/ctfs/round-6)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-03 11:00:00 - 2024-11-03 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
-                **添加日历** : https://ctftime.org/event/2501.ics  
-                
-            ??? Quote "[Pacific Hackers Conference 2024](https://www.phack.org/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://www.phack.org/)  
-                **比赛名称** : [Pacific Hackers Conference 2024](https://www.phack.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-03 01:00:00 - 2024-11-03 09:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Pacific Hackers Association (https://ctftime.org/team/304096)  
-                **添加日历** : https://ctftime.org/event/2453.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

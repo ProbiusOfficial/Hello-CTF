@@ -708,30 +708,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "SECCON CTF 13 International Finals",
-        "比赛时间": "2025-03-01 09:00:00 - 2025-03-02 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2649.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.seccon.jp/",
-        "比赛标志": "https://ctftime.org/media/events/seccon_s_8.png",
-        "比赛权重": "25.00",
-        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
-        "比赛ID": "92",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "SECCON CTF 13 Domestic Finals",
-        "比赛时间": "2025-03-01 09:00:00 - 2025-03-02 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2650.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.seccon.jp/",
-        "比赛标志": "https://ctftime.org/media/events/seccon_s_9.png",
-        "比赛权重": "25.00",
-        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
-        "比赛ID": "92",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "CSCG 2025",
         "比赛时间": "2025-03-02 01:00:00 - 2025-05-02 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2588.ics",
@@ -753,7 +729,31 @@
         "比赛权重": "13.00",
         "赛事主办": "Winja CTF (https://ctftime.org/team/145228)",
         "比赛ID": "604",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "SECCON CTF 13 International Finals",
+        "比赛时间": "2025-03-01 09:00:00 - 2025-03-02 19:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2649.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.seccon.jp/",
+        "比赛标志": "https://ctftime.org/media/events/seccon_s_8.png",
+        "比赛权重": "25.00",
+        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
+        "比赛ID": "92",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "SECCON CTF 13 Domestic Finals",
+        "比赛时间": "2025-03-01 09:00:00 - 2025-03-02 19:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2650.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.seccon.jp/",
+        "比赛标志": "https://ctftime.org/media/events/seccon_s_9.png",
+        "比赛权重": "25.00",
+        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
+        "比赛ID": "92",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "ACECTF 1.0",
@@ -1917,42 +1917,6 @@
         "比赛权重": "0",
         "赛事主办": "exunclan (https://ctftime.org/team/83987)",
         "比赛ID": "869",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "RedShift.Eclipse 2 Quals",
-        "比赛时间": "2024-11-03 20:00:00 - 2024-11-04 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2541.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://quals.o1d-bu7-go1d.ru/",
-        "比赛标志": "https://ctftime.org/media/events/IMG_5703.JPG",
-        "比赛权重": "23.40",
-        "赛事主办": "o1d_bu7_go1d (https://ctftime.org/team/213673)",
-        "比赛ID": "1179",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "AlpacaHack Round 6 (Pwn)",
-        "比赛时间": "2024-11-03 11:00:00 - 2024-11-03 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2501.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://alpacahack.com/ctfs/round-6",
-        "比赛标志": "https://ctftime.org/media/events/ctftime_7.png",
-        "比赛权重": "0",
-        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
-        "比赛ID": "1163",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Pacific Hackers Conference 2024",
-        "比赛时间": "2024-11-03 01:00:00 - 2024-11-03 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2453.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.phack.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Pacific Hackers Association (https://ctftime.org/team/304096)",
-        "比赛ID": "1145",
         "比赛状态": "past"
     }
 ]
