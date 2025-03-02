@@ -891,7 +891,7 @@ hide:
                 **比赛名称** : [TRX CTF 2025](https://ctf.theromanxpl0.it/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-02-22 22:00:00 - 2025-02-23 22:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 24.43  
                 **赛事主办** : TheRomanXpl0it (https://ctftime.org/team/46516)  
                 **添加日历** : https://ctftime.org/event/2654.ics  
                 
