@@ -55,7 +55,7 @@ hide:
     
     === "国外比赛"
         ??? Quote "[Pearl CTF](https://pearlctf.in/)"  
-            [![](https://ctftime.org/media/events/logo_102.png){ width="200" align=left }](https://pearlctf.in/)  
+            [![](https://ctftime.org/media/events/Pearl_Logo.png){ width="200" align=left }](https://pearlctf.in/)  
             **比赛名称** : [Pearl CTF](https://pearlctf.in/)  
             **比赛形式** : Jeopardy  
             **比赛时间** : 2025-03-07 20:30:00 - 2025-03-08 20:30:00 UTC+8  
