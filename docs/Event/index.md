@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[VishwaCTF 2025](https://vishwactf.com/)"  
-                [![](https://ctftime.org/media/events/VishwaCTF-Circular_1.png){ width="200" align=left }](https://vishwactf.com/)  
-                **比赛名称** : [VishwaCTF 2025](https://vishwactf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-03 18:30:00 - 2025-03-05 18:29:59 UTC+8  
-                **比赛权重** : 27.90  
-                **赛事主办** : CyberCellVIIT (https://ctftime.org/team/144677)  
-                **添加日历** : https://ctftime.org/event/2630.ics  
-                
             ??? Quote "[Pearl CTF](https://pearlctf.in/)"  
                 [![](https://ctftime.org/media/events/logo_102.png){ width="200" align=left }](https://pearlctf.in/)  
                 **比赛名称** : [Pearl CTF](https://pearlctf.in/)  
@@ -815,6 +806,15 @@ hide:
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2588.ics  
                 
+            ??? Quote "[VishwaCTF 2025](https://vishwactf.com/)"  
+                [![](https://ctftime.org/media/events/VishwaCTF-Circular_1.png){ width="200" align=left }](https://vishwactf.com/)  
+                **比赛名称** : [VishwaCTF 2025](https://vishwactf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-03 18:30:00 - 2025-03-05 18:29:59 UTC+8  
+                **比赛权重** : 27.90  
+                **赛事主办** : CyberCellVIIT (https://ctftime.org/team/144677)  
+                **添加日历** : https://ctftime.org/event/2630.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[HGAME 2025](https://hgame.vidar.club/games/2)"  
@@ -945,7 +945,7 @@ hide:
                 **比赛名称** : [EHAX CTF 2025](https://ctf.ehax.tech/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-02-16 00:00:00 - 2025-02-17 00:00:00 UTC+8  
-                **比赛权重** : 22.14  
+                **比赛权重** : 22.27  
                 **赛事主办** : EHAX (https://ctftime.org/team/270643)  
                 **添加日历** : https://ctftime.org/event/2677.ics  
                 

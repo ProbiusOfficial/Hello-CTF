@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[VishwaCTF 2025](https://vishwactf.com/)"  
-    [![](https://ctftime.org/media/events/VishwaCTF-Circular_1.png){ width="200" align=left }](https://vishwactf.com/)  
-    **比赛名称** : [VishwaCTF 2025](https://vishwactf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-03 18:30:00 - 2025-03-05 18:29:59 UTC+8  
-    **比赛权重** : 27.90  
-    **赛事主办** : CyberCellVIIT (https://ctftime.org/team/144677)  
-    **添加日历** : https://ctftime.org/event/2630.ics  
-    
 ??? Quote "[Pearl CTF](https://pearlctf.in/)"  
     [![](https://ctftime.org/media/events/logo_102.png){ width="200" align=left }](https://pearlctf.in/)  
     **比赛名称** : [Pearl CTF](https://pearlctf.in/)  
