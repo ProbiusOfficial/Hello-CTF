@@ -370,6 +370,15 @@ hide:
                 **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
                 **添加日历** : https://ctftime.org/event/2558.ics  
                 
+            ??? Quote "[K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)"  
+                [![](https://ctftime.org/media/events/iconH.png){ width="200" align=left }](https://ctf.k1nd4sus.it/)  
+                **比赛名称** : [K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-15 21:00:00 - 2025-03-16 21:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : K!nd4SUS (https://ctftime.org/team/150337)  
+                **添加日历** : https://ctftime.org/event/2703.ics  
+                
             ??? Quote "[Nowruz 1404](https://1404.fmc.tf/)"  
                 [![](https://ctftime.org/media/events/FMCTF.png){ width="200" align=left }](https://1404.fmc.tf/)  
                 **比赛名称** : [Nowruz 1404](https://1404.fmc.tf/)  
@@ -416,7 +425,7 @@ hide:
                 **添加日历** : https://ctftime.org/event/2679.ics  
                 
             ??? Quote "[RITSEC CTF 2025](https://ctfd.ritsec.club/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctfd.ritsec.club/)  
+                [![](https://ctftime.org/media/events/Screenshot_From_2025-03-04_12-03-08.png){ width="200" align=left }](https://ctfd.ritsec.club/)  
                 **比赛名称** : [RITSEC CTF 2025](https://ctfd.ritsec.club/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-03-22 05:00:00 - 2025-03-24 05:00:00 UTC+8  

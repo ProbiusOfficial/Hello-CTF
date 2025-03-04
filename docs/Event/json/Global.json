@@ -108,6 +108,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "K!nd4SUS CTF 2025",
+        "比赛时间": "2025-03-15 21:00:00 - 2025-03-16 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2703.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.k1nd4sus.it/",
+        "比赛标志": "https://ctftime.org/media/events/iconH.png",
+        "比赛权重": "0.00",
+        "赛事主办": "K!nd4SUS (https://ctftime.org/team/150337)",
+        "比赛ID": "1264",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Nowruz 1404",
         "比赛时间": "2025-03-15 21:30:00 - 2025-03-16 21:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2601.ics",
@@ -173,7 +185,7 @@
         "添加日历": "https://ctftime.org/event/2673.ics",
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctfd.ritsec.club/",
-        "比赛标志": "https://ctftime.org",
+        "比赛标志": "https://ctftime.org/media/events/Screenshot_From_2025-03-04_12-03-08.png",
         "比赛权重": "34.14",
         "赛事主办": "Contagion (https://ctftime.org/team/152691)",
         "比赛ID": "170",
