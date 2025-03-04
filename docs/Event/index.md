@@ -460,15 +460,6 @@ hide:
                 **赛事主办** : 0x01DA (https://ctftime.org/team/104949)  
                 **添加日历** : https://ctftime.org/event/2666.ics  
                 
-            ??? Quote "[TAMUctf 2025](https://tamuctf.com/)"  
-                [![](https://ctftime.org/media/events/TAMUCTF_cmaroon_1_1.png){ width="200" align=left }](https://tamuctf.com/)  
-                **比赛名称** : [TAMUctf 2025](https://tamuctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-29 01:00:00 - 2025-03-31 01:00:00 UTC+8  
-                **比赛权重** : 56.66  
-                **赛事主办** : TAMUctf (https://ctftime.org/team/37721)  
-                **添加日历** : https://ctftime.org/event/2681.ics  
-                
             ??? Quote "[HackDay 2025 - Finals](https://hackday.fr/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://hackday.fr/)  
                 **比赛名称** : [HackDay 2025 - Finals](https://hackday.fr/)  
@@ -495,6 +486,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
                 **添加日历** : https://ctftime.org/event/2617.ics  
+                
+            ??? Quote "[TAMUctf 2025](https://tamuctf.com/)"  
+                [![](https://ctftime.org/media/events/TAMUCTF_cmaroon_1_1.png){ width="200" align=left }](https://tamuctf.com/)  
+                **比赛名称** : [TAMUctf 2025](https://tamuctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-29 06:00:00 - 2025-03-31 06:00:00 UTC+8  
+                **比赛权重** : 56.66  
+                **赛事主办** : TAMUctf (https://ctftime.org/team/37721)  
+                **添加日历** : https://ctftime.org/event/2681.ics  
                 
             ??? Quote "[Dreamhack CTF Season 7 Round #6 (Div. 2)](https://dreamhack.io/ctf/660)"  
                 [![](https://ctftime.org/media/events/bg2_1.jpg){ width="200" align=left }](https://dreamhack.io/ctf/660)  
