@@ -27,3 +27,12 @@ comments: true
     **赛事主办** : NFITS (https://ctftime.org/team/360674)  
     **添加日历** : https://ctftime.org/event/2588.ics  
     
+??? Quote "[Pearl CTF](https://pearlctf.in/)"  
+    [![](https://ctftime.org/media/events/Pearl_Logo.png){ width="200" align=left }](https://pearlctf.in/)  
+    **比赛名称** : [Pearl CTF](https://pearlctf.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-07 20:30:00 - 2025-03-08 20:30:00 UTC+8  
+    **比赛权重** : 33.81  
+    **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
+    **添加日历** : https://ctftime.org/event/2647.ics  
+    

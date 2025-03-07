@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Pearl CTF](https://pearlctf.in/)"  
-            [![](https://ctftime.org/media/events/Pearl_Logo.png){ width="200" align=left }](https://pearlctf.in/)  
-            **比赛名称** : [Pearl CTF](https://pearlctf.in/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-03-07 20:30:00 - 2025-03-08 20:30:00 UTC+8  
-            **比赛权重** : 33.81  
-            **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
-            **添加日历** : https://ctftime.org/event/2647.ics  
-            
         ??? Quote "[KalmarCTF 2025](http://KalmarC.TF/)"  
             [![](https://ctftime.org/media/events/kalmar-logo.png){ width="200" align=left }](http://KalmarC.TF/)  
             **比赛名称** : [KalmarCTF 2025](http://KalmarC.TF/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 25.00  
             **赛事主办** : TP-Link (https://ctftime.org/team/273760)  
             **添加日历** : https://ctftime.org/event/2645.ics  
+            
+        ??? Quote "[Ugra CTF Quals 2025](https://2025.ugractf.ru/quals)"  
+            [![](https://ctftime.org/media/events/150.jpg){ width="200" align=left }](https://2025.ugractf.ru/quals)  
+            **比赛名称** : [Ugra CTF Quals 2025](https://2025.ugractf.ru/quals)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-03-08 15:00:00 - 2025-03-10 03:00:00 UTC+8  
+            **比赛权重** : 32.59  
+            **赛事主办** : [team Team] (https://ctftime.org/team/49808)  
+            **添加日历** : https://ctftime.org/event/2693.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
