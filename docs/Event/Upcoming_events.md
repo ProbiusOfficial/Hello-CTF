@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[KalmarCTF 2025](http://KalmarC.TF/)"  
-    [![](https://ctftime.org/media/events/kalmar-logo.png){ width="200" align=left }](http://KalmarC.TF/)  
-    **比赛名称** : [KalmarCTF 2025](http://KalmarC.TF/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-08 01:00:00 - 2025-03-10 01:00:00 UTC+8  
-    **比赛权重** : 33.89  
-    **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
-    **添加日历** : https://ctftime.org/event/2599.ics  
-    
 ??? Quote "[Dreamhack CTF Season 7 Round #5 (Div. 1)](https://dreamhack.io/ctf/659)"  
     [![](https://ctftime.org/media/events/cover05.jpg){ width="200" align=left }](https://dreamhack.io/ctf/659)  
     **比赛名称** : [Dreamhack CTF Season 7 Round #5 (Div. 1)](https://dreamhack.io/ctf/659)  

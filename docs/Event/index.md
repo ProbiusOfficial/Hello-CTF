@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[KalmarCTF 2025](http://KalmarC.TF/)"  
-                [![](https://ctftime.org/media/events/kalmar-logo.png){ width="200" align=left }](http://KalmarC.TF/)  
-                **比赛名称** : [KalmarCTF 2025](http://KalmarC.TF/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-08 01:00:00 - 2025-03-10 01:00:00 UTC+8  
-                **比赛权重** : 33.89  
-                **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
-                **添加日历** : https://ctftime.org/event/2599.ics  
-                
             ??? Quote "[Dreamhack CTF Season 7 Round #5 (Div. 1)](https://dreamhack.io/ctf/659)"  
                 [![](https://ctftime.org/media/events/cover05.jpg){ width="200" align=left }](https://dreamhack.io/ctf/659)  
                 **比赛名称** : [Dreamhack CTF Season 7 Round #5 (Div. 1)](https://dreamhack.io/ctf/659)  
@@ -824,6 +815,15 @@ hide:
                 **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
                 **添加日历** : https://ctftime.org/event/2647.ics  
                 
+            ??? Quote "[KalmarCTF 2025](http://KalmarC.TF/)"  
+                [![](https://ctftime.org/media/events/kalmar-logo.png){ width="200" align=left }](http://KalmarC.TF/)  
+                **比赛名称** : [KalmarCTF 2025](http://KalmarC.TF/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-08 01:00:00 - 2025-03-10 01:00:00 UTC+8  
+                **比赛权重** : 33.89  
+                **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
+                **添加日历** : https://ctftime.org/event/2599.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[HGAME 2025](https://hgame.vidar.club/games/2)"  
@@ -909,7 +909,7 @@ hide:
                 **比赛名称** : [TRX CTF 2025](https://ctf.theromanxpl0.it/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-02-22 22:00:00 - 2025-02-23 22:00:00 UTC+8  
-                **比赛权重** : 24.43  
+                **比赛权重** : 24.21  
                 **赛事主办** : TheRomanXpl0it (https://ctftime.org/team/46516)  
                 **添加日历** : https://ctftime.org/event/2654.ics  
                 
