@@ -415,7 +415,7 @@
         "比赛链接": "https://thcon.party/",
         "比赛标志": "https://ctftime.org/media/events/Sans_titre.ico",
         "比赛权重": "23.65",
-        "赛事主办": "pony7 (https://ctftime.org/team/20769)",
+        "赛事主办": "FirewallFoxes, pony7 (https://ctftime.org/team/278913, https://ctftime.org/team/20769)",
         "比赛ID": "181",
         "比赛状态": "oncoming"
     },
@@ -537,6 +537,18 @@
         "比赛权重": "20.72",
         "赛事主办": "SAS CREW (https://ctftime.org/team/283057)",
         "比赛ID": "1081",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "DaVinciCTF 2025",
+        "比赛时间": "2025-05-24 18:00:00 - 2025-05-26 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2675.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://dvc.tf/",
+        "比赛标志": "https://ctftime.org/media/events/davincictf_vectorized.png",
+        "比赛权重": "0.00",
+        "赛事主办": "DaVinciCode (https://ctftime.org/team/112645)",
+        "比赛ID": "582",
         "比赛状态": "oncoming"
     },
     {
@@ -762,7 +774,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.iiitkottayam.ac.in/",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
+        "比赛权重": "0",
         "赛事主办": "r3d_kn1ght5 (https://ctftime.org/team/212248)",
         "比赛ID": "1083",
         "比赛状态": "past"

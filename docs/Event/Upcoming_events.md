@@ -321,7 +321,7 @@ comments: true
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-04-12 16:00:00 - 2025-04-12 16:00:00 UTC+8  
     **比赛权重** : 23.65  
-    **赛事主办** : pony7 (https://ctftime.org/team/20769)  
+    **赛事主办** : FirewallFoxes, pony7 (https://ctftime.org/team/278913, https://ctftime.org/team/20769)  
     **添加日历** : https://ctftime.org/event/2660.ics  
     
 ??? Quote "[Midnight Flag CTF - INSURRECTION](https://midnightflag.fr/)"  
@@ -413,6 +413,15 @@ comments: true
     **比赛权重** : 20.72  
     **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
     **添加日历** : https://ctftime.org/event/2636.ics  
+    
+??? Quote "[DaVinciCTF 2025](https://dvc.tf/)"  
+    [![](https://ctftime.org/media/events/davincictf_vectorized.png){ width="200" align=left }](https://dvc.tf/)  
+    **比赛名称** : [DaVinciCTF 2025](https://dvc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-24 18:00:00 - 2025-05-26 04:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : DaVinciCode (https://ctftime.org/team/112645)  
+    **添加日历** : https://ctftime.org/event/2675.ics  
     
 ??? Quote "[N0PSctf](https://www.nops.re/)"  
     [![](https://ctftime.org/media/events/logo-news.png){ width="200" align=left }](https://www.nops.re/)  

@@ -71,7 +71,7 @@ comments: true
     **比赛名称** : [ApoorvCTF 2025](https://ctf.iiitkottayam.ac.in/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-02-28 23:30:00 - 2025-03-02 23:30:00 UTC+8  
-    **比赛权重** : 0.00  
+    **比赛权重** : 0  
     **赛事主办** : r3d_kn1ght5 (https://ctftime.org/team/212248)  
     **添加日历** : https://ctftime.org/event/2638.ics  
     
