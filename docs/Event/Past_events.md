@@ -21,6 +21,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Dreamhack CTF Season 7 Round #5 (Div. 1)](https://dreamhack.io/ctf/659)"  
+    [![](https://ctftime.org/media/events/cover05.jpg){ width="200" align=left }](https://dreamhack.io/ctf/659)  
+    **比赛名称** : [Dreamhack CTF Season 7 Round #5 (Div. 1)](https://dreamhack.io/ctf/659)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-08 08:00:00 - 2025-03-08 23:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
+    **添加日历** : https://ctftime.org/event/2625.ics  
+    
 ??? Quote "[Pearl CTF](https://pearlctf.in/)"  
     [![](https://ctftime.org/media/events/Pearl_Logo.png){ width="200" align=left }](https://pearlctf.in/)  
     **比赛名称** : [Pearl CTF](https://pearlctf.in/)  
@@ -911,13 +920,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : CRUx BPHC (https://ctftime.org/team/270645)  
     **添加日历** : https://ctftime.org/event/2559.ics  
-    
-??? Quote "[Metared Argentina CERTUNLP](https://ctf.cert.unlp.edu.ar/)"  
-    [![](https://ctftime.org/media/events/unlp.png){ width="200" align=left }](https://ctf.cert.unlp.edu.ar/)  
-    **比赛名称** : [Metared Argentina CERTUNLP](https://ctf.cert.unlp.edu.ar/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-08 19:00:00 - 2024-11-09 19:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : CERTUNLP (https://ctftime.org/team/89294)  
-    **添加日历** : https://ctftime.org/event/2537.ics  
     
