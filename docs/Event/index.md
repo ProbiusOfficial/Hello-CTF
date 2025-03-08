@@ -779,15 +779,6 @@ hide:
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2588.ics  
                 
-            ??? Quote "[Pearl CTF](https://pearlctf.in/)"  
-                [![](https://ctftime.org/media/events/Pearl_Logo.png){ width="200" align=left }](https://pearlctf.in/)  
-                **比赛名称** : [Pearl CTF](https://pearlctf.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-07 20:30:00 - 2025-03-08 20:30:00 UTC+8  
-                **比赛权重** : 33.81  
-                **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
-                **添加日历** : https://ctftime.org/event/2647.ics  
-                
             ??? Quote "[KalmarCTF 2025](http://KalmarC.TF/)"  
                 [![](https://ctftime.org/media/events/kalmar-logo.png){ width="200" align=left }](http://KalmarC.TF/)  
                 **比赛名称** : [KalmarCTF 2025](http://KalmarC.TF/)  
@@ -841,6 +832,15 @@ hide:
                 **其他说明** : VNCTF 2025由V&N Team主办，个人赛，可报名，即将开始，中途可加入。报名开始时间为2025年01月01日 00:00，比赛时间为2025年02月08日 10:00至2025年02月09日 10:00。更多信息请加QQ群717513199。  
                 
         === "国外赛事"
+            ??? Quote "[Pearl CTF](https://pearlctf.in/)"  
+                [![](https://ctftime.org/media/events/Pearl_Logo.png){ width="200" align=left }](https://pearlctf.in/)  
+                **比赛名称** : [Pearl CTF](https://pearlctf.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-07 20:30:00 - 2025-03-08 20:30:00 UTC+8  
+                **比赛权重** : 33.81  
+                **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
+                **添加日历** : https://ctftime.org/event/2647.ics  
+                
             ??? Quote "[VishwaCTF 2025](https://vishwactf.com/)"  
                 [![](https://ctftime.org/media/events/VishwaCTF-Circular_1.png){ width="200" align=left }](https://vishwactf.com/)  
                 **比赛名称** : [VishwaCTF 2025](https://vishwactf.com/)  
@@ -1731,15 +1731,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : CERTUNLP (https://ctftime.org/team/89294)  
                 **添加日历** : https://ctftime.org/event/2537.ics  
-                
-            ??? Quote "[HKCERT CTF 2024 (Qualifying Round)](https://platform.ctf.hkcert.org/)"  
-                [![](https://ctftime.org/media/events/Screenshot_2024-08-13_100427.png){ width="200" align=left }](https://platform.ctf.hkcert.org/)  
-                **比赛名称** : [HKCERT CTF 2024 (Qualifying Round)](https://platform.ctf.hkcert.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-08 18:00:00 - 2024-11-10 18:00:00 UTC+8  
-                **比赛权重** : 61.22  
-                **赛事主办** : Black Bauhinia, HKCERT (https://ctftime.org/team/83678, https://ctftime.org/team/134746)  
-                **添加日历** : https://ctftime.org/event/2455.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
