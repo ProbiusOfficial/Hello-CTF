@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
-            [![](https://ctftime.org/media/events/DFIR_Labs_Icon.png){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
-            **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-03-09 00:00:00 - 2025-03-09 04:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
-            **添加日历** : https://ctftime.org/event/2643.ics  
-            
         ??? Quote "[Insomni'hack 2025](https://insomnihack.ch/contest/)"  
             [![](https://ctftime.org/media/events/skull.jpg){ width="200" align=left }](https://insomnihack.ch/contest/)  
             **比赛名称** : [Insomni'hack 2025](https://insomnihack.ch/contest/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
             **添加日历** : https://ctftime.org/event/2558.ics  
+            
+        ??? Quote "[K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)"  
+            [![](https://ctftime.org/media/events/iconH.png){ width="200" align=left }](https://ctf.k1nd4sus.it/)  
+            **比赛名称** : [K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-03-15 21:00:00 - 2025-03-16 21:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : K!nd4SUS (https://ctftime.org/team/150337)  
+            **添加日历** : https://ctftime.org/event/2703.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
