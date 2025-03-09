@@ -39,6 +39,15 @@ comments: true
     **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
     **添加日历** : https://ctftime.org/event/2625.ics  
     
+??? Quote "[KalmarCTF 2025](http://KalmarC.TF/)"  
+    [![](https://ctftime.org/media/events/kalmar-logo.png){ width="200" align=left }](http://KalmarC.TF/)  
+    **比赛名称** : [KalmarCTF 2025](http://KalmarC.TF/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-08 01:00:00 - 2025-03-10 01:00:00 UTC+8  
+    **比赛权重** : 33.89  
+    **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
+    **添加日历** : https://ctftime.org/event/2599.ics  
+    
 ??? Quote "[Pearl CTF](https://pearlctf.in/)"  
     [![](https://ctftime.org/media/events/Pearl_Logo.png){ width="200" align=left }](https://pearlctf.in/)  
     **比赛名称** : [Pearl CTF](https://pearlctf.in/)  
@@ -911,13 +920,4 @@ comments: true
     **比赛权重** : 24.40  
     **赛事主办** : 4T$ (https://ctftime.org/team/302295)  
     **添加日历** : https://ctftime.org/event/2545.ics  
-    
-??? Quote "[BlueHens CTF 2024](https://bluehens.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/UDCTF-logo_2.png){ width="200" align=left }](https://bluehens.ctfd.io/)  
-    **比赛名称** : [BlueHens CTF 2024](https://bluehens.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-09 01:00:00 - 2024-11-10 13:00:00 UTC+8  
-    **比赛权重** : 34.05  
-    **赛事主办** : Blue Hens (https://ctftime.org/team/64660)  
-    **添加日历** : https://ctftime.org/event/2512.ics  
     

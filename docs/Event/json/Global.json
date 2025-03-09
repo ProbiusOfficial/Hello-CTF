@@ -636,18 +636,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "KalmarCTF 2025",
-        "比赛时间": "2025-03-08 01:00:00 - 2025-03-10 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2599.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://KalmarC.TF/",
-        "比赛标志": "https://ctftime.org/media/events/kalmar-logo.png",
-        "比赛权重": "33.89",
-        "赛事主办": "kalmarunionen (https://ctftime.org/team/114856)",
-        "比赛ID": "813",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "TPCTF 2025",
         "比赛时间": "2025-03-08 09:00:00 - 2025-03-10 09:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2645.ics",
@@ -693,6 +681,18 @@
         "比赛权重": "0",
         "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
         "比赛ID": "1232",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "KalmarCTF 2025",
+        "比赛时间": "2025-03-08 01:00:00 - 2025-03-10 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2599.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://KalmarC.TF/",
+        "比赛标志": "https://ctftime.org/media/events/kalmar-logo.png",
+        "比赛权重": "33.89",
+        "赛事主办": "kalmarunionen (https://ctftime.org/team/114856)",
+        "比赛ID": "813",
         "比赛状态": "past"
     },
     {
@@ -1857,18 +1857,6 @@
         "比赛权重": "24.40",
         "赛事主办": "4T$ (https://ctftime.org/team/302295)",
         "比赛ID": "1188",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BlueHens CTF 2024",
-        "比赛时间": "2024-11-09 01:00:00 - 2024-11-10 13:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2512.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://bluehens.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/UDCTF-logo_2.png",
-        "比赛权重": "34.05",
-        "赛事主办": "Blue Hens (https://ctftime.org/team/64660)",
-        "比赛ID": "603",
         "比赛状态": "past"
     }
 ]
