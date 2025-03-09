@@ -900,7 +900,7 @@ hide:
                 **比赛名称** : [ACECTF 1.0](https://acectf.tech/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-02-27 14:30:00 - 2025-02-28 14:30:00 UTC+8  
-                **比赛权重** : 22.80  
+                **比赛权重** : 22.94  
                 **赛事主办** : ACECTF (https://ctftime.org/team/364715)  
                 **添加日历** : https://ctftime.org/event/2619.ics  
                 
@@ -909,7 +909,7 @@ hide:
                 **比赛名称** : [TRX CTF 2025](https://ctf.theromanxpl0.it/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-02-22 22:00:00 - 2025-02-23 22:00:00 UTC+8  
-                **比赛权重** : 24.21  
+                **比赛权重** : 24.26  
                 **赛事主办** : TheRomanXpl0it (https://ctftime.org/team/46516)  
                 **添加日历** : https://ctftime.org/event/2654.ics  
                 
@@ -918,7 +918,7 @@ hide:
                 **比赛名称** : [Kashi CTF 2025](https://kashictf.iitbhucybersec.in/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-02-22 20:00:00 - 2025-02-23 20:00:00 UTC+8  
-                **比赛权重** : 22.20  
+                **比赛权重** : 22.27  
                 **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
                 **添加日历** : https://ctftime.org/event/2668.ics  
                 
@@ -963,7 +963,7 @@ hide:
                 **比赛名称** : [EHAX CTF 2025](https://ctf.ehax.tech/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-02-16 00:00:00 - 2025-02-17 00:00:00 UTC+8  
-                **比赛权重** : 22.27  
+                **比赛权重** : 22.50  
                 **赛事主办** : EHAX (https://ctftime.org/team/270643)  
                 **添加日历** : https://ctftime.org/event/2677.ics  
                 
@@ -1071,7 +1071,7 @@ hide:
                 **比赛名称** : [Codefest CTF 2025](https://codefest-ctf.iitbhu.tech/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-01-25 20:30:00 - 2025-01-27 08:30:00 UTC+8  
-                **比赛权重** : 23.89  
+                **比赛权重** : 23.93  
                 **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
                 **添加日历** : https://ctftime.org/event/2648.ics  
                 
