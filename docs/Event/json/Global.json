@@ -648,18 +648,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Ugra CTF Quals 2025",
-        "比赛时间": "2025-03-08 15:00:00 - 2025-03-10 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2693.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2025.ugractf.ru/quals",
-        "比赛标志": "https://ctftime.org/media/events/150.jpg",
-        "比赛权重": "32.59",
-        "赛事主办": "[team Team] (https://ctftime.org/team/49808)",
-        "比赛ID": "457",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "DFIR Labs CTF by The DFIR Report",
         "比赛时间": "2025-03-09 00:00:00 - 2025-03-09 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2643.ics",
@@ -669,6 +657,18 @@
         "比赛权重": "0",
         "赛事主办": "The DFIR Report (https://ctftime.org/team/309500)",
         "比赛ID": "1149",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Ugra CTF Quals 2025",
+        "比赛时间": "2025-03-08 15:00:00 - 2025-03-10 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2693.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2025.ugractf.ru/quals",
+        "比赛标志": "https://ctftime.org/media/events/150.jpg",
+        "比赛权重": "32.59",
+        "赛事主办": "[team Team] (https://ctftime.org/team/49808)",
+        "比赛ID": "457",
         "比赛状态": "past"
     },
     {
@@ -810,7 +810,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://kashictf.iitbhucybersec.in/",
         "比赛标志": "https://ctftime.org/media/events/logo_105.png",
-        "比赛权重": "22.27",
+        "比赛权重": "21.94",
         "赛事主办": "IIT(BHU)CyberSec (https://ctftime.org/team/22546)",
         "比赛ID": "1251",
         "比赛状态": "past"
@@ -1845,18 +1845,6 @@
         "比赛权重": "1.00",
         "赛事主办": "HITCON (https://ctftime.org/team/8299)",
         "比赛ID": "79",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "4T$ CTF",
-        "比赛时间": "2024-11-09 02:00:00 - 2024-11-11 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2545.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.4ts.fr/",
-        "比赛标志": "https://ctftime.org/media/events/53b0900ddae2f59936bcc4eafc1458cf.jpg",
-        "比赛权重": "24.40",
-        "赛事主办": "4T$ (https://ctftime.org/team/302295)",
-        "比赛ID": "1188",
         "比赛状态": "past"
     }
 ]

@@ -36,12 +36,3 @@ comments: true
     **赛事主办** : TP-Link (https://ctftime.org/team/273760)  
     **添加日历** : https://ctftime.org/event/2645.ics  
     
-??? Quote "[Ugra CTF Quals 2025](https://2025.ugractf.ru/quals)"  
-    [![](https://ctftime.org/media/events/150.jpg){ width="200" align=left }](https://2025.ugractf.ru/quals)  
-    **比赛名称** : [Ugra CTF Quals 2025](https://2025.ugractf.ru/quals)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-08 15:00:00 - 2025-03-10 03:00:00 UTC+8  
-    **比赛权重** : 32.59  
-    **赛事主办** : [team Team] (https://ctftime.org/team/49808)  
-    **添加日历** : https://ctftime.org/event/2693.ics  
-    

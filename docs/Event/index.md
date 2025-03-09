@@ -779,15 +779,6 @@ hide:
                 **赛事主办** : TP-Link (https://ctftime.org/team/273760)  
                 **添加日历** : https://ctftime.org/event/2645.ics  
                 
-            ??? Quote "[Ugra CTF Quals 2025](https://2025.ugractf.ru/quals)"  
-                [![](https://ctftime.org/media/events/150.jpg){ width="200" align=left }](https://2025.ugractf.ru/quals)  
-                **比赛名称** : [Ugra CTF Quals 2025](https://2025.ugractf.ru/quals)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-08 15:00:00 - 2025-03-10 03:00:00 UTC+8  
-                **比赛权重** : 32.59  
-                **赛事主办** : [team Team] (https://ctftime.org/team/49808)  
-                **添加日历** : https://ctftime.org/event/2693.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[HGAME 2025](https://hgame.vidar.club/games/2)"  
@@ -813,6 +804,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
                 **添加日历** : https://ctftime.org/event/2643.ics  
+                
+            ??? Quote "[Ugra CTF Quals 2025](https://2025.ugractf.ru/quals)"  
+                [![](https://ctftime.org/media/events/150.jpg){ width="200" align=left }](https://2025.ugractf.ru/quals)  
+                **比赛名称** : [Ugra CTF Quals 2025](https://2025.ugractf.ru/quals)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-08 15:00:00 - 2025-03-10 03:00:00 UTC+8  
+                **比赛权重** : 32.59  
+                **赛事主办** : [team Team] (https://ctftime.org/team/49808)  
+                **添加日历** : https://ctftime.org/event/2693.ics  
                 
             ??? Quote "[Dreamhack CTF Season 7 Round #5 (Div. 1)](https://dreamhack.io/ctf/659)"  
                 [![](https://ctftime.org/media/events/cover05.jpg){ width="200" align=left }](https://dreamhack.io/ctf/659)  
@@ -918,7 +918,7 @@ hide:
                 **比赛名称** : [Kashi CTF 2025](https://kashictf.iitbhucybersec.in/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-02-22 20:00:00 - 2025-02-23 20:00:00 UTC+8  
-                **比赛权重** : 22.27  
+                **比赛权重** : 21.94  
                 **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
                 **添加日历** : https://ctftime.org/event/2668.ics  
                 
@@ -1695,15 +1695,6 @@ hide:
                 **比赛权重** : 1.00  
                 **赛事主办** : HITCON (https://ctftime.org/team/8299)  
                 **添加日历** : https://ctftime.org/event/2523.ics  
-                
-            ??? Quote "[4T$ CTF](https://ctf.4ts.fr/)"  
-                [![](https://ctftime.org/media/events/53b0900ddae2f59936bcc4eafc1458cf.jpg){ width="200" align=left }](https://ctf.4ts.fr/)  
-                **比赛名称** : [4T$ CTF](https://ctf.4ts.fr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-09 02:00:00 - 2024-11-11 02:00:00 UTC+8  
-                **比赛权重** : 24.40  
-                **赛事主办** : 4T$ (https://ctftime.org/team/302295)  
-                **添加日历** : https://ctftime.org/event/2545.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
