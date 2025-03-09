@@ -732,24 +732,24 @@
         "比赛状态": "past"
     },
     {
-        "比赛名称": "SECCON CTF 13 International Finals",
-        "比赛时间": "2025-03-01 09:00:00 - 2025-03-02 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2649.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.seccon.jp/",
-        "比赛标志": "https://ctftime.org/media/events/seccon_s_8.png",
-        "比赛权重": "25.00",
-        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
-        "比赛ID": "92",
-        "比赛状态": "past"
-    },
-    {
         "比赛名称": "SECCON CTF 13 Domestic Finals",
         "比赛时间": "2025-03-01 09:00:00 - 2025-03-02 19:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2650.ics",
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.seccon.jp/",
         "比赛标志": "https://ctftime.org/media/events/seccon_s_9.png",
+        "比赛权重": "25.00",
+        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
+        "比赛ID": "92",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "SECCON CTF 13 International Finals",
+        "比赛时间": "2025-03-01 09:00:00 - 2025-03-02 19:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2649.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.seccon.jp/",
+        "比赛标志": "https://ctftime.org/media/events/seccon_s_8.png",
         "比赛权重": "25.00",
         "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
         "比赛ID": "92",
@@ -1062,7 +1062,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://x3c.tf/",
         "比赛标志": "https://ctftime.org/media/events/pink_logo_square_768.png",
-        "比赛权重": "23.47",
+        "比赛权重": "23.51",
         "赛事主办": "x3CTF (https://ctftime.org/team/309820)",
         "比赛ID": "1153",
         "比赛状态": "past"
