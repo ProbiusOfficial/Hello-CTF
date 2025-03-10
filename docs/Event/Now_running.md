@@ -27,12 +27,3 @@ comments: true
     **赛事主办** : NFITS (https://ctftime.org/team/360674)  
     **添加日历** : https://ctftime.org/event/2588.ics  
     
-??? Quote "[TPCTF 2025](https://tpctf2025.xctf.org.cn/)"  
-    [![](https://ctftime.org/media/events/TPCTF_ba-stylenulla.top_1.png){ width="200" align=left }](https://tpctf2025.xctf.org.cn/)  
-    **比赛名称** : [TPCTF 2025](https://tpctf2025.xctf.org.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-08 09:00:00 - 2025-03-10 09:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : TP-Link (https://ctftime.org/team/273760)  
-    **添加日历** : https://ctftime.org/event/2645.ics  
-    

@@ -770,15 +770,6 @@ hide:
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2588.ics  
                 
-            ??? Quote "[TPCTF 2025](https://tpctf2025.xctf.org.cn/)"  
-                [![](https://ctftime.org/media/events/TPCTF_ba-stylenulla.top_1.png){ width="200" align=left }](https://tpctf2025.xctf.org.cn/)  
-                **比赛名称** : [TPCTF 2025](https://tpctf2025.xctf.org.cn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-08 09:00:00 - 2025-03-10 09:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : TP-Link (https://ctftime.org/team/273760)  
-                **添加日历** : https://ctftime.org/event/2645.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[HGAME 2025](https://hgame.vidar.club/games/2)"  
@@ -813,6 +804,15 @@ hide:
                 **比赛权重** : 32.59  
                 **赛事主办** : [team Team] (https://ctftime.org/team/49808)  
                 **添加日历** : https://ctftime.org/event/2693.ics  
+                
+            ??? Quote "[TPCTF 2025](https://tpctf2025.xctf.org.cn/)"  
+                [![](https://ctftime.org/media/events/TPCTF_ba-stylenulla.top_1.png){ width="200" align=left }](https://tpctf2025.xctf.org.cn/)  
+                **比赛名称** : [TPCTF 2025](https://tpctf2025.xctf.org.cn/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-08 09:00:00 - 2025-03-10 09:00:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : TP-Link (https://ctftime.org/team/273760)  
+                **添加日历** : https://ctftime.org/event/2645.ics  
                 
             ??? Quote "[Dreamhack CTF Season 7 Round #5 (Div. 1)](https://dreamhack.io/ctf/659)"  
                 [![](https://ctftime.org/media/events/cover05.jpg){ width="200" align=left }](https://dreamhack.io/ctf/659)  
@@ -1686,15 +1686,6 @@ hide:
                 **比赛权重** : 33.59  
                 **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
                 **添加日历** : https://ctftime.org/event/2534.ics  
-                
-            ??? Quote "[HITCON CTF 2024 Final](http://ctf.hitcon.org/)"  
-                [![](https://ctftime.org/media/events/eb3c04d49c017eda197bab74939403eb.jpg){ width="200" align=left }](http://ctf.hitcon.org/)  
-                **比赛名称** : [HITCON CTF 2024 Final](http://ctf.hitcon.org/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2024-11-09 08:00:00 - 2024-11-10 16:00:00 UTC+8  
-                **比赛权重** : 1.00  
-                **赛事主办** : HITCON (https://ctftime.org/team/8299)  
-                **添加日历** : https://ctftime.org/event/2523.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
