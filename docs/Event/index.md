@@ -640,6 +640,15 @@ hide:
                 **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
                 **添加日历** : https://ctftime.org/event/2568.ics  
                 
+            ??? Quote "[WhiteHats TrojanCTF 2025](https://discord.gg/fXHCe9zsHC)"  
+                [![](https://ctftime.org/media/events/TrojanCTF_logo.png){ width="200" align=left }](https://discord.gg/fXHCe9zsHC)  
+                **比赛名称** : [WhiteHats TrojanCTF 2025](https://discord.gg/fXHCe9zsHC)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-17 17:00:00 - 2025-05-18 05:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : E.S.H.A. Trojan (https://ctftime.org/team/248605)  
+                **添加日历** : https://ctftime.org/event/2644.ics  
+                
             ??? Quote "[SAS CTF 2025 Quals](https://ctf.thesascon.com/)"  
                 [![](https://ctftime.org/media/events/SAS25.png){ width="200" align=left }](https://ctf.thesascon.com/)  
                 **比赛名称** : [SAS CTF 2025 Quals](https://ctf.thesascon.com/)  
