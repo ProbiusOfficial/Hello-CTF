@@ -152,7 +152,7 @@ comments: true
     **比赛名称** : [Kashi CTF 2025](https://kashictf.iitbhucybersec.in/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-02-22 20:00:00 - 2025-02-23 20:00:00 UTC+8  
-    **比赛权重** : 21.94  
+    **比赛权重** : 21.90  
     **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
     **添加日历** : https://ctftime.org/event/2668.ics  
     
