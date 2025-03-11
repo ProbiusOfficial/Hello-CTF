@@ -900,7 +900,7 @@ hide:
                 **比赛名称** : [ApoorvCTF 2025](https://ctf.iiitkottayam.ac.in/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-02-28 23:30:00 - 2025-03-02 23:30:00 UTC+8  
-                **比赛权重** : 23.92  
+                **比赛权重** : 24.00  
                 **赛事主办** : r3d_kn1ght5 (https://ctftime.org/team/212248)  
                 **添加日历** : https://ctftime.org/event/2638.ics  
                 
@@ -909,7 +909,7 @@ hide:
                 **比赛名称** : [ACECTF 1.0](https://acectf.tech/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-02-27 14:30:00 - 2025-02-28 14:30:00 UTC+8  
-                **比赛权重** : 22.94  
+                **比赛权重** : 22.56  
                 **赛事主办** : ACECTF (https://ctftime.org/team/364715)  
                 **添加日历** : https://ctftime.org/event/2619.ics  
                 
