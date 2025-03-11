@@ -397,6 +397,15 @@ hide:
                 **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
                 **添加日历** : https://ctftime.org/event/2614.ics  
                 
+            ??? Quote "[HICAThon 1.0](https://hicathon01.xyz/)"  
+                [![](https://ctftime.org/media/events/Frame_4034.png){ width="200" align=left }](https://hicathon01.xyz/)  
+                **比赛名称** : [HICAThon 1.0](https://hicathon01.xyz/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-25 11:00:00 - 2025-03-26 20:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : HICA SSPU (https://ctftime.org/team/372831)  
+                **添加日历** : https://ctftime.org/event/2724.ics  
+                
             ??? Quote "[SwampCTF 2025](https://swampctf.com/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://swampctf.com/)  
                 **比赛名称** : [SwampCTF 2025](https://swampctf.com/)  
@@ -720,6 +729,15 @@ hide:
                 **比赛权重** : 91.66  
                 **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
                 **添加日历** : https://ctftime.org/event/2669.ics  
+                
+            ??? Quote "[SekaiCTF 2025](https://ctf.sekai.team/)"  
+                [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
+                **比赛名称** : [SekaiCTF 2025](https://ctf.sekai.team/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-08-23 09:00:00 - 2025-08-25 09:00:00 UTC+8  
+                **比赛权重** : 55.00  
+                **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
+                **添加日历** : https://ctftime.org/event/2683.ics  
                 
             ??? Quote "[NNS CTF 2025](https://nnsc.tf/)"  
                 [![](https://ctftime.org/media/events/Logo_D.png){ width="200" align=left }](https://nnsc.tf/)  
