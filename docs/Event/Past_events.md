@@ -21,6 +21,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[LiU CTF 2025](https://ctf.lithehax.se/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.lithehax.se/)  
+    **比赛名称** : [LiU CTF 2025](https://ctf.lithehax.se/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-09 01:15:00 - 2025-03-09 06:45:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : LiTHeHax (https://ctftime.org/team/361438)  
+    **添加日历** : https://ctftime.org/event/2733.ics  
+    
 ??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
     [![](https://ctftime.org/media/events/DFIR_Labs_Icon.png){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
     **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
@@ -93,6 +102,15 @@ comments: true
     **赛事主办** : Winja CTF (https://ctftime.org/team/145228)  
     **添加日历** : https://ctftime.org/event/2692.ics  
     
+??? Quote "[WEC CTF 2025](https://wecctf.nitk.ac.in/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://wecctf.nitk.ac.in/)  
+    **比赛名称** : [WEC CTF 2025](https://wecctf.nitk.ac.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-01 19:30:00 - 2025-03-02 19:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Web Club NITK (https://ctftime.org/team/216903)  
+    **添加日历** : https://ctftime.org/event/2705.ics  
+    
 ??? Quote "[SECCON CTF 13 Domestic Finals](https://ctf.seccon.jp/)"  
     [![](https://ctftime.org/media/events/seccon_s_9.png){ width="200" align=left }](https://ctf.seccon.jp/)  
     **比赛名称** : [SECCON CTF 13 Domestic Finals](https://ctf.seccon.jp/)  
@@ -143,7 +161,7 @@ comments: true
     **比赛名称** : [TRX CTF 2025](https://ctf.theromanxpl0.it/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-02-22 22:00:00 - 2025-02-23 22:00:00 UTC+8  
-    **比赛权重** : 24.26  
+    **比赛权重** : 24.03  
     **赛事主办** : TheRomanXpl0it (https://ctftime.org/team/46516)  
     **添加日历** : https://ctftime.org/event/2654.ics  
     
@@ -152,7 +170,7 @@ comments: true
     **比赛名称** : [Kashi CTF 2025](https://kashictf.iitbhucybersec.in/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-02-22 20:00:00 - 2025-02-23 20:00:00 UTC+8  
-    **比赛权重** : 21.90  
+    **比赛权重** : 21.75  
     **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
     **添加日历** : https://ctftime.org/event/2668.ics  
     
@@ -902,22 +920,4 @@ comments: true
     **比赛权重** : 89.85  
     **赛事主办** : Nu1L (https://ctftime.org/team/19208)  
     **添加日历** : https://ctftime.org/event/2459.ics  
-    
-??? Quote "[Bambi CTF #11](https://bambi11.enoflag.de/)"  
-    [![](https://ctftime.org/media/events/reh_1.png){ width="200" align=left }](https://bambi11.enoflag.de/)  
-    **比赛名称** : [Bambi CTF #11](https://bambi11.enoflag.de/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2024-11-09 19:00:00 - 2024-11-10 01:00:00 UTC+8  
-    **比赛权重** : 85.71  
-    **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
-    **添加日历** : https://ctftime.org/event/2551.ics  
-    
-??? Quote "[M*CTF 2024 Quals](https://mctf.mtuci.ru/)"  
-    [![](https://ctftime.org/media/events/6sKaJXoc4I4.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
-    **比赛名称** : [M*CTF 2024 Quals](https://mctf.mtuci.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-09 17:00:00 - 2024-11-10 17:00:00 UTC+8  
-    **比赛权重** : 33.59  
-    **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-    **添加日历** : https://ctftime.org/event/2534.ics  
     
