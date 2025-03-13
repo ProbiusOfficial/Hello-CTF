@@ -54,41 +54,41 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[ACECTF 1.0](https://acectf.tech/)"  
-            [![](https://ctftime.org/media/events/WhatsApp_Image_2024-12-26_at_12.03.44_7efe1dad.jpg){ width="200" align=left }](https://acectf.tech/)  
-            **比赛名称** : [ACECTF 1.0](https://acectf.tech/)  
+        ??? Quote "[Insomni'hack 2025](https://insomnihack.ch/contest/)"  
+            [![](https://ctftime.org/media/events/skull.jpg){ width="200" align=left }](https://insomnihack.ch/contest/)  
+            **比赛名称** : [Insomni'hack 2025](https://insomnihack.ch/contest/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-02-27 14:30:00 - 2025-02-28 14:30:00 UTC+8  
+            **比赛时间** : 2025-03-15 01:00:00 - 2025-03-15 12:00:00 UTC+8  
             **比赛权重** : 0.00  
-            **赛事主办** : ACECTF (https://ctftime.org/team/364715)  
-            **添加日历** : https://ctftime.org/event/2619.ics  
+            **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
+            **添加日历** : https://ctftime.org/event/2634.ics  
             
-        ??? Quote "[ApoorvCTF 2025](https://ctf.iiitkottayam.ac.in/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctf.iiitkottayam.ac.in/)  
-            **比赛名称** : [ApoorvCTF 2025](https://ctf.iiitkottayam.ac.in/)  
+        ??? Quote "[UTCTF 2025](https://utctf.live/)"  
+            [![](https://ctftime.org/media/events/Illustration.png){ width="200" align=left }](https://utctf.live/)  
+            **比赛名称** : [UTCTF 2025](https://utctf.live/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-02-28 23:30:00 - 2025-03-02 23:30:00 UTC+8  
+            **比赛时间** : 2025-03-15 07:00:00 - 2025-03-17 07:00:00 UTC+8  
+            **比赛权重** : 67.21  
+            **赛事主办** : isss (https://ctftime.org/team/69010)  
+            **添加日历** : https://ctftime.org/event/2641.ics  
+            
+        ??? Quote "[@Hack 2025](https://athackctf.com/?s=ju8uvw)"  
+            [![](https://ctftime.org/media/events/Hack_Logo_WIDTH_600px.png){ width="200" align=left }](https://athackctf.com/?s=ju8uvw)  
+            **比赛名称** : [@Hack 2025](https://athackctf.com/?s=ju8uvw)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-03-15 19:00:00 - 2025-03-16 19:00:00 UTC+8  
             **比赛权重** : 0.00  
-            **赛事主办** : r3d_kn1ght5 (https://ctftime.org/team/212248)  
-            **添加日历** : https://ctftime.org/event/2638.ics  
+            **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
+            **添加日历** : https://ctftime.org/event/2558.ics  
             
-        ??? Quote "[PwnMe CTF Quals 2025](https://pwnme.phreaks.fr/)"  
-            [![](https://ctftime.org/media/events/PWNME_ReseauxPP1_1.jpg){ width="200" align=left }](https://pwnme.phreaks.fr/)  
-            **比赛名称** : [PwnMe CTF Quals 2025](https://pwnme.phreaks.fr/)  
+        ??? Quote "[K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)"  
+            [![](https://ctftime.org/media/events/iconH.png){ width="200" align=left }](https://ctf.k1nd4sus.it/)  
+            **比赛名称** : [K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-03-01 04:00:00 - 2025-03-03 02:00:00 UTC+8  
+            **比赛时间** : 2025-03-15 21:00:00 - 2025-03-16 21:00:00 UTC+8  
             **比赛权重** : 0.00  
-            **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
-            **添加日历** : https://ctftime.org/event/2658.ics  
-            
-        ??? Quote "[SECCON CTF 13 International Finals](https://ctf.seccon.jp/)"  
-            [![](https://ctftime.org/media/events/seccon_s_8.png){ width="200" align=left }](https://ctf.seccon.jp/)  
-            **比赛名称** : [SECCON CTF 13 International Finals](https://ctf.seccon.jp/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-03-01 09:00:00 - 2025-03-02 19:00:00 UTC+8  
-            **比赛权重** : 25.00  
-            **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
-            **添加日历** : https://ctftime.org/event/2649.ics  
+            **赛事主办** : K!nd4SUS (https://ctftime.org/team/150337)  
+            **添加日历** : https://ctftime.org/event/2703.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

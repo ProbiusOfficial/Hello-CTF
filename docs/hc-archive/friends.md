@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [【白帽访谈录】云安全将成为未来安全研究主战场-会议纪要](https://blog.zgsec.cn/archives/711.html)  
+    >by [曾哥](https://blog.zgsec.cn/), 2025-02-28
+
+    {bilibili bvid="BV19T9gY4ETm" page=""/}很高兴能参与这期白帽访谈录，也感谢各位师傅的支持~也随时欢迎各位师傅和我友好交流哈哈！本期访谈的回放直播已经上传B站，链接： https://www.bilibili.com/video/BV19T9gY4ETm，感谢各位师傅的一键三连！！！欢迎大家关注渊龙Sec安全团队公众号，干货满满哦~{dotted startCo...
     ### [某系统前台组合拳RCE](https://y4tacker.github.io/2025/02/23/year/2025/%E6%9F%90%E7%B3%BB%E7%BB%9F%E5%89%8D%E5%8F%B0%E7%BB%84%E5%90%88%E6%8B%B3RCE/)  
     >by [Y4tacker](https://y4tacker.github.io), 2025-02-23
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2024-12-11
 
     复盘一下强网决赛的Reverse题。S1mpleVM附件下载题目名字已经很明显的告诉你了，就是 vm 逆向。基本分析入口其实没啥，就是输入 32 长度的 passcode 然后校验，启动方式是 ./secret_box.exe quest 命令行传参。可以找到最关键的函数 sub_140001D30 就是 VM 入口。这个函数里面很明显的 vm_handler1234567891011121314...
-    ### [干货满满之2024广州补天城市沙龙有感](https://blog.zgsec.cn/archives/613.html)  
-    >by [曾哥](https://blog.zgsec.cn/), 2024-12-08
-
-    前言哈哈，好久没在博客上面更新文章了，许多朋友（不管是线上还是线下）都在问我是不是不更新博客了，也在催我赶紧更新一下博客的内容，在此也非常感谢各位师傅和朋友的关注和支持~近期不更新博客，原因如下：最近大家也知道emmmmm..我最近到深圳这边，这边项目的对抗程度很高，在这段时间学到很多知识，但工作强度也比较大，人也相比之前时间更少了，也累了不少；但能学到技术还是非常开心的，有时候工作确实太累了，导...
 
 </div>
