@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[AI vs Human CTF Challenge](https://ctf.hackthebox.com/event/details/ai-vs-human-ctf-challenge-2000)"  
-            [![](https://ctftime.org/media/events/TakdFKeKQfMuBnauH5bjw8olSIcjpOdGkCOjJ3Mn.png){ width="200" align=left }](https://ctf.hackthebox.com/event/details/ai-vs-human-ctf-challenge-2000)  
-            **比赛名称** : [AI vs Human CTF Challenge](https://ctf.hackthebox.com/event/details/ai-vs-human-ctf-challenge-2000)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-03-14 23:00:00 - 2025-03-16 23:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Palisade Research (https://ctftime.org/team/373097)  
-            **添加日历** : https://ctftime.org/event/2723.ics  
-            
         ??? Quote "[Insomni'hack 2025](https://insomnihack.ch/contest/)"  
             [![](https://ctftime.org/media/events/skull.jpg){ width="200" align=left }](https://insomnihack.ch/contest/)  
             **比赛名称** : [Insomni'hack 2025](https://insomnihack.ch/contest/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
             **添加日历** : https://ctftime.org/event/2558.ics  
+            
+        ??? Quote "[K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)"  
+            [![](https://ctftime.org/media/events/iconH.png){ width="200" align=left }](https://ctf.k1nd4sus.it/)  
+            **比赛名称** : [K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-03-15 21:00:00 - 2025-03-16 21:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : K!nd4SUS (https://ctftime.org/team/150337)  
+            **添加日历** : https://ctftime.org/event/2703.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
