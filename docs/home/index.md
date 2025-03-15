@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[WatCTF W25](https://watctf.org/)"  
-            [![](https://ctftime.org/media/events/Black_Back_Yellow_Lock.png){ width="200" align=left }](https://watctf.org/)  
-            **比赛名称** : [WatCTF W25](https://watctf.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-03-16 03:00:00 - 2025-03-17 03:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : WATCTF (https://ctftime.org/team/373968)  
-            **添加日历** : https://ctftime.org/event/2727.ics  
-            
         ??? Quote "[PascalCTF Beginners 2025](https://ctf.pascalctf.it/)"  
             [![](https://ctftime.org/media/events/Untitled_2_1.png){ width="200" align=left }](https://ctf.pascalctf.it/)  
             **比赛名称** : [PascalCTF Beginners 2025](https://ctf.pascalctf.it/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : dc509 (https://ctftime.org/team/372660)  
             **添加日历** : https://ctftime.org/event/2730.ics  
+            
+        ??? Quote "[Cyber Apocalypse CTF 2025: Tales from Eldoria](https://ctf.hackthebox.com/event/details/cyber-apocalypse-ctf-2025-tales-from-eldoria-2107)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/cyber-apocalypse-ctf-2025-tales-from-eldoria-2107)  
+            **比赛名称** : [Cyber Apocalypse CTF 2025: Tales from Eldoria](https://ctf.hackthebox.com/event/details/cyber-apocalypse-ctf-2025-tales-from-eldoria-2107)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-03-21 21:00:00 - 2025-03-26 20:59:00 UTC+8  
+            **比赛权重** : 24.00  
+            **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
+            **添加日历** : https://ctftime.org/event/2674.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

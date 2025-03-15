@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[WatCTF W25](https://watctf.org/)"  
-                [![](https://ctftime.org/media/events/Black_Back_Yellow_Lock.png){ width="200" align=left }](https://watctf.org/)  
-                **比赛名称** : [WatCTF W25](https://watctf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-16 03:00:00 - 2025-03-17 03:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : WATCTF (https://ctftime.org/team/373968)  
-                **添加日历** : https://ctftime.org/event/2727.ics  
-                
             ??? Quote "[PascalCTF Beginners 2025](https://ctf.pascalctf.it/)"  
                 [![](https://ctftime.org/media/events/Untitled_2_1.png){ width="200" align=left }](https://ctf.pascalctf.it/)  
                 **比赛名称** : [PascalCTF Beginners 2025](https://ctf.pascalctf.it/)  
@@ -895,6 +886,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : FlagMotori (https://ctftime.org/team/222060)  
                 **添加日历** : https://ctftime.org/event/2601.ics  
+                
+            ??? Quote "[WatCTF W25](https://watctf.org/)"  
+                [![](https://ctftime.org/media/events/Black_Back_Yellow_Lock.png){ width="200" align=left }](https://watctf.org/)  
+                **比赛名称** : [WatCTF W25](https://watctf.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-16 03:00:00 - 2025-03-17 03:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : WATCTF (https://ctftime.org/team/373968)  
+                **添加日历** : https://ctftime.org/event/2727.ics  
                 
     === "*已经结束*"
         === "国内赛事"
