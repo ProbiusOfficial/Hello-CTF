@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Nowruz 1404](https://1404.fmc.tf/)"  
-            [![](https://ctftime.org/media/events/FMCTF.png){ width="200" align=left }](https://1404.fmc.tf/)  
-            **比赛名称** : [Nowruz 1404](https://1404.fmc.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-03-15 21:30:00 - 2025-03-16 21:30:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : FlagMotori (https://ctftime.org/team/222060)  
-            **添加日历** : https://ctftime.org/event/2601.ics  
-            
         ??? Quote "[WatCTF W25](https://watctf.org/)"  
             [![](https://ctftime.org/media/events/Black_Back_Yellow_Lock.png){ width="200" align=left }](https://watctf.org/)  
             **比赛名称** : [WatCTF W25](https://watctf.org/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 75.00  
             **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
             **添加日历** : https://ctftime.org/event/2725.ics  
+            
+        ??? Quote "[DC509 CTF 2025](https://dc509.com/)"  
+            [![](https://ctftime.org/media/events/dc509.png){ width="200" align=left }](https://dc509.com/)  
+            **比赛名称** : [DC509 CTF 2025](https://dc509.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-03-21 08:00:00 - 2025-03-21 10:30:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : dc509 (https://ctftime.org/team/372660)  
+            **添加日历** : https://ctftime.org/event/2730.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
