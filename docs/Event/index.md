@@ -887,15 +887,6 @@ hide:
                 **赛事主办** : Palisade Research (https://ctftime.org/team/373097)  
                 **添加日历** : https://ctftime.org/event/2723.ics  
                 
-            ??? Quote "[Insomni'hack 2025](https://insomnihack.ch/contest/)"  
-                [![](https://ctftime.org/media/events/skull.jpg){ width="200" align=left }](https://insomnihack.ch/contest/)  
-                **比赛名称** : [Insomni'hack 2025](https://insomnihack.ch/contest/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-15 01:00:00 - 2025-03-15 12:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
-                **添加日历** : https://ctftime.org/event/2634.ics  
-                
             ??? Quote "[UTCTF 2025](https://utctf.live/)"  
                 [![](https://ctftime.org/media/events/Illustration.png){ width="200" align=left }](https://utctf.live/)  
                 **比赛名称** : [UTCTF 2025](https://utctf.live/)  
@@ -922,6 +913,15 @@ hide:
                 **其他说明** : VNCTF 2025由V&N Team主办，个人赛，可报名，即将开始，中途可加入。报名开始时间为2025年01月01日 00:00，比赛时间为2025年02月08日 10:00至2025年02月09日 10:00。更多信息请加QQ群717513199。  
                 
         === "国外赛事"
+            ??? Quote "[Insomni'hack 2025](https://insomnihack.ch/contest/)"  
+                [![](https://ctftime.org/media/events/skull.jpg){ width="200" align=left }](https://insomnihack.ch/contest/)  
+                **比赛名称** : [Insomni'hack 2025](https://insomnihack.ch/contest/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-15 01:00:00 - 2025-03-15 12:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
+                **添加日历** : https://ctftime.org/event/2634.ics  
+                
             ??? Quote "[LiU CTF 2025](https://ctf.lithehax.se/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.lithehax.se/)  
                 **比赛名称** : [LiU CTF 2025](https://ctf.lithehax.se/)  
@@ -1812,15 +1812,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : DataCon (https://ctftime.org/team/361332)  
                 **添加日历** : https://ctftime.org/event/2580.ics  
-                
-            ??? Quote "[N1CTF 2024](https://ctf2024.nu1l.com/)"  
-                [![](https://ctftime.org/media/events/logo2_5_1.png){ width="200" align=left }](https://ctf2024.nu1l.com/)  
-                **比赛名称** : [N1CTF 2024](https://ctf2024.nu1l.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-09 20:00:00 - 2024-11-10 20:00:00 UTC+8  
-                **比赛权重** : 89.85  
-                **赛事主办** : Nu1L (https://ctftime.org/team/19208)  
-                **添加日历** : https://ctftime.org/event/2459.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
