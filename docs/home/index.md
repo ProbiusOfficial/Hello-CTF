@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)"  
-            [![](https://ctftime.org/media/events/iconH.png){ width="200" align=left }](https://ctf.k1nd4sus.it/)  
-            **比赛名称** : [K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-03-15 21:00:00 - 2025-03-16 21:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : K!nd4SUS (https://ctftime.org/team/150337)  
-            **添加日历** : https://ctftime.org/event/2703.ics  
-            
         ??? Quote "[Nowruz 1404](https://1404.fmc.tf/)"  
             [![](https://ctftime.org/media/events/FMCTF.png){ width="200" align=left }](https://1404.fmc.tf/)  
             **比赛名称** : [Nowruz 1404](https://1404.fmc.tf/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Paolo (https://ctftime.org/team/263145)  
             **添加日历** : https://ctftime.org/event/2664.ics  
+            
+        ??? Quote "[m0leCon CTF 2025](https://finals.m0lecon.it/)"  
+            [![](https://ctftime.org/media/events/ctftime_4_1.png){ width="200" align=left }](https://finals.m0lecon.it/)  
+            **比赛名称** : [m0leCon CTF 2025](https://finals.m0lecon.it/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-03-21 00:00:00 - 2025-03-22 00:00:00 UTC+8  
+            **比赛权重** : 75.00  
+            **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
+            **添加日历** : https://ctftime.org/event/2725.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
