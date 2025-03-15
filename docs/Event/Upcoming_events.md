@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[@Hack 2025](https://athackctf.com/?s=ju8uvw)"  
-    [![](https://ctftime.org/media/events/Hack_Logo_WIDTH_600px.png){ width="200" align=left }](https://athackctf.com/?s=ju8uvw)  
-    **比赛名称** : [@Hack 2025](https://athackctf.com/?s=ju8uvw)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-15 19:00:00 - 2025-03-16 19:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
-    **添加日历** : https://ctftime.org/event/2558.ics  
-    
 ??? Quote "[K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)"  
     [![](https://ctftime.org/media/events/iconH.png){ width="200" align=left }](https://ctf.k1nd4sus.it/)  
     **比赛名称** : [K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)  

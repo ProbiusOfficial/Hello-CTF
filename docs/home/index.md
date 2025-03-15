@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[@Hack 2025](https://athackctf.com/?s=ju8uvw)"  
-            [![](https://ctftime.org/media/events/Hack_Logo_WIDTH_600px.png){ width="200" align=left }](https://athackctf.com/?s=ju8uvw)  
-            **比赛名称** : [@Hack 2025](https://athackctf.com/?s=ju8uvw)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-03-15 19:00:00 - 2025-03-16 19:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
-            **添加日历** : https://ctftime.org/event/2558.ics  
-            
         ??? Quote "[K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)"  
             [![](https://ctftime.org/media/events/iconH.png){ width="200" align=left }](https://ctf.k1nd4sus.it/)  
             **比赛名称** : [K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : WATCTF (https://ctftime.org/team/373968)  
             **添加日历** : https://ctftime.org/event/2727.ics  
+            
+        ??? Quote "[PascalCTF Beginners 2025](https://ctf.pascalctf.it/)"  
+            [![](https://ctftime.org/media/events/Untitled_2_1.png){ width="200" align=left }](https://ctf.pascalctf.it/)  
+            **比赛名称** : [PascalCTF Beginners 2025](https://ctf.pascalctf.it/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-03-19 23:00:00 - 2025-03-20 04:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Paolo (https://ctftime.org/team/263145)  
+            **添加日历** : https://ctftime.org/event/2664.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
