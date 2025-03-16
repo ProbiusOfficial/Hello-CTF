@@ -21,6 +21,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[@Hack 2025](https://athackctf.com/?s=ju8uvw)"  
+    [![](https://ctftime.org/media/events/Hack_Logo_WIDTH_600px.png){ width="200" align=left }](https://athackctf.com/?s=ju8uvw)  
+    **比赛名称** : [@Hack 2025](https://athackctf.com/?s=ju8uvw)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-15 19:00:00 - 2025-03-16 19:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
+    **添加日历** : https://ctftime.org/event/2558.ics  
+    
 ??? Quote "[Insomni'hack 2025](https://insomnihack.ch/contest/)"  
     [![](https://ctftime.org/media/events/skull.jpg){ width="200" align=left }](https://insomnihack.ch/contest/)  
     **比赛名称** : [Insomni'hack 2025](https://insomnihack.ch/contest/)  
@@ -911,13 +920,4 @@ comments: true
     **比赛权重** : 16.00  
     **赛事主办** : NULL (https://ctftime.org/team/321)  
     **添加日历** : https://ctftime.org/event/2507.ics  
-    
-??? Quote "[DataCon2024](https://datacon.qianxin.com/datacon2024-en)"  
-    [![](https://ctftime.org/media/events/16945a7ddd36ca5428bca66728c36df3.png){ width="200" align=left }](https://datacon.qianxin.com/datacon2024-en)  
-    **比赛名称** : [DataCon2024](https://datacon.qianxin.com/datacon2024-en)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-13 10:00:00 - 2024-11-22 18:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : DataCon (https://ctftime.org/team/361332)  
-    **添加日历** : https://ctftime.org/event/2580.ics  
     

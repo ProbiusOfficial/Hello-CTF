@@ -860,15 +860,6 @@ hide:
                 **赛事主办** : isss (https://ctftime.org/team/69010)  
                 **添加日历** : https://ctftime.org/event/2641.ics  
                 
-            ??? Quote "[@Hack 2025](https://athackctf.com/?s=ju8uvw)"  
-                [![](https://ctftime.org/media/events/Hack_Logo_WIDTH_600px.png){ width="200" align=left }](https://athackctf.com/?s=ju8uvw)  
-                **比赛名称** : [@Hack 2025](https://athackctf.com/?s=ju8uvw)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-15 19:00:00 - 2025-03-16 19:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
-                **添加日历** : https://ctftime.org/event/2558.ics  
-                
             ??? Quote "[K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)"  
                 [![](https://ctftime.org/media/events/iconH.png){ width="200" align=left }](https://ctf.k1nd4sus.it/)  
                 **比赛名称** : [K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)  
@@ -913,6 +904,15 @@ hide:
                 **其他说明** : VNCTF 2025由V&N Team主办，个人赛，可报名，即将开始，中途可加入。报名开始时间为2025年01月01日 00:00，比赛时间为2025年02月08日 10:00至2025年02月09日 10:00。更多信息请加QQ群717513199。  
                 
         === "国外赛事"
+            ??? Quote "[@Hack 2025](https://athackctf.com/?s=ju8uvw)"  
+                [![](https://ctftime.org/media/events/Hack_Logo_WIDTH_600px.png){ width="200" align=left }](https://athackctf.com/?s=ju8uvw)  
+                **比赛名称** : [@Hack 2025](https://athackctf.com/?s=ju8uvw)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-15 19:00:00 - 2025-03-16 19:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
+                **添加日历** : https://ctftime.org/event/2558.ics  
+                
             ??? Quote "[Insomni'hack 2025](https://insomnihack.ch/contest/)"  
                 [![](https://ctftime.org/media/events/skull.jpg){ width="200" align=left }](https://insomnihack.ch/contest/)  
                 **比赛名称** : [Insomni'hack 2025](https://insomnihack.ch/contest/)  
@@ -1803,15 +1803,6 @@ hide:
                 **比赛权重** : 16.00  
                 **赛事主办** : NULL (https://ctftime.org/team/321)  
                 **添加日历** : https://ctftime.org/event/2507.ics  
-                
-            ??? Quote "[DataCon2024](https://datacon.qianxin.com/datacon2024-en)"  
-                [![](https://ctftime.org/media/events/16945a7ddd36ca5428bca66728c36df3.png){ width="200" align=left }](https://datacon.qianxin.com/datacon2024-en)  
-                **比赛名称** : [DataCon2024](https://datacon.qianxin.com/datacon2024-en)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-13 10:00:00 - 2024-11-22 18:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : DataCon (https://ctftime.org/team/361332)  
-                **添加日历** : https://ctftime.org/event/2580.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
