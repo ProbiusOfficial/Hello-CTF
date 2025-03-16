@@ -57,6 +57,15 @@ comments: true
     **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
     **添加日历** : https://ctftime.org/event/2558.ics  
     
+??? Quote "[UTCTF 2025](https://utctf.live/)"  
+    [![](https://ctftime.org/media/events/Illustration.png){ width="200" align=left }](https://utctf.live/)  
+    **比赛名称** : [UTCTF 2025](https://utctf.live/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-15 07:00:00 - 2025-03-17 07:00:00 UTC+8  
+    **比赛权重** : 67.21  
+    **赛事主办** : isss (https://ctftime.org/team/69010)  
+    **添加日历** : https://ctftime.org/event/2641.ics  
+    
 ??? Quote "[Insomni'hack 2025](https://insomnihack.ch/contest/)"  
     [![](https://ctftime.org/media/events/skull.jpg){ width="200" align=left }](https://insomnihack.ch/contest/)  
     **比赛名称** : [Insomni'hack 2025](https://insomnihack.ch/contest/)  
@@ -911,13 +920,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
     **添加日历** : https://ctftime.org/event/2574.ics  
-    
-??? Quote "[PwnSec CTF 2024](https://ctf.pwnsec.xyz/)"  
-    [![](https://ctftime.org/media/events/Logo_12.png){ width="200" align=left }](https://ctf.pwnsec.xyz/)  
-    **比赛名称** : [PwnSec CTF 2024](https://ctf.pwnsec.xyz/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-15 23:00:00 - 2024-11-16 23:00:00 UTC+8  
-    **比赛权重** : 23.92  
-    **赛事主办** : PwnSec (https://ctftime.org/team/28797)  
-    **添加日历** : https://ctftime.org/event/2454.ics  
     

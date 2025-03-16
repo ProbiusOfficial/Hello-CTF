@@ -732,18 +732,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "UTCTF 2025",
-        "比赛时间": "2025-03-15 07:00:00 - 2025-03-17 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2641.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://utctf.live/",
-        "比赛标志": "https://ctftime.org/media/events/Illustration.png",
-        "比赛权重": "67.21",
-        "赛事主办": "isss (https://ctftime.org/team/69010)",
-        "比赛ID": "281",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "WatCTF W25",
         "比赛时间": "2025-03-16 03:00:00 - 2025-03-17 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2727.ics",
@@ -789,6 +777,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Hexploit Alliance (https://ctftime.org/team/278003)",
         "比赛ID": "1061",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "UTCTF 2025",
+        "比赛时间": "2025-03-15 07:00:00 - 2025-03-17 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2641.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://utctf.live/",
+        "比赛标志": "https://ctftime.org/media/events/Illustration.png",
+        "比赛权重": "67.21",
+        "赛事主办": "isss (https://ctftime.org/team/69010)",
+        "比赛ID": "281",
         "比赛状态": "past"
     },
     {
@@ -1929,18 +1929,6 @@
         "比赛权重": "0.00",
         "赛事主办": "ICEDTEA (https://ctftime.org/team/303514)",
         "比赛ID": "1199",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "PwnSec CTF 2024",
-        "比赛时间": "2024-11-15 23:00:00 - 2024-11-16 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2454.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.pwnsec.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/Logo_12.png",
-        "比赛权重": "23.92",
-        "赛事主办": "PwnSec (https://ctftime.org/team/28797)",
-        "比赛ID": "1150",
         "比赛状态": "past"
     }
 ]
