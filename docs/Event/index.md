@@ -842,15 +842,6 @@ hide:
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2588.ics  
                 
-            ??? Quote "[AI vs Human CTF Challenge](https://ctf.hackthebox.com/event/details/ai-vs-human-ctf-challenge-2000)"  
-                [![](https://ctftime.org/media/events/TakdFKeKQfMuBnauH5bjw8olSIcjpOdGkCOjJ3Mn.png){ width="200" align=left }](https://ctf.hackthebox.com/event/details/ai-vs-human-ctf-challenge-2000)  
-                **比赛名称** : [AI vs Human CTF Challenge](https://ctf.hackthebox.com/event/details/ai-vs-human-ctf-challenge-2000)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-14 23:00:00 - 2025-03-16 23:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Palisade Research (https://ctftime.org/team/373097)  
-                **添加日历** : https://ctftime.org/event/2723.ics  
-                
             ??? Quote "[UTCTF 2025](https://utctf.live/)"  
                 [![](https://ctftime.org/media/events/Illustration.png){ width="200" align=left }](https://utctf.live/)  
                 **比赛名称** : [UTCTF 2025](https://utctf.live/)  
@@ -921,6 +912,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
                 **添加日历** : https://ctftime.org/event/2634.ics  
+                
+            ??? Quote "[AI vs Human CTF Challenge](https://ctf.hackthebox.com/event/details/ai-vs-human-ctf-challenge-2000)"  
+                [![](https://ctftime.org/media/events/TakdFKeKQfMuBnauH5bjw8olSIcjpOdGkCOjJ3Mn.png){ width="200" align=left }](https://ctf.hackthebox.com/event/details/ai-vs-human-ctf-challenge-2000)  
+                **比赛名称** : [AI vs Human CTF Challenge](https://ctf.hackthebox.com/event/details/ai-vs-human-ctf-challenge-2000)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-14 23:00:00 - 2025-03-16 23:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Palisade Research (https://ctftime.org/team/373097)  
+                **添加日历** : https://ctftime.org/event/2723.ics  
                 
             ??? Quote "[LiU CTF 2025](https://ctf.lithehax.se/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.lithehax.se/)  
@@ -1776,15 +1776,6 @@ hide:
                 **比赛权重** : 24.23  
                 **赛事主办** : CryptoCat (https://ctftime.org/team/124896)  
                 **添加日历** : https://ctftime.org/event/2446.ics  
-                
-            ??? Quote "[Die Abenteuer von KIM & TIM Kapt. II - To TI-Mfinity and Beyond](http://ctf.gematik.de/)"  
-                [![](https://ctftime.org/media/events/Bild_1.png){ width="200" align=left }](http://ctf.gematik.de/)  
-                **比赛名称** : [Die Abenteuer von KIM & TIM Kapt. II - To TI-Mfinity and Beyond](http://ctf.gematik.de/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-15 17:00:00 - 2024-11-16 01:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : H34lthineer (https://ctftime.org/team/170109)  
-                **添加日历** : https://ctftime.org/event/2481.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

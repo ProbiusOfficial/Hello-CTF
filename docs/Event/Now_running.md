@@ -27,15 +27,6 @@ comments: true
     **赛事主办** : NFITS (https://ctftime.org/team/360674)  
     **添加日历** : https://ctftime.org/event/2588.ics  
     
-??? Quote "[AI vs Human CTF Challenge](https://ctf.hackthebox.com/event/details/ai-vs-human-ctf-challenge-2000)"  
-    [![](https://ctftime.org/media/events/TakdFKeKQfMuBnauH5bjw8olSIcjpOdGkCOjJ3Mn.png){ width="200" align=left }](https://ctf.hackthebox.com/event/details/ai-vs-human-ctf-challenge-2000)  
-    **比赛名称** : [AI vs Human CTF Challenge](https://ctf.hackthebox.com/event/details/ai-vs-human-ctf-challenge-2000)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-14 23:00:00 - 2025-03-16 23:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Palisade Research (https://ctftime.org/team/373097)  
-    **添加日历** : https://ctftime.org/event/2723.ics  
-    
 ??? Quote "[UTCTF 2025](https://utctf.live/)"  
     [![](https://ctftime.org/media/events/Illustration.png){ width="200" align=left }](https://utctf.live/)  
     **比赛名称** : [UTCTF 2025](https://utctf.live/)  
