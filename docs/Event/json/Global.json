@@ -753,7 +753,7 @@
         "比赛权重": "0",
         "赛事主办": "WATCTF (https://ctftime.org/team/373968)",
         "比赛ID": "1283",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Nowruz 1404",
@@ -1941,18 +1941,6 @@
         "比赛权重": "23.92",
         "赛事主办": "PwnSec (https://ctftime.org/team/28797)",
         "比赛ID": "1150",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "1337UP LIVE CTF",
-        "比赛时间": "2024-11-15 19:59:59 - 2024-11-17 07:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2446.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.intigriti.io/",
-        "比赛标志": "https://ctftime.org/media/events/intigriti_icon_cmyk_navy.png",
-        "比赛权重": "24.23",
-        "赛事主办": "CryptoCat (https://ctftime.org/team/124896)",
-        "比赛ID": "749",
         "比赛状态": "past"
     }
 ]
