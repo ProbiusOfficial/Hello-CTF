@@ -756,18 +756,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Nowruz 1404",
-        "比赛时间": "2025-03-15 21:30:00 - 2025-03-16 21:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2601.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://1404.fmc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/FMCTF.png",
-        "比赛权重": "0",
-        "赛事主办": "FlagMotori (https://ctftime.org/team/222060)",
-        "比赛ID": "1221",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "WatCTF W25",
         "比赛时间": "2025-03-16 03:00:00 - 2025-03-17 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2727.ics",
@@ -778,6 +766,18 @@
         "赛事主办": "WATCTF (https://ctftime.org/team/373968)",
         "比赛ID": "1283",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Nowruz 1404",
+        "比赛时间": "2025-03-15 21:30:00 - 2025-03-16 21:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2601.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://1404.fmc.tf/",
+        "比赛标志": "https://ctftime.org/media/events/FMCTF.png",
+        "比赛权重": "0",
+        "赛事主办": "FlagMotori (https://ctftime.org/team/222060)",
+        "比赛ID": "1221",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "K!nd4SUS CTF 2025",
@@ -978,7 +978,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.iiitkottayam.ac.in/",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "24.00",
+        "比赛权重": "24.07",
         "赛事主办": "r3d_kn1ght5 (https://ctftime.org/team/212248)",
         "比赛ID": "1083",
         "比赛状态": "past"
@@ -990,7 +990,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://acectf.tech/",
         "比赛标志": "https://ctftime.org/media/events/WhatsApp_Image_2024-12-26_at_12.03.44_7efe1dad.jpg",
-        "比赛权重": "22.56",
+        "比赛权重": "22.63",
         "赛事主办": "ACECTF (https://ctftime.org/team/364715)",
         "比赛ID": "1231",
         "比赛状态": "past"
@@ -1002,7 +1002,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.theromanxpl0.it/",
         "比赛标志": "https://ctftime.org/media/events/TRX_1.png",
-        "比赛权重": "24.03",
+        "比赛权重": "24.06",
         "赛事主办": "TheRomanXpl0it (https://ctftime.org/team/46516)",
         "比赛ID": "1238",
         "比赛状态": "past"
@@ -1014,7 +1014,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://kashictf.iitbhucybersec.in/",
         "比赛标志": "https://ctftime.org/media/events/logo_105.png",
-        "比赛权重": "21.75",
+        "比赛权重": "21.84",
         "赛事主办": "IIT(BHU)CyberSec (https://ctftime.org/team/22546)",
         "比赛ID": "1251",
         "比赛状态": "past"
@@ -1074,7 +1074,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.ehax.tech/",
         "比赛标志": "https://ctftime.org/media/events/ctf-vector.png",
-        "比赛权重": "22.50",
+        "比赛权重": "22.69",
         "赛事主办": "EHAX (https://ctftime.org/team/270643)",
         "比赛ID": "1244",
         "比赛状态": "past"
@@ -1965,18 +1965,6 @@
         "比赛权重": "0.00",
         "赛事主办": "H34lthineer (https://ctftime.org/team/170109)",
         "比赛ID": "978",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BlockCTF 2024 (Formerly SquareCTF)",
-        "比赛时间": "2024-11-14 06:00:00 - 2024-11-15 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2517.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2024.blockctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/0ed304c3c4dcb6a3e887778f3928e26e.png",
-        "比赛权重": "52.43",
-        "赛事主办": "Square (https://ctftime.org/team/46747)",
-        "比赛ID": "218",
         "比赛状态": "past"
     }
 ]
