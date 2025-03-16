@@ -756,18 +756,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "K!nd4SUS CTF 2025",
-        "比赛时间": "2025-03-15 21:00:00 - 2025-03-16 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2703.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.k1nd4sus.it/",
-        "比赛标志": "https://ctftime.org/media/events/iconH.png",
-        "比赛权重": "0",
-        "赛事主办": "K!nd4SUS (https://ctftime.org/team/150337)",
-        "比赛ID": "1264",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Nowruz 1404",
         "比赛时间": "2025-03-15 21:30:00 - 2025-03-16 21:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2601.ics",
@@ -790,6 +778,18 @@
         "赛事主办": "WATCTF (https://ctftime.org/team/373968)",
         "比赛ID": "1283",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "K!nd4SUS CTF 2025",
+        "比赛时间": "2025-03-15 21:00:00 - 2025-03-16 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2703.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.k1nd4sus.it/",
+        "比赛标志": "https://ctftime.org/media/events/iconH.png",
+        "比赛权重": "0",
+        "赛事主办": "K!nd4SUS (https://ctftime.org/team/150337)",
+        "比赛ID": "1264",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "@Hack 2025",
@@ -1977,18 +1977,6 @@
         "比赛权重": "52.43",
         "赛事主办": "Square (https://ctftime.org/team/46747)",
         "比赛ID": "218",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "EKOPARTY CTF 2024",
-        "比赛时间": "2024-11-13 21:00:00 - 2024-11-16 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2507.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.ekoparty.org/",
-        "比赛标志": "https://ctftime.org/media/events/LOGO_eko_2024.png",
-        "比赛权重": "16.00",
-        "赛事主办": "NULL (https://ctftime.org/team/321)",
-        "比赛ID": "121",
         "比赛状态": "past"
     }
 ]

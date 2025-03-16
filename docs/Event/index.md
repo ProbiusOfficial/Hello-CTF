@@ -860,15 +860,6 @@ hide:
                 **赛事主办** : isss (https://ctftime.org/team/69010)  
                 **添加日历** : https://ctftime.org/event/2641.ics  
                 
-            ??? Quote "[K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)"  
-                [![](https://ctftime.org/media/events/iconH.png){ width="200" align=left }](https://ctf.k1nd4sus.it/)  
-                **比赛名称** : [K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-15 21:00:00 - 2025-03-16 21:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : K!nd4SUS (https://ctftime.org/team/150337)  
-                **添加日历** : https://ctftime.org/event/2703.ics  
-                
             ??? Quote "[Nowruz 1404](https://1404.fmc.tf/)"  
                 [![](https://ctftime.org/media/events/FMCTF.png){ width="200" align=left }](https://1404.fmc.tf/)  
                 **比赛名称** : [Nowruz 1404](https://1404.fmc.tf/)  
@@ -904,6 +895,15 @@ hide:
                 **其他说明** : VNCTF 2025由V&N Team主办，个人赛，可报名，即将开始，中途可加入。报名开始时间为2025年01月01日 00:00，比赛时间为2025年02月08日 10:00至2025年02月09日 10:00。更多信息请加QQ群717513199。  
                 
         === "国外赛事"
+            ??? Quote "[K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)"  
+                [![](https://ctftime.org/media/events/iconH.png){ width="200" align=left }](https://ctf.k1nd4sus.it/)  
+                **比赛名称** : [K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-15 21:00:00 - 2025-03-16 21:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : K!nd4SUS (https://ctftime.org/team/150337)  
+                **添加日历** : https://ctftime.org/event/2703.ics  
+                
             ??? Quote "[@Hack 2025](https://athackctf.com/?s=ju8uvw)"  
                 [![](https://ctftime.org/media/events/Hack_Logo_WIDTH_600px.png){ width="200" align=left }](https://athackctf.com/?s=ju8uvw)  
                 **比赛名称** : [@Hack 2025](https://athackctf.com/?s=ju8uvw)  
@@ -1794,15 +1794,6 @@ hide:
                 **比赛权重** : 52.43  
                 **赛事主办** : Square (https://ctftime.org/team/46747)  
                 **添加日历** : https://ctftime.org/event/2517.ics  
-                
-            ??? Quote "[EKOPARTY CTF 2024](https://ctf.ekoparty.org/)"  
-                [![](https://ctftime.org/media/events/LOGO_eko_2024.png){ width="200" align=left }](https://ctf.ekoparty.org/)  
-                **比赛名称** : [EKOPARTY CTF 2024](https://ctf.ekoparty.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-13 21:00:00 - 2024-11-16 03:00:00 UTC+8  
-                **比赛权重** : 16.00  
-                **赛事主办** : NULL (https://ctftime.org/team/321)  
-                **添加日历** : https://ctftime.org/event/2507.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
