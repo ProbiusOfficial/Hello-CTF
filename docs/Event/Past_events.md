@@ -386,7 +386,7 @@ comments: true
     **比赛名称** : [Codefest CTF 2025](https://codefest-ctf.iitbhu.tech/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-01-25 20:30:00 - 2025-01-27 08:30:00 UTC+8  
-    **比赛权重** : 23.93  
+    **比赛权重** : 23.98  
     **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
     **添加日历** : https://ctftime.org/event/2648.ics  
     
@@ -422,7 +422,7 @@ comments: true
     **比赛名称** : [x3CTF 2025 (feat. mvm)](https://x3c.tf/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-01-25 02:00:00 - 2025-01-27 02:00:00 UTC+8  
-    **比赛权重** : 23.54  
+    **比赛权重** : 23.58  
     **赛事主办** : x3CTF (https://ctftime.org/team/309820)  
     **添加日历** : https://ctftime.org/event/2467.ics  
     
