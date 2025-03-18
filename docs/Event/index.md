@@ -886,9 +886,9 @@ hide:
                 **赛事主办** : K!nd4SUS (https://ctftime.org/team/150337)  
                 **添加日历** : https://ctftime.org/event/2703.ics  
                 
-            ??? Quote "[@Hack 2025](https://athackctf.com/?s=ju8uvw)"  
-                [![](https://ctftime.org/media/events/Hack_Logo_WIDTH_600px.png){ width="200" align=left }](https://athackctf.com/?s=ju8uvw)  
-                **比赛名称** : [@Hack 2025](https://athackctf.com/?s=ju8uvw)  
+            ??? Quote "[@Hack 2025](https://2025.athackctf.com/)"  
+                [![](https://ctftime.org/media/events/Hack_Logo_WIDTH_600px.png){ width="200" align=left }](https://2025.athackctf.com/)  
+                **比赛名称** : [@Hack 2025](https://2025.athackctf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-03-15 19:00:00 - 2025-03-16 19:00:00 UTC+8  
                 **比赛权重** : 0.00  
