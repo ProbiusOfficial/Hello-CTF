@@ -135,15 +135,6 @@ comments: true
     **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
     **添加日历** : https://ctftime.org/event/2616.ics  
     
-??? Quote "[SpartanCTF 2025](https://spartan.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/spctf.png){ width="200" align=left }](https://spartan.ctfd.io/)  
-    **比赛名称** : [SpartanCTF 2025](https://spartan.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-29 05:00:00 - 2025-03-31 05:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Zero Day Club (https://ctftime.org/team/286318)  
-    **添加日历** : https://ctftime.org/event/2447.ics  
-    
 ??? Quote "[DiceCTF 2025 Quals](https://ctf.dicega.ng/)"  
     [![](https://ctftime.org/media/events/dicectf_2_1_1_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
     **比赛名称** : [DiceCTF 2025 Quals](https://ctf.dicega.ng/)  
