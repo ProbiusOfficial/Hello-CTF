@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[PascalCTF Beginners 2025](https://ctf.pascalctf.it/)"  
-            [![](https://ctftime.org/media/events/Untitled_2_1.png){ width="200" align=left }](https://ctf.pascalctf.it/)  
-            **比赛名称** : [PascalCTF Beginners 2025](https://ctf.pascalctf.it/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-03-19 23:00:00 - 2025-03-20 04:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Paolo (https://ctftime.org/team/263145)  
-            **添加日历** : https://ctftime.org/event/2664.ics  
-            
         ??? Quote "[m0leCon CTF 2025](https://finals.m0lecon.it/)"  
             [![](https://ctftime.org/media/events/ctftime_4_1.png){ width="200" align=left }](https://finals.m0lecon.it/)  
             **比赛名称** : [m0leCon CTF 2025](https://finals.m0lecon.it/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 24.00  
             **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
             **添加日历** : https://ctftime.org/event/2674.ics  
+            
+        ??? Quote "[pingCTF 2025](https://knping.pl/ctf)"  
+            [![](https://ctftime.org/media/events/CTF_blank_1.png){ width="200" align=left }](https://knping.pl/ctf)  
+            **比赛名称** : [pingCTF 2025](https://knping.pl/ctf)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-03-22 03:00:00 - 2025-03-24 03:00:00 UTC+8  
+            **比赛权重** : 32.50  
+            **赛事主办** : pingCTF (https://ctftime.org/team/147266)  
+            **添加日历** : https://ctftime.org/event/2670.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
