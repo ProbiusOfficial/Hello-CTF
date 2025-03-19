@@ -252,6 +252,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "CodeVinci Beginner CTF 2025",
+        "比赛时间": "2025-03-29 21:00:00 - 2025-03-29 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2738.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://codevincictf.itis.pr.it/",
+        "比赛标志": "https://ctftime.org/media/events/logo_CodeVinci.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "CodeVincii (https://ctftime.org/team/367123)",
+        "比赛ID": "1225",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "JerseyCTF V",
         "比赛时间": "2025-03-30 03:00:00 - 2025-03-31 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2667.ics",
