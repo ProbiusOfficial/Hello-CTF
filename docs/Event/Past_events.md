@@ -21,6 +21,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[PascalCTF Beginners 2025](https://ctf.pascalctf.it/)"  
+    [![](https://ctftime.org/media/events/Untitled_2_1.png){ width="200" align=left }](https://ctf.pascalctf.it/)  
+    **比赛名称** : [PascalCTF Beginners 2025](https://ctf.pascalctf.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-19 23:00:00 - 2025-03-20 04:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Paolo (https://ctftime.org/team/263145)  
+    **添加日历** : https://ctftime.org/event/2664.ics  
+    
 ??? Quote "[WatCTF W25](https://watctf.org/)"  
     [![](https://ctftime.org/media/events/Black_Back_Yellow_Lock.png){ width="200" align=left }](https://watctf.org/)  
     **比赛名称** : [WatCTF W25](https://watctf.org/)  
@@ -911,13 +920,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : ITMO FSIT (https://ctftime.org/team/264636)  
     **添加日历** : https://ctftime.org/event/2521.ics  
-    
-??? Quote "[No Hack No CTF 2024](https://nhnc.ic3dt3a.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://nhnc.ic3dt3a.org/)  
-    **比赛名称** : [No Hack No CTF 2024](https://nhnc.ic3dt3a.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-16 09:30:00 - 2024-11-17 21:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
-    **添加日历** : https://ctftime.org/event/2574.ics  
     
