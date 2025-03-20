@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[m0leCon CTF 2025](https://finals.m0lecon.it/)"  
-            [![](https://ctftime.org/media/events/ctftime_4_1.png){ width="200" align=left }](https://finals.m0lecon.it/)  
-            **比赛名称** : [m0leCon CTF 2025](https://finals.m0lecon.it/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-03-21 00:00:00 - 2025-03-22 00:00:00 UTC+8  
-            **比赛权重** : 75.00  
-            **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
-            **添加日历** : https://ctftime.org/event/2725.ics  
-            
         ??? Quote "[DC509 CTF 2025](https://dc509.com/)"  
             [![](https://ctftime.org/media/events/dc509.png){ width="200" align=left }](https://dc509.com/)  
             **比赛名称** : [DC509 CTF 2025](https://dc509.com/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 32.50  
             **赛事主办** : pingCTF (https://ctftime.org/team/147266)  
             **添加日历** : https://ctftime.org/event/2670.ics  
+            
+        ??? Quote "[WHY2025 CTF Teaser](https://ctf.why2025.org/)"  
+            [![](https://ctftime.org/media/events/CTF_logo_v0.2.jpg){ width="200" align=left }](https://ctf.why2025.org/)  
+            **比赛名称** : [WHY2025 CTF Teaser](https://ctf.why2025.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-03-22 03:00:00 - 2025-03-24 03:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Eindbazen (https://ctftime.org/team/322)  
+            **添加日历** : https://ctftime.org/event/2679.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

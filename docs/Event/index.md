@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[m0leCon CTF 2025](https://finals.m0lecon.it/)"  
-                [![](https://ctftime.org/media/events/ctftime_4_1.png){ width="200" align=left }](https://finals.m0lecon.it/)  
-                **比赛名称** : [m0leCon CTF 2025](https://finals.m0lecon.it/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-21 00:00:00 - 2025-03-22 00:00:00 UTC+8  
-                **比赛权重** : 75.00  
-                **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
-                **添加日历** : https://ctftime.org/event/2725.ics  
-                
             ??? Quote "[DC509 CTF 2025](https://dc509.com/)"  
                 [![](https://ctftime.org/media/events/dc509.png){ width="200" align=left }](https://dc509.com/)  
                 **比赛名称** : [DC509 CTF 2025](https://dc509.com/)  
@@ -850,6 +841,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2588.ics  
+                
+            ??? Quote "[m0leCon CTF 2025](https://finals.m0lecon.it/)"  
+                [![](https://ctftime.org/media/events/ctftime_4_1.png){ width="200" align=left }](https://finals.m0lecon.it/)  
+                **比赛名称** : [m0leCon CTF 2025](https://finals.m0lecon.it/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-21 00:00:00 - 2025-03-22 00:00:00 UTC+8  
+                **比赛权重** : 75.00  
+                **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
+                **添加日历** : https://ctftime.org/event/2725.ics  
                 
     === "*已经结束*"
         === "国内赛事"
