@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Cyber Apocalypse CTF 2025: Tales from Eldoria](https://ctf.hackthebox.com/event/details/cyber-apocalypse-ctf-2025-tales-from-eldoria-2107)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/cyber-apocalypse-ctf-2025-tales-from-eldoria-2107)  
-            **比赛名称** : [Cyber Apocalypse CTF 2025: Tales from Eldoria](https://ctf.hackthebox.com/event/details/cyber-apocalypse-ctf-2025-tales-from-eldoria-2107)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-03-21 21:00:00 - 2025-03-26 20:59:00 UTC+8  
-            **比赛权重** : 24.00  
-            **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
-            **添加日历** : https://ctftime.org/event/2674.ics  
-            
         ??? Quote "[pingCTF 2025](https://knping.pl/ctf)"  
             [![](https://ctftime.org/media/events/CTF_blank_1.png){ width="200" align=left }](https://knping.pl/ctf)  
             **比赛名称** : [pingCTF 2025](https://knping.pl/ctf)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 34.14  
             **赛事主办** : Contagion (https://ctftime.org/team/152691)  
             **添加日历** : https://ctftime.org/event/2673.ics  
+            
+        ??? Quote "[WolvCTF 2025](https://wolvctf.io/)"  
+            [![](https://ctftime.org/media/events/4ec5f36875124e118429b66c41edf271.png){ width="200" align=left }](https://wolvctf.io/)  
+            **比赛名称** : [WolvCTF 2025](https://wolvctf.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-03-22 07:00:00 - 2025-03-24 07:00:00 UTC+8  
+            **比赛权重** : 47.25  
+            **赛事主办** : wolvsec (https://ctftime.org/team/83621)  
+            **添加日历** : https://ctftime.org/event/2579.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
