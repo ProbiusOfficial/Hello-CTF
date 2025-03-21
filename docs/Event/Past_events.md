@@ -21,6 +21,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[DC509 CTF 2025](https://dc509.com/)"  
+    [![](https://ctftime.org/media/events/dc509.png){ width="200" align=left }](https://dc509.com/)  
+    **比赛名称** : [DC509 CTF 2025](https://dc509.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-21 08:00:00 - 2025-03-21 10:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : dc509 (https://ctftime.org/team/372660)  
+    **添加日历** : https://ctftime.org/event/2730.ics  
+    
 ??? Quote "[PascalCTF Beginners 2025](https://ctf.pascalctf.it/)"  
     [![](https://ctftime.org/media/events/Untitled_2_1.png){ width="200" align=left }](https://ctf.pascalctf.it/)  
     **比赛名称** : [PascalCTF Beginners 2025](https://ctf.pascalctf.it/)  
@@ -911,13 +920,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : Crate-CTF (https://ctftime.org/team/352250)  
     **添加日历** : https://ctftime.org/event/2489.ics  
-    
-??? Quote "[BRICS+ CTF Finals 2024](https://brics-ctf.com/)"  
-    [![](https://ctftime.org/media/events/brics-logo-2024-square.png){ width="200" align=left }](https://brics-ctf.com/)  
-    **比赛名称** : [BRICS+ CTF Finals 2024](https://brics-ctf.com/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2024-11-16 18:00:00 - 2024-11-17 02:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : ITMO FSIT (https://ctftime.org/team/264636)  
-    **添加日历** : https://ctftime.org/event/2521.ics  
     
