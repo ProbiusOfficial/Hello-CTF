@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "WolvCTF 2025",
-        "比赛时间": "2025-03-22 07:00:00 - 2025-03-24 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2579.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://wolvctf.io/",
-        "比赛标志": "https://ctftime.org/media/events/4ec5f36875124e118429b66c41edf271.png",
-        "比赛权重": "47.25",
-        "赛事主办": "wolvsec (https://ctftime.org/team/83621)",
-        "比赛ID": "766",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "FooBar CTF 2025",
         "比赛时间": "2025-03-22 14:30:00 - 2025-03-23 14:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2720.ics",
@@ -741,6 +729,18 @@
         "比赛权重": "34.14",
         "赛事主办": "Contagion (https://ctftime.org/team/152691)",
         "比赛ID": "170",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "WolvCTF 2025",
+        "比赛时间": "2025-03-22 07:00:00 - 2025-03-24 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2579.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://wolvctf.io/",
+        "比赛标志": "https://ctftime.org/media/events/4ec5f36875124e118429b66c41edf271.png",
+        "比赛权重": "47.25",
+        "赛事主办": "wolvsec (https://ctftime.org/team/83621)",
+        "比赛ID": "766",
         "比赛状态": "nowrunning"
     },
     {

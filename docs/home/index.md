@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[WolvCTF 2025](https://wolvctf.io/)"  
-            [![](https://ctftime.org/media/events/4ec5f36875124e118429b66c41edf271.png){ width="200" align=left }](https://wolvctf.io/)  
-            **比赛名称** : [WolvCTF 2025](https://wolvctf.io/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-03-22 07:00:00 - 2025-03-24 07:00:00 UTC+8  
-            **比赛权重** : 47.25  
-            **赛事主办** : wolvsec (https://ctftime.org/team/83621)  
-            **添加日历** : https://ctftime.org/event/2579.ics  
-            
         ??? Quote "[FooBar CTF 2025](https://foobarctf.nitdgplug.org/)"  
             [![](https://ctftime.org/media/events/Foobar_logo_1.png){ width="200" align=left }](https://foobarctf.nitdgplug.org/)  
             **比赛名称** : [FooBar CTF 2025](https://foobarctf.nitdgplug.org/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : HICA SSPU (https://ctftime.org/team/372831)  
             **添加日历** : https://ctftime.org/event/2724.ics  
+            
+        ??? Quote "[SwampCTF 2025](https://swampctf.com/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://swampctf.com/)  
+            **比赛名称** : [SwampCTF 2025](https://swampctf.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-03-28 08:21:00 - 2025-03-30 08:21:00 UTC+8  
+            **比赛权重** : 40.40  
+            **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
+            **添加日历** : https://ctftime.org/event/2573.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
