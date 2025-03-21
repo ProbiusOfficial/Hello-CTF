@@ -685,6 +685,15 @@ hide:
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/2577.ics  
                 
+            ??? Quote "[GPN CTF 2025](https://2025.ctf.kitctf.de/)"  
+                [![](https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d_1.png){ width="200" align=left }](https://2025.ctf.kitctf.de/)  
+                **比赛名称** : [GPN CTF 2025](https://2025.ctf.kitctf.de/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-06-20 18:00:00 - 2025-06-22 06:00:00 UTC+8  
+                **比赛权重** : 46.00  
+                **赛事主办** : KITCTF (https://ctftime.org/team/7221)  
+                **添加日历** : https://ctftime.org/event/2694.ics  
+                
             ??? Quote "[Google Capture The Flag 2025](https://g.co/ctf)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://g.co/ctf)  
                 **比赛名称** : [Google Capture The Flag 2025](https://g.co/ctf)  
