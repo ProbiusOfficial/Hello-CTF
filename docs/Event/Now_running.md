@@ -36,3 +36,21 @@ comments: true
     **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
     **添加日历** : https://ctftime.org/event/2674.ics  
     
+??? Quote "[pingCTF 2025](https://knping.pl/ctf)"  
+    [![](https://ctftime.org/media/events/CTF_blank_1.png){ width="200" align=left }](https://knping.pl/ctf)  
+    **比赛名称** : [pingCTF 2025](https://knping.pl/ctf)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-22 03:00:00 - 2025-03-24 03:00:00 UTC+8  
+    **比赛权重** : 32.50  
+    **赛事主办** : pingCTF (https://ctftime.org/team/147266)  
+    **添加日历** : https://ctftime.org/event/2670.ics  
+    
+??? Quote "[WHY2025 CTF Teaser](https://ctf.why2025.org/)"  
+    [![](https://ctftime.org/media/events/CTF_logo_v0.2.jpg){ width="200" align=left }](https://ctf.why2025.org/)  
+    **比赛名称** : [WHY2025 CTF Teaser](https://ctf.why2025.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-22 03:00:00 - 2025-03-24 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Eindbazen (https://ctftime.org/team/322)  
+    **添加日历** : https://ctftime.org/event/2679.ics  
+    
