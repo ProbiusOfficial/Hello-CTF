@@ -741,7 +741,7 @@
         "比赛权重": "25.00",
         "赛事主办": "Ireland without the RE (https://ctftime.org/team/179144)",
         "比赛ID": "1030",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "DC509 CTF 2025",
@@ -1923,18 +1923,6 @@
         "比赛名称": "iCTF 2024 (Undergrad)",
         "比赛时间": "2024-11-17 02:00:00 - 2024-11-23 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2565.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ictf.cs.ucsb.edu/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "Shellphish (https://ctftime.org/team/285)",
-        "比赛ID": "5",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "iCTF 2024 (Highschool)",
-        "比赛时间": "2024-11-17 02:00:00 - 2024-11-23 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2566.ics",
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ictf.cs.ucsb.edu/",
         "比赛标志": "https://ctftime.org",
