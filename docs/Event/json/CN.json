@@ -3,6 +3,24 @@
     "data": {
         "result": [
             {
+                "name": "NCTF 2024",
+                "info_confirmed": 1,
+                "mid_join": 0,
+                "link": "https://nctf.exp10it.cn/",
+                "status": "正在进行",
+                "is_reg": 1,
+                "limit": "4",
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2025年03月22日 09:00",
+                "reg_time_end": "2025年03月22日 08:59",
+                "comp_time_start": "2025年03月22日 09:00",
+                "comp_time_end": "2025年03月23日 21:00",
+                "organizer": "NCTF 2025 组织委员会",
+                "contac": {},
+                "tag": "",
+                "readmore": "NCTF 2025 由 NCTF 2025 组织委员会主办，比赛时间为 3 月 22 日 9:00 - 3 月 23 日 21:00，共计 36 小时，比赛形式为团队赛，每队 1-4 人，分为校内、校外两个赛道。"
+            },
+            {
                 "name": "HGAME 2025",
                 "info_confirmed": 1,
                 "mid_join": 1,
