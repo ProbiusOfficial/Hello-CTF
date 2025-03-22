@@ -153,15 +153,6 @@ comments: true
     **赛事主办** : Plaid Parliament of Pwning (https://ctftime.org/team/284)  
     **添加日历** : https://ctftime.org/event/2508.ics  
     
-??? Quote "[DamCTF 2025](https://damctf.xyz/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://damctf.xyz/)  
-    **比赛名称** : [DamCTF 2025](https://damctf.xyz/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-05 08:00:00 - 2025-04-07 08:00:00 UTC+8  
-    **比赛权重** : 60.67  
-    **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
-    **添加日历** : https://ctftime.org/event/2585.ics  
-    
 ??? Quote "[Breach CTF 2025](https://www.breachers.in/)"  
     [![](https://ctftime.org/media/events/BreachCTF2025_Logo.jpeg){ width="200" align=left }](https://www.breachers.in/)  
     **比赛名称** : [Breach CTF 2025](https://www.breachers.in/)  
@@ -314,6 +305,15 @@ comments: true
     **比赛权重** : 36.00  
     **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
     **添加日历** : https://ctftime.org/event/2568.ics  
+    
+??? Quote "[DamCTF 2025](https://damctf.xyz/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://damctf.xyz/)  
+    **比赛名称** : [DamCTF 2025](https://damctf.xyz/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-10 08:00:00 - 2025-05-12 08:00:00 UTC+8  
+    **比赛权重** : 60.67  
+    **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
+    **添加日历** : https://ctftime.org/event/2585.ics  
     
 ??? Quote "[WhiteHats TrojanCTF 2025](https://discord.gg/fXHCe9zsHC)"  
     [![](https://ctftime.org/media/events/TrojanCTF_logo.png){ width="200" align=left }](https://discord.gg/fXHCe9zsHC)  

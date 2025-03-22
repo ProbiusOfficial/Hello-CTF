@@ -192,18 +192,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "DamCTF 2025",
-        "比赛时间": "2025-04-05 08:00:00 - 2025-04-07 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2585.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://damctf.xyz/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "60.67",
-        "赛事主办": "OSUSEC (https://ctftime.org/team/12858)",
-        "比赛ID": "423",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Breach CTF 2025",
         "比赛时间": "2025-04-05 10:30:00 - 2025-04-06 10:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2671.ics",
@@ -405,6 +393,18 @@
         "比赛权重": "36.00",
         "赛事主办": "polygl0ts (https://ctftime.org/team/53791)",
         "比赛ID": "818",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "DamCTF 2025",
+        "比赛时间": "2025-05-10 08:00:00 - 2025-05-12 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2585.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://damctf.xyz/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "60.67",
+        "赛事主办": "OSUSEC (https://ctftime.org/team/12858)",
+        "比赛ID": "423",
         "比赛状态": "oncoming"
     },
     {
