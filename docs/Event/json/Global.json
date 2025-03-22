@@ -1,29 +1,5 @@
 [
     {
-        "比赛名称": "FooBar CTF 2025",
-        "比赛时间": "2025-03-22 14:30:00 - 2025-03-23 14:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2720.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://foobarctf.nitdgplug.org/",
-        "比赛标志": "https://ctftime.org/media/events/Foobar_logo_1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Alchemists of Kernel (https://ctftime.org/team/130794)",
-        "比赛ID": "611",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "ZeroDays CTF 2025",
-        "比赛时间": "2025-03-22 17:30:00 - 2025-03-23 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2614.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://www.zerodays.ie/",
-        "比赛标志": "https://ctftime.org/media/events/zerodays_logo.png",
-        "比赛权重": "25.00",
-        "赛事主办": "Ireland without the RE (https://ctftime.org/team/179144)",
-        "比赛ID": "1030",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "HICAThon 1.0",
         "比赛时间": "2025-03-25 11:00:00 - 2025-03-26 20:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2724.ics",
@@ -744,6 +720,30 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "FooBar CTF 2025",
+        "比赛时间": "2025-03-22 14:30:00 - 2025-03-23 14:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2720.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://foobarctf.nitdgplug.org/",
+        "比赛标志": "https://ctftime.org/media/events/Foobar_logo_1.png",
+        "比赛权重": "0",
+        "赛事主办": "Alchemists of Kernel (https://ctftime.org/team/130794)",
+        "比赛ID": "611",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "ZeroDays CTF 2025",
+        "比赛时间": "2025-03-22 17:30:00 - 2025-03-23 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2614.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://www.zerodays.ie/",
+        "比赛标志": "https://ctftime.org/media/events/zerodays_logo.png",
+        "比赛权重": "25.00",
+        "赛事主办": "Ireland without the RE (https://ctftime.org/team/179144)",
+        "比赛ID": "1030",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "DC509 CTF 2025",
         "比赛时间": "2025-03-21 08:00:00 - 2025-03-21 10:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2730.ics",
@@ -1314,7 +1314,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://x3c.tf/",
         "比赛标志": "https://ctftime.org/media/events/pink_logo_square_768.png",
-        "比赛权重": "23.58",
+        "比赛权重": "23.61",
         "赛事主办": "x3CTF (https://ctftime.org/team/309820)",
         "比赛ID": "1153",
         "比赛状态": "past"
