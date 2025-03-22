@@ -945,7 +945,7 @@ hide:
                 **比赛名称** : [Insomni'hack 2025](https://insomnihack.ch/contest/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-03-15 01:00:00 - 2025-03-15 12:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 24.08  
                 **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
                 **添加日历** : https://ctftime.org/event/2634.ics  
                 
