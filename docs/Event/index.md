@@ -774,13 +774,7 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-            ??? Quote "[NCTF 2024](https://nctf.exp10it.cn/)"  
-                **比赛名称** : [NCTF 2024](https://nctf.exp10it.cn/)  
-                **比赛类型** : 线上Jeopardy解题赛  
-                **报名时间** : 2025年03月22日 09:00 - 2025年03月22日 08:59  
-                **比赛时间** : 2025年03月22日 09:00 - 2025年03月23日 21:00  
-                **其他说明** : NCTF 2025 由 NCTF 2025 组织委员会主办，比赛时间为 3 月 22 日 9:00 - 3 月 23 日 21:00，共计 36 小时，比赛形式为团队赛，每队 1-4 人，分为校内、校外两个赛道。  
-                
+    
         === "国外赛事"
             ??? Quote "[2025 Embedded Capture the Flag](https://ectf.mitre.org/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ectf.mitre.org/)  
@@ -847,6 +841,13 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
+            ??? Quote "[NCTF 2024](https://nctf.exp10it.cn/)"  
+                **比赛名称** : [NCTF 2024](https://nctf.exp10it.cn/)  
+                **比赛类型** : 线上Jeopardy解题赛  
+                **报名时间** : 2025年03月22日 09:00 - 2025年03月22日 08:59  
+                **比赛时间** : 2025年03月22日 09:00 - 2025年03月23日 21:00  
+                **其他说明** : NCTF 2025 由 NCTF 2025 组织委员会主办，比赛时间为 3 月 22 日 9:00 - 3 月 23 日 21:00，共计 36 小时，比赛形式为团队赛，每队 1-4 人，分为校内、校外两个赛道。  
+                
             ??? Quote "[HGAME 2025](https://hgame.vidar.club/games/2)"  
                 **比赛名称** : [HGAME 2025](https://hgame.vidar.club/games/2)  
                 **比赛类型** : 线上Jeopardy解题赛  
@@ -930,7 +931,7 @@ hide:
                 **比赛名称** : [K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-03-15 21:00:00 - 2025-03-16 21:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 18.91  
                 **赛事主办** : K!nd4SUS (https://ctftime.org/team/150337)  
                 **添加日历** : https://ctftime.org/event/2703.ics  
                 
