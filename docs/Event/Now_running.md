@@ -36,12 +36,3 @@ comments: true
     **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
     **添加日历** : https://ctftime.org/event/2674.ics  
     
-??? Quote "[WolvCTF 2025](https://wolvctf.io/)"  
-    [![](https://ctftime.org/media/events/4ec5f36875124e118429b66c41edf271.png){ width="200" align=left }](https://wolvctf.io/)  
-    **比赛名称** : [WolvCTF 2025](https://wolvctf.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-22 07:00:00 - 2025-03-24 07:00:00 UTC+8  
-    **比赛权重** : 47.25  
-    **赛事主办** : wolvsec (https://ctftime.org/team/83621)  
-    **添加日历** : https://ctftime.org/event/2579.ics  
-    

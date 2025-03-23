@@ -672,18 +672,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "WolvCTF 2025",
-        "比赛时间": "2025-03-22 07:00:00 - 2025-03-24 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2579.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://wolvctf.io/",
-        "比赛标志": "https://ctftime.org/media/events/4ec5f36875124e118429b66c41edf271.png",
-        "比赛权重": "47.25",
-        "赛事主办": "wolvsec (https://ctftime.org/team/83621)",
-        "比赛ID": "766",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "ZeroDays CTF 2025",
         "比赛时间": "2025-03-22 17:30:00 - 2025-03-23 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2614.ics",
@@ -705,6 +693,18 @@
         "比赛权重": "0",
         "赛事主办": "Alchemists of Kernel (https://ctftime.org/team/130794)",
         "比赛ID": "611",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "WolvCTF 2025",
+        "比赛时间": "2025-03-22 07:00:00 - 2025-03-24 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2579.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://wolvctf.io/",
+        "比赛标志": "https://ctftime.org/media/events/4ec5f36875124e118429b66c41edf271.png",
+        "比赛权重": "47.25",
+        "赛事主办": "wolvsec (https://ctftime.org/team/83621)",
+        "比赛ID": "766",
         "比赛状态": "past"
     },
     {
@@ -798,7 +798,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://1404.fmc.tf/",
         "比赛标志": "https://ctftime.org/media/events/FMCTF.png",
-        "比赛权重": "24.47",
+        "比赛权重": "24.49",
         "赛事主办": "FlagMotori (https://ctftime.org/team/222060)",
         "比赛ID": "1221",
         "比赛状态": "past"
@@ -1026,7 +1026,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.iiitkottayam.ac.in/",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "24.03",
+        "比赛权重": "24.07",
         "赛事主办": "r3d_kn1ght5 (https://ctftime.org/team/212248)",
         "比赛ID": "1083",
         "比赛状态": "past"
@@ -1038,7 +1038,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://acectf.tech/",
         "比赛标志": "https://ctftime.org/media/events/WhatsApp_Image_2024-12-26_at_12.03.44_7efe1dad.jpg",
-        "比赛权重": "22.56",
+        "比赛权重": "22.63",
         "赛事主办": "ACECTF (https://ctftime.org/team/364715)",
         "比赛ID": "1231",
         "比赛状态": "past"
@@ -1062,7 +1062,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://kashictf.iitbhucybersec.in/",
         "比赛标志": "https://ctftime.org/media/events/logo_105.png",
-        "比赛权重": "21.84",
+        "比赛权重": "21.91",
         "赛事主办": "IIT(BHU)CyberSec (https://ctftime.org/team/22546)",
         "比赛ID": "1251",
         "比赛状态": "past"
@@ -1194,7 +1194,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://play.bearcatctf.io/",
         "比赛标志": "https://ctftime.org/media/events/bearcat25_logo_short.png",
-        "比赛权重": "23.81",
+        "比赛权重": "23.89",
         "赛事主办": "Cyber@UC (https://ctftime.org/team/87727)",
         "比赛ID": "1032",
         "比赛状态": "past"
@@ -1869,18 +1869,6 @@
         "比赛权重": "25.00",
         "赛事主办": "C0ncl4v3 (https://ctftime.org/team/303692)",
         "比赛ID": "1138",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "WP CTF 2024",
-        "比赛时间": "2024-11-23 16:00:00 - 2024-11-24 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2395.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://wpctf.it/",
-        "比赛标志": "https://ctftime.org/media/events/WP_CTF_logo.png",
-        "比赛权重": "0.00",
-        "赛事主办": "WP CTF (https://ctftime.org/team/303099)",
-        "比赛ID": "1128",
         "比赛状态": "past"
     }
 ]
