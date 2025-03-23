@@ -132,7 +132,7 @@ comments: true
     **比赛名称** : [AI vs Human CTF Challenge](https://ctf.hackthebox.com/event/details/ai-vs-human-ctf-challenge-2000)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-03-14 23:00:00 - 2025-03-16 23:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : Palisade Research (https://ctftime.org/team/373097)  
     **添加日历** : https://ctftime.org/event/2723.ics  
     
