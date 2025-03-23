@@ -803,15 +803,6 @@ hide:
                 **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
                 **添加日历** : https://ctftime.org/event/2674.ics  
                 
-            ??? Quote "[RITSEC CTF 2025](https://ctfd.ritsec.club/)"  
-                [![](https://ctftime.org/media/events/Screenshot_From_2025-03-04_12-03-08.png){ width="200" align=left }](https://ctfd.ritsec.club/)  
-                **比赛名称** : [RITSEC CTF 2025](https://ctfd.ritsec.club/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-22 05:00:00 - 2025-03-24 05:00:00 UTC+8  
-                **比赛权重** : 34.14  
-                **赛事主办** : Contagion (https://ctftime.org/team/152691)  
-                **添加日历** : https://ctftime.org/event/2673.ics  
-                
             ??? Quote "[WolvCTF 2025](https://wolvctf.io/)"  
                 [![](https://ctftime.org/media/events/4ec5f36875124e118429b66c41edf271.png){ width="200" align=left }](https://wolvctf.io/)  
                 **比赛名称** : [WolvCTF 2025](https://wolvctf.io/)  
@@ -862,6 +853,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Alchemists of Kernel (https://ctftime.org/team/130794)  
                 **添加日历** : https://ctftime.org/event/2720.ics  
+                
+            ??? Quote "[RITSEC CTF 2025](https://ctfd.ritsec.club/)"  
+                [![](https://ctftime.org/media/events/Screenshot_From_2025-03-04_12-03-08.png){ width="200" align=left }](https://ctfd.ritsec.club/)  
+                **比赛名称** : [RITSEC CTF 2025](https://ctfd.ritsec.club/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-22 05:00:00 - 2025-03-24 05:00:00 UTC+8  
+                **比赛权重** : 34.14  
+                **赛事主办** : Contagion (https://ctftime.org/team/152691)  
+                **添加日历** : https://ctftime.org/event/2673.ics  
                 
             ??? Quote "[pingCTF 2025](https://knping.pl/ctf)"  
                 [![](https://ctftime.org/media/events/CTF_blank_1.png){ width="200" align=left }](https://knping.pl/ctf)  
@@ -1735,15 +1735,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : WP CTF (https://ctftime.org/team/303099)  
                 **添加日历** : https://ctftime.org/event/2395.ics  
-                
-            ??? Quote "[SECCON CTF 13 Quals](https://ctf.seccon.jp/)"  
-                [![](https://ctftime.org/media/events/seccon_s_7.png){ width="200" align=left }](https://ctf.seccon.jp/)  
-                **比赛名称** : [SECCON CTF 13 Quals](https://ctf.seccon.jp/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-23 13:00:00 - 2024-11-24 13:00:00 UTC+8  
-                **比赛权重** : 100.00  
-                **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
-                **添加日历** : https://ctftime.org/event/2478.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
