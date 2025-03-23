@@ -78,12 +78,3 @@ comments: true
     **赛事主办** : wolvsec (https://ctftime.org/team/83621)  
     **添加日历** : https://ctftime.org/event/2579.ics  
     
-??? Quote "[FooBar CTF 2025](https://foobarctf.nitdgplug.org/)"  
-    [![](https://ctftime.org/media/events/Foobar_logo_1.png){ width="200" align=left }](https://foobarctf.nitdgplug.org/)  
-    **比赛名称** : [FooBar CTF 2025](https://foobarctf.nitdgplug.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-22 14:30:00 - 2025-03-23 14:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Alchemists of Kernel (https://ctftime.org/team/130794)  
-    **添加日历** : https://ctftime.org/event/2720.ics  
-    

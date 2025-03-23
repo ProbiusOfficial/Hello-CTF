@@ -845,15 +845,6 @@ hide:
                 **赛事主办** : wolvsec (https://ctftime.org/team/83621)  
                 **添加日历** : https://ctftime.org/event/2579.ics  
                 
-            ??? Quote "[FooBar CTF 2025](https://foobarctf.nitdgplug.org/)"  
-                [![](https://ctftime.org/media/events/Foobar_logo_1.png){ width="200" align=left }](https://foobarctf.nitdgplug.org/)  
-                **比赛名称** : [FooBar CTF 2025](https://foobarctf.nitdgplug.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-22 14:30:00 - 2025-03-23 14:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Alchemists of Kernel (https://ctftime.org/team/130794)  
-                **添加日历** : https://ctftime.org/event/2720.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[HGAME 2025](https://hgame.vidar.club/games/2)"  
@@ -879,6 +870,15 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
                 **添加日历** : https://ctftime.org/event/2614.ics  
+                
+            ??? Quote "[FooBar CTF 2025](https://foobarctf.nitdgplug.org/)"  
+                [![](https://ctftime.org/media/events/Foobar_logo_1.png){ width="200" align=left }](https://foobarctf.nitdgplug.org/)  
+                **比赛名称** : [FooBar CTF 2025](https://foobarctf.nitdgplug.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-22 14:30:00 - 2025-03-23 14:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Alchemists of Kernel (https://ctftime.org/team/130794)  
+                **添加日历** : https://ctftime.org/event/2720.ics  
                 
             ??? Quote "[DC509 CTF 2025](https://dc509.com/)"  
                 [![](https://ctftime.org/media/events/dc509.png){ width="200" align=left }](https://dc509.com/)  
@@ -1761,15 +1761,6 @@ hide:
                 **比赛权重** : 35.69  
                 **赛事主办** : LosFuzzys (https://ctftime.org/team/8323)  
                 **添加日历** : https://ctftime.org/event/2402.ics  
-                
-            ??? Quote "[iCTF 2024 (Undergrad)](https://ictf.cs.ucsb.edu/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ictf.cs.ucsb.edu/)  
-                **比赛名称** : [iCTF 2024 (Undergrad)](https://ictf.cs.ucsb.edu/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-11-17 02:00:00 - 2024-11-23 08:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Shellphish (https://ctftime.org/team/285)  
-                **添加日历** : https://ctftime.org/event/2565.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
