@@ -298,6 +298,15 @@ comments: true
     **赛事主办** : r3d_kn1ght5 (https://ctftime.org/team/212248)  
     **添加日历** : https://ctftime.org/event/2638.ics  
     
+??? Quote "[Bloom Clues CTF](https://bloomclues-ctf.ctfd.io/home)"  
+    [![](https://ctftime.org/media/events/Black_White_Circle_Bee_Icon_Food_Logo.png){ width="200" align=left }](https://bloomclues-ctf.ctfd.io/home)  
+    **比赛名称** : [Bloom Clues CTF](https://bloomclues-ctf.ctfd.io/home)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-02-28 17:30:00 - 2025-03-01 08:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Bloomsburg Broskies (https://ctftime.org/team/372116)  
+    **添加日历** : https://ctftime.org/event/2702.ics  
+    
 ??? Quote "[ACECTF 1.0](https://acectf.tech/)"  
     [![](https://ctftime.org/media/events/WhatsApp_Image_2024-12-26_at_12.03.44_7efe1dad.jpg){ width="200" align=left }](https://acectf.tech/)  
     **比赛名称** : [ACECTF 1.0](https://acectf.tech/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
     **添加日历** : https://ctftime.org/event/2511.ics  
-    
-??? Quote "[The Hacker Conclave v2](https://ctf.thehackerconclave.es/)"  
-    [![](https://ctftime.org/media/events/ctftime2.png){ width="200" align=left }](https://ctf.thehackerconclave.es/)  
-    **比赛名称** : [The Hacker Conclave v2](https://ctf.thehackerconclave.es/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-23 17:00:00 - 2024-11-23 20:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : C0ncl4v3 (https://ctftime.org/team/303692)  
-    **添加日历** : https://ctftime.org/event/2575.ics  
     
