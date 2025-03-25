@@ -28,6 +28,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[AlpacaHack Round 10 (Pwn)](https://alpacahack.com/ctfs/round-10)"  
+    [![](https://ctftime.org/media/events/ctftime_9.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-10)  
+    **比赛名称** : [AlpacaHack Round 10 (Pwn)](https://alpacahack.com/ctfs/round-10)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-23 11:00:00 - 2025-03-23 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
+    **添加日历** : https://ctftime.org/event/2709.ics  
+    
 ??? Quote "[ZeroDays CTF 2025](http://www.zerodays.ie/)"  
     [![](https://ctftime.org/media/events/zerodays_logo.png){ width="200" align=left }](http://www.zerodays.ie/)  
     **比赛名称** : [ZeroDays CTF 2025](http://www.zerodays.ie/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 96.90  
     **赛事主办** : BIZone (https://ctftime.org/team/32190)  
     **添加日历** : https://ctftime.org/event/2506.ics  
-    
-??? Quote "[CyberSci Regional Qualifiers 2024-25](https://cybersecuritychallenge.ca/)"  
-    [![](https://ctftime.org/media/events/9ad26ba791d2c5418b515bd4699ea7e2.png){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
-    **比赛名称** : [CyberSci Regional Qualifiers 2024-25](https://cybersecuritychallenge.ca/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-24 00:00:00 - 2024-11-24 07:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
-    **添加日历** : https://ctftime.org/event/2511.ics  
     
