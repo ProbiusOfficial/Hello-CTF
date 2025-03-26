@@ -15,15 +15,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[SwampCTF 2025](https://swampctf.com/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://swampctf.com/)  
-    **比赛名称** : [SwampCTF 2025](https://swampctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-28 08:21:00 - 2025-03-30 08:21:00 UTC+8  
-    **比赛权重** : 40.40  
-    **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
-    **添加日历** : https://ctftime.org/event/2573.ics  
-    
 ??? Quote "[SibirCTF 2025](https://vk.com/sibirctf)"  
     [![](https://ctftime.org/media/events/cybersibir2025logo_1.png){ width="200" align=left }](https://vk.com/sibirctf)  
     **比赛名称** : [SibirCTF 2025](https://vk.com/sibirctf)  
@@ -59,6 +50,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
     **添加日历** : https://ctftime.org/event/2616.ics  
+    
+??? Quote "[SwampCTF 2025](https://swampctf.com/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://swampctf.com/)  
+    **比赛名称** : [SwampCTF 2025](https://swampctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-29 05:00:00 - 2025-03-31 05:00:00 UTC+8  
+    **比赛权重** : 40.40  
+    **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
+    **添加日历** : https://ctftime.org/event/2573.ics  
     
 ??? Quote "[DiceCTF 2025 Quals](https://ctf.dicega.ng/)"  
     [![](https://ctftime.org/media/events/dicectf_2_1_1_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
