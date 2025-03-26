@@ -79,7 +79,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2681.ics  
     
 ??? Quote "[Dreamhack CTF Season 7 Round #6 (Div. 2)](https://dreamhack.io/ctf/660)"  
-    [![](https://ctftime.org/media/events/bg2_1.jpg){ width="200" align=left }](https://dreamhack.io/ctf/660)  
+    [![](https://ctftime.org/media/events/cover06.jpg){ width="200" align=left }](https://dreamhack.io/ctf/660)  
     **比赛名称** : [Dreamhack CTF Season 7 Round #6 (Div. 2)](https://dreamhack.io/ctf/660)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-03-29 08:00:00 - 2025-03-29 23:00:00 UTC+8  
