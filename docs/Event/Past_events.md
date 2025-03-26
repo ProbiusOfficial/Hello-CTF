@@ -132,7 +132,7 @@ comments: true
     **比赛名称** : [PascalCTF Beginners 2025](https://ctf.pascalctf.it/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-03-19 23:00:00 - 2025-03-20 04:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : Paolo (https://ctftime.org/team/263145)  
     **添加日历** : https://ctftime.org/event/2664.ics  
     

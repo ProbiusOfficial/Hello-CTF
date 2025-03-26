@@ -393,9 +393,9 @@ comments: true
     **赛事主办** : bi0s (https://ctftime.org/team/662)  
     **添加日历** : https://ctftime.org/event/2672.ics  
     
-??? Quote "[UniVsThreats CTF](https://cybersec.uvt.ro/)"  
+??? Quote "[UniVsThreats 25 CTF](https://cybersec.uvt.ro/)"  
     [![](https://ctftime.org/media/events/Project.6jpg_1.jpg){ width="200" align=left }](https://cybersec.uvt.ro/)  
-    **比赛名称** : [UniVsThreats CTF](https://cybersec.uvt.ro/)  
+    **比赛名称** : [UniVsThreats 25 CTF](https://cybersec.uvt.ro/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-05-03 18:00:00 - 2025-05-04 18:00:00 UTC+8  
     **比赛权重** : 0.00  
