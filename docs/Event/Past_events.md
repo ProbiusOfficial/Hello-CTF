@@ -28,6 +28,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[HICAThon 1.0](https://hicathon01.xyz/)"  
+    [![](https://ctftime.org/media/events/Frame_4034.png){ width="200" align=left }](https://hicathon01.xyz/)  
+    **比赛名称** : [HICAThon 1.0](https://hicathon01.xyz/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-25 11:00:00 - 2025-03-26 20:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : HICA SSPU (https://ctftime.org/team/372831)  
+    **添加日历** : https://ctftime.org/event/2724.ics  
+    
 ??? Quote "[AlpacaHack Round 10 (Pwn)](https://alpacahack.com/ctfs/round-10)"  
     [![](https://ctftime.org/media/events/ctftime_9.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-10)  
     **比赛名称** : [AlpacaHack Round 10 (Pwn)](https://alpacahack.com/ctfs/round-10)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 22.50  
     **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
     **添加日历** : https://ctftime.org/event/2431.ics  
-    
-??? Quote "[CTFZone 2024 Final](http://ctf.bi.zone/)"  
-    [![](https://ctftime.org/media/events/aa86f826480a008ed91d88a917a0c33b.png){ width="200" align=left }](http://ctf.bi.zone/)  
-    **比赛名称** : [CTFZone 2024 Final](http://ctf.bi.zone/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2024-11-24 17:00:00 - 2024-11-25 01:00:00 UTC+8  
-    **比赛权重** : 96.90  
-    **赛事主办** : BIZone (https://ctftime.org/team/32190)  
-    **添加日历** : https://ctftime.org/event/2506.ics  
     
