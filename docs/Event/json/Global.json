@@ -900,18 +900,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Cyber Apocalypse CTF 2025: Tales from Eldoria",
-        "比赛时间": "2025-03-21 21:00:00 - 2025-03-26 20:59:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2674.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hackthebox.com/event/details/cyber-apocalypse-ctf-2025-tales-from-eldoria-2107",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "24.00",
-        "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
-        "比赛ID": "554",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "HICAThon 1.0",
         "比赛时间": "2025-03-25 11:00:00 - 2025-03-26 20:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2724.ics",
@@ -1005,6 +993,18 @@
         "比赛权重": "32.50",
         "赛事主办": "pingCTF (https://ctftime.org/team/147266)",
         "比赛ID": "715",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Cyber Apocalypse CTF 2025: Tales from Eldoria",
+        "比赛时间": "2025-03-21 21:00:00 - 2025-03-26 20:59:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2674.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.hackthebox.com/event/details/cyber-apocalypse-ctf-2025-tales-from-eldoria-2107",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "24.00",
+        "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
+        "比赛ID": "554",
         "比赛状态": "past"
     },
     {
@@ -2097,18 +2097,6 @@
         "比赛权重": "0",
         "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
         "比赛ID": "1163",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BlackHat MEA CTF Final 2024",
-        "比赛时间": "2024-11-26 16:00:00 - 2024-11-28 11:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2431.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://blackhatmea.com/capture-the-flag",
-        "比赛标志": "https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_3.jpg",
-        "比赛权重": "22.50",
-        "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
-        "比赛ID": "826",
         "比赛状态": "past"
     }
 ]
