@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "SwampCTF 2025",
-        "比赛时间": "2025-03-28 08:21:00 - 2025-03-30 08:21:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2573.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://swampctf.com/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "40.40",
-        "赛事主办": "Kernel Sanders (https://ctftime.org/team/397)",
-        "比赛ID": "241",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "SibirCTF 2025",
         "比赛时间": "2025-03-28 11:15:00 - 2025-03-29 20:15:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2742.ics",
@@ -57,6 +45,18 @@
         "比赛权重": "0.00",
         "赛事主办": "HackDayCTF (https://ctftime.org/team/277562)",
         "比赛ID": "1060",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "SwampCTF 2025",
+        "比赛时间": "2025-03-29 05:00:00 - 2025-03-31 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2573.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://swampctf.com/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "40.40",
+        "赛事主办": "Kernel Sanders (https://ctftime.org/team/397)",
+        "比赛ID": "241",
         "比赛状态": "oncoming"
     },
     {
