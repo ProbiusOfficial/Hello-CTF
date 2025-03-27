@@ -276,6 +276,15 @@ comments: true
     **赛事主办** : CyberVT (https://ctftime.org/team/173872)  
     **添加日历** : https://ctftime.org/event/2662.ics  
     
+??? Quote "[Operation Cipher Shadows](https://discord.gg/JQ3RGuhPkq)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://discord.gg/JQ3RGuhPkq)  
+    **比赛名称** : [Operation Cipher Shadows](https://discord.gg/JQ3RGuhPkq)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-13 01:00:00 - 2025-04-14 01:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : IIT JAMMU (https://ctftime.org/team/375458)  
+    **添加日历** : https://ctftime.org/event/2745.ics  
+    
 ??? Quote "[DawgCTF 2025](https://metactf.com/join/dawgctf25)"  
     [![](https://ctftime.org/media/events/dawgsec_shield-ctftime_2.png){ width="200" align=left }](https://metactf.com/join/dawgctf25)  
     **比赛名称** : [DawgCTF 2025](https://metactf.com/join/dawgctf25)  
