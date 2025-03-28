@@ -972,18 +972,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "StealthCup",
-        "比赛时间": "2025-03-28 15:00:00 - 2025-03-28 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2666.ics",
-        "比赛形式": "Hack quest",
-        "比赛链接": "https://stealth.ait.ac.at/",
-        "比赛标志": "https://ctftime.org/media/events/StealthCup-2-1311x2048.png",
-        "比赛权重": "0",
-        "赛事主办": "0x01DA (https://ctftime.org/team/104949)",
-        "比赛ID": "1248",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "UNbreakable International 2025 - Individual Phase",
         "比赛时间": "2025-03-28 17:00:00 - 2025-03-28 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2739.ics",
@@ -993,6 +981,18 @@
         "比赛权重": "0",
         "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
         "比赛ID": "1064",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "StealthCup",
+        "比赛时间": "2025-03-28 15:00:00 - 2025-03-28 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2666.ics",
+        "比赛形式": "Hack quest",
+        "比赛链接": "https://stealth.ait.ac.at/",
+        "比赛标志": "https://ctftime.org/media/events/StealthCup-2-1311x2048.png",
+        "比赛权重": "0",
+        "赛事主办": "0x01DA (https://ctftime.org/team/104949)",
+        "比赛ID": "1248",
         "比赛状态": "past"
     },
     {
@@ -2169,18 +2169,6 @@
         "比赛权重": "23.08",
         "赛事主办": "My4nM4r (https://ctftime.org/team/145625)",
         "比赛ID": "974",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Ph0wn 2024",
-        "比赛时间": "2024-11-30 18:00:00 - 2024-12-01 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2564.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ph0wn.org/",
-        "比赛标志": "https://ctftime.org/media/events/logo-ph0wn_5.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Pic0wn (https://ctftime.org/team/6514)",
-        "比赛ID": "220",
         "比赛状态": "past"
     }
 ]
