@@ -15,15 +15,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[UNbreakable International 2025 - Individual Phase](https://unr25i-international.cyber-edu.co/)"  
-    [![](https://ctftime.org/media/events/MfknElGVExHGiftE.png){ width="200" align=left }](https://unr25i-international.cyber-edu.co/)  
-    **比赛名称** : [UNbreakable International 2025 - Individual Phase](https://unr25i-international.cyber-edu.co/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-28 17:00:00 - 2025-03-28 18:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : bitsentinel (https://ctftime.org/team/280005)  
-    **添加日历** : https://ctftime.org/event/2739.ics  
-    
 ??? Quote "[HackDay 2025 - Finals](https://hackday.fr/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://hackday.fr/)  
     **比赛名称** : [HackDay 2025 - Finals](https://hackday.fr/)  

@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "UNbreakable International 2025 - Individual Phase",
-        "比赛时间": "2025-03-28 17:00:00 - 2025-03-28 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2739.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://unr25i-international.cyber-edu.co/",
-        "比赛标志": "https://ctftime.org/media/events/MfknElGVExHGiftE.png",
-        "比赛权重": "0",
-        "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
-        "比赛ID": "1064",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "HackDay 2025 - Finals",
         "比赛时间": "2025-03-29 02:00:00 - 2025-03-30 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2616.ics",
@@ -909,6 +897,18 @@
         "比赛权重": "0",
         "赛事主办": "0x01DA (https://ctftime.org/team/104949)",
         "比赛ID": "1248",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "UNbreakable International 2025 - Individual Phase",
+        "比赛时间": "2025-03-28 17:00:00 - 2025-03-28 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2739.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://unr25i-international.cyber-edu.co/",
+        "比赛标志": "https://ctftime.org/media/events/MfknElGVExHGiftE.png",
+        "比赛权重": "0",
+        "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
+        "比赛ID": "1064",
         "比赛状态": "nowrunning"
     },
     {
