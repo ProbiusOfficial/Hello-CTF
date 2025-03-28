@@ -36,3 +36,12 @@ comments: true
     **赛事主办** : keva (https://ctftime.org/team/2980)  
     **添加日历** : https://ctftime.org/event/2742.ics  
     
+??? Quote "[StealthCup](https://stealth.ait.ac.at/)"  
+    [![](https://ctftime.org/media/events/StealthCup-2-1311x2048.png){ width="200" align=left }](https://stealth.ait.ac.at/)  
+    **比赛名称** : [StealthCup](https://stealth.ait.ac.at/)  
+    **比赛形式** : Hack quest  
+    **比赛时间** : 2025-03-28 15:00:00 - 2025-03-28 23:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : 0x01DA (https://ctftime.org/team/104949)  
+    **添加日历** : https://ctftime.org/event/2666.ics  
+    
