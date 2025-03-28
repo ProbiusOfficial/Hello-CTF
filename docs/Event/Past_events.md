@@ -28,6 +28,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[UNbreakable International 2025 - Individual Phase](https://unr25i-international.cyber-edu.co/)"  
+    [![](https://ctftime.org/media/events/MfknElGVExHGiftE.png){ width="200" align=left }](https://unr25i-international.cyber-edu.co/)  
+    **比赛名称** : [UNbreakable International 2025 - Individual Phase](https://unr25i-international.cyber-edu.co/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-28 17:00:00 - 2025-03-28 18:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : bitsentinel (https://ctftime.org/team/280005)  
+    **添加日历** : https://ctftime.org/event/2739.ics  
+    
 ??? Quote "[HICAThon 1.0](https://hicathon01.xyz/)"  
     [![](https://ctftime.org/media/events/Frame_4034.png){ width="200" align=left }](https://hicathon01.xyz/)  
     **比赛名称** : [HICAThon 1.0](https://hicathon01.xyz/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Pic0wn (https://ctftime.org/team/6514)  
     **添加日历** : https://ctftime.org/event/2564.ics  
-    
-??? Quote "[AlpacaHack Round 7 (Web)](https://alpacahack.com/ctfs/round-7)"  
-    [![](https://ctftime.org/media/events/ctftime_8.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-7)  
-    **比赛名称** : [AlpacaHack Round 7 (Web)](https://alpacahack.com/ctfs/round-7)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-30 11:00:00 - 2024-11-30 17:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
-    **添加日历** : https://ctftime.org/event/2544.ics  
     
