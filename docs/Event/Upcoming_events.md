@@ -15,15 +15,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[HackDay 2025 - Finals](https://hackday.fr/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://hackday.fr/)  
-    **比赛名称** : [HackDay 2025 - Finals](https://hackday.fr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-29 02:00:00 - 2025-03-30 02:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
-    **添加日历** : https://ctftime.org/event/2616.ics  
-    
 ??? Quote "[SwampCTF 2025](https://swampctf.com/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://swampctf.com/)  
     **比赛名称** : [SwampCTF 2025](https://swampctf.com/)  
