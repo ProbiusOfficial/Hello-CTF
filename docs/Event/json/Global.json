@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "JerseyCTF V",
-        "比赛时间": "2025-03-30 03:00:00 - 2025-03-31 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2667.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.jerseyctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/jctfv_hat_1.png",
-        "比赛权重": "24.73",
-        "赛事主办": "Highlander Hackers (https://ctftime.org/team/173925)",
-        "比赛ID": "724",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Capture Point 5353 3.0",
         "比赛时间": "2025-03-31 02:00:00 - 2025-04-01 16:10:29 UTC+8",
         "添加日历": "https://ctftime.org/event/2747.ics",
@@ -864,18 +852,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Undutmaning 2025",
-        "比赛时间": "2025-03-29 19:00:00 - 2025-03-30 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2589.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://undutmaning.se/",
-        "比赛标志": "https://ctftime.org/media/events/2025logo_ctfd.jpg",
-        "比赛权重": "24.50",
-        "赛事主办": "Undutmaning (https://ctftime.org/team/212504)",
-        "比赛ID": "885",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "SillyCTF 2025",
         "比赛时间": "2025-03-29 20:00:00 - 2025-03-30 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2637.ics",
@@ -900,6 +876,18 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "JerseyCTF V",
+        "比赛时间": "2025-03-30 03:00:00 - 2025-03-31 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2667.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.jerseyctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/jctfv_hat_1.png",
+        "比赛权重": "24.73",
+        "赛事主办": "Highlander Hackers (https://ctftime.org/team/173925)",
+        "比赛ID": "724",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "CodeVinci Beginner CTF 2025",
         "比赛时间": "2025-03-29 21:00:00 - 2025-03-29 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2738.ics",
@@ -909,6 +897,18 @@
         "比赛权重": "0",
         "赛事主办": "CodeVincii (https://ctftime.org/team/367123)",
         "比赛ID": "1225",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Undutmaning 2025",
+        "比赛时间": "2025-03-29 19:00:00 - 2025-03-30 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2589.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://undutmaning.se/",
+        "比赛标志": "https://ctftime.org/media/events/2025logo_ctfd.jpg",
+        "比赛权重": "24.50",
+        "赛事主办": "Undutmaning (https://ctftime.org/team/212504)",
+        "比赛ID": "885",
         "比赛状态": "past"
     },
     {
@@ -2085,18 +2085,6 @@
         "比赛权重": "0.00",
         "赛事主办": "ISITDTU (https://ctftime.org/team/8241)",
         "比赛ID": "258",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "snakeCTF 2024 Finals",
-        "比赛时间": "2024-12-05 16:00:00 - 2024-12-08 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2419.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2024.snakectf.org/",
-        "比赛标志": "https://ctftime.org/media/events/LogoCroppable_2.png",
-        "比赛权重": "0.00",
-        "赛事主办": "MadrHacks (https://ctftime.org/team/114509)",
-        "比赛ID": "994",
         "比赛状态": "past"
     }
 ]
