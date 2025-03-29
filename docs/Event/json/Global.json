@@ -1,29 +1,5 @@
 [
     {
-        "比赛名称": "SillyCTF 2025",
-        "比赛时间": "2025-03-29 20:00:00 - 2025-03-30 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2637.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://sillyctf.psuccso.org/",
-        "比赛标志": "https://ctftime.org/media/events/SillyCTF.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Penn State CCSO (https://ctftime.org/team/367931)",
-        "比赛ID": "1233",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "VolgaCTF 2025 Qualifier",
-        "比赛时间": "2025-03-29 20:00:00 - 2025-03-30 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2676.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://q.2025.volgactf.ru/",
-        "比赛标志": "https://ctftime.org/media/events/logo-social-yellow_16.png",
-        "比赛权重": "27.14",
-        "赛事主办": "VolgaCTF.org (https://ctftime.org/team/27094)",
-        "比赛ID": "52",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "CodeVinci Beginner CTF 2025",
         "比赛时间": "2025-03-29 21:00:00 - 2025-03-29 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2738.ics",
@@ -852,18 +828,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "SibirCTF 2025",
-        "比赛时间": "2025-03-28 11:15:00 - 2025-03-29 20:15:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2742.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://vk.com/sibirctf",
-        "比赛标志": "https://ctftime.org/media/events/cybersibir2025logo_1.png",
-        "比赛权重": "25.00",
-        "赛事主办": "keva (https://ctftime.org/team/2980)",
-        "比赛ID": "162",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "HackDay 2025 - Finals",
         "比赛时间": "2025-03-29 02:00:00 - 2025-03-30 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2616.ics",
@@ -972,6 +936,30 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "SillyCTF 2025",
+        "比赛时间": "2025-03-29 20:00:00 - 2025-03-30 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2637.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://sillyctf.psuccso.org/",
+        "比赛标志": "https://ctftime.org/media/events/SillyCTF.png",
+        "比赛权重": "0",
+        "赛事主办": "Penn State CCSO (https://ctftime.org/team/367931)",
+        "比赛ID": "1233",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "VolgaCTF 2025 Qualifier",
+        "比赛时间": "2025-03-29 20:00:00 - 2025-03-30 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2676.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://q.2025.volgactf.ru/",
+        "比赛标志": "https://ctftime.org/media/events/logo-social-yellow_16.png",
+        "比赛权重": "27.14",
+        "赛事主办": "VolgaCTF.org (https://ctftime.org/team/27094)",
+        "比赛ID": "52",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "UNbreakable International 2025 - Individual Phase",
         "比赛时间": "2025-03-28 17:00:00 - 2025-03-28 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2739.ics",
@@ -993,6 +981,18 @@
         "比赛权重": "0",
         "赛事主办": "0x01DA (https://ctftime.org/team/104949)",
         "比赛ID": "1248",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "SibirCTF 2025",
+        "比赛时间": "2025-03-28 11:15:00 - 2025-03-29 20:15:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2742.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://vk.com/sibirctf",
+        "比赛标志": "https://ctftime.org/media/events/cybersibir2025logo_1.png",
+        "比赛权重": "25.00",
+        "赛事主办": "keva (https://ctftime.org/team/2980)",
+        "比赛ID": "162",
         "比赛状态": "past"
     },
     {
@@ -2157,18 +2157,6 @@
         "比赛权重": "24.48",
         "赛事主办": "🐧‎ (https://ctftime.org/team/283853)",
         "比赛ID": "1208",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CYBERGON CTF_2024",
-        "比赛时间": "2024-11-30 20:00:00 - 2024-12-02 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2560.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cybergon.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/CYBERGON_Logo.png",
-        "比赛权重": "23.08",
-        "赛事主办": "My4nM4r (https://ctftime.org/team/145625)",
-        "比赛ID": "974",
         "比赛状态": "past"
     }
 ]

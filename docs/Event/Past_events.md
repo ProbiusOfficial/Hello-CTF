@@ -46,6 +46,15 @@ comments: true
     **赛事主办** : 0x01DA (https://ctftime.org/team/104949)  
     **添加日历** : https://ctftime.org/event/2666.ics  
     
+??? Quote "[SibirCTF 2025](https://vk.com/sibirctf)"  
+    [![](https://ctftime.org/media/events/cybersibir2025logo_1.png){ width="200" align=left }](https://vk.com/sibirctf)  
+    **比赛名称** : [SibirCTF 2025](https://vk.com/sibirctf)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2025-03-28 11:15:00 - 2025-03-29 20:15:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : keva (https://ctftime.org/team/2980)  
+    **添加日历** : https://ctftime.org/event/2742.ics  
+    
 ??? Quote "[HICAThon 1.0](https://hicathon01.xyz/)"  
     [![](https://ctftime.org/media/events/Frame_4034.png){ width="200" align=left }](https://hicathon01.xyz/)  
     **比赛名称** : [HICAThon 1.0](https://hicathon01.xyz/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 24.48  
     **赛事主办** : 🐧‎ (https://ctftime.org/team/283853)  
     **添加日历** : https://ctftime.org/event/2572.ics  
-    
-??? Quote "[CYBERGON CTF_2024](https://cybergon.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/CYBERGON_Logo.png){ width="200" align=left }](https://cybergon.ctfd.io/)  
-    **比赛名称** : [CYBERGON CTF_2024](https://cybergon.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-11-30 20:00:00 - 2024-12-02 20:00:00 UTC+8  
-    **比赛权重** : 23.08  
-    **赛事主办** : My4nM4r (https://ctftime.org/team/145625)  
-    **添加日历** : https://ctftime.org/event/2560.ics  
     
