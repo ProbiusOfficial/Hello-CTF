@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "CodeVinci Beginner CTF 2025",
-        "比赛时间": "2025-03-29 21:00:00 - 2025-03-29 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2738.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://codevincictf.itis.pr.it/",
-        "比赛标志": "https://ctftime.org/media/events/logo_CodeVinci.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "CodeVincii (https://ctftime.org/team/367123)",
-        "比赛ID": "1225",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "JerseyCTF V",
         "比赛时间": "2025-03-30 03:00:00 - 2025-03-31 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2667.ics",
@@ -958,6 +946,18 @@
         "赛事主办": "VolgaCTF.org (https://ctftime.org/team/27094)",
         "比赛ID": "52",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CodeVinci Beginner CTF 2025",
+        "比赛时间": "2025-03-29 21:00:00 - 2025-03-29 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2738.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://codevincictf.itis.pr.it/",
+        "比赛标志": "https://ctftime.org/media/events/logo_CodeVinci.jpg",
+        "比赛权重": "0",
+        "赛事主办": "CodeVincii (https://ctftime.org/team/367123)",
+        "比赛ID": "1225",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "UNbreakable International 2025 - Individual Phase",
@@ -2145,18 +2145,6 @@
         "比赛权重": "24.67",
         "赛事主办": "WreckTheLine (https://ctftime.org/team/57908)",
         "比赛ID": "401",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "World Wide CTF 2024",
-        "比赛时间": "2024-11-30 20:00:00 - 2024-12-01 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2572.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://wwctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/logobg.png",
-        "比赛权重": "24.48",
-        "赛事主办": "🐧‎ (https://ctftime.org/team/283853)",
-        "比赛ID": "1208",
         "比赛状态": "past"
     }
 ]
