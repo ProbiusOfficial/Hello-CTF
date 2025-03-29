@@ -99,3 +99,21 @@ comments: true
     **赛事主办** : LBC2 (https://ctftime.org/team/373963)  
     **添加日历** : https://ctftime.org/event/2728.ics  
     
+??? Quote "[PolyPwnCTF 2025](https://pwn.polycyber.io/)"  
+    [![](https://ctftime.org/media/events/Logo_PolyPwn_CTF.jpg){ width="200" align=left }](https://pwn.polycyber.io/)  
+    **比赛名称** : [PolyPwnCTF 2025](https://pwn.polycyber.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-29 18:00:00 - 2025-03-31 04:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
+    **添加日历** : https://ctftime.org/event/2734.ics  
+    
+??? Quote "[Undutmaning 2025](https://undutmaning.se/)"  
+    [![](https://ctftime.org/media/events/2025logo_ctfd.jpg){ width="200" align=left }](https://undutmaning.se/)  
+    **比赛名称** : [Undutmaning 2025](https://undutmaning.se/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-29 19:00:00 - 2025-03-30 03:00:00 UTC+8  
+    **比赛权重** : 24.50  
+    **赛事主办** : Undutmaning (https://ctftime.org/team/212504)  
+    **添加日历** : https://ctftime.org/event/2589.ics  
+    
