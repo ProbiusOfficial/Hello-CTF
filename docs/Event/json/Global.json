@@ -864,42 +864,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Dreamhack CTF Season 7 Round #6 (Div. 2)",
-        "比赛时间": "2025-03-29 08:00:00 - 2025-03-29 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2626.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dreamhack.io/ctf/660",
-        "比赛标志": "https://ctftime.org/media/events/cover06.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
-        "比赛ID": "1232",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "Codegate CTF 2025 Preliminary",
-        "比赛时间": "2025-03-29 08:00:00 - 2025-03-29 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2706.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.codegate.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "54.00",
-        "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
-        "比赛ID": "3",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "LBC2 2025",
-        "比赛时间": "2025-03-29 17:00:00 - 2025-03-29 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2728.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://lbc2.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "LBC2 (https://ctftime.org/team/373963)",
-        "比赛ID": "1276",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "PolyPwnCTF 2025",
         "比赛时间": "2025-03-29 18:00:00 - 2025-03-31 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2734.ics",
@@ -957,6 +921,42 @@
         "比赛权重": "0",
         "赛事主办": "CodeVincii (https://ctftime.org/team/367123)",
         "比赛ID": "1225",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "LBC2 2025",
+        "比赛时间": "2025-03-29 17:00:00 - 2025-03-29 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2728.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://lbc2.org/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "LBC2 (https://ctftime.org/team/373963)",
+        "比赛ID": "1276",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Dreamhack CTF Season 7 Round #6 (Div. 2)",
+        "比赛时间": "2025-03-29 08:00:00 - 2025-03-29 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2626.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://dreamhack.io/ctf/660",
+        "比赛标志": "https://ctftime.org/media/events/cover06.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
+        "比赛ID": "1232",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Codegate CTF 2025 Preliminary",
+        "比赛时间": "2025-03-29 08:00:00 - 2025-03-29 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2706.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf.codegate.org/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "54.00",
+        "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
+        "比赛ID": "3",
         "比赛状态": "past"
     },
     {
@@ -2109,42 +2109,6 @@
         "比赛权重": "0",
         "赛事主办": "CyberStudentsCTF (https://ctftime.org/team/365239)",
         "比赛ID": "1218",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "M*CTF 2024 Junior Finals",
-        "比赛时间": "2024-12-01 15:00:00 - 2024-12-01 21:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2586.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://mctf.ru/",
-        "比赛标志": "https://ctftime.org/media/events/IMG_2613.PNG",
-        "比赛权重": "0",
-        "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
-        "比赛ID": "164",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "saarCTF 2024",
-        "比赛时间": "2024-11-30 21:00:00 - 2024-12-01 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2490.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://ctf.saarland/",
-        "比赛标志": "https://ctftime.org/media/events/e21b4ef017572441617115eaa6bd9823.jpg",
-        "比赛权重": "98.50",
-        "赛事主办": "saarsec (https://ctftime.org/team/15337)",
-        "比赛ID": "412",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "HackTM CTF 2024 - Postponed",
-        "比赛时间": "2024-11-30 20:00:00 - 2024-12-01 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2452.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hacktm.ro/",
-        "比赛标志": "https://ctftime.org/media/events/e2b12b3390413f1cf2cdeb7b12e076c6.jpg",
-        "比赛权重": "24.67",
-        "赛事主办": "WreckTheLine (https://ctftime.org/team/57908)",
-        "比赛ID": "401",
         "比赛状态": "past"
     }
 ]
