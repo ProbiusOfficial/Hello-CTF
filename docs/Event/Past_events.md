@@ -64,6 +64,15 @@ comments: true
     **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
     **添加日历** : https://ctftime.org/event/2706.ics  
     
+??? Quote "[HackDay 2025 - Finals](https://hackday.fr/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://hackday.fr/)  
+    **比赛名称** : [HackDay 2025 - Finals](https://hackday.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-29 02:00:00 - 2025-03-30 02:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
+    **添加日历** : https://ctftime.org/event/2616.ics  
+    
 ??? Quote "[UNbreakable International 2025 - Individual Phase](https://unr25i-international.cyber-edu.co/)"  
     [![](https://ctftime.org/media/events/MfknElGVExHGiftE.png){ width="200" align=left }](https://unr25i-international.cyber-edu.co/)  
     **比赛名称** : [UNbreakable International 2025 - Individual Phase](https://unr25i-international.cyber-edu.co/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
     **添加日历** : https://ctftime.org/event/2419.ics  
-    
-??? Quote "[Advent of CTF 2024](https://cyberstudents.net/advent)"  
-    [![](https://ctftime.org/media/events/IMG_4522.png){ width="200" align=left }](https://cyberstudents.net/advent)  
-    **比赛名称** : [Advent of CTF 2024](https://cyberstudents.net/advent)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-12-02 04:00:00 - 2025-01-01 12:59:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
-    **添加日历** : https://ctftime.org/event/2600.ics  
     
