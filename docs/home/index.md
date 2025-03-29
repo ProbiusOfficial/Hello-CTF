@@ -60,15 +60,6 @@ hide:
             **其他说明** : 2025年能源网络安全大赛由中国能源研究会主办，面向电网企业、发电及电力建设企业、石油石化企业、煤炭企业等单位网络安全技术、运维和管理人员，以及国内网络安全领域知名高校、科研机构、产业单位等代表。报名截止日期为2025年3月31日，可通过扫描二维码下载报名表并发送至icc@cers.org.cn邮箱。联系人包括屈庆红、李理和陈炜，可通过电话或邮箱进行咨询。  
                 
     === "国外比赛"
-        ??? Quote "[LBC2 2025](http://lbc2.org/)"  
-            [![](https://ctftime.org){ width="200" align=left }](http://lbc2.org/)  
-            **比赛名称** : [LBC2 2025](http://lbc2.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-03-29 17:00:00 - 2025-03-29 23:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : LBC2 (https://ctftime.org/team/373963)  
-            **添加日历** : https://ctftime.org/event/2728.ics  
-            
         ??? Quote "[PolyPwnCTF 2025](https://pwn.polycyber.io/)"  
             [![](https://ctftime.org/media/events/Logo_PolyPwn_CTF.jpg){ width="200" align=left }](https://pwn.polycyber.io/)  
             **比赛名称** : [PolyPwnCTF 2025](https://pwn.polycyber.io/)  
@@ -95,6 +86,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Penn State CCSO (https://ctftime.org/team/367931)  
             **添加日历** : https://ctftime.org/event/2637.ics  
+            
+        ??? Quote "[VolgaCTF 2025 Qualifier](https://q.2025.volgactf.ru/)"  
+            [![](https://ctftime.org/media/events/logo-social-yellow_16.png){ width="200" align=left }](https://q.2025.volgactf.ru/)  
+            **比赛名称** : [VolgaCTF 2025 Qualifier](https://q.2025.volgactf.ru/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-03-29 20:00:00 - 2025-03-30 20:00:00 UTC+8  
+            **比赛权重** : 27.14  
+            **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
+            **添加日历** : https://ctftime.org/event/2676.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
