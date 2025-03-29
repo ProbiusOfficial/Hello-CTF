@@ -1,29 +1,5 @@
 [
     {
-        "比赛名称": "Dreamhack CTF Season 7 Round #6 (Div. 2)",
-        "比赛时间": "2025-03-29 08:00:00 - 2025-03-29 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2626.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dreamhack.io/ctf/660",
-        "比赛标志": "https://ctftime.org/media/events/cover06.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
-        "比赛ID": "1232",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "Codegate CTF 2025 Preliminary",
-        "比赛时间": "2025-03-29 08:00:00 - 2025-03-29 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2706.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.codegate.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "54.00",
-        "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
-        "比赛ID": "3",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "LBC2 2025",
         "比赛时间": "2025-03-29 17:00:00 - 2025-03-29 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2728.ics",
@@ -969,6 +945,30 @@
         "比赛权重": "56.66",
         "赛事主办": "TAMUctf (https://ctftime.org/team/37721)",
         "比赛ID": "198",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Dreamhack CTF Season 7 Round #6 (Div. 2)",
+        "比赛时间": "2025-03-29 08:00:00 - 2025-03-29 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2626.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://dreamhack.io/ctf/660",
+        "比赛标志": "https://ctftime.org/media/events/cover06.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
+        "比赛ID": "1232",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Codegate CTF 2025 Preliminary",
+        "比赛时间": "2025-03-29 08:00:00 - 2025-03-29 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2706.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf.codegate.org/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "54.00",
+        "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
+        "比赛ID": "3",
         "比赛状态": "nowrunning"
     },
     {
