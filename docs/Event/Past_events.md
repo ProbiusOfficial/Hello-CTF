@@ -150,7 +150,7 @@ comments: true
     **比赛名称** : [FooBar CTF 2025](https://foobarctf.nitdgplug.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-03-22 14:30:00 - 2025-03-23 14:30:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 35.50  
     **赛事主办** : Alchemists of Kernel (https://ctftime.org/team/130794)  
     **添加日历** : https://ctftime.org/event/2720.ics  
     
