@@ -74,15 +74,6 @@ hide:
             **其他说明** : 2025年能源网络安全大赛由中国能源研究会主办，面向电网企业、发电及电力建设企业、石油石化企业、煤炭企业等单位网络安全技术、运维和管理人员，以及国内网络安全领域知名高校、科研机构、产业单位等代表。报名截止日期为2025年3月31日，可通过扫描二维码下载报名表并发送至icc@cers.org.cn邮箱。联系人包括屈庆红、李理和陈炜，可通过电话或邮箱进行咨询。  
                 
     === "国外比赛"
-        ??? Quote "[Capture Point 5353 3.0](https://iiitv.capturepoint5353.tech/)"  
-            [![](https://ctftime.org/media/events/Untitled_design_2.png){ width="200" align=left }](https://iiitv.capturepoint5353.tech/)  
-            **比赛名称** : [Capture Point 5353 3.0](https://iiitv.capturepoint5353.tech/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-03-31 02:00:00 - 2025-04-01 16:10:29 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : HORIZON_03 (https://ctftime.org/team/375436)  
-            **添加日历** : https://ctftime.org/event/2747.ics  
-            
         ??? Quote "[PlaidCTF 2025](https://plaidctf.com/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://plaidctf.com/)  
             **比赛名称** : [PlaidCTF 2025](https://plaidctf.com/)  
@@ -109,6 +100,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : IITBreachers (https://ctftime.org/team/165802)  
             **添加日历** : https://ctftime.org/event/2671.ics  
+            
+        ??? Quote "[Moscow CTF School 2025](http://ctf.cs.msu.ru/)"  
+            [![](https://ctftime.org){ width="200" align=left }](http://ctf.cs.msu.ru/)  
+            **比赛名称** : [Moscow CTF School 2025](http://ctf.cs.msu.ru/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-04-05 18:00:00 - 2025-04-06 02:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Bushwhackers (https://ctftime.org/team/586)  
+            **添加日历** : https://ctftime.org/event/2712.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
