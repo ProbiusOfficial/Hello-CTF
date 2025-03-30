@@ -907,24 +907,6 @@ hide:
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2588.ics  
                 
-            ??? Quote "[SwampCTF 2025](https://swampctf.com/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://swampctf.com/)  
-                **比赛名称** : [SwampCTF 2025](https://swampctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-29 05:00:00 - 2025-03-31 05:00:00 UTC+8  
-                **比赛权重** : 40.40  
-                **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
-                **添加日历** : https://ctftime.org/event/2573.ics  
-                
-            ??? Quote "[DiceCTF 2025 Quals](https://ctf.dicega.ng/)"  
-                [![](https://ctftime.org/media/events/dicectf_2_1_1_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
-                **比赛名称** : [DiceCTF 2025 Quals](https://ctf.dicega.ng/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-29 05:00:00 - 2025-03-31 05:00:00 UTC+8  
-                **比赛权重** : 81.00  
-                **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
-                **添加日历** : https://ctftime.org/event/2617.ics  
-                
             ??? Quote "[TAMUctf 2025](https://tamuctf.com/)"  
                 [![](https://ctftime.org/media/events/TAMUCTF_cmaroon_1_1.png){ width="200" align=left }](https://tamuctf.com/)  
                 **比赛名称** : [TAMUctf 2025](https://tamuctf.com/)  
@@ -1047,6 +1029,24 @@ hide:
                 **比赛权重** : 54.00  
                 **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
                 **添加日历** : https://ctftime.org/event/2706.ics  
+                
+            ??? Quote "[SwampCTF 2025](https://swampctf.com/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://swampctf.com/)  
+                **比赛名称** : [SwampCTF 2025](https://swampctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-29 05:00:00 - 2025-03-31 05:00:00 UTC+8  
+                **比赛权重** : 40.40  
+                **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
+                **添加日历** : https://ctftime.org/event/2573.ics  
+                
+            ??? Quote "[DiceCTF 2025 Quals](https://ctf.dicega.ng/)"  
+                [![](https://ctftime.org/media/events/dicectf_2_1_1_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
+                **比赛名称** : [DiceCTF 2025 Quals](https://ctf.dicega.ng/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-29 05:00:00 - 2025-03-31 05:00:00 UTC+8  
+                **比赛权重** : 81.00  
+                **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
+                **添加日历** : https://ctftime.org/event/2617.ics  
                 
             ??? Quote "[HackDay 2025 - Finals](https://hackday.fr/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://hackday.fr/)  
@@ -1848,24 +1848,6 @@ hide:
                 **比赛权重** : 19.80  
                 **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
                 **添加日历** : https://ctftime.org/event/2515.ics  
-                
-            ??? Quote "[LakeCTF Quals 24-25](https://lakectf.epfl.ch/)"  
-                [![](https://ctftime.org/media/events/7fb065c04dbec7e33dfbb1f4456196c7.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
-                **比赛名称** : [LakeCTF Quals 24-25](https://lakectf.epfl.ch/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-08 02:00:00 - 2024-12-09 02:00:00 UTC+8  
-                **比赛权重** : 35.94  
-                **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
-                **添加日历** : https://ctftime.org/event/2502.ics  
-                
-            ??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
-                **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-08 00:00:00 - 2024-12-08 04:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
-                **添加日历** : https://ctftime.org/event/2488.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
