@@ -73,6 +73,15 @@ comments: true
     **赛事主办** : Undutmaning (https://ctftime.org/team/212504)  
     **添加日历** : https://ctftime.org/event/2589.ics  
     
+??? Quote "[PolyPwnCTF 2025](https://pwn.polycyber.io/)"  
+    [![](https://ctftime.org/media/events/Logo_PolyPwn_CTF.jpg){ width="200" align=left }](https://pwn.polycyber.io/)  
+    **比赛名称** : [PolyPwnCTF 2025](https://pwn.polycyber.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-29 18:00:00 - 2025-03-31 04:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
+    **添加日历** : https://ctftime.org/event/2734.ics  
+    
 ??? Quote "[LBC2 2025](http://lbc2.org/)"  
     [![](https://ctftime.org){ width="200" align=left }](http://lbc2.org/)  
     **比赛名称** : [LBC2 2025](http://lbc2.org/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
     **添加日历** : https://ctftime.org/event/2488.ics  
-    
-??? Quote "[Platypwn 2024](https://platypwn.ctf.platypwnies.de/)"  
-    [![](https://ctftime.org/media/events/Platypwnie.png){ width="200" align=left }](https://platypwn.ctf.platypwnies.de/)  
-    **比赛名称** : [Platypwn 2024](https://platypwn.ctf.platypwnies.de/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-12-07 22:00:00 - 2024-12-08 22:00:00 UTC+8  
-    **比赛权重** : 24.75  
-    **赛事主办** : Platypwnies (https://ctftime.org/team/112550)  
-    **添加日历** : https://ctftime.org/event/2407.ics  
     

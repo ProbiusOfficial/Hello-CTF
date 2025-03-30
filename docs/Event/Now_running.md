@@ -54,15 +54,6 @@ comments: true
     **赛事主办** : TAMUctf (https://ctftime.org/team/37721)  
     **添加日历** : https://ctftime.org/event/2681.ics  
     
-??? Quote "[PolyPwnCTF 2025](https://pwn.polycyber.io/)"  
-    [![](https://ctftime.org/media/events/Logo_PolyPwn_CTF.jpg){ width="200" align=left }](https://pwn.polycyber.io/)  
-    **比赛名称** : [PolyPwnCTF 2025](https://pwn.polycyber.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-29 18:00:00 - 2025-03-31 04:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
-    **添加日历** : https://ctftime.org/event/2734.ics  
-    
 ??? Quote "[Capture Point 5353 3.0](https://iiitv.capturepoint5353.tech/)"  
     [![](https://ctftime.org/media/events/Untitled_design_2.png){ width="200" align=left }](https://iiitv.capturepoint5353.tech/)  
     **比赛名称** : [Capture Point 5353 3.0](https://iiitv.capturepoint5353.tech/)  
