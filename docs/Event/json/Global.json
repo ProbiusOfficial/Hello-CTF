@@ -792,18 +792,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "TAMUctf 2025",
-        "比赛时间": "2025-03-29 06:00:00 - 2025-03-31 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2681.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://tamuctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/TAMUCTF_cmaroon_1_1.png",
-        "比赛权重": "56.66",
-        "赛事主办": "TAMUctf (https://ctftime.org/team/37721)",
-        "比赛ID": "198",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Capture Point 5353 3.0",
         "比赛时间": "2025-03-31 02:00:00 - 2025-04-01 16:10:29 UTC+8",
         "添加日历": "https://ctftime.org/event/2747.ics",
@@ -924,15 +912,15 @@
         "比赛状态": "past"
     },
     {
-        "比赛名称": "SwampCTF 2025",
-        "比赛时间": "2025-03-29 05:00:00 - 2025-03-31 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2573.ics",
+        "比赛名称": "TAMUctf 2025",
+        "比赛时间": "2025-03-29 06:00:00 - 2025-03-31 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2681.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://swampctf.com/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "40.40",
-        "赛事主办": "Kernel Sanders (https://ctftime.org/team/397)",
-        "比赛ID": "241",
+        "比赛链接": "https://tamuctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/TAMUCTF_cmaroon_1_1.png",
+        "比赛权重": "56.66",
+        "赛事主办": "TAMUctf (https://ctftime.org/team/37721)",
+        "比赛ID": "198",
         "比赛状态": "past"
     },
     {
@@ -945,6 +933,18 @@
         "比赛权重": "81.00",
         "赛事主办": "DiceGang (https://ctftime.org/team/109452)",
         "比赛ID": "568",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "SwampCTF 2025",
+        "比赛时间": "2025-03-29 05:00:00 - 2025-03-31 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2573.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://swampctf.com/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "40.40",
+        "赛事主办": "Kernel Sanders (https://ctftime.org/team/397)",
+        "比赛ID": "241",
         "比赛状态": "past"
     },
     {
@@ -1494,7 +1494,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.ehax.tech/",
         "比赛标志": "https://ctftime.org/media/events/ctf-vector.png",
-        "比赛权重": "22.60",
+        "比赛权重": "22.58",
         "赛事主办": "EHAX (https://ctftime.org/team/270643)",
         "比赛ID": "1244",
         "比赛状态": "past"
@@ -2001,18 +2001,6 @@
         "比赛权重": "29.33",
         "赛事主办": "Cryptonite (https://ctftime.org/team/62713)",
         "比赛ID": "663",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "WannaGame Championship 2024",
-        "比赛时间": "2024-12-13 09:00:00 - 2024-12-14 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2515.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cnsc.com.vn/ctf/",
-        "比赛标志": "https://ctftime.org/media/events/WGC2024_2.png",
-        "比赛权重": "19.80",
-        "赛事主办": "Wanna.W1n (https://ctftime.org/team/138431)",
-        "比赛ID": "1000",
         "比赛状态": "past"
     }
 ]
