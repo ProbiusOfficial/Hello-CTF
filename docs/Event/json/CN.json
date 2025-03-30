@@ -3,6 +3,27 @@
     "data": {
         "result": [
             {
+                "name": "XYCTF 2025",
+                "info_confirmed": 1,
+                "mid_join": 0,
+                "link": "xyctf.top",
+                "status": "即将开始",
+                "is_reg": 1,
+                "limit": 1,
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2025年04月04日 10:00",
+                "reg_time_end": "2025年04月07日 19:59",
+                "comp_time_start": "2025年04月04日 10:00",
+                "comp_time_end": "2025年04月07日 20:00",
+                "organizer": "XYCTF 2025 官方",
+                "contac": {
+                    "QQ群": "798794707",
+                    "官方邮箱": "ctf_xiao@163.com"
+                },
+                "tag": "",
+                "readmore": "XYCTF 2025 官方邮箱为ctf_xiao@163.com，赛事QQ群为798794707。"
+            },
+            {
                 "name": "商丘师范学院第四届网络安全及信息对抗大赛（公开赛道）",
                 "info_confirmed": 1,
                 "mid_join": 0,
