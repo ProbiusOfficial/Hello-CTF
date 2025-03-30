@@ -109,14 +109,14 @@ comments: true
     **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
     **添加日历** : https://ctftime.org/event/2706.ics  
     
-??? Quote "[SwampCTF 2025](https://swampctf.com/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://swampctf.com/)  
-    **比赛名称** : [SwampCTF 2025](https://swampctf.com/)  
+??? Quote "[TAMUctf 2025](https://tamuctf.com/)"  
+    [![](https://ctftime.org/media/events/TAMUCTF_cmaroon_1_1.png){ width="200" align=left }](https://tamuctf.com/)  
+    **比赛名称** : [TAMUctf 2025](https://tamuctf.com/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-29 05:00:00 - 2025-03-31 05:00:00 UTC+8  
-    **比赛权重** : 40.40  
-    **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
-    **添加日历** : https://ctftime.org/event/2573.ics  
+    **比赛时间** : 2025-03-29 06:00:00 - 2025-03-31 06:00:00 UTC+8  
+    **比赛权重** : 56.66  
+    **赛事主办** : TAMUctf (https://ctftime.org/team/37721)  
+    **添加日历** : https://ctftime.org/event/2681.ics  
     
 ??? Quote "[DiceCTF 2025 Quals](https://ctf.dicega.ng/)"  
     [![](https://ctftime.org/media/events/dicectf_2_1_1_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
@@ -126,6 +126,15 @@ comments: true
     **比赛权重** : 81.00  
     **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
     **添加日历** : https://ctftime.org/event/2617.ics  
+    
+??? Quote "[SwampCTF 2025](https://swampctf.com/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://swampctf.com/)  
+    **比赛名称** : [SwampCTF 2025](https://swampctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-29 05:00:00 - 2025-03-31 05:00:00 UTC+8  
+    **比赛权重** : 40.40  
+    **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
+    **添加日历** : https://ctftime.org/event/2573.ics  
     
 ??? Quote "[HackDay 2025 - Finals](https://hackday.fr/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://hackday.fr/)  
@@ -537,7 +546,7 @@ comments: true
     **比赛名称** : [EHAX CTF 2025](https://ctf.ehax.tech/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-02-16 00:00:00 - 2025-02-17 00:00:00 UTC+8  
-    **比赛权重** : 22.60  
+    **比赛权重** : 22.58  
     **赛事主办** : EHAX (https://ctftime.org/team/270643)  
     **添加日历** : https://ctftime.org/event/2677.ics  
     
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 29.33  
     **赛事主办** : Cryptonite (https://ctftime.org/team/62713)  
     **添加日历** : https://ctftime.org/event/2461.ics  
-    
-??? Quote "[WannaGame Championship 2024](https://cnsc.com.vn/ctf/)"  
-    [![](https://ctftime.org/media/events/WGC2024_2.png){ width="200" align=left }](https://cnsc.com.vn/ctf/)  
-    **比赛名称** : [WannaGame Championship 2024](https://cnsc.com.vn/ctf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-12-13 09:00:00 - 2024-12-14 09:00:00 UTC+8  
-    **比赛权重** : 19.80  
-    **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
-    **添加日历** : https://ctftime.org/event/2515.ics  
     
