@@ -938,15 +938,6 @@ hide:
                 **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
                 **添加日历** : https://ctftime.org/event/2734.ics  
                 
-            ??? Quote "[SillyCTF 2025](https://sillyctf.psuccso.org/)"  
-                [![](https://ctftime.org/media/events/SillyCTF.png){ width="200" align=left }](https://sillyctf.psuccso.org/)  
-                **比赛名称** : [SillyCTF 2025](https://sillyctf.psuccso.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-29 20:00:00 - 2025-03-30 08:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Penn State CCSO (https://ctftime.org/team/367931)  
-                **添加日历** : https://ctftime.org/event/2637.ics  
-                
             ??? Quote "[VolgaCTF 2025 Qualifier](https://q.2025.volgactf.ru/)"  
                 [![](https://ctftime.org/media/events/logo-social-yellow_16.png){ width="200" align=left }](https://q.2025.volgactf.ru/)  
                 **比赛名称** : [VolgaCTF 2025 Qualifier](https://q.2025.volgactf.ru/)  
@@ -997,6 +988,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : CodeVincii (https://ctftime.org/team/367123)  
                 **添加日历** : https://ctftime.org/event/2738.ics  
+                
+            ??? Quote "[SillyCTF 2025](https://sillyctf.psuccso.org/)"  
+                [![](https://ctftime.org/media/events/SillyCTF.png){ width="200" align=left }](https://sillyctf.psuccso.org/)  
+                **比赛名称** : [SillyCTF 2025](https://sillyctf.psuccso.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-29 20:00:00 - 2025-03-30 08:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Penn State CCSO (https://ctftime.org/team/367931)  
+                **添加日历** : https://ctftime.org/event/2637.ics  
                 
             ??? Quote "[Undutmaning 2025](https://undutmaning.se/)"  
                 [![](https://ctftime.org/media/events/2025logo_ctfd.jpg){ width="200" align=left }](https://undutmaning.se/)  
@@ -1390,7 +1390,7 @@ hide:
                 **比赛名称** : [TRX CTF 2025](https://ctf.theromanxpl0.it/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-02-22 22:00:00 - 2025-02-23 22:00:00 UTC+8  
-                **比赛权重** : 24.09  
+                **比赛权重** : 24.11  
                 **赛事主办** : TheRomanXpl0it (https://ctftime.org/team/46516)  
                 **添加日历** : https://ctftime.org/event/2654.ics  
                 
@@ -1399,7 +1399,7 @@ hide:
                 **比赛名称** : [Kashi CTF 2025](https://kashictf.iitbhucybersec.in/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-02-22 20:00:00 - 2025-02-23 20:00:00 UTC+8  
-                **比赛权重** : 21.91  
+                **比赛权重** : 21.99  
                 **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
                 **添加日历** : https://ctftime.org/event/2668.ics  
                 
@@ -1879,15 +1879,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
                 **添加日历** : https://ctftime.org/event/2595.ics  
-                
-            ??? Quote "[ISITDTU CTF 2024 Finals](https://ctf.isitdtu.com/)"  
-                [![](https://ctftime.org/media/events/index_3.gif){ width="200" align=left }](https://ctf.isitdtu.com/)  
-                **比赛名称** : [ISITDTU CTF 2024 Finals](https://ctf.isitdtu.com/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2024-12-07 10:00:00 - 2024-12-08 19:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : ISITDTU (https://ctftime.org/team/8241)  
-                **添加日历** : https://ctftime.org/event/2510.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

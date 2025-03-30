@@ -852,18 +852,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "SillyCTF 2025",
-        "比赛时间": "2025-03-29 20:00:00 - 2025-03-30 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2637.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://sillyctf.psuccso.org/",
-        "比赛标志": "https://ctftime.org/media/events/SillyCTF.png",
-        "比赛权重": "0",
-        "赛事主办": "Penn State CCSO (https://ctftime.org/team/367931)",
-        "比赛ID": "1233",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "VolgaCTF 2025 Qualifier",
         "比赛时间": "2025-03-29 20:00:00 - 2025-03-30 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2676.ics",
@@ -897,6 +885,18 @@
         "比赛权重": "0",
         "赛事主办": "CodeVincii (https://ctftime.org/team/367123)",
         "比赛ID": "1225",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "SillyCTF 2025",
+        "比赛时间": "2025-03-29 20:00:00 - 2025-03-30 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2637.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://sillyctf.psuccso.org/",
+        "比赛标志": "https://ctftime.org/media/events/SillyCTF.png",
+        "比赛权重": "0",
+        "赛事主办": "Penn State CCSO (https://ctftime.org/team/367931)",
+        "比赛ID": "1233",
         "比赛状态": "past"
     },
     {
@@ -1422,7 +1422,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.theromanxpl0.it/",
         "比赛标志": "https://ctftime.org/media/events/TRX_1.png",
-        "比赛权重": "24.09",
+        "比赛权重": "24.11",
         "赛事主办": "TheRomanXpl0it (https://ctftime.org/team/46516)",
         "比赛ID": "1238",
         "比赛状态": "past"
@@ -1434,7 +1434,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://kashictf.iitbhucybersec.in/",
         "比赛标志": "https://ctftime.org/media/events/logo_105.png",
-        "比赛权重": "21.91",
+        "比赛权重": "21.99",
         "赛事主办": "IIT(BHU)CyberSec (https://ctftime.org/team/22546)",
         "比赛ID": "1251",
         "比赛状态": "past"
@@ -2073,18 +2073,6 @@
         "比赛权重": "0.00",
         "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
         "比赛ID": "164",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "ISITDTU CTF 2024 Finals",
-        "比赛时间": "2024-12-07 10:00:00 - 2024-12-08 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2510.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://ctf.isitdtu.com/",
-        "比赛标志": "https://ctftime.org/media/events/index_3.gif",
-        "比赛权重": "0.00",
-        "赛事主办": "ISITDTU (https://ctftime.org/team/8241)",
-        "比赛ID": "258",
         "比赛状态": "past"
     }
 ]

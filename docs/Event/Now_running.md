@@ -63,15 +63,6 @@ comments: true
     **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
     **添加日历** : https://ctftime.org/event/2734.ics  
     
-??? Quote "[SillyCTF 2025](https://sillyctf.psuccso.org/)"  
-    [![](https://ctftime.org/media/events/SillyCTF.png){ width="200" align=left }](https://sillyctf.psuccso.org/)  
-    **比赛名称** : [SillyCTF 2025](https://sillyctf.psuccso.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-29 20:00:00 - 2025-03-30 08:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Penn State CCSO (https://ctftime.org/team/367931)  
-    **添加日历** : https://ctftime.org/event/2637.ics  
-    
 ??? Quote "[VolgaCTF 2025 Qualifier](https://q.2025.volgactf.ru/)"  
     [![](https://ctftime.org/media/events/logo-social-yellow_16.png){ width="200" align=left }](https://q.2025.volgactf.ru/)  
     **比赛名称** : [VolgaCTF 2025 Qualifier](https://q.2025.volgactf.ru/)  
