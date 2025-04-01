@@ -28,6 +28,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Capture Point 5353 3.0](https://iiitv.capturepoint5353.tech/)"  
+    [![](https://ctftime.org/media/events/Untitled_design_2.png){ width="200" align=left }](https://iiitv.capturepoint5353.tech/)  
+    **比赛名称** : [Capture Point 5353 3.0](https://iiitv.capturepoint5353.tech/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-31 02:00:00 - 2025-04-01 16:10:29 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : HORIZON_03 (https://ctftime.org/team/375436)  
+    **添加日历** : https://ctftime.org/event/2747.ics  
+    
 ??? Quote "[JerseyCTF V](https://ctf.jerseyctf.com/)"  
     [![](https://ctftime.org/media/events/jctfv_hat_1.png){ width="200" align=left }](https://ctf.jerseyctf.com/)  
     **比赛名称** : [JerseyCTF V](https://ctf.jerseyctf.com/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
     **添加日历** : https://ctftime.org/event/2539.ics  
-    
-??? Quote "[niteCTF 2024](https://play.nitectf2024.live/)"  
-    [![](https://ctftime.org/media/events/nitectf_2024_logo.jpg){ width="200" align=left }](https://play.nitectf2024.live/)  
-    **比赛名称** : [niteCTF 2024](https://play.nitectf2024.live/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-12-13 20:00:00 - 2024-12-15 20:00:00 UTC+8  
-    **比赛权重** : 29.33  
-    **赛事主办** : Cryptonite (https://ctftime.org/team/62713)  
-    **添加日历** : https://ctftime.org/event/2461.ics  
     
