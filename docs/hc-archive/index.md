@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [腾讯游戏安全大赛2025初赛题解](https://xia0ji233.github.io/2025/03/31/tencent-race-2025-pre/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-03-31
+
+    记录一下今年 2025 初赛过程参赛选手信息题目描述小Q是一位热衷于PC客户端安全的技术爱好者，为了不断提升自己的技能，他经常参与各类CTF竞赛。某天，他收到了一封来自神秘人的邮件，内容如下：“我可以引领你进入游戏安全的殿堂，但在此之前，你需要通过我的考验。打开这扇大门的钥匙就隐藏在附件中，你有能力找到它吗？找到正确的flag（2分）flag：flag{ACE_We1C0me!T0Z0Z5GamE...
     ### [【白帽访谈录】云安全将成为未来安全研究主战场-会议纪要](https://blog.zgsec.cn/archives/711.html)  
     >by [曾哥](https://blog.zgsec.cn/), 2025-02-28
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-12-16
 
     Apache Struts2 文件上传逻辑绕过(CVE-2024-53677)(S2-067)前言​    Apache官方公告又更新了一个Struts2的漏洞，考虑到很久没有发无密码的博客了，再加上漏洞的影响并不严重，因此公开分享利用的思路。分析影响版本Struts 2.0.0 - Struts 2.3.37 (EOL), Struts 2.5.0 - Struts 2.5.33, Struts...
-    ### [强网杯S8决赛Reverse writeup](https://xia0ji233.github.io/2024/12/11/qwb2024_final_reverse/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2024-12-11
-
-    复盘一下强网决赛的Reverse题。S1mpleVM附件下载题目名字已经很明显的告诉你了，就是 vm 逆向。基本分析入口其实没啥，就是输入 32 长度的 passcode 然后校验，启动方式是 ./secret_box.exe quest 命令行传参。可以找到最关键的函数 sub_140001D30 就是 VM 入口。这个函数里面很明显的 vm_handler1234567891011121314...
 
 </div>
