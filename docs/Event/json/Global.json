@@ -372,6 +372,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Break the Syntax CTF 2025",
+        "比赛时间": "2025-05-10 00:00:00 - 2025-05-11 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2749.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://bts2025.wh.edu.pl/",
+        "比赛标志": "https://ctftime.org/media/events/logo_99_1.png",
+        "比赛权重": "42.00",
+        "赛事主办": "PWr Synt@x Err0r (https://ctftime.org/team/88205)",
+        "比赛ID": "558",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "DamCTF 2025",
         "比赛时间": "2025-05-10 08:00:00 - 2025-05-12 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2585.ics",

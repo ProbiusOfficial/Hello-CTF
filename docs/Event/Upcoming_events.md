@@ -301,6 +301,15 @@ comments: true
     **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
     **添加日历** : https://ctftime.org/event/2568.ics  
     
+??? Quote "[Break the Syntax CTF 2025](https://bts2025.wh.edu.pl/)"  
+    [![](https://ctftime.org/media/events/logo_99_1.png){ width="200" align=left }](https://bts2025.wh.edu.pl/)  
+    **比赛名称** : [Break the Syntax CTF 2025](https://bts2025.wh.edu.pl/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-10 00:00:00 - 2025-05-11 18:00:00 UTC+8  
+    **比赛权重** : 42.00  
+    **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
+    **添加日历** : https://ctftime.org/event/2749.ics  
+    
 ??? Quote "[DamCTF 2025](https://damctf.xyz/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://damctf.xyz/)  
     **比赛名称** : [DamCTF 2025](https://damctf.xyz/)  
