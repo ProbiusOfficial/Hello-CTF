@@ -186,7 +186,7 @@ comments: true
     **比赛名称** : [HICAThon 1.0](https://hicathon01.xyz/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-03-25 11:00:00 - 2025-03-26 20:30:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : HICA SSPU (https://ctftime.org/team/372831)  
     **添加日历** : https://ctftime.org/event/2724.ics  
     
