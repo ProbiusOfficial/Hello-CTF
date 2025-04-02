@@ -97,10 +97,6 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2025-02-09
 
     来了解一下Windows的APC机制。APCAPC介绍APC 即 Asyncroneus Procedure Call，异步过程调用。学过之前的知识我们知道，线程是不能被杀掉、挂起和恢复的，线程在执行的时候自己占据着CPU，其他线程如何控制它呢？改变一个线程的行为，这就需要APC了。APC结构体APC的结构体如下所示123456789101112131415161718kd> dt _KAPCnt...
-    ### [再见2024 | 幸运且美好](https://www.ek1ng.com/Goodbye2024.html)  
-    >by [ek1ng](https://ek1ng.com/), 2025-01-28
-
-    再见2024 | 幸运且美好记得23年末时，大四上的我刚结束秋招，在多个offer的抉择中选择来到字节。初到沪城，新的城市，新的公司，新的出租屋，新的工作内容，一切都是新的开始，那时，我写下了再见2023。而如今一年过去，我已回到再熟悉不过的杭州，从一个临近毕业的求职大学生转变成日复一日工作的社畜，我想，这一年，有太多变化。23年许下的期愿 谈恋爱在临近毕业时很幸运的认识了同校的女友，她很温柔，很...
     ### [windows句柄表学习（1）](https://xia0ji233.github.io/2025/01/26/WindowsObjectTable1/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2025-01-26
 
@@ -153,5 +149,9 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-12-16
 
     Apache Struts2 文件上传逻辑绕过(CVE-2024-53677)(S2-067)前言​    Apache官方公告又更新了一个Struts2的漏洞，考虑到很久没有发无密码的博客了，再加上漏洞的影响并不严重，因此公开分享利用的思路。分析影响版本Struts 2.0.0 - Struts 2.3.37 (EOL), Struts 2.5.0 - Struts 2.5.33, Struts...
+    ### [强网杯S8决赛Reverse writeup](https://xia0ji233.github.io/2024/12/11/qwb2024_final_reverse/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-12-11
+
+    复盘一下强网决赛的Reverse题。S1mpleVM附件下载题目名字已经很明显的告诉你了，就是 vm 逆向。基本分析入口其实没啥，就是输入 32 长度的 passcode 然后校验，启动方式是 ./secret_box.exe quest 命令行传参。可以找到最关键的函数 sub_140001D30 就是 VM 入口。这个函数里面很明显的 vm_handler1234567891011121314...
 
 </div>
