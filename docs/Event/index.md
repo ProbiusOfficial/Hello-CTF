@@ -748,11 +748,20 @@ hide:
                 **赛事主办** : KITCTF (https://ctftime.org/team/7221)  
                 **添加日历** : https://ctftime.org/event/2694.ics  
                 
+            ??? Quote "[GMO Cybersecurity Contest - IERAE CTF 2025](https://gmo-cybersecurity.com/event/ieraectf25/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://gmo-cybersecurity.com/event/ieraectf25/)  
+                **比赛名称** : [GMO Cybersecurity Contest - IERAE CTF 2025](https://gmo-cybersecurity.com/event/ieraectf25/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-06-21 14:00:00 - 2025-06-22 14:00:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : ierae (https://ctftime.org/team/224122)  
+                **添加日历** : https://ctftime.org/event/2655.ics  
+                
             ??? Quote "[Google Capture The Flag 2025](https://g.co/ctf)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://g.co/ctf)  
                 **比赛名称** : [Google Capture The Flag 2025](https://g.co/ctf)  
                 **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-21 02:00:00 - 2025-06-23 02:00:00 UTC+8  
+                **比赛时间** : 2025-06-28 02:00:00 - 2025-06-30 02:00:00 UTC+8  
                 **比赛权重** : 97.17  
                 **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
                 **添加日历** : https://ctftime.org/event/2718.ics  
@@ -765,15 +774,6 @@ hide:
                 **比赛权重** : 91.43  
                 **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
                 **添加日历** : https://ctftime.org/event/2640.ics  
-                
-            ??? Quote "[GMO Cybersecurity Contest - IERAE CTF 2025](https://gmo-cybersecurity.com/event/ieraectf25/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://gmo-cybersecurity.com/event/ieraectf25/)  
-                **比赛名称** : [GMO Cybersecurity Contest - IERAE CTF 2025](https://gmo-cybersecurity.com/event/ieraectf25/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-28 14:00:00 - 2025-06-29 14:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : ierae (https://ctftime.org/team/224122)  
-                **添加日历** : https://ctftime.org/event/2655.ics  
                 
             ??? Quote "[R3CTF 2025](https://ctf2025.r3kapig.com/)"  
                 [![](https://ctftime.org/media/events/111_1.png){ width="200" align=left }](https://ctf2025.r3kapig.com/)  
