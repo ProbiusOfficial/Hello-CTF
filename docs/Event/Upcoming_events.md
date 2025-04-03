@@ -477,6 +477,15 @@ comments: true
     **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
     **添加日历** : https://ctftime.org/event/2718.ics  
     
+??? Quote "[UIUCTF 2025](https://uiuc.tf/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://uiuc.tf/)  
+    **比赛名称** : [UIUCTF 2025](https://uiuc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-28 08:00:00 - 2025-06-30 08:00:00 UTC+8  
+    **比赛权重** : 91.43  
+    **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
+    **添加日历** : https://ctftime.org/event/2640.ics  
+    
 ??? Quote "[GMO Cybersecurity Contest - IERAE CTF 2025](https://gmo-cybersecurity.com/event/ieraectf25/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://gmo-cybersecurity.com/event/ieraectf25/)  
     **比赛名称** : [GMO Cybersecurity Contest - IERAE CTF 2025](https://gmo-cybersecurity.com/event/ieraectf25/)  
