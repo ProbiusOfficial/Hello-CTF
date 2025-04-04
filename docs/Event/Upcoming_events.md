@@ -22,15 +22,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[PlaidCTF 2025](https://plaidctf.com/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://plaidctf.com/)  
-    **比赛名称** : [PlaidCTF 2025](https://plaidctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-05 05:00:00 - 2025-04-07 05:00:00 UTC+8  
-    **比赛权重** : 100.00  
-    **赛事主办** : Plaid Parliament of Pwning (https://ctftime.org/team/284)  
-    **添加日历** : https://ctftime.org/event/2508.ics  
-    
 ??? Quote "[squ1rrel CTF 2025](https://ctf.squ1rrel.dev/)"  
     [![](https://ctftime.org/media/events/squ1rrel_logo.png){ width="200" align=left }](https://ctf.squ1rrel.dev/)  
     **比赛名称** : [squ1rrel CTF 2025](https://ctf.squ1rrel.dev/)  

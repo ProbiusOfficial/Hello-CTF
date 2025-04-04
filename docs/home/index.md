@@ -67,15 +67,6 @@ hide:
             **其他说明** : TGCTF 2025（杭州师范大学第六届网络与信息安全竞赛）由杭州师范大学主办，报名截止时间为2025年4月11日21点，比赛时间为4月12号9点至4月13号21点，共36小时。  
                 
     === "国外比赛"
-        ??? Quote "[PlaidCTF 2025](https://plaidctf.com/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://plaidctf.com/)  
-            **比赛名称** : [PlaidCTF 2025](https://plaidctf.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-04-05 05:00:00 - 2025-04-07 05:00:00 UTC+8  
-            **比赛权重** : 100.00  
-            **赛事主办** : Plaid Parliament of Pwning (https://ctftime.org/team/284)  
-            **添加日历** : https://ctftime.org/event/2508.ics  
-            
         ??? Quote "[squ1rrel CTF 2025](https://ctf.squ1rrel.dev/)"  
             [![](https://ctftime.org/media/events/squ1rrel_logo.png){ width="200" align=left }](https://ctf.squ1rrel.dev/)  
             **比赛名称** : [squ1rrel CTF 2025](https://ctf.squ1rrel.dev/)  
@@ -102,6 +93,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Bushwhackers (https://ctftime.org/team/586)  
             **添加日历** : https://ctftime.org/event/2712.ics  
+            
+        ??? Quote "[Auvergn'Hack](https://ctf.zitf.fr/)"  
+            [![](https://ctftime.org/media/events/gorilla_auvergnhack3.jpg){ width="200" align=left }](https://ctf.zitf.fr/)  
+            **比赛名称** : [Auvergn'Hack](https://ctf.zitf.fr/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-04-05 20:45:00 - 2025-04-06 03:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : ZiTF (https://ctftime.org/team/376047)  
+            **添加日历** : https://ctftime.org/event/2752.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
