@@ -56,3 +56,12 @@ comments: true
     **赛事主办** : Plaid Parliament of Pwning (https://ctftime.org/team/284)  
     **添加日历** : https://ctftime.org/event/2508.ics  
     
+??? Quote "[squ1rrel CTF 2025](https://ctf.squ1rrel.dev/)"  
+    [![](https://ctftime.org/media/events/squ1rrel_logo.png){ width="200" align=left }](https://ctf.squ1rrel.dev/)  
+    **比赛名称** : [squ1rrel CTF 2025](https://ctf.squ1rrel.dev/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-05 07:00:00 - 2025-04-07 01:00:00 UTC+8  
+    **比赛权重** : 24.25  
+    **赛事主办** : squ1rrel (https://ctftime.org/team/201730)  
+    **添加日历** : https://ctftime.org/event/2708.ics  
+    
