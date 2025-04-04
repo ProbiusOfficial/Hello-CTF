@@ -41,27 +41,6 @@
                 "readmore": "TGCTF 2025（杭州师范大学第六届网络与信息安全竞赛）由杭州师范大学主办，报名截止时间为2025年4月11日21点，比赛时间为4月12号9点至4月13号21点，共36小时。"
             },
             {
-                "name": "XYCTF 2025",
-                "info_confirmed": 1,
-                "mid_join": 0,
-                "link": "xyctf.top",
-                "status": "即将开始",
-                "is_reg": 1,
-                "limit": 1,
-                "type": "线上Jeopardy解题赛",
-                "reg_time_start": "2025年04月04日 10:00",
-                "reg_time_end": "2025年04月07日 19:59",
-                "comp_time_start": "2025年04月04日 10:00",
-                "comp_time_end": "2025年04月07日 20:00",
-                "organizer": "XYCTF 2025 官方",
-                "contac": {
-                    "QQ群": "798794707",
-                    "官方邮箱": "ctf_xiao@163.com"
-                },
-                "tag": "",
-                "readmore": "XYCTF 2025 官方邮箱为ctf_xiao@163.com，赛事QQ群为798794707。"
-            },
-            {
                 "name": "商丘师范学院第四届网络安全及信息对抗大赛（公开赛道）",
                 "info_confirmed": 1,
                 "mid_join": 0,
@@ -80,6 +59,27 @@
                 },
                 "tag": "普通赛",
                 "readmore": "商丘师范学院第四届网络安全及信息对抗大赛（公开赛道）是一个由商丘师范学院主办的线上个人赛。报名开始时间为2025年04月01日 00:00，报名结束时间为2025年04月07日 09:59。比赛时间为2025年04月07日 10:00至2025年04月13日 17:00。更多信息请访问比赛官网www.qsnctf.com，或加入QQ群1021827215进行咨询。比赛设有证书和周边奖励。"
+            },
+            {
+                "name": "XYCTF 2025",
+                "info_confirmed": 1,
+                "mid_join": 0,
+                "link": "xyctf.top",
+                "status": "正在进行",
+                "is_reg": 1,
+                "limit": 1,
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2025年04月04日 10:00",
+                "reg_time_end": "2025年04月07日 19:59",
+                "comp_time_start": "2025年04月04日 10:00",
+                "comp_time_end": "2025年04月07日 20:00",
+                "organizer": "XYCTF 2025 官方",
+                "contac": {
+                    "QQ群": "798794707",
+                    "官方邮箱": "ctf_xiao@163.com"
+                },
+                "tag": "",
+                "readmore": "XYCTF 2025 官方邮箱为ctf_xiao@163.com，赛事QQ群为798794707。"
             },
             {
                 "name": "2025年能源网络安全大赛",
