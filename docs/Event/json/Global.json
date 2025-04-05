@@ -780,18 +780,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Auvergn'Hack",
-        "比赛时间": "2025-04-05 20:45:00 - 2025-04-06 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2752.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.zitf.fr/",
-        "比赛标志": "https://ctftime.org/media/events/gorilla_auvergnhack3.jpg",
-        "比赛权重": "0",
-        "赛事主办": "ZiTF (https://ctftime.org/team/376047)",
-        "比赛ID": "1300",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Ulisse CTF 2025",
         "比赛时间": "2025-04-06 01:00:00 - 2025-04-07 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2735.ics",
@@ -802,6 +790,18 @@
         "赛事主办": "Ulisse (https://ctftime.org/team/71738)",
         "比赛ID": "1263",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Auvergn'Hack",
+        "比赛时间": "2025-04-05 20:45:00 - 2025-04-06 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2752.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.zitf.fr/",
+        "比赛标志": "https://ctftime.org/media/events/gorilla_auvergnhack3.jpg",
+        "比赛权重": "0",
+        "赛事主办": "ZiTF (https://ctftime.org/team/376047)",
+        "比赛ID": "1300",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Moscow CTF School 2025",
@@ -1989,18 +1989,6 @@
         "比赛权重": "25.00",
         "赛事主办": "TSG (https://ctftime.org/team/16088)",
         "比赛ID": "294",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "THJCC CTF 2024 winter",
-        "比赛时间": "2024-12-14 08:00:01 - 2024-12-15 20:00:01 UTC+8",
-        "添加日历": "https://ctftime.org/event/2581.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.scint.org/",
-        "比赛标志": "https://ctftime.org/media/events/THJCC_logo.png",
-        "比赛权重": "0.00",
-        "赛事主办": "CakeisTheFake (https://ctftime.org/team/276544)",
-        "比赛ID": "1115",
         "比赛状态": "past"
     }
 ]
