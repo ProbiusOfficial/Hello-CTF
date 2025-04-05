@@ -74,3 +74,12 @@ comments: true
     **赛事主办** : IITBreachers (https://ctftime.org/team/165802)  
     **添加日历** : https://ctftime.org/event/2671.ics  
     
+??? Quote "[Moscow CTF School 2025](http://ctf.cs.msu.ru/)"  
+    [![](https://ctftime.org){ width="200" align=left }](http://ctf.cs.msu.ru/)  
+    **比赛名称** : [Moscow CTF School 2025](http://ctf.cs.msu.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-05 18:00:00 - 2025-04-06 02:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Bushwhackers (https://ctftime.org/team/586)  
+    **添加日历** : https://ctftime.org/event/2712.ics  
+    

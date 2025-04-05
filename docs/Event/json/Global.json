@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Moscow CTF School 2025",
-        "比赛时间": "2025-04-05 18:00:00 - 2025-04-06 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2712.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.cs.msu.ru/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Bushwhackers (https://ctftime.org/team/586)",
-        "比赛ID": "168",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Auvergn'Hack",
         "比赛时间": "2025-04-05 20:45:00 - 2025-04-06 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2752.ics",
@@ -813,6 +801,18 @@
         "比赛权重": "0",
         "赛事主办": "IITBreachers (https://ctftime.org/team/165802)",
         "比赛ID": "1098",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Moscow CTF School 2025",
+        "比赛时间": "2025-04-05 18:00:00 - 2025-04-06 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2712.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf.cs.msu.ru/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "Bushwhackers (https://ctftime.org/team/586)",
+        "比赛ID": "168",
         "比赛状态": "nowrunning"
     },
     {
