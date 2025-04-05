@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Auvergn'Hack",
-        "比赛时间": "2025-04-05 20:45:00 - 2025-04-06 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2752.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.zitf.fr/",
-        "比赛标志": "https://ctftime.org/media/events/gorilla_auvergnhack3.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "ZiTF (https://ctftime.org/team/376047)",
-        "比赛ID": "1300",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Ulisse CTF 2025",
         "比赛时间": "2025-04-06 01:00:00 - 2025-04-07 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2735.ics",
@@ -816,6 +804,18 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "Auvergn'Hack",
+        "比赛时间": "2025-04-05 20:45:00 - 2025-04-06 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2752.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.zitf.fr/",
+        "比赛标志": "https://ctftime.org/media/events/gorilla_auvergnhack3.jpg",
+        "比赛权重": "0",
+        "赛事主办": "ZiTF (https://ctftime.org/team/376047)",
+        "比赛ID": "1300",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "Capture Point 5353 3.0",
         "比赛时间": "2025-03-31 02:00:00 - 2025-04-01 16:10:29 UTC+8",
         "添加日历": "https://ctftime.org/event/2747.ics",
@@ -846,7 +846,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://codevincictf.itis.pr.it/",
         "比赛标志": "https://ctftime.org/media/events/logo_CodeVinci.jpg",
-        "比赛权重": "0",
+        "比赛权重": "18.57",
         "赛事主办": "CodeVincii (https://ctftime.org/team/367123)",
         "比赛ID": "1225",
         "比赛状态": "past"

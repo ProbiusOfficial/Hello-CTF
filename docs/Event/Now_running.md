@@ -83,3 +83,12 @@ comments: true
     **赛事主办** : Bushwhackers (https://ctftime.org/team/586)  
     **添加日历** : https://ctftime.org/event/2712.ics  
     
+??? Quote "[Auvergn'Hack](https://ctf.zitf.fr/)"  
+    [![](https://ctftime.org/media/events/gorilla_auvergnhack3.jpg){ width="200" align=left }](https://ctf.zitf.fr/)  
+    **比赛名称** : [Auvergn'Hack](https://ctf.zitf.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-05 20:45:00 - 2025-04-06 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ZiTF (https://ctftime.org/team/376047)  
+    **添加日历** : https://ctftime.org/event/2752.ics  
+    
