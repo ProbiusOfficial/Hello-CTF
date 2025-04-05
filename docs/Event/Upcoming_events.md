@@ -22,15 +22,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Ulisse CTF 2025](https://2025.ulis.se/)"  
-    [![](https://ctftime.org/media/events/logo_640x640.jpg){ width="200" align=left }](https://2025.ulis.se/)  
-    **比赛名称** : [Ulisse CTF 2025](https://2025.ulis.se/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-06 01:00:00 - 2025-04-07 01:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Ulisse (https://ctftime.org/team/71738)  
-    **添加日历** : https://ctftime.org/event/2735.ics  
-    
 ??? Quote "[Dreamhack Invitational 2025](https://dreamhack.io/)"  
     [![](https://ctftime.org/media/events/e66fed5653581908ac8e93f82ad73cae.jpg){ width="200" align=left }](https://dreamhack.io/)  
     **比赛名称** : [Dreamhack Invitational 2025](https://dreamhack.io/)  

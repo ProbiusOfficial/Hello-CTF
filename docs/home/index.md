@@ -67,15 +67,6 @@ hide:
             **其他说明** : TGCTF 2025（杭州师范大学第六届网络与信息安全竞赛）由杭州师范大学主办，报名截止时间为2025年4月11日21点，比赛时间为4月12号9点至4月13号21点，共36小时。  
                 
     === "国外比赛"
-        ??? Quote "[Ulisse CTF 2025](https://2025.ulis.se/)"  
-            [![](https://ctftime.org/media/events/logo_640x640.jpg){ width="200" align=left }](https://2025.ulis.se/)  
-            **比赛名称** : [Ulisse CTF 2025](https://2025.ulis.se/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-04-06 01:00:00 - 2025-04-07 01:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Ulisse (https://ctftime.org/team/71738)  
-            **添加日历** : https://ctftime.org/event/2735.ics  
-            
         ??? Quote "[Dreamhack Invitational 2025](https://dreamhack.io/)"  
             [![](https://ctftime.org/media/events/e66fed5653581908ac8e93f82ad73cae.jpg){ width="200" align=left }](https://dreamhack.io/)  
             **比赛名称** : [Dreamhack Invitational 2025](https://dreamhack.io/)  
@@ -102,6 +93,15 @@ hide:
             **比赛权重** : 31.00  
             **赛事主办** : CSG (https://ctftime.org/team/333)  
             **添加日历** : https://ctftime.org/event/2736.ics  
+            
+        ??? Quote "[DEF CON CTF Qualifier 2025](https://nautilus.institute/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://nautilus.institute/)  
+            **比赛名称** : [DEF CON CTF Qualifier 2025](https://nautilus.institute/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-04-12 08:00:00 - 2025-04-14 08:00:00 UTC+8  
+            **比赛权重** : 69.44  
+            **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
+            **添加日历** : https://ctftime.org/event/2604.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

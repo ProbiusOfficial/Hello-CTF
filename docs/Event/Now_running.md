@@ -92,3 +92,12 @@ comments: true
     **赛事主办** : ZiTF (https://ctftime.org/team/376047)  
     **添加日历** : https://ctftime.org/event/2752.ics  
     
+??? Quote "[Ulisse CTF 2025](https://2025.ulis.se/)"  
+    [![](https://ctftime.org/media/events/logo_640x640.jpg){ width="200" align=left }](https://2025.ulis.se/)  
+    **比赛名称** : [Ulisse CTF 2025](https://2025.ulis.se/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-06 01:00:00 - 2025-04-07 01:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Ulisse (https://ctftime.org/team/71738)  
+    **添加日历** : https://ctftime.org/event/2735.ics  
+    

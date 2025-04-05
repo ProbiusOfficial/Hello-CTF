@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Ulisse CTF 2025",
-        "比赛时间": "2025-04-06 01:00:00 - 2025-04-07 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2735.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2025.ulis.se/",
-        "比赛标志": "https://ctftime.org/media/events/logo_640x640.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "Ulisse (https://ctftime.org/team/71738)",
-        "比赛ID": "1263",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Dreamhack Invitational 2025",
         "比赛时间": "2025-04-08 08:00:00 - 2025-04-09 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2628.ics",
@@ -813,6 +801,18 @@
         "比赛权重": "0",
         "赛事主办": "ZiTF (https://ctftime.org/team/376047)",
         "比赛ID": "1300",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Ulisse CTF 2025",
+        "比赛时间": "2025-04-06 01:00:00 - 2025-04-07 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2735.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2025.ulis.se/",
+        "比赛标志": "https://ctftime.org/media/events/logo_640x640.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Ulisse (https://ctftime.org/team/71738)",
+        "比赛ID": "1263",
         "比赛状态": "nowrunning"
     },
     {
