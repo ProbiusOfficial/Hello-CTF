@@ -67,15 +67,6 @@ hide:
             **其他说明** : TGCTF 2025（杭州师范大学第六届网络与信息安全竞赛）由杭州师范大学主办，报名截止时间为2025年4月11日21点，比赛时间为4月12号9点至4月13号21点，共36小时。  
                 
     === "国外比赛"
-        ??? Quote "[Breach CTF 2025](https://www.breachers.in/)"  
-            [![](https://ctftime.org/media/events/BreachCTF2025_Logo.jpeg){ width="200" align=left }](https://www.breachers.in/)  
-            **比赛名称** : [Breach CTF 2025](https://www.breachers.in/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-04-05 10:30:00 - 2025-04-06 10:30:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : IITBreachers (https://ctftime.org/team/165802)  
-            **添加日历** : https://ctftime.org/event/2671.ics  
-            
         ??? Quote "[Moscow CTF School 2025](http://ctf.cs.msu.ru/)"  
             [![](https://ctftime.org){ width="200" align=left }](http://ctf.cs.msu.ru/)  
             **比赛名称** : [Moscow CTF School 2025](http://ctf.cs.msu.ru/)  
@@ -102,6 +93,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Ulisse (https://ctftime.org/team/71738)  
             **添加日历** : https://ctftime.org/event/2735.ics  
+            
+        ??? Quote "[Dreamhack Invitational 2025](https://dreamhack.io/)"  
+            [![](https://ctftime.org/media/events/e66fed5653581908ac8e93f82ad73cae.jpg){ width="200" align=left }](https://dreamhack.io/)  
+            **比赛名称** : [Dreamhack Invitational 2025](https://dreamhack.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-04-08 08:00:00 - 2025-04-09 05:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
+            **添加日历** : https://ctftime.org/event/2628.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
