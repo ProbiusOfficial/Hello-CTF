@@ -302,15 +302,6 @@ hide:
                 **其他说明** : 商丘师范学院第四届网络安全及信息对抗大赛（公开赛道）是一个由商丘师范学院主办的线上个人赛。报名开始时间为2025年04月01日 00:00，报名结束时间为2025年04月07日 09:59。比赛时间为2025年04月07日 10:00至2025年04月13日 17:00。更多信息请访问比赛官网www.qsnctf.com，或加入QQ群1021827215进行咨询。比赛设有证书和周边奖励。  
                 
         === "国外赛事"
-            ??? Quote "[Moscow CTF School 2025](http://ctf.cs.msu.ru/)"  
-                [![](https://ctftime.org){ width="200" align=left }](http://ctf.cs.msu.ru/)  
-                **比赛名称** : [Moscow CTF School 2025](http://ctf.cs.msu.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-05 18:00:00 - 2025-04-06 02:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Bushwhackers (https://ctftime.org/team/586)  
-                **添加日历** : https://ctftime.org/event/2712.ics  
-                
             ??? Quote "[Auvergn'Hack](https://ctf.zitf.fr/)"  
                 [![](https://ctftime.org/media/events/gorilla_auvergnhack3.jpg){ width="200" align=left }](https://ctf.zitf.fr/)  
                 **比赛名称** : [Auvergn'Hack](https://ctf.zitf.fr/)  
@@ -937,6 +928,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : IITBreachers (https://ctftime.org/team/165802)  
                 **添加日历** : https://ctftime.org/event/2671.ics  
+                
+            ??? Quote "[Moscow CTF School 2025](http://ctf.cs.msu.ru/)"  
+                [![](https://ctftime.org){ width="200" align=left }](http://ctf.cs.msu.ru/)  
+                **比赛名称** : [Moscow CTF School 2025](http://ctf.cs.msu.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-04-05 18:00:00 - 2025-04-06 02:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Bushwhackers (https://ctftime.org/team/586)  
+                **添加日历** : https://ctftime.org/event/2712.ics  
                 
     === "*已经结束*"
         === "国内赛事"

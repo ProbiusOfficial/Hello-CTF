@@ -67,15 +67,6 @@ hide:
             **其他说明** : TGCTF 2025（杭州师范大学第六届网络与信息安全竞赛）由杭州师范大学主办，报名截止时间为2025年4月11日21点，比赛时间为4月12号9点至4月13号21点，共36小时。  
                 
     === "国外比赛"
-        ??? Quote "[Moscow CTF School 2025](http://ctf.cs.msu.ru/)"  
-            [![](https://ctftime.org){ width="200" align=left }](http://ctf.cs.msu.ru/)  
-            **比赛名称** : [Moscow CTF School 2025](http://ctf.cs.msu.ru/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-04-05 18:00:00 - 2025-04-06 02:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Bushwhackers (https://ctftime.org/team/586)  
-            **添加日历** : https://ctftime.org/event/2712.ics  
-            
         ??? Quote "[Auvergn'Hack](https://ctf.zitf.fr/)"  
             [![](https://ctftime.org/media/events/gorilla_auvergnhack3.jpg){ width="200" align=left }](https://ctf.zitf.fr/)  
             **比赛名称** : [Auvergn'Hack](https://ctf.zitf.fr/)  
@@ -102,6 +93,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
             **添加日历** : https://ctftime.org/event/2628.ics  
+            
+        ??? Quote "[1753CTF 2025](https://1753ctf.com/)"  
+            [![](https://ctftime.org/media/events/badge_1.png){ width="200" align=left }](https://1753ctf.com/)  
+            **比赛名称** : [1753CTF 2025](https://1753ctf.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-04-12 01:00:00 - 2025-04-13 01:00:00 UTC+8  
+            **比赛权重** : 34.82  
+            **赛事主办** : 1753c (https://ctftime.org/team/178287)  
+            **添加日历** : https://ctftime.org/event/2639.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
