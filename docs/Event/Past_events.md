@@ -35,6 +35,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Ulisse CTF 2025](https://2025.ulis.se/)"  
+    [![](https://ctftime.org/media/events/logo_640x640.jpg){ width="200" align=left }](https://2025.ulis.se/)  
+    **比赛名称** : [Ulisse CTF 2025](https://2025.ulis.se/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-06 01:00:00 - 2025-04-07 01:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Ulisse (https://ctftime.org/team/71738)  
+    **添加日历** : https://ctftime.org/event/2735.ics  
+    
 ??? Quote "[Auvergn'Hack](https://ctf.zitf.fr/)"  
     [![](https://ctftime.org/media/events/gorilla_auvergnhack3.jpg){ width="200" align=left }](https://ctf.zitf.fr/)  
     **比赛名称** : [Auvergn'Hack](https://ctf.zitf.fr/)  
@@ -61,6 +70,15 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : IITBreachers (https://ctftime.org/team/165802)  
     **添加日历** : https://ctftime.org/event/2671.ics  
+    
+??? Quote "[squ1rrel CTF 2025](https://ctf.squ1rrel.dev/)"  
+    [![](https://ctftime.org/media/events/squ1rrel_logo.png){ width="200" align=left }](https://ctf.squ1rrel.dev/)  
+    **比赛名称** : [squ1rrel CTF 2025](https://ctf.squ1rrel.dev/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-05 07:00:00 - 2025-04-07 01:00:00 UTC+8  
+    **比赛权重** : 24.25  
+    **赛事主办** : squ1rrel (https://ctftime.org/team/201730)  
+    **添加日历** : https://ctftime.org/event/2708.ics  
     
 ??? Quote "[Capture Point 5353 3.0](https://iiitv.capturepoint5353.tech/)"  
     [![](https://ctftime.org/media/events/Untitled_design_2.png){ width="200" align=left }](https://iiitv.capturepoint5353.tech/)  
@@ -916,22 +934,4 @@ comments: true
     **比赛权重** : 24.86  
     **赛事主办** : Thread in the Needle (https://ctftime.org/team/278978)  
     **添加日历** : https://ctftime.org/event/2571.ics  
-    
-??? Quote "[m0leCon 2025 Beginner CTF](https://beginner.m0lecon.it/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://beginner.m0lecon.it/)  
-    **比赛名称** : [m0leCon 2025 Beginner CTF](https://beginner.m0lecon.it/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-12-14 21:00:00 - 2024-12-15 02:00:00 UTC+8  
-    **比赛权重** : 75.00  
-    **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
-    **添加日历** : https://ctftime.org/event/2578.ics  
-    
-??? Quote "[Russian CTF Cup 2024 Final](https://ctfcup.ru/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctfcup.ru/)  
-    **比赛名称** : [Russian CTF Cup 2024 Final](https://ctfcup.ru/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2024-12-14 18:00:00 - 2024-12-16 03:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
-    **添加日历** : https://ctftime.org/event/2406.ics  
     
