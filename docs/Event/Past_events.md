@@ -46,6 +46,15 @@ comments: true
     **赛事主办** : Bushwhackers (https://ctftime.org/team/586)  
     **添加日历** : https://ctftime.org/event/2712.ics  
     
+??? Quote "[Breach CTF 2025](https://www.breachers.in/)"  
+    [![](https://ctftime.org/media/events/BreachCTF2025_Logo.jpeg){ width="200" align=left }](https://www.breachers.in/)  
+    **比赛名称** : [Breach CTF 2025](https://www.breachers.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-05 10:30:00 - 2025-04-06 10:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : IITBreachers (https://ctftime.org/team/165802)  
+    **添加日历** : https://ctftime.org/event/2671.ics  
+    
 ??? Quote "[Capture Point 5353 3.0](https://iiitv.capturepoint5353.tech/)"  
     [![](https://ctftime.org/media/events/Untitled_design_2.png){ width="200" align=left }](https://iiitv.capturepoint5353.tech/)  
     **比赛名称** : [Capture Point 5353 3.0](https://iiitv.capturepoint5353.tech/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
     **添加日历** : https://ctftime.org/event/2406.ics  
-    
-??? Quote "[TSG CTF 2024](https://ctf.tsg.ne.jp/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.tsg.ne.jp/)  
-    **比赛名称** : [TSG CTF 2024](https://ctf.tsg.ne.jp/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-12-14 15:00:00 - 2024-12-15 15:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : TSG (https://ctftime.org/team/16088)  
-    **添加日历** : https://ctftime.org/event/2424.ics  
     
