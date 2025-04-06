@@ -994,7 +994,7 @@ hide:
                 **比赛名称** : [SillyCTF 2025](https://sillyctf.psuccso.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-03-29 20:00:00 - 2025-03-30 08:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : Penn State CCSO (https://ctftime.org/team/367931)  
                 **添加日历** : https://ctftime.org/event/2637.ics  
                 
