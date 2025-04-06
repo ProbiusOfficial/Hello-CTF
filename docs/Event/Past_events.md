@@ -80,6 +80,15 @@ comments: true
     **赛事主办** : squ1rrel (https://ctftime.org/team/201730)  
     **添加日历** : https://ctftime.org/event/2708.ics  
     
+??? Quote "[PlaidCTF 2025](https://plaidctf.com/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://plaidctf.com/)  
+    **比赛名称** : [PlaidCTF 2025](https://plaidctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-05 05:00:00 - 2025-04-07 05:00:00 UTC+8  
+    **比赛权重** : 100.00  
+    **赛事主办** : Plaid Parliament of Pwning (https://ctftime.org/team/284)  
+    **添加日历** : https://ctftime.org/event/2508.ics  
+    
 ??? Quote "[Capture Point 5353 3.0](https://iiitv.capturepoint5353.tech/)"  
     [![](https://ctftime.org/media/events/Untitled_design_2.png){ width="200" align=left }](https://iiitv.capturepoint5353.tech/)  
     **比赛名称** : [Capture Point 5353 3.0](https://iiitv.capturepoint5353.tech/)  
@@ -925,13 +934,4 @@ comments: true
     **比赛权重** : 100.00  
     **赛事主办** : 0ops (https://ctftime.org/team/4419)  
     **添加日历** : https://ctftime.org/event/2448.ics  
-    
-??? Quote "[NTUA_H4CK](https://ctfnhack.ctflib.eu/)"  
-    [![](https://ctftime.org/media/events/Copy_of_Untitled_Design1.png){ width="200" align=left }](https://ctfnhack.ctflib.eu/)  
-    **比赛名称** : [NTUA_H4CK](https://ctfnhack.ctflib.eu/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-12-15 17:00:00 - 2024-12-16 05:00:00 UTC+8  
-    **比赛权重** : 24.86  
-    **赛事主办** : Thread in the Needle (https://ctftime.org/team/278978)  
-    **添加日历** : https://ctftime.org/event/2571.ics  
     

@@ -732,18 +732,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "PlaidCTF 2025",
-        "比赛时间": "2025-04-05 05:00:00 - 2025-04-07 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2508.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://plaidctf.com/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "100.00",
-        "赛事主办": "Plaid Parliament of Pwning (https://ctftime.org/team/284)",
-        "比赛ID": "10",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Ulisse CTF 2025",
         "比赛时间": "2025-04-06 01:00:00 - 2025-04-07 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2735.ics",
@@ -801,6 +789,18 @@
         "比赛权重": "24.25",
         "赛事主办": "squ1rrel (https://ctftime.org/team/201730)",
         "比赛ID": "1110",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "PlaidCTF 2025",
+        "比赛时间": "2025-04-05 05:00:00 - 2025-04-07 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2508.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://plaidctf.com/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "100.00",
+        "赛事主办": "Plaid Parliament of Pwning (https://ctftime.org/team/284)",
+        "比赛ID": "10",
         "比赛状态": "past"
     },
     {
@@ -1929,18 +1929,6 @@
         "比赛权重": "100.00",
         "赛事主办": "0ops (https://ctftime.org/team/4419)",
         "比赛ID": "99",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "NTUA_H4CK",
-        "比赛时间": "2024-12-15 17:00:00 - 2024-12-16 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2571.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfnhack.ctflib.eu/",
-        "比赛标志": "https://ctftime.org/media/events/Copy_of_Untitled_Design1.png",
-        "比赛权重": "24.86",
-        "赛事主办": "Thread in the Needle (https://ctftime.org/team/278978)",
-        "比赛ID": "1207",
         "比赛状态": "past"
     }
 ]
