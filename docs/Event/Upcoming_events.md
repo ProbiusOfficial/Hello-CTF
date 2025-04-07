@@ -40,9 +40,9 @@ comments: true
     **赛事主办** : 1753c (https://ctftime.org/team/178287)  
     **添加日历** : https://ctftime.org/event/2639.ics  
     
-??? Quote "[Texas Security Awareness Week 2025](https://texsaw.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://texsaw.org/)  
-    **比赛名称** : [Texas Security Awareness Week 2025](https://texsaw.org/)  
+??? Quote "[Texas Security Awareness Week 2025](https://ctf.texsaw.org/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.texsaw.org/)  
+    **比赛名称** : [Texas Security Awareness Week 2025](https://ctf.texsaw.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-04-12 03:00:00 - 2025-04-14 03:00:00 UTC+8  
     **比赛权重** : 31.00  
