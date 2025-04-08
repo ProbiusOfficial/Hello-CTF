@@ -15,15 +15,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Dreamhack Invitational 2025](https://dreamhack.io/)"  
-    [![](https://ctftime.org/media/events/e66fed5653581908ac8e93f82ad73cae.jpg){ width="200" align=left }](https://dreamhack.io/)  
-    **比赛名称** : [Dreamhack Invitational 2025](https://dreamhack.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-08 08:00:00 - 2025-04-09 05:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
-    **添加日历** : https://ctftime.org/event/2628.ics  
-    
 ??? Quote "[1753CTF 2025](https://1753ctf.com/)"  
     [![](https://ctftime.org/media/events/badge_1.png){ width="200" align=left }](https://1753ctf.com/)  
     **比赛名称** : [1753CTF 2025](https://1753ctf.com/)  
