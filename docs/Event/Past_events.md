@@ -42,6 +42,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Dreamhack Invitational 2025](https://dreamhack.io/)"  
+    [![](https://ctftime.org/media/events/e66fed5653581908ac8e93f82ad73cae.jpg){ width="200" align=left }](https://dreamhack.io/)  
+    **比赛名称** : [Dreamhack Invitational 2025](https://dreamhack.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-08 08:00:00 - 2025-04-09 05:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
+    **添加日历** : https://ctftime.org/event/2628.ics  
+    
 ??? Quote "[Ulisse CTF 2025](https://2025.ulis.se/)"  
     [![](https://ctftime.org/media/events/logo_640x640.jpg){ width="200" align=left }](https://2025.ulis.se/)  
     **比赛名称** : [Ulisse CTF 2025](https://2025.ulis.se/)  
@@ -932,13 +941,4 @@ comments: true
     **比赛权重** : 49.48  
     **赛事主办** : InfoSecIITR (https://ctftime.org/team/16691)  
     **添加日历** : https://ctftime.org/event/2540.ics  
-    
-??? Quote "[0CTF 2024](https://ctf.0ops.sjtu.cn/)"  
-    [![](https://ctftime.org/media/events/0ctf.png){ width="200" align=left }](https://ctf.0ops.sjtu.cn/)  
-    **比赛名称** : [0CTF 2024](https://ctf.0ops.sjtu.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-12-21 10:00:00 - 2024-12-23 10:00:00 UTC+8  
-    **比赛权重** : 100.00  
-    **赛事主办** : 0ops (https://ctftime.org/team/4419)  
-    **添加日历** : https://ctftime.org/event/2448.ics  
     
