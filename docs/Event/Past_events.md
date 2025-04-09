@@ -389,7 +389,7 @@ comments: true
     **比赛名称** : [K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-03-15 21:00:00 - 2025-03-16 21:00:00 UTC+8  
-    **比赛权重** : 18.91  
+    **比赛权重** : 18.52  
     **赛事主办** : K!nd4SUS (https://ctftime.org/team/150337)  
     **添加日历** : https://ctftime.org/event/2703.ics  
     
