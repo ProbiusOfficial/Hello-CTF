@@ -583,9 +583,9 @@ hide:
                 **赛事主办** : NOPS (https://ctftime.org/team/4056)  
                 **添加日历** : https://ctftime.org/event/2486.ics  
                 
-            ??? Quote "[Internet Festival 2025 CTF Quals](https://ifctf.fibonhack.it/)"  
+            ??? Quote "[[POSTPONED] Internet Festival 2025 CTF Quals](https://ifctf.fibonhack.it/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ifctf.fibonhack.it/)  
-                **比赛名称** : [Internet Festival 2025 CTF Quals](https://ifctf.fibonhack.it/)  
+                **比赛名称** : [[POSTPONED] Internet Festival 2025 CTF Quals](https://ifctf.fibonhack.it/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-05-31 19:00:00 - 2025-06-01 19:00:00 UTC+8  
                 **比赛权重** : 0.00  
