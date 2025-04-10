@@ -326,7 +326,7 @@ hide:
                 [![](https://ctftime.org/media/events/Sans_titre.ico){ width="200" align=left }](https://thcon.party/)  
                 **比赛名称** : [THCon 2K25 CTF](https://thcon.party/)  
                 **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-12 16:00:00 - 2025-04-12 16:00:00 UTC+8  
+                **比赛时间** : 2025-04-12 16:00:00 - 2025-04-13 16:00:00 UTC+8  
                 **比赛权重** : 23.65  
                 **赛事主办** : FirewallFoxes, pony7 (https://ctftime.org/team/278913, https://ctftime.org/team/20769)  
                 **添加日历** : https://ctftime.org/event/2660.ics  
