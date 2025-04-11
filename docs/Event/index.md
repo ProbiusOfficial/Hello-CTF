@@ -295,15 +295,6 @@ hide:
                 **其他说明** : TGCTF 2025（杭州师范大学第六届网络与信息安全竞赛）由杭州师范大学主办，报名截止时间为2025年4月11日21点，比赛时间为4月12号9点至4月13号21点，共36小时。  
                 
         === "国外赛事"
-            ??? Quote "[Texas Security Awareness Week 2025](https://ctf.texsaw.org/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.texsaw.org/)  
-                **比赛名称** : [Texas Security Awareness Week 2025](https://ctf.texsaw.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-12 03:00:00 - 2025-04-14 03:00:00 UTC+8  
-                **比赛权重** : 31.00  
-                **赛事主办** : CSG (https://ctftime.org/team/333)  
-                **添加日历** : https://ctftime.org/event/2736.ics  
-                
             ??? Quote "[DEF CON CTF Qualifier 2025](https://nautilus.institute/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://nautilus.institute/)  
                 **比赛名称** : [DEF CON CTF Qualifier 2025](https://nautilus.institute/)  
@@ -860,6 +851,15 @@ hide:
                 **比赛权重** : 34.82  
                 **赛事主办** : 1753c (https://ctftime.org/team/178287)  
                 **添加日历** : https://ctftime.org/event/2639.ics  
+                
+            ??? Quote "[Texas Security Awareness Week 2025](https://ctf.texsaw.org/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.texsaw.org/)  
+                **比赛名称** : [Texas Security Awareness Week 2025](https://ctf.texsaw.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-04-12 03:00:00 - 2025-04-14 03:00:00 UTC+8  
+                **比赛权重** : 31.00  
+                **赛事主办** : CSG (https://ctftime.org/team/333)  
+                **添加日历** : https://ctftime.org/event/2736.ics  
                 
     === "*已经结束*"
         === "国内赛事"
