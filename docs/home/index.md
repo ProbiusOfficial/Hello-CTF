@@ -60,15 +60,6 @@ hide:
             **其他说明** : TGCTF 2025（杭州师范大学第六届网络与信息安全竞赛）由杭州师范大学主办，报名截止时间为2025年4月11日21点，比赛时间为4月12号9点至4月13号21点，共36小时。  
                 
     === "国外比赛"
-        ??? Quote "[1753CTF 2025](https://1753ctf.com/)"  
-            [![](https://ctftime.org/media/events/badge_1.png){ width="200" align=left }](https://1753ctf.com/)  
-            **比赛名称** : [1753CTF 2025](https://1753ctf.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-04-12 01:00:00 - 2025-04-13 01:00:00 UTC+8  
-            **比赛权重** : 34.82  
-            **赛事主办** : 1753c (https://ctftime.org/team/178287)  
-            **添加日历** : https://ctftime.org/event/2639.ics  
-            
         ??? Quote "[Texas Security Awareness Week 2025](https://ctf.texsaw.org/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://ctf.texsaw.org/)  
             **比赛名称** : [Texas Security Awareness Week 2025](https://ctf.texsaw.org/)  
@@ -95,6 +86,15 @@ hide:
             **比赛权重** : 23.65  
             **赛事主办** : FirewallFoxes, pony7 (https://ctftime.org/team/278913, https://ctftime.org/team/20769)  
             **添加日历** : https://ctftime.org/event/2660.ics  
+            
+        ??? Quote "[Midnight Flag CTF - INSURRECTION](https://midnightflag.fr/)"  
+            [![](https://ctftime.org/media/events/logo-midnightflag_500.png){ width="200" align=left }](https://midnightflag.fr/)  
+            **比赛名称** : [Midnight Flag CTF - INSURRECTION](https://midnightflag.fr/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-04-12 16:00:00 - 2025-04-14 00:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
+            **添加日历** : https://ctftime.org/event/2687.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
