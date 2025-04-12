@@ -835,15 +835,6 @@ hide:
                 **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
                 **添加日历** : https://ctftime.org/event/2687.ics  
                 
-            ??? Quote "[PwnMe CTF Finals 2025](https://pwnme.fr/)"  
-                [![](https://ctftime.org/media/events/PWNME_ReseauxPP1.jpg){ width="200" align=left }](https://pwnme.fr/)  
-                **比赛名称** : [PwnMe CTF Finals 2025](https://pwnme.fr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-12 18:00:00 - 2025-04-13 04:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
-                **添加日历** : https://ctftime.org/event/2659.ics  
-                
             ??? Quote "[SummitCTF 2025](https://summitctf.org/)"  
                 [![](https://ctftime.org/media/events/Summitctf.png){ width="200" align=left }](https://summitctf.org/)  
                 **比赛名称** : [SummitCTF 2025](https://summitctf.org/)  
@@ -884,6 +875,15 @@ hide:
                 **其他说明** : HGAME 2025由杭州电子科技大学信息安全协会 Vidar-Team 主办，为个人解题赛。比赛时间为2025年2月3日至2025年2月17日，赛题复现开放至2月24日。报名从2025年1月20日开始，比赛进行期间可随时注册参赛。校外群：576834793  
                 
         === "国外赛事"
+            ??? Quote "[PwnMe CTF Finals 2025](https://pwnme.fr/)"  
+                [![](https://ctftime.org/media/events/PWNME_ReseauxPP1.jpg){ width="200" align=left }](https://pwnme.fr/)  
+                **比赛名称** : [PwnMe CTF Finals 2025](https://pwnme.fr/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-04-12 18:00:00 - 2025-04-13 04:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
+                **添加日历** : https://ctftime.org/event/2659.ics  
+                
             ??? Quote "[1753CTF 2025](https://1753ctf.com/)"  
                 [![](https://ctftime.org/media/events/badge_1.png){ width="200" align=left }](https://1753ctf.com/)  
                 **比赛名称** : [1753CTF 2025](https://1753ctf.com/)  
@@ -1774,15 +1774,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : Wargames.MY (https://ctftime.org/team/86069)  
                 **添加日历** : https://ctftime.org/event/2597.ics  
-                
-            ??? Quote "[0xL4ugh CTF](https://0xl4ugh.ctf.ae/)"  
-                [![](https://ctftime.org/media/events/logo_101.png){ width="200" align=left }](https://0xl4ugh.ctf.ae/)  
-                **比赛名称** : [0xL4ugh CTF](https://0xl4ugh.ctf.ae/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-27 20:00:00 - 2024-12-28 20:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
-                **添加日历** : https://ctftime.org/event/2587.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
