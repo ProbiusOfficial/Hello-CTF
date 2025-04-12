@@ -5,25 +5,10 @@ comments: true
 
 ## 国内赛事
 
-??? Quote "TGCTF 2025"  
-    **比赛名称** : [TGCTF 2025](https://tgctf.woooo.tech/)  
-    **比赛类型** : 线上Jeopardy解题赛  
-    **报名时间** : 2025年04月12日 09:00 - 2025年04月11日 21:00  
-    **比赛时间** : 2025年04月12日 09:00 - 2025年04月13日 21:00  
-    **其他说明** : TGCTF 2025（杭州师范大学第六届网络与信息安全竞赛）由杭州师范大学主办，报名截止时间为2025年4月11日21点，比赛时间为4月12号9点至4月13号21点，共36小时。  
-    
+
 
 ## 国际赛事
 
-??? Quote "[DEF CON CTF Qualifier 2025](https://nautilus.institute/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://nautilus.institute/)  
-    **比赛名称** : [DEF CON CTF Qualifier 2025](https://nautilus.institute/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-12 08:00:00 - 2025-04-14 08:00:00 UTC+8  
-    **比赛权重** : 69.44  
-    **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
-    **添加日历** : https://ctftime.org/event/2604.ics  
-    
 ??? Quote "[THCon 2K25 CTF](https://thcon.party/)"  
     [![](https://ctftime.org/media/events/Sans_titre.ico){ width="200" align=left }](https://thcon.party/)  
     **比赛名称** : [THCon 2K25 CTF](https://thcon.party/)  
