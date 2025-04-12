@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "SummitCTF 2025",
-        "比赛时间": "2025-04-12 22:00:00 - 2025-04-13 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2662.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://summitctf.org/",
-        "比赛标志": "https://ctftime.org/media/events/Summitctf.png",
-        "比赛权重": "0.00",
-        "赛事主办": "CyberVT (https://ctftime.org/team/173872)",
-        "比赛ID": "1249",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "DawgCTF 2025",
         "比赛时间": "2025-04-18 20:00:00 - 2025-04-20 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2651.ics",
@@ -729,6 +717,18 @@
         "比赛权重": "0.00",
         "赛事主办": "PHREAKS 2600 (https://ctftime.org/team/200877)",
         "比赛ID": "1141",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "SummitCTF 2025",
+        "比赛时间": "2025-04-12 22:00:00 - 2025-04-13 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2662.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://summitctf.org/",
+        "比赛标志": "https://ctftime.org/media/events/Summitctf.png",
+        "比赛权重": "0",
+        "赛事主办": "CyberVT (https://ctftime.org/team/173872)",
+        "比赛ID": "1249",
         "比赛状态": "nowrunning"
     },
     {

@@ -101,3 +101,12 @@ comments: true
     **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
     **添加日历** : https://ctftime.org/event/2659.ics  
     
+??? Quote "[SummitCTF 2025](https://summitctf.org/)"  
+    [![](https://ctftime.org/media/events/Summitctf.png){ width="200" align=left }](https://summitctf.org/)  
+    **比赛名称** : [SummitCTF 2025](https://summitctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-12 22:00:00 - 2025-04-13 22:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : CyberVT (https://ctftime.org/team/173872)  
+    **添加日历** : https://ctftime.org/event/2662.ics  
+    
