@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[PwnMe CTF Finals 2025](https://pwnme.fr/)"  
-            [![](https://ctftime.org/media/events/PWNME_ReseauxPP1.jpg){ width="200" align=left }](https://pwnme.fr/)  
-            **比赛名称** : [PwnMe CTF Finals 2025](https://pwnme.fr/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-04-12 18:00:00 - 2025-04-13 04:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
-            **添加日历** : https://ctftime.org/event/2659.ics  
-            
         ??? Quote "[SummitCTF 2025](https://summitctf.org/)"  
             [![](https://ctftime.org/media/events/Summitctf.png){ width="200" align=left }](https://summitctf.org/)  
             **比赛名称** : [SummitCTF 2025](https://summitctf.org/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : hackpack (https://ctftime.org/team/25905)  
             **添加日历** : https://ctftime.org/event/2743.ics  
+            
+        ??? Quote "[UMassCTF 2025](https://ctf.umasscybersec.org/)"  
+            [![](https://ctftime.org/media/events/889a1e484f0b51dd3d865b3a53b26200_1.jpg){ width="200" align=left }](https://ctf.umasscybersec.org/)  
+            **比赛名称** : [UMassCTF 2025](https://ctf.umasscybersec.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-04-19 02:00:00 - 2025-04-21 08:00:00 UTC+8  
+            **比赛权重** : 48.38  
+            **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
+            **添加日历** : https://ctftime.org/event/2653.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

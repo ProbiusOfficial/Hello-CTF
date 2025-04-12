@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[PwnMe CTF Finals 2025](https://pwnme.fr/)"  
-                [![](https://ctftime.org/media/events/PWNME_ReseauxPP1.jpg){ width="200" align=left }](https://pwnme.fr/)  
-                **比赛名称** : [PwnMe CTF Finals 2025](https://pwnme.fr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-12 18:00:00 - 2025-04-13 04:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
-                **添加日历** : https://ctftime.org/event/2659.ics  
-                
             ??? Quote "[SummitCTF 2025](https://summitctf.org/)"  
                 [![](https://ctftime.org/media/events/Summitctf.png){ width="200" align=left }](https://summitctf.org/)  
                 **比赛名称** : [SummitCTF 2025](https://summitctf.org/)  
@@ -861,6 +852,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
                 **添加日历** : https://ctftime.org/event/2687.ics  
+                
+            ??? Quote "[PwnMe CTF Finals 2025](https://pwnme.fr/)"  
+                [![](https://ctftime.org/media/events/PWNME_ReseauxPP1.jpg){ width="200" align=left }](https://pwnme.fr/)  
+                **比赛名称** : [PwnMe CTF Finals 2025](https://pwnme.fr/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-04-12 18:00:00 - 2025-04-13 04:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
+                **添加日历** : https://ctftime.org/event/2659.ics  
                 
     === "*已经结束*"
         === "国内赛事"
