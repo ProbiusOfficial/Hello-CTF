@@ -35,6 +35,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[1753CTF 2025](https://1753ctf.com/)"  
+    [![](https://ctftime.org/media/events/badge_1.png){ width="200" align=left }](https://1753ctf.com/)  
+    **比赛名称** : [1753CTF 2025](https://1753ctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-12 01:00:00 - 2025-04-13 01:00:00 UTC+8  
+    **比赛权重** : 34.82  
+    **赛事主办** : 1753c (https://ctftime.org/team/178287)  
+    **添加日历** : https://ctftime.org/event/2639.ics  
+    
 ??? Quote "[Dreamhack Invitational 2025](https://dreamhack.io/)"  
     [![](https://ctftime.org/media/events/e66fed5653581908ac8e93f82ad73cae.jpg){ width="200" align=left }](https://dreamhack.io/)  
     **比赛名称** : [Dreamhack Invitational 2025](https://dreamhack.io/)  
@@ -925,13 +934,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
     **添加日历** : https://ctftime.org/event/2587.ics  
-    
-??? Quote "[BackdoorCTF 2024](https://backdoor.infoseciitr.in/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://backdoor.infoseciitr.in/)  
-    **比赛名称** : [BackdoorCTF 2024](https://backdoor.infoseciitr.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-12-22 20:00:00 - 2024-12-23 20:00:00 UTC+8  
-    **比赛权重** : 49.48  
-    **赛事主办** : InfoSecIITR (https://ctftime.org/team/16691)  
-    **添加日历** : https://ctftime.org/event/2540.ics  
     
