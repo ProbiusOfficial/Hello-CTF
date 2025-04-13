@@ -648,18 +648,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Texas Security Awareness Week 2025",
-        "比赛时间": "2025-04-12 03:00:00 - 2025-04-14 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2736.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.texsaw.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "31.00",
-        "赛事主办": "CSG (https://ctftime.org/team/333)",
-        "比赛ID": "926",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "DEF CON CTF Qualifier 2025",
         "比赛时间": "2025-04-12 08:00:00 - 2025-04-14 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2604.ics",
@@ -717,6 +705,18 @@
         "比赛权重": "0",
         "赛事主办": "Midnight Flag (https://ctftime.org/team/179110)",
         "比赛ID": "761",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Texas Security Awareness Week 2025",
+        "比赛时间": "2025-04-12 03:00:00 - 2025-04-14 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2736.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.texsaw.org/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "31.00",
+        "赛事主办": "CSG (https://ctftime.org/team/333)",
+        "比赛ID": "926",
         "比赛状态": "past"
     },
     {
@@ -1857,18 +1857,6 @@
         "比赛权重": "34.30",
         "赛事主办": "IrisSec (https://ctftime.org/team/127034)",
         "比赛ID": "841",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "AlpacaHack Round 8 (Rev)",
-        "比赛时间": "2024-12-30 11:00:00 - 2024-12-30 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2590.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://alpacahack.com/",
-        "比赛标志": "https://ctftime.org/media/events/dark_512_2.png",
-        "比赛权重": "0",
-        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
-        "比赛ID": "1163",
         "比赛状态": "past"
     }
 ]
