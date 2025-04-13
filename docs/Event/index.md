@@ -812,15 +812,6 @@ hide:
                 **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
                 **添加日历** : https://ctftime.org/event/2687.ics  
                 
-            ??? Quote "[SummitCTF 2025](https://summitctf.org/)"  
-                [![](https://ctftime.org/media/events/Summitctf.png){ width="200" align=left }](https://summitctf.org/)  
-                **比赛名称** : [SummitCTF 2025](https://summitctf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-12 22:00:00 - 2025-04-13 22:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : CyberVT (https://ctftime.org/team/173872)  
-                **添加日历** : https://ctftime.org/event/2662.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[TGCTF 2025](https://tgctf.woooo.tech/)"  
@@ -866,6 +857,15 @@ hide:
                 **其他说明** : HGAME 2025由杭州电子科技大学信息安全协会 Vidar-Team 主办，为个人解题赛。比赛时间为2025年2月3日至2025年2月17日，赛题复现开放至2月24日。报名从2025年1月20日开始，比赛进行期间可随时注册参赛。校外群：576834793  
                 
         === "国外赛事"
+            ??? Quote "[SummitCTF 2025](https://summitctf.org/)"  
+                [![](https://ctftime.org/media/events/Summitctf.png){ width="200" align=left }](https://summitctf.org/)  
+                **比赛名称** : [SummitCTF 2025](https://summitctf.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-04-12 22:00:00 - 2025-04-13 22:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : CyberVT (https://ctftime.org/team/173872)  
+                **添加日历** : https://ctftime.org/event/2662.ics  
+                
             ??? Quote "[PwnMe CTF Finals 2025](https://pwnme.fr/)"  
                 [![](https://ctftime.org/media/events/PWNME_ReseauxPP1.jpg){ width="200" align=left }](https://pwnme.fr/)  
                 **比赛名称** : [PwnMe CTF Finals 2025](https://pwnme.fr/)  
@@ -1756,15 +1756,6 @@ hide:
                 **比赛权重** : 92.75  
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/2403.ics  
-                
-            ??? Quote "[hxp 38C3 CTF](https://2024.ctf.link/)"  
-                [![](https://ctftime.org/media/events/hxp-38c3.png){ width="200" align=left }](https://2024.ctf.link/)  
-                **比赛名称** : [hxp 38C3 CTF](https://2024.ctf.link/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-28 04:00:00 - 2024-12-30 04:00:00 UTC+8  
-                **比赛权重** : 98.14  
-                **赛事主办** : hxp (https://ctftime.org/team/585)  
-                **添加日历** : https://ctftime.org/event/2437.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
