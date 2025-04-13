@@ -76,6 +76,15 @@ comments: true
     **赛事主办** : FirewallFoxes, pony7 (https://ctftime.org/team/278913, https://ctftime.org/team/20769)  
     **添加日历** : https://ctftime.org/event/2660.ics  
     
+??? Quote "[Midnight Flag CTF - INSURRECTION](https://midnightflag.fr/)"  
+    [![](https://ctftime.org/media/events/logo-midnightflag_500.png){ width="200" align=left }](https://midnightflag.fr/)  
+    **比赛名称** : [Midnight Flag CTF - INSURRECTION](https://midnightflag.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-12 16:00:00 - 2025-04-14 00:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
+    **添加日历** : https://ctftime.org/event/2687.ics  
+    
 ??? Quote "[1753CTF 2025](https://1753ctf.com/)"  
     [![](https://ctftime.org/media/events/badge_1.png){ width="200" align=left }](https://1753ctf.com/)  
     **比赛名称** : [1753CTF 2025](https://1753ctf.com/)  
@@ -939,13 +948,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
     **添加日历** : https://ctftime.org/event/2590.ics  
-    
-??? Quote "[ASIS CTF Finals 2024](https://asisctf.com/)"  
-    [![](https://ctftime.org/media/events/asis_logo.png){ width="200" align=left }](https://asisctf.com/)  
-    **比赛名称** : [ASIS CTF Finals 2024](https://asisctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2024-12-28 22:00:00 - 2024-12-29 22:00:00 UTC+8  
-    **比赛权重** : 92.75  
-    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-    **添加日历** : https://ctftime.org/event/2403.ics  
     

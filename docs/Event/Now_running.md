@@ -51,12 +51,3 @@ comments: true
     **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
     **添加日历** : https://ctftime.org/event/2604.ics  
     
-??? Quote "[Midnight Flag CTF - INSURRECTION](https://midnightflag.fr/)"  
-    [![](https://ctftime.org/media/events/logo-midnightflag_500.png){ width="200" align=left }](https://midnightflag.fr/)  
-    **比赛名称** : [Midnight Flag CTF - INSURRECTION](https://midnightflag.fr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-12 16:00:00 - 2025-04-14 00:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
-    **添加日历** : https://ctftime.org/event/2687.ics  
-    
