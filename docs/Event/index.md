@@ -817,15 +817,6 @@ hide:
                 **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
                 **添加日历** : https://ctftime.org/event/2604.ics  
                 
-            ??? Quote "[THCon 2K25 CTF](https://thcon.party/)"  
-                [![](https://ctftime.org/media/events/Sans_titre.ico){ width="200" align=left }](https://thcon.party/)  
-                **比赛名称** : [THCon 2K25 CTF](https://thcon.party/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-12 16:00:00 - 2025-04-13 16:00:00 UTC+8  
-                **比赛权重** : 23.65  
-                **赛事主办** : FirewallFoxes, pony7 (https://ctftime.org/team/278913, https://ctftime.org/team/20769)  
-                **添加日历** : https://ctftime.org/event/2660.ics  
-                
             ??? Quote "[Midnight Flag CTF - INSURRECTION](https://midnightflag.fr/)"  
                 [![](https://ctftime.org/media/events/logo-midnightflag_500.png){ width="200" align=left }](https://midnightflag.fr/)  
                 **比赛名称** : [Midnight Flag CTF - INSURRECTION](https://midnightflag.fr/)  
@@ -883,6 +874,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
                 **添加日历** : https://ctftime.org/event/2659.ics  
+                
+            ??? Quote "[THCon 2K25 CTF](https://thcon.party/)"  
+                [![](https://ctftime.org/media/events/Sans_titre.ico){ width="200" align=left }](https://thcon.party/)  
+                **比赛名称** : [THCon 2K25 CTF](https://thcon.party/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-04-12 16:00:00 - 2025-04-13 16:00:00 UTC+8  
+                **比赛权重** : 23.65  
+                **赛事主办** : FirewallFoxes, pony7 (https://ctftime.org/team/278913, https://ctftime.org/team/20769)  
+                **添加日历** : https://ctftime.org/event/2660.ics  
                 
             ??? Quote "[1753CTF 2025](https://1753ctf.com/)"  
                 [![](https://ctftime.org/media/events/badge_1.png){ width="200" align=left }](https://1753ctf.com/)  
@@ -1765,15 +1765,6 @@ hide:
                 **比赛权重** : 98.14  
                 **赛事主办** : hxp (https://ctftime.org/team/585)  
                 **添加日历** : https://ctftime.org/event/2437.ics  
-                
-            ??? Quote "[Wargames.MY CTF 2024](https://ctf2024.wargames.my/)"  
-                [![](https://ctftime.org/media/events/WGMY24-PFP1.png){ width="200" align=left }](https://ctf2024.wargames.my/)  
-                **比赛名称** : [Wargames.MY CTF 2024](https://ctf2024.wargames.my/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2024-12-28 00:00:00 - 2024-12-29 00:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : Wargames.MY (https://ctftime.org/team/86069)  
-                **添加日历** : https://ctftime.org/event/2597.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

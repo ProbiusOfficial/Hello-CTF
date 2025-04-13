@@ -672,18 +672,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "THCon 2K25 CTF",
-        "比赛时间": "2025-04-12 16:00:00 - 2025-04-13 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2660.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://thcon.party/",
-        "比赛标志": "https://ctftime.org/media/events/Sans_titre.ico",
-        "比赛权重": "23.65",
-        "赛事主办": "FirewallFoxes, pony7 (https://ctftime.org/team/278913, https://ctftime.org/team/20769)",
-        "比赛ID": "181",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Midnight Flag CTF - INSURRECTION",
         "比赛时间": "2025-04-12 16:00:00 - 2025-04-14 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2687.ics",
@@ -717,6 +705,18 @@
         "比赛权重": "0.00",
         "赛事主办": "PHREAKS 2600 (https://ctftime.org/team/200877)",
         "比赛ID": "1141",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "THCon 2K25 CTF",
+        "比赛时间": "2025-04-12 16:00:00 - 2025-04-13 16:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2660.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://thcon.party/",
+        "比赛标志": "https://ctftime.org/media/events/Sans_titre.ico",
+        "比赛权重": "23.65",
+        "赛事主办": "FirewallFoxes, pony7 (https://ctftime.org/team/278913, https://ctftime.org/team/20769)",
+        "比赛ID": "181",
         "比赛状态": "past"
     },
     {
@@ -1893,18 +1893,6 @@
         "比赛权重": "98.14",
         "赛事主办": "hxp (https://ctftime.org/team/585)",
         "比赛ID": "120",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Wargames.MY CTF 2024",
-        "比赛时间": "2024-12-28 00:00:00 - 2024-12-29 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2597.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf2024.wargames.my/",
-        "比赛标志": "https://ctftime.org/media/events/WGMY24-PFP1.png",
-        "比赛权重": "25.00",
-        "赛事主办": "Wargames.MY (https://ctftime.org/team/86069)",
-        "比赛ID": "1038",
         "比赛状态": "past"
     }
 ]
