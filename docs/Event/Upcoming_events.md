@@ -54,15 +54,6 @@ comments: true
     **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
     **添加日历** : https://ctftime.org/event/2741.ics  
     
-??? Quote "[Midnight Sun CTF 2025 Quals](https://play.midnightsunctf.com/)"  
-    [![](https://ctftime.org/media/events/matrix_1.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
-    **比赛名称** : [Midnight Sun CTF 2025 Quals](https://play.midnightsunctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-19 20:00:00 - 2025-04-20 20:00:00 UTC+8  
-    **比赛权重** : 53.00  
-    **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-    **添加日历** : https://ctftime.org/event/2632.ics  
-    
 ??? Quote "[CTF@CIT 2025](https://ctf.cyber-cit.club/)"  
     [![](https://ctftime.org/media/events/CTF-CIT-ctftime_2.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
     **比赛名称** : [CTF@CIT 2025](https://ctf.cyber-cit.club/)  
@@ -98,6 +89,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
     **添加日历** : https://ctftime.org/event/2719.ics  
+    
+??? Quote "[Midnight Sun CTF 2025 Quals](https://play.midnightsunctf.com/)"  
+    [![](https://ctftime.org/media/events/matrix_1.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
+    **比赛名称** : [Midnight Sun CTF 2025 Quals](https://play.midnightsunctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-26 20:00:00 - 2025-04-27 20:00:00 UTC+8  
+    **比赛权重** : 53.00  
+    **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
+    **添加日历** : https://ctftime.org/event/2632.ics  
     
 ??? Quote "[AlpacaHack Round 11 (Web)](https://alpacahack.com/ctfs/round-11)"  
     [![](https://ctftime.org/media/events/ctftime_10.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-11)  

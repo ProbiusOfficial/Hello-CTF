@@ -334,15 +334,6 @@ hide:
                 **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
                 **添加日历** : https://ctftime.org/event/2741.ics  
                 
-            ??? Quote "[Midnight Sun CTF 2025 Quals](https://play.midnightsunctf.com/)"  
-                [![](https://ctftime.org/media/events/matrix_1.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
-                **比赛名称** : [Midnight Sun CTF 2025 Quals](https://play.midnightsunctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-19 20:00:00 - 2025-04-20 20:00:00 UTC+8  
-                **比赛权重** : 53.00  
-                **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-                **添加日历** : https://ctftime.org/event/2632.ics  
-                
             ??? Quote "[CTF@CIT 2025](https://ctf.cyber-cit.club/)"  
                 [![](https://ctftime.org/media/events/CTF-CIT-ctftime_2.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
                 **比赛名称** : [CTF@CIT 2025](https://ctf.cyber-cit.club/)  
@@ -378,6 +369,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
                 **添加日历** : https://ctftime.org/event/2719.ics  
+                
+            ??? Quote "[Midnight Sun CTF 2025 Quals](https://play.midnightsunctf.com/)"  
+                [![](https://ctftime.org/media/events/matrix_1.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
+                **比赛名称** : [Midnight Sun CTF 2025 Quals](https://play.midnightsunctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-04-26 20:00:00 - 2025-04-27 20:00:00 UTC+8  
+                **比赛权重** : 53.00  
+                **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
+                **添加日历** : https://ctftime.org/event/2632.ics  
                 
             ??? Quote "[AlpacaHack Round 11 (Web)](https://alpacahack.com/ctfs/round-11)"  
                 [![](https://ctftime.org/media/events/ctftime_10.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-11)  
@@ -785,15 +785,6 @@ hide:
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2588.ics  
                 
-            ??? Quote "[DEF CON CTF Qualifier 2025](https://nautilus.institute/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://nautilus.institute/)  
-                **比赛名称** : [DEF CON CTF Qualifier 2025](https://nautilus.institute/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-12 08:00:00 - 2025-04-14 08:00:00 UTC+8  
-                **比赛权重** : 69.44  
-                **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
-                **添加日历** : https://ctftime.org/event/2604.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[TGCTF 2025](https://tgctf.woooo.tech/)"  
@@ -874,6 +865,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
                 **添加日历** : https://ctftime.org/event/2687.ics  
+                
+            ??? Quote "[DEF CON CTF Qualifier 2025](https://nautilus.institute/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://nautilus.institute/)  
+                **比赛名称** : [DEF CON CTF Qualifier 2025](https://nautilus.institute/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-04-12 08:00:00 - 2025-04-14 08:00:00 UTC+8  
+                **比赛权重** : 69.44  
+                **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
+                **添加日历** : https://ctftime.org/event/2604.ics  
                 
             ??? Quote "[Texas Security Awareness Week 2025](https://ctf.texsaw.org/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.texsaw.org/)  
@@ -1729,15 +1729,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : GoIda CTF ORG (https://ctftime.org/team/361741)  
                 **添加日历** : https://ctftime.org/event/2611.ics  
-                
-            ??? Quote "[IrisCTF 2025](https://2025.irisc.tf/)"  
-                [![](https://ctftime.org/media/events/IrisSec.png){ width="200" align=left }](https://2025.irisc.tf/)  
-                **比赛名称** : [IrisCTF 2025](https://2025.irisc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-01-04 08:00:00 - 2025-01-06 08:00:00 UTC+8  
-                **比赛权重** : 34.30  
-                **赛事主办** : IrisSec (https://ctftime.org/team/127034)  
-                **添加日历** : https://ctftime.org/event/2503.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

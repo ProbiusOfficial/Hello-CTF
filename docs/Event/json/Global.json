@@ -60,18 +60,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Midnight Sun CTF 2025 Quals",
-        "比赛时间": "2025-04-19 20:00:00 - 2025-04-20 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2632.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://play.midnightsunctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/matrix_1.png",
-        "比赛权重": "53.00",
-        "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
-        "比赛ID": "246",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "CTF@CIT 2025",
         "比赛时间": "2025-04-26 05:00:00 - 2025-04-28 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2759.ics",
@@ -117,6 +105,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Sejong City Hall (https://ctftime.org/team/214900)",
         "比赛ID": "903",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Midnight Sun CTF 2025 Quals",
+        "比赛时间": "2025-04-26 20:00:00 - 2025-04-27 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2632.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://play.midnightsunctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/matrix_1.png",
+        "比赛权重": "53.00",
+        "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
+        "比赛ID": "246",
         "比赛状态": "oncoming"
     },
     {
@@ -648,18 +648,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "DEF CON CTF Qualifier 2025",
-        "比赛时间": "2025-04-12 08:00:00 - 2025-04-14 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2604.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nautilus.institute/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "69.44",
-        "赛事主办": "Nautilus Institute (https://ctftime.org/team/181536)",
-        "比赛ID": "1",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "SummitCTF 2025",
         "比赛时间": "2025-04-12 22:00:00 - 2025-04-13 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2662.ics",
@@ -705,6 +693,18 @@
         "比赛权重": "0",
         "赛事主办": "Midnight Flag (https://ctftime.org/team/179110)",
         "比赛ID": "761",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "DEF CON CTF Qualifier 2025",
+        "比赛时间": "2025-04-12 08:00:00 - 2025-04-14 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2604.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nautilus.institute/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "69.44",
+        "赛事主办": "Nautilus Institute (https://ctftime.org/team/181536)",
+        "比赛ID": "1",
         "比赛状态": "past"
     },
     {
@@ -1845,18 +1845,6 @@
         "比赛权重": "0.00",
         "赛事主办": "GoIda CTF ORG (https://ctftime.org/team/361741)",
         "比赛ID": "1206",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "IrisCTF 2025",
-        "比赛时间": "2025-01-04 08:00:00 - 2025-01-06 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2503.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2025.irisc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/IrisSec.png",
-        "比赛权重": "34.30",
-        "赛事主办": "IrisSec (https://ctftime.org/team/127034)",
-        "比赛ID": "841",
         "比赛状态": "past"
     }
 ]
