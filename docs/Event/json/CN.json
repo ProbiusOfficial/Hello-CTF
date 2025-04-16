@@ -3,6 +3,26 @@
     "data": {
         "result": [
             {
+                "name": "ACTF 2025",
+                "info_confirmed": 1,
+                "mid_join": 0,
+                "link": "https://actf2025.xctf.org.cn/",
+                "status": "即将开始",
+                "is_reg": 0,
+                "limit": "0",
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2025年04月16日 08:59",
+                "reg_time_end": "2025年04月26日 08:59",
+                "comp_time_start": "2025年04月26日 09:00",
+                "comp_time_end": "2025年04月27日 09:00",
+                "organizer": "XCTF联赛",
+                "contac": {
+                    "QQ群": "512066352"
+                },
+                "tag": "",
+                "readmore": "ACTF 2025由XCTF联赛主办，比赛时间为2025年4月26日至4月27日，更多信息请访问官方网站。选手可通过QQ群512066352进行沟通交流。"
+            },
+            {
                 "name": "2025年能源网络安全大赛",
                 "info_confirmed": 1,
                 "mid_join": 0,
