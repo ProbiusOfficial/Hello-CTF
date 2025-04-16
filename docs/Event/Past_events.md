@@ -886,6 +886,15 @@ comments: true
     **赛事主办** : Srdnlen (https://ctftime.org/team/83421)  
     **添加日历** : https://ctftime.org/event/2576.ics  
     
+??? Quote "[2025 Embedded Capture the Flag](https://ectf.mitre.org/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ectf.mitre.org/)  
+    **比赛名称** : [2025 Embedded Capture the Flag](https://ectf.mitre.org/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2025-01-16 01:00:00 - 2025-04-17 00:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
+    **添加日历** : https://ctftime.org/event/2542.ics  
+    
 ??? Quote "[TSCCTF 2025](https://ctfd.tscctf.com/)"  
     [![](https://ctftime.org/media/events/TSC_logo_extra_large.png){ width="200" align=left }](https://ctfd.tscctf.com/)  
     **比赛名称** : [TSCCTF 2025](https://ctfd.tscctf.com/)  
@@ -939,13 +948,4 @@ comments: true
     **比赛权重** : 23.90  
     **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
     **添加日历** : https://ctftime.org/event/2570.ics  
-    
-??? Quote "[GoIda CTF](https://goidactf.ru/)"  
-    [![](https://ctftime.org/media/events/goida.jpg){ width="200" align=left }](https://goidactf.ru/)  
-    **比赛名称** : [GoIda CTF](https://goidactf.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-01-07 08:00:00 - 2025-01-10 07:59:59 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : GoIda CTF ORG (https://ctftime.org/team/361741)  
-    **添加日历** : https://ctftime.org/event/2611.ics  
     
