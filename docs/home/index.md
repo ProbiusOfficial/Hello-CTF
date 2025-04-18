@@ -60,15 +60,6 @@ hide:
             **其他说明** : ACTF 2025由XCTF联赛主办，比赛时间为2025年4月26日至4月27日，更多信息请访问官方网站。选手可通过QQ群512066352进行沟通交流。  
                 
     === "国外比赛"
-        ??? Quote "[b01lers CTF 2025](https://b01lersc.tf/)"  
-            [![](https://ctftime.org/media/events/b01lers-griffen_2.png){ width="200" align=left }](https://b01lersc.tf/)  
-            **比赛名称** : [b01lers CTF 2025](https://b01lersc.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-04-19 07:00:00 - 2025-04-21 07:00:00 UTC+8  
-            **比赛权重** : 44.50  
-            **赛事主办** : b01lers (https://ctftime.org/team/11464)  
-            **添加日历** : https://ctftime.org/event/2652.ics  
-            
         ??? Quote "[T-CTF 2025](https://t-ctf.ru/)"  
             [![](https://ctftime.org/media/events/t-ctf.jpg){ width="200" align=left }](https://t-ctf.ru/)  
             **比赛名称** : [T-CTF 2025](https://t-ctf.ru/)  
@@ -95,6 +86,15 @@ hide:
             **比赛权重** : 70.86  
             **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
             **添加日历** : https://ctftime.org/event/2563.ics  
+            
+        ??? Quote "[BSidesSF 2025 CTF](https://ctf.bsidessf.net/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ctf.bsidessf.net/)  
+            **比赛名称** : [BSidesSF 2025 CTF](https://ctf.bsidessf.net/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-04-26 07:00:00 - 2025-04-28 07:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
+            **添加日历** : https://ctftime.org/event/2721.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
