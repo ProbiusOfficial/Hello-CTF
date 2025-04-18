@@ -295,15 +295,6 @@ hide:
                 **其他说明** : ACTF 2025由XCTF联赛主办，比赛时间为2025年4月26日至4月27日，更多信息请访问官方网站。选手可通过QQ群512066352进行沟通交流。  
                 
         === "国外赛事"
-            ??? Quote "[DawgCTF 2025](https://metactf.com/join/dawgctf25)"  
-                [![](https://ctftime.org/media/events/dawgsec_shield-ctftime_2.png){ width="200" align=left }](https://metactf.com/join/dawgctf25)  
-                **比赛名称** : [DawgCTF 2025](https://metactf.com/join/dawgctf25)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-18 20:00:00 - 2025-04-20 20:00:00 UTC+8  
-                **比赛权重** : 69.00  
-                **赛事主办** : UMBC Cyber Dawgs (https://ctftime.org/team/18405)  
-                **添加日历** : https://ctftime.org/event/2651.ics  
-                
             ??? Quote "[UMassCTF 2025](https://ctf.umasscybersec.org/)"  
                 [![](https://ctftime.org/media/events/889a1e484f0b51dd3d865b3a53b26200_1.jpg){ width="200" align=left }](https://ctf.umasscybersec.org/)  
                 **比赛名称** : [UMassCTF 2025](https://ctf.umasscybersec.org/)  
@@ -782,6 +773,15 @@ hide:
                 **赛事主办** : traP (https://ctftime.org/team/62510)  
                 **添加日历** : https://ctftime.org/event/2760.ics  
                 
+            ??? Quote "[DawgCTF 2025](https://metactf.com/join/dawgctf25)"  
+                [![](https://ctftime.org/media/events/dawgsec_shield-ctftime_2.png){ width="200" align=left }](https://metactf.com/join/dawgctf25)  
+                **比赛名称** : [DawgCTF 2025](https://metactf.com/join/dawgctf25)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-04-18 20:00:00 - 2025-04-20 20:00:00 UTC+8  
+                **比赛权重** : 69.00  
+                **赛事主办** : UMBC Cyber Dawgs (https://ctftime.org/team/18405)  
+                **添加日历** : https://ctftime.org/event/2651.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[TGCTF 2025](https://tgctf.woooo.tech/)"  
@@ -818,13 +818,6 @@ hide:
                 **报名时间** : 2025年03月22日 09:00 - 2025年03月22日 08:59  
                 **比赛时间** : 2025年03月22日 09:00 - 2025年03月23日 21:00  
                 **其他说明** : NCTF 2025 由 NCTF 2025 组织委员会主办，比赛时间为 3 月 22 日 9:00 - 3 月 23 日 21:00，共计 36 小时，比赛形式为团队赛，每队 1-4 人，分为校内、校外两个赛道。  
-                
-            ??? Quote "[HGAME 2025](https://hgame.vidar.club/games/2)"  
-                **比赛名称** : [HGAME 2025](https://hgame.vidar.club/games/2)  
-                **比赛类型** : 线上Jeopardy解题赛  
-                **报名时间** : 2025年1月20日 20:00 - 2025年2月17日 19:59  
-                **比赛时间** : 2025年2月3日 20:00 - 2025年2月17日 20:00  
-                **其他说明** : HGAME 2025由杭州电子科技大学信息安全协会 Vidar-Team 主办，为个人解题赛。比赛时间为2025年2月3日至2025年2月17日，赛题复现开放至2月24日。报名从2025年1月20日开始，比赛进行期间可随时注册参赛。校外群：576834793  
                 
         === "国外赛事"
             ??? Quote "[SummitCTF 2025](https://summitctf.org/)"  

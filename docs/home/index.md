@@ -60,15 +60,6 @@ hide:
             **其他说明** : ACTF 2025由XCTF联赛主办，比赛时间为2025年4月26日至4月27日，更多信息请访问官方网站。选手可通过QQ群512066352进行沟通交流。  
                 
     === "国外比赛"
-        ??? Quote "[DawgCTF 2025](https://metactf.com/join/dawgctf25)"  
-            [![](https://ctftime.org/media/events/dawgsec_shield-ctftime_2.png){ width="200" align=left }](https://metactf.com/join/dawgctf25)  
-            **比赛名称** : [DawgCTF 2025](https://metactf.com/join/dawgctf25)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-04-18 20:00:00 - 2025-04-20 20:00:00 UTC+8  
-            **比赛权重** : 69.00  
-            **赛事主办** : UMBC Cyber Dawgs (https://ctftime.org/team/18405)  
-            **添加日历** : https://ctftime.org/event/2651.ics  
-            
         ??? Quote "[UMassCTF 2025](https://ctf.umasscybersec.org/)"  
             [![](https://ctftime.org/media/events/889a1e484f0b51dd3d865b3a53b26200_1.jpg){ width="200" align=left }](https://ctf.umasscybersec.org/)  
             **比赛名称** : [UMassCTF 2025](https://ctf.umasscybersec.org/)  
@@ -95,6 +86,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
             **添加日历** : https://ctftime.org/event/2741.ics  
+            
+        ??? Quote "[CTF@CIT 2025](https://ctf.cyber-cit.club/)"  
+            [![](https://ctftime.org/media/events/CTF-CIT-ctftime_2.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
+            **比赛名称** : [CTF@CIT 2025](https://ctf.cyber-cit.club/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-04-26 05:00:00 - 2025-04-28 03:00:00 UTC+8  
+            **比赛权重** : 24.57  
+            **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
+            **添加日历** : https://ctftime.org/event/2759.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
