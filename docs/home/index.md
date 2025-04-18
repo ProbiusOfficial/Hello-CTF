@@ -60,15 +60,6 @@ hide:
             **其他说明** : ACTF 2025由XCTF联赛主办，比赛时间为2025年4月26日至4月27日，更多信息请访问官方网站。选手可通过QQ群512066352进行沟通交流。  
                 
     === "国外比赛"
-        ??? Quote "[UMassCTF 2025](https://ctf.umasscybersec.org/)"  
-            [![](https://ctftime.org/media/events/889a1e484f0b51dd3d865b3a53b26200_1.jpg){ width="200" align=left }](https://ctf.umasscybersec.org/)  
-            **比赛名称** : [UMassCTF 2025](https://ctf.umasscybersec.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-04-19 02:00:00 - 2025-04-21 08:00:00 UTC+8  
-            **比赛权重** : 48.38  
-            **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
-            **添加日历** : https://ctftime.org/event/2653.ics  
-            
         ??? Quote "[b01lers CTF 2025](https://b01lersc.tf/)"  
             [![](https://ctftime.org/media/events/b01lers-griffen_2.png){ width="200" align=left }](https://b01lersc.tf/)  
             **比赛名称** : [b01lers CTF 2025](https://b01lersc.tf/)  
@@ -95,6 +86,15 @@ hide:
             **比赛权重** : 24.57  
             **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
             **添加日历** : https://ctftime.org/event/2759.ics  
+            
+        ??? Quote "[UMDCTF 2025](https://umdctf.io/)"  
+            [![](https://ctftime.org/media/events/ae1c27549ce5fb7832b0ff1bc873c622.png){ width="200" align=left }](https://umdctf.io/)  
+            **比赛名称** : [UMDCTF 2025](https://umdctf.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-04-26 06:00:00 - 2025-04-28 06:00:00 UTC+8  
+            **比赛权重** : 70.86  
+            **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
+            **添加日历** : https://ctftime.org/event/2563.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
