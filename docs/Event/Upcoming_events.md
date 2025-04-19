@@ -15,15 +15,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[T-CTF 2025](https://t-ctf.ru/)"  
-    [![](https://ctftime.org/media/events/t-ctf.jpg){ width="200" align=left }](https://t-ctf.ru/)  
-    **比赛名称** : [T-CTF 2025](https://t-ctf.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-19 14:00:00 - 2025-04-21 02:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
-    **添加日历** : https://ctftime.org/event/2741.ics  
-    
 ??? Quote "[CTF@CIT 2025](https://ctf.cyber-cit.club/)"  
     [![](https://ctftime.org/media/events/CTF-CIT-ctftime_2.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
     **比赛名称** : [CTF@CIT 2025](https://ctf.cyber-cit.club/)  
