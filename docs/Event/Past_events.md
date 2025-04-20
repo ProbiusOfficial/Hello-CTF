@@ -51,6 +51,15 @@ comments: true
     **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
     **添加日历** : https://ctftime.org/event/2741.ics  
     
+??? Quote "[b01lers CTF 2025](https://b01lersc.tf/)"  
+    [![](https://ctftime.org/media/events/b01lers-griffen_2.png){ width="200" align=left }](https://b01lersc.tf/)  
+    **比赛名称** : [b01lers CTF 2025](https://b01lersc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-19 07:00:00 - 2025-04-21 07:00:00 UTC+8  
+    **比赛权重** : 44.50  
+    **赛事主办** : b01lers (https://ctftime.org/team/11464)  
+    **添加日历** : https://ctftime.org/event/2652.ics  
+    
 ??? Quote "[DawgCTF 2025](https://metactf.com/join/dawgctf25)"  
     [![](https://ctftime.org/media/events/dawgsec_shield-ctftime_2.png){ width="200" align=left }](https://metactf.com/join/dawgctf25)  
     **比赛名称** : [DawgCTF 2025](https://metactf.com/join/dawgctf25)  
@@ -932,13 +941,4 @@ comments: true
     **比赛权重** : 23.13  
     **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
     **添加日历** : https://ctftime.org/event/2582.ics  
-    
-??? Quote "[Cyber League 2025 - Major](https://ctfd.cyberleague.co/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctfd.cyberleague.co/)  
-    **比赛名称** : [Cyber League 2025 - Major](https://ctfd.cyberleague.co/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-01-11 10:00:00 - 2025-01-12 10:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : DIV0-N0H4TS (https://ctftime.org/team/354275)  
-    **添加日历** : https://ctftime.org/event/2530.ics  
     
