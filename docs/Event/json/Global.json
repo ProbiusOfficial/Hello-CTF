@@ -609,7 +609,7 @@
         "比赛权重": "0",
         "赛事主办": "SPbCTF (https://ctftime.org/team/30003)",
         "比赛ID": "1296",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "DawgCTF 2025",
@@ -1797,18 +1797,6 @@
         "比赛权重": "0.00",
         "赛事主办": "DIV0-N0H4TS (https://ctftime.org/team/354275)",
         "比赛ID": "1183",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SUCTF 2025",
-        "比赛时间": "2025-01-11 09:00:00 - 2025-01-13 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2620.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://suctf2025.xctf.org.cn/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "24.75",
-        "赛事主办": "SU (https://ctftime.org/team/29641)",
-        "比赛ID": "1226",
         "比赛状态": "past"
     }
 ]
