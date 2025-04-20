@@ -42,6 +42,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[CPCTF 2025](https://cpctf.space/)"  
+    [![](https://ctftime.org/media/events/cpctf_logo_1.png){ width="200" align=left }](https://cpctf.space/)  
+    **比赛名称** : [CPCTF 2025](https://cpctf.space/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-18 19:00:00 - 2025-04-20 19:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : traP (https://ctftime.org/team/62510)  
+    **添加日历** : https://ctftime.org/event/2760.ics  
+    
 ??? Quote "[SummitCTF 2025](https://summitctf.org/)"  
     [![](https://ctftime.org/media/events/Summitctf.png){ width="200" align=left }](https://summitctf.org/)  
     **比赛名称** : [SummitCTF 2025](https://summitctf.org/)  
@@ -932,13 +941,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
     **添加日历** : https://ctftime.org/event/2621.ics  
-    
-??? Quote "[UofTCTF 2025](https://ctf.uoftctf.org/)"  
-    [![](https://ctftime.org/media/events/uoftctf_logo_3000_black.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
-    **比赛名称** : [UofTCTF 2025](https://ctf.uoftctf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-01-11 08:00:00 - 2025-01-13 08:00:00 UTC+8  
-    **比赛权重** : 23.90  
-    **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
-    **添加日历** : https://ctftime.org/event/2570.ics  
     

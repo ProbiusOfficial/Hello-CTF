@@ -576,18 +576,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CPCTF 2025",
-        "比赛时间": "2025-04-18 19:00:00 - 2025-04-20 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2760.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cpctf.space/",
-        "比赛标志": "https://ctftime.org/media/events/cpctf_logo_1.png",
-        "比赛权重": "0",
-        "赛事主办": "traP (https://ctftime.org/team/62510)",
-        "比赛ID": "934",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "DawgCTF 2025",
         "比赛时间": "2025-04-18 20:00:00 - 2025-04-20 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2651.ics",
@@ -634,6 +622,18 @@
         "赛事主办": "SPbCTF (https://ctftime.org/team/30003)",
         "比赛ID": "1296",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CPCTF 2025",
+        "比赛时间": "2025-04-18 19:00:00 - 2025-04-20 19:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2760.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cpctf.space/",
+        "比赛标志": "https://ctftime.org/media/events/cpctf_logo_1.png",
+        "比赛权重": "0",
+        "赛事主办": "traP (https://ctftime.org/team/62510)",
+        "比赛ID": "934",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "SummitCTF 2025",
@@ -1821,18 +1821,6 @@
         "比赛权重": "0",
         "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
         "比赛ID": "1232",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "UofTCTF 2025",
-        "比赛时间": "2025-01-11 08:00:00 - 2025-01-13 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2570.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.uoftctf.org/",
-        "比赛标志": "https://ctftime.org/media/events/uoftctf_logo_3000_black.png",
-        "比赛权重": "23.90",
-        "赛事主办": "UofTCTF (https://ctftime.org/team/139261)",
-        "比赛ID": "1052",
         "比赛状态": "past"
     }
 ]
