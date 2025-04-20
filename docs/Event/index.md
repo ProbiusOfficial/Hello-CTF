@@ -484,9 +484,9 @@ hide:
                 **赛事主办** : fibonhack (https://ctftime.org/team/117538)  
                 **添加日历** : https://ctftime.org/event/2605.ics  
                 
-            ??? Quote "[smileyCTF 2025](https://2025.ctf.gg/)"  
-                [![](https://ctftime.org/media/events/smiley.png){ width="200" align=left }](https://2025.ctf.gg/)  
-                **比赛名称** : [smileyCTF 2025](https://2025.ctf.gg/)  
+            ??? Quote "[smileyCTF 2025](https://play.ctf.gg/)"  
+                [![](https://ctftime.org/media/events/smiley.png){ width="200" align=left }](https://play.ctf.gg/)  
+                **比赛名称** : [smileyCTF 2025](https://play.ctf.gg/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-06-06 09:00:00 - 2025-06-08 09:00:00 UTC+8  
                 **比赛权重** : 48.61  
@@ -843,7 +843,7 @@ hide:
                 **比赛名称** : [Midnight Flag CTF - INSURRECTION](https://midnightflag.fr/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-04-12 16:00:00 - 2025-04-14 00:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 24.43  
                 **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
                 **添加日历** : https://ctftime.org/event/2687.ics  
                 

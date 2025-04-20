@@ -256,7 +256,7 @@
         "比赛时间": "2025-06-06 09:00:00 - 2025-06-08 09:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2591.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://2025.ctf.gg/",
+        "比赛链接": "https://play.ctf.gg/",
         "比赛标志": "https://ctftime.org/media/events/smiley.png",
         "比赛权重": "48.61",
         "赛事主办": ".;,;. (https://ctftime.org/team/222911)",
@@ -666,7 +666,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://midnightflag.fr/",
         "比赛标志": "https://ctftime.org/media/events/logo-midnightflag_500.png",
-        "比赛权重": "0",
+        "比赛权重": "24.43",
         "赛事主办": "Midnight Flag (https://ctftime.org/team/179110)",
         "比赛ID": "761",
         "比赛状态": "past"
