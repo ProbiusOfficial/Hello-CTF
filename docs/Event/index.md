@@ -376,9 +376,9 @@ hide:
                 **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
                 **添加日历** : https://ctftime.org/event/2726.ics  
                 
-            ??? Quote "[DevSecOps CTF 2025](https://punksecurity.co.uk/ctf)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://punksecurity.co.uk/ctf)  
-                **比赛名称** : [DevSecOps CTF 2025](https://punksecurity.co.uk/ctf)  
+            ??? Quote "[DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.punksecurity.co.uk/)  
+                **比赛名称** : [DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-05-04 18:00:00 - 2025-05-05 06:00:00 UTC+8  
                 **比赛权重** : 37.00  
@@ -737,15 +737,6 @@ hide:
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2588.ics  
                 
-            ??? Quote "[DawgCTF 2025](https://metactf.com/join/dawgctf25)"  
-                [![](https://ctftime.org/media/events/dawgsec_shield-ctftime_2.png){ width="200" align=left }](https://metactf.com/join/dawgctf25)  
-                **比赛名称** : [DawgCTF 2025](https://metactf.com/join/dawgctf25)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-18 20:00:00 - 2025-04-20 20:00:00 UTC+8  
-                **比赛权重** : 69.00  
-                **赛事主办** : UMBC Cyber Dawgs (https://ctftime.org/team/18405)  
-                **添加日历** : https://ctftime.org/event/2651.ics  
-                
             ??? Quote "[UMassCTF 2025](https://ctf.umasscybersec.org/)"  
                 [![](https://ctftime.org/media/events/889a1e484f0b51dd3d865b3a53b26200_1.jpg){ width="200" align=left }](https://ctf.umasscybersec.org/)  
                 **比赛名称** : [UMassCTF 2025](https://ctf.umasscybersec.org/)  
@@ -811,6 +802,15 @@ hide:
                 **其他说明** : NCTF 2025 由 NCTF 2025 组织委员会主办，比赛时间为 3 月 22 日 9:00 - 3 月 23 日 21:00，共计 36 小时，比赛形式为团队赛，每队 1-4 人，分为校内、校外两个赛道。  
                 
         === "国外赛事"
+            ??? Quote "[DawgCTF 2025](https://metactf.com/join/dawgctf25)"  
+                [![](https://ctftime.org/media/events/dawgsec_shield-ctftime_2.png){ width="200" align=left }](https://metactf.com/join/dawgctf25)  
+                **比赛名称** : [DawgCTF 2025](https://metactf.com/join/dawgctf25)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-04-18 20:00:00 - 2025-04-20 20:00:00 UTC+8  
+                **比赛权重** : 69.00  
+                **赛事主办** : UMBC Cyber Dawgs (https://ctftime.org/team/18405)  
+                **添加日历** : https://ctftime.org/event/2651.ics  
+                
             ??? Quote "[CPCTF 2025](https://cpctf.space/)"  
                 [![](https://ctftime.org/media/events/cpctf_logo_1.png){ width="200" align=left }](https://cpctf.space/)  
                 **比赛名称** : [CPCTF 2025](https://cpctf.space/)  
@@ -1701,15 +1701,6 @@ hide:
                 **比赛权重** : 24.75  
                 **赛事主办** : SU (https://ctftime.org/team/29641)  
                 **添加日历** : https://ctftime.org/event/2620.ics  
-                
-            ??? Quote "[Dreamhack CTF Season 7 Round #1 (Div. 1)](https://dreamhack.io/ctf/655)"  
-                [![](https://ctftime.org/media/events/cover01.jpg){ width="200" align=left }](https://dreamhack.io/ctf/655)  
-                **比赛名称** : [Dreamhack CTF Season 7 Round #1 (Div. 1)](https://dreamhack.io/ctf/655)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-01-11 08:00:00 - 2025-01-11 23:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
-                **添加日历** : https://ctftime.org/event/2621.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

@@ -24,15 +24,6 @@ comments: true
     **赛事主办** : NFITS (https://ctftime.org/team/360674)  
     **添加日历** : https://ctftime.org/event/2588.ics  
     
-??? Quote "[DawgCTF 2025](https://metactf.com/join/dawgctf25)"  
-    [![](https://ctftime.org/media/events/dawgsec_shield-ctftime_2.png){ width="200" align=left }](https://metactf.com/join/dawgctf25)  
-    **比赛名称** : [DawgCTF 2025](https://metactf.com/join/dawgctf25)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-18 20:00:00 - 2025-04-20 20:00:00 UTC+8  
-    **比赛权重** : 69.00  
-    **赛事主办** : UMBC Cyber Dawgs (https://ctftime.org/team/18405)  
-    **添加日历** : https://ctftime.org/event/2651.ics  
-    
 ??? Quote "[UMassCTF 2025](https://ctf.umasscybersec.org/)"  
     [![](https://ctftime.org/media/events/889a1e484f0b51dd3d865b3a53b26200_1.jpg){ width="200" align=left }](https://ctf.umasscybersec.org/)  
     **比赛名称** : [UMassCTF 2025](https://ctf.umasscybersec.org/)  

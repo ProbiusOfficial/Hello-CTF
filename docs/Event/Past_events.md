@@ -42,6 +42,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[DawgCTF 2025](https://metactf.com/join/dawgctf25)"  
+    [![](https://ctftime.org/media/events/dawgsec_shield-ctftime_2.png){ width="200" align=left }](https://metactf.com/join/dawgctf25)  
+    **比赛名称** : [DawgCTF 2025](https://metactf.com/join/dawgctf25)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-18 20:00:00 - 2025-04-20 20:00:00 UTC+8  
+    **比赛权重** : 69.00  
+    **赛事主办** : UMBC Cyber Dawgs (https://ctftime.org/team/18405)  
+    **添加日历** : https://ctftime.org/event/2651.ics  
+    
 ??? Quote "[CPCTF 2025](https://cpctf.space/)"  
     [![](https://ctftime.org/media/events/cpctf_logo_1.png){ width="200" align=left }](https://cpctf.space/)  
     **比赛名称** : [CPCTF 2025](https://cpctf.space/)  
@@ -932,13 +941,4 @@ comments: true
     **比赛权重** : 24.75  
     **赛事主办** : SU (https://ctftime.org/team/29641)  
     **添加日历** : https://ctftime.org/event/2620.ics  
-    
-??? Quote "[Dreamhack CTF Season 7 Round #1 (Div. 1)](https://dreamhack.io/ctf/655)"  
-    [![](https://ctftime.org/media/events/cover01.jpg){ width="200" align=left }](https://dreamhack.io/ctf/655)  
-    **比赛名称** : [Dreamhack CTF Season 7 Round #1 (Div. 1)](https://dreamhack.io/ctf/655)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-01-11 08:00:00 - 2025-01-11 23:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
-    **添加日历** : https://ctftime.org/event/2621.ics  
     
