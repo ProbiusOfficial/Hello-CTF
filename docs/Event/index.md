@@ -421,9 +421,9 @@ hide:
                 **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
                 **添加日历** : https://ctftime.org/event/2711.ics  
                 
-            ??? Quote "[BYUCTF 2025](https://cyberjousting.com/)"  
-                [![](https://ctftime.org/media/events/byuctf.jpg){ width="200" align=left }](https://cyberjousting.com/)  
-                **比赛名称** : [BYUCTF 2025](https://cyberjousting.com/)  
+            ??? Quote "[BYUCTF 2025](https://ctfd.cyberjousting.com/)"  
+                [![](https://ctftime.org/media/events/byuctf.jpg){ width="200" align=left }](https://ctfd.cyberjousting.com/)  
+                **比赛名称** : [BYUCTF 2025](https://ctfd.cyberjousting.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-05-17 10:00:00 - 2025-05-18 10:00:00 UTC+8  
                 **比赛权重** : 36.94  
