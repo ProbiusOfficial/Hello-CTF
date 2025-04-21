@@ -96,7 +96,7 @@ $z[4] = 'o';
 
 ### 魔术常量
 
-行如 **`__FILE__` ** 这样的 `__XXX__`  预定义常量，被称为魔术常量。
+行如 **`__FILE__`** 这样的 `__XXX__`  预定义常量，被称为魔术常量。
 
 ```php
 __FILE__ //返回文件的完整路径和文件名
@@ -570,7 +570,7 @@ if((string)$str1 !== (string)$str2 && md5($str1)===md5($str2)){
 
 关于 md5 碰撞可以翻阅这篇论文：https://www.iacr.org/cryptodb/archive/2005/EUROCRYPT/2868/2868.pdf
 
-这里我们先用工具跑一下，使用 FastCool 对 md5 进行一个简单碰撞
+这里我们先用工具跑一下，使用 FastColl 对 md5 进行一个简单碰撞
 
 首先创建一个文件 1.txt，在里边输入任意值，其次使用命令
 
@@ -951,13 +951,13 @@ PHP 提供了一些杂项输入/输出（IO）流，允许访问 PHP 的输入�
 php://filter/read or write=/resource=数据流
 ```
 
-- resource=<要过滤的数据流> **必须**。它指定了你要筛选过滤的数据流
+- resource=<要过滤的数据流> **（必须）**  它指定了你要筛选过滤的数据流
 
 - read=<读链的筛选列表>
 
   可选
 
-  。可以设定一个或多个过滤器名称，以管道符（|）分隔。
+  。可以设定一个或多个过滤器名称，以管道符`|`分隔。
 
   - 常用的有：
   - convert.base64
@@ -968,7 +968,7 @@ php://filter/read or write=/resource=数据流
   - convert.iconv.\*
     - 详见：https://www.php.net/manual/zh/function.iconv.php
 
-- write=<写链的筛选列表>**可选**。可以设定一个或多个过滤器名称，以管道符（|）分隔。
+- write=<写链的筛选列表>**可选**。可以设定一个或多个过滤器名称，以管道符`|`分隔。
 
 举个例子
 
