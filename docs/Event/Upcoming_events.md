@@ -25,7 +25,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2759.ics  
     
 ??? Quote "[UMDCTF 2025](https://umdctf.io/)"  
-    [![](https://ctftime.org/media/events/logo_109.png){ width="200" align=left }](https://umdctf.io/)  
+    [![](https://ctftime.org/media/events/logo-cropped.png){ width="200" align=left }](https://umdctf.io/)  
     **比赛名称** : [UMDCTF 2025](https://umdctf.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-04-26 06:00:00 - 2025-04-28 06:00:00 UTC+8  
