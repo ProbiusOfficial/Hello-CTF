@@ -331,15 +331,6 @@ hide:
                 **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
                 **添加日历** : https://ctftime.org/event/2719.ics  
                 
-            ??? Quote "[Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)"  
-                [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo_1.png){ width="200" align=left }](https://midnightsunctf.com/)  
-                **比赛名称** : [Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-26 20:00:00 - 2025-04-27 20:00:00 UTC+8  
-                **比赛权重** : 53.00  
-                **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-                **添加日历** : https://ctftime.org/event/2632.ics  
-                
             ??? Quote "[[POSTPONED] AlpacaHack Round 11 (Web)](https://alpacahack.com/ctfs/round-11)"  
                 [![](https://ctftime.org/media/events/ctftime_10.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-11)  
                 **比赛名称** : [[POSTPONED] AlpacaHack Round 11 (Web)](https://alpacahack.com/ctfs/round-11)  
@@ -375,6 +366,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
                 **添加日历** : https://ctftime.org/event/2726.ics  
+                
+            ??? Quote "[Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)"  
+                [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo_1.png){ width="200" align=left }](https://midnightsunctf.com/)  
+                **比赛名称** : [Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-03 20:00:00 - 2025-05-04 20:00:00 UTC+8  
+                **比赛权重** : 53.00  
+                **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
+                **添加日历** : https://ctftime.org/event/2632.ics  
                 
             ??? Quote "[DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.punksecurity.co.uk/)  
