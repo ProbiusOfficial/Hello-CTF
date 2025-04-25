@@ -60,15 +60,6 @@ hide:
             **其他说明** : ACTF 2025由XCTF联赛主办，比赛时间为2025年4月26日至4月27日，更多信息请访问官方网站。选手可通过QQ群512066352进行沟通交流。  
                 
     === "国外比赛"
-        ??? Quote "[UMDCTF 2025](https://umdctf.io/)"  
-            [![](https://ctftime.org/media/events/logo-cropped.png){ width="200" align=left }](https://umdctf.io/)  
-            **比赛名称** : [UMDCTF 2025](https://umdctf.io/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-04-26 06:00:00 - 2025-04-28 06:00:00 UTC+8  
-            **比赛权重** : 70.86  
-            **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
-            **添加日历** : https://ctftime.org/event/2563.ics  
-            
         ??? Quote "[BSidesSF 2025 CTF](https://ctf.bsidessf.net/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://ctf.bsidessf.net/)  
             **比赛名称** : [BSidesSF 2025 CTF](https://ctf.bsidessf.net/)  
@@ -95,6 +86,15 @@ hide:
             **比赛权重** : 35.00  
             **赛事主办** : Azure Assassin Alliance (https://ctftime.org/team/194222)  
             **添加日历** : https://ctftime.org/event/2758.ics  
+            
+        ??? Quote "[Incognito 6.0](https://incognito.axiosiiitl.dev/)"  
+            [![](https://ctftime.org/media/events/logo_108.png){ width="200" align=left }](https://incognito.axiosiiitl.dev/)  
+            **比赛名称** : [Incognito 6.0](https://incognito.axiosiiitl.dev/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-04-28 08:00:00 - 2025-04-29 08:00:00 UTC+8  
+            **比赛权重** : 30.43  
+            **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
+            **添加日历** : https://ctftime.org/event/2761.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
