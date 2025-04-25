@@ -60,15 +60,6 @@ hide:
             **其他说明** : ACTF 2025由XCTF联赛主办，比赛时间为2025年4月26日至4月27日，更多信息请访问官方网站。选手可通过QQ群512066352进行沟通交流。  
                 
     === "国外比赛"
-        ??? Quote "[CTF@CIT 2025](https://ctf.cyber-cit.club/)"  
-            [![](https://ctftime.org/media/events/CTF-CIT-ctftime_2.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
-            **比赛名称** : [CTF@CIT 2025](https://ctf.cyber-cit.club/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-04-26 05:00:00 - 2025-04-28 03:00:00 UTC+8  
-            **比赛权重** : 24.57  
-            **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
-            **添加日历** : https://ctftime.org/event/2759.ics  
-            
         ??? Quote "[UMDCTF 2025](https://umdctf.io/)"  
             [![](https://ctftime.org/media/events/logo-cropped.png){ width="200" align=left }](https://umdctf.io/)  
             **比赛名称** : [UMDCTF 2025](https://umdctf.io/)  
@@ -95,6 +86,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
             **添加日历** : https://ctftime.org/event/2719.ics  
+            
+        ??? Quote "[Azure Assassin Alliance CTF 2025](https://actf2025.xctf.org.cn/)"  
+            [![](https://ctftime.org/media/events/AAA.jpg){ width="200" align=left }](https://actf2025.xctf.org.cn/)  
+            **比赛名称** : [Azure Assassin Alliance CTF 2025](https://actf2025.xctf.org.cn/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-04-26 09:00:00 - 2025-04-27 09:00:00 UTC+8  
+            **比赛权重** : 35.00  
+            **赛事主办** : Azure Assassin Alliance (https://ctftime.org/team/194222)  
+            **添加日历** : https://ctftime.org/event/2758.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

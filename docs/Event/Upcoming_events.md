@@ -15,15 +15,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[CTF@CIT 2025](https://ctf.cyber-cit.club/)"  
-    [![](https://ctftime.org/media/events/CTF-CIT-ctftime_2.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
-    **比赛名称** : [CTF@CIT 2025](https://ctf.cyber-cit.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-26 05:00:00 - 2025-04-28 03:00:00 UTC+8  
-    **比赛权重** : 24.57  
-    **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
-    **添加日历** : https://ctftime.org/event/2759.ics  
-    
 ??? Quote "[UMDCTF 2025](https://umdctf.io/)"  
     [![](https://ctftime.org/media/events/logo-cropped.png){ width="200" align=left }](https://umdctf.io/)  
     **比赛名称** : [UMDCTF 2025](https://umdctf.io/)  
