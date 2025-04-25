@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "BSidesSF 2025 CTF",
-        "比赛时间": "2025-04-26 07:00:00 - 2025-04-28 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2721.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.bsidessf.net/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "BSidesSF (https://ctftime.org/team/54737)",
-        "比赛ID": "252",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "HACKTHEON SEJONG 2025 Preliminaries",
         "比赛时间": "2025-04-26 08:00:00 - 2025-04-26 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2719.ics",
@@ -837,6 +825,18 @@
         "比赛权重": "70.86",
         "赛事主办": "UMDCSEC (https://ctftime.org/team/87711)",
         "比赛ID": "444",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "BSidesSF 2025 CTF",
+        "比赛时间": "2025-04-26 07:00:00 - 2025-04-28 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2721.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bsidessf.net/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "BSidesSF (https://ctftime.org/team/54737)",
+        "比赛ID": "252",
         "比赛状态": "nowrunning"
     },
     {
