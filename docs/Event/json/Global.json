@@ -906,7 +906,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://hackpack.club/ctf2025/",
         "比赛标志": "https://ctftime.org/media/events/logo_wolf.png",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "hackpack (https://ctftime.org/team/25905)",
         "比赛ID": "443",
         "比赛状态": "past"

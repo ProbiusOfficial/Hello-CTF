@@ -101,7 +101,7 @@ comments: true
     **比赛名称** : [HackPack CTF 2025](https://hackpack.club/ctf2025/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-04-19 00:00:00 - 2025-04-19 23:59:59 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : hackpack (https://ctftime.org/team/25905)  
     **添加日历** : https://ctftime.org/event/2743.ics  
     
