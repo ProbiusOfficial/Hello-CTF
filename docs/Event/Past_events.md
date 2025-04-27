@@ -67,6 +67,15 @@ comments: true
     **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
     **添加日历** : https://ctftime.org/event/2719.ics  
     
+??? Quote "[CTF@CIT 2025](https://ctf.cyber-cit.club/)"  
+    [![](https://ctftime.org/media/events/CTF-CIT-ctftime_2.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
+    **比赛名称** : [CTF@CIT 2025](https://ctf.cyber-cit.club/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-26 05:00:00 - 2025-04-28 03:00:00 UTC+8  
+    **比赛权重** : 24.57  
+    **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
+    **添加日历** : https://ctftime.org/event/2759.ics  
+    
 ??? Quote "[WSUCTF25](https://waynestateuniversity-ctf.ctfd.io/)"  
     [![](https://ctftime.org/media/events/WSU-CDC.jpg){ width="200" align=left }](https://waynestateuniversity-ctf.ctfd.io/)  
     **比赛名称** : [WSUCTF25](https://waynestateuniversity-ctf.ctfd.io/)  
@@ -939,13 +948,4 @@ comments: true
     **比赛权重** : 28.60  
     **赛事主办** : ascii overflow (https://ctftime.org/team/15360)  
     **添加日历** : https://ctftime.org/event/2584.ics  
-    
-??? Quote "[x3CTF 2025 (feat. mvm)](https://x3c.tf/)"  
-    [![](https://ctftime.org/media/events/pink_logo_square_768.png){ width="200" align=left }](https://x3c.tf/)  
-    **比赛名称** : [x3CTF 2025 (feat. mvm)](https://x3c.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-01-25 02:00:00 - 2025-01-27 02:00:00 UTC+8  
-    **比赛权重** : 23.61  
-    **赛事主办** : x3CTF (https://ctftime.org/team/309820)  
-    **添加日历** : https://ctftime.org/event/2467.ics  
     
