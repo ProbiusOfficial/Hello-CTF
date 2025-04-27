@@ -1069,7 +1069,7 @@ hide:
                 **比赛名称** : [Midnight Flag CTF - INSURRECTION](https://midnightflag.fr/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-04-12 16:00:00 - 2025-04-14 00:00:00 UTC+8  
-                **比赛权重** : 24.43  
+                **比赛权重** : 24.50  
                 **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
                 **添加日历** : https://ctftime.org/event/2687.ics  
                 
@@ -1150,7 +1150,7 @@ hide:
                 **比赛名称** : [Breach CTF 2025](https://www.breachers.in/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-04-05 10:30:00 - 2025-04-06 10:30:00 UTC+8  
-                **比赛权重** : 23.67  
+                **比赛权重** : 23.77  
                 **赛事主办** : IITBreachers (https://ctftime.org/team/165802)  
                 **添加日历** : https://ctftime.org/event/2671.ics  
                 
