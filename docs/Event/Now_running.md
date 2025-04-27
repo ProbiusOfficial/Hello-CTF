@@ -33,15 +33,6 @@ comments: true
     **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
     **添加日历** : https://ctftime.org/event/2774.ics  
     
-??? Quote "[UMDCTF 2025](https://umdctf.io/)"  
-    [![](https://ctftime.org/media/events/logo-cropped.png){ width="200" align=left }](https://umdctf.io/)  
-    **比赛名称** : [UMDCTF 2025](https://umdctf.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-26 06:00:00 - 2025-04-28 06:00:00 UTC+8  
-    **比赛权重** : 70.86  
-    **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
-    **添加日历** : https://ctftime.org/event/2563.ics  
-    
 ??? Quote "[BSidesSF 2025 CTF](https://ctf.bsidessf.net/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.bsidessf.net/)  
     **比赛名称** : [BSidesSF 2025 CTF](https://ctf.bsidessf.net/)  

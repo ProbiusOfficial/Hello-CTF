@@ -884,15 +884,6 @@ hide:
                 **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
                 **添加日历** : https://ctftime.org/event/2774.ics  
                 
-            ??? Quote "[UMDCTF 2025](https://umdctf.io/)"  
-                [![](https://ctftime.org/media/events/logo-cropped.png){ width="200" align=left }](https://umdctf.io/)  
-                **比赛名称** : [UMDCTF 2025](https://umdctf.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-26 06:00:00 - 2025-04-28 06:00:00 UTC+8  
-                **比赛权重** : 70.86  
-                **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
-                **添加日历** : https://ctftime.org/event/2563.ics  
-                
             ??? Quote "[BSidesSF 2025 CTF](https://ctf.bsidessf.net/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.bsidessf.net/)  
                 **比赛名称** : [BSidesSF 2025 CTF](https://ctf.bsidessf.net/)  
@@ -964,6 +955,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
                 **添加日历** : https://ctftime.org/event/2719.ics  
+                
+            ??? Quote "[UMDCTF 2025](https://umdctf.io/)"  
+                [![](https://ctftime.org/media/events/logo-cropped.png){ width="200" align=left }](https://umdctf.io/)  
+                **比赛名称** : [UMDCTF 2025](https://umdctf.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-04-26 06:00:00 - 2025-04-28 06:00:00 UTC+8  
+                **比赛权重** : 70.86  
+                **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
+                **添加日历** : https://ctftime.org/event/2563.ics  
                 
             ??? Quote "[CTF@CIT 2025](https://ctf.cyber-cit.club/)"  
                 [![](https://ctftime.org/media/events/CTF-CIT-ctftime_2.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
@@ -1837,15 +1837,6 @@ hide:
                 **比赛权重** : 19.90  
                 **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
                 **添加日历** : https://ctftime.org/event/2615.ics  
-                
-            ??? Quote "[TUCTF 2024](https://ctfd.tuctf.com/)"  
-                [![](https://ctftime.org/media/events/TU-CTF-2024_2.png){ width="200" align=left }](https://ctfd.tuctf.com/)  
-                **比赛名称** : [TUCTF 2024](https://ctfd.tuctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-01-25 03:00:00 - 2025-01-27 03:00:00 UTC+8  
-                **比赛权重** : 28.60  
-                **赛事主办** : ascii overflow (https://ctftime.org/team/15360)  
-                **添加日历** : https://ctftime.org/event/2584.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
