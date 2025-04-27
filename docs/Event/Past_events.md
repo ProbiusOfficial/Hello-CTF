@@ -67,6 +67,15 @@ comments: true
     **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
     **添加日历** : https://ctftime.org/event/2719.ics  
     
+??? Quote "[BSidesSF 2025 CTF](https://ctf.bsidessf.net/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.bsidessf.net/)  
+    **比赛名称** : [BSidesSF 2025 CTF](https://ctf.bsidessf.net/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-26 07:00:00 - 2025-04-28 07:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
+    **添加日历** : https://ctftime.org/event/2721.ics  
+    
 ??? Quote "[UMDCTF 2025](https://umdctf.io/)"  
     [![](https://ctftime.org/media/events/logo-cropped.png){ width="200" align=left }](https://umdctf.io/)  
     **比赛名称** : [UMDCTF 2025](https://umdctf.io/)  
@@ -939,13 +948,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
     **添加日历** : https://ctftime.org/event/2622.ics  
-    
-??? Quote "[HackDay 2025 - Qualifications](https://hackday.fr/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://hackday.fr/)  
-    **比赛名称** : [HackDay 2025 - Qualifications](https://hackday.fr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-01-25 04:00:00 - 2025-01-27 04:00:00 UTC+8  
-    **比赛权重** : 19.90  
-    **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
-    **添加日历** : https://ctftime.org/event/2615.ics  
     
