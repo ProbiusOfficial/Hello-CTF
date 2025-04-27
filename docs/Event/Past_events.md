@@ -5,6 +5,13 @@ comments: true
 
 ## 国内赛事
 
+??? Quote "ACTF 2025"  
+    **比赛名称** : [ACTF 2025](https://actf2025.xctf.org.cn/)  
+    **比赛类型** : 线上Jeopardy解题赛  
+    **报名时间** : 2025年04月16日 08:59 - 2025年04月26日 08:59  
+    **比赛时间** : 2025年04月26日 09:00 - 2025年04月27日 09:00  
+    **其他说明** : ACTF 2025由XCTF联赛主办，比赛时间为2025年4月26日至4月27日，更多信息请访问官方网站。选手可通过QQ群512066352进行沟通交流。  
+    
 ??? Quote "TGCTF 2025"  
     **比赛名称** : [TGCTF 2025](https://tgctf.woooo.tech/)  
     **比赛类型** : 线上Jeopardy解题赛  
@@ -42,6 +49,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Azure Assassin Alliance CTF 2025](https://actf2025.xctf.org.cn/)"  
+    [![](https://ctftime.org/media/events/AAA.jpg){ width="200" align=left }](https://actf2025.xctf.org.cn/)  
+    **比赛名称** : [Azure Assassin Alliance CTF 2025](https://actf2025.xctf.org.cn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-26 09:00:00 - 2025-04-27 09:00:00 UTC+8  
+    **比赛权重** : 35.00  
+    **赛事主办** : Azure Assassin Alliance (https://ctftime.org/team/194222)  
+    **添加日历** : https://ctftime.org/event/2758.ics  
+    
 ??? Quote "[HACKTHEON SEJONG 2025 Preliminaries](https://hacktheon.org/)"  
     [![](https://ctftime.org/media/events/2025_hacktheon.png){ width="200" align=left }](https://hacktheon.org/)  
     **比赛名称** : [HACKTHEON SEJONG 2025 Preliminaries](https://hacktheon.org/)  
@@ -932,13 +948,4 @@ comments: true
     **比赛权重** : 23.61  
     **赛事主办** : x3CTF (https://ctftime.org/team/309820)  
     **添加日历** : https://ctftime.org/event/2467.ics  
-    
-??? Quote "[Remedy CTF 2025](https://ctf.r.xyz/)"  
-    [![](https://ctftime.org/media/events/remedy_logo.jpg){ width="200" align=left }](https://ctf.r.xyz/)  
-    **比赛名称** : [Remedy CTF 2025](https://ctf.r.xyz/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-01-24 20:00:00 - 2025-01-26 20:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Hexens (https://ctftime.org/team/355136)  
-    **添加日历** : https://ctftime.org/event/2618.ics  
     

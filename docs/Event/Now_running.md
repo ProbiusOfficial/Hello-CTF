@@ -5,13 +5,6 @@ comments: true
 
 ## 国内赛事
 
-??? Quote "ACTF 2025"  
-    **比赛名称** : [ACTF 2025](https://actf2025.xctf.org.cn/)  
-    **比赛类型** : 线上Jeopardy解题赛  
-    **报名时间** : 2025年04月16日 08:59 - 2025年04月26日 08:59  
-    **比赛时间** : 2025年04月26日 09:00 - 2025年04月27日 09:00  
-    **其他说明** : ACTF 2025由XCTF联赛主办，比赛时间为2025年4月26日至4月27日，更多信息请访问官方网站。选手可通过QQ群512066352进行沟通交流。  
-    
 ??? Quote "2025年能源网络安全大赛"  
     **比赛名称** : [2025年能源网络安全大赛](https://www.cers.org.cn/site/content/883b36f00aff466fa37efcef0c074915.html)  
     **比赛类型** : 线上Jeopardy解题赛  
@@ -66,13 +59,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
     **添加日历** : https://ctftime.org/event/2721.ics  
-    
-??? Quote "[Azure Assassin Alliance CTF 2025](https://actf2025.xctf.org.cn/)"  
-    [![](https://ctftime.org/media/events/AAA.jpg){ width="200" align=left }](https://actf2025.xctf.org.cn/)  
-    **比赛名称** : [Azure Assassin Alliance CTF 2025](https://actf2025.xctf.org.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-26 09:00:00 - 2025-04-27 09:00:00 UTC+8  
-    **比赛权重** : 35.00  
-    **赛事主办** : Azure Assassin Alliance (https://ctftime.org/team/194222)  
-    **添加日历** : https://ctftime.org/event/2758.ics  
     
