@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Incognito 6.0](https://incognito.axiosiiitl.dev/)"  
-                [![](https://ctftime.org/media/events/logo_108.png){ width="200" align=left }](https://incognito.axiosiiitl.dev/)  
-                **比赛名称** : [Incognito 6.0](https://incognito.axiosiiitl.dev/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-28 08:00:00 - 2025-04-29 08:00:00 UTC+8  
-                **比赛权重** : 30.43  
-                **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
-                **添加日历** : https://ctftime.org/event/2761.ics  
-                
             ??? Quote "[ICCSDFAI](https://ctf.astanait.edu.kz/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.astanait.edu.kz/)  
                 **比赛名称** : [ICCSDFAI](https://ctf.astanait.edu.kz/)  
@@ -883,6 +874,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
                 **添加日历** : https://ctftime.org/event/2774.ics  
+                
+            ??? Quote "[Incognito 6.0](https://incognito.axiosiiitl.dev/)"  
+                [![](https://ctftime.org/media/events/logo_108.png){ width="200" align=left }](https://incognito.axiosiiitl.dev/)  
+                **比赛名称** : [Incognito 6.0](https://incognito.axiosiiitl.dev/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-04-28 08:00:00 - 2025-04-29 08:00:00 UTC+8  
+                **比赛权重** : 30.43  
+                **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
+                **添加日历** : https://ctftime.org/event/2761.ics  
                 
     === "*已经结束*"
         === "国内赛事"

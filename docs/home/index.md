@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Incognito 6.0](https://incognito.axiosiiitl.dev/)"  
-            [![](https://ctftime.org/media/events/logo_108.png){ width="200" align=left }](https://incognito.axiosiiitl.dev/)  
-            **比赛名称** : [Incognito 6.0](https://incognito.axiosiiitl.dev/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-04-28 08:00:00 - 2025-04-29 08:00:00 UTC+8  
-            **比赛权重** : 30.43  
-            **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
-            **添加日历** : https://ctftime.org/event/2761.ics  
-            
         ??? Quote "[ICCSDFAI](https://ctf.astanait.edu.kz/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://ctf.astanait.edu.kz/)  
             **比赛名称** : [ICCSDFAI](https://ctf.astanait.edu.kz/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
             **添加日历** : https://ctftime.org/event/2755.ics  
+            
+        ??? Quote "[TsukuCTF 2025](https://2025.tsukuctf.org/)"  
+            [![](https://ctftime.org/media/events/icon_8.png){ width="200" align=left }](https://2025.tsukuctf.org/)  
+            **比赛名称** : [TsukuCTF 2025](https://2025.tsukuctf.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-05-03 11:00:00 - 2025-05-04 11:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : TaruTaru (https://ctftime.org/team/157513)  
+            **添加日历** : https://ctftime.org/event/2769.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
