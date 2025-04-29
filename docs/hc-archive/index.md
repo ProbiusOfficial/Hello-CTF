@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [某系统前台RCE浅析](https://y4tacker.github.io/2025/04/16/year/2025/04/%E6%9F%90%E7%B3%BB%E7%BB%9F%E5%89%8D%E5%8F%B0RCE%E6%B5%85%E6%9E%90/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-04-16
+
+    0a2416636d8596a6d89c133c7b60f6971ce99630884cdf6afd1d97649cdbe39606893f02e42a381ce0a49fc7535b4f6324e067de6d706384b3635b1ce021ea9edb6c0e081168a4c4fec62a99b6b4bc15b79e3a3b96705b7933478cec4f488c764ce87c...
     ### [腾讯游戏安全竞赛2025决赛题解](https://xia0ji233.github.io/2025/04/14/tencent-race-2025-final/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2025-04-14
 
@@ -89,7 +93,7 @@ hide:
     >by [曾哥](https://blog.zgsec.cn/), 2025-02-28
 
     {bilibili bvid="BV19T9gY4ETm" page=""/}很高兴能参与这期白帽访谈录，也感谢各位师傅的支持~也随时欢迎各位师傅和我友好交流哈哈！本期访谈的回放直播已经上传B站，链接： https://www.bilibili.com/video/BV19T9gY4ETm，感谢各位师傅的一键三连！！！欢迎大家关注渊龙Sec安全团队公众号，干货满满哦~{dotted startCo...
-    ### [某系统前台组合拳RCE](https://y4tacker.github.io/2025/02/23/year/2025/%E6%9F%90%E7%B3%BB%E7%BB%9F%E5%89%8D%E5%8F%B0%E7%BB%84%E5%90%88%E6%8B%B3RCE/)  
+    ### [某系统前台组合拳RCE](https://y4tacker.github.io/2025/02/23/year/2025/02/%E6%9F%90%E7%B3%BB%E7%BB%9F%E5%89%8D%E5%8F%B0%E7%BB%84%E5%90%88%E6%8B%B3RCE/)  
     >by [Y4tacker](https://y4tacker.github.io), 2025-02-23
 
     8133babd8f05e144d8e8c2c4c8ee0fb3d40c2c031c3925709b74cb30c7b27fca92bfd93cf7cf65a6834a805821993b6c9674428ad9fdcf275cf47eb5e07cfd2d776e01401bdf1c9d1052d24b573abb3ff41508c0d801b0496ab9e4257b11885ae0e4bf...
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2024-12-31
 
     2024不是年终总结的总结今年总体而言都和计划差不多走了下去，差不多做到了心若止水，心里基本没什么情绪波动了博客里不想分享过多的生活(娱乐活动多，玩得很爽🤪)让博客一直纯粹下去，简单总结下今年的技术进展吧博客博客上差不多算是“大满贯”吧，差不多每个月都坚持写了点东西Github与漏洞研究Github也罕见的做到了每月有更新🤪说到这当然也就离不开年初定下的flag🚩，不然没事谁天天往Github上P...
-    ### [2024年终总结](https://xia0ji233.github.io/2024/12/31/Summary2024/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2024-12-31
-
-    2024年也快过去了，过去的目标完成了多少，现在又如何呢？2024总结2024 01-05在队内师傅的带领下，开始写 LLVM 的插件，持续开发到六月份，也算给自己计算机生涯积累了一个大的项目开发经验。01-14时隔两年，再次走上 EC Finals 的舞台，感谢老师们坚持不懈的努力拿到了来之不易的一个名额，最后遗憾打铁，但是这趟上海之行依然很开心。附一段当时写的半退役感言：人生中最后一场以大学生...
 
 </div>
