@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[ICCSDFAI](https://ctf.astanait.edu.kz/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctf.astanait.edu.kz/)  
-            **比赛名称** : [ICCSDFAI](https://ctf.astanait.edu.kz/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-04-29 19:00:00 - 2025-05-01 01:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : HackOrda (https://ctftime.org/team/367962)  
-            **添加日历** : https://ctftime.org/event/2685.ics  
-            
         ??? Quote "[SpringForwardCTF 2025](https://springforward.ctfd.io/)"  
             [![](https://ctftime.org/media/events/Social_Media_Icon.png){ width="200" align=left }](https://springforward.ctfd.io/)  
             **比赛名称** : [SpringForwardCTF 2025](https://springforward.ctfd.io/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : TaruTaru (https://ctftime.org/team/157513)  
             **添加日历** : https://ctftime.org/event/2769.ics  
+            
+        ??? Quote "[bi0sCTF 2025](https://ctf.bi0s.in/)"  
+            [![](https://ctftime.org/media/events/image_2025-03-25_143431330.png){ width="200" align=left }](https://ctf.bi0s.in/)  
+            **比赛名称** : [bi0sCTF 2025](https://ctf.bi0s.in/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-05-03 13:30:00 - 2025-05-05 01:30:00 UTC+8  
+            **比赛权重** : 95.79  
+            **赛事主办** : bi0s (https://ctftime.org/team/662)  
+            **添加日历** : https://ctftime.org/event/2672.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

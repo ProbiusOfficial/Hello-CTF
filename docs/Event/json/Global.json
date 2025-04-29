@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "ICCSDFAI",
-        "比赛时间": "2025-04-29 19:00:00 - 2025-05-01 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2685.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.astanait.edu.kz/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "HackOrda (https://ctftime.org/team/367962)",
-        "比赛ID": "1257",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "SpringForwardCTF 2025",
         "比赛时间": "2025-05-03 00:00:00 - 2025-05-04 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2756.ics",
@@ -765,6 +753,18 @@
         "比赛权重": "0",
         "赛事主办": "SK-CERT (https://ctftime.org/team/378916)",
         "比赛ID": "1303",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "ICCSDFAI",
+        "比赛时间": "2025-04-29 19:00:00 - 2025-05-01 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2685.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.astanait.edu.kz/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "HackOrda (https://ctftime.org/team/367962)",
+        "比赛ID": "1257",
         "比赛状态": "nowrunning"
     },
     {
