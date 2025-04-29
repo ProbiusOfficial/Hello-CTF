@@ -54,9 +54,9 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[SpringForwardCTF 2025](https://springforward.ctfd.io/)"  
-            [![](https://ctftime.org/media/events/Social_Media_Icon.png){ width="200" align=left }](https://springforward.ctfd.io/)  
-            **比赛名称** : [SpringForwardCTF 2025](https://springforward.ctfd.io/)  
+        ??? Quote "[SpringForwardCTF 2025 (cancelled)](https://the-event-is-cancelled.com/)"  
+            [![](https://ctftime.org/media/events/Social_Media_Icon.png){ width="200" align=left }](https://the-event-is-cancelled.com/)  
+            **比赛名称** : [SpringForwardCTF 2025 (cancelled)](https://the-event-is-cancelled.com/)  
             **比赛形式** : Jeopardy  
             **比赛时间** : 2025-05-03 00:00:00 - 2025-05-04 00:00:00 UTC+8  
             **比赛权重** : 24.20  
