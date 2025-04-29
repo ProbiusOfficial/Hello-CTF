@@ -49,6 +49,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Incognito 6.0](https://incognito.axiosiiitl.dev/)"  
+    [![](https://ctftime.org/media/events/logo_108.png){ width="200" align=left }](https://incognito.axiosiiitl.dev/)  
+    **比赛名称** : [Incognito 6.0](https://incognito.axiosiiitl.dev/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-28 08:00:00 - 2025-04-29 08:00:00 UTC+8  
+    **比赛权重** : 30.43  
+    **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
+    **添加日历** : https://ctftime.org/event/2761.ics  
+    
 ??? Quote "[Azure Assassin Alliance CTF 2025](https://actf2025.xctf.org.cn/)"  
     [![](https://ctftime.org/media/events/AAA.jpg){ width="200" align=left }](https://actf2025.xctf.org.cn/)  
     **比赛名称** : [Azure Assassin Alliance CTF 2025](https://actf2025.xctf.org.cn/)  
@@ -939,13 +948,4 @@ comments: true
     **比赛权重** : 23.98  
     **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
     **添加日历** : https://ctftime.org/event/2648.ics  
-    
-??? Quote "[Dreamhack CTF Season 7 Round #2 (Div. 2)](https://dreamhack.io/ctf/656)"  
-    [![](https://ctftime.org/media/events/cover02.jpg){ width="200" align=left }](https://dreamhack.io/ctf/656)  
-    **比赛名称** : [Dreamhack CTF Season 7 Round #2 (Div. 2)](https://dreamhack.io/ctf/656)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-01-25 08:00:00 - 2025-01-25 23:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
-    **添加日历** : https://ctftime.org/event/2622.ics  
     
