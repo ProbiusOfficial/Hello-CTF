@@ -60,18 +60,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Midnight Sun CTF 2025 Quals",
-        "比赛时间": "2025-05-03 20:00:00 - 2025-05-04 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2632.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://midnightsunctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo_1.png",
-        "比赛权重": "53.00",
-        "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
-        "比赛ID": "246",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "DevSecOps CTF 2025",
         "比赛时间": "2025-05-04 18:00:00 - 2025-05-05 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2682.ics",
@@ -129,6 +117,18 @@
         "比赛权重": "97.20",
         "赛事主办": "justCatTheFish (https://ctftime.org/team/33893)",
         "比赛ID": "399",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Midnight Sun CTF 2025 Quals",
+        "比赛时间": "2025-05-10 20:00:00 - 2025-05-11 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2632.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://midnightsunctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo_1.png",
+        "比赛权重": "53.00",
+        "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
+        "比赛ID": "246",
         "比赛状态": "oncoming"
     },
     {

@@ -334,15 +334,6 @@ hide:
                 **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
                 **添加日历** : https://ctftime.org/event/2726.ics  
                 
-            ??? Quote "[Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)"  
-                [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo_1.png){ width="200" align=left }](https://midnightsunctf.com/)  
-                **比赛名称** : [Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-03 20:00:00 - 2025-05-04 20:00:00 UTC+8  
-                **比赛权重** : 53.00  
-                **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-                **添加日历** : https://ctftime.org/event/2632.ics  
-                
             ??? Quote "[DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.punksecurity.co.uk/)  
                 **比赛名称** : [DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)  
@@ -387,6 +378,15 @@ hide:
                 **比赛权重** : 97.20  
                 **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
                 **添加日历** : https://ctftime.org/event/2711.ics  
+                
+            ??? Quote "[Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)"  
+                [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo_1.png){ width="200" align=left }](https://midnightsunctf.com/)  
+                **比赛名称** : [Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-10 20:00:00 - 2025-05-11 20:00:00 UTC+8  
+                **比赛权重** : 53.00  
+                **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
+                **添加日历** : https://ctftime.org/event/2632.ics  
                 
             ??? Quote "[BYUCTF 2025](https://ctfd.cyberjousting.com/)"  
                 [![](https://ctftime.org/media/events/byuctf.jpg){ width="200" align=left }](https://ctfd.cyberjousting.com/)  
