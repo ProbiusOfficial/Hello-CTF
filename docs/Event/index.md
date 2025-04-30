@@ -307,9 +307,9 @@ hide:
                 **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
                 **添加日历** : https://ctftime.org/event/2755.ics  
                 
-            ??? Quote "[TsukuCTF 2025](https://2025.tsukuctf.org/)"  
-                [![](https://ctftime.org/media/events/icon_8.png){ width="200" align=left }](https://2025.tsukuctf.org/)  
-                **比赛名称** : [TsukuCTF 2025](https://2025.tsukuctf.org/)  
+            ??? Quote "[TsukuCTF 2025](https://tsukuctf.org/)"  
+                [![](https://ctftime.org/media/events/icon_8.png){ width="200" align=left }](https://tsukuctf.org/)  
+                **比赛名称** : [TsukuCTF 2025](https://tsukuctf.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-05-03 11:00:00 - 2025-05-04 11:00:00 UTC+8  
                 **比赛权重** : 0.00  
@@ -866,15 +866,6 @@ hide:
                 **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
                 **添加日历** : https://ctftime.org/event/2774.ics  
                 
-            ??? Quote "[ICCSDFAI](https://ctf.astanait.edu.kz/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.astanait.edu.kz/)  
-                **比赛名称** : [ICCSDFAI](https://ctf.astanait.edu.kz/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-29 19:00:00 - 2025-05-01 01:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : HackOrda (https://ctftime.org/team/367962)  
-                **添加日历** : https://ctftime.org/event/2685.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[ACTF 2025](https://actf2025.xctf.org.cn/)"  
@@ -920,6 +911,15 @@ hide:
                 **其他说明** : NCTF 2025 由 NCTF 2025 组织委员会主办，比赛时间为 3 月 22 日 9:00 - 3 月 23 日 21:00，共计 36 小时，比赛形式为团队赛，每队 1-4 人，分为校内、校外两个赛道。  
                 
         === "国外赛事"
+            ??? Quote "[ICCSDFAI](https://ctf.astanait.edu.kz/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.astanait.edu.kz/)  
+                **比赛名称** : [ICCSDFAI](https://ctf.astanait.edu.kz/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-04-29 19:00:00 - 2025-05-01 01:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : HackOrda (https://ctftime.org/team/367962)  
+                **添加日历** : https://ctftime.org/event/2685.ics  
+                
             ??? Quote "[Incognito 6.0](https://incognito.axiosiiitl.dev/)"  
                 [![](https://ctftime.org/media/events/logo_108.png){ width="200" align=left }](https://incognito.axiosiiitl.dev/)  
                 **比赛名称** : [Incognito 6.0](https://incognito.axiosiiitl.dev/)  
@@ -1810,15 +1810,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
                 **添加日历** : https://ctftime.org/event/2633.ics  
-                
-            ??? Quote "[Codefest CTF 2025](https://codefest-ctf.iitbhu.tech/)"  
-                [![](https://ctftime.org/media/events/favicon_6.png){ width="200" align=left }](https://codefest-ctf.iitbhu.tech/)  
-                **比赛名称** : [Codefest CTF 2025](https://codefest-ctf.iitbhu.tech/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-01-25 20:30:00 - 2025-01-27 08:30:00 UTC+8  
-                **比赛权重** : 23.98  
-                **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
-                **添加日历** : https://ctftime.org/event/2648.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

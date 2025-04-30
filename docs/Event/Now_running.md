@@ -33,12 +33,3 @@ comments: true
     **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
     **添加日历** : https://ctftime.org/event/2774.ics  
     
-??? Quote "[ICCSDFAI](https://ctf.astanait.edu.kz/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.astanait.edu.kz/)  
-    **比赛名称** : [ICCSDFAI](https://ctf.astanait.edu.kz/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-29 19:00:00 - 2025-05-01 01:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : HackOrda (https://ctftime.org/team/367962)  
-    **添加日历** : https://ctftime.org/event/2685.ics  
-    

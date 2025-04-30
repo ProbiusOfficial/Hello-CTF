@@ -72,9 +72,9 @@ hide:
             **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
             **添加日历** : https://ctftime.org/event/2755.ics  
             
-        ??? Quote "[TsukuCTF 2025](https://2025.tsukuctf.org/)"  
-            [![](https://ctftime.org/media/events/icon_8.png){ width="200" align=left }](https://2025.tsukuctf.org/)  
-            **比赛名称** : [TsukuCTF 2025](https://2025.tsukuctf.org/)  
+        ??? Quote "[TsukuCTF 2025](https://tsukuctf.org/)"  
+            [![](https://ctftime.org/media/events/icon_8.png){ width="200" align=left }](https://tsukuctf.org/)  
+            **比赛名称** : [TsukuCTF 2025](https://tsukuctf.org/)  
             **比赛形式** : Jeopardy  
             **比赛时间** : 2025-05-03 11:00:00 - 2025-05-04 11:00:00 UTC+8  
             **比赛权重** : 0.00  
