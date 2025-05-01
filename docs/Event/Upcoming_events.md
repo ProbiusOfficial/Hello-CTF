@@ -243,9 +243,9 @@ comments: true
     **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
     **添加日历** : https://ctftime.org/event/2751.ics  
     
-??? Quote "[bi0sCTF 2025 [POSTPONED]](https://ctf.bi0s.in/)"  
+??? Quote "[bi0sCTF 2025](https://ctf.bi0s.in/)"  
     [![](https://ctftime.org/media/events/image_2025-03-25_143431330.png){ width="200" align=left }](https://ctf.bi0s.in/)  
-    **比赛名称** : [bi0sCTF 2025 [POSTPONED]](https://ctf.bi0s.in/)  
+    **比赛名称** : [bi0sCTF 2025](https://ctf.bi0s.in/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-06-07 13:30:00 - 2025-06-09 01:30:00 UTC+8  
     **比赛权重** : 95.79  
