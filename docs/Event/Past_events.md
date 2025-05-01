@@ -724,6 +724,15 @@ comments: true
     **赛事主办** : Winja CTF (https://ctftime.org/team/145228)  
     **添加日历** : https://ctftime.org/event/2692.ics  
     
+??? Quote "[CSCG 2025](https://play.cscg.live/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://play.cscg.live/)  
+    **比赛名称** : [CSCG 2025](https://play.cscg.live/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-03-02 01:00:00 - 2025-05-02 00:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : NFITS (https://ctftime.org/team/360674)  
+    **添加日历** : https://ctftime.org/event/2588.ics  
+    
 ??? Quote "[WEC CTF 2025](https://wecctf.nitk.ac.in/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://wecctf.nitk.ac.in/)  
     **比赛名称** : [WEC CTF 2025](https://wecctf.nitk.ac.in/)  
@@ -939,13 +948,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : ATC CTF Team (https://ctftime.org/team/370333)  
     **添加日历** : https://ctftime.org/event/2665.ics  
-    
-??? Quote "[AlpacaHack Round 9 (Crypto)](https://alpacahack.com/)"  
-    [![](https://ctftime.org/media/events/dark_512_3.png){ width="200" align=left }](https://alpacahack.com/)  
-    **比赛名称** : [AlpacaHack Round 9 (Crypto)](https://alpacahack.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-01-26 11:00:00 - 2025-01-26 17:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
-    **添加日历** : https://ctftime.org/event/2633.ics  
     

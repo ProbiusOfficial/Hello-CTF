@@ -848,15 +848,6 @@ hide:
                 **其他说明** : 2025年能源网络安全大赛由中国能源研究会主办，面向电网企业、发电及电力建设企业、石油石化企业、煤炭企业等单位网络安全技术、运维和管理人员，以及国内网络安全领域知名高校、科研机构、产业单位等代表。报名截止日期为2025年3月31日，可通过扫描二维码下载报名表并发送至icc@cers.org.cn邮箱。联系人包括屈庆红、李理和陈炜，可通过电话或邮箱进行咨询。  
                 
         === "国外赛事"
-            ??? Quote "[CSCG 2025](https://play.cscg.live/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://play.cscg.live/)  
-                **比赛名称** : [CSCG 2025](https://play.cscg.live/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-02 01:00:00 - 2025-05-02 00:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : NFITS (https://ctftime.org/team/360674)  
-                **添加日历** : https://ctftime.org/event/2588.ics  
-                
             ??? Quote "[CyberGame 2025](https://cybergame.sk/)"  
                 [![](https://ctftime.org/media/events/cybergame.png){ width="200" align=left }](https://cybergame.sk/)  
                 **比赛名称** : [CyberGame 2025](https://cybergame.sk/)  
@@ -1586,6 +1577,15 @@ hide:
                 **赛事主办** : Winja CTF (https://ctftime.org/team/145228)  
                 **添加日历** : https://ctftime.org/event/2692.ics  
                 
+            ??? Quote "[CSCG 2025](https://play.cscg.live/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://play.cscg.live/)  
+                **比赛名称** : [CSCG 2025](https://play.cscg.live/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-03-02 01:00:00 - 2025-05-02 00:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : NFITS (https://ctftime.org/team/360674)  
+                **添加日历** : https://ctftime.org/event/2588.ics  
+                
             ??? Quote "[WEC CTF 2025](https://wecctf.nitk.ac.in/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://wecctf.nitk.ac.in/)  
                 **比赛名称** : [WEC CTF 2025](https://wecctf.nitk.ac.in/)  
@@ -1801,15 +1801,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : ATC CTF Team (https://ctftime.org/team/370333)  
                 **添加日历** : https://ctftime.org/event/2665.ics  
-                
-            ??? Quote "[AlpacaHack Round 9 (Crypto)](https://alpacahack.com/)"  
-                [![](https://ctftime.org/media/events/dark_512_3.png){ width="200" align=left }](https://alpacahack.com/)  
-                **比赛名称** : [AlpacaHack Round 9 (Crypto)](https://alpacahack.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-01-26 11:00:00 - 2025-01-26 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
-                **添加日历** : https://ctftime.org/event/2633.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
