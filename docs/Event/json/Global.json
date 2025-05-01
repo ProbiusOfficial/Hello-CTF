@@ -36,18 +36,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "bi0sCTF 2025 [POSTPONED]",
-        "比赛时间": "2025-05-03 13:30:00 - 2025-05-05 01:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2672.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.bi0s.in/",
-        "比赛标志": "https://ctftime.org/media/events/image_2025-03-25_143431330.png",
-        "比赛权重": "95.79",
-        "赛事主办": "bi0s (https://ctftime.org/team/662)",
-        "比赛ID": "31",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "UniVsThreats 25 CTF",
         "比赛时间": "2025-05-03 18:00:00 - 2025-05-04 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2726.ics",
@@ -321,6 +309,18 @@
         "比赛权重": "0.00",
         "赛事主办": "diver_osint (https://ctftime.org/team/299569)",
         "比赛ID": "1111",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "bi0sCTF 2025 [POSTPONED]",
+        "比赛时间": "2025-06-07 13:30:00 - 2025-06-09 01:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2672.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bi0s.in/",
+        "比赛标志": "https://ctftime.org/media/events/image_2025-03-25_143431330.png",
+        "比赛权重": "95.79",
+        "赛事主办": "bi0s (https://ctftime.org/team/662)",
+        "比赛ID": "31",
         "比赛状态": "oncoming"
     },
     {

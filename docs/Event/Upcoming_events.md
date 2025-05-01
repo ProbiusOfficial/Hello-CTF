@@ -36,15 +36,6 @@ comments: true
     **赛事主办** : TaruTaru (https://ctftime.org/team/157513)  
     **添加日历** : https://ctftime.org/event/2769.ics  
     
-??? Quote "[bi0sCTF 2025 [POSTPONED]](https://ctf.bi0s.in/)"  
-    [![](https://ctftime.org/media/events/image_2025-03-25_143431330.png){ width="200" align=left }](https://ctf.bi0s.in/)  
-    **比赛名称** : [bi0sCTF 2025 [POSTPONED]](https://ctf.bi0s.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-05-03 13:30:00 - 2025-05-05 01:30:00 UTC+8  
-    **比赛权重** : 95.79  
-    **赛事主办** : bi0s (https://ctftime.org/team/662)  
-    **添加日历** : https://ctftime.org/event/2672.ics  
-    
 ??? Quote "[UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)"  
     [![](https://ctftime.org/media/events/Project.6jpg_1.jpg){ width="200" align=left }](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
     **比赛名称** : [UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
@@ -251,6 +242,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
     **添加日历** : https://ctftime.org/event/2751.ics  
+    
+??? Quote "[bi0sCTF 2025 [POSTPONED]](https://ctf.bi0s.in/)"  
+    [![](https://ctftime.org/media/events/image_2025-03-25_143431330.png){ width="200" align=left }](https://ctf.bi0s.in/)  
+    **比赛名称** : [bi0sCTF 2025 [POSTPONED]](https://ctf.bi0s.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-07 13:30:00 - 2025-06-09 01:30:00 UTC+8  
+    **比赛权重** : 95.79  
+    **赛事主办** : bi0s (https://ctftime.org/team/662)  
+    **添加日历** : https://ctftime.org/event/2672.ics  
     
 ??? Quote "[Goldrush Gauntlet 2025](https://ggctf.cyberhawks.org/)"  
     [![](https://ctftime.org/media/events/CyberHawks_Logo3.png){ width="200" align=left }](https://ggctf.cyberhawks.org/)  
