@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[RPCA CTF 2025](https://grandctf.rpca.ac.th/)"  
-            [![](https://ctftime.org/media/events/Screenshot_4.jpg){ width="200" align=left }](https://grandctf.rpca.ac.th/)  
-            **比赛名称** : [RPCA CTF 2025](https://grandctf.rpca.ac.th/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-05-03 01:00:00 - 2025-05-06 01:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
-            **添加日历** : https://ctftime.org/event/2755.ics  
-            
         ??? Quote "[TsukuCTF 2025](https://tsukuctf.org/)"  
             [![](https://ctftime.org/media/events/icon_8.png){ width="200" align=left }](https://tsukuctf.org/)  
             **比赛名称** : [TsukuCTF 2025](https://tsukuctf.org/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 37.00  
             **赛事主办** : Punk Security (https://ctftime.org/team/212540)  
             **添加日历** : https://ctftime.org/event/2682.ics  
+            
+        ??? Quote "[LakeCTF Finals 24-25](https://lakectf.epfl.ch/)"  
+            [![](https://ctftime.org/media/events/5ee3dccc1b28b5f04bdf2f7b871b1d07.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
+            **比赛名称** : [LakeCTF Finals 24-25](https://lakectf.epfl.ch/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-05-09 16:00:00 - 2025-05-10 00:00:00 UTC+8  
+            **比赛权重** : 36.00  
+            **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
+            **添加日历** : https://ctftime.org/event/2568.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
