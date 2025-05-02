@@ -474,7 +474,7 @@ hide:
                 **比赛名称** : [Grey Cat The Flag 2025](https://ctf.nusgreyhats.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-05-31 20:00:00 - 2025-06-01 20:00:00 UTC+8  
-                **比赛权重** : 0.00  
+                **比赛权重** : 32.92  
                 **赛事主办** : NUS GreyHats (https://ctftime.org/team/16740)  
                 **添加日历** : https://ctftime.org/event/2765.ics  
                 
