@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[SpringForwardCTF 2025 (cancelled)](https://the-event-is-cancelled.com/)"  
-            [![](https://ctftime.org/media/events/Social_Media_Icon.png){ width="200" align=left }](https://the-event-is-cancelled.com/)  
-            **比赛名称** : [SpringForwardCTF 2025 (cancelled)](https://the-event-is-cancelled.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-05-03 00:00:00 - 2025-05-04 00:00:00 UTC+8  
-            **比赛权重** : 24.20  
-            **赛事主办** : NICC (https://ctftime.org/team/214936)  
-            **添加日历** : https://ctftime.org/event/2756.ics  
-            
         ??? Quote "[RPCA CTF 2025](https://grandctf.rpca.ac.th/)"  
             [![](https://ctftime.org/media/events/Screenshot_4.jpg){ width="200" align=left }](https://grandctf.rpca.ac.th/)  
             **比赛名称** : [RPCA CTF 2025](https://grandctf.rpca.ac.th/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
             **添加日历** : https://ctftime.org/event/2726.ics  
+            
+        ??? Quote "[DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ctf.punksecurity.co.uk/)  
+            **比赛名称** : [DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-05-04 18:00:00 - 2025-05-05 06:00:00 UTC+8  
+            **比赛权重** : 37.00  
+            **赛事主办** : Punk Security (https://ctftime.org/team/212540)  
+            **添加日历** : https://ctftime.org/event/2682.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
