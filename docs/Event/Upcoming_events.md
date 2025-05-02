@@ -186,7 +186,7 @@ comments: true
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-06-06 09:00:00 - 2025-06-08 09:00:00 UTC+8  
     **比赛权重** : 48.61  
-    **赛事主办** : floctuah mad fine fr (https://ctftime.org/team/222911)  
+    **赛事主办** : .;,;. (https://ctftime.org/team/222911)  
     **添加日历** : https://ctftime.org/event/2591.ics  
     
 ??? Quote "[MindBreak 2025 by ESGI](https://m1ndbr34k.fr/)"  
