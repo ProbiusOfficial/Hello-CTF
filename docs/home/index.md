@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)"  
-            [![](https://ctftime.org/media/events/Project.6jpg_1.jpg){ width="200" align=left }](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
-            **比赛名称** : [UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-05-03 18:00:00 - 2025-05-04 18:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
-            **添加日历** : https://ctftime.org/event/2726.ics  
-            
         ??? Quote "[DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://ctf.punksecurity.co.uk/)  
             **比赛名称** : [DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 42.00  
             **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
             **添加日历** : https://ctftime.org/event/2749.ics  
+            
+        ??? Quote "[DamCTF 2025](https://damctf.xyz/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://damctf.xyz/)  
+            **比赛名称** : [DamCTF 2025](https://damctf.xyz/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-05-10 08:00:00 - 2025-05-12 08:00:00 UTC+8  
+            **比赛权重** : 60.67  
+            **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
+            **添加日历** : https://ctftime.org/event/2585.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
