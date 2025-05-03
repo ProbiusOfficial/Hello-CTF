@@ -821,15 +821,6 @@ hide:
                 **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
                 **添加日历** : https://ctftime.org/event/2774.ics  
                 
-            ??? Quote "[SpringForwardCTF 2025 (cancelled)](https://the-event-is-cancelled.com/)"  
-                [![](https://ctftime.org/media/events/Social_Media_Icon.png){ width="200" align=left }](https://the-event-is-cancelled.com/)  
-                **比赛名称** : [SpringForwardCTF 2025 (cancelled)](https://the-event-is-cancelled.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-03 00:00:00 - 2025-05-04 00:00:00 UTC+8  
-                **比赛权重** : 24.20  
-                **赛事主办** : NICC (https://ctftime.org/team/214936)  
-                **添加日历** : https://ctftime.org/event/2756.ics  
-                
             ??? Quote "[RPCA CTF 2025](https://grandctf.rpca.ac.th/)"  
                 [![](https://ctftime.org/media/events/Screenshot_4.jpg){ width="200" align=left }](https://grandctf.rpca.ac.th/)  
                 **比赛名称** : [RPCA CTF 2025](https://grandctf.rpca.ac.th/)  
@@ -902,6 +893,15 @@ hide:
                 **其他说明** : NCTF 2025 由 NCTF 2025 组织委员会主办，比赛时间为 3 月 22 日 9:00 - 3 月 23 日 21:00，共计 36 小时，比赛形式为团队赛，每队 1-4 人，分为校内、校外两个赛道。  
                 
         === "国外赛事"
+            ??? Quote "[SpringForwardCTF 2025 (cancelled)](https://the-event-is-cancelled.com/)"  
+                [![](https://ctftime.org/media/events/Social_Media_Icon.png){ width="200" align=left }](https://the-event-is-cancelled.com/)  
+                **比赛名称** : [SpringForwardCTF 2025 (cancelled)](https://the-event-is-cancelled.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-03 00:00:00 - 2025-05-04 00:00:00 UTC+8  
+                **比赛权重** : 24.20  
+                **赛事主办** : NICC (https://ctftime.org/team/214936)  
+                **添加日历** : https://ctftime.org/event/2756.ics  
+                
             ??? Quote "[ICCSDFAI](https://ctf.astanait.edu.kz/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.astanait.edu.kz/)  
                 **比赛名称** : [ICCSDFAI](https://ctf.astanait.edu.kz/)  
@@ -1792,15 +1792,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : CYBER & CHILL (https://ctftime.org/team/299061)  
                 **添加日历** : https://ctftime.org/event/2663.ics  
-                
-            ??? Quote "[ATC Winter Vibes Community CTF](https://atcwintervibescommunityctf.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/ATC_Logo_2.PNG){ width="200" align=left }](https://atcwintervibescommunityctf.ctfd.io/)  
-                **比赛名称** : [ATC Winter Vibes Community CTF](https://atcwintervibescommunityctf.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-01-31 15:00:00 - 2025-02-01 15:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : ATC CTF Team (https://ctftime.org/team/370333)  
-                **添加日历** : https://ctftime.org/event/2665.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
