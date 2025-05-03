@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[TsukuCTF 2025](https://tsukuctf.org/)"  
-            [![](https://ctftime.org/media/events/icon_8.png){ width="200" align=left }](https://tsukuctf.org/)  
-            **比赛名称** : [TsukuCTF 2025](https://tsukuctf.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-05-03 11:00:00 - 2025-05-04 11:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : TaruTaru (https://ctftime.org/team/157513)  
-            **添加日历** : https://ctftime.org/event/2769.ics  
-            
         ??? Quote "[UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)"  
             [![](https://ctftime.org/media/events/Project.6jpg_1.jpg){ width="200" align=left }](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
             **比赛名称** : [UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 36.00  
             **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
             **添加日历** : https://ctftime.org/event/2568.ics  
+            
+        ??? Quote "[Break the Syntax CTF 2025](https://bts2025.wh.edu.pl/)"  
+            [![](https://ctftime.org/media/events/btslogo.png){ width="200" align=left }](https://bts2025.wh.edu.pl/)  
+            **比赛名称** : [Break the Syntax CTF 2025](https://bts2025.wh.edu.pl/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-05-10 00:00:00 - 2025-05-11 18:00:00 UTC+8  
+            **比赛权重** : 42.00  
+            **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
+            **添加日历** : https://ctftime.org/event/2749.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
