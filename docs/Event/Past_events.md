@@ -81,7 +81,7 @@ comments: true
     **比赛名称** : [HACKTHEON SEJONG 2025 Preliminaries](https://hacktheon.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-04-26 08:00:00 - 2025-04-26 17:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
     **添加日历** : https://ctftime.org/event/2719.ics  
     
