@@ -33,12 +33,3 @@ comments: true
     **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
     **添加日历** : https://ctftime.org/event/2755.ics  
     
-??? Quote "[DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.punksecurity.co.uk/)  
-    **比赛名称** : [DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-05-04 18:00:00 - 2025-05-05 06:00:00 UTC+8  
-    **比赛权重** : 37.00  
-    **赛事主办** : Punk Security (https://ctftime.org/team/212540)  
-    **添加日历** : https://ctftime.org/event/2682.ics  
-    

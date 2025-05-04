@@ -705,7 +705,7 @@
         "比赛权重": "37.00",
         "赛事主办": "Punk Security (https://ctftime.org/team/212540)",
         "比赛ID": "892",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "UniVsThreats 25 CTF",
@@ -1893,18 +1893,6 @@
         "比赛权重": "23.89",
         "赛事主办": "Cyber@UC (https://ctftime.org/team/87727)",
         "比赛ID": "1032",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Nullcon Goa HackIM 2025 CTF",
-        "比赛时间": "2025-02-01 16:30:00 - 2025-02-02 16:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2642.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.nullcon.net/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "30.00",
-        "赛事主办": "ENOFLAG (https://ctftime.org/team/1438)",
-        "比赛ID": "27",
         "比赛状态": "past"
     }
 ]

@@ -49,6 +49,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.punksecurity.co.uk/)  
+    **比赛名称** : [DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-04 18:00:00 - 2025-05-05 06:00:00 UTC+8  
+    **比赛权重** : 37.00  
+    **赛事主办** : Punk Security (https://ctftime.org/team/212540)  
+    **添加日历** : https://ctftime.org/event/2682.ics  
+    
 ??? Quote "[UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)"  
     [![](https://ctftime.org/media/events/Project.6jpg_1.jpg){ width="200" align=left }](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
     **比赛名称** : [UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
@@ -939,13 +948,4 @@ comments: true
     **比赛权重** : 23.89  
     **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
     **添加日历** : https://ctftime.org/event/2596.ics  
-    
-??? Quote "[Nullcon Goa HackIM 2025 CTF](https://ctf.nullcon.net/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.nullcon.net/)  
-    **比赛名称** : [Nullcon Goa HackIM 2025 CTF](https://ctf.nullcon.net/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-02-01 16:30:00 - 2025-02-02 16:30:00 UTC+8  
-    **比赛权重** : 30.00  
-    **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
-    **添加日历** : https://ctftime.org/event/2642.ics  
     
