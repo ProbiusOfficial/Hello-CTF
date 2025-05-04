@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.punksecurity.co.uk/)  
-                **比赛名称** : [DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-04 18:00:00 - 2025-05-05 06:00:00 UTC+8  
-                **比赛权重** : 37.00  
-                **赛事主办** : Punk Security (https://ctftime.org/team/212540)  
-                **添加日历** : https://ctftime.org/event/2682.ics  
-                
             ??? Quote "[LakeCTF Finals 24-25](https://lakectf.epfl.ch/)"  
                 [![](https://ctftime.org/media/events/5ee3dccc1b28b5f04bdf2f7b871b1d07.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
                 **比赛名称** : [LakeCTF Finals 24-25](https://lakectf.epfl.ch/)  
@@ -830,14 +821,14 @@ hide:
                 **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
                 **添加日历** : https://ctftime.org/event/2755.ics  
                 
-            ??? Quote "[UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)"  
-                [![](https://ctftime.org/media/events/Project.6jpg_1.jpg){ width="200" align=left }](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
-                **比赛名称** : [UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
+            ??? Quote "[DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.punksecurity.co.uk/)  
+                **比赛名称** : [DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)  
                 **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-03 18:00:00 - 2025-05-04 18:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
-                **添加日历** : https://ctftime.org/event/2726.ics  
+                **比赛时间** : 2025-05-04 18:00:00 - 2025-05-05 06:00:00 UTC+8  
+                **比赛权重** : 37.00  
+                **赛事主办** : Punk Security (https://ctftime.org/team/212540)  
+                **添加日历** : https://ctftime.org/event/2682.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -884,6 +875,15 @@ hide:
                 **其他说明** : NCTF 2025 由 NCTF 2025 组织委员会主办，比赛时间为 3 月 22 日 9:00 - 3 月 23 日 21:00，共计 36 小时，比赛形式为团队赛，每队 1-4 人，分为校内、校外两个赛道。  
                 
         === "国外赛事"
+            ??? Quote "[UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)"  
+                [![](https://ctftime.org/media/events/Project.6jpg_1.jpg){ width="200" align=left }](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
+                **比赛名称** : [UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-03 18:00:00 - 2025-05-04 18:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
+                **添加日历** : https://ctftime.org/event/2726.ics  
+                
             ??? Quote "[TsukuCTF 2025](https://tsukuctf.org/)"  
                 [![](https://ctftime.org/media/events/icon_8.png){ width="200" align=left }](https://tsukuctf.org/)  
                 **比赛名称** : [TsukuCTF 2025](https://tsukuctf.org/)  
@@ -1774,15 +1774,6 @@ hide:
                 **比赛权重** : 30.00  
                 **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
                 **添加日历** : https://ctftime.org/event/2642.ics  
-                
-            ??? Quote "[Dreamhack CTF Season 7 Round #3 (Div. 1)](https://dreamhack.io/ctf/657)"  
-                [![](https://ctftime.org/media/events/cover03.jpg){ width="200" align=left }](https://dreamhack.io/ctf/657)  
-                **比赛名称** : [Dreamhack CTF Season 7 Round #3 (Div. 1)](https://dreamhack.io/ctf/657)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-02-01 08:00:00 - 2025-02-01 23:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
-                **添加日历** : https://ctftime.org/event/2623.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

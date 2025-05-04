@@ -49,6 +49,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)"  
+    [![](https://ctftime.org/media/events/Project.6jpg_1.jpg){ width="200" align=left }](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
+    **比赛名称** : [UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-03 18:00:00 - 2025-05-04 18:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
+    **添加日历** : https://ctftime.org/event/2726.ics  
+    
 ??? Quote "[TsukuCTF 2025](https://tsukuctf.org/)"  
     [![](https://ctftime.org/media/events/icon_8.png){ width="200" align=left }](https://tsukuctf.org/)  
     **比赛名称** : [TsukuCTF 2025](https://tsukuctf.org/)  
@@ -939,13 +948,4 @@ comments: true
     **比赛权重** : 30.00  
     **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
     **添加日历** : https://ctftime.org/event/2642.ics  
-    
-??? Quote "[Dreamhack CTF Season 7 Round #3 (Div. 1)](https://dreamhack.io/ctf/657)"  
-    [![](https://ctftime.org/media/events/cover03.jpg){ width="200" align=left }](https://dreamhack.io/ctf/657)  
-    **比赛名称** : [Dreamhack CTF Season 7 Round #3 (Div. 1)](https://dreamhack.io/ctf/657)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-02-01 08:00:00 - 2025-02-01 23:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
-    **添加日历** : https://ctftime.org/event/2623.ics  
     

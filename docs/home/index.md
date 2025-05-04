@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctf.punksecurity.co.uk/)  
-            **比赛名称** : [DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-05-04 18:00:00 - 2025-05-05 06:00:00 UTC+8  
-            **比赛权重** : 37.00  
-            **赛事主办** : Punk Security (https://ctftime.org/team/212540)  
-            **添加日历** : https://ctftime.org/event/2682.ics  
-            
         ??? Quote "[LakeCTF Finals 24-25](https://lakectf.epfl.ch/)"  
             [![](https://ctftime.org/media/events/5ee3dccc1b28b5f04bdf2f7b871b1d07.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
             **比赛名称** : [LakeCTF Finals 24-25](https://lakectf.epfl.ch/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 60.67  
             **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
             **添加日历** : https://ctftime.org/event/2585.ics  
+            
+        ??? Quote "[justCTF 2025 teaser](http://2025.justctf.team/)"  
+            [![](https://ctftime.org/media/events/b6f4bd9df7efba86c9b2d4eea9f8bc74.png){ width="200" align=left }](http://2025.justctf.team/)  
+            **比赛名称** : [justCTF 2025 teaser](http://2025.justctf.team/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-05-10 14:00:00 - 2025-05-12 03:00:00 UTC+8  
+            **比赛权重** : 97.20  
+            **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
+            **添加日历** : https://ctftime.org/event/2711.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
