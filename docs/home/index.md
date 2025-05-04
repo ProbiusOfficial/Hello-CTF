@@ -81,9 +81,9 @@ hide:
             **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
             **添加日历** : https://ctftime.org/event/2585.ics  
             
-        ??? Quote "[justCTF 2025 teaser](http://2025.justctf.team/)"  
+        ??? Quote "[[POSTPONED] justCTF 2025 teaser](http://2025.justctf.team/)"  
             [![](https://ctftime.org/media/events/b6f4bd9df7efba86c9b2d4eea9f8bc74.png){ width="200" align=left }](http://2025.justctf.team/)  
-            **比赛名称** : [justCTF 2025 teaser](http://2025.justctf.team/)  
+            **比赛名称** : [[POSTPONED] justCTF 2025 teaser](http://2025.justctf.team/)  
             **比赛形式** : Jeopardy  
             **比赛时间** : 2025-05-10 14:00:00 - 2025-05-12 03:00:00 UTC+8  
             **比赛权重** : 97.20  
