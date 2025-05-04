@@ -821,15 +821,6 @@ hide:
                 **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
                 **添加日历** : https://ctftime.org/event/2755.ics  
                 
-            ??? Quote "[DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.punksecurity.co.uk/)  
-                **比赛名称** : [DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-04 18:00:00 - 2025-05-05 06:00:00 UTC+8  
-                **比赛权重** : 37.00  
-                **赛事主办** : Punk Security (https://ctftime.org/team/212540)  
-                **添加日历** : https://ctftime.org/event/2682.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[ACTF 2025](https://actf2025.xctf.org.cn/)"  
@@ -875,6 +866,15 @@ hide:
                 **其他说明** : NCTF 2025 由 NCTF 2025 组织委员会主办，比赛时间为 3 月 22 日 9:00 - 3 月 23 日 21:00，共计 36 小时，比赛形式为团队赛，每队 1-4 人，分为校内、校外两个赛道。  
                 
         === "国外赛事"
+            ??? Quote "[DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.punksecurity.co.uk/)  
+                **比赛名称** : [DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-04 18:00:00 - 2025-05-05 06:00:00 UTC+8  
+                **比赛权重** : 37.00  
+                **赛事主办** : Punk Security (https://ctftime.org/team/212540)  
+                **添加日历** : https://ctftime.org/event/2682.ics  
+                
             ??? Quote "[UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)"  
                 [![](https://ctftime.org/media/events/Project.6jpg_1.jpg){ width="200" align=left }](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
                 **比赛名称** : [UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
@@ -943,7 +943,7 @@ hide:
                 **比赛名称** : [BSidesSF 2025 CTF](https://ctf.bsidessf.net/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-04-26 07:00:00 - 2025-04-28 07:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
                 **添加日历** : https://ctftime.org/event/2721.ics  
                 
@@ -1765,15 +1765,6 @@ hide:
                 **比赛权重** : 23.89  
                 **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
                 **添加日历** : https://ctftime.org/event/2596.ics  
-                
-            ??? Quote "[Nullcon Goa HackIM 2025 CTF](https://ctf.nullcon.net/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.nullcon.net/)  
-                **比赛名称** : [Nullcon Goa HackIM 2025 CTF](https://ctf.nullcon.net/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-02-01 16:30:00 - 2025-02-02 16:30:00 UTC+8  
-                **比赛权重** : 30.00  
-                **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
-                **添加日历** : https://ctftime.org/event/2642.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

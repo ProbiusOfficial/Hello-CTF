@@ -798,7 +798,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.bsidessf.net/",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "BSidesSF (https://ctftime.org/team/54737)",
         "比赛ID": "252",
         "比赛状态": "past"
