@@ -49,6 +49,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[TsukuCTF 2025](https://tsukuctf.org/)"  
+    [![](https://ctftime.org/media/events/icon_8.png){ width="200" align=left }](https://tsukuctf.org/)  
+    **比赛名称** : [TsukuCTF 2025](https://tsukuctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-03 11:00:00 - 2025-05-04 11:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : TaruTaru (https://ctftime.org/team/157513)  
+    **添加日历** : https://ctftime.org/event/2769.ics  
+    
 ??? Quote "[SpringForwardCTF 2025 (cancelled)](https://the-event-is-cancelled.com/)"  
     [![](https://ctftime.org/media/events/Social_Media_Icon.png){ width="200" align=left }](https://the-event-is-cancelled.com/)  
     **比赛名称** : [SpringForwardCTF 2025 (cancelled)](https://the-event-is-cancelled.com/)  
@@ -939,13 +948,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
     **添加日历** : https://ctftime.org/event/2623.ics  
-    
-??? Quote "[ECTF](https://ectf.fr/)"  
-    [![](https://ctftime.org/media/events/fond-blanc_texte-noir.png){ width="200" align=left }](https://ectf.fr/)  
-    **比赛名称** : [ECTF](https://ectf.fr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-01-31 19:00:00 - 2025-02-02 19:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : CYBER & CHILL (https://ctftime.org/team/299061)  
-    **添加日历** : https://ctftime.org/event/2663.ics  
     
