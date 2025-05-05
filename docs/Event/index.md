@@ -812,15 +812,6 @@ hide:
                 **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
                 **添加日历** : https://ctftime.org/event/2774.ics  
                 
-            ??? Quote "[RPCA CTF 2025](https://grandctf.rpca.ac.th/)"  
-                [![](https://ctftime.org/media/events/Screenshot_4.jpg){ width="200" align=left }](https://grandctf.rpca.ac.th/)  
-                **比赛名称** : [RPCA CTF 2025](https://grandctf.rpca.ac.th/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-03 01:00:00 - 2025-05-06 01:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
-                **添加日历** : https://ctftime.org/event/2755.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[ACTF 2025](https://actf2025.xctf.org.cn/)"  
@@ -892,6 +883,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : TaruTaru (https://ctftime.org/team/157513)  
                 **添加日历** : https://ctftime.org/event/2769.ics  
+                
+            ??? Quote "[RPCA CTF 2025](https://grandctf.rpca.ac.th/)"  
+                [![](https://ctftime.org/media/events/Screenshot_4.jpg){ width="200" align=left }](https://grandctf.rpca.ac.th/)  
+                **比赛名称** : [RPCA CTF 2025](https://grandctf.rpca.ac.th/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-03 01:00:00 - 2025-05-06 01:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
+                **添加日历** : https://ctftime.org/event/2755.ics  
                 
             ??? Quote "[SpringForwardCTF 2025 (cancelled)](https://the-event-is-cancelled.com/)"  
                 [![](https://ctftime.org/media/events/Social_Media_Icon.png){ width="200" align=left }](https://the-event-is-cancelled.com/)  
@@ -1756,15 +1756,6 @@ hide:
                 **比赛权重** : 21.81  
                 **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
                 **添加日历** : https://ctftime.org/event/2607.ics  
-                
-            ??? Quote "[BearcatCTF 2025: World Tour](https://play.bearcatctf.io/)"  
-                [![](https://ctftime.org/media/events/bearcat25_logo_short.png){ width="200" align=left }](https://play.bearcatctf.io/)  
-                **比赛名称** : [BearcatCTF 2025: World Tour](https://play.bearcatctf.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-02-01 20:00:00 - 2025-02-02 20:00:00 UTC+8  
-                **比赛权重** : 23.89  
-                **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
-                **添加日历** : https://ctftime.org/event/2596.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
