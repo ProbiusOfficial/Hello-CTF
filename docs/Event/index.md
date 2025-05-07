@@ -424,15 +424,6 @@ hide:
                 **赛事主办** : NUS GreyHats (https://ctftime.org/team/16740)  
                 **添加日历** : https://ctftime.org/event/2765.ics  
                 
-            ??? Quote "[smileyCTF 2025](https://play.ctf.gg/)"  
-                [![](https://ctftime.org/media/events/smiley.png){ width="200" align=left }](https://play.ctf.gg/)  
-                **比赛名称** : [smileyCTF 2025](https://play.ctf.gg/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-06 09:00:00 - 2025-06-08 09:00:00 UTC+8  
-                **比赛权重** : 48.61  
-                **赛事主办** : .;,;. (https://ctftime.org/team/222911)  
-                **添加日历** : https://ctftime.org/event/2591.ics  
-                
             ??? Quote "[MindBreak 2025 by ESGI](https://m1ndbr34k.fr/)"  
                 [![](https://ctftime.org/media/events/image_7s.png){ width="200" align=left }](https://m1ndbr34k.fr/)  
                 **比赛名称** : [MindBreak 2025 by ESGI](https://m1ndbr34k.fr/)  
@@ -531,6 +522,15 @@ hide:
                 **比赛权重** : 46.00  
                 **赛事主办** : KITCTF (https://ctftime.org/team/7221)  
                 **添加日历** : https://ctftime.org/event/2694.ics  
+                
+            ??? Quote "[smileyCTF 2025](https://play.ctf.gg/)"  
+                [![](https://ctftime.org/media/events/smiley.png){ width="200" align=left }](https://play.ctf.gg/)  
+                **比赛名称** : [smileyCTF 2025](https://play.ctf.gg/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-06-21 09:00:00 - 2025-06-23 09:00:00 UTC+8  
+                **比赛权重** : 48.61  
+                **赛事主办** : .;,;. (https://ctftime.org/team/222911)  
+                **添加日历** : https://ctftime.org/event/2591.ics  
                 
             ??? Quote "[GMO Cybersecurity Contest - IERAE CTF 2025](https://gmo-cybersecurity.com/event/ieraectf25/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://gmo-cybersecurity.com/event/ieraectf25/)  
