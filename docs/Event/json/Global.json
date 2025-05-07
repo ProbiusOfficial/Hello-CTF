@@ -180,18 +180,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "smileyCTF 2025",
-        "比赛时间": "2025-06-06 09:00:00 - 2025-06-08 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2591.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://play.ctf.gg/",
-        "比赛标志": "https://ctftime.org/media/events/smiley.png",
-        "比赛权重": "48.61",
-        "赛事主办": ".;,;. (https://ctftime.org/team/222911)",
-        "比赛ID": "785",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "MindBreak 2025 by ESGI",
         "比赛时间": "2025-06-07 05:00:00 - 2025-06-07 14:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2766.ics",
@@ -321,6 +309,18 @@
         "比赛权重": "46.00",
         "赛事主办": "KITCTF (https://ctftime.org/team/7221)",
         "比赛ID": "854",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "smileyCTF 2025",
+        "比赛时间": "2025-06-21 09:00:00 - 2025-06-23 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2591.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://play.ctf.gg/",
+        "比赛标志": "https://ctftime.org/media/events/smiley.png",
+        "比赛权重": "48.61",
+        "赛事主办": ".;,;. (https://ctftime.org/team/222911)",
+        "比赛ID": "785",
         "比赛状态": "oncoming"
     },
     {
