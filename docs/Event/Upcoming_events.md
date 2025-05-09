@@ -225,15 +225,6 @@ comments: true
     **赛事主办** : KITCTF (https://ctftime.org/team/7221)  
     **添加日历** : https://ctftime.org/event/2694.ics  
     
-??? Quote "[smileyCTF 2025](https://play.ctf.gg/)"  
-    [![](https://ctftime.org/media/events/smiley.png){ width="200" align=left }](https://play.ctf.gg/)  
-    **比赛名称** : [smileyCTF 2025](https://play.ctf.gg/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-06-21 09:00:00 - 2025-06-23 09:00:00 UTC+8  
-    **比赛权重** : 48.61  
-    **赛事主办** : .;,;. (https://ctftime.org/team/222911)  
-    **添加日历** : https://ctftime.org/event/2591.ics  
-    
 ??? Quote "[GMO Cybersecurity Contest - IERAE CTF 2025](https://gmo-cybersecurity.com/event/ieraectf25/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://gmo-cybersecurity.com/event/ieraectf25/)  
     **比赛名称** : [GMO Cybersecurity Contest - IERAE CTF 2025](https://gmo-cybersecurity.com/event/ieraectf25/)  
@@ -242,6 +233,15 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : ierae (https://ctftime.org/team/224122)  
     **添加日历** : https://ctftime.org/event/2655.ics  
+    
+??? Quote "[MaltaCTF 2025 Quals](https://ctf.mt/)"  
+    [![](https://ctftime.org/media/events/MaltaCTF.png){ width="200" align=left }](https://ctf.mt/)  
+    **比赛名称** : [MaltaCTF 2025 Quals](https://ctf.mt/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-21 15:00:00 - 2025-06-22 15:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Friendly Maltese Citizens (https://ctftime.org/team/220769)  
+    **添加日历** : https://ctftime.org/event/2776.ics  
     
 ??? Quote "[cornCTF 2025](https://cornc.tf/)"  
     [![](https://ctftime.org/media/events/cornctf.png){ width="200" align=left }](https://cornc.tf/)  
@@ -270,15 +270,6 @@ comments: true
     **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
     **添加日历** : https://ctftime.org/event/2640.ics  
     
-??? Quote "[MaltaCTF 2025 Quals](https://ctf.mt/)"  
-    [![](https://ctftime.org/media/events/MaltaCTF.png){ width="200" align=left }](https://ctf.mt/)  
-    **比赛名称** : [MaltaCTF 2025 Quals](https://ctf.mt/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-06-28 15:00:00 - 2025-06-29 15:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Friendly Maltese Citizens (https://ctftime.org/team/220769)  
-    **添加日历** : https://ctftime.org/event/2776.ics  
-    
 ??? Quote "[R3CTF 2025](https://ctf2025.r3kapig.com/)"  
     [![](https://ctftime.org/media/events/111_1.png){ width="200" align=left }](https://ctf2025.r3kapig.com/)  
     **比赛名称** : [R3CTF 2025](https://ctf2025.r3kapig.com/)  
@@ -287,6 +278,15 @@ comments: true
     **比赛权重** : 24.50  
     **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
     **添加日历** : https://ctftime.org/event/2731.ics  
+    
+??? Quote "[smileyCTF 2025](https://play.ctf.gg/)"  
+    [![](https://ctftime.org/media/events/smiley.png){ width="200" align=left }](https://play.ctf.gg/)  
+    **比赛名称** : [smileyCTF 2025](https://play.ctf.gg/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-11 09:00:00 - 2025-07-13 09:00:00 UTC+8  
+    **比赛权重** : 48.61  
+    **赛事主办** : .;,;. (https://ctftime.org/team/222911)  
+    **添加日历** : https://ctftime.org/event/2591.ics  
     
 ??? Quote "[L3akCTF 2025](https://ctf.l3ak.team/)"  
     [![](https://ctftime.org/media/events/l3ak-color-transparent.png){ width="200" align=left }](https://ctf.l3ak.team/)  
