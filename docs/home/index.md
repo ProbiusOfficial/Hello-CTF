@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[DamCTF 2025](https://damctf.xyz/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://damctf.xyz/)  
-            **比赛名称** : [DamCTF 2025](https://damctf.xyz/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-05-10 08:00:00 - 2025-05-12 08:00:00 UTC+8  
-            **比赛权重** : 60.67  
-            **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
-            **添加日历** : https://ctftime.org/event/2585.ics  
-            
         ??? Quote "[BYUCTF 2025](https://ctfd.cyberjousting.com/)"  
             [![](https://ctftime.org/media/events/byuctf.jpg){ width="200" align=left }](https://ctfd.cyberjousting.com/)  
             **比赛名称** : [BYUCTF 2025](https://ctfd.cyberjousting.com/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 53.00  
             **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
             **添加日历** : https://ctftime.org/event/2632.ics  
+            
+        ??? Quote "[SAS CTF 2025 Quals](https://ctf.thesascon.com/)"  
+            [![](https://ctftime.org/media/events/SAS25_new.png){ width="200" align=left }](https://ctf.thesascon.com/)  
+            **比赛名称** : [SAS CTF 2025 Quals](https://ctf.thesascon.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-05-17 20:00:00 - 2025-05-18 20:00:00 UTC+8  
+            **比赛权重** : 20.72  
+            **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
+            **添加日历** : https://ctftime.org/event/2636.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

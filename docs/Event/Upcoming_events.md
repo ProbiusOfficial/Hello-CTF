@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[DamCTF 2025](https://damctf.xyz/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://damctf.xyz/)  
-    **比赛名称** : [DamCTF 2025](https://damctf.xyz/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-05-10 08:00:00 - 2025-05-12 08:00:00 UTC+8  
-    **比赛权重** : 60.67  
-    **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
-    **添加日历** : https://ctftime.org/event/2585.ics  
-    
 ??? Quote "[BYUCTF 2025](https://ctfd.cyberjousting.com/)"  
     [![](https://ctftime.org/media/events/byuctf.jpg){ width="200" align=left }](https://ctfd.cyberjousting.com/)  
     **比赛名称** : [BYUCTF 2025](https://ctfd.cyberjousting.com/)  
