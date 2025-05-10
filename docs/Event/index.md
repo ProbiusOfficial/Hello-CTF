@@ -325,15 +325,6 @@ hide:
                 **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
                 **添加日历** : https://ctftime.org/event/2632.ics  
                 
-            ??? Quote "[SAS CTF 2025 Quals](https://ctf.thesascon.com/)"  
-                [![](https://ctftime.org/media/events/SAS25_new.png){ width="200" align=left }](https://ctf.thesascon.com/)  
-                **比赛名称** : [SAS CTF 2025 Quals](https://ctf.thesascon.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-17 20:00:00 - 2025-05-18 20:00:00 UTC+8  
-                **比赛权重** : 20.72  
-                **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
-                **添加日历** : https://ctftime.org/event/2636.ics  
-                
             ??? Quote "[AI CTF 2025](https://aictf.phdays.fun/)"  
                 [![](https://ctftime.org/media/events/821553befa9c3ad5b7d17e5e1cbb36a7.png){ width="200" align=left }](https://aictf.phdays.fun/)  
                 **比赛名称** : [AI CTF 2025](https://aictf.phdays.fun/)  
@@ -378,6 +369,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : DaVinciCode (https://ctftime.org/team/112645)  
                 **添加日历** : https://ctftime.org/event/2675.ics  
+                
+            ??? Quote "[SAS CTF 2025 Quals](https://ctf.thesascon.com/)"  
+                [![](https://ctftime.org/media/events/SAS25_new.png){ width="200" align=left }](https://ctf.thesascon.com/)  
+                **比赛名称** : [SAS CTF 2025 Quals](https://ctf.thesascon.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-24 20:00:00 - 2025-05-25 20:00:00 UTC+8  
+                **比赛权重** : 20.72  
+                **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
+                **添加日历** : https://ctftime.org/event/2636.ics  
                 
             ??? Quote "[D^3CTF 2025](https://d3c.tf/)"  
                 [![](https://ctftime.org/media/events/ddd_1.png){ width="200" align=left }](https://d3c.tf/)  
@@ -495,6 +495,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
                 **添加日历** : https://ctftime.org/event/2717.ics  
+                
+            ??? Quote "[AMSI CTF 2025](https://amsi-sorbonne.fr/)"  
+                [![](https://ctftime.org/media/events/amsi_logo_animated.gif){ width="200" align=left }](https://amsi-sorbonne.fr/)  
+                **比赛名称** : [AMSI CTF 2025](https://amsi-sorbonne.fr/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-06-14 04:00:00 - 2025-06-15 02:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : AMSI CTF Team (https://ctftime.org/team/383289)  
+                **添加日历** : https://ctftime.org/event/2790.ics  
                 
             ??? Quote "[Crypto CTF 2025](https://cr.yp.toc.tf/)"  
                 [![](https://ctftime.org/media/events/cryptoctf_1.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
@@ -893,6 +902,15 @@ hide:
                 **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
                 **添加日历** : https://ctftime.org/event/2585.ics  
                 
+            ??? Quote "[GooseCTF - misc0nfig 25](https://goosectf.lilypadd.com/)"  
+                [![](https://ctftime.org/media/events/misc0nfig_banner_transparent.png){ width="200" align=left }](https://goosectf.lilypadd.com/)  
+                **比赛名称** : [GooseCTF - misc0nfig 25](https://goosectf.lilypadd.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-10 19:00:00 - 2025-05-12 06:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Warwick Cyber Security Society (https://ctftime.org/team/277289)  
+                **添加日历** : https://ctftime.org/event/2789.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[ACTF 2025](https://actf2025.xctf.org.cn/)"  
@@ -938,6 +956,15 @@ hide:
                 **其他说明** : NCTF 2025 由 NCTF 2025 组织委员会主办，比赛时间为 3 月 22 日 9:00 - 3 月 23 日 21:00，共计 36 小时，比赛形式为团队赛，每队 1-4 人，分为校内、校外两个赛道。  
                 
         === "国外赛事"
+            ??? Quote "[Rams CTF 2025](https://rams-ctf.com/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://rams-ctf.com/)  
+                **比赛名称** : [Rams CTF 2025](https://rams-ctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-10 23:11:20 - 2025-05-10 23:11:20 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : RAM Overflow (https://ctftime.org/team/378601)  
+                **添加日历** : https://ctftime.org/event/2791.ics  
+                
             ??? Quote "[LakeCTF Finals 24-25](https://lakectf.epfl.ch/)"  
                 [![](https://ctftime.org/media/events/5ee3dccc1b28b5f04bdf2f7b871b1d07.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
                 **比赛名称** : [LakeCTF Finals 24-25](https://lakectf.epfl.ch/)  
@@ -1828,15 +1855,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
                 **添加日历** : https://ctftime.org/event/2624.ics  
-                
-            ??? Quote "[SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025](https://www.saiborg.io/)"  
-                [![](https://ctftime.org/media/events/saiborg-profile_1.jpg){ width="200" align=left }](https://www.saiborg.io/)  
-                **比赛名称** : [SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025](https://www.saiborg.io/)  
-                **比赛形式** : Hack quest  
-                **比赛时间** : 2025-02-21 22:30:00 - 2025-02-22 05:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Saiborg (https://ctftime.org/team/271868)  
-                **添加日历** : https://ctftime.org/event/2557.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

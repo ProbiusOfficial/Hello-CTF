@@ -48,18 +48,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "SAS CTF 2025 Quals",
-        "比赛时间": "2025-05-17 20:00:00 - 2025-05-18 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2636.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.thesascon.com/",
-        "比赛标志": "https://ctftime.org/media/events/SAS25_new.png",
-        "比赛权重": "20.72",
-        "赛事主办": "SAS CREW (https://ctftime.org/team/283057)",
-        "比赛ID": "1081",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "AI CTF 2025",
         "比赛时间": "2025-05-23 01:00:00 - 2025-05-24 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2778.ics",
@@ -117,6 +105,18 @@
         "比赛权重": "0.00",
         "赛事主办": "DaVinciCode (https://ctftime.org/team/112645)",
         "比赛ID": "582",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "SAS CTF 2025 Quals",
+        "比赛时间": "2025-05-24 20:00:00 - 2025-05-25 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2636.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.thesascon.com/",
+        "比赛标志": "https://ctftime.org/media/events/SAS25_new.png",
+        "比赛权重": "20.72",
+        "赛事主办": "SAS CREW (https://ctftime.org/team/283057)",
+        "比赛ID": "1081",
         "比赛状态": "oncoming"
     },
     {
@@ -273,6 +273,18 @@
         "比赛权重": "0",
         "赛事主办": "PlayCyber (https://ctftime.org/team/165788)",
         "比赛ID": "740",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "AMSI CTF 2025",
+        "比赛时间": "2025-06-14 04:00:00 - 2025-06-15 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2790.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://amsi-sorbonne.fr/",
+        "比赛标志": "https://ctftime.org/media/events/amsi_logo_animated.gif",
+        "比赛权重": "0.00",
+        "赛事主办": "AMSI CTF Team (https://ctftime.org/team/383289)",
+        "比赛ID": "1327",
         "比赛状态": "oncoming"
     },
     {
@@ -790,6 +802,30 @@
         "赛事主办": "OSUSEC (https://ctftime.org/team/12858)",
         "比赛ID": "423",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "GooseCTF - misc0nfig 25",
+        "比赛时间": "2025-05-10 19:00:00 - 2025-05-12 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2789.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://goosectf.lilypadd.com/",
+        "比赛标志": "https://ctftime.org/media/events/misc0nfig_banner_transparent.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Warwick Cyber Security Society (https://ctftime.org/team/277289)",
+        "比赛ID": "1236",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Rams CTF 2025",
+        "比赛时间": "2025-05-10 23:11:20 - 2025-05-10 23:11:20 UTC+8",
+        "添加日历": "https://ctftime.org/event/2791.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://rams-ctf.com/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "RAM Overflow (https://ctftime.org/team/378601)",
+        "比赛ID": "1319",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "LakeCTF Finals 24-25",
@@ -1977,18 +2013,6 @@
         "比赛权重": "0",
         "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
         "比赛ID": "1232",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025",
-        "比赛时间": "2025-02-21 22:30:00 - 2025-02-22 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2557.ics",
-        "比赛形式": "Hack quest",
-        "比赛链接": "https://www.saiborg.io/",
-        "比赛标志": "https://ctftime.org/media/events/saiborg-profile_1.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "Saiborg (https://ctftime.org/team/271868)",
-        "比赛ID": "1009",
         "比赛状态": "past"
     }
 ]

@@ -49,6 +49,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Rams CTF 2025](https://rams-ctf.com/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://rams-ctf.com/)  
+    **比赛名称** : [Rams CTF 2025](https://rams-ctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-10 23:11:20 - 2025-05-10 23:11:20 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : RAM Overflow (https://ctftime.org/team/378601)  
+    **添加日历** : https://ctftime.org/event/2791.ics  
+    
 ??? Quote "[LakeCTF Finals 24-25](https://lakectf.epfl.ch/)"  
     [![](https://ctftime.org/media/events/5ee3dccc1b28b5f04bdf2f7b871b1d07.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
     **比赛名称** : [LakeCTF Finals 24-25](https://lakectf.epfl.ch/)  
@@ -939,13 +948,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
     **添加日历** : https://ctftime.org/event/2624.ics  
-    
-??? Quote "[SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025](https://www.saiborg.io/)"  
-    [![](https://ctftime.org/media/events/saiborg-profile_1.jpg){ width="200" align=left }](https://www.saiborg.io/)  
-    **比赛名称** : [SAIBORG | Elite Hacking Competition | Edition #2 | 21/Feb/2025](https://www.saiborg.io/)  
-    **比赛形式** : Hack quest  
-    **比赛时间** : 2025-02-21 22:30:00 - 2025-02-22 05:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Saiborg (https://ctftime.org/team/271868)  
-    **添加日历** : https://ctftime.org/event/2557.ics  
     

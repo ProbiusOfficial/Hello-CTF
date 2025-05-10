@@ -45,15 +45,6 @@ comments: true
     **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
     **添加日历** : https://ctftime.org/event/2632.ics  
     
-??? Quote "[SAS CTF 2025 Quals](https://ctf.thesascon.com/)"  
-    [![](https://ctftime.org/media/events/SAS25_new.png){ width="200" align=left }](https://ctf.thesascon.com/)  
-    **比赛名称** : [SAS CTF 2025 Quals](https://ctf.thesascon.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-05-17 20:00:00 - 2025-05-18 20:00:00 UTC+8  
-    **比赛权重** : 20.72  
-    **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
-    **添加日历** : https://ctftime.org/event/2636.ics  
-    
 ??? Quote "[AI CTF 2025](https://aictf.phdays.fun/)"  
     [![](https://ctftime.org/media/events/821553befa9c3ad5b7d17e5e1cbb36a7.png){ width="200" align=left }](https://aictf.phdays.fun/)  
     **比赛名称** : [AI CTF 2025](https://aictf.phdays.fun/)  
@@ -98,6 +89,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : DaVinciCode (https://ctftime.org/team/112645)  
     **添加日历** : https://ctftime.org/event/2675.ics  
+    
+??? Quote "[SAS CTF 2025 Quals](https://ctf.thesascon.com/)"  
+    [![](https://ctftime.org/media/events/SAS25_new.png){ width="200" align=left }](https://ctf.thesascon.com/)  
+    **比赛名称** : [SAS CTF 2025 Quals](https://ctf.thesascon.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-24 20:00:00 - 2025-05-25 20:00:00 UTC+8  
+    **比赛权重** : 20.72  
+    **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
+    **添加日历** : https://ctftime.org/event/2636.ics  
     
 ??? Quote "[D^3CTF 2025](https://d3c.tf/)"  
     [![](https://ctftime.org/media/events/ddd_1.png){ width="200" align=left }](https://d3c.tf/)  
@@ -215,6 +215,15 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
     **添加日历** : https://ctftime.org/event/2717.ics  
+    
+??? Quote "[AMSI CTF 2025](https://amsi-sorbonne.fr/)"  
+    [![](https://ctftime.org/media/events/amsi_logo_animated.gif){ width="200" align=left }](https://amsi-sorbonne.fr/)  
+    **比赛名称** : [AMSI CTF 2025](https://amsi-sorbonne.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-14 04:00:00 - 2025-06-15 02:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : AMSI CTF Team (https://ctftime.org/team/383289)  
+    **添加日历** : https://ctftime.org/event/2790.ics  
     
 ??? Quote "[Crypto CTF 2025](https://cr.yp.toc.tf/)"  
     [![](https://ctftime.org/media/events/cryptoctf_1.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
