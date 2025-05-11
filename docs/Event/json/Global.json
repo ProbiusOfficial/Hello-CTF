@@ -420,18 +420,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "smileyCTF 2025",
-        "比赛时间": "2025-07-11 09:00:00 - 2025-07-13 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2591.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://play.ctf.gg/",
-        "比赛标志": "https://ctftime.org/media/events/smiley.png",
-        "比赛权重": "48.61",
-        "赛事主办": ".;,;. (https://ctftime.org/team/222911)",
-        "比赛ID": "785",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "L3akCTF 2025",
         "比赛时间": "2025-07-12 01:00:00 - 2025-07-14 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2629.ics",
@@ -441,6 +429,18 @@
         "比赛权重": "24.43",
         "赛事主办": "L3ak (https://ctftime.org/team/220336)",
         "比赛ID": "1077",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "smileyCTF 2025",
+        "比赛时间": "2025-07-12 09:00:00 - 2025-07-14 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2591.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://play.ctf.gg/",
+        "比赛标志": "https://ctftime.org/media/events/smiley.png",
+        "比赛权重": "48.61",
+        "赛事主办": ".;,;. (https://ctftime.org/team/222911)",
+        "比赛ID": "785",
         "比赛状态": "oncoming"
     },
     {

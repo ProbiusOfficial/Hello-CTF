@@ -604,15 +604,6 @@ hide:
                 **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
                 **添加日历** : https://ctftime.org/event/2731.ics  
                 
-            ??? Quote "[smileyCTF 2025](https://play.ctf.gg/)"  
-                [![](https://ctftime.org/media/events/smiley.png){ width="200" align=left }](https://play.ctf.gg/)  
-                **比赛名称** : [smileyCTF 2025](https://play.ctf.gg/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-07-11 09:00:00 - 2025-07-13 09:00:00 UTC+8  
-                **比赛权重** : 48.61  
-                **赛事主办** : .;,;. (https://ctftime.org/team/222911)  
-                **添加日历** : https://ctftime.org/event/2591.ics  
-                
             ??? Quote "[L3akCTF 2025](https://ctf.l3ak.team/)"  
                 [![](https://ctftime.org/media/events/l3ak-color-transparent.png){ width="200" align=left }](https://ctf.l3ak.team/)  
                 **比赛名称** : [L3akCTF 2025](https://ctf.l3ak.team/)  
@@ -621,6 +612,15 @@ hide:
                 **比赛权重** : 24.43  
                 **赛事主办** : L3ak (https://ctftime.org/team/220336)  
                 **添加日历** : https://ctftime.org/event/2629.ics  
+                
+            ??? Quote "[smileyCTF 2025](https://play.ctf.gg/)"  
+                [![](https://ctftime.org/media/events/smiley.png){ width="200" align=left }](https://play.ctf.gg/)  
+                **比赛名称** : [smileyCTF 2025](https://play.ctf.gg/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-07-12 09:00:00 - 2025-07-14 09:00:00 UTC+8  
+                **比赛权重** : 48.61  
+                **赛事主办** : .;,;. (https://ctftime.org/team/222911)  
+                **添加日历** : https://ctftime.org/event/2591.ics  
                 
             ??? Quote "[DownUnderCTF 2025](https://play.duc.tf/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://play.duc.tf/)  
