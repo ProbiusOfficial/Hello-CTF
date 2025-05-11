@@ -24,15 +24,6 @@ comments: true
     **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
     **添加日历** : https://ctftime.org/event/2774.ics  
     
-??? Quote "[San Diego CTF 2025](https://ctf.sdc.tf/)"  
-    [![](https://ctftime.org/media/events/sdctf_1.png){ width="200" align=left }](https://ctf.sdc.tf/)  
-    **比赛名称** : [San Diego CTF 2025](https://ctf.sdc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-05-10 07:00:00 - 2025-05-12 07:00:00 UTC+8  
-    **比赛权重** : 22.18  
-    **赛事主办** : 3 Prongs And a Computer (https://ctftime.org/team/112558)  
-    **添加日历** : https://ctftime.org/event/2785.ics  
-    
 ??? Quote "[DamCTF 2025](https://damctf.xyz/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://damctf.xyz/)  
     **比赛名称** : [DamCTF 2025](https://damctf.xyz/)  

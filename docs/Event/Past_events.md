@@ -67,6 +67,15 @@ comments: true
     **赛事主办** : Warwick Cyber Security Society (https://ctftime.org/team/277289)  
     **添加日历** : https://ctftime.org/event/2789.ics  
     
+??? Quote "[San Diego CTF 2025](https://ctf.sdc.tf/)"  
+    [![](https://ctftime.org/media/events/sdctf_1.png){ width="200" align=left }](https://ctf.sdc.tf/)  
+    **比赛名称** : [San Diego CTF 2025](https://ctf.sdc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-10 07:00:00 - 2025-05-12 07:00:00 UTC+8  
+    **比赛权重** : 22.18  
+    **赛事主办** : 3 Prongs And a Computer (https://ctftime.org/team/112558)  
+    **添加日历** : https://ctftime.org/event/2785.ics  
+    
 ??? Quote "[Break the Syntax CTF 2025](https://bts2025.wh.edu.pl/)"  
     [![](https://ctftime.org/media/events/btslogo.png){ width="200" align=left }](https://bts2025.wh.edu.pl/)  
     **比赛名称** : [Break the Syntax CTF 2025](https://bts2025.wh.edu.pl/)  
@@ -939,13 +948,4 @@ comments: true
     **比赛权重** : 22.63  
     **赛事主办** : ACECTF (https://ctftime.org/team/364715)  
     **添加日历** : https://ctftime.org/event/2619.ics  
-    
-??? Quote "[TRX CTF 2025](https://ctf.theromanxpl0.it/)"  
-    [![](https://ctftime.org/media/events/TRX_1.png){ width="200" align=left }](https://ctf.theromanxpl0.it/)  
-    **比赛名称** : [TRX CTF 2025](https://ctf.theromanxpl0.it/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-02-22 22:00:00 - 2025-02-23 22:00:00 UTC+8  
-    **比赛权重** : 24.14  
-    **赛事主办** : TheRomanXpl0it (https://ctftime.org/team/46516)  
-    **添加日历** : https://ctftime.org/event/2654.ics  
     
