@@ -768,18 +768,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Break the Syntax CTF 2025",
-        "比赛时间": "2025-05-10 00:00:00 - 2025-05-11 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2749.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://bts2025.wh.edu.pl/",
-        "比赛标志": "https://ctftime.org/media/events/btslogo.png",
-        "比赛权重": "42.00",
-        "赛事主办": "PWr Synt@x Err0r (https://ctftime.org/team/88205)",
-        "比赛ID": "558",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "San Diego CTF 2025",
         "比赛时间": "2025-05-10 07:00:00 - 2025-05-12 07:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2785.ics",
@@ -828,6 +816,18 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "Break the Syntax CTF 2025",
+        "比赛时间": "2025-05-10 00:00:00 - 2025-05-11 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2749.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://bts2025.wh.edu.pl/",
+        "比赛标志": "https://ctftime.org/media/events/btslogo.png",
+        "比赛权重": "42.00",
+        "赛事主办": "PWr Synt@x Err0r (https://ctftime.org/team/88205)",
+        "比赛ID": "558",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "LakeCTF Finals 24-25",
         "比赛时间": "2025-05-09 16:00:00 - 2025-05-10 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2568.ics",
@@ -858,7 +858,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu",
         "比赛标志": "https://ctftime.org/media/events/Project.6jpg_1.jpg",
-        "比赛权重": "0",
+        "比赛权重": "18.29",
         "赛事主办": "UVT-CTF (https://ctftime.org/team/214520)",
         "比赛ID": "1267",
         "比赛状态": "past"
@@ -2001,18 +2001,6 @@
         "比赛权重": "22.04",
         "赛事主办": "IIT(BHU)CyberSec (https://ctftime.org/team/22546)",
         "比赛ID": "1251",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Dreamhack CTF Season 7 Round #4 (Div. 2)",
-        "比赛时间": "2025-02-22 08:00:00 - 2025-02-22 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2624.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dreamhack.io/ctf/658",
-        "比赛标志": "https://ctftime.org/media/events/cover04.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
-        "比赛ID": "1232",
         "比赛状态": "past"
     }
 ]

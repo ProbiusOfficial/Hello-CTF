@@ -875,15 +875,6 @@ hide:
                 **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
                 **添加日历** : https://ctftime.org/event/2774.ics  
                 
-            ??? Quote "[Break the Syntax CTF 2025](https://bts2025.wh.edu.pl/)"  
-                [![](https://ctftime.org/media/events/btslogo.png){ width="200" align=left }](https://bts2025.wh.edu.pl/)  
-                **比赛名称** : [Break the Syntax CTF 2025](https://bts2025.wh.edu.pl/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-10 00:00:00 - 2025-05-11 18:00:00 UTC+8  
-                **比赛权重** : 42.00  
-                **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
-                **添加日历** : https://ctftime.org/event/2749.ics  
-                
             ??? Quote "[San Diego CTF 2025](https://ctf.sdc.tf/)"  
                 [![](https://ctftime.org/media/events/sdctf_1.png){ width="200" align=left }](https://ctf.sdc.tf/)  
                 **比赛名称** : [San Diego CTF 2025](https://ctf.sdc.tf/)  
@@ -965,6 +956,15 @@ hide:
                 **赛事主办** : RAM Overflow (https://ctftime.org/team/378601)  
                 **添加日历** : https://ctftime.org/event/2791.ics  
                 
+            ??? Quote "[Break the Syntax CTF 2025](https://bts2025.wh.edu.pl/)"  
+                [![](https://ctftime.org/media/events/btslogo.png){ width="200" align=left }](https://bts2025.wh.edu.pl/)  
+                **比赛名称** : [Break the Syntax CTF 2025](https://bts2025.wh.edu.pl/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-10 00:00:00 - 2025-05-11 18:00:00 UTC+8  
+                **比赛权重** : 42.00  
+                **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
+                **添加日历** : https://ctftime.org/event/2749.ics  
+                
             ??? Quote "[LakeCTF Finals 24-25](https://lakectf.epfl.ch/)"  
                 [![](https://ctftime.org/media/events/5ee3dccc1b28b5f04bdf2f7b871b1d07.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
                 **比赛名称** : [LakeCTF Finals 24-25](https://lakectf.epfl.ch/)  
@@ -988,7 +988,7 @@ hide:
                 **比赛名称** : [UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-05-03 18:00:00 - 2025-05-04 18:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 18.29  
                 **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
                 **添加日历** : https://ctftime.org/event/2726.ics  
                 
@@ -1846,15 +1846,6 @@ hide:
                 **比赛权重** : 22.04  
                 **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
                 **添加日历** : https://ctftime.org/event/2668.ics  
-                
-            ??? Quote "[Dreamhack CTF Season 7 Round #4 (Div. 2)](https://dreamhack.io/ctf/658)"  
-                [![](https://ctftime.org/media/events/cover04.jpg){ width="200" align=left }](https://dreamhack.io/ctf/658)  
-                **比赛名称** : [Dreamhack CTF Season 7 Round #4 (Div. 2)](https://dreamhack.io/ctf/658)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-02-22 08:00:00 - 2025-02-22 23:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
-                **添加日历** : https://ctftime.org/event/2624.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
