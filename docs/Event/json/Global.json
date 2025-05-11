@@ -792,18 +792,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "GooseCTF - misc0nfig 25",
-        "比赛时间": "2025-05-10 19:00:00 - 2025-05-12 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2789.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://goosectf.lilypadd.com/",
-        "比赛标志": "https://ctftime.org/media/events/misc0nfig_banner_transparent.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Warwick Cyber Security Society (https://ctftime.org/team/277289)",
-        "比赛ID": "1236",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Rams CTF 2025",
         "比赛时间": "2025-05-10 23:11:20 - 2025-05-10 23:11:20 UTC+8",
         "添加日历": "https://ctftime.org/event/2791.ics",
@@ -813,6 +801,18 @@
         "比赛权重": "0",
         "赛事主办": "RAM Overflow (https://ctftime.org/team/378601)",
         "比赛ID": "1319",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "GooseCTF - misc0nfig 25",
+        "比赛时间": "2025-05-10 19:00:00 - 2025-05-12 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2789.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://goosectf.lilypadd.com/",
+        "比赛标志": "https://ctftime.org/media/events/misc0nfig_banner_transparent.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Warwick Cyber Security Society (https://ctftime.org/team/277289)",
+        "比赛ID": "1236",
         "比赛状态": "past"
     },
     {
@@ -1989,18 +1989,6 @@
         "比赛权重": "24.14",
         "赛事主办": "TheRomanXpl0it (https://ctftime.org/team/46516)",
         "比赛ID": "1238",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Kashi CTF 2025",
-        "比赛时间": "2025-02-22 20:00:00 - 2025-02-23 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2668.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://kashictf.iitbhucybersec.in/",
-        "比赛标志": "https://ctftime.org/media/events/logo_105.png",
-        "比赛权重": "22.04",
-        "赛事主办": "IIT(BHU)CyberSec (https://ctftime.org/team/22546)",
-        "比赛ID": "1251",
         "比赛状态": "past"
     }
 ]
