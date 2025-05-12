@@ -67,6 +67,15 @@ comments: true
     **赛事主办** : Warwick Cyber Security Society (https://ctftime.org/team/277289)  
     **添加日历** : https://ctftime.org/event/2789.ics  
     
+??? Quote "[DamCTF 2025](https://damctf.xyz/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://damctf.xyz/)  
+    **比赛名称** : [DamCTF 2025](https://damctf.xyz/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-10 08:00:00 - 2025-05-12 08:00:00 UTC+8  
+    **比赛权重** : 60.67  
+    **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
+    **添加日历** : https://ctftime.org/event/2585.ics  
+    
 ??? Quote "[San Diego CTF 2025](https://ctf.sdc.tf/)"  
     [![](https://ctftime.org/media/events/sdctf_1.png){ width="200" align=left }](https://ctf.sdc.tf/)  
     **比赛名称** : [San Diego CTF 2025](https://ctf.sdc.tf/)  
@@ -939,13 +948,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Bloomsburg Broskies (https://ctftime.org/team/372116)  
     **添加日历** : https://ctftime.org/event/2702.ics  
-    
-??? Quote "[ACECTF 1.0](https://acectf.tech/)"  
-    [![](https://ctftime.org/media/events/WhatsApp_Image_2024-12-26_at_12.03.44_7efe1dad.jpg){ width="200" align=left }](https://acectf.tech/)  
-    **比赛名称** : [ACECTF 1.0](https://acectf.tech/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-02-27 14:30:00 - 2025-02-28 14:30:00 UTC+8  
-    **比赛权重** : 22.63  
-    **赛事主办** : ACECTF (https://ctftime.org/team/364715)  
-    **添加日历** : https://ctftime.org/event/2619.ics  
     

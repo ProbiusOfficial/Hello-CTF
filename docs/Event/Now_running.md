@@ -24,12 +24,3 @@ comments: true
     **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
     **添加日历** : https://ctftime.org/event/2774.ics  
     
-??? Quote "[DamCTF 2025](https://damctf.xyz/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://damctf.xyz/)  
-    **比赛名称** : [DamCTF 2025](https://damctf.xyz/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-05-10 08:00:00 - 2025-05-12 08:00:00 UTC+8  
-    **比赛权重** : 60.67  
-    **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
-    **添加日历** : https://ctftime.org/event/2585.ics  
-    
