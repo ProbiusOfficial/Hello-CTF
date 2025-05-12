@@ -135,7 +135,7 @@ comments: true
     **比赛名称** : [RPCA CTF 2025](https://grandctf.rpca.ac.th/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-05-03 01:00:00 - 2025-05-06 01:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 54.00  
     **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
     **添加日历** : https://ctftime.org/event/2755.ics  
     
