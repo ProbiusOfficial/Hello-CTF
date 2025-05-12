@@ -423,6 +423,15 @@ comments: true
     **赛事主办** : jailctf (https://ctftime.org/team/311088)  
     **添加日历** : https://ctftime.org/event/2737.ics  
     
+??? Quote "[SekaiCTF 2025](https://ctf.sekai.team/)"  
+    [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
+    **比赛名称** : [SekaiCTF 2025](https://ctf.sekai.team/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-08-16 09:00:00 - 2025-08-18 09:00:00 UTC+8  
+    **比赛权重** : 55.00  
+    **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
+    **添加日历** : https://ctftime.org/event/2683.ics  
+    
 ??? Quote "[RCTF 2025](https://rctf.rois.io/)"  
     [![](https://ctftime.org/media/events/rois.jpg){ width="200" align=left }](https://rctf.rois.io/)  
     **比赛名称** : [RCTF 2025](https://rctf.rois.io/)  
@@ -437,18 +446,9 @@ comments: true
     **比赛名称** : [HITCON CTF 2025](http://ctf.hitcon.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-08-22 22:00:00 - 2025-08-24 22:00:00 UTC+8  
-    **比赛权重** : 1.00  
+    **比赛权重** : 100.00  
     **赛事主办** : HITCON (https://ctftime.org/team/8299)  
     **添加日历** : https://ctftime.org/event/2783.ics  
-    
-??? Quote "[SekaiCTF 2025](https://ctf.sekai.team/)"  
-    [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
-    **比赛名称** : [SekaiCTF 2025](https://ctf.sekai.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-08-23 09:00:00 - 2025-08-25 09:00:00 UTC+8  
-    **比赛权重** : 55.00  
-    **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
-    **添加日历** : https://ctftime.org/event/2683.ics  
     
 ??? Quote "[NNS CTF 2025](https://nnsc.tf/)"  
     [![](https://ctftime.org/media/events/Logo_D.png){ width="200" align=left }](https://nnsc.tf/)  
