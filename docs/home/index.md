@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Cyshock - The Awakening](https://cyshock.ctfd.io/)"  
-            [![](https://ctftime.org/media/events/Cyshock_Banner_Transparent.png){ width="200" align=left }](https://cyshock.ctfd.io/)  
-            **比赛名称** : [Cyshock - The Awakening](https://cyshock.ctfd.io/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-05-14 16:00:00 - 2025-05-16 00:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Visionspace (https://ctftime.org/team/383284)  
-            **添加日历** : https://ctftime.org/event/2787.ics  
-            
         ??? Quote "[BYUCTF 2025](https://ctfd.cyberjousting.com/)"  
             [![](https://ctftime.org/media/events/byuctf.jpg){ width="200" align=left }](https://ctfd.cyberjousting.com/)  
             **比赛名称** : [BYUCTF 2025](https://ctfd.cyberjousting.com/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 53.00  
             **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
             **添加日历** : https://ctftime.org/event/2632.ics  
+            
+        ??? Quote "[AI CTF 2025](https://aictf.phdays.fun/)"  
+            [![](https://ctftime.org/media/events/821553befa9c3ad5b7d17e5e1cbb36a7.png){ width="200" align=left }](https://aictf.phdays.fun/)  
+            **比赛名称** : [AI CTF 2025](https://aictf.phdays.fun/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-05-23 01:00:00 - 2025-05-24 17:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : [TechnoPandas] (https://ctftime.org/team/1946)  
+            **添加日历** : https://ctftime.org/event/2778.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

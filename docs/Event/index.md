@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Cyshock - The Awakening](https://cyshock.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/Cyshock_Banner_Transparent.png){ width="200" align=left }](https://cyshock.ctfd.io/)  
-                **比赛名称** : [Cyshock - The Awakening](https://cyshock.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-14 16:00:00 - 2025-05-16 00:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Visionspace (https://ctftime.org/team/383284)  
-                **添加日历** : https://ctftime.org/event/2787.ics  
-                
             ??? Quote "[BYUCTF 2025](https://ctfd.cyberjousting.com/)"  
                 [![](https://ctftime.org/media/events/byuctf.jpg){ width="200" align=left }](https://ctfd.cyberjousting.com/)  
                 **比赛名称** : [BYUCTF 2025](https://ctfd.cyberjousting.com/)  
@@ -874,6 +865,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
                 **添加日历** : https://ctftime.org/event/2774.ics  
+                
+            ??? Quote "[Cyshock - The Awakening](https://cyshock.ctfd.io/)"  
+                [![](https://ctftime.org/media/events/Cyshock_Banner_Transparent.png){ width="200" align=left }](https://cyshock.ctfd.io/)  
+                **比赛名称** : [Cyshock - The Awakening](https://cyshock.ctfd.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-14 16:00:00 - 2025-05-16 00:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Visionspace (https://ctftime.org/team/383284)  
+                **添加日历** : https://ctftime.org/event/2787.ics  
                 
     === "*已经结束*"
         === "国内赛事"
