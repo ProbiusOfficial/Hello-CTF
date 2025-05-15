@@ -866,15 +866,6 @@ hide:
                 **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
                 **添加日历** : https://ctftime.org/event/2774.ics  
                 
-            ??? Quote "[Cyshock - The Awakening](https://cyshock.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/Cyshock_Banner_Transparent.png){ width="200" align=left }](https://cyshock.ctfd.io/)  
-                **比赛名称** : [Cyshock - The Awakening](https://cyshock.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-14 16:00:00 - 2025-05-16 00:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Visionspace (https://ctftime.org/team/383284)  
-                **添加日历** : https://ctftime.org/event/2787.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[ACTF 2025](https://actf2025.xctf.org.cn/)"  
@@ -920,6 +911,15 @@ hide:
                 **其他说明** : NCTF 2025 由 NCTF 2025 组织委员会主办，比赛时间为 3 月 22 日 9:00 - 3 月 23 日 21:00，共计 36 小时，比赛形式为团队赛，每队 1-4 人，分为校内、校外两个赛道。  
                 
         === "国外赛事"
+            ??? Quote "[Cyshock - The Awakening](https://cyshock.ctfd.io/)"  
+                [![](https://ctftime.org/media/events/Cyshock_Banner_Transparent.png){ width="200" align=left }](https://cyshock.ctfd.io/)  
+                **比赛名称** : [Cyshock - The Awakening](https://cyshock.ctfd.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-14 16:00:00 - 2025-05-16 00:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Visionspace (https://ctftime.org/team/383284)  
+                **添加日历** : https://ctftime.org/event/2787.ics  
+                
             ??? Quote "[Rams CTF 2025](https://rams-ctf.com/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://rams-ctf.com/)  
                 **比赛名称** : [Rams CTF 2025](https://rams-ctf.com/)  
@@ -1810,15 +1810,6 @@ hide:
                 **比赛权重** : 24.07  
                 **赛事主办** : r3d_kn1ght5 (https://ctftime.org/team/212248)  
                 **添加日历** : https://ctftime.org/event/2638.ics  
-                
-            ??? Quote "[Bloom Clues CTF](https://bloomclues-ctf.ctfd.io/home)"  
-                [![](https://ctftime.org/media/events/Black_White_Circle_Bee_Icon_Food_Logo.png){ width="200" align=left }](https://bloomclues-ctf.ctfd.io/home)  
-                **比赛名称** : [Bloom Clues CTF](https://bloomclues-ctf.ctfd.io/home)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-02-28 17:30:00 - 2025-03-01 08:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Bloomsburg Broskies (https://ctftime.org/team/372116)  
-                **添加日历** : https://ctftime.org/event/2702.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

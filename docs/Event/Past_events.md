@@ -49,6 +49,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Cyshock - The Awakening](https://cyshock.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/Cyshock_Banner_Transparent.png){ width="200" align=left }](https://cyshock.ctfd.io/)  
+    **比赛名称** : [Cyshock - The Awakening](https://cyshock.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-14 16:00:00 - 2025-05-16 00:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Visionspace (https://ctftime.org/team/383284)  
+    **添加日历** : https://ctftime.org/event/2787.ics  
+    
 ??? Quote "[Rams CTF 2025](https://rams-ctf.com/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://rams-ctf.com/)  
     **比赛名称** : [Rams CTF 2025](https://rams-ctf.com/)  
@@ -939,13 +948,4 @@ comments: true
     **比赛权重** : 24.07  
     **赛事主办** : r3d_kn1ght5 (https://ctftime.org/team/212248)  
     **添加日历** : https://ctftime.org/event/2638.ics  
-    
-??? Quote "[Bloom Clues CTF](https://bloomclues-ctf.ctfd.io/home)"  
-    [![](https://ctftime.org/media/events/Black_White_Circle_Bee_Icon_Food_Logo.png){ width="200" align=left }](https://bloomclues-ctf.ctfd.io/home)  
-    **比赛名称** : [Bloom Clues CTF](https://bloomclues-ctf.ctfd.io/home)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-02-28 17:30:00 - 2025-03-01 08:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Bloomsburg Broskies (https://ctftime.org/team/372116)  
-    **添加日历** : https://ctftime.org/event/2702.ics  
     
