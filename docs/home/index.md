@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[BYUCTF 2025](https://ctfd.cyberjousting.com/)"  
-            [![](https://ctftime.org/media/events/byuctf.jpg){ width="200" align=left }](https://ctfd.cyberjousting.com/)  
-            **比赛名称** : [BYUCTF 2025](https://ctfd.cyberjousting.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-05-17 10:00:00 - 2025-05-18 10:00:00 UTC+8  
-            **比赛权重** : 36.94  
-            **赛事主办** : BYU Cyberia (https://ctftime.org/team/155711)  
-            **添加日历** : https://ctftime.org/event/2715.ics  
-            
         ??? Quote "[WhiteHats TrojanCTF 2025](https://discord.gg/fXHCe9zsHC)"  
             [![](https://ctftime.org/media/events/TrojanCTF_logo.png){ width="200" align=left }](https://discord.gg/fXHCe9zsHC)  
             **比赛名称** : [WhiteHats TrojanCTF 2025](https://discord.gg/fXHCe9zsHC)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : [TechnoPandas] (https://ctftime.org/team/1946)  
             **添加日历** : https://ctftime.org/event/2778.ics  
+            
+        ??? Quote "[Global Cyber Skills Benchmark CTF 2025: Operation Blackout](https://ctf.hackthebox.com/event/details/global-cyber-skills-benchmark-ctf-2025-operation-blackout-2174)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/global-cyber-skills-benchmark-ctf-2025-operation-blackout-2174)  
+            **比赛名称** : [Global Cyber Skills Benchmark CTF 2025: Operation Blackout](https://ctf.hackthebox.com/event/details/global-cyber-skills-benchmark-ctf-2025-operation-blackout-2174)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-05-23 21:00:00 - 2025-05-27 21:00:00 UTC+8  
+            **比赛权重** : 24.00  
+            **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
+            **添加日历** : https://ctftime.org/event/2707.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
