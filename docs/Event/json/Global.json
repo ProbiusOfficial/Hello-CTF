@@ -732,18 +732,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "WhiteHats TrojanCTF 2025",
-        "比赛时间": "2025-05-17 17:00:00 - 2025-05-18 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2644.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://discord.gg/fXHCe9zsHC",
-        "比赛标志": "https://ctftime.org/media/events/TrojanCTF_logo.png",
-        "比赛权重": "0.00",
-        "赛事主办": "E.S.H.A. Trojan (https://ctftime.org/team/248605)",
-        "比赛ID": "1103",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Midnight Sun CTF 2025 Quals",
         "比赛时间": "2025-05-17 20:00:00 - 2025-05-18 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2632.ics",
@@ -754,6 +742,18 @@
         "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
         "比赛ID": "246",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "WhiteHats TrojanCTF 2025",
+        "比赛时间": "2025-05-17 17:00:00 - 2025-05-18 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2644.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://discord.gg/fXHCe9zsHC",
+        "比赛标志": "https://ctftime.org/media/events/TrojanCTF_logo.png",
+        "比赛权重": "0.00",
+        "赛事主办": "E.S.H.A. Trojan (https://ctftime.org/team/248605)",
+        "比赛ID": "1103",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Cyshock - The Awakening",
@@ -1941,18 +1941,6 @@
         "比赛权重": "24.94",
         "赛事主办": "PHREAKS 2600 (https://ctftime.org/team/200877)",
         "比赛ID": "1141",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "ApoorvCTF 2025",
-        "比赛时间": "2025-02-28 23:30:00 - 2025-03-02 23:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2638.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.iiitkottayam.ac.in/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "24.07",
-        "赛事主办": "r3d_kn1ght5 (https://ctftime.org/team/212248)",
-        "比赛ID": "1083",
         "比赛状态": "past"
     }
 ]

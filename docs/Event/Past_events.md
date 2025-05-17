@@ -49,6 +49,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[WhiteHats TrojanCTF 2025](https://discord.gg/fXHCe9zsHC)"  
+    [![](https://ctftime.org/media/events/TrojanCTF_logo.png){ width="200" align=left }](https://discord.gg/fXHCe9zsHC)  
+    **比赛名称** : [WhiteHats TrojanCTF 2025](https://discord.gg/fXHCe9zsHC)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-17 17:00:00 - 2025-05-18 05:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : E.S.H.A. Trojan (https://ctftime.org/team/248605)  
+    **添加日历** : https://ctftime.org/event/2644.ics  
+    
 ??? Quote "[Cyshock - The Awakening](https://cyshock.ctfd.io/)"  
     [![](https://ctftime.org/media/events/Cyshock_Banner_Transparent.png){ width="200" align=left }](https://cyshock.ctfd.io/)  
     **比赛名称** : [Cyshock - The Awakening](https://cyshock.ctfd.io/)  
@@ -939,13 +948,4 @@ comments: true
     **比赛权重** : 24.94  
     **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
     **添加日历** : https://ctftime.org/event/2658.ics  
-    
-??? Quote "[ApoorvCTF 2025](https://ctf.iiitkottayam.ac.in/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.iiitkottayam.ac.in/)  
-    **比赛名称** : [ApoorvCTF 2025](https://ctf.iiitkottayam.ac.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-02-28 23:30:00 - 2025-03-02 23:30:00 UTC+8  
-    **比赛权重** : 24.07  
-    **赛事主办** : r3d_kn1ght5 (https://ctftime.org/team/212248)  
-    **添加日历** : https://ctftime.org/event/2638.ics  
     
