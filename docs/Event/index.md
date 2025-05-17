@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)"  
-                [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo_1.png){ width="200" align=left }](https://midnightsunctf.com/)  
-                **比赛名称** : [Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-17 20:00:00 - 2025-05-18 20:00:00 UTC+8  
-                **比赛权重** : 53.00  
-                **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-                **添加日历** : https://ctftime.org/event/2632.ics  
-                
             ??? Quote "[AI CTF 2025](https://aictf.phdays.fun/)"  
                 [![](https://ctftime.org/media/events/821553befa9c3ad5b7d17e5e1cbb36a7.png){ width="200" align=left }](https://aictf.phdays.fun/)  
                 **比赛名称** : [AI CTF 2025](https://aictf.phdays.fun/)  
@@ -865,6 +856,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : E.S.H.A. Trojan (https://ctftime.org/team/248605)  
                 **添加日历** : https://ctftime.org/event/2644.ics  
+                
+            ??? Quote "[Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)"  
+                [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo_1.png){ width="200" align=left }](https://midnightsunctf.com/)  
+                **比赛名称** : [Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-17 20:00:00 - 2025-05-18 20:00:00 UTC+8  
+                **比赛权重** : 53.00  
+                **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
+                **添加日历** : https://ctftime.org/event/2632.ics  
                 
     === "*已经结束*"
         === "国内赛事"
