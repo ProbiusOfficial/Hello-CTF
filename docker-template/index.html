@@ -1,0 +1,3974 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+      
+      
+        <meta name="author" content="探姬">
+      
+      
+        <link rel="canonical" href="https://hello-ctf.com/docker-template/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Index - Hello CTF</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans SC";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.8/katex.min.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/bannerSlider.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#about" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="Hello CTF" class="md-header__button md-logo" aria-label="Hello CTF" data-md-component="logo">
+      
+  <img src="../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Hello CTF
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Index
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Hello-CTF
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../home/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../hc-tags/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  知识点标签
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Event/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  赛事
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../hc-labs/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  靶场
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../hc-toolkit/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  工具
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../hc-archive/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  归档
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Hello CTF" class="md-nav__button md-logo" aria-label="Hello CTF" data-md-component="logo">
+      
+  <img src="../assets/images/logo.png" alt="logo">
+
+    </a>
+    Hello CTF
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ProbiusOfficial/Hello-CTF" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Hello-CTF
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../home/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../hc-start/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    快速开始
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            快速开始
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../hc-preface/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    前言
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            前言
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-preface/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    关于本书
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-preface/usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    食用方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-preface/join/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    加入我们
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../hc-env/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    环境设置
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            环境设置
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-env/CTFtool/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    工具一览
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-env/Docker_On_Linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Docker环境
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-env/Web.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Web环境设置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-env/MISC.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MISC环境设置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-env/Crypto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Crypto环境设置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../hc-misc/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    MISC | 杂项
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            MISC | 杂项
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-misc/osint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    信息收集
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-misc/Encode_extra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    编码扩展
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-misc/file/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    文件基础
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-misc/Archivefile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    压缩包
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-misc/stego/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    隐写技术
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-misc/pcap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    流量分析
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-misc/memory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    内存取证
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-misc/file_sign/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    附:文件签名表
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../hc-web/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Web | 网络攻防
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            Web | 网络攻防
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-web/web_start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Web入门题单
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-web/php_basic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PHP基础
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-web/php_unser_base/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PHP反序列化基础
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-web/sql_injection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQL注入
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-web/xss/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    XSS攻击
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-web/include/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    文件包含
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-web/ssti/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SSTI注入
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../hc-crypto/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Crypto | 密码学
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_7">
+            <span class="md-nav__icon md-icon"></span>
+            Crypto | 密码学
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-crypto/Recap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    前情提要
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-crypto/Encode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    编码基础
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-crypto/Classicalcipher/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    古典密码
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../hc-reverse/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Reverse | 逆向工程
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_8" id="__nav_1_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_8">
+            <span class="md-nav__icon md-icon"></span>
+            Reverse | 逆向工程
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82F%26Q/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    引导篇：灵魂F&Q
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start：可执行文件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start：ASM汇编
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-reverse/Quick%20Start%EF%BC%9AExample%20problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start：Example problems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84IDA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    从零开始的IDA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    从零开始的壳
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../hc-pwn/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Pwn | 二进制安全
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_9" id="__nav_1_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_9">
+            <span class="md-nav__icon md-icon"></span>
+            Pwn | 二进制安全
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-pwn/Asm_x86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    汇编语言(x86)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-pwn/Stack_Overflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    栈上数组越界&栈溢出
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-pwn/ROP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ROP入门
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-pwn/ROP_Tricks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    常见的ROP技巧
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-pwn/Protections.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    常见保护
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-pwn/Tricks.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    杂七杂八的解题技巧
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_10" id="__nav_1_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AWD | 攻防模式
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_10">
+            <span class="md-nav__icon md-icon"></span>
+            AWD | 攻防模式
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-awd/awd_about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AWD介绍
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-awd/awd_platform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AWD平台
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-awd/awd_web.exp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    【WEB】AWD技巧
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-awd/awd_pwn.exp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    【PWN】AWD技巧
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../hc-ai/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    AI | 人工智能安全
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_11" id="__nav_1_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_11">
+            <span class="md-nav__icon md-icon"></span>
+            AI | 人工智能安全
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-ai/What_is_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    初识AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-ai/MLP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    你的第一个神经网络
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_12" id="__nav_1_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    blockchain | 区块链安全
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_12">
+            <span class="md-nav__icon md-icon"></span>
+            blockchain | 区块链安全
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_12_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_12_1" id="__nav_1_12_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Move
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_12_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_12_1">
+            <span class="md-nav__icon md-icon"></span>
+            Move
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-blockchain/Move/0x00/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    从0开始的签到题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_13" id="__nav_1_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_13">
+            <span class="md-nav__icon md-icon"></span>
+            附录
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-appendix/how-to-ask/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    提问的智慧
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-appendix/CTFevent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CTF赛事
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-appendix/NSSCTF_Usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NSSCTF平台使用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-appendix/book/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    推荐书单
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../hc-tags/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    知识点标签
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            知识点标签
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../hc-tags/web/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Web
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-tags/web/sql-injection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQL注入
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-tags/web/sqlmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQLMap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-tags/web/PHP_features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PHP特性
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../hc-tags/misc/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Misc
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../hc-tags/reverse/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Reverse
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Reverse
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../hc-tags/pwn/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Pwn
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Pwn
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Event/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    赛事
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            赛事
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Event/Upcoming_events/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    即将开始
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Event/Now_running/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    正在进行
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Event/Past_events/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    已经结束
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    办赛指南
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            办赛指南
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Event/organize.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    None
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-labs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    靶场
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../hc-toolkit/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    工具
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            工具
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hc-archive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    归档
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about" class="md-nav__link">
+    <span class="md-ellipsis">
+      About
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      常见问题
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no_socket-with-crypto" class="md-nav__link">
+    <span class="md-ellipsis">
+      no_socket with crypto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      软件源换源
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sh" class="md-nav__link">
+    <span class="md-ellipsis">
+      日志sh文件错误
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detail
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crypto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crypto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crypto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python_38310-no_socket-with_socket" class="md-nav__link">
+    <span class="md-ellipsis">
+      python_3.8/3.10-no_socket / with_socket
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sagemath_96" class="md-nav__link">
+    <span class="md-ellipsis">
+      sagemath_9.6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kohnssctf_only" class="md-nav__link">
+    <span class="md-ellipsis">
+      KOH（NSSCTF_Only）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#misc" class="md-nav__link">
+    <span class="md-ellipsis">
+      MISC
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MISC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyjail-python_310-socat-xinetd" class="md-nav__link">
+    <span class="md-ellipsis">
+      pyjail-python_3.10-socat / xinetd
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pwn" class="md-nav__link">
+    <span class="md-ellipsis">
+      PWN
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PWN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ubuntu_1604-1804-2004-2204" class="md-nav__link">
+    <span class="md-ellipsis">
+      ubuntu_16.04 /18.04 / 20.04 /22.04
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flask-python_38-310" class="md-nav__link">
+    <span class="md-ellipsis">
+      flask-python_3.8 / 3.10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#java-openjdk8" class="md-nav__link">
+    <span class="md-ellipsis">
+      java-openjdk8
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jetty-jdk8" class="md-nav__link">
+    <span class="md-ellipsis">
+      jetty-jdk8
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tomcat-jdk8" class="md-nav__link">
+    <span class="md-ellipsis">
+      tomcat-jdk8
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lamp-php80-lnmp-php73-nginx-php73" class="md-nav__link">
+    <span class="md-ellipsis">
+      LAMP-php80 / LNMP-php73 / nginx-php73
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+    <a
+      href="https://github.com/ProbiusOfficial/Hello-CTF/tree/main/docs/docker-template/index.md"
+      title="编辑此页"
+      class="md-content__button md-icon"
+    >
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+
+  <!-- View button -->
+  
+    
+      
+    
+    <a
+      href="https://github.com/ProbiusOfficial/Hello-CTF/tree/main/docs/docker-template/index.md"
+      title="查看本页的源代码"
+      class="md-content__button md-icon"
+    >
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<!-- Page content -->
+<div><blockquote>
+<p>项目地址：<a href="https://github.com/CTF-Archives/ctf-docker-template">https://github.com/CTF-Archives/ctf-docker-template</a></p>
+<p>Release：<a href="https://github.com/CTF-Archives/ctf-docker-template/releases">https://github.com/CTF-Archives/ctf-docker-template/releases</a></p>
+<p>当然您也可以点击本文档中的对应下载按钮获取模板的打包文件 (基于GitHub直链)</p>
+</blockquote>
+<p><img alt="ctf-docker-template" src="https://nssctf.wdf.ink//img/WDTJ/202403121324799.png"></p>
+<h2 id="about">About<a class="headerlink" href="#about" title="Permanent link">¶</a></h2>
+<p><strong>ctf-docker-template</strong> 是一个用于支持动态 Flag 的Docker容器模板项目，支持主流的各类CTF平台.</p>
+<p>项目存有一定局限性，但已可适用于绝大多数初中级别题目的命题需求。</p>
+<p>本仓库内的Docker容器模板支持的 FLAG 注入类型如下：</p>
+<ul>
+<li><code>$FLAG</code>（<a href="https://github.com/CTFd/CTFd">CTFd</a>，<a href="https://www.nssctf.cn/">NSSCTF</a>）</li>
+<li><code>$GZCTF_FLAG</code>（<a href="https://github.com/GZTimeWalker/GZCTF">GZCTF</a>）</li>
+<li><code>$DASCTF</code>（DASCTF）</li>
+</ul>
+<p>三种动态flag部署方式，支持GZCTF、CTFd、安恒DASCTF等支持Docker动态部署题目靶机的平台。</p>
+<blockquote>
+<p>一般情况下，CTF题目动态FLAG使用环境变量注入的方式来实现:</p>
+<p><code>docker run -dtP -e FLAG=HelloCTF{This1sFl4g} [imagesName:Tag]</code></p>
+<p>而上面所说的注入类型 "<code>$xxx</code>" xxx就是FLAG的变量名。</p>
+</blockquote>
+<p><strong>有问题请开issue，好用请点star，有问题的话欢迎通过 <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;k=KFamhBpmURTZpndhc0MI7_1l3a6Xezrf&amp;authKey=Yenwm7%2B%2F%2FT%2BtSXCSyr%2B7fYS47Ot0MwFqesH4HOLT8ZADE2e9XO6AS96HQvjxh%2B%2BG&amp;noverify=0&amp;group_code=894957229">CTF-Archives售后快速服务群</a> 联系维护人员寻求帮助</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>**此仓库内的模板仅在Linux环境（linux/amd64）下进行测试并保证可用性,如果为windows（windows/amd64）或者macos（linux/arm）等其他架构，不保证可用性😔
+**</p>
+<p>建议直接在linux下执行 <code>git clone</code> 操作，或者直接从github下载zip版本的源码.</p>
+</div>
+<h2 id="structure">Structure<a class="headerlink" href="#structure" title="Permanent link">¶</a></h2>
+<p>在一般情况下，每个模板的文件结构如下：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>.
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── README.md
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── Dockerfile
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── config # Web容器 中间件配置需要定义的专属
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   └── nginx.conf
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>├── data # Web容器 且 有数据库需求容器专属
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│   └── db.sql
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>├── docker
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│   └── docker-compose.yml
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>├── service
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>│   └── docker-entrypoint.sh
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>└── src
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    └── main.py
+</code></pre></div>
+<ul>
+<li>
+<p><code>Dockerfile</code> 为docker容器编译文件，用于设计docker容器，可在其中设置换源、增添软件包等等</p>
+</li>
+<li>
+<p><code>config</code> 文件夹内存放着容器内服务相关的配置文件，如 <code>nginx</code> 的配置文件等等</p>
+</li>
+<li>
+<p><code>data</code> 文件夹内存放着容器内服务相关的配置文件，如 <code>nginx</code> 的配置文件等等</p>
+</li>
+<li>
+<p><code>docker</code> 文件夹内存放与docker有关的文件，如 <code>docker-compose.yml</code> 文件，内部已经设置好了端口转发和测试用flag，便于测试容器环境</p>
+</li>
+<li>
+<p><code>service</code> 文件夹内存放着与服务有关的文件，如 <code>docker-entrypoint.sh</code> 用于定义容器的入口点</p>
+</li>
+<li>
+<p><code>src</code> 文件夹内存放着题目的项目源码，也可以是pwn题目的二进制文件，即为题目的相关文件</p>
+</li>
+<li>
+<p><code>flag.php</code> 用于直接查看flag文件的测试文件，访问可直接查看当前题目根目录下的flag文件，如果文件不存在则会输出error</p>
+</li>
+<li>
+<p><code>shell.php</code> 一句话木马，用于测试web容器稳定性</p>
+</li>
+</ul>
+<p>......</p>
+<h2 id="_1">常见问题<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<h3 id="no_socket-with-crypto">no_socket with crypto<a class="headerlink" href="#no_socket-with-crypto" title="Permanent link">¶</a></h3>
+<p><code>no_socket</code>指的是源代码中没有引入<code>socket</code>相关的库，当希望达到的效果是类似于当用户通过特定端口连接到靶机时，就运行python代码，并将代码的运行界面转发给用户。</p>
+<p>如果已经引入了<code>socket</code>相关的库，请直接使用如<code>python app.py</code>这类语句启动python程序，并让程序自行监听特定端口。</p>
+<h3 id="_2">软件源换源<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p>环境中涉及软件包处理的情形，如apt、yum，均已换源为ustc源，如不处于中国大陆网络环境/启用了全局代理环境，请自行修改相关换源语句，避免由于还原带来的负优化。</p>
+<h3 id="sh">日志sh文件错误<a class="headerlink" href="#sh" title="Permanent link">¶</a></h3>
+<p>由于DOS/Windows 和 Linux/Unix的文件换行回车格式不同，DOS/Windows 的文本文件在每一行末尾有一个 CR（回车）和 LF（换行），而 UNIX 文本只有一个LF（换行），从而造成Linux的Docker出现下面的报错：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/docker-entrypoint.sh:<span class="w"> </span>line<span class="w"> </span><span class="m">2</span>:<span class="w"> </span><span class="s1">$'\r'</span>:<span class="w"> </span><span class="nb">command</span><span class="w"> </span>not<span class="w"> </span>found
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>/docker-entrypoint.sh:<span class="w"> </span>line<span class="w"> </span><span class="m">26</span>:<span class="w"> </span>syntax<span class="w"> </span>error:<span class="w"> </span>unexpected<span class="w"> </span>end<span class="w"> </span>of<span class="w"> </span>file
+</code></pre></div>
+<p>解决方案如下:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sed<span class="w"> </span>-i<span class="w"> </span><span class="s2">""</span>s/<span class="se">\r</span>//<span class="s2">""</span><span class="w"> </span>docker-entrypoint.sh
+</code></pre></div>
+<p>即通过正则匹配，直接替换掉 <code>\r</code> 字符，不过此方案不一定能完全解决问题。</p>
+<p>建议直接在linux下执行 <code>git clone</code> 操作，或者直接从github下载zip版本的源码，避免一些奇奇怪怪的编码问题。</p>
+<p>请注意，<code>sed</code>指令在<code>unix（macos）</code>下的预期执行效果与<code>linux</code>下的预期执行效果不同。</p>
+<h2 id="detail">Detail<a class="headerlink" href="#detail" title="Permanent link">¶</a></h2>
+<p>每个容器模板均为独立封装，您可以在每个容器模板文件夹中找到对应的 README 文件，请在使用前仔细阅读，如有任何疑问请加入项目中的  <strong><a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;k=KFamhBpmURTZpndhc0MI7_1l3a6Xezrf&amp;authKey=Yenwm7%2B%2F%2FT%2BtSXCSyr%2B7fYS47Ot0MwFqesH4HOLT8ZADE2e9XO6AS96HQvjxh%2B%2BG&amp;noverify=0&amp;group_code=894957229">CTF-Archives售后快速服务群</a></strong>  联系维护人员获取帮助。</p>
+<p>当然，我们也在 <a href="https://hello-ctf.com/Create/"><strong>Hello-CTF 命题部分</strong></a> 页面提供命题相关的教程，也附带本项目的所有文档，欢迎访问查阅。</p>
+<div class="admonition note">
+<p class="admonition-title">一般情况</p>
+<p>在无特殊声明的情况下，完成使用中提及对应模板的必要步骤后,执行后续操作：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>build<span class="w"> </span>.
+</code></pre></div>
+<p>开始编译镜像。</p>
+<p>也可以在安放好相关项目文件之后，直接使用 <code>./docker/docker-compose.yml</code> 内的 <code>docker-compose</code> 文件实现一键启动测试容器。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">cd</span><span class="w"> </span>./docker
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>docker-compose<span class="w"> </span>up<span class="w"> </span>-d
+</code></pre></div>
+<p><strong>特别注意！！</strong></p>
+<p><strong>对于Python相关环境，如使用了 第三方库，请先在 <code>./Dockerfile</code> 内补充 pip 安装语句。</strong></p>
+<p><strong>大部分项目对SRC文件中需求的 程序 / 脚本 文件有特定命名要求，请仔细阅读您所用模板的 README 文件。</strong></p>
+</div>
+<h3 id="crypto">Crypto<a class="headerlink" href="#crypto" title="Permanent link">¶</a></h3>
+<h4 id="python_38310-no_socket-with_socket">python_3.8/3.10-no_socket / with_socket<a class="headerlink" href="#python_38310-no_socket-with_socket" title="Permanent link">¶</a></h4>
+<p><strong>环境：</strong></p>
+<p>提供 <code>Python 3.8 / Python 3.10</code> 的基础环境，并已经添加 <code>pycryptodome</code> 库，并基于项目本身实现相关接口。</p>
+<p><em>实现</em>：当选手连接到对应服务端口（由项目自行定义）的时候，运行 <code>.py项目</code></p>
+<p><strong>with_socket</strong> 适用于项目中引入了 <code>socket</code> 等库，需要镜像做到：</p>
+<ul>
+<li>选手通过端口连接到容器/靶机</li>
+<li>启动项目</li>
+<li>项目自行处理会话</li>
+</ul>
+<p><strong>no_socket</strong> 适用于项目中没有引入 <code>socket</code> 等库，需要镜像做到：</p>
+<ul>
+<li>选手通过端口连接到容器/靶机</li>
+<li>服务启动项目，生成Python会话</li>
+<li>将会话转发给选手的连接</li>
+</ul>
+<p><strong>使用：</strong></p>
+<p>将py文件/项目放入 <code>./src</code> 目录后执行后续操作，文件名建议使用 <code>main.py</code> ，便于环境识别，如需更改文件名，请在 <code>./service/docker-entrypoint.sh</code> 内更改。</p>
+<h3 id="sagemath_96">sagemath_9.6<a class="headerlink" href="#sagemath_96" title="Permanent link">¶</a></h3>
+<p><strong>环境：</strong></p>
+<p>提供 <code>SageMath 9.6</code> + <code>Python 3.10.3</code> 的基础环境，并已经添加 <code>pycryptodome</code> + <code>gmpy2</code> 库，并基于 <code>socat</code> 实现服务转发，默认暴露端口位于9999</p>
+<p>实现：当选手连接到对应端口（默认为9999端口，默认选手使用 <code>netcat</code> ）的时候，运行 <code>.py项目</code>，并将会话转发至选手的连接</p>
+<p>此环境适用于项目中没有引入 <code>socket</code> 等库，并依赖于 <code>SageMath</code> 核心，需要镜像做到：</p>
+<ul>
+<li>
+<p>选手通过端口连接到容器/靶机</p>
+</li>
+<li>
+<p>服务启动项目，生成SageMath会话</p>
+</li>
+<li>
+<p>将会话转发给选手的连接</p>
+</li>
+</ul>
+<p><strong>使用：</strong></p>
+<p>直接将SageMath文件/项目放入 <code>./src</code> 目录后执行后续操作，文件名建议使用 <code>main.sage</code> ，便于环境识别，如需更改文件名，请在 <code>./service/docker-entrypoint.sh</code> 内更改</p>
+<h3 id="kohnssctf_only">KOH（NSSCTF_Only）<a class="headerlink" href="#kohnssctf_only" title="Permanent link">¶</a></h3>
+<p>KOH题目是基于HTTP服务与后端评判系统进行交互的,故题目容器需要启动一个标准的HTTP服务，并对外暴露HTTP服务端口。</p>
+<p>为了确保题目能够正常与后端进行交互，HTTP服务需要包含以下路由并进行相应处理：</p>
+<p><strong>upload:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/upload'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">'POST'</span><span class="p">])</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">upload</span><span class="p">():</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="k">pass</span>
+</code></pre></div>
+<p>该路由负责接收用户上传的数据。数据将以表单数据的形式进行上传，参数名为file。</p>
+<p>例如，后端向容器内的HTTP服务发送请求的代码如下，其中超时时间为5秒：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="sa">f</span><span class="s1">'http://</span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s1">/upload'</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="p">{</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="s1">'file'</span><span class="p">:</span> <span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">},</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</code></pre></div>
+<p>如果HTTP服务在5秒内正常处理该路由，并且没有异常发生，应返回以下JSON数据：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="p">}</span>
+</code></pre></div>
+<p>如果遇到异常（例如服务异常、连接异常、超时异常、返回值异常），则直接判定此次结果为**错误**。</p>
+<p>（一般情况下，200以外的任何返回代码，我们都记为 <strong>错误</strong> ）</p>
+<p><strong>check:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/check'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">'POST'</span><span class="p">])</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">check</span><span class="p">():</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="k">pass</span>
+</code></pre></div>
+<p>当后端完成对/upload路由的访问且没有异常时，将访问/check路由。访问示例代码如下：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="sa">f</span><span class="s1">'http://</span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s1">/check'</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</code></pre></div>
+<p>超时时间为**10**秒。靶机需要在此时间内评估用户上传内容的得分情况，并返回JSON结果，例如：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="p">{</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="nt">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="p">}</span>
+</code></pre></div>
+<p>如果遇到异常（例如服务异常、连接异常、超时异常、返回值异常），则直接判定此次结果为**错误**。如果以上过程没有异常，判断过程结束，并将得到的score更新为用户的得分。</p>
+<ul>
+<li>
+<p>判题靶机目前为一人一机，上次判题完成前无法上传新的文件，无需考虑多线程以及资源抢占的情况。</p>
+</li>
+<li>
+<p>应尽可能保证服务的可用性。对于需要运行时要求的靶机，应使用chroot等沙盒技术来运行独立的进程，以防止用户代码直接控制靶机来控制HTTP服务的返回值。</p>
+</li>
+<li>
+<p>HTTP返回数据应确保返回头包含Content-Type: application/json头，而不是直接返回JSON字符串。</p>
+</li>
+</ul>
+<p><strong>DockerFile文件说明:</strong></p>
+<p>该题为文件上传KOH题，故只需要完成保存文件 比较文件即可判断得分，如果需要进行代码执行，可以参考app.py中注释代码中使用subprocess建立chroot沙盒的方式进行执行。</p>
+<p>注意为了安全起见，在Dockerfile中删除了一些包，如有使用需要请手动更改。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>RUN<span class="w"> </span>rm<span class="w"> </span>-f<span class="w"> </span>/home/ctf/usr/local/lib/python3.10/sockert.py<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>rm<span class="w"> </span>-f<span class="w"> </span>/home/ctf/usr/local/lib/python3.10/sockertserver.py<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>rm<span class="w"> </span>-rf<span class="w"> </span>/home/ctf/usr/local/lib/python3.10/site-package<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>rm<span class="w"> </span>-f<span class="w"> </span>/home/ctf/usr/local/lib/python3.10/subprocess.py
+</code></pre></div>
+<p>该靶机为python3靶机，如需使用其他环境，关于chroot部分依然可以参考Dockerfile中对/home/ctf的改造方法（/home/ctf即为沙盒环境根目录）</p>
+<h3 id="misc">MISC<a class="headerlink" href="#misc" title="Permanent link">¶</a></h3>
+<h4 id="pyjail-python_310-socat-xinetd">pyjail-python_3.10-socat / xinetd<a class="headerlink" href="#pyjail-python_310-socat-xinetd" title="Permanent link">¶</a></h4>
+<p>**感谢 <a href="https://github.com/gtg2619">@gtg2619</a> 师傅对此模板的贡献 **</p>
+<p><strong>环境：</strong></p>
+<p>提供 <code>Python 3.10</code> 的基础环境，并已经添加 <code>pycryptodome</code> 库，并基于 <code>socat</code>  / <code>xinetd</code> 实现服务转发，默认暴露端口位于9999</p>
+<p>实现：当选手连接到对应端口（默认为9999端口，默认选手使用 <code>netcat</code> ）的时候，运行 <code>server.py</code>，并将会话转发至选手的连接</p>
+<p>镜像做到：</p>
+<ul>
+<li>选手通过端口连接到容器/靶机</li>
+<li><code>socat</code>  / <code>xinetd</code> 服务检测到连接，启动一个 <code>python3</code> 会话</li>
+<li><code>python3</code> 通过参数 <code>-u /home/ctf/server.py</code> 限制了程序运行时的账户权限为<code>ctf</code>，然后在限制环境中启动程序</li>
+<li><code>socat</code>  / <code>xinetd</code> 将程序会话转发给选手的连接</li>
+</ul>
+<p><strong>使用：</strong></p>
+<p>将程序文件放入 <code>./src</code> 目录后执行后续操作，文件名请修改为 <code>server.py</code> 作为文件名，便于镜像定位程序位置</p>
+<p>如果需要更改为自己的文件名，需要在 <code>./config/ctf.xinetd</code>、<code>./Dockerfile</code> 和 <code>./service/docker-entrypoint.sh</code> 中进行修改</p>
+<h3 id="pwn">PWN<a class="headerlink" href="#pwn" title="Permanent link">¶</a></h3>
+<h4 id="ubuntu_1604-1804-2004-2204">ubuntu_16.04 /18.04 / 20.04 /22.04<a class="headerlink" href="#ubuntu_1604-1804-2004-2204" title="Permanent link">¶</a></h4>
+<p><strong>环境：</strong></p>
+<p>提供 <code>Ubuntu 16.04 GLIBC 2.23</code> / <code>Ubuntu 18.04 GLIBC 2.27</code> / <code>Ubuntu 20.04 GLIBC 2.31</code> / <code>Ubuntu 22.04 GLIBC 2.35</code> 的基础环境，并已经添加 <code>lib32z1</code> + <code>xinetd</code> 软件包，并基于 <code>xinetd</code> 实现服务转发，默认暴露端口位于9999</p>
+<p>实现：当选手连接到对应端口（默认为9999端口，默认选手使用 <code>netcat</code> ）的时候，运行 <code>程序文件</code>，并将会话转发至选手的连接</p>
+<p>镜像做到：</p>
+<ul>
+<li>选手通过端口连接到容器/靶机</li>
+<li>xinted服务检测到连接，启动一个 <code>chroot</code> 会话</li>
+<li><code>chroot</code> 通过参数 <code>--userspec=1000:1000 /home/ctf</code> 限制了程序运行时的账户权限，并更改了程序运行时的root根目录环境位置为 <code>/home/ctf</code> ，然后在限制环境中启动程序</li>
+<li><code>xinted</code> 将程序会话转发给选手的连接</li>
+</ul>
+<p><strong>使用：</strong></p>
+<p>将程序文件放入 <code>./src</code> 目录即可，文件名请修改为 <code>attachment</code> 作为文件名，便于镜像定位程序位置</p>
+<p>如果需要更改为自己的文件名，需要在 <code>./config/ctf.xinetd</code>、<code>./Dockerfile</code> 和 <code>./service/docker-entrypoint.sh</code> 中进行修改</p>
+<h3 id="web">Web<a class="headerlink" href="#web" title="Permanent link">¶</a></h3>
+<h4 id="flask-python_38-310">flask-python_3.8 / 3.10<a class="headerlink" href="#flask-python_38-310" title="Permanent link">¶</a></h4>
+<p>提供 <code>Python 3.8 + Flask</code> /  <code>Python 3.10 + Flask</code> 的基础环境，默认暴露端口位于8080</p>
+<p>直接将Flask文件/项目放入 <code>./src</code> 目录即可，Flask项目主文件请使用 <code>app.py</code> 作为文件名，便于环境识别Flask项目位置</p>
+<p>如使用了 <code>pycryptodome</code> 等第三方库，请在 <code>./Dockerfile</code> 内补充pip安装语句</p>
+<h4 id="java-openjdk8">java-openjdk8<a class="headerlink" href="#java-openjdk8" title="Permanent link">¶</a></h4>
+<p>提供 <code>Openjdk 1.8.0</code> 的基础环境，默认服务暴露端口由程序决定</p>
+<p>适用于基于 <code>jar</code> 程序包部署环境的需求</p>
+<p>直接将 <code>jar</code> 程序包放入 <code>./src</code> 目录即可，jar程序包请使用 <code>app.jar</code> 作为文件名，便于环境识别 <code>jar</code> 程序包</p>
+<h4 id="jetty-jdk8">jetty-jdk8<a class="headerlink" href="#jetty-jdk8" title="Permanent link">¶</a></h4>
+<p>提供 <code>Jetty 9.4.49 Openjdk 1.8.0</code> 的基础环境，默认服务暴露端口由程序决定</p>
+<p>适用于基于 <code>war</code> 程序包部署环境的需求</p>
+<p>直接将 <code>war</code> 程序包放入 <code>./src</code> 目录即可，war程序包请使用 <code>root.war</code> 作为文件名，便于环境识别 <code>war</code> 程序包</p>
+<h4 id="tomcat-jdk8">tomcat-jdk8<a class="headerlink" href="#tomcat-jdk8" title="Permanent link">¶</a></h4>
+<p>提供 <code>Tomcat 9.0.78 Openjdk 1.8.0</code> 的基础环境，默认服务暴露端口由程序决定</p>
+<p>适用于基于 <code>war</code> 程序包部署环境的需求</p>
+<p>直接将 <code>war</code> 程序包放入 <code>./src</code> </p>
+<h4 id="lamp-php80-lnmp-php73-nginx-php73">LAMP-php80 / LNMP-php73 / nginx-php73<a class="headerlink" href="#lamp-php80-lnmp-php73-nginx-php73" title="Permanent link">¶</a></h4>
+<blockquote>
+<p>部分容器参考 <a href="https://github.com/CTFTraining/">https://github.com/CTFTraining/</a> 感谢 <a href="https://github.com/mozhu1024">陌竹 - mozhu1024</a> 师傅 和 <a href="https://github.com/glzjin">赵总 - glzjin</a> 师傅做出的贡献</p>
+</blockquote>
+<p><code>Apache2</code> +<code>PHP 8.0.30</code>+<code>10.5.21-MariaDB</code> 的基础环境，默认暴露端口位于 80</p>
+<ul>
+<li>L: Linux alpine</li>
+<li>A: Apache2</li>
+<li>M: MySQL</li>
+<li>P: PHP 8.0</li>
+<li>PHP MySQL Ext</li>
+<li>mysql</li>
+<li>mysqli</li>
+</ul>
+<p><code>Nginx</code> +<code>PHP 7.3.33</code>+<code>10.6.14-MariaDB</code> 的基础环境，默认暴露端口位于 80</p>
+<ul>
+<li>L: Linux alpine</li>
+<li>N: Nginx</li>
+<li>M: MySQL</li>
+<li>P: PHP 7.3</li>
+<li>PHP MySQL Ext</li>
+<li>mysql</li>
+<li>mysqli</li>
+</ul>
+<p><code>Nginx</code> +<code>PHP 7.3.33</code> 的基础环境，默认暴露端口位于 80</p>
+<p>直接将 PHP 项目放入 <code>./src</code> 目录后执行后续操作。</p>
+<div class="admonition warning">
+<p class="admonition-title">注意！！</p>
+<p><strong>模板默认会将 flag 保存在 数据库中，如果 需要改变flag在数据库中的存放位置，请在./service/docker-entrypoint.sh 中修改相关操作语句</strong></p>
+</div></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+  
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+
+<!-- Link to next page -->
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+  <!-- Insert generated snippet here -->
+  
+  <script src="https://giscus.app/client.js"
+  data-repo="ProbiusOfficial/Hello-CTF"
+  data-repo-id="R_kgDOJXX6hg"
+  data-category="Show and tell"
+  data-category-id="DIC_kwDOJXX6hs4CXmuV"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="preferred_color_scheme"
+  data-lang="zh-CN"
+  crossorigin="anonymous"
+  async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 探姬
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/probiusofficial" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/probiusofficial" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://space.bilibili.com/27109929" target="_blank" rel="noopener" title="space.bilibili.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92.02c-26.45-.8-48.21-9.8-65.28-27.2C9.682 419.4.767 396.5 0 368.2V169.8c.767-26 9.682-47.6 26.74-65.7C43.81 87.75 65.57 78.77 92.02 78h29.38L96.05 52.19c-5.75-5.73-8.63-13-8.63-21.79 0-8.8 2.88-16.06 8.63-21.797C101.8 2.868 109.1 0 117.9 0q13.2 0 21.9 8.603L213.1 78h88l74.5-69.397C381.7 2.868 389.2 0 398 0q13.2 0 21.9 8.603c5.7 5.737 8.6 12.997 8.6 21.797 0 8.79-2.9 16.06-8.6 21.79L394.6 78h29.3c26.4.77 48 9.75 64.7 26.1m-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96.05c-9.59.4-17.45 3.7-23.58 9.8-6.14 6.1-9.4 13.9-9.78 23.5v194.4c0 9.2 3.26 17 9.78 23.5s14.38 9.8 23.58 9.8H416.4c9.2 0 17-3.3 23.3-9.8s9.7-14.3 10.1-23.5zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5s-17.5-3.2-23.6-9.5-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2s13.2-9.6 23.3-10c9.2.4 17 3.7 23.3 10m191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2s-14 9.5-23.6 9.5-17.4-3.2-23.6-9.5c-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2s14.1-9.6 23.3-10c9.2.4 17 3.7 23.3 10"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:<probiuslinx@gmail.com>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.8l167.6-182.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../javascripts/baidu_SEO.js"></script>
+      
+        <script src="../javascripts/katex.js"></script>
+      
+        <script src="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.8/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+        <script src="../javascripts/statis.js"></script>
+      
+        <script src="../javascripts/bannerSlider.js"></script>
+      
+        <script src="../javascripts/FullCalendar.js"></script>
+      
+    
+  </body>
+</html>
