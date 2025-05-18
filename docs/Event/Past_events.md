@@ -58,6 +58,15 @@ comments: true
     **赛事主办** : E.S.H.A. Trojan (https://ctftime.org/team/248605)  
     **添加日历** : https://ctftime.org/event/2644.ics  
     
+??? Quote "[BYUCTF 2025](https://ctfd.cyberjousting.com/)"  
+    [![](https://ctftime.org/media/events/byuctf.jpg){ width="200" align=left }](https://ctfd.cyberjousting.com/)  
+    **比赛名称** : [BYUCTF 2025](https://ctfd.cyberjousting.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-17 10:00:00 - 2025-05-18 10:00:00 UTC+8  
+    **比赛权重** : 36.94  
+    **赛事主办** : BYU Cyberia (https://ctftime.org/team/155711)  
+    **添加日历** : https://ctftime.org/event/2715.ics  
+    
 ??? Quote "[Cyshock - The Awakening](https://cyshock.ctfd.io/)"  
     [![](https://ctftime.org/media/events/Cyshock_Banner_Transparent.png){ width="200" align=left }](https://cyshock.ctfd.io/)  
     **比赛名称** : [Cyshock - The Awakening](https://cyshock.ctfd.io/)  
@@ -939,13 +948,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
     **添加日历** : https://ctftime.org/event/2649.ics  
-    
-??? Quote "[PwnMe CTF Quals 2025](https://pwnme.phreaks.fr/)"  
-    [![](https://ctftime.org/media/events/PWNME_ReseauxPP1_1.jpg){ width="200" align=left }](https://pwnme.phreaks.fr/)  
-    **比赛名称** : [PwnMe CTF Quals 2025](https://pwnme.phreaks.fr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-01 04:00:00 - 2025-03-03 02:00:00 UTC+8  
-    **比赛权重** : 24.94  
-    **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
-    **添加日历** : https://ctftime.org/event/2658.ics  
     
