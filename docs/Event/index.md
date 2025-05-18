@@ -839,15 +839,6 @@ hide:
                 **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
                 **添加日历** : https://ctftime.org/event/2774.ics  
                 
-            ??? Quote "[Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)"  
-                [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo_1.png){ width="200" align=left }](https://midnightsunctf.com/)  
-                **比赛名称** : [Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-17 20:00:00 - 2025-05-18 20:00:00 UTC+8  
-                **比赛权重** : 53.00  
-                **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-                **添加日历** : https://ctftime.org/event/2632.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[ACTF 2025](https://actf2025.xctf.org.cn/)"  
@@ -893,6 +884,15 @@ hide:
                 **其他说明** : NCTF 2025 由 NCTF 2025 组织委员会主办，比赛时间为 3 月 22 日 9:00 - 3 月 23 日 21:00，共计 36 小时，比赛形式为团队赛，每队 1-4 人，分为校内、校外两个赛道。  
                 
         === "国外赛事"
+            ??? Quote "[Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)"  
+                [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo_1.png){ width="200" align=left }](https://midnightsunctf.com/)  
+                **比赛名称** : [Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-17 20:00:00 - 2025-05-18 20:00:00 UTC+8  
+                **比赛权重** : 53.00  
+                **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
+                **添加日历** : https://ctftime.org/event/2632.ics  
+                
             ??? Quote "[WhiteHats TrojanCTF 2025](https://discord.gg/fXHCe9zsHC)"  
                 [![](https://ctftime.org/media/events/TrojanCTF_logo.png){ width="200" align=left }](https://discord.gg/fXHCe9zsHC)  
                 **比赛名称** : [WhiteHats TrojanCTF 2025](https://discord.gg/fXHCe9zsHC)  
@@ -1783,15 +1783,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
                 **添加日历** : https://ctftime.org/event/2650.ics  
-                
-            ??? Quote "[SECCON CTF 13 International Finals](https://ctf.seccon.jp/)"  
-                [![](https://ctftime.org/media/events/seccon_s_8.png){ width="200" align=left }](https://ctf.seccon.jp/)  
-                **比赛名称** : [SECCON CTF 13 International Finals](https://ctf.seccon.jp/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-01 09:00:00 - 2025-03-02 19:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
-                **添加日历** : https://ctftime.org/event/2649.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
