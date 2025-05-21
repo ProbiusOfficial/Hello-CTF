@@ -469,6 +469,15 @@ hide:
                 **赛事主办** : AMSI CTF Team (https://ctftime.org/team/383289)  
                 **添加日历** : https://ctftime.org/event/2790.ics  
                 
+            ??? Quote "[smileyCTF 2025](https://play.ctf.gg/)"  
+                [![](https://ctftime.org/media/events/smiley.png){ width="200" align=left }](https://play.ctf.gg/)  
+                **比赛名称** : [smileyCTF 2025](https://play.ctf.gg/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-06-14 08:00:00 - 2025-06-16 08:00:00 UTC+8  
+                **比赛权重** : 48.61  
+                **赛事主办** : .;,;. (https://ctftime.org/team/222911)  
+                **添加日历** : https://ctftime.org/event/2591.ics  
+                
             ??? Quote "[Crypto CTF 2025](https://cr.yp.toc.tf/)"  
                 [![](https://ctftime.org/media/events/cryptoctf_1.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
                 **比赛名称** : [Crypto CTF 2025](https://cr.yp.toc.tf/)  
@@ -576,15 +585,6 @@ hide:
                 **比赛权重** : 91.43  
                 **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
                 **添加日历** : https://ctftime.org/event/2640.ics  
-                
-            ??? Quote "[smileyCTF 2025](https://play.ctf.gg/)"  
-                [![](https://ctftime.org/media/events/smiley.png){ width="200" align=left }](https://play.ctf.gg/)  
-                **比赛名称** : [smileyCTF 2025](https://play.ctf.gg/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-07-12 09:00:00 - 2025-07-14 09:00:00 UTC+8  
-                **比赛权重** : 48.61  
-                **赛事主办** : .;,;. (https://ctftime.org/team/222911)  
-                **添加日历** : https://ctftime.org/event/2591.ics  
                 
             ??? Quote "[DownUnderCTF 2025](https://play.duc.tf/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://play.duc.tf/)  
