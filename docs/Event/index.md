@@ -388,9 +388,9 @@ hide:
                 **赛事主办** : NUS GreyHats (https://ctftime.org/team/16740)  
                 **添加日历** : https://ctftime.org/event/2765.ics  
                 
-            ??? Quote "[MindBreak 2025 by ESGI](https://m1ndbr34k.fr/)"  
-                [![](https://ctftime.org/media/events/image_7s.png){ width="200" align=left }](https://m1ndbr34k.fr/)  
-                **比赛名称** : [MindBreak 2025 by ESGI](https://m1ndbr34k.fr/)  
+            ??? Quote "[MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)"  
+                [![](https://ctftime.org/media/events/blanc2.png){ width="200" align=left }](https://linktr.ee/m1ndbr34k)  
+                **比赛名称** : [MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-06-07 05:00:00 - 2025-06-07 14:00:00 UTC+8  
                 **比赛权重** : 0.00  
@@ -875,13 +875,6 @@ hide:
                 **报名时间** : 2025年04月03日 00:00 - 2025年04月04日 14:43  
                 **比赛时间** : 2025年04月04日 14:44 - 2025年04月06日 14:44  
                 **其他说明** : HellCTF 2025是一个公开赛，主办方为公开赛。比赛群为879334917。时候赚取你来生的财富了! 最高奖励1,000,000.000.000元，奖品设置包括每题一血解出者每人一份R.E.D.O.(Steam版本)，每题所有解出者中抽取两位获得大额冥币(可代烧)，所有参赛者中抽取两位获得纸扎大house(可代烧)。  
-                
-            ??? Quote "[NCTF 2024](https://nctf.exp10it.cn/)"  
-                **比赛名称** : [NCTF 2024](https://nctf.exp10it.cn/)  
-                **比赛类型** : 线上Jeopardy解题赛  
-                **报名时间** : 2025年03月22日 09:00 - 2025年03月22日 08:59  
-                **比赛时间** : 2025年03月22日 09:00 - 2025年03月23日 21:00  
-                **其他说明** : NCTF 2025 由 NCTF 2025 组织委员会主办，比赛时间为 3 月 22 日 9:00 - 3 月 23 日 21:00，共计 36 小时，比赛形式为团队赛，每队 1-4 人，分为校内、校外两个赛道。  
                 
         === "国外赛事"
             ??? Quote "[Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)"  

@@ -108,9 +108,9 @@ comments: true
     **赛事主办** : NUS GreyHats (https://ctftime.org/team/16740)  
     **添加日历** : https://ctftime.org/event/2765.ics  
     
-??? Quote "[MindBreak 2025 by ESGI](https://m1ndbr34k.fr/)"  
-    [![](https://ctftime.org/media/events/image_7s.png){ width="200" align=left }](https://m1ndbr34k.fr/)  
-    **比赛名称** : [MindBreak 2025 by ESGI](https://m1ndbr34k.fr/)  
+??? Quote "[MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)"  
+    [![](https://ctftime.org/media/events/blanc2.png){ width="200" align=left }](https://linktr.ee/m1ndbr34k)  
+    **比赛名称** : [MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-06-07 05:00:00 - 2025-06-07 14:00:00 UTC+8  
     **比赛权重** : 0.00  
