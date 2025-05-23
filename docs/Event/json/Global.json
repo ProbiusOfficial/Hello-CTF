@@ -1,29 +1,5 @@
 [
     {
-        "比赛名称": "HACK'OSINT CTF - 2025",
-        "比赛时间": "2025-05-24 03:00:00 - 2025-05-26 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2722.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hackolyte.fr/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Hack'olyte (https://ctftime.org/team/222944)",
-        "比赛ID": "1135",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "NahamCon CTF 2025",
-        "比赛时间": "2025-05-24 03:00:00 - 2025-05-26 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2782.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.nahamcon.com/",
-        "比赛标志": "https://ctftime.org/media/events/NAHAMCON-LOGOBRANDING_D3_A3.png",
-        "比赛权重": "53.77",
-        "赛事主办": "JustHacking (https://ctftime.org/team/59573)",
-        "比赛ID": "438",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "DaVinciCTF 2025",
         "比赛时间": "2025-05-24 18:00:00 - 2025-05-26 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2675.ics",
@@ -717,6 +693,30 @@
         "比赛权重": "24.00",
         "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
         "比赛ID": "554",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "HACK'OSINT CTF - 2025",
+        "比赛时间": "2025-05-24 03:00:00 - 2025-05-26 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2722.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.hackolyte.fr/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "Hack'olyte (https://ctftime.org/team/222944)",
+        "比赛ID": "1135",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "NahamCon CTF 2025",
+        "比赛时间": "2025-05-24 03:00:00 - 2025-05-26 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2782.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.nahamcon.com/",
+        "比赛标志": "https://ctftime.org/media/events/NAHAMCON-LOGOBRANDING_D3_A3.png",
+        "比赛权重": "53.77",
+        "赛事主办": "JustHacking (https://ctftime.org/team/59573)",
+        "比赛ID": "438",
         "比赛状态": "nowrunning"
     },
     {
