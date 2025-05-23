@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Global Cyber Skills Benchmark CTF 2025: Operation Blackout",
-        "比赛时间": "2025-05-23 21:00:00 - 2025-05-27 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2707.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hackthebox.com/event/details/global-cyber-skills-benchmark-ctf-2025-operation-blackout-2174",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "24.00",
-        "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
-        "比赛ID": "554",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "HACK'OSINT CTF - 2025",
         "比赛时间": "2025-05-24 03:00:00 - 2025-05-26 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2722.ics",
@@ -717,6 +705,18 @@
         "比赛权重": "0",
         "赛事主办": "[TechnoPandas] (https://ctftime.org/team/1946)",
         "比赛ID": "1129",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Global Cyber Skills Benchmark CTF 2025: Operation Blackout",
+        "比赛时间": "2025-05-23 21:00:00 - 2025-05-27 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2707.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.hackthebox.com/event/details/global-cyber-skills-benchmark-ctf-2025-operation-blackout-2174",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "24.00",
+        "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
+        "比赛ID": "554",
         "比赛状态": "nowrunning"
     },
     {

@@ -33,3 +33,12 @@ comments: true
     **赛事主办** : [TechnoPandas] (https://ctftime.org/team/1946)  
     **添加日历** : https://ctftime.org/event/2778.ics  
     
+??? Quote "[Global Cyber Skills Benchmark CTF 2025: Operation Blackout](https://ctf.hackthebox.com/event/details/global-cyber-skills-benchmark-ctf-2025-operation-blackout-2174)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/global-cyber-skills-benchmark-ctf-2025-operation-blackout-2174)  
+    **比赛名称** : [Global Cyber Skills Benchmark CTF 2025: Operation Blackout](https://ctf.hackthebox.com/event/details/global-cyber-skills-benchmark-ctf-2025-operation-blackout-2174)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-23 21:00:00 - 2025-05-27 21:00:00 UTC+8  
+    **比赛权重** : 24.00  
+    **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
+    **添加日历** : https://ctftime.org/event/2707.ics  
+    

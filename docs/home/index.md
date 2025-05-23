@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Global Cyber Skills Benchmark CTF 2025: Operation Blackout](https://ctf.hackthebox.com/event/details/global-cyber-skills-benchmark-ctf-2025-operation-blackout-2174)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/global-cyber-skills-benchmark-ctf-2025-operation-blackout-2174)  
-            **比赛名称** : [Global Cyber Skills Benchmark CTF 2025: Operation Blackout](https://ctf.hackthebox.com/event/details/global-cyber-skills-benchmark-ctf-2025-operation-blackout-2174)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-05-23 21:00:00 - 2025-05-27 21:00:00 UTC+8  
-            **比赛权重** : 24.00  
-            **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
-            **添加日历** : https://ctftime.org/event/2707.ics  
-            
         ??? Quote "[HACK'OSINT CTF - 2025](https://ctf.hackolyte.fr/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackolyte.fr/)  
             **比赛名称** : [HACK'OSINT CTF - 2025](https://ctf.hackolyte.fr/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : DaVinciCode (https://ctftime.org/team/112645)  
             **添加日历** : https://ctftime.org/event/2675.ics  
+            
+        ??? Quote "[SAS CTF 2025 Quals](https://ctf.thesascon.com/)"  
+            [![](https://ctftime.org/media/events/SAS25_new.png){ width="200" align=left }](https://ctf.thesascon.com/)  
+            **比赛名称** : [SAS CTF 2025 Quals](https://ctf.thesascon.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-05-24 20:00:00 - 2025-05-25 20:00:00 UTC+8  
+            **比赛权重** : 20.72  
+            **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
+            **添加日历** : https://ctftime.org/event/2636.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
