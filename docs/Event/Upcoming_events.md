@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[SAS CTF 2025 Quals](https://ctf.thesascon.com/)"  
-    [![](https://ctftime.org/media/events/SAS25_new.png){ width="200" align=left }](https://ctf.thesascon.com/)  
-    **比赛名称** : [SAS CTF 2025 Quals](https://ctf.thesascon.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-05-24 20:00:00 - 2025-05-25 20:00:00 UTC+8  
-    **比赛权重** : 20.72  
-    **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
-    **添加日历** : https://ctftime.org/event/2636.ics  
-    
 ??? Quote "[D^3CTF 2025](https://d3c.tf/)"  
     [![](https://ctftime.org/media/events/ddd_1.png){ width="200" align=left }](https://d3c.tf/)  
     **比赛名称** : [D^3CTF 2025](https://d3c.tf/)  
