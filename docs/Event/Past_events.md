@@ -42,6 +42,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[AI CTF 2025](https://aictf.phdays.fun/)"  
+    [![](https://ctftime.org/media/events/821553befa9c3ad5b7d17e5e1cbb36a7.png){ width="200" align=left }](https://aictf.phdays.fun/)  
+    **比赛名称** : [AI CTF 2025](https://aictf.phdays.fun/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-23 01:00:00 - 2025-05-24 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : [TechnoPandas] (https://ctftime.org/team/1946)  
+    **添加日历** : https://ctftime.org/event/2778.ics  
+    
 ??? Quote "[Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)"  
     [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo_1.png){ width="200" align=left }](https://midnightsunctf.com/)  
     **比赛名称** : [Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)  
@@ -932,13 +941,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : NFITS (https://ctftime.org/team/360674)  
     **添加日历** : https://ctftime.org/event/2588.ics  
-    
-??? Quote "[WEC CTF 2025](https://wecctf.nitk.ac.in/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://wecctf.nitk.ac.in/)  
-    **比赛名称** : [WEC CTF 2025](https://wecctf.nitk.ac.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-01 19:30:00 - 2025-03-02 19:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Web Club NITK (https://ctftime.org/team/216903)  
-    **添加日历** : https://ctftime.org/event/2705.ics  
     

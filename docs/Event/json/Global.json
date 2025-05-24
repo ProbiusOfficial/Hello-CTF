@@ -672,18 +672,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "AI CTF 2025",
-        "比赛时间": "2025-05-23 01:00:00 - 2025-05-24 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2778.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://aictf.phdays.fun/",
-        "比赛标志": "https://ctftime.org/media/events/821553befa9c3ad5b7d17e5e1cbb36a7.png",
-        "比赛权重": "0",
-        "赛事主办": "[TechnoPandas] (https://ctftime.org/team/1946)",
-        "比赛ID": "1129",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Global Cyber Skills Benchmark CTF 2025: Operation Blackout",
         "比赛时间": "2025-05-23 21:00:00 - 2025-05-27 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2707.ics",
@@ -718,6 +706,18 @@
         "赛事主办": "JustHacking (https://ctftime.org/team/59573)",
         "比赛ID": "438",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "AI CTF 2025",
+        "比赛时间": "2025-05-23 01:00:00 - 2025-05-24 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2778.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://aictf.phdays.fun/",
+        "比赛标志": "https://ctftime.org/media/events/821553befa9c3ad5b7d17e5e1cbb36a7.png",
+        "比赛权重": "0",
+        "赛事主办": "[TechnoPandas] (https://ctftime.org/team/1946)",
+        "比赛ID": "1129",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Midnight Sun CTF 2025 Quals",
@@ -1905,18 +1905,6 @@
         "比赛权重": "0",
         "赛事主办": "NFITS (https://ctftime.org/team/360674)",
         "比赛ID": "1200",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "WEC CTF 2025",
-        "比赛时间": "2025-03-01 19:30:00 - 2025-03-02 19:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2705.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://wecctf.nitk.ac.in/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Web Club NITK (https://ctftime.org/team/216903)",
-        "比赛ID": "913",
         "比赛状态": "past"
     }
 ]
