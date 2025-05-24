@@ -1,0 +1,133 @@
+{
+    "success": true,
+    "data": {
+        "result": [
+            {
+                "name": "2025年能源网络安全大赛",
+                "info_confirmed": 1,
+                "mid_join": 0,
+                "link": "https://www.cers.org.cn/site/content/883b36f00aff466fa37efcef0c074915.html",
+                "status": "正在进行",
+                "is_reg": 1,
+                "limit": 0,
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2025年3月1日 00:00",
+                "reg_time_end": "2025年3月31日 23:59",
+                "comp_time_start": "2025年4月1日 00:00",
+                "comp_time_end": "2025年6月30日 23:59",
+                "organizer": "中国能源研究会",
+                "contac": {
+                    "屈庆红": "13911722186",
+                    "李理": "18618348964",
+                    "陈炜": "18918311320",
+                    "邮箱": "icc@cers.org.cn"
+                },
+                "tag": "行业赛",
+                "readmore": "2025年能源网络安全大赛由中国能源研究会主办，面向电网企业、发电及电力建设企业、石油石化企业、煤炭企业等单位网络安全技术、运维和管理人员，以及国内网络安全领域知名高校、科研机构、产业单位等代表。报名截止日期为2025年3月31日，可通过扫描二维码下载报名表并发送至icc@cers.org.cn邮箱。联系人包括屈庆红、李理和陈炜，可通过电话或邮箱进行咨询。"
+            },
+            {
+                "name": "ACTF 2025",
+                "info_confirmed": 1,
+                "mid_join": 0,
+                "link": "https://actf2025.xctf.org.cn/",
+                "status": "已经结束",
+                "is_reg": 0,
+                "limit": "0",
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2025年04月16日 08:59",
+                "reg_time_end": "2025年04月26日 08:59",
+                "comp_time_start": "2025年04月26日 09:00",
+                "comp_time_end": "2025年04月27日 09:00",
+                "organizer": "XCTF联赛",
+                "contac": {
+                    "QQ群": "512066352"
+                },
+                "tag": "",
+                "readmore": "ACTF 2025由XCTF联赛主办，比赛时间为2025年4月26日至4月27日，更多信息请访问官方网站。选手可通过QQ群512066352进行沟通交流。"
+            },
+            {
+                "name": "TGCTF 2025",
+                "info_confirmed": 1,
+                "mid_join": 0,
+                "link": "https://tgctf.woooo.tech/",
+                "status": "已经结束",
+                "is_reg": 1,
+                "limit": "1",
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2025年04月12日 09:00",
+                "reg_time_end": "2025年04月11日 21:00",
+                "comp_time_start": "2025年04月12日 09:00",
+                "comp_time_end": "2025年04月13日 21:00",
+                "organizer": "杭州师范大学",
+                "contac": {},
+                "tag": "公益赛",
+                "readmore": "TGCTF 2025（杭州师范大学第六届网络与信息安全竞赛）由杭州师范大学主办，报名截止时间为2025年4月11日21点，比赛时间为4月12号9点至4月13号21点，共36小时。"
+            },
+            {
+                "name": "商丘师范学院第四届网络安全及信息对抗大赛（公开赛道）",
+                "info_confirmed": 1,
+                "mid_join": 0,
+                "link": "www.qsnctf.com",
+                "status": "已经结束",
+                "is_reg": 1,
+                "limit": 1,
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2025年04月01日 00:00",
+                "reg_time_end": "2025年04月07日 09:59",
+                "comp_time_start": "2025年04月07日 10:00",
+                "comp_time_end": "2025年04月13日 17:00",
+                "organizer": "商丘师范学院",
+                "contac": {
+                    "QQ群": "1021827215"
+                },
+                "tag": "普通赛",
+                "readmore": "商丘师范学院第四届网络安全及信息对抗大赛（公开赛道）是一个由商丘师范学院主办的线上个人赛。报名开始时间为2025年04月01日 00:00，报名结束时间为2025年04月07日 09:59。比赛时间为2025年04月07日 10:00至2025年04月13日 17:00。更多信息请访问比赛官网www.qsnctf.com，或加入QQ群1021827215进行咨询。比赛设有证书和周边奖励。"
+            },
+            {
+                "name": "XYCTF 2025",
+                "info_confirmed": 1,
+                "mid_join": 0,
+                "link": "xyctf.top",
+                "status": "已经结束",
+                "is_reg": 1,
+                "limit": 1,
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2025年04月04日 10:00",
+                "reg_time_end": "2025年04月07日 19:59",
+                "comp_time_start": "2025年04月04日 10:00",
+                "comp_time_end": "2025年04月07日 20:00",
+                "organizer": "XYCTF 2025 官方",
+                "contac": {
+                    "QQ群": "798794707",
+                    "官方邮箱": "ctf_xiao@163.com"
+                },
+                "tag": "",
+                "readmore": "XYCTF 2025 官方邮箱为ctf_xiao@163.com，赛事QQ群为798794707。"
+            },
+            {
+                "name": "HellCTF 2025",
+                "info_confirmed": 1,
+                "mid_join": 1,
+                "link": "ctfplus.cn",
+                "status": "已经结束",
+                "is_reg": 1,
+                "limit": 1,
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2025年04月03日 00:00",
+                "reg_time_end": "2025年04月04日 14:43",
+                "comp_time_start": "2025年04月04日 14:44",
+                "comp_time_end": "2025年04月06日 14:44",
+                "organizer": "公开赛",
+                "contac": {
+                    "QQ群": "879334917"
+                },
+                "tag": "普通赛",
+                "readmore": "HellCTF 2025是一个公开赛，主办方为公开赛。比赛群为879334917。时候赚取你来生的财富了! 最高奖励1,000,000.000.000元，奖品设置包括每题一血解出者每人一份R.E.D.O.(Steam版本)，每题所有解出者中抽取两位获得大额冥币(可代烧)，所有参赛者中抽取两位获得纸扎大house(可代烧)。"
+            }
+        ],
+        "total": 77,
+        "page": 1,
+        "size": 20
+    },
+    "msg": ""
+}
