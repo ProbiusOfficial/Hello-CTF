@@ -821,15 +821,6 @@ hide:
                 **赛事主办** : DaVinciCode (https://ctftime.org/team/112645)  
                 **添加日历** : https://ctftime.org/event/2675.ics  
                 
-            ??? Quote "[SAS CTF 2025 Quals](https://ctf.thesascon.com/)"  
-                [![](https://ctftime.org/media/events/SAS25_new.png){ width="200" align=left }](https://ctf.thesascon.com/)  
-                **比赛名称** : [SAS CTF 2025 Quals](https://ctf.thesascon.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-24 20:00:00 - 2025-05-25 20:00:00 UTC+8  
-                **比赛权重** : 20.72  
-                **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
-                **添加日历** : https://ctftime.org/event/2636.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[ACTF 2025](https://actf2025.xctf.org.cn/)"  
@@ -868,6 +859,15 @@ hide:
                 **其他说明** : HellCTF 2025是一个公开赛，主办方为公开赛。比赛群为879334917。时候赚取你来生的财富了! 最高奖励1,000,000.000.000元，奖品设置包括每题一血解出者每人一份R.E.D.O.(Steam版本)，每题所有解出者中抽取两位获得大额冥币(可代烧)，所有参赛者中抽取两位获得纸扎大house(可代烧)。  
                 
         === "国外赛事"
+            ??? Quote "[SAS CTF 2025 Quals](https://ctf.thesascon.com/)"  
+                [![](https://ctftime.org/media/events/SAS25_new.png){ width="200" align=left }](https://ctf.thesascon.com/)  
+                **比赛名称** : [SAS CTF 2025 Quals](https://ctf.thesascon.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-24 20:00:00 - 2025-05-25 20:00:00 UTC+8  
+                **比赛权重** : 20.72  
+                **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
+                **添加日历** : https://ctftime.org/event/2636.ics  
+                
             ??? Quote "[AI CTF 2025](https://aictf.phdays.fun/)"  
                 [![](https://ctftime.org/media/events/821553befa9c3ad5b7d17e5e1cbb36a7.png){ width="200" align=left }](https://aictf.phdays.fun/)  
                 **比赛名称** : [AI CTF 2025](https://aictf.phdays.fun/)  
@@ -1758,15 +1758,6 @@ hide:
                 **比赛权重** : 13.00  
                 **赛事主办** : Winja CTF (https://ctftime.org/team/145228)  
                 **添加日历** : https://ctftime.org/event/2692.ics  
-                
-            ??? Quote "[CSCG 2025](https://play.cscg.live/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://play.cscg.live/)  
-                **比赛名称** : [CSCG 2025](https://play.cscg.live/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-02 01:00:00 - 2025-05-02 00:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : NFITS (https://ctftime.org/team/360674)  
-                **添加日历** : https://ctftime.org/event/2588.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
