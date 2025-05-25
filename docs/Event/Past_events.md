@@ -51,6 +51,24 @@ comments: true
     **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
     **添加日历** : https://ctftime.org/event/2636.ics  
     
+??? Quote "[HACK'OSINT CTF - 2025](https://ctf.hackolyte.fr/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackolyte.fr/)  
+    **比赛名称** : [HACK'OSINT CTF - 2025](https://ctf.hackolyte.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-24 03:00:00 - 2025-05-26 03:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Hack'olyte (https://ctftime.org/team/222944)  
+    **添加日历** : https://ctftime.org/event/2722.ics  
+    
+??? Quote "[NahamCon CTF 2025](https://ctf.nahamcon.com/)"  
+    [![](https://ctftime.org/media/events/NAHAMCON-LOGOBRANDING_D3_A3.png){ width="200" align=left }](https://ctf.nahamcon.com/)  
+    **比赛名称** : [NahamCon CTF 2025](https://ctf.nahamcon.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-24 03:00:00 - 2025-05-26 03:00:00 UTC+8  
+    **比赛权重** : 53.77  
+    **赛事主办** : JustHacking (https://ctftime.org/team/59573)  
+    **添加日历** : https://ctftime.org/event/2782.ics  
+    
 ??? Quote "[AI CTF 2025](https://aictf.phdays.fun/)"  
     [![](https://ctftime.org/media/events/821553befa9c3ad5b7d17e5e1cbb36a7.png){ width="200" align=left }](https://aictf.phdays.fun/)  
     **比赛名称** : [AI CTF 2025](https://aictf.phdays.fun/)  
@@ -923,22 +941,4 @@ comments: true
     **比赛权重** : 33.81  
     **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
     **添加日历** : https://ctftime.org/event/2647.ics  
-    
-??? Quote "[VishwaCTF 2025](https://vishwactf.com/)"  
-    [![](https://ctftime.org/media/events/VishwaCTF-Circular_1.png){ width="200" align=left }](https://vishwactf.com/)  
-    **比赛名称** : [VishwaCTF 2025](https://vishwactf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-03 18:30:00 - 2025-03-05 18:29:59 UTC+8  
-    **比赛权重** : 27.90  
-    **赛事主办** : CyberCellVIIT (https://ctftime.org/team/144677)  
-    **添加日历** : https://ctftime.org/event/2630.ics  
-    
-??? Quote "[Winja CTF | Nullcon Goa 2025](https://ctf.winja.org/)"  
-    [![](https://ctftime.org/media/events/winja-logo-transparent_2.png){ width="200" align=left }](https://ctf.winja.org/)  
-    **比赛名称** : [Winja CTF | Nullcon Goa 2025](https://ctf.winja.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-02 14:00:00 - 2025-03-02 19:00:00 UTC+8  
-    **比赛权重** : 13.00  
-    **赛事主办** : Winja CTF (https://ctftime.org/team/145228)  
-    **添加日历** : https://ctftime.org/event/2692.ics  
     
