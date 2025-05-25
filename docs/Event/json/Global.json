@@ -244,7 +244,7 @@
         "比赛时间": "2025-06-21 15:00:00 - 2025-06-22 15:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2776.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.mt/",
+        "比赛链接": "https://2025.ctf.mt/",
         "比赛标志": "https://ctftime.org/media/events/MaltaCTF.png",
         "比赛权重": "0.00",
         "赛事主办": "Friendly Maltese Citizens (https://ctftime.org/team/220769)",
@@ -630,7 +630,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://play.midnightsunctf.com/",
         "比赛标志": "https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png",
-        "比赛权重": "46.25",
+        "比赛权重": "45.00",
         "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
         "比赛ID": "246",
         "比赛状态": "oncoming"
