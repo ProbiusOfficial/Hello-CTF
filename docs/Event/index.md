@@ -325,9 +325,9 @@ hide:
                 **赛事主办** : fibonhack (https://ctftime.org/team/117538)  
                 **添加日历** : https://ctftime.org/event/2605.ics  
                 
-            ??? Quote "[Grey Cat The Flag 2025](https://ctf.nusgreyhats.org/)"  
-                [![](https://ctftime.org/media/events/New_Project_1.jpg){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
-                **比赛名称** : [Grey Cat The Flag 2025](https://ctf.nusgreyhats.org/)  
+            ??? Quote "[Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)"  
+                [![](https://ctftime.org/media/events/New_Project_1.jpg){ width="200" align=left }](https://ctfd.nusgreyhats.org/)  
+                **比赛名称** : [Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-05-31 20:00:00 - 2025-06-01 20:00:00 UTC+8  
                 **比赛权重** : 32.92  
