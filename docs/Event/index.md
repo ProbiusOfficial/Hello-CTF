@@ -794,15 +794,6 @@ hide:
                 **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
                 **添加日历** : https://ctftime.org/event/2707.ics  
                 
-            ??? Quote "[DaVinciCTF 2025](https://dvc.tf/)"  
-                [![](https://ctftime.org/media/events/davincictf_vectorized.png){ width="200" align=left }](https://dvc.tf/)  
-                **比赛名称** : [DaVinciCTF 2025](https://dvc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-24 18:00:00 - 2025-05-26 04:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : DaVinciCode (https://ctftime.org/team/112645)  
-                **添加日历** : https://ctftime.org/event/2675.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[ACTF 2025](https://actf2025.xctf.org.cn/)"  
@@ -849,6 +840,15 @@ hide:
                 **比赛权重** : 20.72  
                 **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
                 **添加日历** : https://ctftime.org/event/2636.ics  
+                
+            ??? Quote "[DaVinciCTF 2025](https://dvc.tf/)"  
+                [![](https://ctftime.org/media/events/davincictf_vectorized.png){ width="200" align=left }](https://dvc.tf/)  
+                **比赛名称** : [DaVinciCTF 2025](https://dvc.tf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-24 18:00:00 - 2025-05-26 04:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : DaVinciCode (https://ctftime.org/team/112645)  
+                **添加日历** : https://ctftime.org/event/2675.ics  
                 
             ??? Quote "[HACK'OSINT CTF - 2025](https://ctf.hackolyte.fr/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackolyte.fr/)  
@@ -1731,15 +1731,6 @@ hide:
                 **比赛权重** : 33.89  
                 **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
                 **添加日历** : https://ctftime.org/event/2599.ics  
-                
-            ??? Quote "[Pearl CTF](https://pearlctf.in/)"  
-                [![](https://ctftime.org/media/events/Pearl_Logo.png){ width="200" align=left }](https://pearlctf.in/)  
-                **比赛名称** : [Pearl CTF](https://pearlctf.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-07 20:30:00 - 2025-03-08 20:30:00 UTC+8  
-                **比赛权重** : 33.81  
-                **赛事主办** : BIT CRIMINALS (https://ctftime.org/team/151727)  
-                **添加日历** : https://ctftime.org/event/2647.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
