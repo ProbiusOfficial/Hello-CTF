@@ -78,6 +78,15 @@ comments: true
     **赛事主办** : JustHacking (https://ctftime.org/team/59573)  
     **添加日历** : https://ctftime.org/event/2782.ics  
     
+??? Quote "[Global Cyber Skills Benchmark CTF 2025: Operation Blackout](https://ctf.hackthebox.com/event/details/global-cyber-skills-benchmark-ctf-2025-operation-blackout-2174)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/global-cyber-skills-benchmark-ctf-2025-operation-blackout-2174)  
+    **比赛名称** : [Global Cyber Skills Benchmark CTF 2025: Operation Blackout](https://ctf.hackthebox.com/event/details/global-cyber-skills-benchmark-ctf-2025-operation-blackout-2174)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-23 21:00:00 - 2025-05-27 21:00:00 UTC+8  
+    **比赛权重** : 24.00  
+    **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
+    **添加日历** : https://ctftime.org/event/2707.ics  
+    
 ??? Quote "[AI CTF 2025](https://aictf.phdays.fun/)"  
     [![](https://ctftime.org/media/events/821553befa9c3ad5b7d17e5e1cbb36a7.png){ width="200" align=left }](https://aictf.phdays.fun/)  
     **比赛名称** : [AI CTF 2025](https://aictf.phdays.fun/)  
@@ -932,13 +941,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
     **添加日历** : https://ctftime.org/event/2625.ics  
-    
-??? Quote "[KalmarCTF 2025](http://KalmarC.TF/)"  
-    [![](https://ctftime.org/media/events/kalmar-logo.png){ width="200" align=left }](http://KalmarC.TF/)  
-    **比赛名称** : [KalmarCTF 2025](http://KalmarC.TF/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-08 01:00:00 - 2025-03-10 01:00:00 UTC+8  
-    **比赛权重** : 33.89  
-    **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
-    **添加日历** : https://ctftime.org/event/2599.ics  
     
