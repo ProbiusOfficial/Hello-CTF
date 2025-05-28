@@ -42,6 +42,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[GIT X IITB Trust Lab CTF](https://unstop.com/p/git-x-iitb-ctf-kls-git-1461610)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://unstop.com/p/git-x-iitb-ctf-kls-git-1461610)  
+    **比赛名称** : [GIT X IITB Trust Lab CTF](https://unstop.com/p/git-x-iitb-ctf-kls-git-1461610)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-28 15:23:12 - 2025-05-28 15:23:12 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : fs0cie1yᶦⁿᵈᶦᵃ (https://ctftime.org/team/380218)  
+    **添加日历** : https://ctftime.org/event/2815.ics  
+    
 ??? Quote "[SAS CTF 2025 Quals](https://ctf.thesascon.com/)"  
     [![](https://ctftime.org/media/events/SAS25_new.png){ width="200" align=left }](https://ctf.thesascon.com/)  
     **比赛名称** : [SAS CTF 2025 Quals](https://ctf.thesascon.com/)  
@@ -932,13 +941,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : TP-Link (https://ctftime.org/team/273760)  
     **添加日历** : https://ctftime.org/event/2645.ics  
-    
-??? Quote "[Dreamhack CTF Season 7 Round #5 (Div. 1)](https://dreamhack.io/ctf/659)"  
-    [![](https://ctftime.org/media/events/cover05.jpg){ width="200" align=left }](https://dreamhack.io/ctf/659)  
-    **比赛名称** : [Dreamhack CTF Season 7 Round #5 (Div. 1)](https://dreamhack.io/ctf/659)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-08 08:00:00 - 2025-03-08 23:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
-    **添加日历** : https://ctftime.org/event/2625.ics  
     

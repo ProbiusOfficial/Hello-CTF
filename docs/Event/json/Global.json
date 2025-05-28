@@ -648,6 +648,18 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "GIT X IITB Trust Lab CTF",
+        "比赛时间": "2025-05-28 15:23:12 - 2025-05-28 15:23:12 UTC+8",
+        "添加日历": "https://ctftime.org/event/2815.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://unstop.com/p/git-x-iitb-ctf-kls-git-1461610",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "fs0cie1yᶦⁿᵈᶦᵃ (https://ctftime.org/team/380218)",
+        "比赛ID": "1311",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "SAS CTF 2025 Quals",
         "比赛时间": "2025-05-24 20:00:00 - 2025-05-25 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2636.ics",
@@ -1833,18 +1845,6 @@
         "比赛权重": "25.00",
         "赛事主办": "TP-Link (https://ctftime.org/team/273760)",
         "比赛ID": "1016",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Dreamhack CTF Season 7 Round #5 (Div. 1)",
-        "比赛时间": "2025-03-08 08:00:00 - 2025-03-08 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2625.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dreamhack.io/ctf/659",
-        "比赛标志": "https://ctftime.org/media/events/cover05.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
-        "比赛ID": "1232",
         "比赛状态": "past"
     }
 ]

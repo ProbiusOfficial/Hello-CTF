@@ -823,6 +823,15 @@ hide:
                 **其他说明** : HellCTF 2025是一个公开赛，主办方为公开赛。比赛群为879334917。时候赚取你来生的财富了! 最高奖励1,000,000.000.000元，奖品设置包括每题一血解出者每人一份R.E.D.O.(Steam版本)，每题所有解出者中抽取两位获得大额冥币(可代烧)，所有参赛者中抽取两位获得纸扎大house(可代烧)。  
                 
         === "国外赛事"
+            ??? Quote "[GIT X IITB Trust Lab CTF](https://unstop.com/p/git-x-iitb-ctf-kls-git-1461610)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://unstop.com/p/git-x-iitb-ctf-kls-git-1461610)  
+                **比赛名称** : [GIT X IITB Trust Lab CTF](https://unstop.com/p/git-x-iitb-ctf-kls-git-1461610)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-28 15:23:12 - 2025-05-28 15:23:12 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : fs0cie1yᶦⁿᵈᶦᵃ (https://ctftime.org/team/380218)  
+                **添加日历** : https://ctftime.org/event/2815.ics  
+                
             ??? Quote "[SAS CTF 2025 Quals](https://ctf.thesascon.com/)"  
                 [![](https://ctftime.org/media/events/SAS25_new.png){ width="200" align=left }](https://ctf.thesascon.com/)  
                 **比赛名称** : [SAS CTF 2025 Quals](https://ctf.thesascon.com/)  
@@ -1713,15 +1722,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : TP-Link (https://ctftime.org/team/273760)  
                 **添加日历** : https://ctftime.org/event/2645.ics  
-                
-            ??? Quote "[Dreamhack CTF Season 7 Round #5 (Div. 1)](https://dreamhack.io/ctf/659)"  
-                [![](https://ctftime.org/media/events/cover05.jpg){ width="200" align=left }](https://dreamhack.io/ctf/659)  
-                **比赛名称** : [Dreamhack CTF Season 7 Round #5 (Div. 1)](https://dreamhack.io/ctf/659)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-08 08:00:00 - 2025-03-08 23:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
-                **添加日历** : https://ctftime.org/event/2625.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
