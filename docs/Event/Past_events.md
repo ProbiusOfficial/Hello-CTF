@@ -218,7 +218,7 @@ comments: true
     **比赛名称** : [UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-05-03 18:00:00 - 2025-05-04 18:00:00 UTC+8  
-    **比赛权重** : 18.29  
+    **比赛权重** : 18.53  
     **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
     **添加日历** : https://ctftime.org/event/2726.ics  
     
