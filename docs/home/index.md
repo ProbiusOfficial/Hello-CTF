@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Hardwear.io USA 2025 Hardware CTF](https://hwctf.quarkslab.com/)"  
-            [![](https://ctftime.org/media/events/logohwcolor_15.png){ width="200" align=left }](https://hwctf.quarkslab.com/)  
-            **比赛名称** : [Hardwear.io USA 2025 Hardware CTF](https://hwctf.quarkslab.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-05-31 01:00:00 - 2025-06-01 04:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Hardware CTF by Quarkslab (https://ctftime.org/team/274600)  
-            **添加日历** : https://ctftime.org/event/2788.ics  
-            
         ??? Quote "[N0PSctf](https://ctf.nops.re/)"  
             [![](https://ctftime.org/media/events/logo-news.png){ width="200" align=left }](https://ctf.nops.re/)  
             **比赛名称** : [N0PSctf](https://ctf.nops.re/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 32.92  
             **赛事主办** : NUS GreyHats (https://ctftime.org/team/16740)  
             **添加日历** : https://ctftime.org/event/2765.ics  
+            
+        ??? Quote "[MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)"  
+            [![](https://ctftime.org/media/events/blanc2.png){ width="200" align=left }](https://linktr.ee/m1ndbr34k)  
+            **比赛名称** : [MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-06-07 05:00:00 - 2025-06-07 14:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : ESGI (https://ctftime.org/team/3151)  
+            **添加日历** : https://ctftime.org/event/2766.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

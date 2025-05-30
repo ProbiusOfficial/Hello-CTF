@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Hardwear.io USA 2025 Hardware CTF",
-        "比赛时间": "2025-05-31 01:00:00 - 2025-06-01 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2788.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hwctf.quarkslab.com/",
-        "比赛标志": "https://ctftime.org/media/events/logohwcolor_15.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Hardware CTF by Quarkslab (https://ctftime.org/team/274600)",
-        "比赛ID": "1021",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "N0PSctf",
         "比赛时间": "2025-05-31 16:00:00 - 2025-06-02 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2486.ics",
@@ -69,18 +57,6 @@
         "比赛权重": "0",
         "赛事主办": "PlayCyber (https://ctftime.org/team/165788)",
         "比赛ID": "740",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "BCACTF 6.0",
-        "比赛时间": "2025-06-07 09:00:00 - 2025-06-10 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2609.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.bcactf.com/",
-        "比赛标志": "https://ctftime.org/media/events/CO.png",
-        "比赛权重": "62.97",
-        "赛事主办": "BCACTF (https://ctftime.org/team/81702)",
-        "比赛ID": "325",
         "比赛状态": "oncoming"
     },
     {
@@ -645,6 +621,18 @@
         "比赛权重": "54.67",
         "赛事主办": "D^3CTF Organizers (https://ctftime.org/team/91096)",
         "比赛ID": "387",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Hardwear.io USA 2025 Hardware CTF",
+        "比赛时间": "2025-05-31 01:00:00 - 2025-06-01 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2788.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://hwctf.quarkslab.com/",
+        "比赛标志": "https://ctftime.org/media/events/logohwcolor_15.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Hardware CTF by Quarkslab (https://ctftime.org/team/274600)",
+        "比赛ID": "1021",
         "比赛状态": "nowrunning"
     },
     {
