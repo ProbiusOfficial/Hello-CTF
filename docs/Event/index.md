@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)"  
-                [![](https://ctftime.org/media/events/1f40ecb1a9f69d191226247f073cc490.png){ width="200" align=left }](https://ctfd.nusgreyhats.org/)  
-                **比赛名称** : [Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-31 20:00:00 - 2025-06-01 20:00:00 UTC+8  
-                **比赛权重** : 32.92  
-                **赛事主办** : NUS GreyHats (https://ctftime.org/team/16740)  
-                **添加日历** : https://ctftime.org/event/2765.ics  
-                
             ??? Quote "[MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)"  
                 [![](https://ctftime.org/media/events/blanc2.png){ width="200" align=left }](https://linktr.ee/m1ndbr34k)  
                 **比赛名称** : [MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)  
@@ -740,15 +731,6 @@ hide:
                 **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
                 **添加日历** : https://ctftime.org/event/2774.ics  
                 
-            ??? Quote "[D^3CTF 2025](https://d3c.tf/)"  
-                [![](https://ctftime.org/media/events/ddd_1.png){ width="200" align=left }](https://d3c.tf/)  
-                **比赛名称** : [D^3CTF 2025](https://d3c.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-30 20:00:00 - 2025-05-31 20:00:00 UTC+8  
-                **比赛权重** : 54.67  
-                **赛事主办** : D^3CTF Organizers (https://ctftime.org/team/91096)  
-                **添加日历** : https://ctftime.org/event/2770.ics  
-                
             ??? Quote "[Hardwear.io USA 2025 Hardware CTF](https://hwctf.quarkslab.com/)"  
                 [![](https://ctftime.org/media/events/logohwcolor_15.png){ width="200" align=left }](https://hwctf.quarkslab.com/)  
                 **比赛名称** : [Hardwear.io USA 2025 Hardware CTF](https://hwctf.quarkslab.com/)  
@@ -775,6 +757,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : fibonhack (https://ctftime.org/team/117538)  
                 **添加日历** : https://ctftime.org/event/2605.ics  
+                
+            ??? Quote "[Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)"  
+                [![](https://ctftime.org/media/events/1f40ecb1a9f69d191226247f073cc490.png){ width="200" align=left }](https://ctfd.nusgreyhats.org/)  
+                **比赛名称** : [Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-31 20:00:00 - 2025-06-01 20:00:00 UTC+8  
+                **比赛权重** : 32.92  
+                **赛事主办** : NUS GreyHats (https://ctftime.org/team/16740)  
+                **添加日历** : https://ctftime.org/event/2765.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -814,6 +805,15 @@ hide:
                 **其他说明** : HellCTF 2025是一个公开赛，主办方为公开赛。比赛群为879334917。时候赚取你来生的财富了! 最高奖励1,000,000.000.000元，奖品设置包括每题一血解出者每人一份R.E.D.O.(Steam版本)，每题所有解出者中抽取两位获得大额冥币(可代烧)，所有参赛者中抽取两位获得纸扎大house(可代烧)。  
                 
         === "国外赛事"
+            ??? Quote "[D^3CTF 2025](https://d3c.tf/)"  
+                [![](https://ctftime.org/media/events/ddd_1.png){ width="200" align=left }](https://d3c.tf/)  
+                **比赛名称** : [D^3CTF 2025](https://d3c.tf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-30 20:00:00 - 2025-05-31 20:00:00 UTC+8  
+                **比赛权重** : 54.67  
+                **赛事主办** : D^3CTF Organizers (https://ctftime.org/team/91096)  
+                **添加日历** : https://ctftime.org/event/2770.ics  
+                
             ??? Quote "[GIT X IITB Trust Lab CTF](https://unstop.com/p/git-x-iitb-ctf-kls-git-1461610)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://unstop.com/p/git-x-iitb-ctf-kls-git-1461610)  
                 **比赛名称** : [GIT X IITB Trust Lab CTF](https://unstop.com/p/git-x-iitb-ctf-kls-git-1461610)  
@@ -1704,15 +1704,6 @@ hide:
                 **比赛权重** : 32.59  
                 **赛事主办** : [team Team] (https://ctftime.org/team/49808)  
                 **添加日历** : https://ctftime.org/event/2693.ics  
-                
-            ??? Quote "[TPCTF 2025](https://tpctf2025.xctf.org.cn/)"  
-                [![](https://ctftime.org/media/events/TPCTF_ba-stylenulla.top_1.png){ width="200" align=left }](https://tpctf2025.xctf.org.cn/)  
-                **比赛名称** : [TPCTF 2025](https://tpctf2025.xctf.org.cn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-08 09:00:00 - 2025-03-10 09:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : TP-Link (https://ctftime.org/team/273760)  
-                **添加日历** : https://ctftime.org/event/2645.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
