@@ -731,15 +731,6 @@ hide:
                 **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
                 **添加日历** : https://ctftime.org/event/2774.ics  
                 
-            ??? Quote "[Hardwear.io USA 2025 Hardware CTF](https://hwctf.quarkslab.com/)"  
-                [![](https://ctftime.org/media/events/logohwcolor_15.png){ width="200" align=left }](https://hwctf.quarkslab.com/)  
-                **比赛名称** : [Hardwear.io USA 2025 Hardware CTF](https://hwctf.quarkslab.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-31 01:00:00 - 2025-06-01 04:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Hardware CTF by Quarkslab (https://ctftime.org/team/274600)  
-                **添加日历** : https://ctftime.org/event/2788.ics  
-                
             ??? Quote "[N0PSctf](https://ctf.nops.re/)"  
                 [![](https://ctftime.org/media/events/logo-news.png){ width="200" align=left }](https://ctf.nops.re/)  
                 **比赛名称** : [N0PSctf](https://ctf.nops.re/)  
@@ -805,6 +796,15 @@ hide:
                 **其他说明** : HellCTF 2025是一个公开赛，主办方为公开赛。比赛群为879334917。时候赚取你来生的财富了! 最高奖励1,000,000.000.000元，奖品设置包括每题一血解出者每人一份R.E.D.O.(Steam版本)，每题所有解出者中抽取两位获得大额冥币(可代烧)，所有参赛者中抽取两位获得纸扎大house(可代烧)。  
                 
         === "国外赛事"
+            ??? Quote "[Hardwear.io USA 2025 Hardware CTF](https://hwctf.quarkslab.com/)"  
+                [![](https://ctftime.org/media/events/logohwcolor_15.png){ width="200" align=left }](https://hwctf.quarkslab.com/)  
+                **比赛名称** : [Hardwear.io USA 2025 Hardware CTF](https://hwctf.quarkslab.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-31 01:00:00 - 2025-06-01 04:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Hardware CTF by Quarkslab (https://ctftime.org/team/274600)  
+                **添加日历** : https://ctftime.org/event/2788.ics  
+                
             ??? Quote "[D^3CTF 2025](https://d3c.tf/)"  
                 [![](https://ctftime.org/media/events/ddd_1.png){ width="200" align=left }](https://d3c.tf/)  
                 **比赛名称** : [D^3CTF 2025](https://d3c.tf/)  
@@ -1695,15 +1695,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
                 **添加日历** : https://ctftime.org/event/2643.ics  
-                
-            ??? Quote "[Ugra CTF Quals 2025](https://2025.ugractf.ru/quals)"  
-                [![](https://ctftime.org/media/events/150.jpg){ width="200" align=left }](https://2025.ugractf.ru/quals)  
-                **比赛名称** : [Ugra CTF Quals 2025](https://2025.ugractf.ru/quals)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-08 15:00:00 - 2025-03-10 03:00:00 UTC+8  
-                **比赛权重** : 32.59  
-                **赛事主办** : [team Team] (https://ctftime.org/team/49808)  
-                **添加日历** : https://ctftime.org/event/2693.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
