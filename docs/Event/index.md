@@ -740,15 +740,6 @@ hide:
                 **赛事主办** : NOPS (https://ctftime.org/team/4056)  
                 **添加日历** : https://ctftime.org/event/2486.ics  
                 
-            ??? Quote "[[POSTPONED] Internet Festival 2025 CTF Quals](https://ifctf.fibonhack.it/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ifctf.fibonhack.it/)  
-                **比赛名称** : [[POSTPONED] Internet Festival 2025 CTF Quals](https://ifctf.fibonhack.it/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-31 19:00:00 - 2025-06-01 19:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : fibonhack (https://ctftime.org/team/117538)  
-                **添加日历** : https://ctftime.org/event/2605.ics  
-                
             ??? Quote "[Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)"  
                 [![](https://ctftime.org/media/events/1f40ecb1a9f69d191226247f073cc490.png){ width="200" align=left }](https://ctfd.nusgreyhats.org/)  
                 **比赛名称** : [Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)  
@@ -796,6 +787,15 @@ hide:
                 **其他说明** : HellCTF 2025是一个公开赛，主办方为公开赛。比赛群为879334917。时候赚取你来生的财富了! 最高奖励1,000,000.000.000元，奖品设置包括每题一血解出者每人一份R.E.D.O.(Steam版本)，每题所有解出者中抽取两位获得大额冥币(可代烧)，所有参赛者中抽取两位获得纸扎大house(可代烧)。  
                 
         === "国外赛事"
+            ??? Quote "[[POSTPONED] Internet Festival 2025 CTF Quals](https://ifctf.fibonhack.it/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ifctf.fibonhack.it/)  
+                **比赛名称** : [[POSTPONED] Internet Festival 2025 CTF Quals](https://ifctf.fibonhack.it/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-31 19:00:00 - 2025-06-01 19:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : fibonhack (https://ctftime.org/team/117538)  
+                **添加日历** : https://ctftime.org/event/2605.ics  
+                
             ??? Quote "[Hardwear.io USA 2025 Hardware CTF](https://hwctf.quarkslab.com/)"  
                 [![](https://ctftime.org/media/events/logohwcolor_15.png){ width="200" align=left }](https://hwctf.quarkslab.com/)  
                 **比赛名称** : [Hardwear.io USA 2025 Hardware CTF](https://hwctf.quarkslab.com/)  
@@ -1686,15 +1686,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : LiTHeHax (https://ctftime.org/team/361438)  
                 **添加日历** : https://ctftime.org/event/2733.ics  
-                
-            ??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
-                [![](https://ctftime.org/media/events/DFIR_Labs_Icon.png){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
-                **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-09 00:00:00 - 2025-03-09 04:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
-                **添加日历** : https://ctftime.org/event/2643.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

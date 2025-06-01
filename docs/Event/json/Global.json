@@ -588,18 +588,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "[POSTPONED] Internet Festival 2025 CTF Quals",
-        "比赛时间": "2025-05-31 19:00:00 - 2025-06-01 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2605.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ifctf.fibonhack.it/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "fibonhack (https://ctftime.org/team/117538)",
-        "比赛ID": "880",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Grey Cat The Flag 2025",
         "比赛时间": "2025-05-31 20:00:00 - 2025-06-01 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2765.ics",
@@ -610,6 +598,18 @@
         "赛事主办": "NUS GreyHats (https://ctftime.org/team/16740)",
         "比赛ID": "778",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "[POSTPONED] Internet Festival 2025 CTF Quals",
+        "比赛时间": "2025-05-31 19:00:00 - 2025-06-01 19:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2605.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ifctf.fibonhack.it/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "fibonhack (https://ctftime.org/team/117538)",
+        "比赛ID": "880",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Hardwear.io USA 2025 Hardware CTF",
@@ -1797,18 +1797,6 @@
         "比赛权重": "0.00",
         "赛事主办": "LiTHeHax (https://ctftime.org/team/361438)",
         "比赛ID": "1269",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DFIR Labs CTF by The DFIR Report",
-        "比赛时间": "2025-03-09 00:00:00 - 2025-03-09 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2643.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://thedfirreport.com/services/dfir-labs/ctf/",
-        "比赛标志": "https://ctftime.org/media/events/DFIR_Labs_Icon.png",
-        "比赛权重": "0",
-        "赛事主办": "The DFIR Report (https://ctftime.org/team/309500)",
-        "比赛ID": "1149",
         "比赛状态": "past"
     }
 ]

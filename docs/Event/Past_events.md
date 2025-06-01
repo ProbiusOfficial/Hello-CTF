@@ -42,6 +42,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[[POSTPONED] Internet Festival 2025 CTF Quals](https://ifctf.fibonhack.it/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ifctf.fibonhack.it/)  
+    **比赛名称** : [[POSTPONED] Internet Festival 2025 CTF Quals](https://ifctf.fibonhack.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-31 19:00:00 - 2025-06-01 19:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : fibonhack (https://ctftime.org/team/117538)  
+    **添加日历** : https://ctftime.org/event/2605.ics  
+    
 ??? Quote "[Hardwear.io USA 2025 Hardware CTF](https://hwctf.quarkslab.com/)"  
     [![](https://ctftime.org/media/events/logohwcolor_15.png){ width="200" align=left }](https://hwctf.quarkslab.com/)  
     **比赛名称** : [Hardwear.io USA 2025 Hardware CTF](https://hwctf.quarkslab.com/)  
@@ -932,13 +941,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : LiTHeHax (https://ctftime.org/team/361438)  
     **添加日历** : https://ctftime.org/event/2733.ics  
-    
-??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
-    [![](https://ctftime.org/media/events/DFIR_Labs_Icon.png){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
-    **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-09 00:00:00 - 2025-03-09 04:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
-    **添加日历** : https://ctftime.org/event/2643.ics  
     
