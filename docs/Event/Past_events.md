@@ -263,7 +263,7 @@ comments: true
     **比赛名称** : [UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-05-03 18:00:00 - 2025-05-04 18:00:00 UTC+8  
-    **比赛权重** : 18.53  
+    **比赛权重** : 18.35  
     **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
     **添加日历** : https://ctftime.org/event/2726.ics  
     
@@ -623,7 +623,7 @@ comments: true
     **比赛名称** : [Capture Point 5353 3.0](https://iiitv.capturepoint5353.tech/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-03-31 02:00:00 - 2025-04-01 16:10:29 UTC+8  
-    **比赛权重** : 22.05  
+    **比赛权重** : 22.20  
     **赛事主办** : HORIZON_03 (https://ctftime.org/team/375436)  
     **添加日历** : https://ctftime.org/event/2747.ics  
     
@@ -893,7 +893,7 @@ comments: true
     **比赛名称** : [WatCTF W25](https://watctf.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-03-16 03:00:00 - 2025-03-17 03:00:00 UTC+8  
-    **比赛权重** : 24.79  
+    **比赛权重** : 24.81  
     **赛事主办** : WATCTF (https://ctftime.org/team/373968)  
     **添加日历** : https://ctftime.org/event/2727.ics  
     
@@ -902,7 +902,7 @@ comments: true
     **比赛名称** : [Nowruz 1404](https://1404.fmc.tf/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-03-15 21:30:00 - 2025-03-16 21:30:00 UTC+8  
-    **比赛权重** : 24.47  
+    **比赛权重** : 24.49  
     **赛事主办** : FlagMotori (https://ctftime.org/team/222060)  
     **添加日历** : https://ctftime.org/event/2601.ics  
     
@@ -911,7 +911,7 @@ comments: true
     **比赛名称** : [K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-03-15 21:00:00 - 2025-03-16 21:00:00 UTC+8  
-    **比赛权重** : 18.70  
+    **比赛权重** : 19.02  
     **赛事主办** : K!nd4SUS (https://ctftime.org/team/150337)  
     **添加日历** : https://ctftime.org/event/2703.ics  
     
