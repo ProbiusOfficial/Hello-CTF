@@ -731,15 +731,6 @@ hide:
                 **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
                 **添加日历** : https://ctftime.org/event/2774.ics  
                 
-            ??? Quote "[N0PSctf](https://ctf.nops.re/)"  
-                [![](https://ctftime.org/media/events/logo-news.png){ width="200" align=left }](https://ctf.nops.re/)  
-                **比赛名称** : [N0PSctf](https://ctf.nops.re/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-31 16:00:00 - 2025-06-02 04:00:00 UTC+8  
-                **比赛权重** : 24.34  
-                **赛事主办** : NOPS (https://ctftime.org/team/4056)  
-                **添加日历** : https://ctftime.org/event/2486.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[ACTF 2025](https://actf2025.xctf.org.cn/)"  
@@ -796,6 +787,15 @@ hide:
                 **赛事主办** : fibonhack (https://ctftime.org/team/117538)  
                 **添加日历** : https://ctftime.org/event/2605.ics  
                 
+            ??? Quote "[N0PSctf](https://ctf.nops.re/)"  
+                [![](https://ctftime.org/media/events/logo-news.png){ width="200" align=left }](https://ctf.nops.re/)  
+                **比赛名称** : [N0PSctf](https://ctf.nops.re/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-31 16:00:00 - 2025-06-02 04:00:00 UTC+8  
+                **比赛权重** : 24.34  
+                **赛事主办** : NOPS (https://ctftime.org/team/4056)  
+                **添加日历** : https://ctftime.org/event/2486.ics  
+                
             ??? Quote "[Hardwear.io USA 2025 Hardware CTF](https://hwctf.quarkslab.com/)"  
                 [![](https://ctftime.org/media/events/logohwcolor_15.png){ width="200" align=left }](https://hwctf.quarkslab.com/)  
                 **比赛名称** : [Hardwear.io USA 2025 Hardware CTF](https://hwctf.quarkslab.com/)  
@@ -837,7 +837,7 @@ hide:
                 **比赛名称** : [DaVinciCTF 2025](https://dvc.tf/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-05-24 18:00:00 - 2025-05-26 04:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 45.00  
                 **赛事主办** : DaVinciCode (https://ctftime.org/team/112645)  
                 **添加日历** : https://ctftime.org/event/2675.ics  
                 
@@ -1668,15 +1668,6 @@ hide:
                 **比赛权重** : 24.14  
                 **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
                 **添加日历** : https://ctftime.org/event/2634.ics  
-                
-            ??? Quote "[AI vs Human CTF Challenge](https://ctf.hackthebox.com/event/details/ai-vs-human-ctf-challenge-2000)"  
-                [![](https://ctftime.org/media/events/TakdFKeKQfMuBnauH5bjw8olSIcjpOdGkCOjJ3Mn.png){ width="200" align=left }](https://ctf.hackthebox.com/event/details/ai-vs-human-ctf-challenge-2000)  
-                **比赛名称** : [AI vs Human CTF Challenge](https://ctf.hackthebox.com/event/details/ai-vs-human-ctf-challenge-2000)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-14 23:00:00 - 2025-03-16 23:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Palisade Research (https://ctftime.org/team/373097)  
-                **添加日历** : https://ctftime.org/event/2723.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
