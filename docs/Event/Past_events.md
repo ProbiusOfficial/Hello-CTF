@@ -42,6 +42,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)"  
+    [![](https://ctftime.org/media/events/1f40ecb1a9f69d191226247f073cc490.png){ width="200" align=left }](https://ctfd.nusgreyhats.org/)  
+    **比赛名称** : [Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-05-31 20:00:00 - 2025-06-01 20:00:00 UTC+8  
+    **比赛权重** : 32.92  
+    **赛事主办** : NUS GreyHats (https://ctftime.org/team/16740)  
+    **添加日历** : https://ctftime.org/event/2765.ics  
+    
 ??? Quote "[[POSTPONED] Internet Festival 2025 CTF Quals](https://ifctf.fibonhack.it/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ifctf.fibonhack.it/)  
     **比赛名称** : [[POSTPONED] Internet Festival 2025 CTF Quals](https://ifctf.fibonhack.it/)  
@@ -932,13 +941,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Palisade Research (https://ctftime.org/team/373097)  
     **添加日历** : https://ctftime.org/event/2723.ics  
-    
-??? Quote "[LiU CTF 2025](https://ctf.lithehax.se/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.lithehax.se/)  
-    **比赛名称** : [LiU CTF 2025](https://ctf.lithehax.se/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-09 01:15:00 - 2025-03-09 06:45:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : LiTHeHax (https://ctftime.org/team/361438)  
-    **添加日历** : https://ctftime.org/event/2733.ics  
     

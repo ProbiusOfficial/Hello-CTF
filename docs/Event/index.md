@@ -740,15 +740,6 @@ hide:
                 **赛事主办** : NOPS (https://ctftime.org/team/4056)  
                 **添加日历** : https://ctftime.org/event/2486.ics  
                 
-            ??? Quote "[Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)"  
-                [![](https://ctftime.org/media/events/1f40ecb1a9f69d191226247f073cc490.png){ width="200" align=left }](https://ctfd.nusgreyhats.org/)  
-                **比赛名称** : [Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-31 20:00:00 - 2025-06-01 20:00:00 UTC+8  
-                **比赛权重** : 32.92  
-                **赛事主办** : NUS GreyHats (https://ctftime.org/team/16740)  
-                **添加日历** : https://ctftime.org/event/2765.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[ACTF 2025](https://actf2025.xctf.org.cn/)"  
@@ -787,6 +778,15 @@ hide:
                 **其他说明** : HellCTF 2025是一个公开赛，主办方为公开赛。比赛群为879334917。时候赚取你来生的财富了! 最高奖励1,000,000.000.000元，奖品设置包括每题一血解出者每人一份R.E.D.O.(Steam版本)，每题所有解出者中抽取两位获得大额冥币(可代烧)，所有参赛者中抽取两位获得纸扎大house(可代烧)。  
                 
         === "国外赛事"
+            ??? Quote "[Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)"  
+                [![](https://ctftime.org/media/events/1f40ecb1a9f69d191226247f073cc490.png){ width="200" align=left }](https://ctfd.nusgreyhats.org/)  
+                **比赛名称** : [Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-05-31 20:00:00 - 2025-06-01 20:00:00 UTC+8  
+                **比赛权重** : 32.92  
+                **赛事主办** : NUS GreyHats (https://ctftime.org/team/16740)  
+                **添加日历** : https://ctftime.org/event/2765.ics  
+                
             ??? Quote "[[POSTPONED] Internet Festival 2025 CTF Quals](https://ifctf.fibonhack.it/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ifctf.fibonhack.it/)  
                 **比赛名称** : [[POSTPONED] Internet Festival 2025 CTF Quals](https://ifctf.fibonhack.it/)  
@@ -1677,15 +1677,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Palisade Research (https://ctftime.org/team/373097)  
                 **添加日历** : https://ctftime.org/event/2723.ics  
-                
-            ??? Quote "[LiU CTF 2025](https://ctf.lithehax.se/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.lithehax.se/)  
-                **比赛名称** : [LiU CTF 2025](https://ctf.lithehax.se/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-09 01:15:00 - 2025-03-09 06:45:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : LiTHeHax (https://ctftime.org/team/361438)  
-                **添加日历** : https://ctftime.org/event/2733.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
