@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[TJCTF 2025](https://tjctf.org/)"  
-            [![](https://ctftime.org/media/events/logo_96_1.png){ width="200" align=left }](https://tjctf.org/)  
-            **比赛名称** : [TJCTF 2025](https://tjctf.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-06-06 20:00:00 - 2025-06-08 20:00:00 UTC+8  
-            **比赛权重** : 51.29  
-            **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
-            **添加日历** : https://ctftime.org/event/2809.ics  
-            
         ??? Quote "[MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)"  
             [![](https://ctftime.org/media/events/blanc2.png){ width="200" align=left }](https://linktr.ee/m1ndbr34k)  
             **比赛名称** : [MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
             **添加日历** : https://ctftime.org/event/2751.ics  
+            
+        ??? Quote "[bi0sCTF 2025](https://ctf.bi0s.in/)"  
+            [![](https://ctftime.org/media/events/image_2025-03-25_143431330.png){ width="200" align=left }](https://ctf.bi0s.in/)  
+            **比赛名称** : [bi0sCTF 2025](https://ctf.bi0s.in/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-06-07 13:30:00 - 2025-06-09 01:30:00 UTC+8  
+            **比赛权重** : 95.79  
+            **赛事主办** : bi0s (https://ctftime.org/team/662)  
+            **添加日历** : https://ctftime.org/event/2672.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

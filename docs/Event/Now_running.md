@@ -24,3 +24,12 @@ comments: true
     **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
     **添加日历** : https://ctftime.org/event/2774.ics  
     
+??? Quote "[TJCTF 2025](https://tjctf.org/)"  
+    [![](https://ctftime.org/media/events/logo_96_1.png){ width="200" align=left }](https://tjctf.org/)  
+    **比赛名称** : [TJCTF 2025](https://tjctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-06 20:00:00 - 2025-06-08 20:00:00 UTC+8  
+    **比赛权重** : 51.29  
+    **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
+    **添加日历** : https://ctftime.org/event/2809.ics  
+    

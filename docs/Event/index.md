@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[TJCTF 2025](https://tjctf.org/)"  
-                [![](https://ctftime.org/media/events/logo_96_1.png){ width="200" align=left }](https://tjctf.org/)  
-                **比赛名称** : [TJCTF 2025](https://tjctf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-06 20:00:00 - 2025-06-08 20:00:00 UTC+8  
-                **比赛权重** : 51.29  
-                **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
-                **添加日历** : https://ctftime.org/event/2809.ics  
-                
             ??? Quote "[MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)"  
                 [![](https://ctftime.org/media/events/blanc2.png){ width="200" align=left }](https://linktr.ee/m1ndbr34k)  
                 **比赛名称** : [MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)  
@@ -740,6 +731,15 @@ hide:
                 **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
                 **添加日历** : https://ctftime.org/event/2774.ics  
                 
+            ??? Quote "[TJCTF 2025](https://tjctf.org/)"  
+                [![](https://ctftime.org/media/events/logo_96_1.png){ width="200" align=left }](https://tjctf.org/)  
+                **比赛名称** : [TJCTF 2025](https://tjctf.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-06-06 20:00:00 - 2025-06-08 20:00:00 UTC+8  
+                **比赛权重** : 51.29  
+                **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
+                **添加日历** : https://ctftime.org/event/2809.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[ACTF 2025](https://actf2025.xctf.org.cn/)"  
@@ -762,13 +762,6 @@ hide:
                 **报名时间** : 2025年04月01日 00:00 - 2025年04月07日 09:59  
                 **比赛时间** : 2025年04月07日 10:00 - 2025年04月13日 17:00  
                 **其他说明** : 商丘师范学院第四届网络安全及信息对抗大赛（公开赛道）是一个由商丘师范学院主办的线上个人赛。报名开始时间为2025年04月01日 00:00，报名结束时间为2025年04月07日 09:59。比赛时间为2025年04月07日 10:00至2025年04月13日 17:00。更多信息请访问比赛官网www.qsnctf.com，或加入QQ群1021827215进行咨询。比赛设有证书和周边奖励。  
-                
-            ??? Quote "[XYCTF 2025](xyctf.top)"  
-                **比赛名称** : [XYCTF 2025](xyctf.top)  
-                **比赛类型** : 线上Jeopardy解题赛  
-                **报名时间** : 2025年04月04日 10:00 - 2025年04月07日 19:59  
-                **比赛时间** : 2025年04月04日 10:00 - 2025年04月07日 20:00  
-                **其他说明** : XYCTF 2025 官方邮箱为ctf_xiao@163.com，赛事QQ群为798794707。  
                 
         === "国外赛事"
             ??? Quote "[Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)"  
