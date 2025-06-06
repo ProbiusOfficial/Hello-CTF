@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Season V, US Cyber Open Beginner's Game Room CTF](https://www.uscybergames.com/)"  
-            [![](https://ctftime.org/media/events/2021-04-USCG_logos_cybergames.png){ width="200" align=left }](https://www.uscybergames.com/)  
-            **比赛名称** : [Season V, US Cyber Open Beginner's Game Room CTF](https://www.uscybergames.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-06-07 05:30:00 - 2025-06-20 07:59:59 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
-            **添加日历** : https://ctftime.org/event/2716.ics  
-            
         ??? Quote "[DIVER OSINT CTF 2025](https://ctfd.diverctf.org/)"  
             [![](https://ctftime.org/media/events/logo_circle.png){ width="200" align=left }](https://ctfd.diverctf.org/)  
             **比赛名称** : [DIVER OSINT CTF 2025](https://ctfd.diverctf.org/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : CyberHawks at UNG (https://ctftime.org/team/368776)  
             **添加日历** : https://ctftime.org/event/2691.ics  
+            
+        ??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
+            [![](https://ctftime.org/media/events/DFIR_Labs_Icon_1.png){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
+            **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-06-08 00:30:00 - 2025-06-08 04:30:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
+            **添加日历** : https://ctftime.org/event/2750.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
