@@ -28,6 +28,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
+    [![](https://ctftime.org/media/events/DFIR_Labs_Icon_1.png){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
+    **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-08 00:30:00 - 2025-06-08 04:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
+    **添加日历** : https://ctftime.org/event/2750.ics  
+    
 ??? Quote "[MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)"  
     [![](https://ctftime.org/media/events/blanc2.png){ width="200" align=left }](https://linktr.ee/m1ndbr34k)  
     **比赛名称** : [MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
     **添加日历** : https://ctftime.org/event/2558.ics  
-    
-??? Quote "[UTCTF 2025](https://utctf.live/)"  
-    [![](https://ctftime.org/media/events/Illustration.png){ width="200" align=left }](https://utctf.live/)  
-    **比赛名称** : [UTCTF 2025](https://utctf.live/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-15 07:00:00 - 2025-03-17 07:00:00 UTC+8  
-    **比赛权重** : 67.21  
-    **赛事主办** : isss (https://ctftime.org/team/69010)  
-    **添加日历** : https://ctftime.org/event/2641.ics  
     

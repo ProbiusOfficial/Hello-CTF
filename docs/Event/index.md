@@ -722,15 +722,6 @@ hide:
                 **赛事主办** : CyberHawks at UNG (https://ctftime.org/team/368776)  
                 **添加日历** : https://ctftime.org/event/2691.ics  
                 
-            ??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
-                [![](https://ctftime.org/media/events/DFIR_Labs_Icon_1.png){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
-                **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-08 00:30:00 - 2025-06-08 04:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
-                **添加日历** : https://ctftime.org/event/2750.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[ACTF 2025](https://actf2025.xctf.org.cn/)"  
@@ -755,6 +746,15 @@ hide:
                 **其他说明** : 商丘师范学院第四届网络安全及信息对抗大赛（公开赛道）是一个由商丘师范学院主办的线上个人赛。报名开始时间为2025年04月01日 00:00，报名结束时间为2025年04月07日 09:59。比赛时间为2025年04月07日 10:00至2025年04月13日 17:00。更多信息请访问比赛官网www.qsnctf.com，或加入QQ群1021827215进行咨询。比赛设有证书和周边奖励。  
                 
         === "国外赛事"
+            ??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
+                [![](https://ctftime.org/media/events/DFIR_Labs_Icon_1.png){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
+                **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-06-08 00:30:00 - 2025-06-08 04:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
+                **添加日历** : https://ctftime.org/event/2750.ics  
+                
             ??? Quote "[MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)"  
                 [![](https://ctftime.org/media/events/blanc2.png){ width="200" align=left }](https://linktr.ee/m1ndbr34k)  
                 **比赛名称** : [MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)  
@@ -1645,15 +1645,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
                 **添加日历** : https://ctftime.org/event/2558.ics  
-                
-            ??? Quote "[UTCTF 2025](https://utctf.live/)"  
-                [![](https://ctftime.org/media/events/Illustration.png){ width="200" align=left }](https://utctf.live/)  
-                **比赛名称** : [UTCTF 2025](https://utctf.live/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-15 07:00:00 - 2025-03-17 07:00:00 UTC+8  
-                **比赛权重** : 67.21  
-                **赛事主办** : isss (https://ctftime.org/team/69010)  
-                **添加日历** : https://ctftime.org/event/2641.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
