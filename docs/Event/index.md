@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Goldrush Gauntlet 2025](https://ggctf.cyberhawks.org/)"  
-                [![](https://ctftime.org/media/events/logo_110.png){ width="200" align=left }](https://ggctf.cyberhawks.org/)  
-                **比赛名称** : [Goldrush Gauntlet 2025](https://ggctf.cyberhawks.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-07 21:00:00 - 2025-06-09 05:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : CyberHawks at UNG (https://ctftime.org/team/368776)  
-                **添加日历** : https://ctftime.org/event/2691.ics  
-                
             ??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
                 [![](https://ctftime.org/media/events/DFIR_Labs_Icon_1.png){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
                 **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
@@ -730,6 +721,15 @@ hide:
                 **比赛权重** : 95.79  
                 **赛事主办** : bi0s (https://ctftime.org/team/662)  
                 **添加日历** : https://ctftime.org/event/2672.ics  
+                
+            ??? Quote "[Goldrush Gauntlet 2025](https://ggctf.cyberhawks.org/)"  
+                [![](https://ctftime.org/media/events/logo_110.png){ width="200" align=left }](https://ggctf.cyberhawks.org/)  
+                **比赛名称** : [Goldrush Gauntlet 2025](https://ggctf.cyberhawks.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-06-07 21:00:00 - 2025-06-09 05:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : CyberHawks at UNG (https://ctftime.org/team/368776)  
+                **添加日历** : https://ctftime.org/event/2691.ics  
                 
     === "*已经结束*"
         === "国内赛事"
