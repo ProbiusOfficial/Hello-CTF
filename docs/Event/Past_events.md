@@ -28,6 +28,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)"  
+    [![](https://ctftime.org/media/events/blanc2.png){ width="200" align=left }](https://linktr.ee/m1ndbr34k)  
+    **比赛名称** : [MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-07 05:00:00 - 2025-06-07 14:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : ESGI (https://ctftime.org/team/3151)  
+    **添加日历** : https://ctftime.org/event/2766.ics  
+    
 ??? Quote "[Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)"  
     [![](https://ctftime.org/media/events/1f40ecb1a9f69d191226247f073cc490.png){ width="200" align=left }](https://ctfd.nusgreyhats.org/)  
     **比赛名称** : [Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 67.21  
     **赛事主办** : isss (https://ctftime.org/team/69010)  
     **添加日历** : https://ctftime.org/event/2641.ics  
-    
-??? Quote "[Insomni'hack 2025](https://insomnihack.ch/contest/)"  
-    [![](https://ctftime.org/media/events/skull.jpg){ width="200" align=left }](https://insomnihack.ch/contest/)  
-    **比赛名称** : [Insomni'hack 2025](https://insomnihack.ch/contest/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-15 01:00:00 - 2025-03-15 12:00:00 UTC+8  
-    **比赛权重** : 24.14  
-    **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
-    **添加日历** : https://ctftime.org/event/2634.ics  
     

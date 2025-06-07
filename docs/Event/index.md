@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[bi0sCTF 2025](https://ctf.bi0s.in/)"  
-                [![](https://ctftime.org/media/events/image_2025-03-25_143431330.png){ width="200" align=left }](https://ctf.bi0s.in/)  
-                **比赛名称** : [bi0sCTF 2025](https://ctf.bi0s.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-07 13:30:00 - 2025-06-09 01:30:00 UTC+8  
-                **比赛权重** : 95.79  
-                **赛事主办** : bi0s (https://ctftime.org/team/662)  
-                **添加日历** : https://ctftime.org/event/2672.ics  
-                
             ??? Quote "[Goldrush Gauntlet 2025](https://ggctf.cyberhawks.org/)"  
                 [![](https://ctftime.org/media/events/logo_110.png){ width="200" align=left }](https://ggctf.cyberhawks.org/)  
                 **比赛名称** : [Goldrush Gauntlet 2025](https://ggctf.cyberhawks.org/)  
@@ -713,15 +704,6 @@ hide:
                 **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
                 **添加日历** : https://ctftime.org/event/2809.ics  
                 
-            ??? Quote "[MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)"  
-                [![](https://ctftime.org/media/events/blanc2.png){ width="200" align=left }](https://linktr.ee/m1ndbr34k)  
-                **比赛名称** : [MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-07 05:00:00 - 2025-06-07 14:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : ESGI (https://ctftime.org/team/3151)  
-                **添加日历** : https://ctftime.org/event/2766.ics  
-                
             ??? Quote "[Season V, US Cyber Open Beginner's Game Room CTF](https://www.uscybergames.com/)"  
                 [![](https://ctftime.org/media/events/2021-04-USCG_logos_cybergames.png){ width="200" align=left }](https://www.uscybergames.com/)  
                 **比赛名称** : [Season V, US Cyber Open Beginner's Game Room CTF](https://www.uscybergames.com/)  
@@ -739,6 +721,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
                 **添加日历** : https://ctftime.org/event/2751.ics  
+                
+            ??? Quote "[bi0sCTF 2025](https://ctf.bi0s.in/)"  
+                [![](https://ctftime.org/media/events/image_2025-03-25_143431330.png){ width="200" align=left }](https://ctf.bi0s.in/)  
+                **比赛名称** : [bi0sCTF 2025](https://ctf.bi0s.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-06-07 13:30:00 - 2025-06-09 01:30:00 UTC+8  
+                **比赛权重** : 95.79  
+                **赛事主办** : bi0s (https://ctftime.org/team/662)  
+                **添加日历** : https://ctftime.org/event/2672.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -764,6 +755,15 @@ hide:
                 **其他说明** : 商丘师范学院第四届网络安全及信息对抗大赛（公开赛道）是一个由商丘师范学院主办的线上个人赛。报名开始时间为2025年04月01日 00:00，报名结束时间为2025年04月07日 09:59。比赛时间为2025年04月07日 10:00至2025年04月13日 17:00。更多信息请访问比赛官网www.qsnctf.com，或加入QQ群1021827215进行咨询。比赛设有证书和周边奖励。  
                 
         === "国外赛事"
+            ??? Quote "[MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)"  
+                [![](https://ctftime.org/media/events/blanc2.png){ width="200" align=left }](https://linktr.ee/m1ndbr34k)  
+                **比赛名称** : [MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-06-07 05:00:00 - 2025-06-07 14:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : ESGI (https://ctftime.org/team/3151)  
+                **添加日历** : https://ctftime.org/event/2766.ics  
+                
             ??? Quote "[Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)"  
                 [![](https://ctftime.org/media/events/1f40ecb1a9f69d191226247f073cc490.png){ width="200" align=left }](https://ctfd.nusgreyhats.org/)  
                 **比赛名称** : [Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)  
@@ -1654,15 +1654,6 @@ hide:
                 **比赛权重** : 67.21  
                 **赛事主办** : isss (https://ctftime.org/team/69010)  
                 **添加日历** : https://ctftime.org/event/2641.ics  
-                
-            ??? Quote "[Insomni'hack 2025](https://insomnihack.ch/contest/)"  
-                [![](https://ctftime.org/media/events/skull.jpg){ width="200" align=left }](https://insomnihack.ch/contest/)  
-                **比赛名称** : [Insomni'hack 2025](https://insomnihack.ch/contest/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-15 01:00:00 - 2025-03-15 12:00:00 UTC+8  
-                **比赛权重** : 24.14  
-                **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
-                **添加日历** : https://ctftime.org/event/2634.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[bi0sCTF 2025](https://ctf.bi0s.in/)"  
-            [![](https://ctftime.org/media/events/image_2025-03-25_143431330.png){ width="200" align=left }](https://ctf.bi0s.in/)  
-            **比赛名称** : [bi0sCTF 2025](https://ctf.bi0s.in/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-06-07 13:30:00 - 2025-06-09 01:30:00 UTC+8  
-            **比赛权重** : 95.79  
-            **赛事主办** : bi0s (https://ctftime.org/team/662)  
-            **添加日历** : https://ctftime.org/event/2672.ics  
-            
         ??? Quote "[Goldrush Gauntlet 2025](https://ggctf.cyberhawks.org/)"  
             [![](https://ctftime.org/media/events/logo_110.png){ width="200" align=left }](https://ggctf.cyberhawks.org/)  
             **比赛名称** : [Goldrush Gauntlet 2025](https://ggctf.cyberhawks.org/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
             **添加日历** : https://ctftime.org/event/2717.ics  
+            
+        ??? Quote "[AMSI CTF 2025](https://amsi-sorbonne.fr/)"  
+            [![](https://ctftime.org/media/events/amsi_logo_animated.gif){ width="200" align=left }](https://amsi-sorbonne.fr/)  
+            **比赛名称** : [AMSI CTF 2025](https://amsi-sorbonne.fr/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-06-14 04:00:00 - 2025-06-15 02:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : AMSI CTF Team (https://ctftime.org/team/383289)  
+            **添加日历** : https://ctftime.org/event/2790.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
