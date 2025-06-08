@@ -516,18 +516,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Goldrush Gauntlet 2025",
-        "比赛时间": "2025-06-07 21:00:00 - 2025-06-09 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2691.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ggctf.cyberhawks.org/",
-        "比赛标志": "https://ctftime.org/media/events/logo_110.png",
-        "比赛权重": "0.00",
-        "赛事主办": "CyberHawks at UNG (https://ctftime.org/team/368776)",
-        "比赛ID": "1255",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "DFIR Labs CTF by The DFIR Report",
         "比赛时间": "2025-06-08 00:30:00 - 2025-06-08 04:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2750.ics",
@@ -537,6 +525,18 @@
         "比赛权重": "0",
         "赛事主办": "The DFIR Report (https://ctftime.org/team/309500)",
         "比赛ID": "1149",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Goldrush Gauntlet 2025",
+        "比赛时间": "2025-06-07 21:00:00 - 2025-06-09 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2691.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ggctf.cyberhawks.org/",
+        "比赛标志": "https://ctftime.org/media/events/logo_110.png",
+        "比赛权重": "0.00",
+        "赛事主办": "CyberHawks at UNG (https://ctftime.org/team/368776)",
+        "比赛ID": "1255",
         "比赛状态": "past"
     },
     {
@@ -1713,18 +1713,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Paolo (https://ctftime.org/team/263145)",
         "比赛ID": "1242",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "WatCTF W25",
-        "比赛时间": "2025-03-16 03:00:00 - 2025-03-17 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2727.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://watctf.org/",
-        "比赛标志": "https://ctftime.org/media/events/Black_Back_Yellow_Lock.png",
-        "比赛权重": "24.81",
-        "赛事主办": "WATCTF (https://ctftime.org/team/373968)",
-        "比赛ID": "1283",
         "比赛状态": "past"
     }
 ]

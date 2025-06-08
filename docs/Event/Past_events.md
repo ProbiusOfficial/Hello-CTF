@@ -37,6 +37,15 @@ comments: true
     **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
     **添加日历** : https://ctftime.org/event/2750.ics  
     
+??? Quote "[Goldrush Gauntlet 2025](https://ggctf.cyberhawks.org/)"  
+    [![](https://ctftime.org/media/events/logo_110.png){ width="200" align=left }](https://ggctf.cyberhawks.org/)  
+    **比赛名称** : [Goldrush Gauntlet 2025](https://ggctf.cyberhawks.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-07 21:00:00 - 2025-06-09 05:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : CyberHawks at UNG (https://ctftime.org/team/368776)  
+    **添加日历** : https://ctftime.org/event/2691.ics  
+    
 ??? Quote "[bi0sCTF 2025](https://ctf.bi0s.in/)"  
     [![](https://ctftime.org/media/events/image_2025-03-25_143431330.png){ width="200" align=left }](https://ctf.bi0s.in/)  
     **比赛名称** : [bi0sCTF 2025](https://ctf.bi0s.in/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Paolo (https://ctftime.org/team/263145)  
     **添加日历** : https://ctftime.org/event/2664.ics  
-    
-??? Quote "[WatCTF W25](https://watctf.org/)"  
-    [![](https://ctftime.org/media/events/Black_Back_Yellow_Lock.png){ width="200" align=left }](https://watctf.org/)  
-    **比赛名称** : [WatCTF W25](https://watctf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-16 03:00:00 - 2025-03-17 03:00:00 UTC+8  
-    **比赛权重** : 24.81  
-    **赛事主办** : WATCTF (https://ctftime.org/team/373968)  
-    **添加日历** : https://ctftime.org/event/2727.ics  
     

@@ -33,12 +33,3 @@ comments: true
     **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
     **添加日历** : https://ctftime.org/event/2716.ics  
     
-??? Quote "[Goldrush Gauntlet 2025](https://ggctf.cyberhawks.org/)"  
-    [![](https://ctftime.org/media/events/logo_110.png){ width="200" align=left }](https://ggctf.cyberhawks.org/)  
-    **比赛名称** : [Goldrush Gauntlet 2025](https://ggctf.cyberhawks.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-06-07 21:00:00 - 2025-06-09 05:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : CyberHawks at UNG (https://ctftime.org/team/368776)  
-    **添加日历** : https://ctftime.org/event/2691.ics  
-    
