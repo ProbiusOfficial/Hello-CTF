@@ -37,6 +37,15 @@ comments: true
     **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
     **添加日历** : https://ctftime.org/event/2750.ics  
     
+??? Quote "[DIVER OSINT CTF 2025](https://ctfd.diverctf.org/)"  
+    [![](https://ctftime.org/media/events/logo_circle.png){ width="200" align=left }](https://ctfd.diverctf.org/)  
+    **比赛名称** : [DIVER OSINT CTF 2025](https://ctfd.diverctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-07 11:00:00 - 2025-06-08 11:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
+    **添加日历** : https://ctftime.org/event/2751.ics  
+    
 ??? Quote "[MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)"  
     [![](https://ctftime.org/media/events/blanc2.png){ width="200" align=left }](https://linktr.ee/m1ndbr34k)  
     **比赛名称** : [MindBreak 2025 by ESGI](https://linktr.ee/m1ndbr34k)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 19.02  
     **赛事主办** : K!nd4SUS (https://ctftime.org/team/150337)  
     **添加日历** : https://ctftime.org/event/2703.ics  
-    
-??? Quote "[@Hack 2025](https://2025.athackctf.com/)"  
-    [![](https://ctftime.org/media/events/Hack_Logo_WIDTH_600px.png){ width="200" align=left }](https://2025.athackctf.com/)  
-    **比赛名称** : [@Hack 2025](https://2025.athackctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-15 19:00:00 - 2025-03-16 19:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
-    **添加日历** : https://ctftime.org/event/2558.ics  
     

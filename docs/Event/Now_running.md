@@ -42,15 +42,6 @@ comments: true
     **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
     **添加日历** : https://ctftime.org/event/2716.ics  
     
-??? Quote "[DIVER OSINT CTF 2025](https://ctfd.diverctf.org/)"  
-    [![](https://ctftime.org/media/events/logo_circle.png){ width="200" align=left }](https://ctfd.diverctf.org/)  
-    **比赛名称** : [DIVER OSINT CTF 2025](https://ctfd.diverctf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-06-07 11:00:00 - 2025-06-08 11:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
-    **添加日历** : https://ctftime.org/event/2751.ics  
-    
 ??? Quote "[bi0sCTF 2025](https://ctf.bi0s.in/)"  
     [![](https://ctftime.org/media/events/image_2025-03-25_143431330.png){ width="200" align=left }](https://ctf.bi0s.in/)  
     **比赛名称** : [bi0sCTF 2025](https://ctf.bi0s.in/)  
