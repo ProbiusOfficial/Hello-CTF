@@ -528,18 +528,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "DIVER OSINT CTF 2025",
-        "比赛时间": "2025-06-07 11:00:00 - 2025-06-08 11:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2751.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfd.diverctf.org/",
-        "比赛标志": "https://ctftime.org/media/events/logo_circle.png",
-        "比赛权重": "0.00",
-        "赛事主办": "diver_osint (https://ctftime.org/team/299569)",
-        "比赛ID": "1111",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "bi0sCTF 2025",
         "比赛时间": "2025-06-07 13:30:00 - 2025-06-09 01:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2672.ics",
@@ -573,6 +561,18 @@
         "比赛权重": "0",
         "赛事主办": "The DFIR Report (https://ctftime.org/team/309500)",
         "比赛ID": "1149",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "DIVER OSINT CTF 2025",
+        "比赛时间": "2025-06-07 11:00:00 - 2025-06-08 11:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2751.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctfd.diverctf.org/",
+        "比赛标志": "https://ctftime.org/media/events/logo_circle.png",
+        "比赛权重": "0.00",
+        "赛事主办": "diver_osint (https://ctftime.org/team/299569)",
+        "比赛ID": "1111",
         "比赛状态": "past"
     },
     {
@@ -1749,18 +1749,6 @@
         "比赛权重": "19.02",
         "赛事主办": "K!nd4SUS (https://ctftime.org/team/150337)",
         "比赛ID": "1264",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "@Hack 2025",
-        "比赛时间": "2025-03-15 19:00:00 - 2025-03-16 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2558.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2025.athackctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/Hack_Logo_WIDTH_600px.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Hexploit Alliance (https://ctftime.org/team/278003)",
-        "比赛ID": "1061",
         "比赛状态": "past"
     }
 ]
