@@ -55,6 +55,15 @@ comments: true
     **赛事主办** : ESGI (https://ctftime.org/team/3151)  
     **添加日历** : https://ctftime.org/event/2766.ics  
     
+??? Quote "[TJCTF 2025](https://tjctf.org/)"  
+    [![](https://ctftime.org/media/events/logo_96_1.png){ width="200" align=left }](https://tjctf.org/)  
+    **比赛名称** : [TJCTF 2025](https://tjctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-06 20:00:00 - 2025-06-08 20:00:00 UTC+8  
+    **比赛权重** : 51.29  
+    **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
+    **添加日历** : https://ctftime.org/event/2809.ics  
+    
 ??? Quote "[Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)"  
     [![](https://ctftime.org/media/events/1f40ecb1a9f69d191226247f073cc490.png){ width="200" align=left }](https://ctfd.nusgreyhats.org/)  
     **比赛名称** : [Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 24.51  
     **赛事主办** : FlagMotori (https://ctftime.org/team/222060)  
     **添加日历** : https://ctftime.org/event/2601.ics  
-    
-??? Quote "[K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)"  
-    [![](https://ctftime.org/media/events/iconH.png){ width="200" align=left }](https://ctf.k1nd4sus.it/)  
-    **比赛名称** : [K!nd4SUS CTF 2025](https://ctf.k1nd4sus.it/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-15 21:00:00 - 2025-03-16 21:00:00 UTC+8  
-    **比赛权重** : 19.02  
-    **赛事主办** : K!nd4SUS (https://ctftime.org/team/150337)  
-    **添加日历** : https://ctftime.org/event/2703.ics  
     
