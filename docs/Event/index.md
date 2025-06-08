@@ -778,7 +778,7 @@ hide:
                 **比赛名称** : [[POSTPONED] Internet Festival 2025 CTF Quals](https://ifctf.fibonhack.it/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-05-31 19:00:00 - 2025-06-01 19:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 0.00  
                 **赛事主办** : fibonhack (https://ctftime.org/team/117538)  
                 **添加日历** : https://ctftime.org/event/2605.ics  
                 
