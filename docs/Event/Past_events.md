@@ -658,6 +658,15 @@ comments: true
     **赛事主办** : Plaid Parliament of Pwning (https://ctftime.org/team/284)  
     **添加日历** : https://ctftime.org/event/2508.ics  
     
+??? Quote "[CyberGame 2025](https://cybergame.sk/)"  
+    [![](https://ctftime.org/media/events/cybergame.png){ width="200" align=left }](https://cybergame.sk/)  
+    **比赛名称** : [CyberGame 2025](https://cybergame.sk/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-04-01 08:00:00 - 2025-06-10 07:59:59 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
+    **添加日历** : https://ctftime.org/event/2774.ics  
+    
 ??? Quote "[Capture Point 5353 3.0](https://iiitv.capturepoint5353.tech/)"  
     [![](https://ctftime.org/media/events/Untitled_design_2.png){ width="200" align=left }](https://iiitv.capturepoint5353.tech/)  
     **比赛名称** : [Capture Point 5353 3.0](https://iiitv.capturepoint5353.tech/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 75.00  
     **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
     **添加日历** : https://ctftime.org/event/2725.ics  
-    
-??? Quote "[PascalCTF Beginners 2025](https://ctf.pascalctf.it/)"  
-    [![](https://ctftime.org/media/events/Untitled_2_1.png){ width="200" align=left }](https://ctf.pascalctf.it/)  
-    **比赛名称** : [PascalCTF Beginners 2025](https://ctf.pascalctf.it/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-19 23:00:00 - 2025-03-20 04:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Paolo (https://ctftime.org/team/263145)  
-    **添加日历** : https://ctftime.org/event/2664.ics  
     

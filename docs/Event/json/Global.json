@@ -480,18 +480,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "CyberGame 2025",
-        "比赛时间": "2025-04-01 08:00:00 - 2025-06-10 07:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2774.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cybergame.sk/",
-        "比赛标志": "https://ctftime.org/media/events/cybergame.png",
-        "比赛权重": "0",
-        "赛事主办": "SK-CERT (https://ctftime.org/team/378916)",
-        "比赛ID": "1303",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Season V, US Cyber Open Beginner's Game Room CTF",
         "比赛时间": "2025-06-07 05:30:00 - 2025-06-20 07:59:59 UTC+8",
         "添加日历": "https://ctftime.org/event/2716.ics",
@@ -1356,6 +1344,18 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "CyberGame 2025",
+        "比赛时间": "2025-04-01 08:00:00 - 2025-06-10 07:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2774.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cybergame.sk/",
+        "比赛标志": "https://ctftime.org/media/events/cybergame.png",
+        "比赛权重": "0",
+        "赛事主办": "SK-CERT (https://ctftime.org/team/378916)",
+        "比赛ID": "1303",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "Capture Point 5353 3.0",
         "比赛时间": "2025-03-31 02:00:00 - 2025-04-01 16:10:29 UTC+8",
         "添加日历": "https://ctftime.org/event/2747.ics",
@@ -1701,18 +1701,6 @@
         "比赛权重": "75.00",
         "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
         "比赛ID": "372",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "PascalCTF Beginners 2025",
-        "比赛时间": "2025-03-19 23:00:00 - 2025-03-20 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2664.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.pascalctf.it/",
-        "比赛标志": "https://ctftime.org/media/events/Untitled_2_1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Paolo (https://ctftime.org/team/263145)",
-        "比赛ID": "1242",
         "比赛状态": "past"
     }
 ]
