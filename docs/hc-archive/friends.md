@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅析契约锁电子签章系统远程代码执行](https://y4tacker.github.io/2025/06/11/year/2025/06/%E6%B5%85%E6%9E%90%E5%A5%91%E7%BA%A6%E9%94%81%E7%94%B5%E5%AD%90%E7%AD%BE%E7%AB%A0%E7%B3%BB%E7%BB%9F%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-06-11
+
+    e1bd3e68fe0e95aad543147235f13aa8c07db101f08238b29c49348e526ca2c395ff16b5184fe4ee67b8dd1840f69936917a685390975ecb78405622c312487d5e6b45d97870e169a38f37bd7a2e95cc5b864202dba1787e366b00f3973f1aa3686ad8...
     ### [某系统前台RCE浅析](https://y4tacker.github.io/2025/04/16/year/2025/04/%E6%9F%90%E7%B3%BB%E7%BB%9F%E5%89%8D%E5%8F%B0RCE%E6%B5%85%E6%9E%90/)  
     >by [Y4tacker](https://y4tacker.github.io), 2025-04-16
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2025-01-21
 
     来学习一下windows的系统调用简介API，应用程序接口（Application Programming Interface）。Windows API 顾名思义就是 Windows 提供的应用程序接口，为了在 Windows 上实现一定的功能，我们需要学习 API 的用途、传参、返回值等，微软对这部分都提供了大量的文档说明，因此详细学习 API 的实现原理对我们而言是很有必要的。Windows...
-    ### [2024不是年终总结的总结](https://y4tacker.github.io/2024/12/31/year/2024/12/2024%E4%B8%8D%E6%98%AF%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93%E7%9A%84%E6%80%BB%E7%BB%93/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-12-31
-
-    2024不是年终总结的总结今年总体而言都和计划差不多走了下去，差不多做到了心若止水，心里基本没什么情绪波动了博客里不想分享过多的生活(娱乐活动多，玩得很爽🤪)让博客一直纯粹下去，简单总结下今年的技术进展吧博客博客上差不多算是“大满贯”吧，差不多每个月都坚持写了点东西Github与漏洞研究Github也罕见的做到了每月有更新🤪说到这当然也就离不开年初定下的flag🚩，不然没事谁天天往Github上P...
 
 </div>
