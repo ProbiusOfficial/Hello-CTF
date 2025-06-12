@@ -686,13 +686,6 @@ hide:
                 **比赛时间** : 2025年04月26日 09:00 - 2025年04月27日 09:00  
                 **其他说明** : ACTF 2025由XCTF联赛主办，比赛时间为2025年4月26日至4月27日，更多信息请访问官方网站。选手可通过QQ群512066352进行沟通交流。  
                 
-            ??? Quote "[TGCTF 2025](https://tgctf.woooo.tech/)"  
-                **比赛名称** : [TGCTF 2025](https://tgctf.woooo.tech/)  
-                **比赛类型** : 线上Jeopardy解题赛  
-                **报名时间** : 2025年04月12日 09:00 - 2025年04月11日 21:00  
-                **比赛时间** : 2025年04月12日 09:00 - 2025年04月13日 21:00  
-                **其他说明** : TGCTF 2025（杭州师范大学第六届网络与信息安全竞赛）由杭州师范大学主办，报名截止时间为2025年4月11日21点，比赛时间为4月12号9点至4月13号21点，共36小时。  
-                
         === "国外赛事"
             ??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
                 [![](https://ctftime.org/media/events/DFIR_Labs_Icon_1.png){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
