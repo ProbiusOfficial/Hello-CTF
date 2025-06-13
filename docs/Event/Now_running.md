@@ -33,3 +33,12 @@ comments: true
     **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
     **添加日历** : https://ctftime.org/event/2717.ics  
     
+??? Quote "[AMSI CTF 2025](https://amsi-sorbonne.fr/)"  
+    [![](https://ctftime.org/media/events/amsi_logo_animated.gif){ width="200" align=left }](https://amsi-sorbonne.fr/)  
+    **比赛名称** : [AMSI CTF 2025](https://amsi-sorbonne.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-14 04:00:00 - 2025-06-15 02:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : AMSI CTF Team (https://ctftime.org/team/383289)  
+    **添加日历** : https://ctftime.org/event/2790.ics  
+    
