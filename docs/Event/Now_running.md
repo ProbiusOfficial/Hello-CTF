@@ -69,3 +69,12 @@ comments: true
     **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
     **添加日历** : https://ctftime.org/event/2772.ics  
     
+??? Quote "[CyberSci Nationals 2025](https://cybersecuritychallenge.ca/)"  
+    [![](https://ctftime.org/media/events/fa9a3545467f5a51f11b512adb2f6183.png){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
+    **比赛名称** : [CyberSci Nationals 2025](https://cybersecuritychallenge.ca/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-14 21:00:00 - 2025-06-16 07:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : 0xD13A (https://ctftime.org/team/31765)  
+    **添加日历** : https://ctftime.org/event/2689.ics  
+    
