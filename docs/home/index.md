@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Midnight Sun CTF 2025 Finals](https://play.midnightsunctf.com/)"  
-            [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo_2.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
-            **比赛名称** : [Midnight Sun CTF 2025 Finals](https://play.midnightsunctf.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-06-14 18:00:00 - 2025-06-15 18:00:00 UTC+8  
-            **比赛权重** : 100.00  
-            **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-            **添加日历** : https://ctftime.org/event/2772.ics  
-            
         ??? Quote "[CyberSci Nationals 2025](https://cybersecuritychallenge.ca/)"  
             [![](https://ctftime.org/media/events/fa9a3545467f5a51f11b512adb2f6183.png){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
             **比赛名称** : [CyberSci Nationals 2025](https://cybersecuritychallenge.ca/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 25.00  
             **赛事主办** : ierae (https://ctftime.org/team/224122)  
             **添加日历** : https://ctftime.org/event/2655.ics  
+            
+        ??? Quote "[MaltaCTF 2025 Quals](https://2025.ctf.mt/)"  
+            [![](https://ctftime.org/media/events/MaltaCTF.png){ width="200" align=left }](https://2025.ctf.mt/)  
+            **比赛名称** : [MaltaCTF 2025 Quals](https://2025.ctf.mt/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-06-21 15:00:00 - 2025-06-22 15:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Friendly Maltese Citizens (https://ctftime.org/team/220769)  
+            **添加日历** : https://ctftime.org/event/2776.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
