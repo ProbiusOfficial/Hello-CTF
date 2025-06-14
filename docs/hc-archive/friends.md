@@ -89,14 +89,6 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2025-03-31
 
     记录一下今年 2025 初赛过程参赛选手信息题目描述小Q是一位热衷于PC客户端安全的技术爱好者，为了不断提升自己的技能，他经常参与各类CTF竞赛。某天，他收到了一封来自神秘人的邮件，内容如下：“我可以引领你进入游戏安全的殿堂，但在此之前，你需要通过我的考验。打开这扇大门的钥匙就隐藏在附件中，你有能力找到它吗？找到正确的flag（2分）flag：flag{ACE_We1C0me!T0Z0Z5GamE...
-    ### [从CVE-2025-30208看任意文件读取利用](https://blog.zgsec.cn/archives/713.html)  
-    >by [曾哥](https://blog.zgsec.cn/), 2025-03-30
-
-    0# 概述师傅们好久不见！最近不是特别忙，就研究研究最新的漏洞。刚好最近一大批漏洞都爆出来了，比如 CVE-2025-1097, CVE-2025-1098, CVE-2025-24514, CVE-2025-1974 Kubernetes Ingress-Nginx Admission Controller RCE Escalation，是危害性极大的高危漏洞，在内网渗透中能直接击穿K8S集群。...
-    ### [【白帽访谈录】云安全将成为未来安全研究主战场-会议纪要](https://blog.zgsec.cn/archives/711.html)  
-    >by [曾哥](https://blog.zgsec.cn/), 2025-02-28
-
-    {bilibili bvid="BV19T9gY4ETm" page=""/}很高兴能参与这期白帽访谈录，也感谢各位师傅的支持~也随时欢迎各位师傅和我友好交流哈哈！本期访谈的回放直播已经上传B站，链接： https://www.bilibili.com/video/BV19T9gY4ETm，感谢各位师傅的一键三连！！！欢迎大家关注渊龙Sec安全团队公众号，干货满满哦~{dotted startCo...
     ### [某系统前台组合拳RCE](https://y4tacker.github.io/2025/02/23/year/2025/02/%E6%9F%90%E7%B3%BB%E7%BB%9F%E5%89%8D%E5%8F%B0%E7%BB%84%E5%90%88%E6%8B%B3RCE/)  
     >by [Y4tacker](https://y4tacker.github.io), 2025-02-23
 
@@ -153,5 +145,13 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2025-01-21
 
     来学习一下windows的系统调用简介API，应用程序接口（Application Programming Interface）。Windows API 顾名思义就是 Windows 提供的应用程序接口，为了在 Windows 上实现一定的功能，我们需要学习 API 的用途、传参、返回值等，微软对这部分都提供了大量的文档说明，因此详细学习 API 的实现原理对我们而言是很有必要的。Windows...
+    ### [2024不是年终总结的总结](https://y4tacker.github.io/2024/12/31/year/2024/12/2024%E4%B8%8D%E6%98%AF%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93%E7%9A%84%E6%80%BB%E7%BB%93/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2024-12-31
+
+    2024不是年终总结的总结今年总体而言都和计划差不多走了下去，差不多做到了心若止水，心里基本没什么情绪波动了博客里不想分享过多的生活(娱乐活动多，玩得很爽🤪)让博客一直纯粹下去，简单总结下今年的技术进展吧博客博客上差不多算是“大满贯”吧，差不多每个月都坚持写了点东西Github与漏洞研究Github也罕见的做到了每月有更新🤪说到这当然也就离不开年初定下的flag🚩，不然没事谁天天往Github上P...
+    ### [2024年终总结](https://xia0ji233.github.io/2024/12/31/Summary2024/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2024-12-31
+
+    2024年也快过去了，过去的目标完成了多少，现在又如何呢？2024总结2024 01-05在队内师傅的带领下，开始写 LLVM 的插件，持续开发到六月份，也算给自己计算机生涯积累了一个大的项目开发经验。01-14时隔两年，再次走上 EC Finals 的舞台，感谢老师们坚持不懈的努力拿到了来之不易的一个名额，最后遗憾打铁，但是这趟上海之行依然很开心。附一段当时写的半退役感言：人生中最后一场以大学生...
 
 </div>
