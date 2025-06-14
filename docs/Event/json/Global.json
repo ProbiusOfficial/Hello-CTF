@@ -444,18 +444,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "AMSI CTF 2025",
-        "比赛时间": "2025-06-14 04:00:00 - 2025-06-15 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2790.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://amsi-sorbonne.fr/",
-        "比赛标志": "https://ctftime.org/media/events/amsi_logo_animated.gif",
-        "比赛权重": "0.00",
-        "赛事主办": "AMSI CTF Team (https://ctftime.org/team/383289)",
-        "比赛ID": "1327",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "smileyCTF 2025",
         "比赛时间": "2025-06-14 08:00:00 - 2025-06-16 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2591.ics",
@@ -502,6 +490,18 @@
         "赛事主办": "0xD13A (https://ctftime.org/team/31765)",
         "比赛ID": "643",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "AMSI CTF 2025",
+        "比赛时间": "2025-06-14 04:00:00 - 2025-06-15 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2790.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://amsi-sorbonne.fr/",
+        "比赛标志": "https://ctftime.org/media/events/amsi_logo_animated.gif",
+        "比赛权重": "0.00",
+        "赛事主办": "AMSI CTF Team (https://ctftime.org/team/383289)",
+        "比赛ID": "1327",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "DFIR Labs CTF by The DFIR Report",
@@ -1689,18 +1689,6 @@
         "比赛权重": "0.00",
         "赛事主办": "dc509 (https://ctftime.org/team/372660)",
         "比赛ID": "1266",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "m0leCon CTF 2025",
-        "比赛时间": "2025-03-21 00:00:00 - 2025-03-22 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2725.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://finals.m0lecon.it/",
-        "比赛标志": "https://ctftime.org/media/events/ctftime_4_1.png",
-        "比赛权重": "75.00",
-        "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
-        "比赛ID": "372",
         "比赛状态": "past"
     }
 ]
