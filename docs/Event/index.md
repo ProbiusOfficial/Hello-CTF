@@ -641,15 +641,6 @@ hide:
                 **赛事主办** : .;,;. (https://ctftime.org/team/222911)  
                 **添加日历** : https://ctftime.org/event/2591.ics  
                 
-            ??? Quote "[Crypto CTF 2025 [Postponed]](https://cr.yp.toc.tf/)"  
-                [![](https://ctftime.org/media/events/cryptoctf_1.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
-                **比赛名称** : [Crypto CTF 2025 [Postponed]](https://cr.yp.toc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-14 14:00:00 - 2025-06-15 14:00:00 UTC+8  
-                **比赛权重** : 88.25  
-                **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-                **添加日历** : https://ctftime.org/event/2577.ics  
-                
             ??? Quote "[Midnight Sun CTF 2025 Finals](https://play.midnightsunctf.com/)"  
                 [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo_2.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
                 **比赛名称** : [Midnight Sun CTF 2025 Finals](https://play.midnightsunctf.com/)  
@@ -678,6 +669,15 @@ hide:
                 **其他说明** : ACTF 2025由XCTF联赛主办，比赛时间为2025年4月26日至4月27日，更多信息请访问官方网站。选手可通过QQ群512066352进行沟通交流。  
                 
         === "国外赛事"
+            ??? Quote "[Crypto CTF 2025 [Postponed]](https://cr.yp.toc.tf/)"  
+                [![](https://ctftime.org/media/events/cryptoctf_1.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
+                **比赛名称** : [Crypto CTF 2025 [Postponed]](https://cr.yp.toc.tf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-06-14 14:00:00 - 2025-06-15 14:00:00 UTC+8  
+                **比赛权重** : 88.25  
+                **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+                **添加日历** : https://ctftime.org/event/2577.ics  
+                
             ??? Quote "[AMSI CTF 2025](https://amsi-sorbonne.fr/)"  
                 [![](https://ctftime.org/media/events/amsi_logo_animated.gif){ width="200" align=left }](https://amsi-sorbonne.fr/)  
                 **比赛名称** : [AMSI CTF 2025](https://amsi-sorbonne.fr/)  
@@ -1568,15 +1568,6 @@ hide:
                 **比赛权重** : 24.00  
                 **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
                 **添加日历** : https://ctftime.org/event/2674.ics  
-                
-            ??? Quote "[DC509 CTF 2025](https://dc509.com/)"  
-                [![](https://ctftime.org/media/events/dc509.png){ width="200" align=left }](https://dc509.com/)  
-                **比赛名称** : [DC509 CTF 2025](https://dc509.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-21 08:00:00 - 2025-03-21 10:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : dc509 (https://ctftime.org/team/372660)  
-                **添加日历** : https://ctftime.org/event/2730.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
