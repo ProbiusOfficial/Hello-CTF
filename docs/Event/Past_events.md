@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Midnight Sun CTF 2025 Finals](https://play.midnightsunctf.com/)"  
+    [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo_2.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
+    **比赛名称** : [Midnight Sun CTF 2025 Finals](https://play.midnightsunctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-14 18:00:00 - 2025-06-15 18:00:00 UTC+8  
+    **比赛权重** : 100.00  
+    **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
+    **添加日历** : https://ctftime.org/event/2772.ics  
+    
 ??? Quote "[Crypto CTF 2025 [Postponed]](https://cr.yp.toc.tf/)"  
     [![](https://ctftime.org/media/events/cryptoctf_1.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
     **比赛名称** : [Crypto CTF 2025 [Postponed]](https://cr.yp.toc.tf/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 32.50  
     **赛事主办** : pingCTF (https://ctftime.org/team/147266)  
     **添加日历** : https://ctftime.org/event/2670.ics  
-    
-??? Quote "[Cyber Apocalypse CTF 2025: Tales from Eldoria](https://ctf.hackthebox.com/event/details/cyber-apocalypse-ctf-2025-tales-from-eldoria-2107)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/event/details/cyber-apocalypse-ctf-2025-tales-from-eldoria-2107)  
-    **比赛名称** : [Cyber Apocalypse CTF 2025: Tales from Eldoria](https://ctf.hackthebox.com/event/details/cyber-apocalypse-ctf-2025-tales-from-eldoria-2107)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-21 21:00:00 - 2025-03-26 20:59:00 UTC+8  
-    **比赛权重** : 24.00  
-    **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
-    **添加日历** : https://ctftime.org/event/2674.ics  
     
