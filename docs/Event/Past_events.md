@@ -41,6 +41,15 @@ comments: true
     **赛事主办** : ASIS (https://ctftime.org/team/4140)  
     **添加日历** : https://ctftime.org/event/2577.ics  
     
+??? Quote "[smileyCTF 2025](https://play.ctf.gg/)"  
+    [![](https://ctftime.org/media/events/smiley.png){ width="200" align=left }](https://play.ctf.gg/)  
+    **比赛名称** : [smileyCTF 2025](https://play.ctf.gg/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-14 08:00:00 - 2025-06-16 08:00:00 UTC+8  
+    **比赛权重** : 48.61  
+    **赛事主办** : .;,;. (https://ctftime.org/team/222911)  
+    **添加日历** : https://ctftime.org/event/2591.ics  
+    
 ??? Quote "[AMSI CTF 2025](https://amsi-sorbonne.fr/)"  
     [![](https://ctftime.org/media/events/amsi_logo_animated.gif){ width="200" align=left }](https://amsi-sorbonne.fr/)  
     **比赛名称** : [AMSI CTF 2025](https://amsi-sorbonne.fr/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 34.14  
     **赛事主办** : Contagion (https://ctftime.org/team/152691)  
     **添加日历** : https://ctftime.org/event/2673.ics  
-    
-??? Quote "[WHY2025 CTF Teaser](https://ctf.why2025.org/)"  
-    [![](https://ctftime.org/media/events/CTF_logo_v0.2.jpg){ width="200" align=left }](https://ctf.why2025.org/)  
-    **比赛名称** : [WHY2025 CTF Teaser](https://ctf.why2025.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-22 03:00:00 - 2025-03-24 03:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Eindbazen (https://ctftime.org/team/322)  
-    **添加日历** : https://ctftime.org/event/2679.ics  
     

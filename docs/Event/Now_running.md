@@ -33,12 +33,3 @@ comments: true
     **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
     **添加日历** : https://ctftime.org/event/2717.ics  
     
-??? Quote "[smileyCTF 2025](https://play.ctf.gg/)"  
-    [![](https://ctftime.org/media/events/smiley.png){ width="200" align=left }](https://play.ctf.gg/)  
-    **比赛名称** : [smileyCTF 2025](https://play.ctf.gg/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-06-14 08:00:00 - 2025-06-16 08:00:00 UTC+8  
-    **比赛权重** : 48.61  
-    **赛事主办** : .;,;. (https://ctftime.org/team/222911)  
-    **添加日历** : https://ctftime.org/event/2591.ics  
-    

@@ -444,18 +444,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "smileyCTF 2025",
-        "比赛时间": "2025-06-14 08:00:00 - 2025-06-16 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2591.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://play.ctf.gg/",
-        "比赛标志": "https://ctftime.org/media/events/smiley.png",
-        "比赛权重": "48.61",
-        "赛事主办": ".;,;. (https://ctftime.org/team/222911)",
-        "比赛ID": "785",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "CyberSci Nationals 2025",
         "比赛时间": "2025-06-14 21:00:00 - 2025-06-16 07:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2689.ics",
@@ -489,6 +477,18 @@
         "比赛权重": "88.25",
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "317",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "smileyCTF 2025",
+        "比赛时间": "2025-06-14 08:00:00 - 2025-06-16 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2591.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://play.ctf.gg/",
+        "比赛标志": "https://ctftime.org/media/events/smiley.png",
+        "比赛权重": "48.61",
+        "赛事主办": ".;,;. (https://ctftime.org/team/222911)",
+        "比赛ID": "785",
         "比赛状态": "past"
     },
     {
@@ -1641,18 +1641,6 @@
         "比赛权重": "34.14",
         "赛事主办": "Contagion (https://ctftime.org/team/152691)",
         "比赛ID": "170",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "WHY2025 CTF Teaser",
-        "比赛时间": "2025-03-22 03:00:00 - 2025-03-24 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2679.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.why2025.org/",
-        "比赛标志": "https://ctftime.org/media/events/CTF_logo_v0.2.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "Eindbazen (https://ctftime.org/team/322)",
-        "比赛ID": "809",
         "比赛状态": "past"
     }
 ]
