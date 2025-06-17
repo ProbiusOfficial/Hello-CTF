@@ -289,6 +289,15 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
+            ??? Quote "[DHM 2025](https://hacking-meisterschaft.de/)"  
+                [![](https://ctftime.org/media/events/2db77c0219d24093a757eb38d47c2744.png){ width="200" align=left }](https://hacking-meisterschaft.de/)  
+                **比赛名称** : [DHM 2025](https://hacking-meisterschaft.de/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-06-18 16:00:00 - 2025-06-20 01:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : NFITS (https://ctftime.org/team/360674)  
+                **添加日历** : https://ctftime.org/event/2828.ics  
+                
             ??? Quote "[GPN CTF 2025](https://gpn23.ctf.kitctf.de/)"  
                 [![](https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d_1.png){ width="200" align=left }](https://gpn23.ctf.kitctf.de/)  
                 **比赛名称** : [GPN CTF 2025](https://gpn23.ctf.kitctf.de/)  
@@ -342,6 +351,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : DarkArmy (https://ctftime.org/team/26569)  
                 **添加日历** : https://ctftime.org/event/2781.ics  
+                
+            ??? Quote "[Junior.Crypt.2025 CTF](http://ctf-spcs.mf.grsu.by/)"  
+                [![](https://ctftime.org/media/events/logo_13.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
+                **比赛名称** : [Junior.Crypt.2025 CTF](http://ctf-spcs.mf.grsu.by/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-07-01 16:00:00 - 2025-07-03 16:00:00 UTC+8  
+                **比赛权重** : 23.13  
+                **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
+                **添加日历** : https://ctftime.org/event/2798.ics  
                 
             ??? Quote "[R3CTF 2025](https://ctf2025.r3kapig.com/)"  
                 [![](https://ctftime.org/media/events/111_1.png){ width="200" align=left }](https://ctf2025.r3kapig.com/)  
@@ -450,6 +468,15 @@ hide:
                 **比赛权重** : 24.88  
                 **赛事主办** : jailctf (https://ctftime.org/team/311088)  
                 **添加日历** : https://ctftime.org/event/2737.ics  
+                
+            ??? Quote "[scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)"  
+                [![](https://ctftime.org/media/events/final_logo.png){ width="200" align=left }](https://ctf.scriptsorcerers.xyz/)  
+                **比赛名称** : [scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-08-16 08:00:00 - 2025-08-18 08:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : ScriptSorcerers (https://ctftime.org/team/284260)  
+                **添加日历** : https://ctftime.org/event/2792.ics  
                 
             ??? Quote "[SekaiCTF 2025](https://ctf.sekai.team/)"  
                 [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
