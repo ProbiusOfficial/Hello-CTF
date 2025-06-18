@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅析Weaver Getdata前台SQL注入](https://y4tacker.github.io/2025/06/17/year/2025/06/%E6%B5%85%E6%9E%90Weaver-Getdata%E5%89%8D%E5%8F%B0SQL%E6%B3%A8%E5%85%A5/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-06-17
+
+    1762bba105fb4c18fef9087d338fa0b386b5358d10250f8e320625eb752af13c9ab59c9d28e6b6cb26b41da8222a972a0fa17762539b600808df7928c3ec8de1798e61e6143d2b6e5a33a8bdf0c82a34fa42ca5b7d6a601a92e4946e55935648a81345...
     ### [浅析契约锁电子签章系统远程代码执行](https://y4tacker.github.io/2025/06/11/year/2025/06/%E6%B5%85%E6%9E%90%E5%A5%91%E7%BA%A6%E9%94%81%E7%94%B5%E5%AD%90%E7%AD%BE%E7%AB%A0%E7%B3%BB%E7%BB%9F%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C/)  
     >by [Y4tacker](https://y4tacker.github.io), 2025-06-11
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2025-01-22
 
     来深入挖掘一下Windows系统调用的过程相关结构体介绍Trap_Frame首先第一个要讲的是 Trap_Frame 结构，如下图所示。栈帧结构体，用于 Windows API 保存现场。经过提权进入0环的时候，Windows就会遵守这个结构体保存一系列的数据，最后四个成员用于虚拟8086模式下，不属于保护模式的范畴。中断发生时，若发生权限变换，则要保存旧堆栈，CPU压入的，由 HardwareE...
-    ### [windows系统调用学习——R3到R0](https://xia0ji233.github.io/2025/01/21/WindowsSyscall1/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-21
-
-    来学习一下windows的系统调用简介API，应用程序接口（Application Programming Interface）。Windows API 顾名思义就是 Windows 提供的应用程序接口，为了在 Windows 上实现一定的功能，我们需要学习 API 的用途、传参、返回值等，微软对这部分都提供了大量的文档说明，因此详细学习 API 的实现原理对我们而言是很有必要的。Windows...
 
 </div>
