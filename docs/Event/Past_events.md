@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Cyber Lumen x GWK #CTF1](https://www.fkca.eu/cyber-lumen-global-women-in-korea-ctf1/)"  
+    [![](https://ctftime.org/media/events/Cyber_Lumen_X_GWK_CTF1.png){ width="200" align=left }](https://www.fkca.eu/cyber-lumen-global-women-in-korea-ctf1/)  
+    **比赛名称** : [Cyber Lumen x GWK #CTF1](https://www.fkca.eu/cyber-lumen-global-women-in-korea-ctf1/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-16 19:49:58 - 2025-06-16 19:49:58 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Cyber Lumen (https://ctftime.org/team/389682)  
+    **添加日历** : https://ctftime.org/event/2827.ics  
+    
 ??? Quote "[CyberSci Nationals 2025](https://cybersecuritychallenge.ca/)"  
     [![](https://ctftime.org/media/events/fa9a3545467f5a51f11b512adb2f6183.png){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
     **比赛名称** : [CyberSci Nationals 2025](https://cybersecuritychallenge.ca/)  
@@ -31,6 +40,15 @@ comments: true
     **比赛权重** : 100.00  
     **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
     **添加日历** : https://ctftime.org/event/2772.ics  
+    
+??? Quote "[SSMCTF 2025](https://ssmct.org/ctf)"  
+    [![](https://ctftime.org/media/events/SSMlogocoloured.png){ width="200" align=left }](https://ssmct.org/ctf)  
+    **比赛名称** : [SSMCTF 2025](https://ssmct.org/ctf)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-14 17:00:00 - 2025-06-16 05:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : D0wn13s (https://ctftime.org/team/287400)  
+    **添加日历** : https://ctftime.org/event/2808.ics  
     
 ??? Quote "[Crypto CTF 2025 [Postponed]](https://cr.yp.toc.tf/)"  
     [![](https://ctftime.org/media/events/cryptoctf_1.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
@@ -895,22 +913,4 @@ comments: true
     **比赛权重** : 35.73  
     **赛事主办** : Alchemists of Kernel (https://ctftime.org/team/130794)  
     **添加日历** : https://ctftime.org/event/2720.ics  
-    
-??? Quote "[WolvCTF 2025](https://wolvctf.io/)"  
-    [![](https://ctftime.org/media/events/4ec5f36875124e118429b66c41edf271.png){ width="200" align=left }](https://wolvctf.io/)  
-    **比赛名称** : [WolvCTF 2025](https://wolvctf.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-22 07:00:00 - 2025-03-24 07:00:00 UTC+8  
-    **比赛权重** : 47.25  
-    **赛事主办** : wolvsec (https://ctftime.org/team/83621)  
-    **添加日历** : https://ctftime.org/event/2579.ics  
-    
-??? Quote "[RITSEC CTF 2025](https://ctfd.ritsec.club/)"  
-    [![](https://ctftime.org/media/events/Screenshot_From_2025-03-04_12-03-08.png){ width="200" align=left }](https://ctfd.ritsec.club/)  
-    **比赛名称** : [RITSEC CTF 2025](https://ctfd.ritsec.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-22 05:00:00 - 2025-03-24 05:00:00 UTC+8  
-    **比赛权重** : 34.14  
-    **赛事主办** : Contagion (https://ctftime.org/team/152691)  
-    **添加日历** : https://ctftime.org/event/2673.ics  
     
