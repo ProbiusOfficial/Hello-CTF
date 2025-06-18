@@ -488,7 +488,7 @@ hide:
                 **添加日历** : https://ctftime.org/event/2784.ics  
                 
             ??? Quote "[Shakti CTF 2025](https://www.shakticon.com/)"  
-                [![](https://ctftime.org/media/events/logo_12_1_1.png){ width="200" align=left }](https://www.shakticon.com/)  
+                [![](https://ctftime.org){ width="200" align=left }](https://www.shakticon.com/)  
                 **比赛名称** : [Shakti CTF 2025](https://www.shakticon.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-07-25 20:30:00 - 2025-07-26 20:30:00 UTC+8  
