@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[DHM 2025](https://hacking-meisterschaft.de/)"  
-                [![](https://ctftime.org/media/events/2db77c0219d24093a757eb38d47c2744.png){ width="200" align=left }](https://hacking-meisterschaft.de/)  
-                **比赛名称** : [DHM 2025](https://hacking-meisterschaft.de/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-18 16:00:00 - 2025-06-20 01:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : NFITS (https://ctftime.org/team/360674)  
-                **添加日历** : https://ctftime.org/event/2828.ics  
-                
             ??? Quote "[GPN CTF 2025](https://gpn23.ctf.kitctf.de/)"  
                 [![](https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d_1.png){ width="200" align=left }](https://gpn23.ctf.kitctf.de/)  
                 **比赛名称** : [GPN CTF 2025](https://gpn23.ctf.kitctf.de/)  
@@ -658,6 +649,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
                 **添加日历** : https://ctftime.org/event/2717.ics  
+                
+            ??? Quote "[DHM 2025](https://hacking-meisterschaft.de/)"  
+                [![](https://ctftime.org/media/events/2db77c0219d24093a757eb38d47c2744.png){ width="200" align=left }](https://hacking-meisterschaft.de/)  
+                **比赛名称** : [DHM 2025](https://hacking-meisterschaft.de/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-06-18 16:00:00 - 2025-06-20 01:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : NFITS (https://ctftime.org/team/360674)  
+                **添加日历** : https://ctftime.org/event/2828.ics  
                 
     === "*已经结束*"
         === "国内赛事"
