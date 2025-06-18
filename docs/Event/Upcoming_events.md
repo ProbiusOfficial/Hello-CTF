@@ -207,6 +207,15 @@ comments: true
     **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
     **添加日历** : https://ctftime.org/event/2784.ics  
     
+??? Quote "[Shakti CTF 2025](https://www.shakticon.com/)"  
+    [![](https://ctftime.org/media/events/logo_12_1_1.png){ width="200" align=left }](https://www.shakticon.com/)  
+    **比赛名称** : [Shakti CTF 2025](https://www.shakticon.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-25 20:30:00 - 2025-07-26 20:30:00 UTC+8  
+    **比赛权重** : 34.10  
+    **赛事主办** : TeamShakti (https://ctftime.org/team/61083)  
+    **添加日历** : https://ctftime.org/event/2803.ics  
+    
 ??? Quote "[DeadSec CTF 2025](https://www.deadsec.xyz/)"  
     [![](https://ctftime.org/media/events/Picture1_2.png){ width="200" align=left }](https://www.deadsec.xyz/)  
     **比赛名称** : [DeadSec CTF 2025](https://www.deadsec.xyz/)  

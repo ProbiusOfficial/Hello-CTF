@@ -264,6 +264,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Shakti CTF 2025",
+        "比赛时间": "2025-07-25 20:30:00 - 2025-07-26 20:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2803.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.shakticon.com/",
+        "比赛标志": "https://ctftime.org/media/events/logo_12_1_1.png",
+        "比赛权重": "34.10",
+        "赛事主办": "TeamShakti (https://ctftime.org/team/61083)",
+        "比赛ID": "521",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "DeadSec CTF 2025",
         "比赛时间": "2025-07-26 06:00:00 - 2025-07-28 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2631.ics",
