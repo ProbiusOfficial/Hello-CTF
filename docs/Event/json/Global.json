@@ -645,7 +645,7 @@
         "比赛权重": "0",
         "赛事主办": "NFITS (https://ctftime.org/team/360674)",
         "比赛ID": "1344",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Cyber Lumen x GWK #CTF1",
@@ -1833,18 +1833,6 @@
         "比赛权重": "25.00",
         "赛事主办": "Ireland without the RE (https://ctftime.org/team/179144)",
         "比赛ID": "1030",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "FooBar CTF 2025",
-        "比赛时间": "2025-03-22 14:30:00 - 2025-03-23 14:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2720.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://foobarctf.nitdgplug.org/",
-        "比赛标志": "https://ctftime.org/media/events/Foobar_logo_1.png",
-        "比赛权重": "35.73",
-        "赛事主办": "Alchemists of Kernel (https://ctftime.org/team/130794)",
-        "比赛ID": "611",
         "比赛状态": "past"
     }
 ]
