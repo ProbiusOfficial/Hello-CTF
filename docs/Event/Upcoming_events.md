@@ -216,6 +216,15 @@ comments: true
     **赛事主办** : TeamShakti (https://ctftime.org/team/61083)  
     **添加日历** : https://ctftime.org/event/2803.ics  
     
+??? Quote "[ImaginaryCTF 2025](https://2025.imaginaryctf.org/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://2025.imaginaryctf.org/)  
+    **比赛名称** : [ImaginaryCTF 2025](https://2025.imaginaryctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-26 03:00:00 - 2025-07-28 03:00:00 UTC+8  
+    **比赛权重** : 66.02  
+    **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
+    **添加日历** : https://ctftime.org/event/2799.ics  
+    
 ??? Quote "[DeadSec CTF 2025](https://www.deadsec.xyz/)"  
     [![](https://ctftime.org/media/events/Picture1_2.png){ width="200" align=left }](https://www.deadsec.xyz/)  
     **比赛名称** : [DeadSec CTF 2025](https://www.deadsec.xyz/)  
