@@ -654,7 +654,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://cybersecuritychallenge.ca/",
         "比赛标志": "https://ctftime.org/media/events/fa9a3545467f5a51f11b512adb2f6183.png",
-        "比赛权重": "25.00",
+        "比赛权重": "0",
         "赛事主办": "0xD13A (https://ctftime.org/team/31765)",
         "比赛ID": "643",
         "比赛状态": "past"
