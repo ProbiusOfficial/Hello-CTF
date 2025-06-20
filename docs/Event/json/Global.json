@@ -624,30 +624,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Season V, US Cyber Open Beginner's Game Room CTF",
-        "比赛时间": "2025-06-07 05:30:00 - 2025-06-20 07:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2716.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.uscybergames.com/",
-        "比赛标志": "https://ctftime.org/media/events/2021-04-USCG_logos_cybergames.png",
-        "比赛权重": "0",
-        "赛事主办": "PlayCyber (https://ctftime.org/team/165788)",
-        "比赛ID": "740",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "Season V, US Cyber Open Competitive CTF",
-        "比赛时间": "2025-06-10 04:00:00 - 2025-06-20 07:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2717.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.uscybergames.com/",
-        "比赛标志": "https://ctftime.org/media/events/2021-04-USCG_logos_cybergames_1.png",
-        "比赛权重": "0",
-        "赛事主办": "PlayCyber (https://ctftime.org/team/165788)",
-        "比赛ID": "740",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "DHM 2025",
         "比赛时间": "2025-06-18 16:00:00 - 2025-06-20 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2828.ics",
@@ -744,6 +720,18 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "Season V, US Cyber Open Competitive CTF",
+        "比赛时间": "2025-06-10 04:00:00 - 2025-06-20 07:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2717.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.uscybergames.com/",
+        "比赛标志": "https://ctftime.org/media/events/2021-04-USCG_logos_cybergames_1.png",
+        "比赛权重": "0",
+        "赛事主办": "PlayCyber (https://ctftime.org/team/165788)",
+        "比赛ID": "740",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "DFIR Labs CTF by The DFIR Report",
         "比赛时间": "2025-06-08 00:30:00 - 2025-06-08 04:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2750.ics",
@@ -789,6 +777,18 @@
         "比赛权重": "0.00",
         "赛事主办": "diver_osint (https://ctftime.org/team/299569)",
         "比赛ID": "1111",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Season V, US Cyber Open Beginner's Game Room CTF",
+        "比赛时间": "2025-06-07 05:30:00 - 2025-06-20 07:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2716.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.uscybergames.com/",
+        "比赛标志": "https://ctftime.org/media/events/2021-04-USCG_logos_cybergames.png",
+        "比赛权重": "0",
+        "赛事主办": "PlayCyber (https://ctftime.org/team/165788)",
+        "比赛ID": "740",
         "比赛状态": "past"
     },
     {
@@ -1821,30 +1821,6 @@
         "比赛权重": "0.00",
         "赛事主办": "HICA SSPU (https://ctftime.org/team/372831)",
         "比赛ID": "1268",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "AlpacaHack Round 10 (Pwn)",
-        "比赛时间": "2025-03-23 11:00:00 - 2025-03-23 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2709.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://alpacahack.com/ctfs/round-10",
-        "比赛标志": "https://ctftime.org/media/events/ctftime_9.png",
-        "比赛权重": "0",
-        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
-        "比赛ID": "1163",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "ZeroDays CTF 2025",
-        "比赛时间": "2025-03-22 17:30:00 - 2025-03-23 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2614.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://www.zerodays.ie/",
-        "比赛标志": "https://ctftime.org/media/events/zerodays_logo.png",
-        "比赛权重": "25.00",
-        "赛事主办": "Ireland without the RE (https://ctftime.org/team/179144)",
-        "比赛ID": "1030",
         "比赛状态": "past"
     }
 ]
