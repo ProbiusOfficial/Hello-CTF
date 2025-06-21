@@ -758,9 +758,9 @@ hide:
                 **赛事主办** : ierae (https://ctftime.org/team/224122)  
                 **添加日历** : https://ctftime.org/event/2655.ics  
                 
-            ??? Quote "[MaltaCTF 2025 Quals](https://2025.ctf.mt/)"  
-                [![](https://ctftime.org/media/events/MaltaCTF.png){ width="200" align=left }](https://2025.ctf.mt/)  
-                **比赛名称** : [MaltaCTF 2025 Quals](https://2025.ctf.mt/)  
+            ??? Quote "[MaltaCTF 2025 Quals](https://quals.2025.ctf.mt/)"  
+                [![](https://ctftime.org/media/events/MaltaCTF.png){ width="200" align=left }](https://quals.2025.ctf.mt/)  
+                **比赛名称** : [MaltaCTF 2025 Quals](https://quals.2025.ctf.mt/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-06-21 15:00:00 - 2025-06-22 15:00:00 UTC+8  
                 **比赛权重** : 0  
