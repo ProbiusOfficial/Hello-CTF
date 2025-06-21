@@ -576,18 +576,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "GPN CTF 2025",
-        "比赛时间": "2025-06-20 18:00:00 - 2025-06-22 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2694.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://gpn23.ctf.kitctf.de/",
-        "比赛标志": "https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d_1.png",
-        "比赛权重": "46.00",
-        "赛事主办": "KITCTF (https://ctftime.org/team/7221)",
-        "比赛ID": "854",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "IERAE CTF 2025 - GMO Cybersecurity Contest",
         "比赛时间": "2025-06-21 14:00:00 - 2025-06-22 14:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2655.ics",
@@ -622,6 +610,18 @@
         "赛事主办": "pwnlentoni (https://ctftime.org/team/230457)",
         "比赛ID": "1293",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "GPN CTF 2025",
+        "比赛时间": "2025-06-20 18:00:00 - 2025-06-22 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2694.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://gpn23.ctf.kitctf.de/",
+        "比赛标志": "https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d_1.png",
+        "比赛权重": "46.00",
+        "赛事主办": "KITCTF (https://ctftime.org/team/7221)",
+        "比赛ID": "854",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "DHM 2025",
@@ -1809,18 +1809,6 @@
         "比赛权重": "25.00",
         "赛事主办": "keva (https://ctftime.org/team/2980)",
         "比赛ID": "162",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "HICAThon 1.0",
-        "比赛时间": "2025-03-25 11:00:00 - 2025-03-26 20:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2724.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hicathon01.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/Frame_4034.png",
-        "比赛权重": "0.00",
-        "赛事主办": "HICA SSPU (https://ctftime.org/team/372831)",
-        "比赛ID": "1268",
         "比赛状态": "past"
     }
 ]
