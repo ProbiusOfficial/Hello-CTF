@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[cornCTF 2025](https://cornc.tf/)"  
-                [![](https://ctftime.org/media/events/cornctf.png){ width="200" align=left }](https://cornc.tf/)  
-                **比赛名称** : [cornCTF 2025](https://cornc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-21 20:00:00 - 2025-06-22 20:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : pwnlentoni (https://ctftime.org/team/230457)  
-                **添加日历** : https://ctftime.org/event/2762.ics  
-                
             ??? Quote "[Hack The System - Bug Bounty CTF](https://ctf.hackthebox.com/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/)  
                 **比赛名称** : [Hack The System - Bug Bounty CTF](https://ctf.hackthebox.com/)  
@@ -766,6 +757,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Friendly Maltese Citizens (https://ctftime.org/team/220769)  
                 **添加日历** : https://ctftime.org/event/2776.ics  
+                
+            ??? Quote "[cornCTF 2025](https://cornc.tf/)"  
+                [![](https://ctftime.org/media/events/cornctf.png){ width="200" align=left }](https://cornc.tf/)  
+                **比赛名称** : [cornCTF 2025](https://cornc.tf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-06-21 20:00:00 - 2025-06-22 20:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : pwnlentoni (https://ctftime.org/team/230457)  
+                **添加日历** : https://ctftime.org/event/2762.ics  
                 
     === "*已经结束*"
         === "国内赛事"

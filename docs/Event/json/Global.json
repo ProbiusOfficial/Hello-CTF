@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "cornCTF 2025",
-        "比赛时间": "2025-06-21 20:00:00 - 2025-06-22 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2762.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cornc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/cornctf.png",
-        "比赛权重": "0.00",
-        "赛事主办": "pwnlentoni (https://ctftime.org/team/230457)",
-        "比赛ID": "1293",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Hack The System - Bug Bounty CTF",
         "比赛时间": "2025-06-27 21:00:00 - 2025-06-30 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2829.ics",
@@ -621,6 +609,18 @@
         "比赛权重": "0",
         "赛事主办": "Friendly Maltese Citizens (https://ctftime.org/team/220769)",
         "比赛ID": "1302",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "cornCTF 2025",
+        "比赛时间": "2025-06-21 20:00:00 - 2025-06-22 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2762.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cornc.tf/",
+        "比赛标志": "https://ctftime.org/media/events/cornctf.png",
+        "比赛权重": "0",
+        "赛事主办": "pwnlentoni (https://ctftime.org/team/230457)",
+        "比赛ID": "1293",
         "比赛状态": "nowrunning"
     },
     {
