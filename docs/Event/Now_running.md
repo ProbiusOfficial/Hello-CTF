@@ -24,3 +24,12 @@ comments: true
     **赛事主办** : KITCTF (https://ctftime.org/team/7221)  
     **添加日历** : https://ctftime.org/event/2694.ics  
     
+??? Quote "[IERAE CTF 2025 - GMO Cybersecurity Contest](https://gmo-cybersecurity.com/event/ieraectf25/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://gmo-cybersecurity.com/event/ieraectf25/)  
+    **比赛名称** : [IERAE CTF 2025 - GMO Cybersecurity Contest](https://gmo-cybersecurity.com/event/ieraectf25/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-21 14:00:00 - 2025-06-22 14:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : ierae (https://ctftime.org/team/224122)  
+    **添加日历** : https://ctftime.org/event/2655.ics  
+    
