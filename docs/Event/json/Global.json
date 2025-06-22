@@ -576,6 +576,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "BCACTF 6.0",
+        "比赛时间": "2025-06-21 09:30:00 - 2025-06-24 09:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2836.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.bcactf.com/",
+        "比赛标志": "https://ctftime.org/media/events/bcactfVI_txt.png",
+        "比赛权重": "62.97",
+        "赛事主办": "BCACTF (https://ctftime.org/team/81702)",
+        "比赛ID": "325",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "cornCTF 2025",
         "比赛时间": "2025-06-21 20:00:00 - 2025-06-22 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2762.ics",
