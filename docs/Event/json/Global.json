@@ -690,7 +690,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ssmct.org/ctf",
         "比赛标志": "https://ctftime.org/media/events/SSMlogocoloured.png",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "D0wn13s (https://ctftime.org/team/287400)",
         "比赛ID": "1329",
         "比赛状态": "past"

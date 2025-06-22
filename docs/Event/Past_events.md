@@ -91,7 +91,7 @@ comments: true
     **比赛名称** : [SSMCTF 2025](https://ssmct.org/ctf)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-06-14 17:00:00 - 2025-06-16 05:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : D0wn13s (https://ctftime.org/team/287400)  
     **添加日历** : https://ctftime.org/event/2808.ics  
     
