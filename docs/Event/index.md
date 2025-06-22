@@ -604,9 +604,9 @@ hide:
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/2612.ics  
                 
-            ??? Quote "[MaltaCTF 2025 Finals](https://ctf.mt/)"  
-                [![](https://ctftime.org/media/events/MaltaCTF_1.png){ width="200" align=left }](https://ctf.mt/)  
-                **比赛名称** : [MaltaCTF 2025 Finals](https://ctf.mt/)  
+            ??? Quote "[MaltaCTF 2025 Finals](https://2025.ctf.mt/)"  
+                [![](https://ctftime.org/media/events/MaltaCTF_1.png){ width="200" align=left }](https://2025.ctf.mt/)  
+                **比赛名称** : [MaltaCTF 2025 Finals](https://2025.ctf.mt/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-09-13 18:00:00 - 2025-09-14 18:00:00 UTC+8  
                 **比赛权重** : 0.00  
