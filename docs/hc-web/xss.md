@@ -2,9 +2,11 @@
 comments: true
 
 ---
-类型介绍:
+# XSS跨站脚本(Cross-Site Scripting)
 
-反射型
+## 类型介绍
+
+### 反射型(Reflected XSS)
 
 反射型跨站脚本（Reflected Cross-Site Scripting）是最常见，也是使用最广的一种，可将恶意脚本附加到 URL 地址的参数中
 
@@ -12,7 +14,7 @@ comments: true
 
  
 
-存储型
+### 存储型(Stored XSS)
 
 持久型跨站脚本（Persistent Cross-Site Scripting）也等同于存储型跨站脚本（Stored Cross-Site Scripting）。
 
@@ -20,13 +22,13 @@ comments: true
 
  
 
-DOM型
+### DOM型(DOM-based XSS)
 
 传统的 XSS 漏洞一般出现在服务器端代码中，而 DOM-Based XSS 是基于 DOM 文档对象模型的一种漏洞，所以，受客户端浏览器的脚本代码所影响。客户端 JavaScript 可以访问浏览器的 DOM 文本对象模型，因此能够决定用于加载当前页面的 URL。换句话说，客户端的脚本程序可以通过 DOM 动态地检查和修改页面内容，它不依赖于服务器端的数据，而从客户端获得 DOM 中的数据（如从 URL 中提取数据）并在本地执行。另一方面，浏览器用户可以操纵 DOM 中的一些对象，例如 URL、location 等。用户在客户端输入的数据如果包含了恶意 JavaScript 脚本，而这些脚本没有经过适当的过滤和消毒，那么应用程序就可能受到基于 DOM 的 XSS 攻击。
 
  
 
-常见的标签
+## 常见攻击向量
 
 1.alert()
 
@@ -89,7 +91,13 @@ console.log(alert(document.cookie))
 2.console.log(document.cookie)
 
 3.console.dir(111)
-靶场练习
+## 实战练习
+
+以下是一些可用于练习XSS的靶场：
+
+- [XSS游戏](https://alf.nu/alert1)
+- [XSS实验室](https://github.com/do0dl3/xss-labs)
+- [XSS CTF挑战](http://xss-ctf.xiejiahe.com/)
 
 https://alf.nu/alert1
 

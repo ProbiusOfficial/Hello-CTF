@@ -6,17 +6,17 @@ comments: true
 
 ### 简述
 
-**「古典密码学 Classic cryptography 」** 在形式上可分成 **「移位密码 Shift Cipher 」** 和 **「替代密码 Substitution Cipher」** 两类，其中 **替代密码** 又可分为 **单表替代** 和 **多表替代**。有时则是两者的混合。其于历史中经常使用，但现代已经很少使用，大部分的已经不再使用了。
+**古典密码(Classic cryptography)** 在形式上可分成 **移位密码(Shift Cipher)** 和 **替代密码(Substitution Cipher)** 两类，其中替代密码又可分为单表替代和多表替代。有时则是两者的混合。其于历史中经常使用，但现代已经很少使用，大部分的已经不再使用了。
 
 > ![中文wiki-古典密码](./assets/image-20230930134521408.png)图：[中文wiki-古典密码](https://zh.wikipedia.org/wiki/%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A2%BC)
 
 ### 移位密码
 
-移位式密码，它们字母本身不变，但它们在消息中顺序是依照一个定义明确的项目改变。许多移位式密码是基于[几何](https://zh.wikipedia.org/wiki/幾何)而设计的。一个简单的加密（也易被破解），可以将字母向右移1位。例如，明文"Hello my name is Alice."将变成"olleH ym eman si ecilA."。
+移位式密码，它们字母本身不变，但它们在消息中顺序是依照一个定义明确的项目改变。许多移位式密码是基于[几何](https://zh.wikipedia.org/wiki/几何)而设计的。一个简单的加密（也易被破解），可以将字母向右移1位。例如，明文"Hello my name is Alice."将变成"olleH ym eman si ecilA."。
 
 #### 栅栏密码 Rail-fence
 
-**「栅栏密码 Rail-fence Cipher 」** 就是把要加密的明文分成N个一组，然后把每组的第1个字符组合，每组第2个字符组合...每组的第N(最后一个分组可能不足N个)个字符组合，最后把他们全部连接起来就是密文，这里以 **key =  2** 栏栅栏加密为例。
+**栅栏密码(Rail-fence Cipher)** 就是把要加密的明文分成N个一组，然后把每组的第1个字符组合，每组第2个字符组合...每组的第N(最后一个分组可能不足N个)个字符组合，最后把他们全部连接起来就是密文，这里以**key=2**栏栅栏加密为例。
 
 ```
 明文：Squdgy fez, blank jimp crwth vox
@@ -91,13 +91,13 @@ comments: true
 
 #### 圣堂武士密码 Templar
 
-~~圣堂武士密码亮出光刃！(什~~，**「 圣堂武士密码 Templar Cipher 」** 是共济会的猪圈密码的一个变种，一直被共济会圣殿骑士用。
+**圣堂武士密码(Templar Cipher)** 是共济会的猪圈密码的一个变种，一直被共济会圣殿骑士使用。
 
 ![image-20231003142634209](./assets/image-20231003142634209.png) 
 
 #### 培根密码 Bacon
 
-**培根密码**，又名 **「倍康尼密码 Bacon's cipher」**  是由[法兰西斯·培根](https://zh.wikipedia.org/wiki/法蘭西斯·培根)发明的一种[隐写术](https://zh.wikipedia.org/wiki/隱寫術)。
+**培根密码**，又名**倍康尼密码(Bacon's cipher)** 是由[法兰西斯·培根](https://zh.wikipedia.org/wiki/法兰西斯·培根)发明的一种[隐写术](https://zh.wikipedia.org/wiki/隐写术)。
 
 加密时，[明文](https://zh.wikipedia.org/wiki/明文)中的每个字母都会转换成一组五个英文字母。其转换依靠下表：
 
