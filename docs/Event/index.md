@@ -731,15 +731,7 @@ hide:
                 **其他说明** : 2025年能源网络安全大赛由中国能源研究会主办，面向电网企业、发电及电力建设企业、石油石化企业、煤炭企业等单位网络安全技术、运维和管理人员，以及国内网络安全领域知名高校、科研机构、产业单位等代表。报名截止日期为2025年3月31日，可通过扫描二维码下载报名表并发送至icc@cers.org.cn邮箱。联系人包括屈庆红、李理和陈炜，可通过电话或邮箱进行咨询。  
                 
         === "国外赛事"
-            ??? Quote "[BCACTF 6.0](https://www.bcactf.com/)"  
-                [![](https://ctftime.org/media/events/bcactfVI_txt.png){ width="200" align=left }](https://www.bcactf.com/)  
-                **比赛名称** : [BCACTF 6.0](https://www.bcactf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-21 09:30:00 - 2025-06-24 09:30:00 UTC+8  
-                **比赛权重** : 62.97  
-                **赛事主办** : BCACTF (https://ctftime.org/team/81702)  
-                **添加日历** : https://ctftime.org/event/2836.ics  
-                
+    
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[ACTF 2025](https://actf2025.xctf.org.cn/)"  
@@ -776,6 +768,15 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : ierae (https://ctftime.org/team/224122)  
                 **添加日历** : https://ctftime.org/event/2655.ics  
+                
+            ??? Quote "[BCACTF 6.0](https://www.bcactf.com/)"  
+                [![](https://ctftime.org/media/events/bcactfVI_txt.png){ width="200" align=left }](https://www.bcactf.com/)  
+                **比赛名称** : [BCACTF 6.0](https://www.bcactf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-06-21 09:30:00 - 2025-06-24 09:30:00 UTC+8  
+                **比赛权重** : 62.97  
+                **赛事主办** : BCACTF (https://ctftime.org/team/81702)  
+                **添加日历** : https://ctftime.org/event/2836.ics  
                 
             ??? Quote "[GPN CTF 2025](https://gpn23.ctf.kitctf.de/)"  
                 [![](https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d_1.png){ width="200" align=left }](https://gpn23.ctf.kitctf.de/)  
@@ -1640,15 +1641,6 @@ hide:
                 **比赛权重** : 81.00  
                 **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
                 **添加日历** : https://ctftime.org/event/2617.ics  
-                
-            ??? Quote "[HackDay 2025 - Finals](https://hackday.fr/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://hackday.fr/)  
-                **比赛名称** : [HackDay 2025 - Finals](https://hackday.fr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-03-29 02:00:00 - 2025-03-30 02:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
-                **添加日历** : https://ctftime.org/event/2616.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

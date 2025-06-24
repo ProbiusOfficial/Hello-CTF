@@ -41,6 +41,15 @@ comments: true
     **赛事主办** : ierae (https://ctftime.org/team/224122)  
     **添加日历** : https://ctftime.org/event/2655.ics  
     
+??? Quote "[BCACTF 6.0](https://www.bcactf.com/)"  
+    [![](https://ctftime.org/media/events/bcactfVI_txt.png){ width="200" align=left }](https://www.bcactf.com/)  
+    **比赛名称** : [BCACTF 6.0](https://www.bcactf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-21 09:30:00 - 2025-06-24 09:30:00 UTC+8  
+    **比赛权重** : 62.97  
+    **赛事主办** : BCACTF (https://ctftime.org/team/81702)  
+    **添加日历** : https://ctftime.org/event/2836.ics  
+    
 ??? Quote "[GPN CTF 2025](https://gpn23.ctf.kitctf.de/)"  
     [![](https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d_1.png){ width="200" align=left }](https://gpn23.ctf.kitctf.de/)  
     **比赛名称** : [GPN CTF 2025](https://gpn23.ctf.kitctf.de/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 81.00  
     **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
     **添加日历** : https://ctftime.org/event/2617.ics  
-    
-??? Quote "[HackDay 2025 - Finals](https://hackday.fr/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://hackday.fr/)  
-    **比赛名称** : [HackDay 2025 - Finals](https://hackday.fr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-29 02:00:00 - 2025-03-30 02:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
-    **添加日历** : https://ctftime.org/event/2616.ics  
     
