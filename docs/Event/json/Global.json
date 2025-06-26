@@ -654,7 +654,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://hacking-meisterschaft.de/",
         "比赛标志": "https://ctftime.org/media/events/2db77c0219d24093a757eb38d47c2744.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "NFITS (https://ctftime.org/team/360674)",
         "比赛ID": "1344",
         "比赛状态": "past"

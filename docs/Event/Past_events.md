@@ -58,7 +58,7 @@ comments: true
     **比赛名称** : [DHM 2025](https://hacking-meisterschaft.de/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-06-18 16:00:00 - 2025-06-20 01:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : NFITS (https://ctftime.org/team/360674)  
     **添加日历** : https://ctftime.org/event/2828.ics  
     
