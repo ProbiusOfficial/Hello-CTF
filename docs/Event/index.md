@@ -734,13 +734,7 @@ hide:
     
     === "*已经结束*"
         === "国内赛事"
-            ??? Quote "[ACTF 2025](https://actf2025.xctf.org.cn/)"  
-                **比赛名称** : [ACTF 2025](https://actf2025.xctf.org.cn/)  
-                **比赛类型** : 线上Jeopardy解题赛  
-                **报名时间** : 2025年04月16日 08:59 - 2025年04月26日 08:59  
-                **比赛时间** : 2025年04月26日 09:00 - 2025年04月27日 09:00  
-                **其他说明** : ACTF 2025由XCTF联赛主办，比赛时间为2025年4月26日至4月27日，更多信息请访问官方网站。选手可通过QQ群512066352进行沟通交流。  
-                
+    
         === "国外赛事"
             ??? Quote "[cornCTF 2025](https://cornc.tf/)"  
                 [![](https://ctftime.org/media/events/cornctf.png){ width="200" align=left }](https://cornc.tf/)  
