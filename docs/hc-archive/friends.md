@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅析Gogs 远程命令执行(CVE-2024-56731)](https://y4tacker.github.io/2025/06/25/year/2025/06/%E6%B5%85%E6%9E%90Gogs-%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-CVE-2024-56731/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-06-25
+
+    e1bd3e68fe0e95aad543147235f13aa8c07db101f08238b29c49348e526ca2c395ff16b5184fe4ee67b8dd1840f69936917a685390975ecb78405622c312487d5e6b45d97870e169a38f37bd7a2e95cc5b864202dba1787e366b00f3973f1aa3686ad8...
     ### [浅析Weaver Getdata前台SQL注入](https://y4tacker.github.io/2025/06/17/year/2025/06/%E6%B5%85%E6%9E%90Weaver-Getdata%E5%89%8D%E5%8F%B0SQL%E6%B3%A8%E5%85%A5/)  
     >by [Y4tacker](https://y4tacker.github.io), 2025-06-17
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2025-01-22
 
     来深入挖掘一下Windows系统调用的过程KiSystemService分析这个函数是通过中断门进的，中断门本身保存了 CS 和 EIP，跨段提权后通过 TSS 拿到零环的 SS 和 ESP。此时为了维护三环的上下文状态，则会将各种寄存器保存到堆栈，也就是 Trap_Frame 结构体，中断门提权之后本身就会按顺序压入 SS，ESP，ELFAGS，CS，EIP。此时比较一下上一篇文章中提到的 Tr...
-    ### [windows系统调用学习——调用相关结构体学习](https://xia0ji233.github.io/2025/01/22/WindowsSyscall2/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-22
-
-    来深入挖掘一下Windows系统调用的过程相关结构体介绍Trap_Frame首先第一个要讲的是 Trap_Frame 结构，如下图所示。栈帧结构体，用于 Windows API 保存现场。经过提权进入0环的时候，Windows就会遵守这个结构体保存一系列的数据，最后四个成员用于虚拟8086模式下，不属于保护模式的范畴。中断发生时，若发生权限变换，则要保存旧堆栈，CPU压入的，由 HardwareE...
 
 </div>
