@@ -225,15 +225,6 @@ comments: true
     **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
     **添加日历** : https://ctftime.org/event/2711.ics  
     
-??? Quote "[GaianSpace CTF 2025](https://gaian.space/ctf)"  
-    [![](https://ctftime.org/media/events/gaianspace-logo-new.png){ width="200" align=left }](https://gaian.space/ctf)  
-    **比赛名称** : [GaianSpace CTF 2025](https://gaian.space/ctf)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-08-08 22:00:00 - 2025-08-12 22:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : GaianSpace (https://ctftime.org/team/373034)  
-    **添加日历** : https://ctftime.org/event/2732.ics  
-    
 ??? Quote "[WHY2025 CTF](https://ctf.why2025.org/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.why2025.org/)  
     **比赛名称** : [WHY2025 CTF](https://ctf.why2025.org/)  
@@ -360,6 +351,15 @@ comments: true
     **赛事主办** : FAUST (https://ctftime.org/team/550)  
     **添加日历** : https://ctftime.org/event/2780.ics  
     
+??? Quote "[QnQSec CTF 2025](https://ctf.qnqsec.team/)"  
+    [![](https://ctftime.org/media/events/Logo_QnQSec.jpg){ width="200" align=left }](https://ctf.qnqsec.team/)  
+    **比赛名称** : [QnQSec CTF 2025](https://ctf.qnqsec.team/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-10-17 02:00:00 - 2025-10-20 02:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : QnQSec (https://ctftime.org/team/367683)  
+    **添加日历** : https://ctftime.org/event/2826.ics  
+    
 ??? Quote "[HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)"  
     [![](https://ctftime.org){ width="200" align=left }](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
     **比赛名称** : [HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
@@ -386,6 +386,15 @@ comments: true
     **比赛权重** : 37.00  
     **赛事主办** : EPT (https://ctftime.org/team/119480)  
     **添加日历** : https://ctftime.org/event/2646.ics  
+    
+??? Quote "[GaianSpace CTF 2025](https://gaian.space/ctf)"  
+    [![](https://ctftime.org/media/events/gaianspace-logo-new.png){ width="200" align=left }](https://gaian.space/ctf)  
+    **比赛名称** : [GaianSpace CTF 2025](https://gaian.space/ctf)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-14 22:00:00 - 2025-11-17 22:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : GaianSpace (https://ctftime.org/team/373034)  
+    **添加日历** : https://ctftime.org/event/2732.ics  
     
 ??? Quote "[Platypwn 2025](https://platypwnies.de/events/platypwn/)"  
     [![](https://ctftime.org/media/events/platypwnies-512_1.png){ width="200" align=left }](https://platypwnies.de/events/platypwn/)  

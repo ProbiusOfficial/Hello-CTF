@@ -288,18 +288,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "GaianSpace CTF 2025",
-        "比赛时间": "2025-08-08 22:00:00 - 2025-08-12 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2732.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://gaian.space/ctf",
-        "比赛标志": "https://ctftime.org/media/events/gaianspace-logo-new.png",
-        "比赛权重": "0.00",
-        "赛事主办": "GaianSpace (https://ctftime.org/team/373034)",
-        "比赛ID": "1284",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "WHY2025 CTF",
         "比赛时间": "2025-08-09 00:00:00 - 2025-08-12 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2680.ics",
@@ -468,6 +456,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "QnQSec CTF 2025",
+        "比赛时间": "2025-10-17 02:00:00 - 2025-10-20 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2826.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.qnqsec.team/",
+        "比赛标志": "https://ctftime.org/media/events/Logo_QnQSec.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "QnQSec (https://ctftime.org/team/367683)",
+        "比赛ID": "1347",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "HITCON Cyber Range 2025 Final",
         "比赛时间": "2025-10-17 09:00:00 - 2025-10-17 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2794.ics",
@@ -501,6 +501,18 @@
         "比赛权重": "37.00",
         "赛事主办": "EPT (https://ctftime.org/team/119480)",
         "比赛ID": "697",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "GaianSpace CTF 2025",
+        "比赛时间": "2025-11-14 22:00:00 - 2025-11-17 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2732.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://gaian.space/ctf",
+        "比赛标志": "https://ctftime.org/media/events/gaianspace-logo-new.png",
+        "比赛权重": "0.00",
+        "赛事主办": "GaianSpace (https://ctftime.org/team/373034)",
+        "比赛ID": "1284",
         "比赛状态": "oncoming"
     },
     {
@@ -825,6 +837,18 @@
         "比赛权重": "51.29",
         "赛事主办": "tjcsc (https://ctftime.org/team/53812)",
         "比赛ID": "144",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "AppSec-IL CTF 2025",
+        "比赛时间": "2025-06-03 01:00:00 - 2025-06-05 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2812.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://owasp.org/www-chapter-israel/",
+        "比赛标志": "https://ctftime.org/media/events/OWASPIL_logo_clear.png",
+        "比赛权重": "0.00",
+        "赛事主办": "OWASP-IL (https://ctftime.org/team/126012)",
+        "比赛ID": "483",
         "比赛状态": "past"
     },
     {
@@ -1761,18 +1785,6 @@
         "比赛权重": "40.40",
         "赛事主办": "Kernel Sanders (https://ctftime.org/team/397)",
         "比赛ID": "241",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DiceCTF 2025 Quals",
-        "比赛时间": "2025-03-29 05:00:00 - 2025-03-31 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2617.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.dicega.ng/",
-        "比赛标志": "https://ctftime.org/media/events/dicectf_2_1_1_1.png",
-        "比赛权重": "81.00",
-        "赛事主办": "DiceGang (https://ctftime.org/team/109452)",
-        "比赛ID": "568",
         "比赛状态": "past"
     }
 ]

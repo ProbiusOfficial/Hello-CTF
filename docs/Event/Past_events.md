@@ -197,6 +197,15 @@ comments: true
     **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
     **添加日历** : https://ctftime.org/event/2809.ics  
     
+??? Quote "[AppSec-IL CTF 2025](https://owasp.org/www-chapter-israel/)"  
+    [![](https://ctftime.org/media/events/OWASPIL_logo_clear.png){ width="200" align=left }](https://owasp.org/www-chapter-israel/)  
+    **比赛名称** : [AppSec-IL CTF 2025](https://owasp.org/www-chapter-israel/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-03 01:00:00 - 2025-06-05 01:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : OWASP-IL (https://ctftime.org/team/126012)  
+    **添加日历** : https://ctftime.org/event/2812.ics  
+    
 ??? Quote "[Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)"  
     [![](https://ctftime.org/media/events/1f40ecb1a9f69d191226247f073cc490.png){ width="200" align=left }](https://ctfd.nusgreyhats.org/)  
     **比赛名称** : [Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 40.40  
     **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
     **添加日历** : https://ctftime.org/event/2573.ics  
-    
-??? Quote "[DiceCTF 2025 Quals](https://ctf.dicega.ng/)"  
-    [![](https://ctftime.org/media/events/dicectf_2_1_1_1.png){ width="200" align=left }](https://ctf.dicega.ng/)  
-    **比赛名称** : [DiceCTF 2025 Quals](https://ctf.dicega.ng/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-29 05:00:00 - 2025-03-31 05:00:00 UTC+8  
-    **比赛权重** : 81.00  
-    **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
-    **添加日历** : https://ctftime.org/event/2617.ics  
     
