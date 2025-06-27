@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Hack The System - Bug Bounty CTF",
-        "比赛时间": "2025-06-27 21:00:00 - 2025-06-30 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2829.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hackthebox.com/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "24.00",
-        "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
-        "比赛ID": "554",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Google Capture The Flag 2025",
         "比赛时间": "2025-06-28 02:00:00 - 2025-06-30 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2718.ics",
@@ -586,6 +574,18 @@
         "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
         "比赛ID": "246",
         "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Hack The System - Bug Bounty CTF",
+        "比赛时间": "2025-06-27 21:00:00 - 2025-06-30 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2829.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.hackthebox.com/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "24.00",
+        "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
+        "比赛ID": "554",
+        "比赛状态": "nowrunning"
     },
     {
         "比赛名称": "cornCTF 2025",

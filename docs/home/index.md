@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Hack The System - Bug Bounty CTF](https://ctf.hackthebox.com/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/)  
-            **比赛名称** : [Hack The System - Bug Bounty CTF](https://ctf.hackthebox.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-06-27 21:00:00 - 2025-06-30 03:00:00 UTC+8  
-            **比赛权重** : 24.00  
-            **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
-            **添加日历** : https://ctftime.org/event/2829.ics  
-            
         ??? Quote "[Google Capture The Flag 2025](https://g.co/ctf)"  
             [![](https://ctftime.org){ width="200" align=left }](https://g.co/ctf)  
             **比赛名称** : [Google Capture The Flag 2025](https://g.co/ctf)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : DarkArmy (https://ctftime.org/team/26569)  
             **添加日历** : https://ctftime.org/event/2781.ics  
+            
+        ??? Quote "[Junior.Crypt.2025 CTF](http://ctf-spcs.mf.grsu.by/)"  
+            [![](https://ctftime.org/media/events/logo_13.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
+            **比赛名称** : [Junior.Crypt.2025 CTF](http://ctf-spcs.mf.grsu.by/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-07-01 16:00:00 - 2025-07-03 16:00:00 UTC+8  
+            **比赛权重** : 23.13  
+            **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
+            **添加日历** : https://ctftime.org/event/2798.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
