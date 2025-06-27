@@ -54,24 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Google Capture The Flag 2025](https://g.co/ctf)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://g.co/ctf)  
-            **比赛名称** : [Google Capture The Flag 2025](https://g.co/ctf)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-06-28 02:00:00 - 2025-06-30 02:00:00 UTC+8  
-            **比赛权重** : 97.17  
-            **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
-            **添加日历** : https://ctftime.org/event/2718.ics  
-            
-        ??? Quote "[Involuntary CTF 2025](http://involuntaryctf.net/)"  
-            [![](https://ctftime.org/media/events/Logo_3_1.png){ width="200" align=left }](http://involuntaryctf.net/)  
-            **比赛名称** : [Involuntary CTF 2025](http://involuntaryctf.net/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-06-28 02:00:00 - 2025-06-30 02:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : inv0luntary (https://ctftime.org/team/259548)  
-            **添加日历** : https://ctftime.org/event/2813.ics  
-            
         ??? Quote "[BSides Mumbai CTF 2025](https://ctf.bsidesmumbai.in/)"  
             [![](https://ctftime.org/media/events/Layed1.B3529NWW_3.png){ width="200" align=left }](https://ctf.bsidesmumbai.in/)  
             **比赛名称** : [BSides Mumbai CTF 2025](https://ctf.bsidesmumbai.in/)  
@@ -89,6 +71,24 @@ hide:
             **比赛权重** : 23.13  
             **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
             **添加日历** : https://ctftime.org/event/2798.ics  
+            
+        ??? Quote "[CubeCTF](https://cubectf.com/)"  
+            [![](https://ctftime.org/media/events/CubeMasteryLogo.png){ width="200" align=left }](https://cubectf.com/)  
+            **比赛名称** : [CubeCTF](https://cubectf.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-07-05 06:16:00 - 2025-07-07 08:25:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : CubeMastery (https://ctftime.org/team/168744)  
+            **添加日历** : https://ctftime.org/event/2820.ics  
+            
+        ??? Quote "[R3CTF 2025](https://ctf2025.r3kapig.com/)"  
+            [![](https://ctftime.org/media/events/111_1.png){ width="200" align=left }](https://ctf2025.r3kapig.com/)  
+            **比赛名称** : [R3CTF 2025](https://ctf2025.r3kapig.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-07-05 10:00:00 - 2025-07-07 10:00:00 UTC+8  
+            **比赛权重** : 24.50  
+            **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
+            **添加日历** : https://ctftime.org/event/2731.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
