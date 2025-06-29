@@ -17,6 +17,33 @@ comments: true
     **赛事主办** : DarkArmy (https://ctftime.org/team/26569)  
     **添加日历** : https://ctftime.org/event/2781.ics  
     
+??? Quote "[Google Capture The Flag 2025](https://g.co/ctf)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://g.co/ctf)  
+    **比赛名称** : [Google Capture The Flag 2025](https://g.co/ctf)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-28 02:00:00 - 2025-06-30 02:00:00 UTC+8  
+    **比赛权重** : 97.17  
+    **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
+    **添加日历** : https://ctftime.org/event/2718.ics  
+    
+??? Quote "[Involuntary CTF 2025](http://involuntaryctf.net/)"  
+    [![](https://ctftime.org/media/events/Logo_3_1.png){ width="200" align=left }](http://involuntaryctf.net/)  
+    **比赛名称** : [Involuntary CTF 2025](http://involuntaryctf.net/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-28 02:00:00 - 2025-06-30 02:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : inv0luntary (https://ctftime.org/team/259548)  
+    **添加日历** : https://ctftime.org/event/2813.ics  
+    
+??? Quote "[Hack The System - Bug Bounty CTF](https://ctf.hackthebox.com/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/)  
+    **比赛名称** : [Hack The System - Bug Bounty CTF](https://ctf.hackthebox.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-27 21:00:00 - 2025-06-30 03:00:00 UTC+8  
+    **比赛权重** : 24.00  
+    **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
+    **添加日历** : https://ctftime.org/event/2829.ics  
+    
 ??? Quote "[MetaCTF June 2025 Flash CTF](https://mctf.io/jun2024)"  
     [![](https://ctftime.org/media/events/Orange_M_Square.png){ width="200" align=left }](https://mctf.io/jun2024)  
     **比赛名称** : [MetaCTF June 2025 Flash CTF](https://mctf.io/jun2024)  
@@ -880,31 +907,4 @@ comments: true
     **比赛权重** : 24.50  
     **赛事主办** : Undutmaning (https://ctftime.org/team/212504)  
     **添加日历** : https://ctftime.org/event/2589.ics  
-    
-??? Quote "[PolyPwnCTF 2025](https://pwn.polycyber.io/)"  
-    [![](https://ctftime.org/media/events/Logo_PolyPwn_CTF.jpg){ width="200" align=left }](https://pwn.polycyber.io/)  
-    **比赛名称** : [PolyPwnCTF 2025](https://pwn.polycyber.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-29 18:00:00 - 2025-03-31 04:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
-    **添加日历** : https://ctftime.org/event/2734.ics  
-    
-??? Quote "[LBC2 2025](http://lbc2.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](http://lbc2.org/)  
-    **比赛名称** : [LBC2 2025](http://lbc2.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-29 17:00:00 - 2025-03-29 23:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : LBC2 (https://ctftime.org/team/373963)  
-    **添加日历** : https://ctftime.org/event/2728.ics  
-    
-??? Quote "[Dreamhack CTF Season 7 Round #6 (Div. 2)](https://dreamhack.io/ctf/660)"  
-    [![](https://ctftime.org/media/events/cover06.jpg){ width="200" align=left }](https://dreamhack.io/ctf/660)  
-    **比赛名称** : [Dreamhack CTF Season 7 Round #6 (Div. 2)](https://dreamhack.io/ctf/660)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-29 08:00:00 - 2025-03-29 23:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
-    **添加日历** : https://ctftime.org/event/2626.ics  
     
