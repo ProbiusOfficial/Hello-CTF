@@ -648,6 +648,18 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "BSides Mumbai CTF 2025",
+        "比赛时间": "2025-06-28 18:00:00 - 2025-06-29 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2781.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bsidesmumbai.in/",
+        "比赛标志": "https://ctftime.org/media/events/Layed1.B3529NWW_3.png",
+        "比赛权重": "0",
+        "赛事主办": "DarkArmy (https://ctftime.org/team/26569)",
+        "比赛ID": "1120",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "Google Capture The Flag 2025",
         "比赛时间": "2025-06-28 02:00:00 - 2025-06-30 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2718.ics",
@@ -657,7 +669,7 @@
         "比赛权重": "97.17",
         "赛事主办": "Google CTF (https://ctftime.org/team/23929)",
         "比赛ID": "141",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Involuntary CTF 2025",
@@ -669,18 +681,6 @@
         "比赛权重": "0",
         "赛事主办": "inv0luntary (https://ctftime.org/team/259548)",
         "比赛ID": "1321",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "BSides Mumbai CTF 2025",
-        "比赛时间": "2025-06-28 18:00:00 - 2025-06-29 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2781.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.bsidesmumbai.in/",
-        "比赛标志": "https://ctftime.org/media/events/Layed1.B3529NWW_3.png",
-        "比赛权重": "0",
-        "赛事主办": "DarkArmy (https://ctftime.org/team/26569)",
-        "比赛ID": "1120",
         "比赛状态": "past"
     },
     {
@@ -1845,30 +1845,6 @@
         "比赛权重": "0.00",
         "赛事主办": "PolyCyber (https://ctftime.org/team/212241)",
         "比赛ID": "1285",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "LBC2 2025",
-        "比赛时间": "2025-03-29 17:00:00 - 2025-03-29 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2728.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://lbc2.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "LBC2 (https://ctftime.org/team/373963)",
-        "比赛ID": "1276",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Dreamhack CTF Season 7 Round #6 (Div. 2)",
-        "比赛时间": "2025-03-29 08:00:00 - 2025-03-29 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2626.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dreamhack.io/ctf/660",
-        "比赛标志": "https://ctftime.org/media/events/cover06.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
-        "比赛ID": "1232",
         "比赛状态": "past"
     }
 ]
