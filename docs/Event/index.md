@@ -758,7 +758,7 @@ hide:
                 **比赛名称** : [MaltaCTF 2025 Quals](https://quals.2025.ctf.mt/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-06-21 15:00:00 - 2025-06-22 15:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 24.95  
                 **赛事主办** : Friendly Maltese Citizens (https://ctftime.org/team/220769)  
                 **添加日历** : https://ctftime.org/event/2776.ics  
                 
