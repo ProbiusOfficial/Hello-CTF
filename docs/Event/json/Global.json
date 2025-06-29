@@ -681,7 +681,7 @@
         "比赛权重": "0",
         "赛事主办": "DarkArmy (https://ctftime.org/team/26569)",
         "比赛ID": "1120",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "MetaCTF June 2025 Flash CTF",
@@ -1869,18 +1869,6 @@
         "比赛权重": "0",
         "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
         "比赛ID": "1232",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Codegate CTF 2025 Preliminary",
-        "比赛时间": "2025-03-29 08:00:00 - 2025-03-29 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2706.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.codegate.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "54.00",
-        "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
-        "比赛ID": "3",
         "比赛状态": "past"
     }
 ]

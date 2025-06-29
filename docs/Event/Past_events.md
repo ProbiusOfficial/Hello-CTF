@@ -8,6 +8,15 @@ comments: true
 
 
 ## 国际赛事
+??? Quote "[BSides Mumbai CTF 2025](https://ctf.bsidesmumbai.in/)"  
+    [![](https://ctftime.org/media/events/Layed1.B3529NWW_3.png){ width="200" align=left }](https://ctf.bsidesmumbai.in/)  
+    **比赛名称** : [BSides Mumbai CTF 2025](https://ctf.bsidesmumbai.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-06-28 18:00:00 - 2025-06-29 18:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : DarkArmy (https://ctftime.org/team/26569)  
+    **添加日历** : https://ctftime.org/event/2781.ics  
+    
 ??? Quote "[MetaCTF June 2025 Flash CTF](https://mctf.io/jun2024)"  
     [![](https://ctftime.org/media/events/Orange_M_Square.png){ width="200" align=left }](https://mctf.io/jun2024)  
     **比赛名称** : [MetaCTF June 2025 Flash CTF](https://mctf.io/jun2024)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
     **添加日历** : https://ctftime.org/event/2626.ics  
-    
-??? Quote "[Codegate CTF 2025 Preliminary](http://ctf.codegate.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](http://ctf.codegate.org/)  
-    **比赛名称** : [Codegate CTF 2025 Preliminary](http://ctf.codegate.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-29 08:00:00 - 2025-03-29 23:00:00 UTC+8  
-    **比赛权重** : 54.00  
-    **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
-    **添加日历** : https://ctftime.org/event/2706.ics  
     

@@ -42,12 +42,3 @@ comments: true
     **赛事主办** : inv0luntary (https://ctftime.org/team/259548)  
     **添加日历** : https://ctftime.org/event/2813.ics  
     
-??? Quote "[BSides Mumbai CTF 2025](https://ctf.bsidesmumbai.in/)"  
-    [![](https://ctftime.org/media/events/Layed1.B3529NWW_3.png){ width="200" align=left }](https://ctf.bsidesmumbai.in/)  
-    **比赛名称** : [BSides Mumbai CTF 2025](https://ctf.bsidesmumbai.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-06-28 18:00:00 - 2025-06-29 18:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : DarkArmy (https://ctftime.org/team/26569)  
-    **添加日历** : https://ctftime.org/event/2781.ics  
-    
