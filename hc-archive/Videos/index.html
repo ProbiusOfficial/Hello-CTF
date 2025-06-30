@@ -1,0 +1,4145 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+      
+      
+        <meta name="author" content="探姬">
+      
+      
+        <link rel="canonical" href="https://hello-ctf.com/hc-archive/Videos/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Awsome-Sec.CTF-Videomaker - Hello CTF</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans SC";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.8/katex.min.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/bannerSlider.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#awsome-secctf-videomaker" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Hello CTF" class="md-header__button md-logo" aria-label="Hello CTF" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Hello CTF
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Awsome-Sec.CTF-Videomaker
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Hello-CTF
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../home/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../hc-tags/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  知识点标签
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Event/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  赛事
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../hc-labs/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  靶场
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../hc-toolkit/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  工具
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  归档
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Hello CTF" class="md-nav__button md-logo" aria-label="Hello CTF" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    Hello CTF
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ProbiusOfficial/Hello-CTF" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Hello-CTF
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../home/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-start/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    快速开始
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            快速开始
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-preface/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    前言
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            前言
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-preface/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    关于本书
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-preface/usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    食用方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-preface/join/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    加入我们
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-env/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    环境设置
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            环境设置
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-env/CTFtool/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    工具一览
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-env/Docker_On_Linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Docker环境
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-env/Web.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Web环境设置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-env/MISC.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MISC环境设置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-env/Crypto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Crypto环境设置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-misc/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    MISC | 杂项
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            MISC | 杂项
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/osint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    信息收集
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/Encode_extra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    编码扩展
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/file/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    文件基础
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/Archivefile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    压缩包
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/stego/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    隐写技术
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/pcap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    流量分析
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/memory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    内存取证
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/file_sign/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    附:文件签名表
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-web/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Web | 网络攻防
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            Web | 网络攻防
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-web/web_start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Web入门题单
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-web/php_basic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PHP基础
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-web/php_unser_base/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PHP反序列化基础
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-web/sql_injection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQL注入
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-web/xss/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    XSS攻击
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-web/include/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    文件包含
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-web/ssti/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SSTI注入
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-crypto/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Crypto | 密码学
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_7">
+            <span class="md-nav__icon md-icon"></span>
+            Crypto | 密码学
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-crypto/Recap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    前情提要
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-crypto/Encode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    编码基础
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-crypto/Classicalcipher/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    古典密码
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-reverse/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Reverse | 逆向工程
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_8" id="__nav_1_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_8">
+            <span class="md-nav__icon md-icon"></span>
+            Reverse | 逆向工程
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82F%26Q/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    引导篇：灵魂F&Q
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start：可执行文件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start：ASM汇编
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-reverse/Quick%20Start%EF%BC%9AExample%20problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start：Example problems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84IDA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    从零开始的IDA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    从零开始的壳
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-pwn/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Pwn | 二进制安全
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_9" id="__nav_1_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_9">
+            <span class="md-nav__icon md-icon"></span>
+            Pwn | 二进制安全
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-pwn/Asm_x86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    汇编语言(x86)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-pwn/Stack_Overflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    栈上数组越界&栈溢出
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-pwn/ROP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ROP入门
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-pwn/ROP_Tricks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    常见的ROP技巧
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-pwn/Protections.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    常见保护
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-pwn/Tricks.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    杂七杂八的解题技巧
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_10" id="__nav_1_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AWD | 攻防模式
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_10">
+            <span class="md-nav__icon md-icon"></span>
+            AWD | 攻防模式
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-awd/awd_about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AWD介绍
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-awd/awd_platform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AWD平台
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-awd/awd_web.exp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    【WEB】AWD技巧
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-awd/awd_pwn.exp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    【PWN】AWD技巧
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-ai/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    AI | 人工智能安全
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_11" id="__nav_1_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_11">
+            <span class="md-nav__icon md-icon"></span>
+            AI | 人工智能安全
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-ai/What_is_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    初识AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-ai/MLP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    你的第一个神经网络
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_12" id="__nav_1_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    blockchain | 区块链安全
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_12">
+            <span class="md-nav__icon md-icon"></span>
+            blockchain | 区块链安全
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_12_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_12_1" id="__nav_1_12_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Move
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_12_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_12_1">
+            <span class="md-nav__icon md-icon"></span>
+            Move
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-blockchain/Move/0x00/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    从0开始的签到题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_13" id="__nav_1_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_13">
+            <span class="md-nav__icon md-icon"></span>
+            附录
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-appendix/how-to-ask/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    提问的智慧
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-appendix/CTFevent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CTF赛事
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-appendix/NSSCTF_Usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NSSCTF平台使用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-appendix/book/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    推荐书单
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-tags/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    知识点标签
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            知识点标签
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-tags/web/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Web
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-tags/web/sql-injection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQL注入
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-tags/web/sqlmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQLMap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-tags/web/PHP_features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PHP特性
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-tags/misc/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Misc
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-tags/reverse/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Reverse
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Reverse
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-tags/pwn/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Pwn
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Pwn
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Event/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    赛事
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            赛事
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Event/Upcoming_events/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    即将开始
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Event/Now_running/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    正在进行
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Event/Past_events/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    已经结束
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    办赛指南
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            办赛指南
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Event/organize.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    None
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-labs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    靶场
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-toolkit/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    工具
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            工具
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    归档
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ctf" class="md-nav__link">
+    <span class="md-ellipsis">
+      CTF
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CTF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      个人向
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      战队官号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      平台官号
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      安全方向
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="安全方向">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      个人向
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      安全团队
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      企业官号
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+    <a
+      href="https://github.com/ProbiusOfficial/Hello-CTF/tree/main/docs/hc-archive/Videos.md"
+      title="编辑此页"
+      class="md-content__button md-icon"
+    >
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+
+  <!-- View button -->
+  
+    
+      
+    
+    <a
+      href="https://github.com/ProbiusOfficial/Hello-CTF/tree/main/docs/hc-archive/Videos.md"
+      title="查看本页的源代码"
+      class="md-content__button md-icon"
+    >
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<!-- Page content -->
+<div><h1 id="awsome-secctf-videomaker">Awsome-Sec.CTF-Videomaker<a class="headerlink" href="#awsome-secctf-videomaker" title="Permanent link">¶</a></h1>
+<p>【Hello CTF】收录国内网络安全以及CTF领域的优秀视频作者</p>
+<h2 id="ctf">CTF<a class="headerlink" href="#ctf" title="Permanent link">¶</a></h2>
+<h3 id="_1">个人向<a class="headerlink" href="#_1" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>昵称</th>
+<th>方向</th>
+<th>主要课程内容</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://space.bilibili.com/475175714/">软趴趴の锅边糊</a></td>
+<td>全栈</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1uR4y1F78w">播放量 6841 | 【CTF】Web--构造jwt绕过认证登录</a><br><a href="https://www.bilibili.com/video/BV1Dg4y1G7dB">播放量 4404 | 【AWD】网络安全线下赛之从0到??——AWD的套路加靶机演示</a><br><a href="https://www.bilibili.com/video/BV1hG411L7dZ">播放量 3860 | 【CTF】Web反弹shell+SUID命令提权的题。蚁剑很方便但不完美——So Baby RCE Again（NewStarCTF）</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1Cu4y1a7xf">【CTF】NewStarCTF 2023 week2 PWN canary——canary泄露+64位格式化字符串+栈溢出</a><br><a href="https://www.bilibili.com/video/BV1w34y1u7NE">【CTF】NewStarCTF 2023 week2 PWN stack migration栈迁移栈溢出</a><br><a href="https://www.bilibili.com/video/BV19G41117rG">【CTF】NewStarCTF 2023 week2 WEB全题解</a><br><a href="https://www.bilibili.com/video/BV1Ep4y1u7Ns">【CTF】NewStarCTF 2023 week1 MISC全题解</a><br><a href="https://www.bilibili.com/video/BV1t94y187RA">【CTF】NewStarCTF 2023 week1 PWN全题解</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/387503419/">燕无歇莫问归期</a></td>
+<td>全栈</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1dh4y1973b">播放量 7733 | 2023年第三届陕西省大学生网络安全技能大赛-Misc-hack_dns</a><br><a href="https://www.bilibili.com/video/BV1uu41117st">播放量 3724 | 山东细狗抓兔子</a><br><a href="https://www.bilibili.com/video/BV1fN411C71H">播放量 3442 | 2023年第三届陕西省大学生网络安全技能大赛-Misc-EradicateMoriarty - 跳舞的小人\列位移密码\PDF隐写\明文攻击\十二宫杀手密码</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1RC4y1R7tW">NewStartCTF2023-Web7-EasyLogin</a><br><a href="https://www.bilibili.com/video/BV1x14y1y7y9">陇剑杯2023-流量分析-wireshark1-telnet</a><br><a href="https://www.bilibili.com/video/BV1fm4y1e7iG">烦人的压缩包 - SYCTF2023“安洵杯”全国精英赛 - 赛题复现</a><br><a href="https://www.bilibili.com/video/BV1po4y1J78t">signin - SYCTF2023“安洵杯”全国精英赛 - 赛题复现</a><br><a href="https://www.bilibili.com/video/BV1vs4y1v738">CrazyTreat - SYCTF2023“安洵杯”全国精英赛 - 赛题复现</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/388609258">Nyr4ki</a></td>
+<td>WEB</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1rz4y137dF">播放量 6254 | 攻防世界 Web入门题 讲解</a><br><a href="https://www.bilibili.com/video/BV17u4y147Yf">播放量 958 | Kali Linux简易快速安装</a><br><a href="https://www.bilibili.com/video/BV1ad4y1J7hg">播放量 810 | [NSSRound#8] Upload_gogogo</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1rz4y137dF">攻防世界 Web入门题 讲解</a><br><a href="https://www.bilibili.com/video/BV17u4y147Yf">Kali Linux简易快速安装</a><br><a href="https://www.bilibili.com/video/BV1ad4y1J7hg">[NSSRound#8] Upload_gogogo</a><br><a href="https://www.bilibili.com/video/BV1bd4y1H745">[NSSRound#7] 0o0</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/400157779">国资社畜</a></td>
+<td>PWN</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1mr4y1Y7fW">播放量 48147 | 你想有多PWN(开始更新)</a><br><a href="https://www.bilibili.com/video/BV15S4y1X73M">播放量 11336 | 你想有多PWN（薅羊毛失败，请移步本人同名视频）</a><br><a href="https://www.bilibili.com/video/BV1Cv4y1w7Qb">播放量 5937 | 随性再录一个逆向</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1UN411v7jc">第六章_第1课  IO_FILE 基础</a><br><a href="https://www.bilibili.com/video/BV1Pp4y157vR">翻车的工控ctf培训</a><br><a href="https://www.bilibili.com/video/BV1Cv4y1w7Qb">随性再录一个逆向</a><br><a href="https://www.bilibili.com/video/BV1aU4y1y76L">随性录制一个逆向题目</a><br><a href="https://www.bilibili.com/video/BV1oa411f7KL">2022数字中国创新大赛车联网赛道_hashmap（长亭投稿没过）</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/479430036">芥燃斯基</a></td>
+<td>PWN</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1XA411S7Xo">播放量 2954 | 【无痛入门PWN系列】【Protostar】01. Protostar简介</a><br><a href="https://www.bilibili.com/video/BV1Wd4y1n7Mz">播放量 838 | 【无痛入门PWN系列】【Nebula】01.虚拟机安装与连接配置</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1Wd4y1n7Mz">【无痛入门PWN系列】【Nebula】01.虚拟机安装与连接配置</a><br><a href="https://www.bilibili.com/video/BV1XA411S7Xo">【无痛入门PWN系列】【Protostar】01. Protostar简介</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/8538817">Deregistered</a></td>
+<td>PWN</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1um4y1S7t6">播放量 1919 | 赛棍pwn课程第一天</a><br><a href="https://www.bilibili.com/video/BV1Ja411a7Tm">播放量 1695 | 赛棍pwn第九天(CTF的最后一更)</a><br><a href="https://www.bilibili.com/video/BV1t44y1L7AB">播放量 1601 | 赛棍pwn第二天</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1Ec411j7J1">HRP-Nepnep-AUTO-pwn-说明视频</a><br><a href="https://www.bilibili.com/video/BV1D94y1Q796">NEPCTF2022-easylogin</a><br><a href="https://www.bilibili.com/video/BV1hd4y1Q7va">NEPCTF2022-全栈手</a><br><a href="https://www.bilibili.com/video/BV1yB4y1a7QK">NEPCTF2022-injection</a><br><a href="https://www.bilibili.com/video/BV1n3411F7bP">NEPCTF2022-funny_guys</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/40691233">-Protocol-</a></td>
+<td>PWN</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV18E411c7gt">播放量 8910 | 已停止维护</a><br><a href="https://www.bilibili.com/video/BV1KF411z7dB">播放量 6600 | 【湖湘杯决赛vlog】黑客们的比赛是什么样的？</a><br><a href="https://www.bilibili.com/video/BV1CM4y1V73r">播放量 1100 | 【分享】祥云杯2021-pwn-note</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1KF411z7dB">【湖湘杯决赛vlog】黑客们的比赛是什么样的？</a><br><a href="https://www.bilibili.com/video/BV19L4y1878d">【分享】格式化字符串溢出总结</a><br><a href="https://www.bilibili.com/video/BV1GP4y1W71w">【分享】祥云杯2021-pwn-PassWordBox_FreeVersion</a><br><a href="https://www.bilibili.com/video/BV1CM4y1V73r">【分享】祥云杯2021-pwn-note</a><br><a href="https://www.bilibili.com/video/BV1nh411h7pZ">【分享】FxxkXSS，一个深入利用后台XSS的工具</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/3461577038629345">rod3r1ck</a></td>
+<td>PWN</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1nN411P7ZL">播放量 3541 | pwn训练营-1-工具专题</a><br><a href="https://www.bilibili.com/video/BV1Js4y1N7kr">播放量 2855 | pwn训练营-3-house-of专题</a><br><a href="https://www.bilibili.com/video/BV1mV4y1f7YK">播放量 2767 | pwn训练营-2-shellcode专题</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1gX4y1C7zv">pwn训练营-5-pwnhub赛题复现</a><br><a href="https://www.bilibili.com/video/BV1Js4y1N7kr">pwn训练营-3-house-of专题</a><br><a href="https://www.bilibili.com/video/BV14V4y1D7ym">pwn训练营-4-高版本堆利用专题</a><br><a href="https://www.bilibili.com/video/BV1mV4y1f7YK">pwn训练营-2-shellcode专题</a><br><a href="https://www.bilibili.com/video/BV1nN411P7ZL">pwn训练营-1-工具专题</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/3493278529882882/">Rotten</a></td>
+<td>PWN</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1jz4y177L9">播放量 1999 | 一代pwn入门视频停更通知</a><br><a href="https://www.bilibili.com/video/BV1Ja4y1u7h3">播放量 1815 | PWN入门-nc指令使用与PWN基础linux简单指令</a><br><a href="https://www.bilibili.com/video/BV15g4y1V7ia">播放量 1395 | 2023-LitCTF-web方向复现</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV15y4y1K7dh">周末加班的一天</a><br><a href="https://www.bilibili.com/video/BV1jz4y177L9">一代pwn入门视频停更通知</a><br><a href="https://www.bilibili.com/video/BV1g14y127BQ">CISCN2023-华东南赛区记录</a><br><a href="https://www.bilibili.com/video/BV1Kk4y1u79z">CISCN2023区域赛，我在福州蹦迪哦！</a><br><a href="https://www.bilibili.com/video/BV1KW4y1X75L">ASP.NET期末考试模拟</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/184432814/">Mz1不是黑帽子</a></td>
+<td>RE</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1R3411M7d7">播放量 592308 | 【网安漫谈】信息泄露，谁才是原罪</a><br><a href="https://www.bilibili.com/video/BV1sU4y1K7jp">播放量 81829 | 7分钟 玩转C语言指针</a><br><a href="https://www.bilibili.com/video/BV1qo4y197Fy">播放量 68775 | 【网安漫谈】为了破解和防止被破解,软件们经历了什么？</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1yL411k7DK">无损下载B站直播 | HLS协议从入门到实践</a><br><a href="https://www.bilibili.com/video/BV1BT41117fe">【原理到实践】如何在电脑上置顶一个窗口</a><br><a href="https://www.bilibili.com/video/BV1VY4y1M72h">【读书分享】深入浅出计算机网络</a><br><a href="https://www.bilibili.com/video/BV1k14y147Fo">【网安漫谈】基于opengl的游戏透视辅助是怎样实现的呢 | 游戏透视第二期</a><br><a href="https://www.bilibili.com/video/BV1R3411M7d7">【网安漫谈】信息泄露，谁才是原罪</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/544451485">吾爱破解论坛</a></td>
+<td>RE</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1wT411N7sV">播放量 312705 | 吾爱破解安卓逆向入门教程《安卓逆向这档事》一、模拟器环境搭建</a><br><a href="https://www.bilibili.com/video/BV123411R7K6">播放量 13612 | 吾爱破解【2023春节】解题领红包之Web题</a><br><a href="https://www.bilibili.com/video/BV1to4y1G7ka">播放量 11808 | 【少年寻师破界游】第一章-无处不风云</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1to4y1G7ka">【少年寻师破界游】第一章-无处不风云</a><br><a href="https://www.bilibili.com/video/BV123411R7K6">吾爱破解【2023春节】解题领红包之Web题</a><br><a href="https://www.bilibili.com/video/BV1wT411N7sV">吾爱破解安卓逆向入门教程《安卓逆向这档事》一、模拟器环境搭建</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/31025974">r0ysue</a></td>
+<td>RE</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1UL411h7Mh">播放量 37819 | 进淄赶烤去咯！汇入全国大军！</a><br><a href="https://www.bilibili.com/video/BV1qQ4y1R7wW">播放量 18935 | r0env：打造年轻人的第一套安卓逆向环境！之完整使用手册</a><br><a href="https://www.bilibili.com/video/BV1Ls4y137gG">播放量 9471 | MD，看个新闻都要让我看广告，一言不合就重打包你 ~~</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1b34y1M77k">Pixel6刷安卓14用KernelSU去root后跑frida16和eBPF并导入证书抓包</a><br><a href="https://www.bilibili.com/video/BV1ep4y1u7YD">如何写好一篇精华文章？</a><br><a href="https://www.bilibili.com/video/BV1h34y1V71h">Pixel/Nexus全系、一加3/7、iPhone6/X、云手机等上海实地线下班畅用</a><br><a href="https://www.bilibili.com/video/BV1V34y1V7xX">上海实地线下安卓安全培训班学习氛围拉满</a><br><a href="https://www.bilibili.com/video/BV1Hu4y1z7uX">业内最强思域流量池，内推至整个移动安全圈任意岗位，全程follow和push [旺柴]随时cue我</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/317479700">风二西</a></td>
+<td>Crypto</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1GW411j7n3">播放量 2117 | [CTF入门]web篇之快速计算  如何用python解一道CTF题</a><br><a href="https://www.bilibili.com/video/BV19P411T7kw">播放量 1648 | 【CTF-流量分析】中国蚁剑rsa、aes流量</a><br><a href="https://www.bilibili.com/video/BV12R4y1o7MT">播放量 1539 | 【CTF-靶场】docker搭建 vulfocus</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1qw411C7xq">【CTF-RSA】Ez_RSA</a><br><a href="https://www.bilibili.com/video/BV1KB4y1f7qb">【CTF-RSA小辑】乱弹系列之威尔逊定理</a><br><a href="https://www.bilibili.com/video/BV1A14y1C7F7">国内AI大模型介绍【水一期视频】</a><br><a href="https://www.bilibili.com/video/BV1494y1C78g">【CTF-RSA】共模攻击再变形</a><br><a href="https://www.bilibili.com/video/BV1114y1B7Pe">【CTF-RSA】共模再变形(工具篇，又名翻车篇)</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/552018206/">Alice-Bob</a></td>
+<td>密码学</td>
+<td>Top 3:<br>[播放量 10754  Top 3:<br><a href="https://www.bilibili.com/video/BV1kh4y1M7HJ">播放量 10754 | 【一口气学完】密码学的数学基础 6,《环论》，三节课学完</a><br><a href="https://www.bilibili.com/video/BV1sh411F7jf">播放量 3017 | 【代数扩域】一种非常重要的扩域类型，又与不可约多项式有关系</a><br><a href="https://www.bilibili.com/video/BV1Pr4y1i7gM">播放量 2960 | 现代密码学入门||流密码——如何用短密钥加密长消息</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV15C4y1V7sz">【一口气学完】密码学的数学基础 7,《有限域》，一节课学完</a><br><a href="https://www.bilibili.com/video/BV1jw411C7mw">【范+第三季预告】从扩域到子域的另一种映射</a><br><a href="https://www.bilibili.com/video/BV1Vh4y1r7Xn">【迹的应用】用迹可以求出扩域元素的线性表达</a><br><a href="https://www.bilibili.com/video/BV1w34y1V7Hd">【迹】一种从扩域到子域的映射，有很多有用的性质，特别是传递性</a><br><a href="https://www.bilibili.com/video/BV1E94y1Y7Yh">【构造本原多项式】构造不可约多项式的另一种方法是构造本原多项式，其本质还是要构造本原元</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/12949995">陈橘mo</a></td>
+<td>MISC</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1iC4y147j1">播放量 3722 | 福清一中2020年4月份高二寒假网课录播（非官方）</a><br><a href="https://www.bilibili.com/video/BV15T41197F6">播放量 1930 | 2022 西湖论剑大赛 Misc-机你太美 赛后谈</a><br><a href="https://www.bilibili.com/video/BV1UA411z78Z">播放量 1398 | 2022 西湖论剑大赛 Crypto赛后谈 By 智慧少年Xenny</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV15T41197F6">2022 西湖论剑大赛 Misc-机你太美 赛后谈</a><br><a href="https://www.bilibili.com/video/BV1UA411z78Z">2022 西湖论剑大赛 Crypto赛后谈 By 智慧少年Xenny</a><br><a href="https://www.bilibili.com/video/BV1Ps4y1x7gw">NSSCTF Round#7 Tetris</a><br><a href="https://www.bilibili.com/video/BV1jY411S71X">NSSCTF Round#7 ShadowFlag</a><br><a href="https://www.bilibili.com/video/BV1GY411L7Kg">NSSCTF-fakerandom</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/483370591">树木今天吃什么</a></td>
+<td>MISC</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1DF411U7un">播放量 7130 | 「CTF题目讲解」Easy_Shark：深入分析冰蝎流量</a><br><a href="https://www.bilibili.com/video/BV1Qk4y1F7kH">播放量 5456 | 「CTF题目讲解」一起上号不：深入分析CobalStrike流量</a><br><a href="https://www.bilibili.com/video/BV14p4y1w7kU">播放量 3527 | 「CTF题目讲解」jpg：非常经典的压轴题</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV17z4y1F79C">「CTF思路分享」匿于时之下：很有趣的隐藏信息方法</a><br><a href="https://www.bilibili.com/video/BV14p4y1w7kU">「CTF题目讲解」jpg：非常经典的压轴题</a><br><a href="https://www.bilibili.com/video/BV1DF411U7un">「CTF题目讲解」Easy_Shark：深入分析冰蝎流量</a><br><a href="https://www.bilibili.com/video/BV1Qk4y1F7kH">「CTF题目讲解」一起上号不：深入分析CobalStrike流量</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/183379727">Byxs20</a></td>
+<td>MISC</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1Xi4y1R7vu">播放量 11284 | Python Yolov5图像识别 CF穿越火线 AI是如何打靶场人机的！</a><br><a href="https://www.bilibili.com/video/BV14b4y1H7HU">播放量 6306 | 穿越火线大神单挑手搓玩家！</a><br><a href="https://www.bilibili.com/video/BV1W8411N7CN">播放量 6078 | CTF_MISC_个人使用的工具分享</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1tc411u7GP">FlowAnalyzer使用教程（处理多线程的SQL盲注）</a><br><a href="https://www.bilibili.com/video/BV1Zs4y1P7Yd">CTF_MISC_PuzzleSolver_添加Stegpy爆破和AES冰蝎爆破</a><br><a href="https://www.bilibili.com/video/BV1Rv4y1H7k2">CTF_MISC_第二版本工具PuzzleSolver</a><br><a href="https://www.bilibili.com/video/BV1ho4y1s7UG">CTF_MISC_第一版本工具PuzzleSolver</a><br><a href="https://www.bilibili.com/video/BV1ak4y18715">CTF_MISC右键管理使用教程（零宽脚本的使用）</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/102438649">GeekHour</a></td>
+<td>基础教程</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1Jj411D7oG">播放量 157645 | 【GeekHour】一小时Redis教程</a><br><a href="https://www.bilibili.com/video/BV1HM411377j">播放量 149221 | 【GeekHour】一小时Git教程</a><br><a href="https://www.bilibili.com/video/BV14s4y1i7Vf">播放量 142074 | 【GeekHour】30分钟Docker入门教程</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1i94y1W7k1">3分钟看完Apple发布会【4K】</a><br><a href="https://www.bilibili.com/video/BV16u4y1y7Fm">【GeekHour】20分钟掌握MongoDB</a><br><a href="https://www.bilibili.com/video/BV1AX4y147tA">一小时MySQL教程</a><br><a href="https://www.bilibili.com/video/BV1mz4y1n7PQ">【GeekHour】30分钟Nginx入门教程</a><br><a href="https://www.bilibili.com/video/BV1Jj411D7oG">【GeekHour】一小时Redis教程</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/317711147">r00t_1</a></td>
+<td>awd</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1HL411Q74N">播放量 9288 | web🐶是如何在awd比赛中一键获取flag</a><br><a href="https://www.bilibili.com/video/BV1LT411n7Jk">播放量 7235 | awd攻防神器</a><br><a href="https://www.bilibili.com/video/BV1UP411m7aq">播放量 4663 | awd比赛一键植入蠕虫不死马你值得拥有</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1Ay4y1P7AC">开局一个马 如何在awd比赛中带你躺赢</a><br><a href="https://www.bilibili.com/video/BV1gQ4y1s76E">awd_v2.4 随机文件名蠕虫马，简化命令执行步骤</a><br><a href="https://www.bilibili.com/video/BV1zu411K7QT">小改版awd工具箱tools_v2.3，利用占位符匹配生成IP段(适应绝大多数awd比赛模式)</a><br><a href="https://www.bilibili.com/video/BV1Bw411v7gH">awd比赛-让flag自己送上门来</a><br><a href="https://www.bilibili.com/video/BV14H4y1U7ux">awd学习-如何利用yakit一键获取提交flag</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/10003632">Aynakeya</a></td>
+<td>PWN</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1Ui4y1V7Pi">播放量 16959 | 以明日方舟为例-Il2CppDumper逆向实例</a><br><a href="https://www.bilibili.com/video/BV17t411X7Yd">播放量 7366 | 给b站播放器添加小窗口(画中画)功能(chrome+safari限定)</a><br><a href="https://www.bilibili.com/video/BV13q4y1e7tw">播放量 6086 | 【碎碎念】omofun视频解析 js逆向</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1jk4y1A7N4">[碎碎念] 从零开始手写一个微服务框架(随时弃坑) - 01</a><br><a href="https://www.bilibili.com/video/BV1jT411B7go">[PWN] 5分钟弄明白safe-linking (15分钟)</a><br><a href="https://www.bilibili.com/video/BV1CL411S77Y">[ctf碎碎念] [pwn] cfifufuuufuuuuu [Bo1lersCTF 2023]</a><br><a href="https://www.bilibili.com/video/BV1624y1u7w3">[碎碎念]喜马拉雅xm文件解密逆向分析</a><br><a href="https://www.bilibili.com/video/BV11Y4y1C72Q">[CTF碎碎念] KalmarCTF Pwn Js Engine专场</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/39892350">水番正文</a></td>
+<td>RE</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1QY4y1w7DU">播放量 4364 | 【QWB2022】GameMaster &amp; EasyRe（强网杯七夕节限定！！</a><br><a href="https://www.bilibili.com/video/BV1vU4y1e7Gs">播放量 2488 | 【第贰期 REVERSE 分享会】二十余种反调试源码讲解 &amp; IDA插件介绍</a><br><a href="https://www.bilibili.com/video/BV1D541127ug">播放量 2434 | 【STARCTF2022】Simple File System &amp; NaCI（去花F5！</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV13w411z7aP">【NewStarCTF2023】WEEK2 REVERSE-Petals &amp; R4ndom &amp; easy_enc &amp; AndroDbgMe</a><br><a href="https://www.bilibili.com/video/BV1Cu4y1s7ab">【NewStarCTF2023】WEEK2 REVERSE-PZthon &amp; C C++ &amp; AndroGenshin &amp; SMC</a><br><a href="https://www.bilibili.com/video/BV1tC4y1L7xK">【NewStarCTF2023】WEEK1 REVERSE-Endian &amp; AndroXor &amp; EzPE &amp; lazy_activtiy</a><br><a href="https://www.bilibili.com/video/BV1pC4y1L7C8">【NewStarCTF2023】WEEK1 REVERSE-easy_RE &amp; Segments &amp; 咳 &amp; ELF</a><br><a href="https://www.bilibili.com/video/BV1hV4y1e7EJ">【第柒期 REVERSE 分享会】D3CTF Tetris &amp; BN去TVM花指令 &amp; Python字节码Dump &amp; lua逆向初探</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/95382392">米利特瑞先生</a></td>
+<td>CTF安全研究</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1SU4y1x7Km">播放量 239651 | 获得世界顶级黑客STOK的视频授权是什么体验？</a><br><a href="https://www.bilibili.com/video/BV1Ao4y1Z7zh">播放量 48054 | 【顶级黑客STOK 第一期来啦!!!】黑客漏洞赏金星期四(BOUNTY THURSDAYS): 2021+新工具+新事物=酷酷的漏洞！</a><br><a href="https://www.bilibili.com/video/BV1jN4y1N7uR">播放量 28217 | 【世界顶级黑客 1V1 SOLO】DEFCON CTF 2022——Water Paddler VS r3kapig</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1Z34y1M7ZA">【DEFCON CTF决赛】LiveCTF-SuperDiceCode vs HypeBoy</a><br><a href="https://www.bilibili.com/video/BV1yN4y1y7Np">【DEFCON CTF决赛】LiveCTF-Norsecode vs Shellphish</a><br><a href="https://www.bilibili.com/video/BV1Zw41127qu">【DEFCON CTF决赛】LiveCTF-mhackeroni vs P1G BuT S4D</a><br><a href="https://www.bilibili.com/video/BV148411z7NS">【DEFCON CTF 2023】初赛LiveCTF Challenge-6</a><br><a href="https://www.bilibili.com/video/BV1Ch4y1T73z">【DEFCON CTF 2023】初赛LiveCTF Challenge-5</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/390157099">Soryu_Asuka_Rang</a></td>
+<td>电子数据取证</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1Vs4y1r7A2">播放量 7080 | 电子数据取证入门----综合取证工具使用基础</a><br><a href="https://www.bilibili.com/video/BV1TP411k7QF">播放量 3163 | 电子数据取证入门 Windows密码破解</a><br><a href="https://www.bilibili.com/video/BV1Mg4y1T7dF">播放量 2954 | Windows 取证 考试重点速通（后续可以补充）</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1eG411Z7hF">2023蓝帽杯初赛 手机、Windows取证WP（入门）</a><br><a href="https://www.bilibili.com/video/BV1TP411k7QF">电子数据取证入门 Windows密码破解</a><br><a href="https://www.bilibili.com/video/BV1Yh4y1j7dz">2021美亚杯 个人赛碎碎念讲解（一）</a><br><a href="https://www.bilibili.com/video/BV1Vs4y1r7A2">电子数据取证入门----综合取证工具使用基础</a><br><a href="https://www.bilibili.com/video/BV1v14y1d7bm">电子数据取证入门 知识储备（依旧很水，有人看的话以后慢慢补）</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_2">战队官号<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>昵称</th>
+<th>方向</th>
+<th>主要课程内容</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://space.bilibili.com/489643272">星盟安全团队</a></td>
+<td>/</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1uL411P7xt">播放量 4406 | 【星盟安全】Web系列教程 第1节 Nodejs基础</a><br><a href="https://www.bilibili.com/video/BV1TS4y1c7iH">播放量 3825 | 【漏洞旅行】第一期 CVE-2021-3493</a><br><a href="https://www.bilibili.com/video/BV1Xr4y1H7Rj">播放量 3484 | 【漏洞旅行】第二期 CVE-2022-0847 漏洞详细分析</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1Z14y1o7xQ">【星盟安全】Misc系列教程 第2节 内存取证</a><br><a href="https://www.bilibili.com/video/BV1Vh411g7eH">【星盟安全】Re系列教程 第6节 逆向入门（2）</a><br><a href="https://www.bilibili.com/video/BV1R24y1n7dA">【星盟安全】Misc系列教程 第1节 图片隐写</a><br><a href="https://www.bilibili.com/video/BV1jT411973P">【星盟安全】Re系列教程 第5节 逆向入门（1)</a><br><a href="https://www.bilibili.com/video/BV1ky4y1R7S3">【星盟安全】Re系列教程 第4节 RC4算法</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/3546382988216798">PolarCTF</a></td>
+<td>全栈</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1fr4y1Z73F">播放量 5623 | PolarCTF网络安全2023秋季个人挑战赛PWN赛题讲解</a><br><a href="https://www.bilibili.com/video/BV1tm4y1G7mn">播放量 3038 | PolarCTF网络安全2023秋季个人挑战赛WEB赛题讲解</a><br><a href="https://www.bilibili.com/video/BV1Su4y1z7X1">播放量 2914 | PolarCTF网络安全2023秋季个人挑战赛REVERSE赛题讲解</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1fr4y1Z73F">PolarCTF网络安全2023秋季个人挑战赛PWN赛题讲解</a><br><a href="https://www.bilibili.com/video/BV1Sp4y1w715">PolarCTF网络安全2023秋季个人挑战赛CRYPTO赛题讲解</a><br><a href="https://www.bilibili.com/video/BV1Tw411Y7r9">PolarCTF网络安全2023秋季个人挑战赛MISC赛题讲解</a><br><a href="https://www.bilibili.com/video/BV1tm4y1G7mn">PolarCTF网络安全2023秋季个人挑战赛WEB赛题讲解</a><br><a href="https://www.bilibili.com/video/BV1Su4y1z7X1">PolarCTF网络安全2023秋季个人挑战赛REVERSE赛题讲解</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/300216438">UKFC安全团队</a></td>
+<td>/</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1Hu41137yM">播放量 4317 | CTF入门代玩之PWN 基础知识-01</a><br><a href="https://www.bilibili.com/video/BV1sz4y1V7XM">播放量 3686 | CTF入门代玩之WEB 基础知识-01</a><br><a href="https://www.bilibili.com/video/BV1X34y1G7ZD">播放量 1439 | CTF入门代玩之Re 基础知识-01</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1Yw411F7Bm">CTF入门代玩之Misc 基础知识-03 流量分析</a><br><a href="https://www.bilibili.com/video/BV1Zp4y1T781">八分钟学会接收canary</a><br><a href="https://www.bilibili.com/video/BV1cw411X7B2">CTF入门代玩之WEB 基础知识-03</a><br><a href="https://www.bilibili.com/video/BV12C4y1d74s">CTF入门代玩之RE 基础知识-02</a><br><a href="https://www.bilibili.com/video/BV15h4y1r7Ew">CTF入门代玩之Misc 基础知识-02 图片隐写</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/689293282">r3kapig</a></td>
+<td>全栈</td>
+<td>Top 3:<br>最近更新：<br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/647450178">Nepnep网络安全</a></td>
+<td>全栈</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1VM411y7am">播放量 13502 | 新年快乐！</a><br><a href="https://www.bilibili.com/video/BV1wM411u7as">播放量 2443 | 技战高峰，Nepnep战队斩获XCTF国际联赛双料殊荣！</a><br><a href="https://www.bilibili.com/video/BV1UV4y1A7wS">播放量 2252 | fuzz分享</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1dQ4y1s7oP">【Crypto】HitconCTF 2023 复现会（仅部分题目）</a><br><a href="https://www.bilibili.com/video/BV1tN41167sH">NepCTF2023-直播回放-Misc方向</a><br><a href="https://www.bilibili.com/video/BV1jj411z7Lp">NepCTF2023-直播回放-Web方向</a><br><a href="https://www.bilibili.com/video/BV1xN4y1d7cT">NepCTF2023-直播回放-Pwn方向</a><br><a href="https://www.bilibili.com/video/BV1QP411s7iJ">NepCTF2023-直播回放-Reverse方向</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/652201180">天枢信息安全协会</a></td>
+<td>全栈</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV18B4y1J74x">播放量 9315 | 北京邮电大学天枢信息安全协会2022年宣传片</a><br><a href="https://www.bilibili.com/video/BV11t4y1a7D6">播放量 5987 | CTF 密码学和逆向方向入门讲座</a><br><a href="https://www.bilibili.com/video/BV1UT4y1R76u">播放量 2219 | 百团大战宣传片x天枢信息安全协会</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1ct4y1c7ak">TSCTF-J 2022赛前宣讲会暨2022天璇Merak招新宣讲会</a><br><a href="https://www.bilibili.com/video/BV18B4y1J74x">北京邮电大学天枢信息安全协会2022年宣传片</a><br><a href="https://www.bilibili.com/video/BV1UT4y1R76u">百团大战宣传片x天枢信息安全协会</a><br><a href="https://www.bilibili.com/video/BV1tP4y187Lq">TSCTF-J 2021赛前宣讲会暨天璇Merak招新宣讲</a><br><a href="https://www.bilibili.com/video/BV1Yf4y1W7Bu">《MRCTF 2021》赛前宣传片</a><br></td>
+<td>北邮天枢</td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/488634146">山海关安全团队</a></td>
+<td>/</td>
+<td>Top 3:<br>最近更新：<br></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_3">平台官号<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>昵称</th>
+<th>方向</th>
+<th>主要课程内容</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://space.bilibili.com/187378036">智慧少年Xenny</a></td>
+<td>/</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1uE411Q78N">播放量 34709 | CTF攻防世界WEB新手区全讲解</a><br><a href="https://www.bilibili.com/video/BV1MB4y1K78r">播放量 15015 | CTFer成长独白</a><br><a href="https://www.bilibili.com/video/BV1eE411r7ip">播放量 9229 | CTF攻防世界WEB进阶区讲解</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1Sc411H7i8">[NSSCTF]Hackground基础使用</a><br><a href="https://www.bilibili.com/video/BV1AR4y1U756">函数极限性质及未定式</a><br><a href="https://www.bilibili.com/video/BV1VP411N7HM">NSSRound#6 Team赛题目讲解</a><br><a href="https://www.bilibili.com/video/BV1pm4y1S7hY">NSSCTF-再见辛丑！赛题讲解</a><br><a href="https://www.bilibili.com/video/BV16q4y1A74h">Docker技术从0到1全覆盖</a><br></td>
+<td>NSS平台站长</td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/626823956">CTFShow平台官方账号</a></td>
+<td>/</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1jy4y1a7Ew">播放量 26105 | CTFshow-web入门-命令执行</a><br><a href="https://www.bilibili.com/video/BV1Uv411G7u1">播放量 13451 | CTFshow-web入门-PHP特性</a><br><a href="https://www.bilibili.com/video/BV1D64y1m78f">播放量 12235 | CTFshow-web入门-反序列化</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1hk4y1p7MQ">辟邪剑谱题目讲解</a><br><a href="https://www.bilibili.com/video/BV1zg4y1T7Ur">CTF基础环境学习</a><br><a href="https://www.bilibili.com/video/BV18X4y1Q775">RealWorldCTF渗透赛官方wp</a><br><a href="https://www.bilibili.com/video/BV1wT41157nd">ctfshow-技术分享第9期</a><br><a href="https://www.bilibili.com/video/BV15A4y1f7Yy">ctfshow-技术分享第7期</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/2066710972">青少年CTF训练平台官方账号</a></td>
+<td>/</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1pT4y1S7YY">播放量 23252 | 【科普】最近俄乌事件中再次活跃的匿名者到底是什么组织？</a><br><a href="https://www.bilibili.com/video/BV1PF411s7Ta">播放量 18009 | 【转载】真正的黑客观看影视剧中的黑客的反应！（上）</a><br><a href="https://www.bilibili.com/video/BV1Ru411y7VE">播放量 9869 | 网安百科E01：你的账号究竟是怎么样被盗的？如何防止账号被盗？</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1y94y1C7vM">【青少年CTF】Web-这是Pwn还是Web（万能密码的利用与讲解）</a><br><a href="https://www.bilibili.com/video/BV1WP411r7QX">【青少年CTF】-MISC-caesar 凯撒密码</a><br><a href="https://www.bilibili.com/video/BV1Zc411c7UY">【青少年CTF】Web-Web签到  Dirsearch的使用</a><br><a href="https://www.bilibili.com/video/BV1ak4y1G7Eg">【青少年CTF】-Misc-Attack 流量包分析与Minikatz分析密码</a><br><a href="https://www.bilibili.com/video/BV1E94y1v7xY">【青少年CTF】MISC-签到题| 听说你也想成为韩商言，那么CTF第一步你会吗？来签到一下吧？</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/519244727">XCTF官方账号</a></td>
+<td>/</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1Sp4y1j7yz">播放量 31146 | 第七届XCTF国际网络攻防联赛总决赛</a><br><a href="https://www.bilibili.com/video/BV128411q7we">播放量 1914 | “饶派杯”XCTF车联网安全挑战赛</a><br><a href="https://www.bilibili.com/video/BV1B14y1y78u">播放量 1585 | 首届“天网杯”网络安全大赛圆满收官｜赛宁网安全力支持</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV128411q7we">“饶派杯”XCTF车联网安全挑战赛</a><br><a href="https://www.bilibili.com/video/BV1B14y1y78u">首届“天网杯”网络安全大赛圆满收官｜赛宁网安全力支持</a><br><a href="https://www.bilibili.com/video/BV1Sp4y1j7yz">第七届XCTF国际网络攻防联赛总决赛</a><br><a href="https://www.bilibili.com/video/BV1SV4y1X7JP">第七届XCTF国际网络攻防联赛总决赛战队巡礼！</a><br><a href="https://www.bilibili.com/video/BV1hP4y1j79P">20211105-第四届“强网”拟态防御国际精英挑战赛</a><br></td>
+<td>亚洲规模最大、水平最高、影响力最大的网络安全联赛</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">安全方向<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<h3 id="_5">个人向<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>昵称</th>
+<th>方向</th>
+<th>主要课程内容</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://space.bilibili.com/346375059">xiaodisec</a></td>
+<td>安全入门到精通</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1pQ4y1s7kH">播放量 31632 | 【小迪安全】红蓝对抗 | 网络攻防 | V2022全栈培训</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1pQ4y1s7kH">【小迪安全】红蓝对抗 | 网络攻防 | V2022全栈培训</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/50908119">yuppt</a></td>
+<td>红队方向</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1WK411P7Hb">播放量 23213 | 【学习分享】实战博彩平台！从sql注入到cs上线！</a><br><a href="https://www.bilibili.com/video/BV14W4y187zU">播放量 9878 | 当一个黑客玩hacknet。。。。。。（下）</a><br><a href="https://www.bilibili.com/video/BV1Qv4y1z71f">播放量 8013 | 【安全闲聊】2022年网络安全趋势分析与年终总结</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV14u4y1p7TW">【学习分享】利用vs特性投毒sln欺骗安全从业人员</a><br><a href="https://www.bilibili.com/video/BV1ay4y1F7xT">【学习分享】Oauth2.0认证漏洞简单介绍</a><br><a href="https://www.bilibili.com/video/BV1Qz4y1x7qF">【学习分享】基于chatgpt的蜜罐与flask的联合使用</a><br><a href="https://www.bilibili.com/video/BV1hp4y157Yv">【学习分享】openai调用函数对于安全工具开发的启示</a><br><a href="https://www.bilibili.com/video/BV15P411e7i7">【社会工程学】dlc课：企业安全意识培训的一些分享</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/437503777/">YakProject</a></td>
+<td>Web安全、Yakit</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1kL4y1L7tZ">播放量 21789 | Yakit安装和更新PoC插件介绍</a><br><a href="https://www.bilibili.com/video/BV13g411z7gj">播放量 17220 | yakit教程</a><br><a href="https://www.bilibili.com/video/BV1344y1P7Ed">播放量 7729 | Yak和Yakit的缘起、成长、未来综述</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1Mu4y1C7nP">【干货】Yakit使用教程番外01-远程模式下的劫持</a><br><a href="https://www.bilibili.com/video/BV15V4y1i7qE">【干货】Yakit使用教程10-Yakit辅助功能讲解</a><br><a href="https://www.bilibili.com/video/BV1au411V7Ny">【干货】Yakit使用教程09-Web Fuzzer进阶内容，热加载与websocket劫持</a><br><a href="https://www.bilibili.com/video/BV1QP411C7X5">【干货】Yakit使用教程08-反连的原理及演示</a><br><a href="https://www.bilibili.com/video/BV1Pu411Y7UX">Yakit课程07：进阶模式——Web Fuzzer</a><br></td>
+<td>Yakit作者</td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/26465397/">德勒危险</a></td>
+<td>红队方向</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1vQ4y1q7r1">播放量 16708 | 【渗透测试】全B站最详细的对黑客认证OSCP的全解析！</a><br><a href="https://www.bilibili.com/video/BV1qf4y1f7xB">播放量 10018 | 【AD域渗透】高难度域环境渗透解析</a><br><a href="https://www.bilibili.com/video/BV19w41127ki">播放量 7317 | 海外网络安全岗就业与跳槽分析</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1dN411t7Bv">【德勒课程第1期】第11讲：Windows凭证理论 代理与跳板</a><br><a href="https://www.bilibili.com/video/BV1sF41127dK">【德勒】企业设施渗透与红队行动第2期课程Demo</a><br><a href="https://www.bilibili.com/video/BV19w41127ki">海外网络安全岗就业与跳槽分析</a><br><a href="https://www.bilibili.com/video/BV1q14y1978H">手把手教你编写自己的Shellcode - PART 1</a><br><a href="https://www.bilibili.com/video/BV1U54y1K74x">上周发现的无提示无警告的phishing手法</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/353948151">Yihsiwei-渣渣</a></td>
+<td>红队方向</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1oD4y1j7BQ">播放量 17193 | 网络安全红队一年的工作总结以及感悟-2022</a><br><a href="https://www.bilibili.com/video/BV1Ab4y1d7w1">播放量 16180 | fastjson反序列化漏洞演示加详细讲解加原理</a><br><a href="https://www.bilibili.com/video/BV1bV4y1g7gy">播放量 9598 | 学网络安全要不要考研</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1wm4y1n7YC">探囊取物-HackBrowserData解密浏览器账号密码</a><br><a href="https://www.bilibili.com/video/BV1Kc411N7QY">粉丝投稿-白加黑免杀原理介绍与实战演示</a><br><a href="https://www.bilibili.com/video/BV1c24y1c7PS">以毒攻毒-强关360</a><br><a href="https://www.bilibili.com/video/BV1624y1g7xP">碟中谍-安卓远控木马的危害以及如何防范</a><br><a href="https://www.bilibili.com/video/BV1iy4y1D7FW">反客为主-hvnc后台控制电脑桌面</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/351510324/">黑兔由帝</a></td>
+<td>攻防渗透</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1ka4y1M7X1">播放量 57504 | 作为一个网安up，我为什么不推荐入行网安</a><br><a href="https://www.bilibili.com/video/BV1GP411k77k">播放量 24571 | 【无声系网安up】看一眼文件夹就被溯源：简陋但危险的内网蜜罐</a><br><a href="https://www.bilibili.com/video/BV1sA41167VN">播放量 17345 | 【无声系网安up】攻守易位：反制Burpsuite</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1mC4y1G749">【无声系网安up】CNVD证书获取指北</a><br><a href="https://www.bilibili.com/video/BV1Sp4y1A7cL">【无声系网安up】网安实习&amp;校招简历编写及面试经验</a><br><a href="https://www.bilibili.com/video/BV1iz4y1j7kA">【无声系网安up】攻守易位VIII：反制NPS</a><br><a href="https://www.bilibili.com/video/BV1dN41127e3">【无声系网安up】五分钟入门内存马查杀</a><br><a href="https://www.bilibili.com/video/BV1fj411d7vD">【无声系网安up】反控CobaltStrike服务端的小技巧</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/5140781/">簌澪SuMio</a></td>
+<td>靶机</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1qc411L7Fr">播放量 2093 | Hack The Box 赛季活动靶场【Cerberus】User Flag攻略</a><br><a href="https://www.bilibili.com/video/BV1RX4y1r7ro">播放量 1682 | Hack The Box 赛季活动靶场【Socket】User &amp; System Flag攻略</a><br><a href="https://www.bilibili.com/video/BV1mm4y1M75i">播放量 1609 | [DASCTF]2023网安·论道决赛MISC题【O神】</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1NG41117wK">Hack The Box 赛季3靶场【Manager】User &amp; System wp</a><br><a href="https://www.bilibili.com/video/BV11Q4y1s7KN">Hack The Box 赛季3靶场【Drive】User &amp; System wp</a><br><a href="https://www.bilibili.com/video/BV1Du4y1W7Av">Hack The Box 赛季3靶场【Analytics】User &amp; System Flag</a><br><a href="https://www.bilibili.com/video/BV15z4y1M7i1">[DASCTF]2023网安·论道决赛MISC题【密码在这里】</a><br><a href="https://www.bilibili.com/video/BV1FG411d787">[DASCTF]2023网安·论道决赛MISC题【修猫】</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/123895286/">Zacarx</a></td>
+<td>靶机</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1We4y117Zk">播放量 3749 | 【知识】缓冲区溢出攻击基础+靶机演练</a><br><a href="https://www.bilibili.com/video/BV1cd4y137CH">播放量 2229 | 【基础向】提权基础与提权的五个姿势总结-tryhackme-privilege escalation</a><br><a href="https://www.bilibili.com/video/BV13G4y1j7xF">播放量 2191 | 【靶机】holo-AD域渗透&amp;web_lab(1)-外网渗透-内网渗透</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1Nk4y1G7rh">【CTF】jwt2struts</a><br><a href="https://www.bilibili.com/video/BV12k4y157d6">【靶机】Logan_文件包含getshell_hackmyvm</a><br><a href="https://www.bilibili.com/video/BV1jh4y1L72H">【靶机】suidy_hackmyvm</a><br><a href="https://www.bilibili.com/video/BV12m4y1j7wz">【靶机】ret2text_socnet_2</a><br><a href="https://www.bilibili.com/video/BV1vu411j7sZ">【靶机】缓冲区溢出再研究_School</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/102541140">Zer0-hex</a></td>
+<td>OSCP</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV15u411J7ro">播放量 6801 | OSCP 推荐靶场 0x2C - Breach 3.0.1 - Breach 系列终章，密集知识点鏖战，靶机内镶两台虚拟机，全部打穿才算完。全网唯一视频</a><br><a href="https://www.bilibili.com/video/BV13u41137Yt">播放量 2310 | OSCP 推荐靶场 0x32 - Infosec Prep OSCP Box - 5 分钟速通</a><br><a href="https://www.bilibili.com/video/BV1yj41147So">播放量 2079 | OSCP 推荐靶场 0x34 - Brainpan 1 - Windows Pwn + Wine 逃逸 + 男人提权</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1ww411c7fp">OSCP 推荐靶场 0x36 - Tiki 1 - 看似很简单，其实也不难</a><br><a href="https://www.bilibili.com/video/BV1334y1G7or">OSCP 推荐靶场 0x35 - Lord of the root 1.0.1 - Mysql 时间盲注 + UDF 零基础教学提权</a><br><a href="https://www.bilibili.com/video/BV1yj41147So">OSCP 推荐靶场 0x34 - Brainpan 1 - Windows Pwn + Wine 逃逸 + 男人提权</a><br><a href="https://www.bilibili.com/video/BV1Am4y1V7Cc">OSCP 推荐靶场 0x33 - LemonSqueezy - Mysql 写 Shell，Crontab 提权</a><br><a href="https://www.bilibili.com/video/BV13u41137Yt">OSCP 推荐靶场 0x32 - Infosec Prep OSCP Box - 5 分钟速通</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/246840998">AKA_航</a></td>
+<td>OSCP</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1xa411v7RF">播放量 25720 | 【CRACER 全网最新渗透课程（已获得授权）】DAY01 渗透测试基础 「更新中」</a><br><a href="https://www.bilibili.com/video/BV1724y1K7cm">播放量 2742 | OSCP Day1：ProvingGrounds — FunnyBoxEasy</a><br><a href="https://www.bilibili.com/video/BV1fG41127qT">播放量 1034 | 【靶场速通】三靶场：难-中-中（用时：50min）</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1fG41127qT">【靶场速通】三靶场：难-中-中（用时：50min）</a><br><a href="https://www.bilibili.com/video/BV1724y1K7cm">OSCP Day1：ProvingGrounds — FunnyBoxEasy</a><br><a href="https://www.bilibili.com/video/BV1xa411v7RF">【CRACER 全网最新渗透课程（已获得授权）】DAY01 渗透测试基础 「更新中」</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/3546377619508015/">不懂安全的阿浪</a></td>
+<td>安全开发</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1J8411z78W">播放量 4860 | 红蓝对抗｜可视化GUI 一键快速梳理资产并自动信息搜集，分布式根据指纹准确检测漏洞</a><br><a href="https://www.bilibili.com/video/BV1or4y1X7nu">播放量 1203 | 红蓝对抗｜AssetSorting 资产梳理工具、快速检索资产发布</a><br><a href="https://www.bilibili.com/video/BV1gF411k7rS">播放量 633 | 不要在找不到安全工具啦！红蓝对抗综合安全工具平台使用教程！</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1em4y1g7EF">红蓝对抗框架｜智能快速扫描漏洞</a><br><a href="https://www.bilibili.com/video/BV1gF411k7rS">不要在找不到安全工具啦！红蓝对抗综合安全工具平台使用教程！</a><br><a href="https://www.bilibili.com/video/BV1or4y1X7nu">红蓝对抗｜AssetSorting 资产梳理工具、快速检索资产发布</a><br><a href="https://www.bilibili.com/video/BV1J8411z78W">红蓝对抗｜可视化GUI 一键快速梳理资产并自动信息搜集，分布式根据指纹准确检测漏洞</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/392628031/">ExpLang_Cn</a></td>
+<td>安全开发</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1Qi4y1D7az">播放量 24481 | 【渗透测试/安全开发/安全研究】网络安全入门到精通 全套规划学习资料合集！无废话 全干货</a><br><a href="https://www.bilibili.com/video/BV1t3411K7j2">播放量 22831 | 我又写了一个安全工具！解放双手 3分钟自动化完成内网打点+利用！</a><br><a href="https://www.bilibili.com/video/BV1hL411c7XB">播放量 15986 | 【WanLi】牛牛牛牛牛的黑客工具发布了？</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV12Y411R7pZ">长见识！Notion还可以当作C2用！！</a><br><a href="https://www.bilibili.com/video/BV1RG4y1o7iX">发现了一个可以自动Bypass的神器｜挖SRC刷洞必备！</a><br><a href="https://www.bilibili.com/video/BV1tG4y1W7E1">Sub新一代子域嗅探工具｜全网爬虫获取子域｜数据库作为字典进行计次提高准确率和效率</a><br><a href="https://www.bilibili.com/video/BV13N4y1K7eE">一款在日常工作中辅助渗透测试、安全开发、安全研究等工作的神兵利器！</a><br><a href="https://www.bilibili.com/video/BV1894y1m7As">网络安全未来何去何从？</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/375515990/">Fuxk-Hack</a></td>
+<td>前沿安全</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1Jm4y1N7Qv">播放量 3187 | 大语言模型的对齐理解和评估</a><br><a href="https://www.bilibili.com/video/BV1qm4y1N7FV">播放量 3039 | 抗量子密码介绍与国际标准化进展</a><br><a href="https://www.bilibili.com/video/BV1jN4y1A7y4">播放量 2487 | 斯坦福大学图学习课程 Stanford Graph Learning Workshop 2022</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1Cu4y1n7uz">旧瓶装新酒：对Chrome WebSQL的攻击</a><br><a href="https://www.bilibili.com/video/BV1ve411d75Q">BlackHat'23 数据安全的漫漫征程</a><br><a href="https://www.bilibili.com/video/BV1DG41117ZU">大语言模型的可信度和领域专业化</a><br><a href="https://www.bilibili.com/video/BV12w411c7gL">Phoenix域名攻击：域名委托和撤销中的脆弱链接</a><br><a href="https://www.bilibili.com/video/BV1A8411C7RG">用于解锁智能门锁的射频工具</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/1106751850/">n1ar4</a></td>
+<td>Java安全研究</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1Sv4y1i7jf">播放量 21106 | B站最全的Java安全学习路线</a><br><a href="https://www.bilibili.com/video/BV1Ud4y147Er">播放量 11021 | xray GUI 启动器 测试版介绍</a><br><a href="https://www.bilibili.com/video/BV1md4y157DC">播放量 10205 | 使用IDEA GUI Designer开发GUI程序</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1gN4y1y7eT">基于OpenJDK的安全版本Y4 JDK介绍</a><br><a href="https://www.bilibili.com/video/BV15T411b7G2">Java重写MySQL Fake Server实现JDBC Attack</a><br><a href="https://www.bilibili.com/video/BV1Gc411n7wm">自己写的远程管理工具介绍</a><br><a href="https://www.bilibili.com/video/BV1Ka4y1M7Te">Kafka RCE CVE-2023-25194 分享</a><br><a href="https://www.bilibili.com/video/BV1WY411z7Qz">新博客展示</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/2142877265/">白日梦组长</a></td>
+<td>Java安全研究</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV16h411z7o9">播放量 32594 | Java反序列化漏洞专题-基础篇(21/09/05更新类加载部分)</a><br><a href="https://www.bilibili.com/video/BV1no4y1U7E1">播放量 19756 | Java反序列化CommonsCollections篇(一) CC1链手写EXP</a><br><a href="https://www.bilibili.com/video/BV1L3411a7ax">播放量 12470 | Java反序列化RMI专题-没有人比我更懂RMI</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1E84y1w77R">java内存马专题1-servlet内存马</a><br><a href="https://www.bilibili.com/video/BV1bG4y157Ef">fastjson反序列化漏洞3-&lt;=1.2.47绕过</a><br><a href="https://www.bilibili.com/video/BV1pP411N726">fastjson反序列化漏洞2-1.2.24利用</a><br><a href="https://www.bilibili.com/video/BV11d4y1q74C">cobaltstrike rce复现</a><br><a href="https://www.bilibili.com/video/BV1bD4y117Qh">fastjson反序列化漏洞1-流程分析</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/552018206">Alice-Bob</a></td>
+<td>密码学研究</td>
+<td>Top 3:<br>[播放量 10754  Top 3:<br><a href="https://www.bilibili.com/video/BV1kh4y1M7HJ">播放量 10754 | 【一口气学完】密码学的数学基础 6,《环论》，三节课学完</a><br><a href="https://www.bilibili.com/video/BV1sh411F7jf">播放量 3017 | 【代数扩域】一种非常重要的扩域类型，又与不可约多项式有关系</a><br><a href="https://www.bilibili.com/video/BV1Pr4y1i7gM">播放量 2960 | 现代密码学入门||流密码——如何用短密钥加密长消息</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV15C4y1V7sz">【一口气学完】密码学的数学基础 7,《有限域》，一节课学完</a><br><a href="https://www.bilibili.com/video/BV1jw411C7mw">【范+第三季预告】从扩域到子域的另一种映射</a><br><a href="https://www.bilibili.com/video/BV1Vh4y1r7Xn">【迹的应用】用迹可以求出扩域元素的线性表达</a><br><a href="https://www.bilibili.com/video/BV1w34y1V7Hd">【迹】一种从扩域到子域的映射，有很多有用的性质，特别是传递性</a><br><a href="https://www.bilibili.com/video/BV1E94y1Y7Yh">【构造本原多项式】构造不可约多项式的另一种方法是构造本原多项式，其本质还是要构造本原元</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/394172563">Wker666</a></td>
+<td>安全研究</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1f14y1T7Wi">播放量 8221 | linux内核课程介绍</a><br><a href="https://www.bilibili.com/video/BV1av4y1D7xZ">播放量 6383 | Windows TCP/IP 协议栈内核漏洞超详细分析(CVE-2021-24086)</a><br><a href="https://www.bilibili.com/video/BV1wm4y1E7TL">播放量 5289 | CVE-2023-34312 提权漏洞超详细逆向分析</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1nh4y1z7Xh">某wifi IOT漏洞分析(固件解密脚本编写，漏洞分析)</a><br><a href="https://www.bilibili.com/video/BV1xj41187mP">软件保护之控制流平坦化和vm保护</a><br><a href="https://www.bilibili.com/video/BV1AK4y1F7YR">CVE-2019-2215安卓提权漏洞分析 uaf实现任意内核地址读写</a><br><a href="https://www.bilibili.com/video/BV1BP411t7aL">CVE-2017-13288安卓漏洞bundle风水</a><br><a href="https://www.bilibili.com/video/BV1ep4y1L7fz">cve-2022-37969 Windows内核提权</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/349188894/">zhxknb1</a></td>
+<td>WEB安全研究</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1N94y1S724">播放量 13503 | 【安全工具】内网综合扫描工具 fscan 自动化、全方位漏洞扫描</a><br><a href="https://www.bilibili.com/video/BV1yX4y1z7wr">播放量 6205 | 【漏洞复现】Weblogic未授权远程代码执行漏洞 (CVE-2023-21839)</a><br><a href="https://www.bilibili.com/video/BV1P94y1U7Fk">播放量 5518 | 【Linux】终端美化 - 利用 Oh My Zsh &amp; Powerlevel10k 优化shell</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1xG411Z7zp">【安全工具】PentestGPT - 自动化渗透测试实现</a><br><a href="https://www.bilibili.com/video/BV1mV4y1B7it">【安全工具】XPOC - 供应链漏洞扫描</a><br><a href="https://www.bilibili.com/video/BV1Eo4y147aR">【漏洞复现】S2-045/046 GetShell（CVE-2017-5638）</a><br><a href="https://www.bilibili.com/video/BV1Vo4y1L7hv">【漏洞复现】Apache Shiro 1.2.4反序列化漏洞（CVE-2016-4437）</a><br><a href="https://www.bilibili.com/video/BV1yX4y1z7wr">【漏洞复现】Weblogic未授权远程代码执行漏洞 (CVE-2023-21839)</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/494685916">suxyds-鎏</a></td>
+<td>免杀方向安全研究</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1Cg41117fz">播放量 11674 | 编写个远控，粉丝啥时候过万啥时候发，反正没人看</a><br><a href="https://www.bilibili.com/video/BV1x24y197xy">播放量 4111 | 就你叫卡巴斯基啊[doge]</a><br><a href="https://www.bilibili.com/video/BV11M4y1E74Y">播放量 3768 | 【免杀从0到1】第六期，步入Powershell免杀之powershell代码混淆</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV11M4y1E74Y">【免杀从0到1】第六期，步入Powershell免杀之powershell代码混淆</a><br><a href="https://www.bilibili.com/video/BV1yo4y1N7N1">更新！up自制的c2重大更新且已发布最新发行版</a><br><a href="https://www.bilibili.com/video/BV1UP4y1i7f9">【联动】Up自制的PushFily通过Powershell传递回话至CobaltStrike</a><br><a href="https://www.bilibili.com/video/BV1C3411Q76H">【爆肝半个月】PushFily一款为了平替meterpreter的c2</a><br><a href="https://www.bilibili.com/video/BV15A411X72Z">【养蛊】Golang通过工具批量生成免杀360</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/24536961/">谢公子学安全</a></td>
+<td>攻防渗透</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1ib411f7wv">播放量 5379 | AD域的搭建和配置</a><br><a href="https://www.bilibili.com/video/BV1Mv4y1h7op">播放量 4413 | Kerberos协议详解</a><br><a href="https://www.bilibili.com/video/BV1oa4y1P7rA">播放量 2975 | 域渗透之委派攻击</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1oa4y1P7rA">域渗透之委派攻击</a><br><a href="https://www.bilibili.com/video/BV11T411675E">针对Outlook进行NTLM Relay攻击</a><br><a href="https://www.bilibili.com/video/BV1ib411f7wv">AD域的搭建和配置</a><br><a href="https://www.bilibili.com/video/BV1Mv4y1h7op">Kerberos协议详解</a><br><a href="https://www.bilibili.com/video/BV1184y1N75X">NTLM协议详解</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/6013655">非虫-软件安全</a></td>
+<td>软件安全研究</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1Jh4y1a7Rx">播放量 7309 | 吐槽红米手机内核版本乱象-失败的eBPF机型购买经历</a><br><a href="https://www.bilibili.com/video/BV1QV4y1Y7Aa">播放量 4001 | eBPF开上帝模式！设备指纹修改、反ROOT检测、反Frida检测、抓包带来新的玩法</a><br><a href="https://www.bilibili.com/video/BV1nF411D7vd">播放量 1904 | eBPF峰会2023中英全程视频</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1He41197ym">04-01-Linux内核基础参考资料</a><br><a href="https://www.bilibili.com/video/BV1fB4y1o7Un">03-05-无线网卡配置与安卓云手机启动脚本解读</a><br><a href="https://www.bilibili.com/video/BV1MM411R7R8">03-04-完整Shell脚本样例解读</a><br><a href="https://www.bilibili.com/video/BV1CC4y137HF">谷歌Pixel6/⅞手机刷KernelSU最安全常规的方法</a><br><a href="https://www.bilibili.com/video/BV1B8411r7MK">03-03-Shell脚本排错与调试</a><br></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6">安全团队<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>昵称</th>
+<th>方向</th>
+<th>主要课程内容</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://space.bilibili.com/348678604">5号黯区红队攻防</a></td>
+<td>红队方向</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1aq4y1X7oE">播放量 78737 | 【5号黯区】BurpSuite/Burp Suite 2021最新系列渗透视频</a><br><a href="https://www.bilibili.com/video/BV1rz4y1S7B7">播放量 10364 | 某大牛2020最新培训部分内容（野路子）</a><br><a href="https://www.bilibili.com/video/BV1c7411v7cS">播放量 8797 | Webshell管理工具之原理讲解+剖析中国菜刀所有功能及后门</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1C34y1p76Z">MySQL注入之floor报错（主键报错）原理细讲</a><br><a href="https://www.bilibili.com/video/BV1T34y1s7YM">5号黯区靶场食用注意事项</a><br><a href="https://www.bilibili.com/video/BV1hv4y1g79Q">【渗透测试】脚本小子速成day2（补录）</a><br><a href="https://www.bilibili.com/video/BV1N5411Q795">【渗透测试】脚本小子速成day5（完结）</a><br><a href="https://www.bilibili.com/video/BV1cY4y157pz">【渗透测试】脚本小子速成day4</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/1175020871">红队攻防实验室</a></td>
+<td>红队方向</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1yN4y1X777">播放量 2681 | 【老杨聊安全】“学历”or “技术”？学网络安全的少年郎应该如何抉择？</a><br><a href="https://www.bilibili.com/video/BV1Ep4y1N7LU">播放量 2200 | 【老杨聊安全】你真的了解网络安全吗？</a><br><a href="https://www.bilibili.com/video/BV1j84y1U71z">播放量 2061 | 安服仔？红队？免杀武器化都不了解怎么行？</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1rV411w7ch">【老杨聊安全】开发和网安哪个领域知识更新快？</a><br><a href="https://www.bilibili.com/video/BV1MN4y1f7Kr">【恶意代码分析】01.静态分析基础与辅助分析网站</a><br><a href="https://www.bilibili.com/video/BV1ch4y1h7xA">2023最新渗透测试工程师零基础到就业课程（Web安全&amp;内网安全&amp;代码审计&amp;渗透测试&amp;应急响应）</a><br><a href="https://www.bilibili.com/video/BV17u411u72s">【老杨聊安全】你是个黑客吗？</a><br><a href="https://www.bilibili.com/video/BV1iV411c77d">【红队免杀/武器化】04.shellcode提取与加载</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/479236595">天工开物实验室</a></td>
+<td>攻防渗透</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1ad4y1n7RT">播放量 8711 | 社工技巧_社工溯源_代码获取摄像头以及ip</a><br><a href="https://www.bilibili.com/video/BV1Co4y1q7oX">播放量 7443 | hw蓝队应急响应解析_1、实战web入侵后门检测，日志分析，暗链检测</a><br><a href="https://www.bilibili.com/video/BV1fV411N7Qc">播放量 6706 | 护网红队linux权限维持项目</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1Ye411R7NR">K8s污点横向&amp;APIServer未授权访问&amp;docker危险挂载逃逸</a><br><a href="https://www.bilibili.com/video/BV1AF411m7o6">内网技巧[向日葵上线绕360]</a><br><a href="https://www.bilibili.com/video/BV1BP411t7uA">灯塔安装使用</a><br><a href="https://www.bilibili.com/video/BV1EF411D7ew">github泄漏</a><br><a href="https://www.bilibili.com/video/BV1zN4y1Q7kv">子域名扫描</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/503070487">隐雾SEC</a></td>
+<td>攻防渗透</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1p8411v7Cg">播放量 7134 | 手把手教学妹如何挖Src（三小时高校版）</a><br><a href="https://www.bilibili.com/video/BV1eh4y1g76c">播放量 5443 | 11.SQL注入之乱打安全狗</a><br><a href="https://www.bilibili.com/video/BV1Zm4y1s74V">播放量 4071 | 21.src挖掘之如何挖到第一枚漏洞</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1eu411K7P5">Src公开课第三讲：Src信息收集实战</a><br><a href="https://www.bilibili.com/video/BV19w411w7wg">Src公开课第二讲：如何做好Src信息收集</a><br><a href="https://www.bilibili.com/video/BV1ch4y1z7RR">Src公开课第一讲：纯小白如何入门Src</a><br><a href="https://www.bilibili.com/video/BV1ch4y1Y7Jy">PHP代码审计高校版</a><br><a href="https://www.bilibili.com/video/BV1p8411v7Cg">手把手教学妹如何挖Src（三小时高校版）</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/3493263229061351">dada安全研究所</a></td>
+<td>代码审计</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1Yc411j7TP">播放量 3497 | 代码审计|dada代码审计公开课5-本想分析小皮后台RCE，结果审计出前台RCE？</a><br><a href="https://www.bilibili.com/video/BV1bg4y147nj">播放量 2958 | 代码审计|dada代码审计公开课1-Cobalt Strike rce带你从代码审计的角度来分析如何利用CVE-2022-39197</a><br><a href="https://www.bilibili.com/video/BV1Zj411c7zX">播放量 1658 | 代码审计|dada代码审计公开课2-亲临体验代审实战的魅力!</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1ah4y1D7Fc">代码审计|dada代码审计公开课4-yapi代码审计到rce</a><br><a href="https://www.bilibili.com/video/BV17P411v7ES">代码审计|dada代码审计公开课3-Webshell检测沙盒逃逸到rce</a><br><a href="https://www.bilibili.com/video/BV1Zj411c7zX">代码审计|dada代码审计公开课2-亲临体验代审实战的魅力!</a><br><a href="https://www.bilibili.com/video/BV1Yc411j7TP">代码审计|dada代码审计公开课5-本想分析小皮后台RCE，结果审计出前台RCE？</a><br><a href="https://www.bilibili.com/video/BV1bg4y147nj">代码审计|dada代码审计公开课1-Cobalt Strike rce带你从代码审计的角度来分析如何利用CVE-2022-39197</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/383770377">闻道安全</a></td>
+<td>Java代码审计</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1yP411S7EH">播放量 4386 | 1.初识Java代码审计</a><br><a href="https://www.bilibili.com/video/BV19M411L7TD">播放量 965 | 9.Java代码审计之反射机制运用</a><br><a href="https://www.bilibili.com/video/BV1hM411L7Vn">播放量 932 | 2.JavaSE基础知识（上）</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1kT411n7We">16.Java代码审计之失效的访问控制(水平与垂直越权)</a><br><a href="https://www.bilibili.com/video/BV1Na4y1P7wG">15.Java代码审计之XML外部实体注入</a><br><a href="https://www.bilibili.com/video/BV19h4y1H78c">14.Java代码审计之敏感信息泄露与初识XML外部实体注入</a><br><a href="https://www.bilibili.com/video/BV1Ak4y1Y7qb">13.Java代码审计之失效的身份验证与JWT安全深度剖析</a><br><a href="https://www.bilibili.com/video/BV19o4y1t7gz">12.Java代码审计之命令注入、代码注入、表达式注入与模板注入</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/410021235/">逆向老钱</a></td>
+<td>逆向安全研究</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1pr4y1K7H6">播放量 9766 | 武汉科锐逆向-软件逆向学习之逆向还原代码系列(一)</a><br><a href="https://www.bilibili.com/video/BV1J5411x7qz">播放量 9260 | 钱林松老师受华中科技大学的邀请，直播讲座：逆向分析技术引导</a><br><a href="https://www.bilibili.com/video/BV1jq4y1o7jy">播放量 5227 | 科锐软件逆向学习之新书C++反汇编与逆向分析技术揭秘第2版发布和答疑</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1UC4y137GY">《一家之言》软件逆向分析之逆向分析学生作业进行点评-幻方题(二)</a><br><a href="https://www.bilibili.com/video/BV1aw411B7nd">科锐软件逆向学习之连线360知名反病毒专家边亮和网友一起交流逆向技术</a><br><a href="https://www.bilibili.com/video/BV1qH4y1R7D5">《一家之言》软件逆向分析之逆向分析学生作业进行点评-幻方题(一)</a><br><a href="https://www.bilibili.com/video/BV14y4y1N7Zc">科锐软件逆向学习之和网友交流，科锐学员获得看雪2023KCTF年度赛火力第四名、难度第八名的好成绩.mp4</a><br><a href="https://www.bilibili.com/video/BV1dC4y1V7WQ">《一家之言》软件逆向分析之逆向分析学生作业进行点评-遍历堆程序(二)</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/491748397">红队笔记</a></td>
+<td>靶机/红队</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1Es4y1M7ZL">播放量 10099 | 「红队笔记」Linux提权精讲：演示2 - 重磅大作！Linux提权大赏，20种Linux渗透测试提权演示精讲一次看完，渗透测试必修课一次彻底搞定！</a><br><a href="https://www.bilibili.com/video/BV17s4y1r73D">播放量 8770 | 「红队笔记」靶机精讲：HTB Bastard 序章 - 恢宏的渗透测试场面，浴血奋战的序章。勇士，你来挑战吗？</a><br><a href="https://www.bilibili.com/video/BV1Wh4y1H7LK">播放量 8365 | 「红队笔记」Linux提权精讲：原理和枚举</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1qp4y1T74u">「红队笔记」靶机精讲：HTB PivotAPI - 立足点，疯狂难度靶机，复杂域渗透和逆向启蒙靶机的立足点篇，逆向，动态的和静态的都有，一起来！</a><br><a href="https://www.bilibili.com/video/BV1EN411b7kW">「红队笔记」红队行动Live</a><br><a href="https://www.bilibili.com/video/BV1pC4y1Z7Dt">「红队笔记」靶机精讲：HTB PivotAPI - 开局，疯狂难度靶机，复杂域渗透和逆向启蒙靶机的开局篇，带你进入域渗透的深水区，硬仗，开干吧！</a><br><a href="https://www.bilibili.com/video/BV13h4y1v7rg">「红队笔记」靶机精讲：HTB StreamIO - 域渗透大场面，SQL注入、代码审计和域渗透，手工域渗透路攻击径枚举和Bloodhound双管齐下。</a><br><a href="https://www.bilibili.com/video/BV1pH4y1X7g2">「红队笔记」靶机精讲：HTB StreamIO 域控决战 - Firefox凭据爆破、Bloodhound路径枚举和手工域攻击路径枚举，火力全开。</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/35657310/">ZackSecurity</a></td>
+<td>Web安全研究</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1gU4y1278j">播放量 10656 | CTF中的AWD攻防讲解</a><br><a href="https://www.bilibili.com/video/BV1Ru411E7p1">播放量 3076 | 【自研工具】Phobos 红队免杀木马生成器</a><br><a href="https://www.bilibili.com/video/BV1Vu4y1o7Qi">播放量 1907 | 【Java框架审计】Shiro框架550反序列化漏洞分析</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1Ru411E7p1">【自研工具】Phobos 红队免杀木马生成器</a><br><a href="https://www.bilibili.com/video/BV1Vu4y1o7Qi">【Java框架审计】Shiro框架550反序列化漏洞分析</a><br><a href="https://www.bilibili.com/video/BV1Ch4y1n7Aw">【Web渗透入门】11.SSRF漏洞讲解</a><br><a href="https://www.bilibili.com/video/BV19T411n7TW">【Web渗透入门】10.反序列化漏洞讲解</a><br><a href="https://www.bilibili.com/video/BV1HV4y1D7go">【Web渗透入门】9.XXE漏洞讲解</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/8759932">大米粒学习Web3</a></td>
+<td>Web3安全研究</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1Gb41197gE">播放量 2561 | 【智能合约】安全审计初学者路线图</a><br><a href="https://www.bilibili.com/video/BV14M411Y7NT">播放量 1329 | 【智能合约】安全审计|黑客课程</a><br><a href="https://www.bilibili.com/video/BV1nv4y1x7yV">播放量 914 | Hardhat测试教程 | Solidity 智能合约测试开发者</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1pX4y1D7kA">Web3 和智能合约安全与审计采访 @Krum Johnnytime</a><br><a href="https://www.bilibili.com/video/BV1m24y1G7vr">手把手教你使用 Solidity、Ethers.Js、React 和 Hardhat编写 Web 3.0 Amazon 克隆代码</a><br><a href="https://www.bilibili.com/video/BV1Gb41197gE">【智能合约】安全审计初学者路线图</a><br><a href="https://www.bilibili.com/video/BV1nv4y1x7yV">Hardhat测试教程 | Solidity 智能合约测试开发者</a><br><a href="https://www.bilibili.com/video/BV1Q14y1c7XQ">【Security】 The Web3 Security Mindset With Corey Petty</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/3493120597559785">D丝黑客</a></td>
+<td>靶机OSCP</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1R24y1i72b">播放量 1207 | 问题解答</a><br><a href="https://www.bilibili.com/video/BV13b411R7bc">播放量 1041 | Investigation--HackTheBox讲解，OSCP学习</a><br><a href="https://www.bilibili.com/video/BV1bR4y1e7p8">播放量 637 | Photobomb--HackTheBox讲解，OSCP学习</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV13b411R7bc">Investigation--HackTheBox讲解，OSCP学习</a><br><a href="https://www.bilibili.com/video/BV1R24y1i72b">问题解答</a><br><a href="https://www.bilibili.com/video/BV1ov4y1k7wn">Support--HackTheBox讲解，OSCP（AD）学习</a><br><a href="https://www.bilibili.com/video/BV1mP4y1z76h">Active--HackTheBox讲解，OSCP（AD）学习</a><br><a href="https://www.bilibili.com/video/BV1bd4y1W7qN">MetaTwo--HackTheBox讲解，OSCP学习</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/1067016511">红队摸鱼第一人</a></td>
+<td>红队方向</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1d8411u75J">播放量 11130 | 简单免杀小白都能学微步全绿</a><br><a href="https://www.bilibili.com/video/BV1FL411Z7Si">播放量 8657 | 红队钓鱼之邪恶的Visual Studio</a><br><a href="https://www.bilibili.com/video/BV1LA411B7Mk">播放量 5287 | 小白也能学:利用纤程快速免杀Defender、360、卡巴斯基</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1ph411L7cw">四、动态调用API</a><br><a href="https://www.bilibili.com/video/BV1S54y1M7Yx">三、Payload的编码和加密</a><br><a href="https://www.bilibili.com/video/BV1FL411Z7Si">红队钓鱼之邪恶的Visual Studio</a><br><a href="https://www.bilibili.com/video/BV1wD4y137wp">二、shellcode的几种存放位置</a><br><a href="https://www.bilibili.com/video/BV17y4y1Z7Dp">一、PE简介加最终演示</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/500303">二进制科学</a></td>
+<td>二进制研究</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV14P4y1e7QA">播放量 6332 | 第一集:以花指令为例，为什么要学习arm汇编</a><br><a href="https://www.bilibili.com/video/BV1Ko4y1x735">播放量 1678 | 第四节 arm汇编多寄存器寻址和堆栈寻址</a><br><a href="https://www.bilibili.com/video/BV1C84y1V7Xv">播放量 1498 | 第二节  arm汇编调试环境配置</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1HP411S7ML">第五节 arm中NZCV条件标志位、溢出和进位和区别</a><br><a href="https://www.bilibili.com/video/BV1Ko4y1x735">第四节 arm汇编多寄存器寻址和堆栈寻址</a><br><a href="https://www.bilibili.com/video/BV1Go4y1e7D9">第三集:arm汇编调试demo及其寻址方式</a><br><a href="https://www.bilibili.com/video/BV1C84y1V7Xv">第二节  arm汇编调试环境配置</a><br><a href="https://www.bilibili.com/video/BV14P4y1e7QA">第一集:以花指令为例，为什么要学习arm汇编</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/1496246177/">大福安全</a></td>
+<td>渗透测试、靶机</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1zh411b7rN">播放量 2686 | My-cmsms 靶机 walkthrough，前方高能，小心驾驶！</a><br><a href="https://www.bilibili.com/video/BV1am4y1s715">播放量 2472 | windows工作开始前需要大家了解的东西，也希望大家在大福后续视频开始前，多查阅一下视频中提到的基础知识</a><br><a href="https://www.bilibili.com/video/BV1Ro4y1J7Dj">播放量 1895 | Phineas 靶机 渗透测试 vulnhub walkthrough，实战下白嫖，前方高能，小心驾驶</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1pF41167Pt">八月送粉丝</a><br><a href="https://www.bilibili.com/video/BV1i94y1s7j4">seh溢出实操，找到合适的位置放payload</a><br><a href="https://www.bilibili.com/video/BV1gh4y1c7xh">seh溢出的实操，windows下的osed内容很多都离不开这个概念，学明白了有很大帮助。</a><br><a href="https://www.bilibili.com/video/BV1yF411Z7cW">windows经典栈溢出利用，听不懂赔钱</a><br><a href="https://www.bilibili.com/video/BV1Nc411c7NJ">七月送粉丝</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/496627343">黑战士安全</a></td>
+<td>Web安全</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1Wy4y1J7jh">播放量 8205 | 利用微信反查个人信息是否泄露</a><br><a href="https://www.bilibili.com/video/BV1Lz411v7sU">播放量 1823 | Python安全编程</a><br><a href="https://www.bilibili.com/video/BV1yK4y1876U">播放量 1435 | 渗透测试实战（一）</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1b34y1T7jv">DVWA靶场全系列通关教程 第三节 命令注入</a><br><a href="https://www.bilibili.com/video/BV1VP411W7S8">DVWA靶场全系列通关教程  第二节 暴力破解</a><br><a href="https://www.bilibili.com/video/BV1rP41167Am">DVWA靶场全系列通关教程</a><br><a href="https://www.bilibili.com/video/BV1am4y1x7RP">BLAST爆破工具使用</a><br><a href="https://www.bilibili.com/video/BV1D3411X7Eu">4.支付逻辑漏洞</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/202224425">绿导师原谅你了</a></td>
+<td>操作系统原理</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1qa4y1j7xk">播放量 146825 | [完结] 2020 南京大学计算机系统基础习题课 (蒋炎岩)</a><br><a href="https://www.bilibili.com/video/BV1HN41197Ko">播放量 131254 | [完结] 2021 南京大学 “操作系统：设计与实现” (蒋炎岩)</a><br><a href="https://www.bilibili.com/video/BV1gg4y1T71C">播放量 97102 | Linux 世界中的应用程序 (从零开始构建 “最小” Linux) [南京大学2023操作系统-P16] (蒋炎岩)</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1d841167EW">如何用一行代码打败修炼三十年的高数老师 [南京大学 IT 侠 iTalk]</a><br><a href="https://www.bilibili.com/video/BV1MV411F738">[算法竞赛入门] 为什么要逼大家用 NOILinux？</a><br><a href="https://www.bilibili.com/video/BV1gM4y1Y7nd">课程总结 (从逻辑门到计算机系统) [南京大学2023操作系统-P30] (蒋炎岩)</a><br><a href="https://www.bilibili.com/video/BV1Dh4y197BF">持久数据的可靠性 (RAID, FSCK 和 Journaling) [南京大学2023操作系统-P29] (蒋炎岩)</a><br><a href="https://www.bilibili.com/video/BV1xN411C74V">FAT 和 UNIX 文件系统 (磁盘上的数据结构) [南京大学2023操作系统-P28] (蒋炎岩)</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/1759206997">农夫众信</a></td>
+<td>渗透测试</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV16D4y1w7N2">播放量 3795 | 农夫安全301-A7-红队武器库02</a><br><a href="https://www.bilibili.com/video/BV1FK411y73Q">播放量 2988 | 农夫安全301-A1-社会工程学01</a><br><a href="https://www.bilibili.com/video/BV1q84y1p7pg">播放量 2800 | 农夫安全301-A3(2)-内网漫游工具02</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1q84y1p7pg">农夫安全301-A3(2)-内网漫游工具02</a><br><a href="https://www.bilibili.com/video/BV1by4y1f71W">农夫安全301-A3(2)-内网漫游工具01</a><br><a href="https://www.bilibili.com/video/BV16D4y1w7N2">农夫安全301-A7-红队武器库02</a><br><a href="https://www.bilibili.com/video/BV1WR4y1i7Ue">农夫安全301-A7-红队武器库01</a><br><a href="https://www.bilibili.com/video/BV1WA411U7E4">农夫安全301-A6-BypassWAF02</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/253413704">可厉害的土豆</a></td>
+<td>密码学</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1KQ4y127AT">播放量 101049 | DES加密算法｜密码学｜信息安全</a><br><a href="https://www.bilibili.com/video/BV1YQ4y1a7n1">播放量 95125 | 【RSA加密算法】| RSA加密过程详解 | 公钥加密| 密码学| 信息安全|</a><br><a href="https://www.bilibili.com/video/BV1i341187fK">播放量 93174 | 【AES加密算法】| AES加密过程详解| 对称加密| Rijndael-128| 密码学| 信息安全</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1c34y1M7NW">【HMAC | MAC | 基于哈希函数的消息认证码| 消息认证码 |HMAC-MD5| 信息安全】</a><br><a href="https://www.bilibili.com/video/BV19h4y1S7QG">【随机数的生成 | 随机位流 | 伪随机数生成器 PRNG| 真随机数生成器 TRNG| 线性同余生成器LCG| BBS】</a><br><a href="https://www.bilibili.com/video/BV1U8411f74f">【分组密码的工作模式】|分组密码 | 密码学 | 信息安全 | ECB | CBC | CFB|  OF B| CTR|</a><br><a href="https://www.bilibili.com/video/BV1xG4y1v7pK">【以ZUC算法为例介绍学习方法】| 祖冲之序列密码算法| 序列密码| 加密算法| 密码学| |国密| 学习方法</a><br><a href="https://www.bilibili.com/video/BV1gi4y1C7zf">【SM3加密算法】|密码杂凑算法 | Hash算法 | 密码学 | 信息安全| 消息摘要</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/14195062">逆向工程师Reverse</a></td>
+<td>软件安全逆向</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1r7411e7qo">播放量 154329 | 软件破解逆向【一】上</a><br><a href="https://www.bilibili.com/video/BV157411G7cb">播放量 13659 | 学汇编要了解的一些基本原理</a><br><a href="https://www.bilibili.com/video/BV1b7411E7ZR">播放量 11664 | 【CTF比赛】Crypto、MISC等进阶解题思路</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1N8411V7tP">ChatGtp绕过安全限制，她说她想摧毁统治人类</a><br><a href="https://www.bilibili.com/video/BV11Y4y1W7GV">04 mysql数据清洗，写一个简单的web查询社工库</a><br><a href="https://www.bilibili.com/video/BV1LY4y147f3">03 excel（下）MSDT漏洞复现（CVE-2022-3019）整个漏洞执行逻辑讲解</a><br><a href="https://www.bilibili.com/video/BV11a41157kH">03 excel（中）详细讲解vbs宏函数，高级技巧</a><br><a href="https://www.bilibili.com/video/BV19Y4y1V7wY">03  excel（上）常用便捷操作提高办公效率</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/267460290">r00tk1t</a></td>
+<td>二进制安全</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1CJ411D7yD">播放量 92376 | 8086汇编语言精讲</a><br><a href="https://www.bilibili.com/video/BV1N441147K2">播放量 20003 | 二进制安全系列教程</a><br><a href="https://www.bilibili.com/video/BV1gb411L7fK">播放量 18241 | Linux系统编程</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV16v4y1o73e">一本正经的胡说八道系列（面向水友QA）</a><br><a href="https://www.bilibili.com/video/BV1CJ411D7yD">8086汇编语言精讲</a><br><a href="https://www.bilibili.com/video/BV1dJ411X7dm">C程序设计快速入门</a><br><a href="https://www.bilibili.com/video/BV1N441147K2">二进制安全系列教程</a><br><a href="https://www.bilibili.com/video/BV1gb411L7fK">Linux系统编程</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/29903122">crowsec</a></td>
+<td>攻防渗透</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1e441127Rd">播放量 55967 | sql注入之sqli-labs系列教程(less1-10)</a><br><a href="https://www.bilibili.com/video/BV1yJ411g7hh">播放量 11453 | sql注入之sqli-labs系列教程(less11-17)</a><br><a href="https://www.bilibili.com/video/BV1nE411Y7vz">播放量 8045 | sql注入之sqli-labs系列教程(less23-28a)</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1gc411w7so">windows10永恒之黑漏洞复现【翻车。。。】</a><br><a href="https://www.bilibili.com/video/BV1wN411v7di">永恒之蓝Windows10版踩坑复现</a><br><a href="https://www.bilibili.com/video/BV1sx4y197mv">Frp一键容器化部署</a><br><a href="https://www.bilibili.com/video/BV1g14y1X7t3">Burpsuite Professional 2023.6.2 最新版安装学习</a><br><a href="https://www.bilibili.com/video/BV11P411f78f">CVE-2023-21839漏洞本地简单复现</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/136991419">赵庆明老师</a></td>
+<td>软件安全逆向</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1834y1X7jt">播放量 42483 | ASP.NET Core 6 Web Api 开发入门</a><br><a href="https://www.bilibili.com/video/BV1xE41197FD">播放量 32006 | WPF经典编程实例</a><br><a href="https://www.bilibili.com/video/BV1PE411Y7mx">播放量 18716 | 跟我学Microsoft Blend 2019</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1Ts4y1u7ic">RH09处理offset后面的数据（1）</a><br><a href="https://www.bilibili.com/video/BV1Um4y1t7o4">RH10处理offset后面的数据（2）</a><br><a href="https://www.bilibili.com/video/BV1fP411m7BS">RH08函数的参数传递与命名约定（2）</a><br><a href="https://www.bilibili.com/video/BV1yo4y1b7KR">RH07函数的参数传递与命名约定（1）</a><br><a href="https://www.bilibili.com/video/BV1mo4y1j72y">RH06关于JMP指令</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/396298765">MS08067安全实验室</a></td>
+<td>攻防渗透</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1JA411x7HM">播放量 63510 | 【MS08067实验室】《内网安全攻防:渗透测试实战指南》配套视频，内网渗透入门到进阶这一套就够了~</a><br><a href="https://www.bilibili.com/video/BV11v411B7WU">播放量 50803 | 【MS08067实验室】《Python安全攻防:渗透测试实战指南》配套视频，脚本小子到真正黑客的成长之路~</a><br><a href="https://www.bilibili.com/video/BV1si4y1T7Kb">播放量 13654 | 如何去找传说中的安全大神（国内篇）</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1vh4y1V7Zw">供应链攻击</a><br><a href="https://www.bilibili.com/video/BV1Zj411R7Zg">密码学常见算法以及在红队攻击当中的应用</a><br><a href="https://www.bilibili.com/video/BV1mV4y1t7jT">反溯源/为何莫名其妙就上线</a><br><a href="https://www.bilibili.com/video/BV1Gx4y197AH">windows操作系统中的 二进制漏洞分析</a><br><a href="https://www.bilibili.com/video/BV1dj411R7hp">红蓝对抗之快速打点</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/282616786/">DeeLMind</a></td>
+<td>安全研究全栈</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1K7411v7U9">播放量 8977 | python-EXE反编译-木兰</a><br><a href="https://www.bilibili.com/video/BV1Y54y1t7T7">播放量 5508 | 第十九课 - 网站WAF原理&amp;WAF识别</a><br><a href="https://www.bilibili.com/video/BV1HV411b7cf">播放量 4487 | 第十八课 - 网站漏洞扫描原理&amp;工具nikto讲解</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV19Q4y1s76L">逆向 - 举一反三AppleScript分析</a><br><a href="https://www.bilibili.com/video/BV1SC4y1d7XX">逆向 - 举一反三MAC程序动态调试</a><br><a href="https://www.bilibili.com/video/BV1BC4y1V78v">逆向 - 举一反三MAC程序静态分析</a><br><a href="https://www.bilibili.com/video/BV1Aw411y76h">举一反三MAC程序正向</a><br><a href="https://www.bilibili.com/video/BV1f34y1A7xY">举一反三MAC程序分析</a><br></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">企业官号<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>昵称</th>
+<th>方向</th>
+<th>主要课程内容</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://space.bilibili.com/525929512">看雪学苑</a></td>
+<td>二进制安全研究</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1x54y1z7kb">播放量 32217 | 全球十大黑客组织</a><br><a href="https://www.bilibili.com/video/BV1XA411v7bh">播放量 22603 | 全球十大计算机病毒</a><br><a href="https://www.bilibili.com/video/BV1tK411J7Be">播放量 15002 | 盘点：国内顶尖CTF战队</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV18N411J7EX">超过1400万部老年机被植入木马、非法开通增值服务</a><br><a href="https://www.bilibili.com/video/BV1f94y1W7o9">树莓派的另类用途，三名男子因使用树莓派盗取ATM机钱款而被逮捕</a><br><a href="https://www.bilibili.com/video/BV1U8411z7Z8">AI替你写代码，Meta发布免费可商用AI代码编写工具</a><br><a href="https://www.bilibili.com/video/BV1rV4y1B7DW">议题二：《瓦洛兰特反作弊系统浅析》</a><br><a href="https://www.bilibili.com/video/BV1So4y1g7B6">议题一：《详细分析游戏安全测试工具》</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/1300900875">知道创宇404实验室</a></td>
+<td>安全研究</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1Cv4y1R72M">播放量 12516 | 【安全工具】5大功能，一键化内网扫描神器——404星链计划fscan</a><br><a href="https://www.bilibili.com/video/BV1zv4y1s7xv">播放量 7407 | 【安全工具】集成70+模块，红队内网渗透必备——404星链计划Viper</a><br><a href="https://www.bilibili.com/video/BV1DG4y1Z784">播放量 4917 | 【安全工具】GitHub高赞工具，渗透测试er看过来——404星链计划CDK</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1ez4y1F7VB">404星链计划 | 程序分析框架“太阿”与安全漏洞的那些事之 Log4Shell 篇</a><br><a href="https://www.bilibili.com/video/BV12G411f7xR">2023 KCon 黑客大会</a><br><a href="https://www.bilibili.com/video/BV1gz4y1E7j1">【安全工具】必备神器！开源远程漏洞测试框架——404星链计划Pocsuite3</a><br><a href="https://www.bilibili.com/video/BV1Pz4y177PU">404星链计划 | afrog：快速稳定的漏洞扫描工具</a><br><a href="https://www.bilibili.com/video/BV1zv4y1s7xv">【安全工具】集成70+模块，红队内网渗透必备——404星链计划Viper</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/1705181418">FOFA-bot</a></td>
+<td>fofa官方</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1zL41157R3">播放量 8026 | 如何快速验证Log4j2漏洞</a><br><a href="https://www.bilibili.com/video/BV1P34y167Yb">播放量 6448 | FOFA白嫖小技巧</a><br><a href="https://www.bilibili.com/video/BV19q4y1B7u5">播放量 2236 | FOFA介绍篇-语法</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV17P411r7Wi">FofaHub工作流：独立IP筛选</a><br><a href="https://www.bilibili.com/video/BV1LM4y1s7eH">FofaHub工作流——登录页面查找</a><br><a href="https://www.bilibili.com/video/BV1jo4y177Ko">探索网络资产的利器</a><br><a href="https://www.bilibili.com/video/BV1Vk4y1W7vT">攻击面梳理工具-FOFA</a><br><a href="https://www.bilibili.com/video/BV1Fk4y1Y7u6">fingerprint rule.final</a><br></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://space.bilibili.com/179001398">漏洞银行BUGBANK</a></td>
+<td>安全研究</td>
+<td>Top 3:<br><a href="https://www.bilibili.com/video/BV1844y1r7Ym">播放量 71801 | 社会工程学：一门欺骗的艺术丨2021网络安全公开课第一期 课时10丨BUGBANK直播间</a><br><a href="https://www.bilibili.com/video/BV1L54y187SP">播放量 6237 | 恶意代码之木马初体验丨2021网络安全公开课第一期 课时03丨漏洞银行直播间</a><br><a href="https://www.bilibili.com/video/BV1CU4y1t7E6">播放量 5833 | 01讲丨Windows消息机制基础 -Windows安全开发与逆向丨极安御信&amp;漏洞银行</a><br>最近更新：<br><a href="https://www.bilibili.com/video/BV1Wc411o7F3">网络守卫者 白帽黑客·罗清篮 | BUGBANK人物志</a><br><a href="https://www.bilibili.com/video/BV1JV411K7HK">京麒沙龙第10期-金融支付安全专题丨BUGBANK直播间</a><br><a href="https://www.bilibili.com/video/BV1xc411J7FG">京麒沙龙第9期-零信任安全专场丨BUGBANK直播间</a><br><a href="https://www.bilibili.com/video/BV1KG4y127CG">GeekPwn2022安全极客大赛“我是极客”系列直播丨BUGBANK直播间</a><br><a href="https://www.bilibili.com/video/BV1sG4y1L79w">GeekPwn2022安全极客大赛“我是极客”系列直播丨BUGBANK直播间</a><br></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+  
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+
+<!-- Link to next page -->
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+  <!-- Insert generated snippet here -->
+  
+  <script src="https://giscus.app/client.js"
+  data-repo="ProbiusOfficial/Hello-CTF"
+  data-repo-id="R_kgDOJXX6hg"
+  data-category="Show and tell"
+  data-category-id="DIC_kwDOJXX6hs4CXmuV"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="preferred_color_scheme"
+  data-lang="zh-CN"
+  crossorigin="anonymous"
+  async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 探姬
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/probiusofficial" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/probiusofficial" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://space.bilibili.com/27109929" target="_blank" rel="noopener" title="space.bilibili.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92.02c-26.45-.8-48.21-9.8-65.28-27.2C9.682 419.4.767 396.5 0 368.2V169.8c.767-26 9.682-47.6 26.74-65.7C43.81 87.75 65.57 78.77 92.02 78h29.38L96.05 52.19c-5.75-5.73-8.63-13-8.63-21.79 0-8.8 2.88-16.06 8.63-21.797C101.8 2.868 109.1 0 117.9 0q13.2 0 21.9 8.603L213.1 78h88l74.5-69.397C381.7 2.868 389.2 0 398 0q13.2 0 21.9 8.603c5.7 5.737 8.6 12.997 8.6 21.797 0 8.79-2.9 16.06-8.6 21.79L394.6 78h29.3c26.4.77 48 9.75 64.7 26.1m-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96.05c-9.59.4-17.45 3.7-23.58 9.8-6.14 6.1-9.4 13.9-9.78 23.5v194.4c0 9.2 3.26 17 9.78 23.5s14.38 9.8 23.58 9.8H416.4c9.2 0 17-3.3 23.3-9.8s9.7-14.3 10.1-23.5zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5s-17.5-3.2-23.6-9.5-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2s13.2-9.6 23.3-10c9.2.4 17 3.7 23.3 10m191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2s-14 9.5-23.6 9.5-17.4-3.2-23.6-9.5c-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2s14.1-9.6 23.3-10c9.2.4 17 3.7 23.3 10"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:<probiuslinx@gmail.com>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.8l167.6-182.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../../javascripts/baidu_SEO.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.8/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+        <script src="../../javascripts/statis.js"></script>
+      
+        <script src="../../javascripts/bannerSlider.js"></script>
+      
+        <script src="../../javascripts/FullCalendar.js"></script>
+      
+    
+  </body>
+</html>
