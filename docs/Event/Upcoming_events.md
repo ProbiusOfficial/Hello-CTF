@@ -257,7 +257,7 @@ comments: true
     **比赛名称** : [CTFZone 2025 Quals](https://ctf.bi.zone/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-08-16 18:00:00 - 2025-08-17 18:00:00 UTC+8  
-    **比赛权重** : 0.00  
+    **比赛权重** : 92.45  
     **赛事主办** : BIZone (https://ctftime.org/team/32190)  
     **添加日历** : https://ctftime.org/event/2839.ics  
     
@@ -440,6 +440,15 @@ comments: true
     **比赛权重** : 33.29  
     **赛事主办** : Platypwnies (https://ctftime.org/team/112550)  
     **添加日历** : https://ctftime.org/event/2606.ics  
+    
+??? Quote "[Crate-CTF 2025](https://foi.se/cratectf)"  
+    [![](https://ctftime.org/media/events/crate-ctf-2025.png){ width="200" align=left }](https://foi.se/cratectf)  
+    **比赛名称** : [Crate-CTF 2025](https://foi.se/cratectf)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-15 21:00:00 - 2025-11-16 05:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : Crate-CTF (https://ctftime.org/team/352250)  
+    **添加日历** : https://ctftime.org/event/2838.ics  
     
 ??? Quote "[GlacierCTF 2025](https://glacierctf.com/)"  
     [![](https://ctftime.org/media/events/glacierlogo.png){ width="200" align=left }](https://glacierctf.com/)  
