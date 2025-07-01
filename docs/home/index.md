@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Junior.Crypt.2025 CTF](http://ctf-spcs.mf.grsu.by/)"  
-            [![](https://ctftime.org/media/events/logo_13.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
-            **比赛名称** : [Junior.Crypt.2025 CTF](http://ctf-spcs.mf.grsu.by/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-07-01 16:00:00 - 2025-07-03 16:00:00 UTC+8  
-            **比赛权重** : 23.13  
-            **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
-            **添加日历** : https://ctftime.org/event/2798.ics  
-            
         ??? Quote "[CubeCTF](https://cubectf.com/)"  
             [![](https://ctftime.org/media/events/CubeMasteryLogo.png){ width="200" align=left }](https://cubectf.com/)  
             **比赛名称** : [CubeCTF](https://cubectf.com/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : IMFCTF (https://ctftime.org/team/389648)  
             **添加日历** : https://ctftime.org/event/2831.ics  
+            
+        ??? Quote "[No Hack No CTF 2025](https://nhnc.ic3dt3a.org/)"  
+            [![](https://ctftime.org/media/events/nhnc-2025.png){ width="200" align=left }](https://nhnc.ic3dt3a.org/)  
+            **比赛名称** : [No Hack No CTF 2025](https://nhnc.ic3dt3a.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-07-05 16:00:00 - 2025-07-07 16:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
+            **添加日历** : https://ctftime.org/event/2818.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
