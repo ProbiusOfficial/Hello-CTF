@@ -90,15 +90,6 @@ comments: true
     **赛事主办** : L3ak (https://ctftime.org/team/220336)  
     **添加日历** : https://ctftime.org/event/2629.ics  
     
-??? Quote "[UIUCTF 2025](https://uiuc.tf/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://uiuc.tf/)  
-    **比赛名称** : [UIUCTF 2025](https://uiuc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-07-12 08:00:00 - 2025-07-14 08:00:00 UTC+8  
-    **比赛权重** : 91.43  
-    **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
-    **添加日历** : https://ctftime.org/event/2640.ics  
-    
 ??? Quote "[L3HCTF 2025](https://l3hctf2025.xctf.org.cn/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://l3hctf2025.xctf.org.cn/)  
     **比赛名称** : [L3HCTF 2025](https://l3hctf2025.xctf.org.cn/)  
@@ -188,6 +179,15 @@ comments: true
     **比赛权重** : 31.29  
     **赛事主办** : DeadSec (https://ctftime.org/team/19339)  
     **添加日历** : https://ctftime.org/event/2631.ics  
+    
+??? Quote "[UIUCTF 2025](https://uiuc.tf/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://uiuc.tf/)  
+    **比赛名称** : [UIUCTF 2025](https://uiuc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-26 08:00:00 - 2025-07-28 08:00:00 UTC+8  
+    **比赛权重** : 91.43  
+    **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
+    **添加日历** : https://ctftime.org/event/2640.ics  
     
 ??? Quote "[World Wide CTF 2025](https://wwctf.com/)"  
     [![](https://ctftime.org/media/events/ctftime.jpg){ width="200" align=left }](https://wwctf.com/)  
