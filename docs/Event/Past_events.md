@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Junior.Crypt.2025 CTF](http://ctf-spcs.mf.grsu.by/)"  
+    [![](https://ctftime.org/media/events/logo_13.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
+    **比赛名称** : [Junior.Crypt.2025 CTF](http://ctf-spcs.mf.grsu.by/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-01 16:00:00 - 2025-07-03 16:00:00 UTC+8  
+    **比赛权重** : 23.13  
+    **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
+    **添加日历** : https://ctftime.org/event/2798.ics  
+    
 ??? Quote "[BSides Mumbai CTF 2025](https://ctf.bsidesmumbai.in/)"  
     [![](https://ctftime.org/media/events/Layed1.B3529NWW_3.png){ width="200" align=left }](https://ctf.bsidesmumbai.in/)  
     **比赛名称** : [BSides Mumbai CTF 2025](https://ctf.bsidesmumbai.in/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 27.14  
     **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
     **添加日历** : https://ctftime.org/event/2676.ics  
-    
-??? Quote "[Undutmaning 2025](https://undutmaning.se/)"  
-    [![](https://ctftime.org/media/events/2025logo_ctfd.jpg){ width="200" align=left }](https://undutmaning.se/)  
-    **比赛名称** : [Undutmaning 2025](https://undutmaning.se/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-29 19:00:00 - 2025-03-30 03:00:00 UTC+8  
-    **比赛权重** : 24.50  
-    **赛事主办** : Undutmaning (https://ctftime.org/team/212504)  
-    **添加日历** : https://ctftime.org/event/2589.ics  
     
