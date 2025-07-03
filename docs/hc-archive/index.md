@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [契约锁最新前台命令执行及花式绕WAF思路](https://y4tacker.github.io/2025/07/02/year/2025/07/%E5%A5%91%E7%BA%A6%E9%94%81%E6%9C%80%E6%96%B0%E5%89%8D%E5%8F%B0%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E5%8F%8A%E8%8A%B1%E5%BC%8F%E7%BB%95WAF%E6%80%9D%E8%B7%AF/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-07-02
+
+    d5bbf63b983168fb9cf0422698dce164b3b689fc252cba3faf3c75a652cdd7c0542690352b3ccfd95568bcdfd22e06b269ecaac13fedf5ec80edcfabe636ba58c0bd7707365d4cb09a79587d7876384f00fb8b2d3df17b696f7eefba94b5c2d66b93ca...
     ### [浅析Gogs 远程命令执行(CVE-2024-56731)](https://y4tacker.github.io/2025/06/25/year/2025/06/%E6%B5%85%E6%9E%90Gogs-%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-CVE-2024-56731/)  
     >by [Y4tacker](https://y4tacker.github.io), 2025-06-25
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2025-01-24
 
     来学习一下系统描述符表这个结构SSDTSSDT的全称是System Services Descriptor Table，意为系统服务描述符表。我们可以通过ETHREAD结构体加偏移的方式进行访问。在内核文件中，有一个变量是导出的：KeServiceDescriptorTable。通过它我们可以访问SSDT。可以看看在内核中看看 SSDT 是什么样的。123456789kd> dd KeServic...
-    ### [windows系统调用学习——调用细节与系统服务表](https://xia0ji233.github.io/2025/01/22/WindowsSyscall3/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-22
-
-    来深入挖掘一下Windows系统调用的过程KiSystemService分析这个函数是通过中断门进的，中断门本身保存了 CS 和 EIP，跨段提权后通过 TSS 拿到零环的 SS 和 ESP。此时为了维护三环的上下文状态，则会将各种寄存器保存到堆栈，也就是 Trap_Frame 结构体，中断门提权之后本身就会按顺序压入 SS，ESP，ELFAGS，CS，EIP。此时比较一下上一篇文章中提到的 Tr...
 
 </div>
