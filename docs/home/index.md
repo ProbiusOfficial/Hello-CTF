@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[CubeCTF](https://cubectf.com/)"  
-            [![](https://ctftime.org/media/events/CubeMasteryLogo.png){ width="200" align=left }](https://cubectf.com/)  
-            **比赛名称** : [CubeCTF](https://cubectf.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-07-05 06:16:00 - 2025-07-07 08:25:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : CubeMastery (https://ctftime.org/team/168744)  
-            **添加日历** : https://ctftime.org/event/2820.ics  
-            
         ??? Quote "[R3CTF 2025](https://ctf2025.r3kapig.com/)"  
             [![](https://ctftime.org/media/events/111_1.png){ width="200" align=left }](https://ctf2025.r3kapig.com/)  
             **比赛名称** : [R3CTF 2025](https://ctf2025.r3kapig.com/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
             **添加日历** : https://ctftime.org/event/2818.ics  
+            
+        ??? Quote "[Cyber Arena](https://csem.sturtles.in/events/1/)"  
+            [![](https://ctftime.org/media/events/logo_111.png){ width="200" align=left }](https://csem.sturtles.in/events/1/)  
+            **比赛名称** : [Cyber Arena](https://csem.sturtles.in/events/1/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-07-05 18:04:15 - 2025-07-06 18:04:15 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : Super_Hacker (https://ctftime.org/team/195477)  
+            **添加日历** : https://ctftime.org/event/2825.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
