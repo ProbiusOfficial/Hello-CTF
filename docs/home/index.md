@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[No Hack No CTF 2025](https://nhnc.ic3dt3a.org/)"  
-            [![](https://ctftime.org/media/events/nhnc-2025.png){ width="200" align=left }](https://nhnc.ic3dt3a.org/)  
-            **比赛名称** : [No Hack No CTF 2025](https://nhnc.ic3dt3a.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-07-05 16:00:00 - 2025-07-07 16:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
-            **添加日历** : https://ctftime.org/event/2818.ics  
-            
         ??? Quote "[Cyber Arena](https://csem.sturtles.in/events/1/)"  
             [![](https://ctftime.org/media/events/logo_111.png){ width="200" align=left }](https://csem.sturtles.in/events/1/)  
             **比赛名称** : [Cyber Arena](https://csem.sturtles.in/events/1/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : Offensive Skills (https://ctftime.org/team/389597)  
             **添加日历** : https://ctftime.org/event/2830.ics  
+            
+        ??? Quote "[L3akCTF 2025](https://ctf.l3ak.team/)"  
+            [![](https://ctftime.org/media/events/L3akCTF_2025_Logo_750x750.png){ width="200" align=left }](https://ctf.l3ak.team/)  
+            **比赛名称** : [L3akCTF 2025](https://ctf.l3ak.team/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-07-12 01:00:00 - 2025-07-14 01:00:00 UTC+8  
+            **比赛权重** : 24.43  
+            **赛事主办** : L3ak (https://ctftime.org/team/220336)  
+            **添加日历** : https://ctftime.org/event/2629.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
