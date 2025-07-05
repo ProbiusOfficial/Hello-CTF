@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "R3CTF 2025",
-        "比赛时间": "2025-07-05 10:00:00 - 2025-07-07 10:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2731.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf2025.r3kapig.com/",
-        "比赛标志": "https://ctftime.org/media/events/111_1.png",
-        "比赛权重": "24.50",
-        "赛事主办": "r3kapig (https://ctftime.org/team/58979)",
-        "比赛ID": "329",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Impossible Mission Force Capture The Flag",
         "比赛时间": "2025-07-05 15:00:00 - 2025-07-07 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2831.ics",
@@ -633,6 +621,18 @@
         "比赛权重": "0",
         "赛事主办": "CubeMastery (https://ctftime.org/team/168744)",
         "比赛ID": "1277",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "R3CTF 2025",
+        "比赛时间": "2025-07-05 10:00:00 - 2025-07-07 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2731.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf2025.r3kapig.com/",
+        "比赛标志": "https://ctftime.org/media/events/111_1.png",
+        "比赛权重": "24.50",
+        "赛事主办": "r3kapig (https://ctftime.org/team/58979)",
+        "比赛ID": "329",
         "比赛状态": "nowrunning"
     },
     {

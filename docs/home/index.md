@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[R3CTF 2025](https://ctf2025.r3kapig.com/)"  
-            [![](https://ctftime.org/media/events/111_1.png){ width="200" align=left }](https://ctf2025.r3kapig.com/)  
-            **比赛名称** : [R3CTF 2025](https://ctf2025.r3kapig.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-07-05 10:00:00 - 2025-07-07 10:00:00 UTC+8  
-            **比赛权重** : 24.50  
-            **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
-            **添加日历** : https://ctftime.org/event/2731.ics  
-            
         ??? Quote "[Impossible Mission Force Capture The Flag](https://missionimpossiblectf2025.vercel.app/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://missionimpossiblectf2025.vercel.app/)  
             **比赛名称** : [Impossible Mission Force Capture The Flag](https://missionimpossiblectf2025.vercel.app/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : Super_Hacker (https://ctftime.org/team/195477)  
             **添加日历** : https://ctftime.org/event/2825.ics  
+            
+        ??? Quote "[BlitzCTF](https://ctf.blitzhack.xyz/)"  
+            [![](https://ctftime.org/media/events/BlitzCTF.webp){ width="200" align=left }](https://ctf.blitzhack.xyz/)  
+            **比赛名称** : [BlitzCTF](https://ctf.blitzhack.xyz/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-07-05 22:30:00 - 2025-07-07 10:30:00 UTC+8  
+            **比赛权重** : 23.20  
+            **赛事主办** : BlitzHack (https://ctftime.org/team/307415)  
+            **添加日历** : https://ctftime.org/event/2816.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
