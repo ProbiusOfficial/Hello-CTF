@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[BlitzCTF](https://ctf.blitzhack.xyz/)"  
-            [![](https://ctftime.org/media/events/BlitzCTF.webp){ width="200" align=left }](https://ctf.blitzhack.xyz/)  
-            **比赛名称** : [BlitzCTF](https://ctf.blitzhack.xyz/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-07-05 22:30:00 - 2025-07-07 10:30:00 UTC+8  
-            **比赛权重** : 23.20  
-            **赛事主办** : BlitzHack (https://ctftime.org/team/307415)  
-            **添加日历** : https://ctftime.org/event/2816.ics  
-            
         ??? Quote "[CTF Cybercamp UMU 3.0](https://eventos.um.es/go/ctf-cybercampumu-3)"  
             [![](https://ctftime.org/media/events/banner_ctf_cybercamp_1.png){ width="200" align=left }](https://eventos.um.es/go/ctf-cybercampumu-3)  
             **比赛名称** : [CTF Cybercamp UMU 3.0](https://eventos.um.es/go/ctf-cybercampumu-3)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 23.50  
             **赛事主办** : L3H Sec (https://ctftime.org/team/75946)  
             **添加日历** : https://ctftime.org/event/2823.ics  
+            
+        ??? Quote "[Crypto CTF 2025](https://cr.yp.toc.tf/)"  
+            [![](https://ctftime.org/media/events/cryptoctf_1.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
+            **比赛名称** : [Crypto CTF 2025](https://cr.yp.toc.tf/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-07-12 14:00:00 - 2025-07-13 14:00:00 UTC+8  
+            **比赛权重** : 88.25  
+            **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+            **添加日历** : https://ctftime.org/event/2577.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
