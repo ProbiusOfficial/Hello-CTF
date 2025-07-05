@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Impossible Mission Force Capture The Flag](https://missionimpossiblectf2025.vercel.app/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://missionimpossiblectf2025.vercel.app/)  
-    **比赛名称** : [Impossible Mission Force Capture The Flag](https://missionimpossiblectf2025.vercel.app/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-07-05 15:00:00 - 2025-07-07 04:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : IMFCTF (https://ctftime.org/team/389648)  
-    **添加日历** : https://ctftime.org/event/2831.ics  
-    
 ??? Quote "[No Hack No CTF 2025](https://nhnc.ic3dt3a.org/)"  
     [![](https://ctftime.org/media/events/nhnc-2025.png){ width="200" align=left }](https://nhnc.ic3dt3a.org/)  
     **比赛名称** : [No Hack No CTF 2025](https://nhnc.ic3dt3a.org/)  
