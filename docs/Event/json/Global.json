@@ -204,18 +204,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "[POSTPONED] jailCTF 2025",
-        "比赛时间": "2025-08-16 04:00:00 - 2025-08-19 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2737.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.pyjail.club/",
-        "比赛标志": "https://ctftime.org/media/events/jailctf.png",
-        "比赛权重": "24.88",
-        "赛事主办": "jailctf (https://ctftime.org/team/311088)",
-        "比赛ID": "1152",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "scriptCTF 2025",
         "比赛时间": "2025-08-16 08:00:00 - 2025-08-18 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2792.ics",
@@ -405,6 +393,18 @@
         "比赛权重": "92.50",
         "赛事主办": "FAUST (https://ctftime.org/team/550)",
         "比赛ID": "117",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "[POSTPONED] jailCTF 2025",
+        "比赛时间": "2025-10-04 04:00:00 - 2025-10-07 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2737.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.pyjail.club/",
+        "比赛标志": "https://ctftime.org/media/events/jailctf.png",
+        "比赛权重": "24.88",
+        "赛事主办": "jailctf (https://ctftime.org/team/311088)",
+        "比赛ID": "1152",
         "比赛状态": "oncoming"
     },
     {

@@ -442,15 +442,6 @@ hide:
                 **赛事主办** : Eindbazen (https://ctftime.org/team/322)  
                 **添加日历** : https://ctftime.org/event/2680.ics  
                 
-            ??? Quote "[[POSTPONED] jailCTF 2025](https://ctf.pyjail.club/)"  
-                [![](https://ctftime.org/media/events/jailctf.png){ width="200" align=left }](https://ctf.pyjail.club/)  
-                **比赛名称** : [[POSTPONED] jailCTF 2025](https://ctf.pyjail.club/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-08-16 04:00:00 - 2025-08-19 04:00:00 UTC+8  
-                **比赛权重** : 24.88  
-                **赛事主办** : jailctf (https://ctftime.org/team/311088)  
-                **添加日历** : https://ctftime.org/event/2737.ics  
-                
             ??? Quote "[scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)"  
                 [![](https://ctftime.org/media/events/final_logo.png){ width="200" align=left }](https://ctf.scriptsorcerers.xyz/)  
                 **比赛名称** : [scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)  
@@ -594,6 +585,15 @@ hide:
                 **比赛权重** : 92.50  
                 **赛事主办** : FAUST (https://ctftime.org/team/550)  
                 **添加日历** : https://ctftime.org/event/2780.ics  
+                
+            ??? Quote "[[POSTPONED] jailCTF 2025](https://ctf.pyjail.club/)"  
+                [![](https://ctftime.org/media/events/jailctf.png){ width="200" align=left }](https://ctf.pyjail.club/)  
+                **比赛名称** : [[POSTPONED] jailCTF 2025](https://ctf.pyjail.club/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-10-04 04:00:00 - 2025-10-07 04:00:00 UTC+8  
+                **比赛权重** : 24.88  
+                **赛事主办** : jailctf (https://ctftime.org/team/311088)  
+                **添加日历** : https://ctftime.org/event/2737.ics  
                 
             ??? Quote "[QnQSec CTF 2025](https://ctf.qnqsec.team/)"  
                 [![](https://ctftime.org/media/events/Logo_QnQSec.jpg){ width="200" align=left }](https://ctf.qnqsec.team/)  
