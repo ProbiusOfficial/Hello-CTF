@@ -396,7 +396,7 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "[POSTPONED] jailCTF 2025",
+        "比赛名称": "jailCTF 2025",
         "比赛时间": "2025-10-04 04:00:00 - 2025-10-07 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2737.ics",
         "比赛形式": "Jeopardy",
@@ -588,18 +588,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Impossible Mission Force Capture The Flag",
-        "比赛时间": "2025-07-05 15:00:00 - 2025-07-07 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2831.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://missionimpossiblectf2025.vercel.app/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "IMFCTF (https://ctftime.org/team/389648)",
-        "比赛ID": "1351",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "No Hack No CTF 2025",
         "比赛时间": "2025-07-05 16:00:00 - 2025-07-07 16:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2818.ics",
@@ -633,6 +621,18 @@
         "比赛权重": "0",
         "赛事主办": "Super_Hacker (https://ctftime.org/team/195477)",
         "比赛ID": "1354",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Impossible Mission Force Capture The Flag",
+        "比赛时间": "2025-07-05 15:00:00 - 2025-07-07 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2831.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://missionimpossiblectf2025.vercel.app/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "IMFCTF (https://ctftime.org/team/389648)",
+        "比赛ID": "1351",
         "比赛状态": "past"
     },
     {
@@ -1809,18 +1809,6 @@
         "比赛权重": "18.57",
         "赛事主办": "CodeVincii (https://ctftime.org/team/367123)",
         "比赛ID": "1225",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SillyCTF 2025",
-        "比赛时间": "2025-03-29 20:00:00 - 2025-03-30 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2637.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://sillyctf.psuccso.org/",
-        "比赛标志": "https://ctftime.org/media/events/SillyCTF.png",
-        "比赛权重": "25.00",
-        "赛事主办": "Penn State CCSO (https://ctftime.org/team/367931)",
-        "比赛ID": "1233",
         "比赛状态": "past"
     }
 ]

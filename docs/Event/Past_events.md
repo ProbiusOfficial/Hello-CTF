@@ -23,6 +23,15 @@ comments: true
     **赛事主办** : Super_Hacker (https://ctftime.org/team/195477)  
     **添加日历** : https://ctftime.org/event/2825.ics  
     
+??? Quote "[Impossible Mission Force Capture The Flag](https://missionimpossiblectf2025.vercel.app/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://missionimpossiblectf2025.vercel.app/)  
+    **比赛名称** : [Impossible Mission Force Capture The Flag](https://missionimpossiblectf2025.vercel.app/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-05 15:00:00 - 2025-07-07 04:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : IMFCTF (https://ctftime.org/team/389648)  
+    **添加日历** : https://ctftime.org/event/2831.ics  
+    
 ??? Quote "[Junior.Crypt.2025 CTF](http://ctf-spcs.mf.grsu.by/)"  
     [![](https://ctftime.org/media/events/logo_13.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
     **比赛名称** : [Junior.Crypt.2025 CTF](http://ctf-spcs.mf.grsu.by/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 18.57  
     **赛事主办** : CodeVincii (https://ctftime.org/team/367123)  
     **添加日历** : https://ctftime.org/event/2738.ics  
-    
-??? Quote "[SillyCTF 2025](https://sillyctf.psuccso.org/)"  
-    [![](https://ctftime.org/media/events/SillyCTF.png){ width="200" align=left }](https://sillyctf.psuccso.org/)  
-    **比赛名称** : [SillyCTF 2025](https://sillyctf.psuccso.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-29 20:00:00 - 2025-03-30 08:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : Penn State CCSO (https://ctftime.org/team/367931)  
-    **添加日历** : https://ctftime.org/event/2637.ics  
     
