@@ -564,18 +564,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "CubeCTF",
-        "比赛时间": "2025-07-05 06:16:00 - 2025-07-07 08:25:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2820.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cubectf.com/",
-        "比赛标志": "https://ctftime.org/media/events/CubeMasteryLogo.png",
-        "比赛权重": "0",
-        "赛事主办": "CubeMastery (https://ctftime.org/team/168744)",
-        "比赛ID": "1277",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "R3CTF 2025",
         "比赛时间": "2025-07-05 10:00:00 - 2025-07-07 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2731.ics",
@@ -633,6 +621,18 @@
         "比赛权重": "0",
         "赛事主办": "IMFCTF (https://ctftime.org/team/389648)",
         "比赛ID": "1351",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "CubeCTF",
+        "比赛时间": "2025-07-05 06:16:00 - 2025-07-07 08:25:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2820.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cubectf.com/",
+        "比赛标志": "https://ctftime.org/media/events/CubeMasteryLogo.png",
+        "比赛权重": "0",
+        "赛事主办": "CubeMastery (https://ctftime.org/team/168744)",
+        "比赛ID": "1277",
         "比赛状态": "past"
     },
     {
@@ -1797,18 +1797,6 @@
         "比赛权重": "24.73",
         "赛事主办": "Highlander Hackers (https://ctftime.org/team/173925)",
         "比赛ID": "724",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CodeVinci Beginner CTF 2025",
-        "比赛时间": "2025-03-29 21:00:00 - 2025-03-29 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2738.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://codevincictf.itis.pr.it/",
-        "比赛标志": "https://ctftime.org/media/events/logo_CodeVinci.jpg",
-        "比赛权重": "18.57",
-        "赛事主办": "CodeVincii (https://ctftime.org/team/367123)",
-        "比赛ID": "1225",
         "比赛状态": "past"
     }
 ]
