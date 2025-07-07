@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[R3CTF 2025](https://ctf2025.r3kapig.com/)"  
-    [![](https://ctftime.org/media/events/111_1.png){ width="200" align=left }](https://ctf2025.r3kapig.com/)  
-    **比赛名称** : [R3CTF 2025](https://ctf2025.r3kapig.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-07-05 10:00:00 - 2025-07-07 10:00:00 UTC+8  
-    **比赛权重** : 24.50  
-    **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
-    **添加日历** : https://ctftime.org/event/2731.ics  
-    
 ??? Quote "[No Hack No CTF 2025](https://nhnc.ic3dt3a.org/)"  
     [![](https://ctftime.org/media/events/nhnc-2025.png){ width="200" align=left }](https://nhnc.ic3dt3a.org/)  
     **比赛名称** : [No Hack No CTF 2025](https://nhnc.ic3dt3a.org/)  
@@ -26,13 +17,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
     **添加日历** : https://ctftime.org/event/2818.ics  
-    
-??? Quote "[BlitzCTF](https://ctf.blitzhack.xyz/)"  
-    [![](https://ctftime.org/media/events/BlitzCTF.webp){ width="200" align=left }](https://ctf.blitzhack.xyz/)  
-    **比赛名称** : [BlitzCTF](https://ctf.blitzhack.xyz/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-07-05 22:30:00 - 2025-07-07 10:30:00 UTC+8  
-    **比赛权重** : 23.20  
-    **赛事主办** : BlitzHack (https://ctftime.org/team/307415)  
-    **添加日历** : https://ctftime.org/event/2816.ics  
     
