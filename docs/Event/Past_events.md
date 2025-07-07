@@ -32,6 +32,15 @@ comments: true
     **赛事主办** : Super_Hacker (https://ctftime.org/team/195477)  
     **添加日历** : https://ctftime.org/event/2825.ics  
     
+??? Quote "[No Hack No CTF 2025](https://nhnc.ic3dt3a.org/)"  
+    [![](https://ctftime.org/media/events/nhnc-2025.png){ width="200" align=left }](https://nhnc.ic3dt3a.org/)  
+    **比赛名称** : [No Hack No CTF 2025](https://nhnc.ic3dt3a.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-05 16:00:00 - 2025-07-07 16:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
+    **添加日历** : https://ctftime.org/event/2818.ics  
+    
 ??? Quote "[Impossible Mission Force Capture The Flag](https://missionimpossiblectf2025.vercel.app/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://missionimpossiblectf2025.vercel.app/)  
     **比赛名称** : [Impossible Mission Force Capture The Flag](https://missionimpossiblectf2025.vercel.app/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
     **添加日历** : https://ctftime.org/event/2774.ics  
-    
-??? Quote "[Capture Point 5353 3.0](https://iiitv.capturepoint5353.tech/)"  
-    [![](https://ctftime.org/media/events/Untitled_design_2.png){ width="200" align=left }](https://iiitv.capturepoint5353.tech/)  
-    **比赛名称** : [Capture Point 5353 3.0](https://iiitv.capturepoint5353.tech/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-31 02:00:00 - 2025-04-01 16:10:29 UTC+8  
-    **比赛权重** : 22.20  
-    **赛事主办** : HORIZON_03 (https://ctftime.org/team/375436)  
-    **添加日历** : https://ctftime.org/event/2747.ics  
     
