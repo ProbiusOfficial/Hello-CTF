@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [泛微最新补丁分析(20250704)](https://y4tacker.github.io/2025/07/09/year/2025/07/%E6%B3%9B%E5%BE%AE%E6%9C%80%E6%96%B0%E8%A1%A5%E4%B8%81%E5%88%86%E6%9E%90-20250704/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-07-08
+
+    69b1ac3a8c7b27f3f5f24b3b8a7400bd6b1e48e4e4a74e3a9d5b0d94adacfef139866dca5f9c0752a208c27b415054195b8c9b09fcf4ba840127a35d6fbe535eecd06f6e3687d07dd41c43e8c9e03d37b2fa2fd462518b848ba4ce55dbd50da8160a3b...
     ### [契约锁最新前台命令执行及花式绕WAF思路](https://y4tacker.github.io/2025/07/02/year/2025/07/%E5%A5%91%E7%BA%A6%E9%94%81%E6%9C%80%E6%96%B0%E5%89%8D%E5%8F%B0%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E5%8F%8A%E8%8A%B1%E5%BC%8F%E7%BB%95WAF%E6%80%9D%E8%B7%AF/)  
     >by [Y4tacker](https://y4tacker.github.io), 2025-07-02
 
@@ -80,7 +84,7 @@ hide:
     ### [浅析Gogs 远程命令执行(CVE-2024-56731)](https://y4tacker.github.io/2025/06/25/year/2025/06/%E6%B5%85%E6%9E%90Gogs-%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-CVE-2024-56731/)  
     >by [Y4tacker](https://y4tacker.github.io), 2025-06-25
 
-    e1bd3e68fe0e95aad543147235f13aa8c07db101f08238b29c49348e526ca2c395ff16b5184fe4ee67b8dd1840f69936917a685390975ecb78405622c312487d5e6b45d97870e169a38f37bd7a2e95cc5b864202dba1787e366b00f3973f1aa3686ad8...
+    61250ef0d935a4a9d2eb682839325b52407d6a12bdde2eb831889d10036bea8106e2cbab4d0545b5551fe1a0fea6f3d58b8ee44d7110304bee8ff7333000d35c5b12e6d6807bdab93f096bd15b0c005660b70215b08b001ec238e70442e03904450ea3...
     ### [浅析Weaver Getdata前台SQL注入](https://y4tacker.github.io/2025/06/17/year/2025/06/%E6%B5%85%E6%9E%90Weaver-Getdata%E5%89%8D%E5%8F%B0SQL%E6%B3%A8%E5%85%A5/)  
     >by [Y4tacker](https://y4tacker.github.io), 2025-06-17
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2025-01-24
 
     来学习一下进程与线程的结构EPROCESS定义描述先来看看结构体的描述123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687...
-    ### [windows系统调用学习——系统描述符表](https://xia0ji233.github.io/2025/01/24/WindowsSyscall4/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-24
-
-    来学习一下系统描述符表这个结构SSDTSSDT的全称是System Services Descriptor Table，意为系统服务描述符表。我们可以通过ETHREAD结构体加偏移的方式进行访问。在内核文件中，有一个变量是导出的：KeServiceDescriptorTable。通过它我们可以访问SSDT。可以看看在内核中看看 SSDT 是什么样的。123456789kd> dd KeServic...
 
 </div>
