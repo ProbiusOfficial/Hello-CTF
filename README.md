@@ -54,5 +54,3 @@
 </p>
 
 **向每一个为开源社区做出努力和贡献的人，致以崇高的敬意！！！**
-
-[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
