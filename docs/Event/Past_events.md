@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[CRMA mini CTF 2025](https://ctf.crma.club/)"  
+    [![](https://ctftime.org/media/events/crma.png){ width="200" align=left }](https://ctf.crma.club/)  
+    **比赛名称** : [CRMA mini CTF 2025](https://ctf.crma.club/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-12 01:00:00 - 2025-07-13 00:59:59 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : CRMA Cyber Club (https://ctftime.org/team/167583)  
+    **添加日历** : https://ctftime.org/event/2847.ics  
+    
 ??? Quote "[BlitzCTF](https://ctf.blitzhack.xyz/)"  
     [![](https://ctftime.org/media/events/BlitzCTF.webp){ width="200" align=left }](https://ctf.blitzhack.xyz/)  
     **比赛名称** : [BlitzCTF](https://ctf.blitzhack.xyz/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 100.00  
     **赛事主办** : Plaid Parliament of Pwning (https://ctftime.org/team/284)  
     **添加日历** : https://ctftime.org/event/2508.ics  
-    
-??? Quote "[CyberGame 2025](https://cybergame.sk/)"  
-    [![](https://ctftime.org/media/events/cybergame.png){ width="200" align=left }](https://cybergame.sk/)  
-    **比赛名称** : [CyberGame 2025](https://cybergame.sk/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-01 08:00:00 - 2025-06-10 07:59:59 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
-    **添加日历** : https://ctftime.org/event/2774.ics  
     

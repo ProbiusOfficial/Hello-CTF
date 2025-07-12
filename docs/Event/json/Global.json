@@ -624,18 +624,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CRMA mini CTF 2025",
-        "比赛时间": "2025-07-12 01:00:00 - 2025-07-13 00:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2847.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.crma.club/",
-        "比赛标志": "https://ctftime.org/media/events/crma.png",
-        "比赛权重": "0",
-        "赛事主办": "CRMA Cyber Club (https://ctftime.org/team/167583)",
-        "比赛ID": "1364",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "L3HCTF 2025",
         "比赛时间": "2025-07-12 09:00:00 - 2025-07-14 09:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2823.ics",
@@ -658,6 +646,18 @@
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "317",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CRMA mini CTF 2025",
+        "比赛时间": "2025-07-12 01:00:00 - 2025-07-13 00:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2847.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.crma.club/",
+        "比赛标志": "https://ctftime.org/media/events/crma.png",
+        "比赛权重": "0",
+        "赛事主办": "CRMA Cyber Club (https://ctftime.org/team/167583)",
+        "比赛ID": "1364",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "BlitzCTF",
@@ -1845,18 +1845,6 @@
         "比赛权重": "100.00",
         "赛事主办": "Plaid Parliament of Pwning (https://ctftime.org/team/284)",
         "比赛ID": "10",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CyberGame 2025",
-        "比赛时间": "2025-04-01 08:00:00 - 2025-06-10 07:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2774.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cybergame.sk/",
-        "比赛标志": "https://ctftime.org/media/events/cybergame.png",
-        "比赛权重": "0",
-        "赛事主办": "SK-CERT (https://ctftime.org/team/378916)",
-        "比赛ID": "1303",
         "比赛状态": "past"
     }
 ]

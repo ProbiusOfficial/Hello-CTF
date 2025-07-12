@@ -761,15 +761,6 @@ hide:
                 **赛事主办** : L3ak (https://ctftime.org/team/220336)  
                 **添加日历** : https://ctftime.org/event/2629.ics  
                 
-            ??? Quote "[CRMA mini CTF 2025](https://ctf.crma.club/)"  
-                [![](https://ctftime.org/media/events/crma.png){ width="200" align=left }](https://ctf.crma.club/)  
-                **比赛名称** : [CRMA mini CTF 2025](https://ctf.crma.club/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-07-12 01:00:00 - 2025-07-13 00:59:59 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : CRMA Cyber Club (https://ctftime.org/team/167583)  
-                **添加日历** : https://ctftime.org/event/2847.ics  
-                
             ??? Quote "[L3HCTF 2025](https://l3hctf2025.xctf.org.cn/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://l3hctf2025.xctf.org.cn/)  
                 **比赛名称** : [L3HCTF 2025](https://l3hctf2025.xctf.org.cn/)  
@@ -798,6 +789,15 @@ hide:
                 **其他说明** : 2025年能源网络安全大赛由中国能源研究会主办，面向电网企业、发电及电力建设企业、石油石化企业、煤炭企业等单位网络安全技术、运维和管理人员，以及国内网络安全领域知名高校、科研机构、产业单位等代表。报名截止日期为2025年3月31日，可通过扫描二维码下载报名表并发送至icc@cers.org.cn邮箱。联系人包括屈庆红、李理和陈炜，可通过电话或邮箱进行咨询。  
                 
         === "国外赛事"
+            ??? Quote "[CRMA mini CTF 2025](https://ctf.crma.club/)"  
+                [![](https://ctftime.org/media/events/crma.png){ width="200" align=left }](https://ctf.crma.club/)  
+                **比赛名称** : [CRMA mini CTF 2025](https://ctf.crma.club/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-07-12 01:00:00 - 2025-07-13 00:59:59 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : CRMA Cyber Club (https://ctftime.org/team/167583)  
+                **添加日历** : https://ctftime.org/event/2847.ics  
+                
             ??? Quote "[BlitzCTF](https://ctf.blitzhack.xyz/)"  
                 [![](https://ctftime.org/media/events/BlitzCTF.webp){ width="200" align=left }](https://ctf.blitzhack.xyz/)  
                 **比赛名称** : [BlitzCTF](https://ctf.blitzhack.xyz/)  
@@ -1688,15 +1688,6 @@ hide:
                 **比赛权重** : 100.00  
                 **赛事主办** : Plaid Parliament of Pwning (https://ctftime.org/team/284)  
                 **添加日历** : https://ctftime.org/event/2508.ics  
-                
-            ??? Quote "[CyberGame 2025](https://cybergame.sk/)"  
-                [![](https://ctftime.org/media/events/cybergame.png){ width="200" align=left }](https://cybergame.sk/)  
-                **比赛名称** : [CyberGame 2025](https://cybergame.sk/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-01 08:00:00 - 2025-06-10 07:59:59 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
-                **添加日历** : https://ctftime.org/event/2774.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
