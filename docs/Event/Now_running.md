@@ -36,12 +36,3 @@ comments: true
     **赛事主办** : L3H Sec (https://ctftime.org/team/75946)  
     **添加日历** : https://ctftime.org/event/2823.ics  
     
-??? Quote "[Crypto CTF 2025](https://cr.yp.toc.tf/)"  
-    [![](https://ctftime.org/media/events/cryptoctf_1.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
-    **比赛名称** : [Crypto CTF 2025](https://cr.yp.toc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-07-12 14:00:00 - 2025-07-13 14:00:00 UTC+8  
-    **比赛权重** : 88.25  
-    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-    **添加日历** : https://ctftime.org/event/2577.ics  
-    

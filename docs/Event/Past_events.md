@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Crypto CTF 2025](https://cr.yp.toc.tf/)"  
+    [![](https://ctftime.org/media/events/cryptoctf_1.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
+    **比赛名称** : [Crypto CTF 2025](https://cr.yp.toc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-12 14:00:00 - 2025-07-13 14:00:00 UTC+8  
+    **比赛权重** : 88.25  
+    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+    **添加日历** : https://ctftime.org/event/2577.ics  
+    
 ??? Quote "[CRMA mini CTF 2025](https://ctf.crma.club/)"  
     [![](https://ctftime.org/media/events/crma.png){ width="200" align=left }](https://ctf.crma.club/)  
     **比赛名称** : [CRMA mini CTF 2025](https://ctf.crma.club/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 24.25  
     **赛事主办** : squ1rrel (https://ctftime.org/team/201730)  
     **添加日历** : https://ctftime.org/event/2708.ics  
-    
-??? Quote "[PlaidCTF 2025](https://plaidctf.com/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://plaidctf.com/)  
-    **比赛名称** : [PlaidCTF 2025](https://plaidctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-05 05:00:00 - 2025-04-07 05:00:00 UTC+8  
-    **比赛权重** : 100.00  
-    **赛事主办** : Plaid Parliament of Pwning (https://ctftime.org/team/284)  
-    **添加日历** : https://ctftime.org/event/2508.ics  
     
