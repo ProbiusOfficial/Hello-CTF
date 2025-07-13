@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [契约锁前台代码执行补丁绕过(20250707)](https://y4tacker.github.io/2025/07/12/year/2025/07/%E5%A5%91%E7%BA%A6%E9%94%81%E5%89%8D%E5%8F%B0%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E8%A1%A5%E4%B8%81%E7%BB%95%E8%BF%87-20250707/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-07-12
+
+    e6c11300420b389ced87a6974eed3fab25dac09bd1f6aee4a7a8e52e59f0711db643f38498979ffe7362af42a65818e6199d8458ea6277f1977e8e1d6193112aaa1fec2d6e20820e691a9bea2a94fe1cd41921e21853c253b70b81d7a051699e986703...
     ### [如何从灰盒角度快速复现Weaver最新SQL注入](https://y4tacker.github.io/2025/07/09/year/2025/07/%E5%A6%82%E4%BD%95%E4%BB%8E%E7%81%B0%E7%9B%92%E8%A7%92%E5%BA%A6%E5%BF%AB%E9%80%9F%E5%A4%8D%E7%8E%B0Weaver-SQL%E6%B3%A8%E5%85%A5/)  
     >by [Y4tacker](https://y4tacker.github.io), 2025-07-09
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2025-01-24
 
     来学习一下 Windows 线程调度的实现Windows中有一个函数SwapContext用来实现线程切换，我们先得了解一下什么情况下会引发线程切换。线程切换途径分主动切换和被动切换，很好理解，主动切换就是线程主动让出 CPU 执行，被动就是被打断而不得不让出 CPU。在做实验的时候，多核真的是很困扰的一个问题，想了半天想不明白多核怎么工作的，为了好理解线程切换，建议虚拟机都换成单核的，线程大多数...
-    ### [windows进程与线程学习——调度相关结构学习](https://xia0ji233.github.io/2025/01/24/WindowsProcess2/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-24
-
-    来学习一下调度相关的结构很早就听说过断链隐藏的操作，因为 Windows 都是使用链表去管理进程，线程等结构的，所以断链可以达到隐藏自身的目的。那么这里就引申出来一个问题，为什么断链可以隐身且不破坏大部分的功能呢，下面的线程调度会给出答案。线程调度操作系统的一些理论，线程有三种状态：就绪（ready）、等待（wait）、运行（running）。至于为什么进程/线程断链可以达到隐藏且继续执行的目的，...
 
 </div>
