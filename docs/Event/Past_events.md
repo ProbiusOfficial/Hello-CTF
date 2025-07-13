@@ -41,6 +41,15 @@ comments: true
     **赛事主办** : L3ak (https://ctftime.org/team/220336)  
     **添加日历** : https://ctftime.org/event/2629.ics  
     
+??? Quote "[CTF Cybercamp UMU 3.0](https://eventos.um.es/go/ctf-cybercampumu-3)"  
+    [![](https://ctftime.org/media/events/banner_ctf_cybercamp_1.png){ width="200" align=left }](https://eventos.um.es/go/ctf-cybercampumu-3)  
+    **比赛名称** : [CTF Cybercamp UMU 3.0](https://eventos.um.es/go/ctf-cybercampumu-3)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-11 23:00:00 - 2025-07-14 06:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Offensive Skills (https://ctftime.org/team/389597)  
+    **添加日历** : https://ctftime.org/event/2830.ics  
+    
 ??? Quote "[BlitzCTF](https://ctf.blitzhack.xyz/)"  
     [![](https://ctftime.org/media/events/BlitzCTF.webp){ width="200" align=left }](https://ctf.blitzhack.xyz/)  
     **比赛名称** : [BlitzCTF](https://ctf.blitzhack.xyz/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Bushwhackers (https://ctftime.org/team/586)  
     **添加日历** : https://ctftime.org/event/2712.ics  
-    
-??? Quote "[Breach CTF 2025](https://www.breachers.in/)"  
-    [![](https://ctftime.org/media/events/BreachCTF2025_Logo.jpeg){ width="200" align=left }](https://www.breachers.in/)  
-    **比赛名称** : [Breach CTF 2025](https://www.breachers.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-05 10:30:00 - 2025-04-06 10:30:00 UTC+8  
-    **比赛权重** : 23.77  
-    **赛事主办** : IITBreachers (https://ctftime.org/team/165802)  
-    **添加日历** : https://ctftime.org/event/2671.ics  
     
