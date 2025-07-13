@@ -23,6 +23,15 @@ comments: true
     **赛事主办** : ASIS (https://ctftime.org/team/4140)  
     **添加日历** : https://ctftime.org/event/2577.ics  
     
+??? Quote "[L3akCTF 2025](https://ctf.l3ak.team/)"  
+    [![](https://ctftime.org/media/events/L3akCTF_2025_Logo_750x750.png){ width="200" align=left }](https://ctf.l3ak.team/)  
+    **比赛名称** : [L3akCTF 2025](https://ctf.l3ak.team/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-12 01:00:00 - 2025-07-14 01:00:00 UTC+8  
+    **比赛权重** : 24.43  
+    **赛事主办** : L3ak (https://ctftime.org/team/220336)  
+    **添加日历** : https://ctftime.org/event/2629.ics  
+    
 ??? Quote "[CRMA mini CTF 2025](https://ctf.crma.club/)"  
     [![](https://ctftime.org/media/events/crma.png){ width="200" align=left }](https://ctf.crma.club/)  
     **比赛名称** : [CRMA mini CTF 2025](https://ctf.crma.club/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 23.77  
     **赛事主办** : IITBreachers (https://ctftime.org/team/165802)  
     **添加日历** : https://ctftime.org/event/2671.ics  
-    
-??? Quote "[squ1rrel CTF 2025](https://ctf.squ1rrel.dev/)"  
-    [![](https://ctftime.org/media/events/squ1rrel_logo.png){ width="200" align=left }](https://ctf.squ1rrel.dev/)  
-    **比赛名称** : [squ1rrel CTF 2025](https://ctf.squ1rrel.dev/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-05 07:00:00 - 2025-04-07 01:00:00 UTC+8  
-    **比赛权重** : 24.25  
-    **赛事主办** : squ1rrel (https://ctftime.org/team/201730)  
-    **添加日历** : https://ctftime.org/event/2708.ics  
     

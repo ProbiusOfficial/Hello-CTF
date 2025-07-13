@@ -612,18 +612,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "L3akCTF 2025",
-        "比赛时间": "2025-07-12 01:00:00 - 2025-07-14 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2629.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.l3ak.team/",
-        "比赛标志": "https://ctftime.org/media/events/L3akCTF_2025_Logo_750x750.png",
-        "比赛权重": "24.43",
-        "赛事主办": "L3ak (https://ctftime.org/team/220336)",
-        "比赛ID": "1077",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "L3HCTF 2025",
         "比赛时间": "2025-07-12 09:00:00 - 2025-07-14 09:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2823.ics",
@@ -645,6 +633,18 @@
         "比赛权重": "88.25",
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "317",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "L3akCTF 2025",
+        "比赛时间": "2025-07-12 01:00:00 - 2025-07-14 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2629.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.l3ak.team/",
+        "比赛标志": "https://ctftime.org/media/events/L3akCTF_2025_Logo_750x750.png",
+        "比赛权重": "24.43",
+        "赛事主办": "L3ak (https://ctftime.org/team/220336)",
+        "比赛ID": "1077",
         "比赛状态": "past"
     },
     {
@@ -1821,18 +1821,6 @@
         "比赛权重": "23.77",
         "赛事主办": "IITBreachers (https://ctftime.org/team/165802)",
         "比赛ID": "1098",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "squ1rrel CTF 2025",
-        "比赛时间": "2025-04-05 07:00:00 - 2025-04-07 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2708.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.squ1rrel.dev/",
-        "比赛标志": "https://ctftime.org/media/events/squ1rrel_logo.png",
-        "比赛权重": "24.25",
-        "赛事主办": "squ1rrel (https://ctftime.org/team/201730)",
-        "比赛ID": "1110",
         "比赛状态": "past"
     }
 ]
