@@ -743,15 +743,7 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[L3HCTF 2025](https://l3hctf2025.xctf.org.cn/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://l3hctf2025.xctf.org.cn/)  
-                **比赛名称** : [L3HCTF 2025](https://l3hctf2025.xctf.org.cn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-07-12 09:00:00 - 2025-07-14 09:00:00 UTC+8  
-                **比赛权重** : 23.50  
-                **赛事主办** : L3H Sec (https://ctftime.org/team/75946)  
-                **添加日历** : https://ctftime.org/event/2823.ics  
-                
+    
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[2025年能源网络安全大赛](https://www.cers.org.cn/site/content/883b36f00aff466fa37efcef0c074915.html)"  
@@ -770,6 +762,15 @@ hide:
                 **比赛权重** : 88.25  
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/2577.ics  
+                
+            ??? Quote "[L3HCTF 2025](https://l3hctf2025.xctf.org.cn/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://l3hctf2025.xctf.org.cn/)  
+                **比赛名称** : [L3HCTF 2025](https://l3hctf2025.xctf.org.cn/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-07-12 09:00:00 - 2025-07-14 09:00:00 UTC+8  
+                **比赛权重** : 23.50  
+                **赛事主办** : L3H Sec (https://ctftime.org/team/75946)  
+                **添加日历** : https://ctftime.org/event/2823.ics  
                 
             ??? Quote "[CRMA mini CTF 2025](https://ctf.crma.club/)"  
                 [![](https://ctftime.org/media/events/crma.png){ width="200" align=left }](https://ctf.crma.club/)  
@@ -848,7 +849,7 @@ hide:
                 **比赛名称** : [CubeCTF](https://cubectf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-07-05 06:16:00 - 2025-07-07 08:25:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : CubeMastery (https://ctftime.org/team/168744)  
                 **添加日历** : https://ctftime.org/event/2820.ics  
                 
@@ -1652,15 +1653,6 @@ hide:
                 **比赛权重** : 22.75  
                 **赛事主办** : ZiTF (https://ctftime.org/team/376047)  
                 **添加日历** : https://ctftime.org/event/2752.ics  
-                
-            ??? Quote "[Moscow CTF School 2025](http://ctf.cs.msu.ru/)"  
-                [![](https://ctftime.org){ width="200" align=left }](http://ctf.cs.msu.ru/)  
-                **比赛名称** : [Moscow CTF School 2025](http://ctf.cs.msu.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-05 18:00:00 - 2025-04-06 02:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Bushwhackers (https://ctftime.org/team/586)  
-                **添加日历** : https://ctftime.org/event/2712.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
