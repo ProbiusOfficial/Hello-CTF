@@ -822,7 +822,7 @@ hide:
                 **比赛名称** : [No Hack No CTF 2025](https://nhnc.ic3dt3a.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-07-05 16:00:00 - 2025-07-07 16:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 23.29  
                 **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
                 **添加日历** : https://ctftime.org/event/2818.ics  
                 
