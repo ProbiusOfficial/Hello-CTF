@@ -167,9 +167,9 @@ comments: true
     **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
     **添加日历** : https://ctftime.org/event/2829.ics  
     
-??? Quote "[MetaCTF June 2025 Flash CTF](https://mctf.io/jun2024)"  
-    [![](https://ctftime.org/media/events/Orange_M_Square.png){ width="200" align=left }](https://mctf.io/jun2024)  
-    **比赛名称** : [MetaCTF June 2025 Flash CTF](https://mctf.io/jun2024)  
+??? Quote "[MetaCTF June 2025 Flash CTF](https://mctf.io/jun2025)"  
+    [![](https://ctftime.org/media/events/Orange_M_Square.png){ width="200" align=left }](https://mctf.io/jun2025)  
+    **比赛名称** : [MetaCTF June 2025 Flash CTF](https://mctf.io/jun2025)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-06-27 05:00:00 - 2025-06-27 07:00:00 UTC+8  
     **比赛权重** : 0  
