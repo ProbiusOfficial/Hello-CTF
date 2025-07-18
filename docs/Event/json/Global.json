@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "HITCON Cyber Range 2025 Quals",
-        "比赛时间": "2025-07-18 10:00:00 - 2025-07-18 23:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2793.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hitcon.kktix.cc/events/hitcon-cyberrange-2025",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "HITCON (https://ctftime.org/team/8299)",
-        "比赛ID": "1325",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "DownUnderCTF 2025",
         "比赛时间": "2025-07-18 17:30:00 - 2025-07-20 17:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2669.ics",
@@ -598,6 +586,18 @@
         "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
         "比赛ID": "246",
         "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "HITCON Cyber Range 2025 Quals",
+        "比赛时间": "2025-07-18 10:00:00 - 2025-07-18 23:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2793.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://hitcon.kktix.cc/events/hitcon-cyberrange-2025",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "HITCON (https://ctftime.org/team/8299)",
+        "比赛ID": "1325",
+        "比赛状态": "nowrunning"
     },
     {
         "比赛名称": "Crypto CTF 2025",
