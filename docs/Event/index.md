@@ -725,15 +725,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[HITCON Cyber Range 2025 Quals](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
-                **比赛名称** : [HITCON Cyber Range 2025 Quals](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-07-18 10:00:00 - 2025-07-18 23:59:59 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : HITCON (https://ctftime.org/team/8299)  
-                **添加日历** : https://ctftime.org/event/2793.ics  
-                
             ??? Quote "[DownUnderCTF 2025](https://2025.duc.tf/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://2025.duc.tf/)  
                 **比赛名称** : [DownUnderCTF 2025](https://2025.duc.tf/)  
@@ -753,6 +744,15 @@ hide:
                 **其他说明** : 2025年能源网络安全大赛由中国能源研究会主办，面向电网企业、发电及电力建设企业、石油石化企业、煤炭企业等单位网络安全技术、运维和管理人员，以及国内网络安全领域知名高校、科研机构、产业单位等代表。报名截止日期为2025年3月31日，可通过扫描二维码下载报名表并发送至icc@cers.org.cn邮箱。联系人包括屈庆红、李理和陈炜，可通过电话或邮箱进行咨询。  
                 
         === "国外赛事"
+            ??? Quote "[HITCON Cyber Range 2025 Quals](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
+                **比赛名称** : [HITCON Cyber Range 2025 Quals](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-07-18 10:00:00 - 2025-07-18 23:59:59 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : HITCON (https://ctftime.org/team/8299)  
+                **添加日历** : https://ctftime.org/event/2793.ics  
+                
             ??? Quote "[Crypto CTF 2025](https://cr.yp.toc.tf/)"  
                 [![](https://ctftime.org/media/events/cryptoctf_1.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
                 **比赛名称** : [Crypto CTF 2025](https://cr.yp.toc.tf/)  
@@ -1643,15 +1643,6 @@ hide:
                 **比赛权重** : 24.81  
                 **赛事主办** : Ulisse (https://ctftime.org/team/71738)  
                 **添加日历** : https://ctftime.org/event/2735.ics  
-                
-            ??? Quote "[Auvergn'Hack](https://ctf.zitf.fr/)"  
-                [![](https://ctftime.org/media/events/gorilla_auvergnhack3.jpg){ width="200" align=left }](https://ctf.zitf.fr/)  
-                **比赛名称** : [Auvergn'Hack](https://ctf.zitf.fr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-05 20:45:00 - 2025-04-06 03:00:00 UTC+8  
-                **比赛权重** : 22.75  
-                **赛事主办** : ZiTF (https://ctftime.org/team/376047)  
-                **添加日历** : https://ctftime.org/event/2752.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
