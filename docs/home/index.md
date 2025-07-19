@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[ToH CTF 2025](https://ctf.towerofhanoi.it/)"  
-            [![](https://ctftime.org/media/events/tohctf25.jpeg){ width="200" align=left }](https://ctf.towerofhanoi.it/)  
-            **比赛名称** : [ToH CTF 2025](https://ctf.towerofhanoi.it/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-07-20 00:00:00 - 2025-07-21 00:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Tower of Hanoi (https://ctftime.org/team/300)  
-            **添加日历** : https://ctftime.org/event/2833.ics  
-            
         ??? Quote "[BDSec CTF 2025](https://bdsec-ctf.com/)"  
             [![](https://ctftime.org/media/events/bdsec-ctf-logo_1.png){ width="200" align=left }](https://bdsec-ctf.com/)  
             **比赛名称** : [BDSec CTF 2025](https://bdsec-ctf.com/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 24.00  
             **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
             **添加日历** : https://ctftime.org/event/2841.ics  
+            
+        ??? Quote "[ImaginaryCTF 2025](https://2025.imaginaryctf.org/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://2025.imaginaryctf.org/)  
+            **比赛名称** : [ImaginaryCTF 2025](https://2025.imaginaryctf.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-07-26 03:00:00 - 2025-07-28 03:00:00 UTC+8  
+            **比赛权重** : 66.02  
+            **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
+            **添加日历** : https://ctftime.org/event/2799.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

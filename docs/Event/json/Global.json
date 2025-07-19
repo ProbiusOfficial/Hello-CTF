@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "ToH CTF 2025",
-        "比赛时间": "2025-07-20 00:00:00 - 2025-07-21 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2833.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.towerofhanoi.it/",
-        "比赛标志": "https://ctftime.org/media/events/tohctf25.jpeg",
-        "比赛权重": "0.00",
-        "赛事主办": "Tower of Hanoi (https://ctftime.org/team/300)",
-        "比赛ID": "1345",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "BDSec CTF 2025",
         "比赛时间": "2025-07-20 23:00:00 - 2025-07-21 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2784.ics",
@@ -585,6 +573,18 @@
         "比赛权重": "100.00",
         "赛事主办": "ENOFLAG (https://ctftime.org/team/1438)",
         "比赛ID": "24",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "ToH CTF 2025",
+        "比赛时间": "2025-07-20 00:00:00 - 2025-07-21 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2833.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.towerofhanoi.it/",
+        "比赛标志": "https://ctftime.org/media/events/tohctf25.jpeg",
+        "比赛权重": "0",
+        "赛事主办": "Tower of Hanoi (https://ctftime.org/team/300)",
+        "比赛ID": "1345",
         "比赛状态": "nowrunning"
     },
     {
