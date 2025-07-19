@@ -36,6 +36,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "BelkaCTF #7",
+        "比赛时间": "2025-07-25 21:00:00 - 2025-07-27 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2858.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://belkasoft.com/belkactf7/",
+        "比赛标志": "https://ctftime.org/media/events/belkaCTF_ctftime.png",
+        "比赛权重": "0",
+        "赛事主办": "TODO: security (https://ctftime.org/team/288184)",
+        "比赛ID": "1105",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "ImaginaryCTF 2025",
         "比赛时间": "2025-07-26 03:00:00 - 2025-07-28 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2799.ics",
