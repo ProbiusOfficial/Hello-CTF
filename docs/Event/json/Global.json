@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "ENOWARS 9",
-        "比赛时间": "2025-07-19 20:00:00 - 2025-07-20 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2796.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://9.enowars.com/",
-        "比赛标志": "https://ctftime.org/media/events/enowars9.png",
-        "比赛权重": "100.00",
-        "赛事主办": "ENOFLAG (https://ctftime.org/team/1438)",
-        "比赛ID": "24",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "ToH CTF 2025",
         "比赛时间": "2025-07-20 00:00:00 - 2025-07-21 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2833.ics",
@@ -585,6 +573,18 @@
         "比赛权重": "91.66",
         "赛事主办": "DownUnderCTF (https://ctftime.org/team/126400)",
         "比赛ID": "481",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "ENOWARS 9",
+        "比赛时间": "2025-07-19 20:00:00 - 2025-07-20 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2796.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://9.enowars.com/",
+        "比赛标志": "https://ctftime.org/media/events/enowars9.png",
+        "比赛权重": "100.00",
+        "赛事主办": "ENOFLAG (https://ctftime.org/team/1438)",
+        "比赛ID": "24",
         "比赛状态": "nowrunning"
     },
     {
