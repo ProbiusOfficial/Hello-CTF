@@ -23,6 +23,15 @@ comments: true
     **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
     **添加日历** : https://ctftime.org/event/2796.ics  
     
+??? Quote "[DownUnderCTF 2025](https://2025.duc.tf/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://2025.duc.tf/)  
+    **比赛名称** : [DownUnderCTF 2025](https://2025.duc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-18 17:30:00 - 2025-07-20 17:30:00 UTC+8  
+    **比赛权重** : 91.66  
+    **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
+    **添加日历** : https://ctftime.org/event/2669.ics  
+    
 ??? Quote "[HITCON Cyber Range 2025 Quals](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)"  
     [![](https://ctftime.org){ width="200" align=left }](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
     **比赛名称** : [HITCON Cyber Range 2025 Quals](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 24.82  
     **赛事主办** : bitsentinel (https://ctftime.org/team/280005)  
     **添加日历** : https://ctftime.org/event/2740.ics  
-    
-??? Quote "[Dreamhack Invitational 2025](https://dreamhack.io/)"  
-    [![](https://ctftime.org/media/events/e66fed5653581908ac8e93f82ad73cae.jpg){ width="200" align=left }](https://dreamhack.io/)  
-    **比赛名称** : [Dreamhack Invitational 2025](https://dreamhack.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-08 08:00:00 - 2025-04-09 05:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
-    **添加日历** : https://ctftime.org/event/2628.ics  
     
