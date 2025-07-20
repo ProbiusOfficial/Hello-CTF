@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[ToH CTF 2025](https://ctf.towerofhanoi.it/)"  
+    [![](https://ctftime.org/media/events/tohctf25.jpeg){ width="200" align=left }](https://ctf.towerofhanoi.it/)  
+    **比赛名称** : [ToH CTF 2025](https://ctf.towerofhanoi.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-20 00:00:00 - 2025-07-21 00:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Tower of Hanoi (https://ctftime.org/team/300)  
+    **添加日历** : https://ctftime.org/event/2833.ics  
+    
 ??? Quote "[ENOWARS 9](https://9.enowars.com/)"  
     [![](https://ctftime.org/media/events/enowars9.png){ width="200" align=left }](https://9.enowars.com/)  
     **比赛名称** : [ENOWARS 9](https://9.enowars.com/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 34.82  
     **赛事主办** : 1753c (https://ctftime.org/team/178287)  
     **添加日历** : https://ctftime.org/event/2639.ics  
-    
-??? Quote "[UNbreakable International 2024 - Team Phase](https://unr25t-international.cyber-edu.co/)"  
-    [![](https://ctftime.org/media/events/MfknElGVExHGiftE_1.png){ width="200" align=left }](https://unr25t-international.cyber-edu.co/)  
-    **比赛名称** : [UNbreakable International 2024 - Team Phase](https://unr25t-international.cyber-edu.co/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-11 18:00:00 - 2025-04-13 18:00:00 UTC+8  
-    **比赛权重** : 24.82  
-    **赛事主办** : bitsentinel (https://ctftime.org/team/280005)  
-    **添加日历** : https://ctftime.org/event/2740.ics  
     
