@@ -81,9 +81,9 @@ hide:
             **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
             **添加日历** : https://ctftime.org/event/2841.ics  
             
-        ??? Quote "[ImaginaryCTF 2025](https://2025.imaginaryctf.org/)"  
+        ??? Quote "[[POSTPONED] ImaginaryCTF 2025](https://2025.imaginaryctf.org/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://2025.imaginaryctf.org/)  
-            **比赛名称** : [ImaginaryCTF 2025](https://2025.imaginaryctf.org/)  
+            **比赛名称** : [[POSTPONED] ImaginaryCTF 2025](https://2025.imaginaryctf.org/)  
             **比赛形式** : Jeopardy  
             **比赛时间** : 2025-07-26 03:00:00 - 2025-07-28 03:00:00 UTC+8  
             **比赛权重** : 66.02  
