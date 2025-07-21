@@ -23,6 +23,15 @@ comments: true
     **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
     **添加日历** : https://ctftime.org/event/2784.ics  
     
+??? Quote "[AlpacaHack Round 13 (Crypto)](https://alpacahack.com/ctfs/round-13)"  
+    [![](https://ctftime.org/media/events/ctftime_12.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-13)  
+    **比赛名称** : [AlpacaHack Round 13 (Crypto)](https://alpacahack.com/ctfs/round-13)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-20 11:00:00 - 2025-07-20 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
+    **添加日历** : https://ctftime.org/event/2806.ics  
+    
 ??? Quote "[ToH CTF 2025](https://ctf.towerofhanoi.it/)"  
     [![](https://ctftime.org/media/events/tohctf25.jpeg){ width="200" align=left }](https://ctf.towerofhanoi.it/)  
     **比赛名称** : [ToH CTF 2025](https://ctf.towerofhanoi.it/)  
@@ -103,6 +112,15 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Offensive Skills (https://ctftime.org/team/389597)  
     **添加日历** : https://ctftime.org/event/2830.ics  
+    
+??? Quote "[AlpacaHack Round 12 (Crypto)](https://alpacahack.com/ctfs/round-12)"  
+    [![](https://ctftime.org/media/events/ctftime_11.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-12)  
+    **比赛名称** : [AlpacaHack Round 12 (Crypto)](https://alpacahack.com/ctfs/round-12)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-06 11:00:00 - 2025-07-06 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
+    **添加日历** : https://ctftime.org/event/2805.ics  
     
 ??? Quote "[BlitzCTF](https://ctf.blitzhack.xyz/)"  
     [![](https://ctftime.org/media/events/BlitzCTF.webp){ width="200" align=left }](https://ctf.blitzhack.xyz/)  
@@ -895,22 +913,4 @@ comments: true
     **比赛权重** : 23.65  
     **赛事主办** : FirewallFoxes, pony7 (https://ctftime.org/team/278913, https://ctftime.org/team/20769)  
     **添加日历** : https://ctftime.org/event/2660.ics  
-    
-??? Quote "[DEF CON CTF Qualifier 2025](https://nautilus.institute/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://nautilus.institute/)  
-    **比赛名称** : [DEF CON CTF Qualifier 2025](https://nautilus.institute/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-12 08:00:00 - 2025-04-14 08:00:00 UTC+8  
-    **比赛权重** : 69.44  
-    **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
-    **添加日历** : https://ctftime.org/event/2604.ics  
-    
-??? Quote "[Texas Security Awareness Week 2025](https://ctf.texsaw.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.texsaw.org/)  
-    **比赛名称** : [Texas Security Awareness Week 2025](https://ctf.texsaw.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-12 03:00:00 - 2025-04-14 03:00:00 UTC+8  
-    **比赛权重** : 31.00  
-    **赛事主办** : CSG (https://ctftime.org/team/333)  
-    **添加日历** : https://ctftime.org/event/2736.ics  
     

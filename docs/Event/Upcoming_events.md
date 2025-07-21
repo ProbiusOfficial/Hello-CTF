@@ -36,15 +36,6 @@ comments: true
     **赛事主办** : TODO: security (https://ctftime.org/team/288184)  
     **添加日历** : https://ctftime.org/event/2858.ics  
     
-??? Quote "[[POSTPONED] ImaginaryCTF 2025](https://2025.imaginaryctf.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://2025.imaginaryctf.org/)  
-    **比赛名称** : [[POSTPONED] ImaginaryCTF 2025](https://2025.imaginaryctf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-07-26 03:00:00 - 2025-07-28 03:00:00 UTC+8  
-    **比赛权重** : 66.02  
-    **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
-    **添加日历** : https://ctftime.org/event/2799.ics  
-    
 ??? Quote "[DeadSec CTF 2025](https://www.deadsec.xyz/)"  
     [![](https://ctftime.org/media/events/Picture1_2.png){ width="200" align=left }](https://www.deadsec.xyz/)  
     **比赛名称** : [DeadSec CTF 2025](https://www.deadsec.xyz/)  
@@ -206,6 +197,15 @@ comments: true
     **比赛权重** : 82.00  
     **赛事主办** : Crusaders of Rust (https://ctftime.org/team/132628)  
     **添加日历** : https://ctftime.org/event/2763.ics  
+    
+??? Quote "[[POSTPONED] ImaginaryCTF 2025](https://2025.imaginaryctf.org/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://2025.imaginaryctf.org/)  
+    **比赛名称** : [[POSTPONED] ImaginaryCTF 2025](https://2025.imaginaryctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-09-06 03:00:00 - 2025-09-08 03:00:00 UTC+8  
+    **比赛权重** : 66.02  
+    **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
+    **添加日历** : https://ctftime.org/event/2799.ics  
     
 ??? Quote "[ASIS CTF Quals 2025](https://asisctf.com/)"  
     [![](https://ctftime.org/media/events/asisctf_1.jpg){ width="200" align=left }](https://asisctf.com/)  

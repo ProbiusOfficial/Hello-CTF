@@ -36,18 +36,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "[POSTPONED] ImaginaryCTF 2025",
-        "比赛时间": "2025-07-26 03:00:00 - 2025-07-28 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2799.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2025.imaginaryctf.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "66.02",
-        "赛事主办": "ImaginaryCTF (https://ctftime.org/team/131529)",
-        "比赛ID": "615",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "DeadSec CTF 2025",
         "比赛时间": "2025-07-26 06:00:00 - 2025-07-28 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2631.ics",
@@ -261,6 +249,18 @@
         "比赛权重": "82.00",
         "赛事主办": "Crusaders of Rust (https://ctftime.org/team/132628)",
         "比赛ID": "627",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "[POSTPONED] ImaginaryCTF 2025",
+        "比赛时间": "2025-09-06 03:00:00 - 2025-09-08 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2799.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2025.imaginaryctf.org/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "66.02",
+        "赛事主办": "ImaginaryCTF (https://ctftime.org/team/131529)",
+        "比赛ID": "615",
         "比赛状态": "oncoming"
     },
     {
@@ -564,6 +564,18 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "AlpacaHack Round 13 (Crypto)",
+        "比赛时间": "2025-07-20 11:00:00 - 2025-07-20 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2806.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://alpacahack.com/ctfs/round-13",
+        "比赛标志": "https://ctftime.org/media/events/ctftime_12.png",
+        "比赛权重": "0",
+        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
+        "比赛ID": "1163",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "ToH CTF 2025",
         "比赛时间": "2025-07-20 00:00:00 - 2025-07-21 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2833.ics",
@@ -669,6 +681,18 @@
         "比赛权重": "0",
         "赛事主办": "Offensive Skills (https://ctftime.org/team/389597)",
         "比赛ID": "1350",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "AlpacaHack Round 12 (Crypto)",
+        "比赛时间": "2025-07-06 11:00:00 - 2025-07-06 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2805.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://alpacahack.com/ctfs/round-12",
+        "比赛标志": "https://ctftime.org/media/events/ctftime_11.png",
+        "比赛权重": "0",
+        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
+        "比赛ID": "1163",
         "比赛状态": "past"
     },
     {
@@ -1725,30 +1749,6 @@
         "比赛权重": "23.65",
         "赛事主办": "FirewallFoxes, pony7 (https://ctftime.org/team/278913, https://ctftime.org/team/20769)",
         "比赛ID": "181",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DEF CON CTF Qualifier 2025",
-        "比赛时间": "2025-04-12 08:00:00 - 2025-04-14 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2604.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nautilus.institute/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "69.44",
-        "赛事主办": "Nautilus Institute (https://ctftime.org/team/181536)",
-        "比赛ID": "1",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Texas Security Awareness Week 2025",
-        "比赛时间": "2025-04-12 03:00:00 - 2025-04-14 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2736.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.texsaw.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "31.00",
-        "赛事主办": "CSG (https://ctftime.org/team/333)",
-        "比赛ID": "926",
         "比赛状态": "past"
     }
 ]
