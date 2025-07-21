@@ -433,9 +433,9 @@ hide:
                 **赛事主办** : Brunnerne (https://ctftime.org/team/155032)  
                 **添加日历** : https://ctftime.org/event/2835.ics  
                 
-            ??? Quote "[HITCON CTF 2025](http://ctf.hitcon.org/)"  
-                [![](https://ctftime.org/media/events/83e99b182fd8f8a8e11a44a7c2f44557.png){ width="200" align=left }](http://ctf.hitcon.org/)  
-                **比赛名称** : [HITCON CTF 2025](http://ctf.hitcon.org/)  
+            ??? Quote "[HITCON CTF 2025](https://ctf2025.hitcon.org/)"  
+                [![](https://ctftime.org/media/events/83e99b182fd8f8a8e11a44a7c2f44557.png){ width="200" align=left }](https://ctf2025.hitcon.org/)  
+                **比赛名称** : [HITCON CTF 2025](https://ctf2025.hitcon.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-08-22 22:00:00 - 2025-08-24 22:00:00 UTC+8  
                 **比赛权重** : 100.00  
@@ -707,15 +707,7 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[BDSec CTF 2025](https://bdsec-ctf.com/)"  
-                [![](https://ctftime.org/media/events/bdsec-ctf-logo_1.png){ width="200" align=left }](https://bdsec-ctf.com/)  
-                **比赛名称** : [BDSec CTF 2025](https://bdsec-ctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-07-20 23:00:00 - 2025-07-21 23:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
-                **添加日历** : https://ctftime.org/event/2784.ics  
-                
+    
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[2025年能源网络安全大赛](https://www.cers.org.cn/site/content/883b36f00aff466fa37efcef0c074915.html)"  
@@ -726,6 +718,15 @@ hide:
                 **其他说明** : 2025年能源网络安全大赛由中国能源研究会主办，面向电网企业、发电及电力建设企业、石油石化企业、煤炭企业等单位网络安全技术、运维和管理人员，以及国内网络安全领域知名高校、科研机构、产业单位等代表。报名截止日期为2025年3月31日，可通过扫描二维码下载报名表并发送至icc@cers.org.cn邮箱。联系人包括屈庆红、李理和陈炜，可通过电话或邮箱进行咨询。  
                 
         === "国外赛事"
+            ??? Quote "[BDSec CTF 2025](https://bdsec-ctf.com/)"  
+                [![](https://ctftime.org/media/events/bdsec-ctf-logo_1.png){ width="200" align=left }](https://bdsec-ctf.com/)  
+                **比赛名称** : [BDSec CTF 2025](https://bdsec-ctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-07-20 23:00:00 - 2025-07-21 23:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
+                **添加日历** : https://ctftime.org/event/2784.ics  
+                
             ??? Quote "[ToH CTF 2025](https://ctf.towerofhanoi.it/)"  
                 [![](https://ctftime.org/media/events/tohctf25.jpeg){ width="200" align=left }](https://ctf.towerofhanoi.it/)  
                 **比赛名称** : [ToH CTF 2025](https://ctf.towerofhanoi.it/)  
@@ -1616,15 +1617,6 @@ hide:
                 **比赛权重** : 31.00  
                 **赛事主办** : CSG (https://ctftime.org/team/333)  
                 **添加日历** : https://ctftime.org/event/2736.ics  
-                
-            ??? Quote "[1753CTF 2025](https://1753ctf.com/)"  
-                [![](https://ctftime.org/media/events/badge_1.png){ width="200" align=left }](https://1753ctf.com/)  
-                **比赛名称** : [1753CTF 2025](https://1753ctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-12 01:00:00 - 2025-04-13 01:00:00 UTC+8  
-                **比赛权重** : 34.82  
-                **赛事主办** : 1753c (https://ctftime.org/team/178287)  
-                **添加日历** : https://ctftime.org/event/2639.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

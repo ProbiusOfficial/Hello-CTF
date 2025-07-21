@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[BDSec CTF 2025](https://bdsec-ctf.com/)"  
+    [![](https://ctftime.org/media/events/bdsec-ctf-logo_1.png){ width="200" align=left }](https://bdsec-ctf.com/)  
+    **比赛名称** : [BDSec CTF 2025](https://bdsec-ctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-20 23:00:00 - 2025-07-21 23:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
+    **添加日历** : https://ctftime.org/event/2784.ics  
+    
 ??? Quote "[ToH CTF 2025](https://ctf.towerofhanoi.it/)"  
     [![](https://ctftime.org/media/events/tohctf25.jpeg){ width="200" align=left }](https://ctf.towerofhanoi.it/)  
     **比赛名称** : [ToH CTF 2025](https://ctf.towerofhanoi.it/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 31.00  
     **赛事主办** : CSG (https://ctftime.org/team/333)  
     **添加日历** : https://ctftime.org/event/2736.ics  
-    
-??? Quote "[1753CTF 2025](https://1753ctf.com/)"  
-    [![](https://ctftime.org/media/events/badge_1.png){ width="200" align=left }](https://1753ctf.com/)  
-    **比赛名称** : [1753CTF 2025](https://1753ctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-12 01:00:00 - 2025-04-13 01:00:00 UTC+8  
-    **比赛权重** : 34.82  
-    **赛事主办** : 1753c (https://ctftime.org/team/178287)  
-    **添加日历** : https://ctftime.org/event/2639.ics  
     

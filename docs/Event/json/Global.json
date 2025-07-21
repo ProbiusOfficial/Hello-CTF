@@ -196,7 +196,7 @@
         "比赛时间": "2025-08-22 22:00:00 - 2025-08-24 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2783.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.hitcon.org/",
+        "比赛链接": "https://ctf2025.hitcon.org/",
         "比赛标志": "https://ctftime.org/media/events/83e99b182fd8f8a8e11a44a7c2f44557.png",
         "比赛权重": "100.00",
         "赛事主办": "HITCON (https://ctftime.org/team/8299)",
@@ -561,7 +561,7 @@
         "比赛权重": "0",
         "赛事主办": "Knight Squad (https://ctftime.org/team/141739)",
         "比赛ID": "811",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "ToH CTF 2025",
@@ -1749,18 +1749,6 @@
         "比赛权重": "31.00",
         "赛事主办": "CSG (https://ctftime.org/team/333)",
         "比赛ID": "926",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "1753CTF 2025",
-        "比赛时间": "2025-04-12 01:00:00 - 2025-04-13 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2639.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://1753ctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/badge_1.png",
-        "比赛权重": "34.82",
-        "赛事主办": "1753c (https://ctftime.org/team/178287)",
-        "比赛ID": "836",
         "比赛状态": "past"
     }
 ]
