@@ -305,7 +305,7 @@ PHP在处理哈希字符串时，它把每一个以“0E”开头的哈希值都
 
 这一点在 md5() / sha1() 都适用，以下是可用的payload：
 
-```md5 0e payload
+```
 # md5 0e payload
 QNKCDZO
 240610708
@@ -314,7 +314,7 @@ s155964671a
 s214587387a
 ```
 
-```sha1 0e payload
+```
 # sha1 0e payload
 aaroZmOk
 aaK1STfY
