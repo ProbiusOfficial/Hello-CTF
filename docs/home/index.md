@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Shakti CTF 2025](https://ctf.teamshakti.in/)"  
-            [![](https://ctftime.org/media/events/shakti1.png){ width="200" align=left }](https://ctf.teamshakti.in/)  
-            **比赛名称** : [Shakti CTF 2025](https://ctf.teamshakti.in/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-07-25 20:30:00 - 2025-07-26 20:30:00 UTC+8  
-            **比赛权重** : 34.10  
-            **赛事主办** : TeamShakti (https://ctftime.org/team/61083)  
-            **添加日历** : https://ctftime.org/event/2803.ics  
-            
         ??? Quote "[BelkaCTF #7](https://belkasoft.com/belkactf7/)"  
             [![](https://ctftime.org/media/events/belkaCTF_ctftime.png){ width="200" align=left }](https://belkasoft.com/belkactf7/)  
             **比赛名称** : [BelkaCTF #7](https://belkasoft.com/belkactf7/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 31.29  
             **赛事主办** : DeadSec (https://ctftime.org/team/19339)  
             **添加日历** : https://ctftime.org/event/2631.ics  
+            
+        ??? Quote "[UIUCTF 2025](https://2025.uiuc.tf/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://2025.uiuc.tf/)  
+            **比赛名称** : [UIUCTF 2025](https://2025.uiuc.tf/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-07-26 08:00:00 - 2025-07-28 08:00:00 UTC+8  
+            **比赛权重** : 91.43  
+            **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
+            **添加日历** : https://ctftime.org/event/2640.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
