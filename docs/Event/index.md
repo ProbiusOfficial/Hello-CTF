@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[DeadSec CTF 2025](https://www.deadsec.xyz/)"  
-                [![](https://ctftime.org/media/events/Picture1_2.png){ width="200" align=left }](https://www.deadsec.xyz/)  
-                **比赛名称** : [DeadSec CTF 2025](https://www.deadsec.xyz/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-07-26 06:00:00 - 2025-07-28 06:00:00 UTC+8  
-                **比赛权重** : 31.29  
-                **赛事主办** : DeadSec (https://ctftime.org/team/19339)  
-                **添加日历** : https://ctftime.org/event/2631.ics  
-                
             ??? Quote "[UIUCTF 2025](https://2025.uiuc.tf/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://2025.uiuc.tf/)  
                 **比赛名称** : [UIUCTF 2025](https://2025.uiuc.tf/)  
@@ -706,6 +697,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : TODO: security (https://ctftime.org/team/288184)  
                 **添加日历** : https://ctftime.org/event/2858.ics  
+                
+            ??? Quote "[DeadSec CTF 2025](https://www.deadsec.xyz/)"  
+                [![](https://ctftime.org/media/events/Picture1_2.png){ width="200" align=left }](https://www.deadsec.xyz/)  
+                **比赛名称** : [DeadSec CTF 2025](https://www.deadsec.xyz/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-07-26 06:00:00 - 2025-07-28 06:00:00 UTC+8  
+                **比赛权重** : 31.29  
+                **赛事主办** : DeadSec (https://ctftime.org/team/19339)  
+                **添加日历** : https://ctftime.org/event/2631.ics  
                 
     === "*已经结束*"
         === "国内赛事"
