@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[UIUCTF 2025](https://2025.uiuc.tf/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://2025.uiuc.tf/)  
-            **比赛名称** : [UIUCTF 2025](https://2025.uiuc.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-07-26 08:00:00 - 2025-07-28 08:00:00 UTC+8  
-            **比赛权重** : 91.43  
-            **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
-            **添加日历** : https://ctftime.org/event/2640.ics  
-            
         ??? Quote "[World Wide CTF 2025](https://wwctf.com/)"  
             [![](https://ctftime.org/media/events/ctftime.jpg){ width="200" align=left }](https://wwctf.com/)  
             **比赛名称** : [World Wide CTF 2025](https://wwctf.com/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 97.20  
             **赛事主办** : justCatTheFish (https://ctftime.org/team/33893)  
             **添加日历** : https://ctftime.org/event/2711.ics  
+            
+        ??? Quote "[WHY2025 CTF](https://ctf.why2025.org/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ctf.why2025.org/)  
+            **比赛名称** : [WHY2025 CTF](https://ctf.why2025.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-08-09 00:00:00 - 2025-08-12 00:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Eindbazen (https://ctftime.org/team/322)  
+            **添加日历** : https://ctftime.org/event/2680.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
