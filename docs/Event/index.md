@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[World Wide CTF 2025](https://wwctf.com/)"  
-                [![](https://ctftime.org/media/events/ctftime.jpg){ width="200" align=left }](https://wwctf.com/)  
-                **比赛名称** : [World Wide CTF 2025](https://wwctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-07-26 20:00:00 - 2025-07-28 20:00:00 UTC+8  
-                **比赛权重** : 24.48  
-                **赛事主办** : 🐧‎ (https://ctftime.org/team/283853)  
-                **添加日历** : https://ctftime.org/event/2753.ics  
-                
             ??? Quote "[idekCTF 2025](https://ctf.idek.team/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.idek.team/)  
                 **比赛名称** : [idekCTF 2025](https://ctf.idek.team/)  
@@ -662,15 +653,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Shakti CTF 2025](https://ctf.teamshakti.in/)"  
-                [![](https://ctftime.org/media/events/shakti1.png){ width="200" align=left }](https://ctf.teamshakti.in/)  
-                **比赛名称** : [Shakti CTF 2025](https://ctf.teamshakti.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-07-25 20:30:00 - 2025-07-26 20:30:00 UTC+8  
-                **比赛权重** : 34.10  
-                **赛事主办** : TeamShakti (https://ctftime.org/team/61083)  
-                **添加日历** : https://ctftime.org/event/2803.ics  
-                
             ??? Quote "[StackSmash CTF](http://ctf.hackthebox.com/)"  
                 [![](https://ctftime.org){ width="200" align=left }](http://ctf.hackthebox.com/)  
                 **比赛名称** : [StackSmash CTF](http://ctf.hackthebox.com/)  
@@ -707,6 +689,15 @@ hide:
                 **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
                 **添加日历** : https://ctftime.org/event/2640.ics  
                 
+            ??? Quote "[World Wide CTF 2025](https://wwctf.com/)"  
+                [![](https://ctftime.org/media/events/ctftime.jpg){ width="200" align=left }](https://wwctf.com/)  
+                **比赛名称** : [World Wide CTF 2025](https://wwctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-07-26 20:00:00 - 2025-07-28 20:00:00 UTC+8  
+                **比赛权重** : 24.48  
+                **赛事主办** : 🐧‎ (https://ctftime.org/team/283853)  
+                **添加日历** : https://ctftime.org/event/2753.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[2025年能源网络安全大赛](https://www.cers.org.cn/site/content/883b36f00aff466fa37efcef0c074915.html)"  
@@ -717,6 +708,15 @@ hide:
                 **其他说明** : 2025年能源网络安全大赛由中国能源研究会主办，面向电网企业、发电及电力建设企业、石油石化企业、煤炭企业等单位网络安全技术、运维和管理人员，以及国内网络安全领域知名高校、科研机构、产业单位等代表。报名截止日期为2025年3月31日，可通过扫描二维码下载报名表并发送至icc@cers.org.cn邮箱。联系人包括屈庆红、李理和陈炜，可通过电话或邮箱进行咨询。  
                 
         === "国外赛事"
+            ??? Quote "[Shakti CTF 2025](https://ctf.teamshakti.in/)"  
+                [![](https://ctftime.org/media/events/shakti1.png){ width="200" align=left }](https://ctf.teamshakti.in/)  
+                **比赛名称** : [Shakti CTF 2025](https://ctf.teamshakti.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-07-25 20:30:00 - 2025-07-26 20:30:00 UTC+8  
+                **比赛权重** : 34.10  
+                **赛事主办** : TeamShakti (https://ctftime.org/team/61083)  
+                **添加日历** : https://ctftime.org/event/2803.ics  
+                
             ??? Quote "[BDSec CTF 2025](https://bdsec-ctf.com/)"  
                 [![](https://ctftime.org/media/events/bdsec-ctf-logo_1.png){ width="200" align=left }](https://bdsec-ctf.com/)  
                 **比赛名称** : [BDSec CTF 2025](https://bdsec-ctf.com/)  
@@ -1607,15 +1607,6 @@ hide:
                 **比赛权重** : 24.50  
                 **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
                 **添加日历** : https://ctftime.org/event/2687.ics  
-                
-            ??? Quote "[THCon 2K25 CTF](https://thcon.party/)"  
-                [![](https://ctftime.org/media/events/Sans_titre.ico){ width="200" align=left }](https://thcon.party/)  
-                **比赛名称** : [THCon 2K25 CTF](https://thcon.party/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-12 16:00:00 - 2025-04-13 16:00:00 UTC+8  
-                **比赛权重** : 23.65  
-                **赛事主办** : FirewallFoxes, pony7 (https://ctftime.org/team/278913, https://ctftime.org/team/20769)  
-                **添加日历** : https://ctftime.org/event/2660.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

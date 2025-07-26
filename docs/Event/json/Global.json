@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "World Wide CTF 2025",
-        "比赛时间": "2025-07-26 20:00:00 - 2025-07-28 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2753.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://wwctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/ctftime.jpg",
-        "比赛权重": "24.48",
-        "赛事主办": "🐧‎ (https://ctftime.org/team/283853)",
-        "比赛ID": "1208",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "idekCTF 2025",
         "比赛时间": "2025-08-02 08:00:00 - 2025-08-04 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2746.ics",
@@ -492,18 +480,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Shakti CTF 2025",
-        "比赛时间": "2025-07-25 20:30:00 - 2025-07-26 20:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2803.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.teamshakti.in/",
-        "比赛标志": "https://ctftime.org/media/events/shakti1.png",
-        "比赛权重": "34.10",
-        "赛事主办": "TeamShakti (https://ctftime.org/team/61083)",
-        "比赛ID": "521",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "StackSmash CTF",
         "比赛时间": "2025-07-25 21:00:00 - 2025-07-28 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2841.ics",
@@ -550,6 +526,30 @@
         "赛事主办": "SIGPwny (https://ctftime.org/team/27763)",
         "比赛ID": "95",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "World Wide CTF 2025",
+        "比赛时间": "2025-07-26 20:00:00 - 2025-07-28 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2753.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://wwctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/ctftime.jpg",
+        "比赛权重": "24.48",
+        "赛事主办": "🐧‎ (https://ctftime.org/team/283853)",
+        "比赛ID": "1208",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Shakti CTF 2025",
+        "比赛时间": "2025-07-25 20:30:00 - 2025-07-26 20:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2803.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.teamshakti.in/",
+        "比赛标志": "https://ctftime.org/media/events/shakti1.png",
+        "比赛权重": "34.10",
+        "赛事主办": "TeamShakti (https://ctftime.org/team/61083)",
+        "比赛ID": "521",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "BDSec CTF 2025",
@@ -1737,18 +1737,6 @@
         "比赛权重": "24.50",
         "赛事主办": "Midnight Flag (https://ctftime.org/team/179110)",
         "比赛ID": "761",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "THCon 2K25 CTF",
-        "比赛时间": "2025-04-12 16:00:00 - 2025-04-13 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2660.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://thcon.party/",
-        "比赛标志": "https://ctftime.org/media/events/Sans_titre.ico",
-        "比赛权重": "23.65",
-        "赛事主办": "FirewallFoxes, pony7 (https://ctftime.org/team/278913, https://ctftime.org/team/20769)",
-        "比赛ID": "181",
         "比赛状态": "past"
     }
 ]

@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[World Wide CTF 2025](https://wwctf.com/)"  
-            [![](https://ctftime.org/media/events/ctftime.jpg){ width="200" align=left }](https://wwctf.com/)  
-            **比赛名称** : [World Wide CTF 2025](https://wwctf.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-07-26 20:00:00 - 2025-07-28 20:00:00 UTC+8  
-            **比赛权重** : 24.48  
-            **赛事主办** : 🐧‎ (https://ctftime.org/team/283853)  
-            **添加日历** : https://ctftime.org/event/2753.ics  
-            
         ??? Quote "[idekCTF 2025](https://ctf.idek.team/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://ctf.idek.team/)  
             **比赛名称** : [idekCTF 2025](https://ctf.idek.team/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Eindbazen (https://ctftime.org/team/322)  
             **添加日历** : https://ctftime.org/event/2680.ics  
+            
+        ??? Quote "[CSD CTF 2025](https://cyberstudents.net/ctf)"  
+            [![](https://ctftime.org/media/events/Cyberstudents.png){ width="200" align=left }](https://cyberstudents.net/ctf)  
+            **比赛名称** : [CSD CTF 2025](https://cyberstudents.net/ctf)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-08-09 05:00:00 - 2025-08-11 05:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
+            **添加日历** : https://ctftime.org/event/2832.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

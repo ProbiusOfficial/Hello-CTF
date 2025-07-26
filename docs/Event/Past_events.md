@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Shakti CTF 2025](https://ctf.teamshakti.in/)"  
+    [![](https://ctftime.org/media/events/shakti1.png){ width="200" align=left }](https://ctf.teamshakti.in/)  
+    **比赛名称** : [Shakti CTF 2025](https://ctf.teamshakti.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-25 20:30:00 - 2025-07-26 20:30:00 UTC+8  
+    **比赛权重** : 34.10  
+    **赛事主办** : TeamShakti (https://ctftime.org/team/61083)  
+    **添加日历** : https://ctftime.org/event/2803.ics  
+    
 ??? Quote "[BDSec CTF 2025](https://bdsec-ctf.com/)"  
     [![](https://ctftime.org/media/events/bdsec-ctf-logo_1.png){ width="200" align=left }](https://bdsec-ctf.com/)  
     **比赛名称** : [BDSec CTF 2025](https://bdsec-ctf.com/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 24.50  
     **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
     **添加日历** : https://ctftime.org/event/2687.ics  
-    
-??? Quote "[THCon 2K25 CTF](https://thcon.party/)"  
-    [![](https://ctftime.org/media/events/Sans_titre.ico){ width="200" align=left }](https://thcon.party/)  
-    **比赛名称** : [THCon 2K25 CTF](https://thcon.party/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-12 16:00:00 - 2025-04-13 16:00:00 UTC+8  
-    **比赛权重** : 23.65  
-    **赛事主办** : FirewallFoxes, pony7 (https://ctftime.org/team/278913, https://ctftime.org/team/20769)  
-    **添加日历** : https://ctftime.org/event/2660.ics  
     
