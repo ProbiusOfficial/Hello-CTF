@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[StackSmash CTF](http://ctf.hackthebox.com/)"  
-    [![](https://ctftime.org){ width="200" align=left }](http://ctf.hackthebox.com/)  
-    **比赛名称** : [StackSmash CTF](http://ctf.hackthebox.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-07-25 21:00:00 - 2025-07-28 05:00:00 UTC+8  
-    **比赛权重** : 24.00  
-    **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
-    **添加日历** : https://ctftime.org/event/2841.ics  
-    
 ??? Quote "[DeadSec CTF 2025](https://www.deadsec.xyz/)"  
     [![](https://ctftime.org/media/events/Picture1_2.png){ width="200" align=left }](https://www.deadsec.xyz/)  
     **比赛名称** : [DeadSec CTF 2025](https://www.deadsec.xyz/)  

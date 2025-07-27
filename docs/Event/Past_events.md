@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[StackSmash CTF](http://ctf.hackthebox.com/)"  
+    [![](https://ctftime.org){ width="200" align=left }](http://ctf.hackthebox.com/)  
+    **比赛名称** : [StackSmash CTF](http://ctf.hackthebox.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-25 21:00:00 - 2025-07-28 05:00:00 UTC+8  
+    **比赛权重** : 24.00  
+    **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
+    **添加日历** : https://ctftime.org/event/2841.ics  
+    
 ??? Quote "[BelkaCTF #7](https://belkasoft.com/belkactf7/)"  
     [![](https://ctftime.org/media/events/belkaCTF_ctftime.png){ width="200" align=left }](https://belkasoft.com/belkactf7/)  
     **比赛名称** : [BelkaCTF #7](https://belkasoft.com/belkactf7/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
     **添加日历** : https://ctftime.org/event/2659.ics  
-    
-??? Quote "[Challenge the Cyber - Security Samurais](https://challengethecyber.nl/)"  
-    [![](https://ctftime.org/media/events/ed5e44feb7f4c1e2ca1d000808871c14.jpg){ width="200" align=left }](https://challengethecyber.nl/)  
-    **比赛名称** : [Challenge the Cyber - Security Samurais](https://challengethecyber.nl/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-12 17:00:00 - 2025-04-12 23:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Challenge the Cyber (https://ctftime.org/team/181210)  
-    **添加日历** : https://ctftime.org/event/2701.ics  
     
