@@ -480,18 +480,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "DeadSec CTF 2025",
-        "比赛时间": "2025-07-26 06:00:00 - 2025-07-28 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2631.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.deadsec.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/Picture1_2.png",
-        "比赛权重": "31.29",
-        "赛事主办": "DeadSec (https://ctftime.org/team/19339)",
-        "比赛ID": "268",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "UIUCTF 2025",
         "比赛时间": "2025-07-26 08:00:00 - 2025-07-28 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2640.ics",
@@ -514,6 +502,18 @@
         "赛事主办": "🐧‎ (https://ctftime.org/team/283853)",
         "比赛ID": "1208",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "DeadSec CTF 2025",
+        "比赛时间": "2025-07-26 06:00:00 - 2025-07-28 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2631.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.deadsec.xyz/",
+        "比赛标志": "https://ctftime.org/media/events/Picture1_2.png",
+        "比赛权重": "31.29",
+        "赛事主办": "DeadSec (https://ctftime.org/team/19339)",
+        "比赛ID": "268",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "StackSmash CTF",
@@ -1701,18 +1701,6 @@
         "比赛权重": "0.00",
         "赛事主办": "CyberVT (https://ctftime.org/team/173872)",
         "比赛ID": "1249",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "PwnMe CTF Finals 2025",
-        "比赛时间": "2025-04-12 18:00:00 - 2025-04-13 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2659.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://pwnme.fr/",
-        "比赛标志": "https://ctftime.org/media/events/PWNME_ReseauxPP1.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "PHREAKS 2600 (https://ctftime.org/team/200877)",
-        "比赛ID": "1141",
         "比赛状态": "past"
     }
 ]

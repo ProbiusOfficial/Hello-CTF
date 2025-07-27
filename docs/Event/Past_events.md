@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[DeadSec CTF 2025](https://www.deadsec.xyz/)"  
+    [![](https://ctftime.org/media/events/Picture1_2.png){ width="200" align=left }](https://www.deadsec.xyz/)  
+    **比赛名称** : [DeadSec CTF 2025](https://www.deadsec.xyz/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-07-26 06:00:00 - 2025-07-28 06:00:00 UTC+8  
+    **比赛权重** : 31.29  
+    **赛事主办** : DeadSec (https://ctftime.org/team/19339)  
+    **添加日历** : https://ctftime.org/event/2631.ics  
+    
 ??? Quote "[StackSmash CTF](http://ctf.hackthebox.com/)"  
     [![](https://ctftime.org){ width="200" align=left }](http://ctf.hackthebox.com/)  
     **比赛名称** : [StackSmash CTF](http://ctf.hackthebox.com/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : CyberVT (https://ctftime.org/team/173872)  
     **添加日历** : https://ctftime.org/event/2662.ics  
-    
-??? Quote "[PwnMe CTF Finals 2025](https://pwnme.fr/)"  
-    [![](https://ctftime.org/media/events/PWNME_ReseauxPP1.jpg){ width="200" align=left }](https://pwnme.fr/)  
-    **比赛名称** : [PwnMe CTF Finals 2025](https://pwnme.fr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-12 18:00:00 - 2025-04-13 04:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : PHREAKS 2600 (https://ctftime.org/team/200877)  
-    **添加日历** : https://ctftime.org/event/2659.ics  
     
