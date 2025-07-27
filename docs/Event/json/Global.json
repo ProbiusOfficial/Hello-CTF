@@ -492,18 +492,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "BelkaCTF #7",
-        "比赛时间": "2025-07-25 21:00:00 - 2025-07-27 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2858.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://belkasoft.com/belkactf7/",
-        "比赛标志": "https://ctftime.org/media/events/belkaCTF_ctftime.png",
-        "比赛权重": "0",
-        "赛事主办": "TODO: security (https://ctftime.org/team/288184)",
-        "比赛ID": "1105",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "DeadSec CTF 2025",
         "比赛时间": "2025-07-26 06:00:00 - 2025-07-28 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2631.ics",
@@ -538,6 +526,18 @@
         "赛事主办": "🐧‎ (https://ctftime.org/team/283853)",
         "比赛ID": "1208",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "BelkaCTF #7",
+        "比赛时间": "2025-07-25 21:00:00 - 2025-07-27 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2858.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://belkasoft.com/belkactf7/",
+        "比赛标志": "https://ctftime.org/media/events/belkaCTF_ctftime.png",
+        "比赛权重": "0",
+        "赛事主办": "TODO: security (https://ctftime.org/team/288184)",
+        "比赛ID": "1105",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Shakti CTF 2025",
@@ -1725,18 +1725,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Challenge the Cyber (https://ctftime.org/team/181210)",
         "比赛ID": "776",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Midnight Flag CTF - INSURRECTION",
-        "比赛时间": "2025-04-12 16:00:00 - 2025-04-14 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2687.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://midnightflag.fr/",
-        "比赛标志": "https://ctftime.org/media/events/logo-midnightflag_500.png",
-        "比赛权重": "24.50",
-        "赛事主办": "Midnight Flag (https://ctftime.org/team/179110)",
-        "比赛ID": "761",
         "比赛状态": "past"
     }
 ]
