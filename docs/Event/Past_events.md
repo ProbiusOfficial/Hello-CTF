@@ -55,7 +55,7 @@ comments: true
     **比赛名称** : [ToH CTF 2025](https://ctf.towerofhanoi.it/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-07-20 00:00:00 - 2025-07-21 00:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : Tower of Hanoi (https://ctftime.org/team/300)  
     **添加日历** : https://ctftime.org/event/2833.ics  
     
