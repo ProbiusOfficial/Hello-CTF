@@ -73,7 +73,7 @@ comments: true
     **比赛名称** : [BDSec CTF 2025](https://bdsec-ctf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-07-20 23:00:00 - 2025-07-21 23:00:00 UTC+8  
-    **比赛权重** : 17.22  
+    **比赛权重** : 16.41  
     **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
     **添加日历** : https://ctftime.org/event/2784.ics  
     
@@ -91,7 +91,7 @@ comments: true
     **比赛名称** : [ToH CTF 2025](https://ctf.towerofhanoi.it/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-07-20 00:00:00 - 2025-07-21 00:00:00 UTC+8  
-    **比赛权重** : 24.21  
+    **比赛权重** : 24.27  
     **赛事主办** : Tower of Hanoi (https://ctftime.org/team/300)  
     **添加日历** : https://ctftime.org/event/2833.ics  
     

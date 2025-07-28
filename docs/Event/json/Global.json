@@ -36,6 +36,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Startpwn CTF 2025",
+        "比赛时间": "2025-08-09 00:00:00 - 2025-08-10 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2855.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://app.metactf.com/starpwn-2025",
+        "比赛标志": "https://ctftime.org/media/events/starpwn_logo_cr.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Visionspace (https://ctftime.org/team/383284)",
+        "比赛ID": "1322",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "scriptCTF 2025",
         "比赛时间": "2025-08-16 08:00:00 - 2025-08-18 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2792.ics",
@@ -546,7 +558,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://bdsec-ctf.com/",
         "比赛标志": "https://ctftime.org/media/events/bdsec-ctf-logo_1.png",
-        "比赛权重": "17.22",
+        "比赛权重": "16.41",
         "赛事主办": "Knight Squad (https://ctftime.org/team/141739)",
         "比赛ID": "811",
         "比赛状态": "past"
@@ -570,7 +582,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.towerofhanoi.it/",
         "比赛标志": "https://ctftime.org/media/events/tohctf25.jpeg",
-        "比赛权重": "24.21",
+        "比赛权重": "24.27",
         "赛事主办": "Tower of Hanoi (https://ctftime.org/team/300)",
         "比赛ID": "1345",
         "比赛状态": "past"

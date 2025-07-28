@@ -316,6 +316,15 @@ hide:
                 **赛事主办** : Eindbazen (https://ctftime.org/team/322)  
                 **添加日历** : https://ctftime.org/event/2680.ics  
                 
+            ??? Quote "[Startpwn CTF 2025](https://app.metactf.com/starpwn-2025)"  
+                [![](https://ctftime.org/media/events/starpwn_logo_cr.png){ width="200" align=left }](https://app.metactf.com/starpwn-2025)  
+                **比赛名称** : [Startpwn CTF 2025](https://app.metactf.com/starpwn-2025)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-08-09 00:00:00 - 2025-08-10 03:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Visionspace (https://ctftime.org/team/383284)  
+                **添加日历** : https://ctftime.org/event/2855.ics  
+                
             ??? Quote "[scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)"  
                 [![](https://ctftime.org/media/events/final_logo.png){ width="200" align=left }](https://ctf.scriptsorcerers.xyz/)  
                 **比赛名称** : [scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)  
@@ -714,7 +723,7 @@ hide:
                 **比赛名称** : [BDSec CTF 2025](https://bdsec-ctf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-07-20 23:00:00 - 2025-07-21 23:00:00 UTC+8  
-                **比赛权重** : 17.22  
+                **比赛权重** : 16.41  
                 **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
                 **添加日历** : https://ctftime.org/event/2784.ics  
                 
@@ -732,7 +741,7 @@ hide:
                 **比赛名称** : [ToH CTF 2025](https://ctf.towerofhanoi.it/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-07-20 00:00:00 - 2025-07-21 00:00:00 UTC+8  
-                **比赛权重** : 24.21  
+                **比赛权重** : 24.27  
                 **赛事主办** : Tower of Hanoi (https://ctftime.org/team/300)  
                 **添加日历** : https://ctftime.org/event/2833.ics  
                 
