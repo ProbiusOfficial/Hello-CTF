@@ -691,15 +691,6 @@ hide:
                 **赛事主办** : DeadSec (https://ctftime.org/team/19339)  
                 **添加日历** : https://ctftime.org/event/2631.ics  
                 
-            ??? Quote "[StackSmash CTF](http://ctf.hackthebox.com/)"  
-                [![](https://ctftime.org){ width="200" align=left }](http://ctf.hackthebox.com/)  
-                **比赛名称** : [StackSmash CTF](http://ctf.hackthebox.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-07-25 21:00:00 - 2025-07-28 05:00:00 UTC+8  
-                **比赛权重** : 24.00  
-                **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
-                **添加日历** : https://ctftime.org/event/2841.ics  
-                
             ??? Quote "[BelkaCTF #7](https://belkasoft.com/belkactf7/)"  
                 [![](https://ctftime.org/media/events/belkaCTF_ctftime.png){ width="200" align=left }](https://belkasoft.com/belkactf7/)  
                 **比赛名称** : [BelkaCTF #7](https://belkasoft.com/belkactf7/)  
@@ -708,6 +699,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : TODO: security (https://ctftime.org/team/288184)  
                 **添加日历** : https://ctftime.org/event/2858.ics  
+                
+            ??? Quote "[StackSmash CTF](http://ctf.hackthebox.com/)"  
+                [![](https://ctftime.org){ width="200" align=left }](http://ctf.hackthebox.com/)  
+                **比赛名称** : [StackSmash CTF](http://ctf.hackthebox.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-07-25 21:00:00 - 2025-07-28 05:00:00 UTC+8  
+                **比赛权重** : 24.00  
+                **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
+                **添加日历** : https://ctftime.org/event/2841.ics  
                 
             ??? Quote "[Shakti CTF 2025](https://ctf.teamshakti.in/)"  
                 [![](https://ctftime.org/media/events/shakti1.png){ width="200" align=left }](https://ctf.teamshakti.in/)  
@@ -723,7 +723,7 @@ hide:
                 **比赛名称** : [BDSec CTF 2025](https://bdsec-ctf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-07-20 23:00:00 - 2025-07-21 23:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 17.22  
                 **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
                 **添加日历** : https://ctftime.org/event/2784.ics  
                 
