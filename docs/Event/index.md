@@ -653,15 +653,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[UIUCTF 2025](https://2025.uiuc.tf/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://2025.uiuc.tf/)  
-                **比赛名称** : [UIUCTF 2025](https://2025.uiuc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-07-26 08:00:00 - 2025-07-28 08:00:00 UTC+8  
-                **比赛权重** : 91.43  
-                **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
-                **添加日历** : https://ctftime.org/event/2640.ics  
-                
             ??? Quote "[World Wide CTF 2025](https://wwctf.com/)"  
                 [![](https://ctftime.org/media/events/ctftime.jpg){ width="200" align=left }](https://wwctf.com/)  
                 **比赛名称** : [World Wide CTF 2025](https://wwctf.com/)  
@@ -681,6 +672,15 @@ hide:
                 **其他说明** : 2025年能源网络安全大赛由中国能源研究会主办，面向电网企业、发电及电力建设企业、石油石化企业、煤炭企业等单位网络安全技术、运维和管理人员，以及国内网络安全领域知名高校、科研机构、产业单位等代表。报名截止日期为2025年3月31日，可通过扫描二维码下载报名表并发送至icc@cers.org.cn邮箱。联系人包括屈庆红、李理和陈炜，可通过电话或邮箱进行咨询。  
                 
         === "国外赛事"
+            ??? Quote "[UIUCTF 2025](https://2025.uiuc.tf/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://2025.uiuc.tf/)  
+                **比赛名称** : [UIUCTF 2025](https://2025.uiuc.tf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-07-26 08:00:00 - 2025-07-28 08:00:00 UTC+8  
+                **比赛权重** : 91.43  
+                **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
+                **添加日历** : https://ctftime.org/event/2640.ics  
+                
             ??? Quote "[DeadSec CTF 2025](https://www.deadsec.xyz/)"  
                 [![](https://ctftime.org/media/events/Picture1_2.png){ width="200" align=left }](https://www.deadsec.xyz/)  
                 **比赛名称** : [DeadSec CTF 2025](https://www.deadsec.xyz/)  
@@ -1571,15 +1571,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : IIT JAMMU (https://ctftime.org/team/375458)  
                 **添加日历** : https://ctftime.org/event/2745.ics  
-                
-            ??? Quote "[SummitCTF 2025](https://summitctf.org/)"  
-                [![](https://ctftime.org/media/events/Summitctf.png){ width="200" align=left }](https://summitctf.org/)  
-                **比赛名称** : [SummitCTF 2025](https://summitctf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-12 22:00:00 - 2025-04-13 22:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : CyberVT (https://ctftime.org/team/173872)  
-                **添加日历** : https://ctftime.org/event/2662.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
