@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅析U8Cloud最新权限绕过至RCE](https://y4tacker.github.io/2025/07/30/year/2025/07/%E6%B5%85%E6%9E%90U8Cloud%E6%9C%80%E6%96%B0%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E8%87%B3RCE/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-07-30
+
+    188fdb5a90e862409c62335614d03b9fc1fb489ee368a48d2adae972466363f6b4381b265f91d116ee77cc5e4b1a04e0a73be2d6a6830a1fb3c3c0925484501d1bfe2c517fe10ef843b1f29adb7670b3c12e8970f0c15cc99bded967217d7515b21e20...
     ### [契约锁前台代码执行补丁绕过(20250707)](https://y4tacker.github.io/2025/07/12/year/2025/07/%E5%A5%91%E7%BA%A6%E9%94%81%E5%89%8D%E5%8F%B0%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E8%A1%A5%E4%B8%81%E7%BB%95%E8%BF%87-20250707/)  
     >by [Y4tacker](https://y4tacker.github.io), 2025-07-12
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2025-01-24
 
     深入研究一下线程调度，由于篇幅较多，分章节分析SwapContext首先研究一下 SwapContext 函数的实现。伪代码分析这里我们不去分析汇编代码，而是直接用 IDA + F5，把定义还原回去即可清晰地看出逻辑12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505...
-    ### [windows进程与线程学习——调度实现的学习](https://xia0ji233.github.io/2025/01/24/WindowsProcess3/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-24
-
-    来学习一下 Windows 线程调度的实现Windows中有一个函数SwapContext用来实现线程切换，我们先得了解一下什么情况下会引发线程切换。线程切换途径分主动切换和被动切换，很好理解，主动切换就是线程主动让出 CPU 执行，被动就是被打断而不得不让出 CPU。在做实验的时候，多核真的是很困扰的一个问题，想了半天想不明白多核怎么工作的，为了好理解线程切换，建议虚拟机都换成单核的，线程大多数...
 
 </div>
