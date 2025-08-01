@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "idekCTF 2025",
-        "比赛时间": "2025-08-02 08:00:00 - 2025-08-04 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2746.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.idek.team/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "52.06",
-        "赛事主办": "idek (https://ctftime.org/team/157039)",
-        "比赛ID": "700",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "justCTF 2025",
         "比赛时间": "2025-08-02 14:00:00 - 2025-08-04 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2711.ics",
@@ -21,6 +9,18 @@
         "比赛权重": "97.20",
         "赛事主办": "justCatTheFish (https://ctftime.org/team/33893)",
         "比赛ID": "399",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "idekCTF 2025",
+        "比赛时间": "2025-08-02 16:00:00 - 2025-08-04 16:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2746.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.idek.team/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "52.06",
+        "赛事主办": "idek (https://ctftime.org/team/157039)",
+        "比赛ID": "700",
         "比赛状态": "oncoming"
     },
     {
