@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[idekCTF 2025](https://ctf.idek.team/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctf.idek.team/)  
-            **比赛名称** : [idekCTF 2025](https://ctf.idek.team/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-08-02 16:00:00 - 2025-08-04 16:00:00 UTC+8  
-            **比赛权重** : 52.06  
-            **赛事主办** : idek (https://ctftime.org/team/157039)  
-            **添加日历** : https://ctftime.org/event/2746.ics  
-            
         ??? Quote "[Startpwn CTF 2025](https://app.metactf.com/starpwn-2025)"  
             [![](https://ctftime.org/media/events/starpwn_logo_cr.png){ width="200" align=left }](https://app.metactf.com/starpwn-2025)  
             **比赛名称** : [Startpwn CTF 2025](https://app.metactf.com/starpwn-2025)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : ScriptSorcerers (https://ctftime.org/team/284260)  
             **添加日历** : https://ctftime.org/event/2792.ics  
+            
+        ??? Quote "[SekaiCTF 2025](https://ctf.sekai.team/)"  
+            [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
+            **比赛名称** : [SekaiCTF 2025](https://ctf.sekai.team/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-08-16 09:00:00 - 2025-08-18 09:00:00 UTC+8  
+            **比赛权重** : 55.00  
+            **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
+            **添加日历** : https://ctftime.org/event/2683.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
