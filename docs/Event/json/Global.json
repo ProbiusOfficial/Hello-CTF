@@ -558,7 +558,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://bdsec-ctf.com/",
         "比赛标志": "https://ctftime.org/media/events/bdsec-ctf-logo_1.png",
-        "比赛权重": "16.41",
+        "比赛权重": "15.81",
         "赛事主办": "Knight Squad (https://ctftime.org/team/141739)",
         "比赛ID": "811",
         "比赛状态": "past"
@@ -762,7 +762,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://cubectf.com/",
         "比赛标志": "https://ctftime.org/media/events/CubeMasteryLogo.png",
-        "比赛权重": "24.68",
+        "比赛权重": "24.70",
         "赛事主办": "CubeMastery (https://ctftime.org/team/168744)",
         "比赛ID": "1277",
         "比赛状态": "past"
