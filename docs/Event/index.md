@@ -320,6 +320,15 @@ hide:
                 **赛事主办** : Visionspace (https://ctftime.org/team/383284)  
                 **添加日历** : https://ctftime.org/event/2855.ics  
                 
+            ??? Quote "[CSD CTF 2025](https://cyberstudents.net/ctf)"  
+                [![](https://ctftime.org/media/events/Cyberstudents.png){ width="200" align=left }](https://cyberstudents.net/ctf)  
+                **比赛名称** : [CSD CTF 2025](https://cyberstudents.net/ctf)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-08-09 05:00:00 - 2025-08-11 05:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
+                **添加日历** : https://ctftime.org/event/2832.ics  
+                
             ??? Quote "[scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)"  
                 [![](https://ctftime.org/media/events/final_logo.png){ width="200" align=left }](https://ctf.scriptsorcerers.xyz/)  
                 **比赛名称** : [scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)  
@@ -337,6 +346,15 @@ hide:
                 **比赛权重** : 55.00  
                 **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
                 **添加日历** : https://ctftime.org/event/2683.ics  
+                
+            ??? Quote "[CRHC CTF 2025](https://ctfd.crhc.club/)"  
+                [![](https://ctftime.org/media/events/7FDC26F1-0360-4E58-B626-7831E8CC576E.png){ width="200" align=left }](https://ctfd.crhc.club/)  
+                **比赛名称** : [CRHC CTF 2025](https://ctfd.crhc.club/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-08-16 17:00:00 - 2025-08-18 17:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : CRHC-CTF (https://ctftime.org/team/394472)  
+                **添加日历** : https://ctftime.org/event/2873.ics  
                 
             ??? Quote "[CTFZone 2025 Quals](https://ctf.bi.zone/)"  
                 [![](https://ctftime.org/media/events/ctfzone_logo_1.png){ width="200" align=left }](https://ctf.bi.zone/)  
@@ -383,6 +401,15 @@ hide:
                 **赛事主办** : Sawah Cyber Security (https://ctftime.org/team/389651)  
                 **添加日历** : https://ctftime.org/event/2824.ics  
                 
+            ??? Quote "[PECAN+ CTF 2025](https://pecanplus.org/)"  
+                [![](https://ctftime.org/media/events/pecanlogo.png){ width="200" align=left }](https://pecanplus.org/)  
+                **比赛名称** : [PECAN+ CTF 2025](https://pecanplus.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-08-24 09:00:00 - 2025-08-24 13:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : PECAN+ (https://ctftime.org/team/250009)  
+                **添加日历** : https://ctftime.org/event/2882.ics  
+                
             ??? Quote "[TFC CTF 2025](https://ctf.thefewchosen.com/)"  
                 [![](https://ctftime.org/media/events/discord_logo_4.png){ width="200" align=left }](https://ctf.thefewchosen.com/)  
                 **比赛名称** : [TFC CTF 2025](https://ctf.thefewchosen.com/)  
@@ -391,6 +418,24 @@ hide:
                 **比赛权重** : 58.19  
                 **赛事主办** : The Few Chosen (https://ctftime.org/team/140885)  
                 **添加日历** : https://ctftime.org/event/2822.ics  
+                
+            ??? Quote "[Full Weak Engineer CTF 2025](https://ctf.fwectf.com/)"  
+                [![](https://ctftime.org/media/events/icon-2.png){ width="200" align=left }](https://ctf.fwectf.com/)  
+                **比赛名称** : [Full Weak Engineer CTF 2025](https://ctf.fwectf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-08-29 18:00:00 - 2025-08-31 18:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : full_weak_engineer (https://ctftime.org/team/305489)  
+                **添加日历** : https://ctftime.org/event/2864.ics  
+                
+            ??? Quote "[Blue Arena](https://csem.sturtles.in/events/2/)"  
+                [![](https://ctftime.org/media/events/BA.png){ width="200" align=left }](https://csem.sturtles.in/events/2/)  
+                **比赛名称** : [Blue Arena](https://csem.sturtles.in/events/2/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-08-29 22:04:15 - 2025-08-31 22:33:59 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Super_Hacker (https://ctftime.org/team/195477)  
+                **添加日历** : https://ctftime.org/event/2849.ics  
                 
             ??? Quote "[NNS CTF 2025](https://nnsc.tf/)"  
                 [![](https://ctftime.org/media/events/Logo_D.png){ width="200" align=left }](https://nnsc.tf/)  
@@ -419,6 +464,15 @@ hide:
                 **赛事主办** : Crusaders of Rust (https://ctftime.org/team/132628)  
                 **添加日历** : https://ctftime.org/event/2763.ics  
                 
+            ??? Quote "[Nullcon Berlin HackIM 2025 CTF](https://ctf.nullcon.net/)"  
+                [![](https://ctftime.org/media/events/hackim.png){ width="200" align=left }](https://ctf.nullcon.net/)  
+                **比赛名称** : [Nullcon Berlin HackIM 2025 CTF](https://ctf.nullcon.net/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-04 18:30:00 - 2025-09-05 21:00:00 UTC+8  
+                **比赛权重** : 30.00  
+                **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
+                **添加日历** : https://ctftime.org/event/2874.ics  
+                
             ??? Quote "[ImaginaryCTF 2025](https://2025.imaginaryctf.org/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://2025.imaginaryctf.org/)  
                 **比赛名称** : [ImaginaryCTF 2025](https://2025.imaginaryctf.org/)  
@@ -427,6 +481,15 @@ hide:
                 **比赛权重** : 66.02  
                 **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
                 **添加日历** : https://ctftime.org/event/2799.ics  
+                
+            ??? Quote "[CRACCON 2025](https://defhawk.com/battleground/raid/craccon-ctf-2025)"  
+                [![](https://ctftime.org/media/events/CRACCon.png){ width="200" align=left }](https://defhawk.com/battleground/raid/craccon-ctf-2025)  
+                **比赛名称** : [CRACCON 2025](https://defhawk.com/battleground/raid/craccon-ctf-2025)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-06 16:00:00 - 2025-09-07 16:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : h4wk (https://ctftime.org/team/277994)  
+                **添加日历** : https://ctftime.org/event/2879.ics  
                 
             ??? Quote "[ASIS CTF Quals 2025](https://asisctf.com/)"  
                 [![](https://ctftime.org/media/events/asisctf_1.jpg){ width="200" align=left }](https://asisctf.com/)  
@@ -437,6 +500,51 @@ hide:
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/2612.ics  
                 
+            ??? Quote "[BlackHat MEA CTF Qualification 2025](https://blackhatmea.com/capture-the-flag)"  
+                [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2_1.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
+                **比赛名称** : [BlackHat MEA CTF Qualification 2025](https://blackhatmea.com/capture-the-flag)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-07 18:00:00 - 2025-09-08 18:00:00 UTC+8  
+                **比赛权重** : 25.83  
+                **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
+                **添加日历** : https://ctftime.org/event/2876.ics  
+                
+            ??? Quote "[WatCTF F25](https://watctf.org/)"  
+                [![](https://ctftime.org/media/events/Black_Back_Yellow_Lock_1.png){ width="200" align=left }](https://watctf.org/)  
+                **比赛名称** : [WatCTF F25](https://watctf.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-10 03:00:00 - 2025-09-12 03:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : WATCTF (https://ctftime.org/team/373968)  
+                **添加日历** : https://ctftime.org/event/2854.ics  
+                
+            ??? Quote "[DefCamp Capture the Flag (D-CTF) 2025 Quals](https://dctf25-quals.cyber-edu.co/)"  
+                [![](https://ctftime.org/media/events/w5NGLTFBTZWXGg8lLPAeyg-Photoroom_1.png){ width="200" align=left }](https://dctf25-quals.cyber-edu.co/)  
+                **比赛名称** : [DefCamp Capture the Flag (D-CTF) 2025 Quals](https://dctf25-quals.cyber-edu.co/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-12 18:00:00 - 2025-09-14 18:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : CCSIR.org (https://ctftime.org/team/9831)  
+                **添加日历** : https://ctftime.org/event/2866.ics  
+                
+            ??? Quote "[Null CTF 2025](https://ctf.r0devnull.team/)"  
+                [![](https://ctftime.org/media/events/null_ctf_logo_temp.png){ width="200" align=left }](https://ctf.r0devnull.team/)  
+                **比赛名称** : [Null CTF 2025](https://ctf.r0devnull.team/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-12 18:00:00 - 2025-09-14 18:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : > r0/dev/null (https://ctftime.org/team/305658)  
+                **添加日历** : https://ctftime.org/event/2868.ics  
+                
+            ??? Quote "[07CTF](https://ctf.0bscuri7y.xyz/)"  
+                [![](https://ctftime.org/media/events/logo_112.png){ width="200" align=left }](https://ctf.0bscuri7y.xyz/)  
+                **比赛名称** : [07CTF](https://ctf.0bscuri7y.xyz/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-13 14:30:00 - 2025-09-15 02:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : 0bscuri7y (https://ctftime.org/team/370140)  
+                **添加日历** : https://ctftime.org/event/2848.ics  
+                
             ??? Quote "[MaltaCTF 2025 Finals](https://2025.ctf.mt/)"  
                 [![](https://ctftime.org/media/events/MaltaCTF_1.png){ width="200" align=left }](https://2025.ctf.mt/)  
                 **比赛名称** : [MaltaCTF 2025 Finals](https://2025.ctf.mt/)  
@@ -446,6 +554,15 @@ hide:
                 **赛事主办** : Friendly Maltese Citizens (https://ctftime.org/team/220769)  
                 **添加日历** : https://ctftime.org/event/2777.ics  
                 
+            ??? Quote "[CyberKumbez 2025](https://kazhackstan.com/)"  
+                [![](https://ctftime.org/media/events/kkk.png){ width="200" align=left }](https://kazhackstan.com/)  
+                **比赛名称** : [CyberKumbez 2025](https://kazhackstan.com/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2025-09-17 18:00:00 - 2025-09-20 00:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : KazHackStan (https://ctftime.org/team/396364)  
+                **添加日历** : https://ctftime.org/event/2875.ics  
+                
             ??? Quote "[CrewCTF 2025](https://2025.crewc.tf/)"  
                 [![](https://ctftime.org/media/events/thc_icon_processed.png){ width="200" align=left }](https://2025.crewc.tf/)  
                 **比赛名称** : [CrewCTF 2025](https://2025.crewc.tf/)  
@@ -454,6 +571,15 @@ hide:
                 **比赛权重** : 38.93  
                 **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
                 **添加日历** : https://ctftime.org/event/2704.ics  
+                
+            ??? Quote "[Ctrl+Space CTF Quals](https://ctrl-space.gg/)"  
+                [![](https://ctftime.org/media/events/ctrlspace_1.png){ width="200" align=left }](https://ctrl-space.gg/)  
+                **比赛名称** : [Ctrl+Space CTF Quals](https://ctrl-space.gg/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-20 17:00:00 - 2025-09-21 16:59:59 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : ESA (https://ctftime.org/team/391420)  
+                **添加日历** : https://ctftime.org/event/2872.ics  
                 
             ??? Quote "[CDCTF 2025](https://uacrimsondefense.github.io/cdctf.html)"  
                 [![](https://ctftime.org/media/events/cdctf_logo_square.png){ width="200" align=left }](https://uacrimsondefense.github.io/cdctf.html)  
@@ -473,6 +599,15 @@ hide:
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/2775.ics  
                 
+            ??? Quote "[PatriotCTF 2025](http://pctf.competitivecyber.club/)"  
+                [![](https://ctftime.org/media/events/71044796c6f64e9996d2077fd0b64c4c.jpg){ width="200" align=left }](http://pctf.competitivecyber.club/)  
+                **比赛名称** : [PatriotCTF 2025](http://pctf.competitivecyber.club/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-27 02:00:00 - 2025-09-29 02:00:00 UTC+8  
+                **比赛权重** : 42.42  
+                **赛事主办** : Competitive Cyber at Mason (https://ctftime.org/team/176906)  
+                **添加日历** : https://ctftime.org/event/2850.ics  
+                
             ??? Quote "[FAUST CTF 2025](https://2025.faustctf.net/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://2025.faustctf.net/)  
                 **比赛名称** : [FAUST CTF 2025](https://2025.faustctf.net/)  
@@ -482,6 +617,24 @@ hide:
                 **赛事主办** : FAUST (https://ctftime.org/team/550)  
                 **添加日历** : https://ctftime.org/event/2780.ics  
                 
+            ??? Quote "[SunshineCTF 2025](https://sunshinectf.org/)"  
+                [![](https://ctftime.org/media/events/sctf_logo_25.png){ width="200" align=left }](https://sunshinectf.org/)  
+                **比赛名称** : [SunshineCTF 2025](https://sunshinectf.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-27 22:00:00 - 2025-09-29 22:00:00 UTC+8  
+                **比赛权重** : 51.65  
+                **赛事主办** : Knightsec (https://ctftime.org/team/2500)  
+                **添加日历** : https://ctftime.org/event/2863.ics  
+                
+            ??? Quote "[DFIR Labs Digital Forensics Challenge by The DFIR Report](https://dfirlabs.thedfirreport.com/dfirchallenge)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://dfirlabs.thedfirreport.com/dfirchallenge)  
+                **比赛名称** : [DFIR Labs Digital Forensics Challenge by The DFIR Report](https://dfirlabs.thedfirreport.com/dfirchallenge)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-28 00:30:00 - 2025-09-28 04:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
+                **添加日历** : https://ctftime.org/event/2837.ics  
+                
             ??? Quote "[jailCTF 2025](https://ctf.pyjail.club/)"  
                 [![](https://ctftime.org/media/events/jailctf.png){ width="200" align=left }](https://ctf.pyjail.club/)  
                 **比赛名称** : [jailCTF 2025](https://ctf.pyjail.club/)  
@@ -490,6 +643,15 @@ hide:
                 **比赛权重** : 24.88  
                 **赛事主办** : jailctf (https://ctftime.org/team/311088)  
                 **添加日历** : https://ctftime.org/event/2737.ics  
+                
+            ??? Quote "[Securinets CTF Quals 2025](https://ctf.securinets.tn/)"  
+                [![](https://ctftime.org/media/events/19b8d9cf1e7d16e4cb0ad2bce435fb79.png){ width="200" align=left }](https://ctf.securinets.tn/)  
+                **比赛名称** : [Securinets CTF Quals 2025](https://ctf.securinets.tn/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-10-04 21:00:00 - 2025-10-06 05:00:00 UTC+8  
+                **比赛权重** : 70.50  
+                **赛事主办** : Securinets (https://ctftime.org/team/5084)  
+                **添加日历** : https://ctftime.org/event/2884.ics  
                 
             ??? Quote "[Standoff Cyberbattle 16](https://16.standoff365.com/en/)"  
                 [![](https://ctftime.org/media/events/f31eca683184a4547ea20f1fa984fb70.png){ width="200" align=left }](https://16.standoff365.com/en/)  
@@ -545,6 +707,15 @@ hide:
                 **赛事主办** : LINE CTF (https://ctftime.org/team/144094)  
                 **添加日历** : https://ctftime.org/event/2819.ics  
                 
+            ??? Quote "[RSTCON 2025 CTF](https://mctf.io/rstcon25)"  
+                [![](https://ctftime.org/media/events/RSTCON-BLK.png){ width="200" align=left }](https://mctf.io/rstcon25)  
+                **比赛名称** : [RSTCON 2025 CTF](https://mctf.io/rstcon25)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-10-25 03:00:00 - 2025-10-26 22:00:00 UTC+8  
+                **比赛权重** : 24.00  
+                **赛事主办** : RSTCON (https://ctftime.org/team/281202)  
+                **添加日历** : https://ctftime.org/event/2865.ics  
+                
             ??? Quote "[osu!gaming CTF 2025](https://osugaming.pages.dev/)"  
                 [![](https://ctftime.org/media/events/3fb5fab1b0946459c9c33d71e6c5db35.png){ width="200" align=left }](https://osugaming.pages.dev/)  
                 **比赛名称** : [osu!gaming CTF 2025](https://osugaming.pages.dev/)  
@@ -572,6 +743,24 @@ hide:
                 **赛事主办** : Nu1L (https://ctftime.org/team/19208)  
                 **添加日历** : https://ctftime.org/event/2795.ics  
                 
+            ??? Quote "[Infobahn CTF 2025](http://infobahnc.tf/)"  
+                [![](https://ctftime.org/media/events/mW45GaxJ_400x400.jpg){ width="200" align=left }](http://infobahnc.tf/)  
+                **比赛名称** : [Infobahn CTF 2025](http://infobahnc.tf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-08 01:00:00 - 2025-11-10 01:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Infobahn (https://ctftime.org/team/364723)  
+                **添加日历** : https://ctftime.org/event/2878.ics  
+                
+            ??? Quote "[BuckeyeCTF 2025](https://ctf.osucyber.club/)"  
+                [![](https://ctftime.org/media/events/buckeyectf-25-logo_1.jpg){ width="200" align=left }](https://ctf.osucyber.club/)  
+                **比赛名称** : [BuckeyeCTF 2025](https://ctf.osucyber.club/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-08 09:00:00 - 2025-11-10 09:00:00 UTC+8  
+                **比赛权重** : 50.00  
+                **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
+                **添加日历** : https://ctftime.org/event/2883.ics  
+                
             ??? Quote "[Equinor CTF 2025](https://ctf.equinor.com/)"  
                 [![](https://ctftime.org/media/events/ept_2.png){ width="200" align=left }](https://ctf.equinor.com/)  
                 **比赛名称** : [Equinor CTF 2025](https://ctf.equinor.com/)  
@@ -580,6 +769,15 @@ hide:
                 **比赛权重** : 37.00  
                 **赛事主办** : EPT (https://ctftime.org/team/119480)  
                 **添加日历** : https://ctftime.org/event/2646.ics  
+                
+            ??? Quote "[saarCTF 2025](https://ctf.saarland/)"  
+                [![](https://ctftime.org/media/events/saarctf_2025.png){ width="200" align=left }](https://ctf.saarland/)  
+                **比赛名称** : [saarCTF 2025](https://ctf.saarland/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2025-11-08 21:00:00 - 2025-11-09 06:00:00 UTC+8  
+                **比赛权重** : 97.22  
+                **赛事主办** : saarsec (https://ctftime.org/team/15337)  
+                **添加日历** : https://ctftime.org/event/2859.ics  
                 
             ??? Quote "[GaianSpace CTF 2025](https://gaian.space/ctf)"  
                 [![](https://ctftime.org/media/events/gaianspace-logo-new.png){ width="200" align=left }](https://gaian.space/ctf)  
@@ -617,6 +815,15 @@ hide:
                 **赛事主办** : LosFuzzys (https://ctftime.org/team/8323)  
                 **添加日历** : https://ctftime.org/event/2714.ics  
                 
+            ??? Quote "[HeroCTF v7](https://heroctf.fr/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://heroctf.fr/)  
+                **比赛名称** : [HeroCTF v7](https://heroctf.fr/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-29 04:00:00 - 2025-12-01 06:00:00 UTC+8  
+                **比赛权重** : 65.00  
+                **赛事主办** : HeroCTF (https://ctftime.org/team/145166)  
+                **添加日历** : https://ctftime.org/event/2869.ics  
+                
             ??? Quote "[WP CTF 2025](https://wpctf.it/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://wpctf.it/)  
                 **比赛名称** : [WP CTF 2025](https://wpctf.it/)  
@@ -625,6 +832,42 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : WP CTF (https://ctftime.org/team/303099)  
                 **添加日历** : https://ctftime.org/event/2764.ics  
+                
+            ??? Quote "[BlackHat MEA CTF Final 2025](https://blackhatmea.com/capture-the-flag)"  
+                [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2_2.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
+                **比赛名称** : [BlackHat MEA CTF Final 2025](https://blackhatmea.com/capture-the-flag)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-12-02 16:00:00 - 2025-12-04 23:00:00 UTC+8  
+                **比赛权重** : 22.50  
+                **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
+                **添加日历** : https://ctftime.org/event/2877.ics  
+                
+            ??? Quote "[niteCTF 2025](https://nitectf.cryptonitemit.in/)"  
+                [![](https://ctftime.org/media/events/nitectf_1.png){ width="200" align=left }](https://nitectf.cryptonitemit.in/)  
+                **比赛名称** : [niteCTF 2025](https://nitectf.cryptonitemit.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-12-12 20:00:00 - 2025-12-14 20:00:00 UTC+8  
+                **比赛权重** : 39.87  
+                **赛事主办** : Cryptonite (https://ctftime.org/team/62713)  
+                **添加日历** : https://ctftime.org/event/2851.ics  
+                
+            ??? Quote "[SECCON CTF 14 Quals](https://ctf.seccon.jp/)"  
+                [![](https://ctftime.org/media/events/seccon_s_10.png){ width="200" align=left }](https://ctf.seccon.jp/)  
+                **比赛名称** : [SECCON CTF 14 Quals](https://ctf.seccon.jp/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-12-13 13:00:00 - 2025-12-14 13:00:00 UTC+8  
+                **比赛权重** : 100.00  
+                **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
+                **添加日历** : https://ctftime.org/event/2862.ics  
+                
+            ??? Quote "[TSG CTF 2025](https://ctf.tsg.ne.jp/)"  
+                [![](https://ctftime.org/media/events/TSG_CTF.png){ width="200" align=left }](https://ctf.tsg.ne.jp/)  
+                **比赛名称** : [TSG CTF 2025](https://ctf.tsg.ne.jp/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-12-20 15:00:00 - 2025-12-21 15:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : TSG (https://ctftime.org/team/16088)  
+                **添加日历** : https://ctftime.org/event/2867.ics  
                 
             ??? Quote "[ASIS CTF Final 2025](https://asisctf.com/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://asisctf.com/)  
