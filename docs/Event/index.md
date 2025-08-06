@@ -865,7 +865,7 @@ hide:
                 **比赛名称** : [TSG CTF 2025](https://ctf.tsg.ne.jp/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-12-20 15:00:00 - 2025-12-21 15:00:00 UTC+8  
-                **比赛权重** : 0.00  
+                **比赛权重** : 25.00  
                 **赛事主办** : TSG (https://ctftime.org/team/16088)  
                 **添加日历** : https://ctftime.org/event/2867.ics  
                 
