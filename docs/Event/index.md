@@ -911,6 +911,15 @@ hide:
                 **赛事主办** : idek (https://ctftime.org/team/157039)  
                 **添加日历** : https://ctftime.org/event/2746.ics  
                 
+            ??? Quote "[PH03N1X V1P3R N0V4 CTF](http://platform.pwnctf.ro/)"  
+                [![](https://ctftime.org/media/events/CTF_logo_sex-2.png){ width="200" align=left }](http://platform.pwnctf.ro/)  
+                **比赛名称** : [PH03N1X V1P3R N0V4 CTF](http://platform.pwnctf.ro/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-08-02 15:56:43 - 2025-08-02 15:56:43 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)  
+                **添加日历** : https://ctftime.org/event/2880.ics  
+                
             ??? Quote "[justCTF 2025](http://2025.justctf.team/)"  
                 [![](https://ctftime.org/media/events/b6f4bd9df7efba86c9b2d4eea9f8bc74.png){ width="200" align=left }](http://2025.justctf.team/)  
                 **比赛名称** : [justCTF 2025](http://2025.justctf.team/)  
@@ -1792,15 +1801,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : hackpack (https://ctftime.org/team/25905)  
                 **添加日历** : https://ctftime.org/event/2743.ics  
-                
-            ??? Quote "[DawgCTF 2025](https://metactf.com/join/dawgctf25)"  
-                [![](https://ctftime.org/media/events/dawgsec_shield-ctftime_2.png){ width="200" align=left }](https://metactf.com/join/dawgctf25)  
-                **比赛名称** : [DawgCTF 2025](https://metactf.com/join/dawgctf25)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-18 20:00:00 - 2025-04-20 20:00:00 UTC+8  
-                **比赛权重** : 69.00  
-                **赛事主办** : UMBC Cyber Dawgs (https://ctftime.org/team/18405)  
-                **添加日历** : https://ctftime.org/event/2651.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
