@@ -265,6 +265,10 @@ nav:
     - blockchain | 区块链安全:
       - Move:
         - 从0开始的签到题: hc-blockchain/Move/0x00.md
+        - 独特的所有权: hc-blockchain/Move/0x01.md
+        - 神奇的时钟: hc-blockchain/Move/0x02.md
+        - 对象与燃气: hc-blockchain/Move/0x03.md
+        - 多样的泛型: hc-blockchain/Move/0x04.md
 
     - 附录:
       - 提问的智慧: hc-appendix/how-to-ask.md
