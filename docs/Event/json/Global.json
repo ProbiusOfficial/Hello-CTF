@@ -777,7 +777,7 @@
         "比赛权重": "0",
         "赛事主办": "Visionspace (https://ctftime.org/team/383284)",
         "比赛ID": "1322",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "idekCTF 2025",
@@ -1965,18 +1965,6 @@
         "比赛权重": "48.38",
         "赛事主办": "SavedByTheShell (https://ctftime.org/team/78233)",
         "比赛ID": "598",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "HackPack CTF 2025",
-        "比赛时间": "2025-04-19 00:00:00 - 2025-04-19 23:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2743.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hackpack.club/ctf2025/",
-        "比赛标志": "https://ctftime.org/media/events/logo_wolf.png",
-        "比赛权重": "0.00",
-        "赛事主办": "hackpack (https://ctftime.org/team/25905)",
-        "比赛ID": "443",
         "比赛状态": "past"
     }
 ]

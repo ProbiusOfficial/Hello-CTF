@@ -881,15 +881,6 @@ hide:
                 **赛事主办** : Eindbazen (https://ctftime.org/team/322)  
                 **添加日历** : https://ctftime.org/event/2680.ics  
                 
-            ??? Quote "[Startpwn CTF 2025](https://app.metactf.com/starpwn-2025)"  
-                [![](https://ctftime.org/media/events/starpwn_logo_cr.png){ width="200" align=left }](https://app.metactf.com/starpwn-2025)  
-                **比赛名称** : [Startpwn CTF 2025](https://app.metactf.com/starpwn-2025)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-08-09 00:00:00 - 2025-08-10 03:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Visionspace (https://ctftime.org/team/383284)  
-                **添加日历** : https://ctftime.org/event/2855.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[2025年能源网络安全大赛](https://www.cers.org.cn/site/content/883b36f00aff466fa37efcef0c074915.html)"  
@@ -900,6 +891,15 @@ hide:
                 **其他说明** : 2025年能源网络安全大赛由中国能源研究会主办，面向电网企业、发电及电力建设企业、石油石化企业、煤炭企业等单位网络安全技术、运维和管理人员，以及国内网络安全领域知名高校、科研机构、产业单位等代表。报名截止日期为2025年3月31日，可通过扫描二维码下载报名表并发送至icc@cers.org.cn邮箱。联系人包括屈庆红、李理和陈炜，可通过电话或邮箱进行咨询。  
                 
         === "国外赛事"
+            ??? Quote "[Startpwn CTF 2025](https://app.metactf.com/starpwn-2025)"  
+                [![](https://ctftime.org/media/events/starpwn_logo_cr.png){ width="200" align=left }](https://app.metactf.com/starpwn-2025)  
+                **比赛名称** : [Startpwn CTF 2025](https://app.metactf.com/starpwn-2025)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-08-09 00:00:00 - 2025-08-10 03:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Visionspace (https://ctftime.org/team/383284)  
+                **添加日历** : https://ctftime.org/event/2855.ics  
+                
             ??? Quote "[idekCTF 2025](https://ctf.idek.team/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.idek.team/)  
                 **比赛名称** : [idekCTF 2025](https://ctf.idek.team/)  
@@ -1790,15 +1790,6 @@ hide:
                 **比赛权重** : 48.38  
                 **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
                 **添加日历** : https://ctftime.org/event/2653.ics  
-                
-            ??? Quote "[HackPack CTF 2025](https://hackpack.club/ctf2025/)"  
-                [![](https://ctftime.org/media/events/logo_wolf.png){ width="200" align=left }](https://hackpack.club/ctf2025/)  
-                **比赛名称** : [HackPack CTF 2025](https://hackpack.club/ctf2025/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-19 00:00:00 - 2025-04-19 23:59:59 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : hackpack (https://ctftime.org/team/25905)  
-                **添加日历** : https://ctftime.org/event/2743.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
