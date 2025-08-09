@@ -3,26 +3,6 @@
     "data": {
         "result": [
             {
-                "name": "MoeCTF 2025",
-                "info_confirmed": 1,
-                "mid_join": 0,
-                "link": "https://ctf.xidian.edu.cn/games/22",
-                "status": "即将开始",
-                "is_reg": 1,
-                "limit": 1,
-                "type": "线上Jeopardy解题赛",
-                "reg_time_start": "2025年08月02日 00:00",
-                "reg_time_end": "2025年10月09日 17:00",
-                "comp_time_start": "2025年08月09日 09:00",
-                "comp_time_end": "2025年10月09日 17:00",
-                "organizer": "西安电子科技大学",
-                "contac": {
-                    "QQ群": "1014114928"
-                },
-                "tag": "",
-                "readmore": "MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。"
-            },
-            {
                 "name": "极客少年挑战赛",
                 "info_confirmed": 1,
                 "mid_join": 0,
@@ -41,6 +21,26 @@
                 },
                 "tag": "",
                 "readmore": "第五届极客少年挑战赛将于2025年8月29日10:00至16:00举行，报名从2025年6月3日00:00开始至2025年7月10日23:59结束。单人线下赛，更多信息请加入QQ群1045833929。"
+            },
+            {
+                "name": "MoeCTF 2025",
+                "info_confirmed": 1,
+                "mid_join": 0,
+                "link": "https://ctf.xidian.edu.cn/games/22",
+                "status": "正在进行",
+                "is_reg": 1,
+                "limit": 1,
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2025年08月02日 00:00",
+                "reg_time_end": "2025年10月09日 17:00",
+                "comp_time_start": "2025年08月09日 09:00",
+                "comp_time_end": "2025年10月09日 17:00",
+                "organizer": "西安电子科技大学",
+                "contac": {
+                    "QQ群": "1014114928"
+                },
+                "tag": "",
+                "readmore": "MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。"
             },
             {
                 "name": "2025年能源网络安全大赛",
