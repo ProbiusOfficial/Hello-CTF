@@ -1139,7 +1139,7 @@ hide:
                 **比赛名称** : [CubeCTF](https://cubectf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-07-05 06:16:00 - 2025-07-07 08:25:00 UTC+8  
-                **比赛权重** : 24.70  
+                **比赛权重** : 24.71  
                 **赛事主办** : CubeMastery (https://ctftime.org/team/168744)  
                 **添加日历** : https://ctftime.org/event/2820.ics  
                 
