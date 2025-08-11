@@ -872,15 +872,7 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
-            ??? Quote "[WHY2025 CTF](https://ctf.why2025.org/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.why2025.org/)  
-                **比赛名称** : [WHY2025 CTF](https://ctf.why2025.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-08-09 00:00:00 - 2025-08-12 00:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Eindbazen (https://ctftime.org/team/322)  
-                **添加日历** : https://ctftime.org/event/2680.ics  
-                
+    
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[2025年能源网络安全大赛](https://www.cers.org.cn/site/content/883b36f00aff466fa37efcef0c074915.html)"  
@@ -891,6 +883,15 @@ hide:
                 **其他说明** : 2025年能源网络安全大赛由中国能源研究会主办，面向电网企业、发电及电力建设企业、石油石化企业、煤炭企业等单位网络安全技术、运维和管理人员，以及国内网络安全领域知名高校、科研机构、产业单位等代表。报名截止日期为2025年3月31日，可通过扫描二维码下载报名表并发送至icc@cers.org.cn邮箱。联系人包括屈庆红、李理和陈炜，可通过电话或邮箱进行咨询。  
                 
         === "国外赛事"
+            ??? Quote "[WHY2025 CTF](https://ctf.why2025.org/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.why2025.org/)  
+                **比赛名称** : [WHY2025 CTF](https://ctf.why2025.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-08-09 00:00:00 - 2025-08-12 00:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Eindbazen (https://ctftime.org/team/322)  
+                **添加日历** : https://ctftime.org/event/2680.ics  
+                
             ??? Quote "[Startpwn CTF 2025](https://app.metactf.com/starpwn-2025)"  
                 [![](https://ctftime.org/media/events/starpwn_logo_cr.png){ width="200" align=left }](https://app.metactf.com/starpwn-2025)  
                 **比赛名称** : [Startpwn CTF 2025](https://app.metactf.com/starpwn-2025)  
@@ -1781,15 +1782,6 @@ hide:
                 **比赛权重** : 44.50  
                 **赛事主办** : b01lers (https://ctftime.org/team/11464)  
                 **添加日历** : https://ctftime.org/event/2652.ics  
-                
-            ??? Quote "[UMassCTF 2025](https://ctf.umasscybersec.org/)"  
-                [![](https://ctftime.org/media/events/889a1e484f0b51dd3d865b3a53b26200_1.jpg){ width="200" align=left }](https://ctf.umasscybersec.org/)  
-                **比赛名称** : [UMassCTF 2025](https://ctf.umasscybersec.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-19 02:00:00 - 2025-04-21 08:00:00 UTC+8  
-                **比赛权重** : 48.38  
-                **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
-                **添加日历** : https://ctftime.org/event/2653.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
