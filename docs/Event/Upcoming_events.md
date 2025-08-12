@@ -213,9 +213,9 @@ comments: true
     **赛事主办** : CCSIR.org (https://ctftime.org/team/9831)  
     **添加日历** : https://ctftime.org/event/2866.ics  
     
-??? Quote "[Null CTF 2025 (postponed to 19-21 sep)](https://ctf.r0devnull.team/)"  
+??? Quote "[Null CTF 2025 (postponed to 5-7 december)](https://ctf.r0devnull.team/)"  
     [![](https://ctftime.org/media/events/null_ctf_logo_temp.png){ width="200" align=left }](https://ctf.r0devnull.team/)  
-    **比赛名称** : [Null CTF 2025 (postponed to 19-21 sep)](https://ctf.r0devnull.team/)  
+    **比赛名称** : [Null CTF 2025 (postponed to 5-7 december)](https://ctf.r0devnull.team/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-09-12 18:00:00 - 2025-09-14 18:00:00 UTC+8  
     **比赛权重** : 0.00  
