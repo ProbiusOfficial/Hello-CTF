@@ -87,6 +87,15 @@ comments: true
     **赛事主办** : Sawah Cyber Security (https://ctftime.org/team/389651)  
     **添加日历** : https://ctftime.org/event/2824.ics  
     
+??? Quote "[KubanCTF 2025](https://kubanctf2025.ru/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://kubanctf2025.ru/)  
+    **比赛名称** : [KubanCTF 2025](https://kubanctf2025.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-08-23 15:00:00 - 2025-08-24 01:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : HackerLab (https://ctftime.org/team/299486)  
+    **添加日历** : https://ctftime.org/event/2894.ics  
+    
 ??? Quote "[PECAN+ CTF 2025](https://pecanplus.org/)"  
     [![](https://ctftime.org/media/events/pecanlogo.png){ width="200" align=left }](https://pecanplus.org/)  
     **比赛名称** : [PECAN+ CTF 2025](https://pecanplus.org/)  
