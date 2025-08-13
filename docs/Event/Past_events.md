@@ -803,7 +803,7 @@ comments: true
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-04-29 19:00:00 - 2025-05-01 01:00:00 UTC+8  
     **比赛权重** : 0.00  
-    **赛事主办** : hackord("a") (https://ctftime.org/team/367962)  
+    **赛事主办** : HackOrda (https://ctftime.org/team/367962)  
     **添加日历** : https://ctftime.org/event/2685.ics  
     
 ??? Quote "[Incognito 6.0](https://incognito.axiosiiitl.dev/)"  
