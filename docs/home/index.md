@@ -60,15 +60,6 @@ hide:
             **其他说明** : 第五届极客少年挑战赛将于2025年8月29日10:00至16:00举行，报名从2025年6月3日00:00开始至2025年7月10日23:59结束。单人线下赛，更多信息请加入QQ群1045833929。  
                 
     === "国外比赛"
-        ??? Quote "[CTFZone 2025 Quals](https://board.ctfz.zone/)"  
-            [![](https://ctftime.org/media/events/ctfzone_logo_1.png){ width="200" align=left }](https://board.ctfz.zone/)  
-            **比赛名称** : [CTFZone 2025 Quals](https://board.ctfz.zone/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-08-16 18:00:00 - 2025-08-17 18:00:00 UTC+8  
-            **比赛权重** : 92.45  
-            **赛事主办** : BIZone (https://ctftime.org/team/32190)  
-            **添加日历** : https://ctftime.org/event/2839.ics  
-            
         ??? Quote "[RCTF 2025](https://rctf.rois.io/)"  
             [![](https://ctftime.org/media/events/rois.jpg){ width="200" align=left }](https://rctf.rois.io/)  
             **比赛名称** : [RCTF 2025](https://rctf.rois.io/)  
@@ -95,6 +86,15 @@ hide:
             **比赛权重** : 100.00  
             **赛事主办** : HITCON (https://ctftime.org/team/8299)  
             **添加日历** : https://ctftime.org/event/2783.ics  
+            
+        ??? Quote "[Sawah Cyber Security CTF 2025](https://ctf.sawahcyber.id/)"  
+            [![](https://ctftime.org/media/events/Logo_1.1.jpg){ width="200" align=left }](https://ctf.sawahcyber.id/)  
+            **比赛名称** : [Sawah Cyber Security CTF 2025](https://ctf.sawahcyber.id/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-08-23 13:00:00 - 2025-08-23 17:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : Sawah Cyber Security (https://ctftime.org/team/389651)  
+            **添加日历** : https://ctftime.org/event/2824.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
