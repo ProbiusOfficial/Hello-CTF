@@ -1,29 +1,5 @@
 [
     {
-        "比赛名称": "scriptCTF 2025",
-        "比赛时间": "2025-08-16 08:00:00 - 2025-08-18 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2792.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.scriptsorcerers.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/final_logo.png",
-        "比赛权重": "0.00",
-        "赛事主办": "ScriptSorcerers (https://ctftime.org/team/284260)",
-        "比赛ID": "1318",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "SekaiCTF 2025",
-        "比赛时间": "2025-08-16 09:00:00 - 2025-08-18 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2683.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.sekai.team/",
-        "比赛标志": "https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1_1.png",
-        "比赛权重": "55.00",
-        "赛事主办": "Project Sekai (https://ctftime.org/team/169557)",
-        "比赛ID": "769",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "CRHC CTF 2025",
         "比赛时间": "2025-08-16 17:00:00 - 2025-08-18 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2873.ics",
@@ -766,6 +742,30 @@
         "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
         "比赛ID": "246",
         "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "scriptCTF 2025",
+        "比赛时间": "2025-08-16 08:00:00 - 2025-08-18 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2792.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.scriptsorcerers.xyz/",
+        "比赛标志": "https://ctftime.org/media/events/final_logo.png",
+        "比赛权重": "0",
+        "赛事主办": "ScriptSorcerers (https://ctftime.org/team/284260)",
+        "比赛ID": "1318",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "SekaiCTF 2025",
+        "比赛时间": "2025-08-16 09:00:00 - 2025-08-18 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2683.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.sekai.team/",
+        "比赛标志": "https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1_1.png",
+        "比赛权重": "55.00",
+        "赛事主办": "Project Sekai (https://ctftime.org/team/169557)",
+        "比赛ID": "769",
+        "比赛状态": "nowrunning"
     },
     {
         "比赛名称": "WHY2025 CTF",
