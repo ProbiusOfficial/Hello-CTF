@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[CTFZone 2025 Quals](https://board.ctfz.zone/)"  
+    [![](https://ctftime.org/media/events/ctfzone_logo_1.png){ width="200" align=left }](https://board.ctfz.zone/)  
+    **比赛名称** : [CTFZone 2025 Quals](https://board.ctfz.zone/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-08-16 18:00:00 - 2025-08-17 18:00:00 UTC+8  
+    **比赛权重** : 92.45  
+    **赛事主办** : BIZone (https://ctftime.org/team/32190)  
+    **添加日历** : https://ctftime.org/event/2839.ics  
+    
 ??? Quote "[WHY2025 CTF](https://ctf.why2025.org/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.why2025.org/)  
     **比赛名称** : [WHY2025 CTF](https://ctf.why2025.org/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
     **添加日历** : https://ctftime.org/event/2744.ics  
-    
-??? Quote "[b01lers CTF 2025](https://b01lersc.tf/)"  
-    [![](https://ctftime.org/media/events/b01lers-griffen_2.png){ width="200" align=left }](https://b01lersc.tf/)  
-    **比赛名称** : [b01lers CTF 2025](https://b01lersc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-19 07:00:00 - 2025-04-21 07:00:00 UTC+8  
-    **比赛权重** : 44.50  
-    **赛事主办** : b01lers (https://ctftime.org/team/11464)  
-    **添加日历** : https://ctftime.org/event/2652.ics  
     
