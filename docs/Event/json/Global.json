@@ -60,6 +60,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Lexington Informatics Tournament CTF 2025",
+        "比赛时间": "2025-08-23 23:00:00 - 2025-08-25 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2890.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://lit.lhsmathcs.org/",
+        "比赛标志": "https://ctftime.org/media/events/LIT_Logo.png",
+        "比赛权重": "67.32",
+        "赛事主办": "LIT CTF (https://ctftime.org/team/157660)",
+        "比赛ID": "646",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "PECAN+ CTF 2025",
         "比赛时间": "2025-08-24 09:00:00 - 2025-08-24 13:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2882.ics",
@@ -906,7 +918,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://bdsec-ctf.com/",
         "比赛标志": "https://ctftime.org/media/events/bdsec-ctf-logo_1.png",
-        "比赛权重": "15.81",
+        "比赛权重": "16.15",
         "赛事主办": "Knight Squad (https://ctftime.org/team/141739)",
         "比赛ID": "811",
         "比赛状态": "past"

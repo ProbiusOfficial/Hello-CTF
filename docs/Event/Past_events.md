@@ -154,7 +154,7 @@ comments: true
     **比赛名称** : [BDSec CTF 2025](https://bdsec-ctf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-07-20 23:00:00 - 2025-07-21 23:00:00 UTC+8  
-    **比赛权重** : 15.81  
+    **比赛权重** : 16.15  
     **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
     **添加日历** : https://ctftime.org/event/2784.ics  
     
