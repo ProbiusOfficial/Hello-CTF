@@ -23,6 +23,24 @@ comments: true
     **赛事主办** : BIZone (https://ctftime.org/team/32190)  
     **添加日历** : https://ctftime.org/event/2839.ics  
     
+??? Quote "[SekaiCTF 2025](https://ctf.sekai.team/)"  
+    [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
+    **比赛名称** : [SekaiCTF 2025](https://ctf.sekai.team/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-08-16 09:00:00 - 2025-08-18 09:00:00 UTC+8  
+    **比赛权重** : 55.00  
+    **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
+    **添加日历** : https://ctftime.org/event/2683.ics  
+    
+??? Quote "[scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)"  
+    [![](https://ctftime.org/media/events/final_logo.png){ width="200" align=left }](https://ctf.scriptsorcerers.xyz/)  
+    **比赛名称** : [scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-08-16 08:00:00 - 2025-08-18 08:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ScriptSorcerers (https://ctftime.org/team/284260)  
+    **添加日历** : https://ctftime.org/event/2792.ics  
+    
 ??? Quote "[WHY2025 CTF](https://ctf.why2025.org/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.why2025.org/)  
     **比赛名称** : [WHY2025 CTF](https://ctf.why2025.org/)  
@@ -895,22 +913,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : WayneStateCTF (https://ctftime.org/team/135263)  
     **添加日历** : https://ctftime.org/event/2757.ics  
-    
-??? Quote "[T-CTF 2025](https://t-ctf.ru/)"  
-    [![](https://ctftime.org/media/events/t-ctf.jpg){ width="200" align=left }](https://t-ctf.ru/)  
-    **比赛名称** : [T-CTF 2025](https://t-ctf.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-19 14:00:00 - 2025-04-21 02:00:00 UTC+8  
-    **比赛权重** : 24.60  
-    **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
-    **添加日历** : https://ctftime.org/event/2741.ics  
-    
-??? Quote "[THJCC CTF 2025](https://ctf.scint.org/)"  
-    [![](https://ctftime.org/media/events/24e103c1a070a7e5d42606fdd5749653.png){ width="200" align=left }](https://ctf.scint.org/)  
-    **比赛名称** : [THJCC CTF 2025](https://ctf.scint.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-19 08:00:01 - 2025-04-20 20:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
-    **添加日历** : https://ctftime.org/event/2744.ics  
     
