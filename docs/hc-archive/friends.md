@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅析SmarBI最新权限绕过致RCE](https://y4tacker.github.io/2025/08/18/year/2025/08/%E6%B5%85%E6%9E%90SmarBI%E6%9C%80%E6%96%B0%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E8%87%B4RCE/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-08-18
+
+    ec2d0f78db75185967c034d0900e9ea801690312c2501018c94f710ed617710ca87fed3700ccebdfb0e1e0414e66d5e0b7a7b9f12e1afe02813157ca7de2493d7f3d602bcd13db3c64990ce8aae91a5029c392c0725b07b7720085bdfb65097dc5611a...
     ### [浅析U8Cloud最新权限绕过至RCE](https://y4tacker.github.io/2025/07/30/year/2025/07/%E6%B5%85%E6%9E%90U8Cloud%E6%9C%80%E6%96%B0%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E8%87%B3RCE/)  
     >by [Y4tacker](https://y4tacker.github.io), 2025-07-30
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2025-01-25
 
     深入研究一下线程调度，由于篇幅较多，分章节分析，第二篇。进程挂靠一个进程可以包含多个线程，线程结构体中会指向自己所属的进程。切换到这个线程的时候，会将对应的 cr3 切换到该进程的页目录基址，那么这个线程就可以访问这个进程的所有资源了。前面逆向的时候看到过，在切换 cr3 的时候，是拿到了 KTHREAD.ApcState.Process，而并不是 KTHREAD.Process，这个因为没学 A...
-    ### [windows进程与线程学习——深入研究线程调度（1）](https://xia0ji233.github.io/2025/01/25/WindowsProcess4/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-24
-
-    深入研究一下线程调度，由于篇幅较多，分章节分析SwapContext首先研究一下 SwapContext 函数的实现。伪代码分析这里我们不去分析汇编代码，而是直接用 IDA + F5，把定义还原回去即可清晰地看出逻辑12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505...
 
 </div>
