@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[[POSTPONED]RCTF 2025](https://rctf.rois.io/)"  
+    [![](https://ctftime.org/media/events/rois.jpg){ width="200" align=left }](https://rctf.rois.io/)  
+    **比赛名称** : [[POSTPONED]RCTF 2025](https://rctf.rois.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-08-20 18:00:00 - 2025-08-22 18:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ROIS (https://ctftime.org/team/6476)  
+    **添加日历** : https://ctftime.org/event/2771.ics  
+    
 ??? Quote "[CTFZone 2025 Quals](https://board.ctfz.zone/)"  
     [![](https://ctftime.org/media/events/ctfzone_logo_1.png){ width="200" align=left }](https://board.ctfz.zone/)  
     **比赛名称** : [CTFZone 2025 Quals](https://board.ctfz.zone/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 70.86  
     **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
     **添加日历** : https://ctftime.org/event/2563.ics  
-    
-??? Quote "[CTF@CIT 2025](https://ctf.cyber-cit.club/)"  
-    [![](https://ctftime.org/media/events/CTF-CIT-ctftime_2.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
-    **比赛名称** : [CTF@CIT 2025](https://ctf.cyber-cit.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-26 05:00:00 - 2025-04-28 03:00:00 UTC+8  
-    **比赛权重** : 24.57  
-    **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
-    **添加日历** : https://ctftime.org/event/2759.ics  
     
