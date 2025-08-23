@@ -696,18 +696,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Sawah Cyber Security CTF 2025",
-        "比赛时间": "2025-08-23 13:00:00 - 2025-08-23 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2824.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.sawahcyber.id/",
-        "比赛标志": "https://ctftime.org/media/events/Logo_1.1.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Sawah Cyber Security (https://ctftime.org/team/389651)",
-        "比赛ID": "1352",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "KubanCTF Qualifier 2025",
         "比赛时间": "2025-08-23 15:00:00 - 2025-08-24 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2894.ics",
@@ -718,6 +706,18 @@
         "赛事主办": "HackerLab (https://ctftime.org/team/299486)",
         "比赛ID": "1365",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Sawah Cyber Security CTF 2025",
+        "比赛时间": "2025-08-23 13:00:00 - 2025-08-23 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2824.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.sawahcyber.id/",
+        "比赛标志": "https://ctftime.org/media/events/Logo_1.1.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Sawah Cyber Security (https://ctftime.org/team/389651)",
+        "比赛ID": "1352",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "[POSTPONED]RCTF 2025",
@@ -1905,18 +1905,6 @@
         "比赛权重": "25.00",
         "赛事主办": "BSidesSF (https://ctftime.org/team/54737)",
         "比赛ID": "252",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "UMDCTF 2025",
-        "比赛时间": "2025-04-26 06:00:00 - 2025-04-28 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2563.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://umdctf.io/",
-        "比赛标志": "https://ctftime.org/media/events/logo-cropped.png",
-        "比赛权重": "70.86",
-        "赛事主办": "UMDCSEC (https://ctftime.org/team/87711)",
-        "比赛ID": "444",
         "比赛状态": "past"
     }
 ]

@@ -827,15 +827,6 @@ hide:
                 **赛事主办** : HITCON (https://ctftime.org/team/8299)  
                 **添加日历** : https://ctftime.org/event/2783.ics  
                 
-            ??? Quote "[Sawah Cyber Security CTF 2025](https://ctf.sawahcyber.id/)"  
-                [![](https://ctftime.org/media/events/Logo_1.1.jpg){ width="200" align=left }](https://ctf.sawahcyber.id/)  
-                **比赛名称** : [Sawah Cyber Security CTF 2025](https://ctf.sawahcyber.id/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-08-23 13:00:00 - 2025-08-23 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Sawah Cyber Security (https://ctftime.org/team/389651)  
-                **添加日历** : https://ctftime.org/event/2824.ics  
-                
             ??? Quote "[KubanCTF Qualifier 2025](https://kubanctf2025.ru/)"  
                 [![](https://ctftime.org/media/events/9c50b904-9541-4e89-839c-0b0945333b60_1.jpg){ width="200" align=left }](https://kubanctf2025.ru/)  
                 **比赛名称** : [KubanCTF Qualifier 2025](https://kubanctf2025.ru/)  
@@ -855,6 +846,15 @@ hide:
                 **其他说明** : 2025年能源网络安全大赛由中国能源研究会主办，面向电网企业、发电及电力建设企业、石油石化企业、煤炭企业等单位网络安全技术、运维和管理人员，以及国内网络安全领域知名高校、科研机构、产业单位等代表。报名截止日期为2025年3月31日，可通过扫描二维码下载报名表并发送至icc@cers.org.cn邮箱。联系人包括屈庆红、李理和陈炜，可通过电话或邮箱进行咨询。  
                 
         === "国外赛事"
+            ??? Quote "[Sawah Cyber Security CTF 2025](https://ctf.sawahcyber.id/)"  
+                [![](https://ctftime.org/media/events/Logo_1.1.jpg){ width="200" align=left }](https://ctf.sawahcyber.id/)  
+                **比赛名称** : [Sawah Cyber Security CTF 2025](https://ctf.sawahcyber.id/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-08-23 13:00:00 - 2025-08-23 17:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Sawah Cyber Security (https://ctftime.org/team/389651)  
+                **添加日历** : https://ctftime.org/event/2824.ics  
+                
             ??? Quote "[[POSTPONED]RCTF 2025](https://rctf.rois.io/)"  
                 [![](https://ctftime.org/media/events/rois.jpg){ width="200" align=left }](https://rctf.rois.io/)  
                 **比赛名称** : [[POSTPONED]RCTF 2025](https://rctf.rois.io/)  
@@ -1745,15 +1745,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
                 **添加日历** : https://ctftime.org/event/2721.ics  
-                
-            ??? Quote "[UMDCTF 2025](https://umdctf.io/)"  
-                [![](https://ctftime.org/media/events/logo-cropped.png){ width="200" align=left }](https://umdctf.io/)  
-                **比赛名称** : [UMDCTF 2025](https://umdctf.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-26 06:00:00 - 2025-04-28 06:00:00 UTC+8  
-                **比赛权重** : 70.86  
-                **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
-                **添加日历** : https://ctftime.org/event/2563.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

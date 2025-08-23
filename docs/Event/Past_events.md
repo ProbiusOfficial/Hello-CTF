@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Sawah Cyber Security CTF 2025](https://ctf.sawahcyber.id/)"  
+    [![](https://ctftime.org/media/events/Logo_1.1.jpg){ width="200" align=left }](https://ctf.sawahcyber.id/)  
+    **比赛名称** : [Sawah Cyber Security CTF 2025](https://ctf.sawahcyber.id/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-08-23 13:00:00 - 2025-08-23 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Sawah Cyber Security (https://ctftime.org/team/389651)  
+    **添加日历** : https://ctftime.org/event/2824.ics  
+    
 ??? Quote "[[POSTPONED]RCTF 2025](https://rctf.rois.io/)"  
     [![](https://ctftime.org/media/events/rois.jpg){ width="200" align=left }](https://rctf.rois.io/)  
     **比赛名称** : [[POSTPONED]RCTF 2025](https://rctf.rois.io/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
     **添加日历** : https://ctftime.org/event/2721.ics  
-    
-??? Quote "[UMDCTF 2025](https://umdctf.io/)"  
-    [![](https://ctftime.org/media/events/logo-cropped.png){ width="200" align=left }](https://umdctf.io/)  
-    **比赛名称** : [UMDCTF 2025](https://umdctf.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-26 06:00:00 - 2025-04-28 06:00:00 UTC+8  
-    **比赛权重** : 70.86  
-    **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
-    **添加日历** : https://ctftime.org/event/2563.ics  
     
