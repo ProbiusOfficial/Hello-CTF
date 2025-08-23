@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "KubanCTF Qualifier 2025",
-        "比赛时间": "2025-08-23 15:00:00 - 2025-08-24 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2894.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://kubanctf2025.ru/",
-        "比赛标志": "https://ctftime.org/media/events/9c50b904-9541-4e89-839c-0b0945333b60_1.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "HackerLab (https://ctftime.org/team/299486)",
-        "比赛ID": "1365",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Lexington Informatics Tournament CTF 2025",
         "比赛时间": "2025-08-23 23:00:00 - 2025-08-25 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2890.ics",
@@ -717,6 +705,18 @@
         "比赛权重": "0",
         "赛事主办": "Sawah Cyber Security (https://ctftime.org/team/389651)",
         "比赛ID": "1352",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "KubanCTF Qualifier 2025",
+        "比赛时间": "2025-08-23 15:00:00 - 2025-08-24 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2894.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://kubanctf2025.ru/",
+        "比赛标志": "https://ctftime.org/media/events/9c50b904-9541-4e89-839c-0b0945333b60_1.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "HackerLab (https://ctftime.org/team/299486)",
+        "比赛ID": "1365",
         "比赛状态": "nowrunning"
     },
     {
