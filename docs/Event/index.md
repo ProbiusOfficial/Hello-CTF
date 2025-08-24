@@ -791,15 +791,6 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
-            ??? Quote "[BrunnerCTF 2025](https://ctf.brunnerne.dk/)"  
-                [![](https://ctftime.org/media/events/Discord_logo_-_2-6.png){ width="200" align=left }](https://ctf.brunnerne.dk/)  
-                **比赛名称** : [BrunnerCTF 2025](https://ctf.brunnerne.dk/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-08-22 20:00:00 - 2025-08-24 20:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Brunnerne (https://ctftime.org/team/155032)  
-                **添加日历** : https://ctftime.org/event/2835.ics  
-                
             ??? Quote "[HITCON CTF 2025](https://ctf2025.hitcon.org/)"  
                 [![](https://ctftime.org/media/events/83e99b182fd8f8a8e11a44a7c2f44557.png){ width="200" align=left }](https://ctf2025.hitcon.org/)  
                 **比赛名称** : [HITCON CTF 2025](https://ctf2025.hitcon.org/)  
@@ -854,6 +845,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Sawah Cyber Security (https://ctftime.org/team/389651)  
                 **添加日历** : https://ctftime.org/event/2824.ics  
+                
+            ??? Quote "[BrunnerCTF 2025](https://ctf.brunnerne.dk/)"  
+                [![](https://ctftime.org/media/events/Discord_logo_-_2-6.png){ width="200" align=left }](https://ctf.brunnerne.dk/)  
+                **比赛名称** : [BrunnerCTF 2025](https://ctf.brunnerne.dk/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-08-22 20:00:00 - 2025-08-24 20:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Brunnerne (https://ctftime.org/team/155032)  
+                **添加日历** : https://ctftime.org/event/2835.ics  
                 
             ??? Quote "[[POSTPONED]RCTF 2025](https://rctf.rois.io/)"  
                 [![](https://ctftime.org/media/events/rois.jpg){ width="200" align=left }](https://rctf.rois.io/)  
@@ -1718,15 +1718,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : haruulzangi-organizers (https://ctftime.org/team/266812)  
                 **添加日历** : https://ctftime.org/event/2768.ics  
-                
-            ??? Quote "[Azure Assassin Alliance CTF 2025](https://actf2025.xctf.org.cn/)"  
-                [![](https://ctftime.org/media/events/AAA.jpg){ width="200" align=left }](https://actf2025.xctf.org.cn/)  
-                **比赛名称** : [Azure Assassin Alliance CTF 2025](https://actf2025.xctf.org.cn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-26 09:00:00 - 2025-04-27 09:00:00 UTC+8  
-                **比赛权重** : 35.00  
-                **赛事主办** : Azure Assassin Alliance (https://ctftime.org/team/194222)  
-                **添加日历** : https://ctftime.org/event/2758.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
