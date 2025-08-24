@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "PECAN+ CTF 2025",
-        "比赛时间": "2025-08-24 09:00:00 - 2025-08-24 13:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2882.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://pecanplus.org/",
-        "比赛标志": "https://ctftime.org/media/events/pecanlogo.png",
-        "比赛权重": "0.00",
-        "赛事主办": "PECAN+ (https://ctftime.org/team/250009)",
-        "比赛ID": "973",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "TFC CTF 2025",
         "比赛时间": "2025-08-29 18:00:00 - 2025-08-31 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2822.ics",
@@ -693,6 +681,18 @@
         "比赛权重": "67.32",
         "赛事主办": "LIT CTF (https://ctftime.org/team/157660)",
         "比赛ID": "646",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "PECAN+ CTF 2025",
+        "比赛时间": "2025-08-24 09:00:00 - 2025-08-24 13:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2882.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://pecanplus.org/",
+        "比赛标志": "https://ctftime.org/media/events/pecanlogo.png",
+        "比赛权重": "0.00",
+        "赛事主办": "PECAN+ (https://ctftime.org/team/250009)",
+        "比赛ID": "973",
         "比赛状态": "nowrunning"
     },
     {
