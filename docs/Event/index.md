@@ -896,7 +896,7 @@ hide:
                 **比赛名称** : [scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-08-16 08:00:00 - 2025-08-18 08:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 24.58  
                 **赛事主办** : ScriptSorcerers (https://ctftime.org/team/284260)  
                 **添加日历** : https://ctftime.org/event/2792.ics  
                 
