@@ -818,15 +818,7 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
-            ??? Quote "[Lexington Informatics Tournament CTF 2025](https://lit.lhsmathcs.org/)"  
-                [![](https://ctftime.org/media/events/LIT_Logo.png){ width="200" align=left }](https://lit.lhsmathcs.org/)  
-                **比赛名称** : [Lexington Informatics Tournament CTF 2025](https://lit.lhsmathcs.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-08-23 23:00:00 - 2025-08-25 23:00:00 UTC+8  
-                **比赛权重** : 67.32  
-                **赛事主办** : LIT CTF (https://ctftime.org/team/157660)  
-                **添加日历** : https://ctftime.org/event/2890.ics  
-                
+    
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[2025年能源网络安全大赛](https://www.cers.org.cn/site/content/883b36f00aff466fa37efcef0c074915.html)"  
@@ -845,6 +837,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : PECAN+ (https://ctftime.org/team/250009)  
                 **添加日历** : https://ctftime.org/event/2882.ics  
+                
+            ??? Quote "[Lexington Informatics Tournament CTF 2025](https://lit.lhsmathcs.org/)"  
+                [![](https://ctftime.org/media/events/LIT_Logo.png){ width="200" align=left }](https://lit.lhsmathcs.org/)  
+                **比赛名称** : [Lexington Informatics Tournament CTF 2025](https://lit.lhsmathcs.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-08-23 23:00:00 - 2025-08-25 23:00:00 UTC+8  
+                **比赛权重** : 67.32  
+                **赛事主办** : LIT CTF (https://ctftime.org/team/157660)  
+                **添加日历** : https://ctftime.org/event/2890.ics  
                 
             ??? Quote "[KubanCTF Qualifier 2025](https://kubanctf2025.ru/)"  
                 [![](https://ctftime.org/media/events/9c50b904-9541-4e89-839c-0b0945333b60_1.jpg){ width="200" align=left }](https://kubanctf2025.ru/)  
@@ -1727,15 +1728,6 @@ hide:
                 **比赛权重** : 30.43  
                 **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
                 **添加日历** : https://ctftime.org/event/2761.ics  
-                
-            ??? Quote "[WOCS'hAck 4d edition](https://wocshack.org/)"  
-                [![](https://ctftime.org/media/events/WOCSHACK_FINAL.jpg){ width="200" align=left }](https://wocshack.org/)  
-                **比赛名称** : [WOCS'hAck 4d edition](https://wocshack.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-04-26 22:00:00 - 2025-04-27 22:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : WOCSA (https://ctftime.org/team/286608)  
-                **添加日历** : https://ctftime.org/event/2729.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

@@ -684,18 +684,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Lexington Informatics Tournament CTF 2025",
-        "比赛时间": "2025-08-23 23:00:00 - 2025-08-25 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2890.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://lit.lhsmathcs.org/",
-        "比赛标志": "https://ctftime.org/media/events/LIT_Logo.png",
-        "比赛权重": "67.32",
-        "赛事主办": "LIT CTF (https://ctftime.org/team/157660)",
-        "比赛ID": "646",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "PECAN+ CTF 2025",
         "比赛时间": "2025-08-24 09:00:00 - 2025-08-24 13:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2882.ics",
@@ -705,6 +693,18 @@
         "比赛权重": "0.00",
         "赛事主办": "PECAN+ (https://ctftime.org/team/250009)",
         "比赛ID": "973",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Lexington Informatics Tournament CTF 2025",
+        "比赛时间": "2025-08-23 23:00:00 - 2025-08-25 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2890.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://lit.lhsmathcs.org/",
+        "比赛标志": "https://ctftime.org/media/events/LIT_Logo.png",
+        "比赛权重": "67.32",
+        "赛事主办": "LIT CTF (https://ctftime.org/team/157660)",
+        "比赛ID": "646",
         "比赛状态": "past"
     },
     {
@@ -1881,18 +1881,6 @@
         "比赛权重": "30.43",
         "赛事主办": "Byt3Scr4pp3rs (https://ctftime.org/team/57772)",
         "比赛ID": "413",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "WOCS'hAck 4d edition",
-        "比赛时间": "2025-04-26 22:00:00 - 2025-04-27 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2729.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://wocshack.org/",
-        "比赛标志": "https://ctftime.org/media/events/WOCSHACK_FINAL.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "WOCSA (https://ctftime.org/team/286608)",
-        "比赛ID": "1280",
         "比赛状态": "past"
     }
 ]
