@@ -511,15 +511,6 @@ hide:
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/2775.ics  
                 
-            ??? Quote "[PatriotCTF 2025](http://pctf.competitivecyber.club/)"  
-                [![](https://ctftime.org/media/events/71044796c6f64e9996d2077fd0b64c4c.jpg){ width="200" align=left }](http://pctf.competitivecyber.club/)  
-                **比赛名称** : [PatriotCTF 2025](http://pctf.competitivecyber.club/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-27 02:00:00 - 2025-09-29 02:00:00 UTC+8  
-                **比赛权重** : 42.42  
-                **赛事主办** : Competitive Cyber at Mason (https://ctftime.org/team/176906)  
-                **添加日历** : https://ctftime.org/event/2850.ics  
-                
             ??? Quote "[FAUST CTF 2025](https://2025.faustctf.net/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://2025.faustctf.net/)  
                 **比赛名称** : [FAUST CTF 2025](https://2025.faustctf.net/)  
