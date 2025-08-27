@@ -340,9 +340,9 @@ hide:
                 **赛事主办** : Norske Nøkkelsnikere (https://ctftime.org/team/222749)  
                 **添加日历** : https://ctftime.org/event/2684.ics  
                 
-            ??? Quote "[snakeCTF 2025 Quals](https://snakectf.org/)"  
-                [![](https://ctftime.org/media/events/LogoCroppable_3.png){ width="200" align=left }](https://snakectf.org/)  
-                **比赛名称** : [snakeCTF 2025 Quals](https://snakectf.org/)  
+            ??? Quote "[snakeCTF 2025 Quals](https://2025.snakectf.org/)"  
+                [![](https://ctftime.org/media/events/LogoCroppable_3.png){ width="200" align=left }](https://2025.snakectf.org/)  
+                **比赛名称** : [snakeCTF 2025 Quals](https://2025.snakectf.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-08-30 01:00:00 - 2025-08-31 01:00:00 UTC+8  
                 **比赛权重** : 0.00  
