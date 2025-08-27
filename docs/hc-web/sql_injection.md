@@ -76,13 +76,13 @@ $sql = "SELECT username,password FROM users WHERE id = 1 union select username,p
 
 常用语法：
 
-- `SELECT`
+- `SELECT` 是 SQL 语言中最核心、最常用的命令，用于从数据库中**查询（检索）** 数据
 
-```sql
-SELECT 列名1, 列名2, ... FROM 表名 WHERE 条件
-```
+  ```sql
+  SELECT 列名1, 列名2, ... FROM 表名 WHERE 条件
+  ```
 
-- `UNION`
+- `UNION` 用于合并两个或多个 SELECT 语句的结果集
 
   ```sql
   SELECT 列名 FROM 表名
@@ -90,49 +90,52 @@ SELECT 列名1, 列名2, ... FROM 表名 WHERE 条件
   SELECT 列名_1 FROM 表名_1;
   ```
 
-​		注意 使用 `UNION` 的时候要注意两个表的列数量必须相同。  
+  注意：使用 `UNION` 的时候要注意两个表的列数量必须相同。
 
-- `LIMIT`
+- `LIMIT` 限制返回的记录数量
 
-- ```SQL
-   #返回表中前number行数据
+  ```SQL
+  #返回表中前number行数据
   SELECT column1, column2, ... FROM table_name LIMIT number;
   #从offset+1行开始返回row_count行数据
-  SELECT column1, column2, ... FROM table_name LIMIT offset, row_count; 
+  SELECT column1, column2, ... FROM table_name LIMIT offset, row_count;
   #比如 LIMIT 10, 10 返回11-20行数据
   ```
-  
-- ```SQL
+
+  ```SQL
   SELECT * FROM table_name ORDER BY column_name DESC LIMIT 10;
   ```
 
 - `注释`
 
+  `--` 这是一个单行注释。注意，`--` 后必须加一个空格，注释才会生效
   ```sql
   SELECT username,password FROM users WHERE id = ((1)) union select username,password from user;-- )) limit1,1;后面的内容都将被注释
   ```
 
+  `#` 是另一种单行注释
   ```sql
   DROP sampletable;# 后面的内容都将被注释
   ```
-  
+
+  多行注释使用 `/*` 和 `*/` 包裹注释内容，可以跨多行书写
   ```sql
-    DROP/*comment*/sampletable`   DR/**/OP/*绕过过滤*/sampletable`    SELECT/*替换空格*/password/**/FROM/**/Members #/**/可用于替换空格
-    #/*中间的内容都将被注释*/
+  DROP/*comment*/sampletable`   DR/**/OP/*绕过过滤*/sampletable`    SELECT/*替换空格*/password/**/FROM/**/Members #/**/可用于替换空格
+  /*中间的内容都将被注释*/
   ```
 
   ```sql
-    SELECT /*!32302 1/0, */ 1 FROM tablename #这种 /*! 注释仅在MySQL中存在
+    SELECT /*!32302 1/0, */ 1 FROM tablename #这种 /*! 注释仅在MySQL中存在，在其他数据库中会被忽略
   ```
 
-- `Order by`
+- `Order by` 对结果集进行排序
 
   ```sql
   SELECT column1, column2, ... FROM table_name [WHERE condition] ORDER BY column_name [ASC|DESC];
   ```
-  
+
   其中，column1、column2等表示要查询的列名，table_name表示要查询的表名，condition表示查询条件，column_name表示要按照哪一列进行排序，ASC或DESC表示升序或降序排列。可以使用多个列名来进行排序，多个列名之间用逗号分隔。
-  
+
   ```SQL
   # 在SQL注入中我们常用它来判断列数
   SELECT column1, column2 FROM table_name [WHERE condition] ORDER BY 1;# 不报错
