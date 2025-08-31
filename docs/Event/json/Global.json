@@ -588,18 +588,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "NNS CTF 2025",
-        "比赛时间": "2025-08-30 00:00:00 - 2025-09-01 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2684.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nnsc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/Logo_D.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Norske Nøkkelsnikere (https://ctftime.org/team/222749)",
-        "比赛ID": "1256",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "corCTF 2025",
         "比赛时间": "2025-08-30 08:00:00 - 2025-09-01 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2763.ics",
@@ -621,6 +609,18 @@
         "比赛权重": "36.65",
         "赛事主办": "MadrHacks (https://ctftime.org/team/114509)",
         "比赛ID": "994",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "NNS CTF 2025",
+        "比赛时间": "2025-08-30 00:00:00 - 2025-09-01 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2684.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nnsc.tf/",
+        "比赛标志": "https://ctftime.org/media/events/Logo_D.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Norske Nøkkelsnikere (https://ctftime.org/team/222749)",
+        "比赛ID": "1256",
         "比赛状态": "past"
     },
     {
@@ -1797,18 +1797,6 @@
         "比赛权重": "0.00",
         "赛事主办": "TaruTaru (https://ctftime.org/team/157513)",
         "比赛ID": "671",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "RPCA CTF 2025",
-        "比赛时间": "2025-05-03 01:00:00 - 2025-05-06 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2755.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://grandctf.rpca.ac.th/",
-        "比赛标志": "https://ctftime.org/media/events/Screenshot_4.jpg",
-        "比赛权重": "54.00",
-        "赛事主办": "RPCA Cyber Club (https://ctftime.org/team/132960)",
-        "比赛ID": "781",
         "比赛状态": "past"
     }
 ]

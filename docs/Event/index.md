@@ -740,15 +740,6 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
-            ??? Quote "[NNS CTF 2025](https://nnsc.tf/)"  
-                [![](https://ctftime.org/media/events/Logo_D.png){ width="200" align=left }](https://nnsc.tf/)  
-                **比赛名称** : [NNS CTF 2025](https://nnsc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-08-30 00:00:00 - 2025-09-01 00:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Norske Nøkkelsnikere (https://ctftime.org/team/222749)  
-                **添加日历** : https://ctftime.org/event/2684.ics  
-                
             ??? Quote "[corCTF 2025](https://2025.cor.team/)"  
                 [![](https://ctftime.org/media/events/corctflogo_4.png){ width="200" align=left }](https://2025.cor.team/)  
                 **比赛名称** : [corCTF 2025](https://2025.cor.team/)  
@@ -776,6 +767,15 @@ hide:
                 **比赛权重** : 36.65  
                 **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
                 **添加日历** : https://ctftime.org/event/2817.ics  
+                
+            ??? Quote "[NNS CTF 2025](https://nnsc.tf/)"  
+                [![](https://ctftime.org/media/events/Logo_D.png){ width="200" align=left }](https://nnsc.tf/)  
+                **比赛名称** : [NNS CTF 2025](https://nnsc.tf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-08-30 00:00:00 - 2025-09-01 00:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Norske Nøkkelsnikere (https://ctftime.org/team/222749)  
+                **添加日历** : https://ctftime.org/event/2684.ics  
                 
             ??? Quote "[h4ckc0n 2025](https://h4ckc0n.d4rkc0de.in/)"  
                 [![](https://ctftime.org/media/events/h4ckc0n-logo.png){ width="200" align=left }](https://h4ckc0n.d4rkc0de.in/)  
@@ -1658,15 +1658,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : TaruTaru (https://ctftime.org/team/157513)  
                 **添加日历** : https://ctftime.org/event/2769.ics  
-                
-            ??? Quote "[RPCA CTF 2025](https://grandctf.rpca.ac.th/)"  
-                [![](https://ctftime.org/media/events/Screenshot_4.jpg){ width="200" align=left }](https://grandctf.rpca.ac.th/)  
-                **比赛名称** : [RPCA CTF 2025](https://grandctf.rpca.ac.th/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-03 01:00:00 - 2025-05-06 01:00:00 UTC+8  
-                **比赛权重** : 54.00  
-                **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
-                **添加日历** : https://ctftime.org/event/2755.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

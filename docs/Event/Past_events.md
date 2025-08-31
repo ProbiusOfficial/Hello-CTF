@@ -23,6 +23,15 @@ comments: true
     **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
     **添加日历** : https://ctftime.org/event/2817.ics  
     
+??? Quote "[NNS CTF 2025](https://nnsc.tf/)"  
+    [![](https://ctftime.org/media/events/Logo_D.png){ width="200" align=left }](https://nnsc.tf/)  
+    **比赛名称** : [NNS CTF 2025](https://nnsc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-08-30 00:00:00 - 2025-09-01 00:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Norske Nøkkelsnikere (https://ctftime.org/team/222749)  
+    **添加日历** : https://ctftime.org/event/2684.ics  
+    
 ??? Quote "[h4ckc0n 2025](https://h4ckc0n.d4rkc0de.in/)"  
     [![](https://ctftime.org/media/events/h4ckc0n-logo.png){ width="200" align=left }](https://h4ckc0n.d4rkc0de.in/)  
     **比赛名称** : [h4ckc0n 2025](https://h4ckc0n.d4rkc0de.in/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : TaruTaru (https://ctftime.org/team/157513)  
     **添加日历** : https://ctftime.org/event/2769.ics  
-    
-??? Quote "[RPCA CTF 2025](https://grandctf.rpca.ac.th/)"  
-    [![](https://ctftime.org/media/events/Screenshot_4.jpg){ width="200" align=left }](https://grandctf.rpca.ac.th/)  
-    **比赛名称** : [RPCA CTF 2025](https://grandctf.rpca.ac.th/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-05-03 01:00:00 - 2025-05-06 01:00:00 UTC+8  
-    **比赛权重** : 54.00  
-    **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
-    **添加日历** : https://ctftime.org/event/2755.ics  
     
