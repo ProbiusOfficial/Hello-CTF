@@ -37,7 +37,7 @@ comments: true
     **比赛名称** : [NNS CTF 2025](https://nnsc.tf/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-08-30 00:00:00 - 2025-09-01 00:00:00 UTC+8  
-    **比赛权重** : 0.00  
+    **比赛权重** : 0  
     **赛事主办** : Norske Nøkkelsnikere (https://ctftime.org/team/222749)  
     **添加日历** : https://ctftime.org/event/2684.ics  
     
@@ -172,7 +172,7 @@ comments: true
     **比赛名称** : [scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-08-16 08:00:00 - 2025-08-18 08:00:00 UTC+8  
-    **比赛权重** : 24.66  
+    **比赛权重** : 24.67  
     **赛事主办** : ScriptSorcerers (https://ctftime.org/team/284260)  
     **添加日历** : https://ctftime.org/event/2792.ics  
     
@@ -406,7 +406,7 @@ comments: true
     **比赛名称** : [No Hack No CTF 2025](https://nhnc.ic3dt3a.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-07-05 16:00:00 - 2025-07-07 16:00:00 UTC+8  
-    **比赛权重** : 23.29  
+    **比赛权重** : 23.39  
     **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
     **添加日历** : https://ctftime.org/event/2818.ics  
     
