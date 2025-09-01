@@ -740,15 +740,7 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
-            ??? Quote "[corCTF 2025](https://2025.cor.team/)"  
-                [![](https://ctftime.org/media/events/corctflogo_4.png){ width="200" align=left }](https://2025.cor.team/)  
-                **比赛名称** : [corCTF 2025](https://2025.cor.team/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-08-30 08:00:00 - 2025-09-01 08:00:00 UTC+8  
-                **比赛权重** : 82.00  
-                **赛事主办** : Crusaders of Rust (https://ctftime.org/team/132628)  
-                **添加日历** : https://ctftime.org/event/2763.ics  
-                
+    
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[极客少年挑战赛](URL)"  
@@ -759,6 +751,15 @@ hide:
                 **其他说明** : 第五届极客少年挑战赛将于2025年8月29日10:00至16:00举行，报名从2025年6月3日00:00开始至2025年7月10日23:59结束。单人线下赛，更多信息请加入QQ群1045833929。  
                 
         === "国外赛事"
+            ??? Quote "[corCTF 2025](https://2025.cor.team/)"  
+                [![](https://ctftime.org/media/events/corctflogo_4.png){ width="200" align=left }](https://2025.cor.team/)  
+                **比赛名称** : [corCTF 2025](https://2025.cor.team/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-08-30 08:00:00 - 2025-09-01 08:00:00 UTC+8  
+                **比赛权重** : 82.00  
+                **赛事主办** : Crusaders of Rust (https://ctftime.org/team/132628)  
+                **添加日历** : https://ctftime.org/event/2763.ics  
+                
             ??? Quote "[snakeCTF 2025 Quals](https://2025.snakectf.org/)"  
                 [![](https://ctftime.org/media/events/LogoCroppable_3.png){ width="200" align=left }](https://2025.snakectf.org/)  
                 **比赛名称** : [snakeCTF 2025 Quals](https://2025.snakectf.org/)  
@@ -1649,15 +1650,6 @@ hide:
                 **比赛权重** : 18.35  
                 **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
                 **添加日历** : https://ctftime.org/event/2726.ics  
-                
-            ??? Quote "[TsukuCTF 2025](https://tsukuctf.org/)"  
-                [![](https://ctftime.org/media/events/icon_8.png){ width="200" align=left }](https://tsukuctf.org/)  
-                **比赛名称** : [TsukuCTF 2025](https://tsukuctf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-03 11:00:00 - 2025-05-04 11:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : TaruTaru (https://ctftime.org/team/157513)  
-                **添加日历** : https://ctftime.org/event/2769.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

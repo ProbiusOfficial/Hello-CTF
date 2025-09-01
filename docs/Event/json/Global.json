@@ -597,7 +597,7 @@
         "比赛权重": "82.00",
         "赛事主办": "Crusaders of Rust (https://ctftime.org/team/132628)",
         "比赛ID": "627",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "snakeCTF 2025 Quals",
@@ -1785,18 +1785,6 @@
         "比赛权重": "18.35",
         "赛事主办": "UVT-CTF (https://ctftime.org/team/214520)",
         "比赛ID": "1267",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "TsukuCTF 2025",
-        "比赛时间": "2025-05-03 11:00:00 - 2025-05-04 11:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2769.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://tsukuctf.org/",
-        "比赛标志": "https://ctftime.org/media/events/icon_8.png",
-        "比赛权重": "0.00",
-        "赛事主办": "TaruTaru (https://ctftime.org/team/157513)",
-        "比赛ID": "671",
         "比赛状态": "past"
     }
 ]
