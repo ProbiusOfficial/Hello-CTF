@@ -738,7 +738,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.brunnerne.dk/",
         "比赛标志": "https://ctftime.org/media/events/Discord_logo_-_2-6.png",
-        "比赛权重": "24.67",
+        "比赛权重": "24.68",
         "赛事主办": "Brunnerne (https://ctftime.org/team/155032)",
         "比赛ID": "1341",
         "比赛状态": "past"
@@ -798,7 +798,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.scriptsorcerers.xyz/",
         "比赛标志": "https://ctftime.org/media/events/final_logo.png",
-        "比赛权重": "24.67",
+        "比赛权重": "24.70",
         "赛事主办": "ScriptSorcerers (https://ctftime.org/team/284260)",
         "比赛ID": "1318",
         "比赛状态": "past"
@@ -942,7 +942,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://bdsec-ctf.com/",
         "比赛标志": "https://ctftime.org/media/events/bdsec-ctf-logo_1.png",
-        "比赛权重": "16.15",
+        "比赛权重": "16.63",
         "赛事主办": "Knight Squad (https://ctftime.org/team/141739)",
         "比赛ID": "811",
         "比赛状态": "past"

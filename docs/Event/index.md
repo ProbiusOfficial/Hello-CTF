@@ -864,7 +864,7 @@ hide:
                 **比赛名称** : [BrunnerCTF 2025](https://ctf.brunnerne.dk/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-08-22 20:00:00 - 2025-08-24 20:00:00 UTC+8  
-                **比赛权重** : 24.67  
+                **比赛权重** : 24.68  
                 **赛事主办** : Brunnerne (https://ctftime.org/team/155032)  
                 **添加日历** : https://ctftime.org/event/2835.ics  
                 
@@ -909,7 +909,7 @@ hide:
                 **比赛名称** : [scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-08-16 08:00:00 - 2025-08-18 08:00:00 UTC+8  
-                **比赛权重** : 24.67  
+                **比赛权重** : 24.70  
                 **赛事主办** : ScriptSorcerers (https://ctftime.org/team/284260)  
                 **添加日历** : https://ctftime.org/event/2792.ics  
                 
@@ -1017,7 +1017,7 @@ hide:
                 **比赛名称** : [BDSec CTF 2025](https://bdsec-ctf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-07-20 23:00:00 - 2025-07-21 23:00:00 UTC+8  
-                **比赛权重** : 16.15  
+                **比赛权重** : 16.63  
                 **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
                 **添加日历** : https://ctftime.org/event/2784.ics  
                 
