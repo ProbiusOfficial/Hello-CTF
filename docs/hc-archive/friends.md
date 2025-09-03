@@ -73,6 +73,14 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [部分博客密码删除临时通知](https://y4tacker.github.io/2025/09/02/year/2025/09/%E9%83%A8%E5%88%86%E5%8D%9A%E5%AE%A2%E5%AF%86%E7%A0%81%E5%88%A0%E9%99%A4%E4%B8%B4%E6%97%B6%E9%80%9A%E7%9F%A5/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-09-02
+
+    加密的还是比较多，这里选几篇问的多的先公开吧，碎碎念的思路分享为主，部分文章因为不难写的也比较简单，临近的漏洞仍然不公开博客，主要还是考虑到一些风险吧，以下博客已删除密码，可直接访问:泛微E-Office10最新远程代码执行漏洞分析浅析Panalog-SQL注入到命令执行(Version<20240130)某凌OA之一次后台变前台的故事泛微云桥文件上传与JFinal Bypass浅析帆软FineV...
+    ### [浅析用友U8Cloud文件上传绕过](https://y4tacker.github.io/2025/09/02/year/2025/09/%E6%B5%85%E6%9E%90%E7%94%A8%E5%8F%8BU8Cloud%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%BB%95%E8%BF%87/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-09-02
+
+    b2963ed3cf610cdbf71afa8f8ae1ed42faa800749325fb01df42ebf527266f25d0d5e7eb9f41fa82066f620d019fd4c64786baeb73afd9e2cdd205dfbf7346caaf7b04c2db7f9ebe7b8436778dc80240cb9fe7182f18c78e30e33410a1b6a17184bbd6...
     ### [浅析SmarBI最新权限绕过致RCE](https://y4tacker.github.io/2025/08/18/year/2025/08/%E6%B5%85%E6%9E%90SmarBI%E6%9C%80%E6%96%B0%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E8%87%B4RCE/)  
     >by [Y4tacker](https://y4tacker.github.io), 2025-08-18
 
@@ -145,13 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2025-02-09
 
     来了解一下Windows的APC机制。APCAPC介绍APC 即 Asyncroneus Procedure Call，异步过程调用。学过之前的知识我们知道，线程是不能被杀掉、挂起和恢复的，线程在执行的时候自己占据着CPU，其他线程如何控制它呢？改变一个线程的行为，这就需要APC了。APC结构体APC的结构体如下所示123456789101112131415161718kd> dt _KAPCnt...
-    ### [windows句柄表学习（1）](https://xia0ji233.github.io/2025/01/26/WindowsObjectTable1/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-26
-
-    来了解一下Windows内核的句柄表。句柄句柄就类似 Linux 的文件描述符，指示了某个进程在内核对象的偏移，内核可以通过这个下标找到对应的内核对象。1234HANDLE g_hMutex = ::CreateMutex( NULL , FALSE, "XYZ");HANDLE g_hMutex = ::OpenMutex( MUTEX_ALL_ACCESSFALSE, "XYZ");HANDL...
-    ### [windows进程与线程学习——深入研究线程调度（2）](https://xia0ji233.github.io/2025/01/25/WindowsProcess5/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-25
-
-    深入研究一下线程调度，由于篇幅较多，分章节分析，第二篇。进程挂靠一个进程可以包含多个线程，线程结构体中会指向自己所属的进程。切换到这个线程的时候，会将对应的 cr3 切换到该进程的页目录基址，那么这个线程就可以访问这个进程的所有资源了。前面逆向的时候看到过，在切换 cr3 的时候，是拿到了 KTHREAD.ApcState.Process，而并不是 KTHREAD.Process，这个因为没学 A...
 
 </div>
