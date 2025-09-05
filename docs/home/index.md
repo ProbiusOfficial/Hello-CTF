@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[ImaginaryCTF 2025](https://2025.imaginaryctf.org/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://2025.imaginaryctf.org/)  
-            **比赛名称** : [ImaginaryCTF 2025](https://2025.imaginaryctf.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-09-06 03:00:00 - 2025-09-08 03:00:00 UTC+8  
-            **比赛权重** : 66.02  
-            **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
-            **添加日历** : https://ctftime.org/event/2799.ics  
-            
         ??? Quote "[CRACCON 2025](https://defhawk.com/battleground/raid/craccon-ctf-2025)"  
             [![](https://ctftime.org/media/events/CRACCon.png){ width="200" align=left }](https://defhawk.com/battleground/raid/craccon-ctf-2025)  
             **比赛名称** : [CRACCON 2025](https://defhawk.com/battleground/raid/craccon-ctf-2025)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 25.83  
             **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
             **添加日历** : https://ctftime.org/event/2876.ics  
+            
+        ??? Quote "[WatCTF F25](https://watctf.org/)"  
+            [![](https://ctftime.org/media/events/Black_Back_Yellow_Lock_1.png){ width="200" align=left }](https://watctf.org/)  
+            **比赛名称** : [WatCTF F25](https://watctf.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-09-10 03:00:00 - 2025-09-12 03:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : WATCTF (https://ctftime.org/team/373968)  
+            **添加日历** : https://ctftime.org/event/2854.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
