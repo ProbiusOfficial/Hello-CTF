@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Nullcon Berlin HackIM 2025 CTF](https://ctf.nullcon.net/)"  
+    [![](https://ctftime.org/media/events/hackim.png){ width="200" align=left }](https://ctf.nullcon.net/)  
+    **比赛名称** : [Nullcon Berlin HackIM 2025 CTF](https://ctf.nullcon.net/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-09-04 18:30:00 - 2025-09-05 21:00:00 UTC+8  
+    **比赛权重** : 30.00  
+    **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
+    **添加日历** : https://ctftime.org/event/2874.ics  
+    
 ??? Quote "[corCTF 2025](https://2025.cor.team/)"  
     [![](https://ctftime.org/media/events/corctflogo_4.png){ width="200" align=left }](https://2025.cor.team/)  
     **比赛名称** : [corCTF 2025](https://2025.cor.team/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 37.00  
     **赛事主办** : Punk Security (https://ctftime.org/team/212540)  
     **添加日历** : https://ctftime.org/event/2682.ics  
-    
-??? Quote "[UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)"  
-    [![](https://ctftime.org/media/events/Project.6jpg_1.jpg){ width="200" align=left }](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
-    **比赛名称** : [UniVsThreats 25 CTF](https://univsthreats-2025.cyber-edu.co/?tenant=cyberedu)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-05-03 18:00:00 - 2025-05-04 18:00:00 UTC+8  
-    **比赛权重** : 18.35  
-    **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
-    **添加日历** : https://ctftime.org/event/2726.ics  
     
