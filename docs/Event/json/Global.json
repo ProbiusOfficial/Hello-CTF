@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "ASIS CTF Quals 2025",
-        "比赛时间": "2025-09-06 22:00:00 - 2025-09-07 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2612.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://asisctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/asisctf_1.jpg",
-        "比赛权重": "96.29",
-        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
-        "比赛ID": "55",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "BlackHat MEA CTF Qualification 2025",
         "比赛时间": "2025-09-07 18:00:00 - 2025-09-08 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2876.ics",
@@ -621,6 +609,18 @@
         "比赛权重": "0",
         "赛事主办": "h4wk (https://ctftime.org/team/277994)",
         "比赛ID": "1209",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "ASIS CTF Quals 2025",
+        "比赛时间": "2025-09-06 22:00:00 - 2025-09-07 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2612.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://asisctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/asisctf_1.jpg",
+        "比赛权重": "96.29",
+        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
+        "比赛ID": "55",
         "比赛状态": "nowrunning"
     },
     {
