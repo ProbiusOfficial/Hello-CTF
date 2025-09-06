@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[ASIS CTF Quals 2025](https://asisctf.com/)"  
-    [![](https://ctftime.org/media/events/asisctf_1.jpg){ width="200" align=left }](https://asisctf.com/)  
-    **比赛名称** : [ASIS CTF Quals 2025](https://asisctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-09-06 22:00:00 - 2025-09-07 22:00:00 UTC+8  
-    **比赛权重** : 96.29  
-    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-    **添加日历** : https://ctftime.org/event/2612.ics  
-    
 ??? Quote "[BlackHat MEA CTF Qualification 2025](https://blackhatmea.com/capture-the-flag)"  
     [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2_1.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
     **比赛名称** : [BlackHat MEA CTF Qualification 2025](https://blackhatmea.com/capture-the-flag)  
