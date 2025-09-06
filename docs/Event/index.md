@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[CRACCON 2025](https://defhawk.com/battleground/raid/craccon-ctf-2025)"  
-                [![](https://ctftime.org/media/events/CRACCon.png){ width="200" align=left }](https://defhawk.com/battleground/raid/craccon-ctf-2025)  
-                **比赛名称** : [CRACCON 2025](https://defhawk.com/battleground/raid/craccon-ctf-2025)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-06 16:00:00 - 2025-09-07 16:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : h4wk (https://ctftime.org/team/277994)  
-                **添加日历** : https://ctftime.org/event/2879.ics  
-                
             ??? Quote "[ASIS CTF Quals 2025](https://asisctf.com/)"  
                 [![](https://ctftime.org/media/events/asisctf_1.jpg){ width="200" align=left }](https://asisctf.com/)  
                 **比赛名称** : [ASIS CTF Quals 2025](https://asisctf.com/)  
@@ -739,6 +730,15 @@ hide:
                 **比赛权重** : 66.02  
                 **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
                 **添加日历** : https://ctftime.org/event/2799.ics  
+                
+            ??? Quote "[CRACCON 2025](https://defhawk.com/battleground/raid/craccon-ctf-2025)"  
+                [![](https://ctftime.org/media/events/CRACCon.png){ width="200" align=left }](https://defhawk.com/battleground/raid/craccon-ctf-2025)  
+                **比赛名称** : [CRACCON 2025](https://defhawk.com/battleground/raid/craccon-ctf-2025)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-06 16:00:00 - 2025-09-07 16:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : h4wk (https://ctftime.org/team/277994)  
+                **添加日历** : https://ctftime.org/event/2879.ics  
                 
     === "*已经结束*"
         === "国内赛事"

@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[CRACCON 2025](https://defhawk.com/battleground/raid/craccon-ctf-2025)"  
-            [![](https://ctftime.org/media/events/CRACCon.png){ width="200" align=left }](https://defhawk.com/battleground/raid/craccon-ctf-2025)  
-            **比赛名称** : [CRACCON 2025](https://defhawk.com/battleground/raid/craccon-ctf-2025)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-09-06 16:00:00 - 2025-09-07 16:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : h4wk (https://ctftime.org/team/277994)  
-            **添加日历** : https://ctftime.org/event/2879.ics  
-            
         ??? Quote "[ASIS CTF Quals 2025](https://asisctf.com/)"  
             [![](https://ctftime.org/media/events/asisctf_1.jpg){ width="200" align=left }](https://asisctf.com/)  
             **比赛名称** : [ASIS CTF Quals 2025](https://asisctf.com/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : WATCTF (https://ctftime.org/team/373968)  
             **添加日历** : https://ctftime.org/event/2854.ics  
+            
+        ??? Quote "[DefCamp Capture the Flag (D-CTF) 2025 Quals](https://dctf25-quals.cyber-edu.co/)"  
+            [![](https://ctftime.org/media/events/w5NGLTFBTZWXGg8lLPAeyg-Photoroom_1.png){ width="200" align=left }](https://dctf25-quals.cyber-edu.co/)  
+            **比赛名称** : [DefCamp Capture the Flag (D-CTF) 2025 Quals](https://dctf25-quals.cyber-edu.co/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-09-12 18:00:00 - 2025-09-14 18:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : CCSIR.org (https://ctftime.org/team/9831)  
+            **添加日历** : https://ctftime.org/event/2866.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
