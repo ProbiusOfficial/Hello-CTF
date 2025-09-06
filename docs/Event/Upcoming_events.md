@@ -63,6 +63,15 @@ comments: true
     **赛事主办** : TBTL (https://ctftime.org/team/170112)  
     **添加日历** : https://ctftime.org/event/2893.ics  
     
+??? Quote "[CSAW CTF Qualification Round 2025](https://ctf.csaw.io/)"  
+    [![](https://ctftime.org/media/events/csaw-stars.png){ width="200" align=left }](https://ctf.csaw.io/)  
+    **比赛名称** : [CSAW CTF Qualification Round 2025](https://ctf.csaw.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-09-13 00:00:00 - 2025-09-15 00:00:00 UTC+8  
+    **比赛权重** : 16.47  
+    **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
+    **添加日历** : https://ctftime.org/event/2903.ics  
+    
 ??? Quote "[07CTF](https://ctf.0bscuri7y.xyz/)"  
     [![](https://ctftime.org/media/events/logo_112.png){ width="200" align=left }](https://ctf.0bscuri7y.xyz/)  
     **比赛名称** : [07CTF](https://ctf.0bscuri7y.xyz/)  
@@ -99,6 +108,15 @@ comments: true
     **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
     **添加日历** : https://ctftime.org/event/2892.ics  
     
+??? Quote "[K17 CTF](https://ctf.secso.cc/)"  
+    [![](https://ctftime.org/media/events/k17.png){ width="200" align=left }](https://ctf.secso.cc/)  
+    **比赛名称** : [K17 CTF](https://ctf.secso.cc/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-09-19 16:00:00 - 2025-09-21 16:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : K17 (https://ctftime.org/team/17058)  
+    **添加日历** : https://ctftime.org/event/2902.ics  
+    
 ??? Quote "[CrewCTF 2025](https://2025.crewc.tf/)"  
     [![](https://ctftime.org/media/events/thc_icon_processed.png){ width="200" align=left }](https://2025.crewc.tf/)  
     **比赛名称** : [CrewCTF 2025](https://2025.crewc.tf/)  
@@ -125,6 +143,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Crimson Defense (https://ctftime.org/team/65283)  
     **添加日历** : https://ctftime.org/event/2846.ics  
+    
+??? Quote "[HackornCTF 2025 Quals](https://ctf.secpen.org/)"  
+    [![](https://ctftime.org/media/events/CYBER_EXCILL.jpg){ width="200" align=left }](https://ctf.secpen.org/)  
+    **比赛名称** : [HackornCTF 2025 Quals](https://ctf.secpen.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-09-25 08:00:00 - 2025-09-26 07:59:59 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Hackorn (https://ctftime.org/team/385272)  
+    **添加日历** : https://ctftime.org/event/2919.ics  
     
 ??? Quote "[Iran Tech Olympics CTF 2025](https://ctf.olympics.tech/)"  
     [![](https://ctftime.org/media/events/tech_olympic_logo.jpg){ width="200" align=left }](https://ctf.olympics.tech/)  
