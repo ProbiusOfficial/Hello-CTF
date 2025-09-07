@@ -654,7 +654,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://nnsc.tf/",
         "比赛标志": "https://ctftime.org/media/events/Logo_D.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "Norske Nøkkelsnikere (https://ctftime.org/team/222749)",
         "比赛ID": "1256",
         "比赛状态": "past"
