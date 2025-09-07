@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[CRACCON 2025](https://defhawk.com/battleground/raid/craccon-ctf-2025)"  
+    [![](https://ctftime.org/media/events/CRACCon.png){ width="200" align=left }](https://defhawk.com/battleground/raid/craccon-ctf-2025)  
+    **比赛名称** : [CRACCON 2025](https://defhawk.com/battleground/raid/craccon-ctf-2025)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-09-06 16:00:00 - 2025-09-07 16:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : h4wk (https://ctftime.org/team/277994)  
+    **添加日历** : https://ctftime.org/event/2879.ics  
+    
 ??? Quote "[Nullcon Berlin HackIM 2025 CTF](https://ctf.nullcon.net/)"  
     [![](https://ctftime.org/media/events/hackim.png){ width="200" align=left }](https://ctf.nullcon.net/)  
     **比赛名称** : [Nullcon Berlin HackIM 2025 CTF](https://ctf.nullcon.net/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 36.00  
     **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
     **添加日历** : https://ctftime.org/event/2568.ics  
-    
-??? Quote "[DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.punksecurity.co.uk/)  
-    **比赛名称** : [DevSecOps CTF 2025](https://ctf.punksecurity.co.uk/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-05-04 18:00:00 - 2025-05-05 06:00:00 UTC+8  
-    **比赛权重** : 37.00  
-    **赛事主办** : Punk Security (https://ctftime.org/team/212540)  
-    **添加日历** : https://ctftime.org/event/2682.ics  
     
