@@ -24,18 +24,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Null CTF 2025 (postponed to 5-7 december)",
-        "比赛时间": "2025-09-12 18:00:00 - 2025-09-14 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2868.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.r0devnull.team/",
-        "比赛标志": "https://ctftime.org/media/events/null_ctf_logo_temp.png",
-        "比赛权重": "0.00",
-        "赛事主办": "> r0/dev/null (https://ctftime.org/team/305658)",
-        "比赛ID": "1336",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "FortID CTF 2025",
         "比赛时间": "2025-09-12 20:00:00 - 2025-09-14 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2893.ics",
