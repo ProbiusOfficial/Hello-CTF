@@ -731,15 +731,6 @@ hide:
                 **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
                 **添加日历** : https://ctftime.org/event/2799.ics  
                 
-            ??? Quote "[ASIS CTF Quals 2025](https://asisctf.com/)"  
-                [![](https://ctftime.org/media/events/asisctf_1.jpg){ width="200" align=left }](https://asisctf.com/)  
-                **比赛名称** : [ASIS CTF Quals 2025](https://asisctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-06 22:00:00 - 2025-09-07 22:00:00 UTC+8  
-                **比赛权重** : 96.29  
-                **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-                **添加日历** : https://ctftime.org/event/2612.ics  
-                
             ??? Quote "[BlackHat MEA CTF Qualification 2025](https://blackhatmea.com/capture-the-flag)"  
                 [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2_1.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
                 **比赛名称** : [BlackHat MEA CTF Qualification 2025](https://blackhatmea.com/capture-the-flag)  
@@ -759,6 +750,15 @@ hide:
                 **其他说明** : 第五届极客少年挑战赛将于2025年8月29日10:00至16:00举行，报名从2025年6月3日00:00开始至2025年7月10日23:59结束。单人线下赛，更多信息请加入QQ群1045833929。  
                 
         === "国外赛事"
+            ??? Quote "[ASIS CTF Quals 2025](https://asisctf.com/)"  
+                [![](https://ctftime.org/media/events/asisctf_1.jpg){ width="200" align=left }](https://asisctf.com/)  
+                **比赛名称** : [ASIS CTF Quals 2025](https://asisctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-06 22:00:00 - 2025-09-07 22:00:00 UTC+8  
+                **比赛权重** : 96.29  
+                **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+                **添加日历** : https://ctftime.org/event/2612.ics  
+                
             ??? Quote "[CRACCON 2025](https://defhawk.com/battleground/raid/craccon-ctf-2025)"  
                 [![](https://ctftime.org/media/events/CRACCon.png){ width="200" align=left }](https://defhawk.com/battleground/raid/craccon-ctf-2025)  
                 **比赛名称** : [CRACCON 2025](https://defhawk.com/battleground/raid/craccon-ctf-2025)  
@@ -1649,15 +1649,6 @@ hide:
                 **比赛权重** : 42.00  
                 **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
                 **添加日历** : https://ctftime.org/event/2749.ics  
-                
-            ??? Quote "[LakeCTF Finals 24-25](https://lakectf.epfl.ch/)"  
-                [![](https://ctftime.org/media/events/5ee3dccc1b28b5f04bdf2f7b871b1d07.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
-                **比赛名称** : [LakeCTF Finals 24-25](https://lakectf.epfl.ch/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-09 16:00:00 - 2025-05-10 00:00:00 UTC+8  
-                **比赛权重** : 36.00  
-                **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
-                **添加日历** : https://ctftime.org/event/2568.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
