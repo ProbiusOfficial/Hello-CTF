@@ -32,6 +32,15 @@ comments: true
     **赛事主办** : h4wk (https://ctftime.org/team/277994)  
     **添加日历** : https://ctftime.org/event/2879.ics  
     
+??? Quote "[ImaginaryCTF 2025](https://2025.imaginaryctf.org/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://2025.imaginaryctf.org/)  
+    **比赛名称** : [ImaginaryCTF 2025](https://2025.imaginaryctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-09-06 03:00:00 - 2025-09-08 03:00:00 UTC+8  
+    **比赛权重** : 66.02  
+    **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
+    **添加日历** : https://ctftime.org/event/2799.ics  
+    
 ??? Quote "[Nullcon Berlin HackIM 2025 CTF](https://ctf.nullcon.net/)"  
     [![](https://ctftime.org/media/events/hackim.png){ width="200" align=left }](https://ctf.nullcon.net/)  
     **比赛名称** : [Nullcon Berlin HackIM 2025 CTF](https://ctf.nullcon.net/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 22.18  
     **赛事主办** : 3 Prongs And a Computer (https://ctftime.org/team/112558)  
     **添加日历** : https://ctftime.org/event/2785.ics  
-    
-??? Quote "[Break the Syntax CTF 2025](https://bts2025.wh.edu.pl/)"  
-    [![](https://ctftime.org/media/events/btslogo.png){ width="200" align=left }](https://bts2025.wh.edu.pl/)  
-    **比赛名称** : [Break the Syntax CTF 2025](https://bts2025.wh.edu.pl/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-05-10 00:00:00 - 2025-05-11 18:00:00 UTC+8  
-    **比赛权重** : 42.00  
-    **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
-    **添加日历** : https://ctftime.org/event/2749.ics  
     
