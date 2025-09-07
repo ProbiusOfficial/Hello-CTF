@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[BlackHat MEA CTF Qualification 2025](https://blackhatmea.com/capture-the-flag)"  
-                [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2_1.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
-                **比赛名称** : [BlackHat MEA CTF Qualification 2025](https://blackhatmea.com/capture-the-flag)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-07 18:00:00 - 2025-09-08 18:00:00 UTC+8  
-                **比赛权重** : 25.83  
-                **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
-                **添加日历** : https://ctftime.org/event/2876.ics  
-                
             ??? Quote "[WatCTF F25](https://watctf.org/)"  
                 [![](https://ctftime.org/media/events/Black_Back_Yellow_Lock_1.png){ width="200" align=left }](https://watctf.org/)  
                 **比赛名称** : [WatCTF F25](https://watctf.org/)  
@@ -758,6 +749,15 @@ hide:
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/2612.ics  
                 
+            ??? Quote "[BlackHat MEA CTF Qualification 2025](https://blackhatmea.com/capture-the-flag)"  
+                [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2_1.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
+                **比赛名称** : [BlackHat MEA CTF Qualification 2025](https://blackhatmea.com/capture-the-flag)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-07 18:00:00 - 2025-09-08 18:00:00 UTC+8  
+                **比赛权重** : 25.83  
+                **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
+                **添加日历** : https://ctftime.org/event/2876.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[极客少年挑战赛](URL)"  
@@ -836,7 +836,7 @@ hide:
                 **比赛名称** : [Full Weak Engineer CTF 2025](https://ctf.fwectf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-08-29 18:00:00 - 2025-08-31 18:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 24.43  
                 **赛事主办** : full_weak_engineer (https://ctftime.org/team/305489)  
                 **添加日历** : https://ctftime.org/event/2864.ics  
                 
