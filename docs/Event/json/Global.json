@@ -600,18 +600,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CRACCON 2025",
-        "比赛时间": "2025-09-06 16:00:00 - 2025-09-07 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2879.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://defhawk.com/battleground/raid/craccon-ctf-2025",
-        "比赛标志": "https://ctftime.org/media/events/CRACCon.png",
-        "比赛权重": "0",
-        "赛事主办": "h4wk (https://ctftime.org/team/277994)",
-        "比赛ID": "1209",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "ASIS CTF Quals 2025",
         "比赛时间": "2025-09-06 22:00:00 - 2025-09-07 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2612.ics",
@@ -622,6 +610,18 @@
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "55",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CRACCON 2025",
+        "比赛时间": "2025-09-06 16:00:00 - 2025-09-07 16:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2879.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://defhawk.com/battleground/raid/craccon-ctf-2025",
+        "比赛标志": "https://ctftime.org/media/events/CRACCon.png",
+        "比赛权重": "0",
+        "赛事主办": "h4wk (https://ctftime.org/team/277994)",
+        "比赛ID": "1209",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Nullcon Berlin HackIM 2025 CTF",
@@ -1809,18 +1809,6 @@
         "比赛权重": "36.00",
         "赛事主办": "polygl0ts (https://ctftime.org/team/53791)",
         "比赛ID": "818",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DevSecOps CTF 2025",
-        "比赛时间": "2025-05-04 18:00:00 - 2025-05-05 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2682.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.punksecurity.co.uk/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "37.00",
-        "赛事主办": "Punk Security (https://ctftime.org/team/212540)",
-        "比赛ID": "892",
         "比赛状态": "past"
     }
 ]
