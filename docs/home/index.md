@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[BlackHat MEA CTF Qualification 2025](https://blackhatmea.com/capture-the-flag)"  
-            [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2_1.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
-            **比赛名称** : [BlackHat MEA CTF Qualification 2025](https://blackhatmea.com/capture-the-flag)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-09-07 18:00:00 - 2025-09-08 18:00:00 UTC+8  
-            **比赛权重** : 25.83  
-            **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
-            **添加日历** : https://ctftime.org/event/2876.ics  
-            
         ??? Quote "[WatCTF F25](https://watctf.org/)"  
             [![](https://ctftime.org/media/events/Black_Back_Yellow_Lock_1.png){ width="200" align=left }](https://watctf.org/)  
             **比赛名称** : [WatCTF F25](https://watctf.org/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : > r0/dev/null (https://ctftime.org/team/305658)  
             **添加日历** : https://ctftime.org/event/2868.ics  
+            
+        ??? Quote "[FortID CTF 2025](https://fortid.ctfd.io/)"  
+            [![](https://ctftime.org/media/events/ChatGPT_Image_Aug_7_2025_12_53_26_AM.png){ width="200" align=left }](https://fortid.ctfd.io/)  
+            **比赛名称** : [FortID CTF 2025](https://fortid.ctfd.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-09-12 20:00:00 - 2025-09-14 20:00:00 UTC+8  
+            **比赛权重** : 30.00  
+            **赛事主办** : TBTL (https://ctftime.org/team/170112)  
+            **添加日历** : https://ctftime.org/event/2893.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
