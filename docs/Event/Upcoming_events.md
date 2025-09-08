@@ -63,6 +63,15 @@ comments: true
     **赛事主办** : Friendly Maltese Citizens (https://ctftime.org/team/220769)  
     **添加日历** : https://ctftime.org/event/2777.ics  
     
+??? Quote "[CTF@AC - Quals](https://ctf.ac.upt.ro/)"  
+    [![](https://ctftime.org/media/events/CTFAC.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
+    **比赛名称** : [CTF@AC - Quals](https://ctf.ac.upt.ro/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-09-14 17:00:00 - 2025-09-15 17:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
+    **添加日历** : https://ctftime.org/event/2886.ics  
+    
 ??? Quote "[CyberKumbez 2025](https://kazhackstan.com/)"  
     [![](https://ctftime.org/media/events/kkk.png){ width="200" align=left }](https://kazhackstan.com/)  
     **比赛名称** : [CyberKumbez 2025](https://kazhackstan.com/)  
@@ -269,6 +278,15 @@ comments: true
     **比赛权重** : 94.50  
     **赛事主办** : Nu1L (https://ctftime.org/team/19208)  
     **添加日历** : https://ctftime.org/event/2795.ics  
+    
+??? Quote "[CTF@AC - Finals](https://ctf.ac.upt.ro/)"  
+    [![](https://ctftime.org/media/events/2338e2e4033e4bf196b4e6c5f4f9b20d.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
+    **比赛名称** : [CTF@AC - Finals](https://ctf.ac.upt.ro/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-07 23:00:00 - 2025-11-09 17:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
+    **添加日历** : https://ctftime.org/event/2921.ics  
     
 ??? Quote "[Infobahn CTF 2025](http://infobahnc.tf/)"  
     [![](https://ctftime.org/media/events/mW45GaxJ_400x400.jpg){ width="200" align=left }](http://infobahnc.tf/)  
