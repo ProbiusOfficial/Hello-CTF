@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[WatCTF F25](https://watctf.org/)"  
-    [![](https://ctftime.org/media/events/Black_Back_Yellow_Lock_1.png){ width="200" align=left }](https://watctf.org/)  
-    **比赛名称** : [WatCTF F25](https://watctf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-09-10 03:00:00 - 2025-09-12 03:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : WATCTF (https://ctftime.org/team/373968)  
-    **添加日历** : https://ctftime.org/event/2854.ics  
-    
 ??? Quote "[DefCamp Capture the Flag (D-CTF) 2025 Quals](https://dctf25-quals.cyber-edu.co/)"  
     [![](https://ctftime.org/media/events/w5NGLTFBTZWXGg8lLPAeyg-Photoroom_1.png){ width="200" align=left }](https://dctf25-quals.cyber-edu.co/)  
     **比赛名称** : [DefCamp Capture the Flag (D-CTF) 2025 Quals](https://dctf25-quals.cyber-edu.co/)  

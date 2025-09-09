@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[WatCTF F25](https://watctf.org/)"  
-            [![](https://ctftime.org/media/events/Black_Back_Yellow_Lock_1.png){ width="200" align=left }](https://watctf.org/)  
-            **比赛名称** : [WatCTF F25](https://watctf.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-09-10 03:00:00 - 2025-09-12 03:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : WATCTF (https://ctftime.org/team/373968)  
-            **添加日历** : https://ctftime.org/event/2854.ics  
-            
         ??? Quote "[DefCamp Capture the Flag (D-CTF) 2025 Quals](https://dctf25-quals.cyber-edu.co/)"  
             [![](https://ctftime.org/media/events/w5NGLTFBTZWXGg8lLPAeyg-Photoroom_1.png){ width="200" align=left }](https://dctf25-quals.cyber-edu.co/)  
             **比赛名称** : [DefCamp Capture the Flag (D-CTF) 2025 Quals](https://dctf25-quals.cyber-edu.co/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 16.47  
             **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
             **添加日历** : https://ctftime.org/event/2903.ics  
+            
+        ??? Quote "[07CTF](https://ctf.0bscuri7y.xyz/)"  
+            [![](https://ctftime.org/media/events/logo_112.png){ width="200" align=left }](https://ctf.0bscuri7y.xyz/)  
+            **比赛名称** : [07CTF](https://ctf.0bscuri7y.xyz/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-09-13 14:30:00 - 2025-09-15 02:30:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : 0bscuri7y (https://ctftime.org/team/370140)  
+            **添加日历** : https://ctftime.org/event/2848.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
