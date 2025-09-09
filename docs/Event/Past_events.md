@@ -109,7 +109,7 @@ comments: true
     **比赛名称** : [Full Weak Engineer CTF 2025](https://ctf.fwectf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-08-29 18:00:00 - 2025-08-31 18:00:00 UTC+8  
-    **比赛权重** : 24.48  
+    **比赛权重** : 24.50  
     **赛事主办** : full_weak_engineer (https://ctftime.org/team/305489)  
     **添加日历** : https://ctftime.org/event/2864.ics  
     
@@ -172,7 +172,7 @@ comments: true
     **比赛名称** : [BrunnerCTF 2025](https://ctf.brunnerne.dk/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-08-22 20:00:00 - 2025-08-24 20:00:00 UTC+8  
-    **比赛权重** : 24.68  
+    **比赛权重** : 24.69  
     **赛事主办** : Brunnerne (https://ctftime.org/team/155032)  
     **添加日历** : https://ctftime.org/event/2835.ics  
     
@@ -217,7 +217,7 @@ comments: true
     **比赛名称** : [scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-08-16 08:00:00 - 2025-08-18 08:00:00 UTC+8  
-    **比赛权重** : 24.70  
+    **比赛权重** : 24.71  
     **赛事主办** : ScriptSorcerers (https://ctftime.org/team/284260)  
     **添加日历** : https://ctftime.org/event/2792.ics  
     
@@ -343,7 +343,7 @@ comments: true
     **比赛名称** : [ToH CTF 2025](https://ctf.towerofhanoi.it/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-07-20 00:00:00 - 2025-07-21 00:00:00 UTC+8  
-    **比赛权重** : 24.27  
+    **比赛权重** : 24.31  
     **赛事主办** : Tower of Hanoi (https://ctftime.org/team/300)  
     **添加日历** : https://ctftime.org/event/2833.ics  
     
