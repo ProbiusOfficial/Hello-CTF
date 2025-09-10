@@ -348,6 +348,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "PH03N1X V1P3R N0V4 CTF",
+        "比赛时间": "2025-10-29 18:00:00 - 2025-11-01 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2934.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://pwnctf.ro/",
+        "比赛标志": "https://ctftime.org/media/events/CTF_logo_sex-2_1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)",
+        "比赛ID": "1374",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "N1CTF 2025",
         "比赛时间": "2025-11-01 20:00:00 - 2025-11-02 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2795.ics",
