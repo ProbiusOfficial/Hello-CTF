@@ -609,7 +609,7 @@
         "比赛权重": "0",
         "赛事主办": "WATCTF (https://ctftime.org/team/373968)",
         "比赛ID": "1283",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "BlackHat MEA CTF Qualification 2025",
@@ -1797,18 +1797,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Warwick Cyber Security Society (https://ctftime.org/team/277289)",
         "比赛ID": "1236",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DamCTF 2025",
-        "比赛时间": "2025-05-10 08:00:00 - 2025-05-12 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2585.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://damctf.xyz/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "60.67",
-        "赛事主办": "OSUSEC (https://ctftime.org/team/12858)",
-        "比赛ID": "423",
         "比赛状态": "past"
     }
 ]
