@@ -60,3 +60,12 @@ comments: true
     **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
     **添加日历** : https://ctftime.org/event/2935.ics  
     
+??? Quote "[MaltaCTF 2025 Finals](https://2025.ctf.mt/)"  
+    [![](https://ctftime.org/media/events/MaltaCTF_1.png){ width="200" align=left }](https://2025.ctf.mt/)  
+    **比赛名称** : [MaltaCTF 2025 Finals](https://2025.ctf.mt/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-09-13 18:00:00 - 2025-09-14 18:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Friendly Maltese Citizens (https://ctftime.org/team/220769)  
+    **添加日历** : https://ctftime.org/event/2777.ics  
+    
