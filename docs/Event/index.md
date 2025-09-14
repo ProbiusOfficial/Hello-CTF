@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[CTF@AC - Quals](https://ctf.ac.upt.ro/)"  
-                [![](https://ctftime.org/media/events/CTFAC.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
-                **比赛名称** : [CTF@AC - Quals](https://ctf.ac.upt.ro/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-14 17:00:00 - 2025-09-15 17:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
-                **添加日历** : https://ctftime.org/event/2886.ics  
-                
             ??? Quote "[CyberKumbez 2025](https://kazhackstan.com/)"  
                 [![](https://ctftime.org/media/events/kkk.png){ width="200" align=left }](https://kazhackstan.com/)  
                 **比赛名称** : [CyberKumbez 2025](https://kazhackstan.com/)  
@@ -776,6 +767,15 @@ hide:
                 **赛事主办** : Friendly Maltese Citizens (https://ctftime.org/team/220769)  
                 **添加日历** : https://ctftime.org/event/2777.ics  
                 
+            ??? Quote "[CTF@AC - Quals](https://ctf.ac.upt.ro/)"  
+                [![](https://ctftime.org/media/events/CTFAC.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
+                **比赛名称** : [CTF@AC - Quals](https://ctf.ac.upt.ro/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-14 17:00:00 - 2025-09-15 17:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
+                **添加日历** : https://ctftime.org/event/2886.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[极客少年挑战赛](URL)"  
@@ -818,7 +818,7 @@ hide:
                 **比赛名称** : [CRACCON 2025](https://defhawk.com/battleground/raid/craccon-ctf-2025)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-09-06 16:00:00 - 2025-09-07 16:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 23.77  
                 **赛事主办** : h4wk (https://ctftime.org/team/277994)  
                 **添加日历** : https://ctftime.org/event/2879.ics  
                 

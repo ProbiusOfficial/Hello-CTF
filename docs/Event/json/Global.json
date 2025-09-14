@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "CTF@AC - Quals",
-        "比赛时间": "2025-09-14 17:00:00 - 2025-09-15 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2886.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.ac.upt.ro/",
-        "比赛标志": "https://ctftime.org/media/events/CTFAC.png",
-        "比赛权重": "0.00",
-        "赛事主办": "UPT-CTF (https://ctftime.org/team/276942)",
-        "比赛ID": "1337",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "CyberKumbez 2025",
         "比赛时间": "2025-09-17 18:00:00 - 2025-09-20 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2875.ics",
@@ -633,6 +621,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Friendly Maltese Citizens (https://ctftime.org/team/220769)",
         "比赛ID": "1302",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CTF@AC - Quals",
+        "比赛时间": "2025-09-14 17:00:00 - 2025-09-15 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2886.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.ac.upt.ro/",
+        "比赛标志": "https://ctftime.org/media/events/CTFAC.png",
+        "比赛权重": "0",
+        "赛事主办": "UPT-CTF (https://ctftime.org/team/276942)",
+        "比赛ID": "1337",
         "比赛状态": "nowrunning"
     },
     {

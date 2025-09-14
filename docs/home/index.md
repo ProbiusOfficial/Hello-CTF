@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[CTF@AC - Quals](https://ctf.ac.upt.ro/)"  
-            [![](https://ctftime.org/media/events/CTFAC.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
-            **比赛名称** : [CTF@AC - Quals](https://ctf.ac.upt.ro/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-09-14 17:00:00 - 2025-09-15 17:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
-            **添加日历** : https://ctftime.org/event/2886.ics  
-            
         ??? Quote "[CyberKumbez 2025](https://kazhackstan.com/)"  
             [![](https://ctftime.org/media/events/kkk.png){ width="200" align=left }](https://kazhackstan.com/)  
             **比赛名称** : [CyberKumbez 2025](https://kazhackstan.com/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : K17 (https://ctftime.org/team/17058)  
             **添加日历** : https://ctftime.org/event/2902.ics  
+            
+        ??? Quote "[CrewCTF 2025](https://2025.crewc.tf/)"  
+            [![](https://ctftime.org/media/events/thc_icon_processed.png){ width="200" align=left }](https://2025.crewc.tf/)  
+            **比赛名称** : [CrewCTF 2025](https://2025.crewc.tf/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-09-20 05:00:00 - 2025-09-22 05:00:00 UTC+8  
+            **比赛权重** : 38.93  
+            **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
+            **添加日历** : https://ctftime.org/event/2704.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
