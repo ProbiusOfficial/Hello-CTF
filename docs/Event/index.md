@@ -713,15 +713,6 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
-            ??? Quote "[07CTF](https://ctf.0bscuri7y.xyz/)"  
-                [![](https://ctftime.org/media/events/logo_112.png){ width="200" align=left }](https://ctf.0bscuri7y.xyz/)  
-                **比赛名称** : [07CTF](https://ctf.0bscuri7y.xyz/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-13 14:30:00 - 2025-09-15 02:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : 0bscuri7y (https://ctftime.org/team/370140)  
-                **添加日历** : https://ctftime.org/event/2848.ics  
-                
             ??? Quote "[CTF@AC - Quals](https://ctf.ac.upt.ro/)"  
                 [![](https://ctftime.org/media/events/CTFAC.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
                 **比赛名称** : [CTF@AC - Quals](https://ctf.ac.upt.ro/)  
@@ -758,6 +749,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
                 **添加日历** : https://ctftime.org/event/2935.ics  
+                
+            ??? Quote "[07CTF](https://ctf.0bscuri7y.xyz/)"  
+                [![](https://ctftime.org/media/events/logo_112.png){ width="200" align=left }](https://ctf.0bscuri7y.xyz/)  
+                **比赛名称** : [07CTF](https://ctf.0bscuri7y.xyz/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-13 14:30:00 - 2025-09-15 02:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : 0bscuri7y (https://ctftime.org/team/370140)  
+                **添加日历** : https://ctftime.org/event/2848.ics  
                 
             ??? Quote "[[DELAYED] CSAW CTF Qualification Round 2025](https://ctf.csaw.io/)"  
                 [![](https://ctftime.org/media/events/csaw-stars.png){ width="200" align=left }](https://ctf.csaw.io/)  
@@ -1631,15 +1631,6 @@ hide:
                 **比赛权重** : 53.00  
                 **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
                 **添加日历** : https://ctftime.org/event/2632.ics  
-                
-            ??? Quote "[WhiteHats TrojanCTF 2025](https://discord.gg/fXHCe9zsHC)"  
-                [![](https://ctftime.org/media/events/TrojanCTF_logo.png){ width="200" align=left }](https://discord.gg/fXHCe9zsHC)  
-                **比赛名称** : [WhiteHats TrojanCTF 2025](https://discord.gg/fXHCe9zsHC)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-17 17:00:00 - 2025-05-18 05:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : E.S.H.A. Trojan (https://ctftime.org/team/248605)  
-                **添加日历** : https://ctftime.org/event/2644.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
