@@ -23,6 +23,15 @@ comments: true
     **赛事主办** : Friendly Maltese Citizens (https://ctftime.org/team/220769)  
     **添加日历** : https://ctftime.org/event/2777.ics  
     
+??? Quote "[Alfa Surfing CTF](https://alfactf.ru/)"  
+    [![](https://ctftime.org/media/events/logo2_7.png){ width="200" align=left }](https://alfactf.ru/)  
+    **比赛名称** : [Alfa Surfing CTF](https://alfactf.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-09-13 17:00:00 - 2025-09-14 23:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
+    **添加日历** : https://ctftime.org/event/2935.ics  
+    
 ??? Quote "[FortID CTF 2025](https://fortid.ctfd.io/)"  
     [![](https://ctftime.org/media/events/ChatGPT_Image_Aug_7_2025_12_53_26_AM.png){ width="200" align=left }](https://fortid.ctfd.io/)  
     **比赛名称** : [FortID CTF 2025](https://fortid.ctfd.io/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
     **添加日历** : https://ctftime.org/event/2710.ics  
-    
-??? Quote "[BYUCTF 2025](https://ctfd.cyberjousting.com/)"  
-    [![](https://ctftime.org/media/events/byuctf.jpg){ width="200" align=left }](https://ctfd.cyberjousting.com/)  
-    **比赛名称** : [BYUCTF 2025](https://ctfd.cyberjousting.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-05-17 10:00:00 - 2025-05-18 10:00:00 UTC+8  
-    **比赛权重** : 36.94  
-    **赛事主办** : BYU Cyberia (https://ctftime.org/team/155711)  
-    **添加日历** : https://ctftime.org/event/2715.ics  
     

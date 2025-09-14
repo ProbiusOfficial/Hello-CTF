@@ -576,18 +576,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Alfa Surfing CTF",
-        "比赛时间": "2025-09-13 17:00:00 - 2025-09-14 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2935.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://alfactf.ru/",
-        "比赛标志": "https://ctftime.org/media/events/logo2_7.png",
-        "比赛权重": "0",
-        "赛事主办": "SPbCTF (https://ctftime.org/team/30003)",
-        "比赛ID": "1418",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "CTF@AC - Quals",
         "比赛时间": "2025-09-14 17:00:00 - 2025-09-15 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2886.ics",
@@ -609,6 +597,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Friendly Maltese Citizens (https://ctftime.org/team/220769)",
         "比赛ID": "1302",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Alfa Surfing CTF",
+        "比赛时间": "2025-09-13 17:00:00 - 2025-09-14 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2935.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://alfactf.ru/",
+        "比赛标志": "https://ctftime.org/media/events/logo2_7.png",
+        "比赛权重": "0",
+        "赛事主办": "SPbCTF (https://ctftime.org/team/30003)",
+        "比赛ID": "1418",
         "比赛状态": "past"
     },
     {
@@ -1785,18 +1785,6 @@
         "比赛权重": "0",
         "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
         "比赛ID": "1163",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BYUCTF 2025",
-        "比赛时间": "2025-05-17 10:00:00 - 2025-05-18 10:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2715.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfd.cyberjousting.com/",
-        "比赛标志": "https://ctftime.org/media/events/byuctf.jpg",
-        "比赛权重": "36.94",
-        "赛事主办": "BYU Cyberia (https://ctftime.org/team/155711)",
-        "比赛ID": "768",
         "比赛状态": "past"
     }
 ]
