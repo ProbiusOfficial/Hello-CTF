@@ -15,15 +15,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[DefCamp Capture the Flag (D-CTF) 2025 Quals](https://dctf25-quals.cyber-edu.co/)"  
-    [![](https://ctftime.org/media/events/w5NGLTFBTZWXGg8lLPAeyg-Photoroom_1.png){ width="200" align=left }](https://dctf25-quals.cyber-edu.co/)  
-    **比赛名称** : [DefCamp Capture the Flag (D-CTF) 2025 Quals](https://dctf25-quals.cyber-edu.co/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-09-12 18:00:00 - 2025-09-14 18:00:00 UTC+8  
-    **比赛权重** : 50.00  
-    **赛事主办** : CCSIR.org (https://ctftime.org/team/9831)  
-    **添加日历** : https://ctftime.org/event/2866.ics  
-    
 ??? Quote "[FortID CTF 2025](https://fortid.ctfd.io/)"  
     [![](https://ctftime.org/media/events/ChatGPT_Image_Aug_7_2025_12_53_26_AM.png){ width="200" align=left }](https://fortid.ctfd.io/)  
     **比赛名称** : [FortID CTF 2025](https://fortid.ctfd.io/)  
@@ -59,15 +50,6 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
     **添加日历** : https://ctftime.org/event/2935.ics  
-    
-??? Quote "[MaltaCTF 2025 Finals](https://2025.ctf.mt/)"  
-    [![](https://ctftime.org/media/events/MaltaCTF_1.png){ width="200" align=left }](https://2025.ctf.mt/)  
-    **比赛名称** : [MaltaCTF 2025 Finals](https://2025.ctf.mt/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-09-13 18:00:00 - 2025-09-14 18:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Friendly Maltese Citizens (https://ctftime.org/team/220769)  
-    **添加日历** : https://ctftime.org/event/2777.ics  
     
 ??? Quote "[CTF@AC - Quals](https://ctf.ac.upt.ro/)"  
     [![](https://ctftime.org/media/events/CTFAC.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  

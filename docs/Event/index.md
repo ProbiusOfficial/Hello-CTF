@@ -713,15 +713,6 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
-            ??? Quote "[DefCamp Capture the Flag (D-CTF) 2025 Quals](https://dctf25-quals.cyber-edu.co/)"  
-                [![](https://ctftime.org/media/events/w5NGLTFBTZWXGg8lLPAeyg-Photoroom_1.png){ width="200" align=left }](https://dctf25-quals.cyber-edu.co/)  
-                **比赛名称** : [DefCamp Capture the Flag (D-CTF) 2025 Quals](https://dctf25-quals.cyber-edu.co/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-12 18:00:00 - 2025-09-14 18:00:00 UTC+8  
-                **比赛权重** : 50.00  
-                **赛事主办** : CCSIR.org (https://ctftime.org/team/9831)  
-                **添加日历** : https://ctftime.org/event/2866.ics  
-                
             ??? Quote "[FortID CTF 2025](https://fortid.ctfd.io/)"  
                 [![](https://ctftime.org/media/events/ChatGPT_Image_Aug_7_2025_12_53_26_AM.png){ width="200" align=left }](https://fortid.ctfd.io/)  
                 **比赛名称** : [FortID CTF 2025](https://fortid.ctfd.io/)  
@@ -758,15 +749,6 @@ hide:
                 **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
                 **添加日历** : https://ctftime.org/event/2935.ics  
                 
-            ??? Quote "[MaltaCTF 2025 Finals](https://2025.ctf.mt/)"  
-                [![](https://ctftime.org/media/events/MaltaCTF_1.png){ width="200" align=left }](https://2025.ctf.mt/)  
-                **比赛名称** : [MaltaCTF 2025 Finals](https://2025.ctf.mt/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-13 18:00:00 - 2025-09-14 18:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Friendly Maltese Citizens (https://ctftime.org/team/220769)  
-                **添加日历** : https://ctftime.org/event/2777.ics  
-                
             ??? Quote "[CTF@AC - Quals](https://ctf.ac.upt.ro/)"  
                 [![](https://ctftime.org/media/events/CTFAC.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
                 **比赛名称** : [CTF@AC - Quals](https://ctf.ac.upt.ro/)  
@@ -786,6 +768,24 @@ hide:
                 **其他说明** : 第五届极客少年挑战赛将于2025年8月29日10:00至16:00举行，报名从2025年6月3日00:00开始至2025年7月10日23:59结束。单人线下赛，更多信息请加入QQ群1045833929。  
                 
         === "国外赛事"
+            ??? Quote "[MaltaCTF 2025 Finals](https://2025.ctf.mt/)"  
+                [![](https://ctftime.org/media/events/MaltaCTF_1.png){ width="200" align=left }](https://2025.ctf.mt/)  
+                **比赛名称** : [MaltaCTF 2025 Finals](https://2025.ctf.mt/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-13 18:00:00 - 2025-09-14 18:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Friendly Maltese Citizens (https://ctftime.org/team/220769)  
+                **添加日历** : https://ctftime.org/event/2777.ics  
+                
+            ??? Quote "[DefCamp Capture the Flag (D-CTF) 2025 Quals](https://dctf25-quals.cyber-edu.co/)"  
+                [![](https://ctftime.org/media/events/w5NGLTFBTZWXGg8lLPAeyg-Photoroom_1.png){ width="200" align=left }](https://dctf25-quals.cyber-edu.co/)  
+                **比赛名称** : [DefCamp Capture the Flag (D-CTF) 2025 Quals](https://dctf25-quals.cyber-edu.co/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-12 18:00:00 - 2025-09-14 18:00:00 UTC+8  
+                **比赛权重** : 50.00  
+                **赛事主办** : CCSIR.org (https://ctftime.org/team/9831)  
+                **添加日历** : https://ctftime.org/event/2866.ics  
+                
             ??? Quote "[WatCTF F25](https://watctf.org/)"  
                 [![](https://ctftime.org/media/events/Black_Back_Yellow_Lock_1.png){ width="200" align=left }](https://watctf.org/)  
                 **比赛名称** : [WatCTF F25](https://watctf.org/)  
@@ -1667,24 +1667,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Visionspace (https://ctftime.org/team/383284)  
                 **添加日历** : https://ctftime.org/event/2787.ics  
-                
-            ??? Quote "[Rams CTF 2025](https://rams-ctf.com/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://rams-ctf.com/)  
-                **比赛名称** : [Rams CTF 2025](https://rams-ctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-10 23:11:20 - 2025-05-10 23:11:20 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : RAM Overflow (https://ctftime.org/team/378601)  
-                **添加日历** : https://ctftime.org/event/2791.ics  
-                
-            ??? Quote "[GooseCTF - misc0nfig 25](https://goosectf.lilypadd.com/)"  
-                [![](https://ctftime.org/media/events/misc0nfig_banner_transparent.png){ width="200" align=left }](https://goosectf.lilypadd.com/)  
-                **比赛名称** : [GooseCTF - misc0nfig 25](https://goosectf.lilypadd.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-10 19:00:00 - 2025-05-12 06:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Warwick Cyber Security Society (https://ctftime.org/team/277289)  
-                **添加日历** : https://ctftime.org/event/2789.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

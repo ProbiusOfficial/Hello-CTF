@@ -552,18 +552,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "DefCamp Capture the Flag (D-CTF) 2025 Quals",
-        "比赛时间": "2025-09-12 18:00:00 - 2025-09-14 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2866.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dctf25-quals.cyber-edu.co/",
-        "比赛标志": "https://ctftime.org/media/events/w5NGLTFBTZWXGg8lLPAeyg-Photoroom_1.png",
-        "比赛权重": "50.00",
-        "赛事主办": "CCSIR.org (https://ctftime.org/team/9831)",
-        "比赛ID": "73",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "FortID CTF 2025",
         "比赛时间": "2025-09-12 20:00:00 - 2025-09-14 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2893.ics",
@@ -612,18 +600,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "MaltaCTF 2025 Finals",
-        "比赛时间": "2025-09-13 18:00:00 - 2025-09-14 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2777.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2025.ctf.mt/",
-        "比赛标志": "https://ctftime.org/media/events/MaltaCTF_1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Friendly Maltese Citizens (https://ctftime.org/team/220769)",
-        "比赛ID": "1302",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "CTF@AC - Quals",
         "比赛时间": "2025-09-14 17:00:00 - 2025-09-15 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2886.ics",
@@ -634,6 +610,30 @@
         "赛事主办": "UPT-CTF (https://ctftime.org/team/276942)",
         "比赛ID": "1337",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "MaltaCTF 2025 Finals",
+        "比赛时间": "2025-09-13 18:00:00 - 2025-09-14 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2777.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2025.ctf.mt/",
+        "比赛标志": "https://ctftime.org/media/events/MaltaCTF_1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Friendly Maltese Citizens (https://ctftime.org/team/220769)",
+        "比赛ID": "1302",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "DefCamp Capture the Flag (D-CTF) 2025 Quals",
+        "比赛时间": "2025-09-12 18:00:00 - 2025-09-14 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2866.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://dctf25-quals.cyber-edu.co/",
+        "比赛标志": "https://ctftime.org/media/events/w5NGLTFBTZWXGg8lLPAeyg-Photoroom_1.png",
+        "比赛权重": "50.00",
+        "赛事主办": "CCSIR.org (https://ctftime.org/team/9831)",
+        "比赛ID": "73",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "WatCTF F25",
@@ -1809,30 +1809,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Visionspace (https://ctftime.org/team/383284)",
         "比赛ID": "1322",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Rams CTF 2025",
-        "比赛时间": "2025-05-10 23:11:20 - 2025-05-10 23:11:20 UTC+8",
-        "添加日历": "https://ctftime.org/event/2791.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://rams-ctf.com/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "RAM Overflow (https://ctftime.org/team/378601)",
-        "比赛ID": "1319",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "GooseCTF - misc0nfig 25",
-        "比赛时间": "2025-05-10 19:00:00 - 2025-05-12 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2789.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://goosectf.lilypadd.com/",
-        "比赛标志": "https://ctftime.org/media/events/misc0nfig_banner_transparent.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Warwick Cyber Security Society (https://ctftime.org/team/277289)",
-        "比赛ID": "1236",
         "比赛状态": "past"
     }
 ]
