@@ -32,6 +32,15 @@ comments: true
     **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
     **添加日历** : https://ctftime.org/event/2935.ics  
     
+??? Quote "[[DELAYED] CSAW CTF Qualification Round 2025](https://ctf.csaw.io/)"  
+    [![](https://ctftime.org/media/events/csaw-stars.png){ width="200" align=left }](https://ctf.csaw.io/)  
+    **比赛名称** : [[DELAYED] CSAW CTF Qualification Round 2025](https://ctf.csaw.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-09-13 00:00:00 - 2025-09-15 00:00:00 UTC+8  
+    **比赛权重** : 16.47  
+    **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
+    **添加日历** : https://ctftime.org/event/2903.ics  
+    
 ??? Quote "[FortID CTF 2025](https://fortid.ctfd.io/)"  
     [![](https://ctftime.org/media/events/ChatGPT_Image_Aug_7_2025_12_53_26_AM.png){ width="200" align=left }](https://fortid.ctfd.io/)  
     **比赛名称** : [FortID CTF 2025](https://fortid.ctfd.io/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : E.S.H.A. Trojan (https://ctftime.org/team/248605)  
     **添加日历** : https://ctftime.org/event/2644.ics  
-    
-??? Quote "[AlpacaHack Round 11 (Web)](https://alpacahack.com/ctfs/round-11)"  
-    [![](https://ctftime.org/media/events/ctftime_10.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-11)  
-    **比赛名称** : [AlpacaHack Round 11 (Web)](https://alpacahack.com/ctfs/round-11)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-05-17 11:00:00 - 2025-05-17 17:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
-    **添加日历** : https://ctftime.org/event/2710.ics  
     

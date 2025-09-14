@@ -15,15 +15,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[[DELAYED] CSAW CTF Qualification Round 2025](https://ctf.csaw.io/)"  
-    [![](https://ctftime.org/media/events/csaw-stars.png){ width="200" align=left }](https://ctf.csaw.io/)  
-    **比赛名称** : [[DELAYED] CSAW CTF Qualification Round 2025](https://ctf.csaw.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-09-13 00:00:00 - 2025-09-15 00:00:00 UTC+8  
-    **比赛权重** : 16.47  
-    **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
-    **添加日历** : https://ctftime.org/event/2903.ics  
-    
 ??? Quote "[07CTF](https://ctf.0bscuri7y.xyz/)"  
     [![](https://ctftime.org/media/events/logo_112.png){ width="200" align=left }](https://ctf.0bscuri7y.xyz/)  
     **比赛名称** : [07CTF](https://ctf.0bscuri7y.xyz/)  
