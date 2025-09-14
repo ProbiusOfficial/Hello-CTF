@@ -552,18 +552,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "[DELAYED] CSAW CTF Qualification Round 2025",
-        "比赛时间": "2025-09-13 00:00:00 - 2025-09-15 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2903.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.csaw.io/",
-        "比赛标志": "https://ctftime.org/media/events/csaw-stars.png",
-        "比赛权重": "16.47",
-        "赛事主办": "NYUSEC (https://ctftime.org/team/439)",
-        "比赛ID": "18",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "07CTF",
         "比赛时间": "2025-09-13 14:30:00 - 2025-09-15 02:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2848.ics",
@@ -609,6 +597,18 @@
         "比赛权重": "0",
         "赛事主办": "SPbCTF (https://ctftime.org/team/30003)",
         "比赛ID": "1418",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "[DELAYED] CSAW CTF Qualification Round 2025",
+        "比赛时间": "2025-09-13 00:00:00 - 2025-09-15 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2903.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.csaw.io/",
+        "比赛标志": "https://ctftime.org/media/events/csaw-stars.png",
+        "比赛权重": "16.47",
+        "赛事主办": "NYUSEC (https://ctftime.org/team/439)",
+        "比赛ID": "18",
         "比赛状态": "past"
     },
     {
@@ -1773,18 +1773,6 @@
         "比赛权重": "0.00",
         "赛事主办": "E.S.H.A. Trojan (https://ctftime.org/team/248605)",
         "比赛ID": "1103",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "AlpacaHack Round 11 (Web)",
-        "比赛时间": "2025-05-17 11:00:00 - 2025-05-17 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2710.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://alpacahack.com/ctfs/round-11",
-        "比赛标志": "https://ctftime.org/media/events/ctftime_10.png",
-        "比赛权重": "0",
-        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
-        "比赛ID": "1163",
         "比赛状态": "past"
     }
 ]
