@@ -552,18 +552,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "FortID CTF 2025",
-        "比赛时间": "2025-09-12 20:00:00 - 2025-09-14 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2893.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://fortid.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/ChatGPT_Image_Aug_7_2025_12_53_26_AM.png",
-        "比赛权重": "30.00",
-        "赛事主办": "TBTL (https://ctftime.org/team/170112)",
-        "比赛ID": "951",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "[DELAYED] CSAW CTF Qualification Round 2025",
         "比赛时间": "2025-09-13 00:00:00 - 2025-09-15 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2903.ics",
@@ -621,6 +609,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Friendly Maltese Citizens (https://ctftime.org/team/220769)",
         "比赛ID": "1302",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "FortID CTF 2025",
+        "比赛时间": "2025-09-12 20:00:00 - 2025-09-14 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2893.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://fortid.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/ChatGPT_Image_Aug_7_2025_12_53_26_AM.png",
+        "比赛权重": "30.00",
+        "赛事主办": "TBTL (https://ctftime.org/team/170112)",
+        "比赛ID": "951",
         "比赛状态": "past"
     },
     {
@@ -1797,18 +1797,6 @@
         "比赛权重": "36.94",
         "赛事主办": "BYU Cyberia (https://ctftime.org/team/155711)",
         "比赛ID": "768",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Cyshock - The Awakening",
-        "比赛时间": "2025-05-14 16:00:00 - 2025-05-16 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2787.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cyshock.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/Cyshock_Banner_Transparent.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Visionspace (https://ctftime.org/team/383284)",
-        "比赛ID": "1322",
         "比赛状态": "past"
     }
 ]

@@ -15,15 +15,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[FortID CTF 2025](https://fortid.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/ChatGPT_Image_Aug_7_2025_12_53_26_AM.png){ width="200" align=left }](https://fortid.ctfd.io/)  
-    **比赛名称** : [FortID CTF 2025](https://fortid.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-09-12 20:00:00 - 2025-09-14 20:00:00 UTC+8  
-    **比赛权重** : 30.00  
-    **赛事主办** : TBTL (https://ctftime.org/team/170112)  
-    **添加日历** : https://ctftime.org/event/2893.ics  
-    
 ??? Quote "[[DELAYED] CSAW CTF Qualification Round 2025](https://ctf.csaw.io/)"  
     [![](https://ctftime.org/media/events/csaw-stars.png){ width="200" align=left }](https://ctf.csaw.io/)  
     **比赛名称** : [[DELAYED] CSAW CTF Qualification Round 2025](https://ctf.csaw.io/)  
