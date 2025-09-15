@@ -713,15 +713,7 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
-            ??? Quote "[CTF@AC - Quals](https://ctf.ac.upt.ro/)"  
-                [![](https://ctftime.org/media/events/CTFAC.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
-                **比赛名称** : [CTF@AC - Quals](https://ctf.ac.upt.ro/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-14 17:00:00 - 2025-09-15 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
-                **添加日历** : https://ctftime.org/event/2886.ics  
-                
+    
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[极客少年挑战赛](URL)"  
@@ -732,6 +724,15 @@ hide:
                 **其他说明** : 第五届极客少年挑战赛将于2025年8月29日10:00至16:00举行，报名从2025年6月3日00:00开始至2025年7月10日23:59结束。单人线下赛，更多信息请加入QQ群1045833929。  
                 
         === "国外赛事"
+            ??? Quote "[CTF@AC - Quals](https://ctf.ac.upt.ro/)"  
+                [![](https://ctftime.org/media/events/CTFAC.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
+                **比赛名称** : [CTF@AC - Quals](https://ctf.ac.upt.ro/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-14 17:00:00 - 2025-09-15 17:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
+                **添加日历** : https://ctftime.org/event/2886.ics  
+                
             ??? Quote "[MaltaCTF 2025 Finals](https://2025.ctf.mt/)"  
                 [![](https://ctftime.org/media/events/MaltaCTF_1.png){ width="200" align=left }](https://2025.ctf.mt/)  
                 **比赛名称** : [MaltaCTF 2025 Finals](https://2025.ctf.mt/)  
@@ -1622,15 +1623,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : [TechnoPandas] (https://ctftime.org/team/1946)  
                 **添加日历** : https://ctftime.org/event/2778.ics  
-                
-            ??? Quote "[Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)"  
-                [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo_1.png){ width="200" align=left }](https://midnightsunctf.com/)  
-                **比赛名称** : [Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-17 20:00:00 - 2025-05-18 20:00:00 UTC+8  
-                **比赛权重** : 53.00  
-                **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-                **添加日历** : https://ctftime.org/event/2632.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

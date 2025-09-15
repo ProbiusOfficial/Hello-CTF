@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[CTF@AC - Quals](https://ctf.ac.upt.ro/)"  
+    [![](https://ctftime.org/media/events/CTFAC.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
+    **比赛名称** : [CTF@AC - Quals](https://ctf.ac.upt.ro/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-09-14 17:00:00 - 2025-09-15 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
+    **添加日历** : https://ctftime.org/event/2886.ics  
+    
 ??? Quote "[MaltaCTF 2025 Finals](https://2025.ctf.mt/)"  
     [![](https://ctftime.org/media/events/MaltaCTF_1.png){ width="200" align=left }](https://2025.ctf.mt/)  
     **比赛名称** : [MaltaCTF 2025 Finals](https://2025.ctf.mt/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : [TechnoPandas] (https://ctftime.org/team/1946)  
     **添加日历** : https://ctftime.org/event/2778.ics  
-    
-??? Quote "[Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)"  
-    [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo_1.png){ width="200" align=left }](https://midnightsunctf.com/)  
-    **比赛名称** : [Midnight Sun CTF 2025 Quals](https://midnightsunctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-05-17 20:00:00 - 2025-05-18 20:00:00 UTC+8  
-    **比赛权重** : 53.00  
-    **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-    **添加日历** : https://ctftime.org/event/2632.ics  
     
