@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[CyberKumbez 2025](https://kazhackstan.com/)"  
-            [![](https://ctftime.org/media/events/kkk.png){ width="200" align=left }](https://kazhackstan.com/)  
-            **比赛名称** : [CyberKumbez 2025](https://kazhackstan.com/)  
-            **比赛形式** : Attack-Defense  
-            **比赛时间** : 2025-09-17 18:00:00 - 2025-09-20 00:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : KazHackStan (https://ctftime.org/team/396364)  
-            **添加日历** : https://ctftime.org/event/2875.ics  
-            
         ??? Quote "[VolgaCTF 2025 Final](https://volgactf.ru/en/volgactf-2025/final/)"  
             [![](https://ctftime.org/media/events/logo-social-yellow_17.png){ width="200" align=left }](https://volgactf.ru/en/volgactf-2025/final/)  
             **比赛名称** : [VolgaCTF 2025 Final](https://volgactf.ru/en/volgactf-2025/final/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 38.93  
             **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
             **添加日历** : https://ctftime.org/event/2704.ics  
+            
+        ??? Quote "[Ctrl+Space CTF Quals](https://ctrl-space.gg/)"  
+            [![](https://ctftime.org/media/events/ctrlspace_1.png){ width="200" align=left }](https://ctrl-space.gg/)  
+            **比赛名称** : [Ctrl+Space CTF Quals](https://ctrl-space.gg/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-09-20 17:00:00 - 2025-09-21 16:59:59 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : ESA (https://ctftime.org/team/391420)  
+            **添加日历** : https://ctftime.org/event/2872.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

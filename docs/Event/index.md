@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[CyberKumbez 2025](https://kazhackstan.com/)"  
-                [![](https://ctftime.org/media/events/kkk.png){ width="200" align=left }](https://kazhackstan.com/)  
-                **比赛名称** : [CyberKumbez 2025](https://kazhackstan.com/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2025-09-17 18:00:00 - 2025-09-20 00:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : KazHackStan (https://ctftime.org/team/396364)  
-                **添加日历** : https://ctftime.org/event/2875.ics  
-                
             ??? Quote "[VolgaCTF 2025 Final](https://volgactf.ru/en/volgactf-2025/final/)"  
                 [![](https://ctftime.org/media/events/logo-social-yellow_17.png){ width="200" align=left }](https://volgactf.ru/en/volgactf-2025/final/)  
                 **比赛名称** : [VolgaCTF 2025 Final](https://volgactf.ru/en/volgactf-2025/final/)  
@@ -713,7 +704,15 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
-    
+            ??? Quote "[CyberKumbez 2025](https://kazhackstan.com/)"  
+                [![](https://ctftime.org/media/events/kkk.png){ width="200" align=left }](https://kazhackstan.com/)  
+                **比赛名称** : [CyberKumbez 2025](https://kazhackstan.com/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2025-09-17 18:00:00 - 2025-09-20 00:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : KazHackStan (https://ctftime.org/team/396364)  
+                **添加日历** : https://ctftime.org/event/2875.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[极客少年挑战赛](URL)"  
