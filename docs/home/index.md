@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[VolgaCTF 2025 Final](https://volgactf.ru/en/volgactf-2025/final/)"  
-            [![](https://ctftime.org/media/events/logo-social-yellow_17.png){ width="200" align=left }](https://volgactf.ru/en/volgactf-2025/final/)  
-            **比赛名称** : [VolgaCTF 2025 Final](https://volgactf.ru/en/volgactf-2025/final/)  
-            **比赛形式** : Attack-Defense  
-            **比赛时间** : 2025-09-18 14:00:00 - 2025-09-18 23:00:00 UTC+8  
-            **比赛权重** : 12.40  
-            **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
-            **添加日历** : https://ctftime.org/event/2892.ics  
-            
         ??? Quote "[K17 CTF](https://ctf.secso.cc/)"  
             [![](https://ctftime.org/media/events/k17.png){ width="200" align=left }](https://ctf.secso.cc/)  
             **比赛名称** : [K17 CTF](https://ctf.secso.cc/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : ESA (https://ctftime.org/team/391420)  
             **添加日历** : https://ctftime.org/event/2872.ics  
+            
+        ??? Quote "[CDCTF 2025](https://uacrimsondefense.github.io/cdctf.html)"  
+            [![](https://ctftime.org/media/events/cdctf_logo_square.png){ width="200" align=left }](https://uacrimsondefense.github.io/cdctf.html)  
+            **比赛名称** : [CDCTF 2025](https://uacrimsondefense.github.io/cdctf.html)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-09-20 23:00:00 - 2025-09-21 11:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Crimson Defense (https://ctftime.org/team/65283)  
+            **添加日历** : https://ctftime.org/event/2846.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

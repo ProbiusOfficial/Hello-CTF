@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[VolgaCTF 2025 Final](https://volgactf.ru/en/volgactf-2025/final/)"  
-                [![](https://ctftime.org/media/events/logo-social-yellow_17.png){ width="200" align=left }](https://volgactf.ru/en/volgactf-2025/final/)  
-                **比赛名称** : [VolgaCTF 2025 Final](https://volgactf.ru/en/volgactf-2025/final/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2025-09-18 14:00:00 - 2025-09-18 23:00:00 UTC+8  
-                **比赛权重** : 12.40  
-                **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
-                **添加日历** : https://ctftime.org/event/2892.ics  
-                
             ??? Quote "[K17 CTF](https://ctf.secso.cc/)"  
                 [![](https://ctftime.org/media/events/k17.png){ width="200" align=left }](https://ctf.secso.cc/)  
                 **比赛名称** : [K17 CTF](https://ctf.secso.cc/)  
@@ -712,6 +703,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : KazHackStan (https://ctftime.org/team/396364)  
                 **添加日历** : https://ctftime.org/event/2875.ics  
+                
+            ??? Quote "[VolgaCTF 2025 Final](https://volgactf.ru/en/volgactf-2025/final/)"  
+                [![](https://ctftime.org/media/events/logo-social-yellow_17.png){ width="200" align=left }](https://volgactf.ru/en/volgactf-2025/final/)  
+                **比赛名称** : [VolgaCTF 2025 Final](https://volgactf.ru/en/volgactf-2025/final/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2025-09-18 14:00:00 - 2025-09-18 23:00:00 UTC+8  
+                **比赛权重** : 12.40  
+                **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
+                **添加日历** : https://ctftime.org/event/2892.ics  
                 
     === "*已经结束*"
         === "国内赛事"
