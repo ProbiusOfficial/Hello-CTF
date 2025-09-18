@@ -704,15 +704,6 @@ hide:
                 **赛事主办** : KazHackStan (https://ctftime.org/team/396364)  
                 **添加日历** : https://ctftime.org/event/2875.ics  
                 
-            ??? Quote "[VolgaCTF 2025 Final](https://volgactf.ru/en/volgactf-2025/final/)"  
-                [![](https://ctftime.org/media/events/logo-social-yellow_17.png){ width="200" align=left }](https://volgactf.ru/en/volgactf-2025/final/)  
-                **比赛名称** : [VolgaCTF 2025 Final](https://volgactf.ru/en/volgactf-2025/final/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2025-09-18 14:00:00 - 2025-09-18 23:00:00 UTC+8  
-                **比赛权重** : 12.40  
-                **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
-                **添加日历** : https://ctftime.org/event/2892.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[极客少年挑战赛](URL)"  
@@ -723,6 +714,15 @@ hide:
                 **其他说明** : 第五届极客少年挑战赛将于2025年8月29日10:00至16:00举行，报名从2025年6月3日00:00开始至2025年7月10日23:59结束。单人线下赛，更多信息请加入QQ群1045833929。  
                 
         === "国外赛事"
+            ??? Quote "[VolgaCTF 2025 Final](https://volgactf.ru/en/volgactf-2025/final/)"  
+                [![](https://ctftime.org/media/events/logo-social-yellow_17.png){ width="200" align=left }](https://volgactf.ru/en/volgactf-2025/final/)  
+                **比赛名称** : [VolgaCTF 2025 Final](https://volgactf.ru/en/volgactf-2025/final/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2025-09-18 14:00:00 - 2025-09-18 23:00:00 UTC+8  
+                **比赛权重** : 12.40  
+                **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
+                **添加日历** : https://ctftime.org/event/2892.ics  
+                
             ??? Quote "[CTF@AC - Quals](https://ctf.ac.upt.ro/)"  
                 [![](https://ctftime.org/media/events/CTFAC.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
                 **比赛名称** : [CTF@AC - Quals](https://ctf.ac.upt.ro/)  
@@ -1613,15 +1613,6 @@ hide:
                 **比赛权重** : 24.00  
                 **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
                 **添加日历** : https://ctftime.org/event/2707.ics  
-                
-            ??? Quote "[AI CTF 2025](https://aictf.phdays.fun/)"  
-                [![](https://ctftime.org/media/events/821553befa9c3ad5b7d17e5e1cbb36a7.png){ width="200" align=left }](https://aictf.phdays.fun/)  
-                **比赛名称** : [AI CTF 2025](https://aictf.phdays.fun/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-23 01:00:00 - 2025-05-24 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : [TechnoPandas] (https://ctftime.org/team/1946)  
-                **添加日历** : https://ctftime.org/event/2778.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

@@ -549,7 +549,7 @@
         "比赛权重": "12.40",
         "赛事主办": "VolgaCTF.org (https://ctftime.org/team/27094)",
         "比赛ID": "53",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "CTF@AC - Quals",
@@ -1737,18 +1737,6 @@
         "比赛权重": "24.00",
         "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
         "比赛ID": "554",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "AI CTF 2025",
-        "比赛时间": "2025-05-23 01:00:00 - 2025-05-24 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2778.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://aictf.phdays.fun/",
-        "比赛标志": "https://ctftime.org/media/events/821553befa9c3ad5b7d17e5e1cbb36a7.png",
-        "比赛权重": "0",
-        "赛事主办": "[TechnoPandas] (https://ctftime.org/team/1946)",
-        "比赛ID": "1129",
         "比赛状态": "past"
     }
 ]
