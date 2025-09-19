@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[K17 CTF](https://ctf.secso.cc/)"  
-            [![](https://ctftime.org/media/events/k17.png){ width="200" align=left }](https://ctf.secso.cc/)  
-            **比赛名称** : [K17 CTF](https://ctf.secso.cc/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-09-19 16:00:00 - 2025-09-21 16:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : K17 (https://ctftime.org/team/17058)  
-            **添加日历** : https://ctftime.org/event/2902.ics  
-            
         ??? Quote "[CrewCTF 2025](https://2025.crewc.tf/)"  
             [![](https://ctftime.org/media/events/thc_icon_processed.png){ width="200" align=left }](https://2025.crewc.tf/)  
             **比赛名称** : [CrewCTF 2025](https://2025.crewc.tf/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Crimson Defense (https://ctftime.org/team/65283)  
             **添加日历** : https://ctftime.org/event/2846.ics  
+            
+        ??? Quote "[HackornCTF 2025 Quals](https://ctf.secpen.org/)"  
+            [![](https://ctftime.org/media/events/CYBER_EXCILL.jpg){ width="200" align=left }](https://ctf.secpen.org/)  
+            **比赛名称** : [HackornCTF 2025 Quals](https://ctf.secpen.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-09-25 08:00:00 - 2025-09-26 07:59:59 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : Hackorn (https://ctftime.org/team/385272)  
+            **添加日历** : https://ctftime.org/event/2919.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
