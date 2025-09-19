@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[CrewCTF 2025](https://2025.crewc.tf/)"  
-            [![](https://ctftime.org/media/events/thc_icon_processed.png){ width="200" align=left }](https://2025.crewc.tf/)  
-            **比赛名称** : [CrewCTF 2025](https://2025.crewc.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-09-20 05:00:00 - 2025-09-22 05:00:00 UTC+8  
-            **比赛权重** : 38.93  
-            **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
-            **添加日历** : https://ctftime.org/event/2704.ics  
-            
         ??? Quote "[Ctrl+Space CTF Quals](https://ctrl-space.gg/)"  
             [![](https://ctftime.org/media/events/ctrlspace_1.png){ width="200" align=left }](https://ctrl-space.gg/)  
             **比赛名称** : [Ctrl+Space CTF Quals](https://ctrl-space.gg/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : Hackorn (https://ctftime.org/team/385272)  
             **添加日历** : https://ctftime.org/event/2919.ics  
+            
+        ??? Quote "[Iran Tech Olympics CTF 2025](https://ctf.olympics.tech/)"  
+            [![](https://ctftime.org/media/events/tech_olympic_logo.jpg){ width="200" align=left }](https://ctf.olympics.tech/)  
+            **比赛名称** : [Iran Tech Olympics CTF 2025](https://ctf.olympics.tech/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-09-26 21:00:00 - 2025-09-27 21:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+            **添加日历** : https://ctftime.org/event/2775.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
