@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Ctrl+Space CTF Quals](https://ctrl-space.gg/)"  
-            [![](https://ctftime.org/media/events/ctrlspace_1.png){ width="200" align=left }](https://ctrl-space.gg/)  
-            **比赛名称** : [Ctrl+Space CTF Quals](https://ctrl-space.gg/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-09-20 17:00:00 - 2025-09-21 16:59:59 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : ESA (https://ctftime.org/team/391420)  
-            **添加日历** : https://ctftime.org/event/2872.ics  
-            
         ??? Quote "[CDCTF 2025](https://uacrimsondefense.github.io/cdctf.html)"  
             [![](https://ctftime.org/media/events/cdctf_logo_square.png){ width="200" align=left }](https://uacrimsondefense.github.io/cdctf.html)  
             **比赛名称** : [CDCTF 2025](https://uacrimsondefense.github.io/cdctf.html)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : ASIS (https://ctftime.org/team/4140)  
             **添加日历** : https://ctftime.org/event/2775.ics  
+            
+        ??? Quote "[FAUST CTF 2025](https://2025.faustctf.net/)"  
+            [![](https://ctftime.org/media/events/faustctf_3.png){ width="200" align=left }](https://2025.faustctf.net/)  
+            **比赛名称** : [FAUST CTF 2025](https://2025.faustctf.net/)  
+            **比赛形式** : Attack-Defense  
+            **比赛时间** : 2025-09-27 20:00:00 - 2025-09-28 05:00:00 UTC+8  
+            **比赛权重** : 92.50  
+            **赛事主办** : FAUST (https://ctftime.org/team/550)  
+            **添加日历** : https://ctftime.org/event/2780.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

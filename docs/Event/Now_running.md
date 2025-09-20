@@ -33,3 +33,12 @@ comments: true
     **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
     **添加日历** : https://ctftime.org/event/2704.ics  
     
+??? Quote "[Ctrl+Space CTF Quals](https://ctrl-space.gg/)"  
+    [![](https://ctftime.org/media/events/ctrlspace_1.png){ width="200" align=left }](https://ctrl-space.gg/)  
+    **比赛名称** : [Ctrl+Space CTF Quals](https://ctrl-space.gg/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-09-20 17:00:00 - 2025-09-21 16:59:59 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ESA (https://ctftime.org/team/391420)  
+    **添加日历** : https://ctftime.org/event/2872.ics  
+    
