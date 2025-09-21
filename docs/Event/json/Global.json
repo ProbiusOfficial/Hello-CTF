@@ -480,18 +480,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "CrewCTF 2025",
-        "比赛时间": "2025-09-20 05:00:00 - 2025-09-22 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2704.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2025.crewc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/thc_icon_processed.png",
-        "比赛权重": "38.93",
-        "赛事主办": "thehackerscrew (https://ctftime.org/team/85618)",
-        "比赛ID": "738",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "CDCTF 2025",
         "比赛时间": "2025-09-20 23:00:00 - 2025-09-21 11:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2846.ics",
@@ -513,6 +501,18 @@
         "比赛权重": "0",
         "赛事主办": "ESA (https://ctftime.org/team/391420)",
         "比赛ID": "1375",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "CrewCTF 2025",
+        "比赛时间": "2025-09-20 05:00:00 - 2025-09-22 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2704.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2025.crewc.tf/",
+        "比赛标志": "https://ctftime.org/media/events/thc_icon_processed.png",
+        "比赛权重": "38.93",
+        "赛事主办": "thehackerscrew (https://ctftime.org/team/85618)",
+        "比赛ID": "738",
         "比赛状态": "past"
     },
     {
@@ -1677,18 +1677,6 @@
         "比赛权重": "0.00",
         "赛事主办": "fs0cie1yᶦⁿᵈᶦᵃ (https://ctftime.org/team/380218)",
         "比赛ID": "1311",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SAS CTF 2025 Quals",
-        "比赛时间": "2025-05-24 20:00:00 - 2025-05-25 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2636.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.thesascon.com/",
-        "比赛标志": "https://ctftime.org/media/events/SAS25_new.png",
-        "比赛权重": "20.72",
-        "赛事主办": "SAS CREW (https://ctftime.org/team/283057)",
-        "比赛ID": "1081",
         "比赛状态": "past"
     }
 ]
