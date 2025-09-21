@@ -755,7 +755,7 @@ hide:
                 **比赛名称** : [07CTF](https://ctf.0bscuri7y.xyz/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-09-13 14:30:00 - 2025-09-15 02:30:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 23.61  
                 **赛事主办** : 0bscuri7y (https://ctftime.org/team/370140)  
                 **添加日历** : https://ctftime.org/event/2848.ics  
                 
