@@ -82,7 +82,7 @@ comments: true
     **比赛名称** : [Alfa Surfing CTF](https://alfactf.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-09-13 17:00:00 - 2025-09-14 23:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 21.00  
     **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
     **添加日历** : https://ctftime.org/event/2935.ics  
     
