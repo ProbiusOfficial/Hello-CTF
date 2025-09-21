@@ -226,7 +226,7 @@ comments: true
     **比赛名称** : [Full Weak Engineer CTF 2025](https://ctf.fwectf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-08-29 18:00:00 - 2025-08-31 18:00:00 UTC+8  
-    **比赛权重** : 24.56  
+    **比赛权重** : 24.57  
     **赛事主办** : full_weak_engineer (https://ctftime.org/team/305489)  
     **添加日历** : https://ctftime.org/event/2864.ics  
     
@@ -334,7 +334,7 @@ comments: true
     **比赛名称** : [scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-08-16 08:00:00 - 2025-08-18 08:00:00 UTC+8  
-    **比赛权重** : 24.73  
+    **比赛权重** : 24.74  
     **赛事主办** : ScriptSorcerers (https://ctftime.org/team/284260)  
     **添加日历** : https://ctftime.org/event/2792.ics  
     
@@ -442,7 +442,7 @@ comments: true
     **比赛名称** : [BDSec CTF 2025](https://bdsec-ctf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-07-20 23:00:00 - 2025-07-21 23:00:00 UTC+8  
-    **比赛权重** : 16.63  
+    **比赛权重** : 16.11  
     **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
     **添加日历** : https://ctftime.org/event/2784.ics  
     
@@ -595,7 +595,7 @@ comments: true
     **比赛名称** : [CubeCTF](https://cubectf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-07-05 06:16:00 - 2025-07-07 08:25:00 UTC+8  
-    **比赛权重** : 24.71  
+    **比赛权重** : 24.72  
     **赛事主办** : CubeMastery (https://ctftime.org/team/168744)  
     **添加日历** : https://ctftime.org/event/2820.ics  
     
