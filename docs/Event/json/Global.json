@@ -582,7 +582,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://alfactf.ru/",
         "比赛标志": "https://ctftime.org/media/events/logo2_7.png",
-        "比赛权重": "0",
+        "比赛权重": "21.00",
         "赛事主办": "SPbCTF (https://ctftime.org/team/30003)",
         "比赛ID": "1418",
         "比赛状态": "past"
