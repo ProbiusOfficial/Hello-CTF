@@ -686,15 +686,6 @@ hide:
                 **赛事主办** : ESA (https://ctftime.org/team/391420)  
                 **添加日历** : https://ctftime.org/event/2872.ics  
                 
-            ??? Quote "[CDCTF 2025](https://uacrimsondefense.github.io/cdctf.html)"  
-                [![](https://ctftime.org/media/events/cdctf_logo_square.png){ width="200" align=left }](https://uacrimsondefense.github.io/cdctf.html)  
-                **比赛名称** : [CDCTF 2025](https://uacrimsondefense.github.io/cdctf.html)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-20 23:00:00 - 2025-09-21 11:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Crimson Defense (https://ctftime.org/team/65283)  
-                **添加日历** : https://ctftime.org/event/2846.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[极客少年挑战赛](URL)"  
@@ -705,6 +696,15 @@ hide:
                 **其他说明** : 第五届极客少年挑战赛将于2025年8月29日10:00至16:00举行，报名从2025年6月3日00:00开始至2025年7月10日23:59结束。单人线下赛，更多信息请加入QQ群1045833929。  
                 
         === "国外赛事"
+            ??? Quote "[CDCTF 2025](https://uacrimsondefense.github.io/cdctf.html)"  
+                [![](https://ctftime.org/media/events/cdctf_logo_square.png){ width="200" align=left }](https://uacrimsondefense.github.io/cdctf.html)  
+                **比赛名称** : [CDCTF 2025](https://uacrimsondefense.github.io/cdctf.html)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-20 23:00:00 - 2025-09-21 11:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Crimson Defense (https://ctftime.org/team/65283)  
+                **添加日历** : https://ctftime.org/event/2846.ics  
+                
             ??? Quote "[VolgaCTF 2025 Final](https://volgactf.ru/en/volgactf-2025/final/)"  
                 [![](https://ctftime.org/media/events/logo-social-yellow_17.png){ width="200" align=left }](https://volgactf.ru/en/volgactf-2025/final/)  
                 **比赛名称** : [VolgaCTF 2025 Final](https://volgactf.ru/en/volgactf-2025/final/)  
@@ -1595,15 +1595,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Hack'olyte (https://ctftime.org/team/222944)  
                 **添加日历** : https://ctftime.org/event/2722.ics  
-                
-            ??? Quote "[NahamCon CTF 2025](https://ctf.nahamcon.com/)"  
-                [![](https://ctftime.org/media/events/NAHAMCON-LOGOBRANDING_D3_A3.png){ width="200" align=left }](https://ctf.nahamcon.com/)  
-                **比赛名称** : [NahamCon CTF 2025](https://ctf.nahamcon.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-24 03:00:00 - 2025-05-26 03:00:00 UTC+8  
-                **比赛权重** : 53.77  
-                **赛事主办** : JustHacking (https://ctftime.org/team/59573)  
-                **添加日历** : https://ctftime.org/event/2782.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
