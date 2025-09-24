@@ -298,6 +298,15 @@ hide:
                 **赛事主办** : Hackorn (https://ctftime.org/team/385272)  
                 **添加日历** : https://ctftime.org/event/2919.ics  
                 
+            ??? Quote "[Srdnlen CTF 2025 Finals (Sardinia Cyber Camp)](https://ctf.srdnlen.it/)"  
+                [![](https://ctftime.org/media/events/logo-srdnlen-color-260-social.png){ width="200" align=left }](https://ctf.srdnlen.it/)  
+                **比赛名称** : [Srdnlen CTF 2025 Finals (Sardinia Cyber Camp)](https://ctf.srdnlen.it/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-25 18:00:00 - 2025-09-26 06:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Srdnlen (https://ctftime.org/team/83421)  
+                **添加日历** : https://ctftime.org/event/2840.ics  
+                
             ??? Quote "[Iran Tech Olympics CTF 2025](https://ctf.olympics.tech/)"  
                 [![](https://ctftime.org/media/events/tech_olympic_logo.jpg){ width="200" align=left }](https://ctf.olympics.tech/)  
                 **比赛名称** : [Iran Tech Olympics CTF 2025](https://ctf.olympics.tech/)  
@@ -558,6 +567,15 @@ hide:
                 **比赛权重** : 52.57  
                 **赛事主办** : LosFuzzys (https://ctftime.org/team/8323)  
                 **添加日历** : https://ctftime.org/event/2714.ics  
+                
+            ??? Quote "[LakeCTF Quals 25-26](https://lakectf.epfl.ch/)"  
+                [![](https://ctftime.org/media/events/lake_logo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
+                **比赛名称** : [LakeCTF Quals 25-26](https://lakectf.epfl.ch/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-29 02:00:00 - 2025-11-30 02:00:00 UTC+8  
+                **比赛权重** : 45.00  
+                **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
+                **添加日历** : https://ctftime.org/event/2944.ics  
                 
             ??? Quote "[HeroCTF v7](https://heroctf.fr/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://heroctf.fr/)  
