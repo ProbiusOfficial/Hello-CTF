@@ -480,18 +480,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "HackornCTF 2025 Quals",
-        "比赛时间": "2025-09-25 08:00:00 - 2025-09-26 07:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2919.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.secpen.org/",
-        "比赛标志": "https://ctftime.org/media/events/CYBER_EXCILL.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Hackorn (https://ctftime.org/team/385272)",
-        "比赛ID": "1410",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Srdnlen CTF 2025 Finals (Sardinia Cyber Camp)",
         "比赛时间": "2025-09-25 18:00:00 - 2025-09-26 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2840.ics",
@@ -501,6 +489,18 @@
         "比赛权重": "0",
         "赛事主办": "Srdnlen (https://ctftime.org/team/83421)",
         "比赛ID": "840",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "HackornCTF 2025 Quals",
+        "比赛时间": "2025-09-25 08:00:00 - 2025-09-26 07:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2919.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.secpen.org/",
+        "比赛标志": "https://ctftime.org/media/events/CYBER_EXCILL.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Hackorn (https://ctftime.org/team/385272)",
+        "比赛ID": "1410",
         "比赛状态": "past"
     },
     {
@@ -1677,18 +1677,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Hardware CTF by Quarkslab (https://ctftime.org/team/274600)",
         "比赛ID": "1021",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "D^3CTF 2025",
-        "比赛时间": "2025-05-30 20:00:00 - 2025-05-31 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2770.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://d3c.tf/",
-        "比赛标志": "https://ctftime.org/media/events/ddd_1.png",
-        "比赛权重": "54.67",
-        "赛事主办": "D^3CTF Organizers (https://ctftime.org/team/91096)",
-        "比赛ID": "387",
         "比赛状态": "past"
     }
 ]

@@ -23,6 +23,15 @@ comments: true
     **赛事主办** : Srdnlen (https://ctftime.org/team/83421)  
     **添加日历** : https://ctftime.org/event/2840.ics  
     
+??? Quote "[HackornCTF 2025 Quals](https://ctf.secpen.org/)"  
+    [![](https://ctftime.org/media/events/CYBER_EXCILL.jpg){ width="200" align=left }](https://ctf.secpen.org/)  
+    **比赛名称** : [HackornCTF 2025 Quals](https://ctf.secpen.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-09-25 08:00:00 - 2025-09-26 07:59:59 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Hackorn (https://ctftime.org/team/385272)  
+    **添加日历** : https://ctftime.org/event/2919.ics  
+    
 ??? Quote "[CDCTF 2025](https://uacrimsondefense.github.io/cdctf.html)"  
     [![](https://ctftime.org/media/events/cdctf_logo_square.png){ width="200" align=left }](https://uacrimsondefense.github.io/cdctf.html)  
     **比赛名称** : [CDCTF 2025](https://uacrimsondefense.github.io/cdctf.html)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Hardware CTF by Quarkslab (https://ctftime.org/team/274600)  
     **添加日历** : https://ctftime.org/event/2788.ics  
-    
-??? Quote "[D^3CTF 2025](https://d3c.tf/)"  
-    [![](https://ctftime.org/media/events/ddd_1.png){ width="200" align=left }](https://d3c.tf/)  
-    **比赛名称** : [D^3CTF 2025](https://d3c.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-05-30 20:00:00 - 2025-05-31 20:00:00 UTC+8  
-    **比赛权重** : 54.67  
-    **赛事主办** : D^3CTF Organizers (https://ctftime.org/team/91096)  
-    **添加日历** : https://ctftime.org/event/2770.ics  
     
