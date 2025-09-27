@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[FAUST CTF 2025](https://2025.faustctf.net/)"  
-            [![](https://ctftime.org/media/events/faustctf_3.png){ width="200" align=left }](https://2025.faustctf.net/)  
-            **比赛名称** : [FAUST CTF 2025](https://2025.faustctf.net/)  
-            **比赛形式** : Attack-Defense  
-            **比赛时间** : 2025-09-27 20:00:00 - 2025-09-28 05:00:00 UTC+8  
-            **比赛权重** : 92.50  
-            **赛事主办** : FAUST (https://ctftime.org/team/550)  
-            **添加日历** : https://ctftime.org/event/2780.ics  
-            
         ??? Quote "[SunshineCTF 2025](https://sunshinectf.org/)"  
             [![](https://ctftime.org/media/events/sctf_logo_25.png){ width="200" align=left }](https://sunshinectf.org/)  
             **比赛名称** : [SunshineCTF 2025](https://sunshinectf.org/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 24.88  
             **赛事主办** : jailctf (https://ctftime.org/team/311088)  
             **添加日历** : https://ctftime.org/event/2737.ics  
+            
+        ??? Quote "[Securinets CTF Quals 2025](https://ctf.securinets.tn/)"  
+            [![](https://ctftime.org/media/events/19b8d9cf1e7d16e4cb0ad2bce435fb79.png){ width="200" align=left }](https://ctf.securinets.tn/)  
+            **比赛名称** : [Securinets CTF Quals 2025](https://ctf.securinets.tn/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-10-04 21:00:00 - 2025-10-06 05:00:00 UTC+8  
+            **比赛权重** : 70.50  
+            **赛事主办** : Securinets (https://ctftime.org/team/5084)  
+            **添加日历** : https://ctftime.org/event/2884.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
