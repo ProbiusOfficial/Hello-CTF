@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[SunshineCTF 2025](https://sunshinectf.org/)"  
-                [![](https://ctftime.org/media/events/sctf_logo_25.png){ width="200" align=left }](https://sunshinectf.org/)  
-                **比赛名称** : [SunshineCTF 2025](https://sunshinectf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-27 22:00:00 - 2025-09-29 22:00:00 UTC+8  
-                **比赛权重** : 51.65  
-                **赛事主办** : Knightsec (https://ctftime.org/team/2500)  
-                **添加日历** : https://ctftime.org/event/2863.ics  
-                
             ??? Quote "[DFIR Labs Digital Forensics Challenge by The DFIR Report](https://dfirlabs.thedfirreport.com/dfirchallenge)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://dfirlabs.thedfirreport.com/dfirchallenge)  
                 **比赛名称** : [DFIR Labs Digital Forensics Challenge by The DFIR Report](https://dfirlabs.thedfirreport.com/dfirchallenge)  
@@ -650,6 +641,15 @@ hide:
                 **赛事主办** : FAUST (https://ctftime.org/team/550)  
                 **添加日历** : https://ctftime.org/event/2780.ics  
                 
+            ??? Quote "[SunshineCTF 2025](https://sunshinectf.org/)"  
+                [![](https://ctftime.org/media/events/sctf_logo_25.png){ width="200" align=left }](https://sunshinectf.org/)  
+                **比赛名称** : [SunshineCTF 2025](https://sunshinectf.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-27 22:00:00 - 2025-09-29 22:00:00 UTC+8  
+                **比赛权重** : 51.65  
+                **赛事主办** : Knightsec (https://ctftime.org/team/2500)  
+                **添加日历** : https://ctftime.org/event/2863.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[极客少年挑战赛](URL)"  
@@ -746,7 +746,7 @@ hide:
                 **比赛名称** : [CTF@AC - Quals](https://ctf.ac.upt.ro/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-09-14 17:00:00 - 2025-09-15 17:00:00 UTC+8  
-                **比赛权重** : 24.47  
+                **比赛权重** : 24.50  
                 **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
                 **添加日历** : https://ctftime.org/event/2886.ics  
                 
@@ -773,7 +773,7 @@ hide:
                 **比赛名称** : [07CTF](https://ctf.0bscuri7y.xyz/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-09-13 14:30:00 - 2025-09-15 02:30:00 UTC+8  
-                **比赛权重** : 23.61  
+                **比赛权重** : 23.66  
                 **赛事主办** : 0bscuri7y (https://ctftime.org/team/370140)  
                 **添加日历** : https://ctftime.org/event/2848.ics  
                 

@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "SunshineCTF 2025",
-        "比赛时间": "2025-09-27 22:00:00 - 2025-09-29 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2863.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://sunshinectf.org/",
-        "比赛标志": "https://ctftime.org/media/events/sctf_logo_25.png",
-        "比赛权重": "51.65",
-        "赛事主办": "Knightsec (https://ctftime.org/team/2500)",
-        "比赛ID": "137",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "DFIR Labs Digital Forensics Challenge by The DFIR Report",
         "比赛时间": "2025-09-28 00:30:00 - 2025-09-28 04:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2837.ics",
@@ -468,6 +456,18 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "SunshineCTF 2025",
+        "比赛时间": "2025-09-27 22:00:00 - 2025-09-29 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2863.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://sunshinectf.org/",
+        "比赛标志": "https://ctftime.org/media/events/sctf_logo_25.png",
+        "比赛权重": "51.65",
+        "赛事主办": "Knightsec (https://ctftime.org/team/2500)",
+        "比赛ID": "137",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "Iran Tech Olympics CTF 2025",
         "比赛时间": "2025-09-26 21:00:00 - 2025-09-27 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2775.ics",
@@ -582,7 +582,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.ac.upt.ro/",
         "比赛标志": "https://ctftime.org/media/events/CTFAC.png",
-        "比赛权重": "24.47",
+        "比赛权重": "24.50",
         "赛事主办": "UPT-CTF (https://ctftime.org/team/276942)",
         "比赛ID": "1337",
         "比赛状态": "past"
@@ -618,7 +618,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.0bscuri7y.xyz/",
         "比赛标志": "https://ctftime.org/media/events/logo_112.png",
-        "比赛权重": "23.61",
+        "比赛权重": "23.66",
         "赛事主办": "0bscuri7y (https://ctftime.org/team/370140)",
         "比赛ID": "1360",
         "比赛状态": "past"
