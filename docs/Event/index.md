@@ -641,15 +641,6 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
-            ??? Quote "[Iran Tech Olympics CTF 2025](https://ctf.olympics.tech/)"  
-                [![](https://ctftime.org/media/events/tech_olympic_logo.jpg){ width="200" align=left }](https://ctf.olympics.tech/)  
-                **比赛名称** : [Iran Tech Olympics CTF 2025](https://ctf.olympics.tech/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-26 21:00:00 - 2025-09-27 21:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-                **添加日历** : https://ctftime.org/event/2775.ics  
-                
             ??? Quote "[FAUST CTF 2025](https://2025.faustctf.net/)"  
                 [![](https://ctftime.org/media/events/faustctf_3.png){ width="200" align=left }](https://2025.faustctf.net/)  
                 **比赛名称** : [FAUST CTF 2025](https://2025.faustctf.net/)  
@@ -669,6 +660,15 @@ hide:
                 **其他说明** : 第五届极客少年挑战赛将于2025年8月29日10:00至16:00举行，报名从2025年6月3日00:00开始至2025年7月10日23:59结束。单人线下赛，更多信息请加入QQ群1045833929。  
                 
         === "国外赛事"
+            ??? Quote "[Iran Tech Olympics CTF 2025](https://ctf.olympics.tech/)"  
+                [![](https://ctftime.org/media/events/tech_olympic_logo.jpg){ width="200" align=left }](https://ctf.olympics.tech/)  
+                **比赛名称** : [Iran Tech Olympics CTF 2025](https://ctf.olympics.tech/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-26 21:00:00 - 2025-09-27 21:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+                **添加日历** : https://ctftime.org/event/2775.ics  
+                
             ??? Quote "[Srdnlen CTF 2025 Finals (Sardinia Cyber Camp)](https://ctf.srdnlen.it/)"  
                 [![](https://ctftime.org/media/events/logo-srdnlen-color-260-social.png){ width="200" align=left }](https://ctf.srdnlen.it/)  
                 **比赛名称** : [Srdnlen CTF 2025 Finals (Sardinia Cyber Camp)](https://ctf.srdnlen.it/)  
@@ -1559,15 +1559,6 @@ hide:
                 **比赛权重** : 24.34  
                 **赛事主办** : NOPS (https://ctftime.org/team/4056)  
                 **添加日历** : https://ctftime.org/event/2486.ics  
-                
-            ??? Quote "[Hardwear.io USA 2025 Hardware CTF](https://hwctf.quarkslab.com/)"  
-                [![](https://ctftime.org/media/events/logohwcolor_15.png){ width="200" align=left }](https://hwctf.quarkslab.com/)  
-                **比赛名称** : [Hardwear.io USA 2025 Hardware CTF](https://hwctf.quarkslab.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-05-31 01:00:00 - 2025-06-01 04:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Hardware CTF by Quarkslab (https://ctftime.org/team/274600)  
-                **添加日历** : https://ctftime.org/event/2788.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
