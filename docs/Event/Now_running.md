@@ -33,3 +33,12 @@ comments: true
     **赛事主办** : Knightsec (https://ctftime.org/team/2500)  
     **添加日历** : https://ctftime.org/event/2863.ics  
     
+??? Quote "[DFIR Labs Digital Forensics Challenge by The DFIR Report](https://dfirlabs.thedfirreport.com/dfirchallenge)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://dfirlabs.thedfirreport.com/dfirchallenge)  
+    **比赛名称** : [DFIR Labs Digital Forensics Challenge by The DFIR Report](https://dfirlabs.thedfirreport.com/dfirchallenge)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-09-28 00:30:00 - 2025-09-28 04:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
+    **添加日历** : https://ctftime.org/event/2837.ics  
+    

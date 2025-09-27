@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[DFIR Labs Digital Forensics Challenge by The DFIR Report](https://dfirlabs.thedfirreport.com/dfirchallenge)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://dfirlabs.thedfirreport.com/dfirchallenge)  
-            **比赛名称** : [DFIR Labs Digital Forensics Challenge by The DFIR Report](https://dfirlabs.thedfirreport.com/dfirchallenge)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-09-28 00:30:00 - 2025-09-28 04:30:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
-            **添加日历** : https://ctftime.org/event/2837.ics  
-            
         ??? Quote "[jailCTF 2025](https://ctf.pyjail.club/)"  
             [![](https://ctftime.org/media/events/jailctf.png){ width="200" align=left }](https://ctf.pyjail.club/)  
             **比赛名称** : [jailCTF 2025](https://ctf.pyjail.club/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : STANDOFF 365 (https://ctftime.org/team/388543)  
             **添加日历** : https://ctftime.org/event/2885.ics  
+            
+        ??? Quote "[AmateursCTF 2025](https://ctf.amateurs.team/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ctf.amateurs.team/)  
+            **比赛名称** : [AmateursCTF 2025](https://ctf.amateurs.team/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-10-11 08:00:00 - 2025-10-15 08:00:00 UTC+8  
+            **比赛权重** : 36.00  
+            **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
+            **添加日历** : https://ctftime.org/event/2844.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

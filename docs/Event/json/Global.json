@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "DFIR Labs Digital Forensics Challenge by The DFIR Report",
-        "比赛时间": "2025-09-28 00:30:00 - 2025-09-28 04:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2837.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dfirlabs.thedfirreport.com/dfirchallenge",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "The DFIR Report (https://ctftime.org/team/309500)",
-        "比赛ID": "1149",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "jailCTF 2025",
         "比赛时间": "2025-10-04 04:00:00 - 2025-10-07 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2737.ics",
@@ -465,6 +453,18 @@
         "比赛权重": "51.65",
         "赛事主办": "Knightsec (https://ctftime.org/team/2500)",
         "比赛ID": "137",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "DFIR Labs Digital Forensics Challenge by The DFIR Report",
+        "比赛时间": "2025-09-28 00:30:00 - 2025-09-28 04:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2837.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://dfirlabs.thedfirreport.com/dfirchallenge",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "The DFIR Report (https://ctftime.org/team/309500)",
+        "比赛ID": "1149",
         "比赛状态": "nowrunning"
     },
     {
