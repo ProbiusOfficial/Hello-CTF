@@ -692,7 +692,7 @@ hide:
                 **比赛名称** : [CDCTF 2025](https://uacrimsondefense.github.io/cdctf.html)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-09-20 23:00:00 - 2025-09-21 11:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : Crimson Defense (https://ctftime.org/team/65283)  
                 **添加日历** : https://ctftime.org/event/2846.ics  
                 
