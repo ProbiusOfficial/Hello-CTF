@@ -1,5 +1,17 @@
 [
     {
+        "比赛名称": "openECSC 2025",
+        "比赛时间": "2025-09-30 02:00:00 - 2025-10-06 07:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2940.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://openec.sc/",
+        "比赛标志": "https://ctftime.org/media/events/openECSC_1.png",
+        "比赛权重": "0",
+        "赛事主办": "x3CTF (https://ctftime.org/team/309820)",
+        "比赛ID": "1153",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "jailCTF 2025",
         "比赛时间": "2025-10-04 04:00:00 - 2025-10-07 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2737.ics",

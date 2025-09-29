@@ -54,6 +54,15 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
+        ??? Quote "[openECSC 2025](https://openec.sc/)"  
+            [![](https://ctftime.org/media/events/openECSC_1.png){ width="200" align=left }](https://openec.sc/)  
+            **比赛名称** : [openECSC 2025](https://openec.sc/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-09-30 02:00:00 - 2025-10-06 07:59:59 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : x3CTF (https://ctftime.org/team/309820)  
+            **添加日历** : https://ctftime.org/event/2940.ics  
+            
         ??? Quote "[jailCTF 2025](https://ctf.pyjail.club/)"  
             [![](https://ctftime.org/media/events/jailctf.png){ width="200" align=left }](https://ctf.pyjail.club/)  
             **比赛名称** : [jailCTF 2025](https://ctf.pyjail.club/)  
@@ -80,15 +89,6 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : STANDOFF 365 (https://ctftime.org/team/388543)  
             **添加日历** : https://ctftime.org/event/2885.ics  
-            
-        ??? Quote "[AmateursCTF 2025](https://ctf.amateurs.team/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctf.amateurs.team/)  
-            **比赛名称** : [AmateursCTF 2025](https://ctf.amateurs.team/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-10-11 08:00:00 - 2025-10-15 08:00:00 UTC+8  
-            **比赛权重** : 36.00  
-            **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
-            **添加日历** : https://ctftime.org/event/2844.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
