@@ -23,6 +23,15 @@ comments: true
     **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
     **添加日历** : https://ctftime.org/event/2837.ics  
     
+??? Quote "[SunshineCTF 2025](https://sunshinectf.org/)"  
+    [![](https://ctftime.org/media/events/sctf_logo_25.png){ width="200" align=left }](https://sunshinectf.org/)  
+    **比赛名称** : [SunshineCTF 2025](https://sunshinectf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-09-27 22:00:00 - 2025-09-29 22:00:00 UTC+8  
+    **比赛权重** : 51.65  
+    **赛事主办** : Knightsec (https://ctftime.org/team/2500)  
+    **添加日历** : https://ctftime.org/event/2863.ics  
+    
 ??? Quote "[FAUST CTF 2025](https://2025.faustctf.net/)"  
     [![](https://ctftime.org/media/events/faustctf_3.png){ width="200" align=left }](https://2025.faustctf.net/)  
     **比赛名称** : [FAUST CTF 2025](https://2025.faustctf.net/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : OWASP-IL (https://ctftime.org/team/126012)  
     **添加日历** : https://ctftime.org/event/2812.ics  
-    
-??? Quote "[Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)"  
-    [![](https://ctftime.org/media/events/1f40ecb1a9f69d191226247f073cc490.png){ width="200" align=left }](https://ctfd.nusgreyhats.org/)  
-    **比赛名称** : [Grey Cat The Flag 2025](https://ctfd.nusgreyhats.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-05-31 20:00:00 - 2025-06-01 20:00:00 UTC+8  
-    **比赛权重** : 32.92  
-    **赛事主办** : NUS GreyHats (https://ctftime.org/team/16740)  
-    **添加日历** : https://ctftime.org/event/2765.ics  
     
