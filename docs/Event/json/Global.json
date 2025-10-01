@@ -252,18 +252,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "GaianSpace CTF 2025",
-        "比赛时间": "2025-11-14 22:00:00 - 2025-11-17 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2732.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://gaian.space/ctf",
-        "比赛标志": "https://ctftime.org/media/events/gaianspace-logo-new.png",
-        "比赛权重": "0.00",
-        "赛事主办": "GaianSpace (https://ctftime.org/team/373034)",
-        "比赛ID": "1284",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Platypwn 2025",
         "比赛时间": "2025-11-15 17:00:00 - 2025-11-17 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2606.ics",

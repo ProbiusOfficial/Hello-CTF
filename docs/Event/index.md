@@ -478,15 +478,6 @@ hide:
                 **赛事主办** : saarsec (https://ctftime.org/team/15337)  
                 **添加日历** : https://ctftime.org/event/2859.ics  
                 
-            ??? Quote "[GaianSpace CTF 2025](https://gaian.space/ctf)"  
-                [![](https://ctftime.org/media/events/gaianspace-logo-new.png){ width="200" align=left }](https://gaian.space/ctf)  
-                **比赛名称** : [GaianSpace CTF 2025](https://gaian.space/ctf)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-14 22:00:00 - 2025-11-17 22:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : GaianSpace (https://ctftime.org/team/373034)  
-                **添加日历** : https://ctftime.org/event/2732.ics  
-                
             ??? Quote "[Platypwn 2025](https://platypwnies.de/events/platypwn/)"  
                 [![](https://ctftime.org/media/events/platypwnies-512_1.png){ width="200" align=left }](https://platypwnies.de/events/platypwn/)  
                 **比赛名称** : [Platypwn 2025](https://platypwnies.de/events/platypwn/)  
