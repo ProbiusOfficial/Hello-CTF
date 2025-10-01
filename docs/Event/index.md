@@ -325,6 +325,15 @@ hide:
                 **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
                 **添加日历** : https://ctftime.org/event/2844.ics  
                 
+            ??? Quote "[POC CTF Qualification 2025](https://powerofcommunity.net/2025/ctf.html)"  
+                [![](https://ctftime.org/media/events/vDP90SY4soKs6q3cKITowqXIE7a0Jy.png){ width="200" align=left }](https://powerofcommunity.net/2025/ctf.html)  
+                **比赛名称** : [POC CTF Qualification 2025](https://powerofcommunity.net/2025/ctf.html)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-10-12 18:00:00 - 2025-10-13 18:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
+                **添加日历** : https://ctftime.org/event/2955.ics  
+                
             ??? Quote "[QnQSec CTF 2025](https://ctf.qnqsec.team/)"  
                 [![](https://ctftime.org/media/events/Logo_QnQSec.jpg){ width="200" align=left }](https://ctf.qnqsec.team/)  
                 **比赛名称** : [QnQSec CTF 2025](https://ctf.qnqsec.team/)  
@@ -477,6 +486,15 @@ hide:
                 **比赛权重** : 97.22  
                 **赛事主办** : saarsec (https://ctftime.org/team/15337)  
                 **添加日历** : https://ctftime.org/event/2859.ics  
+                
+            ??? Quote "[POC CTF Final 2025](https://powerofcommunity.net/2025/ctf.html)"  
+                [![](https://ctftime.org/media/events/vDP90SY4soKs6q3cKITowqXIE7a0Jy_1.png){ width="200" align=left }](https://powerofcommunity.net/2025/ctf.html)  
+                **比赛名称** : [POC CTF Final 2025](https://powerofcommunity.net/2025/ctf.html)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-14 07:00:00 - 2025-11-14 14:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
+                **添加日历** : https://ctftime.org/event/2956.ics  
                 
             ??? Quote "[Platypwn 2025](https://platypwnies.de/events/platypwn/)"  
                 [![](https://ctftime.org/media/events/platypwnies-512_1.png){ width="200" align=left }](https://platypwnies.de/events/platypwn/)  

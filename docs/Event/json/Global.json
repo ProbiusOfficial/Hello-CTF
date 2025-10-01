@@ -48,6 +48,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "POC CTF Qualification 2025",
+        "比赛时间": "2025-10-12 18:00:00 - 2025-10-13 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2955.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://powerofcommunity.net/2025/ctf.html",
+        "比赛标志": "https://ctftime.org/media/events/vDP90SY4soKs6q3cKITowqXIE7a0Jy.png",
+        "比赛权重": "0",
+        "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
+        "比赛ID": "1422",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "QnQSec CTF 2025",
         "比赛时间": "2025-10-17 02:00:00 - 2025-10-20 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2826.ics",
@@ -249,6 +261,18 @@
         "比赛权重": "97.22",
         "赛事主办": "saarsec (https://ctftime.org/team/15337)",
         "比赛ID": "412",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "POC CTF Final 2025",
+        "比赛时间": "2025-11-14 07:00:00 - 2025-11-14 14:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2956.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://powerofcommunity.net/2025/ctf.html",
+        "比赛标志": "https://ctftime.org/media/events/vDP90SY4soKs6q3cKITowqXIE7a0Jy_1.png",
+        "比赛权重": "0",
+        "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
+        "比赛ID": "1422",
         "比赛状态": "oncoming"
     },
     {
