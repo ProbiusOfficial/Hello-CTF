@@ -270,9 +270,9 @@ comments: true
     **赛事主办** : OSINT Switzerland (https://ctftime.org/team/391442)  
     **添加日历** : https://ctftime.org/event/2918.ics  
     
-??? Quote "[Hackloween 2025](https://lobby-ctf.secplayground.com/lobby/df6ff4f1-4187-472e-979d-b45ebc7f236d)"  
-    [![](https://ctftime.org/media/events/SPG_Hackloween_2025__FB_Profile.png){ width="200" align=left }](https://lobby-ctf.secplayground.com/lobby/df6ff4f1-4187-472e-979d-b45ebc7f236d)  
-    **比赛名称** : [Hackloween 2025](https://lobby-ctf.secplayground.com/lobby/df6ff4f1-4187-472e-979d-b45ebc7f236d)  
+??? Quote "[Hackloween 2025](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)"  
+    [![](https://ctftime.org/media/events/SPG_Hackloween_2025__FB_Profile.png){ width="200" align=left }](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)  
+    **比赛名称** : [Hackloween 2025](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-11-01 10:00:00 - 2025-11-02 10:00:00 UTC+8  
     **比赛权重** : 0.00  
