@@ -668,7 +668,7 @@ hide:
                 **添加日历** : https://ctftime.org/event/2606.ics  
                 
             ??? Quote "[Crate-CTF 2025](https://foi.se/cratectf)"  
-                [![](https://ctftime.org/media/events/crate-ctf-2025.png){ width="200" align=left }](https://foi.se/cratectf)  
+                [![](https://ctftime.org/media/events/CTF_2025.png){ width="200" align=left }](https://foi.se/cratectf)  
                 **比赛名称** : [Crate-CTF 2025](https://foi.se/cratectf)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-11-15 21:00:00 - 2025-11-16 05:00:00 UTC+8  
