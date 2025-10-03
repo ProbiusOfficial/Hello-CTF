@@ -33,3 +33,12 @@ comments: true
     **赛事主办** : x3CTF (https://ctftime.org/team/309820)  
     **添加日历** : https://ctftime.org/event/2940.ics  
     
+??? Quote "[jailCTF 2025](https://ctf.pyjail.club/)"  
+    [![](https://ctftime.org/media/events/jailctf.png){ width="200" align=left }](https://ctf.pyjail.club/)  
+    **比赛名称** : [jailCTF 2025](https://ctf.pyjail.club/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-10-04 04:00:00 - 2025-10-07 04:00:00 UTC+8  
+    **比赛权重** : 24.88  
+    **赛事主办** : jailctf (https://ctftime.org/team/311088)  
+    **添加日历** : https://ctftime.org/event/2737.ics  
+    
