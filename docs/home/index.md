@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[COMPFEST CTF 2025](https://compfest.id/)"  
-            [![](https://ctftime.org/media/events/COMPFEST_1.png){ width="200" align=left }](https://compfest.id/)  
-            **比赛名称** : [COMPFEST CTF 2025](https://compfest.id/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-10-04 10:00:00 - 2025-10-05 10:00:00 UTC+8  
-            **比赛权重** : 64.00  
-            **赛事主办** : CSUI (https://ctftime.org/team/70551)  
-            **添加日历** : https://ctftime.org/event/2900.ics  
-            
         ??? Quote "[CRAC CTF - Cloud and IAM CTF](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)"  
             [![](https://ctftime.org/media/events/defhawklogo.png){ width="200" align=left }](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)  
             **比赛名称** : [CRAC CTF - Cloud and IAM CTF](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : STANDOFF 365 (https://ctftime.org/team/388543)  
             **添加日历** : https://ctftime.org/event/2885.ics  
+            
+        ??? Quote "[ECW Online Qualifiers](https://challenge-ecw.eu/)"  
+            [![](https://ctftime.org/media/events/logo_115.png){ width="200" align=left }](https://challenge-ecw.eu/)  
+            **比赛名称** : [ECW Online Qualifiers](https://challenge-ecw.eu/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-10-08 20:00:00 - 2025-10-22 22:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : Astek Group (https://ctftime.org/team/407057)  
+            **添加日历** : https://ctftime.org/event/2959.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
