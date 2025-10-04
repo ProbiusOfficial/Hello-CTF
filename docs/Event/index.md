@@ -893,15 +893,6 @@ hide:
                 **赛事主办** : CSUI (https://ctftime.org/team/70551)  
                 **添加日历** : https://ctftime.org/event/2900.ics  
                 
-            ??? Quote "[CRAC CTF - Cloud and IAM CTF](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)"  
-                [![](https://ctftime.org/media/events/defhawklogo.png){ width="200" align=left }](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)  
-                **比赛名称** : [CRAC CTF - Cloud and IAM CTF](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-04 16:30:00 - 2025-10-04 19:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : h4wk (https://ctftime.org/team/277994)  
-                **添加日历** : https://ctftime.org/event/2954.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[极客少年挑战赛](URL)"  
@@ -912,6 +903,15 @@ hide:
                 **其他说明** : 第五届极客少年挑战赛将于2025年8月29日10:00至16:00举行，报名从2025年6月3日00:00开始至2025年7月10日23:59结束。单人线下赛，更多信息请加入QQ群1045833929。  
                 
         === "国外赛事"
+            ??? Quote "[CRAC CTF - Cloud and IAM CTF](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)"  
+                [![](https://ctftime.org/media/events/defhawklogo.png){ width="200" align=left }](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)  
+                **比赛名称** : [CRAC CTF - Cloud and IAM CTF](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-10-04 16:30:00 - 2025-10-04 19:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : h4wk (https://ctftime.org/team/277994)  
+                **添加日历** : https://ctftime.org/event/2954.ics  
+                
             ??? Quote "[InfiniteCTF Qualifiers](https://register.redteamassociation.com/)"  
                 [![](https://ctftime.org/media/events/RED_TEAM_pentagon_red.png){ width="200" align=left }](https://register.redteamassociation.com/)  
                 **比赛名称** : [InfiniteCTF Qualifiers](https://register.redteamassociation.com/)  
@@ -1802,15 +1802,6 @@ hide:
                 **比赛权重** : 95.79  
                 **赛事主办** : bi0s (https://ctftime.org/team/662)  
                 **添加日历** : https://ctftime.org/event/2672.ics  
-                
-            ??? Quote "[DIVER OSINT CTF 2025](https://ctfd.diverctf.org/)"  
-                [![](https://ctftime.org/media/events/logo_circle.png){ width="200" align=left }](https://ctfd.diverctf.org/)  
-                **比赛名称** : [DIVER OSINT CTF 2025](https://ctfd.diverctf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-07 11:00:00 - 2025-06-08 11:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
-                **添加日历** : https://ctftime.org/event/2751.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
