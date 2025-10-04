@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[CRAC CTF - Cloud and IAM CTF](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)"  
-            [![](https://ctftime.org/media/events/defhawklogo.png){ width="200" align=left }](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)  
-            **比赛名称** : [CRAC CTF - Cloud and IAM CTF](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-10-04 16:30:00 - 2025-10-04 19:30:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : h4wk (https://ctftime.org/team/277994)  
-            **添加日历** : https://ctftime.org/event/2954.ics  
-            
         ??? Quote "[Securinets CTF Quals 2025](https://quals.securinets.tn/)"  
             [![](https://ctftime.org/media/events/19b8d9cf1e7d16e4cb0ad2bce435fb79.png){ width="200" align=left }](https://quals.securinets.tn/)  
             **比赛名称** : [Securinets CTF Quals 2025](https://quals.securinets.tn/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : Astek Group (https://ctftime.org/team/407057)  
             **添加日历** : https://ctftime.org/event/2959.ics  
+            
+        ??? Quote "[EnigmaXplore 3.0](https://enigmaxplore.ctfd.io/)"  
+            [![](https://ctftime.org/media/events/TFLOGO.jpg){ width="200" align=left }](https://enigmaxplore.ctfd.io/)  
+            **比赛名称** : [EnigmaXplore 3.0](https://enigmaxplore.ctfd.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-10-10 20:30:00 - 2025-10-11 08:30:00 UTC+8  
+            **比赛权重** : 24.58  
+            **赛事主办** : Crispr_iiitn (https://ctftime.org/team/270138)  
+            **添加日历** : https://ctftime.org/event/2957.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

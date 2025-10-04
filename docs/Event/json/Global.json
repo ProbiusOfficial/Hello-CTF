@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "CRAC CTF - Cloud and IAM CTF",
-        "比赛时间": "2025-10-04 16:30:00 - 2025-10-04 19:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2954.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://defhawk.com/battleground/raid/cloud-and-iam-ctf",
-        "比赛标志": "https://ctftime.org/media/events/defhawklogo.png",
-        "比赛权重": "0.00",
-        "赛事主办": "h4wk (https://ctftime.org/team/277994)",
-        "比赛ID": "1209",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Securinets CTF Quals 2025",
         "比赛时间": "2025-10-04 21:00:00 - 2025-10-06 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2884.ics",
@@ -801,6 +789,18 @@
         "比赛权重": "64.00",
         "赛事主办": "CSUI (https://ctftime.org/team/70551)",
         "比赛ID": "502",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CRAC CTF - Cloud and IAM CTF",
+        "比赛时间": "2025-10-04 16:30:00 - 2025-10-04 19:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2954.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://defhawk.com/battleground/raid/cloud-and-iam-ctf",
+        "比赛标志": "https://ctftime.org/media/events/defhawklogo.png",
+        "比赛权重": "0",
+        "赛事主办": "h4wk (https://ctftime.org/team/277994)",
+        "比赛ID": "1209",
         "比赛状态": "nowrunning"
     },
     {

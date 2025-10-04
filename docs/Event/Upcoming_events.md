@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[CRAC CTF - Cloud and IAM CTF](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)"  
-    [![](https://ctftime.org/media/events/defhawklogo.png){ width="200" align=left }](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)  
-    **比赛名称** : [CRAC CTF - Cloud and IAM CTF](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-10-04 16:30:00 - 2025-10-04 19:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : h4wk (https://ctftime.org/team/277994)  
-    **添加日历** : https://ctftime.org/event/2954.ics  
-    
 ??? Quote "[Securinets CTF Quals 2025](https://quals.securinets.tn/)"  
     [![](https://ctftime.org/media/events/19b8d9cf1e7d16e4cb0ad2bce435fb79.png){ width="200" align=left }](https://quals.securinets.tn/)  
     **比赛名称** : [Securinets CTF Quals 2025](https://quals.securinets.tn/)  
