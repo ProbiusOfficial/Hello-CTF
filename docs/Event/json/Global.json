@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Securinets CTF Quals 2025",
-        "比赛时间": "2025-10-04 21:00:00 - 2025-10-06 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2884.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://quals.securinets.tn/",
-        "比赛标志": "https://ctftime.org/media/events/19b8d9cf1e7d16e4cb0ad2bce435fb79.png",
-        "比赛权重": "70.50",
-        "赛事主办": "Securinets (https://ctftime.org/team/5084)",
-        "比赛ID": "105",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Standoff Cyberbattle 16",
         "比赛时间": "2025-10-06 14:00:00 - 2025-10-08 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2885.ics",
@@ -792,6 +780,18 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "Securinets CTF Quals 2025",
+        "比赛时间": "2025-10-04 21:00:00 - 2025-10-06 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2884.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://quals.securinets.tn/",
+        "比赛标志": "https://ctftime.org/media/events/19b8d9cf1e7d16e4cb0ad2bce435fb79.png",
+        "比赛权重": "70.50",
+        "赛事主办": "Securinets (https://ctftime.org/team/5084)",
+        "比赛ID": "105",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "CRAC CTF - Cloud and IAM CTF",
         "比赛时间": "2025-10-04 16:30:00 - 2025-10-04 19:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2954.ics",
@@ -858,7 +858,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.olympics.tech/",
         "比赛标志": "https://ctftime.org/media/events/tech_olympic_logo.jpg",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "1314",
         "比赛状态": "past"

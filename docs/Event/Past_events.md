@@ -64,7 +64,7 @@ comments: true
     **比赛名称** : [Iran Tech Olympics CTF 2025](https://ctf.olympics.tech/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-09-26 21:00:00 - 2025-09-27 21:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : ASIS (https://ctftime.org/team/4140)  
     **添加日历** : https://ctftime.org/event/2775.ics  
     
