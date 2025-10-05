@@ -271,7 +271,7 @@ comments: true
     **比赛名称** : [CRACCON 2025](https://defhawk.com/battleground/raid/craccon-ctf-2025)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-09-06 16:00:00 - 2025-09-07 16:00:00 UTC+8  
-    **比赛权重** : 23.77  
+    **比赛权重** : 23.67  
     **赛事主办** : h4wk (https://ctftime.org/team/277994)  
     **添加日历** : https://ctftime.org/event/2879.ics  
     
@@ -325,7 +325,7 @@ comments: true
     **比赛名称** : [h4ckc0n 2025](https://h4ckc0n.d4rkc0de.in/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-08-29 23:00:00 - 2025-08-30 23:00:00 UTC+8  
-    **比赛权重** : 35.46  
+    **比赛权重** : 35.42  
     **赛事主办** : d4rkc0de (https://ctftime.org/team/15154)  
     **添加日历** : https://ctftime.org/event/2905.ics  
     
@@ -451,7 +451,7 @@ comments: true
     **比赛名称** : [scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-08-16 08:00:00 - 2025-08-18 08:00:00 UTC+8  
-    **比赛权重** : 24.68  
+    **比赛权重** : 24.67  
     **赛事主办** : ScriptSorcerers (https://ctftime.org/team/284260)  
     **添加日历** : https://ctftime.org/event/2792.ics  
     
