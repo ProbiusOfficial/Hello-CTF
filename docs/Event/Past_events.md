@@ -154,7 +154,7 @@ comments: true
     **比赛名称** : [K17 CTF](https://ctf.secso.cc/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-09-19 16:00:00 - 2025-09-21 16:00:00 UTC+8  
-    **比赛权重** : 24.80  
+    **比赛权重** : 24.82  
     **赛事主办** : K17 (https://ctftime.org/team/17058)  
     **添加日历** : https://ctftime.org/event/2902.ics  
     
@@ -244,7 +244,7 @@ comments: true
     **比赛名称** : [WatCTF F25](https://watctf.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-09-10 03:00:00 - 2025-09-12 03:00:00 UTC+8  
-    **比赛权重** : 22.90  
+    **比赛权重** : 22.95  
     **赛事主办** : WATCTF (https://ctftime.org/team/373968)  
     **添加日历** : https://ctftime.org/event/2854.ics  
     
@@ -451,7 +451,7 @@ comments: true
     **比赛名称** : [scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-08-16 08:00:00 - 2025-08-18 08:00:00 UTC+8  
-    **比赛权重** : 24.74  
+    **比赛权重** : 24.68  
     **赛事主办** : ScriptSorcerers (https://ctftime.org/team/284260)  
     **添加日历** : https://ctftime.org/event/2792.ics  
     

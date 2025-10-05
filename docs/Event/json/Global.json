@@ -966,7 +966,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.secso.cc/",
         "比赛标志": "https://ctftime.org/media/events/k17.png",
-        "比赛权重": "24.80",
+        "比赛权重": "24.82",
         "赛事主办": "K17 (https://ctftime.org/team/17058)",
         "比赛ID": "1385",
         "比赛状态": "past"
@@ -1086,7 +1086,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://watctf.org/",
         "比赛标志": "https://ctftime.org/media/events/Black_Back_Yellow_Lock_1.png",
-        "比赛权重": "22.90",
+        "比赛权重": "22.95",
         "赛事主办": "WATCTF (https://ctftime.org/team/373968)",
         "比赛ID": "1283",
         "比赛状态": "past"
@@ -1362,7 +1362,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.scriptsorcerers.xyz/",
         "比赛标志": "https://ctftime.org/media/events/final_logo.png",
-        "比赛权重": "24.74",
+        "比赛权重": "24.68",
         "赛事主办": "ScriptSorcerers (https://ctftime.org/team/284260)",
         "比赛ID": "1318",
         "比赛状态": "past"
