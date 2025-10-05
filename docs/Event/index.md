@@ -875,15 +875,6 @@ hide:
                 **赛事主办** : jailctf (https://ctftime.org/team/311088)  
                 **添加日历** : https://ctftime.org/event/2737.ics  
                 
-            ??? Quote "[COMPFEST CTF 2025](https://compfest.id/)"  
-                [![](https://ctftime.org/media/events/COMPFEST_1.png){ width="200" align=left }](https://compfest.id/)  
-                **比赛名称** : [COMPFEST CTF 2025](https://compfest.id/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-04 10:00:00 - 2025-10-05 10:00:00 UTC+8  
-                **比赛权重** : 64.00  
-                **赛事主办** : CSUI (https://ctftime.org/team/70551)  
-                **添加日历** : https://ctftime.org/event/2900.ics  
-                
             ??? Quote "[Securinets CTF Quals 2025](https://quals.securinets.tn/)"  
                 [![](https://ctftime.org/media/events/19b8d9cf1e7d16e4cb0ad2bce435fb79.png){ width="200" align=left }](https://quals.securinets.tn/)  
                 **比赛名称** : [Securinets CTF Quals 2025](https://quals.securinets.tn/)  
@@ -912,12 +903,21 @@ hide:
                 **赛事主办** : h4wk (https://ctftime.org/team/277994)  
                 **添加日历** : https://ctftime.org/event/2954.ics  
                 
+            ??? Quote "[COMPFEST CTF 2025](https://compfest.id/)"  
+                [![](https://ctftime.org/media/events/COMPFEST_1.png){ width="200" align=left }](https://compfest.id/)  
+                **比赛名称** : [COMPFEST CTF 2025](https://compfest.id/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-10-04 10:00:00 - 2025-10-05 10:00:00 UTC+8  
+                **比赛权重** : 64.00  
+                **赛事主办** : CSUI (https://ctftime.org/team/70551)  
+                **添加日历** : https://ctftime.org/event/2900.ics  
+                
             ??? Quote "[InfiniteCTF Qualifiers](https://register.redteamassociation.com/)"  
                 [![](https://ctftime.org/media/events/RED_TEAM_pentagon_red.png){ width="200" align=left }](https://register.redteamassociation.com/)  
                 **比赛名称** : [InfiniteCTF Qualifiers](https://register.redteamassociation.com/)  
                 **比赛形式** : Attack-Defense  
                 **比赛时间** : 2025-09-28 03:00:00 - 2025-09-28 11:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 0.00  
                 **赛事主办** : Red Team Association (https://ctftime.org/team/399056)  
                 **添加日历** : https://ctftime.org/event/2925.ics  
                 
@@ -1793,15 +1793,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : CyberHawks at UNG (https://ctftime.org/team/368776)  
                 **添加日历** : https://ctftime.org/event/2691.ics  
-                
-            ??? Quote "[bi0sCTF 2025](https://ctf.bi0s.in/)"  
-                [![](https://ctftime.org/media/events/image_2025-03-25_143431330.png){ width="200" align=left }](https://ctf.bi0s.in/)  
-                **比赛名称** : [bi0sCTF 2025](https://ctf.bi0s.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-07 13:30:00 - 2025-06-09 01:30:00 UTC+8  
-                **比赛权重** : 95.79  
-                **赛事主办** : bi0s (https://ctftime.org/team/662)  
-                **添加日历** : https://ctftime.org/event/2672.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
