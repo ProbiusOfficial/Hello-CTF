@@ -42,12 +42,3 @@ comments: true
     **赛事主办** : jailctf (https://ctftime.org/team/311088)  
     **添加日历** : https://ctftime.org/event/2737.ics  
     
-??? Quote "[Securinets CTF Quals 2025](https://quals.securinets.tn/)"  
-    [![](https://ctftime.org/media/events/19b8d9cf1e7d16e4cb0ad2bce435fb79.png){ width="200" align=left }](https://quals.securinets.tn/)  
-    **比赛名称** : [Securinets CTF Quals 2025](https://quals.securinets.tn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-10-04 21:00:00 - 2025-10-06 05:00:00 UTC+8  
-    **比赛权重** : 70.50  
-    **赛事主办** : Securinets (https://ctftime.org/team/5084)  
-    **添加日历** : https://ctftime.org/event/2884.ics  
-    

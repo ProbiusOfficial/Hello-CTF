@@ -875,15 +875,6 @@ hide:
                 **赛事主办** : jailctf (https://ctftime.org/team/311088)  
                 **添加日历** : https://ctftime.org/event/2737.ics  
                 
-            ??? Quote "[Securinets CTF Quals 2025](https://quals.securinets.tn/)"  
-                [![](https://ctftime.org/media/events/19b8d9cf1e7d16e4cb0ad2bce435fb79.png){ width="200" align=left }](https://quals.securinets.tn/)  
-                **比赛名称** : [Securinets CTF Quals 2025](https://quals.securinets.tn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-04 21:00:00 - 2025-10-06 05:00:00 UTC+8  
-                **比赛权重** : 70.50  
-                **赛事主办** : Securinets (https://ctftime.org/team/5084)  
-                **添加日历** : https://ctftime.org/event/2884.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[极客少年挑战赛](URL)"  
@@ -894,6 +885,15 @@ hide:
                 **其他说明** : 第五届极客少年挑战赛将于2025年8月29日10:00至16:00举行，报名从2025年6月3日00:00开始至2025年7月10日23:59结束。单人线下赛，更多信息请加入QQ群1045833929。  
                 
         === "国外赛事"
+            ??? Quote "[Securinets CTF Quals 2025](https://quals.securinets.tn/)"  
+                [![](https://ctftime.org/media/events/19b8d9cf1e7d16e4cb0ad2bce435fb79.png){ width="200" align=left }](https://quals.securinets.tn/)  
+                **比赛名称** : [Securinets CTF Quals 2025](https://quals.securinets.tn/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-10-04 21:00:00 - 2025-10-06 05:00:00 UTC+8  
+                **比赛权重** : 70.50  
+                **赛事主办** : Securinets (https://ctftime.org/team/5084)  
+                **添加日历** : https://ctftime.org/event/2884.ics  
+                
             ??? Quote "[CRAC CTF - Cloud and IAM CTF](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)"  
                 [![](https://ctftime.org/media/events/defhawklogo.png){ width="200" align=left }](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)  
                 **比赛名称** : [CRAC CTF - Cloud and IAM CTF](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)  
@@ -1784,15 +1784,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
                 **添加日历** : https://ctftime.org/event/2750.ics  
-                
-            ??? Quote "[Goldrush Gauntlet 2025](https://ggctf.cyberhawks.org/)"  
-                [![](https://ctftime.org/media/events/logo_110.png){ width="200" align=left }](https://ggctf.cyberhawks.org/)  
-                **比赛名称** : [Goldrush Gauntlet 2025](https://ggctf.cyberhawks.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-07 21:00:00 - 2025-06-09 05:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : CyberHawks at UNG (https://ctftime.org/team/368776)  
-                **添加日历** : https://ctftime.org/event/2691.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
