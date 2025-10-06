@@ -732,18 +732,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "jailCTF 2025",
-        "比赛时间": "2025-10-04 04:00:00 - 2025-10-07 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2737.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.pyjail.club/",
-        "比赛标志": "https://ctftime.org/media/events/jailctf.png",
-        "比赛权重": "24.88",
-        "赛事主办": "jailctf (https://ctftime.org/team/311088)",
-        "比赛ID": "1152",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Standoff Cyberbattle 16",
         "比赛时间": "2025-10-06 14:00:00 - 2025-10-08 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2885.ics",
@@ -789,6 +777,18 @@
         "比赛权重": "64.00",
         "赛事主办": "CSUI (https://ctftime.org/team/70551)",
         "比赛ID": "502",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "jailCTF 2025",
+        "比赛时间": "2025-10-04 04:00:00 - 2025-10-07 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2737.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.pyjail.club/",
+        "比赛标志": "https://ctftime.org/media/events/jailctf.png",
+        "比赛权重": "24.88",
+        "赛事主办": "jailctf (https://ctftime.org/team/311088)",
+        "比赛ID": "1152",
         "比赛状态": "past"
     },
     {
@@ -1941,18 +1941,6 @@
         "比赛权重": "0.00",
         "赛事主办": "AMSI CTF Team (https://ctftime.org/team/383289)",
         "比赛ID": "1327",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Season V, US Cyber Open Competitive CTF",
-        "比赛时间": "2025-06-10 04:00:00 - 2025-06-20 07:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2717.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.uscybergames.com/",
-        "比赛标志": "https://ctftime.org/media/events/2021-04-USCG_logos_cybergames_1.png",
-        "比赛权重": "0",
-        "赛事主办": "PlayCyber (https://ctftime.org/team/165788)",
-        "比赛ID": "740",
         "比赛状态": "past"
     }
 ]

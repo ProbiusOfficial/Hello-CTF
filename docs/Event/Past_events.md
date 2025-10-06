@@ -41,6 +41,15 @@ comments: true
     **赛事主办** : CSUI (https://ctftime.org/team/70551)  
     **添加日历** : https://ctftime.org/event/2900.ics  
     
+??? Quote "[jailCTF 2025](https://ctf.pyjail.club/)"  
+    [![](https://ctftime.org/media/events/jailctf.png){ width="200" align=left }](https://ctf.pyjail.club/)  
+    **比赛名称** : [jailCTF 2025](https://ctf.pyjail.club/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-10-04 04:00:00 - 2025-10-07 04:00:00 UTC+8  
+    **比赛权重** : 24.88  
+    **赛事主办** : jailctf (https://ctftime.org/team/311088)  
+    **添加日历** : https://ctftime.org/event/2737.ics  
+    
 ??? Quote "[openECSC 2025](https://openec.sc/)"  
     [![](https://ctftime.org/media/events/openECSC_1.png){ width="200" align=left }](https://openec.sc/)  
     **比赛名称** : [openECSC 2025](https://openec.sc/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : AMSI CTF Team (https://ctftime.org/team/383289)  
     **添加日历** : https://ctftime.org/event/2790.ics  
-    
-??? Quote "[Season V, US Cyber Open Competitive CTF](https://www.uscybergames.com/)"  
-    [![](https://ctftime.org/media/events/2021-04-USCG_logos_cybergames_1.png){ width="200" align=left }](https://www.uscybergames.com/)  
-    **比赛名称** : [Season V, US Cyber Open Competitive CTF](https://www.uscybergames.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-06-10 04:00:00 - 2025-06-20 07:59:59 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
-    **添加日历** : https://ctftime.org/event/2717.ics  
     
