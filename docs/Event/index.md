@@ -857,15 +857,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2904.ics  
                 
-            ??? Quote "[openECSC 2025](https://openec.sc/)"  
-                [![](https://ctftime.org/media/events/openECSC_1.png){ width="200" align=left }](https://openec.sc/)  
-                **比赛名称** : [openECSC 2025](https://openec.sc/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-30 02:00:00 - 2025-10-06 07:59:59 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : x3CTF (https://ctftime.org/team/309820)  
-                **添加日历** : https://ctftime.org/event/2940.ics  
-                
             ??? Quote "[jailCTF 2025](https://ctf.pyjail.club/)"  
                 [![](https://ctftime.org/media/events/jailctf.png){ width="200" align=left }](https://ctf.pyjail.club/)  
                 **比赛名称** : [jailCTF 2025](https://ctf.pyjail.club/)  
@@ -911,6 +902,15 @@ hide:
                 **比赛权重** : 64.00  
                 **赛事主办** : CSUI (https://ctftime.org/team/70551)  
                 **添加日历** : https://ctftime.org/event/2900.ics  
+                
+            ??? Quote "[openECSC 2025](https://openec.sc/)"  
+                [![](https://ctftime.org/media/events/openECSC_1.png){ width="200" align=left }](https://openec.sc/)  
+                **比赛名称** : [openECSC 2025](https://openec.sc/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-09-30 02:00:00 - 2025-10-06 07:59:59 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : x3CTF (https://ctftime.org/team/309820)  
+                **添加日历** : https://ctftime.org/event/2940.ics  
                 
             ??? Quote "[InfiniteCTF Qualifiers](https://register.redteamassociation.com/)"  
                 [![](https://ctftime.org/media/events/RED_TEAM_pentagon_red.png){ width="200" align=left }](https://register.redteamassociation.com/)  
@@ -1775,15 +1775,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
                 **添加日历** : https://ctftime.org/event/2717.ics  
-                
-            ??? Quote "[DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)"  
-                [![](https://ctftime.org/media/events/DFIR_Labs_Icon_1.png){ width="200" align=left }](https://thedfirreport.com/services/dfir-labs/ctf/)  
-                **比赛名称** : [DFIR Labs CTF by The DFIR Report](https://thedfirreport.com/services/dfir-labs/ctf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-08 00:30:00 - 2025-06-08 04:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
-                **添加日历** : https://ctftime.org/event/2750.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
