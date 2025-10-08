@@ -516,6 +516,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Haix-la-Chapelle 2025",
+        "比赛时间": "2025-11-29 17:00:00 - 2025-11-30 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2951.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://haix-la-chapelle.eu/",
+        "比赛标志": "https://ctftime.org/media/events/clear-haix-la-chapelle.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Pwn-la-Chapelle (https://ctftime.org/team/279433)",
+        "比赛ID": "1381",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "BlackHat MEA CTF Final 2025",
         "比赛时间": "2025-12-02 16:00:00 - 2025-12-04 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2877.ics",
@@ -720,18 +732,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Standoff Cyberbattle 16",
-        "比赛时间": "2025-10-06 14:00:00 - 2025-10-08 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2885.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://16.standoff365.com/en/",
-        "比赛标志": "https://ctftime.org/media/events/f31eca683184a4547ea20f1fa984fb70.png",
-        "比赛权重": "0.00",
-        "赛事主办": "STANDOFF 365 (https://ctftime.org/team/388543)",
-        "比赛ID": "1343",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "ECW Online Qualifiers",
         "比赛时间": "2025-10-08 20:00:00 - 2025-10-22 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2959.ics",
@@ -742,6 +742,18 @@
         "赛事主办": "Astek Group (https://ctftime.org/team/407057)",
         "比赛ID": "1420",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Standoff Cyberbattle 16",
+        "比赛时间": "2025-10-06 14:00:00 - 2025-10-08 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2885.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://16.standoff365.com/en/",
+        "比赛标志": "https://ctftime.org/media/events/f31eca683184a4547ea20f1fa984fb70.png",
+        "比赛权重": "0.00",
+        "赛事主办": "STANDOFF 365 (https://ctftime.org/team/388543)",
+        "比赛ID": "1343",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Securinets CTF Quals 2025",
@@ -1929,18 +1941,6 @@
         "比赛权重": "48.61",
         "赛事主办": ".;,;. (https://ctftime.org/team/222911)",
         "比赛ID": "785",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "AMSI CTF 2025",
-        "比赛时间": "2025-06-14 04:00:00 - 2025-06-15 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2790.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://amsi-sorbonne.fr/",
-        "比赛标志": "https://ctftime.org/media/events/amsi_logo_animated.gif",
-        "比赛权重": "0.00",
-        "赛事主办": "AMSI CTF Team (https://ctftime.org/team/383289)",
-        "比赛ID": "1327",
         "比赛状态": "past"
     }
 ]

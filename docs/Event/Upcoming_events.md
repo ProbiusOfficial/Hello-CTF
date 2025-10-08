@@ -396,6 +396,15 @@ comments: true
     **赛事主办** : WP CTF (https://ctftime.org/team/303099)  
     **添加日历** : https://ctftime.org/event/2764.ics  
     
+??? Quote "[Haix-la-Chapelle 2025](https://haix-la-chapelle.eu/)"  
+    [![](https://ctftime.org/media/events/clear-haix-la-chapelle.png){ width="200" align=left }](https://haix-la-chapelle.eu/)  
+    **比赛名称** : [Haix-la-Chapelle 2025](https://haix-la-chapelle.eu/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-29 17:00:00 - 2025-11-30 17:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Pwn-la-Chapelle (https://ctftime.org/team/279433)  
+    **添加日历** : https://ctftime.org/event/2951.ics  
+    
 ??? Quote "[BlackHat MEA CTF Final 2025](https://blackhatmea.com/capture-the-flag)"  
     [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2_2.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
     **比赛名称** : [BlackHat MEA CTF Final 2025](https://blackhatmea.com/capture-the-flag)  

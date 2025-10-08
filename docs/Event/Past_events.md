@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Standoff Cyberbattle 16](https://16.standoff365.com/en/)"  
+    [![](https://ctftime.org/media/events/f31eca683184a4547ea20f1fa984fb70.png){ width="200" align=left }](https://16.standoff365.com/en/)  
+    **比赛名称** : [Standoff Cyberbattle 16](https://16.standoff365.com/en/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2025-10-06 14:00:00 - 2025-10-08 23:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : STANDOFF 365 (https://ctftime.org/team/388543)  
+    **添加日历** : https://ctftime.org/event/2885.ics  
+    
 ??? Quote "[Securinets CTF Quals 2025](https://quals.securinets.tn/)"  
     [![](https://ctftime.org/media/events/19b8d9cf1e7d16e4cb0ad2bce435fb79.png){ width="200" align=left }](https://quals.securinets.tn/)  
     **比赛名称** : [Securinets CTF Quals 2025](https://quals.securinets.tn/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 48.61  
     **赛事主办** : .;,;. (https://ctftime.org/team/222911)  
     **添加日历** : https://ctftime.org/event/2591.ics  
-    
-??? Quote "[AMSI CTF 2025](https://amsi-sorbonne.fr/)"  
-    [![](https://ctftime.org/media/events/amsi_logo_animated.gif){ width="200" align=left }](https://amsi-sorbonne.fr/)  
-    **比赛名称** : [AMSI CTF 2025](https://amsi-sorbonne.fr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-06-14 04:00:00 - 2025-06-15 02:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : AMSI CTF Team (https://ctftime.org/team/383289)  
-    **添加日历** : https://ctftime.org/event/2790.ics  
     
