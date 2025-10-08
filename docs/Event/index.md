@@ -335,7 +335,7 @@ hide:
                 **添加日历** : https://ctftime.org/event/2794.ics  
                 
             ??? Quote "[Hack.lu CTF 2025](https://flu.xxx/)"  
-                [![](https://ctftime.org/media/events/aaaa.png){ width="200" align=left }](https://flu.xxx/)  
+                [![](https://ctftime.org/media/events/logo-small_1.png){ width="200" align=left }](https://flu.xxx/)  
                 **比赛名称** : [Hack.lu CTF 2025](https://flu.xxx/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-10-18 02:00:00 - 2025-10-20 02:00:00 UTC+8  
