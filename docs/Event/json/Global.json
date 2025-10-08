@@ -204,25 +204,25 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Iran Tech Olympics Hardware Security 2025",
-        "比赛时间": "2025-10-28 14:30:00 - 2025-10-29 02:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2930.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.olympics.tech/",
-        "比赛标志": "https://ctftime.org/media/events/3bfa72e3e10491d8b3bd43a8153aad1e_2.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
-        "比赛ID": "1314",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Iran Tech Olympics Speed-Run CTF 2025",
-        "比赛时间": "2025-10-29 14:30:00 - 2025-10-29 14:30:00 UTC+8",
+        "比赛时间": "2025-10-28 14:30:00 - 2025-10-28 14:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2931.ics",
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.olympics.tech/",
         "比赛标志": "https://ctftime.org/media/events/3bfa72e3e10491d8b3bd43a8153aad1e_1.jpg",
         "比赛权重": "0",
+        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
+        "比赛ID": "1314",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Iran Tech Olympics Hardware Security 2025",
+        "比赛时间": "2025-10-29 14:30:00 - 2025-10-30 02:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2930.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.olympics.tech/",
+        "比赛标志": "https://ctftime.org/media/events/3bfa72e3e10491d8b3bd43a8153aad1e_2.jpg",
+        "比赛权重": "0.00",
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "1314",
         "比赛状态": "oncoming"
