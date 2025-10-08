@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[ECW Online Qualifiers](https://challenge-ecw.eu/)"  
-    [![](https://ctftime.org/media/events/logo_115.png){ width="200" align=left }](https://challenge-ecw.eu/)  
-    **比赛名称** : [ECW Online Qualifiers](https://challenge-ecw.eu/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-10-08 20:00:00 - 2025-10-22 22:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Astek Group (https://ctftime.org/team/407057)  
-    **添加日历** : https://ctftime.org/event/2959.ics  
-    
 ??? Quote "[EnigmaXplore 3.0](https://enigmaxplore.ctfd.io/)"  
     [![](https://ctftime.org/media/events/TFLOGO.jpg){ width="200" align=left }](https://enigmaxplore.ctfd.io/)  
     **比赛名称** : [EnigmaXplore 3.0](https://enigmaxplore.ctfd.io/)  

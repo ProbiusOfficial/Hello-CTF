@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "ECW Online Qualifiers",
-        "比赛时间": "2025-10-08 20:00:00 - 2025-10-22 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2959.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://challenge-ecw.eu/",
-        "比赛标志": "https://ctftime.org/media/events/logo_115.png",
-        "比赛权重": "0",
-        "赛事主办": "Astek Group (https://ctftime.org/team/407057)",
-        "比赛ID": "1420",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "EnigmaXplore 3.0",
         "比赛时间": "2025-10-10 20:30:00 - 2025-10-11 08:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2957.ics",
@@ -741,6 +729,18 @@
         "比赛权重": "0.00",
         "赛事主办": "STANDOFF 365 (https://ctftime.org/team/388543)",
         "比赛ID": "1343",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "ECW Online Qualifiers",
+        "比赛时间": "2025-10-08 20:00:00 - 2025-10-22 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2959.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://challenge-ecw.eu/",
+        "比赛标志": "https://ctftime.org/media/events/logo_115.png",
+        "比赛权重": "0",
+        "赛事主办": "Astek Group (https://ctftime.org/team/407057)",
+        "比赛ID": "1420",
         "比赛状态": "nowrunning"
     },
     {
