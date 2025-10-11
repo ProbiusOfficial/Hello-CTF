@@ -891,7 +891,7 @@ hide:
                 **比赛名称** : [CRAC CTF - Cloud and IAM CTF](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-10-04 16:30:00 - 2025-10-04 19:30:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 0.00  
                 **赛事主办** : h4wk (https://ctftime.org/team/277994)  
                 **添加日历** : https://ctftime.org/event/2954.ics  
                 
