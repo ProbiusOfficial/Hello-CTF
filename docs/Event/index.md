@@ -842,15 +842,6 @@ hide:
                 **赛事主办** : Astek Group (https://ctftime.org/team/407057)  
                 **添加日历** : https://ctftime.org/event/2959.ics  
                 
-            ??? Quote "[EnigmaXplore 3.0](https://enigmaxplore.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/TFLOGO.jpg){ width="200" align=left }](https://enigmaxplore.ctfd.io/)  
-                **比赛名称** : [EnigmaXplore 3.0](https://enigmaxplore.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-10 20:30:00 - 2025-10-11 08:30:00 UTC+8  
-                **比赛权重** : 24.58  
-                **赛事主办** : Crispr_iiitn (https://ctftime.org/team/270138)  
-                **添加日历** : https://ctftime.org/event/2957.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[MoeCTF 2025](https://ctf.xidian.edu.cn/games/22)"  
@@ -868,6 +859,15 @@ hide:
                 **其他说明** : 第五届极客少年挑战赛将于2025年8月29日10:00至16:00举行，报名从2025年6月3日00:00开始至2025年7月10日23:59结束。单人线下赛，更多信息请加入QQ群1045833929。  
                 
         === "国外赛事"
+            ??? Quote "[EnigmaXplore 3.0](https://enigmaxplore.ctfd.io/)"  
+                [![](https://ctftime.org/media/events/TFLOGO.jpg){ width="200" align=left }](https://enigmaxplore.ctfd.io/)  
+                **比赛名称** : [EnigmaXplore 3.0](https://enigmaxplore.ctfd.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-10-10 20:30:00 - 2025-10-11 08:30:00 UTC+8  
+                **比赛权重** : 24.58  
+                **赛事主办** : Crispr_iiitn (https://ctftime.org/team/270138)  
+                **添加日历** : https://ctftime.org/event/2957.ics  
+                
             ??? Quote "[Standoff Cyberbattle 16](https://16.standoff365.com/en/)"  
                 [![](https://ctftime.org/media/events/f31eca683184a4547ea20f1fa984fb70.png){ width="200" align=left }](https://16.standoff365.com/en/)  
                 **比赛名称** : [Standoff Cyberbattle 16](https://16.standoff365.com/en/)  
@@ -1758,15 +1758,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : D0wn13s (https://ctftime.org/team/287400)  
                 **添加日历** : https://ctftime.org/event/2808.ics  
-                
-            ??? Quote "[smileyCTF 2025](https://play.ctf.gg/)"  
-                [![](https://ctftime.org/media/events/smiley.png){ width="200" align=left }](https://play.ctf.gg/)  
-                **比赛名称** : [smileyCTF 2025](https://play.ctf.gg/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-14 08:00:00 - 2025-06-16 08:00:00 UTC+8  
-                **比赛权重** : 48.61  
-                **赛事主办** : .;,;. (https://ctftime.org/team/222911)  
-                **添加日历** : https://ctftime.org/event/2591.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

@@ -741,7 +741,7 @@
         "比赛权重": "24.58",
         "赛事主办": "Crispr_iiitn (https://ctftime.org/team/270138)",
         "比赛ID": "997",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Standoff Cyberbattle 16",
@@ -1929,18 +1929,6 @@
         "比赛权重": "0.00",
         "赛事主办": "D0wn13s (https://ctftime.org/team/287400)",
         "比赛ID": "1329",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "smileyCTF 2025",
-        "比赛时间": "2025-06-14 08:00:00 - 2025-06-16 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2591.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://play.ctf.gg/",
-        "比赛标志": "https://ctftime.org/media/events/smiley.png",
-        "比赛权重": "48.61",
-        "赛事主办": ".;,;. (https://ctftime.org/team/222911)",
-        "比赛ID": "785",
         "比赛状态": "past"
     }
 ]
