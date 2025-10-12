@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[POC CTF Qualification 2025](https://powerofcommunity.net/2025/ctf.html)"  
-                [![](https://ctftime.org/media/events/vDP90SY4soKs6q3cKITowqXIE7a0Jy.png){ width="200" align=left }](https://powerofcommunity.net/2025/ctf.html)  
-                **比赛名称** : [POC CTF Qualification 2025](https://powerofcommunity.net/2025/ctf.html)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-12 18:00:00 - 2025-10-13 18:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
-                **添加日历** : https://ctftime.org/event/2955.ics  
-                
             ??? Quote "[QnQSec CTF 2025](https://ctf.qnqsec.team/)"  
                 [![](https://ctftime.org/media/events/Logo_QnQSec.jpg){ width="200" align=left }](https://ctf.qnqsec.team/)  
                 **比赛名称** : [QnQSec CTF 2025](https://ctf.qnqsec.team/)  
@@ -841,6 +832,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Astek Group (https://ctftime.org/team/407057)  
                 **添加日历** : https://ctftime.org/event/2959.ics  
+                
+            ??? Quote "[POC CTF Qualification 2025](https://powerofcommunity.net/2025/ctf.html)"  
+                [![](https://ctftime.org/media/events/vDP90SY4soKs6q3cKITowqXIE7a0Jy.png){ width="200" align=left }](https://powerofcommunity.net/2025/ctf.html)  
+                **比赛名称** : [POC CTF Qualification 2025](https://powerofcommunity.net/2025/ctf.html)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-10-12 18:00:00 - 2025-10-13 18:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
+                **添加日历** : https://ctftime.org/event/2955.ics  
                 
     === "*已经结束*"
         === "国内赛事"
