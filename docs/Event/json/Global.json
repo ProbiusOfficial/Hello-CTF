@@ -729,7 +729,7 @@
         "比赛权重": "0",
         "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
         "比赛ID": "1422",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "EnigmaXplore 3.0",
@@ -1917,18 +1917,6 @@
         "比赛权重": "100.00",
         "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
         "比赛ID": "246",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SSMCTF 2025",
-        "比赛时间": "2025-06-14 17:00:00 - 2025-06-16 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2808.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ssmct.org/ctf",
-        "比赛标志": "https://ctftime.org/media/events/SSMlogocoloured.png",
-        "比赛权重": "0.00",
-        "赛事主办": "D0wn13s (https://ctftime.org/team/287400)",
-        "比赛ID": "1329",
         "比赛状态": "past"
     }
 ]
