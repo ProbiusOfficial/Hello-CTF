@@ -279,15 +279,6 @@ comments: true
     **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
     **添加日历** : https://ctftime.org/event/2844.ics  
     
-??? Quote "[GaianSpace CTF 2025](https://gaian.space/ctf)"  
-    [![](https://ctftime.org/media/events/gaianspace-logo-new.png){ width="200" align=left }](https://gaian.space/ctf)  
-    **比赛名称** : [GaianSpace CTF 2025](https://gaian.space/ctf)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-14 22:00:00 - 2025-11-17 22:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : GaianSpace (https://ctftime.org/team/373034)  
-    **添加日历** : https://ctftime.org/event/2732.ics  
-    
 ??? Quote "[Curiosity CTF 2025](http://2025.curiosityctf.xyz/)"  
     [![](https://ctftime.org){ width="200" align=left }](http://2025.curiosityctf.xyz/)  
     **比赛名称** : [Curiosity CTF 2025](http://2025.curiosityctf.xyz/)  
