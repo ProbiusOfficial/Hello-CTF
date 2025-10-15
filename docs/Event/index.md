@@ -667,15 +667,6 @@ hide:
                 **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
                 **添加日历** : https://ctftime.org/event/2877.ics  
                 
-            ??? Quote "[RUSEC CTF 2025](http://ctf.rusec.club/)"  
-                [![](https://ctftime.org/media/events/8ed561b45f892df2a5b105e8537794b3.jpg){ width="200" align=left }](http://ctf.rusec.club/)  
-                **比赛名称** : [RUSEC CTF 2025](http://ctf.rusec.club/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-12-05 12:00:00 - 2025-12-07 12:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : RUSEC (https://ctftime.org/team/14889)  
-                **添加日历** : https://ctftime.org/event/2908.ics  
-                
             ??? Quote "[Null CTF 2025](https://ctf.r0devnull.team/)"  
                 [![](https://ctftime.org/media/events/null_ctf_logo_temp_1.png){ width="200" align=left }](https://ctf.r0devnull.team/)  
                 **比赛名称** : [Null CTF 2025](https://ctf.r0devnull.team/)  

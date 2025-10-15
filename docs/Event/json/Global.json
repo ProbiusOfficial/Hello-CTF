@@ -504,18 +504,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "RUSEC CTF 2025",
-        "比赛时间": "2025-12-05 12:00:00 - 2025-12-07 12:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2908.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.rusec.club/",
-        "比赛标志": "https://ctftime.org/media/events/8ed561b45f892df2a5b105e8537794b3.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "RUSEC (https://ctftime.org/team/14889)",
-        "比赛ID": "1143",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Null CTF 2025",
         "比赛时间": "2025-12-05 23:00:00 - 2025-12-07 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2901.ics",
