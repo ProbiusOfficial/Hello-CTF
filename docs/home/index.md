@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[QnQSec CTF 2025](https://ctf.qnqsec.team/)"  
-            [![](https://ctftime.org/media/events/Logo_QnQSec.jpg){ width="200" align=left }](https://ctf.qnqsec.team/)  
-            **比赛名称** : [QnQSec CTF 2025](https://ctf.qnqsec.team/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-10-17 02:00:00 - 2025-10-20 02:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : QnQSec (https://ctftime.org/team/367683)  
-            **添加日历** : https://ctftime.org/event/2826.ics  
-            
         ??? Quote "[Hackfest CTF 2025](https://hfctf.ca/)"  
             [![](https://ctftime.org/media/events/Logo_CTF_7_1.png){ width="200" align=left }](https://hfctf.ca/)  
             **比赛名称** : [Hackfest CTF 2025](https://hfctf.ca/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 98.02  
             **赛事主办** : FluxFingers (https://ctftime.org/team/551)  
             **添加日历** : https://ctftime.org/event/2842.ics  
+            
+        ??? Quote "[LINE CTF 2025](https://linectf.me/)"  
+            [![](https://ctftime.org/media/events/LINE.jpeg){ width="200" align=left }](https://linectf.me/)  
+            **比赛名称** : [LINE CTF 2025](https://linectf.me/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-10-18 08:00:00 - 2025-10-18 08:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : LINE CTF (https://ctftime.org/team/144094)  
+            **添加日历** : https://ctftime.org/event/2819.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
