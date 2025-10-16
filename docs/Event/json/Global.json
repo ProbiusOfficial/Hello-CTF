@@ -564,6 +564,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "BSides Algiers 2025",
+        "比赛时间": "2025-12-19 03:00:00 - 2025-12-20 15:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2962.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://shellmates.club/events/bsidesalgiers25",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "noreply (https://ctftime.org/team/210760)",
+        "比赛ID": "527",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "TSG CTF 2025",
         "比赛时间": "2025-12-20 15:00:00 - 2025-12-21 15:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2867.ics",

@@ -432,6 +432,15 @@ comments: true
     **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
     **添加日历** : https://ctftime.org/event/2862.ics  
     
+??? Quote "[BSides Algiers 2025](https://shellmates.club/events/bsidesalgiers25)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://shellmates.club/events/bsidesalgiers25)  
+    **比赛名称** : [BSides Algiers 2025](https://shellmates.club/events/bsidesalgiers25)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-12-19 03:00:00 - 2025-12-20 15:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : noreply (https://ctftime.org/team/210760)  
+    **添加日历** : https://ctftime.org/event/2962.ics  
+    
 ??? Quote "[TSG CTF 2025](https://ctf.tsg.ne.jp/)"  
     [![](https://ctftime.org/media/events/TSG_CTF.png){ width="200" align=left }](https://ctf.tsg.ne.jp/)  
     **比赛名称** : [TSG CTF 2025](https://ctf.tsg.ne.jp/)  
