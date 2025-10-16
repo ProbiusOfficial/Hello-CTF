@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Hackfest CTF 2025](https://hfctf.ca/)"  
-                [![](https://ctftime.org/media/events/Logo_CTF_7_1.png){ width="200" align=left }](https://hfctf.ca/)  
-                **比赛名称** : [Hackfest CTF 2025](https://hfctf.ca/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-17 03:30:00 - 2025-10-18 03:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Hackfest.ca (https://ctftime.org/team/125608)  
-                **添加日历** : https://ctftime.org/event/2922.ics  
-                
             ??? Quote "[HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
                 **比赛名称** : [HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
@@ -823,6 +814,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : QnQSec (https://ctftime.org/team/367683)  
                 **添加日历** : https://ctftime.org/event/2826.ics  
+                
+            ??? Quote "[Hackfest CTF 2025](https://hfctf.ca/)"  
+                [![](https://ctftime.org/media/events/Logo_CTF_7_1.png){ width="200" align=left }](https://hfctf.ca/)  
+                **比赛名称** : [Hackfest CTF 2025](https://hfctf.ca/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-10-17 03:30:00 - 2025-10-18 03:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Hackfest.ca (https://ctftime.org/team/125608)  
+                **添加日历** : https://ctftime.org/event/2922.ics  
                 
     === "*已经结束*"
         === "国内赛事"
