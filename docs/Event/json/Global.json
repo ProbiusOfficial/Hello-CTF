@@ -705,7 +705,7 @@
         "比赛权重": "0",
         "赛事主办": "HITCON (https://ctftime.org/team/8299)",
         "比赛ID": "1325",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "POC CTF Qualification 2025",
@@ -1893,18 +1893,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Hacky'Nov (https://ctftime.org/team/178939)",
         "比赛ID": "759",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CyberSci Nationals 2025",
-        "比赛时间": "2025-06-14 21:00:00 - 2025-06-16 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2689.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cybersecuritychallenge.ca/",
-        "比赛标志": "https://ctftime.org/media/events/fa9a3545467f5a51f11b512adb2f6183.png",
-        "比赛权重": "0",
-        "赛事主办": "0xD13A (https://ctftime.org/team/31765)",
-        "比赛ID": "643",
         "比赛状态": "past"
     }
 ]

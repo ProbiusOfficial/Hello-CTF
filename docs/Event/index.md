@@ -815,15 +815,6 @@ hide:
                 **赛事主办** : Hackfest.ca (https://ctftime.org/team/125608)  
                 **添加日历** : https://ctftime.org/event/2922.ics  
                 
-            ??? Quote "[HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
-                **比赛名称** : [HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-17 09:00:00 - 2025-10-17 18:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : HITCON (https://ctftime.org/team/8299)  
-                **添加日历** : https://ctftime.org/event/2794.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[MoeCTF 2025](https://ctf.xidian.edu.cn/games/22)"  
@@ -841,6 +832,15 @@ hide:
                 **其他说明** : 第五届极客少年挑战赛将于2025年8月29日10:00至16:00举行，报名从2025年6月3日00:00开始至2025年7月10日23:59结束。单人线下赛，更多信息请加入QQ群1045833929。  
                 
         === "国外赛事"
+            ??? Quote "[HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
+                **比赛名称** : [HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-10-17 09:00:00 - 2025-10-17 18:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : HITCON (https://ctftime.org/team/8299)  
+                **添加日历** : https://ctftime.org/event/2794.ics  
+                
             ??? Quote "[POC CTF Qualification 2025](https://powerofcommunity.net/2025/ctf.html)"  
                 [![](https://ctftime.org/media/events/vDP90SY4soKs6q3cKITowqXIE7a0Jy.png){ width="200" align=left }](https://powerofcommunity.net/2025/ctf.html)  
                 **比赛名称** : [POC CTF Qualification 2025](https://powerofcommunity.net/2025/ctf.html)  
@@ -1731,15 +1731,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Hacky'Nov (https://ctftime.org/team/178939)  
                 **添加日历** : https://ctftime.org/event/2802.ics  
-                
-            ??? Quote "[CyberSci Nationals 2025](https://cybersecuritychallenge.ca/)"  
-                [![](https://ctftime.org/media/events/fa9a3545467f5a51f11b512adb2f6183.png){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
-                **比赛名称** : [CyberSci Nationals 2025](https://cybersecuritychallenge.ca/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-14 21:00:00 - 2025-06-16 07:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : 0xD13A (https://ctftime.org/team/31765)  
-                **添加日历** : https://ctftime.org/event/2689.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
