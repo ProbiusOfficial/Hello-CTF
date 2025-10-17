@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Hack.lu CTF 2025](https://flu.xxx/)"  
-            [![](https://ctftime.org/media/events/logo-small_1.png){ width="200" align=left }](https://flu.xxx/)  
-            **比赛名称** : [Hack.lu CTF 2025](https://flu.xxx/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-10-18 02:00:00 - 2025-10-20 02:00:00 UTC+8  
-            **比赛权重** : 98.02  
-            **赛事主办** : FluxFingers (https://ctftime.org/team/551)  
-            **添加日历** : https://ctftime.org/event/2842.ics  
-            
         ??? Quote "[LINE CTF 2025](https://linectf.me/)"  
             [![](https://ctftime.org/media/events/LINE.jpeg){ width="200" align=left }](https://linectf.me/)  
             **比赛名称** : [LINE CTF 2025](https://linectf.me/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : OctalO (https://ctftime.org/team/269207)  
             **添加日历** : https://ctftime.org/event/2950.ics  
+            
+        ??? Quote "[Web Arena](https://csem.sturtles.in/events/3/)"  
+            [![](https://ctftime.org/media/events/Gemini_Generated_Image_j48x6dj48x6dj48x.png){ width="200" align=left }](https://csem.sturtles.in/events/3/)  
+            **比赛名称** : [Web Arena](https://csem.sturtles.in/events/3/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-10-18 20:30:15 - 2025-10-19 20:30:15 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : Super_Hacker (https://ctftime.org/team/195477)  
+            **添加日历** : https://ctftime.org/event/2939.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
