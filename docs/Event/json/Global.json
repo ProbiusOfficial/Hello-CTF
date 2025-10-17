@@ -672,18 +672,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Hackfest CTF 2025",
-        "比赛时间": "2025-10-17 03:30:00 - 2025-10-18 03:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2922.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hfctf.ca/",
-        "比赛标志": "https://ctftime.org/media/events/Logo_CTF_7_1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Hackfest.ca (https://ctftime.org/team/125608)",
-        "比赛ID": "473",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Hack.lu CTF 2025",
         "比赛时间": "2025-10-18 02:00:00 - 2025-10-20 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2842.ics",
@@ -705,6 +693,18 @@
         "比赛权重": "0",
         "赛事主办": "HITCON (https://ctftime.org/team/8299)",
         "比赛ID": "1325",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Hackfest CTF 2025",
+        "比赛时间": "2025-10-17 03:30:00 - 2025-10-18 03:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2922.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://hfctf.ca/",
+        "比赛标志": "https://ctftime.org/media/events/Logo_CTF_7_1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Hackfest.ca (https://ctftime.org/team/125608)",
+        "比赛ID": "473",
         "比赛状态": "past"
     },
     {
@@ -1881,18 +1881,6 @@
         "比赛权重": "0",
         "赛事主办": "Cyber Lumen (https://ctftime.org/team/389682)",
         "比赛ID": "1353",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Hack'In 0x04",
-        "比赛时间": "2025-06-14 23:00:00 - 2025-06-15 14:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2802.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hackin.fr/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Hacky'Nov (https://ctftime.org/team/178939)",
-        "比赛ID": "759",
         "比赛状态": "past"
     }
 ]

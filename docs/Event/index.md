@@ -797,15 +797,6 @@ hide:
                 **赛事主办** : QnQSec (https://ctftime.org/team/367683)  
                 **添加日历** : https://ctftime.org/event/2826.ics  
                 
-            ??? Quote "[Hackfest CTF 2025](https://hfctf.ca/)"  
-                [![](https://ctftime.org/media/events/Logo_CTF_7_1.png){ width="200" align=left }](https://hfctf.ca/)  
-                **比赛名称** : [Hackfest CTF 2025](https://hfctf.ca/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-17 03:30:00 - 2025-10-18 03:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Hackfest.ca (https://ctftime.org/team/125608)  
-                **添加日历** : https://ctftime.org/event/2922.ics  
-                
             ??? Quote "[Hack.lu CTF 2025](https://flu.xxx/)"  
                 [![](https://ctftime.org/media/events/logo-small_1.png){ width="200" align=left }](https://flu.xxx/)  
                 **比赛名称** : [Hack.lu CTF 2025](https://flu.xxx/)  
@@ -840,6 +831,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : HITCON (https://ctftime.org/team/8299)  
                 **添加日历** : https://ctftime.org/event/2794.ics  
+                
+            ??? Quote "[Hackfest CTF 2025](https://hfctf.ca/)"  
+                [![](https://ctftime.org/media/events/Logo_CTF_7_1.png){ width="200" align=left }](https://hfctf.ca/)  
+                **比赛名称** : [Hackfest CTF 2025](https://hfctf.ca/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-10-17 03:30:00 - 2025-10-18 03:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Hackfest.ca (https://ctftime.org/team/125608)  
+                **添加日历** : https://ctftime.org/event/2922.ics  
                 
             ??? Quote "[POC CTF Qualification 2025](https://powerofcommunity.net/2025/ctf.html)"  
                 [![](https://ctftime.org/media/events/vDP90SY4soKs6q3cKITowqXIE7a0Jy.png){ width="200" align=left }](https://powerofcommunity.net/2025/ctf.html)  
@@ -1722,15 +1722,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Cyber Lumen (https://ctftime.org/team/389682)  
                 **添加日历** : https://ctftime.org/event/2827.ics  
-                
-            ??? Quote "[Hack'In 0x04](https://hackin.fr/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://hackin.fr/)  
-                **比赛名称** : [Hack'In 0x04](https://hackin.fr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-14 23:00:00 - 2025-06-15 14:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Hacky'Nov (https://ctftime.org/team/178939)  
-                **添加日历** : https://ctftime.org/event/2802.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
