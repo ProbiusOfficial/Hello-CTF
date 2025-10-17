@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
-            **比赛名称** : [HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-10-17 09:00:00 - 2025-10-17 18:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : HITCON (https://ctftime.org/team/8299)  
-            **添加日历** : https://ctftime.org/event/2794.ics  
-            
         ??? Quote "[Hack.lu CTF 2025](https://flu.xxx/)"  
             [![](https://ctftime.org/media/events/logo-small_1.png){ width="200" align=left }](https://flu.xxx/)  
             **比赛名称** : [Hack.lu CTF 2025](https://flu.xxx/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 22.56  
             **赛事主办** : H7Tex (https://ctftime.org/team/281844)  
             **添加日历** : https://ctftime.org/event/2938.ics  
+            
+        ??? Quote "[OmniCTF - 2025 - Individuals](https://omnictf.com/)"  
+            [![](https://ctftime.org/media/events/Untitled_4.png){ width="200" align=left }](https://omnictf.com/)  
+            **比赛名称** : [OmniCTF - 2025 - Individuals](https://omnictf.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-10-18 15:00:00 - 2025-10-18 21:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : OctalO (https://ctftime.org/team/269207)  
+            **添加日历** : https://ctftime.org/event/2950.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
