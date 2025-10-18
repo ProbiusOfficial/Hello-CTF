@@ -21,6 +21,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[LINE CTF 2025](https://linectf.me/)"  
+    [![](https://ctftime.org/media/events/LINE.jpeg){ width="200" align=left }](https://linectf.me/)  
+    **比赛名称** : [LINE CTF 2025](https://linectf.me/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-10-18 08:00:00 - 2025-10-18 08:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : LINE CTF (https://ctftime.org/team/144094)  
+    **添加日历** : https://ctftime.org/event/2819.ics  
+    
 ??? Quote "[HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)"  
     [![](https://ctftime.org){ width="200" align=left }](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
     **比赛名称** : [HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
@@ -911,13 +920,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : NFITS (https://ctftime.org/team/360674)  
     **添加日历** : https://ctftime.org/event/2828.ics  
-    
-??? Quote "[Cyber Lumen x GWK #CTF1](https://www.fkca.eu/cyber-lumen-global-women-in-korea-ctf1/)"  
-    [![](https://ctftime.org/media/events/Cyber_Lumen_X_GWK_CTF1.png){ width="200" align=left }](https://www.fkca.eu/cyber-lumen-global-women-in-korea-ctf1/)  
-    **比赛名称** : [Cyber Lumen x GWK #CTF1](https://www.fkca.eu/cyber-lumen-global-women-in-korea-ctf1/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-06-16 19:49:58 - 2025-06-16 19:49:58 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Cyber Lumen (https://ctftime.org/team/389682)  
-    **添加日历** : https://ctftime.org/event/2827.ics  
     
