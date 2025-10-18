@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[OmniCTF - 2025 - Individuals](https://omnictf.com/)"  
-    [![](https://ctftime.org/media/events/Untitled_4.png){ width="200" align=left }](https://omnictf.com/)  
-    **比赛名称** : [OmniCTF - 2025 - Individuals](https://omnictf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-10-18 15:00:00 - 2025-10-18 21:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : OctalO (https://ctftime.org/team/269207)  
-    **添加日历** : https://ctftime.org/event/2950.ics  
-    
 ??? Quote "[Web Arena](https://csem.sturtles.in/events/3/)"  
     [![](https://ctftime.org/media/events/Gemini_Generated_Image_j48x6dj48x6dj48x.png){ width="200" align=left }](https://csem.sturtles.in/events/3/)  
     **比赛名称** : [Web Arena](https://csem.sturtles.in/events/3/)  
