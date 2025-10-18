@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Web Arena](https://csem.sturtles.in/events/3/)"  
-            [![](https://ctftime.org/media/events/Gemini_Generated_Image_j48x6dj48x6dj48x.png){ width="200" align=left }](https://csem.sturtles.in/events/3/)  
-            **比赛名称** : [Web Arena](https://csem.sturtles.in/events/3/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-10-18 20:30:15 - 2025-10-19 20:30:15 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : Super_Hacker (https://ctftime.org/team/195477)  
-            **添加日历** : https://ctftime.org/event/2939.ics  
-            
         ??? Quote "[m0leCon CTF 2026 Teaser](https://ctf.m0lecon.it/)"  
             [![](https://ctftime.org/media/events/ctftime_6_1.png){ width="200" align=left }](https://ctf.m0lecon.it/)  
             **比赛名称** : [m0leCon CTF 2026 Teaser](https://ctf.m0lecon.it/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : LoveFromMimic (https://ctftime.org/team/364644)  
             **添加日历** : https://ctftime.org/event/2952.ics  
+            
+        ??? Quote "[osu!gaming CTF 2025](https://osugaming.pages.dev/)"  
+            [![](https://ctftime.org/media/events/3fb5fab1b0946459c9c33d71e6c5db35.png){ width="200" align=left }](https://osugaming.pages.dev/)  
+            **比赛名称** : [osu!gaming CTF 2025](https://osugaming.pages.dev/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-10-25 10:00:00 - 2025-10-27 10:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
+            **添加日历** : https://ctftime.org/event/2801.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Web Arena",
-        "比赛时间": "2025-10-18 20:30:15 - 2025-10-19 20:30:15 UTC+8",
-        "添加日历": "https://ctftime.org/event/2939.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://csem.sturtles.in/events/3/",
-        "比赛标志": "https://ctftime.org/media/events/Gemini_Generated_Image_j48x6dj48x6dj48x.png",
-        "比赛权重": "0",
-        "赛事主办": "Super_Hacker (https://ctftime.org/team/195477)",
-        "比赛ID": "1354",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "m0leCon CTF 2026 Teaser",
         "比赛时间": "2025-10-25 01:00:00 - 2025-10-26 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2946.ics",
@@ -669,6 +657,18 @@
         "比赛权重": "0",
         "赛事主办": "OctalO (https://ctftime.org/team/269207)",
         "比赛ID": "1412",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Web Arena",
+        "比赛时间": "2025-10-18 20:30:15 - 2025-10-19 20:30:15 UTC+8",
+        "添加日历": "https://ctftime.org/event/2939.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://csem.sturtles.in/events/3/",
+        "比赛标志": "https://ctftime.org/media/events/Gemini_Generated_Image_j48x6dj48x6dj48x.png",
+        "比赛权重": "0",
+        "赛事主办": "Super_Hacker (https://ctftime.org/team/195477)",
+        "比赛ID": "1354",
         "比赛状态": "nowrunning"
     },
     {
