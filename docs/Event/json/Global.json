@@ -648,18 +648,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "OmniCTF - 2025 - Individuals",
-        "比赛时间": "2025-10-18 15:00:00 - 2025-10-18 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2950.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://omnictf.com/",
-        "比赛标志": "https://ctftime.org/media/events/Untitled_4.png",
-        "比赛权重": "0",
-        "赛事主办": "OctalO (https://ctftime.org/team/269207)",
-        "比赛ID": "1412",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Web Arena",
         "比赛时间": "2025-10-18 20:30:15 - 2025-10-19 20:30:15 UTC+8",
         "添加日历": "https://ctftime.org/event/2939.ics",
@@ -670,6 +658,18 @@
         "赛事主办": "Super_Hacker (https://ctftime.org/team/195477)",
         "比赛ID": "1354",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "OmniCTF - 2025 - Individuals",
+        "比赛时间": "2025-10-18 15:00:00 - 2025-10-18 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2950.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://omnictf.com/",
+        "比赛标志": "https://ctftime.org/media/events/Untitled_4.png",
+        "比赛权重": "0",
+        "赛事主办": "OctalO (https://ctftime.org/team/269207)",
+        "比赛ID": "1412",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "LINE CTF 2025",
@@ -1857,18 +1857,6 @@
         "比赛权重": "46.00",
         "赛事主办": "KITCTF (https://ctftime.org/team/7221)",
         "比赛ID": "854",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DHM 2025",
-        "比赛时间": "2025-06-18 16:00:00 - 2025-06-20 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2828.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hacking-meisterschaft.de/",
-        "比赛标志": "https://ctftime.org/media/events/2db77c0219d24093a757eb38d47c2744.png",
-        "比赛权重": "25.00",
-        "赛事主办": "NFITS (https://ctftime.org/team/360674)",
-        "比赛ID": "1344",
         "比赛状态": "past"
     }
 ]

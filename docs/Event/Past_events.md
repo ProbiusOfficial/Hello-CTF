@@ -21,6 +21,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[OmniCTF - 2025 - Individuals](https://omnictf.com/)"  
+    [![](https://ctftime.org/media/events/Untitled_4.png){ width="200" align=left }](https://omnictf.com/)  
+    **比赛名称** : [OmniCTF - 2025 - Individuals](https://omnictf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-10-18 15:00:00 - 2025-10-18 21:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : OctalO (https://ctftime.org/team/269207)  
+    **添加日历** : https://ctftime.org/event/2950.ics  
+    
 ??? Quote "[LINE CTF 2025](https://linectf.me/)"  
     [![](https://ctftime.org/media/events/LINE.jpeg){ width="200" align=left }](https://linectf.me/)  
     **比赛名称** : [LINE CTF 2025](https://linectf.me/)  
@@ -911,13 +920,4 @@ comments: true
     **比赛权重** : 46.00  
     **赛事主办** : KITCTF (https://ctftime.org/team/7221)  
     **添加日历** : https://ctftime.org/event/2694.ics  
-    
-??? Quote "[DHM 2025](https://hacking-meisterschaft.de/)"  
-    [![](https://ctftime.org/media/events/2db77c0219d24093a757eb38d47c2744.png){ width="200" align=left }](https://hacking-meisterschaft.de/)  
-    **比赛名称** : [DHM 2025](https://hacking-meisterschaft.de/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-06-18 16:00:00 - 2025-06-20 01:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : NFITS (https://ctftime.org/team/360674)  
-    **添加日历** : https://ctftime.org/event/2828.ics  
     
