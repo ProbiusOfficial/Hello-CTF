@@ -21,6 +21,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Web Arena](https://csem.sturtles.in/events/3/)"  
+    [![](https://ctftime.org/media/events/Gemini_Generated_Image_j48x6dj48x6dj48x.png){ width="200" align=left }](https://csem.sturtles.in/events/3/)  
+    **比赛名称** : [Web Arena](https://csem.sturtles.in/events/3/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-10-18 20:30:15 - 2025-10-19 20:30:15 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Super_Hacker (https://ctftime.org/team/195477)  
+    **添加日历** : https://ctftime.org/event/2939.ics  
+    
 ??? Quote "[OmniCTF - 2025 - Individuals](https://omnictf.com/)"  
     [![](https://ctftime.org/media/events/Untitled_4.png){ width="200" align=left }](https://omnictf.com/)  
     **比赛名称** : [OmniCTF - 2025 - Individuals](https://omnictf.com/)  
@@ -911,13 +920,4 @@ comments: true
     **比赛权重** : 62.97  
     **赛事主办** : BCACTF (https://ctftime.org/team/81702)  
     **添加日历** : https://ctftime.org/event/2836.ics  
-    
-??? Quote "[GPN CTF 2025](https://gpn23.ctf.kitctf.de/)"  
-    [![](https://ctftime.org/media/events/2acc1e50ba516aa0bc42a61798cfa10d_1.png){ width="200" align=left }](https://gpn23.ctf.kitctf.de/)  
-    **比赛名称** : [GPN CTF 2025](https://gpn23.ctf.kitctf.de/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-06-20 18:00:00 - 2025-06-22 06:00:00 UTC+8  
-    **比赛权重** : 46.00  
-    **赛事主办** : KITCTF (https://ctftime.org/team/7221)  
-    **添加日历** : https://ctftime.org/event/2694.ics  
     
