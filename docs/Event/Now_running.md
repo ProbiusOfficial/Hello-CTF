@@ -45,12 +45,3 @@ comments: true
     **赛事主办** : FluxFingers (https://ctftime.org/team/551)  
     **添加日历** : https://ctftime.org/event/2842.ics  
     
-??? Quote "[H7CTF 2025](https://ctf.h7tex.com/)"  
-    [![](https://ctftime.org/media/events/h7logo.png){ width="200" align=left }](https://ctf.h7tex.com/)  
-    **比赛名称** : [H7CTF 2025](https://ctf.h7tex.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-10-18 11:30:00 - 2025-10-19 23:30:00 UTC+8  
-    **比赛权重** : 22.56  
-    **赛事主办** : H7Tex (https://ctftime.org/team/281844)  
-    **添加日历** : https://ctftime.org/event/2938.ics  
-    

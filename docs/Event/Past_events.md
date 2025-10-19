@@ -39,6 +39,15 @@ comments: true
     **赛事主办** : OctalO (https://ctftime.org/team/269207)  
     **添加日历** : https://ctftime.org/event/2950.ics  
     
+??? Quote "[H7CTF 2025](https://ctf.h7tex.com/)"  
+    [![](https://ctftime.org/media/events/h7logo.png){ width="200" align=left }](https://ctf.h7tex.com/)  
+    **比赛名称** : [H7CTF 2025](https://ctf.h7tex.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-10-18 11:30:00 - 2025-10-19 23:30:00 UTC+8  
+    **比赛权重** : 22.56  
+    **赛事主办** : H7Tex (https://ctftime.org/team/281844)  
+    **添加日历** : https://ctftime.org/event/2938.ics  
+    
 ??? Quote "[LINE CTF 2025](https://linectf.me/)"  
     [![](https://ctftime.org/media/events/LINE.jpeg){ width="200" align=left }](https://linectf.me/)  
     **比赛名称** : [LINE CTF 2025](https://linectf.me/)  
@@ -911,13 +920,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : GMO Ierae (https://ctftime.org/team/224122)  
     **添加日历** : https://ctftime.org/event/2655.ics  
-    
-??? Quote "[BCACTF 6.0](https://www.bcactf.com/)"  
-    [![](https://ctftime.org/media/events/bcactfVI_txt.png){ width="200" align=left }](https://www.bcactf.com/)  
-    **比赛名称** : [BCACTF 6.0](https://www.bcactf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-06-21 09:30:00 - 2025-06-24 09:30:00 UTC+8  
-    **比赛权重** : 62.97  
-    **赛事主办** : BCACTF (https://ctftime.org/team/81702)  
-    **添加日历** : https://ctftime.org/event/2836.ics  
     

@@ -636,18 +636,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "H7CTF 2025",
-        "比赛时间": "2025-10-18 11:30:00 - 2025-10-19 23:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2938.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.h7tex.com/",
-        "比赛标志": "https://ctftime.org/media/events/h7logo.png",
-        "比赛权重": "22.56",
-        "赛事主办": "H7Tex (https://ctftime.org/team/281844)",
-        "比赛ID": "1169",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Web Arena",
         "比赛时间": "2025-10-18 20:30:15 - 2025-10-19 20:30:15 UTC+8",
         "添加日历": "https://ctftime.org/event/2939.ics",
@@ -669,6 +657,18 @@
         "比赛权重": "0",
         "赛事主办": "OctalO (https://ctftime.org/team/269207)",
         "比赛ID": "1412",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "H7CTF 2025",
+        "比赛时间": "2025-10-18 11:30:00 - 2025-10-19 23:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2938.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.h7tex.com/",
+        "比赛标志": "https://ctftime.org/media/events/h7logo.png",
+        "比赛权重": "22.56",
+        "赛事主办": "H7Tex (https://ctftime.org/team/281844)",
+        "比赛ID": "1169",
         "比赛状态": "past"
     },
     {
@@ -1833,18 +1833,6 @@
         "比赛权重": "25.00",
         "赛事主办": "GMO Ierae (https://ctftime.org/team/224122)",
         "比赛ID": "1130",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BCACTF 6.0",
-        "比赛时间": "2025-06-21 09:30:00 - 2025-06-24 09:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2836.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.bcactf.com/",
-        "比赛标志": "https://ctftime.org/media/events/bcactfVI_txt.png",
-        "比赛权重": "62.97",
-        "赛事主办": "BCACTF (https://ctftime.org/team/81702)",
-        "比赛ID": "325",
         "比赛状态": "past"
     }
 ]
