@@ -57,6 +57,15 @@ comments: true
     **赛事主办** : LINE CTF (https://ctftime.org/team/144094)  
     **添加日历** : https://ctftime.org/event/2819.ics  
     
+??? Quote "[Hack.lu CTF 2025](https://flu.xxx/)"  
+    [![](https://ctftime.org/media/events/logo-small_1.png){ width="200" align=left }](https://flu.xxx/)  
+    **比赛名称** : [Hack.lu CTF 2025](https://flu.xxx/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-10-18 02:00:00 - 2025-10-20 02:00:00 UTC+8  
+    **比赛权重** : 98.02  
+    **赛事主办** : FluxFingers (https://ctftime.org/team/551)  
+    **添加日历** : https://ctftime.org/event/2842.ics  
+    
 ??? Quote "[HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)"  
     [![](https://ctftime.org){ width="200" align=left }](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
     **比赛名称** : [HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
@@ -74,6 +83,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Hackfest.ca (https://ctftime.org/team/125608)  
     **添加日历** : https://ctftime.org/event/2922.ics  
+    
+??? Quote "[QnQSec CTF 2025](https://ctf.qnqsec.team/)"  
+    [![](https://ctftime.org/media/events/Logo_QnQSec.jpg){ width="200" align=left }](https://ctf.qnqsec.team/)  
+    **比赛名称** : [QnQSec CTF 2025](https://ctf.qnqsec.team/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-10-17 02:00:00 - 2025-10-20 02:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : QnQSec (https://ctftime.org/team/367683)  
+    **添加日历** : https://ctftime.org/event/2826.ics  
     
 ??? Quote "[POC CTF Qualification 2025](https://powerofcommunity.net/2025/ctf.html)"  
     [![](https://ctftime.org/media/events/vDP90SY4soKs6q3cKITowqXIE7a0Jy.png){ width="200" align=left }](https://powerofcommunity.net/2025/ctf.html)  
@@ -902,22 +920,4 @@ comments: true
     **比赛权重** : 23.12  
     **赛事主办** : pwnlentoni (https://ctftime.org/team/230457)  
     **添加日历** : https://ctftime.org/event/2762.ics  
-    
-??? Quote "[MaltaCTF 2025 Quals](https://quals.2025.ctf.mt/)"  
-    [![](https://ctftime.org/media/events/MaltaCTF.png){ width="200" align=left }](https://quals.2025.ctf.mt/)  
-    **比赛名称** : [MaltaCTF 2025 Quals](https://quals.2025.ctf.mt/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-06-21 15:00:00 - 2025-06-22 15:00:00 UTC+8  
-    **比赛权重** : 24.95  
-    **赛事主办** : Friendly Maltese Citizens (https://ctftime.org/team/220769)  
-    **添加日历** : https://ctftime.org/event/2776.ics  
-    
-??? Quote "[IERAE CTF 2025 - GMO Cybersecurity Contest](https://gmo-cybersecurity.com/event/ieraectf25/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://gmo-cybersecurity.com/event/ieraectf25/)  
-    **比赛名称** : [IERAE CTF 2025 - GMO Cybersecurity Contest](https://gmo-cybersecurity.com/event/ieraectf25/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-06-21 14:00:00 - 2025-06-22 14:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : GMO Ierae (https://ctftime.org/team/224122)  
-    **添加日历** : https://ctftime.org/event/2655.ics  
     
