@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [强网杯S9初赛Reverse writeup](https://xia0ji233.github.io/2025/10/20/qwb2025_pre_reverse/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-10-19
+
+    强网杯初赛的这道 re 挺有意思的，做了快 20h 出了。tradere基本vm结构分析ptrace 父子进程调试，父进程追踪子进程 int 3 指令的位置，替换成相应的操作，因为开始的赋值操作导致数据结构不好看，可以考虑 dump + nop 初始化的方式。每次 int 3 触发之后，会执行一个结构体中的函数，结构体如下定义。1234567struct data{    data* lchild...
     ### [部分博客密码删除临时通知](https://y4tacker.github.io/2025/09/02/year/2025/09/%E9%83%A8%E5%88%86%E5%8D%9A%E5%AE%A2%E5%AF%86%E7%A0%81%E5%88%A0%E9%99%A4%E4%B8%B4%E6%97%B6%E9%80%9A%E7%9F%A5/)  
     >by [Y4tacker](https://y4tacker.github.io), 2025-09-02
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2025-02-14
 
     好久没碰某二次元开放世界冒险游戏了，听说新升级了反作弊，故来一探究竟，并尝试实现一些简单的功能。基本保护分析这种级别的游戏首先不考虑静态分析，直接跑起来。不出意外肯定不能直接内存读写，想附加调试器也是附加不上的，所以选择先从驱动入手，游戏加载时会加载驱动。先尝试简单的拦截，方法很多：注册 LoadImage 回调拦截，改驱动名等等等。后者比较好实现，但是运行游戏一段时间会弹窗强制退出。而如果说让保...
-    ### [windowsAPC学习（1）——APC简介](https://xia0ji233.github.io/2025/02/09/WindowsAPC1/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-02-09
-
-    来了解一下Windows的APC机制。APCAPC介绍APC 即 Asyncroneus Procedure Call，异步过程调用。学过之前的知识我们知道，线程是不能被杀掉、挂起和恢复的，线程在执行的时候自己占据着CPU，其他线程如何控制它呢？改变一个线程的行为，这就需要APC了。APC结构体APC的结构体如下所示123456789101112131415161718kd> dt _KAPCnt...
 
 </div>
