@@ -743,15 +743,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2904.ics  
                 
-            ??? Quote "[ECW Online Qualifiers](https://challenge-ecw.eu/)"  
-                [![](https://ctftime.org/media/events/logo_115.png){ width="200" align=left }](https://challenge-ecw.eu/)  
-                **比赛名称** : [ECW Online Qualifiers](https://challenge-ecw.eu/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-08 20:00:00 - 2025-10-22 22:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Astek Group (https://ctftime.org/team/407057)  
-                **添加日历** : https://ctftime.org/event/2959.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[MoeCTF 2025](https://ctf.xidian.edu.cn/games/22)"  
@@ -858,6 +849,15 @@ hide:
                 **比赛权重** : 24.58  
                 **赛事主办** : Crispr_iiitn (https://ctftime.org/team/270138)  
                 **添加日历** : https://ctftime.org/event/2957.ics  
+                
+            ??? Quote "[ECW Online Qualifiers](https://challenge-ecw.eu/)"  
+                [![](https://ctftime.org/media/events/logo_115.png){ width="200" align=left }](https://challenge-ecw.eu/)  
+                **比赛名称** : [ECW Online Qualifiers](https://challenge-ecw.eu/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-10-08 20:00:00 - 2025-10-22 22:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Astek Group (https://ctftime.org/team/407057)  
+                **添加日历** : https://ctftime.org/event/2959.ics  
                 
             ??? Quote "[Standoff Cyberbattle 16](https://16.standoff365.com/en/)"  
                 [![](https://ctftime.org/media/events/f31eca683184a4547ea20f1fa984fb70.png){ width="200" align=left }](https://16.standoff365.com/en/)  
@@ -1659,15 +1659,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
                 **添加日历** : https://ctftime.org/event/2821.ics  
-                
-            ??? Quote "[cornCTF 2025](https://cornc.tf/)"  
-                [![](https://ctftime.org/media/events/cornctf.png){ width="200" align=left }](https://cornc.tf/)  
-                **比赛名称** : [cornCTF 2025](https://cornc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-21 20:00:00 - 2025-06-22 20:00:00 UTC+8  
-                **比赛权重** : 23.12  
-                **赛事主办** : pwnlentoni (https://ctftime.org/team/230457)  
-                **添加日历** : https://ctftime.org/event/2762.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
