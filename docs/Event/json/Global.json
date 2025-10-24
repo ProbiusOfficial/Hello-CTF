@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "m0leCon CTF 2026 Teaser",
-        "比赛时间": "2025-10-25 01:00:00 - 2025-10-26 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2946.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.m0lecon.it/",
-        "比赛标志": "https://ctftime.org/media/events/ctftime_6_1.png",
-        "比赛权重": "100.00",
-        "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
-        "比赛ID": "372",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "RSTCON 2025 CTF",
         "比赛时间": "2025-10-25 03:00:00 - 2025-10-26 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2865.ics",
@@ -597,6 +585,18 @@
         "比赛权重": "0",
         "赛事主办": "UWSP Pointers (https://ctftime.org/team/231536)",
         "比赛ID": "963",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "m0leCon CTF 2026 Teaser",
+        "比赛时间": "2025-10-25 01:00:00 - 2025-10-26 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2946.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.m0lecon.it/",
+        "比赛标志": "https://ctftime.org/media/events/ctftime_6_1.png",
+        "比赛权重": "100.00",
+        "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
+        "比赛ID": "372",
         "比赛状态": "nowrunning"
     },
     {

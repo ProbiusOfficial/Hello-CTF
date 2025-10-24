@@ -18,3 +18,12 @@ comments: true
     **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
     **添加日历** : https://ctftime.org/event/2904.ics  
     
+??? Quote "[m0leCon CTF 2026 Teaser](https://ctf.m0lecon.it/)"  
+    [![](https://ctftime.org/media/events/ctftime_6_1.png){ width="200" align=left }](https://ctf.m0lecon.it/)  
+    **比赛名称** : [m0leCon CTF 2026 Teaser](https://ctf.m0lecon.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-10-25 01:00:00 - 2025-10-26 01:00:00 UTC+8  
+    **比赛权重** : 100.00  
+    **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
+    **添加日历** : https://ctftime.org/event/2946.ics  
+    
