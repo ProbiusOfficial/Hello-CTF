@@ -45,3 +45,12 @@ comments: true
     **赛事主办** : LoveFromMimic (https://ctftime.org/team/364644)  
     **添加日历** : https://ctftime.org/event/2952.ics  
     
+??? Quote "[osu!gaming CTF 2025](https://osugaming.sekai.team/)"  
+    [![](https://ctftime.org/media/events/3fb5fab1b0946459c9c33d71e6c5db35.png){ width="200" align=left }](https://osugaming.sekai.team/)  
+    **比赛名称** : [osu!gaming CTF 2025](https://osugaming.sekai.team/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-10-25 10:00:00 - 2025-10-27 10:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
+    **添加日历** : https://ctftime.org/event/2801.ics  
+    
