@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[DEADFACE CTF 2025](https://ctf.deadface.io/)"  
-    [![](https://ctftime.org/media/events/logo_deadface_ctf_2025-2.png){ width="200" align=left }](https://ctf.deadface.io/)  
-    **比赛名称** : [DEADFACE CTF 2025](https://ctf.deadface.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-10-25 22:00:00 - 2025-10-27 08:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Cyber Hacktics (https://ctftime.org/team/127017)  
-    **添加日历** : https://ctftime.org/event/2912.ics  
-    
 ??? Quote "[SAS CTF 2025 Finals](https://ctf.thesascon.com/)"  
     [![](https://ctftime.org/media/events/SAS25_new_1.png){ width="200" align=left }](https://ctf.thesascon.com/)  
     **比赛名称** : [SAS CTF 2025 Finals](https://ctf.thesascon.com/)  
