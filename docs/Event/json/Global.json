@@ -540,18 +540,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "m0leCon CTF 2026 Teaser",
-        "比赛时间": "2025-10-25 01:00:00 - 2025-10-26 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2946.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.m0lecon.it/",
-        "比赛标志": "https://ctftime.org/media/events/ctftime_6_1.png",
-        "比赛权重": "100.00",
-        "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
-        "比赛ID": "372",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "RSTCON 2025 CTF",
         "比赛时间": "2025-10-25 03:00:00 - 2025-10-26 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2865.ics",
@@ -598,6 +586,18 @@
         "赛事主办": "Cyber Hacktics (https://ctftime.org/team/127017)",
         "比赛ID": "487",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "m0leCon CTF 2026 Teaser",
+        "比赛时间": "2025-10-25 01:00:00 - 2025-10-26 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2946.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.m0lecon.it/",
+        "比赛标志": "https://ctftime.org/media/events/ctftime_6_1.png",
+        "比赛权重": "100.00",
+        "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
+        "比赛ID": "372",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Web Arena",
@@ -1785,18 +1785,6 @@
         "比赛权重": "24.00",
         "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
         "比赛ID": "554",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "MetaCTF June 2025 Flash CTF",
-        "比赛时间": "2025-06-27 05:00:00 - 2025-06-27 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2821.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://mctf.io/jun2025",
-        "比赛标志": "https://ctftime.org/media/events/Orange_M_Square.png",
-        "比赛权重": "0",
-        "赛事主办": "MetaCTF (https://ctftime.org/team/72254)",
-        "比赛ID": "500",
         "比赛状态": "past"
     }
 ]

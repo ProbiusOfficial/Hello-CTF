@@ -21,6 +21,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[m0leCon CTF 2026 Teaser](https://ctf.m0lecon.it/)"  
+    [![](https://ctftime.org/media/events/ctftime_6_1.png){ width="200" align=left }](https://ctf.m0lecon.it/)  
+    **比赛名称** : [m0leCon CTF 2026 Teaser](https://ctf.m0lecon.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-10-25 01:00:00 - 2025-10-26 01:00:00 UTC+8  
+    **比赛权重** : 100.00  
+    **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
+    **添加日历** : https://ctftime.org/event/2946.ics  
+    
 ??? Quote "[Web Arena](https://csem.sturtles.in/events/3/)"  
     [![](https://ctftime.org/media/events/Gemini_Generated_Image_j48x6dj48x6dj48x.png){ width="200" align=left }](https://csem.sturtles.in/events/3/)  
     **比赛名称** : [Web Arena](https://csem.sturtles.in/events/3/)  
@@ -911,13 +920,4 @@ comments: true
     **比赛权重** : 24.00  
     **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
     **添加日历** : https://ctftime.org/event/2829.ics  
-    
-??? Quote "[MetaCTF June 2025 Flash CTF](https://mctf.io/jun2025)"  
-    [![](https://ctftime.org/media/events/Orange_M_Square.png){ width="200" align=left }](https://mctf.io/jun2025)  
-    **比赛名称** : [MetaCTF June 2025 Flash CTF](https://mctf.io/jun2025)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-06-27 05:00:00 - 2025-06-27 07:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
-    **添加日历** : https://ctftime.org/event/2821.ics  
     

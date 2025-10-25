@@ -698,15 +698,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2904.ics  
                 
-            ??? Quote "[m0leCon CTF 2026 Teaser](https://ctf.m0lecon.it/)"  
-                [![](https://ctftime.org/media/events/ctftime_6_1.png){ width="200" align=left }](https://ctf.m0lecon.it/)  
-                **比赛名称** : [m0leCon CTF 2026 Teaser](https://ctf.m0lecon.it/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-25 01:00:00 - 2025-10-26 01:00:00 UTC+8  
-                **比赛权重** : 100.00  
-                **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
-                **添加日历** : https://ctftime.org/event/2946.ics  
-                
             ??? Quote "[RSTCON 2025 CTF](https://mctf.io/rstcon25)"  
                 [![](https://ctftime.org/media/events/RSTCON-BLK.png){ width="200" align=left }](https://mctf.io/rstcon25)  
                 **比赛名称** : [RSTCON 2025 CTF](https://mctf.io/rstcon25)  
@@ -760,6 +751,15 @@ hide:
                 **其他说明** : 第五届极客少年挑战赛将于2025年8月29日10:00至16:00举行，报名从2025年6月3日00:00开始至2025年7月10日23:59结束。单人线下赛，更多信息请加入QQ群1045833929。  
                 
         === "国外赛事"
+            ??? Quote "[m0leCon CTF 2026 Teaser](https://ctf.m0lecon.it/)"  
+                [![](https://ctftime.org/media/events/ctftime_6_1.png){ width="200" align=left }](https://ctf.m0lecon.it/)  
+                **比赛名称** : [m0leCon CTF 2026 Teaser](https://ctf.m0lecon.it/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-10-25 01:00:00 - 2025-10-26 01:00:00 UTC+8  
+                **比赛权重** : 100.00  
+                **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
+                **添加日历** : https://ctftime.org/event/2946.ics  
+                
             ??? Quote "[Web Arena](https://csem.sturtles.in/events/3/)"  
                 [![](https://ctftime.org/media/events/Gemini_Generated_Image_j48x6dj48x6dj48x.png){ width="200" align=left }](https://csem.sturtles.in/events/3/)  
                 **比赛名称** : [Web Arena](https://csem.sturtles.in/events/3/)  
@@ -1650,15 +1650,6 @@ hide:
                 **比赛权重** : 24.00  
                 **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
                 **添加日历** : https://ctftime.org/event/2829.ics  
-                
-            ??? Quote "[MetaCTF June 2025 Flash CTF](https://mctf.io/jun2025)"  
-                [![](https://ctftime.org/media/events/Orange_M_Square.png){ width="200" align=left }](https://mctf.io/jun2025)  
-                **比赛名称** : [MetaCTF June 2025 Flash CTF](https://mctf.io/jun2025)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-27 05:00:00 - 2025-06-27 07:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
-                **添加日历** : https://ctftime.org/event/2821.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
