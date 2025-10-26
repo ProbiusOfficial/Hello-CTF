@@ -680,15 +680,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2904.ics  
                 
-            ??? Quote "[RSTCON 2025 CTF](https://mctf.io/rstcon25)"  
-                [![](https://ctftime.org/media/events/RSTCON-BLK.png){ width="200" align=left }](https://mctf.io/rstcon25)  
-                **比赛名称** : [RSTCON 2025 CTF](https://mctf.io/rstcon25)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-25 03:00:00 - 2025-10-26 22:00:00 UTC+8  
-                **比赛权重** : 24.00  
-                **赛事主办** : RSTCON (https://ctftime.org/team/281202)  
-                **添加日历** : https://ctftime.org/event/2865.ics  
-                
             ??? Quote "[osu!gaming CTF 2025](https://osugaming.sekai.team/)"  
                 [![](https://ctftime.org/media/events/3fb5fab1b0946459c9c33d71e6c5db35.png){ width="200" align=left }](https://osugaming.sekai.team/)  
                 **比赛名称** : [osu!gaming CTF 2025](https://osugaming.sekai.team/)  
@@ -707,15 +698,6 @@ hide:
                 **赛事主办** : Cyber Hacktics (https://ctftime.org/team/127017)  
                 **添加日历** : https://ctftime.org/event/2912.ics  
                 
-            ??? Quote "[SAS CTF 2025 Finals](https://ctf.thesascon.com/)"  
-                [![](https://ctftime.org/media/events/SAS25_new_1.png){ width="200" align=left }](https://ctf.thesascon.com/)  
-                **比赛名称** : [SAS CTF 2025 Finals](https://ctf.thesascon.com/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2025-10-26 11:00:00 - 2025-10-26 22:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
-                **添加日历** : https://ctftime.org/event/2811.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[MoeCTF 2025](https://ctf.xidian.edu.cn/games/22)"  
@@ -733,6 +715,15 @@ hide:
                 **其他说明** : 第五届极客少年挑战赛将于2025年8月29日10:00至16:00举行，报名从2025年6月3日00:00开始至2025年7月10日23:59结束。单人线下赛，更多信息请加入QQ群1045833929。  
                 
         === "国外赛事"
+            ??? Quote "[SAS CTF 2025 Finals](https://ctf.thesascon.com/)"  
+                [![](https://ctftime.org/media/events/SAS25_new_1.png){ width="200" align=left }](https://ctf.thesascon.com/)  
+                **比赛名称** : [SAS CTF 2025 Finals](https://ctf.thesascon.com/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2025-10-26 11:00:00 - 2025-10-26 22:00:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
+                **添加日历** : https://ctftime.org/event/2811.ics  
+                
             ??? Quote "[2025 Qiangwang Challenge on Cyber Mimic Defense Qualification](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)"  
                 [![](https://ctftime.org/media/events/wechat_2025-09-26_160854_722_1.png){ width="200" align=left }](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
                 **比赛名称** : [2025 Qiangwang Challenge on Cyber Mimic Defense Qualification](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
@@ -741,6 +732,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : LoveFromMimic (https://ctftime.org/team/364644)  
                 **添加日历** : https://ctftime.org/event/2952.ics  
+                
+            ??? Quote "[RSTCON 2025 CTF](https://mctf.io/rstcon25)"  
+                [![](https://ctftime.org/media/events/RSTCON-BLK.png){ width="200" align=left }](https://mctf.io/rstcon25)  
+                **比赛名称** : [RSTCON 2025 CTF](https://mctf.io/rstcon25)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-10-25 03:00:00 - 2025-10-26 22:00:00 UTC+8  
+                **比赛权重** : 24.00  
+                **赛事主办** : RSTCON (https://ctftime.org/team/281202)  
+                **添加日历** : https://ctftime.org/event/2865.ics  
                 
             ??? Quote "[m0leCon CTF 2026 Teaser](https://ctf.m0lecon.it/)"  
                 [![](https://ctftime.org/media/events/ctftime_6_1.png){ width="200" align=left }](https://ctf.m0lecon.it/)  
@@ -1614,24 +1614,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : DarkArmy (https://ctftime.org/team/26569)  
                 **添加日历** : https://ctftime.org/event/2781.ics  
-                
-            ??? Quote "[Involuntary CTF 2025](http://involuntaryctf.net/)"  
-                [![](https://ctftime.org/media/events/Logo_3_1.png){ width="200" align=left }](http://involuntaryctf.net/)  
-                **比赛名称** : [Involuntary CTF 2025](http://involuntaryctf.net/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-28 02:00:00 - 2025-06-30 02:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : inv0luntary (https://ctftime.org/team/259548)  
-                **添加日历** : https://ctftime.org/event/2813.ics  
-                
-            ??? Quote "[Google Capture The Flag 2025](https://g.co/ctf)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://g.co/ctf)  
-                **比赛名称** : [Google Capture The Flag 2025](https://g.co/ctf)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-28 02:00:00 - 2025-06-30 02:00:00 UTC+8  
-                **比赛权重** : 97.17  
-                **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
-                **添加日历** : https://ctftime.org/event/2718.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
