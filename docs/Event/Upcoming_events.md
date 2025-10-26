@@ -108,15 +108,6 @@ comments: true
     **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
     **添加日历** : https://ctftime.org/event/2883.ics  
     
-??? Quote "[sknbCTF 2025](http://ctf.sknb.team/)"  
-    [![](https://ctftime.org/media/events/sknb_logo.png){ width="200" align=left }](http://ctf.sknb.team/)  
-    **比赛名称** : [sknbCTF 2025](http://ctf.sknb.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-08 11:00:00 - 2025-11-09 11:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : sknb (https://ctftime.org/team/355880)  
-    **添加日历** : https://ctftime.org/event/2947.ics  
-    
 ??? Quote "[Equinor CTF 2025](https://ctf.equinor.com/)"  
     [![](https://ctftime.org/media/events/ept_2.png){ width="200" align=left }](https://ctf.equinor.com/)  
     **比赛名称** : [Equinor CTF 2025](https://ctf.equinor.com/)  
