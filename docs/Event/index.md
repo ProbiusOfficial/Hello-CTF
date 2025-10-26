@@ -707,15 +707,6 @@ hide:
                 **赛事主办** : RSTCON (https://ctftime.org/team/281202)  
                 **添加日历** : https://ctftime.org/event/2865.ics  
                 
-            ??? Quote "[2025 Qiangwang Challenge on Cyber Mimic Defense Qualification](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)"  
-                [![](https://ctftime.org/media/events/wechat_2025-09-26_160854_722_1.png){ width="200" align=left }](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
-                **比赛名称** : [2025 Qiangwang Challenge on Cyber Mimic Defense Qualification](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-25 09:00:00 - 2025-10-26 09:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : LoveFromMimic (https://ctftime.org/team/364644)  
-                **添加日历** : https://ctftime.org/event/2952.ics  
-                
             ??? Quote "[osu!gaming CTF 2025](https://osugaming.sekai.team/)"  
                 [![](https://ctftime.org/media/events/3fb5fab1b0946459c9c33d71e6c5db35.png){ width="200" align=left }](https://osugaming.sekai.team/)  
                 **比赛名称** : [osu!gaming CTF 2025](https://osugaming.sekai.team/)  
@@ -751,6 +742,15 @@ hide:
                 **其他说明** : 第五届极客少年挑战赛将于2025年8月29日10:00至16:00举行，报名从2025年6月3日00:00开始至2025年7月10日23:59结束。单人线下赛，更多信息请加入QQ群1045833929。  
                 
         === "国外赛事"
+            ??? Quote "[2025 Qiangwang Challenge on Cyber Mimic Defense Qualification](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)"  
+                [![](https://ctftime.org/media/events/wechat_2025-09-26_160854_722_1.png){ width="200" align=left }](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
+                **比赛名称** : [2025 Qiangwang Challenge on Cyber Mimic Defense Qualification](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-10-25 09:00:00 - 2025-10-26 09:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : LoveFromMimic (https://ctftime.org/team/364644)  
+                **添加日历** : https://ctftime.org/event/2952.ics  
+                
             ??? Quote "[m0leCon CTF 2026 Teaser](https://ctf.m0lecon.it/)"  
                 [![](https://ctftime.org/media/events/ctftime_6_1.png){ width="200" align=left }](https://ctf.m0lecon.it/)  
                 **比赛名称** : [m0leCon CTF 2026 Teaser](https://ctf.m0lecon.it/)  
@@ -1641,15 +1641,6 @@ hide:
                 **比赛权重** : 97.17  
                 **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
                 **添加日历** : https://ctftime.org/event/2718.ics  
-                
-            ??? Quote "[Hack The System - Bug Bounty CTF](https://ctf.hackthebox.com/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.hackthebox.com/)  
-                **比赛名称** : [Hack The System - Bug Bounty CTF](https://ctf.hackthebox.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-06-27 21:00:00 - 2025-06-30 03:00:00 UTC+8  
-                **比赛权重** : 24.00  
-                **赛事主办** : Hack The Box (https://ctftime.org/team/136056)  
-                **添加日历** : https://ctftime.org/event/2829.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
