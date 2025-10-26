@@ -819,7 +819,7 @@ hide:
                 **比赛名称** : [QnQSec CTF 2025](https://ctf.qnqsec.team/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-10-17 02:00:00 - 2025-10-20 02:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 24.86  
                 **赛事主办** : QnQSec (https://ctftime.org/team/367683)  
                 **添加日历** : https://ctftime.org/event/2826.ics  
                 
