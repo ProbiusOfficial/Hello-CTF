@@ -30,6 +30,15 @@ comments: true
     **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
     **添加日历** : https://ctftime.org/event/2811.ics  
     
+??? Quote "[DEADFACE CTF 2025](https://ctf.deadface.io/)"  
+    [![](https://ctftime.org/media/events/logo_deadface_ctf_2025-2.png){ width="200" align=left }](https://ctf.deadface.io/)  
+    **比赛名称** : [DEADFACE CTF 2025](https://ctf.deadface.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-10-25 22:00:00 - 2025-10-27 08:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Cyber Hacktics (https://ctftime.org/team/127017)  
+    **添加日历** : https://ctftime.org/event/2912.ics  
+    
 ??? Quote "[2025 Qiangwang Challenge on Cyber Mimic Defense Qualification](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)"  
     [![](https://ctftime.org/media/events/wechat_2025-09-26_160854_722_1.png){ width="200" align=left }](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
     **比赛名称** : [2025 Qiangwang Challenge on Cyber Mimic Defense Qualification](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
@@ -911,13 +920,4 @@ comments: true
     **比赛权重** : 23.13  
     **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
     **添加日历** : https://ctftime.org/event/2798.ics  
-    
-??? Quote "[BSides Mumbai CTF 2025](https://ctf.bsidesmumbai.in/)"  
-    [![](https://ctftime.org/media/events/Layed1.B3529NWW_3.png){ width="200" align=left }](https://ctf.bsidesmumbai.in/)  
-    **比赛名称** : [BSides Mumbai CTF 2025](https://ctf.bsidesmumbai.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-06-28 18:00:00 - 2025-06-29 18:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : DarkArmy (https://ctftime.org/team/26569)  
-    **添加日历** : https://ctftime.org/event/2781.ics  
     
