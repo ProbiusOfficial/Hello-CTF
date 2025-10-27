@@ -680,15 +680,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2904.ics  
                 
-            ??? Quote "[osu!gaming CTF 2025](https://osugaming.sekai.team/)"  
-                [![](https://ctftime.org/media/events/3fb5fab1b0946459c9c33d71e6c5db35.png){ width="200" align=left }](https://osugaming.sekai.team/)  
-                **比赛名称** : [osu!gaming CTF 2025](https://osugaming.sekai.team/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-25 10:00:00 - 2025-10-27 10:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
-                **添加日历** : https://ctftime.org/event/2801.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[MoeCTF 2025](https://ctf.xidian.edu.cn/games/22)"  
@@ -723,6 +714,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Cyber Hacktics (https://ctftime.org/team/127017)  
                 **添加日历** : https://ctftime.org/event/2912.ics  
+                
+            ??? Quote "[osu!gaming CTF 2025](https://osugaming.sekai.team/)"  
+                [![](https://ctftime.org/media/events/3fb5fab1b0946459c9c33d71e6c5db35.png){ width="200" align=left }](https://osugaming.sekai.team/)  
+                **比赛名称** : [osu!gaming CTF 2025](https://osugaming.sekai.team/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-10-25 10:00:00 - 2025-10-27 10:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
+                **添加日历** : https://ctftime.org/event/2801.ics  
                 
             ??? Quote "[2025 Qiangwang Challenge on Cyber Mimic Defense Qualification](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)"  
                 [![](https://ctftime.org/media/events/wechat_2025-09-26_160854_722_1.png){ width="200" align=left }](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
@@ -1596,15 +1596,6 @@ hide:
                 **比赛权重** : 24.72  
                 **赛事主办** : CubeMastery (https://ctftime.org/team/168744)  
                 **添加日历** : https://ctftime.org/event/2820.ics  
-                
-            ??? Quote "[Junior.Crypt.2025 CTF](http://ctf-spcs.mf.grsu.by/)"  
-                [![](https://ctftime.org/media/events/logo_13.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
-                **比赛名称** : [Junior.Crypt.2025 CTF](http://ctf-spcs.mf.grsu.by/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-07-01 16:00:00 - 2025-07-03 16:00:00 UTC+8  
-                **比赛权重** : 23.13  
-                **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
-                **添加日历** : https://ctftime.org/event/2798.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
