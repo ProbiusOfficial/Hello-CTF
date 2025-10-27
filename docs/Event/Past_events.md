@@ -21,6 +21,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Iran Tech Olympics Attack-Defense 2025](https://ctf.olympics.tech/)"  
+    [![](https://ctftime.org/media/events/3bfa72e3e10491d8b3bd43a8153aad1e.jpg){ width="200" align=left }](https://ctf.olympics.tech/)  
+    **比赛名称** : [Iran Tech Olympics Attack-Defense 2025](https://ctf.olympics.tech/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2025-10-27 14:30:00 - 2025-10-28 02:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+    **添加日历** : https://ctftime.org/event/2929.ics  
+    
 ??? Quote "[SAS CTF 2025 Finals](https://ctf.thesascon.com/)"  
     [![](https://ctftime.org/media/events/SAS25_new_1.png){ width="200" align=left }](https://ctf.thesascon.com/)  
     **比赛名称** : [SAS CTF 2025 Finals](https://ctf.thesascon.com/)  
@@ -911,13 +920,4 @@ comments: true
     **比赛权重** : 24.50  
     **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
     **添加日历** : https://ctftime.org/event/2731.ics  
-    
-??? Quote "[CubeCTF](https://cubectf.com/)"  
-    [![](https://ctftime.org/media/events/CubeMasteryLogo.png){ width="200" align=left }](https://cubectf.com/)  
-    **比赛名称** : [CubeCTF](https://cubectf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-07-05 06:16:00 - 2025-07-07 08:25:00 UTC+8  
-    **比赛权重** : 24.72  
-    **赛事主办** : CubeMastery (https://ctftime.org/team/168744)  
-    **添加日历** : https://ctftime.org/event/2820.ics  
     
