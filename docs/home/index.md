@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Iran Tech Olympics Speed-Run CTF 2025](https://ctf.olympics.tech/)"  
-            [![](https://ctftime.org/media/events/3bfa72e3e10491d8b3bd43a8153aad1e_1.jpg){ width="200" align=left }](https://ctf.olympics.tech/)  
-            **比赛名称** : [Iran Tech Olympics Speed-Run CTF 2025](https://ctf.olympics.tech/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-10-28 14:30:00 - 2025-10-28 14:30:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-            **添加日历** : https://ctftime.org/event/2931.ics  
-            
         ??? Quote "[Iran Tech Olympics Hardware Security 2025](https://ctf.olympics.tech/)"  
             [![](https://ctftime.org/media/events/3bfa72e3e10491d8b3bd43a8153aad1e_2.jpg){ width="200" align=left }](https://ctf.olympics.tech/)  
             **比赛名称** : [Iran Tech Olympics Hardware Security 2025](https://ctf.olympics.tech/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : V1t (https://ctftime.org/team/280950)  
             **添加日历** : https://ctftime.org/event/2920.ics  
+            
+        ??? Quote "[Haunted Pumpkin CTF '25](https://osintswitzerland.ch/events/haunted-pumpkin-ctf)"  
+            [![](https://ctftime.org/media/events/IMG_9346.jpeg){ width="200" align=left }](https://osintswitzerland.ch/events/haunted-pumpkin-ctf)  
+            **比赛名称** : [Haunted Pumpkin CTF '25](https://osintswitzerland.ch/events/haunted-pumpkin-ctf)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-11-01 01:00:00 - 2025-11-02 06:59:59 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : OSINT Switzerland (https://ctftime.org/team/391442)  
+            **添加日历** : https://ctftime.org/event/2918.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
