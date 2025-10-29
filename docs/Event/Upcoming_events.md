@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[PH03N1X V1P3R N0V4 CTF](http://pwnctf.ro/)"  
-    [![](https://ctftime.org/media/events/CTF_logo_sex-2_1.png){ width="200" align=left }](http://pwnctf.ro/)  
-    **比赛名称** : [PH03N1X V1P3R N0V4 CTF](http://pwnctf.ro/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-10-29 18:00:00 - 2025-11-01 01:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)  
-    **添加日历** : https://ctftime.org/event/2934.ics  
-    
 ??? Quote "[V1t CTF 2025](https://ctf.v1t.site/)"  
     [![](https://ctftime.org/media/events/Ban_sao_cua_V1T.png){ width="200" align=left }](https://ctf.v1t.site/)  
     **比赛名称** : [V1t CTF 2025](https://ctf.v1t.site/)  
