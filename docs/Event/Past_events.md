@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Iran Tech Olympics Hardware Security 2025](https://ctf.olympics.tech/)"  
+    [![](https://ctftime.org/media/events/3bfa72e3e10491d8b3bd43a8153aad1e_2.jpg){ width="200" align=left }](https://ctf.olympics.tech/)  
+    **比赛名称** : [Iran Tech Olympics Hardware Security 2025](https://ctf.olympics.tech/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-10-29 14:30:00 - 2025-10-30 02:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+    **添加日历** : https://ctftime.org/event/2930.ics  
+    
 ??? Quote "[Iran Tech Olympics Speed-Run CTF 2025](https://ctf.olympics.tech/)"  
     [![](https://ctftime.org/media/events/3bfa72e3e10491d8b3bd43a8153aad1e_1.jpg){ width="200" align=left }](https://ctf.olympics.tech/)  
     **比赛名称** : [Iran Tech Olympics Speed-Run CTF 2025](https://ctf.olympics.tech/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 23.39  
     **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
     **添加日历** : https://ctftime.org/event/2818.ics  
-    
-??? Quote "[Impossible Mission Force Capture The Flag](https://missionimpossiblectf2025.vercel.app/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://missionimpossiblectf2025.vercel.app/)  
-    **比赛名称** : [Impossible Mission Force Capture The Flag](https://missionimpossiblectf2025.vercel.app/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-07-05 15:00:00 - 2025-07-07 04:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : IMFCTF (https://ctftime.org/team/389648)  
-    **添加日历** : https://ctftime.org/event/2831.ics  
     
