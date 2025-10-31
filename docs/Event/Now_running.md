@@ -27,3 +27,12 @@ comments: true
     **赛事主办** : PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)  
     **添加日历** : https://ctftime.org/event/2934.ics  
     
+??? Quote "[V1t CTF 2025](https://ctf.v1t.site/)"  
+    [![](https://ctftime.org/media/events/Ban_sao_cua_V1T.png){ width="200" align=left }](https://ctf.v1t.site/)  
+    **比赛名称** : [V1t CTF 2025](https://ctf.v1t.site/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-10-31 21:00:00 - 2025-11-02 21:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : V1t (https://ctftime.org/team/280950)  
+    **添加日历** : https://ctftime.org/event/2920.ics  
+    
