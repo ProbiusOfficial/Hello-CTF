@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[PH03N1X V1P3R N0V4 CTF](http://pwnctf.ro/)"  
+    [![](https://ctftime.org/media/events/CTF_logo_sex-2_1.png){ width="200" align=left }](http://pwnctf.ro/)  
+    **比赛名称** : [PH03N1X V1P3R N0V4 CTF](http://pwnctf.ro/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-10-29 18:00:00 - 2025-11-01 01:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)  
+    **添加日历** : https://ctftime.org/event/2934.ics  
+    
 ??? Quote "[Iran Tech Olympics Hardware Security 2025](https://ctf.olympics.tech/)"  
     [![](https://ctftime.org/media/events/3bfa72e3e10491d8b3bd43a8153aad1e_2.jpg){ width="200" align=left }](https://ctf.olympics.tech/)  
     **比赛名称** : [Iran Tech Olympics Hardware Security 2025](https://ctf.olympics.tech/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Super_Hacker (https://ctftime.org/team/195477)  
     **添加日历** : https://ctftime.org/event/2825.ics  
-    
-??? Quote "[No Hack No CTF 2025](https://nhnc.ic3dt3a.org/)"  
-    [![](https://ctftime.org/media/events/nhnc-2025.png){ width="200" align=left }](https://nhnc.ic3dt3a.org/)  
-    **比赛名称** : [No Hack No CTF 2025](https://nhnc.ic3dt3a.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-07-05 16:00:00 - 2025-07-07 16:00:00 UTC+8  
-    **比赛权重** : 23.39  
-    **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
-    **添加日历** : https://ctftime.org/event/2818.ics  
     

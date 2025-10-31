@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Haunted Pumpkin CTF '25](https://osintswitzerland.ch/events/haunted-pumpkin-ctf)"  
-                [![](https://ctftime.org/media/events/IMG_9346.jpeg){ width="200" align=left }](https://osintswitzerland.ch/events/haunted-pumpkin-ctf)  
-                **比赛名称** : [Haunted Pumpkin CTF '25](https://osintswitzerland.ch/events/haunted-pumpkin-ctf)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-01 01:00:00 - 2025-11-02 06:59:59 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : OSINT Switzerland (https://ctftime.org/team/391442)  
-                **添加日历** : https://ctftime.org/event/2918.ics  
-                
             ??? Quote "[Hackloween 2025](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)"  
                 [![](https://ctftime.org/media/events/SPG_Hackloween_2025__FB_Profile.png){ width="200" align=left }](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)  
                 **比赛名称** : [Hackloween 2025](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)  
@@ -644,15 +635,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2904.ics  
                 
-            ??? Quote "[PH03N1X V1P3R N0V4 CTF](http://pwnctf.ro/)"  
-                [![](https://ctftime.org/media/events/CTF_logo_sex-2_1.png){ width="200" align=left }](http://pwnctf.ro/)  
-                **比赛名称** : [PH03N1X V1P3R N0V4 CTF](http://pwnctf.ro/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-29 18:00:00 - 2025-11-01 01:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)  
-                **添加日历** : https://ctftime.org/event/2934.ics  
-                
             ??? Quote "[V1t CTF 2025](https://ctf.v1t.site/)"  
                 [![](https://ctftime.org/media/events/Ban_sao_cua_V1T.png){ width="200" align=left }](https://ctf.v1t.site/)  
                 **比赛名称** : [V1t CTF 2025](https://ctf.v1t.site/)  
@@ -661,6 +643,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : V1t (https://ctftime.org/team/280950)  
                 **添加日历** : https://ctftime.org/event/2920.ics  
+                
+            ??? Quote "[Haunted Pumpkin CTF '25](https://osintswitzerland.ch/events/haunted-pumpkin-ctf)"  
+                [![](https://ctftime.org/media/events/IMG_9346.jpeg){ width="200" align=left }](https://osintswitzerland.ch/events/haunted-pumpkin-ctf)  
+                **比赛名称** : [Haunted Pumpkin CTF '25](https://osintswitzerland.ch/events/haunted-pumpkin-ctf)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-01 01:00:00 - 2025-11-02 06:59:59 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : OSINT Switzerland (https://ctftime.org/team/391442)  
+                **添加日历** : https://ctftime.org/event/2918.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -672,6 +663,15 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
+            ??? Quote "[PH03N1X V1P3R N0V4 CTF](http://pwnctf.ro/)"  
+                [![](https://ctftime.org/media/events/CTF_logo_sex-2_1.png){ width="200" align=left }](http://pwnctf.ro/)  
+                **比赛名称** : [PH03N1X V1P3R N0V4 CTF](http://pwnctf.ro/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-10-29 18:00:00 - 2025-11-01 01:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)  
+                **添加日历** : https://ctftime.org/event/2934.ics  
+                
             ??? Quote "[Iran Tech Olympics Hardware Security 2025](https://ctf.olympics.tech/)"  
                 [![](https://ctftime.org/media/events/3bfa72e3e10491d8b3bd43a8153aad1e_2.jpg){ width="200" align=left }](https://ctf.olympics.tech/)  
                 **比赛名称** : [Iran Tech Olympics Hardware Security 2025](https://ctf.olympics.tech/)  
@@ -1562,15 +1562,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Super_Hacker (https://ctftime.org/team/195477)  
                 **添加日历** : https://ctftime.org/event/2825.ics  
-                
-            ??? Quote "[No Hack No CTF 2025](https://nhnc.ic3dt3a.org/)"  
-                [![](https://ctftime.org/media/events/nhnc-2025.png){ width="200" align=left }](https://nhnc.ic3dt3a.org/)  
-                **比赛名称** : [No Hack No CTF 2025](https://nhnc.ic3dt3a.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-07-05 16:00:00 - 2025-07-07 16:00:00 UTC+8  
-                **比赛权重** : 23.39  
-                **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
-                **添加日历** : https://ctftime.org/event/2818.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
