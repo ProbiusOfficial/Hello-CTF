@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Haunted Pumpkin CTF '25](https://osintswitzerland.ch/events/haunted-pumpkin-ctf)"  
+    [![](https://ctftime.org/media/events/IMG_9346.jpeg){ width="200" align=left }](https://osintswitzerland.ch/events/haunted-pumpkin-ctf)  
+    **比赛名称** : [Haunted Pumpkin CTF '25](https://osintswitzerland.ch/events/haunted-pumpkin-ctf)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-01 01:00:00 - 2025-11-02 06:59:59 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : OSINT Switzerland (https://ctftime.org/team/391442)  
+    **添加日历** : https://ctftime.org/event/2918.ics  
+    
 ??? Quote "[PH03N1X V1P3R N0V4 CTF](http://pwnctf.ro/)"  
     [![](https://ctftime.org/media/events/CTF_logo_sex-2_1.png){ width="200" align=left }](http://pwnctf.ro/)  
     **比赛名称** : [PH03N1X V1P3R N0V4 CTF](http://pwnctf.ro/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 23.20  
     **赛事主办** : BlitzHack (https://ctftime.org/team/307415)  
     **添加日历** : https://ctftime.org/event/2816.ics  
-    
-??? Quote "[Cyber Arena](https://csem.sturtles.in/events/1/)"  
-    [![](https://ctftime.org/media/events/logo_111.png){ width="200" align=left }](https://csem.sturtles.in/events/1/)  
-    **比赛名称** : [Cyber Arena](https://csem.sturtles.in/events/1/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-07-05 18:04:15 - 2025-07-06 18:04:15 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Super_Hacker (https://ctftime.org/team/195477)  
-    **添加日历** : https://ctftime.org/event/2825.ics  
     

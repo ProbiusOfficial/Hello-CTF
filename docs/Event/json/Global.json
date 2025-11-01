@@ -444,18 +444,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Haunted Pumpkin CTF '25",
-        "比赛时间": "2025-11-01 01:00:00 - 2025-11-02 06:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2918.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://osintswitzerland.ch/events/haunted-pumpkin-ctf",
-        "比赛标志": "https://ctftime.org/media/events/IMG_9346.jpeg",
-        "比赛权重": "0.00",
-        "赛事主办": "OSINT Switzerland (https://ctftime.org/team/391442)",
-        "比赛ID": "1407",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Hackloween 2025",
         "比赛时间": "2025-11-01 10:00:00 - 2025-11-02 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2914.ics",
@@ -478,6 +466,18 @@
         "赛事主办": "Nu1L (https://ctftime.org/team/19208)",
         "比赛ID": "240",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Haunted Pumpkin CTF '25",
+        "比赛时间": "2025-11-01 01:00:00 - 2025-11-02 06:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/2918.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://osintswitzerland.ch/events/haunted-pumpkin-ctf",
+        "比赛标志": "https://ctftime.org/media/events/IMG_9346.jpeg",
+        "比赛权重": "0.00",
+        "赛事主办": "OSINT Switzerland (https://ctftime.org/team/391442)",
+        "比赛ID": "1407",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "PH03N1X V1P3R N0V4 CTF",
@@ -1665,18 +1665,6 @@
         "比赛权重": "23.20",
         "赛事主办": "BlitzHack (https://ctftime.org/team/307415)",
         "比赛ID": "1144",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Cyber Arena",
-        "比赛时间": "2025-07-05 18:04:15 - 2025-07-06 18:04:15 UTC+8",
-        "添加日历": "https://ctftime.org/event/2825.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://csem.sturtles.in/events/1/",
-        "比赛标志": "https://ctftime.org/media/events/logo_111.png",
-        "比赛权重": "0",
-        "赛事主办": "Super_Hacker (https://ctftime.org/team/195477)",
-        "比赛ID": "1354",
         "比赛状态": "past"
     }
 ]
