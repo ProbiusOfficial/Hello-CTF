@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "N1CTF 2025",
-        "比赛时间": "2025-11-01 20:00:00 - 2025-11-02 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2795.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf2025.nu1l.com/",
-        "比赛标志": "https://ctftime.org/media/events/logo2_5_2.png",
-        "比赛权重": "94.50",
-        "赛事主办": "Nu1L (https://ctftime.org/team/19208)",
-        "比赛ID": "240",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "CTF@AC - Finals",
         "比赛时间": "2025-11-07 23:00:00 - 2025-11-09 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2921.ics",
@@ -477,6 +465,18 @@
         "比赛权重": "0",
         "赛事主办": "SECPlayground (https://ctftime.org/team/375409)",
         "比赛ID": "1291",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "N1CTF 2025",
+        "比赛时间": "2025-11-01 20:00:00 - 2025-11-02 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2795.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf2025.nu1l.com/",
+        "比赛标志": "https://ctftime.org/media/events/logo2_5_2.png",
+        "比赛权重": "94.50",
+        "赛事主办": "Nu1L (https://ctftime.org/team/19208)",
+        "比赛ID": "240",
         "比赛状态": "nowrunning"
     },
     {
