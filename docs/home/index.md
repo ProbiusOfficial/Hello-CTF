@@ -63,9 +63,9 @@ hide:
             **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
             **添加日历** : https://ctftime.org/event/2921.ics  
             
-        ??? Quote "[Infobahn CTF 2025](http://infobahnc.tf/)"  
-            [![](https://ctftime.org/media/events/mW45GaxJ_400x400.jpg){ width="200" align=left }](http://infobahnc.tf/)  
-            **比赛名称** : [Infobahn CTF 2025](http://infobahnc.tf/)  
+        ??? Quote "[Infobahn CTF 2025](https://2025.infobahnc.tf/)"  
+            [![](https://ctftime.org/media/events/mW45GaxJ_400x400.jpg){ width="200" align=left }](https://2025.infobahnc.tf/)  
+            **比赛名称** : [Infobahn CTF 2025](https://2025.infobahnc.tf/)  
             **比赛形式** : Jeopardy  
             **比赛时间** : 2025-11-08 01:00:00 - 2025-11-10 01:00:00 UTC+8  
             **比赛权重** : 0.00  
