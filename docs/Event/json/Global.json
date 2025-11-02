@@ -444,18 +444,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Hackloween 2025",
-        "比赛时间": "2025-11-01 10:00:00 - 2025-11-02 10:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2914.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76",
-        "比赛标志": "https://ctftime.org/media/events/SPG_Hackloween_2025__FB_Profile.png",
-        "比赛权重": "0",
-        "赛事主办": "SECPlayground (https://ctftime.org/team/375409)",
-        "比赛ID": "1291",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "N1CTF 2025",
         "比赛时间": "2025-11-01 20:00:00 - 2025-11-02 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2795.ics",
@@ -466,6 +454,18 @@
         "赛事主办": "Nu1L (https://ctftime.org/team/19208)",
         "比赛ID": "240",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Hackloween 2025",
+        "比赛时间": "2025-11-01 10:00:00 - 2025-11-02 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2914.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76",
+        "比赛标志": "https://ctftime.org/media/events/SPG_Hackloween_2025__FB_Profile.png",
+        "比赛权重": "0",
+        "赛事主办": "SECPlayground (https://ctftime.org/team/375409)",
+        "比赛ID": "1291",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Haunted Pumpkin CTF '25",
@@ -1653,18 +1653,6 @@
         "比赛权重": "0",
         "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
         "比赛ID": "1163",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BlitzCTF",
-        "比赛时间": "2025-07-05 22:30:00 - 2025-07-07 10:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2816.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.blitzhack.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/BlitzCTF.webp",
-        "比赛权重": "23.20",
-        "赛事主办": "BlitzHack (https://ctftime.org/team/307415)",
-        "比赛ID": "1144",
         "比赛状态": "past"
     }
 ]
