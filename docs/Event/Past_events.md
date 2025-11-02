@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[N1CTF 2025](https://ctf2025.nu1l.com/)"  
+    [![](https://ctftime.org/media/events/logo2_5_2.png){ width="200" align=left }](https://ctf2025.nu1l.com/)  
+    **比赛名称** : [N1CTF 2025](https://ctf2025.nu1l.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-01 20:00:00 - 2025-11-02 20:00:00 UTC+8  
+    **比赛权重** : 94.50  
+    **赛事主办** : Nu1L (https://ctftime.org/team/19208)  
+    **添加日历** : https://ctftime.org/event/2795.ics  
+    
 ??? Quote "[Hackloween 2025](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)"  
     [![](https://ctftime.org/media/events/SPG_Hackloween_2025__FB_Profile.png){ width="200" align=left }](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)  
     **比赛名称** : [Hackloween 2025](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)  
@@ -31,6 +40,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : OSINT Switzerland (https://ctftime.org/team/391442)  
     **添加日历** : https://ctftime.org/event/2918.ics  
+    
+??? Quote "[V1t CTF 2025](https://ctf.v1t.site/)"  
+    [![](https://ctftime.org/media/events/Ban_sao_cua_V1T.png){ width="200" align=left }](https://ctf.v1t.site/)  
+    **比赛名称** : [V1t CTF 2025](https://ctf.v1t.site/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-10-31 21:00:00 - 2025-11-02 21:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : V1t (https://ctftime.org/team/280950)  
+    **添加日历** : https://ctftime.org/event/2920.ics  
     
 ??? Quote "[PH03N1X V1P3R N0V4 CTF](http://pwnctf.ro/)"  
     [![](https://ctftime.org/media/events/CTF_logo_sex-2_1.png){ width="200" align=left }](http://pwnctf.ro/)  
@@ -895,22 +913,4 @@ comments: true
     **比赛权重** : 24.43  
     **赛事主办** : L3ak (https://ctftime.org/team/220336)  
     **添加日历** : https://ctftime.org/event/2629.ics  
-    
-??? Quote "[CTF Cybercamp UMU 3.0](https://eventos.um.es/go/ctf-cybercampumu-3)"  
-    [![](https://ctftime.org/media/events/banner_ctf_cybercamp_1.png){ width="200" align=left }](https://eventos.um.es/go/ctf-cybercampumu-3)  
-    **比赛名称** : [CTF Cybercamp UMU 3.0](https://eventos.um.es/go/ctf-cybercampumu-3)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-07-11 23:00:00 - 2025-07-14 06:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Offensive Skills (https://ctftime.org/team/389597)  
-    **添加日历** : https://ctftime.org/event/2830.ics  
-    
-??? Quote "[AlpacaHack Round 12 (Crypto)](https://alpacahack.com/ctfs/round-12)"  
-    [![](https://ctftime.org/media/events/ctftime_11.png){ width="200" align=left }](https://alpacahack.com/ctfs/round-12)  
-    **比赛名称** : [AlpacaHack Round 12 (Crypto)](https://alpacahack.com/ctfs/round-12)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-07-06 11:00:00 - 2025-07-06 17:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
-    **添加日历** : https://ctftime.org/event/2805.ics  
     

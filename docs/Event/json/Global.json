@@ -432,18 +432,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "V1t CTF 2025",
-        "比赛时间": "2025-10-31 21:00:00 - 2025-11-02 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2920.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.v1t.site/",
-        "比赛标志": "https://ctftime.org/media/events/Ban_sao_cua_V1T.png",
-        "比赛权重": "0",
-        "赛事主办": "V1t (https://ctftime.org/team/280950)",
-        "比赛ID": "1403",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "N1CTF 2025",
         "比赛时间": "2025-11-01 20:00:00 - 2025-11-02 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2795.ics",
@@ -477,6 +465,18 @@
         "比赛权重": "0.00",
         "赛事主办": "OSINT Switzerland (https://ctftime.org/team/391442)",
         "比赛ID": "1407",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "V1t CTF 2025",
+        "比赛时间": "2025-10-31 21:00:00 - 2025-11-02 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2920.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.v1t.site/",
+        "比赛标志": "https://ctftime.org/media/events/Ban_sao_cua_V1T.png",
+        "比赛权重": "0",
+        "赛事主办": "V1t (https://ctftime.org/team/280950)",
+        "比赛ID": "1403",
         "比赛状态": "past"
     },
     {
@@ -1629,18 +1629,6 @@
         "比赛权重": "24.43",
         "赛事主办": "L3ak (https://ctftime.org/team/220336)",
         "比赛ID": "1077",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CTF Cybercamp UMU 3.0",
-        "比赛时间": "2025-07-11 23:00:00 - 2025-07-14 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2830.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://eventos.um.es/go/ctf-cybercampumu-3",
-        "比赛标志": "https://ctftime.org/media/events/banner_ctf_cybercamp_1.png",
-        "比赛权重": "0",
-        "赛事主办": "Offensive Skills (https://ctftime.org/team/389597)",
-        "比赛ID": "1350",
         "比赛状态": "past"
     }
 ]
