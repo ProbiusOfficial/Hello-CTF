@@ -84,7 +84,7 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Curiosity CTF 2025",
+        "比赛名称": "Curiosity CTF 2025 [POSTPONED]",
         "比赛时间": "2025-11-15 04:00:00 - 2025-11-17 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2899.ics",
         "比赛形式": "Jeopardy",
@@ -453,7 +453,7 @@
         "比赛权重": "94.50",
         "赛事主办": "Nu1L (https://ctftime.org/team/19208)",
         "比赛ID": "240",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Hackloween 2025",
@@ -1641,18 +1641,6 @@
         "比赛权重": "0",
         "赛事主办": "Offensive Skills (https://ctftime.org/team/389597)",
         "比赛ID": "1350",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "AlpacaHack Round 12 (Crypto)",
-        "比赛时间": "2025-07-06 11:00:00 - 2025-07-06 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2805.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://alpacahack.com/ctfs/round-12",
-        "比赛标志": "https://ctftime.org/media/events/ctftime_11.png",
-        "比赛权重": "0",
-        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
-        "比赛ID": "1163",
         "比赛状态": "past"
     }
 ]
