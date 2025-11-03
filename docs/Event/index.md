@@ -722,7 +722,7 @@ hide:
                 **比赛名称** : [osu!gaming CTF 2025](https://osugaming.sekai.team/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-10-25 10:00:00 - 2025-10-27 10:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 21.56  
                 **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
                 **添加日历** : https://ctftime.org/event/2801.ics  
                 
