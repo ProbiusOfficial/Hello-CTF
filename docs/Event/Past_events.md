@@ -109,7 +109,7 @@ comments: true
     **比赛名称** : [osu!gaming CTF 2025](https://osugaming.sekai.team/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-10-25 10:00:00 - 2025-10-27 10:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 21.56  
     **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
     **添加日历** : https://ctftime.org/event/2801.ics  
     
@@ -473,9 +473,9 @@ comments: true
     **赛事主办** : 0bscuri7y (https://ctftime.org/team/370140)  
     **添加日历** : https://ctftime.org/event/2848.ics  
     
-??? Quote "[[DELAYED] CSAW CTF Qualification Round 2025](https://ctf.csaw.io/)"  
+??? Quote "[CSAW CTF Qualification Round 2025](https://ctf.csaw.io/)"  
     [![](https://ctftime.org/media/events/csaw-stars.png){ width="200" align=left }](https://ctf.csaw.io/)  
-    **比赛名称** : [[DELAYED] CSAW CTF Qualification Round 2025](https://ctf.csaw.io/)  
+    **比赛名称** : [CSAW CTF Qualification Round 2025](https://ctf.csaw.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-09-13 00:00:00 - 2025-09-15 00:00:00 UTC+8  
     **比赛权重** : 16.47  

@@ -1,5 +1,17 @@
 [
     {
+        "比赛名称": "CSAW CTF Final Round 2025",
+        "比赛时间": "2025-11-07 01:00:00 - 2025-11-08 13:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2982.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.csaw.io/",
+        "比赛标志": "https://ctftime.org/media/events/csaw-stars_1.png",
+        "比赛权重": "25.00",
+        "赛事主办": "NYUSEC (https://ctftime.org/team/439)",
+        "比赛ID": "19",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "CTF@AC - Finals",
         "比赛时间": "2025-11-07 23:00:00 - 2025-11-09 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2921.ics",
@@ -1044,7 +1056,7 @@
         "比赛状态": "past"
     },
     {
-        "比赛名称": "[DELAYED] CSAW CTF Qualification Round 2025",
+        "比赛名称": "CSAW CTF Qualification Round 2025",
         "比赛时间": "2025-09-13 00:00:00 - 2025-09-15 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2903.ics",
         "比赛形式": "Jeopardy",
