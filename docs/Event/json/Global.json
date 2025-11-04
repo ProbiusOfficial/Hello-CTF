@@ -96,18 +96,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Curiosity CTF 2025 [POSTPONED]",
-        "比赛时间": "2025-11-15 04:00:00 - 2025-11-17 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2899.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://2025.curiosityctf.xyz/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Curioѕity (https://ctftime.org/team/392973)",
-        "比赛ID": "1383",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "TU Delft CTF 2025",
         "比赛时间": "2025-11-15 16:00:00 - 2025-11-16 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2953.ics",

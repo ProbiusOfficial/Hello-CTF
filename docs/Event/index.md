@@ -361,15 +361,6 @@ hide:
                 **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
                 **添加日历** : https://ctftime.org/event/2844.ics  
                 
-            ??? Quote "[Curiosity CTF 2025 [POSTPONED]](http://2025.curiosityctf.xyz/)"  
-                [![](https://ctftime.org){ width="200" align=left }](http://2025.curiosityctf.xyz/)  
-                **比赛名称** : [Curiosity CTF 2025 [POSTPONED]](http://2025.curiosityctf.xyz/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-15 04:00:00 - 2025-11-17 04:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Curioѕity (https://ctftime.org/team/392973)  
-                **添加日历** : https://ctftime.org/event/2899.ics  
-                
             ??? Quote "[TU Delft CTF 2025](https://ctf.ewi.tudelft.nl/?source=ctftime)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.ewi.tudelft.nl/?source=ctftime)  
                 **比赛名称** : [TU Delft CTF 2025](https://ctf.ewi.tudelft.nl/?source=ctftime)  
