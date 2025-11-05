@@ -72,6 +72,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "M*CTF 2025 Junior Quals",
+        "比赛时间": "2025-11-09 17:00:00 - 2025-11-10 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2995.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://mctf.mtuci.ru/",
+        "比赛标志": "https://ctftime.org/media/events/logo_14.jpg",
+        "比赛权重": "36.00",
+        "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
+        "比赛ID": "164",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "POC CTF Final 2025",
         "比赛时间": "2025-11-14 07:00:00 - 2025-11-14 14:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2956.ics",
@@ -141,6 +153,18 @@
         "比赛权重": "23.92",
         "赛事主办": "PwnSec (https://ctftime.org/team/28797)",
         "比赛ID": "1150",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "M*CTF 2025 Quals",
+        "比赛时间": "2025-11-16 17:00:00 - 2025-11-17 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2996.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://mctf.mtuci.ru/",
+        "比赛标志": "https://ctftime.org/media/events/logo_15.jpg",
+        "比赛权重": "45.64",
+        "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
+        "比赛ID": "165",
         "比赛状态": "oncoming"
     },
     {
@@ -535,7 +559,7 @@
         "比赛链接": "https://ctf.thesascon.com/",
         "比赛标志": "https://ctftime.org/media/events/SAS25_new_1.png",
         "比赛权重": "25.00",
-        "赛事主办": "SAS CREW (https://ctftime.org/team/283057)",
+        "赛事主办": "Drovosec, SAS CREW (https://ctftime.org/team/210132, https://ctftime.org/team/283057)",
         "比赛ID": "1081",
         "比赛状态": "past"
     },

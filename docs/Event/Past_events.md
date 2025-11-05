@@ -92,7 +92,7 @@ comments: true
     **比赛形式** : Attack-Defense  
     **比赛时间** : 2025-10-26 11:00:00 - 2025-10-26 22:00:00 UTC+8  
     **比赛权重** : 25.00  
-    **赛事主办** : SAS CREW (https://ctftime.org/team/283057)  
+    **赛事主办** : Drovosec, SAS CREW (https://ctftime.org/team/210132, https://ctftime.org/team/283057)  
     **添加日历** : https://ctftime.org/event/2811.ics  
     
 ??? Quote "[DEADFACE CTF 2025](https://ctf.deadface.io/)"  
