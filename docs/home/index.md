@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[CSAW CTF Final Round 2025](https://ctf.csaw.io/)"  
-            [![](https://ctftime.org/media/events/csaw-stars_1.png){ width="200" align=left }](https://ctf.csaw.io/)  
-            **比赛名称** : [CSAW CTF Final Round 2025](https://ctf.csaw.io/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-11-07 01:00:00 - 2025-11-08 13:00:00 UTC+8  
-            **比赛权重** : 25.00  
-            **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
-            **添加日历** : https://ctftime.org/event/2982.ics  
-            
         ??? Quote "[CTF@AC - Finals](https://ctf.ac.upt.ro/)"  
             [![](https://ctftime.org/media/events/2338e2e4033e4bf196b4e6c5f4f9b20d.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
             **比赛名称** : [CTF@AC - Finals](https://ctf.ac.upt.ro/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 50.00  
             **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
             **添加日历** : https://ctftime.org/event/2883.ics  
+            
+        ??? Quote "[Equinor CTF 2025](https://ctf.equinor.com/)"  
+            [![](https://ctftime.org/media/events/ept_2.png){ width="200" align=left }](https://ctf.equinor.com/)  
+            **比赛名称** : [Equinor CTF 2025](https://ctf.equinor.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-11-08 17:00:00 - 2025-11-09 03:00:00 UTC+8  
+            **比赛权重** : 37.00  
+            **赛事主办** : EPT (https://ctftime.org/team/119480)  
+            **添加日历** : https://ctftime.org/event/2646.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
