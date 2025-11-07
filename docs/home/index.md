@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Infobahn CTF 2025](https://2025.infobahnc.tf/)"  
-            [![](https://ctftime.org/media/events/mW45GaxJ_400x400.jpg){ width="200" align=left }](https://2025.infobahnc.tf/)  
-            **比赛名称** : [Infobahn CTF 2025](https://2025.infobahnc.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-11-08 01:00:00 - 2025-11-10 01:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Infobahn (https://ctftime.org/team/364723)  
-            **添加日历** : https://ctftime.org/event/2878.ics  
-            
         ??? Quote "[BuckeyeCTF 2025](https://ctf.osucyber.club/)"  
             [![](https://ctftime.org/media/events/buckeyectf-25-logo_1.jpg){ width="200" align=left }](https://ctf.osucyber.club/)  
             **比赛名称** : [BuckeyeCTF 2025](https://ctf.osucyber.club/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 97.22  
             **赛事主办** : saarsec (https://ctftime.org/team/15337)  
             **添加日历** : https://ctftime.org/event/2859.ics  
+            
+        ??? Quote "[M*CTF 2025 Junior Quals](https://mctf.mtuci.ru/)"  
+            [![](https://ctftime.org/media/events/logo_14.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
+            **比赛名称** : [M*CTF 2025 Junior Quals](https://mctf.mtuci.ru/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-11-09 17:00:00 - 2025-11-10 05:00:00 UTC+8  
+            **比赛权重** : 36.00  
+            **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
+            **添加日历** : https://ctftime.org/event/2995.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
