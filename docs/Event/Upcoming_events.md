@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[CTF@AC - Finals](https://ctf.ac.upt.ro/)"  
-    [![](https://ctftime.org/media/events/2338e2e4033e4bf196b4e6c5f4f9b20d.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
-    **比赛名称** : [CTF@AC - Finals](https://ctf.ac.upt.ro/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-07 23:00:00 - 2025-11-09 17:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
-    **添加日历** : https://ctftime.org/event/2921.ics  
-    
 ??? Quote "[Infobahn CTF 2025](https://2025.infobahnc.tf/)"  
     [![](https://ctftime.org/media/events/mW45GaxJ_400x400.jpg){ width="200" align=left }](https://2025.infobahnc.tf/)  
     **比赛名称** : [Infobahn CTF 2025](https://2025.infobahnc.tf/)  

@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[CTF@AC - Finals](https://ctf.ac.upt.ro/)"  
-            [![](https://ctftime.org/media/events/2338e2e4033e4bf196b4e6c5f4f9b20d.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
-            **比赛名称** : [CTF@AC - Finals](https://ctf.ac.upt.ro/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-11-07 23:00:00 - 2025-11-09 17:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
-            **添加日历** : https://ctftime.org/event/2921.ics  
-            
         ??? Quote "[Infobahn CTF 2025](https://2025.infobahnc.tf/)"  
             [![](https://ctftime.org/media/events/mW45GaxJ_400x400.jpg){ width="200" align=left }](https://2025.infobahnc.tf/)  
             **比赛名称** : [Infobahn CTF 2025](https://2025.infobahnc.tf/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 37.00  
             **赛事主办** : EPT (https://ctftime.org/team/119480)  
             **添加日历** : https://ctftime.org/event/2646.ics  
+            
+        ??? Quote "[saarCTF 2025](https://ctf.saarland/)"  
+            [![](https://ctftime.org/media/events/saarctf_2025.png){ width="200" align=left }](https://ctf.saarland/)  
+            **比赛名称** : [saarCTF 2025](https://ctf.saarland/)  
+            **比赛形式** : Attack-Defense  
+            **比赛时间** : 2025-11-08 21:00:00 - 2025-11-09 06:00:00 UTC+8  
+            **比赛权重** : 97.22  
+            **赛事主办** : saarsec (https://ctftime.org/team/15337)  
+            **添加日历** : https://ctftime.org/event/2859.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

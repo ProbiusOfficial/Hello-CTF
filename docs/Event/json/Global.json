@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "CTF@AC - Finals",
-        "比赛时间": "2025-11-07 23:00:00 - 2025-11-09 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2921.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.ac.upt.ro/",
-        "比赛标志": "https://ctftime.org/media/events/2338e2e4033e4bf196b4e6c5f4f9b20d.png",
-        "比赛权重": "0.00",
-        "赛事主办": "UPT-CTF (https://ctftime.org/team/276942)",
-        "比赛ID": "1337",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Infobahn CTF 2025",
         "比赛时间": "2025-11-08 01:00:00 - 2025-11-10 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2878.ics",
@@ -453,6 +441,18 @@
         "比赛权重": "25.00",
         "赛事主办": "NYUSEC (https://ctftime.org/team/439)",
         "比赛ID": "19",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CTF@AC - Finals",
+        "比赛时间": "2025-11-07 23:00:00 - 2025-11-09 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2921.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.ac.upt.ro/",
+        "比赛标志": "https://ctftime.org/media/events/2338e2e4033e4bf196b4e6c5f4f9b20d.png",
+        "比赛权重": "0",
+        "赛事主办": "UPT-CTF (https://ctftime.org/team/276942)",
+        "比赛ID": "1337",
         "比赛状态": "nowrunning"
     },
     {
