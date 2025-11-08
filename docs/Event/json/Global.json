@@ -312,18 +312,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Säkerhets-SM Quals",
-        "比赛时间": "2026-01-25 00:00:00 - 2026-01-26 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2945.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.sakerhetssm.se/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "Kodsport (https://ctftime.org/team/395272)",
-        "比赛ID": "1372",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Jeanne d'Hack CTF 2026 | 3ème Édition",
         "比赛时间": "2026-01-30 17:00:00 - 2026-01-31 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2941.ics",
@@ -420,18 +408,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Equinor CTF 2025",
-        "比赛时间": "2025-11-08 17:00:00 - 2025-11-09 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2646.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.equinor.com/",
-        "比赛标志": "https://ctftime.org/media/events/ept_2.png",
-        "比赛权重": "37.00",
-        "赛事主办": "EPT (https://ctftime.org/team/119480)",
-        "比赛ID": "697",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "saarCTF 2025",
         "比赛时间": "2025-11-08 21:00:00 - 2025-11-09 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2859.ics",
@@ -442,6 +418,18 @@
         "赛事主办": "saarsec (https://ctftime.org/team/15337)",
         "比赛ID": "412",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Equinor CTF 2025",
+        "比赛时间": "2025-11-08 17:00:00 - 2025-11-09 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2646.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.equinor.com/",
+        "比赛标志": "https://ctftime.org/media/events/ept_2.png",
+        "比赛权重": "37.00",
+        "赛事主办": "EPT (https://ctftime.org/team/119480)",
+        "比赛ID": "697",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "CSAW CTF Final Round 2025",
@@ -1629,18 +1617,6 @@
         "比赛权重": "23.50",
         "赛事主办": "L3H Sec (https://ctftime.org/team/75946)",
         "比赛ID": "701",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CRMA mini CTF 2025",
-        "比赛时间": "2025-07-12 01:00:00 - 2025-07-13 00:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2847.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.crma.club/",
-        "比赛标志": "https://ctftime.org/media/events/crma.png",
-        "比赛权重": "0",
-        "赛事主办": "CRMA Cyber Club (https://ctftime.org/team/167583)",
-        "比赛ID": "1364",
         "比赛状态": "past"
     }
 ]

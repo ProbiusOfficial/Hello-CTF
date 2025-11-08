@@ -45,15 +45,6 @@ comments: true
     **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
     **添加日历** : https://ctftime.org/event/2883.ics  
     
-??? Quote "[Equinor CTF 2025](https://ctf.equinor.com/)"  
-    [![](https://ctftime.org/media/events/ept_2.png){ width="200" align=left }](https://ctf.equinor.com/)  
-    **比赛名称** : [Equinor CTF 2025](https://ctf.equinor.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-08 17:00:00 - 2025-11-09 03:00:00 UTC+8  
-    **比赛权重** : 37.00  
-    **赛事主办** : EPT (https://ctftime.org/team/119480)  
-    **添加日历** : https://ctftime.org/event/2646.ics  
-    
 ??? Quote "[saarCTF 2025](https://ctf.saarland/)"  
     [![](https://ctftime.org/media/events/saarctf_2025.png){ width="200" align=left }](https://ctf.saarland/)  
     **比赛名称** : [saarCTF 2025](https://ctf.saarland/)  

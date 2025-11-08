@@ -523,15 +523,6 @@ hide:
                 **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
                 **添加日历** : https://ctftime.org/event/2916.ics  
                 
-            ??? Quote "[Säkerhets-SM Quals](https://ctf.sakerhetssm.se/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.sakerhetssm.se/)  
-                **比赛名称** : [Säkerhets-SM Quals](https://ctf.sakerhetssm.se/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-01-25 00:00:00 - 2026-01-26 00:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Kodsport (https://ctftime.org/team/395272)  
-                **添加日历** : https://ctftime.org/event/2945.ics  
-                
             ??? Quote "[Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)"  
                 [![](https://ctftime.org/media/events/LogoAlt.png){ width="200" align=left }](https://www.jeanne-hack-ctf.org/)  
                 **比赛名称** : [Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)  
@@ -608,15 +599,6 @@ hide:
                 **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
                 **添加日历** : https://ctftime.org/event/2883.ics  
                 
-            ??? Quote "[Equinor CTF 2025](https://ctf.equinor.com/)"  
-                [![](https://ctftime.org/media/events/ept_2.png){ width="200" align=left }](https://ctf.equinor.com/)  
-                **比赛名称** : [Equinor CTF 2025](https://ctf.equinor.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-08 17:00:00 - 2025-11-09 03:00:00 UTC+8  
-                **比赛权重** : 37.00  
-                **赛事主办** : EPT (https://ctftime.org/team/119480)  
-                **添加日历** : https://ctftime.org/event/2646.ics  
-                
             ??? Quote "[saarCTF 2025](https://ctf.saarland/)"  
                 [![](https://ctftime.org/media/events/saarctf_2025.png){ width="200" align=left }](https://ctf.saarland/)  
                 **比赛名称** : [saarCTF 2025](https://ctf.saarland/)  
@@ -636,6 +618,15 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
+            ??? Quote "[Equinor CTF 2025](https://ctf.equinor.com/)"  
+                [![](https://ctftime.org/media/events/ept_2.png){ width="200" align=left }](https://ctf.equinor.com/)  
+                **比赛名称** : [Equinor CTF 2025](https://ctf.equinor.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-08 17:00:00 - 2025-11-09 03:00:00 UTC+8  
+                **比赛权重** : 37.00  
+                **赛事主办** : EPT (https://ctftime.org/team/119480)  
+                **添加日历** : https://ctftime.org/event/2646.ics  
+                
             ??? Quote "[CSAW CTF Final Round 2025](https://ctf.csaw.io/)"  
                 [![](https://ctftime.org/media/events/csaw-stars_1.png){ width="200" align=left }](https://ctf.csaw.io/)  
                 **比赛名称** : [CSAW CTF Final Round 2025](https://ctf.csaw.io/)  
@@ -1526,15 +1517,6 @@ hide:
                 **比赛权重** : 23.50  
                 **赛事主办** : L3H Sec (https://ctftime.org/team/75946)  
                 **添加日历** : https://ctftime.org/event/2823.ics  
-                
-            ??? Quote "[CRMA mini CTF 2025](https://ctf.crma.club/)"  
-                [![](https://ctftime.org/media/events/crma.png){ width="200" align=left }](https://ctf.crma.club/)  
-                **比赛名称** : [CRMA mini CTF 2025](https://ctf.crma.club/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-07-12 01:00:00 - 2025-07-13 00:59:59 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : CRMA Cyber Club (https://ctftime.org/team/167583)  
-                **添加日历** : https://ctftime.org/event/2847.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
