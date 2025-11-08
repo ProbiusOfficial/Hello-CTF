@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[BuckeyeCTF 2025](https://ctf.osucyber.club/)"  
-            [![](https://ctftime.org/media/events/buckeyectf-25-logo_1.jpg){ width="200" align=left }](https://ctf.osucyber.club/)  
-            **比赛名称** : [BuckeyeCTF 2025](https://ctf.osucyber.club/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-11-08 09:00:00 - 2025-11-10 09:00:00 UTC+8  
-            **比赛权重** : 50.00  
-            **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
-            **添加日历** : https://ctftime.org/event/2883.ics  
-            
         ??? Quote "[Equinor CTF 2025](https://ctf.equinor.com/)"  
             [![](https://ctftime.org/media/events/ept_2.png){ width="200" align=left }](https://ctf.equinor.com/)  
             **比赛名称** : [Equinor CTF 2025](https://ctf.equinor.com/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 36.00  
             **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
             **添加日历** : https://ctftime.org/event/2995.ics  
+            
+        ??? Quote "[POC CTF Final 2025](https://powerofcommunity.net/2025/ctf.html)"  
+            [![](https://ctftime.org/media/events/vDP90SY4soKs6q3cKITowqXIE7a0Jy_1.png){ width="200" align=left }](https://powerofcommunity.net/2025/ctf.html)  
+            **比赛名称** : [POC CTF Final 2025](https://powerofcommunity.net/2025/ctf.html)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-11-14 07:00:00 - 2025-11-14 14:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
+            **添加日历** : https://ctftime.org/event/2956.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
