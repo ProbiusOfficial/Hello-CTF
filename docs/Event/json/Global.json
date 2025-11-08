@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "saarCTF 2025",
-        "比赛时间": "2025-11-08 21:00:00 - 2025-11-09 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2859.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://ctf.saarland/",
-        "比赛标志": "https://ctftime.org/media/events/saarctf_2025.png",
-        "比赛权重": "97.22",
-        "赛事主办": "saarsec (https://ctftime.org/team/15337)",
-        "比赛ID": "412",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "M*CTF 2025 Junior Quals",
         "比赛时间": "2025-11-09 17:00:00 - 2025-11-10 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2995.ics",
@@ -441,6 +429,18 @@
         "比赛权重": "37.00",
         "赛事主办": "EPT (https://ctftime.org/team/119480)",
         "比赛ID": "697",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "saarCTF 2025",
+        "比赛时间": "2025-11-08 21:00:00 - 2025-11-09 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2859.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://ctf.saarland/",
+        "比赛标志": "https://ctftime.org/media/events/saarctf_2025.png",
+        "比赛权重": "97.22",
+        "赛事主办": "saarsec (https://ctftime.org/team/15337)",
+        "比赛ID": "412",
         "比赛状态": "nowrunning"
     },
     {

@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[saarCTF 2025](https://ctf.saarland/)"  
-            [![](https://ctftime.org/media/events/saarctf_2025.png){ width="200" align=left }](https://ctf.saarland/)  
-            **比赛名称** : [saarCTF 2025](https://ctf.saarland/)  
-            **比赛形式** : Attack-Defense  
-            **比赛时间** : 2025-11-08 21:00:00 - 2025-11-09 06:00:00 UTC+8  
-            **比赛权重** : 97.22  
-            **赛事主办** : saarsec (https://ctftime.org/team/15337)  
-            **添加日历** : https://ctftime.org/event/2859.ics  
-            
         ??? Quote "[M*CTF 2025 Junior Quals](https://mctf.mtuci.ru/)"  
             [![](https://ctftime.org/media/events/logo_14.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
             **比赛名称** : [M*CTF 2025 Junior Quals](https://mctf.mtuci.ru/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
             **添加日历** : https://ctftime.org/event/2844.ics  
+            
+        ??? Quote "[TU Delft CTF 2025](https://ctf.ewi.tudelft.nl/?source=ctftime)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ctf.ewi.tudelft.nl/?source=ctftime)  
+            **比赛名称** : [TU Delft CTF 2025](https://ctf.ewi.tudelft.nl/?source=ctftime)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-11-15 16:00:00 - 2025-11-16 00:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : TU Delft CTF Team (https://ctftime.org/team/134822)  
+            **添加日历** : https://ctftime.org/event/2953.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
