@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Equinor CTF 2025",
-        "比赛时间": "2025-11-08 17:00:00 - 2025-11-09 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2646.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.equinor.com/",
-        "比赛标志": "https://ctftime.org/media/events/ept_2.png",
-        "比赛权重": "37.00",
-        "赛事主办": "EPT (https://ctftime.org/team/119480)",
-        "比赛ID": "697",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "saarCTF 2025",
         "比赛时间": "2025-11-08 21:00:00 - 2025-11-09 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2859.ics",
@@ -441,6 +429,18 @@
         "比赛权重": "50.00",
         "赛事主办": "scriptohio (https://ctftime.org/team/144581)",
         "比赛ID": "667",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Equinor CTF 2025",
+        "比赛时间": "2025-11-08 17:00:00 - 2025-11-09 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2646.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.equinor.com/",
+        "比赛标志": "https://ctftime.org/media/events/ept_2.png",
+        "比赛权重": "37.00",
+        "赛事主办": "EPT (https://ctftime.org/team/119480)",
+        "比赛ID": "697",
         "比赛状态": "nowrunning"
     },
     {

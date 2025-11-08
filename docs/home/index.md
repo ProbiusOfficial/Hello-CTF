@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Equinor CTF 2025](https://ctf.equinor.com/)"  
-            [![](https://ctftime.org/media/events/ept_2.png){ width="200" align=left }](https://ctf.equinor.com/)  
-            **比赛名称** : [Equinor CTF 2025](https://ctf.equinor.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-11-08 17:00:00 - 2025-11-09 03:00:00 UTC+8  
-            **比赛权重** : 37.00  
-            **赛事主办** : EPT (https://ctftime.org/team/119480)  
-            **添加日历** : https://ctftime.org/event/2646.ics  
-            
         ??? Quote "[saarCTF 2025](https://ctf.saarland/)"  
             [![](https://ctftime.org/media/events/saarctf_2025.png){ width="200" align=left }](https://ctf.saarland/)  
             **比赛名称** : [saarCTF 2025](https://ctf.saarland/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
             **添加日历** : https://ctftime.org/event/2956.ics  
+            
+        ??? Quote "[AmateursCTF 2025](https://ctf.amateurs.team/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ctf.amateurs.team/)  
+            **比赛名称** : [AmateursCTF 2025](https://ctf.amateurs.team/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-11-14 08:00:00 - 2025-11-18 08:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
+            **添加日历** : https://ctftime.org/event/2844.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
