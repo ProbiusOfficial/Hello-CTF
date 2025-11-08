@@ -417,7 +417,7 @@
         "比赛权重": "97.22",
         "赛事主办": "saarsec (https://ctftime.org/team/15337)",
         "比赛ID": "412",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Equinor CTF 2025",
@@ -1605,18 +1605,6 @@
         "比赛权重": "88.25",
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "317",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "L3HCTF 2025",
-        "比赛时间": "2025-07-12 09:00:00 - 2025-07-14 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2823.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://l3hctf2025.xctf.org.cn/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "23.50",
-        "赛事主办": "L3H Sec (https://ctftime.org/team/75946)",
-        "比赛ID": "701",
         "比赛状态": "past"
     }
 ]

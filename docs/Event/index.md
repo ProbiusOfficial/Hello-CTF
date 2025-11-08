@@ -599,15 +599,6 @@ hide:
                 **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
                 **添加日历** : https://ctftime.org/event/2883.ics  
                 
-            ??? Quote "[saarCTF 2025](https://ctf.saarland/)"  
-                [![](https://ctftime.org/media/events/saarctf_2025.png){ width="200" align=left }](https://ctf.saarland/)  
-                **比赛名称** : [saarCTF 2025](https://ctf.saarland/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2025-11-08 21:00:00 - 2025-11-09 06:00:00 UTC+8  
-                **比赛权重** : 97.22  
-                **赛事主办** : saarsec (https://ctftime.org/team/15337)  
-                **添加日历** : https://ctftime.org/event/2859.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[MoeCTF 2025](https://ctf.xidian.edu.cn/games/22)"  
@@ -618,6 +609,15 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
+            ??? Quote "[saarCTF 2025](https://ctf.saarland/)"  
+                [![](https://ctftime.org/media/events/saarctf_2025.png){ width="200" align=left }](https://ctf.saarland/)  
+                **比赛名称** : [saarCTF 2025](https://ctf.saarland/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2025-11-08 21:00:00 - 2025-11-09 06:00:00 UTC+8  
+                **比赛权重** : 97.22  
+                **赛事主办** : saarsec (https://ctftime.org/team/15337)  
+                **添加日历** : https://ctftime.org/event/2859.ics  
+                
             ??? Quote "[Equinor CTF 2025](https://ctf.equinor.com/)"  
                 [![](https://ctftime.org/media/events/ept_2.png){ width="200" align=left }](https://ctf.equinor.com/)  
                 **比赛名称** : [Equinor CTF 2025](https://ctf.equinor.com/)  
@@ -1508,15 +1508,6 @@ hide:
                 **比赛权重** : 88.25  
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/2577.ics  
-                
-            ??? Quote "[L3HCTF 2025](https://l3hctf2025.xctf.org.cn/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://l3hctf2025.xctf.org.cn/)  
-                **比赛名称** : [L3HCTF 2025](https://l3hctf2025.xctf.org.cn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-07-12 09:00:00 - 2025-07-14 09:00:00 UTC+8  
-                **比赛权重** : 23.50  
-                **赛事主办** : L3H Sec (https://ctftime.org/team/75946)  
-                **添加日历** : https://ctftime.org/event/2823.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
