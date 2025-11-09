@@ -650,7 +650,7 @@ hide:
                 **比赛名称** : [Hackloween 2025](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-11-01 10:00:00 - 2025-11-02 10:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 0.00  
                 **赛事主办** : SECPlayground (https://ctftime.org/team/375409)  
                 **添加日历** : https://ctftime.org/event/2914.ics  
                 
