@@ -32,6 +32,15 @@ comments: true
     **赛事主办** : EPT (https://ctftime.org/team/119480)  
     **添加日历** : https://ctftime.org/event/2646.ics  
     
+??? Quote "[CTF@AC - Finals](https://ctf.ac.upt.ro/)"  
+    [![](https://ctftime.org/media/events/2338e2e4033e4bf196b4e6c5f4f9b20d.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
+    **比赛名称** : [CTF@AC - Finals](https://ctf.ac.upt.ro/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-07 23:00:00 - 2025-11-09 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
+    **添加日历** : https://ctftime.org/event/2921.ics  
+    
 ??? Quote "[CSAW CTF Final Round 2025](https://ctf.csaw.io/)"  
     [![](https://ctftime.org/media/events/csaw-stars_1.png){ width="200" align=left }](https://ctf.csaw.io/)  
     **比赛名称** : [CSAW CTF Final Round 2025](https://ctf.csaw.io/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : HITCON (https://ctftime.org/team/8299)  
     **添加日历** : https://ctftime.org/event/2793.ics  
-    
-??? Quote "[Crypto CTF 2025](https://cr.yp.toc.tf/)"  
-    [![](https://ctftime.org/media/events/cryptoctf_1.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
-    **比赛名称** : [Crypto CTF 2025](https://cr.yp.toc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-07-12 14:00:00 - 2025-07-13 14:00:00 UTC+8  
-    **比赛权重** : 88.25  
-    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-    **添加日历** : https://ctftime.org/event/2577.ics  
     
