@@ -381,7 +381,7 @@
         "比赛权重": "36.00",
         "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
         "比赛ID": "164",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "saarCTF 2025",
@@ -1569,18 +1569,6 @@
         "比赛权重": "100.00",
         "赛事主办": "ENOFLAG (https://ctftime.org/team/1438)",
         "比赛ID": "24",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DownUnderCTF 2025",
-        "比赛时间": "2025-07-18 17:30:00 - 2025-07-20 17:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2669.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2025.duc.tf/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "91.66",
-        "赛事主办": "DownUnderCTF (https://ctftime.org/team/126400)",
-        "比赛ID": "481",
         "比赛状态": "past"
     }
 ]

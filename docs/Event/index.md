@@ -572,15 +572,6 @@ hide:
                 **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
                 **添加日历** : https://ctftime.org/event/2883.ics  
                 
-            ??? Quote "[M*CTF 2025 Junior Quals](https://mctf.mtuci.ru/)"  
-                [![](https://ctftime.org/media/events/logo_14.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
-                **比赛名称** : [M*CTF 2025 Junior Quals](https://mctf.mtuci.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-09 17:00:00 - 2025-11-10 05:00:00 UTC+8  
-                **比赛权重** : 36.00  
-                **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-                **添加日历** : https://ctftime.org/event/2995.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[MoeCTF 2025](https://ctf.xidian.edu.cn/games/22)"  
@@ -591,6 +582,15 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
+            ??? Quote "[M*CTF 2025 Junior Quals](https://mctf.mtuci.ru/)"  
+                [![](https://ctftime.org/media/events/logo_14.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
+                **比赛名称** : [M*CTF 2025 Junior Quals](https://mctf.mtuci.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-09 17:00:00 - 2025-11-10 05:00:00 UTC+8  
+                **比赛权重** : 36.00  
+                **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
+                **添加日历** : https://ctftime.org/event/2995.ics  
+                
             ??? Quote "[saarCTF 2025](https://ctf.saarland/)"  
                 [![](https://ctftime.org/media/events/saarctf_2025.png){ width="200" align=left }](https://ctf.saarland/)  
                 **比赛名称** : [saarCTF 2025](https://ctf.saarland/)  
@@ -1481,15 +1481,6 @@ hide:
                 **比赛权重** : 100.00  
                 **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
                 **添加日历** : https://ctftime.org/event/2796.ics  
-                
-            ??? Quote "[DownUnderCTF 2025](https://2025.duc.tf/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://2025.duc.tf/)  
-                **比赛名称** : [DownUnderCTF 2025](https://2025.duc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-07-18 17:30:00 - 2025-07-20 17:30:00 UTC+8  
-                **比赛权重** : 91.66  
-                **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
-                **添加日历** : https://ctftime.org/event/2669.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
