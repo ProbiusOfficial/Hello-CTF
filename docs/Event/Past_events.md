@@ -154,7 +154,7 @@ comments: true
     **比赛名称** : [DEADFACE CTF 2025](https://ctf.deadface.io/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-10-25 22:00:00 - 2025-10-27 08:00:00 UTC+8  
-    **比赛权重** : 35.05  
+    **比赛权重** : 35.15  
     **赛事主办** : Cyber Hacktics (https://ctftime.org/team/127017)  
     **添加日历** : https://ctftime.org/event/2912.ics  
     
@@ -766,7 +766,7 @@ comments: true
     **比赛名称** : [scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-08-16 08:00:00 - 2025-08-18 08:00:00 UTC+8  
-    **比赛权重** : 24.67  
+    **比赛权重** : 24.68  
     **赛事主办** : ScriptSorcerers (https://ctftime.org/team/284260)  
     **添加日历** : https://ctftime.org/event/2792.ics  
     
