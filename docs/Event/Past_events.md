@@ -32,6 +32,15 @@ comments: true
     **赛事主办** : EPT (https://ctftime.org/team/119480)  
     **添加日历** : https://ctftime.org/event/2646.ics  
     
+??? Quote "[Infobahn CTF 2025](https://2025.infobahnc.tf/)"  
+    [![](https://ctftime.org/media/events/mW45GaxJ_400x400.jpg){ width="200" align=left }](https://2025.infobahnc.tf/)  
+    **比赛名称** : [Infobahn CTF 2025](https://2025.infobahnc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-08 01:00:00 - 2025-11-10 01:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Infobahn (https://ctftime.org/team/364723)  
+    **添加日历** : https://ctftime.org/event/2878.ics  
+    
 ??? Quote "[CTF@AC - Finals](https://ctf.ac.upt.ro/)"  
     [![](https://ctftime.org/media/events/2338e2e4033e4bf196b4e6c5f4f9b20d.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
     **比赛名称** : [CTF@AC - Finals](https://ctf.ac.upt.ro/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 91.66  
     **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
     **添加日历** : https://ctftime.org/event/2669.ics  
-    
-??? Quote "[HITCON Cyber Range 2025 Quals](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
-    **比赛名称** : [HITCON Cyber Range 2025 Quals](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-07-18 10:00:00 - 2025-07-18 23:59:59 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : HITCON (https://ctftime.org/team/8299)  
-    **添加日历** : https://ctftime.org/event/2793.ics  
     
