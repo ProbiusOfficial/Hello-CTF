@@ -41,6 +41,15 @@ comments: true
     **赛事主办** : EPT (https://ctftime.org/team/119480)  
     **添加日历** : https://ctftime.org/event/2646.ics  
     
+??? Quote "[BuckeyeCTF 2025](https://ctf.osucyber.club/)"  
+    [![](https://ctftime.org/media/events/buckeyectf-25-logo_1.jpg){ width="200" align=left }](https://ctf.osucyber.club/)  
+    **比赛名称** : [BuckeyeCTF 2025](https://ctf.osucyber.club/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-08 09:00:00 - 2025-11-10 09:00:00 UTC+8  
+    **比赛权重** : 50.00  
+    **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
+    **添加日历** : https://ctftime.org/event/2883.ics  
+    
 ??? Quote "[Infobahn CTF 2025](https://2025.infobahnc.tf/)"  
     [![](https://ctftime.org/media/events/mW45GaxJ_400x400.jpg){ width="200" align=left }](https://2025.infobahnc.tf/)  
     **比赛名称** : [Infobahn CTF 2025](https://2025.infobahnc.tf/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 24.31  
     **赛事主办** : Tower of Hanoi (https://ctftime.org/team/300)  
     **添加日历** : https://ctftime.org/event/2833.ics  
-    
-??? Quote "[ENOWARS 9](https://9.enowars.com/)"  
-    [![](https://ctftime.org/media/events/enowars9.png){ width="200" align=left }](https://9.enowars.com/)  
-    **比赛名称** : [ENOWARS 9](https://9.enowars.com/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2025-07-19 20:00:00 - 2025-07-20 05:00:00 UTC+8  
-    **比赛权重** : 100.00  
-    **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
-    **添加日历** : https://ctftime.org/event/2796.ics  
     
