@@ -636,6 +636,15 @@ hide:
                 **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
                 **添加日历** : https://ctftime.org/event/2982.ics  
                 
+            ??? Quote "[Ctrl+Space CTF Finals](https://ctrl-space.gg/)"  
+                [![](https://ctftime.org/media/events/ctrlspace_1_1.png){ width="200" align=left }](https://ctrl-space.gg/)  
+                **比赛名称** : [Ctrl+Space CTF Finals](https://ctrl-space.gg/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-04 17:00:00 - 2025-11-06 19:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : ESA (https://ctftime.org/team/391420)  
+                **添加日历** : https://ctftime.org/event/2989.ics  
+                
             ??? Quote "[N1CTF 2025](https://ctf2025.nu1l.com/)"  
                 [![](https://ctftime.org/media/events/logo2_5_2.png){ width="200" align=left }](https://ctf2025.nu1l.com/)  
                 **比赛名称** : [N1CTF 2025](https://ctf2025.nu1l.com/)  
@@ -1463,15 +1472,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : AlpacaHack (https://ctftime.org/team/312315)  
                 **添加日历** : https://ctftime.org/event/2806.ics  
-                
-            ??? Quote "[ToH CTF 2025](https://ctf.towerofhanoi.it/)"  
-                [![](https://ctftime.org/media/events/tohctf25.jpeg){ width="200" align=left }](https://ctf.towerofhanoi.it/)  
-                **比赛名称** : [ToH CTF 2025](https://ctf.towerofhanoi.it/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-07-20 00:00:00 - 2025-07-21 00:00:00 UTC+8  
-                **比赛权重** : 24.31  
-                **赛事主办** : Tower of Hanoi (https://ctftime.org/team/300)  
-                **添加日历** : https://ctftime.org/event/2833.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
