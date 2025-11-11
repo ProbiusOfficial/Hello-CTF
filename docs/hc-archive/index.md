@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [No-FTP:高版本JDK如何通过XXE-OOB读取多行文件](https://y4tacker.github.io/2025/11/10/year/2025/11/No-FTP-%E9%AB%98%E7%89%88%E6%9C%ACJDK%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87XXE-OOB%E8%AF%BB%E5%8F%96%E5%A4%9A%E8%A1%8C%E6%96%87%E4%BB%B6/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-11-10
+
+    No-FTP:高版本JDK如何通过XXE-OOB读取多行文件写在前面在XXE（XML External Entity Injection）的实际利用中，当遇到没有回显的场景时，通常需要通过OOB（Out-of-Band）方式将数据带出。传统的XXE-OOB利用中，如果目标文件包含换行符，直接通过HTTP协议外带会因为HTTP请求格式的限制(sun.net.www.protocol.http.Htt...
     ### [强网杯S9初赛Reverse writeup](https://xia0ji233.github.io/2025/10/20/qwb2025_pre_reverse/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2025-10-20
 
@@ -149,9 +153,5 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2025-02-17
 
     今天详细了解一下 APC 到底是怎么工作的。APC挂入在 APC 挂入的时候，内核会准备一个 _KAPC 结构体，将该结构体挂入线程的 APC 队列中。KAPC结构体介绍先在 windbg 中查看一下：123456789101112131415161718kd> dt _KAPCntdll!_KAPC   +0x000 Type             : UChar   +0x001 Spare...
-    ### [某二次元开放世界冒险游戏反作弊分析报告](https://xia0ji233.github.io/2025/02/14/Game6/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-02-14
-
-    好久没碰某二次元开放世界冒险游戏了，听说新升级了反作弊，故来一探究竟，并尝试实现一些简单的功能。基本保护分析这种级别的游戏首先不考虑静态分析，直接跑起来。不出意外肯定不能直接内存读写，想附加调试器也是附加不上的，所以选择先从驱动入手，游戏加载时会加载驱动。先尝试简单的拦截，方法很多：注册 LoadImage 回调拦截，改驱动名等等等。后者比较好实现，但是运行游戏一段时间会弹窗强制退出。而如果说让保...
 
 </div>
