@@ -252,6 +252,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "HKCERT CTF 2025 (Qualifying Round)",
+        "比赛时间": "2025-12-19 16:00:00 - 2025-12-21 16:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2998.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.hkcert.org/",
+        "比赛标志": "https://ctftime.org/media/events/CTF2025.png",
+        "比赛权重": "0.00",
+        "赛事主办": "HKCERT (https://ctftime.org/team/134746)",
+        "比赛ID": "529",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "TSG CTF 2025",
         "比赛时间": "2025-12-20 15:00:00 - 2025-12-21 15:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2867.ics",
@@ -288,6 +300,30 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "RUSEC CTF 2025",
+        "比赛时间": "2026-01-09 08:00:00 - 2026-01-12 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2981.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf.rusec.club/",
+        "比赛标志": "https://ctftime.org/media/events/8ed561b45f892df2a5b105e8537794b3_1.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "HolyC (https://ctftime.org/team/226444)",
+        "比赛ID": "1143",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "UofTCTF 2026",
+        "比赛时间": "2026-01-10 08:00:00 - 2026-01-12 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2969.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.uoftctf.org/",
+        "比赛标志": "https://ctftime.org/media/events/uoftctf_logo_3000_black_1.png",
+        "比赛权重": "33.45",
+        "赛事主办": "UofTCTF (https://ctftime.org/team/139261)",
+        "比赛ID": "1052",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "2026 Embedded Capture the Flag",
         "比赛时间": "2026-01-14 20:00:00 - 2026-04-15 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2916.ics",
@@ -297,6 +333,30 @@
         "比赛权重": "0",
         "赛事主办": "ectfmitre (https://ctftime.org/team/87292)",
         "比赛ID": "364",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "SWIMMER OSINT CTF",
+        "比赛时间": "2026-01-17 11:10:00 - 2026-01-17 23:10:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2986.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://twitter.com/DIVER_OSINT_CTF",
+        "比赛标志": "https://ctftime.org/media/events/circle-white-text.png",
+        "比赛权重": "0.00",
+        "赛事主办": "diver_osint (https://ctftime.org/team/299569)",
+        "比赛ID": "1111",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Säkerhets-SM Quals 2026",
+        "比赛时间": "2026-01-25 00:00:00 - 2026-01-26 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2945.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.sakerhetssm.se/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "Kodsport (https://ctftime.org/team/395272)",
+        "比赛ID": "1372",
         "比赛状态": "oncoming"
     },
     {
