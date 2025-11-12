@@ -24,6 +24,42 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Guardians of the TI",
+        "比赛时间": "2025-11-14 17:00:00 - 2025-11-15 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3006.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf.gematik.de/",
+        "比赛标志": "https://ctftime.org/media/events/logo_guardians.png",
+        "比赛权重": "0.00",
+        "赛事主办": "H34lthineer (https://ctftime.org/team/170109)",
+        "比赛ID": "1439",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Layer7 CTF 2025",
+        "比赛时间": "2025-11-15 09:00:00 - 2025-11-16 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2990.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.layer7.kr/",
+        "比赛标志": "https://ctftime.org/media/events/white_ver.png",
+        "比赛权重": "0",
+        "赛事主办": "Layer7 CTF (https://ctftime.org/team/87286)",
+        "比赛ID": "368",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "RCTF 2025",
+        "比赛时间": "2025-11-15 10:00:00 - 2025-11-17 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2992.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://rctf.rois.team/",
+        "比赛标志": "https://ctftime.org/media/events/rois_1.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "ROIS (https://ctftime.org/team/6476)",
+        "比赛ID": "127",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "TU Delft CTF 2025",
         "比赛时间": "2025-11-15 16:00:00 - 2025-11-16 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2953.ics",
@@ -84,6 +120,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Ukrainian National CTF",
+        "比赛时间": "2025-11-20 08:00:00 - 2025-12-01 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3007.ics",
+        "比赛形式": "Hack quest",
+        "比赛链接": "https://hackenproof.com/gur-national-ctf-en",
+        "比赛标志": "https://ctftime.org/media/events/nationalCtf.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Hacken Proof (https://ctftime.org/team/411613)",
+        "比赛ID": "1444",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "snakeCTF 2025 Finals",
         "比赛时间": "2025-11-20 16:00:00 - 2025-11-23 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2994.ics",
@@ -93,6 +141,30 @@
         "比赛权重": "0.00",
         "赛事主办": "MadrHacks (https://ctftime.org/team/114509)",
         "比赛ID": "994",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Hardwear.io NL 2025 Hardware CTF",
+        "比赛时间": "2025-11-20 17:00:00 - 2025-11-21 20:50:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3002.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://hwc.tf/",
+        "比赛标志": "https://ctftime.org/media/events/logohwcolor_16.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Hardware CTF (https://ctftime.org/team/274600)",
+        "比赛ID": "1021",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "MetaCTF November 2025 Flash CTF",
+        "比赛时间": "2025-11-21 06:00:00 - 2025-11-21 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3010.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://mctf.io/nov2025",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "MetaCTF (https://ctftime.org/team/72254)",
+        "比赛ID": "500",
         "比赛状态": "oncoming"
     },
     {
@@ -108,6 +180,42 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "sknbCTF 2025",
+        "比赛时间": "2025-11-22 11:00:00 - 2025-11-23 11:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2947.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf.sknb.team/",
+        "比赛标志": "https://ctftime.org/media/events/sknb_logo.png",
+        "比赛权重": "0.00",
+        "赛事主办": "sknb (https://ctftime.org/team/355880)",
+        "比赛ID": "1416",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "CTFZone 2025 Final",
+        "比赛时间": "2025-11-22 17:00:00 - 2025-11-23 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2972.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://ctfz.zone/",
+        "比赛标志": "https://ctftime.org/media/events/aa86f826480a008ed91d88a917a0c33b_1.png",
+        "比赛权重": "96.90",
+        "赛事主办": "BIZone (https://ctftime.org/team/32190)",
+        "比赛ID": "201",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "CyberSci Regional Qualifiers 2025-26",
+        "比赛时间": "2025-11-22 23:00:00 - 2025-11-23 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2909.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cybersecuritychallenge.ca/",
+        "比赛标志": "https://ctftime.org/media/events/aa01b0217ba20e130d4605e9bf2b8e6c.jpg",
+        "比赛权重": "25.00",
+        "赛事主办": "CyberSciOrganizers (https://ctftime.org/team/157536)",
+        "比赛ID": "643",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "GlacierCTF 2025",
         "比赛时间": "2025-11-23 02:00:00 - 2025-11-24 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2714.ics",
@@ -117,6 +225,30 @@
         "比赛权重": "52.57",
         "赛事主办": "LosFuzzys (https://ctftime.org/team/8323)",
         "比赛ID": "863",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Infosec University Hackathon 2025",
+        "比赛时间": "2025-11-23 10:00:00 - 2025-11-23 15:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3008.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://syfinfosechackathon.info/",
+        "比赛标志": "https://ctftime.org/media/events/OCTOBER_INFOSEC_AWARENESS_MONTH_-_Logo.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Synchrony Infosec University Hackathon (https://ctftime.org/team/412036)",
+        "比赛ID": "1451",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "2025 Qiangwang Challenge on Cyber Mimic Defense Finals",
+        "比赛时间": "2025-11-26 12:00:00 - 2025-11-29 12:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2999.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nest.pmlabs.com.cn/#/internationalEliteChallenge",
+        "比赛标志": "https://ctftime.org/media/events/mimicoctupus.png",
+        "比赛权重": "0.00",
+        "赛事主办": "LoveFromMimic (https://ctftime.org/team/364644)",
+        "比赛ID": "1212",
         "比赛状态": "oncoming"
     },
     {
@@ -168,6 +300,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "BKISC CTF 2025",
+        "比赛时间": "2025-12-01 10:00:00 - 2025-12-02 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2927.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bkisc.com/",
+        "比赛标志": "https://ctftime.org/media/events/logo_1_1.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "BKISC (https://ctftime.org/team/199510)",
+        "比赛ID": "1390",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "BlackHat MEA CTF Final 2025",
         "比赛时间": "2025-12-02 16:00:00 - 2025-12-04 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2877.ics",
@@ -180,6 +324,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Metared Argentina 2025",
+        "比赛时间": "2025-12-04 20:00:00 - 2025-12-05 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3003.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.cert.unlp.edu.ar/",
+        "比赛标志": "https://ctftime.org/media/events/0645ac9c15c72f7be37e5ff68bafea52.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "CERTUNLP (https://ctftime.org/team/89294)",
+        "比赛ID": "1195",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Null CTF 2025",
         "比赛时间": "2025-12-05 23:00:00 - 2025-12-07 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2901.ics",
@@ -189,6 +345,30 @@
         "比赛权重": "0.00",
         "赛事主办": "r0/dev/null (https://ctftime.org/team/398024)",
         "比赛ID": "1336",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "P3rf3ctr00t CTF 2025",
+        "比赛时间": "2025-12-05 23:00:00 - 2025-12-07 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3009.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.perfectroot.wiki/",
+        "比赛标志": "https://ctftime.org/media/events/project_20240319_1256007-01.png",
+        "比赛权重": "0.00",
+        "赛事主办": "L3v3l 6 (https://ctftime.org/team/206364)",
+        "比赛ID": "1449",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "VuwCTF 2025",
+        "比赛时间": "2025-12-06 05:00:00 - 2025-12-07 12:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3012.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://2025.vuwctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/VUWCTF_logo.png",
+        "比赛权重": "0.00",
+        "赛事主办": "VuwCTF (https://ctftime.org/team/378359)",
+        "比赛ID": "1434",
         "比赛状态": "oncoming"
     },
     {
@@ -261,6 +441,18 @@
         "比赛权重": "0.00",
         "赛事主办": "HKCERT (https://ctftime.org/team/134746)",
         "比赛ID": "529",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "0CTF 2025",
+        "比赛时间": "2025-12-20 08:00:00 - 2025-12-22 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2997.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.0ops.sjtu.cn/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "0ops (https://ctftime.org/team/4419)",
+        "比赛ID": "99",
         "比赛状态": "oncoming"
     },
     {
@@ -384,6 +576,42 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "CSCG 2026",
+        "比赛时间": "2026-03-02 01:00:00 - 2026-05-02 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2907.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://play.cscg.live/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "NFITS (https://ctftime.org/team/360674)",
+        "比赛ID": "1200",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Undutmaning 2026",
+        "比赛时间": "2026-03-21 19:00:00 - 2026-03-22 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2987.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://undutmaning.se/",
+        "比赛标志": "https://ctftime.org/media/events/Undutmaning_ctfd.jpg",
+        "比赛权重": "33.00",
+        "赛事主办": "Undutmaning (https://ctftime.org/team/212504)",
+        "比赛ID": "885",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "UMassCTF 2026",
+        "比赛时间": "2026-04-11 06:00:00 - 2026-04-13 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2937.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.umasscybersec.org/",
+        "比赛标志": "https://ctftime.org/media/events/CTF_LOGO_20240401_190034_0000.jpg",
+        "比赛权重": "65.95",
+        "赛事主办": "SavedByTheShell (https://ctftime.org/team/78233)",
+        "比赛ID": "598",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Midnight Sun CTF 2026 Quals",
         "比赛时间": "2026-04-11 18:00:00 - 2026-04-12 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2773.ics",
@@ -393,6 +621,18 @@
         "比赛权重": "48.17",
         "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
         "比赛ID": "246",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "BlueHens CTF 2025",
+        "比赛时间": "2026-04-18 01:00:00 - 2026-04-19 13:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2943.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://bluehens.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/bluehens_1.png",
+        "比赛权重": "44.77",
+        "赛事主办": "Blue Hens (https://ctftime.org/team/64660)",
+        "比赛ID": "603",
         "比赛状态": "oncoming"
     },
     {
@@ -420,6 +660,18 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "RootCipher",
+        "比赛时间": "2025-11-09 21:00:00 - 2025-11-10 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2991.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://forms.thundercipher.tech/form/949b7b32-ff49-400e-9194-a91a5deeb910",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "ThunderCipher (https://ctftime.org/team/279782)",
+        "比赛ID": "1116",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "M*CTF 2025 Junior Quals",
         "比赛时间": "2025-11-09 17:00:00 - 2025-11-10 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2995.ics",
@@ -429,6 +681,18 @@
         "比赛权重": "36.00",
         "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
         "比赛ID": "164",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Cryovault Finals",
+        "比赛时间": "2025-11-09 16:00:00 - 2025-11-10 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2985.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.isfcr.pes.edu/",
+        "比赛标志": "https://ctftime.org/media/events/LOGO_1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "ISFCR PESU (https://ctftime.org/team/166645)",
+        "比赛ID": "942",
         "比赛状态": "past"
     },
     {
@@ -492,6 +756,18 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "CSCTF 2025",
+        "比赛时间": "2025-11-07 20:00:00 - 2025-11-09 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2980.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2025.chronos-security.ro/",
+        "比赛标志": "https://ctftime.org/media/events/CSCTF25-logo-bg.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Chronos Security (https://ctftime.org/team/395297)",
+        "比赛ID": "1373",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "CSAW CTF Final Round 2025",
         "比赛时间": "2025-11-07 01:00:00 - 2025-11-08 13:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2982.ics",
@@ -516,6 +792,18 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "Russian CTF Cup 2025 Qualifier",
+        "比赛时间": "2025-11-02 17:00:00 - 2025-11-03 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2993.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctfcup.ru/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "35.29",
+        "赛事主办": "ctfcup (https://ctftime.org/team/203499)",
+        "比赛ID": "864",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "N1CTF 2025",
         "比赛时间": "2025-11-01 20:00:00 - 2025-11-02 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2795.ics",
@@ -525,6 +813,18 @@
         "比赛权重": "94.50",
         "赛事主办": "Nu1L (https://ctftime.org/team/19208)",
         "比赛ID": "240",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Cryovault Quals",
+        "比赛时间": "2025-11-01 14:30:00 - 2025-11-02 14:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2984.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.isfcr.pes.edu/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "ISFCR PESU (https://ctftime.org/team/166645)",
+        "比赛ID": "942",
         "比赛状态": "past"
     },
     {
@@ -564,6 +864,18 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "ZeroDay CTF 2025",
+        "比赛时间": "2025-10-30 21:00:00 - 2025-10-31 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2988.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://register.zerologon.co.in/",
+        "比赛标志": "https://ctftime.org/media/events/IMG-20251021-WA0001.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Z3r0_l0g0n (https://ctftime.org/team/227457)",
+        "比赛ID": "1185",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "PH03N1X V1P3R N0V4 CTF",
         "比赛时间": "2025-10-29 18:00:00 - 2025-11-01 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2934.ics",
@@ -588,6 +900,18 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "CipherHunt 2.0",
+        "比赛时间": "2025-10-28 17:30:00 - 2025-10-29 22:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3005.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cipherhunt.xyz/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "CypherLock (https://ctftime.org/team/356395)",
+        "比赛ID": "1428",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "Iran Tech Olympics Speed-Run CTF 2025",
         "比赛时间": "2025-10-28 14:30:00 - 2025-10-28 14:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2931.ics",
@@ -609,6 +933,18 @@
         "比赛权重": "25.00",
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "1314",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "AltayCTF 2025",
+        "比赛时间": "2025-10-26 18:00:00 - 2025-10-27 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2979.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://university.altayctf.ru/2025",
+        "比赛标志": "https://ctftime.org/media/events/0_2.png",
+        "比赛权重": "25.00",
+        "赛事主办": "SharLike (https://ctftime.org/team/16172)",
+        "比赛ID": "111",
         "比赛状态": "past"
     },
     {
@@ -780,6 +1116,18 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "GaianSpace CTF 2025",
+        "比赛时间": "2025-10-13 22:00:00 - 2025-10-13 22:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2732.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://gaian.space/ctf",
+        "比赛标志": "https://ctftime.org/media/events/gaianspace-logo-new.png",
+        "比赛权重": "0.00",
+        "赛事主办": "GaianSpace (https://ctftime.org/team/373034)",
+        "比赛ID": "1284",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "POC CTF Qualification 2025",
         "比赛时间": "2025-10-12 18:00:00 - 2025-10-13 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2955.ics",
@@ -789,6 +1137,30 @@
         "比赛权重": "0",
         "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
         "比赛ID": "1422",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "QUESTCON CTF 2025",
+        "比赛时间": "2025-10-11 17:00:00 - 2025-10-12 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2968.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://discord.com/invite/JAavPpY95u",
+        "比赛标志": "https://ctftime.org/media/events/owasp.jpeg",
+        "比赛权重": "26.50",
+        "赛事主办": "OWASP_PCCOE-CORE (https://ctftime.org/team/206360)",
+        "比赛ID": "1001",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "PermCTF 2025",
+        "比赛时间": "2025-10-11 12:30:00 - 2025-10-11 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3000.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://permctf2025.pstu.ru/",
+        "比赛标志": "https://ctftime.org/media/events/photo_2025-11-07_12-25-37.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "E-Toolz (https://ctftime.org/team/61508)",
+        "比赛ID": "561",
         "比赛状态": "past"
     },
     {
@@ -1485,138 +1857,6 @@
         "比赛权重": "100.00",
         "赛事主办": "Nautilus Institute (https://ctftime.org/team/181536)",
         "比赛ID": "2",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "idekCTF 2025",
-        "比赛时间": "2025-08-02 16:00:00 - 2025-08-04 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2746.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.idek.team/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "52.06",
-        "赛事主办": "idek (https://ctftime.org/team/157039)",
-        "比赛ID": "700",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "PH03N1X V1P3R N0V4 CTF",
-        "比赛时间": "2025-08-02 15:56:43 - 2025-08-02 15:56:43 UTC+8",
-        "添加日历": "https://ctftime.org/event/2880.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://platform.pwnctf.ro/",
-        "比赛标志": "https://ctftime.org/media/events/CTF_logo_sex-2.png",
-        "比赛权重": "0.00",
-        "赛事主办": "PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)",
-        "比赛ID": "1374",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "justCTF 2025",
-        "比赛时间": "2025-08-02 14:00:00 - 2025-08-04 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2711.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://2025.justctf.team/",
-        "比赛标志": "https://ctftime.org/media/events/b6f4bd9df7efba86c9b2d4eea9f8bc74.png",
-        "比赛权重": "97.20",
-        "赛事主办": "justCatTheFish (https://ctftime.org/team/33893)",
-        "比赛ID": "399",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "World Wide CTF 2025",
-        "比赛时间": "2025-07-26 20:00:00 - 2025-07-28 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2753.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://wwctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/ctftime.jpg",
-        "比赛权重": "24.48",
-        "赛事主办": "🐧‎ (https://ctftime.org/team/283853)",
-        "比赛ID": "1208",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "UIUCTF 2025",
-        "比赛时间": "2025-07-26 08:00:00 - 2025-07-28 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2640.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2025.uiuc.tf/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "91.43",
-        "赛事主办": "SIGPwny (https://ctftime.org/team/27763)",
-        "比赛ID": "95",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DeadSec CTF 2025",
-        "比赛时间": "2025-07-26 06:00:00 - 2025-07-28 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2631.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.deadsec.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/Picture1_2.png",
-        "比赛权重": "31.29",
-        "赛事主办": "DeadSec (https://ctftime.org/team/19339)",
-        "比赛ID": "268",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BelkaCTF #7",
-        "比赛时间": "2025-07-25 21:00:00 - 2025-07-27 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2858.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://belkasoft.com/belkactf7/",
-        "比赛标志": "https://ctftime.org/media/events/belkaCTF_ctftime.png",
-        "比赛权重": "0",
-        "赛事主办": "TODO: security (https://ctftime.org/team/288184)",
-        "比赛ID": "1105",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "StackSmash CTF",
-        "比赛时间": "2025-07-25 21:00:00 - 2025-07-28 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2841.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.hackthebox.com/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "24.00",
-        "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
-        "比赛ID": "554",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Shakti CTF 2025",
-        "比赛时间": "2025-07-25 20:30:00 - 2025-07-26 20:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2803.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.teamshakti.in/",
-        "比赛标志": "https://ctftime.org/media/events/shakti1.png",
-        "比赛权重": "34.10",
-        "赛事主办": "TeamShakti (https://ctftime.org/team/61083)",
-        "比赛ID": "521",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BDSec CTF 2025",
-        "比赛时间": "2025-07-20 23:00:00 - 2025-07-21 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2784.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://bdsec-ctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/bdsec-ctf-logo_1.png",
-        "比赛权重": "16.11",
-        "赛事主办": "Knight Squad (https://ctftime.org/team/141739)",
-        "比赛ID": "811",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "AlpacaHack Round 13 (Crypto)",
-        "比赛时间": "2025-07-20 11:00:00 - 2025-07-20 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2806.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://alpacahack.com/ctfs/round-13",
-        "比赛标志": "https://ctftime.org/media/events/ctftime_12.png",
-        "比赛权重": "0",
-        "赛事主办": "AlpacaHack (https://ctftime.org/team/312315)",
-        "比赛ID": "1163",
         "比赛状态": "past"
     }
 ]
