@@ -195,7 +195,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2930.ics  
     
 ??? Quote "[CipherHunt 2.0](https://cipherhunt.xyz/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://cipherhunt.xyz/)  
+    [![](https://ctftime.org/media/events/old-sq_1.jpg){ width="200" align=left }](https://cipherhunt.xyz/)  
     **比赛名称** : [CipherHunt 2.0](https://cipherhunt.xyz/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-10-28 17:30:00 - 2025-10-29 22:30:00 UTC+8  
