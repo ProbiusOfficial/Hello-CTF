@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "POC CTF Final 2025",
-        "比赛时间": "2025-11-14 07:00:00 - 2025-11-14 14:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2956.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://powerofcommunity.net/2025/ctf.html",
-        "比赛标志": "https://ctftime.org/media/events/vDP90SY4soKs6q3cKITowqXIE7a0Jy_1.png",
-        "比赛权重": "0",
-        "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
-        "比赛ID": "1422",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "AmateursCTF 2025",
         "比赛时间": "2025-11-14 08:00:00 - 2025-11-18 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2844.ics",
@@ -645,6 +633,18 @@
         "比赛权重": "0",
         "赛事主办": "UWSP Pointers (https://ctftime.org/team/231536)",
         "比赛ID": "963",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "POC CTF Final 2025",
+        "比赛时间": "2025-11-14 07:00:00 - 2025-11-14 14:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2956.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://powerofcommunity.net/2025/ctf.html",
+        "比赛标志": "https://ctftime.org/media/events/vDP90SY4soKs6q3cKITowqXIE7a0Jy_1.png",
+        "比赛权重": "0",
+        "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
+        "比赛ID": "1422",
         "比赛状态": "nowrunning"
     },
     {
