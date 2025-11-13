@@ -414,15 +414,6 @@ comments: true
     **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
     **添加日历** : https://ctftime.org/event/2986.ics  
     
-??? Quote "[Säkerhets-SM Quals 2026](https://ctf.sakerhetssm.se/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.sakerhetssm.se/)  
-    **比赛名称** : [Säkerhets-SM Quals 2026](https://ctf.sakerhetssm.se/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-25 00:00:00 - 2026-01-26 00:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Kodsport (https://ctftime.org/team/395272)  
-    **添加日历** : https://ctftime.org/event/2945.ics  
-    
 ??? Quote "[Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)"  
     [![](https://ctftime.org/media/events/LogoAlt.png){ width="200" align=left }](https://www.jeanne-hack-ctf.org/)  
     **比赛名称** : [Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)  
