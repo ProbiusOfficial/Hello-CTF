@@ -893,7 +893,7 @@ hide:
                 **比赛名称** : [Ctrl+Space CTF Finals](https://ctrl-space.gg/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-11-04 17:00:00 - 2025-11-06 19:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : ESA (https://ctftime.org/team/391420)  
                 **添加日历** : https://ctftime.org/event/2989.ics  
                 
