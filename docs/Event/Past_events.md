@@ -324,7 +324,7 @@ comments: true
     [![](https://ctftime.org/media/events/LINE.jpeg){ width="200" align=left }](https://linectf.me/)  
     **比赛名称** : [LINE CTF 2025](https://linectf.me/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-10-18 08:00:00 - 2025-10-18 08:00:00 UTC+8  
+    **比赛时间** : 2025-10-18 08:00:00 - 2025-10-19 08:00:00 UTC+8  
     **比赛权重** : 66.50  
     **赛事主办** : LINE CTF (https://ctftime.org/team/144094)  
     **添加日历** : https://ctftime.org/event/2819.ics  
