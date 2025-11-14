@@ -860,15 +860,6 @@ comments: true
     **赛事主办** : Brunnerne (https://ctftime.org/team/155032)  
     **添加日历** : https://ctftime.org/event/2835.ics  
     
-??? Quote "[[POSTPONED]RCTF 2025](https://rctf.rois.io/)"  
-    [![](https://ctftime.org/media/events/rois.jpg){ width="200" align=left }](https://rctf.rois.io/)  
-    **比赛名称** : [[POSTPONED]RCTF 2025](https://rctf.rois.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-08-20 18:00:00 - 2025-08-22 18:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : ROIS (https://ctftime.org/team/6476)  
-    **添加日历** : https://ctftime.org/event/2771.ics  
-    
 ??? Quote "[CTFZone 2025 Quals](https://board.ctfz.zone/)"  
     [![](https://ctftime.org/media/events/ctfzone_logo_1.png){ width="200" align=left }](https://board.ctfz.zone/)  
     **比赛名称** : [CTFZone 2025 Quals](https://board.ctfz.zone/)  
@@ -913,4 +904,13 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Eindbazen (https://ctftime.org/team/322)  
     **添加日历** : https://ctftime.org/event/2680.ics  
+    
+??? Quote "[Startpwn CTF 2025](https://app.metactf.com/starpwn-2025)"  
+    [![](https://ctftime.org/media/events/starpwn_logo_cr.png){ width="200" align=left }](https://app.metactf.com/starpwn-2025)  
+    **比赛名称** : [Startpwn CTF 2025](https://app.metactf.com/starpwn-2025)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-08-09 00:00:00 - 2025-08-10 03:00:00 UTC+8  
+    **比赛权重** : 24.62  
+    **赛事主办** : Visionspace (https://ctftime.org/team/383284)  
+    **添加日历** : https://ctftime.org/event/2855.ics  
     

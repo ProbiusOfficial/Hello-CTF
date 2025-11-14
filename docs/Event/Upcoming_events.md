@@ -23,7 +23,7 @@ comments: true
     **比赛名称** : [RCTF 2025](https://rctf2025.xctf.org.cn/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-11-15 10:00:00 - 2025-11-17 10:00:00 UTC+8  
-    **比赛权重** : 0.00  
+    **比赛权重** : 41.75  
     **赛事主办** : ROIS (https://ctftime.org/team/6476)  
     **添加日历** : https://ctftime.org/event/2992.ics  
     
