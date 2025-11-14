@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Guardians of the TI](http://ctf.gematik.de/)"  
-            [![](https://ctftime.org/media/events/logo_guardians.png){ width="200" align=left }](http://ctf.gematik.de/)  
-            **比赛名称** : [Guardians of the TI](http://ctf.gematik.de/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-11-14 17:00:00 - 2025-11-15 01:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : H34lthineer (https://ctftime.org/team/170109)  
-            **添加日历** : https://ctftime.org/event/3006.ics  
-            
         ??? Quote "[Layer7 CTF 2025](https://ctf.layer7.kr/)"  
             [![](https://ctftime.org/media/events/white_ver.png){ width="200" align=left }](https://ctf.layer7.kr/)  
             **比赛名称** : [Layer7 CTF 2025](https://ctf.layer7.kr/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : TU Delft CTF Team (https://ctftime.org/team/134822)  
             **添加日历** : https://ctftime.org/event/2953.ics  
+            
+        ??? Quote "[Platypwn 2025](https://platypwnies.de/events/platypwn/)"  
+            [![](https://ctftime.org/media/events/platypwnies-512_1.png){ width="200" align=left }](https://platypwnies.de/events/platypwn/)  
+            **比赛名称** : [Platypwn 2025](https://platypwnies.de/events/platypwn/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-11-15 17:00:00 - 2025-11-17 05:00:00 UTC+8  
+            **比赛权重** : 33.29  
+            **赛事主办** : Platypwnies (https://ctftime.org/team/112550)  
+            **添加日历** : https://ctftime.org/event/2606.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
