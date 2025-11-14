@@ -761,15 +761,6 @@ hide:
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2904.ics  
                 
-            ??? Quote "[POC CTF Final 2025](https://powerofcommunity.net/2025/ctf.html)"  
-                [![](https://ctftime.org/media/events/vDP90SY4soKs6q3cKITowqXIE7a0Jy_1.png){ width="200" align=left }](https://powerofcommunity.net/2025/ctf.html)  
-                **比赛名称** : [POC CTF Final 2025](https://powerofcommunity.net/2025/ctf.html)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-14 07:00:00 - 2025-11-14 14:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
-                **添加日历** : https://ctftime.org/event/2956.ics  
-                
             ??? Quote "[AmateursCTF 2025](https://ctf.amateurs.team/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.amateurs.team/)  
                 **比赛名称** : [AmateursCTF 2025](https://ctf.amateurs.team/)  
@@ -789,6 +780,15 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
+            ??? Quote "[POC CTF Final 2025](https://powerofcommunity.net/2025/ctf.html)"  
+                [![](https://ctftime.org/media/events/vDP90SY4soKs6q3cKITowqXIE7a0Jy_1.png){ width="200" align=left }](https://powerofcommunity.net/2025/ctf.html)  
+                **比赛名称** : [POC CTF Final 2025](https://powerofcommunity.net/2025/ctf.html)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-14 07:00:00 - 2025-11-14 14:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
+                **添加日历** : https://ctftime.org/event/2956.ics  
+                
             ??? Quote "[RootCipher](https://forms.thundercipher.tech/form/949b7b32-ff49-400e-9194-a91a5deeb910)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://forms.thundercipher.tech/form/949b7b32-ff49-400e-9194-a91a5deeb910)  
                 **比赛名称** : [RootCipher](https://forms.thundercipher.tech/form/949b7b32-ff49-400e-9194-a91a5deeb910)  
@@ -1679,15 +1679,6 @@ hide:
                 **比赛权重** : 24.62  
                 **赛事主办** : Visionspace (https://ctftime.org/team/383284)  
                 **添加日历** : https://ctftime.org/event/2855.ics  
-                
-            ??? Quote "[DEF CON CTF 2025](https://nautilus.institute/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://nautilus.institute/)  
-                **比赛名称** : [DEF CON CTF 2025](https://nautilus.institute/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2025-08-09 00:00:00 - 2025-08-11 03:00:00 UTC+8  
-                **比赛权重** : 100.00  
-                **赛事主办** : Nautilus Institute (https://ctftime.org/team/181536)  
-                **添加日历** : https://ctftime.org/event/2897.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
