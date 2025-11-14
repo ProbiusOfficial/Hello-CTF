@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [东方通TongWeb最新反序列化利用分析](https://y4tacker.github.io/2025/11/13/year/2025/11/%E4%B8%9C%E6%96%B9%E9%80%9ATongWeb%E6%9C%80%E6%96%B0%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%88%A9%E7%94%A8%E5%88%86%E6%9E%90/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-11-13
+
+    d89a383fba0dfbe5e04ae635e1bec07fae4cba8f85006ae22cb5a929bd201cec852660f67fcdd81091d1e7f6c1b6432c75a209103db66625e82a285d341bc3f6d8c9ac2868a9345f1ecef5b809b5ee8befddb13f780436598aa19443aaae13f6af6784...
     ### [No-FTP:高版本JDK如何通过XXE-OOB读取多行文件](https://y4tacker.github.io/2025/11/10/year/2025/11/No-FTP-%E9%AB%98%E7%89%88%E6%9C%ACJDK%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87XXE-OOB%E8%AF%BB%E5%8F%96%E5%A4%9A%E8%A1%8C%E6%96%87%E4%BB%B6/)  
     >by [Y4tacker](https://y4tacker.github.io), 2025-11-10
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2025-02-23
 
     8133babd8f05e144d8e8c2c4c8ee0fb3d40c2c031c3925709b74cb30c7b27fca92bfd93cf7cf65a6834a805821993b6c9674428ad9fdcf275cf47eb5e07cfd2d776e01401bdf1c9d1052d24b573abb3ff41508c0d801b0496ab9e4257b11885ae0e4bf...
-    ### [windowsAPC学习（2）——APC挂入与执行](https://xia0ji233.github.io/2025/02/17/WindowsAPC2/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-02-17
-
-    今天详细了解一下 APC 到底是怎么工作的。APC挂入在 APC 挂入的时候，内核会准备一个 _KAPC 结构体，将该结构体挂入线程的 APC 队列中。KAPC结构体介绍先在 windbg 中查看一下：123456789101112131415161718kd> dt _KAPCntdll!_KAPC   +0x000 Type             : UChar   +0x001 Spare...
 
 </div>
