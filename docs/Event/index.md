@@ -761,15 +761,6 @@ hide:
                 **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
                 **添加日历** : https://ctftime.org/event/2844.ics  
                 
-            ??? Quote "[Guardians of the TI](http://ctf.gematik.de/)"  
-                [![](https://ctftime.org/media/events/logo_guardians.png){ width="200" align=left }](http://ctf.gematik.de/)  
-                **比赛名称** : [Guardians of the TI](http://ctf.gematik.de/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-14 17:00:00 - 2025-11-15 01:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : H34lthineer (https://ctftime.org/team/170109)  
-                **添加日历** : https://ctftime.org/event/3006.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[MoeCTF 2025](https://ctf.xidian.edu.cn/games/22)"  
@@ -780,6 +771,15 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
+            ??? Quote "[Guardians of the TI](http://ctf.gematik.de/)"  
+                [![](https://ctftime.org/media/events/logo_guardians.png){ width="200" align=left }](http://ctf.gematik.de/)  
+                **比赛名称** : [Guardians of the TI](http://ctf.gematik.de/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-14 17:00:00 - 2025-11-15 01:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : H34lthineer (https://ctftime.org/team/170109)  
+                **添加日历** : https://ctftime.org/event/3006.ics  
+                
             ??? Quote "[POC CTF Final 2025](https://powerofcommunity.net/2025/ctf.html)"  
                 [![](https://ctftime.org/media/events/vDP90SY4soKs6q3cKITowqXIE7a0Jy_1.png){ width="200" align=left }](https://powerofcommunity.net/2025/ctf.html)  
                 **比赛名称** : [POC CTF Final 2025](https://powerofcommunity.net/2025/ctf.html)  
@@ -1670,15 +1670,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Eindbazen (https://ctftime.org/team/322)  
                 **添加日历** : https://ctftime.org/event/2680.ics  
-                
-            ??? Quote "[Startpwn CTF 2025](https://app.metactf.com/starpwn-2025)"  
-                [![](https://ctftime.org/media/events/starpwn_logo_cr.png){ width="200" align=left }](https://app.metactf.com/starpwn-2025)  
-                **比赛名称** : [Startpwn CTF 2025](https://app.metactf.com/starpwn-2025)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-08-09 00:00:00 - 2025-08-10 03:00:00 UTC+8  
-                **比赛权重** : 24.62  
-                **赛事主办** : Visionspace (https://ctftime.org/team/383284)  
-                **添加日历** : https://ctftime.org/event/2855.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
