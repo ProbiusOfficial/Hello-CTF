@@ -505,9 +505,9 @@ hide:
                 **赛事主办** : InfoSecIITR (https://ctftime.org/team/16691)  
                 **添加日历** : https://ctftime.org/event/2915.ics  
                 
-            ??? Quote "[niteCTF 2025](https://nitectf.cryptonitemit.in/)"  
-                [![](https://ctftime.org/media/events/nitectf_1.png){ width="200" align=left }](https://nitectf.cryptonitemit.in/)  
-                **比赛名称** : [niteCTF 2025](https://nitectf.cryptonitemit.in/)  
+            ??? Quote "[niteCTF 2025](https://nitectf25.live/)"  
+                [![](https://ctftime.org/media/events/nitectf_1.png){ width="200" align=left }](https://nitectf25.live/)  
+                **比赛名称** : [niteCTF 2025](https://nitectf25.live/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-12-12 20:00:00 - 2025-12-14 20:00:00 UTC+8  
                 **比赛权重** : 39.87  
