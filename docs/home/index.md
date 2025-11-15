@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[TU Delft CTF 2025](https://ctf.ewi.tudelft.nl/?source=ctftime)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctf.ewi.tudelft.nl/?source=ctftime)  
-            **比赛名称** : [TU Delft CTF 2025](https://ctf.ewi.tudelft.nl/?source=ctftime)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-11-15 16:00:00 - 2025-11-16 00:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : TU Delft CTF Team (https://ctftime.org/team/134822)  
-            **添加日历** : https://ctftime.org/event/2953.ics  
-            
         ??? Quote "[Platypwn 2025](https://platypwnies.de/events/platypwn/)"  
             [![](https://ctftime.org/media/events/platypwnies-512_1.png){ width="200" align=left }](https://platypwnies.de/events/platypwn/)  
             **比赛名称** : [Platypwn 2025](https://platypwnies.de/events/platypwn/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 23.92  
             **赛事主办** : PwnSec (https://ctftime.org/team/28797)  
             **添加日历** : https://ctftime.org/event/2906.ics  
+            
+        ??? Quote "[M*CTF 2025 Quals](https://mctf.mtuci.ru/)"  
+            [![](https://ctftime.org/media/events/logo_15.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
+            **比赛名称** : [M*CTF 2025 Quals](https://mctf.mtuci.ru/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-11-16 17:00:00 - 2025-11-17 17:00:00 UTC+8  
+            **比赛权重** : 45.64  
+            **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
+            **添加日历** : https://ctftime.org/event/2996.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
