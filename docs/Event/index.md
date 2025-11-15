@@ -734,15 +734,6 @@ hide:
                 **赛事主办** : Platypwnies (https://ctftime.org/team/112550)  
                 **添加日历** : https://ctftime.org/event/2606.ics  
                 
-            ??? Quote "[Crate-CTF 2025](https://foi.se/cratectf)"  
-                [![](https://ctftime.org/media/events/CTF_2025.png){ width="200" align=left }](https://foi.se/cratectf)  
-                **比赛名称** : [Crate-CTF 2025](https://foi.se/cratectf)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-15 21:00:00 - 2025-11-16 05:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : Crate-CTF (https://ctftime.org/team/352250)  
-                **添加日历** : https://ctftime.org/event/2838.ics  
-                
             ??? Quote "[PwnSec CTF 2025](https://pwnsec.ctf.ae/)"  
                 [![](https://ctftime.org/media/events/pwnsec.png){ width="200" align=left }](https://pwnsec.ctf.ae/)  
                 **比赛名称** : [PwnSec CTF 2025](https://pwnsec.ctf.ae/)  
@@ -762,6 +753,15 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
+            ??? Quote "[Crate-CTF 2025](https://foi.se/cratectf)"  
+                [![](https://ctftime.org/media/events/CTF_2025.png){ width="200" align=left }](https://foi.se/cratectf)  
+                **比赛名称** : [Crate-CTF 2025](https://foi.se/cratectf)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-15 21:00:00 - 2025-11-16 05:00:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : Crate-CTF (https://ctftime.org/team/352250)  
+                **添加日历** : https://ctftime.org/event/2838.ics  
+                
             ??? Quote "[TU Delft CTF 2025](https://ctf.ewi.tudelft.nl/?source=ctftime)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.ewi.tudelft.nl/?source=ctftime)  
                 **比赛名称** : [TU Delft CTF 2025](https://ctf.ewi.tudelft.nl/?source=ctftime)  
@@ -1652,15 +1652,6 @@ hide:
                 **比赛权重** : 24.68  
                 **赛事主办** : ScriptSorcerers (https://ctftime.org/team/284260)  
                 **添加日历** : https://ctftime.org/event/2792.ics  
-                
-            ??? Quote "[WHY2025 CTF](https://ctf.why2025.org/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.why2025.org/)  
-                **比赛名称** : [WHY2025 CTF](https://ctf.why2025.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-08-09 00:00:00 - 2025-08-12 00:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Eindbazen (https://ctftime.org/team/322)  
-                **添加日历** : https://ctftime.org/event/2680.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
