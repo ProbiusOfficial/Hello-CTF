@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[RCTF 2025](https://rctf2025.xctf.org.cn/)"  
-    [![](https://ctftime.org/media/events/rois_1.jpg){ width="200" align=left }](https://rctf2025.xctf.org.cn/)  
-    **比赛名称** : [RCTF 2025](https://rctf2025.xctf.org.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-15 10:00:00 - 2025-11-17 10:00:00 UTC+8  
-    **比赛权重** : 41.75  
-    **赛事主办** : ROIS (https://ctftime.org/team/6476)  
-    **添加日历** : https://ctftime.org/event/2992.ics  
-    
 ??? Quote "[TU Delft CTF 2025](https://ctf.ewi.tudelft.nl/?source=ctftime)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.ewi.tudelft.nl/?source=ctftime)  
     **比赛名称** : [TU Delft CTF 2025](https://ctf.ewi.tudelft.nl/?source=ctftime)  
