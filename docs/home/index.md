@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[PwnSec CTF 2025](https://pwnsec.ctf.ae/)"  
-            [![](https://ctftime.org/media/events/pwnsec.png){ width="200" align=left }](https://pwnsec.ctf.ae/)  
-            **比赛名称** : [PwnSec CTF 2025](https://pwnsec.ctf.ae/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-11-15 23:00:00 - 2025-11-16 23:00:00 UTC+8  
-            **比赛权重** : 23.92  
-            **赛事主办** : PwnSec (https://ctftime.org/team/28797)  
-            **添加日历** : https://ctftime.org/event/2906.ics  
-            
         ??? Quote "[M*CTF 2025 Quals](https://mctf.mtuci.ru/)"  
             [![](https://ctftime.org/media/events/logo_15.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
             **比赛名称** : [M*CTF 2025 Quals](https://mctf.mtuci.ru/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
             **添加日历** : https://ctftime.org/event/2994.ics  
+            
+        ??? Quote "[Hardwear.io NL 2025 Hardware CTF](https://hwc.tf/)"  
+            [![](https://ctftime.org/media/events/logohwcolor_16.png){ width="200" align=left }](https://hwc.tf/)  
+            **比赛名称** : [Hardwear.io NL 2025 Hardware CTF](https://hwc.tf/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-11-20 17:00:00 - 2025-11-21 20:50:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Hardware CTF (https://ctftime.org/team/274600)  
+            **添加日历** : https://ctftime.org/event/3002.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

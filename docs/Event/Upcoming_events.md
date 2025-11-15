@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[PwnSec CTF 2025](https://pwnsec.ctf.ae/)"  
-    [![](https://ctftime.org/media/events/pwnsec.png){ width="200" align=left }](https://pwnsec.ctf.ae/)  
-    **比赛名称** : [PwnSec CTF 2025](https://pwnsec.ctf.ae/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-15 23:00:00 - 2025-11-16 23:00:00 UTC+8  
-    **比赛权重** : 23.92  
-    **赛事主办** : PwnSec (https://ctftime.org/team/28797)  
-    **添加日历** : https://ctftime.org/event/2906.ics  
-    
 ??? Quote "[M*CTF 2025 Quals](https://mctf.mtuci.ru/)"  
     [![](https://ctftime.org/media/events/logo_15.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
     **比赛名称** : [M*CTF 2025 Quals](https://mctf.mtuci.ru/)  

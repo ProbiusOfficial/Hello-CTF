@@ -72,3 +72,12 @@ comments: true
     **赛事主办** : Crate-CTF (https://ctftime.org/team/352250)  
     **添加日历** : https://ctftime.org/event/2838.ics  
     
+??? Quote "[PwnSec CTF 2025](https://pwnsec.ctf.ae/)"  
+    [![](https://ctftime.org/media/events/pwnsec.png){ width="200" align=left }](https://pwnsec.ctf.ae/)  
+    **比赛名称** : [PwnSec CTF 2025](https://pwnsec.ctf.ae/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-15 23:00:00 - 2025-11-16 23:00:00 UTC+8  
+    **比赛权重** : 23.92  
+    **赛事主办** : PwnSec (https://ctftime.org/team/28797)  
+    **添加日历** : https://ctftime.org/event/2906.ics  
+    
