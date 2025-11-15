@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[TU Delft CTF 2025](https://ctf.ewi.tudelft.nl/?source=ctftime)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.ewi.tudelft.nl/?source=ctftime)  
+    **比赛名称** : [TU Delft CTF 2025](https://ctf.ewi.tudelft.nl/?source=ctftime)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-15 16:00:00 - 2025-11-16 00:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : TU Delft CTF Team (https://ctftime.org/team/134822)  
+    **添加日历** : https://ctftime.org/event/2953.ics  
+    
 ??? Quote "[Guardians of the TI](http://ctf.gematik.de/)"  
     [![](https://ctftime.org/media/events/logo_guardians.png){ width="200" align=left }](http://ctf.gematik.de/)  
     **比赛名称** : [Guardians of the TI](http://ctf.gematik.de/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Eindbazen (https://ctftime.org/team/322)  
     **添加日历** : https://ctftime.org/event/2680.ics  
-    
-??? Quote "[Startpwn CTF 2025](https://app.metactf.com/starpwn-2025)"  
-    [![](https://ctftime.org/media/events/starpwn_logo_cr.png){ width="200" align=left }](https://app.metactf.com/starpwn-2025)  
-    **比赛名称** : [Startpwn CTF 2025](https://app.metactf.com/starpwn-2025)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-08-09 00:00:00 - 2025-08-10 03:00:00 UTC+8  
-    **比赛权重** : 24.62  
-    **赛事主办** : Visionspace (https://ctftime.org/team/383284)  
-    **添加日历** : https://ctftime.org/event/2855.ics  
     
