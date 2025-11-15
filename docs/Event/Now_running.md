@@ -27,3 +27,12 @@ comments: true
     **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
     **添加日历** : https://ctftime.org/event/2844.ics  
     
+??? Quote "[Layer7 CTF 2025](https://ctf.layer7.kr/)"  
+    [![](https://ctftime.org/media/events/white_ver.png){ width="200" align=left }](https://ctf.layer7.kr/)  
+    **比赛名称** : [Layer7 CTF 2025](https://ctf.layer7.kr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-15 09:00:00 - 2025-11-16 09:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Layer7 CTF (https://ctftime.org/team/87286)  
+    **添加日历** : https://ctftime.org/event/2990.ics  
+    
