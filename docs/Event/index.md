@@ -698,15 +698,6 @@ hide:
                 **赛事主办** : ROIS (https://ctftime.org/team/6476)  
                 **添加日历** : https://ctftime.org/event/2992.ics  
                 
-            ??? Quote "[Platypwn 2025](https://platypwnies.de/events/platypwn/)"  
-                [![](https://ctftime.org/media/events/platypwnies-512_1.png){ width="200" align=left }](https://platypwnies.de/events/platypwn/)  
-                **比赛名称** : [Platypwn 2025](https://platypwnies.de/events/platypwn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-15 17:00:00 - 2025-11-17 05:00:00 UTC+8  
-                **比赛权重** : 33.29  
-                **赛事主办** : Platypwnies (https://ctftime.org/team/112550)  
-                **添加日历** : https://ctftime.org/event/2606.ics  
-                
             ??? Quote "[M*CTF 2025 Quals](https://mctf.mtuci.ru/)"  
                 [![](https://ctftime.org/media/events/logo_15.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
                 **比赛名称** : [M*CTF 2025 Quals](https://mctf.mtuci.ru/)  
@@ -743,6 +734,15 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : Crate-CTF (https://ctftime.org/team/352250)  
                 **添加日历** : https://ctftime.org/event/2838.ics  
+                
+            ??? Quote "[Platypwn 2025](https://platypwnies.de/events/platypwn/)"  
+                [![](https://ctftime.org/media/events/platypwnies-512_1.png){ width="200" align=left }](https://platypwnies.de/events/platypwn/)  
+                **比赛名称** : [Platypwn 2025](https://platypwnies.de/events/platypwn/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-15 17:00:00 - 2025-11-17 05:00:00 UTC+8  
+                **比赛权重** : 33.29  
+                **赛事主办** : Platypwnies (https://ctftime.org/team/112550)  
+                **添加日历** : https://ctftime.org/event/2606.ics  
                 
             ??? Quote "[TU Delft CTF 2025](https://ctf.ewi.tudelft.nl/?source=ctftime)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.ewi.tudelft.nl/?source=ctftime)  
@@ -1616,15 +1616,6 @@ hide:
                 **比赛权重** : 24.63  
                 **赛事主办** : Brunnerne (https://ctftime.org/team/155032)  
                 **添加日历** : https://ctftime.org/event/2835.ics  
-                
-            ??? Quote "[CTFZone 2025 Quals](https://board.ctfz.zone/)"  
-                [![](https://ctftime.org/media/events/ctfzone_logo_1.png){ width="200" align=left }](https://board.ctfz.zone/)  
-                **比赛名称** : [CTFZone 2025 Quals](https://board.ctfz.zone/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-08-16 18:00:00 - 2025-08-17 18:00:00 UTC+8  
-                **比赛权重** : 92.45  
-                **赛事主办** : BIZone (https://ctftime.org/team/32190)  
-                **添加日历** : https://ctftime.org/event/2839.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

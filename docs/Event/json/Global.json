@@ -540,18 +540,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Platypwn 2025",
-        "比赛时间": "2025-11-15 17:00:00 - 2025-11-17 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2606.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://platypwnies.de/events/platypwn/",
-        "比赛标志": "https://ctftime.org/media/events/platypwnies-512_1.png",
-        "比赛权重": "33.29",
-        "赛事主办": "Platypwnies (https://ctftime.org/team/112550)",
-        "比赛ID": "979",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "M*CTF 2025 Quals",
         "比赛时间": "2025-11-16 17:00:00 - 2025-11-17 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2996.ics",
@@ -585,6 +573,18 @@
         "比赛权重": "25.00",
         "赛事主办": "Crate-CTF (https://ctftime.org/team/352250)",
         "比赛ID": "1172",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Platypwn 2025",
+        "比赛时间": "2025-11-15 17:00:00 - 2025-11-17 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2606.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://platypwnies.de/events/platypwn/",
+        "比赛标志": "https://ctftime.org/media/events/platypwnies-512_1.png",
+        "比赛权重": "33.29",
+        "赛事主办": "Platypwnies (https://ctftime.org/team/112550)",
+        "比赛ID": "979",
         "比赛状态": "past"
     },
     {
@@ -1749,18 +1749,6 @@
         "比赛权重": "24.63",
         "赛事主办": "Brunnerne (https://ctftime.org/team/155032)",
         "比赛ID": "1341",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CTFZone 2025 Quals",
-        "比赛时间": "2025-08-16 18:00:00 - 2025-08-17 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2839.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://board.ctfz.zone/",
-        "比赛标志": "https://ctftime.org/media/events/ctfzone_logo_1.png",
-        "比赛权重": "92.45",
-        "赛事主办": "BIZone (https://ctftime.org/team/32190)",
-        "比赛ID": "201",
         "比赛状态": "past"
     }
 ]
