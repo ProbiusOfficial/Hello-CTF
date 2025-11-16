@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "M*CTF 2025 Quals",
-        "比赛时间": "2025-11-16 17:00:00 - 2025-11-17 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2996.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://mctf.mtuci.ru/",
-        "比赛标志": "https://ctftime.org/media/events/logo_15.jpg",
-        "比赛权重": "45.64",
-        "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
-        "比赛ID": "165",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Ukrainian National CTF",
         "比赛时间": "2025-11-20 08:00:00 - 2025-12-01 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3007.ics",
@@ -588,6 +576,18 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "M*CTF 2025 Quals",
+        "比赛时间": "2025-11-16 17:00:00 - 2025-11-17 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2996.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://mctf.mtuci.ru/",
+        "比赛标志": "https://ctftime.org/media/events/logo_15.jpg",
+        "比赛权重": "45.64",
+        "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
+        "比赛ID": "165",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "Crate-CTF 2025",
         "比赛时间": "2025-11-15 21:00:00 - 2025-11-16 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2838.ics",
@@ -738,7 +738,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.ac.upt.ro/",
         "比赛标志": "https://ctftime.org/media/events/2338e2e4033e4bf196b4e6c5f4f9b20d.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "UPT-CTF (https://ctftime.org/team/276942)",
         "比赛ID": "1337",
         "比赛状态": "past"

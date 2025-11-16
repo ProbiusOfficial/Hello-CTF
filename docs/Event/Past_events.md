@@ -127,7 +127,7 @@ comments: true
     **比赛名称** : [CTF@AC - Finals](https://ctf.ac.upt.ro/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-11-07 23:00:00 - 2025-11-09 17:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
     **添加日历** : https://ctftime.org/event/2921.ics  
     

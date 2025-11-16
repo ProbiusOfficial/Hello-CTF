@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[M*CTF 2025 Quals](https://mctf.mtuci.ru/)"  
-                [![](https://ctftime.org/media/events/logo_15.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
-                **比赛名称** : [M*CTF 2025 Quals](https://mctf.mtuci.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-16 17:00:00 - 2025-11-17 17:00:00 UTC+8  
-                **比赛权重** : 45.64  
-                **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-                **添加日历** : https://ctftime.org/event/2996.ics  
-                
             ??? Quote "[Ukrainian National CTF](https://hackenproof.com/gur-national-ctf-en)"  
                 [![](https://ctftime.org/media/events/nationalCtf.jpg){ width="200" align=left }](https://hackenproof.com/gur-national-ctf-en)  
                 **比赛名称** : [Ukrainian National CTF](https://hackenproof.com/gur-national-ctf-en)  
@@ -734,6 +725,15 @@ hide:
                 **赛事主办** : PwnSec (https://ctftime.org/team/28797)  
                 **添加日历** : https://ctftime.org/event/2906.ics  
                 
+            ??? Quote "[M*CTF 2025 Quals](https://mctf.mtuci.ru/)"  
+                [![](https://ctftime.org/media/events/logo_15.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
+                **比赛名称** : [M*CTF 2025 Quals](https://mctf.mtuci.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-16 17:00:00 - 2025-11-17 17:00:00 UTC+8  
+                **比赛权重** : 45.64  
+                **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
+                **添加日历** : https://ctftime.org/event/2996.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[MoeCTF 2025](https://ctf.xidian.edu.cn/games/22)"  
@@ -857,7 +857,7 @@ hide:
                 **比赛名称** : [CTF@AC - Finals](https://ctf.ac.upt.ro/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-11-07 23:00:00 - 2025-11-09 17:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
                 **添加日历** : https://ctftime.org/event/2921.ics  
                 

@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[M*CTF 2025 Quals](https://mctf.mtuci.ru/)"  
-            [![](https://ctftime.org/media/events/logo_15.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
-            **比赛名称** : [M*CTF 2025 Quals](https://mctf.mtuci.ru/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-11-16 17:00:00 - 2025-11-17 17:00:00 UTC+8  
-            **比赛权重** : 45.64  
-            **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-            **添加日历** : https://ctftime.org/event/2996.ics  
-            
         ??? Quote "[Ukrainian National CTF](https://hackenproof.com/gur-national-ctf-en)"  
             [![](https://ctftime.org/media/events/nationalCtf.jpg){ width="200" align=left }](https://hackenproof.com/gur-national-ctf-en)  
             **比赛名称** : [Ukrainian National CTF](https://hackenproof.com/gur-national-ctf-en)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Hardware CTF (https://ctftime.org/team/274600)  
             **添加日历** : https://ctftime.org/event/3002.ics  
+            
+        ??? Quote "[MetaCTF November 2025 Flash CTF](https://mctf.io/nov2025)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://mctf.io/nov2025)  
+            **比赛名称** : [MetaCTF November 2025 Flash CTF](https://mctf.io/nov2025)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-11-21 06:00:00 - 2025-11-21 08:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
+            **添加日历** : https://ctftime.org/event/3010.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
