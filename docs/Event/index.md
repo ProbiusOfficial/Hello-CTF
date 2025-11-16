@@ -839,7 +839,7 @@ hide:
                 **比赛名称** : [Infobahn CTF 2025](https://2025.infobahnc.tf/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-11-08 01:00:00 - 2025-11-10 01:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : Infobahn (https://ctftime.org/team/364723)  
                 **添加日历** : https://ctftime.org/event/2878.ics  
                 
