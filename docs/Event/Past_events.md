@@ -32,6 +32,15 @@ comments: true
     **赛事主办** : TU Delft CTF Team (https://ctftime.org/team/134822)  
     **添加日历** : https://ctftime.org/event/2953.ics  
     
+??? Quote "[Layer7 CTF 2025](https://ctf.layer7.kr/)"  
+    [![](https://ctftime.org/media/events/white_ver.png){ width="200" align=left }](https://ctf.layer7.kr/)  
+    **比赛名称** : [Layer7 CTF 2025](https://ctf.layer7.kr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-15 09:00:00 - 2025-11-16 09:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Layer7 CTF (https://ctftime.org/team/87286)  
+    **添加日历** : https://ctftime.org/event/2990.ics  
+    
 ??? Quote "[Guardians of the TI](http://ctf.gematik.de/)"  
     [![](https://ctftime.org/media/events/logo_guardians.png){ width="200" align=left }](http://ctf.gematik.de/)  
     **比赛名称** : [Guardians of the TI](http://ctf.gematik.de/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 55.00  
     **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
     **添加日历** : https://ctftime.org/event/2683.ics  
-    
-??? Quote "[scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)"  
-    [![](https://ctftime.org/media/events/final_logo.png){ width="200" align=left }](https://ctf.scriptsorcerers.xyz/)  
-    **比赛名称** : [scriptCTF 2025](https://ctf.scriptsorcerers.xyz/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-08-16 08:00:00 - 2025-08-18 08:00:00 UTC+8  
-    **比赛权重** : 24.68  
-    **赛事主办** : ScriptSorcerers (https://ctftime.org/team/284260)  
-    **添加日历** : https://ctftime.org/event/2792.ics  
     

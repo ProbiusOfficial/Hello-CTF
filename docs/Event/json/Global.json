@@ -552,18 +552,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Layer7 CTF 2025",
-        "比赛时间": "2025-11-15 09:00:00 - 2025-11-16 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2990.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.layer7.kr/",
-        "比赛标志": "https://ctftime.org/media/events/white_ver.png",
-        "比赛权重": "0",
-        "赛事主办": "Layer7 CTF (https://ctftime.org/team/87286)",
-        "比赛ID": "368",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "RCTF 2025",
         "比赛时间": "2025-11-15 10:00:00 - 2025-11-17 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2992.ics",
@@ -621,6 +609,18 @@
         "比赛权重": "0.00",
         "赛事主办": "TU Delft CTF Team (https://ctftime.org/team/134822)",
         "比赛ID": "842",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Layer7 CTF 2025",
+        "比赛时间": "2025-11-15 09:00:00 - 2025-11-16 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2990.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.layer7.kr/",
+        "比赛标志": "https://ctftime.org/media/events/white_ver.png",
+        "比赛权重": "0",
+        "赛事主办": "Layer7 CTF (https://ctftime.org/team/87286)",
+        "比赛ID": "368",
         "比赛状态": "past"
     },
     {
@@ -1785,18 +1785,6 @@
         "比赛权重": "55.00",
         "赛事主办": "Project Sekai (https://ctftime.org/team/169557)",
         "比赛ID": "769",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "scriptCTF 2025",
-        "比赛时间": "2025-08-16 08:00:00 - 2025-08-18 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2792.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.scriptsorcerers.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/final_logo.png",
-        "比赛权重": "24.68",
-        "赛事主办": "ScriptSorcerers (https://ctftime.org/team/284260)",
-        "比赛ID": "1318",
         "比赛状态": "past"
     }
 ]
