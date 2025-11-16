@@ -653,6 +653,15 @@ comments: true
     **赛事主办** : KazHackStan (https://ctftime.org/team/396364)  
     **添加日历** : https://ctftime.org/event/2875.ics  
     
+??? Quote "[Pointer Overflow CTF - 2025](https://pointeroverflowctf.com/)"  
+    [![](https://ctftime.org/media/events/logo4.png){ width="200" align=left }](https://pointeroverflowctf.com/)  
+    **比赛名称** : [Pointer Overflow CTF - 2025](https://pointeroverflowctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-09-14 22:00:00 - 2025-11-16 22:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
+    **添加日历** : https://ctftime.org/event/2904.ics  
+    
 ??? Quote "[CTF@AC - Quals](https://ctf.ac.upt.ro/)"  
     [![](https://ctftime.org/media/events/CTFAC.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
     **比赛名称** : [CTF@AC - Quals](https://ctf.ac.upt.ro/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : CRHC-CTF (https://ctftime.org/team/394472)  
     **添加日历** : https://ctftime.org/event/2873.ics  
-    
-??? Quote "[SekaiCTF 2025](https://ctf.sekai.team/)"  
-    [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
-    **比赛名称** : [SekaiCTF 2025](https://ctf.sekai.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-08-16 09:00:00 - 2025-08-18 09:00:00 UTC+8  
-    **比赛权重** : 55.00  
-    **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
-    **添加日历** : https://ctftime.org/event/2683.ics  
     
