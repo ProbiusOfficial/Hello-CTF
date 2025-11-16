@@ -141,17 +141,17 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2025-03-31
 
     记录一下今年 2025 初赛过程参赛选手信息题目描述小Q是一位热衷于PC客户端安全的技术爱好者，为了不断提升自己的技能，他经常参与各类CTF竞赛。某天，他收到了一封来自神秘人的邮件，内容如下：“我可以引领你进入游戏安全的殿堂，但在此之前，你需要通过我的考验。打开这扇大门的钥匙就隐藏在附件中，你有能力找到它吗？找到正确的flag（2分）flag：flag{ACE_We1C0me!T0Z0Z5GamE...
-    ### [从CVE-2025-30208看任意文件读取利用](https://blog.zgsec.cn/archives/713.html)  
-    >by [曾哥](https://blog.zgsec.cn/), 2025-03-30
-
-    0# 概述师傅们好久不见！最近不是特别忙，就研究研究最新的漏洞。刚好最近一大批漏洞都爆出来了，比如 CVE-2025-1097, CVE-2025-1098, CVE-2025-24514, CVE-2025-1974 Kubernetes Ingress-Nginx Admission Controller RCE Escalation，是危害性极大的高危漏洞，在内网渗透中能直接击穿K8S集群。...
-    ### [【白帽访谈录】云安全将成为未来安全研究主战场-会议纪要](https://blog.zgsec.cn/archives/711.html)  
-    >by [曾哥](https://blog.zgsec.cn/), 2025-02-28
-
-    {bilibili bvid="BV19T9gY4ETm" page=""/}很高兴能参与这期白帽访谈录，也感谢各位师傅的支持~也随时欢迎各位师傅和我友好交流哈哈！本期访谈的回放直播已经上传B站，链接： https://www.bilibili.com/video/BV19T9gY4ETm，感谢各位师傅的一键三连！！！欢迎大家关注渊龙Sec安全团队公众号，干货满满哦~{dotted startCo...
     ### [某系统前台组合拳RCE](https://y4tacker.github.io/2025/02/23/year/2025/02/%E6%9F%90%E7%B3%BB%E7%BB%9F%E5%89%8D%E5%8F%B0%E7%BB%84%E5%90%88%E6%8B%B3RCE/)  
     >by [Y4tacker](https://y4tacker.github.io), 2025-02-23
 
     8133babd8f05e144d8e8c2c4c8ee0fb3d40c2c031c3925709b74cb30c7b27fca92bfd93cf7cf65a6834a805821993b6c9674428ad9fdcf275cf47eb5e07cfd2d776e01401bdf1c9d1052d24b573abb3ff41508c0d801b0496ab9e4257b11885ae0e4bf...
+    ### [windowsAPC学习（2）——APC挂入与执行](https://xia0ji233.github.io/2025/02/17/WindowsAPC2/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-02-17
+
+    今天详细了解一下 APC 到底是怎么工作的。APC挂入在 APC 挂入的时候，内核会准备一个 _KAPC 结构体，将该结构体挂入线程的 APC 队列中。KAPC结构体介绍先在 windbg 中查看一下：123456789101112131415161718kd> dt _KAPCntdll!_KAPC   +0x000 Type             : UChar   +0x001 Spare...
+    ### [某二次元开放世界冒险游戏反作弊分析报告](https://xia0ji233.github.io/2025/02/14/Game6/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-02-14
+
+    好久没碰某二次元开放世界冒险游戏了，听说新升级了反作弊，故来一探究竟，并尝试实现一些简单的功能。基本保护分析这种级别的游戏首先不考虑静态分析，直接跑起来。不出意外肯定不能直接内存读写，想附加调试器也是附加不上的，所以选择先从驱动入手，游戏加载时会加载驱动。先尝试简单的拦截，方法很多：注册 LoadImage 回调拦截，改驱动名等等等。后者比较好实现，但是运行游戏一段时间会弹窗强制退出。而如果说让保...
 
 </div>
