@@ -18,15 +18,6 @@ comments: true
     **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
     **添加日历** : https://ctftime.org/event/2844.ics  
     
-??? Quote "[RCTF 2025](https://rctf2025.xctf.org.cn/)"  
-    [![](https://ctftime.org/media/events/rois_1.jpg){ width="200" align=left }](https://rctf2025.xctf.org.cn/)  
-    **比赛名称** : [RCTF 2025](https://rctf2025.xctf.org.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-15 10:00:00 - 2025-11-17 10:00:00 UTC+8  
-    **比赛权重** : 41.75  
-    **赛事主办** : ROIS (https://ctftime.org/team/6476)  
-    **添加日历** : https://ctftime.org/event/2992.ics  
-    
 ??? Quote "[M*CTF 2025 Quals](https://mctf.mtuci.ru/)"  
     [![](https://ctftime.org/media/events/logo_15.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
     **比赛名称** : [M*CTF 2025 Quals](https://mctf.mtuci.ru/)  

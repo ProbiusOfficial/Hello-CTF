@@ -50,6 +50,15 @@ comments: true
     **赛事主办** : TU Delft CTF Team (https://ctftime.org/team/134822)  
     **添加日历** : https://ctftime.org/event/2953.ics  
     
+??? Quote "[RCTF 2025](https://rctf2025.xctf.org.cn/)"  
+    [![](https://ctftime.org/media/events/rois_1.jpg){ width="200" align=left }](https://rctf2025.xctf.org.cn/)  
+    **比赛名称** : [RCTF 2025](https://rctf2025.xctf.org.cn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-15 10:00:00 - 2025-11-17 10:00:00 UTC+8  
+    **比赛权重** : 41.75  
+    **赛事主办** : ROIS (https://ctftime.org/team/6476)  
+    **添加日历** : https://ctftime.org/event/2992.ics  
+    
 ??? Quote "[Layer7 CTF 2025](https://ctf.layer7.kr/)"  
     [![](https://ctftime.org/media/events/white_ver.png){ width="200" align=left }](https://ctf.layer7.kr/)  
     **比赛名称** : [Layer7 CTF 2025](https://ctf.layer7.kr/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 100.00  
     **赛事主办** : HITCON (https://ctftime.org/team/8299)  
     **添加日历** : https://ctftime.org/event/2783.ics  
-    
-??? Quote "[BrunnerCTF 2025](https://ctf.brunnerne.dk/)"  
-    [![](https://ctftime.org/media/events/Discord_logo_-_2-6.png){ width="200" align=left }](https://ctf.brunnerne.dk/)  
-    **比赛名称** : [BrunnerCTF 2025](https://ctf.brunnerne.dk/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-08-22 20:00:00 - 2025-08-24 20:00:00 UTC+8  
-    **比赛权重** : 24.63  
-    **赛事主办** : Brunnerne (https://ctftime.org/team/155032)  
-    **添加日历** : https://ctftime.org/event/2835.ics  
     
