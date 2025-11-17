@@ -689,15 +689,6 @@ hide:
                 **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
                 **添加日历** : https://ctftime.org/event/2844.ics  
                 
-            ??? Quote "[M*CTF 2025 Quals](https://mctf.mtuci.ru/)"  
-                [![](https://ctftime.org/media/events/logo_15.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
-                **比赛名称** : [M*CTF 2025 Quals](https://mctf.mtuci.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-16 17:00:00 - 2025-11-17 17:00:00 UTC+8  
-                **比赛权重** : 45.64  
-                **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-                **添加日历** : https://ctftime.org/event/2996.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[MoeCTF 2025](https://ctf.xidian.edu.cn/games/22)"  
@@ -708,6 +699,15 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
+            ??? Quote "[M*CTF 2025 Quals](https://mctf.mtuci.ru/)"  
+                [![](https://ctftime.org/media/events/logo_15.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
+                **比赛名称** : [M*CTF 2025 Quals](https://mctf.mtuci.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-16 17:00:00 - 2025-11-17 17:00:00 UTC+8  
+                **比赛权重** : 45.64  
+                **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
+                **添加日历** : https://ctftime.org/event/2996.ics  
+                
             ??? Quote "[PwnSec CTF 2025](https://pwnsec.ctf.ae/)"  
                 [![](https://ctftime.org/media/events/pwnsec.png){ width="200" align=left }](https://pwnsec.ctf.ae/)  
                 **比赛名称** : [PwnSec CTF 2025](https://pwnsec.ctf.ae/)  
@@ -1010,7 +1010,7 @@ hide:
                 **比赛名称** : [DEADFACE CTF 2025](https://ctf.deadface.io/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-10-25 22:00:00 - 2025-10-27 08:00:00 UTC+8  
-                **比赛权重** : 35.15  
+                **比赛权重** : 35.23  
                 **赛事主办** : Cyber Hacktics (https://ctftime.org/team/127017)  
                 **添加日历** : https://ctftime.org/event/2912.ics  
                 
@@ -1598,15 +1598,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Sawah Cyber Security (https://ctftime.org/team/389651)  
                 **添加日历** : https://ctftime.org/event/2824.ics  
-                
-            ??? Quote "[HITCON CTF 2025](https://ctf2025.hitcon.org/)"  
-                [![](https://ctftime.org/media/events/83e99b182fd8f8a8e11a44a7c2f44557.png){ width="200" align=left }](https://ctf2025.hitcon.org/)  
-                **比赛名称** : [HITCON CTF 2025](https://ctf2025.hitcon.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-08-22 22:00:00 - 2025-08-24 22:00:00 UTC+8  
-                **比赛权重** : 100.00  
-                **赛事主办** : HITCON (https://ctftime.org/team/8299)  
-                **添加日历** : https://ctftime.org/event/2783.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

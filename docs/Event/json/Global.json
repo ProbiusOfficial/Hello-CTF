@@ -537,7 +537,7 @@
         "比赛权重": "45.64",
         "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
         "比赛ID": "165",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "PwnSec CTF 2025",
@@ -1725,18 +1725,6 @@
         "比赛权重": "0",
         "赛事主办": "Sawah Cyber Security (https://ctftime.org/team/389651)",
         "比赛ID": "1352",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "HITCON CTF 2025",
-        "比赛时间": "2025-08-22 22:00:00 - 2025-08-24 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2783.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf2025.hitcon.org/",
-        "比赛标志": "https://ctftime.org/media/events/83e99b182fd8f8a8e11a44a7c2f44557.png",
-        "比赛权重": "100.00",
-        "赛事主办": "HITCON (https://ctftime.org/team/8299)",
-        "比赛ID": "79",
         "比赛状态": "past"
     }
 ]
