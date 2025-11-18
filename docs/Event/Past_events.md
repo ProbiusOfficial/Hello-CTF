@@ -86,6 +86,15 @@ comments: true
     **赛事主办** : H34lthineer (https://ctftime.org/team/170109)  
     **添加日历** : https://ctftime.org/event/3006.ics  
     
+??? Quote "[AmateursCTF 2025](https://ctf.amateurs.team/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.amateurs.team/)  
+    **比赛名称** : [AmateursCTF 2025](https://ctf.amateurs.team/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-14 08:00:00 - 2025-11-18 08:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
+    **添加日历** : https://ctftime.org/event/2844.ics  
+    
 ??? Quote "[POC CTF Final 2025](https://powerofcommunity.net/2025/ctf.html)"  
     [![](https://ctftime.org/media/events/vDP90SY4soKs6q3cKITowqXIE7a0Jy_1.png){ width="200" align=left }](https://powerofcommunity.net/2025/ctf.html)  
     **比赛名称** : [POC CTF Final 2025](https://powerofcommunity.net/2025/ctf.html)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : HackerLab (https://ctftime.org/team/299486)  
     **添加日历** : https://ctftime.org/event/2894.ics  
-    
-??? Quote "[Sawah Cyber Security CTF 2025](https://ctf.sawahcyber.id/)"  
-    [![](https://ctftime.org/media/events/Logo_1.1.jpg){ width="200" align=left }](https://ctf.sawahcyber.id/)  
-    **比赛名称** : [Sawah Cyber Security CTF 2025](https://ctf.sawahcyber.id/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-08-23 13:00:00 - 2025-08-23 17:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Sawah Cyber Security (https://ctftime.org/team/389651)  
-    **添加日历** : https://ctftime.org/event/2824.ics  
     
