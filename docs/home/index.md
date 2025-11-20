@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Hardwear.io NL 2025 Hardware CTF](https://hwc.tf/)"  
-            [![](https://ctftime.org/media/events/logohwcolor_16.png){ width="200" align=left }](https://hwc.tf/)  
-            **比赛名称** : [Hardwear.io NL 2025 Hardware CTF](https://hwc.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-11-20 17:00:00 - 2025-11-21 20:50:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Hardware CTF (https://ctftime.org/team/274600)  
-            **添加日历** : https://ctftime.org/event/3002.ics  
-            
         ??? Quote "[MetaCTF November 2025 Flash CTF](https://mctf.io/nov2025)"  
             [![](https://ctftime.org){ width="200" align=left }](https://mctf.io/nov2025)  
             **比赛名称** : [MetaCTF November 2025 Flash CTF](https://mctf.io/nov2025)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : sknb (https://ctftime.org/team/355880)  
             **添加日历** : https://ctftime.org/event/2947.ics  
+            
+        ??? Quote "[CTFZone 2025 Final](https://ctfz.zone/)"  
+            [![](https://ctftime.org/media/events/aa86f826480a008ed91d88a917a0c33b_1.png){ width="200" align=left }](https://ctfz.zone/)  
+            **比赛名称** : [CTFZone 2025 Final](https://ctfz.zone/)  
+            **比赛形式** : Attack-Defense  
+            **比赛时间** : 2025-11-22 17:00:00 - 2025-11-23 01:00:00 UTC+8  
+            **比赛权重** : 96.90  
+            **赛事主办** : BIZone (https://ctftime.org/team/32190)  
+            **添加日历** : https://ctftime.org/event/2972.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
