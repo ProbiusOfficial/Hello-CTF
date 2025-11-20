@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Ukrainian National CTF](https://hackenproof.com/gur-national-ctf-en)"  
-                [![](https://ctftime.org/media/events/nationalCtf.jpg){ width="200" align=left }](https://hackenproof.com/gur-national-ctf-en)  
-                **比赛名称** : [Ukrainian National CTF](https://hackenproof.com/gur-national-ctf-en)  
-                **比赛形式** : Hack quest  
-                **比赛时间** : 2025-11-20 08:00:00 - 2025-12-01 08:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Hacken Proof (https://ctftime.org/team/411613)  
-                **添加日历** : https://ctftime.org/event/3007.ics  
-                
             ??? Quote "[snakeCTF 2025 Finals](https://snakectf.org/)"  
                 [![](https://ctftime.org/media/events/LogoCroppable_2_1.png){ width="200" align=left }](https://snakectf.org/)  
                 **比赛名称** : [snakeCTF 2025 Finals](https://snakectf.org/)  
@@ -680,7 +671,15 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-    
+            ??? Quote "[Ukrainian National CTF](https://hackenproof.com/gur-national-ctf-en)"  
+                [![](https://ctftime.org/media/events/nationalCtf.jpg){ width="200" align=left }](https://hackenproof.com/gur-national-ctf-en)  
+                **比赛名称** : [Ukrainian National CTF](https://hackenproof.com/gur-national-ctf-en)  
+                **比赛形式** : Hack quest  
+                **比赛时间** : 2025-11-20 08:00:00 - 2025-12-01 08:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Hacken Proof (https://ctftime.org/team/411613)  
+                **添加日历** : https://ctftime.org/event/3007.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[MoeCTF 2025](https://ctf.xidian.edu.cn/games/22)"  
@@ -930,7 +929,7 @@ hide:
                 **比赛名称** : [V1t CTF 2025](https://ctf.v1t.site/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-10-31 21:00:00 - 2025-11-02 21:00:00 UTC+8  
-                **比赛权重** : 21.71  
+                **比赛权重** : 21.78  
                 **赛事主办** : V1t (https://ctftime.org/team/280950)  
                 **添加日历** : https://ctftime.org/event/2920.ics  
                 
@@ -1020,7 +1019,7 @@ hide:
                 **比赛名称** : [osu!gaming CTF 2025](https://osugaming.sekai.team/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-10-25 10:00:00 - 2025-10-27 10:00:00 UTC+8  
-                **比赛权重** : 21.70  
+                **比赛权重** : 21.82  
                 **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
                 **添加日历** : https://ctftime.org/event/2801.ics  
                 
@@ -1119,7 +1118,7 @@ hide:
                 **比赛名称** : [QnQSec CTF 2025](https://ctf.qnqsec.team/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-10-17 02:00:00 - 2025-10-20 02:00:00 UTC+8  
-                **比赛权重** : 24.73  
+                **比赛权重** : 24.74  
                 **赛事主办** : QnQSec (https://ctftime.org/team/367683)  
                 **添加日历** : https://ctftime.org/event/2826.ics  
                 
@@ -1551,7 +1550,7 @@ hide:
                 **比赛名称** : [Full Weak Engineer CTF 2025](https://ctf.fwectf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-08-29 18:00:00 - 2025-08-31 18:00:00 UTC+8  
-                **比赛权重** : 24.60  
+                **比赛权重** : 24.61  
                 **赛事主办** : full_weak_engineer (https://ctftime.org/team/305489)  
                 **添加日历** : https://ctftime.org/event/2864.ics  
                 

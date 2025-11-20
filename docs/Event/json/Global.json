@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Ukrainian National CTF",
-        "比赛时间": "2025-11-20 08:00:00 - 2025-12-01 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3007.ics",
-        "比赛形式": "Hack quest",
-        "比赛链接": "https://hackenproof.com/gur-national-ctf-en",
-        "比赛标志": "https://ctftime.org/media/events/nationalCtf.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Hacken Proof (https://ctftime.org/team/411613)",
-        "比赛ID": "1444",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "snakeCTF 2025 Finals",
         "比赛时间": "2025-11-20 16:00:00 - 2025-11-23 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2994.ics",
@@ -516,6 +504,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Ukrainian National CTF",
+        "比赛时间": "2025-11-20 08:00:00 - 2025-12-01 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3007.ics",
+        "比赛形式": "Hack quest",
+        "比赛链接": "https://hackenproof.com/gur-national-ctf-en",
+        "比赛标志": "https://ctftime.org/media/events/nationalCtf.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Hacken Proof (https://ctftime.org/team/411613)",
+        "比赛ID": "1444",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "M*CTF 2025 Quals",
         "比赛时间": "2025-11-16 17:00:00 - 2025-11-17 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2996.ics",
@@ -834,7 +834,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.v1t.site/",
         "比赛标志": "https://ctftime.org/media/events/Ban_sao_cua_V1T.png",
-        "比赛权重": "21.71",
+        "比赛权重": "21.78",
         "赛事主办": "V1t (https://ctftime.org/team/280950)",
         "比赛ID": "1403",
         "比赛状态": "past"
@@ -954,7 +954,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://osugaming.sekai.team/",
         "比赛标志": "https://ctftime.org/media/events/3fb5fab1b0946459c9c33d71e6c5db35.png",
-        "比赛权重": "21.70",
+        "比赛权重": "21.82",
         "赛事主办": "osu!gaming (https://ctftime.org/team/186954)",
         "比赛ID": "998",
         "比赛状态": "past"
@@ -1086,7 +1086,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.qnqsec.team/",
         "比赛标志": "https://ctftime.org/media/events/Logo_QnQSec.jpg",
-        "比赛权重": "24.73",
+        "比赛权重": "24.74",
         "赛事主办": "QnQSec (https://ctftime.org/team/367683)",
         "比赛ID": "1347",
         "比赛状态": "past"
@@ -1662,7 +1662,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.fwectf.com/",
         "比赛标志": "https://ctftime.org/media/events/icon-2.png",
-        "比赛权重": "24.60",
+        "比赛权重": "24.61",
         "赛事主办": "full_weak_engineer (https://ctftime.org/team/305489)",
         "比赛ID": "1349",
         "比赛状态": "past"

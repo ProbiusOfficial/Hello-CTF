@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Ukrainian National CTF](https://hackenproof.com/gur-national-ctf-en)"  
-            [![](https://ctftime.org/media/events/nationalCtf.jpg){ width="200" align=left }](https://hackenproof.com/gur-national-ctf-en)  
-            **比赛名称** : [Ukrainian National CTF](https://hackenproof.com/gur-national-ctf-en)  
-            **比赛形式** : Hack quest  
-            **比赛时间** : 2025-11-20 08:00:00 - 2025-12-01 08:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : Hacken Proof (https://ctftime.org/team/411613)  
-            **添加日历** : https://ctftime.org/event/3007.ics  
-            
         ??? Quote "[snakeCTF 2025 Finals](https://snakectf.org/)"  
             [![](https://ctftime.org/media/events/LogoCroppable_2_1.png){ width="200" align=left }](https://snakectf.org/)  
             **比赛名称** : [snakeCTF 2025 Finals](https://snakectf.org/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
             **添加日历** : https://ctftime.org/event/3010.ics  
+            
+        ??? Quote "[PatriotCTF 2025](http://pctf.competitivecyber.club/)"  
+            [![](https://ctftime.org/media/events/71044796c6f64e9996d2077fd0b64c4c.jpg){ width="200" align=left }](http://pctf.competitivecyber.club/)  
+            **比赛名称** : [PatriotCTF 2025](http://pctf.competitivecyber.club/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-11-22 02:00:00 - 2025-11-24 02:00:00 UTC+8  
+            **比赛权重** : 42.42  
+            **赛事主办** : Competitive Cyber at Mason (https://ctftime.org/team/176906)  
+            **添加日历** : https://ctftime.org/event/2850.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

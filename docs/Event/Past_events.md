@@ -253,7 +253,7 @@ comments: true
     **比赛名称** : [V1t CTF 2025](https://ctf.v1t.site/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-10-31 21:00:00 - 2025-11-02 21:00:00 UTC+8  
-    **比赛权重** : 21.71  
+    **比赛权重** : 21.78  
     **赛事主办** : V1t (https://ctftime.org/team/280950)  
     **添加日历** : https://ctftime.org/event/2920.ics  
     
@@ -343,7 +343,7 @@ comments: true
     **比赛名称** : [osu!gaming CTF 2025](https://osugaming.sekai.team/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-10-25 10:00:00 - 2025-10-27 10:00:00 UTC+8  
-    **比赛权重** : 21.70  
+    **比赛权重** : 21.82  
     **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
     **添加日历** : https://ctftime.org/event/2801.ics  
     
@@ -442,7 +442,7 @@ comments: true
     **比赛名称** : [QnQSec CTF 2025](https://ctf.qnqsec.team/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-10-17 02:00:00 - 2025-10-20 02:00:00 UTC+8  
-    **比赛权重** : 24.73  
+    **比赛权重** : 24.74  
     **赛事主办** : QnQSec (https://ctftime.org/team/367683)  
     **添加日历** : https://ctftime.org/event/2826.ics  
     
@@ -874,7 +874,7 @@ comments: true
     **比赛名称** : [Full Weak Engineer CTF 2025](https://ctf.fwectf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-08-29 18:00:00 - 2025-08-31 18:00:00 UTC+8  
-    **比赛权重** : 24.60  
+    **比赛权重** : 24.61  
     **赛事主办** : full_weak_engineer (https://ctftime.org/team/305489)  
     **添加日历** : https://ctftime.org/event/2864.ics  
     
