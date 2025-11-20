@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "MetaCTF November 2025 Flash CTF",
-        "比赛时间": "2025-11-21 06:00:00 - 2025-11-21 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3010.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://mctf.io/nov2025",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "MetaCTF (https://ctftime.org/team/72254)",
-        "比赛ID": "500",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "PatriotCTF 2025",
         "比赛时间": "2025-11-22 02:00:00 - 2025-11-24 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2850.ics",
@@ -513,6 +501,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Hardware CTF (https://ctftime.org/team/274600)",
         "比赛ID": "1021",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "MetaCTF November 2025 Flash CTF",
+        "比赛时间": "2025-11-21 06:00:00 - 2025-11-21 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3010.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://mctf.io/nov2025",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "MetaCTF (https://ctftime.org/team/72254)",
+        "比赛ID": "500",
         "比赛状态": "nowrunning"
     },
     {
