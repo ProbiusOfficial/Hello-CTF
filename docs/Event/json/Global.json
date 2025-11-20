@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "snakeCTF 2025 Finals",
-        "比赛时间": "2025-11-20 16:00:00 - 2025-11-23 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2994.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://snakectf.org/",
-        "比赛标志": "https://ctftime.org/media/events/LogoCroppable_2_1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "MadrHacks (https://ctftime.org/team/114509)",
-        "比赛ID": "994",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Hardwear.io NL 2025 Hardware CTF",
         "比赛时间": "2025-11-20 17:00:00 - 2025-11-21 20:50:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3002.ics",
@@ -513,6 +501,18 @@
         "比赛权重": "0",
         "赛事主办": "Hacken Proof (https://ctftime.org/team/411613)",
         "比赛ID": "1444",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "snakeCTF 2025 Finals",
+        "比赛时间": "2025-11-20 16:00:00 - 2025-11-23 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2994.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://snakectf.org/",
+        "比赛标志": "https://ctftime.org/media/events/LogoCroppable_2_1.png",
+        "比赛权重": "0",
+        "赛事主办": "MadrHacks (https://ctftime.org/team/114509)",
+        "比赛ID": "994",
         "比赛状态": "nowrunning"
     },
     {

@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[snakeCTF 2025 Finals](https://snakectf.org/)"  
-            [![](https://ctftime.org/media/events/LogoCroppable_2_1.png){ width="200" align=left }](https://snakectf.org/)  
-            **比赛名称** : [snakeCTF 2025 Finals](https://snakectf.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-11-20 16:00:00 - 2025-11-23 21:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
-            **添加日历** : https://ctftime.org/event/2994.ics  
-            
         ??? Quote "[Hardwear.io NL 2025 Hardware CTF](https://hwc.tf/)"  
             [![](https://ctftime.org/media/events/logohwcolor_16.png){ width="200" align=left }](https://hwc.tf/)  
             **比赛名称** : [Hardwear.io NL 2025 Hardware CTF](https://hwc.tf/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 42.42  
             **赛事主办** : Competitive Cyber at Mason (https://ctftime.org/team/176906)  
             **添加日历** : https://ctftime.org/event/2850.ics  
+            
+        ??? Quote "[sknbCTF 2025](http://ctf.sknb.team/)"  
+            [![](https://ctftime.org/media/events/sknb_logo.png){ width="200" align=left }](http://ctf.sknb.team/)  
+            **比赛名称** : [sknbCTF 2025](http://ctf.sknb.team/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-11-22 11:00:00 - 2025-11-23 11:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : sknb (https://ctftime.org/team/355880)  
+            **添加日历** : https://ctftime.org/event/2947.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
