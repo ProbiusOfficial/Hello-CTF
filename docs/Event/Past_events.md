@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[MetaCTF November 2025 Flash CTF](https://mctf.io/nov2025)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://mctf.io/nov2025)  
+    **比赛名称** : [MetaCTF November 2025 Flash CTF](https://mctf.io/nov2025)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-21 06:00:00 - 2025-11-21 08:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
+    **添加日历** : https://ctftime.org/event/3010.ics  
+    
 ??? Quote "[M*CTF 2025 Quals](https://mctf.mtuci.ru/)"  
     [![](https://ctftime.org/media/events/logo_15.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
     **比赛名称** : [M*CTF 2025 Quals](https://mctf.mtuci.ru/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 67.32  
     **赛事主办** : LIT CTF (https://ctftime.org/team/157660)  
     **添加日历** : https://ctftime.org/event/2890.ics  
-    
-??? Quote "[KubanCTF Qualifier 2025](https://kubanctf2025.ru/)"  
-    [![](https://ctftime.org/media/events/9c50b904-9541-4e89-839c-0b0945333b60_1.jpg){ width="200" align=left }](https://kubanctf2025.ru/)  
-    **比赛名称** : [KubanCTF Qualifier 2025](https://kubanctf2025.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-08-23 15:00:00 - 2025-08-24 01:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : HackerLab (https://ctftime.org/team/299486)  
-    **添加日历** : https://ctftime.org/event/2894.ics  
     

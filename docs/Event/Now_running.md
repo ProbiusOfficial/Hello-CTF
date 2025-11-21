@@ -36,12 +36,3 @@ comments: true
     **赛事主办** : Hardware CTF (https://ctftime.org/team/274600)  
     **添加日历** : https://ctftime.org/event/3002.ics  
     
-??? Quote "[MetaCTF November 2025 Flash CTF](https://mctf.io/nov2025)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://mctf.io/nov2025)  
-    **比赛名称** : [MetaCTF November 2025 Flash CTF](https://mctf.io/nov2025)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-21 06:00:00 - 2025-11-21 08:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
-    **添加日历** : https://ctftime.org/event/3010.ics  
-    
