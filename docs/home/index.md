@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[PatriotCTF 2025](http://pctf.competitivecyber.club/)"  
-            [![](https://ctftime.org/media/events/71044796c6f64e9996d2077fd0b64c4c.jpg){ width="200" align=left }](http://pctf.competitivecyber.club/)  
-            **比赛名称** : [PatriotCTF 2025](http://pctf.competitivecyber.club/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-11-22 02:00:00 - 2025-11-24 02:00:00 UTC+8  
-            **比赛权重** : 42.42  
-            **赛事主办** : Competitive Cyber at Mason (https://ctftime.org/team/176906)  
-            **添加日历** : https://ctftime.org/event/2850.ics  
-            
         ??? Quote "[sknbCTF 2025](http://ctf.sknb.team/)"  
             [![](https://ctftime.org/media/events/sknb_logo.png){ width="200" align=left }](http://ctf.sknb.team/)  
             **比赛名称** : [sknbCTF 2025](http://ctf.sknb.team/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 25.00  
             **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
             **添加日历** : https://ctftime.org/event/2909.ics  
+            
+        ??? Quote "[GlacierCTF 2025](https://play.glacierctf.com/)"  
+            [![](https://ctftime.org/media/events/glacierlogo.png){ width="200" align=left }](https://play.glacierctf.com/)  
+            **比赛名称** : [GlacierCTF 2025](https://play.glacierctf.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-11-23 02:00:00 - 2025-11-24 02:00:00 UTC+8  
+            **比赛权重** : 52.57  
+            **赛事主办** : LosFuzzys (https://ctftime.org/team/8323)  
+            **添加日历** : https://ctftime.org/event/2714.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
