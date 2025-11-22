@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[CyberSci Regional Qualifiers 2025-26](https://cybersecuritychallenge.ca/)"  
-                [![](https://ctftime.org/media/events/aa01b0217ba20e130d4605e9bf2b8e6c.jpg){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
-                **比赛名称** : [CyberSci Regional Qualifiers 2025-26](https://cybersecuritychallenge.ca/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-22 23:00:00 - 2025-11-23 06:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
-                **添加日历** : https://ctftime.org/event/2909.ics  
-                
             ??? Quote "[GlacierCTF 2025](https://play.glacierctf.com/)"  
                 [![](https://ctftime.org/media/events/glacierlogo.png){ width="200" align=left }](https://play.glacierctf.com/)  
                 **比赛名称** : [GlacierCTF 2025](https://play.glacierctf.com/)  
@@ -661,6 +652,15 @@ hide:
                 **比赛权重** : 96.90  
                 **赛事主办** : BIZone (https://ctftime.org/team/32190)  
                 **添加日历** : https://ctftime.org/event/2972.ics  
+                
+            ??? Quote "[CyberSci Regional Qualifiers 2025-26](https://cybersecuritychallenge.ca/)"  
+                [![](https://ctftime.org/media/events/aa01b0217ba20e130d4605e9bf2b8e6c.jpg){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
+                **比赛名称** : [CyberSci Regional Qualifiers 2025-26](https://cybersecuritychallenge.ca/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-22 23:00:00 - 2025-11-23 06:00:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
+                **添加日历** : https://ctftime.org/event/2909.ics  
                 
     === "*已经结束*"
         === "国内赛事"
