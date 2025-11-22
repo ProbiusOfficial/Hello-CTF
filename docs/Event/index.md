@@ -635,15 +635,6 @@ hide:
                 **赛事主办** : sknb (https://ctftime.org/team/355880)  
                 **添加日历** : https://ctftime.org/event/2947.ics  
                 
-            ??? Quote "[CyberSci Regional Qualifiers 2025-26](https://cybersecuritychallenge.ca/)"  
-                [![](https://ctftime.org/media/events/aa01b0217ba20e130d4605e9bf2b8e6c.jpg){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
-                **比赛名称** : [CyberSci Regional Qualifiers 2025-26](https://cybersecuritychallenge.ca/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-22 23:00:00 - 2025-11-23 06:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
-                **添加日历** : https://ctftime.org/event/2909.ics  
-                
             ??? Quote "[GlacierCTF 2025](https://play.glacierctf.com/)"  
                 [![](https://ctftime.org/media/events/glacierlogo.png){ width="200" align=left }](https://play.glacierctf.com/)  
                 **比赛名称** : [GlacierCTF 2025](https://play.glacierctf.com/)  
@@ -663,6 +654,15 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
+            ??? Quote "[CyberSci Regional Qualifiers 2025-26](https://cybersecuritychallenge.ca/)"  
+                [![](https://ctftime.org/media/events/aa01b0217ba20e130d4605e9bf2b8e6c.jpg){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
+                **比赛名称** : [CyberSci Regional Qualifiers 2025-26](https://cybersecuritychallenge.ca/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-22 23:00:00 - 2025-11-23 06:00:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
+                **添加日历** : https://ctftime.org/event/2909.ics  
+                
             ??? Quote "[CTFZone 2025 Final](https://ctfz.zone/)"  
                 [![](https://ctftime.org/media/events/aa86f826480a008ed91d88a917a0c33b_1.png){ width="200" align=left }](https://ctfz.zone/)  
                 **比赛名称** : [CTFZone 2025 Final](https://ctfz.zone/)  
@@ -1553,15 +1553,6 @@ hide:
                 **比赛权重** : 24.61  
                 **赛事主办** : full_weak_engineer (https://ctftime.org/team/305489)  
                 **添加日历** : https://ctftime.org/event/2864.ics  
-                
-            ??? Quote "[TFC CTF 2025](https://ctf.thefewchosen.com/)"  
-                [![](https://ctftime.org/media/events/discord_logo_4.png){ width="200" align=left }](https://ctf.thefewchosen.com/)  
-                **比赛名称** : [TFC CTF 2025](https://ctf.thefewchosen.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-08-29 18:00:00 - 2025-08-31 18:00:00 UTC+8  
-                **比赛权重** : 58.19  
-                **赛事主办** : The Few Chosen (https://ctftime.org/team/140885)  
-                **添加日历** : https://ctftime.org/event/2822.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
