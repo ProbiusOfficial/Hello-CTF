@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[CyberSci Regional Qualifiers 2025-26](https://cybersecuritychallenge.ca/)"  
+    [![](https://ctftime.org/media/events/aa01b0217ba20e130d4605e9bf2b8e6c.jpg){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
+    **比赛名称** : [CyberSci Regional Qualifiers 2025-26](https://cybersecuritychallenge.ca/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-22 23:00:00 - 2025-11-23 06:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
+    **添加日历** : https://ctftime.org/event/2909.ics  
+    
 ??? Quote "[CTFZone 2025 Final](https://ctfz.zone/)"  
     [![](https://ctftime.org/media/events/aa86f826480a008ed91d88a917a0c33b_1.png){ width="200" align=left }](https://ctfz.zone/)  
     **比赛名称** : [CTFZone 2025 Final](https://ctfz.zone/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 24.61  
     **赛事主办** : full_weak_engineer (https://ctftime.org/team/305489)  
     **添加日历** : https://ctftime.org/event/2864.ics  
-    
-??? Quote "[TFC CTF 2025](https://ctf.thefewchosen.com/)"  
-    [![](https://ctftime.org/media/events/discord_logo_4.png){ width="200" align=left }](https://ctf.thefewchosen.com/)  
-    **比赛名称** : [TFC CTF 2025](https://ctf.thefewchosen.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-08-29 18:00:00 - 2025-08-31 18:00:00 UTC+8  
-    **比赛权重** : 58.19  
-    **赛事主办** : The Few Chosen (https://ctftime.org/team/140885)  
-    **添加日历** : https://ctftime.org/event/2822.ics  
     
