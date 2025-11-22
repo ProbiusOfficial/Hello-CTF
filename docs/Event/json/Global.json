@@ -468,18 +468,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CTFZone 2025 Final",
-        "比赛时间": "2025-11-22 17:00:00 - 2025-11-23 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2972.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://ctfz.zone/",
-        "比赛标志": "https://ctftime.org/media/events/aa86f826480a008ed91d88a917a0c33b_1.png",
-        "比赛权重": "96.90",
-        "赛事主办": "BIZone (https://ctftime.org/team/32190)",
-        "比赛ID": "201",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "CyberSci Regional Qualifiers 2025-26",
         "比赛时间": "2025-11-22 23:00:00 - 2025-11-23 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2909.ics",
@@ -490,6 +478,18 @@
         "赛事主办": "CyberSciOrganizers (https://ctftime.org/team/157536)",
         "比赛ID": "643",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CTFZone 2025 Final",
+        "比赛时间": "2025-11-22 17:00:00 - 2025-11-23 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2972.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://ctfz.zone/",
+        "比赛标志": "https://ctftime.org/media/events/aa86f826480a008ed91d88a917a0c33b_1.png",
+        "比赛权重": "96.90",
+        "赛事主办": "BIZone (https://ctftime.org/team/32190)",
+        "比赛ID": "201",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "MetaCTF November 2025 Flash CTF",
@@ -1677,18 +1677,6 @@
         "比赛权重": "58.19",
         "赛事主办": "The Few Chosen (https://ctftime.org/team/140885)",
         "比赛ID": "696",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "PECAN+ CTF 2025",
-        "比赛时间": "2025-08-24 09:00:00 - 2025-08-24 13:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2882.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://pecanplus.org/",
-        "比赛标志": "https://ctftime.org/media/events/pecanlogo.png",
-        "比赛权重": "0.00",
-        "赛事主办": "PECAN+ (https://ctftime.org/team/250009)",
-        "比赛ID": "973",
         "比赛状态": "past"
     }
 ]
