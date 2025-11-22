@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[GlacierCTF 2025](https://play.glacierctf.com/)"  
-            [![](https://ctftime.org/media/events/glacierlogo.png){ width="200" align=left }](https://play.glacierctf.com/)  
-            **比赛名称** : [GlacierCTF 2025](https://play.glacierctf.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-11-23 02:00:00 - 2025-11-24 02:00:00 UTC+8  
-            **比赛权重** : 52.57  
-            **赛事主办** : LosFuzzys (https://ctftime.org/team/8323)  
-            **添加日历** : https://ctftime.org/event/2714.ics  
-            
         ??? Quote "[Infosec University Hackathon 2025](https://syfinfosechackathon.info/)"  
             [![](https://ctftime.org/media/events/OCTOBER_INFOSEC_AWARENESS_MONTH_-_Logo.jpg){ width="200" align=left }](https://syfinfosechackathon.info/)  
             **比赛名称** : [Infosec University Hackathon 2025](https://syfinfosechackathon.info/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 45.00  
             **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
             **添加日历** : https://ctftime.org/event/2944.ics  
+            
+        ??? Quote "[HeroCTF v7](https://ctf.heroctf.fr/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ctf.heroctf.fr/)  
+            **比赛名称** : [HeroCTF v7](https://ctf.heroctf.fr/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-11-29 04:00:00 - 2025-12-01 06:00:00 UTC+8  
+            **比赛权重** : 65.00  
+            **赛事主办** : HeroCTF (https://ctftime.org/team/145166)  
+            **添加日历** : https://ctftime.org/event/2869.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
