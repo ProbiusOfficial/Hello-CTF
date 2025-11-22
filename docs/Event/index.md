@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[sknbCTF 2025](http://ctf.sknb.team/)"  
-                [![](https://ctftime.org/media/events/sknb_logo.png){ width="200" align=left }](http://ctf.sknb.team/)  
-                **比赛名称** : [sknbCTF 2025](http://ctf.sknb.team/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-22 11:00:00 - 2025-11-23 11:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : sknb (https://ctftime.org/team/355880)  
-                **添加日历** : https://ctftime.org/event/2947.ics  
-                
             ??? Quote "[CTFZone 2025 Final](https://ctfz.zone/)"  
                 [![](https://ctftime.org/media/events/aa86f826480a008ed91d88a917a0c33b_1.png){ width="200" align=left }](https://ctfz.zone/)  
                 **比赛名称** : [CTFZone 2025 Final](https://ctfz.zone/)  
@@ -661,6 +652,15 @@ hide:
                 **比赛权重** : 42.42  
                 **赛事主办** : Competitive Cyber at Mason (https://ctftime.org/team/176906)  
                 **添加日历** : https://ctftime.org/event/2850.ics  
+                
+            ??? Quote "[sknbCTF 2025](http://ctf.sknb.team/)"  
+                [![](https://ctftime.org/media/events/sknb_logo.png){ width="200" align=left }](http://ctf.sknb.team/)  
+                **比赛名称** : [sknbCTF 2025](http://ctf.sknb.team/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-22 11:00:00 - 2025-11-23 11:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : sknb (https://ctftime.org/team/355880)  
+                **添加日历** : https://ctftime.org/event/2947.ics  
                 
     === "*已经结束*"
         === "国内赛事"
