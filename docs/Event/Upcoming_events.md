@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[CTFZone 2025 Final](https://ctfz.zone/)"  
-    [![](https://ctftime.org/media/events/aa86f826480a008ed91d88a917a0c33b_1.png){ width="200" align=left }](https://ctfz.zone/)  
-    **比赛名称** : [CTFZone 2025 Final](https://ctfz.zone/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2025-11-22 17:00:00 - 2025-11-23 01:00:00 UTC+8  
-    **比赛权重** : 96.90  
-    **赛事主办** : BIZone (https://ctftime.org/team/32190)  
-    **添加日历** : https://ctftime.org/event/2972.ics  
-    
 ??? Quote "[CyberSci Regional Qualifiers 2025-26](https://cybersecuritychallenge.ca/)"  
     [![](https://ctftime.org/media/events/aa01b0217ba20e130d4605e9bf2b8e6c.jpg){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
     **比赛名称** : [CyberSci Regional Qualifiers 2025-26](https://cybersecuritychallenge.ca/)  
