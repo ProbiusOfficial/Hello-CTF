@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Infosec University Hackathon 2025](https://syfinfosechackathon.info/)"  
-            [![](https://ctftime.org/media/events/OCTOBER_INFOSEC_AWARENESS_MONTH_-_Logo.jpg){ width="200" align=left }](https://syfinfosechackathon.info/)  
-            **比赛名称** : [Infosec University Hackathon 2025](https://syfinfosechackathon.info/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-11-23 10:00:00 - 2025-11-23 15:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : Synchrony Infosec University Hackathon (https://ctftime.org/team/412036)  
-            **添加日历** : https://ctftime.org/event/3008.ics  
-            
         ??? Quote "[2025 Qiangwang Challenge on Cyber Mimic Defense Finals](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)"  
             [![](https://ctftime.org/media/events/mimicoctupus.png){ width="200" align=left }](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
             **比赛名称** : [2025 Qiangwang Challenge on Cyber Mimic Defense Finals](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 65.00  
             **赛事主办** : HeroCTF (https://ctftime.org/team/145166)  
             **添加日历** : https://ctftime.org/event/2869.ics  
+            
+        ??? Quote "[WP CTF 2025](https://wpctf.it/)"  
+            [![](https://ctftime.org/media/events/WP_CTF_2025_-_Logo.png){ width="200" align=left }](https://wpctf.it/)  
+            **比赛名称** : [WP CTF 2025](https://wpctf.it/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-11-29 16:00:00 - 2025-11-30 00:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : WP CTF (https://ctftime.org/team/303099)  
+            **添加日历** : https://ctftime.org/event/2764.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

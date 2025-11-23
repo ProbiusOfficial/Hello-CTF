@@ -32,6 +32,15 @@ comments: true
     **赛事主办** : BIZone (https://ctftime.org/team/32190)  
     **添加日历** : https://ctftime.org/event/2972.ics  
     
+??? Quote "[sknbCTF 2025](http://ctf.sknb.team/)"  
+    [![](https://ctftime.org/media/events/sknb_logo.png){ width="200" align=left }](http://ctf.sknb.team/)  
+    **比赛名称** : [sknbCTF 2025](http://ctf.sknb.team/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-22 11:00:00 - 2025-11-23 11:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : sknb (https://ctftime.org/team/355880)  
+    **添加日历** : https://ctftime.org/event/2947.ics  
+    
 ??? Quote "[MetaCTF November 2025 Flash CTF](https://mctf.io/nov2025)"  
     [![](https://ctftime.org){ width="200" align=left }](https://mctf.io/nov2025)  
     **比赛名称** : [MetaCTF November 2025 Flash CTF](https://mctf.io/nov2025)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Super_Hacker (https://ctftime.org/team/195477)  
     **添加日历** : https://ctftime.org/event/2849.ics  
-    
-??? Quote "[Full Weak Engineer CTF 2025](https://ctf.fwectf.com/)"  
-    [![](https://ctftime.org/media/events/icon-2.png){ width="200" align=left }](https://ctf.fwectf.com/)  
-    **比赛名称** : [Full Weak Engineer CTF 2025](https://ctf.fwectf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-08-29 18:00:00 - 2025-08-31 18:00:00 UTC+8  
-    **比赛权重** : 24.61  
-    **赛事主办** : full_weak_engineer (https://ctftime.org/team/305489)  
-    **添加日历** : https://ctftime.org/event/2864.ics  
     
