@@ -45,12 +45,3 @@ comments: true
     **赛事主办** : LosFuzzys (https://ctftime.org/team/8323)  
     **添加日历** : https://ctftime.org/event/2714.ics  
     
-??? Quote "[Infosec University Hackathon 2025](https://syfinfosechackathon.info/)"  
-    [![](https://ctftime.org/media/events/OCTOBER_INFOSEC_AWARENESS_MONTH_-_Logo.jpg){ width="200" align=left }](https://syfinfosechackathon.info/)  
-    **比赛名称** : [Infosec University Hackathon 2025](https://syfinfosechackathon.info/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-23 10:00:00 - 2025-11-23 15:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Synchrony Infosec University Hackathon (https://ctftime.org/team/412036)  
-    **添加日历** : https://ctftime.org/event/3008.ics  
-    

@@ -453,7 +453,7 @@
         "比赛权重": "0",
         "赛事主办": "Synchrony Infosec University Hackathon (https://ctftime.org/team/412036)",
         "比赛ID": "1451",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "CyberSci Regional Qualifiers 2025-26",
@@ -1641,18 +1641,6 @@
         "比赛权重": "24.23",
         "赛事主办": "d4rkc0de (https://ctftime.org/team/15154)",
         "比赛ID": "115",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Blue Arena",
-        "比赛时间": "2025-08-29 22:04:15 - 2025-08-31 22:33:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2849.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://csem.sturtles.in/events/2/",
-        "比赛标志": "https://ctftime.org/media/events/BA.png",
-        "比赛权重": "0",
-        "赛事主办": "Super_Hacker (https://ctftime.org/team/195477)",
-        "比赛ID": "1354",
         "比赛状态": "past"
     }
 ]

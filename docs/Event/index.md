@@ -626,15 +626,6 @@ hide:
                 **赛事主办** : LosFuzzys (https://ctftime.org/team/8323)  
                 **添加日历** : https://ctftime.org/event/2714.ics  
                 
-            ??? Quote "[Infosec University Hackathon 2025](https://syfinfosechackathon.info/)"  
-                [![](https://ctftime.org/media/events/OCTOBER_INFOSEC_AWARENESS_MONTH_-_Logo.jpg){ width="200" align=left }](https://syfinfosechackathon.info/)  
-                **比赛名称** : [Infosec University Hackathon 2025](https://syfinfosechackathon.info/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-23 10:00:00 - 2025-11-23 15:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Synchrony Infosec University Hackathon (https://ctftime.org/team/412036)  
-                **添加日历** : https://ctftime.org/event/3008.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[MoeCTF 2025](https://ctf.xidian.edu.cn/games/22)"  
@@ -645,6 +636,15 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
+            ??? Quote "[Infosec University Hackathon 2025](https://syfinfosechackathon.info/)"  
+                [![](https://ctftime.org/media/events/OCTOBER_INFOSEC_AWARENESS_MONTH_-_Logo.jpg){ width="200" align=left }](https://syfinfosechackathon.info/)  
+                **比赛名称** : [Infosec University Hackathon 2025](https://syfinfosechackathon.info/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-23 10:00:00 - 2025-11-23 15:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Synchrony Infosec University Hackathon (https://ctftime.org/team/412036)  
+                **添加日历** : https://ctftime.org/event/3008.ics  
+                
             ??? Quote "[CyberSci Regional Qualifiers 2025-26](https://cybersecuritychallenge.ca/)"  
                 [![](https://ctftime.org/media/events/aa01b0217ba20e130d4605e9bf2b8e6c.jpg){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
                 **比赛名称** : [CyberSci Regional Qualifiers 2025-26](https://cybersecuritychallenge.ca/)  
@@ -1535,15 +1535,6 @@ hide:
                 **比赛权重** : 24.23  
                 **赛事主办** : d4rkc0de (https://ctftime.org/team/15154)  
                 **添加日历** : https://ctftime.org/event/2905.ics  
-                
-            ??? Quote "[Blue Arena](https://csem.sturtles.in/events/2/)"  
-                [![](https://ctftime.org/media/events/BA.png){ width="200" align=left }](https://csem.sturtles.in/events/2/)  
-                **比赛名称** : [Blue Arena](https://csem.sturtles.in/events/2/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-08-29 22:04:15 - 2025-08-31 22:33:59 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Super_Hacker (https://ctftime.org/team/195477)  
-                **添加日历** : https://ctftime.org/event/2849.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
