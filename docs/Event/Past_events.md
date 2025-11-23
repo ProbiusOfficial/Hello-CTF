@@ -68,6 +68,15 @@ comments: true
     **赛事主办** : Hardware CTF (https://ctftime.org/team/274600)  
     **添加日历** : https://ctftime.org/event/3002.ics  
     
+??? Quote "[snakeCTF 2025 Finals](https://snakectf.org/)"  
+    [![](https://ctftime.org/media/events/LogoCroppable_2_1.png){ width="200" align=left }](https://snakectf.org/)  
+    **比赛名称** : [snakeCTF 2025 Finals](https://snakectf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-20 16:00:00 - 2025-11-23 21:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
+    **添加日历** : https://ctftime.org/event/2994.ics  
+    
 ??? Quote "[M*CTF 2025 Quals](https://mctf.mtuci.ru/)"  
     [![](https://ctftime.org/media/events/logo_15.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
     **比赛名称** : [M*CTF 2025 Quals](https://mctf.mtuci.ru/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : Norske Nøkkelsnikere (https://ctftime.org/team/222749)  
     **添加日历** : https://ctftime.org/event/2684.ics  
-    
-??? Quote "[h4ckc0n 2025](https://h4ckc0n.d4rkc0de.in/)"  
-    [![](https://ctftime.org/media/events/h4ckc0n-logo.png){ width="200" align=left }](https://h4ckc0n.d4rkc0de.in/)  
-    **比赛名称** : [h4ckc0n 2025](https://h4ckc0n.d4rkc0de.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-08-29 23:00:00 - 2025-08-30 23:00:00 UTC+8  
-    **比赛权重** : 24.23  
-    **赛事主办** : d4rkc0de (https://ctftime.org/team/15154)  
-    **添加日历** : https://ctftime.org/event/2905.ics  
     
