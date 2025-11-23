@@ -408,16 +408,16 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "PatriotCTF 2025",
-        "比赛时间": "2025-11-22 02:00:00 - 2025-11-24 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2850.ics",
+        "比赛名称": "Infosec University Hackathon 2025",
+        "比赛时间": "2025-11-23 10:00:00 - 2025-11-23 15:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3008.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "http://pctf.competitivecyber.club/",
-        "比赛标志": "https://ctftime.org/media/events/71044796c6f64e9996d2077fd0b64c4c.jpg",
-        "比赛权重": "42.42",
-        "赛事主办": "Competitive Cyber at Mason (https://ctftime.org/team/176906)",
-        "比赛ID": "737",
-        "比赛状态": "nowrunning"
+        "比赛链接": "https://syfinfosechackathon.info/",
+        "比赛标志": "https://ctftime.org/media/events/OCTOBER_INFOSEC_AWARENESS_MONTH_-_Logo.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Synchrony Infosec University Hackathon (https://ctftime.org/team/412036)",
+        "比赛ID": "1451",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "GlacierCTF 2025",
@@ -429,18 +429,6 @@
         "比赛权重": "52.57",
         "赛事主办": "LosFuzzys (https://ctftime.org/team/8323)",
         "比赛ID": "863",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "Infosec University Hackathon 2025",
-        "比赛时间": "2025-11-23 10:00:00 - 2025-11-23 15:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3008.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://syfinfosechackathon.info/",
-        "比赛标志": "https://ctftime.org/media/events/OCTOBER_INFOSEC_AWARENESS_MONTH_-_Logo.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Synchrony Infosec University Hackathon (https://ctftime.org/team/412036)",
-        "比赛ID": "1451",
         "比赛状态": "past"
     },
     {
@@ -477,6 +465,18 @@
         "比赛权重": "0",
         "赛事主办": "sknb (https://ctftime.org/team/355880)",
         "比赛ID": "1416",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "PatriotCTF 2025",
+        "比赛时间": "2025-11-22 02:00:00 - 2025-11-24 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2850.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://pctf.competitivecyber.club/",
+        "比赛标志": "https://ctftime.org/media/events/71044796c6f64e9996d2077fd0b64c4c.jpg",
+        "比赛权重": "42.42",
+        "赛事主办": "Competitive Cyber at Mason (https://ctftime.org/team/176906)",
+        "比赛ID": "737",
         "比赛状态": "past"
     },
     {
@@ -1605,30 +1605,6 @@
         "比赛权重": "82.00",
         "赛事主办": "Crusaders of Rust (https://ctftime.org/team/132628)",
         "比赛ID": "627",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "snakeCTF 2025 Quals",
-        "比赛时间": "2025-08-30 01:00:00 - 2025-08-31 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2817.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2025.snakectf.org/",
-        "比赛标志": "https://ctftime.org/media/events/LogoCroppable_3.png",
-        "比赛权重": "36.65",
-        "赛事主办": "MadrHacks (https://ctftime.org/team/114509)",
-        "比赛ID": "994",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "NNS CTF 2025",
-        "比赛时间": "2025-08-30 00:00:00 - 2025-09-01 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2684.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nnsc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/Logo_D.png",
-        "比赛权重": "25.00",
-        "赛事主办": "Norske Nøkkelsnikere (https://ctftime.org/team/222749)",
-        "比赛ID": "1256",
         "比赛状态": "past"
     }
 ]
