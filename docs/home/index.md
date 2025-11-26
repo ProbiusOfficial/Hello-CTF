@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[2025 Qiangwang Challenge on Cyber Mimic Defense Finals](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)"  
-            [![](https://ctftime.org/media/events/mimicoctupus.png){ width="200" align=left }](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
-            **比赛名称** : [2025 Qiangwang Challenge on Cyber Mimic Defense Finals](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-11-26 12:00:00 - 2025-11-29 12:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : LoveFromMimic (https://ctftime.org/team/364644)  
-            **添加日历** : https://ctftime.org/event/2999.ics  
-            
         ??? Quote "[LakeCTF Quals 25-26](https://lakectf.epfl.ch/)"  
             [![](https://ctftime.org/media/events/lake_logo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
             **比赛名称** : [LakeCTF Quals 25-26](https://lakectf.epfl.ch/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : WP CTF (https://ctftime.org/team/303099)  
             **添加日历** : https://ctftime.org/event/2764.ics  
+            
+        ??? Quote "[Haix-la-Chapelle 2025](https://haix-la-chapelle.eu/)"  
+            [![](https://ctftime.org/media/events/white-haix-la-chapelle.png){ width="200" align=left }](https://haix-la-chapelle.eu/)  
+            **比赛名称** : [Haix-la-Chapelle 2025](https://haix-la-chapelle.eu/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-11-29 17:00:00 - 2025-11-30 17:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Pwn-la-Chapelle (https://ctftime.org/team/279433)  
+            **添加日历** : https://ctftime.org/event/2951.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[2025 Qiangwang Challenge on Cyber Mimic Defense Finals](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)"  
-                [![](https://ctftime.org/media/events/mimicoctupus.png){ width="200" align=left }](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
-                **比赛名称** : [2025 Qiangwang Challenge on Cyber Mimic Defense Finals](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-26 12:00:00 - 2025-11-29 12:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : LoveFromMimic (https://ctftime.org/team/364644)  
-                **添加日历** : https://ctftime.org/event/2999.ics  
-                
             ??? Quote "[LakeCTF Quals 25-26](https://lakectf.epfl.ch/)"  
                 [![](https://ctftime.org/media/events/lake_logo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
                 **比赛名称** : [LakeCTF Quals 25-26](https://lakectf.epfl.ch/)  
@@ -607,6 +598,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Hacken Proof (https://ctftime.org/team/411613)  
                 **添加日历** : https://ctftime.org/event/3007.ics  
+                
+            ??? Quote "[2025 Qiangwang Challenge on Cyber Mimic Defense Finals](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)"  
+                [![](https://ctftime.org/media/events/mimicoctupus.png){ width="200" align=left }](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
+                **比赛名称** : [2025 Qiangwang Challenge on Cyber Mimic Defense Finals](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-26 12:00:00 - 2025-11-29 12:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : LoveFromMimic (https://ctftime.org/team/364644)  
+                **添加日历** : https://ctftime.org/event/2999.ics  
                 
     === "*已经结束*"
         === "国内赛事"
