@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [强网杯S9决赛Pwn writeup](https://xia0ji233.github.io/2025/11/26/qwb2025_final/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-11-26
+
+    本篇文章作个人复现 2025 强网杯决赛赛题的记录。AWDUsomebox这道题是 rust 的综合题，总体难度算很高的了，并要求选手掌握很深的逆向功底，密码学技术和 shellcode 编写技术。上来一串加密的数据，让人看得一脸懵逼，只能开逆了，主逻辑在 sub_1AB40 中，通过字符串发现一个菜单顺着这个 menu 字符串可以找到关键结构很显然，1FA20 就是所谓的加密函数了。很好，非常无...
     ### [Android逆向学习（1）](https://xia0ji233.github.io/2025/11/16/Android1/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2025-11-16
 
@@ -149,9 +153,5 @@ hide:
     >by [曾哥](https://blog.zgsec.cn/), 2025-03-30
 
     0# 概述师傅们好久不见！最近不是特别忙，就研究研究最新的漏洞。刚好最近一大批漏洞都爆出来了，比如 CVE-2025-1097, CVE-2025-1098, CVE-2025-24514, CVE-2025-1974 Kubernetes Ingress-Nginx Admission Controller RCE Escalation，是危害性极大的高危漏洞，在内网渗透中能直接击穿K8S集群。...
-    ### [【白帽访谈录】云安全将成为未来安全研究主战场-会议纪要](https://blog.zgsec.cn/archives/711.html)  
-    >by [曾哥](https://blog.zgsec.cn/), 2025-02-28
-
-    {bilibili bvid="BV19T9gY4ETm" page=""/}很高兴能参与这期白帽访谈录，也感谢各位师傅的支持~也随时欢迎各位师傅和我友好交流哈哈！本期访谈的回放直播已经上传B站，链接： https://www.bilibili.com/video/BV19T9gY4ETm，感谢各位师傅的一键三连！！！欢迎大家关注渊龙Sec安全团队公众号，干货满满哦~{dotted startCo...
 
 </div>
