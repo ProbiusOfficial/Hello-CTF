@@ -132,6 +132,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "CyKor CTF 2025",
+        "比赛时间": "2025-12-06 09:00:00 - 2025-12-07 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3028.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.cykor.kr/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "CyKOR (https://ctftime.org/team/369)",
+        "比赛ID": "1452",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "BackdoorCTF 2025",
         "比赛时间": "2025-12-06 20:00:00 - 2025-12-08 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2915.ics",

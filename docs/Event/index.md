@@ -388,6 +388,15 @@ hide:
                 **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
                 **添加日历** : https://ctftime.org/event/2898.ics  
                 
+            ??? Quote "[CyKor CTF 2025](https://ctf.cykor.kr/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.cykor.kr/)  
+                **比赛名称** : [CyKor CTF 2025](https://ctf.cykor.kr/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-12-06 09:00:00 - 2025-12-07 09:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : CyKOR (https://ctftime.org/team/369)  
+                **添加日历** : https://ctftime.org/event/3028.ics  
+                
             ??? Quote "[BackdoorCTF 2025](https://backdoor.infoseciitr.in/)"  
                 [![](https://ctftime.org/media/events/0b4a317ba84bb2bd6e871c5eec6fdb00_1.png){ width="200" align=left }](https://backdoor.infoseciitr.in/)  
                 **比赛名称** : [BackdoorCTF 2025](https://backdoor.infoseciitr.in/)  
