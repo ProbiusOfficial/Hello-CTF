@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "LakeCTF Quals 25-26",
-        "比赛时间": "2025-11-29 02:00:00 - 2025-11-30 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2944.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://lakectf.epfl.ch/",
-        "比赛标志": "https://ctftime.org/media/events/lake_logo.png",
-        "比赛权重": "45.00",
-        "赛事主办": "polygl0ts (https://ctftime.org/team/53791)",
-        "比赛ID": "818",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "HeroCTF v7",
         "比赛时间": "2025-11-29 04:00:00 - 2025-12-01 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2869.ics",
@@ -429,6 +417,18 @@
         "比赛权重": "0",
         "赛事主办": "LoveFromMimic (https://ctftime.org/team/364644)",
         "比赛ID": "1212",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "LakeCTF Quals 25-26",
+        "比赛时间": "2025-11-29 02:00:00 - 2025-11-30 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2944.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://lakectf.epfl.ch/",
+        "比赛标志": "https://ctftime.org/media/events/lake_logo.png",
+        "比赛权重": "45.00",
+        "赛事主办": "polygl0ts (https://ctftime.org/team/53791)",
+        "比赛ID": "818",
         "比赛状态": "nowrunning"
     },
     {

@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[LakeCTF Quals 25-26](https://lakectf.epfl.ch/)"  
-            [![](https://ctftime.org/media/events/lake_logo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
-            **比赛名称** : [LakeCTF Quals 25-26](https://lakectf.epfl.ch/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-11-29 02:00:00 - 2025-11-30 02:00:00 UTC+8  
-            **比赛权重** : 45.00  
-            **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
-            **添加日历** : https://ctftime.org/event/2944.ics  
-            
         ??? Quote "[HeroCTF v7](https://ctf.heroctf.fr/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://ctf.heroctf.fr/)  
             **比赛名称** : [HeroCTF v7](https://ctf.heroctf.fr/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Pwn-la-Chapelle (https://ctftime.org/team/279433)  
             **添加日历** : https://ctftime.org/event/2951.ics  
+            
+        ??? Quote "[m0leCon 2026 Beginner CTF](https://beginner.m0lecon.it/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://beginner.m0lecon.it/)  
+            **比赛名称** : [m0leCon 2026 Beginner CTF](https://beginner.m0lecon.it/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-11-29 21:00:00 - 2025-11-30 02:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
+            **添加日历** : https://ctftime.org/event/3017.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

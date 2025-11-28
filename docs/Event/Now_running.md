@@ -27,3 +27,12 @@ comments: true
     **赛事主办** : LoveFromMimic (https://ctftime.org/team/364644)  
     **添加日历** : https://ctftime.org/event/2999.ics  
     
+??? Quote "[LakeCTF Quals 25-26](https://lakectf.epfl.ch/)"  
+    [![](https://ctftime.org/media/events/lake_logo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
+    **比赛名称** : [LakeCTF Quals 25-26](https://lakectf.epfl.ch/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-29 02:00:00 - 2025-11-30 02:00:00 UTC+8  
+    **比赛权重** : 45.00  
+    **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
+    **添加日历** : https://ctftime.org/event/2944.ics  
+    
