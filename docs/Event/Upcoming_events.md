@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[WP CTF 2025](https://wpctf.it/)"  
-    [![](https://ctftime.org/media/events/WP_CTF_2025_-_Logo.png){ width="200" align=left }](https://wpctf.it/)  
-    **比赛名称** : [WP CTF 2025](https://wpctf.it/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-29 16:00:00 - 2025-11-30 00:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : WP CTF (https://ctftime.org/team/303099)  
-    **添加日历** : https://ctftime.org/event/2764.ics  
-    
 ??? Quote "[Haix-la-Chapelle 2025](https://haix-la-chapelle.eu/)"  
     [![](https://ctftime.org/media/events/white-haix-la-chapelle.png){ width="200" align=left }](https://haix-la-chapelle.eu/)  
     **比赛名称** : [Haix-la-Chapelle 2025](https://haix-la-chapelle.eu/)  

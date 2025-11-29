@@ -36,3 +36,12 @@ comments: true
     **赛事主办** : HeroCTF (https://ctftime.org/team/145166)  
     **添加日历** : https://ctftime.org/event/2869.ics  
     
+??? Quote "[WP CTF 2025](https://wpctf.it/)"  
+    [![](https://ctftime.org/media/events/WP_CTF_2025_-_Logo.png){ width="200" align=left }](https://wpctf.it/)  
+    **比赛名称** : [WP CTF 2025](https://wpctf.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-11-29 16:00:00 - 2025-11-30 00:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : WP CTF (https://ctftime.org/team/303099)  
+    **添加日历** : https://ctftime.org/event/2764.ics  
+    
