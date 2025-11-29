@@ -563,15 +563,6 @@ hide:
                 **赛事主办** : Hacken Proof (https://ctftime.org/team/411613)  
                 **添加日历** : https://ctftime.org/event/3007.ics  
                 
-            ??? Quote "[LakeCTF Quals 25-26](https://lakectf.epfl.ch/)"  
-                [![](https://ctftime.org/media/events/lake_logo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
-                **比赛名称** : [LakeCTF Quals 25-26](https://lakectf.epfl.ch/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-29 02:00:00 - 2025-11-30 02:00:00 UTC+8  
-                **比赛权重** : 45.00  
-                **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
-                **添加日历** : https://ctftime.org/event/2944.ics  
-                
             ??? Quote "[HeroCTF v7](https://ctf.heroctf.fr/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.heroctf.fr/)  
                 **比赛名称** : [HeroCTF v7](https://ctf.heroctf.fr/)  
@@ -590,15 +581,6 @@ hide:
                 **赛事主办** : Pwn-la-Chapelle (https://ctftime.org/team/279433)  
                 **添加日历** : https://ctftime.org/event/2951.ics  
                 
-            ??? Quote "[m0leCon 2026 Beginner CTF](https://beginner.m0lecon.it/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://beginner.m0lecon.it/)  
-                **比赛名称** : [m0leCon 2026 Beginner CTF](https://beginner.m0lecon.it/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-29 21:00:00 - 2025-11-30 02:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
-                **添加日历** : https://ctftime.org/event/3017.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[MoeCTF 2025](https://ctf.xidian.edu.cn/games/22)"  
@@ -609,6 +591,15 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
+            ??? Quote "[m0leCon 2026 Beginner CTF](https://beginner.m0lecon.it/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://beginner.m0lecon.it/)  
+                **比赛名称** : [m0leCon 2026 Beginner CTF](https://beginner.m0lecon.it/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-29 21:00:00 - 2025-11-30 02:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
+                **添加日历** : https://ctftime.org/event/3017.ics  
+                
             ??? Quote "[WP CTF 2025](https://wpctf.it/)"  
                 [![](https://ctftime.org/media/events/WP_CTF_2025_-_Logo.png){ width="200" align=left }](https://wpctf.it/)  
                 **比赛名称** : [WP CTF 2025](https://wpctf.it/)  
@@ -617,6 +608,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : WP CTF (https://ctftime.org/team/303099)  
                 **添加日历** : https://ctftime.org/event/2764.ics  
+                
+            ??? Quote "[LakeCTF Quals 25-26](https://lakectf.epfl.ch/)"  
+                [![](https://ctftime.org/media/events/lake_logo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
+                **比赛名称** : [LakeCTF Quals 25-26](https://lakectf.epfl.ch/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-29 02:00:00 - 2025-11-30 02:00:00 UTC+8  
+                **比赛权重** : 45.00  
+                **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
+                **添加日历** : https://ctftime.org/event/2944.ics  
                 
             ??? Quote "[2025 Qiangwang Challenge on Cyber Mimic Defense Finals](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)"  
                 [![](https://ctftime.org/media/events/mimicoctupus.png){ width="200" align=left }](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
@@ -1490,24 +1490,6 @@ hide:
                 **比赛权重** : 96.29  
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/2612.ics  
-                
-            ??? Quote "[CRACCON 2025](https://defhawk.com/battleground/raid/craccon-ctf-2025)"  
-                [![](https://ctftime.org/media/events/CRACCon.png){ width="200" align=left }](https://defhawk.com/battleground/raid/craccon-ctf-2025)  
-                **比赛名称** : [CRACCON 2025](https://defhawk.com/battleground/raid/craccon-ctf-2025)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-06 16:00:00 - 2025-09-07 16:00:00 UTC+8  
-                **比赛权重** : 23.67  
-                **赛事主办** : h4wk (https://ctftime.org/team/277994)  
-                **添加日历** : https://ctftime.org/event/2879.ics  
-                
-            ??? Quote "[ImaginaryCTF 2025](https://2025.imaginaryctf.org/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://2025.imaginaryctf.org/)  
-                **比赛名称** : [ImaginaryCTF 2025](https://2025.imaginaryctf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-06 03:00:00 - 2025-09-08 03:00:00 UTC+8  
-                **比赛权重** : 66.02  
-                **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
-                **添加日历** : https://ctftime.org/event/2799.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

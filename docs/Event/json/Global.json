@@ -360,18 +360,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "LakeCTF Quals 25-26",
-        "比赛时间": "2025-11-29 02:00:00 - 2025-11-30 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2944.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://lakectf.epfl.ch/",
-        "比赛标志": "https://ctftime.org/media/events/lake_logo.png",
-        "比赛权重": "45.00",
-        "赛事主办": "polygl0ts (https://ctftime.org/team/53791)",
-        "比赛ID": "818",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "HeroCTF v7",
         "比赛时间": "2025-11-29 04:00:00 - 2025-12-01 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2869.ics",
@@ -405,7 +393,7 @@
         "比赛权重": "0.00",
         "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
         "比赛ID": "372",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "WP CTF 2025",
@@ -417,6 +405,18 @@
         "比赛权重": "0.00",
         "赛事主办": "WP CTF (https://ctftime.org/team/303099)",
         "比赛ID": "1128",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "LakeCTF Quals 25-26",
+        "比赛时间": "2025-11-29 02:00:00 - 2025-11-30 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2944.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://lakectf.epfl.ch/",
+        "比赛标志": "https://ctftime.org/media/events/lake_logo.png",
+        "比赛权重": "45.00",
+        "赛事主办": "polygl0ts (https://ctftime.org/team/53791)",
+        "比赛ID": "818",
         "比赛状态": "past"
     },
     {
@@ -1581,30 +1581,6 @@
         "比赛权重": "96.29",
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "55",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CRACCON 2025",
-        "比赛时间": "2025-09-06 16:00:00 - 2025-09-07 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2879.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://defhawk.com/battleground/raid/craccon-ctf-2025",
-        "比赛标志": "https://ctftime.org/media/events/CRACCon.png",
-        "比赛权重": "23.67",
-        "赛事主办": "h4wk (https://ctftime.org/team/277994)",
-        "比赛ID": "1209",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "ImaginaryCTF 2025",
-        "比赛时间": "2025-09-06 03:00:00 - 2025-09-08 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2799.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2025.imaginaryctf.org/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "66.02",
-        "赛事主办": "ImaginaryCTF (https://ctftime.org/team/131529)",
-        "比赛ID": "615",
         "比赛状态": "past"
     }
 ]
