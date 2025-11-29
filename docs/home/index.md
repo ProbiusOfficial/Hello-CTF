@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Haix-la-Chapelle 2025](https://haix-la-chapelle.eu/)"  
-            [![](https://ctftime.org/media/events/white-haix-la-chapelle.png){ width="200" align=left }](https://haix-la-chapelle.eu/)  
-            **比赛名称** : [Haix-la-Chapelle 2025](https://haix-la-chapelle.eu/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-11-29 17:00:00 - 2025-11-30 17:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Pwn-la-Chapelle (https://ctftime.org/team/279433)  
-            **添加日历** : https://ctftime.org/event/2951.ics  
-            
         ??? Quote "[m0leCon 2026 Beginner CTF](https://beginner.m0lecon.it/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://beginner.m0lecon.it/)  
             **比赛名称** : [m0leCon 2026 Beginner CTF](https://beginner.m0lecon.it/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : CERTUNLP (https://ctftime.org/team/89294)  
             **添加日历** : https://ctftime.org/event/3003.ics  
+            
+        ??? Quote "[Null CTF 2025](https://ctf.r0devnull.team/)"  
+            [![](https://ctftime.org/media/events/null_ctf_logo_temp_1.png){ width="200" align=left }](https://ctf.r0devnull.team/)  
+            **比赛名称** : [Null CTF 2025](https://ctf.r0devnull.team/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-12-05 23:00:00 - 2025-12-07 23:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : r0/dev/null (https://ctftime.org/team/398024)  
+            **添加日历** : https://ctftime.org/event/2901.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
