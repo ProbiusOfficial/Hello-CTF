@@ -384,18 +384,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "WP CTF 2025",
-        "比赛时间": "2025-11-29 16:00:00 - 2025-11-30 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2764.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://wpctf.it/",
-        "比赛标志": "https://ctftime.org/media/events/WP_CTF_2025_-_Logo.png",
-        "比赛权重": "0.00",
-        "赛事主办": "WP CTF (https://ctftime.org/team/303099)",
-        "比赛ID": "1128",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Haix-la-Chapelle 2025",
         "比赛时间": "2025-11-29 17:00:00 - 2025-11-30 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2951.ics",
@@ -418,6 +406,18 @@
         "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
         "比赛ID": "372",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "WP CTF 2025",
+        "比赛时间": "2025-11-29 16:00:00 - 2025-11-30 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2764.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://wpctf.it/",
+        "比赛标志": "https://ctftime.org/media/events/WP_CTF_2025_-_Logo.png",
+        "比赛权重": "0.00",
+        "赛事主办": "WP CTF (https://ctftime.org/team/303099)",
+        "比赛ID": "1128",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "2025 Qiangwang Challenge on Cyber Mimic Defense Finals",
@@ -1605,18 +1605,6 @@
         "比赛权重": "66.02",
         "赛事主办": "ImaginaryCTF (https://ctftime.org/team/131529)",
         "比赛ID": "615",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Nullcon Berlin HackIM 2025 CTF",
-        "比赛时间": "2025-09-04 18:30:00 - 2025-09-05 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2874.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.nullcon.net/",
-        "比赛标志": "https://ctftime.org/media/events/hackim.png",
-        "比赛权重": "30.00",
-        "赛事主办": "ENOFLAG (https://ctftime.org/team/1438)",
-        "比赛ID": "27",
         "比赛状态": "past"
     }
 ]

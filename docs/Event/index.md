@@ -581,15 +581,6 @@ hide:
                 **赛事主办** : HeroCTF (https://ctftime.org/team/145166)  
                 **添加日历** : https://ctftime.org/event/2869.ics  
                 
-            ??? Quote "[WP CTF 2025](https://wpctf.it/)"  
-                [![](https://ctftime.org/media/events/WP_CTF_2025_-_Logo.png){ width="200" align=left }](https://wpctf.it/)  
-                **比赛名称** : [WP CTF 2025](https://wpctf.it/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-29 16:00:00 - 2025-11-30 00:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : WP CTF (https://ctftime.org/team/303099)  
-                **添加日历** : https://ctftime.org/event/2764.ics  
-                
             ??? Quote "[Haix-la-Chapelle 2025](https://haix-la-chapelle.eu/)"  
                 [![](https://ctftime.org/media/events/white-haix-la-chapelle.png){ width="200" align=left }](https://haix-la-chapelle.eu/)  
                 **比赛名称** : [Haix-la-Chapelle 2025](https://haix-la-chapelle.eu/)  
@@ -618,6 +609,15 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
+            ??? Quote "[WP CTF 2025](https://wpctf.it/)"  
+                [![](https://ctftime.org/media/events/WP_CTF_2025_-_Logo.png){ width="200" align=left }](https://wpctf.it/)  
+                **比赛名称** : [WP CTF 2025](https://wpctf.it/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-29 16:00:00 - 2025-11-30 00:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : WP CTF (https://ctftime.org/team/303099)  
+                **添加日历** : https://ctftime.org/event/2764.ics  
+                
             ??? Quote "[2025 Qiangwang Challenge on Cyber Mimic Defense Finals](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)"  
                 [![](https://ctftime.org/media/events/mimicoctupus.png){ width="200" align=left }](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
                 **比赛名称** : [2025 Qiangwang Challenge on Cyber Mimic Defense Finals](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
@@ -1508,15 +1508,6 @@ hide:
                 **比赛权重** : 66.02  
                 **赛事主办** : ImaginaryCTF (https://ctftime.org/team/131529)  
                 **添加日历** : https://ctftime.org/event/2799.ics  
-                
-            ??? Quote "[Nullcon Berlin HackIM 2025 CTF](https://ctf.nullcon.net/)"  
-                [![](https://ctftime.org/media/events/hackim.png){ width="200" align=left }](https://ctf.nullcon.net/)  
-                **比赛名称** : [Nullcon Berlin HackIM 2025 CTF](https://ctf.nullcon.net/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-04 18:30:00 - 2025-09-05 21:00:00 UTC+8  
-                **比赛权重** : 30.00  
-                **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
-                **添加日历** : https://ctftime.org/event/2874.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
