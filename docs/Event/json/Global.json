@@ -396,18 +396,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "2025 Qiangwang Challenge on Cyber Mimic Defense Finals",
-        "比赛时间": "2025-11-26 12:00:00 - 2025-11-29 12:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2999.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nest.pmlabs.com.cn/#/internationalEliteChallenge",
-        "比赛标志": "https://ctftime.org/media/events/mimicoctupus.png",
-        "比赛权重": "0",
-        "赛事主办": "LoveFromMimic (https://ctftime.org/team/364644)",
-        "比赛ID": "1212",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "LakeCTF Quals 25-26",
         "比赛时间": "2025-11-29 02:00:00 - 2025-11-30 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2944.ics",
@@ -430,6 +418,18 @@
         "赛事主办": "HeroCTF (https://ctftime.org/team/145166)",
         "比赛ID": "601",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "2025 Qiangwang Challenge on Cyber Mimic Defense Finals",
+        "比赛时间": "2025-11-26 12:00:00 - 2025-11-29 12:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2999.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nest.pmlabs.com.cn/#/internationalEliteChallenge",
+        "比赛标志": "https://ctftime.org/media/events/mimicoctupus.png",
+        "比赛权重": "0",
+        "赛事主办": "LoveFromMimic (https://ctftime.org/team/364644)",
+        "比赛ID": "1212",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Infosec University Hackathon 2025",
@@ -1617,18 +1617,6 @@
         "比赛权重": "30.00",
         "赛事主办": "ENOFLAG (https://ctftime.org/team/1438)",
         "比赛ID": "27",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "corCTF 2025",
-        "比赛时间": "2025-08-30 08:00:00 - 2025-09-01 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2763.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2025.cor.team/",
-        "比赛标志": "https://ctftime.org/media/events/corctflogo_4.png",
-        "比赛权重": "82.00",
-        "赛事主办": "Crusaders of Rust (https://ctftime.org/team/132628)",
-        "比赛ID": "627",
         "比赛状态": "past"
     }
 ]
