@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "m0leCon 2026 Beginner CTF",
-        "比赛时间": "2025-11-29 21:00:00 - 2025-11-30 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3017.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://beginner.m0lecon.it/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
-        "比赛ID": "372",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "BlackHat MEA CTF Final 2025",
         "比赛时间": "2025-12-02 16:00:00 - 2025-12-04 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2877.ics",
@@ -417,6 +405,18 @@
         "比赛权重": "0",
         "赛事主办": "Pwn-la-Chapelle (https://ctftime.org/team/279433)",
         "比赛ID": "1381",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "m0leCon 2026 Beginner CTF",
+        "比赛时间": "2025-11-29 21:00:00 - 2025-11-30 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3017.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://beginner.m0lecon.it/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0.00",
+        "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
+        "比赛ID": "372",
         "比赛状态": "nowrunning"
     },
     {
