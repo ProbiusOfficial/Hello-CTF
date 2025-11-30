@@ -249,8 +249,672 @@ zip伪加密是在文件头的加密标志位做修改，进而再打开文件�
 
 ![image-20240801145359052](./assets/image-20240801145359052.png)
 
-### RAR
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-1.md -->
 
-## 明文攻击
+Zip 伪加密是在文件头的加密标志位做修改，进而再打开文件时识被别为加密压缩包
 
-## CRC32碰撞
+话不多说，直接上题（BugKu CTF）
+
+![](https://pic1.imgdb.cn/item/677296ffd0e0a243d4ecc926.jpg)
+
+下载文件后打开会发现需要密码
+
+![](https://pic1.imgdb.cn/item/67729716d0e0a243d4ecc92b.jpg)
+
+Zip 文件结构分析：
+
+```
+1. 固定头文件：50 4B 03 04
+2. 解压所需 pkware 版本：14 00
+3. 全局方式位标记（有无加密）：00 00
+```
+
+伪加密只需知道这些就可以了
+
+![](https://pic1.imgdb.cn/item/67729775d0e0a243d4ecc938.jpg)
+
+09 00 一般都是伪加密，改为 00 00 即可打开，有多个则都改为 00
+
+![](https://pic1.imgdb.cn/item/67729798d0e0a243d4ecc93c.jpg)
+
+成功拿到 flag
+
+![](https://pic1.imgdb.cn/item/677297c3d0e0a243d4ecc940.jpg)
+
+
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-10.md -->
+### 加密宏破解
+
+话不多说，直接上题（BUUCTF）
+
+![](https://pic1.imgdb.cn/item/6875c66358cb8da5c8af1be6.png)
+
+解压缩有三个文件
+
+![](https://pic1.imgdb.cn/item/6875c6e758cb8da5c8af20d3.png)
+
+首先是 hint.txt
+
+```
+The length of docm 's password is 6
+The Regular Expression of the password is:
+[a-z] [a-z] q [a-z] b [a-z]
+```
+
+得知 `password.docm` 密码全小写字母，且满足 `??q?b?`，使用 john 爆破（当然也可以直接用 Archpr）
+
+将 **Office** 文档中的哈希提取出来，保存为 `hash.txt`
+
+```shell
+office2john password.docm > word.hash
+```
+
+使用 **掩码攻击（mask attack）** 尝试爆破 `hash.txt` 中的密码哈希
+
+```sh
+john --mask='?l?lq?lb?l' word.hash
+# ?l 表示 小写字母（a-z）
+# q 和 b 是固定字符
+```
+
+![](https://pic1.imgdb.cn/item/6875c82e58cb8da5c8af30ba.png)
+
+打开 word
+
+![](https://pic1.imgdb.cn/item/6875c86b58cb8da5c8af33f1.png)
+
+得先破解宏，将 word 文件用压缩包方式打开，找到 `vbaProject.bin` 文件以十六进制方式查看，将  `DBP`  改为  `DBX`  并保存，[参考博客](https://blog.csdn.net/Cody_Ren/article/details/100895394)
+
+![](https://pic1.imgdb.cn/item/6875cd5458cb8da5c8af6f97.png)
+
+注意不要减少或者增加其他字符，保存退出
+
+![](https://pic1.imgdb.cn/item/6875cd6458cb8da5c8af6fb7.png)
+
+重新打开文件，Alt + F11打开
+
+![](https://pic1.imgdb.cn/item/6875cd7458cb8da5c8af6fc7.png)
+
+右键打开属性，设置一个密码保存，重新打开文件 Alt + F11 输入密码即可查看宏代码
+
+![](https://pic1.imgdb.cn/item/6875cdb458cb8da5c8af7020.png)
+
+```vbscript
+Private Sub CB_OK_Click()
+Dim strpasw As String
+Dim strdec As String
+Dim strusrinput As String
+Dim t As String
+t = ChrW(21152) & ChrW(27833) & ChrW(21543) & ChrW(65292) & ChrW(21516) & ChrW(23398) & ChrW(20204) & ChrW(65281)
+
+strusrinput = Dialog.TextBox_Pasw
+Dim sinput As String
+sinput = strusrinput
+
+If (strusrinput <> "") Then
+  strusout = Encode(strusrinput, t)
+  If (strusout = "┤℡ǒqｘ~") Then
+      strdec = Decode(Dialog.Label_ls.Caption, sinput)
+  Else
+     If (strusout = "ｋGJEｇｑ") Then
+        strdec = Decode(Dialog.Label_ls1.Caption, sinput)
+     Else
+          If (strusout = "ЮΟopz+") Then
+             strdec = Decode(Dialog.Label_ls2.Caption, sinput)
+          Else
+                If (strusout = "ｚΚjrШφεあ") Then
+                    strdec = Decode(Dialog.Label_ls4.Caption, sinput)
+                Else
+                    If (strusout = "àǖtＵｗ┧ｈè") Then
+                          strdec = Decode(Dialog.Label_ls3.Caption, sinput)
+                    Else
+                          strdec = StrConv(t, vbFromUnicode)
+                    End If
+                End If
+           End If
+      End If
+   End If
+   Label_CLUE.Caption = strdec
+End If
+```
+
+无需分析加解密算法，输出结果 `strusout` 由 `Encode(strusrinput, t)` 加密得到，只需分别用解密函数反推五个 if 分支条件对应的明文即可
+
+修改 `Label_CLUE.Caption = strdec` 为 `Label_CLUE.Caption = Decode(xxx,t)`，回到 word 运行 `AutoOpen` 宏
+
+随便输入字符点击确定即可在 Dialog 的 label 处显示对应明文，分别是 `123456`、`aaaaaa`、`000000`、`墙角数枝`、`iloveyou`
+
+将 `Label_CLUE.Caption = Decode(xxx,t)` 改回 `Label_CLUE.Caption = strdec`，分别输入五段明文，发现输入 `墙角数枝` 得到 `解压密码：两只黄鹂鸣翠柳,一行白鹭上青天!`
+
+结合 word 里的 hint `Rar 密码为复杂型，长度为16位，包含了字母、数字和符号。`
+
+压缩包密码猜出为 `2zhlmcl,1hblsqt.`，解压拿到 flag：`Dest0g3{VBScr1pt_And_Hashc4t_1s_g00d}`
+
+[参考博客](https://lazzzaro.github.io/2022/05/26/match-Dest0g3-520%E8%BF%8E%E6%96%B0%E8%B5%9B/index.html)
+
+
+
+
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-11.md -->
+### 不可见字符密码爆破
+
+话不多说，直接上题（BUUCTF）
+
+![](https://pic1.imgdb.cn/item/687746b858cb8da5c8b7efda.png)
+
+给了三个文件
+
+![](https://pic1.imgdb.cn/item/6877471d58cb8da5c8b7f2b9.png)
+
+压缩包里还有一层
+
+![](https://pic1.imgdb.cn/item/6877484d58cb8da5c8b80028.png)
+
+先尝试利用 key 文件做一个明文攻击
+
+```sh
+bkcrack.exe -C purezip.zip -c "secret key.zip" -p key
+```
+
+![](https://pic1.imgdb.cn/item/687749fc58cb8da5c8b81b39.png)
+
+再利用密钥直接解压
+
+```sh
+bkcrack.exe -C purezip.zip -c "secret key.zip" -k e63af7cc 55ef839d dc10b922 -d 1.zip
+```
+
+![](https://pic1.imgdb.cn/item/68774afc58cb8da5c8b8295a.png)
+
+注意此时的 ZIP 是压缩之后的，需要解压一下，放到 cyberchef 里面使用 raw inflate 解一下并保存压缩包
+
+![](https://pic1.imgdb.cn/item/68774f1158cb8da5c8b84691.png)
+
+告诉我们密码为两个字节
+
+![](https://pic1.imgdb.cn/item/68774f4358cb8da5c8b846b3.png)
+
+写脚本爆破
+
+```python
+import zipfile
+import libnum
+from tqdm import trange
+
+for i in trange(256):
+    for j in range(256):
+        fz = zipfile.ZipFile('11.zip', 'r')
+        password = libnum.n2s(i) + libnum.n2s(j)
+        try:
+            fz.extractall(pwd=password)
+            print(password)
+            fz.close()
+            break
+        except:
+            fz.close()
+            continue
+    else:
+        continue
+    break
+```
+
+得到密码：`\x9c\x07`
+
+再写脚本解压
+
+```python
+import zipfile
+
+with zipfile.ZipFile('download.zip', 'r') as fz:
+    # 直接解压，指定密码
+    fz.extractall(pwd=b'\x9c\x07')
+```
+
+打开又得到密钥
+
+![](https://pic1.imgdb.cn/item/687751f158cb8da5c8b84af1.png)
+
+同时在 zpaq 文件的文件尾得到
+
+![](https://pic1.imgdb.cn/item/6877526458cb8da5c8b84b2e.png)
+
+密码是 md5（明文的密钥，长度为 3 个字节）
+
+因此还需要还原 pkzip 的三段密匙，使用下面指令直接破解
+
+```sh
+bkcrack.exe -k e48d3828 5b7223cc 71851fb0 -r 3 ?b
+# -r 3 表示使用反推阶段（reverse）进行 第 3 次迭代尝试，即从 key2 推回 key0 的过程的步骤次数
+# ?b 是一个通配符，通常是 bkcrack 的参数，表示用 brute-force（暴力枚举） 去补全某些信息
+```
+
+![](https://pic1.imgdb.cn/item/687752b258cb8da5c8b84b49.png)
+
+最后使用 md5 加密后的密码解压缩即可
+
+
+
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-12.md -->
+### PKZIP 密钥还原
+
+话不多说，直接上题（BUUCTF）
+
+![](https://pic1.imgdb.cn/item/687746b858cb8da5c8b7efda.png)
+
+给了三个文件
+
+![](https://pic1.imgdb.cn/item/6877471d58cb8da5c8b7f2b9.png)
+
+压缩包里还有一层
+
+![](https://pic1.imgdb.cn/item/6877484d58cb8da5c8b80028.png)
+
+先尝试利用 key 文件做一个明文攻击
+
+```sh
+bkcrack.exe -C purezip.zip -c "secret key.zip" -p key
+```
+
+![](https://pic1.imgdb.cn/item/687749fc58cb8da5c8b81b39.png)
+
+再利用密钥直接解压
+
+```sh
+bkcrack.exe -C purezip.zip -c "secret key.zip" -k e63af7cc 55ef839d dc10b922 -d 1.zip
+```
+
+![](https://pic1.imgdb.cn/item/68774afc58cb8da5c8b8295a.png)
+
+注意此时的 ZIP 是压缩之后的，需要解压一下，放到 cyberchef 里面使用 raw inflate 解一下并保存压缩包
+
+![](https://pic1.imgdb.cn/item/68774f1158cb8da5c8b84691.png)
+
+告诉我们密码为两个字节
+
+![](https://pic1.imgdb.cn/item/68774f4358cb8da5c8b846b3.png)
+
+写脚本爆破
+
+```python
+import zipfile
+import libnum
+from tqdm import trange
+
+for i in trange(256):
+    for j in range(256):
+        fz = zipfile.ZipFile('11.zip', 'r')
+        password = libnum.n2s(i) + libnum.n2s(j)
+        try:
+            fz.extractall(pwd=password)
+            print(password)
+            fz.close()
+            break
+        except:
+            fz.close()
+            continue
+    else:
+        continue
+    break
+```
+
+得到密码：`\x9c\x07`
+
+再写脚本解压
+
+```python
+import zipfile
+
+with zipfile.ZipFile('download.zip', 'r') as fz:
+    # 直接解压，指定密码
+    fz.extractall(pwd=b'\x9c\x07')
+```
+
+打开又得到密钥
+
+![](https://pic1.imgdb.cn/item/687751f158cb8da5c8b84af1.png)
+
+同时在 zpaq 文件的文件尾得到
+
+![](https://pic1.imgdb.cn/item/6877526458cb8da5c8b84b2e.png)
+
+密码是 md5（明文的密钥，长度为 3 个字节）
+
+因此还需要还原 pkzip 的三段密匙，使用下面指令直接破解
+
+```sh
+bkcrack.exe -k e48d3828 5b7223cc 71851fb0 -r 3 ?b
+# -r 3 表示使用反推阶段（reverse）进行 第 3 次迭代尝试，即从 key2 推回 key0 的过程的步骤次数
+# ?b 是一个通配符，通常是 bkcrack 的参数，表示用 brute-force（暴力枚举） 去补全某些信息
+```
+
+![](https://pic1.imgdb.cn/item/687752b258cb8da5c8b84b49.png)
+
+最后使用 md5 加密后的密码解压缩即可
+
+
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-2.md -->
+### ZIP 明文破解（相同文件）
+
+明文攻击主要利用大于 12 字节的一段已知明文数据进行攻击，从而获取整个加密文档的数据，具体的原理这里不阐述
+
+话不多说，直接上题（BugKu CTF）
+
+![](https://pic1.imgdb.cn/item/6771139ad0e0a243d4ec1f4e.jpg)
+
+下载文件后得到一张图片与一个加密压缩包
+
+![](https://pic1.imgdb.cn/item/67729aead0e0a243d4ecca68.jpg)
+
+图片与压缩包中的图片是一样的（这里就不打开看了），明显提示了要明文攻击，具体怎么做呢？
+
+首先去看压缩包的算法
+
+![](https://pic1.imgdb.cn/item/67729bc0d0e0a243d4ecca8d.jpg)
+
+再将另一个文件也压缩成压缩包，需要保证算法一致
+
+不同的压缩软件算法各不同，这里要使用 WinRAR
+
+![神秘的文件-4](D:\www\vite-project\src\components\misc\img\神秘的文件-4.png)
+
+使用工具 ARCHPR 明文攻击，在明文选项中选择我们压缩的文件，这样就拿到了密码
+
+![](https://pic1.imgdb.cn/item/67729cc4d0e0a243d4eccac6.jpg)
+
+
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-3.md -->
+### RAR 文件头修复
+
+当使用 WinRAR 打开时会提示文件头错误，我们需要做的就是去修改错误的文件头
+
+话不多说，直接上题（BugKu CTF）
+
+![](https://pic1.imgdb.cn/item/67728bf5d0e0a243d4ecc65a.jpg)
+
+打开文件报错
+
+![](https://pic1.imgdb.cn/item/67729ef3d0e0a243d4eccb43.jpg)
+
+RAR 文件格式解析：
+
+```
+1. 固定文件头：52 61 72 21 1A 07 00（其中 0x6152 表示 CRC，0x72 表示头类型，0x1A21 表示 FLAGS，0x0007 表示 SIZE）
+2. 压缩文件头：CF 90 73 00 00 0D 00 00 00 00 00 00 00（结构与上面一致，0x73 表示头类型，只是多了六个字节的保留位）
+3. 文件头：D5 56 74…………（这里内容太多（图中全是蓝色部分全是），我们只需知道前三个字节同样与上面一致，0x74 表示头类型）
+```
+
+![](https://pic1.imgdb.cn/item/6772a01ad0e0a243d4eccb6c.jpg)
+
+txt 的内容后面就是 secret.png 的文件头（txt 是可以打开的，内容就是图中字符串）
+
+文件头的头类型是 0x7A，将其改为 0x74
+
+![](https://pic1.imgdb.cn/item/6772a05cd0e0a243d4eccb86.jpg)
+
+成功解压缩出图片
+
+![](https://pic1.imgdb.cn/item/6772260cd0e0a243d4ec6aa5.jpg)
+
+
+
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-4.md -->
+### 压缩密码爆破
+
+大型比赛中官方都会提供字典，所以还是比较简单的
+
+直接上题（BugKu CTF）
+
+![](https://pic1.imgdb.cn/item/6772a0fbd0e0a243d4eccbbf.jpg)
+
+这里需要网上去下载一个 rockyou 字典
+
+![](https://pic1.imgdb.cn/item/6772a1add0e0a243d4eccbe0.jpg)
+
+题目给的是 ZIP 文件，使用工具 Ziperello 爆破
+
+![](https://pic1.imgdb.cn/item/6772a1bbd0e0a243d4eccbec.jpg)
+
+选择字典模式
+
+![](https://pic1.imgdb.cn/item/6772a1ddd0e0a243d4eccbf4.jpg)
+
+选择字典
+
+![](https://pic1.imgdb.cn/item/6772a1fad0e0a243d4eccc04.jpg)
+
+成功爆破出密码
+
+![](https://pic1.imgdb.cn/item/6772a208d0e0a243d4eccc06.jpg)
+
+
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-5.md -->
+### ZIP 明文破解（文件头）
+
+话不多说，直接上题（BugKu CTF）
+
+![](https://pic1.imgdb.cn/item/6772a2c4d0e0a243d4eccc3d.jpg)
+
+打开压缩包需要密码，查看其文件类型
+
+![](https://pic1.imgdb.cn/item/6772a2d6d0e0a243d4eccc5b.jpg)
+
+知道文件类型后在 WinHex 中创建相同格式文件
+
+![](https://pic1.imgdb.cn/item/6772a2eed0e0a243d4eccc6a.jpg)
+
+首先根据文件头爆破出 key 值
+
+```shell
+bkcrack.exe -C flag.zip -c flag.png -p 6.png -o 0 >1.log
+
+-C：被爆破的文件名
+-c：密文
+-p：明文
+```
+
+![](https://pic1.imgdb.cn/item/6772a30cd0e0a243d4eccc7e.jpg)
+
+```shell
+bkcrack.exe -C flag.zip -c flag.png -k key -d flag.png
+```
+
+最后还需要修改下 CRC 宽高即可
+
+![](https://pic1.imgdb.cn/item/6772a344d0e0a243d4eccc8f.jpg)
+
+
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-6.md -->
+### ZIP 明文破解（Key）
+
+话不多说，直接上题（BugKu CTF）
+
+![](https://pic1.imgdb.cn/item/6772a2c4d0e0a243d4eccc3d.jpg)
+
+继上一节通过文件头明文攻击拿到 Key 后
+
+```shell
+bkcrack.exe -C flag.zip -c flag.png -k key -d flag.png
+```
+
+最后还需要修改下 CRC 宽高即可
+
+![](https://pic1.imgdb.cn/item/6772a344d0e0a243d4eccc8f.jpg)
+
+
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-7.md -->
+### CRC 碰撞
+
+话不多说，直接上题（BugKu CTF）
+
+![](https://pic1.imgdb.cn/item/6772a640d0e0a243d4eccd82.jpg)
+
+打开文件需要密码，但是发现了三个大小相同的文件，多个相同大小文件可以确定为 CRC 碰撞
+
+![](https://pic1.imgdb.cn/item/6772a65dd0e0a243d4eccd87.jpg)
+
+使用脚本碰撞即可
+
+![](https://pic1.imgdb.cn/item/6772a673d0e0a243d4eccd95.jpg)
+
+
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-8.md -->
+### RAR 伪加密破解
+
+话不多说，直接上题（BUUCTF）
+
+![](https://pic1.imgdb.cn/item/6807b92758cb8da5c8c10199.png)
+
+下载附件解压报错
+
+![](https://pic1.imgdb.cn/item/6807b9eb58cb8da5c8c10636.png)
+
+放入 010 中解析，首先是文件头签名
+
+```
+52 61 72 21 1A 07 00
+```
+
+![](https://pic1.imgdb.cn/item/6807baf958cb8da5c8c10b95.png)
+
+第二个部分是关键
+
+| 偏移 | 大小   | 名称       | 说明                               |
+| ---- | ------ | ---------- | ---------------------------------- |
+| 0x00 | 1 字节 | HEAD_CRC   | 头部校验码                         |
+| 0x01 | 1 字节 | HEAD_TYPE  | 类型（`0x74` 表示 File Header）    |
+| 0x02 | 2 字节 | HEAD_FLAGS | 标志位（这里是伪加密的关键）       |
+| 0x04 | 2 字节 | HEAD_SIZE  | 头部大小                           |
+| 0x06 | 4 字节 | PACK_SIZE  | 压缩后大小                         |
+| 0x0A | 4 字节 | UNP_SIZE   | 解压后大小                         |
+| 0x0E | 1 字节 | HOST_OS    | 操作系统标识                       |
+| ...  | 可变   | 其余内容   | 包括文件名长度、压缩方法、时间戳等 |
+
+在 **RAR 4.x** 中也就是第 11 个字节处实现伪加密
+
+也就是 010 Editor 显示的文件结构中的 `ubyte BLOCK_HEADERS_ENCRYPTED` 字段的值改为 1
+
+![](https://pic1.imgdb.cn/item/6807c5d558cb8da5c8c14972.png)
+
+在 5.x 中还可以是第 24 个字节处
+
+![](https://pic1.imgdb.cn/item/6807c61f58cb8da5c8c14a56.png)
+
+题目中的版本应该 5.x，将 `84` 改为 `80` 即可
+
+（WinRAR 或者 ForeMost 均可直接提取图片）
+
+![](https://pic1.imgdb.cn/item/6807c65458cb8da5c8c14b03.png)
+
+
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-9.md -->
+### 加密 Word 爆破
+
+话不多说，直接上题（BUUCTF）
+
+![](https://pic1.imgdb.cn/item/6875c66358cb8da5c8af1be6.png)
+
+解压缩有三个文件
+
+![](https://pic1.imgdb.cn/item/6875c6e758cb8da5c8af20d3.png)
+
+首先是 hint.txt
+
+```
+The length of docm 's password is 6
+The Regular Expression of the password is:
+[a-z] [a-z] q [a-z] b [a-z]
+```
+
+得知 `password.docm` 密码全小写字母，且满足 `??q?b?`，使用 john 爆破（当然也可以直接用 Archpr）
+
+将 **Office** 文档中的哈希提取出来，保存为 `hash.txt`
+
+```shell
+office2john password.docm > word.hash
+```
+
+使用 **掩码攻击（mask attack）** 尝试爆破 `hash.txt` 中的密码哈希
+
+```sh
+john --mask='?l?lq?lb?l' word.hash
+# ?l 表示 小写字母（a-z）
+# q 和 b 是固定字符
+```
+
+![](https://pic1.imgdb.cn/item/6875c82e58cb8da5c8af30ba.png)
+
+打开 word
+
+![](https://pic1.imgdb.cn/item/6875c86b58cb8da5c8af33f1.png)
+
+得先破解宏，将 word 文件用压缩包方式打开，找到 `vbaProject.bin` 文件以十六进制方式查看，将  `DBP`  改为  `DBX`  并保存，[参考博客](https://blog.csdn.net/Cody_Ren/article/details/100895394)
+
+![](https://pic1.imgdb.cn/item/6875cd5458cb8da5c8af6f97.png)
+
+注意不要减少或者增加其他字符，保存退出
+
+![](https://pic1.imgdb.cn/item/6875cd6458cb8da5c8af6fb7.png)
+
+重新打开文件，Alt + F11打开
+
+![](https://pic1.imgdb.cn/item/6875cd7458cb8da5c8af6fc7.png)
+
+右键打开属性，设置一个密码保存，重新打开文件 Alt + F11 输入密码即可查看宏代码
+
+![](https://pic1.imgdb.cn/item/6875cdb458cb8da5c8af7020.png)
+
+```vbscript
+Private Sub CB_OK_Click()
+Dim strpasw As String
+Dim strdec As String
+Dim strusrinput As String
+Dim t As String
+t = ChrW(21152) & ChrW(27833) & ChrW(21543) & ChrW(65292) & ChrW(21516) & ChrW(23398) & ChrW(20204) & ChrW(65281)
+
+strusrinput = Dialog.TextBox_Pasw
+Dim sinput As String
+sinput = strusrinput
+
+If (strusrinput <> "") Then
+  strusout = Encode(strusrinput, t)
+  If (strusout = "┤℡ǒqｘ~") Then
+      strdec = Decode(Dialog.Label_ls.Caption, sinput)
+  Else
+     If (strusout = "ｋGJEｇｑ") Then
+        strdec = Decode(Dialog.Label_ls1.Caption, sinput)
+     Else
+          If (strusout = "ЮΟopz+") Then
+             strdec = Decode(Dialog.Label_ls2.Caption, sinput)
+          Else
+                If (strusout = "ｚΚjrШφεあ") Then
+                    strdec = Decode(Dialog.Label_ls4.Caption, sinput)
+                Else
+                    If (strusout = "àǖtＵｗ┧ｈè") Then
+                          strdec = Decode(Dialog.Label_ls3.Caption, sinput)
+                    Else
+                          strdec = StrConv(t, vbFromUnicode)
+                    End If
+                End If
+           End If
+      End If
+   End If
+   Label_CLUE.Caption = strdec
+End If
+```
+
+无需分析加解密算法，输出结果 `strusout` 由 `Encode(strusrinput, t)` 加密得到，只需分别用解密函数反推五个 if 分支条件对应的明文即可
+
+修改 `Label_CLUE.Caption = strdec` 为 `Label_CLUE.Caption = Decode(xxx,t)`，回到 word 运行 `AutoOpen` 宏
+
+随便输入字符点击确定即可在 Dialog 的 label 处显示对应明文，分别是 `123456`、`aaaaaa`、`000000`、`墙角数枝`、`iloveyou`
+
+将 `Label_CLUE.Caption = Decode(xxx,t)` 改回 `Label_CLUE.Caption = strdec`，分别输入五段明文，发现输入 `墙角数枝` 得到 `解压密码：两只黄鹂鸣翠柳,一行白鹭上青天!`
+
+结合 word 里的 hint `Rar 密码为复杂型，长度为16位，包含了字母、数字和符号。`
+
+压缩包密码猜出为 `2zhlmcl,1hblsqt.`，解压拿到 flag：`Dest0g3{VBScr1pt_And_Hashc4t_1s_g00d}`
+
+[参考博客](https://lazzzaro.github.io/2022/05/26/match-Dest0g3-520%E8%BF%8E%E6%96%B0%E8%B5%9B/index.html)
+
+
+<!-- Imported from D:\\Book\\Misc\\Chapter3\README.md -->
