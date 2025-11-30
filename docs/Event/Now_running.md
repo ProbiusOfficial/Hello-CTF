@@ -18,12 +18,3 @@ comments: true
     **赛事主办** : Hacken Proof (https://ctftime.org/team/411613)  
     **添加日历** : https://ctftime.org/event/3007.ics  
     
-??? Quote "[HeroCTF v7](https://ctf.heroctf.fr/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.heroctf.fr/)  
-    **比赛名称** : [HeroCTF v7](https://ctf.heroctf.fr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-29 04:00:00 - 2025-12-01 06:00:00 UTC+8  
-    **比赛权重** : 65.00  
-    **赛事主办** : HeroCTF (https://ctftime.org/team/145166)  
-    **添加日历** : https://ctftime.org/event/2869.ics  
-    

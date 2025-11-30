@@ -360,18 +360,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "HeroCTF v7",
-        "比赛时间": "2025-11-29 04:00:00 - 2025-12-01 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2869.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.heroctf.fr/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "65.00",
-        "赛事主办": "HeroCTF (https://ctftime.org/team/145166)",
-        "比赛ID": "601",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "m0leCon 2026 Beginner CTF",
         "比赛时间": "2025-11-29 21:00:00 - 2025-11-30 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3017.ics",
@@ -405,6 +393,18 @@
         "比赛权重": "0.00",
         "赛事主办": "WP CTF (https://ctftime.org/team/303099)",
         "比赛ID": "1128",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "HeroCTF v7",
+        "比赛时间": "2025-11-29 04:00:00 - 2025-12-01 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2869.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.heroctf.fr/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "65.00",
+        "赛事主办": "HeroCTF (https://ctftime.org/team/145166)",
+        "比赛ID": "601",
         "比赛状态": "past"
     },
     {
@@ -1557,18 +1557,6 @@
         "比赛权重": "23.04",
         "赛事主办": "WATCTF (https://ctftime.org/team/373968)",
         "比赛ID": "1283",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BlackHat MEA CTF Qualification 2025",
-        "比赛时间": "2025-09-07 18:00:00 - 2025-09-08 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2876.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://blackhatmea.com/capture-the-flag",
-        "比赛标志": "https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2_1.jpg",
-        "比赛权重": "25.83",
-        "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
-        "比赛ID": "826",
         "比赛状态": "past"
     }
 ]

@@ -563,15 +563,6 @@ hide:
                 **赛事主办** : Hacken Proof (https://ctftime.org/team/411613)  
                 **添加日历** : https://ctftime.org/event/3007.ics  
                 
-            ??? Quote "[HeroCTF v7](https://ctf.heroctf.fr/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.heroctf.fr/)  
-                **比赛名称** : [HeroCTF v7](https://ctf.heroctf.fr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-29 04:00:00 - 2025-12-01 06:00:00 UTC+8  
-                **比赛权重** : 65.00  
-                **赛事主办** : HeroCTF (https://ctftime.org/team/145166)  
-                **添加日历** : https://ctftime.org/event/2869.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[MoeCTF 2025](https://ctf.xidian.edu.cn/games/22)"  
@@ -608,6 +599,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : WP CTF (https://ctftime.org/team/303099)  
                 **添加日历** : https://ctftime.org/event/2764.ics  
+                
+            ??? Quote "[HeroCTF v7](https://ctf.heroctf.fr/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.heroctf.fr/)  
+                **比赛名称** : [HeroCTF v7](https://ctf.heroctf.fr/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-11-29 04:00:00 - 2025-12-01 06:00:00 UTC+8  
+                **比赛权重** : 65.00  
+                **赛事主办** : HeroCTF (https://ctftime.org/team/145166)  
+                **添加日历** : https://ctftime.org/event/2869.ics  
                 
             ??? Quote "[LakeCTF Quals 25-26](https://lakectf.epfl.ch/)"  
                 [![](https://ctftime.org/media/events/lake_logo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
@@ -1472,15 +1472,6 @@ hide:
                 **比赛权重** : 23.04  
                 **赛事主办** : WATCTF (https://ctftime.org/team/373968)  
                 **添加日历** : https://ctftime.org/event/2854.ics  
-                
-            ??? Quote "[BlackHat MEA CTF Qualification 2025](https://blackhatmea.com/capture-the-flag)"  
-                [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2_1.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
-                **比赛名称** : [BlackHat MEA CTF Qualification 2025](https://blackhatmea.com/capture-the-flag)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-07 18:00:00 - 2025-09-08 18:00:00 UTC+8  
-                **比赛权重** : 25.83  
-                **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
-                **添加日历** : https://ctftime.org/event/2876.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
