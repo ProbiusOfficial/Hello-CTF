@@ -379,7 +379,7 @@ comments: true
     **比赛名称** : [V1t CTF 2025](https://ctf.v1t.site/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-10-31 21:00:00 - 2025-11-02 21:00:00 UTC+8  
-    **比赛权重** : 21.91  
+    **比赛权重** : 21.93  
     **赛事主办** : V1t (https://ctftime.org/team/280950)  
     **添加日历** : https://ctftime.org/event/2920.ics  
     
@@ -901,7 +901,7 @@ comments: true
     **比赛名称** : [WatCTF F25](https://watctf.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-09-10 03:00:00 - 2025-09-12 03:00:00 UTC+8  
-    **比赛权重** : 22.99  
+    **比赛权重** : 23.04  
     **赛事主办** : WATCTF (https://ctftime.org/team/373968)  
     **添加日历** : https://ctftime.org/event/2854.ics  
     
