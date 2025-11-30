@@ -212,26 +212,39 @@ nav:
       - 编码扩展: hc-misc/Encode_extra.md
       - 文件基础: hc-misc/file.md
       - 压缩包: hc-misc/Archivefile.md
-      - 隐写技术: hc-misc/stego.md
+      - 图片隐写: hc-misc/stego.md
+      - 文件隐写: hc-misc/file_stego.md
+      - 音频隐写: hc-misc/audio_stego.md
       - 流量分析: hc-misc/pcap.md
+      - 工控类: hc-misc/industrial.md
       - 内存取证: hc-misc/memory.md
       - 附:文件签名表 : hc-misc/file_sign.md
 
     - Web | 网络攻防:
       - hc-web/index.md
       - Web入门题单: hc-web/web_start.md
+      - 敏感信息泄露: hc-web/sensitive_info.md
       - PHP基础: hc-web/php_basic.md
-      - PHP反序列化基础: hc-web/php_unser_base.md 
+      - PHP反序列化基础: hc-web/php_unser_base.md
       - SQL注入: hc-web/sql_injection.md
       - XSS攻击: hc-web/xss.md
       - 文件包含: hc-web/include.md
       - SSTI注入: hc-web/ssti.md
+      - XXE注入: hc-web/xxe.md
+      - SSRF注入: hc-web/ssrf.md
+      - PHP 代码审计: hc-web/php_code_audit.md
+      - RCE: hc-web/rce.md
+      - 文件上传: hc-web/file_upload.md
+      - 目录穿越: hc-web/dir_traversal.md
+      - 逻辑漏洞: hc-web/logical_vuln.md
+      - 任意文件读取: hc-web/any_file_read.md
 
     - Crypto | 密码学:
       - hc-crypto/index.md
       - 前情提要: hc-crypto/Recap.md
       - 编码基础: hc-crypto/Encode.md
       - 古典密码: hc-crypto/Classicalcipher.md
+      - 现代密码: hc-crypto/Moderncipher.md
 
     - Reverse | 逆向工程:
       - hc-reverse/index.md
