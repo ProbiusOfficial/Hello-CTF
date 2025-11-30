@@ -135,9 +135,9 @@ comments: true
     **赛事主办** : TSG (https://ctftime.org/team/16088)  
     **添加日历** : https://ctftime.org/event/2867.ics  
     
-??? Quote "[ASIS CTF Final 2025](https://asisctf.com/)"  
+??? Quote "[ASIS CTF Finals 2025](https://asisctf.com/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://asisctf.com/)  
-    **比赛名称** : [ASIS CTF Final 2025](https://asisctf.com/)  
+    **比赛名称** : [ASIS CTF Finals 2025](https://asisctf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-12-27 22:00:00 - 2025-12-28 22:00:00 UTC+8  
     **比赛权重** : 100.00  
