@@ -91,7 +91,7 @@ comments: true
     **比赛名称** : [sknbCTF 2025](http://ctf.sknb.team/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-11-22 11:00:00 - 2025-11-23 11:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 24.65  
     **赛事主办** : sknb (https://ctftime.org/team/355880)  
     **添加日历** : https://ctftime.org/event/2947.ics  
     
