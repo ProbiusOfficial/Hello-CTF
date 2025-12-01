@@ -149,6 +149,15 @@ comments: true
     **赛事主办** : MadrHacks (https://ctftime.org/team/114509)  
     **添加日历** : https://ctftime.org/event/2994.ics  
     
+??? Quote "[Ukrainian National CTF](https://hackenproof.com/gur-national-ctf-en)"  
+    [![](https://ctftime.org/media/events/nationalCtf.jpg){ width="200" align=left }](https://hackenproof.com/gur-national-ctf-en)  
+    **比赛名称** : [Ukrainian National CTF](https://hackenproof.com/gur-national-ctf-en)  
+    **比赛形式** : Hack quest  
+    **比赛时间** : 2025-11-20 08:00:00 - 2025-12-01 08:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Hacken Proof (https://ctftime.org/team/411613)  
+    **添加日历** : https://ctftime.org/event/3007.ics  
+    
 ??? Quote "[M*CTF 2025 Quals](https://mctf.mtuci.ru/)"  
     [![](https://ctftime.org/media/events/logo_15.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
     **比赛名称** : [M*CTF 2025 Quals](https://mctf.mtuci.ru/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 50.00  
     **赛事主办** : CCSIR.org (https://ctftime.org/team/9831)  
     **添加日历** : https://ctftime.org/event/2866.ics  
-    
-??? Quote "[WatCTF F25](https://watctf.org/)"  
-    [![](https://ctftime.org/media/events/Black_Back_Yellow_Lock_1.png){ width="200" align=left }](https://watctf.org/)  
-    **比赛名称** : [WatCTF F25](https://watctf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-09-10 03:00:00 - 2025-09-12 03:00:00 UTC+8  
-    **比赛权重** : 23.04  
-    **赛事主办** : WATCTF (https://ctftime.org/team/373968)  
-    **添加日历** : https://ctftime.org/event/2854.ics  
     

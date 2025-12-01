@@ -348,18 +348,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Ukrainian National CTF",
-        "比赛时间": "2025-11-20 08:00:00 - 2025-12-01 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3007.ics",
-        "比赛形式": "Hack quest",
-        "比赛链接": "https://hackenproof.com/gur-national-ctf-en",
-        "比赛标志": "https://ctftime.org/media/events/nationalCtf.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Hacken Proof (https://ctftime.org/team/411613)",
-        "比赛ID": "1444",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "m0leCon 2026 Beginner CTF",
         "比赛时间": "2025-11-29 21:00:00 - 2025-11-30 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3017.ics",
@@ -537,6 +525,18 @@
         "比赛权重": "21.00",
         "赛事主办": "MadrHacks (https://ctftime.org/team/114509)",
         "比赛ID": "994",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Ukrainian National CTF",
+        "比赛时间": "2025-11-20 08:00:00 - 2025-12-01 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3007.ics",
+        "比赛形式": "Hack quest",
+        "比赛链接": "https://hackenproof.com/gur-national-ctf-en",
+        "比赛标志": "https://ctftime.org/media/events/nationalCtf.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Hacken Proof (https://ctftime.org/team/411613)",
+        "比赛ID": "1444",
         "比赛状态": "past"
     },
     {
@@ -1545,18 +1545,6 @@
         "比赛权重": "50.00",
         "赛事主办": "CCSIR.org (https://ctftime.org/team/9831)",
         "比赛ID": "73",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "WatCTF F25",
-        "比赛时间": "2025-09-10 03:00:00 - 2025-09-12 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2854.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://watctf.org/",
-        "比赛标志": "https://ctftime.org/media/events/Black_Back_Yellow_Lock_1.png",
-        "比赛权重": "23.04",
-        "赛事主办": "WATCTF (https://ctftime.org/team/373968)",
-        "比赛ID": "1283",
         "比赛状态": "past"
     }
 ]
