@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Advent of CTF 2025](https://cyberstudents.net/advent)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://cyberstudents.net/advent)  
-            **比赛名称** : [Advent of CTF 2025](https://cyberstudents.net/advent)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-12-02 09:00:00 - 2026-01-01 12:59:59 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
-            **添加日历** : https://ctftime.org/event/3022.ics  
-            
         ??? Quote "[BlackHat MEA CTF Final 2025](https://blackhatmea.com/capture-the-flag)"  
             [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2_2.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
             **比赛名称** : [BlackHat MEA CTF Final 2025](https://blackhatmea.com/capture-the-flag)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : r0/dev/null (https://ctftime.org/team/398024)  
             **添加日历** : https://ctftime.org/event/2901.ics  
+            
+        ??? Quote "[P3rf3ctr00t CTF 2025](https://ctf.perfectroot.wiki/)"  
+            [![](https://ctftime.org/media/events/project_20240319_1256007-01.png){ width="200" align=left }](https://ctf.perfectroot.wiki/)  
+            **比赛名称** : [P3rf3ctr00t CTF 2025](https://ctf.perfectroot.wiki/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-12-05 23:00:00 - 2025-12-07 23:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : L3v3l 6 (https://ctftime.org/team/206364)  
+            **添加日历** : https://ctftime.org/event/3009.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

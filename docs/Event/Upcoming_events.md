@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Advent of CTF 2025](https://cyberstudents.net/advent)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://cyberstudents.net/advent)  
-    **比赛名称** : [Advent of CTF 2025](https://cyberstudents.net/advent)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-12-02 09:00:00 - 2026-01-01 12:59:59 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
-    **添加日历** : https://ctftime.org/event/3022.ics  
-    
 ??? Quote "[BlackHat MEA CTF Final 2025](https://blackhatmea.com/capture-the-flag)"  
     [![](https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2_2.jpg){ width="200" align=left }](https://blackhatmea.com/capture-the-flag)  
     **比赛名称** : [BlackHat MEA CTF Final 2025](https://blackhatmea.com/capture-the-flag)  

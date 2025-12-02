@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Advent of CTF 2025",
-        "比赛时间": "2025-12-02 09:00:00 - 2026-01-01 12:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/3022.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cyberstudents.net/advent",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "CyberStudentsCTF (https://ctftime.org/team/365239)",
-        "比赛ID": "1218",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "BlackHat MEA CTF Final 2025",
         "比赛时间": "2025-12-02 16:00:00 - 2025-12-04 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2877.ics",
@@ -358,6 +346,18 @@
         "赛事主办": "Singapore Students Merger (https://ctftime.org/team/299075)",
         "比赛ID": "1329",
         "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Advent of CTF 2025",
+        "比赛时间": "2025-12-02 09:00:00 - 2026-01-01 12:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/3022.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cyberstudents.net/advent",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "CyberStudentsCTF (https://ctftime.org/team/365239)",
+        "比赛ID": "1218",
+        "比赛状态": "nowrunning"
     },
     {
         "比赛名称": "m0leCon 2026 Beginner CTF",
