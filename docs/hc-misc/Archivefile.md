@@ -243,7 +243,7 @@ zip伪加密是在文件头的加密标志位做修改，进而再打开文件�
 
 ![image-20240801144850829](./assets/image-20240801144850829.png)
 ##### 伪加密
-伪加密的zip压缩包压缩源文件数据区的全局加密应当为09 00，且压缩源文件目录区的全局方式位标记也为 00 00或者01 00。
+伪加密的zip压缩包压缩源文件数据区的全局加密应当为09 00，且压缩源文件目录区的全局方式位标记也为 00 00 或者 01 00。
 
 ![image-20240801145320382](./assets/image-20240801145320382.png)
 
@@ -251,9 +251,6 @@ zip伪加密是在文件头的加密标志位做修改，进而再打开文件�
 
 <!-- Imported from D:\\Book\\Misc\\Chapter3\3-1.md -->
 
-Zip 伪加密是在文件头的加密标志位做修改，进而再打开文件时识被别为加密压缩包
-
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/677296ffd0e0a243d4ecc926.jpg)
 
@@ -266,14 +263,61 @@ Zip 文件结构分析：
 ```
 1. 固定头文件：50 4B 03 04
 2. 解压所需 pkware 版本：14 00
-3. 全局方式位标记（有无加密）：00 00
+3. 全局方式位标记（有无加密）：09 00
+4. 压缩方式：08 00
+5. 最后修改时间：50 A3
+6. 最后修改日期：A5 4A
+7. CRC-32：21 38 76 65
+8. 压缩后大小：19 00 00 00
+9. 解压前大小：17 00 00 00
+10. 文件名长度：08 00
+11. 扩展字段长度：00 00
+12. 文件名：66 6C 61 67 2E 74 78 74
+13. 文件数据：4B CB 49 4C AF 76…………
+14. 中央目录文件头：50 4B 01 02
+15. ZIP 程序版本字段：1F 00
+16. 解压所需 pkware 版本：14 00
+17. 全局方式位标记（有无加密）：09 00
+18. 压缩方式：08 00
+19. 最后修改时间：50 A3
+20. 最后修改日期：A5 4A
+21. CRC-32：21 38 76 65
+22. 压缩后大小：19 00 00 00
+23. 解压前大小：17 00 00 00
+24. 文件名长度：08 00
+25. 扩展字段长度：24 00
+26. 文件注释长度：00 00
+27. 单卷 ZIP 文件：00 00
+28. 内部文件属性：20 00
+29. 文件权限字段: 00 00 00 00
+30. 文件名：66 6C 61 67 2E 74 78 74
+31. 额外字段: 0A 00…………
+32. EOCD 文件头: 50 4B 05 06
+33. 当前磁盘编号: 00 00 （表示 ZIP 不是分卷）
+34. 中央目录所在磁盘: 00 00 （也表示 ZIP 不是多卷）
+35. 此磁盘中央目录中的条目总数: 01 00（就一个 flag.txt）
+36. 中央目录中的条目总数: 01 00（也只有一个 flag.txt）
+37. 中央目录的大小：5A 00 00 00
+38. 中央目录偏移量：3F 00 00 00
+39. ZIP 注释长度: 00 00
 ```
 
-伪加密只需知道这些就可以了
 
 ![](https://pic1.imgdb.cn/item/67729775d0e0a243d4ecc938.jpg)
 
-09 00 一般都是伪加密，改为 00 00 即可打开，有多个则都改为 00
+09 00 或者 01 00 一般都是伪加密
+
+注意：ZIP 的压缩数据段应该被加密后变成随机字节流，但伪加密 ZIP 的压缩数据仍然是正常的 deflate 流
+
+解压软件解压前先看全局方式位标记，如果 bit0 = 1，则要求输入密码
+
+但是 7-Zip 解压时不会提示输入密码，直接解压出文件。因为它的判定方式是中央目录 flag = 0（不加密），则认为此文件未加密
+
+这题做的比较好，中央目录也改了，也就是 01 02 开头处。其 flag 位置在 + 6 处，题目中的是 09 00
+
+![](https://pic1.imgdb.cn/item/692e8ccb7313ea6c250be3bf.png)
+
+修改为本地文件头的加密标志为 00 00 即可打开
 
 ![](https://pic1.imgdb.cn/item/67729798d0e0a243d4ecc93c.jpg)
 
@@ -285,7 +329,6 @@ Zip 文件结构分析：
 <!-- Imported from D:\\Book\\Misc\\Chapter3\3-10.md -->
 ### 加密宏破解
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6875c66358cb8da5c8af1be6.png)
 
@@ -396,9 +439,7 @@ End If
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter3\3-11.md -->
-### 不可见字符密码爆破
-
-话不多说，直接上题（BUUCTF）
+### PKZIP 密钥还原
 
 ![](https://pic1.imgdb.cn/item/687746b858cb8da5c8b7efda.png)
 
@@ -473,111 +514,143 @@ with zipfile.ZipFile('download.zip', 'r') as fz:
 打开又得到密钥
 
 ![](https://pic1.imgdb.cn/item/687751f158cb8da5c8b84af1.png)
-
-同时在 zpaq 文件的文件尾得到
-
-![](https://pic1.imgdb.cn/item/6877526458cb8da5c8b84b2e.png)
-
-密码是 md5（明文的密钥，长度为 3 个字节）
-
-因此还需要还原 pkzip 的三段密匙，使用下面指令直接破解
-
-```sh
-bkcrack.exe -k e48d3828 5b7223cc 71851fb0 -r 3 ?b
-# -r 3 表示使用反推阶段（reverse）进行 第 3 次迭代尝试，即从 key2 推回 key0 的过程的步骤次数
-# ?b 是一个通配符，通常是 bkcrack 的参数，表示用 brute-force（暴力枚举） 去补全某些信息
-```
-
-![](https://pic1.imgdb.cn/item/687752b258cb8da5c8b84b49.png)
-
-最后使用 md5 加密后的密码解压缩即可
-
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter3\3-12.md -->
-### PKZIP 密钥还原
-
-话不多说，直接上题（BUUCTF）
-
-![](https://pic1.imgdb.cn/item/687746b858cb8da5c8b7efda.png)
-
-给了三个文件
-
-![](https://pic1.imgdb.cn/item/6877471d58cb8da5c8b7f2b9.png)
-
-压缩包里还有一层
-
-![](https://pic1.imgdb.cn/item/6877484d58cb8da5c8b80028.png)
-
-先尝试利用 key 文件做一个明文攻击
-
-```sh
-bkcrack.exe -C purezip.zip -c "secret key.zip" -p key
-```
-
-![](https://pic1.imgdb.cn/item/687749fc58cb8da5c8b81b39.png)
-
-再利用密钥直接解压
-
-```sh
-bkcrack.exe -C purezip.zip -c "secret key.zip" -k e63af7cc 55ef839d dc10b922 -d 1.zip
-```
-
-![](https://pic1.imgdb.cn/item/68774afc58cb8da5c8b8295a.png)
-
-注意此时的 ZIP 是压缩之后的，需要解压一下，放到 cyberchef 里面使用 raw inflate 解一下并保存压缩包
-
-![](https://pic1.imgdb.cn/item/68774f1158cb8da5c8b84691.png)
-
-告诉我们密码为两个字节
-
-![](https://pic1.imgdb.cn/item/68774f4358cb8da5c8b846b3.png)
-
-写脚本爆破
-
-```python
-import zipfile
-import libnum
-from tqdm import trange
-
-for i in trange(256):
-    for j in range(256):
-        fz = zipfile.ZipFile('11.zip', 'r')
-        password = libnum.n2s(i) + libnum.n2s(j)
-        try:
-            fz.extractall(pwd=password)
-            print(password)
-            fz.close()
-            break
-        except:
-            fz.close()
-            continue
-    else:
-        continue
-    break
-```
-
-得到密码：`\x9c\x07`
-
-再写脚本解压
-
-```python
-import zipfile
-
-with zipfile.ZipFile('download.zip', 'r') as fz:
-    # 直接解压，指定密码
-    fz.extractall(pwd=b'\x9c\x07')
-```
-
-打开又得到密钥
-
-![](https://pic1.imgdb.cn/item/687751f158cb8da5c8b84af1.png)
 
 同时在 zpaq 文件的文件尾得到
 
 ![](https://pic1.imgdb.cn/item/6877526458cb8da5c8b84b2e.png)
 
 密码是 md5（明文的密钥，长度为 3 个字节）
+
+PKZIP 传统加密不是 AES，而是一种可逆弱流密码，内部维护三个 32-bit 状态：Key0、Key1、Key2
+
+你只要恢复了这三个 key，就能解密 ZIP 内所有文件，即使你不知道用户密码
+
+我们把整个加密分为两个阶段
+
+```
+阶段 1：用密码生成三段密钥（Key0/Key1/Key2）
+阶段 2：用三段密钥加密数据
+```
+
+阶段一：用密码生成三段密钥
+
+```c
+Key0 = 0x12345678
+Key1 = 0x23456789
+Key2 = 0x34567890
+```
+
+再初始化密钥，对用户输入的 ZIP 密码的每一个字节（用 p 代替）：
+
+```c
+Key0 = CRC32(Key0, p)
+Key1 = Key1 + (Key0 & 0xff)
+Key1 = Key1 * 134775813 + 1
+Key2 = CRC32(Key2, (Key1 >> 24))
+```
+
+阶段 2：用三段密钥加密数据
+
+第 1 步：用 Key2 生成一个密钥流字节（keystream = 基于 Key2 算出来 1 字节）
+
+第 2 步：明文 XOR keystream = 密文
+
+第 3 步：用明文字节更新三段密钥（Key0/Key1/Key2）
+
+```c
+Key0 = CRC32(Key0, P)       // 明文字节 P
+Key1 = Key1 + (Key0 & 0xff)
+Key1 = Key1 * 134775813 + 1
+Key2 = CRC32(Key2, (Key1 >> 24))
+```
+
+也就是说，每加密一个明文字节，都要：
+
+    1. 生成一个 keystream（密钥流字节）
+    2. 用它 XOR 明文得到密文
+    3. 用“明文字节”更新 Key0 Key1 Key2
+
+阶段一只进行一次，阶段二每加密一个明文字节就进行一次
+
+那么怎么破解呢？？？
+
+PKZIP 的三段密钥更新结构是可逆的（CRC32 可逆、乘法可逆、加法可逆），所以只要你知道某一刻的 Key0 / Key1 / Key2，就能倒推所有密码字节
+
+逆向步骤 1：由 Key2 推出 Key1 的最高字节 & Key2_prev
+
+正向是
+
+```python
+Key2 = CRC32(Key2_prev, MSB(Key1_prev))
+```
+
+逆向时枚举 Key1 的最高字节（0x00–0xFF），对 CRC32 进行逆变换
+
+```python
+Key2_prev = inverse_crc32(Key2, guessed_MSB_Key1)
+```
+
+逆向步骤 2：由 Key1_final 推出 Key1_prev 和 Key0_prev 的低字节
+
+正向是
+
+```python
+Key1 = (Key1_prev + LSB(Key0_prev)) * 134775813 + 1
+```
+
+逆向是
+
+```python
+# 去掉 +1：
+    Key1_minus1 = Key1_final - 1
+# 乘法逆元恢复加之前的值：
+    # 因为
+    Key1_minus1 = (Key1_prev + LSB(Key0_prev)) * constant
+    # 所以
+    Key1_prev + LSB(Key0_prev) = Key1_minus1 * inverse(constant) mod 2^32
+    # 其中 constant = 134775813
+    # inverse(constant) 是其在 mod 2^32 下的乘法逆元
+# 此时我们知道：
+    Key1_prev + LSB(Key0_prev) = some_value
+    # 这里未知的只有 8 bit
+    # 所以枚举 256 种 LSB(Key0_prev)，即可得到 Key1_prev
+```
+
+逆向步骤 3：由 Key0_final 推出 Key0_prev 和密码字节 p
+
+正向是
+
+```python
+Key0_final = CRC32(Key0_prev, p)
+```
+
+逆向是
+
+```python
+# 因为 CRC32 的单步更新
+    CRC32(old, byte)  →  new
+# 在数学上是完全可逆的：
+    inverse_crc32(new, p) → old
+    # 所以我们枚举密码字节 p（0x00–0xFF）
+    Key0_prev = inverse_crc32(Key0_final, p)
+```
+
+最终组合成完整逆向流程
+
+```
+for i from N-1 down to 0:
+    从 Key2_final 逆 CRC32 推 Key1_prev 的最高位
+    从 Key1_final 逆乘法和加法推 Key1_prev & Key0_prev低位
+    枚举 p 从 Key0_final 逆 CRC32 推 Key0_prev
+    如果所有约束一致，则：
+         p[i] = 当前枚举值
+         Key0_final = Key0_prev
+         Key1_final = Key1_prev
+         Key2_final = Key2_prev
+```
 
 因此还需要还原 pkzip 的三段密匙，使用下面指令直接破解
 
@@ -597,7 +670,6 @@ bkcrack.exe -k e48d3828 5b7223cc 71851fb0 -r 3 ?b
 
 明文攻击主要利用大于 12 字节的一段已知明文数据进行攻击，从而获取整个加密文档的数据，具体的原理这里不阐述
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/6771139ad0e0a243d4ec1f4e.jpg)
 
@@ -615,8 +687,6 @@ bkcrack.exe -k e48d3828 5b7223cc 71851fb0 -r 3 ?b
 
 不同的压缩软件算法各不同，这里要使用 WinRAR
 
-![神秘的文件-4](D:\www\vite-project\src\components\misc\img\神秘的文件-4.png)
-
 使用工具 ARCHPR 明文攻击，在明文选项中选择我们压缩的文件，这样就拿到了密码
 
 ![](https://pic1.imgdb.cn/item/67729cc4d0e0a243d4eccac6.jpg)
@@ -627,7 +697,6 @@ bkcrack.exe -k e48d3828 5b7223cc 71851fb0 -r 3 ?b
 
 当使用 WinRAR 打开时会提示文件头错误，我们需要做的就是去修改错误的文件头
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67728bf5d0e0a243d4ecc65a.jpg)
 
@@ -690,7 +759,6 @@ txt 的内容后面就是 secret.png 的文件头（txt 是可以打开的，内
 <!-- Imported from D:\\Book\\Misc\\Chapter3\3-5.md -->
 ### ZIP 明文破解（文件头）
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/6772a2c4d0e0a243d4eccc3d.jpg)
 
@@ -726,7 +794,6 @@ bkcrack.exe -C flag.zip -c flag.png -k key -d flag.png
 <!-- Imported from D:\\Book\\Misc\\Chapter3\3-6.md -->
 ### ZIP 明文破解（Key）
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/6772a2c4d0e0a243d4eccc3d.jpg)
 
@@ -744,7 +811,6 @@ bkcrack.exe -C flag.zip -c flag.png -k key -d flag.png
 <!-- Imported from D:\\Book\\Misc\\Chapter3\3-7.md -->
 ### CRC 碰撞
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/6772a640d0e0a243d4eccd82.jpg)
 
@@ -760,7 +826,6 @@ bkcrack.exe -C flag.zip -c flag.png -k key -d flag.png
 <!-- Imported from D:\\Book\\Misc\\Chapter3\3-8.md -->
 ### RAR 伪加密破解
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6807b92758cb8da5c8c10199.png)
 
@@ -809,7 +874,6 @@ bkcrack.exe -C flag.zip -c flag.png -k key -d flag.png
 <!-- Imported from D:\\Book\\Misc\\Chapter3\3-9.md -->
 ### 加密 Word 爆破
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6875c66358cb8da5c8af1be6.png)
 

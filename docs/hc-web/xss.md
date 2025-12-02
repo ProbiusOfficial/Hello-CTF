@@ -67,7 +67,6 @@ prompt(document.coolkie)
 <!-- Imported from D:\\Book\\Web\\Chapter9\9-1.md -->
 ### 存储型 XSS
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67b18a2dd0e0a243d4ffc56a.jpg)
 
@@ -107,7 +106,6 @@ prompt(document.coolkie)
 <!-- Imported from D:\\Book\\Web\\Chapter9\9-10.md -->
 ### Referer XSS
 
-话不多说，直接上题（XSS-Labs）
 
 ![](https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png)
 
@@ -170,7 +168,6 @@ Referer: " onclick=javascript:alert() type="text
 <!-- Imported from D:\\Book\\Web\\Chapter9\9-11.md -->
 ### User-Agent XSS
 
-话不多说，直接上题（XSS-Labs）
 
 ![](https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png)
 
@@ -239,7 +236,6 @@ echo "<h3 align=center>payload的长度:".strlen($str)."</h3>";
 <!-- Imported from D:\\Book\\Web\\Chapter9\9-12.md -->
 ### Cookie XSS
 
-话不多说，直接上题（XSS-Labs）
 
 ![](https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png)
 
@@ -309,7 +305,6 @@ echo "<h3 align=center>payload的长度:".strlen($str)."</h3>";
 <!-- Imported from D:\\Book\\Web\\Chapter9\9-13.md -->
 ### Angular JS ng-include XSS
 
-话不多说，直接上题（XSS-Labs）
 
 ![](https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png)
 
@@ -380,7 +375,6 @@ echo '<body><span class="ng-include:'.htmlspecialchars($str).'"></span></body>';
 <!-- Imported from D:\\Book\\Web\\Chapter9\9-14.md -->
 ### 回车代替空格绕过
 
-话不多说，直接上题（XSS-Labs）
 
 ![](https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png)
 
@@ -435,7 +429,6 @@ echo "<h3 align=center>payload的长度:".strlen($str5)."</h3>";
 <!-- Imported from D:\\Book\\Web\\Chapter9\9-15.md -->
 ### 短标签绕过
 
-话不多说，直接上题（XSS-Labs）
 
 ![](https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png)
 
@@ -489,7 +482,6 @@ echo "<h3 align=center>payload的长度:".strlen($str5)."</h3>";
 <!-- Imported from D:\\Book\\Web\\Chapter9\9-16.md -->
 ### Angular JS 模板注入 XSS
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/68184d6958cb8da5c8dcab87.png)
 
@@ -524,7 +516,6 @@ echo "<h3 align=center>payload的长度:".strlen($str5)."</h3>";
 <!-- Imported from D:\\Book\\Web\\Chapter9\9-17.md -->
 ### DOM 跳转 XSS
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687c5c7358cb8da5c8c80176.png)
 
@@ -572,7 +563,6 @@ http://challenge-f42fd52528263d24.sandbox.ctfhub.com:10800/?jumpto=javascript:al
 <!-- Imported from D:\\Book\\Web\\Chapter9\9-18.md -->
 ### / 代替空格绕过
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687c79dd58cb8da5c8c836a9.png)
 
@@ -586,7 +576,6 @@ http://challenge-f42fd52528263d24.sandbox.ctfhub.com:10800/?jumpto=javascript:al
 <!-- Imported from D:\\Book\\Web\\Chapter9\9-2.md -->
 ### URL XSS
 
-话不多说，直接上题（XSS-Labs）
 
 ![](https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png)
 
@@ -640,7 +629,6 @@ echo "<h3 align=center>payload的长度:".strlen($str)."</h3>";
 <!-- Imported from D:\\Book\\Web\\Chapter9\9-3.md -->
 ### 闭合绕过
 
-话不多说，直接上题（XSS-Labs）
 
 ![](https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png)
 
@@ -706,7 +694,6 @@ echo "<h3 align=center>payload的长度:".strlen($str)."</h3>";
 <!-- Imported from D:\\Book\\Web\\Chapter9\9-4.md -->
 ### 事件绕过
 
-话不多说，直接上题（XSS-Labs）
 
 ![](https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png)
 
@@ -771,7 +758,6 @@ echo "<h3 align=center>payload的长度:".strlen($str)."</h3>";
 <!-- Imported from D:\\Book\\Web\\Chapter9\9-5.md -->
 ### a href 绕过
 
-话不多说，直接上题（XSS-Labs）
 
 ![](https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png)
 
@@ -836,7 +822,6 @@ echo "<h3 align=center>payload的长度:".strlen($str3)."</h3>";
 <!-- Imported from D:\\Book\\Web\\Chapter9\9-6.md -->
 ### 大小写绕过
 
-话不多说，直接上题（XSS-Labs）
 
 ![](https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png)
 
@@ -902,7 +887,6 @@ echo "<h3 align=center>payload的长度:".strlen($str6)."</h3>";
 <!-- Imported from D:\\Book\\Web\\Chapter9\9-7.md -->
 ### 双写绕过
 
-话不多说，直接上题（XSS-Labs）
 
 ![](https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png)
 
@@ -968,7 +952,6 @@ echo "<h3 align=center>payload的长度:".strlen($str6)."</h3>";
 <!-- Imported from D:\\Book\\Web\\Chapter9\9-8.md -->
 ### Unicode 编码绕过
 
-话不多说，直接上题（XSS-Labs）
 
 ![](https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png)
 
@@ -1038,7 +1021,6 @@ echo "<h3 align=center>payload的长度:".strlen($str7)."</h3>";
 <!-- Imported from D:\\Book\\Web\\Chapter9\9-9.md -->
 ### 注释绕过
 
-话不多说，直接上题（XSS-Labs）
 
 ![](https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png)
 

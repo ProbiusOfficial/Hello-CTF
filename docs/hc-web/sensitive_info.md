@@ -9,7 +9,6 @@ comments: true
 <!-- Imported from D:\\Book\\Web\\Chapter1\1-1.md -->
 ### 代码注释泄露
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67b065bdd0e0a243d4ff9ef3.jpg)
 
@@ -25,7 +24,6 @@ F12 查看源代码拿到注释中的 flag
 <!-- Imported from D:\\Book\\Web\\Chapter1\1-10.md -->
 ### .DS_Store 文件泄露
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/6878b6d358cb8da5c8be7ec8.png)
 
@@ -51,7 +49,6 @@ http://challenge-925075ffed70f5ad.sandbox.ctfhub.com:10800/.DS_Store
 <!-- Imported from D:\\Book\\Web\\Chapter1\1-11.md -->
 ### .svn 文件泄露
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/6878ce9d58cb8da5c8bec1a7.png)
 
@@ -191,7 +188,6 @@ https://svn.example.com/repo
 <!-- Imported from D:\\Book\\Web\\Chapter1\1-12.md -->
 ### .hg 文件泄露
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/6878d0de58cb8da5c8bec787.png)
 
@@ -306,7 +302,6 @@ perl rip-hg.pl -u http://challenge-01f03d0aee8e33f2.sandbox.ctfhub.com:10800/.hg
 <!-- Imported from D:\\Book\\Web\\Chapter1\1-2.md -->
 ### JavaScript 源码泄露
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67b06656d0e0a243d4ff9f43.jpg)
 
@@ -332,7 +327,6 @@ perl rip-hg.pl -u http://challenge-01f03d0aee8e33f2.sandbox.ctfhub.com:10800/.hg
 <!-- Imported from D:\\Book\\Web\\Chapter1\1-3.md -->
 ### .git 文件泄露
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67b067fcd0e0a243d4ff9fac.jpg)
 
@@ -356,7 +350,6 @@ git show 查看历史版本找到 flag
 <!-- Imported from D:\\Book\\Web\\Chapter1\1-4.md -->
 ### .bak 文件泄露
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67b062c5d0e0a243d4ff9d3c.jpg)
 
@@ -380,7 +373,6 @@ git show 查看历史版本找到 flag
 <!-- Imported from D:\\Book\\Web\\Chapter1\1-5.md -->
 ### robots.txt 文件泄露
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67b0692ed0e0a243d4ff9fe0.jpg)
 
@@ -408,7 +400,6 @@ URL 跟上访问给出了一段源代码
 <!-- Imported from D:\\Book\\Web\\Chapter1\1-6.md -->
 ### SSL 证书泄露
 
-话不多说，直接上题（Code X Sport Jung'23 CTF）
 
 ![](https://pic1.imgdb.cn/item/67b069ced0e0a243d4ff9ff6.jpg)
 
@@ -424,7 +415,6 @@ URL 跟上访问给出了一段源代码
 <!-- Imported from D:\\Book\\Web\\Chapter1\1-7.md -->
 ### 网站历史信息泄露
 
-话不多说，直接上题（Code X Sport Jung'23 CTF）
 
 ![](https://pic1.imgdb.cn/item/67b06a7bd0e0a243d4ffa008.jpg)
 
@@ -444,7 +434,6 @@ URL 跟上访问给出了一段源代码
 <!-- Imported from D:\\Book\\Web\\Chapter1\1-8.md -->
 ### JavaScript 接口泄露
 
-话不多说，直接上提（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/68166abe58cb8da5c8da0592.png)
 
@@ -582,7 +571,6 @@ if (isset($_POST[$key2]) && isset($_POST[$key3])) {
 <!-- Imported from D:\\Book\\Web\\Chapter1\1-9.md -->
 ### .swp 文件泄露
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/6878b49d58cb8da5c8be6cca.png)
 

@@ -8,7 +8,6 @@ comments: true
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-1.md -->
 ### assert() RCE
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67b16c1ad0e0a243d4ffc103.jpg)
 
@@ -32,7 +31,6 @@ scandir() 函数返回指定目录中的文件和目录的数组，print_r() 函
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-10.md -->
 ### %20+关键字绕过
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b0a3cfd0e0a243d4ffb064.jpg)
 
@@ -76,7 +74,6 @@ scandir() 函数返回指定目录中的文件和目录的数组，print_r() 函
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-11.md -->
 ### 关键字加 \ 绕过
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b297a3d0e0a243d4000ef4.png)
 
@@ -180,7 +177,6 @@ ca\t%20/flag
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-12.md -->
 ### 进制转换绕过
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b34c1cd0e0a243d40050f2.png)
 
@@ -250,7 +246,6 @@ $pi=base_convert,$pi(696468,10,36)($pi(8768397090111664438,10,30)(){1})
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-13.md -->
 ### URL 编码取反加 ~ 绕过
 
-话不多说，直接上题
 
 ![](https://pic1.imgdb.cn/item/67b34f65d0e0a243d400516e.png)
 
@@ -313,7 +308,6 @@ echo urlencode(~$str2);
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-14.md -->
 ### 输出重定向绕过无回显
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67bc0d3bd0e0a243d4033c98.png)
 
@@ -353,7 +347,6 @@ echo urlencode(~$str2);
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-15.md -->
 ### \t 代替空格绕过
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67d825c788c538a9b5bff9d7.png)
 
@@ -426,7 +419,6 @@ switch($_GET["action"] ?? "") {
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-16.md -->
 ### `` 代替命令执行函数绕过
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67d825c788c538a9b5bff9d7.png)
 
@@ -499,7 +491,6 @@ switch($_GET["action"] ?? "") {
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-17.md -->
 ### passthru() RCE
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67e2303b0ba3d5a1d7e307f6.png)
 
@@ -531,7 +522,6 @@ http://114.67.175.224:16452/?sss
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-18.md -->
 ### more 代替 cat 绕过
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67e2303b0ba3d5a1d7e307f6.png)
 
@@ -563,7 +553,6 @@ http://114.67.175.224:16452/?sss
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-19.md -->
 ### data 伪协议 RCE
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/6808c71f58cb8da5c8c67481.png)
 
@@ -606,7 +595,6 @@ data://text/plain,xxx(数据)
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-2.md -->
 ### eval() RCE
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67b16d3cd0e0a243d4ffc114.jpg)
 
@@ -624,7 +612,6 @@ eval() 函数把字符串按照 PHP 代码来执行，var_dump() 函数用于输
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-20.md -->
 ### Create_function() RCE
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/6810303458cb8da5c8d2bb2b.png)
 
@@ -776,7 +763,6 @@ O:7:"Noteasy":2:{s:10:"\00Noteasy\00a";s:15:"create_function";s:10:"\00Noteasy\0
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-21.md -->
 ### Java MVEL 表达式注入
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/681079d158cb8da5c8d3dfa5.png)
 
@@ -895,7 +881,6 @@ try {
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-22.md -->
 ### Java 反射机制 RCE
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/681079d158cb8da5c8d3dfa5.png)
 
@@ -1014,7 +999,6 @@ try {
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-23.md -->
 ### PHP 8.1.0 dev RCE
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/6816446758cb8da5c8d9febd.png)
 
@@ -1038,7 +1022,6 @@ try {
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-24.md -->
 ### nl /* 绕过长度限制
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/6838453258cb8da5c81a5f88.png)
 
@@ -1066,7 +1049,6 @@ try {
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-25.md -->
 ### Nginx 日志 RCE
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/68393d1c58cb8da5c81c5769.png)
 
@@ -1110,7 +1092,6 @@ User-Agent: <?php system('cat flag.php');?>
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-26.md -->
 ### data 伪协议去掉双斜杠绕过
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/683d81d058cb8da5c82526cb.png)
 
@@ -1147,7 +1128,6 @@ else{
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-27.md -->
 ### 关键字+双引号绕过
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/683daaba58cb8da5c8259042.png)
 
@@ -1180,7 +1160,6 @@ ca""t == cat
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-28.md -->
 ### Tab 键代替空格绕过
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/683daaba58cb8da5c8259042.png)
 
@@ -1212,7 +1191,6 @@ ca""t == cat
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-29.md -->
 ### < 加 |Base64 绕过空格
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687cb38d58cb8da5c8c86f8a.png)
 
@@ -1232,7 +1210,6 @@ ca""t == cat
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-3.md -->
 ### 自增代替关键字绕过
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67b16dd4d0e0a243d4ffc11f.jpg)
 
@@ -1298,7 +1275,6 @@ $$_[_]($$_[__]);
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-30.md -->
 ### ; 代替 & 与 | 绕过
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687cb9f558cb8da5c8c87356.png)
 
@@ -1310,7 +1286,6 @@ $$_[_]($$_[__]);
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-31.md -->
 ### * 代替部分关键字绕过
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687cbb6d58cb8da5c8c8741d.png)
 
@@ -1338,7 +1313,6 @@ $$_[_]($$_[__]);
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-32.md -->
 ### %0a 代替 ; 绕过
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687cbb6d58cb8da5c8c8741d.png)
 
@@ -1366,7 +1340,6 @@ $$_[_]($$_[__]);
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-33.md -->
 ### SSRF FastCGI 协议 RCE
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687f45ee58cb8da5c8cb212f.png)
 
@@ -1572,7 +1545,6 @@ gopher%3A%2F%2F127.0.0.1%3A9000%2F_%2501%2501%2500%2501%2500%2508%2500%2500%2500
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-34.md -->
 ### Redis 协议 RCE
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687f73f558cb8da5c8cb6ab6.png)
 
@@ -1605,7 +1577,6 @@ gopher%3A//127.0.0.1%3A6379/_%252A1%250D%250A%25248%250D%250Aflushall%250D%250A%
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-35.md -->
 ### Shellshock 提权
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/68808a9a58cb8da5c8ce58fc.png)
 
@@ -1671,7 +1642,6 @@ test
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-36.md -->
 ### Apache Mod CGI 提权
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/68809d6b58cb8da5c8cf8da8.png)
 
@@ -1867,7 +1837,6 @@ else
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-37.md -->
 ### PHP-FPM 提权
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/6881909e58cb8da5c8d2efa3.png)
 
@@ -1970,7 +1939,6 @@ PHP_VALUE: auto_prepend_file=php://input
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-38.md -->
 ### GC UAF 提权
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/68819a0f58cb8da5c8d31870.png)
 
@@ -2048,7 +2016,6 @@ PHP 会认为是正常的回调函数，而绕过  `disable_functions`  的检�
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-39.md -->
 ### Json Serializer UAF 提权
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/6881a89558cb8da5c8d36155.png)
 
@@ -2135,7 +2102,6 @@ $evil->cmd = "/bin/sh"; // 实际指向伪函数结构
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-4.md -->
 ### && 代替 & 绕过
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b16f87d0e0a243d4ffc162.jpg)
 
@@ -2151,7 +2117,6 @@ $evil->cmd = "/bin/sh"; // 实际指向伪函数结构
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-40.md -->
 ### Backtrace UAF 提权
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/6881c54958cb8da5c8d416c1.png)
 
@@ -2238,7 +2203,6 @@ $payload = str_repeat("\x00", 0x100); // 控制结构体内容
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-41.md -->
 ### FFI 扩展提权
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/6881d10458cb8da5c8d46e9a.png)
 
@@ -2283,7 +2247,6 @@ $ffi->system("id");  // 等同于 system("id");
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-42.md -->
 ### iconv 提权
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/6881d2f758cb8da5c8d4726c.png)
 
@@ -2381,7 +2344,6 @@ $a->cmd = "system('id');";
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-43.md -->
 ### 动态加载器提权
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/6881dc2358cb8da5c8d4c4e7.png)
 
@@ -2461,7 +2423,6 @@ LD_LIBRARY_PATH=. ./vuln-suid-binary
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-44.md -->
 符号链接提权
 
-话不多说，直接上题（PicoCTF）
 
 ![](https://pic1.imgdb.cn/item/68a2a0cb58cb8da5c82c8c0e.png)
 
@@ -2525,7 +2486,6 @@ ln -s /root/flag.txt ~/banner
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-45.md -->
 ### Bash 错误 RCE（仅支持数字+符号）
 
-话不多说，直接上题（PicoCTF）
 
 ![](https://pic1.imgdb.cn/item/68a2a3f258cb8da5c82cac36.png)
 
@@ -2609,7 +2569,6 @@ $-
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-46.md -->
 ### 修改 IFS 绕过 Bash 中禁用空格
 
-话不多说，直接上题（PicoCTF）
 
 ![](https://pic1.imgdb.cn/item/68a3cedc58cb8da5c8334f86.png)
 
@@ -2657,7 +2616,6 @@ $(IFS=];b=cat]blargh/flag.txt;$b)
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-47.md -->
 ### sudo vi 提权
 
-话不多说，直接上题（PicoCTF）
 
 ![](https://pic1.imgdb.cn/item/68a3d29658cb8da5c8338f3e.png)
 
@@ -2683,7 +2641,6 @@ sudo -l
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-5.md -->
 ### $IFS$num 代替空格绕过
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b16ff0d0e0a243d4ffc16b.jpg)
 
@@ -2707,7 +2664,6 @@ $IFS 在 Linux 下表示分隔符
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-6.md -->
 ### preg_replace() /e 修饰符 RCE 绕过 foreach
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b170a0d0e0a243d4ffc17e.jpg)
 
@@ -2823,7 +2779,6 @@ preg_replace(
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-7.md -->
 ### escapeshellarg/cmd RCE
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b174add0e0a243d4ffc23a.jpg)
 
@@ -2881,7 +2836,6 @@ nmap 有一个参数 -oG 可以实现将命令和结果写到文件
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-8.md -->
 ### PHP 函数嵌套绕过
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b17838d0e0a243d4ffc336.jpg)
 
@@ -2974,7 +2928,6 @@ var_dump(file_get_contents('./f1ag.php'));
 <!-- Imported from D:\\Book\\Web\\Chapter6\6-9.md -->
 ### LD_PRELOAD 环境变量提权
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67b0a0b9d0e0a243d4ffaef3.jpg)
 

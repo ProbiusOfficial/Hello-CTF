@@ -8,7 +8,6 @@ comments: true
 <!-- Imported from D:\\Book\\Web\\Chapter15\15-1.md -->
 ### file 伪协议读取任意文件
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b17da3d0e0a243d4ffc410.jpg)
 
@@ -157,7 +156,6 @@ order by 5 报错，再次测试 4 没有报错，说明只有 4 列
 <!-- Imported from D:\\Book\\Web\\Chapter15\15-10.md -->
 ### @指定域名绕过
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687f7e2658cb8da5c8cbd450.png)
 
@@ -179,7 +177,6 @@ HTTP 基本身份认证允许 Web 浏览器或其他客户端程序在请求时�
 <!-- Imported from D:\\Book\\Web\\Chapter15\15-11.md -->
 ### IP 转十六进制绕过
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/68803b8258cb8da5c8cc9a1a.png)
 
@@ -195,7 +192,6 @@ HTTP 基本身份认证允许 Web 浏览器或其他客户端程序在请求时�
 <!-- Imported from D:\\Book\\Web\\Chapter15\15-12.md -->
 ### localhost 代替 IP 绕过
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/68803f2a58cb8da5c8cca2cf.png)
 
@@ -208,7 +204,6 @@ HTTP 基本身份认证允许 Web 浏览器或其他客户端程序在请求时�
 <!-- Imported from D:\\Book\\Web\\Chapter15\15-13.md -->
 ### DNS 重绑定绕过
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/6880442c58cb8da5c8cca8d9.png)
 
@@ -244,7 +239,6 @@ DNS 重绑定是一种攻击手法，通过操控域名解析结果，使浏览�
 <!-- Imported from D:\\Book\\Web\\Chapter15\15-2.md -->
 ### 域名代替 IP 绕过
 
-话不多说，直接上提（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/68166abe58cb8da5c8da0592.png)
 
@@ -382,7 +376,6 @@ if (isset($_POST[$key2]) && isset($_POST[$key3])) {
 <!-- Imported from D:\\Book\\Web\\Chapter15\15-3.md -->
 ### 302 跳转绕过
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/686453bf58cb8da5c885d754.png)
 
@@ -422,7 +415,6 @@ header("location: http://127.0.0.1:8000/api/internal/secret")
 <!-- Imported from D:\\Book\\Web\\Chapter15\15-4.md -->
 ### 127.0.0.x 代替 IP 绕过
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/686453bf58cb8da5c885d754.png)
 
@@ -450,7 +442,6 @@ header("location: http://127.0.0.1:8000/api/internal/secret")
 <!-- Imported from D:\\Book\\Web\\Chapter15\15-5.md -->
 ### 0.0.0.0 代替 IP 绕过
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/686453bf58cb8da5c885d754.png)
 
@@ -480,7 +471,6 @@ header("location: http://127.0.0.1:8000/api/internal/secret")
 <!-- Imported from D:\\Book\\Web\\Chapter15\15-6.md -->
 ### 端口扫描
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687f039058cb8da5c8cac8d0.png)
 
@@ -500,7 +490,6 @@ url 参数存在 SSRF 漏洞
 <!-- Imported from D:\\Book\\Web\\Chapter15\15-7.md -->
 ### gopher 协议伪造 HTTP 请求
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687f193f58cb8da5c8caf5e1.png)
 
@@ -650,7 +639,6 @@ key=a840f3c56810783306b3a75f861bd31a
 <!-- Imported from D:\\Book\\Web\\Chapter15\15-8.md -->
 ### FastCGI 协议 RCE
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687f45ee58cb8da5c8cb212f.png)
 
@@ -734,7 +722,6 @@ gopher%3A%2F%2F127.0.0.1%3A9000%2F_%2501%2501%2500%2501%2500%2508%2500%2500%2500
 <!-- Imported from D:\\Book\\Web\\Chapter15\15-9.md -->
 ### Redis 协议 RCE
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687f73f558cb8da5c8cb6ab6.png)
 

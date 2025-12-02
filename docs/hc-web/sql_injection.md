@@ -709,7 +709,6 @@ SELECT username, password FROM users WHERE id =1; DROP TABLE users;--
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-1.md -->
 ### 联合注入
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/682ad94858cb8da5c8fbd7d7.jpg)
 
@@ -787,7 +786,6 @@ SELECT username, password FROM users WHERE id =1; DROP TABLE users;--
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-10.md -->
 ### 十六进制绕过
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/682afb5c58cb8da5c8fc3326.jpg)
 
@@ -823,7 +821,6 @@ execute execsql;#
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-11.md -->
 ### handler 代替 select
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/682afb5c58cb8da5c8fc3326.jpg)
 
@@ -849,7 +846,6 @@ handler `a` read next;#
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-12.md -->
 ### 双写绕过
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6848e1d858cb8da5c842d752.jpg)
 
@@ -899,7 +895,6 @@ handler `a` read next;#
 
 ### updatexml() 报错注入
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6848e66a58cb8da5c842e442.jpg)
 
@@ -966,7 +961,6 @@ UPDATEXML(xml_target, xpath_expr, new_value)
 
 ### extractvalue() 报错注入
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6848e66a58cb8da5c842e442.jpg)
 
@@ -1028,7 +1022,6 @@ EXTRACTVALUE(xml_fragment, xpath_expression)
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-15.md -->
 ### 布尔盲注
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6849647e58cb8da5c8452a86.jpg)
 
@@ -1331,7 +1324,6 @@ if __name__ == '__main__':
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-16.md -->
 ### / ** / 绕过空格
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b17da3d0e0a243d4ffc410.jpg)
 
@@ -1693,7 +1685,6 @@ order by`不能使用，可以使用`group by`或者`into @a, @b, @c, ...
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-2.md -->
 ### 万能密码
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/682ae1da58cb8da5c8fbddd6.jpg)
 
@@ -1713,7 +1704,6 @@ order by`不能使用，可以使用`group by`或者`into @a, @b, @c, ...
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-20.md -->
 ### 异或盲注
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b34998d0e0a243d4005071.png)
 
@@ -1788,7 +1778,6 @@ for i in range(1,300):
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-21.md -->
 ### ord() 绕过
 
-话不多说，直接上题（KCTF）
 
 ![](https://pic1.imgdb.cn/item/6810f15258cb8da5c8d4a5ab.png)
 
@@ -1834,7 +1823,6 @@ id=ord('a') union select group_concat(flag) from flag
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-22.md -->
 ### 二次注入
 
-话不多说，直接上题（KCTF）
 
 ![](https://pic1.imgdb.cn/item/6810f54058cb8da5c8d4a70b.png)
 
@@ -1942,7 +1930,6 @@ values( '\',extension=\'\',filename=\'shell.jpg', 0, '.jpg')
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-23.md -->
 ### SQLMap GetShell
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/681329c958cb8da5c8d60491.png)
 
@@ -1976,7 +1963,6 @@ python sqlmap.py -u "http://challenge.qsnctf.com:31899/?id=-2" --os-shell
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-24.md -->
 ### MP3 元数据注入
 
-话不多说，直接上题（CTFLearn）
 
 ![](https://pic1.imgdb.cn/item/682ec71a58cb8da5c8053779.png)
 
@@ -2058,7 +2044,6 @@ https://web.ctflearn.com/audioedit/edit.php?file =supersecretflagf1le.mp3
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-25.md -->
 ### 报错注入
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/683ebd3b58cb8da5c828f9e2.png)
 
@@ -2068,7 +2053,6 @@ https://web.ctflearn.com/audioedit/edit.php?file =supersecretflagf1le.mp3
 
 ### like 绕过 = 过滤
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6848e66a58cb8da5c842e442.jpg)
 
@@ -2135,7 +2119,6 @@ UPDATEXML(xml_target, xpath_expr, new_value)
 
 ### right 绕过显示字符限制
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6848e66a58cb8da5c842e442.jpg)
 
@@ -2200,7 +2183,6 @@ UPDATEXML(xml_target, xpath_expr, new_value)
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-28.md -->
 ### ^ 代替 or
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6848e66a58cb8da5c842e442.jpg)
 
@@ -2262,7 +2244,6 @@ EXTRACTVALUE(xml_fragment, xpath_expression)
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-29.md -->
 ### into outfile GetShell
 
-话不多说，直接上题（SQLi-Labs）
 
 ![](https://pic1.imgdb.cn/item/6877645458cb8da5c8b918ea.png)
 
@@ -2290,7 +2271,6 @@ id=1')) union select null,0x3c3f706870206576616c28245f504f53545b27636d64275d293b
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-3.md -->
 ### () 绕过空格过滤
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/682ae2ae58cb8da5c8fbde5e.jpg)
 
@@ -2377,7 +2357,6 @@ asdadadadadas'or(ord(substr(reverse(substr((database())from(1)))from(8)))<>115)#
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-30.md -->
 ### 时间盲注
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687b5bc158cb8da5c8c6d4b0.png)
 
@@ -2682,7 +2661,6 @@ if __name__ == "__main__":
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-31.md -->
 ### Cookie 注入
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687b6d1a58cb8da5c8c722bd.png)
 
@@ -2746,7 +2724,6 @@ id=3 union select 1,group_concat(oicwrwxmfo) from yegfyjbxsr#;
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-32.md -->
 ### User-Agent 注入
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687b84ff58cb8da5c8c72fcf.png)
 
@@ -2804,7 +2781,6 @@ id=3 union select 1,group_concat(oicwrwxmfo) from yegfyjbxsr#;
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-33.md -->
 ### Refer 注入
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687b8d2558cb8da5c8c7331f.png)
 
@@ -2861,7 +2837,6 @@ id=3 union select 1,group_concat(oicwrwxmfo) from yegfyjbxsr#;
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-34.md -->
 ### MongoDB NoSQL 注入
 
-话不多说，直接上题（PicoCTF）
 
 ![](https://pic1.imgdb.cn/item/68a4defc58cb8da5c83a8ce7.png)
 
@@ -2922,7 +2897,6 @@ User.find({
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-4.md -->
 ### <> 绕过 = 过滤
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/682ae2ae58cb8da5c8fbde5e.jpg)
 
@@ -3009,7 +2983,6 @@ asdadadadadas'or(ord(substr(reverse(substr((database())from(1)))from(8)))<>115)#
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-5.md -->
 ### substr()+reverse()+ord() 绕过逗号过滤
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/682ae2ae58cb8da5c8fbde5e.jpg)
 
@@ -3094,7 +3067,6 @@ asdadadadadas'or(ord(substr(reverse(substr((database())from(1)))from(8)))<>115)#
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-6.md -->
 ### 约束攻击
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/682af36158cb8da5c8fc1a15.jpg)
 
@@ -3124,7 +3096,6 @@ asdadadadadas'or(ord(substr(reverse(substr((database())from(1)))from(8)))<>115)#
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-7.md -->
 ### 堆叠注入
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/682af51d58cb8da5c8fc1af7.jpg)
 
@@ -3172,7 +3143,6 @@ asdadadadadas'or(ord(substr(reverse(substr((database())from(1)))from(8)))<>115)#
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-8.md -->
 ### set sql_mode=PIPES_AS_CONCAT 修改 || 为连接符
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/682af51d58cb8da5c8fc1af7.jpg)
 
@@ -3220,7 +3190,6 @@ asdadadadadas'or(ord(substr(reverse(substr((database())from(1)))from(8)))<>115)#
 <!-- Imported from D:\\Book\\Web\\Chapter8\8-9.md -->
 ### rename()+alter() 改表绕过
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/682afb5c58cb8da5c8fc3326.jpg)
 

@@ -303,7 +303,7 @@ AnbJ4Z6opJCGu+UP2c8SC8m0bhZJDelPRC8IKE28eB6SotgP61ZqaVmQ+HLJ1/wH
 即可得到flag
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-1.md -->
-### TLS 流量隐写
+### TLS 流量分析
 
 TLS（Transport Layer Security）是一种安全协议，用于在计算机网络上实现加密通信
 
@@ -311,7 +311,6 @@ TLS 使用密钥交换算法来安全地生成一个共享的会话密钥，这�
 
 常见的密钥交换算法包括 RSA、DH、ECDH 等
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/677fdd29d0e0a243d4f2d041.jpg)
 
@@ -333,9 +332,8 @@ TLS 使用密钥交换算法来安全地生成一个共享的会话密钥，这�
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-10.md -->
-### 键盘流量隐写
+### 键盘流量分析
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/6780b36ad0e0a243d4f2f1b2.jpg)
 
@@ -357,9 +355,8 @@ tshark -r 1.pcapng -T fields -e usbhid.data > usbdata.txt
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-11.md -->
-### 冰蝎流量隐写
+### 冰蝎流量分析
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/6780ba2ed0e0a243d4f2f45d.jpg)
 
@@ -407,9 +404,8 @@ tshark -r 1.pcapng -T fields -e usbhid.data > usbdata.txt
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-12.md -->
-### TCP 流量隐写
+### TCP 流量分析
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/6780caf1d0e0a243d4f2fcf6.jpg)
 
@@ -423,9 +419,8 @@ tshark -r 1.pcapng -T fields -e usbhid.data > usbdata.txt
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-13.md -->
-### RTP 流量隐写
+### RTP 流量分析
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6780e72ad0e0a243d4f30b2b.jpg)
 
@@ -439,9 +434,8 @@ tshark -r 1.pcapng -T fields -e usbhid.data > usbdata.txt
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-14.md -->
-### IP 流量隐写
+### IP 流量分析
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67cc205f066befcec6e158e2.jpg)
 
@@ -461,9 +455,8 @@ tshark -r attachment.pacp -T fields -e ip.id > data,txt
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-15.md -->
-### HTTPS 流量隐写
+### HTTPS 流量分析
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67cc213f066befcec6e158fa.jpg)
 
@@ -493,9 +486,8 @@ tshark -r attachment.pacp -T fields -e ip.id > data,txt
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-16.md -->
-### 端口扫描隐写
+### 端口扫描分析
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67cc225d066befcec6e15931.jpg)
 
@@ -515,9 +507,8 @@ tshark -r attachment.pacp -T fields -e ip.id > data,txt
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-17.md -->
-### EV3 隐写
+### EV3 分析
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67cc232d066befcec6e15951.jpg)
 
@@ -549,9 +540,8 @@ tshark -r attachment.pacp -T fields -e ip.id > data,txt
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-18.md -->
-### Web 目录爆破隐写
+### Web 目录爆破分析
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67cc2462066befcec6e159bb.jpg)
 
@@ -569,9 +559,8 @@ tshark -r attachment.pacp -T fields -e ip.id > data,txt
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-19.md -->
-### 哥斯拉流量隐写
+### 哥斯拉流量分析
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67cc2510066befcec6e159ed.jpg)
 
@@ -619,13 +608,12 @@ md5 前十六位 + base64 + md5 后十六位
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-2.md -->
-### WPA 密钥爆破
+### WPA 密钥爆破分析
 
 我们知道 Wifi 是基于 WPA 的，最常见的 WPA 配置是 WPA-PSK（预共享密钥）
 
 WPA-PSK 基本上意味着 Wi-Fi 网络有一个密码，由每个 Wi-Fi 网络客户端共享
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/677fdf5ad0e0a243d4f2d098.jpg)
 
@@ -675,9 +663,8 @@ crunch 11 11 -t 1391040%%%% -o passwd.txt
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-20.md -->
-### 蚁剑流量隐写
+### 蚁剑流量分析
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67cc27f9066befcec6e15a5e.jpg)
 
@@ -723,9 +710,8 @@ crunch 11 11 -t 1391040%%%% -o passwd.txt
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-21.md -->
-### SQL 布尔盲注隐写
+### SQL 布尔盲注分析
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67837d69d0e0a243d4f39dab.png)
 
@@ -747,9 +733,8 @@ crunch 11 11 -t 1391040%%%% -o passwd.txt
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-22.md -->
-### 哥斯拉流量隐写
+### 哥斯拉流量分析
 
-话不多说，直接上题（2024 年楚慧杯湖北省网络与数据安全实践能力竞赛）
 
 ![](https://pic1.imgdb.cn/item/678f8712d0e0a243d4f629bf.png)
 
@@ -937,9 +922,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-23.md -->
-### SMB3 流量隐写
+### SMB3 流量分析
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b8bd71d0e0a243d40184bb.png)
 
@@ -993,9 +977,8 @@ hashcat -a 0 6.txt rockyou.txt
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-24.md -->
-### Ceph 流量隐写
+### Ceph 流量分析
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67e8f0750ba3d5a1d7e6b1ab.png)
 
@@ -1013,9 +996,8 @@ Ceph 指的是一个统一的分布式存储系统，需要工具 tcpxtract 来�
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-25.md -->
-### UDP 端口流量隐写
+### UDP 端口流量分析
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67e8fb310ba3d5a1d7e6b3ee.png)
 
@@ -1054,9 +1036,8 @@ print(''.join(chr(int(flag[i : i + 8], 2)) for i in range(0, len(flag), 8)))
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-26.md -->
-### 测信道流量隐写
+### 侧信道流量分析
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67ea1c840ba3d5a1d7e782b4.png)
 
@@ -1066,9 +1047,8 @@ print(''.join(chr(int(flag[i : i + 8], 2)) for i in range(0, len(flag), 8)))
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-27.md -->
-### ICMP Length 流量隐写
+### ICMP Length 流量分析
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67ea6f8a0ba3d5a1d7e82525.png)
 
@@ -1091,9 +1071,8 @@ print(flag)
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-28.md -->
-### RDP 流量隐写
+### RDP 流量分析
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67ea85470ba3d5a1d7e83712.png)
 
@@ -1306,9 +1285,8 @@ HITB{44519a67ffc654e40febc09e20e8e745}
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-29.md -->
-### MSF 流量隐写
+### MSF 流量分析
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67f25d6f0ba3d5a1d7eec9b2.png)
 
@@ -1459,9 +1437,8 @@ flag{Meterpreter_Has_A_Greater_Enc_Method_Than_Shell}
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-3.md -->
-### 鼠标运动轨迹隐写
+### 鼠标运动轨迹分析
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/677fe3f3d0e0a243d4f2d15c.jpg)
 
@@ -1487,9 +1464,8 @@ python usb-mouse-pacp-visualizer.py -i 1.pacp -o 1.csc
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-30.md -->
-### WIFI 流量隐写
+### WIFI 流量分析
 
-话不多说，直接上题（KCTF）
 
 ![](https://pic1.imgdb.cn/item/6810a81d58cb8da5c8d458f2.png)
 
@@ -1517,9 +1493,8 @@ airdecap-ng '/home/morant/capture.cap' -e MyWifi -p 88888888
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-31.md -->
-### MySQL 流量隐写
+### MySQL 流量分析
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/688213d058cb8da5c8d6073c.png)
 
@@ -1574,9 +1549,8 @@ MySQL 流程图如下
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-32.md -->
-### Redis 流量隐写
+### Redis 流量分析
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/68821d6e58cb8da5c8d65f4d.png)
 
@@ -1633,9 +1607,8 @@ Redis 协议流程图如下
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-33.md -->
-### MongoDB 流量隐写
+### MongoDB 流量分析
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/6882277358cb8da5c8d69bb0.png)
 
@@ -1713,11 +1686,10 @@ MongoDB 协议流程图如下
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-4.md -->
-### USB 流量隐写
+### USB 流量分析
 
 主要观察数据包长度，有图片的往往长度很大，复制其十六进制写入新文件中
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67728c51d0e0a243d4ecc67c.jpg)
 
@@ -1743,11 +1715,10 @@ MongoDB 协议流程图如下
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-5.md -->
-### DNS 请求域名隐写
+### DNS 请求域名分析
 
 DNS 请求题一般看请求域名就行
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/677ff285d0e0a243d4f2d387.jpg)
 
@@ -1793,9 +1764,8 @@ $0 代表当前行
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-6.md -->
-### UDP 流量隐写
+### UDP 流量分析
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67809ef7d0e0a243d4f2ecb3.jpg)
 
@@ -1813,9 +1783,8 @@ TLS 需要密钥才能解出，TCP 一般没东西，所以我们先看 UDP
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-7.md -->
-### FTP-DATA 隐写
+### FTP-DATA 分析
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67722be8d0e0a243d4ec6d2e.jpg)
 
@@ -1833,23 +1802,7 @@ TLS 需要密钥才能解出，TCP 一般没东西，所以我们先看 UDP
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter5\5-8.md -->
-### HTTP 流量隐写
-
-话不多说，直接上题（BugKu CTF）
-
-![](https://pic1.imgdb.cn/item/6780a1c9d0e0a243d4f2edba.jpg)
-
-打开发现有 HTTP 直接过滤
-
-![](https://pic1.imgdb.cn/item/6780a1ddd0e0a243d4f2edbf.jpg)
-
-第一个是 ZIP 文件，尝试追踪流拿到 flag
-
-![](https://pic1.imgdb.cn/item/6780a1f0d0e0a243d4f2edc6.jpg)
-
-
-<!-- Imported from D:\\Book\\Misc\\Chapter5\5-9.md -->
-### SQL 时间盲注隐写
+### SQL 时间盲注分析
 
 SQL 时间盲注原理：
 
@@ -1859,7 +1812,6 @@ SQL 时间盲注原理：
 
 **如果比较为假，延时函数不执行，查询执行时间较短**
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/6780a2dcd0e0a243d4f2ee00.jpg)
 

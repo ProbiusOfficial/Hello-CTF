@@ -423,7 +423,6 @@ Connection: close
 <!-- Imported from D:\\Book\\Web\\Chapter7\7-1.md -->
 ### input
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67b1797cd0e0a243d4ffc351.jpg)
 
@@ -453,7 +452,6 @@ Connection: close
 <!-- Imported from D:\\Book\\Web\\Chapter7\7-2.md -->
 ### filter
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67b17a79d0e0a243d4ffc36e.jpg)
 
@@ -479,7 +477,6 @@ php://filter 用于读取源代码并输出，convert.base64-encode 进行 Base6
 <!-- Imported from D:\\Book\\Web\\Chapter7\7-3.md -->
 ### Nginx 日志 RCE
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/68393d1c58cb8da5c81c5769.png)
 
@@ -523,7 +520,6 @@ User-Agent: <?php system('cat flag.php');?>
 <!-- Imported from D:\\Book\\Web\\Chapter7\7-4.md -->
 ### data 伪协议 RCE
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/6808c71f58cb8da5c8c67481.png)
 
@@ -565,7 +561,6 @@ data://text/plain,xxx(数据)
 <!-- Imported from D:\\Book\\Web\\Chapter7\7-5.md -->
 ### data 伪协议 RCE 绕过双斜杠
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/683d81d058cb8da5c82526cb.png)
 

@@ -8,7 +8,6 @@ comments: true
 <!-- Imported from D:\\Book\\Web\\Chapter16\16-1.md -->
 ### 文件读取注入
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b17bbad0e0a243d4ffc3a1.jpg)
 

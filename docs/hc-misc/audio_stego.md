@@ -6,11 +6,10 @@ comments: true
 # 音频隐写
 
 <!-- Imported from D:\\Book\\Misc\\Chapter4\4-1.md -->
-### MP3 隐写（Key）
+### MP3 （Key）
 
 这是 MP3 最常见的隐写方法，主要是使用 MP3Stego 工具进行隐写
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/677f83b4d0e0a243d4f28523.jpg)
 
@@ -30,9 +29,8 @@ Decode.exe -X -P syclovergeek mp3
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter4\4-10.md -->
-### Wav 文件 LSB 隐写
+### Wav 文件 LSB
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/677f8cdad0e0a243d4f287e7.jpg)
 
@@ -58,9 +56,8 @@ Decode.exe -X -P syclovergeek mp3
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter4\4-11.md -->
-### 慢扫描电视隐写
+### 慢扫描电视
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67e2ad060ba3d5a1d7e34bb3.png)
 
@@ -84,9 +81,8 @@ f7liavga{1M_0105n_cC@okmei_nFge!s}
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter4\4-12.md -->
-### Private Bit 隐写
+### Private Bit
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67e378840ba3d5a1d7e370ac.png)
 
@@ -194,9 +190,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter4\4-13.md -->
-### 采样率隐写
+### 采样率
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67e91dc10ba3d5a1d7e6c1b3.png)
 
@@ -218,9 +213,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter4\4-14.md -->
-### Raw 无线电 AFSK1200 隐写
+### Raw 无线电 AFSK1200
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67e9ff680ba3d5a1d7e739f7.png)
 
@@ -267,9 +261,8 @@ multimon-ng -t raw -a AFSK1200 latlong.raw
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter4\4-15.md -->
-### DeEgger Embedder 隐写
+### DeEgger Embedder
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67ea22c50ba3d5a1d7e797a0.png)
 
@@ -463,9 +456,8 @@ if __name__ == "__main__":
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter4\4-16.md -->
-### OGG/WAV 单色图像隐写
+### OGG/WAV 单色图像
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67eb99090ba3d5a1d7e90136.png)
 
@@ -549,9 +541,8 @@ print 'Done.'
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter4\4-17.md -->
-### MP3 原版标志位隐写
+### MP3 原版标志位
 
-话不多说，直接上题（CTFShow）
 
 ![](https://pic1.imgdb.cn/item/6872249758cb8da5c8a22313.png)
 
@@ -581,11 +572,10 @@ print(org)
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter4\4-2.md -->
-### 波形隐写（Wav）
+### 波形（Wav）
 
 波形隐写原理就是将波形的高低转为二进制
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/677f84bdd0e0a243d4f28583.jpg)
 
@@ -662,9 +652,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter4\4-3.md -->
-### 音频倒放隐写
+### 音频倒放
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/677f8669d0e0a243d4f28606.jpg)
 
@@ -674,9 +663,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter4\4-4.md -->
-### 频谱图隐写
+### 频谱图
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/677f86dad0e0a243d4f28662.jpg)
 
@@ -692,25 +680,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter4\4-5.md -->
-### SSTV 隐写
+### 按键式电话
 
-话不多说，直接上题（BugKu CTF）
-
-![](https://pic1.imgdb.cn/item/677f879cd0e0a243d4f28674.jpg)
-
-首先打开虚拟声卡 VirtualAudioCable
-
-![](https://pic1.imgdb.cn/item/677f87bfd0e0a243d4f2867b.jpg)
-
-再打开 RX-SSTV 播放音频拿到 flag
-
-![](https://pic1.imgdb.cn/item/677f87d5d0e0a243d4f2867d.jpg)
-
-
-<!-- Imported from D:\\Book\\Misc\\Chapter4\4-6.md -->
-### 按键式电话隐写
-
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/677f8848d0e0a243d4f2869f.jpg)
 
@@ -724,9 +695,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter4\4-7.md -->
-### SilentEye 隐写（音频）
+### SilentEye （音频）
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/677f890bd0e0a243d4f286e3.jpg)
 
@@ -736,9 +706,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter4\4-8.md -->
-### DeepSound 隐写（Key）
+### DeepSound （Key）
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/677f890bd0e0a243d4f286e3.jpg)
 
@@ -754,9 +723,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter4\4-9.md -->
-### Velato 编译隐写（Mid）
+### Velato 编译（Mid）
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/677f8b88d0e0a243d4f28785.jpg)
 

@@ -8,7 +8,6 @@ comments: true
 <!-- Imported from D:\\Book\\Web\\Chapter12\12-1.md -->
 ### PHP 字符串序列化
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67b18b59d0e0a243d4ffc577.jpg)
 
@@ -38,7 +37,6 @@ BurpSuite 拦截抓包修改拿到 flag
 <!-- Imported from D:\\Book\\Web\\Chapter12\12-10.md -->
 ### PHP 反序列化之 __toString() 魔术方法
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/683d938e58cb8da5c8255545.png)
 
@@ -128,7 +126,6 @@ echo serialize($git);
 <!-- Imported from D:\\Book\\Web\\Chapter12\12-11.md -->
 ### PHP & 引用相同内存
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/68775da758cb8da5c8b8c6aa.png)
 
@@ -200,7 +197,6 @@ echo $res;
 <!-- Imported from D:\\Book\\Web\\Chapter12\12-2.md -->
 ### PHP POP 链
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67b18c0cd0e0a243d4ffc5a9.jpg)
 
@@ -407,7 +403,6 @@ Year::__destruct()
 <!-- Imported from D:\\Book\\Web\\Chapter12\12-3.md -->
 ### PHP 个数不等绕过__wakeup()
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b18de9d0e0a243d4ffc65f.jpg)
 
@@ -519,7 +514,6 @@ var_dump(serialize($a));
 <!-- Imported from D:\\Book\\Web\\Chapter12\12-4.md -->
 ### PHP 反序列化字符逃逸
 
-话不多说，直接上题
 
 ![](https://pic1.imgdb.cn/item/67b2beaad0e0a243d4001b14.png)
 
@@ -684,7 +678,6 @@ _SESSION[user]=flagflagflagflagphpphp&_SESSION[function]=;s:3:"img";s:20:"L2QwZz
 <!-- Imported from D:\\Book\\Web\\Chapter12\12-5.md -->
 ### Python Pickle 反序列化之 subprocess
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67ba18c2d0e0a243d4023da3.png)
 
@@ -824,7 +817,6 @@ print(base64.b64encode(b))
 <!-- Imported from D:\\Book\\Web\\Chapter12\12-6.md -->
 ### Python Pickle 反序列化之 commands
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67d81a8988c538a9b5bff794.png)
 
@@ -931,7 +923,6 @@ print(urllib.quote(pickle.dumps(a)))
 <!-- Imported from D:\\Book\\Web\\Chapter12\12-7.md -->
 ### PHP Create_function() 反序列化
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/6810303458cb8da5c8d2bb2b.png)
 
@@ -1084,7 +1075,6 @@ O:7:"Noteasy":2:{s:10:"\00Noteasy\00a";s:15:"create_function";s:10:"\00Noteasy\0
 <!-- Imported from D:\\Book\\Web\\Chapter12\12-8.md -->
 ### PHP %00 绕过 Private
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b18de9d0e0a243d4ffc65f.jpg)
 
@@ -1196,7 +1186,6 @@ var_dump(serialize($a));
 <!-- Imported from D:\\Book\\Web\\Chapter12\12-9.md -->
 ### PHP \00 绕过 Private
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/6810303458cb8da5c8d2bb2b.png)
 

@@ -7,7 +7,6 @@ comments: true
 <!-- Imported from D:\\Book\\Web\\Chapter24\24-1.md -->
 ### 压缩包解压绕过
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/6863fe2c58cb8da5c88589d4.png)
 
@@ -229,7 +228,6 @@ if(!is_dir($dir)){
 <!-- Imported from D:\\Book\\Web\\Chapter24\24-2.md -->
 ### include() 目录穿越
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/68c0e78658cb8da5c893f623.png)
 
