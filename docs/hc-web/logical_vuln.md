@@ -8,7 +8,6 @@ comments: true
 <!-- Imported from D:\\Book\\Web\\Chapter26\26-1.md -->
 ### 并发漏洞
 
-话不多说，直接上题（PicoCTF）
 
 ![](https://pic1.imgdb.cn/item/6899895a58cb8da5c81901de.png)
 

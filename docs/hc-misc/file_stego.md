@@ -5,7 +5,7 @@ comments: true
 
 # 文件隐写
 
-### 文件内容隐写
+### 文件内容
 
 这类题算是比赛的签到题
 
@@ -17,7 +17,6 @@ comments: true
 
 从文件的十六进制数据中找出线索
 
-话不多说，直接上题（BugKu CTF）
 
 ![图一](https://pic1.imgdb.cn/item/6770febcd0e0a243d4ec1776.jpg)
 
@@ -31,9 +30,8 @@ comments: true
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-10.md -->
-### 字频统计隐写
+### 字频统计
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67711945d0e0a243d4ec2044.jpg)
 
@@ -100,9 +98,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-11.md -->
-### TTL 隐写
+### TTL
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67712b72d0e0a243d4ec24e3.jpg)
 
@@ -163,9 +160,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-12.md -->
-### 零宽字符隐写
+### 零宽字符
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67711ff9d0e0a243d4ec2266.jpg)
 
@@ -179,9 +175,8 @@ VS Code 打开文件发现很多零宽字符
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-13.md -->
-### 文件异或隐写
+### 文件异或
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/677124dcd0e0a243d4ec2383.jpg)
 
@@ -199,9 +194,8 @@ VS Code 打开文件发现很多零宽字符
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-14.md -->
-### Picke 序列化隐写
+### Pickle 序列化
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67712626d0e0a243d4ec23d2.jpg)
 
@@ -292,9 +286,8 @@ if __name__ == "__main__":
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-15.md -->
-### PYC 或 PYO 隐写
+### PYC 或 PYO
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/677129e5d0e0a243d4ec24a4.jpg)
 
@@ -314,21 +307,16 @@ if __name__ == "__main__":
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-16.md -->
-### Word 文字隐写
+### Word 文字
 
-话不多说，直接上题（BUUCTF）
-
-![](https://pic1.imgdb.cn/item/67b8bd71d0e0a243d40184bb.png)
-
-参考 Misc 5.23 节，最后是修改文字颜色就行了
+修改文字颜色就行了
 
 ![](https://pic1.imgdb.cn/item/67bb00fed0e0a243d40295fd.png)
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-17.md -->
-### Base64 隐写
+### Base64
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67e4d2d40ba3d5a1d7e4b270.png)
 
@@ -419,9 +407,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-18.md -->
-### 文件二进制图像化隐写
+### 文件二进制图像化
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67e8175f0ba3d5a1d7e689b4.png)
 
@@ -447,9 +434,8 @@ CatCTF{CAT_GOES_MEOW}
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-19.md -->
-### .rock 隐写
+### .rock
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67e911510ba3d5a1d7e6b928.png)
 
@@ -477,9 +463,8 @@ rockstar-py -i Become_a_Rockstar.rock -o res.py
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-2.md -->
-### 文件属性隐写
+### 文件属性
 
-话不多说，直接上题（BugKu CTF）
 
 ![1](https://pic1.imgdb.cn/item/6771000ed0e0a243d4ec17bd.jpg)
 
@@ -489,9 +474,8 @@ rockstar-py -i Become_a_Rockstar.rock -o res.py
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-20.md -->
-### XORTools 隐写
+### XORTools
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67e9201e0ba3d5a1d7e6c205.png)
 
@@ -528,9 +512,7 @@ f.close()
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-21.md -->
-### Base32 隐写
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67ea22c50ba3d5a1d7e797a0.png)
 
@@ -725,9 +707,8 @@ if __name__ == "__main__":
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-22.md -->
-### .lnk 隐写
+### .lnk
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/680cf94858cb8da5c8cfc93e.png)
 
@@ -751,9 +732,8 @@ if __name__ == "__main__":
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-23.md -->
-### 隐藏文件隐写
+### 隐藏文件
 
-话不多说，直接上题（CTFLearn）
 
 ![](https://pic1.imgdb.cn/item/6834808758cb8da5c80fb210.png)
 
@@ -775,9 +755,8 @@ if __name__ == "__main__":
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-24.md -->
-### .kdbx 隐写（Key）
+### .kdbx（Key）
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/68732b6658cb8da5c8a643f5.png)
 
@@ -917,9 +896,8 @@ canvas.save('result.png')
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-25.md -->
-### 加密 Word 的宏隐写（Key）
+### 加密 Word 的宏（Key）
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/687353d758cb8da5c8a6e751.png)
 
@@ -997,9 +975,8 @@ Base64 解码后得到一个 ZIP 文件
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-26.md -->
-### LOLCODE 隐写
+### LOLCODE
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6875b14e58cb8da5c8ae5a8f.png)
 
@@ -1035,9 +1012,8 @@ Emoji 符号加上之前提示的 AES，猜测为 Emoji-AES，Key 继续猜测�
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-27.md -->
-### Folders  隐写
+### Folders
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6877175c58cb8da5c8b65c86.png)
 
@@ -1113,9 +1089,8 @@ for each in tree:
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-28.md -->
-### Minecraft JSON 隐写
+### Minecraft JSON
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/68771a5258cb8da5c8b6791e.png)
 
@@ -1139,9 +1114,8 @@ Everything 搜索 `flag` 关键字，发现 `.minecraft\saves\Where is the flag`
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-29.md -->
-### Git 历史版本隐写
+### Git 历史版本
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67b067fcd0e0a243d4ff9fac.jpg)
 
@@ -1163,11 +1137,10 @@ git show 查看历史版本找到 flag
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-3.md -->
-### 数据逆序隐写
+### 数据逆序
 
 **原理是通过分析文件末十六进制数据推测出数据是倒序的**
 
-话不多说，直接上题（BugKu CTF）
 
 ![1](https://pic1.imgdb.cn/item/677100bcd0e0a243d4ec17f0.jpg)
 
@@ -1209,9 +1182,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-30.md -->
-### Git Stash 隐写
+### Git Stash
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/6878c1cc58cb8da5c8beb62e.png)
 
@@ -1245,7 +1217,6 @@ python2 GitHack.py http://challenge-397308928286c868.sandbox.ctfhub.com:10800/.g
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-31.md -->
 ### YARA 恶意软件检测
 
-话不多说，直接上题（PicoCTF）
 
 ![](https://pic1.imgdb.cn/item/68a299f058cb8da5c82c442e.png)
 
@@ -1315,11 +1286,10 @@ $str1 or ($str2 and $str3)
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-4.md -->
-### DMG 文件隐写
+### DMG 文件
 
 **DMG 文件是 Mac 操作系统中的一种磁盘映像文件格式**
 
-话不多说，直接上题（BugKu CTF）
 
 ![1](https://pic1.imgdb.cn/item/6771038ed0e0a243d4ec1902.jpg)
 
@@ -1345,11 +1315,10 @@ $str1 or ($str2 and $str3)
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-5.md -->
-### 文件格式隐写
+### 文件格式
 
 **具体原理就是修改文件格式来隐藏原来的真实文件**
 
-话不多说，直接上题（BugKu CTF）
 
 ![1](https://pic1.imgdb.cn/item/6771139ad0e0a243d4ec1f4e.jpg)
 
@@ -1371,9 +1340,8 @@ $str1 or ($str2 and $str3)
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-6.md -->
-### Snow 文件隐写
+### Snow 文件
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/677114f6d0e0a243d4ec1f8f.jpg)
 
@@ -1530,9 +1498,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-7.md -->
-### NTFS 文件隐写
+### NTFS 文件
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67711605d0e0a243d4ec1fc1.jpg)
 
@@ -1542,9 +1509,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-8.md -->
-### 文件时间戳隐写
+### 文件时间戳
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67711697d0e0a243d4ec1fd8.jpg)
 
@@ -1564,9 +1530,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter1\1-9.md -->
-### 文件合并隐写
+### 文件合并
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67711834d0e0a243d4ec2020.jpg)
 

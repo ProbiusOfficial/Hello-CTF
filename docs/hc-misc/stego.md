@@ -512,7 +512,7 @@ strings hex.jpg
 ## 其他图片隐写
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-11.md -->
-### StegHide 隐写（Key）
+### StegHide（Key）
 
 直接上题（BugKu CTF）
 
@@ -527,7 +527,6 @@ strings hex.jpg
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-12.md -->
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67724656d0e0a243d4ec82d4.jpg)
 
@@ -545,9 +544,8 @@ exftool.exe reveille.jpg
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-13.md -->
-### Extract 隐写（Key）
+### Extract（Key）
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67724704d0e0a243d4ec8367.jpg)
 
@@ -561,9 +559,8 @@ exftool.exe reveille.jpg
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-14.md -->
-### SilentEye 隐写（图片）
+### SilentEye（图片）
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/677258a7d0e0a243d4ec8c5a.jpg)
 
@@ -575,9 +572,8 @@ exftool.exe reveille.jpg
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-15.md -->
-### JPHS 隐写（Key）
+### JPHS（Key）
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/677258a7d0e0a243d4ec8c5a.jpg)
 
@@ -597,11 +593,10 @@ exftool.exe reveille.jpg
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-16.md -->
-### 抽象画隐写
+### 抽象画
 
 原理是 Piet 这门编程语言
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67725aafd0e0a243d4ec8d16.jpg)
 
@@ -619,11 +614,10 @@ exftool.exe reveille.jpg
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-17.md -->
-### FFC 隐写（Key）
+### FFC（Key）
 
 FFC 是 Free File Camouflage 的简称
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67725b86d0e0a243d4ec8d74.jpg)
 
@@ -643,9 +637,8 @@ FFC 是 Free File Camouflage 的简称
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-18.md -->
-### Java 盲水印隐写
+### Java 盲水印
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67725c1bd0e0a243d4ec8dc2.jpg)
 
@@ -663,9 +656,8 @@ FFC 是 Free File Camouflage 的简称
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-19.md -->
-### S-Tools 隐写（Key）
+### S-Tools（Key）
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67725cc3d0e0a243d4ec8de2.jpg)
 
@@ -683,13 +675,12 @@ FFC 是 Free File Camouflage 的简称
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-2.md -->
-### 坐标点隐写
+### 坐标点
 
 这类题通常是一大串坐标点数据
 
 你需要格式化数据然后绘制图形
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/677176c7d0e0a243d4ec3787.jpg)
 
@@ -832,9 +823,8 @@ if __name__ == "__main__":
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-20.md -->
-### Stegpy 隐写
+### Stegpy
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67725d7ed0e0a243d4ec8e25.jpg)
 
@@ -846,7 +836,6 @@ if __name__ == "__main__":
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-21.md -->
 ### PDF 密码爆破
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67727300d0e0a243d4ecb389.jpg)
 
@@ -882,7 +871,6 @@ if __name__ == "__main__":
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-22.md -->
 ### StegSeek 爆破
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67727bb4d0e0a243d4ecc16a.jpg)
 
@@ -892,9 +880,8 @@ if __name__ == "__main__":
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-23.md -->
-### PPT 隐写
+### PPT
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67727c5ad0e0a243d4ecc1e4.jpg)
 
@@ -906,7 +893,6 @@ if __name__ == "__main__":
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-24.md -->
 ### PDF 哈希爆破
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67727cd3d0e0a243d4ecc285.jpg)
 
@@ -936,9 +922,8 @@ if __name__ == "__main__":
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-25.md -->
-### F5-steganography 隐写
+### F5-steganography
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67727eaed0e0a243d4ecc3a6.jpg)
 
@@ -952,9 +937,8 @@ if __name__ == "__main__":
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-26.md -->
-### Outguess 隐写（Key）
+### Outguess（Key）
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67727ffed0e0a243d4ecc3d6.jpg)
 
@@ -972,9 +956,8 @@ if __name__ == "__main__":
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-27.md -->
-### 视频帧隐写
+### 视频帧
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/677280cad0e0a243d4ecc410.jpg)
 
@@ -984,9 +967,8 @@ if __name__ == "__main__":
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-28.md -->
-### BPG 隐写
+### BPG
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6772816dd0e0a243d4ecc429.jpg)
 
@@ -1008,9 +990,8 @@ if __name__ == "__main__":
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-29.md -->
-### APNG 隐写
+### APNG
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67728251d0e0a243d4ecc456.jpg)
 
@@ -1025,7 +1006,6 @@ if __name__ == "__main__":
 
 但是其中一张的大小比另一种大的多
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67717a7fd0e0a243d4ec385e.jpg)
 
@@ -1045,9 +1025,8 @@ if __name__ == "__main__":
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-30.md -->
-### 频域盲水印隐写
+### 频域盲水印
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/677282bbd0e0a243d4ecc462.jpg)
 
@@ -1134,14 +1113,13 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-31.md -->
-### WbStego 隐写（Key）
+### WbStego（Key）
 
 **如何判断是否文件采用`wbStego4open`加密？**
 
 1. **将文件导入010editor、winhex之类的十六进制查看工具**
 2. **如果 `20`、`09` 出现次数较多，则有可能为`wbStego4open`加密**
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67837d11d0e0a243d4f39d9f.png)
 
@@ -1179,9 +1157,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-32.md -->
-### GPS 数据隐写
+### GPS 数据
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67e2876b0ba3d5a1d7e33fc8.png)
 
@@ -1199,9 +1176,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-33.md -->
-### 图片拼接隐写（Online）
+### 图片拼接（Online）
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67e38b760ba3d5a1d7e37a8a.png)
 
@@ -1223,9 +1199,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-34.md -->
-### TIFF 图层隐写
+### TIFF 图层
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67e38fa00ba3d5a1d7e37bec.png)
 
@@ -1273,9 +1248,8 @@ print(flag)
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-35.md -->
-### BMP 隐写
+### BMP
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67e8150d0ba3d5a1d7e6895a.png)
 
@@ -1295,9 +1269,8 @@ print(flag)
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-36.md -->
-### GIF 帧像素隐写
+### GIF 帧像素
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67e925100ba3d5a1d7e6c2b3.png)
 
@@ -1375,9 +1348,8 @@ o8DlxK+H8wsiXe/ERFpAMaBPiIcj1sHyGOMmQDkK+uXsVZgre5DSXw==
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-37.md -->
-### Cloacked-pixel隐写
+### Cloacked-pixel
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67e9515d0ba3d5a1d7e6d41c.png)
 
@@ -1404,9 +1376,8 @@ o8DlxK+H8wsiXe/ERFpAMaBPiIcj1sHyGOMmQDkK+uXsVZgre5DSXw==
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-38.md -->
-### 二维码手动修补隐写
+### 二维码手动修补
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67ea0efc0ba3d5a1d7e75630.png)
 
@@ -1659,99 +1630,12 @@ end
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-39.md -->
-### OGG/WAV 单色图像隐写
-
-话不多说，直接上题（攻防世界）
-
-![](https://pic1.imgdb.cn/item/67eb99090ba3d5a1d7e90136.png)
-
-“120 LPM”提示指的是[天气传真](http://en.wikipedia.org/wiki/Radiofax)，一种传输单色图像的模拟模式
-
-有一个名为 Multimode 的 OS X 应用程序可用于将音频转换回原始传真图像
-
-但它只接受 WAV 文件作为输入，所以我首先转换 `similar.ogg` 为 `similar.wav` 使用 Audacity
-
-![](https://pic1.imgdb.cn/item/67eb99e50ba3d5a1d7e90187.png)
-
-正文如下：
-
-```
-section 1 of 1 of file rfax_man
-begin 644 rfax_man
-h5sg60BSxwp62+57aMLVTPK3i9b-t+5pGLKyPA-FxxuysvFs+BT8+o0dVsM24
-hcZHRaWYEHRBGFGtqk-cMV7oqqQRzbobGRB9Kwc-pTHzCDSSMJorR8d-pxdqd
-hLWpvQWRv-N33mFwEicqz+UFkDYsbDvrfOC7tko5g1JrrSX0swhn64neLsohr
-h26K1mSxnS+TF1Cta8GHHQ-t1Cfp7nh-oZeFuVi5MEynqyzX8kMtXcAynSLQx
-hg4o56Pu4YUZHMqDGtczKeCwXU8PZEc4lY0FbDfFfgZpJFC-a-sHGLtGJgCMZ
-hksr6XNTedEUdVJqxOO5VaReoH68eEPJ2m6d9mKhlhVE7zw4Yru4DUWRCJH28
-hyeth+l2I0gPnEfrTLwAc+-TPS0YKYY3K0np58gVPgdAN8RY7+rQfRDin9JSa
-hPG32WG7-rTl3uthvrnDO-wD09GDIRCniuoefs8UsfiWZOLq+0awOrQxAPM+C
-hxLwOJ9VUKwdn7dJduLn1KhBucvL1pr5lGiBFfUbL79cFFex+G27kT+fsQ7X5
-h87mgPivWhDSQHKPXqpKGniDkYsIYpg66ZWbHp4PfcgtPukElDWENlQPSuNAQ
-hnboE4Bd8kyyokt67GgfGvBVS45sMFPtlgKRlG-QPFSgbMHujA3qYemxnuqGx
-hp97aXpdKpvAE8zx-oUzazoVFz32X3OxAuiWJhKEjaYKpM7f95yv1S62v+k++
-+
-end
-sum —r/size 7468/769 section (from "begin" to "end")
-sum —r/size 36513/540 entire input file
-```
-
-使用 XXdecoder 解码生成一个名为 的文件 `rfax_man`
-
-![](https://pic1.imgdb.cn/item/67eb9e0f0ba3d5a1d7e90513.png)
-
-```shell
-$ file rfax_man
-rfax_man: gzip compressed data, was "rfax_man.py", from FAT filesystem (MS-DOS, OS/2, NT), last modified: Thu Feb  6 17:52:39 2014, max speed
-```
-
-解压缩是一个 Python 脚本
-
-```python
-import socket,os,sys,hashlib
-
-KEY  = "CTF{4BDF4498E4922B88642D4915C528DA8F}" # DO NOT SHARE THIS!
-HOST = '109.233.61.11'
-PORT = 8001
-
-if len(sys.argv)<3:
-  print 'Usage: rfax_man.py add|del file.png'
-  print '\nAdd your pictures to transmission!\nSizes: 800<=width<=3200 and height/width <= 2.0.\nUse contrast grayscale pictures.'
-  sys.exit(0)
-
-data=open(sys.argv[2],'rb').read(1000000)
-
-m=hashlib.md5(); m.update(KEY); KEYH=m.hexdigest().upper()
-m=hashlib.md5(); m.update(data); h=m.hexdigest().upper()
-print 'File hash',h
-
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect((HOST, PORT))
-print 'Connected.'
-
-if sys.argv[1]=='add':
-  s.sendall(KEYH+':ADD:'+data)
-  s.shutdown(socket.SHUT_WR)
-  print s.recv(1024)
-elif sys.argv[1]=='del':
-  s.sendall(KEYH+':DEL:'+h)
-  print s.recv(1024)
-
-s.close()
-print 'Done.'
-```
-
-
-
-
-<!-- Imported from D:\\Book\\Misc\\Chapter2\2-4.md -->
-### ZSteg 隐写
+### ZSteg
 
 这是最常见的隐写方法
 
 通过修改图像像素值的有效位来嵌入信息
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67717c51d0e0a243d4ec3890.jpg)
 
@@ -1765,9 +1649,8 @@ print 'Done.'
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-40.md -->
-### 傅里叶盲水印隐写
+### 傅里叶盲水印
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6807b92758cb8da5c8c10199.png)
 
@@ -1808,9 +1691,8 @@ plt.show()
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-41.md -->
-### 隐写水印工具隐写
+### 隐写水印工具
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6807b92758cb8da5c8c10199.png)
 
@@ -1824,9 +1706,8 @@ plt.show()
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-42.md -->
-### Arnold 加密隐写
+### Arnold 加密
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/680b3f4c58cb8da5c8cb37c0.png)
 
@@ -1922,9 +1803,8 @@ arnold_decode("girlfriend.png","girlfriend.png",0x61,0x726e,0x6f6c64)
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-43.md -->
-### Tupper 隐写
+### Tupper
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/680b5ff458cb8da5c8cc1bfb.png)
 
@@ -2022,9 +1902,8 @@ plt.show()
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-44.md -->
-### Strings 隐写
+### Strings
 
-话不多说，直接上题（CTFLearn）
 
 ![](https://pic1.imgdb.cn/item/682abdc158cb8da5c8fbc7aa.png)
 
@@ -2042,9 +1921,8 @@ strings '/home/morant/95f6edfb66ef42d774a5a34581f19052.jpg' | grep "flag"
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-45.md -->
-### 塔珀自指公式（Tupper's self-referential formula）隐写
+### 塔珀自指公式（Tupper's self-referential formula）
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/68732b6658cb8da5c8a643f5.png)
 
@@ -2184,9 +2062,8 @@ canvas.save('result.png')
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-46.md -->
-### GIF 宽高隐写
+### GIF 宽高
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/68760a1758cb8da5c8b1e915.png)
 
@@ -2314,7 +2191,7 @@ fs.close()
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-47.md -->
-### 图像合成隐写
+### 图像合成
 
 ![](https://pic1.imgdb.cn/item/691a15d43203f7be000b2311.png)
 
@@ -2346,7 +2223,6 @@ fs.close()
 
 在游戏中键盘的 wasd 常控制上下左右
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67717defd0e0a243d4ec38a7.jpg)
 
@@ -2412,9 +2288,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-6.md -->
-### StegSolve 隐写
+### StegSolve
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67722355d0e0a243d4ec69cc.jpg)
 
@@ -2425,31 +2300,10 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-7.md -->
-### 通道隐写
-
-通道隐写是一种在图像处理中隐藏信息的技术
-
-它通过修改图像的颜色通道来实现信息的隐藏
-
-话不多说，直接上题（BugKu CTF）
-
-![](https://pic1.imgdb.cn/item/67722554d0e0a243d4ec6a7a.jpg)
-
-打开图片是空白
-
-![](https://pic1.imgdb.cn/item/67728bd9d0e0a243d4ecc650.jpg)
-
-在 StegSolve 中切换通道拿到 flag
-
-![](https://pic1.imgdb.cn/item/6772258cd0e0a243d4ec6a97.jpg)
-
-
-<!-- Imported from D:\\Book\\Misc\\Chapter2\2-8.md -->
-### GIF 帧隐写
+### GIF 帧
 
 原理就是分别在 GIF 的每一帧中写入内容
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67728bf5d0e0a243d4ecc65a.jpg)
 
@@ -2475,9 +2329,8 @@ if __name__ == '__main__':
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter2\2-9.md -->
-### 图片拼接隐写（十六进制）
+### 图片拼接写（十六进制）
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67728c51d0e0a243d4ecc67c.jpg)
 

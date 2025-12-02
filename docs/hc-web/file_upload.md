@@ -8,7 +8,6 @@ comments: true
 <!-- Imported from D:\\Book\\Web\\Chapter10\10-1.md -->
 ### JavaScript WebShell
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/681daef958cb8da5c8e8cec0.jpg)
 
@@ -54,7 +53,6 @@ comments: true
 <!-- Imported from D:\\Book\\Web\\Chapter10\10-10.md -->
 ### .user.ini 解析绕过
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/681e21a158cb8da5c8e9fdad.jpg)
 
@@ -88,7 +86,6 @@ BurpSuite 抓包修改 MIME 类型再上传
 <!-- Imported from D:\\Book\\Web\\Chapter10\10-11.md -->
 ### Content-type 大小写混淆绕过
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67e225e80ba3d5a1d7e30232.png)
 
@@ -120,7 +117,6 @@ BurpSuite 抓包修改 MIME 类型再上传
 <!-- Imported from D:\\Book\\Web\\Chapter10\10-12.md -->
 ### php4 后缀绕过
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67e225e80ba3d5a1d7e30232.png)
 
@@ -152,7 +148,6 @@ BurpSuite 抓包修改 MIME 类型再上传
 <!-- Imported from D:\\Book\\Web\\Chapter10\10-13.md -->
 ### 参数置空绕过
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/68196bba58cb8da5c8de8893.png)
 
@@ -359,7 +354,6 @@ token=eyJ1c2VybmFtZSI6IiIsInBhc3N3b3JkIjoiIn0=
 <!-- Imported from D:\\Book\\Web\\Chapter10\10-14.md -->
 ### Apache 多后缀解析漏洞
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/6863fe2c58cb8da5c88589d4.png)
 
@@ -581,7 +575,6 @@ if(!is_dir($dir)){
 <!-- Imported from D:\\Book\\Web\\Chapter10\10-15.md -->
 ### %00 截断绕过
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687c934e58cb8da5c8c85f59.png)
 
@@ -611,7 +604,6 @@ if(!is_dir($dir)){
 <!-- Imported from D:\\Book\\Web\\Chapter10\10-16.md -->
 ### 双写后缀绕过
 
-话不多说，直接上题（CTFHUB）
 
 ![](https://pic1.imgdb.cn/item/687c956258cb8da5c8c86039.png)
 
@@ -625,7 +617,6 @@ if(!is_dir($dir)){
 <!-- Imported from D:\\Book\\Web\\Chapter10\10-17.md -->
 ### PNG 图片马绕过
 
-话不多说，直接上题（PicoCTF）
 
 ![](https://pic1.imgdb.cn/item/68a48ebe58cb8da5c83a625e.png)
 
@@ -685,7 +676,6 @@ if(!is_dir($dir)){
 <!-- Imported from D:\\Book\\Web\\Chapter10\10-2.md -->
 ### Python WebShell
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/681de0ca58cb8da5c8e9daa6.jpg)
 
@@ -757,7 +747,6 @@ Fastcgi 根据 `SCRIPT_FILENAME`的值进行解析，最后造成了解析漏洞
 <!-- Imported from D:\\Book\\Web\\Chapter10\10-3.md -->
 ### JavaScript 加密绕过
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/681de1ee58cb8da5c8e9db25.jpg)
 
@@ -809,7 +798,6 @@ Fastcgi 根据 `SCRIPT_FILENAME`的值进行解析，最后造成了解析漏洞
 <!-- Imported from D:\\Book\\Web\\Chapter10\10-4.md -->
 ### Content-type 图片绕过
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67e225e80ba3d5a1d7e30232.png)
 
@@ -841,7 +829,6 @@ Fastcgi 根据 `SCRIPT_FILENAME`的值进行解析，最后造成了解析漏洞
 <!-- Imported from D:\\Book\\Web\\Chapter10\10-5.md -->
 ### disable_functions 绕过
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67b0a0b9d0e0a243d4ffaef3.jpg)
 
@@ -883,7 +870,6 @@ LD_PRELOAD 是一个可选的 Unix 环境变量，  包含一个或多个共享�
 <!-- Imported from D:\\Book\\Web\\Chapter10\10-6.md -->
 ### phtml 后缀绕过
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/681e18d358cb8da5c8e9f9d2.jpg)
 
@@ -905,7 +891,6 @@ LD_PRELOAD 是一个可选的 Unix 环境变量，  包含一个或多个共享�
 <!-- Imported from D:\\Book\\Web\\Chapter10\10-7.md -->
 ### GIF 文件头绕过
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/681e18d358cb8da5c8e9f9d2.jpg)
 
@@ -941,7 +926,6 @@ LD_PRELOAD 是一个可选的 Unix 环境变量，  包含一个或多个共享�
 <!-- Imported from D:\\Book\\Web\\Chapter10\10-8.md -->
 ### JavaScript 验证绕过
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/681e201058cb8da5c8e9fd18.jpg)
 
@@ -963,7 +947,6 @@ LD_PRELOAD 是一个可选的 Unix 环境变量，  包含一个或多个共享�
 <!-- Imported from D:\\Book\\Web\\Chapter10\10-9.md -->
 ### .htaccess 解析绕过
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/681e208358cb8da5c8e9fd46.jpg)
 

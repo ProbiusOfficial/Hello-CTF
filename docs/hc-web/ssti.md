@@ -566,7 +566,6 @@ https://docs.python.org/zh-cn/3/library/functions.html
 <!-- Imported from D:\\Book\\Web\\Chapter11\11-1.md -->
 ### SSTI 添加路由
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67b20193d0e0a243d4ffe29a.jpg)
 
@@ -675,7 +674,6 @@ from_string()：将 calc_req 作为模板字符串进行渲染
 <!-- Imported from D:\\Book\\Web\\Chapter11\11-10.md -->
 ### config 对象模板注入攻击
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67d80e8f88c538a9b5bff4d0.png)
 
@@ -717,7 +715,6 @@ from_string()：将 calc_req 作为模板字符串进行渲染
 <!-- Imported from D:\\Book\\Web\\Chapter11\11-11.md -->
 ### attr 过滤器模板注入攻击
 
-话不多说，直接上题（PicoCTF）
 
 ![](https://pic1.imgdb.cn/item/68a46ca258cb8da5c83a4619.png)
 
@@ -824,7 +821,6 @@ config|attr('__class__') == getattr(config, "__class__")
 <!-- Imported from D:\\Book\\Web\\Chapter11\11-12.md -->
 ### 十六进制编码绕过
 
-话不多说，直接上题（PicoCTF）
 
 ![](https://pic1.imgdb.cn/item/68a46ca258cb8da5c83a4619.png)
 
@@ -930,7 +926,6 @@ config|attr('__class__') == getattr(config, "__class__")
 <!-- Imported from D:\\Book\\Web\\Chapter11\11-2.md -->
 ### Secret_key 泄露
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/67b2a618d0e0a243d40014ae.jpg)
 
@@ -952,7 +947,6 @@ SECRET_KEY 用于加密和解密用户的会话 Cookie，以防止黑客通过�
 <!-- Imported from D:\\Book\\Web\\Chapter11\11-3.md -->
 ### Session 伪造
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b2a697d0e0a243d40014fd.jpg)
 
@@ -986,7 +980,6 @@ Flask 框架仅对 session 进行了签名，签名的作用是防篡改而无�
 <!-- Imported from D:\\Book\\Web\\Chapter11\11-4.md -->
 ### Unicode 字符绕过 strlower()
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b2a697d0e0a243d40014fd.jpg)
 
@@ -1022,7 +1015,6 @@ Flask 框架仅对 session 进行了签名，签名的作用是防篡改而无�
 <!-- Imported from D:\\Book\\Web\\Chapter11\11-5.md -->
 ### 模板注入攻击
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b2a94ed0e0a243d40016b6.jpg)
 
@@ -1058,7 +1050,6 @@ Flask 框架仅对 session 进行了签名，签名的作用是防篡改而无�
 <!-- Imported from D:\\Book\\Web\\Chapter11\11-6.md -->
 ### url_for 函数模板注入攻击
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b2abc2d0e0a243d400174c.png)
 
@@ -1112,7 +1103,6 @@ url_for() 会返回视图函数对应的URL
 <!-- Imported from D:\\Book\\Web\\Chapter11\11-7.md -->
 ### 字符拼接绕过
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b3eb55d0e0a243d4005cff.png)
 
@@ -1206,7 +1196,6 @@ def waf(str):
 <!-- Imported from D:\\Book\\Web\\Chapter11\11-8.md -->
 ### 解密 PIN 码
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67b3eb55d0e0a243d4005cff.png)
 
@@ -1323,7 +1312,6 @@ print(rv)
 <!-- Imported from D:\\Book\\Web\\Chapter11\11-9.md -->
 ### Unicdoe 编码绕过
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67d7d73088c538a9b5bfe462.png)
 

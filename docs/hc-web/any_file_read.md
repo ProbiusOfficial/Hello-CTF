@@ -8,7 +8,6 @@ comments: true
 <!-- Imported from D:\\Book\\Web\\Chapter23\23-1.md -->
 ### 双写绕过
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/68386eb558cb8da5c81ae6d7.png)
 
@@ -45,7 +44,6 @@ comments: true
 <!-- Imported from D:\\Book\\Web\\Chapter23\23-2.md -->
 ### JSP 网站敏感文件遍历读取
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/68387fcb58cb8da5c81b1728.png)
 
@@ -122,7 +120,6 @@ print(''.join(flag))	# SQCTF{85caad1c-33e3-0bc1-6d5e-a73b044f7d9f}
 <!-- Imported from D:\\Book\\Web\\Chapter23\23-3.md -->
 ### Vite 任意文件读取（CVE-2025-30208）
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/683979e358cb8da5c81dc1e8.png)
 
@@ -142,7 +139,6 @@ CVE-2025-30208 是 Vite 开发服务器中 `@fs` 功能的 **文件系统访问�
 <!-- Imported from D:\\Book\\Web\\Chapter23\23-4.md -->
 ### /proc/self/ 当前进程信息利用
 
-话不多说，直接上题（青少年 CTF 平台）
 
 ![](https://pic1.imgdb.cn/item/6863eb5058cb8da5c884faa8.png)
 

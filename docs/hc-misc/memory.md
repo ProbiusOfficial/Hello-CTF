@@ -516,7 +516,6 @@ yarascan       	以Yara签名扫描进程或内核内存
 <!-- Imported from D:\\Book\\Forensics\\Chapter1\1-1.md -->
 ### 未知文件（VS Code）
 
-话不多说，直接上题（CSAW 2011）
 
 ![](https://pic1.imgdb.cn/item/678e0300d0e0a243d4f5dd2d.png)
 
@@ -536,7 +535,6 @@ yarascan       	以Yara签名扫描进程或内核内存
 <!-- Imported from D:\\Book\\Forensics\\Chapter1\1-2.md -->
 ### VMDK（DiskGenius）
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/6794be3fd0e0a243d4f7d899.jpg)
 
@@ -548,7 +546,6 @@ yarascan       	以Yara签名扫描进程或内核内存
 <!-- Imported from D:\\Book\\Forensics\\Chapter1\1-3.md -->
 ### AD1（FTK Imager）
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/6794bf6bd0e0a243d4f7d927.jpg)
 
@@ -566,7 +563,6 @@ yarascan       	以Yara签名扫描进程或内核内存
 <!-- Imported from D:\\Book\\Forensics\\Chapter1\1-4.md -->
 ### Ext4（WinHex）
 
-话不多说，直接上题（Irisctf 2024）
 
 ![](https://pic1.imgdb.cn/item/6794dbecd0e0a243d4f7e589.png)
 
@@ -686,7 +682,6 @@ if __name__ == '__main__':
 <!-- Imported from D:\\Book\\Forensics\\Chapter1\1-5.md -->
 ### FAT32（VeraCrypt）
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6794e8a1d0e0a243d4f7eafe.jpg)
 
@@ -720,7 +715,6 @@ if __name__ == '__main__':
 <!-- Imported from D:\\Book\\Forensics\\Chapter1\1-6.md -->
 ### FAT16 文件恢复
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/6794eb40d0e0a243d4f7ec60.jpg)
 
@@ -744,7 +738,6 @@ if __name__ == '__main__':
 <!-- Imported from D:\\Book\\Forensics\\Chapter1\1-7.md -->
 ### UBIfs（Ubireader Extract Files）
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67eba6b90ba3d5a1d7e90fc9.png)
 
@@ -786,7 +779,6 @@ for i in `ls *.bin`; do ubireader_extract_files $i -o extracted_$i; done
 <!-- Imported from D:\\Book\\Forensics\\Chapter1\1-8.md -->
 ### dd（Autopsy）
 
-话不多说，直接上题（PicoCTF）
 
 ![](https://pic1.imgdb.cn/item/688a135958cb8da5c8f1ace9.png)
 
@@ -849,7 +841,6 @@ sudo autopsy
 <!-- Imported from D:\\Book\\Forensics\\Chapter3\3-1.md -->
 ### 查看编辑内容（Volatility 2）
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/6795160bd0e0a243d4f7f890.jpg)
 
@@ -869,7 +860,6 @@ sudo autopsy
 <!-- Imported from D:\\Book\\Forensics\\Chapter3\3-10.md -->
 ### 抓取流量
 
-话不多说，直接上题（Nuit du Hack CTF Quals 2011）
 
 ![](https://pic1.imgdb.cn/item/679612acd0e0a243d4f8150e.jpg)
 
@@ -901,7 +891,6 @@ sudo autopsy
 <!-- Imported from D:\\Book\\Forensics\\Chapter3\3-11.md -->
 ### TrueCrypt 解密（VeraCrypt）
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/680e32f058cb8da5c8d053b2.png)
 
@@ -991,7 +980,6 @@ md5sum 专家名单.xslx		# DASCTF{c2c68e18fa4f01a4877a586104e7c721}
 <!-- Imported from D:\\Book\\Forensics\\Chapter3\3-12.md -->
 ### 查看计算机名（MemProcFS）
 
-话不多说，直接上题（CTFShow）
 
 ![](https://pic1.imgdb.cn/item/68720aba58cb8da5c8a06d7c.png)
 
@@ -1052,7 +1040,6 @@ MemProcFS.exe -f 20241029-055419.dmp -forensic 1 -pythonpath "D:\Python-3.12.4"
 <!-- Imported from D:\\Book\\Forensics\\Chapter3\3-13.md -->
 ### 查看 bulid 版本号（MemProcFS）
 
-话不多说，直接上题（CTFShow）
 
 ![](https://pic1.imgdb.cn/item/68720aba58cb8da5c8a06d7c.png)
 
@@ -1113,7 +1100,6 @@ MemProcFS.exe -f 20241029-055419.dmp -forensic 1 -pythonpath "D:\Python-3.12.4"
 <!-- Imported from D:\\Book\\Forensics\\Chapter3\3-14.md -->
 ### 查看镜像 IP（MemProcFS）
 
-话不多说，直接上题（CTFShow）
 
 ![](https://pic1.imgdb.cn/item/68720aba58cb8da5c8a06d7c.png)
 
@@ -1174,7 +1160,6 @@ MemProcFS.exe -f 20241029-055419.dmp -forensic 1 -pythonpath "D:\Python-3.12.4"
 <!-- Imported from D:\\Book\\Forensics\\Chapter3\3-15.md -->
 ### 查看登录的 QQ 号（MemProcFS）
 
-话不多说，直接上题（CTFShow）
 
 ![](https://pic1.imgdb.cn/item/68720aba58cb8da5c8a06d7c.png)
 
@@ -1239,7 +1224,6 @@ MemProcFS.exe -f 20241029-055419.dmp -forensic 1 -pythonpath "D:\Python-3.12.4"
 <!-- Imported from D:\\Book\\Forensics\\Chapter3\3-16.md -->
 ### 查看观看的 bilibili 视频 BV 号（MemProcFS）
 
-话不多说，直接上题（CTFShow）
 
 ![](https://pic1.imgdb.cn/item/68720aba58cb8da5c8a06d7c.png)
 
@@ -1304,7 +1288,6 @@ B 站视频一般是在浏览器里，直接去看 `timeline_web.csv` 即可
 <!-- Imported from D:\\Book\\Forensics\\Chapter3\3-17.md -->
 ### 查看隐藏恶意文件（MemProcFS）
 
-话不多说，直接上题（CTFShow）
 
 ![](https://pic1.imgdb.cn/item/68720aba58cb8da5c8a06d7c.png)
 
@@ -1435,7 +1418,6 @@ M:\forensic\files\ROOT\Users\h\AppData\Roaming\ToDesk\dev
 <!-- Imported from D:\\Book\\Forensics\\Chapter3\3-18.md -->
 ### 查看 IE 浏览器记录（Volatility 2）
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/68760a1758cb8da5c8b1e915.png)
 
@@ -1566,7 +1548,6 @@ fs.close()
 <!-- Imported from D:\\Book\\Forensics\\Chapter3\3-2.md -->
 ### PowerShell
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/679516c8d0e0a243d4f7f8a7.jpg)
 
@@ -1594,7 +1575,6 @@ fs.close()
 <!-- Imported from D:\\Book\\Forensics\\Chapter3\3-3.md -->
 ### 查找提取图片（Volatility 2）
 
-话不多说，直接上题（BugKu CTF）
 
 ![](https://pic1.imgdb.cn/item/679517e5d0e0a243d4f7f8ce.jpg)
 
@@ -1622,7 +1602,6 @@ fs.close()
 <!-- Imported from D:\\Book\\Forensics\\Chapter3\3-4.md -->
 ### SAM 注册表（RegRipper 3.0、RegistryExplorer）
 
-话不多说，直接上题（CTF-SPCS）
 
 ![](https://pic1.imgdb.cn/item/67951c3cd0e0a243d4f7f93e.jpg)
 
@@ -1652,7 +1631,6 @@ grodno{user_7565}
 <!-- Imported from D:\\Book\\Forensics\\Chapter3\3-5.md -->
 ### ntds.dit 域控文件（Impacket-Secretsdump）
 
-话不多说，直接上题（CTF-SPCS）
 
 ![](https://pic1.imgdb.cn/item/67951dcbd0e0a243d4f7f953.png)
 
@@ -1693,7 +1671,6 @@ Windows 中的密码都是 MD5 加密，解密即可
 <!-- Imported from D:\\Book\\Forensics\\Chapter3\3-6.md -->
 ### 远程连接日志溯源
 
-话不多说，直接上题（CTF-SPCS）
 
 ![](https://pic1.imgdb.cn/item/6795f5bbd0e0a243d4f810f6.jpg)
 
@@ -1715,7 +1692,6 @@ Operational 表示操作日志，Admin 表示管理日志
 <!-- Imported from D:\\Book\\Forensics\\Chapter3\3-7.md -->
 ### 访问资源日志溯源
 
-话不多说，直接上题（CTF-SPCS）
 
 ![](https://pic1.imgdb.cn/item/67960c64d0e0a243d4f81429.jpg)
 
@@ -1731,7 +1707,6 @@ Operational 表示操作日志，Admin 表示管理日志
 <!-- Imported from D:\\Book\\Forensics\\Chapter3\3-8.md -->
 ### .dmp 错误转储文件（Mimikatz）
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/67960e40d0e0a243d4f81477.jpg)
 
@@ -1755,7 +1730,6 @@ GitHub 上下载工具 mimikatz 使用
 <!-- Imported from D:\\Book\\Forensics\\Chapter3\3-9.md -->
 ### EXE dump（Volatility 2）
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/679611bcd0e0a243d4f814f0.jpg)
 
@@ -1788,7 +1762,6 @@ ForeMost 提出文件
 <!-- Imported from D:\\Book\\Forensics\\Chapter4\4-1.md -->
 ### 攻击 IP 地址
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/679613cdd0e0a243d4f81529.jpg)
 
@@ -1800,7 +1773,6 @@ ForeMost 提出文件
 <!-- Imported from D:\\Book\\Forensics\\Chapter4\4-2.md -->
 ### 黑客电子邮箱
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6796144dd0e0a243d4f8152e.jpg)
 
@@ -1824,7 +1796,6 @@ ForeMost 提出文件
 <!-- Imported from D:\\Book\\Forensics\\Chapter4\4-3.md -->
 ### WebShell
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6798bca3d0e0a243d4f84e8d.jpg)
 
@@ -1840,7 +1811,6 @@ ForeMost 提出文件
 <!-- Imported from D:\\Book\\Forensics\\Chapter4\4-4.md -->
 ### Web 漏洞页面
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6798bdf5d0e0a243d4f84e9e.jpg)
 
@@ -1864,7 +1834,6 @@ ForeMost 提出文件
 <!-- Imported from D:\\Book\\Forensics\\Chapter4\4-5.md -->
 ### 黑客内网扫描次数
 
-话不多说，直接上题（攻防世界）
 
 ![](https://pic1.imgdb.cn/item/67f8a08188c538a9b5ca45f7.png)
 
@@ -1902,7 +1871,6 @@ file 一下发现是流量包
 <!-- Imported from D:\\Book\\Forensics\\Chapter5\5-1.md -->
 ### 火狐登录凭证（Firepwd）
 
-话不多说，直接上题（BUUCTF）
 
 ![](https://pic1.imgdb.cn/item/6798c13fd0e0a243d4f84ee1.jpg)
 
@@ -1915,7 +1883,6 @@ file 一下发现是流量包
 <!-- Imported from D:\\Book\\Forensics\\Chapter6\6-1.md -->
 ### PDF 取证
 
-话不多说，直接上题（Hack.lu 2011）
 
 题目名：Romulan Business Network（250）
 
@@ -2036,7 +2003,6 @@ tXyxj5oWJOch2E0ir5BI05QuClyYTCnHBmzYxK
 <!-- Imported from D:\\Book\\Forensics\\Chapter7\7-1.md -->
 ### 查看当前系统发行版信息]
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/6817254358cb8da5c8db16ef.png)
 
@@ -2060,7 +2026,6 @@ ssh root@challenge.qsnctf.com -p 31212
 <!-- Imported from D:\\Book\\Forensics\\Chapter7\7-2.md -->
 ### 查看新用户
 
-话不多说，直接上题（青少年 CTF 练习平台）
 
 ![](https://pic1.imgdb.cn/item/6817496d58cb8da5c8dc1264.png)
 
