@@ -36,3 +36,12 @@ comments: true
     **赛事主办** : L3v3l 6 (https://ctftime.org/team/206364)  
     **添加日历** : https://ctftime.org/event/3009.ics  
     
+??? Quote "[VuwCTF 2025](https://2025.vuwctf.com/)"  
+    [![](https://ctftime.org/media/events/VUWCTF_logo.png){ width="200" align=left }](https://2025.vuwctf.com/)  
+    **比赛名称** : [VuwCTF 2025](https://2025.vuwctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-12-06 05:00:00 - 2025-12-07 12:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : VuwCTF (https://ctftime.org/team/378359)  
+    **添加日历** : https://ctftime.org/event/3012.ics  
+    
