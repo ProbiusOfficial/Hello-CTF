@@ -1,29 +1,5 @@
 [
     {
-        "比赛名称": "WannaGame Championship 2025",
-        "比赛时间": "2025-12-06 09:00:00 - 2025-12-08 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2898.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.cnsc.com.vn/",
-        "比赛标志": "https://ctftime.org/media/events/Artboard_13x.png",
-        "比赛权重": "29.00",
-        "赛事主办": "Wanna.W1n (https://ctftime.org/team/138431)",
-        "比赛ID": "1000",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "CyKor CTF 2025",
-        "比赛时间": "2025-12-06 09:00:00 - 2025-12-07 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3028.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.cykor.kr/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0.00",
-        "赛事主办": "CyKOR (https://ctftime.org/team/369)",
-        "比赛ID": "1452",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "BackdoorCTF 2025",
         "比赛时间": "2025-12-06 20:00:00 - 2025-12-08 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2915.ics",
@@ -345,6 +321,30 @@
         "比赛权重": "0",
         "赛事主办": "VuwCTF (https://ctftime.org/team/378359)",
         "比赛ID": "1434",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "WannaGame Championship 2025",
+        "比赛时间": "2025-12-06 09:00:00 - 2025-12-08 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2898.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.cnsc.com.vn/",
+        "比赛标志": "https://ctftime.org/media/events/Artboard_13x.png",
+        "比赛权重": "29.00",
+        "赛事主办": "Wanna.W1n (https://ctftime.org/team/138431)",
+        "比赛ID": "1000",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CyKor CTF 2025",
+        "比赛时间": "2025-12-06 09:00:00 - 2025-12-07 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3028.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.cykor.kr/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "CyKOR (https://ctftime.org/team/369)",
+        "比赛ID": "1452",
         "比赛状态": "nowrunning"
     },
     {

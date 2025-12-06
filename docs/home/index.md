@@ -54,24 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[CyKor CTF 2025](https://ctf.cykor.kr/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctf.cykor.kr/)  
-            **比赛名称** : [CyKor CTF 2025](https://ctf.cykor.kr/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-12-06 09:00:00 - 2025-12-07 09:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : CyKOR (https://ctftime.org/team/369)  
-            **添加日历** : https://ctftime.org/event/3028.ics  
-            
-        ??? Quote "[WannaGame Championship 2025](https://ctf.cnsc.com.vn/)"  
-            [![](https://ctftime.org/media/events/Artboard_13x.png){ width="200" align=left }](https://ctf.cnsc.com.vn/)  
-            **比赛名称** : [WannaGame Championship 2025](https://ctf.cnsc.com.vn/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-12-06 09:00:00 - 2025-12-08 09:00:00 UTC+8  
-            **比赛权重** : 29.00  
-            **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
-            **添加日历** : https://ctftime.org/event/2898.ics  
-            
         ??? Quote "[BackdoorCTF 2025](https://backdoor.infoseciitr.in/)"  
             [![](https://ctftime.org/media/events/0b4a317ba84bb2bd6e871c5eec6fdb00_1.png){ width="200" align=left }](https://backdoor.infoseciitr.in/)  
             **比赛名称** : [BackdoorCTF 2025](https://backdoor.infoseciitr.in/)  
@@ -89,6 +71,24 @@ hide:
             **比赛权重** : 39.87  
             **赛事主办** : Cryptonite (https://ctftime.org/team/62713)  
             **添加日历** : https://ctftime.org/event/2851.ics  
+            
+        ??? Quote "[SECCON CTF 14 Quals](https://ctf.seccon.jp/)"  
+            [![](https://ctftime.org/media/events/seccon_s_10.png){ width="200" align=left }](https://ctf.seccon.jp/)  
+            **比赛名称** : [SECCON CTF 14 Quals](https://ctf.seccon.jp/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-12-13 13:00:00 - 2025-12-14 13:00:00 UTC+8  
+            **比赛权重** : 100.00  
+            **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
+            **添加日历** : https://ctftime.org/event/2862.ics  
+            
+        ??? Quote "[Cybercoliseum IV](https://cybercoliseum.hackerlab.pro/en)"  
+            [![](https://ctftime.org/media/events/cybercoliseum.png){ width="200" align=left }](https://cybercoliseum.hackerlab.pro/en)  
+            **比赛名称** : [Cybercoliseum IV](https://cybercoliseum.hackerlab.pro/en)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-12-13 15:00:00 - 2025-12-14 15:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : HackerLab (https://ctftime.org/team/299486)  
+            **添加日历** : https://ctftime.org/event/3019.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
