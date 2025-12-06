@@ -632,7 +632,7 @@ hide:
                 **比赛名称** : [2025 Qiangwang Challenge on Cyber Mimic Defense Finals](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-11-26 12:00:00 - 2025-11-29 12:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : LoveFromMimic (https://ctftime.org/team/364644)  
                 **添加日历** : https://ctftime.org/event/2999.ics  
                 

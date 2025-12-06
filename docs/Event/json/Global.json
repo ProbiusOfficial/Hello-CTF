@@ -438,7 +438,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://nest.pmlabs.com.cn/#/internationalEliteChallenge",
         "比赛标志": "https://ctftime.org/media/events/mimicoctupus.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "LoveFromMimic (https://ctftime.org/team/364644)",
         "比赛ID": "1212",
         "比赛状态": "past"
