@@ -518,15 +518,6 @@ hide:
                 **赛事主办** : L3v3l 6 (https://ctftime.org/team/206364)  
                 **添加日历** : https://ctftime.org/event/3009.ics  
                 
-            ??? Quote "[VuwCTF 2025](https://2025.vuwctf.com/)"  
-                [![](https://ctftime.org/media/events/VUWCTF_logo.png){ width="200" align=left }](https://2025.vuwctf.com/)  
-                **比赛名称** : [VuwCTF 2025](https://2025.vuwctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-12-06 05:00:00 - 2025-12-07 12:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : VuwCTF (https://ctftime.org/team/378359)  
-                **添加日历** : https://ctftime.org/event/3012.ics  
-                
             ??? Quote "[WannaGame Championship 2025](https://ctf.cnsc.com.vn/)"  
                 [![](https://ctftime.org/media/events/Artboard_13x.png){ width="200" align=left }](https://ctf.cnsc.com.vn/)  
                 **比赛名称** : [WannaGame Championship 2025](https://ctf.cnsc.com.vn/)  
@@ -563,6 +554,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : CyKOR (https://ctftime.org/team/369)  
                 **添加日历** : https://ctftime.org/event/3028.ics  
+                
+            ??? Quote "[VuwCTF 2025](https://2025.vuwctf.com/)"  
+                [![](https://ctftime.org/media/events/VUWCTF_logo.png){ width="200" align=left }](https://2025.vuwctf.com/)  
+                **比赛名称** : [VuwCTF 2025](https://2025.vuwctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-12-06 05:00:00 - 2025-12-07 12:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : VuwCTF (https://ctftime.org/team/378359)  
+                **添加日历** : https://ctftime.org/event/3012.ics  
                 
             ??? Quote "[Metared Argentina 2025](https://ctf.cert.unlp.edu.ar/)"  
                 [![](https://ctftime.org/media/events/0645ac9c15c72f7be37e5ff68bafea52.jpg){ width="200" align=left }](https://ctf.cert.unlp.edu.ar/)  
@@ -1445,15 +1445,6 @@ hide:
                 **比赛权重** : 21.67  
                 **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
                 **添加日历** : https://ctftime.org/event/2935.ics  
-                
-            ??? Quote "[07CTF](https://ctf.0bscuri7y.xyz/)"  
-                [![](https://ctftime.org/media/events/logo_112.png){ width="200" align=left }](https://ctf.0bscuri7y.xyz/)  
-                **比赛名称** : [07CTF](https://ctf.0bscuri7y.xyz/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-13 14:30:00 - 2025-09-15 02:30:00 UTC+8  
-                **比赛权重** : 23.75  
-                **赛事主办** : 0bscuri7y (https://ctftime.org/team/370140)  
-                **添加日历** : https://ctftime.org/event/2848.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
