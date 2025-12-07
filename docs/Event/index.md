@@ -500,24 +500,6 @@ hide:
                 **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
                 **添加日历** : https://ctftime.org/event/3022.ics  
                 
-            ??? Quote "[Null CTF 2025](https://ctf.r0devnull.team/)"  
-                [![](https://ctftime.org/media/events/null_ctf_logo_temp_1.png){ width="200" align=left }](https://ctf.r0devnull.team/)  
-                **比赛名称** : [Null CTF 2025](https://ctf.r0devnull.team/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-12-05 23:00:00 - 2025-12-07 23:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : r0/dev/null (https://ctftime.org/team/398024)  
-                **添加日历** : https://ctftime.org/event/2901.ics  
-                
-            ??? Quote "[P3rf3ctr00t CTF 2025](https://ctf.perfectroot.wiki/)"  
-                [![](https://ctftime.org/media/events/project_20240319_1256007-01.png){ width="200" align=left }](https://ctf.perfectroot.wiki/)  
-                **比赛名称** : [P3rf3ctr00t CTF 2025](https://ctf.perfectroot.wiki/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-12-05 23:00:00 - 2025-12-07 23:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : L3v3l 6 (https://ctftime.org/team/206364)  
-                **添加日历** : https://ctftime.org/event/3009.ics  
-                
             ??? Quote "[WannaGame Championship 2025](https://ctf.cnsc.com.vn/)"  
                 [![](https://ctftime.org/media/events/Artboard_13x.png){ width="200" align=left }](https://ctf.cnsc.com.vn/)  
                 **比赛名称** : [WannaGame Championship 2025](https://ctf.cnsc.com.vn/)  
@@ -563,6 +545,24 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : VuwCTF (https://ctftime.org/team/378359)  
                 **添加日历** : https://ctftime.org/event/3012.ics  
+                
+            ??? Quote "[Null CTF 2025](https://ctf.r0devnull.team/)"  
+                [![](https://ctftime.org/media/events/null_ctf_logo_temp_1.png){ width="200" align=left }](https://ctf.r0devnull.team/)  
+                **比赛名称** : [Null CTF 2025](https://ctf.r0devnull.team/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-12-05 23:00:00 - 2025-12-07 23:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : r0/dev/null (https://ctftime.org/team/398024)  
+                **添加日历** : https://ctftime.org/event/2901.ics  
+                
+            ??? Quote "[P3rf3ctr00t CTF 2025](https://ctf.perfectroot.wiki/)"  
+                [![](https://ctftime.org/media/events/project_20240319_1256007-01.png){ width="200" align=left }](https://ctf.perfectroot.wiki/)  
+                **比赛名称** : [P3rf3ctr00t CTF 2025](https://ctf.perfectroot.wiki/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-12-05 23:00:00 - 2025-12-07 23:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : L3v3l 6 (https://ctftime.org/team/206364)  
+                **添加日历** : https://ctftime.org/event/3009.ics  
                 
             ??? Quote "[Metared Argentina 2025](https://ctf.cert.unlp.edu.ar/)"  
                 [![](https://ctftime.org/media/events/0645ac9c15c72f7be37e5ff68bafea52.jpg){ width="200" align=left }](https://ctf.cert.unlp.edu.ar/)  
@@ -1427,24 +1427,6 @@ hide:
                 **比赛权重** : 24.53  
                 **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
                 **添加日历** : https://ctftime.org/event/2886.ics  
-                
-            ??? Quote "[MaltaCTF 2025 Finals](https://2025.ctf.mt/)"  
-                [![](https://ctftime.org/media/events/MaltaCTF_1.png){ width="200" align=left }](https://2025.ctf.mt/)  
-                **比赛名称** : [MaltaCTF 2025 Finals](https://2025.ctf.mt/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-13 18:00:00 - 2025-09-14 18:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Friendly Maltese Citizens (https://ctftime.org/team/220769)  
-                **添加日历** : https://ctftime.org/event/2777.ics  
-                
-            ??? Quote "[Alfa Surfing CTF](https://alfactf.ru/)"  
-                [![](https://ctftime.org/media/events/logo2_7.png){ width="200" align=left }](https://alfactf.ru/)  
-                **比赛名称** : [Alfa Surfing CTF](https://alfactf.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-13 17:00:00 - 2025-09-14 23:00:00 UTC+8  
-                **比赛权重** : 21.67  
-                **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
-                **添加日历** : https://ctftime.org/event/2935.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
