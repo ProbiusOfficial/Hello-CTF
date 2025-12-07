@@ -324,18 +324,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CyKor CTF 2025",
-        "比赛时间": "2025-12-06 09:00:00 - 2025-12-07 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3028.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.cykor.kr/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "CyKOR (https://ctftime.org/team/369)",
-        "比赛ID": "1452",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "BackdoorCTF 2025",
         "比赛时间": "2025-12-06 20:00:00 - 2025-12-08 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2915.ics",
@@ -346,6 +334,18 @@
         "赛事主办": "InfoSecIITR (https://ctftime.org/team/16691)",
         "比赛ID": "49",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CyKor CTF 2025",
+        "比赛时间": "2025-12-06 09:00:00 - 2025-12-07 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3028.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.cykor.kr/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "CyKOR (https://ctftime.org/team/369)",
+        "比赛ID": "1452",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Metared Argentina 2025",
@@ -1533,18 +1533,6 @@
         "比赛权重": "23.75",
         "赛事主办": "0bscuri7y (https://ctftime.org/team/370140)",
         "比赛ID": "1360",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CSAW CTF Qualification Round 2025",
-        "比赛时间": "2025-09-13 00:00:00 - 2025-09-15 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2903.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.csaw.io/",
-        "比赛标志": "https://ctftime.org/media/events/csaw-stars.png",
-        "比赛权重": "16.47",
-        "赛事主办": "NYUSEC (https://ctftime.org/team/439)",
-        "比赛ID": "18",
         "比赛状态": "past"
     }
 ]

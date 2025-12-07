@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[CyKor CTF 2025](https://ctf.cykor.kr/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.cykor.kr/)  
+    **比赛名称** : [CyKor CTF 2025](https://ctf.cykor.kr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-12-06 09:00:00 - 2025-12-07 09:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : CyKOR (https://ctftime.org/team/369)  
+    **添加日历** : https://ctftime.org/event/3028.ics  
+    
 ??? Quote "[Metared Argentina 2025](https://ctf.cert.unlp.edu.ar/)"  
     [![](https://ctftime.org/media/events/0645ac9c15c72f7be37e5ff68bafea52.jpg){ width="200" align=left }](https://ctf.cert.unlp.edu.ar/)  
     **比赛名称** : [Metared Argentina 2025](https://ctf.cert.unlp.edu.ar/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 23.75  
     **赛事主办** : 0bscuri7y (https://ctftime.org/team/370140)  
     **添加日历** : https://ctftime.org/event/2848.ics  
-    
-??? Quote "[CSAW CTF Qualification Round 2025](https://ctf.csaw.io/)"  
-    [![](https://ctftime.org/media/events/csaw-stars.png){ width="200" align=left }](https://ctf.csaw.io/)  
-    **比赛名称** : [CSAW CTF Qualification Round 2025](https://ctf.csaw.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-09-13 00:00:00 - 2025-09-15 00:00:00 UTC+8  
-    **比赛权重** : 16.47  
-    **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
-    **添加日历** : https://ctftime.org/event/2903.ics  
     

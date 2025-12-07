@@ -536,15 +536,6 @@ hide:
                 **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
                 **添加日历** : https://ctftime.org/event/2898.ics  
                 
-            ??? Quote "[CyKor CTF 2025](https://ctf.cykor.kr/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://ctf.cykor.kr/)  
-                **比赛名称** : [CyKor CTF 2025](https://ctf.cykor.kr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-12-06 09:00:00 - 2025-12-07 09:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : CyKOR (https://ctftime.org/team/369)  
-                **添加日历** : https://ctftime.org/event/3028.ics  
-                
             ??? Quote "[BackdoorCTF 2025](https://backdoor.infoseciitr.in/)"  
                 [![](https://ctftime.org/media/events/0b4a317ba84bb2bd6e871c5eec6fdb00_1.png){ width="200" align=left }](https://backdoor.infoseciitr.in/)  
                 **比赛名称** : [BackdoorCTF 2025](https://backdoor.infoseciitr.in/)  
@@ -564,6 +555,15 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
+            ??? Quote "[CyKor CTF 2025](https://ctf.cykor.kr/)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://ctf.cykor.kr/)  
+                **比赛名称** : [CyKor CTF 2025](https://ctf.cykor.kr/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-12-06 09:00:00 - 2025-12-07 09:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : CyKOR (https://ctftime.org/team/369)  
+                **添加日历** : https://ctftime.org/event/3028.ics  
+                
             ??? Quote "[Metared Argentina 2025](https://ctf.cert.unlp.edu.ar/)"  
                 [![](https://ctftime.org/media/events/0645ac9c15c72f7be37e5ff68bafea52.jpg){ width="200" align=left }](https://ctf.cert.unlp.edu.ar/)  
                 **比赛名称** : [Metared Argentina 2025](https://ctf.cert.unlp.edu.ar/)  
@@ -1454,15 +1454,6 @@ hide:
                 **比赛权重** : 23.75  
                 **赛事主办** : 0bscuri7y (https://ctftime.org/team/370140)  
                 **添加日历** : https://ctftime.org/event/2848.ics  
-                
-            ??? Quote "[CSAW CTF Qualification Round 2025](https://ctf.csaw.io/)"  
-                [![](https://ctftime.org/media/events/csaw-stars.png){ width="200" align=left }](https://ctf.csaw.io/)  
-                **比赛名称** : [CSAW CTF Qualification Round 2025](https://ctf.csaw.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-13 00:00:00 - 2025-09-15 00:00:00 UTC+8  
-                **比赛权重** : 16.47  
-                **赛事主办** : NYUSEC (https://ctftime.org/team/439)  
-                **添加日历** : https://ctftime.org/event/2903.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
