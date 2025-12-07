@@ -596,7 +596,7 @@ hide:
                 **比赛名称** : [Haix-la-Chapelle 2025](https://haix-la-chapelle.eu/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-11-29 17:00:00 - 2025-11-30 17:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 24.33  
                 **赛事主办** : Pwn-la-Chapelle (https://ctftime.org/team/279433)  
                 **添加日历** : https://ctftime.org/event/2951.ics  
                 
