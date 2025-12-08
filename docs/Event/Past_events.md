@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[WannaGame Championship 2025](https://ctf.cnsc.com.vn/)"  
+    [![](https://ctftime.org/media/events/Artboard_13x.png){ width="200" align=left }](https://ctf.cnsc.com.vn/)  
+    **比赛名称** : [WannaGame Championship 2025](https://ctf.cnsc.com.vn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-12-06 09:00:00 - 2025-12-08 09:00:00 UTC+8  
+    **比赛权重** : 29.00  
+    **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
+    **添加日历** : https://ctftime.org/event/2898.ics  
+    
 ??? Quote "[CyKor CTF 2025](https://ctf.cykor.kr/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://ctf.cykor.kr/)  
     **比赛名称** : [CyKor CTF 2025](https://ctf.cykor.kr/)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
     **添加日历** : https://ctftime.org/event/2904.ics  
-    
-??? Quote "[CTF@AC - Quals](https://ctf.ac.upt.ro/)"  
-    [![](https://ctftime.org/media/events/CTFAC.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
-    **比赛名称** : [CTF@AC - Quals](https://ctf.ac.upt.ro/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-09-14 17:00:00 - 2025-09-15 17:00:00 UTC+8  
-    **比赛权重** : 24.53  
-    **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
-    **添加日历** : https://ctftime.org/event/2886.ics  
     

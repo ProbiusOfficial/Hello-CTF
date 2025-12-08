@@ -500,15 +500,6 @@ hide:
                 **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
                 **添加日历** : https://ctftime.org/event/3022.ics  
                 
-            ??? Quote "[WannaGame Championship 2025](https://ctf.cnsc.com.vn/)"  
-                [![](https://ctftime.org/media/events/Artboard_13x.png){ width="200" align=left }](https://ctf.cnsc.com.vn/)  
-                **比赛名称** : [WannaGame Championship 2025](https://ctf.cnsc.com.vn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-12-06 09:00:00 - 2025-12-08 09:00:00 UTC+8  
-                **比赛权重** : 29.00  
-                **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
-                **添加日历** : https://ctftime.org/event/2898.ics  
-                
             ??? Quote "[BackdoorCTF 2025](https://backdoor.infoseciitr.in/)"  
                 [![](https://ctftime.org/media/events/0b4a317ba84bb2bd6e871c5eec6fdb00_1.png){ width="200" align=left }](https://backdoor.infoseciitr.in/)  
                 **比赛名称** : [BackdoorCTF 2025](https://backdoor.infoseciitr.in/)  
@@ -528,6 +519,15 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
+            ??? Quote "[WannaGame Championship 2025](https://ctf.cnsc.com.vn/)"  
+                [![](https://ctftime.org/media/events/Artboard_13x.png){ width="200" align=left }](https://ctf.cnsc.com.vn/)  
+                **比赛名称** : [WannaGame Championship 2025](https://ctf.cnsc.com.vn/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-12-06 09:00:00 - 2025-12-08 09:00:00 UTC+8  
+                **比赛权重** : 29.00  
+                **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
+                **添加日历** : https://ctftime.org/event/2898.ics  
+                
             ??? Quote "[CyKor CTF 2025](https://ctf.cykor.kr/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.cykor.kr/)  
                 **比赛名称** : [CyKor CTF 2025](https://ctf.cykor.kr/)  
@@ -1418,15 +1418,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/2904.ics  
-                
-            ??? Quote "[CTF@AC - Quals](https://ctf.ac.upt.ro/)"  
-                [![](https://ctftime.org/media/events/CTFAC.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
-                **比赛名称** : [CTF@AC - Quals](https://ctf.ac.upt.ro/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-14 17:00:00 - 2025-09-15 17:00:00 UTC+8  
-                **比赛权重** : 24.53  
-                **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
-                **添加日历** : https://ctftime.org/event/2886.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
