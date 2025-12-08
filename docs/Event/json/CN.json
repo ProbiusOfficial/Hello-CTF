@@ -1,28 +1,7 @@
 {
     "success": true,
     "data": {
-        "result": [
-            {
-                "name": "MoeCTF 2025",
-                "info_confirmed": 1,
-                "mid_join": 0,
-                "link": "https://ctf.xidian.edu.cn/games/22",
-                "status": "已经结束",
-                "is_reg": 1,
-                "limit": 1,
-                "type": "线上Jeopardy解题赛",
-                "reg_time_start": "2025年08月02日 00:00",
-                "reg_time_end": "2025年10月09日 17:00",
-                "comp_time_start": "2025年08月09日 09:00",
-                "comp_time_end": "2025年10月09日 17:00",
-                "organizer": "西安电子科技大学",
-                "contac": {
-                    "QQ群": "1014114928"
-                },
-                "tag": "",
-                "readmore": "MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。"
-            }
-        ],
+        "result": [],
         "total": 77,
         "page": 1,
         "size": 20
