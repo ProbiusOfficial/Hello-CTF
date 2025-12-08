@@ -54,6 +54,15 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
+        ??? Quote "[NexHunt CTF](https://nexus-security.club/)"  
+            [![](https://ctftime.org/media/events/Group_64_2.png){ width="200" align=left }](https://nexus-security.club/)  
+            **比赛名称** : [NexHunt CTF](https://nexus-security.club/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-12-12 02:00:00 - 2025-12-13 18:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Nexus Team (https://ctftime.org/team/361096)  
+            **添加日历** : https://ctftime.org/event/3037.ics  
+            
         ??? Quote "[niteCTF 2025](https://nitectf25.live/)"  
             [![](https://ctftime.org/media/events/nitectf2025.png){ width="200" align=left }](https://nitectf25.live/)  
             **比赛名称** : [niteCTF 2025](https://nitectf25.live/)  
@@ -80,15 +89,6 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : HackerLab (https://ctftime.org/team/299486)  
             **添加日历** : https://ctftime.org/event/3019.ics  
-            
-        ??? Quote "[BSides Algiers 2025](https://shellmates.club/events/bsidesalgiers25)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://shellmates.club/events/bsidesalgiers25)  
-            **比赛名称** : [BSides Algiers 2025](https://shellmates.club/events/bsidesalgiers25)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-12-19 03:00:00 - 2025-12-20 15:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : noreply (https://ctftime.org/team/210760)  
-            **添加日历** : https://ctftime.org/event/2962.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
