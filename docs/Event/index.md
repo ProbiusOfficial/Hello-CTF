@@ -519,15 +519,6 @@ hide:
                 **其他说明** : MoeCTF 2025 是由西安电子科技大学主办的线上Jeopardy解题赛，报名开始时间为2025年8月2日00:00，报名结束时间为2025年10月9日17:00，比赛开始时间为2025年8月9日09:00，比赛结束时间为2025年10月9日17:00。更多信息请加入QQ群1014114928。  
                 
         === "国外赛事"
-            ??? Quote "[WannaGame Championship 2025](https://ctf.cnsc.com.vn/)"  
-                [![](https://ctftime.org/media/events/Artboard_13x.png){ width="200" align=left }](https://ctf.cnsc.com.vn/)  
-                **比赛名称** : [WannaGame Championship 2025](https://ctf.cnsc.com.vn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-12-06 09:00:00 - 2025-12-08 09:00:00 UTC+8  
-                **比赛权重** : 29.00  
-                **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
-                **添加日历** : https://ctftime.org/event/2898.ics  
-                
             ??? Quote "[CyKor CTF 2025](https://ctf.cykor.kr/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://ctf.cykor.kr/)  
                 **比赛名称** : [CyKor CTF 2025](https://ctf.cykor.kr/)  
@@ -536,6 +527,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : CyKOR (https://ctftime.org/team/369)  
                 **添加日历** : https://ctftime.org/event/3028.ics  
+                
+            ??? Quote "[WannaGame Championship 2025](https://ctf.cnsc.com.vn/)"  
+                [![](https://ctftime.org/media/events/Artboard_13x.png){ width="200" align=left }](https://ctf.cnsc.com.vn/)  
+                **比赛名称** : [WannaGame Championship 2025](https://ctf.cnsc.com.vn/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-12-06 09:00:00 - 2025-12-08 09:00:00 UTC+8  
+                **比赛权重** : 29.00  
+                **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
+                **添加日历** : https://ctftime.org/event/2898.ics  
                 
             ??? Quote "[VuwCTF 2025](https://2025.vuwctf.com/)"  
                 [![](https://ctftime.org/media/events/VUWCTF_logo.png){ width="200" align=left }](https://2025.vuwctf.com/)  
@@ -677,7 +677,7 @@ hide:
                 **比赛名称** : [sknbCTF 2025](http://ctf.sknb.team/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-11-22 11:00:00 - 2025-11-23 11:00:00 UTC+8  
-                **比赛权重** : 24.67  
+                **比赛权重** : 24.68  
                 **赛事主办** : sknb (https://ctftime.org/team/355880)  
                 **添加日历** : https://ctftime.org/event/2947.ics  
                 
