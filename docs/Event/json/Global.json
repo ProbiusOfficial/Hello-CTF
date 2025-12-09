@@ -108,6 +108,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "MetaCTF December 2025 Flash CTF",
+        "比赛时间": "2025-12-21 01:00:00 - 2025-12-21 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3036.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://mctf.io/dec2025",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "MetaCTF (https://ctftime.org/team/72254)",
+        "比赛ID": "500",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "ASIS CTF Finals 2025",
         "比赛时间": "2025-12-27 22:00:00 - 2025-12-28 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2613.ics",
@@ -213,6 +225,18 @@
         "比赛权重": "0",
         "赛事主办": "NFITS (https://ctftime.org/team/360674)",
         "比赛ID": "1200",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "@Hack 2026",
+        "比赛时间": "2026-03-07 22:00:00 - 2026-03-09 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3027.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://athackctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/athack_logo.png",
+        "比赛权重": "0",
+        "赛事主办": "atHACKprivate (https://ctftime.org/team/278003)",
+        "比赛ID": "1061",
         "比赛状态": "oncoming"
     },
     {
