@@ -335,7 +335,7 @@ hide:
                 **添加日历** : https://ctftime.org/event/3032.ics  
                 
             ??? Quote "[BSides Algiers 2025](https://shellmates.club/events/bsidesalgiers25)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://shellmates.club/events/bsidesalgiers25)  
+                [![](https://ctftime.org/media/events/image.jpg){ width="200" align=left }](https://shellmates.club/events/bsidesalgiers25)  
                 **比赛名称** : [BSides Algiers 2025](https://shellmates.club/events/bsidesalgiers25)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-12-19 03:00:00 - 2025-12-20 15:00:00 UTC+8  
