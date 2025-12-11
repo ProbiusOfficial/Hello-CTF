@@ -131,7 +131,7 @@ comments: true
     **比赛名称** : [UofTCTF 2026](https://ctf.uoftctf.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-01-10 08:00:00 - 2026-01-12 08:00:00 UTC+8  
-    **比赛权重** : 33.45  
+    **比赛权重** : 33.49  
     **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
     **添加日历** : https://ctftime.org/event/2969.ics  
     
