@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[niteCTF 2025](https://nitectf25.live/)"  
-            [![](https://ctftime.org/media/events/nitectf2025.png){ width="200" align=left }](https://nitectf25.live/)  
-            **比赛名称** : [niteCTF 2025](https://nitectf25.live/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-12-12 20:00:00 - 2025-12-14 20:00:00 UTC+8  
-            **比赛权重** : 39.87  
-            **赛事主办** : Cryptonite (https://ctftime.org/team/62713)  
-            **添加日历** : https://ctftime.org/event/2851.ics  
-            
         ??? Quote "[SECCON CTF 14 Quals](https://ctf.seccon.jp/)"  
             [![](https://ctftime.org/media/events/seccon_s_10.png){ width="200" align=left }](https://ctf.seccon.jp/)  
             **比赛名称** : [SECCON CTF 14 Quals](https://ctf.seccon.jp/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : vianu_hack (https://ctftime.org/team/379530)  
             **添加日历** : https://ctftime.org/event/3032.ics  
+            
+        ??? Quote "[BSides Algiers 2025](https://shellmates.club/events/bsidesalgiers25)"  
+            [![](https://ctftime.org/media/events/image.jpg){ width="200" align=left }](https://shellmates.club/events/bsidesalgiers25)  
+            **比赛名称** : [BSides Algiers 2025](https://shellmates.club/events/bsidesalgiers25)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-12-19 03:00:00 - 2025-12-20 15:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : noreply (https://ctftime.org/team/210760)  
+            **添加日历** : https://ctftime.org/event/2962.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
