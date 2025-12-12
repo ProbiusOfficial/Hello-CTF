@@ -457,7 +457,7 @@ hide:
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-03-07 22:00:00 - 2026-03-09 03:00:00 UTC+8  
                 **比赛权重** : 0  
-                **赛事主办** : atHACKprivate (https://ctftime.org/team/278003)  
+                **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
                 **添加日历** : https://ctftime.org/event/3027.ics  
                 
             ??? Quote "[Undutmaning 2026](https://undutmaning.se/)"  
