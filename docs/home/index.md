@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Cybercoliseum IV](https://cybercoliseum.hackerlab.pro/en)"  
-            [![](https://ctftime.org/media/events/cybercoliseum.png){ width="200" align=left }](https://cybercoliseum.hackerlab.pro/en)  
-            **比赛名称** : [Cybercoliseum IV](https://cybercoliseum.hackerlab.pro/en)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-12-13 15:00:00 - 2025-12-14 15:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : HackerLab (https://ctftime.org/team/299486)  
-            **添加日历** : https://ctftime.org/event/3019.ics  
-            
         ??? Quote "[SecurITy Challenge - VianuCTF 2025](https://vianuhack.club/)"  
             [![](https://ctftime.org/media/events/1e25f32d-068f-4ad2-9b7d-a750fa82b97d.jpeg){ width="200" align=left }](https://vianuhack.club/)  
             **比赛名称** : [SecurITy Challenge - VianuCTF 2025](https://vianuhack.club/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : HKCERT (https://ctftime.org/team/134746)  
             **添加日历** : https://ctftime.org/event/2998.ics  
+            
+        ??? Quote "[0CTF 2025](https://ctf.0ops.sjtu.cn/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ctf.0ops.sjtu.cn/)  
+            **比赛名称** : [0CTF 2025](https://ctf.0ops.sjtu.cn/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-12-20 08:00:00 - 2025-12-22 08:00:00 UTC+8  
+            **比赛权重** : 96.88  
+            **赛事主办** : 0ops (https://ctftime.org/team/4419)  
+            **添加日历** : https://ctftime.org/event/2997.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

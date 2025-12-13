@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Cybercoliseum IV](https://cybercoliseum.hackerlab.pro/en)"  
-    [![](https://ctftime.org/media/events/cybercoliseum.png){ width="200" align=left }](https://cybercoliseum.hackerlab.pro/en)  
-    **比赛名称** : [Cybercoliseum IV](https://cybercoliseum.hackerlab.pro/en)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-12-13 15:00:00 - 2025-12-14 15:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : HackerLab (https://ctftime.org/team/299486)  
-    **添加日历** : https://ctftime.org/event/3019.ics  
-    
 ??? Quote "[SecurITy Challenge - VianuCTF 2025](https://vianuhack.club/)"  
     [![](https://ctftime.org/media/events/1e25f32d-068f-4ad2-9b7d-a750fa82b97d.jpeg){ width="200" align=left }](https://vianuhack.club/)  
     **比赛名称** : [SecurITy Challenge - VianuCTF 2025](https://vianuhack.club/)  

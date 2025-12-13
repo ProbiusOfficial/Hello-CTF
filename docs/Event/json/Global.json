@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Cybercoliseum IV",
-        "比赛时间": "2025-12-13 15:00:00 - 2025-12-14 15:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3019.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cybercoliseum.hackerlab.pro/en",
-        "比赛标志": "https://ctftime.org/media/events/cybercoliseum.png",
-        "比赛权重": "0.00",
-        "赛事主办": "HackerLab (https://ctftime.org/team/299486)",
-        "比赛ID": "923",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "SecurITy Challenge - VianuCTF 2025",
         "比赛时间": "2025-12-16 15:30:00 - 2025-12-16 22:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3032.ics",
@@ -321,6 +309,18 @@
         "比赛权重": "100.00",
         "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
         "比赛ID": "92",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Cybercoliseum IV",
+        "比赛时间": "2025-12-13 15:00:00 - 2025-12-14 15:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3019.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cybercoliseum.hackerlab.pro/en",
+        "比赛标志": "https://ctftime.org/media/events/cybercoliseum.png",
+        "比赛权重": "0",
+        "赛事主办": "HackerLab (https://ctftime.org/team/299486)",
+        "比赛ID": "923",
         "比赛状态": "nowrunning"
     },
     {
