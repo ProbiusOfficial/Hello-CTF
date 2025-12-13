@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[SECCON CTF 14 Quals](https://ctf.seccon.jp/)"  
-            [![](https://ctftime.org/media/events/seccon_s_10.png){ width="200" align=left }](https://ctf.seccon.jp/)  
-            **比赛名称** : [SECCON CTF 14 Quals](https://ctf.seccon.jp/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-12-13 13:00:00 - 2025-12-14 13:00:00 UTC+8  
-            **比赛权重** : 100.00  
-            **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
-            **添加日历** : https://ctftime.org/event/2862.ics  
-            
         ??? Quote "[Cybercoliseum IV](https://cybercoliseum.hackerlab.pro/en)"  
             [![](https://ctftime.org/media/events/cybercoliseum.png){ width="200" align=left }](https://cybercoliseum.hackerlab.pro/en)  
             **比赛名称** : [Cybercoliseum IV](https://cybercoliseum.hackerlab.pro/en)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : noreply (https://ctftime.org/team/210760)  
             **添加日历** : https://ctftime.org/event/2962.ics  
+            
+        ??? Quote "[HKCERT CTF 2025 (Qualifying Round)](https://ctf.hkcert.org/)"  
+            [![](https://ctftime.org/media/events/CTF2025.png){ width="200" align=left }](https://ctf.hkcert.org/)  
+            **比赛名称** : [HKCERT CTF 2025 (Qualifying Round)](https://ctf.hkcert.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-12-19 16:00:00 - 2025-12-21 16:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : HKCERT (https://ctftime.org/team/134746)  
+            **添加日历** : https://ctftime.org/event/2998.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
