@@ -509,6 +509,10 @@ hide:
                 **赛事主办** : Cryptonite (https://ctftime.org/team/62713)  
                 **添加日历** : https://ctftime.org/event/2851.ics  
                 
+    === "*已经结束*"
+        === "国内赛事"
+    
+        === "国外赛事"
             ??? Quote "[Cybercoliseum IV](https://cybercoliseum.hackerlab.pro/en)"  
                 [![](https://ctftime.org/media/events/cybercoliseum.png){ width="200" align=left }](https://cybercoliseum.hackerlab.pro/en)  
                 **比赛名称** : [Cybercoliseum IV](https://cybercoliseum.hackerlab.pro/en)  
@@ -518,10 +522,6 @@ hide:
                 **赛事主办** : HackerLab (https://ctftime.org/team/299486)  
                 **添加日历** : https://ctftime.org/event/3019.ics  
                 
-    === "*已经结束*"
-        === "国内赛事"
-    
-        === "国外赛事"
             ??? Quote "[SECCON CTF 14 Quals](https://ctf.seccon.jp/)"  
                 [![](https://ctftime.org/media/events/seccon_s_10.png){ width="200" align=left }](https://ctf.seccon.jp/)  
                 **比赛名称** : [SECCON CTF 14 Quals](https://ctf.seccon.jp/)  
@@ -1412,15 +1412,6 @@ hide:
                 **比赛权重** : 38.93  
                 **赛事主办** : thehackerscrew (https://ctftime.org/team/85618)  
                 **添加日历** : https://ctftime.org/event/2704.ics  
-                
-            ??? Quote "[K17 CTF](https://ctf.secso.cc/)"  
-                [![](https://ctftime.org/media/events/k17.png){ width="200" align=left }](https://ctf.secso.cc/)  
-                **比赛名称** : [K17 CTF](https://ctf.secso.cc/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-19 16:00:00 - 2025-09-21 16:00:00 UTC+8  
-                **比赛权重** : 24.83  
-                **赛事主办** : K17 (https://ctftime.org/team/17058)  
-                **添加日历** : https://ctftime.org/event/2902.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

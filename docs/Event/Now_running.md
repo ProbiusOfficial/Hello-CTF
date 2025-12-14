@@ -27,12 +27,3 @@ comments: true
     **赛事主办** : Cryptonite (https://ctftime.org/team/62713)  
     **添加日历** : https://ctftime.org/event/2851.ics  
     
-??? Quote "[Cybercoliseum IV](https://cybercoliseum.hackerlab.pro/en)"  
-    [![](https://ctftime.org/media/events/cybercoliseum.png){ width="200" align=left }](https://cybercoliseum.hackerlab.pro/en)  
-    **比赛名称** : [Cybercoliseum IV](https://cybercoliseum.hackerlab.pro/en)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-12-13 15:00:00 - 2025-12-14 15:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : HackerLab (https://ctftime.org/team/299486)  
-    **添加日历** : https://ctftime.org/event/3019.ics  
-    
