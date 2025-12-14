@@ -31,7 +31,7 @@ comments: true
     **比赛名称** : [CyKor CTF 2025](https://ctf.cykor.kr/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-12-06 09:00:00 - 2025-12-07 09:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : CyKOR (https://ctftime.org/team/369)  
     **添加日历** : https://ctftime.org/event/3028.ics  
     

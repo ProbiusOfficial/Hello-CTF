@@ -342,7 +342,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.cykor.kr/",
         "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "CyKOR (https://ctftime.org/team/369)",
         "比赛ID": "1452",
         "比赛状态": "past"
