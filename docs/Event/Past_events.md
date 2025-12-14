@@ -49,7 +49,7 @@ comments: true
     **比赛名称** : [VuwCTF 2025](https://2025.vuwctf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-12-06 05:00:00 - 2025-12-07 12:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : VuwCTF (https://ctftime.org/team/378359)  
     **添加日历** : https://ctftime.org/event/3012.ics  
     
