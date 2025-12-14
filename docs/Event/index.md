@@ -581,7 +581,7 @@ hide:
                 **比赛名称** : [P3rf3ctr00t CTF 2025](https://ctf.perfectroot.wiki/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-12-05 23:00:00 - 2025-12-07 23:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 24.37  
                 **赛事主办** : L3v3l 6 (https://ctftime.org/team/206364)  
                 **添加日历** : https://ctftime.org/event/3009.ics  
                 
@@ -590,7 +590,7 @@ hide:
                 **比赛名称** : [Null CTF 2025](https://ctf.r0devnull.team/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-12-05 23:00:00 - 2025-12-07 23:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : r0/dev/null (https://ctftime.org/team/398024)  
                 **添加日历** : https://ctftime.org/event/2901.ics  
                 
