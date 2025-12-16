@@ -491,6 +491,10 @@ hide:
                 **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
                 **添加日历** : https://ctftime.org/event/3022.ics  
                 
+    === "*已经结束*"
+        === "国内赛事"
+    
+        === "国外赛事"
             ??? Quote "[SecurITy Challenge - VianuCTF 2025](https://vianuhack.club/)"  
                 [![](https://ctftime.org/media/events/1e25f32d-068f-4ad2-9b7d-a750fa82b97d.jpeg){ width="200" align=left }](https://vianuhack.club/)  
                 **比赛名称** : [SecurITy Challenge - VianuCTF 2025](https://vianuhack.club/)  
@@ -500,10 +504,6 @@ hide:
                 **赛事主办** : vianu_hack (https://ctftime.org/team/379530)  
                 **添加日历** : https://ctftime.org/event/3032.ics  
                 
-    === "*已经结束*"
-        === "国内赛事"
-    
-        === "国外赛事"
             ??? Quote "[Cybercoliseum IV](https://cybercoliseum.hackerlab.pro/en)"  
                 [![](https://ctftime.org/media/events/cybercoliseum.png){ width="200" align=left }](https://cybercoliseum.hackerlab.pro/en)  
                 **比赛名称** : [Cybercoliseum IV](https://cybercoliseum.hackerlab.pro/en)  
@@ -1394,15 +1394,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : ATLA CTF (https://ctftime.org/team/404202)  
                 **添加日历** : https://ctftime.org/event/2926.ics  
-                
-            ??? Quote "[WMCTF2025](https://wmctf.wm-team.cn/)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://wmctf.wm-team.cn/)  
-                **比赛名称** : [WMCTF2025](https://wmctf.wm-team.cn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-09-20 10:00:00 - 2025-09-21 10:00:00 UTC+8  
-                **比赛权重** : 80.00  
-                **赛事主办** : W&M (https://ctftime.org/team/54666)  
-                **添加日历** : https://ctftime.org/event/2910.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
