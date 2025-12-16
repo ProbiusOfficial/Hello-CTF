@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[SecurITy Challenge - VianuCTF 2025](https://vianuhack.club/)"  
-            [![](https://ctftime.org/media/events/1e25f32d-068f-4ad2-9b7d-a750fa82b97d.jpeg){ width="200" align=left }](https://vianuhack.club/)  
-            **比赛名称** : [SecurITy Challenge - VianuCTF 2025](https://vianuhack.club/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-12-16 15:30:00 - 2025-12-16 22:30:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : vianu_hack (https://ctftime.org/team/379530)  
-            **添加日历** : https://ctftime.org/event/3032.ics  
-            
         ??? Quote "[BSides Algiers 2025](https://ctf.bsides.shellmates.club/)"  
             [![](https://ctftime.org/media/events/image.jpg){ width="200" align=left }](https://ctf.bsides.shellmates.club/)  
             **比赛名称** : [BSides Algiers 2025](https://ctf.bsides.shellmates.club/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 96.88  
             **赛事主办** : 0ops (https://ctftime.org/team/4419)  
             **添加日历** : https://ctftime.org/event/2997.ics  
+            
+        ??? Quote "[TSG CTF 2025](https://ctf.tsg.ne.jp/)"  
+            [![](https://ctftime.org/media/events/TSG_CTF.png){ width="200" align=left }](https://ctf.tsg.ne.jp/)  
+            **比赛名称** : [TSG CTF 2025](https://ctf.tsg.ne.jp/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-12-20 15:00:00 - 2025-12-21 15:00:00 UTC+8  
+            **比赛权重** : 25.00  
+            **赛事主办** : TSG (https://ctftime.org/team/16088)  
+            **添加日历** : https://ctftime.org/event/2867.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
