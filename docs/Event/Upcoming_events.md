@@ -9,9 +9,9 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[BSides Algiers 2025](https://ctf.bsides.shellmates.club/)"  
-    [![](https://ctftime.org/media/events/image.jpg){ width="200" align=left }](https://ctf.bsides.shellmates.club/)  
-    **比赛名称** : [BSides Algiers 2025](https://ctf.bsides.shellmates.club/)  
+??? Quote "[BSides Algiers 2025](https://bsides-algiers-2k25.shellmates.club/)"  
+    [![](https://ctftime.org/media/events/image.jpg){ width="200" align=left }](https://bsides-algiers-2k25.shellmates.club/)  
+    **比赛名称** : [BSides Algiers 2025](https://bsides-algiers-2k25.shellmates.club/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-12-19 03:00:00 - 2025-12-20 15:00:00 UTC+8  
     **比赛权重** : 0.00  
