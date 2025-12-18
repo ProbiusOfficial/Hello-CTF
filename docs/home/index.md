@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[BSides Algiers 2025](https://bsides-algiers-2k25.shellmates.club/)"  
-            [![](https://ctftime.org/media/events/image.jpg){ width="200" align=left }](https://bsides-algiers-2k25.shellmates.club/)  
-            **比赛名称** : [BSides Algiers 2025](https://bsides-algiers-2k25.shellmates.club/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-12-19 03:00:00 - 2025-12-20 15:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : noreply (https://ctftime.org/team/210760)  
-            **添加日历** : https://ctftime.org/event/2962.ics  
-            
         ??? Quote "[HKCERT CTF 2025 (Qualifying Round)](https://ctf.hkcert.org/)"  
             [![](https://ctftime.org/media/events/CTF2025.png){ width="200" align=left }](https://ctf.hkcert.org/)  
             **比赛名称** : [HKCERT CTF 2025 (Qualifying Round)](https://ctf.hkcert.org/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 25.00  
             **赛事主办** : TSG (https://ctftime.org/team/16088)  
             **添加日历** : https://ctftime.org/event/2867.ics  
+            
+        ??? Quote "[MetaCTF December 2025 Flash CTF](https://mctf.io/dec2025)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://mctf.io/dec2025)  
+            **比赛名称** : [MetaCTF December 2025 Flash CTF](https://mctf.io/dec2025)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-12-21 01:00:00 - 2025-12-21 04:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
+            **添加日历** : https://ctftime.org/event/3036.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
