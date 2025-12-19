@@ -18,9 +18,9 @@ comments: true
     **赛事主办** : 0ops (https://ctftime.org/team/4419)  
     **添加日历** : https://ctftime.org/event/2997.ics  
     
-??? Quote "[TSG CTF 2025](https://ctf.tsg.ne.jp/)"  
-    [![](https://ctftime.org/media/events/TSG_CTF.png){ width="200" align=left }](https://ctf.tsg.ne.jp/)  
-    **比赛名称** : [TSG CTF 2025](https://ctf.tsg.ne.jp/)  
+??? Quote "[TSG CTF 2025](https://score.ctf.tsg.ne.jp/)"  
+    [![](https://ctftime.org/media/events/TSG_CTF.png){ width="200" align=left }](https://score.ctf.tsg.ne.jp/)  
+    **比赛名称** : [TSG CTF 2025](https://score.ctf.tsg.ne.jp/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-12-20 15:00:00 - 2025-12-21 15:00:00 UTC+8  
     **比赛权重** : 25.00  
