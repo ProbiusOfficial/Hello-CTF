@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "HKCERT CTF 2025 (Qualifying Round)",
-        "比赛时间": "2025-12-19 16:00:00 - 2025-12-21 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2998.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hkcert.org/",
-        "比赛标志": "https://ctftime.org/media/events/CTF2025.png",
-        "比赛权重": "83.21",
-        "赛事主办": "HKCERT (https://ctftime.org/team/134746)",
-        "比赛ID": "529",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "0CTF 2025",
         "比赛时间": "2025-12-20 08:00:00 - 2025-12-22 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2997.ics",
@@ -261,6 +249,18 @@
         "比赛权重": "0",
         "赛事主办": "noreply (https://ctftime.org/team/210760)",
         "比赛ID": "527",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "HKCERT CTF 2025 (Qualifying Round)",
+        "比赛时间": "2025-12-19 16:00:00 - 2025-12-21 16:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2998.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.hkcert.org/",
+        "比赛标志": "https://ctftime.org/media/events/CTF2025.png",
+        "比赛权重": "83.21",
+        "赛事主办": "HKCERT (https://ctftime.org/team/134746)",
+        "比赛ID": "529",
         "比赛状态": "nowrunning"
     },
     {

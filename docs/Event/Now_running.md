@@ -27,3 +27,12 @@ comments: true
     **赛事主办** : noreply (https://ctftime.org/team/210760)  
     **添加日历** : https://ctftime.org/event/2962.ics  
     
+??? Quote "[HKCERT CTF 2025 (Qualifying Round)](https://ctf.hkcert.org/)"  
+    [![](https://ctftime.org/media/events/CTF2025.png){ width="200" align=left }](https://ctf.hkcert.org/)  
+    **比赛名称** : [HKCERT CTF 2025 (Qualifying Round)](https://ctf.hkcert.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-12-19 16:00:00 - 2025-12-21 16:00:00 UTC+8  
+    **比赛权重** : 83.21  
+    **赛事主办** : HKCERT (https://ctftime.org/team/134746)  
+    **添加日历** : https://ctftime.org/event/2998.ics  
+    

@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[HKCERT CTF 2025 (Qualifying Round)](https://ctf.hkcert.org/)"  
-            [![](https://ctftime.org/media/events/CTF2025.png){ width="200" align=left }](https://ctf.hkcert.org/)  
-            **比赛名称** : [HKCERT CTF 2025 (Qualifying Round)](https://ctf.hkcert.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-12-19 16:00:00 - 2025-12-21 16:00:00 UTC+8  
-            **比赛权重** : 83.21  
-            **赛事主办** : HKCERT (https://ctftime.org/team/134746)  
-            **添加日历** : https://ctftime.org/event/2998.ics  
-            
         ??? Quote "[0CTF 2025](https://ctf.0ops.sjtu.cn/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://ctf.0ops.sjtu.cn/)  
             **比赛名称** : [0CTF 2025](https://ctf.0ops.sjtu.cn/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
             **添加日历** : https://ctftime.org/event/3036.ics  
+            
+        ??? Quote "[ASIS CTF Finals 2025](https://asisctf.com/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://asisctf.com/)  
+            **比赛名称** : [ASIS CTF Finals 2025](https://asisctf.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2025-12-27 22:00:00 - 2025-12-28 22:00:00 UTC+8  
+            **比赛权重** : 100.00  
+            **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+            **添加日历** : https://ctftime.org/event/2613.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
