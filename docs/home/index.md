@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[MetaCTF December 2025 Flash CTF](https://mctf.io/dec2025)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://mctf.io/dec2025)  
-            **比赛名称** : [MetaCTF December 2025 Flash CTF](https://mctf.io/dec2025)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-12-21 01:00:00 - 2025-12-21 04:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
-            **添加日历** : https://ctftime.org/event/3036.ics  
-            
         ??? Quote "[ASIS CTF Finals 2025](https://asisctf.com/)"  
             [![](https://ctftime.org){ width="200" align=left }](https://asisctf.com/)  
             **比赛名称** : [ASIS CTF Finals 2025](https://asisctf.com/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : HolyC (https://ctftime.org/team/226444)  
             **添加日历** : https://ctftime.org/event/2981.ics  
+            
+        ??? Quote "[UofTCTF 2026](https://ctf.uoftctf.org/)"  
+            [![](https://ctftime.org/media/events/uoftctf_logo_3000_black_1.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
+            **比赛名称** : [UofTCTF 2026](https://ctf.uoftctf.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-01-10 08:00:00 - 2026-01-12 08:00:00 UTC+8  
+            **比赛权重** : 33.49  
+            **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
+            **添加日历** : https://ctftime.org/event/2969.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
