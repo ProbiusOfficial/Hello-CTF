@@ -8,6 +8,15 @@ comments: true
 
 
 ## 国际赛事
+??? Quote "[BSides Algiers 2025](https://bsides-algiers-2k25.shellmates.club/)"  
+    [![](https://ctftime.org/media/events/image.jpg){ width="200" align=left }](https://bsides-algiers-2k25.shellmates.club/)  
+    **比赛名称** : [BSides Algiers 2025](https://bsides-algiers-2k25.shellmates.club/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-12-19 03:00:00 - 2025-12-20 15:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : noreply (https://ctftime.org/team/210760)  
+    **添加日历** : https://ctftime.org/event/2962.ics  
+    
 ??? Quote "[SecurITy Challenge - VianuCTF 2025](https://vianuhack.club/)"  
     [![](https://ctftime.org/media/events/1e25f32d-068f-4ad2-9b7d-a750fa82b97d.jpeg){ width="200" align=left }](https://vianuhack.club/)  
     **比赛名称** : [SecurITy Challenge - VianuCTF 2025](https://vianuhack.club/)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : ESA (https://ctftime.org/team/391420)  
     **添加日历** : https://ctftime.org/event/2872.ics  
-    
-??? Quote "[ATLA Opening Date CTF](https://ctf.atlabyte.com/)"  
-    [![](https://ctftime.org/media/events/ATLA_CTF.jpg){ width="200" align=left }](https://ctf.atlabyte.com/)  
-    **比赛名称** : [ATLA Opening Date CTF](https://ctf.atlabyte.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-09-20 13:00:00 - 2025-09-20 21:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : ATLA CTF (https://ctftime.org/team/404202)  
-    **添加日历** : https://ctftime.org/event/2926.ics  
     

@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "TSG CTF 2025",
-        "比赛时间": "2025-12-20 15:00:00 - 2025-12-21 15:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2867.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://score.ctf.tsg.ne.jp/",
-        "比赛标志": "https://ctftime.org/media/events/TSG_CTF.png",
-        "比赛权重": "25.00",
-        "赛事主办": "TSG (https://ctftime.org/team/16088)",
-        "比赛ID": "294",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "MetaCTF December 2025 Flash CTF",
         "比赛时间": "2025-12-21 01:00:00 - 2025-12-21 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3036.ics",
@@ -228,18 +216,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "BSides Algiers 2025",
-        "比赛时间": "2025-12-19 03:00:00 - 2025-12-20 15:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2962.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://bsides-algiers-2k25.shellmates.club/",
-        "比赛标志": "https://ctftime.org/media/events/image.jpg",
-        "比赛权重": "0",
-        "赛事主办": "noreply (https://ctftime.org/team/210760)",
-        "比赛ID": "527",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "HKCERT CTF 2025 (Qualifying Round)",
         "比赛时间": "2025-12-19 16:00:00 - 2025-12-21 16:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2998.ics",
@@ -262,6 +238,30 @@
         "赛事主办": "0ops (https://ctftime.org/team/4419)",
         "比赛ID": "99",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "TSG CTF 2025",
+        "比赛时间": "2025-12-20 15:00:00 - 2025-12-21 15:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2867.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://score.ctf.tsg.ne.jp/",
+        "比赛标志": "https://ctftime.org/media/events/TSG_CTF.png",
+        "比赛权重": "25.00",
+        "赛事主办": "TSG (https://ctftime.org/team/16088)",
+        "比赛ID": "294",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "BSides Algiers 2025",
+        "比赛时间": "2025-12-19 03:00:00 - 2025-12-20 15:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2962.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://bsides-algiers-2k25.shellmates.club/",
+        "比赛标志": "https://ctftime.org/media/events/image.jpg",
+        "比赛权重": "0",
+        "赛事主办": "noreply (https://ctftime.org/team/210760)",
+        "比赛ID": "527",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "SecurITy Challenge - VianuCTF 2025",
@@ -1449,18 +1449,6 @@
         "比赛权重": "25.00",
         "赛事主办": "ESA (https://ctftime.org/team/391420)",
         "比赛ID": "1375",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "ATLA Opening Date CTF",
-        "比赛时间": "2025-09-20 13:00:00 - 2025-09-20 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2926.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.atlabyte.com/",
-        "比赛标志": "https://ctftime.org/media/events/ATLA_CTF.jpg",
-        "比赛权重": "0",
-        "赛事主办": "ATLA CTF (https://ctftime.org/team/404202)",
-        "比赛ID": "1409",
         "比赛状态": "past"
     }
 ]

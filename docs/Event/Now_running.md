@@ -18,15 +18,6 @@ comments: true
     **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
     **添加日历** : https://ctftime.org/event/3022.ics  
     
-??? Quote "[BSides Algiers 2025](https://bsides-algiers-2k25.shellmates.club/)"  
-    [![](https://ctftime.org/media/events/image.jpg){ width="200" align=left }](https://bsides-algiers-2k25.shellmates.club/)  
-    **比赛名称** : [BSides Algiers 2025](https://bsides-algiers-2k25.shellmates.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-12-19 03:00:00 - 2025-12-20 15:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : noreply (https://ctftime.org/team/210760)  
-    **添加日历** : https://ctftime.org/event/2962.ics  
-    
 ??? Quote "[HKCERT CTF 2025 (Qualifying Round)](https://ctf.hkcert.org/)"  
     [![](https://ctftime.org/media/events/CTF2025.png){ width="200" align=left }](https://ctf.hkcert.org/)  
     **比赛名称** : [HKCERT CTF 2025 (Qualifying Round)](https://ctf.hkcert.org/)  
@@ -44,4 +35,13 @@ comments: true
     **比赛权重** : 96.88  
     **赛事主办** : 0ops (https://ctftime.org/team/4419)  
     **添加日历** : https://ctftime.org/event/2997.ics  
+    
+??? Quote "[TSG CTF 2025](https://score.ctf.tsg.ne.jp/)"  
+    [![](https://ctftime.org/media/events/TSG_CTF.png){ width="200" align=left }](https://score.ctf.tsg.ne.jp/)  
+    **比赛名称** : [TSG CTF 2025](https://score.ctf.tsg.ne.jp/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-12-20 15:00:00 - 2025-12-21 15:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : TSG (https://ctftime.org/team/16088)  
+    **添加日历** : https://ctftime.org/event/2867.ics  
     

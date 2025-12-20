@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[TSG CTF 2025](https://score.ctf.tsg.ne.jp/)"  
-    [![](https://ctftime.org/media/events/TSG_CTF.png){ width="200" align=left }](https://score.ctf.tsg.ne.jp/)  
-    **比赛名称** : [TSG CTF 2025](https://score.ctf.tsg.ne.jp/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-12-20 15:00:00 - 2025-12-21 15:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : TSG (https://ctftime.org/team/16088)  
-    **添加日历** : https://ctftime.org/event/2867.ics  
-    
 ??? Quote "[MetaCTF December 2025 Flash CTF](https://mctf.io/dec2025)"  
     [![](https://ctftime.org){ width="200" align=left }](https://mctf.io/dec2025)  
     **比赛名称** : [MetaCTF December 2025 Flash CTF](https://mctf.io/dec2025)  

@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[TSG CTF 2025](https://score.ctf.tsg.ne.jp/)"  
-            [![](https://ctftime.org/media/events/TSG_CTF.png){ width="200" align=left }](https://score.ctf.tsg.ne.jp/)  
-            **比赛名称** : [TSG CTF 2025](https://score.ctf.tsg.ne.jp/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-12-20 15:00:00 - 2025-12-21 15:00:00 UTC+8  
-            **比赛权重** : 25.00  
-            **赛事主办** : TSG (https://ctftime.org/team/16088)  
-            **添加日历** : https://ctftime.org/event/2867.ics  
-            
         ??? Quote "[MetaCTF December 2025 Flash CTF](https://mctf.io/dec2025)"  
             [![](https://ctftime.org){ width="200" align=left }](https://mctf.io/dec2025)  
             **比赛名称** : [MetaCTF December 2025 Flash CTF](https://mctf.io/dec2025)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 98.14  
             **赛事主办** : hxp (https://ctftime.org/team/585)  
             **添加日历** : https://ctftime.org/event/2924.ics  
+            
+        ??? Quote "[Scarlet CTF](http://ctf.rusec.club/)"  
+            [![](https://ctftime.org/media/events/8ed561b45f892df2a5b105e8537794b3_1.jpg){ width="200" align=left }](http://ctf.rusec.club/)  
+            **比赛名称** : [Scarlet CTF](http://ctf.rusec.club/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-01-09 08:00:00 - 2026-01-12 08:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : HolyC (https://ctftime.org/team/226444)  
+            **添加日历** : https://ctftime.org/event/2981.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
