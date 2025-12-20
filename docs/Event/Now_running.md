@@ -36,3 +36,12 @@ comments: true
     **赛事主办** : HKCERT (https://ctftime.org/team/134746)  
     **添加日历** : https://ctftime.org/event/2998.ics  
     
+??? Quote "[0CTF 2025](https://ctf.0ops.sjtu.cn/)"  
+    [![](https://ctftime.org){ width="200" align=left }](https://ctf.0ops.sjtu.cn/)  
+    **比赛名称** : [0CTF 2025](https://ctf.0ops.sjtu.cn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-12-20 08:00:00 - 2025-12-22 08:00:00 UTC+8  
+    **比赛权重** : 96.88  
+    **赛事主办** : 0ops (https://ctftime.org/team/4419)  
+    **添加日历** : https://ctftime.org/event/2997.ics  
+    
