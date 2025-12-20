@@ -45,12 +45,3 @@ comments: true
     **赛事主办** : TSG (https://ctftime.org/team/16088)  
     **添加日历** : https://ctftime.org/event/2867.ics  
     
-??? Quote "[MetaCTF December 2025 Flash CTF](https://mctf.io/dec2025)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://mctf.io/dec2025)  
-    **比赛名称** : [MetaCTF December 2025 Flash CTF](https://mctf.io/dec2025)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-12-21 01:00:00 - 2025-12-21 04:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
-    **添加日历** : https://ctftime.org/event/3036.ics  
-    

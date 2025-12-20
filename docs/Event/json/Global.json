@@ -249,7 +249,7 @@
         "比赛权重": "0",
         "赛事主办": "MetaCTF (https://ctftime.org/team/72254)",
         "比赛ID": "500",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "BSides Algiers 2025",
@@ -1437,18 +1437,6 @@
         "比赛权重": "25.00",
         "赛事主办": "Crimson Defense (https://ctftime.org/team/65283)",
         "比赛ID": "1363",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Ctrl+Space CTF Quals",
-        "比赛时间": "2025-09-20 17:00:00 - 2025-09-21 16:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2872.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctrl-space.gg/",
-        "比赛标志": "https://ctftime.org/media/events/ctrlspace_1.png",
-        "比赛权重": "25.00",
-        "赛事主办": "ESA (https://ctftime.org/team/391420)",
-        "比赛ID": "1375",
         "比赛状态": "past"
     }
 ]
