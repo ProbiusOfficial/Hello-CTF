@@ -204,18 +204,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "HKCERT CTF 2025 (Qualifying Round)",
-        "比赛时间": "2025-12-19 16:00:00 - 2025-12-21 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2998.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hkcert.org/",
-        "比赛标志": "https://ctftime.org/media/events/CTF2025.png",
-        "比赛权重": "83.21",
-        "赛事主办": "HKCERT (https://ctftime.org/team/134746)",
-        "比赛ID": "529",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "0CTF 2025",
         "比赛时间": "2025-12-20 08:00:00 - 2025-12-22 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2997.ics",
@@ -249,6 +237,18 @@
         "比赛权重": "25.00",
         "赛事主办": "TSG (https://ctftime.org/team/16088)",
         "比赛ID": "294",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "HKCERT CTF 2025 (Qualifying Round)",
+        "比赛时间": "2025-12-19 16:00:00 - 2025-12-21 16:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2998.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.hkcert.org/",
+        "比赛标志": "https://ctftime.org/media/events/CTF2025.png",
+        "比赛权重": "83.21",
+        "赛事主办": "HKCERT (https://ctftime.org/team/134746)",
+        "比赛ID": "529",
         "比赛状态": "past"
     },
     {
@@ -1413,18 +1413,6 @@
         "比赛权重": "0",
         "赛事主办": "Hackorn (https://ctftime.org/team/385272)",
         "比赛ID": "1410",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Holmes CTF 2025",
-        "比赛时间": "2025-09-22 21:00:00 - 2025-09-27 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2911.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hackthebox.com/event/details/holmes-ctf-2025-2536",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "24.00",
-        "赛事主办": "Hack The Box (https://ctftime.org/team/136056)",
-        "比赛ID": "554",
         "比赛状态": "past"
     }
 ]
