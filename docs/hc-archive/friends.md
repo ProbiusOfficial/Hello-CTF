@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [浅析帆软前台表达式注入&WAF-Bypass](https://y4tacker.github.io/2025/12/21/year/2025/12/%E6%B5%85%E6%9E%90%E5%B8%86%E8%BD%AF%E5%89%8D%E5%8F%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B3%A8%E5%85%A5/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-12-21
+
+    6bab72a3d7ad3d7489797be3d8d2163ee3eebe28529de9bbe563e6013c4db180852f505474f45c2e073e16c2c01b9650eb4b738151ea92c9a01eef389c6c1f4520eada05f390ec33115b60abaf063eba31dc783c0e6ce74f33717e6ee5f85f5cb95639...
     ### [ARM汇编基础学习（1）](https://xia0ji233.github.io/2025/12/14/ARM1/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2025-12-14
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2025-04-16
 
     0a2416636d8596a6d89c133c7b60f6971ce99630884cdf6afd1d97649cdbe39606893f02e42a381ce0a49fc7535b4f6324e067de6d706384b3635b1ce021ea9edb6c0e081168a4c4fec62a99b6b4bc15b79e3a3b96705b7933478cec4f488c764ce87c...
-    ### [腾讯游戏安全竞赛2025决赛题解](https://xia0ji233.github.io/2025/04/14/tencent-race-2025-final/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-04-14
-
-    记录一下今年 2025 决赛过程题目描述（1）在intel CPU/64位Windows10系统上运行sys，成功加载驱动（0.5分）（2）能在双机环境运行驱动并调试（1分）（3）优化驱动中的耗时算法，并给出demo能快速计算得出正确的key（1分）（4）分析并给出flag的计算执行流程（1.5分），能准确说明其串联逻辑（0.5分）（5）正确解出flag（1分）（6）该题目使用了一种外挂常用的隐藏...
 
 </div>
