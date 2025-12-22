@@ -204,18 +204,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "0CTF 2025",
-        "比赛时间": "2025-12-20 08:00:00 - 2025-12-22 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2997.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.0ops.sjtu.cn/",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "96.88",
-        "赛事主办": "0ops (https://ctftime.org/team/4419)",
-        "比赛ID": "99",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "MetaCTF December 2025 Flash CTF",
         "比赛时间": "2025-12-21 01:00:00 - 2025-12-21 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3036.ics",
@@ -237,6 +225,18 @@
         "比赛权重": "25.00",
         "赛事主办": "TSG (https://ctftime.org/team/16088)",
         "比赛ID": "294",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "0CTF 2025",
+        "比赛时间": "2025-12-20 08:00:00 - 2025-12-22 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2997.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.0ops.sjtu.cn/",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "96.88",
+        "赛事主办": "0ops (https://ctftime.org/team/4419)",
+        "比赛ID": "99",
         "比赛状态": "past"
     },
     {
@@ -1401,18 +1401,6 @@
         "比赛权重": "25.00",
         "赛事主办": "Srdnlen (https://ctftime.org/team/83421)",
         "比赛ID": "840",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "HackornCTF 2025 Quals",
-        "比赛时间": "2025-09-25 08:00:00 - 2025-09-26 07:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2919.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.secpen.org/",
-        "比赛标志": "https://ctftime.org/media/events/CYBER_EXCILL.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Hackorn (https://ctftime.org/team/385272)",
-        "比赛ID": "1410",
         "比赛状态": "past"
     }
 ]
