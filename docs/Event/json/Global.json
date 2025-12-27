@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "hxp 39C3 CTF",
-        "比赛时间": "2025-12-28 04:00:00 - 2025-12-30 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2924.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2025.ctf.link/",
-        "比赛标志": "https://ctftime.org/media/events/hxp-39c3.png",
-        "比赛权重": "98.14",
-        "赛事主办": "hxp (https://ctftime.org/team/585)",
-        "比赛ID": "120",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Scarlet CTF",
         "比赛时间": "2026-01-09 08:00:00 - 2026-01-12 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2981.ics",
@@ -201,6 +189,18 @@
         "比赛权重": "100.00",
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "59",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "hxp 39C3 CTF",
+        "比赛时间": "2025-12-28 04:00:00 - 2025-12-30 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2924.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2025.ctf.link/",
+        "比赛标志": "https://ctftime.org/media/events/hxp-39c3.png",
+        "比赛权重": "98.14",
+        "赛事主办": "hxp (https://ctftime.org/team/585)",
+        "比赛ID": "120",
         "比赛状态": "nowrunning"
     },
     {

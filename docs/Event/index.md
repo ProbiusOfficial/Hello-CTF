@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[hxp 39C3 CTF](https://2025.ctf.link/)"  
-                [![](https://ctftime.org/media/events/hxp-39c3.png){ width="200" align=left }](https://2025.ctf.link/)  
-                **比赛名称** : [hxp 39C3 CTF](https://2025.ctf.link/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-12-28 04:00:00 - 2025-12-30 04:00:00 UTC+8  
-                **比赛权重** : 98.14  
-                **赛事主办** : hxp (https://ctftime.org/team/585)  
-                **添加日历** : https://ctftime.org/event/2924.ics  
-                
             ??? Quote "[Scarlet CTF](http://ctf.rusec.club/)"  
                 [![](https://ctftime.org/media/events/8ed561b45f892df2a5b105e8537794b3_1.jpg){ width="200" align=left }](http://ctf.rusec.club/)  
                 **比赛名称** : [Scarlet CTF](http://ctf.rusec.club/)  
@@ -445,6 +436,15 @@ hide:
                 **比赛权重** : 100.00  
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/2613.ics  
+                
+            ??? Quote "[hxp 39C3 CTF](https://2025.ctf.link/)"  
+                [![](https://ctftime.org/media/events/hxp-39c3.png){ width="200" align=left }](https://2025.ctf.link/)  
+                **比赛名称** : [hxp 39C3 CTF](https://2025.ctf.link/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-12-28 04:00:00 - 2025-12-30 04:00:00 UTC+8  
+                **比赛权重** : 98.14  
+                **赛事主办** : hxp (https://ctftime.org/team/585)  
+                **添加日历** : https://ctftime.org/event/2924.ics  
                 
     === "*已经结束*"
         === "国内赛事"
