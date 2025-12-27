@@ -49,7 +49,7 @@ comments: true
     **比赛名称** : [BSides Algiers 2025](https://bsides-algiers-2k25.shellmates.club/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-12-19 03:00:00 - 2025-12-20 15:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 22.90  
     **赛事主办** : noreply (https://ctftime.org/team/210760)  
     **添加日历** : https://ctftime.org/event/2962.ics  
     
