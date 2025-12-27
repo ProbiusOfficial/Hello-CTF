@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[ASIS CTF Finals 2025](https://asisctf.com/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://asisctf.com/)  
-    **比赛名称** : [ASIS CTF Finals 2025](https://asisctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-12-27 22:00:00 - 2025-12-28 22:00:00 UTC+8  
-    **比赛权重** : 100.00  
-    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-    **添加日历** : https://ctftime.org/event/2613.ics  
-    
 ??? Quote "[hxp 39C3 CTF](https://2025.ctf.link/)"  
     [![](https://ctftime.org/media/events/hxp-39c3.png){ width="200" align=left }](https://2025.ctf.link/)  
     **比赛名称** : [hxp 39C3 CTF](https://2025.ctf.link/)  

@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[ASIS CTF Finals 2025](https://asisctf.com/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://asisctf.com/)  
-            **比赛名称** : [ASIS CTF Finals 2025](https://asisctf.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-12-27 22:00:00 - 2025-12-28 22:00:00 UTC+8  
-            **比赛权重** : 100.00  
-            **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-            **添加日历** : https://ctftime.org/event/2613.ics  
-            
         ??? Quote "[hxp 39C3 CTF](https://2025.ctf.link/)"  
             [![](https://ctftime.org/media/events/hxp-39c3.png){ width="200" align=left }](https://2025.ctf.link/)  
             **比赛名称** : [hxp 39C3 CTF](https://2025.ctf.link/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 33.49  
             **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
             **添加日历** : https://ctftime.org/event/2969.ics  
+            
+        ??? Quote "[2026 Embedded Capture the Flag](https://ectf.mitre.org/)"  
+            [![](https://ctftime.org){ width="200" align=left }](https://ectf.mitre.org/)  
+            **比赛名称** : [2026 Embedded Capture the Flag](https://ectf.mitre.org/)  
+            **比赛形式** : Attack-Defense  
+            **比赛时间** : 2026-01-14 20:00:00 - 2026-04-15 20:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
+            **添加日历** : https://ctftime.org/event/2916.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
