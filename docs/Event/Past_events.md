@@ -8,6 +8,15 @@ comments: true
 
 
 ## 国际赛事
+??? Quote "[hxp 39C3 CTF](https://2025.ctf.link/)"  
+    [![](https://ctftime.org/media/events/hxp-39c3.png){ width="200" align=left }](https://2025.ctf.link/)  
+    **比赛名称** : [hxp 39C3 CTF](https://2025.ctf.link/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-12-28 04:00:00 - 2025-12-30 04:00:00 UTC+8  
+    **比赛权重** : 98.14  
+    **赛事主办** : hxp (https://ctftime.org/team/585)  
+    **添加日历** : https://ctftime.org/event/2924.ics  
+    
 ??? Quote "[ASIS CTF Finals 2025](https://asisctf.com/)"  
     [![](https://ctftime.org){ width="200" align=left }](https://asisctf.com/)  
     **比赛名称** : [ASIS CTF Finals 2025](https://asisctf.com/)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 92.50  
     **赛事主办** : FAUST (https://ctftime.org/team/550)  
     **添加日历** : https://ctftime.org/event/2780.ics  
-    
-??? Quote "[Iran Tech Olympics CTF 2025](https://ctf.olympics.tech/)"  
-    [![](https://ctftime.org/media/events/tech_olympic_logo.jpg){ width="200" align=left }](https://ctf.olympics.tech/)  
-    **比赛名称** : [Iran Tech Olympics CTF 2025](https://ctf.olympics.tech/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-09-26 21:00:00 - 2025-09-27 21:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-    **添加日历** : https://ctftime.org/event/2775.ics  
     
