@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [2025年终总结](https://xia0ji233.github.io/2025/12/31/Summary2025/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-12-30
+
+    2025 年终总结2025总结202501-01由于实习 base 比较好，可以跟队内师傅（尤其是Q师傅）频繁进行线下交流，适时扫清自身的迷惘，摆正自身位置。01-27第一次实习倾注了大量精力，谁能想到一个实习生居然坚持到了最后一刻才回家过年，开工后仅一天就回到工位上。03-04第一段实习告一段落，手上拿着那张离职证明，看着刚交的一个月房租，心理不免有些失落。社会的这一课，终是要自身摸爬滚打才能领...
     ### [浅析帆软前台表达式注入&WAF-Bypass](https://y4tacker.github.io/2025/12/21/year/2025/12/%E6%B5%85%E6%9E%90%E5%B8%86%E8%BD%AF%E5%89%8D%E5%8F%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B3%A8%E5%85%A5/)  
     >by [Y4tacker](https://y4tacker.github.io), 2025-12-21
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2025-06-11
 
     e1bd3e68fe0e95aad543147235f13aa8c07db101f08238b29c49348e526ca2c395ff16b5184fe4ee67b8dd1840f69936917a685390975ecb78405622c312487d5e6b45d97870e169a38f37bd7a2e95cc5b864202dba1787e366b00f3973f1aa3686ad8...
-    ### [某系统前台RCE浅析](https://y4tacker.github.io/2025/04/16/year/2025/04/%E6%9F%90%E7%B3%BB%E7%BB%9F%E5%89%8D%E5%8F%B0RCE%E6%B5%85%E6%9E%90/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2025-04-16
-
-    0a2416636d8596a6d89c133c7b60f6971ce99630884cdf6afd1d97649cdbe39606893f02e42a381ce0a49fc7535b4f6324e067de6d706384b3635b1ce021ea9edb6c0e081168a4c4fec62a99b6b4bc15b79e3a3b96705b7933478cec4f488c764ce87c...
 
 </div>
