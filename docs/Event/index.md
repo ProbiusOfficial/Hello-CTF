@@ -564,7 +564,7 @@ hide:
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2025-12-06 09:00:00 - 2025-12-08 09:00:00 UTC+8  
                 **比赛权重** : 29.00  
-                **赛事主办** : Wanna.W1n (https://ctftime.org/team/138431)  
+                **赛事主办** : UIT-Wanna.W1n (https://ctftime.org/team/138431)  
                 **添加日历** : https://ctftime.org/event/2898.ics  
                 
             ??? Quote "[VuwCTF 2025](https://2025.vuwctf.com/)"  
