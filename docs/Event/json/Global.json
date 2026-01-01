@@ -168,18 +168,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Advent of CTF 2025",
-        "比赛时间": "2025-12-02 09:00:00 - 2026-01-01 12:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/3022.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cyberstudents.net/advent",
-        "比赛标志": "https://ctftime.org",
-        "比赛权重": "0",
-        "赛事主办": "CyberStudentsCTF (https://ctftime.org/team/365239)",
-        "比赛ID": "1218",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "hxp 39C3 CTF",
         "比赛时间": "2025-12-28 04:00:00 - 2025-12-30 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2924.ics",
@@ -417,6 +405,18 @@
         "比赛权重": "22.50",
         "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
         "比赛ID": "826",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Advent of CTF 2025",
+        "比赛时间": "2025-12-02 09:00:00 - 2026-01-01 12:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/3022.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cyberstudents.net/advent",
+        "比赛标志": "https://ctftime.org",
+        "比赛权重": "0",
+        "赛事主办": "CyberStudentsCTF (https://ctftime.org/team/365239)",
+        "比赛ID": "1218",
         "比赛状态": "past"
     },
     {
@@ -1365,18 +1365,6 @@
         "比赛权重": "51.65",
         "赛事主办": "Knightsec (https://ctftime.org/team/2500)",
         "比赛ID": "137",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "FAUST CTF 2025",
-        "比赛时间": "2025-09-27 20:00:00 - 2025-09-28 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2780.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://2025.faustctf.net/",
-        "比赛标志": "https://ctftime.org/media/events/faustctf_3.png",
-        "比赛权重": "92.50",
-        "赛事主办": "FAUST (https://ctftime.org/team/550)",
-        "比赛ID": "117",
         "比赛状态": "past"
     }
 ]

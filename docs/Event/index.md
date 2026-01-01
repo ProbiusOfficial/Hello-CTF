@@ -419,15 +419,7 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Advent of CTF 2025](https://cyberstudents.net/advent)"  
-                [![](https://ctftime.org){ width="200" align=left }](https://cyberstudents.net/advent)  
-                **比赛名称** : [Advent of CTF 2025](https://cyberstudents.net/advent)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-12-02 09:00:00 - 2026-01-01 12:59:59 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
-                **添加日历** : https://ctftime.org/event/3022.ics  
-                
+    
     === "*已经结束*"
         === "国内赛事"
     
@@ -611,6 +603,15 @@ hide:
                 **比赛权重** : 22.50  
                 **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
                 **添加日历** : https://ctftime.org/event/2877.ics  
+                
+            ??? Quote "[Advent of CTF 2025](https://cyberstudents.net/advent)"  
+                [![](https://ctftime.org){ width="200" align=left }](https://cyberstudents.net/advent)  
+                **比赛名称** : [Advent of CTF 2025](https://cyberstudents.net/advent)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2025-12-02 09:00:00 - 2026-01-01 12:59:59 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
+                **添加日历** : https://ctftime.org/event/3022.ics  
                 
             ??? Quote "[m0leCon 2026 Beginner CTF](https://beginner.m0lecon.it/)"  
                 [![](https://ctftime.org){ width="200" align=left }](https://beginner.m0lecon.it/)  
@@ -1322,15 +1323,6 @@ hide:
                 **比赛权重** : 51.65  
                 **赛事主办** : Knightsec (https://ctftime.org/team/2500)  
                 **添加日历** : https://ctftime.org/event/2863.ics  
-                
-            ??? Quote "[FAUST CTF 2025](https://2025.faustctf.net/)"  
-                [![](https://ctftime.org/media/events/faustctf_3.png){ width="200" align=left }](https://2025.faustctf.net/)  
-                **比赛名称** : [FAUST CTF 2025](https://2025.faustctf.net/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2025-09-27 20:00:00 - 2025-09-28 05:00:00 UTC+8  
-                **比赛权重** : 92.50  
-                **赛事主办** : FAUST (https://ctftime.org/team/550)  
-                **添加日历** : https://ctftime.org/event/2780.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
