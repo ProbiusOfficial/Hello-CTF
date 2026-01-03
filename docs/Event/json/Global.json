@@ -24,6 +24,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "New Year CTF 2026",
+        "比赛时间": "2026-01-10 17:00:00 - 2026-01-12 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3021.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf-spcs.mf.grsu.by/",
+        "比赛标志": "https://ctftime.org/media/events/NY2026.jpg",
+        "比赛权重": "23.42",
+        "赛事主办": "Beavers0 (https://ctftime.org/team/269281)",
+        "比赛ID": "1041",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "2026 Embedded Capture the Flag",
         "比赛时间": "2026-01-14 20:00:00 - 2026-04-15 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2916.ics",
