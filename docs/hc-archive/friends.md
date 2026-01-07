@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [如何用大模型十分钟完成ComfyUI未授权至命令执行利用分析(CVE-2025-67303)](https://y4tacker.github.io/2026/01/06/year/2026/%E6%88%91%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8D%81%E5%88%86%E9%92%9F%E5%AE%8C%E6%88%90ComfyUI%E6%9C%AA%E6%8E%88%E6%9D%83%E8%87%B3%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-CVE-2025-67303/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2026-01-06
+
+    e363dd29daea40b734c478649d7a0b044daaaa5675b9f0c6aeff787f1f1b4de9008c9a9a31f1b7eb5643dbee05c0959657426e89ad211a3129fdd0e611a00b42fcb0b62da123b7cdb55ca59f3573bcd29836de591bd8559e802f2e28c491082c19983d...
     ### [2025年终总结](https://xia0ji233.github.io/2025/12/31/Summary2025/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2025-12-30
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2025-06-17
 
     1762bba105fb4c18fef9087d338fa0b386b5358d10250f8e320625eb752af13c9ab59c9d28e6b6cb26b41da8222a972a0fa17762539b600808df7928c3ec8de1798e61e6143d2b6e5a33a8bdf0c82a34fa42ca5b7d6a601a92e4946e55935648a81345...
-    ### [浅析契约锁电子签章系统远程代码执行](https://y4tacker.github.io/2025/06/11/year/2025/06/%E6%B5%85%E6%9E%90%E5%A5%91%E7%BA%A6%E9%94%81%E7%94%B5%E5%AD%90%E7%AD%BE%E7%AB%A0%E7%B3%BB%E7%BB%9F%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2025-06-11
-
-    e1bd3e68fe0e95aad543147235f13aa8c07db101f08238b29c49348e526ca2c395ff16b5184fe4ee67b8dd1840f69936917a685390975ecb78405622c312487d5e6b45d97870e169a38f37bd7a2e95cc5b864202dba1787e366b00f3973f1aa3686ad8...
 
 </div>
