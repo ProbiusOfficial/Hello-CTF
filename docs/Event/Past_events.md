@@ -18,7 +18,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2924.ics  
     
 ??? Quote "[ASIS CTF Finals 2025](https://asisctf.com/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://asisctf.com/)  
+    [![](){ width="200" align=left }](https://asisctf.com/)  
     **比赛名称** : [ASIS CTF Finals 2025](https://asisctf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-12-27 22:00:00 - 2025-12-28 22:00:00 UTC+8  
@@ -27,7 +27,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2613.ics  
     
 ??? Quote "[MetaCTF December 2025 Flash CTF](https://mctf.io/dec2025)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://mctf.io/dec2025)  
+    [![](){ width="200" align=left }](https://mctf.io/dec2025)  
     **比赛名称** : [MetaCTF December 2025 Flash CTF](https://mctf.io/dec2025)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-12-21 01:00:00 - 2025-12-21 04:00:00 UTC+8  
@@ -45,7 +45,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2867.ics  
     
 ??? Quote "[0CTF 2025](https://ctf.0ops.sjtu.cn/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.0ops.sjtu.cn/)  
+    [![](){ width="200" align=left }](https://ctf.0ops.sjtu.cn/)  
     **比赛名称** : [0CTF 2025](https://ctf.0ops.sjtu.cn/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-12-20 08:00:00 - 2025-12-22 08:00:00 UTC+8  
@@ -126,7 +126,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2915.ics  
     
 ??? Quote "[CyKor CTF 2025](https://ctf.cykor.kr/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.cykor.kr/)  
+    [![](){ width="200" align=left }](https://ctf.cykor.kr/)  
     **比赛名称** : [CyKor CTF 2025](https://ctf.cykor.kr/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-12-06 09:00:00 - 2025-12-07 09:00:00 UTC+8  
@@ -189,7 +189,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2877.ics  
     
 ??? Quote "[Advent of CTF 2025](https://cyberstudents.net/advent)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://cyberstudents.net/advent)  
+    [![](){ width="200" align=left }](https://cyberstudents.net/advent)  
     **比赛名称** : [Advent of CTF 2025](https://cyberstudents.net/advent)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-12-02 09:00:00 - 2026-01-01 12:59:59 UTC+8  
@@ -198,7 +198,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/3022.ics  
     
 ??? Quote "[m0leCon 2026 Beginner CTF](https://beginner.m0lecon.it/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://beginner.m0lecon.it/)  
+    [![](){ width="200" align=left }](https://beginner.m0lecon.it/)  
     **比赛名称** : [m0leCon 2026 Beginner CTF](https://beginner.m0lecon.it/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-11-29 21:00:00 - 2025-11-30 02:00:00 UTC+8  
@@ -225,7 +225,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2764.ics  
     
 ??? Quote "[HeroCTF v7](https://ctf.heroctf.fr/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.heroctf.fr/)  
+    [![](){ width="200" align=left }](https://ctf.heroctf.fr/)  
     **比赛名称** : [HeroCTF v7](https://ctf.heroctf.fr/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-11-29 04:00:00 - 2025-12-01 06:00:00 UTC+8  
@@ -306,7 +306,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2850.ics  
     
 ??? Quote "[MetaCTF November 2025 Flash CTF](https://mctf.io/nov2025)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://mctf.io/nov2025)  
+    [![](){ width="200" align=left }](https://mctf.io/nov2025)  
     **比赛名称** : [MetaCTF November 2025 Flash CTF](https://mctf.io/nov2025)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-11-21 06:00:00 - 2025-11-21 08:00:00 UTC+8  
@@ -378,7 +378,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2606.ics  
     
 ??? Quote "[TU Delft CTF 2025](https://ctf.ewi.tudelft.nl/?source=ctftime)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.ewi.tudelft.nl/?source=ctftime)  
+    [![](){ width="200" align=left }](https://ctf.ewi.tudelft.nl/?source=ctftime)  
     **比赛名称** : [TU Delft CTF 2025](https://ctf.ewi.tudelft.nl/?source=ctftime)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-11-15 16:00:00 - 2025-11-16 00:00:00 UTC+8  
@@ -414,7 +414,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/3006.ics  
     
 ??? Quote "[AmateursCTF 2025](https://ctf.amateurs.team/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.amateurs.team/)  
+    [![](){ width="200" align=left }](https://ctf.amateurs.team/)  
     **比赛名称** : [AmateursCTF 2025](https://ctf.amateurs.team/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-11-14 08:00:00 - 2025-11-18 08:00:00 UTC+8  
@@ -432,7 +432,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2956.ics  
     
 ??? Quote "[RootCipher](https://forms.thundercipher.tech/form/949b7b32-ff49-400e-9194-a91a5deeb910)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://forms.thundercipher.tech/form/949b7b32-ff49-400e-9194-a91a5deeb910)  
+    [![](){ width="200" align=left }](https://forms.thundercipher.tech/form/949b7b32-ff49-400e-9194-a91a5deeb910)  
     **比赛名称** : [RootCipher](https://forms.thundercipher.tech/form/949b7b32-ff49-400e-9194-a91a5deeb910)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-11-09 21:00:00 - 2025-11-10 02:00:00 UTC+8  
@@ -531,7 +531,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2989.ics  
     
 ??? Quote "[Russian CTF Cup 2025 Qualifier](https://ctfcup.ru/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctfcup.ru/)  
+    [![](){ width="200" align=left }](https://ctfcup.ru/)  
     **比赛名称** : [Russian CTF Cup 2025 Qualifier](https://ctfcup.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-11-02 17:00:00 - 2025-11-03 17:00:00 UTC+8  
@@ -549,7 +549,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2795.ics  
     
 ??? Quote "[Cryovault Quals](https://www.isfcr.pes.edu/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://www.isfcr.pes.edu/)  
+    [![](){ width="200" align=left }](https://www.isfcr.pes.edu/)  
     **比赛名称** : [Cryovault Quals](https://www.isfcr.pes.edu/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-11-01 14:30:00 - 2025-11-02 14:30:00 UTC+8  
@@ -747,7 +747,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2842.ics  
     
 ??? Quote "[HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
+    [![](){ width="200" align=left }](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
     **比赛名称** : [HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-10-17 09:00:00 - 2025-10-17 18:00:00 UTC+8  
@@ -891,7 +891,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2925.ics  
     
 ??? Quote "[DFIR Labs Digital Forensics Challenge by The DFIR Report](https://dfirlabs.thedfirreport.com/dfirchallenge)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://dfirlabs.thedfirreport.com/dfirchallenge)  
+    [![](){ width="200" align=left }](https://dfirlabs.thedfirreport.com/dfirchallenge)  
     **比赛名称** : [DFIR Labs Digital Forensics Challenge by The DFIR Report](https://dfirlabs.thedfirreport.com/dfirchallenge)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-09-28 00:30:00 - 2025-09-28 04:30:00 UTC+8  

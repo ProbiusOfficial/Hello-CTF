@@ -50,7 +50,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/3021.ics  
     
 ??? Quote "[2026 Embedded Capture the Flag](https://ectf.mitre.org/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ectf.mitre.org/)  
+    [![](){ width="200" align=left }](https://ectf.mitre.org/)  
     **比赛名称** : [2026 Embedded Capture the Flag](https://ectf.mitre.org/)  
     **比赛形式** : Attack-Defense  
     **比赛时间** : 2026-01-14 20:00:00 - 2026-04-15 20:00:00 UTC+8  
@@ -86,7 +86,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/2767.ics  
     
 ??? Quote "[CSCG 2026](https://play.cscg.live/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://play.cscg.live/)  
+    [![](){ width="200" align=left }](https://play.cscg.live/)  
     **比赛名称** : [CSCG 2026](https://play.cscg.live/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-03-02 01:00:00 - 2026-05-02 00:00:00 UTC+8  
@@ -149,7 +149,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/3018.ics  
     
 ??? Quote "[SSMCTF 2026 Qualifiers](https://ssmct.org/ctf)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ssmct.org/ctf)  
+    [![](){ width="200" align=left }](https://ssmct.org/ctf)  
     **比赛名称** : [SSMCTF 2026 Qualifiers](https://ssmct.org/ctf)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-06-07 18:00:00 - 2026-06-08 18:00:00 UTC+8  
