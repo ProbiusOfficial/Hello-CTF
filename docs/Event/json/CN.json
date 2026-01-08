@@ -3,6 +3,26 @@
     "data": {
         "result": [
             {
+                "name": "HGAME 2026",
+                "info_confirmed": 1,
+                "mid_join": 0,
+                "link": "https://hgame.vidar.club/",
+                "status": "即将开始",
+                "is_reg": 1,
+                "limit": "1",
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2026年01月26日 00:00",
+                "reg_time_end": "2026年02月15日 19:59",
+                "comp_time_start": "2026年02月02日 10:00",
+                "comp_time_end": "2026年02月15日 20:00",
+                "organizer": "未提供",
+                "contac": {
+                    "QQ群": "576834793"
+                },
+                "tag": "",
+                "readmore": "HGAME 2026 是一场线上Jeopardy解题赛，由未提供主办方组织。报名从2026年01月26日00:00开始，到2026年02月15日20:00结束。比赛从2026年02月02日10:00开始，至2026年02月15日20:00结束。更多信息，请加入QQ群576834793。"
+            },
+            {
                 "name": "furryCTF 2025",
                 "info_confirmed": 1,
                 "mid_join": 0,
