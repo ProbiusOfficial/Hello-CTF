@@ -52,6 +52,13 @@ hide:
     ---
     <!-- 主页赛事展示_开始 -->
     === "国内比赛"
+        ??? Quote "[UniCTF](https://unictf.play.ctfplus.cn/)"  
+            **比赛名称** : [UniCTF](https://unictf.play.ctfplus.cn/)  
+            **比赛类型** : 线上Jeopardy解题赛  
+            **报名时间** : 2026年01月09日 10:09 - 2026年01月25日 09:59  
+            **比赛时间** : 2026年01月25日 10:00 - 2026年01月31日 10:00  
+            **其他说明** : 4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。  
+            
         ??? Quote "[HGAME 2026](https://hgame.vidar.club/)"  
             **比赛名称** : [HGAME 2026](https://hgame.vidar.club/)  
             **比赛类型** : 线上Jeopardy解题赛  
