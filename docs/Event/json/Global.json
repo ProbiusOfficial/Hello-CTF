@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Scarlet CTF",
-        "比赛时间": "2026-01-09 08:00:00 - 2026-01-12 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2981.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.rusec.club/",
-        "比赛标志": "https://ctftime.org/media/events/8ed561b45f892df2a5b105e8537794b3_1.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "HolyC (https://ctftime.org/team/226444)",
-        "比赛ID": "1143",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "UofTCTF 2026",
         "比赛时间": "2026-01-10 08:00:00 - 2026-01-12 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2969.ics",
@@ -178,6 +166,18 @@
         "赛事主办": "Singapore Students Merger (https://ctftime.org/team/299075)",
         "比赛ID": "1329",
         "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Scarlet CTF",
+        "比赛时间": "2026-01-09 08:00:00 - 2026-01-12 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2981.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf.rusec.club/",
+        "比赛标志": "https://ctftime.org/media/events/8ed561b45f892df2a5b105e8537794b3_1.jpg",
+        "比赛权重": "0",
+        "赛事主办": "HolyC (https://ctftime.org/team/226444)",
+        "比赛ID": "1143",
+        "比赛状态": "nowrunning"
     },
     {
         "比赛名称": "hxp 39C3 CTF",
