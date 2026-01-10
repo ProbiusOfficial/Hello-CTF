@@ -119,9 +119,9 @@ comments: true
     **赛事主办** : Blue Hens (https://ctftime.org/team/64660)  
     **添加日历** : https://ctftime.org/event/2943.ics  
     
-??? Quote "[PHONIX VIPER NOVA CTF#2](https://docs.google.com/forms/d/e/1FAIpQLSdKO7QZKdwNRuakt7WoYnb6Fzq1Jxrx6fI8r8gJtdXDFkJRRA/viewform)"  
-    [![](https://ctftime.org/media/events/0b084a17fe379613dd5be4f540c64249.png){ width="200" align=left }](https://docs.google.com/forms/d/e/1FAIpQLSdKO7QZKdwNRuakt7WoYnb6Fzq1Jxrx6fI8r8gJtdXDFkJRRA/viewform)  
-    **比赛名称** : [PHONIX VIPER NOVA CTF#2](https://docs.google.com/forms/d/e/1FAIpQLSdKO7QZKdwNRuakt7WoYnb6Fzq1Jxrx6fI8r8gJtdXDFkJRRA/viewform)  
+??? Quote "[PHONIX VIPER NOVA CTF#2](http://pwnctf.ro/)"  
+    [![](https://ctftime.org/media/events/0b084a17fe379613dd5be4f540c64249.png){ width="200" align=left }](http://pwnctf.ro/)  
+    **比赛名称** : [PHONIX VIPER NOVA CTF#2](http://pwnctf.ro/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-05-08 18:00:00 - 2026-05-11 01:00:00 UTC+8  
     **比赛权重** : 0.00  
