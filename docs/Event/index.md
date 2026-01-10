@@ -322,15 +322,6 @@ hide:
                 **其他说明** : furryCTF 2025是一款直至目前花销自理的，具有一定娱乐性质的，安徽师范大学计算机爱好者协会协办的网络与信息安全新神赛，初心是不为盈利，Hack for fun！比赛允许使用AI，我们鼓励选手能在比赛中合理的将AI当做辅助解题的工具。同时我们不限制搜索引擎的使用，除了因为确实也不好限制以外，我们鼓励选手能从比赛过程中通过思考与探索学到更多知识。比赛链接：furryCTF 2025正赛（比赛时间为2026年1月30日中午12点~2月2日中午12点，共72小时）： https://furryctf.com/games/2。官方交流群QQ:746480442。  
                 
         === "国外赛事"
-            ??? Quote "[New Year CTF 2026](http://ctf-spcs.mf.grsu.by/)"  
-                [![](https://ctftime.org/media/events/NY2026.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
-                **比赛名称** : [New Year CTF 2026](http://ctf-spcs.mf.grsu.by/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-01-10 17:00:00 - 2026-01-12 17:00:00 UTC+8  
-                **比赛权重** : 23.42  
-                **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
-                **添加日历** : https://ctftime.org/event/3021.ics  
-                
             ??? Quote "[2026 Embedded Capture the Flag](https://ectf.mitre.org/)"  
                 [![](){ width="200" align=left }](https://ectf.mitre.org/)  
                 **比赛名称** : [2026 Embedded Capture the Flag](https://ectf.mitre.org/)  
@@ -460,6 +451,15 @@ hide:
                 **比赛权重** : 33.49  
                 **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
                 **添加日历** : https://ctftime.org/event/2969.ics  
+                
+            ??? Quote "[New Year CTF 2026](http://ctf-spcs.mf.grsu.by/)"  
+                [![](https://ctftime.org/media/events/NY2026.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
+                **比赛名称** : [New Year CTF 2026](http://ctf-spcs.mf.grsu.by/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-01-10 17:00:00 - 2026-01-12 17:00:00 UTC+8  
+                **比赛权重** : 23.42  
+                **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
+                **添加日历** : https://ctftime.org/event/3021.ics  
                 
     === "*已经结束*"
         === "国内赛事"
