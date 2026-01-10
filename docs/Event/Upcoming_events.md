@@ -29,15 +29,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[UofTCTF 2026](https://ctf.uoftctf.org/)"  
-    [![](https://ctftime.org/media/events/uoftctf_logo_3000_black_1.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
-    **比赛名称** : [UofTCTF 2026](https://ctf.uoftctf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-10 08:00:00 - 2026-01-12 08:00:00 UTC+8  
-    **比赛权重** : 33.49  
-    **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
-    **添加日历** : https://ctftime.org/event/2969.ics  
-    
 ??? Quote "[New Year CTF 2026](http://ctf-spcs.mf.grsu.by/)"  
     [![](https://ctftime.org/media/events/NY2026.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
     **比赛名称** : [New Year CTF 2026](http://ctf-spcs.mf.grsu.by/)  
