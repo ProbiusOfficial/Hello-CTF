@@ -139,7 +139,7 @@ comments: true
     **比赛名称** : [NexHunt CTF](https://nexus-security.club/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-12-12 02:00:00 - 2025-12-13 18:00:00 UTC+8  
-    **比赛权重** : 23.76  
+    **比赛权重** : 23.73  
     **赛事主办** : Nexus Team (https://ctftime.org/team/361096)  
     **添加日历** : https://ctftime.org/event/3037.ics  
     
@@ -238,7 +238,7 @@ comments: true
     **比赛名称** : [Haix-la-Chapelle 2025](https://haix-la-chapelle.eu/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-11-29 17:00:00 - 2025-11-30 17:00:00 UTC+8  
-    **比赛权重** : 24.07  
+    **比赛权重** : 24.00  
     **赛事主办** : Pwn-la-Chapelle (https://ctftime.org/team/279433)  
     **添加日历** : https://ctftime.org/event/2951.ics  
     
@@ -445,7 +445,7 @@ comments: true
     **比赛名称** : [AmateursCTF 2025](https://ctf.amateurs.team/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-11-14 08:00:00 - 2025-11-18 08:00:00 UTC+8  
-    **比赛权重** : 35.58  
+    **比赛权重** : 35.56  
     **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
     **添加日历** : https://ctftime.org/event/2844.ics  
     
@@ -607,7 +607,7 @@ comments: true
     **比赛名称** : [V1t CTF 2025](https://ctf.v1t.site/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-10-31 21:00:00 - 2025-11-02 21:00:00 UTC+8  
-    **比赛权重** : 22.11  
+    **比赛权重** : 22.14  
     **赛事主办** : V1t (https://ctftime.org/team/280950)  
     **添加日历** : https://ctftime.org/event/2920.ics  
     
@@ -796,7 +796,7 @@ comments: true
     **比赛名称** : [QnQSec CTF 2025](https://ctf.qnqsec.team/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-10-17 02:00:00 - 2025-10-20 02:00:00 UTC+8  
-    **比赛权重** : 24.75  
+    **比赛权重** : 24.76  
     **赛事主办** : QnQSec (https://ctftime.org/team/367683)  
     **添加日历** : https://ctftime.org/event/2826.ics  
     
