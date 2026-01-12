@@ -153,7 +153,7 @@
         "比赛权重": "23.42",
         "赛事主办": "Beavers0 (https://ctftime.org/team/269281)",
         "比赛ID": "1041",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "UofTCTF 2026",
@@ -1341,18 +1341,6 @@
         "比赛权重": "0",
         "赛事主办": "x3CTF (https://ctftime.org/team/309820)",
         "比赛ID": "1153",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "InfiniteCTF Qualifiers",
-        "比赛时间": "2025-09-28 03:00:00 - 2025-09-28 11:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2925.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://register.redteamassociation.com/",
-        "比赛标志": "https://ctftime.org/media/events/RED_TEAM_pentagon_red.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Red Team Association (https://ctftime.org/team/399056)",
-        "比赛ID": "1405",
         "比赛状态": "past"
     }
 ]

@@ -434,6 +434,11 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
+    
+    === "*已经结束*"
+        === "国内赛事"
+    
+        === "国外赛事"
             ??? Quote "[New Year CTF 2026](http://ctf-spcs.mf.grsu.by/)"  
                 [![](https://ctftime.org/media/events/NY2026.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
                 **比赛名称** : [New Year CTF 2026](http://ctf-spcs.mf.grsu.by/)  
@@ -443,10 +448,6 @@ hide:
                 **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
                 **添加日历** : https://ctftime.org/event/3021.ics  
                 
-    === "*已经结束*"
-        === "国内赛事"
-    
-        === "国外赛事"
             ??? Quote "[UofTCTF 2026](https://ctf.uoftctf.org/)"  
                 [![](https://ctftime.org/media/events/uoftctf_logo_3000_black_1.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
                 **比赛名称** : [UofTCTF 2026](https://ctf.uoftctf.org/)  
@@ -1337,15 +1338,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : x3CTF (https://ctftime.org/team/309820)  
                 **添加日历** : https://ctftime.org/event/2940.ics  
-                
-            ??? Quote "[InfiniteCTF Qualifiers](https://register.redteamassociation.com/)"  
-                [![](https://ctftime.org/media/events/RED_TEAM_pentagon_red.png){ width="200" align=left }](https://register.redteamassociation.com/)  
-                **比赛名称** : [InfiniteCTF Qualifiers](https://register.redteamassociation.com/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2025-09-28 03:00:00 - 2025-09-28 11:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Red Team Association (https://ctftime.org/team/399056)  
-                **添加日历** : https://ctftime.org/event/2925.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
