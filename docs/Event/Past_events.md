@@ -32,7 +32,7 @@ comments: true
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-01-09 08:00:00 - 2026-01-12 08:00:00 UTC+8  
     **比赛权重** : 0  
-    **赛事主办** : HolyC (https://ctftime.org/team/226444)  
+    **赛事主办** : ScarletCTF (https://ctftime.org/team/226444)  
     **添加日历** : https://ctftime.org/event/2981.ics  
     
 ??? Quote "[hxp 39C3 CTF](https://2025.ctf.link/)"  
