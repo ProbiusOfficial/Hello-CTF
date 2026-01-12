@@ -139,7 +139,7 @@ comments: true
     **比赛名称** : [NexHunt CTF](https://nexus-security.club/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2025-12-12 02:00:00 - 2025-12-13 18:00:00 UTC+8  
-    **比赛权重** : 23.73  
+    **比赛权重** : 23.76  
     **赛事主办** : Nexus Team (https://ctftime.org/team/361096)  
     **添加日历** : https://ctftime.org/event/3037.ics  
     
