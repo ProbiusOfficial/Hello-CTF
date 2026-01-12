@@ -144,15 +144,15 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Scarlet CTF",
-        "比赛时间": "2026-01-09 08:00:00 - 2026-01-12 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2981.ics",
+        "比赛名称": "New Year CTF 2026",
+        "比赛时间": "2026-01-10 17:00:00 - 2026-01-12 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3021.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.rusec.club/",
-        "比赛标志": "https://ctftime.org/media/events/8ed561b45f892df2a5b105e8537794b3_1.jpg",
-        "比赛权重": "0",
-        "赛事主办": "HolyC (https://ctftime.org/team/226444)",
-        "比赛ID": "1143",
+        "比赛链接": "http://ctf-spcs.mf.grsu.by/",
+        "比赛标志": "https://ctftime.org/media/events/NY2026.jpg",
+        "比赛权重": "23.42",
+        "赛事主办": "Beavers0 (https://ctftime.org/team/269281)",
+        "比赛ID": "1041",
         "比赛状态": "nowrunning"
     },
     {
@@ -165,19 +165,19 @@
         "比赛权重": "33.49",
         "赛事主办": "UofTCTF (https://ctftime.org/team/139261)",
         "比赛ID": "1052",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
-        "比赛名称": "New Year CTF 2026",
-        "比赛时间": "2026-01-10 17:00:00 - 2026-01-12 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3021.ics",
+        "比赛名称": "Scarlet CTF",
+        "比赛时间": "2026-01-09 08:00:00 - 2026-01-12 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2981.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf-spcs.mf.grsu.by/",
-        "比赛标志": "https://ctftime.org/media/events/NY2026.jpg",
-        "比赛权重": "23.42",
-        "赛事主办": "Beavers0 (https://ctftime.org/team/269281)",
-        "比赛ID": "1041",
-        "比赛状态": "nowrunning"
+        "比赛链接": "http://ctf.rusec.club/",
+        "比赛标志": "https://ctftime.org/media/events/8ed561b45f892df2a5b105e8537794b3_1.jpg",
+        "比赛权重": "0",
+        "赛事主办": "HolyC (https://ctftime.org/team/226444)",
+        "比赛ID": "1143",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "hxp 39C3 CTF",
@@ -1353,30 +1353,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Red Team Association (https://ctftime.org/team/399056)",
         "比赛ID": "1405",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DFIR Labs Digital Forensics Challenge by The DFIR Report",
-        "比赛时间": "2025-09-28 00:30:00 - 2025-09-28 04:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2837.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dfirlabs.thedfirreport.com/dfirchallenge",
-        "比赛标志": "",
-        "比赛权重": "0",
-        "赛事主办": "The DFIR Report (https://ctftime.org/team/309500)",
-        "比赛ID": "1149",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SunshineCTF 2025",
-        "比赛时间": "2025-09-27 22:00:00 - 2025-09-29 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2863.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://sunshinectf.org/",
-        "比赛标志": "https://ctftime.org/media/events/sctf_logo_25.png",
-        "比赛权重": "51.65",
-        "赛事主办": "Knightsec (https://ctftime.org/team/2500)",
-        "比赛ID": "137",
         "比赛状态": "past"
     }
 ]

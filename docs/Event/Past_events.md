@@ -8,6 +8,24 @@ comments: true
 
 
 ## 国际赛事
+??? Quote "[UofTCTF 2026](https://ctf.uoftctf.org/)"  
+    [![](https://ctftime.org/media/events/uoftctf_logo_3000_black_1.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
+    **比赛名称** : [UofTCTF 2026](https://ctf.uoftctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-10 08:00:00 - 2026-01-12 08:00:00 UTC+8  
+    **比赛权重** : 33.49  
+    **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
+    **添加日历** : https://ctftime.org/event/2969.ics  
+    
+??? Quote "[Scarlet CTF](http://ctf.rusec.club/)"  
+    [![](https://ctftime.org/media/events/8ed561b45f892df2a5b105e8537794b3_1.jpg){ width="200" align=left }](http://ctf.rusec.club/)  
+    **比赛名称** : [Scarlet CTF](http://ctf.rusec.club/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-09 08:00:00 - 2026-01-12 08:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : HolyC (https://ctftime.org/team/226444)  
+    **添加日历** : https://ctftime.org/event/2981.ics  
+    
 ??? Quote "[hxp 39C3 CTF](https://2025.ctf.link/)"  
     [![](https://ctftime.org/media/events/hxp-39c3.png){ width="200" align=left }](https://2025.ctf.link/)  
     **比赛名称** : [hxp 39C3 CTF](https://2025.ctf.link/)  
@@ -889,22 +907,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Red Team Association (https://ctftime.org/team/399056)  
     **添加日历** : https://ctftime.org/event/2925.ics  
-    
-??? Quote "[DFIR Labs Digital Forensics Challenge by The DFIR Report](https://dfirlabs.thedfirreport.com/dfirchallenge)"  
-    [![](){ width="200" align=left }](https://dfirlabs.thedfirreport.com/dfirchallenge)  
-    **比赛名称** : [DFIR Labs Digital Forensics Challenge by The DFIR Report](https://dfirlabs.thedfirreport.com/dfirchallenge)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-09-28 00:30:00 - 2025-09-28 04:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : The DFIR Report (https://ctftime.org/team/309500)  
-    **添加日历** : https://ctftime.org/event/2837.ics  
-    
-??? Quote "[SunshineCTF 2025](https://sunshinectf.org/)"  
-    [![](https://ctftime.org/media/events/sctf_logo_25.png){ width="200" align=left }](https://sunshinectf.org/)  
-    **比赛名称** : [SunshineCTF 2025](https://sunshinectf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-09-27 22:00:00 - 2025-09-29 22:00:00 UTC+8  
-    **比赛权重** : 51.65  
-    **赛事主办** : Knightsec (https://ctftime.org/team/2500)  
-    **添加日历** : https://ctftime.org/event/2863.ics  
     
