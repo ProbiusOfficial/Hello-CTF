@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "2026 Embedded Capture the Flag",
-        "比赛时间": "2026-01-14 20:00:00 - 2026-04-15 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2916.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://ectf.mitre.org/",
-        "比赛标志": "",
-        "比赛权重": "0",
-        "赛事主办": "ectfmitre (https://ctftime.org/team/87292)",
-        "比赛ID": "364",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "SWIMMER OSINT CTF",
         "比赛时间": "2026-01-17 11:10:00 - 2026-01-17 23:10:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2986.ics",
@@ -142,6 +130,18 @@
         "赛事主办": "Singapore Students Merger (https://ctftime.org/team/299075)",
         "比赛ID": "1329",
         "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "2026 Embedded Capture the Flag",
+        "比赛时间": "2026-01-14 20:00:00 - 2026-04-15 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2916.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://ectf.mitre.org/",
+        "比赛标志": "",
+        "比赛权重": "0",
+        "赛事主办": "ectfmitre (https://ctftime.org/team/87292)",
+        "比赛ID": "364",
+        "比赛状态": "nowrunning"
     },
     {
         "比赛名称": "New Year CTF 2026",

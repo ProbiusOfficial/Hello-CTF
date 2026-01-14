@@ -74,15 +74,6 @@ hide:
             **其他说明** : furryCTF 2025是一款直至目前花销自理的，具有一定娱乐性质的，安徽师范大学计算机爱好者协会协办的网络与信息安全新神赛，初心是不为盈利，Hack for fun！比赛允许使用AI，我们鼓励选手能在比赛中合理的将AI当做辅助解题的工具。同时我们不限制搜索引擎的使用，除了因为确实也不好限制以外，我们鼓励选手能从比赛过程中通过思考与探索学到更多知识。比赛链接：furryCTF 2025正赛（比赛时间为2026年1月30日中午12点~2月2日中午12点，共72小时）： https://furryctf.com/games/2。官方交流群QQ:746480442。  
                 
     === "国外比赛"
-        ??? Quote "[2026 Embedded Capture the Flag](https://ectf.mitre.org/)"  
-            [![](){ width="200" align=left }](https://ectf.mitre.org/)  
-            **比赛名称** : [2026 Embedded Capture the Flag](https://ectf.mitre.org/)  
-            **比赛形式** : Attack-Defense  
-            **比赛时间** : 2026-01-14 20:00:00 - 2026-04-15 20:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
-            **添加日历** : https://ctftime.org/event/2916.ics  
-            
         ??? Quote "[SWIMMER OSINT CTF](https://twitter.com/DIVER_OSINT_CTF)"  
             [![](https://ctftime.org/media/events/circle-white-text.png){ width="200" align=left }](https://twitter.com/DIVER_OSINT_CTF)  
             **比赛名称** : [SWIMMER OSINT CTF](https://twitter.com/DIVER_OSINT_CTF)  
@@ -109,6 +100,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Paolo (https://ctftime.org/team/263145)  
             **添加日历** : https://ctftime.org/event/2767.ics  
+            
+        ??? Quote "[CSCG 2026](https://play.cscg.live/)"  
+            [![](){ width="200" align=left }](https://play.cscg.live/)  
+            **比赛名称** : [CSCG 2026](https://play.cscg.live/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-02 01:00:00 - 2026-05-02 00:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : NFITS (https://ctftime.org/team/360674)  
+            **添加日历** : https://ctftime.org/event/2907.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
