@@ -92,9 +92,9 @@ comments: true
     **赛事主办** : Lilac (https://ctftime.org/team/15163)  
     **添加日历** : https://ctftime.org/event/3071.ics  
     
-??? Quote "[VSL CTF 2026](https://vsl.ce.vku.udn.vn/)"  
-    [![](https://ctftime.org/media/events/logo_16.jpg){ width="200" align=left }](https://vsl.ce.vku.udn.vn/)  
-    **比赛名称** : [VSL CTF 2026](https://vsl.ce.vku.udn.vn/)  
+??? Quote "[VSL CTF 2026](https://vslctf2026.simsimi.vn/)"  
+    [![](https://ctftime.org/media/events/logo_16.jpg){ width="200" align=left }](https://vslctf2026.simsimi.vn/)  
+    **比赛名称** : [VSL CTF 2026](https://vslctf2026.simsimi.vn/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-01-24 16:00:00 - 2026-01-25 16:00:00 UTC+8  
     **比赛权重** : 0.00  
