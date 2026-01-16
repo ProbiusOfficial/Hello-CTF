@@ -17,6 +17,15 @@ comments: true
     **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
     **添加日历** : https://ctftime.org/event/3021.ics  
     
+??? Quote "[SCPCTF](https://scpctf.vercel.app/)"  
+    [![](https://ctftime.org/media/events/Screenshot_2025-10-03_231925_1.png){ width="200" align=left }](https://scpctf.vercel.app/)  
+    **比赛名称** : [SCPCTF](https://scpctf.vercel.app/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-10 11:30:00 - 2026-01-12 11:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : SCP CTF (https://ctftime.org/team/415339)  
+    **添加日历** : https://ctftime.org/event/3064.ics  
+    
 ??? Quote "[UofTCTF 2026](https://ctf.uoftctf.org/)"  
     [![](https://ctftime.org/media/events/uoftctf_logo_3000_black_1.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
     **比赛名称** : [UofTCTF 2026](https://ctf.uoftctf.org/)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 24.88  
     **赛事主办** : jailctf (https://ctftime.org/team/311088)  
     **添加日历** : https://ctftime.org/event/2737.ics  
-    
-??? Quote "[openECSC 2025](https://openec.sc/)"  
-    [![](https://ctftime.org/media/events/openECSC_1.png){ width="200" align=left }](https://openec.sc/)  
-    **比赛名称** : [openECSC 2025](https://openec.sc/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-09-30 02:00:00 - 2025-10-06 07:59:59 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : x3CTF (https://ctftime.org/team/309820)  
-    **添加日历** : https://ctftime.org/event/2940.ics  
     

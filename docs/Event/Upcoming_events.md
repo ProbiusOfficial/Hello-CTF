@@ -38,6 +38,87 @@ comments: true
     **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
     **添加日历** : https://ctftime.org/event/2986.ics  
     
+??? Quote "[KnightCTF 2026](https://2026.knightctf.com/)"  
+    [![](https://ctftime.org/media/events/knightctf-logo.png){ width="200" align=left }](https://2026.knightctf.com/)  
+    **比赛名称** : [KnightCTF 2026](https://2026.knightctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-20 23:00:00 - 2026-01-21 23:00:00 UTC+8  
+    **比赛权重** : 22.21  
+    **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
+    **添加日历** : https://ctftime.org/event/3053.ics  
+    
+??? Quote "[0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)"  
+    [![](){ width="200" align=left }](https://ctf.0xL4ugh.com/)  
+    **比赛名称** : [0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-23 21:00:00 - 2026-01-25 09:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
+    **添加日历** : https://ctftime.org/event/3024.ics  
+    
+??? Quote "[Säkerhets-SM Quals 2026](https://ctf.sakerhetssm.se/)"  
+    [![](){ width="200" align=left }](https://ctf.sakerhetssm.se/)  
+    **比赛名称** : [Säkerhets-SM Quals 2026](https://ctf.sakerhetssm.se/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-24 03:00:00 - 2026-01-26 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Kodsport (https://ctftime.org/team/395272)  
+    **添加日历** : https://ctftime.org/event/2945.ics  
+    
+??? Quote "[HackDay 2026 - Qualifications](https://register.hackday.fr/register/)"  
+    [![](https://ctftime.org/media/events/5513a205a0a6489f9dc0ecff6fd7d669.png){ width="200" align=left }](https://register.hackday.fr/register/)  
+    **比赛名称** : [HackDay 2026 - Qualifications](https://register.hackday.fr/register/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-24 03:00:00 - 2026-01-26 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
+    **添加日历** : https://ctftime.org/event/3038.ics  
+    
+??? Quote "[Dreamhack Invitational Quals 2026](https://dreamhack.io/ctf/772)"  
+    [![](https://ctftime.org/media/events/e66fed5653581908ac8e93f82ad73cae_2.jpg){ width="200" align=left }](https://dreamhack.io/ctf/772)  
+    **比赛名称** : [Dreamhack Invitational Quals 2026](https://dreamhack.io/ctf/772)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-24 08:00:00 - 2026-01-25 08:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
+    **添加日历** : https://ctftime.org/event/3025.ics  
+    
+??? Quote "[LilacCTF 2026](https://adworld.xctf.org.cn/contest/assess?hash=d2cbd04c-ef67-11f0-bf63-000c297261bb)"  
+    [![](https://ctftime.org/media/events/square.jpg){ width="200" align=left }](https://adworld.xctf.org.cn/contest/assess?hash=d2cbd04c-ef67-11f0-bf63-000c297261bb)  
+    **比赛名称** : [LilacCTF 2026](https://adworld.xctf.org.cn/contest/assess?hash=d2cbd04c-ef67-11f0-bf63-000c297261bb)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-24 09:00:00 - 2026-01-26 09:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Lilac (https://ctftime.org/team/15163)  
+    **添加日历** : https://ctftime.org/event/3071.ics  
+    
+??? Quote "[VSL CTF 2026](https://vsl.ce.vku.udn.vn/)"  
+    [![](https://ctftime.org/media/events/logo_16.jpg){ width="200" align=left }](https://vsl.ce.vku.udn.vn/)  
+    **比赛名称** : [VSL CTF 2026](https://vsl.ce.vku.udn.vn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-24 16:00:00 - 2026-01-25 16:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : VSL (https://ctftime.org/team/284373)  
+    **添加日历** : https://ctftime.org/event/3060.ics  
+    
+??? Quote "[CyberQuest 26](https://ngpkanam.com/events/41)"  
+    [![](https://ctftime.org/media/events/WhatsApp_Image_2026-01-15_at_16.42.06.jpeg){ width="200" align=left }](https://ngpkanam.com/events/41)  
+    **比赛名称** : [CyberQuest 26](https://ngpkanam.com/events/41)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-28 11:30:00 - 2026-01-28 19:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Cybernexus (https://ctftime.org/team/400801)  
+    **添加日历** : https://ctftime.org/event/3080.ics  
+    
+??? Quote "[Hack for a Change 2026 January: UN SDG 15](http://www.hackforachange.org/)"  
+    [![](https://ctftime.org/media/events/logo_117.png){ width="200" align=left }](http://www.hackforachange.org/)  
+    **比赛名称** : [Hack for a Change 2026 January: UN SDG 15](http://www.hackforachange.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-30 08:00:00 - 2026-02-03 07:59:59 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
+    **添加日历** : https://ctftime.org/event/3083.ics  
+    
 ??? Quote "[Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)"  
     [![](https://ctftime.org/media/events/LogoAlt.png){ width="200" align=left }](https://www.jeanne-hack-ctf.org/)  
     **比赛名称** : [Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)  
@@ -46,6 +127,24 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Jeanne d'Hack CTF (https://ctftime.org/team/283058)  
     **添加日历** : https://ctftime.org/event/2941.ics  
+    
+??? Quote "[ATC Winter Vibes Community CTF 2.0](https://atcwintervibesctf.com/)"  
+    [![](https://ctftime.org/media/events/ATC_Logo.PNG){ width="200" align=left }](https://atcwintervibesctf.com/)  
+    **比赛名称** : [ATC Winter Vibes Community CTF 2.0](https://atcwintervibesctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-30 22:00:00 - 2026-01-31 22:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : ATC CTF Team (https://ctftime.org/team/370333)  
+    **添加日历** : https://ctftime.org/event/3068.ics  
+    
+??? Quote "[Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)"  
+    [![](){ width="200" align=left }](https://eschaton.mcsc.space/)  
+    **比赛名称** : [Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-31 12:30:00 - 2026-02-01 12:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Team MCSC (https://ctftime.org/team/418958)  
+    **添加日历** : https://ctftime.org/event/3072.ics  
     
 ??? Quote "[PascalCTF 2026](https://ctf.pascalctf.it/)"  
     [![](https://ctftime.org/media/events/log.jpg){ width="200" align=left }](https://ctf.pascalctf.it/)  

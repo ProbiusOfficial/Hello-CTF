@@ -83,32 +83,32 @@ hide:
             **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
             **添加日历** : https://ctftime.org/event/2986.ics  
             
-        ??? Quote "[Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)"  
-            [![](https://ctftime.org/media/events/LogoAlt.png){ width="200" align=left }](https://www.jeanne-hack-ctf.org/)  
-            **比赛名称** : [Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)  
+        ??? Quote "[KnightCTF 2026](https://2026.knightctf.com/)"  
+            [![](https://ctftime.org/media/events/knightctf-logo.png){ width="200" align=left }](https://2026.knightctf.com/)  
+            **比赛名称** : [KnightCTF 2026](https://2026.knightctf.com/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-01-30 17:00:00 - 2026-01-31 02:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Jeanne d'Hack CTF (https://ctftime.org/team/283058)  
-            **添加日历** : https://ctftime.org/event/2941.ics  
+            **比赛时间** : 2026-01-20 23:00:00 - 2026-01-21 23:00:00 UTC+8  
+            **比赛权重** : 22.21  
+            **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
+            **添加日历** : https://ctftime.org/event/3053.ics  
             
-        ??? Quote "[PascalCTF 2026](https://ctf.pascalctf.it/)"  
-            [![](https://ctftime.org/media/events/log.jpg){ width="200" align=left }](https://ctf.pascalctf.it/)  
-            **比赛名称** : [PascalCTF 2026](https://ctf.pascalctf.it/)  
+        ??? Quote "[0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)"  
+            [![](){ width="200" align=left }](https://ctf.0xL4ugh.com/)  
+            **比赛名称** : [0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-01-31 16:00:00 - 2026-02-01 16:00:00 UTC+8  
+            **比赛时间** : 2026-01-23 21:00:00 - 2026-01-25 09:00:00 UTC+8  
             **比赛权重** : 0.00  
-            **赛事主办** : Paolo (https://ctftime.org/team/263145)  
-            **添加日历** : https://ctftime.org/event/2767.ics  
+            **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
+            **添加日历** : https://ctftime.org/event/3024.ics  
             
-        ??? Quote "[DUCKERZ CTF 2026](https://teams.duckerz.ru/)"  
-            [![](https://ctftime.org/media/events/DUCKERZ.png){ width="200" align=left }](https://teams.duckerz.ru/)  
-            **比赛名称** : [DUCKERZ CTF 2026](https://teams.duckerz.ru/)  
+        ??? Quote "[Säkerhets-SM Quals 2026](https://ctf.sakerhetssm.se/)"  
+            [![](){ width="200" align=left }](https://ctf.sakerhetssm.se/)  
+            **比赛名称** : [Säkerhets-SM Quals 2026](https://ctf.sakerhetssm.se/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-02-07 17:00:00 - 2026-02-08 17:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : DUCKERZ (https://ctftime.org/team/372036)  
-            **添加日历** : https://ctftime.org/event/3067.ics  
+            **比赛时间** : 2026-01-24 03:00:00 - 2026-01-26 03:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : Kodsport (https://ctftime.org/team/395272)  
+            **添加日历** : https://ctftime.org/event/2945.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

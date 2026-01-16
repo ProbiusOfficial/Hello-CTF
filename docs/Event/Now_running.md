@@ -18,3 +18,12 @@ comments: true
     **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
     **添加日历** : https://ctftime.org/event/2916.ics  
     
+??? Quote "[Segfault CTF](https://play.segfaultsociety.space/)"  
+    [![](https://ctftime.org/media/events/segf.png){ width="200" align=left }](https://play.segfaultsociety.space/)  
+    **比赛名称** : [Segfault CTF](https://play.segfaultsociety.space/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-16 16:00:00 - 2026-01-18 16:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Segfault Society (https://ctftime.org/team/388763)  
+    **添加日历** : https://ctftime.org/event/3059.ics  
+    
