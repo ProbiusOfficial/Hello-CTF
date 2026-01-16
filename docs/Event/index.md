@@ -349,6 +349,15 @@ hide:
                 **赛事主办** : Paolo (https://ctftime.org/team/263145)  
                 **添加日历** : https://ctftime.org/event/2767.ics  
                 
+            ??? Quote "[DUCKERZ CTF 2026](https://teams.duckerz.ru/)"  
+                [![](https://ctftime.org/media/events/DUCKERZ.png){ width="200" align=left }](https://teams.duckerz.ru/)  
+                **比赛名称** : [DUCKERZ CTF 2026](https://teams.duckerz.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-02-07 17:00:00 - 2026-02-08 17:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : DUCKERZ (https://ctftime.org/team/372036)  
+                **添加日历** : https://ctftime.org/event/3067.ics  
+                
             ??? Quote "[CSCG 2026](https://play.cscg.live/)"  
                 [![](){ width="200" align=left }](https://play.cscg.live/)  
                 **比赛名称** : [CSCG 2026](https://play.cscg.live/)  
