@@ -384,7 +384,7 @@ git show 查看历史版本找到 flag
 
 ![](https://pic1.imgdb.cn/item/67b0695cd0e0a243d4ff9fe6.jpg)
 
-访问得到一个禁止访问的 resusl.php
+访问得到一个禁止访问的 result.php
 
 ![](https://pic1.imgdb.cn/item/67b0696ed0e0a243d4ff9fe9.jpg)
 
@@ -576,6 +576,6 @@ if (isset($_POST[$key2]) && isset($_POST[$key3])) {
 
 利用 wget 下载文件
 
-因为 vim 使用的缓存存储为一种`固定格式的二进制文件`，而我们一般编辑的时明问可见字符，在 vim 的缓存中这些可见字符会原样保留
+因为 vim 使用的缓存存储为一种`固定格式的二进制文件`，而我们一般编辑的是明文可见字符，在 vim 的缓存中这些可见字符会原样保留
 
 ![](https://pic1.imgdb.cn/item/6878b5f458cb8da5c8be7677.png)
