@@ -331,6 +331,15 @@ hide:
                 **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
                 **添加日历** : https://ctftime.org/event/3053.ics  
                 
+            ??? Quote "[MetaCTF January 2026 Flash CTF](https://mctf.io/jan2026)"  
+                [![](){ width="200" align=left }](https://mctf.io/jan2026)  
+                **比赛名称** : [MetaCTF January 2026 Flash CTF](https://mctf.io/jan2026)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-01-23 06:00:00 - 2026-01-23 09:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
+                **添加日历** : https://ctftime.org/event/3079.ics  
+                
             ??? Quote "[0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)"  
                 [![](){ width="200" align=left }](https://ctf.0xL4ugh.com/)  
                 **比赛名称** : [0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)  
@@ -385,6 +394,15 @@ hide:
                 **赛事主办** : VSL (https://ctftime.org/team/284373)  
                 **添加日历** : https://ctftime.org/event/3060.ics  
                 
+            ??? Quote "[Fluid Attacks' CTF 2026-1](https://fluidattacks.com/ctf)"  
+                [![](https://ctftime.org/media/events/2.jpg){ width="200" align=left }](https://fluidattacks.com/ctf)  
+                **比赛名称** : [Fluid Attacks' CTF 2026-1](https://fluidattacks.com/ctf)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-01-24 21:00:00 - 2026-01-25 21:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Fluid Attacks (https://ctftime.org/team/126627)  
+                **添加日历** : https://ctftime.org/event/3087.ics  
+                
             ??? Quote "[CyberQuest 26](https://ngpkanam.com/events/41)"  
                 [![](https://ctftime.org/media/events/WhatsApp_Image_2026-01-15_at_16.42.06.jpeg){ width="200" align=left }](https://ngpkanam.com/events/41)  
                 **比赛名称** : [CyberQuest 26](https://ngpkanam.com/events/41)  
@@ -438,6 +456,24 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Paolo (https://ctftime.org/team/263145)  
                 **添加日历** : https://ctftime.org/event/2767.ics  
+                
+            ??? Quote "[BITSCTF 2026](https://ctf.bitskrieg.in/)"  
+                [![](https://ctftime.org/media/events/bitskrieg_background.png){ width="200" align=left }](https://ctf.bitskrieg.in/)  
+                **比赛名称** : [BITSCTF 2026](https://ctf.bitskrieg.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-02-06 13:30:00 - 2026-02-08 13:30:00 UTC+8  
+                **比赛权重** : 25.54  
+                **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
+                **添加日历** : https://ctftime.org/event/3047.ics  
+                
+            ??? Quote "[Pragyan CTF 2026](https://ctf.prgy.in/)"  
+                [![](){ width="200" align=left }](https://ctf.prgy.in/)  
+                **比赛名称** : [Pragyan CTF 2026](https://ctf.prgy.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-02-06 21:00:00 - 2026-02-08 21:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Pragyan (https://ctftime.org/team/33867)  
+                **添加日历** : https://ctftime.org/event/3058.ics  
                 
             ??? Quote "[DUCKERZ CTF 2026](https://teams.duckerz.ru/)"  
                 [![](https://ctftime.org/media/events/DUCKERZ.png){ width="200" align=left }](https://teams.duckerz.ru/)  
