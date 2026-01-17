@@ -492,6 +492,30 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "SillyCTF 2",
+        "比赛时间": "2026-04-04 20:00:00 - 2026-04-05 12:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3042.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://sillyctf.psuccso.org/",
+        "比赛标志": "https://ctftime.org/media/events/SillyCTF2logo.png",
+        "比赛权重": "25.00",
+        "赛事主办": "Penn State CCSO (https://ctftime.org/team/367931)",
+        "比赛ID": "1233",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Dreamhack Invitational 2026",
+        "比赛时间": "2026-04-07 08:00:00 - 2026-04-07 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3026.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://dreamhack.io/",
+        "比赛标志": "",
+        "比赛权重": "0",
+        "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
+        "比赛ID": "1090",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "UMassCTF 2026",
         "比赛时间": "2026-04-11 06:00:00 - 2026-04-13 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2937.ics",
@@ -516,6 +540,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "CPCTF 2026",
+        "比赛时间": "2026-04-17 19:00:00 - 2026-04-19 19:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3077.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cpctf.space/",
+        "比赛标志": "https://ctftime.org/media/events/cpctf_logo_1_1.png",
+        "比赛权重": "0",
+        "赛事主办": "traP (https://ctftime.org/team/62510)",
+        "比赛ID": "934",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "BlueHens CTF 2025",
         "比赛时间": "2026-04-18 01:00:00 - 2026-04-19 13:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2943.ics",
@@ -525,6 +561,18 @@
         "比赛权重": "44.77",
         "赛事主办": "Blue Hens (https://ctftime.org/team/64660)",
         "比赛ID": "603",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "UMDCTF 2026",
+        "比赛时间": "2026-04-25 06:00:00 - 2026-04-27 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3056.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://umdctf.io/",
+        "比赛标志": "https://ctftime.org/media/events/icon_logo.png",
+        "比赛权重": "85.48",
+        "赛事主办": "UMDCSEC (https://ctftime.org/team/87711)",
+        "比赛ID": "444",
         "比赛状态": "oncoming"
     },
     {
@@ -540,6 +588,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "GPN CTF 2026",
+        "比赛时间": "2026-06-05 18:00:00 - 2026-06-07 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3041.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://gpn24.ctf.kitctf.de/",
+        "比赛标志": "",
+        "比赛权重": "69.00",
+        "赛事主办": "KITCTF (https://ctftime.org/team/7221)",
+        "比赛ID": "854",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "SSMCTF 2026 Qualifiers",
         "比赛时间": "2026-06-07 18:00:00 - 2026-06-08 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2913.ics",
@@ -549,6 +609,102 @@
         "比赛权重": "0.00",
         "赛事主办": "Singapore Students Merger (https://ctftime.org/team/299075)",
         "比赛ID": "1329",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Crypto CTF 2026",
+        "比赛时间": "2026-06-13 22:00:00 - 2026-06-14 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3034.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cr.yp.toc.tf/",
+        "比赛标志": "https://ctftime.org/media/events/cryptoctf_logo.jpg",
+        "比赛权重": "91.00",
+        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
+        "比赛ID": "317",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "L3akCTF 2026",
+        "比赛时间": "2026-07-11 02:00:00 - 2026-07-13 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3061.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.l3ak.team/",
+        "比赛标志": "https://ctftime.org/media/events/6a9256e0b32707195ff9fe31b358a0e6.png",
+        "比赛权重": "34.47",
+        "赛事主办": "L3ak (https://ctftime.org/team/220336)",
+        "比赛ID": "1077",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "scriptCTF 2026",
+        "比赛时间": "2026-08-08 08:00:00 - 2026-08-10 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3052.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.scriptsorcerers.xyz/",
+        "比赛标志": "https://ctftime.org/media/events/final_logo_1.png",
+        "比赛权重": "24.70",
+        "赛事主办": "ScriptSorcerers (https://ctftime.org/team/284260)",
+        "比赛ID": "1318",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "BrunnerCTF 2026",
+        "比赛时间": "2026-08-21 20:00:00 - 2026-08-23 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3065.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.brunnerne.dk/",
+        "比赛标志": "https://ctftime.org/media/events/Logo_-_2-7.png",
+        "比赛权重": "24.66",
+        "赛事主办": "Brunnerne (https://ctftime.org/team/155032)",
+        "比赛ID": "1341",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "ASIS CTF Quals 2026",
+        "比赛时间": "2026-08-29 22:00:00 - 2026-08-30 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3033.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://asisctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/asis_logo_1.png",
+        "比赛权重": "90.53",
+        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
+        "比赛ID": "55",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Pointer Overflow CTF - 2026",
+        "比赛时间": "2026-09-27 22:00:00 - 2026-12-06 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3020.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://pointeroverflowctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/logo-mini.png",
+        "比赛权重": "0",
+        "赛事主办": "UWSP Pointers (https://ctftime.org/team/231536)",
+        "比赛ID": "963",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Platypwn 2026",
+        "比赛时间": "2026-11-14 17:00:00 - 2026-11-16 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3082.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://platypwnies.de/events/platypwn/",
+        "比赛标志": "https://ctftime.org/media/events/platypwnies-512_1_1.png",
+        "比赛权重": "37.00",
+        "赛事主办": "Platypwnies (https://ctftime.org/team/112550)",
+        "比赛ID": "979",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "ASIS CTF Finals 2026",
+        "比赛时间": "2026-12-27 22:00:00 - 2026-12-28 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3062.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://asisctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/asis_logo_2.png",
+        "比赛权重": "99.38",
+        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
+        "比赛ID": "59",
         "比赛状态": "oncoming"
     },
     {
@@ -564,15 +720,15 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Segfault CTF",
-        "比赛时间": "2026-01-16 16:00:00 - 2026-01-18 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3059.ics",
+        "比赛名称": "CyberCup Indian Ocean",
+        "比赛时间": "2026-01-17 00:00:00 - 2026-01-19 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3089.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://play.segfaultsociety.space/",
-        "比赛标志": "https://ctftime.org/media/events/segf.png",
+        "比赛链接": "https://cybercup.ocoi.org/",
+        "比赛标志": "https://ctftime.org/media/events/logo2_8.png",
         "比赛权重": "0",
-        "赛事主办": "Segfault Society (https://ctftime.org/team/388763)",
-        "比赛ID": "1346",
+        "赛事主办": "Hacking Indian Ocean (https://ctftime.org/team/399138)",
+        "比赛ID": "1498",
         "比赛状态": "nowrunning"
     },
     {
