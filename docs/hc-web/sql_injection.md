@@ -49,7 +49,7 @@ $sql = "SELECT username,password FROM users WHERE id = 1 union select username,p
 
 当你看到这时，不需要对语句有具体了解，但你需要知道SQL注入是一个怎么样的过程。
 
-下面我们从数据库基础——结构 基本语法开始 一步一步引到您学会基础的SQL注入。
+下面我们从数据库基础——结构 基本语法开始 一步一步引导您学会基础的SQL注入。
 
 ### SQL数据库基础
 
@@ -228,11 +228,11 @@ SELECT username,password FROM users WHERE id = "1" "
 $sql = "SELECT username,password FROM users WHERE id = ".$_GET["id"];
 ```
 
-我们可用理解为两个部分 原有语句 `SELECT username,password FROM users WHERE id = `和用户输入部分`$_GET["id"]`。
+我们可以理解为两个部分 原有语句 `SELECT username,password FROM users WHERE id = `和用户输入部分`$_GET["id"]`。
 
 前面我们说到，这种语句一般用于用户输入id来索引查询，所以预期的输入都是数字，所以直接采用的直接拼接的方式，以数字的方式进行查询。
 
-然而，用户的输入因为没有过滤的缘故，不管输入什么都会直接拼接到后面，所以我们可用用下面的步骤逐步得到数据库信息：
+然而，用户的输入因为没有过滤的缘故，不管输入什么都会直接拼接到后面，所以我们可以用下面的步骤逐步得到数据库信息：
 
 - 使用 `Order by` 确定列数，方便后续注入。
 
@@ -324,7 +324,7 @@ SELECT * FROM users WHERE username='-1' or '1'='1' order by 4-- ' AND password='
 
 ![image-20230426213252233](https://nssctf.wdf.ink//img/WDTJ/202304262132275.png)
 
-那么接下来就和数字型注入相同 吧 `order by NUM` 换成对应的语句即可：
+那么接下来就和数字型注入相同 把 `order by NUM` 换成对应的语句即可：
 
 - 库名
 
@@ -447,7 +447,7 @@ id = 1 AND length(username)> NUM
   UPDATE users SET username=SUBSTR(username,1,3)||'***'||SUBSTR(username,7) WHERE username='admin'
   ```
 
-  面的SQL语句的作用是将管理员账户的用户名中的第4到第6个字符替换为`***`
+上面的SQL语句的作用是将管理员账户的用户名中的第4到第6个字符替换为`***`
 
   通过对该函数的组合使用，可以在不使用联合注入和依赖可视回显的方式拿到对应数据：
 

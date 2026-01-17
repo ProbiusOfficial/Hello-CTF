@@ -393,7 +393,7 @@ if (isset($_POST[$key2]) && isset($_POST[$key3])) {
 
 ![](https://pic1.imgdb.cn/item/6864568758cb8da5c885d9c6.png)
 
-我们就访问容器内部的 8000 端口，但是有过滤 `127.0.0.1` 及 `loaclhost`
+我们就访问容器内部的 8000 端口，但是有过滤 `127.0.0.1` 及 `localhost`
 
 利用服务器构造 302 跳转绕过
 
@@ -432,7 +432,7 @@ header("location: http://127.0.0.1:8000/api/internal/secret")
 
 ![](https://pic1.imgdb.cn/item/6864568758cb8da5c885d9c6.png)
 
-我们就访问容器内部的 8000 端口，但是有过滤 `127.0.0.1` 及 `loaclhost`
+我们就访问容器内部的 8000 端口，但是有过滤 `127.0.0.1` 及 `localhost`
 
 采用 `127.0.0.x` 的形式绕过，x 为 `2~255`
 
@@ -459,7 +459,7 @@ header("location: http://127.0.0.1:8000/api/internal/secret")
 
 ![](https://pic1.imgdb.cn/item/6864568758cb8da5c885d9c6.png)
 
-我们就访问容器内部的 8000 端口，但是有过滤 `127.0.0.1` 及 `loaclhost`
+我们就访问容器内部的 8000 端口，但是有过滤 `127.0.0.1` 及 `localhost`
 
 采用 `0.0.0.0` 的形式绕过
 

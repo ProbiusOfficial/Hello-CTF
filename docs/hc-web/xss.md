@@ -58,7 +58,7 @@ prompt("xss")
 
 prompt(/xss/)
 
-prompt(document.coolkie)
+prompt(document.cookie)
 
 (/xss/)以上三种方法都可以实现，但是会多出两个‘/’
 
@@ -539,7 +539,7 @@ echo "<h3 align=center>payload的长度:".strlen($str5)."</h3>";
 </script>
 ```
 
-注意！当你将类似于  l`ocation.href = "javascript:alert('xss')"`  这样的代码赋值给  `location.href`  时
+注意！当你将类似于  location.href = "javascript:alert('xss')"`  这样的代码赋值给  `location.href`  时
 
 浏览器会将其解释为一种特殊的 URL 方案，即 `"javascript:"`
 
@@ -708,7 +708,7 @@ echo "<h3 align=center>payload的长度:".strlen($str)."</h3>";
 还是要闭合下 `value`
 
 ```html
-'onclick=javascript:alert()' 	<!-- 点击事件 --!>
+'onclick=javascript:alert()' 	<!-- 点击事件 -->
 ```
 
 提交后可以看到 `input` 标签中多了个 `onclick` 事件

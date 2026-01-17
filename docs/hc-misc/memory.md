@@ -137,7 +137,7 @@ sudo pip2 install construct==2.5.5-reupload
 
 ## 演示题目的下载地址
 
-本片文章使用的案例：
+本篇文章使用的案例：
 
 ```
 链接：https://pan.baidu.com/s/1nD-svI98v3yQPPKT0HyEjg 
