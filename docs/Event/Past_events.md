@@ -8,9 +8,9 @@ comments: true
 
 
 ## 国际赛事
-??? Quote "[SWIMMER OSINT CTF](https://twitter.com/DIVER_OSINT_CTF)"  
-    [![](https://ctftime.org/media/events/circle-white-text.png){ width="200" align=left }](https://twitter.com/DIVER_OSINT_CTF)  
-    **比赛名称** : [SWIMMER OSINT CTF](https://twitter.com/DIVER_OSINT_CTF)  
+??? Quote "[SWIMMER OSINT CTF](https://swimmer.diverctf.org/)"  
+    [![](https://ctftime.org/media/events/circle-white-text.png){ width="200" align=left }](https://swimmer.diverctf.org/)  
+    **比赛名称** : [SWIMMER OSINT CTF](https://swimmer.diverctf.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-01-17 11:10:00 - 2026-01-17 23:10:00 UTC+8  
     **比赛权重** : 0.00  
