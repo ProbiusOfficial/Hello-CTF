@@ -17,6 +17,15 @@ comments: true
     **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
     **添加日历** : https://ctftime.org/event/2986.ics  
     
+??? Quote "[CyberCup Indian Ocean](https://cybercup.ocoi.org/)"  
+    [![](https://ctftime.org/media/events/logo2_8.png){ width="200" align=left }](https://cybercup.ocoi.org/)  
+    **比赛名称** : [CyberCup Indian Ocean](https://cybercup.ocoi.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-17 00:00:00 - 2026-01-19 00:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Hacking Indian Ocean (https://ctftime.org/team/399138)  
+    **添加日历** : https://ctftime.org/event/3089.ics  
+    
 ??? Quote "[New Year CTF 2026](http://ctf-spcs.mf.grsu.by/)"  
     [![](https://ctftime.org/media/events/NY2026.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
     **比赛名称** : [New Year CTF 2026](http://ctf-spcs.mf.grsu.by/)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : h4wk (https://ctftime.org/team/277994)  
     **添加日历** : https://ctftime.org/event/2954.ics  
-    
-??? Quote "[COMPFEST CTF 2025](https://compfest.id/)"  
-    [![](https://ctftime.org/media/events/COMPFEST_1.png){ width="200" align=left }](https://compfest.id/)  
-    **比赛名称** : [COMPFEST CTF 2025](https://compfest.id/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-10-04 10:00:00 - 2025-10-05 10:00:00 UTC+8  
-    **比赛权重** : 64.00  
-    **赛事主办** : CSUI (https://ctftime.org/team/70551)  
-    **添加日历** : https://ctftime.org/event/2900.ics  
     

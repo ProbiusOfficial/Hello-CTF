@@ -18,12 +18,3 @@ comments: true
     **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
     **添加日历** : https://ctftime.org/event/2916.ics  
     
-??? Quote "[CyberCup Indian Ocean](https://cybercup.ocoi.org/)"  
-    [![](https://ctftime.org/media/events/logo2_8.png){ width="200" align=left }](https://cybercup.ocoi.org/)  
-    **比赛名称** : [CyberCup Indian Ocean](https://cybercup.ocoi.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-17 00:00:00 - 2026-01-19 00:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Hacking Indian Ocean (https://ctftime.org/team/399138)  
-    **添加日历** : https://ctftime.org/event/3089.ics  
-    
