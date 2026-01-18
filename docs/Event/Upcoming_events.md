@@ -372,7 +372,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/3039.ics  
     
 ??? Quote "[Flag Wars](https://laokoon-security.com/ctf2026)"  
-    [![](){ width="200" align=left }](https://laokoon-security.com/ctf2026)  
+    [![](https://ctftime.org/media/events/image_5.png){ width="200" align=left }](https://laokoon-security.com/ctf2026)  
     **比赛名称** : [Flag Wars](https://laokoon-security.com/ctf2026)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-03-28 17:00:00 - 2026-03-29 03:00:00 UTC+8  
