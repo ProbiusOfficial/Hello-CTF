@@ -322,15 +322,6 @@ hide:
                 **其他说明** : furryCTF 2025是一款直至目前花销自理的，具有一定娱乐性质的，安徽师范大学计算机爱好者协会协办的网络与信息安全新神赛，初心是不为盈利，Hack for fun！比赛允许使用AI，我们鼓励选手能在比赛中合理的将AI当做辅助解题的工具。同时我们不限制搜索引擎的使用，除了因为确实也不好限制以外，我们鼓励选手能从比赛过程中通过思考与探索学到更多知识。比赛链接：furryCTF 2025正赛（比赛时间为2026年1月30日中午12点~2月2日中午12点，共72小时）： https://furryctf.com/games/2。官方交流群QQ:746480442。  
                 
         === "国外赛事"
-            ??? Quote "[KnightCTF 2026](https://2026.knightctf.com/)"  
-                [![](https://ctftime.org/media/events/knightctf-logo.png){ width="200" align=left }](https://2026.knightctf.com/)  
-                **比赛名称** : [KnightCTF 2026](https://2026.knightctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-01-20 23:00:00 - 2026-01-21 23:00:00 UTC+8  
-                **比赛权重** : 22.21  
-                **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
-                **添加日历** : https://ctftime.org/event/3053.ics  
-                
             ??? Quote "[MetaCTF January 2026 Flash CTF](https://mctf.io/jan2026)"  
                 [![](){ width="200" align=left }](https://mctf.io/jan2026)  
                 **比赛名称** : [MetaCTF January 2026 Flash CTF](https://mctf.io/jan2026)  
@@ -874,6 +865,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
                 **添加日历** : https://ctftime.org/event/2916.ics  
+                
+            ??? Quote "[KnightCTF 2026](https://2026.knightctf.com/)"  
+                [![](https://ctftime.org/media/events/knightctf-logo.png){ width="200" align=left }](https://2026.knightctf.com/)  
+                **比赛名称** : [KnightCTF 2026](https://2026.knightctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-01-20 23:00:00 - 2026-01-21 23:00:00 UTC+8  
+                **比赛权重** : 22.21  
+                **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
+                **添加日历** : https://ctftime.org/event/3053.ics  
                 
     === "*已经结束*"
         === "国内赛事"
