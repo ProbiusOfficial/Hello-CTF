@@ -672,6 +672,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "NNS CTF 2026",
+        "比赛时间": "2026-09-05 00:00:00 - 2026-09-07 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3097.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nnsc.tf/",
+        "比赛标志": "https://ctftime.org/media/events/Logo_D_1.png",
+        "比赛权重": "25.00",
+        "赛事主办": "Norske Nøkkelsnikere (https://ctftime.org/team/222749)",
+        "比赛ID": "1256",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Pointer Overflow CTF - 2026",
         "比赛时间": "2026-09-27 22:00:00 - 2026-12-06 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3020.ics",
