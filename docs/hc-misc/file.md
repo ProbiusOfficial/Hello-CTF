@@ -41,11 +41,11 @@ Hexdump: 50 4b 03 04 ........|PK..|
     "特征签名 File header"  
 
     " **文件头** "，这个词，在中文语境中是比较口语化的，一般我们把类似 `50 4b 03 04` 这样的文件头部hex信息都叫文件头。但这玩意其实是 File signature 的 Magic number，也就是文件特征签名中的魔法数字 (上面我们说到特征签名主要有两种 一是魔法数字 二是校验值)   
-    所以个人更倾向于把前面说所的文件头 翻译成 "文件头部签名" 指魔法数字刚好放于头部用于标识文件。  
+    所以个人更倾向于把前面所说的文件头 翻译成 "文件头部签名" 指魔法数字刚好放于头部用于标识文件。  
     
     拿 PNG 图片举例，PNG头部八字节其实是特征签名 - 魔法数字，IHDR块才是正式意义下的文件头，所谓的文件头未必是全部用来辩识文件类型的，更多情况是用来存放一些其他必要信息。  
     在中文语境下，文件头三个字 涵盖了文件的整个头部，这也是歧义产生的重要原因。  
-    refe:   
+    ref:   
     https://en.wikipedia.org/wiki/File_signature   
     https://en.wikipedia.org/wiki/Magic_number_(programming)  
     https://en.wikipedia.org/wiki/List_of_file_signatures

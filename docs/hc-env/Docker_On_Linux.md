@@ -38,7 +38,7 @@ https://www.bilibili.com/video/BV1684y1z7L6
 
 Docker安装目前有两个版本，一个是官方的 **docker.ce** 版本，一个是有Debian团队维护的 **[docker.io](http://docker.io/)** 版本。  
 之前有争议说 [docker.io](http://docker.io/) 是旧版本的Docker 而新版的Docker是 docker.ce  
-然而docker.io的版本有时会比docker.ce高，事实上，两者只是负责维护的组织不同，前者是Debian官方维护，后者则为Docker官方维护，并没后新旧之分：
+然而docker.io的版本有时会比docker.ce高，事实上，两者只是负责维护的组织不同，前者是Debian官方维护，后者则为Docker官方维护，并没有新旧之分：
 
 #### [docker.io](http://docker.io/)
 
@@ -57,7 +57,7 @@ sudo apt install docker.io
 #### docker.ce
 
 由Docker官方维护的版本，采用 go 的方式管理依赖，如果您要在开发/生产环境中使用Docker，推荐使用该版本。  
-如果您的Linux版本为Ubuntu/Debian，可以使用一下命令自动安装：
+如果您的Linux版本为Ubuntu/Debian，可以使用以下命令自动安装：
 
 ```bash
 wget -qO- https://get.docker.com/ | sh

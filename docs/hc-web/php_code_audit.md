@@ -999,7 +999,7 @@ public function __destruct()
 }
 ```
 
-但是空的的函数不能执行，所以我们要构造一个
+但是空的函数不能执行，所以我们要构造一个
 
 这里要利用 `Create_function()` 函数
 
@@ -1262,7 +1262,7 @@ public function __destruct()
 }
 ```
 
-但是空的的函数不能执行，所以我们要构造一个
+但是空的函数不能执行，所以我们要构造一个
 
 这里要利用 `Create_function()` 函数
 

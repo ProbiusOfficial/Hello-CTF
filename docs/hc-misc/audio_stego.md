@@ -92,7 +92,7 @@ f7liavga{1M_0105n_cC@okmei_nFge!s}
 
 第一个是 0，第二个是 1
 
-提前前八个得到 01000110，转为 ASCII 码是 F
+提取前八个得到 01000110，转为 ASCII 码是 F
 
 以下是对于 struct MPEG_FRAME mf 的解析
 

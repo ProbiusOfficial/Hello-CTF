@@ -81,14 +81,14 @@ sudo apt upgrade
 wsl 基础环境基本配置完成
 想要进入 wsl 只需要`win+r` wsl 或者进入终端在终端输入 wsl 运行
 
-#### 安装`kail-linux-large` 和 `kali-win-kex`
+#### 安装`kali-linux-large` 和 `kali-win-kex`
 
 ```shell
 sudo apt install kali-linux-large
 sudo apt install kali-win-kex
 ```
 
-`kail-linux-large` 是 kali 完整包 很大 不建议在晚上断网时下载
+`kali-linux-large` 是 kali 完整包 很大 不建议在晚上断网时下载
 `kali-kex` 是 GUI 连接
 
 附.
@@ -130,7 +130,7 @@ wsl --import kali-linux [还原位置] [备份文件路径]
 
 建议装上防止需要切换 python 版本或者有包冲突时用
 
-### [pwngdb](https://github.com/pwndbg/pwndbg)
+### [pwndbg](https://github.com/pwndbg/pwndbg)
 
 pwn 手必备 装了附带`checksec`和`ROPgadget`
 
