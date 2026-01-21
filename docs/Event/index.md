@@ -866,6 +866,10 @@ hide:
                 **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
                 **添加日历** : https://ctftime.org/event/2916.ics  
                 
+    === "*已经结束*"
+        === "国内赛事"
+    
+        === "国外赛事"
             ??? Quote "[KnightCTF 2026](https://2026.knightctf.com/)"  
                 [![](https://ctftime.org/media/events/knightctf-logo.png){ width="200" align=left }](https://2026.knightctf.com/)  
                 **比赛名称** : [KnightCTF 2026](https://2026.knightctf.com/)  
@@ -875,10 +879,6 @@ hide:
                 **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
                 **添加日历** : https://ctftime.org/event/3053.ics  
                 
-    === "*已经结束*"
-        === "国内赛事"
-    
-        === "国外赛事"
             ??? Quote "[SWIMMER OSINT CTF](https://swimmer.diverctf.org/)"  
                 [![](https://ctftime.org/media/events/circle-white-text.png){ width="200" align=left }](https://swimmer.diverctf.org/)  
                 **比赛名称** : [SWIMMER OSINT CTF](https://swimmer.diverctf.org/)  
@@ -1769,15 +1769,6 @@ hide:
                 **比赛权重** : 70.50  
                 **赛事主办** : Securinets (https://ctftime.org/team/5084)  
                 **添加日历** : https://ctftime.org/event/2884.ics  
-                
-            ??? Quote "[CRAC CTF - Cloud and IAM CTF](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)"  
-                [![](https://ctftime.org/media/events/defhawklogo.png){ width="200" align=left }](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)  
-                **比赛名称** : [CRAC CTF - Cloud and IAM CTF](https://defhawk.com/battleground/raid/cloud-and-iam-ctf)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-04 16:30:00 - 2025-10-04 19:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : h4wk (https://ctftime.org/team/277994)  
-                **添加日历** : https://ctftime.org/event/2954.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
