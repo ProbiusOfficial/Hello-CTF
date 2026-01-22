@@ -556,15 +556,6 @@ hide:
                 **赛事主办** : EPIHACK (https://ctftime.org/team/419202)  
                 **添加日历** : https://ctftime.org/event/3076.ics  
                 
-            ??? Quote "[BearcatCTF 2026 - Setting Sail](https://bearcatctf.io/)"  
-                [![](https://ctftime.org/media/events/bearcat26_logo_black.png){ width="200" align=left }](https://bearcatctf.io/)  
-                **比赛名称** : [BearcatCTF 2026 - Setting Sail](https://bearcatctf.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-02-22 01:00:00 - 2026-02-23 01:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
-                **添加日历** : https://ctftime.org/event/3046.ics  
-                
             ??? Quote "[Srdnlen CTF 2026 Quals](https://ctf.srdnlen.it/)"  
                 [![](https://ctftime.org/media/events/e04b66f1d17c437f935e29d0fbe7beed_1.png){ width="200" align=left }](https://ctf.srdnlen.it/)  
                 **比赛名称** : [Srdnlen CTF 2026 Quals](https://ctf.srdnlen.it/)  

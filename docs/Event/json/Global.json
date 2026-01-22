@@ -312,18 +312,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "BearcatCTF 2026 - Setting Sail",
-        "比赛时间": "2026-02-22 01:00:00 - 2026-02-23 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3046.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://bearcatctf.io/",
-        "比赛标志": "https://ctftime.org/media/events/bearcat26_logo_black.png",
-        "比赛权重": "0",
-        "赛事主办": "Cyber@UC (https://ctftime.org/team/87727)",
-        "比赛ID": "1032",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Srdnlen CTF 2026 Quals",
         "比赛时间": "2026-03-01 02:00:00 - 2026-03-01 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3043.ics",
