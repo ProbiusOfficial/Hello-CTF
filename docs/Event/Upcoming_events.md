@@ -29,15 +29,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[MetaCTF January 2026 Flash CTF](https://mctf.io/jan2026)"  
-    [![](){ width="200" align=left }](https://mctf.io/jan2026)  
-    **比赛名称** : [MetaCTF January 2026 Flash CTF](https://mctf.io/jan2026)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-23 06:00:00 - 2026-01-23 09:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
-    **添加日历** : https://ctftime.org/event/3079.ics  
-    
 ??? Quote "[0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)"  
     [![](){ width="200" align=left }](https://ctf.0xL4ugh.com/)  
     **比赛名称** : [0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)  
