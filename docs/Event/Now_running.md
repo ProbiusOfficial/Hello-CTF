@@ -27,3 +27,21 @@ comments: true
     **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
     **添加日历** : https://ctftime.org/event/3024.ics  
     
+??? Quote "[Säkerhets-SM Quals 2026](https://ctf.sakerhetssm.se/)"  
+    [![](){ width="200" align=left }](https://ctf.sakerhetssm.se/)  
+    **比赛名称** : [Säkerhets-SM Quals 2026](https://ctf.sakerhetssm.se/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-24 03:00:00 - 2026-01-26 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Kodsport (https://ctftime.org/team/395272)  
+    **添加日历** : https://ctftime.org/event/2945.ics  
+    
+??? Quote "[HackDay 2026 - Qualifications](https://register.hackday.fr/register/)"  
+    [![](https://ctftime.org/media/events/5513a205a0a6489f9dc0ecff6fd7d669.png){ width="200" align=left }](https://register.hackday.fr/register/)  
+    **比赛名称** : [HackDay 2026 - Qualifications](https://register.hackday.fr/register/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-24 03:00:00 - 2026-01-26 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
+    **添加日历** : https://ctftime.org/event/3038.ics  
+    

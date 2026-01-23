@@ -1,29 +1,5 @@
 [
     {
-        "比赛名称": "Säkerhets-SM Quals 2026",
-        "比赛时间": "2026-01-24 03:00:00 - 2026-01-26 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2945.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.sakerhetssm.se/",
-        "比赛标志": "",
-        "比赛权重": "0",
-        "赛事主办": "Kodsport (https://ctftime.org/team/395272)",
-        "比赛ID": "1372",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "HackDay 2026 - Qualifications",
-        "比赛时间": "2026-01-24 03:00:00 - 2026-01-26 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3038.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://register.hackday.fr/register/",
-        "比赛标志": "https://ctftime.org/media/events/5513a205a0a6489f9dc0ecff6fd7d669.png",
-        "比赛权重": "0",
-        "赛事主办": "HackDayCTF (https://ctftime.org/team/277562)",
-        "比赛ID": "1060",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Dreamhack Invitational Quals 2026",
         "比赛时间": "2026-01-24 08:00:00 - 2026-01-25 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3025.ics",
@@ -693,6 +669,30 @@
         "比赛权重": "0",
         "赛事主办": "0xL4ugh (https://ctftime.org/team/132776)",
         "比赛ID": "579",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Säkerhets-SM Quals 2026",
+        "比赛时间": "2026-01-24 03:00:00 - 2026-01-26 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2945.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.sakerhetssm.se/",
+        "比赛标志": "",
+        "比赛权重": "0",
+        "赛事主办": "Kodsport (https://ctftime.org/team/395272)",
+        "比赛ID": "1372",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "HackDay 2026 - Qualifications",
+        "比赛时间": "2026-01-24 03:00:00 - 2026-01-26 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3038.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://register.hackday.fr/register/",
+        "比赛标志": "https://ctftime.org/media/events/5513a205a0a6489f9dc0ecff6fd7d669.png",
+        "比赛权重": "0",
+        "赛事主办": "HackDayCTF (https://ctftime.org/team/277562)",
+        "比赛ID": "1060",
         "比赛状态": "nowrunning"
     },
     {

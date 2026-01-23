@@ -322,24 +322,6 @@ hide:
                 **其他说明** : furryCTF 2025是一款直至目前花销自理的，具有一定娱乐性质的，安徽师范大学计算机爱好者协会协办的网络与信息安全新神赛，初心是不为盈利，Hack for fun！比赛允许使用AI，我们鼓励选手能在比赛中合理的将AI当做辅助解题的工具。同时我们不限制搜索引擎的使用，除了因为确实也不好限制以外，我们鼓励选手能从比赛过程中通过思考与探索学到更多知识。比赛链接：furryCTF 2025正赛（比赛时间为2026年1月30日中午12点~2月2日中午12点，共72小时）： https://furryctf.com/games/2。官方交流群QQ:746480442。  
                 
         === "国外赛事"
-            ??? Quote "[Säkerhets-SM Quals 2026](https://ctf.sakerhetssm.se/)"  
-                [![](){ width="200" align=left }](https://ctf.sakerhetssm.se/)  
-                **比赛名称** : [Säkerhets-SM Quals 2026](https://ctf.sakerhetssm.se/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-01-24 03:00:00 - 2026-01-26 03:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Kodsport (https://ctftime.org/team/395272)  
-                **添加日历** : https://ctftime.org/event/2945.ics  
-                
-            ??? Quote "[HackDay 2026 - Qualifications](https://register.hackday.fr/register/)"  
-                [![](https://ctftime.org/media/events/5513a205a0a6489f9dc0ecff6fd7d669.png){ width="200" align=left }](https://register.hackday.fr/register/)  
-                **比赛名称** : [HackDay 2026 - Qualifications](https://register.hackday.fr/register/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-01-24 03:00:00 - 2026-01-26 03:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
-                **添加日历** : https://ctftime.org/event/3038.ics  
-                
             ??? Quote "[Dreamhack Invitational Quals 2026](https://dreamhack.io/ctf/772)"  
                 [![](https://ctftime.org/media/events/e66fed5653581908ac8e93f82ad73cae_2.jpg){ width="200" align=left }](https://dreamhack.io/ctf/772)  
                 **比赛名称** : [Dreamhack Invitational Quals 2026](https://dreamhack.io/ctf/772)  
@@ -847,6 +829,24 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
                 **添加日历** : https://ctftime.org/event/3024.ics  
+                
+            ??? Quote "[Säkerhets-SM Quals 2026](https://ctf.sakerhetssm.se/)"  
+                [![](){ width="200" align=left }](https://ctf.sakerhetssm.se/)  
+                **比赛名称** : [Säkerhets-SM Quals 2026](https://ctf.sakerhetssm.se/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-01-24 03:00:00 - 2026-01-26 03:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Kodsport (https://ctftime.org/team/395272)  
+                **添加日历** : https://ctftime.org/event/2945.ics  
+                
+            ??? Quote "[HackDay 2026 - Qualifications](https://register.hackday.fr/register/)"  
+                [![](https://ctftime.org/media/events/5513a205a0a6489f9dc0ecff6fd7d669.png){ width="200" align=left }](https://register.hackday.fr/register/)  
+                **比赛名称** : [HackDay 2026 - Qualifications](https://register.hackday.fr/register/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-01-24 03:00:00 - 2026-01-26 03:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
+                **添加日历** : https://ctftime.org/event/3038.ics  
                 
     === "*已经结束*"
         === "国内赛事"
