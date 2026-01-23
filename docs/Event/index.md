@@ -326,7 +326,7 @@ hide:
                 [![](){ width="200" align=left }](https://ctf.0xL4ugh.com/)  
                 **比赛名称** : [0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)  
                 **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-01-23 21:00:00 - 2026-01-25 09:00:00 UTC+8  
+                **比赛时间** : 2026-01-23 21:00:00 - 2026-01-25 21:00:00 UTC+8  
                 **比赛权重** : 0.00  
                 **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
                 **添加日历** : https://ctftime.org/event/3024.ics  
@@ -848,6 +848,10 @@ hide:
                 **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
                 **添加日历** : https://ctftime.org/event/2916.ics  
                 
+    === "*已经结束*"
+        === "国内赛事"
+    
+        === "国外赛事"
             ??? Quote "[MetaCTF January 2026 Flash CTF](https://mctf.io/jan2026)"  
                 [![](){ width="200" align=left }](https://mctf.io/jan2026)  
                 **比赛名称** : [MetaCTF January 2026 Flash CTF](https://mctf.io/jan2026)  
@@ -857,10 +861,6 @@ hide:
                 **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
                 **添加日历** : https://ctftime.org/event/3079.ics  
                 
-    === "*已经结束*"
-        === "国内赛事"
-    
-        === "国外赛事"
             ??? Quote "[KnightCTF 2026](https://2026.knightctf.com/)"  
                 [![](https://ctftime.org/media/events/knightctf-logo.png){ width="200" align=left }](https://2026.knightctf.com/)  
                 **比赛名称** : [KnightCTF 2026](https://2026.knightctf.com/)  
@@ -1751,15 +1751,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : STANDOFF 365 (https://ctftime.org/team/388543)  
                 **添加日历** : https://ctftime.org/event/2885.ics  
-                
-            ??? Quote "[Securinets CTF Quals 2025](https://quals.securinets.tn/)"  
-                [![](https://ctftime.org/media/events/19b8d9cf1e7d16e4cb0ad2bce435fb79.png){ width="200" align=left }](https://quals.securinets.tn/)  
-                **比赛名称** : [Securinets CTF Quals 2025](https://quals.securinets.tn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-04 21:00:00 - 2025-10-06 05:00:00 UTC+8  
-                **比赛权重** : 70.50  
-                **赛事主办** : Securinets (https://ctftime.org/team/5084)  
-                **添加日历** : https://ctftime.org/event/2884.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
