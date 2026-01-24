@@ -29,15 +29,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Fluid Attacks' CTF 2026-1](https://fluidattacks.com/ctf)"  
-    [![](https://ctftime.org/media/events/2.jpg){ width="200" align=left }](https://fluidattacks.com/ctf)  
-    **比赛名称** : [Fluid Attacks' CTF 2026-1](https://fluidattacks.com/ctf)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-24 21:00:00 - 2026-01-25 21:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Fluid Attacks (https://ctftime.org/team/126627)  
-    **添加日历** : https://ctftime.org/event/3087.ics  
-    
 ??? Quote "[CyberQuest 26](https://ngpkanam.com/events/41)"  
     [![](https://ctftime.org/media/events/WhatsApp_Image_2026-01-15_at_16.42.06.jpeg){ width="200" align=left }](https://ngpkanam.com/events/41)  
     **比赛名称** : [CyberQuest 26](https://ngpkanam.com/events/41)  

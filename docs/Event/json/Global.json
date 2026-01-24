@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Fluid Attacks' CTF 2026-1",
-        "比赛时间": "2026-01-24 21:00:00 - 2026-01-25 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3087.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://fluidattacks.com/ctf",
-        "比赛标志": "https://ctftime.org/media/events/2.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Fluid Attacks (https://ctftime.org/team/126627)",
-        "比赛ID": "1427",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "CyberQuest 26",
         "比赛时间": "2026-01-28 11:30:00 - 2026-01-28 19:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3080.ics",
@@ -693,6 +681,18 @@
         "比赛权重": "0",
         "赛事主办": "VSL (https://ctftime.org/team/284373)",
         "比赛ID": "1448",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Fluid Attacks' CTF 2026-1",
+        "比赛时间": "2026-01-24 21:00:00 - 2026-01-25 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3087.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://fluidattacks.com/ctf",
+        "比赛标志": "https://ctftime.org/media/events/2.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Fluid Attacks (https://ctftime.org/team/126627)",
+        "比赛ID": "1427",
         "比赛状态": "nowrunning"
     },
     {
