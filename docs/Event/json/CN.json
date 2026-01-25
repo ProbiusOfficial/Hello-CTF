@@ -3,26 +3,6 @@
     "data": {
         "result": [
             {
-                "name": "UniCTF",
-                "info_confirmed": 1,
-                "mid_join": null,
-                "link": "https://unictf.play.ctfplus.cn/",
-                "status": "即将开始",
-                "is_reg": null,
-                "limit": 4,
-                "type": "线上Jeopardy解题赛",
-                "reg_time_start": "2026年01月09日 10:09",
-                "reg_time_end": "2026年01月25日 09:59",
-                "comp_time_start": "2026年01月25日 10:00",
-                "comp_time_end": "2026年01月31日 10:00",
-                "organizer": "",
-                "contac": {
-                    "QQ群": "1077228135"
-                },
-                "tag": "公益赛",
-                "readmore": "4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。"
-            },
-            {
                 "name": "HGAME 2026",
                 "info_confirmed": 1,
                 "mid_join": 0,
@@ -61,6 +41,26 @@
                 },
                 "tag": "公益赛",
                 "readmore": "furryCTF 2025是一款直至目前花销自理的，具有一定娱乐性质的，安徽师范大学计算机爱好者协会协办的网络与信息安全新神赛，初心是不为盈利，Hack for fun！比赛允许使用AI，我们鼓励选手能在比赛中合理的将AI当做辅助解题的工具。同时我们不限制搜索引擎的使用，除了因为确实也不好限制以外，我们鼓励选手能从比赛过程中通过思考与探索学到更多知识。比赛链接：furryCTF 2025正赛（比赛时间为2026年1月30日中午12点~2月2日中午12点，共72小时）： https://furryctf.com/games/2。官方交流群QQ:746480442。"
+            },
+            {
+                "name": "UniCTF",
+                "info_confirmed": 1,
+                "mid_join": null,
+                "link": "https://unictf.play.ctfplus.cn/",
+                "status": "正在进行",
+                "is_reg": null,
+                "limit": 4,
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2026年01月09日 10:09",
+                "reg_time_end": "2026年01月25日 09:59",
+                "comp_time_start": "2026年01月25日 10:00",
+                "comp_time_end": "2026年01月31日 10:00",
+                "organizer": "",
+                "contac": {
+                    "QQ群": "1077228135"
+                },
+                "tag": "公益赛",
+                "readmore": "4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。"
             }
         ],
         "total": 77,
