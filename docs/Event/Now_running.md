@@ -24,15 +24,6 @@ comments: true
     **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
     **添加日历** : https://ctftime.org/event/2916.ics  
     
-??? Quote "[0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)"  
-    [![](){ width="200" align=left }](https://ctf.0xL4ugh.com/)  
-    **比赛名称** : [0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-23 21:00:00 - 2026-01-25 21:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
-    **添加日历** : https://ctftime.org/event/3024.ics  
-    
 ??? Quote "[Säkerhets-SM Quals 2026](https://ctf.sakerhetssm.se/)"  
     [![](){ width="200" align=left }](https://ctf.sakerhetssm.se/)  
     **比赛名称** : [Säkerhets-SM Quals 2026](https://ctf.sakerhetssm.se/)  
@@ -59,13 +50,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Lilac (https://ctftime.org/team/15163)  
     **添加日历** : https://ctftime.org/event/3071.ics  
-    
-??? Quote "[Fluid Attacks' CTF 2026-1](https://fluidattacks.com/ctf)"  
-    [![](https://ctftime.org/media/events/2.jpg){ width="200" align=left }](https://fluidattacks.com/ctf)  
-    **比赛名称** : [Fluid Attacks' CTF 2026-1](https://fluidattacks.com/ctf)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-24 21:00:00 - 2026-01-25 21:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Fluid Attacks (https://ctftime.org/team/126627)  
-    **添加日历** : https://ctftime.org/event/3087.ics  
     

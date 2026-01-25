@@ -284,12 +284,12 @@ hide:
             适度CTF益脑，沉迷CTF伤身。合理安排时间，享受健康生活。
     
     === "*正在报名*"
-        ??? Quote "[furryCTF 2025](https://furryctf.com/games/2)"  
-            **比赛名称** : [furryCTF 2025](https://furryctf.com/games/2)  
+        ??? Quote "[furryCTF 2025 高校联合新神赛](https://furryctf.com/)"  
+            **比赛名称** : [furryCTF 2025 高校联合新神赛](https://furryctf.com/)  
             **比赛类型** : 线上Jeopardy解题赛  
-            **报名时间** : 2026年1月1日 00:00 - 2026年1月30日 11:59  
-            **比赛时间** : 2026年1月30日 12:00 - 2026年2月2日 12:00  
-            **其他说明** : furryCTF 2025是一款直至目前花销自理的，具有一定娱乐性质的，安徽师范大学计算机爱好者协会协办的网络与信息安全新神赛，初心是不为盈利，Hack for fun！比赛允许使用AI，我们鼓励选手能在比赛中合理的将AI当做辅助解题的工具。同时我们不限制搜索引擎的使用，除了因为确实也不好限制以外，我们鼓励选手能从比赛过程中通过思考与探索学到更多知识。比赛链接：furryCTF 2025正赛（比赛时间为2026年1月30日中午12点~2月2日中午12点，共72小时）： https://furryctf.com/games/2。官方交流群QQ:746480442。  
+            **报名时间** : 2026年01月01日 00:00 - 2026年02月04日 12:00  
+            **比赛时间** : 2026年01月30日 12:00 - 2026年02月04日 12:00  
+            **其他说明** : 主办方为furryCTF及POFP联合战队，严禁攻击平台或使用扫描器，设有多种奖品，详情请到QQ群查看；祝各位玩的开心~  
             
     === "*即将开始*"
         === "国内赛事"
@@ -300,12 +300,12 @@ hide:
                 **比赛时间** : 2026年02月02日 10:00 - 2026年02月15日 20:00  
                 **其他说明** : HGAME 2026 是一场由Vidar-Team组织的线上Jeopardy解题赛，。报名从2026年01月26日00:00开始，到2026年02月15日20:00结束。比赛从2026年02月02日10:00开始，至2026年02月15日20:00结束。更多信息，请加入QQ群576834793。  
                 
-            ??? Quote "[furryCTF 2025](https://furryctf.com/games/2)"  
-                **比赛名称** : [furryCTF 2025](https://furryctf.com/games/2)  
+            ??? Quote "[furryCTF 2025 高校联合新神赛](https://furryctf.com/)"  
+                **比赛名称** : [furryCTF 2025 高校联合新神赛](https://furryctf.com/)  
                 **比赛类型** : 线上Jeopardy解题赛  
-                **报名时间** : 2026年1月1日 00:00 - 2026年1月30日 11:59  
-                **比赛时间** : 2026年1月30日 12:00 - 2026年2月2日 12:00  
-                **其他说明** : furryCTF 2025是一款直至目前花销自理的，具有一定娱乐性质的，安徽师范大学计算机爱好者协会协办的网络与信息安全新神赛，初心是不为盈利，Hack for fun！比赛允许使用AI，我们鼓励选手能在比赛中合理的将AI当做辅助解题的工具。同时我们不限制搜索引擎的使用，除了因为确实也不好限制以外，我们鼓励选手能从比赛过程中通过思考与探索学到更多知识。比赛链接：furryCTF 2025正赛（比赛时间为2026年1月30日中午12点~2月2日中午12点，共72小时）： https://furryctf.com/games/2。官方交流群QQ:746480442。  
+                **报名时间** : 2026年01月01日 00:00 - 2026年02月04日 12:00  
+                **比赛时间** : 2026年01月30日 12:00 - 2026年02月04日 12:00  
+                **其他说明** : 主办方为furryCTF及POFP联合战队，严禁攻击平台或使用扫描器，设有多种奖品，详情请到QQ群查看；祝各位玩的开心~  
                 
         === "国外赛事"
             ??? Quote "[CyberQuest 26](https://ngpkanam.com/events/41)"  
@@ -777,15 +777,6 @@ hide:
                 **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
                 **添加日历** : https://ctftime.org/event/2916.ics  
                 
-            ??? Quote "[0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)"  
-                [![](){ width="200" align=left }](https://ctf.0xL4ugh.com/)  
-                **比赛名称** : [0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-01-23 21:00:00 - 2026-01-25 21:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
-                **添加日历** : https://ctftime.org/event/3024.ics  
-                
             ??? Quote "[Säkerhets-SM Quals 2026](https://ctf.sakerhetssm.se/)"  
                 [![](){ width="200" align=left }](https://ctf.sakerhetssm.se/)  
                 **比赛名称** : [Säkerhets-SM Quals 2026](https://ctf.sakerhetssm.se/)  
@@ -813,6 +804,10 @@ hide:
                 **赛事主办** : Lilac (https://ctftime.org/team/15163)  
                 **添加日历** : https://ctftime.org/event/3071.ics  
                 
+    === "*已经结束*"
+        === "国内赛事"
+    
+        === "国外赛事"
             ??? Quote "[Fluid Attacks' CTF 2026-1](https://fluidattacks.com/ctf)"  
                 [![](https://ctftime.org/media/events/2.jpg){ width="200" align=left }](https://fluidattacks.com/ctf)  
                 **比赛名称** : [Fluid Attacks' CTF 2026-1](https://fluidattacks.com/ctf)  
@@ -822,10 +817,6 @@ hide:
                 **赛事主办** : Fluid Attacks (https://ctftime.org/team/126627)  
                 **添加日历** : https://ctftime.org/event/3087.ics  
                 
-    === "*已经结束*"
-        === "国内赛事"
-    
-        === "国外赛事"
             ??? Quote "[VSL CTF 2026](https://vsl-ctf.com/)"  
                 [![](https://ctftime.org/media/events/logo_16.jpg){ width="200" align=left }](https://vsl-ctf.com/)  
                 **比赛名称** : [VSL CTF 2026](https://vsl-ctf.com/)  
@@ -843,6 +834,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
                 **添加日历** : https://ctftime.org/event/3025.ics  
+                
+            ??? Quote "[0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)"  
+                [![](){ width="200" align=left }](https://ctf.0xL4ugh.com/)  
+                **比赛名称** : [0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-01-23 21:00:00 - 2026-01-25 21:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
+                **添加日历** : https://ctftime.org/event/3024.ics  
                 
             ??? Quote "[MetaCTF January 2026 Flash CTF](https://mctf.io/jan2026)"  
                 [![](){ width="200" align=left }](https://mctf.io/jan2026)  
@@ -1707,24 +1707,6 @@ hide:
                 **比赛权重** : 26.50  
                 **赛事主办** : OWASP_PCCOE-CORE (https://ctftime.org/team/206360)  
                 **添加日历** : https://ctftime.org/event/2968.ics  
-                
-            ??? Quote "[PermCTF 2025](https://permctf2025.pstu.ru/)"  
-                [![](https://ctftime.org/media/events/photo_2025-11-07_12-25-37.jpg){ width="200" align=left }](https://permctf2025.pstu.ru/)  
-                **比赛名称** : [PermCTF 2025](https://permctf2025.pstu.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-11 12:30:00 - 2025-10-11 22:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : E-Toolz (https://ctftime.org/team/61508)  
-                **添加日历** : https://ctftime.org/event/3000.ics  
-                
-            ??? Quote "[EnigmaXplore 3.0](https://enigmaxplore.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/TFLOGO.jpg){ width="200" align=left }](https://enigmaxplore.ctfd.io/)  
-                **比赛名称** : [EnigmaXplore 3.0](https://enigmaxplore.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-10 20:30:00 - 2025-10-11 08:30:00 UTC+8  
-                **比赛权重** : 24.58  
-                **赛事主办** : Crispr_iiitn (https://ctftime.org/team/270138)  
-                **添加日历** : https://ctftime.org/event/2957.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
