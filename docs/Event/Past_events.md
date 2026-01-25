@@ -8,6 +8,15 @@ comments: true
 
 
 ## 国际赛事
+??? Quote "[Dreamhack Invitational Quals 2026](https://dreamhack.io/ctf/772)"  
+    [![](https://ctftime.org/media/events/e66fed5653581908ac8e93f82ad73cae_2.jpg){ width="200" align=left }](https://dreamhack.io/ctf/772)  
+    **比赛名称** : [Dreamhack Invitational Quals 2026](https://dreamhack.io/ctf/772)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-24 08:00:00 - 2026-01-25 08:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
+    **添加日历** : https://ctftime.org/event/3025.ics  
+    
 ??? Quote "[MetaCTF January 2026 Flash CTF](https://mctf.io/jan2026)"  
     [![](){ width="200" align=left }](https://mctf.io/jan2026)  
     **比赛名称** : [MetaCTF January 2026 Flash CTF](https://mctf.io/jan2026)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Astek Group (https://ctftime.org/team/407057)  
     **添加日历** : https://ctftime.org/event/2959.ics  
-    
-??? Quote "[Standoff Cyberbattle 16](https://16.standoff365.com/en/)"  
-    [![](https://ctftime.org/media/events/f31eca683184a4547ea20f1fa984fb70.png){ width="200" align=left }](https://16.standoff365.com/en/)  
-    **比赛名称** : [Standoff Cyberbattle 16](https://16.standoff365.com/en/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2025-10-06 14:00:00 - 2025-10-08 23:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : STANDOFF 365 (https://ctftime.org/team/388543)  
-    **添加日历** : https://ctftime.org/event/2885.ics  
     
