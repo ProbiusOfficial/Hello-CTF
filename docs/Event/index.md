@@ -820,15 +820,6 @@ hide:
                 **赛事主办** : Lilac (https://ctftime.org/team/15163)  
                 **添加日历** : https://ctftime.org/event/3071.ics  
                 
-            ??? Quote "[VSL CTF 2026](https://vsl-ctf.com/)"  
-                [![](https://ctftime.org/media/events/logo_16.jpg){ width="200" align=left }](https://vsl-ctf.com/)  
-                **比赛名称** : [VSL CTF 2026](https://vsl-ctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-01-24 16:00:00 - 2026-01-25 16:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : VSL (https://ctftime.org/team/284373)  
-                **添加日历** : https://ctftime.org/event/3060.ics  
-                
             ??? Quote "[Fluid Attacks' CTF 2026-1](https://fluidattacks.com/ctf)"  
                 [![](https://ctftime.org/media/events/2.jpg){ width="200" align=left }](https://fluidattacks.com/ctf)  
                 **比赛名称** : [Fluid Attacks' CTF 2026-1](https://fluidattacks.com/ctf)  
@@ -842,6 +833,15 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
+            ??? Quote "[VSL CTF 2026](https://vsl-ctf.com/)"  
+                [![](https://ctftime.org/media/events/logo_16.jpg){ width="200" align=left }](https://vsl-ctf.com/)  
+                **比赛名称** : [VSL CTF 2026](https://vsl-ctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-01-24 16:00:00 - 2026-01-25 16:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : VSL (https://ctftime.org/team/284373)  
+                **添加日历** : https://ctftime.org/event/3060.ics  
+                
             ??? Quote "[Dreamhack Invitational Quals 2026](https://dreamhack.io/ctf/772)"  
                 [![](https://ctftime.org/media/events/e66fed5653581908ac8e93f82ad73cae_2.jpg){ width="200" align=left }](https://dreamhack.io/ctf/772)  
                 **比赛名称** : [Dreamhack Invitational Quals 2026](https://dreamhack.io/ctf/772)  
@@ -1732,15 +1732,6 @@ hide:
                 **比赛权重** : 24.58  
                 **赛事主办** : Crispr_iiitn (https://ctftime.org/team/270138)  
                 **添加日历** : https://ctftime.org/event/2957.ics  
-                
-            ??? Quote "[ECW Online Qualifiers](https://challenge-ecw.eu/)"  
-                [![](https://ctftime.org/media/events/logo_115.png){ width="200" align=left }](https://challenge-ecw.eu/)  
-                **比赛名称** : [ECW Online Qualifiers](https://challenge-ecw.eu/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-08 20:00:00 - 2025-10-22 22:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Astek Group (https://ctftime.org/team/407057)  
-                **添加日历** : https://ctftime.org/event/2959.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
