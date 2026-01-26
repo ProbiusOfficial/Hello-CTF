@@ -24,12 +24,3 @@ comments: true
     **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
     **添加日历** : https://ctftime.org/event/2916.ics  
     
-??? Quote "[LilacCTF 2026](https://lilacctf2026.xctf.org.cn/)"  
-    [![](https://ctftime.org/media/events/square.jpg){ width="200" align=left }](https://lilacctf2026.xctf.org.cn/)  
-    **比赛名称** : [LilacCTF 2026](https://lilacctf2026.xctf.org.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-24 09:00:00 - 2026-01-26 09:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Lilac (https://ctftime.org/team/15163)  
-    **添加日历** : https://ctftime.org/event/3071.ics  
-    
