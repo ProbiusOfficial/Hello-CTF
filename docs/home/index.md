@@ -94,14 +94,14 @@ hide:
             **赛事主办** : Jeanne d'Hack CTF (https://ctftime.org/team/283058)  
             **添加日历** : https://ctftime.org/event/2941.ics  
             
-        ??? Quote "[ATC Winter Vibes Community CTF 2.0](https://atcwintervibesctf.com/)"  
-            [![](https://ctftime.org/media/events/ATC_Logo.PNG){ width="200" align=left }](https://atcwintervibesctf.com/)  
-            **比赛名称** : [ATC Winter Vibes Community CTF 2.0](https://atcwintervibesctf.com/)  
+        ??? Quote "[ASCF CTF](https://ctf.ascf.space/)"  
+            [![](https://ctftime.org/media/events/ascf1.png){ width="200" align=left }](https://ctf.ascf.space/)  
+            **比赛名称** : [ASCF CTF](https://ctf.ascf.space/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-01-30 22:00:00 - 2026-01-31 22:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : ATC CTF Team (https://ctftime.org/team/370333)  
-            **添加日历** : https://ctftime.org/event/3068.ics  
+            **比赛时间** : 2026-01-30 17:00:00 - 2026-01-31 17:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : ASCF (https://ctftime.org/team/418960)  
+            **添加日历** : https://ctftime.org/event/3099.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
