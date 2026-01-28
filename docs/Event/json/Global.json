@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "CyberQuest 26",
-        "比赛时间": "2026-01-28 11:30:00 - 2026-01-28 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3080.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ngpkanam.com/events/41",
-        "比赛标志": "https://ctftime.org/media/events/WhatsApp_Image_2026-01-15_at_16.42.06.jpeg",
-        "比赛权重": "0.00",
-        "赛事主办": "Cybernexus (https://ctftime.org/team/400801)",
-        "比赛ID": "1473",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Hack for a Change 2026 January: UN SDG 15",
         "比赛时间": "2026-01-30 08:00:00 - 2026-02-03 07:59:59 UTC+8",
         "添加日历": "https://ctftime.org/event/3083.ics",
@@ -717,6 +705,18 @@
         "比赛权重": "0",
         "赛事主办": "ectfmitre (https://ctftime.org/team/87292)",
         "比赛ID": "364",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CyberQuest 26",
+        "比赛时间": "2026-01-28 11:30:00 - 2026-01-28 19:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3080.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ngpkanam.com/events/41",
+        "比赛标志": "https://ctftime.org/media/events/WhatsApp_Image_2026-01-15_at_16.42.06.jpeg",
+        "比赛权重": "0.00",
+        "赛事主办": "Cybernexus (https://ctftime.org/team/400801)",
+        "比赛ID": "1473",
         "比赛状态": "nowrunning"
     },
     {
