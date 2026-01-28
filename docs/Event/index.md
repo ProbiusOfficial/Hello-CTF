@@ -585,9 +585,9 @@ hide:
                 **赛事主办** : wolvsec (https://ctftime.org/team/83621)  
                 **添加日历** : https://ctftime.org/event/3049.ics  
                 
-            ??? Quote "[tkbctf5](http://tkbctf.info/)"  
-                [![](https://ctftime.org/media/events/tkbctf_logo.png){ width="200" align=left }](http://tkbctf.info/)  
-                **比赛名称** : [tkbctf5](http://tkbctf.info/)  
+            ??? Quote "[tkbctf5](https://tkbctf.info/)"  
+                [![](https://ctftime.org/media/events/tkbctf_logo.png){ width="200" align=left }](https://tkbctf.info/)  
+                **比赛名称** : [tkbctf5](https://tkbctf.info/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-03-14 13:00:00 - 2026-03-15 13:00:00 UTC+8  
                 **比赛权重** : 0.00  
