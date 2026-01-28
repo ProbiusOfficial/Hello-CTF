@@ -856,6 +856,10 @@ hide:
                 **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
                 **添加日历** : https://ctftime.org/event/2916.ics  
                 
+    === "*已经结束*"
+        === "国内赛事"
+    
+        === "国外赛事"
             ??? Quote "[CyberQuest 26](https://ngpkanam.com/events/41)"  
                 [![](https://ctftime.org/media/events/WhatsApp_Image_2026-01-15_at_16.42.06.jpeg){ width="200" align=left }](https://ngpkanam.com/events/41)  
                 **比赛名称** : [CyberQuest 26](https://ngpkanam.com/events/41)  
@@ -865,10 +869,6 @@ hide:
                 **赛事主办** : Cybernexus (https://ctftime.org/team/400801)  
                 **添加日历** : https://ctftime.org/event/3080.ics  
                 
-    === "*已经结束*"
-        === "国内赛事"
-    
-        === "国外赛事"
             ??? Quote "[Fluid Attacks' CTF 2026-1](https://fluidattacks.com/ctf)"  
                 [![](https://ctftime.org/media/events/2.jpg){ width="200" align=left }](https://fluidattacks.com/ctf)  
                 **比赛名称** : [Fluid Attacks' CTF 2026-1](https://fluidattacks.com/ctf)  
@@ -1759,15 +1759,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Hackfest.ca (https://ctftime.org/team/125608)  
                 **添加日历** : https://ctftime.org/event/2922.ics  
-                
-            ??? Quote "[QnQSec CTF 2025](https://ctf.qnqsec.team/)"  
-                [![](https://ctftime.org/media/events/Logo_QnQSec.jpg){ width="200" align=left }](https://ctf.qnqsec.team/)  
-                **比赛名称** : [QnQSec CTF 2025](https://ctf.qnqsec.team/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-17 02:00:00 - 2025-10-20 02:00:00 UTC+8  
-                **比赛权重** : 24.76  
-                **赛事主办** : QnQSec (https://ctftime.org/team/367683)  
-                **添加日历** : https://ctftime.org/event/2826.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

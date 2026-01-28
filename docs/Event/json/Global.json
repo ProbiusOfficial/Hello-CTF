@@ -717,7 +717,7 @@
         "比赛权重": "0.00",
         "赛事主办": "Cybernexus (https://ctftime.org/team/400801)",
         "比赛ID": "1473",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Fluid Attacks' CTF 2026-1",
@@ -1905,18 +1905,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Hackfest.ca (https://ctftime.org/team/125608)",
         "比赛ID": "473",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "QnQSec CTF 2025",
-        "比赛时间": "2025-10-17 02:00:00 - 2025-10-20 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2826.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.qnqsec.team/",
-        "比赛标志": "https://ctftime.org/media/events/Logo_QnQSec.jpg",
-        "比赛权重": "24.76",
-        "赛事主办": "QnQSec (https://ctftime.org/team/367683)",
-        "比赛ID": "1347",
         "比赛状态": "past"
     }
 ]
