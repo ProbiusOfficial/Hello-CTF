@@ -22,15 +22,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Hack for a Change 2026 January: UN SDG 15](http://www.hackforachange.org/)"  
-    [![](https://ctftime.org/media/events/logo_117.png){ width="200" align=left }](http://www.hackforachange.org/)  
-    **比赛名称** : [Hack for a Change 2026 January: UN SDG 15](http://www.hackforachange.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-30 08:00:00 - 2026-02-03 07:59:59 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
-    **添加日历** : https://ctftime.org/event/3083.ics  
-    
 ??? Quote "[Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)"  
     [![](https://ctftime.org/media/events/LogoAlt.png){ width="200" align=left }](https://www.jeanne-hack-ctf.org/)  
     **比赛名称** : [Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)  
