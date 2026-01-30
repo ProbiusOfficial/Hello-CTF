@@ -52,13 +52,6 @@ hide:
     ---
     <!-- 主页赛事展示_开始 -->
     === "国内比赛"
-        ??? Quote "[furryCTF 2025 高校联合新神赛](https://furryctf.com/)"  
-            **比赛名称** : [furryCTF 2025 高校联合新神赛](https://furryctf.com/)  
-            **比赛类型** : 线上Jeopardy解题赛  
-            **报名时间** : 2026年01月01日 00:00 - 2026年02月04日 12:00  
-            **比赛时间** : 2026年01月30日 12:00 - 2026年02月04日 12:00  
-            **其他说明** : 主办方为furryCTF及POFP联合战队，严禁攻击平台或使用扫描器，设有多种奖品，详情请到QQ群查看；祝各位玩的开心~  
-            
         ??? Quote "[HGAME 2026](https://hgame.vidar.club/)"  
             **比赛名称** : [HGAME 2026](https://hgame.vidar.club/)  
             **比赛类型** : 线上Jeopardy解题赛  
