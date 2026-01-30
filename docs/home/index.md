@@ -87,14 +87,14 @@ hide:
             **赛事主办** : ATC CTF Team (https://ctftime.org/team/370333)  
             **添加日历** : https://ctftime.org/event/3068.ics  
             
-        ??? Quote "[Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)"  
-            [![](){ width="200" align=left }](https://eschaton.mcsc.space/)  
-            **比赛名称** : [Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)  
+        ??? Quote "[RCS CTF 26](https://encryptedge.in/)"  
+            [![](){ width="200" align=left }](https://encryptedge.in/)  
+            **比赛名称** : [RCS CTF 26](https://encryptedge.in/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-01-31 12:30:00 - 2026-02-01 12:30:00 UTC+8  
+            **比赛时间** : 2026-01-31 03:00:00 - 2026-01-31 22:00:00 UTC+8  
             **比赛权重** : 0.00  
-            **赛事主办** : Team MCSC (https://ctftime.org/team/418958)  
-            **添加日历** : https://ctftime.org/event/3072.ics  
+            **赛事主办** : EN¢R¥PT_EDGE€ (https://ctftime.org/team/273673)  
+            **添加日历** : https://ctftime.org/event/3114.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

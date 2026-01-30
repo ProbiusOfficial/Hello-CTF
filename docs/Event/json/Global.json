@@ -36,6 +36,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "RCS CTF 26",
+        "比赛时间": "2026-01-31 03:00:00 - 2026-01-31 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3114.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://encryptedge.in/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "EN¢R¥PT_EDGE€ (https://ctftime.org/team/273673)",
+        "比赛ID": "1050",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Eschaton CTF 2026 Quals",
         "比赛时间": "2026-01-31 12:30:00 - 2026-02-01 12:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3072.ics",
@@ -180,6 +192,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Batman's Kitchen CTF 2026",
+        "比赛时间": "2026-02-21 02:30:00 - 2026-02-23 02:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3098.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.batmans.kitchen/",
+        "比赛标志": "https://ctftime.org/media/events/bklogo.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Batman's Kitchen (https://ctftime.org/team/3135)",
+        "比赛ID": "1495",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "THJCC CTF 2026",
         "比赛时间": "2026-02-21 08:00:01 - 2026-02-22 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3088.ics",
@@ -222,7 +246,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://bearcatctf.io/",
         "比赛标志": "https://ctftime.org/media/events/bearcat26_logo_black.png",
-        "比赛权重": "0",
+        "比赛权重": "23.89",
         "赛事主办": "Cyber@UC (https://ctftime.org/team/87727)",
         "比赛ID": "1032",
         "比赛状态": "oncoming"
@@ -324,6 +348,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "DiceCTF 2026 Quals",
+        "比赛时间": "2026-03-08 01:00:00 - 2026-03-09 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3110.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://dicega.ng/",
+        "比赛标志": "https://ctftime.org/media/events/dice.png",
+        "比赛权重": "0.00",
+        "赛事主办": "DiceGang (https://ctftime.org/team/109452)",
+        "比赛ID": "568",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Midnight Flag CTF - EXECUTION",
         "比赛时间": "2026-03-14 04:00:00 - 2026-03-16 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3105.ics",
@@ -357,6 +393,18 @@
         "比赛权重": "0.00",
         "赛事主办": "TPC (https://ctftime.org/team/222485)",
         "比赛ID": "1476",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Curiosity CTF 2026",
+        "比赛时间": "2026-03-21 03:00:00 - 2026-03-23 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3050.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://curiosityctf.xyz/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "Curioѕity (https://ctftime.org/team/392973)",
+        "比赛ID": "1383",
         "比赛状态": "oncoming"
     },
     {
@@ -552,6 +600,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "SAS CTF 2026 Quals",
+        "比赛时间": "2026-05-23 20:00:00 - 2026-05-24 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3109.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.thesascon.com/",
+        "比赛标志": "https://ctftime.org/media/events/SAS26_temp.png",
+        "比赛权重": "31.00",
+        "赛事主办": "Drovosec, SAS CREW (https://ctftime.org/team/210132, https://ctftime.org/team/283057)",
+        "比赛ID": "1081",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "GPN CTF 2026",
         "比赛时间": "2026-06-05 18:00:00 - 2026-06-07 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3041.ics",
@@ -597,6 +657,18 @@
         "比赛权重": "34.47",
         "赛事主办": "L3ak (https://ctftime.org/team/220336)",
         "比赛ID": "1077",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "OmniCTF 2026 Quals",
+        "比赛时间": "2026-07-17 23:00:00 - 2026-07-19 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3104.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://omnictf.com/",
+        "比赛标志": "https://ctftime.org/media/events/logo1024x1024_1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "OmniCYBR (https://ctftime.org/team/383015)",
+        "比赛ID": "1412",
         "比赛状态": "oncoming"
     },
     {

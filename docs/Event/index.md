@@ -335,6 +335,15 @@ hide:
                 **赛事主办** : ATC CTF Team (https://ctftime.org/team/370333)  
                 **添加日历** : https://ctftime.org/event/3068.ics  
                 
+            ??? Quote "[RCS CTF 26](https://encryptedge.in/)"  
+                [![](){ width="200" align=left }](https://encryptedge.in/)  
+                **比赛名称** : [RCS CTF 26](https://encryptedge.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-01-31 03:00:00 - 2026-01-31 22:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : EN¢R¥PT_EDGE€ (https://ctftime.org/team/273673)  
+                **添加日历** : https://ctftime.org/event/3114.ics  
+                
             ??? Quote "[Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)"  
                 [![](){ width="200" align=left }](https://eschaton.mcsc.space/)  
                 **比赛名称** : [Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)  
@@ -443,6 +452,15 @@ hide:
                 **赛事主办** : TaipanByte (https://ctftime.org/team/301788)  
                 **添加日历** : https://ctftime.org/event/3086.ics  
                 
+            ??? Quote "[Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)"  
+                [![](https://ctftime.org/media/events/bklogo.png){ width="200" align=left }](https://ctf.batmans.kitchen/)  
+                **比赛名称** : [Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-02-21 02:30:00 - 2026-02-23 02:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Batman's Kitchen (https://ctftime.org/team/3135)  
+                **添加日历** : https://ctftime.org/event/3098.ics  
+                
             ??? Quote "[THJCC CTF 2026](https://ctf2026.thjcc.org/)"  
                 [![](https://ctftime.org/media/events/3291aa527005a0771b15f8ca11d76637.png){ width="200" align=left }](https://ctf2026.thjcc.org/)  
                 **比赛名称** : [THJCC CTF 2026](https://ctf2026.thjcc.org/)  
@@ -475,7 +493,7 @@ hide:
                 **比赛名称** : [BearcatCTF 2026 - Setting Sail](https://bearcatctf.io/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-02-22 01:00:00 - 2026-02-23 01:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 23.89  
                 **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
                 **添加日历** : https://ctftime.org/event/3046.ics  
                 
@@ -551,6 +569,15 @@ hide:
                 **赛事主办** : code-vinci (https://ctftime.org/team/365817)  
                 **添加日历** : https://ctftime.org/event/3101.ics  
                 
+            ??? Quote "[DiceCTF 2026 Quals](https://dicega.ng/)"  
+                [![](https://ctftime.org/media/events/dice.png){ width="200" align=left }](https://dicega.ng/)  
+                **比赛名称** : [DiceCTF 2026 Quals](https://dicega.ng/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-08 01:00:00 - 2026-03-09 01:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
+                **添加日历** : https://ctftime.org/event/3110.ics  
+                
             ??? Quote "[Midnight Flag CTF - EXECUTION](https://midnightflag.fr/)"  
                 [![](https://ctftime.org/media/events/logo_119.png){ width="200" align=left }](https://midnightflag.fr/)  
                 **比赛名称** : [Midnight Flag CTF - EXECUTION](https://midnightflag.fr/)  
@@ -577,6 +604,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : TPC (https://ctftime.org/team/222485)  
                 **添加日历** : https://ctftime.org/event/3091.ics  
+                
+            ??? Quote "[Curiosity CTF 2026](https://curiosityctf.xyz/)"  
+                [![](){ width="200" align=left }](https://curiosityctf.xyz/)  
+                **比赛名称** : [Curiosity CTF 2026](https://curiosityctf.xyz/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-21 03:00:00 - 2026-03-23 03:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Curioѕity (https://ctftime.org/team/392973)  
+                **添加日历** : https://ctftime.org/event/3050.ics  
                 
             ??? Quote "[TAMUctf 2026](https://tamuctf.com/)"  
                 [![](https://ctftime.org/media/events/TAMUctf-logo.png){ width="200" align=left }](https://tamuctf.com/)  
@@ -722,6 +758,15 @@ hide:
                 **赛事主办** : PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)  
                 **添加日历** : https://ctftime.org/event/3018.ics  
                 
+            ??? Quote "[SAS CTF 2026 Quals](https://ctf.thesascon.com/)"  
+                [![](https://ctftime.org/media/events/SAS26_temp.png){ width="200" align=left }](https://ctf.thesascon.com/)  
+                **比赛名称** : [SAS CTF 2026 Quals](https://ctf.thesascon.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-05-23 20:00:00 - 2026-05-24 20:00:00 UTC+8  
+                **比赛权重** : 31.00  
+                **赛事主办** : Drovosec, SAS CREW (https://ctftime.org/team/210132, https://ctftime.org/team/283057)  
+                **添加日历** : https://ctftime.org/event/3109.ics  
+                
             ??? Quote "[GPN CTF 2026](https://gpn24.ctf.kitctf.de/)"  
                 [![](){ width="200" align=left }](https://gpn24.ctf.kitctf.de/)  
                 **比赛名称** : [GPN CTF 2026](https://gpn24.ctf.kitctf.de/)  
@@ -757,6 +802,15 @@ hide:
                 **比赛权重** : 34.47  
                 **赛事主办** : L3ak (https://ctftime.org/team/220336)  
                 **添加日历** : https://ctftime.org/event/3061.ics  
+                
+            ??? Quote "[OmniCTF 2026 Quals](https://omnictf.com/)"  
+                [![](https://ctftime.org/media/events/logo1024x1024_1.png){ width="200" align=left }](https://omnictf.com/)  
+                **比赛名称** : [OmniCTF 2026 Quals](https://omnictf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-07-17 23:00:00 - 2026-07-19 23:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : OmniCYBR (https://ctftime.org/team/383015)  
+                **添加日历** : https://ctftime.org/event/3104.ics  
                 
             ??? Quote "[scriptCTF 2026](https://ctf.scriptsorcerers.xyz/)"  
                 [![](https://ctftime.org/media/events/final_logo_1.png){ width="200" align=left }](https://ctf.scriptsorcerers.xyz/)  
