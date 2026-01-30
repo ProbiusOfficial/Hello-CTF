@@ -876,15 +876,6 @@ hide:
                 **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
                 **添加日历** : https://ctftime.org/event/3083.ics  
                 
-            ??? Quote "[Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)"  
-                [![](https://ctftime.org/media/events/LogoAlt.png){ width="200" align=left }](https://www.jeanne-hack-ctf.org/)  
-                **比赛名称** : [Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-01-30 17:00:00 - 2026-01-31 02:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Jeanne d'Hack CTF (https://ctftime.org/team/283058)  
-                **添加日历** : https://ctftime.org/event/2941.ics  
-                
             ??? Quote "[ASCF CTF](https://ctf.ascf.space/)"  
                 [![](https://ctftime.org/media/events/ascf1.png){ width="200" align=left }](https://ctf.ascf.space/)  
                 **比赛名称** : [ASCF CTF](https://ctf.ascf.space/)  
@@ -907,6 +898,15 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
+            ??? Quote "[Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)"  
+                [![](https://ctftime.org/media/events/LogoAlt.png){ width="200" align=left }](https://www.jeanne-hack-ctf.org/)  
+                **比赛名称** : [Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-01-30 17:00:00 - 2026-01-31 02:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Jeanne d'Hack CTF (https://ctftime.org/team/283058)  
+                **添加日历** : https://ctftime.org/event/2941.ics  
+                
             ??? Quote "[CyberQuest 26](https://ngpkanam.com/events/41)"  
                 [![](https://ctftime.org/media/events/WhatsApp_Image_2026-01-15_at_16.42.06.jpeg){ width="200" align=left }](https://ngpkanam.com/events/41)  
                 **比赛名称** : [CyberQuest 26](https://ngpkanam.com/events/41)  
@@ -1797,15 +1797,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : HITCON (https://ctftime.org/team/8299)  
                 **添加日历** : https://ctftime.org/event/2794.ics  
-                
-            ??? Quote "[Hackfest CTF 2025](https://hfctf.ca/)"  
-                [![](https://ctftime.org/media/events/Logo_CTF_7_1.png){ width="200" align=left }](https://hfctf.ca/)  
-                **比赛名称** : [Hackfest CTF 2025](https://hfctf.ca/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-17 03:30:00 - 2025-10-18 03:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Hackfest.ca (https://ctftime.org/team/125608)  
-                **添加日历** : https://ctftime.org/event/2922.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
