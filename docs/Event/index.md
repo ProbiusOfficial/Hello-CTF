@@ -291,13 +291,6 @@ hide:
             **比赛时间** : 2026年02月02日 10:00 - 2026年02月15日 20:00  
             **其他说明** : HGAME 2026 是一场由Vidar-Team组织的线上Jeopardy解题赛，。报名从2026年01月26日00:00开始，到2026年02月15日20:00结束。比赛从2026年02月02日10:00开始，至2026年02月15日20:00结束。更多信息，请加入QQ群576834793。  
             
-        ??? Quote "[furryCTF 2025 高校联合新神赛](https://furryctf.com/)"  
-            **比赛名称** : [furryCTF 2025 高校联合新神赛](https://furryctf.com/)  
-            **比赛类型** : 线上Jeopardy解题赛  
-            **报名时间** : 2026年01月01日 00:00 - 2026年02月04日 12:00  
-            **比赛时间** : 2026年01月30日 12:00 - 2026年02月04日 12:00  
-            **其他说明** : 主办方为furryCTF及POFP联合战队，严禁攻击平台或使用扫描器，设有多种奖品，详情请到QQ群查看；祝各位玩的开心~  
-            
     === "*即将开始*"
         === "国内赛事"
             ??? Quote "[HGAME 2026](https://hgame.vidar.club/)"  
@@ -615,7 +608,7 @@ hide:
                 **添加日历** : https://ctftime.org/event/3063.ics  
                 
             ??? Quote "[Undutmaning 2026](https://undutmaning.se/)"  
-                [![](https://ctftime.org/media/events/Undutmaning_ctfd.jpg){ width="200" align=left }](https://undutmaning.se/)  
+                [![](https://ctftime.org/media/events/logo_2026_border.png){ width="200" align=left }](https://undutmaning.se/)  
                 **比赛名称** : [Undutmaning 2026](https://undutmaning.se/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-03-21 19:00:00 - 2026-03-22 03:00:00 UTC+8  

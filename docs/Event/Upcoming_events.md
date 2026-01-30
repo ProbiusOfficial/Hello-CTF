@@ -322,7 +322,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/3063.ics  
     
 ??? Quote "[Undutmaning 2026](https://undutmaning.se/)"  
-    [![](https://ctftime.org/media/events/Undutmaning_ctfd.jpg){ width="200" align=left }](https://undutmaning.se/)  
+    [![](https://ctftime.org/media/events/logo_2026_border.png){ width="200" align=left }](https://undutmaning.se/)  
     **比赛名称** : [Undutmaning 2026](https://undutmaning.se/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-03-21 19:00:00 - 2026-03-22 03:00:00 UTC+8  
