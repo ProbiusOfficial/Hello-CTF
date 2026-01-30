@@ -60,15 +60,6 @@ hide:
             **其他说明** : HGAME 2026 是一场由Vidar-Team组织的线上Jeopardy解题赛，。报名从2026年01月26日00:00开始，到2026年02月15日20:00结束。比赛从2026年02月02日10:00开始，至2026年02月15日20:00结束。更多信息，请加入QQ群576834793。  
                 
     === "国外比赛"
-        ??? Quote "[RCS CTF 26](https://encryptedge.in/)"  
-            [![](){ width="200" align=left }](https://encryptedge.in/)  
-            **比赛名称** : [RCS CTF 26](https://encryptedge.in/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-01-31 03:00:00 - 2026-01-31 22:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : EN¢R¥PT_EDGE€ (https://ctftime.org/team/273673)  
-            **添加日历** : https://ctftime.org/event/3114.ics  
-            
         ??? Quote "[Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)"  
             [![](){ width="200" align=left }](https://eschaton.mcsc.space/)  
             **比赛名称** : [Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)  
@@ -95,6 +86,15 @@ hide:
             **比赛权重** : 25.54  
             **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
             **添加日历** : https://ctftime.org/event/3047.ics  
+            
+        ??? Quote "[Pragyan CTF 2026](https://ctf.prgy.in/)"  
+            [![](){ width="200" align=left }](https://ctf.prgy.in/)  
+            **比赛名称** : [Pragyan CTF 2026](https://ctf.prgy.in/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-02-06 21:00:00 - 2026-02-08 21:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Pragyan (https://ctftime.org/team/33867)  
+            **添加日历** : https://ctftime.org/event/3058.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

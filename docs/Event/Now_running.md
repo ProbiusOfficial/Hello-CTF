@@ -58,3 +58,12 @@ comments: true
     **赛事主办** : ATC CTF Team (https://ctftime.org/team/370333)  
     **添加日历** : https://ctftime.org/event/3068.ics  
     
+??? Quote "[RCS CTF 26](https://encryptedge.in/)"  
+    [![](){ width="200" align=left }](https://encryptedge.in/)  
+    **比赛名称** : [RCS CTF 26](https://encryptedge.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-31 03:00:00 - 2026-01-31 22:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : EN¢R¥PT_EDGE€ (https://ctftime.org/team/273673)  
+    **添加日历** : https://ctftime.org/event/3114.ics  
+    
