@@ -23,6 +23,15 @@ comments: true
     **赛事主办** : Jeanne d'Hack CTF (https://ctftime.org/team/283058)  
     **添加日历** : https://ctftime.org/event/2941.ics  
     
+??? Quote "[ASCF CTF](https://ctf.ascf.space/)"  
+    [![](https://ctftime.org/media/events/ascf1.png){ width="200" align=left }](https://ctf.ascf.space/)  
+    **比赛名称** : [ASCF CTF](https://ctf.ascf.space/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-30 17:00:00 - 2026-01-31 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ASCF (https://ctftime.org/team/418960)  
+    **添加日历** : https://ctftime.org/event/3099.ics  
+    
 ??? Quote "[CyberQuest 26](https://ngpkanam.com/events/41)"  
     [![](https://ctftime.org/media/events/WhatsApp_Image_2026-01-15_at_16.42.06.jpeg){ width="200" align=left }](https://ngpkanam.com/events/41)  
     **比赛名称** : [CyberQuest 26](https://ngpkanam.com/events/41)  
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 98.02  
     **赛事主办** : FluxFingers (https://ctftime.org/team/551)  
     **添加日历** : https://ctftime.org/event/2842.ics  
-    
-??? Quote "[HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)"  
-    [![](){ width="200" align=left }](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
-    **比赛名称** : [HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-10-17 09:00:00 - 2025-10-17 18:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : HITCON (https://ctftime.org/team/8299)  
-    **添加日历** : https://ctftime.org/event/2794.ics  
     

@@ -708,18 +708,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "ASCF CTF",
-        "比赛时间": "2026-01-30 17:00:00 - 2026-01-31 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3099.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.ascf.space/",
-        "比赛标志": "https://ctftime.org/media/events/ascf1.png",
-        "比赛权重": "0",
-        "赛事主办": "ASCF (https://ctftime.org/team/418960)",
-        "比赛ID": "1479",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "ATC Winter Vibes Community CTF 2.0",
         "比赛时间": "2026-01-30 22:00:00 - 2026-01-31 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3068.ics",
@@ -777,6 +765,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Jeanne d'Hack CTF (https://ctftime.org/team/283058)",
         "比赛ID": "1078",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "ASCF CTF",
+        "比赛时间": "2026-01-30 17:00:00 - 2026-01-31 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3099.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.ascf.space/",
+        "比赛标志": "https://ctftime.org/media/events/ascf1.png",
+        "比赛权重": "0",
+        "赛事主办": "ASCF (https://ctftime.org/team/418960)",
+        "比赛ID": "1479",
         "比赛状态": "past"
     },
     {
@@ -1953,18 +1953,6 @@
         "比赛权重": "98.02",
         "赛事主办": "FluxFingers (https://ctftime.org/team/551)",
         "比赛ID": "8",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "HITCON Cyber Range 2025 Final",
-        "比赛时间": "2025-10-17 09:00:00 - 2025-10-17 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2794.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hitcon.kktix.cc/events/hitcon-cyberrange-2025",
-        "比赛标志": "",
-        "比赛权重": "0.00",
-        "赛事主办": "HITCON (https://ctftime.org/team/8299)",
-        "比赛ID": "1325",
         "比赛状态": "past"
     }
 ]

@@ -301,15 +301,6 @@ hide:
                 **其他说明** : HGAME 2026 是一场由Vidar-Team组织的线上Jeopardy解题赛，。报名从2026年01月26日00:00开始，到2026年02月15日20:00结束。比赛从2026年02月02日10:00开始，至2026年02月15日20:00结束。更多信息，请加入QQ群576834793。  
                 
         === "国外赛事"
-            ??? Quote "[PascalCTF 2026](https://ctf.pascalctf.it/)"  
-                [![](https://ctftime.org/media/events/log.jpg){ width="200" align=left }](https://ctf.pascalctf.it/)  
-                **比赛名称** : [PascalCTF 2026](https://ctf.pascalctf.it/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-01-31 16:00:00 - 2026-02-01 16:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Paolo (https://ctftime.org/team/263145)  
-                **添加日历** : https://ctftime.org/event/2767.ics  
-                
             ??? Quote "[BITSCTF 2026](https://ctf.bitskrieg.in/)"  
                 [![](https://ctftime.org/media/events/bitskrieg_background.png){ width="200" align=left }](https://ctf.bitskrieg.in/)  
                 **比赛名称** : [BITSCTF 2026](https://ctf.bitskrieg.in/)  
@@ -851,15 +842,6 @@ hide:
                 **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
                 **添加日历** : https://ctftime.org/event/3083.ics  
                 
-            ??? Quote "[ASCF CTF](https://ctf.ascf.space/)"  
-                [![](https://ctftime.org/media/events/ascf1.png){ width="200" align=left }](https://ctf.ascf.space/)  
-                **比赛名称** : [ASCF CTF](https://ctf.ascf.space/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-01-30 17:00:00 - 2026-01-31 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : ASCF (https://ctftime.org/team/418960)  
-                **添加日历** : https://ctftime.org/event/3099.ics  
-                
             ??? Quote "[ATC Winter Vibes Community CTF 2.0](https://atcwintervibesctf.com/)"  
                 [![](https://ctftime.org/media/events/ATC_Logo.PNG){ width="200" align=left }](https://atcwintervibesctf.com/)  
                 **比赛名称** : [ATC Winter Vibes Community CTF 2.0](https://atcwintervibesctf.com/)  
@@ -887,6 +869,15 @@ hide:
                 **赛事主办** : Team MCSC (https://ctftime.org/team/418958)  
                 **添加日历** : https://ctftime.org/event/3072.ics  
                 
+            ??? Quote "[PascalCTF 2026](https://ctf.pascalctf.it/)"  
+                [![](https://ctftime.org/media/events/log.jpg){ width="200" align=left }](https://ctf.pascalctf.it/)  
+                **比赛名称** : [PascalCTF 2026](https://ctf.pascalctf.it/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-01-31 16:00:00 - 2026-02-01 16:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Paolo (https://ctftime.org/team/263145)  
+                **添加日历** : https://ctftime.org/event/2767.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[UniCTF](https://unictf.play.ctfplus.cn/)"  
@@ -905,6 +896,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Jeanne d'Hack CTF (https://ctftime.org/team/283058)  
                 **添加日历** : https://ctftime.org/event/2941.ics  
+                
+            ??? Quote "[ASCF CTF](https://ctf.ascf.space/)"  
+                [![](https://ctftime.org/media/events/ascf1.png){ width="200" align=left }](https://ctf.ascf.space/)  
+                **比赛名称** : [ASCF CTF](https://ctf.ascf.space/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-01-30 17:00:00 - 2026-01-31 17:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : ASCF (https://ctftime.org/team/418960)  
+                **添加日历** : https://ctftime.org/event/3099.ics  
                 
             ??? Quote "[CyberQuest 26](https://ngpkanam.com/events/41)"  
                 [![](https://ctftime.org/media/events/WhatsApp_Image_2026-01-15_at_16.42.06.jpeg){ width="200" align=left }](https://ngpkanam.com/events/41)  
@@ -1787,15 +1787,6 @@ hide:
                 **比赛权重** : 98.02  
                 **赛事主办** : FluxFingers (https://ctftime.org/team/551)  
                 **添加日历** : https://ctftime.org/event/2842.ics  
-                
-            ??? Quote "[HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)"  
-                [![](){ width="200" align=left }](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
-                **比赛名称** : [HITCON Cyber Range 2025 Final](https://hitcon.kktix.cc/events/hitcon-cyberrange-2025)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-17 09:00:00 - 2025-10-17 18:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : HITCON (https://ctftime.org/team/8299)  
-                **添加日历** : https://ctftime.org/event/2794.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
