@@ -842,24 +842,6 @@ hide:
                 **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
                 **添加日历** : https://ctftime.org/event/3083.ics  
                 
-            ??? Quote "[ATC Winter Vibes Community CTF 2.0](https://atcwintervibesctf.com/)"  
-                [![](https://ctftime.org/media/events/ATC_Logo.PNG){ width="200" align=left }](https://atcwintervibesctf.com/)  
-                **比赛名称** : [ATC Winter Vibes Community CTF 2.0](https://atcwintervibesctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-01-30 22:00:00 - 2026-01-31 22:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : ATC CTF Team (https://ctftime.org/team/370333)  
-                **添加日历** : https://ctftime.org/event/3068.ics  
-                
-            ??? Quote "[RCS CTF 26](https://encryptedge.in/)"  
-                [![](){ width="200" align=left }](https://encryptedge.in/)  
-                **比赛名称** : [RCS CTF 26](https://encryptedge.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-01-31 03:00:00 - 2026-01-31 22:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : EN¢R¥PT_EDGE€ (https://ctftime.org/team/273673)  
-                **添加日历** : https://ctftime.org/event/3114.ics  
-                
             ??? Quote "[Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)"  
                 [![](){ width="200" align=left }](https://eschaton.mcsc.space/)  
                 **比赛名称** : [Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)  
@@ -888,6 +870,24 @@ hide:
                 **其他说明** : 4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。  
                 
         === "国外赛事"
+            ??? Quote "[RCS CTF 26](https://encryptedge.in/)"  
+                [![](){ width="200" align=left }](https://encryptedge.in/)  
+                **比赛名称** : [RCS CTF 26](https://encryptedge.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-01-31 03:00:00 - 2026-01-31 22:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : EN¢R¥PT_EDGE€ (https://ctftime.org/team/273673)  
+                **添加日历** : https://ctftime.org/event/3114.ics  
+                
+            ??? Quote "[ATC Winter Vibes Community CTF 2.0](https://atcwintervibesctf.com/)"  
+                [![](https://ctftime.org/media/events/ATC_Logo.PNG){ width="200" align=left }](https://atcwintervibesctf.com/)  
+                **比赛名称** : [ATC Winter Vibes Community CTF 2.0](https://atcwintervibesctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-01-30 22:00:00 - 2026-01-31 22:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : ATC CTF Team (https://ctftime.org/team/370333)  
+                **添加日历** : https://ctftime.org/event/3068.ics  
+                
             ??? Quote "[Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)"  
                 [![](https://ctftime.org/media/events/LogoAlt.png){ width="200" align=left }](https://www.jeanne-hack-ctf.org/)  
                 **比赛名称** : [Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)  
@@ -1769,24 +1769,6 @@ hide:
                 **比赛权重** : 22.56  
                 **赛事主办** : H7Tex (https://ctftime.org/team/281844)  
                 **添加日历** : https://ctftime.org/event/2938.ics  
-                
-            ??? Quote "[LINE CTF 2025](https://linectf.me/)"  
-                [![](https://ctftime.org/media/events/LINE.jpeg){ width="200" align=left }](https://linectf.me/)  
-                **比赛名称** : [LINE CTF 2025](https://linectf.me/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-18 08:00:00 - 2025-10-19 08:00:00 UTC+8  
-                **比赛权重** : 66.50  
-                **赛事主办** : LINE CTF (https://ctftime.org/team/144094)  
-                **添加日历** : https://ctftime.org/event/2819.ics  
-                
-            ??? Quote "[Hack.lu CTF 2025](https://flu.xxx/)"  
-                [![](https://ctftime.org/media/events/logo-small_1.png){ width="200" align=left }](https://flu.xxx/)  
-                **比赛名称** : [Hack.lu CTF 2025](https://flu.xxx/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-18 02:00:00 - 2025-10-20 02:00:00 UTC+8  
-                **比赛权重** : 98.02  
-                **赛事主办** : FluxFingers (https://ctftime.org/team/551)  
-                **添加日历** : https://ctftime.org/event/2842.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
