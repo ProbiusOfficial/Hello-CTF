@@ -60,15 +60,6 @@ hide:
             **其他说明** : HGAME 2026 是一场由Vidar-Team组织的线上Jeopardy解题赛，。报名从2026年01月26日00:00开始，到2026年02月15日20:00结束。比赛从2026年02月02日10:00开始，至2026年02月15日20:00结束。更多信息，请加入QQ群576834793。  
                 
     === "国外比赛"
-        ??? Quote "[PascalCTF 2026](https://ctf.pascalctf.it/)"  
-            [![](https://ctftime.org/media/events/log.jpg){ width="200" align=left }](https://ctf.pascalctf.it/)  
-            **比赛名称** : [PascalCTF 2026](https://ctf.pascalctf.it/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-01-31 16:00:00 - 2026-02-01 16:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Paolo (https://ctftime.org/team/263145)  
-            **添加日历** : https://ctftime.org/event/2767.ics  
-            
         ??? Quote "[BITSCTF 2026](https://ctf.bitskrieg.in/)"  
             [![](https://ctftime.org/media/events/bitskrieg_background.png){ width="200" align=left }](https://ctf.bitskrieg.in/)  
             **比赛名称** : [BITSCTF 2026](https://ctf.bitskrieg.in/)  
@@ -95,6 +86,15 @@ hide:
             **比赛权重** : 53.58  
             **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
             **添加日历** : https://ctftime.org/event/3015.ics  
+            
+        ??? Quote "[Nullcon Goa HackIM 2026 CTF](https://ctf.nullcon.net/)"  
+            [![](https://ctftime.org/media/events/a3838829dc3fcbbebcc062b58d405747_1.png){ width="200" align=left }](https://ctf.nullcon.net/)  
+            **比赛名称** : [Nullcon Goa HackIM 2026 CTF](https://ctf.nullcon.net/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-02-07 16:30:00 - 2026-02-08 16:30:00 UTC+8  
+            **比赛权重** : 24.72  
+            **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
+            **添加日历** : https://ctftime.org/event/3066.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
