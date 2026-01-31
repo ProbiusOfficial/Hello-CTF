@@ -708,30 +708,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "ATC Winter Vibes Community CTF 2.0",
-        "比赛时间": "2026-01-30 22:00:00 - 2026-01-31 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3068.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://atcwintervibesctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/ATC_Logo.PNG",
-        "比赛权重": "0.00",
-        "赛事主办": "ATC CTF Team (https://ctftime.org/team/370333)",
-        "比赛ID": "1254",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "RCS CTF 26",
-        "比赛时间": "2026-01-31 03:00:00 - 2026-01-31 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3114.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://encryptedge.in/",
-        "比赛标志": "",
-        "比赛权重": "0.00",
-        "赛事主办": "EN¢R¥PT_EDGE€ (https://ctftime.org/team/273673)",
-        "比赛ID": "1050",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Eschaton CTF 2026 Quals",
         "比赛时间": "2026-01-31 12:30:00 - 2026-02-01 12:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3072.ics",
@@ -754,6 +730,30 @@
         "赛事主办": "Paolo (https://ctftime.org/team/263145)",
         "比赛ID": "1242",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "RCS CTF 26",
+        "比赛时间": "2026-01-31 03:00:00 - 2026-01-31 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3114.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://encryptedge.in/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "EN¢R¥PT_EDGE€ (https://ctftime.org/team/273673)",
+        "比赛ID": "1050",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "ATC Winter Vibes Community CTF 2.0",
+        "比赛时间": "2026-01-30 22:00:00 - 2026-01-31 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3068.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://atcwintervibesctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/ATC_Logo.PNG",
+        "比赛权重": "0.00",
+        "赛事主办": "ATC CTF Team (https://ctftime.org/team/370333)",
+        "比赛ID": "1254",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Jeanne d'Hack CTF 2026 | 3ème Édition",
@@ -1929,30 +1929,6 @@
         "比赛权重": "22.56",
         "赛事主办": "H7Tex (https://ctftime.org/team/281844)",
         "比赛ID": "1169",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "LINE CTF 2025",
-        "比赛时间": "2025-10-18 08:00:00 - 2025-10-19 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2819.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://linectf.me/",
-        "比赛标志": "https://ctftime.org/media/events/LINE.jpeg",
-        "比赛权重": "66.50",
-        "赛事主办": "LINE CTF (https://ctftime.org/team/144094)",
-        "比赛ID": "590",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Hack.lu CTF 2025",
-        "比赛时间": "2025-10-18 02:00:00 - 2025-10-20 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2842.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://flu.xxx/",
-        "比赛标志": "https://ctftime.org/media/events/logo-small_1.png",
-        "比赛权重": "98.02",
-        "赛事主办": "FluxFingers (https://ctftime.org/team/551)",
-        "比赛ID": "8",
         "比赛状态": "past"
     }
 ]

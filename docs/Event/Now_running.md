@@ -33,24 +33,6 @@ comments: true
     **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
     **添加日历** : https://ctftime.org/event/3083.ics  
     
-??? Quote "[ATC Winter Vibes Community CTF 2.0](https://atcwintervibesctf.com/)"  
-    [![](https://ctftime.org/media/events/ATC_Logo.PNG){ width="200" align=left }](https://atcwintervibesctf.com/)  
-    **比赛名称** : [ATC Winter Vibes Community CTF 2.0](https://atcwintervibesctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-30 22:00:00 - 2026-01-31 22:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : ATC CTF Team (https://ctftime.org/team/370333)  
-    **添加日历** : https://ctftime.org/event/3068.ics  
-    
-??? Quote "[RCS CTF 26](https://encryptedge.in/)"  
-    [![](){ width="200" align=left }](https://encryptedge.in/)  
-    **比赛名称** : [RCS CTF 26](https://encryptedge.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-31 03:00:00 - 2026-01-31 22:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : EN¢R¥PT_EDGE€ (https://ctftime.org/team/273673)  
-    **添加日历** : https://ctftime.org/event/3114.ics  
-    
 ??? Quote "[Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)"  
     [![](){ width="200" align=left }](https://eschaton.mcsc.space/)  
     **比赛名称** : [Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)  
