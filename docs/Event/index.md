@@ -841,13 +841,6 @@ hide:
                 **比赛时间** : 2026年01月30日 12:00 - 2026年02月04日 12:00  
                 **其他说明** : 主办方为furryCTF及POFP联合战队，严禁攻击平台或使用扫描器，设有多种奖品，详情请到QQ群查看；祝各位玩的开心~  
                 
-            ??? Quote "[UniCTF](https://unictf.play.ctfplus.cn/)"  
-                **比赛名称** : [UniCTF](https://unictf.play.ctfplus.cn/)  
-                **比赛类型** : 线上Jeopardy解题赛  
-                **报名时间** : 2026年01月09日 10:09 - 2026年01月25日 09:59  
-                **比赛时间** : 2026年01月25日 10:00 - 2026年01月31日 10:00  
-                **其他说明** : 4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。  
-                
         === "国外赛事"
             ??? Quote "[2026 Embedded Capture the Flag](https://ectf.mitre.org/)"  
                 [![](){ width="200" align=left }](https://ectf.mitre.org/)  
@@ -896,7 +889,13 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
-    
+            ??? Quote "[UniCTF](https://unictf.play.ctfplus.cn/)"  
+                **比赛名称** : [UniCTF](https://unictf.play.ctfplus.cn/)  
+                **比赛类型** : 线上Jeopardy解题赛  
+                **报名时间** : 2026年01月09日 10:09 - 2026年01月25日 09:59  
+                **比赛时间** : 2026年01月25日 10:00 - 2026年01月31日 10:00  
+                **其他说明** : 4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。  
+                
         === "国外赛事"
             ??? Quote "[Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)"  
                 [![](https://ctftime.org/media/events/LogoAlt.png){ width="200" align=left }](https://www.jeanne-hack-ctf.org/)  
