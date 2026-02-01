@@ -14,6 +14,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[PascalCTF 2026](https://ctf.pascalctf.it/)"  
+    [![](https://ctftime.org/media/events/log.jpg){ width="200" align=left }](https://ctf.pascalctf.it/)  
+    **比赛名称** : [PascalCTF 2026](https://ctf.pascalctf.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-01-31 16:00:00 - 2026-02-01 16:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Paolo (https://ctftime.org/team/263145)  
+    **添加日历** : https://ctftime.org/event/2767.ics  
+    
 ??? Quote "[Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)"  
     [![](){ width="200" align=left }](https://eschaton.mcsc.space/)  
     **比赛名称** : [Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)  
@@ -82,7 +91,7 @@ comments: true
     **比赛名称** : [VSL CTF 2026](https://vsl-ctf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-01-24 16:00:00 - 2026-01-25 16:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 23.60  
     **赛事主办** : VSL (https://ctftime.org/team/284373)  
     **添加日历** : https://ctftime.org/event/3060.ics  
     
@@ -904,13 +913,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Super_Hacker (https://ctftime.org/team/195477)  
     **添加日历** : https://ctftime.org/event/2939.ics  
-    
-??? Quote "[OmniCTF - 2025 - Individuals](https://omnictf.com/)"  
-    [![](https://ctftime.org/media/events/Untitled_4.png){ width="200" align=left }](https://omnictf.com/)  
-    **比赛名称** : [OmniCTF - 2025 - Individuals](https://omnictf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-10-18 15:00:00 - 2025-10-18 21:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : OctalO (https://ctftime.org/team/269207)  
-    **添加日历** : https://ctftime.org/event/2950.ics  
     
