@@ -842,15 +842,6 @@ hide:
                 **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
                 **添加日历** : https://ctftime.org/event/3083.ics  
                 
-            ??? Quote "[Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)"  
-                [![](){ width="200" align=left }](https://eschaton.mcsc.space/)  
-                **比赛名称** : [Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-01-31 12:30:00 - 2026-02-01 12:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Team MCSC (https://ctftime.org/team/418958)  
-                **添加日历** : https://ctftime.org/event/3072.ics  
-                
             ??? Quote "[PascalCTF 2026](https://ctf.pascalctf.it/)"  
                 [![](https://ctftime.org/media/events/log.jpg){ width="200" align=left }](https://ctf.pascalctf.it/)  
                 **比赛名称** : [PascalCTF 2026](https://ctf.pascalctf.it/)  
@@ -870,6 +861,15 @@ hide:
                 **其他说明** : 4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。  
                 
         === "国外赛事"
+            ??? Quote "[Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)"  
+                [![](){ width="200" align=left }](https://eschaton.mcsc.space/)  
+                **比赛名称** : [Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-01-31 12:30:00 - 2026-02-01 12:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Team MCSC (https://ctftime.org/team/418958)  
+                **添加日历** : https://ctftime.org/event/3072.ics  
+                
             ??? Quote "[RCS CTF 26](https://encryptedge.in/)"  
                 [![](){ width="200" align=left }](https://encryptedge.in/)  
                 **比赛名称** : [RCS CTF 26](https://encryptedge.in/)  
@@ -1760,15 +1760,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : OctalO (https://ctftime.org/team/269207)  
                 **添加日历** : https://ctftime.org/event/2950.ics  
-                
-            ??? Quote "[H7CTF 2025](https://ctf.h7tex.com/)"  
-                [![](https://ctftime.org/media/events/h7logo.png){ width="200" align=left }](https://ctf.h7tex.com/)  
-                **比赛名称** : [H7CTF 2025](https://ctf.h7tex.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-18 11:30:00 - 2025-10-19 23:30:00 UTC+8  
-                **比赛权重** : 22.56  
-                **赛事主办** : H7Tex (https://ctftime.org/team/281844)  
-                **添加日历** : https://ctftime.org/event/2938.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

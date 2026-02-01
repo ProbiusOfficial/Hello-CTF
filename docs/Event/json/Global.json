@@ -708,18 +708,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Eschaton CTF 2026 Quals",
-        "比赛时间": "2026-01-31 12:30:00 - 2026-02-01 12:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3072.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://eschaton.mcsc.space/",
-        "比赛标志": "",
-        "比赛权重": "0",
-        "赛事主办": "Team MCSC (https://ctftime.org/team/418958)",
-        "比赛ID": "1477",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "PascalCTF 2026",
         "比赛时间": "2026-01-31 16:00:00 - 2026-02-01 16:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2767.ics",
@@ -730,6 +718,18 @@
         "赛事主办": "Paolo (https://ctftime.org/team/263145)",
         "比赛ID": "1242",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Eschaton CTF 2026 Quals",
+        "比赛时间": "2026-01-31 12:30:00 - 2026-02-01 12:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3072.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://eschaton.mcsc.space/",
+        "比赛标志": "",
+        "比赛权重": "0",
+        "赛事主办": "Team MCSC (https://ctftime.org/team/418958)",
+        "比赛ID": "1477",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "RCS CTF 26",
@@ -1917,18 +1917,6 @@
         "比赛权重": "0",
         "赛事主办": "OctalO (https://ctftime.org/team/269207)",
         "比赛ID": "1412",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "H7CTF 2025",
-        "比赛时间": "2025-10-18 11:30:00 - 2025-10-19 23:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2938.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.h7tex.com/",
-        "比赛标志": "https://ctftime.org/media/events/h7logo.png",
-        "比赛权重": "22.56",
-        "赛事主办": "H7Tex (https://ctftime.org/team/281844)",
-        "比赛ID": "1169",
         "比赛状态": "past"
     }
 ]
