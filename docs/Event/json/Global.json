@@ -412,7 +412,7 @@
         "比赛时间": "2026-03-28 21:00:00 - 2026-03-29 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3045.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://volgactf.ru/en/volgactf-2026/qualifier/",
+        "比赛链接": "https://q.2026.volgactf.ru/",
         "比赛标志": "https://ctftime.org/media/events/logo-social-yellow_18.png",
         "比赛权重": "38.67",
         "赛事主办": "VolgaCTF.org (https://ctftime.org/team/27094)",
@@ -696,18 +696,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Hack for a Change 2026 January: UN SDG 15",
-        "比赛时间": "2026-01-30 08:00:00 - 2026-02-03 07:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/3083.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://www.hackforachange.org/",
-        "比赛标志": "https://ctftime.org/media/events/logo_117.png",
-        "比赛权重": "0",
-        "赛事主办": "Hack for a Change (https://ctftime.org/team/419248)",
-        "比赛ID": "1492",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "PascalCTF 2026",
         "比赛时间": "2026-01-31 16:00:00 - 2026-02-01 16:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2767.ics",
@@ -780,6 +768,18 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "Hack for a Change 2026 January: UN SDG 15",
+        "比赛时间": "2026-01-30 08:00:00 - 2026-02-03 07:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/3083.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://www.hackforachange.org/",
+        "比赛标志": "https://ctftime.org/media/events/logo_117.png",
+        "比赛权重": "0",
+        "赛事主办": "Hack for a Change (https://ctftime.org/team/419248)",
+        "比赛ID": "1492",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "CyberQuest 26",
         "比赛时间": "2026-01-28 11:30:00 - 2026-01-28 19:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3080.ics",
@@ -822,7 +822,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://lilacctf2026.xctf.org.cn/",
         "比赛标志": "https://ctftime.org/media/events/square.jpg",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "Lilac (https://ctftime.org/team/15163)",
         "比赛ID": "1494",
         "比赛状态": "past"
@@ -870,7 +870,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.0xL4ugh.com/",
         "比赛标志": "",
-        "比赛权重": "0",
+        "比赛权重": "28.90",
         "赛事主办": "0xL4ugh (https://ctftime.org/team/132776)",
         "比赛ID": "579",
         "比赛状态": "past"
@@ -966,7 +966,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "http://ctf.rusec.club/",
         "比赛标志": "https://ctftime.org/media/events/8ed561b45f892df2a5b105e8537794b3_1.jpg",
-        "比赛权重": "22.80",
+        "比赛权重": "22.88",
         "赛事主办": "ScarletCTF (https://ctftime.org/team/226444)",
         "比赛ID": "1143",
         "比赛状态": "past"
@@ -1893,18 +1893,6 @@
         "比赛权重": "100.00",
         "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
         "比赛ID": "372",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Web Arena",
-        "比赛时间": "2025-10-18 20:30:15 - 2025-10-19 20:30:15 UTC+8",
-        "添加日历": "https://ctftime.org/event/2939.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://csem.sturtles.in/events/3/",
-        "比赛标志": "https://ctftime.org/media/events/Gemini_Generated_Image_j48x6dj48x6dj48x.png",
-        "比赛权重": "0",
-        "赛事主办": "Super_Hacker (https://ctftime.org/team/195477)",
-        "比赛ID": "1354",
         "比赛状态": "past"
     }
 ]

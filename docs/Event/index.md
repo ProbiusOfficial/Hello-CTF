@@ -595,9 +595,9 @@ hide:
                 **赛事主办** : Laokoon SecurITy (https://ctftime.org/team/201667)  
                 **添加日历** : https://ctftime.org/event/3084.ics  
                 
-            ??? Quote "[VolgaCTF 2026 Qualifier](https://volgactf.ru/en/volgactf-2026/qualifier/)"  
-                [![](https://ctftime.org/media/events/logo-social-yellow_18.png){ width="200" align=left }](https://volgactf.ru/en/volgactf-2026/qualifier/)  
-                **比赛名称** : [VolgaCTF 2026 Qualifier](https://volgactf.ru/en/volgactf-2026/qualifier/)  
+            ??? Quote "[VolgaCTF 2026 Qualifier](https://q.2026.volgactf.ru/)"  
+                [![](https://ctftime.org/media/events/logo-social-yellow_18.png){ width="200" align=left }](https://q.2026.volgactf.ru/)  
+                **比赛名称** : [VolgaCTF 2026 Qualifier](https://q.2026.volgactf.ru/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-03-28 21:00:00 - 2026-03-29 21:00:00 UTC+8  
                 **比赛权重** : 38.67  
@@ -828,15 +828,6 @@ hide:
                 **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
                 **添加日历** : https://ctftime.org/event/2916.ics  
                 
-            ??? Quote "[Hack for a Change 2026 January: UN SDG 15](http://www.hackforachange.org/)"  
-                [![](https://ctftime.org/media/events/logo_117.png){ width="200" align=left }](http://www.hackforachange.org/)  
-                **比赛名称** : [Hack for a Change 2026 January: UN SDG 15](http://www.hackforachange.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-01-30 08:00:00 - 2026-02-03 07:59:59 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
-                **添加日历** : https://ctftime.org/event/3083.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[UniCTF](https://unictf.play.ctfplus.cn/)"  
@@ -901,6 +892,15 @@ hide:
                 **赛事主办** : ASCF (https://ctftime.org/team/418960)  
                 **添加日历** : https://ctftime.org/event/3099.ics  
                 
+            ??? Quote "[Hack for a Change 2026 January: UN SDG 15](http://www.hackforachange.org/)"  
+                [![](https://ctftime.org/media/events/logo_117.png){ width="200" align=left }](http://www.hackforachange.org/)  
+                **比赛名称** : [Hack for a Change 2026 January: UN SDG 15](http://www.hackforachange.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-01-30 08:00:00 - 2026-02-03 07:59:59 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
+                **添加日历** : https://ctftime.org/event/3083.ics  
+                
             ??? Quote "[CyberQuest 26](https://ngpkanam.com/events/41)"  
                 [![](https://ctftime.org/media/events/WhatsApp_Image_2026-01-15_at_16.42.06.jpeg){ width="200" align=left }](https://ngpkanam.com/events/41)  
                 **比赛名称** : [CyberQuest 26](https://ngpkanam.com/events/41)  
@@ -933,7 +933,7 @@ hide:
                 **比赛名称** : [LilacCTF 2026](https://lilacctf2026.xctf.org.cn/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-01-24 09:00:00 - 2026-01-26 09:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : Lilac (https://ctftime.org/team/15163)  
                 **添加日历** : https://ctftime.org/event/3071.ics  
                 
@@ -969,7 +969,7 @@ hide:
                 **比赛名称** : [0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-01-23 21:00:00 - 2026-01-25 21:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 28.90  
                 **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
                 **添加日历** : https://ctftime.org/event/3024.ics  
                 
@@ -1041,7 +1041,7 @@ hide:
                 **比赛名称** : [Scarlet CTF 2026](http://ctf.rusec.club/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-01-09 08:00:00 - 2026-01-12 08:00:00 UTC+8  
-                **比赛权重** : 22.80  
+                **比赛权重** : 22.88  
                 **赛事主办** : ScarletCTF (https://ctftime.org/team/226444)  
                 **添加日历** : https://ctftime.org/event/2981.ics  
                 
@@ -1737,15 +1737,6 @@ hide:
                 **比赛权重** : 100.00  
                 **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
                 **添加日历** : https://ctftime.org/event/2946.ics  
-                
-            ??? Quote "[Web Arena](https://csem.sturtles.in/events/3/)"  
-                [![](https://ctftime.org/media/events/Gemini_Generated_Image_j48x6dj48x6dj48x.png){ width="200" align=left }](https://csem.sturtles.in/events/3/)  
-                **比赛名称** : [Web Arena](https://csem.sturtles.in/events/3/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-18 20:30:15 - 2025-10-19 20:30:15 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Super_Hacker (https://ctftime.org/team/195477)  
-                **添加日历** : https://ctftime.org/event/2939.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

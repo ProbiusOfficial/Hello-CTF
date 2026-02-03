@@ -315,9 +315,9 @@ comments: true
     **赛事主办** : Laokoon SecurITy (https://ctftime.org/team/201667)  
     **添加日历** : https://ctftime.org/event/3084.ics  
     
-??? Quote "[VolgaCTF 2026 Qualifier](https://volgactf.ru/en/volgactf-2026/qualifier/)"  
-    [![](https://ctftime.org/media/events/logo-social-yellow_18.png){ width="200" align=left }](https://volgactf.ru/en/volgactf-2026/qualifier/)  
-    **比赛名称** : [VolgaCTF 2026 Qualifier](https://volgactf.ru/en/volgactf-2026/qualifier/)  
+??? Quote "[VolgaCTF 2026 Qualifier](https://q.2026.volgactf.ru/)"  
+    [![](https://ctftime.org/media/events/logo-social-yellow_18.png){ width="200" align=left }](https://q.2026.volgactf.ru/)  
+    **比赛名称** : [VolgaCTF 2026 Qualifier](https://q.2026.volgactf.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-03-28 21:00:00 - 2026-03-29 21:00:00 UTC+8  
     **比赛权重** : 38.67  
