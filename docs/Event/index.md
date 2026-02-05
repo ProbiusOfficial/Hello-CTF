@@ -289,9 +289,9 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[BITSCTF 2026](https://ctf.bitskrieg.in/)"  
+            ??? Quote "[BITSCTF 2026 [Postponed]](https://ctf.bitskrieg.in/)"  
                 [![](https://ctftime.org/media/events/bitskrieg_background.png){ width="200" align=left }](https://ctf.bitskrieg.in/)  
-                **比赛名称** : [BITSCTF 2026](https://ctf.bitskrieg.in/)  
+                **比赛名称** : [BITSCTF 2026 [Postponed]](https://ctf.bitskrieg.in/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-02-06 13:30:00 - 2026-02-08 13:30:00 UTC+8  
                 **比赛权重** : 25.54  
