@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[BITSCTF 2026 [Postponed]](https://ctf.bitskrieg.in/)"  
-                [![](https://ctftime.org/media/events/bitskrieg_background.png){ width="200" align=left }](https://ctf.bitskrieg.in/)  
-                **比赛名称** : [BITSCTF 2026 [Postponed]](https://ctf.bitskrieg.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-02-06 13:30:00 - 2026-02-08 13:30:00 UTC+8  
-                **比赛权重** : 25.54  
-                **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
-                **添加日历** : https://ctftime.org/event/3047.ics  
-                
             ??? Quote "[Pragyan CTF 2026](https://ctf.prgy.in/)"  
                 [![](){ width="200" align=left }](https://ctf.prgy.in/)  
                 **比赛名称** : [Pragyan CTF 2026](https://ctf.prgy.in/)  
@@ -820,6 +811,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
                 **添加日历** : https://ctftime.org/event/2916.ics  
+                
+            ??? Quote "[BITSCTF 2026 [Postponed]](https://ctf.bitskrieg.in/)"  
+                [![](https://ctftime.org/media/events/bitskrieg_background.png){ width="200" align=left }](https://ctf.bitskrieg.in/)  
+                **比赛名称** : [BITSCTF 2026 [Postponed]](https://ctf.bitskrieg.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-02-06 13:30:00 - 2026-02-08 13:30:00 UTC+8  
+                **比赛权重** : 25.54  
+                **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
+                **添加日历** : https://ctftime.org/event/3047.ics  
                 
     === "*已经结束*"
         === "国内赛事"

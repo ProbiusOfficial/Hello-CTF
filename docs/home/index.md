@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[BITSCTF 2026 [Postponed]](https://ctf.bitskrieg.in/)"  
-            [![](https://ctftime.org/media/events/bitskrieg_background.png){ width="200" align=left }](https://ctf.bitskrieg.in/)  
-            **比赛名称** : [BITSCTF 2026 [Postponed]](https://ctf.bitskrieg.in/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-02-06 13:30:00 - 2026-02-08 13:30:00 UTC+8  
-            **比赛权重** : 25.54  
-            **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
-            **添加日历** : https://ctftime.org/event/3047.ics  
-            
         ??? Quote "[Pragyan CTF 2026](https://ctf.prgy.in/)"  
             [![](){ width="200" align=left }](https://ctf.prgy.in/)  
             **比赛名称** : [Pragyan CTF 2026](https://ctf.prgy.in/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 24.72  
             **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
             **添加日历** : https://ctftime.org/event/3066.ics  
+            
+        ??? Quote "[DUCKERZ CTF 2026](https://teams.duckerz.ru/)"  
+            [![](https://ctftime.org/media/events/DUCKERZ.png){ width="200" align=left }](https://teams.duckerz.ru/)  
+            **比赛名称** : [DUCKERZ CTF 2026](https://teams.duckerz.ru/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-02-07 17:00:00 - 2026-02-08 17:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : DUCKERZ (https://ctftime.org/team/372036)  
+            **添加日历** : https://ctftime.org/event/3067.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

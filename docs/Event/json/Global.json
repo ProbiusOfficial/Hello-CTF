@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "BITSCTF 2026 [Postponed]",
-        "比赛时间": "2026-02-06 13:30:00 - 2026-02-08 13:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3047.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.bitskrieg.in/",
-        "比赛标志": "https://ctftime.org/media/events/bitskrieg_background.png",
-        "比赛权重": "25.54",
-        "赛事主办": "BITSkrieg (https://ctftime.org/team/22310)",
-        "比赛ID": "182",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Pragyan CTF 2026",
         "比赛时间": "2026-02-06 21:00:00 - 2026-02-08 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3058.ics",
@@ -693,6 +681,18 @@
         "比赛权重": "0",
         "赛事主办": "ectfmitre (https://ctftime.org/team/87292)",
         "比赛ID": "364",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "BITSCTF 2026 [Postponed]",
+        "比赛时间": "2026-02-06 13:30:00 - 2026-02-08 13:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3047.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bitskrieg.in/",
+        "比赛标志": "https://ctftime.org/media/events/bitskrieg_background.png",
+        "比赛权重": "25.54",
+        "赛事主办": "BITSkrieg (https://ctftime.org/team/22310)",
+        "比赛ID": "182",
         "比赛状态": "nowrunning"
     },
     {
