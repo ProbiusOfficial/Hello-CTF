@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Pragyan CTF 2026](https://ctf.prgy.in/)"  
-    [![](){ width="200" align=left }](https://ctf.prgy.in/)  
-    **比赛名称** : [Pragyan CTF 2026](https://ctf.prgy.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-06 21:00:00 - 2026-02-08 21:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Pragyan (https://ctftime.org/team/33867)  
-    **添加日历** : https://ctftime.org/event/3058.ics  
-    
 ??? Quote "[LA CTF 2026](https://lac.tf/)"  
     [![](){ width="200" align=left }](https://lac.tf/)  
     **比赛名称** : [LA CTF 2026](https://lac.tf/)  
