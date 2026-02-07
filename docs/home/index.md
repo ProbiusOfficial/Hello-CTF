@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[EncipherX CTF 4.0](https://encipherx.in/)"  
-            [![](https://ctftime.org/media/events/EncipherX_logo.png){ width="200" align=left }](https://encipherx.in/)  
-            **比赛名称** : [EncipherX CTF 4.0](https://encipherx.in/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-02-07 19:00:00 - 2026-02-08 19:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Phoenixcybersecurity (https://ctftime.org/team/419257)  
-            **添加日历** : https://ctftime.org/event/3074.ics  
-            
         ??? Quote "[0xFUN CTF 2026](https://ctf.0xfun.org/)"  
             [![](https://ctftime.org/media/events/image_4.png){ width="200" align=left }](https://ctf.0xfun.org/)  
             **比赛名称** : [0xFUN CTF 2026](https://ctf.0xfun.org/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : BreachPoint-SOT (https://ctftime.org/team/419090)  
             **添加日历** : https://ctftime.org/event/3075.ics  
+            
+        ??? Quote "[TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)"  
+            [![](){ width="200" align=left }](https://chart.taipanbyte.ru/)  
+            **比赛名称** : [TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-02-14 18:00:00 - 2026-02-15 18:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : TaipanByte (https://ctftime.org/team/301788)  
+            **添加日历** : https://ctftime.org/event/3086.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
