@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "LA CTF 2026",
-        "比赛时间": "2026-02-07 10:00:00 - 2026-02-09 10:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3015.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://lac.tf/",
-        "比赛标志": "",
-        "比赛权重": "53.58",
-        "赛事主办": "PBR | UCLA (https://ctftime.org/team/186494)",
-        "比赛ID": "820",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Nullcon Goa HackIM 2026 CTF",
         "比赛时间": "2026-02-07 16:30:00 - 2026-02-08 16:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3066.ics",
@@ -693,6 +681,18 @@
         "比赛权重": "0",
         "赛事主办": "Pragyan (https://ctftime.org/team/33867)",
         "比赛ID": "97",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "LA CTF 2026",
+        "比赛时间": "2026-02-07 10:00:00 - 2026-02-09 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3015.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://lac.tf/",
+        "比赛标志": "",
+        "比赛权重": "53.58",
+        "赛事主办": "PBR | UCLA (https://ctftime.org/team/186494)",
+        "比赛ID": "820",
         "比赛状态": "nowrunning"
     },
     {
