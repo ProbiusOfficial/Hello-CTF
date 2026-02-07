@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[LA CTF 2026](https://lac.tf/)"  
-            [![](){ width="200" align=left }](https://lac.tf/)  
-            **比赛名称** : [LA CTF 2026](https://lac.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-02-07 10:00:00 - 2026-02-09 10:00:00 UTC+8  
-            **比赛权重** : 53.58  
-            **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
-            **添加日历** : https://ctftime.org/event/3015.ics  
-            
         ??? Quote "[Nullcon Goa HackIM 2026 CTF](https://ctf.nullcon.net/)"  
             [![](https://ctftime.org/media/events/a3838829dc3fcbbebcc062b58d405747_1.png){ width="200" align=left }](https://ctf.nullcon.net/)  
             **比赛名称** : [Nullcon Goa HackIM 2026 CTF](https://ctf.nullcon.net/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Phoenixcybersecurity (https://ctftime.org/team/419257)  
             **添加日历** : https://ctftime.org/event/3074.ics  
+            
+        ??? Quote "[0xFUN CTF 2026](https://ctf.0xfun.org/)"  
+            [![](https://ctftime.org/media/events/image_4.png){ width="200" align=left }](https://ctf.0xfun.org/)  
+            **比赛名称** : [0xFUN CTF 2026](https://ctf.0xfun.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-02-13 02:00:00 - 2026-02-15 02:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : 0xFUN (https://ctftime.org/team/354033)  
+            **添加日历** : https://ctftime.org/event/3081.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

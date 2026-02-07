@@ -42,3 +42,12 @@ comments: true
     **赛事主办** : Pragyan (https://ctftime.org/team/33867)  
     **添加日历** : https://ctftime.org/event/3058.ics  
     
+??? Quote "[LA CTF 2026](https://lac.tf/)"  
+    [![](){ width="200" align=left }](https://lac.tf/)  
+    **比赛名称** : [LA CTF 2026](https://lac.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-02-07 10:00:00 - 2026-02-09 10:00:00 UTC+8  
+    **比赛权重** : 53.58  
+    **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
+    **添加日历** : https://ctftime.org/event/3015.ics  
+    
