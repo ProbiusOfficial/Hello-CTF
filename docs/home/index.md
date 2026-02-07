@@ -54,24 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Nullcon Goa HackIM 2026 CTF](https://ctf.nullcon.net/)"  
-            [![](https://ctftime.org/media/events/a3838829dc3fcbbebcc062b58d405747_1.png){ width="200" align=left }](https://ctf.nullcon.net/)  
-            **比赛名称** : [Nullcon Goa HackIM 2026 CTF](https://ctf.nullcon.net/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-02-07 16:30:00 - 2026-02-08 16:30:00 UTC+8  
-            **比赛权重** : 24.72  
-            **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
-            **添加日历** : https://ctftime.org/event/3066.ics  
-            
-        ??? Quote "[DUCKERZ CTF 2026](https://teams.duckerz.ru/)"  
-            [![](https://ctftime.org/media/events/DUCKERZ.png){ width="200" align=left }](https://teams.duckerz.ru/)  
-            **比赛名称** : [DUCKERZ CTF 2026](https://teams.duckerz.ru/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-02-07 17:00:00 - 2026-02-08 17:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : DUCKERZ (https://ctftime.org/team/372036)  
-            **添加日历** : https://ctftime.org/event/3067.ics  
-            
         ??? Quote "[EncipherX CTF 4.0](https://encipherx.in/)"  
             [![](https://ctftime.org/media/events/EncipherX_logo.png){ width="200" align=left }](https://encipherx.in/)  
             **比赛名称** : [EncipherX CTF 4.0](https://encipherx.in/)  
@@ -89,6 +71,24 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : 0xFUN (https://ctftime.org/team/354033)  
             **添加日历** : https://ctftime.org/event/3081.ics  
+            
+        ??? Quote "[Crackmes.one Reverse Engineering CTF 2026](https://crackmesone.ctfd.io/)"  
+            [![](https://ctftime.org/media/events/221804609.png){ width="200" align=left }](https://crackmesone.ctfd.io/)  
+            **比赛名称** : [Crackmes.one Reverse Engineering CTF 2026](https://crackmesone.ctfd.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-02-14 08:00:00 - 2026-02-21 08:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : crackmes.one (https://ctftime.org/team/388934)  
+            **添加日历** : https://ctftime.org/event/3014.ics  
+            
+        ??? Quote "[Breach Point CTF - Siege Of Troy(Online Round)](https://breachpoint.live/)"  
+            [![](https://ctftime.org/media/events/SIEGE_O_TROY_Trust_Was_the_Vulnerability..jpg){ width="200" align=left }](https://breachpoint.live/)  
+            **比赛名称** : [Breach Point CTF - Siege Of Troy(Online Round)](https://breachpoint.live/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-02-14 15:30:00 - 2026-02-15 15:30:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : BreachPoint-SOT (https://ctftime.org/team/419090)  
+            **添加日历** : https://ctftime.org/event/3075.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
