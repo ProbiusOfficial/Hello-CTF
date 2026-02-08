@@ -785,24 +785,6 @@ hide:
                 **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
                 **添加日历** : https://ctftime.org/event/3015.ics  
                 
-            ??? Quote "[Nullcon Goa HackIM 2026 CTF](https://ctf.nullcon.net/)"  
-                [![](https://ctftime.org/media/events/a3838829dc3fcbbebcc062b58d405747_1.png){ width="200" align=left }](https://ctf.nullcon.net/)  
-                **比赛名称** : [Nullcon Goa HackIM 2026 CTF](https://ctf.nullcon.net/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-02-07 16:30:00 - 2026-02-08 16:30:00 UTC+8  
-                **比赛权重** : 24.72  
-                **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
-                **添加日历** : https://ctftime.org/event/3066.ics  
-                
-            ??? Quote "[DUCKERZ CTF 2026](https://teams.duckerz.ru/)"  
-                [![](https://ctftime.org/media/events/DUCKERZ.png){ width="200" align=left }](https://teams.duckerz.ru/)  
-                **比赛名称** : [DUCKERZ CTF 2026](https://teams.duckerz.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-02-07 17:00:00 - 2026-02-08 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : DUCKERZ (https://ctftime.org/team/372036)  
-                **添加日历** : https://ctftime.org/event/3067.ics  
-                
             ??? Quote "[EncipherX CTF 4.0](https://encipherx.in/)"  
                 [![](https://ctftime.org/media/events/EncipherX_logo.png){ width="200" align=left }](https://encipherx.in/)  
                 **比赛名称** : [EncipherX CTF 4.0](https://encipherx.in/)  
@@ -829,6 +811,24 @@ hide:
                 **其他说明** : 4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。  
                 
         === "国外赛事"
+            ??? Quote "[DUCKERZ CTF 2026](https://teams.duckerz.ru/)"  
+                [![](https://ctftime.org/media/events/DUCKERZ.png){ width="200" align=left }](https://teams.duckerz.ru/)  
+                **比赛名称** : [DUCKERZ CTF 2026](https://teams.duckerz.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-02-07 17:00:00 - 2026-02-08 17:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : DUCKERZ (https://ctftime.org/team/372036)  
+                **添加日历** : https://ctftime.org/event/3067.ics  
+                
+            ??? Quote "[Nullcon Goa HackIM 2026 CTF](https://ctf.nullcon.net/)"  
+                [![](https://ctftime.org/media/events/a3838829dc3fcbbebcc062b58d405747_1.png){ width="200" align=left }](https://ctf.nullcon.net/)  
+                **比赛名称** : [Nullcon Goa HackIM 2026 CTF](https://ctf.nullcon.net/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-02-07 16:30:00 - 2026-02-08 16:30:00 UTC+8  
+                **比赛权重** : 24.72  
+                **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
+                **添加日历** : https://ctftime.org/event/3066.ics  
+                
             ??? Quote "[BITSCTF 2026 [Postponed]](https://ctf.bitskrieg.in/)"  
                 [![](https://ctftime.org/media/events/bitskrieg_background.png){ width="200" align=left }](https://ctf.bitskrieg.in/)  
                 **比赛名称** : [BITSCTF 2026 [Postponed]](https://ctf.bitskrieg.in/)  
@@ -1710,24 +1710,6 @@ hide:
                 **比赛权重** : 21.87  
                 **赛事主办** : osu!gaming (https://ctftime.org/team/186954)  
                 **添加日历** : https://ctftime.org/event/2801.ics  
-                
-            ??? Quote "[2025 Qiangwang Challenge on Cyber Mimic Defense Qualification](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)"  
-                [![](https://ctftime.org/media/events/wechat_2025-09-26_160854_722_1.png){ width="200" align=left }](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
-                **比赛名称** : [2025 Qiangwang Challenge on Cyber Mimic Defense Qualification](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-25 09:00:00 - 2025-10-26 09:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : LoveFromMimic (https://ctftime.org/team/364644)  
-                **添加日历** : https://ctftime.org/event/2952.ics  
-                
-            ??? Quote "[RSTCON 2025 CTF](https://mctf.io/rstcon25)"  
-                [![](https://ctftime.org/media/events/RSTCON-BLK.png){ width="200" align=left }](https://mctf.io/rstcon25)  
-                **比赛名称** : [RSTCON 2025 CTF](https://mctf.io/rstcon25)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-25 03:00:00 - 2025-10-26 22:00:00 UTC+8  
-                **比赛权重** : 24.00  
-                **赛事主办** : RSTCON (https://ctftime.org/team/281202)  
-                **添加日历** : https://ctftime.org/event/2865.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
