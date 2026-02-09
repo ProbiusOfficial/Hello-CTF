@@ -767,15 +767,6 @@ hide:
                 **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
                 **添加日历** : https://ctftime.org/event/2916.ics  
                 
-            ??? Quote "[LA CTF 2026](https://lac.tf/)"  
-                [![](){ width="200" align=left }](https://lac.tf/)  
-                **比赛名称** : [LA CTF 2026](https://lac.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-02-07 10:00:00 - 2026-02-09 10:00:00 UTC+8  
-                **比赛权重** : 53.58  
-                **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
-                **添加日历** : https://ctftime.org/event/3015.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[furryCTF 2025 高校联合新神赛](https://furryctf.com/)"  
@@ -820,6 +811,15 @@ hide:
                 **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
                 **添加日历** : https://ctftime.org/event/3066.ics  
                 
+            ??? Quote "[LA CTF 2026](https://lac.tf/)"  
+                [![](){ width="200" align=left }](https://lac.tf/)  
+                **比赛名称** : [LA CTF 2026](https://lac.tf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-02-07 10:00:00 - 2026-02-09 10:00:00 UTC+8  
+                **比赛权重** : 53.58  
+                **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
+                **添加日历** : https://ctftime.org/event/3015.ics  
+                
             ??? Quote "[Pragyan CTF 2026](https://ctf.prgy.in/)"  
                 [![](){ width="200" align=left }](https://ctf.prgy.in/)  
                 **比赛名称** : [Pragyan CTF 2026](https://ctf.prgy.in/)  
@@ -852,7 +852,7 @@ hide:
                 **比赛名称** : [Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-01-31 12:30:00 - 2026-02-01 12:30:00 UTC+8  
-                **比赛权重** : 23.61  
+                **比赛权重** : 23.68  
                 **赛事主办** : Team MCSC (https://ctftime.org/team/418958)  
                 **添加日历** : https://ctftime.org/event/3072.ics  
                 
@@ -969,7 +969,7 @@ hide:
                 **比赛名称** : [0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-01-23 21:00:00 - 2026-01-25 21:00:00 UTC+8  
-                **比赛权重** : 28.90  
+                **比赛权重** : 28.96  
                 **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
                 **添加日历** : https://ctftime.org/event/3024.ics  
                 
@@ -1683,15 +1683,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : SharLike (https://ctftime.org/team/16172)  
                 **添加日历** : https://ctftime.org/event/2979.ics  
-                
-            ??? Quote "[SAS CTF 2025 Finals](https://ctf.thesascon.com/)"  
-                [![](https://ctftime.org/media/events/SAS25_new_1.png){ width="200" align=left }](https://ctf.thesascon.com/)  
-                **比赛名称** : [SAS CTF 2025 Finals](https://ctf.thesascon.com/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2025-10-26 11:00:00 - 2025-10-26 22:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : Drovosec, SAS CREW (https://ctftime.org/team/210132, https://ctftime.org/team/283057)  
-                **添加日历** : https://ctftime.org/event/2811.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
