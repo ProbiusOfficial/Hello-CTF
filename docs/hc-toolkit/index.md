@@ -344,7 +344,7 @@ hide:
 
     | 项目名称       | Usage | 项目地址 | 其他 |
     | ------------   | ----- | -------- | -------- |
-    | evilPather | awd pwn题的通防御 ｜ [Github](https://github.com/TTY-flag/evilPatcher) |
+    | evilPather | pwn题的通防 ｜ [Github](https://github.com/TTY-flag/evilPatcher) |
     | Prepare-for-AWD | 攻击和防御用脚本 | [Github](https://github.com/admintony/Prepare-for-AWD) |
     | 0rays-edr-filechecker | 文件监控器，防止别人传马 | [Github](https://github.com/christarcher/0RAYS-AWD-Filechecker) |
     | awf-watchbird | web题的通防 ｜ [Github](https://github.com/leohearts/awd-watchbird) |
