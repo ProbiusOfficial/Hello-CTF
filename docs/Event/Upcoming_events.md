@@ -9,60 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[BITSCTF 2026](https://ctf.bitskrieg.in/)"  
-    [![](https://ctftime.org/media/events/bitskrieg_background.png){ width="200" align=left }](https://ctf.bitskrieg.in/)  
-    **比赛名称** : [BITSCTF 2026](https://ctf.bitskrieg.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-06 13:30:00 - 2026-02-08 13:30:00 UTC+8  
-    **比赛权重** : 25.54  
-    **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
-    **添加日历** : https://ctftime.org/event/3047.ics  
-    
-??? Quote "[Pragyan CTF 2026](https://ctf.prgy.in/)"  
-    [![](){ width="200" align=left }](https://ctf.prgy.in/)  
-    **比赛名称** : [Pragyan CTF 2026](https://ctf.prgy.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-06 21:00:00 - 2026-02-08 21:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Pragyan (https://ctftime.org/team/33867)  
-    **添加日历** : https://ctftime.org/event/3058.ics  
-    
-??? Quote "[LA CTF 2026](https://lac.tf/)"  
-    [![](){ width="200" align=left }](https://lac.tf/)  
-    **比赛名称** : [LA CTF 2026](https://lac.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-07 10:00:00 - 2026-02-09 10:00:00 UTC+8  
-    **比赛权重** : 53.58  
-    **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
-    **添加日历** : https://ctftime.org/event/3015.ics  
-    
-??? Quote "[Nullcon Goa HackIM 2026 CTF](https://ctf.nullcon.net/)"  
-    [![](https://ctftime.org/media/events/a3838829dc3fcbbebcc062b58d405747_1.png){ width="200" align=left }](https://ctf.nullcon.net/)  
-    **比赛名称** : [Nullcon Goa HackIM 2026 CTF](https://ctf.nullcon.net/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-07 16:30:00 - 2026-02-08 16:30:00 UTC+8  
-    **比赛权重** : 24.72  
-    **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
-    **添加日历** : https://ctftime.org/event/3066.ics  
-    
-??? Quote "[DUCKERZ CTF 2026](https://teams.duckerz.ru/)"  
-    [![](https://ctftime.org/media/events/DUCKERZ.png){ width="200" align=left }](https://teams.duckerz.ru/)  
-    **比赛名称** : [DUCKERZ CTF 2026](https://teams.duckerz.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-07 17:00:00 - 2026-02-08 17:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : DUCKERZ (https://ctftime.org/team/372036)  
-    **添加日历** : https://ctftime.org/event/3067.ics  
-    
-??? Quote "[EncipherX CTF 4.0](https://encipherx.in/)"  
-    [![](https://ctftime.org/media/events/EncipherX_logo.png){ width="200" align=left }](https://encipherx.in/)  
-    **比赛名称** : [EncipherX CTF 4.0](https://encipherx.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-07 19:00:00 - 2026-02-08 19:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Phoenixcybersecurity (https://ctftime.org/team/419257)  
-    **添加日历** : https://ctftime.org/event/3074.ics  
-    
 ??? Quote "[0xFUN CTF 2026](https://ctf.0xfun.org/)"  
     [![](https://ctftime.org/media/events/image_4.png){ width="200" align=left }](https://ctf.0xfun.org/)  
     **比赛名称** : [0xFUN CTF 2026](https://ctf.0xfun.org/)  
@@ -144,14 +90,23 @@ comments: true
     **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
     **添加日历** : https://ctftime.org/event/3046.ics  
     
-??? Quote "[UniVsThreats 26 Quals CTF]()"  
-    [![](https://ctftime.org/media/events/b5d87319c0fb32c513deeef45488af6a.jpg){ width="200" align=left }]()  
-    **比赛名称** : [UniVsThreats 26 Quals CTF]()  
+??? Quote "[UniVsThreats 26 Quals CTF](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)"  
+    [![](https://ctftime.org/media/events/UniVsThreats26_Final_No_Sponsors_1.jpg){ width="200" align=left }](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)  
+    **比赛名称** : [UniVsThreats 26 Quals CTF](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-02-27 16:00:00 - 2026-02-28 16:00:00 UTC+8  
     **比赛权重** : 18.35  
     **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
     **添加日历** : https://ctftime.org/event/3092.ics  
+    
+??? Quote "[EHAX CTF 2026](https://ctf.ehax.in/)"  
+    [![](https://ctftime.org/media/events/EHAX_CTF_FINAL_LOGO_1.png){ width="200" align=left }](https://ctf.ehax.in/)  
+    **比赛名称** : [EHAX CTF 2026](https://ctf.ehax.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-02-28 02:30:00 - 2026-03-01 14:30:00 UTC+8  
+    **比赛权重** : 22.67  
+    **赛事主办** : EHAX (https://ctftime.org/team/270643)  
+    **添加日历** : https://ctftime.org/event/3127.ics  
     
 ??? Quote "[SECCON CTF 14 International Finals](https://ctf.seccon.jp/)"  
     [![](https://ctftime.org/media/events/seccon_s_11.png){ width="200" align=left }](https://ctf.seccon.jp/)  

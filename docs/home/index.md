@@ -54,41 +54,41 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[BITSCTF 2026](https://ctf.bitskrieg.in/)"  
-            [![](https://ctftime.org/media/events/bitskrieg_background.png){ width="200" align=left }](https://ctf.bitskrieg.in/)  
-            **比赛名称** : [BITSCTF 2026](https://ctf.bitskrieg.in/)  
+        ??? Quote "[0xFUN CTF 2026](https://ctf.0xfun.org/)"  
+            [![](https://ctftime.org/media/events/image_4.png){ width="200" align=left }](https://ctf.0xfun.org/)  
+            **比赛名称** : [0xFUN CTF 2026](https://ctf.0xfun.org/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-02-06 13:30:00 - 2026-02-08 13:30:00 UTC+8  
-            **比赛权重** : 25.54  
-            **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
-            **添加日历** : https://ctftime.org/event/3047.ics  
-            
-        ??? Quote "[Pragyan CTF 2026](https://ctf.prgy.in/)"  
-            [![](){ width="200" align=left }](https://ctf.prgy.in/)  
-            **比赛名称** : [Pragyan CTF 2026](https://ctf.prgy.in/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-02-06 21:00:00 - 2026-02-08 21:00:00 UTC+8  
+            **比赛时间** : 2026-02-13 02:00:00 - 2026-02-15 02:00:00 UTC+8  
             **比赛权重** : 0.00  
-            **赛事主办** : Pragyan (https://ctftime.org/team/33867)  
-            **添加日历** : https://ctftime.org/event/3058.ics  
+            **赛事主办** : 0xFUN (https://ctftime.org/team/354033)  
+            **添加日历** : https://ctftime.org/event/3081.ics  
             
-        ??? Quote "[LA CTF 2026](https://lac.tf/)"  
-            [![](){ width="200" align=left }](https://lac.tf/)  
-            **比赛名称** : [LA CTF 2026](https://lac.tf/)  
+        ??? Quote "[Crackmes.one Reverse Engineering CTF 2026](https://crackmesone.ctfd.io/)"  
+            [![](https://ctftime.org/media/events/221804609.png){ width="200" align=left }](https://crackmesone.ctfd.io/)  
+            **比赛名称** : [Crackmes.one Reverse Engineering CTF 2026](https://crackmesone.ctfd.io/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-02-07 10:00:00 - 2026-02-09 10:00:00 UTC+8  
-            **比赛权重** : 53.58  
-            **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
-            **添加日历** : https://ctftime.org/event/3015.ics  
+            **比赛时间** : 2026-02-14 08:00:00 - 2026-02-21 08:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : crackmes.one (https://ctftime.org/team/388934)  
+            **添加日历** : https://ctftime.org/event/3014.ics  
             
-        ??? Quote "[Nullcon Goa HackIM 2026 CTF](https://ctf.nullcon.net/)"  
-            [![](https://ctftime.org/media/events/a3838829dc3fcbbebcc062b58d405747_1.png){ width="200" align=left }](https://ctf.nullcon.net/)  
-            **比赛名称** : [Nullcon Goa HackIM 2026 CTF](https://ctf.nullcon.net/)  
+        ??? Quote "[Breach Point CTF - Siege Of Troy(Online Round)](https://breachpoint.live/)"  
+            [![](https://ctftime.org/media/events/SIEGE_O_TROY_Trust_Was_the_Vulnerability..jpg){ width="200" align=left }](https://breachpoint.live/)  
+            **比赛名称** : [Breach Point CTF - Siege Of Troy(Online Round)](https://breachpoint.live/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-02-07 16:30:00 - 2026-02-08 16:30:00 UTC+8  
-            **比赛权重** : 24.72  
-            **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
-            **添加日历** : https://ctftime.org/event/3066.ics  
+            **比赛时间** : 2026-02-14 15:30:00 - 2026-02-15 15:30:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : BreachPoint-SOT (https://ctftime.org/team/419090)  
+            **添加日历** : https://ctftime.org/event/3075.ics  
+            
+        ??? Quote "[TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)"  
+            [![](){ width="200" align=left }](https://chart.taipanbyte.ru/)  
+            **比赛名称** : [TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-02-14 18:00:00 - 2026-02-15 18:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : TaipanByte (https://ctftime.org/team/301788)  
+            **添加日历** : https://ctftime.org/event/3086.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

