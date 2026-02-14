@@ -54,6 +54,15 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
+        ??? Quote "[RamadanCTF 2026](https://labs.vulnbydefault.com/)"  
+            [![](https://ctftime.org/media/events/WhatsApp_Image_2026-02-05_at_9.01.11_PM.jpeg){ width="200" align=left }](https://labs.vulnbydefault.com/)  
+            **比赛名称** : [RamadanCTF 2026](https://labs.vulnbydefault.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-02-18 08:00:00 - 2026-03-17 08:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : vulnbydefault (https://ctftime.org/team/423471)  
+            **添加日历** : https://ctftime.org/event/3135.ics  
+            
         ??? Quote "[Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)"  
             [![](https://ctftime.org/media/events/bklogo.png){ width="200" align=left }](https://ctf.batmans.kitchen/)  
             **比赛名称** : [Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)  
@@ -80,15 +89,6 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Team MCSC (https://ctftime.org/team/418958)  
             **添加日历** : https://ctftime.org/event/3078.ics  
-            
-        ??? Quote "[EPIHACK CTF: L'arène numérique](https://ctf.epihack.tech/)"  
-            [![](https://ctftime.org/media/events/logo-bg.png){ width="200" align=left }](https://ctf.epihack.tech/)  
-            **比赛名称** : [EPIHACK CTF: L'arène numérique](https://ctf.epihack.tech/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-02-21 17:00:00 - 2026-02-22 01:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : EPIHACK (https://ctftime.org/team/419202)  
-            **添加日历** : https://ctftime.org/event/3076.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
