@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "TaipanByte’s Chart CTF",
-        "比赛时间": "2026-02-14 18:00:00 - 2026-02-15 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3086.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://chart.taipanbyte.ru/",
-        "比赛标志": "",
-        "比赛权重": "0.00",
-        "赛事主办": "TaipanByte (https://ctftime.org/team/301788)",
-        "比赛ID": "1497",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Batman's Kitchen CTF 2026",
         "比赛时间": "2026-02-21 02:30:00 - 2026-02-23 02:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3098.ics",
@@ -633,6 +621,18 @@
         "比赛权重": "0",
         "赛事主办": "BreachPoint-SOT (https://ctftime.org/team/419090)",
         "比赛ID": "1487",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "TaipanByte’s Chart CTF",
+        "比赛时间": "2026-02-14 18:00:00 - 2026-02-15 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3086.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://chart.taipanbyte.ru/",
+        "比赛标志": "",
+        "比赛权重": "0",
+        "赛事主办": "TaipanByte (https://ctftime.org/team/301788)",
+        "比赛ID": "1497",
         "比赛状态": "nowrunning"
     },
     {

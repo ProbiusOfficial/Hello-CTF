@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)"  
-                [![](){ width="200" align=left }](https://chart.taipanbyte.ru/)  
-                **比赛名称** : [TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-02-14 18:00:00 - 2026-02-15 18:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : TaipanByte (https://ctftime.org/team/301788)  
-                **添加日历** : https://ctftime.org/event/3086.ics  
-                
             ??? Quote "[Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)"  
                 [![](https://ctftime.org/media/events/bklogo.png){ width="200" align=left }](https://ctf.batmans.kitchen/)  
                 **比赛名称** : [Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)  
@@ -775,6 +766,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : BreachPoint-SOT (https://ctftime.org/team/419090)  
                 **添加日历** : https://ctftime.org/event/3075.ics  
+                
+            ??? Quote "[TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)"  
+                [![](){ width="200" align=left }](https://chart.taipanbyte.ru/)  
+                **比赛名称** : [TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-02-14 18:00:00 - 2026-02-15 18:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : TaipanByte (https://ctftime.org/team/301788)  
+                **添加日历** : https://ctftime.org/event/3086.ics  
                 
     === "*已经结束*"
         === "国内赛事"
