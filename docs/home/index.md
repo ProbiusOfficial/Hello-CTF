@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Breach Point CTF - Siege Of Troy(Online Round)](https://breachpoint.live/)"  
-            [![](https://ctftime.org/media/events/SIEGE_O_TROY_Trust_Was_the_Vulnerability..jpg){ width="200" align=left }](https://breachpoint.live/)  
-            **比赛名称** : [Breach Point CTF - Siege Of Troy(Online Round)](https://breachpoint.live/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-02-14 15:30:00 - 2026-02-15 15:30:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : BreachPoint-SOT (https://ctftime.org/team/419090)  
-            **添加日历** : https://ctftime.org/event/3075.ics  
-            
         ??? Quote "[TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)"  
             [![](){ width="200" align=left }](https://chart.taipanbyte.ru/)  
             **比赛名称** : [TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
             **添加日历** : https://ctftime.org/event/3088.ics  
+            
+        ??? Quote "[Escathon CTF 2026 Finals](https://eschaton.mcsc.space/)"  
+            [![](https://ctftime.org/media/events/mcsc_logo.jpg){ width="200" align=left }](https://eschaton.mcsc.space/)  
+            **比赛名称** : [Escathon CTF 2026 Finals](https://eschaton.mcsc.space/)  
+            **比赛形式** : Attack-Defense  
+            **比赛时间** : 2026-02-21 12:30:00 - 2026-02-21 22:30:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Team MCSC (https://ctftime.org/team/418958)  
+            **添加日历** : https://ctftime.org/event/3078.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
