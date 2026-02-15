@@ -12,6 +12,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "BITSCTF 2026",
+        "比赛时间": "2026-02-20 13:30:00 - 2026-02-22 13:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3122.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bitskrieg.in/",
+        "比赛标志": "",
+        "比赛权重": "25.54",
+        "赛事主办": "BITSkrieg (https://ctftime.org/team/22310)",
+        "比赛ID": "182",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Batman's Kitchen CTF 2026",
         "比赛时间": "2026-02-21 02:30:00 - 2026-02-23 02:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3098.ics",

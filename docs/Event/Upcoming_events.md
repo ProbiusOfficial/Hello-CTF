@@ -18,6 +18,15 @@ comments: true
     **赛事主办** : vulnbydefault (https://ctftime.org/team/423471)  
     **添加日历** : https://ctftime.org/event/3135.ics  
     
+??? Quote "[BITSCTF 2026](https://ctf.bitskrieg.in/)"  
+    [![](){ width="200" align=left }](https://ctf.bitskrieg.in/)  
+    **比赛名称** : [BITSCTF 2026](https://ctf.bitskrieg.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-02-20 13:30:00 - 2026-02-22 13:30:00 UTC+8  
+    **比赛权重** : 25.54  
+    **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
+    **添加日历** : https://ctftime.org/event/3122.ics  
+    
 ??? Quote "[Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)"  
     [![](https://ctftime.org/media/events/bklogo.png){ width="200" align=left }](https://ctf.batmans.kitchen/)  
     **比赛名称** : [Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)  
