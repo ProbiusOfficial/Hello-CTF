@@ -69,7 +69,7 @@ comments: true
     **比赛名称** : [DUCKERZ CTF 2026](https://teams.duckerz.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-02-07 17:00:00 - 2026-02-08 17:00:00 UTC+8  
-    **比赛权重** : 23.20  
+    **比赛权重** : 23.36  
     **赛事主办** : DUCKERZ (https://ctftime.org/team/372036)  
     **添加日历** : https://ctftime.org/event/3067.ics  
     
@@ -96,7 +96,7 @@ comments: true
     **比赛名称** : [Pragyan CTF 2026](https://ctf.prgy.in/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-02-06 21:00:00 - 2026-02-08 21:00:00 UTC+8  
-    **比赛权重** : 1.85  
+    **比赛权重** : 1.86  
     **赛事主办** : Pragyan (https://ctftime.org/team/33867)  
     **添加日历** : https://ctftime.org/event/3058.ics  
     
@@ -114,7 +114,7 @@ comments: true
     **比赛名称** : [PascalCTF 2026](https://ctf.pascalctf.it/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-01-31 16:00:00 - 2026-02-01 16:00:00 UTC+8  
-    **比赛权重** : 23.81  
+    **比赛权重** : 23.87  
     **赛事主办** : Paolo (https://ctftime.org/team/263145)  
     **添加日历** : https://ctftime.org/event/2767.ics  
     
