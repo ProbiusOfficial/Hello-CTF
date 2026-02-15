@@ -767,15 +767,6 @@ hide:
                 **赛事主办** : crackmes.one (https://ctftime.org/team/388934)  
                 **添加日历** : https://ctftime.org/event/3014.ics  
                 
-            ??? Quote "[TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)"  
-                [![](){ width="200" align=left }](https://chart.taipanbyte.ru/)  
-                **比赛名称** : [TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-02-14 18:00:00 - 2026-02-15 18:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : TaipanByte (https://ctftime.org/team/301788)  
-                **添加日历** : https://ctftime.org/event/3086.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[furryCTF 2025 高校联合新神赛](https://furryctf.com/)"  
@@ -793,6 +784,15 @@ hide:
                 **其他说明** : 4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。  
                 
         === "国外赛事"
+            ??? Quote "[TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)"  
+                [![](){ width="200" align=left }](https://chart.taipanbyte.ru/)  
+                **比赛名称** : [TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-02-14 18:00:00 - 2026-02-15 18:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : TaipanByte (https://ctftime.org/team/301788)  
+                **添加日历** : https://ctftime.org/event/3086.ics  
+                
             ??? Quote "[Breach Point CTF - Siege Of Troy(Online Round)](https://breachpoint.live/)"  
                 [![](https://ctftime.org/media/events/SIEGE_O_TROY_Trust_Was_the_Vulnerability..jpg){ width="200" align=left }](https://breachpoint.live/)  
                 **比赛名称** : [Breach Point CTF - Siege Of Troy(Online Round)](https://breachpoint.live/)  
@@ -1683,15 +1683,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : CypherLock (https://ctftime.org/team/356395)  
                 **添加日历** : https://ctftime.org/event/3005.ics  
-                
-            ??? Quote "[Iran Tech Olympics Speed-Run CTF 2025](https://ctf.olympics.tech/)"  
-                [![](https://ctftime.org/media/events/3bfa72e3e10491d8b3bd43a8153aad1e_1.jpg){ width="200" align=left }](https://ctf.olympics.tech/)  
-                **比赛名称** : [Iran Tech Olympics Speed-Run CTF 2025](https://ctf.olympics.tech/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-28 14:30:00 - 2025-10-28 14:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-                **添加日历** : https://ctftime.org/event/2931.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
