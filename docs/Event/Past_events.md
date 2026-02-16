@@ -100,15 +100,6 @@ comments: true
     **赛事主办** : Pragyan (https://ctftime.org/team/33867)  
     **添加日历** : https://ctftime.org/event/3058.ics  
     
-??? Quote "[BITSCTF 2026 [Postponed]](https://ctf.bitskrieg.in/)"  
-    [![](https://ctftime.org/media/events/bitskrieg_background.png){ width="200" align=left }](https://ctf.bitskrieg.in/)  
-    **比赛名称** : [BITSCTF 2026 [Postponed]](https://ctf.bitskrieg.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-06 13:30:00 - 2026-02-08 13:30:00 UTC+8  
-    **比赛权重** : 25.54  
-    **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
-    **添加日历** : https://ctftime.org/event/3047.ics  
-    
 ??? Quote "[PascalCTF 2026](https://ctf.pascalctf.it/)"  
     [![](https://ctftime.org/media/events/log.jpg){ width="200" align=left }](https://ctf.pascalctf.it/)  
     **比赛名称** : [PascalCTF 2026](https://ctf.pascalctf.it/)  
@@ -927,4 +918,13 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : CypherLock (https://ctftime.org/team/356395)  
     **添加日历** : https://ctftime.org/event/3005.ics  
+    
+??? Quote "[Iran Tech Olympics Speed-Run CTF 2025](https://ctf.olympics.tech/)"  
+    [![](https://ctftime.org/media/events/3bfa72e3e10491d8b3bd43a8153aad1e_1.jpg){ width="200" align=left }](https://ctf.olympics.tech/)  
+    **比赛名称** : [Iran Tech Olympics Speed-Run CTF 2025](https://ctf.olympics.tech/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2025-10-28 14:30:00 - 2025-10-28 14:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
+    **添加日历** : https://ctftime.org/event/2931.ics  
     
