@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[RamadanCTF 2026](https://labs.vulnbydefault.com/)"  
-                [![](https://ctftime.org/media/events/WhatsApp_Image_2026-02-05_at_9.01.11_PM.jpeg){ width="200" align=left }](https://labs.vulnbydefault.com/)  
-                **比赛名称** : [RamadanCTF 2026](https://labs.vulnbydefault.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-02-18 08:00:00 - 2026-03-17 08:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : vulnbydefault (https://ctftime.org/team/423471)  
-                **添加日历** : https://ctftime.org/event/3135.ics  
-                
             ??? Quote "[BITSCTF 2026](https://ctf.bitskrieg.in/)"  
                 [![](){ width="200" align=left }](https://ctf.bitskrieg.in/)  
                 **比赛名称** : [BITSCTF 2026](https://ctf.bitskrieg.in/)  
@@ -814,6 +805,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : crackmes.one (https://ctftime.org/team/388934)  
                 **添加日历** : https://ctftime.org/event/3014.ics  
+                
+            ??? Quote "[RamadanCTF 2026](https://labs.vulnbydefault.com/)"  
+                [![](https://ctftime.org/media/events/WhatsApp_Image_2026-02-05_at_9.01.11_PM.jpeg){ width="200" align=left }](https://labs.vulnbydefault.com/)  
+                **比赛名称** : [RamadanCTF 2026](https://labs.vulnbydefault.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-02-18 08:00:00 - 2026-03-17 08:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : vulnbydefault (https://ctftime.org/team/423471)  
+                **添加日历** : https://ctftime.org/event/3135.ics  
                 
     === "*已经结束*"
         === "国内赛事"

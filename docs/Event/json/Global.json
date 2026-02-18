@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "RamadanCTF 2026",
-        "比赛时间": "2026-02-18 08:00:00 - 2026-03-17 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3135.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://labs.vulnbydefault.com/",
-        "比赛标志": "https://ctftime.org/media/events/WhatsApp_Image_2026-02-05_at_9.01.11_PM.jpeg",
-        "比赛权重": "0",
-        "赛事主办": "vulnbydefault (https://ctftime.org/team/423471)",
-        "比赛ID": "1511",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "BITSCTF 2026",
         "比赛时间": "2026-02-20 13:30:00 - 2026-02-22 13:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3122.ics",
@@ -693,6 +681,18 @@
         "比赛权重": "0",
         "赛事主办": "crackmes.one (https://ctftime.org/team/388934)",
         "比赛ID": "1414",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "RamadanCTF 2026",
+        "比赛时间": "2026-02-18 08:00:00 - 2026-03-17 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3135.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://labs.vulnbydefault.com/",
+        "比赛标志": "https://ctftime.org/media/events/WhatsApp_Image_2026-02-05_at_9.01.11_PM.jpeg",
+        "比赛权重": "0",
+        "赛事主办": "vulnbydefault (https://ctftime.org/team/423471)",
+        "比赛ID": "1511",
         "比赛状态": "nowrunning"
     },
     {
