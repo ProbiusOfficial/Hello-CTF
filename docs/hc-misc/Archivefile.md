@@ -6,7 +6,7 @@ comments: true
 
 ## 文件结构
 
-### .Zip
+### .ZIP
 
 一个 ZIP 文件由三个部分组成:
 
@@ -98,9 +98,11 @@ comments: true
 
 \- `Terminator` 是每个RAR文件的结尾块，其结构固定，主要用于标记RAR文件的结束。
 
-## 爆破攻击
+## 爆破工具
 
-最简单，最直接的攻击方式，适合密码较为容易或已知密码范围 / 格式，包括字典爆破、掩码攻击等。
+爆破攻击是最简单，最直接的攻击方式，适合密码较为容易或已知密码范围 / 格式，包括字典爆破、掩码攻击等。
+
+下面我们来介绍几种常见的爆破工具。
 
 ### ARCHPR
 
@@ -152,106 +154,143 @@ fcrackzip -b -c'1' -l 3 -u ctf.zip
 fcrackzip  -D -p rockyou.txt -u flag.zip
 ```
 
-## 伪加密
+## ZIP相关攻击
 
-伪加密就是通过修改压缩文件的加密标志位，使得压缩文件在解压时不需要密码。
+先介绍一下关于ZIP的一些小知识点~
 
-### ZIP
+### ZIP文件格式
 
-先介绍一下关于zip伪加密的小知识点~
+一个常规的 ZIP 文件由三个部分组成：
 
-zip伪加密是在文件头的加密标志位做修改，进而再打开文件时被识别为加密压缩包
-一个 ZIP 文件由三个部分组成：
-压缩源文件数据区+压缩源文件目录区+压缩源文件目录结束标志
+**压缩源文件数据区+压缩源文件目录区+压缩源文件目录结束标志**
 
-压缩源文件数据区
-数据区主要记录了压缩前后文件的元数据以及存放压缩后的文件，记录格式如下：
+#### 压缩源文件数据区 (Local file header)
 
-```bash
-第0~3个字节：50 4B 03 04，代表了文件头标志
-第4~5个字节：14 00，代表了解压文件所需的pkware版本
-第6~7个字节：00 00，代表了全局方式位标记（用来判断有没有加密）
-第8~9个字节：08 00，代表了压缩方式
-第10~11个字节：1D 9B，代表了最后修改文件的时间
-第12~13个字节：3D 56，代表了最后修改文件的日期
-第14~17个字节：5A 48 63 5C，是zip文件的crc-32校验值
-第18~21个字节：77 00 00 00，是文件压缩后的尺寸
-第22~25个字节：B1 00 00 00，是文件未压缩前的尺寸
-第26~27个字节：10 00，代表文件名长度
-第28~29个字节：00 00，代表扩展记录长度
-```
-
-压缩源文件目录区
-
-压缩源文件目录区是由一系列压缩源文件目录记录所组成，一条压缩文件目录记录对应数据区中的一个压缩文件记录，压缩源文件目录记录由以下部分构成：
+压缩源文件数据区主要记录了压缩前后文件的元数据并存放压缩后的文件，一条压缩文件数据记录对应数据区中的一个压缩文件记录，记录格式如下：
 
 ```bash
-1、第0~3个字节：50 4B 01 02，代表了目录文件头标记
+ 1. 第0~3个字节：50 4B 03 04，代表了文件头标志, 对应文本 PK
 
-2、第4~5个字节：02 3F，代表了压缩使用的pkware版本
+ 2. 第4~5个字节：14 00，代表了解压文件所需的pkware版本
 
-3、第6~7个字节：14 00，代表了解压文件所需的pkware版本
+ 3. 第6~7个字节：00 00，代表了全局方式位标记（用来判断有没有加密）
 
-4、第8~9个字节：00 00，代表了全局方式位标记（用来判断是否为伪加密）
+ 4. 第8~9个字节：08 00，代表了压缩方式, 比如这里的 0x0008 对应 Deflated
 
-5、第10~11个字节：08 00，代表了压缩方式
+ 5. 第10~11个字节：1D 9B，代表了最后修改文件的时间(MS-DOS 时间格式)
 
-6、第12~13个字节：1D 9B，代表了最后修改文件的时间
+ 6. 第12~13个字节：3D 56，代表了最后修改文件的日期(MS-DOS 时间格式)
 
-7、第14~15个字节：3D 56，代表了最后修改文件的日期
+ 7. 第14~17个字节：5A 48 63 5C，是原始数据的crc-32校验值
 
-8、第16~19个字节：5A 48 63 5C，是zip文件的crc-32校验值
+ 8. 第18~21个字节：77 00 00 00，是文件压缩后的大小
 
-9、第16~19个字节：77 00 00 00，是文件压缩后的大小
+ 9. 第22~25个字节：B1 00 00 00，是文件压缩前的大小
 
-10、第24~27个字节：B1 00 00 00，是文件未压缩前的大小
+10. 第26~27个字节：10 00，代表文件名长度
 
-11、第28~29个字节：10 00，代表文件名长度
+11. 第28~29个字节：00 00，代表扩展记录长度
 
-12、第30~31个字节：00 00，代表扩展字段长度
-
-13、第32~33个字节：00 00，代表文件注释长度
+12. 接下来的若干个字节（变长）：文件名与扩展字段（如果有）
 ```
 
-压缩源文件目录结束标志
+#### 压缩源文件目录区 (Central directory)
+
+压缩源文件目录区是由一系列压缩源文件目录记录所组成，一条压缩文件目录记录对应 **数据区** 中的一个压缩文件记录，压缩源文件目录记录由以下部分构成：
 
 ```bash
-1、第0~3个字节：50 4B 05 06，代表目录结束标记
+ 1. 第0~3个字节：50 4B 01 02，代表了目录文件头标记
 
-2、第4~5个字节：00 00，代表当前磁盘编号
+ 2. 第4~5个字节：02 3F，代表了压缩使用的pkware版本
 
-3、第6~7个字节：00 00，代表目录区开始磁盘编号
+ 3. 第6~7个字节：14 00，代表了解压文件所需的pkware版本
 
-4、第8~9个字节：01 00，代表本磁盘上纪录总数
+ 4. 第8~9个字节：00 00，代表了全局方式位标记（用来判断有没有加密）
 
-5、第10~11个字节：01 00，代表目录区中纪录总数
+ 5. 第10~11个字节：08 00，代表了压缩方式
 
-6、第12~15个字节：62 00 00 00，代表目录区尺寸大小
+ 6. 第12~13个字节：1D 9B，代表了最后修改文件的时间
 
-7、第16~19个字节：A5 00 00 00，代表目录区对第一张磁盘的偏移量
+ 7. 第14~15个字节：3D 56，代表了最后修改文件的日期
 
-8、第20~21个字节：00 00，代表zip文件注释长度
+ 8. 第16~19个字节：5A 48 63 5C，是所对应压缩文件记录中原始数据的crc-32校验值
+
+ 9. 第20~23个字节：77 00 00 00，是文件压缩后的大小
+
+10. 第24~27个字节：B1 00 00 00，是文件压缩前的大小
+
+11. 第28~29个字节：10 00，代表文件名长度
+
+12. 第30~31个字节：00 00，代表扩展字段长度
+
+13. 第32~33个字节：00 00，代表文件注释长度（0字节，表示没有注释）
+
+14. 第34~35个字节：00 00，代表磁盘开始号（0，表示文件不跨磁盘）
+
+15. 第36~37个字节：00 00，代表内部文件属性
+
+16. 第38~41个字节：20 00 00 00，代表外部文件属性
+
+17. 第42~45个字节：00 00 00 00，代表局部头部偏移量
+
+18. 接下来的若干个字节（变长），代表文件名
+
+19. 之后的若干个字节（变长），代表扩展信息（可能存放着 ZIP64、NTFS 时间戳等）
+
+20. 最后的若干个字节（变长），代表文件注释
 ```
+
+#### 压缩源文件目录结束标志 (End of Central Directory Record)
+
+!!! Note "这里介绍的是标准版EOCD哦……"
+    这里介绍的版本是一般情况下的End of Central Directory Record，即里面的文件大小小于4GB，且文件数量少于65535个的情况。  
+    当文件大小或数量超过标准限制时，ZIP 文件将使用 ZIP64 扩展规范。此时，在文件末尾，这些结构按照以下顺序排列（**从文件末尾向前**）：  
+    1. End of Central Directory Record (标准中央目录结束记录)：这是最靠近文件末尾的固定结构。如果文件总数、大小等任一属性超出了其16位/32位字段的容量，对应的字段值将被设置为溢出标记（0xFFFF或 0xFFFFFFFF），以表明需要查找 ZIP64 扩展信息。  
+    2. Zip64 End of Central Directory Locator (ZIP64中央目录定位器)：此结构紧接在标准结束记录之前。它的核心作用是提供一个指针，指明下一个结构的起始位置。  
+    3. Zip64 End of Central Directory Record (ZIP64中央目录结束记录)：此结构位于定位器之前。它包含了文件总数、中央目录大小和起始偏移量等属性的真实64位值，用于替代标准记录中那些已溢出的字段。  
+    这里也算是为了ZIP文件的兼容性服务啦~  
+    如果对这些细节感兴趣的话可以去阅读页面底部的参考文献中.ZIP File Format Specification喵~  
+
+
+```bash
+1. 第0~3个字节：50 4B 05 06，代表目录结束标记
+
+2. 第4~5个字节：00 00，代表当前磁盘编号（0，代表该 ZIP 文件没有分卷，不跨越多张磁盘）
+
+3. 第6~7个字节：00 00，代表目录区开始磁盘编号（同上，表示中央目录也位于第一个磁盘上）
+
+4. 第8~9个字节：01 00，代表本磁盘上纪录总数（这里表示当前磁盘上有 1 条中央目录记录）
+
+5. 第10~11个字节：01 00，代表目录区中纪录总数（这里表示这个 ZIP 文件中总共包含 1 个文件）
+
+6. 第12~15个字节：62 00 00 00，代表目录区尺寸大小（ 50 4B 01 02 开始到中央目录记录结束的所有字节长度，这里是十进制 98 字节）
+
+7. 第16~19个字节：A5 00 00 00，代表目录区对第一张磁盘的偏移量（中央目录相对于存档起始位置的偏移量，这里是十进制 165 字节。这意味着解压软件需要从 ZIP 文件开头跳过 165 个字节，就能找到中央目录(即 `PK\x01\x02` 签名)）
+
+8. 第20~21个字节：00 00，代表zip文件注释长度
+
+9. 最后的若干字节（变长）：代表 ZIP 文件注释内容
+```
+
+### 伪加密
+
+zip伪加密是在文件头的加密标志位做修改，进而再打开文件时使其被识别为加密压缩包。
+
 #### 判断加密方式
-在了解了ZIP的构成以后可以发现识别一个zip文件是否加密主要是看压缩源文件数据的全局方式位标记和压缩源文件目录区的全局方式位标记，关键操作在其中的全局方式标记的第一字节数字的奇偶上，其它的不管为何值，都不影响它的加密属性。通常全局方式位标记为2 bytes长度，第一字节数字为偶数表示无加密，例如：00,02,04等；为奇数表示有加密，例如01,03,09等。
-##### 无加密
-无加密的zip压缩包压缩源文件数据区的全局加密应当为00 00，且压缩源文件目录区的全局方式位标记也为 00 00。
+在了解了ZIP的构成以后，我们可以发现，识别一个zip文件是否加密主要是看压缩源文件数据区的全局方式位标记(General Purpose Bit Flag​,通用位标记)和压缩源文件目录区的全局方式位标记，关键在其中第一字节的最低bit位上(在位索引表示中我们称其为 **Bit 0** ，但这里为了方便理解我们不妨多写几个字)，其它的不管为何值，都不会影响它的加密属性本身(但是会有其他作用)。通常全局方式位标记为2 bytes长度，第一字节最低bit位为0时表示无加密，例如：0x00,0x02,0x04等；为1时表示有加密，例如0x01,0x03,0x09等。
 
-![image-20240801144125244](./assets/image-20240801144125244.png)
-##### 真加密
-真加密的zip压缩包压缩源文件数据区的全局加密应当为09 00，且压缩源文件目录区的全局方式位标记也为 09 00。
+在010 Editor中我们可以看到，压缩源文件数据区的全局方式位标记对应模板ZIP.bt的`frFlags`(File Record Flags)，而压缩源文件目录区的全局方式位标记对应模板ZIP.bt的`deFlags`(Directory Entry Flags)。
 
-![image-20240801144850829](./assets/image-20240801144850829.png)
-##### 伪加密
-伪加密的zip压缩包压缩源文件数据区的全局加密应当为09 00，且压缩源文件目录区的全局方式位标记也为 00 00 或者 01 00。
+> 经过实测，7-Zip 和 QQ预览 检测的是数据区的全局方式位标记，其他解压软件，例如 BandiZip 和 WinRAR 检测目录区的全局方式位标记，这四种软件都只检测一位，并不会检测另一个位置，同时也不会进行报错。
 
-![image-20240801145320382](./assets/image-20240801145320382.png)
-
-![image-20240801145359052](./assets/image-20240801145359052.png)
+##### 伪加密的判断方法
+当我们遇到一个被加密了的压缩包，需要判断是否是伪加密时，一个简单的方法就是，我们可以先尝试将deFlags和frFlags的最低有效位全部改成0，之后保存并尝试解压：
+![修改前](./assets/image-20260218-1.png)
+![修改后](./assets/image-20260218-2.png)
+如果保存之后可以正常解压且没有提示损坏，那么就说明这里使用的就是伪加密。
 
 <!-- Imported from D:\\Book\\Misc\\Chapter3\3-1.md -->
-
-
+##### 案例
 ![](https://pic1.imgdb.cn/item/677296ffd0e0a243d4ecc926.jpg)
 
 下载文件后打开会发现需要密码
@@ -305,29 +344,27 @@ Zip 文件结构分析：
 
 ![](https://pic1.imgdb.cn/item/67729775d0e0a243d4ecc938.jpg)
 
-09 00 或者 01 00 一般都是伪加密
+首先我们来尝试一下是不是伪加密。
 
-注意：ZIP 的压缩数据段应该被加密后变成随机字节流，但伪加密 ZIP 的压缩数据仍然是正常的 deflate 流
+注意：ZIP 的压缩数据段应该被加密后变成随机字节流，但伪加密 ZIP 的压缩数据一般仍然是正常的 deflate 流或 store 流。（可以简记为“伪加密的字节流是可以正常读取的”）
 
-解压软件解压前先看全局方式位标记，如果 bit0 = 1，则要求输入密码
+解压软件解压前先看全局方式位标记，如果 Bit 0 = 1，则要求输入密码。
 
-但是 7-Zip 解压时不会提示输入密码，直接解压出文件。因为它的判定方式是中央目录 flag = 0（不加密），则认为此文件未加密
-
-这题做的比较好，中央目录也改了，也就是 01 02 开头处。其 flag 位置在 + 6 处，题目中的是 09 00
+可以看到这个压缩包同时修改了deFlags和frFlags：
 
 ![](https://pic1.imgdb.cn/item/692e8ccb7313ea6c250be3bf.png)
 
-修改为本地文件头的加密标志为 00 00 即可打开
+对于7-Zip，由于它只会检查frFlags的Bit 0，所以我们修改本地文件头的加密标志为 00 00 即可打开：
 
 ![](https://pic1.imgdb.cn/item/67729798d0e0a243d4ecc93c.jpg)
 
-成功拿到 flag
+成功拿到 flag：
 
 ![](https://pic1.imgdb.cn/item/677297c3d0e0a243d4ecc940.jpg)
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter3\3-10.md -->
-### 加密宏破解
+### 加密Word爆破与宏破解
 
 
 ![](https://pic1.imgdb.cn/item/6875c66358cb8da5c8af1be6.png)
@@ -432,10 +469,6 @@ End If
 结合 word 里的 hint `Rar 密码为复杂型，长度为16位，包含了字母、数字和符号。`
 
 压缩包密码猜出为 `2zhlmcl,1hblsqt.`，解压拿到 flag：`Dest0g3{VBScr1pt_And_Hashc4t_1s_g00d}`
-
-[参考博客](https://lazzzaro.github.io/2022/05/26/match-Dest0g3-520%E8%BF%8E%E6%96%B0%E8%B5%9B/index.html)
-
-
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter3\3-11.md -->
@@ -666,10 +699,15 @@ bkcrack.exe -k e48d3828 5b7223cc 71851fb0 -r 3 ?b
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter3\3-2.md -->
-### ZIP 明文破解（相同文件）
+### ZIP 明文破解
 
-明文攻击主要利用大于 12 字节的一段已知明文数据进行攻击，从而获取整个加密文档的数据，具体的原理这里不阐述
+明文攻击主要利用不少于 12 字节（部分说法要求至少有8字节连续）的一段已知明文数据进行攻击，从而获取整个加密文档的数据，具体的原理这里不做太多阐述。
 
+!!! Info
+    需要注意的是，明文攻击的12字节限制并不是指不足12字节就无法进行攻击，只是更少的字节数代表着可能意味着更多的尝试次数和可能答案。
+
+
+#### 基于已知文件
 
 ![](https://pic1.imgdb.cn/item/6771139ad0e0a243d4ec1f4e.jpg)
 
@@ -692,72 +730,8 @@ bkcrack.exe -k e48d3828 5b7223cc 71851fb0 -r 3 ?b
 ![](https://pic1.imgdb.cn/item/67729cc4d0e0a243d4eccac6.jpg)
 
 
-<!-- Imported from D:\\Book\\Misc\\Chapter3\3-3.md -->
-### RAR 文件头修复
-
-当使用 WinRAR 打开时会提示文件头错误，我们需要做的就是去修改错误的文件头
-
-
-![](https://pic1.imgdb.cn/item/67728bf5d0e0a243d4ecc65a.jpg)
-
-打开文件报错
-
-![](https://pic1.imgdb.cn/item/67729ef3d0e0a243d4eccb43.jpg)
-
-RAR 文件格式解析：
-
-```
-1. 固定文件头：52 61 72 21 1A 07 00（其中 0x6152 表示 CRC，0x72 表示头类型，0x1A21 表示 FLAGS，0x0007 表示 SIZE）
-2. 压缩文件头：CF 90 73 00 00 0D 00 00 00 00 00 00 00（结构与上面一致，0x73 表示头类型，只是多了六个字节的保留位）
-3. 文件头：D5 56 74…………（这里内容太多（图中全是蓝色部分全是），我们只需知道前三个字节同样与上面一致，0x74 表示头类型）
-```
-
-![](https://pic1.imgdb.cn/item/6772a01ad0e0a243d4eccb6c.jpg)
-
-txt 的内容后面就是 secret.png 的文件头（txt 是可以打开的，内容就是图中字符串）
-
-文件头的头类型是 0x7A，将其改为 0x74
-
-![](https://pic1.imgdb.cn/item/6772a05cd0e0a243d4eccb86.jpg)
-
-成功解压缩出图片
-
-![](https://pic1.imgdb.cn/item/6772260cd0e0a243d4ec6aa5.jpg)
-
-
-
-<!-- Imported from D:\\Book\\Misc\\Chapter3\3-4.md -->
-### 压缩密码爆破
-
-大型比赛中官方都会提供字典，所以还是比较简单的
-
-直接上题（BugKu CTF）
-
-![](https://pic1.imgdb.cn/item/6772a0fbd0e0a243d4eccbbf.jpg)
-
-这里需要网上去下载一个 rockyou 字典
-
-![](https://pic1.imgdb.cn/item/6772a1add0e0a243d4eccbe0.jpg)
-
-题目给的是 ZIP 文件，使用工具 Ziperello 爆破
-
-![](https://pic1.imgdb.cn/item/6772a1bbd0e0a243d4eccbec.jpg)
-
-选择字典模式
-
-![](https://pic1.imgdb.cn/item/6772a1ddd0e0a243d4eccbf4.jpg)
-
-选择字典
-
-![](https://pic1.imgdb.cn/item/6772a1fad0e0a243d4eccc04.jpg)
-
-成功爆破出密码
-
-![](https://pic1.imgdb.cn/item/6772a208d0e0a243d4eccc06.jpg)
-
-
 <!-- Imported from D:\\Book\\Misc\\Chapter3\3-5.md -->
-### ZIP 明文破解（文件头）
+#### 基于文件头
 
 
 ![](https://pic1.imgdb.cn/item/6772a2c4d0e0a243d4eccc3d.jpg)
@@ -791,21 +765,88 @@ bkcrack.exe -C flag.zip -c flag.png -k key -d flag.png
 ![](https://pic1.imgdb.cn/item/6772a344d0e0a243d4eccc8f.jpg)
 
 
-<!-- Imported from D:\\Book\\Misc\\Chapter3\3-6.md -->
-### ZIP 明文破解（Key）
+#### 基于文件头+文件尾
+
+![](./assets/study_sources.png)
+
+压缩包里是一个 `.docx` ，众所周知 Office 三件套的文件格式一般都是一堆文件打包起来的 ZIP。
+
+于是用7-Zip看了眼存储方式是ZipCrypto Store，用 bkcrack 去明文攻击，如果这里不确定明文是什么的话就打开 Word 然后新建一个空的文档保存看看。
+
+一开始试了文件头的 12 个字节，还试了这个 Content_Types 的文件名，发现都跑不出来，一度开始怀疑人生。
+
+查一下 ZIP 的结构定义：
+
+![](./assets/pkware.png)
+
+可以看到只有开头的 local file header signature `50 4B 03 04` 是硬编码的 Magic Number，后面的值都有可能根据文件的不同而变化，但是这也才 4 个字节，不够用怎么办？
+
+继续看到最后结尾的End of central directory record：
+
+![](./assets/end_of_sign.png)
 
 
-![](https://pic1.imgdb.cn/item/6772a2c4d0e0a243d4eccc3d.jpg)
+这里end of central dir signature是 `50 4B 05 06` 的 Magic Number，现在有 8 个字节了，还差 4 个，于是 010 Editor 打开空白的 docx 文件看看尾巴：
 
-继上一节通过文件头明文攻击拿到 Key 后
+![](./assets/empty_docx_tail.png)
 
-```shell
-bkcrack.exe -C flag.zip -c flag.png -k key -d flag.png
+可以注意到其后的两个值都是 0，即 `00000000`。
+
+现在我们终于有 12 个字节了，其中后半段的8字节组合在一起就是 `504B050600000000`，偏移量是从后往前推 22 个字节（根据 End of central directory record 结构的定义：2 + 4 + 4 + 2 + 2 + 2 + 2 + 4 = 22 ，最后的 .ZIP file comment 没有就不管），即文件大小（**注意是 ZIP 中的文件压缩前原始大小**，不是 ZIP 文件的大小，因为你是使用里面flag.docx那个压缩包的已知明文进行攻击的）减去22：
+
+![](./assets/index_of_file.png)
+
+10485 - 22 = 10463
+
+所以我们最终可以构造出这样的命令，其中`-x`是指定偏移和对应位置的连续字节流：
+```bash
+bkcrack -C flag.zip -c flag.docx -x 0 504B0304 -x 10463 504B050600000000
 ```
 
-最后还需要修改下 CRC 宽高即可
+![](./assets/bkcrack_keys.png)
 
-![](https://pic1.imgdb.cn/item/6772a344d0e0a243d4eccc8f.jpg)
+然后我们就可以利用得到的keys解密：
+
+```bash
+bkcrack -C flag.zip -k dc5f5a25 ba003c16 064c2967 -c flag.docx -d flag.docx
+```
+
+即可得到最终的flag：
+
+![](./assets/get_flag_bkcrack.png)
+
+```text
+furryCTF{Ho0w_D1d_You_C0mE_H9re_xwx}
+```
+
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-4.md -->
+### 压缩密码爆破
+
+大型比赛中官方都会提供字典，所以还是比较简单的
+
+直接上题（BugKu CTF）
+
+![](https://pic1.imgdb.cn/item/6772a0fbd0e0a243d4eccbbf.jpg)
+
+这里需要网上去下载一个 rockyou 字典
+
+![](https://pic1.imgdb.cn/item/6772a1add0e0a243d4eccbe0.jpg)
+
+题目给的是 ZIP 文件，使用工具 Ziperello 爆破
+
+![](https://pic1.imgdb.cn/item/6772a1bbd0e0a243d4eccbec.jpg)
+
+选择字典模式
+
+![](https://pic1.imgdb.cn/item/6772a1ddd0e0a243d4eccbf4.jpg)
+
+选择字典
+
+![](https://pic1.imgdb.cn/item/6772a1fad0e0a243d4eccc04.jpg)
+
+成功爆破出密码
+
+![](https://pic1.imgdb.cn/item/6772a208d0e0a243d4eccc06.jpg)
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter3\3-7.md -->
@@ -821,6 +862,40 @@ bkcrack.exe -C flag.zip -c flag.png -k key -d flag.png
 使用脚本碰撞即可
 
 ![](https://pic1.imgdb.cn/item/6772a673d0e0a243d4eccd95.jpg)
+
+
+## RAR
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-3.md -->
+### RAR 文件头修复
+
+当使用 WinRAR 打开时会提示文件头错误，我们需要做的就是去修改错误的文件头
+
+
+![](https://pic1.imgdb.cn/item/67728bf5d0e0a243d4ecc65a.jpg)
+
+打开文件报错
+
+![](https://pic1.imgdb.cn/item/67729ef3d0e0a243d4eccb43.jpg)
+
+RAR 文件格式解析：
+
+```
+1. 固定文件头：52 61 72 21 1A 07 00（其中 0x6152 表示 CRC，0x72 表示头类型，0x1A21 表示 FLAGS，0x0007 表示 SIZE）
+2. 压缩文件头：CF 90 73 00 00 0D 00 00 00 00 00 00 00（结构与上面一致，0x73 表示头类型，只是多了六个字节的保留位）
+3. 文件头：D5 56 74…………（这里内容太多（图中全是蓝色部分全是），我们只需知道前三个字节同样与上面一致，0x74 表示头类型）
+```
+
+![](https://pic1.imgdb.cn/item/6772a01ad0e0a243d4eccb6c.jpg)
+
+txt 的内容后面就是 secret.png 的文件头（txt 是可以打开的，内容就是图中字符串）
+
+文件头的头类型是 0x7A，将其改为 0x74
+
+![](https://pic1.imgdb.cn/item/6772a05cd0e0a243d4eccb86.jpg)
+
+成功解压缩出图片
+
+![](https://pic1.imgdb.cn/item/6772260cd0e0a243d4ec6aa5.jpg)
 
 
 <!-- Imported from D:\\Book\\Misc\\Chapter3\3-8.md -->
@@ -870,115 +945,11 @@ bkcrack.exe -C flag.zip -c flag.png -k key -d flag.png
 
 ![](https://pic1.imgdb.cn/item/6807c65458cb8da5c8c14b03.png)
 
+## 参考文献
+1. [APPNOTE.TXT - .ZIP File Format Specification](https://pkware.cachefly.net/webdocs/APPNOTE/APPNOTE-6.2.0.txt)
 
-<!-- Imported from D:\\Book\\Misc\\Chapter3\3-9.md -->
-### 加密 Word 爆破
+2. [Mitunlnyの小宇宙-深入理解zip伪加密](https://czxh.top/2025/10/31/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3zip%E4%BC%AA%E5%8A%A0%E5%AF%86/)
 
-
-![](https://pic1.imgdb.cn/item/6875c66358cb8da5c8af1be6.png)
-
-解压缩有三个文件
-
-![](https://pic1.imgdb.cn/item/6875c6e758cb8da5c8af20d3.png)
-
-首先是 hint.txt
-
-```
-The length of docm 's password is 6
-The Regular Expression of the password is:
-[a-z] [a-z] q [a-z] b [a-z]
-```
-
-得知 `password.docm` 密码全小写字母，且满足 `??q?b?`，使用 john 爆破（当然也可以直接用 Archpr）
-
-将 **Office** 文档中的哈希提取出来，保存为 `hash.txt`
-
-```shell
-office2john password.docm > word.hash
-```
-
-使用 **掩码攻击（mask attack）** 尝试爆破 `hash.txt` 中的密码哈希
-
-```sh
-john --mask='?l?lq?lb?l' word.hash
-# ?l 表示 小写字母（a-z）
-# q 和 b 是固定字符
-```
-
-![](https://pic1.imgdb.cn/item/6875c82e58cb8da5c8af30ba.png)
-
-打开 word
-
-![](https://pic1.imgdb.cn/item/6875c86b58cb8da5c8af33f1.png)
-
-得先破解宏，将 word 文件用压缩包方式打开，找到 `vbaProject.bin` 文件以十六进制方式查看，将  `DBP`  改为  `DBX`  并保存，[参考博客](https://blog.csdn.net/Cody_Ren/article/details/100895394)
-
-![](https://pic1.imgdb.cn/item/6875cd5458cb8da5c8af6f97.png)
-
-注意不要减少或者增加其他字符，保存退出
-
-![](https://pic1.imgdb.cn/item/6875cd6458cb8da5c8af6fb7.png)
-
-重新打开文件，Alt + F11打开
-
-![](https://pic1.imgdb.cn/item/6875cd7458cb8da5c8af6fc7.png)
-
-右键打开属性，设置一个密码保存，重新打开文件 Alt + F11 输入密码即可查看宏代码
-
-![](https://pic1.imgdb.cn/item/6875cdb458cb8da5c8af7020.png)
-
-```vbscript
-Private Sub CB_OK_Click()
-Dim strpasw As String
-Dim strdec As String
-Dim strusrinput As String
-Dim t As String
-t = ChrW(21152) & ChrW(27833) & ChrW(21543) & ChrW(65292) & ChrW(21516) & ChrW(23398) & ChrW(20204) & ChrW(65281)
-
-strusrinput = Dialog.TextBox_Pasw
-Dim sinput As String
-sinput = strusrinput
-
-If (strusrinput <> "") Then
-  strusout = Encode(strusrinput, t)
-  If (strusout = "┤℡ǒqｘ~") Then
-      strdec = Decode(Dialog.Label_ls.Caption, sinput)
-  Else
-     If (strusout = "ｋGJEｇｑ") Then
-        strdec = Decode(Dialog.Label_ls1.Caption, sinput)
-     Else
-          If (strusout = "ЮΟopz+") Then
-             strdec = Decode(Dialog.Label_ls2.Caption, sinput)
-          Else
-                If (strusout = "ｚΚjrШφεあ") Then
-                    strdec = Decode(Dialog.Label_ls4.Caption, sinput)
-                Else
-                    If (strusout = "àǖtＵｗ┧ｈè") Then
-                          strdec = Decode(Dialog.Label_ls3.Caption, sinput)
-                    Else
-                          strdec = StrConv(t, vbFromUnicode)
-                    End If
-                End If
-           End If
-      End If
-   End If
-   Label_CLUE.Caption = strdec
-End If
-```
-
-无需分析加解密算法，输出结果 `strusout` 由 `Encode(strusrinput, t)` 加密得到，只需分别用解密函数反推五个 if 分支条件对应的明文即可
-
-修改 `Label_CLUE.Caption = strdec` 为 `Label_CLUE.Caption = Decode(xxx,t)`，回到 word 运行 `AutoOpen` 宏
-
-随便输入字符点击确定即可在 Dialog 的 label 处显示对应明文，分别是 `123456`、`aaaaaa`、`000000`、`墙角数枝`、`iloveyou`
-
-将 `Label_CLUE.Caption = Decode(xxx,t)` 改回 `Label_CLUE.Caption = strdec`，分别输入五段明文，发现输入 `墙角数枝` 得到 `解压密码：两只黄鹂鸣翠柳,一行白鹭上青天!`
-
-结合 word 里的 hint `Rar 密码为复杂型，长度为16位，包含了字母、数字和符号。`
-
-压缩包密码猜出为 `2zhlmcl,1hblsqt.`，解压拿到 flag：`Dest0g3{VBScr1pt_And_Hashc4t_1s_g00d}`
-
-[参考博客](https://lazzzaro.github.io/2022/05/26/match-Dest0g3-520%E8%BF%8E%E6%96%B0%E8%B5%9B/index.html)
-
+3. [加密宏破解(EasyWord)-Lazzaro Dest0g3 520迎新赛 WP](https://lazzzaro.github.io/2022/05/26/match-Dest0g3-520%E8%BF%8E%E6%96%B0%E8%B5%9B/index.html#EasyWord)
 
 <!-- Imported from D:\\Book\\Misc\\Chapter3\README.md -->
