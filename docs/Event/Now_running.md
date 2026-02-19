@@ -18,9 +18,9 @@ comments: true
     **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
     **添加日历** : https://ctftime.org/event/2916.ics  
     
-??? Quote "[Crackmes.one Reverse Engineering CTF 2026](https://crackmesone.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/221804609.png){ width="200" align=left }](https://crackmesone.ctfd.io/)  
-    **比赛名称** : [Crackmes.one Reverse Engineering CTF 2026](https://crackmesone.ctfd.io/)  
+??? Quote "[Crackmes.one Reverse Engineering CTF 2026](https://ctf.crackmes.one/)"  
+    [![](https://ctftime.org/media/events/221804609.png){ width="200" align=left }](https://ctf.crackmes.one/)  
+    **比赛名称** : [Crackmes.one Reverse Engineering CTF 2026](https://ctf.crackmes.one/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-02-14 08:00:00 - 2026-02-21 08:00:00 UTC+8  
     **比赛权重** : 0  
