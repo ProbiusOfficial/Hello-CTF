@@ -363,7 +363,7 @@ REOREREREREREOREREREREREREOOOREOREREREREOREREREOREREREOOREOREREREREOREREREREREOR
 - E永远都会在R后面出现
 - 虽然里面似乎出现了OO和OOO，但是更可能的一种编码方式是使用单个O
 
-!!! Question "为什么一定是“O”而不是“OO”或“OOO”？"  
+??? Question "为什么一定是“O”而不是“OO”或“OOO”？"  
     这里可以参考哈夫曼编码的特点，我们可以注意到这一串编码结果中没有任何空格，但是存在落单的O，说明落单的O一定是有含义的。  
     如果编码表中存在落单的O，那么假如存在OO(O)的编码，解析OO和OOO的时候就会出现一个问题：你无法得知这里的OO到底是2个落单的O还是1个OO（显然OOO也是同理的）  
     这也是无分隔符编码需要注意的一个细节：某个已经编码过的元素不能称为新的待编码元素的前缀或后缀。
@@ -373,7 +373,7 @@ REOREREREREREOREREREREREREOOOREOREREREREOREREREOREREREOOREOREREREREOREREREREREOR
 - RE是一个整体，共同表示某种元素
 - 编码表中只存在RE和O两种元素，也就是这里的编码表示的很可能是一种只含两种元素的替换型编码。
 
-!!! Question "为什么更可能的是替换型而不是位移型？"  
+??? Question "为什么更可能的是替换型而不是位移型？"  
     其实原因很简单，如果被编码的元素是位移型编码的，最终的编码呈现出来不应该只出现2种元素。  
     比如如果原文是`Hello CTF`，经过密钥为3的凯撒位移密码结果应该为`Khoor FWI`，所以这里我们更倾向于使用的是替换型。  
     当然这个说法并不绝对，比如我可能已经提前把编码前的原文处理成了一种只有两种元素的新内容呢？  
@@ -385,7 +385,8 @@ REOREREREREREOREREREREREREOOOREOREREREREOREREREOREREREOOREOREREREREOREREREREREOR
 
 这里注意到题目中暗示我们“读出来”，结合我们刚才搜到的奥利奥视频，我们大胆猜测，如果把OREO看成奥利奥饼干的话，那么O就是黑色，RE就是白色，根据灯泡的亮灭我们就可以大胆去猜：O就是0（灭），RE就是1（亮）。
 
-> 作为misc手，大胆去猜，小心求证的观念是必不可少的。
+!!! Tip
+    作为misc手，大胆去猜，小心求证的观念是必不可少的。
 
 按照上述规则解码后我们可以得到：
 ```text
@@ -411,7 +412,8 @@ REOREREREREREOREREREREREREOOOREOREREREREOREREREOREREREOOREOREREREREOREREREREREOR
 
 所以，这里我们可以大胆猜测出题人对字符串进行了反转操作，但具体是8位一组的反转还是整个字符串的反转……管他呢，就这两种常见的反转方式，都试试就是了。
 
-> 作为misc手，不怕麻烦，动手去做也是必备的品质哦~
+!!! Tip
+    作为misc手，不怕麻烦，动手去做也是必备的品质哦~
 
 最后我们尝试发现，把整个字符串反转就能得到最终的flag：
 
