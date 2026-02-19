@@ -298,15 +298,6 @@ hide:
                 **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
                 **添加日历** : https://ctftime.org/event/3122.ics  
                 
-            ??? Quote "[Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)"  
-                [![](https://ctftime.org/media/events/bklogo.png){ width="200" align=left }](https://ctf.batmans.kitchen/)  
-                **比赛名称** : [Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-02-21 02:30:00 - 2026-02-23 02:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Batman's Kitchen (https://ctftime.org/team/3135)  
-                **添加日历** : https://ctftime.org/event/3098.ics  
-                
             ??? Quote "[THJCC CTF 2026](https://ctf2026.thjcc.org/)"  
                 [![](https://ctftime.org/media/events/3291aa527005a0771b15f8ca11d76637.png){ width="200" align=left }](https://ctf2026.thjcc.org/)  
                 **比赛名称** : [THJCC CTF 2026](https://ctf2026.thjcc.org/)  
@@ -315,6 +306,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
                 **添加日历** : https://ctftime.org/event/3088.ics  
+                
+            ??? Quote "[Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)"  
+                [![](https://ctftime.org/media/events/bklogo.png){ width="200" align=left }](https://ctf.batmans.kitchen/)  
+                **比赛名称** : [Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-02-21 09:30:00 - 2026-02-23 09:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Batman's Kitchen (https://ctftime.org/team/3135)  
+                **添加日历** : https://ctftime.org/event/3098.ics  
                 
             ??? Quote "[Escathon CTF 2026 Finals](https://eschaton.mcsc.space/)"  
                 [![](https://ctftime.org/media/events/mcsc_logo.jpg){ width="200" align=left }](https://eschaton.mcsc.space/)  
