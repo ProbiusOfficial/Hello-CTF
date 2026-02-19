@@ -176,7 +176,7 @@ comments: true
     **比赛名称** : [DiceCTF 2026 Quals](https://ctf.dicega.ng/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-03-08 01:00:00 - 2026-03-09 01:00:00 UTC+8  
-    **比赛权重** : 0.00  
+    **比赛权重** : 100.00  
     **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
     **添加日历** : https://ctftime.org/event/3110.ics  
     
