@@ -19,25 +19,37 @@ OSINT 题目是比较吃经验和技巧的
 
 #### 图片文件信息
 
- 一些图片的EXIF信息中可能含有拍摄的经纬度，角度，设备型号等信息，通过图片 经纬度 + 图片内容 进行误差修正的 OSINT 题目也算是简单题目中的常客。
+ 一些图片的EXIF信息中可能含有拍摄的时间，经纬度，角度，设备型号等信息，通过图片 经纬度 + 图片内容 进行误差修正的 OSINT 题目也算是简单题目中的常客。
+
+ 但是注意，EXIF信息是可以被篡改的，小心被误导哦~
 
 ####  街景
 
 街景的维度很广，笔者在此尽量列举，但不能保证完全包含：
 
-- 建筑风格
+- 建筑风格 门户朝向
 
-- 从是否有地标性或者其他标志性建筑
+- 道路风格 道路标识
+
+- 从是否有地标性或者其他标志性建筑/图案
 
 - 显眼的店铺名称
 
-- 各种路牌 指示牌
+- 各种路牌 指示牌 站台牌
 
-- 围栏特征
+- 围栏特征 路灯特征 装饰特征
 
 - 车牌
 
 - 行人服饰特点
+
+- 光线方向 采光 反光
+
+- 植被覆盖率 植被种类 特殊土质分布
+
+- 其他图片中出现的有意义文字
+
+- 全景地图辅助 / AI信息检索
 
   ......
 
@@ -51,11 +63,75 @@ OSINT 题目是比较吃经验和技巧的
 
 #### 行程信息
 
-如 各类车票 / 机票 ，已对部分要素打码，但依旧能获取到其他如 时间等有效要素的图片。
+如 各类车票 / 机票 ，已对部分要素打码，但依旧能获取到其他如 时间，机票标识等有效要素的图片。
+
+这里可以通过查询日出日落时间，根据天气情况修复被遮挡的时间或排除可能的干扰项。
+
+特别的，如果图片中出现了护照/签证，说明目标城市可能需要相关证件。
 
 ### 信息检索
+除了街景之外，OSINT还有一些相对少见的题目类型。
 
-<待更新>
+#### 图标搜索
+以这个题目为例：
+![](./assets/Image_1771466065417_164.png)
+题目要求搜索GZCTF框架中，Osint方向的ICON图标（就那个放大镜一样的东西）。
+
+不妨去github上看看对应的源码，然后发现：好像存储库里面没有图标文件啊？
+
+再仔细翻翻，我们发现好像GZCTF使用的是React，在[这个文件](https://github.com/GZTimeWalker/GZCTF/blob/develop/src/GZCTF/ClientApp/src/pages/games/%5Bid%5D/Index.tsx)中我们可以注意到：
+```react
+import {
+  Alert,
+  Anchor,
+  BackgroundImage,
+  Badge,
+  Button,
+  Center,
+  Container,
+  Group,
+  Stack,
+  Text,
+  Title,
+  useMantineTheme,
+} from '@mantine/core'
+import { useScrollIntoView } from '@mantine/hooks'
+import { useModals } from '@mantine/modals'
+import { showNotification } from '@mantine/notifications'
+
+import { mdiAlertCircle, mdiCheck, mdiFlagOutline, mdiTimerSand } from '@mdi/js'
+import { Icon } from '@mdi/react'
+
+import { FC, useEffect, useState } from 'react'
+import { Trans, useTranslation } from 'react-i18next'
+import { Link, useNavigate, useParams } from 'react-router'
+import { GameJoinModal } from '@Components/GameJoinModal'
+import { GameProgress } from '@Components/GameProgress'
+import { Markdown } from '@Components/MarkdownRenderer'
+import { WithNavBar } from '@Components/WithNavbar'
+import { useLanguage } from '@Utils/I18n'
+import { showErrorMsg } from '@Utils/Shared'
+import { useIsMobile } from '@Utils/ThemeOverride'
+import { getGameStatus, useGame } from '@Hooks/useGame'
+import { usePageTitle } from '@Hooks/usePageTitle'
+import { useTeams, useUser } from '@Hooks/useUser'
+import api, { GameJoinModel, ParticipationStatus } from '@Api'
+import classes from '@Styles/Banner.module.css'
+```
+看起来GZCTF使用的是`@mdi/react`的`Icon`。
+
+于是在网上我们可以找到这么一个工具：
+
+![](./assets/QQ20260219-101058-react.png)
+
+大概猜测一下图标名称，最后搜索`search`的时候有了收获：
+
+![](./assets/QQ20260219-101250-search.png)
+
+所以最终的flag为：
+```text
+flag{v1.8.36}
+```
 
 ### 工具
 
@@ -107,6 +183,8 @@ OSINT 题目是比较吃经验和技巧的
 | 网站名称与网址                                               | 描述                       |
 | ------------------------------------------------------------ | -------------------------- |
 | [Flightradar24](https://www.flightradar24.com/)              | 提供全球实时飞行跟踪信息。 |
+| [Flight ADSB](https://flightadsb.variflight.com/)            | 提供一年内航班轨迹信息。   |
+| [Variflight Map](https://map.variflight.com/)                | 提供一年内航班轨迹筛选。   |
 | [MarineTraffic](https://www.marinetraffic.com/en/ais/home/centerx:5.4/centery:50.8/zoom:2) | 提供全球船舶跟踪情报。     |
 
 ### 小结
