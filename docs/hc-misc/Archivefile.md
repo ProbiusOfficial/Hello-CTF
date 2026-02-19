@@ -947,10 +947,14 @@ txt 的内容后面就是 secret.png 的文件头（txt 是可以打开的，内
 ![](https://pic1.imgdb.cn/item/6807c65458cb8da5c8c14b03.png)
 
 ## 参考文献
-1. [APPNOTE.TXT - .ZIP File Format Specification](https://pkware.cachefly.net/webdocs/APPNOTE/APPNOTE-6.2.0.txt)
+1. [APPNOTE.TXT 6.2.0 - .ZIP File Format Specification](https://pkware.cachefly.net/webdocs/APPNOTE/APPNOTE-6.2.0.txt)
 
-2. [Mitunlnyの小宇宙-深入理解zip伪加密](https://czxh.top/2025/10/31/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3zip%E4%BC%AA%E5%8A%A0%E5%AF%86/)
+2. [APPNOTE.TXT 最新版 - .ZIP File Format Specification](https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT)
 
-3. [加密宏破解(EasyWord)-Lazzaro Dest0g3 520迎新赛 WP](https://lazzzaro.github.io/2022/05/26/match-Dest0g3-520%E8%BF%8E%E6%96%B0%E8%B5%9B/index.html#EasyWord)
+3. [PKWARE® ZIP标准](https://support.pkware.com/pkzip/appnote)
+
+4. [Mitunlnyの小宇宙-深入理解zip伪加密](https://czxh.top/2025/10/31/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3zip%E4%BC%AA%E5%8A%A0%E5%AF%86/)
+
+5. [加密宏破解(EasyWord)-Lazzaro Dest0g3 520迎新赛 WP](https://lazzzaro.github.io/2022/05/26/match-Dest0g3-520%E8%BF%8E%E6%96%B0%E8%B5%9B/index.html#EasyWord)
 
 <!-- Imported from D:\\Book\\Misc\\Chapter3\README.md -->
