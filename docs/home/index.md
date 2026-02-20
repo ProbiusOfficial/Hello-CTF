@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[BITSCTF 2026](https://ctf.bitskrieg.in/)"  
-            [![](){ width="200" align=left }](https://ctf.bitskrieg.in/)  
-            **比赛名称** : [BITSCTF 2026](https://ctf.bitskrieg.in/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-02-20 13:30:00 - 2026-02-22 13:30:00 UTC+8  
-            **比赛权重** : 25.54  
-            **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
-            **添加日历** : https://ctftime.org/event/3122.ics  
-            
         ??? Quote "[THJCC CTF 2026](https://ctf2026.thjcc.org/)"  
             [![](https://ctftime.org/media/events/3291aa527005a0771b15f8ca11d76637.png){ width="200" align=left }](https://ctf2026.thjcc.org/)  
             **比赛名称** : [THJCC CTF 2026](https://ctf2026.thjcc.org/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Team MCSC (https://ctftime.org/team/418958)  
             **添加日历** : https://ctftime.org/event/3078.ics  
+            
+        ??? Quote "[EPIHACK CTF: L'arène numérique](https://ctf.epihack.tech/)"  
+            [![](https://ctftime.org/media/events/logo-bg.png){ width="200" align=left }](https://ctf.epihack.tech/)  
+            **比赛名称** : [EPIHACK CTF: L'arène numérique](https://ctf.epihack.tech/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-02-21 17:00:00 - 2026-02-22 01:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : EPIHACK (https://ctftime.org/team/419202)  
+            **添加日历** : https://ctftime.org/event/3076.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
