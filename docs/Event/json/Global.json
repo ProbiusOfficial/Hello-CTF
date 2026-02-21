@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "BearcatCTF 2026 - Setting Sail",
-        "比赛时间": "2026-02-22 01:00:00 - 2026-02-23 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3046.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://bearcatctf.io/",
-        "比赛标志": "https://ctftime.org/media/events/bearcat26_logo_black.png",
-        "比赛权重": "23.89",
-        "赛事主办": "Cyber@UC (https://ctftime.org/team/87727)",
-        "比赛ID": "1032",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "UniVsThreats 26 Quals CTF",
         "比赛时间": "2026-02-27 16:00:00 - 2026-02-28 16:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3092.ics",
@@ -660,6 +648,18 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "BearcatCTF 2026 - Setting Sail",
+        "比赛时间": "2026-02-22 01:00:00 - 2026-02-23 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3046.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://bearcatctf.io/",
+        "比赛标志": "https://ctftime.org/media/events/bearcat26_logo_black.png",
+        "比赛权重": "23.89",
+        "赛事主办": "Cyber@UC (https://ctftime.org/team/87727)",
+        "比赛ID": "1032",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "EPIHACK CTF: L'arène numérique",
         "比赛时间": "2026-02-21 17:00:00 - 2026-02-22 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3076.ics",
@@ -669,7 +669,7 @@
         "比赛权重": "0",
         "赛事主办": "EPIHACK (https://ctftime.org/team/419202)",
         "比赛ID": "1489",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Escathon CTF 2026 Finals",
@@ -1857,18 +1857,6 @@
         "比赛权重": "0.00",
         "赛事主办": "PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)",
         "比赛ID": "1374",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Iran Tech Olympics Hardware Security 2025",
-        "比赛时间": "2025-10-29 14:30:00 - 2025-10-30 02:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2930.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.olympics.tech/",
-        "比赛标志": "https://ctftime.org/media/events/3bfa72e3e10491d8b3bd43a8153aad1e_2.jpg",
-        "比赛权重": "25.00",
-        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
-        "比赛ID": "1314",
         "比赛状态": "past"
     }
 ]

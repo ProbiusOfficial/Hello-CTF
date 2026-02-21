@@ -28,6 +28,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[EPIHACK CTF: L'arène numérique](https://ctf.epihack.tech/)"  
+    [![](https://ctftime.org/media/events/logo-bg.png){ width="200" align=left }](https://ctf.epihack.tech/)  
+    **比赛名称** : [EPIHACK CTF: L'arène numérique](https://ctf.epihack.tech/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-02-21 17:00:00 - 2026-02-22 01:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : EPIHACK (https://ctftime.org/team/419202)  
+    **添加日历** : https://ctftime.org/event/3076.ics  
+    
 ??? Quote "[Escathon CTF 2026 Finals](https://eschaton.mcsc.space/)"  
     [![](https://ctftime.org/media/events/mcsc_logo.jpg){ width="200" align=left }](https://eschaton.mcsc.space/)  
     **比赛名称** : [Escathon CTF 2026 Finals](https://eschaton.mcsc.space/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)  
     **添加日历** : https://ctftime.org/event/2934.ics  
-    
-??? Quote "[Iran Tech Olympics Hardware Security 2025](https://ctf.olympics.tech/)"  
-    [![](https://ctftime.org/media/events/3bfa72e3e10491d8b3bd43a8153aad1e_2.jpg){ width="200" align=left }](https://ctf.olympics.tech/)  
-    **比赛名称** : [Iran Tech Olympics Hardware Security 2025](https://ctf.olympics.tech/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-10-29 14:30:00 - 2025-10-30 02:30:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-    **添加日历** : https://ctftime.org/event/2930.ics  
     
