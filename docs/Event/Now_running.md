@@ -63,3 +63,12 @@ comments: true
     **赛事主办** : Team MCSC (https://ctftime.org/team/418958)  
     **添加日历** : https://ctftime.org/event/3078.ics  
     
+??? Quote "[EPIHACK CTF: L'arène numérique](https://ctf.epihack.tech/)"  
+    [![](https://ctftime.org/media/events/logo-bg.png){ width="200" align=left }](https://ctf.epihack.tech/)  
+    **比赛名称** : [EPIHACK CTF: L'arène numérique](https://ctf.epihack.tech/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-02-21 17:00:00 - 2026-02-22 01:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : EPIHACK (https://ctftime.org/team/419202)  
+    **添加日历** : https://ctftime.org/event/3076.ics  
+    
