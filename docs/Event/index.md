@@ -862,7 +862,7 @@ hide:
                 **比赛名称** : [0xFUN CTF 2026](https://ctf.0xfun.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-02-13 02:00:00 - 2026-02-15 02:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 18.08  
                 **赛事主办** : 0xFUN (https://ctftime.org/team/354033)  
                 **添加日历** : https://ctftime.org/event/3081.ics  
                 
