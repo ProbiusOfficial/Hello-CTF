@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Escathon CTF 2026 Finals](https://eschaton.mcsc.space/)"  
-                [![](https://ctftime.org/media/events/mcsc_logo.jpg){ width="200" align=left }](https://eschaton.mcsc.space/)  
-                **比赛名称** : [Escathon CTF 2026 Finals](https://eschaton.mcsc.space/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2026-02-21 12:30:00 - 2026-02-21 22:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Team MCSC (https://ctftime.org/team/418958)  
-                **添加日历** : https://ctftime.org/event/3078.ics  
-                
             ??? Quote "[EPIHACK CTF: L'arène numérique](https://ctf.epihack.tech/)"  
                 [![](https://ctftime.org/media/events/logo-bg.png){ width="200" align=left }](https://ctf.epihack.tech/)  
                 **比赛名称** : [EPIHACK CTF: L'arène numérique](https://ctf.epihack.tech/)  
@@ -805,6 +796,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Batman's Kitchen (https://ctftime.org/team/3135)  
                 **添加日历** : https://ctftime.org/event/3098.ics  
+                
+            ??? Quote "[Escathon CTF 2026 Finals](https://eschaton.mcsc.space/)"  
+                [![](https://ctftime.org/media/events/mcsc_logo.jpg){ width="200" align=left }](https://eschaton.mcsc.space/)  
+                **比赛名称** : [Escathon CTF 2026 Finals](https://eschaton.mcsc.space/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2026-02-21 12:30:00 - 2026-02-21 22:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Team MCSC (https://ctftime.org/team/418958)  
+                **添加日历** : https://ctftime.org/event/3078.ics  
                 
     === "*已经结束*"
         === "国内赛事"

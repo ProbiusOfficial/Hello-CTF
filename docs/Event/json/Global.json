@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Escathon CTF 2026 Finals",
-        "比赛时间": "2026-02-21 12:30:00 - 2026-02-21 22:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3078.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://eschaton.mcsc.space/",
-        "比赛标志": "https://ctftime.org/media/events/mcsc_logo.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "Team MCSC (https://ctftime.org/team/418958)",
-        "比赛ID": "1477",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "EPIHACK CTF: L'arène numérique",
         "比赛时间": "2026-02-21 17:00:00 - 2026-02-22 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3076.ics",
@@ -681,6 +669,18 @@
         "比赛权重": "0",
         "赛事主办": "Batman's Kitchen (https://ctftime.org/team/3135)",
         "比赛ID": "1495",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Escathon CTF 2026 Finals",
+        "比赛时间": "2026-02-21 12:30:00 - 2026-02-21 22:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3078.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://eschaton.mcsc.space/",
+        "比赛标志": "https://ctftime.org/media/events/mcsc_logo.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "Team MCSC (https://ctftime.org/team/418958)",
+        "比赛ID": "1477",
         "比赛状态": "nowrunning"
     },
     {
