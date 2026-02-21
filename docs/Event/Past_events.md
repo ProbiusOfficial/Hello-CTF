@@ -28,6 +28,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Escathon CTF 2026 Finals](https://eschaton.mcsc.space/)"  
+    [![](https://ctftime.org/media/events/mcsc_logo.jpg){ width="200" align=left }](https://eschaton.mcsc.space/)  
+    **比赛名称** : [Escathon CTF 2026 Finals](https://eschaton.mcsc.space/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2026-02-21 12:30:00 - 2026-02-21 22:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Team MCSC (https://ctftime.org/team/418958)  
+    **添加日历** : https://ctftime.org/event/3078.ics  
+    
 ??? Quote "[TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)"  
     [![](){ width="200" align=left }](https://chart.taipanbyte.ru/)  
     **比赛名称** : [TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : ASIS (https://ctftime.org/team/4140)  
     **添加日历** : https://ctftime.org/event/2930.ics  
-    
-??? Quote "[CipherHunt 2.0](https://cipherhunt.xyz/)"  
-    [![](https://ctftime.org/media/events/old-sq_1.jpg){ width="200" align=left }](https://cipherhunt.xyz/)  
-    **比赛名称** : [CipherHunt 2.0](https://cipherhunt.xyz/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-10-28 17:30:00 - 2025-10-29 22:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : CypherLock (https://ctftime.org/team/356395)  
-    **添加日历** : https://ctftime.org/event/3005.ics  
     

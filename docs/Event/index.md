@@ -788,15 +788,6 @@ hide:
                 **赛事主办** : Batman's Kitchen (https://ctftime.org/team/3135)  
                 **添加日历** : https://ctftime.org/event/3098.ics  
                 
-            ??? Quote "[Escathon CTF 2026 Finals](https://eschaton.mcsc.space/)"  
-                [![](https://ctftime.org/media/events/mcsc_logo.jpg){ width="200" align=left }](https://eschaton.mcsc.space/)  
-                **比赛名称** : [Escathon CTF 2026 Finals](https://eschaton.mcsc.space/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2026-02-21 12:30:00 - 2026-02-21 22:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Team MCSC (https://ctftime.org/team/418958)  
-                **添加日历** : https://ctftime.org/event/3078.ics  
-                
             ??? Quote "[EPIHACK CTF: L'arène numérique](https://ctf.epihack.tech/)"  
                 [![](https://ctftime.org/media/events/logo-bg.png){ width="200" align=left }](https://ctf.epihack.tech/)  
                 **比赛名称** : [EPIHACK CTF: L'arène numérique](https://ctf.epihack.tech/)  
@@ -830,6 +821,15 @@ hide:
                 **其他说明** : 4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。  
                 
         === "国外赛事"
+            ??? Quote "[Escathon CTF 2026 Finals](https://eschaton.mcsc.space/)"  
+                [![](https://ctftime.org/media/events/mcsc_logo.jpg){ width="200" align=left }](https://eschaton.mcsc.space/)  
+                **比赛名称** : [Escathon CTF 2026 Finals](https://eschaton.mcsc.space/)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2026-02-21 12:30:00 - 2026-02-21 22:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Team MCSC (https://ctftime.org/team/418958)  
+                **添加日历** : https://ctftime.org/event/3078.ics  
+                
             ??? Quote "[TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)"  
                 [![](){ width="200" align=left }](https://chart.taipanbyte.ru/)  
                 **比赛名称** : [TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)  
@@ -1720,15 +1720,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : ASIS (https://ctftime.org/team/4140)  
                 **添加日历** : https://ctftime.org/event/2930.ics  
-                
-            ??? Quote "[CipherHunt 2.0](https://cipherhunt.xyz/)"  
-                [![](https://ctftime.org/media/events/old-sq_1.jpg){ width="200" align=left }](https://cipherhunt.xyz/)  
-                **比赛名称** : [CipherHunt 2.0](https://cipherhunt.xyz/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-28 17:30:00 - 2025-10-29 22:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : CypherLock (https://ctftime.org/team/356395)  
-                **添加日历** : https://ctftime.org/event/3005.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
