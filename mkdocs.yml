@@ -226,6 +226,7 @@ nav:
       - 敏感信息泄露: hc-web/sensitive_info.md
       - PHP基础: hc-web/php_basic.md
       - PHP反序列化基础: hc-web/php_unser_base.md
+      - PHP特性: hc-web/php_features.md
       - SQL注入: hc-web/sql_injection.md
       - XSS攻击: hc-web/xss.md
       - 文件包含: hc-web/include.md
