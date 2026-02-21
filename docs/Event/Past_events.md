@@ -46,6 +46,15 @@ comments: true
     **赛事主办** : BreachPoint-SOT (https://ctftime.org/team/419090)  
     **添加日历** : https://ctftime.org/event/3075.ics  
     
+??? Quote "[Crackmes.one Reverse Engineering CTF 2026](https://ctf.crackmes.one/)"  
+    [![](https://ctftime.org/media/events/221804609.png){ width="200" align=left }](https://ctf.crackmes.one/)  
+    **比赛名称** : [Crackmes.one Reverse Engineering CTF 2026](https://ctf.crackmes.one/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-02-14 08:00:00 - 2026-02-21 08:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : crackmes.one (https://ctftime.org/team/388934)  
+    **添加日历** : https://ctftime.org/event/3014.ics  
+    
 ??? Quote "[0xFUN CTF 2026](https://ctf.0xfun.org/)"  
     [![](https://ctftime.org/media/events/image_4.png){ width="200" align=left }](https://ctf.0xfun.org/)  
     **比赛名称** : [0xFUN CTF 2026](https://ctf.0xfun.org/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : CypherLock (https://ctftime.org/team/356395)  
     **添加日历** : https://ctftime.org/event/3005.ics  
-    
-??? Quote "[Iran Tech Olympics Speed-Run CTF 2025](https://ctf.olympics.tech/)"  
-    [![](https://ctftime.org/media/events/3bfa72e3e10491d8b3bd43a8153aad1e_1.jpg){ width="200" align=left }](https://ctf.olympics.tech/)  
-    **比赛名称** : [Iran Tech Olympics Speed-Run CTF 2025](https://ctf.olympics.tech/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-10-28 14:30:00 - 2025-10-28 14:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-    **添加日历** : https://ctftime.org/event/2931.ics  
     
