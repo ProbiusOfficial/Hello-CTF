@@ -36,12 +36,3 @@ comments: true
     **赛事主办** : Batman's Kitchen (https://ctftime.org/team/3135)  
     **添加日历** : https://ctftime.org/event/3098.ics  
     
-??? Quote "[BearcatCTF 2026 - Setting Sail](https://bearcatctf.io/)"  
-    [![](https://ctftime.org/media/events/bearcat26_logo_black.png){ width="200" align=left }](https://bearcatctf.io/)  
-    **比赛名称** : [BearcatCTF 2026 - Setting Sail](https://bearcatctf.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-22 01:00:00 - 2026-02-23 01:00:00 UTC+8  
-    **比赛权重** : 23.89  
-    **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
-    **添加日历** : https://ctftime.org/event/3046.ics  
-    

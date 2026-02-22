@@ -633,7 +633,7 @@
         "比赛权重": "23.89",
         "赛事主办": "Cyber@UC (https://ctftime.org/team/87727)",
         "比赛ID": "1032",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "EPIHACK CTF: L'arène numérique",
@@ -1821,18 +1821,6 @@
         "比赛权重": "0.00",
         "赛事主办": "OSINT Switzerland (https://ctftime.org/team/391442)",
         "比赛ID": "1407",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "V1t CTF 2025",
-        "比赛时间": "2025-10-31 21:00:00 - 2025-11-02 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2920.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.v1t.site/",
-        "比赛标志": "https://ctftime.org/media/events/Ban_sao_cua_V1T.png",
-        "比赛权重": "22.14",
-        "赛事主办": "V1t (https://ctftime.org/team/280950)",
-        "比赛ID": "1403",
         "比赛状态": "past"
     }
 ]

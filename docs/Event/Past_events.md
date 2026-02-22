@@ -28,6 +28,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[BearcatCTF 2026 - Setting Sail](https://bearcatctf.io/)"  
+    [![](https://ctftime.org/media/events/bearcat26_logo_black.png){ width="200" align=left }](https://bearcatctf.io/)  
+    **比赛名称** : [BearcatCTF 2026 - Setting Sail](https://bearcatctf.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-02-22 01:00:00 - 2026-02-23 01:00:00 UTC+8  
+    **比赛权重** : 23.89  
+    **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
+    **添加日历** : https://ctftime.org/event/3046.ics  
+    
 ??? Quote "[EPIHACK CTF: L'arène numérique](https://ctf.epihack.tech/)"  
     [![](https://ctftime.org/media/events/logo-bg.png){ width="200" align=left }](https://ctf.epihack.tech/)  
     **比赛名称** : [EPIHACK CTF: L'arène numérique](https://ctf.epihack.tech/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : OSINT Switzerland (https://ctftime.org/team/391442)  
     **添加日历** : https://ctftime.org/event/2918.ics  
-    
-??? Quote "[V1t CTF 2025](https://ctf.v1t.site/)"  
-    [![](https://ctftime.org/media/events/Ban_sao_cua_V1T.png){ width="200" align=left }](https://ctf.v1t.site/)  
-    **比赛名称** : [V1t CTF 2025](https://ctf.v1t.site/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-10-31 21:00:00 - 2025-11-02 21:00:00 UTC+8  
-    **比赛权重** : 22.14  
-    **赛事主办** : V1t (https://ctftime.org/team/280950)  
-    **添加日历** : https://ctftime.org/event/2920.ics  
     
