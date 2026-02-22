@@ -612,18 +612,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "THJCC CTF 2026",
-        "比赛时间": "2026-02-21 08:00:01 - 2026-02-22 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3088.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf2026.thjcc.org/",
-        "比赛标志": "https://ctftime.org/media/events/3291aa527005a0771b15f8ca11d76637.png",
-        "比赛权重": "0.00",
-        "赛事主办": "CakeisTheFake (https://ctftime.org/team/276544)",
-        "比赛ID": "1115",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Batman's Kitchen CTF 2026",
         "比赛时间": "2026-02-21 09:30:00 - 2026-02-23 09:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3098.ics",
@@ -672,6 +660,18 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "THJCC CTF 2026",
+        "比赛时间": "2026-02-21 08:00:01 - 2026-02-22 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3088.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf2026.thjcc.org/",
+        "比赛标志": "https://ctftime.org/media/events/3291aa527005a0771b15f8ca11d76637.png",
+        "比赛权重": "0.00",
+        "赛事主办": "CakeisTheFake (https://ctftime.org/team/276544)",
+        "比赛ID": "1115",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "BITSCTF 2026",
         "比赛时间": "2026-02-20 13:30:00 - 2026-02-22 13:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3122.ics",
@@ -690,7 +690,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://chart.taipanbyte.ru/",
         "比赛标志": "",
-        "比赛权重": "0",
+        "比赛权重": "24.29",
         "赛事主办": "TaipanByte (https://ctftime.org/team/301788)",
         "比赛ID": "1497",
         "比赛状态": "past"
@@ -1833,18 +1833,6 @@
         "比赛权重": "22.14",
         "赛事主办": "V1t (https://ctftime.org/team/280950)",
         "比赛ID": "1403",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "ZeroDay CTF 2025",
-        "比赛时间": "2025-10-30 21:00:00 - 2025-10-31 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2988.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://register.zerologon.co.in/",
-        "比赛标志": "https://ctftime.org/media/events/IMG-20251021-WA0001.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Z3r0_l0g0n (https://ctftime.org/team/227457)",
-        "比赛ID": "1185",
         "比赛状态": "past"
     }
 ]
