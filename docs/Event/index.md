@@ -752,15 +752,6 @@ hide:
                 **赛事主办** : vulnbydefault (https://ctftime.org/team/423471)  
                 **添加日历** : https://ctftime.org/event/3135.ics  
                 
-            ??? Quote "[BITSCTF 2026](https://ctf.bitskrieg.in/)"  
-                [![](){ width="200" align=left }](https://ctf.bitskrieg.in/)  
-                **比赛名称** : [BITSCTF 2026](https://ctf.bitskrieg.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-02-20 13:30:00 - 2026-02-22 13:30:00 UTC+8  
-                **比赛权重** : 25.54  
-                **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
-                **添加日历** : https://ctftime.org/event/3122.ics  
-                
             ??? Quote "[THJCC CTF 2026](https://ctf2026.thjcc.org/)"  
                 [![](https://ctftime.org/media/events/3291aa527005a0771b15f8ca11d76637.png){ width="200" align=left }](https://ctf2026.thjcc.org/)  
                 **比赛名称** : [THJCC CTF 2026](https://ctf2026.thjcc.org/)  
@@ -829,6 +820,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Team MCSC (https://ctftime.org/team/418958)  
                 **添加日历** : https://ctftime.org/event/3078.ics  
+                
+            ??? Quote "[BITSCTF 2026](https://ctf.bitskrieg.in/)"  
+                [![](){ width="200" align=left }](https://ctf.bitskrieg.in/)  
+                **比赛名称** : [BITSCTF 2026](https://ctf.bitskrieg.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-02-20 13:30:00 - 2026-02-22 13:30:00 UTC+8  
+                **比赛权重** : 25.54  
+                **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
+                **添加日历** : https://ctftime.org/event/3122.ics  
                 
             ??? Quote "[TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)"  
                 [![](){ width="200" align=left }](https://chart.taipanbyte.ru/)  
@@ -1702,15 +1702,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Z3r0_l0g0n (https://ctftime.org/team/227457)  
                 **添加日历** : https://ctftime.org/event/2988.ics  
-                
-            ??? Quote "[PH03N1X V1P3R N0V4 CTF](http://pwnctf.ro/)"  
-                [![](https://ctftime.org/media/events/CTF_logo_sex-2_1.png){ width="200" align=left }](http://pwnctf.ro/)  
-                **比赛名称** : [PH03N1X V1P3R N0V4 CTF](http://pwnctf.ro/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-10-29 18:00:00 - 2025-11-01 01:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)  
-                **添加日历** : https://ctftime.org/event/2934.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
