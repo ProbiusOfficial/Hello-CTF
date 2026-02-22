@@ -202,8 +202,8 @@ nav:
       - hc-env/index.md
       - 工具一览: hc-env/CTFtool.md
       - Docker环境: hc-env/Docker_On_Linux.md
-      - Web环境设置: hc-env/Web.md
-      - MISC环境设置: hc-env/MISC.md
+      # - Web环境设置: hc-env/Web.md
+      # - MISC环境设置: hc-env/MISC.md
       - Crypto环境设置: hc-env/Crypto.md
 
     - MISC | 杂项:
@@ -226,6 +226,7 @@ nav:
       - 敏感信息泄露: hc-web/sensitive_info.md
       - PHP基础: hc-web/php_basic.md
       - PHP反序列化基础: hc-web/php_unser_base.md
+      - PHP特性: hc-web/php_features.md
       - SQL注入: hc-web/sql_injection.md
       - XSS攻击: hc-web/xss.md
       - 文件包含: hc-web/include.md
@@ -257,6 +258,7 @@ nav:
 
     - Pwn | 二进制安全:
       - hc-pwn/index.md
+      - wsl2下的环境配置: hc-pwn/wsl2_environment.md
       - 汇编语言(x86): hc-pwn/Asm_x86.md
       - 栈上数组越界&栈溢出: hc-pwn/Stack_Overflow.md
       - ROP入门: hc-pwn/ROP.md

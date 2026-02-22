@@ -54,41 +54,41 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[0xFUN CTF 2026](https://ctf.0xfun.org/)"  
-            [![](https://ctftime.org/media/events/image_4.png){ width="200" align=left }](https://ctf.0xfun.org/)  
-            **比赛名称** : [0xFUN CTF 2026](https://ctf.0xfun.org/)  
+        ??? Quote "[UniVsThreats 26 Quals CTF](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)"  
+            [![](https://ctftime.org/media/events/UniVsThreats26_Final_No_Sponsors_1.jpg){ width="200" align=left }](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)  
+            **比赛名称** : [UniVsThreats 26 Quals CTF](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-02-13 02:00:00 - 2026-02-15 02:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : 0xFUN (https://ctftime.org/team/354033)  
-            **添加日历** : https://ctftime.org/event/3081.ics  
+            **比赛时间** : 2026-02-27 16:00:00 - 2026-02-28 16:00:00 UTC+8  
+            **比赛权重** : 18.35  
+            **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
+            **添加日历** : https://ctftime.org/event/3092.ics  
             
-        ??? Quote "[Crackmes.one Reverse Engineering CTF 2026](https://crackmesone.ctfd.io/)"  
-            [![](https://ctftime.org/media/events/221804609.png){ width="200" align=left }](https://crackmesone.ctfd.io/)  
-            **比赛名称** : [Crackmes.one Reverse Engineering CTF 2026](https://crackmesone.ctfd.io/)  
+        ??? Quote "[EHAX CTF 2026](https://ctf.ehax.in/)"  
+            [![](https://ctftime.org/media/events/EHAX_CTF_FINAL_LOGO_1.png){ width="200" align=left }](https://ctf.ehax.in/)  
+            **比赛名称** : [EHAX CTF 2026](https://ctf.ehax.in/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-02-14 08:00:00 - 2026-02-21 08:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : crackmes.one (https://ctftime.org/team/388934)  
-            **添加日历** : https://ctftime.org/event/3014.ics  
+            **比赛时间** : 2026-02-28 02:30:00 - 2026-03-01 14:30:00 UTC+8  
+            **比赛权重** : 22.67  
+            **赛事主办** : EHAX (https://ctftime.org/team/270643)  
+            **添加日历** : https://ctftime.org/event/3127.ics  
             
-        ??? Quote "[Breach Point CTF - Siege Of Troy(Online Round)](https://breachpoint.live/)"  
-            [![](https://ctftime.org/media/events/SIEGE_O_TROY_Trust_Was_the_Vulnerability..jpg){ width="200" align=left }](https://breachpoint.live/)  
-            **比赛名称** : [Breach Point CTF - Siege Of Troy(Online Round)](https://breachpoint.live/)  
+        ??? Quote "[SECCON CTF 14 International Finals](https://ctf.seccon.jp/)"  
+            [![](https://ctftime.org/media/events/seccon_s_11.png){ width="200" align=left }](https://ctf.seccon.jp/)  
+            **比赛名称** : [SECCON CTF 14 International Finals](https://ctf.seccon.jp/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-02-14 15:30:00 - 2026-02-15 15:30:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : BreachPoint-SOT (https://ctftime.org/team/419090)  
-            **添加日历** : https://ctftime.org/event/3075.ics  
+            **比赛时间** : 2026-02-28 09:00:00 - 2026-03-01 17:00:00 UTC+8  
+            **比赛权重** : 37.00  
+            **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
+            **添加日历** : https://ctftime.org/event/3106.ics  
             
-        ??? Quote "[TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)"  
-            [![](){ width="200" align=left }](https://chart.taipanbyte.ru/)  
-            **比赛名称** : [TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)  
+        ??? Quote "[SECCON CTF 14 Domestic Finals](https://ctf.seccon.jp/)"  
+            [![](https://ctftime.org/media/events/seccon_s_12.png){ width="200" align=left }](https://ctf.seccon.jp/)  
+            **比赛名称** : [SECCON CTF 14 Domestic Finals](https://ctf.seccon.jp/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-02-14 18:00:00 - 2026-02-15 18:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : TaipanByte (https://ctftime.org/team/301788)  
-            **添加日历** : https://ctftime.org/event/3086.ics  
+            **比赛时间** : 2026-02-28 09:00:00 - 2026-03-01 17:00:00 UTC+8  
+            **比赛权重** : 37.00  
+            **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
+            **添加日历** : https://ctftime.org/event/3107.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
