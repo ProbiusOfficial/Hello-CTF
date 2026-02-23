@@ -27,12 +27,3 @@ comments: true
     **赛事主办** : vulnbydefault (https://ctftime.org/team/423471)  
     **添加日历** : https://ctftime.org/event/3135.ics  
     
-??? Quote "[Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)"  
-    [![](https://ctftime.org/media/events/bklogo.png){ width="200" align=left }](https://ctf.batmans.kitchen/)  
-    **比赛名称** : [Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-21 09:30:00 - 2026-02-23 09:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Batman's Kitchen (https://ctftime.org/team/3135)  
-    **添加日历** : https://ctftime.org/event/3098.ics  
-    

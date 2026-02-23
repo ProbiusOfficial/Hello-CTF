@@ -612,18 +612,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Batman's Kitchen CTF 2026",
-        "比赛时间": "2026-02-21 09:30:00 - 2026-02-23 09:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3098.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.batmans.kitchen/",
-        "比赛标志": "https://ctftime.org/media/events/bklogo.png",
-        "比赛权重": "0",
-        "赛事主办": "Batman's Kitchen (https://ctftime.org/team/3135)",
-        "比赛ID": "1495",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "BearcatCTF 2026 - Setting Sail",
         "比赛时间": "2026-02-22 01:00:00 - 2026-02-23 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3046.ics",
@@ -657,6 +645,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Team MCSC (https://ctftime.org/team/418958)",
         "比赛ID": "1477",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Batman's Kitchen CTF 2026",
+        "比赛时间": "2026-02-21 09:30:00 - 2026-02-23 09:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3098.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.batmans.kitchen/",
+        "比赛标志": "https://ctftime.org/media/events/bklogo.png",
+        "比赛权重": "0",
+        "赛事主办": "Batman's Kitchen (https://ctftime.org/team/3135)",
+        "比赛ID": "1495",
         "比赛状态": "past"
     },
     {
@@ -1809,18 +1809,6 @@
         "比赛权重": "0.00",
         "赛事主办": "SECPlayground (https://ctftime.org/team/375409)",
         "比赛ID": "1291",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Haunted Pumpkin CTF '25",
-        "比赛时间": "2025-11-01 01:00:00 - 2025-11-02 06:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/2918.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://osintswitzerland.ch/events/haunted-pumpkin-ctf",
-        "比赛标志": "https://ctftime.org/media/events/IMG_9346.jpeg",
-        "比赛权重": "0.00",
-        "赛事主办": "OSINT Switzerland (https://ctftime.org/team/391442)",
-        "比赛ID": "1407",
         "比赛状态": "past"
     }
 ]
