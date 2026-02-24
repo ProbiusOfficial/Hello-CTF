@@ -63,7 +63,7 @@ Ctrl+F还可以搜索我们想找的函数：
 
 现在的IDA可以完成更多有趣的工作，比如下面这些：
 ### patch
-我们以一个题目为例：
+我们以一个题目为例([点击下载附件](https://wwbxs.lanzoup.com/ib2Il3j4hsda))：
 
 ![怪兽入侵](./Images/monster.png)
 
