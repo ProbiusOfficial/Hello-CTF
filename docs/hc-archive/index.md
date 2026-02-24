@@ -93,10 +93,6 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2025-12-14
 
     今天开始学学 ARM 指令集，也为之后安卓的学习铺铺路。ARM 是一种 RISC（精简指令集计算）处理器，因此拥有简化指令集（100 条指令或更少）和比 CISC（复杂指令集） 更多的通用寄存器。与英特尔不同，ARM 使用仅在寄存器上操作的指令，并使用 Load/Store 内存模型进行内存访问，这意味着只有 Load/Store 指令可以访问内存，其余的运算操作必须在寄存器中完成。环境准备手上没...
-    ### [信息搜集之边缘资产和隐形资产的发掘](https://blog.zgsec.cn/archives/729.html)  
-    >by [曾哥](https://blog.zgsec.cn/), 2025-11-30
-
-    0# 概述0.1 本文原创首发于国家网络空间云安全社区一眨眼的时间，马上就要过年了，不知道大家今年都过得如何？近期有不少师傅在抖音咨询我，问我说：常规的漏洞原理和利用都捻熟于心，但是为什么在SRC挖掘和攻防中，往往就是挖不到漏洞呢？我给了两点回复：第一个就是实战的经验比较少，对于漏洞在哪出现，有什么手法还掌握的不多；第二个是信息搜集没有得到要领，只会僵硬的进行信息搜集，对于边缘资产和隐形资产的发掘...
     ### [强网杯S9决赛Pwn writeup](https://xia0ji233.github.io/2025/11/26/qwb2025_final/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2025-11-26
 
@@ -153,5 +149,9 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2025-06-25
 
     61250ef0d935a4a9d2eb682839325b52407d6a12bdde2eb831889d10036bea8106e2cbab4d0545b5551fe1a0fea6f3d58b8ee44d7110304bee8ff7333000d35c5b12e6d6807bdab93f096bd15b0c005660b70215b08b001ec238e70442e03904450ea3...
+    ### [浅析Weaver Getdata前台SQL注入](https://y4tacker.github.io/2025/06/17/year/2025/06/%E6%B5%85%E6%9E%90Weaver-Getdata%E5%89%8D%E5%8F%B0SQL%E6%B3%A8%E5%85%A5/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-06-17
+
+    1762bba105fb4c18fef9087d338fa0b386b5358d10250f8e320625eb752af13c9ab59c9d28e6b6cb26b41da8222a972a0fa17762539b600808df7928c3ec8de1798e61e6143d2b6e5a33a8bdf0c82a34fa42ca5b7d6a601a92e4946e55935648a81345...
 
 </div>
