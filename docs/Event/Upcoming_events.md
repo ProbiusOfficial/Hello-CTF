@@ -171,6 +171,15 @@ comments: true
     **赛事主办** : TPC (https://ctftime.org/team/222485)  
     **添加日历** : https://ctftime.org/event/3091.ics  
     
+??? Quote "[MIPT CTF Quals 2026](https://board.miptctf.ru/)"  
+    [![](https://ctftime.org/media/events/miptctf.jpg){ width="200" align=left }](https://board.miptctf.ru/)  
+    **比赛名称** : [MIPT CTF Quals 2026](https://board.miptctf.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-14 17:00:00 - 2026-03-15 17:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : L0stAx3s (https://ctftime.org/team/354995)  
+    **添加日历** : https://ctftime.org/event/3162.ics  
+    
 ??? Quote "[Curiosity CTF 2026](https://curiosityctf.xyz/)"  
     [![](){ width="200" align=left }](https://curiosityctf.xyz/)  
     **比赛名称** : [Curiosity CTF 2026](https://curiosityctf.xyz/)  
