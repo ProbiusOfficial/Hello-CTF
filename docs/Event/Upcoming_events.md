@@ -58,7 +58,7 @@ comments: true
     [![](https://ctftime.org/media/events/e04b66f1d17c437f935e29d0fbe7beed_1.png){ width="200" align=left }](https://ctf.srdnlen.it/)  
     **比赛名称** : [Srdnlen CTF 2026 Quals](https://ctf.srdnlen.it/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-01 02:00:00 - 2026-03-01 02:00:00 UTC+8  
+    **比赛时间** : 2026-03-01 02:00:00 - 2026-03-02 02:00:00 UTC+8  
     **比赛权重** : 34.76  
     **赛事主办** : Srdnlen (https://ctftime.org/team/83421)  
     **添加日历** : https://ctftime.org/event/3043.ics  
