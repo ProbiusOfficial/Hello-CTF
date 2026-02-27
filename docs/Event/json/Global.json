@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "EHAX CTF 2026",
-        "比赛时间": "2026-02-28 02:30:00 - 2026-03-01 14:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3127.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.ehax.in/",
-        "比赛标志": "https://ctftime.org/media/events/EHAX_CTF_FINAL_LOGO_1.png",
-        "比赛权重": "22.67",
-        "赛事主办": "EHAX (https://ctftime.org/team/270643)",
-        "比赛ID": "1244",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "SECCON CTF 14 International Finals",
         "比赛时间": "2026-02-28 09:00:00 - 2026-03-01 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3106.ics",
@@ -621,6 +609,18 @@
         "比赛权重": "18.35",
         "赛事主办": "UVT-CTF (https://ctftime.org/team/214520)",
         "比赛ID": "1267",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "EHAX CTF 2026",
+        "比赛时间": "2026-02-28 02:30:00 - 2026-03-01 14:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3127.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.ehax.in/",
+        "比赛标志": "https://ctftime.org/media/events/EHAX_CTF_FINAL_LOGO_1.png",
+        "比赛权重": "22.67",
+        "赛事主办": "EHAX (https://ctftime.org/team/270643)",
+        "比赛ID": "1244",
         "比赛状态": "nowrunning"
     },
     {
