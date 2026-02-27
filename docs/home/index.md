@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[UniVsThreats 26 Quals CTF](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)"  
-            [![](https://ctftime.org/media/events/UniVsThreats26_Final_No_Sponsors_1.jpg){ width="200" align=left }](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)  
-            **比赛名称** : [UniVsThreats 26 Quals CTF](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-02-27 16:00:00 - 2026-02-28 16:00:00 UTC+8  
-            **比赛权重** : 18.35  
-            **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
-            **添加日历** : https://ctftime.org/event/3092.ics  
-            
         ??? Quote "[EHAX CTF 2026](https://ctf.ehax.in/)"  
             [![](https://ctftime.org/media/events/EHAX_CTF_FINAL_LOGO_1.png){ width="200" align=left }](https://ctf.ehax.in/)  
             **比赛名称** : [EHAX CTF 2026](https://ctf.ehax.in/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 37.00  
             **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
             **添加日历** : https://ctftime.org/event/3107.ics  
+            
+        ??? Quote "[CREST CTF](https://crestpcu.in/)"  
+            [![](https://ctftime.org/media/events/crest_logo.jpeg){ width="200" align=left }](https://crestpcu.in/)  
+            **比赛名称** : [CREST CTF](https://crestpcu.in/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-02-28 12:30:00 - 2026-02-28 20:30:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : CREST (https://ctftime.org/team/418000)  
+            **添加日历** : https://ctftime.org/event/3123.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

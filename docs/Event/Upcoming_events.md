@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[UniVsThreats 26 Quals CTF](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)"  
-    [![](https://ctftime.org/media/events/UniVsThreats26_Final_No_Sponsors_1.jpg){ width="200" align=left }](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)  
-    **比赛名称** : [UniVsThreats 26 Quals CTF](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-27 16:00:00 - 2026-02-28 16:00:00 UTC+8  
-    **比赛权重** : 18.35  
-    **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
-    **添加日历** : https://ctftime.org/event/3092.ics  
-    
 ??? Quote "[EHAX CTF 2026](https://ctf.ehax.in/)"  
     [![](https://ctftime.org/media/events/EHAX_CTF_FINAL_LOGO_1.png){ width="200" align=left }](https://ctf.ehax.in/)  
     **比赛名称** : [EHAX CTF 2026](https://ctf.ehax.in/)  
@@ -170,6 +161,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : TPC (https://ctftime.org/team/222485)  
     **添加日历** : https://ctftime.org/event/3091.ics  
+    
+??? Quote "[MIPT CTF Quals 2026](https://board.miptctf.ru/)"  
+    [![](https://ctftime.org/media/events/miptctf.jpg){ width="200" align=left }](https://board.miptctf.ru/)  
+    **比赛名称** : [MIPT CTF Quals 2026](https://board.miptctf.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-14 17:00:00 - 2026-03-15 17:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : L0stAx3s (https://ctftime.org/team/354995)  
+    **添加日历** : https://ctftime.org/event/3162.ics  
     
 ??? Quote "[Curiosity CTF 2026](https://curiosityctf.xyz/)"  
     [![](){ width="200" align=left }](https://curiosityctf.xyz/)  
