@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[CyberGame 2026](https://cybergame.sk/)"  
-            [![](https://ctftime.org/media/events/76a04fd5e7b9d834480d92fbf702f749.png){ width="200" align=left }](https://cybergame.sk/)  
-            **比赛名称** : [CyberGame 2026](https://cybergame.sk/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-01 07:00:00 - 2026-05-10 05:59:59 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
-            **添加日历** : https://ctftime.org/event/3142.ics  
-            
         ??? Quote "[CSCG 2026](https://play.cscg.live/)"  
             [![](){ width="200" align=left }](https://play.cscg.live/)  
             **比赛名称** : [CSCG 2026](https://play.cscg.live/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : xSTF (https://ctftime.org/team/15341)  
             **添加日历** : https://ctftime.org/event/3073.ics  
+            
+        ??? Quote "[CodeVinci CTF 2026](https://challs.codevinci.it/)"  
+            [![](https://ctftime.org/media/events/Logo_.png){ width="200" align=left }](https://challs.codevinci.it/)  
+            **比赛名称** : [CodeVinci CTF 2026](https://challs.codevinci.it/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-07 22:00:00 - 2026-03-08 03:00:00 UTC+8  
+            **比赛权重** : 18.57  
+            **赛事主办** : code-vinci (https://ctftime.org/team/365817)  
+            **添加日历** : https://ctftime.org/event/3101.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

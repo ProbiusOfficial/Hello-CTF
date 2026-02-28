@@ -63,3 +63,12 @@ comments: true
     **赛事主办** : Srdnlen (https://ctftime.org/team/83421)  
     **添加日历** : https://ctftime.org/event/3043.ics  
     
+??? Quote "[CyberGame 2026](https://cybergame.sk/)"  
+    [![](https://ctftime.org/media/events/76a04fd5e7b9d834480d92fbf702f749.png){ width="200" align=left }](https://cybergame.sk/)  
+    **比赛名称** : [CyberGame 2026](https://cybergame.sk/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-01 07:00:00 - 2026-05-10 05:59:59 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
+    **添加日历** : https://ctftime.org/event/3142.ics  
+    
