@@ -28,6 +28,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[CREST CTF](https://crestpcu.in/)"  
+    [![](https://ctftime.org/media/events/crest_logo.jpeg){ width="200" align=left }](https://crestpcu.in/)  
+    **比赛名称** : [CREST CTF](https://crestpcu.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-02-28 12:30:00 - 2026-02-28 20:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : CREST (https://ctftime.org/team/418000)  
+    **添加日历** : https://ctftime.org/event/3123.ics  
+    
 ??? Quote "[UniVsThreats 26 Quals CTF](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)"  
     [![](https://ctftime.org/media/events/UniVsThreats26_Final_No_Sponsors_1.jpg){ width="200" align=left }](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)  
     **比赛名称** : [UniVsThreats 26 Quals CTF](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 94.50  
     **赛事主办** : Nu1L (https://ctftime.org/team/19208)  
     **添加日历** : https://ctftime.org/event/2795.ics  
-    
-??? Quote "[Cryovault Quals](https://www.isfcr.pes.edu/)"  
-    [![](){ width="200" align=left }](https://www.isfcr.pes.edu/)  
-    **比赛名称** : [Cryovault Quals](https://www.isfcr.pes.edu/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-01 14:30:00 - 2025-11-02 14:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : ISFCR PESU (https://ctftime.org/team/166645)  
-    **添加日历** : https://ctftime.org/event/2984.ics  
     
