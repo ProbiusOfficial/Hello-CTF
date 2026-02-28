@@ -1,29 +1,5 @@
 [
     {
-        "比赛名称": "SECCON CTF 14 International Finals",
-        "比赛时间": "2026-02-28 09:00:00 - 2026-03-01 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3106.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.seccon.jp/",
-        "比赛标志": "https://ctftime.org/media/events/seccon_s_11.png",
-        "比赛权重": "37.00",
-        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
-        "比赛ID": "92",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "SECCON CTF 14 Domestic Finals",
-        "比赛时间": "2026-02-28 09:00:00 - 2026-03-01 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3107.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.seccon.jp/",
-        "比赛标志": "https://ctftime.org/media/events/seccon_s_12.png",
-        "比赛权重": "37.00",
-        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
-        "比赛ID": "92",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "CREST CTF",
         "比赛时间": "2026-02-28 12:30:00 - 2026-02-28 20:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3123.ics",
@@ -621,6 +597,30 @@
         "比赛权重": "22.67",
         "赛事主办": "EHAX (https://ctftime.org/team/270643)",
         "比赛ID": "1244",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "SECCON CTF 14 International Finals",
+        "比赛时间": "2026-02-28 09:00:00 - 2026-03-01 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3106.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.seccon.jp/",
+        "比赛标志": "https://ctftime.org/media/events/seccon_s_11.png",
+        "比赛权重": "37.00",
+        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
+        "比赛ID": "92",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "SECCON CTF 14 Domestic Finals",
+        "比赛时间": "2026-02-28 09:00:00 - 2026-03-01 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3107.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.seccon.jp/",
+        "比赛标志": "https://ctftime.org/media/events/seccon_s_12.png",
+        "比赛权重": "37.00",
+        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
+        "比赛ID": "92",
         "比赛状态": "nowrunning"
     },
     {
