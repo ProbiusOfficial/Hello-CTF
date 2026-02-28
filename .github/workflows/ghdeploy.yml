@@ -1,0 +1,54 @@
+name: Deploy to GitHub Pages and Automatically update
+on:
+  push:
+    branches:
+      - master
+      - main
+  schedule:
+    - cron: "0 */6 * * *"
+  repository_dispatch:
+    types: [Hello-CTFTime]
+
+permissions:
+  contents: write
+
+jobs:
+  deploy_and_update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+          
+      - name: Install libxml2-dev and libxslt-dev
+        run: |
+              sudo apt-get update
+              sudo apt-get install -y libxml2-dev libxslt-dev --fix-missing
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: pre_build
+        run: python build.py
+
+      - name: Deploy MkDocs
+        run: mkdocs gh-deploy --force
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git add docs/hc-archive/friends.md
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "CHANGES=true" >> $GITHUB_ENV
+          fi
+
+      - name: Commit and push changes
+        if: env.CHANGES == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automatically update

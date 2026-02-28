@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    build: ../
+    # image: test
+    ports:
+      - "8080:80"
+    environment:
+      - FLAG=flag{3a4cc347-8475-46cd-9f3e-64b393749fd2}
