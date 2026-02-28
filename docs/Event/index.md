@@ -716,15 +716,6 @@ hide:
                 **赛事主办** : vulnbydefault (https://ctftime.org/team/423471)  
                 **添加日历** : https://ctftime.org/event/3135.ics  
                 
-            ??? Quote "[UniVsThreats 26 Quals CTF](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)"  
-                [![](https://ctftime.org/media/events/UniVsThreats26_Final_No_Sponsors_1.jpg){ width="200" align=left }](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)  
-                **比赛名称** : [UniVsThreats 26 Quals CTF](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-02-27 16:00:00 - 2026-02-28 16:00:00 UTC+8  
-                **比赛权重** : 18.35  
-                **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
-                **添加日历** : https://ctftime.org/event/3092.ics  
-                
             ??? Quote "[EHAX CTF 2026](https://ctf.ehax.in/)"  
                 [![](https://ctftime.org/media/events/EHAX_CTF_FINAL_LOGO_1.png){ width="200" align=left }](https://ctf.ehax.in/)  
                 **比赛名称** : [EHAX CTF 2026](https://ctf.ehax.in/)  
@@ -785,6 +776,15 @@ hide:
                 **其他说明** : 4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。  
                 
         === "国外赛事"
+            ??? Quote "[UniVsThreats 26 Quals CTF](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)"  
+                [![](https://ctftime.org/media/events/UniVsThreats26_Final_No_Sponsors_1.jpg){ width="200" align=left }](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)  
+                **比赛名称** : [UniVsThreats 26 Quals CTF](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-02-27 16:00:00 - 2026-02-28 16:00:00 UTC+8  
+                **比赛权重** : 18.35  
+                **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
+                **添加日历** : https://ctftime.org/event/3092.ics  
+                
             ??? Quote "[BearcatCTF 2026 - Setting Sail](https://bearcatctf.io/)"  
                 [![](https://ctftime.org/media/events/bearcat26_logo_black.png){ width="200" align=left }](https://bearcatctf.io/)  
                 **比赛名称** : [BearcatCTF 2026 - Setting Sail](https://bearcatctf.io/)  
@@ -1675,15 +1675,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : ISFCR PESU (https://ctftime.org/team/166645)  
                 **添加日历** : https://ctftime.org/event/2984.ics  
-                
-            ??? Quote "[Hackloween 2025](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)"  
-                [![](https://ctftime.org/media/events/SPG_Hackloween_2025__FB_Profile.png){ width="200" align=left }](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)  
-                **比赛名称** : [Hackloween 2025](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-01 10:00:00 - 2025-11-02 10:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : SECPlayground (https://ctftime.org/team/375409)  
-                **添加日历** : https://ctftime.org/event/2914.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
