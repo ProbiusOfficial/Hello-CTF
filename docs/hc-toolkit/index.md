@@ -344,6 +344,7 @@ hide:
 
     | 项目名称       | Usage | 项目地址 | 其他 |
     | ------------   | ----- | -------- | -------- |
+<<<<<<< HEAD
     | evilPather | pwn题的通防 | [Github](https://github.com/TTY-flag/evilPatcher) |
     | Prepare-for-AWD | 攻击和防御用脚本 | [Github](https://github.com/admintony/Prepare-for-AWD) |
     | 0rays-edr-filechecker | 文件监控器，防止别人传马 | [Github](https://github.com/christarcher/0RAYS-AWD-Filechecker) |
@@ -352,3 +353,13 @@ hide:
     | PWN WAF | pwn的通防，还能以牙还牙（大嘘 | [Github](https://github.com/i0gan/pwn_waf) |
     | 0E7 | AWD工具箱 | [Github](https://github.com/huangzheng2016/0E7) |
     | S4DFarm | Flag农场，用于管理flag和一件提交 | [Github](https://github.com/C4T-BuT-S4D/S4DFarm) |
+=======
+    | evilPather | pwn题的通防 ｜ [Github](https://github.com/TTY-flag/evilPatcher) |
+    | Prepare-for-AWD | 攻击和防御用脚本 | [Github](https://github.com/admintony/Prepare-for-AWD) |
+    | 0rays-edr-filechecker | 文件监控器，防止别人传马 | [Github](https://github.com/christarcher/0RAYS-AWD-Filechecker) |
+    | awf-watchbird | web题的通防 ｜ [Github](https://github.com/leohearts/awd-watchbird) |
+    | AoiAWD | 也是web题的通防 ｜ [Github](https://github.com/DasSecurity-HatLab/AoiAWD) |
+    | PWN WAF | pwn的通防，还能以牙还牙（大嘘 | [Github](https://github.com/i0gan/pwn_waf) |
+    | 0E7 | AWD工具箱 | [Github](https://github.com/huangzheng2016/0E7) |
+    | S4DFarm | Flag农场，用于管理flag和一件提交 ｜ [Github](https://github.com/C4T-BuT-S4D/S4DFarm) |
+>>>>>>> ed8b0517a1c58331266c2d1ad24d6e043c4cd58c
