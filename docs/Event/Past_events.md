@@ -132,7 +132,7 @@ comments: true
     **比赛名称** : [0xFUN CTF 2026](https://ctf.0xfun.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-02-13 02:00:00 - 2026-02-15 02:00:00 UTC+8  
-    **比赛权重** : 18.00  
+    **比赛权重** : 17.84  
     **赛事主办** : 0xFUN (https://ctftime.org/team/354033)  
     **添加日历** : https://ctftime.org/event/3081.ics  
     
@@ -312,7 +312,7 @@ comments: true
     **比赛名称** : [0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-01-23 21:00:00 - 2026-01-25 21:00:00 UTC+8  
-    **比赛权重** : 29.01  
+    **比赛权重** : 28.34  
     **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
     **添加日历** : https://ctftime.org/event/3024.ics  
     
@@ -384,7 +384,7 @@ comments: true
     **比赛名称** : [Scarlet CTF 2026](http://ctf.rusec.club/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-01-09 08:00:00 - 2026-01-12 08:00:00 UTC+8  
-    **比赛权重** : 22.88  
+    **比赛权重** : 22.95  
     **赛事主办** : ScarletCTF (https://ctftime.org/team/226444)  
     **添加日历** : https://ctftime.org/event/2981.ics  
     
