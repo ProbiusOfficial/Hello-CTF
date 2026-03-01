@@ -540,30 +540,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "SECCON CTF 14 International Finals",
-        "比赛时间": "2026-02-28 09:00:00 - 2026-03-01 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3106.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.seccon.jp/",
-        "比赛标志": "https://ctftime.org/media/events/seccon_s_11.png",
-        "比赛权重": "37.00",
-        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
-        "比赛ID": "92",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "SECCON CTF 14 Domestic Finals",
-        "比赛时间": "2026-02-28 09:00:00 - 2026-03-01 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3107.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.seccon.jp/",
-        "比赛标志": "https://ctftime.org/media/events/seccon_s_12.png",
-        "比赛权重": "37.00",
-        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
-        "比赛ID": "92",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Srdnlen CTF 2026 Quals",
         "比赛时间": "2026-03-01 02:00:00 - 2026-03-02 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3043.ics",
@@ -597,6 +573,30 @@
         "比赛权重": "0",
         "赛事主办": "CREST (https://ctftime.org/team/418000)",
         "比赛ID": "1469",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "SECCON CTF 14 International Finals",
+        "比赛时间": "2026-02-28 09:00:00 - 2026-03-01 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3106.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.seccon.jp/",
+        "比赛标志": "https://ctftime.org/media/events/seccon_s_11.png",
+        "比赛权重": "37.00",
+        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
+        "比赛ID": "92",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "SECCON CTF 14 Domestic Finals",
+        "比赛时间": "2026-02-28 09:00:00 - 2026-03-01 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3107.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.seccon.jp/",
+        "比赛标志": "https://ctftime.org/media/events/seccon_s_12.png",
+        "比赛权重": "37.00",
+        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
+        "比赛ID": "92",
         "比赛状态": "past"
     },
     {
@@ -1761,30 +1761,6 @@
         "比赛权重": "25.00",
         "赛事主办": "NYUSEC (https://ctftime.org/team/439)",
         "比赛ID": "19",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Ctrl+Space CTF Finals",
-        "比赛时间": "2025-11-04 17:00:00 - 2025-11-06 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2989.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctrl-space.gg/",
-        "比赛标志": "https://ctftime.org/media/events/ctrlspace_1_1.png",
-        "比赛权重": "25.00",
-        "赛事主办": "ESA (https://ctftime.org/team/391420)",
-        "比赛ID": "1375",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Russian CTF Cup 2025 Qualifier",
-        "比赛时间": "2025-11-02 17:00:00 - 2025-11-03 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2993.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfcup.ru/",
-        "比赛标志": "",
-        "比赛权重": "35.29",
-        "赛事主办": "ctfcup (https://ctftime.org/team/203499)",
-        "比赛ID": "864",
         "比赛状态": "past"
     }
 ]
