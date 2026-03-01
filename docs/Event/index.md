@@ -698,15 +698,6 @@ hide:
                 **赛事主办** : vulnbydefault (https://ctftime.org/team/423471)  
                 **添加日历** : https://ctftime.org/event/3135.ics  
                 
-            ??? Quote "[EHAX CTF 2026](https://ctf.ehax.in/)"  
-                [![](https://ctftime.org/media/events/EHAX_CTF_FINAL_LOGO_1.png){ width="200" align=left }](https://ctf.ehax.in/)  
-                **比赛名称** : [EHAX CTF 2026](https://ctf.ehax.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-02-28 02:30:00 - 2026-03-01 14:30:00 UTC+8  
-                **比赛权重** : 22.67  
-                **赛事主办** : EHAX (https://ctftime.org/team/270643)  
-                **添加日历** : https://ctftime.org/event/3127.ics  
-                
             ??? Quote "[SECCON CTF 14 International Finals](https://ctf.seccon.jp/)"  
                 [![](https://ctftime.org/media/events/seccon_s_11.png){ width="200" align=left }](https://ctf.seccon.jp/)  
                 **比赛名称** : [SECCON CTF 14 International Finals](https://ctf.seccon.jp/)  
@@ -775,6 +766,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : CREST (https://ctftime.org/team/418000)  
                 **添加日历** : https://ctftime.org/event/3123.ics  
+                
+            ??? Quote "[EHAX CTF 2026](https://ctf.ehax.in/)"  
+                [![](https://ctftime.org/media/events/EHAX_CTF_FINAL_LOGO_1.png){ width="200" align=left }](https://ctf.ehax.in/)  
+                **比赛名称** : [EHAX CTF 2026](https://ctf.ehax.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-02-28 02:30:00 - 2026-03-01 14:30:00 UTC+8  
+                **比赛权重** : 22.67  
+                **赛事主办** : EHAX (https://ctftime.org/team/270643)  
+                **添加日历** : https://ctftime.org/event/3127.ics  
                 
             ??? Quote "[UniVsThreats 26 Quals CTF](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)"  
                 [![](https://ctftime.org/media/events/UniVsThreats26_Final_No_Sponsors_1.jpg){ width="200" align=left }](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)  
@@ -1657,15 +1657,6 @@ hide:
                 **比赛权重** : 35.29  
                 **赛事主办** : ctfcup (https://ctftime.org/team/203499)  
                 **添加日历** : https://ctftime.org/event/2993.ics  
-                
-            ??? Quote "[N1CTF 2025](https://ctf2025.nu1l.com/)"  
-                [![](https://ctftime.org/media/events/logo2_5_2.png){ width="200" align=left }](https://ctf2025.nu1l.com/)  
-                **比赛名称** : [N1CTF 2025](https://ctf2025.nu1l.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-01 20:00:00 - 2025-11-02 20:00:00 UTC+8  
-                **比赛权重** : 94.50  
-                **赛事主办** : Nu1L (https://ctftime.org/team/19208)  
-                **添加日历** : https://ctftime.org/event/2795.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
