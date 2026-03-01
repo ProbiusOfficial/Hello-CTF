@@ -27,30 +27,21 @@ comments: true
     **赛事主办** : vulnbydefault (https://ctftime.org/team/423471)  
     **添加日历** : https://ctftime.org/event/3135.ics  
     
-??? Quote "[EHAX CTF 2026](https://ctf.ehax.in/)"  
-    [![](https://ctftime.org/media/events/EHAX_CTF_FINAL_LOGO_1.png){ width="200" align=left }](https://ctf.ehax.in/)  
-    **比赛名称** : [EHAX CTF 2026](https://ctf.ehax.in/)  
+??? Quote "[Srdnlen CTF 2026 Quals](https://ctf.srdnlen.it/)"  
+    [![](https://ctftime.org/media/events/e04b66f1d17c437f935e29d0fbe7beed_1.png){ width="200" align=left }](https://ctf.srdnlen.it/)  
+    **比赛名称** : [Srdnlen CTF 2026 Quals](https://ctf.srdnlen.it/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-28 02:30:00 - 2026-03-01 14:30:00 UTC+8  
-    **比赛权重** : 22.67  
-    **赛事主办** : EHAX (https://ctftime.org/team/270643)  
-    **添加日历** : https://ctftime.org/event/3127.ics  
+    **比赛时间** : 2026-03-01 02:00:00 - 2026-03-02 02:00:00 UTC+8  
+    **比赛权重** : 34.76  
+    **赛事主办** : Srdnlen (https://ctftime.org/team/83421)  
+    **添加日历** : https://ctftime.org/event/3043.ics  
     
-??? Quote "[SECCON CTF 14 International Finals](https://ctf.seccon.jp/)"  
-    [![](https://ctftime.org/media/events/seccon_s_11.png){ width="200" align=left }](https://ctf.seccon.jp/)  
-    **比赛名称** : [SECCON CTF 14 International Finals](https://ctf.seccon.jp/)  
+??? Quote "[CyberGame 2026](https://cybergame.sk/)"  
+    [![](https://ctftime.org/media/events/76a04fd5e7b9d834480d92fbf702f749.png){ width="200" align=left }](https://cybergame.sk/)  
+    **比赛名称** : [CyberGame 2026](https://cybergame.sk/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-28 09:00:00 - 2026-03-01 17:00:00 UTC+8  
-    **比赛权重** : 37.00  
-    **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
-    **添加日历** : https://ctftime.org/event/3106.ics  
-    
-??? Quote "[SECCON CTF 14 Domestic Finals](https://ctf.seccon.jp/)"  
-    [![](https://ctftime.org/media/events/seccon_s_12.png){ width="200" align=left }](https://ctf.seccon.jp/)  
-    **比赛名称** : [SECCON CTF 14 Domestic Finals](https://ctf.seccon.jp/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-28 09:00:00 - 2026-03-01 17:00:00 UTC+8  
-    **比赛权重** : 37.00  
-    **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
-    **添加日历** : https://ctftime.org/event/3107.ics  
+    **比赛时间** : 2026-03-01 07:00:00 - 2026-05-10 05:59:59 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
+    **添加日历** : https://ctftime.org/event/3142.ics  
     
