@@ -540,18 +540,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "EHAX CTF 2026",
-        "比赛时间": "2026-02-28 02:30:00 - 2026-03-01 14:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3127.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.ehax.in/",
-        "比赛标志": "https://ctftime.org/media/events/EHAX_CTF_FINAL_LOGO_1.png",
-        "比赛权重": "22.67",
-        "赛事主办": "EHAX (https://ctftime.org/team/270643)",
-        "比赛ID": "1244",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "SECCON CTF 14 International Finals",
         "比赛时间": "2026-02-28 09:00:00 - 2026-03-01 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3106.ics",
@@ -609,6 +597,18 @@
         "比赛权重": "0",
         "赛事主办": "CREST (https://ctftime.org/team/418000)",
         "比赛ID": "1469",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "EHAX CTF 2026",
+        "比赛时间": "2026-02-28 02:30:00 - 2026-03-01 14:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3127.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.ehax.in/",
+        "比赛标志": "https://ctftime.org/media/events/EHAX_CTF_FINAL_LOGO_1.png",
+        "比赛权重": "22.67",
+        "赛事主办": "EHAX (https://ctftime.org/team/270643)",
+        "比赛ID": "1244",
         "比赛状态": "past"
     },
     {
@@ -1785,18 +1785,6 @@
         "比赛权重": "35.29",
         "赛事主办": "ctfcup (https://ctftime.org/team/203499)",
         "比赛ID": "864",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "N1CTF 2025",
-        "比赛时间": "2025-11-01 20:00:00 - 2025-11-02 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2795.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf2025.nu1l.com/",
-        "比赛标志": "https://ctftime.org/media/events/logo2_5_2.png",
-        "比赛权重": "94.50",
-        "赛事主办": "Nu1L (https://ctftime.org/team/19208)",
-        "比赛ID": "240",
         "比赛状态": "past"
     }
 ]
