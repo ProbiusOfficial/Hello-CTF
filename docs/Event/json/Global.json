@@ -12,18 +12,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "ARA 7.0 CTF",
-        "比赛时间": "2026-03-04 17:00:00 - 2026-03-05 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3152.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://mirror.ara-its.id/",
-        "比赛标志": "https://ctftime.org/media/events/logo_ara_1.png",
-        "比赛权重": "0",
-        "赛事主办": "rizztechitits (https://ctftime.org/team/418688)",
-        "比赛ID": "1486",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "UNbreakable International 2026 - Team Phase",
         "比赛时间": "2026-03-06 17:00:00 - 2026-03-08 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3172.ics",
