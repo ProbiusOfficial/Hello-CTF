@@ -12,6 +12,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "ARA 7.0 CTF",
+        "比赛时间": "2026-03-05 17:00:00 - 2026-03-06 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3152.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://mirror.ara-its.id/",
+        "比赛标志": "https://ctftime.org/media/events/logo_ara_1.png",
+        "比赛权重": "0",
+        "赛事主办": "rizztechitits (https://ctftime.org/team/418688)",
+        "比赛ID": "1486",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "UNbreakable International 2026 - Team Phase",
         "比赛时间": "2026-03-06 17:00:00 - 2026-03-08 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3172.ics",
@@ -516,6 +528,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "MCTF 5.0",
+        "比赛时间": "2026-04-17 03:00:00 - 2026-04-18 15:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3168.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://mctf.microclub.info/",
+        "比赛标志": "https://ctftime.org/media/events/logo_122.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Micro Club (https://ctftime.org/team/425393)",
+        "比赛ID": "1521",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "CPCTF 2026",
         "比赛时间": "2026-04-17 19:00:00 - 2026-04-19 19:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3077.ics",
@@ -813,6 +837,18 @@
         "比赛权重": "0.00",
         "赛事主办": "NUS GreyHats (https://ctftime.org/team/16740)",
         "比赛ID": "778",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "No Hack No CTF 2026",
+        "比赛时间": "2026-07-04 08:00:00 - 2026-07-06 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3180.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nhnc.ic3dt3a.org/",
+        "比赛标志": "",
+        "比赛权重": "23.47",
+        "赛事主办": "ICEDTEA (https://ctftime.org/team/303514)",
+        "比赛ID": "1199",
         "比赛状态": "oncoming"
     },
     {
