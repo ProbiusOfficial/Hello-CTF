@@ -1230,7 +1230,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.batmans.kitchen/",
         "比赛标志": "https://ctftime.org/media/events/bklogo.png",
-        "比赛权重": "24.41",
+        "比赛权重": "24.43",
         "赛事主办": "Batman's Kitchen (https://ctftime.org/team/3135)",
         "比赛ID": "1495",
         "比赛状态": "past"
@@ -1446,7 +1446,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "http://www.hackforachange.org/",
         "比赛标志": "https://ctftime.org/media/events/logo_117.png",
-        "比赛权重": "12.54",
+        "比赛权重": "12.60",
         "赛事主办": "Hack for a Change (https://ctftime.org/team/419248)",
         "比赛ID": "1492",
         "比赛状态": "past"
