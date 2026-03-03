@@ -424,15 +424,6 @@ hide:
                 **赛事主办** : CyberHawks at UNG (https://ctftime.org/team/368776)  
                 **添加日历** : https://ctftime.org/event/3134.ics  
                 
-            ??? Quote "[WolvCTF 2026](https://wolvctf.io/)"  
-                [![](https://ctftime.org/media/events/wolverine-logo-square1_1.jpg){ width="200" align=left }](https://wolvctf.io/)  
-                **比赛名称** : [WolvCTF 2026](https://wolvctf.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-14 07:00:00 - 2026-03-16 07:00:00 UTC+8  
-                **比赛权重** : 65.35  
-                **赛事主办** : wolvsec (https://ctftime.org/team/83621)  
-                **添加日历** : https://ctftime.org/event/3049.ics  
-                
             ??? Quote "[SUCTF 2026](https://suctf2026.xctf.org.cn/)"  
                 [![](https://ctftime.org/media/events/SU.jpg){ width="200" align=left }](https://suctf2026.xctf.org.cn/)  
                 **比赛名称** : [SUCTF 2026](https://suctf2026.xctf.org.cn/)  
