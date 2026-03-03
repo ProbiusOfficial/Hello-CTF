@@ -441,6 +441,15 @@ comments: true
     **赛事主办** : b01lers (https://ctftime.org/team/11464)  
     **添加日历** : https://ctftime.org/event/3153.ics  
     
+??? Quote "[KubSTU CTF](https://kubstu-ctf.online/)"  
+    [![](https://ctftime.org/media/events/1233.png){ width="200" align=left }](https://kubstu-ctf.online/)  
+    **比赛名称** : [KubSTU CTF](https://kubstu-ctf.online/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-18 15:00:00 - 2026-04-20 03:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Capybaras (https://ctftime.org/team/223931)  
+    **添加日历** : https://ctftime.org/event/3177.ics  
+    
 ??? Quote "[pingCTF 2026](https://knping.pl/ctf)"  
     [![](https://ctftime.org/media/events/logo_121.png){ width="200" align=left }](https://knping.pl/ctf)  
     **比赛名称** : [pingCTF 2026](https://knping.pl/ctf)  
@@ -449,15 +458,6 @@ comments: true
     **比赛权重** : 46.20  
     **赛事主办** : pingCTF (https://ctftime.org/team/147266)  
     **添加日历** : https://ctftime.org/event/3147.ics  
-    
-??? Quote "[KubSTU CTF](https://kubstu-ctf.online/)"  
-    [![](https://ctftime.org/media/events/1233.png){ width="200" align=left }](https://kubstu-ctf.online/)  
-    **比赛名称** : [KubSTU CTF](https://kubstu-ctf.online/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-18 18:00:00 - 2026-04-20 06:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Capybaras (https://ctftime.org/team/223931)  
-    **添加日历** : https://ctftime.org/event/3177.ics  
     
 ??? Quote "[K!nd4SUS CTF 2026](https://ctf.k1nd4sus.it/)"  
     [![](https://ctftime.org/media/events/81649886.png){ width="200" align=left }](https://ctf.k1nd4sus.it/)  
