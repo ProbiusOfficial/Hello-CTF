@@ -249,12 +249,40 @@ nav:
 
     - Reverse | 逆向工程:
       - hc-reverse/index.md
-      - 引导篇：灵魂F&Q: hc-reverse/引导篇：灵魂F&Q.md
-      - Quick Start：可执行文件: hc-reverse/Quick Start：可执行文件.md
-      - Quick Start：ASM汇编: hc-reverse/Quick Start：ASM汇编.md
-      - Quick Start：Example problems: hc-reverse/Quick Start：Example problems.md
-      - 从零开始的IDA: hc-reverse/从零开始的IDA.md
-      - 从零开始的壳: hc-reverse/从零开始的壳.md
+      - 引导篇：灵魂FAQ: hc-reverse/引导篇：灵魂FAQ.md
+#      - Quick Start：Example problems: hc-reverse/Quick Start：Example problems.md #暂时弃用，确实没想好放在哪里合适
+      - 编译与可执行文件:
+        - C语言基础: hc-reverse/C语言基础.md
+        - 存储结构: hc-reverse/存储结构.md
+        - 可执行文件: hc-reverse/Quick Start：可执行文件.md
+      - 交互式反汇编工具IDA:
+        - 从零开始的IDA: hc-reverse/从零开始的IDA.md
+        - IDA动态调试: hc-reverse/IDA动态调试.md
+      - 常见算法:
+        - 基本运算: hc-reverse/基本运算.md
+        - 编码基础: hc-reverse/编码基础.md
+        - 字节流算法: hc-reverse/字节流算法.md
+        - 分组密码: hc-reverse/分组密码.md
+      - z3约束求解: hc-reverse/z3约束求解.md
+      - x86 汇编初步: hc-reverse/Quick Start：ASM汇编.md
+      - 代码保护与对抗:
+        - 花指令: hc-reverse/花指令.md
+        - 加壳: hc-reverse/从零开始的壳.md
+        - VM: hc-reverse/VM.md
+        - SMC: hc-reverse/SMC.md
+        - 异常处理: hc-reverse/异常处理.md
+        - 多线程: hc-reverse/多线程.md
+        - TLS回调函数: hc-reverse/TLS回调函数.md
+        - 反调试: hc-reverse/反调试.md
+        - 控制流平坦化: hc-reverse/控制流平坦化.md
+      - 符号执行: hc-reverse/符号执行.md
+      - 语言与框架:
+        - Python: hc-reverse/Python.md
+        - .NET: hc-reverse/NET.md
+        - Rust: hc-reverse/Rust.md
+        - JavaScript: hc-reverse/JavaScript.md
+      - Android平台: hc-reverse/Android.md
+      - 解题技巧: hc-reverse/解题技巧.md
 
     - Pwn | 二进制安全:
       - hc-pwn/index.md
