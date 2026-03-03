@@ -433,6 +433,15 @@ hide:
                 **赛事主办** : TPC (https://ctftime.org/team/222485)  
                 **添加日历** : https://ctftime.org/event/3091.ics  
                 
+            ??? Quote "[Dark ctf](https://crack-on.live/)"  
+                [![](){ width="200" align=left }](https://crack-on.live/)  
+                **比赛名称** : [Dark ctf](https://crack-on.live/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-14 14:30:00 - 2026-03-15 14:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Crakon  ctf (https://ctftime.org/team/426527)  
+                **添加日历** : https://ctftime.org/event/3182.ics  
+                
             ??? Quote "[MIPT CTF Quals 2026](https://board.miptctf.ru/)"  
                 [![](https://ctftime.org/media/events/miptctf.jpg){ width="200" align=left }](https://board.miptctf.ru/)  
                 **比赛名称** : [MIPT CTF Quals 2026](https://board.miptctf.ru/)  
@@ -558,6 +567,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Laokoon SecurITy (https://ctftime.org/team/201667)  
                 **添加日历** : https://ctftime.org/event/3084.ics  
+                
+            ??? Quote "[KAALCHAKRA CTF](http://kaalchakractf.com/)"  
+                [![](https://ctftime.org/media/events/CTF_Logo1.png){ width="200" align=left }](http://kaalchakractf.com/)  
+                **比赛名称** : [KAALCHAKRA CTF](http://kaalchakractf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-28 17:00:00 - 2026-03-29 17:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : TH3_RANG3RS (https://ctftime.org/team/406018)  
+                **添加日历** : https://ctftime.org/event/3183.ics  
                 
             ??? Quote "[VolgaCTF 2026 Qualifier](https://q.2026.volgactf.ru/)"  
                 [![](https://ctftime.org/media/events/logo-social-yellow_18.png){ width="200" align=left }](https://q.2026.volgactf.ru/)  
@@ -964,6 +982,15 @@ hide:
                 **赛事主办** : ScriptSorcerers (https://ctftime.org/team/284260)  
                 **添加日历** : https://ctftime.org/event/3052.ics  
                 
+            ??? Quote "[gaslightCTF 2026](https://gaslightctf.cooking/)"  
+                [![](https://ctftime.org/media/events/gas.png){ width="200" align=left }](https://gaslightctf.cooking/)  
+                **比赛名称** : [gaslightCTF 2026](https://gaslightctf.cooking/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-08-14 20:00:00 - 2026-08-17 20:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : gaslighting (https://ctftime.org/team/299906)  
+                **添加日历** : https://ctftime.org/event/3181.ics  
+                
             ??? Quote "[BrunnerCTF 2026](https://ctf.brunnerne.dk/)"  
                 [![](https://ctftime.org/media/events/Logo_-_2-7.png){ width="200" align=left }](https://ctf.brunnerne.dk/)  
                 **比赛名称** : [BrunnerCTF 2026](https://ctf.brunnerne.dk/)  
@@ -1017,6 +1044,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
                 **添加日历** : https://ctftime.org/event/3020.ics  
+                
+            ??? Quote "[WolvCTF 2026](https://wolvctf.io/)"  
+                [![](https://ctftime.org/media/events/wolverine-logo-square1_1.jpg){ width="200" align=left }](https://wolvctf.io/)  
+                **比赛名称** : [WolvCTF 2026](https://wolvctf.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-11-14 07:00:00 - 2026-11-16 07:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : wolvsec (https://ctftime.org/team/83621)  
+                **添加日历** : https://ctftime.org/event/3049.ics  
                 
             ??? Quote "[Platypwn 2026](https://platypwnies.de/events/platypwn/)"  
                 [![](https://ctftime.org/media/events/platypwnies-512_1_1.png){ width="200" align=left }](https://platypwnies.de/events/platypwn/)  
