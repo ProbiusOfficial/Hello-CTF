@@ -18,9 +18,9 @@ comments: true
     **赛事主办** : rizztechitits (https://ctftime.org/team/418688)  
     **添加日历** : https://ctftime.org/event/3152.ics  
     
-??? Quote "[CrytoNite CTF 2026](https://tachyon.iittp.ac.in/ctf/)"  
+??? Quote "[CryptoNite CTF 2026](https://tachyon.iittp.ac.in/ctf/)"  
     [![](){ width="200" align=left }](https://tachyon.iittp.ac.in/ctf/)  
-    **比赛名称** : [CrytoNite CTF 2026](https://tachyon.iittp.ac.in/ctf/)  
+    **比赛名称** : [CryptoNite CTF 2026](https://tachyon.iittp.ac.in/ctf/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-03-06 13:30:00 - 2026-03-07 19:30:00 UTC+8  
     **比赛权重** : 0.00  
