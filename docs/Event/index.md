@@ -298,6 +298,15 @@ hide:
                 **赛事主办** : rizztechitits (https://ctftime.org/team/418688)  
                 **添加日历** : https://ctftime.org/event/3152.ics  
                 
+            ??? Quote "[CrytoNite CTF 2026](https://tachyon.iittp.ac.in/ctf/)"  
+                [![](){ width="200" align=left }](https://tachyon.iittp.ac.in/ctf/)  
+                **比赛名称** : [CrytoNite CTF 2026](https://tachyon.iittp.ac.in/ctf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-06 13:30:00 - 2026-03-07 19:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : blackc4t5_og (https://ctftime.org/team/177031)  
+                **添加日历** : https://ctftime.org/event/3185.ics  
+                
             ??? Quote "[UNbreakable International 2026 - Team Phase](https://app.cyber-edu.co/competition/unr26t-international)"  
                 [![](https://ctftime.org/media/events/871e96a389ac3c21b9beab2096969903.jpg){ width="200" align=left }](https://app.cyber-edu.co/competition/unr26t-international)  
                 **比赛名称** : [UNbreakable International 2026 - Team Phase](https://app.cyber-edu.co/competition/unr26t-international)  
@@ -992,7 +1001,7 @@ hide:
                 **添加日历** : https://ctftime.org/event/3052.ics  
                 
             ??? Quote "[gaslightCTF 2026](https://gaslightctf.cooking/)"  
-                [![](https://ctftime.org/media/events/gas.png){ width="200" align=left }](https://gaslightctf.cooking/)  
+                [![](https://ctftime.org/media/events/icon_9.png){ width="200" align=left }](https://gaslightctf.cooking/)  
                 **比赛名称** : [gaslightCTF 2026](https://gaslightctf.cooking/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-08-14 20:00:00 - 2026-08-17 20:00:00 UTC+8  
