@@ -324,6 +324,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Stranger's CTF - Techtrix '26",
+        "比赛时间": "2026-03-26 15:30:00 - 2026-03-27 15:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3188.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://upsidectf.online/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "UpsideCTF (https://ctftime.org/team/426714)",
+        "比赛ID": "1535",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "TexSAW 2026",
         "比赛时间": "2026-03-27 20:00:00 - 2026-03-29 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3130.ics",
@@ -501,6 +513,18 @@
         "比赛权重": "25.00",
         "赛事主办": "Penn State CCSO (https://ctftime.org/team/367931)",
         "比赛ID": "1233",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Triada CTF '26",
+        "比赛时间": "2026-04-06 12:30:00 - 2026-04-07 12:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3187.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf26.triada.in/",
+        "比赛标志": "https://ctftime.org/media/events/ctftime_logo.png",
+        "比赛权重": "0",
+        "赛事主办": "Triada (https://ctftime.org/team/303057)",
+        "比赛ID": "1534",
         "比赛状态": "oncoming"
     },
     {

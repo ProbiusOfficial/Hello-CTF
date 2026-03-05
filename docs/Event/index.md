@@ -532,6 +532,15 @@ hide:
                 **赛事主办** : redfoxteam (https://ctftime.org/team/424518)  
                 **添加日历** : https://ctftime.org/event/3163.ics  
                 
+            ??? Quote "[Stranger's CTF - Techtrix '26](https://upsidectf.online/)"  
+                [![](){ width="200" align=left }](https://upsidectf.online/)  
+                **比赛名称** : [Stranger's CTF - Techtrix '26](https://upsidectf.online/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-26 15:30:00 - 2026-03-27 15:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : UpsideCTF (https://ctftime.org/team/426714)  
+                **添加日历** : https://ctftime.org/event/3188.ics  
+                
             ??? Quote "[TexSAW 2026]()"  
                 [![](){ width="200" align=left }]()  
                 **比赛名称** : [TexSAW 2026]()  
@@ -666,6 +675,15 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : Penn State CCSO (https://ctftime.org/team/367931)  
                 **添加日历** : https://ctftime.org/event/3042.ics  
+                
+            ??? Quote "[Triada CTF '26](http://ctf26.triada.in/)"  
+                [![](https://ctftime.org/media/events/ctftime_logo.png){ width="200" align=left }](http://ctf26.triada.in/)  
+                **比赛名称** : [Triada CTF '26](http://ctf26.triada.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-04-06 12:30:00 - 2026-04-07 12:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Triada (https://ctftime.org/team/303057)  
+                **添加日历** : https://ctftime.org/event/3187.ics  
                 
             ??? Quote "[Dreamhack Invitational 2026](https://dreamhack.io/)"  
                 [![](){ width="200" align=left }](https://dreamhack.io/)  
