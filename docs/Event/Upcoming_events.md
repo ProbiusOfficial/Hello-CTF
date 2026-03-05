@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[ARA 7.0 CTF](https://mirror.ara-its.id/)"  
-    [![](https://ctftime.org/media/events/logo_ara_1.png){ width="200" align=left }](https://mirror.ara-its.id/)  
-    **比赛名称** : [ARA 7.0 CTF](https://mirror.ara-its.id/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-05 17:00:00 - 2026-03-06 17:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : rizztechitits (https://ctftime.org/team/418688)  
-    **添加日历** : https://ctftime.org/event/3152.ics  
-    
 ??? Quote "[CryptoNite CTF 2026](https://tachyon.iittp.ac.in/ctf/)"  
     [![](){ width="200" align=left }](https://tachyon.iittp.ac.in/ctf/)  
     **比赛名称** : [CryptoNite CTF 2026](https://tachyon.iittp.ac.in/ctf/)  
@@ -306,9 +297,9 @@ comments: true
     **赛事主办** : Laokoon SecurITy (https://ctftime.org/team/201667)  
     **添加日历** : https://ctftime.org/event/3084.ics  
     
-??? Quote "[KAALCHAKRA CTF](http://kaalchakractf.com/)"  
-    [![](https://ctftime.org/media/events/CTF_Logo1.png){ width="200" align=left }](http://kaalchakractf.com/)  
-    **比赛名称** : [KAALCHAKRA CTF](http://kaalchakractf.com/)  
+??? Quote "[KAALCHAKRA CTF](https://kaalchakractf.com/)"  
+    [![](https://ctftime.org/media/events/CTF_Logo1.png){ width="200" align=left }](https://kaalchakractf.com/)  
+    **比赛名称** : [KAALCHAKRA CTF](https://kaalchakractf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-03-28 17:00:00 - 2026-03-29 17:00:00 UTC+8  
     **比赛权重** : 0.00  

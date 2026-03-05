@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "ARA 7.0 CTF",
-        "比赛时间": "2026-03-05 17:00:00 - 2026-03-06 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3152.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://mirror.ara-its.id/",
-        "比赛标志": "https://ctftime.org/media/events/logo_ara_1.png",
-        "比赛权重": "0",
-        "赛事主办": "rizztechitits (https://ctftime.org/team/418688)",
-        "比赛ID": "1486",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "CryptoNite CTF 2026",
         "比赛时间": "2026-03-06 13:30:00 - 2026-03-07 19:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3185.ics",
@@ -400,7 +388,7 @@
         "比赛时间": "2026-03-28 17:00:00 - 2026-03-29 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3183.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "http://kaalchakractf.com/",
+        "比赛链接": "https://kaalchakractf.com/",
         "比赛标志": "https://ctftime.org/media/events/CTF_Logo1.png",
         "比赛权重": "0.00",
         "赛事主办": "TH3_RANG3RS (https://ctftime.org/team/406018)",
@@ -1125,6 +1113,18 @@
         "比赛权重": "0",
         "赛事主办": "NFITS (https://ctftime.org/team/360674)",
         "比赛ID": "1200",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "ARA 7.0 CTF",
+        "比赛时间": "2026-03-05 17:00:00 - 2026-03-06 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3152.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://mirror.ara-its.id/",
+        "比赛标志": "https://ctftime.org/media/events/logo_ara_1.png",
+        "比赛权重": "0",
+        "赛事主办": "rizztechitits (https://ctftime.org/team/418688)",
+        "比赛ID": "1486",
         "比赛状态": "nowrunning"
     },
     {
