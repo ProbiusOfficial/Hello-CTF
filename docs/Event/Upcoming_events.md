@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[ApoorvCTF 2026](https://apoorvctf.iiitkottayam.ac.in/)"  
-    [![](https://ctftime.org/media/events/A5_-_98.png){ width="200" align=left }](https://apoorvctf.iiitkottayam.ac.in/)  
-    **比赛名称** : [ApoorvCTF 2026](https://apoorvctf.iiitkottayam.ac.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-07 05:00:00 - 2026-03-09 05:00:00 UTC+8  
-    **比赛权重** : 24.10  
-    **赛事主办** : r3d_kn1ght5 (https://ctftime.org/team/212248)  
-    **添加日历** : https://ctftime.org/event/3171.ics  
-    
 ??? Quote "[Axiom CTF 2026](https://ctf.4x10m.ru/)"  
     [![](https://ctftime.org/media/events/Frame_1.png){ width="200" align=left }](https://ctf.4x10m.ru/)  
     **比赛名称** : [Axiom CTF 2026](https://ctf.4x10m.ru/)  

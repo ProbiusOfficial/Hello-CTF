@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[ApoorvCTF 2026](https://apoorvctf.iiitkottayam.ac.in/)"  
-            [![](https://ctftime.org/media/events/A5_-_98.png){ width="200" align=left }](https://apoorvctf.iiitkottayam.ac.in/)  
-            **比赛名称** : [ApoorvCTF 2026](https://apoorvctf.iiitkottayam.ac.in/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-07 05:00:00 - 2026-03-09 05:00:00 UTC+8  
-            **比赛权重** : 24.10  
-            **赛事主办** : r3d_kn1ght5 (https://ctftime.org/team/212248)  
-            **添加日历** : https://ctftime.org/event/3171.ics  
-            
         ??? Quote "[Axiom CTF 2026](https://ctf.4x10m.ru/)"  
             [![](https://ctftime.org/media/events/Frame_1.png){ width="200" align=left }](https://ctf.4x10m.ru/)  
             **比赛名称** : [Axiom CTF 2026](https://ctf.4x10m.ru/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 18.57  
             **赛事主办** : code-vinci (https://ctftime.org/team/365817)  
             **添加日历** : https://ctftime.org/event/3101.ics  
+            
+        ??? Quote "[@Hack 2026](https://athackctf.com/)"  
+            [![](https://ctftime.org/media/events/athack_logo.png){ width="200" align=left }](https://athackctf.com/)  
+            **比赛名称** : [@Hack 2026](https://athackctf.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-07 22:00:00 - 2026-03-09 03:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
+            **添加日历** : https://ctftime.org/event/3027.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
