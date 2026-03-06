@@ -63,3 +63,12 @@ comments: true
     **赛事主办** : bitsentinel (https://ctftime.org/team/280005)  
     **添加日历** : https://ctftime.org/event/3172.ics  
     
+??? Quote "[APort Vault CTF - Can You Move the Money?](https://vault.aport.io/)"  
+    [![](https://ctftime.org/media/events/aport-logo.png){ width="200" align=left }](https://vault.aport.io/)  
+    **比赛名称** : [APort Vault CTF - Can You Move the Money?](https://vault.aport.io/)  
+    **比赛形式** : Hack quest  
+    **比赛时间** : 2026-03-06 20:00:00 - 2026-03-11 20:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : APort (https://ctftime.org/team/425773)  
+    **添加日历** : https://ctftime.org/event/3176.ics  
+    

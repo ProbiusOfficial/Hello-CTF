@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "APort Vault CTF - Can You Move the Money?",
-        "比赛时间": "2026-03-06 20:00:00 - 2026-03-11 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3176.ics",
-        "比赛形式": "Hack quest",
-        "比赛链接": "https://vault.aport.io/",
-        "比赛标志": "https://ctftime.org/media/events/aport-logo.png",
-        "比赛权重": "0.00",
-        "赛事主办": "APort (https://ctftime.org/team/425773)",
-        "比赛ID": "1527",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "ApoorvCTF 2026",
         "比赛时间": "2026-03-07 05:00:00 - 2026-03-09 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3171.ics",
@@ -1149,6 +1137,18 @@
         "比赛权重": "0",
         "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
         "比赛ID": "1064",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "APort Vault CTF - Can You Move the Money?",
+        "比赛时间": "2026-03-06 20:00:00 - 2026-03-11 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3176.ics",
+        "比赛形式": "Hack quest",
+        "比赛链接": "https://vault.aport.io/",
+        "比赛标志": "https://ctftime.org/media/events/aport-logo.png",
+        "比赛权重": "0.00",
+        "赛事主办": "APort (https://ctftime.org/team/425773)",
+        "比赛ID": "1527",
         "比赛状态": "nowrunning"
     },
     {
