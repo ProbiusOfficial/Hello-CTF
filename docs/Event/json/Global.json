@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "CryptoNite CTF 2026",
-        "比赛时间": "2026-03-06 13:30:00 - 2026-03-07 19:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3185.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://tachyon.iittp.ac.in/ctf/",
-        "比赛标志": "",
-        "比赛权重": "0.00",
-        "赛事主办": "blackc4t5_og (https://ctftime.org/team/177031)",
-        "比赛ID": "1532",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "UNbreakable International 2026 - Team Phase",
         "比赛时间": "2026-03-06 17:00:00 - 2026-03-08 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3172.ics",
@@ -1161,6 +1149,18 @@
         "比赛权重": "0",
         "赛事主办": "rizztechitits (https://ctftime.org/team/418688)",
         "比赛ID": "1486",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CryptoNite CTF 2026",
+        "比赛时间": "2026-03-06 13:30:00 - 2026-03-07 19:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3185.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://tachyon.iittp.ac.in/ctf/",
+        "比赛标志": "",
+        "比赛权重": "0",
+        "赛事主办": "blackc4t5_og (https://ctftime.org/team/177031)",
+        "比赛ID": "1532",
         "比赛状态": "nowrunning"
     },
     {
