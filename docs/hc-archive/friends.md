@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [某FPS游戏反作弊分析](https://xia0ji233.github.io/2026/03/05/Game7/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2026-03-05
+
+    由于该FPS游戏版本变动较大，且 CVE-2025-45737 已经公开，遂公开之前分析。上来先开驱动。R0分析DriverEntry逻辑结论DriverEntry按顺序执行以下逻辑获取MmGetVirtualForPhysical地址特征码判断反hook反模拟器MmGetSystemRoutineAddress获取了一系列API获取ntoskrnl.exe地址并解析读取KeServiceDesc...
     ### [腾讯游戏安全竞赛2025复赛题解（加强版）](https://xia0ji233.github.io/2026/01/24/tencent-race-2025-final_2/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2026-01-24
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2025-07-02
 
     d5bbf63b983168fb9cf0422698dce164b3b689fc252cba3faf3c75a652cdd7c0542690352b3ccfd95568bcdfd22e06b269ecaac13fedf5ec80edcfabe636ba58c0bd7707365d4cb09a79587d7876384f00fb8b2d3df17b696f7eefba94b5c2d66b93ca...
-    ### [浅析Gogs 远程命令执行(CVE-2024-56731)](https://y4tacker.github.io/2025/06/25/year/2025/06/%E6%B5%85%E6%9E%90Gogs-%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-CVE-2024-56731/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2025-06-25
-
-    61250ef0d935a4a9d2eb682839325b52407d6a12bdde2eb831889d10036bea8106e2cbab4d0545b5551fe1a0fea6f3d58b8ee44d7110304bee8ff7333000d35c5b12e6d6807bdab93f096bd15b0c005660b70215b08b001ec238e70442e03904450ea3...
 
 </div>
