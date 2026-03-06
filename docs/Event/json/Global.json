@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "UNbreakable International 2026 - Team Phase",
-        "比赛时间": "2026-03-06 17:00:00 - 2026-03-08 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3172.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://app.cyber-edu.co/competition/unr26t-international",
-        "比赛标志": "https://ctftime.org/media/events/871e96a389ac3c21b9beab2096969903.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
-        "比赛ID": "1064",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "APort Vault CTF - Can You Move the Money?",
         "比赛时间": "2026-03-06 20:00:00 - 2026-03-11 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3176.ics",
@@ -1140,18 +1128,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "ARA 7.0 CTF",
-        "比赛时间": "2026-03-05 17:00:00 - 2026-03-06 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3152.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://mirror.ara-its.id/",
-        "比赛标志": "https://ctftime.org/media/events/logo_ara_1.png",
-        "比赛权重": "0",
-        "赛事主办": "rizztechitits (https://ctftime.org/team/418688)",
-        "比赛ID": "1486",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "CryptoNite CTF 2026",
         "比赛时间": "2026-03-06 13:30:00 - 2026-03-07 19:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3185.ics",
@@ -1162,6 +1138,30 @@
         "赛事主办": "blackc4t5_og (https://ctftime.org/team/177031)",
         "比赛ID": "1532",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "UNbreakable International 2026 - Team Phase",
+        "比赛时间": "2026-03-06 17:00:00 - 2026-03-08 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3172.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://app.cyber-edu.co/competition/unr26t-international",
+        "比赛标志": "https://ctftime.org/media/events/871e96a389ac3c21b9beab2096969903.jpg",
+        "比赛权重": "0",
+        "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
+        "比赛ID": "1064",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "ARA 7.0 CTF",
+        "比赛时间": "2026-03-05 17:00:00 - 2026-03-06 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3152.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://mirror.ara-its.id/",
+        "比赛标志": "https://ctftime.org/media/events/logo_ara_1.png",
+        "比赛权重": "0",
+        "赛事主办": "rizztechitits (https://ctftime.org/team/418688)",
+        "比赛ID": "1486",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "KI CTF 2026",
@@ -2349,18 +2349,6 @@
         "比赛权重": "50.00",
         "赛事主办": "scriptohio (https://ctftime.org/team/144581)",
         "比赛ID": "667",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Infobahn CTF 2025",
-        "比赛时间": "2025-11-08 01:00:00 - 2025-11-10 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2878.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2025.infobahnc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/mW45GaxJ_400x400.jpg",
-        "比赛权重": "25.00",
-        "赛事主办": "Infobahn (https://ctftime.org/team/364723)",
-        "比赛ID": "1379",
         "比赛状态": "past"
     }
 ]

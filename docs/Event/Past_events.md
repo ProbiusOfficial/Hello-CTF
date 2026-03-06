@@ -28,6 +28,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[ARA 7.0 CTF](https://mirror.ara-its.id/)"  
+    [![](https://ctftime.org/media/events/logo_ara_1.png){ width="200" align=left }](https://mirror.ara-its.id/)  
+    **比赛名称** : [ARA 7.0 CTF](https://mirror.ara-its.id/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-05 17:00:00 - 2026-03-06 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : rizztechitits (https://ctftime.org/team/418688)  
+    **添加日历** : https://ctftime.org/event/3152.ics  
+    
 ??? Quote "[KI CTF 2026](https://cyberconclave.yugam.in/)"  
     [![](https://ctftime.org/media/events/cyber-conclave-ki-ctf_1.png){ width="200" align=left }](https://cyberconclave.yugam.in/)  
     **比赛名称** : [KI CTF 2026](https://cyberconclave.yugam.in/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 50.00  
     **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
     **添加日历** : https://ctftime.org/event/2883.ics  
-    
-??? Quote "[Infobahn CTF 2025](https://2025.infobahnc.tf/)"  
-    [![](https://ctftime.org/media/events/mW45GaxJ_400x400.jpg){ width="200" align=left }](https://2025.infobahnc.tf/)  
-    **比赛名称** : [Infobahn CTF 2025](https://2025.infobahnc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-08 01:00:00 - 2025-11-10 01:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : Infobahn (https://ctftime.org/team/364723)  
-    **添加日历** : https://ctftime.org/event/2878.ics  
     

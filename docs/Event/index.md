@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[UNbreakable International 2026 - Team Phase](https://app.cyber-edu.co/competition/unr26t-international)"  
-                [![](https://ctftime.org/media/events/871e96a389ac3c21b9beab2096969903.jpg){ width="200" align=left }](https://app.cyber-edu.co/competition/unr26t-international)  
-                **比赛名称** : [UNbreakable International 2026 - Team Phase](https://app.cyber-edu.co/competition/unr26t-international)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-06 17:00:00 - 2026-03-08 17:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : bitsentinel (https://ctftime.org/team/280005)  
-                **添加日历** : https://ctftime.org/event/3172.ics  
-                
             ??? Quote "[APort Vault CTF - Can You Move the Money?](https://vault.aport.io/)"  
                 [![](https://ctftime.org/media/events/aport-logo.png){ width="200" align=left }](https://vault.aport.io/)  
                 **比赛名称** : [APort Vault CTF - Can You Move the Money?](https://vault.aport.io/)  
@@ -1148,15 +1139,6 @@ hide:
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2907.ics  
                 
-            ??? Quote "[ARA 7.0 CTF](https://mirror.ara-its.id/)"  
-                [![](https://ctftime.org/media/events/logo_ara_1.png){ width="200" align=left }](https://mirror.ara-its.id/)  
-                **比赛名称** : [ARA 7.0 CTF](https://mirror.ara-its.id/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-05 17:00:00 - 2026-03-06 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : rizztechitits (https://ctftime.org/team/418688)  
-                **添加日历** : https://ctftime.org/event/3152.ics  
-                
             ??? Quote "[CryptoNite CTF 2026](https://tachyon.iittp.ac.in/ctf/)"  
                 [![](){ width="200" align=left }](https://tachyon.iittp.ac.in/ctf/)  
                 **比赛名称** : [CryptoNite CTF 2026](https://tachyon.iittp.ac.in/ctf/)  
@@ -1165,6 +1147,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : blackc4t5_og (https://ctftime.org/team/177031)  
                 **添加日历** : https://ctftime.org/event/3185.ics  
+                
+            ??? Quote "[UNbreakable International 2026 - Team Phase](https://app.cyber-edu.co/competition/unr26t-international)"  
+                [![](https://ctftime.org/media/events/871e96a389ac3c21b9beab2096969903.jpg){ width="200" align=left }](https://app.cyber-edu.co/competition/unr26t-international)  
+                **比赛名称** : [UNbreakable International 2026 - Team Phase](https://app.cyber-edu.co/competition/unr26t-international)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-06 17:00:00 - 2026-03-08 17:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : bitsentinel (https://ctftime.org/team/280005)  
+                **添加日历** : https://ctftime.org/event/3172.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -1190,6 +1181,15 @@ hide:
                 **其他说明** : 4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。  
                 
         === "国外赛事"
+            ??? Quote "[ARA 7.0 CTF](https://mirror.ara-its.id/)"  
+                [![](https://ctftime.org/media/events/logo_ara_1.png){ width="200" align=left }](https://mirror.ara-its.id/)  
+                **比赛名称** : [ARA 7.0 CTF](https://mirror.ara-its.id/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-05 17:00:00 - 2026-03-06 17:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : rizztechitits (https://ctftime.org/team/418688)  
+                **添加日历** : https://ctftime.org/event/3152.ics  
+                
             ??? Quote "[KI CTF 2026](https://cyberconclave.yugam.in/)"  
                 [![](https://ctftime.org/media/events/cyber-conclave-ki-ctf_1.png){ width="200" align=left }](https://cyberconclave.yugam.in/)  
                 **比赛名称** : [KI CTF 2026](https://cyberconclave.yugam.in/)  
@@ -2080,15 +2080,6 @@ hide:
                 **比赛权重** : 50.00  
                 **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
                 **添加日历** : https://ctftime.org/event/2883.ics  
-                
-            ??? Quote "[Infobahn CTF 2025](https://2025.infobahnc.tf/)"  
-                [![](https://ctftime.org/media/events/mW45GaxJ_400x400.jpg){ width="200" align=left }](https://2025.infobahnc.tf/)  
-                **比赛名称** : [Infobahn CTF 2025](https://2025.infobahnc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-08 01:00:00 - 2025-11-10 01:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : Infobahn (https://ctftime.org/team/364723)  
-                **添加日历** : https://ctftime.org/event/2878.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
