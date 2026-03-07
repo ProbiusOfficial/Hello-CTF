@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "DiceCTF 2026 Quals",
-        "比赛时间": "2026-03-08 01:00:00 - 2026-03-09 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3110.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.dicega.ng/",
-        "比赛标志": "https://ctftime.org/media/events/dice.png",
-        "比赛权重": "100.00",
-        "赛事主办": "DiceGang (https://ctftime.org/team/109452)",
-        "比赛ID": "568",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "ShellCTF",
         "比赛时间": "2026-03-08 14:30:00 - 2026-03-08 18:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3170.ics",
@@ -45,6 +33,18 @@
         "比赛权重": "35.20",
         "赛事主办": "isss (https://ctftime.org/team/69010)",
         "比赛ID": "281",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "RedShift.ZeroPlusCTF-3",
+        "比赛时间": "2026-03-13 20:00:00 - 2026-03-15 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3191.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://redshiftctf.ru/",
+        "比赛标志": "https://ctftime.org/media/events/b00d5118-7ef3-4a84-92f4-a0929baae219_1.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "o1d_bu7_go1d (https://ctftime.org/team/213673)",
+        "比赛ID": "1179",
         "比赛状态": "oncoming"
     },
     {
@@ -1137,6 +1137,18 @@
         "比赛权重": "18.57",
         "赛事主办": "code-vinci (https://ctftime.org/team/365817)",
         "比赛ID": "1225",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "DiceCTF 2026 Quals",
+        "比赛时间": "2026-03-08 01:00:00 - 2026-03-09 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3110.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.dicega.ng/",
+        "比赛标志": "https://ctftime.org/media/events/dice.png",
+        "比赛权重": "100.00",
+        "赛事主办": "DiceGang (https://ctftime.org/team/109452)",
+        "比赛ID": "568",
         "比赛状态": "nowrunning"
     },
     {
