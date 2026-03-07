@@ -81,3 +81,12 @@ comments: true
     **赛事主办** : r3d_kn1ght5 (https://ctftime.org/team/212248)  
     **添加日历** : https://ctftime.org/event/3171.ics  
     
+??? Quote "[Axiom CTF 2026](https://ctf.4x10m.ru/)"  
+    [![](https://ctftime.org/media/events/Frame_1.png){ width="200" align=left }](https://ctf.4x10m.ru/)  
+    **比赛名称** : [Axiom CTF 2026](https://ctf.4x10m.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-07 15:00:00 - 2026-03-09 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : 4x10m (https://ctftime.org/team/418607)  
+    **添加日历** : https://ctftime.org/event/3129.ics  
+    
