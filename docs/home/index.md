@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[upCTF 2026](https://ctf.xstf.pt/)"  
-            [![](https://ctftime.org/media/events/logo_yellow_1.png){ width="200" align=left }](https://ctf.xstf.pt/)  
-            **比赛名称** : [upCTF 2026](https://ctf.xstf.pt/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-07 17:00:00 - 2026-03-09 17:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : xSTF (https://ctftime.org/team/15341)  
-            **添加日历** : https://ctftime.org/event/3073.ics  
-            
         ??? Quote "[CodeVinci CTF 2026](https://challs.codevinci.it/)"  
             [![](https://ctftime.org/media/events/Logo_.png){ width="200" align=left }](https://challs.codevinci.it/)  
             **比赛名称** : [CodeVinci CTF 2026](https://challs.codevinci.it/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 100.00  
             **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
             **添加日历** : https://ctftime.org/event/3110.ics  
+            
+        ??? Quote "[ShellCTF](https://shellctf.me/)"  
+            [![](https://ctftime.org/media/events/shell-ctf-icon.jpg){ width="200" align=left }](https://shellctf.me/)  
+            **比赛名称** : [ShellCTF](https://shellctf.me/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-08 14:30:00 - 2026-03-08 18:30:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Utopains (https://ctftime.org/team/408650)  
+            **添加日历** : https://ctftime.org/event/3170.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
