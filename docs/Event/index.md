@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[DiceCTF 2026 Quals](https://ctf.dicega.ng/)"  
-                [![](https://ctftime.org/media/events/dice.png){ width="200" align=left }](https://ctf.dicega.ng/)  
-                **比赛名称** : [DiceCTF 2026 Quals](https://ctf.dicega.ng/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-08 01:00:00 - 2026-03-09 01:00:00 UTC+8  
-                **比赛权重** : 100.00  
-                **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
-                **添加日历** : https://ctftime.org/event/3110.ics  
-                
             ??? Quote "[ShellCTF](https://shellctf.me/)"  
                 [![](https://ctftime.org/media/events/shell-ctf-icon.jpg){ width="200" align=left }](https://shellctf.me/)  
                 **比赛名称** : [ShellCTF](https://shellctf.me/)  
@@ -324,6 +315,15 @@ hide:
                 **比赛权重** : 35.20  
                 **赛事主办** : isss (https://ctftime.org/team/69010)  
                 **添加日历** : https://ctftime.org/event/3133.ics  
+                
+            ??? Quote "[RedShift.ZeroPlusCTF-3](https://redshiftctf.ru/)"  
+                [![](https://ctftime.org/media/events/b00d5118-7ef3-4a84-92f4-a0929baae219_1.jpg){ width="200" align=left }](https://redshiftctf.ru/)  
+                **比赛名称** : [RedShift.ZeroPlusCTF-3](https://redshiftctf.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-13 20:00:00 - 2026-03-15 20:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
+                **添加日历** : https://ctftime.org/event/3191.ics  
                 
             ??? Quote "[PsychCTF 2026](https://psychctf.xyz/)"  
                 [![](https://ctftime.org/media/events/SAIC_logo_icon_min.png){ width="200" align=left }](https://psychctf.xyz/)  
@@ -396,6 +396,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Interpoly (https://ctftime.org/team/424494)  
                 **添加日历** : https://ctftime.org/event/3165.ics  
+                
+            ??? Quote "[CyberCup Indian Ocean 2026 – Team Edition | Step2](https://cybercup.ocoi.org/)"  
+                [![](https://ctftime.org/media/events/logo2_10.png){ width="200" align=left }](https://cybercup.ocoi.org/)  
+                **比赛名称** : [CyberCup Indian Ocean 2026 – Team Edition | Step2](https://cybercup.ocoi.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-18 13:00:00 - 2026-03-18 22:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Hacking Indian Ocean (https://ctftime.org/team/399138)  
+                **添加日历** : https://ctftime.org/event/3189.ics  
                 
             ??? Quote "[Insomni'hack 2026](https://insomnihack.ch/contest/)"  
                 [![](){ width="200" align=left }](https://insomnihack.ch/contest/)  
@@ -1139,14 +1148,14 @@ hide:
                 **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
                 **添加日历** : https://ctftime.org/event/3027.ics  
                 
-            ??? Quote "[CodeVinci CTF 2026](https://challs.codevinci.it/)"  
-                [![](https://ctftime.org/media/events/Logo_.png){ width="200" align=left }](https://challs.codevinci.it/)  
-                **比赛名称** : [CodeVinci CTF 2026](https://challs.codevinci.it/)  
+            ??? Quote "[DiceCTF 2026 Quals](https://ctf.dicega.ng/)"  
+                [![](https://ctftime.org/media/events/dice.png){ width="200" align=left }](https://ctf.dicega.ng/)  
+                **比赛名称** : [DiceCTF 2026 Quals](https://ctf.dicega.ng/)  
                 **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-07 22:00:00 - 2026-03-08 03:00:00 UTC+8  
-                **比赛权重** : 18.57  
-                **赛事主办** : code-vinci (https://ctftime.org/team/365817)  
-                **添加日历** : https://ctftime.org/event/3101.ics  
+                **比赛时间** : 2026-03-08 01:00:00 - 2026-03-09 01:00:00 UTC+8  
+                **比赛权重** : 100.00  
+                **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
+                **添加日历** : https://ctftime.org/event/3110.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -1172,6 +1181,15 @@ hide:
                 **其他说明** : 4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。  
                 
         === "国外赛事"
+            ??? Quote "[CodeVinci CTF 2026](https://challs.codevinci.it/)"  
+                [![](https://ctftime.org/media/events/Logo_.png){ width="200" align=left }](https://challs.codevinci.it/)  
+                **比赛名称** : [CodeVinci CTF 2026](https://challs.codevinci.it/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-07 22:00:00 - 2026-03-08 03:00:00 UTC+8  
+                **比赛权重** : 18.57  
+                **赛事主办** : code-vinci (https://ctftime.org/team/365817)  
+                **添加日历** : https://ctftime.org/event/3101.ics  
+                
             ??? Quote "[CryptoNite CTF 2026](https://tachyon.iittp.ac.in/ctf/)"  
                 [![](){ width="200" align=left }](https://tachyon.iittp.ac.in/ctf/)  
                 **比赛名称** : [CryptoNite CTF 2026](https://tachyon.iittp.ac.in/ctf/)  
@@ -2062,15 +2080,6 @@ hide:
                 **比赛权重** : 97.22  
                 **赛事主办** : saarsec (https://ctftime.org/team/15337)  
                 **添加日历** : https://ctftime.org/event/2859.ics  
-                
-            ??? Quote "[Equinor CTF 2025](https://ctf.equinor.com/)"  
-                [![](https://ctftime.org/media/events/ept_2.png){ width="200" align=left }](https://ctf.equinor.com/)  
-                **比赛名称** : [Equinor CTF 2025](https://ctf.equinor.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-08 17:00:00 - 2025-11-09 03:00:00 UTC+8  
-                **比赛权重** : 37.00  
-                **赛事主办** : EPT (https://ctftime.org/team/119480)  
-                **添加日历** : https://ctftime.org/event/2646.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
