@@ -1080,18 +1080,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CryptoNite CTF 2026",
-        "比赛时间": "2026-03-06 13:30:00 - 2026-03-07 19:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3185.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://tachyon.iittp.ac.in/ctf/",
-        "比赛标志": "",
-        "比赛权重": "0",
-        "赛事主办": "blackc4t5_og (https://ctftime.org/team/177031)",
-        "比赛ID": "1532",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "UNbreakable International 2026 - Team Phase",
         "比赛时间": "2026-03-06 17:00:00 - 2026-03-08 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3172.ics",
@@ -1152,6 +1140,18 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "CryptoNite CTF 2026",
+        "比赛时间": "2026-03-06 13:30:00 - 2026-03-07 19:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3185.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://tachyon.iittp.ac.in/ctf/",
+        "比赛标志": "",
+        "比赛权重": "0",
+        "赛事主办": "blackc4t5_og (https://ctftime.org/team/177031)",
+        "比赛ID": "1532",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "ARA 7.0 CTF",
         "比赛时间": "2026-03-05 17:00:00 - 2026-03-06 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3152.ics",
@@ -1206,7 +1206,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://crestpcu.in/",
         "比赛标志": "https://ctftime.org/media/events/crest_logo.jpeg",
-        "比赛权重": "0",
+        "比赛权重": "6.00",
         "赛事主办": "CREST (https://ctftime.org/team/418000)",
         "比赛ID": "1469",
         "比赛状态": "past"
@@ -2337,18 +2337,6 @@
         "比赛权重": "37.00",
         "赛事主办": "EPT (https://ctftime.org/team/119480)",
         "比赛ID": "697",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BuckeyeCTF 2025",
-        "比赛时间": "2025-11-08 09:00:00 - 2025-11-10 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2883.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.osucyber.club/",
-        "比赛标志": "https://ctftime.org/media/events/buckeyectf-25-logo_1.jpg",
-        "比赛权重": "50.00",
-        "赛事主办": "scriptohio (https://ctftime.org/team/144581)",
-        "比赛ID": "667",
         "比赛状态": "past"
     }
 ]

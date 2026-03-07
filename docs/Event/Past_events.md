@@ -28,6 +28,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[CryptoNite CTF 2026](https://tachyon.iittp.ac.in/ctf/)"  
+    [![](){ width="200" align=left }](https://tachyon.iittp.ac.in/ctf/)  
+    **比赛名称** : [CryptoNite CTF 2026](https://tachyon.iittp.ac.in/ctf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-06 13:30:00 - 2026-03-07 19:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : blackc4t5_og (https://ctftime.org/team/177031)  
+    **添加日历** : https://ctftime.org/event/3185.ics  
+    
 ??? Quote "[ARA 7.0 CTF](https://mirror.ara-its.id/)"  
     [![](https://ctftime.org/media/events/logo_ara_1.png){ width="200" align=left }](https://mirror.ara-its.id/)  
     **比赛名称** : [ARA 7.0 CTF](https://mirror.ara-its.id/)  
@@ -69,7 +78,7 @@ comments: true
     **比赛名称** : [CREST CTF](https://crestpcu.in/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-02-28 12:30:00 - 2026-02-28 20:30:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 6.00  
     **赛事主办** : CREST (https://ctftime.org/team/418000)  
     **添加日历** : https://ctftime.org/event/3123.ics  
     
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 37.00  
     **赛事主办** : EPT (https://ctftime.org/team/119480)  
     **添加日历** : https://ctftime.org/event/2646.ics  
-    
-??? Quote "[BuckeyeCTF 2025](https://ctf.osucyber.club/)"  
-    [![](https://ctftime.org/media/events/buckeyectf-25-logo_1.jpg){ width="200" align=left }](https://ctf.osucyber.club/)  
-    **比赛名称** : [BuckeyeCTF 2025](https://ctf.osucyber.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-08 09:00:00 - 2025-11-10 09:00:00 UTC+8  
-    **比赛权重** : 50.00  
-    **赛事主办** : scriptohio (https://ctftime.org/team/144581)  
-    **添加日历** : https://ctftime.org/event/2883.ics  
     
