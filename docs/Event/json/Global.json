@@ -1056,18 +1056,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "UNbreakable International 2026 - Team Phase",
-        "比赛时间": "2026-03-06 17:00:00 - 2026-03-08 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3172.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://app.cyber-edu.co/competition/unr26t-international",
-        "比赛标志": "https://ctftime.org/media/events/871e96a389ac3c21b9beab2096969903.jpg",
-        "比赛权重": "0",
-        "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
-        "比赛ID": "1064",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "APort Vault CTF - Can You Move the Money?",
         "比赛时间": "2026-03-06 20:00:00 - 2026-03-11 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3176.ics",
@@ -1161,6 +1149,18 @@
         "比赛权重": "18.57",
         "赛事主办": "code-vinci (https://ctftime.org/team/365817)",
         "比赛ID": "1225",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "UNbreakable International 2026 - Team Phase",
+        "比赛时间": "2026-03-06 17:00:00 - 2026-03-08 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3172.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://app.cyber-edu.co/competition/unr26t-international",
+        "比赛标志": "https://ctftime.org/media/events/871e96a389ac3c21b9beab2096969903.jpg",
+        "比赛权重": "0",
+        "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
+        "比赛ID": "1064",
         "比赛状态": "past"
     },
     {
@@ -2337,18 +2337,6 @@
         "比赛权重": "0.00",
         "赛事主办": "ISFCR PESU (https://ctftime.org/team/166645)",
         "比赛ID": "942",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "saarCTF 2025",
-        "比赛时间": "2025-11-08 21:00:00 - 2025-11-09 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2859.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://ctf.saarland/",
-        "比赛标志": "https://ctftime.org/media/events/saarctf_2025.png",
-        "比赛权重": "97.22",
-        "赛事主办": "saarsec (https://ctftime.org/team/15337)",
-        "比赛ID": "412",
         "比赛状态": "past"
     }
 ]

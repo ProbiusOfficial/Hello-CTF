@@ -45,15 +45,6 @@ comments: true
     **赛事主办** : NFITS (https://ctftime.org/team/360674)  
     **添加日历** : https://ctftime.org/event/2907.ics  
     
-??? Quote "[UNbreakable International 2026 - Team Phase](https://app.cyber-edu.co/competition/unr26t-international)"  
-    [![](https://ctftime.org/media/events/871e96a389ac3c21b9beab2096969903.jpg){ width="200" align=left }](https://app.cyber-edu.co/competition/unr26t-international)  
-    **比赛名称** : [UNbreakable International 2026 - Team Phase](https://app.cyber-edu.co/competition/unr26t-international)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-06 17:00:00 - 2026-03-08 17:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : bitsentinel (https://ctftime.org/team/280005)  
-    **添加日历** : https://ctftime.org/event/3172.ics  
-    
 ??? Quote "[APort Vault CTF - Can You Move the Money?](https://vault.aport.io/)"  
     [![](https://ctftime.org/media/events/aport-logo.png){ width="200" align=left }](https://vault.aport.io/)  
     **比赛名称** : [APort Vault CTF - Can You Move the Money?](https://vault.aport.io/)  
