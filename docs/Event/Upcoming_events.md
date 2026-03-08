@@ -360,6 +360,15 @@ comments: true
     **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
     **添加日历** : https://ctftime.org/event/2937.ics  
     
+??? Quote "[Cybersplash 2026](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)"  
+    [![](https://ctftime.org/media/events/1_4.png){ width="200" align=left }](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)  
+    **比赛名称** : [Cybersplash 2026](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-11 10:00:00 - 2026-04-12 10:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : SECPlayground (https://ctftime.org/team/375409)  
+    **添加日历** : https://ctftime.org/event/3190.ics  
+    
 ??? Quote "[Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)"  
     [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
     **比赛名称** : [Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)  

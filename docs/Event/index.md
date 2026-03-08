@@ -640,6 +640,15 @@ hide:
                 **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
                 **添加日历** : https://ctftime.org/event/2937.ics  
                 
+            ??? Quote "[Cybersplash 2026](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)"  
+                [![](https://ctftime.org/media/events/1_4.png){ width="200" align=left }](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)  
+                **比赛名称** : [Cybersplash 2026](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-04-11 10:00:00 - 2026-04-12 10:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : SECPlayground (https://ctftime.org/team/375409)  
+                **添加日历** : https://ctftime.org/event/3190.ics  
+                
             ??? Quote "[Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)"  
                 [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
                 **比赛名称** : [Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)  
@@ -1130,15 +1139,6 @@ hide:
                 **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
                 **添加日历** : https://ctftime.org/event/3027.ics  
                 
-            ??? Quote "[DiceCTF 2026 Quals](https://ctf.dicega.ng/)"  
-                [![](https://ctftime.org/media/events/dice.png){ width="200" align=left }](https://ctf.dicega.ng/)  
-                **比赛名称** : [DiceCTF 2026 Quals](https://ctf.dicega.ng/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-08 01:00:00 - 2026-03-09 01:00:00 UTC+8  
-                **比赛权重** : 100.00  
-                **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
-                **添加日历** : https://ctftime.org/event/3110.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[HGAME 2026](https://hgame.vidar.club/)"  
@@ -1171,6 +1171,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Utopains (https://ctftime.org/team/408650)  
                 **添加日历** : https://ctftime.org/event/3170.ics  
+                
+            ??? Quote "[DiceCTF 2026 Quals](https://ctf.dicega.ng/)"  
+                [![](https://ctftime.org/media/events/dice.png){ width="200" align=left }](https://ctf.dicega.ng/)  
+                **比赛名称** : [DiceCTF 2026 Quals](https://ctf.dicega.ng/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-08 01:00:00 - 2026-03-09 01:00:00 UTC+8  
+                **比赛权重** : 100.00  
+                **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
+                **添加日历** : https://ctftime.org/event/3110.ics  
                 
             ??? Quote "[CodeVinci CTF 2026](https://challs.codevinci.it/)"  
                 [![](https://ctftime.org/media/events/Logo_.png){ width="200" align=left }](https://challs.codevinci.it/)  
@@ -1312,7 +1321,7 @@ hide:
                 **比赛名称** : [Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-02-21 09:30:00 - 2026-02-23 09:30:00 UTC+8  
-                **比赛权重** : 24.44  
+                **比赛权重** : 24.45  
                 **赛事主办** : Batman's Kitchen (https://ctftime.org/team/3135)  
                 **添加日历** : https://ctftime.org/event/3098.ics  
                 
@@ -2053,15 +2062,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : ThunderCipher (https://ctftime.org/team/279782)  
                 **添加日历** : https://ctftime.org/event/2991.ics  
-                
-            ??? Quote "[M*CTF 2025 Junior Quals](https://mctf.mtuci.ru/)"  
-                [![](https://ctftime.org/media/events/logo_14.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
-                **比赛名称** : [M*CTF 2025 Junior Quals](https://mctf.mtuci.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-09 17:00:00 - 2025-11-10 05:00:00 UTC+8  
-                **比赛权重** : 36.00  
-                **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-                **添加日历** : https://ctftime.org/event/2995.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

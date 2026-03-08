@@ -468,6 +468,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Cybersplash 2026",
+        "比赛时间": "2026-04-11 10:00:00 - 2026-04-12 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3190.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76",
+        "比赛标志": "https://ctftime.org/media/events/1_4.png",
+        "比赛权重": "0.00",
+        "赛事主办": "SECPlayground (https://ctftime.org/team/375409)",
+        "比赛ID": "1291",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Midnight Sun CTF 2026 Quals",
         "比赛时间": "2026-04-11 18:00:00 - 2026-04-12 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2773.ics",
@@ -1116,18 +1128,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "DiceCTF 2026 Quals",
-        "比赛时间": "2026-03-08 01:00:00 - 2026-03-09 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3110.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.dicega.ng/",
-        "比赛标志": "https://ctftime.org/media/events/dice.png",
-        "比赛权重": "100.00",
-        "赛事主办": "DiceGang (https://ctftime.org/team/109452)",
-        "比赛ID": "568",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "ShellCTF",
         "比赛时间": "2026-03-08 14:30:00 - 2026-03-08 18:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3170.ics",
@@ -1137,6 +1137,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Utopains (https://ctftime.org/team/408650)",
         "比赛ID": "1514",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "DiceCTF 2026 Quals",
+        "比赛时间": "2026-03-08 01:00:00 - 2026-03-09 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3110.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.dicega.ng/",
+        "比赛标志": "https://ctftime.org/media/events/dice.png",
+        "比赛权重": "100.00",
+        "赛事主办": "DiceGang (https://ctftime.org/team/109452)",
+        "比赛ID": "568",
         "比赛状态": "past"
     },
     {
@@ -1326,7 +1338,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.batmans.kitchen/",
         "比赛标志": "https://ctftime.org/media/events/bklogo.png",
-        "比赛权重": "24.44",
+        "比赛权重": "24.45",
         "赛事主办": "Batman's Kitchen (https://ctftime.org/team/3135)",
         "比赛ID": "1495",
         "比赛状态": "past"
@@ -2313,18 +2325,6 @@
         "比赛权重": "0.00",
         "赛事主办": "ThunderCipher (https://ctftime.org/team/279782)",
         "比赛ID": "1116",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "M*CTF 2025 Junior Quals",
-        "比赛时间": "2025-11-09 17:00:00 - 2025-11-10 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2995.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://mctf.mtuci.ru/",
-        "比赛标志": "https://ctftime.org/media/events/logo_14.jpg",
-        "比赛权重": "36.00",
-        "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
-        "比赛ID": "164",
         "比赛状态": "past"
     }
 ]

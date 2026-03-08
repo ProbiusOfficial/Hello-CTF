@@ -37,6 +37,15 @@ comments: true
     **赛事主办** : Utopains (https://ctftime.org/team/408650)  
     **添加日历** : https://ctftime.org/event/3170.ics  
     
+??? Quote "[DiceCTF 2026 Quals](https://ctf.dicega.ng/)"  
+    [![](https://ctftime.org/media/events/dice.png){ width="200" align=left }](https://ctf.dicega.ng/)  
+    **比赛名称** : [DiceCTF 2026 Quals](https://ctf.dicega.ng/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-08 01:00:00 - 2026-03-09 01:00:00 UTC+8  
+    **比赛权重** : 100.00  
+    **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
+    **添加日历** : https://ctftime.org/event/3110.ics  
+    
 ??? Quote "[CodeVinci CTF 2026](https://challs.codevinci.it/)"  
     [![](https://ctftime.org/media/events/Logo_.png){ width="200" align=left }](https://challs.codevinci.it/)  
     **比赛名称** : [CodeVinci CTF 2026](https://challs.codevinci.it/)  
@@ -177,7 +186,7 @@ comments: true
     **比赛名称** : [Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-02-21 09:30:00 - 2026-02-23 09:30:00 UTC+8  
-    **比赛权重** : 24.44  
+    **比赛权重** : 24.45  
     **赛事主办** : Batman's Kitchen (https://ctftime.org/team/3135)  
     **添加日历** : https://ctftime.org/event/3098.ics  
     
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : ThunderCipher (https://ctftime.org/team/279782)  
     **添加日历** : https://ctftime.org/event/2991.ics  
-    
-??? Quote "[M*CTF 2025 Junior Quals](https://mctf.mtuci.ru/)"  
-    [![](https://ctftime.org/media/events/logo_14.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
-    **比赛名称** : [M*CTF 2025 Junior Quals](https://mctf.mtuci.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-09 17:00:00 - 2025-11-10 05:00:00 UTC+8  
-    **比赛权重** : 36.00  
-    **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-    **添加日历** : https://ctftime.org/event/2995.ics  
     
