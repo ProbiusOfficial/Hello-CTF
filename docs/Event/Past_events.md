@@ -46,6 +46,15 @@ comments: true
     **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
     **添加日历** : https://ctftime.org/event/3110.ics  
     
+??? Quote "[@Hack 2026](https://athackctf.com/)"  
+    [![](https://ctftime.org/media/events/athack_logo.png){ width="200" align=left }](https://athackctf.com/)  
+    **比赛名称** : [@Hack 2026](https://athackctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-07 22:00:00 - 2026-03-09 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
+    **添加日历** : https://ctftime.org/event/3027.ics  
+    
 ??? Quote "[CodeVinci CTF 2026](https://challs.codevinci.it/)"  
     [![](https://ctftime.org/media/events/Logo_.png){ width="200" align=left }](https://challs.codevinci.it/)  
     **比赛名称** : [CodeVinci CTF 2026](https://challs.codevinci.it/)  
@@ -54,6 +63,15 @@ comments: true
     **比赛权重** : 18.57  
     **赛事主办** : code-vinci (https://ctftime.org/team/365817)  
     **添加日历** : https://ctftime.org/event/3101.ics  
+    
+??? Quote "[Axiom CTF 2026](https://ctf.4x10m.ru/)"  
+    [![](https://ctftime.org/media/events/Frame_1.png){ width="200" align=left }](https://ctf.4x10m.ru/)  
+    **比赛名称** : [Axiom CTF 2026](https://ctf.4x10m.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-07 15:00:00 - 2026-03-09 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : 4x10m (https://ctftime.org/team/418607)  
+    **添加日历** : https://ctftime.org/event/3129.ics  
     
 ??? Quote "[UNbreakable International 2026 - Team Phase](https://app.cyber-edu.co/competition/unr26t-international)"  
     [![](https://ctftime.org/media/events/871e96a389ac3c21b9beab2096969903.jpg){ width="200" align=left }](https://app.cyber-edu.co/competition/unr26t-international)  
@@ -909,22 +927,4 @@ comments: true
     **比赛权重** : 35.56  
     **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
     **添加日历** : https://ctftime.org/event/2844.ics  
-    
-??? Quote "[POC CTF Final 2025](https://powerofcommunity.net/2025/ctf.html)"  
-    [![](https://ctftime.org/media/events/vDP90SY4soKs6q3cKITowqXIE7a0Jy_1.png){ width="200" align=left }](https://powerofcommunity.net/2025/ctf.html)  
-    **比赛名称** : [POC CTF Final 2025](https://powerofcommunity.net/2025/ctf.html)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-14 07:00:00 - 2025-11-14 14:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
-    **添加日历** : https://ctftime.org/event/2956.ics  
-    
-??? Quote "[RootCipher](https://forms.thundercipher.tech/form/949b7b32-ff49-400e-9194-a91a5deeb910)"  
-    [![](){ width="200" align=left }](https://forms.thundercipher.tech/form/949b7b32-ff49-400e-9194-a91a5deeb910)  
-    **比赛名称** : [RootCipher](https://forms.thundercipher.tech/form/949b7b32-ff49-400e-9194-a91a5deeb910)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-09 21:00:00 - 2025-11-10 02:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : ThunderCipher (https://ctftime.org/team/279782)  
-    **添加日历** : https://ctftime.org/event/2991.ics  
     

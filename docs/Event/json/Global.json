@@ -1092,18 +1092,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Axiom CTF 2026",
-        "比赛时间": "2026-03-07 15:00:00 - 2026-03-09 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3129.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.4x10m.ru/",
-        "比赛标志": "https://ctftime.org/media/events/Frame_1.png",
-        "比赛权重": "0",
-        "赛事主办": "4x10m (https://ctftime.org/team/418607)",
-        "比赛ID": "1510",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "upCTF 2026",
         "比赛时间": "2026-03-07 17:00:00 - 2026-03-09 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3073.ics",
@@ -1113,18 +1101,6 @@
         "比赛权重": "0",
         "赛事主办": "xSTF (https://ctftime.org/team/15341)",
         "比赛ID": "1481",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "@Hack 2026",
-        "比赛时间": "2026-03-07 22:00:00 - 2026-03-09 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3027.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://athackctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/athack_logo.png",
-        "比赛权重": "0",
-        "赛事主办": "Hexploit Alliance (https://ctftime.org/team/278003)",
-        "比赛ID": "1061",
         "比赛状态": "nowrunning"
     },
     {
@@ -1152,6 +1128,18 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "@Hack 2026",
+        "比赛时间": "2026-03-07 22:00:00 - 2026-03-09 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3027.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://athackctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/athack_logo.png",
+        "比赛权重": "0",
+        "赛事主办": "Hexploit Alliance (https://ctftime.org/team/278003)",
+        "比赛ID": "1061",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "CodeVinci CTF 2026",
         "比赛时间": "2026-03-07 22:00:00 - 2026-03-08 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3101.ics",
@@ -1161,6 +1149,18 @@
         "比赛权重": "18.57",
         "赛事主办": "code-vinci (https://ctftime.org/team/365817)",
         "比赛ID": "1225",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Axiom CTF 2026",
+        "比赛时间": "2026-03-07 15:00:00 - 2026-03-09 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3129.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.4x10m.ru/",
+        "比赛标志": "https://ctftime.org/media/events/Frame_1.png",
+        "比赛权重": "0",
+        "赛事主办": "4x10m (https://ctftime.org/team/418607)",
+        "比赛ID": "1510",
         "比赛状态": "past"
     },
     {
@@ -2301,30 +2301,6 @@
         "比赛权重": "35.56",
         "赛事主办": "les amateurs (https://ctftime.org/team/166729)",
         "比赛ID": "936",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "POC CTF Final 2025",
-        "比赛时间": "2025-11-14 07:00:00 - 2025-11-14 14:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2956.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://powerofcommunity.net/2025/ctf.html",
-        "比赛标志": "https://ctftime.org/media/events/vDP90SY4soKs6q3cKITowqXIE7a0Jy_1.png",
-        "比赛权重": "0",
-        "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
-        "比赛ID": "1422",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "RootCipher",
-        "比赛时间": "2025-11-09 21:00:00 - 2025-11-10 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2991.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://forms.thundercipher.tech/form/949b7b32-ff49-400e-9194-a91a5deeb910",
-        "比赛标志": "",
-        "比赛权重": "0.00",
-        "赛事主办": "ThunderCipher (https://ctftime.org/team/279782)",
-        "比赛ID": "1116",
         "比赛状态": "past"
     }
 ]
