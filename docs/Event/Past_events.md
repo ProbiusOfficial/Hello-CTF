@@ -73,6 +73,15 @@ comments: true
     **赛事主办** : 4x10m (https://ctftime.org/team/418607)  
     **添加日历** : https://ctftime.org/event/3129.ics  
     
+??? Quote "[ApoorvCTF 2026](https://apoorvctf.iiitkottayam.ac.in/)"  
+    [![](https://ctftime.org/media/events/A5_-_98.png){ width="200" align=left }](https://apoorvctf.iiitkottayam.ac.in/)  
+    **比赛名称** : [ApoorvCTF 2026](https://apoorvctf.iiitkottayam.ac.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-07 05:00:00 - 2026-03-09 05:00:00 UTC+8  
+    **比赛权重** : 24.10  
+    **赛事主办** : r3d_kn1ght5 (https://ctftime.org/team/212248)  
+    **添加日历** : https://ctftime.org/event/3171.ics  
+    
 ??? Quote "[UNbreakable International 2026 - Team Phase](https://app.cyber-edu.co/competition/unr26t-international)"  
     [![](https://ctftime.org/media/events/871e96a389ac3c21b9beab2096969903.jpg){ width="200" align=left }](https://app.cyber-edu.co/competition/unr26t-international)  
     **比赛名称** : [UNbreakable International 2026 - Team Phase](https://app.cyber-edu.co/competition/unr26t-international)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : H34lthineer (https://ctftime.org/team/170109)  
     **添加日历** : https://ctftime.org/event/3006.ics  
-    
-??? Quote "[AmateursCTF 2025](https://ctf.amateurs.team/)"  
-    [![](){ width="200" align=left }](https://ctf.amateurs.team/)  
-    **比赛名称** : [AmateursCTF 2025](https://ctf.amateurs.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-14 08:00:00 - 2025-11-18 08:00:00 UTC+8  
-    **比赛权重** : 35.56  
-    **赛事主办** : les amateurs (https://ctftime.org/team/166729)  
-    **添加日历** : https://ctftime.org/event/2844.ics  
     

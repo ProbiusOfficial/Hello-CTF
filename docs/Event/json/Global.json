@@ -1080,18 +1080,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "ApoorvCTF 2026",
-        "比赛时间": "2026-03-07 05:00:00 - 2026-03-09 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3171.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://apoorvctf.iiitkottayam.ac.in/",
-        "比赛标志": "https://ctftime.org/media/events/A5_-_98.png",
-        "比赛权重": "24.10",
-        "赛事主办": "r3d_kn1ght5 (https://ctftime.org/team/212248)",
-        "比赛ID": "1083",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "upCTF 2026",
         "比赛时间": "2026-03-07 17:00:00 - 2026-03-09 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3073.ics",
@@ -1161,6 +1149,18 @@
         "比赛权重": "0",
         "赛事主办": "4x10m (https://ctftime.org/team/418607)",
         "比赛ID": "1510",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "ApoorvCTF 2026",
+        "比赛时间": "2026-03-07 05:00:00 - 2026-03-09 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3171.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://apoorvctf.iiitkottayam.ac.in/",
+        "比赛标志": "https://ctftime.org/media/events/A5_-_98.png",
+        "比赛权重": "24.10",
+        "赛事主办": "r3d_kn1ght5 (https://ctftime.org/team/212248)",
+        "比赛ID": "1083",
         "比赛状态": "past"
     },
     {
@@ -2289,18 +2289,6 @@
         "比赛权重": "0.00",
         "赛事主办": "H34lthineer (https://ctftime.org/team/170109)",
         "比赛ID": "1439",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "AmateursCTF 2025",
-        "比赛时间": "2025-11-14 08:00:00 - 2025-11-18 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2844.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.amateurs.team/",
-        "比赛标志": "",
-        "比赛权重": "35.56",
-        "赛事主办": "les amateurs (https://ctftime.org/team/166729)",
-        "比赛ID": "936",
         "比赛状态": "past"
     }
 ]
