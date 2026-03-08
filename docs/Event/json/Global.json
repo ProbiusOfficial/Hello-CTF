@@ -1137,7 +1137,7 @@
         "比赛权重": "0.00",
         "赛事主办": "Utopains (https://ctftime.org/team/408650)",
         "比赛ID": "1514",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "CodeVinci CTF 2026",
@@ -2325,18 +2325,6 @@
         "比赛权重": "36.00",
         "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
         "比赛ID": "164",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Cryovault Finals",
-        "比赛时间": "2025-11-09 16:00:00 - 2025-11-10 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2985.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.isfcr.pes.edu/",
-        "比赛标志": "https://ctftime.org/media/events/LOGO_1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "ISFCR PESU (https://ctftime.org/team/166645)",
-        "比赛ID": "942",
         "比赛状态": "past"
     }
 ]
