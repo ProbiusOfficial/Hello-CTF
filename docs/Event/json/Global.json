@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "ShellCTF",
-        "比赛时间": "2026-03-08 14:30:00 - 2026-03-08 18:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3170.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://shellctf.me/",
-        "比赛标志": "https://ctftime.org/media/events/shell-ctf-icon.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "Utopains (https://ctftime.org/team/408650)",
-        "比赛ID": "1514",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Espilon CTF 2026",
         "比赛时间": "2026-03-11 20:00:00 - 2026-03-26 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3179.ics",
@@ -1149,6 +1137,18 @@
         "比赛权重": "100.00",
         "赛事主办": "DiceGang (https://ctftime.org/team/109452)",
         "比赛ID": "568",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "ShellCTF",
+        "比赛时间": "2026-03-08 14:30:00 - 2026-03-08 18:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3170.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://shellctf.me/",
+        "比赛标志": "https://ctftime.org/media/events/shell-ctf-icon.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "Utopains (https://ctftime.org/team/408650)",
+        "比赛ID": "1514",
         "比赛状态": "nowrunning"
     },
     {
