@@ -64,6 +64,15 @@ comments: true
     **赛事主办** : code-vinci (https://ctftime.org/team/365817)  
     **添加日历** : https://ctftime.org/event/3101.ics  
     
+??? Quote "[upCTF 2026](https://ctf.xstf.pt/)"  
+    [![](https://ctftime.org/media/events/logo_yellow_1.png){ width="200" align=left }](https://ctf.xstf.pt/)  
+    **比赛名称** : [upCTF 2026](https://ctf.xstf.pt/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-07 17:00:00 - 2026-03-09 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : xSTF (https://ctftime.org/team/15341)  
+    **添加日历** : https://ctftime.org/event/3073.ics  
+    
 ??? Quote "[Axiom CTF 2026](https://ctf.4x10m.ru/)"  
     [![](https://ctftime.org/media/events/Frame_1.png){ width="200" align=left }](https://ctf.4x10m.ru/)  
     **比赛名称** : [Axiom CTF 2026](https://ctf.4x10m.ru/)  
@@ -213,7 +222,7 @@ comments: true
     **比赛名称** : [Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-02-21 09:30:00 - 2026-02-23 09:30:00 UTC+8  
-    **比赛权重** : 24.45  
+    **比赛权重** : 24.47  
     **赛事主办** : Batman's Kitchen (https://ctftime.org/team/3135)  
     **添加日历** : https://ctftime.org/event/3098.ics  
     
@@ -240,7 +249,7 @@ comments: true
     **比赛名称** : [TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-02-14 18:00:00 - 2026-02-15 18:00:00 UTC+8  
-    **比赛权重** : 24.00  
+    **比赛权重** : 24.05  
     **赛事主办** : TaipanByte (https://ctftime.org/team/301788)  
     **添加日历** : https://ctftime.org/event/3086.ics  
     
@@ -267,7 +276,7 @@ comments: true
     **比赛名称** : [0xFUN CTF 2026](https://ctf.0xfun.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-02-13 02:00:00 - 2026-02-15 02:00:00 UTC+8  
-    **比赛权重** : 17.66  
+    **比赛权重** : 17.77  
     **赛事主办** : 0xFUN (https://ctftime.org/team/354033)  
     **添加日历** : https://ctftime.org/event/3081.ics  
     
@@ -285,7 +294,7 @@ comments: true
     **比赛名称** : [DUCKERZ CTF 2026](https://teams.duckerz.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-02-07 17:00:00 - 2026-02-08 17:00:00 UTC+8  
-    **比赛权重** : 23.62  
+    **比赛权重** : 23.71  
     **赛事主办** : DUCKERZ (https://ctftime.org/team/372036)  
     **添加日历** : https://ctftime.org/event/3067.ics  
     
@@ -321,7 +330,7 @@ comments: true
     **比赛名称** : [PascalCTF 2026](https://ctf.pascalctf.it/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-01-31 16:00:00 - 2026-02-01 16:00:00 UTC+8  
-    **比赛权重** : 23.91  
+    **比赛权重** : 23.96  
     **赛事主办** : Paolo (https://ctftime.org/team/263145)  
     **添加日历** : https://ctftime.org/event/2767.ics  
     
@@ -447,7 +456,7 @@ comments: true
     **比赛名称** : [0xL4ugh CTF v5](https://ctf.0xL4ugh.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-01-23 21:00:00 - 2026-01-25 21:00:00 UTC+8  
-    **比赛权重** : 28.38  
+    **比赛权重** : 28.42  
     **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
     **添加日历** : https://ctftime.org/event/3024.ics  
     
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Layer7 CTF (https://ctftime.org/team/87286)  
     **添加日历** : https://ctftime.org/event/2990.ics  
-    
-??? Quote "[Guardians of the TI](http://ctf.gematik.de/)"  
-    [![](https://ctftime.org/media/events/logo_guardians.png){ width="200" align=left }](http://ctf.gematik.de/)  
-    **比赛名称** : [Guardians of the TI](http://ctf.gematik.de/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-14 17:00:00 - 2025-11-15 01:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : H34lthineer (https://ctftime.org/team/170109)  
-    **添加日历** : https://ctftime.org/event/3006.ics  
     
