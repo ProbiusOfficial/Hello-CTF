@@ -199,9 +199,9 @@ comments: true
     **赛事主办** : EPIHACK (https://ctftime.org/team/419202)  
     **添加日历** : https://ctftime.org/event/3076.ics  
     
-??? Quote "[Escathon CTF 2026 Finals](https://eschaton.mcsc.space/)"  
-    [![](https://ctftime.org/media/events/mcsc_logo.jpg){ width="200" align=left }](https://eschaton.mcsc.space/)  
-    **比赛名称** : [Escathon CTF 2026 Finals](https://eschaton.mcsc.space/)  
+??? Quote "[Eschaton CTF 2026 Finals](https://esch26.mcsc.space/)"  
+    [![](https://ctftime.org/media/events/mcsc_logo.jpg){ width="200" align=left }](https://esch26.mcsc.space/)  
+    **比赛名称** : [Eschaton CTF 2026 Finals](https://esch26.mcsc.space/)  
     **比赛形式** : Attack-Defense  
     **比赛时间** : 2026-02-21 12:30:00 - 2026-02-21 22:30:00 UTC+8  
     **比赛权重** : 0.00  
@@ -325,9 +325,9 @@ comments: true
     **赛事主办** : Paolo (https://ctftime.org/team/263145)  
     **添加日历** : https://ctftime.org/event/2767.ics  
     
-??? Quote "[Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)"  
-    [![](){ width="200" align=left }](https://eschaton.mcsc.space/)  
-    **比赛名称** : [Eschaton CTF 2026 Quals](https://eschaton.mcsc.space/)  
+??? Quote "[Eschaton CTF 2026 Quals](https://esch26.mcsc.space/)"  
+    [![](){ width="200" align=left }](https://esch26.mcsc.space/)  
+    **比赛名称** : [Eschaton CTF 2026 Quals](https://esch26.mcsc.space/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-01-31 12:30:00 - 2026-02-01 12:30:00 UTC+8  
     **比赛权重** : 23.68  
