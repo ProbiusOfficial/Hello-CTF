@@ -636,6 +636,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "CTF@AC26 - Quals",
+        "比赛时间": "2026-04-25 15:00:00 - 2026-04-26 15:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3192.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.ac.upt.ro/",
+        "比赛标志": "https://ctftime.org/media/events/CTFAC26.png",
+        "比赛权重": "24.53",
+        "赛事主办": "UPT-CTF (https://ctftime.org/team/276942)",
+        "比赛ID": "1337",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "THCon 2K26 CTF",
         "比赛时间": "2026-05-07 19:00:00 - 2026-05-08 19:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3186.ics",
