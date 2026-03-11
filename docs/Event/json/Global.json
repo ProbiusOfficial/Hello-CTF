@@ -1374,7 +1374,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.batmans.kitchen/",
         "比赛标志": "https://ctftime.org/media/events/bklogo.png",
-        "比赛权重": "24.41",
+        "比赛权重": "24.31",
         "赛事主办": "Batman's Kitchen (https://ctftime.org/team/3135)",
         "比赛ID": "1495",
         "比赛状态": "past"
@@ -1446,7 +1446,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.0xfun.org/",
         "比赛标志": "https://ctftime.org/media/events/image_4.png",
-        "比赛权重": "17.90",
+        "比赛权重": "17.50",
         "赛事主办": "0xFUN (https://ctftime.org/team/354033)",
         "比赛ID": "1475",
         "比赛状态": "past"
@@ -1530,7 +1530,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://esch26.mcsc.space/",
         "比赛标志": "",
-        "比赛权重": "23.75",
+        "比赛权重": "23.57",
         "赛事主办": "Team MCSC (https://ctftime.org/team/418958)",
         "比赛ID": "1477",
         "比赛状态": "past"
@@ -1686,7 +1686,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.0xL4ugh.com/",
         "比赛标志": "",
-        "比赛权重": "28.49",
+        "比赛权重": "28.45",
         "赛事主办": "0xL4ugh (https://ctftime.org/team/132776)",
         "比赛ID": "579",
         "比赛状态": "past"
