@@ -117,6 +117,15 @@ comments: true
     **赛事主办** : Hacking Indian Ocean (https://ctftime.org/team/399138)  
     **添加日历** : https://ctftime.org/event/3189.ics  
     
+??? Quote "[m0leCon CTF 2026](https://finals.m0lecon.it/)"  
+    [![](){ width="200" align=left }](https://finals.m0lecon.it/)  
+    **比赛名称** : [m0leCon CTF 2026](https://finals.m0lecon.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-20 00:00:00 - 2026-03-21 00:00:00 UTC+8  
+    **比赛权重** : 75.00  
+    **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
+    **添加日历** : https://ctftime.org/event/3196.ics  
+    
 ??? Quote "[Insomni'hack 2026](https://insomnihack.ch/contest/)"  
     [![](){ width="200" align=left }](https://insomnihack.ch/contest/)  
     **比赛名称** : [Insomni'hack 2026](https://insomnihack.ch/contest/)  
@@ -548,6 +557,15 @@ comments: true
     **比赛权重** : 32.59  
     **赛事主办** : DaVinciCode (https://ctftime.org/team/112645)  
     **添加日历** : https://ctftime.org/event/3132.ics  
+    
+??? Quote "[TJCTF 2026](https://tjctf.org/)"  
+    [![](https://ctftime.org/media/events/logo_96_1_1.png){ width="200" align=left }](https://tjctf.org/)  
+    **比赛名称** : [TJCTF 2026](https://tjctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-23 00:00:00 - 2026-05-25 00:00:00 UTC+8  
+    **比赛权重** : 65.05  
+    **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
+    **添加日历** : https://ctftime.org/event/3195.ics  
     
 ??? Quote "[SAS CTF 2026 Quals](https://ctf.thesascon.com/)"  
     [![](https://ctftime.org/media/events/SAS26_temp.png){ width="200" align=left }](https://ctf.thesascon.com/)  
