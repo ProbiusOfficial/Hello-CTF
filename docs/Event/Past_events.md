@@ -91,6 +91,15 @@ comments: true
     **赛事主办** : r3d_kn1ght5 (https://ctftime.org/team/212248)  
     **添加日历** : https://ctftime.org/event/3171.ics  
     
+??? Quote "[APort Vault CTF - Can You Move the Money?](https://vault.aport.io/)"  
+    [![](https://ctftime.org/media/events/aport-logo.png){ width="200" align=left }](https://vault.aport.io/)  
+    **比赛名称** : [APort Vault CTF - Can You Move the Money?](https://vault.aport.io/)  
+    **比赛形式** : Hack quest  
+    **比赛时间** : 2026-03-06 20:00:00 - 2026-03-11 20:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : APort (https://ctftime.org/team/425773)  
+    **添加日历** : https://ctftime.org/event/3176.ics  
+    
 ??? Quote "[UNbreakable International 2026 - Team Phase](https://app.cyber-edu.co/competition/unr26t-international)"  
     [![](https://ctftime.org/media/events/871e96a389ac3c21b9beab2096969903.jpg){ width="200" align=left }](https://app.cyber-edu.co/competition/unr26t-international)  
     **比赛名称** : [UNbreakable International 2026 - Team Phase](https://app.cyber-edu.co/competition/unr26t-international)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 41.75  
     **赛事主办** : ROIS (https://ctftime.org/team/6476)  
     **添加日历** : https://ctftime.org/event/2992.ics  
-    
-??? Quote "[Layer7 CTF 2025](https://ctf.layer7.kr/)"  
-    [![](https://ctftime.org/media/events/white_ver.png){ width="200" align=left }](https://ctf.layer7.kr/)  
-    **比赛名称** : [Layer7 CTF 2025](https://ctf.layer7.kr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-15 09:00:00 - 2025-11-16 09:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Layer7 CTF (https://ctftime.org/team/87286)  
-    **添加日历** : https://ctftime.org/event/2990.ics  
     

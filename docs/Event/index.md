@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Espilon CTF 2026](https://ctf.espilon.net/)"  
-                [![](){ width="200" align=left }](https://ctf.espilon.net/)  
-                **比赛名称** : [Espilon CTF 2026](https://ctf.espilon.net/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-11 20:00:00 - 2026-03-26 08:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Espilon (https://ctftime.org/team/423394)  
-                **添加日历** : https://ctftime.org/event/3179.ics  
-                
             ??? Quote "[UTCTF 2026](http://isss.io/utctf)"  
                 [![](https://ctftime.org/media/events/UTCTF_2026.png){ width="200" align=left }](http://isss.io/utctf)  
                 **比赛名称** : [UTCTF 2026](http://isss.io/utctf)  
@@ -1121,14 +1112,14 @@ hide:
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2907.ics  
                 
-            ??? Quote "[APort Vault CTF - Can You Move the Money?](https://vault.aport.io/)"  
-                [![](https://ctftime.org/media/events/aport-logo.png){ width="200" align=left }](https://vault.aport.io/)  
-                **比赛名称** : [APort Vault CTF - Can You Move the Money?](https://vault.aport.io/)  
-                **比赛形式** : Hack quest  
-                **比赛时间** : 2026-03-06 20:00:00 - 2026-03-11 20:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : APort (https://ctftime.org/team/425773)  
-                **添加日历** : https://ctftime.org/event/3176.ics  
+            ??? Quote "[Espilon CTF 2026](https://ctf.espilon.net/)"  
+                [![](){ width="200" align=left }](https://ctf.espilon.net/)  
+                **比赛名称** : [Espilon CTF 2026](https://ctf.espilon.net/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-11 20:00:00 - 2026-03-26 08:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Espilon (https://ctftime.org/team/423394)  
+                **添加日历** : https://ctftime.org/event/3179.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -1216,6 +1207,15 @@ hide:
                 **比赛权重** : 24.10  
                 **赛事主办** : r3d_kn1ght5 (https://ctftime.org/team/212248)  
                 **添加日历** : https://ctftime.org/event/3171.ics  
+                
+            ??? Quote "[APort Vault CTF - Can You Move the Money?](https://vault.aport.io/)"  
+                [![](https://ctftime.org/media/events/aport-logo.png){ width="200" align=left }](https://vault.aport.io/)  
+                **比赛名称** : [APort Vault CTF - Can You Move the Money?](https://vault.aport.io/)  
+                **比赛形式** : Hack quest  
+                **比赛时间** : 2026-03-06 20:00:00 - 2026-03-11 20:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : APort (https://ctftime.org/team/425773)  
+                **添加日历** : https://ctftime.org/event/3176.ics  
                 
             ??? Quote "[UNbreakable International 2026 - Team Phase](https://app.cyber-edu.co/competition/unr26t-international)"  
                 [![](https://ctftime.org/media/events/871e96a389ac3c21b9beab2096969903.jpg){ width="200" align=left }](https://app.cyber-edu.co/competition/unr26t-international)  
@@ -2044,15 +2044,6 @@ hide:
                 **比赛权重** : 41.75  
                 **赛事主办** : ROIS (https://ctftime.org/team/6476)  
                 **添加日历** : https://ctftime.org/event/2992.ics  
-                
-            ??? Quote "[Layer7 CTF 2025](https://ctf.layer7.kr/)"  
-                [![](https://ctftime.org/media/events/white_ver.png){ width="200" align=left }](https://ctf.layer7.kr/)  
-                **比赛名称** : [Layer7 CTF 2025](https://ctf.layer7.kr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-15 09:00:00 - 2025-11-16 09:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Layer7 CTF (https://ctftime.org/team/87286)  
-                **添加日历** : https://ctftime.org/event/2990.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

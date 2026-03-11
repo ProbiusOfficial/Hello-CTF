@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Espilon CTF 2026",
-        "比赛时间": "2026-03-11 20:00:00 - 2026-03-26 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3179.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.espilon.net/",
-        "比赛标志": "",
-        "比赛权重": "0",
-        "赛事主办": "Espilon (https://ctftime.org/team/423394)",
-        "比赛ID": "1512",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "UTCTF 2026",
         "比赛时间": "2026-03-13 08:23:00 - 2026-03-15 08:23:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3133.ics",
@@ -1104,15 +1092,15 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "APort Vault CTF - Can You Move the Money?",
-        "比赛时间": "2026-03-06 20:00:00 - 2026-03-11 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3176.ics",
-        "比赛形式": "Hack quest",
-        "比赛链接": "https://vault.aport.io/",
-        "比赛标志": "https://ctftime.org/media/events/aport-logo.png",
-        "比赛权重": "0.00",
-        "赛事主办": "APort (https://ctftime.org/team/425773)",
-        "比赛ID": "1527",
+        "比赛名称": "Espilon CTF 2026",
+        "比赛时间": "2026-03-11 20:00:00 - 2026-03-26 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3179.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.espilon.net/",
+        "比赛标志": "",
+        "比赛权重": "0",
+        "赛事主办": "Espilon (https://ctftime.org/team/423394)",
+        "比赛ID": "1512",
         "比赛状态": "nowrunning"
     },
     {
@@ -1197,6 +1185,18 @@
         "比赛权重": "24.10",
         "赛事主办": "r3d_kn1ght5 (https://ctftime.org/team/212248)",
         "比赛ID": "1083",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "APort Vault CTF - Can You Move the Money?",
+        "比赛时间": "2026-03-06 20:00:00 - 2026-03-11 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3176.ics",
+        "比赛形式": "Hack quest",
+        "比赛链接": "https://vault.aport.io/",
+        "比赛标志": "https://ctftime.org/media/events/aport-logo.png",
+        "比赛权重": "0.00",
+        "赛事主办": "APort (https://ctftime.org/team/425773)",
+        "比赛ID": "1527",
         "比赛状态": "past"
     },
     {
@@ -2301,18 +2301,6 @@
         "比赛权重": "41.75",
         "赛事主办": "ROIS (https://ctftime.org/team/6476)",
         "比赛ID": "127",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Layer7 CTF 2025",
-        "比赛时间": "2025-11-15 09:00:00 - 2025-11-16 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2990.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.layer7.kr/",
-        "比赛标志": "https://ctftime.org/media/events/white_ver.png",
-        "比赛权重": "0",
-        "赛事主办": "Layer7 CTF (https://ctftime.org/team/87286)",
-        "比赛ID": "368",
         "比赛状态": "past"
     }
 ]

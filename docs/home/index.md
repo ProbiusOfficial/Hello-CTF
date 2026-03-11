@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Espilon CTF 2026](https://ctf.espilon.net/)"  
-            [![](){ width="200" align=left }](https://ctf.espilon.net/)  
-            **比赛名称** : [Espilon CTF 2026](https://ctf.espilon.net/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-11 20:00:00 - 2026-03-26 08:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : Espilon (https://ctftime.org/team/423394)  
-            **添加日历** : https://ctftime.org/event/3179.ics  
-            
         ??? Quote "[UTCTF 2026](http://isss.io/utctf)"  
             [![](https://ctftime.org/media/events/UTCTF_2026.png){ width="200" align=left }](http://isss.io/utctf)  
             **比赛名称** : [UTCTF 2026](http://isss.io/utctf)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : SAIC_IITMandi (https://ctftime.org/team/251023)  
             **添加日历** : https://ctftime.org/event/3166.ics  
+            
+        ??? Quote "[Midnight Flag CTF - EXECUTION](https://midnightflag.fr/)"  
+            [![](https://ctftime.org/media/events/logo_119.png){ width="200" align=left }](https://midnightflag.fr/)  
+            **比赛名称** : [Midnight Flag CTF - EXECUTION](https://midnightflag.fr/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-14 04:00:00 - 2026-03-16 04:00:00 UTC+8  
+            **比赛权重** : 24.50  
+            **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
+            **添加日历** : https://ctftime.org/event/3105.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
