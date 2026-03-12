@@ -279,6 +279,15 @@ comments: true
     **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
     **添加日历** : https://ctftime.org/event/3184.ics  
     
+??? Quote "[VishwaCTF'2026](http://vishwactf.com/)"  
+    [![](https://ctftime.org/media/events/VishwaCTF_Logo_1_1_1.png){ width="200" align=left }](http://vishwactf.com/)  
+    **比赛名称** : [VishwaCTF'2026](http://vishwactf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-03 17:30:00 - 2026-04-05 17:30:00 UTC+8  
+    **比赛权重** : 36.00  
+    **赛事主办** : CyberCellVIIT (https://ctftime.org/team/144677)  
+    **添加日历** : https://ctftime.org/event/3197.ics  
+    
 ??? Quote "[Kashi CTF 2026](https://kashictf.iitbhucybersec.in/)"  
     [![](https://ctftime.org/media/events/kashi-ctf-logo.png){ width="200" align=left }](https://kashictf.iitbhucybersec.in/)  
     **比赛名称** : [Kashi CTF 2026](https://kashictf.iitbhucybersec.in/)  
@@ -287,15 +296,6 @@ comments: true
     **比赛权重** : 21.78  
     **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
     **添加日历** : https://ctftime.org/event/3150.ics  
-    
-??? Quote "[VishwaCTF'2026](http://vishwactf.com/)"  
-    [![](https://ctftime.org/media/events/VishwaCTF_Logo_1_1_1.png){ width="200" align=left }](http://vishwactf.com/)  
-    **比赛名称** : [VishwaCTF'2026](http://vishwactf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-03 23:00:00 - 2026-04-05 23:00:00 UTC+8  
-    **比赛权重** : 36.00  
-    **赛事主办** : CyberCellVIIT (https://ctftime.org/team/144677)  
-    **添加日历** : https://ctftime.org/event/3197.ics  
     
 ??? Quote "[RITSEC CTF 2026](https://ctfd.ritsec.club/)"  
     [![](https://ctftime.org/media/events/ritsec_ctf_2026_TP.png){ width="200" align=left }](https://ctfd.ritsec.club/)  
