@@ -420,7 +420,7 @@ int main() {
 
 我们先来回想一下栈迁移的流程，通过函数结尾`leave`控制`RBP`寄存器，然后通过再次`leave`控制`RSP`寄存器。同时我们再看上面的汇编中的`read`：
 
-![image-20250205125811218](/home/hakuya/Projects/CTF-QuickStart/docs/hc-pwn/images/ROP_Tricks/image-20250205125811218.png)
+![image-20250205125811218](images/ROP_Tricks/image-20250205125811218.png)
 
 很显然，这里`read`指向缓冲区的指针是使用`RBP`计算得出的。所以控制了`RBP`之后就可以实现任意地址写了，通过任意地址写写入ROP链之后，就可以再次通过栈迁移实现执行ROP链。
 
