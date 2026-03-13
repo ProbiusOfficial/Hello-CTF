@@ -324,9 +324,9 @@ comments: true
     **赛事主办** : Penn State CCSO (https://ctftime.org/team/367931)  
     **添加日历** : https://ctftime.org/event/3042.ics  
     
-??? Quote "[Triada CTF '26](http://ctf26.triada.in/)"  
-    [![](https://ctftime.org/media/events/ctftime_logo.png){ width="200" align=left }](http://ctf26.triada.in/)  
-    **比赛名称** : [Triada CTF '26](http://ctf26.triada.in/)  
+??? Quote "[Triada CTF '26](https://forms.gle/E2BGWMG9AeFYdfRY6)"  
+    [![](https://ctftime.org/media/events/ctftime_logo.png){ width="200" align=left }](https://forms.gle/E2BGWMG9AeFYdfRY6)  
+    **比赛名称** : [Triada CTF '26](https://forms.gle/E2BGWMG9AeFYdfRY6)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-04-06 12:30:00 - 2026-04-07 12:30:00 UTC+8  
     **比赛权重** : 0  
