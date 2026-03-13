@@ -5,14 +5,13 @@ RUN pip install --upgrade pip
 RUN apk add --no-cache build-base
 
 WORKDIR /Hello-CTF
-COPY mkdocs.yml ./mkdocs.yml
-COPY docs ./docs
-COPY overrides ./overrides
-COPY requirements.txt ./requirements.txt
 
+COPY requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
 
-RUN mkdocs build
+COPY mkdocs.yml ./mkdocs.yml
+COPY overrides ./overrides
+COPY docs ./docs
 
 EXPOSE 8000
 
