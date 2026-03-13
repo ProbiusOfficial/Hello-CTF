@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[RedShift.ZeroPlusCTF-3](https://redshiftctf.ru/)"  
-            [![](https://ctftime.org/media/events/b00d5118-7ef3-4a84-92f4-a0929baae219_1.jpg){ width="200" align=left }](https://redshiftctf.ru/)  
-            **比赛名称** : [RedShift.ZeroPlusCTF-3](https://redshiftctf.ru/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-13 20:00:00 - 2026-03-15 20:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
-            **添加日历** : https://ctftime.org/event/3191.ics  
-            
         ??? Quote "[PsychCTF 2026](https://psychctf.xyz/)"  
             [![](https://ctftime.org/media/events/SAIC_logo_icon_min.png){ width="200" align=left }](https://psychctf.xyz/)  
             **比赛名称** : [PsychCTF 2026](https://psychctf.xyz/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : CyberHawks at UNG (https://ctftime.org/team/368776)  
             **添加日历** : https://ctftime.org/event/3134.ics  
+            
+        ??? Quote "[SUCTF 2026](https://suctf2026.xctf.org.cn/)"  
+            [![](https://ctftime.org/media/events/SU.jpg){ width="200" align=left }](https://suctf2026.xctf.org.cn/)  
+            **比赛名称** : [SUCTF 2026](https://suctf2026.xctf.org.cn/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-14 09:00:00 - 2026-03-16 09:00:00 UTC+8  
+            **比赛权重** : 24.82  
+            **赛事主办** : SU (https://ctftime.org/team/29641)  
+            **添加日历** : https://ctftime.org/event/3161.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

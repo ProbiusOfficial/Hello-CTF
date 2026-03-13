@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[RedShift.ZeroPlusCTF-3](https://redshiftctf.ru/)"  
-                [![](https://ctftime.org/media/events/b00d5118-7ef3-4a84-92f4-a0929baae219_1.jpg){ width="200" align=left }](https://redshiftctf.ru/)  
-                **比赛名称** : [RedShift.ZeroPlusCTF-3](https://redshiftctf.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-13 20:00:00 - 2026-03-15 20:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
-                **添加日历** : https://ctftime.org/event/3191.ics  
-                
             ??? Quote "[PsychCTF 2026](https://psychctf.xyz/)"  
                 [![](https://ctftime.org/media/events/SAIC_logo_icon_min.png){ width="200" align=left }](https://psychctf.xyz/)  
                 **比赛名称** : [PsychCTF 2026](https://psychctf.xyz/)  
@@ -1129,6 +1120,15 @@ hide:
                 **比赛权重** : 35.20  
                 **赛事主办** : isss (https://ctftime.org/team/69010)  
                 **添加日历** : https://ctftime.org/event/3133.ics  
+                
+            ??? Quote "[RedShift.ZeroPlusCTF-3](https://redshiftctf.ru/)"  
+                [![](https://ctftime.org/media/events/b00d5118-7ef3-4a84-92f4-a0929baae219_1.jpg){ width="200" align=left }](https://redshiftctf.ru/)  
+                **比赛名称** : [RedShift.ZeroPlusCTF-3](https://redshiftctf.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-13 20:00:00 - 2026-03-15 20:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
+                **添加日历** : https://ctftime.org/event/3191.ics  
                 
     === "*已经结束*"
         === "国内赛事"
