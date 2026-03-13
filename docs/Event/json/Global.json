@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "UTCTF 2026",
-        "比赛时间": "2026-03-13 08:23:00 - 2026-03-15 08:23:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3133.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://utctf.live/",
-        "比赛标志": "https://ctftime.org/media/events/UTCTF_2026.png",
-        "比赛权重": "35.20",
-        "赛事主办": "isss (https://ctftime.org/team/69010)",
-        "比赛ID": "281",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "RedShift.ZeroPlusCTF-3",
         "比赛时间": "2026-03-13 20:00:00 - 2026-03-15 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3191.ics",
@@ -1116,6 +1104,18 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "UTCTF 2026",
+        "比赛时间": "2026-03-13 08:23:00 - 2026-03-15 08:23:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3133.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://utctf.live/",
+        "比赛标志": "https://ctftime.org/media/events/UTCTF_2026.png",
+        "比赛权重": "35.20",
+        "赛事主办": "isss (https://ctftime.org/team/69010)",
+        "比赛ID": "281",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "ShellCTF",
         "比赛时间": "2026-03-08 14:30:00 - 2026-03-08 18:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3170.ics",
@@ -1530,7 +1530,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.pascalctf.it/",
         "比赛标志": "https://ctftime.org/media/events/log.jpg",
-        "比赛权重": "24.00",
+        "比赛权重": "24.02",
         "赛事主办": "Paolo (https://ctftime.org/team/263145)",
         "比赛ID": "1242",
         "比赛状态": "past"

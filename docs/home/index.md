@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[UTCTF 2026](https://utctf.live/)"  
-            [![](https://ctftime.org/media/events/UTCTF_2026.png){ width="200" align=left }](https://utctf.live/)  
-            **比赛名称** : [UTCTF 2026](https://utctf.live/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-13 08:23:00 - 2026-03-15 08:23:00 UTC+8  
-            **比赛权重** : 35.20  
-            **赛事主办** : isss (https://ctftime.org/team/69010)  
-            **添加日历** : https://ctftime.org/event/3133.ics  
-            
         ??? Quote "[RedShift.ZeroPlusCTF-3](https://redshiftctf.ru/)"  
             [![](https://ctftime.org/media/events/b00d5118-7ef3-4a84-92f4-a0929baae219_1.jpg){ width="200" align=left }](https://redshiftctf.ru/)  
             **比赛名称** : [RedShift.ZeroPlusCTF-3](https://redshiftctf.ru/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 24.50  
             **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
             **添加日历** : https://ctftime.org/event/3105.ics  
+            
+        ??? Quote "[Goldrush Gauntlet 2026](https://ung.ctfd.io/)"  
+            [![](https://ctftime.org/media/events/ggctf.png){ width="200" align=left }](https://ung.ctfd.io/)  
+            **比赛名称** : [Goldrush Gauntlet 2026](https://ung.ctfd.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-14 06:00:00 - 2026-03-15 06:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : CyberHawks at UNG (https://ctftime.org/team/368776)  
+            **添加日历** : https://ctftime.org/event/3134.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

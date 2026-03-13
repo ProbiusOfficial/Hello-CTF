@@ -54,3 +54,12 @@ comments: true
     **赛事主办** : Espilon (https://ctftime.org/team/423394)  
     **添加日历** : https://ctftime.org/event/3179.ics  
     
+??? Quote "[UTCTF 2026](https://utctf.live/)"  
+    [![](https://ctftime.org/media/events/UTCTF_2026.png){ width="200" align=left }](https://utctf.live/)  
+    **比赛名称** : [UTCTF 2026](https://utctf.live/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-13 08:23:00 - 2026-03-15 08:23:00 UTC+8  
+    **比赛权重** : 35.20  
+    **赛事主办** : isss (https://ctftime.org/team/69010)  
+    **添加日历** : https://ctftime.org/event/3133.ics  
+    
