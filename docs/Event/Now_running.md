@@ -81,3 +81,12 @@ comments: true
     **赛事主办** : SAIC_IITMandi (https://ctftime.org/team/251023)  
     **添加日历** : https://ctftime.org/event/3166.ics  
     
+??? Quote "[Midnight Flag CTF - EXECUTION](https://midnightflag.fr/)"  
+    [![](https://ctftime.org/media/events/logo_119.png){ width="200" align=left }](https://midnightflag.fr/)  
+    **比赛名称** : [Midnight Flag CTF - EXECUTION](https://midnightflag.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-14 04:00:00 - 2026-03-16 04:00:00 UTC+8  
+    **比赛权重** : 24.50  
+    **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
+    **添加日历** : https://ctftime.org/event/3105.ics  
+    
