@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "PsychCTF 2026",
-        "比赛时间": "2026-03-14 02:30:00 - 2026-03-16 02:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3166.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://psychctf.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/SAIC_logo_icon_min.png",
-        "比赛权重": "0.00",
-        "赛事主办": "SAIC_IITMandi (https://ctftime.org/team/251023)",
-        "比赛ID": "1520",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Midnight Flag CTF - EXECUTION",
         "比赛时间": "2026-03-14 04:00:00 - 2026-03-16 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3105.ics",
@@ -1113,6 +1101,18 @@
         "比赛权重": "0",
         "赛事主办": "o1d_bu7_go1d (https://ctftime.org/team/213673)",
         "比赛ID": "1179",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "PsychCTF 2026",
+        "比赛时间": "2026-03-14 02:30:00 - 2026-03-16 02:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3166.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://psychctf.xyz/",
+        "比赛标志": "https://ctftime.org/media/events/SAIC_logo_icon_min.png",
+        "比赛权重": "0",
+        "赛事主办": "SAIC_IITMandi (https://ctftime.org/team/251023)",
+        "比赛ID": "1520",
         "比赛状态": "nowrunning"
     },
     {

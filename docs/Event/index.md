@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[PsychCTF 2026](https://psychctf.xyz/)"  
-                [![](https://ctftime.org/media/events/SAIC_logo_icon_min.png){ width="200" align=left }](https://psychctf.xyz/)  
-                **比赛名称** : [PsychCTF 2026](https://psychctf.xyz/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-14 02:30:00 - 2026-03-16 02:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : SAIC_IITMandi (https://ctftime.org/team/251023)  
-                **添加日历** : https://ctftime.org/event/3166.ics  
-                
             ??? Quote "[Midnight Flag CTF - EXECUTION](https://midnightflag.fr/)"  
                 [![](https://ctftime.org/media/events/logo_119.png){ width="200" align=left }](https://midnightflag.fr/)  
                 **比赛名称** : [Midnight Flag CTF - EXECUTION](https://midnightflag.fr/)  
@@ -1129,6 +1120,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
                 **添加日历** : https://ctftime.org/event/3191.ics  
+                
+            ??? Quote "[PsychCTF 2026](https://psychctf.xyz/)"  
+                [![](https://ctftime.org/media/events/SAIC_logo_icon_min.png){ width="200" align=left }](https://psychctf.xyz/)  
+                **比赛名称** : [PsychCTF 2026](https://psychctf.xyz/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-14 02:30:00 - 2026-03-16 02:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : SAIC_IITMandi (https://ctftime.org/team/251023)  
+                **添加日历** : https://ctftime.org/event/3166.ics  
                 
     === "*已经结束*"
         === "国内赛事"
