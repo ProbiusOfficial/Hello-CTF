@@ -117,3 +117,12 @@ comments: true
     **赛事主办** : TPC (https://ctftime.org/team/222485)  
     **添加日历** : https://ctftime.org/event/3091.ics  
     
+??? Quote "[Dark ctf](https://crack-on.live/)"  
+    [![](){ width="200" align=left }](https://crack-on.live/)  
+    **比赛名称** : [Dark ctf](https://crack-on.live/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-14 14:30:00 - 2026-03-15 14:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Crakon  ctf (https://ctftime.org/team/426527)  
+    **添加日历** : https://ctftime.org/event/3182.ics  
+    

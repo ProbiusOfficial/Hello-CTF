@@ -1,24 +1,12 @@
 [
     {
-        "比赛名称": "Dark ctf",
-        "比赛时间": "2026-03-14 14:30:00 - 2026-03-15 14:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3182.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://crack-on.live/",
-        "比赛标志": "",
-        "比赛权重": "0",
-        "赛事主办": "Crakon  ctf (https://ctftime.org/team/426527)",
-        "比赛ID": "1531",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "MIPT CTF Quals 2026",
         "比赛时间": "2026-03-14 17:00:00 - 2026-03-15 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3162.ics",
         "比赛形式": "Jeopardy",
         "比赛链接": "https://board.miptctf.ru/",
         "比赛标志": "https://ctftime.org/media/events/miptctf.jpg",
-        "比赛权重": "13.00",
+        "比赛权重": "0.00",
         "赛事主办": "L0stAx3s (https://ctftime.org/team/354995)",
         "比赛ID": "1528",
         "比赛状态": "oncoming"
@@ -30,7 +18,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://lagncra.sh/",
         "比赛标志": "https://ctftime.org/media/events/d1f68ce184a147b1b87eabe3826986dd.png",
-        "比赛权重": "13.00",
+        "比赛权重": "0.00",
         "赛事主办": "Interpoly (https://ctftime.org/team/424494)",
         "比赛ID": "1513",
         "比赛状态": "oncoming"
@@ -78,7 +66,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://curiosityctf.xyz/",
         "比赛标志": "",
-        "比赛权重": "13.00",
+        "比赛权重": "0.00",
         "赛事主办": "Curioѕity (https://ctftime.org/team/392973)",
         "比赛ID": "1383",
         "比赛状态": "oncoming"
@@ -282,7 +270,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://www.hackforachange.org/",
         "比赛标志": "https://ctftime.org/media/events/favicon_8_1.png",
-        "比赛权重": "13.00",
+        "比赛权重": "0.00",
         "赛事主办": "Hack for a Change (https://ctftime.org/team/419248)",
         "比赛ID": "1492",
         "比赛状态": "oncoming"
@@ -330,7 +318,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.citeflag.online/",
         "比赛标志": "https://ctftime.org/media/events/logo_white_on_black_rounded.png",
-        "比赛权重": "13.00",
+        "比赛权重": "0.00",
         "赛事主办": "CITEFLAG (https://ctftime.org/team/425411)",
         "比赛ID": "1522",
         "比赛状态": "oncoming"
@@ -510,7 +498,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://kubstu-ctf.online/",
         "比赛标志": "https://ctftime.org/media/events/1233.png",
-        "比赛权重": "13.00",
+        "比赛权重": "0.00",
         "赛事主办": "Capybaras (https://ctftime.org/team/223931)",
         "比赛ID": "1499",
         "比赛状态": "oncoming"
@@ -642,7 +630,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://romhack.io/romhack-camp-ctf/",
         "比赛标志": "https://ctftime.org/media/events/From_Dusk_Till_Dawn_-_pixel_-_square.jpg",
-        "比赛权重": "13.00",
+        "比赛权重": "0.00",
         "赛事主办": "fibonhack (https://ctftime.org/team/117538)",
         "比赛ID": "880",
         "比赛状态": "oncoming"
@@ -738,7 +726,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ssmct.org/ctf",
         "比赛标志": "",
-        "比赛权重": "13.00",
+        "比赛权重": "0.00",
         "赛事主办": "Singapore Students Merger (https://ctftime.org/team/299075)",
         "比赛ID": "1329",
         "比赛状态": "oncoming"
@@ -822,7 +810,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://omnictf.com/",
         "比赛标志": "https://ctftime.org/media/events/logo1024x1024_1.png",
-        "比赛权重": "13.00",
+        "比赛权重": "0.00",
         "赛事主办": "OmniCYBR (https://ctftime.org/team/383015)",
         "比赛ID": "1412",
         "比赛状态": "oncoming"
@@ -882,7 +870,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://gaslightctf.cooking/",
         "比赛标志": "https://ctftime.org/media/events/icon_9.png",
-        "比赛权重": "13.00",
+        "比赛权重": "0.00",
         "赛事主办": "gaslighting (https://ctftime.org/team/299906)",
         "比赛ID": "1517",
         "比赛状态": "oncoming"
@@ -966,7 +954,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://wolvctf.io/",
         "比赛标志": "https://ctftime.org/media/events/wolverine-logo-square1_1.jpg",
-        "比赛权重": "33.00",
+        "比赛权重": "0.00",
         "赛事主办": "wolvsec (https://ctftime.org/team/83621)",
         "比赛ID": "766",
         "比赛状态": "oncoming"
@@ -1137,6 +1125,18 @@
         "比赛权重": "0",
         "赛事主办": "TPC (https://ctftime.org/team/222485)",
         "比赛ID": "1476",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Dark ctf",
+        "比赛时间": "2026-03-14 14:30:00 - 2026-03-15 14:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3182.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://crack-on.live/",
+        "比赛标志": "",
+        "比赛权重": "0",
+        "赛事主办": "Crakon  ctf (https://ctftime.org/team/426527)",
+        "比赛ID": "1531",
         "比赛状态": "nowrunning"
     },
     {
