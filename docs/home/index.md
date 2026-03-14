@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[MIPT CTF Quals 2026](https://board.miptctf.ru/)"  
-            [![](https://ctftime.org/media/events/miptctf.jpg){ width="200" align=left }](https://board.miptctf.ru/)  
-            **比赛名称** : [MIPT CTF Quals 2026](https://board.miptctf.ru/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-14 17:00:00 - 2026-03-15 17:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : L0stAx3s (https://ctftime.org/team/354995)  
-            **添加日历** : https://ctftime.org/event/3162.ics  
-            
         ??? Quote "[Lag N Crash 6.0](https://lagncra.sh/)"  
             [![](https://ctftime.org/media/events/d1f68ce184a147b1b87eabe3826986dd.png){ width="200" align=left }](https://lagncra.sh/)  
             **比赛名称** : [Lag N Crash 6.0](https://lagncra.sh/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 75.00  
             **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
             **添加日历** : https://ctftime.org/event/3196.ics  
+            
+        ??? Quote "[Insomni'hack 2026](https://insomnihack.ch/contest/)"  
+            [![](){ width="200" align=left }](https://insomnihack.ch/contest/)  
+            **比赛名称** : [Insomni'hack 2026](https://insomnihack.ch/contest/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-21 01:00:00 - 2026-03-21 12:00:00 UTC+8  
+            **比赛权重** : 24.14  
+            **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
+            **添加日历** : https://ctftime.org/event/3146.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

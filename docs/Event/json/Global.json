@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "MIPT CTF Quals 2026",
-        "比赛时间": "2026-03-14 17:00:00 - 2026-03-15 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3162.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://board.miptctf.ru/",
-        "比赛标志": "https://ctftime.org/media/events/miptctf.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "L0stAx3s (https://ctftime.org/team/354995)",
-        "比赛ID": "1528",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Lag N Crash 6.0",
         "比赛时间": "2026-03-16 12:00:00 - 2026-03-17 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3165.ics",
@@ -1140,6 +1128,18 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "MIPT CTF Quals 2026",
+        "比赛时间": "2026-03-14 17:00:00 - 2026-03-15 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3162.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://board.miptctf.ru/",
+        "比赛标志": "https://ctftime.org/media/events/miptctf.jpg",
+        "比赛权重": "0",
+        "赛事主办": "L0stAx3s (https://ctftime.org/team/354995)",
+        "比赛ID": "1528",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "ShellCTF",
         "比赛时间": "2026-03-08 14:30:00 - 2026-03-08 18:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3170.ics",
@@ -1410,7 +1410,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.batmans.kitchen/",
         "比赛标志": "https://ctftime.org/media/events/bklogo.png",
-        "比赛权重": "24.31",
+        "比赛权重": "24.24",
         "赛事主办": "Batman's Kitchen (https://ctftime.org/team/3135)",
         "比赛ID": "1495",
         "比赛状态": "past"
@@ -1446,7 +1446,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://chart.taipanbyte.ru/",
         "比赛标志": "",
-        "比赛权重": "24.09",
+        "比赛权重": "24.29",
         "赛事主办": "TaipanByte (https://ctftime.org/team/301788)",
         "比赛ID": "1497",
         "比赛状态": "past"
@@ -1482,7 +1482,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.0xfun.org/",
         "比赛标志": "https://ctftime.org/media/events/image_4.png",
-        "比赛权重": "17.50",
+        "比赛权重": "18.05",
         "赛事主办": "0xFUN (https://ctftime.org/team/354033)",
         "比赛ID": "1475",
         "比赛状态": "past"
@@ -1506,7 +1506,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://teams.duckerz.ru/",
         "比赛标志": "https://ctftime.org/media/events/DUCKERZ.png",
-        "比赛权重": "23.80",
+        "比赛权重": "23.20",
         "赛事主办": "DUCKERZ (https://ctftime.org/team/372036)",
         "比赛ID": "1467",
         "比赛状态": "past"
@@ -1542,7 +1542,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.prgy.in/",
         "比赛标志": "",
-        "比赛权重": "1.87",
+        "比赛权重": "1.88",
         "赛事主办": "Pragyan (https://ctftime.org/team/33867)",
         "比赛ID": "97",
         "比赛状态": "past"
@@ -1554,7 +1554,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.pascalctf.it/",
         "比赛标志": "https://ctftime.org/media/events/log.jpg",
-        "比赛权重": "24.02",
+        "比赛权重": "23.94",
         "赛事主办": "Paolo (https://ctftime.org/team/263145)",
         "比赛ID": "1242",
         "比赛状态": "past"
@@ -1566,7 +1566,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://esch26.mcsc.space/",
         "比赛标志": "",
-        "比赛权重": "23.57",
+        "比赛权重": "23.42",
         "赛事主办": "Team MCSC (https://ctftime.org/team/418958)",
         "比赛ID": "1477",
         "比赛状态": "past"
@@ -1626,7 +1626,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "http://www.hackforachange.org/",
         "比赛标志": "https://ctftime.org/media/events/logo_117.png",
-        "比赛权重": "12.60",
+        "比赛权重": "14.38",
         "赛事主办": "Hack for a Change (https://ctftime.org/team/419248)",
         "比赛ID": "1492",
         "比赛状态": "past"
@@ -1662,7 +1662,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://vsl-ctf.com/",
         "比赛标志": "https://ctftime.org/media/events/logo_16.jpg",
-        "比赛权重": "23.62",
+        "比赛权重": "23.60",
         "赛事主办": "VSL (https://ctftime.org/team/284373)",
         "比赛ID": "1448",
         "比赛状态": "past"
@@ -1722,7 +1722,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.0xL4ugh.com/",
         "比赛标志": "",
-        "比赛权重": "28.45",
+        "比赛权重": "29.19",
         "赛事主办": "0xL4ugh (https://ctftime.org/team/132776)",
         "比赛ID": "579",
         "比赛状态": "past"
@@ -1818,7 +1818,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "http://ctf.rusec.club/",
         "比赛标志": "https://ctftime.org/media/events/8ed561b45f892df2a5b105e8537794b3_1.jpg",
-        "比赛权重": "22.95",
+        "比赛权重": "23.82",
         "赛事主办": "ScarletCTF (https://ctftime.org/team/226444)",
         "比赛ID": "1143",
         "比赛状态": "past"
