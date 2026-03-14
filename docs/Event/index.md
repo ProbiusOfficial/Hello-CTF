@@ -1103,15 +1103,6 @@ hide:
                 **赛事主办** : Midnight Flag (https://ctftime.org/team/179110)  
                 **添加日历** : https://ctftime.org/event/3105.ics  
                 
-            ??? Quote "[Goldrush Gauntlet 2026](https://ung.ctfd.io/)"  
-                [![](https://ctftime.org/media/events/ggctf.png){ width="200" align=left }](https://ung.ctfd.io/)  
-                **比赛名称** : [Goldrush Gauntlet 2026](https://ung.ctfd.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-14 06:00:00 - 2026-03-15 06:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : CyberHawks at UNG (https://ctftime.org/team/368776)  
-                **添加日历** : https://ctftime.org/event/3134.ics  
-                
             ??? Quote "[SUCTF 2026](https://suctf2026.xctf.org.cn/)"  
                 [![](https://ctftime.org/media/events/SU.jpg){ width="200" align=left }](https://suctf2026.xctf.org.cn/)  
                 **比赛名称** : [SUCTF 2026](https://suctf2026.xctf.org.cn/)  
@@ -1172,6 +1163,15 @@ hide:
                 **其他说明** : 4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。  
                 
         === "国外赛事"
+            ??? Quote "[Goldrush Gauntlet 2026](https://ung.ctfd.io/)"  
+                [![](https://ctftime.org/media/events/ggctf.png){ width="200" align=left }](https://ung.ctfd.io/)  
+                **比赛名称** : [Goldrush Gauntlet 2026](https://ung.ctfd.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-14 06:00:00 - 2026-03-15 06:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : CyberHawks at UNG (https://ctftime.org/team/368776)  
+                **添加日历** : https://ctftime.org/event/3134.ics  
+                
             ??? Quote "[ShellCTF](https://shellctf.me/)"  
                 [![](https://ctftime.org/media/events/shell-ctf-icon.jpg){ width="200" align=left }](https://shellctf.me/)  
                 **比赛名称** : [ShellCTF](https://shellctf.me/)  
@@ -2062,15 +2062,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : TU Delft CTF Team (https://ctftime.org/team/134822)  
                 **添加日历** : https://ctftime.org/event/2953.ics  
-                
-            ??? Quote "[RCTF 2025](https://rctf2025.xctf.org.cn/)"  
-                [![](https://ctftime.org/media/events/rois_1.jpg){ width="200" align=left }](https://rctf2025.xctf.org.cn/)  
-                **比赛名称** : [RCTF 2025](https://rctf2025.xctf.org.cn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-15 10:00:00 - 2025-11-17 10:00:00 UTC+8  
-                **比赛权重** : 41.75  
-                **赛事主办** : ROIS (https://ctftime.org/team/6476)  
-                **添加日历** : https://ctftime.org/event/2992.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
