@@ -114,7 +114,7 @@ comments: true
     **比赛名称** : [CryptoNite CTF 2026](https://tachyon.iittp.ac.in/ctf/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-03-06 13:30:00 - 2026-03-07 19:30:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 22.11  
     **赛事主办** : blackc4t5_og (https://ctftime.org/team/177031)  
     **添加日历** : https://ctftime.org/event/3185.ics  
     
