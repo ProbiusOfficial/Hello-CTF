@@ -242,7 +242,8 @@ hide:
         | ------------ | -------------------------------------------------------- | ---------------------------------- |
         | 随波逐流     | 离线加密解密，字符编码进行转换，文件隐写查看等多项功能。 | [官网](http://1o1o.xyz/index.html) |
         | PuzzleSolver | MISC 综合解题工具，由Byxs20开发。                        | [神秘数字](https://github.com/Byxs20/PuzzleSolver)              |
-
+        | Typhon | Pyjail 自动化解题工具，由LamentXU开发。                       | [文档](https://typhon.lamentxu.top)              |
+        
     -   :material-snowflake: __开源脚本__  
 
         ---
