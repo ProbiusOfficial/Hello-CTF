@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[tkbctf5](https://alpacahack.com/ctfs/tkbctf5)"  
-            [![](https://ctftime.org/media/events/tkbctf_logo.png){ width="200" align=left }](https://alpacahack.com/ctfs/tkbctf5)  
-            **比赛名称** : [tkbctf5](https://alpacahack.com/ctfs/tkbctf5)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-14 13:00:00 - 2026-03-15 13:00:00 UTC+8  
-            **比赛权重** : 13.00  
-            **赛事主办** : TPC (https://ctftime.org/team/222485)  
-            **添加日历** : https://ctftime.org/event/3091.ics  
-            
         ??? Quote "[Dark ctf](https://crack-on.live/)"  
             [![](){ width="200" align=left }](https://crack-on.live/)  
             **比赛名称** : [Dark ctf](https://crack-on.live/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 13.00  
             **赛事主办** : Interpoly (https://ctftime.org/team/424494)  
             **添加日历** : https://ctftime.org/event/3165.ics  
+            
+        ??? Quote "[CyberCup Indian Ocean 2026 – Team Edition | Step2](https://cybercup.ocoi.org/)"  
+            [![](https://ctftime.org/media/events/logo2_10.png){ width="200" align=left }](https://cybercup.ocoi.org/)  
+            **比赛名称** : [CyberCup Indian Ocean 2026 – Team Edition | Step2](https://cybercup.ocoi.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-18 13:00:00 - 2026-03-18 22:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : Hacking Indian Ocean (https://ctftime.org/team/399138)  
+            **添加日历** : https://ctftime.org/event/3189.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
