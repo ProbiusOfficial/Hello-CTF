@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "SUCTF 2026",
-        "比赛时间": "2026-03-14 09:00:00 - 2026-03-16 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3161.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://suctf2026.xctf.org.cn/",
-        "比赛标志": "https://ctftime.org/media/events/SU.jpg",
-        "比赛权重": "24.82",
-        "赛事主办": "SU (https://ctftime.org/team/29641)",
-        "比赛ID": "1226",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "tkbctf5",
         "比赛时间": "2026-03-14 13:00:00 - 2026-03-15 13:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3091.ics",
@@ -461,7 +449,7 @@
         "添加日历": "https://ctftime.org/event/3168.ics",
         "比赛形式": "Jeopardy",
         "比赛链接": "https://mctf.microclub.info/",
-        "比赛标志": "https://ctftime.org/media/events/logo_122.png",
+        "比赛标志": "https://ctftime.org/media/events/logo_3d_version_2.png",
         "比赛权重": "0.00",
         "赛事主办": "Micro Club (https://ctftime.org/team/425393)",
         "比赛ID": "1521",
@@ -1137,6 +1125,18 @@
         "比赛权重": "0",
         "赛事主办": "CyberHawks at UNG (https://ctftime.org/team/368776)",
         "比赛ID": "1255",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "SUCTF 2026",
+        "比赛时间": "2026-03-14 09:00:00 - 2026-03-16 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3161.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://suctf2026.xctf.org.cn/",
+        "比赛标志": "https://ctftime.org/media/events/SU.jpg",
+        "比赛权重": "24.82",
+        "赛事主办": "SU (https://ctftime.org/team/29641)",
+        "比赛ID": "1226",
         "比赛状态": "nowrunning"
     },
     {

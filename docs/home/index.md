@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[SUCTF 2026](https://suctf2026.xctf.org.cn/)"  
-            [![](https://ctftime.org/media/events/SU.jpg){ width="200" align=left }](https://suctf2026.xctf.org.cn/)  
-            **比赛名称** : [SUCTF 2026](https://suctf2026.xctf.org.cn/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-14 09:00:00 - 2026-03-16 09:00:00 UTC+8  
-            **比赛权重** : 24.82  
-            **赛事主办** : SU (https://ctftime.org/team/29641)  
-            **添加日历** : https://ctftime.org/event/3161.ics  
-            
         ??? Quote "[tkbctf5](https://alpacahack.com/ctfs/tkbctf5)"  
             [![](https://ctftime.org/media/events/tkbctf_logo.png){ width="200" align=left }](https://alpacahack.com/ctfs/tkbctf5)  
             **比赛名称** : [tkbctf5](https://alpacahack.com/ctfs/tkbctf5)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 13.00  
             **赛事主办** : L0stAx3s (https://ctftime.org/team/354995)  
             **添加日历** : https://ctftime.org/event/3162.ics  
+            
+        ??? Quote "[Lag N Crash 6.0](https://lagncra.sh/)"  
+            [![](https://ctftime.org/media/events/d1f68ce184a147b1b87eabe3826986dd.png){ width="200" align=left }](https://lagncra.sh/)  
+            **比赛名称** : [Lag N Crash 6.0](https://lagncra.sh/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-16 12:00:00 - 2026-03-17 18:00:00 UTC+8  
+            **比赛权重** : 13.00  
+            **赛事主办** : Interpoly (https://ctftime.org/team/424494)  
+            **添加日历** : https://ctftime.org/event/3165.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)

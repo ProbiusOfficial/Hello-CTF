@@ -99,3 +99,12 @@ comments: true
     **赛事主办** : CyberHawks at UNG (https://ctftime.org/team/368776)  
     **添加日历** : https://ctftime.org/event/3134.ics  
     
+??? Quote "[SUCTF 2026](https://suctf2026.xctf.org.cn/)"  
+    [![](https://ctftime.org/media/events/SU.jpg){ width="200" align=left }](https://suctf2026.xctf.org.cn/)  
+    **比赛名称** : [SUCTF 2026](https://suctf2026.xctf.org.cn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-14 09:00:00 - 2026-03-16 09:00:00 UTC+8  
+    **比赛权重** : 24.82  
+    **赛事主办** : SU (https://ctftime.org/team/29641)  
+    **添加日历** : https://ctftime.org/event/3161.ics  
+    

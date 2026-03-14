@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[SUCTF 2026](https://suctf2026.xctf.org.cn/)"  
-                [![](https://ctftime.org/media/events/SU.jpg){ width="200" align=left }](https://suctf2026.xctf.org.cn/)  
-                **比赛名称** : [SUCTF 2026](https://suctf2026.xctf.org.cn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-14 09:00:00 - 2026-03-16 09:00:00 UTC+8  
-                **比赛权重** : 24.82  
-                **赛事主办** : SU (https://ctftime.org/team/29641)  
-                **添加日历** : https://ctftime.org/event/3161.ics  
-                
             ??? Quote "[tkbctf5](https://alpacahack.com/ctfs/tkbctf5)"  
                 [![](https://ctftime.org/media/events/tkbctf_logo.png){ width="200" align=left }](https://alpacahack.com/ctfs/tkbctf5)  
                 **比赛名称** : [tkbctf5](https://alpacahack.com/ctfs/tkbctf5)  
@@ -632,7 +623,7 @@ hide:
                 **添加日历** : https://ctftime.org/event/2773.ics  
                 
             ??? Quote "[MCTF 5.0](https://mctf.microclub.info/)"  
-                [![](https://ctftime.org/media/events/logo_122.png){ width="200" align=left }](https://mctf.microclub.info/)  
+                [![](https://ctftime.org/media/events/logo_3d_version_2.png){ width="200" align=left }](https://mctf.microclub.info/)  
                 **比赛名称** : [MCTF 5.0](https://mctf.microclub.info/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-04-17 03:00:00 - 2026-04-18 15:00:00 UTC+8  
@@ -1147,6 +1138,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : CyberHawks at UNG (https://ctftime.org/team/368776)  
                 **添加日历** : https://ctftime.org/event/3134.ics  
+                
+            ??? Quote "[SUCTF 2026](https://suctf2026.xctf.org.cn/)"  
+                [![](https://ctftime.org/media/events/SU.jpg){ width="200" align=left }](https://suctf2026.xctf.org.cn/)  
+                **比赛名称** : [SUCTF 2026](https://suctf2026.xctf.org.cn/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-14 09:00:00 - 2026-03-16 09:00:00 UTC+8  
+                **比赛权重** : 24.82  
+                **赛事主办** : SU (https://ctftime.org/team/29641)  
+                **添加日历** : https://ctftime.org/event/3161.ics  
                 
     === "*已经结束*"
         === "国内赛事"
