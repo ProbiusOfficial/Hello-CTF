@@ -1089,7 +1089,7 @@
         "比赛权重": "0",
         "赛事主办": "L0stAx3s (https://ctftime.org/team/354995)",
         "比赛ID": "1528",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Dark ctf",
@@ -1242,7 +1242,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://app.cyber-edu.co/competition/unr26t-international",
         "比赛标志": "https://ctftime.org/media/events/871e96a389ac3c21b9beab2096969903.jpg",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "bitsentinel (https://ctftime.org/team/280005)",
         "比赛ID": "1064",
         "比赛状态": "past"
@@ -2277,18 +2277,6 @@
         "比赛权重": "45.64",
         "赛事主办": "BinaryBears (https://ctftime.org/team/36281)",
         "比赛ID": "165",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "PwnSec CTF 2025",
-        "比赛时间": "2025-11-15 23:00:00 - 2025-11-16 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2906.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://pwnsec.ctf.ae/",
-        "比赛标志": "https://ctftime.org/media/events/pwnsec.png",
-        "比赛权重": "23.92",
-        "赛事主办": "PwnSec (https://ctftime.org/team/28797)",
-        "比赛ID": "1150",
         "比赛状态": "past"
     }
 ]

@@ -28,6 +28,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[MIPT CTF Quals 2026](https://board.miptctf.ru/)"  
+    [![](https://ctftime.org/media/events/miptctf.jpg){ width="200" align=left }](https://board.miptctf.ru/)  
+    **比赛名称** : [MIPT CTF Quals 2026](https://board.miptctf.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-14 17:00:00 - 2026-03-15 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : L0stAx3s (https://ctftime.org/team/354995)  
+    **添加日历** : https://ctftime.org/event/3162.ics  
+    
 ??? Quote "[Dark ctf](https://crack-on.live/)"  
     [![](){ width="200" align=left }](https://crack-on.live/)  
     **比赛名称** : [Dark ctf](https://crack-on.live/)  
@@ -141,7 +150,7 @@ comments: true
     **比赛名称** : [UNbreakable International 2026 - Team Phase](https://app.cyber-edu.co/competition/unr26t-international)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-03-06 17:00:00 - 2026-03-08 17:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : bitsentinel (https://ctftime.org/team/280005)  
     **添加日历** : https://ctftime.org/event/3172.ics  
     
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 45.64  
     **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
     **添加日历** : https://ctftime.org/event/2996.ics  
-    
-??? Quote "[PwnSec CTF 2025](https://pwnsec.ctf.ae/)"  
-    [![](https://ctftime.org/media/events/pwnsec.png){ width="200" align=left }](https://pwnsec.ctf.ae/)  
-    **比赛名称** : [PwnSec CTF 2025](https://pwnsec.ctf.ae/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-15 23:00:00 - 2025-11-16 23:00:00 UTC+8  
-    **比赛权重** : 23.92  
-    **赛事主办** : PwnSec (https://ctftime.org/team/28797)  
-    **添加日历** : https://ctftime.org/event/2906.ics  
     
