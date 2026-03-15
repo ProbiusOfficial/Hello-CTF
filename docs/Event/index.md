@@ -541,9 +541,9 @@ hide:
                 **赛事主办** : Penn State CCSO (https://ctftime.org/team/367931)  
                 **添加日历** : https://ctftime.org/event/3042.ics  
                 
-            ??? Quote "[Triada CTF '26](https://forms.gle/E2BGWMG9AeFYdfRY6)"  
-                [![](https://ctftime.org/media/events/ctftime_logo.png){ width="200" align=left }](https://forms.gle/E2BGWMG9AeFYdfRY6)  
-                **比赛名称** : [Triada CTF '26](https://forms.gle/E2BGWMG9AeFYdfRY6)  
+            ??? Quote "[Triada CTF '26](http://ctf26.triada.in/)"  
+                [![](https://ctftime.org/media/events/ctftime_logo.png){ width="200" align=left }](http://ctf26.triada.in/)  
+                **比赛名称** : [Triada CTF '26](http://ctf26.triada.in/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-04-06 12:30:00 - 2026-04-07 12:30:00 UTC+8  
                 **比赛权重** : 0  
@@ -1103,15 +1103,6 @@ hide:
                 **赛事主办** : SU (https://ctftime.org/team/29641)  
                 **添加日历** : https://ctftime.org/event/3161.ics  
                 
-            ??? Quote "[Dark ctf](https://crack-on.live/)"  
-                [![](){ width="200" align=left }](https://crack-on.live/)  
-                **比赛名称** : [Dark ctf](https://crack-on.live/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-14 14:30:00 - 2026-03-15 14:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Crakon  ctf (https://ctftime.org/team/426527)  
-                **添加日历** : https://ctftime.org/event/3182.ics  
-                
             ??? Quote "[MIPT CTF Quals 2026](https://board.miptctf.ru/)"  
                 [![](https://ctftime.org/media/events/miptctf.jpg){ width="200" align=left }](https://board.miptctf.ru/)  
                 **比赛名称** : [MIPT CTF Quals 2026](https://board.miptctf.ru/)  
@@ -1145,6 +1136,15 @@ hide:
                 **其他说明** : 4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。  
                 
         === "国外赛事"
+            ??? Quote "[Dark ctf](https://crack-on.live/)"  
+                [![](){ width="200" align=left }](https://crack-on.live/)  
+                **比赛名称** : [Dark ctf](https://crack-on.live/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-14 14:30:00 - 2026-03-15 14:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Crakon  ctf (https://ctftime.org/team/426527)  
+                **添加日历** : https://ctftime.org/event/3182.ics  
+                
             ??? Quote "[tkbctf5](https://alpacahack.com/ctfs/tkbctf5)"  
                 [![](https://ctftime.org/media/events/tkbctf_logo.png){ width="200" align=left }](https://alpacahack.com/ctfs/tkbctf5)  
                 **比赛名称** : [tkbctf5](https://alpacahack.com/ctfs/tkbctf5)  
@@ -2035,15 +2035,6 @@ hide:
                 **比赛权重** : 23.92  
                 **赛事主办** : PwnSec (https://ctftime.org/team/28797)  
                 **添加日历** : https://ctftime.org/event/2906.ics  
-                
-            ??? Quote "[Crate-CTF 2025](https://foi.se/cratectf)"  
-                [![](https://ctftime.org/media/events/CTF_2025.png){ width="200" align=left }](https://foi.se/cratectf)  
-                **比赛名称** : [Crate-CTF 2025](https://foi.se/cratectf)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-15 21:00:00 - 2025-11-16 05:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : Crate-CTF (https://ctftime.org/team/352250)  
-                **添加日历** : https://ctftime.org/event/2838.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
