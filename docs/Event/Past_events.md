@@ -64,6 +64,15 @@ comments: true
     **赛事主办** : CyberHawks at UNG (https://ctftime.org/team/368776)  
     **添加日历** : https://ctftime.org/event/3134.ics  
     
+??? Quote "[RedShift.ZeroPlusCTF-3](https://redshiftctf.ru/)"  
+    [![](https://ctftime.org/media/events/b00d5118-7ef3-4a84-92f4-a0929baae219_1.jpg){ width="200" align=left }](https://redshiftctf.ru/)  
+    **比赛名称** : [RedShift.ZeroPlusCTF-3](https://redshiftctf.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-13 20:00:00 - 2026-03-15 20:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
+    **添加日历** : https://ctftime.org/event/3191.ics  
+    
 ??? Quote "[UTCTF 2026](https://utctf.live/)"  
     [![](https://ctftime.org/media/events/UTCTF_2026.png){ width="200" align=left }](https://utctf.live/)  
     **比赛名称** : [UTCTF 2026](https://utctf.live/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Hacken Proof (https://ctftime.org/team/411613)  
     **添加日历** : https://ctftime.org/event/3007.ics  
-    
-??? Quote "[M*CTF 2025 Quals](https://mctf.mtuci.ru/)"  
-    [![](https://ctftime.org/media/events/logo_15.jpg){ width="200" align=left }](https://mctf.mtuci.ru/)  
-    **比赛名称** : [M*CTF 2025 Quals](https://mctf.mtuci.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-16 17:00:00 - 2025-11-17 17:00:00 UTC+8  
-    **比赛权重** : 45.64  
-    **赛事主办** : BinaryBears (https://ctftime.org/team/36281)  
-    **添加日历** : https://ctftime.org/event/2996.ics  
     
