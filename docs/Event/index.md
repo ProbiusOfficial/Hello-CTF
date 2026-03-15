@@ -1103,15 +1103,6 @@ hide:
                 **赛事主办** : SU (https://ctftime.org/team/29641)  
                 **添加日历** : https://ctftime.org/event/3161.ics  
                 
-            ??? Quote "[tkbctf5](https://alpacahack.com/ctfs/tkbctf5)"  
-                [![](https://ctftime.org/media/events/tkbctf_logo.png){ width="200" align=left }](https://alpacahack.com/ctfs/tkbctf5)  
-                **比赛名称** : [tkbctf5](https://alpacahack.com/ctfs/tkbctf5)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-14 13:00:00 - 2026-03-15 13:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : TPC (https://ctftime.org/team/222485)  
-                **添加日历** : https://ctftime.org/event/3091.ics  
-                
             ??? Quote "[Dark ctf](https://crack-on.live/)"  
                 [![](){ width="200" align=left }](https://crack-on.live/)  
                 **比赛名称** : [Dark ctf](https://crack-on.live/)  
@@ -1154,6 +1145,15 @@ hide:
                 **其他说明** : 4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。  
                 
         === "国外赛事"
+            ??? Quote "[tkbctf5](https://alpacahack.com/ctfs/tkbctf5)"  
+                [![](https://ctftime.org/media/events/tkbctf_logo.png){ width="200" align=left }](https://alpacahack.com/ctfs/tkbctf5)  
+                **比赛名称** : [tkbctf5](https://alpacahack.com/ctfs/tkbctf5)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-14 13:00:00 - 2026-03-15 13:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : TPC (https://ctftime.org/team/222485)  
+                **添加日历** : https://ctftime.org/event/3091.ics  
+                
             ??? Quote "[Goldrush Gauntlet 2026](https://ung.ctfd.io/)"  
                 [![](https://ctftime.org/media/events/ggctf.png){ width="200" align=left }](https://ung.ctfd.io/)  
                 **比赛名称** : [Goldrush Gauntlet 2026](https://ung.ctfd.io/)  
@@ -2044,15 +2044,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : Crate-CTF (https://ctftime.org/team/352250)  
                 **添加日历** : https://ctftime.org/event/2838.ics  
-                
-            ??? Quote "[Platypwn 2025](https://platypwnies.de/events/platypwn/)"  
-                [![](https://ctftime.org/media/events/platypwnies-512_1.png){ width="200" align=left }](https://platypwnies.de/events/platypwn/)  
-                **比赛名称** : [Platypwn 2025](https://platypwnies.de/events/platypwn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-15 17:00:00 - 2025-11-17 05:00:00 UTC+8  
-                **比赛权重** : 33.29  
-                **赛事主办** : Platypwnies (https://ctftime.org/team/112550)  
-                **添加日历** : https://ctftime.org/event/2606.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

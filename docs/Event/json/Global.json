@@ -1080,18 +1080,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "tkbctf5",
-        "比赛时间": "2026-03-14 13:00:00 - 2026-03-15 13:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3091.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://alpacahack.com/ctfs/tkbctf5",
-        "比赛标志": "https://ctftime.org/media/events/tkbctf_logo.png",
-        "比赛权重": "0",
-        "赛事主办": "TPC (https://ctftime.org/team/222485)",
-        "比赛ID": "1476",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Dark ctf",
         "比赛时间": "2026-03-14 14:30:00 - 2026-03-15 14:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3182.ics",
@@ -1114,6 +1102,18 @@
         "赛事主办": "L0stAx3s (https://ctftime.org/team/354995)",
         "比赛ID": "1528",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "tkbctf5",
+        "比赛时间": "2026-03-14 13:00:00 - 2026-03-15 13:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3091.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://alpacahack.com/ctfs/tkbctf5",
+        "比赛标志": "https://ctftime.org/media/events/tkbctf_logo.png",
+        "比赛权重": "0",
+        "赛事主办": "TPC (https://ctftime.org/team/222485)",
+        "比赛ID": "1476",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Goldrush Gauntlet 2026",
@@ -2301,18 +2301,6 @@
         "比赛权重": "25.00",
         "赛事主办": "Crate-CTF (https://ctftime.org/team/352250)",
         "比赛ID": "1172",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Platypwn 2025",
-        "比赛时间": "2025-11-15 17:00:00 - 2025-11-17 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2606.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://platypwnies.de/events/platypwn/",
-        "比赛标志": "https://ctftime.org/media/events/platypwnies-512_1.png",
-        "比赛权重": "33.29",
-        "赛事主办": "Platypwnies (https://ctftime.org/team/112550)",
-        "比赛ID": "979",
         "比赛状态": "past"
     }
 ]
