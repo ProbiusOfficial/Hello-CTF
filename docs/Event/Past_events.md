@@ -141,7 +141,7 @@ comments: true
     **比赛名称** : [Axiom CTF 2026](https://ctf.4x10m.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-03-07 15:00:00 - 2026-03-09 03:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 23.74  
     **赛事主办** : 4x10m (https://ctftime.org/team/418607)  
     **添加日历** : https://ctftime.org/event/3129.ics  
     
