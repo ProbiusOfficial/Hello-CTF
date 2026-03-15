@@ -1032,18 +1032,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "PsychCTF 2026",
-        "比赛时间": "2026-03-14 02:30:00 - 2026-03-16 02:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3166.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://psychctf.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/SAIC_logo_icon_min.png",
-        "比赛权重": "0",
-        "赛事主办": "SAIC_IITMandi (https://ctftime.org/team/251023)",
-        "比赛ID": "1520",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Midnight Flag CTF - EXECUTION",
         "比赛时间": "2026-03-14 04:00:00 - 2026-03-16 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3105.ics",
@@ -1113,6 +1101,18 @@
         "比赛权重": "0",
         "赛事主办": "CyberHawks at UNG (https://ctftime.org/team/368776)",
         "比赛ID": "1255",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "PsychCTF 2026",
+        "比赛时间": "2026-03-14 02:30:00 - 2026-03-16 02:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3166.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://psychctf.xyz/",
+        "比赛标志": "https://ctftime.org/media/events/SAIC_logo_icon_min.png",
+        "比赛权重": "0",
+        "赛事主办": "SAIC_IITMandi (https://ctftime.org/team/251023)",
+        "比赛ID": "1520",
         "比赛状态": "past"
     },
     {
@@ -2253,18 +2253,6 @@
         "比赛权重": "21.00",
         "赛事主办": "MadrHacks (https://ctftime.org/team/114509)",
         "比赛ID": "994",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Ukrainian National CTF",
-        "比赛时间": "2025-11-20 08:00:00 - 2025-12-01 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3007.ics",
-        "比赛形式": "Hack quest",
-        "比赛链接": "https://hackenproof.com/gur-national-ctf-en",
-        "比赛标志": "https://ctftime.org/media/events/nationalCtf.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Hacken Proof (https://ctftime.org/team/411613)",
-        "比赛ID": "1444",
         "比赛状态": "past"
     }
 ]
