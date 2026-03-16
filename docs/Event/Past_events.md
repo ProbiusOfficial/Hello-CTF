@@ -28,9 +28,9 @@ comments: true
     
 
 ## 国际赛事
-??? Quote "[MIPT CTF Quals 2026](https://board.miptctf.ru/)"  
-    [![](https://ctftime.org/media/events/miptctf.jpg){ width="200" align=left }](https://board.miptctf.ru/)  
-    **比赛名称** : [MIPT CTF Quals 2026](https://board.miptctf.ru/)  
+??? Quote "[MIPT CTF Quals 2026](https://miptctf.ru/)"  
+    [![](https://ctftime.org/media/events/miptctf.jpg){ width="200" align=left }](https://miptctf.ru/)  
+    **比赛名称** : [MIPT CTF Quals 2026](https://miptctf.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-03-14 17:00:00 - 2026-03-15 17:00:00 UTC+8  
     **比赛权重** : 0  
@@ -150,7 +150,7 @@ comments: true
     **比赛名称** : [upCTF 2026](https://ctf.xstf.pt/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-03-07 17:00:00 - 2026-03-09 17:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 24.96  
     **赛事主办** : xSTF (https://ctftime.org/team/15341)  
     **添加日历** : https://ctftime.org/event/3073.ics  
     

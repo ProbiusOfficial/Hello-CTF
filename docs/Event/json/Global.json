@@ -1036,7 +1036,7 @@
         "比赛时间": "2026-03-14 17:00:00 - 2026-03-15 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3162.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://board.miptctf.ru/",
+        "比赛链接": "https://miptctf.ru/",
         "比赛标志": "https://ctftime.org/media/events/miptctf.jpg",
         "比赛权重": "0",
         "赛事主办": "L0stAx3s (https://ctftime.org/team/354995)",
@@ -1194,7 +1194,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.xstf.pt/",
         "比赛标志": "https://ctftime.org/media/events/logo_yellow_1.png",
-        "比赛权重": "0",
+        "比赛权重": "24.96",
         "赛事主办": "xSTF (https://ctftime.org/team/15341)",
         "比赛ID": "1481",
         "比赛状态": "past"
