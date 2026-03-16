@@ -1032,18 +1032,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "SUCTF 2026",
-        "比赛时间": "2026-03-14 09:00:00 - 2026-03-16 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3161.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://suctf2026.xctf.org.cn/",
-        "比赛标志": "https://ctftime.org/media/events/SU.jpg",
-        "比赛权重": "24.82",
-        "赛事主办": "SU (https://ctftime.org/team/29641)",
-        "比赛ID": "1226",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "MIPT CTF Quals 2026",
         "比赛时间": "2026-03-14 17:00:00 - 2026-03-15 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3162.ics",
@@ -1077,6 +1065,18 @@
         "比赛权重": "0",
         "赛事主办": "TPC (https://ctftime.org/team/222485)",
         "比赛ID": "1476",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "SUCTF 2026",
+        "比赛时间": "2026-03-14 09:00:00 - 2026-03-16 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3161.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://suctf2026.xctf.org.cn/",
+        "比赛标志": "https://ctftime.org/media/events/SU.jpg",
+        "比赛权重": "24.82",
+        "赛事主办": "SU (https://ctftime.org/team/29641)",
+        "比赛ID": "1226",
         "比赛状态": "past"
     },
     {
@@ -2229,18 +2229,6 @@
         "比赛权重": "0",
         "赛事主办": "MetaCTF (https://ctftime.org/team/72254)",
         "比赛ID": "500",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Hardwear.io NL 2025 Hardware CTF",
-        "比赛时间": "2025-11-20 17:00:00 - 2025-11-21 20:50:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3002.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hwc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/logohwcolor_16.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Hardware CTF (https://ctftime.org/team/274600)",
-        "比赛ID": "1021",
         "比赛状态": "past"
     }
 ]

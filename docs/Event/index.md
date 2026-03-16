@@ -1067,15 +1067,6 @@ hide:
                 **赛事主办** : Espilon (https://ctftime.org/team/423394)  
                 **添加日历** : https://ctftime.org/event/3179.ics  
                 
-            ??? Quote "[SUCTF 2026](https://suctf2026.xctf.org.cn/)"  
-                [![](https://ctftime.org/media/events/SU.jpg){ width="200" align=left }](https://suctf2026.xctf.org.cn/)  
-                **比赛名称** : [SUCTF 2026](https://suctf2026.xctf.org.cn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-14 09:00:00 - 2026-03-16 09:00:00 UTC+8  
-                **比赛权重** : 24.82  
-                **赛事主办** : SU (https://ctftime.org/team/29641)  
-                **添加日历** : https://ctftime.org/event/3161.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[HGAME 2026](https://hgame.vidar.club/)"  
@@ -1126,6 +1117,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : TPC (https://ctftime.org/team/222485)  
                 **添加日历** : https://ctftime.org/event/3091.ics  
+                
+            ??? Quote "[SUCTF 2026](https://suctf2026.xctf.org.cn/)"  
+                [![](https://ctftime.org/media/events/SU.jpg){ width="200" align=left }](https://suctf2026.xctf.org.cn/)  
+                **比赛名称** : [SUCTF 2026](https://suctf2026.xctf.org.cn/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-14 09:00:00 - 2026-03-16 09:00:00 UTC+8  
+                **比赛权重** : 24.82  
+                **赛事主办** : SU (https://ctftime.org/team/29641)  
+                **添加日历** : https://ctftime.org/event/3161.ics  
                 
             ??? Quote "[Goldrush Gauntlet 2026](https://ung.ctfd.io/)"  
                 [![](https://ctftime.org/media/events/ggctf.png){ width="200" align=left }](https://ung.ctfd.io/)  
@@ -1990,15 +1990,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
                 **添加日历** : https://ctftime.org/event/3010.ics  
-                
-            ??? Quote "[Hardwear.io NL 2025 Hardware CTF](https://hwc.tf/)"  
-                [![](https://ctftime.org/media/events/logohwcolor_16.png){ width="200" align=left }](https://hwc.tf/)  
-                **比赛名称** : [Hardwear.io NL 2025 Hardware CTF](https://hwc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-20 17:00:00 - 2025-11-21 20:50:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Hardware CTF (https://ctftime.org/team/274600)  
-                **添加日历** : https://ctftime.org/event/3002.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
