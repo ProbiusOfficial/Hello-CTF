@@ -97,10 +97,6 @@ hide:
     >by [xia0ji233](https://xia0ji233.pro/), 2025-12-14
 
     今天开始学学 ARM 指令集，也为之后安卓的学习铺铺路。ARM 是一种 RISC（精简指令集计算）处理器，因此拥有简化指令集（100 条指令或更少）和比 CISC（复杂指令集） 更多的通用寄存器。与英特尔不同，ARM 使用仅在寄存器上操作的指令，并使用 Load/Store 内存模型进行内存访问，这意味着只有 Load/Store 指令可以访问内存，其余的运算操作必须在寄存器中完成。环境准备手上没...
-    ### [信息搜集之边缘资产和隐形资产的发掘](https://blog.zgsec.cn/archives/729.html)  
-    >by [曾哥](https://blog.zgsec.cn/), 2025-11-30
-
-    0# 概述0.1 本文原创首发于国家网络空间云安全社区一眨眼的时间，马上就要过年了，不知道大家今年都过得如何？近期有不少师傅在抖音咨询我，问我说：常规的漏洞原理和利用都捻熟于心，但是为什么在SRC挖掘和攻防中，往往就是挖不到漏洞呢？我给了两点回复：第一个就是实战的经验比较少，对于漏洞在哪出现，有什么手法还掌握的不多；第二个是信息搜集没有得到要领，只会僵硬的进行信息搜集，对于边缘资产和隐形资产的发掘...
     ### [强网杯S9决赛Pwn writeup](https://xia0ji233.github.io/2025/11/26/qwb2025_final/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2025-11-26
 
@@ -153,5 +149,9 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2025-07-02
 
     d5bbf63b983168fb9cf0422698dce164b3b689fc252cba3faf3c75a652cdd7c0542690352b3ccfd95568bcdfd22e06b269ecaac13fedf5ec80edcfabe636ba58c0bd7707365d4cb09a79587d7876384f00fb8b2d3df17b696f7eefba94b5c2d66b93ca...
+    ### [浅析Gogs 远程命令执行(CVE-2024-56731)](https://y4tacker.github.io/2025/06/25/year/2025/06/%E6%B5%85%E6%9E%90Gogs-%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-CVE-2024-56731/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-06-25
+
+    61250ef0d935a4a9d2eb682839325b52407d6a12bdde2eb831889d10036bea8106e2cbab4d0545b5551fe1a0fea6f3d58b8ee44d7110304bee8ff7333000d35c5b12e6d6807bdab93f096bd15b0c005660b70215b08b001ec238e70442e03904450ea3...
 
 </div>

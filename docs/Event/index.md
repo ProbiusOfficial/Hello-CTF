@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Lag N Crash 6.0](https://lagncra.sh/)"  
-                [![](https://ctftime.org/media/events/d1f68ce184a147b1b87eabe3826986dd.png){ width="200" align=left }](https://lagncra.sh/)  
-                **比赛名称** : [Lag N Crash 6.0](https://lagncra.sh/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-16 12:00:00 - 2026-03-17 18:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Interpoly (https://ctftime.org/team/424494)  
-                **添加日历** : https://ctftime.org/event/3165.ics  
-                
             ??? Quote "[CyberCup Indian Ocean 2026 – Team Edition | Step2](https://cybercup.ocoi.org/)"  
                 [![](https://ctftime.org/media/events/logo2_10.png){ width="200" align=left }](https://cybercup.ocoi.org/)  
                 **比赛名称** : [CyberCup Indian Ocean 2026 – Team Edition | Step2](https://cybercup.ocoi.org/)  
@@ -1066,6 +1057,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Espilon (https://ctftime.org/team/423394)  
                 **添加日历** : https://ctftime.org/event/3179.ics  
+                
+            ??? Quote "[Lag N Crash 6.0](https://lagncra.sh/)"  
+                [![](https://ctftime.org/media/events/d1f68ce184a147b1b87eabe3826986dd.png){ width="200" align=left }](https://lagncra.sh/)  
+                **比赛名称** : [Lag N Crash 6.0](https://lagncra.sh/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-16 12:00:00 - 2026-03-17 18:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Interpoly (https://ctftime.org/team/424494)  
+                **添加日历** : https://ctftime.org/event/3165.ics  
                 
     === "*已经结束*"
         === "国内赛事"
