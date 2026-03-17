@@ -334,6 +334,15 @@ comments: true
     **赛事主办** : BITSkrieg (https://ctftime.org/team/22310)  
     **添加日历** : https://ctftime.org/event/3122.ics  
     
+??? Quote "[RamadanCTF 2026](https://labs.vulnbydefault.com/)"  
+    [![](https://ctftime.org/media/events/WhatsApp_Image_2026-02-05_at_9.01.11_PM.jpeg){ width="200" align=left }](https://labs.vulnbydefault.com/)  
+    **比赛名称** : [RamadanCTF 2026](https://labs.vulnbydefault.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-02-18 08:00:00 - 2026-03-17 08:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : vulnbydefault (https://ctftime.org/team/423471)  
+    **添加日历** : https://ctftime.org/event/3135.ics  
+    
 ??? Quote "[TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)"  
     [![](){ width="200" align=left }](https://chart.taipanbyte.ru/)  
     **比赛名称** : [TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 42.42  
     **赛事主办** : Competitive Cyber at Mason (https://ctftime.org/team/176906)  
     **添加日历** : https://ctftime.org/event/2850.ics  
-    
-??? Quote "[MetaCTF November 2025 Flash CTF](https://mctf.io/nov2025)"  
-    [![](){ width="200" align=left }](https://mctf.io/nov2025)  
-    **比赛名称** : [MetaCTF November 2025 Flash CTF](https://mctf.io/nov2025)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-21 06:00:00 - 2025-11-21 08:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
-    **添加日历** : https://ctftime.org/event/3010.ics  
     
