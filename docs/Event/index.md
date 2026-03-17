@@ -1049,15 +1049,6 @@ hide:
                 **赛事主办** : Espilon (https://ctftime.org/team/423394)  
                 **添加日历** : https://ctftime.org/event/3179.ics  
                 
-            ??? Quote "[Lag N Crash 6.0](https://lagncra.sh/)"  
-                [![](https://ctftime.org/media/events/d1f68ce184a147b1b87eabe3826986dd.png){ width="200" align=left }](https://lagncra.sh/)  
-                **比赛名称** : [Lag N Crash 6.0](https://lagncra.sh/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-16 12:00:00 - 2026-03-17 18:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Interpoly (https://ctftime.org/team/424494)  
-                **添加日历** : https://ctftime.org/event/3165.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[HGAME 2026](https://hgame.vidar.club/)"  
@@ -1082,6 +1073,15 @@ hide:
                 **其他说明** : 4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。  
                 
         === "国外赛事"
+            ??? Quote "[Lag N Crash 6.0](https://lagncra.sh/)"  
+                [![](https://ctftime.org/media/events/d1f68ce184a147b1b87eabe3826986dd.png){ width="200" align=left }](https://lagncra.sh/)  
+                **比赛名称** : [Lag N Crash 6.0](https://lagncra.sh/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-16 12:00:00 - 2026-03-17 18:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Interpoly (https://ctftime.org/team/424494)  
+                **添加日历** : https://ctftime.org/event/3165.ics  
+                
             ??? Quote "[MIPT CTF Quals 2026](https://miptctf.ru/)"  
                 [![](https://ctftime.org/media/events/miptctf.jpg){ width="200" align=left }](https://miptctf.ru/)  
                 **比赛名称** : [MIPT CTF Quals 2026](https://miptctf.ru/)  
@@ -1972,15 +1972,6 @@ hide:
                 **比赛权重** : 24.68  
                 **赛事主办** : sknb (https://ctftime.org/team/355880)  
                 **添加日历** : https://ctftime.org/event/2947.ics  
-                
-            ??? Quote "[PatriotCTF 2025](http://pctf.competitivecyber.club/)"  
-                [![](https://ctftime.org/media/events/71044796c6f64e9996d2077fd0b64c4c.jpg){ width="200" align=left }](http://pctf.competitivecyber.club/)  
-                **比赛名称** : [PatriotCTF 2025](http://pctf.competitivecyber.club/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-22 02:00:00 - 2025-11-24 02:00:00 UTC+8  
-                **比赛权重** : 42.42  
-                **赛事主办** : Competitive Cyber at Mason (https://ctftime.org/team/176906)  
-                **添加日历** : https://ctftime.org/event/2850.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

@@ -1017,7 +1017,7 @@
         "比赛权重": "0",
         "赛事主办": "Interpoly (https://ctftime.org/team/424494)",
         "比赛ID": "1513",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "MIPT CTF Quals 2026",
@@ -2205,18 +2205,6 @@
         "比赛权重": "24.68",
         "赛事主办": "sknb (https://ctftime.org/team/355880)",
         "比赛ID": "1416",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "PatriotCTF 2025",
-        "比赛时间": "2025-11-22 02:00:00 - 2025-11-24 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2850.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://pctf.competitivecyber.club/",
-        "比赛标志": "https://ctftime.org/media/events/71044796c6f64e9996d2077fd0b64c4c.jpg",
-        "比赛权重": "42.42",
-        "赛事主办": "Competitive Cyber at Mason (https://ctftime.org/team/176906)",
-        "比赛ID": "737",
         "比赛状态": "past"
     }
 ]
