@@ -84,6 +84,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "PolyPwnCTF 2026",
+        "比赛时间": "2026-03-21 18:00:00 - 2026-03-22 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3203.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://polypwn.polycyber.io/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "PolyCyber (https://ctftime.org/team/212241)",
+        "比赛ID": "1285",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Undutmaning 2026",
         "比赛时间": "2026-03-21 19:00:00 - 2026-03-22 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2987.ics",
@@ -105,6 +117,18 @@
         "比赛权重": "0.00",
         "赛事主办": "redfoxteam (https://ctftime.org/team/424518)",
         "比赛ID": "1516",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "AITU CTF 2026 Quals",
+        "比赛时间": "2026-03-23 15:00:00 - 2026-03-24 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3204.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.fr13nds.team/",
+        "比赛标志": "https://ctftime.org/media/events/icon-black.png",
+        "比赛权重": "0.00",
+        "赛事主办": "FR13NDS TEAM (https://ctftime.org/team/155678)",
+        "比赛ID": "1547",
         "比赛状态": "oncoming"
     },
     {
@@ -393,6 +417,18 @@
         "比赛权重": "48.17",
         "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
         "比赛ID": "246",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "PUTCyberDays CTF 2026",
+        "比赛时间": "2026-04-11 18:00:00 - 2026-04-12 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3202.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://putcyberdays.pl/en/",
+        "比赛标志": "https://ctftime.org/media/events/logo_wydarzenia.png",
+        "比赛权重": "0.00",
+        "赛事主办": "PUTrequest_ (https://ctftime.org/team/196643)",
+        "比赛ID": "1542",
         "比赛状态": "oncoming"
     },
     {

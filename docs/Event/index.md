@@ -352,6 +352,15 @@ hide:
                 **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
                 **添加日历** : https://ctftime.org/event/3063.ics  
                 
+            ??? Quote "[PolyPwnCTF 2026](https://polypwn.polycyber.io/)"  
+                [![](){ width="200" align=left }](https://polypwn.polycyber.io/)  
+                **比赛名称** : [PolyPwnCTF 2026](https://polypwn.polycyber.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-21 18:00:00 - 2026-03-22 05:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
+                **添加日历** : https://ctftime.org/event/3203.ics  
+                
             ??? Quote "[Undutmaning 2026](https://undutmaning.se/)"  
                 [![](https://ctftime.org/media/events/logo_2026_border.png){ width="200" align=left }](https://undutmaning.se/)  
                 **比赛名称** : [Undutmaning 2026](https://undutmaning.se/)  
@@ -369,6 +378,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : redfoxteam (https://ctftime.org/team/424518)  
                 **添加日历** : https://ctftime.org/event/3163.ics  
+                
+            ??? Quote "[AITU CTF 2026 Quals](https://ctf.fr13nds.team/)"  
+                [![](https://ctftime.org/media/events/icon-black.png){ width="200" align=left }](https://ctf.fr13nds.team/)  
+                **比赛名称** : [AITU CTF 2026 Quals](https://ctf.fr13nds.team/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-23 15:00:00 - 2026-03-24 03:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : FR13NDS TEAM (https://ctftime.org/team/155678)  
+                **添加日历** : https://ctftime.org/event/3204.ics  
                 
             ??? Quote "[Stranger's CTF - Techtrix '26](https://upsidectf.online/)"  
                 [![](){ width="200" align=left }](https://upsidectf.online/)  
@@ -585,6 +603,15 @@ hide:
                 **比赛权重** : 48.17  
                 **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
                 **添加日历** : https://ctftime.org/event/2773.ics  
+                
+            ??? Quote "[PUTCyberDays CTF 2026](https://putcyberdays.pl/en/)"  
+                [![](https://ctftime.org/media/events/logo_wydarzenia.png){ width="200" align=left }](https://putcyberdays.pl/en/)  
+                **比赛名称** : [PUTCyberDays CTF 2026](https://putcyberdays.pl/en/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-04-11 18:00:00 - 2026-04-12 18:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : PUTrequest_ (https://ctftime.org/team/196643)  
+                **添加日历** : https://ctftime.org/event/3202.ics  
                 
             ??? Quote "[MCTF 5.0](https://mctf.microclub.info/)"  
                 [![](https://ctftime.org/media/events/logo_3d_version_2.png){ width="200" align=left }](https://mctf.microclub.info/)  
