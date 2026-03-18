@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "CyberCup Indian Ocean 2026 – Team Edition | Step2",
-        "比赛时间": "2026-03-18 13:00:00 - 2026-03-18 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3189.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cybercup.ocoi.org/",
-        "比赛标志": "https://ctftime.org/media/events/logo2_10.png",
-        "比赛权重": "0",
-        "赛事主办": "Hacking Indian Ocean (https://ctftime.org/team/399138)",
-        "比赛ID": "1498",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "m0leCon CTF 2026",
         "比赛时间": "2026-03-20 00:00:00 - 2026-03-21 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3196.ics",
@@ -1041,6 +1029,18 @@
         "比赛权重": "0",
         "赛事主办": "Espilon (https://ctftime.org/team/423394)",
         "比赛ID": "1512",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CyberCup Indian Ocean 2026 – Team Edition | Step2",
+        "比赛时间": "2026-03-18 13:00:00 - 2026-03-18 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3189.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cybercup.ocoi.org/",
+        "比赛标志": "https://ctftime.org/media/events/logo2_10.png",
+        "比赛权重": "0",
+        "赛事主办": "Hacking Indian Ocean (https://ctftime.org/team/399138)",
+        "比赛ID": "1498",
         "比赛状态": "nowrunning"
     },
     {
