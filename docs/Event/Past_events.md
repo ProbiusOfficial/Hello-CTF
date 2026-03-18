@@ -28,6 +28,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[CyberCup Indian Ocean 2026 – Team Edition | Step2](https://cybercup.ocoi.org/)"  
+    [![](https://ctftime.org/media/events/logo2_10.png){ width="200" align=left }](https://cybercup.ocoi.org/)  
+    **比赛名称** : [CyberCup Indian Ocean 2026 – Team Edition | Step2](https://cybercup.ocoi.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-18 13:00:00 - 2026-03-18 22:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Hacking Indian Ocean (https://ctftime.org/team/399138)  
+    **添加日历** : https://ctftime.org/event/3189.ics  
+    
 ??? Quote "[Lag N Crash 6.0](https://lagncra.sh/)"  
     [![](https://ctftime.org/media/events/d1f68ce184a147b1b87eabe3826986dd.png){ width="200" align=left }](https://lagncra.sh/)  
     **比赛名称** : [Lag N Crash 6.0](https://lagncra.sh/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 96.90  
     **赛事主办** : BIZone (https://ctftime.org/team/32190)  
     **添加日历** : https://ctftime.org/event/2972.ics  
-    
-??? Quote "[sknbCTF 2025](http://ctf.sknb.team/)"  
-    [![](https://ctftime.org/media/events/sknb_logo.png){ width="200" align=left }](http://ctf.sknb.team/)  
-    **比赛名称** : [sknbCTF 2025](http://ctf.sknb.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-22 11:00:00 - 2025-11-23 11:00:00 UTC+8  
-    **比赛权重** : 24.68  
-    **赛事主办** : sknb (https://ctftime.org/team/355880)  
-    **添加日历** : https://ctftime.org/event/2947.ics  
     
