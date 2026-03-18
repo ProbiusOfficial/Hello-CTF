@@ -1041,7 +1041,7 @@
         "比赛权重": "0",
         "赛事主办": "Hacking Indian Ocean (https://ctftime.org/team/399138)",
         "比赛ID": "1498",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Lag N Crash 6.0",
@@ -2229,18 +2229,6 @@
         "比赛权重": "96.90",
         "赛事主办": "BIZone (https://ctftime.org/team/32190)",
         "比赛ID": "201",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "sknbCTF 2025",
-        "比赛时间": "2025-11-22 11:00:00 - 2025-11-23 11:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2947.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.sknb.team/",
-        "比赛标志": "https://ctftime.org/media/events/sknb_logo.png",
-        "比赛权重": "24.68",
-        "赛事主办": "sknb (https://ctftime.org/team/355880)",
-        "比赛ID": "1416",
         "比赛状态": "past"
     }
 ]
