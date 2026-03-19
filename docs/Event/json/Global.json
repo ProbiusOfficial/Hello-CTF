@@ -324,18 +324,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "CRACK-IN 2.0",
-        "比赛时间": "2026-04-04 18:00:10 - 2026-04-05 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3210.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.crackin.tech/",
-        "比赛标志": "https://ctftime.org/media/events/logoo.png",
-        "比赛权重": "0",
-        "赛事主办": "Cyber Hive (https://ctftime.org/team/428945)",
-        "比赛ID": "1550",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "SillyCTF 2",
         "比赛时间": "2026-04-04 20:00:00 - 2026-04-05 12:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3042.ics",
