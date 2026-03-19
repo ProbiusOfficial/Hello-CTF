@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "m0leCon CTF 2026",
-        "比赛时间": "2026-03-20 00:00:00 - 2026-03-21 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3196.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://finals.m0lecon.it/",
-        "比赛标志": "",
-        "比赛权重": "75.00",
-        "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
-        "比赛ID": "372",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Insomni'hack 2026",
         "比赛时间": "2026-03-21 01:00:00 - 2026-03-21 12:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3146.ics",
@@ -309,6 +297,18 @@
         "比赛权重": "0.00",
         "赛事主办": "CITEFLAG (https://ctftime.org/team/425411)",
         "比赛ID": "1522",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "NCTF 2026",
+        "比赛时间": "2026-04-04 09:00:00 - 2026-04-05 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3206.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nctf.x1ct34m.com/games/2",
+        "比赛标志": "https://ctftime.org/media/events/X1cT34m-transparent.png",
+        "比赛权重": "0.00",
+        "赛事主办": "X1cT34m (https://ctftime.org/team/14482)",
+        "比赛ID": "1545",
         "比赛状态": "oncoming"
     },
     {
@@ -660,6 +660,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "DEF CON CTF Qualifier 2026",
+        "比赛时间": "2026-05-23 05:00:00 - 2026-05-25 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3205.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://bbbirds.org/",
+        "比赛标志": "",
+        "比赛权重": "63.22",
+        "赛事主办": "Benevolent Bureau of Birds (https://ctftime.org/team/425757)",
+        "比赛ID": "1",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "SAS CTF 2026 Quals",
         "比赛时间": "2026-05-23 20:00:00 - 2026-05-24 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3109.ics",
@@ -948,6 +960,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Hack.lu CTF 2026",
+        "比赛时间": "2026-10-24 02:00:00 - 2026-10-26 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3207.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://flu.xxx/",
+        "比赛标志": "https://ctftime.org/media/events/hacklu25.jpg",
+        "比赛权重": "94.74",
+        "赛事主办": "FluxFingers (https://ctftime.org/team/551)",
+        "比赛ID": "8",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "WolvCTF 2026",
         "比赛时间": "2026-11-14 07:00:00 - 2026-11-16 07:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3049.ics",
@@ -1029,6 +1053,18 @@
         "比赛权重": "0",
         "赛事主办": "Espilon (https://ctftime.org/team/423394)",
         "比赛ID": "1512",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "m0leCon CTF 2026",
+        "比赛时间": "2026-03-20 00:00:00 - 2026-03-21 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3196.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://finals.m0lecon.it/",
+        "比赛标志": "",
+        "比赛权重": "75.00",
+        "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
+        "比赛ID": "372",
         "比赛状态": "nowrunning"
     },
     {
