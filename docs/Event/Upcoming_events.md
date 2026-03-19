@@ -252,6 +252,15 @@ comments: true
     **赛事主办** : IITBreachers (https://ctftime.org/team/165802)  
     **添加日历** : https://ctftime.org/event/3119.ics  
     
+??? Quote "[CRACK-IN 2.0](https://www.crackin.tech/)"  
+    [![](https://ctftime.org/media/events/logoo.png){ width="200" align=left }](https://www.crackin.tech/)  
+    **比赛名称** : [CRACK-IN 2.0](https://www.crackin.tech/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-04 18:00:10 - 2026-04-05 02:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Cyber Hive (https://ctftime.org/team/428945)  
+    **添加日历** : https://ctftime.org/event/3210.ics  
+    
 ??? Quote "[SillyCTF 2](https://sillyctf.psuccso.org/)"  
     [![](https://ctftime.org/media/events/SillyCTF2logo.png){ width="200" align=left }](https://sillyctf.psuccso.org/)  
     **比赛名称** : [SillyCTF 2](https://sillyctf.psuccso.org/)  
@@ -431,6 +440,15 @@ comments: true
     **比赛权重** : 85.48  
     **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
     **添加日历** : https://ctftime.org/event/3056.ics  
+    
+??? Quote "[HACKTHEON SEJONG 2026 Qualifier](https://hacktheon.org/)"  
+    [![](https://ctftime.org/media/events/2026_HACKTHEON_SEJONG.png){ width="200" align=left }](https://hacktheon.org/)  
+    **比赛名称** : [HACKTHEON SEJONG 2026 Qualifier](https://hacktheon.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-25 09:00:00 - 2026-04-25 16:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
+    **添加日历** : https://ctftime.org/event/3199.ics  
     
 ??? Quote "[CTF@AC26 - Quals](https://ctf.ac.upt.ro/)"  
     [![](https://ctftime.org/media/events/CTFAC26.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
