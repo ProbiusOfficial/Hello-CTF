@@ -161,7 +161,7 @@ extra_javascript:
   - javascripts/katex.js 
   # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
   - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js
 
 # ----- 页面统计 -----
   - javascripts/statis.js
@@ -174,7 +174,7 @@ extra_javascript:
 extra_css:
 # ----- katex -----
   # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
-  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css
 
 # ----- other -----
   - stylesheets/extra.css
