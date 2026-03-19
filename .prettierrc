@@ -1,4 +1,18 @@
 {
-  "tabWidth": 4,
-  "semi": false
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true, // 使用单引号（对内嵌代码或 JS 片段有效）
+    "printWidth": 80, // 每行最大长度 80，方便网页显示
+    "proseWrap": "always", // Markdown 文本总是自动换行
+    "endOfLine": "lf", // 换行符统一为 LF
+    "overrides": [
+        {
+            "files": "*.md",
+            "options": {
+                "tabWidth": 2, // Markdown 文件缩进可用 2 空格，更常规
+                "proseWrap": "always", // 总是换行，提高可读性
+                "singleQuote": false // Markdown 内一般不强制单引号
+            }
+        }
+    ]
 }
