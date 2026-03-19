@@ -695,7 +695,7 @@ hide:
                 **添加日历** : https://ctftime.org/event/3143.ics  
                 
             ??? Quote "[JerseyCTF VI](https://ctf.jerseyctf.com/)"  
-                [![](https://ctftime.org/media/events/Social_Logo2.png){ width="200" align=left }](https://ctf.jerseyctf.com/)  
+                [![](https://ctftime.org/media/events/jctfvi-discord.png){ width="200" align=left }](https://ctf.jerseyctf.com/)  
                 **比赛名称** : [JerseyCTF VI](https://ctf.jerseyctf.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-04-19 03:00:00 - 2026-04-20 03:00:00 UTC+8  
