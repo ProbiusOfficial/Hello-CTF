@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Curiosity CTF 2026 [Postponed]",
-        "比赛时间": "2026-03-21 03:00:00 - 2026-03-23 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3050.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://curiosityctf.xyz/",
-        "比赛标志": "",
-        "比赛权重": "0.00",
-        "赛事主办": "Curioѕity (https://ctftime.org/team/392973)",
-        "比赛ID": "1383",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "TAMUctf 2026",
         "比赛时间": "2026-03-21 06:00:00 - 2026-03-23 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3095.ics",
