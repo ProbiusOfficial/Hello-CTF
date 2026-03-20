@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Curiosity CTF 2026 [Postponed]](https://curiosityctf.xyz/)"  
-            [![](){ width="200" align=left }](https://curiosityctf.xyz/)  
-            **比赛名称** : [Curiosity CTF 2026 [Postponed]](https://curiosityctf.xyz/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-21 03:00:00 - 2026-03-23 03:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Curioѕity (https://ctftime.org/team/392973)  
-            **添加日历** : https://ctftime.org/event/3050.ics  
-            
         ??? Quote "[TAMUctf 2026](https://tamuctf.com/)"  
             [![](https://ctftime.org/media/events/TAMUctf-logo.png){ width="200" align=left }](https://tamuctf.com/)  
             **比赛名称** : [TAMUctf 2026](https://tamuctf.com/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
             **添加日历** : https://ctftime.org/event/3063.ics  
+            
+        ??? Quote "[PolyPwnCTF 2026](https://polypwn.polycyber.io/)"  
+            [![](){ width="200" align=left }](https://polypwn.polycyber.io/)  
+            **比赛名称** : [PolyPwnCTF 2026](https://polypwn.polycyber.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-21 18:00:00 - 2026-03-22 05:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
+            **添加日历** : https://ctftime.org/event/3203.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
