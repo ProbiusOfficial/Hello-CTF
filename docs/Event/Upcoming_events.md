@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[TAMUctf 2026](https://tamuctf.com/)"  
-    [![](https://ctftime.org/media/events/TAMUctf-logo.png){ width="200" align=left }](https://tamuctf.com/)  
-    **比赛名称** : [TAMUctf 2026](https://tamuctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-21 06:00:00 - 2026-03-23 06:00:00 UTC+8  
-    **比赛权重** : 76.22  
-    **赛事主办** : TAMUctf (https://ctftime.org/team/37721)  
-    **添加日历** : https://ctftime.org/event/3095.ics  
-    
 ??? Quote "[BSidesSF CTF 2026](https://ctf.bsidessf.net/)"  
     [![](https://ctftime.org/media/events/bsides_logo_short.png){ width="200" align=left }](https://ctf.bsidessf.net/)  
     **比赛名称** : [BSidesSF CTF 2026](https://ctf.bsidessf.net/)  

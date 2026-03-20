@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "TAMUctf 2026",
-        "比赛时间": "2026-03-21 06:00:00 - 2026-03-23 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3095.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://tamuctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/TAMUctf-logo.png",
-        "比赛权重": "76.22",
-        "赛事主办": "TAMUctf (https://ctftime.org/team/37721)",
-        "比赛ID": "198",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "BSidesSF CTF 2026",
         "比赛时间": "2026-03-21 07:00:00 - 2026-03-23 07:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3108.ics",
@@ -1053,6 +1041,18 @@
         "比赛权重": "24.14",
         "赛事主办": "Insomni'hack Team (https://ctftime.org/team/104742)",
         "比赛ID": "56",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "TAMUctf 2026",
+        "比赛时间": "2026-03-21 06:00:00 - 2026-03-23 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3095.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://tamuctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/TAMUctf-logo.png",
+        "比赛权重": "76.22",
+        "赛事主办": "TAMUctf (https://ctftime.org/team/37721)",
+        "比赛ID": "198",
         "比赛状态": "nowrunning"
     },
     {

@@ -54,3 +54,12 @@ comments: true
     **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
     **添加日历** : https://ctftime.org/event/3146.ics  
     
+??? Quote "[TAMUctf 2026](https://tamuctf.com/)"  
+    [![](https://ctftime.org/media/events/TAMUctf-logo.png){ width="200" align=left }](https://tamuctf.com/)  
+    **比赛名称** : [TAMUctf 2026](https://tamuctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-21 06:00:00 - 2026-03-23 06:00:00 UTC+8  
+    **比赛权重** : 76.22  
+    **赛事主办** : TAMUctf (https://ctftime.org/team/37721)  
+    **添加日历** : https://ctftime.org/event/3095.ics  
+    
