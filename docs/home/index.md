@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Insomni'hack 2026](https://insomnihack.ch/contest/)"  
-            [![](){ width="200" align=left }](https://insomnihack.ch/contest/)  
-            **比赛名称** : [Insomni'hack 2026](https://insomnihack.ch/contest/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-21 01:00:00 - 2026-03-21 12:00:00 UTC+8  
-            **比赛权重** : 24.14  
-            **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
-            **添加日历** : https://ctftime.org/event/3146.ics  
-            
         ??? Quote "[Curiosity CTF 2026 [Postponed]](https://curiosityctf.xyz/)"  
             [![](){ width="200" align=left }](https://curiosityctf.xyz/)  
             **比赛名称** : [Curiosity CTF 2026 [Postponed]](https://curiosityctf.xyz/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 25.00  
             **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
             **添加日历** : https://ctftime.org/event/3108.ics  
+            
+        ??? Quote "[ZeroDays CTF 2026](http://www.zerodays.ie/)"  
+            [![](https://ctftime.org/media/events/4ed567668366c4f824552685fc0c6b04.png){ width="200" align=left }](http://www.zerodays.ie/)  
+            **比赛名称** : [ZeroDays CTF 2026](http://www.zerodays.ie/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-21 18:00:00 - 2026-03-22 01:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
+            **添加日历** : https://ctftime.org/event/3063.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
