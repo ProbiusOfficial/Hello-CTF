@@ -91,7 +91,7 @@ hide:
             **添加日历** : https://ctftime.org/event/3108.ics  
             
     <!-- 主页赛事展示_结束 -->
-    [→ 了解更多](./Event/)
+    [→ 了解更多](../Event/)
 
 </div>
   <div class="grid cards" markdown>
