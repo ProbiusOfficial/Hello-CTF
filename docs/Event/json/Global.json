@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "BSidesSF CTF 2026",
-        "比赛时间": "2026-03-21 07:00:00 - 2026-03-23 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3108.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.bsidessf.net/",
-        "比赛标志": "https://ctftime.org/media/events/bsides_logo_short.png",
-        "比赛权重": "25.00",
-        "赛事主办": "BSidesSF (https://ctftime.org/team/54737)",
-        "比赛ID": "252",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "ZeroDays CTF 2026",
         "比赛时间": "2026-03-21 18:00:00 - 2026-03-22 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3063.ics",
@@ -1053,6 +1041,18 @@
         "比赛权重": "76.22",
         "赛事主办": "TAMUctf (https://ctftime.org/team/37721)",
         "比赛ID": "198",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "BSidesSF CTF 2026",
+        "比赛时间": "2026-03-21 07:00:00 - 2026-03-23 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3108.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bsidessf.net/",
+        "比赛标志": "https://ctftime.org/media/events/bsides_logo_short.png",
+        "比赛权重": "25.00",
+        "赛事主办": "BSidesSF (https://ctftime.org/team/54737)",
+        "比赛ID": "252",
         "比赛状态": "nowrunning"
     },
     {

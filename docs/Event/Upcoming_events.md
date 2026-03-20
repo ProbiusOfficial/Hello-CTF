@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[BSidesSF CTF 2026](https://ctf.bsidessf.net/)"  
-    [![](https://ctftime.org/media/events/bsides_logo_short.png){ width="200" align=left }](https://ctf.bsidessf.net/)  
-    **比赛名称** : [BSidesSF CTF 2026](https://ctf.bsidessf.net/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-21 07:00:00 - 2026-03-23 07:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
-    **添加日历** : https://ctftime.org/event/3108.ics  
-    
 ??? Quote "[ZeroDays CTF 2026](http://www.zerodays.ie/)"  
     [![](https://ctftime.org/media/events/4ed567668366c4f824552685fc0c6b04.png){ width="200" align=left }](http://www.zerodays.ie/)  
     **比赛名称** : [ZeroDays CTF 2026](http://www.zerodays.ie/)  
