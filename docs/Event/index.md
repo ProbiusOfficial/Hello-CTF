@@ -289,15 +289,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Redfox CTF 2026](https://academy.redfoxsec.com/course/redfox-ctf-85076)"  
-                [![](){ width="200" align=left }](https://academy.redfoxsec.com/course/redfox-ctf-85076)  
-                **比赛名称** : [Redfox CTF 2026](https://academy.redfoxsec.com/course/redfox-ctf-85076)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-21 20:30:00 - 2026-03-22 20:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : redfoxteam (https://ctftime.org/team/424518)  
-                **添加日历** : https://ctftime.org/event/3163.ics  
-                
             ??? Quote "[AITU CTF 2026 Quals](https://ctf.fr13nds.team/)"  
                 [![](https://ctftime.org/media/events/icon-black.png){ width="200" align=left }](https://ctf.fr13nds.team/)  
                 **比赛名称** : [AITU CTF 2026 Quals](https://ctf.fr13nds.team/)  
@@ -1075,6 +1066,15 @@ hide:
                 **比赛权重** : 33.00  
                 **赛事主办** : Undutmaning (https://ctftime.org/team/212504)  
                 **添加日历** : https://ctftime.org/event/2987.ics  
+                
+            ??? Quote "[Redfox CTF 2026](https://academy.redfoxsec.com/course/redfox-ctf-85076)"  
+                [![](){ width="200" align=left }](https://academy.redfoxsec.com/course/redfox-ctf-85076)  
+                **比赛名称** : [Redfox CTF 2026](https://academy.redfoxsec.com/course/redfox-ctf-85076)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-21 20:30:00 - 2026-03-22 20:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : redfoxteam (https://ctftime.org/team/424518)  
+                **添加日历** : https://ctftime.org/event/3163.ics  
                 
     === "*已经结束*"
         === "国内赛事"

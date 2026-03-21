@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Redfox CTF 2026](https://academy.redfoxsec.com/course/redfox-ctf-85076)"  
-            [![](){ width="200" align=left }](https://academy.redfoxsec.com/course/redfox-ctf-85076)  
-            **比赛名称** : [Redfox CTF 2026](https://academy.redfoxsec.com/course/redfox-ctf-85076)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-21 20:30:00 - 2026-03-22 20:30:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : redfoxteam (https://ctftime.org/team/424518)  
-            **添加日历** : https://ctftime.org/event/3163.ics  
-            
         ??? Quote "[AITU CTF 2026 Quals](https://ctf.fr13nds.team/)"  
             [![](https://ctftime.org/media/events/icon-black.png){ width="200" align=left }](https://ctf.fr13nds.team/)  
             **比赛名称** : [AITU CTF 2026 Quals](https://ctf.fr13nds.team/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 41.59  
             **赛事主办** : CSG (https://ctftime.org/team/333)  
             **添加日历** : https://ctftime.org/event/3130.ics  
+            
+        ??? Quote "[KalmarCTF 2026](https://kalmarc.tf/)"  
+            [![](https://ctftime.org/media/events/kalmar-logo_1.png){ width="200" align=left }](https://kalmarc.tf/)  
+            **比赛名称** : [KalmarCTF 2026](https://kalmarc.tf/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-28 01:00:00 - 2026-03-30 01:00:00 UTC+8  
+            **比赛权重** : 49.97  
+            **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
+            **添加日历** : https://ctftime.org/event/2983.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](./Event/)
