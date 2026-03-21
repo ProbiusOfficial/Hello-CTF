@@ -63,15 +63,6 @@ comments: true
     **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
     **添加日历** : https://ctftime.org/event/3108.ics  
     
-??? Quote "[ZeroDays CTF 2026](http://www.zerodays.ie/)"  
-    [![](https://ctftime.org/media/events/4ed567668366c4f824552685fc0c6b04.png){ width="200" align=left }](http://www.zerodays.ie/)  
-    **比赛名称** : [ZeroDays CTF 2026](http://www.zerodays.ie/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-21 18:00:00 - 2026-03-22 01:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
-    **添加日历** : https://ctftime.org/event/3063.ics  
-    
 ??? Quote "[PolyPwnCTF 2026](https://polypwn.polycyber.io/)"  
     [![](){ width="200" align=left }](https://polypwn.polycyber.io/)  
     **比赛名称** : [PolyPwnCTF 2026](https://polypwn.polycyber.io/)  

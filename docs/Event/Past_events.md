@@ -28,6 +28,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[ZeroDays CTF 2026](http://www.zerodays.ie/)"  
+    [![](https://ctftime.org/media/events/4ed567668366c4f824552685fc0c6b04.png){ width="200" align=left }](http://www.zerodays.ie/)  
+    **比赛名称** : [ZeroDays CTF 2026](http://www.zerodays.ie/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-21 18:00:00 - 2026-03-22 01:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
+    **添加日历** : https://ctftime.org/event/3063.ics  
+    
 ??? Quote "[Insomni'hack 2026](https://insomnihack.ch/contest/)"  
     [![](){ width="200" align=left }](https://insomnihack.ch/contest/)  
     **比赛名称** : [Insomni'hack 2026](https://insomnihack.ch/contest/)  
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Synchrony Infosec University Hackathon (https://ctftime.org/team/412036)  
     **添加日历** : https://ctftime.org/event/3008.ics  
-    
-??? Quote "[GlacierCTF 2025](https://play.glacierctf.com/)"  
-    [![](https://ctftime.org/media/events/glacierlogo.png){ width="200" align=left }](https://play.glacierctf.com/)  
-    **比赛名称** : [GlacierCTF 2025](https://play.glacierctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-23 02:00:00 - 2025-11-24 02:00:00 UTC+8  
-    **比赛权重** : 52.57  
-    **赛事主办** : LosFuzzys (https://ctftime.org/team/8323)  
-    **添加日历** : https://ctftime.org/event/2714.ics  
     
