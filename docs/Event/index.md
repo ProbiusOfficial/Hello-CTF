@@ -1058,15 +1058,6 @@ hide:
                 **赛事主办** : Espilon (https://ctftime.org/team/423394)  
                 **添加日历** : https://ctftime.org/event/3179.ics  
                 
-            ??? Quote "[Insomni'hack 2026](https://insomnihack.ch/contest/)"  
-                [![](){ width="200" align=left }](https://insomnihack.ch/contest/)  
-                **比赛名称** : [Insomni'hack 2026](https://insomnihack.ch/contest/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-21 01:00:00 - 2026-03-21 12:00:00 UTC+8  
-                **比赛权重** : 24.14  
-                **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
-                **添加日历** : https://ctftime.org/event/3146.ics  
-                
             ??? Quote "[TAMUctf 2026](https://tamuctf.com/)"  
                 [![](https://ctftime.org/media/events/TAMUctf-logo.png){ width="200" align=left }](https://tamuctf.com/)  
                 **比赛名称** : [TAMUctf 2026](https://tamuctf.com/)  
@@ -1109,6 +1100,15 @@ hide:
                 **其他说明** : 4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。  
                 
         === "国外赛事"
+            ??? Quote "[Insomni'hack 2026](https://insomnihack.ch/contest/)"  
+                [![](){ width="200" align=left }](https://insomnihack.ch/contest/)  
+                **比赛名称** : [Insomni'hack 2026](https://insomnihack.ch/contest/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-21 01:00:00 - 2026-03-21 12:00:00 UTC+8  
+                **比赛权重** : 24.14  
+                **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
+                **添加日历** : https://ctftime.org/event/3146.ics  
+                
             ??? Quote "[m0leCon CTF 2026](https://finals.m0lecon.it/)"  
                 [![](){ width="200" align=left }](https://finals.m0lecon.it/)  
                 **比赛名称** : [m0leCon CTF 2026](https://finals.m0lecon.it/)  
@@ -1999,15 +1999,6 @@ hide:
                 **比赛权重** : 52.57  
                 **赛事主办** : LosFuzzys (https://ctftime.org/team/8323)  
                 **添加日历** : https://ctftime.org/event/2714.ics  
-                
-            ??? Quote "[CyberSci Regional Qualifiers 2025-26](https://cybersecuritychallenge.ca/)"  
-                [![](https://ctftime.org/media/events/aa01b0217ba20e130d4605e9bf2b8e6c.jpg){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
-                **比赛名称** : [CyberSci Regional Qualifiers 2025-26](https://cybersecuritychallenge.ca/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-22 23:00:00 - 2025-11-23 06:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
-                **添加日历** : https://ctftime.org/event/2909.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

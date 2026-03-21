@@ -45,15 +45,6 @@ comments: true
     **赛事主办** : Espilon (https://ctftime.org/team/423394)  
     **添加日历** : https://ctftime.org/event/3179.ics  
     
-??? Quote "[Insomni'hack 2026](https://insomnihack.ch/contest/)"  
-    [![](){ width="200" align=left }](https://insomnihack.ch/contest/)  
-    **比赛名称** : [Insomni'hack 2026](https://insomnihack.ch/contest/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-21 01:00:00 - 2026-03-21 12:00:00 UTC+8  
-    **比赛权重** : 24.14  
-    **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
-    **添加日历** : https://ctftime.org/event/3146.ics  
-    
 ??? Quote "[TAMUctf 2026](https://tamuctf.com/)"  
     [![](https://ctftime.org/media/events/TAMUctf-logo.png){ width="200" align=left }](https://tamuctf.com/)  
     **比赛名称** : [TAMUctf 2026](https://tamuctf.com/)  
