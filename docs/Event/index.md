@@ -1040,15 +1040,6 @@ hide:
                 **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
                 **添加日历** : https://ctftime.org/event/3108.ics  
                 
-            ??? Quote "[PolyPwnCTF 2026](https://polypwn.polycyber.io/)"  
-                [![](){ width="200" align=left }](https://polypwn.polycyber.io/)  
-                **比赛名称** : [PolyPwnCTF 2026](https://polypwn.polycyber.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-21 18:00:00 - 2026-03-22 05:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
-                **添加日历** : https://ctftime.org/event/3203.ics  
-                
             ??? Quote "[Redfox CTF 2026](https://academy.redfoxsec.com/course/redfox-ctf-85076)"  
                 [![](){ width="200" align=left }](https://academy.redfoxsec.com/course/redfox-ctf-85076)  
                 **比赛名称** : [Redfox CTF 2026](https://academy.redfoxsec.com/course/redfox-ctf-85076)  
@@ -1099,6 +1090,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
                 **添加日历** : https://ctftime.org/event/3063.ics  
+                
+            ??? Quote "[PolyPwnCTF 2026](https://polypwn.polycyber.io/)"  
+                [![](){ width="200" align=left }](https://polypwn.polycyber.io/)  
+                **比赛名称** : [PolyPwnCTF 2026](https://polypwn.polycyber.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-21 18:00:00 - 2026-03-22 05:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
+                **添加日历** : https://ctftime.org/event/3203.ics  
                 
             ??? Quote "[Insomni'hack 2026](https://insomnihack.ch/contest/)"  
                 [![](){ width="200" align=left }](https://insomnihack.ch/contest/)  
@@ -1972,15 +1972,6 @@ hide:
                 **比赛权重** : 45.00  
                 **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
                 **添加日历** : https://ctftime.org/event/2944.ics  
-                
-            ??? Quote "[2025 Qiangwang Challenge on Cyber Mimic Defense Finals](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)"  
-                [![](https://ctftime.org/media/events/mimicoctupus.png){ width="200" align=left }](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
-                **比赛名称** : [2025 Qiangwang Challenge on Cyber Mimic Defense Finals](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-26 12:00:00 - 2025-11-29 12:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : LoveFromMimic (https://ctftime.org/team/364644)  
-                **添加日历** : https://ctftime.org/event/2999.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

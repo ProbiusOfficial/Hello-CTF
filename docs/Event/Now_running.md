@@ -63,15 +63,6 @@ comments: true
     **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
     **添加日历** : https://ctftime.org/event/3108.ics  
     
-??? Quote "[PolyPwnCTF 2026](https://polypwn.polycyber.io/)"  
-    [![](){ width="200" align=left }](https://polypwn.polycyber.io/)  
-    **比赛名称** : [PolyPwnCTF 2026](https://polypwn.polycyber.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-21 18:00:00 - 2026-03-22 05:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
-    **添加日历** : https://ctftime.org/event/3203.ics  
-    
 ??? Quote "[Redfox CTF 2026](https://academy.redfoxsec.com/course/redfox-ctf-85076)"  
     [![](){ width="200" align=left }](https://academy.redfoxsec.com/course/redfox-ctf-85076)  
     **比赛名称** : [Redfox CTF 2026](https://academy.redfoxsec.com/course/redfox-ctf-85076)  

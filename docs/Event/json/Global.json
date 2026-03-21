@@ -996,18 +996,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "PolyPwnCTF 2026",
-        "比赛时间": "2026-03-21 18:00:00 - 2026-03-22 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3203.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://polypwn.polycyber.io/",
-        "比赛标志": "",
-        "比赛权重": "0.00",
-        "赛事主办": "PolyCyber (https://ctftime.org/team/212241)",
-        "比赛ID": "1285",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Redfox CTF 2026",
         "比赛时间": "2026-03-21 20:30:00 - 2026-03-22 20:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3163.ics",
@@ -1041,6 +1029,18 @@
         "比赛权重": "0",
         "赛事主办": "Ireland without the RE (https://ctftime.org/team/179144)",
         "比赛ID": "1030",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "PolyPwnCTF 2026",
+        "比赛时间": "2026-03-21 18:00:00 - 2026-03-22 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3203.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://polypwn.polycyber.io/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "PolyCyber (https://ctftime.org/team/212241)",
+        "比赛ID": "1285",
         "比赛状态": "past"
     },
     {
@@ -2205,18 +2205,6 @@
         "比赛权重": "45.00",
         "赛事主办": "polygl0ts (https://ctftime.org/team/53791)",
         "比赛ID": "818",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "2025 Qiangwang Challenge on Cyber Mimic Defense Finals",
-        "比赛时间": "2025-11-26 12:00:00 - 2025-11-29 12:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2999.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nest.pmlabs.com.cn/#/internationalEliteChallenge",
-        "比赛标志": "https://ctftime.org/media/events/mimicoctupus.png",
-        "比赛权重": "25.00",
-        "赛事主办": "LoveFromMimic (https://ctftime.org/team/364644)",
-        "比赛ID": "1212",
         "比赛状态": "past"
     }
 ]
