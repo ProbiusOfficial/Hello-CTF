@@ -8,36 +8,240 @@ hide:
 ---
 
 <style>
+/* 赛事页日历：与首页 index.html FullCalendar 风格一致 */
 #calendar {
   margin-bottom: 0;
   margin-top: 0;
   font-size: 0.75rem;
 }
 
-#calendar :is(button[title="Next month"], button[title="list view"]) {
-  border-left: 0;
+#calendar .fc-header-toolbar {
+  gap: 0.75rem 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem !important;
+  padding: 0.15rem 0;
+}
+#calendar .fc-toolbar-chunk {
+  display: flex;
+  align-items: center;
+}
+#calendar .fc-toolbar-title {
+  font-size: 1.05rem !important;
+  font-weight: 700;
+  font-family: ui-monospace, "JetBrains Mono", "Fira Code", monospace;
+  letter-spacing: -0.02em;
+}
+#calendar .fc-button-group {
+  display: inline-flex !important;
+  gap: 6px;
+  box-shadow: none;
+}
+#calendar .fc-button-group > .fc-button {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+#calendar .fc-button {
+  border-radius: 0.75rem !important;
+  border: 2px solid rgba(59, 130, 246, 0.3) !important;
+  background: rgba(255, 255, 255, 0.92) !important;
+  color: #2563eb !important;
+  font-weight: 600 !important;
+  font-size: 0.8rem !important;
+  padding: 0.45em 0.85em !important;
+  line-height: 1.35 !important;
+  text-transform: none !important;
+  box-shadow: 0 1px 2px rgba(59, 130, 246, 0.06);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+#calendar .fc-button:hover {
+  background: rgba(59, 130, 246, 0.08) !important;
+  border-color: rgba(59, 130, 246, 0.5) !important;
+  color: #1d4ed8 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.14);
+}
+#calendar .fc-button.fc-button-active {
+  background: linear-gradient(135deg, #3b82f6, #6366f1) !important;
+  border-color: transparent !important;
+  color: #fff !important;
+  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.35);
+}
+#calendar .fc-button.fc-button-active:hover {
+  background: linear-gradient(135deg, #2563eb, #4f46e5) !important;
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+#calendar .fc-button:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25) !important;
+}
+#calendar .fc-button.fc-button-active:focus {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.35), 0 4px 14px rgba(59, 130, 246, 0.35) !important;
+}
+#calendar .fc-icon {
+  font-size: 1.15em;
 }
 
-.fc-event-main {
-    color: black !important;
+[data-md-color-scheme="slate"] #calendar .fc-button,
+.dark #calendar .fc-button {
+  background: rgba(30, 41, 59, 0.9) !important;
+  border-color: rgba(129, 140, 248, 0.35) !important;
+  color: #e2e8f0 !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+[data-md-color-scheme="slate"] #calendar .fc-button:hover,
+.dark #calendar .fc-button:hover {
+  background: rgba(59, 130, 246, 0.18) !important;
+  border-color: rgba(129, 140, 248, 0.55) !important;
+  color: #f8fafc !important;
+}
+[data-md-color-scheme="slate"] #calendar .fc-button.fc-button-active,
+.dark #calendar .fc-button.fc-button-active {
+  background: linear-gradient(135deg, #3b82f6, #6366f1) !important;
+  border-color: transparent !important;
+  color: #fff !important;
+}
+[data-md-color-scheme="slate"] #calendar .fc-button.fc-button-active:hover,
+.dark #calendar .fc-button.fc-button-active:hover {
+  background: linear-gradient(135deg, #2563eb, #4f46e5) !important;
+  color: #fff !important;
 }
 
-.fc .event-running {
-    border: 1px solid #64dd17;
-    background-color: #64dd171a;
-    box-shadow: 0 0 5px #0000001a;
+/* FullCalendar 标准包暗黑变量（Material slate + .dark） */
+[data-md-color-scheme="slate"] #calendar,
+[data-md-color-scheme="slate"] #calendar .fc,
+.dark #calendar,
+.dark #calendar .fc {
+  --fc-page-bg-color: #0f172a;
+  --fc-neutral-bg-color: rgba(51, 65, 85, 0.75);
+  --fc-neutral-text-color: #cbd5e1;
+  --fc-border-color: #334155;
+  --fc-button-text-color: #f1f5f9;
+  --fc-button-bg-color: #334155;
+  --fc-button-border-color: #475569;
+  --fc-button-hover-bg-color: #475569;
+  --fc-button-hover-border-color: #64748b;
+  --fc-button-active-bg-color: #1e293b;
+  --fc-button-active-border-color: #334155;
+  --fc-today-bg-color: rgba(251, 191, 36, 0.14);
+  --fc-more-link-bg-color: #334155;
+  --fc-more-link-text-color: #e2e8f0;
+  --fc-highlight-color: rgba(59, 130, 246, 0.22);
+  --fc-list-event-hover-bg-color: #1e293b;
+  --fc-non-business-color: rgba(15, 23, 42, 0.45);
+}
+[data-md-color-scheme="slate"] #calendar .fc-toolbar-title,
+.dark #calendar .fc-toolbar-title {
+  color: #f1f5f9;
+}
+[data-md-color-scheme="slate"] #calendar .fc-col-header-cell,
+.dark #calendar .fc-col-header-cell {
+  background: var(--fc-neutral-bg-color) !important;
+}
+[data-md-color-scheme="slate"] #calendar .fc-col-header-cell-cushion,
+.dark #calendar .fc-col-header-cell-cushion {
+  color: #cbd5e1 !important;
+}
+[data-md-color-scheme="slate"] #calendar .fc-scrollgrid-section-sticky > *,
+.dark #calendar .fc-scrollgrid-section-sticky > * {
+  background: var(--fc-page-bg-color) !important;
+}
+[data-md-color-scheme="slate"] #calendar .fc-daygrid-day-number,
+[data-md-color-scheme="slate"] #calendar .fc-daygrid-day-top,
+.dark #calendar .fc-daygrid-day-number,
+.dark #calendar .fc-daygrid-day-top {
+  color: #e2e8f0;
+}
+[data-md-color-scheme="slate"] #calendar .fc-day-other .fc-daygrid-day-number,
+.dark #calendar .fc-day-other .fc-daygrid-day-number {
+  color: #64748b;
 }
 
-.fc .event-oncoming {
-    border: 1px solid #00b0ff;
-    background-color: #00b0ff1a;
-    box-shadow: 0 0 5px #0000001a;
+/*
+ * FullCalendar 默认会给 .fc-h-event 上蓝色；先清空变量，再用 className 上色（浅色/暗色均适用）。
+ * 圆角、垂直间距；dayMaxEvents 限制单日条数，减少「蓝墙」。
+ */
+#calendar .fc {
+  --fc-event-bg-color: transparent;
+  --fc-event-border-color: transparent;
+}
+#calendar .fc-daygrid-event-harness {
+  margin-top: 3px !important;
+  margin-bottom: 3px !important;
+}
+#calendar .fc-h-event {
+  border-radius: 6px;
+  font-size: 0.72rem;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
 }
 
-.fc .event-ended {
-    border: 1px solid #9e9e9e;
-    background-color: #9e9e9e26;
-    box-shadow: 0 0 5px #0000001a;
+/* 浅色 · 进行中 */
+[data-md-color-scheme="default"] #calendar .fc-h-event.event-running {
+  background: linear-gradient(180deg, rgba(220, 252, 231, 0.98), rgba(187, 247, 208, 0.88)) !important;
+  border: 1px solid rgba(34, 197, 94, 0.42) !important;
+}
+[data-md-color-scheme="default"] #calendar .fc-h-event.event-running .fc-event-main {
+  color: #14532d !important;
+}
+/* 浅色 · 即将开始 */
+[data-md-color-scheme="default"] #calendar .fc-h-event.event-oncoming {
+  background: linear-gradient(180deg, rgba(224, 242, 254, 0.98), rgba(186, 230, 253, 0.88)) !important;
+  border: 1px solid rgba(14, 165, 233, 0.45) !important;
+}
+[data-md-color-scheme="default"] #calendar .fc-h-event.event-oncoming .fc-event-main {
+  color: #0c4a6e !important;
+}
+/* 浅色 · 已结束 */
+[data-md-color-scheme="default"] #calendar .fc-h-event.event-ended {
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0.98), rgba(241, 245, 249, 0.92)) !important;
+  border: 1px solid rgba(148, 163, 184, 0.65) !important;
+}
+[data-md-color-scheme="default"] #calendar .fc-h-event.event-ended .fc-event-main {
+  color: #475569 !important;
+}
+
+[data-md-color-scheme="default"] #calendar .fc .fc-daygrid-more-link {
+  background: rgba(241, 245, 249, 0.95) !important;
+  color: #3b82f6 !important;
+  border: 1px dashed rgba(59, 130, 246, 0.35);
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* 暗色 · 保持可读，略提高对比 */
+[data-md-color-scheme="slate"] #calendar .fc-h-event.event-running,
+.dark #calendar .fc-h-event.event-running {
+  background-color: rgba(34, 197, 94, 0.2) !important;
+  border: 1px solid rgba(74, 222, 128, 0.45) !important;
+  box-shadow: none;
+}
+[data-md-color-scheme="slate"] #calendar .fc-h-event.event-oncoming,
+.dark #calendar .fc-h-event.event-oncoming {
+  background-color: rgba(14, 165, 233, 0.22) !important;
+  border: 1px solid rgba(56, 189, 248, 0.5) !important;
+  box-shadow: none;
+}
+[data-md-color-scheme="slate"] #calendar .fc-h-event.event-ended,
+.dark #calendar .fc-h-event.event-ended {
+  background-color: rgba(148, 163, 184, 0.18) !important;
+  border: 1px solid rgba(148, 163, 184, 0.4) !important;
+  box-shadow: none;
+}
+[data-md-color-scheme="slate"] #calendar .fc-h-event .fc-event-main,
+.dark #calendar .fc-h-event .fc-event-main {
+  color: #f8fafc !important;
+}
+[data-md-color-scheme="slate"] #calendar .fc-h-event.event-ended .fc-event-main,
+.dark #calendar .fc-h-event.event-ended .fc-event-main {
+  color: #cbd5e1 !important;
+}
+[data-md-color-scheme="slate"] #calendar .fc .fc-daygrid-more-link,
+.dark #calendar .fc .fc-daygrid-more-link {
+  background: rgba(51, 65, 85, 0.9) !important;
+  color: #93c5fd !important;
+  border: 1px dashed rgba(96, 165, 250, 0.4);
+  border-radius: 6px;
 }
 </style>
 
@@ -197,6 +401,15 @@ hide:
         const calendar = new FullCalendar.Calendar(calendarEl, {
             height: 'auto',
             locale: "zh",
+            themeSystem: 'standard',
+            dayMaxEvents: 4,
+            moreLinkText: function (n) {
+              return '还有 ' + n + ' 场';
+            },
+            buttonText: {
+              month: '月',
+              list: '列表'
+            },
             headerToolbar: {
               start: "custom2 custom1",
               center: "title",
@@ -218,14 +431,6 @@ hide:
                 }
               }
             },
-            viewDidMount() {
-                calendarEl.querySelectorAll('button').forEach((ele) => {
-                    ele.classList.remove(...ele.classList)
-                    ele.classList.add('md-button')
-                    ele.style.padding = '0.5em'
-                    ele.style.borderRadius = '0'
-                })
-            },
             events: globalEvents,
             eventClick: function (info) {
                 info.jsEvent.preventDefault();
@@ -236,14 +441,6 @@ hide:
         calendar.render();
         
         globalThis.calendar = calendar;
-        
-        // set class
-        calendarEl.querySelectorAll('button').forEach((ele) => {
-            ele.classList.remove(...ele.classList)
-            ele.classList.add('md-button')
-            ele.style.padding = '0.5em'
-            ele.style.borderRadius = '0'
-        })
     }
     
     // 前端路由变更

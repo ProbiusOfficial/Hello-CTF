@@ -5,6 +5,9 @@ doc
 EX
 docs/hc-reverse/change.py
 
+# 本地首页内容编辑器（不纳入版本库）
+docs/index_editor.html
+
 # pdm
 .pdm-python
 pdm.lock
