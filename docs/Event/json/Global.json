@@ -276,6 +276,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Pàlcam Cybergames 2026",
+        "比赛时间": "2026-04-10 18:00:00 - 2026-04-12 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3211.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://palcamcg2026.soterctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/palcamLogo.png",
+        "比赛权重": "0",
+        "赛事主办": "Pàlcam ASIX (https://ctftime.org/team/428952)",
+        "比赛ID": "1551",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "DawgCTF 2026",
         "比赛时间": "2026-04-11 00:00:00 - 2026-04-13 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3102.ics",
@@ -1194,7 +1206,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://psychctf.xyz/",
         "比赛标志": "https://ctftime.org/media/events/SAIC_logo_icon_min.png",
-        "比赛权重": "0",
+        "比赛权重": "24.48",
         "赛事主办": "SAIC_IITMandi (https://ctftime.org/team/251023)",
         "比赛ID": "1520",
         "比赛状态": "past"
