@@ -28,6 +28,60 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Redfox CTF 2026](https://academy.redfoxsec.com/course/redfox-ctf-85076)"  
+    [![](){ width="200" align=left }](https://academy.redfoxsec.com/course/redfox-ctf-85076)  
+    **比赛名称** : [Redfox CTF 2026](https://academy.redfoxsec.com/course/redfox-ctf-85076)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-21 20:30:00 - 2026-03-22 20:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : redfoxteam (https://ctftime.org/team/424518)  
+    **添加日历** : https://ctftime.org/event/3163.ics  
+    
+??? Quote "[Undutmaning 2026](https://undutmaning.se/)"  
+    [![](https://ctftime.org/media/events/logo_2026_border.png){ width="200" align=left }](https://undutmaning.se/)  
+    **比赛名称** : [Undutmaning 2026](https://undutmaning.se/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-21 19:00:00 - 2026-03-22 03:00:00 UTC+8  
+    **比赛权重** : 33.00  
+    **赛事主办** : Undutmaning (https://ctftime.org/team/212504)  
+    **添加日历** : https://ctftime.org/event/2987.ics  
+    
+??? Quote "[ZeroDays CTF 2026](http://www.zerodays.ie/)"  
+    [![](https://ctftime.org/media/events/4ed567668366c4f824552685fc0c6b04.png){ width="200" align=left }](http://www.zerodays.ie/)  
+    **比赛名称** : [ZeroDays CTF 2026](http://www.zerodays.ie/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-21 18:00:00 - 2026-03-22 01:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
+    **添加日历** : https://ctftime.org/event/3063.ics  
+    
+??? Quote "[PolyPwnCTF 2026](https://polypwn.polycyber.io/)"  
+    [![](){ width="200" align=left }](https://polypwn.polycyber.io/)  
+    **比赛名称** : [PolyPwnCTF 2026](https://polypwn.polycyber.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-21 18:00:00 - 2026-03-22 05:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
+    **添加日历** : https://ctftime.org/event/3203.ics  
+    
+??? Quote "[Insomni'hack 2026](https://insomnihack.ch/contest/)"  
+    [![](){ width="200" align=left }](https://insomnihack.ch/contest/)  
+    **比赛名称** : [Insomni'hack 2026](https://insomnihack.ch/contest/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-21 01:00:00 - 2026-03-21 12:00:00 UTC+8  
+    **比赛权重** : 24.14  
+    **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
+    **添加日历** : https://ctftime.org/event/3146.ics  
+    
+??? Quote "[m0leCon CTF 2026](https://finals.m0lecon.it/)"  
+    [![](){ width="200" align=left }](https://finals.m0lecon.it/)  
+    **比赛名称** : [m0leCon CTF 2026](https://finals.m0lecon.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-20 00:00:00 - 2026-03-21 00:00:00 UTC+8  
+    **比赛权重** : 75.00  
+    **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
+    **添加日历** : https://ctftime.org/event/3196.ics  
+    
 ??? Quote "[CyberCup Indian Ocean 2026 – Team Edition | Step2](https://cybercup.ocoi.org/)"  
     [![](https://ctftime.org/media/events/logo2_10.png){ width="200" align=left }](https://cybercup.ocoi.org/)  
     **比赛名称** : [CyberCup Indian Ocean 2026 – Team Edition | Step2](https://cybercup.ocoi.org/)  
@@ -51,7 +105,7 @@ comments: true
     **比赛名称** : [MIPT CTF Quals 2026](https://miptctf.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-03-14 17:00:00 - 2026-03-15 17:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 24.58  
     **赛事主办** : L0stAx3s (https://ctftime.org/team/354995)  
     **添加日历** : https://ctftime.org/event/3162.ics  
     
@@ -69,7 +123,7 @@ comments: true
     **比赛名称** : [tkbctf5](https://alpacahack.com/ctfs/tkbctf5)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-03-14 13:00:00 - 2026-03-15 13:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : TPC (https://ctftime.org/team/222485)  
     **添加日历** : https://ctftime.org/event/3091.ics  
     
@@ -114,7 +168,7 @@ comments: true
     **比赛名称** : [RedShift.ZeroPlusCTF-3](https://redshiftctf.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-03-13 20:00:00 - 2026-03-15 20:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
     **添加日历** : https://ctftime.org/event/3191.ics  
     
@@ -873,58 +927,4 @@ comments: true
     **比赛权重** : 65.00  
     **赛事主办** : HeroCTF (https://ctftime.org/team/145166)  
     **添加日历** : https://ctftime.org/event/2869.ics  
-    
-??? Quote "[LakeCTF Quals 25-26](https://lakectf.epfl.ch/)"  
-    [![](https://ctftime.org/media/events/lake_logo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
-    **比赛名称** : [LakeCTF Quals 25-26](https://lakectf.epfl.ch/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-29 02:00:00 - 2025-11-30 02:00:00 UTC+8  
-    **比赛权重** : 45.00  
-    **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
-    **添加日历** : https://ctftime.org/event/2944.ics  
-    
-??? Quote "[2025 Qiangwang Challenge on Cyber Mimic Defense Finals](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)"  
-    [![](https://ctftime.org/media/events/mimicoctupus.png){ width="200" align=left }](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
-    **比赛名称** : [2025 Qiangwang Challenge on Cyber Mimic Defense Finals](https://nest.pmlabs.com.cn/#/internationalEliteChallenge)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-26 12:00:00 - 2025-11-29 12:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : LoveFromMimic (https://ctftime.org/team/364644)  
-    **添加日历** : https://ctftime.org/event/2999.ics  
-    
-??? Quote "[Infosec University Hackathon 2025](https://syfinfosechackathon.info/)"  
-    [![](https://ctftime.org/media/events/OCTOBER_INFOSEC_AWARENESS_MONTH_-_Logo.jpg){ width="200" align=left }](https://syfinfosechackathon.info/)  
-    **比赛名称** : [Infosec University Hackathon 2025](https://syfinfosechackathon.info/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-23 10:00:00 - 2025-11-23 15:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Synchrony Infosec University Hackathon (https://ctftime.org/team/412036)  
-    **添加日历** : https://ctftime.org/event/3008.ics  
-    
-??? Quote "[GlacierCTF 2025](https://play.glacierctf.com/)"  
-    [![](https://ctftime.org/media/events/glacierlogo.png){ width="200" align=left }](https://play.glacierctf.com/)  
-    **比赛名称** : [GlacierCTF 2025](https://play.glacierctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-23 02:00:00 - 2025-11-24 02:00:00 UTC+8  
-    **比赛权重** : 52.57  
-    **赛事主办** : LosFuzzys (https://ctftime.org/team/8323)  
-    **添加日历** : https://ctftime.org/event/2714.ics  
-    
-??? Quote "[CyberSci Regional Qualifiers 2025-26](https://cybersecuritychallenge.ca/)"  
-    [![](https://ctftime.org/media/events/aa01b0217ba20e130d4605e9bf2b8e6c.jpg){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
-    **比赛名称** : [CyberSci Regional Qualifiers 2025-26](https://cybersecuritychallenge.ca/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-22 23:00:00 - 2025-11-23 06:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
-    **添加日历** : https://ctftime.org/event/2909.ics  
-    
-??? Quote "[CTFZone 2025 Final](https://ctfz.zone/)"  
-    [![](https://ctftime.org/media/events/aa86f826480a008ed91d88a917a0c33b_1.png){ width="200" align=left }](https://ctfz.zone/)  
-    **比赛名称** : [CTFZone 2025 Final](https://ctfz.zone/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2025-11-22 17:00:00 - 2025-11-23 01:00:00 UTC+8  
-    **比赛权重** : 96.90  
-    **赛事主办** : BIZone (https://ctftime.org/team/32190)  
-    **添加日历** : https://ctftime.org/event/2972.ics  
     

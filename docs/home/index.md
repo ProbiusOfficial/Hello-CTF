@@ -54,41 +54,41 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Insomni'hack 2026](https://insomnihack.ch/contest/)"  
-            [![](){ width="200" align=left }](https://insomnihack.ch/contest/)  
-            **比赛名称** : [Insomni'hack 2026](https://insomnihack.ch/contest/)  
+        ??? Quote "[AITU CTF 2026 Quals](https://ctf.fr13nds.team/)"  
+            [![](https://ctftime.org/media/events/icon-black.png){ width="200" align=left }](https://ctf.fr13nds.team/)  
+            **比赛名称** : [AITU CTF 2026 Quals](https://ctf.fr13nds.team/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-21 01:00:00 - 2026-03-21 12:00:00 UTC+8  
-            **比赛权重** : 24.14  
-            **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
-            **添加日历** : https://ctftime.org/event/3146.ics  
-            
-        ??? Quote "[Curiosity CTF 2026 [Postponed]](https://curiosityctf.xyz/)"  
-            [![](){ width="200" align=left }](https://curiosityctf.xyz/)  
-            **比赛名称** : [Curiosity CTF 2026 [Postponed]](https://curiosityctf.xyz/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-21 03:00:00 - 2026-03-23 03:00:00 UTC+8  
+            **比赛时间** : 2026-03-23 15:00:00 - 2026-03-24 03:00:00 UTC+8  
             **比赛权重** : 0.00  
-            **赛事主办** : Curioѕity (https://ctftime.org/team/392973)  
-            **添加日历** : https://ctftime.org/event/3050.ics  
+            **赛事主办** : FR13NDS TEAM (https://ctftime.org/team/155678)  
+            **添加日历** : https://ctftime.org/event/3204.ics  
             
-        ??? Quote "[TAMUctf 2026](https://tamuctf.com/)"  
-            [![](https://ctftime.org/media/events/TAMUctf-logo.png){ width="200" align=left }](https://tamuctf.com/)  
-            **比赛名称** : [TAMUctf 2026](https://tamuctf.com/)  
+        ??? Quote "[Stranger's CTF - Techtrix '26](https://upsidectf.online/)"  
+            [![](){ width="200" align=left }](https://upsidectf.online/)  
+            **比赛名称** : [Stranger's CTF - Techtrix '26](https://upsidectf.online/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-21 06:00:00 - 2026-03-23 06:00:00 UTC+8  
-            **比赛权重** : 76.22  
-            **赛事主办** : TAMUctf (https://ctftime.org/team/37721)  
-            **添加日历** : https://ctftime.org/event/3095.ics  
+            **比赛时间** : 2026-03-26 15:30:00 - 2026-03-27 15:30:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : UpsideCTF (https://ctftime.org/team/426714)  
+            **添加日历** : https://ctftime.org/event/3188.ics  
             
-        ??? Quote "[BSidesSF CTF 2026](https://ctf.bsidessf.net/)"  
-            [![](https://ctftime.org/media/events/bsides_logo_short.png){ width="200" align=left }](https://ctf.bsidessf.net/)  
-            **比赛名称** : [BSidesSF CTF 2026](https://ctf.bsidessf.net/)  
+        ??? Quote "[TexSAW 2026]()"  
+            [![](){ width="200" align=left }]()  
+            **比赛名称** : [TexSAW 2026]()  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-21 07:00:00 - 2026-03-23 07:00:00 UTC+8  
-            **比赛权重** : 25.00  
-            **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
-            **添加日历** : https://ctftime.org/event/3108.ics  
+            **比赛时间** : 2026-03-27 20:00:00 - 2026-03-29 20:00:00 UTC+8  
+            **比赛权重** : 41.59  
+            **赛事主办** : CSG (https://ctftime.org/team/333)  
+            **添加日历** : https://ctftime.org/event/3130.ics  
+            
+        ??? Quote "[KalmarCTF 2026](https://kalmarc.tf/)"  
+            [![](https://ctftime.org/media/events/kalmar-logo_1.png){ width="200" align=left }](https://kalmarc.tf/)  
+            **比赛名称** : [KalmarCTF 2026](https://kalmarc.tf/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-28 01:00:00 - 2026-03-30 01:00:00 UTC+8  
+            **比赛权重** : 49.97  
+            **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
+            **添加日历** : https://ctftime.org/event/2983.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
