@@ -1008,18 +1008,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "TAMUctf 2026",
-        "比赛时间": "2026-03-21 06:00:00 - 2026-03-23 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3095.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://tamuctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/TAMUctf-logo.png",
-        "比赛权重": "76.22",
-        "赛事主办": "TAMUctf (https://ctftime.org/team/37721)",
-        "比赛ID": "198",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "BSidesSF CTF 2026",
         "比赛时间": "2026-03-21 07:00:00 - 2026-03-23 07:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3108.ics",
@@ -1077,6 +1065,18 @@
         "比赛权重": "0.00",
         "赛事主办": "PolyCyber (https://ctftime.org/team/212241)",
         "比赛ID": "1285",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "TAMUctf 2026",
+        "比赛时间": "2026-03-21 06:00:00 - 2026-03-23 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3095.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://tamuctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/TAMUctf-logo.png",
+        "比赛权重": "76.22",
+        "赛事主办": "TAMUctf (https://ctftime.org/team/37721)",
+        "比赛ID": "198",
         "比赛状态": "past"
     },
     {
@@ -2217,18 +2217,6 @@
         "比赛权重": "0.00",
         "赛事主办": "WP CTF (https://ctftime.org/team/303099)",
         "比赛ID": "1128",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "HeroCTF v7",
-        "比赛时间": "2025-11-29 04:00:00 - 2025-12-01 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2869.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.heroctf.fr/",
-        "比赛标志": "",
-        "比赛权重": "65.00",
-        "赛事主办": "HeroCTF (https://ctftime.org/team/145166)",
-        "比赛ID": "601",
         "比赛状态": "past"
     }
 ]

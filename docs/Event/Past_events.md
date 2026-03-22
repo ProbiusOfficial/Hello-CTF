@@ -44,6 +44,15 @@ comments: true
     **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
     **添加日历** : https://ctftime.org/event/3203.ics  
     
+??? Quote "[TAMUctf 2026](https://tamuctf.com/)"  
+    [![](https://ctftime.org/media/events/TAMUctf-logo.png){ width="200" align=left }](https://tamuctf.com/)  
+    **比赛名称** : [TAMUctf 2026](https://tamuctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-21 06:00:00 - 2026-03-23 06:00:00 UTC+8  
+    **比赛权重** : 76.22  
+    **赛事主办** : TAMUctf (https://ctftime.org/team/37721)  
+    **添加日历** : https://ctftime.org/event/3095.ics  
+    
 ??? Quote "[Insomni'hack 2026](https://insomnihack.ch/contest/)"  
     [![](){ width="200" align=left }](https://insomnihack.ch/contest/)  
     **比赛名称** : [Insomni'hack 2026](https://insomnihack.ch/contest/)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : WP CTF (https://ctftime.org/team/303099)  
     **添加日历** : https://ctftime.org/event/2764.ics  
-    
-??? Quote "[HeroCTF v7](https://ctf.heroctf.fr/)"  
-    [![](){ width="200" align=left }](https://ctf.heroctf.fr/)  
-    **比赛名称** : [HeroCTF v7](https://ctf.heroctf.fr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-29 04:00:00 - 2025-12-01 06:00:00 UTC+8  
-    **比赛权重** : 65.00  
-    **赛事主办** : HeroCTF (https://ctftime.org/team/145166)  
-    **添加日历** : https://ctftime.org/event/2869.ics  
     
