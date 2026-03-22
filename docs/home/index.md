@@ -91,7 +91,7 @@ hide:
             **添加日历** : https://ctftime.org/event/2983.ics  
             
     <!-- 主页赛事展示_结束 -->
-    [→ 了解更多](./Event/)
+    [→ 了解更多](../Event/)
 
 </div>
   <div class="grid cards" markdown>
@@ -112,7 +112,7 @@ hide:
 
     ---
 
-    - 入门CTF/阅读本书前必读：[快速开始](./hc-start/)以及[前言部分](./hc-preface/)  
+    - 入门CTF/阅读本书前必读：[快速开始](../hc-start/)以及[前言部分](../hc-preface/)  
     - 请善用搜索功能来寻找你想要的内容！！
     - 站点已接入 CDN，感谢[渊龙Sec安全团队](https://dh.aabyss.cn)友情赞助
 
