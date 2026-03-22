@@ -491,7 +491,16 @@ hide:
     
     === "*即将开始*"
         === "国内赛事"
-    
+            ??? Quote "[PolarisCTF 2026](https://www.ctfplus.cn/competition/hall)"  
+                **比赛名称** : [PolarisCTF 2026](https://www.ctfplus.cn/competition/hall)  
+                **比赛时间** : 2026年03月28日 09:00 - 2026年03月30日 09:00  
+                **比赛详细** : 星盟安全团队举办的第一届招新赛，由 CTF+ 平台承办。QQ群：1083975295  
+                
+            ??? Quote "[NepCTF 2026](/isPrepare)"  
+                **比赛名称** : [NepCTF 2026](/isPrepare)  
+                **比赛时间** : 2026年07月10日 19:00 - 2026年07月12日 19:00  
+                **比赛详细** : 筹备中  
+                
         === "国外赛事"
             ??? Quote "[AITU CTF 2026 Quals](https://ctf.fr13nds.team/)"  
                 [![](https://ctftime.org/media/events/icon-black.png){ width="200" align=left }](https://ctf.fr13nds.team/)  
@@ -1273,27 +1282,7 @@ hide:
                 
     === "*已经结束*"
         === "国内赛事"
-            ??? Quote "[HGAME 2026](https://hgame.vidar.club/)"  
-                **比赛名称** : [HGAME 2026](https://hgame.vidar.club/)  
-                **比赛类型** : 线上Jeopardy解题赛  
-                **报名时间** : 2026年01月26日 00:00 - 2026年02月15日 19:59  
-                **比赛时间** : 2026年02月02日 10:00 - 2026年02月15日 20:00  
-                **其他说明** : HGAME 2026 是一场由Vidar-Team组织的线上Jeopardy解题赛，。报名从2026年01月26日00:00开始，到2026年02月15日20:00结束。比赛从2026年02月02日10:00开始，至2026年02月15日20:00结束。更多信息，请加入QQ群576834793。  
-                
-            ??? Quote "[furryCTF 2025 高校联合新神赛](https://furryctf.com/)"  
-                **比赛名称** : [furryCTF 2025 高校联合新神赛](https://furryctf.com/)  
-                **比赛类型** : 线上Jeopardy解题赛  
-                **报名时间** : 2026年01月01日 00:00 - 2026年02月04日 12:00  
-                **比赛时间** : 2026年01月30日 12:00 - 2026年02月04日 12:00  
-                **其他说明** : 主办方为furryCTF及POFP联合战队，严禁攻击平台或使用扫描器，设有多种奖品，详情请到QQ群查看；祝各位玩的开心~  
-                
-            ??? Quote "[UniCTF](https://unictf.play.ctfplus.cn/)"  
-                **比赛名称** : [UniCTF](https://unictf.play.ctfplus.cn/)  
-                **比赛类型** : 线上Jeopardy解题赛  
-                **报名时间** : 2026年01月09日 10:09 - 2026年01月25日 09:59  
-                **比赛时间** : 2026年01月25日 10:00 - 2026年01月31日 10:00  
-                **其他说明** : 4人一组团队赛，需先在CTFPlus比赛大厅报名（https://www.ctfplus.cn）；奖项含社会赛道与新生赛道奖金及证书，单方向额外奖励。  
-                
+    
         === "国外赛事"
             ??? Quote "[Redfox CTF 2026](https://academy.redfoxsec.com/course/redfox-ctf-85076)"  
                 [![](){ width="200" align=left }](https://academy.redfoxsec.com/course/redfox-ctf-85076)  
