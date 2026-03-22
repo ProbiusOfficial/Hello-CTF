@@ -1122,7 +1122,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://alpacahack.com/ctfs/tkbctf5",
         "比赛标志": "https://ctftime.org/media/events/tkbctf_logo.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "TPC (https://ctftime.org/team/222485)",
         "比赛ID": "1476",
         "比赛状态": "past"
