@@ -1005,7 +1005,7 @@
         "比赛权重": "0.00",
         "赛事主办": "redfoxteam (https://ctftime.org/team/424518)",
         "比赛ID": "1516",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Undutmaning 2026",
@@ -1182,7 +1182,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://redshiftctf.ru/",
         "比赛标志": "https://ctftime.org/media/events/b00d5118-7ef3-4a84-92f4-a0929baae219_1.jpg",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "o1d_bu7_go1d (https://ctftime.org/team/213673)",
         "比赛ID": "1179",
         "比赛状态": "past"
@@ -2193,18 +2193,6 @@
         "比赛权重": "65.00",
         "赛事主办": "HeroCTF (https://ctftime.org/team/145166)",
         "比赛ID": "601",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "LakeCTF Quals 25-26",
-        "比赛时间": "2025-11-29 02:00:00 - 2025-11-30 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2944.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://lakectf.epfl.ch/",
-        "比赛标志": "https://ctftime.org/media/events/lake_logo.png",
-        "比赛权重": "45.00",
-        "赛事主办": "polygl0ts (https://ctftime.org/team/53791)",
-        "比赛ID": "818",
         "比赛状态": "past"
     }
 ]

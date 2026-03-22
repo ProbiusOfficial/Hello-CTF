@@ -28,6 +28,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Redfox CTF 2026](https://academy.redfoxsec.com/course/redfox-ctf-85076)"  
+    [![](){ width="200" align=left }](https://academy.redfoxsec.com/course/redfox-ctf-85076)  
+    **比赛名称** : [Redfox CTF 2026](https://academy.redfoxsec.com/course/redfox-ctf-85076)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-21 20:30:00 - 2026-03-22 20:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : redfoxteam (https://ctftime.org/team/424518)  
+    **添加日历** : https://ctftime.org/event/3163.ics  
+    
 ??? Quote "[Undutmaning 2026](https://undutmaning.se/)"  
     [![](https://ctftime.org/media/events/logo_2026_border.png){ width="200" align=left }](https://undutmaning.se/)  
     **比赛名称** : [Undutmaning 2026](https://undutmaning.se/)  
@@ -159,7 +168,7 @@ comments: true
     **比赛名称** : [RedShift.ZeroPlusCTF-3](https://redshiftctf.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-03-13 20:00:00 - 2026-03-15 20:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
     **添加日历** : https://ctftime.org/event/3191.ics  
     
@@ -918,13 +927,4 @@ comments: true
     **比赛权重** : 65.00  
     **赛事主办** : HeroCTF (https://ctftime.org/team/145166)  
     **添加日历** : https://ctftime.org/event/2869.ics  
-    
-??? Quote "[LakeCTF Quals 25-26](https://lakectf.epfl.ch/)"  
-    [![](https://ctftime.org/media/events/lake_logo.png){ width="200" align=left }](https://lakectf.epfl.ch/)  
-    **比赛名称** : [LakeCTF Quals 25-26](https://lakectf.epfl.ch/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-11-29 02:00:00 - 2025-11-30 02:00:00 UTC+8  
-    **比赛权重** : 45.00  
-    **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
-    **添加日历** : https://ctftime.org/event/2944.ics  
     
