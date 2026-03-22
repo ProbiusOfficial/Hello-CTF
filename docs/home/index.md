@@ -52,7 +52,16 @@ hide:
     ---
     <!-- 主页赛事展示_开始 -->
     === "国内比赛"
-    
+        ??? Quote "[PolarisCTF 2026](https://www.ctfplus.cn/competition/hall)"  
+            **比赛名称** : [PolarisCTF 2026](https://www.ctfplus.cn/competition/hall)  
+            **比赛时间** : 2026年03月28日 09:00 - 2026年03月30日 09:00  
+            **比赛详细** : 星盟安全团队举办的第一届招新赛，由 CTF+ 平台承办。QQ群：1083975295  
+            
+        ??? Quote "[NepCTF 2026](/isPrepare)"  
+            **比赛名称** : [NepCTF 2026](/isPrepare)  
+            **比赛时间** : 2026年07月10日 19:00 - 2026年07月12日 19:00  
+            **比赛详细** : 筹备中  
+                
     === "国外比赛"
         ??? Quote "[AITU CTF 2026 Quals](https://ctf.fr13nds.team/)"  
             [![](https://ctftime.org/media/events/icon-black.png){ width="200" align=left }](https://ctf.fr13nds.team/)  
