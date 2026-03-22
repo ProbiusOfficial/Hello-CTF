@@ -73,85 +73,85 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
-    ### [腾讯游戏安全竞赛2025决赛题解](https://xia0ji233.github.io/2025/04/14/tencent-race-2025-final/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-04-14
+    ### [某FPS游戏反作弊分析](https://xia0ji233.github.io/2026/03/05/Game7/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2026-03-05
 
-    记录一下今年 2025 决赛过程题目描述（1）在intel CPU/64位Windows10系统上运行sys，成功加载驱动（0.5分）（2）能在双机环境运行驱动并调试（1分）（3）优化驱动中的耗时算法，并给出demo能快速计算得出正确的key（1分）（4）分析并给出flag的计算执行流程（1.5分），能准确说明其串联逻辑（0.5分）（5）正确解出flag（1分）（6）该题目使用了一种外挂常用的隐藏...
-    ### [腾讯游戏安全大赛2025初赛题解](https://xia0ji233.github.io/2025/03/31/tencent-race-2025-pre/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-03-31
+    由于该FPS游戏版本变动较大，且 CVE-2025-45737 已经公开，遂公开之前分析。上来先开驱动。R0分析DriverEntry逻辑结论DriverEntry按顺序执行以下逻辑获取MmGetVirtualForPhysical地址特征码判断反hook反模拟器MmGetSystemRoutineAddress获取了一系列API获取ntoskrnl.exe地址并解析读取KeServiceDesc...
+    ### [腾讯游戏安全竞赛2025复赛题解（加强版）](https://xia0ji233.github.io/2026/01/24/tencent-race-2025-final_2/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2026-01-24
 
-    记录一下今年 2025 初赛过程参赛选手信息题目描述小Q是一位热衷于PC客户端安全的技术爱好者，为了不断提升自己的技能，他经常参与各类CTF竞赛。某天，他收到了一封来自神秘人的邮件，内容如下：“我可以引领你进入游戏安全的殿堂，但在此之前，你需要通过我的考验。打开这扇大门的钥匙就隐藏在附件中，你有能力找到它吗？找到正确的flag（2分）flag：flag{ACE_We1C0me!T0Z0Z5GamE...
-    ### [从CVE-2025-30208看任意文件读取利用](https://blog.zgsec.cn/archives/713.html)  
-    >by [曾哥](https://blog.zgsec.cn/), 2025-03-30
+    由于去年很多分析的不到位的地方，故今年想详细分析一遍整体逻辑。本篇帖子基于赛后复盘的角度去分析，相比之前发文会有更多详细且有理有据的逻辑分析，少很多暴力和猜测的结果（虽然一些部分还是需要靠猜），旨在真正学习其中的技术。题目描述（1）在intel CPU/64位Windows10系统上运行sys，成功加载驱动（0.5分）（2）能在双机环境运行驱动并调试（1分）（3）优化驱动中的耗时算法，并给出dem...
+    ### [如何用大模型十分钟完成ComfyUI未授权至命令执行利用分析(CVE-2025-67303)](https://y4tacker.github.io/2026/01/06/year/2026/%E6%88%91%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8D%81%E5%88%86%E9%92%9F%E5%AE%8C%E6%88%90ComfyUI%E6%9C%AA%E6%8E%88%E6%9D%83%E8%87%B3%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-CVE-2025-67303/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2026-01-06
 
-    0# 概述师傅们好久不见！最近不是特别忙，就研究研究最新的漏洞。刚好最近一大批漏洞都爆出来了，比如 CVE-2025-1097, CVE-2025-1098, CVE-2025-24514, CVE-2025-1974 Kubernetes Ingress-Nginx Admission Controller RCE Escalation，是危害性极大的高危漏洞，在内网渗透中能直接击穿K8S集群。...
-    ### [【白帽访谈录】云安全将成为未来安全研究主战场-会议纪要](https://blog.zgsec.cn/archives/711.html)  
-    >by [曾哥](https://blog.zgsec.cn/), 2025-02-28
+    e363dd29daea40b734c478649d7a0b044daaaa5675b9f0c6aeff787f1f1b4de9008c9a9a31f1b7eb5643dbee05c0959657426e89ad211a3129fdd0e611a00b42fcb0b62da123b7cdb55ca59f3573bcd29836de591bd8559e802f2e28c491082c19983d...
+    ### [2025年终总结](https://xia0ji233.github.io/2025/12/31/Summary2025/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-12-30
 
-    {bilibili bvid="BV19T9gY4ETm" page=""/}很高兴能参与这期白帽访谈录，也感谢各位师傅的支持~也随时欢迎各位师傅和我友好交流哈哈！本期访谈的回放直播已经上传B站，链接： https://www.bilibili.com/video/BV19T9gY4ETm，感谢各位师傅的一键三连！！！欢迎大家关注渊龙Sec安全团队公众号，干货满满哦~{dotted startCo...
-    ### [某系统前台组合拳RCE](https://y4tacker.github.io/2025/02/23/year/2025/%E6%9F%90%E7%B3%BB%E7%BB%9F%E5%89%8D%E5%8F%B0%E7%BB%84%E5%90%88%E6%8B%B3RCE/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2025-02-23
+    2025 年终总结2025总结202501-01由于实习 base 比较好，可以跟队内师傅（尤其是 Qfrost 师傅）频繁进行线下交流，适时扫清自身的迷惘，摆正自身位置。01-27第一次实习倾注了大量精力，谁能想到一个实习生居然坚持到了最后一刻才回家过年，开工后仅一天就回到工位上。03-04第一段实习告一段落，手上拿着那张离职证明，看着刚交的一个月房租，心理不免有些失落。社会的这一课，终是要自身...
+    ### [浅析帆软前台表达式注入&WAF-Bypass](https://y4tacker.github.io/2025/12/21/year/2025/12/%E6%B5%85%E6%9E%90%E5%B8%86%E8%BD%AF%E5%89%8D%E5%8F%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B3%A8%E5%85%A5/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-12-21
 
-    8133babd8f05e144d8e8c2c4c8ee0fb3d40c2c031c3925709b74cb30c7b27fca92bfd93cf7cf65a6834a805821993b6c9674428ad9fdcf275cf47eb5e07cfd2d776e01401bdf1c9d1052d24b573abb3ff41508c0d801b0496ab9e4257b11885ae0e4bf...
-    ### [windowsAPC学习（2）——APC挂入与执行](https://xia0ji233.github.io/2025/02/17/WindowsAPC2/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-02-17
+    6bab72a3d7ad3d7489797be3d8d2163ee3eebe28529de9bbe563e6013c4db180852f505474f45c2e073e16c2c01b9650eb4b738151ea92c9a01eef389c6c1f4520eada05f390ec33115b60abaf063eba31dc783c0e6ce74f33717e6ee5f85f5cb95639...
+    ### [ARM汇编基础学习（1）](https://xia0ji233.github.io/2025/12/14/ARM1/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-12-14
 
-    今天详细了解一下 APC 到底是怎么工作的。APC挂入在 APC 挂入的时候，内核会准备一个 _KAPC 结构体，将该结构体挂入线程的 APC 队列中。KAPC结构体介绍先在 windbg 中查看一下：123456789101112131415161718kd> dt _KAPCntdll!_KAPC   +0x000 Type             : UChar   +0x001 Spare...
-    ### [某二次元开放世界冒险游戏反作弊分析报告](https://xia0ji233.github.io/2025/02/14/Game6/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-02-14
+    今天开始学学 ARM 指令集，也为之后安卓的学习铺铺路。ARM 是一种 RISC（精简指令集计算）处理器，因此拥有简化指令集（100 条指令或更少）和比 CISC（复杂指令集） 更多的通用寄存器。与英特尔不同，ARM 使用仅在寄存器上操作的指令，并使用 Load/Store 内存模型进行内存访问，这意味着只有 Load/Store 指令可以访问内存，其余的运算操作必须在寄存器中完成。环境准备手上没...
+    ### [信息搜集之边缘资产和隐形资产的发掘](https://blog.zgsec.cn/archives/729.html)  
+    >by [曾哥](https://blog.zgsec.cn/), 2025-11-30
 
-    好久没碰某二次元开放世界冒险游戏了，听说新升级了反作弊，故来一探究竟，并尝试实现一些简单的功能。基本保护分析这种级别的游戏首先不考虑静态分析，直接跑起来。不出意外肯定不能直接内存读写，想附加调试器也是附加不上的，所以选择先从驱动入手，游戏加载时会加载驱动。先尝试简单的拦截，方法很多：注册 LoadImage 回调拦截，改驱动名等等等。后者比较好实现，但是运行游戏一段时间会弹窗强制退出。而如果说让保...
-    ### [windowsAPC学习（1）——APC简介](https://xia0ji233.github.io/2025/02/09/WindowsAPC1/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-02-09
+    0# 概述0.1 本文原创首发于国家网络空间云安全社区一眨眼的时间，马上就要过年了，不知道大家今年都过得如何？近期有不少师傅在抖音咨询我，问我说：常规的漏洞原理和利用都捻熟于心，但是为什么在SRC挖掘和攻防中，往往就是挖不到漏洞呢？我给了两点回复：第一个就是实战的经验比较少，对于漏洞在哪出现，有什么手法还掌握的不多；第二个是信息搜集没有得到要领，只会僵硬的进行信息搜集，对于边缘资产和隐形资产的发掘...
+    ### [强网杯S9决赛Pwn writeup](https://xia0ji233.github.io/2025/11/26/qwb2025_final/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-11-26
 
-    来了解一下Windows的APC机制。APCAPC介绍APC 即 Asyncroneus Procedure Call，异步过程调用。学过之前的知识我们知道，线程是不能被杀掉、挂起和恢复的，线程在执行的时候自己占据着CPU，其他线程如何控制它呢？改变一个线程的行为，这就需要APC了。APC结构体APC的结构体如下所示123456789101112131415161718kd> dt _KAPCnt...
-    ### [windows句柄表学习（1）](https://xia0ji233.github.io/2025/01/26/WindowsObjectTable1/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-26
+    本篇文章作个人复现 2025 强网杯决赛赛题的记录。AWDUsomebox这道题是 rust 的综合题，总体难度算很高的了，并要求选手掌握很深的逆向功底，密码学技术和 shellcode 编写技术。上来一串加密的数据，让人看得一脸懵逼，只能开逆了，主逻辑在 sub_1AB40 中，通过字符串发现一个菜单顺着这个 menu 字符串可以找到关键结构很显然，1FA20 就是所谓的加密函数了。很好，非常无...
+    ### [Android逆向学习（1）](https://xia0ji233.github.io/2025/11/16/Android1/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-11-16
 
-    来了解一下Windows内核的句柄表。句柄句柄就类似 Linux 的文件描述符，指示了某个进程在内核对象的偏移，内核可以通过这个下标找到对应的内核对象。1234HANDLE g_hMutex = ::CreateMutex( NULL , FALSE, "XYZ");HANDLE g_hMutex = ::OpenMutex( MUTEX_ALL_ACCESSFALSE, "XYZ");HANDL...
-    ### [windows进程与线程学习——深入研究线程调度（2）](https://xia0ji233.github.io/2025/01/25/WindowsProcess5/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-25
+    开始学习Android逆向APK文件结构随便使用 7-zip 打开一个 apk 文件列出一些关键的文件和目录的用途文件注释assets目录存放APK的静态资源文件，比如视频，音频，图片等lib 目录armeabi-v7a基本通用所有android设备，arm64-v8a只适用于64位的android设备，x86常见用于android模拟器，其目录下的.so文件是c或c++编译的动态链接库文件MET...
+    ### [东方通TongWeb最新反序列化利用分析](https://y4tacker.github.io/2025/11/13/year/2025/11/%E4%B8%9C%E6%96%B9%E9%80%9ATongWeb%E6%9C%80%E6%96%B0%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%88%A9%E7%94%A8%E5%88%86%E6%9E%90/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-11-13
 
-    深入研究一下线程调度，由于篇幅较多，分章节分析，第二篇。进程挂靠一个进程可以包含多个线程，线程结构体中会指向自己所属的进程。切换到这个线程的时候，会将对应的 cr3 切换到该进程的页目录基址，那么这个线程就可以访问这个进程的所有资源了。前面逆向的时候看到过，在切换 cr3 的时候，是拿到了 KTHREAD.ApcState.Process，而并不是 KTHREAD.Process，这个因为没学 A...
-    ### [windows进程与线程学习——深入研究线程调度（1）](https://xia0ji233.github.io/2025/01/25/WindowsProcess4/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-24
+    d89a383fba0dfbe5e04ae635e1bec07fae4cba8f85006ae22cb5a929bd201cec852660f67fcdd81091d1e7f6c1b6432c75a209103db66625e82a285d341bc3f6d8c9ac2868a9345f1ecef5b809b5ee8befddb13f780436598aa19443aaae13f6af6784...
+    ### [No-FTP:高版本JDK如何通过XXE-OOB读取多行文件](https://y4tacker.github.io/2025/11/10/year/2025/11/No-FTP-%E9%AB%98%E7%89%88%E6%9C%ACJDK%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87XXE-OOB%E8%AF%BB%E5%8F%96%E5%A4%9A%E8%A1%8C%E6%96%87%E4%BB%B6/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-11-10
 
-    深入研究一下线程调度，由于篇幅较多，分章节分析SwapContext首先研究一下 SwapContext 函数的实现。伪代码分析这里我们不去分析汇编代码，而是直接用 IDA + F5，把定义还原回去即可清晰地看出逻辑12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505...
-    ### [windows进程与线程学习——调度实现的学习](https://xia0ji233.github.io/2025/01/24/WindowsProcess3/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-24
+    No-FTP:高版本JDK如何通过XXE-OOB读取多行文件写在前面在XXE（XML External Entity Injection）的实际利用中，当遇到没有回显的场景时，通常需要通过OOB（Out-of-Band）方式将数据带出。传统的XXE-OOB利用中，如果目标文件包含换行符，直接通过HTTP协议外带会因为HTTP请求格式的限制(sun.net.www.protocol.http.Htt...
+    ### [强网杯S9初赛Reverse writeup](https://xia0ji233.github.io/2025/10/20/qwb2025_pre_reverse/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2025-10-20
 
-    来学习一下 Windows 线程调度的实现Windows中有一个函数SwapContext用来实现线程切换，我们先得了解一下什么情况下会引发线程切换。线程切换途径分主动切换和被动切换，很好理解，主动切换就是线程主动让出 CPU 执行，被动就是被打断而不得不让出 CPU。在做实验的时候，多核真的是很困扰的一个问题，想了半天想不明白多核怎么工作的，为了好理解线程切换，建议虚拟机都换成单核的，线程大多数...
-    ### [windows进程与线程学习——调度相关结构学习](https://xia0ji233.github.io/2025/01/24/WindowsProcess2/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-24
+    强网杯初赛的这道 re 挺有意思的，做了快 20h 出了。tradere基本vm结构分析ptrace 父子进程调试，父进程追踪子进程 int 3 指令的位置，替换成相应的操作，因为开始的赋值操作导致数据结构不好看，可以考虑 dump + nop 初始化的方式。每次 int 3 触发之后，会执行一个结构体中的函数，结构体如下定义。1234567struct data{    data* lchild...
+    ### [部分博客密码删除临时通知](https://y4tacker.github.io/2025/09/02/year/2025/09/%E9%83%A8%E5%88%86%E5%8D%9A%E5%AE%A2%E5%AF%86%E7%A0%81%E5%88%A0%E9%99%A4%E4%B8%B4%E6%97%B6%E9%80%9A%E7%9F%A5/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-09-02
 
-    来学习一下调度相关的结构很早就听说过断链隐藏的操作，因为 Windows 都是使用链表去管理进程，线程等结构的，所以断链可以达到隐藏自身的目的。那么这里就引申出来一个问题，为什么断链可以隐身且不破坏大部分的功能呢，下面的线程调度会给出答案。线程调度操作系统的一些理论，线程有三种状态：就绪（ready）、等待（wait）、运行（running）。至于为什么进程/线程断链可以达到隐藏且继续执行的目的，...
-    ### [windows进程与线程学习——基本结构](https://xia0ji233.github.io/2025/01/24/WindowsProcess1/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-24
+    加密的还是比较多，这里选几篇问的多的先公开吧，碎碎念的思路分享为主，部分文章因为不难写的也比较简单，临近的漏洞仍然不公开博客，主要还是考虑到一些风险吧，以下博客已删除密码，可直接访问:泛微E-Office10最新远程代码执行漏洞分析浅析Panalog-SQL注入到命令执行(Version<20240130)某凌OA之一次后台变前台的故事泛微云桥文件上传与JFinal Bypass浅析帆软FineV...
+    ### [浅析用友U8Cloud文件上传绕过](https://y4tacker.github.io/2025/09/02/year/2025/09/%E6%B5%85%E6%9E%90%E7%94%A8%E5%8F%8BU8Cloud%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%BB%95%E8%BF%87/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-09-02
 
-    来学习一下进程与线程的结构EPROCESS定义描述先来看看结构体的描述123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687...
-    ### [windows系统调用学习——系统描述符表](https://xia0ji233.github.io/2025/01/24/WindowsSyscall4/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-24
+    b2963ed3cf610cdbf71afa8f8ae1ed42faa800749325fb01df42ebf527266f25d0d5e7eb9f41fa82066f620d019fd4c64786baeb73afd9e2cdd205dfbf7346caaf7b04c2db7f9ebe7b8436778dc80240cb9fe7182f18c78e30e33410a1b6a17184bbd6...
+    ### [浅析SmarBI最新权限绕过致RCE](https://y4tacker.github.io/2025/08/18/year/2025/08/%E6%B5%85%E6%9E%90SmarBI%E6%9C%80%E6%96%B0%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E8%87%B4RCE/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-08-18
 
-    来学习一下系统描述符表这个结构SSDTSSDT的全称是System Services Descriptor Table，意为系统服务描述符表。我们可以通过ETHREAD结构体加偏移的方式进行访问。在内核文件中，有一个变量是导出的：KeServiceDescriptorTable。通过它我们可以访问SSDT。可以看看在内核中看看 SSDT 是什么样的。123456789kd> dd KeServic...
-    ### [windows系统调用学习——调用细节与系统服务表](https://xia0ji233.github.io/2025/01/22/WindowsSyscall3/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-22
+    ec2d0f78db75185967c034d0900e9ea801690312c2501018c94f710ed617710ca87fed3700ccebdfb0e1e0414e66d5e0b7a7b9f12e1afe02813157ca7de2493d7f3d602bcd13db3c64990ce8aae91a5029c392c0725b07b7720085bdfb65097dc5611a...
+    ### [浅析U8Cloud最新权限绕过至RCE](https://y4tacker.github.io/2025/07/30/year/2025/07/%E6%B5%85%E6%9E%90U8Cloud%E6%9C%80%E6%96%B0%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E8%87%B3RCE/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-07-30
 
-    来深入挖掘一下Windows系统调用的过程KiSystemService分析这个函数是通过中断门进的，中断门本身保存了 CS 和 EIP，跨段提权后通过 TSS 拿到零环的 SS 和 ESP。此时为了维护三环的上下文状态，则会将各种寄存器保存到堆栈，也就是 Trap_Frame 结构体，中断门提权之后本身就会按顺序压入 SS，ESP，ELFAGS，CS，EIP。此时比较一下上一篇文章中提到的 Tr...
-    ### [windows系统调用学习——调用相关结构体学习](https://xia0ji233.github.io/2025/01/22/WindowsSyscall2/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-22
+    188fdb5a90e862409c62335614d03b9fc1fb489ee368a48d2adae972466363f6b4381b265f91d116ee77cc5e4b1a04e0a73be2d6a6830a1fb3c3c0925484501d1bfe2c517fe10ef843b1f29adb7670b3c12e8970f0c15cc99bded967217d7515b21e20...
+    ### [契约锁前台代码执行补丁绕过(20250707)](https://y4tacker.github.io/2025/07/12/year/2025/07/%E5%A5%91%E7%BA%A6%E9%94%81%E5%89%8D%E5%8F%B0%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E8%A1%A5%E4%B8%81%E7%BB%95%E8%BF%87-20250707/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-07-12
 
-    来深入挖掘一下Windows系统调用的过程相关结构体介绍Trap_Frame首先第一个要讲的是 Trap_Frame 结构，如下图所示。栈帧结构体，用于 Windows API 保存现场。经过提权进入0环的时候，Windows就会遵守这个结构体保存一系列的数据，最后四个成员用于虚拟8086模式下，不属于保护模式的范畴。中断发生时，若发生权限变换，则要保存旧堆栈，CPU压入的，由 HardwareE...
-    ### [windows系统调用学习——R3到R0](https://xia0ji233.github.io/2025/01/21/WindowsSyscall1/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2025-01-21
+    e6c11300420b389ced87a6974eed3fab25dac09bd1f6aee4a7a8e52e59f0711db643f38498979ffe7362af42a65818e6199d8458ea6277f1977e8e1d6193112aaa1fec2d6e20820e691a9bea2a94fe1cd41921e21853c253b70b81d7a051699e986703...
+    ### [如何从灰盒角度快速复现Weaver最新SQL注入](https://y4tacker.github.io/2025/07/09/year/2025/07/%E5%A6%82%E4%BD%95%E4%BB%8E%E7%81%B0%E7%9B%92%E8%A7%92%E5%BA%A6%E5%BF%AB%E9%80%9F%E5%A4%8D%E7%8E%B0Weaver-SQL%E6%B3%A8%E5%85%A5/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-07-09
 
-    来学习一下windows的系统调用简介API，应用程序接口（Application Programming Interface）。Windows API 顾名思义就是 Windows 提供的应用程序接口，为了在 Windows 上实现一定的功能，我们需要学习 API 的用途、传参、返回值等，微软对这部分都提供了大量的文档说明，因此详细学习 API 的实现原理对我们而言是很有必要的。Windows...
-    ### [2024不是年终总结的总结](https://y4tacker.github.io/2024/12/31/year/2024/12/2024%E4%B8%8D%E6%98%AF%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93%E7%9A%84%E6%80%BB%E7%BB%93/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2024-12-31
+    如何从灰盒角度快速复现Weaver最新SQL注入​    好久没写不加密的博客了，因为比较简单外面也半公开了，就简单写写思路吧，至于POC就不直接贴出来了，这篇文章主要是面向像漂亮鼠这样的Java新手​    作为安全从业者的我们，每天都会面对各种各样的补丁和系统更新，很多时候不知道该如何下手，尤其是对于初学者，在尝试复现闭源漏洞时，经常会感到无从下手。面对复杂的系统架构、冗长的代码，以及各种陌生...
+    ### [泛微最新补丁分析(20250704)](https://y4tacker.github.io/2025/07/09/year/2025/07/%E6%B3%9B%E5%BE%AE%E6%9C%80%E6%96%B0%E8%A1%A5%E4%B8%81%E5%88%86%E6%9E%90-20250704/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-07-08
 
-    2024不是年终总结的总结今年总体而言都和计划差不多走了下去，差不多做到了心若止水，心里基本没什么情绪波动了博客里不想分享过多的生活(娱乐活动多，玩得很爽🤪)让博客一直纯粹下去，简单总结下今年的技术进展吧博客博客上差不多算是“大满贯”吧，差不多每个月都坚持写了点东西Github与漏洞研究Github也罕见的做到了每月有更新🤪说到这当然也就离不开年初定下的flag🚩，不然没事谁天天往Github上P...
-    ### [2024年终总结](https://xia0ji233.github.io/2024/12/31/Summary2024/)  
-    >by [xia0ji233](https://xia0ji233.pro/), 2024-12-31
+    69b1ac3a8c7b27f3f5f24b3b8a7400bd6b1e48e4e4a74e3a9d5b0d94adacfef139866dca5f9c0752a208c27b415054195b8c9b09fcf4ba840127a35d6fbe535eecd06f6e3687d07dd41c43e8c9e03d37b2fa2fd462518b848ba4ce55dbd50da8160a3b...
+    ### [契约锁最新前台命令执行及花式绕WAF思路](https://y4tacker.github.io/2025/07/02/year/2025/07/%E5%A5%91%E7%BA%A6%E9%94%81%E6%9C%80%E6%96%B0%E5%89%8D%E5%8F%B0%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E5%8F%8A%E8%8A%B1%E5%BC%8F%E7%BB%95WAF%E6%80%9D%E8%B7%AF/)  
+    >by [Y4tacker](https://y4tacker.github.io), 2025-07-02
 
-    2024年也快过去了，过去的目标完成了多少，现在又如何呢？2024总结2024 01-05在队内师傅的带领下，开始写 LLVM 的插件，持续开发到六月份，也算给自己计算机生涯积累了一个大的项目开发经验。01-14时隔两年，再次走上 EC Finals 的舞台，感谢老师们坚持不懈的努力拿到了来之不易的一个名额，最后遗憾打铁，但是这趟上海之行依然很开心。附一段当时写的半退役感言：人生中最后一场以大学生...
+    d5bbf63b983168fb9cf0422698dce164b3b689fc252cba3faf3c75a652cdd7c0542690352b3ccfd95568bcdfd22e06b269ecaac13fedf5ec80edcfabe636ba58c0bd7707365d4cb09a79587d7876384f00fb8b2d3df17b696f7eefba94b5c2d66b93ca...
 
 </div>

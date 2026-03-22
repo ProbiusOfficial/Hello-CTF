@@ -5,58 +5,61 @@ comments: true
 
 ## 国内赛事
 
-??? Quote "2025年能源网络安全大赛"  
-    **比赛名称** : [2025年能源网络安全大赛](https://www.cers.org.cn/site/content/883b36f00aff466fa37efcef0c074915.html)  
-    **比赛类型** : 线上Jeopardy解题赛  
-    **报名时间** : 2025年3月1日 00:00 - 2025年3月31日 23:59  
-    **比赛时间** : 2025年4月1日 00:00 - 2025年6月30日 23:59  
-    **其他说明** : 2025年能源网络安全大赛由中国能源研究会主办，面向电网企业、发电及电力建设企业、石油石化企业、煤炭企业等单位网络安全技术、运维和管理人员，以及国内网络安全领域知名高校、科研机构、产业单位等代表。报名截止日期为2025年3月31日，可通过扫描二维码下载报名表并发送至icc@cers.org.cn邮箱。联系人包括屈庆红、李理和陈炜，可通过电话或邮箱进行咨询。  
-    
+
 
 ## 国际赛事
 
-??? Quote "[CSCG 2025](https://play.cscg.live/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://play.cscg.live/)  
-    **比赛名称** : [CSCG 2025](https://play.cscg.live/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-03-02 01:00:00 - 2025-05-02 00:00:00 UTC+8  
+??? Quote "[2026 Embedded Capture the Flag](https://ectf.mitre.org/)"  
+    [![](){ width="200" align=left }](https://ectf.mitre.org/)  
+    **比赛名称** : [2026 Embedded Capture the Flag](https://ectf.mitre.org/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2026-01-14 20:00:00 - 2026-04-15 20:00:00 UTC+8  
     **比赛权重** : 0  
-    **赛事主办** : NFITS (https://ctftime.org/team/360674)  
-    **添加日历** : https://ctftime.org/event/2588.ics  
+    **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
+    **添加日历** : https://ctftime.org/event/2916.ics  
     
-??? Quote "[CyberGame 2025](https://cybergame.sk/)"  
-    [![](https://ctftime.org/media/events/cybergame.png){ width="200" align=left }](https://cybergame.sk/)  
-    **比赛名称** : [CyberGame 2025](https://cybergame.sk/)  
+??? Quote "[CyberGame 2026](https://cybergame.sk/)"  
+    [![](https://ctftime.org/media/events/76a04fd5e7b9d834480d92fbf702f749.png){ width="200" align=left }](https://cybergame.sk/)  
+    **比赛名称** : [CyberGame 2026](https://cybergame.sk/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-01 08:00:00 - 2025-06-10 07:59:59 UTC+8  
+    **比赛时间** : 2026-03-01 07:00:00 - 2026-05-10 05:59:59 UTC+8  
     **比赛权重** : 0  
     **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
-    **添加日历** : https://ctftime.org/event/2774.ics  
+    **添加日历** : https://ctftime.org/event/3142.ics  
     
-??? Quote "[CTF@CIT 2025](https://ctf.cyber-cit.club/)"  
-    [![](https://ctftime.org/media/events/CTF-CIT-ctftime_2.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
-    **比赛名称** : [CTF@CIT 2025](https://ctf.cyber-cit.club/)  
+??? Quote "[CSCG 2026](https://play.cscg.live/)"  
+    [![](){ width="200" align=left }](https://play.cscg.live/)  
+    **比赛名称** : [CSCG 2026](https://play.cscg.live/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-26 05:00:00 - 2025-04-28 03:00:00 UTC+8  
-    **比赛权重** : 24.57  
-    **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
-    **添加日历** : https://ctftime.org/event/2759.ics  
+    **比赛时间** : 2026-03-02 01:00:00 - 2026-05-02 00:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : NFITS (https://ctftime.org/team/360674)  
+    **添加日历** : https://ctftime.org/event/2907.ics  
     
-??? Quote "[UMDCTF 2025](https://umdctf.io/)"  
-    [![](https://ctftime.org/media/events/logo-cropped.png){ width="200" align=left }](https://umdctf.io/)  
-    **比赛名称** : [UMDCTF 2025](https://umdctf.io/)  
+??? Quote "[Espilon CTF 2026](https://ctf.espilon.net/)"  
+    [![](){ width="200" align=left }](https://ctf.espilon.net/)  
+    **比赛名称** : [Espilon CTF 2026](https://ctf.espilon.net/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-26 06:00:00 - 2025-04-28 06:00:00 UTC+8  
-    **比赛权重** : 70.86  
-    **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
-    **添加日历** : https://ctftime.org/event/2563.ics  
+    **比赛时间** : 2026-03-11 20:00:00 - 2026-03-26 08:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Espilon (https://ctftime.org/team/423394)  
+    **添加日历** : https://ctftime.org/event/3179.ics  
     
-??? Quote "[BSidesSF 2025 CTF](https://ctf.bsidessf.net/)"  
-    [![](https://ctftime.org){ width="200" align=left }](https://ctf.bsidessf.net/)  
-    **比赛名称** : [BSidesSF 2025 CTF](https://ctf.bsidessf.net/)  
+??? Quote "[TAMUctf 2026](https://tamuctf.com/)"  
+    [![](https://ctftime.org/media/events/TAMUctf-logo.png){ width="200" align=left }](https://tamuctf.com/)  
+    **比赛名称** : [TAMUctf 2026](https://tamuctf.com/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-04-26 07:00:00 - 2025-04-28 07:00:00 UTC+8  
-    **比赛权重** : 0.00  
+    **比赛时间** : 2026-03-21 06:00:00 - 2026-03-23 06:00:00 UTC+8  
+    **比赛权重** : 76.22  
+    **赛事主办** : TAMUctf (https://ctftime.org/team/37721)  
+    **添加日历** : https://ctftime.org/event/3095.ics  
+    
+??? Quote "[BSidesSF CTF 2026](https://ctf.bsidessf.net/)"  
+    [![](https://ctftime.org/media/events/bsides_logo_short.png){ width="200" align=left }](https://ctf.bsidessf.net/)  
+    **比赛名称** : [BSidesSF CTF 2026](https://ctf.bsidessf.net/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-21 07:00:00 - 2026-03-23 07:00:00 UTC+8  
+    **比赛权重** : 25.00  
     **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
-    **添加日历** : https://ctftime.org/event/2721.ics  
+    **添加日历** : https://ctftime.org/event/3108.ics  
     

@@ -242,7 +242,8 @@ hide:
         | ------------ | -------------------------------------------------------- | ---------------------------------- |
         | 随波逐流     | 离线加密解密，字符编码进行转换，文件隐写查看等多项功能。 | [官网](http://1o1o.xyz/index.html) |
         | PuzzleSolver | MISC 综合解题工具，由Byxs20开发。                        | [神秘数字](https://github.com/Byxs20/PuzzleSolver)              |
-
+        | Typhon | Pyjail 自动化解题工具，由LamentXU开发。                       | [文档](https://typhon.lamentxu.top)              |
+        
     -   :material-snowflake: __开源脚本__  
 
         ---
@@ -344,3 +345,11 @@ hide:
 
     | 项目名称       | Usage | 项目地址 | 其他 |
     | ------------   | ----- | -------- | -------- |
+    | evilPather | pwn题的通防 | [Github](https://github.com/TTY-flag/evilPatcher) |
+    | Prepare-for-AWD | 攻击和防御用脚本 | [Github](https://github.com/admintony/Prepare-for-AWD) |
+    | 0rays-edr-filechecker | 文件监控器，防止别人传马 | [Github](https://github.com/christarcher/0RAYS-AWD-Filechecker) |
+    | awf-watchbird | web题的通防 | [Github](https://github.com/leohearts/awd-watchbird) |
+    | AoiAWD | 也是web题的通防 | [Github](https://github.com/DasSecurity-HatLab/AoiAWD) |
+    | PWN WAF | pwn的通防，还能以牙还牙（大嘘 | [Github](https://github.com/i0gan/pwn_waf) |
+    | 0E7 | AWD工具箱 | [Github](https://github.com/huangzheng2016/0E7) |
+    | S4DFarm | Flag农场，用于管理flag和一件提交 | [Github](https://github.com/C4T-BuT-S4D/S4DFarm) |

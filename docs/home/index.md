@@ -54,44 +54,44 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Incognito 6.0](https://incognito.axiosiiitl.dev/)"  
-            [![](https://ctftime.org/media/events/logo_108.png){ width="200" align=left }](https://incognito.axiosiiitl.dev/)  
-            **比赛名称** : [Incognito 6.0](https://incognito.axiosiiitl.dev/)  
+        ??? Quote "[AITU CTF 2026 Quals](https://ctf.fr13nds.team/)"  
+            [![](https://ctftime.org/media/events/icon-black.png){ width="200" align=left }](https://ctf.fr13nds.team/)  
+            **比赛名称** : [AITU CTF 2026 Quals](https://ctf.fr13nds.team/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-04-28 08:00:00 - 2025-04-29 08:00:00 UTC+8  
-            **比赛权重** : 30.43  
-            **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
-            **添加日历** : https://ctftime.org/event/2761.ics  
-            
-        ??? Quote "[ICCSDFAI](https://ctf.astanait.edu.kz/)"  
-            [![](https://ctftime.org){ width="200" align=left }](https://ctf.astanait.edu.kz/)  
-            **比赛名称** : [ICCSDFAI](https://ctf.astanait.edu.kz/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-04-29 19:00:00 - 2025-05-01 01:00:00 UTC+8  
+            **比赛时间** : 2026-03-23 15:00:00 - 2026-03-24 03:00:00 UTC+8  
             **比赛权重** : 0.00  
-            **赛事主办** : HackOrda (https://ctftime.org/team/367962)  
-            **添加日历** : https://ctftime.org/event/2685.ics  
+            **赛事主办** : FR13NDS TEAM (https://ctftime.org/team/155678)  
+            **添加日历** : https://ctftime.org/event/3204.ics  
             
-        ??? Quote "[SpringForwardCTF 2025](https://springforward.ctfd.io/)"  
-            [![](https://ctftime.org/media/events/Social_Media_Icon.png){ width="200" align=left }](https://springforward.ctfd.io/)  
-            **比赛名称** : [SpringForwardCTF 2025](https://springforward.ctfd.io/)  
+        ??? Quote "[Stranger's CTF - Techtrix '26](https://upsidectf.online/)"  
+            [![](){ width="200" align=left }](https://upsidectf.online/)  
+            **比赛名称** : [Stranger's CTF - Techtrix '26](https://upsidectf.online/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-05-03 00:00:00 - 2025-05-04 00:00:00 UTC+8  
-            **比赛权重** : 24.20  
-            **赛事主办** : NICC (https://ctftime.org/team/214936)  
-            **添加日历** : https://ctftime.org/event/2756.ics  
-            
-        ??? Quote "[RPCA CTF 2025](https://grandctf.rpca.ac.th/)"  
-            [![](https://ctftime.org/media/events/Screenshot_4.jpg){ width="200" align=left }](https://grandctf.rpca.ac.th/)  
-            **比赛名称** : [RPCA CTF 2025](https://grandctf.rpca.ac.th/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2025-05-03 01:00:00 - 2025-05-06 01:00:00 UTC+8  
+            **比赛时间** : 2026-03-26 15:30:00 - 2026-03-27 15:30:00 UTC+8  
             **比赛权重** : 0.00  
-            **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
-            **添加日历** : https://ctftime.org/event/2755.ics  
+            **赛事主办** : UpsideCTF (https://ctftime.org/team/426714)  
+            **添加日历** : https://ctftime.org/event/3188.ics  
+            
+        ??? Quote "[TexSAW 2026]()"  
+            [![](){ width="200" align=left }]()  
+            **比赛名称** : [TexSAW 2026]()  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-27 20:00:00 - 2026-03-29 20:00:00 UTC+8  
+            **比赛权重** : 41.59  
+            **赛事主办** : CSG (https://ctftime.org/team/333)  
+            **添加日历** : https://ctftime.org/event/3130.ics  
+            
+        ??? Quote "[KalmarCTF 2026](https://kalmarc.tf/)"  
+            [![](https://ctftime.org/media/events/kalmar-logo_1.png){ width="200" align=left }](https://kalmarc.tf/)  
+            **比赛名称** : [KalmarCTF 2026](https://kalmarc.tf/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-28 01:00:00 - 2026-03-30 01:00:00 UTC+8  
+            **比赛权重** : 49.97  
+            **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
+            **添加日历** : https://ctftime.org/event/2983.ics  
             
     <!-- 主页赛事展示_结束 -->
-    [→ 了解更多](./Event/)
+    [→ 了解更多](../Event/)
 
 </div>
   <div class="grid cards" markdown>
@@ -112,7 +112,7 @@ hide:
 
     ---
 
-    - 入门CTF/阅读本书前必读：[快速开始](./hc-start/)以及[前言部分](./hc-preface/)  
+    - 入门CTF/阅读本书前必读：[快速开始](../hc-start/)以及[前言部分](../hc-preface/)  
     - 请善用搜索功能来寻找你想要的内容！！
     - 站点已接入 CDN，感谢[渊龙Sec安全团队](https://dh.aabyss.cn)友情赞助
 

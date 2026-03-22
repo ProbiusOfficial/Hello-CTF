@@ -1,4 +1,33 @@
 {
-  "tabWidth": 4,
-  "semi": false
+  "$schema": "https://json.schemastore.org/prettierrc",
+  "tabWidth": 2,
+  "useTabs": false, 
+  "semi": false,
+  "singleQuote": true,
+  "printWidth": 100,
+  "proseWrap": "preserve",
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": [
+        "*.md",
+        "*.mdx"
+      ],
+      "options": {
+        "singleQuote": false,
+        "printWidth": 100,
+        "proseWrap": "preserve"
+      }
+    },
+    {
+      "files": [
+        "*.yml",
+        "*.yaml",
+        "*.json"
+      ],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
 }

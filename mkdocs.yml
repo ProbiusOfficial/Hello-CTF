@@ -160,8 +160,8 @@ extra_javascript:
 # ----- katex -----
   - javascripts/katex.js 
   # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
-  - https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.8/katex.min.js
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js
 
 # ----- 页面统计 -----
   - javascripts/statis.js
@@ -174,7 +174,7 @@ extra_javascript:
 extra_css:
 # ----- katex -----
   # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
-  - https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.8/katex.min.css
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css
 
 # ----- other -----
   - stylesheets/extra.css
@@ -202,8 +202,8 @@ nav:
       - hc-env/index.md
       - 工具一览: hc-env/CTFtool.md
       - Docker环境: hc-env/Docker_On_Linux.md
-      - Web环境设置: hc-env/Web.md
-      - MISC环境设置: hc-env/MISC.md
+      # - Web环境设置: hc-env/Web.md
+      # - MISC环境设置: hc-env/MISC.md
       - Crypto环境设置: hc-env/Crypto.md
 
     - MISC | 杂项:
@@ -212,38 +212,81 @@ nav:
       - 编码扩展: hc-misc/Encode_extra.md
       - 文件基础: hc-misc/file.md
       - 压缩包: hc-misc/Archivefile.md
-      - 隐写技术: hc-misc/stego.md
+      - 图片隐写: hc-misc/stego.md
+      - 文件隐写: hc-misc/file_stego.md
+      - 音频隐写: hc-misc/audio_stego.md
       - 流量分析: hc-misc/pcap.md
+      - 工控类: hc-misc/industrial.md
       - 内存取证: hc-misc/memory.md
       - 附:文件签名表 : hc-misc/file_sign.md
 
     - Web | 网络攻防:
       - hc-web/index.md
       - Web入门题单: hc-web/web_start.md
+      - 敏感信息泄露: hc-web/sensitive_info.md
       - PHP基础: hc-web/php_basic.md
-      - PHP反序列化基础: hc-web/php_unser_base.md 
+      - PHP反序列化基础: hc-web/php_unser_base.md
+      - PHP特性: hc-web/php_features.md
       - SQL注入: hc-web/sql_injection.md
       - XSS攻击: hc-web/xss.md
       - 文件包含: hc-web/include.md
       - SSTI注入: hc-web/ssti.md
+      - XXE注入: hc-web/xxe.md
+      - SSRF注入: hc-web/ssrf.md
+      - PHP 代码审计: hc-web/php_code_audit.md
+      - RCE: hc-web/rce.md
+      - 文件上传: hc-web/file_upload.md
+      - 目录穿越: hc-web/dir_traversal.md
+      - 逻辑漏洞: hc-web/logical_vuln.md
+      - 任意文件读取: hc-web/any_file_read.md
 
     - Crypto | 密码学:
       - hc-crypto/index.md
       - 前情提要: hc-crypto/Recap.md
       - 编码基础: hc-crypto/Encode.md
       - 古典密码: hc-crypto/Classicalcipher.md
+      - 现代密码: hc-crypto/Moderncipher.md
 
     - Reverse | 逆向工程:
       - hc-reverse/index.md
-      - 引导篇：灵魂F&Q: hc-reverse/引导篇：灵魂F&Q.md
-      - Quick Start：可执行文件: hc-reverse/Quick Start：可执行文件.md
-      - Quick Start：ASM汇编: hc-reverse/Quick Start：ASM汇编.md
-      - Quick Start：Example problems: hc-reverse/Quick Start：Example problems.md
-      - 从零开始的IDA: hc-reverse/从零开始的IDA.md
-      - 从零开始的壳: hc-reverse/从零开始的壳.md
+      - 引导篇：灵魂FAQ: hc-reverse/引导篇：灵魂FAQ.md
+#      - Quick Start：Example problems: hc-reverse/Quick Start：Example problems.md #暂时弃用，确实没想好放在哪里合适
+      - 编译与可执行文件:
+        - C语言基础: hc-reverse/C语言基础.md
+        - 存储结构: hc-reverse/存储结构.md
+        - 可执行文件: hc-reverse/Quick Start：可执行文件.md
+      - 交互式反汇编工具IDA:
+        - 从零开始的IDA: hc-reverse/从零开始的IDA.md
+        - IDA动态调试: hc-reverse/IDA动态调试.md
+      - 常见算法:
+        - 基本运算: hc-reverse/基本运算.md
+        - 编码基础: hc-reverse/编码基础.md
+        - 字节流算法: hc-reverse/字节流算法.md
+        - 分组密码: hc-reverse/分组密码.md
+      - z3约束求解: hc-reverse/z3约束求解.md
+      - x86 汇编初步: hc-reverse/Quick Start：ASM汇编.md
+      - 代码保护与对抗:
+        - 花指令: hc-reverse/花指令.md
+        - 加壳: hc-reverse/从零开始的壳.md
+        - VM: hc-reverse/VM.md
+        - SMC: hc-reverse/SMC.md
+        - 异常处理: hc-reverse/异常处理.md
+        - 多线程: hc-reverse/多线程.md
+        - TLS回调函数: hc-reverse/TLS回调函数.md
+        - 反调试: hc-reverse/反调试.md
+        - 控制流平坦化: hc-reverse/控制流平坦化.md
+      - 符号执行: hc-reverse/符号执行.md
+      - 语言与框架:
+        - Python: hc-reverse/Python.md
+        - .NET: hc-reverse/NET.md
+        - Rust: hc-reverse/Rust.md
+        - JavaScript: hc-reverse/JavaScript.md
+      - Android平台: hc-reverse/Android.md
+      - 解题技巧: hc-reverse/解题技巧.md
 
     - Pwn | 二进制安全:
       - hc-pwn/index.md
+      - wsl2下的环境配置: hc-pwn/wsl2_environment.md
       - 汇编语言(x86): hc-pwn/Asm_x86.md
       - 栈上数组越界&栈溢出: hc-pwn/Stack_Overflow.md
       - ROP入门: hc-pwn/ROP.md
@@ -265,6 +308,10 @@ nav:
     - blockchain | 区块链安全:
       - Move:
         - 从0开始的签到题: hc-blockchain/Move/0x00.md
+        - 独特的所有权: hc-blockchain/Move/0x01.md
+        - 神奇的时钟: hc-blockchain/Move/0x02.md
+        - 对象与燃气: hc-blockchain/Move/0x03.md
+        - 多样的泛型: hc-blockchain/Move/0x04.md
 
     - 附录:
       - 提问的智慧: hc-appendix/how-to-ask.md
