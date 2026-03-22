@@ -191,14 +191,20 @@
             --fc-event-bg-color: transparent;
             --fc-event-border-color: transparent;
         }
-        #home-calendar .fc-daygrid-event-harness {
-            margin-top: 3px !important;
-            margin-bottom: 3px !important;
-        }
+        /* 勿给 .fc-daygrid-event-harness 加 margin，否则跨天条与单日条会叠在同一格 */
         #home-calendar .fc-h-event {
             border-radius: 6px;
             font-size: 0.72rem;
             box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+        }
+        #home-calendar .fc-h-event .fc-event-main-frame {
+            min-width: 0;
+        }
+        #home-calendar .fc-h-event .fc-event-title,
+        #home-calendar .fc-h-event .fc-event-time {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         html:not(.dark) #home-calendar .fc-h-event.event-running {
             background: linear-gradient(180deg, rgba(220, 252, 231, 0.98), rgba(187, 247, 208, 0.88)) !important;
@@ -334,7 +340,6 @@
             <div class="flex-1 min-w-0 space-y-5 w-full">
                 <section class="card-surface backdrop-blur-md p-4 sm:p-5 overflow-hidden">
                     <h2 class="text-center text-lg font-bold font-mono text-gradient mb-4">比赛日历</h2>
-                    <p class="text-xs text-center text-base-900/50 dark:text-white/45 mb-3">仅展示国内赛事</p>
                     <div id="home-calendar"></div>
                     <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mt-4 pt-3 border-t border-base-100 dark:border-base-800">
                         <p class="text-xs text-base-900/55 dark:text-white/50 max-w-xl leading-relaxed">
@@ -520,30 +525,45 @@
             await renderMarkdown(document.getElementById('other-resources-md'), d.otherResources || '');
         }
 
+        /** 解析国内赛时间串 yyyy年mm月dd日 hh:mm（按东八区墙上时刻，与 Hello-CTFtime CN.json 一致） */
         function parseCNTime(rawTime) {
-            const [datePart, timePart] = rawTime.split(' ');
-            const [year, month, day] = datePart.match(/\d+/g).map(Number);
-            const [hour, minute] = timePart.split(':').map(Number);
-            const formattedMonth = (month - 1).toString().padStart(2, '0');
-            const formattedDay = day.toString().padStart(2, '0');
-            return new Date(year, formattedMonth, day, hour, minute);
+            const s = String(rawTime).trim();
+            const m = s.match(/^(\d{4})年(\d{1,2})月(\d{1,2})日\s+(\d{1,2}):(\d{2})$/);
+            if (!m) throw new Error('Invalid CN time: ' + rawTime);
+            const y = +m[1];
+            const mo = +m[2];
+            const d = +m[3];
+            const h = +m[4];
+            const mi = +m[5];
+            const iso = `${y}-${String(mo).padStart(2, '0')}-${String(d).padStart(2, '0')}T${String(h).padStart(2, '0')}:${String(mi).padStart(2, '0')}:00+08:00`;
+            return new Date(iso);
+        }
+
+        /** 与 Hello-CTFtime：用当前时刻与比赛起止比较推导日历样式类（不再读 CN.json 的 status） */
+        function cnDerivedEventClass(startTime, endTime) {
+            const now = new Date();
+            if (now < startTime) return 'event-oncoming';
+            if (now < endTime) return 'event-running';
+            return 'event-ended';
         }
 
         async function fetchCNCTFTime(feed) {
             const res = await fetch(feed);
             const timeData = await res.json();
             const events = [];
-            timeData.data.result.forEach((v) => {
+            timeData.data.result.forEach((v, idx) => {
                 try {
                     const startTime = parseCNTime(v.comp_time_start);
                     const endTime = parseCNTime(v.comp_time_end);
+                    const detail = v.detail != null && v.detail !== '' ? v.detail : (v.readmore || '');
                     events.push({
-                        id: v.id,
+                        id: 'cn-' + idx + '-' + String(v.comp_time_start || '').replace(/\s/g, '_'),
                         start: startTime.toISOString(),
                         end: endTime.toISOString(),
                         title: v.name,
                         url: v.link,
-                        className: endTime < new Date() ? 'event-ended' : startTime > new Date() ? 'event-oncoming' : 'event-running',
+                        extendedProps: { detail },
+                        className: cnDerivedEventClass(startTime, endTime),
                         display: 'block'
                     });
                 } catch (err) {
@@ -564,10 +584,6 @@
                 locale: 'zh',
                 /* 标准包无有效 dark 主题，暗黑样式由上方 CSS 变量覆盖实现 */
                 themeSystem: 'standard',
-                dayMaxEvents: 4,
-                moreLinkText(n) {
-                    return '还有 ' + n + ' 场';
-                },
                 buttonText: {
                     month: '月',
                     list: '列表'

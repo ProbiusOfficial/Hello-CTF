@@ -160,20 +160,26 @@ hide:
 
 /*
  * FullCalendar 默认会给 .fc-h-event 上蓝色；先清空变量，再用 className 上色（浅色/暗色均适用）。
- * 圆角、垂直间距；dayMaxEvents 限制单日条数，减少「蓝墙」。
+ * 圆角；不限制单日条数（全部展开）。跨天条目标题用省略号避免窄格乱码。
+ * 勿给 .fc-daygrid-event-harness 加 margin：会破坏 FC 对 top 的计算，导致跨天条与单日条在同一格内重叠。
  */
 #calendar .fc {
   --fc-event-bg-color: transparent;
   --fc-event-border-color: transparent;
 }
-#calendar .fc-daygrid-event-harness {
-  margin-top: 3px !important;
-  margin-bottom: 3px !important;
-}
 #calendar .fc-h-event {
   border-radius: 6px;
   font-size: 0.72rem;
   box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+}
+#calendar .fc-h-event .fc-event-main-frame {
+  min-width: 0;
+}
+#calendar .fc-h-event .fc-event-title,
+#calendar .fc-h-event .fc-event-time {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* 浅色 · 进行中 */
@@ -246,18 +252,26 @@ hide:
 </style>
 
 <script>
-    /** 
-     * @description 解析日期 格式为 YYYY年MM月DD日 HH:mm
-     * @param rawTime {string}
-     */
+    /** 解析国内赛时间串 yyyy年mm月dd日 hh:mm（东八区墙上时刻，与 Hello-CTFtime CN.json 一致） */
     function parseCNTime(rawTime) {
-        const [datePart, timePart] = rawTime.split(' ');
-        const [year, month, day] = datePart.match(/\d+/g).map(Number);
-        const [hour, minute] = timePart.split(':').map(Number);
+        const s = String(rawTime).trim()
+        const m = s.match(/^(\d{4})年(\d{1,2})月(\d{1,2})日\s+(\d{1,2}):(\d{2})$/)
+        if (!m) throw new Error('Invalid CN time: ' + rawTime)
+        const y = +m[1]
+        const mo = +m[2]
+        const d = +m[3]
+        const h = +m[4]
+        const mi = +m[5]
+        const iso = `${y}-${String(mo).padStart(2, '0')}-${String(d).padStart(2, '0')}T${String(h).padStart(2, '0')}:${String(mi).padStart(2, '0')}:00+08:00`
+        return new Date(iso)
+    }
 
-        const formattedMonth = (month - 1).toString().padStart(2, '0');
-        const formattedDay = day.toString().padStart(2, '0');
-        return new Date(year, formattedMonth, formattedDay, hour, minute);
+    /** CN.json 不再包含 status；用当前时刻与比赛起止比较推导日历样式 */
+    function cnDerivedEventClass(startTime, endTime) {
+        const now = new Date()
+        if (now < startTime) return 'event-oncoming'
+        if (now < endTime) return 'event-running'
+        return 'event-ended'
     }
     
     /** 
@@ -281,14 +295,10 @@ hide:
          * @type {{data: {result: Array<{
          *   name: string
          *   link: string
-         *   type: string
-         *   reg_time_start: string
-         *   reg_time_end: string
          *   comp_time_start: string
          *   comp_time_end: string
-         *   readmore: string
-         *   id: number
-         *   status: number
+         *   detail: string
+         *   readmore?: string
          * }>}}}
          */
         const timeData = await res.json();
@@ -296,38 +306,31 @@ hide:
         /**
          * @description 传给 fullcalendar
          * @type {Array<{
-         *   id: number
+         *   id: string
          *   start: string
          *   end: string
          *   title: string
          *   url: link
          *   className: string
          *   region: CN | GLOBAL
+         *   extendedProps: { detail: string }
          * >}}
          */
         const events = []
-        timeData.data.result.forEach((v) => {
+        timeData.data.result.forEach((v, idx) => {
             try {
-                // // 报名时间段
-                // events.push({
-                //     id: v.id,
-                //     start: parseTime(v.reg_time_start),
-                //     end: parseTime(v.reg_time_end),
-                //     title: v.name + '（报名时间）',
-                //     url: v.link,
-                //     region: CN
-                // })
                 const startTime = parseCNTime(v.comp_time_start)
                 const endTime = parseCNTime(v.comp_time_end)
+                const detail = v.detail != null && v.detail !== '' ? v.detail : (v.readmore || '')
 
-                // 比赛时间段
                 events.push({
-                    id: v.id,
+                    id: 'cn-' + idx + '-' + String(v.comp_time_start || '').replace(/\s/g, '_'),
                     start: startTime.toISOString(),
                     end: endTime.toISOString(),
                     title: v.name,
                     url: v.link,
-                    className: endTime < new Date() ? 'event-ended' : startTime > new Date() ? 'event-oncoming' : 'event-running',
+                    extendedProps: { detail },
+                    className: cnDerivedEventClass(startTime, endTime),
                     region: CN,
                     display: 'block'
                 })
@@ -351,6 +354,7 @@ hide:
          *   "比赛时间": string
          *   "比赛链接": string
          *   "比赛ID": string
+         *   "比赛权重"?: string | number
          * }>
          */
         const timeData = await res.json();
@@ -371,10 +375,17 @@ hide:
 
         timeData.forEach((v) => {
             try {
+                /* 仅国外赛：权重不足 10 的不进入日历（国内赛不受此规则影响） */
+                const weightRaw = v.比赛权重
+                const weight = parseFloat(String(weightRaw ?? '').replace(/,/g, ''))
+                if (Number.isFinite(weight) && weight < 25) {
+                    return
+                }
+
                 const [startTime, endTime] = parseGlobalTime(v.比赛时间)
 
                 events.push({
-                    id: v.id,
+                    id: 'gl-' + v.比赛ID,
                     start: startTime.toISOString(),
                     end: endTime.toISOString(),
                     title: v.比赛名称,
@@ -402,10 +413,6 @@ hide:
             height: 'auto',
             locale: "zh",
             themeSystem: 'standard',
-            dayMaxEvents: 4,
-            moreLinkText: function (n) {
-              return '还有 ' + n + ' 场';
-            },
             buttonText: {
               month: '月',
               list: '列表'
@@ -2210,7 +2217,8 @@ hide:
     
 ## 获取数据？
 
-> 数据基于[Hello-CTFtime](https://github.com/ProbiusOfficial/Hello-CTFtime)项目，每小时更新一次。  
+> 数据基于 [Hello-CTFtime](https://github.com/ProbiusOfficial/Hello-CTFtime) 项目，每小时更新一次。  
+> 国内赛事 `CN.json` 每条仅含 **名称、链接、比赛起止时间、详细说明** 五类字段；**不再包含** `status` 等旧字段，「即将开始 / 正在进行 / 已经结束」由前端用比赛时间与当前时间比较推导。  
   数据获取以及示例:
 
 === "国内赛事"
@@ -2229,20 +2237,15 @@ hide:
           {
             "name": "HelloCTF",
             "link": "https://hello-ctf.com/",
-            "type": "团队赛|1-3人",
-            "reg_time_start": "2099年11月15日 00:00",
-            "reg_time_end": "2099年12月31日 00:00",
             "comp_time_start": "2099年12月31日 00:00",
             "comp_time_end": "2099年12月31日 00:00",
-            "readmore": "这是一条备注",
-            "id": 114,
-            "status": 1 /0 报名未开始 /1 报名进行中 /2 报名已结束 /3 比赛进行中 /4 比赛已结束
-          },
-              ],
+            "detail": "这是一条备注"
+          }
+        ],
         "total": 62,
         "page": 1,
         "size": 20
-      },...
+      },
       "msg": ""
     }
     ```
