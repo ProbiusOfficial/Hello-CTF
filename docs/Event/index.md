@@ -1262,15 +1262,6 @@ hide:
                 **赛事主办** : Espilon (https://ctftime.org/team/423394)  
                 **添加日历** : https://ctftime.org/event/3179.ics  
                 
-            ??? Quote "[BSidesSF CTF 2026](https://ctf.bsidessf.net/)"  
-                [![](https://ctftime.org/media/events/bsides_logo_short.png){ width="200" align=left }](https://ctf.bsidessf.net/)  
-                **比赛名称** : [BSidesSF CTF 2026](https://ctf.bsidessf.net/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-21 07:00:00 - 2026-03-23 07:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
-                **添加日历** : https://ctftime.org/event/3108.ics  
-                
     === "*已经结束*"
         === "国内赛事"
     
@@ -1310,6 +1301,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
                 **添加日历** : https://ctftime.org/event/3203.ics  
+                
+            ??? Quote "[BSidesSF CTF 2026](https://ctf.bsidessf.net/)"  
+                [![](https://ctftime.org/media/events/bsides_logo_short.png){ width="200" align=left }](https://ctf.bsidessf.net/)  
+                **比赛名称** : [BSidesSF CTF 2026](https://ctf.bsidessf.net/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-21 07:00:00 - 2026-03-23 07:00:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
+                **添加日历** : https://ctftime.org/event/3108.ics  
                 
             ??? Quote "[TAMUctf 2026](https://tamuctf.com/)"  
                 [![](https://ctftime.org/media/events/TAMUctf-logo.png){ width="200" align=left }](https://tamuctf.com/)  
@@ -2165,15 +2165,6 @@ hide:
                 **比赛权重** : 24.00  
                 **赛事主办** : Pwn-la-Chapelle (https://ctftime.org/team/279433)  
                 **添加日历** : https://ctftime.org/event/2951.ics  
-                
-            ??? Quote "[WP CTF 2025](https://wpctf.it/)"  
-                [![](https://ctftime.org/media/events/WP_CTF_2025_-_Logo.png){ width="200" align=left }](https://wpctf.it/)  
-                **比赛名称** : [WP CTF 2025](https://wpctf.it/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-11-29 16:00:00 - 2025-11-30 00:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : WP CTF (https://ctftime.org/team/303099)  
-                **添加日历** : https://ctftime.org/event/2764.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
