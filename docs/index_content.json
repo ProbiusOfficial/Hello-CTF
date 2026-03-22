@@ -1,6 +1,6 @@
 {
   "announcement": "⭐新手强烈建议先完成引导后，阅读入门CTF/阅读本书前必读：[快速开始](./hc-start/) 以及 [前言部分](./hc-preface/)\n  \n🌟【CTF-Archives】第十九届全国大学生信息安全竞赛（创新实践能力赛）暨第三届“长城杯”网数智安全大赛（防护赛） 半决赛题目附件以同步至Github\n感谢 [@Aristore](https://github.com/aristorechina)  师傅的同步。\n地址：https://github.com/CTF-Archives/2025-CCB-CISCN-Semis",
-  "friendlyLinks": "[CTF-Archive](https://github.com/CTF-Archives)\n\n",
+  "friendlyLinks": "[CTF-Archive](https://github.com/CTF-Archives)\n\n[NSSCTF](https://www.nssctf.cn/)\n\n",
   "eventNotifications": "- 欢迎访问 Hello-CTF 赛事日历与国内赛事资讯。\n- 更多赛事请前往 [赛事详情页](./Event/)。",
   "otherProjects": "[【CTF-OS】](https://github.com/ProbiusOfficial/CTF-OS) \n\n[【命令执行靶场】](https://github.com/ProbiusOfficial/RCE-labs)\n\n[【PHP反序列化靶场】](https://github.com/ProbiusOfficial/PHPSerialize-labs)\n\n[【文件包含靶场】](https://github.com/ProbiusOfficial/PHPinclude-labs)\n\n[【流量分析靶场】](https://github.com/ProbiusOfficial/n3tfl0w-labs)\n\n[【SSRF靶场】](https://github.com/ProbiusOfficial/hello-ssrf)\n\n[【探姬的Github】](https://github.com/ProbiusOfficial)",
   "otherResources": "[广告位招租...]"
