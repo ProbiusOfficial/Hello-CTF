@@ -18,15 +18,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[AITU CTF 2026 Quals](https://ctf.fr13nds.team/)"  
-    [![](https://ctftime.org/media/events/icon-black.png){ width="200" align=left }](https://ctf.fr13nds.team/)  
-    **比赛名称** : [AITU CTF 2026 Quals](https://ctf.fr13nds.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-23 15:00:00 - 2026-03-24 03:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : FR13NDS TEAM (https://ctftime.org/team/155678)  
-    **添加日历** : https://ctftime.org/event/3204.ics  
-    
 ??? Quote "[Stranger's CTF - Techtrix '26](https://upsidectf.online/)"  
     [![](){ width="200" align=left }](https://upsidectf.online/)  
     **比赛名称** : [Stranger's CTF - Techtrix '26](https://upsidectf.online/)  

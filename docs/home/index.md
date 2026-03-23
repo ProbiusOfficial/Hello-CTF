@@ -63,15 +63,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[AITU CTF 2026 Quals](https://ctf.fr13nds.team/)"  
-            [![](https://ctftime.org/media/events/icon-black.png){ width="200" align=left }](https://ctf.fr13nds.team/)  
-            **比赛名称** : [AITU CTF 2026 Quals](https://ctf.fr13nds.team/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-23 15:00:00 - 2026-03-24 03:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : FR13NDS TEAM (https://ctftime.org/team/155678)  
-            **添加日历** : https://ctftime.org/event/3204.ics  
-            
         ??? Quote "[Stranger's CTF - Techtrix '26](https://upsidectf.online/)"  
             [![](){ width="200" align=left }](https://upsidectf.online/)  
             **比赛名称** : [Stranger's CTF - Techtrix '26](https://upsidectf.online/)  
@@ -98,6 +89,15 @@ hide:
             **比赛权重** : 49.97  
             **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
             **添加日历** : https://ctftime.org/event/2983.ics  
+            
+        ??? Quote "[HackDay 2026 - Finals](https://hackday.fr/)"  
+            [![](https://ctftime.org/media/events/hackday_1.png){ width="200" align=left }](https://hackday.fr/)  
+            **比赛名称** : [HackDay 2026 - Finals](https://hackday.fr/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-28 02:00:00 - 2026-03-29 02:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
+            **添加日历** : https://ctftime.org/event/3039.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)

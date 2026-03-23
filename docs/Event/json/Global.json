@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "AITU CTF 2026 Quals",
-        "比赛时间": "2026-03-23 15:00:00 - 2026-03-24 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3204.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.fr13nds.team/",
-        "比赛标志": "https://ctftime.org/media/events/icon-black.png",
-        "比赛权重": "0.00",
-        "赛事主办": "FR13NDS TEAM (https://ctftime.org/team/155678)",
-        "比赛ID": "1547",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Stranger's CTF - Techtrix '26",
         "比赛时间": "2026-03-26 15:30:00 - 2026-03-27 15:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3188.ics",
@@ -1005,6 +993,18 @@
         "比赛权重": "0",
         "赛事主办": "Espilon (https://ctftime.org/team/423394)",
         "比赛ID": "1512",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "AITU CTF 2026 Quals",
+        "比赛时间": "2026-03-23 15:00:00 - 2026-03-24 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3204.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.fr13nds.team/",
+        "比赛标志": "https://ctftime.org/media/events/icon-black.png",
+        "比赛权重": "0",
+        "赛事主办": "FR13NDS TEAM (https://ctftime.org/team/155678)",
+        "比赛ID": "1547",
         "比赛状态": "nowrunning"
     },
     {
