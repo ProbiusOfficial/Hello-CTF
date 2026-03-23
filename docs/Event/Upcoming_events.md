@@ -365,6 +365,15 @@ comments: true
     **赛事主办** : Highlander Hackers (https://ctftime.org/team/173925)  
     **添加日历** : https://ctftime.org/event/3117.ics  
     
+??? Quote "[CyberNSK-Finals](https://cybernsk.ru/)"  
+    [![](https://ctftime.org/media/events/photo_2024-09-18_12-55-46_1.jpg){ width="200" align=left }](https://cybernsk.ru/)  
+    **比赛名称** : [CyberNSK-Finals](https://cybernsk.ru/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2026-04-19 20:00:00 - 2026-04-26 20:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : siberiansecurityleague (https://ctftime.org/team/425775)  
+    **添加日历** : https://ctftime.org/event/3213.ics  
+    
 ??? Quote "[TRX CTF 2026](https://ctf.theromanxpl0.it/)"  
     [![](https://ctftime.org/media/events/TRX_smooth_1.png){ width="200" align=left }](https://ctf.theromanxpl0.it/)  
     **比赛名称** : [TRX CTF 2026](https://ctf.theromanxpl0.it/)  
@@ -400,6 +409,15 @@ comments: true
     **比赛权重** : 24.53  
     **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
     **添加日历** : https://ctftime.org/event/3192.ics  
+    
+??? Quote "[THEM?!CTF 2026](https://themctf.com/)"  
+    [![](https://ctftime.org/media/events/THEMCTF_2026_logo_black.png){ width="200" align=left }](https://themctf.com/)  
+    **比赛名称** : [THEM?!CTF 2026](https://themctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-02 02:00:00 - 2026-05-04 02:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : THEM?! (https://ctftime.org/team/387399)  
+    **添加日历** : https://ctftime.org/event/3209.ics  
     
 ??? Quote "[THCon 2K26 CTF](https://thcon.party/)"  
     [![](https://ctftime.org/media/events/logo_123.png){ width="200" align=left }](https://thcon.party/)  
