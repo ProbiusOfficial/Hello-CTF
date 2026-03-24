@@ -311,15 +311,6 @@ comments: true
     **赛事主办** : Blue Hens (https://ctftime.org/team/64660)  
     **添加日历** : https://ctftime.org/event/2943.ics  
     
-??? Quote "[SwampCTF 2026](https://ctf.swampctf.com/)"  
-    [![](){ width="200" align=left }](https://ctf.swampctf.com/)  
-    **比赛名称** : [SwampCTF 2026](https://ctf.swampctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-18 05:00:00 - 2026-04-20 05:00:00 UTC+8  
-    **比赛权重** : 48.94  
-    **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
-    **添加日历** : https://ctftime.org/event/3118.ics  
-    
 ??? Quote "[b01lers CTF 2026](https://b01lersc.tf/)"  
     [![](https://ctftime.org/media/events/b01lers.png){ width="200" align=left }](https://b01lersc.tf/)  
     **比赛名称** : [b01lers CTF 2026](https://b01lersc.tf/)  
@@ -742,6 +733,15 @@ comments: true
     **比赛权重** : 37.00  
     **赛事主办** : Platypwnies (https://ctftime.org/team/112550)  
     **添加日历** : https://ctftime.org/event/3082.ics  
+    
+??? Quote "[SwampCTF 2026](https://ctf.swampctf.com/)"  
+    [![](){ width="200" align=left }](https://ctf.swampctf.com/)  
+    **比赛名称** : [SwampCTF 2026](https://ctf.swampctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-11-21 05:00:00 - 2026-11-23 05:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Kernel Sanders (https://ctftime.org/team/397)  
+    **添加日历** : https://ctftime.org/event/3118.ics  
     
 ??? Quote "[ASIS CTF Finals 2026](https://asisctf.com/)"  
     [![](https://ctftime.org/media/events/asis_logo_2.png){ width="200" align=left }](https://asisctf.com/)  

@@ -384,18 +384,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "SwampCTF 2026",
-        "比赛时间": "2026-04-18 05:00:00 - 2026-04-20 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3118.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.swampctf.com/",
-        "比赛标志": "",
-        "比赛权重": "48.94",
-        "赛事主办": "Kernel Sanders (https://ctftime.org/team/397)",
-        "比赛ID": "241",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "b01lers CTF 2026",
         "比赛时间": "2026-04-18 08:00:00 - 2026-04-20 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3153.ics",
@@ -957,6 +945,18 @@
         "比赛权重": "37.00",
         "赛事主办": "Platypwnies (https://ctftime.org/team/112550)",
         "比赛ID": "979",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "SwampCTF 2026",
+        "比赛时间": "2026-11-21 05:00:00 - 2026-11-23 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3118.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.swampctf.com/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "Kernel Sanders (https://ctftime.org/team/397)",
+        "比赛ID": "241",
         "比赛状态": "oncoming"
     },
     {
