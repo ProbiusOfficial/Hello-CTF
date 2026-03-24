@@ -1146,7 +1146,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://lagncra.sh/",
         "比赛标志": "https://ctftime.org/media/events/d1f68ce184a147b1b87eabe3826986dd.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "Interpoly (https://ctftime.org/team/424494)",
         "比赛ID": "1513",
         "比赛状态": "past"
