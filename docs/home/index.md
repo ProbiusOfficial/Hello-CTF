@@ -77,9 +77,9 @@ hide:
             **赛事主办** : UpsideCTF (https://ctftime.org/team/426714)  
             **添加日历** : https://ctftime.org/event/3188.ics  
             
-        ??? Quote "[TexSAW 2026]()"  
-            [![](){ width="200" align=left }]()  
-            **比赛名称** : [TexSAW 2026]()  
+        ??? Quote "[TexSAW 2026](https://texsaw.org/)"  
+            [![](){ width="200" align=left }](https://texsaw.org/)  
+            **比赛名称** : [TexSAW 2026](https://texsaw.org/)  
             **比赛形式** : Jeopardy  
             **比赛时间** : 2026-03-27 20:00:00 - 2026-03-29 20:00:00 UTC+8  
             **比赛权重** : 41.59  
