@@ -624,18 +624,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "SAS CTF 2026 Quals",
-        "比赛时间": "2026-05-23 20:00:00 - 2026-05-24 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3109.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.thesascon.com/",
-        "比赛标志": "https://ctftime.org/media/events/SAS26_temp.png",
-        "比赛权重": "31.00",
-        "赛事主办": "Drovosec, SAS CREW (https://ctftime.org/team/210132, https://ctftime.org/team/283057)",
-        "比赛ID": "1081",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "SecLeaf Q2 CTF 2026",
         "比赛时间": "2026-05-23 22:00:00 - 2026-05-24 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3136.ics",
@@ -717,6 +705,18 @@
         "比赛权重": "91.00",
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "317",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "SAS CTF 2026 Quals",
+        "比赛时间": "2026-06-20 20:00:00 - 2026-06-21 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3109.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.thesascon.com/",
+        "比赛标志": "https://ctftime.org/media/events/SAS26_temp.png",
+        "比赛权重": "31.00",
+        "赛事主办": "Drovosec, SAS CREW (https://ctftime.org/team/210132, https://ctftime.org/team/283057)",
+        "比赛ID": "1081",
         "比赛状态": "oncoming"
     },
     {

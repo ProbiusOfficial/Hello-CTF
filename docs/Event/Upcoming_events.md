@@ -491,15 +491,6 @@ comments: true
     **赛事主办** : Benevolent Bureau of Birds (https://ctftime.org/team/425757)  
     **添加日历** : https://ctftime.org/event/3205.ics  
     
-??? Quote "[SAS CTF 2026 Quals](https://ctf.thesascon.com/)"  
-    [![](https://ctftime.org/media/events/SAS26_temp.png){ width="200" align=left }](https://ctf.thesascon.com/)  
-    **比赛名称** : [SAS CTF 2026 Quals](https://ctf.thesascon.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-05-23 20:00:00 - 2026-05-24 20:00:00 UTC+8  
-    **比赛权重** : 31.00  
-    **赛事主办** : Drovosec, SAS CREW (https://ctftime.org/team/210132, https://ctftime.org/team/283057)  
-    **添加日历** : https://ctftime.org/event/3109.ics  
-    
 ??? Quote "[SecLeaf Q2 CTF 2026](https://ctf.secleaf.tech/)"  
     [![](https://ctftime.org/media/events/CTF_3.png){ width="200" align=left }](https://ctf.secleaf.tech/)  
     **比赛名称** : [SecLeaf Q2 CTF 2026](https://ctf.secleaf.tech/)  
@@ -562,6 +553,15 @@ comments: true
     **比赛权重** : 91.00  
     **赛事主办** : ASIS (https://ctftime.org/team/4140)  
     **添加日历** : https://ctftime.org/event/3034.ics  
+    
+??? Quote "[SAS CTF 2026 Quals](https://ctf.thesascon.com/)"  
+    [![](https://ctftime.org/media/events/SAS26_temp.png){ width="200" align=left }](https://ctf.thesascon.com/)  
+    **比赛名称** : [SAS CTF 2026 Quals](https://ctf.thesascon.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-06-20 20:00:00 - 2026-06-21 20:00:00 UTC+8  
+    **比赛权重** : 31.00  
+    **赛事主办** : Drovosec, SAS CREW (https://ctftime.org/team/210132, https://ctftime.org/team/283057)  
+    **添加日历** : https://ctftime.org/event/3109.ics  
     
 ??? Quote "[Grey Cat The Flag 2026 Finals](https://ctf.nusgreyhats.org/)"  
     [![](){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
