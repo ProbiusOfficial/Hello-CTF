@@ -68,15 +68,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[Stranger's CTF - Techtrix '26](https://upsidectf.online/)"  
-            [![](){ width="200" align=left }](https://upsidectf.online/)  
-            **比赛名称** : [Stranger's CTF - Techtrix '26](https://upsidectf.online/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-26 15:30:00 - 2026-03-27 15:30:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : UpsideCTF (https://ctftime.org/team/426714)  
-            **添加日历** : https://ctftime.org/event/3188.ics  
-            
         ??? Quote "[TexSAW 2026](https://texsaw.org/)"  
             [![](){ width="200" align=left }](https://texsaw.org/)  
             **比赛名称** : [TexSAW 2026](https://texsaw.org/)  
@@ -103,6 +94,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
             **添加日历** : https://ctftime.org/event/3039.ics  
+            
+        ??? Quote "[Codegate CTF 2026 Preliminary](http://ctf.codegate.org/)"  
+            [![](){ width="200" align=left }](http://ctf.codegate.org/)  
+            **比赛名称** : [Codegate CTF 2026 Preliminary](http://ctf.codegate.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-28 08:00:00 - 2026-03-28 23:00:00 UTC+8  
+            **比赛权重** : 62.00  
+            **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
+            **添加日历** : https://ctftime.org/event/3131.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
