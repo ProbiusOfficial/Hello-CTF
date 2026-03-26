@@ -36,12 +36,3 @@ comments: true
     **赛事主办** : NFITS (https://ctftime.org/team/360674)  
     **添加日历** : https://ctftime.org/event/2907.ics  
     
-??? Quote "[Espilon CTF 2026](https://ctf.espilon.net/)"  
-    [![](){ width="200" align=left }](https://ctf.espilon.net/)  
-    **比赛名称** : [Espilon CTF 2026](https://ctf.espilon.net/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-11 20:00:00 - 2026-03-26 08:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Espilon (https://ctftime.org/team/423394)  
-    **添加日历** : https://ctftime.org/event/3179.ics  
-    

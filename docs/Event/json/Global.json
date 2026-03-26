@@ -1008,18 +1008,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Espilon CTF 2026",
-        "比赛时间": "2026-03-11 20:00:00 - 2026-03-26 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3179.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.espilon.net/",
-        "比赛标志": "",
-        "比赛权重": "0",
-        "赛事主办": "Espilon (https://ctftime.org/team/423394)",
-        "比赛ID": "1512",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "AITU CTF 2026 Quals",
         "比赛时间": "2026-03-23 15:00:00 - 2026-03-24 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3204.ics",
@@ -1257,6 +1245,18 @@
         "比赛权重": "35.20",
         "赛事主办": "isss (https://ctftime.org/team/69010)",
         "比赛ID": "281",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Espilon CTF 2026",
+        "比赛时间": "2026-03-11 20:00:00 - 2026-03-26 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3179.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.espilon.net/",
+        "比赛标志": "",
+        "比赛权重": "0",
+        "赛事主办": "Espilon (https://ctftime.org/team/423394)",
+        "比赛ID": "1512",
         "比赛状态": "past"
     },
     {
@@ -2205,18 +2205,6 @@
         "比赛权重": "0",
         "赛事主办": "CyberStudentsCTF (https://ctftime.org/team/365239)",
         "比赛ID": "1218",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "m0leCon 2026 Beginner CTF",
-        "比赛时间": "2025-11-29 21:00:00 - 2025-11-30 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3017.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://beginner.m0lecon.it/",
-        "比赛标志": "",
-        "比赛权重": "0",
-        "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
-        "比赛ID": "372",
         "比赛状态": "past"
     }
 ]
