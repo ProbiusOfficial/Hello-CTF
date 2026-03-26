@@ -96,6 +96,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "MythX: An Endgame Protocol CTF",
+        "比赛时间": "2026-03-29 00:30:00 - 2026-03-30 00:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3223.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://unstop.com/o/eZQ9xw6?lb=RatXyLX4",
+        "比赛标志": "https://ctftime.org/media/events/mythx_LOGO.png",
+        "比赛权重": "0",
+        "赛事主办": "MythX (https://ctftime.org/team/429696)",
+        "比赛ID": "1557",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "CU school CTF 2026",
         "比赛时间": "2026-03-29 15:00:00 - 2026-03-29 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3155.ics",
@@ -693,6 +705,18 @@
         "比赛权重": "91.00",
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "317",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Google Capture The Flag 2026",
+        "比赛时间": "2026-06-20 02:00:00 - 2026-06-22 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3222.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://g.co/ctf",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "Google CTF (https://ctftime.org/team/23929)",
+        "比赛ID": "141",
         "比赛状态": "oncoming"
     },
     {

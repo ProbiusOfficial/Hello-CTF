@@ -95,6 +95,15 @@ comments: true
     **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
     **添加日历** : https://ctftime.org/event/3045.ics  
     
+??? Quote "[MythX: An Endgame Protocol CTF](https://unstop.com/o/eZQ9xw6?lb=RatXyLX4)"  
+    [![](https://ctftime.org/media/events/mythx_LOGO.png){ width="200" align=left }](https://unstop.com/o/eZQ9xw6?lb=RatXyLX4)  
+    **比赛名称** : [MythX: An Endgame Protocol CTF](https://unstop.com/o/eZQ9xw6?lb=RatXyLX4)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-29 00:30:00 - 2026-03-30 00:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : MythX (https://ctftime.org/team/429696)  
+    **添加日历** : https://ctftime.org/event/3223.ics  
+    
 ??? Quote "[CU school CTF 2026](https://cu.ru/olympiad/events/cu-school-ctf)"  
     [![](https://ctftime.org/media/events/cu_school_ctf.png){ width="200" align=left }](https://cu.ru/olympiad/events/cu-school-ctf)  
     **比赛名称** : [CU school CTF 2026](https://cu.ru/olympiad/events/cu-school-ctf)  
@@ -544,6 +553,15 @@ comments: true
     **比赛权重** : 91.00  
     **赛事主办** : ASIS (https://ctftime.org/team/4140)  
     **添加日历** : https://ctftime.org/event/3034.ics  
+    
+??? Quote "[Google Capture The Flag 2026](https://g.co/ctf)"  
+    [![](){ width="200" align=left }](https://g.co/ctf)  
+    **比赛名称** : [Google Capture The Flag 2026](https://g.co/ctf)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-06-20 02:00:00 - 2026-06-22 02:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
+    **添加日历** : https://ctftime.org/event/3222.ics  
     
 ??? Quote "[SAS CTF 2026 Quals](https://ctf.thesascon.com/)"  
     [![](https://ctftime.org/media/events/SAS26_temp.png){ width="200" align=left }](https://ctf.thesascon.com/)  
