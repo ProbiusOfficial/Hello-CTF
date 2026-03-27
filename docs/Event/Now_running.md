@@ -54,3 +54,12 @@ comments: true
     **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
     **添加日历** : https://ctftime.org/event/2983.ics  
     
+??? Quote "[HackDay 2026 - Finals](https://hackday.fr/)"  
+    [![](https://ctftime.org/media/events/hackday_1.png){ width="200" align=left }](https://hackday.fr/)  
+    **比赛名称** : [HackDay 2026 - Finals](https://hackday.fr/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-28 02:00:00 - 2026-03-29 02:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
+    **添加日历** : https://ctftime.org/event/3039.ics  
+    

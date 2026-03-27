@@ -68,15 +68,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[HackDay 2026 - Finals](https://hackday.fr/)"  
-            [![](https://ctftime.org/media/events/hackday_1.png){ width="200" align=left }](https://hackday.fr/)  
-            **比赛名称** : [HackDay 2026 - Finals](https://hackday.fr/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-28 02:00:00 - 2026-03-29 02:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
-            **添加日历** : https://ctftime.org/event/3039.ics  
-            
         ??? Quote "[Codegate CTF 2026 Preliminary](http://ctf.codegate.org/)"  
             [![](){ width="200" align=left }](http://ctf.codegate.org/)  
             **比赛名称** : [Codegate CTF 2026 Preliminary](http://ctf.codegate.org/)  
@@ -103,6 +94,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : Laokoon SecurITy (https://ctftime.org/team/201667)  
             **添加日历** : https://ctftime.org/event/3084.ics  
+            
+        ??? Quote "[KAALCHAKRA CTF](https://kaalchakractf.com/)"  
+            [![](https://ctftime.org/media/events/CTF_Logo1.png){ width="200" align=left }](https://kaalchakractf.com/)  
+            **比赛名称** : [KAALCHAKRA CTF](https://kaalchakractf.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-28 17:00:00 - 2026-03-29 17:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : TH3_RANG3RS (https://ctftime.org/team/406018)  
+            **添加日历** : https://ctftime.org/event/3183.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
