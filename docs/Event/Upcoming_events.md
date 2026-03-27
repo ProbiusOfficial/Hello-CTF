@@ -158,6 +158,15 @@ comments: true
     **赛事主办** : IITBreachers (https://ctftime.org/team/165802)  
     **添加日历** : https://ctftime.org/event/3119.ics  
     
+??? Quote "[THE UNI6CTF 1.0](https://uni6ctf.online/)"  
+    [![](https://ctftime.org/media/events/uni6ctf_1.0_.jpeg){ width="200" align=left }](https://uni6ctf.online/)  
+    **比赛名称** : [THE UNI6CTF 1.0](https://uni6ctf.online/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-04 11:30:00 - 2026-04-04 17:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : IN-0x0 (https://ctftime.org/team/423353)  
+    **添加日历** : https://ctftime.org/event/3226.ics  
+    
 ??? Quote "[CRACK-IN 2.0](https://www.crackin.tech/)"  
     [![](https://ctftime.org/media/events/logoo_1.png){ width="200" align=left }](https://www.crackin.tech/)  
     **比赛名称** : [CRACK-IN 2.0](https://www.crackin.tech/)  
@@ -481,6 +490,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Hardware CTF (https://ctftime.org/team/274600)  
     **添加日历** : https://ctftime.org/event/3174.ics  
+    
+??? Quote "[Pwn2Play Open CTF](https://pwn2play.biterra.co/)"  
+    [![](https://ctftime.org/media/events/2025.png){ width="200" align=left }](https://pwn2play.biterra.co/)  
+    **比赛名称** : [Pwn2Play Open CTF](https://pwn2play.biterra.co/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-30 17:00:00 - 2026-05-31 02:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : DMUHackers26 (https://ctftime.org/team/392860)  
+    **添加日历** : https://ctftime.org/event/3220.ics  
     
 ??? Quote "[Grey Cat The Flag 2026 Qualifiers](https://ctf.nusgreyhats.org/)"  
     [![](https://ctftime.org/media/events/73c9081878a4571d117439fc4a8e934d.png){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
