@@ -68,15 +68,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[TexSAW 2026](https://texsaw.org/)"  
-            [![](){ width="200" align=left }](https://texsaw.org/)  
-            **比赛名称** : [TexSAW 2026](https://texsaw.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-27 20:00:00 - 2026-03-29 20:00:00 UTC+8  
-            **比赛权重** : 41.59  
-            **赛事主办** : CSG (https://ctftime.org/team/333)  
-            **添加日历** : https://ctftime.org/event/3130.ics  
-            
         ??? Quote "[KalmarCTF 2026](https://kalmarc.tf/)"  
             [![](https://ctftime.org/media/events/kalmar-logo_1.png){ width="200" align=left }](https://kalmarc.tf/)  
             **比赛名称** : [KalmarCTF 2026](https://kalmarc.tf/)  
@@ -103,6 +94,15 @@ hide:
             **比赛权重** : 62.00  
             **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
             **添加日历** : https://ctftime.org/event/3131.ics  
+            
+        ??? Quote "[NovruzCTF 2026](https://canyouhack.org/)"  
+            [![](https://ctftime.org/media/events/IMG_4954.jpeg){ width="200" align=left }](https://canyouhack.org/)  
+            **比赛名称** : [NovruzCTF 2026](https://canyouhack.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-28 13:00:00 - 2026-03-29 13:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : QarabagTeam (https://ctftime.org/team/186802)  
+            **添加日历** : https://ctftime.org/event/3200.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)

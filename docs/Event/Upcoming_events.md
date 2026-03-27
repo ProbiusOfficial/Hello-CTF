@@ -23,15 +23,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[TexSAW 2026](https://texsaw.org/)"  
-    [![](){ width="200" align=left }](https://texsaw.org/)  
-    **比赛名称** : [TexSAW 2026](https://texsaw.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-27 20:00:00 - 2026-03-29 20:00:00 UTC+8  
-    **比赛权重** : 41.59  
-    **赛事主办** : CSG (https://ctftime.org/team/333)  
-    **添加日历** : https://ctftime.org/event/3130.ics  
-    
 ??? Quote "[KalmarCTF 2026](https://kalmarc.tf/)"  
     [![](https://ctftime.org/media/events/kalmar-logo_1.png){ width="200" align=left }](https://kalmarc.tf/)  
     **比赛名称** : [KalmarCTF 2026](https://kalmarc.tf/)  
