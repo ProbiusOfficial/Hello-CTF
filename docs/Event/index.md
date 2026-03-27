@@ -1276,6 +1276,10 @@ hide:
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2907.ics  
                 
+    === "*已经结束*"
+        === "国内赛事"
+    
+        === "国外赛事"
             ??? Quote "[Stranger's CTF - Techtrix '26](https://upsidectf.online/)"  
                 [![](){ width="200" align=left }](https://upsidectf.online/)  
                 **比赛名称** : [Stranger's CTF - Techtrix '26](https://upsidectf.online/)  
@@ -1285,10 +1289,6 @@ hide:
                 **赛事主办** : UpsideCTF (https://ctftime.org/team/426714)  
                 **添加日历** : https://ctftime.org/event/3188.ics  
                 
-    === "*已经结束*"
-        === "国内赛事"
-    
-        === "国外赛事"
             ??? Quote "[AITU CTF 2026 Quals](https://ctf.fr13nds.team/)"  
                 [![](https://ctftime.org/media/events/icon-black.png){ width="200" align=left }](https://ctf.fr13nds.team/)  
                 **比赛名称** : [AITU CTF 2026 Quals](https://ctf.fr13nds.team/)  
@@ -2179,15 +2179,6 @@ hide:
                 **比赛权重** : 22.50  
                 **赛事主办** : SAFCSP (https://ctftime.org/team/54707)  
                 **添加日历** : https://ctftime.org/event/2877.ics  
-                
-            ??? Quote "[Advent of CTF 2025](https://cyberstudents.net/advent)"  
-                [![](){ width="200" align=left }](https://cyberstudents.net/advent)  
-                **比赛名称** : [Advent of CTF 2025](https://cyberstudents.net/advent)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-12-02 09:00:00 - 2026-01-01 12:59:59 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : CyberStudentsCTF (https://ctftime.org/team/365239)  
-                **添加日历** : https://ctftime.org/event/3022.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
