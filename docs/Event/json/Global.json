@@ -984,18 +984,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Codegate CTF 2026 Preliminary",
-        "比赛时间": "2026-03-28 08:00:00 - 2026-03-28 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3131.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.codegate.org/",
-        "比赛标志": "",
-        "比赛权重": "62.00",
-        "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
-        "比赛ID": "3",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "NovruzCTF 2026",
         "比赛时间": "2026-03-28 13:00:00 - 2026-03-29 13:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3200.ics",
@@ -1042,6 +1030,18 @@
         "赛事主办": "VolgaCTF.org (https://ctftime.org/team/27094)",
         "比赛ID": "52",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Codegate CTF 2026 Preliminary",
+        "比赛时间": "2026-03-28 08:00:00 - 2026-03-28 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3131.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf.codegate.org/",
+        "比赛标志": "",
+        "比赛权重": "62.00",
+        "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
+        "比赛ID": "3",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Stranger's CTF - Techtrix '26",
@@ -2229,18 +2229,6 @@
         "比赛权重": "0.00",
         "赛事主办": "CERTUNLP (https://ctftime.org/team/89294)",
         "比赛ID": "1195",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BlackHat MEA CTF Final 2025",
-        "比赛时间": "2025-12-02 16:00:00 - 2025-12-04 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2877.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://blackhatmea.com/capture-the-flag",
-        "比赛标志": "https://ctftime.org/media/events/e0c283c95f7b0db516dae505d31ca20b_2_2.jpg",
-        "比赛权重": "22.50",
-        "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
-        "比赛ID": "826",
         "比赛状态": "past"
     }
 ]
