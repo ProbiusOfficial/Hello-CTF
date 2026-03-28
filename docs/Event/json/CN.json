@@ -3,13 +3,6 @@
     "data": {
         "result": [
             {
-                "name": "PolarisCTF 2026",
-                "link": "https://www.ctfplus.cn/competition/hall",
-                "comp_time_start": "2026年03月28日 09:00",
-                "comp_time_end": "2026年03月30日 09:00",
-                "detail": "星盟安全团队举办的第一届招新赛，由 CTF+ 平台承办。QQ群：1083975295"
-            },
-            {
                 "name": "【Solar】3月应急响应公益月赛",
                 "link": "https://mp.weixin.qq.com/s/S5SIYuTNafxzdRMdrNvfAA",
                 "comp_time_start": "2026年03月28日 10:00",
@@ -22,6 +15,13 @@
                 "comp_time_start": "2026年07月10日 19:00",
                 "comp_time_end": "2026年07月12日 19:00",
                 "detail": "筹备中"
+            },
+            {
+                "name": "PolarisCTF 2026",
+                "link": "https://www.ctfplus.cn/competition/hall",
+                "comp_time_start": "2026年03月28日 09:00",
+                "comp_time_end": "2026年03月30日 09:00",
+                "detail": "星盟安全团队举办的第一届招新赛，由 CTF+ 平台承办。QQ群：1083975295"
             }
         ],
         "total": 3,
