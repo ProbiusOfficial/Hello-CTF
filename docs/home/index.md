@@ -58,24 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[Flag Wars](https://laokoon-security.com/ctf2026)"  
-            [![](https://ctftime.org/media/events/image_5.png){ width="200" align=left }](https://laokoon-security.com/ctf2026)  
-            **比赛名称** : [Flag Wars](https://laokoon-security.com/ctf2026)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-28 17:00:00 - 2026-03-29 03:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : Laokoon SecurITy (https://ctftime.org/team/201667)  
-            **添加日历** : https://ctftime.org/event/3084.ics  
-            
-        ??? Quote "[KAALCHAKRA CTF](https://kaalchakractf.com/)"  
-            [![](https://ctftime.org/media/events/CTF_Logo1.png){ width="200" align=left }](https://kaalchakractf.com/)  
-            **比赛名称** : [KAALCHAKRA CTF](https://kaalchakractf.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-28 17:00:00 - 2026-03-29 17:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : TH3_RANG3RS (https://ctftime.org/team/406018)  
-            **添加日历** : https://ctftime.org/event/3183.ics  
-            
         ??? Quote "[VolgaCTF 2026 Qualifier](https://q.2026.volgactf.ru/)"  
             [![](https://ctftime.org/media/events/logo-social-yellow_18.png){ width="200" align=left }](https://q.2026.volgactf.ru/)  
             **比赛名称** : [VolgaCTF 2026 Qualifier](https://q.2026.volgactf.ru/)  
@@ -93,6 +75,24 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : MythX (https://ctftime.org/team/429696)  
             **添加日历** : https://ctftime.org/event/3223.ics  
+            
+        ??? Quote "[CU school CTF 2026](https://cu.ru/olympiad/events/cu-school-ctf)"  
+            [![](https://ctftime.org/media/events/cu_school_ctf.png){ width="200" align=left }](https://cu.ru/olympiad/events/cu-school-ctf)  
+            **比赛名称** : [CU school CTF 2026](https://cu.ru/olympiad/events/cu-school-ctf)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-29 15:00:00 - 2026-03-29 23:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : CUT (https://ctftime.org/team/358931)  
+            **添加日历** : https://ctftime.org/event/3155.ics  
+            
+        ??? Quote "[GLOBAL CYBER GAMES: Women's Attack and Defense Edition @Wicked6](https://www.wicked6.com/tournament)"  
+            [![](){ width="200" align=left }](https://www.wicked6.com/tournament)  
+            **比赛名称** : [GLOBAL CYBER GAMES: Women's Attack and Defense Edition @Wicked6](https://www.wicked6.com/tournament)  
+            **比赛形式** : Attack-Defense  
+            **比赛时间** : 2026-03-29 20:00:00 - 2026-03-30 05:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
+            **添加日历** : https://ctftime.org/event/3057.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)

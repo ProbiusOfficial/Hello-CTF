@@ -1,29 +1,5 @@
 [
     {
-        "比赛名称": "Flag Wars",
-        "比赛时间": "2026-03-28 17:00:00 - 2026-03-29 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3084.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://laokoon-security.com/ctf2026",
-        "比赛标志": "https://ctftime.org/media/events/image_5.png",
-        "比赛权重": "0",
-        "赛事主办": "Laokoon SecurITy (https://ctftime.org/team/201667)",
-        "比赛ID": "853",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "KAALCHAKRA CTF",
-        "比赛时间": "2026-03-28 17:00:00 - 2026-03-29 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3183.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://kaalchakractf.com/",
-        "比赛标志": "https://ctftime.org/media/events/CTF_Logo1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "TH3_RANG3RS (https://ctftime.org/team/406018)",
-        "比赛ID": "1530",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "VolgaCTF 2026 Qualifier",
         "比赛时间": "2026-03-28 21:00:00 - 2026-03-29 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3045.ics",
@@ -1041,6 +1017,30 @@
         "比赛权重": "0",
         "赛事主办": "QarabagTeam (https://ctftime.org/team/186802)",
         "比赛ID": "1395",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Flag Wars",
+        "比赛时间": "2026-03-28 17:00:00 - 2026-03-29 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3084.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://laokoon-security.com/ctf2026",
+        "比赛标志": "https://ctftime.org/media/events/image_5.png",
+        "比赛权重": "0",
+        "赛事主办": "Laokoon SecurITy (https://ctftime.org/team/201667)",
+        "比赛ID": "853",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "KAALCHAKRA CTF",
+        "比赛时间": "2026-03-28 17:00:00 - 2026-03-29 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3183.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://kaalchakractf.com/",
+        "比赛标志": "https://ctftime.org/media/events/CTF_Logo1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "TH3_RANG3RS (https://ctftime.org/team/406018)",
+        "比赛ID": "1530",
         "比赛状态": "nowrunning"
     },
     {
