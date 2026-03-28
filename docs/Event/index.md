@@ -497,15 +497,6 @@ hide:
                 **比赛详细** : 筹备中  
                 
         === "国外赛事"
-            ??? Quote "[VolgaCTF 2026 Qualifier](https://q.2026.volgactf.ru/)"  
-                [![](https://ctftime.org/media/events/logo-social-yellow_18.png){ width="200" align=left }](https://q.2026.volgactf.ru/)  
-                **比赛名称** : [VolgaCTF 2026 Qualifier](https://q.2026.volgactf.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-28 21:00:00 - 2026-03-29 21:00:00 UTC+8  
-                **比赛权重** : 38.67  
-                **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
-                **添加日历** : https://ctftime.org/event/3045.ics  
-                
             ??? Quote "[MythX: An Endgame Protocol CTF](https://unstop.com/o/eZQ9xw6?lb=RatXyLX4)"  
                 [![](https://ctftime.org/media/events/mythx_LOGO.png){ width="200" align=left }](https://unstop.com/o/eZQ9xw6?lb=RatXyLX4)  
                 **比赛名称** : [MythX: An Endgame Protocol CTF](https://unstop.com/o/eZQ9xw6?lb=RatXyLX4)  
@@ -1287,6 +1278,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : TH3_RANG3RS (https://ctftime.org/team/406018)  
                 **添加日历** : https://ctftime.org/event/3183.ics  
+                
+            ??? Quote "[VolgaCTF 2026 Qualifier](https://q.2026.volgactf.ru/)"  
+                [![](https://ctftime.org/media/events/logo-social-yellow_18.png){ width="200" align=left }](https://q.2026.volgactf.ru/)  
+                **比赛名称** : [VolgaCTF 2026 Qualifier](https://q.2026.volgactf.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-28 21:00:00 - 2026-03-29 21:00:00 UTC+8  
+                **比赛权重** : 38.67  
+                **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
+                **添加日历** : https://ctftime.org/event/3045.ics  
                 
     === "*已经结束*"
         === "国内赛事"
