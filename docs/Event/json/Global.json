@@ -972,18 +972,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Flag Wars",
-        "比赛时间": "2026-03-28 17:00:00 - 2026-03-29 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3084.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://laokoon-security.com/ctf2026",
-        "比赛标志": "https://ctftime.org/media/events/image_5.png",
-        "比赛权重": "0",
-        "赛事主办": "Laokoon SecurITy (https://ctftime.org/team/201667)",
-        "比赛ID": "853",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "KAALCHAKRA CTF",
         "比赛时间": "2026-03-28 17:00:00 - 2026-03-29 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3183.ics",
@@ -1018,6 +1006,18 @@
         "赛事主办": "MythX (https://ctftime.org/team/429696)",
         "比赛ID": "1557",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Flag Wars",
+        "比赛时间": "2026-03-28 17:00:00 - 2026-03-29 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3084.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://laokoon-security.com/ctf2026",
+        "比赛标志": "https://ctftime.org/media/events/image_5.png",
+        "比赛权重": "0",
+        "赛事主办": "Laokoon SecurITy (https://ctftime.org/team/201667)",
+        "比赛ID": "853",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Codegate CTF 2026 Preliminary",
@@ -2205,18 +2205,6 @@
         "比赛权重": "24.40",
         "赛事主办": "L3v3l 6 (https://ctftime.org/team/206364)",
         "比赛ID": "1449",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Null CTF 2025",
-        "比赛时间": "2025-12-05 23:00:00 - 2025-12-07 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2901.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.r0devnull.team/",
-        "比赛标志": "https://ctftime.org/media/events/null_ctf_logo_temp_1.png",
-        "比赛权重": "25.00",
-        "赛事主办": "r0/dev/null (https://ctftime.org/team/398024)",
-        "比赛ID": "1336",
         "比赛状态": "past"
     }
 ]

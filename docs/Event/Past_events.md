@@ -12,6 +12,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Flag Wars](https://laokoon-security.com/ctf2026)"  
+    [![](https://ctftime.org/media/events/image_5.png){ width="200" align=left }](https://laokoon-security.com/ctf2026)  
+    **比赛名称** : [Flag Wars](https://laokoon-security.com/ctf2026)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-28 17:00:00 - 2026-03-29 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Laokoon SecurITy (https://ctftime.org/team/201667)  
+    **添加日历** : https://ctftime.org/event/3084.ics  
+    
 ??? Quote "[Codegate CTF 2026 Preliminary](http://ctf.codegate.org/)"  
     [![](){ width="200" align=left }](http://ctf.codegate.org/)  
     **比赛名称** : [Codegate CTF 2026 Preliminary](http://ctf.codegate.org/)  
@@ -902,13 +911,4 @@ comments: true
     **比赛权重** : 24.40  
     **赛事主办** : L3v3l 6 (https://ctftime.org/team/206364)  
     **添加日历** : https://ctftime.org/event/3009.ics  
-    
-??? Quote "[Null CTF 2025](https://ctf.r0devnull.team/)"  
-    [![](https://ctftime.org/media/events/null_ctf_logo_temp_1.png){ width="200" align=left }](https://ctf.r0devnull.team/)  
-    **比赛名称** : [Null CTF 2025](https://ctf.r0devnull.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-12-05 23:00:00 - 2025-12-07 23:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : r0/dev/null (https://ctftime.org/team/398024)  
-    **添加日历** : https://ctftime.org/event/2901.ics  
     
