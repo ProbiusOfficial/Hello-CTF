@@ -960,18 +960,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "HackDay 2026 - Finals",
-        "比赛时间": "2026-03-28 02:00:00 - 2026-03-29 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3039.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hackday.fr/",
-        "比赛标志": "https://ctftime.org/media/events/hackday_1.png",
-        "比赛权重": "0",
-        "赛事主办": "HackDayCTF (https://ctftime.org/team/277562)",
-        "比赛ID": "1060",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "NovruzCTF 2026",
         "比赛时间": "2026-03-28 13:00:00 - 2026-03-29 13:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3200.ics",
@@ -1041,6 +1029,18 @@
         "比赛权重": "62.00",
         "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
         "比赛ID": "3",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "HackDay 2026 - Finals",
+        "比赛时间": "2026-03-28 02:00:00 - 2026-03-29 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3039.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://hackday.fr/",
+        "比赛标志": "https://ctftime.org/media/events/hackday_1.png",
+        "比赛权重": "0",
+        "赛事主办": "HackDayCTF (https://ctftime.org/team/277562)",
+        "比赛ID": "1060",
         "比赛状态": "past"
     },
     {
@@ -2217,18 +2217,6 @@
         "比赛权重": "25.00",
         "赛事主办": "r0/dev/null (https://ctftime.org/team/398024)",
         "比赛ID": "1336",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Metared Argentina 2025",
-        "比赛时间": "2025-12-04 20:00:00 - 2025-12-05 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3003.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.cert.unlp.edu.ar/",
-        "比赛标志": "https://ctftime.org/media/events/0645ac9c15c72f7be37e5ff68bafea52.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "CERTUNLP (https://ctftime.org/team/89294)",
-        "比赛ID": "1195",
         "比赛状态": "past"
     }
 ]

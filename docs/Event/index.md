@@ -1225,15 +1225,6 @@ hide:
                 **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
                 **添加日历** : https://ctftime.org/event/2983.ics  
                 
-            ??? Quote "[HackDay 2026 - Finals](https://hackday.fr/)"  
-                [![](https://ctftime.org/media/events/hackday_1.png){ width="200" align=left }](https://hackday.fr/)  
-                **比赛名称** : [HackDay 2026 - Finals](https://hackday.fr/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-28 02:00:00 - 2026-03-29 02:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
-                **添加日历** : https://ctftime.org/event/3039.ics  
-                
             ??? Quote "[NovruzCTF 2026](https://canyouhack.org/)"  
                 [![](https://ctftime.org/media/events/IMG_4954.jpeg){ width="200" align=left }](https://canyouhack.org/)  
                 **比赛名称** : [NovruzCTF 2026](https://canyouhack.org/)  
@@ -1295,6 +1286,15 @@ hide:
                 **比赛权重** : 62.00  
                 **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
                 **添加日历** : https://ctftime.org/event/3131.ics  
+                
+            ??? Quote "[HackDay 2026 - Finals](https://hackday.fr/)"  
+                [![](https://ctftime.org/media/events/hackday_1.png){ width="200" align=left }](https://hackday.fr/)  
+                **比赛名称** : [HackDay 2026 - Finals](https://hackday.fr/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-28 02:00:00 - 2026-03-29 02:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
+                **添加日历** : https://ctftime.org/event/3039.ics  
                 
             ??? Quote "[Stranger's CTF - Techtrix '26](https://upsidectf.online/)"  
                 [![](){ width="200" align=left }](https://upsidectf.online/)  
@@ -2177,15 +2177,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : r0/dev/null (https://ctftime.org/team/398024)  
                 **添加日历** : https://ctftime.org/event/2901.ics  
-                
-            ??? Quote "[Metared Argentina 2025](https://ctf.cert.unlp.edu.ar/)"  
-                [![](https://ctftime.org/media/events/0645ac9c15c72f7be37e5ff68bafea52.jpg){ width="200" align=left }](https://ctf.cert.unlp.edu.ar/)  
-                **比赛名称** : [Metared Argentina 2025](https://ctf.cert.unlp.edu.ar/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-12-04 20:00:00 - 2025-12-05 20:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : CERTUNLP (https://ctftime.org/team/89294)  
-                **添加日历** : https://ctftime.org/event/3003.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
