@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[NovruzCTF 2026](https://canyouhack.org/)"  
-            [![](https://ctftime.org/media/events/IMG_4954.jpeg){ width="200" align=left }](https://canyouhack.org/)  
-            **比赛名称** : [NovruzCTF 2026](https://canyouhack.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-28 13:00:00 - 2026-03-29 13:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : QarabagTeam (https://ctftime.org/team/186802)  
-            **添加日历** : https://ctftime.org/event/3200.ics  
-            
         ??? Quote "[Flag Wars](https://laokoon-security.com/ctf2026)"  
             [![](https://ctftime.org/media/events/image_5.png){ width="200" align=left }](https://laokoon-security.com/ctf2026)  
             **比赛名称** : [Flag Wars](https://laokoon-security.com/ctf2026)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 38.67  
             **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
             **添加日历** : https://ctftime.org/event/3045.ics  
+            
+        ??? Quote "[MythX: An Endgame Protocol CTF](https://unstop.com/o/eZQ9xw6?lb=RatXyLX4)"  
+            [![](https://ctftime.org/media/events/mythx_LOGO.png){ width="200" align=left }](https://unstop.com/o/eZQ9xw6?lb=RatXyLX4)  
+            **比赛名称** : [MythX: An Endgame Protocol CTF](https://unstop.com/o/eZQ9xw6?lb=RatXyLX4)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-03-29 00:30:00 - 2026-03-30 00:30:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : MythX (https://ctftime.org/team/429696)  
+            **添加日历** : https://ctftime.org/event/3223.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
