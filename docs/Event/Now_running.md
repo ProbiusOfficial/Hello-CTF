@@ -58,15 +58,6 @@ comments: true
     **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
     **添加日历** : https://ctftime.org/event/2983.ics  
     
-??? Quote "[NovruzCTF 2026](https://canyouhack.org/)"  
-    [![](https://ctftime.org/media/events/IMG_4954.jpeg){ width="200" align=left }](https://canyouhack.org/)  
-    **比赛名称** : [NovruzCTF 2026](https://canyouhack.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-28 13:00:00 - 2026-03-29 13:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : QarabagTeam (https://ctftime.org/team/186802)  
-    **添加日历** : https://ctftime.org/event/3200.ics  
-    
 ??? Quote "[KAALCHAKRA CTF](https://kaalchakractf.com/)"  
     [![](https://ctftime.org/media/events/CTF_Logo1.png){ width="200" align=left }](https://kaalchakractf.com/)  
     **比赛名称** : [KAALCHAKRA CTF](https://kaalchakractf.com/)  

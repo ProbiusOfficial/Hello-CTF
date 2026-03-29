@@ -960,18 +960,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "NovruzCTF 2026",
-        "比赛时间": "2026-03-28 13:00:00 - 2026-03-29 13:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3200.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://canyouhack.org/",
-        "比赛标志": "https://ctftime.org/media/events/IMG_4954.jpeg",
-        "比赛权重": "0",
-        "赛事主办": "QarabagTeam (https://ctftime.org/team/186802)",
-        "比赛ID": "1395",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "KAALCHAKRA CTF",
         "比赛时间": "2026-03-28 17:00:00 - 2026-03-29 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3183.ics",
@@ -1017,6 +1005,18 @@
         "比赛权重": "0",
         "赛事主办": "Laokoon SecurITy (https://ctftime.org/team/201667)",
         "比赛ID": "853",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "NovruzCTF 2026",
+        "比赛时间": "2026-03-28 13:00:00 - 2026-03-29 13:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3200.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://canyouhack.org/",
+        "比赛标志": "https://ctftime.org/media/events/IMG_4954.jpeg",
+        "比赛权重": "0",
+        "赛事主办": "QarabagTeam (https://ctftime.org/team/186802)",
+        "比赛ID": "1395",
         "比赛状态": "past"
     },
     {
@@ -2193,18 +2193,6 @@
         "比赛权重": "25.00",
         "赛事主办": "VuwCTF (https://ctftime.org/team/378359)",
         "比赛ID": "1434",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "P3rf3ctr00t CTF 2025",
-        "比赛时间": "2025-12-05 23:00:00 - 2025-12-07 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3009.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.perfectroot.wiki/",
-        "比赛标志": "https://ctftime.org/media/events/project_20240319_1256007-01.png",
-        "比赛权重": "24.40",
-        "赛事主办": "L3v3l 6 (https://ctftime.org/team/206364)",
-        "比赛ID": "1449",
         "比赛状态": "past"
     }
 ]

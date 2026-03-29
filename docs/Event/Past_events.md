@@ -21,6 +21,15 @@ comments: true
     **赛事主办** : Laokoon SecurITy (https://ctftime.org/team/201667)  
     **添加日历** : https://ctftime.org/event/3084.ics  
     
+??? Quote "[NovruzCTF 2026](https://canyouhack.org/)"  
+    [![](https://ctftime.org/media/events/IMG_4954.jpeg){ width="200" align=left }](https://canyouhack.org/)  
+    **比赛名称** : [NovruzCTF 2026](https://canyouhack.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-28 13:00:00 - 2026-03-29 13:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : QarabagTeam (https://ctftime.org/team/186802)  
+    **添加日历** : https://ctftime.org/event/3200.ics  
+    
 ??? Quote "[Codegate CTF 2026 Preliminary](http://ctf.codegate.org/)"  
     [![](){ width="200" align=left }](http://ctf.codegate.org/)  
     **比赛名称** : [Codegate CTF 2026 Preliminary](http://ctf.codegate.org/)  
@@ -902,13 +911,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : VuwCTF (https://ctftime.org/team/378359)  
     **添加日历** : https://ctftime.org/event/3012.ics  
-    
-??? Quote "[P3rf3ctr00t CTF 2025](https://ctf.perfectroot.wiki/)"  
-    [![](https://ctftime.org/media/events/project_20240319_1256007-01.png){ width="200" align=left }](https://ctf.perfectroot.wiki/)  
-    **比赛名称** : [P3rf3ctr00t CTF 2025](https://ctf.perfectroot.wiki/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-12-05 23:00:00 - 2025-12-07 23:00:00 UTC+8  
-    **比赛权重** : 24.40  
-    **赛事主办** : L3v3l 6 (https://ctftime.org/team/206364)  
-    **添加日历** : https://ctftime.org/event/3009.ics  
     
