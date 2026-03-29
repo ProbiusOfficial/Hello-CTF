@@ -497,15 +497,6 @@ hide:
                 **比赛详细** : 筹备中  
                 
         === "国外赛事"
-            ??? Quote "[GLOBAL CYBER GAMES: Women's Attack and Defense Edition @Wicked6](https://www.wicked6.com/tournament)"  
-                [![](){ width="200" align=left }](https://www.wicked6.com/tournament)  
-                **比赛名称** : [GLOBAL CYBER GAMES: Women's Attack and Defense Edition @Wicked6](https://www.wicked6.com/tournament)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2026-03-29 20:00:00 - 2026-03-30 05:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
-                **添加日历** : https://ctftime.org/event/3057.ics  
-                
             ??? Quote "[Hack for a Change 2026 March: UN SDG 3](https://www.hackforachange.org/)"  
                 [![](https://ctftime.org/media/events/favicon_8_1.png){ width="200" align=left }](https://www.hackforachange.org/)  
                 **比赛名称** : [Hack for a Change 2026 March: UN SDG 3](https://www.hackforachange.org/)  
@@ -1198,15 +1189,6 @@ hide:
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2907.ics  
                 
-            ??? Quote "[TexSAW 2026](https://texsaw.org/)"  
-                [![](){ width="200" align=left }](https://texsaw.org/)  
-                **比赛名称** : [TexSAW 2026](https://texsaw.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-27 20:00:00 - 2026-03-29 20:00:00 UTC+8  
-                **比赛权重** : 41.59  
-                **赛事主办** : CSG (https://ctftime.org/team/333)  
-                **添加日历** : https://ctftime.org/event/3130.ics  
-                
             ??? Quote "[KalmarCTF 2026](https://kalmarc.tf/)"  
                 [![](https://ctftime.org/media/events/kalmar-logo_1.png){ width="200" align=left }](https://kalmarc.tf/)  
                 **比赛名称** : [KalmarCTF 2026](https://kalmarc.tf/)  
@@ -1242,6 +1224,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : CUT (https://ctftime.org/team/358931)  
                 **添加日历** : https://ctftime.org/event/3155.ics  
+                
+            ??? Quote "[GLOBAL CYBER GAMES: Women's Attack and Defense Edition @Wicked6](https://www.wicked6.com/tournament)"  
+                [![](){ width="200" align=left }](https://www.wicked6.com/tournament)  
+                **比赛名称** : [GLOBAL CYBER GAMES: Women's Attack and Defense Edition @Wicked6](https://www.wicked6.com/tournament)  
+                **比赛形式** : Attack-Defense  
+                **比赛时间** : 2026-03-29 20:00:00 - 2026-03-30 05:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
+                **添加日历** : https://ctftime.org/event/3057.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -1295,6 +1286,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
                 **添加日历** : https://ctftime.org/event/3039.ics  
+                
+            ??? Quote "[TexSAW 2026](https://texsaw.org/)"  
+                [![](){ width="200" align=left }](https://texsaw.org/)  
+                **比赛名称** : [TexSAW 2026](https://texsaw.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-27 20:00:00 - 2026-03-29 20:00:00 UTC+8  
+                **比赛权重** : 41.59  
+                **赛事主办** : CSG (https://ctftime.org/team/333)  
+                **添加日历** : https://ctftime.org/event/3130.ics  
                 
             ??? Quote "[Stranger's CTF - Techtrix '26](https://upsidectf.online/)"  
                 [![](){ width="200" align=left }](https://upsidectf.online/)  
@@ -2141,15 +2141,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : CyKOR (https://ctftime.org/team/369)  
                 **添加日历** : https://ctftime.org/event/3028.ics  
-                
-            ??? Quote "[WannaGame Championship 2025](https://ctf.cnsc.com.vn/)"  
-                [![](https://ctftime.org/media/events/Artboard_13x.png){ width="200" align=left }](https://ctf.cnsc.com.vn/)  
-                **比赛名称** : [WannaGame Championship 2025](https://ctf.cnsc.com.vn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-12-06 09:00:00 - 2025-12-08 09:00:00 UTC+8  
-                **比赛权重** : 29.00  
-                **赛事主办** : UIT-Wanna.W1n (https://ctftime.org/team/138431)  
-                **添加日历** : https://ctftime.org/event/2898.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "GLOBAL CYBER GAMES: Women's Attack and Defense Edition @Wicked6",
-        "比赛时间": "2026-03-29 20:00:00 - 2026-03-30 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3057.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://www.wicked6.com/tournament",
-        "比赛标志": "",
-        "比赛权重": "0",
-        "赛事主办": "PlayCyber (https://ctftime.org/team/165788)",
-        "比赛ID": "740",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Hack for a Change 2026 March: UN SDG 3",
         "比赛时间": "2026-03-31 08:00:00 - 2026-04-02 07:59:59 UTC+8",
         "添加日历": "https://ctftime.org/event/3184.ics",
@@ -924,18 +912,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "TexSAW 2026",
-        "比赛时间": "2026-03-27 20:00:00 - 2026-03-29 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3130.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://texsaw.org/",
-        "比赛标志": "",
-        "比赛权重": "41.59",
-        "赛事主办": "CSG (https://ctftime.org/team/333)",
-        "比赛ID": "926",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "KalmarCTF 2026",
         "比赛时间": "2026-03-28 01:00:00 - 2026-03-30 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2983.ics",
@@ -981,6 +957,18 @@
         "比赛权重": "0",
         "赛事主办": "CUT (https://ctftime.org/team/358931)",
         "比赛ID": "1320",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "GLOBAL CYBER GAMES: Women's Attack and Defense Edition @Wicked6",
+        "比赛时间": "2026-03-29 20:00:00 - 2026-03-30 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3057.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://www.wicked6.com/tournament",
+        "比赛标志": "",
+        "比赛权重": "0",
+        "赛事主办": "PlayCyber (https://ctftime.org/team/165788)",
+        "比赛ID": "740",
         "比赛状态": "nowrunning"
     },
     {
@@ -1041,6 +1029,18 @@
         "比赛权重": "0",
         "赛事主办": "HackDayCTF (https://ctftime.org/team/277562)",
         "比赛ID": "1060",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "TexSAW 2026",
+        "比赛时间": "2026-03-27 20:00:00 - 2026-03-29 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3130.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://texsaw.org/",
+        "比赛标志": "",
+        "比赛权重": "41.59",
+        "赛事主办": "CSG (https://ctftime.org/team/333)",
+        "比赛ID": "926",
         "比赛状态": "past"
     },
     {
@@ -2169,18 +2169,6 @@
         "比赛权重": "25.00",
         "赛事主办": "CyKOR (https://ctftime.org/team/369)",
         "比赛ID": "1452",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "WannaGame Championship 2025",
-        "比赛时间": "2025-12-06 09:00:00 - 2025-12-08 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2898.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.cnsc.com.vn/",
-        "比赛标志": "https://ctftime.org/media/events/Artboard_13x.png",
-        "比赛权重": "29.00",
-        "赛事主办": "UIT-Wanna.W1n (https://ctftime.org/team/138431)",
-        "比赛ID": "1000",
         "比赛状态": "past"
     }
 ]
