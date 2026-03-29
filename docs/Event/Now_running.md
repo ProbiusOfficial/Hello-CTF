@@ -49,15 +49,6 @@ comments: true
     **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
     **添加日历** : https://ctftime.org/event/2983.ics  
     
-??? Quote "[MythX: An Endgame Protocol CTF](https://unstop.com/o/eZQ9xw6?lb=RatXyLX4)"  
-    [![](https://ctftime.org/media/events/mythx_LOGO.png){ width="200" align=left }](https://unstop.com/o/eZQ9xw6?lb=RatXyLX4)  
-    **比赛名称** : [MythX: An Endgame Protocol CTF](https://unstop.com/o/eZQ9xw6?lb=RatXyLX4)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-29 00:30:00 - 2026-03-30 00:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : MythX (https://ctftime.org/team/429696)  
-    **添加日历** : https://ctftime.org/event/3223.ics  
-    
 ??? Quote "[GLOBAL CYBER GAMES: Women's Attack and Defense Edition @Wicked6](https://www.wicked6.com/tournament)"  
     [![](){ width="200" align=left }](https://www.wicked6.com/tournament)  
     **比赛名称** : [GLOBAL CYBER GAMES: Women's Attack and Defense Edition @Wicked6](https://www.wicked6.com/tournament)  
