@@ -921,7 +921,7 @@
         "比赛权重": "0",
         "赛事主办": "PlayCyber (https://ctftime.org/team/165788)",
         "比赛ID": "740",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "CU school CTF 2026",
@@ -2109,18 +2109,6 @@
         "比赛权重": "0.00",
         "赛事主办": "HackerLab (https://ctftime.org/team/299486)",
         "比赛ID": "923",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SECCON CTF 14 Quals",
-        "比赛时间": "2025-12-13 13:00:00 - 2025-12-14 13:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2862.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.seccon.jp/",
-        "比赛标志": "https://ctftime.org/media/events/seccon_s_10.png",
-        "比赛权重": "100.00",
-        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
-        "比赛ID": "92",
         "比赛状态": "past"
     }
 ]
