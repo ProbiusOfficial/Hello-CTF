@@ -85,3 +85,12 @@ comments: true
     **赛事主办** : MythX (https://ctftime.org/team/429696)  
     **添加日历** : https://ctftime.org/event/3223.ics  
     
+??? Quote "[CU school CTF 2026](https://cu.ru/olympiad/events/cu-school-ctf)"  
+    [![](https://ctftime.org/media/events/cu_school_ctf.png){ width="200" align=left }](https://cu.ru/olympiad/events/cu-school-ctf)  
+    **比赛名称** : [CU school CTF 2026](https://cu.ru/olympiad/events/cu-school-ctf)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-29 15:00:00 - 2026-03-29 23:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : CUT (https://ctftime.org/team/358931)  
+    **添加日历** : https://ctftime.org/event/3155.ics  
+    
