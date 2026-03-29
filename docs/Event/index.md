@@ -1216,15 +1216,6 @@ hide:
                 **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
                 **添加日历** : https://ctftime.org/event/2983.ics  
                 
-            ??? Quote "[KAALCHAKRA CTF](https://kaalchakractf.com/)"  
-                [![](https://ctftime.org/media/events/CTF_Logo1.png){ width="200" align=left }](https://kaalchakractf.com/)  
-                **比赛名称** : [KAALCHAKRA CTF](https://kaalchakractf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-28 17:00:00 - 2026-03-29 17:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : TH3_RANG3RS (https://ctftime.org/team/406018)  
-                **添加日历** : https://ctftime.org/event/3183.ics  
-                
             ??? Quote "[VolgaCTF 2026 Qualifier](https://q.2026.volgactf.ru/)"  
                 [![](https://ctftime.org/media/events/logo-social-yellow_18.png){ width="200" align=left }](https://q.2026.volgactf.ru/)  
                 **比赛名称** : [VolgaCTF 2026 Qualifier](https://q.2026.volgactf.ru/)  
@@ -1268,6 +1259,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Laokoon SecurITy (https://ctftime.org/team/201667)  
                 **添加日历** : https://ctftime.org/event/3084.ics  
+                
+            ??? Quote "[KAALCHAKRA CTF](https://kaalchakractf.com/)"  
+                [![](https://ctftime.org/media/events/CTF_Logo1.png){ width="200" align=left }](https://kaalchakractf.com/)  
+                **比赛名称** : [KAALCHAKRA CTF](https://kaalchakractf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-28 17:00:00 - 2026-03-29 17:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : TH3_RANG3RS (https://ctftime.org/team/406018)  
+                **添加日历** : https://ctftime.org/event/3183.ics  
                 
             ??? Quote "[NovruzCTF 2026](https://canyouhack.org/)"  
                 [![](https://ctftime.org/media/events/IMG_4954.jpeg){ width="200" align=left }](https://canyouhack.org/)  
@@ -2150,15 +2150,6 @@ hide:
                 **比赛权重** : 29.00  
                 **赛事主办** : UIT-Wanna.W1n (https://ctftime.org/team/138431)  
                 **添加日历** : https://ctftime.org/event/2898.ics  
-                
-            ??? Quote "[VuwCTF 2025](https://2025.vuwctf.com/)"  
-                [![](https://ctftime.org/media/events/VUWCTF_logo.png){ width="200" align=left }](https://2025.vuwctf.com/)  
-                **比赛名称** : [VuwCTF 2025](https://2025.vuwctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-12-06 05:00:00 - 2025-12-07 12:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : VuwCTF (https://ctftime.org/team/378359)  
-                **添加日历** : https://ctftime.org/event/3012.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
