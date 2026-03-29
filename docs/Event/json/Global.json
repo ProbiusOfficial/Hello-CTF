@@ -924,18 +924,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "VolgaCTF 2026 Qualifier",
-        "比赛时间": "2026-03-28 21:00:00 - 2026-03-29 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3045.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://q.2026.volgactf.ru/",
-        "比赛标志": "https://ctftime.org/media/events/logo-social-yellow_18.png",
-        "比赛权重": "38.67",
-        "赛事主办": "VolgaCTF.org (https://ctftime.org/team/27094)",
-        "比赛ID": "52",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "MythX: An Endgame Protocol CTF",
         "比赛时间": "2026-03-29 00:30:00 - 2026-03-30 00:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3223.ics",
@@ -945,18 +933,6 @@
         "比赛权重": "0",
         "赛事主办": "MythX (https://ctftime.org/team/429696)",
         "比赛ID": "1557",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "CU school CTF 2026",
-        "比赛时间": "2026-03-29 15:00:00 - 2026-03-29 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3155.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cu.ru/olympiad/events/cu-school-ctf",
-        "比赛标志": "https://ctftime.org/media/events/cu_school_ctf.png",
-        "比赛权重": "0",
-        "赛事主办": "CUT (https://ctftime.org/team/358931)",
-        "比赛ID": "1320",
         "比赛状态": "nowrunning"
     },
     {
@@ -970,6 +946,30 @@
         "赛事主办": "PlayCyber (https://ctftime.org/team/165788)",
         "比赛ID": "740",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CU school CTF 2026",
+        "比赛时间": "2026-03-29 15:00:00 - 2026-03-29 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3155.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cu.ru/olympiad/events/cu-school-ctf",
+        "比赛标志": "https://ctftime.org/media/events/cu_school_ctf.png",
+        "比赛权重": "0",
+        "赛事主办": "CUT (https://ctftime.org/team/358931)",
+        "比赛ID": "1320",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "VolgaCTF 2026 Qualifier",
+        "比赛时间": "2026-03-28 21:00:00 - 2026-03-29 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3045.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://q.2026.volgactf.ru/",
+        "比赛标志": "https://ctftime.org/media/events/logo-social-yellow_18.png",
+        "比赛权重": "38.67",
+        "赛事主办": "VolgaCTF.org (https://ctftime.org/team/27094)",
+        "比赛ID": "52",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Flag Wars",
@@ -2145,30 +2145,6 @@
         "比赛权重": "23.73",
         "赛事主办": "Nexus Team (https://ctftime.org/team/361096)",
         "比赛ID": "1204",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BackdoorCTF 2025",
-        "比赛时间": "2025-12-06 20:00:00 - 2025-12-08 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2915.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://backdoor.infoseciitr.in/",
-        "比赛标志": "https://ctftime.org/media/events/0b4a317ba84bb2bd6e871c5eec6fdb00_1.png",
-        "比赛权重": "71.35",
-        "赛事主办": "InfoSecIITR (https://ctftime.org/team/16691)",
-        "比赛ID": "49",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CyKor CTF 2025",
-        "比赛时间": "2025-12-06 09:00:00 - 2025-12-07 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3028.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.cykor.kr/",
-        "比赛标志": "",
-        "比赛权重": "25.00",
-        "赛事主办": "CyKOR (https://ctftime.org/team/369)",
-        "比赛ID": "1452",
         "比赛状态": "past"
     }
 ]
