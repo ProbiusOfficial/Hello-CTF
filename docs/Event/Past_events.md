@@ -84,6 +84,15 @@ comments: true
     **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
     **添加日历** : https://ctftime.org/event/3039.ics  
     
+??? Quote "[KalmarCTF 2026](https://kalmarc.tf/)"  
+    [![](https://ctftime.org/media/events/kalmar-logo_1.png){ width="200" align=left }](https://kalmarc.tf/)  
+    **比赛名称** : [KalmarCTF 2026](https://kalmarc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-28 01:00:00 - 2026-03-30 01:00:00 UTC+8  
+    **比赛权重** : 49.97  
+    **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
+    **添加日历** : https://ctftime.org/event/2983.ics  
+    
 ??? Quote "[TexSAW 2026](https://texsaw.org/)"  
     [![](){ width="200" align=left }](https://texsaw.org/)  
     **比赛名称** : [TexSAW 2026](https://texsaw.org/)  
@@ -902,13 +911,4 @@ comments: true
     **比赛权重** : 100.00  
     **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
     **添加日历** : https://ctftime.org/event/2862.ics  
-    
-??? Quote "[niteCTF 2025](https://nitectf25.live/)"  
-    [![](https://ctftime.org/media/events/nitectf2025.png){ width="200" align=left }](https://nitectf25.live/)  
-    **比赛名称** : [niteCTF 2025](https://nitectf25.live/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-12-12 20:00:00 - 2025-12-14 20:00:00 UTC+8  
-    **比赛权重** : 39.87  
-    **赛事主办** : Cryptonite (https://ctftime.org/team/62713)  
-    **添加日历** : https://ctftime.org/event/2851.ics  
     

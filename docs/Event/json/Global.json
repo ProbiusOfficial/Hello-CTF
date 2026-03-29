@@ -912,18 +912,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "KalmarCTF 2026",
-        "比赛时间": "2026-03-28 01:00:00 - 2026-03-30 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2983.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://kalmarc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/kalmar-logo_1.png",
-        "比赛权重": "49.97",
-        "赛事主办": "kalmarunionen (https://ctftime.org/team/114856)",
-        "比赛ID": "813",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "GLOBAL CYBER GAMES: Women's Attack and Defense Edition @Wicked6",
         "比赛时间": "2026-03-29 20:00:00 - 2026-03-30 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3057.ics",
@@ -1029,6 +1017,18 @@
         "比赛权重": "0",
         "赛事主办": "HackDayCTF (https://ctftime.org/team/277562)",
         "比赛ID": "1060",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "KalmarCTF 2026",
+        "比赛时间": "2026-03-28 01:00:00 - 2026-03-30 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2983.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://kalmarc.tf/",
+        "比赛标志": "https://ctftime.org/media/events/kalmar-logo_1.png",
+        "比赛权重": "49.97",
+        "赛事主办": "kalmarunionen (https://ctftime.org/team/114856)",
+        "比赛ID": "813",
         "比赛状态": "past"
     },
     {
@@ -2121,18 +2121,6 @@
         "比赛权重": "100.00",
         "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
         "比赛ID": "92",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "niteCTF 2025",
-        "比赛时间": "2025-12-12 20:00:00 - 2025-12-14 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2851.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nitectf25.live/",
-        "比赛标志": "https://ctftime.org/media/events/nitectf2025.png",
-        "比赛权重": "39.87",
-        "赛事主办": "Cryptonite (https://ctftime.org/team/62713)",
-        "比赛ID": "663",
         "比赛状态": "past"
     }
 ]
