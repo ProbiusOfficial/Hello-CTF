@@ -5,6 +5,11 @@ comments: true
 
 ## 国内赛事
 
+??? Quote "PolarisCTF 2026"  
+    **比赛名称** : [PolarisCTF 2026](https://www.ctfplus.cn/competition/hall)  
+    **比赛时间** : 2026年03月28日 09:00 - 2026年03月30日 09:00  
+    **比赛详细** : 星盟安全团队举办的第一届招新赛，由 CTF+ 平台承办。QQ群：1083975295  
+    
 ??? Quote "【Solar】3月应急响应公益月赛"  
     **比赛名称** : [【Solar】3月应急响应公益月赛](https://mp.weixin.qq.com/s/S5SIYuTNafxzdRMdrNvfAA)  
     **比赛时间** : 2026年03月28日 10:00 - 2026年03月28日 18:00  
