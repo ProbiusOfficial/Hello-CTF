@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[Hack for a Change 2026 March: UN SDG 3](https://www.hackforachange.org/)"  
-            [![](https://ctftime.org/media/events/favicon_8_1.png){ width="200" align=left }](https://www.hackforachange.org/)  
-            **比赛名称** : [Hack for a Change 2026 March: UN SDG 3](https://www.hackforachange.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-03-31 08:00:00 - 2026-04-02 07:59:59 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
-            **添加日历** : https://ctftime.org/event/3184.ics  
-            
         ??? Quote "[VishwaCTF'2026](http://vishwactf.com/)"  
             [![](https://ctftime.org/media/events/VishwaCTF_Logo_1_1_1.png){ width="200" align=left }](http://vishwactf.com/)  
             **比赛名称** : [VishwaCTF'2026](http://vishwactf.com/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 48.64  
             **赛事主办** : Contagion (https://ctftime.org/team/152691)  
             **添加日历** : https://ctftime.org/event/3096.ics  
+            
+        ??? Quote "[CITEFLAG QUALS 2026](https://ctf.citeflag.online/)"  
+            [![](https://ctftime.org/media/events/logo_white_on_black_rounded.png){ width="200" align=left }](https://ctf.citeflag.online/)  
+            **比赛名称** : [CITEFLAG QUALS 2026](https://ctf.citeflag.online/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-04-04 06:00:00 - 2026-04-05 06:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : CITEFLAG (https://ctftime.org/team/425411)  
+            **添加日历** : https://ctftime.org/event/3175.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)

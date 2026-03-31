@@ -36,3 +36,12 @@ comments: true
     **赛事主办** : NFITS (https://ctftime.org/team/360674)  
     **添加日历** : https://ctftime.org/event/2907.ics  
     
+??? Quote "[Hack for a Change 2026 March: UN SDG 3](https://www.hackforachange.org/)"  
+    [![](https://ctftime.org/media/events/favicon_8_1.png){ width="200" align=left }](https://www.hackforachange.org/)  
+    **比赛名称** : [Hack for a Change 2026 March: UN SDG 3](https://www.hackforachange.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-31 08:00:00 - 2026-04-02 07:59:59 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
+    **添加日历** : https://ctftime.org/event/3184.ics  
+    
