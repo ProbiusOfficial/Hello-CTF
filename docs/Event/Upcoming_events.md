@@ -67,24 +67,6 @@ comments: true
     **赛事主办** : X1cT34m (https://ctftime.org/team/14482)  
     **添加日历** : https://ctftime.org/event/3206.ics  
     
-??? Quote "[BKISC CTF 2026](https://ctf.bkisc.com/)"  
-    [![](https://ctftime.org/media/events/logo_1_1.jpg){ width="200" align=left }](https://ctf.bkisc.com/)  
-    **比赛名称** : [BKISC CTF 2026](https://ctf.bkisc.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-04 10:00:00 - 2026-04-05 10:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : BKISC (https://ctftime.org/team/199510)  
-    **添加日历** : https://ctftime.org/event/2927.ics  
-    
-??? Quote "[Breach CTF 2026](https://breachers.in/)"  
-    [![](https://ctftime.org/media/events/breachctf_logo.png){ width="200" align=left }](https://breachers.in/)  
-    **比赛名称** : [Breach CTF 2026](https://breachers.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-04 10:30:00 - 2026-04-05 10:30:00 UTC+8  
-    **比赛权重** : 23.86  
-    **赛事主办** : IITBreachers (https://ctftime.org/team/165802)  
-    **添加日历** : https://ctftime.org/event/3119.ics  
-    
 ??? Quote "[THE UNI6CTF 1.0](https://uni6ctf.online/)"  
     [![](https://ctftime.org/media/events/uni6ctf_1.0_.jpeg){ width="200" align=left }](https://uni6ctf.online/)  
     **比赛名称** : [THE UNI6CTF 1.0](https://uni6ctf.online/)  
