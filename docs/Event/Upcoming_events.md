@@ -13,6 +13,15 @@ comments: true
 
 ## 国际赛事
 
+??? Quote "[gryphCTF](https://guelphcss.com/links)"  
+    [![](https://ctftime.org/media/events/gryphctf_gryphlife.png){ width="200" align=left }](https://guelphcss.com/links)  
+    **比赛名称** : [gryphCTF](https://guelphcss.com/links)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-03 02:30:00 - 2026-04-03 08:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : GuelphCSS (https://ctftime.org/team/429720)  
+    **添加日历** : https://ctftime.org/event/3227.ics  
+    
 ??? Quote "[VishwaCTF'2026](http://vishwactf.com/)"  
     [![](https://ctftime.org/media/events/VishwaCTF_Logo_1_1_1.png){ width="200" align=left }](http://vishwactf.com/)  
     **比赛名称** : [VishwaCTF'2026](http://vishwactf.com/)  
@@ -57,6 +66,24 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : X1cT34m (https://ctftime.org/team/14482)  
     **添加日历** : https://ctftime.org/event/3206.ics  
+    
+??? Quote "[BKISC CTF 2026](https://ctf.bkisc.com/)"  
+    [![](https://ctftime.org/media/events/logo_1_1.jpg){ width="200" align=left }](https://ctf.bkisc.com/)  
+    **比赛名称** : [BKISC CTF 2026](https://ctf.bkisc.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-04 10:00:00 - 2026-04-05 10:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : BKISC (https://ctftime.org/team/199510)  
+    **添加日历** : https://ctftime.org/event/2927.ics  
+    
+??? Quote "[Breach CTF 2026](https://breachers.in/)"  
+    [![](https://ctftime.org/media/events/breachctf_logo.png){ width="200" align=left }](https://breachers.in/)  
+    **比赛名称** : [Breach CTF 2026](https://breachers.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-04 10:30:00 - 2026-04-05 10:30:00 UTC+8  
+    **比赛权重** : 23.86  
+    **赛事主办** : IITBreachers (https://ctftime.org/team/165802)  
+    **添加日历** : https://ctftime.org/event/3119.ics  
     
 ??? Quote "[THE UNI6CTF 1.0](https://uni6ctf.online/)"  
     [![](https://ctftime.org/media/events/uni6ctf_1.0_.jpeg){ width="200" align=left }](https://uni6ctf.online/)  
@@ -156,6 +183,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : PUTrequest_ (https://ctftime.org/team/196643)  
     **添加日历** : https://ctftime.org/event/3202.ics  
+    
+??? Quote "[Incognito 7.0](https://incognito.axiosiiitl.dev/)"  
+    [![](https://ctftime.org/media/events/Pasted_image_6.png){ width="200" align=left }](https://incognito.axiosiiitl.dev/)  
+    **比赛名称** : [Incognito 7.0](https://incognito.axiosiiitl.dev/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-14 08:00:00 - 2026-04-15 08:00:00 UTC+8  
+    **比赛权重** : 16.56  
+    **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
+    **添加日历** : https://ctftime.org/event/3225.ics  
     
 ??? Quote "[MCTF 5.0](https://mctf.microclub.info/)"  
     [![](https://ctftime.org/media/events/logo_3d_version_2.png){ width="200" align=left }](https://mctf.microclub.info/)  

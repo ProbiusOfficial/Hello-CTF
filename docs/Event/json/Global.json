@@ -1,5 +1,17 @@
 [
     {
+        "比赛名称": "gryphCTF",
+        "比赛时间": "2026-04-03 02:30:00 - 2026-04-03 08:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3227.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://guelphcss.com/links",
+        "比赛标志": "https://ctftime.org/media/events/gryphctf_gryphlife.png",
+        "比赛权重": "0",
+        "赛事主办": "GuelphCSS (https://ctftime.org/team/429720)",
+        "比赛ID": "1561",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "VishwaCTF'2026",
         "比赛时间": "2026-04-03 17:30:00 - 2026-04-05 17:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3197.ics",
@@ -57,6 +69,30 @@
         "比赛权重": "0.00",
         "赛事主办": "X1cT34m (https://ctftime.org/team/14482)",
         "比赛ID": "1545",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "BKISC CTF 2026",
+        "比赛时间": "2026-04-04 10:00:00 - 2026-04-05 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2927.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bkisc.com/",
+        "比赛标志": "https://ctftime.org/media/events/logo_1_1.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "BKISC (https://ctftime.org/team/199510)",
+        "比赛ID": "1390",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Breach CTF 2026",
+        "比赛时间": "2026-04-04 10:30:00 - 2026-04-05 10:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3119.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://breachers.in/",
+        "比赛标志": "https://ctftime.org/media/events/breachctf_logo.png",
+        "比赛权重": "23.86",
+        "赛事主办": "IITBreachers (https://ctftime.org/team/165802)",
+        "比赛ID": "1098",
         "比赛状态": "oncoming"
     },
     {
@@ -189,6 +225,18 @@
         "比赛权重": "0.00",
         "赛事主办": "PUTrequest_ (https://ctftime.org/team/196643)",
         "比赛ID": "1542",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Incognito 7.0",
+        "比赛时间": "2026-04-14 08:00:00 - 2026-04-15 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3225.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://incognito.axiosiiitl.dev/",
+        "比赛标志": "https://ctftime.org/media/events/Pasted_image_6.png",
+        "比赛权重": "16.56",
+        "赛事主办": "Byt3Scr4pp3rs (https://ctftime.org/team/57772)",
+        "比赛ID": "413",
         "比赛状态": "oncoming"
     },
     {
