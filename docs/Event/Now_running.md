@@ -36,3 +36,12 @@ comments: true
     **赛事主办** : NFITS (https://ctftime.org/team/360674)  
     **添加日历** : https://ctftime.org/event/2907.ics  
     
+??? Quote "[gryphCTF](https://guelphcss.com/links)"  
+    [![](https://ctftime.org/media/events/gryphctf_gryphlife.png){ width="200" align=left }](https://guelphcss.com/links)  
+    **比赛名称** : [gryphCTF](https://guelphcss.com/links)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-03 02:30:00 - 2026-04-03 08:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : GuelphCSS (https://ctftime.org/team/429720)  
+    **添加日历** : https://ctftime.org/event/3227.ics  
+    

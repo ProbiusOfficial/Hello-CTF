@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "gryphCTF",
-        "比赛时间": "2026-04-03 02:30:00 - 2026-04-03 08:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3227.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://guelphcss.com/links",
-        "比赛标志": "https://ctftime.org/media/events/gryphctf_gryphlife.png",
-        "比赛权重": "0",
-        "赛事主办": "GuelphCSS (https://ctftime.org/team/429720)",
-        "比赛ID": "1561",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "VishwaCTF'2026",
         "比赛时间": "2026-04-03 17:30:00 - 2026-04-05 17:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3197.ics",
@@ -885,6 +873,18 @@
         "比赛权重": "0",
         "赛事主办": "NFITS (https://ctftime.org/team/360674)",
         "比赛ID": "1200",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "gryphCTF",
+        "比赛时间": "2026-04-03 02:30:00 - 2026-04-03 08:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3227.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://guelphcss.com/links",
+        "比赛标志": "https://ctftime.org/media/events/gryphctf_gryphlife.png",
+        "比赛权重": "0",
+        "赛事主办": "GuelphCSS (https://ctftime.org/team/429720)",
+        "比赛ID": "1561",
         "比赛状态": "nowrunning"
     },
     {
