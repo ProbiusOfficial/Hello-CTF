@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [通过RouterOS建立WireGuard内网隧道](https://blog.zgsec.cn/archives/RouterOS-WireGuard.html)  
+    >by [曾哥](https://blog.zgsec.cn/), 2026-03-31
+
+    0# 概述在近期的实战渗透过程中，当我通过历史密码泄露或者爆破成功进入RouterOS系统后台后，应该如何搭建隧道进入目标内网，就成为了实际渗透过程中的问题。RouterOS是一种路由操作系统，是基于Linux核心开发，兼容x86 PC的路由软件，通过该软件可以把标准PC电脑变成专业路由器，RouterOS软件的开发和应用不断的更新和发展，软件经历了多次更新和改进，其功能在不断增强和完善。特别在无...
     ### [某FPS游戏反作弊分析](https://xia0ji233.github.io/2026/03/05/Game7/)  
     >by [xia0ji233](https://xia0ji233.pro/), 2026-03-05
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2025-07-08
 
     69b1ac3a8c7b27f3f5f24b3b8a7400bd6b1e48e4e4a74e3a9d5b0d94adacfef139866dca5f9c0752a208c27b415054195b8c9b09fcf4ba840127a35d6fbe535eecd06f6e3687d07dd41c43e8c9e03d37b2fa2fd462518b848ba4ce55dbd50da8160a3b...
-    ### [契约锁最新前台命令执行及花式绕WAF思路](https://y4tacker.github.io/2025/07/02/year/2025/07/%E5%A5%91%E7%BA%A6%E9%94%81%E6%9C%80%E6%96%B0%E5%89%8D%E5%8F%B0%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E5%8F%8A%E8%8A%B1%E5%BC%8F%E7%BB%95WAF%E6%80%9D%E8%B7%AF/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2025-07-02
-
-    d5bbf63b983168fb9cf0422698dce164b3b689fc252cba3faf3c75a652cdd7c0542690352b3ccfd95568bcdfd22e06b269ecaac13fedf5ec80edcfabe636ba58c0bd7707365d4cb09a79587d7876384f00fb8b2d3df17b696f7eefba94b5c2d66b93ca...
 
 </div>
