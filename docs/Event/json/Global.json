@@ -921,7 +921,7 @@
         "比赛权重": "0",
         "赛事主办": "Hack for a Change (https://ctftime.org/team/419248)",
         "比赛ID": "1492",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "GLOBAL CYBER GAMES: Women's Attack and Defense Edition @Wicked6",
@@ -2109,18 +2109,6 @@
         "比赛权重": "0",
         "赛事主办": "vianu_hack (https://ctftime.org/team/379530)",
         "比赛ID": "1458",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Cybercoliseum IV",
-        "比赛时间": "2025-12-13 15:00:00 - 2025-12-14 15:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3019.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cybercoliseum.hackerlab.pro/en",
-        "比赛标志": "https://ctftime.org/media/events/cybercoliseum.png",
-        "比赛权重": "0.00",
-        "赛事主办": "HackerLab (https://ctftime.org/team/299486)",
-        "比赛ID": "923",
         "比赛状态": "past"
     }
 ]

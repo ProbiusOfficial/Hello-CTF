@@ -1185,15 +1185,6 @@ hide:
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2907.ics  
                 
-            ??? Quote "[Hack for a Change 2026 March: UN SDG 3](https://www.hackforachange.org/)"  
-                [![](https://ctftime.org/media/events/favicon_8_1.png){ width="200" align=left }](https://www.hackforachange.org/)  
-                **比赛名称** : [Hack for a Change 2026 March: UN SDG 3](https://www.hackforachange.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-31 08:00:00 - 2026-04-02 07:59:59 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
-                **添加日历** : https://ctftime.org/event/3184.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[PolarisCTF 2026](https://www.ctfplus.cn/competition/hall)"  
@@ -1207,6 +1198,15 @@ hide:
                 **比赛详细** : QQ群：713192205；比赛平台/报名地址：https://www.qsnctf.com/#/login。报名时间：2026年03月23日15:00-2026年03月28日09:59。每月比赛时间为月末最后一个周六上午10:00，报名时间为开始前两天。题目范围：综合靶场、Windows独立靶场、Linux独立靶场、日志审计、数据库、逆向分析、流量分析。  
                 
         === "国外赛事"
+            ??? Quote "[Hack for a Change 2026 March: UN SDG 3](https://www.hackforachange.org/)"  
+                [![](https://ctftime.org/media/events/favicon_8_1.png){ width="200" align=left }](https://www.hackforachange.org/)  
+                **比赛名称** : [Hack for a Change 2026 March: UN SDG 3](https://www.hackforachange.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-03-31 08:00:00 - 2026-04-02 07:59:59 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
+                **添加日历** : https://ctftime.org/event/3184.ics  
+                
             ??? Quote "[GLOBAL CYBER GAMES: Women's Attack and Defense Edition @Wicked6](https://www.wicked6.com/tournament)"  
                 [![](){ width="200" align=left }](https://www.wicked6.com/tournament)  
                 **比赛名称** : [GLOBAL CYBER GAMES: Women's Attack and Defense Edition @Wicked6](https://www.wicked6.com/tournament)  
@@ -2097,15 +2097,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : vianu_hack (https://ctftime.org/team/379530)  
                 **添加日历** : https://ctftime.org/event/3032.ics  
-                
-            ??? Quote "[Cybercoliseum IV](https://cybercoliseum.hackerlab.pro/en)"  
-                [![](https://ctftime.org/media/events/cybercoliseum.png){ width="200" align=left }](https://cybercoliseum.hackerlab.pro/en)  
-                **比赛名称** : [Cybercoliseum IV](https://cybercoliseum.hackerlab.pro/en)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-12-13 15:00:00 - 2025-12-14 15:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : HackerLab (https://ctftime.org/team/299486)  
-                **添加日历** : https://ctftime.org/event/3019.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
