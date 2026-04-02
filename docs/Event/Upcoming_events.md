@@ -175,15 +175,6 @@ comments: true
     **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
     **添加日历** : https://ctftime.org/event/3225.ics  
     
-??? Quote "[MCTF 5.0](https://mctf.microclub.info/)"  
-    [![](https://ctftime.org/media/events/logo_3d_version_2.png){ width="200" align=left }](https://mctf.microclub.info/)  
-    **比赛名称** : [MCTF 5.0](https://mctf.microclub.info/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-17 03:00:00 - 2026-04-18 15:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Micro Club (https://ctftime.org/team/425393)  
-    **添加日历** : https://ctftime.org/event/3168.ics  
-    
 ??? Quote "[CPCTF 2026](https://cpctf.space/)"  
     [![](https://ctftime.org/media/events/cpctf_logo_1_1.png){ width="200" align=left }](https://cpctf.space/)  
     **比赛名称** : [CPCTF 2026](https://cpctf.space/)  
