@@ -1158,15 +1158,6 @@ hide:
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2907.ics  
                 
-            ??? Quote "[gryphCTF](https://guelphcss.com/links)"  
-                [![](https://ctftime.org/media/events/gryphctf_gryphlife.png){ width="200" align=left }](https://guelphcss.com/links)  
-                **比赛名称** : [gryphCTF](https://guelphcss.com/links)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-04-03 02:30:00 - 2026-04-03 08:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : GuelphCSS (https://ctftime.org/team/429720)  
-                **添加日历** : https://ctftime.org/event/3227.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[PolarisCTF 2026](https://www.ctfplus.cn/competition/hall)"  
@@ -1180,6 +1171,15 @@ hide:
                 **比赛详细** : QQ群：713192205；比赛平台/报名地址：https://www.qsnctf.com/#/login。报名时间：2026年03月23日15:00-2026年03月28日09:59。每月比赛时间为月末最后一个周六上午10:00，报名时间为开始前两天。题目范围：综合靶场、Windows独立靶场、Linux独立靶场、日志审计、数据库、逆向分析、流量分析。  
                 
         === "国外赛事"
+            ??? Quote "[gryphCTF](https://guelphcss.com/links)"  
+                [![](https://ctftime.org/media/events/gryphctf_gryphlife.png){ width="200" align=left }](https://guelphcss.com/links)  
+                **比赛名称** : [gryphCTF](https://guelphcss.com/links)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-04-03 02:30:00 - 2026-04-03 08:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : GuelphCSS (https://ctftime.org/team/429720)  
+                **添加日历** : https://ctftime.org/event/3227.ics  
+                
             ??? Quote "[Hack for a Change 2026 March: UN SDG 3](https://www.hackforachange.org/)"  
                 [![](https://ctftime.org/media/events/favicon_8_1.png){ width="200" align=left }](https://www.hackforachange.org/)  
                 **比赛名称** : [Hack for a Change 2026 March: UN SDG 3](https://www.hackforachange.org/)  
@@ -2070,15 +2070,6 @@ hide:
                 **比赛权重** : 22.90  
                 **赛事主办** : noreply (https://ctftime.org/team/210760)  
                 **添加日历** : https://ctftime.org/event/2962.ics  
-                
-            ??? Quote "[SecurITy Challenge - VianuCTF 2025](https://vianuhack.club/)"  
-                [![](https://ctftime.org/media/events/1e25f32d-068f-4ad2-9b7d-a750fa82b97d.jpeg){ width="200" align=left }](https://vianuhack.club/)  
-                **比赛名称** : [SecurITy Challenge - VianuCTF 2025](https://vianuhack.club/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-12-16 15:30:00 - 2025-12-16 22:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : vianu_hack (https://ctftime.org/team/379530)  
-                **添加日历** : https://ctftime.org/event/3032.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
