@@ -17,6 +17,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[gryphCTF](https://guelphcss.com/links)"  
+    [![](https://ctftime.org/media/events/gryphctf_gryphlife.png){ width="200" align=left }](https://guelphcss.com/links)  
+    **比赛名称** : [gryphCTF](https://guelphcss.com/links)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-03 02:30:00 - 2026-04-03 08:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : GuelphCSS (https://ctftime.org/team/429720)  
+    **添加日历** : https://ctftime.org/event/3227.ics  
+    
 ??? Quote "[Hack for a Change 2026 March: UN SDG 3](https://www.hackforachange.org/)"  
     [![](https://ctftime.org/media/events/favicon_8_1.png){ width="200" align=left }](https://www.hackforachange.org/)  
     **比赛名称** : [Hack for a Change 2026 March: UN SDG 3](https://www.hackforachange.org/)  
@@ -907,13 +916,4 @@ comments: true
     **比赛权重** : 22.90  
     **赛事主办** : noreply (https://ctftime.org/team/210760)  
     **添加日历** : https://ctftime.org/event/2962.ics  
-    
-??? Quote "[SecurITy Challenge - VianuCTF 2025](https://vianuhack.club/)"  
-    [![](https://ctftime.org/media/events/1e25f32d-068f-4ad2-9b7d-a750fa82b97d.jpeg){ width="200" align=left }](https://vianuhack.club/)  
-    **比赛名称** : [SecurITy Challenge - VianuCTF 2025](https://vianuhack.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-12-16 15:30:00 - 2025-12-16 22:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : vianu_hack (https://ctftime.org/team/379530)  
-    **添加日历** : https://ctftime.org/event/3032.ics  
     
