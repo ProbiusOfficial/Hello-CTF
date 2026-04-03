@@ -36,30 +36,21 @@ comments: true
     **赛事主办** : NFITS (https://ctftime.org/team/360674)  
     **添加日历** : https://ctftime.org/event/2907.ics  
     
-??? Quote "[Espilon CTF 2026](https://ctf.espilon.net/)"  
-    [![](){ width="200" align=left }](https://ctf.espilon.net/)  
-    **比赛名称** : [Espilon CTF 2026](https://ctf.espilon.net/)  
+??? Quote "[VishwaCTF'2026](http://vishwactf.com/)"  
+    [![](https://ctftime.org/media/events/VishwaCTF_Logo_1_1_1.png){ width="200" align=left }](http://vishwactf.com/)  
+    **比赛名称** : [VishwaCTF'2026](http://vishwactf.com/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-11 20:00:00 - 2026-03-26 08:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Espilon (https://ctftime.org/team/423394)  
-    **添加日历** : https://ctftime.org/event/3179.ics  
+    **比赛时间** : 2026-04-03 17:30:00 - 2026-04-05 17:30:00 UTC+8  
+    **比赛权重** : 36.00  
+    **赛事主办** : CyberCellVIIT (https://ctftime.org/team/144677)  
+    **添加日历** : https://ctftime.org/event/3197.ics  
     
-??? Quote "[TAMUctf 2026](https://tamuctf.com/)"  
-    [![](https://ctftime.org/media/events/TAMUctf-logo.png){ width="200" align=left }](https://tamuctf.com/)  
-    **比赛名称** : [TAMUctf 2026](https://tamuctf.com/)  
+??? Quote "[Kashi CTF 2026](https://kashictf.iitbhucybersec.in/)"  
+    [![](https://ctftime.org/media/events/kashi-ctf-logo.png){ width="200" align=left }](https://kashictf.iitbhucybersec.in/)  
+    **比赛名称** : [Kashi CTF 2026](https://kashictf.iitbhucybersec.in/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-21 06:00:00 - 2026-03-23 06:00:00 UTC+8  
-    **比赛权重** : 76.22  
-    **赛事主办** : TAMUctf (https://ctftime.org/team/37721)  
-    **添加日历** : https://ctftime.org/event/3095.ics  
-    
-??? Quote "[BSidesSF CTF 2026](https://ctf.bsidessf.net/)"  
-    [![](https://ctftime.org/media/events/bsides_logo_short.png){ width="200" align=left }](https://ctf.bsidessf.net/)  
-    **比赛名称** : [BSidesSF CTF 2026](https://ctf.bsidessf.net/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-21 07:00:00 - 2026-03-23 07:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : BSidesSF (https://ctftime.org/team/54737)  
-    **添加日历** : https://ctftime.org/event/3108.ics  
+    **比赛时间** : 2026-04-03 20:00:00 - 2026-04-04 20:00:00 UTC+8  
+    **比赛权重** : 21.78  
+    **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
+    **添加日历** : https://ctftime.org/event/3150.ics  
     
