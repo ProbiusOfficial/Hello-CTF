@@ -1,29 +1,5 @@
 [
     {
-        "比赛名称": "RITSEC CTF 2026",
-        "比赛时间": "2026-04-04 05:00:00 - 2026-04-06 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3096.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfd.ritsec.club/",
-        "比赛标志": "https://ctftime.org/media/events/ritsec_ctf_2026_TP.png",
-        "比赛权重": "48.64",
-        "赛事主办": "Contagion (https://ctftime.org/team/152691)",
-        "比赛ID": "170",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "CITEFLAG QUALS 2026",
-        "比赛时间": "2026-04-04 06:00:00 - 2026-04-05 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3175.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.citeflag.online/",
-        "比赛标志": "https://ctftime.org/media/events/logo_white_on_black_rounded.png",
-        "比赛权重": "0.00",
-        "赛事主办": "CITEFLAG (https://ctftime.org/team/425411)",
-        "比赛ID": "1522",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "NCTF 2026",
         "比赛时间": "2026-04-04 09:00:00 - 2026-04-05 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3206.ics",
@@ -873,6 +849,30 @@
         "比赛权重": "21.78",
         "赛事主办": "IIT(BHU)CyberSec (https://ctftime.org/team/22546)",
         "比赛ID": "1251",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "RITSEC CTF 2026",
+        "比赛时间": "2026-04-04 05:00:00 - 2026-04-06 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3096.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctfd.ritsec.club/",
+        "比赛标志": "https://ctftime.org/media/events/ritsec_ctf_2026_TP.png",
+        "比赛权重": "48.64",
+        "赛事主办": "Contagion (https://ctftime.org/team/152691)",
+        "比赛ID": "170",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CITEFLAG QUALS 2026",
+        "比赛时间": "2026-04-04 06:00:00 - 2026-04-05 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3175.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.citeflag.online/",
+        "比赛标志": "https://ctftime.org/media/events/logo_white_on_black_rounded.png",
+        "比赛权重": "0",
+        "赛事主办": "CITEFLAG (https://ctftime.org/team/425411)",
+        "比赛ID": "1522",
         "比赛状态": "nowrunning"
     },
     {
