@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh" class="scroll-smooth">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello CTF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTF/main/docs/assets/images/favicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -44,6 +46,8 @@
         .grid-background {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             pointer-events: none; z-index: -20;
+            transform: translateZ(0);
+            backface-visibility: hidden;
             background-image:
                 linear-gradient(to right, rgba(59, 130, 246, 0.05) 1px, transparent 1px),
                 linear-gradient(to bottom, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
@@ -55,6 +59,15 @@
                 linear-gradient(to bottom, rgba(99, 102, 241, 0.05) 1px, transparent 1px);
         }
         #home-calendar { font-size: 0.75rem; margin: 0; }
+        #dynamicText {
+            contain: layout;
+            transform: translateZ(0);
+        }
+        #themeToggle {
+            contain: layout;
+            isolation: isolate;
+            transform: translate3d(0, 0, 0);
+        }
         /* 工具栏：与首页圆角按钮、渐变主操作统一 */
         #home-calendar .fc-header-toolbar {
             gap: 0.75rem 1rem;
@@ -272,6 +285,9 @@
             border: 1px solid rgba(226, 232, 240, 0.85);
             background: rgba(255, 255, 255, 0.78);
             box-shadow: 0 1px 2px rgba(59, 130, 246, 0.04), 0 8px 24px -4px rgba(15, 23, 42, 0.06);
+            contain: layout;
+            isolation: isolate;
+            transform: translate3d(0, 0, 0);
         }
         .dark .card-surface {
             border-color: rgba(51, 65, 85, 0.65);
@@ -319,7 +335,7 @@
                 </div>
 
                 <div class="grid grid-cols-2 gap-3">
-                    <button type="button" onclick="showIntro()" class="group relative flex items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-primary via-blue-600 to-indigo-600 px-3 py-3.5 text-sm font-semibold text-white shadow-lg shadow-primary/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/40 active:translate-y-0 active:scale-[0.98] dark:from-blue-500 dark:via-indigo-500 dark:to-indigo-600">新手引导</button>
+                    <a href="./intro.html" class="group relative flex items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-primary via-blue-600 to-indigo-600 px-3 py-3.5 text-sm font-semibold text-white shadow-lg shadow-primary/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/40 active:translate-y-0 active:scale-[0.98] dark:from-blue-500 dark:via-indigo-500 dark:to-indigo-600">新手引导</a>
                     <a href="./home/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center rounded-2xl border-2 border-primary/35 bg-white/80 px-3 py-3.5 text-sm font-semibold text-primary shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:bg-primary/[0.07] hover:shadow-md active:translate-y-0 dark:border-accent/45 dark:bg-base-900/45 dark:text-accent dark:hover:border-accent/70 dark:hover:bg-accent/10">开始阅读</a>
                     <a href="https://space.bilibili.com/27109929" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center rounded-2xl border border-base-200/90 bg-white/60 px-3 py-3.5 text-sm font-medium text-base-900/90 shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/45 hover:bg-white hover:shadow-md active:translate-y-0 dark:border-base-600/70 dark:bg-base-900/40 dark:text-white/90 dark:hover:border-accent/50 dark:hover:bg-base-800/80">BiliBili</a>
                     <a href="https://platform.cyclens.tech/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center rounded-2xl border border-base-200/90 bg-white/60 px-3 py-3.5 text-sm font-medium text-base-900/90 shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/45 hover:bg-white hover:shadow-md active:translate-y-0 dark:border-base-600/70 dark:bg-base-900/40 dark:text-white/90 dark:hover:border-accent/50 dark:hover:bg-base-800/80">循镜靶场</a>
@@ -403,7 +419,7 @@
                 </div>
                 <div class="mt-12 pt-8 border-t border-base-100 dark:border-base-900 flex flex-col md:flex-row items-center justify-between gap-6">
                     <div class="flex items-center">
-                        <img src="https://github.com/ProbiusOfficial.png" alt="探姬" class="w-10 h-10 rounded-full mr-3 border border-primary dark:border-accent" width="40" height="40">
+                        <img src="https://github.com/ProbiusOfficial.png" alt="探姬" class="w-10 h-10 rounded-full mr-3 border border-primary dark:border-accent" width="40" height="40" loading="lazy" decoding="async">
                         <div>
                             <h3 class="font-medium">探姬</h3>
                             <div class="flex space-x-3 mt-1">
@@ -423,75 +439,6 @@
             </div>
         </footer>
     </main>
-
-    <!-- CTF介绍模态框 -->
-    <div id="ctfIntro" class="fixed inset-0 z-50 flex items-center justify-center hidden">
-        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="closeIntro()"></div>
-        <div class="relative bg-white dark:bg-base-900 rounded-xl shadow-2xl w-full max-w-2xl m-4 overflow-hidden">
-            <button type="button" onclick="closeIntro()" class="absolute top-4 right-4 p-1 rounded-full hover:bg-base-100 dark:hover:bg-base-800 transition-colors" aria-label="关闭">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-base-900/60 dark:text-white/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-            <div class="p-8">
-                <h2 class="text-3xl font-bold mb-8 text-primary dark:text-accent font-mono">什么是CTF？</h2>
-                <div class="space-y-6">
-                    <p class="text-base-900/80 dark:text-white/80 intro-p" style="opacity:0; transform: translateY(20px);">
-                        <span class="font-medium text-primary dark:text-accent">CTF（Capture The Flag）</span>中文一般译作夺旗赛，在网络安全领域中指的是网络安全技术人员之间进行技术竞技的一种比赛形式。
-                    </p>
-                    <p class="text-base-900/80 dark:text-white/80 intro-p" style="opacity:0; transform: translateY(20px);">
-                        参赛选手通过完成攻击、分析，解密等各类操作，率先从题目给出的沙箱环境或文件样本中得到一串具有一定格式的字符串或其他内容，并将其提交给平台，从而夺得分数。
-                    </p>
-                    <p class="text-base-900/80 dark:text-white/80 intro-p" style="opacity:0; transform: translateY(20px);">
-                        为了方便称呼，我们把这样的内容称之为"<span class="font-medium text-primary dark:text-accent">Flag</span>"。Flag的一般格式是一个统一的开头名称加上大括号内容，例如
-                        <code class="bg-base-50 dark:bg-base-900 px-2 py-1 rounded text-primary dark:text-accent font-mono">flag{hello_world}</code>
-                        或者
-                        <code class="bg-base-50 dark:bg-base-900 px-2 py-1 rounded text-primary dark:text-accent font-mono">helloctf{we1c0me!}</code>。
-                    </p>
-                </div>
-                <div class="mt-10 flex justify-end">
-                    <button type="button" onclick="showChallenge()" class="px-6 py-2 rounded-lg bg-primary hover:bg-primary-dark dark:bg-accent dark:hover:bg-accent-dark text-white font-medium transition-all">继续</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="flagChallenge" class="fixed inset-0 z-50 flex items-center justify-center hidden">
-        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="closeChallenge()"></div>
-        <div class="relative bg-white dark:bg-base-900 rounded-xl shadow-2xl w-full max-w-md m-4 p-8">
-            <button type="button" onclick="closeChallenge()" class="absolute top-4 right-4 p-1 rounded-full hover:bg-base-100 dark:hover:bg-base-800 transition-colors" aria-label="关闭">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-base-900/60 dark:text-white/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-            <div class="text-center">
-                <img src="logo.png" alt="Challenge Image" id="challengeImage" data-flag="helloctf{y0u_find_it!!}" class="mx-auto w-32 h-32 rounded-lg shadow-md transition-all hover:-translate-y-1 mb-6" width="128" height="128">
-                <h2 class="text-xl font-bold mb-4 font-mono text-gradient">让我们尝试找到第一个flag</h2>
-                <p class="text-base-900/70 dark:text-white/70 mb-6 text-sm">提示：使用开发者工具(不出意外大概是F12?)选中图片，你会发现一个隐藏的flag</p>
-                <input type="text" id="flagInput" placeholder="输入flag" autocomplete="off" class="w-full px-4 py-2 rounded-lg bg-base-50 dark:bg-base-900 border border-base-100 dark:border-base-800 focus:border-primary dark:focus:border-accent focus:ring-0 focus:outline-none mb-3">
-                <p id="flagResult" class="h-6 text-red-500 dark:text-red-400 text-sm mb-4"></p>
-                <button type="button" onclick="checkFlag()" class="w-full py-2 rounded-lg bg-primary hover:bg-primary-dark dark:bg-accent dark:hover:bg-accent-dark text-white font-medium transition-all">提交</button>
-            </div>
-        </div>
-    </div>
-
-    <div id="successMessage" class="fixed inset-0 z-50 flex items-center justify-center hidden">
-        <div class="absolute inset-0 bg-black/70 backdrop-blur-md"></div>
-        <div class="relative bg-white dark:bg-base-900 rounded-xl shadow-2xl w-full max-w-lg m-4 p-8">
-            <h2 class="text-2xl font-bold mb-6 text-center text-green-500 dark:text-green-400">恭喜得分！</h2>
-            <div class="space-y-3 text-base-900/80 dark:text-white/80 mb-8">
-                <p class="font-medium">解出第一道赛题是一个非常重要的里程碑！🎉</p>
-                <p>你已经迈出了第一步，无论这道题多么简单，它都代表了你在网络安全和CTF领域的启程。</p>
-                <p>记住，CTF不仅仅是技术的挑战，更是解决问题和不断进步的过程。每次突破都让你离目标更近一点。</p>
-                <p>永远保持好奇心和学习的热情，你会不断遇到更多的挑战，也会积累越来越多的经验。</p>
-                <p class="font-medium text-gradient">继续加油，未来无限可能！✨</p>
-            </div>
-            <div class="flex gap-4 justify-center">
-                <button type="button" onclick="goHome()" class="px-5 py-2 rounded-lg border border-base-200 dark:border-base-800 bg-base-50 dark:bg-base-900 text-base-900 dark:text-white hover:bg-base-100 dark:hover:bg-base-800 transition-colors">返回主页</button>
-                <button type="button" onclick="continueLearning()" class="px-5 py-2 rounded-lg bg-primary hover:bg-primary-dark dark:bg-accent dark:hover:bg-accent-dark text-white transition-colors">继续学习</button>
-            </div>
-        </div>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.9/dist/purify.min.js"></script>
@@ -582,6 +529,7 @@
             homeCalendar = new FullCalendar.Calendar(calendarEl, {
                 height: 'auto',
                 locale: 'zh',
+                windowResizeDelay: 150,
                 /* 标准包无有效 dark 主题，暗黑样式由上方 CSS 变量覆盖实现 */
                 themeSystem: 'standard',
                 buttonText: {
@@ -639,29 +587,42 @@
                 }
                 cancelAnimationFrame(this.frameRequest);
                 this.frame = 0;
+                this._lastHtml = '';
                 this.update();
                 return promise;
             }
             update() {
-                let output = '';
+                if (document.hidden) {
+                    this.frameRequest = requestAnimationFrame(this.update);
+                    return;
+                }
+                const parts = [];
                 let complete = 0;
-                for (let i = 0, n = this.queue.length; i < n; i++) {
-                    let { from, to, start, end, char } = this.queue[i];
-                    if (this.frame >= end) {
+                const q = this.queue;
+                const n = q.length;
+                const frame = this.frame;
+                for (let i = 0; i < n; i++) {
+                    const item = q[i];
+                    let { from, to, start, end, char } = item;
+                    if (frame >= end) {
                         complete++;
-                        output += to;
-                    } else if (this.frame >= start) {
+                        parts.push(to);
+                    } else if (frame >= start) {
                         if (!char || Math.random() < 0.28) {
                             char = this.randomChar();
-                            this.queue[i].char = char;
+                            item.char = char;
                         }
-                        output += `<span class="scramble-char">${char}</span>`;
+                        parts.push(`<span class="scramble-char">${char}</span>`);
                     } else {
-                        output += from;
+                        parts.push(from);
                     }
                 }
-                this.el.innerHTML = output;
-                if (complete === this.queue.length) {
+                const output = parts.join('');
+                if (output !== this._lastHtml) {
+                    this.el.innerHTML = output;
+                    this._lastHtml = output;
+                }
+                if (complete === n) {
                     this.resolve();
                 } else {
                     this.frameRequest = requestAnimationFrame(this.update);
@@ -699,25 +660,50 @@
 
         function initStatCounters() {
             const counterElements = document.querySelectorAll('.counter');
-            function animateCounter(el, target, duration = 2000) {
-                let current = 0;
-                const increment = (target / duration) * 16;
-                function animate() {
-                    current += increment;
-                    el.textContent = Math.min(Math.floor(current), target) + '+';
-                    if (current < target) requestAnimationFrame(animate);
-                }
-                animate();
-            }
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        const target = entry.target.getAttribute('data-target');
-                        animateCounter(entry.target, parseInt(target, 10));
-                        observer.unobserve(entry.target);
+            const state = new Map();
+            let rafId = 0;
+
+            function tick() {
+                let active = false;
+                for (const [el, s] of state) {
+                    s.current += s.increment;
+                    if (s.current >= s.target) {
+                        el.textContent = s.target + '+';
+                        state.delete(el);
+                    } else {
+                        el.textContent = Math.floor(s.current) + '+';
+                        active = true;
                     }
-                });
-            });
+                }
+                if (active) {
+                    rafId = requestAnimationFrame(tick);
+                } else {
+                    rafId = 0;
+                }
+            }
+
+            function startIfNeeded() {
+                if (!rafId) rafId = requestAnimationFrame(tick);
+            }
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            const target = parseInt(entry.target.getAttribute('data-target'), 10);
+                            const duration = 2000;
+                            state.set(entry.target, {
+                                target,
+                                current: 0,
+                                increment: (target / duration) * 16,
+                            });
+                            observer.unobserve(entry.target);
+                            startIfNeeded();
+                        }
+                    });
+                },
+                { rootMargin: '48px 0px', threshold: 0 }
+            );
             counterElements.forEach((c) => observer.observe(c));
         }
 
@@ -727,67 +713,6 @@
             initHeroText();
             initStatCounters();
         });
-
-        function showIntro() {
-            document.getElementById('ctfIntro').classList.remove('hidden');
-            document.querySelectorAll('.intro-p').forEach((p, index) => {
-                setTimeout(() => {
-                    p.style.opacity = '1';
-                    p.style.transform = 'translateY(0)';
-                    p.style.transition = 'all 0.5s ease-out';
-                }, 300 + index * 200);
-            });
-        }
-
-        function closeIntro() {
-            document.getElementById('ctfIntro').classList.add('hidden');
-            document.querySelectorAll('.intro-p').forEach((p) => {
-                p.style.opacity = '0';
-                p.style.transform = 'translateY(20px)';
-                p.style.transition = 'none';
-            });
-        }
-
-        function showChallenge() {
-            document.getElementById('ctfIntro').classList.add('hidden');
-            document.getElementById('flagChallenge').classList.remove('hidden');
-        }
-
-        function closeChallenge() {
-            document.getElementById('flagChallenge').classList.add('hidden');
-        }
-
-        function checkFlag() {
-            const flagInput = document.getElementById('flagInput');
-            const flagResult = document.getElementById('flagResult');
-            const flag = flagInput.value.trim();
-            const correctFlag = document.getElementById('challengeImage').getAttribute('data-flag');
-            if (flag === correctFlag) {
-                flagResult.textContent = '✓ 正确!';
-                flagResult.classList.remove('text-red-500', 'dark:text-red-400');
-                flagResult.classList.add('text-green-500', 'dark:text-green-400');
-                setTimeout(() => {
-                    document.getElementById('flagChallenge').classList.add('hidden');
-                    document.getElementById('successMessage').classList.remove('hidden');
-                }, 1000);
-            } else {
-                flagResult.textContent = '再思考一下...';
-                flagResult.classList.add('text-red-500', 'dark:text-red-400');
-                flagResult.classList.remove('text-green-500', 'dark:text-green-400');
-                flagInput.animate(
-                    [{ transform: 'translateX(-5px)' }, { transform: 'translateX(5px)' }, { transform: 'translateX(-5px)' }, { transform: 'translateX(5px)' }, { transform: 'translateX(0)' }],
-                    { duration: 300, easing: 'ease-in-out' }
-                );
-            }
-        }
-
-        function goHome() {
-            window.location.href = './';
-        }
-
-        function continueLearning() {
-            window.location.href = './hc-start/';
-        }
     </script>
 </body>
 </html>
