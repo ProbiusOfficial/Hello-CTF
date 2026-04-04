@@ -497,15 +497,6 @@ hide:
                 **比赛详细** : 筹备中  
                 
         === "国外赛事"
-            ??? Quote "[CRACK-IN 2.0](https://www.crackin.tech/)"  
-                [![](https://ctftime.org/media/events/logoo_1.png){ width="200" align=left }](https://www.crackin.tech/)  
-                **比赛名称** : [CRACK-IN 2.0](https://www.crackin.tech/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-04-04 12:30:00 - 2026-04-04 18:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Cyber Hive (https://ctftime.org/team/428945)  
-                **添加日历** : https://ctftime.org/event/3212.ics  
-                
             ??? Quote "[SillyCTF 2](https://sillyctf.psuccso.org/)"  
                 [![](https://ctftime.org/media/events/SillyCTF2logo.png){ width="200" align=left }](https://sillyctf.psuccso.org/)  
                 **比赛名称** : [SillyCTF 2](https://sillyctf.psuccso.org/)  
@@ -1157,6 +1148,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : IN-0x0 (https://ctftime.org/team/423353)  
                 **添加日历** : https://ctftime.org/event/3226.ics  
+                
+            ??? Quote "[CRACK-IN 2.0](https://www.crackin.tech/)"  
+                [![](https://ctftime.org/media/events/logoo_1.png){ width="200" align=left }](https://www.crackin.tech/)  
+                **比赛名称** : [CRACK-IN 2.0](https://www.crackin.tech/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-04-04 12:30:00 - 2026-04-04 18:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Cyber Hive (https://ctftime.org/team/428945)  
+                **添加日历** : https://ctftime.org/event/3212.ics  
                 
     === "*已经结束*"
         === "国内赛事"
