@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "NCTF 2026",
-        "比赛时间": "2026-04-04 09:00:00 - 2026-04-05 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3206.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nctf.x1ct34m.com/games/2",
-        "比赛标志": "https://ctftime.org/media/events/X1cT34m-transparent.png",
-        "比赛权重": "0.00",
-        "赛事主办": "X1cT34m (https://ctftime.org/team/14482)",
-        "比赛ID": "1545",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "THE UNI6CTF 1.0",
         "比赛时间": "2026-04-04 11:30:00 - 2026-04-04 17:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3226.ics",
@@ -873,6 +861,18 @@
         "比赛权重": "0",
         "赛事主办": "CITEFLAG (https://ctftime.org/team/425411)",
         "比赛ID": "1522",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "NCTF 2026",
+        "比赛时间": "2026-04-04 09:00:00 - 2026-04-05 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3206.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nctf.x1ct34m.com/games/2",
+        "比赛标志": "https://ctftime.org/media/events/X1cT34m-transparent.png",
+        "比赛权重": "0",
+        "赛事主办": "X1cT34m (https://ctftime.org/team/14482)",
+        "比赛ID": "1545",
         "比赛状态": "nowrunning"
     },
     {

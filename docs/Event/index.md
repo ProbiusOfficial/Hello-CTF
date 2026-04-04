@@ -497,15 +497,6 @@ hide:
                 **比赛详细** : 筹备中  
                 
         === "国外赛事"
-            ??? Quote "[NCTF 2026](https://nctf.x1ct34m.com/games/2)"  
-                [![](https://ctftime.org/media/events/X1cT34m-transparent.png){ width="200" align=left }](https://nctf.x1ct34m.com/games/2)  
-                **比赛名称** : [NCTF 2026](https://nctf.x1ct34m.com/games/2)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-04-04 09:00:00 - 2026-04-05 21:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : X1cT34m (https://ctftime.org/team/14482)  
-                **添加日历** : https://ctftime.org/event/3206.ics  
-                
             ??? Quote "[THE UNI6CTF 1.0](https://uni6ctf.online/)"  
                 [![](https://ctftime.org/media/events/uni6ctf_1.0_.jpeg){ width="200" align=left }](https://uni6ctf.online/)  
                 **比赛名称** : [THE UNI6CTF 1.0](https://uni6ctf.online/)  
@@ -1157,6 +1148,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : CITEFLAG (https://ctftime.org/team/425411)  
                 **添加日历** : https://ctftime.org/event/3175.ics  
+                
+            ??? Quote "[NCTF 2026](https://nctf.x1ct34m.com/games/2)"  
+                [![](https://ctftime.org/media/events/X1cT34m-transparent.png){ width="200" align=left }](https://nctf.x1ct34m.com/games/2)  
+                **比赛名称** : [NCTF 2026](https://nctf.x1ct34m.com/games/2)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-04-04 09:00:00 - 2026-04-05 21:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : X1cT34m (https://ctftime.org/team/14482)  
+                **添加日历** : https://ctftime.org/event/3206.ics  
                 
     === "*已经结束*"
         === "国内赛事"
