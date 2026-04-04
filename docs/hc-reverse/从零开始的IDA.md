@@ -42,7 +42,8 @@ Ctrl+F还可以搜索我们想找的函数：
 ![p5-3](./Images/p5-3.png)
 
 ### Pseudocode-A
-`Pseudocode-A`视窗下的快捷键：
+`Pseudocode-A`视窗下的快捷键：  
+
 - `/`：添加注释
 - `\`：隐藏类型描述
 - `Y`：更改变量类型
