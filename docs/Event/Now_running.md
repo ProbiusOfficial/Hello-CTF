@@ -81,12 +81,3 @@ comments: true
     **赛事主办** : X1cT34m (https://ctftime.org/team/14482)  
     **添加日历** : https://ctftime.org/event/3206.ics  
     
-??? Quote "[CRACK-IN 2.0](https://www.crackin.tech/)"  
-    [![](https://ctftime.org/media/events/logoo_1.png){ width="200" align=left }](https://www.crackin.tech/)  
-    **比赛名称** : [CRACK-IN 2.0](https://www.crackin.tech/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-04 12:30:00 - 2026-04-04 18:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Cyber Hive (https://ctftime.org/team/428945)  
-    **添加日历** : https://ctftime.org/event/3212.ics  
-    
