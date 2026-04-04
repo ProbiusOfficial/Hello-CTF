@@ -10,7 +10,7 @@ repo_url: https://github.com/ProbiusOfficial/Hello-CTF
 edit_uri: https://github.com/ProbiusOfficial/Hello-CTF/tree/main/docs/
 
 # 版权声明 / Copyright
-copyright: Copyright &copy; 2024 探姬 
+copyright: Copyright &copy; 2026 探姬 
 
 # 自定义配置部分 / Configuration
 theme:
@@ -25,17 +25,17 @@ theme:
     - content.code.copy         # 复制代码
     - content.tabs.link         # 标签链接
     - content.tooltips          # 工具提示
-    # - header.autohide         # 自动隐藏头部
+    - header.autohide         # 自动隐藏头部
     # - navigation.expand       # 展开导航
     - navigation.indexes        # 导航索引
     - navigation.instant      # 即时导航
     # - navigation.prune        # 导航修剪
     # - navigation.sections     # 导航节
-    - navigation.tabs         # 导航标签
+    #- navigation.tabs         # 导航标签
     # - navigation.tabs.sticky  # 固定导航标签
-    - navigation.top            # 导航顶部
+    #- navigation.top            # 导航顶部
     # - navigation.footer         # 导航底部
-    - navigation.tracking       # 导航跟踪
+    # - navigation.tracking       # 导航跟踪
     - search.highlight          # 搜索高亮
     - search.share              # 搜索分享
     - search.suggest            # 搜索建议
@@ -187,10 +187,10 @@ nav:
 # NEW 排布 —— | Home | 知识点标签 | 工具 | 靶场 | 赛事 | 归档
 
 # - Home 主要内容 (.HC) Part ------------
-  - Home:
-    - home/index.md
-    - 快速开始:
-      - hc-start/index.md
+  # #- Home:
+  #   - home/index.md
+  #   - 快速开始:
+  #     - hc-start/index.md
 
     - 前言:
       - hc-preface/index.md
@@ -320,19 +320,19 @@ nav:
       - NSSCTF平台使用: hc-appendix/NSSCTF_Usage.md
       - 推荐书单: hc-appendix/book.md
 
-  - 知识点标签:
-    - hc-tags/index.md
-    - Web: 
-      - hc-tags/web/index.md
-      - SQL注入: hc-tags/web/sql-injection.md
-      - SQLMap: hc-tags/web/sqlmap.md
-      - PHP特性: hc-tags/web/PHP_features.md
-    - Misc:
-      - hc-tags/misc/index.md
-    - Reverse:
-      - hc-tags/reverse/index.md
-    - Pwn:
-      - hc-tags/pwn/index.md
+  # - 知识点标签:
+  #   - hc-tags/index.md
+  #   - Web: 
+  #     - hc-tags/web/index.md
+  #     - SQL注入: hc-tags/web/sql-injection.md
+  #     - SQLMap: hc-tags/web/sqlmap.md
+  #     - PHP特性: hc-tags/web/PHP_features.md
+  #   - Misc:
+  #     - hc-tags/misc/index.md
+  #   - Reverse:
+  #     - hc-tags/reverse/index.md
+  #   - Pwn:
+  #     - hc-tags/pwn/index.md
 
 
 
@@ -342,23 +342,23 @@ nav:
 #     - Training/index.md
 
 # - CTF Event 赛事 (.Event) Part ------------
-  - 赛事:
-    - Event/index.md
-    - 即将开始: Event/Upcoming_events.md
-    - 正在进行: Event/Now_running.md
-    - 已经结束: Event/Past_events.md
-    - 办赛指南:
-      - Event/organize.md
+  # - 赛事:
+  #   - Event/index.md
+  #   - 即将开始: Event/Upcoming_events.md
+  #   - 正在进行: Event/Now_running.md
+  #   - 已经结束: Event/Past_events.md
+  #   - 办赛指南:
+  #     - Event/organize.md
 
 # - Hello CTF 系列靶场文档
-  - 靶场: hc-labs/index.md
+  #- 靶场: hc-labs/index.md
 
 # - CTF hc-toolkit 工具 (.hc-toolkit) Part ------------
-  - 工具: 
-    - hc-toolkit/index.md
+  #- 工具: 
+    #- hc-toolkit/index.md
 
 # - CTF 归档部分
-  - 归档: hc-archive/index.md
+  #- 归档: hc-archive/index.md
 
 # ----- 合并到主页中 time: 2024-01-07 ----- 
 # - TeamBuild (.TeamBuild) 团队 Part ------------
