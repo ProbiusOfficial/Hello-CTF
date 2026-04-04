@@ -1140,15 +1140,6 @@ hide:
                 **赛事主办** : X1cT34m (https://ctftime.org/team/14482)  
                 **添加日历** : https://ctftime.org/event/3206.ics  
                 
-            ??? Quote "[THE UNI6CTF 1.0](https://uni6ctf.online/)"  
-                [![](https://ctftime.org/media/events/uni6ctf_1.0_.jpeg){ width="200" align=left }](https://uni6ctf.online/)  
-                **比赛名称** : [THE UNI6CTF 1.0](https://uni6ctf.online/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-04-04 11:30:00 - 2026-04-04 17:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : IN-0x0 (https://ctftime.org/team/423353)  
-                **添加日历** : https://ctftime.org/event/3226.ics  
-                
             ??? Quote "[CRACK-IN 2.0](https://www.crackin.tech/)"  
                 [![](https://ctftime.org/media/events/logoo_1.png){ width="200" align=left }](https://www.crackin.tech/)  
                 **比赛名称** : [CRACK-IN 2.0](https://www.crackin.tech/)  
@@ -1171,6 +1162,15 @@ hide:
                 **比赛详细** : QQ群：713192205；比赛平台/报名地址：https://www.qsnctf.com/#/login。报名时间：2026年03月23日15:00-2026年03月28日09:59。每月比赛时间为月末最后一个周六上午10:00，报名时间为开始前两天。题目范围：综合靶场、Windows独立靶场、Linux独立靶场、日志审计、数据库、逆向分析、流量分析。  
                 
         === "国外赛事"
+            ??? Quote "[THE UNI6CTF 1.0](https://uni6ctf.online/)"  
+                [![](https://ctftime.org/media/events/uni6ctf_1.0_.jpeg){ width="200" align=left }](https://uni6ctf.online/)  
+                **比赛名称** : [THE UNI6CTF 1.0](https://uni6ctf.online/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-04-04 11:30:00 - 2026-04-04 17:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : IN-0x0 (https://ctftime.org/team/423353)  
+                **添加日历** : https://ctftime.org/event/3226.ics  
+                
             ??? Quote "[gryphCTF](https://guelphcss.com/links)"  
                 [![](https://ctftime.org/media/events/gryphctf_gryphlife.png){ width="200" align=left }](https://guelphcss.com/links)  
                 **比赛名称** : [gryphCTF](https://guelphcss.com/links)  
@@ -2061,15 +2061,6 @@ hide:
                 **比赛权重** : 83.21  
                 **赛事主办** : HKCERT (https://ctftime.org/team/134746)  
                 **添加日历** : https://ctftime.org/event/2998.ics  
-                
-            ??? Quote "[BSides Algiers 2025](https://bsides-algiers-2k25.shellmates.club/)"  
-                [![](https://ctftime.org/media/events/image.jpg){ width="200" align=left }](https://bsides-algiers-2k25.shellmates.club/)  
-                **比赛名称** : [BSides Algiers 2025](https://bsides-algiers-2k25.shellmates.club/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-12-19 03:00:00 - 2025-12-20 15:00:00 UTC+8  
-                **比赛权重** : 22.90  
-                **赛事主办** : noreply (https://ctftime.org/team/210760)  
-                **添加日历** : https://ctftime.org/event/2962.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
