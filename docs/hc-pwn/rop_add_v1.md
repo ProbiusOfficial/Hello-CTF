@@ -7,7 +7,6 @@
 前面我们讲了不少 `ret2xxx` 系列，但是把 `ret2syscall` 漏掉了。  
 这篇就先把这个坑补上，顺手把 `ret2csu` 和 `SROP` 也带一下。
 
-可以配套视频，但是别找了，syscall视频我没录。  
 另外这次的 blog 是我用手机写的，所以图会比较少，基本可以当成纯文字笔记看。
 
 > 说明：本文默认讨论 **x86_64 Linux** 场景。  
@@ -120,6 +119,7 @@ syscall ; ret
 ### 总结补充
 
 >当题目是x86_32的时候就不能用syscall了，此时要用`int 0x80`来进行系统调用，但还是使用eax传递调用号,edi,esi,edx等寄存器分别传递参数。
+若开启 seccomp，需先用 seccomp-tools dump 查看允许的系统调用，必要时改用 open/read/write 组合（ORW）。
 
 ### 具体题目
 
@@ -324,6 +324,8 @@ def build_ret2csu(func_ptr_addr, edi, rsi, rdx, next_rip):
 ### 题目
 
 这里可以看一下第 18 届极客大挑战的 `oldrop`，考的是 `csu` 的变种，挺适合练手。[题目](https://github.com/eroorvbsyes-hotmail/18th-JeKeChallange-Pwn/tree/main/oldrop/attchment)
+
+这个题目就比较经典，将传统的csu变化了一下，此时就需要选手有随机应变的能力，就是直接将特殊的csu拎出来，单独利用即可。exp中有csu的部分代码，可以参考一下
 
 因为篇幅问题，这里请大家自主思考
 exp:
@@ -729,7 +731,9 @@ int main(){
 ```
 
 因为在用户空间api没有定义`rt_sigframe`等结构体,所以我们这里直接在C里面实现其结构体。另外为了确保CPU不会在syscall返回时候因为ss和cs错误的值抛出`#GP`（一般保护异常）或 `#SS`（栈段异常）最终被转换成SIGSEGV信号导致程序被杀死，我们要将cs设置为0x33，将ss设置为0x2b
->**_注意：这里的cs和ss的值仅是在大多数平台是这样设置的，具体环境需要读者自己使用gdb调试得到_**
+**_注意：这里的cs和ss的值仅是在大多数平台是这样设置的，具体环境需要读者自己使用gdb调试得到_**
+
+>tips:使用 gdb 调试时通过 info registers cs ss 获取cs和ss当前值。建议在 SROP 中统一使用 SigreturnFrame 而不是手动构造，因为 pwntools 会自动填充正确的 cs/ss
 
 **_注意：在C标准库中当引入`sys/wait.h`等其他头文件时会自动包含`bits/sigcontext.h`这个头文件，此时就不要自己实现`sigcontext`这个结构体了。但还是推荐直接引入这个头文件，但是引入后，要注意ss寄存器在x64情况下结构体成员名叫做`__pad0`_**
 
@@ -762,8 +766,11 @@ zsh: segmentation fault  ./test
 ### SROP基本原理总结
 
 >最后我们知道了，如果需要进行SROP攻击，需要我们在栈上布置`rt_sigframe`结构体。并且要注意栈空间的大小并且对齐栈指针，最后将rax设置为15，并调用syscall。
->注意：因为SROP极度依赖`rt_sigreturn`系统调用，所以当程序开启沙盒后可能无法使用。而且SROP需要一个超长的连续空间用于结构体布置，若栈空间不足请考虑其他解法。
->SROP 的精髓在于利用内核“盲目信任” Signal Frame 的特性，以一次系统调用换取对所有寄存器的控制。它特别适合以下场景：
+>**注意**：因为SROP极度依赖`rt_sigreturn`系统调用，所以当程序开启沙盒后可能无法使用。因为`sigreturn` 系统调用本身也可能被 `seccomp` 过滤（`rt_sigreturn` 号为 15），若被禁止则 SROP 无效。而且SROP需要一个超长的连续空间用于结构体布置，若栈空间不足请考虑其他解法。
+
+另外：
+
+>SROP 的精髓在于利用内核“盲目信任” `Signal Frame` 的特性，以一次系统调用换取对所有寄存器的控制。它特别适合以下场景：
 >
 >- 程序没有足够的 pop rdi; ret、pop rsi; ret 等 gadget；
 >- 程序自身含有 syscall 指令，且能控制 rax；
