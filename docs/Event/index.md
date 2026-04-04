@@ -497,15 +497,6 @@ hide:
                 **比赛详细** : 筹备中  
                 
         === "国外赛事"
-            ??? Quote "[SillyCTF 2](https://sillyctf.psuccso.org/)"  
-                [![](https://ctftime.org/media/events/SillyCTF2logo.png){ width="200" align=left }](https://sillyctf.psuccso.org/)  
-                **比赛名称** : [SillyCTF 2](https://sillyctf.psuccso.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-04-04 20:00:00 - 2026-04-05 12:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : Penn State CCSO (https://ctftime.org/team/367931)  
-                **添加日历** : https://ctftime.org/event/3042.ics  
-                
             ??? Quote "[Triada CTF '26](http://ctf26.triada.in/)"  
                 [![](https://ctftime.org/media/events/ctftime_logo.png){ width="200" align=left }](http://ctf26.triada.in/)  
                 **比赛名称** : [Triada CTF '26](http://ctf26.triada.in/)  
@@ -1104,15 +1095,6 @@ hide:
                 **赛事主办** : CyberCellVIIT (https://ctftime.org/team/144677)  
                 **添加日历** : https://ctftime.org/event/3197.ics  
                 
-            ??? Quote "[Kashi CTF 2026](https://kashictf.iitbhucybersec.in/)"  
-                [![](https://ctftime.org/media/events/kashi-ctf-logo.png){ width="200" align=left }](https://kashictf.iitbhucybersec.in/)  
-                **比赛名称** : [Kashi CTF 2026](https://kashictf.iitbhucybersec.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-04-03 20:00:00 - 2026-04-04 20:00:00 UTC+8  
-                **比赛权重** : 21.78  
-                **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
-                **添加日历** : https://ctftime.org/event/3150.ics  
-                
             ??? Quote "[RITSEC CTF 2026](https://ctfd.ritsec.club/)"  
                 [![](https://ctftime.org/media/events/ritsec_ctf_2026_TP.png){ width="200" align=left }](https://ctfd.ritsec.club/)  
                 **比赛名称** : [RITSEC CTF 2026](https://ctfd.ritsec.club/)  
@@ -1139,6 +1121,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : X1cT34m (https://ctftime.org/team/14482)  
                 **添加日历** : https://ctftime.org/event/3206.ics  
+                
+            ??? Quote "[SillyCTF 2](https://sillyctf.psuccso.org/)"  
+                [![](https://ctftime.org/media/events/SillyCTF2logo.png){ width="200" align=left }](https://sillyctf.psuccso.org/)  
+                **比赛名称** : [SillyCTF 2](https://sillyctf.psuccso.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-04-04 20:00:00 - 2026-04-05 12:00:00 UTC+8  
+                **比赛权重** : 25.00  
+                **赛事主办** : Penn State CCSO (https://ctftime.org/team/367931)  
+                **添加日历** : https://ctftime.org/event/3042.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -1170,6 +1161,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : IN-0x0 (https://ctftime.org/team/423353)  
                 **添加日历** : https://ctftime.org/event/3226.ics  
+                
+            ??? Quote "[Kashi CTF 2026](https://kashictf.iitbhucybersec.in/)"  
+                [![](https://ctftime.org/media/events/kashi-ctf-logo.png){ width="200" align=left }](https://kashictf.iitbhucybersec.in/)  
+                **比赛名称** : [Kashi CTF 2026](https://kashictf.iitbhucybersec.in/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-04-03 20:00:00 - 2026-04-04 20:00:00 UTC+8  
+                **比赛权重** : 21.78  
+                **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
+                **添加日历** : https://ctftime.org/event/3150.ics  
                 
             ??? Quote "[gryphCTF](https://guelphcss.com/links)"  
                 [![](https://ctftime.org/media/events/gryphctf_gryphlife.png){ width="200" align=left }](https://guelphcss.com/links)  
@@ -2043,15 +2043,6 @@ hide:
                 **比赛权重** : 25.00  
                 **赛事主办** : TSG (https://ctftime.org/team/16088)  
                 **添加日历** : https://ctftime.org/event/2867.ics  
-                
-            ??? Quote "[0CTF 2025](https://ctf.0ops.sjtu.cn/)"  
-                [![](){ width="200" align=left }](https://ctf.0ops.sjtu.cn/)  
-                **比赛名称** : [0CTF 2025](https://ctf.0ops.sjtu.cn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-12-20 08:00:00 - 2025-12-22 08:00:00 UTC+8  
-                **比赛权重** : 96.88  
-                **赛事主办** : 0ops (https://ctftime.org/team/4419)  
-                **添加日历** : https://ctftime.org/event/2997.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

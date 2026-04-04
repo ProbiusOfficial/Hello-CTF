@@ -35,6 +35,15 @@ comments: true
     **赛事主办** : IN-0x0 (https://ctftime.org/team/423353)  
     **添加日历** : https://ctftime.org/event/3226.ics  
     
+??? Quote "[Kashi CTF 2026](https://kashictf.iitbhucybersec.in/)"  
+    [![](https://ctftime.org/media/events/kashi-ctf-logo.png){ width="200" align=left }](https://kashictf.iitbhucybersec.in/)  
+    **比赛名称** : [Kashi CTF 2026](https://kashictf.iitbhucybersec.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-03 20:00:00 - 2026-04-04 20:00:00 UTC+8  
+    **比赛权重** : 21.78  
+    **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
+    **添加日历** : https://ctftime.org/event/3150.ics  
+    
 ??? Quote "[gryphCTF](https://guelphcss.com/links)"  
     [![](https://ctftime.org/media/events/gryphctf_gryphlife.png){ width="200" align=left }](https://guelphcss.com/links)  
     **比赛名称** : [gryphCTF](https://guelphcss.com/links)  
@@ -907,13 +916,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : TSG (https://ctftime.org/team/16088)  
     **添加日历** : https://ctftime.org/event/2867.ics  
-    
-??? Quote "[0CTF 2025](https://ctf.0ops.sjtu.cn/)"  
-    [![](){ width="200" align=left }](https://ctf.0ops.sjtu.cn/)  
-    **比赛名称** : [0CTF 2025](https://ctf.0ops.sjtu.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-12-20 08:00:00 - 2025-12-22 08:00:00 UTC+8  
-    **比赛权重** : 96.88  
-    **赛事主办** : 0ops (https://ctftime.org/team/4419)  
-    **添加日历** : https://ctftime.org/event/2997.ics  
     
