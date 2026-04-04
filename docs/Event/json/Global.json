@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "THE UNI6CTF 1.0",
-        "比赛时间": "2026-04-04 11:30:00 - 2026-04-04 17:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3226.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://uni6ctf.online/",
-        "比赛标志": "https://ctftime.org/media/events/uni6ctf_1.0_.jpeg",
-        "比赛权重": "0.00",
-        "赛事主办": "IN-0x0 (https://ctftime.org/team/423353)",
-        "比赛ID": "1558",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "CRACK-IN 2.0",
         "比赛时间": "2026-04-04 12:30:00 - 2026-04-04 18:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3212.ics",
@@ -873,6 +861,18 @@
         "比赛权重": "0",
         "赛事主办": "X1cT34m (https://ctftime.org/team/14482)",
         "比赛ID": "1545",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "THE UNI6CTF 1.0",
+        "比赛时间": "2026-04-04 11:30:00 - 2026-04-04 17:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3226.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://uni6ctf.online/",
+        "比赛标志": "https://ctftime.org/media/events/uni6ctf_1.0_.jpeg",
+        "比赛权重": "0",
+        "赛事主办": "IN-0x0 (https://ctftime.org/team/423353)",
+        "比赛ID": "1558",
         "比赛状态": "nowrunning"
     },
     {

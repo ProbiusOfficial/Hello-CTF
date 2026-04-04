@@ -497,15 +497,6 @@ hide:
                 **比赛详细** : 筹备中  
                 
         === "国外赛事"
-            ??? Quote "[THE UNI6CTF 1.0](https://uni6ctf.online/)"  
-                [![](https://ctftime.org/media/events/uni6ctf_1.0_.jpeg){ width="200" align=left }](https://uni6ctf.online/)  
-                **比赛名称** : [THE UNI6CTF 1.0](https://uni6ctf.online/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-04-04 11:30:00 - 2026-04-04 17:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : IN-0x0 (https://ctftime.org/team/423353)  
-                **添加日历** : https://ctftime.org/event/3226.ics  
-                
             ??? Quote "[CRACK-IN 2.0](https://www.crackin.tech/)"  
                 [![](https://ctftime.org/media/events/logoo_1.png){ width="200" align=left }](https://www.crackin.tech/)  
                 **比赛名称** : [CRACK-IN 2.0](https://www.crackin.tech/)  
@@ -1157,6 +1148,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : X1cT34m (https://ctftime.org/team/14482)  
                 **添加日历** : https://ctftime.org/event/3206.ics  
+                
+            ??? Quote "[THE UNI6CTF 1.0](https://uni6ctf.online/)"  
+                [![](https://ctftime.org/media/events/uni6ctf_1.0_.jpeg){ width="200" align=left }](https://uni6ctf.online/)  
+                **比赛名称** : [THE UNI6CTF 1.0](https://uni6ctf.online/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-04-04 11:30:00 - 2026-04-04 17:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : IN-0x0 (https://ctftime.org/team/423353)  
+                **添加日历** : https://ctftime.org/event/3226.ics  
                 
     === "*已经结束*"
         === "国内赛事"
