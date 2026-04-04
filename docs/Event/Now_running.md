@@ -54,15 +54,6 @@ comments: true
     **赛事主办** : Contagion (https://ctftime.org/team/152691)  
     **添加日历** : https://ctftime.org/event/3096.ics  
     
-??? Quote "[CITEFLAG QUALS 2026](https://ctf.citeflag.online/)"  
-    [![](https://ctftime.org/media/events/logo_white_on_black_rounded.png){ width="200" align=left }](https://ctf.citeflag.online/)  
-    **比赛名称** : [CITEFLAG QUALS 2026](https://ctf.citeflag.online/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-04 06:00:00 - 2026-04-05 06:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : CITEFLAG (https://ctftime.org/team/425411)  
-    **添加日历** : https://ctftime.org/event/3175.ics  
-    
 ??? Quote "[NCTF 2026](https://nctf.x1ct34m.com/games/2)"  
     [![](https://ctftime.org/media/events/X1cT34m-transparent.png){ width="200" align=left }](https://nctf.x1ct34m.com/games/2)  
     **比赛名称** : [NCTF 2026](https://nctf.x1ct34m.com/games/2)  

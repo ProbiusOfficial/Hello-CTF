@@ -804,18 +804,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CITEFLAG QUALS 2026",
-        "比赛时间": "2026-04-04 06:00:00 - 2026-04-05 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3175.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.citeflag.online/",
-        "比赛标志": "https://ctftime.org/media/events/logo_white_on_black_rounded.png",
-        "比赛权重": "0",
-        "赛事主办": "CITEFLAG (https://ctftime.org/team/425411)",
-        "比赛ID": "1522",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "NCTF 2026",
         "比赛时间": "2026-04-04 09:00:00 - 2026-04-05 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3206.ics",
@@ -861,6 +849,18 @@
         "比赛权重": "0",
         "赛事主办": "IN-0x0 (https://ctftime.org/team/423353)",
         "比赛ID": "1558",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "CITEFLAG QUALS 2026",
+        "比赛时间": "2026-04-04 06:00:00 - 2026-04-05 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3175.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.citeflag.online/",
+        "比赛标志": "https://ctftime.org/media/events/logo_white_on_black_rounded.png",
+        "比赛权重": "0",
+        "赛事主办": "CITEFLAG (https://ctftime.org/team/425411)",
+        "比赛ID": "1522",
         "比赛状态": "past"
     },
     {
@@ -2025,18 +2025,6 @@
         "比赛权重": "0",
         "赛事主办": "MetaCTF (https://ctftime.org/team/72254)",
         "比赛ID": "500",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "TSG CTF 2025",
-        "比赛时间": "2025-12-20 15:00:00 - 2025-12-21 15:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2867.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://score.ctf.tsg.ne.jp/",
-        "比赛标志": "https://ctftime.org/media/events/TSG_CTF.png",
-        "比赛权重": "25.00",
-        "赛事主办": "TSG (https://ctftime.org/team/16088)",
-        "比赛ID": "294",
         "比赛状态": "past"
     }
 ]

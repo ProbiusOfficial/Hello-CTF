@@ -1104,15 +1104,6 @@ hide:
                 **赛事主办** : Contagion (https://ctftime.org/team/152691)  
                 **添加日历** : https://ctftime.org/event/3096.ics  
                 
-            ??? Quote "[CITEFLAG QUALS 2026](https://ctf.citeflag.online/)"  
-                [![](https://ctftime.org/media/events/logo_white_on_black_rounded.png){ width="200" align=left }](https://ctf.citeflag.online/)  
-                **比赛名称** : [CITEFLAG QUALS 2026](https://ctf.citeflag.online/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-04-04 06:00:00 - 2026-04-05 06:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : CITEFLAG (https://ctftime.org/team/425411)  
-                **添加日历** : https://ctftime.org/event/3175.ics  
-                
             ??? Quote "[NCTF 2026](https://nctf.x1ct34m.com/games/2)"  
                 [![](https://ctftime.org/media/events/X1cT34m-transparent.png){ width="200" align=left }](https://nctf.x1ct34m.com/games/2)  
                 **比赛名称** : [NCTF 2026](https://nctf.x1ct34m.com/games/2)  
@@ -1161,6 +1152,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : IN-0x0 (https://ctftime.org/team/423353)  
                 **添加日历** : https://ctftime.org/event/3226.ics  
+                
+            ??? Quote "[CITEFLAG QUALS 2026](https://ctf.citeflag.online/)"  
+                [![](https://ctftime.org/media/events/logo_white_on_black_rounded.png){ width="200" align=left }](https://ctf.citeflag.online/)  
+                **比赛名称** : [CITEFLAG QUALS 2026](https://ctf.citeflag.online/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-04-04 06:00:00 - 2026-04-05 06:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : CITEFLAG (https://ctftime.org/team/425411)  
+                **添加日历** : https://ctftime.org/event/3175.ics  
                 
             ??? Quote "[Kashi CTF 2026](https://kashictf.iitbhucybersec.in/)"  
                 [![](https://ctftime.org/media/events/kashi-ctf-logo.png){ width="200" align=left }](https://kashictf.iitbhucybersec.in/)  
@@ -2034,15 +2034,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
                 **添加日历** : https://ctftime.org/event/3036.ics  
-                
-            ??? Quote "[TSG CTF 2025](https://score.ctf.tsg.ne.jp/)"  
-                [![](https://ctftime.org/media/events/TSG_CTF.png){ width="200" align=left }](https://score.ctf.tsg.ne.jp/)  
-                **比赛名称** : [TSG CTF 2025](https://score.ctf.tsg.ne.jp/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2025-12-20 15:00:00 - 2025-12-21 15:00:00 UTC+8  
-                **比赛权重** : 25.00  
-                **赛事主办** : TSG (https://ctftime.org/team/16088)  
-                **添加日历** : https://ctftime.org/event/2867.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
