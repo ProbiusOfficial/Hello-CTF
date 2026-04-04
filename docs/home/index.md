@@ -58,41 +58,41 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[RITSEC CTF 2026](https://ctfd.ritsec.club/)"  
-            [![](https://ctftime.org/media/events/ritsec_ctf_2026_TP.png){ width="200" align=left }](https://ctfd.ritsec.club/)  
-            **比赛名称** : [RITSEC CTF 2026](https://ctfd.ritsec.club/)  
+        ??? Quote "[SillyCTF 2](https://sillyctf.psuccso.org/)"  
+            [![](https://ctftime.org/media/events/SillyCTF2logo.png){ width="200" align=left }](https://sillyctf.psuccso.org/)  
+            **比赛名称** : [SillyCTF 2](https://sillyctf.psuccso.org/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-04-04 05:00:00 - 2026-04-06 05:00:00 UTC+8  
-            **比赛权重** : 48.64  
-            **赛事主办** : Contagion (https://ctftime.org/team/152691)  
-            **添加日历** : https://ctftime.org/event/3096.ics  
+            **比赛时间** : 2026-04-04 20:00:00 - 2026-04-05 12:00:00 UTC+8  
+            **比赛权重** : 25.00  
+            **赛事主办** : Penn State CCSO (https://ctftime.org/team/367931)  
+            **添加日历** : https://ctftime.org/event/3042.ics  
             
-        ??? Quote "[CITEFLAG QUALS 2026](https://ctf.citeflag.online/)"  
-            [![](https://ctftime.org/media/events/logo_white_on_black_rounded.png){ width="200" align=left }](https://ctf.citeflag.online/)  
-            **比赛名称** : [CITEFLAG QUALS 2026](https://ctf.citeflag.online/)  
+        ??? Quote "[Triada CTF '26](http://ctf26.triada.in/)"  
+            [![](https://ctftime.org/media/events/ctftime_logo.png){ width="200" align=left }](http://ctf26.triada.in/)  
+            **比赛名称** : [Triada CTF '26](http://ctf26.triada.in/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-04-04 06:00:00 - 2026-04-05 06:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : CITEFLAG (https://ctftime.org/team/425411)  
-            **添加日历** : https://ctftime.org/event/3175.ics  
+            **比赛时间** : 2026-04-06 12:30:00 - 2026-04-07 12:30:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : Triada (https://ctftime.org/team/303057)  
+            **添加日历** : https://ctftime.org/event/3187.ics  
             
-        ??? Quote "[NCTF 2026](https://nctf.x1ct34m.com/games/2)"  
-            [![](https://ctftime.org/media/events/X1cT34m-transparent.png){ width="200" align=left }](https://nctf.x1ct34m.com/games/2)  
-            **比赛名称** : [NCTF 2026](https://nctf.x1ct34m.com/games/2)  
+        ??? Quote "[Dreamhack Invitational 2026](https://dreamhack.io/)"  
+            [![](){ width="200" align=left }](https://dreamhack.io/)  
+            **比赛名称** : [Dreamhack Invitational 2026](https://dreamhack.io/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-04-04 09:00:00 - 2026-04-05 21:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : X1cT34m (https://ctftime.org/team/14482)  
-            **添加日历** : https://ctftime.org/event/3206.ics  
+            **比赛时间** : 2026-04-07 08:00:00 - 2026-04-07 23:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
+            **添加日历** : https://ctftime.org/event/3026.ics  
             
-        ??? Quote "[THE UNI6CTF 1.0](https://uni6ctf.online/)"  
-            [![](https://ctftime.org/media/events/uni6ctf_1.0_.jpeg){ width="200" align=left }](https://uni6ctf.online/)  
-            **比赛名称** : [THE UNI6CTF 1.0](https://uni6ctf.online/)  
+        ??? Quote "[Pàlcam Cybergames 2026](https://palcamcg2026.soterctf.com/)"  
+            [![](https://ctftime.org/media/events/palcamLogo.png){ width="200" align=left }](https://palcamcg2026.soterctf.com/)  
+            **比赛名称** : [Pàlcam Cybergames 2026](https://palcamcg2026.soterctf.com/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-04-04 11:30:00 - 2026-04-04 17:30:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : IN-0x0 (https://ctftime.org/team/423353)  
-            **添加日历** : https://ctftime.org/event/3226.ics  
+            **比赛时间** : 2026-04-10 18:00:00 - 2026-04-12 07:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : Pàlcam ASIX (https://ctftime.org/team/428952)  
+            **添加日历** : https://ctftime.org/event/3211.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)

@@ -1,65 +1,5 @@
 [
     {
-        "比赛名称": "RITSEC CTF 2026",
-        "比赛时间": "2026-04-04 05:00:00 - 2026-04-06 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3096.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfd.ritsec.club/",
-        "比赛标志": "https://ctftime.org/media/events/ritsec_ctf_2026_TP.png",
-        "比赛权重": "48.64",
-        "赛事主办": "Contagion (https://ctftime.org/team/152691)",
-        "比赛ID": "170",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "CITEFLAG QUALS 2026",
-        "比赛时间": "2026-04-04 06:00:00 - 2026-04-05 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3175.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.citeflag.online/",
-        "比赛标志": "https://ctftime.org/media/events/logo_white_on_black_rounded.png",
-        "比赛权重": "0.00",
-        "赛事主办": "CITEFLAG (https://ctftime.org/team/425411)",
-        "比赛ID": "1522",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "NCTF 2026",
-        "比赛时间": "2026-04-04 09:00:00 - 2026-04-05 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3206.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nctf.x1ct34m.com/games/2",
-        "比赛标志": "https://ctftime.org/media/events/X1cT34m-transparent.png",
-        "比赛权重": "0.00",
-        "赛事主办": "X1cT34m (https://ctftime.org/team/14482)",
-        "比赛ID": "1545",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "THE UNI6CTF 1.0",
-        "比赛时间": "2026-04-04 11:30:00 - 2026-04-04 17:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3226.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://uni6ctf.online/",
-        "比赛标志": "https://ctftime.org/media/events/uni6ctf_1.0_.jpeg",
-        "比赛权重": "0.00",
-        "赛事主办": "IN-0x0 (https://ctftime.org/team/423353)",
-        "比赛ID": "1558",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "CRACK-IN 2.0",
-        "比赛时间": "2026-04-04 12:30:00 - 2026-04-04 18:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3212.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.crackin.tech/",
-        "比赛标志": "https://ctftime.org/media/events/logoo_1.png",
-        "比赛权重": "0",
-        "赛事主办": "Cyber Hive (https://ctftime.org/team/428945)",
-        "比赛ID": "1550",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "SillyCTF 2",
         "比赛时间": "2026-04-04 20:00:00 - 2026-04-05 12:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3042.ics",
@@ -874,6 +814,66 @@
         "赛事主办": "IIT(BHU)CyberSec (https://ctftime.org/team/22546)",
         "比赛ID": "1251",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "RITSEC CTF 2026",
+        "比赛时间": "2026-04-04 05:00:00 - 2026-04-06 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3096.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctfd.ritsec.club/",
+        "比赛标志": "https://ctftime.org/media/events/ritsec_ctf_2026_TP.png",
+        "比赛权重": "48.64",
+        "赛事主办": "Contagion (https://ctftime.org/team/152691)",
+        "比赛ID": "170",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CITEFLAG QUALS 2026",
+        "比赛时间": "2026-04-04 06:00:00 - 2026-04-05 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3175.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.citeflag.online/",
+        "比赛标志": "https://ctftime.org/media/events/logo_white_on_black_rounded.png",
+        "比赛权重": "0",
+        "赛事主办": "CITEFLAG (https://ctftime.org/team/425411)",
+        "比赛ID": "1522",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "NCTF 2026",
+        "比赛时间": "2026-04-04 09:00:00 - 2026-04-05 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3206.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nctf.x1ct34m.com/games/2",
+        "比赛标志": "https://ctftime.org/media/events/X1cT34m-transparent.png",
+        "比赛权重": "0",
+        "赛事主办": "X1cT34m (https://ctftime.org/team/14482)",
+        "比赛ID": "1545",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CRACK-IN 2.0",
+        "比赛时间": "2026-04-04 12:30:00 - 2026-04-04 18:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3212.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.crackin.tech/",
+        "比赛标志": "https://ctftime.org/media/events/logoo_1.png",
+        "比赛权重": "0",
+        "赛事主办": "Cyber Hive (https://ctftime.org/team/428945)",
+        "比赛ID": "1550",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "THE UNI6CTF 1.0",
+        "比赛时间": "2026-04-04 11:30:00 - 2026-04-04 17:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3226.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://uni6ctf.online/",
+        "比赛标志": "https://ctftime.org/media/events/uni6ctf_1.0_.jpeg",
+        "比赛权重": "0",
+        "赛事主办": "IN-0x0 (https://ctftime.org/team/423353)",
+        "比赛ID": "1558",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "gryphCTF",
@@ -2049,30 +2049,6 @@
         "比赛权重": "96.88",
         "赛事主办": "0ops (https://ctftime.org/team/4419)",
         "比赛ID": "99",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "HKCERT CTF 2025 (Qualifying Round)",
-        "比赛时间": "2025-12-19 16:00:00 - 2025-12-21 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2998.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hkcert.org/",
-        "比赛标志": "https://ctftime.org/media/events/CTF2025.png",
-        "比赛权重": "83.21",
-        "赛事主办": "HKCERT (https://ctftime.org/team/134746)",
-        "比赛ID": "529",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BSides Algiers 2025",
-        "比赛时间": "2025-12-19 03:00:00 - 2025-12-20 15:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2962.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://bsides-algiers-2k25.shellmates.club/",
-        "比赛标志": "https://ctftime.org/media/events/image.jpg",
-        "比赛权重": "22.90",
-        "赛事主办": "noreply (https://ctftime.org/team/210760)",
-        "比赛ID": "527",
         "比赛状态": "past"
     }
 ]

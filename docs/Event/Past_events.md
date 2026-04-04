@@ -17,6 +17,24 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[CRACK-IN 2.0](https://www.crackin.tech/)"  
+    [![](https://ctftime.org/media/events/logoo_1.png){ width="200" align=left }](https://www.crackin.tech/)  
+    **比赛名称** : [CRACK-IN 2.0](https://www.crackin.tech/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-04 12:30:00 - 2026-04-04 18:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Cyber Hive (https://ctftime.org/team/428945)  
+    **添加日历** : https://ctftime.org/event/3212.ics  
+    
+??? Quote "[THE UNI6CTF 1.0](https://uni6ctf.online/)"  
+    [![](https://ctftime.org/media/events/uni6ctf_1.0_.jpeg){ width="200" align=left }](https://uni6ctf.online/)  
+    **比赛名称** : [THE UNI6CTF 1.0](https://uni6ctf.online/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-04 11:30:00 - 2026-04-04 17:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : IN-0x0 (https://ctftime.org/team/423353)  
+    **添加日历** : https://ctftime.org/event/3226.ics  
+    
 ??? Quote "[gryphCTF](https://guelphcss.com/links)"  
     [![](https://ctftime.org/media/events/gryphctf_gryphlife.png){ width="200" align=left }](https://guelphcss.com/links)  
     **比赛名称** : [gryphCTF](https://guelphcss.com/links)  
@@ -898,22 +916,4 @@ comments: true
     **比赛权重** : 96.88  
     **赛事主办** : 0ops (https://ctftime.org/team/4419)  
     **添加日历** : https://ctftime.org/event/2997.ics  
-    
-??? Quote "[HKCERT CTF 2025 (Qualifying Round)](https://ctf.hkcert.org/)"  
-    [![](https://ctftime.org/media/events/CTF2025.png){ width="200" align=left }](https://ctf.hkcert.org/)  
-    **比赛名称** : [HKCERT CTF 2025 (Qualifying Round)](https://ctf.hkcert.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-12-19 16:00:00 - 2025-12-21 16:00:00 UTC+8  
-    **比赛权重** : 83.21  
-    **赛事主办** : HKCERT (https://ctftime.org/team/134746)  
-    **添加日历** : https://ctftime.org/event/2998.ics  
-    
-??? Quote "[BSides Algiers 2025](https://bsides-algiers-2k25.shellmates.club/)"  
-    [![](https://ctftime.org/media/events/image.jpg){ width="200" align=left }](https://bsides-algiers-2k25.shellmates.club/)  
-    **比赛名称** : [BSides Algiers 2025](https://bsides-algiers-2k25.shellmates.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-12-19 03:00:00 - 2025-12-20 15:00:00 UTC+8  
-    **比赛权重** : 22.90  
-    **赛事主办** : noreply (https://ctftime.org/team/210760)  
-    **添加日历** : https://ctftime.org/event/2962.ics  
     
