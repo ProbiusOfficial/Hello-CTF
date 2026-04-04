@@ -291,6 +291,7 @@ nav:
       - 栈上数组越界&栈溢出: hc-pwn/Stack_Overflow.md
       - ROP入门: hc-pwn/ROP.md
       - 常见的ROP技巧: hc-pwn/ROP_Tricks.md
+      - ROP进阶: hc-pwn/rop_add_v1.md
       - 常见保护: hc-pwn/Protections.md
       - 杂七杂八的解题技巧: hc-pwn/Tricks.md
 
