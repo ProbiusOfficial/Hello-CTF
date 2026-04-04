@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "SillyCTF 2",
-        "比赛时间": "2026-04-04 20:00:00 - 2026-04-05 12:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3042.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://sillyctf.psuccso.org/",
-        "比赛标志": "https://ctftime.org/media/events/SillyCTF2logo.png",
-        "比赛权重": "25.00",
-        "赛事主办": "Penn State CCSO (https://ctftime.org/team/367931)",
-        "比赛ID": "1233",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Triada CTF '26",
         "比赛时间": "2026-04-06 12:30:00 - 2026-04-07 12:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3187.ics",
@@ -804,18 +792,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Kashi CTF 2026",
-        "比赛时间": "2026-04-03 20:00:00 - 2026-04-04 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3150.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://kashictf.iitbhucybersec.in/",
-        "比赛标志": "https://ctftime.org/media/events/kashi-ctf-logo.png",
-        "比赛权重": "21.78",
-        "赛事主办": "IIT(BHU)CyberSec (https://ctftime.org/team/22546)",
-        "比赛ID": "1251",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "RITSEC CTF 2026",
         "比赛时间": "2026-04-04 05:00:00 - 2026-04-06 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3096.ics",
@@ -852,6 +828,18 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "SillyCTF 2",
+        "比赛时间": "2026-04-04 20:00:00 - 2026-04-05 12:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3042.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://sillyctf.psuccso.org/",
+        "比赛标志": "https://ctftime.org/media/events/SillyCTF2logo.png",
+        "比赛权重": "25.00",
+        "赛事主办": "Penn State CCSO (https://ctftime.org/team/367931)",
+        "比赛ID": "1233",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "CRACK-IN 2.0",
         "比赛时间": "2026-04-04 12:30:00 - 2026-04-04 18:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3212.ics",
@@ -873,6 +861,18 @@
         "比赛权重": "0",
         "赛事主办": "IN-0x0 (https://ctftime.org/team/423353)",
         "比赛ID": "1558",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Kashi CTF 2026",
+        "比赛时间": "2026-04-03 20:00:00 - 2026-04-04 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3150.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://kashictf.iitbhucybersec.in/",
+        "比赛标志": "https://ctftime.org/media/events/kashi-ctf-logo.png",
+        "比赛权重": "21.78",
+        "赛事主办": "IIT(BHU)CyberSec (https://ctftime.org/team/22546)",
+        "比赛ID": "1251",
         "比赛状态": "past"
     },
     {
@@ -2037,18 +2037,6 @@
         "比赛权重": "25.00",
         "赛事主办": "TSG (https://ctftime.org/team/16088)",
         "比赛ID": "294",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "0CTF 2025",
-        "比赛时间": "2025-12-20 08:00:00 - 2025-12-22 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2997.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.0ops.sjtu.cn/",
-        "比赛标志": "",
-        "比赛权重": "96.88",
-        "赛事主办": "0ops (https://ctftime.org/team/4419)",
-        "比赛ID": "99",
         "比赛状态": "past"
     }
 ]
