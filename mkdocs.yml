@@ -191,6 +191,7 @@ nav:
   #   - home/index.md
   #   - 快速开始:
   #     - hc-start/index.md
+    - AI时代：在正式开始之前: hc-preface/faceAI.md
 
     - 前言:
       - hc-preface/index.md
