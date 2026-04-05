@@ -17,6 +17,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[SillyCTF 2](https://sillyctf.psuccso.org/)"  
+    [![](https://ctftime.org/media/events/SillyCTF2logo.png){ width="200" align=left }](https://sillyctf.psuccso.org/)  
+    **比赛名称** : [SillyCTF 2](https://sillyctf.psuccso.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-04 20:00:00 - 2026-04-05 12:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : Penn State CCSO (https://ctftime.org/team/367931)  
+    **添加日历** : https://ctftime.org/event/3042.ics  
+    
 ??? Quote "[CRACK-IN 2.0](https://www.crackin.tech/)"  
     [![](https://ctftime.org/media/events/logoo_1.png){ width="200" align=left }](https://www.crackin.tech/)  
     **比赛名称** : [CRACK-IN 2.0](https://www.crackin.tech/)  
@@ -907,13 +916,4 @@ comments: true
     **比赛权重** : 100.00  
     **赛事主办** : ASIS (https://ctftime.org/team/4140)  
     **添加日历** : https://ctftime.org/event/2613.ics  
-    
-??? Quote "[MetaCTF December 2025 Flash CTF](https://mctf.io/dec2025)"  
-    [![](){ width="200" align=left }](https://mctf.io/dec2025)  
-    **比赛名称** : [MetaCTF December 2025 Flash CTF](https://mctf.io/dec2025)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-12-21 01:00:00 - 2025-12-21 04:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
-    **添加日历** : https://ctftime.org/event/3036.ics  
     
