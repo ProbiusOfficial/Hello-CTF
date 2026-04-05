@@ -62,6 +62,15 @@ comments: true
     **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
     **添加日历** : https://ctftime.org/event/3150.ics  
     
+??? Quote "[VishwaCTF'2026](http://vishwactf.com/)"  
+    [![](https://ctftime.org/media/events/VishwaCTF_Logo_1_1_1.png){ width="200" align=left }](http://vishwactf.com/)  
+    **比赛名称** : [VishwaCTF'2026](http://vishwactf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-03 17:30:00 - 2026-04-05 17:30:00 UTC+8  
+    **比赛权重** : 36.00  
+    **赛事主办** : CyberCellVIIT (https://ctftime.org/team/144677)  
+    **添加日历** : https://ctftime.org/event/3197.ics  
+    
 ??? Quote "[gryphCTF](https://guelphcss.com/links)"  
     [![](https://ctftime.org/media/events/gryphctf_gryphlife.png){ width="200" align=left }](https://guelphcss.com/links)  
     **比赛名称** : [gryphCTF](https://guelphcss.com/links)  
@@ -907,13 +916,4 @@ comments: true
     **比赛权重** : 98.14  
     **赛事主办** : hxp (https://ctftime.org/team/585)  
     **添加日历** : https://ctftime.org/event/2924.ics  
-    
-??? Quote "[ASIS CTF Finals 2025](https://asisctf.com/)"  
-    [![](){ width="200" align=left }](https://asisctf.com/)  
-    **比赛名称** : [ASIS CTF Finals 2025](https://asisctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2025-12-27 22:00:00 - 2025-12-28 22:00:00 UTC+8  
-    **比赛权重** : 100.00  
-    **赛事主办** : ASIS (https://ctftime.org/team/4140)  
-    **添加日历** : https://ctftime.org/event/2613.ics  
     

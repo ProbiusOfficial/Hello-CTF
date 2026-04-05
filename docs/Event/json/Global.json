@@ -780,18 +780,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "VishwaCTF'2026",
-        "比赛时间": "2026-04-03 17:30:00 - 2026-04-05 17:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3197.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://vishwactf.com/",
-        "比赛标志": "https://ctftime.org/media/events/VishwaCTF_Logo_1_1_1.png",
-        "比赛权重": "36.00",
-        "赛事主办": "CyberCellVIIT (https://ctftime.org/team/144677)",
-        "比赛ID": "599",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "RITSEC CTF 2026",
         "比赛时间": "2026-04-04 05:00:00 - 2026-04-06 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3096.ics",
@@ -873,6 +861,18 @@
         "比赛权重": "21.78",
         "赛事主办": "IIT(BHU)CyberSec (https://ctftime.org/team/22546)",
         "比赛ID": "1251",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "VishwaCTF'2026",
+        "比赛时间": "2026-04-03 17:30:00 - 2026-04-05 17:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3197.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://vishwactf.com/",
+        "比赛标志": "https://ctftime.org/media/events/VishwaCTF_Logo_1_1_1.png",
+        "比赛权重": "36.00",
+        "赛事主办": "CyberCellVIIT (https://ctftime.org/team/144677)",
+        "比赛ID": "599",
         "比赛状态": "past"
     },
     {
@@ -2001,18 +2001,6 @@
         "比赛权重": "98.14",
         "赛事主办": "hxp (https://ctftime.org/team/585)",
         "比赛ID": "120",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "ASIS CTF Finals 2025",
-        "比赛时间": "2025-12-27 22:00:00 - 2025-12-28 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2613.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://asisctf.com/",
-        "比赛标志": "",
-        "比赛权重": "100.00",
-        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
-        "比赛ID": "59",
         "比赛状态": "past"
     }
 ]
