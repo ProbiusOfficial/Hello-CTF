@@ -780,18 +780,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "RITSEC CTF 2026",
-        "比赛时间": "2026-04-04 05:00:00 - 2026-04-06 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3096.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfd.ritsec.club/",
-        "比赛标志": "https://ctftime.org/media/events/ritsec_ctf_2026_TP.png",
-        "比赛权重": "48.64",
-        "赛事主办": "Contagion (https://ctftime.org/team/152691)",
-        "比赛ID": "170",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "SillyCTF 2",
         "比赛时间": "2026-04-04 20:00:00 - 2026-04-05 12:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3042.ics",
@@ -849,6 +837,18 @@
         "比赛权重": "0",
         "赛事主办": "CITEFLAG (https://ctftime.org/team/425411)",
         "比赛ID": "1522",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "RITSEC CTF 2026",
+        "比赛时间": "2026-04-04 05:00:00 - 2026-04-06 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3096.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctfd.ritsec.club/",
+        "比赛标志": "https://ctftime.org/media/events/ritsec_ctf_2026_TP.png",
+        "比赛权重": "48.64",
+        "赛事主办": "Contagion (https://ctftime.org/team/152691)",
+        "比赛ID": "170",
         "比赛状态": "past"
     },
     {
@@ -1977,18 +1977,6 @@
         "比赛权重": "33.49",
         "赛事主办": "UofTCTF (https://ctftime.org/team/139261)",
         "比赛ID": "1052",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Scarlet CTF 2026",
-        "比赛时间": "2026-01-09 08:00:00 - 2026-01-12 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2981.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.rusec.club/",
-        "比赛标志": "https://ctftime.org/media/events/8ed561b45f892df2a5b105e8537794b3_1.jpg",
-        "比赛权重": "23.82",
-        "赛事主办": "ScarletCTF (https://ctftime.org/team/226444)",
-        "比赛ID": "1143",
         "比赛状态": "past"
     }
 ]

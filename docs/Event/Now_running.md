@@ -36,12 +36,3 @@ comments: true
     **赛事主办** : NFITS (https://ctftime.org/team/360674)  
     **添加日历** : https://ctftime.org/event/2907.ics  
     
-??? Quote "[RITSEC CTF 2026](https://ctfd.ritsec.club/)"  
-    [![](https://ctftime.org/media/events/ritsec_ctf_2026_TP.png){ width="200" align=left }](https://ctfd.ritsec.club/)  
-    **比赛名称** : [RITSEC CTF 2026](https://ctfd.ritsec.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-04 05:00:00 - 2026-04-06 05:00:00 UTC+8  
-    **比赛权重** : 48.64  
-    **赛事主办** : Contagion (https://ctftime.org/team/152691)  
-    **添加日历** : https://ctftime.org/event/3096.ics  
-    
