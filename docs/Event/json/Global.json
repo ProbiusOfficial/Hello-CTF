@@ -792,18 +792,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "NCTF 2026",
-        "比赛时间": "2026-04-04 09:00:00 - 2026-04-05 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3206.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nctf.x1ct34m.com/games/2",
-        "比赛标志": "https://ctftime.org/media/events/X1cT34m-transparent.png",
-        "比赛权重": "0",
-        "赛事主办": "X1cT34m (https://ctftime.org/team/14482)",
-        "比赛ID": "1545",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "SillyCTF 2",
         "比赛时间": "2026-04-04 20:00:00 - 2026-04-05 12:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3042.ics",
@@ -837,6 +825,18 @@
         "比赛权重": "0",
         "赛事主办": "IN-0x0 (https://ctftime.org/team/423353)",
         "比赛ID": "1558",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "NCTF 2026",
+        "比赛时间": "2026-04-04 09:00:00 - 2026-04-05 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3206.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nctf.x1ct34m.com/games/2",
+        "比赛标志": "https://ctftime.org/media/events/X1cT34m-transparent.png",
+        "比赛权重": "0",
+        "赛事主办": "X1cT34m (https://ctftime.org/team/14482)",
+        "比赛ID": "1545",
         "比赛状态": "past"
     },
     {
@@ -1989,18 +1989,6 @@
         "比赛权重": "23.82",
         "赛事主办": "ScarletCTF (https://ctftime.org/team/226444)",
         "比赛ID": "1143",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "hxp 39C3 CTF",
-        "比赛时间": "2025-12-28 04:00:00 - 2025-12-30 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2924.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2025.ctf.link/",
-        "比赛标志": "https://ctftime.org/media/events/hxp-39c3.png",
-        "比赛权重": "98.14",
-        "赛事主办": "hxp (https://ctftime.org/team/585)",
-        "比赛ID": "120",
         "比赛状态": "past"
     }
 ]
