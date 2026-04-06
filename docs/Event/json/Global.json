@@ -636,6 +636,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Universal CTF",
+        "比赛时间": "2026-08-01 15:00:00 - 2026-08-02 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3237.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.uctf.io/",
+        "比赛标志": "https://ctftime.org/media/events/4d7c5705-750e-4d80-a247-a8c135096de0-Photoroom.png",
+        "比赛权重": "0.00",
+        "赛事主办": "U-CTF (https://ctftime.org/team/430827)",
+        "比赛ID": "1570",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "scriptCTF 2026",
         "比赛时间": "2026-08-08 08:00:00 - 2026-08-10 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3052.ics",
