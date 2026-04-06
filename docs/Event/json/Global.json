@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Triada CTF '26",
-        "比赛时间": "2026-04-06 12:30:00 - 2026-04-07 12:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3187.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf26.triada.in/",
-        "比赛标志": "https://ctftime.org/media/events/ctftime_logo.png",
-        "比赛权重": "0",
-        "赛事主办": "Triada (https://ctftime.org/team/303057)",
-        "比赛ID": "1534",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Dreamhack Invitational 2026",
         "比赛时间": "2026-04-07 08:00:00 - 2026-04-07 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3026.ics",
@@ -69,6 +57,18 @@
         "比赛权重": "0.00",
         "赛事主办": "SECPlayground (https://ctftime.org/team/375409)",
         "比赛ID": "1291",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "KAALCHAKRA CTF Finals",
+        "比赛时间": "2026-04-11 12:30:00 - 2026-04-11 19:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3230.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://kaalchakractf.com/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "TH3_RANG3RS (https://ctftime.org/team/406018)",
+        "比赛ID": "1530",
         "比赛状态": "oncoming"
     },
     {
@@ -777,6 +777,18 @@
         "比赛权重": "0",
         "赛事主办": "NFITS (https://ctftime.org/team/360674)",
         "比赛ID": "1200",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Triada CTF '26",
+        "比赛时间": "2026-04-06 12:30:00 - 2026-04-07 12:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3187.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf26.triada.in/",
+        "比赛标志": "https://ctftime.org/media/events/ctftime_logo.png",
+        "比赛权重": "0",
+        "赛事主办": "Triada (https://ctftime.org/team/303057)",
+        "比赛ID": "1534",
         "比赛状态": "nowrunning"
     },
     {

@@ -36,3 +36,12 @@ comments: true
     **赛事主办** : NFITS (https://ctftime.org/team/360674)  
     **添加日历** : https://ctftime.org/event/2907.ics  
     
+??? Quote "[Triada CTF '26](http://ctf26.triada.in/)"  
+    [![](https://ctftime.org/media/events/ctftime_logo.png){ width="200" align=left }](http://ctf26.triada.in/)  
+    **比赛名称** : [Triada CTF '26](http://ctf26.triada.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-06 12:30:00 - 2026-04-07 12:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Triada (https://ctftime.org/team/303057)  
+    **添加日历** : https://ctftime.org/event/3187.ics  
+    

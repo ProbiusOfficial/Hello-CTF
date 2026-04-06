@@ -13,15 +13,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Triada CTF '26](http://ctf26.triada.in/)"  
-    [![](https://ctftime.org/media/events/ctftime_logo.png){ width="200" align=left }](http://ctf26.triada.in/)  
-    **比赛名称** : [Triada CTF '26](http://ctf26.triada.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-06 12:30:00 - 2026-04-07 12:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Triada (https://ctftime.org/team/303057)  
-    **添加日历** : https://ctftime.org/event/3187.ics  
-    
 ??? Quote "[Dreamhack Invitational 2026](https://dreamhack.io/)"  
     [![](){ width="200" align=left }](https://dreamhack.io/)  
     **比赛名称** : [Dreamhack Invitational 2026](https://dreamhack.io/)  
@@ -66,6 +57,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : SECPlayground (https://ctftime.org/team/375409)  
     **添加日历** : https://ctftime.org/event/3190.ics  
+    
+??? Quote "[KAALCHAKRA CTF Finals](https://kaalchakractf.com/)"  
+    [![](){ width="200" align=left }](https://kaalchakractf.com/)  
+    **比赛名称** : [KAALCHAKRA CTF Finals](https://kaalchakractf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-11 12:30:00 - 2026-04-11 19:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : TH3_RANG3RS (https://ctftime.org/team/406018)  
+    **添加日历** : https://ctftime.org/event/3230.ics  
     
 ??? Quote "[Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)"  
     [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
