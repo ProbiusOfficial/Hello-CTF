@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[Triada CTF '26](http://ctf26.triada.in/)"  
-            [![](https://ctftime.org/media/events/ctftime_logo.png){ width="200" align=left }](http://ctf26.triada.in/)  
-            **比赛名称** : [Triada CTF '26](http://ctf26.triada.in/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-04-06 12:30:00 - 2026-04-07 12:30:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : Triada (https://ctftime.org/team/303057)  
-            **添加日历** : https://ctftime.org/event/3187.ics  
-            
         ??? Quote "[Dreamhack Invitational 2026](https://dreamhack.io/)"  
             [![](){ width="200" align=left }](https://dreamhack.io/)  
             **比赛名称** : [Dreamhack Invitational 2026](https://dreamhack.io/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 66.64  
             **赛事主办** : UMBC Cyber Dawgs (https://ctftime.org/team/18405)  
             **添加日历** : https://ctftime.org/event/3102.ics  
+            
+        ??? Quote "[UMassCTF 2026](https://ctf.umasscybersec.org/)"  
+            [![](https://ctftime.org/media/events/CTF_LOGO_20240401_190034_0000.jpg){ width="200" align=left }](https://ctf.umasscybersec.org/)  
+            **比赛名称** : [UMassCTF 2026](https://ctf.umasscybersec.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-04-11 06:00:00 - 2026-04-13 06:00:00 UTC+8  
+            **比赛权重** : 65.95  
+            **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
+            **添加日历** : https://ctftime.org/event/2937.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)

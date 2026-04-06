@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Triada CTF '26",
-        "比赛时间": "2026-04-06 12:30:00 - 2026-04-07 12:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3187.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf26.triada.in/",
-        "比赛标志": "https://ctftime.org/media/events/ctftime_logo.png",
-        "比赛权重": "0",
-        "赛事主办": "Triada (https://ctftime.org/team/303057)",
-        "比赛ID": "1534",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Dreamhack Invitational 2026",
         "比赛时间": "2026-04-07 08:00:00 - 2026-04-07 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3026.ics",
@@ -69,6 +57,18 @@
         "比赛权重": "0.00",
         "赛事主办": "SECPlayground (https://ctftime.org/team/375409)",
         "比赛ID": "1291",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "KAALCHAKRA CTF Finals",
+        "比赛时间": "2026-04-11 12:30:00 - 2026-04-11 19:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3230.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://kaalchakractf.com/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "TH3_RANG3RS (https://ctftime.org/team/406018)",
+        "比赛ID": "1530",
         "比赛状态": "oncoming"
     },
     {
@@ -780,27 +780,15 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "RITSEC CTF 2026",
-        "比赛时间": "2026-04-04 05:00:00 - 2026-04-06 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3096.ics",
+        "比赛名称": "Triada CTF '26",
+        "比赛时间": "2026-04-06 12:30:00 - 2026-04-07 12:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3187.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfd.ritsec.club/",
-        "比赛标志": "https://ctftime.org/media/events/ritsec_ctf_2026_TP.png",
-        "比赛权重": "48.64",
-        "赛事主办": "Contagion (https://ctftime.org/team/152691)",
-        "比赛ID": "170",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "NCTF 2026",
-        "比赛时间": "2026-04-04 09:00:00 - 2026-04-05 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3206.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nctf.x1ct34m.com/games/2",
-        "比赛标志": "https://ctftime.org/media/events/X1cT34m-transparent.png",
+        "比赛链接": "http://ctf26.triada.in/",
+        "比赛标志": "https://ctftime.org/media/events/ctftime_logo.png",
         "比赛权重": "0",
-        "赛事主办": "X1cT34m (https://ctftime.org/team/14482)",
-        "比赛ID": "1545",
+        "赛事主办": "Triada (https://ctftime.org/team/303057)",
+        "比赛ID": "1534",
         "比赛状态": "nowrunning"
     },
     {
@@ -840,6 +828,18 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "NCTF 2026",
+        "比赛时间": "2026-04-04 09:00:00 - 2026-04-05 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3206.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nctf.x1ct34m.com/games/2",
+        "比赛标志": "https://ctftime.org/media/events/X1cT34m-transparent.png",
+        "比赛权重": "0",
+        "赛事主办": "X1cT34m (https://ctftime.org/team/14482)",
+        "比赛ID": "1545",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "CITEFLAG QUALS 2026",
         "比赛时间": "2026-04-04 06:00:00 - 2026-04-05 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3175.ics",
@@ -849,6 +849,18 @@
         "比赛权重": "0",
         "赛事主办": "CITEFLAG (https://ctftime.org/team/425411)",
         "比赛ID": "1522",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "RITSEC CTF 2026",
+        "比赛时间": "2026-04-04 05:00:00 - 2026-04-06 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3096.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctfd.ritsec.club/",
+        "比赛标志": "https://ctftime.org/media/events/ritsec_ctf_2026_TP.png",
+        "比赛权重": "48.64",
+        "赛事主办": "Contagion (https://ctftime.org/team/152691)",
+        "比赛ID": "170",
         "比赛状态": "past"
     },
     {
@@ -1977,30 +1989,6 @@
         "比赛权重": "33.49",
         "赛事主办": "UofTCTF (https://ctftime.org/team/139261)",
         "比赛ID": "1052",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Scarlet CTF 2026",
-        "比赛时间": "2026-01-09 08:00:00 - 2026-01-12 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2981.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.rusec.club/",
-        "比赛标志": "https://ctftime.org/media/events/8ed561b45f892df2a5b105e8537794b3_1.jpg",
-        "比赛权重": "23.82",
-        "赛事主办": "ScarletCTF (https://ctftime.org/team/226444)",
-        "比赛ID": "1143",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "hxp 39C3 CTF",
-        "比赛时间": "2025-12-28 04:00:00 - 2025-12-30 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2924.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2025.ctf.link/",
-        "比赛标志": "https://ctftime.org/media/events/hxp-39c3.png",
-        "比赛权重": "98.14",
-        "赛事主办": "hxp (https://ctftime.org/team/585)",
-        "比赛ID": "120",
         "比赛状态": "past"
     }
 ]
