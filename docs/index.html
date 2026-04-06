@@ -65,8 +65,6 @@
         }
         #themeToggle {
             contain: layout;
-            isolation: isolate;
-            transform: translate3d(0, 0, 0);
         }
         /* 工具栏：与首页圆角按钮、渐变主操作统一 */
         #home-calendar .fc-header-toolbar {
@@ -294,22 +292,152 @@
             background: rgba(15, 23, 42, 0.72);
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 12px 32px -8px rgba(0, 0, 0, 0.35);
         }
+        /* 左侧固定导航侧边栏 */
+        #leftSidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 14.5rem;
+            z-index: 40;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid rgba(226, 232, 240, 0.85);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            overflow-y: auto;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .dark #leftSidebar {
+            border-color: rgba(51, 65, 85, 0.65);
+            background: rgba(15, 23, 42, 0.95);
+        }
+        #mainContent {
+            margin-left: 14.5rem;
+            min-height: 100vh;
+        }
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.625rem;
+            font-size: 0.8125rem;
+            font-weight: 500;
+            color: rgba(15, 23, 42, 0.78);
+            transition: background 0.2s ease, color 0.2s ease;
+            text-decoration: none;
+        }
+        .sidebar-link:hover {
+            background: rgba(59, 130, 246, 0.08);
+            color: #3b82f6;
+        }
+        .sidebar-link.active {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(99, 102, 241, 0.12));
+            color: #3b82f6;
+            font-weight: 600;
+        }
+        .dark .sidebar-link {
+            color: rgba(255, 255, 255, 0.78);
+        }
+        .dark .sidebar-link:hover {
+            background: rgba(99, 102, 241, 0.12);
+            color: #818cf8;
+        }
+        .dark .sidebar-link.active {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.18), rgba(99, 102, 241, 0.18));
+            color: #818cf8;
+        }
+        .sidebar-link svg {
+            width: 1.125rem;
+            height: 1.125rem;
+            flex-shrink: 0;
+            opacity: 0.65;
+        }
+        .sidebar-link:hover svg,
+        .sidebar-link.active svg { opacity: 1; }
+        #sidebarOverlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 35;
+        }
+        #sidebarOverlay.open { display: block; }
+        #mobileMenuBtn { display: none; }
+        @media (max-width: 1023px) {
+            #leftSidebar { transform: translateX(-100%); }
+            #leftSidebar.open { transform: translateX(0); }
+            #mainContent { margin-left: 0; }
+            #mobileMenuBtn { display: flex; }
+        }
     </style>
 </head>
 
 <body class="font-sans bg-white dark:bg-base-950 text-base-900 dark:text-white transition-colors duration-300">
     <div class="grid-background"></div>
 
-    <button id="themeToggle" type="button" class="fixed top-4 right-4 z-50 p-2.5 rounded-2xl border border-base-200/80 bg-white/90 text-primary shadow-md backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-base-700 dark:bg-base-900/90 dark:text-accent" aria-label="切换主题">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-        </svg>
+    <!-- 移动端遮罩 -->
+    <div id="sidebarOverlay"></div>
+
+    <!-- 左侧固定导航侧边栏 -->
+    <aside id="leftSidebar">
+        <div class="p-4 pb-3 border-b border-base-100 dark:border-base-800">
+            <h2 class="font-mono font-bold text-lg text-gradient leading-tight">Hello CTF</h2>
+            <p class="text-[0.65rem] text-base-900/45 dark:text-white/35 mt-0.5 font-mono">免费开源 CTF 入门教程</p>
+        </div>
+        <nav class="flex-1 overflow-y-auto px-2.5 py-3 space-y-0.5">
+            <a href="./index.html" class="sidebar-link active">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+                <span>首页</span>
+            </a>
+            <a href="./sidebar/tools.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085"/></svg>
+                <span>工具 / MCP</span>
+            </a>
+            <a href="./sidebar/ctf-skill.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
+                <span>CTF-SKILL</span>
+            </a>
+            <a href="./sidebar/career-cards.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"/></svg>
+                <span>网络安全职业卡片</span>
+            </a>
+            <a href="./sidebar/archives.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+                <span>历史比赛附件</span>
+            </a>
+            <a href="./sidebar/friends.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"/></svg>
+                <span>师傅们的友链</span>
+            </a>
+            <a href="./sidebar/resources.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
+                <span>学习资源推荐</span>
+            </a>
+            <a href="./sidebar/feedback.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/></svg>
+                <span>反馈与群聊入口</span>
+            </a>
+        </nav>
+        <div class="p-3 border-t border-base-100 dark:border-base-800">
+            <button id="themeToggle" type="button" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl border border-base-200/80 bg-white/60 text-sm text-base-900/70 transition-all duration-200 hover:bg-primary/[0.06] hover:text-primary hover:border-primary/40 dark:border-base-700 dark:bg-base-900/40 dark:text-white/60 dark:hover:bg-accent/10 dark:hover:text-accent dark:hover:border-accent/40" aria-label="切换主题">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                <span class="block dark:hidden">深色模式</span>
+                <span class="hidden dark:block">浅色模式</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- 移动端菜单按钮 -->
+    <button id="mobileMenuBtn" type="button" class="fixed top-4 left-4 z-50 items-center justify-center p-2.5 rounded-2xl border border-base-200/80 bg-white/90 text-primary shadow-md backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-base-700 dark:bg-base-900/90 dark:text-accent" aria-label="菜单">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
     </button>
 
-    <main class="relative max-w-7xl mx-auto px-4 pt-16 pb-12 lg:pt-20">
+    <div id="mainContent">
+    <main class="relative max-w-7xl mx-auto px-4 pt-8 pb-12 lg:pt-12">
         <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
             <!-- 左侧栏 -->
             <aside class="w-full lg:w-80 xl:w-[22rem] flex-shrink-0 space-y-6">
@@ -439,6 +567,7 @@
             </div>
         </footer>
     </main>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.9/dist/purify.min.js"></script>
@@ -707,11 +836,37 @@
             counterElements.forEach((c) => observer.observe(c));
         }
 
+        function initSidebar() {
+            const sidebar = document.getElementById('leftSidebar');
+            const overlay = document.getElementById('sidebarOverlay');
+            const menuBtn = document.getElementById('mobileMenuBtn');
+            if (!sidebar || !menuBtn) return;
+
+            function openSidebar() {
+                sidebar.classList.add('open');
+                if (overlay) overlay.classList.add('open');
+            }
+            function closeSidebar() {
+                sidebar.classList.remove('open');
+                if (overlay) overlay.classList.remove('open');
+            }
+
+            menuBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+            });
+            if (overlay) overlay.addEventListener('click', closeSidebar);
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closeSidebar();
+            });
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
             loadIndexContent();
             loadHomeCalendar();
             initHeroText();
             initStatCounters();
+            initSidebar();
         });
     </script>
 </body>

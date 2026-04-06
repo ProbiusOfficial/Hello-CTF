@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>反馈与群聊入口 - Hello CTF</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTF/main/docs/assets/images/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#3b82f6', dark: '#2563eb' },
+                        accent: { DEFAULT: '#6366f1', dark: '#4f46e5' },
+                        base: { 50: '#f8fafc', 100: '#f1f5f9', 900: '#0f172a', 950: '#020617' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], mono: ['JetBrains Mono', 'monospace'] },
+                }
+            }
+        }
+    </script>
+    <style>
+        .text-gradient {
+            background: linear-gradient(45deg, #3b82f6, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .dark .text-gradient {
+            background: linear-gradient(45deg, #60a5fa, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans bg-white dark:bg-base-950 text-base-900 dark:text-white min-h-screen flex items-center justify-center transition-colors duration-300">
+    <div class="text-center px-6 py-12 max-w-lg">
+        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-indigo-600 text-white mb-6 shadow-lg shadow-primary/30">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/></svg>
+        </div>
+        <h1 class="text-3xl font-bold font-mono text-gradient mb-3">反馈与群聊入口</h1>
+        <p class="text-base-900/60 dark:text-white/50 mb-8">该页面正在建设中，敬请期待...</p>
+        <a href="../index.html" class="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-primary to-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/30 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/></svg>
+            返回首页
+        </a>
+    </div>
+    <script>
+        const h = document.documentElement;
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) h.classList.add('dark');
+    </script>
+</body>
+</html>
