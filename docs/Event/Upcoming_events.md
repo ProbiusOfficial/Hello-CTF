@@ -112,6 +112,24 @@ comments: true
     **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
     **添加日历** : https://ctftime.org/event/3156.ics  
     
+??? Quote "[BlueHens CTF 2026](https://bluehens.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/1649244ad20feb4c02d8740a7cb035d3.png){ width="200" align=left }](https://bluehens.ctfd.io/)  
+    **比赛名称** : [BlueHens CTF 2026](https://bluehens.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-18 01:00:00 - 2026-04-19 13:00:00 UTC+8  
+    **比赛权重** : 44.77  
+    **赛事主办** : Blue Hens (https://ctftime.org/team/64660)  
+    **添加日历** : https://ctftime.org/event/3235.ics  
+    
+??? Quote "[squ1rrel CTF 2026](https://ctf.squ1rrel.dev/)"  
+    [![](https://ctftime.org/media/events/squ1rrel_logo_1.png){ width="200" align=left }](https://ctf.squ1rrel.dev/)  
+    **比赛名称** : [squ1rrel CTF 2026](https://ctf.squ1rrel.dev/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-18 07:00:00 - 2026-04-19 14:00:00 UTC+8  
+    **比赛权重** : 32.47  
+    **赛事主办** : squ1rrel (https://ctftime.org/team/201730)  
+    **添加日历** : https://ctftime.org/event/3234.ics  
+    
 ??? Quote "[b01lers CTF 2026](https://b01lersc.tf/)"  
     [![](https://ctftime.org/media/events/b01lers.png){ width="200" align=left }](https://b01lersc.tf/)  
     **比赛名称** : [b01lers CTF 2026](https://b01lersc.tf/)  
@@ -192,6 +210,15 @@ comments: true
     **比赛权重** : 24.53  
     **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
     **添加日历** : https://ctftime.org/event/3192.ics  
+    
+??? Quote "[MCTF 5.0](https://mctf.microclub.info/)"  
+    [![](https://ctftime.org/media/events/logo_3d_version_2.png){ width="200" align=left }](https://mctf.microclub.info/)  
+    **比赛名称** : [MCTF 5.0](https://mctf.microclub.info/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-01 03:00:00 - 2026-05-02 15:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Micro Club (https://ctftime.org/team/425393)  
+    **添加日历** : https://ctftime.org/event/3168.ics  
     
 ??? Quote "[KubSTU CTF](https://kubstu-ctf.online/)"  
     [![](https://ctftime.org/media/events/1233.png){ width="200" align=left }](https://kubstu-ctf.online/)  

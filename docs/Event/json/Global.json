@@ -132,6 +132,30 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "BlueHens CTF 2026",
+        "比赛时间": "2026-04-18 01:00:00 - 2026-04-19 13:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3235.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://bluehens.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/1649244ad20feb4c02d8740a7cb035d3.png",
+        "比赛权重": "44.77",
+        "赛事主办": "Blue Hens (https://ctftime.org/team/64660)",
+        "比赛ID": "603",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "squ1rrel CTF 2026",
+        "比赛时间": "2026-04-18 07:00:00 - 2026-04-19 14:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3234.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.squ1rrel.dev/",
+        "比赛标志": "https://ctftime.org/media/events/squ1rrel_logo_1.png",
+        "比赛权重": "32.47",
+        "赛事主办": "squ1rrel (https://ctftime.org/team/201730)",
+        "比赛ID": "1110",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "b01lers CTF 2026",
         "比赛时间": "2026-04-18 08:00:00 - 2026-04-20 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3153.ics",
@@ -237,6 +261,18 @@
         "比赛权重": "24.53",
         "赛事主办": "UPT-CTF (https://ctftime.org/team/276942)",
         "比赛ID": "1337",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "MCTF 5.0",
+        "比赛时间": "2026-05-01 03:00:00 - 2026-05-02 15:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3168.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://mctf.microclub.info/",
+        "比赛标志": "https://ctftime.org/media/events/logo_3d_version_2.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Micro Club (https://ctftime.org/team/425393)",
+        "比赛ID": "1521",
         "比赛状态": "oncoming"
     },
     {
