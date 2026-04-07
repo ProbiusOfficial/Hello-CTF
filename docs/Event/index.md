@@ -497,15 +497,6 @@ hide:
                 **比赛详细** : 筹备中  
                 
         === "国外赛事"
-            ??? Quote "[Dreamhack Invitational 2026](https://dreamhack.io/)"  
-                [![](){ width="200" align=left }](https://dreamhack.io/)  
-                **比赛名称** : [Dreamhack Invitational 2026](https://dreamhack.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-04-07 08:00:00 - 2026-04-07 23:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
-                **添加日历** : https://ctftime.org/event/3026.ics  
-                
             ??? Quote "[Pàlcam Cybergames 2026](https://palcamcg2026.soterctf.com/)"  
                 [![](https://ctftime.org/media/events/palcamLogo.png){ width="200" align=left }](https://palcamcg2026.soterctf.com/)  
                 **比赛名称** : [Pàlcam Cybergames 2026](https://palcamcg2026.soterctf.com/)  
@@ -1130,6 +1121,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Triada (https://ctftime.org/team/303057)  
                 **添加日历** : https://ctftime.org/event/3187.ics  
+                
+            ??? Quote "[Dreamhack Invitational 2026](https://dreamhack.io/)"  
+                [![](){ width="200" align=left }](https://dreamhack.io/)  
+                **比赛名称** : [Dreamhack Invitational 2026](https://dreamhack.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-04-07 08:00:00 - 2026-04-07 23:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
+                **添加日历** : https://ctftime.org/event/3026.ics  
                 
     === "*已经结束*"
         === "国内赛事"

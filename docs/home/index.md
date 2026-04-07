@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[Dreamhack Invitational 2026](https://dreamhack.io/)"  
-            [![](){ width="200" align=left }](https://dreamhack.io/)  
-            **比赛名称** : [Dreamhack Invitational 2026](https://dreamhack.io/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-04-07 08:00:00 - 2026-04-07 23:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
-            **添加日历** : https://ctftime.org/event/3026.ics  
-            
         ??? Quote "[Pàlcam Cybergames 2026](https://palcamcg2026.soterctf.com/)"  
             [![](https://ctftime.org/media/events/palcamLogo.png){ width="200" align=left }](https://palcamcg2026.soterctf.com/)  
             **比赛名称** : [Pàlcam Cybergames 2026](https://palcamcg2026.soterctf.com/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 65.95  
             **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
             **添加日历** : https://ctftime.org/event/2937.ics  
+            
+        ??? Quote "[Cybersplash 2026](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)"  
+            [![](https://ctftime.org/media/events/1_4.png){ width="200" align=left }](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)  
+            **比赛名称** : [Cybersplash 2026](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-04-11 10:00:00 - 2026-04-12 10:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : SECPlayground (https://ctftime.org/team/375409)  
+            **添加日历** : https://ctftime.org/event/3190.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
