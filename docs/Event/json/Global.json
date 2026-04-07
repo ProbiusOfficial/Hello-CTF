@@ -825,7 +825,7 @@
         "比赛权重": "0",
         "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
         "比赛ID": "1090",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Triada CTF '26",
@@ -2013,18 +2013,6 @@
         "比赛权重": "23.42",
         "赛事主办": "Beavers0 (https://ctftime.org/team/269281)",
         "比赛ID": "1041",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SCPCTF",
-        "比赛时间": "2026-01-10 11:30:00 - 2026-01-12 11:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3064.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://scpctf.vercel.app/",
-        "比赛标志": "https://ctftime.org/media/events/Screenshot_2025-10-03_231925_1.png",
-        "比赛权重": "0",
-        "赛事主办": "SCP CTF (https://ctftime.org/team/415339)",
-        "比赛ID": "1461",
         "比赛状态": "past"
     }
 ]
