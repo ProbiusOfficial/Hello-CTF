@@ -816,18 +816,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Triada CTF '26",
-        "比赛时间": "2026-04-06 12:30:00 - 2026-04-07 12:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3187.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf26.triada.in/",
-        "比赛标志": "https://ctftime.org/media/events/ctftime_logo.png",
-        "比赛权重": "0",
-        "赛事主办": "Triada (https://ctftime.org/team/303057)",
-        "比赛ID": "1534",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Dreamhack Invitational 2026",
         "比赛时间": "2026-04-07 08:00:00 - 2026-04-07 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3026.ics",
@@ -838,6 +826,18 @@
         "赛事主办": "Dreamhack (https://ctftime.org/team/367894)",
         "比赛ID": "1090",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Triada CTF '26",
+        "比赛时间": "2026-04-06 12:30:00 - 2026-04-07 12:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3187.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf26.triada.in/",
+        "比赛标志": "https://ctftime.org/media/events/ctftime_logo.png",
+        "比赛权重": "0",
+        "赛事主办": "Triada (https://ctftime.org/team/303057)",
+        "比赛ID": "1534",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "SillyCTF 2",
@@ -2025,18 +2025,6 @@
         "比赛权重": "0",
         "赛事主办": "SCP CTF (https://ctftime.org/team/415339)",
         "比赛ID": "1461",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "UofTCTF 2026",
-        "比赛时间": "2026-01-10 08:00:00 - 2026-01-12 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2969.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.uoftctf.org/",
-        "比赛标志": "https://ctftime.org/media/events/uoftctf_logo_3000_black_1.png",
-        "比赛权重": "33.49",
-        "赛事主办": "UofTCTF (https://ctftime.org/team/139261)",
-        "比赛ID": "1052",
         "比赛状态": "past"
     }
 ]
