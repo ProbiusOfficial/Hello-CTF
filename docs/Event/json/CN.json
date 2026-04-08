@@ -3,6 +3,13 @@
     "data": {
         "result": [
             {
+                "name": "数字中国创新大赛",
+                "link": "https://wap.dcic-china.com/competitions/10212",
+                "comp_time_start": "2026年04月12日 09:00",
+                "comp_time_end": "2026年04月12日 12:00",
+                "detail": ""
+            },
+            {
                 "name": "NepCTF 2026",
                 "link": "/isPrepare",
                 "comp_time_start": "2026年07月10日 19:00",
@@ -24,7 +31,7 @@
                 "detail": "QQ群：713192205；比赛平台/报名地址：https://www.qsnctf.com/#/login。报名时间：2026年03月23日15:00-2026年03月28日09:59。每月比赛时间为月末最后一个周六上午10:00，报名时间为开始前两天。题目范围：综合靶场、Windows独立靶场、Linux独立靶场、日志审计、数据库、逆向分析、流量分析。"
             }
         ],
-        "total": 3,
+        "total": 4,
         "page": 1,
         "size": 20
     },
