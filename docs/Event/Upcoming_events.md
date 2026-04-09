@@ -63,15 +63,6 @@ comments: true
     **赛事主办** : TH3_RANG3RS (https://ctftime.org/team/406018)  
     **添加日历** : https://ctftime.org/event/3230.ics  
     
-??? Quote "[Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)"  
-    [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
-    **比赛名称** : [Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-11 18:00:00 - 2026-04-12 18:00:00 UTC+8  
-    **比赛权重** : 48.17  
-    **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-    **添加日历** : https://ctftime.org/event/2773.ics  
-    
 ??? Quote "[PUTCyberDays CTF 2026](https://putcyberdays.pl/en/)"  
     [![](https://ctftime.org/media/events/logo_wydarzenia.png){ width="200" align=left }](https://putcyberdays.pl/en/)  
     **比赛名称** : [PUTCyberDays CTF 2026](https://putcyberdays.pl/en/)  
@@ -134,6 +125,15 @@ comments: true
     **比赛权重** : 66.00  
     **赛事主办** : b01lers (https://ctftime.org/team/11464)  
     **添加日历** : https://ctftime.org/event/3153.ics  
+    
+??? Quote "[Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)"  
+    [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
+    **比赛名称** : [Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-18 18:00:00 - 2026-04-19 18:00:00 UTC+8  
+    **比赛权重** : 48.17  
+    **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
+    **添加日历** : https://ctftime.org/event/2773.ics  
     
 ??? Quote "[pingCTF 2026](https://knping.pl/ctf)"  
     [![](https://ctftime.org/media/events/logo_121.png){ width="200" align=left }](https://knping.pl/ctf)  

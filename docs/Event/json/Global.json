@@ -60,18 +60,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Midnight Sun CTF 2026 Quals",
-        "比赛时间": "2026-04-11 18:00:00 - 2026-04-12 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2773.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://play.midnightsunctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png",
-        "比赛权重": "48.17",
-        "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
-        "比赛ID": "246",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "PUTCyberDays CTF 2026",
         "比赛时间": "2026-04-11 18:00:00 - 2026-04-12 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3202.ics",
@@ -153,6 +141,18 @@
         "比赛权重": "66.00",
         "赛事主办": "b01lers (https://ctftime.org/team/11464)",
         "比赛ID": "408",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Midnight Sun CTF 2026 Quals",
+        "比赛时间": "2026-04-18 18:00:00 - 2026-04-19 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2773.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://play.midnightsunctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png",
+        "比赛权重": "48.17",
+        "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
+        "比赛ID": "246",
         "比赛状态": "oncoming"
     },
     {
