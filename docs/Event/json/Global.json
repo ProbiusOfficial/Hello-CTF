@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "DawgCTF 2026",
-        "比赛时间": "2026-04-11 00:00:00 - 2026-04-13 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3102.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://metactf.com/join/dawgctf26",
-        "比赛标志": "https://ctftime.org/media/events/dawgsec_shield-ctftime_2_1.png",
-        "比赛权重": "66.64",
-        "赛事主办": "UMBC Cyber Dawgs (https://ctftime.org/team/18405)",
-        "比赛ID": "437",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "UMassCTF 2026",
         "比赛时间": "2026-04-11 06:00:00 - 2026-04-13 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2937.ics",
@@ -801,6 +789,18 @@
         "比赛权重": "0",
         "赛事主办": "Pàlcam ASIX (https://ctftime.org/team/428952)",
         "比赛ID": "1551",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "DawgCTF 2026",
+        "比赛时间": "2026-04-11 00:00:00 - 2026-04-13 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3102.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://metactf.com/join/dawgctf26",
+        "比赛标志": "https://ctftime.org/media/events/dawgsec_shield-ctftime_2_1.png",
+        "比赛权重": "66.64",
+        "赛事主办": "UMBC Cyber Dawgs (https://ctftime.org/team/18405)",
+        "比赛ID": "437",
         "比赛状态": "nowrunning"
     },
     {
