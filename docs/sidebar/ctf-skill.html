@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CTF-SKILL - Hello CTF</title>
+    <title>helloctf-skill - Hello CTF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTF/main/docs/assets/images/favicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -17,39 +19,512 @@
                         accent: { DEFAULT: '#6366f1', dark: '#4f46e5' },
                         base: { 50: '#f8fafc', 100: '#f1f5f9', 900: '#0f172a', 950: '#020617' }
                     },
-                    fontFamily: { sans: ['Inter', 'sans-serif'], mono: ['JetBrains Mono', 'monospace'] },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
                 }
             }
         }
     </script>
     <style>
+        ::-webkit-scrollbar { width: 4px; height: 4px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 4px; }
         .text-gradient {
             background: linear-gradient(45deg, #3b82f6, #6366f1);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         .dark .text-gradient {
             background: linear-gradient(45deg, #60a5fa, #818cf8);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+        .grid-background {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: -20;
+            background-image:
+                linear-gradient(to right, rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        .dark .grid-background {
+            background-image:
+                linear-gradient(to right, rgba(99, 102, 241, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(99, 102, 241, 0.05) 1px, transparent 1px);
+        }
+
+        #leftSidebar {
+            position: fixed; top: 0; left: 0; bottom: 0;
+            width: 14.5rem; z-index: 40;
+            display: flex; flex-direction: column;
+            border-right: 1px solid rgba(226, 232, 240, 0.85);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            overflow-y: auto;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .dark #leftSidebar {
+            border-color: rgba(51, 65, 85, 0.65);
+            background: rgba(15, 23, 42, 0.95);
+        }
+        #mainContent { margin-left: 14.5rem; min-height: 100vh; }
+        .sidebar-link {
+            display: flex; align-items: center; gap: 0.625rem;
+            padding: 0.5rem 0.75rem; border-radius: 0.625rem;
+            font-size: 0.8125rem; font-weight: 500;
+            color: rgba(15, 23, 42, 0.78);
+            transition: background 0.2s ease, color 0.2s ease;
+            text-decoration: none;
+        }
+        .sidebar-link:hover { background: rgba(59, 130, 246, 0.08); color: #3b82f6; }
+        .sidebar-link.active {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(99, 102, 241, 0.12));
+            color: #3b82f6; font-weight: 600;
+        }
+        .dark .sidebar-link { color: rgba(255, 255, 255, 0.78); }
+        .dark .sidebar-link:hover { background: rgba(99, 102, 241, 0.12); color: #818cf8; }
+        .dark .sidebar-link.active {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.18), rgba(99, 102, 241, 0.18));
+            color: #818cf8;
+        }
+        .sidebar-link svg { width: 1.125rem; height: 1.125rem; flex-shrink: 0; opacity: 0.65; }
+        .sidebar-link:hover svg, .sidebar-link.active svg { opacity: 1; }
+        #sidebarOverlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 35; }
+        #sidebarOverlay.open { display: block; }
+        #mobileMenuBtn { display: none; }
+        @media (max-width: 1023px) {
+            #leftSidebar { transform: translateX(-100%); }
+            #leftSidebar.open { transform: translateX(0); }
+            #mainContent { margin-left: 0; }
+            #mobileMenuBtn { display: flex; }
+        }
+
+        .card-surface {
+            border-radius: 1rem;
+            border: 1px solid rgba(226, 232, 240, 0.85);
+            background: rgba(255, 255, 255, 0.78);
+            box-shadow: 0 1px 2px rgba(59, 130, 246, 0.04), 0 8px 24px -4px rgba(15, 23, 42, 0.06);
+            transition: transform 0.22s ease, box-shadow 0.22s ease;
+        }
+        .card-surface:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 2px 6px rgba(59, 130, 246, 0.08), 0 16px 40px -6px rgba(15, 23, 42, 0.12);
+        }
+        .dark .card-surface {
+            border-color: rgba(51, 65, 85, 0.65);
+            background: rgba(15, 23, 42, 0.72);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.2), 0 12px 32px -8px rgba(0,0,0,0.35);
+        }
+        .dark .card-surface:hover {
+            box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15), 0 20px 48px -8px rgba(0,0,0,0.45);
+        }
+
+        .skill-pill {
+            display: inline-flex; align-items: center;
+            padding: 0.2rem 0.55rem; border-radius: 9999px;
+            font-size: 0.6875rem; font-weight: 500;
+            white-space: nowrap;
+            transition: all 0.18s ease;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .skill-pill:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .search-box {
+            border: 1.5px solid rgba(226, 232, 240, 0.85);
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 0.875rem;
+            transition: all 0.2s ease;
+        }
+        .search-box:focus-within {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+        }
+        .dark .search-box {
+            border-color: rgba(51, 65, 85, 0.65);
+            background: rgba(30, 41, 59, 0.6);
+        }
+        .dark .search-box:focus-within {
+            border-color: #818cf8;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+        }
+
+        .category-icon {
+            width: 2.75rem; height: 2.75rem;
+            border-radius: 0.75rem;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(16px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-up { animation: fadeInUp 0.4s ease forwards; }
+
+        .modal-overlay {
+            position: fixed; inset: 0; z-index: 100;
+            display: flex; align-items: center; justify-content: center;
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            padding: 1rem;
+            opacity: 0; transition: opacity 0.2s ease;
+            pointer-events: none;
+        }
+        .modal-overlay.open {
+            opacity: 1; pointer-events: auto;
+        }
+        .modal-box {
+            width: 100%; max-width: 28rem; max-height: 80vh;
+            border-radius: 1.25rem;
+            border: 1px solid rgba(226, 232, 240, 0.85);
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.25);
+            display: flex; flex-direction: column;
+            transform: translateY(12px) scale(0.97);
+            transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+        }
+        .modal-overlay.open .modal-box {
+            transform: translateY(0) scale(1);
+        }
+        .dark .modal-box {
+            border-color: rgba(51, 65, 85, 0.65);
+            background: rgba(15, 23, 42, 0.98);
+            box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.6);
+        }
+        .modal-tags-area {
+            overflow-y: auto; max-height: 40vh;
+        }
+        .modal-tag {
+            display: inline-flex; align-items: center;
+            padding: 0.25rem 0.6rem; border-radius: 0.375rem;
+            font-size: 0.75rem; font-weight: 500;
+            white-space: nowrap;
         }
     </style>
 </head>
-<body class="font-sans bg-white dark:bg-base-950 text-base-900 dark:text-white min-h-screen flex items-center justify-center transition-colors duration-300">
-    <div class="text-center px-6 py-12 max-w-lg">
-        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-indigo-600 text-white mb-6 shadow-lg shadow-primary/30">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
+
+<body class="font-sans bg-white dark:bg-base-950 text-base-900 dark:text-white transition-colors duration-300">
+    <div class="grid-background"></div>
+
+    <div id="sidebarOverlay"></div>
+
+    <aside id="leftSidebar">
+        <div class="p-4 pb-3 border-b border-base-100 dark:border-base-800">
+            <h2 class="font-mono font-bold text-lg text-gradient leading-tight">Hello CTF</h2>
+            <p class="text-[0.65rem] text-base-900/45 dark:text-white/35 mt-0.5 font-mono">免费开源 CTF 入门教程</p>
         </div>
-        <h1 class="text-3xl font-bold font-mono text-gradient mb-3">CTF-SKILL</h1>
-        <p class="text-base-900/60 dark:text-white/50 mb-8">该页面正在建设中，敬请期待...</p>
-        <a href="../index.html" class="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-primary to-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/30 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/></svg>
-            返回首页
-        </a>
+        <nav class="flex-1 overflow-y-auto px-2.5 py-3 space-y-0.5">
+            <a href="../index.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+                <span>首页</span>
+            </a>
+            <a href="./tools.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085"/></svg>
+                <span>工具 / MCP</span>
+            </a>
+            <a href="./ctf-skill.html" class="sidebar-link active">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
+                <span>CTF-SKILL</span>
+            </a>
+            <a href="./career-cards.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"/></svg>
+                <span>网络安全职业卡片</span>
+            </a>
+            <a href="./archives.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+                <span>历史比赛附件</span>
+            </a>
+            <a href="./friends.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"/></svg>
+                <span>师傅们的友链</span>
+            </a>
+            <a href="./resources.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
+                <span>学习资源推荐</span>
+            </a>
+            <a href="./feedback.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/></svg>
+                <span>反馈与群聊入口</span>
+            </a>
+        </nav>
+        <div class="p-3 border-t border-base-100 dark:border-base-800">
+            <button id="themeToggle" type="button" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl border border-base-200/80 bg-white/60 text-sm text-base-900/70 transition-all duration-200 hover:bg-primary/[0.06] hover:text-primary hover:border-primary/40 dark:border-base-700 dark:bg-base-900/40 dark:text-white/60 dark:hover:bg-accent/10 dark:hover:text-accent dark:hover:border-accent/40" aria-label="切换主题">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                <span class="block dark:hidden">深色模式</span>
+                <span class="hidden dark:block">浅色模式</span>
+            </button>
+        </div>
+    </aside>
+
+    <button id="mobileMenuBtn" class="fixed top-4 left-4 z-50 p-2 rounded-xl bg-white/80 dark:bg-base-900/80 border border-base-200 dark:border-base-700 backdrop-blur-md items-center justify-center" aria-label="打开菜单">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-base-900/70 dark:text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+    </button>
+
+    <div id="mainContent">
+        <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+            <div class="mb-8">
+                <h1 class="text-3xl sm:text-4xl font-bold font-mono">
+                    <span class="text-gradient">helloctf-skill</span>
+                </h1>
+                <p class="mt-2 text-base-900/60 dark:text-white/50 text-sm sm:text-base max-w-2xl">
+                    CTF 各方向知识技能树，基于国内 CTF 竞赛体系整理。按方向浏览，快速定位你需要学习的知识点。
+                </p>
+                <div class="mt-3 flex items-center gap-2 text-xs text-base-900/45 dark:text-white/35 font-mono">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
+                    <span>共 <strong id="categoryCount" class="text-base-900/70 dark:text-white/60">0</strong> 个方向</span>
+                    <span class="mx-1">&middot;</span>
+                    <span>涵盖 <strong id="skillCount" class="text-base-900/70 dark:text-white/60">0</strong> 个知识域</span>
+                </div>
+            </div>
+
+            <div class="search-box flex items-center gap-3 px-4 py-3 mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-base-900/35 dark:text-white/30 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
+                <input id="searchInput" type="text" placeholder="搜索方向、知识域或描述 ..." class="flex-1 bg-transparent outline-none text-sm text-base-900 dark:text-white placeholder-base-900/35 dark:placeholder-white/25">
+                <button id="clearSearch" class="hidden text-base-900/30 dark:text-white/25 hover:text-base-900/60 dark:hover:text-white/50 transition-colors" aria-label="清空搜索">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+            </div>
+
+            <div id="cardGrid" class="grid grid-cols-1 lg:grid-cols-2 gap-5"></div>
+
+            <div id="emptyState" class="hidden flex-col items-center justify-center py-20 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-base-900/15 dark:text-white/10 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
+                <p class="text-base-900/40 dark:text-white/30 text-sm font-medium">没有找到匹配的方向或知识域</p>
+                <p class="text-base-900/25 dark:text-white/20 text-xs mt-1">试试换个关键词</p>
+            </div>
+
+        </main>
     </div>
+
+    <div id="skillModal" class="modal-overlay">
+        <div class="modal-box">
+            <div class="px-6 pt-5 pb-4">
+                <div class="flex items-center gap-3 mb-1">
+                    <div id="modalIcon" class="category-icon"></div>
+                    <div>
+                        <h4 id="modalTitle" class="font-bold text-base text-base-900 dark:text-white"></h4>
+                        <p id="modalCategory" class="text-xs text-base-900/45 dark:text-white/35 font-mono"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 pb-4 modal-tags-area">
+                <p class="text-xs font-semibold text-base-900/50 dark:text-white/40 mb-2">包含知识点</p>
+                <div id="modalTags" class="flex flex-wrap gap-1.5"></div>
+            </div>
+            <div class="px-6 py-4 border-t border-base-100 dark:border-base-800 flex items-center justify-end gap-3">
+                <button id="modalCancel" class="px-4 py-2 rounded-xl text-sm font-medium text-base-900/60 dark:text-white/50 hover:bg-base-100 dark:hover:bg-base-800 transition-colors">取消</button>
+                <a id="modalConfirm" href="#" class="inline-flex items-center gap-1.5 px-5 py-2 rounded-xl bg-gradient-to-r from-primary to-indigo-600 text-sm font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl">
+                    前往 Skill 文档
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <script>
-        const h = document.documentElement;
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) h.classList.add('dark');
+        (function () {
+            var html = document.documentElement;
+            if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                html.classList.add('dark');
+            }
+            document.getElementById('themeToggle').addEventListener('click', function () {
+                html.classList.toggle('dark');
+                localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+            });
+
+            var sidebar = document.getElementById('leftSidebar');
+            var overlay = document.getElementById('sidebarOverlay');
+            var menuBtn = document.getElementById('mobileMenuBtn');
+            function closeSidebar() { sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+            menuBtn.addEventListener('click', function () { sidebar.classList.add('open'); overlay.classList.add('open'); });
+            overlay.addEventListener('click', closeSidebar);
+            document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeSidebar(); });
+
+            function c_(name) {
+                return { iconBg: 'bg-'+name+'-100 dark:bg-'+name+'-900/40', iconText: 'text-'+name+'-600 dark:text-'+name+'-400', pillBg: 'bg-'+name+'-50 dark:bg-'+name+'-900/30', pillText: 'text-'+name+'-700 dark:text-'+name+'-300', pillBorder: 'border border-'+name+'-200/80 dark:border-'+name+'-700/50', pillHover: 'hover:bg-'+name+'-100 dark:hover:bg-'+name+'-800/40', tagBg: 'bg-'+name+'-100/70 dark:bg-'+name+'-900/50', tagText: 'text-'+name+'-800 dark:text-'+name+'-200' };
+            }
+            var COLOR_MAP = {
+                orange: c_('orange'), indigo: c_('indigo'), emerald: c_('emerald'), red: c_('red'), violet: c_('violet'),
+                sky: c_('sky'), cyan: c_('cyan'), amber: c_('amber'), fuchsia: c_('fuchsia'),
+                slate: c_('slate'), teal: c_('teal'), rose: c_('rose'), lime: c_('lime')
+            };
+
+            var ICON_SVG = {
+                globe:    '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.176 0-6.17-.726-8.716-2.247m0 0A9.015 9.015 0 003 12c0-1.605.42-3.113 1.157-4.418"/></svg>',
+                key:      '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z"/></svg>',
+                puzzle:   '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 01-.657.643 48.39 48.39 0 01-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 01-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 00-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 01-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 00.657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 01-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 005.427-.63 48.05 48.05 0 00.582-4.717.532.532 0 00-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.959.401v0a.656.656 0 00.658-.663 48.422 48.422 0 00-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 01-.61-.58v0z"/></svg>',
+                terminal: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"/></svg>',
+                cpu:      '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z"/></svg>',
+                sparkles: '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/></svg>',
+                cloud:    '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z"/></svg>',
+                shield:   '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>',
+                cube:     '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"/></svg>',
+                cog:      '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.13l1.41-.513M5.106 17.785l1.15-.964m11.49-9.642l1.149-.964M7.501 19.795l.75-1.3m7.5-12.99l.75-1.3m-6.063 16.658l.26-1.477m2.605-14.772l.26-1.477m0 17.726l-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205L12 12m6.894 5.785l-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864l-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495"/></svg>',
+                wifi:     '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z"/></svg>',
+                bell:     '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"/></svg>',
+                crosshair:'<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 3.75H6A2.25 2.25 0 003.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0120.25 6v1.5m0 9V18A2.25 2.25 0 0118 20.25h-1.5m-9 0H6A2.25 2.25 0 013.75 18v-1.5M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>'
+            };
+
+            var allCategories = [];
+            var searchQuery = '';
+            var debounceTimer;
+
+            function pillHTML(sub, cat, subIdx) {
+                var c = COLOR_MAP[cat.color] || COLOR_MAP.orange;
+                return '<span class="skill-pill ' + c.pillBg + ' ' + c.pillText + ' ' + c.pillBorder + ' ' + c.pillHover + '" data-cat="' + cat.id + '" data-sub="' + subIdx + '">' + sub.name + '</span>';
+            }
+
+            function cardHTML(cat, idx) {
+                var c = COLOR_MAP[cat.color] || COLOR_MAP.orange;
+                var icon = ICON_SVG[cat.icon] || ICON_SVG.globe;
+                var pills = cat.subcategories.map(function (s, i) { return pillHTML(s, cat, i); }).join('');
+                var indexHref = '../hc-skill/' + cat.id + '/';
+
+                return '<div class="card-surface p-6 flex flex-col fade-in-up" style="animation-delay:' + (idx * 60) + 'ms">' +
+                    '<div class="flex items-start gap-3.5 mb-3">' +
+                        '<div class="category-icon ' + c.iconBg + ' ' + c.iconText + '">' + icon + '</div>' +
+                        '<div class="flex-1 min-w-0">' +
+                            '<a href="' + indexHref + '" class="group flex items-center gap-2">' +
+                                '<h3 class="font-bold text-base leading-snug text-base-900 dark:text-white group-hover:text-primary dark:group-hover:text-accent transition-colors">' + cat.name + '</h3>' +
+                                '<span class="text-xs font-medium text-base-900/40 dark:text-white/30">(' + cat.label + ')</span>' +
+                            '</a>' +
+                            '<p class="text-xs text-base-900/45 dark:text-white/35 mt-0.5 font-mono">' + cat.subcategories.length + ' 个知识域</p>' +
+                        '</div>' +
+                    '</div>' +
+                    '<p class="text-xs text-base-900/55 dark:text-white/45 leading-relaxed mb-4">' + cat.desc + '</p>' +
+                    '<div class="flex flex-wrap gap-1.5">' + pills + '</div>' +
+                '</div>';
+            }
+
+            function render() {
+                var filtered = allCategories;
+                if (searchQuery) {
+                    var kw = searchQuery.toLowerCase().split(/\s+/).filter(Boolean);
+                    filtered = allCategories.filter(function (cat) {
+                        var haystack = (cat.name + ' ' + cat.label + ' ' + cat.desc + ' ' + cat.subcategories.map(function (s) { return s.name + ' ' + (s.tags || []).join(' '); }).join(' ')).toLowerCase();
+                        for (var i = 0; i < kw.length; i++) {
+                            if (haystack.indexOf(kw[i]) === -1) return false;
+                        }
+                        return true;
+                    });
+                }
+                var grid = document.getElementById('cardGrid');
+                var empty = document.getElementById('emptyState');
+                if (filtered.length === 0) {
+                    grid.innerHTML = '';
+                    grid.classList.add('hidden');
+                    empty.classList.remove('hidden');
+                    empty.classList.add('flex');
+                } else {
+                    empty.classList.add('hidden');
+                    empty.classList.remove('flex');
+                    grid.classList.remove('hidden');
+                    grid.innerHTML = filtered.map(cardHTML).join('');
+                }
+            }
+
+            // ===== Modal =====
+            var modalEl = document.getElementById('skillModal');
+            var modalTitle = document.getElementById('modalTitle');
+            var modalCategory = document.getElementById('modalCategory');
+            var modalIcon = document.getElementById('modalIcon');
+            var modalTags = document.getElementById('modalTags');
+            var modalConfirm = document.getElementById('modalConfirm');
+            var modalCancel = document.getElementById('modalCancel');
+            var catMap = {};
+
+            function showModal(catId, subIdx) {
+                var cat = catMap[catId];
+                if (!cat) return;
+                var sub = cat.subcategories[subIdx];
+                if (!sub) return;
+                var c = COLOR_MAP[cat.color] || COLOR_MAP.orange;
+                var icon = ICON_SVG[cat.icon] || ICON_SVG.globe;
+
+                modalTitle.textContent = sub.name;
+                modalCategory.textContent = cat.name + ' / ' + cat.label;
+                modalIcon.className = 'category-icon ' + c.iconBg + ' ' + c.iconText;
+                modalIcon.innerHTML = icon;
+
+                var tags = sub.tags || [];
+                if (tags.length > 0) {
+                    modalTags.innerHTML = tags.map(function (t) {
+                        return '<span class="modal-tag ' + c.tagBg + ' ' + c.tagText + '">' + t + '</span>';
+                    }).join('');
+                } else {
+                    modalTags.innerHTML = '<span class="text-xs text-base-900/35 dark:text-white/25">暂无三级标签</span>';
+                }
+
+                modalConfirm.href = '../hc-skill/' + cat.id + '/' + sub.slug + '/';
+                modalEl.classList.add('open');
+            }
+
+            function closeModal() {
+                modalEl.classList.remove('open');
+            }
+
+            modalCancel.addEventListener('click', closeModal);
+            modalEl.addEventListener('click', function (e) {
+                if (e.target === modalEl) closeModal();
+            });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && modalEl.classList.contains('open')) closeModal();
+            });
+
+            document.getElementById('cardGrid').addEventListener('click', function (e) {
+                var pill = e.target.closest('.skill-pill');
+                if (!pill) return;
+                e.preventDefault();
+                showModal(pill.dataset.cat, parseInt(pill.dataset.sub, 10));
+            });
+
+            // ===== Search =====
+            var searchInput = document.getElementById('searchInput');
+            var clearBtn = document.getElementById('clearSearch');
+            searchInput.addEventListener('input', function () {
+                clearTimeout(debounceTimer);
+                debounceTimer = setTimeout(function () {
+                    searchQuery = searchInput.value.trim();
+                    clearBtn.classList.toggle('hidden', !searchQuery);
+                    render();
+                }, 180);
+            });
+            clearBtn.addEventListener('click', function () {
+                searchInput.value = '';
+                searchQuery = '';
+                clearBtn.classList.add('hidden');
+                render();
+                searchInput.focus();
+            });
+
+            fetch('./ctf_skill_data.json')
+                .then(function (r) { return r.json(); })
+                .then(function (data) {
+                    allCategories = data;
+                    data.forEach(function (c) { catMap[c.id] = c; });
+                    var totalSubs = data.reduce(function (sum, c) { return sum + c.subcategories.length; }, 0);
+                    document.getElementById('categoryCount').textContent = data.length;
+                    document.getElementById('skillCount').textContent = totalSubs;
+                    render();
+                })
+                .catch(function (err) {
+                    console.error('Failed to load skill data:', err);
+                    document.getElementById('cardGrid').innerHTML = '<p class="col-span-full text-center text-base-900/40 dark:text-white/30 py-20">数据加载失败，请刷新重试。</p>';
+                });
+        })();
     </script>
 </body>
 </html>
