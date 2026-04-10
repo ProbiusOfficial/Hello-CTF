@@ -17,6 +17,24 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Dreamhack Invitational 2026](https://dreamhack.io/)"  
+    [![](){ width="200" align=left }](https://dreamhack.io/)  
+    **比赛名称** : [Dreamhack Invitational 2026](https://dreamhack.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-07 08:00:00 - 2026-04-07 23:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
+    **添加日历** : https://ctftime.org/event/3026.ics  
+    
+??? Quote "[Triada CTF '26](http://ctf26.triada.in/)"  
+    [![](https://ctftime.org/media/events/ctftime_logo.png){ width="200" align=left }](http://ctf26.triada.in/)  
+    **比赛名称** : [Triada CTF '26](http://ctf26.triada.in/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-06 12:30:00 - 2026-04-07 12:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Triada (https://ctftime.org/team/303057)  
+    **添加日历** : https://ctftime.org/event/3187.ics  
+    
 ??? Quote "[SillyCTF 2](https://sillyctf.psuccso.org/)"  
     [![](https://ctftime.org/media/events/SillyCTF2logo.png){ width="200" align=left }](https://sillyctf.psuccso.org/)  
     **比赛名称** : [SillyCTF 2](https://sillyctf.psuccso.org/)  
@@ -103,7 +121,7 @@ comments: true
     **比赛名称** : [Hack for a Change 2026 March: UN SDG 3](https://www.hackforachange.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-03-31 08:00:00 - 2026-04-02 07:59:59 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 24.21  
     **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
     **添加日历** : https://ctftime.org/event/3184.ics  
     
@@ -898,22 +916,4 @@ comments: true
     **比赛权重** : 23.42  
     **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
     **添加日历** : https://ctftime.org/event/3021.ics  
-    
-??? Quote "[SCPCTF](https://scpctf.vercel.app/)"  
-    [![](https://ctftime.org/media/events/Screenshot_2025-10-03_231925_1.png){ width="200" align=left }](https://scpctf.vercel.app/)  
-    **比赛名称** : [SCPCTF](https://scpctf.vercel.app/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-10 11:30:00 - 2026-01-12 11:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : SCP CTF (https://ctftime.org/team/415339)  
-    **添加日历** : https://ctftime.org/event/3064.ics  
-    
-??? Quote "[UofTCTF 2026](https://ctf.uoftctf.org/)"  
-    [![](https://ctftime.org/media/events/uoftctf_logo_3000_black_1.png){ width="200" align=left }](https://ctf.uoftctf.org/)  
-    **比赛名称** : [UofTCTF 2026](https://ctf.uoftctf.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-10 08:00:00 - 2026-01-12 08:00:00 UTC+8  
-    **比赛权重** : 33.49  
-    **赛事主办** : UofTCTF (https://ctftime.org/team/139261)  
-    **添加日历** : https://ctftime.org/event/2969.ics  
     
