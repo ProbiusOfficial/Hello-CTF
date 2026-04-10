@@ -63,15 +63,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[Pàlcam Cybergames 2026](https://palcamcg2026.soterctf.com/)"  
-            [![](https://ctftime.org/media/events/palcamLogo.png){ width="200" align=left }](https://palcamcg2026.soterctf.com/)  
-            **比赛名称** : [Pàlcam Cybergames 2026](https://palcamcg2026.soterctf.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-04-10 18:00:00 - 2026-04-12 07:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : Pàlcam ASIX (https://ctftime.org/team/428952)  
-            **添加日历** : https://ctftime.org/event/3211.ics  
-            
         ??? Quote "[DawgCTF 2026](https://metactf.com/join/dawgctf26)"  
             [![](https://ctftime.org/media/events/dawgsec_shield-ctftime_2_1.png){ width="200" align=left }](https://metactf.com/join/dawgctf26)  
             **比赛名称** : [DawgCTF 2026](https://metactf.com/join/dawgctf26)  
@@ -90,14 +81,23 @@ hide:
             **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
             **添加日历** : https://ctftime.org/event/2937.ics  
             
-        ??? Quote "[Cybersplash 2026](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)"  
-            [![](https://ctftime.org/media/events/1_4.png){ width="200" align=left }](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)  
-            **比赛名称** : [Cybersplash 2026](https://lobby-ctf.secplayground.com/lobby/a3666ef9-617e-4db3-8bbe-413138e25e76)  
+        ??? Quote "[Cybersplash 2026](https://lobby-ctf.secplayground.com/lobby/8c09ae30-a668-448b-b6dc-b777b1e62521)"  
+            [![](https://ctftime.org/media/events/1_4.png){ width="200" align=left }](https://lobby-ctf.secplayground.com/lobby/8c09ae30-a668-448b-b6dc-b777b1e62521)  
+            **比赛名称** : [Cybersplash 2026](https://lobby-ctf.secplayground.com/lobby/8c09ae30-a668-448b-b6dc-b777b1e62521)  
             **比赛形式** : Jeopardy  
             **比赛时间** : 2026-04-11 10:00:00 - 2026-04-12 10:00:00 UTC+8  
             **比赛权重** : 0.00  
             **赛事主办** : SECPlayground (https://ctftime.org/team/375409)  
             **添加日历** : https://ctftime.org/event/3190.ics  
+            
+        ??? Quote "[KAALCHAKRA CTF Finals](https://kaalchakractf.com/)"  
+            [![](){ width="200" align=left }](https://kaalchakractf.com/)  
+            **比赛名称** : [KAALCHAKRA CTF Finals](https://kaalchakractf.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-04-11 12:30:00 - 2026-04-11 19:30:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : TH3_RANG3RS (https://ctftime.org/team/406018)  
+            **添加日历** : https://ctftime.org/event/3230.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
