@@ -45,3 +45,12 @@ comments: true
     **赛事主办** : Pàlcam ASIX (https://ctftime.org/team/428952)  
     **添加日历** : https://ctftime.org/event/3211.ics  
     
+??? Quote "[DawgCTF 2026](https://metactf.com/join/dawgctf26)"  
+    [![](https://ctftime.org/media/events/dawgsec_shield-ctftime_2_1.png){ width="200" align=left }](https://metactf.com/join/dawgctf26)  
+    **比赛名称** : [DawgCTF 2026](https://metactf.com/join/dawgctf26)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-11 00:00:00 - 2026-04-13 00:00:00 UTC+8  
+    **比赛权重** : 66.64  
+    **赛事主办** : UMBC Cyber Dawgs (https://ctftime.org/team/18405)  
+    **添加日历** : https://ctftime.org/event/3102.ics  
+    
