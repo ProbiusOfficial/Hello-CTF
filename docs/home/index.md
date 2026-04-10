@@ -63,15 +63,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[UMassCTF 2026](https://ctf.umasscybersec.org/)"  
-            [![](https://ctftime.org/media/events/CTF_LOGO_20240401_190034_0000.jpg){ width="200" align=left }](https://ctf.umasscybersec.org/)  
-            **比赛名称** : [UMassCTF 2026](https://ctf.umasscybersec.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-04-11 06:00:00 - 2026-04-13 06:00:00 UTC+8  
-            **比赛权重** : 65.95  
-            **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
-            **添加日历** : https://ctftime.org/event/2937.ics  
-            
         ??? Quote "[Cybersplash 2026](https://lobby-ctf.secplayground.com/lobby/8c09ae30-a668-448b-b6dc-b777b1e62521)"  
             [![](https://ctftime.org/media/events/1_4.png){ width="200" align=left }](https://lobby-ctf.secplayground.com/lobby/8c09ae30-a668-448b-b6dc-b777b1e62521)  
             **比赛名称** : [Cybersplash 2026](https://lobby-ctf.secplayground.com/lobby/8c09ae30-a668-448b-b6dc-b777b1e62521)  
@@ -98,6 +89,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : PUTrequest_ (https://ctftime.org/team/196643)  
             **添加日历** : https://ctftime.org/event/3202.ics  
+            
+        ??? Quote "[Incognito 7.0](https://incognito.axiosiiitl.dev/)"  
+            [![](https://ctftime.org/media/events/Pasted_image_6.png){ width="200" align=left }](https://incognito.axiosiiitl.dev/)  
+            **比赛名称** : [Incognito 7.0](https://incognito.axiosiiitl.dev/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-04-14 08:00:00 - 2026-04-15 08:00:00 UTC+8  
+            **比赛权重** : 16.56  
+            **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
+            **添加日历** : https://ctftime.org/event/3225.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)

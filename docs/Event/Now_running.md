@@ -54,3 +54,12 @@ comments: true
     **赛事主办** : UMBC Cyber Dawgs (https://ctftime.org/team/18405)  
     **添加日历** : https://ctftime.org/event/3102.ics  
     
+??? Quote "[UMassCTF 2026](https://ctf.umasscybersec.org/)"  
+    [![](https://ctftime.org/media/events/CTF_LOGO_20240401_190034_0000.jpg){ width="200" align=left }](https://ctf.umasscybersec.org/)  
+    **比赛名称** : [UMassCTF 2026](https://ctf.umasscybersec.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-11 06:00:00 - 2026-04-13 06:00:00 UTC+8  
+    **比赛权重** : 65.95  
+    **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
+    **添加日历** : https://ctftime.org/event/2937.ics  
+    
