@@ -1091,15 +1091,6 @@ hide:
                 **赛事主办** : SECPlayground (https://ctftime.org/team/375409)  
                 **添加日历** : https://ctftime.org/event/3190.ics  
                 
-            ??? Quote "[KAALCHAKRA CTF Finals](https://kaalchakractf.com/)"  
-                [![](){ width="200" align=left }](https://kaalchakractf.com/)  
-                **比赛名称** : [KAALCHAKRA CTF Finals](https://kaalchakractf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-04-11 12:30:00 - 2026-04-11 19:30:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : TH3_RANG3RS (https://ctftime.org/team/406018)  
-                **添加日历** : https://ctftime.org/event/3230.ics  
-                
             ??? Quote "[PUTCyberDays CTF 2026](https://putcyberdays.pl/en/)"  
                 [![](https://ctftime.org/media/events/logo_wydarzenia.png){ width="200" align=left }](https://putcyberdays.pl/en/)  
                 **比赛名称** : [PUTCyberDays CTF 2026](https://putcyberdays.pl/en/)  
@@ -1122,6 +1113,15 @@ hide:
                 **比赛详细** : QQ群：713192205；比赛平台/报名地址：https://www.qsnctf.com/#/login。报名时间：2026年03月23日15:00-2026年03月28日09:59。每月比赛时间为月末最后一个周六上午10:00，报名时间为开始前两天。题目范围：综合靶场、Windows独立靶场、Linux独立靶场、日志审计、数据库、逆向分析、流量分析。  
                 
         === "国外赛事"
+            ??? Quote "[KAALCHAKRA CTF Finals](https://kaalchakractf.com/)"  
+                [![](){ width="200" align=left }](https://kaalchakractf.com/)  
+                **比赛名称** : [KAALCHAKRA CTF Finals](https://kaalchakractf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-04-11 12:30:00 - 2026-04-11 19:30:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : TH3_RANG3RS (https://ctftime.org/team/406018)  
+                **添加日历** : https://ctftime.org/event/3230.ics  
+                
             ??? Quote "[Dreamhack Invitational 2026](https://dreamhack.io/)"  
                 [![](){ width="200" align=left }](https://dreamhack.io/)  
                 **比赛名称** : [Dreamhack Invitational 2026](https://dreamhack.io/)  
@@ -2012,15 +2012,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Hacking Indian Ocean (https://ctftime.org/team/399138)  
                 **添加日历** : https://ctftime.org/event/3089.ics  
-                
-            ??? Quote "[New Year CTF 2026](http://ctf-spcs.mf.grsu.by/)"  
-                [![](https://ctftime.org/media/events/NY2026.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
-                **比赛名称** : [New Year CTF 2026](http://ctf-spcs.mf.grsu.by/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-01-10 17:00:00 - 2026-01-12 17:00:00 UTC+8  
-                **比赛权重** : 23.42  
-                **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
-                **添加日历** : https://ctftime.org/event/3021.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
