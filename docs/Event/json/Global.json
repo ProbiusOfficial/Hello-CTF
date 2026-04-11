@@ -264,6 +264,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "TJCTF 2026",
+        "比赛时间": "2026-05-16 00:00:00 - 2026-05-18 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3195.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://tjctf.org/",
+        "比赛标志": "https://ctftime.org/media/events/logo_96_1_1.png",
+        "比赛权重": "65.05",
+        "赛事主办": "tjcsc (https://ctftime.org/team/53812)",
+        "比赛ID": "144",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "DaVinciCTF 2026",
         "比赛时间": "2026-05-16 16:00:00 - 2026-05-17 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3132.ics",
@@ -285,18 +297,6 @@
         "比赛权重": "0",
         "赛事主办": "TyumGUard (https://ctftime.org/team/380152)",
         "比赛ID": "1417",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "TJCTF 2026",
-        "比赛时间": "2026-05-23 00:00:00 - 2026-05-25 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3195.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://tjctf.org/",
-        "比赛标志": "https://ctftime.org/media/events/logo_96_1_1.png",
-        "比赛权重": "65.05",
-        "赛事主办": "tjcsc (https://ctftime.org/team/53812)",
-        "比赛ID": "144",
         "比赛状态": "oncoming"
     },
     {
@@ -732,18 +732,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Pàlcam Cybergames 2026",
-        "比赛时间": "2026-04-10 18:00:00 - 2026-04-12 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3211.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://palcamcg2026.soterctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/palcamLogo.png",
-        "比赛权重": "0",
-        "赛事主办": "Pàlcam ASIX (https://ctftime.org/team/428952)",
-        "比赛ID": "1551",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "DawgCTF 2026",
         "比赛时间": "2026-04-11 00:00:00 - 2026-04-13 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3102.ics",
@@ -801,6 +789,18 @@
         "比赛权重": "0.00",
         "赛事主办": "TH3_RANG3RS (https://ctftime.org/team/406018)",
         "比赛ID": "1530",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Pàlcam Cybergames 2026",
+        "比赛时间": "2026-04-10 18:00:00 - 2026-04-12 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3211.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://palcamcg2026.soterctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/palcamLogo.png",
+        "比赛权重": "0",
+        "赛事主办": "Pàlcam ASIX (https://ctftime.org/team/428952)",
+        "比赛ID": "1551",
         "比赛状态": "past"
     },
     {
@@ -1977,18 +1977,6 @@
         "比赛权重": "0.00",
         "赛事主办": "diver_osint (https://ctftime.org/team/299569)",
         "比赛ID": "1111",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CyberCup Indian Ocean",
-        "比赛时间": "2026-01-17 00:00:00 - 2026-01-19 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3089.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cybercup.ocoi.org/",
-        "比赛标志": "https://ctftime.org/media/events/logo2_8.png",
-        "比赛权重": "0",
-        "赛事主办": "Hacking Indian Ocean (https://ctftime.org/team/399138)",
-        "比赛ID": "1498",
         "比赛状态": "past"
     }
 ]

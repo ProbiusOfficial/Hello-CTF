@@ -26,6 +26,15 @@ comments: true
     **赛事主办** : TH3_RANG3RS (https://ctftime.org/team/406018)  
     **添加日历** : https://ctftime.org/event/3230.ics  
     
+??? Quote "[Pàlcam Cybergames 2026](https://palcamcg2026.soterctf.com/)"  
+    [![](https://ctftime.org/media/events/palcamLogo.png){ width="200" align=left }](https://palcamcg2026.soterctf.com/)  
+    **比赛名称** : [Pàlcam Cybergames 2026](https://palcamcg2026.soterctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-10 18:00:00 - 2026-04-12 07:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Pàlcam ASIX (https://ctftime.org/team/428952)  
+    **添加日历** : https://ctftime.org/event/3211.ics  
+    
 ??? Quote "[Dreamhack Invitational 2026](https://dreamhack.io/)"  
     [![](){ width="200" align=left }](https://dreamhack.io/)  
     **比赛名称** : [Dreamhack Invitational 2026](https://dreamhack.io/)  
@@ -907,13 +916,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
     **添加日历** : https://ctftime.org/event/2986.ics  
-    
-??? Quote "[CyberCup Indian Ocean](https://cybercup.ocoi.org/)"  
-    [![](https://ctftime.org/media/events/logo2_8.png){ width="200" align=left }](https://cybercup.ocoi.org/)  
-    **比赛名称** : [CyberCup Indian Ocean](https://cybercup.ocoi.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-17 00:00:00 - 2026-01-19 00:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Hacking Indian Ocean (https://ctftime.org/team/399138)  
-    **添加日历** : https://ctftime.org/event/3089.ics  
     
