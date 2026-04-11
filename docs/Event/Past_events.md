@@ -58,7 +58,7 @@ comments: true
     **比赛名称** : [THE UNI6CTF 1.0](https://uni6ctf.online/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-04-04 11:30:00 - 2026-04-04 17:30:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 23.00  
     **赛事主办** : IN-0x0 (https://ctftime.org/team/423353)  
     **添加日历** : https://ctftime.org/event/3226.ics  
     
