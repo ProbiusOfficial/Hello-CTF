@@ -18,15 +18,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Cybersplash 2026](https://lobby-ctf.secplayground.com/lobby/8c09ae30-a668-448b-b6dc-b777b1e62521)"  
-    [![](https://ctftime.org/media/events/1_4.png){ width="200" align=left }](https://lobby-ctf.secplayground.com/lobby/8c09ae30-a668-448b-b6dc-b777b1e62521)  
-    **比赛名称** : [Cybersplash 2026](https://lobby-ctf.secplayground.com/lobby/8c09ae30-a668-448b-b6dc-b777b1e62521)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-11 10:00:00 - 2026-04-12 10:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : SECPlayground (https://ctftime.org/team/375409)  
-    **添加日历** : https://ctftime.org/event/3190.ics  
-    
 ??? Quote "[KAALCHAKRA CTF Finals](https://kaalchakractf.com/)"  
     [![](){ width="200" align=left }](https://kaalchakractf.com/)  
     **比赛名称** : [KAALCHAKRA CTF Finals](https://kaalchakractf.com/)  

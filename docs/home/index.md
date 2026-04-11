@@ -63,15 +63,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[Cybersplash 2026](https://lobby-ctf.secplayground.com/lobby/8c09ae30-a668-448b-b6dc-b777b1e62521)"  
-            [![](https://ctftime.org/media/events/1_4.png){ width="200" align=left }](https://lobby-ctf.secplayground.com/lobby/8c09ae30-a668-448b-b6dc-b777b1e62521)  
-            **比赛名称** : [Cybersplash 2026](https://lobby-ctf.secplayground.com/lobby/8c09ae30-a668-448b-b6dc-b777b1e62521)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-04-11 10:00:00 - 2026-04-12 10:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : SECPlayground (https://ctftime.org/team/375409)  
-            **添加日历** : https://ctftime.org/event/3190.ics  
-            
         ??? Quote "[KAALCHAKRA CTF Finals](https://kaalchakractf.com/)"  
             [![](){ width="200" align=left }](https://kaalchakractf.com/)  
             **比赛名称** : [KAALCHAKRA CTF Finals](https://kaalchakractf.com/)  
@@ -98,6 +89,15 @@ hide:
             **比赛权重** : 16.56  
             **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
             **添加日历** : https://ctftime.org/event/3225.ics  
+            
+        ??? Quote "[CPCTF 2026](https://cpctf.space/)"  
+            [![](https://ctftime.org/media/events/cpctf_logo_1_1.png){ width="200" align=left }](https://cpctf.space/)  
+            **比赛名称** : [CPCTF 2026](https://cpctf.space/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-04-17 19:00:00 - 2026-04-19 19:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : traP (https://ctftime.org/team/62510)  
+            **添加日历** : https://ctftime.org/event/3077.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
