@@ -18,15 +18,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[PUTCyberDays CTF 2026](https://putcyberdays.pl/en/)"  
-    [![](https://ctftime.org/media/events/logo_wydarzenia.png){ width="200" align=left }](https://putcyberdays.pl/en/)  
-    **比赛名称** : [PUTCyberDays CTF 2026](https://putcyberdays.pl/en/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-11 18:00:00 - 2026-04-12 18:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : PUTrequest_ (https://ctftime.org/team/196643)  
-    **添加日历** : https://ctftime.org/event/3202.ics  
-    
 ??? Quote "[Incognito 7.0](https://incognito.axiosiiitl.dev/)"  
     [![](https://ctftime.org/media/events/Pasted_image_6.png){ width="200" align=left }](https://incognito.axiosiiitl.dev/)  
     **比赛名称** : [Incognito 7.0](https://incognito.axiosiiitl.dev/)  

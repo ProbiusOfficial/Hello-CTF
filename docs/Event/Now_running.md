@@ -81,3 +81,12 @@ comments: true
     **赛事主办** : TH3_RANG3RS (https://ctftime.org/team/406018)  
     **添加日历** : https://ctftime.org/event/3230.ics  
     
+??? Quote "[PUTCyberDays CTF 2026](https://putcyberdays.pl/en/)"  
+    [![](https://ctftime.org/media/events/logo_wydarzenia.png){ width="200" align=left }](https://putcyberdays.pl/en/)  
+    **比赛名称** : [PUTCyberDays CTF 2026](https://putcyberdays.pl/en/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-11 18:00:00 - 2026-04-12 18:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : PUTrequest_ (https://ctftime.org/team/196643)  
+    **添加日历** : https://ctftime.org/event/3202.ics  
+    
