@@ -63,15 +63,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[KAALCHAKRA CTF Finals](https://kaalchakractf.com/)"  
-            [![](){ width="200" align=left }](https://kaalchakractf.com/)  
-            **比赛名称** : [KAALCHAKRA CTF Finals](https://kaalchakractf.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-04-11 12:30:00 - 2026-04-11 19:30:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : TH3_RANG3RS (https://ctftime.org/team/406018)  
-            **添加日历** : https://ctftime.org/event/3230.ics  
-            
         ??? Quote "[PUTCyberDays CTF 2026](https://putcyberdays.pl/en/)"  
             [![](https://ctftime.org/media/events/logo_wydarzenia.png){ width="200" align=left }](https://putcyberdays.pl/en/)  
             **比赛名称** : [PUTCyberDays CTF 2026](https://putcyberdays.pl/en/)  
@@ -98,6 +89,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : traP (https://ctftime.org/team/62510)  
             **添加日历** : https://ctftime.org/event/3077.ics  
+            
+        ??? Quote "[CTF@CIT 2026](https://ctf.cyber-cit.club/)"  
+            [![](https://ctftime.org/media/events/CTF-CIT-ctftime_3.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
+            **比赛名称** : [CTF@CIT 2026](https://ctf.cyber-cit.club/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-04-18 00:00:00 - 2026-04-20 03:00:00 UTC+8  
+            **比赛权重** : 23.93  
+            **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
+            **添加日历** : https://ctftime.org/event/3156.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
