@@ -1181,7 +1181,7 @@ hide:
                 **比赛名称** : [CITEFLAG QUALS 2026](https://ctf.citeflag.online/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-04-04 06:00:00 - 2026-04-05 06:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : CITEFLAG (https://ctftime.org/team/425411)  
                 **添加日历** : https://ctftime.org/event/3175.ics  
                 

@@ -882,7 +882,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.citeflag.online/",
         "比赛标志": "https://ctftime.org/media/events/logo_white_on_black_rounded.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "CITEFLAG (https://ctftime.org/team/425411)",
         "比赛ID": "1522",
         "比赛状态": "past"
