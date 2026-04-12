@@ -732,18 +732,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "DawgCTF 2026",
-        "比赛时间": "2026-04-11 00:00:00 - 2026-04-13 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3102.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://metactf.com/join/dawgctf26",
-        "比赛标志": "https://ctftime.org/media/events/dawgsec_shield-ctftime_2_1.png",
-        "比赛权重": "66.64",
-        "赛事主办": "UMBC Cyber Dawgs (https://ctftime.org/team/18405)",
-        "比赛ID": "437",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "UMassCTF 2026",
         "比赛时间": "2026-04-11 06:00:00 - 2026-04-13 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2937.ics",
@@ -789,6 +777,18 @@
         "比赛权重": "0.00",
         "赛事主办": "SECPlayground (https://ctftime.org/team/375409)",
         "比赛ID": "1291",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "DawgCTF 2026",
+        "比赛时间": "2026-04-11 00:00:00 - 2026-04-13 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3102.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://metactf.com/join/dawgctf26",
+        "比赛标志": "https://ctftime.org/media/events/dawgsec_shield-ctftime_2_1.png",
+        "比赛权重": "66.64",
+        "赛事主办": "UMBC Cyber Dawgs (https://ctftime.org/team/18405)",
+        "比赛ID": "437",
         "比赛状态": "past"
     },
     {
@@ -1941,18 +1941,6 @@
         "比赛权重": "29.19",
         "赛事主办": "0xL4ugh (https://ctftime.org/team/132776)",
         "比赛ID": "579",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "MetaCTF January 2026 Flash CTF",
-        "比赛时间": "2026-01-23 06:00:00 - 2026-01-23 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3079.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://mctf.io/jan2026",
-        "比赛标志": "",
-        "比赛权重": "0",
-        "赛事主办": "MetaCTF (https://ctftime.org/team/72254)",
-        "比赛ID": "500",
         "比赛状态": "past"
     }
 ]

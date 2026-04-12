@@ -49,6 +49,15 @@ comments: true
     **赛事主办** : SECPlayground (https://ctftime.org/team/375409)  
     **添加日历** : https://ctftime.org/event/3190.ics  
     
+??? Quote "[DawgCTF 2026](https://metactf.com/join/dawgctf26)"  
+    [![](https://ctftime.org/media/events/dawgsec_shield-ctftime_2_1.png){ width="200" align=left }](https://metactf.com/join/dawgctf26)  
+    **比赛名称** : [DawgCTF 2026](https://metactf.com/join/dawgctf26)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-11 00:00:00 - 2026-04-13 00:00:00 UTC+8  
+    **比赛权重** : 66.64  
+    **赛事主办** : UMBC Cyber Dawgs (https://ctftime.org/team/18405)  
+    **添加日历** : https://ctftime.org/event/3102.ics  
+    
 ??? Quote "[Pàlcam Cybergames 2026](https://palcamcg2026.soterctf.com/)"  
     [![](https://ctftime.org/media/events/palcamLogo.png){ width="200" align=left }](https://palcamcg2026.soterctf.com/)  
     **比赛名称** : [Pàlcam Cybergames 2026](https://palcamcg2026.soterctf.com/)  
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 29.19  
     **赛事主办** : 0xL4ugh (https://ctftime.org/team/132776)  
     **添加日历** : https://ctftime.org/event/3024.ics  
-    
-??? Quote "[MetaCTF January 2026 Flash CTF](https://mctf.io/jan2026)"  
-    [![](){ width="200" align=left }](https://mctf.io/jan2026)  
-    **比赛名称** : [MetaCTF January 2026 Flash CTF](https://mctf.io/jan2026)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-23 06:00:00 - 2026-01-23 09:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : MetaCTF (https://ctftime.org/team/72254)  
-    **添加日历** : https://ctftime.org/event/3079.ics  
     
