@@ -1021,11 +1021,7 @@ hide:
                 
     === "*正在进行*"
         === "国内赛事"
-            ??? Quote "[数字中国创新大赛](https://wap.dcic-china.com/competitions/10212)"  
-                **比赛名称** : [数字中国创新大赛](https://wap.dcic-china.com/competitions/10212)  
-                **比赛时间** : 2026年04月12日 09:00 - 2026年04月12日 12:00  
-                **比赛详细** :   
-                
+    
         === "国外赛事"
             ??? Quote "[2026 Embedded Capture the Flag](https://ectf.mitre.org/)"  
                 [![](){ width="200" align=left }](https://ectf.mitre.org/)  
@@ -1092,6 +1088,11 @@ hide:
                 **比赛名称** : [【Solar】3月应急响应公益月赛](https://mp.weixin.qq.com/s/S5SIYuTNafxzdRMdrNvfAA)  
                 **比赛时间** : 2026年03月28日 10:00 - 2026年03月28日 18:00  
                 **比赛详细** : QQ群：713192205；比赛平台/报名地址：https://www.qsnctf.com/#/login。报名时间：2026年03月23日15:00-2026年03月28日09:59。每月比赛时间为月末最后一个周六上午10:00，报名时间为开始前两天。题目范围：综合靶场、Windows独立靶场、Linux独立靶场、日志审计、数据库、逆向分析、流量分析。  
+                
+            ??? Quote "[数字中国创新大赛](https://wap.dcic-china.com/competitions/10212)"  
+                **比赛名称** : [数字中国创新大赛](https://wap.dcic-china.com/competitions/10212)  
+                **比赛时间** : 2026年04月12日 09:00 - 2026年04月12日 12:00  
+                **比赛详细** :   
                 
         === "国外赛事"
             ??? Quote "[KAALCHAKRA CTF Finals](https://kaalchakractf.com/)"  
