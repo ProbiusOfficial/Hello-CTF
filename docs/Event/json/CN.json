@@ -3,18 +3,18 @@
     "data": {
         "result": [
             {
-                "name": "数字中国创新大赛",
-                "link": "https://wap.dcic-china.com/competitions/10212",
-                "comp_time_start": "2026年04月12日 09:00",
-                "comp_time_end": "2026年04月12日 12:00",
-                "detail": ""
-            },
-            {
                 "name": "NepCTF 2026",
                 "link": "/isPrepare",
                 "comp_time_start": "2026年07月10日 19:00",
                 "comp_time_end": "2026年07月12日 19:00",
                 "detail": "筹备中"
+            },
+            {
+                "name": "数字中国创新大赛",
+                "link": "https://wap.dcic-china.com/competitions/10212",
+                "comp_time_start": "2026年04月12日 09:00",
+                "comp_time_end": "2026年04月12日 12:00",
+                "detail": ""
             },
             {
                 "name": "PolarisCTF 2026",

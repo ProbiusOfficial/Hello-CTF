@@ -756,18 +756,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Cybersplash 2026",
-        "比赛时间": "2026-04-11 10:00:00 - 2026-04-12 10:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3190.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://lobby-ctf.secplayground.com/lobby/8c09ae30-a668-448b-b6dc-b777b1e62521",
-        "比赛标志": "https://ctftime.org/media/events/1_4.png",
-        "比赛权重": "0.00",
-        "赛事主办": "SECPlayground (https://ctftime.org/team/375409)",
-        "比赛ID": "1291",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "PUTCyberDays CTF 2026",
         "比赛时间": "2026-04-11 18:00:00 - 2026-04-12 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3202.ics",
@@ -789,6 +777,18 @@
         "比赛权重": "0.00",
         "赛事主办": "TH3_RANG3RS (https://ctftime.org/team/406018)",
         "比赛ID": "1530",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Cybersplash 2026",
+        "比赛时间": "2026-04-11 10:00:00 - 2026-04-12 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3190.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://lobby-ctf.secplayground.com/lobby/8c09ae30-a668-448b-b6dc-b777b1e62521",
+        "比赛标志": "https://ctftime.org/media/events/1_4.png",
+        "比赛权重": "0.00",
+        "赛事主办": "SECPlayground (https://ctftime.org/team/375409)",
+        "比赛ID": "1291",
         "比赛状态": "past"
     },
     {
@@ -1965,18 +1965,6 @@
         "比赛权重": "22.21",
         "赛事主办": "Knight Squad (https://ctftime.org/team/141739)",
         "比赛ID": "721",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SWIMMER OSINT CTF",
-        "比赛时间": "2026-01-17 11:10:00 - 2026-01-17 23:10:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2986.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://swimmer.diverctf.org/",
-        "比赛标志": "https://ctftime.org/media/events/circle-white-text.png",
-        "比赛权重": "0.00",
-        "赛事主办": "diver_osint (https://ctftime.org/team/299569)",
-        "比赛ID": "1111",
         "比赛状态": "past"
     }
 ]
