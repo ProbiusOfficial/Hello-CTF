@@ -732,18 +732,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "UMassCTF 2026",
-        "比赛时间": "2026-04-11 06:00:00 - 2026-04-13 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2937.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.umasscybersec.org/",
-        "比赛标志": "https://ctftime.org/media/events/CTF_LOGO_20240401_190034_0000.jpg",
-        "比赛权重": "65.95",
-        "赛事主办": "SavedByTheShell (https://ctftime.org/team/78233)",
-        "比赛ID": "598",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "PUTCyberDays CTF 2026",
         "比赛时间": "2026-04-11 18:00:00 - 2026-04-12 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3202.ics",
@@ -777,6 +765,18 @@
         "比赛权重": "0.00",
         "赛事主办": "SECPlayground (https://ctftime.org/team/375409)",
         "比赛ID": "1291",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "UMassCTF 2026",
+        "比赛时间": "2026-04-11 06:00:00 - 2026-04-13 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2937.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.umasscybersec.org/",
+        "比赛标志": "https://ctftime.org/media/events/CTF_LOGO_20240401_190034_0000.jpg",
+        "比赛权重": "65.95",
+        "赛事主办": "SavedByTheShell (https://ctftime.org/team/78233)",
+        "比赛ID": "598",
         "比赛状态": "past"
     },
     {
@@ -1929,18 +1929,6 @@
         "比赛权重": "0",
         "赛事主办": "HackDayCTF (https://ctftime.org/team/277562)",
         "比赛ID": "1060",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "0xL4ugh CTF v5",
-        "比赛时间": "2026-01-23 21:00:00 - 2026-01-25 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3024.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.0xL4ugh.com/",
-        "比赛标志": "",
-        "比赛权重": "29.19",
-        "赛事主办": "0xL4ugh (https://ctftime.org/team/132776)",
-        "比赛ID": "579",
         "比赛状态": "past"
     }
 ]
