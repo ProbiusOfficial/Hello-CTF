@@ -870,7 +870,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://nctf.x1ct34m.com/games/2",
         "比赛标志": "https://ctftime.org/media/events/X1cT34m-transparent.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "X1cT34m (https://ctftime.org/team/14482)",
         "比赛ID": "1545",
         "比赛状态": "past"

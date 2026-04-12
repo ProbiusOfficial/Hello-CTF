@@ -108,7 +108,7 @@ comments: true
     **比赛名称** : [NCTF 2026](https://nctf.x1ct34m.com/games/2)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-04-04 09:00:00 - 2026-04-05 21:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : X1cT34m (https://ctftime.org/team/14482)  
     **添加日历** : https://ctftime.org/event/3206.ics  
     
