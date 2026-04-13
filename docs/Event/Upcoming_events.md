@@ -85,9 +85,9 @@ comments: true
     **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
     **添加日历** : https://ctftime.org/event/2773.ics  
     
-??? Quote "[pingCTF 2026](https://knping.pl/ctf)"  
-    [![](https://ctftime.org/media/events/logo_121.png){ width="200" align=left }](https://knping.pl/ctf)  
-    **比赛名称** : [pingCTF 2026](https://knping.pl/ctf)  
+??? Quote "[pingCTF 2026](http://ctf.knping.pl/)"  
+    [![](https://ctftime.org/media/events/logo_121.png){ width="200" align=left }](http://ctf.knping.pl/)  
+    **比赛名称** : [pingCTF 2026](http://ctf.knping.pl/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-04-18 18:00:00 - 2026-04-19 18:00:00 UTC+8  
     **比赛权重** : 46.20  
@@ -233,7 +233,7 @@ comments: true
     [![](https://ctftime.org/media/events/Logo_15.png){ width="200" align=left }](https://bts2026.wh.edu.pl/)  
     **比赛名称** : [Break The Syntax CTF 2026](https://bts2026.wh.edu.pl/)  
     **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-05-09 00:00:00 - 2026-05-10 20:00:00 UTC+8  
+    **比赛时间** : 2026-05-09 00:00:00 - 2026-05-10 18:00:00 UTC+8  
     **比赛权重** : 56.25  
     **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
     **添加日历** : https://ctftime.org/event/3137.ics  
