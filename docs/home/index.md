@@ -67,6 +67,15 @@ hide:
             **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
             **添加日历** : https://ctftime.org/event/3225.ics  
             
+        ??? Quote "[ZeroSecure CTF 2026](https://www.zerosecurectf.online/)"  
+            [![](https://ctftime.org/media/events/logo_cropped.png){ width="200" align=left }](https://www.zerosecurectf.online/)  
+            **比赛名称** : [ZeroSecure CTF 2026](https://www.zerosecurectf.online/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-04-17 13:30:00 - 2026-04-18 13:30:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : CLIENT - ZERO (https://ctftime.org/team/381031)  
+            **添加日历** : https://ctftime.org/event/3252.ics  
+            
         ??? Quote "[CPCTF 2026](https://cpctf.space/)"  
             [![](https://ctftime.org/media/events/cpctf_logo_1_1.png){ width="200" align=left }](https://cpctf.space/)  
             **比赛名称** : [CPCTF 2026](https://cpctf.space/)  
@@ -84,15 +93,6 @@ hide:
             **比赛权重** : 23.93  
             **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
             **添加日历** : https://ctftime.org/event/3156.ics  
-            
-        ??? Quote "[BlueHens CTF 2026](https://bluehens.ctfd.io/)"  
-            [![](https://ctftime.org/media/events/1649244ad20feb4c02d8740a7cb035d3.png){ width="200" align=left }](https://bluehens.ctfd.io/)  
-            **比赛名称** : [BlueHens CTF 2026](https://bluehens.ctfd.io/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-04-18 01:00:00 - 2026-04-19 13:00:00 UTC+8  
-            **比赛权重** : 44.77  
-            **赛事主办** : Blue Hens (https://ctftime.org/team/64660)  
-            **添加日历** : https://ctftime.org/event/3235.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
