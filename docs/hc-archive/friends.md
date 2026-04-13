@@ -73,6 +73,10 @@ hide:
 -   :fontawesome-solid-blog:{ .lg .middle } __最近更新__
 
     ---
+    ### [腾讯游戏安全大赛2026初赛题解](https://xia0ji233.github.io/2026/04/13/tencent-race-2026-pre/)  
+    >by [xia0ji233](https://xia0ji233.pro/), 2026-04-13
+
+    四年参赛老兵报道了。。题目描述（1）  成功加载驱动并与之正确通信，理解题目基本机制，识别并排除干扰信息。需在 writeup 中说明分析过程。(满分1.5分)（2）  发现「宫殿」系统的隐匿通信手段并编写可工作的检测工具，发现的手段种类越多、利用越完整，得分越高，需提交相关源码并在 writeup 中说明分析过程（满分5.0分）（3）  探索出「宫殿」系统完整的迷宫墙壁布局，需提交迷宫地图和自动...
     ### [通过RouterOS建立WireGuard内网隧道](https://blog.zgsec.cn/archives/RouterOS-WireGuard.html)  
     >by [曾哥](https://blog.zgsec.cn/), 2026-03-31
 
@@ -149,9 +153,5 @@ hide:
     >by [Y4tacker](https://y4tacker.github.io), 2025-07-09
 
     如何从灰盒角度快速复现Weaver最新SQL注入​    好久没写不加密的博客了，因为比较简单外面也半公开了，就简单写写思路吧，至于POC就不直接贴出来了，这篇文章主要是面向像漂亮鼠这样的Java新手​    作为安全从业者的我们，每天都会面对各种各样的补丁和系统更新，很多时候不知道该如何下手，尤其是对于初学者，在尝试复现闭源漏洞时，经常会感到无从下手。面对复杂的系统架构、冗长的代码，以及各种陌生...
-    ### [泛微最新补丁分析(20250704)](https://y4tacker.github.io/2025/07/09/year/2025/07/%E6%B3%9B%E5%BE%AE%E6%9C%80%E6%96%B0%E8%A1%A5%E4%B8%81%E5%88%86%E6%9E%90-20250704/)  
-    >by [Y4tacker](https://y4tacker.github.io), 2025-07-08
-
-    69b1ac3a8c7b27f3f5f24b3b8a7400bd6b1e48e4e4a74e3a9d5b0d94adacfef139866dca5f9c0752a208c27b415054195b8c9b09fcf4ba840127a35d6fbe535eecd06f6e3687d07dd41c43e8c9e03d37b2fa2fd462518b848ba4ce55dbd50da8160a3b...
 
 </div>
