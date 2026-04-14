@@ -13,15 +13,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Incognito 7.0](https://incognito.axiosiiitl.dev/)"  
-    [![](https://ctftime.org/media/events/Pasted_image_6.png){ width="200" align=left }](https://incognito.axiosiiitl.dev/)  
-    **比赛名称** : [Incognito 7.0](https://incognito.axiosiiitl.dev/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-14 08:00:00 - 2026-04-15 08:00:00 UTC+8  
-    **比赛权重** : 16.56  
-    **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
-    **添加日历** : https://ctftime.org/event/3225.ics  
-    
 ??? Quote "[ZeroSecure CTF 2026](https://www.zerosecurectf.online/)"  
     [![](https://ctftime.org/media/events/logo_cropped.png){ width="200" align=left }](https://www.zerosecurectf.online/)  
     **比赛名称** : [ZeroSecure CTF 2026](https://www.zerosecurectf.online/)  

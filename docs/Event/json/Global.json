@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Incognito 7.0",
-        "比赛时间": "2026-04-14 08:00:00 - 2026-04-15 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3225.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://incognito.axiosiiitl.dev/",
-        "比赛标志": "https://ctftime.org/media/events/Pasted_image_6.png",
-        "比赛权重": "16.56",
-        "赛事主办": "Byt3Scr4pp3rs (https://ctftime.org/team/57772)",
-        "比赛ID": "413",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "ZeroSecure CTF 2026",
         "比赛时间": "2026-04-17 13:30:00 - 2026-04-18 13:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3252.ics",
@@ -861,6 +849,18 @@
         "比赛权重": "0",
         "赛事主办": "NFITS (https://ctftime.org/team/360674)",
         "比赛ID": "1200",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Incognito 7.0",
+        "比赛时间": "2026-04-14 08:00:00 - 2026-04-15 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3225.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://incognito.axiosiiitl.dev/",
+        "比赛标志": "https://ctftime.org/media/events/Pasted_image_6.png",
+        "比赛权重": "16.56",
+        "赛事主办": "Byt3Scr4pp3rs (https://ctftime.org/team/57772)",
+        "比赛ID": "413",
         "比赛状态": "nowrunning"
     },
     {
