@@ -1140,15 +1140,6 @@ hide:
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2907.ics  
                 
-            ??? Quote "[Incognito 7.0](https://incognito.axiosiiitl.dev/)"  
-                [![](https://ctftime.org/media/events/Pasted_image_6.png){ width="200" align=left }](https://incognito.axiosiiitl.dev/)  
-                **比赛名称** : [Incognito 7.0](https://incognito.axiosiiitl.dev/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-04-14 08:00:00 - 2026-04-15 08:00:00 UTC+8  
-                **比赛权重** : 16.56  
-                **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
-                **添加日历** : https://ctftime.org/event/3225.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[PolarisCTF 2026](https://www.ctfplus.cn/competition/hall)"  
@@ -1167,6 +1158,15 @@ hide:
                 **比赛详细** :   
                 
         === "国外赛事"
+            ??? Quote "[Incognito 7.0](https://incognito.axiosiiitl.dev/)"  
+                [![](https://ctftime.org/media/events/Pasted_image_6.png){ width="200" align=left }](https://incognito.axiosiiitl.dev/)  
+                **比赛名称** : [Incognito 7.0](https://incognito.axiosiiitl.dev/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-04-14 08:00:00 - 2026-04-15 08:00:00 UTC+8  
+                **比赛权重** : 16.56  
+                **赛事主办** : Byt3Scr4pp3rs (https://ctftime.org/team/57772)  
+                **添加日历** : https://ctftime.org/event/3225.ics  
+                
             ??? Quote "[PUTCyberDays CTF 2026](https://putcyberdays.pl/en/)"  
                 [![](https://ctftime.org/media/events/logo_wydarzenia.png){ width="200" align=left }](https://putcyberdays.pl/en/)  
                 **比赛名称** : [PUTCyberDays CTF 2026](https://putcyberdays.pl/en/)  
@@ -2057,15 +2057,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Kodsport (https://ctftime.org/team/395272)  
                 **添加日历** : https://ctftime.org/event/2945.ics  
-                
-            ??? Quote "[HackDay 2026 - Qualifications](https://register.hackday.fr/register/)"  
-                [![](https://ctftime.org/media/events/5513a205a0a6489f9dc0ecff6fd7d669.png){ width="200" align=left }](https://register.hackday.fr/register/)  
-                **比赛名称** : [HackDay 2026 - Qualifications](https://register.hackday.fr/register/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-01-24 03:00:00 - 2026-01-26 03:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
-                **添加日历** : https://ctftime.org/event/3038.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
