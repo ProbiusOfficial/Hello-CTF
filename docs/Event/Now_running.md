@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[2026 Embedded Capture the Flag](https://ectf.mitre.org/)"  
-    [![](){ width="200" align=left }](https://ectf.mitre.org/)  
-    **比赛名称** : [2026 Embedded Capture the Flag](https://ectf.mitre.org/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2026-01-14 20:00:00 - 2026-04-15 20:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : ectfmitre (https://ctftime.org/team/87292)  
-    **添加日历** : https://ctftime.org/event/2916.ics  
-    
 ??? Quote "[CyberGame 2026](https://cybergame.sk/)"  
     [![](https://ctftime.org/media/events/76a04fd5e7b9d834480d92fbf702f749.png){ width="200" align=left }](https://cybergame.sk/)  
     **比赛名称** : [CyberGame 2026](https://cybergame.sk/)  
