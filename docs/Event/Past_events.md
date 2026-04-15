@@ -103,6 +103,15 @@ comments: true
     **赛事主办** : Triada (https://ctftime.org/team/303057)  
     **添加日历** : https://ctftime.org/event/3187.ics  
     
+??? Quote "[MIPT CTF Finals 2026](https://miptctf.ru/)"  
+    [![](https://ctftime.org/media/events/30f863f46b724ef091091d6ddfbf1c07.jpg){ width="200" align=left }](https://miptctf.ru/)  
+    **比赛名称** : [MIPT CTF Finals 2026](https://miptctf.ru/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2026-04-05 15:00:00 - 2026-04-05 22:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : L0stAx3s (https://ctftime.org/team/354995)  
+    **添加日历** : https://ctftime.org/event/3257.ics  
+    
 ??? Quote "[SillyCTF 2](https://sillyctf.psuccso.org/)"  
     [![](https://ctftime.org/media/events/SillyCTF2logo.png){ width="200" align=left }](https://sillyctf.psuccso.org/)  
     **比赛名称** : [SillyCTF 2](https://sillyctf.psuccso.org/)  
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
     **添加日历** : https://ctftime.org/event/3025.ics  
-    
-??? Quote "[Säkerhets-SM Quals 2026](https://ctf.sakerhetssm.se/)"  
-    [![](){ width="200" align=left }](https://ctf.sakerhetssm.se/)  
-    **比赛名称** : [Säkerhets-SM Quals 2026](https://ctf.sakerhetssm.se/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-24 03:00:00 - 2026-01-26 03:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Kodsport (https://ctftime.org/team/395272)  
-    **添加日历** : https://ctftime.org/event/2945.ics  
     
