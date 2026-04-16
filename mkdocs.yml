@@ -257,7 +257,7 @@ nav:
         - 存储结构: hc-reverse/存储结构.md
         - 可执行文件: hc-reverse/Quick Start：可执行文件.md
       - 交互式反汇编工具IDA:
-        - 从零开始的IDA: hc-reverse/从零开始的IDA.md
+        - 从零开始的IDA: hc-reverse/StartWithIDA.md
         - IDA动态调试: hc-reverse/IDA动态调试.md
       - 常见算法:
         - 基本运算: hc-reverse/基本运算.md
