@@ -13,6 +13,15 @@ comments: true
 
 ## 国际赛事
 
+??? Quote "[WRECKCTF 2026](http://wreckctf.com/)"  
+    [![](https://ctftime.org/media/events/Greyhat-CTF-Logo-Square_1.png){ width="200" align=left }](http://wreckctf.com/)  
+    **比赛名称** : [WRECKCTF 2026](http://wreckctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-17 12:00:00 - 2026-04-18 12:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : greyhatgt (https://ctftime.org/team/38564)  
+    **添加日历** : https://ctftime.org/event/3240.ics  
+    
 ??? Quote "[ZeroSecure CTF 2026](https://www.zerosecurectf.online/)"  
     [![](https://ctftime.org/media/events/logo_cropped.png){ width="200" align=left }](https://www.zerosecurectf.online/)  
     **比赛名称** : [ZeroSecure CTF 2026](https://www.zerosecurectf.online/)  
@@ -21,6 +30,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : CLIENT - ZERO (https://ctftime.org/team/381031)  
     **添加日历** : https://ctftime.org/event/3252.ics  
+    
+??? Quote "[47CON CTF 2026](https://sugusuva.es/ctfd/)"  
+    [![](https://ctftime.org/media/events/logo47CON.png){ width="200" align=left }](https://sugusuva.es/ctfd/)  
+    **比赛名称** : [47CON CTF 2026](https://sugusuva.es/ctfd/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-17 16:00:00 - 2026-04-18 16:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : SUGUS (https://ctftime.org/team/274509)  
+    **添加日历** : https://ctftime.org/event/3253.ics  
     
 ??? Quote "[CPCTF 2026](https://cpctf.space/)"  
     [![](https://ctftime.org/media/events/cpctf_logo_1_1.png){ width="200" align=left }](https://cpctf.space/)  
@@ -75,6 +93,15 @@ comments: true
     **比赛权重** : 46.20  
     **赛事主办** : pingCTF (https://ctftime.org/team/147266)  
     **添加日历** : https://ctftime.org/event/3147.ics  
+    
+??? Quote "[K!nd4SUS CTF 2026](https://ctf.k1nd4sus.it/)"  
+    [![](https://ctftime.org/media/events/81649886.png){ width="200" align=left }](https://ctf.k1nd4sus.it/)  
+    **比赛名称** : [K!nd4SUS CTF 2026](https://ctf.k1nd4sus.it/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-18 20:00:00 - 2026-04-19 20:00:00 UTC+8  
+    **比赛权重** : 18.70  
+    **赛事主办** : K!nd4SUS (https://ctftime.org/team/150337)  
+    **添加日历** : https://ctftime.org/event/3143.ics  
     
 ??? Quote "[HiveCTF](https://mctf.io/hivectf)"  
     [![](https://ctftime.org/media/events/hivectf-color-square.png){ width="200" align=left }](https://mctf.io/hivectf)  
@@ -255,6 +282,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : fibonhack (https://ctftime.org/team/117538)  
     **添加日历** : https://ctftime.org/event/3111.ics  
+    
+??? Quote "[Hack2Dawn 2026](https://hack.pawnguard.org/)"  
+    [![](https://ctftime.org/media/events/hack2dawn-logo.jpg){ width="200" align=left }](https://hack.pawnguard.org/)  
+    **比赛名称** : [Hack2Dawn 2026](https://hack.pawnguard.org/)  
+    **比赛形式** : Hack quest  
+    **比赛时间** : 2026-05-10 03:00:00 - 2026-05-10 10:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : PawnGuard (https://ctftime.org/team/427740)  
+    **添加日历** : https://ctftime.org/event/3256.ics  
     
 ??? Quote "[TJCTF 2026](https://tjctf.org/)"  
     [![](https://ctftime.org/media/events/logo_96_1_1.png){ width="200" align=left }](https://tjctf.org/)  

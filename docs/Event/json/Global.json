@@ -1,5 +1,17 @@
 [
     {
+        "比赛名称": "WRECKCTF 2026",
+        "比赛时间": "2026-04-17 12:00:00 - 2026-04-18 12:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3240.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://wreckctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/Greyhat-CTF-Logo-Square_1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "greyhatgt (https://ctftime.org/team/38564)",
+        "比赛ID": "850",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "ZeroSecure CTF 2026",
         "比赛时间": "2026-04-17 13:30:00 - 2026-04-18 13:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3252.ics",
@@ -9,6 +21,18 @@
         "比赛权重": "0.00",
         "赛事主办": "CLIENT - ZERO (https://ctftime.org/team/381031)",
         "比赛ID": "1580",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "47CON CTF 2026",
+        "比赛时间": "2026-04-17 16:00:00 - 2026-04-18 16:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3253.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://sugusuva.es/ctfd/",
+        "比赛标志": "https://ctftime.org/media/events/logo47CON.png",
+        "比赛权重": "0",
+        "赛事主办": "SUGUS (https://ctftime.org/team/274509)",
+        "比赛ID": "1579",
         "比赛状态": "oncoming"
     },
     {
@@ -81,6 +105,18 @@
         "比赛权重": "46.20",
         "赛事主办": "pingCTF (https://ctftime.org/team/147266)",
         "比赛ID": "715",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "K!nd4SUS CTF 2026",
+        "比赛时间": "2026-04-18 20:00:00 - 2026-04-19 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3143.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.k1nd4sus.it/",
+        "比赛标志": "https://ctftime.org/media/events/81649886.png",
+        "比赛权重": "18.70",
+        "赛事主办": "K!nd4SUS (https://ctftime.org/team/150337)",
+        "比赛ID": "1264",
         "比赛状态": "oncoming"
     },
     {
@@ -321,6 +357,18 @@
         "比赛权重": "0.00",
         "赛事主办": "fibonhack (https://ctftime.org/team/117538)",
         "比赛ID": "880",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Hack2Dawn 2026",
+        "比赛时间": "2026-05-10 03:00:00 - 2026-05-10 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3256.ics",
+        "比赛形式": "Hack quest",
+        "比赛链接": "https://hack.pawnguard.org/",
+        "比赛标志": "https://ctftime.org/media/events/hack2dawn-logo.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "PawnGuard (https://ctftime.org/team/427740)",
+        "比赛ID": "1576",
         "比赛状态": "oncoming"
     },
     {
