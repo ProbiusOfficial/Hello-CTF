@@ -72,3 +72,12 @@ comments: true
     **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
     **添加日历** : https://ctftime.org/event/3156.ics  
     
+??? Quote "[BlueHens CTF 2026](https://bluehens.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/1649244ad20feb4c02d8740a7cb035d3.png){ width="200" align=left }](https://bluehens.ctfd.io/)  
+    **比赛名称** : [BlueHens CTF 2026](https://bluehens.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-18 01:00:00 - 2026-04-19 13:00:00 UTC+8  
+    **比赛权重** : 44.77  
+    **赛事主办** : Blue Hens (https://ctftime.org/team/64660)  
+    **添加日历** : https://ctftime.org/event/3235.ics  
+    
