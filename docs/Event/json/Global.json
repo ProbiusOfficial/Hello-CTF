@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "squ1rrel CTF 2026",
-        "比赛时间": "2026-04-18 07:00:00 - 2026-04-19 14:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3234.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.squ1rrel.dev/",
-        "比赛标志": "https://ctftime.org/media/events/squ1rrel_logo_1.png",
-        "比赛权重": "32.47",
-        "赛事主办": "squ1rrel (https://ctftime.org/team/201730)",
-        "比赛ID": "1110",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "b01lers CTF 2026",
         "比赛时间": "2026-04-18 08:00:00 - 2026-04-20 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3153.ics",
@@ -885,6 +873,18 @@
         "比赛权重": "44.77",
         "赛事主办": "Blue Hens (https://ctftime.org/team/64660)",
         "比赛ID": "603",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "squ1rrel CTF 2026",
+        "比赛时间": "2026-04-18 07:00:00 - 2026-04-19 14:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3234.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.squ1rrel.dev/",
+        "比赛标志": "https://ctftime.org/media/events/squ1rrel_logo_1.png",
+        "比赛权重": "32.47",
+        "赛事主办": "squ1rrel (https://ctftime.org/team/201730)",
+        "比赛ID": "1110",
         "比赛状态": "nowrunning"
     },
     {
