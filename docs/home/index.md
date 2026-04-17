@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[CTF@CIT 2026](https://ctf.cyber-cit.club/)"  
-            [![](https://ctftime.org/media/events/CTF-CIT-ctftime_3.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
-            **比赛名称** : [CTF@CIT 2026](https://ctf.cyber-cit.club/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-04-18 00:00:00 - 2026-04-20 03:00:00 UTC+8  
-            **比赛权重** : 23.93  
-            **赛事主办** : HACK@CIT (https://ctftime.org/team/287896)  
-            **添加日历** : https://ctftime.org/event/3156.ics  
-            
         ??? Quote "[BlueHens CTF 2026](https://bluehens.ctfd.io/)"  
             [![](https://ctftime.org/media/events/1649244ad20feb4c02d8740a7cb035d3.png){ width="200" align=left }](https://bluehens.ctfd.io/)  
             **比赛名称** : [BlueHens CTF 2026](https://bluehens.ctfd.io/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 66.00  
             **赛事主办** : b01lers (https://ctftime.org/team/11464)  
             **添加日历** : https://ctftime.org/event/3153.ics  
+            
+        ??? Quote "[pingCTF 2026](http://ctf.knping.pl/)"  
+            [![](https://ctftime.org/media/events/logo_121.png){ width="200" align=left }](http://ctf.knping.pl/)  
+            **比赛名称** : [pingCTF 2026](http://ctf.knping.pl/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-04-18 18:00:00 - 2026-04-19 18:00:00 UTC+8  
+            **比赛权重** : 46.20  
+            **赛事主办** : pingCTF (https://ctftime.org/team/147266)  
+            **添加日历** : https://ctftime.org/event/3147.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
