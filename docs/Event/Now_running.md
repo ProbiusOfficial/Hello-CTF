@@ -72,3 +72,12 @@ comments: true
     **赛事主办** : b01lers (https://ctftime.org/team/11464)  
     **添加日历** : https://ctftime.org/event/3153.ics  
     
+??? Quote "[pingCTF 2026](http://ctf.knping.pl/)"  
+    [![](https://ctftime.org/media/events/logo_121.png){ width="200" align=left }](http://ctf.knping.pl/)  
+    **比赛名称** : [pingCTF 2026](http://ctf.knping.pl/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-18 18:00:00 - 2026-04-19 18:00:00 UTC+8  
+    **比赛权重** : 46.20  
+    **赛事主办** : pingCTF (https://ctftime.org/team/147266)  
+    **添加日历** : https://ctftime.org/event/3147.ics  
+    
