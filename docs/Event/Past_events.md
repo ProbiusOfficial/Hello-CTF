@@ -22,6 +22,24 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[47CON CTF 2026](https://sugusuva.es/ctfd/)"  
+    [![](https://ctftime.org/media/events/logo47CON.png){ width="200" align=left }](https://sugusuva.es/ctfd/)  
+    **比赛名称** : [47CON CTF 2026](https://sugusuva.es/ctfd/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-17 16:00:00 - 2026-04-18 16:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : SUGUS (https://ctftime.org/team/274509)  
+    **添加日历** : https://ctftime.org/event/3253.ics  
+    
+??? Quote "[ZeroSecure CTF 2026](https://www.zerosecurectf.online/)"  
+    [![](https://ctftime.org/media/events/logo_cropped.png){ width="200" align=left }](https://www.zerosecurectf.online/)  
+    **比赛名称** : [ZeroSecure CTF 2026](https://www.zerosecurectf.online/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-17 13:30:00 - 2026-04-18 13:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : CLIENT - ZERO (https://ctftime.org/team/381031)  
+    **添加日历** : https://ctftime.org/event/3252.ics  
+    
 ??? Quote "[WRECKCTF 2026](http://wreckctf.com/)"  
     [![](https://ctftime.org/media/events/Greyhat-CTF-Logo-Square_1.png){ width="200" align=left }](http://wreckctf.com/)  
     **比赛名称** : [WRECKCTF 2026](http://wreckctf.com/)  
@@ -903,22 +921,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Fluid Attacks (https://ctftime.org/team/126627)  
     **添加日历** : https://ctftime.org/event/3087.ics  
-    
-??? Quote "[VSL CTF 2026](https://vsl-ctf.com/)"  
-    [![](https://ctftime.org/media/events/logo_16.jpg){ width="200" align=left }](https://vsl-ctf.com/)  
-    **比赛名称** : [VSL CTF 2026](https://vsl-ctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-24 16:00:00 - 2026-01-25 16:00:00 UTC+8  
-    **比赛权重** : 23.60  
-    **赛事主办** : VSL (https://ctftime.org/team/284373)  
-    **添加日历** : https://ctftime.org/event/3060.ics  
-    
-??? Quote "[LilacCTF 2026](https://lilacctf2026.xctf.org.cn/)"  
-    [![](https://ctftime.org/media/events/square.jpg){ width="200" align=left }](https://lilacctf2026.xctf.org.cn/)  
-    **比赛名称** : [LilacCTF 2026](https://lilacctf2026.xctf.org.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-24 09:00:00 - 2026-01-26 09:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : Lilac (https://ctftime.org/team/15163)  
-    **添加日历** : https://ctftime.org/event/3071.ics  
     
