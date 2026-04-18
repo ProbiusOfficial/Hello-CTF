@@ -22,6 +22,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[HiveCTF](https://mctf.io/hivectf)"  
+    [![](https://ctftime.org/media/events/hivectf-color-square.png){ width="200" align=left }](https://mctf.io/hivectf)  
+    **比赛名称** : [HiveCTF](https://mctf.io/hivectf)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-18 23:00:00 - 2026-04-19 07:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : DSU CTF Club (https://ctftime.org/team/427677)  
+    **添加日历** : https://ctftime.org/event/3233.ics  
+    
 ??? Quote "[47CON CTF 2026](https://sugusuva.es/ctfd/)"  
     [![](https://ctftime.org/media/events/logo47CON.png){ width="200" align=left }](https://sugusuva.es/ctfd/)  
     **比赛名称** : [47CON CTF 2026](https://sugusuva.es/ctfd/)  
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Cybernexus (https://ctftime.org/team/400801)  
     **添加日历** : https://ctftime.org/event/3080.ics  
-    
-??? Quote "[Fluid Attacks' CTF 2026-1](https://fluidattacks.com/ctf)"  
-    [![](https://ctftime.org/media/events/2.jpg){ width="200" align=left }](https://fluidattacks.com/ctf)  
-    **比赛名称** : [Fluid Attacks' CTF 2026-1](https://fluidattacks.com/ctf)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-24 21:00:00 - 2026-01-25 21:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Fluid Attacks (https://ctftime.org/team/126627)  
-    **添加日历** : https://ctftime.org/event/3087.ics  
     
