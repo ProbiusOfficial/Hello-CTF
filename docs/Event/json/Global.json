@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "JerseyCTF VI",
-        "比赛时间": "2026-04-19 03:00:00 - 2026-04-20 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3117.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.jerseyctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/jctfvi-discord.png",
-        "比赛权重": "37.00",
-        "赛事主办": "Highlander Hackers (https://ctftime.org/team/173925)",
-        "比赛ID": "724",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "CyberNSK-Finals",
         "比赛时间": "2026-04-19 20:00:00 - 2026-04-26 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3213.ics",
@@ -849,6 +837,18 @@
         "比赛权重": "0",
         "赛事主办": "DSU CTF Club (https://ctftime.org/team/427677)",
         "比赛ID": "1549",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "JerseyCTF VI",
+        "比赛时间": "2026-04-19 03:00:00 - 2026-04-20 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3117.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.jerseyctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/jctfvi-discord.png",
+        "比赛权重": "37.00",
+        "赛事主办": "Highlander Hackers (https://ctftime.org/team/173925)",
+        "比赛ID": "724",
         "比赛状态": "nowrunning"
     },
     {
