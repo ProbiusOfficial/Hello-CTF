@@ -90,3 +90,12 @@ comments: true
     **赛事主办** : K!nd4SUS (https://ctftime.org/team/150337)  
     **添加日历** : https://ctftime.org/event/3143.ics  
     
+??? Quote "[HiveCTF](https://mctf.io/hivectf)"  
+    [![](https://ctftime.org/media/events/hivectf-color-square.png){ width="200" align=left }](https://mctf.io/hivectf)  
+    **比赛名称** : [HiveCTF](https://mctf.io/hivectf)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-18 23:00:00 - 2026-04-19 07:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : DSU CTF Club (https://ctftime.org/team/427677)  
+    **添加日历** : https://ctftime.org/event/3233.ics  
+    

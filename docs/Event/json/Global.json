@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "HiveCTF",
-        "比赛时间": "2026-04-18 23:00:00 - 2026-04-19 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3233.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://mctf.io/hivectf",
-        "比赛标志": "https://ctftime.org/media/events/hivectf-color-square.png",
-        "比赛权重": "0.00",
-        "赛事主办": "DSU CTF Club (https://ctftime.org/team/427677)",
-        "比赛ID": "1549",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "JerseyCTF VI",
         "比赛时间": "2026-04-19 03:00:00 - 2026-04-20 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3117.ics",
@@ -849,6 +837,18 @@
         "比赛权重": "18.70",
         "赛事主办": "K!nd4SUS (https://ctftime.org/team/150337)",
         "比赛ID": "1264",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "HiveCTF",
+        "比赛时间": "2026-04-18 23:00:00 - 2026-04-19 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3233.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://mctf.io/hivectf",
+        "比赛标志": "https://ctftime.org/media/events/hivectf-color-square.png",
+        "比赛权重": "0",
+        "赛事主办": "DSU CTF Club (https://ctftime.org/team/427677)",
+        "比赛ID": "1549",
         "比赛状态": "nowrunning"
     },
     {

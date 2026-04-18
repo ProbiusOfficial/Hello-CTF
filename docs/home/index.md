@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[HiveCTF](https://mctf.io/hivectf)"  
-            [![](https://ctftime.org/media/events/hivectf-color-square.png){ width="200" align=left }](https://mctf.io/hivectf)  
-            **比赛名称** : [HiveCTF](https://mctf.io/hivectf)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-04-18 23:00:00 - 2026-04-19 07:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : DSU CTF Club (https://ctftime.org/team/427677)  
-            **添加日历** : https://ctftime.org/event/3233.ics  
-            
         ??? Quote "[JerseyCTF VI](https://ctf.jerseyctf.com/)"  
             [![](https://ctftime.org/media/events/jctfvi-discord.png){ width="200" align=left }](https://ctf.jerseyctf.com/)  
             **比赛名称** : [JerseyCTF VI](https://ctf.jerseyctf.com/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 24.16  
             **赛事主办** : TheRomanXpl0it (https://ctftime.org/team/46516)  
             **添加日历** : https://ctftime.org/event/3141.ics  
+            
+        ??? Quote "[UMDCTF 2026](https://umdctf.io/)"  
+            [![](https://ctftime.org/media/events/logo-2026-cropped.png){ width="200" align=left }](https://umdctf.io/)  
+            **比赛名称** : [UMDCTF 2026](https://umdctf.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-04-25 06:00:00 - 2026-04-27 06:00:00 UTC+8  
+            **比赛权重** : 85.48  
+            **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
+            **添加日历** : https://ctftime.org/event/3056.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)

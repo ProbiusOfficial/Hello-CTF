@@ -13,15 +13,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[HiveCTF](https://mctf.io/hivectf)"  
-    [![](https://ctftime.org/media/events/hivectf-color-square.png){ width="200" align=left }](https://mctf.io/hivectf)  
-    **比赛名称** : [HiveCTF](https://mctf.io/hivectf)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-18 23:00:00 - 2026-04-19 07:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : DSU CTF Club (https://ctftime.org/team/427677)  
-    **添加日历** : https://ctftime.org/event/3233.ics  
-    
 ??? Quote "[JerseyCTF VI](https://ctf.jerseyctf.com/)"  
     [![](https://ctftime.org/media/events/jctfvi-discord.png){ width="200" align=left }](https://ctf.jerseyctf.com/)  
     **比赛名称** : [JerseyCTF VI](https://ctf.jerseyctf.com/)  
