@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[b01lers CTF 2026](https://b01lersc.tf/)"  
-            [![](https://ctftime.org/media/events/b01lers.png){ width="200" align=left }](https://b01lersc.tf/)  
-            **比赛名称** : [b01lers CTF 2026](https://b01lersc.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-04-18 08:00:00 - 2026-04-20 08:00:00 UTC+8  
-            **比赛权重** : 66.00  
-            **赛事主办** : b01lers (https://ctftime.org/team/11464)  
-            **添加日历** : https://ctftime.org/event/3153.ics  
-            
         ??? Quote "[pingCTF 2026](http://ctf.knping.pl/)"  
             [![](https://ctftime.org/media/events/logo_121.png){ width="200" align=left }](http://ctf.knping.pl/)  
             **比赛名称** : [pingCTF 2026](http://ctf.knping.pl/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : DSU CTF Club (https://ctftime.org/team/427677)  
             **添加日历** : https://ctftime.org/event/3233.ics  
+            
+        ??? Quote "[JerseyCTF VI](https://ctf.jerseyctf.com/)"  
+            [![](https://ctftime.org/media/events/jctfvi-discord.png){ width="200" align=left }](https://ctf.jerseyctf.com/)  
+            **比赛名称** : [JerseyCTF VI](https://ctf.jerseyctf.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-04-19 03:00:00 - 2026-04-20 03:00:00 UTC+8  
+            **比赛权重** : 37.00  
+            **赛事主办** : Highlander Hackers (https://ctftime.org/team/173925)  
+            **添加日历** : https://ctftime.org/event/3117.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
