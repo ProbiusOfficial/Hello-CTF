@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[CyberNSK-Finals](https://cybernsk.ru/)"  
-            [![](https://ctftime.org/media/events/photo_2024-09-18_12-55-46_1.jpg){ width="200" align=left }](https://cybernsk.ru/)  
-            **比赛名称** : [CyberNSK-Finals](https://cybernsk.ru/)  
-            **比赛形式** : Attack-Defense  
-            **比赛时间** : 2026-04-19 20:00:00 - 2026-04-26 20:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : siberiansecurityleague (https://ctftime.org/team/425775)  
-            **添加日历** : https://ctftime.org/event/3213.ics  
-            
         ??? Quote "[TRX CTF 2026](https://ctf.theromanxpl0.it/)"  
             [![](https://ctftime.org/media/events/TRX_smooth_1.png){ width="200" align=left }](https://ctf.theromanxpl0.it/)  
             **比赛名称** : [TRX CTF 2026](https://ctf.theromanxpl0.it/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
             **添加日历** : https://ctftime.org/event/3199.ics  
+            
+        ??? Quote "[Alfa CTF 2026](https://alfactf.ru/)"  
+            [![](https://ctftime.org/media/events/IMG_0149.jpeg){ width="200" align=left }](https://alfactf.ru/)  
+            **比赛名称** : [Alfa CTF 2026](https://alfactf.ru/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-04-25 14:00:00 - 2026-04-26 02:00:00 UTC+8  
+            **比赛权重** : 21.67  
+            **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
+            **添加日历** : https://ctftime.org/event/3250.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
