@@ -31,6 +31,15 @@ comments: true
     **赛事主办** : DSU CTF Club (https://ctftime.org/team/427677)  
     **添加日历** : https://ctftime.org/event/3233.ics  
     
+??? Quote "[BlueHens CTF 2026](https://bluehens.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/1649244ad20feb4c02d8740a7cb035d3.png){ width="200" align=left }](https://bluehens.ctfd.io/)  
+    **比赛名称** : [BlueHens CTF 2026](https://bluehens.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-18 01:00:00 - 2026-04-19 13:00:00 UTC+8  
+    **比赛权重** : 44.77  
+    **赛事主办** : Blue Hens (https://ctftime.org/team/64660)  
+    **添加日历** : https://ctftime.org/event/3235.ics  
+    
 ??? Quote "[47CON CTF 2026](https://sugusuva.es/ctfd/)"  
     [![](https://ctftime.org/media/events/logo47CON.png){ width="200" align=left }](https://sugusuva.es/ctfd/)  
     **比赛名称** : [47CON CTF 2026](https://sugusuva.es/ctfd/)  
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 14.38  
     **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
     **添加日历** : https://ctftime.org/event/3083.ics  
-    
-??? Quote "[CyberQuest 26](https://ngpkanam.com/events/41)"  
-    [![](https://ctftime.org/media/events/WhatsApp_Image_2026-01-15_at_16.42.06.jpeg){ width="200" align=left }](https://ngpkanam.com/events/41)  
-    **比赛名称** : [CyberQuest 26](https://ngpkanam.com/events/41)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-28 11:30:00 - 2026-01-28 19:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Cybernexus (https://ctftime.org/team/400801)  
-    **添加日历** : https://ctftime.org/event/3080.ics  
     
