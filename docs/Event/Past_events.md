@@ -31,6 +31,15 @@ comments: true
     **赛事主办** : DSU CTF Club (https://ctftime.org/team/427677)  
     **添加日历** : https://ctftime.org/event/3233.ics  
     
+??? Quote "[pingCTF 2026](http://ctf.knping.pl/)"  
+    [![](https://ctftime.org/media/events/logo_121.png){ width="200" align=left }](http://ctf.knping.pl/)  
+    **比赛名称** : [pingCTF 2026](http://ctf.knping.pl/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-18 18:00:00 - 2026-04-19 18:00:00 UTC+8  
+    **比赛权重** : 46.20  
+    **赛事主办** : pingCTF (https://ctftime.org/team/147266)  
+    **添加日历** : https://ctftime.org/event/3147.ics  
+    
 ??? Quote "[squ1rrel CTF 2026](https://ctf.squ1rrel.dev/)"  
     [![](https://ctftime.org/media/events/squ1rrel_logo_1.png){ width="200" align=left }](https://ctf.squ1rrel.dev/)  
     **比赛名称** : [squ1rrel CTF 2026](https://ctf.squ1rrel.dev/)  
@@ -90,7 +99,7 @@ comments: true
     **比赛名称** : [PUTCyberDays CTF 2026](https://putcyberdays.pl/en/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-04-11 18:00:00 - 2026-04-12 18:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 24.94  
     **赛事主办** : PUTrequest_ (https://ctftime.org/team/196643)  
     **添加日历** : https://ctftime.org/event/3202.ics  
     
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Jeanne d'Hack CTF (https://ctftime.org/team/283058)  
     **添加日历** : https://ctftime.org/event/2941.ics  
-    
-??? Quote "[ASCF CTF](https://ctf.ascf.space/)"  
-    [![](https://ctftime.org/media/events/ascf1.png){ width="200" align=left }](https://ctf.ascf.space/)  
-    **比赛名称** : [ASCF CTF](https://ctf.ascf.space/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-30 17:00:00 - 2026-01-31 17:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : ASCF (https://ctftime.org/team/418960)  
-    **添加日历** : https://ctftime.org/event/3099.ics  
     
