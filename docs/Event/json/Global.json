@@ -180,18 +180,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Breach CTF 2026",
-        "比赛时间": "2026-05-09 10:30:00 - 2026-05-10 10:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3119.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://breachers.in/",
-        "比赛标志": "https://ctftime.org/media/events/breachctf_logo.png",
-        "比赛权重": "23.86",
-        "赛事主办": "IITBreachers (https://ctftime.org/team/165802)",
-        "比赛ID": "1098",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "From Dusk Till Dawn Quals",
         "比赛时间": "2026-05-09 17:00:00 - 2026-05-10 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3111.ics",

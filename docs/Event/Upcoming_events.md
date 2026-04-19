@@ -148,15 +148,6 @@ comments: true
     **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
     **添加日历** : https://ctftime.org/event/3124.ics  
     
-??? Quote "[Breach CTF 2026](https://breachers.in/)"  
-    [![](https://ctftime.org/media/events/breachctf_logo.png){ width="200" align=left }](https://breachers.in/)  
-    **比赛名称** : [Breach CTF 2026](https://breachers.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-05-09 10:30:00 - 2026-05-10 10:30:00 UTC+8  
-    **比赛权重** : 23.86  
-    **赛事主办** : IITBreachers (https://ctftime.org/team/165802)  
-    **添加日历** : https://ctftime.org/event/3119.ics  
-    
 ??? Quote "[From Dusk Till Dawn Quals](https://romhack.io/romhack-camp-ctf/)"  
     [![](https://ctftime.org/media/events/From_Dusk_Till_Dawn_-_pixel_-_square.jpg){ width="200" align=left }](https://romhack.io/romhack-camp-ctf/)  
     **比赛名称** : [From Dusk Till Dawn Quals](https://romhack.io/romhack-camp-ctf/)  
