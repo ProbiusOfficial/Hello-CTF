@@ -1059,15 +1059,6 @@ hide:
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2907.ics  
                 
-            ??? Quote "[CPCTF 2026](https://cpctf.space/)"  
-                [![](https://ctftime.org/media/events/cpctf_logo_1_1.png){ width="200" align=left }](https://cpctf.space/)  
-                **比赛名称** : [CPCTF 2026](https://cpctf.space/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-04-17 19:00:00 - 2026-04-19 19:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : traP (https://ctftime.org/team/62510)  
-                **添加日历** : https://ctftime.org/event/3077.ics  
-                
             ??? Quote "[CTF@CIT 2026](https://ctf.cyber-cit.club/)"  
                 [![](https://ctftime.org/media/events/CTF-CIT-ctftime_3.png){ width="200" align=left }](https://ctf.cyber-cit.club/)  
                 **比赛名称** : [CTF@CIT 2026](https://ctf.cyber-cit.club/)  
@@ -1157,6 +1148,15 @@ hide:
                 **比赛权重** : 44.77  
                 **赛事主办** : Blue Hens (https://ctftime.org/team/64660)  
                 **添加日历** : https://ctftime.org/event/3235.ics  
+                
+            ??? Quote "[CPCTF 2026](https://cpctf.space/)"  
+                [![](https://ctftime.org/media/events/cpctf_logo_1_1.png){ width="200" align=left }](https://cpctf.space/)  
+                **比赛名称** : [CPCTF 2026](https://cpctf.space/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-04-17 19:00:00 - 2026-04-19 19:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : traP (https://ctftime.org/team/62510)  
+                **添加日历** : https://ctftime.org/event/3077.ics  
                 
             ??? Quote "[47CON CTF 2026](https://sugusuva.es/ctfd/)"  
                 [![](https://ctftime.org/media/events/logo47CON.png){ width="200" align=left }](https://sugusuva.es/ctfd/)  
@@ -2012,15 +2012,6 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : ATC CTF Team (https://ctftime.org/team/370333)  
                 **添加日历** : https://ctftime.org/event/3068.ics  
-                
-            ??? Quote "[Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)"  
-                [![](https://ctftime.org/media/events/LogoAlt.png){ width="200" align=left }](https://www.jeanne-hack-ctf.org/)  
-                **比赛名称** : [Jeanne d'Hack CTF 2026 | 3ème Édition](https://www.jeanne-hack-ctf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-01-30 17:00:00 - 2026-01-31 02:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Jeanne d'Hack CTF (https://ctftime.org/team/283058)  
-                **添加日历** : https://ctftime.org/event/2941.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
