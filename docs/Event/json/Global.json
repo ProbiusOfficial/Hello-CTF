@@ -720,18 +720,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "b01lers CTF 2026",
-        "比赛时间": "2026-04-18 08:00:00 - 2026-04-20 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3153.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://b01lersc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/b01lers.png",
-        "比赛权重": "66.00",
-        "赛事主办": "b01lers (https://ctftime.org/team/11464)",
-        "比赛ID": "408",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "CyberNSK-Finals",
         "比赛时间": "2026-04-19 20:00:00 - 2026-04-26 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3213.ics",
@@ -789,6 +777,18 @@
         "比赛权重": "46.20",
         "赛事主办": "pingCTF (https://ctftime.org/team/147266)",
         "比赛ID": "715",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "b01lers CTF 2026",
+        "比赛时间": "2026-04-18 08:00:00 - 2026-04-20 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3153.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://b01lersc.tf/",
+        "比赛标志": "https://ctftime.org/media/events/b01lers.png",
+        "比赛权重": "66.00",
+        "赛事主办": "b01lers (https://ctftime.org/team/11464)",
+        "比赛ID": "408",
         "比赛状态": "past"
     },
     {
@@ -1929,18 +1929,6 @@
         "比赛权重": "1.84",
         "赛事主办": "Pragyan (https://ctftime.org/team/33867)",
         "比赛ID": "97",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "PascalCTF 2026",
-        "比赛时间": "2026-01-31 16:00:00 - 2026-02-01 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2767.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.pascalctf.it/",
-        "比赛标志": "https://ctftime.org/media/events/log.jpg",
-        "比赛权重": "23.94",
-        "赛事主办": "Paolo (https://ctftime.org/team/263145)",
-        "比赛ID": "1242",
         "比赛状态": "past"
     }
 ]

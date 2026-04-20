@@ -58,6 +58,15 @@ comments: true
     **赛事主办** : pingCTF (https://ctftime.org/team/147266)  
     **添加日历** : https://ctftime.org/event/3147.ics  
     
+??? Quote "[b01lers CTF 2026](https://b01lersc.tf/)"  
+    [![](https://ctftime.org/media/events/b01lers.png){ width="200" align=left }](https://b01lersc.tf/)  
+    **比赛名称** : [b01lers CTF 2026](https://b01lersc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-18 08:00:00 - 2026-04-20 08:00:00 UTC+8  
+    **比赛权重** : 66.00  
+    **赛事主办** : b01lers (https://ctftime.org/team/11464)  
+    **添加日历** : https://ctftime.org/event/3153.ics  
+    
 ??? Quote "[squ1rrel CTF 2026](https://ctf.squ1rrel.dev/)"  
     [![](https://ctftime.org/media/events/squ1rrel_logo_1.png){ width="200" align=left }](https://ctf.squ1rrel.dev/)  
     **比赛名称** : [squ1rrel CTF 2026](https://ctf.squ1rrel.dev/)  
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 1.84  
     **赛事主办** : Pragyan (https://ctftime.org/team/33867)  
     **添加日历** : https://ctftime.org/event/3058.ics  
-    
-??? Quote "[PascalCTF 2026](https://ctf.pascalctf.it/)"  
-    [![](https://ctftime.org/media/events/log.jpg){ width="200" align=left }](https://ctf.pascalctf.it/)  
-    **比赛名称** : [PascalCTF 2026](https://ctf.pascalctf.it/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-01-31 16:00:00 - 2026-02-01 16:00:00 UTC+8  
-    **比赛权重** : 23.94  
-    **赛事主办** : Paolo (https://ctftime.org/team/263145)  
-    **添加日历** : https://ctftime.org/event/2767.ics  
     
