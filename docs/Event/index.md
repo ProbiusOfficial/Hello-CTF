@@ -650,6 +650,15 @@ hide:
                 **赛事主办** : PawnGuard (https://ctftime.org/team/427740)  
                 **添加日历** : https://ctftime.org/event/3256.ics  
                 
+            ??? Quote "[NorthSec 2026](https://nsec.io/competition/)"  
+                [![](https://ctftime.org/media/events/NSEC_Avatar_Socials.png){ width="200" align=left }](https://nsec.io/competition/)  
+                **比赛名称** : [NorthSec 2026](https://nsec.io/competition/)  
+                **比赛形式** : Hack quest  
+                **比赛时间** : 2026-05-15 08:00:00 - 2026-05-18 07:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : NorthSec Organizers (https://ctftime.org/team/2492)  
+                **添加日历** : https://ctftime.org/event/3258.ics  
+                
             ??? Quote "[TJCTF 2026](https://tjctf.org/)"  
                 [![](https://ctftime.org/media/events/logo_96_1_1.png){ width="200" align=left }](https://tjctf.org/)  
                 **比赛名称** : [TJCTF 2026](https://tjctf.org/)  
@@ -703,6 +712,15 @@ hide:
                 **比赛权重** : 0.00  
                 **赛事主办** : Hardware CTF (https://ctftime.org/team/274600)  
                 **添加日历** : https://ctftime.org/event/3174.ics  
+                
+            ??? Quote "[BYUCTF 2026](https://ctfd.cyberjousting.com/)"  
+                [![](https://ctftime.org/media/events/cougar.png){ width="200" align=left }](https://ctfd.cyberjousting.com/)  
+                **比赛名称** : [BYUCTF 2026](https://ctfd.cyberjousting.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-05-30 08:00:00 - 2026-05-31 08:00:00 UTC+8  
+                **比赛权重** : 53.29  
+                **赛事主办** : BYU Cyberia (https://ctftime.org/team/155711)  
+                **添加日历** : https://ctftime.org/event/3247.ics  
                 
             ??? Quote "[Pwn2Play Open CTF](https://pwn2play.biterra.co/)"  
                 [![](https://ctftime.org/media/events/2025.png){ width="200" align=left }](https://pwn2play.biterra.co/)  
@@ -946,6 +964,15 @@ hide:
                 **比赛权重** : 24.83  
                 **赛事主办** : K17 (https://ctftime.org/team/17058)  
                 **添加日历** : https://ctftime.org/event/3145.ics  
+                
+            ??? Quote "[H7CTF 2026 Quals](https://2026.h7tex.com/)"  
+                [![](https://ctftime.org/media/events/IMG-20251015-WA0045.jpg){ width="200" align=left }](https://2026.h7tex.com/)  
+                **比赛名称** : [H7CTF 2026 Quals](https://2026.h7tex.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-09-26 11:30:00 - 2026-09-27 23:30:00 UTC+8  
+                **比赛权重** : 27.49  
+                **赛事主办** : H7Tex (https://ctftime.org/team/281844)  
+                **添加日历** : https://ctftime.org/event/3093.ics  
                 
             ??? Quote "[Pointer Overflow CTF - 2026](https://pointeroverflowctf.com/)"  
                 [![](https://ctftime.org/media/events/logo-mini.png){ width="200" align=left }](https://pointeroverflowctf.com/)  
