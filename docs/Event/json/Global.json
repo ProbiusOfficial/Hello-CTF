@@ -300,18 +300,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "BYUCTF 2026",
-        "比赛时间": "2026-05-30 20:00:00 - 2026-05-31 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3247.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfd.cyberjousting.com/",
-        "比赛标志": "https://ctftime.org/media/events/cougar.png",
-        "比赛权重": "53.29",
-        "赛事主办": "BYU Cyberia (https://ctftime.org/team/155711)",
-        "比赛ID": "768",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Grey Cat The Flag 2026 Qualifiers",
         "比赛时间": "2026-05-31 20:00:00 - 2026-06-01 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3178.ics",
