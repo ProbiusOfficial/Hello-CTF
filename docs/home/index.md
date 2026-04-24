@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[UMDCTF 2026](https://umdctf.io/)"  
-            [![](https://ctftime.org/media/events/logo-2026-cropped.png){ width="200" align=left }](https://umdctf.io/)  
-            **比赛名称** : [UMDCTF 2026](https://umdctf.io/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-04-25 06:00:00 - 2026-04-27 06:00:00 UTC+8  
-            **比赛权重** : 85.48  
-            **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
-            **添加日历** : https://ctftime.org/event/3056.ics  
-            
         ??? Quote "[HACKTHEON SEJONG 2026 Qualifier](https://hacktheon.org/)"  
             [![](https://ctftime.org/media/events/2026_HACKTHEON_SEJONG.png){ width="200" align=left }](https://hacktheon.org/)  
             **比赛名称** : [HACKTHEON SEJONG 2026 Qualifier](https://hacktheon.org/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 24.53  
             **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
             **添加日历** : https://ctftime.org/event/3192.ics  
+            
+        ??? Quote "[MCTF 5.0](https://mctf.microclub.info/)"  
+            [![](https://ctftime.org/media/events/logo_3d_version_2.png){ width="200" align=left }](https://mctf.microclub.info/)  
+            **比赛名称** : [MCTF 5.0](https://mctf.microclub.info/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-05-01 03:00:00 - 2026-05-02 15:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Micro Club (https://ctftime.org/team/425393)  
+            **添加日历** : https://ctftime.org/event/3168.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
