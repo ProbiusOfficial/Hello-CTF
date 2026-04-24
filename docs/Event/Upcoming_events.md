@@ -13,15 +13,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[TRX CTF 2026](https://ctf.theromanxpl0.it/)"  
-    [![](https://ctftime.org/media/events/TRX_smooth_1.png){ width="200" align=left }](https://ctf.theromanxpl0.it/)  
-    **比赛名称** : [TRX CTF 2026](https://ctf.theromanxpl0.it/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-25 03:00:00 - 2026-04-27 03:00:00 UTC+8  
-    **比赛权重** : 24.16  
-    **赛事主办** : TheRomanXpl0it (https://ctftime.org/team/46516)  
-    **添加日历** : https://ctftime.org/event/3141.ics  
-    
 ??? Quote "[UMDCTF 2026](https://umdctf.io/)"  
     [![](https://ctftime.org/media/events/logo-2026-cropped.png){ width="200" align=left }](https://umdctf.io/)  
     **比赛名称** : [UMDCTF 2026](https://umdctf.io/)  

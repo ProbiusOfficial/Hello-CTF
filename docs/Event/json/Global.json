@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "TRX CTF 2026",
-        "比赛时间": "2026-04-25 03:00:00 - 2026-04-27 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3141.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.theromanxpl0.it/",
-        "比赛标志": "https://ctftime.org/media/events/TRX_smooth_1.png",
-        "比赛权重": "24.16",
-        "赛事主办": "TheRomanXpl0it (https://ctftime.org/team/46516)",
-        "比赛ID": "1238",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "UMDCTF 2026",
         "比赛时间": "2026-04-25 06:00:00 - 2026-04-27 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3056.ics",
@@ -753,6 +741,18 @@
         "比赛权重": "0",
         "赛事主办": "siberiansecurityleague (https://ctftime.org/team/425775)",
         "比赛ID": "1525",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "TRX CTF 2026",
+        "比赛时间": "2026-04-25 03:00:00 - 2026-04-27 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3141.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.theromanxpl0.it/",
+        "比赛标志": "https://ctftime.org/media/events/TRX_smooth_1.png",
+        "比赛权重": "24.16",
+        "赛事主办": "TheRomanXpl0it (https://ctftime.org/team/46516)",
+        "比赛ID": "1238",
         "比赛状态": "nowrunning"
     },
     {
