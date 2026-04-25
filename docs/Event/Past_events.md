@@ -126,7 +126,7 @@ comments: true
     **比赛名称** : [WRECKCTF 2026](http://wreckctf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-04-17 12:00:00 - 2026-04-18 12:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : greyhatgt (https://ctftime.org/team/38564)  
     **添加日历** : https://ctftime.org/event/3240.ics  
     

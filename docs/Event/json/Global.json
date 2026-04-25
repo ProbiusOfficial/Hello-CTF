@@ -894,7 +894,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "http://wreckctf.com/",
         "比赛标志": "https://ctftime.org/media/events/Greyhat-CTF-Logo-Square_1.png",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "greyhatgt (https://ctftime.org/team/38564)",
         "比赛ID": "850",
         "比赛状态": "past"
