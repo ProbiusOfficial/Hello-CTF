@@ -22,6 +22,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Alfa CTF 2026](https://alfactf.ru/)"  
+    [![](https://ctftime.org/media/events/IMG_0149.jpeg){ width="200" align=left }](https://alfactf.ru/)  
+    **比赛名称** : [Alfa CTF 2026](https://alfactf.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-04-25 14:00:00 - 2026-04-26 02:00:00 UTC+8  
+    **比赛权重** : 21.67  
+    **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
+    **添加日历** : https://ctftime.org/event/3250.ics  
+    
 ??? Quote "[HACKTHEON SEJONG 2026 Qualifier](https://hacktheon.org/)"  
     [![](https://ctftime.org/media/events/2026_HACKTHEON_SEJONG.png){ width="200" align=left }](https://hacktheon.org/)  
     **比赛名称** : [HACKTHEON SEJONG 2026 Qualifier](https://hacktheon.org/)  
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 24.72  
     **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
     **添加日历** : https://ctftime.org/event/3066.ics  
-    
-??? Quote "[LA CTF 2026](https://lac.tf/)"  
-    [![](){ width="200" align=left }](https://lac.tf/)  
-    **比赛名称** : [LA CTF 2026](https://lac.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-07 10:00:00 - 2026-02-09 10:00:00 UTC+8  
-    **比赛权重** : 53.58  
-    **赛事主办** : PBR | UCLA (https://ctftime.org/team/186494)  
-    **添加日历** : https://ctftime.org/event/3015.ics  
     

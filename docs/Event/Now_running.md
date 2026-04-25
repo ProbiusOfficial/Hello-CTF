@@ -54,15 +54,6 @@ comments: true
     **赛事主办** : UMDCSEC (https://ctftime.org/team/87711)  
     **添加日历** : https://ctftime.org/event/3056.ics  
     
-??? Quote "[Alfa CTF 2026](https://alfactf.ru/)"  
-    [![](https://ctftime.org/media/events/IMG_0149.jpeg){ width="200" align=left }](https://alfactf.ru/)  
-    **比赛名称** : [Alfa CTF 2026](https://alfactf.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-25 14:00:00 - 2026-04-26 02:00:00 UTC+8  
-    **比赛权重** : 21.67  
-    **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
-    **添加日历** : https://ctftime.org/event/3250.ics  
-    
 ??? Quote "[CTF@AC26 - Quals](https://ctf.ac.upt.ro/)"  
     [![](https://ctftime.org/media/events/CTFAC26.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
     **比赛名称** : [CTF@AC26 - Quals](https://ctf.ac.upt.ro/)  
