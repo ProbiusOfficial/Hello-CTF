@@ -774,7 +774,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://mctf.io/hivectf",
         "比赛标志": "https://ctftime.org/media/events/hivectf-color-square.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "DSU CTF Club (https://ctftime.org/team/427677)",
         "比赛ID": "1549",
         "比赛状态": "past"
