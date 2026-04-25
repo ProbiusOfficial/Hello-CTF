@@ -13,24 +13,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[Alfa CTF 2026](https://alfactf.ru/)"  
-    [![](https://ctftime.org/media/events/IMG_0149.jpeg){ width="200" align=left }](https://alfactf.ru/)  
-    **比赛名称** : [Alfa CTF 2026](https://alfactf.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-25 14:00:00 - 2026-04-26 02:00:00 UTC+8  
-    **比赛权重** : 21.67  
-    **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
-    **添加日历** : https://ctftime.org/event/3250.ics  
-    
-??? Quote "[CTF@AC26 - Quals](https://ctf.ac.upt.ro/)"  
-    [![](https://ctftime.org/media/events/CTFAC26.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
-    **比赛名称** : [CTF@AC26 - Quals](https://ctf.ac.upt.ro/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-25 15:00:00 - 2026-04-26 15:00:00 UTC+8  
-    **比赛权重** : 24.53  
-    **赛事主办** : UPT-CTF (https://ctftime.org/team/276942)  
-    **添加日历** : https://ctftime.org/event/3192.ics  
-    
 ??? Quote "[MCTF 5.0](https://mctf.microclub.info/)"  
     [![](https://ctftime.org/media/events/logo_3d_version_2.png){ width="200" align=left }](https://mctf.microclub.info/)  
     **比赛名称** : [MCTF 5.0](https://mctf.microclub.info/)  
