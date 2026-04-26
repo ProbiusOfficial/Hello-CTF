@@ -1014,15 +1014,6 @@ hide:
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2907.ics  
                 
-            ??? Quote "[TRX CTF 2026](https://ctf.theromanxpl0.it/)"  
-                [![](https://ctftime.org/media/events/TRX_smooth_1.png){ width="200" align=left }](https://ctf.theromanxpl0.it/)  
-                **比赛名称** : [TRX CTF 2026](https://ctf.theromanxpl0.it/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-04-25 03:00:00 - 2026-04-27 03:00:00 UTC+8  
-                **比赛权重** : 24.16  
-                **赛事主办** : TheRomanXpl0it (https://ctftime.org/team/46516)  
-                **添加日历** : https://ctftime.org/event/3141.ics  
-                
             ??? Quote "[UMDCTF 2026](https://umdctf.io/)"  
                 [![](https://ctftime.org/media/events/logo-2026-cropped.png){ width="200" align=left }](https://umdctf.io/)  
                 **比赛名称** : [UMDCTF 2026](https://umdctf.io/)  
@@ -1076,6 +1067,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
                 **添加日历** : https://ctftime.org/event/3199.ics  
+                
+            ??? Quote "[TRX CTF 2026](https://ctf.theromanxpl0.it/)"  
+                [![](https://ctftime.org/media/events/TRX_smooth_1.png){ width="200" align=left }](https://ctf.theromanxpl0.it/)  
+                **比赛名称** : [TRX CTF 2026](https://ctf.theromanxpl0.it/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-04-25 03:00:00 - 2026-04-27 03:00:00 UTC+8  
+                **比赛权重** : 24.16  
+                **赛事主办** : TheRomanXpl0it (https://ctftime.org/team/46516)  
+                **添加日历** : https://ctftime.org/event/3141.ics  
                 
             ??? Quote "[CyberNSK-Finals](https://cybernsk.ru/)"  
                 [![](https://ctftime.org/media/events/photo_2024-09-18_12-55-46_1.jpg){ width="200" align=left }](https://cybernsk.ru/)  
@@ -1940,15 +1940,6 @@ hide:
                 **比赛权重** : 18.05  
                 **赛事主办** : 0xFUN (https://ctftime.org/team/354033)  
                 **添加日历** : https://ctftime.org/event/3081.ics  
-                
-            ??? Quote "[EncipherX CTF 4.0](https://encipherx.in/)"  
-                [![](https://ctftime.org/media/events/EncipherX_logo.png){ width="200" align=left }](https://encipherx.in/)  
-                **比赛名称** : [EncipherX CTF 4.0](https://encipherx.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-02-07 19:00:00 - 2026-02-08 19:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Phoenixcybersecurity (https://ctftime.org/team/419257)  
-                **添加日历** : https://ctftime.org/event/3074.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

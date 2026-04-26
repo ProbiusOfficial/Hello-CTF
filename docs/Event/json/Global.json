@@ -684,18 +684,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "TRX CTF 2026",
-        "比赛时间": "2026-04-25 03:00:00 - 2026-04-27 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3141.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.theromanxpl0.it/",
-        "比赛标志": "https://ctftime.org/media/events/TRX_smooth_1.png",
-        "比赛权重": "24.16",
-        "赛事主办": "TheRomanXpl0it (https://ctftime.org/team/46516)",
-        "比赛ID": "1238",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "UMDCTF 2026",
         "比赛时间": "2026-04-25 06:00:00 - 2026-04-27 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3056.ics",
@@ -741,6 +729,18 @@
         "比赛权重": "0",
         "赛事主办": "Sejong City Hall (https://ctftime.org/team/214900)",
         "比赛ID": "903",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "TRX CTF 2026",
+        "比赛时间": "2026-04-25 03:00:00 - 2026-04-27 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3141.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.theromanxpl0.it/",
+        "比赛标志": "https://ctftime.org/media/events/TRX_smooth_1.png",
+        "比赛权重": "24.16",
+        "赛事主办": "TheRomanXpl0it (https://ctftime.org/team/46516)",
+        "比赛ID": "1238",
         "比赛状态": "past"
     },
     {
@@ -1893,18 +1893,6 @@
         "比赛权重": "18.05",
         "赛事主办": "0xFUN (https://ctftime.org/team/354033)",
         "比赛ID": "1475",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "EncipherX CTF 4.0",
-        "比赛时间": "2026-02-07 19:00:00 - 2026-02-08 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3074.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://encipherx.in/",
-        "比赛标志": "https://ctftime.org/media/events/EncipherX_logo.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Phoenixcybersecurity (https://ctftime.org/team/419257)",
-        "比赛ID": "1493",
         "比赛状态": "past"
     }
 ]
