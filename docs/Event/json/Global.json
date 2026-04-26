@@ -684,18 +684,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CyberNSK-Finals",
-        "比赛时间": "2026-04-19 20:00:00 - 2026-04-26 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3213.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://cybernsk.ru/",
-        "比赛标志": "https://ctftime.org/media/events/photo_2024-09-18_12-55-46_1.jpg",
-        "比赛权重": "0",
-        "赛事主办": "siberiansecurityleague (https://ctftime.org/team/425775)",
-        "比赛ID": "1525",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "TRX CTF 2026",
         "比赛时间": "2026-04-25 03:00:00 - 2026-04-27 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3141.ics",
@@ -753,6 +741,18 @@
         "比赛权重": "0",
         "赛事主办": "Sejong City Hall (https://ctftime.org/team/214900)",
         "比赛ID": "903",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "CyberNSK-Finals",
+        "比赛时间": "2026-04-19 20:00:00 - 2026-04-26 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3213.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://cybernsk.ru/",
+        "比赛标志": "https://ctftime.org/media/events/photo_2024-09-18_12-55-46_1.jpg",
+        "比赛权重": "0",
+        "赛事主办": "siberiansecurityleague (https://ctftime.org/team/425775)",
+        "比赛ID": "1525",
         "比赛状态": "past"
     },
     {
@@ -1905,18 +1905,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Phoenixcybersecurity (https://ctftime.org/team/419257)",
         "比赛ID": "1493",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DUCKERZ CTF 2026",
-        "比赛时间": "2026-02-07 17:00:00 - 2026-02-08 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3067.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://teams.duckerz.ru/",
-        "比赛标志": "https://ctftime.org/media/events/DUCKERZ.png",
-        "比赛权重": "23.20",
-        "赛事主办": "DUCKERZ (https://ctftime.org/team/372036)",
-        "比赛ID": "1467",
         "比赛状态": "past"
     }
 ]

@@ -49,6 +49,15 @@ comments: true
     **赛事主办** : Sejong City Hall (https://ctftime.org/team/214900)  
     **添加日历** : https://ctftime.org/event/3199.ics  
     
+??? Quote "[CyberNSK-Finals](https://cybernsk.ru/)"  
+    [![](https://ctftime.org/media/events/photo_2024-09-18_12-55-46_1.jpg){ width="200" align=left }](https://cybernsk.ru/)  
+    **比赛名称** : [CyberNSK-Finals](https://cybernsk.ru/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2026-04-19 20:00:00 - 2026-04-26 20:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : siberiansecurityleague (https://ctftime.org/team/425775)  
+    **添加日历** : https://ctftime.org/event/3213.ics  
+    
 ??? Quote "[JerseyCTF VI](https://ctf.jerseyctf.com/)"  
     [![](https://ctftime.org/media/events/jctfvi-discord.png){ width="200" align=left }](https://ctf.jerseyctf.com/)  
     **比赛名称** : [JerseyCTF VI](https://ctf.jerseyctf.com/)  
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Phoenixcybersecurity (https://ctftime.org/team/419257)  
     **添加日历** : https://ctftime.org/event/3074.ics  
-    
-??? Quote "[DUCKERZ CTF 2026](https://teams.duckerz.ru/)"  
-    [![](https://ctftime.org/media/events/DUCKERZ.png){ width="200" align=left }](https://teams.duckerz.ru/)  
-    **比赛名称** : [DUCKERZ CTF 2026](https://teams.duckerz.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-07 17:00:00 - 2026-02-08 17:00:00 UTC+8  
-    **比赛权重** : 23.20  
-    **赛事主办** : DUCKERZ (https://ctftime.org/team/372036)  
-    **添加日历** : https://ctftime.org/event/3067.ics  
     
