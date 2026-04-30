@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[MCTF 5.0](https://mctf.microclub.info/)"  
-            [![](https://ctftime.org/media/events/logo_3d_version_2.png){ width="200" align=left }](https://mctf.microclub.info/)  
-            **比赛名称** : [MCTF 5.0](https://mctf.microclub.info/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-05-01 03:00:00 - 2026-05-02 15:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Micro Club (https://ctftime.org/team/425393)  
-            **添加日历** : https://ctftime.org/event/3168.ics  
-            
         ??? Quote "[KubSTU CTF](https://kubstu-ctf.online/)"  
             [![](https://ctftime.org/media/events/1233.png){ width="200" align=left }](https://kubstu-ctf.online/)  
             **比赛名称** : [KubSTU CTF](https://kubstu-ctf.online/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
             **添加日历** : https://ctftime.org/event/3244.ics  
+            
+        ??? Quote "[Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)"  
+            [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
+            **比赛名称** : [Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-05-02 18:00:00 - 2026-05-03 18:00:00 UTC+8  
+            **比赛权重** : 48.17  
+            **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
+            **添加日历** : https://ctftime.org/event/2773.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)

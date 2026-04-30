@@ -497,15 +497,6 @@ hide:
                 **比赛详细** : 筹备中  
                 
         === "国外赛事"
-            ??? Quote "[MCTF 5.0](https://mctf.microclub.info/)"  
-                [![](https://ctftime.org/media/events/logo_3d_version_2.png){ width="200" align=left }](https://mctf.microclub.info/)  
-                **比赛名称** : [MCTF 5.0](https://mctf.microclub.info/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-05-01 03:00:00 - 2026-05-02 15:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Micro Club (https://ctftime.org/team/425393)  
-                **添加日历** : https://ctftime.org/event/3168.ics  
-                
             ??? Quote "[KubSTU CTF](https://kubstu-ctf.online/)"  
                 [![](https://ctftime.org/media/events/1233.png){ width="200" align=left }](https://kubstu-ctf.online/)  
                 **比赛名称** : [KubSTU CTF](https://kubstu-ctf.online/)  
@@ -1013,6 +1004,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2907.ics  
+                
+            ??? Quote "[MCTF 5.0](https://mctf.microclub.info/)"  
+                [![](https://ctftime.org/media/events/logo_3d_version_2.png){ width="200" align=left }](https://mctf.microclub.info/)  
+                **比赛名称** : [MCTF 5.0](https://mctf.microclub.info/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-05-01 03:00:00 - 2026-05-02 15:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Micro Club (https://ctftime.org/team/425393)  
+                **添加日历** : https://ctftime.org/event/3168.ics  
                 
     === "*已经结束*"
         === "国内赛事"
