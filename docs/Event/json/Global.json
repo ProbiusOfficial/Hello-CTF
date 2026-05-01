@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "KubSTU CTF",
-        "比赛时间": "2026-05-01 15:00:00 - 2026-05-03 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3177.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://kubstu-ctf.online/",
-        "比赛标志": "https://ctftime.org/media/events/1233.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Capybaras (https://ctftime.org/team/223931)",
-        "比赛ID": "1499",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "THEM?!CTF 2026",
         "比赛时间": "2026-05-02 02:00:00 - 2026-05-04 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3209.ics",
@@ -681,6 +669,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Micro Club (https://ctftime.org/team/425393)",
         "比赛ID": "1521",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "KubSTU CTF",
+        "比赛时间": "2026-05-01 15:00:00 - 2026-05-03 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3177.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://kubstu-ctf.online/",
+        "比赛标志": "https://ctftime.org/media/events/1233.png",
+        "比赛权重": "0",
+        "赛事主办": "Capybaras (https://ctftime.org/team/223931)",
+        "比赛ID": "1499",
         "比赛状态": "nowrunning"
     },
     {
