@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "THEM?!CTF 2026",
-        "比赛时间": "2026-05-02 02:00:00 - 2026-05-04 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3209.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.themctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/THEMCTF_2026_logo_black.png",
-        "比赛权重": "0.00",
-        "赛事主办": "THEM?! (https://ctftime.org/team/387399)",
-        "比赛ID": "1536",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "UniVsThreats 26 Finals CTF",
         "比赛时间": "2026-05-02 16:00:00 - 2026-05-03 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3244.ics",
@@ -88,7 +76,7 @@
         "比赛时间": "2026-05-09 17:00:00 - 2026-05-10 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3111.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://romhack.io/romhack-camp-ctf/",
+        "比赛链接": "https://till-dawn.fibonhack.it/",
         "比赛标志": "https://ctftime.org/media/events/From_Dusk_Till_Dawn_-_pixel_-_square.jpg",
         "比赛权重": "0.00",
         "赛事主办": "fibonhack (https://ctftime.org/team/117538)",
@@ -669,6 +657,18 @@
         "比赛权重": "0",
         "赛事主办": "Capybaras (https://ctftime.org/team/223931)",
         "比赛ID": "1499",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "THEM?!CTF 2026",
+        "比赛时间": "2026-05-02 02:00:00 - 2026-05-04 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3209.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.themctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/THEMCTF_2026_logo_black.png",
+        "比赛权重": "0",
+        "赛事主办": "THEM?! (https://ctftime.org/team/387399)",
+        "比赛ID": "1536",
         "比赛状态": "nowrunning"
     },
     {

@@ -497,15 +497,6 @@ hide:
                 **比赛详细** : 筹备中  
                 
         === "国外赛事"
-            ??? Quote "[THEM?!CTF 2026](https://ctf.themctf.com/)"  
-                [![](https://ctftime.org/media/events/THEMCTF_2026_logo_black.png){ width="200" align=left }](https://ctf.themctf.com/)  
-                **比赛名称** : [THEM?!CTF 2026](https://ctf.themctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-05-02 02:00:00 - 2026-05-04 02:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : THEM?! (https://ctftime.org/team/387399)  
-                **添加日历** : https://ctftime.org/event/3209.ics  
-                
             ??? Quote "[UniVsThreats 26 Finals CTF]()"  
                 [![](https://ctftime.org/media/events/8214e0b3661f119e06c811dd7538cc0d.jpg){ width="200" align=left }]()  
                 **比赛名称** : [UniVsThreats 26 Finals CTF]()  
@@ -560,9 +551,9 @@ hide:
                 **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
                 **添加日历** : https://ctftime.org/event/3124.ics  
                 
-            ??? Quote "[From Dusk Till Dawn Quals](https://romhack.io/romhack-camp-ctf/)"  
-                [![](https://ctftime.org/media/events/From_Dusk_Till_Dawn_-_pixel_-_square.jpg){ width="200" align=left }](https://romhack.io/romhack-camp-ctf/)  
-                **比赛名称** : [From Dusk Till Dawn Quals](https://romhack.io/romhack-camp-ctf/)  
+            ??? Quote "[From Dusk Till Dawn Quals](https://till-dawn.fibonhack.it/)"  
+                [![](https://ctftime.org/media/events/From_Dusk_Till_Dawn_-_pixel_-_square.jpg){ width="200" align=left }](https://till-dawn.fibonhack.it/)  
+                **比赛名称** : [From Dusk Till Dawn Quals](https://till-dawn.fibonhack.it/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-05-09 17:00:00 - 2026-05-10 17:00:00 UTC+8  
                 **比赛权重** : 0.00  
@@ -1004,6 +995,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Capybaras (https://ctftime.org/team/223931)  
                 **添加日历** : https://ctftime.org/event/3177.ics  
+                
+            ??? Quote "[THEM?!CTF 2026](https://ctf.themctf.com/)"  
+                [![](https://ctftime.org/media/events/THEMCTF_2026_logo_black.png){ width="200" align=left }](https://ctf.themctf.com/)  
+                **比赛名称** : [THEM?!CTF 2026](https://ctf.themctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-05-02 02:00:00 - 2026-05-04 02:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : THEM?! (https://ctftime.org/team/387399)  
+                **添加日历** : https://ctftime.org/event/3209.ics  
                 
     === "*已经结束*"
         === "国内赛事"
