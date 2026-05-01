@@ -769,6 +769,15 @@ comments: true
     **赛事主办** : YUGAM KUMARAGURU (https://ctftime.org/team/425387)  
     **添加日历** : https://ctftime.org/event/3167.ics  
     
+??? Quote "[CSCG 2026](https://play.cscg.live/)"  
+    [![](){ width="200" align=left }](https://play.cscg.live/)  
+    **比赛名称** : [CSCG 2026](https://play.cscg.live/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-02 01:00:00 - 2026-05-02 00:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : NFITS (https://ctftime.org/team/360674)  
+    **添加日历** : https://ctftime.org/event/2907.ics  
+    
 ??? Quote "[Winja CTF | Nullcon Goa 2026](https://ctf.winja.org/)"  
     [![](https://ctftime.org/media/events/winja-logo-transparent_2_1.png){ width="200" align=left }](https://ctf.winja.org/)  
     **比赛名称** : [Winja CTF | Nullcon Goa 2026](https://ctf.winja.org/)  
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : BreachPoint-SOT (https://ctftime.org/team/419090)  
     **添加日历** : https://ctftime.org/event/3075.ics  
-    
-??? Quote "[Crackmes.one Reverse Engineering CTF 2026](https://ctf.crackmes.one/)"  
-    [![](https://ctftime.org/media/events/221804609.png){ width="200" align=left }](https://ctf.crackmes.one/)  
-    **比赛名称** : [Crackmes.one Reverse Engineering CTF 2026](https://ctf.crackmes.one/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-14 08:00:00 - 2026-02-21 08:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : crackmes.one (https://ctftime.org/team/388934)  
-    **添加日历** : https://ctftime.org/event/3014.ics  
     
