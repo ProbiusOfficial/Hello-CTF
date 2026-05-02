@@ -978,15 +978,6 @@ hide:
                 **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
                 **添加日历** : https://ctftime.org/event/3142.ics  
                 
-            ??? Quote "[MCTF 5.0](https://mctf.microclub.info/)"  
-                [![](https://ctftime.org/media/events/logo_3d_version_2.png){ width="200" align=left }](https://mctf.microclub.info/)  
-                **比赛名称** : [MCTF 5.0](https://mctf.microclub.info/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-05-01 03:00:00 - 2026-05-02 15:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Micro Club (https://ctftime.org/team/425393)  
-                **添加日历** : https://ctftime.org/event/3168.ics  
-                
             ??? Quote "[KubSTU CTF](https://kubstu-ctf.online/)"  
                 [![](https://ctftime.org/media/events/1233.png){ width="200" align=left }](https://kubstu-ctf.online/)  
                 **比赛名称** : [KubSTU CTF](https://kubstu-ctf.online/)  
@@ -1023,6 +1014,15 @@ hide:
                 **比赛详细** :   
                 
         === "国外赛事"
+            ??? Quote "[MCTF 5.0](https://mctf.microclub.info/)"  
+                [![](https://ctftime.org/media/events/logo_3d_version_2.png){ width="200" align=left }](https://mctf.microclub.info/)  
+                **比赛名称** : [MCTF 5.0](https://mctf.microclub.info/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-05-01 03:00:00 - 2026-05-02 15:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : Micro Club (https://ctftime.org/team/425393)  
+                **添加日历** : https://ctftime.org/event/3168.ics  
+                
             ??? Quote "[CTF@AC26 - Quals](https://ctf.ac.upt.ro/)"  
                 [![](https://ctftime.org/media/events/CTFAC26.png){ width="200" align=left }](https://ctf.ac.upt.ro/)  
                 **比赛名称** : [CTF@AC26 - Quals](https://ctf.ac.upt.ro/)  
@@ -1913,15 +1913,6 @@ hide:
                 **比赛权重** : 24.29  
                 **赛事主办** : TaipanByte (https://ctftime.org/team/301788)  
                 **添加日历** : https://ctftime.org/event/3086.ics  
-                
-            ??? Quote "[Breach Point CTF - Siege Of Troy(Online Round)](https://breachpoint.live/)"  
-                [![](https://ctftime.org/media/events/SIEGE_O_TROY_Trust_Was_the_Vulnerability..jpg){ width="200" align=left }](https://breachpoint.live/)  
-                **比赛名称** : [Breach Point CTF - Siege Of Troy(Online Round)](https://breachpoint.live/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-02-14 15:30:00 - 2026-02-15 15:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : BreachPoint-SOT (https://ctftime.org/team/419090)  
-                **添加日历** : https://ctftime.org/event/3075.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
