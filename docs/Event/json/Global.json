@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "UniVsThreats 26 Finals CTF",
-        "比赛时间": "2026-05-02 16:00:00 - 2026-05-03 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3244.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "",
-        "比赛标志": "https://ctftime.org/media/events/8214e0b3661f119e06c811dd7538cc0d.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "UVT-CTF (https://ctftime.org/team/214520)",
-        "比赛ID": "1267",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "RAZER CTF 2026",
         "比赛时间": "2026-05-05 14:30:00 - 2026-05-06 14:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3241.ics",
@@ -657,6 +645,18 @@
         "比赛权重": "0",
         "赛事主办": "THEM?! (https://ctftime.org/team/387399)",
         "比赛ID": "1536",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "UniVsThreats 26 Finals CTF",
+        "比赛时间": "2026-05-02 16:00:00 - 2026-05-03 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3244.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "",
+        "比赛标志": "https://ctftime.org/media/events/8214e0b3661f119e06c811dd7538cc0d.jpg",
+        "比赛权重": "0",
+        "赛事主办": "UVT-CTF (https://ctftime.org/team/214520)",
+        "比赛ID": "1267",
         "比赛状态": "nowrunning"
     },
     {

@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[UniVsThreats 26 Finals CTF]()"  
-            [![](https://ctftime.org/media/events/8214e0b3661f119e06c811dd7538cc0d.jpg){ width="200" align=left }]()  
-            **比赛名称** : [UniVsThreats 26 Finals CTF]()  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-05-02 16:00:00 - 2026-05-03 23:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
-            **添加日历** : https://ctftime.org/event/3244.ics  
-            
         ??? Quote "[RAZER CTF 2026](http://ctf.droidecks.sbs/)"  
             [![](https://ctftime.org/media/events/logo_125.png){ width="200" align=left }](http://ctf.droidecks.sbs/)  
             **比赛名称** : [RAZER CTF 2026](http://ctf.droidecks.sbs/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)  
             **添加日历** : https://ctftime.org/event/3018.ics  
+            
+        ??? Quote "[Break The Syntax CTF 2026](https://bts2026.wh.edu.pl/)"  
+            [![](https://ctftime.org/media/events/Logo_15.png){ width="200" align=left }](https://bts2026.wh.edu.pl/)  
+            **比赛名称** : [Break The Syntax CTF 2026](https://bts2026.wh.edu.pl/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-05-09 00:00:00 - 2026-05-10 18:00:00 UTC+8  
+            **比赛权重** : 56.25  
+            **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
+            **添加日历** : https://ctftime.org/event/3137.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
