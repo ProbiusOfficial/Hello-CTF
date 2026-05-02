@@ -22,6 +22,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[KubSTU CTF](https://kubstu-ctf.online/)"  
+    [![](https://ctftime.org/media/events/1233.png){ width="200" align=left }](https://kubstu-ctf.online/)  
+    **比赛名称** : [KubSTU CTF](https://kubstu-ctf.online/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-01 15:00:00 - 2026-05-03 03:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Capybaras (https://ctftime.org/team/223931)  
+    **添加日历** : https://ctftime.org/event/3177.ics  
+    
 ??? Quote "[MCTF 5.0](https://mctf.microclub.info/)"  
     [![](https://ctftime.org/media/events/logo_3d_version_2.png){ width="200" align=left }](https://mctf.microclub.info/)  
     **比赛名称** : [MCTF 5.0](https://mctf.microclub.info/)  
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : vulnbydefault (https://ctftime.org/team/423471)  
     **添加日历** : https://ctftime.org/event/3135.ics  
-    
-??? Quote "[TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)"  
-    [![](){ width="200" align=left }](https://chart.taipanbyte.ru/)  
-    **比赛名称** : [TaipanByte’s Chart CTF](https://chart.taipanbyte.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-14 18:00:00 - 2026-02-15 18:00:00 UTC+8  
-    **比赛权重** : 24.29  
-    **赛事主办** : TaipanByte (https://ctftime.org/team/301788)  
-    **添加日历** : https://ctftime.org/event/3086.ics  
     
