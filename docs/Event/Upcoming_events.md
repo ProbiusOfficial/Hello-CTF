@@ -40,6 +40,15 @@ comments: true
     **赛事主办** : PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)  
     **添加日历** : https://ctftime.org/event/3018.ics  
     
+??? Quote "[plfanzen CFT 2026](https://plfanzen.lol/)"  
+    [![](https://ctftime.org/media/events/hloe.png){ width="200" align=left }](https://plfanzen.lol/)  
+    **比赛名称** : [plfanzen CFT 2026](https://plfanzen.lol/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-09 00:00:00 - 2026-05-10 20:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : plfanzen (https://ctftime.org/team/418962)  
+    **添加日历** : https://ctftime.org/event/3090.ics  
+    
 ??? Quote "[Break The Syntax CTF 2026](https://bts2026.wh.edu.pl/)"  
     [![](https://ctftime.org/media/events/Logo_15.png){ width="200" align=left }](https://bts2026.wh.edu.pl/)  
     **比赛名称** : [Break The Syntax CTF 2026](https://bts2026.wh.edu.pl/)  
@@ -57,6 +66,15 @@ comments: true
     **比赛权重** : 33.42  
     **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
     **添加日历** : https://ctftime.org/event/3124.ics  
+    
+??? Quote "[BKISC CTF 2026](https://ctf.bkisc.com/)"  
+    [![](https://ctftime.org/media/events/logo_1_1.jpg){ width="200" align=left }](https://ctf.bkisc.com/)  
+    **比赛名称** : [BKISC CTF 2026](https://ctf.bkisc.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-09 09:00:00 - 2026-05-10 09:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : BKISC (https://ctftime.org/team/199510)  
+    **添加日历** : https://ctftime.org/event/2927.ics  
     
 ??? Quote "[From Dusk Till Dawn Quals](https://till-dawn.fibonhack.it/)"  
     [![](https://ctftime.org/media/events/From_Dusk_Till_Dawn_-_pixel_-_square.jpg){ width="200" align=left }](https://till-dawn.fibonhack.it/)  
@@ -76,6 +94,15 @@ comments: true
     **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
     **添加日历** : https://ctftime.org/event/2773.ics  
     
+??? Quote "[Maltego Community OSINT CTF](https://maltego.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/Maltego-Logo-Compact-Yellow.png){ width="200" align=left }](https://maltego.ctfd.io/)  
+    **比赛名称** : [Maltego Community OSINT CTF](https://maltego.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-09 22:00:00 - 2026-05-09 23:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Maltego OSINT (https://ctftime.org/team/433400)  
+    **添加日历** : https://ctftime.org/event/3267.ics  
+    
 ??? Quote "[Hack2Dawn 2026](https://hack.pawnguard.org/)"  
     [![](https://ctftime.org/media/events/hack2dawn-logo.jpg){ width="200" align=left }](https://hack.pawnguard.org/)  
     **比赛名称** : [Hack2Dawn 2026](https://hack.pawnguard.org/)  
@@ -84,6 +111,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : PawnGuard (https://ctftime.org/team/427740)  
     **添加日历** : https://ctftime.org/event/3256.ics  
+    
+??? Quote "[Azure Assassin Alliance CTF 2026](https://actf2026.xctf.org.cn/)"  
+    [![](https://ctftime.org/media/events/ctftime_14.png){ width="200" align=left }](https://actf2026.xctf.org.cn/)  
+    **比赛名称** : [Azure Assassin Alliance CTF 2026](https://actf2026.xctf.org.cn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-10 09:00:00 - 2026-05-11 09:00:00 UTC+8  
+    **比赛权重** : 45.60  
+    **赛事主办** : Azure Assassin Alliance (https://ctftime.org/team/194222)  
+    **添加日历** : https://ctftime.org/event/3266.ics  
     
 ??? Quote "[NorthSec 2026](https://nsec.io/competition/)"  
     [![](https://ctftime.org/media/events/NSEC_Avatar_Socials.png){ width="200" align=left }](https://nsec.io/competition/)  
@@ -135,7 +171,7 @@ comments: true
     **比赛名称** : [SecLeaf Q2 CTF 2026](https://ctf.secleaf.tech/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-05-23 22:00:00 - 2026-05-24 22:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : SecLeaf (https://ctftime.org/team/421974)  
     **添加日历** : https://ctftime.org/event/3136.ics  
     
@@ -328,6 +364,15 @@ comments: true
     **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
     **添加日历** : https://ctftime.org/event/3148.ics  
     
+??? Quote "[DIVER OSINT CTF 2026](https://ctfd.diverctf.org/)"  
+    [![](https://ctftime.org/media/events/circle-white-simple-01.png){ width="200" align=left }](https://ctfd.diverctf.org/)  
+    **比赛名称** : [DIVER OSINT CTF 2026](https://ctfd.diverctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-07-25 11:10:00 - 2026-07-26 11:10:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
+    **添加日历** : https://ctftime.org/event/3268.ics  
+    
 ??? Quote "[D^3CTF 2026](https://d3c.tf/)"  
     [![](){ width="200" align=left }](https://d3c.tf/)  
     **比赛名称** : [D^3CTF 2026](https://d3c.tf/)  
@@ -400,6 +445,15 @@ comments: true
     **赛事主办** : K17 (https://ctftime.org/team/17058)  
     **添加日历** : https://ctftime.org/event/3145.ics  
     
+??? Quote "[VolgaCTF 2026 Final](https://volgactf.ru/en/volgactf-2026/final/)"  
+    [![](https://ctftime.org/media/events/logo-social-yellow_19.png){ width="200" align=left }](https://volgactf.ru/en/volgactf-2026/final/)  
+    **比赛名称** : [VolgaCTF 2026 Final](https://volgactf.ru/en/volgactf-2026/final/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2026-09-17 13:00:00 - 2026-09-17 23:00:00 UTC+8  
+    **比赛权重** : 25.00  
+    **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
+    **添加日历** : https://ctftime.org/event/3265.ics  
+    
 ??? Quote "[H7CTF 2026 Quals](https://2026.h7tex.com/)"  
     [![](https://ctftime.org/media/events/IMG-20251015-WA0045.jpg){ width="200" align=left }](https://2026.h7tex.com/)  
     **比赛名称** : [H7CTF 2026 Quals](https://2026.h7tex.com/)  
@@ -426,6 +480,15 @@ comments: true
     **比赛权重** : 94.74  
     **赛事主办** : FluxFingers (https://ctftime.org/team/551)  
     **添加日历** : https://ctftime.org/event/3207.ics  
+    
+??? Quote "[H7CTF 2026 Finals](https://2026.h7tex.com/)"  
+    [![](https://ctftime.org/media/events/87939ee617d4b7c6287bebf8cd7a620c.jpg){ width="200" align=left }](https://2026.h7tex.com/)  
+    **比赛名称** : [H7CTF 2026 Finals](https://2026.h7tex.com/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2026-10-24 14:30:00 - 2026-10-25 14:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : H7Tex (https://ctftime.org/team/281844)  
+    **添加日历** : https://ctftime.org/event/3094.ics  
     
 ??? Quote "[BlackAlps CTF 2026](https://blackalps.ch/ba/)"  
     [![](https://ctftime.org/media/events/black-alps-v5-logo-black_HIGH-RES.png){ width="200" align=left }](https://blackalps.ch/ba/)  

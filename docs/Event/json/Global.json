@@ -36,6 +36,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "plfanzen CFT 2026",
+        "比赛时间": "2026-05-09 00:00:00 - 2026-05-10 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3090.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://plfanzen.lol/",
+        "比赛标志": "https://ctftime.org/media/events/hloe.png",
+        "比赛权重": "0.00",
+        "赛事主办": "plfanzen (https://ctftime.org/team/418962)",
+        "比赛ID": "1491",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Break The Syntax CTF 2026",
         "比赛时间": "2026-05-09 00:00:00 - 2026-05-10 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3137.ics",
@@ -57,6 +69,18 @@
         "比赛权重": "33.42",
         "赛事主办": "OSUSEC (https://ctftime.org/team/12858)",
         "比赛ID": "423",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "BKISC CTF 2026",
+        "比赛时间": "2026-05-09 09:00:00 - 2026-05-10 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2927.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bkisc.com/",
+        "比赛标志": "https://ctftime.org/media/events/logo_1_1.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "BKISC (https://ctftime.org/team/199510)",
+        "比赛ID": "1390",
         "比赛状态": "oncoming"
     },
     {
@@ -84,6 +108,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Maltego Community OSINT CTF",
+        "比赛时间": "2026-05-09 22:00:00 - 2026-05-09 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3267.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://maltego.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/Maltego-Logo-Compact-Yellow.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Maltego OSINT (https://ctftime.org/team/433400)",
+        "比赛ID": "1586",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Hack2Dawn 2026",
         "比赛时间": "2026-05-10 03:00:00 - 2026-05-10 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3256.ics",
@@ -93,6 +129,18 @@
         "比赛权重": "0.00",
         "赛事主办": "PawnGuard (https://ctftime.org/team/427740)",
         "比赛ID": "1576",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Azure Assassin Alliance CTF 2026",
+        "比赛时间": "2026-05-10 09:00:00 - 2026-05-11 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3266.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://actf2026.xctf.org.cn/",
+        "比赛标志": "https://ctftime.org/media/events/ctftime_14.png",
+        "比赛权重": "45.60",
+        "赛事主办": "Azure Assassin Alliance (https://ctftime.org/team/194222)",
+        "比赛ID": "800",
         "比赛状态": "oncoming"
     },
     {
@@ -162,7 +210,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.secleaf.tech/",
         "比赛标志": "https://ctftime.org/media/events/CTF_3.png",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "SecLeaf (https://ctftime.org/team/421974)",
         "比赛ID": "1509",
         "比赛状态": "oncoming"
@@ -420,6 +468,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "DIVER OSINT CTF 2026",
+        "比赛时间": "2026-07-25 11:10:00 - 2026-07-26 11:10:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3268.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctfd.diverctf.org/",
+        "比赛标志": "https://ctftime.org/media/events/circle-white-simple-01.png",
+        "比赛权重": "0.00",
+        "赛事主办": "diver_osint (https://ctftime.org/team/299569)",
+        "比赛ID": "1111",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "D^3CTF 2026",
         "比赛时间": "2026-07-25 20:00:00 - 2026-07-26 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3201.ics",
@@ -516,6 +576,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "VolgaCTF 2026 Final",
+        "比赛时间": "2026-09-17 13:00:00 - 2026-09-17 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3265.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://volgactf.ru/en/volgactf-2026/final/",
+        "比赛标志": "https://ctftime.org/media/events/logo-social-yellow_19.png",
+        "比赛权重": "25.00",
+        "赛事主办": "VolgaCTF.org (https://ctftime.org/team/27094)",
+        "比赛ID": "53",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "H7CTF 2026 Quals",
         "比赛时间": "2026-09-26 11:30:00 - 2026-09-27 23:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3093.ics",
@@ -549,6 +621,18 @@
         "比赛权重": "94.74",
         "赛事主办": "FluxFingers (https://ctftime.org/team/551)",
         "比赛ID": "8",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "H7CTF 2026 Finals",
+        "比赛时间": "2026-10-24 14:30:00 - 2026-10-25 14:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3094.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://2026.h7tex.com/",
+        "比赛标志": "https://ctftime.org/media/events/87939ee617d4b7c6287bebf8cd7a620c.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "H7Tex (https://ctftime.org/team/281844)",
+        "比赛ID": "1169",
         "比赛状态": "oncoming"
     },
     {
