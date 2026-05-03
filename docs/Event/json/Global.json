@@ -348,6 +348,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Anti-Slop CTF 2026",
+        "比赛时间": "2026-06-13 09:00:00 - 2026-06-15 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3272.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.antislopp.i.ng/",
+        "比赛标志": "https://ctftime.org/media/events/f1dfed8e245dcad94300bb4c94879d01.png",
+        "比赛权重": "0.00",
+        "赛事主办": "hackme (https://ctftime.org/team/77185)",
+        "比赛ID": "1572",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "CyberSci Nationals 2025-2026",
         "比赛时间": "2026-06-13 21:00:00 - 2026-06-15 07:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3125.ics",
