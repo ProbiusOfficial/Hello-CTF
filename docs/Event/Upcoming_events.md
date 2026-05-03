@@ -103,9 +103,9 @@ comments: true
     **赛事主办** : Maltego OSINT (https://ctftime.org/team/433400)  
     **添加日历** : https://ctftime.org/event/3267.ics  
     
-??? Quote "[Hack2Dawn 2026](https://hack.pawnguard.org/)"  
-    [![](https://ctftime.org/media/events/hack2dawn-logo.jpg){ width="200" align=left }](https://hack.pawnguard.org/)  
-    **比赛名称** : [Hack2Dawn 2026](https://hack.pawnguard.org/)  
+??? Quote "[Hack2Dawn 2026](https://events.mlh.io/events/14208-hack2dawn)"  
+    [![](https://ctftime.org/media/events/hack2dawn-logo.jpg){ width="200" align=left }](https://events.mlh.io/events/14208-hack2dawn)  
+    **比赛名称** : [Hack2Dawn 2026](https://events.mlh.io/events/14208-hack2dawn)  
     **比赛形式** : Hack quest  
     **比赛时间** : 2026-05-10 03:00:00 - 2026-05-10 10:00:00 UTC+8  
     **比赛权重** : 0.00  

@@ -124,7 +124,7 @@
         "比赛时间": "2026-05-10 03:00:00 - 2026-05-10 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3256.ics",
         "比赛形式": "Hack quest",
-        "比赛链接": "https://hack.pawnguard.org/",
+        "比赛链接": "https://events.mlh.io/events/14208-hack2dawn",
         "比赛标志": "https://ctftime.org/media/events/hack2dawn-logo.jpg",
         "比赛权重": "0.00",
         "赛事主办": "PawnGuard (https://ctftime.org/team/427740)",
@@ -756,18 +756,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "THEM?!CTF 2026",
-        "比赛时间": "2026-05-02 02:00:00 - 2026-05-04 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3209.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.themctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/THEMCTF_2026_logo_black.png",
-        "比赛权重": "0",
-        "赛事主办": "THEM?! (https://ctftime.org/team/387399)",
-        "比赛ID": "1536",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "UniVsThreats 26 Finals CTF",
         "比赛时间": "2026-05-02 16:00:00 - 2026-05-03 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3244.ics",
@@ -777,6 +765,18 @@
         "比赛权重": "0",
         "赛事主办": "UVT-CTF (https://ctftime.org/team/214520)",
         "比赛ID": "1267",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "THEM?!CTF 2026",
+        "比赛时间": "2026-05-02 02:00:00 - 2026-05-04 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3209.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.themctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/THEMCTF_2026_logo_black.png",
+        "比赛权重": "0",
+        "赛事主办": "THEM?! (https://ctftime.org/team/387399)",
+        "比赛ID": "1536",
         "比赛状态": "past"
     },
     {
@@ -1953,18 +1953,6 @@
         "比赛权重": "0.00",
         "赛事主办": "CakeisTheFake (https://ctftime.org/team/276544)",
         "比赛ID": "1115",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BITSCTF 2026",
-        "比赛时间": "2026-02-20 13:30:00 - 2026-02-22 13:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3122.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.bitskrieg.in/",
-        "比赛标志": "",
-        "比赛权重": "25.54",
-        "赛事主办": "BITSkrieg (https://ctftime.org/team/22310)",
-        "比赛ID": "182",
         "比赛状态": "past"
     }
 ]
