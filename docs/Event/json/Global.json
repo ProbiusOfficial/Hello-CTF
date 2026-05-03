@@ -192,6 +192,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "0xV01D CTF 2026",
+        "比赛时间": "2026-05-18 12:00:00 - 2026-05-20 12:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3269.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://0xv01d-ctf.xyz/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "OxV01D (https://ctftime.org/team/427687)",
+        "比赛ID": "1587",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "DEF CON CTF Qualifier 2026",
         "比赛时间": "2026-05-23 05:00:00 - 2026-05-25 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3205.ics",
@@ -213,6 +225,30 @@
         "比赛权重": "0.00",
         "赛事主办": "SecLeaf (https://ctftime.org/team/421974)",
         "比赛ID": "1509",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "ZEROBREACH CTF",
+        "比赛时间": "2026-05-24 12:30:00 - 2026-05-25 00:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3271.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf.cyberspacevr.in/",
+        "比赛标志": "https://ctftime.org/media/events/WhatsApp_Image_2026-05-03_at_1.43.58_AM_1.jpeg",
+        "比赛权重": "0.00",
+        "赛事主办": "CyberSpaceVR (https://ctftime.org/team/434393)",
+        "比赛ID": "1592",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Hackअस्त्र",
+        "比赛时间": "2026-05-29 18:15:00 - 2026-05-31 01:15:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3270.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://hack-astra.vercel.app/",
+        "比赛标志": "https://ctftime.org/media/events/Logo_16.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Ethical HCK (https://ctftime.org/team/434372)",
+        "比赛ID": "1591",
         "比赛状态": "oncoming"
     },
     {
