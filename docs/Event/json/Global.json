@@ -264,6 +264,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "THEM?!CTF 2026",
+        "比赛时间": "2026-05-30 02:00:00 - 2026-06-01 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3209.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.themctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/THEMCTF_2026_logo_black.png",
+        "比赛权重": "1.00",
+        "赛事主办": "THEM?! (https://ctftime.org/team/387399)",
+        "比赛ID": "1536",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "BYUCTF 2026",
         "比赛时间": "2026-05-30 08:00:00 - 2026-05-31 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3247.ics",
@@ -765,18 +777,6 @@
         "比赛权重": "0",
         "赛事主办": "UVT-CTF (https://ctftime.org/team/214520)",
         "比赛ID": "1267",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "THEM?!CTF 2026",
-        "比赛时间": "2026-05-02 02:00:00 - 2026-05-04 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3209.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.themctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/THEMCTF_2026_logo_black.png",
-        "比赛权重": "0",
-        "赛事主办": "THEM?! (https://ctftime.org/team/387399)",
-        "比赛ID": "1536",
         "比赛状态": "past"
     },
     {
@@ -1953,6 +1953,18 @@
         "比赛权重": "0.00",
         "赛事主办": "CakeisTheFake (https://ctftime.org/team/276544)",
         "比赛ID": "1115",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "BITSCTF 2026",
+        "比赛时间": "2026-02-20 13:30:00 - 2026-02-22 13:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3122.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bitskrieg.in/",
+        "比赛标志": "",
+        "比赛权重": "25.54",
+        "赛事主办": "BITSkrieg (https://ctftime.org/team/22310)",
+        "比赛ID": "182",
         "比赛状态": "past"
     }
 ]

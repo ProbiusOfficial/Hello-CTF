@@ -211,6 +211,15 @@ comments: true
     **赛事主办** : Hardware CTF (https://ctftime.org/team/274600)  
     **添加日历** : https://ctftime.org/event/3174.ics  
     
+??? Quote "[THEM?!CTF 2026](https://ctf.themctf.com/)"  
+    [![](https://ctftime.org/media/events/THEMCTF_2026_logo_black.png){ width="200" align=left }](https://ctf.themctf.com/)  
+    **比赛名称** : [THEM?!CTF 2026](https://ctf.themctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-30 02:00:00 - 2026-06-01 02:00:00 UTC+8  
+    **比赛权重** : 1.00  
+    **赛事主办** : THEM?! (https://ctftime.org/team/387399)  
+    **添加日历** : https://ctftime.org/event/3209.ics  
+    
 ??? Quote "[BYUCTF 2026](https://ctfd.cyberjousting.com/)"  
     [![](https://ctftime.org/media/events/cougar.png){ width="200" align=left }](https://ctfd.cyberjousting.com/)  
     **比赛名称** : [BYUCTF 2026](https://ctfd.cyberjousting.com/)  
