@@ -13,15 +13,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[RAZER CTF 2026](http://ctf.droidecks.sbs/)"  
-    [![](https://ctftime.org/media/events/logo_125.png){ width="200" align=left }](http://ctf.droidecks.sbs/)  
-    **比赛名称** : [RAZER CTF 2026](http://ctf.droidecks.sbs/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-05-05 14:30:00 - 2026-05-06 14:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Droidex (https://ctftime.org/team/430693)  
-    **添加日历** : https://ctftime.org/event/3241.ics  
-    
 ??? Quote "[THCon 2K26 CTF](https://thcon.party/)"  
     [![](https://ctftime.org/media/events/logo_123.png){ width="200" align=left }](https://thcon.party/)  
     **比赛名称** : [THCon 2K26 CTF](https://thcon.party/)  
@@ -211,9 +202,9 @@ comments: true
     **赛事主办** : Hardware CTF (https://ctftime.org/team/274600)  
     **添加日历** : https://ctftime.org/event/3174.ics  
     
-??? Quote "[THEM?!CTF 2026](https://ctf.themctf.com/)"  
-    [![](https://ctftime.org/media/events/THEMCTF_2026_logo_black.png){ width="200" align=left }](https://ctf.themctf.com/)  
-    **比赛名称** : [THEM?!CTF 2026](https://ctf.themctf.com/)  
+??? Quote "[THEM?!CTF 2026](https://themctf.com/)"  
+    [![](https://ctftime.org/media/events/THEMCTF_2026_logo_black.png){ width="200" align=left }](https://themctf.com/)  
+    **比赛名称** : [THEM?!CTF 2026](https://themctf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-05-30 02:00:00 - 2026-06-01 02:00:00 UTC+8  
     **比赛权重** : 1.00  

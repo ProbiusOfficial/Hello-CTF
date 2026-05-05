@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "RAZER CTF 2026",
-        "比赛时间": "2026-05-05 14:30:00 - 2026-05-06 14:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3241.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.droidecks.sbs/",
-        "比赛标志": "https://ctftime.org/media/events/logo_125.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Droidex (https://ctftime.org/team/430693)",
-        "比赛ID": "1568",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "THCon 2K26 CTF",
         "比赛时间": "2026-05-07 19:00:00 - 2026-05-08 19:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3186.ics",
@@ -268,7 +256,7 @@
         "比赛时间": "2026-05-30 02:00:00 - 2026-06-01 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3209.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.themctf.com/",
+        "比赛链接": "https://themctf.com/",
         "比赛标志": "https://ctftime.org/media/events/THEMCTF_2026_logo_black.png",
         "比赛权重": "1.00",
         "赛事主办": "THEM?! (https://ctftime.org/team/387399)",
@@ -765,6 +753,18 @@
         "比赛权重": "0",
         "赛事主办": "SK-CERT (https://ctftime.org/team/378916)",
         "比赛ID": "1303",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "RAZER CTF 2026",
+        "比赛时间": "2026-05-05 14:30:00 - 2026-05-06 14:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3241.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf.droidecks.sbs/",
+        "比赛标志": "https://ctftime.org/media/events/logo_125.png",
+        "比赛权重": "0.00",
+        "赛事主办": "Droidex (https://ctftime.org/team/430693)",
+        "比赛ID": "1568",
         "比赛状态": "nowrunning"
     },
     {
