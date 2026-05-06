@@ -276,6 +276,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Grey Cat The Flag 2026 Qualifiers",
+        "比赛时间": "2026-05-30 10:00:00 - 2026-05-31 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3178.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.nusgreyhats.org/",
+        "比赛标志": "https://ctftime.org/media/events/73c9081878a4571d117439fc4a8e934d.png",
+        "比赛权重": "47.50",
+        "赛事主办": "NUS GreyHats (https://ctftime.org/team/16740)",
+        "比赛ID": "778",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Pwn2Play Open CTF",
         "比赛时间": "2026-05-30 17:00:00 - 2026-05-31 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3220.ics",
@@ -297,18 +309,6 @@
         "比赛权重": "0.00",
         "赛事主办": "E.S.H.A. Trojan (https://ctftime.org/team/248605)",
         "比赛ID": "1103",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "Grey Cat The Flag 2026 Qualifiers",
-        "比赛时间": "2026-05-31 20:00:00 - 2026-06-01 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3178.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.nusgreyhats.org/",
-        "比赛标志": "https://ctftime.org/media/events/73c9081878a4571d117439fc4a8e934d.png",
-        "比赛权重": "47.50",
-        "赛事主办": "NUS GreyHats (https://ctftime.org/team/16740)",
-        "比赛ID": "778",
         "比赛状态": "oncoming"
     },
     {
@@ -408,6 +408,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Grey Cat The Flag 2026 Finals",
+        "比赛时间": "2026-06-27 10:00:00 - 2026-06-28 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3173.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.nusgreyhats.org/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "NUS GreyHats (https://ctftime.org/team/16740)",
+        "比赛ID": "778",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "V1T CTF 2026",
         "比赛时间": "2026-06-27 10:00:00 - 2026-06-28 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3249.ics",
@@ -429,18 +441,6 @@
         "比赛权重": "79.25",
         "赛事主办": "Project Sekai (https://ctftime.org/team/169557)",
         "比赛ID": "769",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "Grey Cat The Flag 2026 Finals",
-        "比赛时间": "2026-06-28 10:00:00 - 2026-06-29 10:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3173.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.nusgreyhats.org/",
-        "比赛标志": "",
-        "比赛权重": "0.00",
-        "赛事主办": "NUS GreyHats (https://ctftime.org/team/16740)",
-        "比赛ID": "778",
         "比赛状态": "oncoming"
     },
     {
