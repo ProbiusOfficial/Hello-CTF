@@ -18,3 +18,12 @@ comments: true
     **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
     **添加日历** : https://ctftime.org/event/3142.ics  
     
+??? Quote "[THCon 2K26 CTF](https://thcon.party/)"  
+    [![](https://ctftime.org/media/events/logo_123.png){ width="200" align=left }](https://thcon.party/)  
+    **比赛名称** : [THCon 2K26 CTF](https://thcon.party/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-07 19:00:00 - 2026-05-08 19:00:00 UTC+8  
+    **比赛权重** : 34.67  
+    **赛事主办** : pony7 (https://ctftime.org/team/20769)  
+    **添加日历** : https://ctftime.org/event/3186.ics  
+    
