@@ -94,6 +94,15 @@ comments: true
     **赛事主办** : Azure Assassin Alliance (https://ctftime.org/team/194222)  
     **添加日历** : https://ctftime.org/event/3266.ics  
     
+??? Quote "[RAMunchers CTF](https://ctf.ramunchers.com/)"  
+    [![](https://ctftime.org/media/events/ramlogo.png){ width="200" align=left }](https://ctf.ramunchers.com/)  
+    **比赛名称** : [RAMunchers CTF](https://ctf.ramunchers.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-10 16:00:00 - 2026-05-13 23:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : R0073R5 (https://ctftime.org/team/147263)  
+    **添加日历** : https://ctftime.org/event/3283.ics  
+    
 ??? Quote "[NorthSec 2026](https://nsec.io/competition/)"  
     [![](https://ctftime.org/media/events/NSEC_Avatar_Socials.png){ width="200" align=left }](https://nsec.io/competition/)  
     **比赛名称** : [NorthSec 2026](https://nsec.io/competition/)  
@@ -102,6 +111,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : NorthSec Organizers (https://ctftime.org/team/2492)  
     **添加日历** : https://ctftime.org/event/3258.ics  
+    
+??? Quote "[NDIAS Automotive/IoT CTF](https://ctf.ndias.jp/)"  
+    [![](https://ctftime.org/media/events/image_banner_white_ctftime.png){ width="200" align=left }](https://ctf.ndias.jp/)  
+    **比赛名称** : [NDIAS Automotive/IoT CTF](https://ctf.ndias.jp/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-15 17:00:00 - 2026-05-17 17:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : cartagaitai (https://ctftime.org/team/434311)  
+    **添加日历** : https://ctftime.org/event/3276.ics  
     
 ??? Quote "[TJCTF 2026](https://tjctf.org/)"  
     [![](https://ctftime.org/media/events/logo_96_1_1.png){ width="200" align=left }](https://tjctf.org/)  
@@ -237,6 +255,15 @@ comments: true
     **比赛权重** : 69.00  
     **赛事主办** : KITCTF (https://ctftime.org/team/7221)  
     **添加日历** : https://ctftime.org/event/3041.ics  
+    
+??? Quote "[RPCA CTF 2026](https://grandctf.rpca.ac.th/)"  
+    [![](){ width="200" align=left }](https://grandctf.rpca.ac.th/)  
+    **比赛名称** : [RPCA CTF 2026](https://grandctf.rpca.ac.th/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-06-06 01:00:00 - 2026-06-09 01:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
+    **添加日历** : https://ctftime.org/event/3278.ics  
     
 ??? Quote "[SAS CTF 2026 Quals](https://ctf.thesascon.com/)"  
     [![](https://ctftime.org/media/events/SAS26_temp.png){ width="200" align=left }](https://ctf.thesascon.com/)  
