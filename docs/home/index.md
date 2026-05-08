@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[PHONIX VIPER NOVA CTF#2](http://pwnctf.ro/)"  
-            [![](https://ctftime.org/media/events/0b084a17fe379613dd5be4f540c64249.png){ width="200" align=left }](http://pwnctf.ro/)  
-            **比赛名称** : [PHONIX VIPER NOVA CTF#2](http://pwnctf.ro/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-05-08 18:00:00 - 2026-05-11 01:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)  
-            **添加日历** : https://ctftime.org/event/3018.ics  
-            
         ??? Quote "[Break The Syntax CTF 2026](https://bts2026.wh.edu.pl/)"  
             [![](https://ctftime.org/media/events/Logo_15.png){ width="200" align=left }](https://bts2026.wh.edu.pl/)  
             **比赛名称** : [Break The Syntax CTF 2026](https://bts2026.wh.edu.pl/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 33.42  
             **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
             **添加日历** : https://ctftime.org/event/3124.ics  
+            
+        ??? Quote "[BKISC CTF 2026](https://ctf.bkisc.com/)"  
+            [![](https://ctftime.org/media/events/logo_1_1.jpg){ width="200" align=left }](https://ctf.bkisc.com/)  
+            **比赛名称** : [BKISC CTF 2026](https://ctf.bkisc.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-05-09 09:00:00 - 2026-05-10 09:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : BKISC (https://ctftime.org/team/199510)  
+            **添加日历** : https://ctftime.org/event/2927.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)

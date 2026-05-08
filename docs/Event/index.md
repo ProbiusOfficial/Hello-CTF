@@ -497,15 +497,6 @@ hide:
                 **比赛详细** : 筹备中  
                 
         === "国外赛事"
-            ??? Quote "[PHONIX VIPER NOVA CTF#2](http://pwnctf.ro/)"  
-                [![](https://ctftime.org/media/events/0b084a17fe379613dd5be4f540c64249.png){ width="200" align=left }](http://pwnctf.ro/)  
-                **比赛名称** : [PHONIX VIPER NOVA CTF#2](http://pwnctf.ro/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-05-08 18:00:00 - 2026-05-11 01:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)  
-                **添加日历** : https://ctftime.org/event/3018.ics  
-                
             ??? Quote "[plfanzen CFT 2026](https://plfanzen.lol/)"  
                 [![](https://ctftime.org/media/events/hloe.png){ width="200" align=left }](https://plfanzen.lol/)  
                 **比赛名称** : [plfanzen CFT 2026](https://plfanzen.lol/)  
@@ -1059,14 +1050,14 @@ hide:
                 **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
                 **添加日历** : https://ctftime.org/event/3142.ics  
                 
-            ??? Quote "[THCon 2K26 CTF](https://thcon.party/)"  
-                [![](https://ctftime.org/media/events/logo_123.png){ width="200" align=left }](https://thcon.party/)  
-                **比赛名称** : [THCon 2K26 CTF](https://thcon.party/)  
+            ??? Quote "[PHONIX VIPER NOVA CTF#2](http://pwnctf.ro/)"  
+                [![](https://ctftime.org/media/events/0b084a17fe379613dd5be4f540c64249.png){ width="200" align=left }](http://pwnctf.ro/)  
+                **比赛名称** : [PHONIX VIPER NOVA CTF#2](http://pwnctf.ro/)  
                 **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-05-07 19:00:00 - 2026-05-08 19:00:00 UTC+8  
-                **比赛权重** : 34.67  
-                **赛事主办** : pony7 (https://ctftime.org/team/20769)  
-                **添加日历** : https://ctftime.org/event/3186.ics  
+                **比赛时间** : 2026-05-08 18:00:00 - 2026-05-11 01:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)  
+                **添加日历** : https://ctftime.org/event/3018.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -1086,6 +1077,15 @@ hide:
                 **比赛详细** :   
                 
         === "国外赛事"
+            ??? Quote "[THCon 2K26 CTF](https://thcon.party/)"  
+                [![](https://ctftime.org/media/events/logo_123.png){ width="200" align=left }](https://thcon.party/)  
+                **比赛名称** : [THCon 2K26 CTF](https://thcon.party/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-05-07 19:00:00 - 2026-05-08 19:00:00 UTC+8  
+                **比赛权重** : 34.67  
+                **赛事主办** : pony7 (https://ctftime.org/team/20769)  
+                **添加日历** : https://ctftime.org/event/3186.ics  
+                
             ??? Quote "[RAZER CTF 2026](http://ctf.droidecks.sbs/)"  
                 [![](https://ctftime.org/media/events/logo_125.png){ width="200" align=left }](http://ctf.droidecks.sbs/)  
                 **比赛名称** : [RAZER CTF 2026](http://ctf.droidecks.sbs/)  
@@ -1976,15 +1976,6 @@ hide:
                 **比赛权重** : 24.24  
                 **赛事主办** : Batman's Kitchen (https://ctftime.org/team/3135)  
                 **添加日历** : https://ctftime.org/event/3098.ics  
-                
-            ??? Quote "[THJCC CTF 2026](https://ctf2026.thjcc.org/)"  
-                [![](https://ctftime.org/media/events/3291aa527005a0771b15f8ca11d76637.png){ width="200" align=left }](https://ctf2026.thjcc.org/)  
-                **比赛名称** : [THJCC CTF 2026](https://ctf2026.thjcc.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-02-21 08:00:01 - 2026-02-22 21:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
-                **添加日历** : https://ctftime.org/event/3088.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
