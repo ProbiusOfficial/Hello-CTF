@@ -13,15 +13,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[PHONIX VIPER NOVA CTF#2](http://pwnctf.ro/)"  
-    [![](https://ctftime.org/media/events/0b084a17fe379613dd5be4f540c64249.png){ width="200" align=left }](http://pwnctf.ro/)  
-    **比赛名称** : [PHONIX VIPER NOVA CTF#2](http://pwnctf.ro/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-05-08 18:00:00 - 2026-05-11 01:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)  
-    **添加日历** : https://ctftime.org/event/3018.ics  
-    
 ??? Quote "[plfanzen CFT 2026](https://plfanzen.lol/)"  
     [![](https://ctftime.org/media/events/hloe.png){ width="200" align=left }](https://plfanzen.lol/)  
     **比赛名称** : [plfanzen CFT 2026](https://plfanzen.lol/)  

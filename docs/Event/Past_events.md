@@ -22,6 +22,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[THCon 2K26 CTF](https://thcon.party/)"  
+    [![](https://ctftime.org/media/events/logo_123.png){ width="200" align=left }](https://thcon.party/)  
+    **比赛名称** : [THCon 2K26 CTF](https://thcon.party/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-07 19:00:00 - 2026-05-08 19:00:00 UTC+8  
+    **比赛权重** : 34.67  
+    **赛事主办** : pony7 (https://ctftime.org/team/20769)  
+    **添加日历** : https://ctftime.org/event/3186.ics  
+    
 ??? Quote "[RAZER CTF 2026](http://ctf.droidecks.sbs/)"  
     [![](https://ctftime.org/media/events/logo_125.png){ width="200" align=left }](http://ctf.droidecks.sbs/)  
     **比赛名称** : [RAZER CTF 2026](http://ctf.droidecks.sbs/)  
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 24.24  
     **赛事主办** : Batman's Kitchen (https://ctftime.org/team/3135)  
     **添加日历** : https://ctftime.org/event/3098.ics  
-    
-??? Quote "[THJCC CTF 2026](https://ctf2026.thjcc.org/)"  
-    [![](https://ctftime.org/media/events/3291aa527005a0771b15f8ca11d76637.png){ width="200" align=left }](https://ctf2026.thjcc.org/)  
-    **比赛名称** : [THJCC CTF 2026](https://ctf2026.thjcc.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-21 08:00:01 - 2026-02-22 21:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : CakeisTheFake (https://ctftime.org/team/276544)  
-    **添加日历** : https://ctftime.org/event/3088.ics  
     
