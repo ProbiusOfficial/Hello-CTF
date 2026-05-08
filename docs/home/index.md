@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[DAMCTF 2026](https://damctf.xyz/)"  
-            [![](https://ctftime.org/media/events/damctf.png){ width="200" align=left }](https://damctf.xyz/)  
-            **比赛名称** : [DAMCTF 2026](https://damctf.xyz/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-05-09 08:00:00 - 2026-05-11 08:00:00 UTC+8  
-            **比赛权重** : 33.42  
-            **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
-            **添加日历** : https://ctftime.org/event/3124.ics  
-            
         ??? Quote "[BKISC CTF 2026](https://ctf.bkisc.com/)"  
             [![](https://ctftime.org/media/events/logo_1_1.jpg){ width="200" align=left }](https://ctf.bkisc.com/)  
             **比赛名称** : [BKISC CTF 2026](https://ctf.bkisc.com/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 48.17  
             **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
             **添加日历** : https://ctftime.org/event/2773.ics  
+            
+        ??? Quote "[Maltego Community OSINT CTF](https://maltego.ctfd.io/)"  
+            [![](https://ctftime.org/media/events/Maltego-Logo-Compact-Yellow.png){ width="200" align=left }](https://maltego.ctfd.io/)  
+            **比赛名称** : [Maltego Community OSINT CTF](https://maltego.ctfd.io/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-05-09 22:00:00 - 2026-05-09 23:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Maltego OSINT (https://ctftime.org/team/433400)  
+            **添加日历** : https://ctftime.org/event/3267.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
