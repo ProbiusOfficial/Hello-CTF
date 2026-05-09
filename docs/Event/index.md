@@ -497,15 +497,6 @@ hide:
                 **比赛详细** : 筹备中  
                 
         === "国外赛事"
-            ??? Quote "[From Dusk Till Dawn Quals](https://till-dawn.fibonhack.it/)"  
-                [![](https://ctftime.org/media/events/From_Dusk_Till_Dawn_-_pixel_-_square.jpg){ width="200" align=left }](https://till-dawn.fibonhack.it/)  
-                **比赛名称** : [From Dusk Till Dawn Quals](https://till-dawn.fibonhack.it/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-05-09 17:00:00 - 2026-05-10 17:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : fibonhack (https://ctftime.org/team/117538)  
-                **添加日历** : https://ctftime.org/event/3111.ics  
-                
             ??? Quote "[Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)"  
                 [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
                 **比赛名称** : [Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)  
@@ -1076,6 +1067,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : BKISC (https://ctftime.org/team/199510)  
                 **添加日历** : https://ctftime.org/event/2927.ics  
+                
+            ??? Quote "[From Dusk Till Dawn Quals](https://till-dawn.fibonhack.it/)"  
+                [![](https://ctftime.org/media/events/From_Dusk_Till_Dawn_-_pixel_-_square.jpg){ width="200" align=left }](https://till-dawn.fibonhack.it/)  
+                **比赛名称** : [From Dusk Till Dawn Quals](https://till-dawn.fibonhack.it/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-05-09 17:00:00 - 2026-05-10 17:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : fibonhack (https://ctftime.org/team/117538)  
+                **添加日历** : https://ctftime.org/event/3111.ics  
                 
     === "*已经结束*"
         === "国内赛事"
