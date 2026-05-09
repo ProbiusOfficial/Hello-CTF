@@ -45,3 +45,12 @@ comments: true
     **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
     **添加日历** : https://ctftime.org/event/3137.ics  
     
+??? Quote "[BKISC CTF 2026](https://ctf.bkisc.com/)"  
+    [![](https://ctftime.org/media/events/logo_1_1.jpg){ width="200" align=left }](https://ctf.bkisc.com/)  
+    **比赛名称** : [BKISC CTF 2026](https://ctf.bkisc.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-09 09:00:00 - 2026-05-10 09:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : BKISC (https://ctftime.org/team/199510)  
+    **添加日历** : https://ctftime.org/event/2927.ics  
+    

@@ -497,15 +497,6 @@ hide:
                 **比赛详细** : 筹备中  
                 
         === "国外赛事"
-            ??? Quote "[BKISC CTF 2026](https://ctf.bkisc.com/)"  
-                [![](https://ctftime.org/media/events/logo_1_1.jpg){ width="200" align=left }](https://ctf.bkisc.com/)  
-                **比赛名称** : [BKISC CTF 2026](https://ctf.bkisc.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-05-09 09:00:00 - 2026-05-10 09:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : BKISC (https://ctftime.org/team/199510)  
-                **添加日历** : https://ctftime.org/event/2927.ics  
-                
             ??? Quote "[From Dusk Till Dawn Quals](https://till-dawn.fibonhack.it/)"  
                 [![](https://ctftime.org/media/events/From_Dusk_Till_Dawn_-_pixel_-_square.jpg){ width="200" align=left }](https://till-dawn.fibonhack.it/)  
                 **比赛名称** : [From Dusk Till Dawn Quals](https://till-dawn.fibonhack.it/)  
@@ -1076,6 +1067,15 @@ hide:
                 **比赛权重** : 56.25  
                 **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
                 **添加日历** : https://ctftime.org/event/3137.ics  
+                
+            ??? Quote "[BKISC CTF 2026](https://ctf.bkisc.com/)"  
+                [![](https://ctftime.org/media/events/logo_1_1.jpg){ width="200" align=left }](https://ctf.bkisc.com/)  
+                **比赛名称** : [BKISC CTF 2026](https://ctf.bkisc.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-05-09 09:00:00 - 2026-05-10 09:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : BKISC (https://ctftime.org/team/199510)  
+                **添加日历** : https://ctftime.org/event/2927.ics  
                 
     === "*已经结束*"
         === "国内赛事"
