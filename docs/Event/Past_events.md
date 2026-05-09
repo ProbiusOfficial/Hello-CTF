@@ -841,6 +841,15 @@ comments: true
     **赛事主办** : Winja CTF (https://ctftime.org/team/145228)  
     **添加日历** : https://ctftime.org/event/3160.ics  
     
+??? Quote "[CyberGame 2026](https://cybergame.sk/)"  
+    [![](https://ctftime.org/media/events/76a04fd5e7b9d834480d92fbf702f749.png){ width="200" align=left }](https://cybergame.sk/)  
+    **比赛名称** : [CyberGame 2026](https://cybergame.sk/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-03-01 07:00:00 - 2026-05-10 05:59:59 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
+    **添加日历** : https://ctftime.org/event/3142.ics  
+    
 ??? Quote "[Srdnlen CTF 2026 Quals](https://ctf.srdnlen.it/)"  
     [![](https://ctftime.org/media/events/e04b66f1d17c437f935e29d0fbe7beed_1.png){ width="200" align=left }](https://ctf.srdnlen.it/)  
     **比赛名称** : [Srdnlen CTF 2026 Quals](https://ctf.srdnlen.it/)  
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : EPIHACK (https://ctftime.org/team/419202)  
     **添加日历** : https://ctftime.org/event/3076.ics  
-    
-??? Quote "[Eschaton CTF 2026 Finals](https://esch26.mcsc.space/)"  
-    [![](https://ctftime.org/media/events/mcsc_logo.jpg){ width="200" align=left }](https://esch26.mcsc.space/)  
-    **比赛名称** : [Eschaton CTF 2026 Finals](https://esch26.mcsc.space/)  
-    **比赛形式** : Attack-Defense  
-    **比赛时间** : 2026-02-21 12:30:00 - 2026-02-21 22:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Team MCSC (https://ctftime.org/team/418958)  
-    **添加日历** : https://ctftime.org/event/3078.ics  
     
