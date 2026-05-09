@@ -22,6 +22,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Maltego Community OSINT CTF](https://maltego.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/Maltego-Logo-Compact-Yellow.png){ width="200" align=left }](https://maltego.ctfd.io/)  
+    **比赛名称** : [Maltego Community OSINT CTF](https://maltego.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-09 22:00:00 - 2026-05-09 23:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Maltego OSINT (https://ctftime.org/team/433400)  
+    **添加日历** : https://ctftime.org/event/3267.ics  
+    
 ??? Quote "[THCon 2K26 CTF](https://thcon.party/)"  
     [![](https://ctftime.org/media/events/logo_123.png){ width="200" align=left }](https://thcon.party/)  
     **比赛名称** : [THCon 2K26 CTF](https://thcon.party/)  
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Team MCSC (https://ctftime.org/team/418958)  
     **添加日历** : https://ctftime.org/event/3078.ics  
-    
-??? Quote "[Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)"  
-    [![](https://ctftime.org/media/events/bklogo.png){ width="200" align=left }](https://ctf.batmans.kitchen/)  
-    **比赛名称** : [Batman's Kitchen CTF 2026](https://ctf.batmans.kitchen/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-21 09:30:00 - 2026-02-23 09:30:00 UTC+8  
-    **比赛权重** : 24.24  
-    **赛事主办** : Batman's Kitchen (https://ctftime.org/team/3135)  
-    **添加日历** : https://ctftime.org/event/3098.ics  
     
