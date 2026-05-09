@@ -63,7 +63,7 @@ comments: true
     **比赛名称** : [KubSTU CTF](https://kubstu-ctf.online/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-05-01 15:00:00 - 2026-05-03 03:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 24.82  
     **赛事主办** : Capybaras (https://ctftime.org/team/223931)  
     **添加日历** : https://ctftime.org/event/3177.ics  
     
