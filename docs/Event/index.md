@@ -497,15 +497,6 @@ hide:
                 **比赛详细** : 筹备中  
                 
         === "国外赛事"
-            ??? Quote "[RAMunchers CTF](https://ctf.ramunchers.com/)"  
-                [![](https://ctftime.org/media/events/ramlogo.png){ width="200" align=left }](https://ctf.ramunchers.com/)  
-                **比赛名称** : [RAMunchers CTF](https://ctf.ramunchers.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-05-10 16:00:00 - 2026-05-13 23:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : R0073R5 (https://ctftime.org/team/147263)  
-                **添加日历** : https://ctftime.org/event/3283.ics  
-                
             ??? Quote "[Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)"  
                 [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
                 **比赛名称** : [Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)  
@@ -1014,24 +1005,6 @@ hide:
                 **赛事主办** : plfanzen (https://ctftime.org/team/418962)  
                 **添加日历** : https://ctftime.org/event/3090.ics  
                 
-            ??? Quote "[Break The Syntax CTF 2026](https://bts2026.wh.edu.pl/)"  
-                [![](https://ctftime.org/media/events/Logo_15.png){ width="200" align=left }](https://bts2026.wh.edu.pl/)  
-                **比赛名称** : [Break The Syntax CTF 2026](https://bts2026.wh.edu.pl/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-05-09 00:00:00 - 2026-05-10 18:00:00 UTC+8  
-                **比赛权重** : 56.25  
-                **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
-                **添加日历** : https://ctftime.org/event/3137.ics  
-                
-            ??? Quote "[From Dusk Till Dawn Quals](https://till-dawn.fibonhack.it/)"  
-                [![](https://ctftime.org/media/events/From_Dusk_Till_Dawn_-_pixel_-_square.jpg){ width="200" align=left }](https://till-dawn.fibonhack.it/)  
-                **比赛名称** : [From Dusk Till Dawn Quals](https://till-dawn.fibonhack.it/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-05-09 17:00:00 - 2026-05-10 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : fibonhack (https://ctftime.org/team/117538)  
-                **添加日历** : https://ctftime.org/event/3111.ics  
-                
             ??? Quote "[Azure Assassin Alliance CTF 2026](https://actf2026.xctf.org.cn/)"  
                 [![](https://ctftime.org/media/events/ctftime_14.png){ width="200" align=left }](https://actf2026.xctf.org.cn/)  
                 **比赛名称** : [Azure Assassin Alliance CTF 2026](https://actf2026.xctf.org.cn/)  
@@ -1040,6 +1013,15 @@ hide:
                 **比赛权重** : 45.60  
                 **赛事主办** : Azure Assassin Alliance (https://ctftime.org/team/194222)  
                 **添加日历** : https://ctftime.org/event/3266.ics  
+                
+            ??? Quote "[RAMunchers CTF](https://ctf.ramunchers.com/)"  
+                [![](https://ctftime.org/media/events/ramlogo.png){ width="200" align=left }](https://ctf.ramunchers.com/)  
+                **比赛名称** : [RAMunchers CTF](https://ctf.ramunchers.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-05-10 16:00:00 - 2026-05-13 23:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : R0073R5 (https://ctftime.org/team/147263)  
+                **添加日历** : https://ctftime.org/event/3283.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -1077,6 +1059,15 @@ hide:
                 **赛事主办** : Maltego OSINT (https://ctftime.org/team/433400)  
                 **添加日历** : https://ctftime.org/event/3267.ics  
                 
+            ??? Quote "[From Dusk Till Dawn Quals](https://till-dawn.fibonhack.it/)"  
+                [![](https://ctftime.org/media/events/From_Dusk_Till_Dawn_-_pixel_-_square.jpg){ width="200" align=left }](https://till-dawn.fibonhack.it/)  
+                **比赛名称** : [From Dusk Till Dawn Quals](https://till-dawn.fibonhack.it/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-05-09 17:00:00 - 2026-05-10 17:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : fibonhack (https://ctftime.org/team/117538)  
+                **添加日历** : https://ctftime.org/event/3111.ics  
+                
             ??? Quote "[BKISC CTF 2026](https://ctf.bkisc.com/)"  
                 [![](https://ctftime.org/media/events/logo_1_1.jpg){ width="200" align=left }](https://ctf.bkisc.com/)  
                 **比赛名称** : [BKISC CTF 2026](https://ctf.bkisc.com/)  
@@ -1085,6 +1076,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : BKISC (https://ctftime.org/team/199510)  
                 **添加日历** : https://ctftime.org/event/2927.ics  
+                
+            ??? Quote "[Break The Syntax CTF 2026](https://bts2026.wh.edu.pl/)"  
+                [![](https://ctftime.org/media/events/Logo_15.png){ width="200" align=left }](https://bts2026.wh.edu.pl/)  
+                **比赛名称** : [Break The Syntax CTF 2026](https://bts2026.wh.edu.pl/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-05-09 00:00:00 - 2026-05-10 18:00:00 UTC+8  
+                **比赛权重** : 56.25  
+                **赛事主办** : PWr Synt@x Err0r (https://ctftime.org/team/88205)  
+                **添加日历** : https://ctftime.org/event/3137.ics  
                 
             ??? Quote "[THCon 2K26 CTF](https://thcon.party/)"  
                 [![](https://ctftime.org/media/events/logo_123.png){ width="200" align=left }](https://thcon.party/)  
@@ -1940,24 +1940,6 @@ hide:
                 **比赛权重** : 37.00  
                 **赛事主办** : SECCON CTF (https://ctftime.org/team/11918)  
                 **添加日历** : https://ctftime.org/event/3107.ics  
-                
-            ??? Quote "[EHAX CTF 2026](https://ctf.ehax.in/)"  
-                [![](https://ctftime.org/media/events/EHAX_CTF_FINAL_LOGO_1.png){ width="200" align=left }](https://ctf.ehax.in/)  
-                **比赛名称** : [EHAX CTF 2026](https://ctf.ehax.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-02-28 02:30:00 - 2026-03-01 14:30:00 UTC+8  
-                **比赛权重** : 22.67  
-                **赛事主办** : EHAX (https://ctftime.org/team/270643)  
-                **添加日历** : https://ctftime.org/event/3127.ics  
-                
-            ??? Quote "[UniVsThreats 26 Quals CTF](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)"  
-                [![](https://ctftime.org/media/events/UniVsThreats26_Final_No_Sponsors_1.jpg){ width="200" align=left }](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)  
-                **比赛名称** : [UniVsThreats 26 Quals CTF](https://cybersec.uvt.ro/events/UniVsThreats26Quals/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-02-27 16:00:00 - 2026-02-28 16:00:00 UTC+8  
-                **比赛权重** : 18.35  
-                **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
-                **添加日历** : https://ctftime.org/event/3092.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
