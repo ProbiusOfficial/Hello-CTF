@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Midnight Sun CTF 2026 Quals",
-        "比赛时间": "2026-05-10 21:00:00 - 2026-05-11 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2773.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://play.midnightsunctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png",
-        "比赛权重": "48.17",
-        "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
-        "比赛ID": "246",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "NorthSec 2026",
         "比赛时间": "2026-05-15 08:00:00 - 2026-05-18 07:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3258.ics",
@@ -660,18 +648,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "plfanzen CFT 2026",
-        "比赛时间": "2026-05-09 00:00:00 - 2026-05-10 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3090.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://plfanzen.lol/",
-        "比赛标志": "https://ctftime.org/media/events/hloe.png",
-        "比赛权重": "0",
-        "赛事主办": "plfanzen (https://ctftime.org/team/418962)",
-        "比赛ID": "1491",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Azure Assassin Alliance CTF 2026",
         "比赛时间": "2026-05-10 09:00:00 - 2026-05-11 09:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3266.ics",
@@ -693,6 +669,18 @@
         "比赛权重": "0",
         "赛事主办": "R0073R5 (https://ctftime.org/team/147263)",
         "比赛ID": "1589",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Midnight Sun CTF 2026 Quals",
+        "比赛时间": "2026-05-10 21:00:00 - 2026-05-11 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/2773.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://play.midnightsunctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png",
+        "比赛权重": "48.17",
+        "赛事主办": "HackingForSoju (https://ctftime.org/team/3208)",
+        "比赛ID": "246",
         "比赛状态": "nowrunning"
     },
     {
@@ -741,6 +729,18 @@
         "比赛权重": "0",
         "赛事主办": "BKISC (https://ctftime.org/team/199510)",
         "比赛ID": "1390",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "plfanzen CFT 2026",
+        "比赛时间": "2026-05-09 00:00:00 - 2026-05-10 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3090.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://plfanzen.lol/",
+        "比赛标志": "https://ctftime.org/media/events/hloe.png",
+        "比赛权重": "0",
+        "赛事主办": "plfanzen (https://ctftime.org/team/418962)",
+        "比赛ID": "1491",
         "比赛状态": "past"
     },
     {
@@ -1878,18 +1878,6 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.seccon.jp/",
         "比赛标志": "https://ctftime.org/media/events/seccon_s_11.png",
-        "比赛权重": "37.00",
-        "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
-        "比赛ID": "92",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SECCON CTF 14 Domestic Finals",
-        "比赛时间": "2026-02-28 09:00:00 - 2026-03-01 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3107.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.seccon.jp/",
-        "比赛标志": "https://ctftime.org/media/events/seccon_s_12.png",
         "比赛权重": "37.00",
         "赛事主办": "SECCON CTF (https://ctftime.org/team/11918)",
         "比赛ID": "92",

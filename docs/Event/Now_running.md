@@ -18,15 +18,6 @@ comments: true
     **赛事主办** : PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)  
     **添加日历** : https://ctftime.org/event/3018.ics  
     
-??? Quote "[plfanzen CFT 2026](https://plfanzen.lol/)"  
-    [![](https://ctftime.org/media/events/hloe.png){ width="200" align=left }](https://plfanzen.lol/)  
-    **比赛名称** : [plfanzen CFT 2026](https://plfanzen.lol/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-05-09 00:00:00 - 2026-05-10 20:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : plfanzen (https://ctftime.org/team/418962)  
-    **添加日历** : https://ctftime.org/event/3090.ics  
-    
 ??? Quote "[Azure Assassin Alliance CTF 2026](https://actf2026.xctf.org.cn/)"  
     [![](https://ctftime.org/media/events/ctftime_14.png){ width="200" align=left }](https://actf2026.xctf.org.cn/)  
     **比赛名称** : [Azure Assassin Alliance CTF 2026](https://actf2026.xctf.org.cn/)  
@@ -44,4 +35,13 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : R0073R5 (https://ctftime.org/team/147263)  
     **添加日历** : https://ctftime.org/event/3283.ics  
+    
+??? Quote "[Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)"  
+    [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
+    **比赛名称** : [Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-10 21:00:00 - 2026-05-11 21:00:00 UTC+8  
+    **比赛权重** : 48.17  
+    **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
+    **添加日历** : https://ctftime.org/event/2773.ics  
     
