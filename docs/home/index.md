@@ -62,7 +62,7 @@ hide:
             [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
             **比赛名称** : [Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-05-10 20:00:00 - 2026-05-11 20:00:00 UTC+8  
+            **比赛时间** : 2026-05-10 21:00:00 - 2026-05-11 21:00:00 UTC+8  
             **比赛权重** : 48.17  
             **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
             **添加日历** : https://ctftime.org/event/2773.ics  
