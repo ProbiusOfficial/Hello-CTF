@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[Azure Assassin Alliance CTF 2026](https://actf2026.xctf.org.cn/)"  
-            [![](https://ctftime.org/media/events/ctftime_14.png){ width="200" align=left }](https://actf2026.xctf.org.cn/)  
-            **比赛名称** : [Azure Assassin Alliance CTF 2026](https://actf2026.xctf.org.cn/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-05-10 09:00:00 - 2026-05-11 09:00:00 UTC+8  
-            **比赛权重** : 45.60  
-            **赛事主办** : Azure Assassin Alliance (https://ctftime.org/team/194222)  
-            **添加日历** : https://ctftime.org/event/3266.ics  
-            
         ??? Quote "[RAMunchers CTF](https://ctf.ramunchers.com/)"  
             [![](https://ctftime.org/media/events/ramlogo.png){ width="200" align=left }](https://ctf.ramunchers.com/)  
             **比赛名称** : [RAMunchers CTF](https://ctf.ramunchers.com/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : NorthSec Organizers (https://ctftime.org/team/2492)  
             **添加日历** : https://ctftime.org/event/3258.ics  
+            
+        ??? Quote "[NDIAS Automotive/IoT CTF](https://ctf.ndias.jp/)"  
+            [![](https://ctftime.org/media/events/image_banner_white_ctftime.png){ width="200" align=left }](https://ctf.ndias.jp/)  
+            **比赛名称** : [NDIAS Automotive/IoT CTF](https://ctf.ndias.jp/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-05-15 17:00:00 - 2026-05-17 17:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : cartagaitai (https://ctftime.org/team/434311)  
+            **添加日历** : https://ctftime.org/event/3276.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)

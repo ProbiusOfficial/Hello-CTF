@@ -22,6 +22,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Hack2Dawn 2026](https://events.mlh.io/events/14208-hack2dawn)"  
+    [![](https://ctftime.org/media/events/hack2dawn-logo.jpg){ width="200" align=left }](https://events.mlh.io/events/14208-hack2dawn)  
+    **比赛名称** : [Hack2Dawn 2026](https://events.mlh.io/events/14208-hack2dawn)  
+    **比赛形式** : Hack quest  
+    **比赛时间** : 2026-05-10 03:00:00 - 2026-05-10 10:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : PawnGuard (https://ctftime.org/team/427740)  
+    **添加日历** : https://ctftime.org/event/3256.ics  
+    
 ??? Quote "[Maltego Community OSINT CTF](https://maltego.ctfd.io/)"  
     [![](https://ctftime.org/media/events/Maltego-Logo-Compact-Yellow.png){ width="200" align=left }](https://maltego.ctfd.io/)  
     **比赛名称** : [Maltego Community OSINT CTF](https://maltego.ctfd.io/)  
@@ -30,6 +39,15 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Maltego OSINT (https://ctftime.org/team/433400)  
     **添加日历** : https://ctftime.org/event/3267.ics  
+    
+??? Quote "[BKISC CTF 2026](https://ctf.bkisc.com/)"  
+    [![](https://ctftime.org/media/events/logo_1_1.jpg){ width="200" align=left }](https://ctf.bkisc.com/)  
+    **比赛名称** : [BKISC CTF 2026](https://ctf.bkisc.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-09 09:00:00 - 2026-05-10 09:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : BKISC (https://ctftime.org/team/199510)  
+    **添加日历** : https://ctftime.org/event/2927.ics  
     
 ??? Quote "[THCon 2K26 CTF](https://thcon.party/)"  
     [![](https://ctftime.org/media/events/logo_123.png){ width="200" align=left }](https://thcon.party/)  
@@ -903,22 +921,4 @@ comments: true
     **比赛权重** : 18.35  
     **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
     **添加日历** : https://ctftime.org/event/3092.ics  
-    
-??? Quote "[BearcatCTF 2026 - Setting Sail](https://bearcatctf.io/)"  
-    [![](https://ctftime.org/media/events/bearcat26_logo_black.png){ width="200" align=left }](https://bearcatctf.io/)  
-    **比赛名称** : [BearcatCTF 2026 - Setting Sail](https://bearcatctf.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-22 01:00:00 - 2026-02-23 01:00:00 UTC+8  
-    **比赛权重** : 23.89  
-    **赛事主办** : Cyber@UC (https://ctftime.org/team/87727)  
-    **添加日历** : https://ctftime.org/event/3046.ics  
-    
-??? Quote "[EPIHACK CTF: L'arène numérique](https://ctf.epihack.tech/)"  
-    [![](https://ctftime.org/media/events/logo-bg.png){ width="200" align=left }](https://ctf.epihack.tech/)  
-    **比赛名称** : [EPIHACK CTF: L'arène numérique](https://ctf.epihack.tech/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-21 17:00:00 - 2026-02-22 01:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : EPIHACK (https://ctftime.org/team/419202)  
-    **添加日历** : https://ctftime.org/event/3076.ics  
     
