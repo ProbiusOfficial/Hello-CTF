@@ -22,6 +22,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Azure Assassin Alliance CTF 2026](https://actf2026.xctf.org.cn/)"  
+    [![](https://ctftime.org/media/events/ctftime_14.png){ width="200" align=left }](https://actf2026.xctf.org.cn/)  
+    **比赛名称** : [Azure Assassin Alliance CTF 2026](https://actf2026.xctf.org.cn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-10 09:00:00 - 2026-05-11 09:00:00 UTC+8  
+    **比赛权重** : 45.60  
+    **赛事主办** : Azure Assassin Alliance (https://ctftime.org/team/194222)  
+    **添加日历** : https://ctftime.org/event/3266.ics  
+    
 ??? Quote "[Hack2Dawn 2026](https://events.mlh.io/events/14208-hack2dawn)"  
     [![](https://ctftime.org/media/events/hack2dawn-logo.jpg){ width="200" align=left }](https://events.mlh.io/events/14208-hack2dawn)  
     **比赛名称** : [Hack2Dawn 2026](https://events.mlh.io/events/14208-hack2dawn)  
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 34.76  
     **赛事主办** : Srdnlen (https://ctftime.org/team/83421)  
     **添加日历** : https://ctftime.org/event/3043.ics  
-    
-??? Quote "[CREST CTF](https://crestpcu.in/)"  
-    [![](https://ctftime.org/media/events/crest_logo.jpeg){ width="200" align=left }](https://crestpcu.in/)  
-    **比赛名称** : [CREST CTF](https://crestpcu.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-02-28 12:30:00 - 2026-02-28 20:30:00 UTC+8  
-    **比赛权重** : 6.00  
-    **赛事主办** : CREST (https://ctftime.org/team/418000)  
-    **添加日历** : https://ctftime.org/event/3123.ics  
     
