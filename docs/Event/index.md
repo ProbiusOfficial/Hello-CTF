@@ -987,15 +987,6 @@ hide:
                 **赛事主办** : R0073R5 (https://ctftime.org/team/147263)  
                 **添加日历** : https://ctftime.org/event/3283.ics  
                 
-            ??? Quote "[Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)"  
-                [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
-                **比赛名称** : [Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-05-10 21:00:00 - 2026-05-11 21:00:00 UTC+8  
-                **比赛权重** : 48.17  
-                **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
-                **添加日历** : https://ctftime.org/event/2773.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[PolarisCTF 2026](https://www.ctfplus.cn/competition/hall)"  
@@ -1014,6 +1005,15 @@ hide:
                 **比赛详细** :   
                 
         === "国外赛事"
+            ??? Quote "[Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)"  
+                [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
+                **比赛名称** : [Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-05-10 21:00:00 - 2026-05-11 21:00:00 UTC+8  
+                **比赛权重** : 48.17  
+                **赛事主办** : HackingForSoju (https://ctftime.org/team/3208)  
+                **添加日历** : https://ctftime.org/event/2773.ics  
+                
             ??? Quote "[Azure Assassin Alliance CTF 2026](https://actf2026.xctf.org.cn/)"  
                 [![](https://ctftime.org/media/events/ctftime_14.png){ width="200" align=left }](https://actf2026.xctf.org.cn/)  
                 **比赛名称** : [Azure Assassin Alliance CTF 2026](https://actf2026.xctf.org.cn/)  
@@ -1904,15 +1904,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : SK-CERT (https://ctftime.org/team/378916)  
                 **添加日历** : https://ctftime.org/event/3142.ics  
-                
-            ??? Quote "[Srdnlen CTF 2026 Quals](https://ctf.srdnlen.it/)"  
-                [![](https://ctftime.org/media/events/e04b66f1d17c437f935e29d0fbe7beed_1.png){ width="200" align=left }](https://ctf.srdnlen.it/)  
-                **比赛名称** : [Srdnlen CTF 2026 Quals](https://ctf.srdnlen.it/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-01 02:00:00 - 2026-03-02 02:00:00 UTC+8  
-                **比赛权重** : 34.76  
-                **赛事主办** : Srdnlen (https://ctftime.org/team/83421)  
-                **添加日历** : https://ctftime.org/event/3043.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
