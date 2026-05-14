@@ -5,7 +5,7 @@ on:
       - master
       - main
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 0 * * *"
   repository_dispatch:
     types: [Hello-CTFTime]
 
