@@ -18,3 +18,12 @@ comments: true
     **赛事主办** : NorthSec Organizers (https://ctftime.org/team/2492)  
     **添加日历** : https://ctftime.org/event/3258.ics  
     
+??? Quote "[NDIAS Automotive/IoT CTF](https://ctf.ndias.jp/)"  
+    [![](https://ctftime.org/media/events/image_banner_white_ctftime.png){ width="200" align=left }](https://ctf.ndias.jp/)  
+    **比赛名称** : [NDIAS Automotive/IoT CTF](https://ctf.ndias.jp/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-15 17:00:00 - 2026-05-17 17:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : cartagaitai (https://ctftime.org/team/434311)  
+    **添加日历** : https://ctftime.org/event/3276.ics  
+    
