@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[TJCTF 2026](https://tjctf.org/)"  
-            [![](https://ctftime.org/media/events/logo_96_1_1.png){ width="200" align=left }](https://tjctf.org/)  
-            **比赛名称** : [TJCTF 2026](https://tjctf.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-05-16 00:00:00 - 2026-05-18 00:00:00 UTC+8  
-            **比赛权重** : 65.05  
-            **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
-            **添加日历** : https://ctftime.org/event/3195.ics  
-            
         ??? Quote "[DaVinciCTF 2026](https://dvc.tf/)"  
             [![](https://ctftime.org/media/events/davincictf_2026_2.png){ width="200" align=left }](https://dvc.tf/)  
             **比赛名称** : [DaVinciCTF 2026](https://dvc.tf/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : OxV01D (https://ctftime.org/team/427687)  
             **添加日历** : https://ctftime.org/event/3269.ics  
+            
+        ??? Quote "[Hack for a Change 2026 May: UN SDG 1](https://www.hackforachange.org/)"  
+            [![](https://ctftime.org/media/events/logo_127.png){ width="200" align=left }](https://www.hackforachange.org/)  
+            **比赛名称** : [Hack for a Change 2026 May: UN SDG 1](https://www.hackforachange.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-05-19 08:00:00 - 2026-05-22 07:59:59 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
+            **添加日历** : https://ctftime.org/event/3277.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
