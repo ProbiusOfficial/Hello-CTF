@@ -978,15 +978,6 @@ hide:
                 **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
                 **添加日历** : https://ctftime.org/event/3195.ics  
                 
-            ??? Quote "[DaVinciCTF 2026](https://dvc.tf/)"  
-                [![](https://ctftime.org/media/events/davincictf_2026_2.png){ width="200" align=left }](https://dvc.tf/)  
-                **比赛名称** : [DaVinciCTF 2026](https://dvc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-05-16 16:00:00 - 2026-05-17 01:00:00 UTC+8  
-                **比赛权重** : 32.59  
-                **赛事主办** : DaVinciCode (https://ctftime.org/team/112645)  
-                **添加日历** : https://ctftime.org/event/3132.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[PolarisCTF 2026](https://www.ctfplus.cn/competition/hall)"  
@@ -1005,6 +996,15 @@ hide:
                 **比赛详细** :   
                 
         === "国外赛事"
+            ??? Quote "[DaVinciCTF 2026](https://dvc.tf/)"  
+                [![](https://ctftime.org/media/events/davincictf_2026_2.png){ width="200" align=left }](https://dvc.tf/)  
+                **比赛名称** : [DaVinciCTF 2026](https://dvc.tf/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-05-16 16:00:00 - 2026-05-17 01:00:00 UTC+8  
+                **比赛权重** : 32.59  
+                **赛事主办** : DaVinciCode (https://ctftime.org/team/112645)  
+                **添加日历** : https://ctftime.org/event/3132.ics  
+                
             ??? Quote "[Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)"  
                 [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
                 **比赛名称** : [Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)  
@@ -1895,15 +1895,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : NFITS (https://ctftime.org/team/360674)  
                 **添加日历** : https://ctftime.org/event/2907.ics  
-                
-            ??? Quote "[Winja CTF | Nullcon Goa 2026](https://ctf.winja.org/)"  
-                [![](https://ctftime.org/media/events/winja-logo-transparent_2_1.png){ width="200" align=left }](https://ctf.winja.org/)  
-                **比赛名称** : [Winja CTF | Nullcon Goa 2026](https://ctf.winja.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-01 12:30:00 - 2026-03-01 18:30:00 UTC+8  
-                **比赛权重** : 1.00  
-                **赛事主办** : Winja CTF (https://ctftime.org/team/145228)  
-                **添加日历** : https://ctftime.org/event/3160.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
