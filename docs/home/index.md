@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[DaVinciCTF 2026](https://dvc.tf/)"  
-            [![](https://ctftime.org/media/events/davincictf_2026_2.png){ width="200" align=left }](https://dvc.tf/)  
-            **比赛名称** : [DaVinciCTF 2026](https://dvc.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-05-16 16:00:00 - 2026-05-17 01:00:00 UTC+8  
-            **比赛权重** : 32.59  
-            **赛事主办** : DaVinciCode (https://ctftime.org/team/112645)  
-            **添加日历** : https://ctftime.org/event/3132.ics  
-            
         ??? Quote "[UralCUP 2026](https://uralctf.org/)"  
             [![](https://ctftime.org/media/events/2876b94b571c4f41b7a235d7d6050a8c_1.jpg){ width="200" align=left }](https://uralctf.org/)  
             **比赛名称** : [UralCUP 2026](https://uralctf.org/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
             **添加日历** : https://ctftime.org/event/3277.ics  
+            
+        ??? Quote "[DEF CON CTF Qualifier 2026](https://bbbirds.org/)"  
+            [![](){ width="200" align=left }](https://bbbirds.org/)  
+            **比赛名称** : [DEF CON CTF Qualifier 2026](https://bbbirds.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-05-23 05:00:00 - 2026-05-25 05:00:00 UTC+8  
+            **比赛权重** : 63.22  
+            **赛事主办** : Benevolent Bureau of Birds (https://ctftime.org/team/425757)  
+            **添加日历** : https://ctftime.org/event/3205.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
