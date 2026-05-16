@@ -1046,7 +1046,7 @@ hide:
                 **比赛名称** : [Maltego Community OSINT CTF](https://maltego.ctfd.io/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-05-09 22:00:00 - 2026-05-09 23:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : Maltego OSINT (https://ctftime.org/team/433400)  
                 **添加日历** : https://ctftime.org/event/3267.ics  
                 
