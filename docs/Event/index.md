@@ -960,15 +960,6 @@ hide:
                 **赛事主办** : NorthSec Organizers (https://ctftime.org/team/2492)  
                 **添加日历** : https://ctftime.org/event/3258.ics  
                 
-            ??? Quote "[TJCTF 2026](https://tjctf.org/)"  
-                [![](https://ctftime.org/media/events/logo_96_1_1.png){ width="200" align=left }](https://tjctf.org/)  
-                **比赛名称** : [TJCTF 2026](https://tjctf.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-05-16 00:00:00 - 2026-05-18 00:00:00 UTC+8  
-                **比赛权重** : 65.05  
-                **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
-                **添加日历** : https://ctftime.org/event/3195.ics  
-                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[PolarisCTF 2026](https://www.ctfplus.cn/competition/hall)"  
@@ -1004,6 +995,15 @@ hide:
                 **比赛权重** : 32.59  
                 **赛事主办** : DaVinciCode (https://ctftime.org/team/112645)  
                 **添加日历** : https://ctftime.org/event/3132.ics  
+                
+            ??? Quote "[TJCTF 2026](https://tjctf.org/)"  
+                [![](https://ctftime.org/media/events/logo_96_1_1.png){ width="200" align=left }](https://tjctf.org/)  
+                **比赛名称** : [TJCTF 2026](https://tjctf.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-05-16 00:00:00 - 2026-05-18 00:00:00 UTC+8  
+                **比赛权重** : 65.05  
+                **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
+                **添加日历** : https://ctftime.org/event/3195.ics  
                 
             ??? Quote "[NDIAS Automotive/IoT CTF](https://ctf.ndias.jp/)"  
                 [![](https://ctftime.org/media/events/image_banner_white_ctftime.png){ width="200" align=left }](https://ctf.ndias.jp/)  
@@ -1877,15 +1877,6 @@ hide:
                 **比赛权重** : 22.11  
                 **赛事主办** : blackc4t5_og (https://ctftime.org/team/177031)  
                 **添加日历** : https://ctftime.org/event/3185.ics  
-                
-            ??? Quote "[ARA 7.0 CTF](https://mirror.ara-its.id/)"  
-                [![](https://ctftime.org/media/events/logo_ara_1.png){ width="200" align=left }](https://mirror.ara-its.id/)  
-                **比赛名称** : [ARA 7.0 CTF](https://mirror.ara-its.id/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-05 17:00:00 - 2026-03-06 17:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : rizztechitits (https://ctftime.org/team/418688)  
-                **添加日历** : https://ctftime.org/event/3152.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
