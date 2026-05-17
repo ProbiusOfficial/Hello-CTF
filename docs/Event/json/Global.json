@@ -612,18 +612,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "NDIAS Automotive/IoT CTF",
-        "比赛时间": "2026-05-15 17:00:00 - 2026-05-17 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3276.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.ndias.jp/",
-        "比赛标志": "https://ctftime.org/media/events/image_banner_white_ctftime.png",
-        "比赛权重": "0",
-        "赛事主办": "cartagaitai (https://ctftime.org/team/434311)",
-        "比赛ID": "1588",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "TJCTF 2026",
         "比赛时间": "2026-05-16 00:00:00 - 2026-05-18 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3195.ics",
@@ -657,6 +645,18 @@
         "比赛权重": "32.59",
         "赛事主办": "DaVinciCode (https://ctftime.org/team/112645)",
         "比赛ID": "582",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "NDIAS Automotive/IoT CTF",
+        "比赛时间": "2026-05-15 17:00:00 - 2026-05-17 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3276.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.ndias.jp/",
+        "比赛标志": "https://ctftime.org/media/events/image_banner_white_ctftime.png",
+        "比赛权重": "0",
+        "赛事主办": "cartagaitai (https://ctftime.org/team/434311)",
+        "比赛ID": "1588",
         "比赛状态": "past"
     },
     {
@@ -726,7 +726,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://till-dawn.fibonhack.it/",
         "比赛标志": "https://ctftime.org/media/events/From_Dusk_Till_Dawn_-_pixel_-_square.jpg",
-        "比赛权重": "0",
+        "比赛权重": "20.14",
         "赛事主办": "fibonhack (https://ctftime.org/team/117538)",
         "比赛ID": "880",
         "比赛状态": "past"
@@ -1833,18 +1833,6 @@
         "比赛权重": "0.00",
         "赛事主办": "YUGAM KUMARAGURU (https://ctftime.org/team/425387)",
         "比赛ID": "1519",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CSCG 2026",
-        "比赛时间": "2026-03-02 01:00:00 - 2026-05-02 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2907.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://play.cscg.live/",
-        "比赛标志": "",
-        "比赛权重": "0",
-        "赛事主办": "NFITS (https://ctftime.org/team/360674)",
-        "比赛ID": "1200",
         "比赛状态": "past"
     }
 ]
