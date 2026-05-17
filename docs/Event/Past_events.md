@@ -58,6 +58,15 @@ comments: true
     **赛事主办** : cartagaitai (https://ctftime.org/team/434311)  
     **添加日历** : https://ctftime.org/event/3276.ics  
     
+??? Quote "[NorthSec 2026](https://nsec.io/competition/)"  
+    [![](https://ctftime.org/media/events/NSEC_Avatar_Socials.png){ width="200" align=left }](https://nsec.io/competition/)  
+    **比赛名称** : [NorthSec 2026](https://nsec.io/competition/)  
+    **比赛形式** : Hack quest  
+    **比赛时间** : 2026-05-15 08:00:00 - 2026-05-18 07:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : NorthSec Organizers (https://ctftime.org/team/2492)  
+    **添加日历** : https://ctftime.org/event/3258.ics  
+    
 ??? Quote "[Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)"  
     [![](https://ctftime.org/media/events/midnightsun_2024_log_TRIMMEDo.png){ width="200" align=left }](https://play.midnightsunctf.com/)  
     **比赛名称** : [Midnight Sun CTF 2026 Quals](https://play.midnightsunctf.com/)  
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : bitsentinel (https://ctftime.org/team/280005)  
     **添加日历** : https://ctftime.org/event/3172.ics  
-    
-??? Quote "[CryptoNite CTF 2026](https://tachyon.iittp.ac.in/ctf/)"  
-    [![](){ width="200" align=left }](https://tachyon.iittp.ac.in/ctf/)  
-    **比赛名称** : [CryptoNite CTF 2026](https://tachyon.iittp.ac.in/ctf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-06 13:30:00 - 2026-03-07 19:30:00 UTC+8  
-    **比赛权重** : 22.11  
-    **赛事主办** : blackc4t5_og (https://ctftime.org/team/177031)  
-    **添加日历** : https://ctftime.org/event/3185.ics  
     
