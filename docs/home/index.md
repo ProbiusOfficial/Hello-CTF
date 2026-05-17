@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[UralCUP 2026](https://uralctf.org/)"  
-            [![](https://ctftime.org/media/events/2876b94b571c4f41b7a235d7d6050a8c_1.jpg){ width="200" align=left }](https://uralctf.org/)  
-            **比赛名称** : [UralCUP 2026](https://uralctf.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-05-17 13:00:00 - 2026-05-17 21:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : TyumGUard (https://ctftime.org/team/380152)  
-            **添加日历** : https://ctftime.org/event/3214.ics  
-            
         ??? Quote "[0xV01D CTF 2026](https://0xv01d-ctf.xyz/)"  
             [![](){ width="200" align=left }](https://0xv01d-ctf.xyz/)  
             **比赛名称** : [0xV01D CTF 2026](https://0xv01d-ctf.xyz/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 63.22  
             **赛事主办** : Benevolent Bureau of Birds (https://ctftime.org/team/425757)  
             **添加日历** : https://ctftime.org/event/3205.ics  
+            
+        ??? Quote "[Hack4Krak CTF 2026 - High School Edition](https://hack4krak.pl/)"  
+            [![](https://ctftime.org/media/events/192620743.png){ width="200" align=left }](https://hack4krak.pl/)  
+            **比赛名称** : [Hack4Krak CTF 2026 - High School Edition](https://hack4krak.pl/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-05-23 16:00:00 - 2026-05-24 22:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : Hack4Krak (https://ctftime.org/team/385787)  
+            **添加日历** : https://ctftime.org/event/3284.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)

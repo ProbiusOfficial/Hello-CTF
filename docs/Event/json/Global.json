@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "UralCUP 2026",
-        "比赛时间": "2026-05-17 13:00:00 - 2026-05-17 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3214.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://uralctf.org/",
-        "比赛标志": "https://ctftime.org/media/events/2876b94b571c4f41b7a235d7d6050a8c_1.jpg",
-        "比赛权重": "0",
-        "赛事主办": "TyumGUard (https://ctftime.org/team/380152)",
-        "比赛ID": "1417",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "0xV01D CTF 2026",
         "比赛时间": "2026-05-18 12:00:00 - 2026-05-20 12:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3269.ics",
@@ -645,6 +633,18 @@
         "比赛权重": "65.05",
         "赛事主办": "tjcsc (https://ctftime.org/team/53812)",
         "比赛ID": "144",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "UralCUP 2026",
+        "比赛时间": "2026-05-17 13:00:00 - 2026-05-17 21:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3214.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://uralctf.org/",
+        "比赛标志": "https://ctftime.org/media/events/2876b94b571c4f41b7a235d7d6050a8c_1.jpg",
+        "比赛权重": "0",
+        "赛事主办": "TyumGUard (https://ctftime.org/team/380152)",
+        "比赛ID": "1417",
         "比赛状态": "nowrunning"
     },
     {
