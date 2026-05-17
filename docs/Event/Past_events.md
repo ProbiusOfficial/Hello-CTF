@@ -22,6 +22,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[UralCUP 2026](https://uralctf.org/)"  
+    [![](https://ctftime.org/media/events/2876b94b571c4f41b7a235d7d6050a8c_1.jpg){ width="200" align=left }](https://uralctf.org/)  
+    **比赛名称** : [UralCUP 2026](https://uralctf.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-17 13:00:00 - 2026-05-17 21:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : TyumGUard (https://ctftime.org/team/380152)  
+    **添加日历** : https://ctftime.org/event/3214.ics  
+    
 ??? Quote "[DaVinciCTF 2026](https://dvc.tf/)"  
     [![](https://ctftime.org/media/events/davincictf_2026_2.png){ width="200" align=left }](https://dvc.tf/)  
     **比赛名称** : [DaVinciCTF 2026](https://dvc.tf/)  
@@ -108,7 +117,7 @@ comments: true
     **比赛名称** : [plfanzen CFT 2026](https://plfanzen.lol/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-05-09 00:00:00 - 2026-05-10 20:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : plfanzen (https://ctftime.org/team/418962)  
     **添加日历** : https://ctftime.org/event/3090.ics  
     
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : rizztechitits (https://ctftime.org/team/418688)  
     **添加日历** : https://ctftime.org/event/3152.ics  
-    
-??? Quote "[KI CTF 2026](https://cyberconclave.yugam.in/)"  
-    [![](https://ctftime.org/media/events/cyber-conclave-ki-ctf_1.png){ width="200" align=left }](https://cyberconclave.yugam.in/)  
-    **比赛名称** : [KI CTF 2026](https://cyberconclave.yugam.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-03 11:30:00 - 2026-03-03 19:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : YUGAM KUMARAGURU (https://ctftime.org/team/425387)  
-    **添加日历** : https://ctftime.org/event/3167.ics  
     

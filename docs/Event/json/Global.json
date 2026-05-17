@@ -633,7 +633,7 @@
         "比赛权重": "0",
         "赛事主办": "TyumGUard (https://ctftime.org/team/380152)",
         "比赛ID": "1417",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "DaVinciCTF 2026",
@@ -750,7 +750,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://plfanzen.lol/",
         "比赛标志": "https://ctftime.org/media/events/hloe.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "plfanzen (https://ctftime.org/team/418962)",
         "比赛ID": "1491",
         "比赛状态": "past"
@@ -1821,18 +1821,6 @@
         "比赛权重": "0",
         "赛事主办": "rizztechitits (https://ctftime.org/team/418688)",
         "比赛ID": "1486",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "KI CTF 2026",
-        "比赛时间": "2026-03-03 11:30:00 - 2026-03-03 19:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3167.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cyberconclave.yugam.in/",
-        "比赛标志": "https://ctftime.org/media/events/cyber-conclave-ki-ctf_1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "YUGAM KUMARAGURU (https://ctftime.org/team/425387)",
-        "比赛ID": "1519",
         "比赛状态": "past"
     }
 ]
