@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[0xV01D CTF 2026](https://0xv01d-ctf.xyz/)"  
-            [![](){ width="200" align=left }](https://0xv01d-ctf.xyz/)  
-            **比赛名称** : [0xV01D CTF 2026](https://0xv01d-ctf.xyz/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-05-18 12:00:00 - 2026-05-20 12:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : OxV01D (https://ctftime.org/team/427687)  
-            **添加日历** : https://ctftime.org/event/3269.ics  
-            
         ??? Quote "[Hack for a Change 2026 May: UN SDG 1](https://www.hackforachange.org/)"  
             [![](https://ctftime.org/media/events/logo_127.png){ width="200" align=left }](https://www.hackforachange.org/)  
             **比赛名称** : [Hack for a Change 2026 May: UN SDG 1](https://www.hackforachange.org/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : Hack4Krak (https://ctftime.org/team/385787)  
             **添加日历** : https://ctftime.org/event/3284.ics  
+            
+        ??? Quote "[SecLeaf Q2 CTF 2026](https://ctf.secleaf.tech/)"  
+            [![](https://ctftime.org/media/events/CTF_3.png){ width="200" align=left }](https://ctf.secleaf.tech/)  
+            **比赛名称** : [SecLeaf Q2 CTF 2026](https://ctf.secleaf.tech/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-05-23 22:00:00 - 2026-05-24 22:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : SecLeaf (https://ctftime.org/team/421974)  
+            **添加日历** : https://ctftime.org/event/3136.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
