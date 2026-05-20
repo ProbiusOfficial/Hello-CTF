@@ -86,7 +86,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/3247.ics  
     
 ??? Quote "[Grey Cat The Flag 2026 Qualifiers](https://ctf.nusgreyhats.org/)"  
-    [![](https://ctftime.org/media/events/73c9081878a4571d117439fc4a8e934d.png){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
+    [![](https://ctftime.org/media/events/greyctf2026-logo.png){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
     **比赛名称** : [Grey Cat The Flag 2026 Qualifiers](https://ctf.nusgreyhats.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-05-30 10:00:00 - 2026-05-31 10:00:00 UTC+8  
