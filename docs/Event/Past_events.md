@@ -58,6 +58,15 @@ comments: true
     **赛事主办** : tjcsc (https://ctftime.org/team/53812)  
     **添加日历** : https://ctftime.org/event/3195.ics  
     
+??? Quote "[SamaraCTF 2026](https://samara.volgactf.ru/)"  
+    [![](https://ctftime.org/media/events/SamaraCTF_logo_square.png){ width="200" align=left }](https://samara.volgactf.ru/)  
+    **比赛名称** : [SamaraCTF 2026](https://samara.volgactf.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-15 23:00:00 - 2026-05-17 23:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : SamaraCTF.ru (https://ctftime.org/team/436135)  
+    **添加日历** : https://ctftime.org/event/3306.ics  
+    
 ??? Quote "[NDIAS Automotive/IoT CTF](https://ctf.ndias.jp/)"  
     [![](https://ctftime.org/media/events/image_banner_white_ctftime.png){ width="200" align=left }](https://ctf.ndias.jp/)  
     **比赛名称** : [NDIAS Automotive/IoT CTF](https://ctf.ndias.jp/)  
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 24.10  
     **赛事主办** : r3d_kn1ght5 (https://ctftime.org/team/212248)  
     **添加日历** : https://ctftime.org/event/3171.ics  
-    
-??? Quote "[APort Vault CTF - Can You Move the Money?](https://vault.aport.io/)"  
-    [![](https://ctftime.org/media/events/aport-logo.png){ width="200" align=left }](https://vault.aport.io/)  
-    **比赛名称** : [APort Vault CTF - Can You Move the Money?](https://vault.aport.io/)  
-    **比赛形式** : Hack quest  
-    **比赛时间** : 2026-03-06 20:00:00 - 2026-03-11 20:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : APort (https://ctftime.org/team/425773)  
-    **添加日历** : https://ctftime.org/event/3176.ics  
     
