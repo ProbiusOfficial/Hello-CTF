@@ -22,6 +22,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[Hack for a Change 2026 May: UN SDG 1](https://www.hackforachange.org/)"  
+    [![](https://ctftime.org/media/events/logo_127.png){ width="200" align=left }](https://www.hackforachange.org/)  
+    **比赛名称** : [Hack for a Change 2026 May: UN SDG 1](https://www.hackforachange.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-19 08:00:00 - 2026-05-22 07:59:59 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
+    **添加日历** : https://ctftime.org/event/3277.ics  
+    
 ??? Quote "[0xV01D CTF 2026](https://0xv01d-ctf.xyz/)"  
     [![](){ width="200" align=left }](https://0xv01d-ctf.xyz/)  
     **比赛名称** : [0xV01D CTF 2026](https://0xv01d-ctf.xyz/)  
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 23.74  
     **赛事主办** : 4x10m (https://ctftime.org/team/418607)  
     **添加日历** : https://ctftime.org/event/3129.ics  
-    
-??? Quote "[ApoorvCTF 2026](https://apoorvctf.iiitkottayam.ac.in/)"  
-    [![](https://ctftime.org/media/events/A5_-_98.png){ width="200" align=left }](https://apoorvctf.iiitkottayam.ac.in/)  
-    **比赛名称** : [ApoorvCTF 2026](https://apoorvctf.iiitkottayam.ac.in/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-07 05:00:00 - 2026-03-09 05:00:00 UTC+8  
-    **比赛权重** : 24.10  
-    **赛事主办** : r3d_kn1ght5 (https://ctftime.org/team/212248)  
-    **添加日历** : https://ctftime.org/event/3171.ics  
     
