@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Hack4Krak CTF 2026 - High School Edition",
-        "比赛时间": "2026-05-23 16:00:00 - 2026-05-24 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3284.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hack4krak.pl/",
-        "比赛标志": "https://ctftime.org/media/events/192620743.png",
-        "比赛权重": "0",
-        "赛事主办": "Hack4Krak (https://ctftime.org/team/385787)",
-        "比赛ID": "1335",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "SecLeaf Q2 CTF 2026",
         "比赛时间": "2026-05-23 22:00:00 - 2026-05-24 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3136.ics",
@@ -573,6 +561,18 @@
         "比赛权重": "63.22",
         "赛事主办": "Benevolent Bureau of Birds (https://ctftime.org/team/425757)",
         "比赛ID": "1",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Hack4Krak CTF 2026 - High School Edition",
+        "比赛时间": "2026-05-23 16:00:00 - 2026-05-24 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3284.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://hack4krak.pl/",
+        "比赛标志": "https://ctftime.org/media/events/192620743.png",
+        "比赛权重": "0",
+        "赛事主办": "Hack4Krak (https://ctftime.org/team/385787)",
+        "比赛ID": "1335",
         "比赛状态": "nowrunning"
     },
     {

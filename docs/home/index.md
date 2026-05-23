@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[Hack4Krak CTF 2026 - High School Edition](https://hack4krak.pl/)"  
-            [![](https://ctftime.org/media/events/192620743.png){ width="200" align=left }](https://hack4krak.pl/)  
-            **比赛名称** : [Hack4Krak CTF 2026 - High School Edition](https://hack4krak.pl/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-05-23 16:00:00 - 2026-05-24 22:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : Hack4Krak (https://ctftime.org/team/385787)  
-            **添加日历** : https://ctftime.org/event/3284.ics  
-            
         ??? Quote "[SecLeaf Q2 CTF 2026](https://ctf.secleaf.tech/)"  
             [![](https://ctftime.org/media/events/CTF_3.png){ width="200" align=left }](https://ctf.secleaf.tech/)  
             **比赛名称** : [SecLeaf Q2 CTF 2026](https://ctf.secleaf.tech/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Ethical HCK (https://ctftime.org/team/434372)  
             **添加日历** : https://ctftime.org/event/3270.ics  
+            
+        ??? Quote "[Hardwear.io USA 2026 Hardware CTF](https://hwc.tf/)"  
+            [![](https://ctftime.org/media/events/logohwcolor_17.png){ width="200" align=left }](https://hwc.tf/)  
+            **比赛名称** : [Hardwear.io USA 2026 Hardware CTF](https://hwc.tf/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-05-30 01:00:00 - 2026-05-31 04:50:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Hardware CTF (https://ctftime.org/team/274600)  
+            **添加日历** : https://ctftime.org/event/3174.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
