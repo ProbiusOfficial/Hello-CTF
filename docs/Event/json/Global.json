@@ -528,18 +528,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "DEF CON CTF Qualifier 2026",
-        "比赛时间": "2026-05-23 05:00:00 - 2026-05-25 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3205.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://bbbirds.org/",
-        "比赛标志": "",
-        "比赛权重": "63.22",
-        "赛事主办": "Benevolent Bureau of Birds (https://ctftime.org/team/425757)",
-        "比赛ID": "1",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "ZEROBREACH CTF",
         "比赛时间": "2026-05-24 12:30:00 - 2026-05-25 00:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3271.ics",
@@ -573,6 +561,18 @@
         "比赛权重": "0",
         "赛事主办": "Hack4Krak (https://ctftime.org/team/385787)",
         "比赛ID": "1335",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "DEF CON CTF Qualifier 2026",
+        "比赛时间": "2026-05-23 05:00:00 - 2026-05-25 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3205.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://bbbirds.org/",
+        "比赛标志": "",
+        "比赛权重": "63.22",
+        "赛事主办": "Benevolent Bureau of Birds (https://ctftime.org/team/425757)",
+        "比赛ID": "1",
         "比赛状态": "past"
     },
     {
@@ -1725,18 +1725,6 @@
         "比赛权重": "100.00",
         "赛事主办": "DiceGang (https://ctftime.org/team/109452)",
         "比赛ID": "568",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "@Hack 2026",
-        "比赛时间": "2026-03-07 22:00:00 - 2026-03-09 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3027.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://athackctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/athack_logo.png",
-        "比赛权重": "0",
-        "赛事主办": "Hexploit Alliance (https://ctftime.org/team/278003)",
-        "比赛ID": "1061",
         "比赛状态": "past"
     }
 ]

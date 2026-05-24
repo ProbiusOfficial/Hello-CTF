@@ -49,6 +49,15 @@ comments: true
     **赛事主办** : Hack4Krak (https://ctftime.org/team/385787)  
     **添加日历** : https://ctftime.org/event/3284.ics  
     
+??? Quote "[DEF CON CTF Qualifier 2026](https://bbbirds.org/)"  
+    [![](){ width="200" align=left }](https://bbbirds.org/)  
+    **比赛名称** : [DEF CON CTF Qualifier 2026](https://bbbirds.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-23 05:00:00 - 2026-05-25 05:00:00 UTC+8  
+    **比赛权重** : 63.22  
+    **赛事主办** : Benevolent Bureau of Birds (https://ctftime.org/team/425757)  
+    **添加日历** : https://ctftime.org/event/3205.ics  
+    
 ??? Quote "[Hack for a Change 2026 May: UN SDG 1](https://www.hackforachange.org/)"  
     [![](https://ctftime.org/media/events/logo_127.png){ width="200" align=left }](https://www.hackforachange.org/)  
     **比赛名称** : [Hack for a Change 2026 May: UN SDG 1](https://www.hackforachange.org/)  
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 100.00  
     **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
     **添加日历** : https://ctftime.org/event/3110.ics  
-    
-??? Quote "[@Hack 2026](https://athackctf.com/)"  
-    [![](https://ctftime.org/media/events/athack_logo.png){ width="200" align=left }](https://athackctf.com/)  
-    **比赛名称** : [@Hack 2026](https://athackctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-07 22:00:00 - 2026-03-09 03:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Hexploit Alliance (https://ctftime.org/team/278003)  
-    **添加日历** : https://ctftime.org/event/3027.ics  
     
