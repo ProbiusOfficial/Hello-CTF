@@ -540,15 +540,15 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Hack4Krak CTF 2026 - High School Edition",
-        "比赛时间": "2026-05-23 16:00:00 - 2026-05-24 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3284.ics",
+        "比赛名称": "ZEROBREACH CTF",
+        "比赛时间": "2026-05-24 12:30:00 - 2026-05-25 00:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3271.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://hack4krak.pl/",
-        "比赛标志": "https://ctftime.org/media/events/192620743.png",
-        "比赛权重": "0",
-        "赛事主办": "Hack4Krak (https://ctftime.org/team/385787)",
-        "比赛ID": "1335",
+        "比赛链接": "http://ctf.cyberspacevr.in/",
+        "比赛标志": "https://ctftime.org/media/events/WhatsApp_Image_2026-05-03_at_1.43.58_AM_1.jpeg",
+        "比赛权重": "0.00",
+        "赛事主办": "CyberSpaceVR (https://ctftime.org/team/434393)",
+        "比赛ID": "1592",
         "比赛状态": "nowrunning"
     },
     {
@@ -561,19 +561,19 @@
         "比赛权重": "0",
         "赛事主办": "SecLeaf (https://ctftime.org/team/421974)",
         "比赛ID": "1509",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
-        "比赛名称": "ZEROBREACH CTF",
-        "比赛时间": "2026-05-24 12:30:00 - 2026-05-25 00:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3271.ics",
+        "比赛名称": "Hack4Krak CTF 2026 - High School Edition",
+        "比赛时间": "2026-05-23 16:00:00 - 2026-05-24 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3284.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.cyberspacevr.in/",
-        "比赛标志": "https://ctftime.org/media/events/WhatsApp_Image_2026-05-03_at_1.43.58_AM_1.jpeg",
-        "比赛权重": "0.00",
-        "赛事主办": "CyberSpaceVR (https://ctftime.org/team/434393)",
-        "比赛ID": "1592",
-        "比赛状态": "nowrunning"
+        "比赛链接": "https://hack4krak.pl/",
+        "比赛标志": "https://ctftime.org/media/events/192620743.png",
+        "比赛权重": "0",
+        "赛事主办": "Hack4Krak (https://ctftime.org/team/385787)",
+        "比赛ID": "1335",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Hack for a Change 2026 May: UN SDG 1",
@@ -642,7 +642,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://samara.volgactf.ru/",
         "比赛标志": "https://ctftime.org/media/events/SamaraCTF_logo_square.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "SamaraCTF.ru (https://ctftime.org/team/436135)",
         "比赛ID": "1606",
         "比赛状态": "past"
@@ -1749,30 +1749,6 @@
         "比赛权重": "18.57",
         "赛事主办": "code-vinci (https://ctftime.org/team/365817)",
         "比赛ID": "1225",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "upCTF 2026",
-        "比赛时间": "2026-03-07 17:00:00 - 2026-03-09 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3073.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.xstf.pt/",
-        "比赛标志": "https://ctftime.org/media/events/logo_yellow_1.png",
-        "比赛权重": "24.96",
-        "赛事主办": "xSTF (https://ctftime.org/team/15341)",
-        "比赛ID": "1481",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Axiom CTF 2026",
-        "比赛时间": "2026-03-07 15:00:00 - 2026-03-09 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3129.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.4x10m.ru/",
-        "比赛标志": "https://ctftime.org/media/events/Frame_1.png",
-        "比赛权重": "23.74",
-        "赛事主办": "4x10m (https://ctftime.org/team/418607)",
-        "比赛ID": "1510",
         "比赛状态": "past"
     }
 ]

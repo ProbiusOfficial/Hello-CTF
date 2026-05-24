@@ -22,6 +22,24 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[SecLeaf Q2 CTF 2026](https://ctf.secleaf.tech/)"  
+    [![](https://ctftime.org/media/events/CTF_3.png){ width="200" align=left }](https://ctf.secleaf.tech/)  
+    **比赛名称** : [SecLeaf Q2 CTF 2026](https://ctf.secleaf.tech/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-23 22:00:00 - 2026-05-24 22:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : SecLeaf (https://ctftime.org/team/421974)  
+    **添加日历** : https://ctftime.org/event/3136.ics  
+    
+??? Quote "[Hack4Krak CTF 2026 - High School Edition](https://hack4krak.pl/)"  
+    [![](https://ctftime.org/media/events/192620743.png){ width="200" align=left }](https://hack4krak.pl/)  
+    **比赛名称** : [Hack4Krak CTF 2026 - High School Edition](https://hack4krak.pl/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-23 16:00:00 - 2026-05-24 22:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Hack4Krak (https://ctftime.org/team/385787)  
+    **添加日历** : https://ctftime.org/event/3284.ics  
+    
 ??? Quote "[Hack for a Change 2026 May: UN SDG 1](https://www.hackforachange.org/)"  
     [![](https://ctftime.org/media/events/logo_127.png){ width="200" align=left }](https://www.hackforachange.org/)  
     **比赛名称** : [Hack for a Change 2026 May: UN SDG 1](https://www.hackforachange.org/)  
@@ -72,7 +90,7 @@ comments: true
     **比赛名称** : [SamaraCTF 2026](https://samara.volgactf.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-05-15 23:00:00 - 2026-05-17 23:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : SamaraCTF.ru (https://ctftime.org/team/436135)  
     **添加日历** : https://ctftime.org/event/3306.ics  
     
@@ -903,22 +921,4 @@ comments: true
     **比赛权重** : 18.57  
     **赛事主办** : code-vinci (https://ctftime.org/team/365817)  
     **添加日历** : https://ctftime.org/event/3101.ics  
-    
-??? Quote "[upCTF 2026](https://ctf.xstf.pt/)"  
-    [![](https://ctftime.org/media/events/logo_yellow_1.png){ width="200" align=left }](https://ctf.xstf.pt/)  
-    **比赛名称** : [upCTF 2026](https://ctf.xstf.pt/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-07 17:00:00 - 2026-03-09 17:00:00 UTC+8  
-    **比赛权重** : 24.96  
-    **赛事主办** : xSTF (https://ctftime.org/team/15341)  
-    **添加日历** : https://ctftime.org/event/3073.ics  
-    
-??? Quote "[Axiom CTF 2026](https://ctf.4x10m.ru/)"  
-    [![](https://ctftime.org/media/events/Frame_1.png){ width="200" align=left }](https://ctf.4x10m.ru/)  
-    **比赛名称** : [Axiom CTF 2026](https://ctf.4x10m.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-07 15:00:00 - 2026-03-09 03:00:00 UTC+8  
-    **比赛权重** : 23.74  
-    **赛事主办** : 4x10m (https://ctftime.org/team/418607)  
-    **添加日历** : https://ctftime.org/event/3129.ics  
     
