@@ -247,6 +247,15 @@ comments: true
     **赛事主办** : UVT-CTF (https://ctftime.org/team/214520)  
     **添加日历** : https://ctftime.org/event/3244.ics  
     
+??? Quote "[LakeCTF Finals 25-26](https://ctfnew.polygl0ts.ch/)"  
+    [![](https://ctftime.org/media/events/lake-logo-ctftime.png){ width="200" align=left }](https://ctfnew.polygl0ts.ch/)  
+    **比赛名称** : [LakeCTF Finals 25-26](https://ctfnew.polygl0ts.ch/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-01 15:00:00 - 2026-05-01 23:00:00 UTC+8  
+    **比赛权重** : 54.00  
+    **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
+    **添加日历** : https://ctftime.org/event/3295.ics  
+    
 ??? Quote "[KubSTU CTF](https://kubstu-ctf.online/)"  
     [![](https://ctftime.org/media/events/ctf_flag_tut.jpg){ width="200" align=left }](https://kubstu-ctf.online/)  
     **比赛名称** : [KubSTU CTF](https://kubstu-ctf.online/)  
@@ -912,13 +921,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : Utopians (https://ctftime.org/team/408650)  
     **添加日历** : https://ctftime.org/event/3170.ics  
-    
-??? Quote "[DiceCTF 2026 Quals](https://ctf.dicega.ng/)"  
-    [![](https://ctftime.org/media/events/dice.png){ width="200" align=left }](https://ctf.dicega.ng/)  
-    **比赛名称** : [DiceCTF 2026 Quals](https://ctf.dicega.ng/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-08 01:00:00 - 2026-03-09 01:00:00 UTC+8  
-    **比赛权重** : 100.00  
-    **赛事主办** : DiceGang (https://ctftime.org/team/109452)  
-    **添加日历** : https://ctftime.org/event/3110.ics  
     
