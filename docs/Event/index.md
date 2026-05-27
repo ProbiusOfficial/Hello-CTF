@@ -497,9 +497,9 @@ hide:
                 **比赛详细** : 筹备中  
                 
         === "国外赛事"
-            ??? Quote "[Hackअस्त्र](https://hack-astra.vercel.app/)"  
-                [![](https://ctftime.org/media/events/Logo_16.png){ width="200" align=left }](https://hack-astra.vercel.app/)  
-                **比赛名称** : [Hackअस्त्र](https://hack-astra.vercel.app/)  
+            ??? Quote "[Hackअस्त्र](https://ctf.hackastra.tech/)"  
+                [![](https://ctftime.org/media/events/Logo_16.png){ width="200" align=left }](https://ctf.hackastra.tech/)  
+                **比赛名称** : [Hackअस्त्र](https://ctf.hackastra.tech/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-05-29 18:15:00 - 2026-05-31 01:15:00 UTC+8  
                 **比赛权重** : 0.00  
@@ -914,11 +914,6 @@ hide:
                 **比赛时间** : 2026年03月28日 09:00 - 2026年03月30日 09:00  
                 **比赛详细** : 星盟安全团队举办的第一届招新赛，由 CTF+ 平台承办。QQ群：1083975295  
                 
-            ??? Quote "[【Solar】3月应急响应公益月赛](https://mp.weixin.qq.com/s/S5SIYuTNafxzdRMdrNvfAA)"  
-                **比赛名称** : [【Solar】3月应急响应公益月赛](https://mp.weixin.qq.com/s/S5SIYuTNafxzdRMdrNvfAA)  
-                **比赛时间** : 2026年03月28日 10:00 - 2026年03月28日 18:00  
-                **比赛详细** : QQ群：713192205；比赛平台/报名地址：https://www.qsnctf.com/#/login。报名时间：2026年03月23日15:00-2026年03月28日09:59。每月比赛时间为月末最后一个周六上午10:00，报名时间为开始前两天。题目范围：综合靶场、Windows独立靶场、Linux独立靶场、日志审计、数据库、逆向分析、流量分析。  
-                
             ??? Quote "[数字中国创新大赛](https://wap.dcic-china.com/competitions/10212)"  
                 **比赛名称** : [数字中国创新大赛](https://wap.dcic-china.com/competitions/10212)  
                 **比赛时间** : 2026年04月12日 09:00 - 2026年04月12日 12:00  
@@ -975,7 +970,7 @@ hide:
                 **比赛名称** : [0xV01D CTF 2026](https://0xv01d-ctf.xyz/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-05-18 12:00:00 - 2026-05-20 12:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 19.29  
                 **赛事主办** : OxV01D (https://ctftime.org/team/427687)  
                 **添加日历** : https://ctftime.org/event/3269.ics  
                 
