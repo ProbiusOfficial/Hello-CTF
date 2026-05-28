@@ -220,15 +220,6 @@ comments: true
     **赛事主办** : OmniCYBR (https://ctftime.org/team/383015)  
     **添加日历** : https://ctftime.org/event/3104.ics  
     
-??? Quote "[DownUnderCTF 2026](https://2026.duc.tf/)"  
-    [![](){ width="200" align=left }](https://2026.duc.tf/)  
-    **比赛名称** : [DownUnderCTF 2026](https://2026.duc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-07-18 03:30:00 - 2026-07-20 03:30:00 UTC+8  
-    **比赛权重** : 94.99  
-    **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
-    **添加日历** : https://ctftime.org/event/3112.ics  
-    
 ??? Quote "[UIUCTF 2026](https://uiuc.tf/)"  
     [![](){ width="200" align=left }](https://uiuc.tf/)  
     **比赛名称** : [UIUCTF 2026](https://uiuc.tf/)  
