@@ -497,15 +497,6 @@ hide:
                 **比赛详细** : 筹备中  
                 
         === "国外赛事"
-            ??? Quote "[Hackअस्त्र](https://ctf.hackastra.tech/)"  
-                [![](https://ctftime.org/media/events/Logo_16.png){ width="200" align=left }](https://ctf.hackastra.tech/)  
-                **比赛名称** : [Hackअस्त्र](https://ctf.hackastra.tech/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-05-29 18:15:00 - 2026-05-31 01:15:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Ethical HCK (https://ctftime.org/team/434372)  
-                **添加日历** : https://ctftime.org/event/3270.ics  
-                
             ??? Quote "[Hardwear.io USA 2026 Hardware CTF](https://hwc.tf/)"  
                 [![](https://ctftime.org/media/events/logohwcolor_17.png){ width="200" align=left }](https://hwc.tf/)  
                 **比赛名称** : [Hardwear.io USA 2026 Hardware CTF](https://hwc.tf/)  
@@ -897,7 +888,15 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-    
+            ??? Quote "[Hackअस्त्र](https://ctf.hackastra.tech/)"  
+                [![](https://ctftime.org/media/events/Logo_16.png){ width="200" align=left }](https://ctf.hackastra.tech/)  
+                **比赛名称** : [Hackअस्त्र](https://ctf.hackastra.tech/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-05-29 18:15:00 - 2026-05-31 01:15:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Ethical HCK (https://ctftime.org/team/434372)  
+                **添加日历** : https://ctftime.org/event/3270.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[数字中国创新大赛](https://wap.dcic-china.com/competitions/10212)"  
