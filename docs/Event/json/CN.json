@@ -10,13 +10,6 @@
                 "detail": "筹备中"
             },
             {
-                "name": "PolarisCTF 2026",
-                "link": "https://www.ctfplus.cn/competition/hall",
-                "comp_time_start": "2026年03月28日 09:00",
-                "comp_time_end": "2026年03月30日 09:00",
-                "detail": "星盟安全团队举办的第一届招新赛，由 CTF+ 平台承办。QQ群：1083975295"
-            },
-            {
                 "name": "数字中国创新大赛",
                 "link": "https://wap.dcic-china.com/competitions/10212",
                 "comp_time_start": "2026年04月12日 09:00",
@@ -24,7 +17,7 @@
                 "detail": ""
             }
         ],
-        "total": 3,
+        "total": 2,
         "page": 1,
         "size": 20
     },

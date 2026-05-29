@@ -5,11 +5,6 @@ comments: true
 
 ## 国内赛事
 
-??? Quote "PolarisCTF 2026"  
-    **比赛名称** : [PolarisCTF 2026](https://www.ctfplus.cn/competition/hall)  
-    **比赛时间** : 2026年03月28日 09:00 - 2026年03月30日 09:00  
-    **比赛详细** : 星盟安全团队举办的第一届招新赛，由 CTF+ 平台承办。QQ群：1083975295  
-    
 ??? Quote "数字中国创新大赛"  
     **比赛名称** : [数字中国创新大赛](https://wap.dcic-china.com/competitions/10212)  
     **比赛时间** : 2026年04月12日 09:00 - 2026年04月12日 12:00  
@@ -58,7 +53,7 @@ comments: true
     **比赛名称** : [Hack for a Change 2026 May: UN SDG 1](https://www.hackforachange.org/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-05-19 08:00:00 - 2026-05-22 07:59:59 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 24.53  
     **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
     **添加日历** : https://ctftime.org/event/3277.ics  
     
