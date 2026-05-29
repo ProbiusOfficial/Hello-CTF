@@ -30,6 +30,15 @@ comments: true
     **赛事主办** : SecLeaf (https://ctftime.org/team/421974)  
     **添加日历** : https://ctftime.org/event/3136.ics  
     
+??? Quote "[Panther CTF 2026](http://pantherctf.secleaf.tech/)"  
+    [![](https://ctftime.org/media/events/download_1.jpg){ width="200" align=left }](http://pantherctf.secleaf.tech/)  
+    **比赛名称** : [Panther CTF 2026](http://pantherctf.secleaf.tech/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-23 16:30:00 - 2026-05-24 16:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : SecLeaf (https://ctftime.org/team/421974)  
+    **添加日历** : https://ctftime.org/event/3264.ics  
+    
 ??? Quote "[Hack4Krak CTF 2026 - High School Edition](https://hack4krak.pl/)"  
     [![](https://ctftime.org/media/events/192620743.png){ width="200" align=left }](https://hack4krak.pl/)  
     **比赛名称** : [Hack4Krak CTF 2026 - High School Edition](https://hack4krak.pl/)  
@@ -38,6 +47,15 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Hack4Krak (https://ctftime.org/team/385787)  
     **添加日历** : https://ctftime.org/event/3284.ics  
+    
+??? Quote "[ZeroDayTM CTF](https://ctf.info.uvt.ro/invite/ckhbsit2kfmk)"  
+    [![](https://ctftime.org/media/events/zeroday-logo.jpg){ width="200" align=left }](https://ctf.info.uvt.ro/invite/ckhbsit2kfmk)  
+    **比赛名称** : [ZeroDayTM CTF](https://ctf.info.uvt.ro/invite/ckhbsit2kfmk)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-23 15:00:00 - 2026-05-23 23:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ZeroDayTM (https://ctftime.org/team/427754)  
+    **添加日历** : https://ctftime.org/event/3298.ics  
     
 ??? Quote "[DEF CON CTF Qualifier 2026](https://bbbirds.org/)"  
     [![](){ width="200" align=left }](https://bbbirds.org/)  
@@ -893,22 +911,4 @@ comments: true
     **比赛权重** : 35.20  
     **赛事主办** : isss (https://ctftime.org/team/69010)  
     **添加日历** : https://ctftime.org/event/3133.ics  
-    
-??? Quote "[Espilon CTF 2026](https://ctf.espilon.net/)"  
-    [![](){ width="200" align=left }](https://ctf.espilon.net/)  
-    **比赛名称** : [Espilon CTF 2026](https://ctf.espilon.net/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-11 20:00:00 - 2026-03-26 08:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Espilon (https://ctftime.org/team/423394)  
-    **添加日历** : https://ctftime.org/event/3179.ics  
-    
-??? Quote "[ShellCTF](https://shellctf.me/)"  
-    [![](https://ctftime.org/media/events/shell-ctf-icon.jpg){ width="200" align=left }](https://shellctf.me/)  
-    **比赛名称** : [ShellCTF](https://shellctf.me/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-08 14:30:00 - 2026-03-08 18:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : Utopians (https://ctftime.org/team/408650)  
-    **添加日历** : https://ctftime.org/event/3170.ics  
     

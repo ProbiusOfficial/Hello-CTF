@@ -18,3 +18,21 @@ comments: true
     **赛事主办** : Ethical HCK (https://ctftime.org/team/434372)  
     **添加日历** : https://ctftime.org/event/3270.ics  
     
+??? Quote "[Hardwear.io USA 2026 Hardware CTF](https://hwc.tf/)"  
+    [![](https://ctftime.org/media/events/logohwcolor_17.png){ width="200" align=left }](https://hwc.tf/)  
+    **比赛名称** : [Hardwear.io USA 2026 Hardware CTF](https://hwc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-30 01:00:00 - 2026-05-31 04:50:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Hardware CTF (https://ctftime.org/team/274600)  
+    **添加日历** : https://ctftime.org/event/3174.ics  
+    
+??? Quote "[HASBLCTF26](https://www.hasblctf.tech/)"  
+    [![](https://ctftime.org/media/events/logo_128.png){ width="200" align=left }](https://www.hasblctf.tech/)  
+    **比赛名称** : [HASBLCTF26](https://www.hasblctf.tech/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-30 01:00:00 - 2026-06-01 01:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ExploitsFromHeaven1337 (https://ctftime.org/team/435592)  
+    **添加日历** : https://ctftime.org/event/3301.ics  
+    

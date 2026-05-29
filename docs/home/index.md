@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[Hardwear.io USA 2026 Hardware CTF](https://hwc.tf/)"  
-            [![](https://ctftime.org/media/events/logohwcolor_17.png){ width="200" align=left }](https://hwc.tf/)  
-            **比赛名称** : [Hardwear.io USA 2026 Hardware CTF](https://hwc.tf/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-05-30 01:00:00 - 2026-05-31 04:50:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Hardware CTF (https://ctftime.org/team/274600)  
-            **添加日历** : https://ctftime.org/event/3174.ics  
-            
         ??? Quote "[THEM?!CTF 2026](https://themctf.com/)"  
             [![](https://ctftime.org/media/events/THEMCTF_2026_logo_black.png){ width="200" align=left }](https://themctf.com/)  
             **比赛名称** : [THEM?!CTF 2026](https://themctf.com/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 47.50  
             **赛事主办** : NUS GreyHats (https://ctftime.org/team/16740)  
             **添加日历** : https://ctftime.org/event/3178.ics  
+            
+        ??? Quote "[HSE CTF 2026](https://ctf.miem.hse.ru/)"  
+            [![](https://ctftime.org/media/events/vorona.png){ width="200" align=left }](https://ctf.miem.hse.ru/)  
+            **比赛名称** : [HSE CTF 2026](https://ctf.miem.hse.ru/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-05-30 15:00:00 - 2026-05-30 21:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : HSE CTF Crew (https://ctftime.org/team/436827)  
+            **添加日历** : https://ctftime.org/event/3313.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
