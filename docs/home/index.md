@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[Grey Cat The Flag 2026 Qualifiers](https://ctf.nusgreyhats.org/)"  
-            [![](https://ctftime.org/media/events/greyctf2026-logo.png){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
-            **比赛名称** : [Grey Cat The Flag 2026 Qualifiers](https://ctf.nusgreyhats.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-05-30 10:00:00 - 2026-05-31 10:00:00 UTC+8  
-            **比赛权重** : 47.50  
-            **赛事主办** : NUS GreyHats (https://ctftime.org/team/16740)  
-            **添加日历** : https://ctftime.org/event/3178.ics  
-            
         ??? Quote "[HSE CTF 2026](https://ctf.miem.hse.ru/)"  
             [![](https://ctftime.org/media/events/vorona.png){ width="200" align=left }](https://ctf.miem.hse.ru/)  
             **比赛名称** : [HSE CTF 2026](https://ctf.miem.hse.ru/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : E.S.H.A. Trojan (https://ctftime.org/team/248605)  
             **添加日历** : https://ctftime.org/event/3243.ics  
+            
+        ??? Quote "[bhackari CTF 2026](https://ctf.bhackari.it/)"  
+            [![](https://ctftime.org/media/events/bhackari_logo_squared_white.png){ width="200" align=left }](https://ctf.bhackari.it/)  
+            **比赛名称** : [bhackari CTF 2026](https://ctf.bhackari.it/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-05-30 18:00:00 - 2026-05-31 18:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : bhackari (https://ctftime.org/team/194130)  
+            **添加日历** : https://ctftime.org/event/3302.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
