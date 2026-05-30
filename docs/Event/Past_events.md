@@ -39,6 +39,15 @@ comments: true
     **赛事主办** : HSE CTF Crew (https://ctftime.org/team/436827)  
     **添加日历** : https://ctftime.org/event/3313.ics  
     
+??? Quote "[Hardwear.io USA 2026 Hardware CTF](https://hwc.tf/)"  
+    [![](https://ctftime.org/media/events/logohwcolor_17.png){ width="200" align=left }](https://hwc.tf/)  
+    **比赛名称** : [Hardwear.io USA 2026 Hardware CTF](https://hwc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-30 01:00:00 - 2026-05-31 04:50:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Hardware CTF (https://ctftime.org/team/274600)  
+    **添加日历** : https://ctftime.org/event/3174.ics  
+    
 ??? Quote "[Hackअस्त्र](https://ctf.hackastra.tech/)"  
     [![](https://ctftime.org/media/events/Logo_16.png){ width="200" align=left }](https://ctf.hackastra.tech/)  
     **比赛名称** : [Hackअस्त्र](https://ctf.hackastra.tech/)  
@@ -902,13 +911,4 @@ comments: true
     **比赛权重** : 24.82  
     **赛事主办** : SU (https://ctftime.org/team/29641)  
     **添加日历** : https://ctftime.org/event/3161.ics  
-    
-??? Quote "[Goldrush Gauntlet 2026](https://ung.ctfd.io/)"  
-    [![](https://ctftime.org/media/events/ggctf.png){ width="200" align=left }](https://ung.ctfd.io/)  
-    **比赛名称** : [Goldrush Gauntlet 2026](https://ung.ctfd.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-14 06:00:00 - 2026-03-15 06:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : CyberHawks at UNG (https://ctftime.org/team/368776)  
-    **添加日历** : https://ctftime.org/event/3134.ics  
     
