@@ -63,15 +63,6 @@ comments: true
     **赛事主办** : NUS GreyHats (https://ctftime.org/team/16740)  
     **添加日历** : https://ctftime.org/event/3178.ics  
     
-??? Quote "[HSE CTF 2026](https://ctf.miem.hse.ru/)"  
-    [![](https://ctftime.org/media/events/vorona.png){ width="200" align=left }](https://ctf.miem.hse.ru/)  
-    **比赛名称** : [HSE CTF 2026](https://ctf.miem.hse.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-05-30 15:00:00 - 2026-05-30 21:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : HSE CTF Crew (https://ctftime.org/team/436827)  
-    **添加日历** : https://ctftime.org/event/3313.ics  
-    
 ??? Quote "[Pwn2Play Open CTF](https://pwn2play.biterra.co/)"  
     [![](https://ctftime.org/media/events/2025.png){ width="200" align=left }](https://pwn2play.biterra.co/)  
     **比赛名称** : [Pwn2Play Open CTF](https://pwn2play.biterra.co/)  

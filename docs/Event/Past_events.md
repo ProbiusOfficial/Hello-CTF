@@ -12,6 +12,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[HSE CTF 2026](https://ctf.miem.hse.ru/)"  
+    [![](https://ctftime.org/media/events/vorona.png){ width="200" align=left }](https://ctf.miem.hse.ru/)  
+    **比赛名称** : [HSE CTF 2026](https://ctf.miem.hse.ru/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-30 15:00:00 - 2026-05-30 21:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : HSE CTF Crew (https://ctftime.org/team/436827)  
+    **添加日历** : https://ctftime.org/event/3313.ics  
+    
 ??? Quote "[ZEROBREACH CTF](http://ctf.cyberspacevr.in/)"  
     [![](https://ctftime.org/media/events/WhatsApp_Image_2026-05-03_at_1.43.58_AM_1.jpeg){ width="200" align=left }](http://ctf.cyberspacevr.in/)  
     **比赛名称** : [ZEROBREACH CTF](http://ctf.cyberspacevr.in/)  
@@ -902,13 +911,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : o1d_bu7_go1d (https://ctftime.org/team/213673)  
     **添加日历** : https://ctftime.org/event/3191.ics  
-    
-??? Quote "[UTCTF 2026](https://utctf.live/)"  
-    [![](https://ctftime.org/media/events/UTCTF_2026.png){ width="200" align=left }](https://utctf.live/)  
-    **比赛名称** : [UTCTF 2026](https://utctf.live/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-13 08:23:00 - 2026-03-15 08:23:00 UTC+8  
-    **比赛权重** : 35.20  
-    **赛事主办** : isss (https://ctftime.org/team/69010)  
-    **添加日历** : https://ctftime.org/event/3133.ics  
     
