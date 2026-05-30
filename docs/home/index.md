@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[BYUCTF 2026](https://ctfd.cyberjousting.com/)"  
-            [![](https://ctftime.org/media/events/cougar.png){ width="200" align=left }](https://ctfd.cyberjousting.com/)  
-            **比赛名称** : [BYUCTF 2026](https://ctfd.cyberjousting.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-05-30 08:00:00 - 2026-05-31 08:00:00 UTC+8  
-            **比赛权重** : 53.29  
-            **赛事主办** : BYU Cyberia (https://ctftime.org/team/155711)  
-            **添加日历** : https://ctftime.org/event/3247.ics  
-            
         ??? Quote "[Grey Cat The Flag 2026 Qualifiers](https://ctf.nusgreyhats.org/)"  
             [![](https://ctftime.org/media/events/greyctf2026-logo.png){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
             **比赛名称** : [Grey Cat The Flag 2026 Qualifiers](https://ctf.nusgreyhats.org/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : DMUHackers26 (https://ctftime.org/team/392860)  
             **添加日历** : https://ctftime.org/event/3220.ics  
+            
+        ??? Quote "[WhiteHats TrojanCTF 2026](https://eshatrojan.nl/trojanctf)"  
+            [![](){ width="200" align=left }](https://eshatrojan.nl/trojanctf)  
+            **比赛名称** : [WhiteHats TrojanCTF 2026](https://eshatrojan.nl/trojanctf)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-05-30 17:00:00 - 2026-05-31 03:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : E.S.H.A. Trojan (https://ctftime.org/team/248605)  
+            **添加日历** : https://ctftime.org/event/3243.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)

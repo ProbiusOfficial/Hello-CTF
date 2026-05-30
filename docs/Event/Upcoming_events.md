@@ -13,15 +13,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[BYUCTF 2026](https://ctfd.cyberjousting.com/)"  
-    [![](https://ctftime.org/media/events/cougar.png){ width="200" align=left }](https://ctfd.cyberjousting.com/)  
-    **比赛名称** : [BYUCTF 2026](https://ctfd.cyberjousting.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-05-30 08:00:00 - 2026-05-31 08:00:00 UTC+8  
-    **比赛权重** : 53.29  
-    **赛事主办** : BYU Cyberia (https://ctftime.org/team/155711)  
-    **添加日历** : https://ctftime.org/event/3247.ics  
-    
 ??? Quote "[Grey Cat The Flag 2026 Qualifiers](https://ctf.nusgreyhats.org/)"  
     [![](https://ctftime.org/media/events/greyctf2026-logo.png){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
     **比赛名称** : [Grey Cat The Flag 2026 Qualifiers](https://ctf.nusgreyhats.org/)  
