@@ -54,15 +54,6 @@ comments: true
     **赛事主办** : NUS GreyHats (https://ctftime.org/team/16740)  
     **添加日历** : https://ctftime.org/event/3178.ics  
     
-??? Quote "[WhiteHats TrojanCTF 2026](https://eshatrojan.nl/trojanctf)"  
-    [![](){ width="200" align=left }](https://eshatrojan.nl/trojanctf)  
-    **比赛名称** : [WhiteHats TrojanCTF 2026](https://eshatrojan.nl/trojanctf)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-05-30 17:00:00 - 2026-05-31 03:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : E.S.H.A. Trojan (https://ctftime.org/team/248605)  
-    **添加日历** : https://ctftime.org/event/3243.ics  
-    
 ??? Quote "[bhackari CTF 2026](https://ctf.bhackari.it/)"  
     [![](https://ctftime.org/media/events/bhackari_logo_squared_white.png){ width="200" align=left }](https://ctf.bhackari.it/)  
     **比赛名称** : [bhackari CTF 2026](https://ctf.bhackari.it/)  
