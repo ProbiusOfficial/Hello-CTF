@@ -27,24 +27,6 @@ comments: true
     **赛事主办** : THEM?! (https://ctftime.org/team/387399)  
     **添加日历** : https://ctftime.org/event/3209.ics  
     
-??? Quote "[BYUCTF 2026](https://ctfd.cyberjousting.com/)"  
-    [![](https://ctftime.org/media/events/cougar.png){ width="200" align=left }](https://ctfd.cyberjousting.com/)  
-    **比赛名称** : [BYUCTF 2026](https://ctfd.cyberjousting.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-05-30 08:00:00 - 2026-05-31 08:00:00 UTC+8  
-    **比赛权重** : 53.29  
-    **赛事主办** : BYU Cyberia (https://ctftime.org/team/155711)  
-    **添加日历** : https://ctftime.org/event/3247.ics  
-    
-??? Quote "[Grey Cat The Flag 2026 Qualifiers](https://ctf.nusgreyhats.org/)"  
-    [![](https://ctftime.org/media/events/greyctf2026-logo.png){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
-    **比赛名称** : [Grey Cat The Flag 2026 Qualifiers](https://ctf.nusgreyhats.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-05-30 10:00:00 - 2026-05-31 10:00:00 UTC+8  
-    **比赛权重** : 47.50  
-    **赛事主办** : NUS GreyHats (https://ctftime.org/team/16740)  
-    **添加日历** : https://ctftime.org/event/3178.ics  
-    
 ??? Quote "[bhackari CTF 2026](https://ctf.bhackari.it/)"  
     [![](https://ctftime.org/media/events/bhackari_logo_squared_white.png){ width="200" align=left }](https://ctf.bhackari.it/)  
     **比赛名称** : [bhackari CTF 2026](https://ctf.bhackari.it/)  

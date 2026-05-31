@@ -39,6 +39,24 @@ comments: true
     **赛事主办** : HSE CTF Crew (https://ctftime.org/team/436827)  
     **添加日历** : https://ctftime.org/event/3313.ics  
     
+??? Quote "[Grey Cat The Flag 2026 Qualifiers](https://ctf.nusgreyhats.org/)"  
+    [![](https://ctftime.org/media/events/greyctf2026-logo.png){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
+    **比赛名称** : [Grey Cat The Flag 2026 Qualifiers](https://ctf.nusgreyhats.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-30 10:00:00 - 2026-05-31 10:00:00 UTC+8  
+    **比赛权重** : 47.50  
+    **赛事主办** : NUS GreyHats (https://ctftime.org/team/16740)  
+    **添加日历** : https://ctftime.org/event/3178.ics  
+    
+??? Quote "[BYUCTF 2026](https://ctfd.cyberjousting.com/)"  
+    [![](https://ctftime.org/media/events/cougar.png){ width="200" align=left }](https://ctfd.cyberjousting.com/)  
+    **比赛名称** : [BYUCTF 2026](https://ctfd.cyberjousting.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-30 08:00:00 - 2026-05-31 08:00:00 UTC+8  
+    **比赛权重** : 53.29  
+    **赛事主办** : BYU Cyberia (https://ctftime.org/team/155711)  
+    **添加日历** : https://ctftime.org/event/3247.ics  
+    
 ??? Quote "[Hardwear.io USA 2026 Hardware CTF](https://hwc.tf/)"  
     [![](https://ctftime.org/media/events/logohwcolor_17.png){ width="200" align=left }](https://hwc.tf/)  
     **比赛名称** : [Hardwear.io USA 2026 Hardware CTF](https://hwc.tf/)  
@@ -893,22 +911,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Crakon  ctf (https://ctftime.org/team/426527)  
     **添加日历** : https://ctftime.org/event/3182.ics  
-    
-??? Quote "[tkbctf5](https://alpacahack.com/ctfs/tkbctf5)"  
-    [![](https://ctftime.org/media/events/tkbctf_logo.png){ width="200" align=left }](https://alpacahack.com/ctfs/tkbctf5)  
-    **比赛名称** : [tkbctf5](https://alpacahack.com/ctfs/tkbctf5)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-14 13:00:00 - 2026-03-15 13:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : TPC (https://ctftime.org/team/222485)  
-    **添加日历** : https://ctftime.org/event/3091.ics  
-    
-??? Quote "[SUCTF 2026](https://suctf2026.xctf.org.cn/)"  
-    [![](https://ctftime.org/media/events/SU.jpg){ width="200" align=left }](https://suctf2026.xctf.org.cn/)  
-    **比赛名称** : [SUCTF 2026](https://suctf2026.xctf.org.cn/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-14 09:00:00 - 2026-03-16 09:00:00 UTC+8  
-    **比赛权重** : 24.82  
-    **赛事主办** : SU (https://ctftime.org/team/29641)  
-    **添加日历** : https://ctftime.org/event/3161.ics  
     

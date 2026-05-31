@@ -600,30 +600,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "BYUCTF 2026",
-        "比赛时间": "2026-05-30 08:00:00 - 2026-05-31 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3247.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfd.cyberjousting.com/",
-        "比赛标志": "https://ctftime.org/media/events/cougar.png",
-        "比赛权重": "53.29",
-        "赛事主办": "BYU Cyberia (https://ctftime.org/team/155711)",
-        "比赛ID": "768",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "Grey Cat The Flag 2026 Qualifiers",
-        "比赛时间": "2026-05-30 10:00:00 - 2026-05-31 10:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3178.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.nusgreyhats.org/",
-        "比赛标志": "https://ctftime.org/media/events/greyctf2026-logo.png",
-        "比赛权重": "47.50",
-        "赛事主办": "NUS GreyHats (https://ctftime.org/team/16740)",
-        "比赛ID": "778",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "bhackari CTF 2026",
         "比赛时间": "2026-05-30 18:00:00 - 2026-05-31 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3302.ics",
@@ -669,6 +645,30 @@
         "比赛权重": "0.00",
         "赛事主办": "HSE CTF Crew (https://ctftime.org/team/436827)",
         "比赛ID": "275",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Grey Cat The Flag 2026 Qualifiers",
+        "比赛时间": "2026-05-30 10:00:00 - 2026-05-31 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3178.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.nusgreyhats.org/",
+        "比赛标志": "https://ctftime.org/media/events/greyctf2026-logo.png",
+        "比赛权重": "47.50",
+        "赛事主办": "NUS GreyHats (https://ctftime.org/team/16740)",
+        "比赛ID": "778",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "BYUCTF 2026",
+        "比赛时间": "2026-05-30 08:00:00 - 2026-05-31 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3247.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctfd.cyberjousting.com/",
+        "比赛标志": "https://ctftime.org/media/events/cougar.png",
+        "比赛权重": "53.29",
+        "赛事主办": "BYU Cyberia (https://ctftime.org/team/155711)",
+        "比赛ID": "768",
         "比赛状态": "past"
     },
     {
@@ -1809,30 +1809,6 @@
         "比赛权重": "0",
         "赛事主办": "Crakon  ctf (https://ctftime.org/team/426527)",
         "比赛ID": "1531",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "tkbctf5",
-        "比赛时间": "2026-03-14 13:00:00 - 2026-03-15 13:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3091.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://alpacahack.com/ctfs/tkbctf5",
-        "比赛标志": "https://ctftime.org/media/events/tkbctf_logo.png",
-        "比赛权重": "25.00",
-        "赛事主办": "TPC (https://ctftime.org/team/222485)",
-        "比赛ID": "1476",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SUCTF 2026",
-        "比赛时间": "2026-03-14 09:00:00 - 2026-03-16 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3161.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://suctf2026.xctf.org.cn/",
-        "比赛标志": "https://ctftime.org/media/events/SU.jpg",
-        "比赛权重": "24.82",
-        "赛事主办": "SU (https://ctftime.org/team/29641)",
-        "比赛ID": "1226",
         "比赛状态": "past"
     }
 ]
