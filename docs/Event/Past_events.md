@@ -75,6 +75,15 @@ comments: true
     **赛事主办** : Hardware CTF (https://ctftime.org/team/274600)  
     **添加日历** : https://ctftime.org/event/3174.ics  
     
+??? Quote "[HASBLCTF26](https://www.hasblctf.tech/)"  
+    [![](https://ctftime.org/media/events/logo_128.png){ width="200" align=left }](https://www.hasblctf.tech/)  
+    **比赛名称** : [HASBLCTF26](https://www.hasblctf.tech/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-30 01:00:00 - 2026-06-01 01:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : ExploitsFromHeaven1337 (https://ctftime.org/team/435592)  
+    **添加日历** : https://ctftime.org/event/3301.ics  
+    
 ??? Quote "[Hackअस्त्र](https://ctf.hackastra.tech/)"  
     [![](https://ctftime.org/media/events/Logo_16.png){ width="200" align=left }](https://ctf.hackastra.tech/)  
     **比赛名称** : [Hackअस्त्र](https://ctf.hackastra.tech/)  
@@ -902,13 +911,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : Interpoly (https://ctftime.org/team/424494)  
     **添加日历** : https://ctftime.org/event/3165.ics  
-    
-??? Quote "[MIPT CTF Quals 2026](https://miptctf.ru/)"  
-    [![](https://ctftime.org/media/events/miptctf.jpg){ width="200" align=left }](https://miptctf.ru/)  
-    **比赛名称** : [MIPT CTF Quals 2026](https://miptctf.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-14 17:00:00 - 2026-03-15 17:00:00 UTC+8  
-    **比赛权重** : 24.58  
-    **赛事主办** : L0stAx3s (https://ctftime.org/team/354995)  
-    **添加日历** : https://ctftime.org/event/3162.ics  
     
