@@ -96,18 +96,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Crypto CTF 2026",
-        "比赛时间": "2026-06-13 22:00:00 - 2026-06-14 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3034.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cr.yp.toc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/cryptoctf_logo.jpg",
-        "比赛权重": "91.00",
-        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
-        "比赛ID": "317",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Sieberrsec CTF 7.0",
         "比赛时间": "2026-06-17 09:00:00 - 2026-06-17 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3299.ics",
@@ -576,18 +564,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "THEM?!CTF 2026",
-        "比赛时间": "2026-05-30 02:00:00 - 2026-06-01 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3209.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://themctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/THEMCTF_2026_logo_black.png",
-        "比赛权重": "0",
-        "赛事主办": "THEM?! (https://ctftime.org/team/387399)",
-        "比赛ID": "1536",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "bhackari CTF 2026",
         "比赛时间": "2026-05-30 18:00:00 - 2026-05-31 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3302.ics",
@@ -657,6 +633,18 @@
         "比赛权重": "53.29",
         "赛事主办": "BYU Cyberia (https://ctftime.org/team/155711)",
         "比赛ID": "768",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "THEM?!CTF 2026",
+        "比赛时间": "2026-05-30 02:00:00 - 2026-06-01 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3209.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://themctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/THEMCTF_2026_logo_black.png",
+        "比赛权重": "0",
+        "赛事主办": "THEM?! (https://ctftime.org/team/387399)",
+        "比赛ID": "1536",
         "比赛状态": "past"
     },
     {
@@ -1773,18 +1761,6 @@
         "比赛权重": "0",
         "赛事主办": "Hacking Indian Ocean (https://ctftime.org/team/399138)",
         "比赛ID": "1498",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Lag N Crash 6.0",
-        "比赛时间": "2026-03-16 12:00:00 - 2026-03-17 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3165.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://lagncra.sh/",
-        "比赛标志": "https://ctftime.org/media/events/d1f68ce184a147b1b87eabe3826986dd.png",
-        "比赛权重": "25.00",
-        "赛事主办": "Interpoly (https://ctftime.org/team/424494)",
-        "比赛ID": "1513",
         "比赛状态": "past"
     }
 ]

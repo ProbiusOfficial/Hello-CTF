@@ -66,6 +66,15 @@ comments: true
     **赛事主办** : BYU Cyberia (https://ctftime.org/team/155711)  
     **添加日历** : https://ctftime.org/event/3247.ics  
     
+??? Quote "[THEM?!CTF 2026](https://themctf.com/)"  
+    [![](https://ctftime.org/media/events/THEMCTF_2026_logo_black.png){ width="200" align=left }](https://themctf.com/)  
+    **比赛名称** : [THEM?!CTF 2026](https://themctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-05-30 02:00:00 - 2026-06-01 02:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : THEM?! (https://ctftime.org/team/387399)  
+    **添加日历** : https://ctftime.org/event/3209.ics  
+    
 ??? Quote "[Hardwear.io USA 2026 Hardware CTF](https://hwc.tf/)"  
     [![](https://ctftime.org/media/events/logohwcolor_17.png){ width="200" align=left }](https://hwc.tf/)  
     **比赛名称** : [Hardwear.io USA 2026 Hardware CTF](https://hwc.tf/)  
@@ -902,13 +911,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Hacking Indian Ocean (https://ctftime.org/team/399138)  
     **添加日历** : https://ctftime.org/event/3189.ics  
-    
-??? Quote "[Lag N Crash 6.0](https://lagncra.sh/)"  
-    [![](https://ctftime.org/media/events/d1f68ce184a147b1b87eabe3826986dd.png){ width="200" align=left }](https://lagncra.sh/)  
-    **比赛名称** : [Lag N Crash 6.0](https://lagncra.sh/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-16 12:00:00 - 2026-03-17 18:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : Interpoly (https://ctftime.org/team/424494)  
-    **添加日历** : https://ctftime.org/event/3165.ics  
     
