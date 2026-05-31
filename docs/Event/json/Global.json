@@ -609,7 +609,7 @@
         "比赛权重": "0",
         "赛事主办": "bhackari (https://ctftime.org/team/194130)",
         "比赛ID": "1602",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Pwn2Play Open CTF",
@@ -1797,18 +1797,6 @@
         "比赛权重": "24.58",
         "赛事主办": "L0stAx3s (https://ctftime.org/team/354995)",
         "比赛ID": "1528",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Dark ctf",
-        "比赛时间": "2026-03-14 14:30:00 - 2026-03-15 14:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3182.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://crack-on.live/",
-        "比赛标志": "",
-        "比赛权重": "0",
-        "赛事主办": "Crakon  ctf (https://ctftime.org/team/426527)",
-        "比赛ID": "1531",
         "比赛状态": "past"
     }
 ]

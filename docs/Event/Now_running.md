@@ -27,12 +27,3 @@ comments: true
     **赛事主办** : THEM?! (https://ctftime.org/team/387399)  
     **添加日历** : https://ctftime.org/event/3209.ics  
     
-??? Quote "[bhackari CTF 2026](https://ctf.bhackari.it/)"  
-    [![](https://ctftime.org/media/events/bhackari_logo_squared_white.png){ width="200" align=left }](https://ctf.bhackari.it/)  
-    **比赛名称** : [bhackari CTF 2026](https://ctf.bhackari.it/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-05-30 18:00:00 - 2026-05-31 18:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : bhackari (https://ctftime.org/team/194130)  
-    **添加日历** : https://ctftime.org/event/3302.ics  
-    

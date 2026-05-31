@@ -951,6 +951,14 @@ hide:
                 **赛事主办** : THEM?! (https://ctftime.org/team/387399)  
                 **添加日历** : https://ctftime.org/event/3209.ics  
                 
+    === "*已经结束*"
+        === "国内赛事"
+            ??? Quote "[数字中国创新大赛](https://wap.dcic-china.com/competitions/10212)"  
+                **比赛名称** : [数字中国创新大赛](https://wap.dcic-china.com/competitions/10212)  
+                **比赛时间** : 2026年04月12日 09:00 - 2026年04月12日 12:00  
+                **比赛详细** :   
+                
+        === "国外赛事"
             ??? Quote "[bhackari CTF 2026](https://ctf.bhackari.it/)"  
                 [![](https://ctftime.org/media/events/bhackari_logo_squared_white.png){ width="200" align=left }](https://ctf.bhackari.it/)  
                 **比赛名称** : [bhackari CTF 2026](https://ctf.bhackari.it/)  
@@ -960,14 +968,6 @@ hide:
                 **赛事主办** : bhackari (https://ctftime.org/team/194130)  
                 **添加日历** : https://ctftime.org/event/3302.ics  
                 
-    === "*已经结束*"
-        === "国内赛事"
-            ??? Quote "[数字中国创新大赛](https://wap.dcic-china.com/competitions/10212)"  
-                **比赛名称** : [数字中国创新大赛](https://wap.dcic-china.com/competitions/10212)  
-                **比赛时间** : 2026年04月12日 09:00 - 2026年04月12日 12:00  
-                **比赛详细** :   
-                
-        === "国外赛事"
             ??? Quote "[Pwn2Play Open CTF](https://pwn2play.biterra.co/)"  
                 [![](https://ctftime.org/media/events/2025.png){ width="200" align=left }](https://pwn2play.biterra.co/)  
                 **比赛名称** : [Pwn2Play Open CTF](https://pwn2play.biterra.co/)  
@@ -1858,15 +1858,6 @@ hide:
                 **比赛权重** : 24.58  
                 **赛事主办** : L0stAx3s (https://ctftime.org/team/354995)  
                 **添加日历** : https://ctftime.org/event/3162.ics  
-                
-            ??? Quote "[Dark ctf](https://crack-on.live/)"  
-                [![](){ width="200" align=left }](https://crack-on.live/)  
-                **比赛名称** : [Dark ctf](https://crack-on.live/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-14 14:30:00 - 2026-03-15 14:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Crakon  ctf (https://ctftime.org/team/426527)  
-                **添加日历** : https://ctftime.org/event/3182.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
