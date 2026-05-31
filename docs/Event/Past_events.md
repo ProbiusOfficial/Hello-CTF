@@ -98,7 +98,7 @@ comments: true
     **比赛名称** : [SecLeaf Q2 CTF 2026](http://secleaf.tech/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-05-23 22:00:00 - 2026-05-24 22:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 0.00  
     **赛事主办** : SecLeaf (https://ctftime.org/team/421974)  
     **添加日历** : https://ctftime.org/event/3136.ics  
     
