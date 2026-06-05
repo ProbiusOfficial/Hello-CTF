@@ -18,7 +18,7 @@ hide:
 
 
 
-![ctf-docker-template](https://nssctf.wdf.ink//img/WDTJ/202403121324799.png)
+![ctf-docker-template](https://nssctf.wdf.ink/img/WDTJ/202403121324799.png)
 
 ## About
 
