@@ -302,7 +302,7 @@ Python3环境
 
 **【AD / 付费】** **推荐 NSSCTF 平台上面 Xenny 老师 工坊密码学系列教程**
 
-![image-20230628231437191](https://nssctf.wdf.ink//img/WDTJ/202306282314421.png)
+![image-20230628231437191](https://nssctf.wdf.ink/img/WDTJ/202306282314421.png)
 
 
 

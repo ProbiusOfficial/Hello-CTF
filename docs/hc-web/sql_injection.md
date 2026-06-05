@@ -43,7 +43,7 @@ $_GET["id"] ="1 union select username,password from user"
 $sql = "SELECT username,password FROM users WHERE id = 1 union select username,password from user;"
 ```
 
-![image-20230426163533547](https://nssctf.wdf.ink//img/WDTJ/202304261635588.png)
+![image-20230426163533547](https://nssctf.wdf.ink/img/WDTJ/202304261635588.png)
 
 这样就造成了非预期语句的执行，我们在获得 `users` 表中的预期数据的同时也获得了 `users` 表中的非预期数据。
 
@@ -55,9 +55,9 @@ $sql = "SELECT username,password FROM users WHERE id = 1 union select username,p
 
 #### 数据库结构基础
 
-![image-20230426164654561](https://nssctf.wdf.ink//img/WDTJ/202304261646646.png)
+![image-20230426164654561](https://nssctf.wdf.ink/img/WDTJ/202304261646646.png)
 
-![image-20230426165200366](https://nssctf.wdf.ink//img/WDTJ/202304261652391.png)
+![image-20230426165200366](https://nssctf.wdf.ink/img/WDTJ/202304261652391.png)
 
 如图所示 数据库 为层级结构：
 
@@ -253,11 +253,11 @@ $sql = "SELECT username,password FROM users WHERE id = ".$_GET["id"];
   SELECT username,password FROM users WHERE id = 1 union SELECT 1,schema_name FROM information_schema.schemata;
   ```
 
-​		![image-20230426195745130](https://nssctf.wdf.ink//img/WDTJ/202304261957162.png)
+​		![image-20230426195745130](https://nssctf.wdf.ink/img/WDTJ/202304261957162.png)
 
 ​		也可以把1换成其他的，比如`database()` 这样我们可以知道我们当前在哪个数据库
 
-​		![image-20230426195952638](https://nssctf.wdf.ink//img/WDTJ/202304261959665.png)
+​		![image-20230426195952638](https://nssctf.wdf.ink/img/WDTJ/202304261959665.png)
 
 - 下面就是用联合查询得到数据库里面的表名，一般步骤我们都是先获取当前库 ( `database()` ) 的表，再去看其他库的。
 
@@ -272,7 +272,7 @@ $sql = "SELECT username,password FROM users WHERE id = ".$_GET["id"];
   SELECT username,password FROM users WHERE id = 1 union select group_concat(table_name),2 from information_schema.tables where table_schema=database()
   ```
 
-  ![image-20230426201306290](https://nssctf.wdf.ink//img/WDTJ/202304262013324.png)
+  ![image-20230426201306290](https://nssctf.wdf.ink/img/WDTJ/202304262013324.png)
 
 - 下面就是去获得 表 的对应字段名 方便我们最后一步的查询工作
 
@@ -285,7 +285,7 @@ $sql = "SELECT username,password FROM users WHERE id = ".$_GET["id"];
   SELECT username,password FROM users WHERE id = 1 union select group_concat(column_name),2 from information_schema.columns where table_schema=database();
   ```
 
-  ![image-20230426202627021](https://nssctf.wdf.ink//img/WDTJ/202304262026058.png)
+  ![image-20230426202627021](https://nssctf.wdf.ink/img/WDTJ/202304262026058.png)
 
 #### 字符型注入
 
@@ -305,7 +305,7 @@ SELECT * FROM users WHERE username='$username' AND password='$password';
 SELECT * FROM users WHERE username='-1' or '1'='1' -- ' AND password='$password';
 ```
 
-![image-20230426203250434](https://nssctf.wdf.ink//img/WDTJ/202304262032468.png)
+![image-20230426203250434](https://nssctf.wdf.ink/img/WDTJ/202304262032468.png)
 
 就可以使`Where`的条件永真,直接输出`SELECT * FROM users`的所有内容。
 
@@ -322,7 +322,7 @@ SELECT * FROM users WHERE username='-1' or '1'='1' order by 4-- ' AND password='
 
 
 
-![image-20230426213252233](https://nssctf.wdf.ink//img/WDTJ/202304262132275.png)
+![image-20230426213252233](https://nssctf.wdf.ink/img/WDTJ/202304262132275.png)
 
 那么接下来就和数字型注入相同 把 `order by NUM` 换成对应的语句即可：
 
@@ -369,7 +369,7 @@ id = 1 AND 1=1
 SELECT username,password FROM users WHERE id = 1 AND 1=1;
 ```
 
-![image-20230504191135714](https://nssctf.wdf.ink//img/WDTJ/202305041911785.png)
+![image-20230504191135714](https://nssctf.wdf.ink/img/WDTJ/202305041911785.png)
 
 这里会要求两个条件为真，一是有`id=1`这个值，二是 `1=1`，这两个条件当然是满足的，特别是后面的这个条件。
 
@@ -380,7 +380,7 @@ SELECT username,password FROM users WHERE id = 1 AND '1'='2';
 # 这里 '1' = '2'，1 = 2 效果都是一样的
 ```
 
-![image-20230504191548610](https://nssctf.wdf.ink//img/WDTJ/202305041915652.png)
+![image-20230504191548610](https://nssctf.wdf.ink/img/WDTJ/202305041915652.png)
 
 可以看到返回为空，因为AND后面的条件不满足。
 
@@ -402,7 +402,7 @@ SELECT username,password FROM users WHERE id = 1 AND length(username)=1;
 
 
 
-![image-20230504192130407](https://nssctf.wdf.ink//img/WDTJ/202305041921180.png)
+![image-20230504192130407](https://nssctf.wdf.ink/img/WDTJ/202305041921180.png)
 
 当然 枚举长度的方式效率属实难蚌，我们可以使用大于小于符号 基于二分算法进行爆破：
 
@@ -427,7 +427,7 @@ id = 1 AND length(username)> NUM
   SELECT username,password FROM users WHERE id = 1 AND SUBSTR(username,1,1) = '?';
   ```
 
-  ![image-20230504211550827](https://nssctf.wdf.ink//img/WDTJ/202305042115906.png)
+  ![image-20230504211550827](https://nssctf.wdf.ink/img/WDTJ/202305042115906.png)
 
   ```sql
   SELECT username,password FROM users WHERE id = 1 AND SUBSTR(username,2,1) = 'd';
@@ -435,7 +435,7 @@ id = 1 AND length(username)> NUM
 
   
 
-  ![image-20230504212127894](https://nssctf.wdf.ink//img/WDTJ/202305042121944.png)
+  ![image-20230504212127894](https://nssctf.wdf.ink/img/WDTJ/202305042121944.png)
 
   通过前部分长度的获取，结合 `substr()` 就可以对一个具体的字符数据进行fuzz了。
 
@@ -476,7 +476,7 @@ id = 1 AND length(username)> NUM
   SELECT username,password FROM users WHERE id = 1 union select CONCAT(username,'-',password),1 from users;
   ```
 
-  ![image-20230504221859903](https://nssctf.wdf.ink//img/WDTJ/202305042218959.png)
+  ![image-20230504221859903](https://nssctf.wdf.ink/img/WDTJ/202305042218959.png)
 
   而在盲注中，我们通常用其的连接功能减少查询跳转。
 
@@ -606,7 +606,7 @@ id = 1 AND length(username)> NUM
   # 不断改变limit NUM,1 的值逐行获取
   ```
   
-  ![image-20230505011056626](https://nssctf.wdf.ink//img/WDTJ/202305050110708.png)
+  ![image-20230505011056626](https://nssctf.wdf.ink/img/WDTJ/202305050110708.png)
   
   - `substr()`
   ```sql
@@ -681,7 +681,7 @@ id = 1 AND length(username)> NUM
 
   它用于报错注入的方法其实和 `updatexml() `  函数的使用方法差不多 但是参数少一个x
 
-  ![image-20230505015028726](https://nssctf.wdf.ink//img/WDTJ/202305050150790.png)
+  ![image-20230505015028726](https://nssctf.wdf.ink/img/WDTJ/202305050150790.png)
 
 而且报错信息长度限制也和`updatexml()` 一样，所以这里就不多做赘述。
 
