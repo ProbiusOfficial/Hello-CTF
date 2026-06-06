@@ -21,6 +21,15 @@ comments: true
     **赛事主办** : CyberXoX (https://ctftime.org/team/374041)  
     **添加日历** : https://ctftime.org/event/3308.ics  
     
+??? Quote "[GPN CTF 2026](https://gpn24.ctf.kitctf.de/)"  
+    [![](https://ctftime.org/media/events/gulash_1.png){ width="200" align=left }](https://gpn24.ctf.kitctf.de/)  
+    **比赛名称** : [GPN CTF 2026](https://gpn24.ctf.kitctf.de/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-06-05 18:00:00 - 2026-06-07 06:00:00 UTC+8  
+    **比赛权重** : 69.00  
+    **赛事主办** : KITCTF (https://ctftime.org/team/7221)  
+    **添加日历** : https://ctftime.org/event/3041.ics  
+    
 ??? Quote "[bhackari CTF 2026](https://ctf.bhackari.it/)"  
     [![](https://ctftime.org/media/events/bhackari_logo_squared_white.png){ width="200" align=left }](https://ctf.bhackari.it/)  
     **比赛名称** : [bhackari CTF 2026](https://ctf.bhackari.it/)  
@@ -902,13 +911,4 @@ comments: true
     **比赛权重** : 24.14  
     **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
     **添加日历** : https://ctftime.org/event/3146.ics  
-    
-??? Quote "[m0leCon CTF 2026](https://finals.m0lecon.it/)"  
-    [![](){ width="200" align=left }](https://finals.m0lecon.it/)  
-    **比赛名称** : [m0leCon CTF 2026](https://finals.m0lecon.it/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-20 00:00:00 - 2026-03-21 00:00:00 UTC+8  
-    **比赛权重** : 75.00  
-    **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
-    **添加日历** : https://ctftime.org/event/3196.ics  
     

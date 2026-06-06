@@ -516,18 +516,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "GPN CTF 2026",
-        "比赛时间": "2026-06-05 18:00:00 - 2026-06-07 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3041.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://gpn24.ctf.kitctf.de/",
-        "比赛标志": "https://ctftime.org/media/events/gulash_1.png",
-        "比赛权重": "69.00",
-        "赛事主办": "KITCTF (https://ctftime.org/team/7221)",
-        "比赛ID": "854",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "RPCA CTF 2026",
         "比赛时间": "2026-06-06 01:00:00 - 2026-06-09 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3278.ics",
@@ -573,6 +561,18 @@
         "比赛权重": "0",
         "赛事主办": "CyberXoX (https://ctftime.org/team/374041)",
         "比赛ID": "1595",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "GPN CTF 2026",
+        "比赛时间": "2026-06-05 18:00:00 - 2026-06-07 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3041.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://gpn24.ctf.kitctf.de/",
+        "比赛标志": "https://ctftime.org/media/events/gulash_1.png",
+        "比赛权重": "69.00",
+        "赛事主办": "KITCTF (https://ctftime.org/team/7221)",
+        "比赛ID": "854",
         "比赛状态": "past"
     },
     {
@@ -1749,18 +1749,6 @@
         "比赛权重": "24.14",
         "赛事主办": "Insomni'hack Team (https://ctftime.org/team/104742)",
         "比赛ID": "56",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "m0leCon CTF 2026",
-        "比赛时间": "2026-03-20 00:00:00 - 2026-03-21 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3196.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://finals.m0lecon.it/",
-        "比赛标志": "",
-        "比赛权重": "75.00",
-        "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
-        "比赛ID": "372",
         "比赛状态": "past"
     }
 ]
