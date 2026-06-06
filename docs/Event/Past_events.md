@@ -107,7 +107,7 @@ comments: true
     **比赛名称** : [Hackअस्त्र](https://ctf.hackastra.tech/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-05-29 18:15:00 - 2026-05-31 01:15:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 25.00  
     **赛事主办** : Ethical HCK (https://ctftime.org/team/434372)  
     **添加日历** : https://ctftime.org/event/3270.ics  
     
