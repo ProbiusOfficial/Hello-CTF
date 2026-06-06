@@ -58,24 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[SAS CTF 2026 Quals](https://ctf.thesascon.com/)"  
-            [![](https://ctftime.org/media/events/SAS26_temp.png){ width="200" align=left }](https://ctf.thesascon.com/)  
-            **比赛名称** : [SAS CTF 2026 Quals](https://ctf.thesascon.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-06-06 20:00:00 - 2026-06-07 20:00:00 UTC+8  
-            **比赛权重** : 31.00  
-            **赛事主办** : Drovosec, SAS CREW (https://ctftime.org/team/210132, https://ctftime.org/team/283057)  
-            **添加日历** : https://ctftime.org/event/3109.ics  
-            
-        ??? Quote "[DalCTF 2026](https://dalctf2026.com/)"  
-            [![](https://ctftime.org/media/events/logo_square_1.png){ width="200" align=left }](https://dalctf2026.com/)  
-            **比赛名称** : [DalCTF 2026](https://dalctf2026.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-06-06 21:00:00 - 2026-06-07 23:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Status 418 (https://ctftime.org/team/361970)  
-            **添加日历** : https://ctftime.org/event/3320.ics  
-            
         ??? Quote "[SSMCTF 2026 Qualifiers](https://ssmct.org/ctf)"  
             [![](){ width="200" align=left }](https://ssmct.org/ctf)  
             **比赛名称** : [SSMCTF 2026 Qualifiers](https://ssmct.org/ctf)  
@@ -93,6 +75,24 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : KyteBytes (https://ctftime.org/team/424457)  
             **添加日历** : https://ctftime.org/event/3309.ics  
+            
+        ??? Quote "[Anti-Slop CTF 2026](https://ctf.antislopp.i.ng/)"  
+            [![](https://ctftime.org/media/events/f1dfed8e245dcad94300bb4c94879d01.png){ width="200" align=left }](https://ctf.antislopp.i.ng/)  
+            **比赛名称** : [Anti-Slop CTF 2026](https://ctf.antislopp.i.ng/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-06-13 09:00:00 - 2026-06-15 09:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : hackme (https://ctftime.org/team/77185)  
+            **添加日历** : https://ctftime.org/event/3272.ics  
+            
+        ??? Quote "[CyberSci Nationals 2025-2026](https://cybersecuritychallenge.ca/)"  
+            [![](https://ctftime.org/media/events/a6670ab6b53ad3924988790f984c0fc4.jpg){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
+            **比赛名称** : [CyberSci Nationals 2025-2026](https://cybersecuritychallenge.ca/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-06-13 21:00:00 - 2026-06-15 07:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
+            **添加日历** : https://ctftime.org/event/3125.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)

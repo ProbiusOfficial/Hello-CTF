@@ -1,29 +1,5 @@
 [
     {
-        "比赛名称": "SAS CTF 2026 Quals",
-        "比赛时间": "2026-06-06 20:00:00 - 2026-06-07 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3109.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.thesascon.com/",
-        "比赛标志": "https://ctftime.org/media/events/SAS26_temp.png",
-        "比赛权重": "31.00",
-        "赛事主办": "Drovosec, SAS CREW (https://ctftime.org/team/210132, https://ctftime.org/team/283057)",
-        "比赛ID": "1081",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "DalCTF 2026",
-        "比赛时间": "2026-06-06 21:00:00 - 2026-06-07 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3320.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dalctf2026.com/",
-        "比赛标志": "https://ctftime.org/media/events/logo_square_1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Status 418 (https://ctftime.org/team/361970)",
-        "比赛ID": "1615",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "SSMCTF 2026 Qualifiers",
         "比赛时间": "2026-06-07 18:00:00 - 2026-06-08 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/2913.ics",
@@ -564,6 +540,30 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "SAS CTF 2026 Quals",
+        "比赛时间": "2026-06-06 20:00:00 - 2026-06-07 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3109.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.thesascon.com/",
+        "比赛标志": "https://ctftime.org/media/events/SAS26_temp.png",
+        "比赛权重": "31.00",
+        "赛事主办": "Drovosec, SAS CREW (https://ctftime.org/team/210132, https://ctftime.org/team/283057)",
+        "比赛ID": "1081",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "DalCTF 2026",
+        "比赛时间": "2026-06-06 21:00:00 - 2026-06-07 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3320.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://dalctf2026.com/",
+        "比赛标志": "https://ctftime.org/media/events/logo_square_1.png",
+        "比赛权重": "0",
+        "赛事主办": "Status 418 (https://ctftime.org/team/361970)",
+        "比赛ID": "1615",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "ZeroDay Heist 2026",
         "比赛时间": "2026-06-06 14:30:00 - 2026-06-06 20:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3308.ics",
@@ -573,7 +573,7 @@
         "比赛权重": "0",
         "赛事主办": "CyberXoX (https://ctftime.org/team/374041)",
         "比赛ID": "1595",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "bhackari CTF 2026",
@@ -1761,18 +1761,6 @@
         "比赛权重": "75.00",
         "赛事主办": "pwnthem0le (https://ctftime.org/team/60467)",
         "比赛ID": "372",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CyberCup Indian Ocean 2026 – Team Edition | Step2",
-        "比赛时间": "2026-03-18 13:00:00 - 2026-03-18 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3189.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cybercup.ocoi.org/",
-        "比赛标志": "https://ctftime.org/media/events/logo2_10.png",
-        "比赛权重": "0",
-        "赛事主办": "Hacking Indian Ocean (https://ctftime.org/team/399138)",
-        "比赛ID": "1498",
         "比赛状态": "past"
     }
 ]

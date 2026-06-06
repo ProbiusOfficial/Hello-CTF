@@ -497,24 +497,6 @@ hide:
                 **比赛详细** : 筹备中  
                 
         === "国外赛事"
-            ??? Quote "[SAS CTF 2026 Quals](https://ctf.thesascon.com/)"  
-                [![](https://ctftime.org/media/events/SAS26_temp.png){ width="200" align=left }](https://ctf.thesascon.com/)  
-                **比赛名称** : [SAS CTF 2026 Quals](https://ctf.thesascon.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-06-06 20:00:00 - 2026-06-07 20:00:00 UTC+8  
-                **比赛权重** : 31.00  
-                **赛事主办** : Drovosec, SAS CREW (https://ctftime.org/team/210132, https://ctftime.org/team/283057)  
-                **添加日历** : https://ctftime.org/event/3109.ics  
-                
-            ??? Quote "[DalCTF 2026](https://dalctf2026.com/)"  
-                [![](https://ctftime.org/media/events/logo_square_1.png){ width="200" align=left }](https://dalctf2026.com/)  
-                **比赛名称** : [DalCTF 2026](https://dalctf2026.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-06-06 21:00:00 - 2026-06-07 23:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : Status 418 (https://ctftime.org/team/361970)  
-                **添加日历** : https://ctftime.org/event/3320.ics  
-                
             ??? Quote "[SSMCTF 2026 Qualifiers](https://ssmct.org/ctf)"  
                 [![](){ width="200" align=left }](https://ssmct.org/ctf)  
                 **比赛名称** : [SSMCTF 2026 Qualifiers](https://ssmct.org/ctf)  
@@ -924,14 +906,23 @@ hide:
                 **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
                 **添加日历** : https://ctftime.org/event/3278.ics  
                 
-            ??? Quote "[ZeroDay Heist 2026](https://ctf.cyberhx.com/)"  
-                [![](https://ctftime.org/media/events/ChatGPT_Image_May_20_2026_07_34_00_PM.png){ width="200" align=left }](https://ctf.cyberhx.com/)  
-                **比赛名称** : [ZeroDay Heist 2026](https://ctf.cyberhx.com/)  
+            ??? Quote "[SAS CTF 2026 Quals](https://ctf.thesascon.com/)"  
+                [![](https://ctftime.org/media/events/SAS26_temp.png){ width="200" align=left }](https://ctf.thesascon.com/)  
+                **比赛名称** : [SAS CTF 2026 Quals](https://ctf.thesascon.com/)  
                 **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-06-06 14:30:00 - 2026-06-06 20:30:00 UTC+8  
+                **比赛时间** : 2026-06-06 20:00:00 - 2026-06-07 20:00:00 UTC+8  
+                **比赛权重** : 31.00  
+                **赛事主办** : Drovosec, SAS CREW (https://ctftime.org/team/210132, https://ctftime.org/team/283057)  
+                **添加日历** : https://ctftime.org/event/3109.ics  
+                
+            ??? Quote "[DalCTF 2026](https://dalctf2026.com/)"  
+                [![](https://ctftime.org/media/events/logo_square_1.png){ width="200" align=left }](https://dalctf2026.com/)  
+                **比赛名称** : [DalCTF 2026](https://dalctf2026.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-06-06 21:00:00 - 2026-06-07 23:00:00 UTC+8  
                 **比赛权重** : 0  
-                **赛事主办** : CyberXoX (https://ctftime.org/team/374041)  
-                **添加日历** : https://ctftime.org/event/3308.ics  
+                **赛事主办** : Status 418 (https://ctftime.org/team/361970)  
+                **添加日历** : https://ctftime.org/event/3320.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -941,6 +932,15 @@ hide:
                 **比赛详细** :   
                 
         === "国外赛事"
+            ??? Quote "[ZeroDay Heist 2026](https://ctf.cyberhx.com/)"  
+                [![](https://ctftime.org/media/events/ChatGPT_Image_May_20_2026_07_34_00_PM.png){ width="200" align=left }](https://ctf.cyberhx.com/)  
+                **比赛名称** : [ZeroDay Heist 2026](https://ctf.cyberhx.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-06-06 14:30:00 - 2026-06-06 20:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : CyberXoX (https://ctftime.org/team/374041)  
+                **添加日历** : https://ctftime.org/event/3308.ics  
+                
             ??? Quote "[bhackari CTF 2026](https://ctf.bhackari.it/)"  
                 [![](https://ctftime.org/media/events/bhackari_logo_squared_white.png){ width="200" align=left }](https://ctf.bhackari.it/)  
                 **比赛名称** : [bhackari CTF 2026](https://ctf.bhackari.it/)  
@@ -1831,15 +1831,6 @@ hide:
                 **比赛权重** : 75.00  
                 **赛事主办** : pwnthem0le (https://ctftime.org/team/60467)  
                 **添加日历** : https://ctftime.org/event/3196.ics  
-                
-            ??? Quote "[CyberCup Indian Ocean 2026 – Team Edition | Step2](https://cybercup.ocoi.org/)"  
-                [![](https://ctftime.org/media/events/logo2_10.png){ width="200" align=left }](https://cybercup.ocoi.org/)  
-                **比赛名称** : [CyberCup Indian Ocean 2026 – Team Edition | Step2](https://cybercup.ocoi.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-18 13:00:00 - 2026-03-18 22:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Hacking Indian Ocean (https://ctftime.org/team/399138)  
-                **添加日历** : https://ctftime.org/event/3189.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
