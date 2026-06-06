@@ -13,15 +13,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[ZeroDay Heist 2026](https://ctf.cyberhx.com/)"  
-    [![](https://ctftime.org/media/events/ChatGPT_Image_May_20_2026_07_34_00_PM.png){ width="200" align=left }](https://ctf.cyberhx.com/)  
-    **比赛名称** : [ZeroDay Heist 2026](https://ctf.cyberhx.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-06-06 14:30:00 - 2026-06-06 20:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : CyberXoX (https://ctftime.org/team/374041)  
-    **添加日历** : https://ctftime.org/event/3308.ics  
-    
 ??? Quote "[SAS CTF 2026 Quals](https://ctf.thesascon.com/)"  
     [![](https://ctftime.org/media/events/SAS26_temp.png){ width="200" align=left }](https://ctf.thesascon.com/)  
     **比赛名称** : [SAS CTF 2026 Quals](https://ctf.thesascon.com/)  
