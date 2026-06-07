@@ -12,6 +12,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[SAS CTF 2026 Quals](https://ctf.thesascon.com/)"  
+    [![](https://ctftime.org/media/events/SAS26_temp.png){ width="200" align=left }](https://ctf.thesascon.com/)  
+    **比赛名称** : [SAS CTF 2026 Quals](https://ctf.thesascon.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-06-06 20:00:00 - 2026-06-07 20:00:00 UTC+8  
+    **比赛权重** : 31.00  
+    **赛事主办** : Drovosec, SAS CREW (https://ctftime.org/team/210132, https://ctftime.org/team/283057)  
+    **添加日历** : https://ctftime.org/event/3109.ics  
+    
 ??? Quote "[ZeroDay Heist 2026](https://ctf.cyberhx.com/)"  
     [![](https://ctftime.org/media/events/ChatGPT_Image_May_20_2026_07_34_00_PM.png){ width="200" align=left }](https://ctf.cyberhx.com/)  
     **比赛名称** : [ZeroDay Heist 2026](https://ctf.cyberhx.com/)  
@@ -902,13 +911,4 @@ comments: true
     **比赛权重** : 76.22  
     **赛事主办** : TAMUctf (https://ctftime.org/team/37721)  
     **添加日历** : https://ctftime.org/event/3095.ics  
-    
-??? Quote "[Insomni'hack 2026](https://insomnihack.ch/contest/)"  
-    [![](){ width="200" align=left }](https://insomnihack.ch/contest/)  
-    **比赛名称** : [Insomni'hack 2026](https://insomnihack.ch/contest/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-21 01:00:00 - 2026-03-21 12:00:00 UTC+8  
-    **比赛权重** : 24.14  
-    **赛事主办** : Insomni'hack Team (https://ctftime.org/team/104742)  
-    **添加日历** : https://ctftime.org/event/3146.ics  
     
