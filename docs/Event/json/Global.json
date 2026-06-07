@@ -666,7 +666,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://www.hasblctf.tech/",
         "比赛标志": "https://ctftime.org/media/events/logo_128.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "ExploitsFromHeaven1337 (https://ctftime.org/team/435592)",
         "比赛ID": "1601",
         "比赛状态": "past"
