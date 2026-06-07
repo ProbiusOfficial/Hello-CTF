@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[SSMCTF 2026 Qualifiers](https://ssmct.org/ctf)"  
-            [![](){ width="200" align=left }](https://ssmct.org/ctf)  
-            **比赛名称** : [SSMCTF 2026 Qualifiers](https://ssmct.org/ctf)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-06-07 18:00:00 - 2026-06-08 18:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Singapore Students Merger (https://ctftime.org/team/299075)  
-            **添加日历** : https://ctftime.org/event/2913.ics  
-            
         ??? Quote "[boroCTF 2026](https://boroctf.com/)"  
             [![](https://ctftime.org/media/events/c781f3b1226255163f3e6cc52fc2201e.jpg){ width="200" align=left }](https://boroctf.com/)  
             **比赛名称** : [boroCTF 2026](https://boroctf.com/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
             **添加日历** : https://ctftime.org/event/3125.ics  
+            
+        ??? Quote "[Sieberrsec CTF 7.0](https://sieberr.live/)"  
+            [![](https://ctftime.org/media/events/icon_10.png){ width="200" align=left }](https://sieberr.live/)  
+            **比赛名称** : [Sieberrsec CTF 7.0](https://sieberr.live/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-06-17 09:00:00 - 2026-06-17 21:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : sieberr.live (https://ctftime.org/team/387795)  
+            **添加日历** : https://ctftime.org/event/3299.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
