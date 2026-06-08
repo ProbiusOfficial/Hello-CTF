@@ -504,18 +504,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "RPCA CTF 2026",
-        "比赛时间": "2026-06-06 01:00:00 - 2026-06-09 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3278.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://grandctf.rpca.ac.th/",
-        "比赛标志": "",
-        "比赛权重": "0",
-        "赛事主办": "RPCA Cyber Club (https://ctftime.org/team/132960)",
-        "比赛ID": "781",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "DalCTF 2026",
         "比赛时间": "2026-06-06 21:00:00 - 2026-06-07 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3320.ics",
@@ -549,6 +537,18 @@
         "比赛权重": "0",
         "赛事主办": "CyberXoX (https://ctftime.org/team/374041)",
         "比赛ID": "1595",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "RPCA CTF 2026",
+        "比赛时间": "2026-06-06 01:00:00 - 2026-06-09 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3278.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://grandctf.rpca.ac.th/",
+        "比赛标志": "",
+        "比赛权重": "0",
+        "赛事主办": "RPCA Cyber Club (https://ctftime.org/team/132960)",
+        "比赛ID": "781",
         "比赛状态": "past"
     },
     {
@@ -1701,18 +1701,6 @@
         "比赛权重": "0.00",
         "赛事主办": "PolyCyber (https://ctftime.org/team/212241)",
         "比赛ID": "1285",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BSidesSF CTF 2026",
-        "比赛时间": "2026-03-21 07:00:00 - 2026-03-23 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3108.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.bsidessf.net/",
-        "比赛标志": "https://ctftime.org/media/events/bsides_logo_short.png",
-        "比赛权重": "25.00",
-        "赛事主办": "BSidesSF (https://ctftime.org/team/54737)",
-        "比赛ID": "252",
         "比赛状态": "past"
     }
 ]
