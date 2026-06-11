@@ -1017,11 +1017,7 @@ hide:
     
     === "*已经结束*"
         === "国内赛事"
-            ??? Quote "[数字中国创新大赛](https://wap.dcic-china.com/competitions/10212)"  
-                **比赛名称** : [数字中国创新大赛](https://wap.dcic-china.com/competitions/10212)  
-                **比赛时间** : 2026年04月12日 09:00 - 2026年04月12日 12:00  
-                **比赛详细** :   
-                
+    
         === "国外赛事"
             ??? Quote "[DalCTF 2026](https://dalctf2026.com/)"  
                 [![](https://ctftime.org/media/events/logo_square_1.png){ width="200" align=left }](https://dalctf2026.com/)  
