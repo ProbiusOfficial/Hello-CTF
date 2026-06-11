@@ -395,9 +395,9 @@ comments: true
     **赛事主办** : polygl0ts (https://ctftime.org/team/53791)  
     **添加日历** : https://ctftime.org/event/3295.ics  
     
-??? Quote "[KubSTU CTF](https://kubstu-ctf.online/)"  
-    [![](https://ctftime.org/media/events/ctf_flag_tut.jpg){ width="200" align=left }](https://kubstu-ctf.online/)  
-    **比赛名称** : [KubSTU CTF](https://kubstu-ctf.online/)  
+??? Quote "[KubSTU CTF](https://kubstu-ctf.ru/)"  
+    [![](https://ctftime.org/media/events/ctf_flag_tut.jpg){ width="200" align=left }](https://kubstu-ctf.ru/)  
+    **比赛名称** : [KubSTU CTF](https://kubstu-ctf.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-05-01 15:00:00 - 2026-05-03 03:00:00 UTC+8  
     **比赛权重** : 24.82  
