@@ -168,6 +168,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "MntcrlCTF 2026",
+        "比赛时间": "2026-06-28 00:00:00 - 2026-06-29 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3282.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.mntcrl.it/",
+        "比赛标志": "https://ctftime.org/media/events/m0nt3c4rl0_logo.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "Mntcrl (https://ctftime.org/team/195096)",
+        "比赛ID": "1583",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "MindBreak 2026 by ESGI",
         "比赛时间": "2026-07-04 05:00:00 - 2026-07-04 14:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3315.ics",
