@@ -292,9 +292,9 @@ comments: true
     **赛事主办** : DeadSec (https://ctftime.org/team/19339)  
     **添加日历** : https://ctftime.org/event/3303.ics  
     
-??? Quote "[VuwCTF 2026](https://2026.vuwctf.com/)"  
-    [![](https://ctftime.org/media/events/moose6.png){ width="200" align=left }](https://2026.vuwctf.com/)  
-    **比赛名称** : [VuwCTF 2026](https://2026.vuwctf.com/)  
+??? Quote "[VuwCTF 2026](https://vuwctf.com/)"  
+    [![](https://ctftime.org/media/events/moose6.png){ width="200" align=left }](https://vuwctf.com/)  
+    **比赛名称** : [VuwCTF 2026](https://vuwctf.com/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-08-01 06:00:00 - 2026-08-02 13:00:00 UTC+8  
     **比赛权重** : 25.00  
