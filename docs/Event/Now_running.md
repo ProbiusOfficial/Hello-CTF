@@ -18,3 +18,12 @@ comments: true
     **赛事主办** : KyteBytes (https://ctftime.org/team/424457)  
     **添加日历** : https://ctftime.org/event/3309.ics  
     
+??? Quote "[Anti-Slop CTF 2026](https://ctf.antislopp.i.ng/)"  
+    [![](https://ctftime.org/media/events/f1dfed8e245dcad94300bb4c94879d01.png){ width="200" align=left }](https://ctf.antislopp.i.ng/)  
+    **比赛名称** : [Anti-Slop CTF 2026](https://ctf.antislopp.i.ng/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-06-13 09:00:00 - 2026-06-15 09:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : hackme (https://ctftime.org/team/77185)  
+    **添加日历** : https://ctftime.org/event/3272.ics  
+    

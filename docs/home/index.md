@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[Anti-Slop CTF 2026](https://ctf.antislopp.i.ng/)"  
-            [![](https://ctftime.org/media/events/f1dfed8e245dcad94300bb4c94879d01.png){ width="200" align=left }](https://ctf.antislopp.i.ng/)  
-            **比赛名称** : [Anti-Slop CTF 2026](https://ctf.antislopp.i.ng/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-06-13 09:00:00 - 2026-06-15 09:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : hackme (https://ctftime.org/team/77185)  
-            **添加日历** : https://ctftime.org/event/3272.ics  
-            
         ??? Quote "[CyberSci Nationals 2025-2026](https://cybersecuritychallenge.ca/)"  
             [![](https://ctftime.org/media/events/a6670ab6b53ad3924988790f984c0fc4.jpg){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
             **比赛名称** : [CyberSci Nationals 2025-2026](https://cybersecuritychallenge.ca/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : HACK KAP (https://ctftime.org/team/436808)  
             **添加日历** : https://ctftime.org/event/3327.ics  
+            
+        ??? Quote "[SCTF 2026](https://sctf2026.xctf.org.cn/)"  
+            [![](https://ctftime.org/media/events/logo_18.jpg){ width="200" align=left }](https://sctf2026.xctf.org.cn/)  
+            **比赛名称** : [SCTF 2026](https://sctf2026.xctf.org.cn/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-06-14 09:00:00 - 2026-06-15 09:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Syclover (https://ctftime.org/team/455)  
+            **添加日历** : https://ctftime.org/event/3314.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
