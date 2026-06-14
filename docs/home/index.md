@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[SCTF 2026](https://sctf2026.xctf.org.cn/)"  
-            [![](https://ctftime.org/media/events/logo_18.jpg){ width="200" align=left }](https://sctf2026.xctf.org.cn/)  
-            **比赛名称** : [SCTF 2026](https://sctf2026.xctf.org.cn/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-06-14 09:00:00 - 2026-06-15 09:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Syclover (https://ctftime.org/team/455)  
-            **添加日历** : https://ctftime.org/event/3314.ics  
-            
         ??? Quote "[Sieberrsec CTF 7.0](https://sieberr.live/)"  
             [![](https://ctftime.org/media/events/icon_10.png){ width="200" align=left }](https://sieberr.live/)  
             **比赛名称** : [Sieberrsec CTF 7.0](https://sieberr.live/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : Biterra (https://ctftime.org/team/414340)  
             **添加日历** : https://ctftime.org/event/3297.ics  
+            
+        ??? Quote "[Google Capture The Flag 2026](https://g.co/ctf)"  
+            [![](){ width="200" align=left }](https://g.co/ctf)  
+            **比赛名称** : [Google Capture The Flag 2026](https://g.co/ctf)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-06-20 02:00:00 - 2026-06-22 02:00:00 UTC+8  
+            **比赛权重** : 88.82  
+            **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
+            **添加日历** : https://ctftime.org/event/3222.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
