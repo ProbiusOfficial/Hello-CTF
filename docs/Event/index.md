@@ -1005,6 +1005,19 @@ hide:
                 **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
                 **添加日历** : https://ctftime.org/event/3125.ics  
                 
+            ??? Quote "[SCTF 2026](https://sctf2026.xctf.org.cn/)"  
+                [![](https://ctftime.org/media/events/logo_18.jpg){ width="200" align=left }](https://sctf2026.xctf.org.cn/)  
+                **比赛名称** : [SCTF 2026](https://sctf2026.xctf.org.cn/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-06-14 09:00:00 - 2026-06-15 09:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Syclover (https://ctftime.org/team/455)  
+                **添加日历** : https://ctftime.org/event/3314.ics  
+                
+    === "*已经结束*"
+        === "国内赛事"
+    
+        === "国外赛事"
             ??? Quote "[Crypto CTF 2026 [Postponed]](https://cr.yp.toc.tf/)"  
                 [![](https://ctftime.org/media/events/cryptoctf_logo.jpg){ width="200" align=left }](https://cr.yp.toc.tf/)  
                 **比赛名称** : [Crypto CTF 2026 [Postponed]](https://cr.yp.toc.tf/)  
@@ -1023,25 +1036,12 @@ hide:
                 **赛事主办** : HACK KAP (https://ctftime.org/team/436808)  
                 **添加日历** : https://ctftime.org/event/3327.ics  
                 
-            ??? Quote "[SCTF 2026](https://sctf2026.xctf.org.cn/)"  
-                [![](https://ctftime.org/media/events/logo_18.jpg){ width="200" align=left }](https://sctf2026.xctf.org.cn/)  
-                **比赛名称** : [SCTF 2026](https://sctf2026.xctf.org.cn/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-06-14 09:00:00 - 2026-06-15 09:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Syclover (https://ctftime.org/team/455)  
-                **添加日历** : https://ctftime.org/event/3314.ics  
-                
-    === "*已经结束*"
-        === "国内赛事"
-    
-        === "国外赛事"
             ??? Quote "[DalCTF 2026](https://dalctf2026.com/)"  
                 [![](https://ctftime.org/media/events/logo_square_1.png){ width="200" align=left }](https://dalctf2026.com/)  
                 **比赛名称** : [DalCTF 2026](https://dalctf2026.com/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-06-06 21:00:00 - 2026-06-07 23:00:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 24.89  
                 **赛事主办** : Status 418 (https://ctftime.org/team/361970)  
                 **添加日历** : https://ctftime.org/event/3320.ics  
                 
@@ -1917,24 +1917,6 @@ hide:
                 **比赛权重** : 33.00  
                 **赛事主办** : Undutmaning (https://ctftime.org/team/212504)  
                 **添加日历** : https://ctftime.org/event/2987.ics  
-                
-            ??? Quote "[ZeroDays CTF 2026](http://www.zerodays.ie/)"  
-                [![](https://ctftime.org/media/events/4ed567668366c4f824552685fc0c6b04.png){ width="200" align=left }](http://www.zerodays.ie/)  
-                **比赛名称** : [ZeroDays CTF 2026](http://www.zerodays.ie/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-21 18:00:00 - 2026-03-22 01:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
-                **添加日历** : https://ctftime.org/event/3063.ics  
-                
-            ??? Quote "[PolyPwnCTF 2026](https://polypwn.polycyber.io/)"  
-                [![](){ width="200" align=left }](https://polypwn.polycyber.io/)  
-                **比赛名称** : [PolyPwnCTF 2026](https://polypwn.polycyber.io/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-21 18:00:00 - 2026-03-22 05:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : PolyCyber (https://ctftime.org/team/212241)  
-                **添加日历** : https://ctftime.org/event/3203.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
