@@ -17,6 +17,15 @@ comments: true
     **赛事主办** : HACK KAP (https://ctftime.org/team/436808)  
     **添加日历** : https://ctftime.org/event/3327.ics  
     
+??? Quote "[CyberSci Nationals 2025-2026](https://cybersecuritychallenge.ca/)"  
+    [![](https://ctftime.org/media/events/a6670ab6b53ad3924988790f984c0fc4.jpg){ width="200" align=left }](https://cybersecuritychallenge.ca/)  
+    **比赛名称** : [CyberSci Nationals 2025-2026](https://cybersecuritychallenge.ca/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-06-13 21:00:00 - 2026-06-15 07:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
+    **添加日历** : https://ctftime.org/event/3125.ics  
+    
 ??? Quote "[DalCTF 2026](https://dalctf2026.com/)"  
     [![](https://ctftime.org/media/events/logo_square_1.png){ width="200" align=left }](https://dalctf2026.com/)  
     **比赛名称** : [DalCTF 2026](https://dalctf2026.com/)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 33.00  
     **赛事主办** : Undutmaning (https://ctftime.org/team/212504)  
     **添加日历** : https://ctftime.org/event/2987.ics  
-    
-??? Quote "[ZeroDays CTF 2026](http://www.zerodays.ie/)"  
-    [![](https://ctftime.org/media/events/4ed567668366c4f824552685fc0c6b04.png){ width="200" align=left }](http://www.zerodays.ie/)  
-    **比赛名称** : [ZeroDays CTF 2026](http://www.zerodays.ie/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-21 18:00:00 - 2026-03-22 01:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Ireland without the RE (https://ctftime.org/team/179144)  
-    **添加日历** : https://ctftime.org/event/3063.ics  
     

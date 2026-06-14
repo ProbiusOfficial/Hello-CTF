@@ -660,18 +660,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "CyberSci Nationals 2025-2026",
-        "比赛时间": "2026-06-13 21:00:00 - 2026-06-15 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3125.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cybersecuritychallenge.ca/",
-        "比赛标志": "https://ctftime.org/media/events/a6670ab6b53ad3924988790f984c0fc4.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "CyberSciOrganizers (https://ctftime.org/team/157536)",
-        "比赛ID": "643",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "SCTF 2026",
         "比赛时间": "2026-06-14 09:00:00 - 2026-06-15 09:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3314.ics",
@@ -693,6 +681,18 @@
         "比赛权重": "0",
         "赛事主办": "HACK KAP (https://ctftime.org/team/436808)",
         "比赛ID": "1609",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "CyberSci Nationals 2025-2026",
+        "比赛时间": "2026-06-13 21:00:00 - 2026-06-15 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3125.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cybersecuritychallenge.ca/",
+        "比赛标志": "https://ctftime.org/media/events/a6670ab6b53ad3924988790f984c0fc4.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "CyberSciOrganizers (https://ctftime.org/team/157536)",
+        "比赛ID": "643",
         "比赛状态": "past"
     },
     {
@@ -1869,18 +1869,6 @@
         "比赛权重": "33.00",
         "赛事主办": "Undutmaning (https://ctftime.org/team/212504)",
         "比赛ID": "885",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "ZeroDays CTF 2026",
-        "比赛时间": "2026-03-21 18:00:00 - 2026-03-22 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3063.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://www.zerodays.ie/",
-        "比赛标志": "https://ctftime.org/media/events/4ed567668366c4f824552685fc0c6b04.png",
-        "比赛权重": "0",
-        "赛事主办": "Ireland without the RE (https://ctftime.org/team/179144)",
-        "比赛ID": "1030",
         "比赛状态": "past"
     }
 ]
