@@ -8,6 +8,15 @@ comments: true
 
 
 ## 国际赛事
+??? Quote "[SCTF 2026](https://sctf2026.xctf.org.cn/)"  
+    [![](https://ctftime.org/media/events/logo_18.jpg){ width="200" align=left }](https://sctf2026.xctf.org.cn/)  
+    **比赛名称** : [SCTF 2026](https://sctf2026.xctf.org.cn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-06-14 09:00:00 - 2026-06-15 09:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Syclover (https://ctftime.org/team/455)  
+    **添加日历** : https://ctftime.org/event/3314.ics  
+    
 ??? Quote "[Operation Heist CTF 2026](https://registration.hackkap.com/)"  
     [![](https://ctftime.org/media/events/preloader.png){ width="200" align=left }](https://registration.hackkap.com/)  
     **比赛名称** : [Operation Heist CTF 2026](https://registration.hackkap.com/)  
@@ -25,6 +34,15 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : CyberSciOrganizers (https://ctftime.org/team/157536)  
     **添加日历** : https://ctftime.org/event/3125.ics  
+    
+??? Quote "[Anti-Slop CTF 2026](https://ctf.antislopp.i.ng/)"  
+    [![](https://ctftime.org/media/events/f1dfed8e245dcad94300bb4c94879d01.png){ width="200" align=left }](https://ctf.antislopp.i.ng/)  
+    **比赛名称** : [Anti-Slop CTF 2026](https://ctf.antislopp.i.ng/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-06-13 09:00:00 - 2026-06-15 09:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : hackme (https://ctftime.org/team/77185)  
+    **添加日历** : https://ctftime.org/event/3272.ics  
     
 ??? Quote "[DalCTF 2026](https://dalctf2026.com/)"  
     [![](https://ctftime.org/media/events/logo_square_1.png){ width="200" align=left }](https://dalctf2026.com/)  
@@ -889,22 +907,4 @@ comments: true
     **比赛权重** : 24.59  
     **赛事主办** : FR13NDS TEAM (https://ctftime.org/team/155678)  
     **添加日历** : https://ctftime.org/event/3204.ics  
-    
-??? Quote "[Redfox CTF 2026](https://academy.redfoxsec.com/course/redfox-ctf-85076)"  
-    [![](){ width="200" align=left }](https://academy.redfoxsec.com/course/redfox-ctf-85076)  
-    **比赛名称** : [Redfox CTF 2026](https://academy.redfoxsec.com/course/redfox-ctf-85076)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-21 20:30:00 - 2026-03-22 20:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : redfoxteam (https://ctftime.org/team/424518)  
-    **添加日历** : https://ctftime.org/event/3163.ics  
-    
-??? Quote "[Undutmaning 2026](https://undutmaning.se/)"  
-    [![](https://ctftime.org/media/events/logo_2026_border.png){ width="200" align=left }](https://undutmaning.se/)  
-    **比赛名称** : [Undutmaning 2026](https://undutmaning.se/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-21 19:00:00 - 2026-03-22 03:00:00 UTC+8  
-    **比赛权重** : 33.00  
-    **赛事主办** : Undutmaning (https://ctftime.org/team/212504)  
-    **添加日历** : https://ctftime.org/event/2987.ics  
     
