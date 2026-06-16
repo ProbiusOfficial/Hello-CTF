@@ -44,6 +44,15 @@ comments: true
     **赛事主办** : hackme (https://ctftime.org/team/77185)  
     **添加日历** : https://ctftime.org/event/3272.ics  
     
+??? Quote "[boroCTF 2026](https://boroctf.com/)"  
+    [![](https://ctftime.org/media/events/c781f3b1226255163f3e6cc52fc2201e.jpg){ width="200" align=left }](https://boroctf.com/)  
+    **比赛名称** : [boroCTF 2026](https://boroctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-06-13 04:00:00 - 2026-06-16 11:59:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : KyteBytes (https://ctftime.org/team/424457)  
+    **添加日历** : https://ctftime.org/event/3309.ics  
+    
 ??? Quote "[DalCTF 2026](https://dalctf2026.com/)"  
     [![](https://ctftime.org/media/events/logo_square_1.png){ width="200" align=left }](https://dalctf2026.com/)  
     **比赛名称** : [DalCTF 2026](https://dalctf2026.com/)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : UpsideCTF (https://ctftime.org/team/426714)  
     **添加日历** : https://ctftime.org/event/3188.ics  
-    
-??? Quote "[AITU CTF 2026 Quals](https://ctf.fr13nds.team/)"  
-    [![](https://ctftime.org/media/events/icon-black.png){ width="200" align=left }](https://ctf.fr13nds.team/)  
-    **比赛名称** : [AITU CTF 2026 Quals](https://ctf.fr13nds.team/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-23 15:00:00 - 2026-03-24 03:00:00 UTC+8  
-    **比赛权重** : 24.59  
-    **赛事主办** : FR13NDS TEAM (https://ctftime.org/team/155678)  
-    **添加日历** : https://ctftime.org/event/3204.ics  
     

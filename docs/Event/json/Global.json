@@ -636,18 +636,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "boroCTF 2026",
-        "比赛时间": "2026-06-13 04:00:00 - 2026-06-16 11:59:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3309.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://boroctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/c781f3b1226255163f3e6cc52fc2201e.jpg",
-        "比赛权重": "0",
-        "赛事主办": "KyteBytes (https://ctftime.org/team/424457)",
-        "比赛ID": "1596",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "SCTF 2026",
         "比赛时间": "2026-06-14 09:00:00 - 2026-06-15 09:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3314.ics",
@@ -693,6 +681,18 @@
         "比赛权重": "0",
         "赛事主办": "hackme (https://ctftime.org/team/77185)",
         "比赛ID": "1572",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "boroCTF 2026",
+        "比赛时间": "2026-06-13 04:00:00 - 2026-06-16 11:59:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3309.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://boroctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/c781f3b1226255163f3e6cc52fc2201e.jpg",
+        "比赛权重": "0",
+        "赛事主办": "KyteBytes (https://ctftime.org/team/424457)",
+        "比赛ID": "1596",
         "比赛状态": "past"
     },
     {
@@ -1833,18 +1833,6 @@
         "比赛权重": "0.00",
         "赛事主办": "UpsideCTF (https://ctftime.org/team/426714)",
         "比赛ID": "1535",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "AITU CTF 2026 Quals",
-        "比赛时间": "2026-03-23 15:00:00 - 2026-03-24 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3204.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.fr13nds.team/",
-        "比赛标志": "https://ctftime.org/media/events/icon-black.png",
-        "比赛权重": "24.59",
-        "赛事主办": "FR13NDS TEAM (https://ctftime.org/team/155678)",
-        "比赛ID": "1547",
         "比赛状态": "past"
     }
 ]
