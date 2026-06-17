@@ -633,7 +633,7 @@
         "比赛权重": "0",
         "赛事主办": "sieberr.live (https://ctftime.org/team/387795)",
         "比赛ID": "1599",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "SCTF 2026",
@@ -1821,18 +1821,6 @@
         "比赛权重": "41.59",
         "赛事主办": "CSG (https://ctftime.org/team/333)",
         "比赛ID": "926",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Stranger's CTF - Techtrix '26",
-        "比赛时间": "2026-03-26 15:30:00 - 2026-03-27 15:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3188.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://upsidectf.online/",
-        "比赛标志": "",
-        "比赛权重": "0.00",
-        "赛事主办": "UpsideCTF (https://ctftime.org/team/426714)",
-        "比赛ID": "1535",
         "比赛状态": "past"
     }
 ]

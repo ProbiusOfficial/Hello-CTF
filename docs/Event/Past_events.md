@@ -8,6 +8,15 @@ comments: true
 
 
 ## 国际赛事
+??? Quote "[Sieberrsec CTF 7.0](https://sieberr.live/)"  
+    [![](https://ctftime.org/media/events/icon_10.png){ width="200" align=left }](https://sieberr.live/)  
+    **比赛名称** : [Sieberrsec CTF 7.0](https://sieberr.live/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-06-17 09:00:00 - 2026-06-17 21:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : sieberr.live (https://ctftime.org/team/387795)  
+    **添加日历** : https://ctftime.org/event/3299.ics  
+    
 ??? Quote "[SCTF 2026](https://sctf2026.xctf.org.cn/)"  
     [![](https://ctftime.org/media/events/logo_18.jpg){ width="200" align=left }](https://sctf2026.xctf.org.cn/)  
     **比赛名称** : [SCTF 2026](https://sctf2026.xctf.org.cn/)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 41.59  
     **赛事主办** : CSG (https://ctftime.org/team/333)  
     **添加日历** : https://ctftime.org/event/3130.ics  
-    
-??? Quote "[Stranger's CTF - Techtrix '26](https://upsidectf.online/)"  
-    [![](){ width="200" align=left }](https://upsidectf.online/)  
-    **比赛名称** : [Stranger's CTF - Techtrix '26](https://upsidectf.online/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-26 15:30:00 - 2026-03-27 15:30:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : UpsideCTF (https://ctftime.org/team/426714)  
-    **添加日历** : https://ctftime.org/event/3188.ics  
     
