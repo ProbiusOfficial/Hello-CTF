@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[Sieberrsec CTF 7.0](https://sieberr.live/)"  
-            [![](https://ctftime.org/media/events/icon_10.png){ width="200" align=left }](https://sieberr.live/)  
-            **比赛名称** : [Sieberrsec CTF 7.0](https://sieberr.live/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-06-17 09:00:00 - 2026-06-17 21:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : sieberr.live (https://ctftime.org/team/387795)  
-            **添加日历** : https://ctftime.org/event/3299.ics  
-            
         ??? Quote "[BCACTF 7.0](https://www.bcactf.com/)"  
             [![](){ width="200" align=left }](https://www.bcactf.com/)  
             **比赛名称** : [BCACTF 7.0](https://www.bcactf.com/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 88.82  
             **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
             **添加日历** : https://ctftime.org/event/3222.ics  
+            
+        ??? Quote "[TraceBash CTF 2026](https://ctf.tracebash.xyz/)"  
+            [![](https://ctftime.org/media/events/main_logo_1.png){ width="200" align=left }](https://ctf.tracebash.xyz/)  
+            **比赛名称** : [TraceBash CTF 2026](https://ctf.tracebash.xyz/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-06-26 17:30:00 - 2026-06-27 17:30:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : TraceBash (https://ctftime.org/team/392990)  
+            **添加日历** : https://ctftime.org/event/3323.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
