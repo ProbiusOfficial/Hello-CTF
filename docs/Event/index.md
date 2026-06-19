@@ -497,15 +497,6 @@ hide:
                 **比赛详细** : 筹备中  
                 
         === "国外赛事"
-            ??? Quote "[BCACTF 7.0](https://www.bcactf.com/)"  
-                [![](){ width="200" align=left }](https://www.bcactf.com/)  
-                **比赛名称** : [BCACTF 7.0](https://www.bcactf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-06-19 18:00:00 - 2026-06-22 18:00:00 UTC+8  
-                **比赛权重** : 65.05  
-                **赛事主办** : Bing Chilling Academies (https://ctftime.org/team/283028)  
-                **添加日历** : https://ctftime.org/event/3246.ics  
-                
             ??? Quote "[RIFFHACK: Black Market Break-In](http://riffhack.biterra.co/)"  
                 [![](https://ctftime.org/media/events/image_1_1.png){ width="200" align=left }](http://riffhack.biterra.co/)  
                 **比赛名称** : [RIFFHACK: Black Market Break-In](http://riffhack.biterra.co/)  
@@ -969,7 +960,15 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-    
+            ??? Quote "[BCACTF 7.0](https://www.bcactf.com/)"  
+                [![](){ width="200" align=left }](https://www.bcactf.com/)  
+                **比赛名称** : [BCACTF 7.0](https://www.bcactf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-06-19 18:00:00 - 2026-06-22 18:00:00 UTC+8  
+                **比赛权重** : 65.05  
+                **赛事主办** : Bing Chilling Academies (https://ctftime.org/team/283028)  
+                **添加日历** : https://ctftime.org/event/3246.ics  
+                
     === "*已经结束*"
         === "国内赛事"
     
@@ -1771,7 +1770,7 @@ hide:
                 **比赛名称** : [Hack for a Change 2026 March: UN SDG 3](https://www.hackforachange.org/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-03-31 08:00:00 - 2026-04-02 07:59:59 UTC+8  
-                **比赛权重** : 24.21  
+                **比赛权重** : 24.24  
                 **赛事主办** : Hack for a Change (https://ctftime.org/team/419248)  
                 **添加日历** : https://ctftime.org/event/3184.ics  
                 
