@@ -13,15 +13,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[RIFFHACK: Black Market Break-In](http://riffhack.biterra.co/)"  
-    [![](https://ctftime.org/media/events/image_1_1.png){ width="200" align=left }](http://riffhack.biterra.co/)  
-    **比赛名称** : [RIFFHACK: Black Market Break-In](http://riffhack.biterra.co/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-06-19 20:00:00 - 2026-06-22 08:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Biterra (https://ctftime.org/team/414340)  
-    **添加日历** : https://ctftime.org/event/3297.ics  
-    
 ??? Quote "[Google Capture The Flag 2026](https://g.co/ctf)"  
     [![](){ width="200" align=left }](https://g.co/ctf)  
     **比赛名称** : [Google Capture The Flag 2026](https://g.co/ctf)  

@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "RIFFHACK: Black Market Break-In",
-        "比赛时间": "2026-06-19 20:00:00 - 2026-06-22 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3297.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://riffhack.biterra.co/",
-        "比赛标志": "https://ctftime.org/media/events/image_1_1.png",
-        "比赛权重": "0",
-        "赛事主办": "Biterra (https://ctftime.org/team/414340)",
-        "比赛ID": "1457",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Google Capture The Flag 2026",
         "比赛时间": "2026-06-20 02:00:00 - 2026-06-22 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3222.ics",
@@ -621,6 +609,18 @@
         "比赛权重": "65.05",
         "赛事主办": "Bing Chilling Academies (https://ctftime.org/team/283028)",
         "比赛ID": "325",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "RIFFHACK: Black Market Break-In",
+        "比赛时间": "2026-06-19 20:00:00 - 2026-06-22 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3297.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://riffhack.biterra.co/",
+        "比赛标志": "https://ctftime.org/media/events/image_1_1.png",
+        "比赛权重": "0",
+        "赛事主办": "Biterra (https://ctftime.org/team/414340)",
+        "比赛ID": "1457",
         "比赛状态": "nowrunning"
     },
     {
