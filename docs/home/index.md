@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 筹备中  
                 
     === "国外比赛"
-        ??? Quote "[Google Capture The Flag 2026](https://g.co/ctf)"  
-            [![](){ width="200" align=left }](https://g.co/ctf)  
-            **比赛名称** : [Google Capture The Flag 2026](https://g.co/ctf)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-06-20 02:00:00 - 2026-06-22 02:00:00 UTC+8  
-            **比赛权重** : 88.82  
-            **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
-            **添加日历** : https://ctftime.org/event/3222.ics  
-            
         ??? Quote "[TraceBash CTF 2026](https://ctf.tracebash.xyz/)"  
             [![](https://ctftime.org/media/events/main_logo_1.png){ width="200" align=left }](https://ctf.tracebash.xyz/)  
             **比赛名称** : [TraceBash CTF 2026](https://ctf.tracebash.xyz/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 22.14  
             **赛事主办** : V1t (https://ctftime.org/team/280950)  
             **添加日历** : https://ctftime.org/event/3249.ics  
+            
+        ??? Quote "[SekaiCTF 2026](https://ctf.sekai.team/)"  
+            [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
+            **比赛名称** : [SekaiCTF 2026](https://ctf.sekai.team/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-06-27 16:00:00 - 2026-06-29 16:00:00 UTC+8  
+            **比赛权重** : 79.25  
+            **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
+            **添加日历** : https://ctftime.org/event/3113.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
