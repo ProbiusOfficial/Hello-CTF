@@ -27,12 +27,3 @@ comments: true
     **赛事主办** : Biterra (https://ctftime.org/team/414340)  
     **添加日历** : https://ctftime.org/event/3297.ics  
     
-??? Quote "[Google Capture The Flag 2026](https://g.co/ctf)"  
-    [![](){ width="200" align=left }](https://g.co/ctf)  
-    **比赛名称** : [Google Capture The Flag 2026](https://g.co/ctf)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-06-20 02:00:00 - 2026-06-22 02:00:00 UTC+8  
-    **比赛权重** : 88.82  
-    **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
-    **添加日历** : https://ctftime.org/event/3222.ics  
-    

@@ -8,6 +8,15 @@ comments: true
 
 
 ## 国际赛事
+??? Quote "[Google Capture The Flag 2026](https://g.co/ctf)"  
+    [![](){ width="200" align=left }](https://g.co/ctf)  
+    **比赛名称** : [Google Capture The Flag 2026](https://g.co/ctf)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-06-20 02:00:00 - 2026-06-22 02:00:00 UTC+8  
+    **比赛权重** : 88.82  
+    **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
+    **添加日历** : https://ctftime.org/event/3222.ics  
+    
 ??? Quote "[Sieberrsec CTF 7.0](https://sieberr.live/)"  
     [![](https://ctftime.org/media/events/icon_10.png){ width="200" align=left }](https://sieberr.live/)  
     **比赛名称** : [Sieberrsec CTF 7.0](https://sieberr.live/)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 49.97  
     **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
     **添加日历** : https://ctftime.org/event/2983.ics  
-    
-??? Quote "[TexSAW 2026](https://texsaw.org/)"  
-    [![](){ width="200" align=left }](https://texsaw.org/)  
-    **比赛名称** : [TexSAW 2026](https://texsaw.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-27 20:00:00 - 2026-03-29 20:00:00 UTC+8  
-    **比赛权重** : 41.59  
-    **赛事主办** : CSG (https://ctftime.org/team/333)  
-    **添加日历** : https://ctftime.org/event/3130.ics  
     
