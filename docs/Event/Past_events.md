@@ -26,6 +26,15 @@ comments: true
     **赛事主办** : Biterra (https://ctftime.org/team/414340)  
     **添加日历** : https://ctftime.org/event/3297.ics  
     
+??? Quote "[BCACTF 7.0](https://www.bcactf.com/)"  
+    [![](){ width="200" align=left }](https://www.bcactf.com/)  
+    **比赛名称** : [BCACTF 7.0](https://www.bcactf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-06-19 18:00:00 - 2026-06-22 18:00:00 UTC+8  
+    **比赛权重** : 65.05  
+    **赛事主办** : Bing Chilling Academies (https://ctftime.org/team/283028)  
+    **添加日历** : https://ctftime.org/event/3246.ics  
+    
 ??? Quote "[Sieberrsec CTF 7.0](https://sieberr.live/)"  
     [![](https://ctftime.org/media/events/icon_10.png){ width="200" align=left }](https://sieberr.live/)  
     **比赛名称** : [Sieberrsec CTF 7.0](https://sieberr.live/)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 62.00  
     **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
     **添加日历** : https://ctftime.org/event/3131.ics  
-    
-??? Quote "[HackDay 2026 - Finals](https://hackday.fr/)"  
-    [![](https://ctftime.org/media/events/hackday_1.png){ width="200" align=left }](https://hackday.fr/)  
-    **比赛名称** : [HackDay 2026 - Finals](https://hackday.fr/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-28 02:00:00 - 2026-03-29 02:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
-    **添加日历** : https://ctftime.org/event/3039.ics  
     
