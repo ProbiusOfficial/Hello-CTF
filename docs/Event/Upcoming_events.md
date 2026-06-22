@@ -454,6 +454,15 @@ comments: true
     **赛事主办** : H7Tex (https://ctftime.org/team/281844)  
     **添加日历** : https://ctftime.org/event/3094.ics  
     
+??? Quote "[PINK+ CTF 2026](https://pink.bayern/)"  
+    [![](){ width="200" align=left }](https://pink.bayern/)  
+    **比赛名称** : [PINK+ CTF 2026](https://pink.bayern/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-11-06 20:00:00 - 2026-11-09 20:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : PINK+ (https://ctftime.org/team/438626)  
+    **添加日历** : https://ctftime.org/event/3331.ics  
+    
 ??? Quote "[CSCTF 2026](https://2026.chronos-security.ro/)"  
     [![](){ width="200" align=left }](https://2026.chronos-security.ro/)  
     **比赛名称** : [CSCTF 2026](https://2026.chronos-security.ro/)  

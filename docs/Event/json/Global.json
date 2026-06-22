@@ -588,6 +588,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "PINK+ CTF 2026",
+        "比赛时间": "2026-11-06 20:00:00 - 2026-11-09 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3331.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://pink.bayern/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "PINK+ (https://ctftime.org/team/438626)",
+        "比赛ID": "1624",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "CSCTF 2026",
         "比赛时间": "2026-11-06 21:00:00 - 2026-11-08 21:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3333.ics",
@@ -696,18 +708,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "RIFFHACK: Black Market Break-In",
-        "比赛时间": "2026-06-19 20:00:00 - 2026-06-22 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3297.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://riffhack.biterra.co/",
-        "比赛标志": "https://ctftime.org/media/events/image_1_1.png",
-        "比赛权重": "0",
-        "赛事主办": "Biterra (https://ctftime.org/team/414340)",
-        "比赛ID": "1457",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Google Capture The Flag 2026",
         "比赛时间": "2026-06-20 02:00:00 - 2026-06-22 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3222.ics",
@@ -717,6 +717,18 @@
         "比赛权重": "88.82",
         "赛事主办": "Google CTF (https://ctftime.org/team/23929)",
         "比赛ID": "141",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "RIFFHACK: Black Market Break-In",
+        "比赛时间": "2026-06-19 20:00:00 - 2026-06-22 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3297.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://riffhack.biterra.co/",
+        "比赛标志": "https://ctftime.org/media/events/image_1_1.png",
+        "比赛权重": "0",
+        "赛事主办": "Biterra (https://ctftime.org/team/414340)",
+        "比赛ID": "1457",
         "比赛状态": "past"
     },
     {
@@ -1893,18 +1905,6 @@
         "比赛权重": "0",
         "赛事主办": "HackDayCTF (https://ctftime.org/team/277562)",
         "比赛ID": "1060",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "KalmarCTF 2026",
-        "比赛时间": "2026-03-28 01:00:00 - 2026-03-30 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2983.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://kalmarc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/kalmar-logo_1.png",
-        "比赛权重": "49.97",
-        "赛事主办": "kalmarunionen (https://ctftime.org/team/114856)",
-        "比赛ID": "813",
         "比赛状态": "past"
     }
 ]

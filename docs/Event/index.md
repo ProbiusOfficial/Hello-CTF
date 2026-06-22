@@ -938,6 +938,15 @@ hide:
                 **赛事主办** : H7Tex (https://ctftime.org/team/281844)  
                 **添加日历** : https://ctftime.org/event/3094.ics  
                 
+            ??? Quote "[PINK+ CTF 2026](https://pink.bayern/)"  
+                [![](){ width="200" align=left }](https://pink.bayern/)  
+                **比赛名称** : [PINK+ CTF 2026](https://pink.bayern/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-11-06 20:00:00 - 2026-11-09 20:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : PINK+ (https://ctftime.org/team/438626)  
+                **添加日历** : https://ctftime.org/event/3331.ics  
+                
             ??? Quote "[CSCTF 2026](https://2026.chronos-security.ro/)"  
                 [![](){ width="200" align=left }](https://2026.chronos-security.ro/)  
                 **比赛名称** : [CSCTF 2026](https://2026.chronos-security.ro/)  
@@ -1023,15 +1032,6 @@ hide:
                 **赛事主办** : Bing Chilling Academies (https://ctftime.org/team/283028)  
                 **添加日历** : https://ctftime.org/event/3246.ics  
                 
-            ??? Quote "[RIFFHACK: Black Market Break-In](http://riffhack.biterra.co/)"  
-                [![](https://ctftime.org/media/events/image_1_1.png){ width="200" align=left }](http://riffhack.biterra.co/)  
-                **比赛名称** : [RIFFHACK: Black Market Break-In](http://riffhack.biterra.co/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-06-19 20:00:00 - 2026-06-22 08:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Biterra (https://ctftime.org/team/414340)  
-                **添加日历** : https://ctftime.org/event/3297.ics  
-                
     === "*已经结束*"
         === "国内赛事"
     
@@ -1044,6 +1044,15 @@ hide:
                 **比赛权重** : 88.82  
                 **赛事主办** : Google CTF (https://ctftime.org/team/23929)  
                 **添加日历** : https://ctftime.org/event/3222.ics  
+                
+            ??? Quote "[RIFFHACK: Black Market Break-In](http://riffhack.biterra.co/)"  
+                [![](https://ctftime.org/media/events/image_1_1.png){ width="200" align=left }](http://riffhack.biterra.co/)  
+                **比赛名称** : [RIFFHACK: Black Market Break-In](http://riffhack.biterra.co/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-06-19 20:00:00 - 2026-06-22 08:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Biterra (https://ctftime.org/team/414340)  
+                **添加日历** : https://ctftime.org/event/3297.ics  
                 
             ??? Quote "[Sieberrsec CTF 7.0](https://sieberr.live/)"  
                 [![](https://ctftime.org/media/events/icon_10.png){ width="200" align=left }](https://sieberr.live/)  
@@ -1926,15 +1935,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : HackDayCTF (https://ctftime.org/team/277562)  
                 **添加日历** : https://ctftime.org/event/3039.ics  
-                
-            ??? Quote "[KalmarCTF 2026](https://kalmarc.tf/)"  
-                [![](https://ctftime.org/media/events/kalmar-logo_1.png){ width="200" align=left }](https://kalmarc.tf/)  
-                **比赛名称** : [KalmarCTF 2026](https://kalmarc.tf/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-28 01:00:00 - 2026-03-30 01:00:00 UTC+8  
-                **比赛权重** : 49.97  
-                **赛事主办** : kalmarunionen (https://ctftime.org/team/114856)  
-                **添加日历** : https://ctftime.org/event/2983.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
