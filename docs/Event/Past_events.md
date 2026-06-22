@@ -40,7 +40,7 @@ comments: true
     **比赛名称** : [SCTF 2026](https://sctf2026.xctf.org.cn/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-06-14 09:00:00 - 2026-06-15 09:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 29.12  
     **赛事主办** : Syclover (https://ctftime.org/team/455)  
     **添加日历** : https://ctftime.org/event/3314.ics  
     
@@ -67,7 +67,7 @@ comments: true
     **比赛名称** : [Anti-Slop CTF 2026](https://ctf.antislopp.i.ng/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-06-13 09:00:00 - 2026-06-15 09:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 24.67  
     **赛事主办** : hackme (https://ctftime.org/team/77185)  
     **添加日历** : https://ctftime.org/event/3272.ics  
     
