@@ -468,6 +468,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "TFC CTF 2026",
+        "比赛时间": "2026-09-05 18:00:00 - 2026-09-06 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3344.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.thefewchosen.com/",
+        "比赛标志": "https://ctftime.org/media/events/discord_logo_big.png",
+        "比赛权重": "77.08",
+        "赛事主办": "The Few Chosen (https://ctftime.org/team/140885)",
+        "比赛ID": "696",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "K17 CTF 2026",
         "比赛时间": "2026-09-11 18:00:00 - 2026-09-13 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3145.ics",

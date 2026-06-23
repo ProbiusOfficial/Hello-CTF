@@ -364,6 +364,15 @@ comments: true
     **赛事主办** : Norske Nøkkelsnikere (https://ctftime.org/team/222749)  
     **添加日历** : https://ctftime.org/event/3097.ics  
     
+??? Quote "[TFC CTF 2026](https://ctf.thefewchosen.com/)"  
+    [![](https://ctftime.org/media/events/discord_logo_big.png){ width="200" align=left }](https://ctf.thefewchosen.com/)  
+    **比赛名称** : [TFC CTF 2026](https://ctf.thefewchosen.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-09-05 18:00:00 - 2026-09-06 18:00:00 UTC+8  
+    **比赛权重** : 77.08  
+    **赛事主办** : The Few Chosen (https://ctftime.org/team/140885)  
+    **添加日历** : https://ctftime.org/event/3344.ics  
+    
 ??? Quote "[K17 CTF 2026](https://k17ctf.secso.cc/)"  
     [![](https://ctftime.org/media/events/20848837627a0ae11a820f3c9ed4fabc.png){ width="200" align=left }](https://k17ctf.secso.cc/)  
     **比赛名称** : [K17 CTF 2026](https://k17ctf.secso.cc/)  
