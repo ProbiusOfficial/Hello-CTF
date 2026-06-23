@@ -798,7 +798,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://boroctf.com/",
         "比赛标志": "https://ctftime.org/media/events/c781f3b1226255163f3e6cc52fc2201e.jpg",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "KyteBytes (https://ctftime.org/team/424457)",
         "比赛ID": "1596",
         "比赛状态": "past"
