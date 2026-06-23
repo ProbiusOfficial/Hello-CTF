@@ -52,10 +52,10 @@ hide:
     ---
     <!-- 主页赛事展示_开始 -->
     === "国内比赛"
-        ??? Quote "[NepCTF 2026](/isPrepare)"  
-            **比赛名称** : [NepCTF 2026](/isPrepare)  
-            **比赛时间** : 2026年07月10日 19:00 - 2026年07月12日 19:00  
-            **比赛详细** : 筹备中  
+        ??? Quote "[NepCTF 2026](https://www.nepctf.com/)"  
+            **比赛名称** : [NepCTF 2026](https://www.nepctf.com/)  
+            **比赛时间** : 2026年07月17日 19:00 - 2026年07月19日 19:00  
+            **比赛详细** : 赛制/类型: 线上Jeopardy解题赛  
                 
     === "国外比赛"
         ??? Quote "[TraceBash CTF 2026](https://ctf.tracebash.xyz/)"  
