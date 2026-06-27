@@ -310,6 +310,15 @@ comments: true
     **赛事主办** : ASIS (https://ctftime.org/team/4140)  
     **添加日历** : https://ctftime.org/event/3033.ics  
     
+??? Quote "[UND CyberHawks National CTF Competition 2026 Qualifiers](https://ctf.hackthebox.com/event/details/und-cyberhawks-national-ctf-competition-2026-qualifiers-3444)"  
+    [![](){ width="200" align=left }](https://ctf.hackthebox.com/event/details/und-cyberhawks-national-ctf-competition-2026-qualifiers-3444)  
+    **比赛名称** : [UND CyberHawks National CTF Competition 2026 Qualifiers](https://ctf.hackthebox.com/event/details/und-cyberhawks-national-ctf-competition-2026-qualifiers-3444)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-08-29 22:00:00 - 2026-08-30 13:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : UND CyberHawks (https://ctftime.org/team/439400)  
+    **添加日历** : https://ctftime.org/event/3347.ics  
+    
 ??? Quote "[NNS CTF 2026](https://nnsc.tf/)"  
     [![](https://ctftime.org/media/events/Logo_D_1.png){ width="200" align=left }](https://nnsc.tf/)  
     **比赛名称** : [NNS CTF 2026](https://nnsc.tf/)  
@@ -336,6 +345,15 @@ comments: true
     **比赛权重** : 24.83  
     **赛事主办** : K17 (https://ctftime.org/team/17058)  
     **添加日历** : https://ctftime.org/event/3145.ics  
+    
+??? Quote "[PatriotCTF 2026](https://pctf.competitivecyber.club/)"  
+    [![](https://ctftime.org/media/events/5d71368cd0e4a92f2fa3d4df8662ae48.jpg){ width="200" align=left }](https://pctf.competitivecyber.club/)  
+    **比赛名称** : [PatriotCTF 2026](https://pctf.competitivecyber.club/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-09-12 06:00:00 - 2026-09-14 06:00:00 UTC+8  
+    **比赛权重** : 35.46  
+    **赛事主办** : Competitive Cyber at Mason (https://ctftime.org/team/176906)  
+    **添加日历** : https://ctftime.org/event/3348.ics  
     
 ??? Quote "[VolgaCTF 2026 Final](https://volgactf.ru/en/volgactf-2026/final/)"  
     [![](https://ctftime.org/media/events/logo-social-yellow_19.png){ width="200" align=left }](https://volgactf.ru/en/volgactf-2026/final/)  

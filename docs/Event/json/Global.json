@@ -396,6 +396,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "UND CyberHawks National CTF Competition 2026 Qualifiers",
+        "比赛时间": "2026-08-29 22:00:00 - 2026-08-30 13:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3347.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.hackthebox.com/event/details/und-cyberhawks-national-ctf-competition-2026-qualifiers-3444",
+        "比赛标志": "",
+        "比赛权重": "0",
+        "赛事主办": "UND CyberHawks (https://ctftime.org/team/439400)",
+        "比赛ID": "1627",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "NNS CTF 2026",
         "比赛时间": "2026-09-05 00:00:00 - 2026-09-07 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3097.ics",
@@ -429,6 +441,18 @@
         "比赛权重": "24.83",
         "赛事主办": "K17 (https://ctftime.org/team/17058)",
         "比赛ID": "1385",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "PatriotCTF 2026",
+        "比赛时间": "2026-09-12 06:00:00 - 2026-09-14 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3348.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://pctf.competitivecyber.club/",
+        "比赛标志": "https://ctftime.org/media/events/5d71368cd0e4a92f2fa3d4df8662ae48.jpg",
+        "比赛权重": "35.46",
+        "赛事主办": "Competitive Cyber at Mason (https://ctftime.org/team/176906)",
+        "比赛ID": "737",
         "比赛状态": "oncoming"
     },
     {
