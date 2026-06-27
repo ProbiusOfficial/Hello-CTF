@@ -497,15 +497,6 @@ hide:
                 **比赛详细** : 赛制/类型: 线上Jeopardy解题赛  
                 
         === "国外赛事"
-            ??? Quote "[SekaiCTF 2026](https://ctf.sekai.team/)"  
-                [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
-                **比赛名称** : [SekaiCTF 2026](https://ctf.sekai.team/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-06-27 16:00:00 - 2026-06-29 16:00:00 UTC+8  
-                **比赛权重** : 79.25  
-                **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
-                **添加日历** : https://ctftime.org/event/3113.ics  
-                
             ??? Quote "[MntcrlCTF 2026](https://ctf.mntcrl.it/)"  
                 [![](https://ctftime.org/media/events/m0nt3c4rl0_logo.jpg){ width="200" align=left }](https://ctf.mntcrl.it/)  
                 **比赛名称** : [MntcrlCTF 2026](https://ctf.mntcrl.it/)  
@@ -1005,15 +996,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[TraceBash CTF 2026](https://ctf.tracebash.xyz/)"  
-                [![](https://ctftime.org/media/events/main_logo_1.png){ width="200" align=left }](https://ctf.tracebash.xyz/)  
-                **比赛名称** : [TraceBash CTF 2026](https://ctf.tracebash.xyz/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-06-26 17:30:00 - 2026-06-27 17:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : TraceBash (https://ctftime.org/team/392990)  
-                **添加日历** : https://ctftime.org/event/3323.ics  
-                
             ??? Quote "[Grey Cat The Flag 2026 Finals](https://ctf.nusgreyhats.org/)"  
                 [![](){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
                 **比赛名称** : [Grey Cat The Flag 2026 Finals](https://ctf.nusgreyhats.org/)  
@@ -1032,10 +1014,28 @@ hide:
                 **赛事主办** : V1t (https://ctftime.org/team/280950)  
                 **添加日历** : https://ctftime.org/event/3249.ics  
                 
+            ??? Quote "[SekaiCTF 2026](https://ctf.sekai.team/)"  
+                [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
+                **比赛名称** : [SekaiCTF 2026](https://ctf.sekai.team/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-06-27 16:00:00 - 2026-06-29 16:00:00 UTC+8  
+                **比赛权重** : 79.25  
+                **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
+                **添加日历** : https://ctftime.org/event/3113.ics  
+                
     === "*已经结束*"
         === "国内赛事"
     
         === "国外赛事"
+            ??? Quote "[TraceBash CTF 2026](https://ctf.tracebash.xyz/)"  
+                [![](https://ctftime.org/media/events/main_logo_1.png){ width="200" align=left }](https://ctf.tracebash.xyz/)  
+                **比赛名称** : [TraceBash CTF 2026](https://ctf.tracebash.xyz/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-06-26 17:30:00 - 2026-06-27 17:30:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : TraceBash (https://ctftime.org/team/392990)  
+                **添加日历** : https://ctftime.org/event/3323.ics  
+                
             ??? Quote "[Google Capture The Flag 2026](https://g.co/ctf)"  
                 [![](){ width="200" align=left }](https://g.co/ctf)  
                 **比赛名称** : [Google Capture The Flag 2026](https://g.co/ctf)  
@@ -1926,15 +1926,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : QarabagTeam (https://ctftime.org/team/186802)  
                 **添加日历** : https://ctftime.org/event/3200.ics  
-                
-            ??? Quote "[Codegate CTF 2026 Preliminary](http://ctf.codegate.org/)"  
-                [![](){ width="200" align=left }](http://ctf.codegate.org/)  
-                **比赛名称** : [Codegate CTF 2026 Preliminary](http://ctf.codegate.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-28 08:00:00 - 2026-03-28 23:00:00 UTC+8  
-                **比赛权重** : 62.00  
-                **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
-                **添加日历** : https://ctftime.org/event/3131.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

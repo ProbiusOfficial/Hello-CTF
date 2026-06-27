@@ -8,6 +8,15 @@ comments: true
 
 
 ## 国际赛事
+??? Quote "[TraceBash CTF 2026](https://ctf.tracebash.xyz/)"  
+    [![](https://ctftime.org/media/events/main_logo_1.png){ width="200" align=left }](https://ctf.tracebash.xyz/)  
+    **比赛名称** : [TraceBash CTF 2026](https://ctf.tracebash.xyz/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-06-26 17:30:00 - 2026-06-27 17:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : TraceBash (https://ctftime.org/team/392990)  
+    **添加日历** : https://ctftime.org/event/3323.ics  
+    
 ??? Quote "[Google Capture The Flag 2026](https://g.co/ctf)"  
     [![](){ width="200" align=left }](https://g.co/ctf)  
     **比赛名称** : [Google Capture The Flag 2026](https://g.co/ctf)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : QarabagTeam (https://ctftime.org/team/186802)  
     **添加日历** : https://ctftime.org/event/3200.ics  
-    
-??? Quote "[Codegate CTF 2026 Preliminary](http://ctf.codegate.org/)"  
-    [![](){ width="200" align=left }](http://ctf.codegate.org/)  
-    **比赛名称** : [Codegate CTF 2026 Preliminary](http://ctf.codegate.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-28 08:00:00 - 2026-03-28 23:00:00 UTC+8  
-    **比赛权重** : 62.00  
-    **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
-    **添加日历** : https://ctftime.org/event/3131.ics  
     

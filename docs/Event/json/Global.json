@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "SekaiCTF 2026",
-        "比赛时间": "2026-06-27 16:00:00 - 2026-06-29 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3113.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.sekai.team/",
-        "比赛标志": "https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1_1_1.png",
-        "比赛权重": "79.25",
-        "赛事主办": "Project Sekai (https://ctftime.org/team/169557)",
-        "比赛ID": "769",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "MntcrlCTF 2026",
         "比赛时间": "2026-06-28 00:00:00 - 2026-06-29 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3282.ics",
@@ -672,18 +660,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "TraceBash CTF 2026",
-        "比赛时间": "2026-06-26 17:30:00 - 2026-06-27 17:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3323.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.tracebash.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/main_logo_1.png",
-        "比赛权重": "0",
-        "赛事主办": "TraceBash (https://ctftime.org/team/392990)",
-        "比赛ID": "1620",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Grey Cat The Flag 2026 Finals",
         "比赛时间": "2026-06-27 10:00:00 - 2026-06-28 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3173.ics",
@@ -706,6 +682,30 @@
         "赛事主办": "V1t (https://ctftime.org/team/280950)",
         "比赛ID": "1403",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "SekaiCTF 2026",
+        "比赛时间": "2026-06-27 16:00:00 - 2026-06-29 16:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3113.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.sekai.team/",
+        "比赛标志": "https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1_1_1.png",
+        "比赛权重": "79.25",
+        "赛事主办": "Project Sekai (https://ctftime.org/team/169557)",
+        "比赛ID": "769",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "TraceBash CTF 2026",
+        "比赛时间": "2026-06-26 17:30:00 - 2026-06-27 17:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3323.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.tracebash.xyz/",
+        "比赛标志": "https://ctftime.org/media/events/main_logo_1.png",
+        "比赛权重": "0",
+        "赛事主办": "TraceBash (https://ctftime.org/team/392990)",
+        "比赛ID": "1620",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Google Capture The Flag 2026",
@@ -1893,18 +1893,6 @@
         "比赛权重": "0",
         "赛事主办": "QarabagTeam (https://ctftime.org/team/186802)",
         "比赛ID": "1395",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Codegate CTF 2026 Preliminary",
-        "比赛时间": "2026-03-28 08:00:00 - 2026-03-28 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3131.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.codegate.org/",
-        "比赛标志": "",
-        "比赛权重": "62.00",
-        "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
-        "比赛ID": "3",
         "比赛状态": "past"
     }
 ]

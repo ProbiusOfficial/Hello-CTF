@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[TraceBash CTF 2026](https://ctf.tracebash.xyz/)"  
-    [![](https://ctftime.org/media/events/main_logo_1.png){ width="200" align=left }](https://ctf.tracebash.xyz/)  
-    **比赛名称** : [TraceBash CTF 2026](https://ctf.tracebash.xyz/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-06-26 17:30:00 - 2026-06-27 17:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : TraceBash (https://ctftime.org/team/392990)  
-    **添加日历** : https://ctftime.org/event/3323.ics  
-    
 ??? Quote "[Grey Cat The Flag 2026 Finals](https://ctf.nusgreyhats.org/)"  
     [![](){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
     **比赛名称** : [Grey Cat The Flag 2026 Finals](https://ctf.nusgreyhats.org/)  
@@ -35,4 +26,13 @@ comments: true
     **比赛权重** : 22.14  
     **赛事主办** : V1t (https://ctftime.org/team/280950)  
     **添加日历** : https://ctftime.org/event/3249.ics  
+    
+??? Quote "[SekaiCTF 2026](https://ctf.sekai.team/)"  
+    [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
+    **比赛名称** : [SekaiCTF 2026](https://ctf.sekai.team/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-06-27 16:00:00 - 2026-06-29 16:00:00 UTC+8  
+    **比赛权重** : 79.25  
+    **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
+    **添加日历** : https://ctftime.org/event/3113.ics  
     

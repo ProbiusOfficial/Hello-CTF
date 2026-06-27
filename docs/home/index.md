@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 赛制/类型: 线上Jeopardy解题赛  
                 
     === "国外比赛"
-        ??? Quote "[SekaiCTF 2026](https://ctf.sekai.team/)"  
-            [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
-            **比赛名称** : [SekaiCTF 2026](https://ctf.sekai.team/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-06-27 16:00:00 - 2026-06-29 16:00:00 UTC+8  
-            **比赛权重** : 79.25  
-            **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
-            **添加日历** : https://ctftime.org/event/3113.ics  
-            
         ??? Quote "[MntcrlCTF 2026](https://ctf.mntcrl.it/)"  
             [![](https://ctftime.org/media/events/m0nt3c4rl0_logo.jpg){ width="200" align=left }](https://ctf.mntcrl.it/)  
             **比赛名称** : [MntcrlCTF 2026](https://ctf.mntcrl.it/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 23.47  
             **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
             **添加日历** : https://ctftime.org/event/3180.ics  
+            
+        ??? Quote "[R3CTF 2026](https://ctf2026.r3kapig.com/)"  
+            [![](https://ctftime.org/media/events/r3kapig.png){ width="200" align=left }](https://ctf2026.r3kapig.com/)  
+            **比赛名称** : [R3CTF 2026](https://ctf2026.r3kapig.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-07-04 10:00:00 - 2026-07-06 10:00:00 UTC+8  
+            **比赛权重** : 35.95  
+            **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
+            **添加日历** : https://ctftime.org/event/3149.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
