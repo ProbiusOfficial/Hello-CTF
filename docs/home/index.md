@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 赛制/类型: 线上Jeopardy解题赛  
                 
     === "国外比赛"
-        ??? Quote "[MntcrlCTF 2026](https://ctf.mntcrl.it/)"  
-            [![](https://ctftime.org/media/events/m0nt3c4rl0_logo.jpg){ width="200" align=left }](https://ctf.mntcrl.it/)  
-            **比赛名称** : [MntcrlCTF 2026](https://ctf.mntcrl.it/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-06-28 00:00:00 - 2026-06-29 00:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : Mntcrl (https://ctftime.org/team/195096)  
-            **添加日历** : https://ctftime.org/event/3282.ics  
-            
         ??? Quote "[MindBreak 2026 by ESGI](https://linktr.ee/m1ndbr34k)"  
             [![](https://ctftime.org/media/events/mindbreak_2.png){ width="200" align=left }](https://linktr.ee/m1ndbr34k)  
             **比赛名称** : [MindBreak 2026 by ESGI](https://linktr.ee/m1ndbr34k)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 35.95  
             **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
             **添加日历** : https://ctftime.org/event/3149.ics  
+            
+        ??? Quote "[Fluid Attacks' CTF 2026-2](https://fluidattacks.com/ctf)"  
+            [![](){ width="200" align=left }](https://fluidattacks.com/ctf)  
+            **比赛名称** : [Fluid Attacks' CTF 2026-2](https://fluidattacks.com/ctf)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-07-04 21:00:00 - 2026-07-05 09:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : Fluid Attacks (https://ctftime.org/team/126627)  
+            **添加日历** : https://ctftime.org/event/3325.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
