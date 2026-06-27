@@ -301,7 +301,7 @@ comments: true
     **比赛名称** : [0xV01D CTF 2026](https://0xv01d-ctf.xyz/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-05-18 12:00:00 - 2026-05-20 12:00:00 UTC+8  
-    **比赛权重** : 19.48  
+    **比赛权重** : 19.66  
     **赛事主办** : OxV01D (https://ctftime.org/team/427687)  
     **添加日历** : https://ctftime.org/event/3269.ics  
     
@@ -490,7 +490,7 @@ comments: true
     **比赛名称** : [KubSTU CTF](https://kubstu-ctf.ru/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-05-01 15:00:00 - 2026-05-03 03:00:00 UTC+8  
-    **比赛权重** : 24.82  
+    **比赛权重** : 24.83  
     **赛事主办** : Capybaras (https://ctftime.org/team/223931)  
     **添加日历** : https://ctftime.org/event/3177.ics  
     
