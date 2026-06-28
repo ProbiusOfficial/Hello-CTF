@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>提交国内赛事 - Hello CTF</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTF/main/docs/assets/images/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#3b82f6', dark: '#2563eb' },
+                        accent: { DEFAULT: '#6366f1', dark: '#4f46e5' },
+                        base: { 50: '#f8fafc', 100: '#f1f5f9', 900: '#0f172a', 950: '#020617' }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .text-gradient {
+            background: linear-gradient(45deg, #3b82f6, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .dark .text-gradient {
+            background: linear-gradient(45deg, #60a5fa, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .grid-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -20;
+            background-image:
+                linear-gradient(to right, rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        .dark .grid-background {
+            background-image:
+                linear-gradient(to right, rgba(99, 102, 241, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(99, 102, 241, 0.05) 1px, transparent 1px);
+        }
+        .card-surface {
+            border-radius: 1rem;
+            border: 1px solid rgba(226, 232, 240, 0.85);
+            background: rgba(255, 255, 255, 0.78);
+            box-shadow: 0 1px 2px rgba(59, 130, 246, 0.04), 0 8px 24px -4px rgba(15, 23, 42, 0.06);
+        }
+        .dark .card-surface {
+            border-color: rgba(51, 65, 85, 0.65);
+            background: rgba(15, 23, 42, 0.72);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 12px 32px -8px rgba(0, 0, 0, 0.35);
+        }
+        .input-field {
+            width: 100%;
+            border-radius: 0.75rem;
+            border: 1px solid rgb(226 232 240);
+            background: rgb(255 255 255 / 0.9);
+            padding: 0.5rem 0.75rem;
+            font-size: 0.925rem;
+            outline: none;
+            transition: border-color 0.15s, box-shadow 0.15s;
+        }
+        .input-field:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+        .dark .input-field {
+            border-color: rgb(51 65 85);
+            background: rgb(15 23 42 / 0.85);
+            color: #f1f5f9;
+        }
+        .dark .input-field:focus {
+            border-color: #818cf8;
+            box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.2);
+        }
+    </style>
+</head>
+<body class="font-sans bg-white dark:bg-base-950 text-base-900 dark:text-white transition-colors duration-300 min-h-screen">
+    <div class="grid-background"></div>
+
+    <button id="themeToggle" type="button" class="fixed top-4 right-4 z-50 p-2.5 rounded-2xl border border-base-200/80 bg-white/90 text-primary shadow-md backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-base-700 dark:bg-base-900/90 dark:text-accent" aria-label="切换主题">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+    </button>
+
+    <header class="border-b border-base-100 dark:border-base-900 px-4 py-4">
+        <div class="max-w-2xl mx-auto flex items-center justify-between gap-4">
+            <a href="./index.html" class="text-sm font-medium text-primary dark:text-accent hover:underline">← 返回首页</a>
+        </div>
+    </header>
+
+    <main class="max-w-2xl mx-auto px-4 py-8 pb-16">
+        <h1 class="text-2xl sm:text-3xl font-bold font-mono text-gradient mb-2">提交国内赛事信息</h1>
+        <p class="text-sm text-base-900/65 dark:text-white/55 mb-8 leading-relaxed">
+            填写后将生成与 <code class="font-mono text-xs px-1 py-0.5 rounded bg-base-100 dark:bg-base-800">CN.json</code> 一致结构的 JSON，可复制、下载，或使用「推送到接收器」发给维护端。
+            本页不会直接写入 GitHub 仓库。
+        </p>
+
+        <div class="card-surface backdrop-blur-md p-5 sm:p-6 mb-8">
+            <form id="f" autocomplete="on" class="space-y-0">
+                <label for="name" class="block text-sm font-medium text-base-900 dark:text-white mt-0 mb-1.5">比赛名称 <span class="text-base-900/50 dark:text-white/45 font-normal">（必填）</span></label>
+                <input id="name" name="name" type="text" required class="input-field mb-5" placeholder="例如：ExampleCTF 2026" />
+
+                <label for="link" class="block text-sm font-medium text-base-900 dark:text-white mb-1.5">比赛地址（URL） <span class="text-base-900/50 dark:text-white/45 font-normal">（必填）</span></label>
+                <input id="link" name="link" type="text" required class="input-field mb-5" placeholder="https://... 或站内路径" />
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+                    <div>
+                        <label for="t0" class="block text-sm font-medium text-base-900 dark:text-white mb-1.5">比赛开始 <span class="text-base-900/50 dark:text-white/45 font-normal text-xs">（本地时间）</span></label>
+                        <input id="t0" name="t0" type="datetime-local" required class="input-field" />
+                    </div>
+                    <div>
+                        <label for="t1" class="block text-sm font-medium text-base-900 dark:text-white mb-1.5">比赛结束</label>
+                        <input id="t1" name="t1" type="datetime-local" required class="input-field" />
+                    </div>
+                </div>
+
+                <label for="detail" class="block text-sm font-medium text-base-900 dark:text-white mb-1.5">比赛详情 <span class="text-base-900/50 dark:text-white/45 font-normal">（主办方、报名、群号、赛制等）</span></label>
+                <textarea id="detail" name="detail" rows="5" class="input-field resize-y min-h-[120px] mb-5 font-mono text-sm"></textarea>
+
+                <div class="flex flex-wrap gap-2.5 pt-1">
+                    <button type="button" id="btnCopy" class="inline-flex items-center justify-center rounded-xl border-2 border-primary/35 bg-white/80 px-4 py-2.5 text-sm font-semibold text-primary shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/55 hover:bg-primary/[0.06] hover:shadow-md dark:border-accent/40 dark:bg-base-900/40 dark:text-accent dark:hover:border-accent/65 dark:hover:bg-accent/10">
+                        复制 JSON
+                    </button>
+                    <button type="button" id="btnDl" class="inline-flex items-center justify-center rounded-xl border border-base-200/90 bg-white/60 px-4 py-2.5 text-sm font-medium text-base-900/90 shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/45 dark:border-base-600/70 dark:bg-base-900/40 dark:text-white/90 dark:hover:border-accent/50">
+                        下载 JSON
+                    </button>
+                    <button type="button" id="btnPush" class="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-primary to-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-primary/25 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/35 dark:from-blue-500 dark:to-indigo-600">
+                        推送到接收器
+                    </button>
+                </div>
+
+                <p id="msg" class="mt-4 text-sm min-h-[1.25rem]" role="status" aria-live="polite"></p>
+                <pre id="out" class="hidden mt-4 p-4 rounded-xl border border-base-200 dark:border-base-700 bg-base-50 dark:bg-base-900/80 text-xs font-mono overflow-x-auto leading-relaxed text-base-900/90 dark:text-white/85 max-h-64 overflow-y-auto"></pre>
+            </form>
+        </div>
+
+        <div class="rounded-xl border-l-4 border-primary dark:border-accent bg-primary/5 dark:bg-accent/10 px-4 py-3 text-sm text-base-900/75 dark:text-white/70 leading-relaxed">
+            <strong class="text-base-900 dark:text-white">说明：</strong>
+            由于每天推送API设置上限，可能会推送失败；若推送失败，页面会<strong class="text-primary dark:text-accent">自动尝试下载 JSON</strong>，请保留文件并联系维护者或通过其他渠道提交。
+        </div>
+    </main>
+
+    <script>
+        /**
+         * ft07 Push
+         */
+        var PUSH_KEY = 'Hello' + '-CTF' + '-push' + '-v1';
+        var PUSH_ENDPOINT_CT =
+            '58198072f77f37349df3c0534a1e5361aaee8900d08fb427442bd8e8b389b63aac1df9a65b04d0097856a38234ffa96799627c481b6071d6fd592c8cec34668710061599a97649fe37cc';
+        var PUSH_TAG_CT = '7808986eeb685b4feab1980f1d';
+
+        function hexToBytes(hex) {
+            var out = new Uint8Array(hex.length / 2);
+            for (var i = 0; i < out.length; i++) {
+                out[i] = parseInt(hex.substr(i * 2, 2), 16);
+            }
+            return out;
+        }
+
+        function rc4(keyBytes, dataBytes) {
+            var S = new Uint8Array(256);
+            for (var i = 0; i < 256; i++) {
+                S[i] = i;
+            }
+            var j = 0;
+            var kl = keyBytes.length;
+            for (var i = 0; i < 256; i++) {
+                j = (j + S[i] + keyBytes[i % kl]) & 255;
+                var t = S[i];
+                S[i] = S[j];
+                S[j] = t;
+            }
+            i = 0;
+            j = 0;
+            var out = new Uint8Array(dataBytes.length);
+            for (var k = 0; k < dataBytes.length; k++) {
+                i = (i + 1) & 255;
+                j = (j + S[i]) & 255;
+                t = S[i];
+                S[i] = S[j];
+                S[j] = t;
+                var K = S[(S[i] + S[j]) & 255];
+                out[k] = dataBytes[k] ^ K;
+            }
+            return out;
+        }
+
+        function rc4Utf8Decrypt(keyStr, hexCipher) {
+            var keyBytes = new TextEncoder().encode(keyStr);
+            return new TextDecoder('utf-8').decode(rc4(keyBytes, hexToBytes(hexCipher)));
+        }
+
+        var PUSH_ENDPOINT = rc4Utf8Decrypt(PUSH_KEY, PUSH_ENDPOINT_CT);
+        var PUSH_TAG = rc4Utf8Decrypt(PUSH_KEY, PUSH_TAG_CT);
+
+        function pad(n) {
+            return String(n).padStart(2, '0');
+        }
+
+        function toCnFormat(d) {
+            return (
+                d.getFullYear() +
+                '年' +
+                pad(d.getMonth() + 1) +
+                '月' +
+                pad(d.getDate()) +
+                '日 ' +
+                pad(d.getHours()) +
+                ':' +
+                pad(d.getMinutes())
+            );
+        }
+
+        function getPayload() {
+            var name = document.getElementById('name').value.trim();
+            var link = document.getElementById('link').value.trim();
+            var detail = document.getElementById('detail').value.trim();
+            var v0 = document.getElementById('t0').value;
+            var v1 = document.getElementById('t1').value;
+            if (!name || !link || !v0 || !v1) {
+                throw new Error('请填写必填项（名称、链接、开始与结束时间）。');
+            }
+            var d0 = new Date(v0);
+            var d1 = new Date(v1);
+            if (isNaN(d0.getTime()) || isNaN(d1.getTime())) {
+                throw new Error('时间格式无效。');
+            }
+            if (d1 < d0) {
+                throw new Error('结束时间不能早于开始时间。');
+            }
+            return {
+                name: name,
+                link: link,
+                comp_time_start: toCnFormat(d0),
+                comp_time_end: toCnFormat(d1),
+                detail: detail,
+            };
+        }
+
+        function prettyJson(obj) {
+            return JSON.stringify(obj, null, 2);
+        }
+
+        function setMsg(text, isOk) {
+            var el = document.getElementById('msg');
+            el.textContent = '';
+            el.className = 'mt-4 text-sm min-h-[1.25rem] ' + (isOk ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400');
+            el.textContent = text;
+        }
+
+        function setMsgPushError(mainText, autoDownloaded) {
+            var el = document.getElementById('msg');
+            el.textContent = '';
+            el.className = 'mt-4 text-sm min-h-[1.25rem] text-red-600 dark:text-red-400';
+            var line1 = document.createElement('span');
+            line1.textContent = mainText;
+            el.appendChild(line1);
+            if (autoDownloaded) {
+                var line2 = document.createElement('span');
+                line2.className = 'block mt-2 text-amber-700 dark:text-amber-300';
+                line2.textContent = '已自动为你下载 JSON，请保留文件并改用其他方式提交。';
+                el.appendChild(line2);
+            }
+        }
+
+        function downloadJson(payload) {
+            var text = prettyJson(payload);
+            var safe = payload.name.replace(/[/\\?%*:|"<>]/g, '-').slice(0, 80);
+            var blob = new Blob([text], { type: 'application/json;charset=utf-8' });
+            var a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'cn-event-' + safe + '.json';
+            a.click();
+            URL.revokeObjectURL(a.href);
+        }
+
+        document.getElementById('btnCopy').addEventListener('click', async function () {
+            try {
+                var payload = getPayload();
+                var text = prettyJson(payload);
+                var pre = document.getElementById('out');
+                pre.textContent = text;
+                pre.classList.remove('hidden');
+                await navigator.clipboard.writeText(text);
+                setMsg('已复制到剪贴板。', true);
+            } catch (e) {
+                setMsg((e && e.message) || String(e), false);
+            }
+        });
+
+        document.getElementById('btnDl').addEventListener('click', function () {
+            try {
+                var payload = getPayload();
+                downloadJson(payload);
+                setMsg('已开始下载 JSON 文件。', true);
+                var pre = document.getElementById('out');
+                pre.textContent = prettyJson(payload);
+                pre.classList.remove('hidden');
+            } catch (e) {
+                setMsg((e && e.message) || String(e), false);
+            }
+        });
+
+        document.getElementById('btnPush').addEventListener('click', async function () {
+            var btn = document.getElementById('btnPush');
+            var payload;
+            try {
+                payload = getPayload();
+            } catch (e) {
+                setMsg((e && e.message) || String(e), false);
+                return;
+            }
+            var text = prettyJson(payload);
+            var pre = document.getElementById('out');
+            pre.textContent = text;
+            pre.classList.remove('hidden');
+
+            btn.disabled = true;
+            setMsg('正在推送…', true);
+            try {
+                var body = {
+                    title: '[Hello-CTFtime] 赛事提交：' + payload.name,
+                    desp: text,
+                    tags: PUSH_TAG,
+                };
+                var res = await fetch(PUSH_ENDPOINT, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(body),
+                });
+                if (!res.ok) {
+                    var t = await res.text().catch(function () {
+                        return '';
+                    });
+                    throw new Error('推送失败 HTTP ' + res.status + (t ? ' ' + t : ''));
+                }
+                setMsg('已发送到消息接收器。', true);
+            } catch (e) {
+                var hint = (e && e.message) || String(e);
+                if (hint.indexOf('Failed to fetch') !== -1 || hint.indexOf('NetworkError') !== -1) {
+                    hint += '（多为跨域或网络限制）';
+                }
+                downloadJson(payload);
+                setMsgPushError(hint, true);
+            } finally {
+                btn.disabled = false;
+            }
+        });
+
+        var html = document.documentElement;
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        } else {
+            html.classList.remove('dark');
+        }
+        document.getElementById('themeToggle').addEventListener('click', function () {
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                html.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+    </script>
+</body>
+</html>
