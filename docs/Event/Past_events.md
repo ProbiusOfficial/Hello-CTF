@@ -8,6 +8,15 @@ comments: true
 
 
 ## 国际赛事
+??? Quote "[Grey Cat The Flag 2026 Finals](https://ctf.nusgreyhats.org/)"  
+    [![](){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
+    **比赛名称** : [Grey Cat The Flag 2026 Finals](https://ctf.nusgreyhats.org/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-06-27 10:00:00 - 2026-06-28 10:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : NUS GreyHats (https://ctftime.org/team/16740)  
+    **添加日历** : https://ctftime.org/event/3173.ics  
+    
 ??? Quote "[TraceBash CTF 2026](https://ctf.tracebash.xyz/)"  
     [![](https://ctftime.org/media/events/main_logo_1.png){ width="200" align=left }](https://ctf.tracebash.xyz/)  
     **比赛名称** : [TraceBash CTF 2026](https://ctf.tracebash.xyz/)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 0.00  
     **赛事主办** : TH3_RANG3RS (https://ctftime.org/team/406018)  
     **添加日历** : https://ctftime.org/event/3183.ics  
-    
-??? Quote "[NovruzCTF 2026](https://canyouhack.org/)"  
-    [![](https://ctftime.org/media/events/IMG_4954.jpeg){ width="200" align=left }](https://canyouhack.org/)  
-    **比赛名称** : [NovruzCTF 2026](https://canyouhack.org/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-28 13:00:00 - 2026-03-29 13:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : QarabagTeam (https://ctftime.org/team/186802)  
-    **添加日历** : https://ctftime.org/event/3200.ics  
     
