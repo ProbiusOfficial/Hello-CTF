@@ -311,7 +311,7 @@ comments: true
     **添加日历** : https://ctftime.org/event/3033.ics  
     
 ??? Quote "[UND CyberHawks National CTF Competition 2026 Qualifiers](https://ctf.hackthebox.com/event/details/und-cyberhawks-national-ctf-competition-2026-qualifiers-3444)"  
-    [![](){ width="200" align=left }](https://ctf.hackthebox.com/event/details/und-cyberhawks-national-ctf-competition-2026-qualifiers-3444)  
+    [![](https://ctftime.org/media/events/banner_1.jpg){ width="200" align=left }](https://ctf.hackthebox.com/event/details/und-cyberhawks-national-ctf-competition-2026-qualifiers-3444)  
     **比赛名称** : [UND CyberHawks National CTF Competition 2026 Qualifiers](https://ctf.hackthebox.com/event/details/und-cyberhawks-national-ctf-competition-2026-qualifiers-3444)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-08-29 22:00:00 - 2026-08-30 13:00:00 UTC+8  
