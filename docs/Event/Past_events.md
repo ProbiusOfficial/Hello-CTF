@@ -17,6 +17,15 @@ comments: true
     **赛事主办** : Mntcrl (https://ctftime.org/team/195096)  
     **添加日历** : https://ctftime.org/event/3282.ics  
     
+??? Quote "[SekaiCTF 2026](https://ctf.sekai.team/)"  
+    [![](https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1_1_1.png){ width="200" align=left }](https://ctf.sekai.team/)  
+    **比赛名称** : [SekaiCTF 2026](https://ctf.sekai.team/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-06-27 16:00:00 - 2026-06-29 16:00:00 UTC+8  
+    **比赛权重** : 79.25  
+    **赛事主办** : Project Sekai (https://ctftime.org/team/169557)  
+    **添加日历** : https://ctftime.org/event/3113.ics  
+    
 ??? Quote "[Grey Cat The Flag 2026 Finals](https://ctf.nusgreyhats.org/)"  
     [![](){ width="200" align=left }](https://ctf.nusgreyhats.org/)  
     **比赛名称** : [Grey Cat The Flag 2026 Finals](https://ctf.nusgreyhats.org/)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : MythX (https://ctftime.org/team/429696)  
     **添加日历** : https://ctftime.org/event/3223.ics  
-    
-??? Quote "[VolgaCTF 2026 Qualifier](https://q.2026.volgactf.ru/)"  
-    [![](https://ctftime.org/media/events/logo-social-yellow_18.png){ width="200" align=left }](https://q.2026.volgactf.ru/)  
-    **比赛名称** : [VolgaCTF 2026 Qualifier](https://q.2026.volgactf.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-03-28 21:00:00 - 2026-03-29 21:00:00 UTC+8  
-    **比赛权重** : 38.67  
-    **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
-    **添加日历** : https://ctftime.org/event/3045.ics  
     
