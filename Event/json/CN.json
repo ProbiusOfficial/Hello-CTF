@@ -1,0 +1,18 @@
+{
+    "success": true,
+    "data": {
+        "result": [
+            {
+                "name": "NepCTF 2026",
+                "link": "https://www.nepctf.com/",
+                "comp_time_start": "2026年07月17日 19:00",
+                "comp_time_end": "2026年07月19日 19:00",
+                "detail": "赛制/类型: 线上Jeopardy解题赛"
+            }
+        ],
+        "total": 1,
+        "page": 1,
+        "size": 20
+    },
+    "msg": ""
+}

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>历史比赛附件 - Hello CTF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTF/main/docs/assets/images/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#3b82f6', dark: '#2563eb' },
+                        accent: { DEFAULT: '#6366f1', dark: '#4f46e5' },
+                        base: { 50: '#f8fafc', 100: '#f1f5f9', 900: '#0f172a', 950: '#020617' }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar { width: 4px; height: 4px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 4px; }
+        .text-gradient {
+            background: linear-gradient(45deg, #3b82f6, #6366f1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .dark .text-gradient {
+            background: linear-gradient(45deg, #60a5fa, #818cf8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .grid-background {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: -20;
+            background-image:
+                linear-gradient(to right, rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        .dark .grid-background {
+            background-image:
+                linear-gradient(to right, rgba(99, 102, 241, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(99, 102, 241, 0.05) 1px, transparent 1px);
+        }
+
+        #leftSidebar {
+            position: fixed; top: 0; left: 0; bottom: 0;
+            width: 14.5rem; z-index: 40;
+            display: flex; flex-direction: column;
+            border-right: 1px solid rgba(226, 232, 240, 0.85);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            overflow-y: auto;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .dark #leftSidebar {
+            border-color: rgba(51, 65, 85, 0.65);
+            background: rgba(15, 23, 42, 0.95);
+        }
+        #mainContent { margin-left: 14.5rem; min-height: 100vh; }
+        .sidebar-link {
+            display: flex; align-items: center; gap: 0.625rem;
+            padding: 0.5rem 0.75rem; border-radius: 0.625rem;
+            font-size: 0.8125rem; font-weight: 500;
+            color: rgba(15, 23, 42, 0.78);
+            transition: background 0.2s ease, color 0.2s ease;
+            text-decoration: none;
+        }
+        .sidebar-link:hover { background: rgba(59, 130, 246, 0.08); color: #3b82f6; }
+        .sidebar-link.active {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(99, 102, 241, 0.12));
+            color: #3b82f6; font-weight: 600;
+        }
+        .dark .sidebar-link { color: rgba(255, 255, 255, 0.78); }
+        .dark .sidebar-link:hover { background: rgba(99, 102, 241, 0.12); color: #818cf8; }
+        .dark .sidebar-link.active {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.18), rgba(99, 102, 241, 0.18));
+            color: #818cf8;
+        }
+        .sidebar-link svg { width: 1.125rem; height: 1.125rem; flex-shrink: 0; opacity: 0.65; }
+        .sidebar-link:hover svg, .sidebar-link.active svg { opacity: 1; }
+        #sidebarOverlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 35; }
+        #sidebarOverlay.open { display: block; }
+        #mobileMenuBtn { display: none; }
+        @media (max-width: 1023px) {
+            #leftSidebar { transform: translateX(-100%); }
+            #leftSidebar.open { transform: translateX(0); }
+            #mainContent { margin-left: 0; }
+            #mobileMenuBtn { display: flex; }
+        }
+
+        .card-surface {
+            border-radius: 1rem;
+            border: 1px solid rgba(226, 232, 240, 0.85);
+            background: rgba(255, 255, 255, 0.78);
+            box-shadow: 0 1px 2px rgba(59, 130, 246, 0.04), 0 8px 24px -4px rgba(15, 23, 42, 0.06);
+            transition: transform 0.22s ease, box-shadow 0.22s ease;
+        }
+        .card-surface:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 2px 6px rgba(59, 130, 246, 0.08), 0 16px 40px -6px rgba(15, 23, 42, 0.12);
+        }
+        .dark .card-surface {
+            border-color: rgba(51, 65, 85, 0.65);
+            background: rgba(15, 23, 42, 0.72);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.2), 0 12px 32px -8px rgba(0,0,0,0.35);
+        }
+        .dark .card-surface:hover {
+            box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15), 0 20px 48px -8px rgba(0,0,0,0.45);
+        }
+
+        .search-box {
+            border: 1.5px solid rgba(226, 232, 240, 0.85);
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 0.875rem;
+            transition: all 0.2s ease;
+        }
+        .search-box:focus-within {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+        }
+        .dark .search-box {
+            border-color: rgba(51, 65, 85, 0.65);
+            background: rgba(30, 41, 59, 0.6);
+        }
+        .dark .search-box:focus-within {
+            border-color: #818cf8;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+        }
+
+        .year-tab {
+            display: inline-flex; align-items: center;
+            padding: 0.375rem 0.875rem; border-radius: 9999px;
+            font-size: 0.8125rem; font-weight: 500;
+            cursor: pointer;
+            border: 1px solid rgba(226, 232, 240, 0.85);
+            background: rgba(255, 255, 255, 0.6);
+            color: rgba(15, 23, 42, 0.6);
+            transition: all 0.2s ease;
+        }
+        .year-tab:hover {
+            background: rgba(59, 130, 246, 0.08);
+            color: #3b82f6;
+            border-color: rgba(59, 130, 246, 0.3);
+        }
+        .year-tab.active {
+            background: linear-gradient(135deg, #3b82f6, #6366f1);
+            color: #fff;
+            border-color: transparent;
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+        }
+        .dark .year-tab {
+            border-color: rgba(51, 65, 85, 0.65);
+            background: rgba(30, 41, 59, 0.5);
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .dark .year-tab:hover {
+            background: rgba(99, 102, 241, 0.15);
+            color: #818cf8;
+            border-color: rgba(99, 102, 241, 0.4);
+        }
+        .dark .year-tab.active {
+            background: linear-gradient(135deg, #3b82f6, #6366f1);
+            color: #fff;
+            border-color: transparent;
+        }
+
+        .repo-link {
+            display: inline-flex; align-items: center; gap: 0.25rem;
+            padding: 0.2rem 0.55rem; border-radius: 0.5rem;
+            font-size: 0.6875rem; font-weight: 500;
+            white-space: nowrap;
+            text-decoration: none;
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            background: rgba(59, 130, 246, 0.06);
+            color: #3b82f6;
+            transition: all 0.18s ease;
+        }
+        .repo-link:hover {
+            background: rgba(59, 130, 246, 0.15);
+            border-color: rgba(59, 130, 246, 0.5);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 6px rgba(59, 130, 246, 0.15);
+        }
+        .dark .repo-link {
+            border-color: rgba(99, 102, 241, 0.3);
+            background: rgba(99, 102, 241, 0.1);
+            color: #818cf8;
+        }
+        .dark .repo-link:hover {
+            background: rgba(99, 102, 241, 0.2);
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+
+        .star-badge {
+            display: inline-flex; align-items: center; gap: 0.2rem;
+            font-size: 0.625rem; font-weight: 600;
+            color: rgba(234, 179, 8, 0.9);
+        }
+        .dark .star-badge { color: rgba(250, 204, 21, 0.85); }
+
+        .year-header {
+            font-size: 1.25rem; font-weight: 700;
+            font-family: 'JetBrains Mono', monospace;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid rgba(59, 130, 246, 0.15);
+        }
+        .dark .year-header { border-color: rgba(99, 102, 241, 0.2); }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(16px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-up { animation: fadeInUp 0.4s ease forwards; }
+    </style>
+</head>
+
+<body class="font-sans bg-white dark:bg-base-950 text-base-900 dark:text-white transition-colors duration-300">
+    <div class="grid-background"></div>
+
+    <div id="sidebarOverlay"></div>
+
+    <aside id="leftSidebar">
+        <div class="p-4 pb-3 border-b border-base-100 dark:border-base-800">
+            <h2 class="font-mono font-bold text-lg text-gradient leading-tight">Hello CTF</h2>
+            <p class="text-[0.65rem] text-base-900/45 dark:text-white/35 mt-0.5 font-mono">免费开源 CTF 入门教程</p>
+        </div>
+        <nav class="flex-1 overflow-y-auto px-2.5 py-3 space-y-0.5">
+            <a href="../index.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+                <span>首页</span>
+            </a>
+            <a href="./tools.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085"/></svg>
+                <span>工具 / MCP</span>
+            </a>
+            <a href="./ctf-skill.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
+                <span>CTF-SKILL</span>
+            </a>
+            <a href="./career-cards.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"/></svg>
+                <span>网络安全职业卡片</span>
+            </a>
+            <a href="./archives.html" class="sidebar-link active">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+                <span>历史比赛附件</span>
+            </a>
+            <a href="./friends.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"/></svg>
+                <span>师傅们的友链</span>
+            </a>
+            <a href="./resources.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
+                <span>学习资源推荐</span>
+            </a>
+            <a href="./feedback.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/></svg>
+                <span>反馈与群聊入口</span>
+            </a>
+        </nav>
+        <div class="p-3 border-t border-base-100 dark:border-base-800">
+            <button id="themeToggle" type="button" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl border border-base-200/80 bg-white/60 text-sm text-base-900/70 transition-all duration-200 hover:bg-primary/[0.06] hover:text-primary hover:border-primary/40 dark:border-base-700 dark:bg-base-900/40 dark:text-white/60 dark:hover:bg-accent/10 dark:hover:text-accent dark:hover:border-accent/40" aria-label="切换主题">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                <span class="block dark:hidden">深色模式</span>
+                <span class="hidden dark:block">浅色模式</span>
+            </button>
+        </div>
+    </aside>
+
+    <button id="mobileMenuBtn" class="fixed top-4 left-4 z-50 p-2 rounded-xl bg-white/80 dark:bg-base-900/80 border border-base-200 dark:border-base-700 backdrop-blur-md items-center justify-center" aria-label="打开菜单">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-base-900/70 dark:text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+    </button>
+
+    <div id="mainContent">
+        <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+            <div class="mb-8">
+                <h1 class="text-3xl sm:text-4xl font-bold font-mono">
+                    <span class="text-gradient">历史比赛附件</span>
+                </h1>
+                <p class="mt-2 text-base-900/60 dark:text-white/50 text-sm sm:text-base max-w-2xl">
+                    CTF-Archives 组织收录的历届 CTF 比赛附件归档，按年份整理，便于查找和学习。
+                </p>
+                <div class="mt-3 flex items-center gap-2 text-xs text-base-900/45 dark:text-white/35 font-mono">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+                    <span>跨越 <strong id="yearCount" class="text-base-900/70 dark:text-white/60">0</strong> 个年份</span>
+                    <span class="mx-1">&middot;</span>
+                    <span>共 <strong id="compCount" class="text-base-900/70 dark:text-white/60">0</strong> 场比赛</span>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3 mb-6">
+                <button class="year-tab active" data-year="all">全部</button>
+            </div>
+
+            <div class="search-box flex items-center gap-3 px-4 py-3 mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-base-900/35 dark:text-white/30 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
+                <input id="searchInput" type="text" placeholder="搜索比赛名称或描述 ..." class="flex-1 bg-transparent outline-none text-sm text-base-900 dark:text-white placeholder-base-900/35 dark:placeholder-white/25">
+                <button id="clearSearch" class="hidden text-base-900/30 dark:text-white/25 hover:text-base-900/60 dark:hover:text-white/50 transition-colors" aria-label="清空搜索">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+            </div>
+
+            <div id="cardContainer"></div>
+
+            <div id="emptyState" class="hidden flex-col items-center justify-center py-20 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-base-900/15 dark:text-white/10 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
+                <p class="text-base-900/40 dark:text-white/30 text-sm font-medium">没有找到匹配的比赛</p>
+                <p class="text-base-900/25 dark:text-white/20 text-xs mt-1">试试换个关键词</p>
+            </div>
+
+        </main>
+    </div>
+
+    <script>
+        (function () {
+            var html = document.documentElement;
+            if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                html.classList.add('dark');
+            }
+            document.getElementById('themeToggle').addEventListener('click', function () {
+                html.classList.toggle('dark');
+                localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+            });
+
+            var sidebar = document.getElementById('leftSidebar');
+            var overlay = document.getElementById('sidebarOverlay');
+            var menuBtn = document.getElementById('mobileMenuBtn');
+            function closeSidebar() { sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+            menuBtn.addEventListener('click', function () { sidebar.classList.add('open'); overlay.classList.add('open'); });
+            overlay.addEventListener('click', closeSidebar);
+            document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeSidebar(); });
+
+            var allData = [];
+            var activeYear = 'all';
+            var searchQuery = '';
+            var debounceTimer;
+
+            var GITHUB_SVG = '<svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>';
+            var STAR_SVG = '<svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>';
+
+            function repoLinksHTML(repos) {
+                return repos.map(function (r) {
+                    return '<a href="' + r.url + '" target="_blank" rel="noopener noreferrer" class="repo-link">' + GITHUB_SVG + ' ' + r.label + '</a>';
+                }).join('');
+            }
+
+            function cardHTML(comp, idx) {
+                var starsHTML = '';
+                if (comp.stars > 0) {
+                    starsHTML = '<span class="star-badge">' + STAR_SVG + ' ' + comp.stars + '</span>';
+                }
+                return '<div class="card-surface p-5 flex flex-col fade-in-up" style="animation-delay:' + (idx * 40) + 'ms">' +
+                    '<div class="flex items-start justify-between gap-2 mb-2">' +
+                        '<h3 class="font-bold text-sm leading-snug text-base-900 dark:text-white flex-1">' + comp.name + '</h3>' +
+                        starsHTML +
+                    '</div>' +
+                    '<p class="text-xs text-base-900/50 dark:text-white/40 leading-relaxed mb-3 flex-1">' + comp.desc + '</p>' +
+                    '<div class="flex flex-wrap gap-1.5">' + repoLinksHTML(comp.repos) + '</div>' +
+                '</div>';
+            }
+
+            function render() {
+                var container = document.getElementById('cardContainer');
+                var empty = document.getElementById('emptyState');
+                var html = '';
+                var totalVisible = 0;
+                var cardIdx = 0;
+
+                var kw = [];
+                if (searchQuery) {
+                    kw = searchQuery.toLowerCase().split(/\s+/).filter(Boolean);
+                }
+
+                allData.forEach(function (yearGroup) {
+                    if (activeYear !== 'all' && yearGroup.year !== activeYear) return;
+
+                    var filtered = yearGroup.competitions;
+                    if (kw.length > 0) {
+                        filtered = filtered.filter(function (comp) {
+                            var haystack = (comp.name + ' ' + comp.desc).toLowerCase();
+                            for (var i = 0; i < kw.length; i++) {
+                                if (haystack.indexOf(kw[i]) === -1) return false;
+                            }
+                            return true;
+                        });
+                    }
+
+                    if (filtered.length === 0) return;
+                    totalVisible += filtered.length;
+
+                    html += '<div class="mb-10">';
+                    html += '<h2 class="year-header text-gradient">' + yearGroup.year + '</h2>';
+                    html += '<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">';
+                    filtered.forEach(function (comp) {
+                        html += cardHTML(comp, cardIdx++);
+                    });
+                    html += '</div></div>';
+                });
+
+                if (totalVisible === 0) {
+                    container.innerHTML = '';
+                    container.classList.add('hidden');
+                    empty.classList.remove('hidden');
+                    empty.classList.add('flex');
+                } else {
+                    empty.classList.add('hidden');
+                    empty.classList.remove('flex');
+                    container.classList.remove('hidden');
+                    container.innerHTML = html;
+                }
+            }
+
+            function buildYearTabs() {
+                var tabContainer = document.querySelector('.flex.flex-wrap.items-center.gap-3');
+                var years = allData.map(function (g) { return g.year; });
+                years.forEach(function (y) {
+                    var btn = document.createElement('button');
+                    btn.className = 'year-tab';
+                    btn.dataset.year = y;
+                    btn.textContent = y;
+                    tabContainer.appendChild(btn);
+                });
+            }
+
+            document.addEventListener('click', function (e) {
+                var tab = e.target.closest('.year-tab');
+                if (!tab) return;
+                document.querySelectorAll('.year-tab').forEach(function (t) { t.classList.remove('active'); });
+                tab.classList.add('active');
+                activeYear = tab.dataset.year;
+                render();
+            });
+
+            var searchInput = document.getElementById('searchInput');
+            var clearBtn = document.getElementById('clearSearch');
+            searchInput.addEventListener('input', function () {
+                clearTimeout(debounceTimer);
+                debounceTimer = setTimeout(function () {
+                    searchQuery = searchInput.value.trim();
+                    clearBtn.classList.toggle('hidden', !searchQuery);
+                    render();
+                }, 180);
+            });
+            clearBtn.addEventListener('click', function () {
+                searchInput.value = '';
+                searchQuery = '';
+                clearBtn.classList.add('hidden');
+                render();
+                searchInput.focus();
+            });
+
+            fetch('./archives_data.json')
+                .then(function (r) { return r.json(); })
+                .then(function (data) {
+                    allData = data;
+                    var totalComps = data.reduce(function (sum, g) { return sum + g.competitions.length; }, 0);
+                    document.getElementById('yearCount').textContent = data.length;
+                    document.getElementById('compCount').textContent = totalComps;
+                    buildYearTabs();
+                    render();
+                })
+                .catch(function (err) {
+                    console.error('Failed to load archives data:', err);
+                    document.getElementById('cardContainer').innerHTML = '<p class="text-center text-base-900/40 dark:text-white/30 py-20">数据加载失败，请刷新重试。</p>';
+                });
+        })();
+    </script>
+</body>
+</html>
