@@ -497,42 +497,6 @@ hide:
                 **比赛详细** : 赛制/类型: 线上Jeopardy解题赛  
                 
         === "国外赛事"
-            ??? Quote "[MindBreak 2026 by ESGI](https://linktr.ee/m1ndbr34k)"  
-                [![](https://ctftime.org/media/events/mindbreak_2.png){ width="200" align=left }](https://linktr.ee/m1ndbr34k)  
-                **比赛名称** : [MindBreak 2026 by ESGI](https://linktr.ee/m1ndbr34k)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-07-04 05:00:00 - 2026-07-04 14:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : ESGI (https://ctftime.org/team/3151)  
-                **添加日历** : https://ctftime.org/event/3315.ics  
-                
-            ??? Quote "[No Hack No CTF 2026](https://nhnc.ic3dt3a.org/)"  
-                [![](){ width="200" align=left }](https://nhnc.ic3dt3a.org/)  
-                **比赛名称** : [No Hack No CTF 2026](https://nhnc.ic3dt3a.org/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-07-04 08:00:00 - 2026-07-06 08:00:00 UTC+8  
-                **比赛权重** : 23.47  
-                **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
-                **添加日历** : https://ctftime.org/event/3180.ics  
-                
-            ??? Quote "[R3CTF 2026](https://ctf2026.r3kapig.com/)"  
-                [![](https://ctftime.org/media/events/r3kapig.png){ width="200" align=left }](https://ctf2026.r3kapig.com/)  
-                **比赛名称** : [R3CTF 2026](https://ctf2026.r3kapig.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-07-04 10:00:00 - 2026-07-06 10:00:00 UTC+8  
-                **比赛权重** : 35.95  
-                **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
-                **添加日历** : https://ctftime.org/event/3149.ics  
-                
-            ??? Quote "[Fluid Attacks' CTF 2026-2](https://fluidattacks.com/ctf)"  
-                [![](){ width="200" align=left }](https://fluidattacks.com/ctf)  
-                **比赛名称** : [Fluid Attacks' CTF 2026-2](https://fluidattacks.com/ctf)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-07-04 21:00:00 - 2026-07-05 09:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Fluid Attacks (https://ctftime.org/team/126627)  
-                **添加日历** : https://ctftime.org/event/3325.ics  
-                
             ??? Quote "[LYKNCTF](https://ctf.itzdenkii.me/)"  
                 [![](https://ctftime.org/media/events/649736697_1646500476542970_4948379456057576589_n.jpg){ width="200" align=left }](https://ctf.itzdenkii.me/)  
                 **比赛名称** : [LYKNCTF](https://ctf.itzdenkii.me/)  
@@ -559,6 +523,24 @@ hide:
                 **比赛权重** : 23.42  
                 **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
                 **添加日历** : https://ctftime.org/event/3335.ics  
+                
+            ??? Quote "[BroncoCTF 2026](https://broncoctf.ctfd.io/)"  
+                [![](https://ctftime.org/media/events/horse.png){ width="200" align=left }](https://broncoctf.ctfd.io/)  
+                **比赛名称** : [BroncoCTF 2026](https://broncoctf.ctfd.io/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-07-12 00:00:00 - 2026-07-13 00:00:00 UTC+8  
+                **比赛权重** : 17.41  
+                **赛事主办** : BroncoSec (https://ctftime.org/team/112673)  
+                **添加日历** : https://ctftime.org/event/3144.ics  
+                
+            ??? Quote "[EYCC CTF 2026](https://eycc.stemeghackclub.org/)"  
+                [![](https://ctftime.org/media/events/eycc.png){ width="200" align=left }](https://eycc.stemeghackclub.org/)  
+                **比赛名称** : [EYCC CTF 2026](https://eycc.stemeghackclub.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-07-17 19:00:00 - 2026-07-19 19:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Mont5ab El2hwa (https://ctftime.org/team/402823)  
+                **添加日历** : https://ctftime.org/event/3353.ics  
                 
             ??? Quote "[OmniCTF 2026 Quals](https://omnictf.com/)"  
                 [![](https://ctftime.org/media/events/logo1024x1024_1.png){ width="200" align=left }](https://omnictf.com/)  
@@ -920,9 +902,9 @@ hide:
                 **赛事主办** : H7Tex (https://ctftime.org/team/281844)  
                 **添加日历** : https://ctftime.org/event/3094.ics  
                 
-            ??? Quote "[PINK+ CTF 2026](https://pink.bayern/)"  
-                [![](){ width="200" align=left }](https://pink.bayern/)  
-                **比赛名称** : [PINK+ CTF 2026](https://pink.bayern/)  
+            ??? Quote "[PINK+ CTF 2026](https://ctf.pink.bayern/)"  
+                [![](){ width="200" align=left }](https://ctf.pink.bayern/)  
+                **比赛名称** : [PINK+ CTF 2026](https://ctf.pink.bayern/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-11-06 20:00:00 - 2026-11-09 20:00:00 UTC+8  
                 **比赛权重** : 0.00  
@@ -1005,11 +987,46 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-    
+            ??? Quote "[No Hack No CTF 2026](https://nhnc.ic3dt3a.org/)"  
+                [![](){ width="200" align=left }](https://nhnc.ic3dt3a.org/)  
+                **比赛名称** : [No Hack No CTF 2026](https://nhnc.ic3dt3a.org/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-07-04 08:00:00 - 2026-07-06 08:00:00 UTC+8  
+                **比赛权重** : 23.47  
+                **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
+                **添加日历** : https://ctftime.org/event/3180.ics  
+                
+            ??? Quote "[R3CTF 2026](https://ctf2026.r3kapig.com/)"  
+                [![](https://ctftime.org/media/events/r3kapig.png){ width="200" align=left }](https://ctf2026.r3kapig.com/)  
+                **比赛名称** : [R3CTF 2026](https://ctf2026.r3kapig.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-07-04 10:00:00 - 2026-07-06 10:00:00 UTC+8  
+                **比赛权重** : 35.95  
+                **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
+                **添加日历** : https://ctftime.org/event/3149.ics  
+                
     === "*已经结束*"
         === "国内赛事"
     
         === "国外赛事"
+            ??? Quote "[Fluid Attacks' CTF 2026-2](https://fluidattacks.com/ctf)"  
+                [![](){ width="200" align=left }](https://fluidattacks.com/ctf)  
+                **比赛名称** : [Fluid Attacks' CTF 2026-2](https://fluidattacks.com/ctf)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-07-04 21:00:00 - 2026-07-05 09:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : Fluid Attacks (https://ctftime.org/team/126627)  
+                **添加日历** : https://ctftime.org/event/3325.ics  
+                
+            ??? Quote "[MindBreak 2026 by ESGI](https://linktr.ee/m1ndbr34k)"  
+                [![](https://ctftime.org/media/events/mindbreak_2.png){ width="200" align=left }](https://linktr.ee/m1ndbr34k)  
+                **比赛名称** : [MindBreak 2026 by ESGI](https://linktr.ee/m1ndbr34k)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-07-04 05:00:00 - 2026-07-04 14:00:00 UTC+8  
+                **比赛权重** : 0.00  
+                **赛事主办** : ESGI (https://ctftime.org/team/3151)  
+                **添加日历** : https://ctftime.org/event/3315.ics  
+                
             ??? Quote "[MntcrlCTF 2026](https://ctf.mntcrl.it/)"  
                 [![](https://ctftime.org/media/events/m0nt3c4rl0_logo.jpg){ width="200" align=left }](https://ctf.mntcrl.it/)  
                 **比赛名称** : [MntcrlCTF 2026](https://ctf.mntcrl.it/)  
@@ -1051,7 +1068,7 @@ hide:
                 **比赛名称** : [TraceBash CTF 2026](https://ctf.tracebash.xyz/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-06-26 17:30:00 - 2026-06-27 17:30:00 UTC+8  
-                **比赛权重** : 0  
+                **比赛权重** : 25.00  
                 **赛事主办** : TraceBash (https://ctftime.org/team/392990)  
                 **添加日历** : https://ctftime.org/event/3323.ics  
                 
@@ -1123,7 +1140,7 @@ hide:
                 **比赛名称** : [Anti-Slop CTF 2026](https://ctf.antislopp.i.ng/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-06-13 09:00:00 - 2026-06-15 09:00:00 UTC+8  
-                **比赛权重** : 24.67  
+                **比赛权重** : 24.69  
                 **赛事主办** : hackme (https://ctftime.org/team/77185)  
                 **添加日历** : https://ctftime.org/event/3272.ics  
                 
@@ -1339,7 +1356,7 @@ hide:
                 **比赛名称** : [0xV01D CTF 2026](https://0xv01d-ctf.xyz/)  
                 **比赛形式** : Jeopardy  
                 **比赛时间** : 2026-05-18 12:00:00 - 2026-05-20 12:00:00 UTC+8  
-                **比赛权重** : 19.66  
+                **比赛权重** : 19.48  
                 **赛事主办** : OxV01D (https://ctftime.org/team/427687)  
                 **添加日历** : https://ctftime.org/event/3269.ics  
                 
@@ -1891,24 +1908,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : PlayCyber (https://ctftime.org/team/165788)  
                 **添加日历** : https://ctftime.org/event/3057.ics  
-                
-            ??? Quote "[CU school CTF 2026](https://cu.ru/olympiad/events/cu-school-ctf)"  
-                [![](https://ctftime.org/media/events/cu_school_ctf.png){ width="200" align=left }](https://cu.ru/olympiad/events/cu-school-ctf)  
-                **比赛名称** : [CU school CTF 2026](https://cu.ru/olympiad/events/cu-school-ctf)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-29 15:00:00 - 2026-03-29 23:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : CUT (https://ctftime.org/team/358931)  
-                **添加日历** : https://ctftime.org/event/3155.ics  
-                
-            ??? Quote "[MythX: An Endgame Protocol CTF](https://unstop.com/o/eZQ9xw6?lb=RatXyLX4)"  
-                [![](https://ctftime.org/media/events/mythx_LOGO.png){ width="200" align=left }](https://unstop.com/o/eZQ9xw6?lb=RatXyLX4)  
-                **比赛名称** : [MythX: An Endgame Protocol CTF](https://unstop.com/o/eZQ9xw6?lb=RatXyLX4)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-03-29 00:30:00 - 2026-03-30 00:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : MythX (https://ctftime.org/team/429696)  
-                **添加日历** : https://ctftime.org/event/3223.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

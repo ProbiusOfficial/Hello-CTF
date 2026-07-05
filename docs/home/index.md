@@ -58,41 +58,41 @@ hide:
             **比赛详细** : 赛制/类型: 线上Jeopardy解题赛  
                 
     === "国外比赛"
-        ??? Quote "[MindBreak 2026 by ESGI](https://linktr.ee/m1ndbr34k)"  
-            [![](https://ctftime.org/media/events/mindbreak_2.png){ width="200" align=left }](https://linktr.ee/m1ndbr34k)  
-            **比赛名称** : [MindBreak 2026 by ESGI](https://linktr.ee/m1ndbr34k)  
+        ??? Quote "[LYKNCTF](https://ctf.itzdenkii.me/)"  
+            [![](https://ctftime.org/media/events/649736697_1646500476542970_4948379456057576589_n.jpg){ width="200" align=left }](https://ctf.itzdenkii.me/)  
+            **比赛名称** : [LYKNCTF](https://ctf.itzdenkii.me/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-07-04 05:00:00 - 2026-07-04 14:00:00 UTC+8  
+            **比赛时间** : 2026-07-06 08:00:00 - 2026-07-08 08:00:00 UTC+8  
             **比赛权重** : 0.00  
-            **赛事主办** : ESGI (https://ctftime.org/team/3151)  
-            **添加日历** : https://ctftime.org/event/3315.ics  
+            **赛事主办** : LYKNCTF (https://ctftime.org/team/365692)  
+            **添加日历** : https://ctftime.org/event/3280.ics  
             
-        ??? Quote "[No Hack No CTF 2026](https://nhnc.ic3dt3a.org/)"  
-            [![](){ width="200" align=left }](https://nhnc.ic3dt3a.org/)  
-            **比赛名称** : [No Hack No CTF 2026](https://nhnc.ic3dt3a.org/)  
+        ??? Quote "[L3akCTF 2026](https://ctf.l3ak.team/)"  
+            [![](https://ctftime.org/media/events/6a9256e0b32707195ff9fe31b358a0e6.png){ width="200" align=left }](https://ctf.l3ak.team/)  
+            **比赛名称** : [L3akCTF 2026](https://ctf.l3ak.team/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-07-04 08:00:00 - 2026-07-06 08:00:00 UTC+8  
-            **比赛权重** : 23.47  
-            **赛事主办** : ICEDTEA (https://ctftime.org/team/303514)  
-            **添加日历** : https://ctftime.org/event/3180.ics  
+            **比赛时间** : 2026-07-11 02:00:00 - 2026-07-13 02:00:00 UTC+8  
+            **比赛权重** : 34.47  
+            **赛事主办** : L3ak (https://ctftime.org/team/220336)  
+            **添加日历** : https://ctftime.org/event/3061.ics  
             
-        ??? Quote "[R3CTF 2026](https://ctf2026.r3kapig.com/)"  
-            [![](https://ctftime.org/media/events/r3kapig.png){ width="200" align=left }](https://ctf2026.r3kapig.com/)  
-            **比赛名称** : [R3CTF 2026](https://ctf2026.r3kapig.com/)  
+        ??? Quote "[Junior.Crypt.2026 CTF](http://ctf-spcs.mf.grsu.by/)"  
+            [![](https://ctftime.org/media/events/grsuctfwithouthat.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
+            **比赛名称** : [Junior.Crypt.2026 CTF](http://ctf-spcs.mf.grsu.by/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-07-04 10:00:00 - 2026-07-06 10:00:00 UTC+8  
-            **比赛权重** : 35.95  
-            **赛事主办** : r3kapig (https://ctftime.org/team/58979)  
-            **添加日历** : https://ctftime.org/event/3149.ics  
+            **比赛时间** : 2026-07-11 17:00:00 - 2026-07-12 17:00:00 UTC+8  
+            **比赛权重** : 23.42  
+            **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
+            **添加日历** : https://ctftime.org/event/3335.ics  
             
-        ??? Quote "[Fluid Attacks' CTF 2026-2](https://fluidattacks.com/ctf)"  
-            [![](){ width="200" align=left }](https://fluidattacks.com/ctf)  
-            **比赛名称** : [Fluid Attacks' CTF 2026-2](https://fluidattacks.com/ctf)  
+        ??? Quote "[BroncoCTF 2026](https://broncoctf.ctfd.io/)"  
+            [![](https://ctftime.org/media/events/horse.png){ width="200" align=left }](https://broncoctf.ctfd.io/)  
+            **比赛名称** : [BroncoCTF 2026](https://broncoctf.ctfd.io/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-07-04 21:00:00 - 2026-07-05 09:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : Fluid Attacks (https://ctftime.org/team/126627)  
-            **添加日历** : https://ctftime.org/event/3325.ics  
+            **比赛时间** : 2026-07-12 00:00:00 - 2026-07-13 00:00:00 UTC+8  
+            **比赛权重** : 17.41  
+            **赛事主办** : BroncoSec (https://ctftime.org/team/112673)  
+            **添加日历** : https://ctftime.org/event/3144.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
