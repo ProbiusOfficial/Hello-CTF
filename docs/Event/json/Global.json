@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "LYKNCTF",
-        "比赛时间": "2026-07-06 08:00:00 - 2026-07-08 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3280.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.itzdenkii.me/",
-        "比赛标志": "https://ctftime.org/media/events/649736697_1646500476542970_4948379456057576589_n.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "LYKNCTF (https://ctftime.org/team/365692)",
-        "比赛ID": "1223",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "L3akCTF 2026",
         "比赛时间": "2026-07-11 02:00:00 - 2026-07-13 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3061.ics",
@@ -648,18 +636,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "No Hack No CTF 2026",
-        "比赛时间": "2026-07-04 08:00:00 - 2026-07-06 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3180.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nhnc.ic3dt3a.org/",
-        "比赛标志": "",
-        "比赛权重": "23.47",
-        "赛事主办": "ICEDTEA (https://ctftime.org/team/303514)",
-        "比赛ID": "1199",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "R3CTF 2026",
         "比赛时间": "2026-07-04 10:00:00 - 2026-07-06 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3149.ics",
@@ -669,6 +645,18 @@
         "比赛权重": "35.95",
         "赛事主办": "r3kapig (https://ctftime.org/team/58979)",
         "比赛ID": "329",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "LYKNCTF",
+        "比赛时间": "2026-07-06 08:00:00 - 2026-07-08 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3280.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.itzdenkii.me/",
+        "比赛标志": "https://ctftime.org/media/events/649736697_1646500476542970_4948379456057576589_n.jpg",
+        "比赛权重": "0",
+        "赛事主办": "LYKNCTF (https://ctftime.org/team/365692)",
+        "比赛ID": "1223",
         "比赛状态": "nowrunning"
     },
     {
