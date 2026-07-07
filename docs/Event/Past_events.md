@@ -170,6 +170,15 @@ comments: true
     **赛事主办** : KyteBytes (https://ctftime.org/team/424457)  
     **添加日历** : https://ctftime.org/event/3309.ics  
     
+??? Quote "[CyberSibir2026](https://masksafe.ru/cyberv/2026/ctf)"  
+    [![](https://ctftime.org/media/events/logoeye.jpg){ width="200" align=left }](https://masksafe.ru/cyberv/2026/ctf)  
+    **比赛名称** : [CyberSibir2026](https://masksafe.ru/cyberv/2026/ctf)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2026-06-09 11:30:00 - 2026-06-09 20:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : keva (https://ctftime.org/team/2980)  
+    **添加日历** : https://ctftime.org/event/3332.ics  
+    
 ??? Quote "[DalCTF 2026](https://dalctf2026.com/)"  
     [![](https://ctftime.org/media/events/logo_square_1.png){ width="200" align=left }](https://dalctf2026.com/)  
     **比赛名称** : [DalCTF 2026](https://dalctf2026.com/)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 36.00  
     **赛事主办** : CyberCellVIIT (https://ctftime.org/team/144677)  
     **添加日历** : https://ctftime.org/event/3197.ics  
-    
-??? Quote "[gryphCTF](https://guelphcss.com/links)"  
-    [![](https://ctftime.org/media/events/gryphctf_gryphlife.png){ width="200" align=left }](https://guelphcss.com/links)  
-    **比赛名称** : [gryphCTF](https://guelphcss.com/links)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-03 02:30:00 - 2026-04-03 08:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : GuelphCSS (https://ctftime.org/team/429720)  
-    **添加日历** : https://ctftime.org/event/3227.ics  
     

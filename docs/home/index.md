@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 赛制/类型: 线上Jeopardy解题赛  
                 
     === "国外比赛"
-        ??? Quote "[L3akCTF 2026 [POSTPONED]](https://ctf.l3ak.team/)"  
-            [![](https://ctftime.org/media/events/6a9256e0b32707195ff9fe31b358a0e6.png){ width="200" align=left }](https://ctf.l3ak.team/)  
-            **比赛名称** : [L3akCTF 2026 [POSTPONED]](https://ctf.l3ak.team/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-07-11 02:00:00 - 2026-07-13 02:00:00 UTC+8  
-            **比赛权重** : 34.47  
-            **赛事主办** : L3ak (https://ctftime.org/team/220336)  
-            **添加日历** : https://ctftime.org/event/3061.ics  
-            
         ??? Quote "[Junior.Crypt.2026 CTF](http://ctf-spcs.mf.grsu.by/)"  
             [![](https://ctftime.org/media/events/grsuctfwithouthat.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
             **比赛名称** : [Junior.Crypt.2026 CTF](http://ctf-spcs.mf.grsu.by/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 0  
             **赛事主办** : Mont5ab El2hwa (https://ctftime.org/team/402823)  
             **添加日历** : https://ctftime.org/event/3353.ics  
+            
+        ??? Quote "[OmniCTF 2026 Quals](https://omnictf.com/)"  
+            [![](https://ctftime.org/media/events/logo1024x1024_1.png){ width="200" align=left }](https://omnictf.com/)  
+            **比赛名称** : [OmniCTF 2026 Quals](https://omnictf.com/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-07-17 23:00:00 - 2026-07-19 23:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : OmniCYBR (https://ctftime.org/team/383015)  
+            **添加日历** : https://ctftime.org/event/3104.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
