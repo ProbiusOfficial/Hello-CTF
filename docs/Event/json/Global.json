@@ -60,11 +60,11 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "DownUnderCTF 2026",
+        "比赛名称": "DownUnderCTF 2026 - CANCELLED",
         "比赛时间": "2026-07-18 03:30:00 - 2026-07-20 03:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3112.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://2026.duc.tf/",
+        "比赛链接": "https://duc.tf/",
         "比赛标志": "",
         "比赛权重": "94.99",
         "赛事主办": "DownUnderCTF (https://ctftime.org/team/126400)",
