@@ -72,18 +72,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "HACKSIUM BUSAN 2026 Quals",
-        "比赛时间": "2026-07-18 08:00:00 - 2026-07-19 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3287.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://hacksiumbusan.com/",
-        "比赛标志": "",
-        "比赛权重": "0.00",
-        "赛事主办": "HACKSIUM BUSAN (https://ctftime.org/team/432880)",
-        "比赛ID": "1585",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "AxiomCTF 2026 Finals",
         "比赛时间": "2026-07-18 15:00:00 - 2026-07-18 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3357.ics",
