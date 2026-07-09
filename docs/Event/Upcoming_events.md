@@ -121,15 +121,6 @@ comments: true
     **赛事主办** : jailctf (https://ctftime.org/team/311088)  
     **添加日历** : https://ctftime.org/event/3286.ics  
     
-??? Quote "[UIUCTF 2026](https://uiuc.tf/)"  
-    [![](){ width="200" align=left }](https://uiuc.tf/)  
-    **比赛名称** : [UIUCTF 2026](https://uiuc.tf/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-07-25 08:00:00 - 2026-07-27 08:00:00 UTC+8  
-    **比赛权重** : 69.35  
-    **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
-    **添加日历** : https://ctftime.org/event/3148.ics  
-    
 ??? Quote "[DIVER OSINT CTF 2026](https://ctfd.diverctf.org/)"  
     [![](https://ctftime.org/media/events/circle-white-simple-01.png){ width="200" align=left }](https://ctfd.diverctf.org/)  
     **比赛名称** : [DIVER OSINT CTF 2026](https://ctfd.diverctf.org/)  
@@ -228,6 +219,15 @@ comments: true
     **比赛权重** : 24.70  
     **赛事主办** : ScriptSorcerers (https://ctftime.org/team/284260)  
     **添加日历** : https://ctftime.org/event/3052.ics  
+    
+??? Quote "[UIUCTF 2026](https://uiuc.tf/)"  
+    [![](){ width="200" align=left }](https://uiuc.tf/)  
+    **比赛名称** : [UIUCTF 2026](https://uiuc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-08-08 08:00:00 - 2026-08-10 08:00:00 UTC+8  
+    **比赛权重** : 69.35  
+    **赛事主办** : SIGPwny (https://ctftime.org/team/27763)  
+    **添加日历** : https://ctftime.org/event/3148.ics  
     
 ??? Quote "[Thryve CTF 2026](https://ctf.thryvectf.org/)"  
     [![](https://ctftime.org/media/events/thryvelogo_4.jpeg){ width="200" align=left }](https://ctf.thryvectf.org/)  
