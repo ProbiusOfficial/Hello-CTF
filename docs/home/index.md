@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 赛制/类型: 线上Jeopardy解题赛  
                 
     === "国外比赛"
-        ??? Quote "[Junior.Crypt.2026 CTF](http://ctf-spcs.mf.grsu.by/)"  
-            [![](https://ctftime.org/media/events/grsuctfwithouthat.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
-            **比赛名称** : [Junior.Crypt.2026 CTF](http://ctf-spcs.mf.grsu.by/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-07-11 17:00:00 - 2026-07-12 17:00:00 UTC+8  
-            **比赛权重** : 23.42  
-            **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
-            **添加日历** : https://ctftime.org/event/3335.ics  
-            
         ??? Quote "[BroncoCTF 2026](https://broncoctf.ctfd.io/)"  
             [![](https://ctftime.org/media/events/horse.png){ width="200" align=left }](https://broncoctf.ctfd.io/)  
             **比赛名称** : [BroncoCTF 2026](https://broncoctf.ctfd.io/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : OmniCYBR (https://ctftime.org/team/383015)  
             **添加日历** : https://ctftime.org/event/3104.ics  
+            
+        ??? Quote "[DownUnderCTF 2026 - CANCELLED](https://duc.tf/)"  
+            [![](){ width="200" align=left }](https://duc.tf/)  
+            **比赛名称** : [DownUnderCTF 2026 - CANCELLED](https://duc.tf/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-07-18 03:30:00 - 2026-07-20 03:30:00 UTC+8  
+            **比赛权重** : 94.99  
+            **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
+            **添加日历** : https://ctftime.org/event/3112.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
