@@ -58,15 +58,6 @@ hide:
             **比赛详细** : 赛制/类型: 线上Jeopardy解题赛  
                 
     === "国外比赛"
-        ??? Quote "[BroncoCTF 2026](https://broncoctf.ctfd.io/)"  
-            [![](https://ctftime.org/media/events/horse.png){ width="200" align=left }](https://broncoctf.ctfd.io/)  
-            **比赛名称** : [BroncoCTF 2026](https://broncoctf.ctfd.io/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-07-12 00:00:00 - 2026-07-13 00:00:00 UTC+8  
-            **比赛权重** : 17.41  
-            **赛事主办** : BroncoSec (https://ctftime.org/team/112673)  
-            **添加日历** : https://ctftime.org/event/3144.ics  
-            
         ??? Quote "[EYCC CTF 2026](https://eycc.stemeghackclub.org/)"  
             [![](https://ctftime.org/media/events/eycc.png){ width="200" align=left }](https://eycc.stemeghackclub.org/)  
             **比赛名称** : [EYCC CTF 2026](https://eycc.stemeghackclub.org/)  
@@ -93,6 +84,15 @@ hide:
             **比赛权重** : 94.99  
             **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
             **添加日历** : https://ctftime.org/event/3112.ics  
+            
+        ??? Quote "[DAMCTF 2026](https://damctf.xyz/)"  
+            [![](https://ctftime.org/media/events/damctf.png){ width="200" align=left }](https://damctf.xyz/)  
+            **比赛名称** : [DAMCTF 2026](https://damctf.xyz/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-07-18 08:00:00 - 2026-07-20 08:00:00 UTC+8  
+            **比赛权重** : 33.42  
+            **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
+            **添加日历** : https://ctftime.org/event/3124.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
