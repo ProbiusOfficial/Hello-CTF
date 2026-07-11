@@ -67,6 +67,15 @@ comments: true
     **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
     **添加日历** : https://ctftime.org/event/3124.ics  
     
+??? Quote "[ATHENA CTF](https://ctf.athena-ctf.com/)"  
+    [![](){ width="200" align=left }](https://ctf.athena-ctf.com/)  
+    **比赛名称** : [ATHENA CTF](https://ctf.athena-ctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-07-18 13:30:00 - 2026-07-19 13:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Athena-CTF (https://ctftime.org/team/438608)  
+    **添加日历** : https://ctftime.org/event/3366.ics  
+    
 ??? Quote "[AxiomCTF 2026 Finals](https://ctf.4x10m.ru/)"  
     [![](https://ctftime.org/media/events/1231_1.png){ width="200" align=left }](https://ctf.4x10m.ru/)  
     **比赛名称** : [AxiomCTF 2026 Finals](https://ctf.4x10m.ru/)  

@@ -72,6 +72,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "ATHENA CTF",
+        "比赛时间": "2026-07-18 13:30:00 - 2026-07-19 13:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3366.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.athena-ctf.com/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "Athena-CTF (https://ctftime.org/team/438608)",
+        "比赛ID": "1626",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "AxiomCTF 2026 Finals",
         "比赛时间": "2026-07-18 15:00:00 - 2026-07-18 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3357.ics",
