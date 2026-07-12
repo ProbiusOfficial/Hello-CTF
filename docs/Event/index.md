@@ -996,15 +996,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[Junior.Crypt.2026 CTF](http://ctf-spcs.mf.grsu.by/)"  
-                [![](https://ctftime.org/media/events/grsuctfwithouthat.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
-                **比赛名称** : [Junior.Crypt.2026 CTF](http://ctf-spcs.mf.grsu.by/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-07-11 17:00:00 - 2026-07-12 17:00:00 UTC+8  
-                **比赛权重** : 23.42  
-                **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
-                **添加日历** : https://ctftime.org/event/3335.ics  
-                
             ??? Quote "[BroncoCTF 2026](https://broncoctf.ctfd.io/)"  
                 [![](https://ctftime.org/media/events/horse.png){ width="200" align=left }](https://broncoctf.ctfd.io/)  
                 **比赛名称** : [BroncoCTF 2026](https://broncoctf.ctfd.io/)  
@@ -1018,6 +1009,15 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
+            ??? Quote "[Junior.Crypt.2026 CTF](http://ctf-spcs.mf.grsu.by/)"  
+                [![](https://ctftime.org/media/events/grsuctfwithouthat.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
+                **比赛名称** : [Junior.Crypt.2026 CTF](http://ctf-spcs.mf.grsu.by/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-07-11 17:00:00 - 2026-07-12 17:00:00 UTC+8  
+                **比赛权重** : 23.42  
+                **赛事主办** : Beavers0 (https://ctftime.org/team/269281)  
+                **添加日历** : https://ctftime.org/event/3335.ics  
+                
             ??? Quote "[LYKNCTF](https://ctf.itzdenkii.me/)"  
                 [![](https://ctftime.org/media/events/649736697_1646500476542970_4948379456057576589_n.jpg){ width="200" align=left }](https://ctf.itzdenkii.me/)  
                 **比赛名称** : [LYKNCTF](https://ctf.itzdenkii.me/)  
@@ -1908,15 +1908,6 @@ hide:
                 **比赛权重** : 48.64  
                 **赛事主办** : Contagion (https://ctftime.org/team/152691)  
                 **添加日历** : https://ctftime.org/event/3096.ics  
-                
-            ??? Quote "[Kashi CTF 2026](https://kashictf.iitbhucybersec.in/)"  
-                [![](https://ctftime.org/media/events/kashi-ctf-logo.png){ width="200" align=left }](https://kashictf.iitbhucybersec.in/)  
-                **比赛名称** : [Kashi CTF 2026](https://kashictf.iitbhucybersec.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-04-03 20:00:00 - 2026-04-04 20:00:00 UTC+8  
-                **比赛权重** : 21.78  
-                **赛事主办** : IIT(BHU)CyberSec (https://ctftime.org/team/22546)  
-                **添加日历** : https://ctftime.org/event/3150.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>

@@ -660,18 +660,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Junior.Crypt.2026 CTF",
-        "比赛时间": "2026-07-11 17:00:00 - 2026-07-12 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3335.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf-spcs.mf.grsu.by/",
-        "比赛标志": "https://ctftime.org/media/events/grsuctfwithouthat.jpg",
-        "比赛权重": "23.42",
-        "赛事主办": "Beavers0 (https://ctftime.org/team/269281)",
-        "比赛ID": "1041",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "BroncoCTF 2026",
         "比赛时间": "2026-07-12 00:00:00 - 2026-07-13 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3144.ics",
@@ -682,6 +670,18 @@
         "赛事主办": "BroncoSec (https://ctftime.org/team/112673)",
         "比赛ID": "1017",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Junior.Crypt.2026 CTF",
+        "比赛时间": "2026-07-11 17:00:00 - 2026-07-12 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3335.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf-spcs.mf.grsu.by/",
+        "比赛标志": "https://ctftime.org/media/events/grsuctfwithouthat.jpg",
+        "比赛权重": "23.42",
+        "赛事主办": "Beavers0 (https://ctftime.org/team/269281)",
+        "比赛ID": "1041",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "LYKNCTF",
@@ -1869,18 +1869,6 @@
         "比赛权重": "48.64",
         "赛事主办": "Contagion (https://ctftime.org/team/152691)",
         "比赛ID": "170",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Kashi CTF 2026",
-        "比赛时间": "2026-04-03 20:00:00 - 2026-04-04 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3150.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://kashictf.iitbhucybersec.in/",
-        "比赛标志": "https://ctftime.org/media/events/kashi-ctf-logo.png",
-        "比赛权重": "21.78",
-        "赛事主办": "IIT(BHU)CyberSec (https://ctftime.org/team/22546)",
-        "比赛ID": "1251",
         "比赛状态": "past"
     }
 ]
