@@ -8,6 +8,15 @@ comments: true
 
 
 ## 国际赛事
+??? Quote "[BroncoCTF 2026](https://broncoctf.ctfd.io/)"  
+    [![](https://ctftime.org/media/events/horse.png){ width="200" align=left }](https://broncoctf.ctfd.io/)  
+    **比赛名称** : [BroncoCTF 2026](https://broncoctf.ctfd.io/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-07-12 00:00:00 - 2026-07-13 00:00:00 UTC+8  
+    **比赛权重** : 17.41  
+    **赛事主办** : BroncoSec (https://ctftime.org/team/112673)  
+    **添加日历** : https://ctftime.org/event/3144.ics  
+    
 ??? Quote "[Junior.Crypt.2026 CTF](http://ctf-spcs.mf.grsu.by/)"  
     [![](https://ctftime.org/media/events/grsuctfwithouthat.jpg){ width="200" align=left }](http://ctf-spcs.mf.grsu.by/)  
     **比赛名称** : [Junior.Crypt.2026 CTF](http://ctf-spcs.mf.grsu.by/)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : CITEFLAG (https://ctftime.org/team/425411)  
     **添加日历** : https://ctftime.org/event/3175.ics  
-    
-??? Quote "[RITSEC CTF 2026](https://ctfd.ritsec.club/)"  
-    [![](https://ctftime.org/media/events/ritsec_ctf_2026_TP.png){ width="200" align=left }](https://ctfd.ritsec.club/)  
-    **比赛名称** : [RITSEC CTF 2026](https://ctfd.ritsec.club/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-04 05:00:00 - 2026-04-06 05:00:00 UTC+8  
-    **比赛权重** : 48.64  
-    **赛事主办** : Contagion (https://ctftime.org/team/152691)  
-    **添加日历** : https://ctftime.org/event/3096.ics  
     
