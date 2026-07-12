@@ -36,6 +36,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "HACKSIUM BUSAN 2026 Quals",
+        "比赛时间": "2026-07-18 08:00:00 - 2026-07-19 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3287.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://hacksiumbusan.com/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "HACKSIUM BUSAN (https://ctftime.org/team/432880)",
+        "比赛ID": "1585",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "ATHENA CTF",
         "比赛时间": "2026-07-18 13:30:00 - 2026-07-19 13:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3366.ics",
@@ -432,6 +444,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "NullOrigin CTF Qualifiers",
+        "比赛时间": "2026-09-18 12:30:00 - 2026-09-19 00:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3346.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nullorigin.cyberhx.com/",
+        "比赛标志": "https://ctftime.org/media/events/722217335_18086037686297664_317017320748858629_n.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "CyberXoX (https://ctftime.org/team/374041)",
+        "比赛ID": "1633",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "CSAW CTF Qualification Round 2026",
         "比赛时间": "2026-09-19 00:00:00 - 2026-09-21 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3355.ics",
@@ -489,6 +513,18 @@
         "比赛权重": "0",
         "赛事主办": "UWSP Pointers (https://ctftime.org/team/231536)",
         "比赛ID": "963",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Securinets CTF Quals 2026",
+        "比赛时间": "2026-10-03 17:00:00 - 2026-10-05 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3364.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://quals.securinets.tn/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "Securinets (https://ctftime.org/team/5084)",
+        "比赛ID": "105",
         "比赛状态": "oncoming"
     },
     {

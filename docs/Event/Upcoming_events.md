@@ -40,6 +40,15 @@ comments: true
     **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
     **添加日历** : https://ctftime.org/event/3112.ics  
     
+??? Quote "[HACKSIUM BUSAN 2026 Quals](http://hacksiumbusan.com/)"  
+    [![](){ width="200" align=left }](http://hacksiumbusan.com/)  
+    **比赛名称** : [HACKSIUM BUSAN 2026 Quals](http://hacksiumbusan.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-07-18 08:00:00 - 2026-07-19 07:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : HACKSIUM BUSAN (https://ctftime.org/team/432880)  
+    **添加日历** : https://ctftime.org/event/3287.ics  
+    
 ??? Quote "[ATHENA CTF](https://ctf.athena-ctf.com/)"  
     [![](){ width="200" align=left }](https://ctf.athena-ctf.com/)  
     **比赛名称** : [ATHENA CTF](https://ctf.athena-ctf.com/)  
@@ -337,6 +346,15 @@ comments: true
     **赛事主办** : VolgaCTF.org (https://ctftime.org/team/27094)  
     **添加日历** : https://ctftime.org/event/3265.ics  
     
+??? Quote "[NullOrigin CTF Qualifiers](https://nullorigin.cyberhx.com/)"  
+    [![](https://ctftime.org/media/events/722217335_18086037686297664_317017320748858629_n.jpg){ width="200" align=left }](https://nullorigin.cyberhx.com/)  
+    **比赛名称** : [NullOrigin CTF Qualifiers](https://nullorigin.cyberhx.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-09-18 12:30:00 - 2026-09-19 00:30:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : CyberXoX (https://ctftime.org/team/374041)  
+    **添加日历** : https://ctftime.org/event/3346.ics  
+    
 ??? Quote "[CSAW CTF Qualification Round 2026](https://ctf.csaw.io/)"  
     [![](https://ctftime.org/media/events/csawlogo_1.png){ width="200" align=left }](https://ctf.csaw.io/)  
     **比赛名称** : [CSAW CTF Qualification Round 2026](https://ctf.csaw.io/)  
@@ -381,6 +399,15 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : UWSP Pointers (https://ctftime.org/team/231536)  
     **添加日历** : https://ctftime.org/event/3020.ics  
+    
+??? Quote "[Securinets CTF Quals 2026](https://quals.securinets.tn/)"  
+    [![](){ width="200" align=left }](https://quals.securinets.tn/)  
+    **比赛名称** : [Securinets CTF Quals 2026](https://quals.securinets.tn/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-10-03 17:00:00 - 2026-10-05 05:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : Securinets (https://ctftime.org/team/5084)  
+    **添加日历** : https://ctftime.org/event/3364.ics  
     
 ??? Quote "[CDCTF 2026](https://uacrimsondefense.github.io/cdctf.html)"  
     [![](https://ctftime.org/media/events/cdctf_logo_square_1.png){ width="200" align=left }](https://uacrimsondefense.github.io/cdctf.html)  
