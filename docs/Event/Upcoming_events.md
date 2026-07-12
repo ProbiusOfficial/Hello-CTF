@@ -40,15 +40,6 @@ comments: true
     **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
     **添加日历** : https://ctftime.org/event/3112.ics  
     
-??? Quote "[DAMCTF 2026](https://damctf.xyz/)"  
-    [![](https://ctftime.org/media/events/damctf.png){ width="200" align=left }](https://damctf.xyz/)  
-    **比赛名称** : [DAMCTF 2026](https://damctf.xyz/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-07-18 08:00:00 - 2026-07-20 08:00:00 UTC+8  
-    **比赛权重** : 33.42  
-    **赛事主办** : OSUSEC (https://ctftime.org/team/12858)  
-    **添加日历** : https://ctftime.org/event/3124.ics  
-    
 ??? Quote "[ATHENA CTF](https://ctf.athena-ctf.com/)"  
     [![](){ width="200" align=left }](https://ctf.athena-ctf.com/)  
     **比赛名称** : [ATHENA CTF](https://ctf.athena-ctf.com/)  

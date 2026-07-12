@@ -36,18 +36,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "DAMCTF 2026",
-        "比赛时间": "2026-07-18 08:00:00 - 2026-07-20 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3124.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://damctf.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/damctf.png",
-        "比赛权重": "33.42",
-        "赛事主办": "OSUSEC (https://ctftime.org/team/12858)",
-        "比赛ID": "423",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "ATHENA CTF",
         "比赛时间": "2026-07-18 13:30:00 - 2026-07-19 13:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3366.ics",
