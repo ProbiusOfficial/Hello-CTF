@@ -684,6 +684,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Clash of Cybers I",
+        "比赛时间": "2026-07-13 16:00:00 - 2026-07-14 16:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3368.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://1940-team.com/games/2",
+        "比赛标志": "https://ctftime.org/media/events/CLASH_1.png",
+        "比赛权重": "0",
+        "赛事主办": "1940 (https://ctftime.org/team/307762)",
+        "比赛ID": "1650",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "BroncoCTF 2026",
         "比赛时间": "2026-07-12 00:00:00 - 2026-07-13 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3144.ics",
