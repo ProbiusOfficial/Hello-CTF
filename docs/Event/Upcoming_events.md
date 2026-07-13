@@ -40,15 +40,6 @@ comments: true
     **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
     **添加日历** : https://ctftime.org/event/3112.ics  
     
-??? Quote "[HACKSIUM BUSAN 2026 Quals](http://hacksiumbusan.com/)"  
-    [![](){ width="200" align=left }](http://hacksiumbusan.com/)  
-    **比赛名称** : [HACKSIUM BUSAN 2026 Quals](http://hacksiumbusan.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-07-18 08:00:00 - 2026-07-19 07:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : HACKSIUM BUSAN (https://ctftime.org/team/432880)  
-    **添加日历** : https://ctftime.org/event/3287.ics  
-    
 ??? Quote "[ATHENA CTF](https://ctf.athena-ctf.com/)"  
     [![](){ width="200" align=left }](https://ctf.athena-ctf.com/)  
     **比赛名称** : [ATHENA CTF](https://ctf.athena-ctf.com/)  
