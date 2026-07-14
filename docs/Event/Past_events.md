@@ -8,6 +8,15 @@ comments: true
 
 
 ## 国际赛事
+??? Quote "[Clash of Cybers I](https://1940-team.com/games/2)"  
+    [![](https://ctftime.org/media/events/CLASH_1.png){ width="200" align=left }](https://1940-team.com/games/2)  
+    **比赛名称** : [Clash of Cybers I](https://1940-team.com/games/2)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-07-13 16:00:00 - 2026-07-14 16:00:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : 1940 (https://ctftime.org/team/307762)  
+    **添加日历** : https://ctftime.org/event/3368.ics  
+    
 ??? Quote "[BroncoCTF 2026](https://broncoctf.ctfd.io/)"  
     [![](https://ctftime.org/media/events/horse.png){ width="200" align=left }](https://broncoctf.ctfd.io/)  
     **比赛名称** : [BroncoCTF 2026](https://broncoctf.ctfd.io/)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : X1cT34m (https://ctftime.org/team/14482)  
     **添加日历** : https://ctftime.org/event/3206.ics  
-    
-??? Quote "[CITEFLAG QUALS 2026](https://ctf.citeflag.online/)"  
-    [![](https://ctftime.org/media/events/logo_white_on_black_rounded.png){ width="200" align=left }](https://ctf.citeflag.online/)  
-    **比赛名称** : [CITEFLAG QUALS 2026](https://ctf.citeflag.online/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-04 06:00:00 - 2026-04-05 06:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : CITEFLAG (https://ctftime.org/team/425411)  
-    **添加日历** : https://ctftime.org/event/3175.ics  
     
