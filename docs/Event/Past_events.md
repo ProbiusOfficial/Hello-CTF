@@ -40,7 +40,7 @@ comments: true
     **比赛名称** : [LYKNCTF](https://ctf.itzdenkii.me/)  
     **比赛形式** : Jeopardy  
     **比赛时间** : 2026-07-06 08:00:00 - 2026-07-08 08:00:00 UTC+8  
-    **比赛权重** : 0  
+    **比赛权重** : 24.42  
     **赛事主办** : LYKNCTF (https://ctftime.org/team/365692)  
     **添加日历** : https://ctftime.org/event/3280.ics  
     
