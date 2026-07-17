@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "DownUnderCTF 2026 - CANCELLED",
-        "比赛时间": "2026-07-18 03:30:00 - 2026-07-20 03:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3112.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://duc.tf/",
-        "比赛标志": "",
-        "比赛权重": "94.99",
-        "赛事主办": "DownUnderCTF (https://ctftime.org/team/126400)",
-        "比赛ID": "481",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "ATHENA CTF",
         "比赛时间": "2026-07-18 13:30:00 - 2026-07-19 13:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3366.ics",
@@ -681,6 +669,18 @@
         "比赛权重": "0",
         "赛事主办": "OmniCYBR (https://ctftime.org/team/383015)",
         "比赛ID": "1412",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "DownUnderCTF 2026 - CANCELLED",
+        "比赛时间": "2026-07-18 03:30:00 - 2026-07-20 03:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3112.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://duc.tf/",
+        "比赛标志": "",
+        "比赛权重": "94.99",
+        "赛事主办": "DownUnderCTF (https://ctftime.org/team/126400)",
+        "比赛ID": "481",
         "比赛状态": "nowrunning"
     },
     {
