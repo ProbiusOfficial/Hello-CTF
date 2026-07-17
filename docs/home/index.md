@@ -52,21 +52,8 @@ hide:
     ---
     <!-- 主页赛事展示_开始 -->
     === "国内比赛"
-        ??? Quote "[NepCTF 2026](https://www.nepctf.com/)"  
-            **比赛名称** : [NepCTF 2026](https://www.nepctf.com/)  
-            **比赛时间** : 2026年07月17日 19:00 - 2026年07月19日 19:00  
-            **比赛详细** : 赛制/类型: 线上Jeopardy解题赛  
-                
+    
     === "国外比赛"
-        ??? Quote "[EYCC CTF 2026](https://eycc.stemeghackclub.org/)"  
-            [![](https://ctftime.org/media/events/eycc.png){ width="200" align=left }](https://eycc.stemeghackclub.org/)  
-            **比赛名称** : [EYCC CTF 2026](https://eycc.stemeghackclub.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-07-17 19:00:00 - 2026-07-19 19:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : Mont5ab El2hwa (https://ctftime.org/team/402823)  
-            **添加日历** : https://ctftime.org/event/3353.ics  
-            
         ??? Quote "[OmniCTF 2026 Quals](https://omnictf.com/)"  
             [![](https://ctftime.org/media/events/logo1024x1024_1.png){ width="200" align=left }](https://omnictf.com/)  
             **比赛名称** : [OmniCTF 2026 Quals](https://omnictf.com/)  
@@ -93,6 +80,15 @@ hide:
             **比赛权重** : 0.00  
             **赛事主办** : Athena-CTF (https://ctftime.org/team/438608)  
             **添加日历** : https://ctftime.org/event/3366.ics  
+            
+        ??? Quote "[AxiomCTF 2026 Finals](https://ctf.4x10m.ru/)"  
+            [![](https://ctftime.org/media/events/1231_1.png){ width="200" align=left }](https://ctf.4x10m.ru/)  
+            **比赛名称** : [AxiomCTF 2026 Finals](https://ctf.4x10m.ru/)  
+            **比赛形式** : Attack-Defense  
+            **比赛时间** : 2026-07-18 15:00:00 - 2026-07-18 23:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : 4x10m (https://ctftime.org/team/418607)  
+            **添加日历** : https://ctftime.org/event/3357.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
