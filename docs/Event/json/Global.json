@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "OmniCTF 2026 Quals",
-        "比赛时间": "2026-07-17 23:00:00 - 2026-07-19 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3104.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://omnictf.com/",
-        "比赛标志": "https://ctftime.org/media/events/logo1024x1024_1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "OmniCYBR (https://ctftime.org/team/383015)",
-        "比赛ID": "1412",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "DownUnderCTF 2026 - CANCELLED",
         "比赛时间": "2026-07-18 03:30:00 - 2026-07-20 03:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3112.ics",
@@ -681,6 +669,18 @@
         "比赛权重": "0",
         "赛事主办": "Mont5ab El2hwa (https://ctftime.org/team/402823)",
         "比赛ID": "1637",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "OmniCTF 2026 Quals",
+        "比赛时间": "2026-07-17 23:00:00 - 2026-07-19 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3104.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://omnictf.com/",
+        "比赛标志": "https://ctftime.org/media/events/logo1024x1024_1.png",
+        "比赛权重": "0",
+        "赛事主办": "OmniCYBR (https://ctftime.org/team/383015)",
+        "比赛ID": "1412",
         "比赛状态": "nowrunning"
     },
     {
