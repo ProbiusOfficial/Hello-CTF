@@ -8,6 +8,15 @@ comments: true
 
 
 ## 国际赛事
+??? Quote "[AxiomCTF 2026 Finals](https://ctf.4x10m.ru/)"  
+    [![](https://ctftime.org/media/events/1231_1.png){ width="200" align=left }](https://ctf.4x10m.ru/)  
+    **比赛名称** : [AxiomCTF 2026 Finals](https://ctf.4x10m.ru/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2026-07-18 15:00:00 - 2026-07-18 23:00:00 UTC+8  
+    **比赛权重** : 0.00  
+    **赛事主办** : 4x10m (https://ctftime.org/team/418607)  
+    **添加日历** : https://ctftime.org/event/3357.ics  
+    
 ??? Quote "[Clash of Cybers I](https://1940-team.com/games/2)"  
     [![](https://ctftime.org/media/events/CLASH_1.png){ width="200" align=left }](https://1940-team.com/games/2)  
     **比赛名称** : [Clash of Cybers I](https://1940-team.com/games/2)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 23.00  
     **赛事主办** : IN-0x0 (https://ctftime.org/team/423353)  
     **添加日历** : https://ctftime.org/event/3226.ics  
-    
-??? Quote "[NCTF 2026](https://nctf.x1ct34m.com/games/2)"  
-    [![](https://ctftime.org/media/events/X1cT34m-transparent.png){ width="200" align=left }](https://nctf.x1ct34m.com/games/2)  
-    **比赛名称** : [NCTF 2026](https://nctf.x1ct34m.com/games/2)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-04 09:00:00 - 2026-04-05 21:00:00 UTC+8  
-    **比赛权重** : 25.00  
-    **赛事主办** : X1cT34m (https://ctftime.org/team/14482)  
-    **添加日历** : https://ctftime.org/event/3206.ics  
     
