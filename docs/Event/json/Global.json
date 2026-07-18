@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "HoneyBadger CTF AvitoTech",
-        "比赛时间": "2026-07-18 17:00:00 - 2026-07-19 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3362.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://avitoctf.ru/",
-        "比赛标志": "https://ctftime.org/media/events/honeybadger.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "SPbCTF (https://ctftime.org/team/30003)",
-        "比赛ID": "1644",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "ENOWARS 10",
         "比赛时间": "2026-07-18 20:00:00 - 2026-07-19 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3324.ics",
@@ -693,6 +681,18 @@
         "比赛权重": "0.00",
         "赛事主办": "4x10m (https://ctftime.org/team/418607)",
         "比赛ID": "1510",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "HoneyBadger CTF AvitoTech",
+        "比赛时间": "2026-07-18 17:00:00 - 2026-07-19 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3362.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://avitoctf.ru/",
+        "比赛标志": "https://ctftime.org/media/events/honeybadger.jpg",
+        "比赛权重": "0",
+        "赛事主办": "SPbCTF (https://ctftime.org/team/30003)",
+        "比赛ID": "1644",
         "比赛状态": "nowrunning"
     },
     {
