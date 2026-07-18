@@ -67,3 +67,12 @@ comments: true
     **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
     **添加日历** : https://ctftime.org/event/3362.ics  
     
+??? Quote "[ENOWARS 10](https://10.enowars.com/)"  
+    [![](){ width="200" align=left }](https://10.enowars.com/)  
+    **比赛名称** : [ENOWARS 10](https://10.enowars.com/)  
+    **比赛形式** : Attack-Defense  
+    **比赛时间** : 2026-07-18 20:00:00 - 2026-07-19 05:00:00 UTC+8  
+    **比赛权重** : 83.50  
+    **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
+    **添加日历** : https://ctftime.org/event/3324.ics  
+    

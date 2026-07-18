@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[ENOWARS 10](https://10.enowars.com/)"  
-            [![](){ width="200" align=left }](https://10.enowars.com/)  
-            **比赛名称** : [ENOWARS 10](https://10.enowars.com/)  
-            **比赛形式** : Attack-Defense  
-            **比赛时间** : 2026-07-18 20:00:00 - 2026-07-19 05:00:00 UTC+8  
-            **比赛权重** : 83.50  
-            **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
-            **添加日历** : https://ctftime.org/event/3324.ics  
-            
         ??? Quote "[BDSec CTF 2026](https://2026.bdsec-ctf.com/)"  
             [![](https://ctftime.org/media/events/bdsec-ctf-logo_2.png){ width="200" align=left }](https://2026.bdsec-ctf.com/)  
             **比赛名称** : [BDSec CTF 2026](https://2026.bdsec-ctf.com/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 37.00  
             **赛事主办** : jailctf (https://ctftime.org/team/311088)  
             **添加日历** : https://ctftime.org/event/3286.ics  
+            
+        ??? Quote "[DIVER OSINT CTF 2026](https://ctfd.diverctf.org/)"  
+            [![](https://ctftime.org/media/events/circle-white-simple-01.png){ width="200" align=left }](https://ctfd.diverctf.org/)  
+            **比赛名称** : [DIVER OSINT CTF 2026](https://ctfd.diverctf.org/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-07-25 11:10:00 - 2026-07-26 11:10:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : diver_osint (https://ctftime.org/team/299569)  
+            **添加日历** : https://ctftime.org/event/3268.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
