@@ -1005,6 +1005,10 @@ hide:
                 **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
                 **添加日历** : https://ctftime.org/event/3362.ics  
                 
+    === "*已经结束*"
+        === "国内赛事"
+    
+        === "国外赛事"
             ??? Quote "[ENOWARS 10](https://10.enowars.com/)"  
                 [![](){ width="200" align=left }](https://10.enowars.com/)  
                 **比赛名称** : [ENOWARS 10](https://10.enowars.com/)  
@@ -1014,10 +1018,6 @@ hide:
                 **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
                 **添加日历** : https://ctftime.org/event/3324.ics  
                 
-    === "*已经结束*"
-        === "国内赛事"
-    
-        === "国外赛事"
             ??? Quote "[AxiomCTF 2026 Finals](https://ctf.4x10m.ru/)"  
                 [![](https://ctftime.org/media/events/1231_1.png){ width="200" align=left }](https://ctf.4x10m.ru/)  
                 **比赛名称** : [AxiomCTF 2026 Finals](https://ctf.4x10m.ru/)  
@@ -1908,15 +1908,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Cyber Hive (https://ctftime.org/team/428945)  
                 **添加日历** : https://ctftime.org/event/3212.ics  
-                
-            ??? Quote "[THE UNI6CTF 1.0](https://uni6ctf.online/)"  
-                [![](https://ctftime.org/media/events/uni6ctf_1.0_.jpeg){ width="200" align=left }](https://uni6ctf.online/)  
-                **比赛名称** : [THE UNI6CTF 1.0](https://uni6ctf.online/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-04-04 11:30:00 - 2026-04-04 17:30:00 UTC+8  
-                **比赛权重** : 23.00  
-                **赛事主办** : IN-0x0 (https://ctftime.org/team/423353)  
-                **添加日历** : https://ctftime.org/event/3226.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
