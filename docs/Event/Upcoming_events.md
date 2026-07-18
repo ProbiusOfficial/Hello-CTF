@@ -9,15 +9,6 @@ comments: true
 
 ## 国际赛事
 
-??? Quote "[HoneyBadger CTF AvitoTech](https://avitoctf.ru/)"  
-    [![](https://ctftime.org/media/events/honeybadger.jpg){ width="200" align=left }](https://avitoctf.ru/)  
-    **比赛名称** : [HoneyBadger CTF AvitoTech](https://avitoctf.ru/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-07-18 17:00:00 - 2026-07-19 23:00:00 UTC+8  
-    **比赛权重** : 0.00  
-    **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
-    **添加日历** : https://ctftime.org/event/3362.ics  
-    
 ??? Quote "[ENOWARS 10](https://10.enowars.com/)"  
     [![](){ width="200" align=left }](https://10.enowars.com/)  
     **比赛名称** : [ENOWARS 10](https://10.enowars.com/)  
