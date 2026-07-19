@@ -48,6 +48,15 @@ comments: true
     **赛事主办** : Athena-CTF (https://ctftime.org/team/438608)  
     **添加日历** : https://ctftime.org/event/3366.ics  
     
+??? Quote "[DownUnderCTF 2026 - CANCELLED](https://duc.tf/)"  
+    [![](){ width="200" align=left }](https://duc.tf/)  
+    **比赛名称** : [DownUnderCTF 2026 - CANCELLED](https://duc.tf/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-07-18 03:30:00 - 2026-07-20 03:30:00 UTC+8  
+    **比赛权重** : 94.99  
+    **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
+    **添加日历** : https://ctftime.org/event/3112.ics  
+    
 ??? Quote "[OmniCTF 2026 Quals](https://omnictf.com/)"  
     [![](https://ctftime.org/media/events/logo1024x1024_1.png){ width="200" align=left }](https://omnictf.com/)  
     **比赛名称** : [OmniCTF 2026 Quals](https://omnictf.com/)  
@@ -902,13 +911,4 @@ comments: true
     **比赛权重** : 0  
     **赛事主办** : Pàlcam ASIX (https://ctftime.org/team/428952)  
     **添加日历** : https://ctftime.org/event/3211.ics  
-    
-??? Quote "[Dreamhack Invitational 2026](https://dreamhack.io/)"  
-    [![](){ width="200" align=left }](https://dreamhack.io/)  
-    **比赛名称** : [Dreamhack Invitational 2026](https://dreamhack.io/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-07 08:00:00 - 2026-04-07 23:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
-    **添加日历** : https://ctftime.org/event/3026.ics  
     
