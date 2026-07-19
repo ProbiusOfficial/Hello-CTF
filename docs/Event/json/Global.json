@@ -612,18 +612,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "EYCC CTF 2026",
-        "比赛时间": "2026-07-17 19:00:00 - 2026-07-19 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3353.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://eycc.stemeghackclub.org/",
-        "比赛标志": "https://ctftime.org/media/events/eycc.png",
-        "比赛权重": "0",
-        "赛事主办": "Mont5ab El2hwa (https://ctftime.org/team/402823)",
-        "比赛ID": "1637",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "OmniCTF 2026 Quals",
         "比赛时间": "2026-07-17 23:00:00 - 2026-07-19 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3104.ics",
@@ -693,6 +681,18 @@
         "比赛权重": "0",
         "赛事主办": "Athena-CTF (https://ctftime.org/team/438608)",
         "比赛ID": "1626",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "EYCC CTF 2026",
+        "比赛时间": "2026-07-17 19:00:00 - 2026-07-19 19:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3353.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://eycc.stemeghackclub.org/",
+        "比赛标志": "https://ctftime.org/media/events/eycc.png",
+        "比赛权重": "0",
+        "赛事主办": "Mont5ab El2hwa (https://ctftime.org/team/402823)",
+        "比赛ID": "1637",
         "比赛状态": "past"
     },
     {
@@ -1845,18 +1845,6 @@
         "比赛权重": "0.00",
         "赛事主办": "L0stAx3s (https://ctftime.org/team/354995)",
         "比赛ID": "1528",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SillyCTF 2",
-        "比赛时间": "2026-04-04 20:00:00 - 2026-04-05 12:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3042.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://sillyctf.psuccso.org/",
-        "比赛标志": "https://ctftime.org/media/events/SillyCTF2logo.png",
-        "比赛权重": "25.00",
-        "赛事主办": "Penn State CCSO (https://ctftime.org/team/367931)",
-        "比赛ID": "1233",
         "比赛状态": "past"
     }
 ]
