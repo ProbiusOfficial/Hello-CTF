@@ -956,15 +956,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[OmniCTF 2026 Quals](https://omnictf.com/)"  
-                [![](https://ctftime.org/media/events/logo1024x1024_1.png){ width="200" align=left }](https://omnictf.com/)  
-                **比赛名称** : [OmniCTF 2026 Quals](https://omnictf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-07-17 23:00:00 - 2026-07-19 23:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : OmniCYBR (https://ctftime.org/team/383015)  
-                **添加日历** : https://ctftime.org/event/3104.ics  
-                
             ??? Quote "[DownUnderCTF 2026 - CANCELLED](https://duc.tf/)"  
                 [![](){ width="200" align=left }](https://duc.tf/)  
                 **比赛名称** : [DownUnderCTF 2026 - CANCELLED](https://duc.tf/)  
@@ -973,15 +964,6 @@ hide:
                 **比赛权重** : 94.99  
                 **赛事主办** : DownUnderCTF (https://ctftime.org/team/126400)  
                 **添加日历** : https://ctftime.org/event/3112.ics  
-                
-            ??? Quote "[HoneyBadger CTF AvitoTech](https://avitoctf.ru/)"  
-                [![](https://ctftime.org/media/events/honeybadger.jpg){ width="200" align=left }](https://avitoctf.ru/)  
-                **比赛名称** : [HoneyBadger CTF AvitoTech](https://avitoctf.ru/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-07-18 17:00:00 - 2026-07-19 23:00:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
-                **添加日历** : https://ctftime.org/event/3362.ics  
                 
     === "*已经结束*"
         === "国内赛事"
@@ -1000,6 +982,15 @@ hide:
                 **赛事主办** : ENOFLAG (https://ctftime.org/team/1438)  
                 **添加日历** : https://ctftime.org/event/3324.ics  
                 
+            ??? Quote "[HoneyBadger CTF AvitoTech](https://avitoctf.ru/)"  
+                [![](https://ctftime.org/media/events/honeybadger.jpg){ width="200" align=left }](https://avitoctf.ru/)  
+                **比赛名称** : [HoneyBadger CTF AvitoTech](https://avitoctf.ru/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-07-18 17:00:00 - 2026-07-19 23:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
+                **添加日历** : https://ctftime.org/event/3362.ics  
+                
             ??? Quote "[AxiomCTF 2026 Finals](https://ctf.4x10m.ru/)"  
                 [![](https://ctftime.org/media/events/1231_1.png){ width="200" align=left }](https://ctf.4x10m.ru/)  
                 **比赛名称** : [AxiomCTF 2026 Finals](https://ctf.4x10m.ru/)  
@@ -1017,6 +1008,15 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Athena-CTF (https://ctftime.org/team/438608)  
                 **添加日历** : https://ctftime.org/event/3366.ics  
+                
+            ??? Quote "[OmniCTF 2026 Quals](https://omnictf.com/)"  
+                [![](https://ctftime.org/media/events/logo1024x1024_1.png){ width="200" align=left }](https://omnictf.com/)  
+                **比赛名称** : [OmniCTF 2026 Quals](https://omnictf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-07-17 23:00:00 - 2026-07-19 23:00:00 UTC+8  
+                **比赛权重** : 0  
+                **赛事主办** : OmniCYBR (https://ctftime.org/team/383015)  
+                **添加日历** : https://ctftime.org/event/3104.ics  
                 
             ??? Quote "[EYCC CTF 2026](https://eycc.stemeghackclub.org/)"  
                 [![](https://ctftime.org/media/events/eycc.png){ width="200" align=left }](https://eycc.stemeghackclub.org/)  
@@ -1872,24 +1872,6 @@ hide:
                 **比赛权重** : 0  
                 **赛事主办** : Dreamhack (https://ctftime.org/team/367894)  
                 **添加日历** : https://ctftime.org/event/3026.ics  
-                
-            ??? Quote "[Triada CTF '26](http://ctf26.triada.in/)"  
-                [![](https://ctftime.org/media/events/ctftime_logo.png){ width="200" align=left }](http://ctf26.triada.in/)  
-                **比赛名称** : [Triada CTF '26](http://ctf26.triada.in/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-04-06 12:30:00 - 2026-04-07 12:30:00 UTC+8  
-                **比赛权重** : 0  
-                **赛事主办** : Triada (https://ctftime.org/team/303057)  
-                **添加日历** : https://ctftime.org/event/3187.ics  
-                
-            ??? Quote "[MIPT CTF Finals 2026](https://miptctf.ru/)"  
-                [![](https://ctftime.org/media/events/30f863f46b724ef091091d6ddfbf1c07.jpg){ width="200" align=left }](https://miptctf.ru/)  
-                **比赛名称** : [MIPT CTF Finals 2026](https://miptctf.ru/)  
-                **比赛形式** : Attack-Defense  
-                **比赛时间** : 2026-04-05 15:00:00 - 2026-04-05 22:00:00 UTC+8  
-                **比赛权重** : 0.00  
-                **赛事主办** : L0stAx3s (https://ctftime.org/team/354995)  
-                **添加日历** : https://ctftime.org/event/3257.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
