@@ -26,6 +26,15 @@ comments: true
     **赛事主办** : 4x10m (https://ctftime.org/team/418607)  
     **添加日历** : https://ctftime.org/event/3357.ics  
     
+??? Quote "[ATHENA CTF](https://ctf.athena-ctf.com/)"  
+    [![](){ width="200" align=left }](https://ctf.athena-ctf.com/)  
+    **比赛名称** : [ATHENA CTF](https://ctf.athena-ctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-07-18 13:30:00 - 2026-07-19 13:30:00 UTC+8  
+    **比赛权重** : 0  
+    **赛事主办** : Athena-CTF (https://ctftime.org/team/438608)  
+    **添加日历** : https://ctftime.org/event/3366.ics  
+    
 ??? Quote "[Clash of Cybers I](https://1940-team.com/games/2)"  
     [![](https://ctftime.org/media/events/CLASH_1.png){ width="200" align=left }](https://1940-team.com/games/2)  
     **比赛名称** : [Clash of Cybers I](https://1940-team.com/games/2)  
@@ -898,13 +907,4 @@ comments: true
     **比赛权重** : 25.00  
     **赛事主办** : Penn State CCSO (https://ctftime.org/team/367931)  
     **添加日历** : https://ctftime.org/event/3042.ics  
-    
-??? Quote "[CRACK-IN 2.0](https://www.crackin.tech/)"  
-    [![](https://ctftime.org/media/events/logoo_1.png){ width="200" align=left }](https://www.crackin.tech/)  
-    **比赛名称** : [CRACK-IN 2.0](https://www.crackin.tech/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-04 12:30:00 - 2026-04-04 18:30:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Cyber Hive (https://ctftime.org/team/428945)  
-    **添加日历** : https://ctftime.org/event/3212.ics  
     
