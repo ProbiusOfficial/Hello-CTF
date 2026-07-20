@@ -30,9 +30,9 @@ comments: true
     **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
     **添加日历** : https://ctftime.org/event/3362.ics  
     
-??? Quote "[AxiomCTF 2026 Finals](https://ctf.4x10m.ru/)"  
-    [![](https://ctftime.org/media/events/1231_1.png){ width="200" align=left }](https://ctf.4x10m.ru/)  
-    **比赛名称** : [AxiomCTF 2026 Finals](https://ctf.4x10m.ru/)  
+??? Quote "[AxiomCTF 2026 Finals](https://axiomctf.ru/)"  
+    [![](https://ctftime.org/media/events/1231_1.png){ width="200" align=left }](https://axiomctf.ru/)  
+    **比赛名称** : [AxiomCTF 2026 Finals](https://axiomctf.ru/)  
     **比赛形式** : Attack-Defense  
     **比赛时间** : 2026-07-18 15:00:00 - 2026-07-18 23:00:00 UTC+8  
     **比赛权重** : 0.00  

@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "BDSec CTF 2026",
-        "比赛时间": "2026-07-20 23:00:00 - 2026-07-21 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3349.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2026.bdsec-ctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/bdsec-ctf-logo_2.png",
-        "比赛权重": "15.62",
-        "赛事主办": "Knight Squad (https://ctftime.org/team/141739)",
-        "比赛ID": "811",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Codegate CTF 2026 Finals",
         "比赛时间": "2026-07-23 09:00:00 - 2026-07-24 09:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3292.ics",
@@ -612,6 +600,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "BDSec CTF 2026",
+        "比赛时间": "2026-07-20 23:00:00 - 2026-07-21 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3349.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2026.bdsec-ctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/bdsec-ctf-logo_2.png",
+        "比赛权重": "15.62",
+        "赛事主办": "Knight Squad (https://ctftime.org/team/141739)",
+        "比赛ID": "811",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "ENOWARS 10",
         "比赛时间": "2026-07-18 20:00:00 - 2026-07-19 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3324.ics",
@@ -640,7 +640,7 @@
         "比赛时间": "2026-07-18 15:00:00 - 2026-07-18 23:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3357.ics",
         "比赛形式": "Attack-Defense",
-        "比赛链接": "https://ctf.4x10m.ru/",
+        "比赛链接": "https://axiomctf.ru/",
         "比赛标志": "https://ctftime.org/media/events/1231_1.png",
         "比赛权重": "0.00",
         "赛事主办": "4x10m (https://ctftime.org/team/418607)",

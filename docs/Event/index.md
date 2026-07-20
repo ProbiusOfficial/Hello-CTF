@@ -493,15 +493,6 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-            ??? Quote "[BDSec CTF 2026](https://2026.bdsec-ctf.com/)"  
-                [![](https://ctftime.org/media/events/bdsec-ctf-logo_2.png){ width="200" align=left }](https://2026.bdsec-ctf.com/)  
-                **比赛名称** : [BDSec CTF 2026](https://2026.bdsec-ctf.com/)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-07-20 23:00:00 - 2026-07-21 23:00:00 UTC+8  
-                **比赛权重** : 15.62  
-                **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
-                **添加日历** : https://ctftime.org/event/3349.ics  
-                
             ??? Quote "[Codegate CTF 2026 Finals](https://codegate.org/)"  
                 [![](){ width="200" align=left }](https://codegate.org/)  
                 **比赛名称** : [Codegate CTF 2026 Finals](https://codegate.org/)  
@@ -956,7 +947,15 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
-    
+            ??? Quote "[BDSec CTF 2026](https://2026.bdsec-ctf.com/)"  
+                [![](https://ctftime.org/media/events/bdsec-ctf-logo_2.png){ width="200" align=left }](https://2026.bdsec-ctf.com/)  
+                **比赛名称** : [BDSec CTF 2026](https://2026.bdsec-ctf.com/)  
+                **比赛形式** : Jeopardy  
+                **比赛时间** : 2026-07-20 23:00:00 - 2026-07-21 23:00:00 UTC+8  
+                **比赛权重** : 15.62  
+                **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
+                **添加日历** : https://ctftime.org/event/3349.ics  
+                
     === "*已经结束*"
         === "国内赛事"
             ??? Quote "[NepCTF 2026](https://www.nepctf.com/)"  
@@ -983,9 +982,9 @@ hide:
                 **赛事主办** : SPbCTF (https://ctftime.org/team/30003)  
                 **添加日历** : https://ctftime.org/event/3362.ics  
                 
-            ??? Quote "[AxiomCTF 2026 Finals](https://ctf.4x10m.ru/)"  
-                [![](https://ctftime.org/media/events/1231_1.png){ width="200" align=left }](https://ctf.4x10m.ru/)  
-                **比赛名称** : [AxiomCTF 2026 Finals](https://ctf.4x10m.ru/)  
+            ??? Quote "[AxiomCTF 2026 Finals](https://axiomctf.ru/)"  
+                [![](https://ctftime.org/media/events/1231_1.png){ width="200" align=left }](https://axiomctf.ru/)  
+                **比赛名称** : [AxiomCTF 2026 Finals](https://axiomctf.ru/)  
                 **比赛形式** : Attack-Defense  
                 **比赛时间** : 2026-07-18 15:00:00 - 2026-07-18 23:00:00 UTC+8  
                 **比赛权重** : 0.00  
