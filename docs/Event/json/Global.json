@@ -108,6 +108,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Lexington Informatics Tournament CTF 2026",
+        "比赛时间": "2026-08-01 23:00:00 - 2026-08-03 23:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3373.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://lit.lhsmathcs.org/",
+        "比赛标志": "https://ctftime.org/media/events/LIT-Logo.png",
+        "比赛权重": "84.79",
+        "赛事主办": "LIT CTF (https://ctftime.org/team/157660)",
+        "比赛ID": "646",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Kali Team - CTF 26",
         "比赛时间": "2026-08-05 15:00:00 - 2026-08-06 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3328.ics",
@@ -702,7 +714,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://1940-team.com/games/2",
         "比赛标志": "https://ctftime.org/media/events/CLASH_1.png",
-        "比赛权重": "0",
+        "比赛权重": "24.90",
         "赛事主办": "1940 (https://ctftime.org/team/307762)",
         "比赛ID": "1650",
         "比赛状态": "past"
