@@ -12,6 +12,15 @@ comments: true
     
 
 ## 国际赛事
+??? Quote "[BDSec CTF 2026](https://2026.bdsec-ctf.com/)"  
+    [![](https://ctftime.org/media/events/bdsec-ctf-logo_2.png){ width="200" align=left }](https://2026.bdsec-ctf.com/)  
+    **比赛名称** : [BDSec CTF 2026](https://2026.bdsec-ctf.com/)  
+    **比赛形式** : Jeopardy  
+    **比赛时间** : 2026-07-20 23:00:00 - 2026-07-21 23:00:00 UTC+8  
+    **比赛权重** : 15.62  
+    **赛事主办** : Knight Squad (https://ctftime.org/team/141739)  
+    **添加日历** : https://ctftime.org/event/3349.ics  
+    
 ??? Quote "[ENOWARS 10](https://10.enowars.com/)"  
     [![](){ width="200" align=left }](https://10.enowars.com/)  
     **比赛名称** : [ENOWARS 10](https://10.enowars.com/)  
@@ -902,13 +911,4 @@ comments: true
     **比赛权重** : 66.64  
     **赛事主办** : UMBC Cyber Dawgs (https://ctftime.org/team/18405)  
     **添加日历** : https://ctftime.org/event/3102.ics  
-    
-??? Quote "[Pàlcam Cybergames 2026](https://palcamcg2026.soterctf.com/)"  
-    [![](https://ctftime.org/media/events/palcamLogo.png){ width="200" align=left }](https://palcamcg2026.soterctf.com/)  
-    **比赛名称** : [Pàlcam Cybergames 2026](https://palcamcg2026.soterctf.com/)  
-    **比赛形式** : Jeopardy  
-    **比赛时间** : 2026-04-10 18:00:00 - 2026-04-12 07:00:00 UTC+8  
-    **比赛权重** : 0  
-    **赛事主办** : Pàlcam ASIX (https://ctftime.org/team/428952)  
-    **添加日历** : https://ctftime.org/event/3211.ics  
     
