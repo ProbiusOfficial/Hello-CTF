@@ -54,15 +54,6 @@ hide:
     === "国内比赛"
     
     === "国外比赛"
-        ??? Quote "[Codegate CTF 2026 Finals](https://codegate.org/)"  
-            [![](){ width="200" align=left }](https://codegate.org/)  
-            **比赛名称** : [Codegate CTF 2026 Finals](https://codegate.org/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-07-23 09:00:00 - 2026-07-24 09:00:00 UTC+8  
-            **比赛权重** : 0.00  
-            **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
-            **添加日历** : https://ctftime.org/event/3292.ics  
-            
         ??? Quote "[jailCTF 2026](https://ctf.pyjail.club/)"  
             [![](https://ctftime.org/media/events/jailctf_1.png){ width="200" align=left }](https://ctf.pyjail.club/)  
             **比赛名称** : [jailCTF 2026](https://ctf.pyjail.club/)  
@@ -89,6 +80,15 @@ hide:
             **比赛权重** : 69.22  
             **赛事主办** : D^3CTF Organizers (https://ctftime.org/team/91096)  
             **添加日历** : https://ctftime.org/event/3201.ics  
+            
+        ??? Quote "[BushBash CTF](http://bushbash.cssa.club/)"  
+            [![](https://ctftime.org/media/events/logo_133.png){ width="200" align=left }](http://bushbash.cssa.club/)  
+            **比赛名称** : [BushBash CTF](http://bushbash.cssa.club/)  
+            **比赛形式** : Jeopardy  
+            **比赛时间** : 2026-07-31 15:00:00 - 2026-08-02 15:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : CSSA (https://ctftime.org/team/133080)  
+            **添加日历** : https://ctftime.org/event/3372.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
