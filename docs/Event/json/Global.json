@@ -240,18 +240,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "HITCON CTF 2026 Quals",
-        "比赛时间": "2026-08-28 22:00:00 - 2026-08-30 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3340.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.hitcon.org/",
-        "比赛标志": "https://ctftime.org/media/events/63dc69a784f6f69a935d3cd01afa2fa7.jpg",
-        "比赛权重": "91.16",
-        "赛事主办": "HITCON (https://ctftime.org/team/8299)",
-        "比赛ID": "79",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "COMPFEST CTF 2026",
         "比赛时间": "2026-08-29 08:00:00 - 2026-08-30 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3290.ics",
@@ -525,18 +513,6 @@
         "比赛权重": "0.00",
         "赛事主办": "BlackAlps (https://ctftime.org/team/89021)",
         "比赛ID": "375",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "HITCON CTF 2026 Final",
-        "比赛时间": "2026-11-07 08:00:00 - 2026-11-08 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3341.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "http://ctf.hitcon.org/",
-        "比赛标志": "https://ctftime.org/media/events/63dc69a784f6f69a935d3cd01afa2fa7_1.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "HITCON (https://ctftime.org/team/8299)",
-        "比赛ID": "79",
         "比赛状态": "oncoming"
     },
     {
