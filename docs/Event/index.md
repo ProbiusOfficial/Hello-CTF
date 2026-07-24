@@ -929,6 +929,15 @@ hide:
         === "国内赛事"
     
         === "国外赛事"
+    
+    === "*已经结束*"
+        === "国内赛事"
+            ??? Quote "[NepCTF 2026](https://www.nepctf.com/)"  
+                **比赛名称** : [NepCTF 2026](https://www.nepctf.com/)  
+                **比赛时间** : 2026年07月17日 19:00 - 2026年07月19日 19:00  
+                **比赛详细** : 赛制/类型: 线上Jeopardy解题赛  
+                
+        === "国外赛事"
             ??? Quote "[Codegate CTF 2026 Finals](https://codegate.org/)"  
                 [![](){ width="200" align=left }](https://codegate.org/)  
                 **比赛名称** : [Codegate CTF 2026 Finals](https://codegate.org/)  
@@ -938,14 +947,6 @@ hide:
                 **赛事主办** : CODEGATE (https://ctftime.org/team/39352)  
                 **添加日历** : https://ctftime.org/event/3292.ics  
                 
-    === "*已经结束*"
-        === "国内赛事"
-            ??? Quote "[NepCTF 2026](https://www.nepctf.com/)"  
-                **比赛名称** : [NepCTF 2026](https://www.nepctf.com/)  
-                **比赛时间** : 2026年07月17日 19:00 - 2026年07月19日 19:00  
-                **比赛详细** : 赛制/类型: 线上Jeopardy解题赛  
-                
-        === "国外赛事"
             ??? Quote "[BDSec CTF 2026](https://2026.bdsec-ctf.com/)"  
                 [![](https://ctftime.org/media/events/bdsec-ctf-logo_2.png){ width="200" align=left }](https://2026.bdsec-ctf.com/)  
                 **比赛名称** : [BDSec CTF 2026](https://2026.bdsec-ctf.com/)  
@@ -1836,15 +1837,6 @@ hide:
                 **比赛权重** : 65.95  
                 **赛事主办** : SavedByTheShell (https://ctftime.org/team/78233)  
                 **添加日历** : https://ctftime.org/event/2937.ics  
-                
-            ??? Quote "[DawgCTF 2026](https://metactf.com/join/dawgctf26)"  
-                [![](https://ctftime.org/media/events/dawgsec_shield-ctftime_2_1.png){ width="200" align=left }](https://metactf.com/join/dawgctf26)  
-                **比赛名称** : [DawgCTF 2026](https://metactf.com/join/dawgctf26)  
-                **比赛形式** : Jeopardy  
-                **比赛时间** : 2026-04-11 00:00:00 - 2026-04-13 00:00:00 UTC+8  
-                **比赛权重** : 66.64  
-                **赛事主办** : UMBC Cyber Dawgs (https://ctftime.org/team/18405)  
-                **添加日历** : https://ctftime.org/event/3102.ics  
                 
     <!-- 赛事内容部分_结束 -->
 </div>
