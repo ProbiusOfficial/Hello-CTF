@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工具 / MCP - Hello CTF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTF/main/docs/assets/images/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#3b82f6', dark: '#2563eb' },
+                        accent: { DEFAULT: '#6366f1', dark: '#4f46e5' },
+                        base: { 50: '#f8fafc', 100: '#f1f5f9', 900: '#0f172a', 950: '#020617' }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar { width: 4px; height: 4px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 4px; }
+        .text-gradient {
+            background: linear-gradient(45deg, #3b82f6, #6366f1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .dark .text-gradient {
+            background: linear-gradient(45deg, #60a5fa, #818cf8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .grid-background {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: -20;
+            background-image:
+                linear-gradient(to right, rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        .dark .grid-background {
+            background-image:
+                linear-gradient(to right, rgba(99, 102, 241, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(99, 102, 241, 0.05) 1px, transparent 1px);
+        }
+
+        /* Sidebar */
+        #leftSidebar {
+            position: fixed; top: 0; left: 0; bottom: 0;
+            width: 14.5rem; z-index: 40;
+            display: flex; flex-direction: column;
+            border-right: 1px solid rgba(226, 232, 240, 0.85);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            overflow-y: auto;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .dark #leftSidebar {
+            border-color: rgba(51, 65, 85, 0.65);
+            background: rgba(15, 23, 42, 0.95);
+        }
+        #mainContent { margin-left: 14.5rem; min-height: 100vh; }
+        .sidebar-link {
+            display: flex; align-items: center; gap: 0.625rem;
+            padding: 0.5rem 0.75rem; border-radius: 0.625rem;
+            font-size: 0.8125rem; font-weight: 500;
+            color: rgba(15, 23, 42, 0.78);
+            transition: background 0.2s ease, color 0.2s ease;
+            text-decoration: none;
+        }
+        .sidebar-link:hover { background: rgba(59, 130, 246, 0.08); color: #3b82f6; }
+        .sidebar-link.active {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(99, 102, 241, 0.12));
+            color: #3b82f6; font-weight: 600;
+        }
+        .dark .sidebar-link { color: rgba(255, 255, 255, 0.78); }
+        .dark .sidebar-link:hover { background: rgba(99, 102, 241, 0.12); color: #818cf8; }
+        .dark .sidebar-link.active {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.18), rgba(99, 102, 241, 0.18));
+            color: #818cf8;
+        }
+        .sidebar-link svg { width: 1.125rem; height: 1.125rem; flex-shrink: 0; opacity: 0.65; }
+        .sidebar-link:hover svg, .sidebar-link.active svg { opacity: 1; }
+        #sidebarOverlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 35; }
+        #sidebarOverlay.open { display: block; }
+        #mobileMenuBtn { display: none; }
+        @media (max-width: 1023px) {
+            #leftSidebar { transform: translateX(-100%); }
+            #leftSidebar.open { transform: translateX(0); }
+            #mainContent { margin-left: 0; }
+            #mobileMenuBtn { display: flex; }
+        }
+
+        /* Card */
+        .card-surface {
+            border-radius: 1rem;
+            border: 1px solid rgba(226, 232, 240, 0.85);
+            background: rgba(255, 255, 255, 0.78);
+            box-shadow: 0 1px 2px rgba(59, 130, 246, 0.04), 0 8px 24px -4px rgba(15, 23, 42, 0.06);
+            transition: transform 0.22s ease, box-shadow 0.22s ease;
+        }
+        .card-surface:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 2px 6px rgba(59, 130, 246, 0.08), 0 16px 40px -6px rgba(15, 23, 42, 0.12);
+        }
+        .dark .card-surface {
+            border-color: rgba(51, 65, 85, 0.65);
+            background: rgba(15, 23, 42, 0.72);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.2), 0 12px 32px -8px rgba(0,0,0,0.35);
+        }
+        .dark .card-surface:hover {
+            box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15), 0 20px 48px -8px rgba(0,0,0,0.45);
+        }
+
+        /* Tag pills */
+        .tag-pill {
+            display: inline-flex; align-items: center;
+            padding: 0.2rem 0.55rem; border-radius: 9999px;
+            font-size: 0.6875rem; font-weight: 600;
+            white-space: nowrap;
+            transition: all 0.15s ease;
+        }
+
+        /* Tag filter buttons */
+        .tag-filter {
+            padding: 0.35rem 0.85rem; border-radius: 9999px;
+            font-size: 0.8rem; font-weight: 500;
+            cursor: pointer; white-space: nowrap;
+            border: 1.5px solid rgba(226, 232, 240, 0.85);
+            background: rgba(255, 255, 255, 0.7);
+            color: rgba(15, 23, 42, 0.7);
+            transition: all 0.2s ease;
+        }
+        .tag-filter:hover {
+            border-color: rgba(59, 130, 246, 0.4);
+            color: #3b82f6;
+            background: rgba(59, 130, 246, 0.05);
+        }
+        .tag-filter.active {
+            border-color: #3b82f6;
+            background: linear-gradient(135deg, #3b82f6, #6366f1);
+            color: #fff;
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+        }
+        .dark .tag-filter {
+            border-color: rgba(51, 65, 85, 0.65);
+            background: rgba(30, 41, 59, 0.6);
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .dark .tag-filter:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+            color: #818cf8;
+            background: rgba(99, 102, 241, 0.1);
+        }
+        .dark .tag-filter.active {
+            border-color: transparent;
+            background: linear-gradient(135deg, #3b82f6, #6366f1);
+            color: #fff;
+        }
+
+        /* Search input */
+        .search-box {
+            border: 1.5px solid rgba(226, 232, 240, 0.85);
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 0.875rem;
+            transition: all 0.2s ease;
+        }
+        .search-box:focus-within {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+        }
+        .dark .search-box {
+            border-color: rgba(51, 65, 85, 0.65);
+            background: rgba(30, 41, 59, 0.6);
+        }
+        .dark .search-box:focus-within {
+            border-color: #818cf8;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-up { animation: fadeInUp 0.35s ease forwards; }
+    </style>
+</head>
+
+<body class="font-sans bg-white dark:bg-base-950 text-base-900 dark:text-white transition-colors duration-300">
+    <div class="grid-background"></div>
+
+    <div id="sidebarOverlay"></div>
+
+    <aside id="leftSidebar">
+        <div class="p-4 pb-3 border-b border-base-100 dark:border-base-800">
+            <h2 class="font-mono font-bold text-lg text-gradient leading-tight">Hello CTF</h2>
+            <p class="text-[0.65rem] text-base-900/45 dark:text-white/35 mt-0.5 font-mono">免费开源 CTF 入门教程</p>
+        </div>
+        <nav class="flex-1 overflow-y-auto px-2.5 py-3 space-y-0.5">
+            <a href="../index.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+                <span>首页</span>
+            </a>
+            <a href="./tools.html" class="sidebar-link active">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085"/></svg>
+                <span>工具 / MCP</span>
+            </a>
+            <a href="./ctf-skill.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
+                <span>CTF-SKILL</span>
+            </a>
+            <a href="./career-cards.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"/></svg>
+                <span>网络安全职业卡片</span>
+            </a>
+            <a href="./archives.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+                <span>历史比赛附件</span>
+            </a>
+            <a href="./friends.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"/></svg>
+                <span>师傅们的友链</span>
+            </a>
+            <a href="./resources.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
+                <span>学习资源推荐</span>
+            </a>
+            <a href="./feedback.html" class="sidebar-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/></svg>
+                <span>反馈与群聊入口</span>
+            </a>
+        </nav>
+        <div class="p-3 border-t border-base-100 dark:border-base-800">
+            <button id="themeToggle" type="button" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl border border-base-200/80 bg-white/60 text-sm text-base-900/70 transition-all duration-200 hover:bg-primary/[0.06] hover:text-primary hover:border-primary/40 dark:border-base-700 dark:bg-base-900/40 dark:text-white/60 dark:hover:bg-accent/10 dark:hover:text-accent dark:hover:border-accent/40" aria-label="切换主题">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                <span class="block dark:hidden">深色模式</span>
+                <span class="hidden dark:block">浅色模式</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Mobile menu button -->
+    <button id="mobileMenuBtn" class="fixed top-4 left-4 z-50 p-2 rounded-xl bg-white/80 dark:bg-base-900/80 border border-base-200 dark:border-base-700 backdrop-blur-md items-center justify-center" aria-label="打开菜单">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-base-900/70 dark:text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+    </button>
+
+    <div id="mainContent">
+        <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+            <!-- Header -->
+            <div class="mb-8">
+                <h1 class="text-3xl sm:text-4xl font-bold font-mono">
+                    <span class="text-gradient">工具 / MCP</span>
+                </h1>
+                <p class="mt-2 text-base-900/60 dark:text-white/50 text-sm sm:text-base max-w-2xl">
+                    CTF 常用工具合集，涵盖 Web安全、MISC、密码学、逆向、PWN、AWD 等方向。快速搜索，找到你需要的工具。
+                </p>
+                <div class="mt-3 flex items-center gap-2 text-xs text-base-900/45 dark:text-white/35 font-mono">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0l-3-3m3 3l3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+                    <span>共 <strong id="toolCount" class="text-base-900/70 dark:text-white/60">0</strong> 个工具</span>
+                    <span class="mx-1">·</span>
+                    <span>显示 <strong id="visibleCount" class="text-base-900/70 dark:text-white/60">0</strong> 个</span>
+                </div>
+            </div>
+
+            <!-- Search -->
+            <div class="search-box flex items-center gap-3 px-4 py-3 mb-5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-base-900/35 dark:text-white/30 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
+                <input id="searchInput" type="text" placeholder="搜索工具名称、描述或标签 ..." class="flex-1 bg-transparent outline-none text-sm text-base-900 dark:text-white placeholder-base-900/35 dark:placeholder-white/25">
+                <button id="clearSearch" class="hidden text-base-900/30 dark:text-white/25 hover:text-base-900/60 dark:hover:text-white/50 transition-colors" aria-label="清空搜索">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+            </div>
+
+            <!-- Tag filters -->
+            <div id="tagBar" class="flex flex-wrap gap-2 mb-8">
+                <button class="tag-filter active" data-tag="all">全部</button>
+            </div>
+
+            <!-- Card grid -->
+            <div id="cardGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+
+            <!-- Empty state -->
+            <div id="emptyState" class="hidden flex-col items-center justify-center py-20 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-base-900/15 dark:text-white/10 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
+                <p class="text-base-900/40 dark:text-white/30 text-sm font-medium">没有找到匹配的工具</p>
+                <p class="text-base-900/25 dark:text-white/20 text-xs mt-1">试试换个关键词或清除筛选条件</p>
+            </div>
+
+        </main>
+    </div>
+
+    <script>
+        (function () {
+            // ===== Theme =====
+            const html = document.documentElement;
+            if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                html.classList.add('dark');
+            }
+            document.getElementById('themeToggle').addEventListener('click', function () {
+                html.classList.toggle('dark');
+                localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+            });
+
+            // ===== Mobile sidebar =====
+            const sidebar = document.getElementById('leftSidebar');
+            const overlay = document.getElementById('sidebarOverlay');
+            const menuBtn = document.getElementById('mobileMenuBtn');
+            function closeSidebar() { sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+            menuBtn.addEventListener('click', function () { sidebar.classList.add('open'); overlay.classList.add('open'); });
+            overlay.addEventListener('click', closeSidebar);
+            document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeSidebar(); });
+
+            // ===== Tag color map =====
+            var TAG_COLORS = {
+                '效率软件': { bg: 'bg-emerald-50 dark:bg-emerald-900/30', text: 'text-emerald-700 dark:text-emerald-300', border: 'border border-emerald-200 dark:border-emerald-700/50' },
+                '环境基础': { bg: 'bg-sky-50 dark:bg-sky-900/30', text: 'text-sky-700 dark:text-sky-300', border: 'border border-sky-200 dark:border-sky-700/50' },
+                'Web工具':  { bg: 'bg-orange-50 dark:bg-orange-900/30', text: 'text-orange-700 dark:text-orange-300', border: 'border border-orange-200 dark:border-orange-700/50' },
+                '编码解密': { bg: 'bg-violet-50 dark:bg-violet-900/30', text: 'text-violet-700 dark:text-violet-300', border: 'border border-violet-200 dark:border-violet-700/50' },
+                '文本工具': { bg: 'bg-cyan-50 dark:bg-cyan-900/30', text: 'text-cyan-700 dark:text-cyan-300', border: 'border border-cyan-200 dark:border-cyan-700/50' },
+                '隐写工具': { bg: 'bg-pink-50 dark:bg-pink-900/30', text: 'text-pink-700 dark:text-pink-300', border: 'border border-pink-200 dark:border-pink-700/50' },
+                '取证工具': { bg: 'bg-amber-50 dark:bg-amber-900/30', text: 'text-amber-700 dark:text-amber-300', border: 'border border-amber-200 dark:border-amber-700/50' },
+                'MISC解题': { bg: 'bg-lime-50 dark:bg-lime-900/30', text: 'text-lime-700 dark:text-lime-300', border: 'border border-lime-200 dark:border-lime-700/50' },
+                '密码学':   { bg: 'bg-indigo-50 dark:bg-indigo-900/30', text: 'text-indigo-700 dark:text-indigo-300', border: 'border border-indigo-200 dark:border-indigo-700/50' },
+                '逆向工具': { bg: 'bg-red-50 dark:bg-red-900/30', text: 'text-red-700 dark:text-red-300', border: 'border border-red-200 dark:border-red-700/50' },
+                'PWN工具':  { bg: 'bg-fuchsia-50 dark:bg-fuchsia-900/30', text: 'text-fuchsia-700 dark:text-fuchsia-300', border: 'border border-fuchsia-200 dark:border-fuchsia-700/50' },
+                'AWD工具':  { bg: 'bg-teal-50 dark:bg-teal-900/30', text: 'text-teal-700 dark:text-teal-300', border: 'border border-teal-200 dark:border-teal-700/50' }
+            };
+            var TAG_ORDER = ['效率软件','环境基础','Web工具','编码解密','文本工具','隐写工具','取证工具','MISC解题','密码学','逆向工具','PWN工具','AWD工具'];
+
+            function tagPillHTML(tag) {
+                var c = TAG_COLORS[tag] || { bg: 'bg-gray-50 dark:bg-gray-800', text: 'text-gray-600 dark:text-gray-300', border: 'border border-gray-200 dark:border-gray-600' };
+                return '<span class="tag-pill ' + c.bg + ' ' + c.text + ' ' + c.border + '">' + tag + '</span>';
+            }
+
+            function cardHTML(item, idx) {
+                var tagsHTML = item.tags.map(tagPillHTML).join('');
+                var hasURL = item.url && item.url !== '#';
+                var linkHTML = hasURL
+                    ? '<a href="' + item.url + '" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-primary dark:text-accent hover:underline mt-auto pt-3">' +
+                      '访问项目 <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg></a>'
+                    : '<span class="inline-flex items-center gap-1.5 text-xs font-medium text-base-900/30 dark:text-white/20 mt-auto pt-3">暂无链接</span>';
+                return '<div class="card-surface p-5 flex flex-col fade-in-up" style="animation-delay:' + (idx * 30) + 'ms">' +
+                    '<div class="flex flex-wrap gap-1.5 mb-3">' + tagsHTML + '</div>' +
+                    '<h3 class="font-semibold text-sm leading-snug mb-1.5 text-base-900 dark:text-white">' + item.name + '</h3>' +
+                    '<p class="text-xs text-base-900/55 dark:text-white/45 leading-relaxed flex-1">' + item.desc + '</p>' +
+                    linkHTML +
+                    '</div>';
+            }
+
+            // ===== Data & render =====
+            var allTools = [];
+            var activeTags = new Set();
+            var searchQuery = '';
+            var debounceTimer;
+
+            function render() {
+                var filtered = allTools.filter(function (t) {
+                    var haystack = (t.name + ' ' + t.desc + ' ' + t.tags.join(' ')).toLowerCase();
+                    if (searchQuery) {
+                        var keywords = searchQuery.toLowerCase().split(/\s+/).filter(Boolean);
+                        for (var i = 0; i < keywords.length; i++) {
+                            if (haystack.indexOf(keywords[i]) === -1) return false;
+                        }
+                    }
+                    if (activeTags.size > 0) {
+                        var match = false;
+                        for (var j = 0; j < t.tags.length; j++) {
+                            if (activeTags.has(t.tags[j])) { match = true; break; }
+                        }
+                        if (!match) return false;
+                    }
+                    return true;
+                });
+                var grid = document.getElementById('cardGrid');
+                var empty = document.getElementById('emptyState');
+                document.getElementById('visibleCount').textContent = filtered.length;
+                if (filtered.length === 0) {
+                    grid.innerHTML = '';
+                    grid.classList.add('hidden');
+                    empty.classList.remove('hidden');
+                    empty.classList.add('flex');
+                } else {
+                    empty.classList.add('hidden');
+                    empty.classList.remove('flex');
+                    grid.classList.remove('hidden');
+                    grid.innerHTML = filtered.map(cardHTML).join('');
+                }
+            }
+
+            function buildTagBar(tools) {
+                var tagSet = new Set();
+                tools.forEach(function (t) { t.tags.forEach(function (tg) { tagSet.add(tg); }); });
+                var bar = document.getElementById('tagBar');
+                TAG_ORDER.forEach(function (tag) {
+                    if (!tagSet.has(tag)) return;
+                    var btn = document.createElement('button');
+                    btn.className = 'tag-filter';
+                    btn.dataset.tag = tag;
+                    btn.textContent = tag;
+                    bar.appendChild(btn);
+                });
+            }
+
+            // Tag click handler (event delegation)
+            document.getElementById('tagBar').addEventListener('click', function (e) {
+                var btn = e.target.closest('.tag-filter');
+                if (!btn) return;
+                var tag = btn.dataset.tag;
+                if (tag === 'all') {
+                    activeTags.clear();
+                    document.querySelectorAll('.tag-filter').forEach(function (b) { b.classList.remove('active'); });
+                    btn.classList.add('active');
+                } else {
+                    document.querySelector('.tag-filter[data-tag="all"]').classList.remove('active');
+                    if (activeTags.has(tag)) {
+                        activeTags.delete(tag);
+                        btn.classList.remove('active');
+                        if (activeTags.size === 0) {
+                            document.querySelector('.tag-filter[data-tag="all"]').classList.add('active');
+                        }
+                    } else {
+                        activeTags.add(tag);
+                        btn.classList.add('active');
+                    }
+                }
+                render();
+            });
+
+            // Search
+            var searchInput = document.getElementById('searchInput');
+            var clearBtn = document.getElementById('clearSearch');
+            searchInput.addEventListener('input', function () {
+                clearTimeout(debounceTimer);
+                debounceTimer = setTimeout(function () {
+                    searchQuery = searchInput.value.trim();
+                    clearBtn.classList.toggle('hidden', !searchQuery);
+                    render();
+                }, 180);
+            });
+            clearBtn.addEventListener('click', function () {
+                searchInput.value = '';
+                searchQuery = '';
+                clearBtn.classList.add('hidden');
+                render();
+                searchInput.focus();
+            });
+
+            // Load data
+            fetch('./tools_data.json')
+                .then(function (r) { return r.json(); })
+                .then(function (data) {
+                    allTools = data;
+                    document.getElementById('toolCount').textContent = data.length;
+                    buildTagBar(data);
+                    render();
+                })
+                .catch(function (err) {
+                    console.error('Failed to load tools data:', err);
+                    document.getElementById('cardGrid').innerHTML = '<p class="col-span-full text-center text-base-900/40 dark:text-white/30 py-20">数据加载失败，请刷新重试。</p>';
+                });
+        })();
+    </script>
+</body>
+</html>
