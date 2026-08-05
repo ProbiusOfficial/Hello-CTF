@@ -185,11 +185,7 @@ nav:
 # NEW 排布 —— | Home | 知识点标签 | 工具 | 靶场 | 赛事 | 归档
 
 # - Home 主要内容 (.HC) Part ------------
-  # #- Home:
-  #   - home/index.md
-  #   - 快速开始:
-  #     - hc-start/index.md
-    - AI时代：在正式开始之前: hc-preface/faceAI.md
+    - 快速开始: hc-start/index.md
 
     - 前言:
       - hc-preface/index.md

@@ -1,4 +1,7 @@
 {
   "admin_password": "改成你的密码",
+  "proxy": "http://192.168.1.71:7897",
+  "inbox_url": "",
+  "inbox_token": "",
   "port": 9000
 }

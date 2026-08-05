@@ -1,0 +1,14 @@
+services:
+  collector:
+    build: .
+    image: hello-ctf-collector
+    container_name: hello-ctf-collector
+    restart: unless-stopped
+    ports:
+      - "9100:9100"
+    environment:
+      # 必填：管理接口令牌，面板 inbox_token 填同一个值
+      COLLECTOR_TOKEN: ${COLLECTOR_TOKEN:?请在 .env 或环境变量中设置 COLLECTOR_TOKEN}
+    volumes:
+      # 消息持久化到宿主机 ./data/messages.json
+      - ./data:/data

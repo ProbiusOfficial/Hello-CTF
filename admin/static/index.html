@@ -152,6 +152,47 @@
   .url-cell a { color: var(--accent); text-decoration: none; }
   .url-cell a:hover { text-decoration: underline; }
 
+  /* ---------- 分段切换 / 子模块栏 ---------- */
+  .seg { display: inline-flex; border: 1px solid var(--border-strong); border-radius: 6px; overflow: hidden; }
+  .seg-btn {
+    font: inherit; font-size: 12px; border: none; background: var(--bg); color: var(--muted);
+    padding: 6px 12px; cursor: pointer; transition: background .12s, color .12s;
+  }
+  .seg-btn + .seg-btn { border-left: 1px solid var(--border-strong); }
+  .seg-btn.active { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  .subtab-bar { display: flex; gap: 6px; align-items: center; margin-bottom: 16px; flex-wrap: wrap; }
+  .subtab-bar .spacer { flex: 1; }
+  .subtab-btn {
+    font: inherit; font-size: 13px; font-weight: 500; border: 1px solid var(--border-strong);
+    background: var(--bg); color: var(--muted); padding: 6px 14px; border-radius: 999px;
+    cursor: pointer; transition: all .12s;
+  }
+  .subtab-btn:hover { color: var(--fg); }
+  .subtab-btn.active { background: var(--accent-soft); border-color: #bfdbfe; color: var(--accent); font-weight: 600; }
+
+  /* ---------- 公告分栏编辑 ---------- */
+  .announce-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: stretch; }
+  .announce-wrap .card-pad { padding: 14px 16px; display: flex; flex-direction: column; }
+  .announce-wrap textarea { flex: 1; min-height: 220px; margin-top: 6px; }
+  .ap-box {
+    flex: 1; margin-top: 6px; border: 1px dashed var(--border-strong); border-radius: 6px;
+    padding: 10px 12px; background: var(--bg-soft); min-height: 220px;
+  }
+  .ap-item { font-size: 13px; padding: 6px 0; border-bottom: 1px solid var(--border); }
+  .ap-item:last-child { border-bottom: none; }
+  .ap-empty { color: var(--muted); }
+
+  /* ---------- 消息盒子 ---------- */
+  .msg { margin-bottom: 12px; }
+  .msg .card-pad { padding: 14px 16px; }
+  .msg-head { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .msg-head .msg-title { font-weight: 600; font-size: 14px; }
+  .msg-head .msg-time { color: var(--muted); font-family: var(--mono); font-size: 11px; }
+  .msg-head .spacer { flex: 1; }
+  .msg-body { font-size: 13px; font-family: var(--mono); white-space: pre-wrap; word-break: break-all; color: var(--fg); }
+  .msg-body .kv { display: grid; grid-template-columns: 90px 1fr; gap: 4px 10px; }
+  .msg-body .kv span:nth-child(odd) { color: var(--muted); }
+
   /* ---------- 首页内容编辑 ---------- */
   .hc-item { margin-bottom: 14px; }
   .hc-item .card-pad { padding: 14px 16px; }
@@ -304,6 +345,9 @@
     <button class="tab-btn" data-tab="tools">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
       <span>工具页</span></button>
+    <button class="tab-btn" data-tab="inbox">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg>
+      <span>消息盒子</span></button>
     <button class="tab-btn" data-tab="deploy">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg>
       <span>部署</span></button>
@@ -318,6 +362,10 @@
         <div class="desc">本仓库 / docs/Event/json/CN.json</div>
       </div>
       <div class="toolbar">
+        <div class="seg" id="event-view-seg">
+          <button class="seg-btn active" data-view="active">在列赛事</button>
+          <button class="seg-btn" data-view="archive">存档</button>
+        </div>
         <input type="search" id="event-search" placeholder="搜索赛事名称…">
         <div class="spacer"></div>
         <button class="btn" id="event-refresh-btn">刷新</button>
@@ -337,28 +385,47 @@
         <h2>首页内容</h2>
         <div class="desc">docs/index_content.json</div>
       </div>
-      <div id="home-fields"></div>
-
-      <div class="section-title">
-        <span>项目推荐 · projects</span>
-        <button class="btn btn-sm" id="project-add-btn">添加项目</button>
-      </div>
-      <div class="card card-pad">
-        <div class="card-row cols-proj head"><span>标题</span><span>链接 URL</span><span>描述</span><span>图标</span><span></span></div>
-        <div id="project-list"></div>
+      <div class="subtab-bar" id="home-subtabs">
+        <button class="subtab-btn active" data-home="announce">公告</button>
+        <button class="subtab-btn" data-home="projects">项目推荐</button>
+        <button class="subtab-btn" data-home="navcards">导航卡片</button>
+        <div class="spacer"></div>
+        <button class="btn btn-primary btn-sm" id="home-save-btn">保存</button>
       </div>
 
-      <div class="section-title">
-        <span>导航卡片 · navCards</span>
-        <button class="btn btn-sm" id="navcard-add-btn">添加卡片</button>
-      </div>
-      <div class="card card-pad">
-        <div class="card-row cols-nav head"><span>标题</span><span>链接 URL</span><span>描述</span><span>分组</span><span></span></div>
-        <div id="navcard-list"></div>
+      <div class="home-mod" id="home-mod-announce">
+        <div class="announce-wrap">
+          <div class="card card-pad">
+            <label>公告内容（每行一条，纯文本）</label>
+            <textarea data-hc="announcement" id="announce-input" rows="10"></textarea>
+          </div>
+          <div class="card card-pad">
+            <label>首页实际效果（只显示前 4 行）</label>
+            <div class="ap-box" id="announce-preview"></div>
+          </div>
+        </div>
       </div>
 
-      <div style="margin-top:18px;">
-        <button class="btn btn-primary" id="home-save-btn">保存全部</button>
+      <div class="home-mod" id="home-mod-projects" hidden>
+        <div class="section-title">
+          <span>项目推荐 · projects</span>
+          <button class="btn btn-sm" id="project-add-btn">添加项目</button>
+        </div>
+        <div class="card card-pad">
+          <div class="card-row cols-proj head"><span>标题</span><span>链接 URL</span><span>描述</span><span>图标</span><span></span></div>
+          <div id="project-list"></div>
+        </div>
+      </div>
+
+      <div class="home-mod" id="home-mod-navcards" hidden>
+        <div class="section-title">
+          <span>导航卡片 · navCards</span>
+          <button class="btn btn-sm" id="navcard-add-btn">添加卡片</button>
+        </div>
+        <div class="card card-pad">
+          <div class="card-row cols-nav head"><span>标题</span><span>链接 URL</span><span>描述</span><span>分组</span><span></span></div>
+          <div id="navcard-list"></div>
+        </div>
       </div>
     </section>
 
@@ -399,6 +466,19 @@
         <button class="btn btn-primary" id="tool-add-btn">添加工具</button>
       </div>
       <div id="tools-groups"></div>
+    </section>
+
+    <!-- 消息盒子 -->
+    <section class="panel" id="panel-inbox">
+      <div class="panel-head">
+        <h2>消息盒子</h2>
+        <div class="desc">公网 collector 收集的赛事提交与意见反馈</div>
+      </div>
+      <div class="toolbar">
+        <div class="spacer"></div>
+        <button class="btn" id="inbox-refresh-btn">刷新</button>
+      </div>
+      <div id="inbox-list"></div>
     </section>
 
     <!-- 部署 -->
@@ -535,8 +615,91 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     document.querySelectorAll(".tab-btn").forEach((b) => b.classList.toggle("active", b === btn));
     document.querySelectorAll(".panel").forEach((p) => p.classList.remove("active"));
     $("panel-" + btn.dataset.tab).classList.add("active");
+    if (btn.dataset.tab === "inbox" && !inboxLoaded) loadInbox();
   };
 });
+
+// ---------- 消息盒子 ----------
+let inboxLoaded = false;
+
+async function loadInbox() {
+  $("inbox-list").innerHTML = '<div class="card card-pad">加载中…</div>';
+  try {
+    const data = await api("/api/inbox");
+    inboxLoaded = true;
+    renderInbox(data.messages || []);
+  } catch (e) {
+    $("inbox-list").innerHTML = `<div class="card card-pad">${escapeHtml(e.message)}</div>`;
+  }
+}
+
+function switchTab(tab) {
+  document.querySelector(`.tab-btn[data-tab="${tab}"]`).click();
+}
+
+function renderInbox(messages) {
+  const list = $("inbox-list");
+  if (!messages.length) {
+    list.innerHTML = '<div class="card card-pad">暂无消息</div>';
+    return;
+  }
+  list.innerHTML = "";
+  messages.slice().reverse().forEach((m) => {
+    const isEvent = m.type === "event";
+    const box = document.createElement("div");
+    box.className = "msg card";
+    let body;
+    if (isEvent && m.content && typeof m.content === "object") {
+      const c = m.content;
+      body = `<div class="kv">${
+        [["名称", c.name], ["链接", c.link], ["开始", c.comp_time_start],
+         ["结束", c.comp_time_end], ["详情", c.detail]]
+          .filter(([, v]) => v)
+          .map(([k, v]) => `<span>${k}</span><span>${escapeHtml(String(v))}</span>`)
+          .join("")
+      }</div>`;
+    } else {
+      body = escapeHtml(typeof m.content === "string" ? m.content : JSON.stringify(m.content, null, 2));
+    }
+    box.innerHTML = `<div class="card-pad">
+      <div class="msg-head">
+        <span class="pill ${isEvent ? "pill-tag" : ""}">${isEvent ? "赛事提交" : "意见反馈"}</span>
+        <span class="msg-title">${escapeHtml(m.title || "")}</span>
+        <span class="msg-time">${escapeHtml(m.time || "")}</span>
+        <div class="spacer"></div>
+        ${isEvent ? `<button class="btn btn-sm btn-primary" data-import>导入赛事</button>` : ""}
+        <button class="btn btn-sm btn-danger" data-del>删除</button>
+      </div>
+      <div class="msg-body">${body}</div>
+    </div>`;
+    const importBtn = box.querySelector("[data-import]");
+    if (importBtn) {
+      importBtn.onclick = () => {
+        const c = m.content || {};
+        const ev = {};
+        for (const k of ["name", "link", "comp_time_start", "comp_time_end", "detail"]) {
+          if (c[k]) ev[k] = String(c[k]);
+        }
+        switchTab("events");
+        if (eventView !== "active") setEventView("active");
+        openEventModal(ev, true);
+      };
+    }
+    box.querySelector("[data-del]").onclick = async () => {
+      const yes = await confirmDialog("删除消息", "确认删除这条消息？该操作不可恢复。");
+      if (!yes) return;
+      try {
+        await api("/api/inbox/delete", { method: "POST", body: { id: m.id } });
+        toast("已删除");
+        loadInbox();
+      } catch (e) {
+        toast(e.message, false);
+      }
+    };
+    list.appendChild(box);
+  });
+}
+$("inbox-refresh-btn").onclick = loadInbox;
 
 // ---------- 赛事 ----------
 const EVENT_FIELDS = [
@@ -548,10 +711,13 @@ const EVENT_FIELDS = [
 ];
 let allEvents = [];
 let editingOriginalName = null;
+let eventView = "active"; // active | archive
+let editingFromArchive = false;
 
 async function loadEvents() {
+  const url = eventView === "archive" ? "/api/events/archive" : "/api/events";
   try {
-    const data = await api("/api/events");
+    const data = await api(url);
     allEvents = data.events;
     renderEvents();
   } catch (e) {
@@ -566,12 +732,14 @@ function renderEvents() {
     $("events-tbody").innerHTML = `<tr><td colspan="4" class="empty-row">无匹配赛事</td></tr>`;
     return;
   }
+  const archived = eventView === "archive";
   $("events-tbody").innerHTML = rows.map((e, i) => `
     <tr>
       <td>${escapeHtml(e.name)}</td>
       <td class="mono" style="font-size:12px;">${escapeHtml(e.comp_time_start || "")}<br>${escapeHtml(e.comp_time_end || "")}</td>
-      <td><span class="pill">${escapeHtml(e.status || "—")}</span></td>
+      <td><span class="pill">${archived ? "已存档" : escapeHtml(e.status || "—")}</span></td>
       <td><div class="ops">
+        ${archived ? `<button class="btn btn-sm" data-restore="${i}">恢复</button>` : ""}
         <button class="btn btn-sm" data-edit="${i}">编辑</button>
         <button class="btn btn-sm btn-danger" data-del="${i}">删除</button>
       </div></td>
@@ -582,14 +750,31 @@ function renderEvents() {
   $("events-tbody").querySelectorAll("[data-del]").forEach((b) => {
     b.onclick = () => deleteEvent(rows[+b.dataset.del]);
   });
+  $("events-tbody").querySelectorAll("[data-restore]").forEach((b) => {
+    b.onclick = () => restoreEvent(rows[+b.dataset.restore]);
+  });
 }
 
 $("event-search").oninput = renderEvents;
 $("event-refresh-btn").onclick = loadEvents;
-$("event-add-btn").onclick = () => openEventModal(null);
+$("event-add-btn").onclick = () => {
+  if (eventView !== "active") setEventView("active");
+  openEventModal(null);
+};
 
-function openEventModal(event) {
-  editingOriginalName = event ? event.name : null;
+function setEventView(view) {
+  eventView = view;
+  document.querySelectorAll("#event-view-seg .seg-btn").forEach((b) =>
+    b.classList.toggle("active", b.dataset.view === view));
+  loadEvents();
+}
+document.querySelectorAll("#event-view-seg .seg-btn").forEach((b) => {
+  b.onclick = () => setEventView(b.dataset.view);
+});
+
+function openEventModal(event, asNew) {
+  editingFromArchive = !asNew && eventView === "archive" && !!event;
+  editingOriginalName = event && !asNew ? event.name : null;
   const fieldsHtml = EVENT_FIELDS.map(([key, label]) => {
     return `<div class="${key === "name" || key === "link" || key === "detail" ? "full" : ""}">
       <label>${label}</label>
@@ -612,7 +797,9 @@ async function saveEventModal() {
   });
   if (!event.name) { toast("名称不能为空", false); return; }
 
-  const action = editingOriginalName ? "update" : "add";
+  const action = editingOriginalName
+    ? (editingFromArchive ? "archive_update" : "update")
+    : "add";
   const body = editingOriginalName ? { original_name: editingOriginalName, event } : { event };
   try {
     const data = await api(`/api/events/${action}`, { method: "POST", body });
@@ -625,13 +812,28 @@ async function saveEventModal() {
 }
 
 async function deleteEvent(event) {
+  const archived = eventView === "archive";
   const yes = await confirmDialog("删除赛事",
-    `确认删除「${event.name}」？该操作会直接提交并推送到本仓库。`);
+    `确认删除「${event.name}」${archived ? "（存档）" : ""}？该操作会直接提交并推送到本仓库。`);
   if (!yes) return;
   try {
-    const data = await api("/api/events/delete",
+    const data = await api(`/api/events/${archived ? "archive_delete" : "delete"}`,
       { method: "POST", body: { name: event.name } });
     toast(data.result || "已删除");
+    loadEvents();
+  } catch (e) {
+    toast(e.message, false);
+  }
+}
+
+async function restoreEvent(event) {
+  const yes = await confirmDialog("恢复赛事",
+    `确认把「${event.name}」从存档移回在列赛事？该操作会直接提交并推送到本仓库。`);
+  if (!yes) return;
+  try {
+    const data = await api("/api/events/restore",
+      { method: "POST", body: { name: event.name } });
+    toast(data.result || "已恢复");
     loadEvents();
   } catch (e) {
     toast(e.message, false);
@@ -641,9 +843,6 @@ async function deleteEvent(event) {
 // ---------- 首页内容 ----------
 // index_content.json 只有三个键是前端真实消费的：
 // announcement（shell.js 公告条，纯文本取前 4 行）、navCards / projects（index.html 卡片）
-const HC_KEYS = [
-  ["announcement", "公告（每行一条，首页只显示前 4 行，纯文本、不支持 markdown）"],
-];
 const ICON_OPTIONS = ["i-target", "i-terminal", "i-archive", "i-globe", "i-lock", "i-cpu",
   "i-bot", "i-book", "i-zap", "i-shield", "i-flag", "i-calendar"];
 let homeData = {};
@@ -659,14 +858,33 @@ async function loadHomeContent() {
 }
 
 function renderHomeContent() {
-  $("home-fields").innerHTML = HC_KEYS.map(([key, label]) => `
-    <div class="hc-item card"><div class="card-pad">
-      <label>${label}</label>
-      <textarea data-hc="${key}">${escapeHtml(homeData[key] || "")}</textarea>
-    </div></div>`).join("");
+  $("announce-input").value = homeData.announcement || "";
+  updateAnnouncePreview();
   renderNavCards();
   renderProjects();
 }
+
+/* 与 docs/shell/shell.js 的公告渲染保持一致：每行一条，strip markdown/emoji，取前 4 行 */
+function updateAnnouncePreview() {
+  const lines = $("announce-input").value.split("\n")
+    .map((s) => s.trim()).filter(Boolean).slice(0, 4)
+    .map((s) => s.replace(/\[([^\]]+)\]\([^)]*\)/g, "$1").replace(/[⭐🌟#*]/g, "").trim());
+  $("announce-preview").innerHTML = lines.length
+    ? lines.map((s) => `<div class="ap-item">${escapeHtml(s)}</div>`).join("")
+    : '<div class="ap-item ap-empty">暂无公告</div>';
+}
+$("announce-input").addEventListener("input", updateAnnouncePreview);
+
+/* 模块顶栏切换 */
+document.querySelectorAll("#home-subtabs .subtab-btn").forEach((b) => {
+  b.onclick = () => {
+    document.querySelectorAll("#home-subtabs .subtab-btn").forEach((x) =>
+      x.classList.toggle("active", x === b));
+    document.querySelectorAll(".home-mod").forEach((m) => {
+      m.hidden = m.id !== "home-mod-" + b.dataset.home;
+    });
+  };
+});
 
 function renderNavCards() {
   if (!Array.isArray(homeData.navCards)) homeData.navCards = [];
@@ -722,8 +940,7 @@ $("project-add-btn").onclick = () => {
 };
 
 $("home-save-btn").onclick = async () => {
-  const out = {};
-  document.querySelectorAll("[data-hc]").forEach((ta) => { out[ta.dataset.hc] = ta.value; });
+  const out = { announcement: $("announce-input").value };
   out.projects = (homeData.projects || []).filter((p) => p.title || p.url);
   out.navCards = (homeData.navCards || []).filter((c) => c.title || c.url);
   try {

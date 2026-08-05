@@ -30,8 +30,9 @@ class LogBuffer:
 
 
 class Deployer:
-    def __init__(self, repo_root):
+    def __init__(self, repo_root, proxy=""):
         self.repo_root = repo_root
+        self.proxy = proxy
         # 优先使用项目 .venv 里的 python / mkdocs（系统 Python 受 PEP 668 限制）
         self.python = "python3"
         self.mkdocs = "mkdocs"
@@ -52,6 +53,14 @@ class Deployer:
 
     # ---------- 内部工具 ----------
 
+    def _proc_env(self):
+        """子进程环境：配置代理时注入 HTTP(S)_PROXY（git / requests 都会读）。"""
+        env = os.environ.copy()
+        if self.proxy:
+            for k in ("HTTP_PROXY", "HTTPS_PROXY", "http_proxy", "https_proxy"):
+                env[k] = self.proxy
+        return env
+
     def _log(self, text):
         self.logs.append(text)
 
@@ -65,6 +74,7 @@ class Deployer:
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
                 text=True,
+                env=self._proc_env(),
             )
         except FileNotFoundError:
             self._log(f"命令不存在：{cmd[0]}")
@@ -116,6 +126,7 @@ class Deployer:
         status = subprocess.run(
             ["git", "status", "--porcelain"],
             cwd=self.repo_root, capture_output=True, text=True, timeout=60,
+            env=self._proc_env(),
         )
         if not status.stdout.strip():
             self._log("没有需要提交的变更，跳过 commit/push")

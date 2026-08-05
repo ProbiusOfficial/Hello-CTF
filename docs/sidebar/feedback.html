@@ -187,6 +187,22 @@
       </a>
     </div>
 
+    <div class="g-title">快速留言</div>
+    <div class="card" style="padding:22px 26px;">
+      <p class="d" style="margin-bottom:12px;">不想注册 GitHub？直接在这里留句话，会进入维护者的消息盒子。</p>
+      <textarea id="fbText" rows="4" placeholder="勘误、建议、想聊的都可以写在这里…" style="
+        width:100%; resize:vertical; font: inherit; font-size: 13.5px; line-height: 1.6;
+        border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 12px;
+        background: var(--paper); color: var(--ink); outline: none;
+      "></textarea>
+      <div class="card-actions" style="justify-content:flex-end; align-items:center;">
+        <span id="fbMsg" class="d"></span>
+        <button class="btn btn-dark" id="fbSend">
+          <svg class="ic"><use href="#i-mega"/></svg>发送
+        </button>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -226,6 +242,33 @@
         copyBtn.classList.remove('copied');
       }, 1500);
     });
+  });
+})();
+
+/* 快速留言 → Hello-CTF 消息收集器（collector，部署在公网机器上） */
+(function () {
+  var COLLECTOR_ENDPOINT = 'http://110.42.47.58:9100/api/submit';
+  var btn = document.getElementById('fbSend');
+  var msg = document.getElementById('fbMsg');
+  btn.addEventListener('click', async function () {
+    var text = document.getElementById('fbText').value.trim();
+    if (!text) { msg.textContent = '先写点内容再发送。'; return; }
+    btn.disabled = true;
+    msg.textContent = '发送中…';
+    try {
+      var res = await fetch(COLLECTOR_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'feedback', title: '站点留言', content: text }),
+      });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      document.getElementById('fbText').value = '';
+      msg.textContent = '已发送，感谢反馈！';
+    } catch (e) {
+      msg.textContent = '发送失败（' + ((e && e.message) || e) + '），也可以走 GitHub Issue。';
+    } finally {
+      btn.disabled = false;
+    }
   });
 })();
 </script>

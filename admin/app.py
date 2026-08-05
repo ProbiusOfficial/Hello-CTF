@@ -8,6 +8,7 @@ import json
 import os
 import secrets
 
+import requests
 from flask import Flask, jsonify, request, send_from_directory, session
 
 import ctftime
@@ -31,6 +32,9 @@ def load_config():
     return {
         "admin_password": cfg.get("admin_password")
         or os.environ.get("ADMIN_PASSWORD", ""),
+        "proxy": cfg.get("proxy", ""),
+        "inbox_url": cfg.get("inbox_url", "").rstrip("/"),
+        "inbox_token": cfg.get("inbox_token", ""),
         "port": int(cfg.get("port", 9000)),
     }
 
@@ -41,7 +45,7 @@ app = Flask(__name__, static_folder=os.path.join(BASE_DIR, "static"))
 app.secret_key = secrets.token_hex(32)  # 每次重启会使旧 session 失效，可接受
 
 docs = docs_api.DocsAPI(DOCS_DIR)
-deploy = deployer.Deployer(REPO_ROOT)
+deploy = deployer.Deployer(REPO_ROOT, proxy=CONFIG["proxy"])
 
 
 # ---------- 认证 ----------
@@ -99,10 +103,22 @@ def events_list():
         return jsonify({"ok": False, "error": str(e)}), 502
 
 
+@app.get("/api/events/archive")
+@login_required
+def events_archive_list():
+    try:
+        events, _ = ctftime.read_archive()
+        return jsonify({"ok": True, "events": events})
+    except ctftime.CtftimeError as e:
+        return jsonify({"ok": False, "error": str(e)}), 502
+
+
 @app.post("/api/events/<action>")
 @login_required
 def events_mutate(action):
-    if action not in ("add", "update", "delete"):
+    actions = ("add", "update", "delete",
+               "archive_update", "archive_delete", "restore")
+    if action not in actions:
         return jsonify({"ok": False, "error": "未知操作"}), 400
     body = request.get_json(silent=True) or {}
     event = body.get("event")
@@ -110,19 +126,68 @@ def events_mutate(action):
         if not isinstance(event, dict) or not event.get("name"):
             return jsonify({"ok": False, "error": "缺少赛事数据或 name"}), 400
         name = event["name"]
-    elif action == "update":
+    elif action in ("update", "archive_update"):
         name = body.get("original_name") or (event or {}).get("name")
         if not name or not isinstance(event, dict):
             return jsonify({"ok": False, "error": "缺少 original_name 或赛事数据"}), 400
-    else:  # delete
+    else:  # delete / archive_delete / restore
         name = body.get("name")
         if not name:
             return jsonify({"ok": False, "error": "缺少 name"}), 400
 
     try:
-        result = ctftime.write(action, name, event)
+        result = ctftime.write(action, name, event, proxy=CONFIG["proxy"])
         return jsonify({"ok": True, "result": result})
     except ctftime.CtftimeError as e:
+        return jsonify({"ok": False, "error": str(e)}), 502
+
+
+# ---------- 消息盒子（collector 拉取） ----------
+
+def _inbox_request(method, path, **kwargs):
+    """请求公网 collector，未配置或失败抛 RuntimeError。
+
+    注意不走 proxy：collector 是自有国内服务器，代理是给 GitHub/CTFtime 用的。
+    """
+    if not CONFIG["inbox_url"]:
+        raise RuntimeError("未配置 inbox_url，消息盒子不可用")
+    try:
+        resp = requests.request(
+            method,
+            CONFIG["inbox_url"] + path,
+            headers={"X-Token": CONFIG["inbox_token"]},
+            timeout=30,
+            **kwargs,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        raise RuntimeError(f"collector 请求失败：{e}")
+    if not data.get("ok"):
+        raise RuntimeError(data.get("error") or "collector 返回失败")
+    return data
+
+
+@app.get("/api/inbox")
+@login_required
+def inbox_list():
+    try:
+        data = _inbox_request("GET", "/api/messages")
+        return jsonify({"ok": True, "messages": data.get("messages", [])})
+    except RuntimeError as e:
+        return jsonify({"ok": False, "error": str(e)}), 502
+
+
+@app.post("/api/inbox/delete")
+@login_required
+def inbox_delete():
+    body = request.get_json(silent=True) or {}
+    if body.get("id") is None:
+        return jsonify({"ok": False, "error": "缺少 id"}), 400
+    try:
+        _inbox_request("POST", "/api/messages/delete", json={"id": body["id"]})
+        return jsonify({"ok": True})
+    except RuntimeError as e:
         return jsonify({"ok": False, "error": str(e)}), 502
 
 

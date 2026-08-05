@@ -28,6 +28,9 @@ python3 admin/app.py
 | 键 | 说明 |
 | --- | --- |
 | `admin_password` | 面板登录密码（必填） |
+| `proxy` | 代理地址，如 `http://192.168.1.71:7897`；面板内的 git 操作（含部署）和 collector 请求都会走它，留空不走代理 |
+| `inbox_url` | 公网消息收集器（`collector/`）地址，如 `https://collector.example.com`，留空则消息盒子不可用 |
+| `inbox_token` | 收集器的 `COLLECTOR_TOKEN` |
 | `port` | 监听端口，默认 9000 |
 
 ## 功能
@@ -35,8 +38,12 @@ python3 admin/app.py
 - **赛事管理**：直接维护本仓库 `docs/Event/json/CN.json`（仅国内赛事），支持添加 / 编辑 / 删除，
   保存后自动 `git pull --rebase → commit → push`（commit message：`admin: add/update/delete event <name>`）。
   字段只有名称 / 链接 / 起止时间 / 详情（默认 `赛制/类型: Jeopardy`），状态由比赛时间自动推导
-  （即将开始 / 正在进行 / 已经结束）。国外赛事由 `build.py` 每日从 CTFtime RSS 抓取，无需人工维护。
-- **首页内容**：编辑 `docs/index_content.json` 的三个有效字段：`announcement` 公告（每行一条纯文本，首页只显示前 4 行）、`projects` 项目推荐（图标下拉选择）、`navCards` 导航卡片。
+  （即将开始 / 正在进行 / 已经结束）。「存档」视图可查看 / 编辑 / 删除 / 恢复 `CN_archive.json` 里的历史赛事。
+  国外赛事由 `build.py` 每日从 CTFtime RSS 抓取，无需人工维护。
+- **首页内容**：编辑 `docs/index_content.json` 的三个有效字段，按模块切换（顶栏）：
+  `announcement` 公告（分栏编辑，右侧实时预览首页实际效果）、`projects` 项目推荐、`navCards` 导航卡片。
+- **消息盒子**：从公网收集器（`collector/`，见 `collector/README.md`）拉取浏览器端提交的
+  赛事和意见反馈；赛事提交可一键导入到赛事编辑表单。
 - **工具页**：管理 `docs/sidebar/tools_data.json`（工具一览页数据源），按 tag 分组展示，支持多标签、新建标签。
 - **文档编辑**：浏览 `docs/` 下全部 Markdown 文件，在线编辑 / 预览 / 新建，路径限制在 `docs/` 内。
 - **部署**：一键部署（`python build.py` → `mkdocs build` → `git add/commit/push`）、仅构建、

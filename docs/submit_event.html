@@ -162,56 +162,10 @@
 
     <script>
         /**
-         * ft07 Push
+         * 推送到 Hello-CTF 消息收集器（collector，部署在公网机器上，
+         * 管理面板从「消息盒子」拉取处理）。换成你的 collector 地址即可。
          */
-        var PUSH_KEY = 'Hello' + '-CTF' + '-push' + '-v1';
-        var PUSH_ENDPOINT_CT =
-            '58198072f77f37349df3c0534a1e5361aaee8900d08fb427442bd8e8b389b63aac1df9a65b04d0097856a38234ffa96799627c481b6071d6fd592c8cec34668710061599a97649fe37cc';
-        var PUSH_TAG_CT = '7808986eeb685b4feab1980f1d';
-
-        function hexToBytes(hex) {
-            var out = new Uint8Array(hex.length / 2);
-            for (var i = 0; i < out.length; i++) {
-                out[i] = parseInt(hex.substr(i * 2, 2), 16);
-            }
-            return out;
-        }
-
-        function rc4(keyBytes, dataBytes) {
-            var S = new Uint8Array(256);
-            for (var i = 0; i < 256; i++) {
-                S[i] = i;
-            }
-            var j = 0;
-            var kl = keyBytes.length;
-            for (var i = 0; i < 256; i++) {
-                j = (j + S[i] + keyBytes[i % kl]) & 255;
-                var t = S[i];
-                S[i] = S[j];
-                S[j] = t;
-            }
-            i = 0;
-            j = 0;
-            var out = new Uint8Array(dataBytes.length);
-            for (var k = 0; k < dataBytes.length; k++) {
-                i = (i + 1) & 255;
-                j = (j + S[i]) & 255;
-                t = S[i];
-                S[i] = S[j];
-                S[j] = t;
-                var K = S[(S[i] + S[j]) & 255];
-                out[k] = dataBytes[k] ^ K;
-            }
-            return out;
-        }
-
-        function rc4Utf8Decrypt(keyStr, hexCipher) {
-            var keyBytes = new TextEncoder().encode(keyStr);
-            return new TextDecoder('utf-8').decode(rc4(keyBytes, hexToBytes(hexCipher)));
-        }
-
-        var PUSH_ENDPOINT = rc4Utf8Decrypt(PUSH_KEY, PUSH_ENDPOINT_CT);
-        var PUSH_TAG = rc4Utf8Decrypt(PUSH_KEY, PUSH_TAG_CT);
+        var PUSH_ENDPOINT = 'http://110.42.47.58:9100/api/submit';
 
         function pad(n) {
             return String(n).padStart(2, '0');
@@ -339,9 +293,9 @@
             setMsg('正在推送…', true);
             try {
                 var body = {
-                    title: '[Hello-CTF] 赛事提交：' + payload.name,
-                    desp: text,
-                    tags: PUSH_TAG,
+                    type: 'event',
+                    title: payload.name,
+                    content: payload,
                 };
                 var res = await fetch(PUSH_ENDPOINT, {
                     method: 'POST',
@@ -354,7 +308,7 @@
                     });
                     throw new Error('推送失败 HTTP ' + res.status + (t ? ' ' + t : ''));
                 }
-                setMsg('已发送到消息接收器。', true);
+                setMsg('已提交，维护者会在管理面板的消息盒子中处理。', true);
             } catch (e) {
                 var hint = (e && e.message) || String(e);
                 if (hint.indexOf('Failed to fetch') !== -1 || hint.indexOf('NetworkError') !== -1) {
