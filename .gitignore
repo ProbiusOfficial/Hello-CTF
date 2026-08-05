@@ -13,3 +13,12 @@ docs/index_editor.html
 pdm.lock
 pyproject.toml
 国内赛事_CN_JSON_变更说明.md
+
+# 管理面板本地配置（含密码/token，不入库）
+admin/config.json
+
+# 项目虚拟环境
+.venv/
+
+# Python 缓存
+__pycache__/

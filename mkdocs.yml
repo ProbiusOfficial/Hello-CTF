@@ -58,10 +58,10 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
 
-  # 字体配置        
+  # 字体配置（与首页同源：Noto Sans SC + JetBrains Mono）
   font:
     text: Noto Sans SC
-    code: Fira Code
+    code: JetBrains Mono
 
   favicon: assets/images/favicon.png
 
@@ -167,7 +167,6 @@ extra_javascript:
   - javascripts/statis.js
 
 # ----- other -----
-  - javascripts/bannerSlider.js
   - javascripts/FullCalendar.js
 
 
@@ -178,7 +177,6 @@ extra_css:
 
 # ----- other -----
   - stylesheets/extra.css
-  - stylesheets/bannerSlider.css
 # 目录
 nav:
 
@@ -227,7 +225,6 @@ nav:
       - 敏感信息泄露: hc-web/sensitive_info.md
       - PHP基础: hc-web/php_basic.md
       - PHP反序列化基础: hc-web/php_unser_base.md
-      - PHP特性: hc-web/php_features.md
       - SQL注入: hc-web/sql_injection.md
       - XSS攻击: hc-web/xss.md
       - 文件包含: hc-web/include.md
@@ -294,7 +291,6 @@ nav:
       - 常见的ROP技巧: hc-pwn/ROP_Tricks.md
       - ROP进阶: hc-pwn/rop_add_v1.md
       - 常见保护: hc-pwn/Protections.md
-      - 杂七杂八的解题技巧: hc-pwn/Tricks.md
 
     - AWD | 攻防模式:
       - AWD介绍: hc-awd/awd_about.md
@@ -321,106 +317,9 @@ nav:
       - NSSCTF平台使用: hc-appendix/NSSCTF_Usage.md
       - 推荐书单: hc-appendix/book.md
 
-  # - 知识点标签:
-  #   - hc-tags/index.md
-  #   - Web: 
-  #     - hc-tags/web/index.md
-  #     - SQL注入: hc-tags/web/sql-injection.md
-  #     - SQLMap: hc-tags/web/sqlmap.md
-  #     - PHP特性: hc-tags/web/PHP_features.md
-  #   - Misc:
-  #     - hc-tags/misc/index.md
-  #   - Reverse:
-  #     - hc-tags/reverse/index.md
-  #   - Pwn:
-  #     - hc-tags/pwn/index.md
-
-
-
-# ----- 暂时下线 time: 2024-01-07 -----
-# # - CTF Training 练习 (.Training) Part ------------
-#   - 刷题:
-#     - Training/index.md
-
-# - CTF Event 赛事 (.Event) Part ------------
-  # - 赛事:
-  #   - Event/index.md
-  #   - 即将开始: Event/Upcoming_events.md
-  #   - 正在进行: Event/Now_running.md
-  #   - 已经结束: Event/Past_events.md
-  #   - 办赛指南:
-  #     - Event/organize.md
-
-# - Hello CTF 系列靶场文档
-  #- 靶场: hc-labs/index.md
-
-# - CTF hc-toolkit 工具 (.hc-toolkit) Part ------------
-  #- 工具: 
-    #- hc-toolkit/index.md
-
-# - CTF 归档部分
-  #- 归档: hc-archive/index.md
-
-# ----- 合并到主页中 time: 2024-01-07 ----- 
-# - TeamBuild (.TeamBuild) 团队 Part ------------
-  # - 团队: 
-  #   - TeamBuild/index.md
-  #   - 团队建设与运营:
-  #     - TeamBuild/build.md
-  #   - 团队纳新及培训:
-  #     - TeamBuild/recruit.md
-  #   - 团队训练及CTF平台:
-  #     - TeamBuild/train.md
-
-# ----- 合并到主页中 time: 2024-01-07 ----- 
-# - Set Challenges (.SC) 命题 Part ------------
-  # - 命题: 
-  #   - Create/index.md
-  #   - 一般题目模板 : docker-template/index.md
-  #   - 动态容器原理: Create/DynamicChallengePrinciples.md
-  #   - Web基础靶机构建流程: Create/WebBaseChallenge.md
-
-
-#  ----- 合并到主页中 time: 2024-01-07 ----- 
-# - ExtensionEnhancement 扩展 (.EE) Part ------------
-  # - 扩展:
-  #   - EE/index.md
-  #   - Docker| 容器技术:
-  #     - EE_Docker/index.md
-  #     - 一文速通Docker(粗): EE_Docker/dockerstart.md
-  #     - 关于Docker: EE_Docker/about.md 
-      # - Windows下的Docker环境配置: EE_Docker/install_windows.md
-      # - Linux下的Docker环境配置: EE_Docker/install_linux.md
-      # - Docker的基本操作: EE_Docker/usage_basic.md
-      # - Docker在CTF中的应用: EE_Docker/usage_ctf.md
-      # - Web题目的Docker化: EE_Docker/usage_web.md
-      # - 示例-经典web靶场封装: EE_Docker/usage_example.md
-      # - Pwn题目的Docker化: EE_Docker/usage_pwn.md
-      # - Crypto题目的Docker化: EE_Docker/usage_crypto.md
-
-#  ----- 合并到主页中 time: 2024-01-07 ----- 
-# - Archives 存档 (.Archive) Part ----
-  # - Archives:
-  #   - hc-archive/index.md
-  #   - 赛事归档:
-  #     - hc-archiveEvents.md
-  #   - 师傅们和他们的博客:
-  #     - hc-archive/friends.md
-  #   - 联合战队信息/招新:
-  #     - hc-archiveTeams.md
-  #   - 社区资源:
-  #     - hc-archiveCommunity.md
-  #   - 书单推荐:
-  #     - hc-archivebooks.md
-  #   - 视频资源:
-  #     - hc-archiveVideos.md
-
-# ----- 停用 -----
-# - Blog Part ----
-  # - Blog:
-  #   - blog/index.md
-
 watch:
   - docs
   - mkdocs.yml
+  - overrides/main.html
+  - overrides/404.html
   - overrides/partials

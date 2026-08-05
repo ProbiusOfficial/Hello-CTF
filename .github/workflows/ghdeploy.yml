@@ -6,11 +6,13 @@ on:
       - main
   schedule:
     - cron: "0 0 * * *"
-  repository_dispatch:
-    types: [Hello-CTFTime]
 
 permissions:
   contents: write
+
+concurrency:
+  group: gh-deploy
+  cancel-in-progress: false
 
 jobs:
   deploy_and_update:
@@ -18,37 +20,33 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.9
-          
-      - name: Install libxml2-dev and libxslt-dev
-        run: |
-              sudo apt-get update
-              sudo apt-get install -y libxml2-dev libxslt-dev --fix-missing
+          python-version: "3.12"
+          cache: pip
 
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: pre_build
+      # 数据更新：只拉取赛事 JSON（docs/Event/json/）
+      - name: Update event data
         run: python build.py
+
+      # 只在赛事数据实际变化时提交，避免空 commit 刷屏
+      - name: Commit event data if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/Event/json/ docs/Event/calendar/
+          if git diff --cached --quiet; then
+            echo "no event data changes, skip commit"
+          else
+            git commit -m "chore(events): update CTFtime data ($(date +%Y-%m-%d))"
+            git push
+          fi
 
       - name: Deploy MkDocs
         run: mkdocs gh-deploy --force
-
-      - name: Check for changes
-        id: check_changes
-        run: |
-          git add docs/hc-archive/friends.md
-          if [ -n "$(git status --porcelain)" ]; then
-            echo "CHANGES=true" >> $GITHUB_ENV
-          fi
-
-      - name: Commit and push changes
-        if: env.CHANGES == 'true'
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Automatically update

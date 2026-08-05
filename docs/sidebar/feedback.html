@@ -1,55 +1,233 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>反馈与群聊入口 - Hello CTF</title>
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTF/main/docs/assets/images/favicon.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: { DEFAULT: '#3b82f6', dark: '#2563eb' },
-                        accent: { DEFAULT: '#6366f1', dark: '#4f46e5' },
-                        base: { 50: '#f8fafc', 100: '#f1f5f9', 900: '#0f172a', 950: '#020617' }
-                    },
-                    fontFamily: { sans: ['Inter', 'sans-serif'], mono: ['JetBrains Mono', 'monospace'] },
-                }
-            }
-        }
-    </script>
-    <style>
-        .text-gradient {
-            background: linear-gradient(45deg, #3b82f6, #6366f1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .dark .text-gradient {
-            background: linear-gradient(45deg, #60a5fa, #818cf8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>反馈与群聊入口 - Hello CTF</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTF/main/docs/assets/images/favicon.png">
+<link rel="stylesheet" href="/shell/shell.css">
+<script>
+  if (localStorage.getItem('hc-theme') === 'dark') document.documentElement.dataset.theme = 'dark';
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: var(--sans); line-height: 1.7;
+    transition: background .25s, color .25s;
+  }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--hl); }
+  [hidden] { display: none !important; }
+
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 44px 32px 90px; }
+
+  /* ===================== 页头 ===================== */
+  .kicker { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; color: var(--accent); }
+  .page-head h1 {
+    font-size: clamp(30px, 3.4vw, 40px);
+    font-weight: 800; letter-spacing: -.03em; line-height: 1.2;
+    margin: 12px 0 10px;
+  }
+  .page-head h1 .hl { background: linear-gradient(transparent 60%, var(--hl) 60%); }
+  .page-head .sub { font-size: 14.5px; color: var(--ink-2); max-width: 640px; }
+
+  /* ===================== 分组小标题 ===================== */
+  .g-title {
+    display: flex; align-items: center; gap: 11px;
+    font-family: var(--mono); font-size: 12px; letter-spacing: .14em;
+    color: var(--ink-2); margin: 40px 0 14px;
+  }
+  .g-title::before { content: ""; width: 22px; height: 3px; border-radius: 2px; background: var(--accent); }
+
+  /* ===================== 按钮 ===================== */
+  .btn {
+    display: inline-flex; align-items: center; gap: 9px;
+    padding: 11px 24px; border-radius: 12px; font-size: 14px; font-weight: 700;
+    cursor: pointer;
+    transition: transform .16s ease, box-shadow .16s ease, border-color .16s;
+  }
+  .btn .ic { width: 16px; height: 16px; }
+  .btn-dark { background: var(--ink); color: var(--paper); border: none; box-shadow: 0 12px 26px -12px rgba(15,23,42,.55); }
+  .btn-dark:hover { transform: translateY(-2px); box-shadow: var(--shadow-pop); }
+  .btn-line { border: 1.5px solid var(--line); color: var(--ink); background: transparent; font-family: var(--sans); }
+  .btn-line:hover { border-color: var(--ink); transform: translateY(-2px); }
+  .btn[disabled] { opacity: .45; cursor: not-allowed; box-shadow: none; }
+  .btn[disabled]:hover { transform: none; }
+
+  /* ===================== 交流群卡片 ===================== */
+  .group-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .card {
+    border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--paper); padding: 24px 26px;
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s;
+  }
+  .card:hover { transform: translateY(-3px); border-color: var(--ink); box-shadow: var(--shadow-pop); }
+  .card-head { display: flex; align-items: center; gap: 10px; }
+  .card-head .ic { width: 18px; height: 18px; color: var(--ink-3); transition: color .16s; }
+  .card:hover .card-head .ic { color: var(--accent); }
+  .card-head h3 { font-size: 15px; font-weight: 700; }
+  .card-head .badge {
+    margin-left: auto; font-family: var(--mono); font-size: 10.5px;
+    padding: 2.5px 9px; border-radius: 999px;
+    background: var(--wash); color: var(--ink-3); border: 1px solid var(--line);
+  }
+  .group-num {
+    font-family: var(--mono); font-size: 30px; font-weight: 600;
+    letter-spacing: .04em; margin: 14px 0 4px;
+  }
+  .group-num.pending { font-size: 18px; color: var(--ink-3); }
+  .card .d { font-size: 12.5px; color: var(--ink-2); }
+  .card-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+  .copy-btn.copied { border-color: var(--accent); color: var(--accent); }
+
+  /* ===================== 反馈渠道列表行 ===================== */
+  .rows { display: flex; flex-direction: column; gap: 10px; }
+  .row {
+    display: flex; align-items: center; gap: 16px;
+    border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--paper); padding: 15px 20px;
+    transition: border-color .16s, box-shadow .16s;
+  }
+  .row:hover { border-color: var(--ink); box-shadow: var(--shadow-pop); }
+  .row > .ic { width: 18px; height: 18px; color: var(--ink-3); flex-shrink: 0; transition: color .16s; }
+  .row:hover > .ic { color: var(--accent); }
+  .row-main { min-width: 0; flex: 1; }
+  .row-main h3 { font-size: 14px; font-weight: 700; }
+  .row-main .d { font-size: 12.5px; color: var(--ink-2); margin-top: 2px; }
+  .row .arr { width: 14px; height: 14px; color: var(--ink-3); flex-shrink: 0; transition: transform .16s, color .16s; }
+  .row:hover .arr { transform: translateX(3px); color: var(--accent); }
+
+  @media (max-width: 860px) {
+    .group-grid { grid-template-columns: 1fr; }
+    .wrap { padding: 30px 18px 70px; }
+  }
+</style>
 </head>
-<body class="font-sans bg-white dark:bg-base-950 text-base-900 dark:text-white min-h-screen flex items-center justify-center transition-colors duration-300">
-    <div class="text-center px-6 py-12 max-w-lg">
-        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-indigo-600 text-white mb-6 shadow-lg shadow-primary/30">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/></svg>
+<body>
+<div class="main">
+  <div class="wrap">
+
+    <header class="page-head">
+      <div class="kicker">FEEDBACK · 反馈与群聊</div>
+      <h1>有问题？<span class="hl">找到我们</span>。</h1>
+      <p class="sub">交流答疑、内容纠错、投稿共建——挑一个顺手的渠道。Hello CTF 是免费开源项目，你的反馈让它变得更好。</p>
+    </header>
+
+    <div class="g-title">交流群</div>
+    <div class="group-grid">
+      <div class="card">
+        <div class="card-head">
+          <svg class="ic"><use href="#i-users"/></svg>
+          <h3>QQ 交流群</h3>
+          <span class="badge">筹备中</span>
         </div>
-        <h1 class="text-3xl font-bold font-mono text-gradient mb-3">反馈与群聊入口</h1>
-        <p class="text-base-900/60 dark:text-white/50 mb-8">该页面正在建设中，敬请期待...</p>
-        <a href="../index.html" class="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-primary to-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/30 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/></svg>
-            返回首页
-        </a>
+        <div class="group-num pending" id="groupNum">群号待公布</div>
+        <p class="d">交流群正在筹备，群号公布后可在此一键复制、点击加群。着急的话先走下方反馈渠道。</p>
+        <div class="card-actions">
+          <button class="btn btn-line copy-btn" id="copyGroupBtn" disabled>
+            <svg class="ic"><use href="#i-file"/></svg><span id="copyGroupLabel">复制群号</span>
+          </button>
+          <a class="btn btn-dark" id="joinGroupBtn" hidden href="#" target="_blank" rel="noopener noreferrer">
+            <svg class="ic"><use href="#i-link"/></svg>加入群聊
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <svg class="ic"><use href="#i-mega"/></svg>
+          <h3>公告与动态</h3>
+        </div>
+        <p class="d" style="margin-top:14px">站点更新、赛事信息等内容会同步在首页「项目动态」和文档站公告中。想第一时间了解站点变化，常回首页看看。</p>
+        <div class="card-actions">
+          <a class="btn btn-line" href="../index.html">
+            <svg class="ic"><use href="#i-home"/></svg>返回首页
+          </a>
+        </div>
+      </div>
     </div>
-    <script>
-        const h = document.documentElement;
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) h.classList.add('dark');
-    </script>
+
+    <div class="g-title">反馈渠道</div>
+    <div class="rows">
+      <a class="row" href="https://github.com/ProbiusOfficial/Hello-CTF/issues" target="_blank" rel="noopener noreferrer">
+        <svg class="ic"><use href="#i-flag"/></svg>
+        <div class="row-main">
+          <h3>GitHub Issue</h3>
+          <p class="d">内容勘误、功能建议、问题反馈——直接在仓库提 Issue，可跟踪处理进度。</p>
+        </div>
+        <svg class="ic arr"><use href="#i-arrow"/></svg>
+      </a>
+      <a class="row" href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener noreferrer">
+        <svg class="ic"><use href="#i-tree"/></svg>
+        <div class="row-main">
+          <h3>参与共建（Pull Request）</h3>
+          <p class="d">项目开源可共建，欢迎直接提交 PR 补充或修正内容。</p>
+        </div>
+        <svg class="ic arr"><use href="#i-arrow"/></svg>
+      </a>
+      <a class="row" href="../hc-env/" target="_blank" rel="noopener noreferrer">
+        <svg class="ic"><use href="#i-book"/></svg>
+        <div class="row-main">
+          <h3>文档页评论区</h3>
+          <p class="d">每篇文档底部都有评论区（giscus），针对具体章节的疑问可直接在对应页面留言。</p>
+        </div>
+        <svg class="ic arr"><use href="#i-arrow"/></svg>
+      </a>
+      <a class="row" href="https://github.com/CTF-Archives" target="_blank" rel="noopener noreferrer">
+        <svg class="ic"><use href="#i-archive"/></svg>
+        <div class="row-main">
+          <h3>比赛附件 / Writeup 投稿</h3>
+          <p class="d">历届比赛附件与题解归档在 CTF-Archives 组织，通过 PR / Issue 提交你的题解。</p>
+        </div>
+        <svg class="ic arr"><use href="#i-arrow"/></svg>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<script src="/shell/search.js"></script>
+<script src="/shell/shell.js"></script>
+<script>Shell.mount({ active: "feedback" });</script>
+<script>
+(function () {
+  /* 群号公布后：填入 GROUP_NUMBER 与 GROUP_URL，复制按钮与加群按钮自动启用 */
+  var GROUP_NUMBER = '590430891';
+  var GROUP_URL = 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=wJ35e-T-qSlU7Y3Cs-PAasrAvZfRSc9k&authKey=WNEQbZUpolxgfKjUHHoUIoTBvSnvk2jZtcyWlhaDcUZ6ZYGgvywqi1ah5D7UwUrg&noverify=0&group_code=590430891';
+
+  var numEl = document.getElementById('groupNum');
+  var copyBtn = document.getElementById('copyGroupBtn');
+  var copyLabel = document.getElementById('copyGroupLabel');
+  var joinBtn = document.getElementById('joinGroupBtn');
+
+  if (GROUP_NUMBER) {
+    numEl.textContent = GROUP_NUMBER;
+    numEl.classList.remove('pending');
+    copyBtn.disabled = false;
+    var badge = document.querySelector('.card .badge');
+    if (badge) badge.textContent = '开放加入';
+  }
+  if (GROUP_URL) {
+    joinBtn.href = GROUP_URL;
+    joinBtn.hidden = false;
+  }
+
+  copyBtn.addEventListener('click', function () {
+    if (!GROUP_NUMBER) return;
+    navigator.clipboard.writeText(GROUP_NUMBER).then(function () {
+      copyLabel.textContent = '已复制';
+      copyBtn.classList.add('copied');
+      setTimeout(function () {
+        copyLabel.textContent = '复制群号';
+        copyBtn.classList.remove('copied');
+      }, 1500);
+    });
+  });
+})();
+</script>
 </body>
 </html>

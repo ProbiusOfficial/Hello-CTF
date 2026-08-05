@@ -1,0 +1,227 @@
+{#-
+  ============================================================
+  Hello-CTF 自定义 base.html（C 阶段）
+  mkdocs-material 退化为：md → 文章 HTML 渲染器 + .md-typeset 排版 CSS。
+  页面骨架（侧栏 / TOC / 搜索 / 项目动态 / 主题）全部是 Hello-CTF 外壳。
+  注意：material 已 pin 在 9.7.7，main/palette 的 hash 文件名与版本绑定。
+  ============================================================
+-#}
+{% import "partials/nav-item.html" as navitem with context %}
+{% import "partials/language.html" as lang with context %}
+{% macro render_toc(items) %}
+  <ul>
+    {% for item in items %}
+      <li>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+        {% if item.children %}{{ render_toc(item.children) }}{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}
+{% macro tn_items(children) %}
+  {% for item in children %}
+    {% if item.children %}
+      <div class="tn-group">{{ item.title }}</div>
+      {{ tn_items(item.children) }}
+    {% else %}
+      <a class="tn-link{% if item.active %} on{% endif %}" href="{{ item.url | url }}">{{ item.title }}</a>
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+{#- 顶层条目：图标 + 缩写（标题 → [图标, 缩写]） -#}
+{% set tn_meta = {
+  "AI时代：在正式开始之前": ["i-zap", "AI 时代"],
+  "前言": ["i-book", "前言"],
+  "环境设置": ["i-wrench", "环境"],
+  "MISC | 杂项": ["i-puzzle", "MISC"],
+  "Web | 网络攻防": ["i-globe", "Web"],
+  "Crypto | 密码学": ["i-lock", "Crypto"],
+  "Reverse | 逆向工程": ["i-cpu", "Reverse"],
+  "Pwn | 二进制安全": ["i-terminal", "Pwn"],
+  "AWD | 攻防模式": ["i-shield", "AWD"],
+  "AI | 人工智能安全": ["i-bot", "AI"],
+  "blockchain | 区块链安全": ["i-link", "区块链"],
+  "附录": ["i-tag", "附录"]
+} %}
+{% set active = "" %}
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if page.meta and page.meta.title %}
+    <title>{{ page.meta.title }} | {{ config.site_name }}</title>
+  {% elif page.title and page.title != config.site_name %}
+    <title>{{ page.title }} | {{ config.site_name }}</title>
+  {% else %}
+    <title>{{ config.site_name }}</title>
+  {% endif %}
+  <meta name="description" content="{{ config.site_description }}">
+  <link rel="icon" href="{{ 'assets/images/favicon.png' | url }}">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/main.ec1eaa64.min.css' | url }}">
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/palette.ab4e12ef.min.css' | url }}">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="{{ 'shell/shell.css' | url }}">
+  <link rel="stylesheet" href="{{ 'shell/shell-docs.css' | url }}">
+  <link rel="stylesheet" href="{{ 'shell/shell-article.css' | url }}">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  {% for path in config.extra_css %}
+    <link rel="stylesheet" href="{{ path | url }}">
+  {% endfor %}
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  {% include "partials/icons.html" %}
+
+  {% block extrahead %}{% endblock %}
+  {% include "partials/integrations/analytics/google.html" %}
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="{{ 'shell/search.js' | url }}"></script>
+  <script src="{{ 'shell/shell.js' | url }}"></script>
+  <script>Shell.mount({ active: "{{ active }}" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        {% for nav_item in nav.items %}
+          {% set meta = tn_meta.get(nav_item.title, ["i-book", nav_item.title]) %}
+          {% if nav_item.children %}
+            <div class="tn-item{% if nav_item.active %} on{% endif %}">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#{{ meta[0] }}"/></svg>{{ meta[1] }}<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">{{ tn_items(nav_item.children) }}</div>
+            </div>
+          {% else %}
+            <a class="tn-item tn-single{% if nav_item.active %} on{% endif %}" href="{{ nav_item.url | url }}"><svg class="ic tn-ico"><use href="#{{ meta[0] }}"/></svg>{{ meta[1] }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        {% include "partials/content.html" %}
+      </article>
+      {% if page.toc %}
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          {{ render_toc(page.toc) }}
+        </aside>
+      {% endif %}
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="{{ 'sidebar/feedback.html' | url }}">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  {% for script in config.extra_javascript %}
+    {{ script | script_tag }}
+  {% endfor %}
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  {% block scripts %}{% endblock %}
+</body>
+</html>

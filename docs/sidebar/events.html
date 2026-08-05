@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛事日历 - Hello CTF</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shell/shell.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--paper); color: var(--ink); font-family: var(--sans); line-height: 1.7; transition: background .25s, color .25s; }
+  a { color: inherit; text-decoration: none; }
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 48px 44px; }
+
+  /* 页头 */
+  .kicker { font-family: var(--mono); font-size: 12.5px; letter-spacing: .14em; color: var(--accent); }
+  .page-title { font-size: clamp(30px, 3.6vw, 40px); font-weight: 800; letter-spacing: -.03em; margin: 12px 0 10px; }
+  .page-title .hl { background: linear-gradient(transparent 60%, var(--hl) 60%); }
+  .page-sub { font-size: 15px; color: var(--ink-2); max-width: 640px; }
+  .head-row { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; margin-bottom: 30px; }
+  .ics { display: flex; gap: 10px; flex-wrap: wrap; }
+  .ics a {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-family: var(--mono); font-size: 12px; color: var(--ink-2);
+    border: 1px solid var(--line); border-radius: 9px; padding: 7px 13px;
+    transition: all .15s;
+  }
+  .ics a:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* 布局：日历 + 右栏 */
+  .ev-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(320px, 1fr); gap: 28px; align-items: start; }
+
+  /* 日历（卡片版，本站赛事中心） */
+  .cal { border: 1px solid var(--line); border-radius: 18px; background: var(--paper); overflow: hidden; }
+  .cal-head { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid var(--line); background: var(--wash); flex-wrap: wrap; gap: 10px; }
+  .cal-title { font-weight: 800; font-size: 18px; letter-spacing: -.01em; }
+  .cal-title span { font-family: var(--mono); font-weight: 600; color: var(--ink-3); font-size: 12.5px; margin-left: 10px; }
+  .cal-tools { display: flex; align-items: center; gap: 8px; }
+  .seg { display: flex; gap: 2px; margin-right: 6px; }
+  .seg button {
+    border: 1px solid transparent; background: transparent; cursor: pointer;
+    font-family: var(--mono); font-size: 11.5px; color: var(--ink-3);
+    padding: 4px 12px; border-radius: 8px; transition: all .15s;
+  }
+  .seg button:hover { color: var(--ink); }
+  .seg button.on { color: var(--accent); background: var(--accent-soft); font-weight: 700; }
+  .cal-nav { display: flex; gap: 5px; }
+  .cal-nav button {
+    height: 29px; min-width: 29px; border-radius: 8px; border: 1px solid var(--line);
+    background: var(--paper); color: var(--ink-2); cursor: pointer; font-family: var(--mono);
+    transition: all .15s; font-size: 14px; padding: 0 6px;
+  }
+  .cal-nav button:hover { border-color: var(--ink); color: var(--ink); }
+  .cal-dow, .cal-days { display: grid; grid-template-columns: repeat(7, 1fr); }
+  .cal-dow span { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; color: var(--ink-3); text-align: center; padding: 10px 0 6px; }
+  .day {
+    position: relative; min-height: 68px; padding: 8px 9px;
+    font-size: 13px; color: var(--ink-2);
+    border-top: 1px solid var(--line); border-left: 1px solid var(--line);
+    margin-left: -1px; cursor: default; transition: background .15s;
+  }
+  .day:hover { background: var(--wash); }
+  .day.dim { color: var(--ink-3); opacity: .4; }
+  .day.today .num { background: var(--accent); color: #fff; font-weight: 700; width: 24px; height: 24px; border-radius: 7px; display: inline-grid; place-items: center; }
+  .day.sel .num { box-shadow: 0 0 0 1.5px var(--accent); width: 24px; height: 24px; border-radius: 7px; display: inline-grid; place-items: center; }
+  .bars { position: absolute; left: 7px; right: 7px; bottom: 7px; display: flex; flex-direction: column; gap: 3px; }
+  .bar { height: 4px; border-radius: 2px; }
+  .cal-foot { padding: 11px 20px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--ink-3); font-family: var(--mono); }
+
+  /* 右栏 */
+  .side-cap { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; color: var(--ink-3); margin: 0 2px 12px; display: flex; justify-content: space-between; }
+  .cd-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 26px; }
+  .cd-card {
+    display: flex; align-items: center; gap: 13px;
+    border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--paper); padding: 13px 16px;
+    transition: transform .15s, border-color .15s;
+  }
+  .cd-card:hover { transform: translateY(-2px); border-color: var(--ink); }
+  .cd-card .edge { width: 4px; align-self: stretch; border-radius: 2px; flex-shrink: 0; }
+  .cd-card .info { min-width: 0; flex: 1; }
+  .cd-card .name { font-weight: 700; font-size: 13.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .cd-card .name .tag { font-family: var(--mono); font-size: 9.5px; font-weight: 700; padding: 1px 6px; border-radius: 5px; margin-right: 7px; vertical-align: 1px; }
+  .tag.cn { color: var(--cn); background: var(--cn-soft); }
+  .tag.intl { color: var(--intl); background: var(--intl-soft); }
+  .cd-card .meta { font-size: 11px; color: var(--ink-3); font-family: var(--mono); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .cd-card .cd { font-family: var(--mono); font-size: 14px; font-weight: 700; color: var(--accent); letter-spacing: -.02em; flex-shrink: 0; }
+
+  /* 下方整宽网格卡片 */
+  .all-cap { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; color: var(--ink-3); margin: 34px 2px 14px; display: flex; justify-content: space-between; }
+  .ev-scroll {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+    align-items: start;
+  }
+  .ev-card {
+    border: 1px solid var(--line); border-radius: 12px; background: var(--paper);
+    overflow: hidden; transition: border-color .15s;
+  }
+  .ev-card:hover { border-color: var(--ink); }
+  .ev-card .ev-head {
+    display: flex; align-items: center; gap: 11px;
+    padding: 11px 14px; cursor: pointer; user-select: none;
+  }
+  .ev-head .dotc { width: 8px; height: 8px; border-radius: 3px; flex-shrink: 0; }
+  .ev-head .tag { font-family: var(--mono); font-size: 9.5px; font-weight: 700; padding: 1px 6px; border-radius: 5px; flex-shrink: 0; line-height: 1.6; }
+  .ev-head .n { flex: 1; min-width: 0; font-weight: 600; font-size: 13.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .ev-head .d { font-family: var(--mono); font-size: 11px; color: var(--ink-3); flex-shrink: 0; }
+  .ev-head .ic { width: 13px; height: 13px; color: var(--ink-3); transition: transform .2s; flex-shrink: 0; }
+  .ev-card.open .ev-head .ic { transform: rotate(180deg); }
+  .ev-card .ev-body { display: none; border-top: 1px dashed var(--line); padding: 11px 14px 13px; }
+  .ev-card.open .ev-body { display: block; }
+  .ev-body .row { display: flex; justify-content: space-between; font-size: 12.5px; color: var(--ink-2); padding: 3px 0; }
+  .ev-body .row .k { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+  .ev-body .go {
+    display: inline-flex; align-items: center; gap: 7px; margin-top: 9px;
+    font-size: 12.5px; font-weight: 700; color: var(--paper);
+    background: var(--ink); border-radius: 9px; padding: 7px 14px;
+    transition: transform .15s;
+  }
+  .ev-body .go:hover { transform: translateY(-1px); }
+  .empty { font-size: 13px; color: var(--ink-3); padding: 8px 2px; }
+
+  /* 权重设置齿轮 */
+  .gear-btn {
+    height: 29px; width: 29px; border-radius: 8px; border: 1px solid var(--line);
+    background: var(--paper); color: var(--ink-3); cursor: pointer;
+    display: grid; place-items: center; transition: all .15s;
+  }
+  .gear-btn:hover { border-color: var(--ink); color: var(--ink); }
+  .gear-btn.on { color: var(--accent); border-color: var(--accent); }
+  .gear-btn .ic { width: 15px; height: 15px; }
+  .pop-gear { width: 250px; }
+  .pop-gear .t { font-family: var(--mono); font-size: 11px; color: var(--ink-3); letter-spacing: .1em; padding: 0 2px 8px; }
+  .pop-gear .wrow { display: flex; align-items: center; gap: 10px; padding: 4px 2px 6px; }
+  .pop-gear input[type="range"] { flex: 1; accent-color: var(--accent); }
+  .pop-gear input[type="number"] {
+    width: 62px; border: 1px solid var(--line); border-radius: 8px;
+    background: var(--paper); color: var(--ink);
+    font-family: var(--mono); font-size: 13px; padding: 4px 8px; outline: none;
+  }
+  .pop-gear input[type="number"]:focus { border-color: var(--accent); }
+  .pop-gear .note { font-size: 11px; color: var(--ink-3); padding: 4px 2px 2px; }
+
+  /* 日期悬浮框 */
+  .pop {
+    position: fixed; z-index: 80; width: 300px;
+    background: var(--paper); border: 1px solid var(--line); border-radius: 14px;
+    box-shadow: var(--shadow-pop); padding: 12px 14px;
+    animation: popin .14s ease;
+  }
+  @keyframes popin { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+  .pop-date { font-family: var(--mono); font-size: 11px; color: var(--ink-3); letter-spacing: .1em; padding: 0 2px 4px; }
+  .pop-ev { display: flex; gap: 10px; padding: 9px 2px 3px; border-top: 1px dashed var(--line); align-items: flex-start; }
+  .pop-ev .dotc { width: 8px; height: 8px; border-radius: 3px; margin-top: 6px; flex-shrink: 0; }
+  .pop-ev .n { font-weight: 700; font-size: 13px; line-height: 1.5; }
+  .pop-ev .n a:hover { color: var(--accent); }
+  .pop-ev .n .tag { font-family: var(--mono); font-size: 9.5px; font-weight: 700; padding: 1px 6px; border-radius: 5px; margin-left: 6px; vertical-align: 1px; }
+  .pop-ev .t { font-family: var(--mono); font-size: 11px; color: var(--ink-3); margin-top: 3px; }
+  .pop-empty { font-size: 12.5px; color: var(--ink-3); padding: 6px 2px 4px; }
+
+  @media (max-width: 1280px) { .ev-scroll { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 1080px) { .ev-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 860px) { .wrap { padding: 76px 18px 30px; } }
+  @media (max-width: 640px) { .ev-scroll { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<script src="/shell/search.js"></script>
+<script src="/shell/shell.js"></script>
+<script>Shell.mount({ active: "events" });</script>
+
+<div class="main">
+<div class="wrap">
+  <div class="head-row">
+    <div>
+      <div class="kicker">EVENTS · 赛事日历</div>
+      <h1 class="page-title">每一场比赛，<span class="hl">都不错过</span>。</h1>
+      <p class="page-sub">国内赛事由本站维护，国外赛事抓取自 CTFtime，每日自动更新。点击日历日期查看当天比赛详情。</p>
+    </div>
+    <div class="ics">
+      <a href="../Event/calendar/CN.ics" target="_blank" rel="noopener"><svg class="ic"><use href="#i-calendar"/></svg>订阅国内 .ics</a>
+      <a href="../Event/calendar/Global.ics" target="_blank" rel="noopener"><svg class="ic"><use href="#i-calendar"/></svg>订阅国外 .ics</a>
+      <a href="./archives.html"><svg class="ic"><use href="#i-archive"/></svg>历史比赛 →</a>
+    </div>
+  </div>
+
+  <div class="ev-grid">
+    <!-- 日历 -->
+    <div class="cal">
+      <div class="cal-head">
+        <div class="cal-title" id="calTitle">—<span></span></div>
+        <div class="cal-tools">
+          <div class="seg" id="segFilter">
+            <button data-f="all" class="on">所有</button><button data-f="cn">国内</button><button data-f="intl">国外</button>
+          </div>
+          <div class="cal-nav">
+            <button id="prevM" aria-label="上个月">‹</button>
+            <button id="todayM" aria-label="回到今天" style="font-size:12px;padding:0 10px">今天</button>
+            <button id="nextM" aria-label="下个月">›</button>
+          </div>
+          <button class="gear-btn" id="evGear" aria-label="筛选设置" title="筛选设置"><svg class="ic"><use href="#i-gear"/></svg></button>
+        </div>
+      </div>
+      <div class="cal-dow"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span></div>
+      <div class="cal-days" id="calDays"></div>
+      <div class="cal-foot">每场比赛一个颜色 · 点击日期查看详情 · 数据每日同步</div>
+    </div>
+
+    <!-- 右栏：即将开始倒计时 -->
+    <div>
+      <div class="side-cap"><span>UPCOMING · 即将开始</span></div>
+      <div class="cd-list" id="cdList"></div>
+    </div>
+  </div>
+
+  <!-- 下方：横屏滚动的全部近期赛事卡片 -->
+  <div class="all-cap"><span>ALL · 近期赛事</span><span id="evCount"></span></div>
+  <div class="ev-scroll" id="evList"></div>
+</div>
+</div>
+
+<script>
+/* ============ 数据：build.py 生成的 JSON ============ */
+let EVENTS = [];
+const PALETTE = ["#ef4444", "#f97316", "#eab308", "#22c55e", "#06b6d4", "#3b82f6", "#8b5cf6", "#ec4899", "#14b8a6", "#f43f5e"];
+function assignColors(events) {
+  [...events].sort((a, b) => a.start < b.start ? -1 : 1)
+    .forEach((e, i) => { e.color = PALETTE[i % PALETTE.length]; });
+}
+function parseCnTime(s) {
+  const m = (s || "").match(/(\d{4})年(\d{1,2})月(\d{1,2})日\s+(\d{1,2}):(\d{2})/);
+  if (!m) return null;
+  const p = n => String(n).padStart(2, "0");
+  return `${m[1]}-${p(m[2])}-${p(m[3])}T${p(m[4])}:${m[5]}:00+08:00`;
+}
+function parseGlobalTime(s) {
+  const m = (s || "").match(/(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2}):\d{2}\s*-\s*(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2}):\d{2}/);
+  return m ? [`${m[1]}T${m[2]}:00+08:00`, `${m[3]}T${m[4]}:00+08:00`] : [null, null];
+}
+async function loadEvents() {
+  const events = [];
+  try {
+    const cn = await (await fetch("../Event/json/CN.json")).json();
+    for (const e of (cn.data && cn.data.result) || []) {
+      const start = parseCnTime(e.comp_time_start), end = parseCnTime(e.comp_time_end);
+      if (!start || !end) continue;
+      events.push({ name: e.name, region: "cn", start, end,
+        form: (e.detail || "").replace(/^赛制\/类型:\s*/, ""), url: e.link || "#" });
+    }
+  } catch (err) {}
+  try {
+    const gl = await (await fetch("../Event/json/Global.json")).json();
+    for (const e of gl || []) {
+      const [start, end] = parseGlobalTime(e["比赛时间"]);
+      if (!start || !end) continue;
+      events.push({ name: e["比赛名称"], region: "intl", start, end,
+        form: e["比赛形式"] || "", url: e["比赛链接"] || "#",
+        weight: parseFloat(e["比赛权重"]) || 0 });
+    }
+  } catch (err) {}
+  EVENTS = events;
+  assignColors(EVENTS);
+  document.dispatchEvent(new Event("events-ready"));
+}
+loadEvents();
+
+/* 国际赛权重过滤（默认只看 ≥50，可手动调整，localStorage 持久化；国内赛事不受影响） */
+let weightMin = +(localStorage.getItem("hc-ev-weight") ?? 50);
+function passWeight(e) { return e.region !== "intl" || (e.weight || 0) >= weightMin; }
+
+/* ============ 日历 ============ */
+const CAL = (function () {
+  const daysEl = document.getElementById("calDays");
+  const titleEl = document.getElementById("calTitle");
+  const now = new Date();
+  let viewY = now.getFullYear(), viewM = now.getMonth();
+  let regionFilter = "all";
+  let selDate = null;
+
+  const pop = document.createElement("div");
+  pop.className = "pop"; pop.hidden = true;
+  document.body.appendChild(pop);
+
+  function iso(y, m, d) { return y + "-" + String(m + 1).padStart(2, "0") + "-" + String(d).padStart(2, "0"); }
+  function visibleEvents() { return EVENTS.filter(e => (regionFilter === "all" || e.region === regionFilter) && passWeight(e)); }
+  function eventsOn(d) { return visibleEvents().filter(e => d >= e.start.slice(0, 10) && d <= e.end.slice(0, 10)); }
+  function hidePop() { pop.hidden = true; selDate = null; daysEl.querySelectorAll(".day.sel").forEach(d => d.classList.remove("sel")); }
+  function showPop(cell, dateStr) {
+    const evs = eventsOn(dateStr);
+    pop.innerHTML = '<div class="pop-date">' + dateStr + "</div>" +
+      (evs.length
+        ? evs.map(e =>
+            '<div class="pop-ev"><span class="dotc" style="background:' + e.color + '"></span>' +
+            '<div><div class="n"><a href="' + e.url + '" target="_blank" rel="noopener">' + e.name + "</a>" +
+            '<span class="tag ' + e.region + '">' + (e.region === "cn" ? "国内" : "国际") + "</span></div>" +
+            '<div class="t">' + e.start.slice(0, 16).replace("T", " ") + " → " + e.end.slice(0, 16).replace("T", " ") + " · " + e.form + "</div></div></div>"
+          ).join("")
+        : '<div class="pop-empty">这一天没有进行中的比赛</div>');
+    pop.hidden = false;
+    const r = cell.getBoundingClientRect();
+    let x = Math.max(10, Math.min(r.left + r.width / 2 - 150, window.innerWidth - 310));
+    let y = r.bottom + 8;
+    if (y + pop.offsetHeight > window.innerHeight - 10) y = r.top - pop.offsetHeight - 8;
+    pop.style.left = x + "px"; pop.style.top = y + "px";
+  }
+  function render() {
+    const first = new Date(viewY, viewM, 1);
+    const startOffset = (first.getDay() + 6) % 7;
+    const daysInMonth = new Date(viewY, viewM + 1, 0).getDate();
+    const prevDays = new Date(viewY, viewM, 0).getDate();
+    titleEl.innerHTML = viewY + " 年 " + (viewM + 1) + " 月<span>" +
+      first.toLocaleString("en-US", { month: "long" }).toUpperCase() + "</span>";
+    const evs = visibleEvents();
+    let html = "";
+    const total = Math.ceil((startOffset + daysInMonth) / 7) * 7;
+    for (let i = 0; i < total; i++) {
+      const dNum = i - startOffset + 1;
+      let y = viewY, m = viewM, d = dNum, dim = false;
+      if (dNum < 1) { m = viewM - 1; d = prevDays + dNum; dim = true; if (m < 0) { m = 11; y--; } }
+      else if (dNum > daysInMonth) { m = viewM + 1; d = dNum - daysInMonth; dim = true; if (m > 11) { m = 0; y++; } }
+      const dateStr = iso(y, m, d);
+      const isToday = dateStr === iso(now.getFullYear(), now.getMonth(), now.getDate());
+      let bars = "";
+      for (const ev of evs)
+        if (dateStr >= ev.start.slice(0, 10) && dateStr <= ev.end.slice(0, 10))
+          bars += '<span class="bar" style="background:' + ev.color + '" title="' + ev.name + '"></span>';
+      html += '<div class="day' + (dim ? " dim" : "") + (isToday ? " today" : "") + '" data-date="' + dateStr + '">' +
+        '<span class="num">' + d + "</span>" + (bars ? '<div class="bars">' + bars + "</div>" : "") + "</div>";
+    }
+    daysEl.innerHTML = html;
+  }
+  daysEl.addEventListener("click", e => {
+    const cell = e.target.closest(".day");
+    if (!cell) return;
+    if (selDate === cell.dataset.date && !pop.hidden) { hidePop(); return; }
+    hidePop();
+    selDate = cell.dataset.date;
+    cell.classList.add("sel");
+    showPop(cell, selDate);
+  });
+  document.addEventListener("click", e => {
+    if (!pop.hidden && !e.target.closest(".pop") && !e.target.closest(".day")) hidePop();
+  });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") hidePop(); });
+  document.getElementById("segFilter").addEventListener("click", e => {
+    const btn = e.target.closest("button");
+    if (!btn) return;
+    regionFilter = btn.dataset.f;
+    document.querySelectorAll("#segFilter button").forEach(b => b.classList.toggle("on", b === btn));
+    hidePop(); render();
+    document.dispatchEvent(new CustomEvent("region-filter", { detail: regionFilter }));
+  });
+  document.getElementById("prevM").onclick = () => { viewM--; if (viewM < 0) { viewM = 11; viewY--; } hidePop(); render(); };
+  document.getElementById("nextM").onclick = () => { viewM++; if (viewM > 11) { viewM = 0; viewY++; } hidePop(); render(); };
+  document.getElementById("todayM").onclick = () => { viewY = now.getFullYear(); viewM = now.getMonth(); hidePop(); render(); };
+  render();
+  document.addEventListener("events-ready", render);
+  document.addEventListener("events-filter", render);
+  return { get filter() { return regionFilter; } };
+})();
+
+/* ============ 右栏：倒计时 + 全部近期赛事 ============ */
+(function () {
+  const cdList = document.getElementById("cdList");
+  const evList = document.getElementById("evList");
+  const evCount = document.getElementById("evCount");
+  let regionFilter = "all";
+
+  function build() {
+    const todayStr = new Date().toISOString().slice(0, 10);
+    const visible = EVENTS
+      .filter(e => e.end >= todayStr && (regionFilter === "all" || e.region === regionFilter) && passWeight(e))
+      .sort((a, b) => a.start < b.start ? -1 : 1);
+
+    cdList.innerHTML = visible.slice(0, 3).map(e =>
+      '<a class="cd-card" href="' + e.url + '" target="_blank" rel="noopener">' +
+        '<span class="edge" style="background:' + e.color + '"></span>' +
+        '<div class="info">' +
+          '<div class="name"><span class="tag ' + e.region + '">' + (e.region === "cn" ? "国内" : "国际") + "</span>" + e.name + "</div>" +
+          '<div class="meta">' + e.start.slice(5, 10) + " → " + e.end.slice(5, 10) + " · " + e.form + "</div>" +
+        "</div>" +
+        '<div class="cd" data-start="' + e.start + '">--</div>' +
+      "</a>"
+    ).join("") || '<div class="empty">该筛选下近期暂无赛事</div>';
+
+    evCount.textContent = visible.length + " 场";
+    evList.innerHTML = visible.map(e =>
+      '<div class="ev-card">' +
+        '<div class="ev-head">' +
+          '<span class="dotc" style="background:' + e.color + '"></span>' +
+          '<div class="n">' + e.name + "</div>" +
+          '<span class="tag ' + e.region + '">' + (e.region === "cn" ? "国内" : "国际") + "</span>" +
+          '<div class="d">' + e.start.slice(5, 10) + " → " + e.end.slice(5, 10) + "</div>" +
+          '<svg class="ic"><use href="#i-chev-down"/></svg>' +
+        "</div>" +
+        '<div class="ev-body">' +
+          '<div class="row"><span class="k">比赛时间</span><span>' + e.start.slice(0, 16).replace("T", " ") + " → " + e.end.slice(0, 16).replace("T", " ") + "</span></div>" +
+          '<div class="row"><span class="k">比赛形式</span><span>' + (e.form || "—") + "</span></div>" +
+          (e.region === "intl" ? '<div class="row"><span class="k">比赛权重</span><span>' + (e.weight || 0) + "</span></div>" : "") +
+          '<a class="go" href="' + e.url + '" target="_blank" rel="noopener">前往比赛 →</a>' +
+        "</div>" +
+      "</div>"
+    ).join("") || '<div class="empty">暂无赛事</div>';
+    evList.querySelectorAll(".ev-head").forEach(h => {
+      h.onclick = () => h.parentElement.classList.toggle("open");
+    });
+  }
+  build();
+  document.addEventListener("events-ready", build);
+  document.addEventListener("events-filter", build);
+  document.addEventListener("region-filter", e => { regionFilter = e.detail; build(); });
+
+  function pad(n) { return String(n).padStart(2, "0"); }
+  setInterval(function () {
+    const now = Date.now();
+    cdList.querySelectorAll(".cd").forEach(el => {
+      const diff = new Date(el.dataset.start).getTime() - now;
+      if (diff <= 0) { el.textContent = "进行中"; return; }
+      const d = Math.floor(diff / 864e5), h = Math.floor(diff % 864e5 / 36e5),
+            m = Math.floor(diff % 36e5 / 6e4), s = Math.floor(diff % 6e4 / 1e3);
+      el.textContent = d > 0 ? d + "d " + pad(h) + ":" + pad(m) : pad(h) + ":" + pad(m) + ":" + pad(s);
+    });
+  }, 1000);
+})();
+
+/* ============ 权重设置齿轮（手动输入数额，默认 50） ============ */
+(function () {
+  const gear = document.getElementById("evGear");
+  const pop = document.createElement("div");
+  pop.className = "pop pop-gear";
+  pop.hidden = true;
+  document.body.appendChild(pop);
+  function renderPop() {
+    pop.innerHTML = '<div class="t">国际赛权重过滤</div>' +
+      '<div class="wrow">' +
+        '<input type="range" id="wRange" min="0" max="100" step="1" value="' + weightMin + '">' +
+        '<input type="number" id="wNum" min="0" max="100" value="' + weightMin + '">' +
+      "</div>" +
+      '<div class="note">只显示权重 ≥ 该值的国际赛（0 = 全部）<br>国内赛事不受影响 · 设置自动保存</div>';
+    const range = pop.querySelector("#wRange");
+    const num = pop.querySelector("#wNum");
+    function apply(v) {
+      v = Math.max(0, Math.min(100, Math.round(+v) || 0));
+      weightMin = v;
+      range.value = v;
+      num.value = v;
+      localStorage.setItem("hc-ev-weight", v);
+      document.dispatchEvent(new Event("events-filter"));
+    }
+    range.oninput = e => apply(e.target.value);
+    num.onchange = e => apply(e.target.value);
+  }
+  gear.onclick = e => {
+    e.stopPropagation();
+    if (!pop.hidden) { pop.hidden = true; gear.classList.remove("on"); return; }
+    renderPop();
+    pop.hidden = false;
+    gear.classList.add("on");
+    const r = gear.getBoundingClientRect();
+    pop.style.left = Math.max(10, Math.min(r.right - 250, window.innerWidth - 260)) + "px";
+    pop.style.top = (r.bottom + 8) + "px";
+  };
+  document.addEventListener("click", e => {
+    if (!pop.hidden && !e.target.closest(".pop-gear") && !e.target.closest("#evGear")) {
+      pop.hidden = true;
+      gear.classList.remove("on");
+    }
+  });
+})();
+</script>
+</body>
+</html>
