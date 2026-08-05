@@ -52,47 +52,43 @@ hide:
     ---
     <!-- 主页赛事展示_开始 -->
     === "国内比赛"
-        ??? Quote "[NepCTF 2026](/isPrepare)"  
-            **比赛名称** : [NepCTF 2026](/isPrepare)  
-            **比赛时间** : 2026年07月10日 19:00 - 2026年07月12日 19:00  
-            **比赛详细** : 筹备中  
-                
+    
     === "国外比赛"
-        ??? Quote "[GPN CTF 2026](https://gpn24.ctf.kitctf.de/)"  
-            [![](https://ctftime.org/media/events/gulash_1.png){ width="200" align=left }](https://gpn24.ctf.kitctf.de/)  
-            **比赛名称** : [GPN CTF 2026](https://gpn24.ctf.kitctf.de/)  
+        ??? Quote "[Kali Team - CTF 26](https://kali-team.online/)"  
+            [![](https://ctftime.org/media/events/1ec82fa0-76a8-4693-9acc-fe4cc3c3b91f.png){ width="200" align=left }](https://kali-team.online/)  
+            **比赛名称** : [Kali Team - CTF 26](https://kali-team.online/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-06-05 18:00:00 - 2026-06-07 06:00:00 UTC+8  
-            **比赛权重** : 69.00  
-            **赛事主办** : KITCTF (https://ctftime.org/team/7221)  
-            **添加日历** : https://ctftime.org/event/3041.ics  
-            
-        ??? Quote "[RPCA CTF 2026](https://grandctf.rpca.ac.th/)"  
-            [![](){ width="200" align=left }](https://grandctf.rpca.ac.th/)  
-            **比赛名称** : [RPCA CTF 2026](https://grandctf.rpca.ac.th/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-06-06 01:00:00 - 2026-06-09 01:00:00 UTC+8  
-            **比赛权重** : 0  
-            **赛事主办** : RPCA Cyber Club (https://ctftime.org/team/132960)  
-            **添加日历** : https://ctftime.org/event/3278.ics  
-            
-        ??? Quote "[ZeroDay Heist 2026](https://ctf.cyberhx.com/)"  
-            [![](https://ctftime.org/media/events/ChatGPT_Image_May_20_2026_07_34_00_PM.png){ width="200" align=left }](https://ctf.cyberhx.com/)  
-            **比赛名称** : [ZeroDay Heist 2026](https://ctf.cyberhx.com/)  
-            **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-06-06 14:30:00 - 2026-06-06 20:30:00 UTC+8  
+            **比赛时间** : 2026-08-05 15:00:00 - 2026-08-06 03:00:00 UTC+8  
             **比赛权重** : 0.00  
-            **赛事主办** : CyberXoX (https://ctftime.org/team/374041)  
-            **添加日历** : https://ctftime.org/event/3308.ics  
+            **赛事主办** : Kali Team (https://ctftime.org/team/387378)  
+            **添加日历** : https://ctftime.org/event/3328.ics  
             
-        ??? Quote "[SAS CTF 2026 Quals](https://ctf.thesascon.com/)"  
-            [![](https://ctftime.org/media/events/SAS26_temp.png){ width="200" align=left }](https://ctf.thesascon.com/)  
-            **比赛名称** : [SAS CTF 2026 Quals](https://ctf.thesascon.com/)  
+        ??? Quote "[AEROSPACE VILLAGE STARPWN CTF](https://starpwn.ctfd.io/)"  
+            [![](https://ctftime.org/media/events/ctftime_logo_1.png){ width="200" align=left }](https://starpwn.ctfd.io/)  
+            **比赛名称** : [AEROSPACE VILLAGE STARPWN CTF](https://starpwn.ctfd.io/)  
             **比赛形式** : Jeopardy  
-            **比赛时间** : 2026-06-06 20:00:00 - 2026-06-07 20:00:00 UTC+8  
-            **比赛权重** : 31.00  
-            **赛事主办** : Drovosec, SAS CREW (https://ctftime.org/team/210132, https://ctftime.org/team/283057)  
-            **添加日历** : https://ctftime.org/event/3109.ics  
+            **比赛时间** : 2026-08-07 01:00:00 - 2026-08-10 02:00:00 UTC+8  
+            **比赛权重** : 24.65  
+            **赛事主办** : Visionspace (https://ctftime.org/team/383284)  
+            **添加日历** : https://ctftime.org/event/3342.ics  
+            
+        ??? Quote "[RoboHack AI CTF (Robotic Hacking Community at DEFCON 34)](https://www.robotichackingcommunity.com/)"  
+            [![](https://ctftime.org/media/events/Robotic_Hacking_Community_on_black-h_1.png){ width="200" align=left }](https://www.robotichackingcommunity.com/)  
+            **比赛名称** : [RoboHack AI CTF (Robotic Hacking Community at DEFCON 34)](https://www.robotichackingcommunity.com/)  
+            **比赛形式** : Hack quest  
+            **比赛时间** : 2026-08-07 08:00:00 - 2026-08-09 08:00:00 UTC+8  
+            **比赛权重** : 0  
+            **赛事主办** : robotichackingcommunity (https://ctftime.org/team/436123)  
+            **添加日历** : https://ctftime.org/event/3305.ics  
+            
+        ??? Quote "[DEF CON CTF 2026](https://bbbirds.org/)"  
+            [![](){ width="200" align=left }](https://bbbirds.org/)  
+            **比赛名称** : [DEF CON CTF 2026](https://bbbirds.org/)  
+            **比赛形式** : Attack-Defense  
+            **比赛时间** : 2026-08-08 00:00:00 - 2026-08-10 03:00:00 UTC+8  
+            **比赛权重** : 0.00  
+            **赛事主办** : Benevolent Bureau of Birds (https://ctftime.org/team/425757)  
+            **添加日历** : https://ctftime.org/event/3322.ics  
             
     <!-- 主页赛事展示_结束 -->
     [→ 了解更多](../Event/)
