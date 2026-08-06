@@ -25,65 +25,6 @@ comments: true
     您需要至少熟悉任意一个方向，对该方向有一定的认知，能够针对该方向知识点完成对应题目的命题。
     (以Web方向举例 您除了需要会Web方向的基础以外，还需要熟悉Docker技术)
 
-## 内容结构
-
-```mermaid
-flowchart LR
-    HC["Hello CTF"] --> Main["主教程 / HC"]
-    HC --> ET["赛事中心 / Event"]
-    HC --> TK["工具 / Toolkit"]
-    HC --> TG["知识点标签 / Tags"]
-    HC --> LB["配套靶场 / Labs"]
-    HC --> CR["命题与容器 / Create"]
-    HC --> AR["档案馆 / Archive"]
-    Main --> D1["MISC · Web · Crypto<br>Reverse · Pwn"]
-    Main --> D2["AWD · AI · Blockchain"]
-    ET --> E1["国内外赛事聚合<br>ICS 日历订阅 · 提交比赛"]
-    CR --> C1["Docker 教学 · 命题教程<br>ctf-docker-template"]
-```
-
-本项目围绕CTF分为了下面几个板块.  
-
-### **[主教程](https://hello-ctf.com/hc-start/) Hello CTF (/HC)** 
-
-HelloCTF项目的核心部分，包含CTF各个方向 (MISC、Web、Crypto、Reverse、Pwn，以及 AWD、AI、Blockchain 等),覆盖入门到提高各个阶段,每个知识点享有配套题目。 
-
-### **[赛事中心](https://hello-ctf.com/sidebar/events.html) Event**
-
-涵盖CTF 国内外 即将进行、正在进行、已经结束的所有比赛信息。国外赛事基于 CTFtime RSS 每日自动更新，国内赛事由我们手动维护。  
-
-同时提供 ICS 日历订阅，以及 [提交比赛](https://hello-ctf.com/submit_event.html) 入口，有办赛需求的团队也可以通过该入口与我们取得联系。
-
-### **[工具](https://hello-ctf.com/hc-toolkit/) Toolkit (/hc-toolkit)** 
-
-分类收录各种 CTF 工具，另设有 [工具 / MCP 导航页](https://hello-ctf.com/sidebar/tools.html)，持续收录好用的工具与 MCP 服务。
-
-### **[知识点标签](https://hello-ctf.com/hc-tags/) Tags (/hc-tags)** 
-
-收集 CTF 中存在过的各项知识点，提供简介和相关 Payload，方便快速确认自己学过 / 还未学过的内容。
-
-### **[配套靶场](https://hello-ctf.com/hc-labs/) Labs (/hc-labs)** 
-
-Hello-CTF 系列靶场的部署与解题文档，不想本地部署的话，也可以前往合作平台直接在线体验。
-
-### **[命题与容器](https://hello-ctf.com/Create/) Create** 
-
-围绕容器技术提供 [Docker 教学](https://hello-ctf.com/EE_Docker/)、CTF 命题技巧和封装教程，以及支持动态 Flag 的容器模板项目 [ctf-docker-template](https://github.com/CTF-Archives/ctf-docker-template) 的全部文档。  
-
-后续会更新如何从CTF过渡到安全实战领域，以及CTFer会面临的就业问题。
-
-### **[CTF档案馆](https://hello-ctf.com/hc-archive/) Archives (/hc-archive)** 
-
-收录CTF相关内容，包括但不限于: 
-
-- 师傅们的博客与友情链接收录
-
-- CTF联合战队信息以及招新公告(如果有的话)
-
-- CTFChannel 会列出CTF相关内容的UP主
-
-比赛题目归档 (包括对附件 / Docker存档) 基于GitHub组织 [CTF-Archives](https://github.com/CTF-Archives) 进行维护，所有涉及到的题目都会上传到 [NSSCTF](https://www.nssctf.cn/) 平台上，方便大家复现。
-
 ## 一些Q&A
 **这个项目和 CTF-Wiki 相比有什么优势或者特点👀**  
 

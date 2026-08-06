@@ -22,3 +22,6 @@ admin/config.json
 
 # Python 缓存
 __pycache__/
+
+# 冗余内容本地备份（不进 mkdocs 构建与版本管理）
+_backup/

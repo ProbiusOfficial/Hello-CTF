@@ -25,6 +25,7 @@
     { key: "submit",     icon: "i-mega",     label: "赛事提交", href: "/submit_event.html" },
     { cap: "其他 · MORE" },
     { key: "feedback",   icon: "i-users",    label: "反馈与群聊", href: "/sidebar/feedback.html" },
+    { key: "teams",      icon: "i-flag",     label: "联合战队", href: "/sidebar/under-construction.html" },
     { key: "about",      icon: "i-zap",      label: "关于",     href: "/hc-preface/about/" }
   ];
 
