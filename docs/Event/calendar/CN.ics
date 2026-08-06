@@ -4,11 +4,20 @@ PRODID:-//Hello-CTF//CN//
 CALSCALE:GREGORIAN
 X-WR-CALNAME:CN
 BEGIN:VEVENT
+SUMMARY:2026年电信和互联网行业网络安全管理员职业技能竞赛
+DTSTART:20261030T040000Z
+DTEND:20261030T100000Z
+UID:8cdb996b9b98d26819b91f0c2abe8955
+DTSTAMP:20260806T033616Z
+URL:https://mp.weixin.qq.com/s/DFokodTJ4nm30TQ7ffzWug
+DESCRIPTION:https://mp.weixin.qq.com/s/DFokodTJ4nm30TQ7ffzWug | 竞赛分为选拔赛和全国总决赛两个阶段。（一）选拔赛阶段：2026年10月30日前完成（二）全国总决赛阶段：2026年11月30日前完成由竞赛组委会统一组织全国总决赛。比赛时间未定，详细见https://mp.weixin.qq.com/s/DFokodTJ4nm30TQ7ffzWug
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:NepCTF 2026
 DTSTART:20260717T110000Z
 DTEND:20260719T110000Z
 UID:5c3e3a0fdfd9286419803c19e710f43a
-DTSTAMP:20260806T002724Z
+DTSTAMP:20260806T033616Z
 URL:https://www.nepctf.com/
 DESCRIPTION:https://www.nepctf.com/ | 赛制/类型:线上Jeopardy解题赛
 END:VEVENT
