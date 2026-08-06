@@ -9,9 +9,17 @@
                 "comp_time_end": "2026年07月19日 19:00",
                 "detail": "赛制/类型: 线上Jeopardy解题赛",
                 "status": "已经结束"
+            },
+            {
+                "name": "2026年电信和互联网行业网络安全管理员职业技能竞赛",
+                "link": "https://mp.weixin.qq.com/s/DFokodTJ4nm30TQ7ffzWug",
+                "comp_time_start": "2026年10月30日 12:00",
+                "comp_time_end": "2026年10月30日 18:00",
+                "detail": "竞赛分为选拔赛和全国总决赛两个阶段。\n（一）选拔赛阶段：2026年10月30日前完成\n（二）全国总决赛阶段：2026年11月30日前完成由竞赛组委会统一组织全国总决赛。\n比赛时间未定，详细见 https://mp.weixin.qq.com/s/DFokodTJ4nm30TQ7ffzWug",
+                "status": "即将开始"
             }
         ],
-        "total": 1,
+        "total": 2,
         "page": 1,
         "size": 20
     },
