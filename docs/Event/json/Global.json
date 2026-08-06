@@ -180,18 +180,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "HITCON CTF 2026 Quals",
-        "比赛时间": "2026-08-28 22:00:00 - 2026-08-30 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3340.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.hitcon.org/",
-        "比赛标志": "https://ctftime.org/media/events/63dc69a784f6f69a935d3cd01afa2fa7.jpg",
-        "比赛权重": "91.16",
-        "赛事主办": "HITCON (https://ctftime.org/team/8299)",
-        "比赛ID": "79",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "COMPFEST CTF 2026",
         "比赛时间": "2026-08-29 08:00:00 - 2026-08-30 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3290.ics",
@@ -633,7 +621,7 @@
         "比赛权重": "0",
         "赛事主办": "Kali Team (https://ctftime.org/team/387378)",
         "比赛ID": "1622",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "SCAN 2026 Online Qualifier",
@@ -1821,18 +1809,6 @@
         "比赛权重": "32.47",
         "赛事主办": "squ1rrel (https://ctftime.org/team/201730)",
         "比赛ID": "1110",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BlueHens CTF 2026",
-        "比赛时间": "2026-04-18 01:00:00 - 2026-04-19 13:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3235.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://bluehens.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/1649244ad20feb4c02d8740a7cb035d3.png",
-        "比赛权重": "44.77",
-        "赛事主办": "Blue Hens (https://ctftime.org/team/64660)",
-        "比赛ID": "603",
         "比赛状态": "past"
     }
 ]
