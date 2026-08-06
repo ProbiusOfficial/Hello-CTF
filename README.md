@@ -13,9 +13,7 @@
     </div>
 
 
-文档依靠Mkdocs-material 基于GitHub Pages 依靠 gh-pages 部署在 [https://hello-ctf.com/](https://hello-ctf.com/)   
-
-因接入CDN，本站链接变更为：[https://hello-ctf.com/](https://hello-ctf.com/) ，感谢渊龙Sec安全团队[@AabyssZG](https://github.com/AabyssZG) 曾哥提供的CDN支持~
+文档基于 Mkdocs-Material 构建，通过 GitHub Pages 部署在 [https://hello-ctf.com/](https://hello-ctf.com/) ，感谢渊龙Sec安全团队[@AabyssZG](https://github.com/AabyssZG) 曾哥提供的CDN支持~
 
 您可以直接访问该页面[在线阅读](https://hello-ctf.com/)，如果您想要转载本项目，请带上项目源地址：https://github.com/ProbiusOfficial/Hello-CTF
 
@@ -30,6 +28,41 @@
 - 对于每个方向的基础知识点，我们都会尽力提供相应的题目(包括题目附件 题目源码 Dockerfile),所有题目均可本地部署也可在NSSCTF平台上直接开启,我们会在教程中逐步引导读者,并且鼓励读者自行复现,使学习过程更加具象;  
 - 在提供基础知识外，本书也将提供CTF相关的信息聚合，以消除信息差;  
 - 书籍在每篇文章下都设置有讨论区，欢迎讨论，提问，以及建议;   
+
+## 功能与板块
+
+- **主教程**：MISC / Web / Crypto / Reverse / Pwn 五大方向，以及 AWD / AI / Blockchain 等扩展方向，覆盖入门到提高各个阶段，每个知识点配有配套题目；
+- **赛事中心**：国内外赛事聚合，国外赛事基于 CTFtime RSS 每日自动更新，国内赛事手动维护，提供 ICS 日历订阅与「提交比赛」入口；
+- **工具**：CTF 工具百科，以及工具 / MCP 导航页；
+- **知识点标签**：收集 CTF 中出现过的各项知识点，提供简介与相关 Payload；
+- **配套靶场**：Hello-CTF 系列靶场的部署与解题文档，也可在合作平台在线体验；
+- **命题与容器**：Docker 教学、CTF 命题技巧与封装教程，以及动态 Flag 容器模板项目 [ctf-docker-template](https://github.com/CTF-Archives/ctf-docker-template)；
+- **CTF档案馆**：博客与友情链接、联合战队招新、CTF 相关 UP 主等内容收录。
+
+## 本地构建
+
+本项目基于 Python，克隆仓库后：
+
+```bash
+pip install -r requirements.txt
+mkdocs serve
+```
+
+或使用 Docker：
+
+```bash
+docker compose up --build
+```
+
+随后访问 [http://127.0.0.1:8000](http://127.0.0.1:8000) 即可预览。
+
+## 项目结构
+
+- `docs/` — 站点源码：教程文档、自定义首页与 sidebar 功能页、赛事数据等；
+- `overrides/` — Mkdocs-Material 主题覆写；
+- `build.py` / `events_update.py` — 赛事数据更新脚本，由 GitHub Action 每日自动运行；
+- `admin/` — 站点管理面板（管理赛事、首页内容、文档和部署）；
+- `collector/` — 消息收集器（接收赛事提交与意见反馈）。
 
 ## 加入我们
 

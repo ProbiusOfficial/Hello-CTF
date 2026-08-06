@@ -298,9 +298,17 @@
     .banner { margin-top: 72px; padding: 34px 22px; }
   }
   @media (max-width: 560px) {
-    .cd-card { flex: 1 1 100%; }
+    .cd-card { flex: 1 1 100%; padding: 11px 12px; gap: 10px; }
+    .cd-card .name { font-size: 12.5px; }
+    .cd-card .cd { font-size: 12px; }
     .nav-grid { grid-template-columns: 1fr; }
     .proj-grid { grid-template-columns: 1fr; }
+    /* 日历头部：标题不换行，工具行放不下就整体换行 */
+    .cal-head { flex-wrap: wrap; row-gap: 8px; }
+    .cal-title { font-size: 17px; white-space: nowrap; }
+    .cal-title span { display: none; }
+    .cal-nav button { height: 26px; min-width: 26px; }
+    .seg-cycle { font-size: 11px; }
   }
 </style>
 </head>
