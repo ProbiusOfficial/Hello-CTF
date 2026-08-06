@@ -54,7 +54,10 @@ def parse_cn_time(s):
 
 
 def cn_derived_status(event):
-    """由比赛时间推导三档状态：即将开始 / 正在进行 / 已经结束。"""
+    """由比赛时间推导三档状态：即将开始 / 正在进行 / 已经结束。
+    pending 赛事（时间待定）固定返回「时间待定」。"""
+    if event.get("pending"):
+        return "时间待定"
     now = utc8_now()
     try:
         start = parse_cn_time(event["comp_time_start"])
@@ -200,7 +203,7 @@ def maintain_cn():
         else:
             kept.append(event)
 
-    status_order = {"即将开始": 0, "正在进行": 1, "已经结束": 2}
+    status_order = {"时间待定": 0, "即将开始": 1, "正在进行": 2, "已经结束": 3}
     for event in kept:
         event["status"] = cn_derived_status(event)
     kept.sort(
