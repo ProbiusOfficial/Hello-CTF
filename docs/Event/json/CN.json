@@ -6,8 +6,17 @@
                 "name": "“铸网-2026”山东省工业互联网网络安全职业技能竞赛暨攻防演练（鲁智杯）",
                 "link": "https://mp.weixin.qq.com/s/K1xD5t-7sExZWwD1FtMrXA",
                 "detail": "赛制/类型: 线上初赛（理论+CTF）+ 现场决赛\n主办：山东省通信管理局等；报名已于 08-05 截止\n官方拟于 2026 年 9 月举办，具体时间待定",
-                "status": "即将开始",
+                "status": "时间待定",
                 "pending": true
+            },
+            {
+                "name": "2026年电信和互联网行业网络安全管理员职业技能竞赛",
+                "link": "https://mp.weixin.qq.com/s/DFokodTJ4nm30TQ7ffzWug",
+                "comp_time_start": "2026年10月30日 12:00",
+                "comp_time_end": "2026年10月30日 18:00",
+                "detail": "竞赛分为选拔赛和全国总决赛两个阶段。（一）选拔赛阶段：2026年10月30日前完成（二）全国总决赛阶段：2026年11月30日前完成由竞赛组委会统一组织全国总决赛。比赛时间未定，详细见 https://mp.weixin.qq.com/s/DFokodTJ4nm30TQ7ffzWug",
+                "pending": true,
+                "status": "时间待定"
             },
             {
                 "name": "宁波市第九届网络安全大赛（初赛）",
@@ -103,15 +112,6 @@
                 "comp_time_start": "2026年10月24日 10:00",
                 "comp_time_end": "2026年10月25日 10:00",
                 "detail": "赛制/类型: 线上Jeopardy解题赛（初赛，24h）\n主办：北京理工大学 BITs2Sys 战队；校级学科竞赛",
-                "status": "即将开始"
-            },
-            {
-                "name": "2026年电信和互联网行业网络安全管理员职业技能竞赛",
-                "link": "https://mp.weixin.qq.com/s/DFokodTJ4nm30TQ7ffzWug",
-                "comp_time_start": "2026年10月30日 12:00",
-                "comp_time_end": "2026年10月30日 18:00",
-                "detail": "竞赛分为选拔赛和全国总决赛两个阶段。（一）选拔赛阶段：2026年10月30日前完成（二）全国总决赛阶段：2026年11月30日前完成由竞赛组委会统一组织全国总决赛。比赛时间未定，详细见 https://mp.weixin.qq.com/s/DFokodTJ4nm30TQ7ffzWug",
-                "pending": true,
                 "status": "即将开始"
             },
             {
