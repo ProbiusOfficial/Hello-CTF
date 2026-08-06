@@ -183,6 +183,26 @@
   .cd-cap { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 11px; letter-spacing: .12em; color: var(--ink-3); margin: 26px 2px 10px; }
   .cd-cap a:hover { color: var(--accent); }
 
+  /* ===================== 时间待定 / 长周期一排 ===================== */
+  .pd-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pd-item {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-size: 12.5px; font-weight: 600;
+    border: 1px dashed var(--line); border-radius: 999px;
+    padding: 5px 14px; color: var(--ink-2);
+    transition: border-color .15s, color .15s;
+  }
+  .pd-item:hover { border-color: var(--accent); color: var(--accent); }
+  .pd-item .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--cn); flex: none; }
+  .pd-item .lg-tag {
+    font-family: var(--mono); font-size: 9.5px; font-weight: 700;
+    background: var(--wash); border: 1px solid var(--line);
+    border-radius: 5px; padding: 1px 6px; color: var(--ink-3);
+  }
+  .pd-item .lg-tag.cn { color: var(--cn); background: var(--cn-soft); border-color: transparent; }
+  .pd-item .lg-tag.intl { color: var(--intl); background: var(--intl-soft); border-color: transparent; }
+  .pd-item .lg-time { font-family: var(--mono); font-size: 11px; color: var(--ink-3); font-weight: 400; }
+
   /* ===================== 快速开始弹窗 ===================== */
   .modal-mask {
     position: fixed; inset: 0; z-index: 90;
@@ -328,9 +348,21 @@
       </div>
     </div>
 
+    <!-- 正在进行一排：仅当前有比赛在进行时显示 -->
+    <div class="cd-cap" id="ocCap" hidden><span>ONCOMING · 正在进行</span></div>
+    <div class="cd-row" id="ocRow"></div>
+
     <!-- 倒计时一排：撑满 banner 宽度 -->
     <div class="cd-cap"><span>UPCOMING · 即将开始</span><a href="./sidebar/events.html">→ 全部赛事</a></div>
     <div class="cd-row" id="cdRow"></div>
+
+    <!-- 长周期赛事：持续超过 7 天，不上日历格 -->
+    <div class="cd-cap" id="lgCap" hidden><span>LONG · 长周期赛事</span></div>
+    <div class="pd-row" id="lgRow"></div>
+
+    <!-- 时间待定：已官宣但未公布具体时间的国内赛事 -->
+    <div class="cd-cap" id="pdCap" hidden><span>PENDING · 时间待定</span></div>
+    <div class="pd-row" id="pdRow"></div>
   </div>
 
   <!-- CTF 导航（数据驱动：index_content.json 的 navCards，可在管理面板维护） -->
@@ -423,12 +455,16 @@ async function loadEvents() {
   try {
     const cn = await (await fetch("./Event/json/CN.json")).json();
     for (const e of (cn.data && cn.data.result) || []) {
+      if (e.pending) {
+        PENDING.push({ name: e.name, url: e.link || "#" });
+        continue;
+      }
       const start = parseCnTime(e.comp_time_start);
       const end = parseCnTime(e.comp_time_end);
       if (!start || !end) continue;
       events.push({
         name: e.name, region: "cn", start, end,
-        form: (e.detail || "").replace(/^赛制\/类型:\s*/, ""),
+        form: (e.detail || "").replace(/^赛制\/类型:\s*/, "").split("\n")[0],
         url: e.link || "#"
       });
     }
@@ -447,9 +483,44 @@ async function loadEvents() {
   } catch (err) { console.warn("Global 赛事加载失败", err); }
   EVENTS = events;
   assignColors(EVENTS);
+  renderPending();
+  renderLong();
   document.dispatchEvent(new Event("events-ready"));
 }
 loadEvents();
+
+/* 长周期判定：持续超过 7 天 */
+function isLongEvent(e) {
+  return new Date(e.end) - new Date(e.start) > 7 * 864e5;
+}
+
+/* 时间待定一排（国内赛事 pending） */
+const PENDING = [];
+function renderPending() {
+  const cap = document.getElementById("pdCap");
+  const row = document.getElementById("pdRow");
+  if (!PENDING.length) { cap.hidden = true; row.innerHTML = ""; return; }
+  cap.hidden = false;
+  row.innerHTML = PENDING.map(e =>
+    '<a class="pd-item" href="' + e.url + '" target="_blank" rel="noopener">' +
+    '<span class="dot"></span>' + e.name + "</a>"
+  ).join("");
+}
+
+/* 长周期赛事一排（>7 天，标注持续时间 + 时间段） */
+function renderLong() {
+  const cap = document.getElementById("lgCap");
+  const row = document.getElementById("lgRow");
+  const longs = EVENTS.filter(isLongEvent)
+    .sort((a, b) => a.start < b.start ? -1 : 1);
+  if (!longs.length) { cap.hidden = true; row.innerHTML = ""; return; }
+  cap.hidden = false;
+  row.innerHTML = longs.map(e =>
+    '<a class="pd-item" href="' + e.url + '" target="_blank" rel="noopener" title="比赛持续时间很长">' +
+    '<span class="lg-tag ' + e.region + '">' + (e.region === "cn" ? "国内" : "国际") + "</span>" + e.name +
+    '<span class="lg-time">' + e.start.slice(5, 10) + " → " + e.end.slice(5, 10) + "</span></a>"
+  ).join("");
+}
 
 /* 国际赛权重过滤（与赛事中心页共享设置，默认 ≥50；国内赛事不受影响） */
 let weightMin = +(localStorage.getItem("hc-ev-weight") ?? 50);
@@ -500,8 +571,12 @@ const CAL = (function () {
   function visibleEvents() {
     return EVENTS.filter(e => (regionFilter === "all" || e.region === regionFilter) && passWeight(e));
   }
+  /* 日历只显示 ≤7 天的赛事，长周期赛事不上日历格 */
+  function calEvents() {
+    return visibleEvents().filter(e => !isLongEvent(e));
+  }
   function eventsOn(dateStr) {
-    return visibleEvents().filter(e => dateStr >= e.start.slice(0, 10) && dateStr <= e.end.slice(0, 10));
+    return calEvents().filter(e => dateStr >= e.start.slice(0, 10) && dateStr <= e.end.slice(0, 10));
   }
   function hidePop() {
     pop.hidden = true;
@@ -539,7 +614,7 @@ const CAL = (function () {
     titleEl.innerHTML = viewY + " 年 " + (viewM + 1) + " 月<span>" +
       first.toLocaleString("en-US", { month: "long" }).toUpperCase() + "</span>";
 
-    const evs = visibleEvents();
+    const evs = calEvents();
     let html = "";
     const total = Math.ceil((startOffset + daysInMonth) / 7) * 7;
     for (let i = 0; i < total; i++) {
@@ -597,27 +672,41 @@ const CAL = (function () {
   return { now };
 })();
 
-/* ============ 倒计时一排（跟随日历的区域筛选） ============ */
+/* ============ 正在进行 / 即将开始两排（跟随日历的区域筛选，各最多 3 条） ============ */
 (function () {
+  const ocCap = document.getElementById("ocCap");
+  const ocRow = document.getElementById("ocRow");
   const row = document.getElementById("cdRow");
   let regionFilter = "cn";  /* 默认只看国内赛事 */
 
+  function card(e) {
+    return '<a class="cd-card" href="' + e.url + '">' +
+      '<span class="edge" style="background:' + e.color + '"></span>' +
+      '<div class="info">' +
+        '<div class="name" title="' + e.name.replace(/"/g, "&quot;") + '"><span class="tag ' + e.region + '">' + (e.region === "cn" ? "国内" : "国际") + "</span>" + e.name + "</div>" +
+        '<div class="meta">' + e.start.slice(5, 10) + " → " + e.end.slice(5, 10) + " · " + e.form + "</div>" +
+      "</div>" +
+      '<div class="cd" data-start="' + e.start + '">--</div>' +
+    "</a>";
+  }
+
   function build() {
     const todayStr = new Date().toISOString().slice(0, 10);
+    const inScope = e => (regionFilter === "all" || e.region === regionFilter) && passWeight(e);
+    /* 正在进行：今天落在起止时间内 */
+    const ongoing = EVENTS
+      .filter(e => e.start.slice(0, 10) <= todayStr && e.end.slice(0, 10) >= todayStr && inScope(e))
+      .sort((a, b) => a.end < b.end ? -1 : 1)
+      .slice(0, 3);
+    ocCap.hidden = !ongoing.length;
+    ocRow.innerHTML = ongoing.map(card).join("");
+    /* 即将开始：开始时间在未来 */
     const upcoming = EVENTS
-      .filter(e => e.end >= todayStr && (regionFilter === "all" || e.region === regionFilter) && passWeight(e))
+      .filter(e => e.start.slice(0, 10) > todayStr && inScope(e))
       .sort((a, b) => a.start < b.start ? -1 : 1)
       .slice(0, 3);
-    row.innerHTML = upcoming.map(e =>
-      '<a class="cd-card" href="' + e.url + '">' +
-        '<span class="edge" style="background:' + e.color + '"></span>' +
-        '<div class="info">' +
-          '<div class="name"><span class="tag ' + e.region + '">' + (e.region === "cn" ? "国内" : "国际") + "</span>" + e.name + "</div>" +
-          '<div class="meta">' + e.start.slice(5, 10) + " → " + e.end.slice(5, 10) + " · " + e.form + "</div>" +
-        "</div>" +
-        '<div class="cd" data-start="' + e.start + '">--</div>' +
-      "</a>"
-    ).join("") || '<div style="font-size:13px;color:var(--ink-3);padding:4px 2px">当前筛选下近期暂无赛事 · 点日历右上角的范围按钮切换看看 →</div>';
+    row.innerHTML = upcoming.map(card).join("") ||
+      '<div style="font-size:13px;color:var(--ink-3);padding:4px 2px">当前筛选下近期暂无赛事 · 点日历右上角的范围按钮切换看看 →</div>';
   }
   build();
   document.addEventListener("region-filter", e => { regionFilter = e.detail; build(); });
@@ -627,7 +716,7 @@ const CAL = (function () {
   function pad(n) { return String(n).padStart(2, "0"); }
   function tick() {
     const now = Date.now();
-    row.querySelectorAll(".cd").forEach(el => {
+    document.querySelectorAll("#cdRow .cd, #ocRow .cd").forEach(el => {
       const diff = new Date(el.dataset.start).getTime() - now;
       if (diff <= 0) { el.textContent = "进行中"; return; }
       const d = Math.floor(diff / 864e5);
