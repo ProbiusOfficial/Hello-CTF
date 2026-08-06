@@ -117,6 +117,22 @@
       <p class="sub">交流答疑、内容纠错、投稿共建——挑一个顺手的渠道。Hello CTF 是免费开源项目，你的反馈让它变得更好。</p>
     </header>
 
+    <div class="g-title">快速留言</div>
+    <div class="card" style="padding:22px 26px;">
+      <p class="d" style="margin-bottom:12px;">不想注册 GitHub？直接在这里留句话，会进入维护者的消息盒子。<strong>顺手一提：全站右下角都有个小喇叭</strong>，在任何页面点它就能反馈，还会自动带上你所在的页面，勘误特别好用。</p>
+      <textarea id="fbText" rows="4" placeholder="勘误、建议、想聊的都可以写在这里…" style="
+        width:100%; resize:vertical; font: inherit; font-size: 13.5px; line-height: 1.6;
+        border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 12px;
+        background: var(--paper); color: var(--ink); outline: none;
+      "></textarea>
+      <div class="card-actions" style="justify-content:flex-end; align-items:center;">
+        <span id="fbMsg" class="d"></span>
+        <button class="btn btn-dark" id="fbSend">
+          <svg class="ic"><use href="#i-mega"/></svg>发送
+        </button>
+      </div>
+    </div>
+
     <div class="g-title">交流群</div>
     <div class="group-grid">
       <div class="card">
@@ -151,7 +167,7 @@
       </div>
     </div>
 
-    <div class="g-title">反馈渠道</div>
+    <div class="g-title">其他反馈渠道</div>
     <div class="rows">
       <a class="row" href="https://github.com/ProbiusOfficial/Hello-CTF/issues" target="_blank" rel="noopener noreferrer">
         <svg class="ic"><use href="#i-flag"/></svg>
@@ -185,22 +201,6 @@
         </div>
         <svg class="ic arr"><use href="#i-arrow"/></svg>
       </a>
-    </div>
-
-    <div class="g-title">快速留言</div>
-    <div class="card" style="padding:22px 26px;">
-      <p class="d" style="margin-bottom:12px;">不想注册 GitHub？直接在这里留句话，会进入维护者的消息盒子。</p>
-      <textarea id="fbText" rows="4" placeholder="勘误、建议、想聊的都可以写在这里…" style="
-        width:100%; resize:vertical; font: inherit; font-size: 13.5px; line-height: 1.6;
-        border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 12px;
-        background: var(--paper); color: var(--ink); outline: none;
-      "></textarea>
-      <div class="card-actions" style="justify-content:flex-end; align-items:center;">
-        <span id="fbMsg" class="d"></span>
-        <button class="btn btn-dark" id="fbSend">
-          <svg class="ic"><use href="#i-mega"/></svg>发送
-        </button>
-      </div>
     </div>
 
   </div>
@@ -247,7 +247,7 @@
 
 /* 快速留言 → Hello-CTF 消息收集器（collector，部署在公网机器上） */
 (function () {
-  var COLLECTOR_ENDPOINT = 'http://110.42.47.58:9100/api/submit';
+  var COLLECTOR_ENDPOINT = 'https://helloctfmsg.cyclens.tech/api/submit';
   var btn = document.getElementById('fbSend');
   var msg = document.getElementById('fbMsg');
   btn.addEventListener('click', async function () {

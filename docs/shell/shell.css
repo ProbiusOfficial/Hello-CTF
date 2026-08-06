@@ -6,6 +6,7 @@
    ============================================================ */
 
 :root {
+  color-scheme: light; /* 让原生控件（日期/时间选择器等）默认亮色 */
   --ink: #0f172a;
   --ink-2: #475569;
   --ink-3: #94a3b8;
@@ -26,6 +27,7 @@
   --shadow-pop: 0 18px 40px -18px rgba(15, 23, 42, .28);
 }
 [data-theme="dark"] {
+  color-scheme: dark; /* 原生控件跟随暗色 */
   --ink: #e6eaf3;
   --ink-2: #9aa7bd;
   --ink-3: #64748b;
@@ -39,6 +41,8 @@
   --intl-soft: rgba(124, 58, 237, .15);
   --shadow-pop: 0 18px 40px -18px rgba(0, 0, 0, .6);
 }
+/* mkdocs 文档页（Material）暗色方案同样让原生控件跟随 */
+[data-md-color-scheme="slate"] { color-scheme: dark; }
 
 .ic {
   width: 16px; height: 16px; flex-shrink: 0;

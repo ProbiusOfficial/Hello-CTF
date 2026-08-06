@@ -22,6 +22,7 @@
     { cap: "赛事 · EVENTS" },
     { key: "events",     icon: "i-calendar", label: "赛事日历", href: "/sidebar/events.html" },
     { key: "archives",   icon: "i-archive",  label: "历史比赛", href: "/sidebar/archives.html" },
+    { key: "submit",     icon: "i-mega",     label: "赛事提交", href: "/submit_event.html" },
     { cap: "其他 · MORE" },
     { key: "feedback",   icon: "i-users",    label: "反馈与群聊", href: "/sidebar/feedback.html" },
     { key: "about",      icon: "i-zap",      label: "关于",     href: "/hc-preface/about/" }
@@ -210,6 +211,14 @@
   }
 
   /* ---------- 挂载入口 ---------- */
+  /* 注入全站反馈小喇叭（右下角），自身防重 */
+  function loadFeedbackWidget() {
+    if (window.__hcFbWidget) return;
+    const s = document.createElement("script");
+    s.src = "/shell/feedback-widget.js";
+    document.body.appendChild(s);
+  }
+
   window.Shell = {
     /* 完整外壳：侧边栏 + 项目动态（首页 / 独立页用） */
     mount(opts) {
@@ -226,6 +235,7 @@
       var st = document.getElementById("searchToggle");
       if (st && window.ShellSearch) st.onclick = function () { window.ShellSearch.open(); };
       injectIcons();
+      loadFeedbackWidget();
       document.body.classList.add("shell-mounted");
     },
     /* 仅项目动态面板：挂到页面里已有的按钮上（mkdocs 文档页头部用） */

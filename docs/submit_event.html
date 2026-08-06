@@ -1,341 +1,555 @@
 <!DOCTYPE html>
-<html lang="zh" class="scroll-smooth">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>提交国内赛事 - Hello CTF</title>
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTF/main/docs/assets/images/favicon.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: { DEFAULT: '#3b82f6', dark: '#2563eb' },
-                        accent: { DEFAULT: '#6366f1', dark: '#4f46e5' },
-                        base: { 50: '#f8fafc', 100: '#f1f5f9', 900: '#0f172a', 950: '#020617' }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        mono: ['JetBrains Mono', 'monospace'],
-                    },
-                }
-            }
-        }
-    </script>
-    <style>
-        .text-gradient {
-            background: linear-gradient(45deg, #3b82f6, #6366f1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .dark .text-gradient {
-            background: linear-gradient(45deg, #60a5fa, #818cf8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .grid-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -20;
-            background-image:
-                linear-gradient(to right, rgba(59, 130, 246, 0.05) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
-            background-size: 30px 30px;
-        }
-        .dark .grid-background {
-            background-image:
-                linear-gradient(to right, rgba(99, 102, 241, 0.05) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(99, 102, 241, 0.05) 1px, transparent 1px);
-        }
-        .card-surface {
-            border-radius: 1rem;
-            border: 1px solid rgba(226, 232, 240, 0.85);
-            background: rgba(255, 255, 255, 0.78);
-            box-shadow: 0 1px 2px rgba(59, 130, 246, 0.04), 0 8px 24px -4px rgba(15, 23, 42, 0.06);
-        }
-        .dark .card-surface {
-            border-color: rgba(51, 65, 85, 0.65);
-            background: rgba(15, 23, 42, 0.72);
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 12px 32px -8px rgba(0, 0, 0, 0.35);
-        }
-        .input-field {
-            width: 100%;
-            border-radius: 0.75rem;
-            border: 1px solid rgb(226 232 240);
-            background: rgb(255 255 255 / 0.9);
-            padding: 0.5rem 0.75rem;
-            font-size: 0.925rem;
-            outline: none;
-            transition: border-color 0.15s, box-shadow 0.15s;
-        }
-        .input-field:focus {
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
-        }
-        .dark .input-field {
-            border-color: rgb(51 65 85);
-            background: rgb(15 23 42 / 0.85);
-            color: #f1f5f9;
-        }
-        .dark .input-field:focus {
-            border-color: #818cf8;
-            box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.2);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>提交国内赛事 - Hello CTF</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTF/main/docs/assets/images/favicon.png">
+<link rel="stylesheet" href="/shell/shell.css">
+<script>
+  if (localStorage.getItem('hc-theme') === 'dark') document.documentElement.dataset.theme = 'dark';
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: var(--sans); line-height: 1.7;
+    transition: background .25s, color .25s;
+  }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--hl); }
+
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 30px 32px 60px; }
+
+  /* ===================== 渐变洗底容器（虚化无框，同首页 banner） ===================== */
+  .stage {
+    position: relative; margin-top: 20px;
+    border-radius: 26px;
+    background:
+      radial-gradient(640px 320px at 92% -12%, rgba(37, 99, 235, .09), transparent 62%),
+      radial-gradient(560px 300px at -6% 112%, rgba(34, 211, 238, .08), transparent 60%),
+      var(--wash);
+    padding: 44px 52px 40px;
+  }
+  .stage::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    border-radius: 26px;
+    background-image: radial-gradient(rgba(37, 99, 235, .14) 1px, transparent 1px);
+    background-size: 22px 22px;
+    -webkit-mask-image: linear-gradient(115deg, transparent 30%, #000 90%);
+    mask-image: linear-gradient(115deg, transparent 30%, #000 90%);
+  }
+  [data-theme="dark"] .stage::before { background-image: radial-gradient(rgba(96, 165, 250, .16) 1px, transparent 1px); }
+  .stage > * { position: relative; }
+
+  /* ===================== 页头 ===================== */
+  .kicker { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; color: var(--accent); }
+  .page-head h1 {
+    font-size: clamp(28px, 3vw, 38px);
+    font-weight: 800; letter-spacing: -.03em; line-height: 1.2;
+    margin: 8px 0 6px;
+  }
+  .page-head h1 .hl { background: linear-gradient(transparent 60%, var(--hl) 60%); }
+  .page-head .sub { font-size: 13.5px; color: var(--ink-2); max-width: 560px; }
+
+  /* ===================== 表单：两栏 ===================== */
+  .form-grid {
+    display: grid; grid-template-columns: 1.25fr 1fr; gap: 34px;
+    margin-top: 26px;
+  }
+  .f-label {
+    display: block; font-size: 13px; font-weight: 700; margin: 15px 0 6px;
+  }
+  .f-label:first-child { margin-top: 0; }
+  .f-label .hint { font-weight: 400; font-size: 11.5px; color: var(--ink-3); }
+
+  /* 无框输入：半透明底 + 底部柔线 */
+  .f-input {
+    width: 100%; font: inherit; font-size: 14px;
+    border: none; border-bottom: 1.5px solid var(--line); border-radius: 10px 10px 0 0;
+    background: color-mix(in srgb, var(--paper) 55%, transparent);
+    -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+    color: var(--ink);
+    padding: 9px 12px; outline: none;
+    transition: border-color .15s, background .15s;
+  }
+  .f-input:focus { border-bottom-color: var(--accent); background: var(--paper); }
+  .f-input::placeholder { color: var(--ink-3); }
+  textarea.f-input { resize: none; height: 100%; min-height: 208px; border-radius: 10px; border: none; }
+
+  /* ===================== 开始/结束 时间框 ===================== */
+  .dt-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .dt-box {
+    cursor: pointer; user-select: none;
+    display: flex; align-items: center; gap: 8px;
+    font-family: var(--mono); font-size: 12.5px;
+    border-bottom: 1.5px solid var(--line); border-radius: 10px 10px 0 0;
+    background: color-mix(in srgb, var(--paper) 55%, transparent);
+    -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+    padding: 9px 12px;
+    transition: border-color .15s, background .15s;
+  }
+  .dt-box:hover, .dt-box.editing { border-bottom-color: var(--accent); background: var(--paper); }
+  .dt-box .ic { width: 14px; height: 14px; color: var(--ink-3); flex: none; }
+  .dt-box .ph { color: var(--ink-3); }
+  .dt-box .cap { color: var(--ink-3); font-size: 11px; flex: none; }
+
+  /* ===================== 日历弹层 ===================== */
+  .dt-pop-wrap { position: relative; }
+  .dp {
+    position: absolute; top: 8px; left: 0; z-index: 60;
+    width: 316px; max-width: 100%;
+    padding: 14px 16px 12px;
+    background: var(--paper); border: 1px solid var(--line); border-radius: 14px;
+    box-shadow: var(--shadow-pop);
+  }
+  .dp-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+  .dp-title { font-weight: 800; font-size: 15px; letter-spacing: -.01em; }
+  .dp-title span { font-family: var(--mono); font-weight: 600; color: var(--ink-3); font-size: 11px; margin-left: 8px; }
+  .dp-nav { display: flex; gap: 5px; }
+  .dp-nav button {
+    width: 26px; height: 26px; border-radius: 7px; border: 1px solid var(--line);
+    background: var(--paper); color: var(--ink-2); cursor: pointer; font-family: var(--mono);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .dp-nav button:hover { border-color: var(--ink); color: var(--ink); }
+  .dp-dow, .dp-days { display: grid; grid-template-columns: repeat(7, 1fr); }
+  .dp-dow span { font-family: var(--mono); font-size: 9.5px; letter-spacing: .08em; color: var(--ink-3); text-align: center; padding: 6px 0 4px; }
+  .dp-day {
+    font-family: var(--mono); font-size: 12px; text-align: center;
+    padding: 5px 0; border: none; background: none; color: var(--ink);
+    cursor: pointer; border-radius: 7px;
+  }
+  .dp-day:hover { background: var(--accent-soft); }
+  .dp-day.blank { cursor: default; background: none; }
+  .dp-day.today { color: var(--accent); font-weight: 700; }
+  .dp-day.in-range { background: var(--accent-soft); border-radius: 0; }
+  .dp-day.sel { background: var(--accent) !important; color: #fff; font-weight: 700; }
+  .dp-foot {
+    display: flex; align-items: center; gap: 8px;
+    margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line);
+  }
+  .dp-foot .cap { font-size: 11.5px; color: var(--ink-3); }
+  .dp-foot select {
+    font: inherit; font-family: var(--mono); font-size: 12.5px;
+    border: 1px solid var(--line); border-radius: 7px; background: var(--paper); color: var(--ink);
+    padding: 3px 6px; outline: none; cursor: pointer;
+  }
+  .dp-foot select:focus { border-color: var(--accent); }
+  .dp-done {
+    margin-left: auto; width: 30px; height: 30px; border-radius: 8px;
+    border: 1px solid var(--line); background: var(--paper); color: var(--ink);
+    cursor: pointer; font-size: 14px; line-height: 1;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .dp-done:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ===================== 时长 chips ===================== */
+  .quick { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; margin-top: 10px; }
+  .quick .q-cap { font-size: 11.5px; color: var(--ink-3); }
+  .chip {
+    font: inherit; font-size: 12px; font-family: var(--mono); cursor: pointer;
+    border: none; border-radius: 999px; padding: 4px 13px;
+    background: color-mix(in srgb, var(--paper) 65%, transparent);
+    color: var(--ink-2);
+    transition: background .15s, color .15s;
+  }
+  .chip:hover { color: var(--accent); background: var(--paper); }
+  .chip.on { background: var(--accent); color: #fff; }
+
+  .end-hint { font-size: 12px; color: var(--ink-3); margin-top: 8px; font-family: var(--mono); }
+  .end-hint strong { color: var(--accent); font-weight: 600; }
+  /* 时间待定开关 */
+  .pending-row {
+    display: flex; align-items: center; gap: 8px;
+    margin-top: 12px; font-size: 12.5px; color: var(--ink-2); cursor: pointer;
+    user-select: none;
+  }
+  .pending-row input { accent-color: var(--accent); width: 14px; height: 14px; flex: none; }
+  .dt-off .dt-row, .dt-off .quick, .dt-off .end-hint { opacity: .35; pointer-events: none; }
+
+  /* ===================== 提交 ===================== */
+  .f-actions { display: flex; align-items: center; gap: 14px; margin-top: 16px; }
+  .f-actions .btn { flex: none; white-space: nowrap; }
+  #msg { flex: 1; font-size: 13px; min-height: 1.4em; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 9px;
+    padding: 12px 26px; border-radius: 12px; font-size: 14px; font-weight: 700;
+    cursor: pointer; border: none;
+    transition: transform .16s ease, box-shadow .16s ease;
+  }
+  .btn .ic { width: 16px; height: 16px; }
+  .btn-dark { background: var(--ink); color: var(--paper); box-shadow: 0 12px 26px -12px rgba(15,23,42,.55); }
+  .btn-dark:hover { transform: translateY(-2px); box-shadow: var(--shadow-pop); }
+  .btn[disabled] { opacity: .45; cursor: not-allowed; box-shadow: none; }
+  .btn[disabled]:hover { transform: none; }
+  #msg.ok { color: #15803d; }
+  #msg.err { color: #dc2626; }
+  [data-theme="dark"] #msg.ok { color: #4ade80; }
+  [data-theme="dark"] #msg.err { color: #f87171; }
+  .side-note { font-size: 12px; color: var(--ink-3); line-height: 1.8; margin-top: 12px; }
+  .side-note a { color: var(--accent); text-decoration: underline; }
+
+  @media (max-width: 860px) {
+    .wrap { padding: 20px 16px 46px; }
+    .stage { padding: 30px 24px; }
+    .form-grid { grid-template-columns: 1fr; gap: 0; }
+    textarea.f-input { min-height: 120px; }
+  }
+</style>
 </head>
-<body class="font-sans bg-white dark:bg-base-950 text-base-900 dark:text-white transition-colors duration-300 min-h-screen">
-    <div class="grid-background"></div>
+<body>
+<div class="main">
+  <div class="wrap">
+    <div class="stage">
 
-    <button id="themeToggle" type="button" class="fixed top-4 right-4 z-50 p-2.5 rounded-2xl border border-base-200/80 bg-white/90 text-primary shadow-md backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-base-700 dark:bg-base-900/90 dark:text-accent" aria-label="切换主题">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-        </svg>
-    </button>
-
-    <header class="border-b border-base-100 dark:border-base-900 px-4 py-4">
-        <div class="max-w-2xl mx-auto flex items-center justify-between gap-4">
-            <a href="./index.html" class="text-sm font-medium text-primary dark:text-accent hover:underline">← 返回首页</a>
+      <header class="page-head">
+        <div>
+          <div class="kicker">SUBMIT · 赛事提交</div>
+          <h1>你办比赛，<span class="hl">我们帮你吆喝</span>。</h1>
+          <p class="sub">填好下面几项点提交，我们每天都会看消息盒子，审核通过后比赛就会挂到赛事日历上。</p>
         </div>
-    </header>
+      </header>
 
-    <main class="max-w-2xl mx-auto px-4 py-8 pb-16">
-        <h1 class="text-2xl sm:text-3xl font-bold font-mono text-gradient mb-2">提交国内赛事信息</h1>
-        <p class="text-sm text-base-900/65 dark:text-white/55 mb-8 leading-relaxed">
-            填写后将生成与 <code class="font-mono text-xs px-1 py-0.5 rounded bg-base-100 dark:bg-base-800">CN.json</code> 一致结构的 JSON，可复制、下载，或使用「推送到接收器」发给维护端。
-            本页不会直接写入 GitHub 仓库。
-        </p>
+      <form id="f" autocomplete="off">
+        <div class="form-grid">
+          <div>
+            <label class="f-label" for="name">比赛名称 <span class="hint">（必填）</span></label>
+            <input class="f-input" id="name" name="name" type="text" required placeholder="例如：ExampleCTF 2026">
 
-        <div class="card-surface backdrop-blur-md p-5 sm:p-6 mb-8">
-            <form id="f" autocomplete="on" class="space-y-0">
-                <label for="name" class="block text-sm font-medium text-base-900 dark:text-white mt-0 mb-1.5">比赛名称 <span class="text-base-900/50 dark:text-white/45 font-normal">（必填）</span></label>
-                <input id="name" name="name" type="text" required class="input-field mb-5" placeholder="例如：ExampleCTF 2026" />
-
-                <label for="link" class="block text-sm font-medium text-base-900 dark:text-white mb-1.5">比赛地址（URL） <span class="text-base-900/50 dark:text-white/45 font-normal">（必填）</span></label>
-                <input id="link" name="link" type="text" required class="input-field mb-5" placeholder="https://... 或站内路径" />
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
-                    <div>
-                        <label for="t0" class="block text-sm font-medium text-base-900 dark:text-white mb-1.5">比赛开始 <span class="text-base-900/50 dark:text-white/45 font-normal text-xs">（本地时间）</span></label>
-                        <input id="t0" name="t0" type="datetime-local" required class="input-field" />
-                    </div>
-                    <div>
-                        <label for="t1" class="block text-sm font-medium text-base-900 dark:text-white mb-1.5">比赛结束</label>
-                        <input id="t1" name="t1" type="datetime-local" required class="input-field" />
-                    </div>
+            <label class="f-label">比赛时间</label>
+            <div class="dt-pop-wrap" id="dtWrap">
+              <div class="dt-row">
+                <div class="dt-box" id="stBox" data-mode="st">
+                  <svg class="ic"><use href="#i-calendar"/></svg>
+                  <span class="cap">开始</span>
+                  <span id="stText" class="ph">选日期</span>
                 </div>
-
-                <label for="detail" class="block text-sm font-medium text-base-900 dark:text-white mb-1.5">比赛详情 <span class="text-base-900/50 dark:text-white/45 font-normal">（主办方、报名、群号、赛制等）</span></label>
-                <textarea id="detail" name="detail" rows="5" class="input-field resize-y min-h-[120px] mb-5 font-mono text-sm"></textarea>
-
-                <div class="flex flex-wrap gap-2.5 pt-1">
-                    <button type="button" id="btnCopy" class="inline-flex items-center justify-center rounded-xl border-2 border-primary/35 bg-white/80 px-4 py-2.5 text-sm font-semibold text-primary shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/55 hover:bg-primary/[0.06] hover:shadow-md dark:border-accent/40 dark:bg-base-900/40 dark:text-accent dark:hover:border-accent/65 dark:hover:bg-accent/10">
-                        复制 JSON
-                    </button>
-                    <button type="button" id="btnDl" class="inline-flex items-center justify-center rounded-xl border border-base-200/90 bg-white/60 px-4 py-2.5 text-sm font-medium text-base-900/90 shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/45 dark:border-base-600/70 dark:bg-base-900/40 dark:text-white/90 dark:hover:border-accent/50">
-                        下载 JSON
-                    </button>
-                    <button type="button" id="btnPush" class="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-primary to-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-primary/25 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/35 dark:from-blue-500 dark:to-indigo-600">
-                        推送到接收器
-                    </button>
+                <div class="dt-box" id="etBox" data-mode="et">
+                  <svg class="ic"><use href="#i-calendar"/></svg>
+                  <span class="cap">结束</span>
+                  <span id="etText" class="ph">选日期</span>
                 </div>
+              </div>
+              <div class="dp" id="dpPop" hidden>
+                <div class="dp-head">
+                  <div class="dp-title" id="dpTitle"></div>
+                  <div class="dp-nav">
+                    <button type="button" id="dpPrev">‹</button>
+                    <button type="button" id="dpNext">›</button>
+                  </div>
+                </div>
+                <div class="dp-dow"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div>
+                <div class="dp-days" id="dpDays"></div>
+                <div class="dp-foot">
+                  <span class="cap" id="dpTimeCap">时间</span>
+                  <select id="tpH"></select><span class="cap">:</span><select id="tpM"></select>
+                  <button type="button" class="dp-done" id="dpDone" title="完成">✓</button>
+                </div>
+              </div>
+            </div>
+            <div class="quick" id="durChips">
+              <span class="q-cap">或按时长：</span>
+              <button type="button" class="chip" data-dur="3">3h</button>
+              <button type="button" class="chip" data-dur="6">6h</button>
+              <button type="button" class="chip" data-dur="9">9h</button>
+              <button type="button" class="chip" data-dur="12">12h</button>
+              <button type="button" class="chip" data-dur="24">24h</button>
+              <button type="button" class="chip" data-dur="48">48h</button>
+            </div>
+            <div class="end-hint" id="endHint"></div>
+            <label class="pending-row">
+              <input type="checkbox" id="pendingChk">
+              <span>时间待定（比赛已官宣，但具体时间还没公布）</span>
+            </label>
 
-                <p id="msg" class="mt-4 text-sm min-h-[1.25rem]" role="status" aria-live="polite"></p>
-                <pre id="out" class="hidden mt-4 p-4 rounded-xl border border-base-200 dark:border-base-700 bg-base-50 dark:bg-base-900/80 text-xs font-mono overflow-x-auto leading-relaxed text-base-900/90 dark:text-white/85 max-h-64 overflow-y-auto"></pre>
-            </form>
+            <label class="f-label" for="link">相关地址 <span class="hint">（必填，报名或比赛官网链接）</span></label>
+            <input class="f-input" id="link" name="link" type="text" required placeholder="https://…">
+          </div>
+
+          <div style="display:flex; flex-direction:column;">
+            <label class="f-label" for="detail">比赛描述 <span class="hint">（主办方、报名方式、交流群、赛制等，留空按 Jeopardy 记录）</span></label>
+            <textarea class="f-input" id="detail" name="detail" placeholder="例如：&#10;主办方：某某战队&#10;QQ群：123456&#10;赛制：线上解题赛，个人参赛"></textarea>
+            <div class="f-actions">
+              <button type="button" class="btn btn-dark" id="btnPush">
+                <svg class="ic"><use href="#i-calendar"/></svg>提交赛事
+              </button>
+              <p id="msg" role="status" aria-live="polite"></p>
+            </div>
+            <p class="side-note">通过后会出现在 <a href="/sidebar/events.html">赛事日历</a>；提交失败的话，去 <a href="/sidebar/feedback.html">反馈页</a> 或点右下角小喇叭告诉我们。</p>
+          </div>
         </div>
+      </form>
 
-        <div class="rounded-xl border-l-4 border-primary dark:border-accent bg-primary/5 dark:bg-accent/10 px-4 py-3 text-sm text-base-900/75 dark:text-white/70 leading-relaxed">
-            <strong class="text-base-900 dark:text-white">说明：</strong>
-            由于每天推送API设置上限，可能会推送失败；若推送失败，页面会<strong class="text-primary dark:text-accent">自动尝试下载 JSON</strong>，请保留文件并联系维护者或通过其他渠道提交。
-        </div>
-    </main>
+    </div>
+  </div>
+</div>
 
-    <script>
-        /**
-         * 推送到 Hello-CTF 消息收集器（collector，部署在公网机器上，
-         * 管理面板从「消息盒子」拉取处理）。换成你的 collector 地址即可。
-         */
-        var PUSH_ENDPOINT = 'http://110.42.47.58:9100/api/submit';
+<script src="/shell/search.js"></script>
+<script src="/shell/shell.js"></script>
+<script>Shell.mount({ active: "submit" });</script>
+<script>
+(function () {
+  /* 推送到 Hello-CTF 消息收集器（collector，管理面板从「消息盒子」拉取处理） */
+  var PUSH_ENDPOINT = 'https://helloctfmsg.cyclens.tech/api/submit';
 
-        function pad(n) {
-            return String(n).padStart(2, '0');
-        }
+  function $(id) { return document.getElementById(id); }
+  function pad(n) { return String(n).padStart(2, '0'); }
 
-        function toCnFormat(d) {
-            return (
-                d.getFullYear() +
-                '年' +
-                pad(d.getMonth() + 1) +
-                '月' +
-                pad(d.getDate()) +
-                '日 ' +
-                pad(d.getHours()) +
-                ':' +
-                pad(d.getMinutes())
-            );
-        }
+  function toCnFormat(d) {
+    return d.getFullYear() + '年' + pad(d.getMonth() + 1) + '月' + pad(d.getDate()) +
+      '日 ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
+  }
 
-        function getPayload() {
-            var name = document.getElementById('name').value.trim();
-            var link = document.getElementById('link').value.trim();
-            var detail = document.getElementById('detail').value.trim();
-            var v0 = document.getElementById('t0').value;
-            var v1 = document.getElementById('t1').value;
-            if (!name || !link || !v0 || !v1) {
-                throw new Error('请填写必填项（名称、链接、开始与结束时间）。');
-            }
-            var d0 = new Date(v0);
-            var d1 = new Date(v1);
-            if (isNaN(d0.getTime()) || isNaN(d1.getTime())) {
-                throw new Error('时间格式无效。');
-            }
-            if (d1 < d0) {
-                throw new Error('结束时间不能早于开始时间。');
-            }
-            return {
-                name: name,
-                link: link,
-                comp_time_start: toCnFormat(d0),
-                comp_time_end: toCnFormat(d1),
-                detail: detail,
-            };
-        }
+  function setMsg(text, isOk) {
+    var el = $('msg');
+    el.className = isOk ? 'ok' : 'err';
+    el.textContent = text;
+  }
 
-        function prettyJson(obj) {
-            return JSON.stringify(obj, null, 2);
-        }
+  /* ==================== 时间选择（开始/结束 双框 + 共享日历弹层） ==================== */
+  var selStart = null, selEnd = null;          // Date（仅日期）
+  var editing = 'st';                          // 弹层当前编辑哪一端
+  var viewY, viewM;
+  var popOpen = false;
 
-        function setMsg(text, isOk) {
-            var el = document.getElementById('msg');
-            el.textContent = '';
-            el.className = 'mt-4 text-sm min-h-[1.25rem] ' + (isOk ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400');
-            el.textContent = text;
-        }
+  function todayDate() { var d = new Date(); return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+  (function initView() { var t = todayDate(); viewY = t.getFullYear(); viewM = t.getMonth(); })();
 
-        function setMsgPushError(mainText, autoDownloaded) {
-            var el = document.getElementById('msg');
-            el.textContent = '';
-            el.className = 'mt-4 text-sm min-h-[1.25rem] text-red-600 dark:text-red-400';
-            var line1 = document.createElement('span');
-            line1.textContent = mainText;
-            el.appendChild(line1);
-            if (autoDownloaded) {
-                var line2 = document.createElement('span');
-                line2.className = 'block mt-2 text-amber-700 dark:text-amber-300';
-                line2.textContent = '已自动为你下载 JSON，请保留文件并改用其他方式提交。';
-                el.appendChild(line2);
-            }
-        }
+  /* 时间下拉：时 00-23，分 00/15/30/45，默认 12:00 */
+  (function fillTimeSelects() {
+    var sH = $('tpH');
+    for (var h = 0; h < 24; h++) {
+      var o = document.createElement('option');
+      o.value = o.textContent = pad(h);
+      if (h === 12) o.selected = true;
+      sH.appendChild(o);
+    }
+    ['00', '15', '30', '45'].forEach(function (m) {
+      var o = document.createElement('option');
+      o.value = o.textContent = m;
+      $('tpM').appendChild(o);
+    });
+  })();
 
-        function downloadJson(payload) {
-            var text = prettyJson(payload);
-            var safe = payload.name.replace(/[/\\?%*:|"<>]/g, '-').slice(0, 80);
-            var blob = new Blob([text], { type: 'application/json;charset=utf-8' });
-            var a = document.createElement('a');
-            a.href = URL.createObjectURL(blob);
-            a.download = 'cn-event-' + safe + '.json';
-            a.click();
-            URL.revokeObjectURL(a.href);
-        }
+  /* 两端的时分分别缓存在 data 属性里，弹层里的下拉只是当前编辑端的视图 */
+  var times = { st: { h: 12, m: 0 }, et: { h: 12, m: 0 } };
 
-        document.getElementById('btnCopy').addEventListener('click', async function () {
-            try {
-                var payload = getPayload();
-                var text = prettyJson(payload);
-                var pre = document.getElementById('out');
-                pre.textContent = text;
-                pre.classList.remove('hidden');
-                await navigator.clipboard.writeText(text);
-                setMsg('已复制到剪贴板。', true);
-            } catch (e) {
-                setMsg((e && e.message) || String(e), false);
-            }
-        });
+  function pullTimeFromPop() {
+    times[editing].h = Number($('tpH').value);
+    times[editing].m = Number($('tpM').value);
+  }
+  function pushTimeToPop() {
+    $('tpH').value = pad(times[editing].h);
+    $('tpM').value = pad(times[editing].m);
+    $('dpTimeCap').textContent = editing === 'st' ? '开始时间' : '结束时间';
+  }
 
-        document.getElementById('btnDl').addEventListener('click', function () {
-            try {
-                var payload = getPayload();
-                downloadJson(payload);
-                setMsg('已开始下载 JSON 文件。', true);
-                var pre = document.getElementById('out');
-                pre.textContent = prettyJson(payload);
-                pre.classList.remove('hidden');
-            } catch (e) {
-                setMsg((e && e.message) || String(e), false);
-            }
-        });
+  function startDateTime() {
+    if (!selStart) return null;
+    return new Date(selStart.getFullYear(), selStart.getMonth(), selStart.getDate(),
+      times.st.h, times.st.m);
+  }
+  function endDateTime() {
+    if (!selEnd) return null;
+    return new Date(selEnd.getFullYear(), selEnd.getMonth(), selEnd.getDate(),
+      times.et.h, times.et.m);
+  }
 
-        document.getElementById('btnPush').addEventListener('click', async function () {
-            var btn = document.getElementById('btnPush');
-            var payload;
-            try {
-                payload = getPayload();
-            } catch (e) {
-                setMsg((e && e.message) || String(e), false);
-                return;
-            }
-            var text = prettyJson(payload);
-            var pre = document.getElementById('out');
-            pre.textContent = text;
-            pre.classList.remove('hidden');
+  /* ---------- 弹层 ---------- */
+  function openPop(mode) {
+    if (popOpen && editing === mode) { closePop(); return; }
+    if (popOpen) pullTimeFromPop();
+    editing = mode;
+    popOpen = true;
+    $('dpPop').hidden = false;
+    $('stBox').classList.toggle('editing', mode === 'st');
+    $('etBox').classList.toggle('editing', mode === 'et');
+    /* 视图跳到该端已选日期所在月 */
+    var anchor = mode === 'st' ? selStart : selEnd;
+    if (anchor) { viewY = anchor.getFullYear(); viewM = anchor.getMonth(); }
+    pushTimeToPop();
+    renderCalendar();
+  }
+  function closePop() {
+    if (popOpen) pullTimeFromPop();
+    popOpen = false;
+    $('dpPop').hidden = true;
+    $('stBox').classList.remove('editing');
+    $('etBox').classList.remove('editing');
+    refreshSummary();
+  }
+  $('stBox').onclick = function () { openPop('st'); };
+  $('etBox').onclick = function () { openPop('et'); };
+  $('dpDone').onclick = closePop;
+  document.addEventListener('click', function (e) {
+    if (popOpen && !e.target.closest('.dt-pop-wrap')) closePop();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && popOpen) closePop();
+  });
+  $('tpH').addEventListener('change', function () { pullTimeFromPop(); refreshSummary(); });
+  $('tpM').addEventListener('change', function () { pullTimeFromPop(); refreshSummary(); });
 
-            btn.disabled = true;
-            setMsg('正在推送…', true);
-            try {
-                var body = {
-                    type: 'event',
-                    title: payload.name,
-                    content: payload,
-                };
-                var res = await fetch(PUSH_ENDPOINT, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(body),
-                });
-                if (!res.ok) {
-                    var t = await res.text().catch(function () {
-                        return '';
-                    });
-                    throw new Error('推送失败 HTTP ' + res.status + (t ? ' ' + t : ''));
-                }
-                setMsg('已提交，维护者会在管理面板的消息盒子中处理。', true);
-            } catch (e) {
-                var hint = (e && e.message) || String(e);
-                if (hint.indexOf('Failed to fetch') !== -1 || hint.indexOf('NetworkError') !== -1) {
-                    hint += '（多为跨域或网络限制）';
-                }
-                downloadJson(payload);
-                setMsgPushError(hint, true);
-            } finally {
-                btn.disabled = false;
-            }
-        });
+  /* ---------- 日历 ---------- */
+  function sameDay(a, b) {
+    return a && b && a.getFullYear() === b.getFullYear() &&
+      a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
+  }
 
-        var html = document.documentElement;
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            html.classList.add('dark');
-        } else {
-            html.classList.remove('dark');
-        }
-        document.getElementById('themeToggle').addEventListener('click', function () {
-            if (html.classList.contains('dark')) {
-                html.classList.remove('dark');
-                localStorage.theme = 'light';
-            } else {
-                html.classList.add('dark');
-                localStorage.theme = 'dark';
-            }
-        });
-    </script>
+  function renderCalendar() {
+    var first = new Date(viewY, viewM, 1);
+    var startOffset = (first.getDay() + 6) % 7;
+    var daysInMonth = new Date(viewY, viewM + 1, 0).getDate();
+    $('dpTitle').innerHTML = viewY + ' 年 ' + (viewM + 1) + ' 月<span>' +
+      first.toLocaleString('en-US', { month: 'long' }).toUpperCase() + '</span>';
+    var html = '';
+    var total = Math.ceil((startOffset + daysInMonth) / 7) * 7;
+    var today = todayDate();
+    for (var i = 0; i < total; i++) {
+      var dNum = i - startOffset + 1;
+      if (dNum < 1 || dNum > daysInMonth) {
+        html += '<button type="button" class="dp-day blank" tabindex="-1"></button>';
+        continue;
+      }
+      var d = new Date(viewY, viewM, dNum);
+      var cls = 'dp-day';
+      if (sameDay(d, today)) cls += ' today';
+      if (selStart && selEnd && d > selStart && d < selEnd) cls += ' in-range';
+      if (sameDay(d, selStart) || sameDay(d, selEnd)) cls += ' sel';
+      html += '<button type="button" class="' + cls + '" data-day="' + dNum + '">' + dNum + '</button>';
+    }
+    $('dpDays').innerHTML = html;
+    $('dpDays').querySelectorAll('[data-day]').forEach(function (b) {
+      b.onclick = function () { pickDay(Number(b.dataset.day)); };
+    });
+  }
+
+  function pickDay(dNum) {
+    var d = new Date(viewY, viewM, dNum);
+    if (editing === 'st') {
+      selStart = d;
+      /* 结束早于开始时，自动顺延 48h 兜底，免得马上报错 */
+      if (selEnd && startDateTime() >= endDateTime()) {
+        var e = new Date(startDateTime().getTime() + 48 * 3600 * 1000);
+        selEnd = new Date(e.getFullYear(), e.getMonth(), e.getDate());
+        times.et.h = e.getHours(); times.et.m = e.getMinutes();
+      }
+    } else {
+      selEnd = d;
+    }
+    clearChips();
+    renderCalendar();
+    refreshSummary();
+  }
+
+  $('dpPrev').onclick = function () { viewM--; if (viewM < 0) { viewM = 11; viewY--; } renderCalendar(); };
+  $('dpNext').onclick = function () { viewM++; if (viewM > 11) { viewM = 0; viewY++; } renderCalendar(); };
+
+  /* ---------- 时长 chips ---------- */
+  var chips = Array.prototype.slice.call(document.querySelectorAll('#durChips .chip'));
+  function clearChips() { chips.forEach(function (c) { c.classList.remove('on'); }); }
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      var s = startDateTime();
+      if (!s) { setMsg('请先选择比赛开始时间。', false); return; }
+      clearChips();
+      chip.classList.add('on');
+      var e = new Date(s.getTime() + Number(chip.dataset.dur) * 3600 * 1000);
+      selEnd = new Date(e.getFullYear(), e.getMonth(), e.getDate());
+      times.et.h = e.getHours(); times.et.m = e.getMinutes();
+      refreshSummary();
+    });
+  });
+
+  /* ---------- 摘要与框内文字 ---------- */
+  function fmtBox(d, t) {
+    return (d.getMonth() + 1) + '月' + d.getDate() + '日 ' + pad(t.h) + ':' + pad(t.m);
+  }
+
+  function refreshSummary() {
+    $('stText').classList.toggle('ph', !selStart);
+    $('stText').textContent = selStart ? fmtBox(selStart, times.st) : '选日期';
+    $('etText').classList.toggle('ph', !selEnd);
+    $('etText').textContent = selEnd ? fmtBox(selEnd, times.et) : '选日期';
+
+    var s = startDateTime(), e = endDateTime();
+    if (s && e) {
+      var hours = Math.round((e - s) / 360000) / 10;
+      $('endHint').innerHTML = e > s
+        ? '<strong>' + toCnFormat(s) + '</strong> 至 <strong>' + toCnFormat(e) + '</strong>（共约 ' + hours + ' 小时）'
+        : '<span style="color:#dc2626;">结束时间早于开始时间，请调整</span>';
+    } else if (s) {
+      $('endHint').innerHTML = '开始时间 <strong>' + toCnFormat(s) + '</strong>，请选择结束时间';
+    } else {
+      $('endHint').textContent = '';
+    }
+  }
+
+  /* ---------- 时间待定开关 ---------- */
+  $('pendingChk').addEventListener('change', function () {
+    var off = this.checked;
+    $('dtWrap').parentElement.classList.toggle('dt-off', off);
+    if (off) {
+      closePop();
+      $('endHint').textContent = '';
+      setMsg('已切换为时间待定，日期和时间都不用选。', true);
+    } else {
+      refreshSummary();
+    }
+  });
+
+  /* ==================== 提交 ==================== */
+  function getPayload() {
+    var name = $('name').value.trim();
+    var link = $('link').value.trim();
+    var detail = $('detail').value.trim();
+    if (!name || !link) throw new Error('请填写比赛名称和相关地址。');
+    if ($('pendingChk').checked) {
+      return { name: name, link: link, detail: detail, pending: true };
+    }
+    var s = startDateTime(), e = endDateTime();
+    if (!s) throw new Error('请选择比赛开始时间。');
+    if (!e) throw new Error('请选择比赛结束时间（或点击时长快捷选择）。');
+    if (e <= s) throw new Error('结束时间早于开始时间，请检查。');
+    return {
+      name: name,
+      link: link,
+      comp_time_start: toCnFormat(s),
+      comp_time_end: toCnFormat(e),
+      detail: detail,
+    };
+  }
+
+  $('btnPush').addEventListener('click', async function () {
+    var btn = $('btnPush');
+    var payload;
+    try {
+      payload = getPayload();
+    } catch (e) {
+      setMsg((e && e.message) || String(e), false);
+      return;
+    }
+    btn.disabled = true;
+    setMsg('正在提交…', true);
+    try {
+      var res = await fetch(PUSH_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'event', title: payload.name, content: payload }),
+      });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      setMsg('提交成功，审核通过后将显示在赛事日历上。', true);
+    } catch (e) {
+      setMsg('提交失败，请改用反馈页或右下角反馈按钮联系我们。', false);
+    } finally {
+      btn.disabled = false;
+    }
+  });
+})();
+</script>
 </body>
 </html>
