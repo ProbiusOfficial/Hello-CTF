@@ -14,6 +14,7 @@ from flask import Flask, jsonify, request, send_from_directory, session
 import ctftime
 import docs_api
 import deployer
+import repo_sync
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(BASE_DIR)
@@ -317,6 +318,34 @@ def docs_new():
         return jsonify({"ok": True})
     except docs_api.DocsError as e:
         return jsonify({"ok": False, "error": str(e)}), 400
+
+
+# ---------- 仓库同步（git 修复操作） ----------
+
+@app.get("/api/repo/status")
+@login_required
+def repo_status():
+    try:
+        return jsonify({"ok": True, "status": repo_sync.status(CONFIG["proxy"])})
+    except Exception as e:
+        return jsonify({"ok": False, "error": f"获取仓库状态失败：{e}"}), 502
+
+
+@app.post("/api/repo/<op>")
+@login_required
+def repo_op(op):
+    try:
+        if op == "pull":
+            result = repo_sync.pull(CONFIG["proxy"])
+        elif op == "push":
+            result = repo_sync.push(CONFIG["proxy"])
+        elif op == "rebase-abort":
+            result = repo_sync.rebase_abort()
+        else:
+            return jsonify({"ok": False, "error": "未知操作"}), 400
+        return jsonify({"ok": True, "result": result})
+    except repo_sync.RepoError as e:
+        return jsonify({"ok": False, "error": str(e)}), 502
 
 
 # ---------- 部署 ----------

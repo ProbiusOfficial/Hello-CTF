@@ -182,6 +182,16 @@
   .ap-item:last-child { border-bottom: none; }
   .ap-empty { color: var(--muted); }
 
+  /* ---------- 仓库同步 ---------- */
+  .repo-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .repo-bar .spacer { flex: 1; }
+  .repo-status { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .repo-status.warn { color: #b45309; font-weight: 600; }
+  .repo-msg {
+    margin-top: 10px; font-family: var(--mono); font-size: 12px; white-space: pre-wrap;
+    word-break: break-all; color: var(--muted); border-top: 1px solid var(--border); padding-top: 8px;
+  }
+
   /* ---------- 消息盒子 ---------- */
   .msg { margin-bottom: 12px; }
   .msg .card-pad { padding: 14px 16px; }
@@ -373,8 +383,8 @@
       </div>
       <div class="card table-card">
         <table>
-          <thead><tr><th>名称</th><th>比赛时间</th><th>状态</th><th style="width:140px;">操作</th></tr></thead>
-          <tbody id="events-tbody"><tr><td colspan="4" class="empty-row">加载中…</td></tr></tbody>
+          <thead><tr><th>名称</th><th>链接</th><th>比赛时间</th><th>状态</th><th style="width:170px;">操作</th></tr></thead>
+          <tbody id="events-tbody"><tr><td colspan="5" class="empty-row">加载中…</td></tr></tbody>
         </table>
       </div>
     </section>
@@ -487,6 +497,18 @@
         <h2>部署</h2>
         <div class="desc">build.py → mkdocs build → git push</div>
       </div>
+      <div class="card card-pad" style="margin-bottom:14px;">
+        <div class="repo-bar">
+          <strong style="font-size:13px;">仓库同步</strong>
+          <span id="repo-status-text" class="repo-status">点击「刷新状态」查看</span>
+          <div class="spacer"></div>
+          <button class="btn btn-sm" id="repo-status-btn">刷新状态</button>
+          <button class="btn btn-sm" id="repo-pull-btn">拉取</button>
+          <button class="btn btn-sm" id="repo-push-btn">推送</button>
+          <button class="btn btn-sm btn-danger" id="repo-abort-btn" hidden>中止变基</button>
+        </div>
+        <div id="repo-msg" class="repo-msg" hidden></div>
+      </div>
       <div class="toolbar">
         <button class="btn btn-primary" id="deploy-full-btn">一键部署</button>
         <button class="btn" id="deploy-build-btn">仅构建</button>
@@ -570,10 +592,10 @@ $("modal-mask").addEventListener("mousedown", (e) => { if (e.target === $("modal
 $("modal-ok-btn").onclick = () => { if (modalOkHandler) modalOkHandler(); };
 
 // 确认对话框（Promise）
-function confirmDialog(title, text, okText = "确认删除") {
+function confirmDialog(title, text, okText = "确认删除", danger = true) {
   return new Promise((resolve) => {
     openModal(title, `<p class="confirm-text">${escapeHtml(text)}</p>`, { okText, small: true });
-    $("modal-ok-btn").className = "btn btn-danger";
+    $("modal-ok-btn").className = danger ? "btn btn-danger" : "btn btn-primary";
     modalOkHandler = () => { closeModal(); resolve(true); };
     $("modal-cancel-btn").onclick = () => { closeModal(); resolve(false); };
   });
@@ -616,6 +638,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     document.querySelectorAll(".panel").forEach((p) => p.classList.remove("active"));
     $("panel-" + btn.dataset.tab).classList.add("active");
     if (btn.dataset.tab === "inbox" && !inboxLoaded) loadInbox();
+    if (btn.dataset.tab === "deploy") loadRepoStatus();
   };
 });
 
@@ -667,35 +690,77 @@ function renderInbox(messages) {
         <span class="msg-title">${escapeHtml(m.title || "")}</span>
         <span class="msg-time">${escapeHtml(m.time || "")}</span>
         <div class="spacer"></div>
-        ${isEvent ? `<button class="btn btn-sm btn-primary" data-import>导入赛事</button>` : ""}
-        <button class="btn btn-sm btn-danger" data-del>删除</button>
+        ${isEvent
+          ? `<button class="btn btn-sm btn-primary" data-approve>通过并加入当前赛事</button>
+             <button class="btn btn-sm" data-import>修改并加入当前赛事</button>
+             <button class="btn btn-sm btn-danger" data-del>删除</button>`
+          : `<button class="btn btn-sm btn-primary" data-done>标记为完成</button>`}
       </div>
       <div class="msg-body">${body}</div>
     </div>`;
+    const eventFromContent = () => {
+      const c = m.content || {};
+      const ev = {};
+      for (const k of ["name", "link", "comp_time_start", "comp_time_end", "detail"]) {
+        if (c[k]) ev[k] = String(c[k]);
+      }
+      if (c.pending) ev.pending = true;
+      return ev;
+    };
+    const approveBtn = box.querySelector("[data-approve]");
+    if (approveBtn) {
+      approveBtn.onclick = async () => {
+        const yes = await confirmDialog("通过赛事",
+          `直接把「${m.title}」加入当前赛事并推送？`, "确认通过", false);
+        if (!yes) return;
+        try {
+          const data = await api("/api/events/add",
+            { method: "POST", body: { event: eventFromContent() } });
+          await api("/api/inbox/delete", { method: "POST", body: { id: m.id } });
+          toast((data.result || "已加入") + "，消息已清除");
+          loadInbox();
+        } catch (e) {
+          toast(e.message, false);
+        }
+      };
+    }
     const importBtn = box.querySelector("[data-import]");
     if (importBtn) {
       importBtn.onclick = () => {
-        const c = m.content || {};
-        const ev = {};
-        for (const k of ["name", "link", "comp_time_start", "comp_time_end", "detail"]) {
-          if (c[k]) ev[k] = String(c[k]);
-        }
         switchTab("events");
         if (eventView !== "active") setEventView("active");
-        openEventModal(ev, true);
+        openEventModal(eventFromContent(), true);
       };
     }
-    box.querySelector("[data-del]").onclick = async () => {
-      const yes = await confirmDialog("删除消息", "确认删除这条消息？该操作不可恢复。");
-      if (!yes) return;
-      try {
-        await api("/api/inbox/delete", { method: "POST", body: { id: m.id } });
-        toast("已删除");
-        loadInbox();
-      } catch (e) {
-        toast(e.message, false);
-      }
-    };
+    const delBtn = box.querySelector("[data-del]");
+    if (delBtn) {
+      delBtn.onclick = async () => {
+        const yes = await confirmDialog("删除消息", "确认删除这条消息？该操作不可恢复。");
+        if (!yes) return;
+        try {
+          await api("/api/inbox/delete", { method: "POST", body: { id: m.id } });
+          toast("已删除");
+          loadInbox();
+        } catch (e) {
+          toast(e.message, false);
+        }
+      };
+    }
+    const doneBtn = box.querySelector("[data-done]");
+    if (doneBtn) {
+      doneBtn.onclick = async () => {
+        const yes = await confirmDialog("标记为完成",
+          "确认这条反馈已处理完？将从消息盒子移除。", "标记为完成", false);
+        if (!yes) return;
+        try {
+          await api("/api/inbox/delete", { method: "POST", body: { id: m.id } });
+          toast("已标记为完成");
+          loadInbox();
+        } catch (e) {
+          toast(e.message, false);
+        }
+      };
+    }
     list.appendChild(box);
   });
 }
@@ -721,7 +786,7 @@ async function loadEvents() {
     allEvents = data.events;
     renderEvents();
   } catch (e) {
-    $("events-tbody").innerHTML = `<tr><td colspan="4" class="empty-row">${escapeHtml(e.message)}</td></tr>`;
+    $("events-tbody").innerHTML = `<tr><td colspan="5" class="empty-row">${escapeHtml(e.message)}</td></tr>`;
   }
 }
 
@@ -729,14 +794,15 @@ function renderEvents() {
   const kw = $("event-search").value.trim().toLowerCase();
   const rows = allEvents.filter((e) => !kw || (e.name || "").toLowerCase().includes(kw));
   if (!rows.length) {
-    $("events-tbody").innerHTML = `<tr><td colspan="4" class="empty-row">无匹配赛事</td></tr>`;
+    $("events-tbody").innerHTML = `<tr><td colspan="5" class="empty-row">无匹配赛事</td></tr>`;
     return;
   }
   const archived = eventView === "archive";
   $("events-tbody").innerHTML = rows.map((e, i) => `
     <tr>
       <td>${escapeHtml(e.name)}</td>
-      <td class="mono" style="font-size:12px;">${escapeHtml(e.comp_time_start || "")}<br>${escapeHtml(e.comp_time_end || "")}</td>
+      <td class="url-cell">${e.link ? `<a href="${escapeHtml(e.link)}" target="_blank" rel="noopener">${escapeHtml(e.link)}</a>` : "—"}</td>
+      <td class="mono" style="font-size:12px;">${escapeHtml(e.comp_time_start || "待定")}<br>${escapeHtml(e.comp_time_end || "")}</td>
       <td><span class="pill">${archived ? "已存档" : escapeHtml(e.status || "—")}</span></td>
       <td><div class="ops">
         ${archived ? `<button class="btn btn-sm" data-restore="${i}">恢复</button>` : ""}
@@ -776,13 +842,23 @@ function openEventModal(event, asNew) {
   editingFromArchive = !asNew && eventView === "archive" && !!event;
   editingOriginalName = event && !asNew ? event.name : null;
   const fieldsHtml = EVENT_FIELDS.map(([key, label]) => {
-    return `<div class="${key === "name" || key === "link" || key === "detail" ? "full" : ""}">
+    if (key === "detail") {
+      return `<div class="full">
+        <label>${label}</label>
+        <textarea data-field="${key}" rows="5" style="resize:vertical;min-height:110px;">${escapeHtml(event ? (event[key] ?? "") : "")}</textarea></div>`;
+    }
+    return `<div class="${key === "name" || key === "link" ? "full" : ""}">
       <label>${label}</label>
       <input data-field="${key}" value="${escapeHtml(event ? (event[key] ?? "") : "")}"></div>`;
   }).join("");
+  const pendingChecked = event && event.pending ? "checked" : "";
   openModal(
     event ? `编辑比赛：${event.name}` : "添加比赛",
-    `<div class="form-grid">${fieldsHtml}</div>`,
+    `<div class="form-grid">${fieldsHtml}</div>
+     <label style="display:flex;align-items:center;gap:8px;margin-top:12px;font-size:13px;cursor:pointer;width:100%;">
+       <input type="checkbox" id="event-pending" ${pendingChecked} style="width:14px;height:14px;flex:none;margin:0;">
+       <span>时间待定（已官宣但具体时间未公布）</span>
+     </label>`,
     { onOk: saveEventModal }
   );
 }
@@ -795,6 +871,7 @@ async function saveEventModal() {
     if (v === "" && key !== "name") return; // 空字段不写入，保持 JSON 简洁
     event[key] = v;
   });
+  if ($("event-pending").checked) event.pending = true;
   if (!event.name) { toast("名称不能为空", false); return; }
 
   const action = editingOriginalName
@@ -828,7 +905,7 @@ async function deleteEvent(event) {
 
 async function restoreEvent(event) {
   const yes = await confirmDialog("恢复赛事",
-    `确认把「${event.name}」从存档移回在列赛事？该操作会直接提交并推送到本仓库。`);
+    `确认把「${event.name}」从存档移回在列赛事？该操作会直接提交并推送到本仓库。`, "确认恢复", false);
   if (!yes) return;
   try {
     const data = await api("/api/events/restore",
@@ -1210,6 +1287,52 @@ async function deleteTool(index) {
     toast(e.message, false);
   }
 }
+
+// ---------- 仓库同步 ----------
+async function loadRepoStatus() {
+  const el = $("repo-status-text");
+  el.classList.remove("warn");
+  el.textContent = "查询中…";
+  try {
+    const data = await api("/api/repo/status");
+    const s = data.status;
+    const parts = [s.branch];
+    if (s.ahead !== null && s.behind !== null) {
+      parts.push(`领先 ${s.ahead} / 落后 ${s.behind}`);
+    }
+    if (s.dirty >= 0) parts.push(`未提交 ${s.dirty} 个文件`);
+    el.textContent = parts.join(" · ");
+    if (s.rebase || (s.behind || 0) > 0) el.classList.add("warn");
+    if (s.rebase) el.textContent += " · 变基进行中（先中止或手动解决）";
+    $("repo-abort-btn").hidden = !s.rebase;
+  } catch (e) {
+    el.textContent = e.message;
+    el.classList.add("warn");
+  }
+}
+
+async function repoOp(op, label) {
+  const msg = $("repo-msg");
+  msg.hidden = false;
+  msg.textContent = label;
+  try {
+    const data = await api(`/api/repo/${op}`, { method: "POST" });
+    msg.textContent = data.result || "完成";
+    toast("完成", true);
+  } catch (e) {
+    msg.textContent = e.message;
+    toast(e.message, false);
+  }
+  loadRepoStatus();
+}
+$("repo-status-btn").onclick = loadRepoStatus;
+$("repo-pull-btn").onclick = () => repoOp("pull", "$ git pull --rebase --autostash …");
+$("repo-push-btn").onclick = () => repoOp("push", "$ git push …");
+$("repo-abort-btn").onclick = async () => {
+  const yes = await confirmDialog("中止变基",
+    "确认中止当前变基？仓库将回到变基前的状态（未解决的冲突改动会被丢弃）。", "中止变基");
+  if (yes) repoOp("rebase-abort", "$ git rebase --abort …");
+};
 
 // ---------- 部署 ----------
 let logIndex = 0;

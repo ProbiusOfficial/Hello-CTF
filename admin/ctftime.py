@@ -85,9 +85,11 @@ def _apply_mutation(data, kind, action, name, event):
 
 
 def _normalize_event(event):
-    """补默认 detail、按比赛时间写入三档 status。"""
+    """补默认 detail、按比赛时间写入状态（pending 为「时间待定」）。"""
     if not event.get("detail"):
         event["detail"] = DEFAULT_DETAIL
+    if not event.get("pending"):
+        event.pop("pending", None)  # 未勾选时不留字段，保持 JSON 简洁
     event["status"] = events_update.cn_derived_status(event)
     return event
 
@@ -116,7 +118,13 @@ def write(action, name, event=None, proxy=""):
             archive_update/archive_delete（存档 CN_archive.json）、
             restore（从存档移回在列）。
     """
-    _git(proxy, "pull", "--rebase")
+    # 先同步远程（每日构建可能改过赛事文件）；autostash 容忍工作区未提交改动
+    try:
+        _git(proxy, "pull", "--rebase", "--autostash")
+    except CtftimeError as e:
+        raise CtftimeError(
+            f"同步远程仓库失败：{e}。请在服务器上手动 git pull 解决后再操作。"
+        )
     changed = [os.path.relpath(CN_PATH, REPO_ROOT)]
 
     if action == "restore":
@@ -154,5 +162,13 @@ def write(action, name, event=None, proxy=""):
     message = f"admin: {action} event {name}"
     _git(proxy, "add", *changed)
     _git(proxy, "commit", "-m", message)
+    # 先提交再同步：工作区常年有未提交改动，autostash 避免 pull --rebase 被拒
+    try:
+        _git(proxy, "pull", "--rebase", "--autostash")
+    except CtftimeError as e:
+        raise CtftimeError(
+            f"赛事改动已在本地提交（{message}），但同步远程失败：{e}。"
+            "可能是每日构建也改了赛事文件，请在服务器上手动 git pull 解决冲突后推送。"
+        )
     _git(proxy, "push")
     return f"已提交并推送到本仓库：{message}"
