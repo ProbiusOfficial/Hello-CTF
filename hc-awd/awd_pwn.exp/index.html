@@ -1,0 +1,1462 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>【PWN】AWD技巧 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-env/">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Docker_On_Linux/">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link on" href="./">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/CTFevent/">CTF赛事</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="pwnawd">【PWN】AWD技巧<a class="headerlink" href="#pwnawd" title="Permanent link">¶</a></h1>
+<p><strong>开始之前</strong>：
+在了解AWD的PWN之前，我们需要考虑AWD中PWN的位置，在大部分AWD比赛中，WEB的得分都会变得非常困难，其涉及知识面广，难度大，调试时间长，并且简单的修复也可能会需要很长的时间，但PWN相对没有那么复杂。</p>
+<p>就算是这两年很火的LLVM等题型，其实也就是加大了逆向难度，而PWN本身难度依然不大，因此，大部分的比赛中，PWN都会成为拉开差距的点，虽然攻击依旧困难，但是修复是相对很简单的（只要出题人别瞎出。。）</p>
+<h3 id="pwn">PWN题攻击<a class="headerlink" href="#pwn" title="Permanent link">¶</a></h3>
+<p>这个其实就没什么好说的了，和常规CTF那是一模一样的，比较大的区别应该就是AWD中的PWN一般很少会出堆题，主要是因为太好修了。。。为了应对这个问题，出题人也经常会将堆和栈结合在一起出，比较经典的就是setcontext、打environ指针之类的方法，具体怎么修我们下文中会提。</p>
+<h3 id="pwn_1">PWN题修复<a class="headerlink" href="#pwn_1" title="Permanent link">¶</a></h3>
+<p>关于pwn的修复这个东西我们这里考虑两种场景，第一个给了源码时的修复，第二个是没给源码时的修复</p>
+<h4 id="_1">有源码时的基础修复<a class="headerlink" href="#_1" title="Permanent link">¶</a></h4>
+<p>先考虑有源码时的修复，这个其实很好操作，主要是熟练gcc g++的各种指令，还有就是要能快速发现漏洞点，由于pwn题中经常是溢出类题型和UAF类题型偏多，所以要分别考虑这两种情况，先看有码的溢出类题型（要非常注意strcat strcpy等会造成off by null的函数</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">buf</span><span class="p">[</span><span class="mi">24</span><span class="p">];</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">"%s"</span><span class="p">,</span><span class="w"> </span><span class="n">buf</span><span class="p">);</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+</code></pre></div>
+<p>像这种那肯定是改%s为%23s，不能有更长的了，或者适当增扩buf的大小，而且它方法也是类似的，有源码的情况下那可太好修复了</p>
+<h4 id="_2">无源码时的程序修改<a class="headerlink" href="#_2" title="Permanent link">¶</a></h4>
+<p>那么无源码应该怎么修复？这似乎就是pwn里面的patch了</p>
+<p>先列出来几张表，下面是jmp的相关指令，对于负数等情况需要用到</p>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>机器码</th>
+<th>指令</th>
+<th>机器码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>jmp</td>
+<td>EB XX</td>
+<td>jz</td>
+<td>74 XX</td>
+</tr>
+<tr>
+<td>je</td>
+<td>74 XX</td>
+<td>jne</td>
+<td>75 XX</td>
+</tr>
+<tr>
+<td>jg</td>
+<td>7F XX</td>
+<td>jge</td>
+<td>7D XX</td>
+</tr>
+<tr>
+<td>jl</td>
+<td>7C XX</td>
+<td>jle</td>
+<td>7E XX</td>
+</tr>
+<tr>
+<td>ja</td>
+<td>77 XX</td>
+<td>jae</td>
+<td>73 XX</td>
+</tr>
+<tr>
+<td>jb</td>
+<td>72 XX</td>
+<td>jbe</td>
+<td>76 XX</td>
+</tr>
+<tr>
+<td>jna</td>
+<td>76 XX</td>
+<td>jnb</td>
+<td>73 XX</td>
+</tr>
+<tr>
+<td>jnae</td>
+<td>72 XX</td>
+<td>jnc</td>
+<td>73 XX</td>
+</tr>
+<tr>
+<td>jnb</td>
+<td>73 XX</td>
+<td>jng</td>
+<td>7E XX</td>
+</tr>
+<tr>
+<td>jnge</td>
+<td>7C XX</td>
+<td>jnl</td>
+<td>7D XX</td>
+</tr>
+</tbody>
+</table>
+<p>现在我们以单纯的篡改程序的思想来看下面这个逻辑（注意不是修复哦，只是试一试改程序）</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image.png"></p>
+<p>这是一个很明显的canary，那么我们想让这个canary反过来应该怎么做呢？即不溢出的时候调用__stack_chk_fail，溢出的时候不调用</p>
+<p>选择IDA中的key -&gt; patcher</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-1.png"></p>
+<p>可以发现jz的指令是74 05，即jz $.+5，我们将其修改为jnz</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-2.png"></p>
+<p>指令就变成了75 05，当然，也可以使用pwntools的asm，也可以帮助我们快速找opcode</p>
+<p>然后选择IDA中的edit -&gt;patch program -&gt; apply patches to input file即可保存文件，然后去跑一跑就会发现雀食达到了我们要的效果</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-3.png"></p>
+<h4 id="_3">常规补丁<a class="headerlink" href="#_3" title="Permanent link">¶</a></h4>
+<p>好这是上面是第一个最简单的patch修改指令，下面我们来一个难点的，对于scanf("%s")我们应该如何patch？</p>
+<p>我搜了很多其他师傅的思路，第一个是利用eh_frame段，这个段在程序正常运行的时候一般用不到，但是它是被赋予了X权限的，也就是说可执行，你比如说对于这个</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-4.png"></p>
+<p>这里call了__isoc99_scanf的PLT，那么我们在eh_frame上自己写一个函数，让它call到我们自己的函数上去，而我们自己的函数我们就严格限制输入大小，注意这里传入的第二个参数为缓冲区地址</p>
+<p>我们这里非常简单暴力，自己通过syscall来输入，然后我们去修改eh_frame，编写如下脚本用于生成字节码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pwn</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">context</span><span class="o">.</span><span class="n">arch</span> <span class="o">=</span> <span class="s1">'amd64'</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">code</span> <span class="o">=</span> <span class="s1">'''</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="s1">    xor rdi, rdi</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="s1">    mov rdx, 23</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="s1">    xor rax, rax</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="s1">    syscall</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="s1">    ret</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="s1">'''</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">asm</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">arch</span><span class="o">=</span><span class="s1">'amd64'</span><span class="p">)):</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="nb">print</span><span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">i</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">'0'</span><span class="p">),</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">' '</span><span class="p">)</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="nb">print</span><span class="p">()</span>
+</code></pre></div>
+<p>然后去修改 <strong>call scanf</strong></p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-5.png"></p>
+<p>最后，修改call scanf到call eh_frame上来，由于这里我们开了PIE，所以需要call一个相对坐标</p>
+<p>先看看原本的地方</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-6.png"></p>
+<p>我们需要把这个函数除了对我们有用的部分全部劫持到我们在eh_frame上的代码，多余的部分全部改为nop</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-7.png"></p>
+<p>这是我改完以后的，主要就是lea r15, qword_2050这个点，我们需要使用相对寻址来计算目标代码的位置，生成opcode的代码如下，当然也可以直接用keypatch</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pwn</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">context</span><span class="o">.</span><span class="n">arch</span> <span class="o">=</span> <span class="s1">'amd64'</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">code</span> <span class="o">=</span> <span class="s1">'''</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="s1">    lea r15, [rip + 0xec5]</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="s1">    lea rsi, [rbp - 0x20]</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="s1">    call r15</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="s1">'''</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">asm</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">arch</span><span class="o">=</span><span class="s1">'amd64'</span><span class="p">)):</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="nb">print</span><span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">i</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">'0'</span><span class="p">),</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">' '</span><span class="p">)</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="nb">print</span><span class="p">()</span>
+</code></pre></div>
+<p>至于这个 <strong>0xec5</strong> 怎么来的，首先，lea的长度为7，所以lea的下一条指令的地址是0x118b，使用0x2050 - 0x118b得到0xec5</p>
+<p>好了现在我们将程序打包到gdb里调试看看</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-8.png"></p>
+<p>现在雀食是可以跳转过来执行了，但是还有最后的问题，即eh_frame没有执行权限，这个我们通过IDA修改ELF的头来实现</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-9.png"></p>
+<p>Type一定得是LOAD，而我们的补丁打在第三个LOAD里，所以我将Flags修改为了7，当然啊，这样做其实是非常不负责的，但是做题嘛，怎么快怎么来，如果想要负责的话，那就得加一个LOAD，并且还需要处理好PIE，至少现在是正常跑起来了也不会溢出</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-10.png"></p>
+<h4 id="pltgot">替换PLT|GOT修复<a class="headerlink" href="#pltgot" title="Permanent link">¶</a></h4>
+<p>如果说程序东西不多而且敏感函数就调用那么一两次的话我们也可以通过修改重定位表来修复</p>
+<p>先来看源码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">        </span><span class="kt">char</span><span class="w"> </span><span class="n">buf</span><span class="p">[</span><span class="mi">24</span><span class="p">];</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">        </span><span class="n">scanf</span><span class="p">(</span><span class="s">"%s"</span><span class="p">,</span><span class="w"> </span><span class="n">buf</span><span class="p">);</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="n">buf</span><span class="p">);</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">}</span>
+</code></pre></div>
+<p>这里我们只考虑修复printf而不考虑修复scanf，修scanf参考上文的方案即可</p>
+<p>编译</p>
+<blockquote>
+<p>gcc replace_plt.c -o replace_plt -fno-stack-protector -z lazy</p>
+</blockquote>
+<p>修printf，这里我们通过篡改printf为puts来实现，但是源程序里并没有puts，所以需要更改dyn</p>
+<p>我们找到printf的dynsym</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-11.png"></p>
+<p>我们去修改printf为puts</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-12.png"></p>
+<p>然后patch，再次打开程序的时候可以发现就变成puts了</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-13.png"></p>
+<p>这里涉及到的其实是一个ret2resolve里的小知识，我们简单提一嘴，就是Libc动态链接的过程其实是依靠函数名的，虽然我们平时看到的PLT GOT等表中都没有包含函数名，但实际上它储存了一些索引，方便动态链接函数通过PLT找到这个函数名，最后再通过去Libc中对比函数名寻找真实的函数地址，因此修改函数名的修复是有效的，玩的花一点我们还可以把free的函数名修改为atoi之类的东西，直接pass掉大部分堆题。。</p>
+<p>不过这样其实还是有问题，因为我们这里使用的是puts，它比printf短，那如果需要替换为__printf_chk呢？</p>
+<p>还是使用到了eh_frame段，主要是因为这个段一般真用不到，不会影响程序正常运行，不过如果想的话也可以自己再加点东西进来</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-14.png"></p>
+<p>然后修改printf到这里来 0x2060 - 0x488 = 0x1bd8</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-15.png"></p>
+<p>最后我们执行
+<img alt="Alt text" src="../awd_pwn.exp.assets/image-16.png"></p>
+<p>虽然说报错了，但是可以发现报错信息也只是说找不到这个符号，我们的替换还是正确的，换成别的函数是没问题的，只是IDA这个地方会报错，但是不影响</p>
+<h4 id="_4">堆题的一些通用修复<a class="headerlink" href="#_4" title="Permanent link">¶</a></h4>
+<p>我们都知道堆题高度依赖于 free 函数，如果说malloc等函数的不正确使用是造成漏洞的主要原因（比如说溢出就属于长度没控制好），那free就是触发漏洞的关键，当然了，还有别的触发方式，我们这里不深入</p>
+<p>那么我们如何修复free呢？很简单啊， <strong>nop</strong> 掉就完事了，这样的做法有时候在比赛中比较管用，但也不是啥时候都管用，因此我们还有另外几种方案</p>
+<p>因为现在的PWN题运行过程动不动就有个 <strong>5s</strong> 以上（比如说要打IO爆破），而checker的运行只有短短 <strong>1~5</strong> 秒，那么为什么不从alarm上下手呢？</p>
+<p>alarm函数会在时间到了以后强制结束进程，那么我们可以patch程序最开始的 <strong>alarm(60)</strong> 为 <strong>alarm(3)</strong>，这样就有可能造成checker通过而exp不通过，从而通过check逻辑</p>
+<h4 id="_5">通防<a class="headerlink" href="#_5" title="Permanent link">¶</a></h4>
+<h5 id="evilpatcher">EvilPatcher<a class="headerlink" href="#evilpatcher" title="Permanent link">¶</a></h5>
+<p>这个东西是我在某次比赛中看到的，基本上通杀。。神挡杀神佛挡杀佛，那次比赛吃了大亏，全场貌似就包括我在内的少数几个人不知道这东西，我们就简单给出链接吧</p>
+<p><a href="https://github.com/TTY-flag/evilPatcher">https://github.com/TTY-flag/evilPatcher</a></p>
+<h5 id="_6">自制通防思路<a class="headerlink" href="#_6" title="Permanent link">¶</a></h5>
+<p><strong>写在前面</strong>：
+这种方法对于Docker环境不适用，因为需要Docker开启 <strong>CAP_SYS_PTRACE</strong> 权限，但是这玩意会导致Docker逃逸，不过当然了，如果是纯黑盒的话，想逃还是很难的，360等平台使用的似乎就是Docker的环境，而永信至诚的平台似乎是VM环境，这种方法可以使用</p>
+<p><strong>开始吧</strong>：
+要拼速度的话，慢慢找洞慢慢替换肯定是不行的，所以要提前准备好通防操作，在pwn中，通防肯定就是不让你开shell不让你读文件了，主要就是要关掉open openat execve等系统调用了</p>
+<p>这里的我的思路是将注入代码写入eh_frame中，并且劫持程序入口到这个地方来，先执行注入逻辑，将原本的进程作为子进程启动，父进程通过ptrace等函数来监控子进程的行为，如果发现子进程调用了open openat execve等函数，那么就kill掉子进程</p>
+<p>shellcode的C版本如下，为了避免外部引入的库函数用到了plt等结构（用到了的话就g了），如ptrace等函数我都换成了用汇编编写的syscall</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sys/ptrace.h&gt;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sys/types.h&gt;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sys/wait.h&gt;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unistd.h&gt;</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sys/user.h&gt;</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="kt">void</span><span class="w"> </span><span class="nf">d</span><span class="p">(){</span><span class="w">  </span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="k">register</span><span class="w"> </span><span class="kt">pid_t</span><span class="w"> </span><span class="n">child</span><span class="p">;</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">status</span><span class="p">;</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">user_regs_struct</span><span class="w"> </span><span class="n">regs</span><span class="p">;</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">    </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">        </span><span class="s">"movq $57, %%rax;"</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">        </span><span class="s">"syscall;"</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">        </span><span class="s">"movl %%eax,%0"</span><span class="o">:</span><span class="s">"=r"</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">    </span><span class="p">);</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">child</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="w">    </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="w">        </span><span class="s">"movl $101, %eax;"</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="w">        </span><span class="s">"xorq %rsi, %rsi;"</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">        </span><span class="s">"xorq %rdx, %rdx;"</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="w">        </span><span class="s">"xorq %r10, %r10;"</span>
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="w">        </span><span class="s">"xorq %rdi, %rdi;"</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="w">        </span><span class="s">"syscall;"</span><span class="w"> </span><span class="c1">//ptrace(PTRACE_TRACEME)</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="w">        </span><span class="s">"movl $39, %eax;"</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="w">        </span><span class="s">"syscall;"</span><span class="w"> </span>
+<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="w">        </span><span class="s">"movl %eax, %edi;"</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="w">        </span><span class="s">"movl $19, %esi;"</span>
+<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="w">        </span><span class="s">"movl $62, %eax;"</span>
+<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a><span class="w">        </span><span class="s">"syscall;"</span>
+<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a><span class="w">    </span><span class="p">);</span>
+<a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a><span class="w">    </span><span class="c1">//kill(getpid(), 19);</span>
+<a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a><span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">end</span><span class="p">;</span>
+<a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a><span class="w">    </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a><span class="w">        </span><span class="s">"movl $61, %eax;"</span>
+<a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a><span class="w">        </span><span class="s">"xorq %rdi, %rdi;"</span>
+<a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a><span class="w">        </span><span class="s">"syscall;"</span><span class="w">      </span>
+<a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a><span class="w">    </span><span class="p">);</span>
+<a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a><span class="w">    </span><span class="c1">//wait(NULL);</span>
+<a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a><span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+<a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a><span class="w">        </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-4-45" name="__codelineno-4-45" href="#__codelineno-4-45"></a><span class="w">            </span><span class="s">"movl %0, %%esi"</span><span class="o">::</span><span class="s">"r"</span><span class="p">(</span><span class="n">child</span><span class="p">)</span><span class="o">:</span><span class="s">"%esi"</span>
+<a id="__codelineno-4-46" name="__codelineno-4-46" href="#__codelineno-4-46"></a><span class="w">        </span><span class="p">);</span>
+<a id="__codelineno-4-47" name="__codelineno-4-47" href="#__codelineno-4-47"></a><span class="w">        </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-4-48" name="__codelineno-4-48" href="#__codelineno-4-48"></a><span class="w">            </span><span class="s">"movl $101, %eax;"</span>
+<a id="__codelineno-4-49" name="__codelineno-4-49" href="#__codelineno-4-49"></a><span class="w">            </span><span class="s">"movl $24, %edi;"</span>
+<a id="__codelineno-4-50" name="__codelineno-4-50" href="#__codelineno-4-50"></a><span class="w">            </span><span class="s">"xorq %rdx, %rdx;"</span>
+<a id="__codelineno-4-51" name="__codelineno-4-51" href="#__codelineno-4-51"></a><span class="w">            </span><span class="s">"xorq %r10, %r10;"</span>
+<a id="__codelineno-4-52" name="__codelineno-4-52" href="#__codelineno-4-52"></a><span class="w">            </span><span class="s">"syscall;"</span>
+<a id="__codelineno-4-53" name="__codelineno-4-53" href="#__codelineno-4-53"></a><span class="w">        </span><span class="p">);</span><span class="w">              </span><span class="c1">//ptrace(PTRACE_SYSCALL, child, NULL, NULL);</span>
+<a id="__codelineno-4-54" name="__codelineno-4-54" href="#__codelineno-4-54"></a><span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">status</span><span class="p">;</span>
+<a id="__codelineno-4-55" name="__codelineno-4-55" href="#__codelineno-4-55"></a><span class="w">        </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-4-56" name="__codelineno-4-56" href="#__codelineno-4-56"></a><span class="w">            </span><span class="s">"movl %0, %%edi"</span><span class="o">::</span><span class="s">"r"</span><span class="p">(</span><span class="n">child</span><span class="p">)</span><span class="o">:</span><span class="s">"%edi"</span>
+<a id="__codelineno-4-57" name="__codelineno-4-57" href="#__codelineno-4-57"></a><span class="w">        </span><span class="p">);</span>
+<a id="__codelineno-4-58" name="__codelineno-4-58" href="#__codelineno-4-58"></a><span class="w">        </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-4-59" name="__codelineno-4-59" href="#__codelineno-4-59"></a><span class="w">            </span><span class="s">"movq %0, %%rsi"</span><span class="o">::</span><span class="s">"r"</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="o">:</span><span class="s">"%rsi"</span><span class="w">         </span>
+<a id="__codelineno-4-60" name="__codelineno-4-60" href="#__codelineno-4-60"></a><span class="w">        </span><span class="p">);</span>
+<a id="__codelineno-4-61" name="__codelineno-4-61" href="#__codelineno-4-61"></a><span class="w">        </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-4-62" name="__codelineno-4-62" href="#__codelineno-4-62"></a><span class="w">            </span><span class="s">"xorq %rdx, %rdx;"</span>
+<a id="__codelineno-4-63" name="__codelineno-4-63" href="#__codelineno-4-63"></a><span class="w">            </span><span class="s">"movl $61, %eax;"</span>
+<a id="__codelineno-4-64" name="__codelineno-4-64" href="#__codelineno-4-64"></a><span class="w">            </span><span class="s">"syscall;"</span><span class="w"> </span><span class="c1">//waitpid(pid)</span>
+<a id="__codelineno-4-65" name="__codelineno-4-65" href="#__codelineno-4-65"></a><span class="w">        </span><span class="p">);</span>
+<a id="__codelineno-4-66" name="__codelineno-4-66" href="#__codelineno-4-66"></a><span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">regs_addr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">regs</span><span class="p">;</span>
+<a id="__codelineno-4-67" name="__codelineno-4-67" href="#__codelineno-4-67"></a><span class="w">        </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-4-68" name="__codelineno-4-68" href="#__codelineno-4-68"></a><span class="w">            </span><span class="s">"movq %0, %%r10"</span><span class="o">::</span><span class="s">"r"</span><span class="p">(</span><span class="n">regs_addr</span><span class="p">)</span><span class="o">:</span><span class="s">"%r10"</span>
+<a id="__codelineno-4-69" name="__codelineno-4-69" href="#__codelineno-4-69"></a><span class="w">        </span><span class="p">);</span>
+<a id="__codelineno-4-70" name="__codelineno-4-70" href="#__codelineno-4-70"></a><span class="w">        </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-4-71" name="__codelineno-4-71" href="#__codelineno-4-71"></a><span class="w">            </span><span class="s">"movl %0, %%esi"</span><span class="o">::</span><span class="s">"r"</span><span class="p">(</span><span class="n">child</span><span class="p">)</span><span class="o">:</span><span class="s">"%esi"</span>
+<a id="__codelineno-4-72" name="__codelineno-4-72" href="#__codelineno-4-72"></a><span class="w">        </span><span class="p">);</span>
+<a id="__codelineno-4-73" name="__codelineno-4-73" href="#__codelineno-4-73"></a><span class="w">        </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-4-74" name="__codelineno-4-74" href="#__codelineno-4-74"></a><span class="w">            </span><span class="s">"movl $12, %edi;"</span>
+<a id="__codelineno-4-75" name="__codelineno-4-75" href="#__codelineno-4-75"></a><span class="w">            </span><span class="s">"xorq %rdx, %rdx;"</span>
+<a id="__codelineno-4-76" name="__codelineno-4-76" href="#__codelineno-4-76"></a><span class="w">            </span><span class="s">"movl $101, %eax;"</span>
+<a id="__codelineno-4-77" name="__codelineno-4-77" href="#__codelineno-4-77"></a><span class="w">            </span><span class="s">"syscall;"</span><span class="w">      </span><span class="c1">//ptrace(PTRACE_GETREGS)</span>
+<a id="__codelineno-4-78" name="__codelineno-4-78" href="#__codelineno-4-78"></a><span class="w">        </span><span class="p">);</span>
+<a id="__codelineno-4-79" name="__codelineno-4-79" href="#__codelineno-4-79"></a><span class="w">        </span><span class="k">if</span><span class="p">((</span><span class="n">regs</span><span class="p">.</span><span class="n">orig_rax</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">56</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">regs</span><span class="p">.</span><span class="n">orig_rax</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">59</span><span class="w"> </span><span class="o">||</span>
+<a id="__codelineno-4-80" name="__codelineno-4-80" href="#__codelineno-4-80"></a><span class="w">          </span><span class="n">regs</span><span class="p">.</span><span class="n">orig_rax</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">231</span><span class="p">)){</span>
+<a id="__codelineno-4-81" name="__codelineno-4-81" href="#__codelineno-4-81"></a><span class="w">        </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-4-82" name="__codelineno-4-82" href="#__codelineno-4-82"></a><span class="w">            </span><span class="s">"movl %0, %%edi"</span><span class="o">::</span><span class="s">"r"</span><span class="p">(</span><span class="n">child</span><span class="p">)</span><span class="o">:</span><span class="s">"%edi"</span><span class="w"> </span>
+<a id="__codelineno-4-83" name="__codelineno-4-83" href="#__codelineno-4-83"></a><span class="w">        </span><span class="p">);</span>
+<a id="__codelineno-4-84" name="__codelineno-4-84" href="#__codelineno-4-84"></a><span class="w">        </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-4-85" name="__codelineno-4-85" href="#__codelineno-4-85"></a><span class="w">            </span><span class="s">"movl $9, %esi;"</span>
+<a id="__codelineno-4-86" name="__codelineno-4-86" href="#__codelineno-4-86"></a><span class="w">            </span><span class="s">"movl $62, %eax;"</span>
+<a id="__codelineno-4-87" name="__codelineno-4-87" href="#__codelineno-4-87"></a><span class="w">            </span><span class="s">"syscall;"</span>
+<a id="__codelineno-4-88" name="__codelineno-4-88" href="#__codelineno-4-88"></a><span class="w">        </span><span class="p">);</span>
+<a id="__codelineno-4-89" name="__codelineno-4-89" href="#__codelineno-4-89"></a><span class="w">        </span><span class="c1">//kill(child, 9);</span>
+<a id="__codelineno-4-90" name="__codelineno-4-90" href="#__codelineno-4-90"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-4-91" name="__codelineno-4-91" href="#__codelineno-4-91"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-4-92" name="__codelineno-4-92" href="#__codelineno-4-92"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-4-93" name="__codelineno-4-93" href="#__codelineno-4-93"></a><span class="w">    </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-4-94" name="__codelineno-4-94" href="#__codelineno-4-94"></a><span class="w">        </span><span class="s">"movl $555, %edi;"</span>
+<a id="__codelineno-4-95" name="__codelineno-4-95" href="#__codelineno-4-95"></a><span class="w">        </span><span class="s">"movl $60, %eax;"</span>
+<a id="__codelineno-4-96" name="__codelineno-4-96" href="#__codelineno-4-96"></a><span class="w">        </span><span class="s">"syscall;"</span>
+<a id="__codelineno-4-97" name="__codelineno-4-97" href="#__codelineno-4-97"></a><span class="w">    </span><span class="p">);</span>
+<a id="__codelineno-4-98" name="__codelineno-4-98" href="#__codelineno-4-98"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-4-99" name="__codelineno-4-99" href="#__codelineno-4-99"></a><span class="nl">end</span><span class="p">:</span>
+<a id="__codelineno-4-100" name="__codelineno-4-100" href="#__codelineno-4-100"></a><span class="k">return</span><span class="p">;</span>
+<a id="__codelineno-4-101" name="__codelineno-4-101" href="#__codelineno-4-101"></a><span class="p">}</span>
+<a id="__codelineno-4-102" name="__codelineno-4-102" href="#__codelineno-4-102"></a>
+<a id="__codelineno-4-103" name="__codelineno-4-103" href="#__codelineno-4-103"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+<a id="__codelineno-4-104" name="__codelineno-4-104" href="#__codelineno-4-104"></a><span class="w">    </span><span class="n">d</span><span class="p">();</span>
+<a id="__codelineno-4-105" name="__codelineno-4-105" href="#__codelineno-4-105"></a><span class="w">    </span><span class="c1">//execl("/bin/ls", ".");</span>
+<a id="__codelineno-4-106" name="__codelineno-4-106" href="#__codelineno-4-106"></a><span class="w">    </span><span class="n">system</span><span class="p">(</span><span class="s">"ls"</span><span class="p">);</span>
+<a id="__codelineno-4-107" name="__codelineno-4-107" href="#__codelineno-4-107"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-4-108" name="__codelineno-4-108" href="#__codelineno-4-108"></a><span class="p">}</span>
+</code></pre></div>
+<p>现在只要调用到了execve clone vfork fork等系统调用就会被拦截然后强制终止程序的执行，限制执行了system，如果没有d函数执行的话应该是会执行ls指令的，但是现在d函数开启了沙盒，那么按道理来说会直接退出</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-17.png"></p>
+<p>可以发现去雀食没有执行了</p>
+<p>后面我又加了几段代码用来平衡栈和保存环境</p>
+<p>生成完的shellcode如下（没有包含jmp start，64位，这个shellcode不包含open和openat</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>57 56 52 51 55 48 89 E5 53 48 83 EC 78 48 C7 C0 
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>39 00 00 00 0F 05 89 C0 89 C3 85 DB 75 2D B8 65 
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>00 00 00 48 31 F6 48 31 D2 4D 31 D2 48 31 FF 0F 
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>05 B8 27 00 00 00 0F 05 89 C7 BE 13 00 00 00 B8 
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>3E 00 00 00 0F 05 E9 97 00 00 00 B8 3D 00 00 00 
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>48 31 FF 0F 05 89 DE B8 65 00 00 00 BF 18 00 00 
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>00 48 31 D2 4D 31 D2 0F 05 48 8D 45 E4 48 89 45 
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>F0 89 DF 48 8B 45 F0 48 89 C6 48 31 D2 B8 3D 00 
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>00 00 0F 05 48 8D 85 08 FF FF FF 48 89 45 E8 48 
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>8B 45 E8 49 89 C2 89 DE BF 0C 00 00 00 48 31 D2 
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>B8 65 00 00 00 0F 05 48 8B 45 80 48 83 F8 37 76 
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>0A 48 8B 45 80 48 83 F8 3B 76 0C 48 8B 45 80 48 
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>3D E7 00 00 00 75 8E 89 DF BE 09 00 00 00 B8 3E 
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>00 00 00 0F 05 90 BF 2B 02 00 00 B8 3C 00 00 00 
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>0F 05 90 48 83 C4 78 5B 5D 59 5a 5e 5f
+</code></pre></div>
+<p>包含open和openat的shellcode
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>57 56 52 51 55 48 89 E5 53 48 83 EC 78 48 C7 C0 
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>39 00 00 00 0F 05 89 C0 89 C3 85 DB 75 2D B8 65 
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>00 00 00 48 31 F6 48 31 D2 4D 31 D2 48 31 FF 0F 
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>05 B8 27 00 00 00 0F 05 89 C7 BE 13 00 00 00 B8 
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>3E 00 00 00 0F 05 E9 B1 00 00 00 B8 3D 00 00 00 
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>48 31 FF 0F 05 89 DE B8 65 00 00 00 BF 18 00 00 
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>00 48 31 D2 4D 31 D2 0F 05 48 8D 45 E4 48 89 45 
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>F0 89 DF 48 8B 45 F0 48 89 C6 48 31 D2 B8 3D 00 
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>00 00 0F 05 48 8D 85 08 FF FF FF 48 89 45 E8 48 
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>8B 45 E8 49 89 C2 89 DE BF 0C 00 00 00 48 31 D2 
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>B8 65 00 00 00 0F 05 48 8B 45 80 48 83 F8 37 76 
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>0A 48 8B 45 80 48 83 F8 3B 76 26 48 8B 45 80 48 
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>3D E7 00 00 00 74 1A 48 8B 45 80 48 83 F8 02 74 
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>10 48 8B 45 80 48 3D 01 01 00 00 0F 85 74 FF FF 
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>FF 89 DF BE 09 00 00 00 B8 3E 00 00 00 0F 05 90 
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>BF 2B 02 00 00 B8 3C 00 00 00 0F 05 90 48 83 C4 
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>78 5B 5D 59 5a 5e 5f
+</code></pre></div>
+<p>32位的C代码和shellcode如下，编译的时候要关闭位置无关代码，否则gcc在32位下会引入__x86.get_pc_thunk.ax函数，从而用到了GOT，导致生成的shellcode不能移植</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sys/ptrace.h&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sys/types.h&gt;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sys/wait.h&gt;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unistd.h&gt;</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sys/user.h&gt;</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="kt">void</span><span class="w"> </span><span class="nf">d</span><span class="p">(){</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span><span class="kt">pid_t</span><span class="w"> </span><span class="n">child</span><span class="p">;</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">status</span><span class="p">;</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">user_regs_struct</span><span class="w"> </span><span class="n">regs</span><span class="p">;</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="w">    </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">        </span><span class="s">"movl $2, %%eax;"</span><span class="w"> </span><span class="c1">//fork</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="w">        </span><span class="s">"int $0x80;"</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="w">        </span><span class="s">"movl %%eax,%0"</span><span class="o">:</span><span class="s">"=r"</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="w">    </span><span class="p">);</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">child</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="w">    </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="w">        </span><span class="s">"movl $26, %eax;"</span><span class="w"> </span><span class="c1">// ptrace</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="w">        </span><span class="s">"xorl %ecx, %ecx;"</span><span class="w"> </span><span class="c1">//2</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="w">        </span><span class="s">"xorl %edx, %edx;"</span><span class="w"> </span><span class="c1">//3</span>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="w">        </span><span class="s">"xorl %esi, %esi;"</span><span class="w"> </span><span class="c1">//4</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="w">        </span><span class="s">"xorl %ebx, %ebx;"</span><span class="w"> </span><span class="c1">//1</span>
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="w">        </span><span class="s">"int $0x80;"</span><span class="w"> </span><span class="c1">//ptrace(PTRACE_TRACEME)</span>
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="w">        </span><span class="s">"movl $20, %eax;"</span><span class="w"> </span><span class="c1">// getpid</span>
+<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="w">        </span><span class="s">"int $0x80;"</span><span class="w"> </span>
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a><span class="w">        </span><span class="s">"movl %eax, %ebx;"</span><span class="w"> </span><span class="c1">// 0 1</span>
+<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a><span class="w">        </span><span class="s">"movl $19, %ecx;"</span><span class="w"> </span><span class="c1">// 2</span>
+<a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a><span class="w">        </span><span class="s">"movl $37, %eax;"</span><span class="w"> </span><span class="c1">// 0 kill</span>
+<a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a><span class="w">        </span><span class="s">"int $0x80;"</span>
+<a id="__codelineno-7-33" name="__codelineno-7-33" href="#__codelineno-7-33"></a><span class="w">    </span><span class="p">);</span>
+<a id="__codelineno-7-34" name="__codelineno-7-34" href="#__codelineno-7-34"></a><span class="w">    </span><span class="c1">//kill(getpid(), 19);</span>
+<a id="__codelineno-7-35" name="__codelineno-7-35" href="#__codelineno-7-35"></a><span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">end</span><span class="p">;</span>
+<a id="__codelineno-7-36" name="__codelineno-7-36" href="#__codelineno-7-36"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-37" name="__codelineno-7-37" href="#__codelineno-7-37"></a><span class="w">    </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-7-38" name="__codelineno-7-38" href="#__codelineno-7-38"></a><span class="w">        </span><span class="s">"movl $114, %eax;"</span><span class="w"> </span><span class="c1">// 0 wait4</span>
+<a id="__codelineno-7-39" name="__codelineno-7-39" href="#__codelineno-7-39"></a><span class="w">        </span><span class="s">"xorl %ebx, %ebx;"</span><span class="w"> </span><span class="c1">// 1</span>
+<a id="__codelineno-7-40" name="__codelineno-7-40" href="#__codelineno-7-40"></a><span class="w">        </span><span class="s">"int $0x80;"</span><span class="w">        </span>
+<a id="__codelineno-7-41" name="__codelineno-7-41" href="#__codelineno-7-41"></a><span class="w">    </span><span class="p">);</span>
+<a id="__codelineno-7-42" name="__codelineno-7-42" href="#__codelineno-7-42"></a><span class="w">    </span><span class="c1">//wait(NULL);</span>
+<a id="__codelineno-7-43" name="__codelineno-7-43" href="#__codelineno-7-43"></a><span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+<a id="__codelineno-7-44" name="__codelineno-7-44" href="#__codelineno-7-44"></a><span class="w">        </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-7-45" name="__codelineno-7-45" href="#__codelineno-7-45"></a><span class="w">            </span><span class="s">"movl %0, %%ecx"</span><span class="o">::</span><span class="s">"r"</span><span class="p">(</span><span class="n">child</span><span class="p">)</span><span class="o">:</span><span class="s">"%ecx"</span><span class="w"> </span><span class="c1">// 0 2</span>
+<a id="__codelineno-7-46" name="__codelineno-7-46" href="#__codelineno-7-46"></a><span class="w">        </span><span class="p">);</span>
+<a id="__codelineno-7-47" name="__codelineno-7-47" href="#__codelineno-7-47"></a><span class="w">        </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-7-48" name="__codelineno-7-48" href="#__codelineno-7-48"></a><span class="w">            </span><span class="s">"movl $26, %eax;"</span><span class="w"> </span><span class="c1">// 0 ptrace</span>
+<a id="__codelineno-7-49" name="__codelineno-7-49" href="#__codelineno-7-49"></a><span class="w">            </span><span class="s">"movl $24, %ebx;"</span><span class="w"> </span><span class="c1">// 1</span>
+<a id="__codelineno-7-50" name="__codelineno-7-50" href="#__codelineno-7-50"></a><span class="w">            </span><span class="s">"xorl %edx, %edx;"</span><span class="w"> </span><span class="c1">// 3</span>
+<a id="__codelineno-7-51" name="__codelineno-7-51" href="#__codelineno-7-51"></a><span class="w">            </span><span class="s">"xorl %esi, %esi;"</span><span class="w"> </span><span class="c1">// 4</span>
+<a id="__codelineno-7-52" name="__codelineno-7-52" href="#__codelineno-7-52"></a><span class="w">            </span><span class="s">"int $0x80;"</span>
+<a id="__codelineno-7-53" name="__codelineno-7-53" href="#__codelineno-7-53"></a><span class="w">        </span><span class="p">);</span><span class="w">              </span><span class="c1">//ptrace(PTRACE_SYSCALL, child, NULL, NULL);</span>
+<a id="__codelineno-7-54" name="__codelineno-7-54" href="#__codelineno-7-54"></a><span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">status</span><span class="p">;</span>
+<a id="__codelineno-7-55" name="__codelineno-7-55" href="#__codelineno-7-55"></a><span class="w">        </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-7-56" name="__codelineno-7-56" href="#__codelineno-7-56"></a><span class="w">            </span><span class="s">"movl %0, %%ebx"</span><span class="o">::</span><span class="s">"r"</span><span class="p">(</span><span class="n">child</span><span class="p">)</span><span class="o">:</span><span class="s">"%ebx"</span><span class="w"> </span><span class="c1">// 0 1</span>
+<a id="__codelineno-7-57" name="__codelineno-7-57" href="#__codelineno-7-57"></a><span class="w">        </span><span class="p">);</span>
+<a id="__codelineno-7-58" name="__codelineno-7-58" href="#__codelineno-7-58"></a><span class="w">        </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-7-59" name="__codelineno-7-59" href="#__codelineno-7-59"></a><span class="w">            </span><span class="s">"movl %0, %%ecx"</span><span class="o">::</span><span class="s">"r"</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="o">:</span><span class="s">"%ecx"</span><span class="w"> </span><span class="c1">// 0 2    </span>
+<a id="__codelineno-7-60" name="__codelineno-7-60" href="#__codelineno-7-60"></a><span class="w">        </span><span class="p">);</span>
+<a id="__codelineno-7-61" name="__codelineno-7-61" href="#__codelineno-7-61"></a><span class="w">        </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-7-62" name="__codelineno-7-62" href="#__codelineno-7-62"></a><span class="w">            </span><span class="s">"xorl %edx, %edx;"</span><span class="w"> </span><span class="c1">// 3</span>
+<a id="__codelineno-7-63" name="__codelineno-7-63" href="#__codelineno-7-63"></a><span class="w">            </span><span class="s">"movl $114, %eax;"</span><span class="w"> </span><span class="c1">// 0 0 wait4</span>
+<a id="__codelineno-7-64" name="__codelineno-7-64" href="#__codelineno-7-64"></a><span class="w">            </span><span class="s">"int $0x80;"</span><span class="w"> </span><span class="c1">//waitpid(pid)</span>
+<a id="__codelineno-7-65" name="__codelineno-7-65" href="#__codelineno-7-65"></a><span class="w">        </span><span class="p">);</span>
+<a id="__codelineno-7-66" name="__codelineno-7-66" href="#__codelineno-7-66"></a><span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">regs_addr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">regs</span><span class="p">;</span>
+<a id="__codelineno-7-67" name="__codelineno-7-67" href="#__codelineno-7-67"></a><span class="w">        </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-7-68" name="__codelineno-7-68" href="#__codelineno-7-68"></a><span class="w">            </span><span class="s">"movl %0, %%esi"</span><span class="o">::</span><span class="s">"r"</span><span class="p">(</span><span class="n">regs_addr</span><span class="p">)</span><span class="o">:</span><span class="s">"%esi"</span><span class="w"> </span><span class="c1">// 0 4</span>
+<a id="__codelineno-7-69" name="__codelineno-7-69" href="#__codelineno-7-69"></a><span class="w">        </span><span class="p">);</span>
+<a id="__codelineno-7-70" name="__codelineno-7-70" href="#__codelineno-7-70"></a><span class="w">        </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-7-71" name="__codelineno-7-71" href="#__codelineno-7-71"></a><span class="w">            </span><span class="s">"movl %0, %%ecx"</span><span class="o">::</span><span class="s">"r"</span><span class="p">(</span><span class="n">child</span><span class="p">)</span><span class="o">:</span><span class="s">"%ecx"</span><span class="w"> </span><span class="c1">// 2 </span>
+<a id="__codelineno-7-72" name="__codelineno-7-72" href="#__codelineno-7-72"></a><span class="w">        </span><span class="p">);</span>
+<a id="__codelineno-7-73" name="__codelineno-7-73" href="#__codelineno-7-73"></a><span class="w">        </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-7-74" name="__codelineno-7-74" href="#__codelineno-7-74"></a><span class="w">            </span><span class="s">"movl $12, %ebx;"</span><span class="w"> </span><span class="c1">// 0 1</span>
+<a id="__codelineno-7-75" name="__codelineno-7-75" href="#__codelineno-7-75"></a><span class="w">            </span><span class="s">"xorl %edx, %edx;"</span><span class="w"> </span><span class="c1">// 3</span>
+<a id="__codelineno-7-76" name="__codelineno-7-76" href="#__codelineno-7-76"></a><span class="w">            </span><span class="s">"movl $26, %eax;"</span><span class="w"> </span><span class="c1">// 0 0 ptrace</span>
+<a id="__codelineno-7-77" name="__codelineno-7-77" href="#__codelineno-7-77"></a><span class="w">            </span><span class="s">"int $0x80;"</span><span class="w">        </span><span class="c1">//ptrace(PTRACE_GETREGS)</span>
+<a id="__codelineno-7-78" name="__codelineno-7-78" href="#__codelineno-7-78"></a><span class="w">        </span><span class="p">);</span>
+<a id="__codelineno-7-79" name="__codelineno-7-79" href="#__codelineno-7-79"></a><span class="w">        </span><span class="k">if</span><span class="p">((</span><span class="n">regs</span><span class="p">.</span><span class="n">orig_eax</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">regs</span><span class="p">.</span><span class="n">orig_eax</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">11</span><span class="w"> </span><span class="o">||</span><span class="w"> </span>
+<a id="__codelineno-7-80" name="__codelineno-7-80" href="#__codelineno-7-80"></a><span class="w">            </span><span class="n">regs</span><span class="p">.</span><span class="n">orig_eax</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">190</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">regs</span><span class="p">.</span><span class="n">orig_eax</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">120</span><span class="w"> </span><span class="o">||</span><span class="w"> </span>
+<a id="__codelineno-7-81" name="__codelineno-7-81" href="#__codelineno-7-81"></a><span class="w">            </span><span class="n">regs</span><span class="p">.</span><span class="n">orig_eax</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">252</span><span class="p">)){</span>
+<a id="__codelineno-7-82" name="__codelineno-7-82" href="#__codelineno-7-82"></a><span class="w">            </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-7-83" name="__codelineno-7-83" href="#__codelineno-7-83"></a><span class="w">                </span><span class="s">"movl %0, %%ebx"</span><span class="o">::</span><span class="s">"r"</span><span class="p">(</span><span class="n">child</span><span class="p">)</span><span class="o">:</span><span class="s">"%ebx"</span><span class="w"> </span><span class="c1">// 0 1  </span>
+<a id="__codelineno-7-84" name="__codelineno-7-84" href="#__codelineno-7-84"></a><span class="w">            </span><span class="p">);</span>
+<a id="__codelineno-7-85" name="__codelineno-7-85" href="#__codelineno-7-85"></a><span class="w">            </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-7-86" name="__codelineno-7-86" href="#__codelineno-7-86"></a><span class="w">                </span><span class="s">"movl $9, %ecx;"</span><span class="w"> </span><span class="c1">// 0 2</span>
+<a id="__codelineno-7-87" name="__codelineno-7-87" href="#__codelineno-7-87"></a><span class="w">                </span><span class="s">"movl $37, %eax;"</span><span class="w"> </span><span class="c1">// 0 0 kill</span>
+<a id="__codelineno-7-88" name="__codelineno-7-88" href="#__codelineno-7-88"></a><span class="w">                </span><span class="s">"int $0x80;"</span>
+<a id="__codelineno-7-89" name="__codelineno-7-89" href="#__codelineno-7-89"></a><span class="w">            </span><span class="p">);</span>
+<a id="__codelineno-7-90" name="__codelineno-7-90" href="#__codelineno-7-90"></a><span class="w">            </span><span class="c1">//kill(child, 9);</span>
+<a id="__codelineno-7-91" name="__codelineno-7-91" href="#__codelineno-7-91"></a><span class="w">            </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-7-92" name="__codelineno-7-92" href="#__codelineno-7-92"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-7-93" name="__codelineno-7-93" href="#__codelineno-7-93"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-7-94" name="__codelineno-7-94" href="#__codelineno-7-94"></a><span class="w">    </span><span class="k">asm</span><span class="p">(</span>
+<a id="__codelineno-7-95" name="__codelineno-7-95" href="#__codelineno-7-95"></a><span class="w">        </span><span class="s">"movl $555, %ebx;"</span><span class="w"> </span><span class="c1">// 0 1</span>
+<a id="__codelineno-7-96" name="__codelineno-7-96" href="#__codelineno-7-96"></a><span class="w">        </span><span class="s">"movl $1, %eax;"</span><span class="w"> </span><span class="c1">// 0 0 exit</span>
+<a id="__codelineno-7-97" name="__codelineno-7-97" href="#__codelineno-7-97"></a><span class="w">        </span><span class="s">"int $0x80;"</span>
+<a id="__codelineno-7-98" name="__codelineno-7-98" href="#__codelineno-7-98"></a><span class="w">    </span><span class="p">);</span>
+<a id="__codelineno-7-99" name="__codelineno-7-99" href="#__codelineno-7-99"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-7-100" name="__codelineno-7-100" href="#__codelineno-7-100"></a><span class="nl">end</span><span class="p">:</span>
+<a id="__codelineno-7-101" name="__codelineno-7-101" href="#__codelineno-7-101"></a><span class="k">return</span><span class="p">;</span>
+<a id="__codelineno-7-102" name="__codelineno-7-102" href="#__codelineno-7-102"></a><span class="p">}</span>
+<a id="__codelineno-7-103" name="__codelineno-7-103" href="#__codelineno-7-103"></a>
+<a id="__codelineno-7-104" name="__codelineno-7-104" href="#__codelineno-7-104"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+<a id="__codelineno-7-105" name="__codelineno-7-105" href="#__codelineno-7-105"></a><span class="w">    </span><span class="n">d</span><span class="p">();</span>
+<a id="__codelineno-7-106" name="__codelineno-7-106" href="#__codelineno-7-106"></a><span class="w">    </span><span class="n">execl</span><span class="p">(</span><span class="s">"/bin/ls"</span><span class="p">,</span><span class="w"> </span><span class="s">"."</span><span class="p">);</span>
+<a id="__codelineno-7-107" name="__codelineno-7-107" href="#__codelineno-7-107"></a><span class="w">    </span><span class="c1">//system("ls");</span>
+<a id="__codelineno-7-108" name="__codelineno-7-108" href="#__codelineno-7-108"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-7-109" name="__codelineno-7-109" href="#__codelineno-7-109"></a><span class="p">}</span>
+</code></pre></div>
+<p>shellcode（加入了pusha 和popa）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>60 55 89 E5 56 53 83 EC 60 B8 02 00 00 00 CD 80 
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>89 C0 89 45 F4 83 7D F4 00 75 29 B8 1A 00 00 00 
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>31 C9 31 D2 31 F6 31 DB CD 80 B8 14 00 00 00 CD 
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>80 89 C3 B9 13 00 00 00 B8 25 00 00 00 CD 80 E9 
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>9F 00 00 00 B8 72 00 00 00 31 DB CD 80 8B 45 F4 
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>89 C1 B8 1A 00 00 00 BB 18 00 00 00 31 D2 31 F6 
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>CD 80 8D 45 E8 89 45 F0 8B 45 F4 89 C3 8B 45 F0 
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>89 C1 31 D2 B8 72 00 00 00 CD 80 8D 45 A4 89 45 
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>EC 8B 45 EC 89 C6 8B 45 F4 89 C1 BB 0C 00 00 00 
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>31 D2 B8 1A 00 00 00 CD 80 8B 45 D0 83 F8 02 74 
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>24 8B 45 D0 83 F8 0B 74 1C 8B 45 D0 3D BE 00 00 
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>00 74 12 8B 45 D0 83 F8 78 74 0A 8B 45 D0 3D FC 
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>00 00 00 75 88 8B 45 F4 89 C3 B9 09 00 00 00 B8 
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>25 00 00 00 CD 80 90 BB 2B 02 00 00 B8 01 00 00 
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>00 CD 80 90 83 C4 60 5B 5E 5D 61
+</code></pre></div>
+<p>那么接下来我们实践看一下，编写程序如下</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="n">system</span><span class="p">(</span><span class="s">"ls"</span><span class="p">);</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="p">}</span>
+</code></pre></div>
+<p>执行效果如下</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-18.png"></p>
+<p>然后开始植入代码到eh_frame</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-19.png"></p>
+<p>篡改程序入口到eh_frame</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-20.png"></p>
+<p>修改eh_frame的权限为7</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-21.png"></p>
+<p>计算jmp到start上去的偏移，lea的指令长度为7，我们shellcode结束的地方是0x213c，所以lea的地址是0x213d，所以这个时候的rip是0x2144，计算start函数到这里的偏移（如果没有开启PIE的话就直接jmp绝对地址</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-22.png"></p>
+<p>生成shellcode</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pwn</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">context</span><span class="o">.</span><span class="n">arch</span> <span class="o">=</span> <span class="s1">'amd64'</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="n">code</span> <span class="o">=</span> <span class="s1">'''</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="s1">    lea r15, [rip-0x10e4]</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="s1">    jmp r15</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="s1">'''</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">asm</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">arch</span><span class="o">=</span><span class="s1">'amd64'</span><span class="p">)):</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">i</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">'0'</span><span class="p">),</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">' '</span><span class="p">)</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="nb">print</span><span class="p">()</span>
+</code></pre></div>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-23.png"></p>
+<p>植入在之前通防壳的后面</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-24.png"></p>
+<p>现在我们再去执行一下system看看</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-25.png"></p>
+<p>另外说一句，对于32位的程序，由于pwntools在生成代码的时候很蛋疼，对重定位的检测很离谱，所以我们最好直接用opcode来写，jmp指令的opcode为E9，操作数为4字节，指令长度为5字节，4字节的操作数即为相对偏移，支持负数，所以我在32位程序上就是直接写jmp指令，当然，64位下也是一样的，区别不大，大概改成下面这样即可</p>
+<p><img alt="Alt text" src="../awd_pwn.exp.assets/image-26.png"></p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../awd_web.exp/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 【WEB】AWD技巧"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        【WEB】AWD技巧
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../../hc-ai/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: AI | 人工智能"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        AI | 人工智能
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#pwnawd">【PWN】AWD技巧</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#pwn">PWN题攻击</a>
+        
+      </li>
+    
+      <li>
+        <a href="#pwn_1">PWN题修复</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_1">有源码时的基础修复</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_2">无源码时的程序修改</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">常规补丁</a>
+        
+      </li>
+    
+      <li>
+        <a href="#pltgot">替换PLT|GOT修复</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_4">堆题的一些通用修复</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">通防</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#evilpatcher">EvilPatcher</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_6">自制通防思路</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

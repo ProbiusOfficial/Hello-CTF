@@ -1,0 +1,1761 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>压缩包 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-env/">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Docker_On_Linux/">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link on" href="./">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../audio_stego/">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/CTFevent/">CTF赛事</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="_1">压缩包<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<h2 id="_2">文件结构<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<h3 id="zip">.ZIP<a class="headerlink" href="#zip" title="Permanent link">¶</a></h3>
+<p>一个 ZIP 文件由三个部分组成:</p>
+<p><strong>+ 压缩源文件数据区</strong></p>
+<p><img alt="image-20231008024020866" src="../assets/image-20231008024020866.png" width="85%"><br>
+ - <code>local file header</code> 由固定值 <code>50 4B 03 04</code> 即 .zip 文件的魔法数字作为开始。<br>
+ - <code>file data</code> 记录相应压缩文件的数据<br>
+ - <code>data descriptor</code> 数据描述符用于标识该文件压缩结束，该结构只有在相应的 <code>local file header</code> 中通用标记字段的第 <code>3 bit</code> 设为 <code>1</code> 时才会出现，紧接在压缩文件源数据后。<br>
+<strong>+ 压缩源文件目录区</strong></p>
+<p><img alt="image-20231008024130405" src="../assets/image-20231008024130405.png" width="85%"><br>
+ - <code>Central directory</code> 记录了压缩文件的目录信息，在这个数据区中每一条纪录对应在压缩源文件数据区中的一条数据。<br>
+<strong>+ 压缩源文件目录结束标志</strong></p>
+<p><img alt="image-20231008024214278" src="../assets/image-20231008024214278.png" width="85%"><br>
+ - <code>End of central directory record(EOCD)</code> 目录结束标识存在于整个归档包的结尾，用于标记压缩的目录数据的结束。每个压缩文件必须有且只有一个 <code>EOCD</code> 记录。  </p>
+<p>具体详细的结构可以参考下面 010Editor .zip 模板对照表.</p>
+<details class="note">
+<summary>010Editor .zip 模板对照表</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>+ ZIPFILERECORD record # 压缩源文件数据区
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    - char frSignature[4] # 压缩源文件标志
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    - ushort frVersion # 压缩源文件版本
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    - ushort frFlags # 压缩源文件标志 （有无加密，这个更改这里进行伪加密，改为01 00打开就会提示有密码了）
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    - enum COMPTYPE frCompression
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    - DOSTIME frFileTime # 压缩源文件时间
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    - DOSDATE frFileDate # 压缩源文件日期
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    - uint frCrc # 压缩源文件CRC32校验值
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    - uint frCompressedSize # 压缩源文件压缩后大小
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    - uint frUncompressedSize # 压缩源文件压缩前大小
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    - ushort frFileNameLength # 压缩源文件名长度
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    - ushort frExtraFieldLength # 压缩源文件扩展域长度
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    - char frFileName[frFileNameLength] # 压缩源文件名
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    - uchar frData[frCompressedSize] # 压缩源文件数据
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>+ ZIPDIRENTRY dirEntry # 压缩源文件目录区
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    - char deSignature[4] # 目录标志
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    - ushort deVersionMadeBy # 创建该条目的版本
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    - ushort deVersionNeeded # 解压该条目所需的版本
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    - ushort deFlags # 标志位
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    - enum COMPTYPE deCompression # 压缩方法
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    - DOSTIME deFileTime # 最后修改时间
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    - DOSDATE deFileDate # 最后修改日期
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    - uint deCrc # CRC32校验值
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    - uint deCompressedSize # 压缩后的大小
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    - uint deUncompressedSize # 压缩前的大小
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>    - ushort deFileNameLength # 文件名长度
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>    - ushort deExtraFieldLength # 扩展域长度
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>    - ushort deFileCommentLength # 文件评论长度
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>    - ushort deDiskNumberStart # 起始磁盘编号
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>    - ushort deInternalAttributes # 内部属性
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>    - uint deExternalAttributes # 外部属性
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>    - uint deRelativeOffset # 该条目在 ZIP 文件中的偏移位置
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>    - char deFileName[deFileNameLength] # 文件名
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>    - char deExtraField[deExtraFieldLength] # 扩展域
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>    - char deFileComment[deFileCommentLength] # 文件评论
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>+ ZIPENDLOCATOR endLocator # 压缩源文件目录结束标志
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>    - char elSignature[4] # 结束标志
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>    - ushort elDiskNumber # 当前磁盘编号
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>    - ushort elStartDiskNumber # 目录开始的磁盘编号
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>    - ushort elEntriesOnDisk # 当前磁盘上的条目数量
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>    - ushort elEntriesTotal # 总条目数量
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>    - uint elSizeOfDirectory # 目录的总大小
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>    - uint elOffsetOfDirectory # 目录开始的偏移位置
+<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>    - ushort elCommentLength # 注释长度
+<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>    - char elComment[elCommentLength] # 注释
+</code></pre></div>
+</details>
+<h3 id="rar">.RAR<a class="headerlink" href="#rar" title="Permanent link">¶</a></h3>
+<p>一个 RAR 文件主要由以下部分组成:</p>
+<p><strong>+ 标记块和压缩文件头块</strong></p>
+<p><img alt="image-20231008034238278" src="../assets/image-20231008034238278.png"></p>
+<p>- <code>RAR 文件头</code> 为 <code>0x 52 61 72 21 1A 07 00</code>，是RAR文件的魔法数字作为开始。</p>
+<p><strong>+ 文件头块</strong></p>
+<p><img alt="image-20231008034656751" src="../assets/image-20231008034656751.png"></p>
+<p>- <code>File Header</code> 包含多个字段，如文件CRC、压缩方法、文件大小、文件名等等。</p>
+<p><strong>+ 结尾块</strong></p>
+<p><img alt="image-20231008034722137" src="../assets/image-20231008034722137.png"></p>
+<p>- <code>Terminator</code> 是每个RAR文件的结尾块，其结构固定，主要用于标记RAR文件的结束。</p>
+<h2 id="_3">爆破工具<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<p>爆破攻击是最简单，最直接的攻击方式，适合密码较为容易或已知密码范围 / 格式，包括字典爆破、掩码攻击等。</p>
+<p>下面我们来介绍几种常见的爆破工具。</p>
+<h3 id="archpr">ARCHPR<a class="headerlink" href="#archpr" title="Permanent link">¶</a></h3>
+<p><img alt="image-20231008035826500" src="../assets/image-20231008035826500.png"></p>
+<h3 id="ziperello">Ziperello<a class="headerlink" href="#ziperello" title="Permanent link">¶</a></h3>
+<p><img alt="image-20231008040209109" src="../assets/image-20231008040209109.png"></p>
+<h3 id="fcrackzip">fcrackzip<a class="headerlink" href="#fcrackzip" title="Permanent link">¶</a></h3>
+<p><strong>Usage</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>USAGE: fcrackzip
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>          [-b|--brute-force]            use brute force algorithm
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>          [-D|--dictionary]             use a dictionary
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>          [-B|--benchmark]              execute a small benchmark
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>          [-c|--charset characterset]   use characters from charset
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>          [-h|--help]                   show this message
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>          [--version]                   show the version of this program
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>          [-V|--validate]               sanity-check the algorithm
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>          [-v|--verbose]                be more verbose
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>          [-p|--init-password string]   use string as initial password/file
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>          [-l|--length min-max]         check password with length min to max
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>          [-u|--use-unzip]              use unzip to weed out wrong passwords
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>          [-m|--method num]             use method number "num" (see below)
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>          [-2|--modulo r/m]             only calculcate 1/m of the password
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>          file...                    the zipfiles to crack
+</code></pre></div>
+<p><strong>实例</strong></p>
+<p>暴力破解 hello.zip ，密码为数字+大小写字母，长度为1-10</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>fcrackzip -b -c 'aA1' -l 1-10 -u hello.zip
+</code></pre></div>
+<p>暴力破解 ctf.zip ，密码为纯数字，长度为3</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>fcrackzip<span class="w"> </span>-b<span class="w"> </span>-c<span class="s1">'1'</span><span class="w"> </span>-l<span class="w"> </span><span class="m">3</span><span class="w"> </span>-u<span class="w"> </span>ctf.zip<span class="w"> </span>
+</code></pre></div>
+<p>用 rockyou.txt 作为字典爆破 flag.zip</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>fcrackzip  -D -p rockyou.txt -u flag.zip
+</code></pre></div>
+<h2 id="zip_1">ZIP相关攻击<a class="headerlink" href="#zip_1" title="Permanent link">¶</a></h2>
+<p>先介绍一下关于ZIP的一些小知识点~</p>
+<h3 id="zip_2">ZIP文件格式<a class="headerlink" href="#zip_2" title="Permanent link">¶</a></h3>
+<p>一个常规的 ZIP 文件由三个部分组成：</p>
+<p><strong>压缩源文件数据区+压缩源文件目录区+压缩源文件目录结束标志</strong></p>
+<h4 id="local-file-header">压缩源文件数据区 (Local file header)<a class="headerlink" href="#local-file-header" title="Permanent link">¶</a></h4>
+<p>压缩源文件数据区主要记录了压缩前后文件的元数据并存放压缩后的文件，一条压缩文件数据记录对应数据区中的一个压缩文件记录，记录格式如下：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="w"> </span><span class="m">1</span>.<span class="w"> </span>第0~3个字节：50<span class="w"> </span>4B<span class="w"> </span><span class="m">03</span><span class="w"> </span><span class="m">04</span>，代表了文件头标志,<span class="w"> </span>对应文本<span class="w"> </span>PK
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w"> </span><span class="m">2</span>.<span class="w"> </span>第4~5个字节：14<span class="w"> </span><span class="m">00</span>，代表了解压文件所需的pkware版本
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w"> </span><span class="m">3</span>.<span class="w"> </span>第6~7个字节：00<span class="w"> </span><span class="m">00</span>，代表了全局方式位标记（用来判断有没有加密）
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w"> </span><span class="m">4</span>.<span class="w"> </span>第8~9个字节：08<span class="w"> </span><span class="m">00</span>，代表了压缩方式,<span class="w"> </span>比如这里的<span class="w"> </span>0x0008<span class="w"> </span>对应<span class="w"> </span>Deflated
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w"> </span><span class="m">5</span>.<span class="w"> </span>第10~11个字节：1D<span class="w"> </span>9B，代表了最后修改文件的时间<span class="o">(</span>MS-DOS<span class="w"> </span>时间格式<span class="o">)</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w"> </span><span class="m">6</span>.<span class="w"> </span>第12~13个字节：3D<span class="w"> </span><span class="m">56</span>，代表了最后修改文件的日期<span class="o">(</span>MS-DOS<span class="w"> </span>时间格式<span class="o">)</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w"> </span><span class="m">7</span>.<span class="w"> </span>第14~17个字节：5A<span class="w"> </span><span class="m">48</span><span class="w"> </span><span class="m">63</span><span class="w"> </span>5C，是原始数据的crc-32校验值
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="w"> </span><span class="m">8</span>.<span class="w"> </span>第18~21个字节：77<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span>，是文件压缩后的大小
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="w"> </span><span class="m">9</span>.<span class="w"> </span>第22~25个字节：B1<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span>，是文件压缩前的大小
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="m">10</span>.<span class="w"> </span>第26~27个字节：10<span class="w"> </span><span class="m">00</span>，代表文件名长度
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="m">11</span>.<span class="w"> </span>第28~29个字节：00<span class="w"> </span><span class="m">00</span>，代表扩展记录长度
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="m">12</span>.<span class="w"> </span>接下来的若干个字节（变长）：文件名与扩展字段（如果有）
+</code></pre></div>
+<h4 id="central-directory">压缩源文件目录区 (Central directory)<a class="headerlink" href="#central-directory" title="Permanent link">¶</a></h4>
+<p>压缩源文件目录区是由一系列压缩源文件目录记录所组成，一条压缩文件目录记录对应 <strong>数据区</strong> 中的一个压缩文件记录，压缩源文件目录记录由以下部分构成：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="w"> </span><span class="m">1</span>.<span class="w"> </span>第0~3个字节：50<span class="w"> </span>4B<span class="w"> </span><span class="m">01</span><span class="w"> </span><span class="m">02</span>，代表了目录文件头标记
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w"> </span><span class="m">2</span>.<span class="w"> </span>第4~5个字节：02<span class="w"> </span>3F，代表了压缩使用的pkware版本
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w"> </span><span class="m">3</span>.<span class="w"> </span>第6~7个字节：14<span class="w"> </span><span class="m">00</span>，代表了解压文件所需的pkware版本
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w"> </span><span class="m">4</span>.<span class="w"> </span>第8~9个字节：00<span class="w"> </span><span class="m">00</span>，代表了全局方式位标记（用来判断有没有加密）
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w"> </span><span class="m">5</span>.<span class="w"> </span>第10~11个字节：08<span class="w"> </span><span class="m">00</span>，代表了压缩方式
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w"> </span><span class="m">6</span>.<span class="w"> </span>第12~13个字节：1D<span class="w"> </span>9B，代表了最后修改文件的时间
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w"> </span><span class="m">7</span>.<span class="w"> </span>第14~15个字节：3D<span class="w"> </span><span class="m">56</span>，代表了最后修改文件的日期
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w"> </span><span class="m">8</span>.<span class="w"> </span>第16~19个字节：5A<span class="w"> </span><span class="m">48</span><span class="w"> </span><span class="m">63</span><span class="w"> </span>5C，是所对应压缩文件记录中原始数据的crc-32校验值
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="w"> </span><span class="m">9</span>.<span class="w"> </span>第20~23个字节：77<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span>，是文件压缩后的大小
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="m">10</span>.<span class="w"> </span>第24~27个字节：B1<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span>，是文件压缩前的大小
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="m">11</span>.<span class="w"> </span>第28~29个字节：10<span class="w"> </span><span class="m">00</span>，代表文件名长度
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a>
+<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="m">12</span>.<span class="w"> </span>第30~31个字节：00<span class="w"> </span><span class="m">00</span>，代表扩展字段长度
+<a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a>
+<a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a><span class="m">13</span>.<span class="w"> </span>第32~33个字节：00<span class="w"> </span><span class="m">00</span>，代表文件注释长度（0字节，表示没有注释）
+<a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a>
+<a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a><span class="m">14</span>.<span class="w"> </span>第34~35个字节：00<span class="w"> </span><span class="m">00</span>，代表磁盘开始号（0，表示文件不跨磁盘）
+<a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a>
+<a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a><span class="m">15</span>.<span class="w"> </span>第36~37个字节：00<span class="w"> </span><span class="m">00</span>，代表内部文件属性
+<a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a>
+<a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a><span class="m">16</span>.<span class="w"> </span>第38~41个字节：20<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span>，代表外部文件属性
+<a id="__codelineno-6-32" name="__codelineno-6-32" href="#__codelineno-6-32"></a>
+<a id="__codelineno-6-33" name="__codelineno-6-33" href="#__codelineno-6-33"></a><span class="m">17</span>.<span class="w"> </span>第42~45个字节：00<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span>，代表局部头部偏移量
+<a id="__codelineno-6-34" name="__codelineno-6-34" href="#__codelineno-6-34"></a>
+<a id="__codelineno-6-35" name="__codelineno-6-35" href="#__codelineno-6-35"></a><span class="m">18</span>.<span class="w"> </span>接下来的若干个字节（变长），代表文件名
+<a id="__codelineno-6-36" name="__codelineno-6-36" href="#__codelineno-6-36"></a>
+<a id="__codelineno-6-37" name="__codelineno-6-37" href="#__codelineno-6-37"></a><span class="m">19</span>.<span class="w"> </span>之后的若干个字节（变长），代表扩展信息（可能存放着<span class="w"> </span>ZIP64、NTFS<span class="w"> </span>时间戳等）
+<a id="__codelineno-6-38" name="__codelineno-6-38" href="#__codelineno-6-38"></a>
+<a id="__codelineno-6-39" name="__codelineno-6-39" href="#__codelineno-6-39"></a><span class="m">20</span>.<span class="w"> </span>最后的若干个字节（变长），代表文件注释
+</code></pre></div>
+<h4 id="end-of-central-directory-record">压缩源文件目录结束标志 (End of Central Directory Record)<a class="headerlink" href="#end-of-central-directory-record" title="Permanent link">¶</a></h4>
+<div class="admonition note">
+<p class="admonition-title">这里介绍的是标准版EOCD哦……</p>
+<p>这里介绍的版本是一般情况下的End of Central Directory Record，即里面的文件大小小于4GB，且文件数量少于65535个的情况。<br>
+当文件大小或数量超过标准限制时，ZIP 文件将使用 ZIP64 扩展规范。此时，在文件末尾，这些结构按照以下顺序排列（<strong>从文件末尾向前</strong>）：<br>
+1. End of Central Directory Record (标准中央目录结束记录)：这是最靠近文件末尾的固定结构。如果文件总数、大小等任一属性超出了其16位/32位字段的容量，对应的字段值将被设置为溢出标记（0xFFFF或 0xFFFFFFFF），以表明需要查找 ZIP64 扩展信息。<br>
+2. Zip64 End of Central Directory Locator (ZIP64中央目录定位器)：此结构紧接在标准结束记录之前。它的核心作用是提供一个指针，指明下一个结构的起始位置。<br>
+3. Zip64 End of Central Directory Record (ZIP64中央目录结束记录)：此结构位于定位器之前。它包含了文件总数、中央目录大小和起始偏移量等属性的真实64位值，用于替代标准记录中那些已溢出的字段。<br>
+这里也算是为了ZIP文件的兼容性服务啦~<br>
+如果对这些细节感兴趣的话可以去阅读页面底部的参考文献中.ZIP File Format Specification喵~  </p>
+</div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="m">1</span>.<span class="w"> </span>第0~3个字节：50<span class="w"> </span>4B<span class="w"> </span><span class="m">05</span><span class="w"> </span><span class="m">06</span>，代表目录结束标记
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="m">2</span>.<span class="w"> </span>第4~5个字节：00<span class="w"> </span><span class="m">00</span>，代表当前磁盘编号（0，代表该<span class="w"> </span>ZIP<span class="w"> </span>文件没有分卷，不跨越多张磁盘）
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="m">3</span>.<span class="w"> </span>第6~7个字节：00<span class="w"> </span><span class="m">00</span>，代表目录区开始磁盘编号（同上，表示中央目录也位于第一个磁盘上）
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="m">4</span>.<span class="w"> </span>第8~9个字节：01<span class="w"> </span><span class="m">00</span>，代表本磁盘上纪录总数（这里表示当前磁盘上有<span class="w"> </span><span class="m">1</span><span class="w"> </span>条中央目录记录）
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="m">5</span>.<span class="w"> </span>第10~11个字节：01<span class="w"> </span><span class="m">00</span>，代表目录区中纪录总数（这里表示这个<span class="w"> </span>ZIP<span class="w"> </span>文件中总共包含<span class="w"> </span><span class="m">1</span><span class="w"> </span>个文件）
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="m">6</span>.<span class="w"> </span>第12~15个字节：62<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span>，代表目录区尺寸大小（<span class="w"> </span><span class="m">50</span><span class="w"> </span>4B<span class="w"> </span><span class="m">01</span><span class="w"> </span><span class="m">02</span><span class="w"> </span>开始到中央目录记录结束的所有字节长度，这里是十进制<span class="w"> </span><span class="m">98</span><span class="w"> </span>字节）
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="m">7</span>.<span class="w"> </span>第16~19个字节：A5<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="m">00</span>，代表目录区对第一张磁盘的偏移量（中央目录相对于存档起始位置的偏移量，这里是十进制<span class="w"> </span><span class="m">165</span><span class="w"> </span>字节。这意味着解压软件需要从<span class="w"> </span>ZIP<span class="w"> </span>文件开头跳过<span class="w"> </span><span class="m">165</span><span class="w"> </span>个字节，就能找到中央目录<span class="o">(</span>即<span class="w"> </span><span class="sb">`</span>PK<span class="se">\x</span><span class="m">01</span><span class="se">\x</span><span class="m">02</span><span class="sb">`</span><span class="w"> </span>签名<span class="o">)</span>）
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="m">8</span>.<span class="w"> </span>第20~21个字节：00<span class="w"> </span><span class="m">00</span>，代表zip文件注释长度
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="m">9</span>.<span class="w"> </span>最后的若干字节（变长）：代表<span class="w"> </span>ZIP<span class="w"> </span>文件注释内容
+</code></pre></div>
+<h3 id="_4">伪加密<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<p>zip伪加密是在文件头的加密标志位做修改，进而再打开文件时使其被识别为加密压缩包。</p>
+<h4 id="_5">判断加密方式<a class="headerlink" href="#_5" title="Permanent link">¶</a></h4>
+<p>在了解了ZIP的构成以后，我们可以发现，识别一个zip文件是否加密主要是看压缩源文件数据区的全局方式位标记(General Purpose Bit Flag​,通用位标记)和压缩源文件目录区的全局方式位标记，关键在其中第一字节的最低bit位上(在位索引表示中我们称其为 <strong>Bit 0</strong> ，但这里为了方便理解我们不妨多写几个字)，其它的不管为何值，都不会影响它的加密属性本身(但是会有其他作用)。通常全局方式位标记为2 bytes长度，第一字节最低bit位为0时表示无加密，例如：0x00,0x02,0x04等；为1时表示有加密，例如0x01,0x03,0x09等。</p>
+<p>在010 Editor中我们可以看到，压缩源文件数据区的全局方式位标记对应模板ZIP.bt的<code>frFlags</code>(File Record Flags)，而压缩源文件目录区的全局方式位标记对应模板ZIP.bt的<code>deFlags</code>(Directory Entry Flags)。</p>
+<details class="question">
+<summary>不同压缩软件对frFlags和deFlags的处理有区别吗？</summary>
+<p>经过实测，7-Zip 和 QQ预览 检测的是数据区的全局方式位标记，其他解压软件，例如 BandiZip 和 WinRAR 检测目录区的全局方式位标记，这四种软件都只检测一位，并不会检测另一个位置，同时也不会进行报错。</p>
+</details>
+<h5 id="_6">伪加密的判断方法<a class="headerlink" href="#_6" title="Permanent link">¶</a></h5>
+<p>当我们遇到一个被加密了的压缩包，需要判断是否是伪加密时，一个简单的方法就是，我们可以先尝试将deFlags和frFlags的最低有效位全部改成0，之后保存并尝试解压：
+<img alt="修改前" src="../assets/image-20260218-1.png">
+<img alt="修改后" src="../assets/image-20260218-2.png">
+如果保存之后可以正常解压且没有提示损坏，那么就说明这里使用的就是伪加密。</p>
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-1.md -->
+<h5 id="_7">案例<a class="headerlink" href="#_7" title="Permanent link">¶</a></h5>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677296ffd0e0a243d4ecc926.jpg"></p>
+<p>下载文件后打开会发现需要密码</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67729716d0e0a243d4ecc92b.jpg"></p>
+<p>Zip 文件结构分析：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>1. 固定头文件：50 4B 03 04
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>2. 解压所需 pkware 版本：14 00
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>3. 全局方式位标记（有无加密）：09 00
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>4. 压缩方式：08 00
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>5. 最后修改时间：50 A3
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>6. 最后修改日期：A5 4A
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>7. CRC-32：21 38 76 65
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>8. 压缩后大小：19 00 00 00
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>9. 解压前大小：17 00 00 00
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>10. 文件名长度：08 00
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>11. 扩展字段长度：00 00
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>12. 文件名：66 6C 61 67 2E 74 78 74
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>13. 文件数据：4B CB 49 4C AF 76…………
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>14. 中央目录文件头：50 4B 01 02
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>15. ZIP 程序版本字段：1F 00
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>16. 解压所需 pkware 版本：14 00
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>17. 全局方式位标记（有无加密）：09 00
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>18. 压缩方式：08 00
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>19. 最后修改时间：50 A3
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>20. 最后修改日期：A5 4A
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>21. CRC-32：21 38 76 65
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>22. 压缩后大小：19 00 00 00
+<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a>23. 解压前大小：17 00 00 00
+<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a>24. 文件名长度：08 00
+<a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a>25. 扩展字段长度：24 00
+<a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a>26. 文件注释长度：00 00
+<a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a>27. 单卷 ZIP 文件：00 00
+<a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a>28. 内部文件属性：20 00
+<a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a>29. 文件权限字段: 00 00 00 00
+<a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a>30. 文件名：66 6C 61 67 2E 74 78 74
+<a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a>31. 额外字段: 0A 00…………
+<a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a>32. EOCD 文件头: 50 4B 05 06
+<a id="__codelineno-8-33" name="__codelineno-8-33" href="#__codelineno-8-33"></a>33. 当前磁盘编号: 00 00 （表示 ZIP 不是分卷）
+<a id="__codelineno-8-34" name="__codelineno-8-34" href="#__codelineno-8-34"></a>34. 中央目录所在磁盘: 00 00 （也表示 ZIP 不是多卷）
+<a id="__codelineno-8-35" name="__codelineno-8-35" href="#__codelineno-8-35"></a>35. 此磁盘中央目录中的条目总数: 01 00（就一个 flag.txt）
+<a id="__codelineno-8-36" name="__codelineno-8-36" href="#__codelineno-8-36"></a>36. 中央目录中的条目总数: 01 00（也只有一个 flag.txt）
+<a id="__codelineno-8-37" name="__codelineno-8-37" href="#__codelineno-8-37"></a>37. 中央目录的大小：5A 00 00 00
+<a id="__codelineno-8-38" name="__codelineno-8-38" href="#__codelineno-8-38"></a>38. 中央目录偏移量：3F 00 00 00
+<a id="__codelineno-8-39" name="__codelineno-8-39" href="#__codelineno-8-39"></a>39. ZIP 注释长度: 00 00
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67729775d0e0a243d4ecc938.jpg"></p>
+<p>首先我们来尝试一下是不是伪加密。</p>
+<p>注意：ZIP 的压缩数据段应该被加密后变成随机字节流，但伪加密 ZIP 的压缩数据一般仍然是正常的 deflate 流或 store 流。（可以简记为“伪加密的字节流是可以正常读取的”）</p>
+<p>解压软件解压前先看全局方式位标记，如果 Bit 0 = 1，则要求输入密码。</p>
+<p>可以看到这个压缩包同时修改了deFlags和frFlags：</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/692e8ccb7313ea6c250be3bf.png"></p>
+<p>对于7-Zip，由于它只会检查frFlags的Bit 0，所以我们修改本地文件头的加密标志为 00 00 即可打开：</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67729798d0e0a243d4ecc93c.jpg"></p>
+<p>成功拿到 flag：</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677297c3d0e0a243d4ecc940.jpg"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-10.md -->
+<h3 id="word">加密Word爆破与宏破解<a class="headerlink" href="#word" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6875c66358cb8da5c8af1be6.png"></p>
+<p>解压缩有三个文件</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6875c6e758cb8da5c8af20d3.png"></p>
+<p>首先是 hint.txt</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>The length of docm 's password is 6
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>The Regular Expression of the password is:
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>[a-z] [a-z] q [a-z] b [a-z]
+</code></pre></div>
+<p>得知 <code>password.docm</code> 密码全小写字母，且满足 <code>??q?b?</code>，使用 john 爆破（当然也可以直接用 Archpr）</p>
+<p>将 <strong>Office</strong> 文档中的哈希提取出来，保存为 <code>hash.txt</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>office2john<span class="w"> </span>password.docm<span class="w"> </span>&gt;<span class="w"> </span>word.hash
+</code></pre></div>
+<p>使用 <strong>掩码攻击（mask attack）</strong> 尝试爆破 <code>hash.txt</code> 中的密码哈希</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>john<span class="w"> </span>--mask<span class="o">=</span><span class="s1">'?l?lq?lb?l'</span><span class="w"> </span>word.hash
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="c1"># ?l 表示 小写字母（a-z）</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="c1"># q 和 b 是固定字符</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6875c82e58cb8da5c8af30ba.png"></p>
+<p>打开 word</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6875c86b58cb8da5c8af33f1.png"></p>
+<p>得先破解宏，将 word 文件用压缩包方式打开，找到 <code>vbaProject.bin</code> 文件以十六进制方式查看，将  <code>DBP</code>  改为  <code>DBX</code>  并保存，<a href="https://blog.csdn.net/Cody_Ren/article/details/100895394">参考博客</a></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6875cd5458cb8da5c8af6f97.png"></p>
+<p>注意不要减少或者增加其他字符，保存退出</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6875cd6458cb8da5c8af6fb7.png"></p>
+<p>重新打开文件，Alt + F11打开</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6875cd7458cb8da5c8af6fc7.png"></p>
+<p>右键打开属性，设置一个密码保存，重新打开文件 Alt + F11 输入密码即可查看宏代码</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6875cdb458cb8da5c8af7020.png"></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">Private</span><span class="w"> </span><span class="kd">Sub</span><span class="w"> </span><span class="nf">CB_OK_Click</span><span class="p">()</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="kd">Dim</span><span class="w"> </span><span class="nv">strpasw</span><span class="w"> </span><span class="n">As</span><span class="w"> </span><span class="nb">String</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="kd">Dim</span><span class="w"> </span><span class="nv">strdec</span><span class="w"> </span><span class="n">As</span><span class="w"> </span><span class="nb">String</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="kd">Dim</span><span class="w"> </span><span class="nv">strusrinput</span><span class="w"> </span><span class="n">As</span><span class="w"> </span><span class="nb">String</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="kd">Dim</span><span class="w"> </span><span class="nv">t</span><span class="w"> </span><span class="n">As</span><span class="w"> </span><span class="nb">String</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ChrW</span><span class="p">(</span><span class="mi">21152</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">ChrW</span><span class="p">(</span><span class="mi">27833</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">ChrW</span><span class="p">(</span><span class="mi">21543</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">ChrW</span><span class="p">(</span><span class="mi">65292</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">ChrW</span><span class="p">(</span><span class="mi">21516</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">ChrW</span><span class="p">(</span><span class="mi">23398</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">ChrW</span><span class="p">(</span><span class="mi">20204</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">ChrW</span><span class="p">(</span><span class="mi">65281</span><span class="p">)</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="n">strusrinput</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Dialog</span><span class="p">.</span><span class="n">TextBox_Pasw</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="kd">Dim</span><span class="w"> </span><span class="nv">sinput</span><span class="w"> </span><span class="n">As</span><span class="w"> </span><span class="nb">String</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="n">sinput</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">strusrinput</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="k">If</span><span class="w"> </span><span class="p">(</span><span class="n">strusrinput</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="s2">""</span><span class="p">)</span><span class="w"> </span><span class="k">Then</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="w">  </span><span class="n">strusout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Encode</span><span class="p">(</span><span class="n">strusrinput</span><span class="p">,</span><span class="w"> </span><span class="n">t</span><span class="p">)</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="w">  </span><span class="k">If</span><span class="w"> </span><span class="p">(</span><span class="n">strusout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"┤℡ǒqｘ~"</span><span class="p">)</span><span class="w"> </span><span class="k">Then</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="w">      </span><span class="n">strdec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Decode</span><span class="p">(</span><span class="n">Dialog</span><span class="p">.</span><span class="n">Label_ls</span><span class="p">.</span><span class="n">Caption</span><span class="p">,</span><span class="w"> </span><span class="n">sinput</span><span class="p">)</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="w">  </span><span class="k">Else</span>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="w">     </span><span class="k">If</span><span class="w"> </span><span class="p">(</span><span class="n">strusout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"ｋGJEｇｑ"</span><span class="p">)</span><span class="w"> </span><span class="k">Then</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="w">        </span><span class="n">strdec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Decode</span><span class="p">(</span><span class="n">Dialog</span><span class="p">.</span><span class="n">Label_ls1</span><span class="p">.</span><span class="n">Caption</span><span class="p">,</span><span class="w"> </span><span class="n">sinput</span><span class="p">)</span>
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="w">     </span><span class="k">Else</span>
+<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="w">          </span><span class="k">If</span><span class="w"> </span><span class="p">(</span><span class="n">strusout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"ЮΟopz+"</span><span class="p">)</span><span class="w"> </span><span class="k">Then</span>
+<a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="w">             </span><span class="n">strdec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Decode</span><span class="p">(</span><span class="n">Dialog</span><span class="p">.</span><span class="n">Label_ls2</span><span class="p">.</span><span class="n">Caption</span><span class="p">,</span><span class="w"> </span><span class="n">sinput</span><span class="p">)</span>
+<a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="w">          </span><span class="k">Else</span>
+<a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a><span class="w">                </span><span class="k">If</span><span class="w"> </span><span class="p">(</span><span class="n">strusout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"ｚΚjrШφεあ"</span><span class="p">)</span><span class="w"> </span><span class="k">Then</span>
+<a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a><span class="w">                    </span><span class="n">strdec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Decode</span><span class="p">(</span><span class="n">Dialog</span><span class="p">.</span><span class="n">Label_ls4</span><span class="p">.</span><span class="n">Caption</span><span class="p">,</span><span class="w"> </span><span class="n">sinput</span><span class="p">)</span>
+<a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a><span class="w">                </span><span class="k">Else</span>
+<a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a><span class="w">                    </span><span class="k">If</span><span class="w"> </span><span class="p">(</span><span class="n">strusout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"àǖtＵｗ┧ｈè"</span><span class="p">)</span><span class="w"> </span><span class="k">Then</span>
+<a id="__codelineno-12-27" name="__codelineno-12-27" href="#__codelineno-12-27"></a><span class="w">                          </span><span class="n">strdec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Decode</span><span class="p">(</span><span class="n">Dialog</span><span class="p">.</span><span class="n">Label_ls3</span><span class="p">.</span><span class="n">Caption</span><span class="p">,</span><span class="w"> </span><span class="n">sinput</span><span class="p">)</span>
+<a id="__codelineno-12-28" name="__codelineno-12-28" href="#__codelineno-12-28"></a><span class="w">                    </span><span class="k">Else</span>
+<a id="__codelineno-12-29" name="__codelineno-12-29" href="#__codelineno-12-29"></a><span class="w">                          </span><span class="n">strdec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">StrConv</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="n">vbFromUnicode</span><span class="p">)</span>
+<a id="__codelineno-12-30" name="__codelineno-12-30" href="#__codelineno-12-30"></a><span class="w">                    </span><span class="k">End</span><span class="w"> </span><span class="k">If</span>
+<a id="__codelineno-12-31" name="__codelineno-12-31" href="#__codelineno-12-31"></a><span class="w">                </span><span class="k">End</span><span class="w"> </span><span class="k">If</span>
+<a id="__codelineno-12-32" name="__codelineno-12-32" href="#__codelineno-12-32"></a><span class="w">           </span><span class="k">End</span><span class="w"> </span><span class="k">If</span>
+<a id="__codelineno-12-33" name="__codelineno-12-33" href="#__codelineno-12-33"></a><span class="w">      </span><span class="k">End</span><span class="w"> </span><span class="k">If</span>
+<a id="__codelineno-12-34" name="__codelineno-12-34" href="#__codelineno-12-34"></a><span class="w">   </span><span class="k">End</span><span class="w"> </span><span class="k">If</span>
+<a id="__codelineno-12-35" name="__codelineno-12-35" href="#__codelineno-12-35"></a><span class="w">   </span><span class="n">Label_CLUE</span><span class="p">.</span><span class="n">Caption</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">strdec</span>
+<a id="__codelineno-12-36" name="__codelineno-12-36" href="#__codelineno-12-36"></a><span class="k">End</span><span class="w"> </span><span class="k">If</span>
+</code></pre></div>
+<p>无需分析加解密算法，输出结果 <code>strusout</code> 由 <code>Encode(strusrinput, t)</code> 加密得到，只需分别用解密函数反推五个 if 分支条件对应的明文即可</p>
+<p>修改 <code>Label_CLUE.Caption = strdec</code> 为 <code>Label_CLUE.Caption = Decode(xxx,t)</code>，回到 word 运行 <code>AutoOpen</code> 宏</p>
+<p>随便输入字符点击确定即可在 Dialog 的 label 处显示对应明文，分别是 <code>123456</code>、<code>aaaaaa</code>、<code>000000</code>、<code>墙角数枝</code>、<code>iloveyou</code></p>
+<p>将 <code>Label_CLUE.Caption = Decode(xxx,t)</code> 改回 <code>Label_CLUE.Caption = strdec</code>，分别输入五段明文，发现输入 <code>墙角数枝</code> 得到 <code>解压密码：两只黄鹂鸣翠柳,一行白鹭上青天!</code></p>
+<p>结合 word 里的 hint <code>Rar 密码为复杂型，长度为16位，包含了字母、数字和符号。</code></p>
+<p>压缩包密码猜出为 <code>2zhlmcl,1hblsqt.</code>，解压拿到 flag：<code>Dest0g3{VBScr1pt_And_Hashc4t_1s_g00d}</code></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-11.md -->
+<h3 id="pkzip">PKZIP 密钥还原<a class="headerlink" href="#pkzip" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687746b858cb8da5c8b7efda.png"></p>
+<p>给了三个文件</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6877471d58cb8da5c8b7f2b9.png"></p>
+<p>压缩包里还有一层</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6877484d58cb8da5c8b80028.png"></p>
+<p>先尝试利用 key 文件做一个明文攻击</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>bkcrack.exe<span class="w"> </span>-C<span class="w"> </span>purezip.zip<span class="w"> </span>-c<span class="w"> </span><span class="s2">"secret key.zip"</span><span class="w"> </span>-p<span class="w"> </span>key
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687749fc58cb8da5c8b81b39.png"></p>
+<p>再利用密钥直接解压</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>bkcrack.exe<span class="w"> </span>-C<span class="w"> </span>purezip.zip<span class="w"> </span>-c<span class="w"> </span><span class="s2">"secret key.zip"</span><span class="w"> </span>-k<span class="w"> </span>e63af7cc<span class="w"> </span>55ef839d<span class="w"> </span>dc10b922<span class="w"> </span>-d<span class="w"> </span><span class="m">1</span>.zip
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68774afc58cb8da5c8b8295a.png"></p>
+<p>注意此时的 ZIP 是压缩之后的，需要解压一下，放到 cyberchef 里面使用 raw inflate 解一下并保存压缩包</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68774f1158cb8da5c8b84691.png"></p>
+<p>告诉我们密码为两个字节</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68774f4358cb8da5c8b846b3.png"></p>
+<p>写脚本爆破</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">zipfile</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">libnum</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tqdm</span><span class="w"> </span><span class="kn">import</span> <span class="n">trange</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">trange</span><span class="p">(</span><span class="mi">256</span><span class="p">):</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">256</span><span class="p">):</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>        <span class="n">fz</span> <span class="o">=</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="s1">'11.zip'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>        <span class="n">password</span> <span class="o">=</span> <span class="n">libnum</span><span class="o">.</span><span class="n">n2s</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="n">libnum</span><span class="o">.</span><span class="n">n2s</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>        <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>            <span class="n">fz</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="n">pwd</span><span class="o">=</span><span class="n">password</span><span class="p">)</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>            <span class="nb">print</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>            <span class="n">fz</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>            <span class="k">break</span>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>        <span class="k">except</span><span class="p">:</span>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>            <span class="n">fz</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>            <span class="k">continue</span>
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a>        <span class="k">continue</span>
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a>    <span class="k">break</span>
+</code></pre></div>
+<p>得到密码：<code>\x9c\x07</code></p>
+<p>再写脚本解压</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">zipfile</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="k">with</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="s1">'download.zip'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">fz</span><span class="p">:</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>    <span class="c1"># 直接解压，指定密码</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>    <span class="n">fz</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="n">pwd</span><span class="o">=</span><span class="sa">b</span><span class="s1">'</span><span class="se">\x9c\x07</span><span class="s1">'</span><span class="p">)</span>
+</code></pre></div>
+<p>打开又得到密钥</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687751f158cb8da5c8b84af1.png"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-12.md -->
+
+<p>同时在 zpaq 文件的文件尾得到</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6877526458cb8da5c8b84b2e.png"></p>
+<p>密码是 md5（明文的密钥，长度为 3 个字节）</p>
+<p>PKZIP 传统加密不是 AES，而是一种可逆弱流密码，内部维护三个 32-bit 状态：Key0、Key1、Key2</p>
+<p>你只要恢复了这三个 key，就能解密 ZIP 内所有文件，即使你不知道用户密码</p>
+<p>我们把整个加密分为两个阶段</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>阶段 1：用密码生成三段密钥（Key0/Key1/Key2）
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>阶段 2：用三段密钥加密数据
+</code></pre></div>
+<p>阶段一：用密码生成三段密钥</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">Key0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x12345678</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="n">Key1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x23456789</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="n">Key2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x34567890</span>
+</code></pre></div>
+<p>再初始化密钥，对用户输入的 ZIP 密码的每一个字节（用 p 代替）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">Key0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CRC32</span><span class="p">(</span><span class="n">Key0</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">)</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="n">Key1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Key1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">Key0</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0xff</span><span class="p">)</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="n">Key1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Key1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">134775813</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="n">Key2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CRC32</span><span class="p">(</span><span class="n">Key2</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">Key1</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">24</span><span class="p">))</span>
+</code></pre></div>
+<p>阶段 2：用三段密钥加密数据</p>
+<p>第 1 步：用 Key2 生成一个密钥流字节（keystream = 基于 Key2 算出来 1 字节）</p>
+<p>第 2 步：明文 XOR keystream = 密文</p>
+<p>第 3 步：用明文字节更新三段密钥（Key0/Key1/Key2）</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">Key0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CRC32</span><span class="p">(</span><span class="n">Key0</span><span class="p">,</span><span class="w"> </span><span class="n">P</span><span class="p">)</span><span class="w">       </span><span class="c1">// 明文字节 P</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="n">Key1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Key1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">Key0</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0xff</span><span class="p">)</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="n">Key1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Key1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">134775813</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="n">Key2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CRC32</span><span class="p">(</span><span class="n">Key2</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">Key1</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">24</span><span class="p">))</span>
+</code></pre></div>
+<p>也就是说，每加密一个明文字节，都要：</p>
+<div class="highlight"><pre><span></span><code>1. 生成一个 keystream（密钥流字节）
+2. 用它 XOR 明文得到密文
+3. 用“明文字节”更新 Key0 Key1 Key2
+</code></pre></div>
+<p>阶段一只进行一次，阶段二每加密一个明文字节就进行一次</p>
+<p>那么怎么破解呢？？？</p>
+<p>PKZIP 的三段密钥更新结构是可逆的（CRC32 可逆、乘法可逆、加法可逆），所以只要你知道某一刻的 Key0 / Key1 / Key2，就能倒推所有密码字节</p>
+<p>逆向步骤 1：由 Key2 推出 Key1 的最高字节 &amp; Key2_prev</p>
+<p>正向是</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">Key2</span> <span class="o">=</span> <span class="n">CRC32</span><span class="p">(</span><span class="n">Key2_prev</span><span class="p">,</span> <span class="n">MSB</span><span class="p">(</span><span class="n">Key1_prev</span><span class="p">))</span>
+</code></pre></div>
+<p>逆向时枚举 Key1 的最高字节（0x00–0xFF），对 CRC32 进行逆变换</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">Key2_prev</span> <span class="o">=</span> <span class="n">inverse_crc32</span><span class="p">(</span><span class="n">Key2</span><span class="p">,</span> <span class="n">guessed_MSB_Key1</span><span class="p">)</span>
+</code></pre></div>
+<p>逆向步骤 2：由 Key1_final 推出 Key1_prev 和 Key0_prev 的低字节</p>
+<p>正向是</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">Key1</span> <span class="o">=</span> <span class="p">(</span><span class="n">Key1_prev</span> <span class="o">+</span> <span class="n">LSB</span><span class="p">(</span><span class="n">Key0_prev</span><span class="p">))</span> <span class="o">*</span> <span class="mi">134775813</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre></div>
+<p>逆向是</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="c1"># 去掉 +1：</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>    <span class="n">Key1_minus1</span> <span class="o">=</span> <span class="n">Key1_final</span> <span class="o">-</span> <span class="mi">1</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="c1"># 乘法逆元恢复加之前的值：</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>    <span class="c1"># 因为</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>    <span class="n">Key1_minus1</span> <span class="o">=</span> <span class="p">(</span><span class="n">Key1_prev</span> <span class="o">+</span> <span class="n">LSB</span><span class="p">(</span><span class="n">Key0_prev</span><span class="p">))</span> <span class="o">*</span> <span class="n">constant</span>
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>    <span class="c1"># 所以</span>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>    <span class="n">Key1_prev</span> <span class="o">+</span> <span class="n">LSB</span><span class="p">(</span><span class="n">Key0_prev</span><span class="p">)</span> <span class="o">=</span> <span class="n">Key1_minus1</span> <span class="o">*</span> <span class="n">inverse</span><span class="p">(</span><span class="n">constant</span><span class="p">)</span> <span class="n">mod</span> <span class="mi">2</span><span class="o">^</span><span class="mi">32</span>
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>    <span class="c1"># 其中 constant = 134775813</span>
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>    <span class="c1"># inverse(constant) 是其在 mod 2^32 下的乘法逆元</span>
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a><span class="c1"># 此时我们知道：</span>
+<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>    <span class="n">Key1_prev</span> <span class="o">+</span> <span class="n">LSB</span><span class="p">(</span><span class="n">Key0_prev</span><span class="p">)</span> <span class="o">=</span> <span class="n">some_value</span>
+<a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a>    <span class="c1"># 这里未知的只有 8 bit</span>
+<a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a>    <span class="c1"># 所以枚举 256 种 LSB(Key0_prev)，即可得到 Key1_prev</span>
+</code></pre></div>
+<p>逆向步骤 3：由 Key0_final 推出 Key0_prev 和密码字节 p</p>
+<p>正向是</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">Key0_final</span> <span class="o">=</span> <span class="n">CRC32</span><span class="p">(</span><span class="n">Key0_prev</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span>
+</code></pre></div>
+<p>逆向是</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="c1"># 因为 CRC32 的单步更新</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>    <span class="n">CRC32</span><span class="p">(</span><span class="n">old</span><span class="p">,</span> <span class="n">byte</span><span class="p">)</span>  <span class="err">→</span>  <span class="n">new</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="c1"># 在数学上是完全可逆的：</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>    <span class="n">inverse_crc32</span><span class="p">(</span><span class="n">new</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="err">→</span> <span class="n">old</span>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>    <span class="c1"># 所以我们枚举密码字节 p（0x00–0xFF）</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>    <span class="n">Key0_prev</span> <span class="o">=</span> <span class="n">inverse_crc32</span><span class="p">(</span><span class="n">Key0_final</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span>
+</code></pre></div>
+<p>最终组合成完整逆向流程</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>for i from N-1 down to 0:
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>    从 Key2_final 逆 CRC32 推 Key1_prev 的最高位
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>    从 Key1_final 逆乘法和加法推 Key1_prev &amp; Key0_prev低位
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>    枚举 p 从 Key0_final 逆 CRC32 推 Key0_prev
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>    如果所有约束一致，则：
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>         p[i] = 当前枚举值
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>         Key0_final = Key0_prev
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>         Key1_final = Key1_prev
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>         Key2_final = Key2_prev
+</code></pre></div>
+<p>因此还需要还原 pkzip 的三段密匙，使用下面指令直接破解</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>bkcrack.exe<span class="w"> </span>-k<span class="w"> </span>e48d3828<span class="w"> </span>5b7223cc<span class="w"> </span>71851fb0<span class="w"> </span>-r<span class="w"> </span><span class="m">3</span><span class="w"> </span>?b
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="c1"># -r 3 表示使用反推阶段（reverse）进行 第 3 次迭代尝试，即从 key2 推回 key0 的过程的步骤次数</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="c1"># ?b 是一个通配符，通常是 bkcrack 的参数，表示用 brute-force（暴力枚举） 去补全某些信息</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687752b258cb8da5c8b84b49.png"></p>
+<p>最后使用 md5 加密后的密码解压缩即可</p>
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-2.md -->
+<h3 id="zip_3">ZIP 明文破解<a class="headerlink" href="#zip_3" title="Permanent link">¶</a></h3>
+<p>明文攻击主要利用不少于 12 字节（部分说法要求至少有8字节连续）的一段已知明文数据进行攻击，从而获取整个加密文档的数据，具体的原理这里不做太多阐述。</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>需要注意的是，明文攻击的12字节限制并不是指不足12字节就无法进行攻击，只是更少的字节数代表着可能意味着更多的尝试次数和可能答案。</p>
+</div>
+<h4 id="_8">基于已知文件<a class="headerlink" href="#_8" title="Permanent link">¶</a></h4>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6771139ad0e0a243d4ec1f4e.jpg"></p>
+<p>下载文件后得到一张图片与一个加密压缩包</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67729aead0e0a243d4ecca68.jpg"></p>
+<p>图片与压缩包中的图片是一样的（这里就不打开看了），明显提示了要明文攻击，具体怎么做呢？</p>
+<p>首先去看压缩包的算法</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67729bc0d0e0a243d4ecca8d.jpg"></p>
+<p>再将另一个文件也压缩成压缩包，需要保证算法一致</p>
+<p>不同的压缩软件算法各不同，这里要使用 WinRAR</p>
+<p>使用工具 ARCHPR 明文攻击，在明文选项中选择我们压缩的文件，这样就拿到了密码</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67729cc4d0e0a243d4eccac6.jpg"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-5.md -->
+<h4 id="_9">基于文件头<a class="headerlink" href="#_9" title="Permanent link">¶</a></h4>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6772a2c4d0e0a243d4eccc3d.jpg"></p>
+<p>打开压缩包需要密码，查看其文件类型</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6772a2d6d0e0a243d4eccc5b.jpg"></p>
+<p>知道文件类型后在 WinHex 中创建相同格式文件</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6772a2eed0e0a243d4eccc6a.jpg"></p>
+<p>首先根据文件头爆破出 key 值</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>bkcrack.exe<span class="w"> </span>-C<span class="w"> </span>flag.zip<span class="w"> </span>-c<span class="w"> </span>flag.png<span class="w"> </span>-p<span class="w"> </span><span class="m">6</span>.png<span class="w"> </span>-o<span class="w"> </span><span class="m">0</span><span class="w"> </span>&gt;1.log
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>-C：被爆破的文件名
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>-c：密文
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>-p：明文
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6772a30cd0e0a243d4eccc7e.jpg"></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>bkcrack.exe<span class="w"> </span>-C<span class="w"> </span>flag.zip<span class="w"> </span>-c<span class="w"> </span>flag.png<span class="w"> </span>-k<span class="w"> </span>key<span class="w"> </span>-d<span class="w"> </span>flag.png
+</code></pre></div>
+<p>最后还需要修改下 CRC 宽高即可</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6772a344d0e0a243d4eccc8f.jpg"></p>
+<h4 id="_10">基于文件头+文件尾<a class="headerlink" href="#_10" title="Permanent link">¶</a></h4>
+<p><img alt="" src="../assets/study_sources.png"></p>
+<p>压缩包里是一个 <code>.docx</code> ，众所周知 Office 三件套的文件格式一般都是一堆文件打包起来的 ZIP。</p>
+<p>于是用7-Zip看了眼存储方式是ZipCrypto Store，用 bkcrack 去明文攻击，如果这里不确定明文是什么的话就打开 Word 然后新建一个空的文档保存看看。</p>
+<p>一开始试了文件头的 12 个字节，还试了这个 Content_Types 的文件名，发现都跑不出来，一度开始怀疑人生。</p>
+<p>查一下 ZIP 的结构定义：</p>
+<p><img alt="" src="../assets/pkware.png"></p>
+<p>可以看到只有开头的 local file header signature <code>50 4B 03 04</code> 是硬编码的 Magic Number，后面的值都有可能根据文件的不同而变化，但是这也才 4 个字节，不够用怎么办？</p>
+<p>继续看到最后结尾的End of central directory record：</p>
+<p><img alt="" src="../assets/end_of_sign.png"></p>
+<p>这里end of central dir signature是 <code>50 4B 05 06</code> 的 Magic Number，现在有 8 个字节了，还差 4 个，于是 010 Editor 打开空白的 docx 文件看看尾巴：</p>
+<p><img alt="" src="../assets/empty_docx_tail.png"></p>
+<p>可以注意到其后的两个值都是 0，即 <code>00000000</code>。</p>
+<p>现在我们终于有 12 个字节了，其中后半段的8字节组合在一起就是 <code>504B050600000000</code>，偏移量是从后往前推 22 个字节（根据 End of central directory record 结构的定义：2 + 4 + 4 + 2 + 2 + 2 + 2 + 4 = 22 ，最后的 .ZIP file comment 没有就不管），即文件大小（<strong>注意是 ZIP 中的文件压缩前原始大小</strong>，不是 ZIP 文件的大小，因为你是使用里面flag.docx那个压缩包的已知明文进行攻击的）减去22：</p>
+<p><img alt="" src="../assets/index_of_file.png"></p>
+<div class="arithmatex">\[10485 - 22 = 10463\]</div>
+<p>所以我们最终可以构造出这样的命令，其中<code>-x</code>是指定偏移和对应位置的连续字节流：
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>bkcrack<span class="w"> </span>-C<span class="w"> </span>flag.zip<span class="w"> </span>-c<span class="w"> </span>flag.docx<span class="w"> </span>-x<span class="w"> </span><span class="m">0</span><span class="w"> </span>504B0304<span class="w"> </span>-x<span class="w"> </span><span class="m">10463</span><span class="w"> </span>504B050600000000
+</code></pre></div>
+<p><img alt="" src="../assets/bkcrack_keys.png"></p>
+<p>然后我们就可以利用得到的keys解密：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>bkcrack<span class="w"> </span>-C<span class="w"> </span>flag.zip<span class="w"> </span>-k<span class="w"> </span>dc5f5a25<span class="w"> </span>ba003c16<span class="w"> </span>064c2967<span class="w"> </span>-c<span class="w"> </span>flag.docx<span class="w"> </span>-d<span class="w"> </span>flag.docx
+</code></pre></div>
+<p>即可得到最终的flag：</p>
+<p><img alt="" src="../assets/get_flag_bkcrack.png"></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>furryCTF{Ho0w_D1d_You_C0mE_H9re_xwx}
+</code></pre></div>
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-4.md -->
+<h3 id="_11">压缩密码爆破<a class="headerlink" href="#_11" title="Permanent link">¶</a></h3>
+<p>大型比赛中官方都会提供字典，所以还是比较简单的</p>
+<p>直接上题（BugKu CTF）</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6772a0fbd0e0a243d4eccbbf.jpg"></p>
+<p>这里需要网上去下载一个 rockyou 字典</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6772a1add0e0a243d4eccbe0.jpg"></p>
+<p>题目给的是 ZIP 文件，使用工具 Ziperello 爆破</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6772a1bbd0e0a243d4eccbec.jpg"></p>
+<p>选择字典模式</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6772a1ddd0e0a243d4eccbf4.jpg"></p>
+<p>选择字典</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6772a1fad0e0a243d4eccc04.jpg"></p>
+<p>成功爆破出密码</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6772a208d0e0a243d4eccc06.jpg"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-7.md -->
+<h3 id="crc">CRC 碰撞<a class="headerlink" href="#crc" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6772a640d0e0a243d4eccd82.jpg"></p>
+<p>打开文件需要密码，但是发现了三个大小相同的文件，多个相同大小文件可以确定为 CRC 碰撞</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6772a65dd0e0a243d4eccd87.jpg"></p>
+<p>使用脚本碰撞即可</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6772a673d0e0a243d4eccd95.jpg"></p>
+<h2 id="rar_1">RAR<a class="headerlink" href="#rar_1" title="Permanent link">¶</a></h2>
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-3.md -->
+<h3 id="rar_2">RAR 文件头修复<a class="headerlink" href="#rar_2" title="Permanent link">¶</a></h3>
+<p>当使用 WinRAR 打开时会提示文件头错误，我们需要做的就是去修改错误的文件头</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67728bf5d0e0a243d4ecc65a.jpg"></p>
+<p>打开文件报错</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67729ef3d0e0a243d4eccb43.jpg"></p>
+<p>RAR 文件格式解析：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>1. 固定文件头：52 61 72 21 1A 07 00（其中 0x6152 表示 CRC，0x72 表示头类型，0x1A21 表示 FLAGS，0x0007 表示 SIZE）
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>2. 压缩文件头：CF 90 73 00 00 0D 00 00 00 00 00 00 00（结构与上面一致，0x73 表示头类型，只是多了六个字节的保留位）
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>3. 文件头：D5 56 74…………（这里内容太多（图中全是蓝色部分全是），我们只需知道前三个字节同样与上面一致，0x74 表示头类型）
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6772a01ad0e0a243d4eccb6c.jpg"></p>
+<p>txt 的内容后面就是 secret.png 的文件头（txt 是可以打开的，内容就是图中字符串）</p>
+<p>文件头的头类型是 0x7A，将其改为 0x74</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6772a05cd0e0a243d4eccb86.jpg"></p>
+<p>成功解压缩出图片</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6772260cd0e0a243d4ec6aa5.jpg"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter3\3-8.md -->
+<h3 id="rar_3">RAR 伪加密破解<a class="headerlink" href="#rar_3" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6807b92758cb8da5c8c10199.png"></p>
+<p>下载附件解压报错</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6807b9eb58cb8da5c8c10636.png"></p>
+<p>放入 010 中解析，首先是文件头签名</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>52 61 72 21 1A 07 00
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6807baf958cb8da5c8c10b95.png"></p>
+<p>第二个部分是关键</p>
+<table>
+<thead>
+<tr>
+<th>偏移</th>
+<th>大小</th>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x00</td>
+<td>1 字节</td>
+<td>HEAD_CRC</td>
+<td>头部校验码</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>1 字节</td>
+<td>HEAD_TYPE</td>
+<td>类型（<code>0x74</code> 表示 File Header）</td>
+</tr>
+<tr>
+<td>0x02</td>
+<td>2 字节</td>
+<td>HEAD_FLAGS</td>
+<td>标志位（这里是伪加密的关键）</td>
+</tr>
+<tr>
+<td>0x04</td>
+<td>2 字节</td>
+<td>HEAD_SIZE</td>
+<td>头部大小</td>
+</tr>
+<tr>
+<td>0x06</td>
+<td>4 字节</td>
+<td>PACK_SIZE</td>
+<td>压缩后大小</td>
+</tr>
+<tr>
+<td>0x0A</td>
+<td>4 字节</td>
+<td>UNP_SIZE</td>
+<td>解压后大小</td>
+</tr>
+<tr>
+<td>0x0E</td>
+<td>1 字节</td>
+<td>HOST_OS</td>
+<td>操作系统标识</td>
+</tr>
+<tr>
+<td>...</td>
+<td>可变</td>
+<td>其余内容</td>
+<td>包括文件名长度、压缩方法、时间戳等</td>
+</tr>
+</tbody>
+</table>
+<p>在 <strong>RAR 4.x</strong> 中也就是第 11 个字节处实现伪加密</p>
+<p>也就是 010 Editor 显示的文件结构中的 <code>ubyte BLOCK_HEADERS_ENCRYPTED</code> 字段的值改为 1</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6807c5d558cb8da5c8c14972.png"></p>
+<p>在 5.x 中还可以是第 24 个字节处</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6807c61f58cb8da5c8c14a56.png"></p>
+<p>题目中的版本应该 5.x，将 <code>84</code> 改为 <code>80</code> 即可</p>
+<p>（WinRAR 或者 ForeMost 均可直接提取图片）</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6807c65458cb8da5c8c14b03.png"></p>
+<h2 id="_12">参考文献<a class="headerlink" href="#_12" title="Permanent link">¶</a></h2>
+<ol>
+<li>
+<p><a href="https://pkware.cachefly.net/webdocs/APPNOTE/APPNOTE-6.2.0.txt">APPNOTE.TXT 6.2.0 - .ZIP File Format Specification</a></p>
+</li>
+<li>
+<p><a href="https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT">APPNOTE.TXT 最新版 - .ZIP File Format Specification</a></p>
+</li>
+<li>
+<p><a href="https://support.pkware.com/pkzip/appnote">PKWARE® ZIP标准</a></p>
+</li>
+<li>
+<p><a href="https://czxh.top/2025/10/31/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3zip%E4%BC%AA%E5%8A%A0%E5%AF%86/">Mitunlnyの小宇宙-深入理解zip伪加密</a></p>
+</li>
+<li>
+<p><a href="https://lazzzaro.github.io/2022/05/26/match-Dest0g3-520%E8%BF%8E%E6%96%B0%E8%B5%9B/index.html#EasyWord">加密宏破解(EasyWord)-Lazzaro Dest0g3 520迎新赛 WP</a></p>
+</li>
+</ol>
+<!-- Imported from D:\\Book\\Misc\\Chapter3\README.md --></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../file/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 文件基础"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        文件基础
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../stego/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: 图片隐写"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        图片隐写
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#_1">压缩包</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_2">文件结构</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#zip">.ZIP</a>
+        
+      </li>
+    
+      <li>
+        <a href="#rar">.RAR</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_3">爆破工具</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#archpr">ARCHPR</a>
+        
+      </li>
+    
+      <li>
+        <a href="#ziperello">Ziperello</a>
+        
+      </li>
+    
+      <li>
+        <a href="#fcrackzip">fcrackzip</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#zip_1">ZIP相关攻击</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#zip_2">ZIP文件格式</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#local-file-header">压缩源文件数据区 (Local file header)</a>
+        
+      </li>
+    
+      <li>
+        <a href="#central-directory">压缩源文件目录区 (Central directory)</a>
+        
+      </li>
+    
+      <li>
+        <a href="#end-of-central-directory-record">压缩源文件目录结束标志 (End of Central Directory Record)</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_4">伪加密</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_5">判断加密方式</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_6">伪加密的判断方法</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_7">案例</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#word">加密Word爆破与宏破解</a>
+        
+      </li>
+    
+      <li>
+        <a href="#pkzip">PKZIP 密钥还原</a>
+        
+      </li>
+    
+      <li>
+        <a href="#zip_3">ZIP 明文破解</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_8">基于已知文件</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_9">基于文件头</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_10">基于文件头+文件尾</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_11">压缩密码爆破</a>
+        
+      </li>
+    
+      <li>
+        <a href="#crc">CRC 碰撞</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#rar_1">RAR</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#rar_2">RAR 文件头修复</a>
+        
+      </li>
+    
+      <li>
+        <a href="#rar_3">RAR 伪加密破解</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_12">参考文献</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

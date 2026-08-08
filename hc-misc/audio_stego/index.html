@@ -1,0 +1,1569 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>音频隐写 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-env/">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Docker_On_Linux/">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../Archivefile/">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link on" href="./">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/CTFevent/">CTF赛事</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="_1">音频隐写<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<!-- Imported from D:\\Book\\Misc\\Chapter4\4-1.md -->
+<h3 id="mp3-key">MP3 （Key）<a class="headerlink" href="#mp3-key" title="Permanent link">¶</a></h3>
+<p>这是 MP3 最常见的隐写方法，主要是使用 MP3Stego 工具进行隐写</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f83b4d0e0a243d4f28523.jpg"></p>
+<p>下载文件后是一段 MP3 音频，同时题目给出了 key：syclovergeek</p>
+<p>因为 MP3Stego 工具隐写是需要密码的，那么可以先尝试使用工具解密提取</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Decode.exe<span class="w"> </span>-X<span class="w"> </span>-P<span class="w"> </span>syclovergeek<span class="w"> </span>mp3
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f83c5d0e0a243d4f28529.jpg"></p>
+<p>成功拿到 flag</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f8436d0e0a243d4f2856f.jpg"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter4\4-10.md -->
+<h3 id="wav-lsb">Wav 文件 LSB<a class="headerlink" href="#wav-lsb" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f8cdad0e0a243d4f287e7.jpg"></p>
+<p>下载文件发现是 Wav 文件，题目提示是 LSB 隐写</p>
+<p>使用 Wav 文件 LSB 隐写工具：Stegolsb</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>-h：隐藏声音文件中的数据
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>-r：从声音文件中恢复数据
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>-i<span class="w"> </span>text：文件的路径
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>-s<span class="w"> </span>text：隐藏在声音文件中的文件路径
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>-o<span class="w"> </span>text：输出文件的路径
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>-n<span class="w"> </span>integer：使用多少个<span class="w"> </span>LSB<span class="w"> </span><span class="o">[</span>默认值：2<span class="o">]</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>-b<span class="w"> </span>integer：从声音文件中恢复多少字节
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f8d5ad0e0a243d4f287fa.jpg"></p>
+<p>成功拿到 flag</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f8dd0d0e0a243d4f28810.jpg"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter4\4-11.md -->
+<h3 id="_2">慢扫描电视<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67e2ad060ba3d5a1d7e34bb3.png"></p>
+<p>题目名提示了信号类型</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67e2ad3b0ba3d5a1d7e34bd2.png"></p>
+<p>将 MP3 文件外放，便可以得到一张图片（一定要安静）</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67e2b0530ba3d5a1d7e34d93.png"></p>
+<p>得到字符</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>f7liavga{1M_0105n_cC@okmei_nFge!s}
+</code></pre></div>
+<p>最后栅栏解密</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67e2b0ba0ba3d5a1d7e34daa.png"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter4\4-12.md -->
+<h3 id="private-bit">Private Bit<a class="headerlink" href="#private-bit" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67e378840ba3d5a1d7e370ac.png"></p>
+<p>使用 010 打开文件发现存在保留字位 private bit</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67e37a1f0ba3d5a1d7e37120.png"></p>
+<p>第一个是 0，第二个是 1</p>
+<p>提取前八个得到 01000110，转为 ASCII 码是 F</p>
+<p>以下是对于 struct MPEG_FRAME mf 的解析</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>长度 (bit)</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>syncword</td>
+<td>12</td>
+<td>同步头，表示一帧数据的开始，共 12 位，全 1 即 0xFFF</td>
+</tr>
+<tr>
+<td>ID</td>
+<td>1</td>
+<td>算法标识位，"1" 表示 MPEG 音频</td>
+</tr>
+<tr>
+<td>layer</td>
+<td>2</td>
+<td>用来说明是哪一层编码</td>
+</tr>
+<tr>
+<td>protection_bit</td>
+<td>1</td>
+<td>用来表明冗余信息是否被加到音频流中，以进行错误检测和错误隐蔽；"1" 是未增加，"0" 是增加</td>
+</tr>
+<tr>
+<td>bitrate_index</td>
+<td>4</td>
+<td>用来指示该帧的 bitrate</td>
+</tr>
+<tr>
+<td>sampling_frequency</td>
+<td>2</td>
+<td>用来指示采样频率</td>
+</tr>
+<tr>
+<td>padding_bit</td>
+<td>1</td>
+<td>如果该位为 1，那么帧中包含一个额外槽，用于把平均位率调节到采样频率，否则该位必须为 0</td>
+</tr>
+<tr>
+<td>private_bit</td>
+<td>1</td>
+<td>留做私用</td>
+</tr>
+<tr>
+<td>mode</td>
+<td>2</td>
+<td>定义通道模式</td>
+</tr>
+<tr>
+<td>mode_extension</td>
+<td>2</td>
+<td>用来标识采用了哪一种 joint_stereo</td>
+</tr>
+<tr>
+<td>copyright</td>
+<td>1</td>
+<td>表明版权用，"1" 表示有版权，"0" 表示没有版权</td>
+</tr>
+<tr>
+<td>original/home</td>
+<td>1</td>
+<td>表明原版还是复制，"1" 表示原版，"0" 表示复制</td>
+</tr>
+<tr>
+<td>emphasis</td>
+<td>2</td>
+<td>表明加重音类型</td>
+</tr>
+</tbody>
+</table>
+<p>一个 mf 的 HEADER 总共 12+1+2+1+4+2+1+1+2+2+1+1+2=32，即总共 4 字节</p>
+<p>private_bit 为 24，所在的字节为第 3 个字节，因此该字节对应的地址为 235984+2=235986，即为第一个 private_bit 开始地址</p>
+<p>可以发现在每个 MPEG_FRAME mf 下的 4 字节 MPEG_HEADER mpeg_hdr 中的第 24 个 bit 有一个 private bit</p>
+<p>观察每一个 mf 组,大小为 417 或 418 字节，因此需要编写脚本</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">extract_hidden_data</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="c1"># ========== 参数设置部分 ==========</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="c1"># 初始读取位置(第一个 private bit 的起始位置)</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="n">start_pos</span> <span class="o">=</span> <span class="mi">235986</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="c1"># 结束读取位置(通过分析发现此位置后 private_bit 都为 0)</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="n">end_pos</span> <span class="o">=</span> <span class="mi">1369844</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="c1"># 基本组大小</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="n">group_size</span> <span class="o">=</span> <span class="mi">417</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="c1"># 需要跳过额外字节的位置集合(使用集合提高查找效率)</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="n">skip_positions</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">124</span><span class="p">,</span> <span class="mi">148</span><span class="p">,</span> <span class="mi">173</span><span class="p">,</span> <span class="mi">197</span><span class="p">,</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>                      <span class="mi">222</span><span class="p">,</span> <span class="mi">246</span><span class="p">,</span> <span class="mi">271</span><span class="p">,</span> <span class="mi">295</span><span class="p">,</span> <span class="mi">320</span><span class="p">,</span> <span class="mi">344</span><span class="p">,</span> <span class="mi">369</span><span class="p">,</span> <span class="mi">393</span><span class="p">,</span> <span class="mi">418</span><span class="p">}</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    <span class="c1"># ========== 数据提取部分 ==========</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>    <span class="n">binary_data</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># 用于存储提取的二进制位</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    <span class="n">current_pos</span> <span class="o">=</span> <span class="n">start_pos</span>  <span class="c1"># 当前文件指针位置</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>    <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># 位置计数器</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">'rb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>        <span class="k">while</span> <span class="n">current_pos</span> <span class="o">&lt;</span> <span class="n">end_pos</span><span class="p">:</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>            <span class="c1"># 移动文件指针到当前位置</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>            <span class="n">file</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="n">current_pos</span><span class="p">)</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>            <span class="c1"># 决定前进的步长:</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>            <span class="c1"># - 如果在 skip_positions 中，前进 group_size(417)</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>            <span class="c1"># - 否则前进 group_size + 1(418)</span>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>            <span class="n">step</span> <span class="o">=</span> <span class="n">group_size</span> <span class="k">if</span> <span class="n">counter</span> <span class="ow">in</span> <span class="n">skip_positions</span> <span class="k">else</span> <span class="n">group_size</span> <span class="o">+</span> <span class="mi">1</span>
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>            <span class="n">current_pos</span> <span class="o">+=</span> <span class="n">step</span>
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>            <span class="c1"># 读取 1 个字节</span>
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>            <span class="n">byte</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>            <span class="k">if</span> <span class="ow">not</span> <span class="n">byte</span><span class="p">:</span>  <span class="c1"># 如果读到文件末尾则终止</span>
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>                <span class="k">break</span>
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>            <span class="c1"># 提取字节的最后一位(使用位运算比bin()更高效):</span>
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>            <span class="c1"># 1. ord(byte) 获取字节的整数值</span>
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>            <span class="c1"># 2. &amp; 1 获取最低位</span>
+<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>            <span class="c1"># 3. str()转换为字符串形式('0'或'1')</span>
+<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>            <span class="n">binary_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">byte</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">))</span>
+<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>
+<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a>            <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>  <span class="c1"># 位置计数器递增</span>
+<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a>
+<a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a>    <span class="c1"># ========== 数据处理部分 ==========</span>
+<a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a>    <span class="c1"># 将二进制位列表拼接成字符串</span>
+<a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a>    <span class="n">binary_str</span> <span class="o">=</span> <span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">binary_data</span><span class="p">)</span>
+<a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a>
+<a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a>    <span class="c1"># 使用正则表达式将二进制字符串按 8 位一组分割</span>
+<a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a>    <span class="c1"># 然后将每组二进制转换为对应的 ASCII 字符</span>
+<a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a>    <span class="n">hidden_text</span> <span class="o">=</span> <span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">([</span>
+<a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a>        <span class="nb">chr</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">byte</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>  <span class="c1"># 将 8 位二进制字符串转换为整数再转换为字符</span>
+<a id="__codelineno-3-52" name="__codelineno-3-52" href="#__codelineno-3-52"></a>        <span class="k">for</span> <span class="n">byte</span> <span class="ow">in</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">'.</span><span class="si">{8}</span><span class="s1">'</span><span class="p">,</span> <span class="n">binary_str</span><span class="p">)</span>  <span class="c1"># 每 8 位分割</span>
+<a id="__codelineno-3-53" name="__codelineno-3-53" href="#__codelineno-3-53"></a>    <span class="p">])</span>
+<a id="__codelineno-3-54" name="__codelineno-3-54" href="#__codelineno-3-54"></a>
+<a id="__codelineno-3-55" name="__codelineno-3-55" href="#__codelineno-3-55"></a>    <span class="c1"># 返回处理后的文本(去除首尾空白字符)</span>
+<a id="__codelineno-3-56" name="__codelineno-3-56" href="#__codelineno-3-56"></a>    <span class="k">return</span> <span class="n">hidden_text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<a id="__codelineno-3-57" name="__codelineno-3-57" href="#__codelineno-3-57"></a>
+<a id="__codelineno-3-58" name="__codelineno-3-58" href="#__codelineno-3-58"></a>
+<a id="__codelineno-3-59" name="__codelineno-3-59" href="#__codelineno-3-59"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+<a id="__codelineno-3-60" name="__codelineno-3-60" href="#__codelineno-3-60"></a>    <span class="n">result</span> <span class="o">=</span> <span class="n">extract_hidden_data</span><span class="p">(</span><span class="s1">'1.mp3'</span><span class="p">)</span>
+<a id="__codelineno-3-61" name="__codelineno-3-61" href="#__codelineno-3-61"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div>
+<p>成功拿到 flag</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67e37fc60ba3d5a1d7e37244.png"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter4\4-13.md -->
+<h3 id="_3">采样率<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67e91dc10ba3d5a1d7e6c1b3.png"></p>
+<p>放入 Audacity 中没有线索</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67e91dd90ba3d5a1d7e6c1c3.png"></p>
+<p>调整采样率看看</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67e91e020ba3d5a1d7e6c1ca.png"></p>
+<p>设置为 900</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67e91e110ba3d5a1d7e6c1d1.png"></p>
+<p>再查看频谱图就有了</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67e91e290ba3d5a1d7e6c1d7.png"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter4\4-14.md -->
+<h3 id="raw-afsk1200">Raw 无线电 AFSK1200<a class="headerlink" href="#raw-afsk1200" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67e9ff680ba3d5a1d7e739f7.png"></p>
+<p>先看文件类型</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67e9ffc00ba3d5a1d7e73a3f.png"></p>
+<p>在1100 Hz 和 2200 Hz 处有两个峰值</p>
+<p>这是 AX.25 的 BFSK 中使用的两个音调</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67ea001a0ba3d5a1d7e73ab0.png"></p>
+<p>首先转换类型</p>
+<p>需要先用 <code>sox</code> 把 wav 转为 raw</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sox<span class="w"> </span>-t<span class="w"> </span>wav<span class="w"> </span>997a0b28705f4ef086acfb7e1b932336<span class="w"> </span>-esigned-integer<span class="w"> </span>-b16<span class="w"> </span>-r<span class="w"> </span><span class="m">22050</span><span class="w"> </span>-t<span class="w"> </span>raw<span class="w"> </span>latlong.raw
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># sox: 调用 SoX 音频处理工具</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># -t wav: 指定输入文件的类型为 WAV 格式</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1"># 997a0b28705f4ef086acfb7e1b932336: 输入文件名（看起来像是一个哈希值命名的 WAV 文件）</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1"># -esigned-integer: 指定输出音频的编码格式为有符号整数</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1"># -b16: 指定输出音频的位深为 16 位（即每个样本占 16 位）</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="c1"># -r 22050: 指定输出音频的采样率为 22050 Hz</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="c1"># -t raw: 指定输出文件的类型为 RAW（原始音频数据，无文件头）</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="c1"># latlong.raw: 输出文件名</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67ea00db0ba3d5a1d7e73b48.png"></p>
+<p>再使用工具 <code>multimon-ng</code> 解密</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>multimon-ng<span class="w"> </span>-t<span class="w"> </span>raw<span class="w"> </span>-a<span class="w"> </span>AFSK1200<span class="w"> </span>latlong.raw
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># -t 指定输入文件的类型</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># -a 指定要使用的解码协议</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1"># AFSK1200 表示解码 1200 bps 的音频频移键控（Audio Frequency-Shift Keying） 信号，这是 APRS（自动分组报告系统）等协议常用的调制方式</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67ea01d90ba3d5a1d7e73bc5.png"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter4\4-15.md -->
+<h3 id="deegger-embedder">DeEgger Embedder<a class="headerlink" href="#deegger-embedder" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67ea22c50ba3d5a1d7e797a0.png"></p>
+<p>题目附件给了一个后缀为 .pyc 文件，010 打开仔细查看数据，发现有倒置的 flag1 和 flag2</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67ea241a0ba3d5a1d7e7982a.png"></p>
+<p>因此我们写个 python 脚本将数据倒置回来</p>
+<p>然后 foremost 一下可以得到一个伪加密的压缩包</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67ea24440ba3d5a1d7e7982f.png"></p>
+<p>压缩包的注释中有 flag1 和 flag2</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67ea24560ba3d5a1d7e79833.png"></p>
+<p>去除伪加密后解压可以得到一个 Dream It Possible.mp3</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67ea247e0ba3d5a1d7e79839.png"></p>
+<p>这里需要使用 DeEgger Embedder 提取出隐藏的数据</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67ea24910ba3d5a1d7e7983b.png"></p>
+<p>用上面那个工具可以提取出一大串 base32 编码的字符串，直接解码发现没有得到什么有用的信息</p>
+<p>尝试 base32 隐写解密</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">base64</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_base32_diff_value</span><span class="p">(</span><span class="n">stego_line</span><span class="p">,</span> <span class="n">normal_line</span><span class="p">):</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="n">base32chars</span> <span class="o">=</span> <span class="s1">'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">normal_line</span><span class="p">)):</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        <span class="k">if</span> <span class="n">stego_line</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">normal_line</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>            <span class="k">return</span> <span class="nb">abs</span><span class="p">(</span><span class="n">base32chars</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="n">stego_line</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span><span class="o">-</span><span class="n">base32chars</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="n">normal_line</span><span class="p">[</span><span class="n">i</span><span class="p">])))</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    <span class="k">return</span> <span class="mi">0</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="c1"># base32 隐写解密</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="k">def</span><span class="w"> </span><span class="nf">base32stego_decode</span><span class="p">(</span><span class="n">lines</span><span class="p">):</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>    <span class="n">res</span> <span class="o">=</span> <span class="s1">''</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>        <span class="n">stego_line</span> <span class="o">=</span> <span class="n">i</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>        <span class="n">normal_line</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b32encode</span><span class="p">(</span><span class="n">base64</span><span class="o">.</span><span class="n">b32decode</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">strip</span><span class="p">()))</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>        <span class="n">diff</span> <span class="o">=</span> <span class="n">get_base32_diff_value</span><span class="p">(</span><span class="n">stego_line</span><span class="p">,</span> <span class="n">normal_line</span><span class="p">)</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>        <span class="k">if</span> <span class="s1">'='</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">stego_line</span><span class="p">):</span>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>            <span class="k">continue</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>        <span class="k">if</span> <span class="n">diff</span><span class="p">:</span>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>            <span class="n">res</span> <span class="o">+=</span> <span class="nb">bin</span><span class="p">(</span><span class="n">diff</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span>
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>        <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a>            <span class="n">res</span> <span class="o">+=</span> <span class="s1">'0'</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a>    <span class="k">return</span> <span class="n">res</span>
+<a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a>
+<a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"Dream It Possible - extracted.txt"</span><span class="p">,</span> <span class="s1">'rb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a>    <span class="n">file_lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+<a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a><span class="n">en</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">"encrypt.txt"</span><span class="p">,</span><span class="s2">"w"</span><span class="p">)</span>
+<a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a><span class="n">en</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">base32stego_decode</span><span class="p">(</span><span class="n">file_lines</span><span class="p">))</span>
+<a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a><span class="n">en</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div>
+<p>提取 base32 隐写的数据可以得到一大串二进制的字符，这里还不知道具体干啥用，转图片也没有发现有用的信息</p>
+<p>因此我们回头分析那个 pyc 文件，直接使用 uncompyle6 就可以反编译出原来的 Python 源码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># uncompyle6 version 3.9.1</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="c1"># Python bytecode version base 2.7 (62211)</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="c1"># Decompiled from: Python 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSC v.1928 64 bit (AMD64)]</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># Embedded file name: Fl4g.py</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1"># Compiled at: 2017-07-02 00:15:33</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="kn">from</span><span class="w"> </span><span class="nn">os</span><span class="w"> </span><span class="kn">import</span> <span class="n">urandom</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="k">def</span><span class="w"> </span><span class="nf">generate</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">bin</span><span class="p">(</span><span class="n">m</span> <span class="o">^</span> <span class="n">k</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]:</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>        <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>        <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>            <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">^</span> <span class="n">m</span> <span class="o">^</span> <span class="n">k</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>        <span class="k">if</span> <span class="n">result</span> <span class="o">&gt;&gt;</span> <span class="mi">256</span><span class="p">:</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>            <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">^</span> <span class="n">P</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>    <span class="k">return</span> <span class="n">result</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="k">def</span><span class="w"> </span><span class="nf">encrypt</span><span class="p">(</span><span class="n">seed</span><span class="p">):</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>    <span class="n">key</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">urandom</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">'hex'</span><span class="p">),</span> <span class="mi">16</span><span class="p">)</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>        <span class="k">yield</span> <span class="n">key</span>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>        <span class="n">key</span> <span class="o">=</span> <span class="n">generate</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">seed</span><span class="p">)</span> <span class="o">+</span> <span class="mi">233333333333</span><span class="n">L</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a>
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a>
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="k">def</span><span class="w"> </span><span class="nf">convert</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a>    <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">'hex'</span><span class="p">),</span> <span class="mi">16</span><span class="p">)</span>
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a>
+<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a>
+<a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a><span class="n">P</span> <span class="o">=</span> <span class="mi">115792089237316195423570985008687907853269984665640564039457584007913129640997</span><span class="n">L</span>
+<a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a><span class="n">flag1</span> <span class="o">=</span> <span class="s1">'ThIs_Fl4g_Is_Ri9ht'</span>
+<a id="__codelineno-7-33" name="__codelineno-7-33" href="#__codelineno-7-33"></a><span class="n">flag2</span> <span class="o">=</span> <span class="s1">'Hey_Fl4g_Is_Not_HeRe'</span>
+<a id="__codelineno-7-34" name="__codelineno-7-34" href="#__codelineno-7-34"></a><span class="n">key</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">urandom</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">'hex'</span><span class="p">),</span> <span class="mi">16</span><span class="p">)</span>
+<a id="__codelineno-7-35" name="__codelineno-7-35" href="#__codelineno-7-35"></a><span class="n">data</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'data.txt'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a id="__codelineno-7-36" name="__codelineno-7-36" href="#__codelineno-7-36"></a><span class="n">result</span> <span class="o">=</span> <span class="n">encrypt</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+<a id="__codelineno-7-37" name="__codelineno-7-37" href="#__codelineno-7-37"></a><span class="n">encrypt1</span> <span class="o">=</span> <span class="nb">bin</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">^</span> <span class="nb">eval</span><span class="p">(</span><span class="s1">'0x'</span> <span class="o">+</span> <span class="nb">hex</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">next</span><span class="p">())[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mi">22</span><span class="p">))[</span><span class="mi">2</span><span class="p">:]</span>
+<a id="__codelineno-7-38" name="__codelineno-7-38" href="#__codelineno-7-38"></a><span class="n">encrypt2</span> <span class="o">=</span> <span class="nb">hex</span><span class="p">(</span><span class="n">convert</span><span class="p">(</span><span class="n">flag1</span><span class="p">)</span> <span class="o">^</span> <span class="n">result</span><span class="o">.</span><span class="n">next</span><span class="p">())[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-7-39" name="__codelineno-7-39" href="#__codelineno-7-39"></a><span class="n">encrypt3</span> <span class="o">=</span> <span class="nb">hex</span><span class="p">(</span><span class="n">convert</span><span class="p">(</span><span class="n">flag2</span><span class="p">)</span> <span class="o">^</span> <span class="n">result</span><span class="o">.</span><span class="n">next</span><span class="p">())[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-7-40" name="__codelineno-7-40" href="#__codelineno-7-40"></a><span class="nb">print</span> <span class="s1">'flag1:'</span><span class="p">,</span> <span class="n">encrypt2</span>
+<a id="__codelineno-7-41" name="__codelineno-7-41" href="#__codelineno-7-41"></a><span class="nb">print</span> <span class="s1">'flag2:'</span><span class="p">,</span> <span class="n">encrypt3</span>
+<a id="__codelineno-7-42" name="__codelineno-7-42" href="#__codelineno-7-42"></a><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'encrypt.txt'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
+<a id="__codelineno-7-43" name="__codelineno-7-43" href="#__codelineno-7-43"></a><span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">encrypt1</span><span class="p">)</span>
+<a id="__codelineno-7-44" name="__codelineno-7-44" href="#__codelineno-7-44"></a><span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a id="__codelineno-7-45" name="__codelineno-7-45" href="#__codelineno-7-45"></a>
+<a id="__codelineno-7-46" name="__codelineno-7-46" href="#__codelineno-7-46"></a><span class="c1"># okay decompiling .\reverse_1_PyHaHa.pyc</span>
+</code></pre></div>
+<p>由上述代码可知我们之前得到的二进制数据应该就是上述代码中的 encrypt.txt</p>
+<p>因此我们写一个 Python 脚本去还原出原来的数据，具体脚本如下：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">libnum</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">generate</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">bin</span><span class="p">(</span><span class="n">m</span> <span class="o">^</span> <span class="n">k</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]:</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>        <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>        <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>            <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">^</span> <span class="n">m</span> <span class="o">^</span> <span class="n">k</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>        <span class="k">if</span> <span class="n">result</span> <span class="o">&gt;&gt;</span> <span class="mi">256</span><span class="p">:</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>            <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">^</span> <span class="n">P</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>    <span class="k">return</span> <span class="n">result</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="k">def</span><span class="w"> </span><span class="nf">draw2pic</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">"pic_output"</span><span class="p">):</span>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"[!] pic_output 目录已存在"</span><span class="p">)</span>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"[+] pic_output 目录创建成功"</span><span class="p">)</span>
+<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a>        <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="s2">"pic_output"</span><span class="p">)</span>
+<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a>    <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a>    <span class="n">dic</span> <span class="o">=</span> <span class="p">{</span><span class="n">X</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">length</span> <span class="o">/</span> <span class="n">X</span><span class="p">)</span>
+<a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a>           <span class="k">for</span> <span class="n">X</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">length</span><span class="p">)</span> <span class="k">if</span> <span class="n">length</span> <span class="o">%</span> <span class="n">X</span> <span class="o">==</span> <span class="mi">0</span><span class="p">}</span>
+<a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a>    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">dic</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a>        <span class="n">pos</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a>        <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">"RGB"</span><span class="p">,</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+<a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a>        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+<a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a>            <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+<a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a>                <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'0'</span><span class="p">:</span>
+<a id="__codelineno-8-33" name="__codelineno-8-33" href="#__codelineno-8-33"></a>                    <span class="n">img</span><span class="o">.</span><span class="n">putpixel</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">],</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<a id="__codelineno-8-34" name="__codelineno-8-34" href="#__codelineno-8-34"></a>                <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-8-35" name="__codelineno-8-35" href="#__codelineno-8-35"></a>                    <span class="n">img</span><span class="o">.</span><span class="n">putpixel</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">],</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">))</span>
+<a id="__codelineno-8-36" name="__codelineno-8-36" href="#__codelineno-8-36"></a>                <span class="n">pos</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-8-37" name="__codelineno-8-37" href="#__codelineno-8-37"></a>        <span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="sa">f</span><span class="s2">"./pic_output/</span><span class="si">{</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">.png"</span><span class="p">)</span>
+<a id="__codelineno-8-38" name="__codelineno-8-38" href="#__codelineno-8-38"></a>        <span class="nb">print</span><span class="p">(</span>
+<a id="__codelineno-8-39" name="__codelineno-8-39" href="#__codelineno-8-39"></a>            <span class="sa">f</span><span class="s2">"./pic_output/</span><span class="si">{</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">.png Saved!"</span><span class="p">)</span>
+<a id="__codelineno-8-40" name="__codelineno-8-40" href="#__codelineno-8-40"></a>
+<a id="__codelineno-8-41" name="__codelineno-8-41" href="#__codelineno-8-41"></a>
+<a id="__codelineno-8-42" name="__codelineno-8-42" href="#__codelineno-8-42"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+<a id="__codelineno-8-43" name="__codelineno-8-43" href="#__codelineno-8-43"></a>    <span class="n">P</span> <span class="o">=</span> <span class="mi">115792089237316195423570985008687907853269984665640564039457584007913129640997</span>
+<a id="__codelineno-8-44" name="__codelineno-8-44" href="#__codelineno-8-44"></a>    <span class="n">flag1</span> <span class="o">=</span> <span class="s1">'ThIs_Fl4g_Is_Ri9ht'</span>
+<a id="__codelineno-8-45" name="__codelineno-8-45" href="#__codelineno-8-45"></a>    <span class="n">flag2</span> <span class="o">=</span> <span class="s1">'Hey_Fl4g_Is_Not_HeRe'</span>
+<a id="__codelineno-8-46" name="__codelineno-8-46" href="#__codelineno-8-46"></a>    <span class="n">encrypt2</span> <span class="o">=</span> <span class="mh">0xec8d57d820ad8c586e4be0122b442c871a3d71cd8036c45083d860caf1793ddc</span>
+<a id="__codelineno-8-47" name="__codelineno-8-47" href="#__codelineno-8-47"></a>    <span class="n">encrypt3</span> <span class="o">=</span> <span class="mh">0xc40a0be335babcfbd8c47aa771f6a2ceca2c8638caa5924da58286d2a942697e</span>
+<a id="__codelineno-8-48" name="__codelineno-8-48" href="#__codelineno-8-48"></a>    <span class="n">encrypt1</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'encrypt.txt'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a id="__codelineno-8-49" name="__codelineno-8-49" href="#__codelineno-8-49"></a>    <span class="n">key2</span> <span class="o">=</span> <span class="n">encrypt2</span> <span class="o">^</span> <span class="n">libnum</span><span class="o">.</span><span class="n">s2n</span><span class="p">(</span><span class="n">flag1</span><span class="p">)</span>
+<a id="__codelineno-8-50" name="__codelineno-8-50" href="#__codelineno-8-50"></a>    <span class="n">key3</span> <span class="o">=</span> <span class="n">encrypt3</span> <span class="o">^</span> <span class="n">libnum</span><span class="o">.</span><span class="n">s2n</span><span class="p">(</span><span class="n">flag2</span><span class="p">)</span>
+<a id="__codelineno-8-51" name="__codelineno-8-51" href="#__codelineno-8-51"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">key2</span><span class="p">)</span>
+<a id="__codelineno-8-52" name="__codelineno-8-52" href="#__codelineno-8-52"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">key3</span><span class="p">)</span>
+<a id="__codelineno-8-53" name="__codelineno-8-53" href="#__codelineno-8-53"></a>    <span class="n">tmp</span> <span class="o">=</span> <span class="n">key3</span> <span class="o">-</span> <span class="mi">233333333333</span>
+<a id="__codelineno-8-54" name="__codelineno-8-54" href="#__codelineno-8-54"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">):</span>
+<a id="__codelineno-8-55" name="__codelineno-8-55" href="#__codelineno-8-55"></a>        <span class="n">tmp</span> <span class="o">=</span> <span class="n">generate</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-8-56" name="__codelineno-8-56" href="#__codelineno-8-56"></a>    <span class="n">seed</span> <span class="o">=</span> <span class="n">tmp</span> <span class="o">^</span> <span class="n">key2</span>
+<a id="__codelineno-8-57" name="__codelineno-8-57" href="#__codelineno-8-57"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">'Found seed:'</span><span class="p">,</span> <span class="n">seed</span><span class="p">)</span>
+<a id="__codelineno-8-58" name="__codelineno-8-58" href="#__codelineno-8-58"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">'use seed generate key3:'</span><span class="p">,</span> <span class="n">generate</span><span class="p">(</span><span class="n">key2</span><span class="p">,</span> <span class="n">seed</span><span class="p">)</span><span class="o">+</span><span class="mi">233333333333</span><span class="p">)</span>
+<a id="__codelineno-8-59" name="__codelineno-8-59" href="#__codelineno-8-59"></a>    <span class="n">tmp</span> <span class="o">=</span> <span class="n">key2</span> <span class="o">-</span> <span class="mi">233333333333</span>
+<a id="__codelineno-8-60" name="__codelineno-8-60" href="#__codelineno-8-60"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">):</span>
+<a id="__codelineno-8-61" name="__codelineno-8-61" href="#__codelineno-8-61"></a>        <span class="n">tmp</span> <span class="o">=</span> <span class="n">generate</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-8-62" name="__codelineno-8-62" href="#__codelineno-8-62"></a>    <span class="n">key1</span> <span class="o">=</span> <span class="n">tmp</span> <span class="o">^</span> <span class="n">seed</span>
+<a id="__codelineno-8-63" name="__codelineno-8-63" href="#__codelineno-8-63"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">'Found key1:'</span><span class="p">,</span> <span class="n">key1</span><span class="p">)</span>
+<a id="__codelineno-8-64" name="__codelineno-8-64" href="#__codelineno-8-64"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">'use key1 generate key2:'</span><span class="p">,</span> <span class="n">generate</span><span class="p">(</span><span class="n">key1</span><span class="p">,</span> <span class="n">seed</span><span class="p">)</span><span class="o">+</span><span class="mi">233333333333</span><span class="p">)</span>
+<a id="__codelineno-8-65" name="__codelineno-8-65" href="#__codelineno-8-65"></a>    <span class="n">tmp1</span> <span class="o">=</span> <span class="nb">hex</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">encrypt1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<a id="__codelineno-8-66" name="__codelineno-8-66" href="#__codelineno-8-66"></a>    <span class="n">tmp2</span> <span class="o">=</span> <span class="s1">'0x'</span><span class="o">+</span><span class="nb">hex</span><span class="p">(</span><span class="n">key1</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span><span class="o">*</span><span class="mi">22</span>
+<a id="__codelineno-8-67" name="__codelineno-8-67" href="#__codelineno-8-67"></a>    <span class="n">pic_data</span> <span class="o">=</span> <span class="nb">bin</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">tmp1</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span> <span class="o">^</span> <span class="nb">int</span><span class="p">(</span><span class="n">tmp2</span><span class="p">,</span> <span class="mi">16</span><span class="p">))[</span><span class="mi">2</span><span class="p">:]</span>
+<a id="__codelineno-8-68" name="__codelineno-8-68" href="#__codelineno-8-68"></a>    <span class="n">draw2pic</span><span class="p">(</span><span class="n">pic_data</span><span class="p">)</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67ea29720ba3d5a1d7e7a4cf.png"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter4\4-16.md -->
+<h3 id="oggwav">OGG/WAV 单色图像<a class="headerlink" href="#oggwav" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67eb99090ba3d5a1d7e90136.png"></p>
+<p>“120 LPM”提示指的是<a href="http://en.wikipedia.org/wiki/Radiofax">天气传真</a>，一种传输单色图像的模拟模式</p>
+<p>有一个名为 Multimode 的 OS X 应用程序可用于将音频转换回原始传真图像</p>
+<p>但它只接受 WAV 文件作为输入，所以我首先转换 <code>similar.ogg</code> 为 <code>similar.wav</code> 使用 Audacity</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67eb99e50ba3d5a1d7e90187.png"></p>
+<p>正文如下：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>section 1 of 1 of file rfax_man
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>begin 644 rfax_man
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>h5sg60BSxwp62+57aMLVTPK3i9b-t+5pGLKyPA-FxxuysvFs+BT8+o0dVsM24
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>hcZHRaWYEHRBGFGtqk-cMV7oqqQRzbobGRB9Kwc-pTHzCDSSMJorR8d-pxdqd
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>hLWpvQWRv-N33mFwEicqz+UFkDYsbDvrfOC7tko5g1JrrSX0swhn64neLsohr
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>h26K1mSxnS+TF1Cta8GHHQ-t1Cfp7nh-oZeFuVi5MEynqyzX8kMtXcAynSLQx
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>hg4o56Pu4YUZHMqDGtczKeCwXU8PZEc4lY0FbDfFfgZpJFC-a-sHGLtGJgCMZ
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>hksr6XNTedEUdVJqxOO5VaReoH68eEPJ2m6d9mKhlhVE7zw4Yru4DUWRCJH28
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>hyeth+l2I0gPnEfrTLwAc+-TPS0YKYY3K0np58gVPgdAN8RY7+rQfRDin9JSa
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>hPG32WG7-rTl3uthvrnDO-wD09GDIRCniuoefs8UsfiWZOLq+0awOrQxAPM+C
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>hxLwOJ9VUKwdn7dJduLn1KhBucvL1pr5lGiBFfUbL79cFFex+G27kT+fsQ7X5
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>h87mgPivWhDSQHKPXqpKGniDkYsIYpg66ZWbHp4PfcgtPukElDWENlQPSuNAQ
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>hnboE4Bd8kyyokt67GgfGvBVS45sMFPtlgKRlG-QPFSgbMHujA3qYemxnuqGx
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>hp97aXpdKpvAE8zx-oUzazoVFz32X3OxAuiWJhKEjaYKpM7f95yv1S62v+k++
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>+
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>end
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>sum —r/size 7468/769 section (from "begin" to "end")
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>sum —r/size 36513/540 entire input file
+</code></pre></div>
+<p>使用 XXdecoder 解码生成一个名为 的文件 <code>rfax_man</code></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67eb9e0f0ba3d5a1d7e90513.png"></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>$<span class="w"> </span>file<span class="w"> </span>rfax_man
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>rfax_man:<span class="w"> </span>gzip<span class="w"> </span>compressed<span class="w"> </span>data,<span class="w"> </span>was<span class="w"> </span><span class="s2">"rfax_man.py"</span>,<span class="w"> </span>from<span class="w"> </span>FAT<span class="w"> </span>filesystem<span class="w"> </span><span class="o">(</span>MS-DOS,<span class="w"> </span>OS/2,<span class="w"> </span>NT<span class="o">)</span>,<span class="w"> </span>last<span class="w"> </span>modified:<span class="w"> </span>Thu<span class="w"> </span>Feb<span class="w">  </span><span class="m">6</span><span class="w"> </span><span class="m">17</span>:52:39<span class="w"> </span><span class="m">2014</span>,<span class="w"> </span>max<span class="w"> </span>speed
+</code></pre></div>
+<p>解压缩是一个 Python 脚本</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">socket</span><span class="o">,</span><span class="nn">os</span><span class="o">,</span><span class="nn">sys</span><span class="o">,</span><span class="nn">hashlib</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">KEY</span>  <span class="o">=</span> <span class="s2">"CTF</span><span class="si">{4BDF4498E4922B88642D4915C528DA8F}</span><span class="s2">"</span> <span class="c1"># DO NOT SHARE THIS!</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">HOST</span> <span class="o">=</span> <span class="s1">'109.233.61.11'</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="n">PORT</span> <span class="o">=</span> <span class="mi">8001</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">:</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>  <span class="nb">print</span> <span class="s1">'Usage: rfax_man.py add|del file.png'</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>  <span class="nb">print</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">Add your pictures to transmission!</span><span class="se">\n</span><span class="s1">Sizes: 800&lt;=width&lt;=3200 and height/width &lt;= 2.0.</span><span class="se">\n</span><span class="s1">Use contrast grayscale pictures.'</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>  <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="n">data</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="s1">'rb'</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1000000</span><span class="p">)</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="n">m</span><span class="o">=</span><span class="n">hashlib</span><span class="o">.</span><span class="n">md5</span><span class="p">();</span> <span class="n">m</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">KEY</span><span class="p">);</span> <span class="n">KEYH</span><span class="o">=</span><span class="n">m</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="n">m</span><span class="o">=</span><span class="n">hashlib</span><span class="o">.</span><span class="n">md5</span><span class="p">();</span> <span class="n">m</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">data</span><span class="p">);</span> <span class="n">h</span><span class="o">=</span><span class="n">m</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="nb">print</span> <span class="s1">'File hash'</span><span class="p">,</span><span class="n">h</span>
+<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a>
+<a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a><span class="n">s</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">socket</span><span class="o">.</span><span class="n">SOCK_STREAM</span><span class="p">)</span>
+<a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a><span class="n">s</span><span class="o">.</span><span class="n">connect</span><span class="p">((</span><span class="n">HOST</span><span class="p">,</span> <span class="n">PORT</span><span class="p">))</span>
+<a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a><span class="nb">print</span> <span class="s1">'Connected.'</span>
+<a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a>
+<a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a><span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="s1">'add'</span><span class="p">:</span>
+<a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a>  <span class="n">s</span><span class="o">.</span><span class="n">sendall</span><span class="p">(</span><span class="n">KEYH</span><span class="o">+</span><span class="s1">':ADD:'</span><span class="o">+</span><span class="n">data</span><span class="p">)</span>
+<a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a>  <span class="n">s</span><span class="o">.</span><span class="n">shutdown</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">SHUT_WR</span><span class="p">)</span>
+<a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a>  <span class="nb">print</span> <span class="n">s</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span>
+<a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a><span class="k">elif</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="s1">'del'</span><span class="p">:</span>
+<a id="__codelineno-11-27" name="__codelineno-11-27" href="#__codelineno-11-27"></a>  <span class="n">s</span><span class="o">.</span><span class="n">sendall</span><span class="p">(</span><span class="n">KEYH</span><span class="o">+</span><span class="s1">':DEL:'</span><span class="o">+</span><span class="n">h</span><span class="p">)</span>
+<a id="__codelineno-11-28" name="__codelineno-11-28" href="#__codelineno-11-28"></a>  <span class="nb">print</span> <span class="n">s</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span>
+<a id="__codelineno-11-29" name="__codelineno-11-29" href="#__codelineno-11-29"></a>
+<a id="__codelineno-11-30" name="__codelineno-11-30" href="#__codelineno-11-30"></a><span class="n">s</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a id="__codelineno-11-31" name="__codelineno-11-31" href="#__codelineno-11-31"></a><span class="nb">print</span> <span class="s1">'Done.'</span>
+</code></pre></div>
+<!-- Imported from D:\\Book\\Misc\\Chapter4\4-17.md -->
+<h3 id="mp3">MP3 原版标志位<a class="headerlink" href="#mp3" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6872249758cb8da5c8a22313.png"></p>
+<p><a href="https://www.cnblogs.com/shakin/p/4012780.html">数据帧分析参考博客</a></p>
+<p>重点在这，MP3 的数据帧第四字节倒数第三位为原版标志</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687224cf58cb8da5c8a22f85.png"></p>
+<p>可以在 010 的 template Results 窗口右键将结构数据导出到 csv 或者xml 文件，然后使用脚本读取</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687224fd58cb8da5c8a23c45.png"></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span><span class="w"> </span><span class="o">,</span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span><span class="o">,</span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span><span class="o">,</span><span class="nn">cv2</span> 
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">tr</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'z:/ctf/fox01.csv'</span><span class="p">)</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">mp3</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'z:/ctf/fox01.mp3'</span><span class="p">,</span><span class="s1">'rb'</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>  
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="n">org</span> <span class="o">=</span><span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">' '</span> <span class="k">if</span> <span class="n">mp3</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="s1">'Start'</span><span class="p">][:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span><span class="mi">16</span><span class="p">)</span><span class="o">+</span><span class="mi">3</span><span class="p">]</span> <span class="o">&amp;</span><span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="s1">'8'</span> <span class="k">for</span> <span class="n">_</span><span class="p">,</span><span class="n">i</span> <span class="ow">in</span> <span class="n">tr</span><span class="p">[</span><span class="n">tr</span><span class="p">[</span><span class="s1">'Name'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">'struct MPEG_FRAME'</span><span class="p">)]</span><span class="o">.</span><span class="n">iterrows</span><span class="p">()])</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">org</span><span class="p">)</span>
+</code></pre></div>
+<p>同样粘贴到文本编辑器里面，选择合适的宽度，结果就是下面这样</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6872254158cb8da5c8a24e06.png"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter4\4-2.md -->
+<h3 id="wav">波形（Wav）<a class="headerlink" href="#wav" title="Permanent link">¶</a></h3>
+<p>波形隐写原理就是将波形的高低转为二进制</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f84bdd0e0a243d4f28583.jpg"></p>
+<p>下载文件后是一段 WAV 音频，放入工具 Audacity 中看波形图</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f84d6d0e0a243d4f2858d.jpg"></p>
+<p>只有两种格式即分别对应二进制 0、1，写脚本跑一下</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">wave</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    <span class="n">wavfile</span> <span class="o">=</span> <span class="n">wave</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">'music.wav'</span><span class="p">,</span> <span class="s2">"rb"</span><span class="p">)</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>    <span class="c1"># 获取 WAV 文件的参数</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>    <span class="n">params</span> <span class="o">=</span> <span class="n">wavfile</span><span class="o">.</span><span class="n">getparams</span><span class="p">()</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>    <span class="c1"># 获取音频的采样点数</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>    <span class="n">nframes</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>    <span class="c1"># 从 WAV 文件中读取所有帧的数据</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>    <span class="n">datawav</span> <span class="o">=</span> <span class="n">wavfile</span><span class="o">.</span><span class="n">readframes</span><span class="p">(</span><span class="n">nframes</span><span class="p">)</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>    <span class="n">wavfile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>    <span class="c1"># 将读取的二进制数据（datawav）转换为一个 NumPy 数组，数据类型为短整型（np.short）</span>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a>    <span class="n">datause</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">frombuffer</span><span class="p">(</span><span class="n">datawav</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">short</span><span class="p">)</span>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a>
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a>    <span class="n">result_bin</span> <span class="o">=</span> <span class="s1">''</span>
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a>
+<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a>    <span class="c1"># 记录当前的最大值</span>
+<a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a>    <span class="n">mx</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a>
+<a id="__codelineno-13-26" name="__codelineno-13-26" href="#__codelineno-13-26"></a>    <span class="c1"># 循环遍历 datause 数组，除了最后一个元素</span>
+<a id="__codelineno-13-27" name="__codelineno-13-27" href="#__codelineno-13-27"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">datause</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+<a id="__codelineno-13-28" name="__codelineno-13-28" href="#__codelineno-13-28"></a>        <span class="c1"># 更新记录最大值的变量 mx</span>
+<a id="__codelineno-13-29" name="__codelineno-13-29" href="#__codelineno-13-29"></a>        <span class="k">if</span> <span class="n">datause</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">mx</span><span class="p">:</span>
+<a id="__codelineno-13-30" name="__codelineno-13-30" href="#__codelineno-13-30"></a>            <span class="n">mx</span> <span class="o">=</span> <span class="n">datause</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<a id="__codelineno-13-31" name="__codelineno-13-31" href="#__codelineno-13-31"></a>
+<a id="__codelineno-13-32" name="__codelineno-13-32" href="#__codelineno-13-32"></a>        <span class="c1"># 检查当前元素是否为负数且下一个元素为非负数</span>
+<a id="__codelineno-13-33" name="__codelineno-13-33" href="#__codelineno-13-33"></a>        <span class="c1"># 如果是，这意味着音频波形从负数跨越到0或正数，这可能是隐藏数据的标记点</span>
+<a id="__codelineno-13-34" name="__codelineno-13-34" href="#__codelineno-13-34"></a>        <span class="k">if</span> <span class="n">datause</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">datause</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+<a id="__codelineno-13-35" name="__codelineno-13-35" href="#__codelineno-13-35"></a>
+<a id="__codelineno-13-36" name="__codelineno-13-36" href="#__codelineno-13-36"></a>            <span class="c1"># 检查从负数到非负数的跨越是否足够大（大于24000）</span>
+<a id="__codelineno-13-37" name="__codelineno-13-37" href="#__codelineno-13-37"></a>            <span class="c1"># 用于区分隐藏数据位是 '1' 还是 '0' 的阈值</span>
+<a id="__codelineno-13-38" name="__codelineno-13-38" href="#__codelineno-13-38"></a>            <span class="k">if</span> <span class="n">mx</span> <span class="o">-</span> <span class="mi">24000</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-13-39" name="__codelineno-13-39" href="#__codelineno-13-39"></a>                <span class="n">result_bin</span> <span class="o">+=</span> <span class="s1">'1'</span>
+<a id="__codelineno-13-40" name="__codelineno-13-40" href="#__codelineno-13-40"></a>
+<a id="__codelineno-13-41" name="__codelineno-13-41" href="#__codelineno-13-41"></a>                <span class="n">mx</span> <span class="o">=</span> <span class="n">datause</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-13-42" name="__codelineno-13-42" href="#__codelineno-13-42"></a>            <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-13-43" name="__codelineno-13-43" href="#__codelineno-13-43"></a>                <span class="n">result_bin</span> <span class="o">+=</span> <span class="s1">'0'</span>
+<a id="__codelineno-13-44" name="__codelineno-13-44" href="#__codelineno-13-44"></a>
+<a id="__codelineno-13-45" name="__codelineno-13-45" href="#__codelineno-13-45"></a>                <span class="n">mx</span> <span class="o">=</span> <span class="n">datause</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-13-46" name="__codelineno-13-46" href="#__codelineno-13-46"></a>
+<a id="__codelineno-13-47" name="__codelineno-13-47" href="#__codelineno-13-47"></a>
+<a id="__codelineno-13-48" name="__codelineno-13-48" href="#__codelineno-13-48"></a>    <span class="n">result_hex</span> <span class="o">=</span> <span class="s1">''</span>
+<a id="__codelineno-13-49" name="__codelineno-13-49" href="#__codelineno-13-49"></a>
+<a id="__codelineno-13-50" name="__codelineno-13-50" href="#__codelineno-13-50"></a>    <span class="c1"># 将二进制数据转换为十六进制</span>
+<a id="__codelineno-13-51" name="__codelineno-13-51" href="#__codelineno-13-51"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">result_bin</span><span class="p">),</span> <span class="mi">4</span><span class="p">):</span>
+<a id="__codelineno-13-52" name="__codelineno-13-52" href="#__codelineno-13-52"></a>        <span class="n">result_hex</span> <span class="o">+=</span> <span class="nb">hex</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">result_bin</span><span class="p">[</span><span class="n">i</span><span class="p">:</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">4</span><span class="p">],</span> <span class="mi">2</span><span class="p">))[</span><span class="mi">2</span><span class="p">:]</span>
+<a id="__codelineno-13-53" name="__codelineno-13-53" href="#__codelineno-13-53"></a>
+<a id="__codelineno-13-54" name="__codelineno-13-54" href="#__codelineno-13-54"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">result_hex</span><span class="p">)</span>
+<a id="__codelineno-13-55" name="__codelineno-13-55" href="#__codelineno-13-55"></a>
+<a id="__codelineno-13-56" name="__codelineno-13-56" href="#__codelineno-13-56"></a>
+<a id="__codelineno-13-57" name="__codelineno-13-57" href="#__codelineno-13-57"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+<a id="__codelineno-13-58" name="__codelineno-13-58" href="#__codelineno-13-58"></a>    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+<p>最后跑出来是一个 RAR 文件（看文件头）</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f860bd0e0a243d4f285e0.jpg"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter4\4-3.md -->
+<h3 id="_4">音频倒放<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f8669d0e0a243d4f28606.jpg"></p>
+<p>打开 Audacity 反转即可</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f867dd0e0a243d4f2862a.jpg"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter4\4-4.md -->
+<h3 id="_5">频谱图<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f86dad0e0a243d4f28662.jpg"></p>
+<p>在 Audacity 中打开文件，打开多视图</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f86f4d0e0a243d4f28668.png"></p>
+<p>有细有粗，分别对应摩斯密码 . -</p>
+<p>摩斯密码解码即可拿到 flag</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f8714d0e0a243d4f28669.jpg"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter4\4-5.md -->
+<h3 id="_6">按键式电话<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f8848d0e0a243d4f2869f.jpg"></p>
+<p>在线网站 DTMF 检测演示</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f8868d0e0a243d4f286aa.jpg"></p>
+<p>最后解码即可</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f8888d0e0a243d4f286ba.jpg"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter4\4-7.md -->
+<h3 id="silenteye">SilentEye （音频）<a class="headerlink" href="#silenteye" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f890bd0e0a243d4f286e3.jpg"></p>
+<p>一般在使用这工具情况下是因为它的音频没有隐写，使用工具打开文件解密拿到密码</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f8913d0e0a243d4f286e5.jpg"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter4\4-8.md -->
+<h3 id="deepsound-key">DeepSound （Key）<a class="headerlink" href="#deepsound-key" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f890bd0e0a243d4f286e3.jpg"></p>
+<p>接上一节拿到了密码，想到要用密码加密的工具</p>
+<p>使用 DeepSound 工具打开文件，输入密码</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f8a0ad0e0a243d4f2873c.jpg"></p>
+<p>成功拿到 flag</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f8a63d0e0a243d4f28744.jpg"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter4\4-9.md -->
+<h3 id="velato-mid">Velato 编译（Mid）<a class="headerlink" href="#velato-mid" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f8b88d0e0a243d4f28785.jpg"></p>
+<p>MIDI 文件优先考虑 Velato 编译</p>
+<p>Velato 是一种编程语言，使用 MIDI 文件作为源代码，音符模式决定命令</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Vlt.exe<span class="w"> </span>music.mid
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f8baed0e0a243d4f28789.jpg"></p>
+<p>接着运行编译好的文件，将这段字符解密即可拿到 flag</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>music.exe
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/677f8bc5d0e0a243d4f287a0.jpg"></p>
+<!-- Imported from D:\\Book\\Misc\\Chapter4\README.md -->
+<h2 id="_7">总结<a class="headerlink" href="#_7" title="Permanent link">¶</a></h2>
+<p>很多题目都是考了不同或者多方向的知识点，总之，学得越多越好</p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../file_stego/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 文件隐写"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        文件隐写
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../pcap/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: 流量分析"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        流量分析
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#_1">音频隐写</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#mp3-key">MP3 （Key）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#wav-lsb">Wav 文件 LSB</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_2">慢扫描电视</a>
+        
+      </li>
+    
+      <li>
+        <a href="#private-bit">Private Bit</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">采样率</a>
+        
+      </li>
+    
+      <li>
+        <a href="#raw-afsk1200">Raw 无线电 AFSK1200</a>
+        
+      </li>
+    
+      <li>
+        <a href="#deegger-embedder">DeEgger Embedder</a>
+        
+      </li>
+    
+      <li>
+        <a href="#oggwav">OGG/WAV 单色图像</a>
+        
+      </li>
+    
+      <li>
+        <a href="#mp3">MP3 原版标志位</a>
+        
+      </li>
+    
+      <li>
+        <a href="#wav">波形（Wav）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_4">音频倒放</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">频谱图</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_6">按键式电话</a>
+        
+      </li>
+    
+      <li>
+        <a href="#silenteye">SilentEye （音频）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#deepsound-key">DeepSound （Key）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#velato-mid">Velato 编译（Mid）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_7">总结</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

@@ -1,0 +1,1412 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>PHP特性 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../../shell/shell.css">
+  <link rel="stylesheet" href="../../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../../shell/search.js"></script>
+  <script src="../../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-env/">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-env/CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-env/Docker_On_Linux/">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-env/Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-crypto/Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-appendix/CTFevent/">CTF赛事</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="php">PHP特性<a class="headerlink" href="#php" title="Permanent link">¶</a></h1>
+<h2 id="_1">弱类型<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<h3 id="_2">自动 / 强制 类型转换<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p><strong>语言特性</strong>：PHP 是一个弱类型语言, 变量之间进行比较时, 若两个变量类型不一致, 会先进行强制类型转换，然后再进行比较。</p>
+<p>官方文档位置：<a href="https://www.php.net/manual/zh/language.types.type-juggling.php">https://www.php.net/manual/zh/language.types.type-juggling.php</a></p>
+<p>规则如下：</p>
+<ul>
+<li>非数字开头的字符串转换成 int 类型时会变成 0, 数字开头的字符串转换 int 类型后会保留开头的数字</li>
+<li>一个十进制数与十六进制/八进制数比较时, PHP 会将十六进制/八进制数转换为十进制数</li>
+<li>string 类型的转换会从最左边开始, 直到遇到非数字的字符时停止</li>
+<li>含 e 的字符串转换成 int 类型时会被当做科学计数法处理, <code>123e456</code> 表示 123 的 456 次方</li>
+<li><code>0e123</code> 表示 0 的 123 次方, 总是等于 0 <code>0e456</code> 同理</li>
+<li>在数字开头加入 <code>\f \t \s \n \r</code> 等同样返回 true</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="x">'a' == 0 // true</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="x">'1a' == 0 // false</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="x">'1a' == 1 // true</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="x">'a1' == 0 // true</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="x">'a1' == 1 // false</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="x">'123aa' == 123 // true</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="x">'aa123' == 123 // false</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="x">'123aa456' == 123 // true</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="x">'0e123' == '0e456' //true</span>
+</code></pre></div>
+<h3 id="_3">强弱类型比较<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<p>官方文档位置：<a href="https://www.php.net/manual/zh/language.operators.comparison.php">https://www.php.net/manual/zh/language.operators.comparison.php</a></p>
+<p><strong>==</strong>  弱类型比较, 仅要求两边变量类型转换后的值相等</p>
+<p><strong>===</strong>  强类型比较, 不仅要求两个变量的值相等, 还要求变量的类型相同</p>
+<p>同理 <strong>!=</strong> 是弱类型比较, 而 <strong>!==</strong> 是强类型比较</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="x">'123' == 123 // true</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="x">'123' === 123 // false</span>
+</code></pre></div>
+<h2 id="intval">intval()<a class="headerlink" href="#intval" title="Permanent link">¶</a></h2>
+<p>基于获取变量的整数值函数的绕过 / 官方文档：<a href="https://www.php.net/manual/zh/function.intval.php">https://www.php.net/manual/zh/function.intval.php</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="x">intval(mixed $value, int $base = 10): int</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="x"># eg:</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="x">intval('0337522', 0); # 八进制</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="x">intval('0x1bf52', 0); # 十六进制</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="x"># -&gt; 114514</span>
+</code></pre></div>
+<p>当 <code>$base = 0</code> 时, 通过检测 var 的格式来决定使用的进制：</p>
+<ul>
+<li>如果字符串包括了 "0x" (或 "0X") 的前缀，使用 16 进制 (hex)；否则，</li>
+<li>如果字符串以 "0b" (或 "0B") 开头，使用 2 进制 (binary)；否则，</li>
+<li>如果字符串以 "0" 开始，使用 8 进制(octal)；否则，</li>
+<li>将使用 10 进制 (decimal)。</li>
+</ul>
+<p>另：intval 可以取整 (去除小数点后的部分) 和截断 (去除数字后的字符串, 包括科学计数法)</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="x">intval('114514.0');</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="x">intval('114514.1');</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="x">intval('114514a');</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="x">intval('114514e123');</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="x"># -&gt; 114514</span>
+</code></pre></div>
+<h3 id="_4">例题<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="x"># ctfshow-web90 </span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="x"># 利用intval() $base = 0 的特性绕过：?num=010574</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="x">if(isset($_GET['num'])){</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="x">    $num = $_GET['num'];</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="x">    if($num==="4476"){</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="x">        die("no no no!");</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="x">    }</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="x">    if(intval($num,0)===4476){</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="x">        echo $flag;</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="x">    }else{</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="x">        echo intval($num,0);</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="x">    }</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="x">}</span>
+</code></pre></div>
+<h2 id="preg_match">preg_match()<a class="headerlink" href="#preg_match" title="Permanent link">¶</a></h2>
+<p>正则函数缺陷 / 官方文档：<a href="https://www.php.net/manual/zh/function.preg-match.php">https://www.php.net/manual/zh/function.preg-match.php</a></p>
+<h3 id="_5">单行 / 多行匹配<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<p><a href="https://www.php.net/manual/zh/reference.pcre.pattern.modifiers.php#reference.pcre.pattern.modifiers">PHP文档 - 模式修饰符</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="x"># ctfshow-web91</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="x"># 正则表达式修饰符 ?cmd=%0aphp，同时不满足第二匹配(固定字符串"php")</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="x">$a=$_GET['cmd'];</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="x">if(preg_match('/^php$/im', $a)){</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="x">    if(preg_match('/^php$/i', $a)){</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="x">        echo 'hacker';</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="x">    }</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="x">    else{</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="x">        echo $flag;</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="x">    }</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="x">}</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="x">else{</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="x">    echo 'nonononono';</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="x">}</span>
+</code></pre></div>
+<p>扩展阅读：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>匹配输入字符串的结尾位置。
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>如果设置了 RegExp 对象的 Multiline 属性，则 $ 也匹配 ‘\n’ 或 ‘\r’。要匹配 $ 字符本身，请使用 $。
+</code></pre></div>
+<p>所以如果设置RegExp 对象的 Multiline 属性的条件下，$还会匹配到字符串结尾的换行符（也就是%0a)</p>
+<p>一个通过这种方式绕过的实例: <a href="https://www.leavesongs.com/PENETRATION/apache-cve-2017-15715-vulnerability.html">利用Apache解析漏洞（CVE-2017-15715）绕过上传黑名单</a></p>
+<h3 id="_6">数组绕过<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="x"># ctfshow-web89 正则缺陷</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="x"># 利用数组绕过正则匹配，使其返回值发生错误而为false : ?num[]=1</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="x">if(isset($_GET['num'])){</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="x">    $num = $_GET['num'];</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="x">    if(preg_match("/[0-9]/", $num)){</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="x">        die("no no no!");</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="x">    }</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="x">    if(intval($num)){</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="x">        echo $flag;</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="x">    }</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="x">}</span>
+</code></pre></div>
+<h3 id="_7">正则回溯<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p><a href="https://www.leavesongs.com/PENETRATION/use-pcre-backtrack-limit-to-bypass-restrict.html">Phithon - PHP利用PCRE回溯次数限制绕过某些安全限制</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="x"># ctfshow - web130 web131</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="x"># 'f':'very'*250000+'ctfshow'</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="x">if(isset($_POST['f'])){</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="x">    $f = $_POST['f'];</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="x">    if(preg_match('/.+?ctfshow/is', $f)){</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="x">        die('bye!');</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="x">    }</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="x">    if(stripos($f, 'ctfshow') === FALSE){</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="x">        die('bye!!');</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="x">    }</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="x">    echo $flag;</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="x">}</span>
+</code></pre></div>
+<h2 id="strpos">strpos()<a class="headerlink" href="#strpos" title="Permanent link">¶</a></h2>
+<p>字符串查找函数特性 / 官方文档：：<a href="https://www.php.net/manual/zh/function.strpos.php">https://www.php.net/manual/zh/function.strpos.php</a></p>
+<p><code>strpos('01234', 0)</code> 返回的结果是 0 对应的索引 0, 也就是 false</p>
+<p>如果是 <code>!strpos()</code> 这种则会返回 true</p>
+<p>代码使用了 <code>if(!strpos($str, 0))</code> 对八进制进行过滤, 可以在字符串开头加空格绕过</p>
+<p>strpos() 遇到数组返回 null</p>
+<p>strrpos() stripos() strripos() 同理</p>
+<h2 id="is_numeric">is_numeric()<a class="headerlink" href="#is_numeric" title="Permanent link">¶</a></h2>
+<p>数字或数字字符串检查函数 / 官方文档：<a href="https://www.php.net/manual/zh/function.is-numeric.php">https://www.php.net/manual/zh/function.is-numeric.php</a></p>
+<p>特性：</p>
+<ul>
+<li>可识别科学计数法，如：<code>0123e4567</code> 返回 true</li>
+<li>包含非 e 字母返回 false</li>
+<li>在数字**开头**加入空格 换行符 tab 等特殊字符可以绕过检测</li>
+<li>可以尝试利用 base64 + bin2hex 找到一些只含 e 和数字的 payload</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="x">is_numeric(' 36'); // true</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="x">is_numeric('36 '); // false</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="x">is_numeric('3 6'); // false</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="x">is_numeric("\n36"); // true</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="x">is_numeric("\t36"); // true</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="x">is_numeric("36\n"); // false</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="x">is_numeric("36\t"); // false</span>
+</code></pre></div>
+<h2 id="in_array">in_array()<a class="headerlink" href="#in_array" title="Permanent link">¶</a></h2>
+<p>由于PHP自动 / 强制 类型转换的特性，会将待搜索的值的类型自动转换为数组中的值的类型。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="x">var_dump(in_array('1abc', [1,2,3,4,5])); // true</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="x">var_dump(in_array('abc', [1,2,3,4,5])); // false</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="x">var_dump(in_array('abc', [0,1,2,3,4,5])); // true</span>
+</code></pre></div>
+<h2 id="ereg">ereg()<a class="headerlink" href="#ereg" title="Permanent link">¶</a></h2>
+<p>存在截断漏洞</p>
+<p><code>%00</code> 后面的字符串不解析</p>
+<h2 id="trim">trim()<a class="headerlink" href="#trim" title="Permanent link">¶</a></h2>
+<p>不过滤 \f 换页符, url 编码后是 <code>%0c36</code></p>
+<h2 id="_8">变量覆盖<a class="headerlink" href="#_8" title="Permanent link">¶</a></h2>
+<p>几种形式</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="x">$$key = $$value;</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="x">extract()</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="x">parse_str()</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="x">import_request_variables()</span>
+</code></pre></div>
+<p>思路是 <code>$_GET</code> <code>$_POST</code> <code>$_COOKIKE</code> 相互转换</p>
+<p>或者利用 <code>$GLOBALS</code> 输出所有的全局变量</p>
+<p>另外 parse_str() 接受数组传参 支持数组内变量覆盖</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>?_POST[key1]=36d&amp;_POST[key2]=36d
+</code></pre></div>
+<h2 id="_9">路径穿越<a class="headerlink" href="#_9" title="Permanent link">¶</a></h2>
+<p>通过绝对路径/相对路径绕过正则对文件名的检测, 例如 <code>preg_match('/flag.php/', $str)</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>./flag.php
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>./ctfshow/../flag.php
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>/var/www/html/flag.php
+</code></pre></div>
+<p>利用 Linux 下的软链接绕过</p>
+<p><a href="https://www.anquanke.com/post/id/213235">php源码分析 require_once 绕过不能重复包含文件的限制</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>/proc/self/root/proc/self/root/proc/self/root/proc/self/root/proc/self/root/p
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>roc/self/root/proc/self/root/proc/self/root/proc/self/root/proc/self/root/pro
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>c/self/root/proc/self/root/proc/self/root/proc/self/root/proc/self/root/proc/
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>self/root/proc/self/root/proc/self/root/proc/self/root/proc/self/root/proc/se
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>lf/root/proc/self/root/var/www/html/flag.php
+</code></pre></div>
+<h2 id="_10">哈希字符串<a class="headerlink" href="#_10" title="Permanent link">¶</a></h2>
+<h3 id="0e-bypass">0e bypass<a class="headerlink" href="#0e-bypass" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="x">$_GET['name'] != $_GET['password']</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="x">MD5($_GET['name']) == MD5($_GET['password'])</span>
+</code></pre></div>
+<p>PHP在处理哈希字符串时，它把每一个以“0E”开头的哈希值都解释为0，所以如果两个不同的密码经过哈希以后，其哈希值都是以“0E”开头的，那么PHP将会认为他们相同，都是0。</p>
+<p>这一点在 md5() / sha1() 都适用，以下是可用的payload：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a># md5 0e payload
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>QNKCDZO
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>240610708
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>s878926199a
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>s155964671a
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>s214587387a
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a># sha1 0e payload
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>aaroZmOk
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>aaK1STfY
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>aaO8zKZF
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>aa3OFF9m
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>0e1290633704
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>10932435112
+</code></pre></div>
+<h3 id="array-bypass">Array bypass<a class="headerlink" href="#array-bypass" title="Permanent link">¶</a></h3>
+<p>md5 加密数组时返回 null</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="x">$a = Array();</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="x">$b = Array();</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="x">md5($a) == md5($b); // null == null true</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="x">md5($a) === md5($b); // null === null true</span>
+</code></pre></div>
+<p>sha1 同理</p>
+<h3 id="_11">哈希碰撞<a class="headerlink" href="#_11" title="Permanent link">¶</a></h3>
+<p><a href="https://github.com/cr-marcstevens/hashclash">https://github.com/cr-marcstevens/hashclash</a></p>
+<h3 id="_12">例题<a class="headerlink" href="#_12" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="x"># ctfshow - web97</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="x">if (isset($_POST['a']) and isset($_POST['b'])) {</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="x">    if ($_POST['a'] != $_POST['b'])</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="x">        if (md5($_POST['a']) === md5($_POST['b']))</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="x">            echo $flag;</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="x">    else</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="x">        print 'Wrong.';</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="x">}</span>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="x"># a[]=1&amp;b[]=2 -&gt; 弱类型比较可以直接数组绕过，其结果都会转换为null</span>
+</code></pre></div>
+<p>如果进行了string强制转类型后，则不再接受数组，以下为弱碰撞：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="x">$a=(string)$a;</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="x">$b=(string)$b;</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="x">if(  ($a!==$b) &amp;&amp; (md5($a)==md5($b)) ){</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="x">    echo $flag;</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="x">}</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="x"># a=QNKCDZO&amp;b=240610708</span>
+</code></pre></div>
+<p>强碰撞则不为特性，这时需要找到两个真正的md5值相同数据：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="x">$a=(string)$a;</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="x">$b=(string)$b;</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="x">if(  ($a!==$b) &amp;&amp; (md5($a)===md5($b)) ){</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="x">    echo $flag;</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="x">}</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="x"># 使用使用 fastcoll / hashclash 工具进行md5碰撞生成相同md5但不通变量值的内容</span>
+</code></pre></div>
+<p>扩：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="x"># 2024 某地医疗行业 - 天使杯</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="x">if(isset($_GET['x']) &amp;&amp; isset($_GET['y'])){</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="x">    $x=$_GET['x'];</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="x">    $y=$_GET['y'];</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="x">    if((string)$x!=(string)$y &amp;&amp; md5($x)===md5($y)){</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="x">        eval($x.$y);</span>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="x">    }else{</span>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="x">        die("no no no~~~");</span>
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="x">    }</span>
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a><span class="x">}else{</span>
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a><span class="x">    highlight_file(__FILE__);</span>
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a><span class="x">}</span>
+</code></pre></div>
+<p>a.txt:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>system('cat /flag');//?&gt;
+</code></pre></div>
+<p>bash:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>&gt;_:fastcoll_v1.0.0.5.exe<span class="w"> </span>-p<span class="w"> </span>a.txt<span class="w"> </span>-o<span class="w"> </span><span class="m">1</span>.txt<span class="w"> </span><span class="m">2</span>.txt
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>&gt;_:x<span class="o">=</span>system%28%27cat+%2Fflag%27%29%3B%2F%2F%3F%3E%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%11%82%91%ADm%E1g%0F%8CR%AB%5EF%0CH%C8%B7%1Ar0%B9d%1B%DDU%DEA%BA%C8%0B5B%F1%BB%06%C7%D8E%F3%C7%87%BE%C8%F4%1Cp%DBi%A3b%C7%9Bs%07%C6%A5%09%A3%C8uN%A7%2A%C8%7B%D0%C6%A98rd%ECZ%9CO%91%B7%12%AAV%40%EF%0Fs%13%C6%16r%D3ZnG%EC%87%FEk%10%3D%1E%19%F6%0F%DC%02%9A%83H%B7%C0%CC%E9j%28Q-%B6%5C%0Cd%A5%23%28%151%7E%A0%E4%2A<span class="p">&amp;</span><span class="nv">y</span><span class="o">=</span>system%28%27cat+%2Fflag%27%29%3B%2F%2F%3F%3E%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%11%82%91%ADm%E1g%0F%8CR%AB%5EF%0CH%C8%B7%1Ar%B0%B9d%1B%DDU%DEA%BA%C8%0B5B%F1%BB%06%C7%D8E%F3%C7%87%BE%C8%F4%1C%F0%DBi%A3b%C7%9Bs%07%C6%A5%09%A3%C8%F5N%A7%2A%C8%7B%D0%C6%A98rd%ECZ%9CO%91%B7%12%AAV%40%EF%0F%F3%13%C6%16r%D3ZnG%EC%87%FEk%10%3D%1E%19%F6%0F%DC%02%9A%83H%B7%C0L%E9j%28Q-%B6%5C%0Cd%A5%23%28%15%B1%7E%A0%E4%2A
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>02ab0571e1aa07044856dd83f5048dc5
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>02ab0571e1aa07044856dd83f5048dc5
+</code></pre></div>
+<h2 id="_13">函数与数字运算<a class="headerlink" href="#_13" title="Permanent link">¶</a></h2>
+<p><a href="https://www.php.net/manual/zh/language.operators.php">https://www.php.net/manual/zh/language.operators.php</a></p>
+<p>在 PHP 中, 函数与数字进行运算的时候, 函数能够被正常执行</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="x">1+phpinfo()+1;</span>
+</code></pre></div>
+<p><code>+ - * / &amp; |</code> 都行, 另外还有 <code>&amp;&amp; ||</code></p>
+<h2 id="_14">三目运算符构造语句<a class="headerlink" href="#_14" title="Permanent link">¶</a></h2>
+<p>有时候构造不带分号 payload 时需要用到三目运算符</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="x">return 1 ? phpinfo():1;</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="x">(&lt;条件&gt; ? 参数_1 : 参数_2)</span>
+</code></pre></div>
+<p>1 永远为 true, 于是正常执行 phpinfo</p>
+<h2 id="_15">根命名空间  绕过过滤<a class="headerlink" href="#_15" title="Permanent link">¶</a></h2>
+<p>上面的参考文章里也提到了</p>
+<blockquote>
+<p>PHP 的命名空间默认为 <code>\</code>, 所有的函数和类都在 <code>\</code> 这个命名空间中, 如果直接写函数名 function_name() 调用, 调用的时候其实相当于写了一个相对路径; 而如果写 \function_name() 这样调用函数. 则其实是写了一个绝对路径. 如果你在其他 namespace 里调用系统类, 就必须写绝对路径这种写法.</p>
+</blockquote>
+<p>有时候可以绕过一些正则, 比如执行的代码不允许以字母开头</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="x">\phpinfo();</span>
+</code></pre></div>
+<h2 id="gettext">gettext()<a class="headerlink" href="#gettext" title="Permanent link">¶</a></h2>
+<p>不含字母数字的函数:<code>_()</code> 为 gettext() 别名, 类似于 echo 输出。</p>
+<p><a href="https://www.php.net/manual/zh/function.gettext">https://www.php.net/manual/zh/function.gettext</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="x">var_dump(call_user_func(call_user_func("_", "get_defined_vars")));</span>
+</code></pre></div>
+<p>以上命令可以返回所有已定义变量</p>
+<h2 id="globals-get_defined_vars">$GLOBALS 和 get_defined_vars()<a class="headerlink" href="#globals-get_defined_vars" title="Permanent link">¶</a></h2>
+<p><a href="https://www.php.net/manual/zh/reserved.variables.globals">https://www.php.net/manual/zh/reserved.variables.globals</a></p>
+<p><a href="https://www.php.net/manual/zh/function.get-defined-vars">https://www.php.net/manual/zh/function.get-defined-vars</a></p>
+<p><code>$GLOBALS</code> 引用全局作用域中可用的全部变量</p>
+<p>get_defined_vars() 返回由所有已定义变量所组成的数组</p>
+<p>有时候可以从这里面查看 <code>$flag</code></p>
+<h2 id="_16">伪协议<a class="headerlink" href="#_16" title="Permanent link">¶</a></h2>
+<p><a href="https://www.php.net/manual/zh/wrappers.php">https://www.php.net/manual/zh/wrappers.php</a></p>
+<p>常见的 php://filter php://input data:// 都很熟悉了</p>
+<p>下面是一些不是很常见的 payload</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="x">compress.zlib://flag.php</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="x">php://filter/ctfshow/resource=flag.php</span>
+</code></pre></div>
+<p>php://filter 遇到不存在的过滤器会直接跳过, 可以绕过一些对关键字的检测</p>
+<h2 id="_17">非法参数名传参<a class="headerlink" href="#_17" title="Permanent link">¶</a></h2>
+<p><a href="https://www.php.net/manual/zh/language.variables.external.php#language.variables.external">PHP官方手册 - 来自 PHP 之外的变量</a></p>
+<h2 id="rce">RCE 特性<a class="headerlink" href="#rce" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>该部分在RCE-labs中有了详细介绍，在特性中不在提及。</p>
+</blockquote>
+<h3 id="webshell-bypass">使用位运算构造webshell bypass<a class="headerlink" href="#webshell-bypass" title="Permanent link">¶</a></h3>
+<p><a href="https://www.leavesongs.com/PENETRATION/webshell-without-alphanum.html">Phithon - 一些不包含数字和字母的webshell</a></p>
+<p><a href="https://www.leavesongs.com/PENETRATION/webshell-without-alphanum-advanced.html">Phithon - 无字母数字webshell之提高篇</a></p>
+<h3 id="rce_1">无参数函数读文件/RCE<a class="headerlink" href="#rce_1" title="Permanent link">¶</a></h3>
+<p>无参数函数指形如 <code>a(b(c()))</code> 这种不需要参数或者只需要一个参数, 并且对应的参数可以通过另一个函数的返回值来获取的函数</p>
+<h3 id="create_function">create_function()<a class="headerlink" href="#create_function" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="x">call_user_func(callable $callback, mixed ...$args): mixed</span>
+</code></pre></div>
+<h3 id="call_user_func">call_user_func()<a class="headerlink" href="#call_user_func" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="x">create_function(string $args, string $code): string</span>
+</code></pre></div>
+<h3 id="rce_2">原生类列目录/RCE<a class="headerlink" href="#rce_2" title="Permanent link">¶</a></h3>
+<p>一般都是 <code>echo new $v1($v2('xxx'))</code> 或者 <code>eval($v('ctfshow'))</code> 的形式, 有时候可以跳出来执行其它代码</p>
+<p>ReflectionClass 和 Exception 里面可以执行其它函数</p>
+<p><a href="[https://www.php.net/manual/zh/filesystemiterator.construct.php](https://www.php.net/manual/zh/filesystemiterator.construct.php)">PHP官方文档 - FilesystemIterator 列目录</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="x">new Exception(system('xx'))</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="x">new ReflectionClass(system('xx'))</span>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="x">new FilesystemIterator(getcwd())</span>
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="x">new ReflectionClass('stdClass');system()//</span>
+</code></pre></div>
+<h2 id="_18"><a class="headerlink" href="#_18" title="Permanent link">¶</a></h2>
+<h2 id="_19">序列化与反序列化特性<a class="headerlink" href="#_19" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>该部分在反序列化靶场中有了详细介绍，在特性中不在提及。</p>
+</blockquote>
+<h3 id="_20">属性类型不敏感<a class="headerlink" href="#_20" title="Permanent link">¶</a></h3>
+<p>在 PHP 7.1 + 的版本中, 对属性类型 (public protected private) 不敏感。</p>
+<p>因为 protected 和 private 反序列化后的结果中含有 <code>%00</code>, 部分题目会禁止这种字符, 可在构造 payload 时将属性全部改成 public 来绕过限制。</p>
+<h3 id="sessionupload_progress">session.upload_progress<a class="headerlink" href="#sessionupload_progress" title="Permanent link">¶</a></h3>
+<p><a href="https://www.php.net/manual/zh/session.upload-progress.php#session.upload-progress">PHP官方手册 - Session 上传进度</a></p>
+<p>该机制中的缓存可被文件包含和反序列化恶意利用。</p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+
+<!-- Link to next page -->
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#php">PHP特性</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_1">弱类型</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_2">自动 / 强制 类型转换</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">强弱类型比较</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#intval">intval()</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_4">例题</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#preg_match">preg_match()</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_5">单行 / 多行匹配</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_6">数组绕过</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_7">正则回溯</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#strpos">strpos()</a>
+        
+      </li>
+    
+      <li>
+        <a href="#is_numeric">is_numeric()</a>
+        
+      </li>
+    
+      <li>
+        <a href="#in_array">in_array()</a>
+        
+      </li>
+    
+      <li>
+        <a href="#ereg">ereg()</a>
+        
+      </li>
+    
+      <li>
+        <a href="#trim">trim()</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_8">变量覆盖</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_9">路径穿越</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_10">哈希字符串</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#0e-bypass">0e bypass</a>
+        
+      </li>
+    
+      <li>
+        <a href="#array-bypass">Array bypass</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_11">哈希碰撞</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_12">例题</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_13">函数与数字运算</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_14">三目运算符构造语句</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_15">根命名空间 绕过过滤</a>
+        
+      </li>
+    
+      <li>
+        <a href="#gettext">gettext()</a>
+        
+      </li>
+    
+      <li>
+        <a href="#globals-get_defined_vars">$GLOBALS 和 get_defined_vars()</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_16">伪协议</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_17">非法参数名传参</a>
+        
+      </li>
+    
+      <li>
+        <a href="#rce">RCE 特性</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#webshell-bypass">使用位运算构造webshell bypass</a>
+        
+      </li>
+    
+      <li>
+        <a href="#rce_1">无参数函数读文件/RCE</a>
+        
+      </li>
+    
+      <li>
+        <a href="#create_function">create_function()</a>
+        
+      </li>
+    
+      <li>
+        <a href="#call_user_func">call_user_func()</a>
+        
+      </li>
+    
+      <li>
+        <a href="#rce_2">原生类列目录/RCE</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_18"></a>
+        
+      </li>
+    
+      <li>
+        <a href="#_19">序列化与反序列化特性</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_20">属性类型不敏感</a>
+        
+      </li>
+    
+      <li>
+        <a href="#sessionupload_progress">session.upload_progress</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../../javascripts/statis.js"></script>
+  
+    <script src="../../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

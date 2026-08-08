@@ -1,0 +1,1334 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>x86 汇编初步 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-env/">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Docker_On_Linux/">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link on" href="./">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/CTFevent/">CTF赛事</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="x86">x86 汇编初步<a class="headerlink" href="#x86" title="Permanent link">¶</a></h1>
+<p>本章节将会简单介绍一下汇编语言，汇编语言在逆向工程中占据的地位还是比较重要的。此章节并不会系统地去介绍整个汇编语言体系，而是以 CTF 逆向 为背景，介绍比较实用的部分。</p>
+<div class="admonition note">
+<p class="admonition-title">如没有明确指出，本文采用的统一为x86汇编中的Intel风格</p>
+<p>在x86汇编中除了Intel风格之外，还有一种风格叫做“AT&amp;T风格”，最明显的一个区分特征就是AT&amp;T风格下的寄存器前有<code>%</code>，立即数前有<code>$</code>。<br>
+同时AT&amp;T风格的指令是从前往后读的（即<code>助记符 源,目的</code>），和Intel风格不同，注意区分。<br>
+(比如AT&amp;T风格下<code>movl %eax,%ebx</code>是将<code>%eax</code>的值赋给<code>%ebx</code>)</p>
+</div>
+<hr>
+<h2 id="_1">前置知识：寄存器<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<p>为了方便读者理解下面的内容，猫猫决定先讲一下寄存器：</p>
+<p>寄存器是中央处理器（CPU）内部的高速存储单元，用于临时存放指令、数据或地址。与内存相比，寄存器的访问速度极快，但数量有限（通常只有十几个到几十个）。在汇编语言中，寄存器通过名称直接引用（如 RAX、RBX 等）。  </p>
+<p>寄存器主要用于存储操作数，保存地址，暂存中间结果，控制程序状态等等……  </p>
+<p>看起来和高级语言里面“变量”的概念很像对吧？</p>
+<p>以下表格展示了以 RAX 为例的寄存器嵌套关系，包含其各部分拆分：</p>
+<table>
+<thead>
+<tr>
+<th>寄存器</th>
+<th>位宽</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RAX</td>
+<td>64位</td>
+<td>64位模式下的完整累加器寄存器</td>
+</tr>
+<tr>
+<td>EAX</td>
+<td>32位</td>
+<td>RAX 的低32位</td>
+</tr>
+<tr>
+<td>AX</td>
+<td>16位</td>
+<td>EAX 的低16位</td>
+</tr>
+<tr>
+<td>AH</td>
+<td>8位</td>
+<td>AX 的高8位（对应 EAX 的位 15-8）</td>
+</tr>
+<tr>
+<td>AL</td>
+<td>8位</td>
+<td>AX 的低8位（对应 EAX 的位 7-0）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>说明：</strong>  </p>
+<ul>
+<li>RAX 是 64 位寄存器，可用于存放 64 位数据或地址。  </li>
+<li>EAX 是 RAX 的低 32 位，常用于 32 位操作。  </li>
+<li>AX 是 EAX 的低 16 位，常用于 16 位操作。  </li>
+<li>AH 和 AL 是 AX 的高、低 8 位，分别用于 8 位操作。修改 AH 会影响 AX 的高字节，但不会影响 AL，反之亦然。  </li>
+</ul>
+<p>这种分层设计允许程序灵活访问寄存器的不同部分，兼容 8/16/32/64 位操作。</p>
+<hr>
+<h2 id="_2">你好，汇编<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<p>下面我们以一个简单的 Hello World 程序为背景，初步介绍汇编：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">argv</span><span class="w"> </span><span class="p">[])</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Hello, world!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>我们通过 GCC 将以上程序编译为 ASM 形式并输出，可以得到以下内容：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>01      .section .rodata
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>02  .LC0:
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>03      .string "Hello, world!"
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>04      .text
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>05      .globl   main
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>06      .type    main, @function
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>07  main:
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>08      push     rbp
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>09      mov      rbp, rsp
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>10      sub      rsp, 16
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>11      mov      DWORD PTR [rbp-4], edi
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>12      mov      QWORD PTR [rbp-16], rsi
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>13      mov      edi, OFFSET FLAT:.LC0
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>14      call     puts
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>15      mov      eax, 0
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>16      leave
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>17      ret
+</code></pre></div>
+<p>这是一个很简单的执行过程，下面我们来简单的介绍一下这块汇编：</p>
+<p>首先 <code>.LC0:</code> 定义了一个字符串，也即我们的 <code>“Hello, world!”</code>，它的作用就是告诉编译器这个字符串的位置（地址）。这种字符串字面量会被编译器放入 <code>.rodata</code> 只读数据段，在程序整个运行期间都存在。</p>
+<p>下面就是 <code>main</code> 函数的汇编块了：</p>
+<p>从第 8 行到第 12 行，进行的操作就是初始化堆栈，其中 8 ～ 10 行是为这个函数执行开辟适合的内存区域， 11 ～ 12 行是把参数保存到局部变量区域。</p>
+<p>这里面提到的 <code>rbp，rsp，edi</code> 等都是寄存器，它们负责储存数据。</p>
+<p>从第 13 行开始就进入了主要执行段：通过 <code>mov</code> 指令将字符串的 <strong>首地址</strong> 赋值给 <code>edi</code>，作为接下来 <code>call</code> 的函数的第一个参数，之后传参完毕，通过 <code>call</code> 指令调用 <code>printf</code> 函数（这里其实编译器进行了优化，因为 <code>printf</code> 只是输出固定字符串且带换行，编译器会优化为调用 <code>puts</code>（<code>puts</code> 会自动追加换行），因此字符串字面量本身不包含 <code>\n</code> ），输出字符串到屏幕；接着将 <code>eax</code> 赋值为 0，这里 <code>eax</code> 一般作为函数的返回值；之后 <code>leave</code> 然后 <code>ret</code> 返回，该函数就执行完毕了。</p>
+<div class="admonition question">
+<p class="admonition-title">为什么传入字符串地址时赋值的是<code>edi</code>而不是<code>rdi</code>？</p>
+<p>其实原因很简单：在这里，字符串的首地址是一个 32 位立即数。 <br>
+在 x86-64 架构下，向 32 位寄存器 <code>edi</code> 写入数值时，CPU 会自动将对应的高 32 位（即 <code>RDI[63:32]</code>）清零。<br>
+因此，这里的操作<code>mov edi, OFFSET FLAT:.LC0</code>等价于是向 <code>rdi</code> 赋值。<br>
+这是 <code>x86-64</code> 的特性：写入 32 位寄存器会清零高 32 位，而写入 16 位或 8 位寄存器不会影响高位。<br>
+需要注意的是，这条规则只适用于 64 位模式下的程序；<br>
+在 32 位程序中不存在高 32 位，因此不会出现自动清零的现象。</p>
+</div>
+<p>在这个过程中，我们可以看到一些常见的汇编指令：<code>mov、sub、call、ret</code> 等，下面来说说它们的作用：  </p>
+<ul>
+<li><code>mov</code> 是赋值指令，它的格式为 <code>mov 目标, 源</code>；  </li>
+<li><code>sub</code> 是减法指令，其格式为 <code>sub 目标, 减去的值</code>；  </li>
+<li><code>call</code> 为调用指令，其格式为 <code>call 要调用的函数地址</code>；  </li>
+<li><code>ret</code> 和 <code>leave</code> 连用是函数返回时的指令序列，其中 <code>leave</code> 用于恢复堆栈框架，<code>ret</code> 用于返回调用点。需要注意的是，<code>leave</code> 指令一般会和 <code>ret</code> 配合使用以正确结束函数。   </li>
+</ul>
+<p>为了方便读者理解 <code>ret</code> 和 <code>leave</code> 是如何合作的，这里猫猫将 <code>leave</code> 和 <code>ret</code> 等价展开，并简单生成了一个基于Linux x86-64的演示动画。</p>
+<p>其中 <code>leave</code> 等价于 <code>mov rsp, rbp</code> 和 <code>pop rbp</code> ，用于恢复调用前的栈帧；而 <code>ret</code> 等价于 <code>pop rip</code>：</p>
+<p><img alt="leave-0" src="../Images/leave-0.png">
+<img alt="leave-1" src="../Images/leave-1.png">
+<img alt="leave-2" src="../Images/leave-2.png">
+<img alt="leave-3" src="../Images/leave-3.png">
+<img alt="ret-0" src="../Images/ret-0.png">
+<img alt="ret-1" src="../Images/ret-1.png">
+<img alt="ret-2" src="../Images/ret-2.png"></p>
+<div class="admonition note">
+<p class="admonition-title">其实<code>pop rip</code>的写法不太严谨喵……</p>
+<p>严格来说，x86-64 架构中 <code>rip</code> 不能作为 <code>pop</code> 的显式操作数，<code>pop rip</code> 并不是一条合法的汇编指令。<br>
+<code>ret</code> 是专门的控制流指令，而不是 <code>pop</code> 的语法变体。
+实际上这里的底层行为是：
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nf">rip</span><span class="w"> </span><span class="err">←</span><span class="w"> </span><span class="p">[</span><span class="no">rsp</span><span class="p">]</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nf">rsp</span><span class="w"> </span><span class="err">←</span><span class="w"> </span><span class="no">rsp</span><span class="w"> </span><span class="err">+</span><span class="w"> </span><span class="mi">8</span>
+</code></pre></div>
+<p>不过嘛，为了方便理解咱们就不纠结这些小瑕疵啦~  </p>
+</div>
+<hr>
+<h2 id="_3">前置知识：标志位<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<p>在正式讲解汇编指令之前，猫猫觉得有必要介绍一下什么是标志位，不然很多读者读到后面可能就会迷糊啦~  </p>
+<p>这里我们以 x86 架构为例：</p>
+<p>在 x86 汇编语言中， <strong>标志寄存器</strong> （EFLAGS Register, 又名程序状态字 Program Status Word）用于存储指令执行结果的状态信息和控制处理器的工作模式。</p>
+<p>其中，各个二进制位被称为 <strong>标志位</strong> ，每个标志位有特定的含义。</p>
+<p>根据功能，标志位可分为 <strong>状态标志</strong>（反映算术/逻辑运算结果）和 <strong>控制标志</strong>（控制处理器操作）。</p>
+<div align="center"><strong>常见标志位及其含义</strong></div>
+
+<table>
+<thead>
+<tr>
+<th>标志位</th>
+<th>名称</th>
+<th>含义与置位条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CF</td>
+<td>进位标志</td>
+<td>无符号数运算结果超出范围时置1，例如加法产生进位或减法产生借位。</td>
+</tr>
+<tr>
+<td>PF</td>
+<td>奇偶标志</td>
+<td>运算结果低8位中“1”的个数为偶数时置1，否则置0。常用于数据校验。</td>
+</tr>
+<tr>
+<td>AF</td>
+<td>辅助进位标志</td>
+<td>用于BCD码运算，表示低4位是否向高4位进位或借位。</td>
+</tr>
+<tr>
+<td>ZF</td>
+<td>零标志</td>
+<td>运算结果为0时置1，否则置0。</td>
+</tr>
+<tr>
+<td>SF</td>
+<td>符号标志</td>
+<td>运算结果的最高位（符号位）为1时置1，表示负数（对于有符号数）。</td>
+</tr>
+<tr>
+<td>TF</td>
+<td>陷阱标志</td>
+<td>当置1时，处理器进入单步调试模式，每执行一条指令产生一次调试异常。</td>
+</tr>
+<tr>
+<td>IF</td>
+<td>中断允许标志</td>
+<td>置1时允许可屏蔽中断响应，置0时禁止。</td>
+</tr>
+<tr>
+<td>DF</td>
+<td>方向标志</td>
+<td>控制字符串操作指令的地址变化方向：DF=0时地址递增，DF=1时地址递减。</td>
+</tr>
+<tr>
+<td>OF</td>
+<td>溢出标志</td>
+<td>有符号数运算结果超出机器所能表示的范围时置1，例如正+正得负或负+负得正。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>说明：</strong>  </p>
+<ul>
+<li>状态标志（CF、PF、AF、ZF、SF、OF）通常由算术逻辑指令自动更新。  </li>
+<li>控制标志（如DF、IF、TF）可通过专用指令（如STD、CLD、STI、CLI）修改。  </li>
+<li>不同处理器（如x86-64）可能增加或调整部分标志位，但上述标志位是基本且通用的。</li>
+</ul>
+<p>以上表格涵盖了主要的标志位，理解它们对于调试底层程序和掌握汇编语言至关重要。</p>
+<hr>
+<h2 id="_4">常见汇编指令<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<p>介绍完标志位并了解了一些基本的汇编指令后，下面我们来看看 CTF 中常见的一些指令：</p>
+<h3 id="loop"><code>loop</code> 循环指令<a class="headerlink" href="#loop" title="Permanent link">¶</a></h3>
+<p>以 <code>x86-64</code> 为例（使用 <code>rcx</code>）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>mov rax,0
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>mov rcx,236
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>s:
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>add rax,123
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>loop s
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>leave
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>ret
+</code></pre></div>
+<p>上面的指令执行的是对 123 累加 236 次，从上面的代码中我们可以看到，<code>rcx</code> 寄存器保存的是循环次数，每次遇到 <code>loop</code> 指令时，<code>loop</code> 会先将  <code>rcx</code> 的数值减少 1，之后如果 <code>rcx</code> 依旧不为0，则跳转到对应的标签处（这里是<code>s</code>）；当其数值减少到 0 时，<code>loop</code> 指令就会停止跳转，继续执行下面的指令。</p>
+<p>顺带一提，<code>loop</code> 不依赖标志位哦~</p>
+<div class="admonition quote">
+<p class="admonition-title">猫猫の碎碎念</p>
+<p>老实说，loop指令在现代编译器中几乎不会生成惹……不过了解一下总归是好的，万一以后用到了捏~？</p>
+</div>
+<h3 id="_5">无条件跳转<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>label:
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>mov edx,0
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>jmp label
+</code></pre></div>
+<p>无条件跳转指令为 <code>jmp</code>，其意思从字面上就可以看出来，只要是执行到 <code>jmp</code> 这里，无论什么情况，都会直接跳转到 <code>label</code> 的代码块中继续往下执行指令。</p>
+<h3 id="_6">条件跳转<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>label:
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>mov ebx,1
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>cmp ebx,0
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>je label
+</code></pre></div>
+<p>以上代码将 <code>ebx</code> 的值与 <code>0</code> 对比(<code>cmp</code>的比较方法是左减右的“作差法”，但不会修改<code>ebx</code>中的数值，只会影响标志位)，如果相等，则会跳转到 <code>label</code> 处，条件跳转指令 <code>je</code> 代表相等则跳转，还有其他与之条件不一样的条件跳转指令，一般条件跳转指令是与 <code>cmp</code>、<code>test</code> 指令混在一起用的。以上代码也可以用 <code>test</code> 来写：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>label:
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>mov ebx,1
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>test ebx,ebx
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>jz label
+</code></pre></div>
+<p><code>test</code> 是 <strong>仅影响标志位</strong> 的按位与指令，在本例中 <code>test</code> 等价于计算 <code>ebx &amp; ebx</code>，并根据计算结果更新标志位。</p>
+<p>在本例中，我们关心的是 ZF 标志位，当计算结果为0时该标志位将被 <strong>置1</strong> 。</p>
+<p>而 <code>jz</code> 语句表示当 ZF 标志位为 1 时就跳转到<code>label</code>，在本例中的实现效果与 <code>cmp</code> 相同。</p>
+<p>下面是一些常见的条件跳转指令：</p>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>别名</th>
+<th>英语全称</th>
+<th>跳转条件 （标志位）</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>JE</code></td>
+<td><code>JZ</code></td>
+<td>Jump if Equal / Jump if Zero</td>
+<td>ZF = 1</td>
+<td>等于 / 结果为零</td>
+</tr>
+<tr>
+<td><code>JNE</code></td>
+<td><code>JNZ</code></td>
+<td>Jump if Not Equal / Jump if Not Zero</td>
+<td>ZF = 0</td>
+<td>不等于 / 结果不为零</td>
+</tr>
+<tr>
+<td><code>JS</code></td>
+<td>—</td>
+<td>Jump if Sign</td>
+<td>SF = 1</td>
+<td>结果为负</td>
+</tr>
+<tr>
+<td><code>JNS</code></td>
+<td>—</td>
+<td>Jump if Not Sign</td>
+<td>SF = 0</td>
+<td>结果为正或零</td>
+</tr>
+<tr>
+<td><code>JP</code></td>
+<td><code>JPE</code></td>
+<td>Jump if Parity / Jump if Parity Even</td>
+<td>PF = 1</td>
+<td>奇偶位为偶</td>
+</tr>
+<tr>
+<td><code>JNP</code></td>
+<td><code>JPO</code></td>
+<td>Jump if Not Parity / Jump if Parity Odd</td>
+<td>PF = 0</td>
+<td>奇偶位为奇</td>
+</tr>
+<tr>
+<td><code>JO</code></td>
+<td>—</td>
+<td>Jump if Overflow</td>
+<td>OF = 1</td>
+<td>有符号溢出</td>
+</tr>
+<tr>
+<td><code>JNO</code></td>
+<td>—</td>
+<td>Jump if Not Overflow</td>
+<td>OF = 0</td>
+<td>无溢出</td>
+</tr>
+<tr>
+<td><code>JC</code></td>
+<td><code>JB</code> / <code>JNAE</code></td>
+<td>Jump if Carry / Jump if Below / Jump if Not Above or Equal</td>
+<td>CF = 1</td>
+<td>进位 / 无符号小于</td>
+</tr>
+<tr>
+<td><code>JNC</code></td>
+<td><code>JAE</code> / <code>JNB</code></td>
+<td>Jump if Not Carry / Jump if Above or Equal / Jump if Not Below</td>
+<td>CF = 0</td>
+<td>无进位 / 无符号大于等于</td>
+</tr>
+<tr>
+<td><code>JBE</code></td>
+<td><code>JNA</code></td>
+<td>Jump if Below or Equal / Jump if Not Above</td>
+<td>CF = 1 或 ZF = 1</td>
+<td>无符号小于等于</td>
+</tr>
+<tr>
+<td><code>JA</code></td>
+<td><code>JNBE</code></td>
+<td>Jump if Above / Jump if Not Below or Equal</td>
+<td>CF = 0 且 ZF = 0</td>
+<td>无符号大于</td>
+</tr>
+<tr>
+<td><code>JL</code></td>
+<td><code>JNGE</code></td>
+<td>Jump if Less / Jump if Not Greater or Equal</td>
+<td>SF ≠ OF</td>
+<td>有符号小于</td>
+</tr>
+<tr>
+<td><code>JGE</code></td>
+<td><code>JNL</code></td>
+<td>Jump if Greater or Equal / Jump if Not Less</td>
+<td>SF = OF</td>
+<td>有符号大于等于</td>
+</tr>
+<tr>
+<td><code>JLE</code></td>
+<td><code>JNG</code></td>
+<td>Jump if Less or Equal / Jump if Not Greater</td>
+<td>ZF = 1 或 SF ≠ OF</td>
+<td>有符号小于等于</td>
+</tr>
+<tr>
+<td><code>JG</code></td>
+<td><code>JNLE</code></td>
+<td>Jump if Greater / Jump if Not Less or Equal</td>
+<td>ZF = 0 且 SF = OF</td>
+<td>有符号大于</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">位运算<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p>下面是一些常见的位运算指令：</p>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>示例</th>
+<th>操作</th>
+<th>结果保存</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AND</code></td>
+<td><code>AND AX, BX</code></td>
+<td>AX = AX &amp; BX，并设置标志位</td>
+<td>是，存入目标操作数</td>
+<td>按位与运算</td>
+</tr>
+<tr>
+<td><code>OR</code></td>
+<td><code>OR AX, BX</code></td>
+<td>AX = AX | BX，并设置标志位</td>
+<td>是，存入目标操作数</td>
+<td>按位或运算</td>
+</tr>
+<tr>
+<td><code>XOR</code></td>
+<td><code>XOR AX, BX</code></td>
+<td>AX = AX ^ BX，并设置标志位</td>
+<td>是，存入目标操作数</td>
+<td>按位异或运算</td>
+</tr>
+<tr>
+<td><code>NOT</code></td>
+<td><code>NOT CX</code></td>
+<td>CX = ~CX</td>
+<td>是，存入目标操作数</td>
+<td>按位取反（不影响标志位）</td>
+</tr>
+<tr>
+<td><code>TEST</code></td>
+<td><code>TEST AX, BX</code></td>
+<td>AX &amp; BX，并设置标志位</td>
+<td>否，结果丢弃</td>
+<td>按位与运算（仅影响标志位）</td>
+</tr>
+</tbody>
+</table>
+<p>特别的，<code>AND</code>、<code>OR</code>、<code>XOR</code> 执行后会将 <code>CF</code> 和 <code>OF</code> 清零，而其他的寄存器（如<code>SF</code>、<code>ZF</code>、<code>PF</code>）则会根据结果更新。  </p>
+<div class="admonition question">
+<p class="admonition-title">话说逻辑运算后为什么会把 <code>AF</code> 设为 <code>undefined</code>？</p>
+<p>由于逻辑运算不涉及加减法的半字节进位，因此 AF 在这些指令后被定义为未定义状态，程序不应依赖其值。</p>
+</div>
+<h3 id="lea"><code>lea</code> 整数计算<a class="headerlink" href="#lea" title="Permanent link">¶</a></h3>
+<p>其使用格式为：<code>lea rdx,[my_var]</code>，将 <code>my_var</code> 的 <strong>地址</strong> 赋值给 <code>rdx</code> 寄存器。</p>
+<p>需要注意的是，<code>lea</code> 不会访问内存，也不会读取 <code>[my_var]</code> 中的内容，它只是把“地址这个数值”放入寄存器，等价于：<code>rdx = &amp;my_var;</code>。</p>
+<p>在实际使用中，<code>lea</code> 常被用于计算地址偏移，例如 <code>lea rax, [rbx + rcx*4 + 8]</code>，这条指令的真实含义是：<code>rax = rbx + rcx*4 + 8</code>。这里的 <code>[rbx + rcx*4 + 8]</code> 只是使用了 x86 的寻址格式 <code>[base + index*scale + displacement]</code> 来进行整数运算，并不会去访问该地址所指向的内存内容。</p>
+<p>对比来看，<code>mov rax, [rbx + rcx*4 + 8]</code> 的含义是：<code>rax = *(rbx + rcx*4 + 8)</code>，即先计算地址，再访问内存读取数据；</p>
+<p>而 <code>lea</code> 仅计算表达式本身，不发生解引用。</p>
+<p>正因如此，<code>lea</code> 有时也被编译器当作一种“廉价的算术指令”来使用——它可以在一条指令内完成乘法（<code>scale=1/2/4/8</code>）、加法与常数偏移的组合运算，同时不影响任何标志位。例如 <code>lea rax, [rbx + rbx*4]</code> 等价于计算 <code>rbx * 5</code>。</p>
+<p>因此，看到 <code>lea rax, [表达式]</code> 时，应理解为：<code>rax = 表达式的计算结果</code>。</p>
+<h3 id="xchg"><code>xchg</code> 数值交换<a class="headerlink" href="#xchg" title="Permanent link">¶</a></h3>
+<p>其使用格式为 <code>xchg ax,bx</code> 将 <code>ax</code> 和 <code>bx</code> 的数值交换。</p>
+<h2 id="_8">关于函数传参<a class="headerlink" href="#_8" title="Permanent link">¶</a></h2>
+<p>在汇编中，我们有时候需要知道参数被保存在哪个寄存器里，这里以常见的两种调用约定为例：</p>
+<p>整数或指针类型的返回值通常保存在 <code>rax</code> 中（32 位时为 <code>eax</code>）。</p>
+<p><strong>System V AMD64 ABI</strong>（Linux / macOS 下 GCC/Clang 默认使用）：
+函数参数按从左到右的顺序保存在 <code>rdi</code>、<code>rsi</code>、<code>rdx</code>、<code>rcx</code>、<code>r8</code>、<code>r9</code> 中，超出部分通过栈传递。</p>
+<p><strong>Windows x64 调用约定</strong>：
+函数参数按从左到右的顺序保存在 <code>rcx</code>、<code>rdx</code>、<code>r8</code>、<code>r9</code> 中，超出部分通过栈传递。  </p>
+<p>同时，Windows x64 要求调用者预留 32 字节的 <code>shadow space</code> ，即使函数没有用到这 4 个参数，也必须预留。</p>
+<p>有时候根据函数调用约定以及编译器和平台的不同，这个储存规律也会发生改变，我们需要根据当时情况动态调整。</p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: z3约束求解"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        z3约束求解
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../%E8%8A%B1%E6%8C%87%E4%BB%A4/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: 花指令"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        花指令
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#x86">x86 汇编初步</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_1">前置知识：寄存器</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_2">你好，汇编</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">前置知识：标志位</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_4">常见汇编指令</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#loop">loop 循环指令</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">无条件跳转</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_6">条件跳转</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_7">位运算</a>
+        
+      </li>
+    
+      <li>
+        <a href="#lea">lea 整数计算</a>
+        
+      </li>
+    
+      <li>
+        <a href="#xchg">xchg 数值交换</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_8">关于函数传参</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

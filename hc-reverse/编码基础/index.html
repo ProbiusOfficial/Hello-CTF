@@ -1,0 +1,1144 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>编码基础 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-env/">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Docker_On_Linux/">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link on" href="./">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/CTFevent/">CTF赛事</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="_1">编码基础<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<p>由于 Reverse 方向涉及到的编码类型很多，这里只对一些较为经典的编码方式进行介绍。</p>
+<h2 id="hex">Hex 编码（十六进制编码）<a class="headerlink" href="#hex" title="Permanent link">¶</a></h2>
+<h3 id="_2">定义与原理<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p>Hex 编码是将二进制数据用 <strong>16 进制数字</strong> 表示的一种编码方式。它将每个字节拆分为高4位和低4位，分别映射为一个十六进制字符。</p>
+<div class="admonition example">
+<p class="admonition-title">十六进制字符有哪些？</p>
+<p>大写版本：0123456789ABCDEF<br>
+小写版本：0123456789abcdef</p>
+</div>
+<p>设原始字节数据为 <span class="arithmatex">\(B = [b_0, b_1, ..., b_{n-1}]\)</span>，每个字节 <span class="arithmatex">\(b_i\)</span> 的取值范围为 <span class="arithmatex">\([0, 255]\)</span>。</p>
+<p>将每个字节拆分为高 4 位和低 4 位：</p>
+<div class="arithmatex">\[
+b_i = 16 \times h_i + l_i
+\]</div>
+<p>其中：</p>
+<ul>
+<li><span class="arithmatex">\(h_i = \lfloor b_i / 16 \rfloor\)</span> 为高半字节</li>
+<li><span class="arithmatex">\(l_i = b_i \bmod 16\)</span> 为低半字节</li>
+</ul>
+<h3 id="_3">编码示例<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<p>对于字符串 "Hello" 的 ASCII 字节序列：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">字符</th>
+<th style="text-align: center;">ASCII</th>
+<th style="text-align: center;">高4位</th>
+<th style="text-align: center;">低4位</th>
+<th style="text-align: center;">Hex编码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">H</td>
+<td style="text-align: center;">72</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">48</td>
+</tr>
+<tr>
+<td style="text-align: center;">e</td>
+<td style="text-align: center;">101</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">65</td>
+</tr>
+<tr>
+<td style="text-align: center;">l</td>
+<td style="text-align: center;">108</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">c</td>
+<td style="text-align: center;">6c</td>
+</tr>
+<tr>
+<td style="text-align: center;">l</td>
+<td style="text-align: center;">108</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">c</td>
+<td style="text-align: center;">6c</td>
+</tr>
+<tr>
+<td style="text-align: center;">o</td>
+<td style="text-align: center;">111</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">f</td>
+<td style="text-align: center;">6f</td>
+</tr>
+</tbody>
+</table>
+<p>最终结果：<span class="arithmatex">\(\text{"48656c6c6f"}\)</span></p>
+<h2 id="unicode">Unicode 编码<a class="headerlink" href="#unicode" title="Permanent link">¶</a></h2>
+<h3 id="_4">定义与数学本质<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<p>Unicode 常被误认为是一种编码方式，但它本质上是一个 <strong>字符集</strong> ，只负责为每个字符分配唯一的 <strong>码点</strong> （code point）。</p>
+<p>至于如何将码点转换为字节，则由 UTF-8、UTF-16 等具体编码方案负责。</p>
+<div class="arithmatex">\[
+\text{Unicode 码点空间} = \{0, 1, 2, ..., 0x10FFFF\}
+\]</div>
+<p>这一空间共可容纳约 111 万个字符位置，足以涵盖人类目前使用的所有书写系统。</p>
+<h3 id="_5">常用编码方式<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<p>Unicode 需要通过特定的 <strong>编码方式</strong> 将目标字符串转换为字节序列，常见的有：</p>
+<h4 id="utf-8">UTF-8（变长编码）<a class="headerlink" href="#utf-8" title="Permanent link">¶</a></h4>
+<ul>
+<li>ASCII 字符（U+0000 到 U+007F）占 1 字节</li>
+<li>其他字符占 2-4 字节</li>
+<li>无字节序问题</li>
+</ul>
+<h4 id="utf-16">UTF-16（变长编码）<a class="headerlink" href="#utf-16" title="Permanent link">¶</a></h4>
+<ul>
+<li>BMP 字符（U+0000 到 U+FFFF）占 2 字节</li>
+<li>补充平面字符占 4 字节，通过代理对（U+D800–U+DFFF）编码</li>
+<li>分 UTF-16LE（小端）和 UTF-16BE（大端）</li>
+</ul>
+<h4 id="utf-32">UTF-32（定长编码）<a class="headerlink" href="#utf-32" title="Permanent link">¶</a></h4>
+<ul>
+<li>所有字符固定占 4 字节</li>
+<li>分 UTF-32LE 和 UTF-32BE</li>
+</ul>
+<h3 id="_6">常见形式识别<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<p>在二进制分析中，Unicode 字符串常以以下形式出现：</p>
+<ul>
+<li><strong>UTF-8</strong>：ASCII 字符保持不变，非 ASCII 字符为多字节</li>
+<li><strong>UTF-16LE</strong>：每两个字节表示一个字符，低字节在前，如 <code>H\x00e\x00l\x00l\x00o\x00</code></li>
+<li><strong>UTF-16BE</strong>：每两个字节表示一个字符，高字节在前，如 <code>\x00H\x00e\x00l\x00l\x00o</code></li>
+<li><strong>UTF-32</strong>：每四个字节表示一个字符</li>
+</ul>
+<h2 id="base">Base 编码<a class="headerlink" href="#base" title="Permanent link">¶</a></h2>
+<p>简单来说，所有的 Base 编码本质上都是在做同一件事： <strong>数字进制转换</strong> 。</p>
+<p>以下是一些常见的 Base 编码：  </p>
+<ul>
+<li>Base16  </li>
+<li>Base32  </li>
+<li>Base64  </li>
+<li>Base36  </li>
+<li>Base58  </li>
+<li>Base62  </li>
+<li>Base85  </li>
+<li>Base91   </li>
+<li>...  </li>
+</ul>
+<p>我们可以将这些编码的转换方式大致分为两类： <strong>按位切分法</strong> 和 <strong>大整数除法</strong> 。</p>
+<h3 id="_7">按位切分法<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p>对于编码表长度是2的幂次的Base编码，常用按位切分法(比如 Base16, Base32, Base64 ...)。</p>
+<p>比如 Base64 编码，其编码表中有 <span class="arithmatex">\(2^6=64\)</span> 个字符，其核心原理就是将 3 个 8bit 切分成 4 个 6bit ，通过编码表映射实现编码。</p>
+<p>这里以<code>flag</code>为例，展示一下 Base64 编码的过程：</p>
+<p><img alt="Base64编码演示" src="../Images/Encode_Base64.png"></p>
+<p>我们可以使用 CyberChef 进行 Base64 编码的解码：</p>
+<p><img alt="CyberChef的Base64解码" src="../Images/Cyberchef_Base64.png"></p>
+<h3 id="_8">大整数除法<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
+<p>但还有很多 Base 编码不符合上述情况，这时候他们中的大多数会选择使用大整数除法。</p>
+<p>简单来说就是，首先将原文通过256进制转换为一个大整数，然后不断地进行“取余”和“整除”操作，直到大整数变为0。</p>
+<p>此时逆向拼接取余映射出来的字符，得到的新字符串就是编码结果。</p>
+<div class="admonition quote">
+<p class="admonition-title">猫猫の碎碎念</p>
+<p>还记得猫猫之前说的喵？Base就是进制转换呀！<br>
+这里的操作也和计算机课上学习的“十进制转二进制”做法一样的，只不过变成了转任意进制~</p>
+</div>
+<p>以将<code>flag</code>通过 Base58 编码为例：</p>
+<p>对于给定的一个字节数组 <span class="arithmatex">\(B = [b₀, b₁, b₂, ..., bₙ₋₁]\)</span> ，可以将其视为一个大整数 <span class="arithmatex">\(V\)</span> ：</p>
+<div class="arithmatex">\[V = b₀ × 256ⁿ⁻¹ + b₁ × 256ⁿ⁻² + ... + bₙ₋₂ × 256¹ + bₙ₋₁ × 256⁰\]</div>
+<p>其中：  </p>
+<ul>
+<li><span class="arithmatex">\(b₀\)</span> 是最高位字节（最左侧字节）  </li>
+<li><span class="arithmatex">\(bₙ₋₁\)</span> 是最低位字节（最右侧字节）  </li>
+<li><span class="arithmatex">\(256 = 2⁸\)</span>（一个字节的取值范围）</li>
+</ul>
+<p>就本例而言，字节数组 <span class="arithmatex">\(B = ['f','l','a','g']\)</span> ，计算(其中 ord() 表示对应字符的ASCII码)：</p>
+<div class="arithmatex">\[V = ord('f') \times 256^3+ord('l') \times 256^2+ord('a')\times 256+ord('g')\]</div>
+<p>可以得出 <span class="arithmatex">\(V=1718378855\)</span> 。</p>
+<p>之后就是不断地取余和整除了，标准流程如下：</p>
+<p>标准 Base58 编码表： <code>123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz</code> 。</p>
+<div class="arithmatex">\[
+\begin{cases}
+r_k = V_k \bmod 58 &amp; \text{(取余数作为当前位的索引)} \\
+V_{k+1} = \left\lfloor \dfrac{V_k}{58} \right\rfloor &amp; \text{(取商用于下一轮计算)}
+\end{cases}
+\]</div>
+<p>当满足以下条件时，<strong>停止迭代</strong>：</p>
+<div class="arithmatex">\[
+V_{k+1} = 0
+\]</div>
+<p>我们来代入一下过程：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+r_0 &amp;= \text{V} \bmod 58, &amp;\quad \text{char}_0 &amp;= \text{base58\_alphabet}[r_0] = \text{'e'}, &amp;\quad \text{V} &amp;:= \left\lfloor \frac{\text{V}}{58} \right\rfloor \\
+r_1 &amp;= \text{V} \bmod 58, &amp;\quad \text{char}_1 &amp;= \text{base58\_alphabet}[r_1] = \text{'A'}, &amp;\quad \text{V} &amp;:= \left\lfloor \frac{\text{V}}{58} \right\rfloor \\
+r_2 &amp;= \text{V} \bmod 58, &amp;\quad \text{char}_2 &amp;= \text{base58\_alphabet}[r_2] = \text{'9'}, &amp;\quad \text{V} &amp;:= \left\lfloor \frac{\text{V}}{58} \right\rfloor \\
+r_3 &amp;= \text{V} \bmod 58, &amp;\quad \text{char}_3 &amp;= \text{base58\_alphabet}[r_3] = \text{'r'}, &amp;\quad \text{V} &amp;:= \left\lfloor \frac{\text{V}}{58} \right\rfloor \\
+r_4 &amp;= \text{V} \bmod 58, &amp;\quad \text{char}_4 &amp;= \text{base58\_alphabet}[r_4] = \text{'c'}, &amp;\quad \text{V} &amp;:= \left\lfloor \frac{\text{V}}{58} \right\rfloor \\
+r_5 &amp;= \text{V} \bmod 58, &amp;\quad \text{char}_5 &amp;= \text{base58\_alphabet}[r_5] = \text{'3'}, &amp;\quad \text{V} &amp;:= \left\lfloor \frac{\text{V}}{58} \right\rfloor = 0
+\end{aligned}
+\]</div>
+<p>逆序拼接之后，我们可以得到最终的编码结果：</p>
+<div class="arithmatex">\[
+\text{char}_5\ \text{char}_4\ \text{char}_3\ \text{char}_2\ \text{char}_1\ \text{char}_0 = \text{'3cr9Ae'}
+\]</div>
+<p>同样的，我们依旧可以使用 CyberChef 实现 Base58 编码的解码：</p>
+<p><img alt="CyberChef的Base58解码" src="../Images/Cyberchef_Base58.png"></p>
+<details class="question">
+<summary>是否有Base家族的成员选择了除"按位切分"和"大整数除法"之外的方案？</summary>
+<p>emm……其实是有的，比如 Base85 。<br>
+实际上 Base85 用的是分组块运算 ——这是一种介于两者之间的方案：每 4 个字节作为一组，通过大整数除法转换为 5 个字符。<br>
+它是在小块上做进制转换，而不是把整个输入当成一个大整数处理。</p>
+</details>
+<h3 id="_9">识别方式<a class="headerlink" href="#_9" title="Permanent link">¶</a></h3>
+<p>这里以带 padding 的 Base64 为例： Base64 编码后的字符串具有以下特征：</p>
+<ul>
+<li>
+<p>末尾可能有 <code>=</code> 或 <code>==</code></p>
+</li>
+<li>
+<p>长度是 4 的倍数</p>
+</li>
+</ul>
+<p>同时 Base 系列编码的核心特征是 <strong>字符映射表</strong> 的存在。</p>
+<p>在二进制程序中，该字符集通常以连续内存块的形式存在：</p>
+<p><img alt="Base64 字符串表" src="../Images/base64_table.png"></p>
+<p>如图所示，红框内即为标准 Base64 字符表。在实战分析中，也可能遇到 <strong>魔改版本</strong> ：</p>
+<div class="arithmatex">\[
+\mathcal{A}_{64}' = \text{自定义字符集（通常基于标准集置换）}
+\]</div>
+<p>但字符集长度恒为 64 这一数学特征保持不变。</p>
+<p>以下是一些 Base64 编码的数据示例：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>aGVsbG8gd29ybGQ=
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>aGVsbG9fY3RmX2lsb3ZlX2N0Zg==
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>ZmxhZ3tUcnlfVG9fRmlndXJlX091dH0=
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>aGVsbG9DVEZ7RW5jb2RlX0FuZF9EZWNvZGV9
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">请不要迷信经验主义</p>
+<p>存在字符表确实是 Base 家族一定有的特征，但这并不代表存在字符表就一定使用了 Base 家族的编码。<br>
+实战分析中建议结合处理算法进行综合研判，不然很可能会出现“聪明反被聪明误”哦~</p>
+</div>
+<p>由于手动记忆各类 Base 编码特征较为繁琐，可使用自动化工具进行识别。</p>
+<p><strong>Findcrypto</strong> 插件通过以下方式检测加密算法：</p>
+<ul>
+<li>扫描常量特征（如字符表、初始向量）</li>
+<li>匹配算法特定常数（如 Base64 的字符集哈希值）</li>
+<li>识别循环结构中的位运算模式</li>
+</ul>
+<p><img alt="Findcrypto 插件识别结果" src="../Images/findcrypto.png"></p>
+<p>关于该插件的安装与使用，感兴趣的话读者可以自行探索。</p>
+<div class="admonition abstract">
+<p class="admonition-title">还是那句话</p>
+<p>不顺手的工具终究只会是负担。</p>
+</div></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 基本运算"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        基本运算
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: 字节流算法"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        字节流算法
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#_1">编码基础</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#hex">Hex 编码（十六进制编码）</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_2">定义与原理</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">编码示例</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#unicode">Unicode 编码</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_4">定义与数学本质</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">常用编码方式</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#utf-8">UTF-8（变长编码）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#utf-16">UTF-16（变长编码）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#utf-32">UTF-32（定长编码）</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_6">常见形式识别</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#base">Base 编码</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_7">按位切分法</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_8">大整数除法</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_9">识别方式</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

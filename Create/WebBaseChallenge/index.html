@@ -1,0 +1,1092 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>WebBaseChallenge | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-env/">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Docker_On_Linux/">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/CTFevent/">CTF赛事</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h2 id="web">Web题目<a class="headerlink" href="#web" title="Permanent link">¶</a></h2>
+<h3 id="_1">前置知识<a class="headerlink" href="#_1" title="Permanent link">¶</a></h3>
+<p>首先您需要清楚目前Web的题目类型 和 其可能会用到的语言技术 / 框架技术，可能会遇到的题目技术栈大概有以下几种:</p>
+<ul>
+<li>
+<p>PHP
+    一般容器页面技术为 <strong>Nginx + PHP</strong> | 当然在涉及到数据库交互时 使用 <strong>LNMP (Nginx MySQL PHP)</strong> 容器 | 极其少见的情况下会使用 <strong>Apache + PHP</strong> | 同样的数据库交互时使用 <strong>LAMP (Apache MySQL PHP)</strong> 容器。  </p>
+</li>
+<li>
+<p>Python
+    目前大多数Python题目都基于 <strong>Flask</strong> 框架，当然也有少数基于 <strong>Django</strong> 框架的题目。  </p>
+</li>
+<li>
+<p>Java<br>
+    Java题目除了一般的 <strong>Jar</strong> 包外，还有基于 <strong>SpringBoot</strong> 框架的题目，基于 <strong>Tomcat</strong> 的题目也有。  </p>
+</li>
+<li>
+<p>Js<br>
+    Js题目一般都是基于 <strong>Node.js</strong> 的，当然也有少数基于 <strong>Express</strong> 框架的题目。</p>
+</li>
+</ul>
+<p>目前我们的容器模板列表(Web)如下:</p>
+<ul>
+<li><a href="https://github.com/CTF-Archives/ctf-docker-template/tree/main/web-flask-python_3.10">web-flask-python_3.10</a></li>
+<li><a href="https://github.com/CTF-Archives/ctf-docker-template/tree/main/web-flask-python_3.8">web-flask-python_3.8</a></li>
+<li><a href="https://github.com/CTF-Archives/ctf-docker-template/tree/main/web-java-openjdk8">web-java-openjdk8</a></li>
+<li><a href="https://github.com/CTF-Archives/ctf-docker-template/tree/main/web-jetty-jdk8">web-jetty-jdk8</a></li>
+<li><a href="https://github.com/CTF-Archives/ctf-docker-template/tree/main/web-tomcat-jdk8">web-tomcat-jdk8</a></li>
+<li><a href="https://github.com/CTF-Archives/ctf-docker-template/tree/main/web-lamp-php80">web-lamp-php80</a></li>
+<li><a href="https://github.com/CTF-Archives/ctf-docker-template/tree/main/web-lnmp-php73">web-lnmp-php73</a></li>
+<li><a href="https://github.com/CTF-Archives/ctf-docker-template/tree/main/web-nginx-php73">web-nginx-php73</a></li>
+<li><a href="https://github.com/CTF-Archives/ctf-docker-template/tree/main/web-node">web-node</a></li>
+</ul>
+<p>...我们会持续更新，我们也欢迎您提交<a href="https://github.com/CTF-Archives/ctf-docker-template/pulls">Pull Requests</a>来帮助我们完善模板</p>
+<h3 id="_2">编写题目源码<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p>如同现实或者说物理机上的 开发/生产 环境一样，您需要编写对应服务的源码，并将其放置在web服务的工作目录，这样才能运行。
+这些操作在容器中也一样，我们推荐您在本地 或者 调试用的虚拟机/容器上 编写好源码后，再将其放置到我们的模板中。</p>
+<p>下面我们以编写一道简单的SQL注入题目为例子，介绍以下编写题目源码的步骤。</p>
+<p>首先，题目所需要的服务是 PHP 和 MySQL，简单的SQL注入，我们使用单个index.php作为web服务的核心即可，然后用 connect.php 来接入数据库</p>
+<p>下面是index.php的源码:  </p>
+<div class="highlight"><span class="filename">index.php</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="x">    </span><span class="cp">&lt;?php</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>        <span class="nb">error_reporting</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>      <span class="k">include</span> <span class="s2">"connect.php"</span><span class="p">;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="cp">?&gt;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="x">    &lt;!DOCTYPE html&gt;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="x">    &lt;html&gt;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="x">    #....省略的HTML代码....</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="x">     </span><span class="cp">&lt;?php</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>     <span class="nv">$sql</span> <span class="o">=</span> <span class="s2">"SELECT username,password FROM users WHERE id = "</span><span class="o">.</span><span class="s1">'(((((('</span><span class="o">.</span><span class="nv">$_GET</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]</span><span class="o">.</span><span class="s1">'))))))'</span><span class="p">;</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>     <span class="k">echo</span> <span class="s2">"&lt;h5&gt;Executed Operations:&lt;/h5&gt;"</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>         <span class="o">.</span><span class="nv">$sql</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>         <span class="o">.</span><span class="s2">"&lt;br&gt;&lt;br&gt;"</span><span class="p">;</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>     <span class="nv">$result</span> <span class="o">=</span> <span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>     <span class="k">if</span> <span class="p">(</span><span class="nv">$result</span><span class="o">-&gt;</span><span class="na">num_rows</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>             <span class="nb">print_r</span><span class="p">(</span><span class="nx">mysqli_fetch_all</span><span class="p">(</span><span class="nv">$result</span><span class="p">,</span> <span class="nx">MYSQLI_ASSOC</span><span class="p">));</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>     <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>         <span class="k">echo</span> <span class="s2">"0 results"</span><span class="p">;</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>     <span class="p">}</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>     <span class="cp">?&gt;</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="x">     #....省略的HTML代码....</span>
+</code></pre></div>
+<p>下面是connect.php的源码:
+</p><div class="highlight"><span class="filename">connect.php</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  <span class="nv">$servername</span> <span class="o">=</span> <span class="s2">"localhost"</span><span class="p">;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  <span class="nv">$username</span> <span class="o">=</span> <span class="s2">"root"</span><span class="p">;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  <span class="nv">$password</span> <span class="o">=</span> <span class="s2">"toooor"</span><span class="p">;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  <span class="nv">$dbname</span> <span class="o">=</span> <span class="s2">"ctf"</span><span class="p">;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  <span class="nv">$conn</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mysqli</span><span class="p">(</span><span class="nv">$servername</span><span class="p">,</span> <span class="nv">$username</span><span class="p">,</span> <span class="nv">$password</span><span class="p">,</span> <span class="nv">$dbname</span><span class="p">);</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  <span class="k">if</span> <span class="p">(</span><span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">connect_error</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="k">die</span><span class="p">(</span><span class="s2">"Connection failed: "</span> <span class="o">.</span> <span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">connect_error</span><span class="p">);</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  <span class="p">}</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>当你编写完题目核心的源码后，你需要在本地验证题目的可行性(至少能跑起来好吧),这里你可以使用小皮面板 或者 Linux上直接部署web环境 亦或者 直接使用我们的模板来验证题目的可行性。</p>
+<p>如小皮面板：(注意要和本地环境的账户对齐，当你上传到模板后也需要注意账户问题)</p>
+<p><img alt="image-20230714022144554" src="../images/makeChallenge/image-20230714022144554.png"></p>
+<p>将index.php和connect.php放置到小皮工作目录下(这里我们放在\phpstudy_pro\WWW\127.0.0.1\challengeverify)，</p>
+<p>然后启动apache2 / Nginx 服务，访问 127.0.0.1/challengeverify/</p>
+<p><img alt="image-20230714023410207" src="../images/makeChallenge/image-20230714023410207.png"></p>
+<p>当然在本地出题时 在这一步可能需要做一些调试工作 以及 一些题目的优化工作，这里我们不再赘述。
+同时本地的调试 也是题目初步可行性的一种验证，下面您需要将您精心准备的题目转移到我们的模板中(嗯 也就是使用docker封装它)。</p>
+<h3 id="_3">题目封装<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<p>我们已经在模板中帮您完成了大量且意义不大的单调工作，首先您需要将您的题目源码放置到模板的工作目录中，然后便是根据题目修改Dockerfile文件，因为涉及到sql服务 所以这里我们以web-nginx-mysql-php73为例子。
+其目录结构如下:
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>+ web-nginx-mysql-php73
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    + docker
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>        - docker-compose.yaml # 该文件用于本地快速部署 简化测试流程
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    + service 
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        - docker-entrypoint.sh 
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    + src
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>        - index.php
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    - Dockerfile
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    - db.sql
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    - README.md
+</code></pre></div>
+其文件内容如下:
+<ul>
+<li>Dockerfile的内容如下
+    <div class="highlight"><span class="filename">Dockerfile</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">FROM</span><span class="w"> </span><span class="s">ctftraining/base_image_nginx_mysql_php_73</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">RUN</span><span class="w"> </span>rm<span class="w"> </span>-r<span class="w"> </span>/var/www/html/index.php<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span>rm<span class="w"> </span>-rf<span class="w"> </span>/tmp/*<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span>rm<span class="w"> </span>-rf<span class="w"> </span>/etc/apk<span class="w"> </span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="k">COPY</span><span class="w"> </span>./src/<span class="w"> </span>/var/www/html
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="k">COPY</span><span class="w"> </span>db.sql<span class="w"> </span>/var/db.sql
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="k">COPY</span><span class="w"> </span>./service/docker-entrypoint.sh<span class="w"> </span>/docker-entrypoint.sh
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="k">RUN</span><span class="w"> </span>sh<span class="w"> </span>-c<span class="w"> </span><span class="s1">'mysqld_safe &amp;'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span>sleep<span class="w"> </span>5s<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span>mysqladmin<span class="w"> </span>-uroot<span class="w"> </span>password<span class="w"> </span><span class="s1">'123456'</span><span class="w"> </span><span class="se">\ </span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span>mysql<span class="w"> </span>-e<span class="w"> </span><span class="s2">"source /var/db.sql;"</span><span class="w"> </span>-uroot<span class="w"> </span>-p123456<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </span><span class="m">777</span><span class="w"> </span>/docker-entrypoint.sh<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </span><span class="m">777</span><span class="w"> </span>/var/db.sql<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/var/www/html<span class="w"> </span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="k">CMD</span><span class="w"> </span>/docker-entrypoint.sh
+</code></pre></div></li>
+<li>
+<p>db.sql的内容如下
+    </p><div class="highlight"><span class="filename">db.sql</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="cm">/*</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="cm"> * db.sql 文件</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="cm"> *</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="cm"> * 此文件用于初始化你的 MySQL 数据库。</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="cm"> * 它将在 Docker 容器启动时运行，</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="cm"> * 并执行所有的 SQL 命令来设置你的数据库。</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="cm"> *</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="cm"> * 你可以在这里创建你的数据库，创建表，</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="cm"> * 插入数据，或执行任何其他的 SQL 命令。</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="cm"> *</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="cm"> * 例如：</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="cm"> *   CREATE DATABASE IF NOT EXISTS your_database;</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="cm"> *   USE your_database;</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="cm"> *   CREATE TABLE your_table (...);</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="cm"> *   INSERT INTO your_table VALUES (...);</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="cm"> *</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="cm"> * 请根据你的需要修改此文件，</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="cm"> */</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">ctf</span><span class="p">;</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="n">use</span><span class="w"> </span><span class="n">ctf</span><span class="p">;</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">300</span><span class="p">),</span><span class="n">username</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">300</span><span class="p">),</span><span class="n">password</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">300</span><span class="p">));</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">values</span><span class="p">(</span><span class="s1">'1'</span><span class="p">,</span><span class="s1">'tanji'</span><span class="p">,</span><span class="s1">'OHHHHHHH'</span><span class="p">);</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">values</span><span class="p">(</span><span class="s1">'2'</span><span class="p">,</span><span class="s1">'fake_flag'</span><span class="p">,</span><span class="s1">'F1rst_to_Th3_eggggggggg!} (4/4)'</span><span class="p">);</span>
+</code></pre></div>
+</li>
+<li>
+<p>docker-entrypoint.sh 的内容如下
+    </p><div class="highlight"><span class="filename">docker-entrypoint.sh</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># Get the user</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nv">user</span><span class="o">=</span><span class="k">$(</span>ls<span class="w"> </span>/home<span class="k">)</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># Check the environment variables for the flag and assign to INSERT_FLAG</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">"</span><span class="nv">$DASFLAG</span><span class="s2">"</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">    </span><span class="nv">INSERT_FLAG</span><span class="o">=</span><span class="s2">"</span><span class="nv">$DASFLAG</span><span class="s2">"</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="k">elif</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">"</span><span class="nv">$FLAG</span><span class="s2">"</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">    </span><span class="nv">INSERT_FLAG</span><span class="o">=</span><span class="s2">"</span><span class="nv">$FLAG</span><span class="s2">"</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="k">elif</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">"</span><span class="nv">$GZCTF_FLAG</span><span class="s2">"</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">    </span><span class="nv">INSERT_FLAG</span><span class="o">=</span><span class="s2">"</span><span class="nv">$GZCTF_FLAG</span><span class="s2">"</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="k">else</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="w">    </span><span class="nv">INSERT_FLAG</span><span class="o">=</span><span class="s2">"flag{TEST_Dynamic_FLAG}"</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="k">fi</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="c1"># 将FLAG写入文件 请根据需要修改</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">$INSERT_FLAG</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tee<span class="w"> </span>/home/<span class="nv">$user</span>/flag<span class="w"> </span>/flag
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="c1"># 将FLAG写入数据库</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span>-z<span class="w"> </span><span class="nv">$FLAG_COLUMN</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="w">    </span><span class="nv">FLAG_COLUMN</span><span class="o">=</span><span class="s2">"flag"</span>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="k">fi</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span>-z<span class="w"> </span><span class="nv">$FLAG_TABLE</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="w">    </span><span class="nv">FLAG_TABLE</span><span class="o">=</span><span class="s2">"flag"</span>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="k">fi</span>
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-p123456<span class="w"> </span>-e<span class="w"> </span><span class="s2">"USE ctftraining;</span>
+<a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a><span class="s2">ALTER TABLE FLAG_TABLE CHANGE FLAG_COLUMN </span><span class="nv">$FLAG_COLUMN</span><span class="s2"> CHAR(128) NOT NULL DEFAULT 'not_flag';</span>
+<a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a><span class="s2">ALTER TABLE FLAG_TABLE RENAME </span><span class="nv">$FLAG_TABLE</span><span class="s2">;</span>
+<a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a><span class="s2">INSERT INTO </span><span class="nv">$INSERT_FLAG</span><span class="s2"> VALUES('</span><span class="nv">$INSERT_FLAG</span><span class="s2">');"</span>
+<a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a>
+<a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a><span class="nb">exec</span><span class="w"> </span><span class="s2">"</span><span class="nv">$@</span><span class="s2">"</span>
+</code></pre></div>
+    而您需要清楚的是:
+</li>
+<li>src目录下的文件会被复制到容器的Web服务工作目录(/var/www/html)中，所以您需要把您的题目源码放置到src目录下</li>
+<li>Dockerfile 中大部分内容无需修改，您只需要关心 <code>mysqladmin -uroot password '123456'</code>这一步是在设置mysql密码，请注意这里的密码最好不要使用默认弱口令，当然同时也要注意密码要与您的源码中的密码对齐，否则会导致数据库连接失败。</li>
+<li><code>mysql -e "source /var/db.sql;"</code> 这一步是在利用db.sql文件(默认为空)初始化数据库，您需要将您的数据库初始化脚本放置到db.sql中，我们强烈不推荐您在这里直接写入sql语句。</li>
+<li>最后动态flag的初始化在 docker-entrypoint.sh 文件中完成，如果您在初始化数据库的时候修改了密码 请在该部分同步修改</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>除非您知道您在做什么，否则不要随意修改该部分所提到能够修改内容以外的所以代码，否则可能会导致题目无法正常运行。</p>
+</div>
+<h3 id="_4">镜像推送<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<p>按照对应步骤修改完Dockerfile后，您需要在该模板的根目录下执行以下命令来构建本地镜像:
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>imagesName:Tag<span class="w"> </span>.
+</code></pre></div>
+一般我们需要将镜像推送至dockerhub，这样我们才能在比赛中使用。
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker<span class="w"> </span>tag<span class="w"> </span>imagesName:Tag<span class="w"> </span>dockerhubUserName/imagesName:Tag
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>docker<span class="w"> </span>push<span class="w"> </span>dockerhubUserName/imagesName:Tag
+</code></pre></div>
+当然您也可以在构建的时候直接指定dockerhub的用户名和镜像名，这样就不需要再次打tag了。
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>dockerhubUserName/imagesName:Tag<span class="w"> </span>.
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>docker<span class="w"> </span>push<span class="w"> </span>dockerhubUserName/imagesName:Tag
+</code></pre></div>
+<h3 id="_5">题目部署<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<p>下面我们以NSSCTF平台为例，介绍如何在平台上部署一个动态容器的题目。</p>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>同样，在这里，我们默认您:<br>
+    拥有NSSCTF平台账号，并且您拥有您团队的管理资格，如果有疑问可以阅读<a href="../../hc-appendix/NSSCTF_Usage/">NSS平台使用指南</a>.</p>
+</div>
+<p>在战队标签中 点击 <strong>我的战队</strong> 在管理标签处悬停，选择 <strong>新增题目</strong> 即可看到如下界面。</p>
+<p><img alt="image-20230714121347149" src="../images/makeChallenge/image-20230714121347149.png"></p>
+<p><strong>您需要注意的地方 已在图中标出:</strong>
+<img alt="image-20230714122523157" src="../images/makeChallenge/image-20230714122523157.png"></p>
+<p>对于本Demo题目，我们填写的内容如下:</p>
+<ul>
+<li>题目名称: ez_SQL</li>
+<li>题目描述: 很基础的SQL注入，就是括号有点多(Flag位于数据库中)</li>
+<li>转发端口: 80</li>
+<li>镜像名称: probius/litctf2023:Web_SQL
+    如果您打包时的镜像名为: <code>dockerhubUserName/imagesName:Tag</code> 那么这里就填写 <code>dockerhubUserName/imagesName:Tag</code>
+    以本镜像为例 我们打包使用的指令为 <code>docker build -t probius/litctf2023:Web_SQL .</code> 所以这里填写 <code>probius/litctf2023:Web_SQL</code></li>
+<li>Flag类型: 动态Flag</li>
+</ul>
+<p>至此，便完成了Web题目命题的几乎所有流程，当然在编写文档时我们省略了一些无关紧要的步骤，如果您有疑问，可以在下面的评论区提出，或者提交issue，如果您对镜像模板有使用上的问题，或者您想要帮助我们完善模板，欢迎在项目<a href="https://github.com/CTF-Archives/ctf-docker-template">Ctf-Docker-Template</a> 
+【<a href="https://github.com/CTF-Archives/ctf-docker-template">https://github.com/CTF-Archives/ctf-docker-template</a>】中提交issue或者PR。</p>
+<h2 id="pwn">PWN题目<a class="headerlink" href="#pwn" title="Permanent link">¶</a></h2>
+<h3 id="_6">前置知识<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<h3 id="_7">编写题目源码/编译二进制文件<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<h3 id="_8">题目封装<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
+<h3 id="_9">镜像推送<a class="headerlink" href="#_9" title="Permanent link">¶</a></h3>
+<p>(该部分参考Web部分的镜像推送 我们不再赘述)</p>
+<h2 id="pythonnc">基于Python的NC题目<a class="headerlink" href="#pythonnc" title="Permanent link">¶</a></h2></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+
+<!-- Link to next page -->
+
+</nav>
+
+<!-- Comment system -->
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#web">Web题目</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_1">前置知识</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_2">编写题目源码</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">题目封装</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_4">镜像推送</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">题目部署</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#pwn">PWN题目</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_6">前置知识</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_7">编写题目源码/编译二进制文件</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_8">题目封装</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_9">镜像推送</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#pythonnc">基于Python的NC题目</a>
+        
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

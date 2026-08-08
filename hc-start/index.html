@@ -1,0 +1,1448 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>快速开始 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../shell/shell.css">
+  <link rel="stylesheet" href="../shell/shell-docs.css">
+  <link rel="stylesheet" href="../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../shell/search.js"></script>
+  <script src="../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single on" href="./"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../hc-env/">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-env/CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-env/Docker_On_Linux/">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-env/Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-misc/Archivefile/">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-misc/industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-web/php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-web/ssrf/">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-web/php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-web/rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-crypto/Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-pwn/Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-appendix/CTFevent/">CTF赛事</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="_1">快速开始<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<iframe src="//player.bilibili.com/player.html?aid=398221068&amp;bvid=BV13o4y1x7L2&amp;cid=1117061033&amp;high_quality=1" width="100%" height="360" frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"> </iframe>
+
+<h3 id="x">💖欢迎来到新手村x<a class="headerlink" href="#x" title="Permanent link">¶</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">注意</p>
+<p>在学习CTF前我们希望您具备一些CS领域的基础知识，我们推荐您先阅读 JANlittle师傅写的CS入门资料 ( <a href="https://xp0int-team.feishu.cn/wiki/wikcnnWbXXGELt1xHkyBhvdQKrh">点此跳转</a> ) 大致具备CS领域的基本技能后再开始CTF的学习。</p>
+</div>
+<p>这篇教程会引导你大致的了解CTF，并且尝试教会你如何入门CTF。 </p>
+<p>当然，文档可能不是那么完善，如果你觉得文档缺少什么东西或者有什么不足的地方，欢迎在下方的评论区留言，我会尽快回复。</p>
+<p>在开始之前，我想你可能会有些许疑惑，希望下面的 Q&amp;A 能够帮助到你。</p>
+<h3 id="qa">常见问题 Q&amp;A<a class="headerlink" href="#qa" title="Permanent link">¶</a></h3>
+<h4 id="qctf">Q：什么是CTF<a class="headerlink" href="#qctf" title="Permanent link">¶</a></h4>
+<p><strong>A</strong>：「<strong>CTF Capture The Flag</strong>」中文一般译作夺旗赛，在网络安全领域中指的是网络安全技术人员之间进行技术竞技的一种比赛形式。CTF起源于1996年DEFCON全球黑客大会，以代替之前黑客们通过相发起真实攻击进行技术比拼的方式；其将安全相关的知识点抽象出来并加入到题目中，我们通过对知识点的理解认知，具体地进行实践来攻克题目。</p>
+<h4 id="qflag"><strong>Q：什么是Flag？</strong><a class="headerlink" href="#qflag" title="Permanent link">¶</a></h4>
+<p><strong>A</strong>：参赛团队之间通过进行攻防对抗、程序分析等形式，率先从主办方给出的比赛环境中得到一串具有一定格式的字符串或其他内容，并将其提交给主办方，从而夺得分数。为了方便称呼，我们把这样的内容称之为“Flag”。</p>
+<h4 id="qctf_1">Q：CTF竞赛模式？<a class="headerlink" href="#qctf_1" title="Permanent link">¶</a></h4>
+<p><strong>A</strong>：CTF有个人赛和团队赛，在主流比赛中多为团队赛；</p>
+<p>CTF赛制分多种，国内常见的为「 <strong>解题模式 Jeopardy</strong> 」「 <strong>攻防模式 | AWD (Attack With Defense)</strong> 」「 <strong>静态攻防 AWDP (Attack With Defence Plus)</strong> 」一般分为线上线下两个阶段，线上通常采用 <strong>解题模式</strong> ，线下通常为 <strong>CTF +( 理论 )+ AWD/AWDP</strong> 模式，具体看主办方安排。</p>
+<ul>
+<li>
+<p>「 <strong>解题模式 Jeopardy</strong> 」目前大多数国内外CTF比赛的主流形式，选手自由组队参赛。题目通常在比赛过程中陆续放出。解出一道题目后，提交题目对应的flag即可得分，比赛结束时分高者获胜。  </p>
+</li>
+<li>
+<p>「 <strong>攻防模式 | AWD (Attack With Defense)</strong> 」通常为现场比赛，多数CTF决赛的比赛形式，选手自由组队参赛。每个队伍都有自己的gamebox，其上运行着一些带有漏洞的服务。参赛战队需要找到漏洞对其他队伍gamebox发起攻击，也需要通过patch服务来加固自己的gamebox。相比于解题模式，时间更短，比赛中更注重临场反应和解题速度，需要能够快速攻击目标主机的权限，考察团队多方面的综合安全能力。</p>
+</li>
+<li>
+<p>「 <strong>静态攻防 AWDP (Attack With Defence Plus)</strong> 」解题+加固赛，相比AWD赛制取消了gamebox，主办方会根据出题人设置的脚本判断提交的patch是否有效（攻击则和解题模式类似），参赛队伍无法直接攻击其他队伍。每个回合，参赛队伍都会根据自己攻击和加固成功的题目（以及相应题目的解题队伍数）来得分，以累积得分作为排行依据。</p>
+</li>
+</ul>
+<div class="admonition question">
+<p class="admonition-title">存有疑惑？</p>
+<p>没关系，<del>我们下面还有更迷糊的x</del> 暂时了解就好啦，在CTF中，我们一般接触的最多的就是「 <strong>解题模式 Jeopardy</strong> 」。</p>
+</div>
+<h4 id="qctf_2">Q：CTF的竞赛方向？<a class="headerlink" href="#qctf_2" title="Permanent link">¶</a></h4>
+<p><strong>A</strong>：由于CTF知识面很广，一个人不可能面面俱到，所以选手们通常都会选择一个自己喜欢的方向深入研究，，通常分为五个方向:<strong>MISC</strong>、<strong>CRYPTO</strong>、<strong>WEB</strong>、<strong>REVERSE</strong>、<strong>PWN</strong>：</p>
+<ul>
+<li>「 <strong>杂项 MISC</strong> 」安全杂项涉及到古典密码学、编码、隐写术、电子取证、数据分析等广度极高的安全手段及利用方法，选手需要确定手段或者方法，反向的去破译取证从而拿到flag，MISC是CTF比赛中广度最高的方向，需要各个方向都有涉猎。 <em>——嗯？题不知道丢哪？没事丢杂项就好！</em></li>
+<li>「 <strong>密码学 CRYPTO</strong> 」密码学简单讲就古典密码和现代密码，当然大多数古典密码的题目目前都被划分到MISC中，目前的密码学反而更偏向现代密码学，常出现分组密码、流密码和公钥密码体制的考察，对初等数学、基本的数论有一定需求。选手通常被给予一个加密程序，抹去明文之后留下的加密过程和输出，要求选手通过密码体制的弱点来还原flag。 ——<em>听说Oi爷又AK了！</em></li>
+<li>「 <strong>网络攻防 WEB</strong> 」着重于Web应用程序，框架，浏览器以及各类Web服务器的安全问题；挖掘/利用/研究各类Web系漏洞，探究其形成原理、利用方式及修补方案。题目常见的漏洞类型包括注入、XSS、文件包含、代码执行、上传、SSRF等，选手通过漏洞直接或者间接拿到shell或者得到某些关键文件从而得到Flag。 ——<em>汪汪汪</em></li>
+<li>「 <strong>逆向工程 Reverse Engineering</strong> 」研究各类操作系统，编译器，虚拟机的底层架构，以Windows和Linux为平台，学习可执行程序的逆向分析技术，如软件调试与破解，对已经编译完成的可执行文件进行分析，研究程序的行为和算法，然后以此为依据，计算出出题人想隐藏的flag ——<em>逆��</em></li>
+<li>「 <strong>二进制漏洞利用 Pwn</strong> 」Pwn在安全领域是「攻破」的意思。主要研究程序漏洞利用技术，例如栈溢出、堆管理器的漏洞利用和其他高阶技巧；挖掘和分析各类基于编译型语言的漏洞。二进制攻击涉及到栈溢出、堆溢出、格式化字符串漏洞等二进制漏洞，选手需要借助这些漏洞获取计算机权限，从而拿到flag ——<em>PWN!</em>(指声音</li>
+<li><strong>SOMETHING NEW</strong> 随着计算机技术的发展，也有一些新的方向如 「 <strong>区块链 Blockchain</strong> 」「 <strong>AI安全</strong> 」「 <strong>物联网 IoT</strong> 」等的加入。这些内容我们会在进阶文档中更新。</li>
+</ul>
+<h4 id="q">Q：我只是个萌新，为什么他们叫我师傅？<a class="headerlink" href="#q" title="Permanent link">¶</a></h4>
+<p><strong>A</strong>：CTF圈子中，CTFer们通常以"师傅"相互称呼。</p>
+<h4 id="qwriteup">Q：什么是WriteUp？<a class="headerlink" href="#qwriteup" title="Permanent link">¶</a></h4>
+<p><strong>A</strong>：又称作WP，是记录CTF比赛中解题过程的文章，通常包含题目描述、解题思路、解题过程、源码分析、脚本分析等内容。当然你也可以简单理解为解题报告——题解。</p>
+<h4 id="_2">其他名词解释<a class="headerlink" href="#_2" title="Permanent link">¶</a></h4>
+<ul>
+<li>
+<p><strong>一把梭</strong> 代指一类解题过程或者方法，一般指将题目中给出的对应的附件 / 代码 / 密文等，直接丢到某个工具或者网站上，就能得到flag的解题方法。  </p>
+</li>
+<li>
+<p><strong>套娃</strong> 一是指一些题目比如说加密题，嵌套了多层的加密，需要多次解密才能得到flag，即一道题中可能涉及到多个知识点的考察； 二是带有一定贬义意义，通常指出题人只是为了出题而出题，单纯的、一味的、向题目中叠加tricks，导致本来就不新颖的题目还变得更加复杂，使得题目的难度无意义的变高。</p>
+</li>
+</ul>
+<h4 id="qctf_3">Q：学习CTF有什么要求么？<a class="headerlink" href="#qctf_3" title="Permanent link">¶</a></h4>
+<p><strong>A</strong>：<strong>信息检索能力</strong> 和 <strong>学习能力</strong> 这两者即可</p>
+<p>说人话就是，会用搜索引擎，知道怎么检索信息，知道怎么验证信息正确性，知道怎么在垃圾场里面翻有用信息；然后就是拿到信息之后，快速学习，知道怎么运用知识点。</p>
+<p>至少，别人的解题报告(一般我们称之为WriteUp 简称 WP)你得看得懂，你会看着跟着复现。</p>
+<h3 id="_3">从哪开始？<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<div class="admonition success">
+<p class="admonition-title">好耶</p>
+<p><del>😆好了，你已经知道1+1=2了，下面来证明一下哥德巴赫猜想吧</del>  </p>
+</div>
+<div class="admonition question">
+<p class="admonition-title"><del>如何推开CTF的大门</del></p>
+<p><del>推门啊，手放上去不就行了x？？</del>     </p>
+</div>
+<p>如果你看着五个方向思考良久，一下子不太确定自己的方向，这里提供一些小参考，你可以通过下面两个方向先熟悉一下CTF的一些流程，找找——嗯，感觉~</p>
+<h4 id="web">「 <strong>网络攻防 WEB</strong> 」<a class="headerlink" href="#web" title="Permanent link">¶</a></h4>
+<ul>
+<li>在传统的CTF线上比赛中，Web类题目是主要的题型之一。</li>
+<li>相较于二进制、逆向等类型的题目，参赛者不需掌握系统底层知识;</li>
+<li>相较于密码学、以及一些杂项问题，不需具特别强的编程能力，故入门较为容易。</li>
+</ul>
+<h4 id="misc">「 <strong>杂项 MISC</strong> 」<a class="headerlink" href="#misc" title="Permanent link">¶</a></h4>
+<ul>
+<li>MISC具有极大的趣味性；  </li>
+<li>MISC的入门难度包含维度很广但都很简单，非常适合用来快速熟悉CTF的比赛模式和规则。  </li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>注意入门方向是为了熟悉CTF比赛模式和规则，并不一定决定你最终方向。在熟悉了CTF大致的形式啊、规则啊什么的之后，就可以自由探索自己喜欢的方向了x</p>
+</div>
+<h3 id="_4">练习平台 &amp; 使用指南<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<h4 id="_5">比赛平台<a class="headerlink" href="#_5" title="Permanent link">¶</a></h4>
+<p>国内目前几大主流平台：(排名不分先后)</p>
+<p><strong>NSSCTF</strong> <a href="https://www.nssctf.cn/index">https://www.nssctf.cn/index</a> (多功能Xenny。适合一人单刷，也适合团队训练。<strong>更详细的可以参考 <a href="../hc-appendix/NSSCTF_Usage/">NSSCTF平台食用指南</a></strong>)</p>
+<p><strong>BUUCTF</strong> <a href="https://buuoj.cn/">https://buuoj.cn/</a> </p>
+<p><strong>CTFshow</strong> <a href="https://ctf.show/">https://ctf.show/</a> (MISC和Web的入门题单很赞)</p>
+<p><strong>攻防世界</strong> <a href="https://adworld.xctf.org.cn/home/index">https://adworld.xctf.org.cn/home/index</a></p>
+<p><strong>青少年CTF</strong> <a href="https://www.qsnctf.com/">https://www.qsnctf.com/</a></p>
+<p><strong>CTFhub</strong> <a href="https://www.ctfhub.com/#/index">https://www.ctfhub.com/#/index</a> (技能树确实不错，但是更新慢)</p>
+<p><strong>Bugku</strong> <a href="https://ctf.bugku.com/">https://ctf.bugku.com/</a> (AWD做的比较好)</p>
+<p><strong>pwn.college</strong> <a href="https://pwn.college/">pwn.college</a>(当然如果您一来就相中了PWN的话，这个平台也是不错的选择)</p>
+<div class="admonition note">
+<p class="admonition-title">探姬の唠叨</p>
+<p>目前有一个好处就是，基本上每个平台的入门题目，直接搜索就能找到足够详细的WP，只要你会读文档，会跟着复现，并且在这个过程中持续学习，那么入门CTF对你来讲也就不会是什么难事x</p>
+<p>如果看到这里，你已经有了大致的想法，那么便可以去尝试一下了~</p>
+</div>
+<div class="admonition quote">
+<p class="admonition-title">小剧场</p>
+<p><em>"不必等待WP的降临，如果没有WP，我便是WP" —— 鲁迅</em><br>
+"鲁迅说过这话？"<br>
+"鲁迅什么话没说过？"</p>
+</div>
+<h4 id="_6">刷题指南<a class="headerlink" href="#_6" title="Permanent link">¶</a></h4>
+<div class="admonition quote">
+<p class="admonition-title">小剧场</p>
+<p>"凭什么只能指南？你这是方向歧视！"<br>
+"……"</p>
+</div>
+<p>下面我们以NSSCTF为例，简单介绍一下做题流程，和题目类型。</p>
+<p><strong>更详细的可以参考 <a href="../hc-appendix/NSSCTF_Usage/">NSSCTF平台食用指南</a></strong></p>
+<p><img alt="Untitled" src="https://user-images.githubusercontent.com/41804496/232275694-5411c38e-1c80-4fb0-9eee-5d3c9d0fb94f.png"></p>
+<p>CTF题目开启的基本形式如下：</p>
+<ul>
+<li>
+<p>附件 —— 通常为压缩包，每类题型都可能有，可能直接就是题目本身，也可能是题目涉及到的源码等等</p>
+</li>
+<li>
+<p>容器 (常见于Web Pwn，也有可能见于 Misc Crypto ……)</p>
+<ul>
+<li>
+<p>Web靶机 —— 通常为 <code>ip:port / domain:port</code></p>
+<p><img alt="Untitled 1" src="https://user-images.githubusercontent.com/41804496/232275726-38bbedbe-02dc-4a43-b2fd-6a460bb3159c.png"></p>
+<p>eg：<code>1.11.45.14:1919</code> / <code>node3.anna.nssctf.cn:28622</code> </p>
+<p>这样的靶机可以直接在浏览器中访问：</p>
+<p><img alt="Untitled 2" src="https://user-images.githubusercontent.com/41804496/232275794-9868dbdd-b8cf-4e9b-baa3-20a3209c8f63.png"></p>
+</li>
+<li>
+<p>nc 靶机 给出的形式和Web靶机类似：<code>ip:port</code> / <code>domain:port</code></p>
+<p>也有可能没有<code>:</code> <code>ip port</code> / <code>domain port</code> </p>
+<p>也有部分靶机给出时会明显带上nc ：<code>nc ip port</code> / <code>nc domain port</code> </p>
+<p><img alt="Untitled 3" src="https://user-images.githubusercontent.com/41804496/232275821-840e6c52-7fd3-4eb0-970f-21bef3ba64c6.png"></p>
+<p>这样的靶机不能直接在浏览器中访问，需要使用nc工具连接，通常在Linux系统中接入，或者使用某些工具进行交互，如 <code>pwntools</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>当然也有可能附件和靶机都有。比如 Web 涉及到源码审计的时候，也有的nc交互给nc后台的脚本等各种类似的情况</p>
+<p><img alt="Untitled 4" src="https://user-images.githubusercontent.com/41804496/232275846-4bbe56f9-37ea-4912-bba1-9f3fa40d6a5c.png"></p>
+</li>
+</ul>
+<h3 id="_7">新手引导<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p>与其他比赛不同，CTF似乎没有一条能够一镜到底的通路，更多的还是需要探索适合自己的。<br>
+不过一些基础题单倒是比较确定，可以尝试看看x</p>
+<p>下面我们会给出每个方向大致的内容、一些工具和Tricks以及入门路线和基础题单</p>
+<p><strong>希望你在入门中 培养 和 强化自己的学习能力，找到属于自己的路。</strong></p>
+<h4 id="misc_1">「 杂项 MISC 」<a class="headerlink" href="#misc_1" title="Permanent link">¶</a></h4>
+<p><strong>前置知识</strong>:</p>
+<div class="highlight"><pre><span></span><code>知道什么是CTF、知道什么是Flag就行了
+</code></pre></div>
+<p><strong>基础内容 / 路线</strong>:  </p>
+<ul>
+<li>OSINT<br>
+    「 开源网络情报 OSINT(Open Source Intelligence) 」一种情报搜集手段，从各种公开的信息资源中寻找和获取有价值的情报，一般用于考察选手的信息搜集能力，也有可能会考察选手的逻辑推理能力。  </li>
+<li>编码转换 / 古典密码   </li>
+<li>隐写: 图片隐写、音频隐写、视频隐写  </li>
+<li>取证: 流量分析、磁盘取证、内存取证、日志分析取证  </li>
+</ul>
+<p><strong>入门需要的工具和Tricks</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>该部分只提供基础工具,更多工具可以到环境配置章节中的<a href="../hc-env/CTFtool/">工具合集</a>查看，在遇到对应题目的时候可在合集中自行查找，到一定程度之后可以尝试自己复现轮子。</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>项目名称</th>
+<th>Usage</th>
+<th>项目地址</th>
+<th>文档</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Python</td>
+<td>MISC方向中用途最广的语言。</td>
+<td><a href="https://www.python.org/">官网</a></td>
+<td>/</td>
+</tr>
+<tr>
+<td>CyberChef</td>
+<td>近乎全能的编码解码工具。</td>
+<td><a href="https://cyberchef.org/">官网</a><br><a href="https://ctf.mzy0.com/CyberChef3/">国内中文镜像站</a></td>
+<td>/</td>
+</tr>
+<tr>
+<td>010 Editor</td>
+<td>专业的文本编辑器和16进制编辑器，可通过加载模块脚本，解析文件结构。</td>
+<td><a href="http://www.010editor.com/">官网</a></td>
+<td>/</td>
+</tr>
+<tr>
+<td>QR Research</td>
+<td>专业的二维码扫描识别软件，支持多个纠错等级，掩码选项(已停止维护)。</td>
+<td>/</td>
+<td>/</td>
+</tr>
+<tr>
+<td>Stegsolve</td>
+<td>图像分析工具。</td>
+<td><a href="https://github.com/Giotino/stegsolve">GitHub</a></td>
+<td>/</td>
+</tr>
+<tr>
+<td>Wireshark</td>
+<td>流量分析取证软件。</td>
+<td><a href="https://www.wireshark.org/">官网</a></td>
+<td>/</td>
+</tr>
+</tbody>
+</table>
+<p>方便快速获得题感的一把梭工具：</p>
+<ul>
+<li><a href="http://1o1o.xyz/">随波逐流工作室 随波逐流CTF编码工具 (1o1o.xyz)</a> <strong>随波逐流一把梭</strong></li>
+<li><a href="https://www.bilibili.com/video/BV1ho4y1s7UG">https://www.bilibili.com/video/BV1ho4y1s7UG</a> <strong>PuzzleSolver一把梭</strong></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">给MISC选手的忠告</p>
+<p>MISC是一个对编程能力要求比较高的方向，不过大多数考点的固定衍生出比较多的"轮子"，当然轮子减少手动操作，确实是好东西，但是容易产生一些弊端，因为跳过了手动操作所以不懂原理也能梭题目，可能会导致选手略过本来应该学的原理，手动会做之后再碰到了用工具减少操作是完全没问题的，即便没有这些整合工具，用现成脚本说到底本质也是一样的。</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">题目清单</p>
+<ul>
+<li><a href="https://ctf.show/">CTFshow</a> 菜狗杯的MISC部分 配合WP 食用 <a href="https://ctf-show.feishu.cn/docx/UpC6dtDqgo7VuoxXlcvcLwzKnqh">菜狗杯WriteUP</a>  </li>
+<li>CTFshow MISC入门  </li>
+<li>BUUCTF MISC部分</li>
+</ul>
+</div>
+<p>当然其他平台也行，注意你的目的是 <strong>学到东西</strong> ，而不是看刷题数量</p>
+<h4 id="web_1">「 <strong>网络攻防 WEB</strong> 」<a class="headerlink" href="#web_1" title="Permanent link">¶</a></h4>
+<p><strong>前置知识</strong>:
+    看懂网页就行  </p>
+<p><strong>基础内容 / 路线</strong>:
+考点基本围绕几大类型的漏洞：</p>
+<p><strong>泄露 | 注入 | 序列化&amp;反序列化 | 文件包含 | 文件上传 | 命令执行 | XSS | SSRF | 逃逸</strong></p>
+<p>如果你想了解更多或者前沿，可以参考「 <strong>开放式Web应用程序安全项目 OWASP(Open Web Application Security Project)</strong> 」  计划</p>
+<p><strong>Web方向涉及的技术栈以及大致认知路线</strong>: 
+<strong>JS</strong>(JavaScript) → <strong>PHP</strong>(语言基础,语言特性) → <strong>PHP框架</strong>(例如ThinkPHP) → <strong>Python</strong> <strong>Java</strong> → <strong>Web框架</strong> 例如Flask(Python) Springboot(Java) Node.js(JavaScript) ....</p>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>与开发不同，您无需完整掌握语言再去做题，在了解语言基础后，要做的就是通过题目去学习语言的特性，例如PHP的弱类型特性，Python的反序列化等等，这样的学习方式会更加高效。</p>
+</div>
+<p><strong>入门需要的工具和Tricks</strong></p>
+<ul>
+<li>工具</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">项目名称</th>
+<th>Usage</th>
+<th>项目地址</th>
+<th>使用文档</th>
+<th>其他</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">hackbar</td>
+<td>浏览器插件，能够在页面上直接完成 请求/响应内容编辑，完成各种包括但是不限于伪造的工作。</td>
+<td><a href="https://chrome.google.com/webstore/detail/ginpbkfigcoaokgflihfhhmglmbchinc">谷歌商店</a><br><a href="https://github.com/Mr-xn/hackbar2.1.3">GitHub</a></td>
+<td>/</td>
+<td>/</td>
+</tr>
+<tr>
+<td style="text-align: left;">Proxy SwitchyOmega</td>
+<td>代理管理软件，方便一个浏览器多个代理端口的切换。</td>
+<td><a href="https://github.com/FelisCatus/SwitchyOmega">GitHub</a></td>
+<td>/</td>
+<td>/</td>
+</tr>
+<tr>
+<td style="text-align: left;">Wappalyzer</td>
+<td>页面技术识别软件，方便快速定位页面的框架技术等信息</td>
+<td><a href="https://www.wappalyzer.com/">官网</a></td>
+<td>/</td>
+<td>/</td>
+</tr>
+<tr>
+<td style="text-align: left;">Burp Suite</td>
+<td>代理抓包软件，用于Web应用程序的渗透测试和攻击</td>
+<td><a href="https://portswigger.net/burp">官网</a></td>
+<td>/</td>
+<td>/</td>
+</tr>
+<tr>
+<td style="text-align: left;">Antsword</td>
+<td>开源Webshell管理工具</td>
+<td><a href="https://github.com/AntSwordProject/antSword">GitHub</a></td>
+<td>/</td>
+<td>/</td>
+</tr>
+<tr>
+<td style="text-align: left;">dirsearch</td>
+<td>目录扫描工具</td>
+<td><a href="https://github.com/maurosoria/dirsearch">GitHub</a></td>
+<td>/</td>
+<td>/</td>
+</tr>
+<tr>
+<td style="text-align: left;">SQLMap</td>
+<td>自动化的SQL注入利用工具</td>
+<td><a href="https://github.com/sqlmapproject/sqlmap">GitHub</a></td>
+<td>/</td>
+<td>/</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>稍微进阶一点，你可能需要一些 <strong>Linux 基础</strong> —— 因为服务器主流系统都是Linux家族，大多数web服务也都挂载在Linux上面 </p>
+<p>同时 CTF 中所用的容器也是基于 Linux</p>
+<p>有些题目 / 漏洞 涉及到的 RCE 也依赖于Linux命令</p>
+<p>同时，你可能需要会简单的使用Docker，用于本地环境的搭建，便于漏洞复现或者本地调试。</p>
+<p>Web 入门不会太难，但是和MISC一样，Web 是一个维度很广的方向，所以你需要在做题过程中不断地学习、不断的去了解 Web 这一个庞大的世界。</p>
+<div class="admonition example">
+<p class="admonition-title">题目清单</p>
+<p><a href="https://ctf.show/">CTFshow</a> 菜狗杯的Web部分(选做即可 不要死磕 ) 配合WP 食用 <a href="https://ctf-show.feishu.cn/docx/UpC6dtDqgo7VuoxXlcvcLwzKnqh">菜狗杯WriteUP</a></p>
+<p><a href="https://ctf.show/">CTFshow</a> Web入门</p>
+<p><a href="https://www.nssctf.cn/">NSSCTF</a> Web题目 前期建议结合WP 和 tag刷题</p>
+<p><a href="https://buuoj.cn/">BUUCTF</a> / <a href="https://www.qsnctf.com/">QsnCTF</a> 几大经典靶场 —— <strong>Upload-Labs sqli-labs PikaChu Web-DVWA  XSS-Lab……</strong></p>
+</div>
+<h4 id="crypto">「 <strong>密码学 CRYPTO</strong> 」<a class="headerlink" href="#crypto" title="Permanent link">¶</a></h4>
+<p>前面有说到，密码学主要是两个大类：<strong>古典密码学</strong> 和 <strong>现代密码学</strong></p>
+<p>目前比赛古典密码学多在MISC中考察，如果有涉及到密码学方向的古典密码学，那可能多半是变式 —— 即在古典密码原有的基础或者基于古典密码 置换 和 代换 基本原理创造出的新密码</p>
+<p>而绝大部分密码学考察都为现代密码</p>
+<p>古典密码参考：</p>
+<p><img alt="Untitled 7" src="https://user-images.githubusercontent.com/41804496/232276044-c0e54a60-408d-4c9c-8b1b-5132069ca465.png"></p>
+<p>密码学入门主要以现代密码学为主。</p>
+<p>※ <strong>入门需要的工具和Tricks</strong></p>
+<p>Python3环境</p>
+<p>做题会遇到对应的模组，目前都能搜索到相关教程</p>
+<p><strong>【AD / 付费】</strong> <strong>推荐 NSSCTF 平台上面 Xenny 老师 工坊密码学系列教程</strong></p>
+<p><img alt="image-20230628231437191" src="https://nssctf.wdf.ink/img/WDTJ/202306282314421.png"></p>
+<p>※ <strong>题目尝试：</strong></p>
+<ul>
+<li>NSS 密码学的题目部分</li>
+<li>BUU 密码学部分</li>
+</ul>
+<p>注意结合Wp时，因为现代密码学需要一定的数论基础，请不要为了解题而解题，在一些情况下你需要自行完成数学推导，最好是在完成数学推导后通过推导自行编写程序完成题目。</p>
+<h4 id="reverse-engineering">「 <strong>逆向工程 Reverse Engineering</strong> 」<a class="headerlink" href="#reverse-engineering" title="Permanent link">¶</a></h4>
+<p>目前，CTF中的逆向工程题目形式多数为：用户输入字符串→程序进行check。该过程会进行一系列的校验过程或者说算法，通常能通过校验的字符串便是flag。</p>
+<p>所以针对校验过程，有可能是现有的一些加密解密算法，也有可能是出题人自研x</p>
+<p>当然，也有许多“游戏性质的题目”，比如迷宫x</p>
+<p>下面是你需要了解的东西；</p>
+<ul>
+<li>可执⾏文件</li>
+<li>C/C++ 基础<ul>
+<li>“不要学会了基础才去学基础能做什么” 在你掌握了大部分内容就可以开始实践了，这时候打开你的 OD 就可以开始对程序进行分析了，我们鼓励在实践中学习</li>
+</ul>
+</li>
+<li>汇编语言基础<ul>
+<li>寄存器、内存、寻址</li>
+<li>x86/x64 汇编</li>
+<li>反汇编、反汇编算法</li>
+<li>调⽤约定</li>
+<li>变量、区分处理局部变量</li>
+</ul>
+</li>
+</ul>
+<p>※ <strong>入门需要的工具和Tricks</strong></p>
+<ul>
+<li>IDA Pro (注意：这里尽量选择高版本的，⽽且不要追求汉化)</li>
+<li>OllyDbg, x64dbg</li>
+<li>GUN Binary Utilities</li>
+<li>GDB 调试器</li>
+</ul>
+<p>※ <strong>题目尝试：</strong></p>
+<ul>
+<li><a href="https://www.nssctf.cn/">NSSCTF</a> 中 <a href="https://www.nssctf.cn/contest/56/">HNCTF2022</a> 请前往题库中选中Re标签搜索HNCTF</li>
+</ul>
+<p>刷题时可配合 <a href="https://dqgom7v7dl.feishu.cn/docx/doxcnFESSimJ4UEvZK9ja8ZnArg">WriteUp</a> 食用 <a href="https://dqgom7v7dl.feishu.cn/docx/doxcnFESSimJ4UEvZK9ja8ZnArg">‌⁢⁣‌⁤HNCTF REVERSE Writeup - 飞书云文档 (feishu.cn)</a></p>
+<p><img alt="Untitled 11" src="https://user-images.githubusercontent.com/41804496/232276161-36cd3589-3c6b-49e6-85f6-5b04e76ed50f.png"></p>
+<ul>
+<li>
+<p>然后可以尝试NSS其他逆向题目</p>
+</li>
+<li>
+<p>也可以是BUUCTF对应逆向板块的题目</p>
+</li>
+</ul>
+<p>※ <strong>友情链接</strong>：<strong><a href="https://www.52pojie.cn/">吾爱破解 - LCG - LSG|安卓破解|病毒分析|www.52pojie.cn</a></strong></p>
+<h4 id="pwn">「 <strong>二进制漏洞利用 Pwn</strong> 」<a class="headerlink" href="#pwn" title="Permanent link">¶</a></h4>
+<p>【不是AD】强烈推荐 <a href="https://www.yuque.com/cyberangel">Cyberangel师傅</a> 的glibc PWN、IoT、angr等文档系列，直接带你从入门到精通！！！</p>
+<p>PWN主要考察栈溢出、堆溢出、格式化字符串漏洞等常规的二进制漏洞，选手需要借助这些漏洞获取计算机权限，从而拿到flag。</p>
+<p>之前也介绍过PWN靶机，一般后台为 C/CPP 所写的交互程序，我们常用nc连接，或者使用pwntools工具来建立远程连接。</p>
+<p>那么你会遇到什么？</p>
+<ul>
+<li>栈溢出Ret2xxx系列各种ROP</li>
+<li>格式化字符串</li>
+<li>堆的各种漏洞</li>
+<li>IO文件劫持和利用</li>
+<li>整数溢出、type溢出</li>
+<li>……</li>
+</ul>
+<p>听不懂没关系，这里只是稍微介绍下x 入门之后遇到了自然就懂了喵~🐱</p>
+<p>这里要强调的是！PWN是一门极其需要耐心的方向，入门的周期也比较长，而且直白的说：他确实需要一定天赋。</p>
+<p>入门你可能会面临和逆向类型差不多的挑战，但你的难度显然会更高：</p>
+<ul>
+<li>汇编</li>
+<li>C / C++</li>
+<li>编译原理</li>
+<li>Linux</li>
+<li>python</li>
+</ul>
+<p>※ <strong>入门需要的工具和Tricks</strong></p>
+<ul>
+<li>IDA Pro (注意：同样地，这里尽量选择高版本的，⽽且 <strong>不要追求汉化</strong> )</li>
+<li>OllyDbg, x64dbg</li>
+<li>GDB 调试</li>
+<li>pwntools</li>
+<li>推荐：Roder师傅的 Pwncli  <a href="https://github.com/RoderickChan/pwncli">https://github.com/RoderickChan/pwncli</a></li>
+<li>二进制文件分析工具：radare2、objdump等。</li>
+</ul>
+<p>这里稍微推荐一点学习资源x</p>
+<ul>
+<li><a href="https://space.bilibili.com/3461577038629345">Roder师傅</a> 的PWN训练营系列 </li>
+<li><a href="https://space.bilibili.com/489643272">星盟安全团队</a> 的PWN系列教程</li>
+<li><a href="https://www.bilibili.com/video/BV1XA411S7Xo/">芥燃斯基</a> 的无痛入门PWN系列</li>
+</ul>
+<p>※ <strong>题目尝试：</strong></p>
+<ul>
+<li>
+<p><a href="https://pwn.college/">pwn.college</a></p>
+</li>
+<li>
+<p><a href="https://pwnable.tw/">pwnable.tw</a></p>
+</li>
+<li>
+<p><a href="https://www.nssctf.cn/">NSSCTF</a> 中 <a href="https://www.nssctf.cn/contest/56/">HNCTF2022</a> 请前往题库中选中PWN标签搜索HNCTF</p>
+</li>
+</ul>
+<p>刷题时 可配合<a href="https://hxz3zo0taq.feishu.cn/docx/doxcn7rfTxf8pk2UhNexjMOLQhb">WriteUp</a>食用 <a href="https://hxz3zo0taq.feishu.cn/docx/doxcn7rfTxf8pk2UhNexjMOLQhb">‌‍⁤⁢HNCTF-PWN - 飞书云文档 (feishu.cn)</a></p>
+<ul>
+<li>NSSCTF 中其他PWN题</li>
+</ul>
+<p>※ <strong>友情链接</strong>：<strong><a href="https://bbs.kanxue.com/">看雪论坛-安全社区|安全招聘|bbs.pediy.com (kanxue.com)</a></strong> </p>
+<h2 id="_8">📡消除信息差<a class="headerlink" href="#_8" title="Permanent link">¶</a></h2>
+<p>这里提供一些团队的导航网站，或者其他的一些信息，希望能够帮助到你。  </p>
+<ul>
+<li>
+<p><strong><a href="https://ctf.mzy0.com/">CTF站点导航 | 猫捉鱼铃</a></strong></p>
+</li>
+<li>
+<p><strong><a href="https://dh.aabyss.cn/">渊龙Sec安全团队导航</a></strong></p>
+</li>
+</ul></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../hc-preface/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: 前言"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        前言
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#_1">快速开始</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#x">💖欢迎来到新手村x</a>
+        
+      </li>
+    
+      <li>
+        <a href="#qa">常见问题 Q&amp;A</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#qctf">Q：什么是CTF</a>
+        
+      </li>
+    
+      <li>
+        <a href="#qflag">Q：什么是Flag？</a>
+        
+      </li>
+    
+      <li>
+        <a href="#qctf_1">Q：CTF竞赛模式？</a>
+        
+      </li>
+    
+      <li>
+        <a href="#qctf_2">Q：CTF的竞赛方向？</a>
+        
+      </li>
+    
+      <li>
+        <a href="#q">Q：我只是个萌新，为什么他们叫我师傅？</a>
+        
+      </li>
+    
+      <li>
+        <a href="#qwriteup">Q：什么是WriteUp？</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_2">其他名词解释</a>
+        
+      </li>
+    
+      <li>
+        <a href="#qctf_3">Q：学习CTF有什么要求么？</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_3">从哪开始？</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#web">「 网络攻防 WEB 」</a>
+        
+      </li>
+    
+      <li>
+        <a href="#misc">「 杂项 MISC 」</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_4">练习平台 &amp; 使用指南</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_5">比赛平台</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_6">刷题指南</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_7">新手引导</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#misc_1">「 杂项 MISC 」</a>
+        
+      </li>
+    
+      <li>
+        <a href="#web_1">「 网络攻防 WEB 」</a>
+        
+      </li>
+    
+      <li>
+        <a href="#crypto">「 密码学 CRYPTO 」</a>
+        
+      </li>
+    
+      <li>
+        <a href="#reverse-engineering">「 逆向工程 Reverse Engineering 」</a>
+        
+      </li>
+    
+      <li>
+        <a href="#pwn">「 二进制漏洞利用 Pwn 」</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_8">📡消除信息差</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../javascripts/statis.js"></script>
+  
+    <script src="../javascripts/FullCalendar.js"></script>
+  
+    <script src="../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

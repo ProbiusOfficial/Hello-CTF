@@ -1,0 +1,1857 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>附:文件签名表 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-env/">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Docker_On_Linux/">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../Archivefile/">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../audio_stego/">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link on" href="./">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/CTFevent/">CTF赛事</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="file-signatures">File signatures<a class="headerlink" href="#file-signatures" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Hex 签名</th>
+<th>ISO 8859-1</th>
+<th>偏移</th>
+<th>扩展名</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>23 21</td>
+<td>#!</td>
+<td>0</td>
+<td></td>
+<td>用于传递给紧随其后的 shebang（#!）之后的程序的脚本或数据</td>
+</tr>
+<tr>
+<td>00 00 02 00 06 04 06 00 08 00 00 00 00 00</td>
+<td>..............</td>
+<td>0</td>
+<td>wk1</td>
+<td>Lotus 1-2-3 电子表格（版本1）文件</td>
+</tr>
+<tr>
+<td>00 00 1A 00 00 10 04 00 00 00 00 00</td>
+<td>..............</td>
+<td>0</td>
+<td>wk3</td>
+<td>Lotus 1-2-3 电子表格（版本3）文件</td>
+</tr>
+<tr>
+<td>00 00 1A 00 02 10 04 00 00 00 00 00</td>
+<td>..............</td>
+<td>0</td>
+<td>wk4</td>
+<td>wk5</td>
+</tr>
+<tr>
+<td>00 00 1A 00 05 10 04</td>
+<td>........</td>
+<td>0</td>
+<td>123</td>
+<td>Lotus 1-2-3 电子表格（版本9）文件</td>
+</tr>
+<tr>
+<td>00 00 03 F3</td>
+<td>....</td>
+<td>0</td>
+<td></td>
+<td>Amiga Hunk 可执行文件</td>
+</tr>
+<tr>
+<td>00 00 49 49 58 50 52 (小端)</td>
+<td>..IIXPR</td>
+<td>0</td>
+<td>qxd</td>
+<td>Quark Express 文档</td>
+</tr>
+<tr>
+<td>00 00 4D 4D 58 50 52 (大端)</td>
+<td>..MMXPR</td>
+<td>0</td>
+<td>qxd</td>
+<td>Quark Express 文档</td>
+</tr>
+<tr>
+<td>50 57 53 33</td>
+<td>PWS3</td>
+<td>0</td>
+<td>psafe3</td>
+<td>Password Gorilla 密码数据库</td>
+</tr>
+<tr>
+<td>D4 C3 B2 A1 (小端)</td>
+<td>ÔÃ²¡</td>
+<td>0</td>
+<td>pcap</td>
+<td>Libpcap 文件格式</td>
+</tr>
+<tr>
+<td>A1 B2 C3 D4 (大端)</td>
+<td>¡²ÃÔ</td>
+<td>0</td>
+<td>pcap</td>
+<td>Libpcap 文件格式（纳秒分辨率）</td>
+</tr>
+<tr>
+<td>0A 0D 0D 0A</td>
+<td>␊␍␍␊</td>
+<td>0</td>
+<td>pcapng</td>
+<td>PCAP Next Generation 转储文件格式</td>
+</tr>
+<tr>
+<td>ED AB EE DB</td>
+<td>í«îÛ</td>
+<td>0</td>
+<td>rpm</td>
+<td>RedHat Package Manager (RPM) 包</td>
+</tr>
+<tr>
+<td>53 51 4C 69 74 65 20 66 6F 72 6D 61 74 20 33 00</td>
+<td>SQLite format 3␀</td>
+<td>0</td>
+<td>sqlitedb</td>
+<td>SQLite 数据库</td>
+</tr>
+<tr>
+<td>53 50 30 31</td>
+<td>SP01</td>
+<td>0</td>
+<td>bin</td>
+<td>Amazon Kindle 更新包</td>
+</tr>
+<tr>
+<td>49 57 41 44</td>
+<td>IWAD</td>
+<td>0</td>
+<td>wad</td>
+<td>Doom 的主要资源文件</td>
+</tr>
+<tr>
+<td>00</td>
+<td>␀</td>
+<td>0</td>
+<td>PIC</td>
+<td>IBM Storyboard 位图文件<br>Windows 程序信息文件<br>Mac Stuffit 自解压缩存档<br>IRIS OCR 数据文件</td>
+</tr>
+<tr>
+<td>00 00 00 00 00 00 00 00</td>
+<td>␀␀␀␀␀␀␀␀</td>
+<td>11</td>
+<td>PDB</td>
+<td>PalmPilot 数据库/文档文件</td>
+</tr>
+<tr>
+<td>BE BA FE CA</td>
+<td>¾ºþÊ</td>
+<td>0</td>
+<td>DBA</td>
+<td>Palm Desktop 日历存档</td>
+</tr>
+<tr>
+<td>00 01 42 44</td>
+<td>␀␁BD</td>
+<td>0</td>
+<td>DBA</td>
+<td>Palm Desktop 待办事项存档</td>
+</tr>
+<tr>
+<td>00 01 44 54</td>
+<td>␀␁DT</td>
+<td>0</td>
+<td>TDA</td>
+<td>Palm Desktop 日历存档</td>
+</tr>
+<tr>
+<td>54 44 46 24</td>
+<td>TDF$</td>
+<td>0</td>
+<td>TDF$</td>
+<td>Telegram Desktop 文件</td>
+</tr>
+<tr>
+<td>54 46 58 44</td>
+<td>TFXD</td>
+<td>0</td>
+<td>tfxd</td>
+<td>Telegram Desktop 文件</td>
+</tr>
+<tr>
+<td>30 31 4F 52</td>
+<td>01OR</td>
+<td>0</td>
+<td>or1</td>
+<td>Oracle 7.3 数据库</td>
+</tr>
+<tr>
+<td>FD FF FF FF</td>
+<td>ýÿÿÿ</td>
+<td>0</td>
+<td>db</td>
+<td>SQLite 3 数据库</td>
+</tr>
+<tr>
+<td>4D 53 46 54 02</td>
+<td>MSFT␂</td>
+<td>512</td>
+<td>MSFT</td>
+<td>Compound 文件文档</td>
+</tr>
+<tr>
+<td>00 01 00 00 00 03 00 00</td>
+<td>␀␁␀␀␀␃␀␀</td>
+<td>0</td>
+<td>ndif</td>
+<td>Apple 包括对称差异（Binary II）文件</td>
+</tr>
+<tr>
+<td>4F 52 43 01</td>
+<td>ORC␁</td>
+<td>0</td>
+<td>orc</td>
+<td>Oracle 数据库</td>
+</tr>
+<tr>
+<td>1A 45 DF A3</td>
+<td>Eß£</td>
+<td>0</td>
+<td>ldf</td>
+<td>SQL Server 日志文件</td>
+</tr>
+<tr>
+<td>50 4B 03 04</td>
+<td>PK␃␄</td>
+<td>0</td>
+<td>zip</td>
+<td>ZIP 压缩文件</td>
+</tr>
+<tr>
+<td>50 4B 05 06</td>
+<td>PK␅␆</td>
+<td>0</td>
+<td>zip</td>
+<td>ZIP 压缩文件（带数据描述符）</td>
+</tr>
+<tr>
+<td>50 4B 07 08</td>
+<td>PK␇␈</td>
+<td>0</td>
+<td>zip</td>
+<td>ZIP 压缩文件（带 64 位结束头）</td>
+</tr>
+<tr>
+<td>50 4B 4C 49 54 45</td>
+<td>PKLITE</td>
+<td>0</td>
+<td>zlite</td>
+<td>PKLITE 压缩文件</td>
+</tr>
+<tr>
+<td>FF 57 50 43 07 10 00 03 00 00 00 00</td>
+<td>WPC◇␀␃␀␀␀␀</td>
+<td>0</td>
+<td>wcp</td>
+<td>WordPerfect 文档</td>
+</tr>
+<tr>
+<td>FF 57 50 43 07 20 00 03 00 00 00 00</td>
+<td>WPC◠␀␃␀␀␀␀</td>
+<td>0</td>
+<td>wcp</td>
+<td>WordPerfect 文档</td>
+</tr>
+<tr>
+<td>FF 57 50 43 07 40 00 03 00 00 00 00</td>
+<td>WPC◐␀␃␀␀␀␀</td>
+<td>0</td>
+<td>wcp</td>
+<td>WordPerfect 文档</td>
+</tr>
+<tr>
+<td>FF 57 50 43 07 80 00 03 00 00 00 00</td>
+<td>WPC◘␀␃␀␀␀␀</td>
+<td>0</td>
+<td>wcp</td>
+<td>WordPerfect 文档</td>
+</tr>
+<tr>
+<td>46 4C 56 01</td>
+<td>FLV␁</td>
+<td>0</td>
+<td>flv</td>
+<td>Flash 视频文件</td>
+</tr>
+<tr>
+<td>E2 68 6E 6F</td>
+<td>âhno</td>
+<td>0</td>
+<td>nomedia</td>
+<td>Android 无媒体文件（.nomedia）</td>
+</tr>
+<tr>
+<td>38 42 50 53</td>
+<td>8BPS</td>
+<td>0</td>
+<td>psd</td>
+<td>Adobe Photoshop 文档</td>
+</tr>
+<tr>
+<td>47 49 46 38 39 61</td>
+<td>GIF89a</td>
+<td>0</td>
+<td>gif</td>
+<td>GIF 图像</td>
+</tr>
+<tr>
+<td>FF D8 FF E0</td>
+<td>Øÿà</td>
+<td>0</td>
+<td>jpeg</td>
+<td>JPEG 图像</td>
+</tr>
+<tr>
+<td>FF D8 FF E1</td>
+<td>Øÿá</td>
+<td>0</td>
+<td>jpeg</td>
+<td>JPEG 图像（Exif 格式）</td>
+</tr>
+<tr>
+<td>42 4D</td>
+<td>BM</td>
+<td>0</td>
+<td>bmp</td>
+<td>BMP 图像</td>
+</tr>
+<tr>
+<td>89 50 4E 47 0D 0A 1A 0A</td>
+<td>‰PNG␍␊␊</td>
+<td>0</td>
+<td>png</td>
+<td>PNG 图像</td>
+</tr>
+<tr>
+<td>47 49 46 38 37 61</td>
+<td>GIF87a</td>
+<td>0</td>
+<td>gif</td>
+<td>GIF 图像</td>
+</tr>
+<tr>
+<td>FF D8 FF E8</td>
+<td>Øÿè</td>
+<td>0</td>
+<td>jpeg</td>
+<td>JPEG 图像（SPIFF 格式）</td>
+</tr>
+<tr>
+<td>4D 4D 00 2A</td>
+<td>MM␀*</td>
+<td>0</td>
+<td>tif</td>
+<td>TIFF 图像</td>
+</tr>
+<tr>
+<td>49 49 2A 00</td>
+<td>II*␀</td>
+<td>0</td>
+<td>tif</td>
+<td>TIFF 图像</td>
+</tr>
+<tr>
+<td>42 41 4D 53</td>
+<td>BAM$</td>
+<td>0</td>
+<td>bam</td>
+<td>Wayback Machine 存档文件</td>
+</tr>
+<tr>
+<td>21 3C 61 72 63 68 3E 0A 64 6F 63 74 79 70 65 20</td>
+<td>&lt;!arch&gt;␊doctype␠</td>
+<td>0</td>
+<td></td>
+<td>HTML 文档</td>
+</tr>
+<tr>
+<td>23 44 4F 43</td>
+<td>#DOC</td>
+<td>0</td>
+<td>doc</td>
+<td>WordPerfect 文档</td>
+</tr>
+<tr>
+<td>50 4B 03 04</td>
+<td>PK␃␄</td>
+<td>0</td>
+<td>jar</td>
+<td>Java 存档文件</td>
+</tr>
+<tr>
+<td>FF D8 FF E0 00 10 4A 46 49 46 00 01</td>
+<td>Øÿà␀␑JFIF␀␁</td>
+<td>0</td>
+<td>jpg</td>
+<td>JPEG 图像</td>
+</tr>
+<tr>
+<td>FF D8 FF E1 00 60 45 78 69 66 00 00</td>
+<td>Øÿá␀`Exif␀␀</td>
+<td>0</td>
+<td>jpg</td>
+<td>JPEG 图像（Exif 格式）</td>
+</tr>
+<tr>
+<td>FF D8 FF E1 4C 45 56 45 4C 00 00 00</td>
+<td>ØÿáLEVEL␀␀␀</td>
+<td>0</td>
+<td>jpg</td>
+<td>JPEG 图像（Exif 格式，带 GPS 数据）</td>
+</tr>
+<tr>
+<td>FF D8 FF E1 41 53 43 49 49 00 00 00</td>
+<td>ØÿáASCII␀␀␀</td>
+<td>0</td>
+<td>jpg</td>
+<td>JPEG 图像（Exif 格式，Adobe APP14 标记）</td>
+</tr>
+<tr>
+<td>FF D8 FF E1 45 78 69 66 00 00 00 00</td>
+<td>ØÿáExif␀␀␀␀</td>
+<td>0</td>
+<td>jpg</td>
+<td>JPEG 图像（Exif 格式，没有 TIFF 标记）</td>
+</tr>
+<tr>
+<td>47 49 46 38 39 61</td>
+<td>GIF89a</td>
+<td>0</td>
+<td>gif</td>
+<td>GIF 图像</td>
+</tr>
+<tr>
+<td>FF D8 FF E0 00 10 4A 46 49 46 00 01</td>
+<td>Øÿà␀␑JFIF␀␁</td>
+<td>0</td>
+<td>jpeg</td>
+<td>JPEG 图像</td>
+</tr>
+<tr>
+<td>FF D8 FF E1 00 60 45 78 69 66 00 00</td>
+<td>Øÿá␀`Exif␀␀</td>
+<td>0</td>
+<td>jpeg</td>
+<td>JPEG 图像（Exif 格式）</td>
+</tr>
+<tr>
+<td>FF D8 FF E1 4C 45 56 45 4C 00 00 00</td>
+<td>ØÿáLEVEL␀␀␀</td>
+<td>0</td>
+<td>jpeg</td>
+<td>JPEG 图像（Exif 格式，带 GPS 数据）</td>
+</tr>
+<tr>
+<td>FF D8 FF E1 41 53 43 49 49 00 00 00</td>
+<td>ØÿáASCII␀␀␀</td>
+<td>0</td>
+<td>jpeg</td>
+<td>JPEG 图像（Exif 格式，Adobe APP14 标记）</td>
+</tr>
+<tr>
+<td>FF D8 FF E1 45 78 69 66 00 00 00 00</td>
+<td>ØÿáExif␀␀␀␀</td>
+<td>0</td>
+<td>jpeg</td>
+<td>JPEG 图像（Exif 格式，没有 TIFF 标记）</td>
+</tr>
+<tr>
+<td>FF D8 FF E0 00 10 4A 46 49 46 00 01</td>
+<td>Øÿà␀␑JFIF␀␁</td>
+<td>0</td>
+<td>jpeg</td>
+<td>JPEG 图像</td>
+</tr>
+<tr>
+<td>FF D8 FF E1 00 60 45 78 69 66 00 00</td>
+<td>Øÿá␀`Exif␀␀</td>
+<td>0</td>
+<td>jpeg</td>
+<td>JPEG 图像（Exif 格式）</td>
+</tr>
+<tr>
+<td>FF D8 FF E1 4C 45 56 45 4C 00 00 00</td>
+<td>ØÿáLEVEL␀␀␀</td>
+<td>0</td>
+<td>jpeg</td>
+<td>JPEG 图像（Exif 格式，带 GPS 数据）</td>
+</tr>
+<tr>
+<td>FF D8 FF E1 41 53 43 49 49 00 00 00</td>
+<td>ØÿáASCII␀␀␀</td>
+<td>0</td>
+<td>jpeg</td>
+<td>JPEG 图像（Exif 格式，Adobe APP14 标记）</td>
+</tr>
+<tr>
+<td>FF D8 FF E1 45 78 69 66 00 00 00 00</td>
+<td>ØÿáExif␀␀␀␀</td>
+<td>0</td>
+<td>jpeg</td>
+<td>JPEG 图像（Exif 格式，没有 TIFF 标记）</td>
+</tr>
+<tr>
+<td>FF D8 FF E0 00 10 4A 46 49 46 00 01</td>
+<td>Øÿà␀␑JFIF␀␁</td>
+<td>0</td>
+<td>jpeg</td>
+<td>JPEG 图像</td>
+</tr>
+<tr>
+<td>FF D8 FF E1 00 60 45 78 69 66 00 00</td>
+<td>Øÿá␀`Exif␀␀</td>
+<td>0</td>
+<td>jpeg</td>
+<td>JPEG 图像（Exif 格式）</td>
+</tr>
+<tr>
+<td>FF D8 FF E1 4C 45 56 45 4C 00 00 00</td>
+<td>ØÿáLEVEL␀␀␀</td>
+<td>0</td>
+<td>jpeg</td>
+<td>JPEG 图像（Exif 格式，带 GPS 数据）</td>
+</tr>
+<tr>
+<td>FF D8 FF E1 41 53 43 49 49 00 00 00</td>
+<td>ØÿáASCII␀␀␀</td>
+<td>0</td>
+<td>jpeg</td>
+<td>JPEG 图像（Exif 格式，Adobe APP14 标记）</td>
+</tr>
+<tr>
+<td>FF D8 FF E1 45 78 69 66 00 00 00 00</td>
+<td>ØÿáExif␀␀␀␀</td>
+<td>0</td>
+<td>jpeg</td>
+<td>JPEG 图像（Exif 格式，没有 TIFF 标记）</td>
+</tr>
+<tr>
+<td>49 49 2A 00 10 00 00 00 01 00 02 00</td>
+<td>II*␀␐␀␀␀␁␀␂␀</td>
+<td>0</td>
+<td>tif</td>
+<td>TIFF 图像</td>
+</tr>
+<tr>
+<td>4D 4D 00 2A 00 00 00 08 00 0B 01 0F</td>
+<td>MM␀*␀␀␀␈␀ ␁</td>
+<td>0</td>
+<td>tif</td>
+<td>TIFF 图像</td>
+</tr>
+<tr>
+<td>49 49 2A 00 10 00 00 00 02 00 03 00</td>
+<td>II*␀␐␀␀␀␀␀</td>
+<td>0</td>
+<td>tif</td>
+<td>TIFF 图像</td>
+</tr>
+<tr>
+<td>4D 4D 00 2A 00 00 00 08 00 0B 01 0F</td>
+<td>MM␀*␀␀␀␈␀ ␁</td>
+<td>0</td>
+<td>tif</td>
+<td>TIFF 图像</td>
+</tr>
+<tr>
+<td>4D 5A</td>
+<td>MZ</td>
+<td>0</td>
+<td>exe</td>
+<td>Windows 可执行文件（DOS MZ 格式）</td>
+</tr>
+<tr>
+<td>5A 4D</td>
+<td>ZM</td>
+<td>0</td>
+<td>exe</td>
+<td>Windows 可执行文件（新版 DOS MZ 格式）</td>
+</tr>
+<tr>
+<td>00 00 01 00</td>
+<td>␀␀␁␀</td>
+<td>0</td>
+<td>eot</td>
+<td>嵌入式 OpenType 字体</td>
+</tr>
+<tr>
+<td>7F 45 4C 46</td>
+<td>␡ELF</td>
+<td>0</td>
+<td>elf</td>
+<td>可执行和链接格式 (ELF) 文件</td>
+</tr>
+<tr>
+<td>00 01 00 00</td>
+<td>␀␁␀␀</td>
+<td>0</td>
+<td>wmf</td>
+<td>Windows 图形元文件</td>
+</tr>
+<tr>
+<td>3C 3F 78 6D 6C 20</td>
+<td>&lt;?xml␠</td>
+<td>0</td>
+<td>xml</td>
+<td>XML 文档</td>
+</tr>
+<tr>
+<td>25 21 50 53 2D 41 64 6F 62 65 2D 33</td>
+<td>%!PS-Adobe-3</td>
+<td>0</td>
+<td>ps</td>
+<td>PostScript 文档</td>
+</tr>
+<tr>
+<td>1F 8B</td>
+<td>␟⸏</td>
+<td>0</td>
+<td>gz</td>
+<td>Gzip 压缩文件</td>
+</tr>
+<tr>
+<td>42 5A 68 39</td>
+<td>BZh9</td>
+<td>0</td>
+<td>bz2</td>
+<td>Bzip2 压缩文件</td>
+</tr>
+<tr>
+<td>78 9C</td>
+<td>x⸟</td>
+<td>0</td>
+<td>zlib</td>
+<td>zlib 压缩数据流</td>
+</tr>
+<tr>
+<td>FD 37 7A 58 5A 00 00</td>
+<td>ý7zXZ␀␀</td>
+<td>0</td>
+<td>7z</td>
+<td>7-Zip 压缩文件</td>
+</tr>
+<tr>
+<td>37 7A BC AF 27 1C</td>
+<td>7z¼¯'␟</td>
+<td>0</td>
+<td>7z</td>
+<td>7-Zip 压缩文件（较早版本）</td>
+</tr>
+<tr>
+<td>04 22 4D 18</td>
+<td>␄"M␘</td>
+<td>0</td>
+<td>lz4</td>
+<td>LZ4 压缩文件</td>
+</tr>
+<tr>
+<td>1A 45 DF A3</td>
+<td>Eß£</td>
+<td>0</td>
+<td>ldf</td>
+<td>SQL Server 日志文件</td>
+</tr>
+<tr>
+<td>4C 41 49 52</td>
+<td>LAIR</td>
+<td>0</td>
+<td>lair</td>
+<td>Lair 录音文件</td>
+</tr>
+<tr>
+<td>4D 41 52 31</td>
+<td>MAR1</td>
+<td>0</td>
+<td>mar</td>
+<td>Mozilla 存档</td>
+</tr>
+<tr>
+<td>50 4B 03 04</td>
+<td>PK␃␄</td>
+<td>0</td>
+<td>xpi</td>
+<td>Mozilla 扩展或附加组件</td>
+</tr>
+<tr>
+<td>43 6F 6E 64 69 74 69 6F 6E 73 20 20 20 20 20 20 20 20</td>
+<td>Conditions␠␠␠␠␠␠␠␠␠</td>
+<td>0</td>
+<td>conds</td>
+<td>Windows 网络条件文件</td>
+</tr>
+<tr>
+<td>23 21 41 4D 52 00</td>
+<td>#!AMR␀</td>
+<td>0</td>
+<td>amr</td>
+<td>AMR 音频文件</td>
+</tr>
+<tr>
+<td>4D 54 68 64</td>
+<td>MThd</td>
+<td>0</td>
+<td>mid</td>
+<td>MIDI 音乐文件</td>
+</tr>
+<tr>
+<td>52 49 46 46</td>
+<td>RIFF</td>
+<td>0</td>
+<td>wav</td>
+<td>WAV 音频文件</td>
+</tr>
+<tr>
+<td>49 44 33 03</td>
+<td>ID3␃</td>
+<td>0</td>
+<td>mp3</td>
+<td>MP3 音频文件</td>
+</tr>
+<tr>
+<td>00 01 00 00 00 00 10 00 00 02 00 00</td>
+<td>␀␁␀␀␀␀␐␀␀␂␀␀</td>
+<td>0</td>
+<td>icns</td>
+<td>Apple 图标文件</td>
+</tr>
+<tr>
+<td>46 4F 52 4D 00 00 00 00</td>
+<td>FORM␀␀␀␀</td>
+<td>0</td>
+<td>aiff</td>
+<td>AIFF 音频文件</td>
+</tr>
+<tr>
+<td>52 4E 4D 53</td>
+<td>RNMS</td>
+<td>0</td>
+<td>nes</td>
+<td>NES ROM 图像</td>
+</tr>
+<tr>
+<td>53 45 51 36</td>
+<td>SEQ6</td>
+<td>0</td>
+<td>seq</td>
+<td>Sierra 字体资源文件</td>
+</tr>
+<tr>
+<td>4E 45 53 1A</td>
+<td>NES␚</td>
+<td>0</td>
+<td>nes</td>
+<td>NES ROM 映像</td>
+</tr>
+<tr>
+<td>49 4D 41 20</td>
+<td>IMA␠</td>
+<td>0</td>
+<td>ima</td>
+<td>IMA 音频文件</td>
+</tr>
+<tr>
+<td>66 4C 61 43</td>
+<td>fLaC</td>
+<td>0</td>
+<td>flac</td>
+<td>FLAC 音频文件</td>
+</tr>
+<tr>
+<td>52 49 46 46</td>
+<td>RIFF</td>
+<td>0</td>
+<td>webp</td>
+<td>WebP 图像</td>
+</tr>
+<tr>
+<td>47 49 46 38 39 61</td>
+<td>GIF89a</td>
+<td>0</td>
+<td>webp</td>
+<td>WebP 图像</td>
+</tr>
+<tr>
+<td>50 41 4B 20</td>
+<td>PAK␠</td>
+<td>0</td>
+<td>pak</td>
+<td>Quake PAK 文件</td>
+</tr>
+<tr>
+<td>1A 45 DF A3</td>
+<td>Eß£</td>
+<td>0</td>
+<td>ldf</td>
+<td>SQL Server 日志文件</td>
+</tr>
+<tr>
+<td>30 30 00 00</td>
+<td>00␠␠␀␀</td>
+<td>0</td>
+<td>jis</td>
+<td>JIS 文字文件</td>
+</tr>
+<tr>
+<td>4F 53 2F 32</td>
+<td>OS/2</td>
+<td>0</td>
+<td>bmp</td>
+<td>OS/2 位图文件</td>
+</tr>
+<tr>
+<td>4F 53 2F 32</td>
+<td>OS/2</td>
+<td>0</td>
+<td>os2</td>
+<td>OS/2 位图文件</td>
+</tr>
+<tr>
+<td>4F 53 2F 32</td>
+<td>OS/2</td>
+<td>0</td>
+<td>ras</td>
+<td>OS/2 位图文件</td>
+</tr>
+<tr>
+<td>0A 0D 0D 0A</td>
+<td>␊␍␍␊</td>
+<td>0</td>
+<td>netcdf</td>
+<td>NetCDF 文件</td>
+</tr>
+<tr>
+<td>44 42 46 48</td>
+<td>DBFH</td>
+<td>0</td>
+<td>dbf</td>
+<td>dBASE II 文件</td>
+</tr>
+<tr>
+<td>50 53 46 1A</td>
+<td>PSF␚</td>
+<td>0</td>
+<td>psf</td>
+<td>PSF 字体文件</td>
+</tr>
+<tr>
+<td>4C 4E 02 00</td>
+<td>LN␂␀␀</td>
+<td>0</td>
+<td>lnt</td>
+<td>Microsoft Linker 大纲文件</td>
+</tr>
+<tr>
+<td>7B 5C 72 74 66 31</td>
+<td>{\rtf1</td>
+<td>0</td>
+<td>rtf</td>
+<td>富文本格式 (RTF) 文档</td>
+</tr>
+<tr>
+<td>46 4C 56 01</td>
+<td>FLV␁</td>
+<td>0</td>
+<td>flv</td>
+<td>Flash 视频文件</td>
+</tr>
+<tr>
+<td>57 41 56 45 66 6F 72 6D 61 74 20 33</td>
+<td>WAVEform␠3</td>
+<td>0</td>
+<td>wav</td>
+<td>WAV 音频文件</td>
+</tr>
+<tr>
+<td>57 41 56 45 66 6F 72 6D 61 74 20 33</td>
+<td>WAVEform␠3</td>
+<td>0</td>
+<td>webm</td>
+<td>WebM 视频文件</td>
+</tr>
+<tr>
+<td>57 45 42 4D</td>
+<td>WEBM</td>
+<td>0</td>
+<td>webm</td>
+<td>WebM 视频文件</td>
+</tr>
+<tr>
+<td>44 45 58 01</td>
+<td>DEX␁</td>
+<td>0</td>
+<td>dex</td>
+<td>Dalvik 可执行文件</td>
+</tr>
+<tr>
+<td>30 33 35 00</td>
+<td>035␀</td>
+<td>0</td>
+<td>elf</td>
+<td>ELF 可执行文件</td>
+</tr>
+<tr>
+<td>57 69 6E 64 6F 77 73 20 33 2E 31 00</td>
+<td>Windows␠3.1␀</td>
+<td>0</td>
+<td>exe</td>
+<td>Windows 可执行文件</td>
+</tr>
+<tr>
+<td>25 21 50 53 2D 41 64 6F 62 65 2D 33</td>
+<td>%!PS-Adobe-3</td>
+<td>0</td>
+<td>ps</td>
+<td>PostScript 文档</td>
+</tr>
+<tr>
+<td>49 44 33 03</td>
+<td>ID3␃</td>
+<td>0</td>
+<td>mp3</td>
+<td>MP3 音频文件</td>
+</tr>
+<tr>
+<td>4D 54 68 64</td>
+<td>MThd</td>
+<td>0</td>
+<td>mid</td>
+<td>MIDI 音乐文件</td>
+</tr>
+<tr>
+<td>52 49 46 46</td>
+<td>RIFF</td>
+<td>0</td>
+<td>wav</td>
+<td>WAV 音频文件</td>
+</tr>
+<tr>
+<td>4F 53 2F 32</td>
+<td>OS/2</td>
+<td>0</td>
+<td>bmp</td>
+<td>OS/2 位图文件</td>
+</tr>
+<tr>
+<td>4F 53 2F 32</td>
+<td>OS/2</td>
+<td>0</td>
+<td>os2</td>
+<td>OS/2 位图文件</td>
+</tr>
+<tr>
+<td>4F 53 2F 32</td>
+<td>OS/2</td>
+<td>0</td>
+<td>ras</td>
+<td>OS/2 位图文件</td>
+</tr>
+<tr>
+<td>0A 0D 0D 0A</td>
+<td>␊␍␍␊</td>
+<td>0</td>
+<td>netcdf</td>
+<td>NetCDF 文件</td>
+</tr>
+<tr>
+<td>44 42 46 48</td>
+<td>DBFH</td>
+<td>0</td>
+<td>dbf</td>
+<td>dBASE II 文件</td>
+</tr>
+<tr>
+<td>50 53 46 1A</td>
+<td>PSF␚</td>
+<td>0</td>
+<td>psf</td>
+<td>PSF 字体文件</td>
+</tr>
+<tr>
+<td>4C 4E 02 00</td>
+<td>LN␂␀␀</td>
+<td>0</td>
+<td>lnt</td>
+<td>Microsoft Linker 大纲文件</td>
+</tr>
+<tr>
+<td>7B 5C 72 74 66 31</td>
+<td>{\rtf1</td>
+<td>0</td>
+<td>rtf</td>
+<td>富文本格式 (RTF) 文档</td>
+</tr>
+<tr>
+<td>46 4C 56 01</td>
+<td>FLV␁</td>
+<td>0</td>
+<td>flv</td>
+<td>Flash 视频文件</td>
+</tr>
+<tr>
+<td>57 41 56 45 66 6F 72 6D 61 74 20 33</td>
+<td>WAVEform␠3</td>
+<td>0</td>
+<td>wav</td>
+<td>WAV 音频文件</td>
+</tr>
+<tr>
+<td>57 45 42 4D</td>
+<td>WEBM</td>
+<td>0</td>
+<td>webm</td>
+<td>WebM 视频文件</td>
+</tr>
+<tr>
+<td>44 45 58 01</td>
+<td>DEX␁</td>
+<td>0</td>
+<td>dex</td>
+<td>Dalvik 可执行文件</td>
+</tr>
+<tr>
+<td>30 33 35 00</td>
+<td>035␀</td>
+<td>0</td>
+<td>elf</td>
+<td>ELF 可执行文件</td>
+</tr>
+<tr>
+<td>57 69 6E 64 6F 77 73 20 33 2E 31 00</td>
+<td>Windows␠3.1␀</td>
+<td>0</td>
+<td>exe</td>
+<td>Windows 可执行文件</td>
+</tr>
+</tbody>
+</table></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../memory/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 内存取证"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        内存取证
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../../hc-web/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: Web | 网络攻防"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        Web | 网络攻防
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#file-signatures">File signatures</a>
+        
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

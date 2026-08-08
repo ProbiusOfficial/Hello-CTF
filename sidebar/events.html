@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛事日历 - Hello CTF</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shell/shell.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--paper); color: var(--ink); font-family: var(--sans); line-height: 1.7; transition: background .25s, color .25s; }
+  a { color: inherit; text-decoration: none; }
+  .wrap { max-width: 1360px; margin: 0 auto; padding: 48px 44px; }
+
+  /* 页头 */
+  .kicker { font-family: var(--mono); font-size: 12.5px; letter-spacing: .14em; color: var(--accent); }
+  .page-title { font-size: clamp(30px, 3.6vw, 40px); font-weight: 800; letter-spacing: -.03em; margin: 12px 0 10px; }
+  .page-title .hl { background: linear-gradient(transparent 60%, var(--hl) 60%); }
+  .page-sub { font-size: 15px; color: var(--ink-2); max-width: 640px; }
+  .head-row { margin-bottom: 30px; }
+
+  /* 布局：日历 + 右侧信息栏 */
+  .ev-grid { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 28px; align-items: start; }
+
+  /* ============ 日历（周渲染，跨天连块） ============ */
+  .cal { border: 1px solid var(--line); border-radius: 18px; background: var(--paper); overflow: hidden; }
+  .cal-head { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid var(--line); background: var(--wash); flex-wrap: wrap; gap: 10px; }
+  .cal-title { font-weight: 800; font-size: 18px; letter-spacing: -.01em; }
+  .cal-title span { font-family: var(--mono); font-weight: 600; color: var(--ink-3); font-size: 12.5px; margin-left: 10px; }
+  .cal-tools { display: flex; align-items: center; gap: 8px; }
+  .seg { display: flex; gap: 2px; margin-right: 6px; }
+  .seg button {
+    border: 1px solid transparent; background: transparent; cursor: pointer;
+    font-family: var(--mono); font-size: 11.5px; color: var(--ink-3);
+    padding: 4px 12px; border-radius: 8px; transition: all .15s;
+  }
+  .seg button:hover { color: var(--ink); }
+  .seg button.on { color: var(--accent); background: var(--accent-soft); font-weight: 700; }
+  .cal-nav { display: flex; gap: 5px; }
+  .cal-nav button {
+    height: 29px; min-width: 29px; border-radius: 8px; border: 1px solid var(--line);
+    background: var(--paper); color: var(--ink-2); cursor: pointer; font-family: var(--mono);
+    transition: all .15s; font-size: 14px; padding: 0 6px;
+  }
+  .cal-nav button:hover { border-color: var(--ink); color: var(--ink); }
+  .cal-dow { display: grid; grid-template-columns: repeat(7, 1fr); }
+  .cal-dow span { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; color: var(--ink-3); text-align: center; padding: 10px 0 6px; }
+
+  /* 每一周：日期数字行（等大）+ 车道行（跨天连块） */
+  .wk { border-top: 1px solid var(--line); }
+  .wk-nums { display: grid; grid-template-columns: repeat(7, 1fr); }
+  .num-cell {
+    min-height: 32px; padding: 6px 9px 3px; font-size: 13px; color: var(--ink-2);
+    border-left: 1px solid var(--line); margin-left: -1px;
+    display: flex; align-items: flex-start; gap: 6px;
+  }
+  .num-cell.dim { color: var(--ink-3); opacity: .4; }
+  .num-cell.today .num { background: var(--accent); color: #fff; font-weight: 700; width: 22px; height: 22px; border-radius: 6px; display: inline-grid; place-items: center; }
+  .num-cell.sel { background: var(--accent-soft); }
+  .num-cell .more { margin-left: auto; font-family: var(--mono); font-size: 9.5px; color: var(--ink-3); padding-top: 4px; white-space: nowrap; }
+  .wk-lanes {
+    display: grid; grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 19px; row-gap: 3px; padding-bottom: 5px;
+  }
+  .ev-chip {
+    margin: 0 3px; padding: 1px 8px;
+    font-size: 10.5px; font-weight: 600; line-height: 17px; color: #fff;
+    border-radius: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    cursor: pointer;
+  }
+  .ev-chip.cont-l { border-top-left-radius: 0; border-bottom-left-radius: 0; margin-left: 0; }
+  .ev-chip.cont-r { border-top-right-radius: 0; border-bottom-right-radius: 0; margin-right: 0; }
+  .cal-foot { padding: 11px 20px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--ink-3); font-family: var(--mono); }
+
+  /* ============ 右侧信息栏 ============ */
+  .side-sec {
+    border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--paper); padding: 16px 18px; margin-bottom: 14px;
+  }
+  .side-cap { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; color: var(--ink-3); margin-bottom: 10px; }
+  .side-note { font-size: 12px; color: var(--ink-2); line-height: 1.7; margin-bottom: 8px; }
+  .side-link {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12.5px; padding: 6px 0; color: var(--ink-2);
+    border-top: 1px dashed var(--line);
+  }
+  .side-link:first-of-type { border-top: none; }
+  .side-link:hover { color: var(--accent); }
+  .side-link .ic { width: 14px; height: 14px; color: var(--ink-3); flex: none; }
+  .side-link:hover .ic { color: var(--accent); }
+  .side-link .mono { font-family: var(--mono); font-size: 11px; color: var(--ink-3); margin-left: auto; }
+
+  /* ============ 四分组（上下排布，每组整宽 + 主页风格分栏卡片） ============ */
+  .grp { margin-top: 30px; scroll-margin-top: 20px; }
+  .grp-cap {
+    font-family: var(--mono); font-size: 11px; letter-spacing: .14em;
+    color: var(--ink-3); margin: 0 2px 10px;
+    display: flex; justify-content: space-between;
+  }
+  /* 快速定位按钮 */
+  .grp-nav { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+  .grp-nav a {
+    font-family: var(--mono); font-size: 11.5px; color: var(--ink-2);
+    border: 1px solid var(--line); border-radius: 999px; padding: 5px 14px;
+    transition: all .15s;
+  }
+  .grp-nav a:hover { border-color: var(--accent); color: var(--accent); }
+  .grp-list {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px;
+    align-items: start;
+  }
+  /* 与主页 cd-card 同一语言：左侧色条 + 名称 + meta；点击展开详情 */
+  .g-card {
+    border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--paper); overflow: hidden; min-width: 0;
+    transition: border-color .15s;
+  }
+  .g-card:hover { border-color: var(--ink); }
+  .g-head {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 14px; cursor: pointer; user-select: none;
+  }
+  .g-head .edge { width: 4px; align-self: stretch; border-radius: 2px; flex-shrink: 0; }
+  .g-head .info { min-width: 0; flex: 1; }
+  .g-head .n {
+    font-weight: 700; font-size: 13px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .g-head .n .tag { margin-right: 7px; vertical-align: 1px; }
+  .g-head .meta {
+    font-family: var(--mono); font-size: 10.5px; color: var(--ink-3);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 3px;
+  }
+  .g-head .ic { width: 13px; height: 13px; color: var(--ink-3); transition: transform .2s; flex-shrink: 0; }
+  .g-card.open .g-head .ic { transform: rotate(180deg); }
+  .g-card:hover .n { color: var(--accent); }
+  .g-body { display: none; border-top: 1px dashed var(--line); padding: 11px 14px 13px; }
+  .g-card.open .g-body { display: block; }
+  .g-body .row { display: flex; justify-content: space-between; gap: 12px; font-size: 12.5px; color: var(--ink-2); padding: 3px 0; }
+  .g-body .row .k { font-family: var(--mono); font-size: 11px; color: var(--ink-3); flex: none; }
+  .g-body .row span:last-child { text-align: right; min-width: 0; word-break: break-all; }
+  .g-body .go {
+    display: inline-flex; align-items: center; gap: 7px; margin-top: 9px;
+    font-size: 12.5px; font-weight: 700; color: var(--paper);
+    background: var(--ink); border-radius: 9px; padding: 7px 14px;
+    transition: transform .15s;
+  }
+  .g-body .go:hover { transform: translateY(-1px); }
+  .tag { font-family: var(--mono); font-size: 9.5px; font-weight: 700; padding: 1px 6px; border-radius: 5px; flex-shrink: 0; line-height: 1.6; }
+  .tag.cn { color: var(--cn); background: var(--cn-soft); }
+  .tag.intl { color: var(--intl); background: var(--intl-soft); }
+  .empty { font-size: 13px; color: var(--ink-3); padding: 8px 2px; }
+
+  /* 权重设置齿轮 */
+  .gear-btn {
+    height: 29px; width: 29px; border-radius: 8px; border: 1px solid var(--line);
+    background: var(--paper); color: var(--ink-3); cursor: pointer;
+    display: grid; place-items: center; transition: all .15s;
+  }
+  .gear-btn:hover { border-color: var(--ink); color: var(--ink); }
+  .gear-btn.on { color: var(--accent); border-color: var(--accent); }
+  .gear-btn .ic { width: 15px; height: 15px; }
+  .pop-gear { width: 250px; }
+  .pop-gear .t { font-family: var(--mono); font-size: 11px; color: var(--ink-3); letter-spacing: .1em; padding: 0 2px 8px; }
+  .pop-gear .wrow { display: flex; align-items: center; gap: 10px; padding: 4px 2px 6px; }
+  .pop-gear input[type="range"] { flex: 1; accent-color: var(--accent); }
+  .pop-gear input[type="number"] {
+    width: 62px; border: 1px solid var(--line); border-radius: 8px;
+    background: var(--paper); color: var(--ink);
+    font-family: var(--mono); font-size: 13px; padding: 4px 8px; outline: none;
+  }
+  .pop-gear input[type="number"]:focus { border-color: var(--accent); }
+  .pop-gear .note { font-size: 11px; color: var(--ink-3); padding: 4px 2px 2px; }
+
+  /* 日期悬浮框 */
+  .pop {
+    position: fixed; z-index: 80; width: 300px;
+    background: var(--paper); border: 1px solid var(--line); border-radius: 14px;
+    box-shadow: var(--shadow-pop); padding: 12px 14px;
+    animation: popin .14s ease;
+  }
+  @keyframes popin { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+  .pop-date { font-family: var(--mono); font-size: 11px; color: var(--ink-3); letter-spacing: .1em; padding: 0 2px 4px; }
+  .pop-ev { display: flex; gap: 10px; padding: 9px 2px 3px; border-top: 1px dashed var(--line); align-items: flex-start; }
+  .pop-ev .dotc { width: 8px; height: 8px; border-radius: 3px; margin-top: 6px; flex-shrink: 0; }
+  .pop-ev .n { font-weight: 700; font-size: 13px; line-height: 1.5; }
+  .pop-ev .n a:hover { color: var(--accent); }
+  .pop-ev .n .tag { margin-left: 6px; vertical-align: 1px; }
+  .pop-ev .t { font-family: var(--mono); font-size: 11px; color: var(--ink-3); margin-top: 3px; }
+  .pop-empty { font-size: 12.5px; color: var(--ink-3); padding: 6px 2px 4px; }
+
+  @media (max-width: 1080px) {
+    .ev-grid { grid-template-columns: 1fr; }
+    .grp-list { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 860px) { .wrap { padding: 76px 18px 30px; } }
+  @media (max-width: 640px) { .grp-list { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<script src="/shell/search.js"></script>
+<script src="/shell/shell.js"></script>
+<script>Shell.mount({ active: "events" });</script>
+
+<div class="main">
+<div class="wrap">
+  <div class="head-row">
+    <div class="kicker">EVENTS · 赛事日历</div>
+    <h1 class="page-title">每一场比赛，<span class="hl">都不错过</span>。</h1>
+    <p class="page-sub">国内赛事由本站维护，国外赛事抓取自 CTFtime，每日自动更新。点击日历日期查看当天比赛详情。</p>
+  </div>
+
+  <div class="ev-grid">
+    <!-- 日历（周渲染，跨天赛事连块） -->
+    <div class="cal">
+      <div class="cal-head">
+        <div class="cal-title" id="calTitle">—<span></span></div>
+        <div class="cal-tools">
+          <div class="seg" id="segFilter">
+            <button data-f="all" class="on">所有</button><button data-f="cn">国内</button><button data-f="intl">国外</button>
+          </div>
+          <div class="cal-nav">
+            <button id="prevM" aria-label="上个月">‹</button>
+            <button id="todayM" aria-label="回到今天" style="font-size:12px;padding:0 10px">今天</button>
+            <button id="nextM" aria-label="下个月">›</button>
+          </div>
+          <button class="gear-btn" id="evGear" aria-label="筛选设置" title="筛选设置"><svg class="ic"><use href="#i-gear"/></svg></button>
+        </div>
+      </div>
+      <div class="cal-dow"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span></div>
+      <div id="calWeeks"></div>
+      <div class="cal-foot">持续超 7 天的长周期赛事不上日历，见下方分组 · 点击日期查看详情 · 数据每日同步</div>
+    </div>
+
+    <!-- 右侧信息栏 -->
+    <div>
+      <div class="side-sec">
+        <div class="side-cap">订阅 · 日历同步</div>
+        <a class="side-link" href="../Event/calendar/CN.ics" target="_blank" rel="noopener"><svg class="ic"><use href="#i-calendar"/></svg>国内赛事 .ics</a>
+        <a class="side-link" href="../Event/calendar/Global.ics" target="_blank" rel="noopener"><svg class="ic"><use href="#i-calendar"/></svg>国外赛事 .ics</a>
+        <a class="side-link" href="./archives.html"><svg class="ic"><use href="#i-archive"/></svg>历史比赛<span class="mono">CTF-Archives</span></a>
+      </div>
+      <div class="side-sec">
+        <div class="side-cap">比赛数据 API</div>
+        <p class="side-note">赛事数据以 JSON 开放，每日更新，可直接读取调用：</p>
+        <a class="side-link" href="../Event/json/CN.json" target="_blank" rel="noopener"><svg class="ic"><use href="#i-link"/></svg>国内赛事<span class="mono">CN.json</span></a>
+        <a class="side-link" href="../Event/json/Global.json" target="_blank" rel="noopener"><svg class="ic"><use href="#i-link"/></svg>国外赛事<span class="mono">Global.json</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 快速定位 -->
+  <div class="grp-nav">
+    <a href="#sec-pending">时间未定</a>
+    <a href="#sec-upcoming">即将开始</a>
+    <a href="#sec-ongoing">正在进行</a>
+    <a href="#sec-ended">已经结束</a>
+  </div>
+
+  <!-- 四分组（上下排布）：时间未定 / 即将开始 / 正在进行 / 已经结束 -->
+  <div class="grp" id="sec-pending">
+    <div class="grp-cap"><span>PENDING · 时间未定</span><span id="cPending"></span></div>
+    <div class="grp-list" id="gPending"></div>
+  </div>
+  <div class="grp" id="sec-upcoming">
+    <div class="grp-cap"><span>UPCOMING · 即将开始</span><span id="cUpcoming"></span></div>
+    <div class="grp-list" id="gUpcoming"></div>
+  </div>
+  <div class="grp" id="sec-ongoing">
+    <div class="grp-cap"><span>ONGOING · 正在进行</span><span id="cOngoing"></span></div>
+    <div class="grp-list" id="gOngoing"></div>
+  </div>
+  <div class="grp" id="sec-ended">
+    <div class="grp-cap"><span>ENDED · 已经结束</span><span id="cEnded"></span></div>
+    <div class="grp-list" id="gEnded"></div>
+  </div>
+</div>
+</div>
+
+<script>
+/* ============ 数据：build.py 生成的 JSON ============ */
+let EVENTS = [];
+let PENDING = []; // 时间待定的国内赛事（pending: true，不进日历）
+const PALETTE = ["#ef4444", "#f97316", "#eab308", "#22c55e", "#06b6d4", "#3b82f6", "#8b5cf6", "#ec4899", "#14b8a6", "#f43f5e"];
+function assignColors(events) {
+  [...events].sort((a, b) => a.start < b.start ? -1 : 1)
+    .forEach((e, i) => { e.color = PALETTE[i % PALETTE.length]; });
+}
+function parseCnTime(s) {
+  const m = (s || "").match(/(\d{4})年(\d{1,2})月(\d{1,2})日\s+(\d{1,2}):(\d{2})/);
+  if (!m) return null;
+  const p = n => String(n).padStart(2, "0");
+  return `${m[1]}-${p(m[2])}-${p(m[3])}T${p(m[4])}:${m[5]}:00+08:00`;
+}
+function parseGlobalTime(s) {
+  const m = (s || "").match(/(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2}):\d{2}\s*-\s*(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2}):\d{2}/);
+  return m ? [`${m[1]}T${m[2]}:00+08:00`, `${m[3]}T${m[4]}:00+08:00`] : [null, null];
+}
+async function loadEvents() {
+  const events = [];
+  try {
+    const cn = await (await fetch("../Event/json/CN.json")).json();
+    for (const e of (cn.data && cn.data.result) || []) {
+      if (e.pending) {
+        PENDING.push({ name: e.name, url: e.link || "#",
+          detail: (e.detail || "").replace(/^赛制\/类型:\s*/, "").split("\n")[0] });
+        continue;
+      }
+      const start = parseCnTime(e.comp_time_start), end = parseCnTime(e.comp_time_end);
+      if (!start || !end) continue;
+      events.push({ name: e.name, region: "cn", start, end,
+        form: (e.detail || "").replace(/^赛制\/类型:\s*/, "").split("\n")[0], url: e.link || "#" });
+    }
+  } catch (err) {}
+  try {
+    const gl = await (await fetch("../Event/json/Global.json")).json();
+    for (const e of gl || []) {
+      const [start, end] = parseGlobalTime(e["比赛时间"]);
+      if (!start || !end) continue;
+      events.push({ name: e["比赛名称"], region: "intl", start, end,
+        form: e["比赛形式"] || "", url: e["比赛链接"] || "#",
+        weight: parseFloat(e["比赛权重"]) || 0 });
+    }
+  } catch (err) {}
+  EVENTS = events;
+  assignColors(EVENTS);
+  document.dispatchEvent(new Event("events-ready"));
+}
+loadEvents();
+
+/* 长周期判定：持续超过 7 天（不上日历格，分组里正常显示） */
+function isLongEvent(e) {
+  return new Date(e.end) - new Date(e.start) > 7 * 864e5;
+}
+
+/* 国际赛权重过滤（默认只看 ≥50，可手动调整，localStorage 持久化；国内赛事不受影响） */
+let weightMin = +(localStorage.getItem("hc-ev-weight") ?? 50);
+function passWeight(e) { return e.region !== "intl" || (e.weight || 0) >= weightMin; }
+
+/* 当前区域筛选（日历头部的 所有/国内/国外 是唯一控制源） */
+let regionFilter = "all";
+function inScope(e) {
+  return (regionFilter === "all" || e.region === regionFilter) && passWeight(e);
+}
+
+/* ============ 日历（周渲染 + 车道分配，跨天赛事连块） ============ */
+const CAL = (function () {
+  const weeksEl = document.getElementById("calWeeks");
+  const titleEl = document.getElementById("calTitle");
+  const now = new Date();
+  let viewY = now.getFullYear(), viewM = now.getMonth();
+  let selDate = null;
+  const MAX_LANES = 4; // 每周最多车道数，溢出按天折叠为 +N
+
+  const pop = document.createElement("div");
+  pop.className = "pop"; pop.hidden = true;
+  document.body.appendChild(pop);
+
+  function iso(y, m, d) { return y + "-" + String(m + 1).padStart(2, "0") + "-" + String(d).padStart(2, "0"); }
+  function calEvents() { return EVENTS.filter(e => inScope(e) && !isLongEvent(e)); }
+  function eventsOn(d) { return calEvents().filter(e => d >= e.start.slice(0, 10) && d <= e.end.slice(0, 10)); }
+  function hidePop() { pop.hidden = true; selDate = null; weeksEl.querySelectorAll(".num-cell.sel").forEach(d => d.classList.remove("sel")); }
+  function showPop(anchor, dateStr) {
+    const evs = eventsOn(dateStr);
+    pop.innerHTML = '<div class="pop-date">' + dateStr + "</div>" +
+      (evs.length
+        ? evs.map(e =>
+            '<div class="pop-ev"><span class="dotc" style="background:' + e.color + '"></span>' +
+            '<div><div class="n"><a href="' + e.url + '" target="_blank" rel="noopener">' + e.name + "</a>" +
+            '<span class="tag ' + e.region + '">' + (e.region === "cn" ? "国内" : "国际") + "</span></div>" +
+            '<div class="t">' + e.start.slice(0, 16).replace("T", " ") + " → " + e.end.slice(0, 16).replace("T", " ") + " · " + e.form + "</div></div></div>"
+          ).join("")
+        : '<div class="pop-empty">这一天没有进行中的比赛</div>');
+    pop.hidden = false;
+    const r = anchor.getBoundingClientRect();
+    let x = Math.max(10, Math.min(r.left + r.width / 2 - 150, window.innerWidth - 310));
+    let y = r.bottom + 8;
+    if (y + pop.offsetHeight > window.innerHeight - 10) y = r.top - pop.offsetHeight - 8;
+    pop.style.left = x + "px"; pop.style.top = y + "px";
+  }
+
+  function render() {
+    const first = new Date(viewY, viewM, 1);
+    const startOffset = (first.getDay() + 6) % 7;
+    const daysInMonth = new Date(viewY, viewM + 1, 0).getDate();
+    const prevDays = new Date(viewY, viewM, 0).getDate();
+    titleEl.innerHTML = viewY + " 年 " + (viewM + 1) + " 月<span>" +
+      first.toLocaleString("en-US", { month: "long" }).toUpperCase() + "</span>";
+
+    /* 1) 构建周结构 */
+    const total = Math.ceil((startOffset + daysInMonth) / 7) * 7;
+    const weeks = [];
+    for (let i = 0; i < total; i += 7) {
+      const days = [];
+      for (let j = 0; j < 7; j++) {
+        const dNum = i + j - startOffset + 1;
+        let y = viewY, m = viewM, d = dNum, dim = false;
+        if (dNum < 1) { m = viewM - 1; d = prevDays + dNum; dim = true; if (m < 0) { m = 11; y--; } }
+        else if (dNum > daysInMonth) { m = viewM + 1; d = dNum - daysInMonth; dim = true; if (m > 11) { m = 0; y++; } }
+        days.push({ dateStr: iso(y, m, d), d, dim });
+      }
+      weeks.push(days);
+    }
+
+    /* 2) 车道分配：同一赛事在其跨越的所有周内占用同一车道 */
+    const evs = calEvents().slice().sort((a, b) =>
+      a.start === b.start ? (a.end > b.end ? -1 : 1) : (a.start < b.start ? -1 : 1));
+    const weekLanes = weeks.map(() => ({})); // week -> { lane: ev }
+    const evLane = new Map();
+    const hiddenEvs = new Set();
+    for (const ev of evs) {
+      const spanWeeks = [];
+      weeks.forEach((days, w) => {
+        if (ev.start.slice(0, 10) <= days[6].dateStr && ev.end.slice(0, 10) >= days[0].dateStr) {
+          spanWeeks.push(w);
+        }
+      });
+      if (!spanWeeks.length) continue;
+      let lane = 0;
+      while (lane < MAX_LANES && spanWeeks.some(w => weekLanes[w][lane])) lane++;
+      if (lane >= MAX_LANES) { hiddenEvs.add(ev); continue; }
+      evLane.set(ev, lane);
+      spanWeeks.forEach(w => { weekLanes[w][lane] = ev; });
+    }
+
+    /* 3) 渲染 */
+    const todayStr = iso(now.getFullYear(), now.getMonth(), now.getDate());
+    let html = "";
+    weeks.forEach((days, w) => {
+      /* 数字行 */
+      html += '<div class="wk"><div class="wk-nums">';
+      days.forEach(day => {
+        const dayEvs = eventsOn(day.dateStr);
+        const hiddenCount = dayEvs.filter(e => hiddenEvs.has(e)).length;
+        html += '<div class="num-cell' + (day.dim ? " dim" : "") +
+          (day.dateStr === todayStr ? " today" : "") +
+          '" data-date="' + day.dateStr + '">' +
+          '<span class="num">' + day.d + "</span>" +
+          (hiddenCount ? '<span class="more">+' + hiddenCount + "</span>" : "") +
+          "</div>";
+      });
+      html += "</div>";
+      /* 车道行 */
+      html += '<div class="wk-lanes">';
+      const lanes = weekLanes[w];
+      for (const laneStr of Object.keys(lanes)) {
+        const lane = Number(laneStr);
+        const ev = lanes[lane];
+        /* 本周内的起止列 */
+        let cs = 0, ce = 6;
+        days.forEach((day, j) => {
+          if (day.dateStr < ev.start.slice(0, 10)) cs = j + 1;
+          if (day.dateStr <= ev.end.slice(0, 10)) ce = j;
+        });
+        const contL = ev.start.slice(0, 10) < days[0].dateStr;
+        const contR = ev.end.slice(0, 10) > days[6].dateStr;
+        const showName = !contL; // 名称只显示在起始段
+        html += '<span class="ev-chip' + (contL ? " cont-l" : "") + (contR ? " cont-r" : "") +
+          '" style="grid-column:' + (cs + 1) + "/" + (ce + 2) + ";grid-row:" + (lane + 1) +
+          ";background:" + ev.color + '" data-date="' + (contL ? days[0].dateStr : ev.start.slice(0, 10)) +
+          '" title="' + ev.name.replace(/"/g, "&quot;") + '">' +
+          (showName ? ev.name : "") + "</span>";
+      }
+      html += "</div></div>";
+    });
+    weeksEl.innerHTML = html;
+  }
+
+  weeksEl.addEventListener("click", e => {
+    const cell = e.target.closest("[data-date]");
+    if (!cell) return;
+    if (selDate === cell.dataset.date && !pop.hidden) { hidePop(); return; }
+    hidePop();
+    selDate = cell.dataset.date;
+    const numCell = cell.classList.contains("num-cell") ? cell : null;
+    if (numCell) numCell.classList.add("sel");
+    showPop(cell, selDate);
+  });
+  document.addEventListener("click", e => {
+    if (!pop.hidden && !e.target.closest(".pop") && !e.target.closest("[data-date]")) hidePop();
+  });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") hidePop(); });
+  document.getElementById("segFilter").addEventListener("click", e => {
+    const btn = e.target.closest("button");
+    if (!btn) return;
+    regionFilter = btn.dataset.f;
+    document.querySelectorAll("#segFilter button").forEach(b => b.classList.toggle("on", b === btn));
+    hidePop(); render();
+    document.dispatchEvent(new Event("region-filter"));
+  });
+  document.getElementById("prevM").onclick = () => { viewM--; if (viewM < 0) { viewM = 11; viewY--; } hidePop(); render(); };
+  document.getElementById("nextM").onclick = () => { viewM++; if (viewM > 11) { viewM = 0; viewY++; } hidePop(); render(); };
+  document.getElementById("todayM").onclick = () => { viewY = now.getFullYear(); viewM = now.getMonth(); hidePop(); render(); };
+  render();
+  document.addEventListener("events-ready", render);
+  document.addEventListener("events-filter", render);
+})();
+
+/* ============ 四分组（主页风格卡片，竖排） ============ */
+(function () {
+  const els = {
+    pending: document.getElementById("gPending"),
+    upcoming: document.getElementById("gUpcoming"),
+    ongoing: document.getElementById("gOngoing"),
+    ended: document.getElementById("gEnded"),
+  };
+  const caps = {
+    pending: document.getElementById("cPending"),
+    upcoming: document.getElementById("cUpcoming"),
+    ongoing: document.getElementById("cOngoing"),
+    ended: document.getElementById("cEnded"),
+  };
+
+  function card(e, meta, rows) {
+    const rowsHtml = (rows || []).map(([k, v]) =>
+      '<div class="row"><span class="k">' + k + "</span><span>" + v + "</span></div>"
+    ).join("");
+    return '<div class="g-card">' +
+      '<div class="g-head">' +
+        '<span class="edge" style="background:' + (e.color || "var(--line)") + '"></span>' +
+        '<div class="info">' +
+          '<div class="n" title="' + e.name.replace(/"/g, "&quot;") + '">' +
+            '<span class="tag ' + (e.region || "cn") + '">' + (e.region === "intl" ? "国际" : "国内") + "</span>" +
+            e.name +
+          "</div>" +
+          '<div class="meta">' + meta + "</div>" +
+        "</div>" +
+        '<svg class="ic"><use href="#i-chev-down"/></svg>' +
+      "</div>" +
+      '<div class="g-body">' +
+        '<div class="row"><span class="k">比赛名称</span><span>' + e.name + "</span></div>" +
+        rowsHtml +
+        '<a class="go" href="' + e.url + '" target="_blank" rel="noopener">前往比赛 →</a>' +
+      "</div>" +
+    "</div>";
+  }
+  function timeMeta(e) {
+    return e.start.slice(0, 16).replace("T", " ") + " → " + e.end.slice(0, 16).replace("T", " ") +
+      (isLongEvent(e) ? " · 长周期" : "");
+  }
+  function timeRows(e) {
+    const rows = [
+      ["比赛时间", e.start.slice(0, 16).replace("T", " ") + " → " + e.end.slice(0, 16).replace("T", " ")],
+      ["比赛形式", e.form || "—"],
+    ];
+    if (isLongEvent(e)) rows.push(["备注", "比赛持续时间很长"]);
+    if (e.region === "intl") rows.push(["比赛权重", e.weight || 0]);
+    return rows;
+  }
+  function wireExpand(list) {
+    list.querySelectorAll(".g-head").forEach(h => {
+      h.onclick = () => h.parentElement.classList.toggle("open");
+    });
+  }
+
+  function build() {
+    const todayStr = new Date().toISOString().slice(0, 10);
+    /* 时间未定（仅国内 pending 赛事） */
+    caps.pending.textContent = PENDING.length + " 场";
+    els.pending.innerHTML = PENDING.map(e =>
+      card({ ...e, region: "cn", color: "var(--cn)" }, "时间待定",
+        [["比赛时间", "待定（已官宣，待公布）"], ["比赛说明", e.detail || "—"]])
+    ).join("") || '<div class="empty">暂无</div>';
+    /* 即将开始：开始时间在未来，按开始升序 */
+    const upcoming = EVENTS
+      .filter(e => e.start.slice(0, 10) > todayStr && inScope(e))
+      .sort((a, b) => a.start < b.start ? -1 : 1);
+    caps.upcoming.textContent = upcoming.length + " 场";
+    els.upcoming.innerHTML = upcoming.map(e => card(e, timeMeta(e), timeRows(e))).join("") || '<div class="empty">暂无</div>';
+    /* 正在进行：今天落在起止时间内，按结束升序 */
+    const ongoing = EVENTS
+      .filter(e => e.start.slice(0, 10) <= todayStr && e.end.slice(0, 10) >= todayStr && inScope(e))
+      .sort((a, b) => a.end < b.end ? -1 : 1);
+    caps.ongoing.textContent = ongoing.length + " 场";
+    els.ongoing.innerHTML = ongoing.map(e => card(e, timeMeta(e), timeRows(e))).join("") || '<div class="empty">暂无</div>';
+    /* 已经结束：按结束降序（最近的在前） */
+    const ended = EVENTS
+      .filter(e => e.end.slice(0, 10) < todayStr && inScope(e))
+      .sort((a, b) => a.end > b.end ? -1 : 1);
+    caps.ended.textContent = ended.length + " 场";
+    els.ended.innerHTML = ended.map(e => card(e, timeMeta(e), timeRows(e))).join("") || '<div class="empty">暂无</div>';
+    Object.values(els).forEach(wireExpand);
+  }
+  build();
+  document.addEventListener("events-ready", build);
+  document.addEventListener("events-filter", build);
+  document.addEventListener("region-filter", build);
+})();
+
+/* ============ 权重设置齿轮（手动输入数额，默认 50） ============ */
+(function () {
+  const gear = document.getElementById("evGear");
+  const pop = document.createElement("div");
+  pop.className = "pop pop-gear";
+  pop.hidden = true;
+  document.body.appendChild(pop);
+  function renderPop() {
+    pop.innerHTML = '<div class="t">国际赛权重过滤</div>' +
+      '<div class="wrow">' +
+        '<input type="range" id="wRange" min="0" max="100" step="1" value="' + weightMin + '">' +
+        '<input type="number" id="wNum" min="0" max="100" value="' + weightMin + '">' +
+      "</div>" +
+      '<div class="note">只显示权重 ≥ 该值的国际赛（0 = 全部）<br>国内赛事不受影响 · 设置自动保存</div>';
+    const range = pop.querySelector("#wRange");
+    const num = pop.querySelector("#wNum");
+    function apply(v) {
+      v = Math.max(0, Math.min(100, Math.round(+v) || 0));
+      weightMin = v;
+      range.value = v;
+      num.value = v;
+      localStorage.setItem("hc-ev-weight", v);
+      document.dispatchEvent(new Event("events-filter"));
+    }
+    range.oninput = e => apply(e.target.value);
+    num.onchange = e => apply(e.target.value);
+  }
+  gear.onclick = e => {
+    e.stopPropagation();
+    if (!pop.hidden) { pop.hidden = true; gear.classList.remove("on"); return; }
+    renderPop();
+    pop.hidden = false;
+    gear.classList.add("on");
+    const r = gear.getBoundingClientRect();
+    pop.style.left = Math.max(10, Math.min(r.right - 250, window.innerWidth - 260)) + "px";
+    pop.style.top = (r.bottom + 8) + "px";
+  };
+  document.addEventListener("click", e => {
+    if (!pop.hidden && !e.target.closest(".pop-gear") && !e.target.closest("#evGear")) {
+      pop.hidden = true;
+      gear.classList.remove("on");
+    }
+  });
+})();
+</script>
+</body>
+</html>
