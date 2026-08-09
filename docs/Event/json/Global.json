@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "The heart of Sysola",
-        "比赛时间": "2026-08-08 21:00:00 - 2026-08-09 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3382.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://caplag.ru/competitions/the-heart-of-sysola",
-        "比赛标志": "https://ctftime.org/media/events/photo_2026-07-23_13-34-47.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "Caplag (https://ctftime.org/team/423152)",
-        "比赛ID": "1652",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Thryve CTF 2026",
         "比赛时间": "2026-08-14 19:00:00 - 2026-08-15 04:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3330.ics",
@@ -564,18 +552,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "RoboHack AI CTF (Robotic Hacking Community at DEFCON 34)",
-        "比赛时间": "2026-08-07 08:00:00 - 2026-08-09 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3305.ics",
-        "比赛形式": "Hack quest",
-        "比赛链接": "https://www.robotichackingcommunity.com/",
-        "比赛标志": "https://ctftime.org/media/events/Robotic_Hacking_Community_on_black-h_1.png",
-        "比赛权重": "0",
-        "赛事主办": "robotichackingcommunity (https://ctftime.org/team/436123)",
-        "比赛ID": "1605",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "DEF CON CTF 2026",
         "比赛时间": "2026-08-08 00:00:00 - 2026-08-10 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3322.ics",
@@ -610,6 +586,30 @@
         "赛事主办": "SIGPwny (https://ctftime.org/team/27763)",
         "比赛ID": "95",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "The heart of Sysola",
+        "比赛时间": "2026-08-08 21:00:00 - 2026-08-09 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3382.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://caplag.ru/competitions/the-heart-of-sysola",
+        "比赛标志": "https://ctftime.org/media/events/photo_2026-07-23_13-34-47.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Caplag (https://ctftime.org/team/423152)",
+        "比赛ID": "1652",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "RoboHack AI CTF (Robotic Hacking Community at DEFCON 34)",
+        "比赛时间": "2026-08-07 08:00:00 - 2026-08-09 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3305.ics",
+        "比赛形式": "Hack quest",
+        "比赛链接": "https://www.robotichackingcommunity.com/",
+        "比赛标志": "https://ctftime.org/media/events/Robotic_Hacking_Community_on_black-h_1.png",
+        "比赛权重": "0",
+        "赛事主办": "robotichackingcommunity (https://ctftime.org/team/436123)",
+        "比赛ID": "1605",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Kali Team - CTF 26",
@@ -1797,18 +1797,6 @@
         "比赛权重": "66.00",
         "赛事主办": "b01lers (https://ctftime.org/team/11464)",
         "比赛ID": "408",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "squ1rrel CTF 2026",
-        "比赛时间": "2026-04-18 07:00:00 - 2026-04-19 14:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3234.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.squ1rrel.dev/",
-        "比赛标志": "https://ctftime.org/media/events/squ1rrel_logo_1.png",
-        "比赛权重": "32.47",
-        "赛事主办": "squ1rrel (https://ctftime.org/team/201730)",
-        "比赛ID": "1110",
         "比赛状态": "past"
     }
 ]

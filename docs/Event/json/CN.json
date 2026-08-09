@@ -131,19 +131,19 @@
                 "status": "正在进行"
             },
             {
-                "name": "宁波市第九届网络安全大赛（初赛）",
-                "link": "https://ningbo.dasctf.com",
-                "comp_time_start": "2026年08月08日 00:00",
-                "comp_time_end": "2026年08月08日 23:59",
-                "detail": "赛制/类型: 线上解题赛（初赛）\n指导：宁波市公安局；报名已于 07-22 截止",
-                "status": "正在进行"
-            },
-            {
                 "name": "NepCTF 2026",
                 "link": "https://www.nepctf.com/",
                 "comp_time_start": "2026年07月17日 19:00",
                 "comp_time_end": "2026年07月19日 19:00",
                 "detail": "赛制/类型: 线上Jeopardy解题赛",
+                "status": "已经结束"
+            },
+            {
+                "name": "宁波市第九届网络安全大赛（初赛）",
+                "link": "https://ningbo.dasctf.com",
+                "comp_time_start": "2026年08月08日 00:00",
+                "comp_time_end": "2026年08月08日 23:59",
+                "detail": "赛制/类型: 线上解题赛（初赛）\n指导：宁波市公安局；报名已于 07-22 截止",
                 "status": "已经结束"
             }
         ],
