@@ -123,14 +123,6 @@
                 "status": "正在进行"
             },
             {
-                "name": "第七届“蒙古马杯”学生组网络安全竞赛（预赛）",
-                "link": "https://www.imnu.edu.cn/info/1311/117361.htm",
-                "comp_time_start": "2026年08月10日 00:00",
-                "comp_time_end": "2026年08月10日 23:59",
-                "detail": "赛制/类型: 线上预赛（含 CTF 夺旗赛）\n2026年全区教育系统网络安全竞赛",
-                "status": "正在进行"
-            },
-            {
                 "name": "NepCTF 2026",
                 "link": "https://www.nepctf.com/",
                 "comp_time_start": "2026年07月17日 19:00",
@@ -144,6 +136,14 @@
                 "comp_time_start": "2026年08月08日 00:00",
                 "comp_time_end": "2026年08月08日 23:59",
                 "detail": "赛制/类型: 线上解题赛（初赛）\n指导：宁波市公安局；报名已于 07-22 截止",
+                "status": "已经结束"
+            },
+            {
+                "name": "第七届“蒙古马杯”学生组网络安全竞赛（预赛）",
+                "link": "https://www.imnu.edu.cn/info/1311/117361.htm",
+                "comp_time_start": "2026年08月10日 00:00",
+                "comp_time_end": "2026年08月10日 23:59",
+                "detail": "赛制/类型: 线上预赛（含 CTF 夺旗赛）\n2026年全区教育系统网络安全竞赛",
                 "status": "已经结束"
             }
         ],
