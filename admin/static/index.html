@@ -852,12 +852,17 @@ function openEventModal(event, asNew) {
       <input data-field="${key}" value="${escapeHtml(event ? (event[key] ?? "") : "")}"></div>`;
   }).join("");
   const pendingChecked = event && event.pending ? "checked" : "";
+  const freshmanChecked = event && event.freshman ? "checked" : "";
   openModal(
     event ? `编辑比赛：${event.name}` : "添加比赛",
     `<div class="form-grid">${fieldsHtml}</div>
      <label style="display:flex;align-items:center;gap:8px;margin-top:12px;font-size:13px;cursor:pointer;width:100%;">
        <input type="checkbox" id="event-pending" ${pendingChecked} style="width:14px;height:14px;flex:none;margin:0;">
        <span>时间待定（已官宣但具体时间未公布）</span>
+     </label>
+     <label style="display:flex;align-items:center;gap:8px;margin-top:8px;font-size:13px;cursor:pointer;width:100%;">
+       <input type="checkbox" id="event-freshman" ${freshmanChecked} style="width:14px;height:14px;flex:none;margin:0;">
+       <span>新生赛（新手向赛事：长周期也强制显示在首页日历时间轴，卡片带「新人推荐」标签）</span>
      </label>`,
     { onOk: saveEventModal }
   );
@@ -872,6 +877,7 @@ async function saveEventModal() {
     event[key] = v;
   });
   if ($("event-pending").checked) event.pending = true;
+  if ($("event-freshman").checked) event.freshman = true;
   if (!event.name) { toast("名称不能为空", false); return; }
 
   const action = editingOriginalName

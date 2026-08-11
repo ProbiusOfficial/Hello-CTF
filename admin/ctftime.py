@@ -90,6 +90,8 @@ def _normalize_event(event):
         event["detail"] = DEFAULT_DETAIL
     if not event.get("pending"):
         event.pop("pending", None)  # 未勾选时不留字段，保持 JSON 简洁
+    if not event.get("freshman"):
+        event.pop("freshman", None)  # 同上：新生赛标记未勾选时不留字段
     event["status"] = events_update.cn_derived_status(event)
     return event
 
