@@ -468,18 +468,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Platypwn 2026",
-        "比赛时间": "2026-11-14 17:00:00 - 2026-11-16 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3082.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://platypwnies.de/events/platypwn/",
-        "比赛标志": "https://ctftime.org/media/events/platypwnies-512_1_1.png",
-        "比赛权重": "37.00",
-        "赛事主办": "Platypwnies (https://ctftime.org/team/112550)",
-        "比赛ID": "979",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "GlacierCTF 2026",
         "比赛时间": "2026-11-21 02:00:00 - 2026-11-22 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3337.ics",
@@ -840,7 +828,7 @@
         "比赛状态": "past"
     },
     {
-        "比赛名称": "EYCC CTF 2026",
+        "比赛名称": "EYCC CTF 2026 Qualifiers",
         "比赛时间": "2026-07-17 19:00:00 - 2026-07-19 19:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3353.ics",
         "比赛形式": "Jeopardy",
