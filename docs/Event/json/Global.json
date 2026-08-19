@@ -60,6 +60,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "$N1PH€RS 3.0 CTF",
+        "比赛时间": "2026-08-22 11:15:00 - 2026-08-22 19:15:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3397.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.ex0rcists.in/",
+        "比赛标志": "https://ctftime.org/media/events/Ex0rcists_logo.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "Ex0rcists (https://ctftime.org/team/311156)",
+        "比赛ID": "1668",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "E0F CTF",
         "比赛时间": "2026-08-22 15:00:00 - 2026-08-23 15:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3400.ics",
@@ -81,6 +93,18 @@
         "比赛权重": "0.00",
         "赛事主办": "TallDwarf Hosting (https://ctftime.org/team/443103)",
         "比赛ID": "1664",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "PECAN+ CTF 2026",
+        "比赛时间": "2026-08-23 09:00:00 - 2026-08-23 13:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3411.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://pecanplus.org/",
+        "比赛标志": "https://ctftime.org/media/events/pecanlogo_1.png",
+        "比赛权重": "0",
+        "赛事主办": "PECAN+ (https://ctftime.org/team/250009)",
+        "比赛ID": "973",
         "比赛状态": "oncoming"
     },
     {
@@ -129,6 +153,18 @@
         "比赛权重": "0",
         "赛事主办": "UND CyberHawks (https://ctftime.org/team/439400)",
         "比赛ID": "1627",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Iran Tech Olympics CTF 2026",
+        "比赛时间": "2026-08-29 22:00:00 - 2026-08-30 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3413.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.olympics.tech/",
+        "比赛标志": "https://ctftime.org/media/events/irantech.jpg",
+        "比赛权重": "25.00",
+        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
+        "比赛ID": "1314",
         "比赛状态": "oncoming"
     },
     {
@@ -420,6 +456,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "SAS CTF 2026 Finals",
+        "比赛时间": "2026-10-20 11:00:00 - 2026-10-20 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3409.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://ctf.thesascon.com/",
+        "比赛标志": "https://ctftime.org/media/events/SAS26_temp_1.png",
+        "比赛权重": "49.50",
+        "赛事主办": "SAS CREW (https://ctftime.org/team/283057)",
+        "比赛ID": "1081",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "HITCON CTF 2026",
         "比赛时间": "2026-10-23 22:00:00 - 2026-10-25 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3340.ics",
@@ -516,6 +564,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "CSAW CTF Final Round 2026",
+        "比赛时间": "2026-11-13 01:00:00 - 2026-11-14 13:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3410.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.csaw.io/",
+        "比赛标志": "https://ctftime.org/media/events/csawlogo_2.png",
+        "比赛权重": "1.00",
+        "赛事主办": "NYUSEC (https://ctftime.org/team/439)",
+        "比赛ID": "19",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "WolvCTF 2026",
         "比赛时间": "2026-11-14 07:00:00 - 2026-11-16 07:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3049.ics",
@@ -549,6 +609,18 @@
         "比赛权重": "0.00",
         "赛事主办": "Kernel Sanders (https://ctftime.org/team/397)",
         "比赛ID": "241",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Seize da Flaq",
+        "比赛时间": "2026-11-21 14:30:00 - 2026-11-22 10:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3408.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://seizedaflaq.cyberonites.com/",
+        "比赛标志": "https://ctftime.org/media/events/SDF_1.jpeg",
+        "比赛权重": "0",
+        "赛事主办": "Seize da Flaq (https://ctftime.org/team/442848)",
+        "比赛ID": "1657",
         "比赛状态": "oncoming"
     },
     {
