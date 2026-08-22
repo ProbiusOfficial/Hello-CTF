@@ -19,14 +19,6 @@
                 "status": "时间待定"
             },
             {
-                "name": "第九届西湖论剑·中国杭州网络安全技能大赛（初赛）",
-                "link": "https://www.hangzhou.gov.cn/col/col812266/art/2026/art_483d44943a4f4b898e1998389d4ee3b0.html",
-                "comp_time_start": "2026年08月21日 13:00",
-                "comp_time_end": "2026年08月21日 18:00",
-                "detail": "赛制/类型: 线上初赛（首次引入 AI Agent 解题夺旗赛制）\n指导：杭州市公安局等；报名截止 08-10 16:00；决赛 9 月底前",
-                "status": "即将开始"
-            },
-            {
                 "name": "第六届极客少年挑战赛（决赛）",
                 "link": "https://mp.weixin.qq.com/s/qFyd2QmUWUSIjubxinTsnA",
                 "comp_time_start": "2026年08月23日 00:00",
@@ -115,14 +107,6 @@
                 "status": "即将开始"
             },
             {
-                "name": "第二届 OpenHarmony CTF 智能漏洞挖掘赛（初赛）",
-                "link": "https://thuctf.tsinghua.edu.cn/harmonyctf/games/2",
-                "comp_time_start": "2026年08月01日 00:00",
-                "comp_time_end": "2026年08月21日 23:59",
-                "detail": "赛制/类型: 线上Jeopardy解题赛（初赛）\n主办方：清华大学（XCTF 外卡赛，冠军直通第十一届 XCTF 总决赛）\n面向中国大陆及港澳台高校在读学生；决赛提交期 9 月，现场决赛时间待定",
-                "status": "正在进行"
-            },
-            {
                 "name": "MoeCTF 2026",
                 "link": "https://ctf.xidian.edu.cn/games/37/",
                 "comp_time_start": "2026年08月09日 09:00",
@@ -140,6 +124,14 @@
                 "status": "已经结束"
             },
             {
+                "name": "第二届 OpenHarmony CTF 智能漏洞挖掘赛（初赛）",
+                "link": "https://thuctf.tsinghua.edu.cn/harmonyctf/games/2",
+                "comp_time_start": "2026年08月01日 00:00",
+                "comp_time_end": "2026年08月21日 23:59",
+                "detail": "赛制/类型: 线上Jeopardy解题赛（初赛）\n主办方：清华大学（XCTF 外卡赛，冠军直通第十一届 XCTF 总决赛）\n面向中国大陆及港澳台高校在读学生；决赛提交期 9 月，现场决赛时间待定",
+                "status": "已经结束"
+            },
+            {
                 "name": "宁波市第九届网络安全大赛（初赛）",
                 "link": "https://ningbo.dasctf.com",
                 "comp_time_start": "2026年08月08日 00:00",
@@ -153,6 +145,14 @@
                 "comp_time_start": "2026年08月10日 00:00",
                 "comp_time_end": "2026年08月10日 23:59",
                 "detail": "赛制/类型: 线上预赛（含 CTF 夺旗赛）\n2026年全区教育系统网络安全竞赛",
+                "status": "已经结束"
+            },
+            {
+                "name": "第九届西湖论剑·中国杭州网络安全技能大赛（初赛）",
+                "link": "https://www.hangzhou.gov.cn/col/col812266/art/2026/art_483d44943a4f4b898e1998389d4ee3b0.html",
+                "comp_time_start": "2026年08月21日 13:00",
+                "comp_time_end": "2026年08月21日 18:00",
+                "detail": "赛制/类型: 线上初赛（首次引入 AI Agent 解题夺旗赛制）\n指导：杭州市公安局等；报名截止 08-10 16:00；决赛 9 月底前",
                 "status": "已经结束"
             }
         ],
