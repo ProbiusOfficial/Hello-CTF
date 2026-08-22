@@ -1,0 +1,1060 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>古典密码 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-env/">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Docker_On_Linux/">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link on" href="./">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h2 id="classic-cryptography">古典密码 / Classic cryptography<a class="headerlink" href="#classic-cryptography" title="Permanent link">¶</a></h2>
+<h3 id="_1">简述<a class="headerlink" href="#_1" title="Permanent link">¶</a></h3>
+<p><strong>古典密码(Classic cryptography)</strong> 在形式上可分成 <strong>移位密码(Shift Cipher)</strong> 和 <strong>替代密码(Substitution Cipher)</strong> 两类，其中替代密码又可分为单表替代和多表替代。有时则是两者的混合。其于历史中经常使用，但现代已经很少使用，大部分的已经不再使用了。</p>
+<blockquote>
+<p><img alt="中文wiki-古典密码" src="../assets/image-20230930134521408.png">图：<a href="https://zh.wikipedia.org/wiki/%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A2%BC">中文wiki-古典密码</a></p>
+</blockquote>
+<h3 id="_2">移位密码<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p>移位式密码，它们字母本身不变，但它们在消息中顺序是依照一个定义明确的项目改变。许多移位式密码是基于<a href="https://zh.wikipedia.org/wiki/%E5%87%A0%E4%BD%95">几何</a>而设计的。一个简单的加密（也易被破解），可以将字母向右移1位。例如，明文"Hello my name is Alice."将变成"olleH ym eman si ecilA."。</p>
+<h4 id="rail-fence">栅栏密码 Rail-fence<a class="headerlink" href="#rail-fence" title="Permanent link">¶</a></h4>
+<p><strong>栅栏密码(Rail-fence Cipher)</strong> 就是把要加密的明文分成N个一组，然后把每组的第1个字符组合，每组第2个字符组合...每组的第N(最后一个分组可能不足N个)个字符组合，最后把他们全部连接起来就是密文，这里以**key=2**栏栅栏加密为例。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>明文：Squdgy fez, blank jimp crwth vox
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>分组：Sq ud gy  f ez ,  bl an k  ji mp  c rw th  v ox 
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>将每组以前后顺序上下展开：
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>第一行 S u g   e , b a k j m   r t   o
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>第二行 q d y f z   l n   i p c w h v x
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>得密文 Sug e,bakjm rt oqdyfz ln ipcwhvx
+</code></pre></div>
+<h4 id="curve">曲路密码 Curve<a class="headerlink" href="#curve" title="Permanent link">¶</a></h4>
+<p><strong>「曲路密码 Curve Cipher」</strong> 是一种按照双方约定密钥路径加解密的换位密码。</p>
+<p>明文： <code>The quick brown fox jumps over the lazy dog</code></p>
+<p>填入5行7列表(事先约定填充的行列数)</p>
+<p><img alt="img" src="../assets/2016071103145728301.png"> </p>
+<p>加密的回路线(事先约定填充的行列数)</p>
+<p><img alt="img" src="../assets/2016071103145873152.png"> </p>
+<p>密文： <code>gesfc inpho dtmwu qoury zejre hbxva lookT</code>           </p>
+<h4 id="columnar-transposition">列移位密码 Columnar Transposition<a class="headerlink" href="#columnar-transposition" title="Permanent link">¶</a></h4>
+<p><strong>「列移位密码 Columnar Transposition Cipher」</strong> 一种比较简单，易于实现的换位密码，通过一个简单的规则将明文打乱混合成密文。</p>
+<p>以明文 <code>The quick brown fox jumps over the lazy dog</code>，密钥 how are u 为例。</p>
+<p>填入5行7列表(事先约定填充的行列数，如果明文不能填充完表格可以约定使用某个字母进行填充)</p>
+<p><img alt="img" src="../assets/2016071103145728301-1696279955663-5.png"> </p>
+<p>密钥： <code>how are u</code></p>
+<p>按how are u在字母表中的出现的先后顺序进行编号，我们就有a为1,e为2，h为3，o为4，r为5，u为6，w为7，所以先写出a列，其次e列，以此类推写出的结果便是密文：</p>
+<p><img alt="img" src="../assets/2016071103150019394.png"> </p>
+<p>密文： <code>qoury inpho Tkool hbxva uwmtd cfseg erjez</code></p>
+<h3 id="_3">替代密码<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<p>替代密码是字母（或是字母群）作有系统的代换，直到消息被替换成其它难以解读的字。</p>
+<p>替换式密码亦有许多不同类型。如果每一个字母为一单元（或称元素）进行加密操作，就可以称之为 <strong>「简易替换密码 simple substitution cipher」</strong> 或 <strong>「单表加密 monoalphabetic cipher 」</strong> 另又称为 <strong>单字母替换加密</strong> ;  以数个字母为一单元则称为 <strong>「多表加密 polyalphabetic cipher」</strong> 或  <strong>「表格式加密 polygraphic」</strong>。</p>
+<h4 id="atbash">阿特巴希密码 Atbash<a class="headerlink" href="#atbash" title="Permanent link">¶</a></h4>
+<p><strong>埃特巴什码</strong>，密文表是明文表的逆转：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>明文表：ABCDEFGHIJKLMNOPQRSTUVWXYZ 
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>密文表：ZYXWVUTSRQPONMLKJIHGFEDCBA
+</code></pre></div>
+<p>明文：<code>the quick brown fox jumps over the lazy dog</code> </p>
+<p>密文：<code>gsv jfrxp yildm ulc qfnkh levi gsv ozab wlt</code></p>
+<h4 id="pigpen">猪圈密码 Pigpen<a class="headerlink" href="#pigpen" title="Permanent link">¶</a></h4>
+<p><strong>「猪圈密码 Pigpen cipher」</strong> ，亦称 <strong>「共济会密码 Masonic cipher」</strong>   或  <strong>共济会员密码 Freemason's cipher」</strong>，是一种以格子为基础的简单 <strong>单表固定</strong> 替换密码。</p>
+<p><img alt="猪圈密码" src="../assets/1-210929213Z22X.jpg"> </p>
+<h4 id="templar">圣堂武士密码 Templar<a class="headerlink" href="#templar" title="Permanent link">¶</a></h4>
+<p><strong>圣堂武士密码(Templar Cipher)</strong> 是共济会的猪圈密码的一个变种，一直被共济会圣殿骑士使用。</p>
+<p><img alt="image-20231003142634209" src="../assets/image-20231003142634209.png"> </p>
+<h4 id="bacon">培根密码 Bacon<a class="headerlink" href="#bacon" title="Permanent link">¶</a></h4>
+<p><strong>培根密码</strong>，又名**倍康尼密码(Bacon's cipher)** 是由<a href="https://zh.wikipedia.org/wiki/%E6%B3%95%E5%85%B0%E8%A5%BF%E6%96%AF%C2%B7%E5%9F%B9%E6%A0%B9">法兰西斯·培根</a>发明的一种<a href="https://zh.wikipedia.org/wiki/%E9%9A%90%E5%86%99%E6%9C%AF">隐写术</a>。</p>
+<p>加密时，<a href="https://zh.wikipedia.org/wiki/%E6%98%8E%E6%96%87">明文</a>中的每个字母都会转换成一组五个英文字母。其转换依靠下表：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>a   AAAAA   g     AABBA   n    ABBAA   t     BAABA
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>b   AAAAB   h     AABBB   o    ABBAB   u-v   BAABB
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>c   AAABA   i-j   ABAAA   p    ABBBA   w     BABAA
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>d   AAABB   k     ABAAB   q    ABBBB   x     BABAB
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>e   AABAA   l     ABABA   r    BAAAA   y     BABBA
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>f   AABAB   m     ABABB   s    BAAAB   z     BABBB
+</code></pre></div>
+<p>这只是一款最常用的加密表，有另外一款将每种字母配以不同的字母组予以转换，即I与J、U与V皆有不同编号。</p>
+<h4 id="caesar">凯撒密码 Caesar<a class="headerlink" href="#caesar" title="Permanent link">¶</a></h4>
+<p><strong>凯撒密码</strong>（或称恺撒加密、恺撒变换、变换加密、位移加密）是一种 <strong>单表代换</strong> 替换加密，明文中的所有字母都在字母表上向后（或向前）按照一个固定数目进行偏移后被替换成密文。例，当 偏移量 <strong>Key = 3</strong> 的时候，所有的字母A将被替换成D，B变成E，以此类推。</p>
+<p><img alt="image-20231003045704096" src="../assets/image-20231003045704096.png" width="50%"> </p>
+<h4 id="vigenere-cipher">维吉尼亚密码 Vigenère Cipher<a class="headerlink" href="#vigenere-cipher" title="Permanent link">¶</a></h4>
+<p><strong>维吉尼亚密码</strong> 是在单一恺撒密码的基础上扩展出 <strong>多表代换</strong> 替换加密，根据密钥(当密钥长度小于明文长度时可以循环使用)来决定用哪一行的密表来进行替换，以此来对抗字频统计。</p>
+<p><img alt="用来加密解密的维吉尼亚表格" src="../assets/4a03e279279cbc74203cbe0a4895e6fd.png" width="50%"> </p>
+<p>在一个<a href="https://zh.wikipedia.org/wiki/%E5%87%B1%E6%92%92%E5%AF%86%E7%A2%BC">凯撒密码</a>中，字母表中的每一字母都会作一定的偏移，例如偏移量为3时，<code>A</code>就转换为了<code>D</code>、<code>B</code>转换为了<code>E</code>……而维吉尼亚密码则是由一些偏移量不同的凯撒密码组成。</p>
+<p>为了生成密码，需要使用<a href="https://zh.wikipedia.org/wiki/%E8%A1%A8%E6%A0%BC%E6%B3%95">表格法</a>。这一表格包括了26行字母表，每一行都由前一行向左偏移一位得到。具体使用哪一行字母表进行编译是基于密钥进行的，在过程中会不断地变换。</p>
+<p>例如，假设<a href="https://zh.wikipedia.org/wiki/%E6%98%8E%E6%96%87">明文</a>为：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ATTACKATDAWN
+</code></pre></div>
+<p>选择某一关键词并重复而得到密钥，如关键词为<code>LEMON</code>时，密钥为：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>LEMONLEMONLE
+</code></pre></div>
+<p>对于明文的第一个字母<code>A</code>，对应密钥的第一个字母<code>L</code>，于是使用表格中<code>L</code>行字母表进行加密，得到<a href="https://zh.wikipedia.org/wiki/%E5%AF%86%E6%96%87">密文</a>第一个字母<code>L</code>。类似地，明文第二个字母为<code>T</code>，在表格中使用对应的<code>E</code>行进行加密，得到密文第二个字母<code>X</code>。以此类推，可以得到：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>明文：ATTACKATDAWN
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>密钥：LEMONLEMONLE
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>密文：LXFOPVEFRNHR
+</code></pre></div>
+<p>解密的过程则与加密相反。例如：根据密钥第一个字母<code>L</code>所对应的<code>L</code>行字母表，发现密文第一个字母<code>L</code>位于<code>A</code>列，因而明文第一个字母为<code>A</code>。密钥第二个字母<code>E</code>对应<code>E</code>行字母表，而密文第二个字母<code>X</code>位于此行<code>T</code>列，因而明文第二个字母为<code>T</code>。以此类推便可得到明文。</p>
+<p>用数字0-25代替字母<code>A</code>-<code>Z</code>，维吉尼亚密码的加密文法可以写成<a href="https://zh.wikipedia.org/wiki/%E5%90%8C%E4%BD%99">同余</a>的形式：
+$$
+\begin{align*}
+C_i &amp; \equiv (P_i + K_i) \mod 26 \
+\end{align*}
+$$
+解密方法则能写成：
+$$
+\begin{align*}
+P_i &amp; \equiv (C_i - K_i) \mod 26
+\end{align*}
+$$</p>
+<h3 id="_4">小结<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<ul>
+<li><a href="https://quipqiup.com/">quipquip 自动化的替换密码解算器 </a></li>
+<li><a href="http://www.hiencode.com/">CTF在线工具</a></li>
+</ul>
+<p>许多古典密码可单单经由密文而破解，所以它们容易受到 <strong>「唯密文攻击法 ciphertext-only attack，COA 」</strong> 攻击。</p>
+<p>有些古典密码（像是凯撒密码）的密钥个数有限，所以这类密码可以使用 <strong>暴力破解</strong> 尝试所有的密钥。</p>
+<p>替代式密码有比较大的密钥数，但是容易被频率分析，因为每个密码字母各代表了一个明文字母。</p>
+<p>多字母替代式密码，像是<a href="https://zh.wikipedia.org/wiki/%E7%BB%B4%E5%90%89%E5%B0%BC%E4%BA%9A%E5%AF%86%E7%A0%81">维吉尼亚密码</a>使用多个替换防止了简单的频率分析，然而，更先进的技术<a href="https://zh.wikipedia.org/wiki/%E7%BB%B4%E5%90%89%E5%B0%BC%E4%BA%9A%E5%AF%86%E7%A0%81#%E5%8D%A1%E8%A5%BF%E6%96%AF%E5%9F%BA%E8%AF%95%E9%AA%8C">卡西斯基试验</a>就可用来破解这类密码。</p>
+<p>古典密码的常见变换在上述介绍的几种常见密码中已经体现，所以其他类似变换的古典密码就不再赘述，总的来说，在算力和统计学的双双加持下，古典密码再也不能满足安全应用，同时在CTF中也不会作为核心考点出现，同编码一样，结合搜索引擎去解决对应问题即可，如果解决不了——题有问题。</p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../Encode/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 编码基础"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        编码基础
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../Moderncipher/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: 现代密码"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        现代密码
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#classic-cryptography">古典密码 / Classic cryptography</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_1">简述</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_2">移位密码</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#rail-fence">栅栏密码 Rail-fence</a>
+        
+      </li>
+    
+      <li>
+        <a href="#curve">曲路密码 Curve</a>
+        
+      </li>
+    
+      <li>
+        <a href="#columnar-transposition">列移位密码 Columnar Transposition</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_3">替代密码</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#atbash">阿特巴希密码 Atbash</a>
+        
+      </li>
+    
+      <li>
+        <a href="#pigpen">猪圈密码 Pigpen</a>
+        
+      </li>
+    
+      <li>
+        <a href="#templar">圣堂武士密码 Templar</a>
+        
+      </li>
+    
+      <li>
+        <a href="#bacon">培根密码 Bacon</a>
+        
+      </li>
+    
+      <li>
+        <a href="#caesar">凯撒密码 Caesar</a>
+        
+      </li>
+    
+      <li>
+        <a href="#vigenere-cipher">维吉尼亚密码 Vigenère Cipher</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_4">小结</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

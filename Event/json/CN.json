@@ -1,0 +1,164 @@
+{
+    "success": true,
+    "data": {
+        "result": [
+            {
+                "name": "“铸网-2026”山东省工业互联网网络安全职业技能竞赛暨攻防演练（鲁智杯）",
+                "link": "https://mp.weixin.qq.com/s/K1xD5t-7sExZWwD1FtMrXA",
+                "detail": "赛制/类型: 线上初赛（理论+CTF）+ 现场决赛\n主办：山东省通信管理局等；报名已于 08-05 截止\n官方拟于 2026 年 9 月举办，具体时间待定",
+                "status": "时间待定",
+                "pending": true
+            },
+            {
+                "name": "2026年电信和互联网行业网络安全管理员职业技能竞赛",
+                "link": "https://mp.weixin.qq.com/s/DFokodTJ4nm30TQ7ffzWug",
+                "comp_time_start": "2026年10月30日 12:00",
+                "comp_time_end": "2026年10月30日 18:00",
+                "detail": "竞赛分为选拔赛和全国总决赛两个阶段。（一）选拔赛阶段：2026年10月30日前完成（二）全国总决赛阶段：2026年11月30日前完成由竞赛组委会统一组织全国总决赛。比赛时间未定，详细见 https://mp.weixin.qq.com/s/DFokodTJ4nm30TQ7ffzWug",
+                "pending": true,
+                "status": "时间待定"
+            },
+            {
+                "name": "第六届极客少年挑战赛（决赛）",
+                "link": "https://mp.weixin.qq.com/s/qFyd2QmUWUSIjubxinTsnA",
+                "comp_time_start": "2026年08月23日 00:00",
+                "comp_time_end": "2026年08月23日 23:59",
+                "detail": "赛制/类型: 线下 CTF 解题赛（决赛）\n地点：四川大学网络空间安全学院靶场（成都）\n面向全国在校中小学生",
+                "status": "即将开始"
+            },
+            {
+                "name": "第七届“蒙古马杯”学生组网络安全竞赛（决赛）",
+                "link": "https://www.imnu.edu.cn/info/1311/117361.htm",
+                "comp_time_start": "2026年08月27日 00:00",
+                "comp_time_end": "2026年08月30日 23:59",
+                "detail": "赛制/类型: 线下决赛\n地点：呼和浩特市（具体地点待通知）",
+                "status": "即将开始"
+            },
+            {
+                "name": "第二届“湾区杯”网络安全大赛（初赛）",
+                "link": "https://race.cinsa.org.cn/",
+                "comp_time_start": "2026年08月28日 00:00",
+                "comp_time_end": "2026年08月28日 23:59",
+                "detail": "赛制/类型: 线上初赛\n指导：广东省委网信办等；报名截止 08-24；决赛 9 月网络安全周期间；增设青少年赛道",
+                "status": "即将开始"
+            },
+            {
+                "name": "宁波市第九届网络安全大赛（决赛）",
+                "link": "https://ningbo.dasctf.com",
+                "comp_time_start": "2026年08月29日 00:00",
+                "comp_time_end": "2026年08月29日 23:59",
+                "detail": "赛制/类型: 线下决赛\n地点：宁波",
+                "status": "即将开始"
+            },
+            {
+                "name": "第二届 OpenHarmony CTF 智能漏洞挖掘赛（决赛提交）",
+                "link": "https://thuctf.tsinghua.edu.cn/harmonyctf/games/2",
+                "comp_time_start": "2026年09月01日 00:00",
+                "comp_time_end": "2026年09月30日 23:59",
+                "detail": "赛制/类型: 线上提交（决赛阶段）\n主办方：清华大学；现场决赛时间地点待定",
+                "status": "即将开始"
+            },
+            {
+                "name": "2026年京津冀大学生信息安全网络攻防大赛（初赛）",
+                "link": "https://www.tjise.edu.cn/info/1008/5580.htm",
+                "comp_time_start": "2026年09月13日 00:00",
+                "comp_time_end": "2026年09月13日 23:59",
+                "detail": "赛制/类型: 线上初赛（理论+CTF夺旗）\n主办：天津市教委、北京市教委、河北省教育厅；报名 07-01 至 09-10；面向京津冀本科高校在校生",
+                "status": "即将开始"
+            },
+            {
+                "name": "2026年京津冀大学生信息安全网络攻防大赛（决赛）",
+                "link": "https://www.tjise.edu.cn/info/1008/5580.htm",
+                "comp_time_start": "2026年10月11日 00:00",
+                "comp_time_end": "2026年10月11日 23:59",
+                "detail": "赛制/类型: 线下决赛（渗透测试+应急响应）\n地点：天津市大学软件学院（天津）",
+                "status": "即将开始"
+            },
+            {
+                "name": "第五届中国研究生网络安全创新大赛（实网对抗初赛）",
+                "link": "https://cpipc.acge.org.cn/cw/contestNews/detail/2c90800c8093eef401809d33b36f0652/2c9080199ed8b78d019ed96ceea21560",
+                "comp_time_start": "2026年10月24日 00:00",
+                "comp_time_end": "2026年10月24日 23:59",
+                "detail": "赛制/类型: CTF 夺旗（实网对抗赛初赛）\n主办：教育部学位中心等；报名截止 10-18",
+                "status": "即将开始"
+            },
+            {
+                "name": "BITs2CTF 2026（初赛）",
+                "link": "https://zone.ci/secarticles/wx/553536.html",
+                "comp_time_start": "2026年10月24日 10:00",
+                "comp_time_end": "2026年10月25日 10:00",
+                "detail": "赛制/类型: 线上Jeopardy解题赛（初赛，24h）\n主办：北京理工大学 BITs2Sys 战队；校级学科竞赛",
+                "status": "即将开始"
+            },
+            {
+                "name": "BITs2CTF 2026（决赛）",
+                "link": "https://zone.ci/secarticles/wx/553536.html",
+                "comp_time_start": "2026年11月01日 09:00",
+                "comp_time_end": "2026年11月01日 17:00",
+                "detail": "赛制/类型: 线下决赛\n地点：北京理工大学良乡校区（北京）",
+                "status": "即将开始"
+            },
+            {
+                "name": "第五届中国研究生网络安全创新大赛（决赛）",
+                "link": "https://cpipc.acge.org.cn/cw/contestNews/detail/2c90800c8093eef401809d33b36f0652/2c9080199ed8b78d019ed96ceea21560",
+                "comp_time_start": "2026年12月26日 00:00",
+                "comp_time_end": "2026年12月27日 23:59",
+                "detail": "赛制/类型: AWD Plus + 靶场渗透（决赛）\n地点：哈尔滨市南岗区",
+                "status": "即将开始"
+            },
+            {
+                "name": "MoeCTF 2026",
+                "link": "https://ctf.xidian.edu.cn/games/37/",
+                "comp_time_start": "2026年08月09日 09:00",
+                "comp_time_end": "2026年10月09日 17:00",
+                "detail": "面向 26 级新生\n比赛赛制：单人线上解题模式。\n比赛内容：涵盖 Web 安全与渗透测试、软件逆向工程、二进制漏洞利用、现代密码学、取证与安全杂项、Python 沙箱逃逸、开发与运维基础、美工设计等。\n赛事官方 QQ 群 1033688742",
+                "freshman": true,
+                "status": "正在进行"
+            },
+            {
+                "name": "NepCTF 2026",
+                "link": "https://www.nepctf.com/",
+                "comp_time_start": "2026年07月17日 19:00",
+                "comp_time_end": "2026年07月19日 19:00",
+                "detail": "赛制/类型: 线上Jeopardy解题赛",
+                "status": "已经结束"
+            },
+            {
+                "name": "第二届 OpenHarmony CTF 智能漏洞挖掘赛（初赛）",
+                "link": "https://thuctf.tsinghua.edu.cn/harmonyctf/games/2",
+                "comp_time_start": "2026年08月01日 00:00",
+                "comp_time_end": "2026年08月21日 23:59",
+                "detail": "赛制/类型: 线上Jeopardy解题赛（初赛）\n主办方：清华大学（XCTF 外卡赛，冠军直通第十一届 XCTF 总决赛）\n面向中国大陆及港澳台高校在读学生；决赛提交期 9 月，现场决赛时间待定",
+                "status": "已经结束"
+            },
+            {
+                "name": "宁波市第九届网络安全大赛（初赛）",
+                "link": "https://ningbo.dasctf.com",
+                "comp_time_start": "2026年08月08日 00:00",
+                "comp_time_end": "2026年08月08日 23:59",
+                "detail": "赛制/类型: 线上解题赛（初赛）\n指导：宁波市公安局；报名已于 07-22 截止",
+                "status": "已经结束"
+            },
+            {
+                "name": "第七届“蒙古马杯”学生组网络安全竞赛（预赛）",
+                "link": "https://www.imnu.edu.cn/info/1311/117361.htm",
+                "comp_time_start": "2026年08月10日 00:00",
+                "comp_time_end": "2026年08月10日 23:59",
+                "detail": "赛制/类型: 线上预赛（含 CTF 夺旗赛）\n2026年全区教育系统网络安全竞赛",
+                "status": "已经结束"
+            },
+            {
+                "name": "第九届西湖论剑·中国杭州网络安全技能大赛（初赛）",
+                "link": "https://www.hangzhou.gov.cn/col/col812266/art/2026/art_483d44943a4f4b898e1998389d4ee3b0.html",
+                "comp_time_start": "2026年08月21日 13:00",
+                "comp_time_end": "2026年08月21日 18:00",
+                "detail": "赛制/类型: 线上初赛（首次引入 AI Agent 解题夺旗赛制）\n指导：杭州市公安局等；报名截止 08-10 16:00；决赛 9 月底前",
+                "status": "已经结束"
+            }
+        ],
+        "total": 19,
+        "page": 1,
+        "size": 20
+    },
+    "msg": ""
+}

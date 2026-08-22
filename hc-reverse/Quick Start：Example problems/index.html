@@ -1,0 +1,941 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Quick Start：Example problems | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-env/">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Docker_On_Linux/">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h2 id="quick-startexample-problems">Quick Start：Example problems<a class="headerlink" href="#quick-startexample-problems" title="Permanent link">¶</a></h2>
+<p>下面是几道简单的 CTF 逆向 例题
+在正式做题之前，我们要厘清解决RE题的大致思路。</p>
+<h4 id="1">1.尝试运行程序，猜测程序的大致运行逻辑<a class="headerlink" href="#1" title="Permanent link">¶</a></h4>
+<p>例如<code>hit-plane.exe</code>这个文件，我们运行之后发现：
+<img alt="p4-26" src="../Images/p4-26.png">
+是一个躲避掉落物的小游戏，用WASD可以上下左右移动,下面有一个Score。我们就可以猜测Score达到一定分数的时候我们就能获得flag。从而得到后面的思路。</p>
+<h4 id="2">2.利用查壳工具查询附件的详细信息<a class="headerlink" href="#2" title="Permanent link">¶</a></h4>
+<p>运行分析之后，我们就要进入工具分析了。先用查壳工具打开文件。（这里以DIE为例）
+<img alt="p4-27" src="../Images/p4-27.png">
+可以看到这是一个32位的PE文件，使用了UPX工具进行了打包。下面还有编译器、工具的相关信息。
+这些信息在未来我们解题过程中都可能会有帮助。
+（文件名和题目的信息也可能是解题相关的提示哦！）</p>
+<h4 id="3">3.进行正式代码分析<a class="headerlink" href="#3" title="Permanent link">¶</a></h4>
+<p>获取初步的信息之后，我们就可以使用静态或动态分析工具开始对文件的源代码进行分析和解题了。
+其中的技巧和难点非常多，这里先不展开。</p>
+<hr>
+<h4 id="exp1">Exp1:<a class="headerlink" href="#exp1" title="Permanent link">¶</a></h4>
+<p>拿到题目之后，从题目名字中的 <code>"asm"</code> 可以看出，这是一道考察 <code>汇编语言</code> 的题目，我们要有一定的汇编语言基础。下载下来可以看到给了我们一个 txt 文本，那么这里面一定是汇编块。打开之后确实是汇编块。</p>
+<p><img alt="p4-1" src="../Images/p4-1.png" width="70%"></p>
+<p>那么接下来就是 <del>找到右上方的(x)用小手点击一下鼠标左键</del> 哐哐一顿分析啦，详细的分解步骤就不多说了，这里涉及到汇编语言的知识，我简单解释一下它的逻辑：这段汇编代码的功能是对一个字符串（flag）进行加密处理，然后输出加密后的结果。具体的操作步骤如下：</p>
+<p>首先，定义一个变量 <code>var_4</code> ，用来存储字符串的索引，初始值为 0。</p>
+<p>然后，进入一个循环，对字符串的每个字符进行两次异或和减法操作，具体如下：</p>
+<ul>
+<li>
+<p>将 <code>var_4</code> 作为偏移量，从 <code>flag</code> 中取出一个字符，与十六进制数 <code>0x1E</code> 异或，得到新的字符。</p>
+</li>
+<li>
+<p>将新的字符存回 <code>flag</code> 中覆盖原来的字符。</p>
+</li>
+<li>再次从 <code>flag</code> 中取出同一个字符，减去十六进制数 <code>0x0A</code> ，得到最终的加密字符。</li>
+<li>将最终的加密字符存回 <code>flag</code> 中覆盖原来的字符。</li>
+<li>将 <code>var_4</code> 加一，准备处理下一个字符。</li>
+<li>循环结束的条件是 <code>var_4</code> 等于十六进制数 <code>0x27</code> ，也就是字符串的长度。</li>
+<li>最后，调用 <code>printf</code> 函数，输出加密后的字符串。</li>
+</ul>
+<p>下面是我们对这段 ASM 加密算法翻译后的代码：</p>
+<p><img alt="p4-2" src="../Images/p4-2.png" width="70%"></p>
+<p>那么知道了加密的原理，下面就是解密啦，我们只需要把这段加密过程逆过来运算即可：</p>
+<ul>
+<li>将每一个字符都加上十六进制数 <code>0x0A</code></li>
+<li>再将每一个字符都与十六进制数 <code>0x1E</code> 进行异或操作</li>
+<li>最后逐一储存在 <code>result</code> 中并返回原始字符串</li>
+</ul>
+<p><img alt="p4-3" src="../Images/p4-3.png" width="70%"></p>
+<p>将题目提供的加密后的字符串填进去并运行这段代码，即可输出正确的 flag ：<code>flag{It_is_als0_impor@nt_t0_13arn_4sm!}</code></p>
+<hr>
+<h4 id="exp2">Exp2:<a class="headerlink" href="#exp2" title="Permanent link">¶</a></h4>
+<p>将题目下载下来，发现这是一个可执行程序，那么我们要做的第一步就是查壳，确定程序的 PE 类型：(查壳图片略)，查壳过后我们发现这是一个 <code>x64</code> 可执行程序，打开之后我们会发现他是直接让我们输入 <code>flag</code> 的：</p>
+<p><img alt="p4-5" src="../Images/p4-5.png" width="70%"></p>
+<p>那根据我们的直觉或者经验，可以看出，他肯定有一套验证 flag 是否正确的算法，我们直接拖进 IDA 看看之后发现，所有的验证代码全都在 <code>Main函数</code> 里，而且没有任何混淆：</p>
+<p><img alt="p4-6" src="../Images/p4-6.png" width="70%"></p>
+<p>从伪代码的这一部分分析可以知道，处理过后的字符串通过与 <code>des</code> 字符数组对比，判断是否相等，从而得出是否正确，那么 <code>des</code> 的字节就是我们需要的，我们双击 <code>des</code> 可以跳转到 <code>des</code> 的数据块，从这里可以看到 <code>des</code> 的所有字节数据：</p>
+<p><img alt="p4-7" src="../Images/p4-7.png" width="66%"></p>
+<p>我们直接从 HEX 进制窗口中复制这一段字节：</p>
+<p><code>66 C6 16 76 B7 45 27 97 F5 47 03 F5 37 03 C6 67 33 F5 47 86 56 F5 26 96 E6 16 27 97 F5 07 27 03 26 C6 33 D6 D7 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</code></p>
+<p>代码段 <code>Str[i] = (Str[i] &gt;&gt; 4) | (16 * Str[i]);</code> 其实是位操作中的典型算法：<code>位交换</code>，即把每一个字节的高低位互换位置，那么如果我们想要得到原始数据，就需要把 <code>des</code> 的高低位互换回去，我们只需要重新调用一次这个算法即可：</p>
+<p><img alt="p4-88" src="../Images/p4-8.png" width="70%"></p>
+<p>将右图字节集转换为字符串即为 flag：<code>flag{Try_t0_s0lv3_the_binary_pr0bl3m}</code></p>
+<hr>
+<h4 id="exp3">Exp3:<a class="headerlink" href="#exp3" title="Permanent link">¶</a></h4>
+<p>下载题目，发现是一个可执行程序，查壳发现是一个 32 位的可执行程序，运行，随便输入一个密钥，会输出给我们一份加密后的字符串，我们直接拖进 IDA 查看 <code>Main函数</code>：</p>
+<p><img alt="p4-9" src="../Images/p4-9.png" width="70%"></p>
+<p>进入 IDA 后，我们发现，程序开始对 <code>ArgList</code> 已经赋值了，紧接着又对其部分位置的字符进行了修改，此处的代码编译器进行了优化，我们很难看出来他的执行逻辑，那么我们可以另辟蹊径，通过动态调试来拿到修改后的 <code>ArgList</code> 的数值，此处动态调试的过程不再展示。紧接着他又利用我们输入的那个密钥对 <code>ArgList</code> 进行了进一步的加密，然后输出了加密后的字符串。此处出题人其实是在迷惑我们，其实第一次处理后的 <code>ArgList</code> 就是用 <code>Base64</code> 编码后的字符串，我们直接动态调试出第一次处理后 <code>ArgList</code> 的字节集，然后用伪代码中出题人给的异或算法输出 <code>Base64</code> 编码后的字节集，将输出的字节集转换为字符串，并将字符串用 <code>Base64</code> 解码即可得到 flag：<code>flag{a10e7ccc-b802-e3eb-c85940e226d}</code></p>
+<p><img alt="p4-10" src="../Images/p4-10.png" width="70%"></p>
+<p><img alt="p4-11" src="../Images/p4-11.png" width="66%"></p>
+<hr>
+<h4 id="exp4">Exp4:<a class="headerlink" href="#exp4" title="Permanent link">¶</a></h4>
+<p>下载题目，发现是一个可执行程序，查壳发现是一个 64 位的可执行程序，运行，啥玩意都没有，我们直接拖进 IDA 查看 <code>Main函数</code>，好了，flag 就在眼前：<code>flag{flag1sinarray}</code></p>
+<p><img alt="p4-12" src="../Images/p4-12.png" width="70%"></p>
+<hr>
+<h4 id="exp5">Exp5:<a class="headerlink" href="#exp5" title="Permanent link">¶</a></h4>
+<p>下载题目，发现是一个可执行程序，查壳发现是一个 64 位的可执行程序，运行，直接让我们输入 <code>flag</code>，我们直接拖进 IDA 查看 <code>Main 函数</code>，可以看到这里与 <code>Exp1</code> 是大同小异的，都是异或操作之后与内存中的一串字节 <code>des</code> 对比，我们直接逆运算即可得出来原本的输入数据，要注意这里是与取随机数之后的 <code>v5</code> 数组进行异或，我们要先模拟 <code>v5</code> ，再进行异或。</p>
+<p><img alt="p4-13" src="../Images/p4-13.png" width="70%"></p>
+<p><img alt="p4-14" src="../Images/p4-14.png" width="70%"></p>
+<p><img alt="p4-15" src="../Images/p4-15.png" width="70%"></p>
+<hr>
+<h4 id="exp6">Exp6:<a class="headerlink" href="#exp6" title="Permanent link">¶</a></h4>
+<p>下载题目，发现是一个 <code>py文件</code>，里面是关于对 <code>flag</code> 进行加密的算法，分析一下算法可知：</p>
+<ul>
+<li>要求输入 <code>flag</code> ，并且程序会检查输入的字符串是否是 <code>42</code> 个字符长。如果不是，程序将打印出 <code>"Check your length!"</code> 并且退出程序。</li>
+<li>如果输入的字符串长度符合要求，程序将进入一个循环。在这个循环中，输入的字符串被分成 6 个部分，每个部分包含 7 个字符。然后将每个部分中的字符转换成对应的 ASCII 码，再转换成十六进制的形式。这些十六进制数值会被存储在列表 <code>l</code> 中。</li>
+<li>接下来的部分是一系列的条件判断。程序会检查列表 l 中的值是否满足一组复杂的方程式，其中每个方程式的右边都是一个十六进制数。如果所有的条件都满足，程序会打印 <code>"Good job!"</code>，否则打印 <code>"Wrong/nTry again!!!"</code> 并退出程序。</li>
+</ul>
+<p><img alt="p4-16" src="../Images/p4-16.png" width="70%"></p>
+<p>其实到了这一步，看到了解方程这里，这道题目就很简单了，我们直接调用 <code>python</code> 的 <code>sympy库</code> 对方程进行求解，即可得到原始 <code>flag</code> 的数据，下面是简单的 <code>python代码</code> ：</p>
+<p><img alt="p4-17" src="../Images/p4-17.png" width="70%"></p>
+<p>运行后即可得到原始的 flag 字符串，即为：<code>flag{N0_One_kn0ws_m@th_B3tter_Th@n_me!!!!}</code></p>
+<p><img alt="p4-18" src="../Images/p4-18.png" width="66%"></p>
+<hr>
+<h4 id="exp7">Exp7:<a class="headerlink" href="#exp7" title="Permanent link">¶</a></h4>
+<p>下载题目，发现是一个可执行文件，打开之后需要我们输入 <code>Key</code> ，<code>Key</code> 的范围是 <code>0-100</code> ，我直接用爆破的方式了，解出来 <code>key</code> 是 23，输入之后，下面让我们输入 flag，我们将其拖入 <code>DIE</code> 查看，会发现他的 Packer 是 <code>PyInstaller</code>，从这里可以判断这个是用 <code>Py</code> 打包的方式生成的可执行文件：</p>
+<p><img alt="p4-19" src="../Images/p4-19.png" width="70%"></p>
+<p>那么我们直接调用 <code>pyinstxtractor</code> 对其进行解包，拿到其中的 python 脚本文件 <code>(.pyc)</code> ，此程序的主要脚本是 <code>main.pyc</code> ，然后再使用 python 字节码反汇编工具 <code>pycdc</code> 得到正常的 python 源代码：</p>
+<p><img alt="p4-20" src="../Images/p4-20.png" width="70%"></p>
+<p><img alt="p4-21" src="../Images/p4-21.png" width="70%"></p>
+<p>反汇编出来 python 源代码之后，我们要注意的是：我们需要配置与他的源代码一致的 python 环境，从反汇编的信息上来看，这个脚本是 <code>python3.8</code> 的版本，我们配置完环境之后直接调试这段代码即可，我们在图中指向的地方下断点，这里的主要目的是为了拿到他处理后的执行代码，<code>flag</code> 的字节就在里面。</p>
+<p><img alt="p4-22" src="../Images/p4-22.png" width="70%"></p>
+<p>断下来之后，我们查看输出窗口，找到 <code>co_consts</code> ，展开就可以看到与 <code>flag</code> 有关的信息，从中我们可以看到，<code>flag</code> 是一个用 <code>rc4算法</code> 加密之后的字符串，并且加密时用的 <code>key</code> 也显示了出来。程序用 <code>rc4算法</code> 对你输入的 <code>flag</code> 进行加密，验证是否与加密后的 <code>flag</code> 相等，如果相等，就会输出 <code>yes</code>，否则输出 <code>no</code>，那么到了这里我们直接调用 <code>rc4</code> 的解密算法来对 <code>flag</code> 进行解密即可。</p>
+<p><img alt="p4-23" src="../Images/p4-23.png" width="70%"></p>
+<p><img alt="p4-24" src="../Images/p4-24.png" width="70%"></p>
+<p>运行以上代码，即可得到 flag：<code>flag{d8e8d9d0-b2b1-7304-74b760-90b11ab6a3}</code></p>
+<p><img alt="p4-25" src="../Images/p4-25.png" width="66%"></p>
+<hr>
+<p>以上是 7 道基础的逆向题目，其中涉及到了很多知识点，包括但不限于 Python 语言、汇编语言、C++，以及 IDA 的使用、查壳工具的使用，还有 Python 解包工具等。这些东西需要我们日复一日的积累，熟能生巧，才可以熟记于心中。在需要的时候把它们拿出来用。</p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+
+<!-- Link to next page -->
+
+</nav>
+
+<!-- Comment system -->
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#quick-startexample-problems">Quick Start：Example problems</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#1">1.尝试运行程序，猜测程序的大致运行逻辑</a>
+        
+      </li>
+    
+      <li>
+        <a href="#2">2.利用查壳工具查询附件的详细信息</a>
+        
+      </li>
+    
+      <li>
+        <a href="#3">3.进行正式代码分析</a>
+        
+      </li>
+    
+      <li>
+        <a href="#exp1">Exp1:</a>
+        
+      </li>
+    
+      <li>
+        <a href="#exp2">Exp2:</a>
+        
+      </li>
+    
+      <li>
+        <a href="#exp3">Exp3:</a>
+        
+      </li>
+    
+      <li>
+        <a href="#exp4">Exp4:</a>
+        
+      </li>
+    
+      <li>
+        <a href="#exp5">Exp5:</a>
+        
+      </li>
+    
+      <li>
+        <a href="#exp6">Exp6:</a>
+        
+      </li>
+    
+      <li>
+        <a href="#exp7">Exp7:</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

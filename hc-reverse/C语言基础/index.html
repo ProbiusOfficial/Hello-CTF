@@ -1,0 +1,1146 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>C语言基础 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-env/">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Docker_On_Linux/">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link on" href="./">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="c">C 语言基础<a class="headerlink" href="#c" title="Permanent link">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">免责声明</p>
+<p>请注意，本文并不是 0 基础 C 语言入门，所讲述的内容可能包含以下要素：  </p>
+<ul>
+<li>并不纯粹的 C 语言  </li>
+<li>粗糙的知识点讲解  </li>
+<li>猫猫莫名其妙的口癖（悲）  </li>
+<li>为了新手友好牺牲掉的部分内容的准确性</li>
+</ul>
+<p>如果你想找一个 C 语言入门教程，那你或许应该左转隔壁 MOOC 、 B站大学。<br>
+或者你也可以查阅网上的教程（比如CSDN，菜鸟教程，W3School还有其他师傅的博客等等）<br>
+本文所讲的 C 语言基础只是为了让新手师傅能够更好地看懂反汇编代码，因此只会讲解一些逆向过程中常见的内容。</p>
+</div>
+<h2 id="c_1">为什么要学习 C 语言？<a class="headerlink" href="#c_1" title="Permanent link">¶</a></h2>
+<p>一个最简单的理由就是，因为 IDA 反编译出来的代码都是类 C 的伪代码。  </p>
+<p>如果连 IDA 反编译出来的代码都看不懂，又谈何进行逆向工程呢？</p>
+<p>同时 C 语言也是一门比较接近底层的语言，有利于我们更好的理解计算机系统的底层原理。</p>
+<div class="admonition quote">
+<p class="admonition-title">说白了就是：</p>
+<p>因为要用，所以要学。</p>
+</div>
+<h2 id="_1">变量<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<p>首先我们先对变量进行介绍。</p>
+<h3 id="_2">什么是变量？<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p>简单来说，变量就是一个存储数据的盒子，位于计算机存储中的某个地址处：</p>
+<p><img alt="变量盒子" src="../Images/lvar.png"></p>
+<p>我们可以向盒子里放入数据，比如 <code>int i=0;</code> 就是向一个 <code>int</code> 类型的“盒子”变量 <code>i</code> 中放入一个整数 <code>0</code> 。</p>
+<p>根据 <strong>预期中</strong> 盒子存储的数据类型，我们可以对这些“盒子”变量进行分类：</p>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>这里我们已经简化了部分细节，后续可能会在其他地方进行细节补充。</p>
+</div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// 你可以使用 sizeof(变量类型) 来确定变量占用的空间大小</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1">// 有符号整数类型</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kr">__int8</span><span class="w">      </span><span class="c1">// 有符号8位整数  -&gt; signed char（或 char，取决于平台符号性）</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kr">__int16</span><span class="w">     </span><span class="c1">// 有符号16位整数 -&gt; short</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kr">__int32</span><span class="w">     </span><span class="c1">// 有符号32位整数 -&gt; int / (Windows或Linux/macOS 32-bit)long</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="kr">__int64</span><span class="w">     </span><span class="c1">// 有符号64位整数 -&gt; long long / (Linux/macOS 64-bit)long</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="c1">// 无符号整数类型</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c1">// 无符号8位整数  -&gt; unsigned char</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="kt">unsigned</span><span class="w"> </span><span class="kr">__int8</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="c1">// 无符号16位整数 -&gt; unsigned short</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="kt">unsigned</span><span class="w"> </span><span class="kr">__int16</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="c1">// 无符号32位整数 -&gt; unsigned int / (Windows或Linux/macOS 32-bit)unsigned long</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="kt">unsigned</span><span class="w"> </span><span class="kr">__int32</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="c1">// 无符号64位整数 -&gt; unsigned long long / (Linux/macOS 64-bit)unsigned long</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="kt">unsigned</span><span class="w"> </span><span class="kr">__int64</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="c1">// IDA 简写类型</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="n">_BYTE</span><span class="w">   </span><span class="c1">// 等价于 unsigned __int8   (1字节)</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="n">_WORD</span><span class="w">   </span><span class="c1">// 等价于 unsigned __int16  (2字节)</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="n">_DWORD</span><span class="w">  </span><span class="c1">// 等价于 unsigned __int32  (4字节) (double word)</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="n">_QWORD</span><span class="w">  </span><span class="c1">// 等价于 unsigned __int64  (8字节) (quad word)</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="c1">// 浮点数类型</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="kt">float</span><span class="w">           </span><span class="c1">// 单精度浮点数 (4字节, IEEE 754)</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="kt">double</span><span class="w">          </span><span class="c1">// 双精度浮点数 (8字节, IEEE 754)</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="kt">long</span><span class="w"> </span><span class="kt">double</span><span class="w">     </span><span class="c1">// 扩展精度浮点数 (实现平台相关)</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="c1">// 布尔类型</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="kt">bool</span><span class="w">  </span><span class="c1">// 1字节布尔值(实际上 C 语言里面是一个展开为 _Bool 的宏，C++ 则将 bool 作为关键字直接内置)</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="c1">// 但在 C23 标准中，bool 已经正式变成了关键字，无需和以前一样需要 include stdbool.h 了</span>
+</code></pre></div>
+<div class="admonition question">
+<p class="admonition-title">无符号整数和有符号整数有什么区别？</p>
+<p>区别其实在于，无符号整数里面没有“负数”的概念。<br>
+有符号整数的最高二进制位是用来表示符号的，而无符号整数就是把符号位也用来表示数字了。<br>
+换句话说，在非负且不超出无符号范围的情况下，他们在内存中存储的数据是一样的。<br>
+这也就是为什么(unsigned int)-1的结果非常巨大。</p>
+</div>
+<p>同时，不同类型的数据之间可以相互转换，但这一过程有时候并不是完全无损的。</p>
+<p>在多种类型的数据进行运算时，C 语言默认会将精度较低的数据类型转换为精度较高的数据类型，这一过程称之为隐式转换。</p>
+<p>我们也可以强制转换数据类型，这一过程称之为显式转换：
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">char</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">'A'</span><span class="p">;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">printf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,(</span><span class="kt">int</span><span class="p">)</span><span class="n">c</span><span class="p">);</span><span class="w"> </span><span class="c1">//65, 字符 A 的 ASCII 码</span>
+</code></pre></div>
+<div class="admonition question">
+<p class="admonition-title">什么是 ASCII 码？</p>
+<p>ASCII 码，又称美国信息交换标准代码(American Standard Code for Information Interchange)，是基于拉丁字母的一套电脑编码系统。<br>
+它主要用于显示现代英语，而其扩展版本延伸美国标准信息交换码则可以部分支持其他西欧语言，并等同于国际标准ISO/IEC 646。 <br>
+在目前的计算机中，常见的一些字符（比如'A','0',' '(空格),'a'）都是以 ASCII 码的形式存储在计算机中。<br>
+你可以在这里找到 ASCII 码表：<a href="https://www.runoob.com/w3cnote/ascii.html">菜鸟教程-ASCII码表</a><br>
+一个记忆的口诀是：<strong>32 48 64 96</strong><br>
+其中 32 是空格的 ASCII 码，48 + 数字 是对应数字字符的 ASCII 码。<br>
+然后 64 + 字母表索引 是对应的大写字母，96 + 字母表索引 是对应的小写字母。<br>
+比如 'A' 的 ASCII 码就是 65(64+1)，'B' 的是 66(64+2)，'a' 的是 97(96+1)，'0' 的是 48(48+0)，'9' 的是 57(48+9)。</p>
+</div>
+<h3 id="_3">更进一步：指针<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<p>在 C 语言教学中，指针一直被认为是一个 <strong>教学难点</strong>。</p>
+<p>但其实，指针（全称指针变量）本身也是一个变量，只不过他存储的数据类型是地址而已。</p>
+<p>比如下面这个 C 程序片段：
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="c1">// 假如变量 var 的首地址是 0x1000</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">pointer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">var</span><span class="p">;</span><span class="w"> </span><span class="c1">// pointer 的内容就是 0x1000</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">printf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span><span class="o">*</span><span class="n">pointer</span><span class="p">);</span><span class="w"> </span><span class="c1">// 等效于访问var，所以这里输出10</span>
+</code></pre></div>
+其中 <code>&amp;</code> 这里是获取变量 <code>var</code> 的 <strong>首地址</strong> ， <code>*</code> 则是有2种含义：
+<ul>
+<li><code>int*</code> 中的 <code>*</code> ：表示这是一个 <strong>指向</strong> <code>int</code> 类型变量的指针变量。  </li>
+<li><code>*pointer</code> 中的 <code>*</code> ：将 <code>pointer</code> 中的数据当成 <code>int</code> 类型变量的地址进行解析，这里相当于访问了 <code>var</code> 。</li>
+</ul>
+<p>这里 <code>int* pointer</code> 写成 <code>int *pointer</code> 效果是一样的。</p>
+<p><img alt="一级指针" src="../Images/pointer.png"></p>
+<p>接下来我们提升一下难度，你可以阅读下面这个 C 程序片段，判断程序最终会输出什么：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mb">0b00110010</span><span class="p">;</span><span class="w"> </span><span class="c1">//新版本 C 标准支持</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">a</span><span class="p">;</span><span class="w"> </span><span class="c1">// 将 int* 类型指针强制转换为 char*</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">b</span><span class="p">;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">printf</span><span class="p">(</span><span class="s">"%c"</span><span class="p">,</span><span class="o">**</span><span class="n">c</span><span class="p">);</span>
+</code></pre></div>
+<p>首先理解一下这个程序在干什么：</p>
+<ul>
+<li>首先定义了 <code>int</code> 变量 <code>a</code> 并初始化为 <code>50</code>  </li>
+<li>之后创建了一个 <strong>指向</strong> <code>char</code> 类型的指针 <code>b</code> ，指向了……？</li>
+</ul>
+<details class="question">
+<summary>为什么指针类型和变量类型不同还能运行？</summary>
+<p>还记得前面所说的，取地址符取到的永远是首地址吗？<br>
+我们在前面强调过，指针的类型只会影响其解析地址的逻辑。<br>
+这里的 <code>char</code> 类型指针只是告诉编译器，这个地方应该只从我存的这个地址开始，解析 <code>sizeof(char) = 1</code> 个字节。<br>
+也就是其访问变量 <code>a</code> 时，取出了其第一个字节的内容并解析。（相当于解析了一个 <code>char</code>）<br>
+假设系统为 <strong>小端序</strong> ，这里第一个字节就是前面提到的 <code>50</code> 。<br>
+说白了就是，存储数据的盒子还是这么大，能放下一个地址，但是盒子的类型不同，解释地址的方式也不同。</p>
+</details>
+<ul>
+<li>之后有一个 <strong>二级指针</strong> <code>c</code> 指向了 <code>char*</code> 类型变量 <code>b</code> 的地址</li>
+<li>最后解析 <code>char**</code> 指针 <code>c</code> ，并将解析结果作为字符输出</li>
+</ul>
+<p>如果系统是 <strong>64位小端序</strong> ，首先 <code>**c</code> 可以表示成 <code>*(*c)</code> ，内层就是从 <code>char*</code> 变量 <code>b</code> 的首地址开始，读取 <code>sizeof(char*) = 8</code> 个字节。  </p>
+<p>然后再在外层从 <code>int</code> 变量 <code>a</code> 的首地址开始，读取 <code>sizeof(char) = 1</code> 个字节，最终读取到了 <code>50</code> 。</p>
+<p>在被 <code>%c</code> 隐式转换为 <code>char</code> 类型后，对应的字符就是 '2' ，所以程序最终会输出 <code>2</code> 。</p>
+<p><img alt="示意图" src="../Images/two_pointer.png"></p>
+<h3 id="_4">连续空间：数组<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<p>当我们需要存储大量数据的时候，一个个申请变量就显得太慢了。</p>
+<p>在 C 语言中，我们可以使用以下办法申请一大批“盒子”：
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">boxs</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span><span class="w"> </span><span class="c1">// 申请 10 个 int 类型的盒子，分别编号为box[0],box[1],...,box[9]</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c1">// 注意 sizeof(boxs) = 40 ，这里计算的是盒子占用的空间(10 个 int 类型的盒子)</span>
+</code></pre></div>
+其中，方括号 <code>[]</code> 里的数字代表申请盒子的数目，这便是我们所提到的 <strong>数组</strong> 。
+<p>每个盒子的使用方法还是和前面所讲的内容相同，只是多了一些新的访问方式。</p>
+<p>这里我们介绍一下数组名的特殊性：
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">boxs</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">boxs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">boxs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">boxs</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">printf</span><span class="p">(</span><span class="s">"%d %d %d"</span><span class="p">,</span><span class="o">*</span><span class="n">boxs</span><span class="p">,</span><span class="n">boxs</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="o">*</span><span class="p">(</span><span class="n">boxs</span><span class="o">+</span><span class="mi">2</span><span class="p">));</span><span class="w"> </span><span class="c1">// 程序将会输出1 2 3</span>
+</code></pre></div>
+发现了吗，这里的数组名似乎可以当指针用？
+<p>实际上，这里的 <strong>下标运算符</strong> <code>[]</code> 就等价于使用数组偏移进行访问，如 <code>boxs[i]</code> 等价于 <code>*(boxs + i)</code> 。</p>
+<p>只不过，数组名和指针变量最大的区别：数组名指向的地址 <strong>永远</strong> 都是数组中第 0 个元素的地址，也就是说数组名是个 <strong>指针常量</strong> 。</p>
+<div class="admonition note">
+<p class="admonition-title">关于指针加法</p>
+<p>这里我们简化了部分内容，这里的加法是 C 语言标准定义的指针算术，其步长由指针所指向类型的大小决定。<br>
+如果对这方面感兴趣的话，可以搜索一下相关资料，但是这里能理解这么写是什么意思就好。<br>
+顺带一提，在 IDA 的反汇编结果中，很多时候我们都能看到类似于 <code>*(&amp;v1+v2)</code> 的描述。<br>
+这里其实就代表了 <code>v1</code> 是个数组，只不过 IDA 没有正确识别这种模式，需要你进行手动修正。<br>
+我们会在后续介绍 IDA 使用时对这一点进行补充。</p>
+</div>
+<h2 id="c_2">C 字符串<a class="headerlink" href="#c_2" title="Permanent link">¶</a></h2>
+<p>接下来我们需要介绍的是 C 语言中的字符串。</p>
+<h3 id="or">字符串 or 字符数组<a class="headerlink" href="#or" title="Permanent link">¶</a></h3>
+<p>我们在下面给出了两个 C 语言片段：
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1">// 片段 1</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kt">char</span><span class="w"> </span><span class="n">str</span><span class="p">[</span><span class="mi">11</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="sc">'H'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">,</span><span class="sc">','</span><span class="p">,</span><span class="sc">'W'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">,</span><span class="sc">'r'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'d'</span><span class="p">};</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">printf</span><span class="p">(</span><span class="s">"%s"</span><span class="p">,</span><span class="n">str</span><span class="p">);</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1">// 片段 2</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kt">char</span><span class="w"> </span><span class="n">str</span><span class="p">[</span><span class="mi">12</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="sc">'H'</span><span class="p">,</span><span class="sc">'e'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">,</span><span class="sc">','</span><span class="p">,</span><span class="sc">'W'</span><span class="p">,</span><span class="sc">'o'</span><span class="p">,</span><span class="sc">'r'</span><span class="p">,</span><span class="sc">'l'</span><span class="p">,</span><span class="sc">'d'</span><span class="p">};</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">printf</span><span class="p">(</span><span class="s">"%s"</span><span class="p">,</span><span class="n">str</span><span class="p">);</span>
+</code></pre></div>
+是不是觉得两个程序片段都会输出“Hello,World”？如果读者在自己的电脑上运行的话 <strong>可能</strong> 确实如此。
+<p>现在的问题是，这两个 <code>char</code> 数组是否都是存储了一个 C 字符串的数组？</p>
+<p>答案是否定的，只有片段 2 里面存储的是一个字符串，而片段 1 里其实是一个普通的字符数组。</p>
+<p>两个程序的运行结果如下：</p>
+<p><img alt="片段1" src="../Images/code1.png">
+<img alt="片段2" src="../Images/code2.png"></p>
+<p>为什么会出现不同的结果？这里是因为 C 语言中定义的字符串是：使用 <strong>空字符</strong> <code>\0</code> 结尾的一维字符数组。</p>
+<p>空字符（Null character）又称结束符，缩写 <code>NUL</code> ，是一个 ASCII 码为 <code>0</code> 的控制字符，<code>\0</code> 是转义字符，意思是告诉编译器，这不是字符 <code>0</code> ，而是空字符。</p>
+<p>我们可以注意到，片段 2 的数组大小比片段 1 的数组大小大了 1，而由于传入的 <code>Hello,World</code> 只占据了 11 个字节，第 12 个字节就默认使用 <code>0</code> 进行了填充（也就是空字符 <code>\0</code>）。</p>
+<div class="admonition question">
+<p class="admonition-title">为什么说“读者在自己的电脑上运行可能会得到一样的输出结果”？</p>
+<p>这里其实是因为，C 语言程序在输出字符串时，一般都是以 <code>\0</code> 作为结尾字符的。<br>
+在片段 1 中，由于我们并没有在末尾添加 <code>\0</code>，所以程序在解析字符串时就会超出我们设定的范围，也就是所谓的“数组越界”。<br>
+在这个案例中，在数组之后的数值一般是未知的，取决于操作系统当时的环境。<br>
+特别的，如果数组之后的第一个字节恰好就是 <code>0x00</code>，那么字符串也会恰好停止，因为程序觉得自己找到了 <code>\0</code> ，字符串就输出完成了。</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">不要总指望操作系统和编译器给你的程序兜底</p>
+<p>数组越界后的实现是不明确的，如果你不缺那两个空间的话，多开几个变量是好文明zwz<br>
+不过现代计算机谁会缺这两个变量空间？</p>
+</div>
+<p>换言之，下面的数组也存储了 C 字符串：
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kt">char</span><span class="w"> </span><span class="n">str</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">65</span><span class="p">,</span><span class="mi">112</span><span class="p">,</span><span class="mi">112</span><span class="p">,</span><span class="mi">108</span><span class="p">,</span><span class="mi">101</span><span class="p">,</span><span class="mi">0</span><span class="p">};</span><span class="w"> </span><span class="c1">// ASCII 码</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kt">char</span><span class="w"> </span><span class="n">str2</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Banana"</span><span class="p">;</span><span class="w"> </span><span class="c1">// 等效于 char str2[7] = "Banana";</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">printf</span><span class="p">(</span><span class="s">"%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">str</span><span class="p">);</span><span class="w"> </span><span class="c1">// 输出 Apple(换行)</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">printf</span><span class="p">(</span><span class="s">"%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">str2</span><span class="p">);</span><span class="w"> </span><span class="c1">// 输出 Banana(换行)</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">printf</span><span class="p">(</span><span class="s">"%s"</span><span class="p">,</span><span class="n">str2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// 输出 anana</span>
+</code></pre></div>
+<h3 id="_5">字符串函数<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<p>在逆向工程的题目中，我们的程序中一般不只会存储一个字符串，而且还会对字符串进行一些操作。  </p>
+<p>这里我们来介绍一些比较常用的字符串相关的函数。</p>
+<h4 id="strcmp">strcmp<a class="headerlink" href="#strcmp" title="Permanent link">¶</a></h4>
+<p>首先是 <code>strcmp</code> 和他的变式 <code>strncmp</code> ，可以理解为 <code>string compare</code> 字符串比较函数。</p>
+<p>这类函数的用途就是比较两个字符串是否相同，如果两个字符串相同则返回 <code>0</code> (无差异)，不同时返回的是正数或负数（表示字典序大小关系）。  </p>
+<p>而 <code>strncmp</code> 和 <code>strcmp</code> 唯一的区别就是，他只会比较前 <code>n</code> 个字符的内容是否相同，如果相同则返回 <code>0</code> 。</p>
+<p>下面是一个常见结构：
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">Str1</span><span class="p">,</span><span class="s">"HelloCTF{example_flag}"</span><span class="p">)){</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"You Got it!"</span><span class="p">);</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="p">}</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="k">else</span><span class="p">{</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Try again!"</span><span class="p">);</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="p">}</span>
+</code></pre></div>
+<h4 id="strcpy">strcpy<a class="headerlink" href="#strcpy" title="Permanent link">¶</a></h4>
+<p>接下来是 <code>strcpy</code> 和他的变式 <code>strncpy</code>，可以理解为 <code>string copy</code> 字符串复制函数。</p>
+<p>这类函数主要用于将字符串在不同的数组之间复制，方便进行一些额外处理。</p>
+<p>而 <code>strncpy</code> 和 <code>strcpy</code> 唯一的区别就是：<code>strncpy</code> 可以控制复制的字节数，也就是实现“部分复制”。</p>
+<p>下面是一个例子：
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kt">char</span><span class="w"> </span><span class="n">origin</span><span class="p">[]</span><span class="o">=</span><span class="s">"HelloCTF{Strcpy_Flag}"</span><span class="p">;</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="kt">char</span><span class="w"> </span><span class="n">Str1</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">strcpy</span><span class="p">(</span><span class="n">Str1</span><span class="p">,</span><span class="n">origin</span><span class="p">);</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="n">printf</span><span class="p">(</span><span class="s">"%s"</span><span class="p">,</span><span class="n">Str1</span><span class="p">);</span><span class="w"> </span><span class="c1">// 输出 HelloCTF{Strcpy_Flag}</span>
+</code></pre></div>
+<h4 id="strlen">strlen<a class="headerlink" href="#strlen" title="Permanent link">¶</a></h4>
+<p>下面是 <code>strlen</code> ，也就是 <code>string length</code> 计算字符串长度。</p>
+<p>这个函数的返回值是 <code>size_t</code> 类型(一个平台相关的无符号整数类型)，即字符串的长度。</p>
+<p>在主流的 32 位平台上， <code>size_t</code> 的空间占用为 4 字节，而在 64 位平台上则是 8 字节。</p>
+<p>以下是一个例子：
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kt">char</span><span class="w"> </span><span class="n">Str</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span><span class="o">=</span><span class="s">"Apple"</span><span class="p">;</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">len</span><span class="o">=</span><span class="n">strlen</span><span class="p">(</span><span class="n">Str</span><span class="p">);</span><span class="w"> </span><span class="c1">// 这里存在一个隐式转换，下同</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">plen</span><span class="o">=</span><span class="n">strlen</span><span class="p">(</span><span class="n">Str</span><span class="o">+</span><span class="mi">2</span><span class="p">);</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">printf</span><span class="p">(</span><span class="s">"%d %d"</span><span class="p">,</span><span class="n">len</span><span class="p">,</span><span class="n">plen</span><span class="p">);</span><span class="w"> </span><span class="c1">//输出 5 3</span>
+</code></pre></div>
+不同系统和编译器对 <code>strlen</code> 的实现不尽相同，但核心都是通过末尾的 <code>\0</code> 计算长度。
+<h2 id="_6">总结<a class="headerlink" href="#_6" title="Permanent link">¶</a></h2>
+<p>虽然这里对 C 语言的一些基础语法进行了整理，但是如果想要写好逆向工程的题目的话，最好还是去系统的学习一下 C 语言。  </p>
+<p>不过，我们的目标主要还是阅读和编写一些简单的(伪) C 语言代码，所以读者并不需要将 C 语言学到完全精通。</p>
+<div class="admonition quote">
+<p class="admonition-title">猫猫の碎碎念</p>
+<p>唉唉，虽然已经尽可能减少篇幅了，但还是难免出现一种“越往后写发现自己要讲的东西越多”的感觉。<br>
+只能说，学好一门语言有时候确实很重要叭~<br>
+加油哦，各位RE手们，你们的旅程即将正式开始nwn~<br>
+如果有什么不认识的函数或用法，记得去搜索引擎查一查哦~</p>
+</div></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 引导篇：灵魂FAQ"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        引导篇：灵魂FAQ
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: 存储结构"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        存储结构
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#c">C 语言基础</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#c_1">为什么要学习 C 语言？</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_1">变量</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_2">什么是变量？</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">更进一步：指针</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_4">连续空间：数组</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#c_2">C 字符串</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#or">字符串 or 字符数组</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">字符串函数</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#strcmp">strcmp</a>
+        
+      </li>
+    
+      <li>
+        <a href="#strcpy">strcpy</a>
+        
+      </li>
+    
+      <li>
+        <a href="#strlen">strlen</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_6">总结</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

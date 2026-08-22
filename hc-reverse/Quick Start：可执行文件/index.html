@@ -1,0 +1,1188 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>可执行文件 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-env/">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Docker_On_Linux/">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link on" href="./">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="_1">可执行文件<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<p>本章节将会对目前两大主流平台的可执行文件进行简单的介绍，便于我们了解可执行文件的基本结构。</p>
+<p>目前我们常见的两大主流平台分别是 Linux 和 Windows；在前者环境下，其主要的可执行文件对应的名称为 ELF（Executable and Linking Format）文件；在后者环境下，其可执行文件对应的名称为 PE（Portable Executable）文件。</p>
+<p>PE 文件基于 COFF (Common Object File Format) 扩展而来，而 ELF 则是在吸收 COFF 设计思想的基础上，为克服其不足而进行了系统化重构的一种目标文件格式。更加具体地来说，它是在 System V ABI 规范中定义的一种目标文件格式，在设计上借鉴了当时著名的 DEC（Digital Equipment Corporation）的 VAX/VMS 上所使用的 COFF 文件格式，并在此基础上进行了改进与完善。</p>
+<hr>
+<h2 id="elf">ELF<a class="headerlink" href="#elf" title="Permanent link">¶</a></h2>
+<p>首先我们来介绍 <strong>ELF</strong> 文件：</p>
+<p>ELF 文件标准里把系统中采用 ELF 格式的文件主要分为以下四种：</p>
+<ul>
+<li><strong>可重定位文件</strong>（Relocatable File），这类文件由源文件编译但尚未链接，包含代码和数据，可用来链接成可执行文件或共享目标文件，静态链接库为此类文件的集合，该类文件对应于 Linux 中的 .o ，Windows 的 .obj。</li>
+<li><strong>可执行文件</strong>（Executable File），这类文件是通过链接的，可执行的目标文件，通常也被称为程序。比如 Linux 下的 ELF 可执行文件(一般没有扩展名)， Windows 下的 .exe。</li>
+<li><strong>共享目标文件</strong>（Shared Object File），这种文件包含代码和数据，通常是一段位置独立的代码（Position Independent Code, PIC），链接过程中可以使用这种文件跟其他可重定位文件/共享目标文件一起构建出新的目标文件。或者在可执行文件加载时，动态加载器(即动态链接器)可以将几个共享目标文件装载入内存，并与可执行文件链接，作为进程映像来运行。对应于 Linux 中的 .so，Windows 中的 .dll。</li>
+<li><strong>核心转储文件</strong>（Core Dump File），当进程意外终止，系统可以将该进程地址空间的内容及终止时的一些信息转存到核心转储文件。 对应 Linux 下的 core dump。</li>
+</ul>
+<div align="center">链接视角下的 <strong>ELF</strong> 文件结构</div>
+
+<center>
+<table>
+  <tr>
+    <th style="text-align: center; font-weight: bold;">ELF Header</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><strong>.text</strong></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><strong>.data</strong></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><strong>.bss</strong></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><strong>Other Section ...</strong></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><strong>String Tables / Symbol Tables ...</strong></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><strong>Other Section ...</strong></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><strong>Section Header Table</strong></td>
+  </tr>
+</table>
+</center>
+
+<p>(1) <strong>ELF 文件头</strong> ( <strong>ELF Header</strong> )，位于文件的开始位置，它的主要目的是定位文件的其他部分。它包含了整个文件的基本属性：如文件大小、版本、目标机型、程序入口等。</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
+<span class="normal"><a href="#__codelineno-0-24">24</a></span>
+<span class="normal"><a href="#__codelineno-0-25">25</a></span>
+<span class="normal"><a href="#__codelineno-0-26">26</a></span>
+<span class="normal"><a href="#__codelineno-0-27">27</a></span>
+<span class="normal"><a href="#__codelineno-0-28">28</a></span>
+<span class="normal"><a href="#__codelineno-0-29">29</a></span>
+<span class="normal"><a href="#__codelineno-0-30">30</a></span>
+<span class="normal"><a href="#__codelineno-0-31">31</a></span>
+<span class="normal"><a href="#__codelineno-0-32">32</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">elf32_hdr</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="p">{</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">      </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">e_ident</span><span class="w"> </span><span class="p">[</span><span class="n">EI_NIDENT</span><span class="p">];</span><span class="w">    </span><span class="cm">/* Magic number and other info */</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">      </span><span class="n">Elf32_Half</span><span class="w">    </span><span class="n">e_type</span><span class="p">;</span><span class="w">         </span><span class="cm">/* Object file type */</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">      </span><span class="n">Elf32_Half</span><span class="w">    </span><span class="n">e_machine</span><span class="p">;</span><span class="w">      </span><span class="cm">/* Architecture */</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">      </span><span class="n">Elf32_Word</span><span class="w">    </span><span class="n">e_version</span><span class="p">;</span><span class="w">      </span><span class="cm">/* Object file version */</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">      </span><span class="n">Elf32_Addr</span><span class="w">    </span><span class="n">e_entry</span><span class="p">;</span><span class="w">        </span><span class="cm">/* Entry point virtual address */</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">      </span><span class="n">Elf32_Off</span><span class="w"> </span><span class="n">e_phoff</span><span class="p">;</span><span class="w">        </span><span class="cm">/* Program header table file offset */</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">      </span><span class="n">Elf32_Off</span><span class="w"> </span><span class="n">e_shoff</span><span class="p">;</span><span class="w">        </span><span class="cm">/* Section header table file offset */</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">      </span><span class="n">Elf32_Word</span><span class="w">    </span><span class="n">e_flags</span><span class="p">;</span><span class="w">                       </span><span class="cm">/* Processor-specific flags */</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">      </span><span class="n">Elf32_Half</span><span class="w">    </span><span class="n">e_ehsize</span><span class="p">;</span><span class="w">       </span><span class="cm">/* ELF header size in bytes */</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">      </span><span class="n">Elf32_Half</span><span class="w">    </span><span class="n">e_phentsize</span><span class="p">;</span><span class="w">        </span><span class="cm">/* Program header table entry size */</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">      </span><span class="n">Elf32_Half</span><span class="w">    </span><span class="n">e_phnum</span><span class="p">;</span><span class="w">        </span><span class="cm">/* Program header table entry count */</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">      </span><span class="n">Elf32_Half</span><span class="w">    </span><span class="n">e_shentsize</span><span class="p">;</span><span class="w">        </span><span class="cm">/* Section header table entry size */</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">      </span><span class="n">Elf32_Half</span><span class="w">    </span><span class="n">e_shnum</span><span class="p">;</span><span class="w">        </span><span class="cm">/* Section header table entry count */</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">      </span><span class="n">Elf32_Half</span><span class="w">    </span><span class="n">e_shstrndx</span><span class="p">;</span><span class="w">     </span><span class="cm">/* Section header string table index */</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="p">}</span><span class="w"> </span><span class="n">Elf32_Ehdr</span><span class="p">;</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="cm">/*</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="cm">e_ident ： ELF 的一些标识信息(魔术字符)，前四位为.ELF, 其他的信息比如大小端等</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="cm">e_machine ： 文件的目标体系架构，比如 ARM</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="cm">e_version : 0 为非法版本，1 为当前版本</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="cm">e_entry ： 程序入口的虚拟地址</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="cm">e_phoff ： 程序头部表偏移地址</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="cm">e_shoff ： 节区头部表偏移地址</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="cm">e_flags ：保存与文件相关的，特定于处理器的标志</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="cm">e_ehsize ：ELF 头的大小</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="cm">e_phentsize ： 每个程序头部表的大小</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="cm">e_phnum ：程序头部表的数量</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="cm">e_shentsize：每个节区头部表的大小</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="cm">e_shnum ： 节区头部表的数量</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="cm">e_shstrndx：节区字符串表位置</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="cm">*/</span>
+</code></pre></div></td></tr></table></div>
+<p>(2) <strong>.text</strong>：反汇编工具读取并处理的部分，这一部分存储的是机器码。如果没有 .text 节，我们很难去对一个可执行文件进行反汇编分析。</p>
+<p>(3) <strong>.data</strong>：包括已经初始化的 <strong>全局变量</strong> 和 <strong>局部静态变量</strong> 。</p>
+<p>(4) <strong>.bss</strong>：存放的是 <strong>未初始化或初始化为 0 的全局变量和局部静态变量</strong> 。在编译和链接阶段，.bss 节只记录所需空间的大小， <strong>不占用目标文件的磁盘存储空间</strong> 。当程序被加载时，加载器会在内存中额外分配相应大小的空间，并将其内容初始化为 0，这些空间就对应了 .bss 节的内容。</p>
+<div style="display: flex; align-items: center; text-align: center; margin: 20px 0;">
+    <div style="flex: 1; border-bottom: 2px solid #ccc;"></div>
+    <span style="padding: 0 10px; color: #666; font-size: 14px;">（以上4点是 ELF 可执行文件中比较重要的部分，即 ELF 可执行文件链接视角下的简化模型）</span>
+    <div style="flex: 1; border-bottom: 2px solid #ccc;"></div>
+</div>
+
+<p>(5) <strong>Other Section</strong>：还有一些可选的节，比如 <strong>.rodata</strong> 节存储只读数据(只读变量和字符串常量)，<strong>.debug</strong> 节存储调试信息等等，具体遇到可以查看相关文档。</p>
+<p>(6) <strong>String Tables</strong>：字符串表。在 ELF 文件中，会用到很多字符串，比如节名，变量名等。所以 ELF 将所有的字符串集中放到一个表里，在开头和结尾放上null字符，保证每一个字符串都以’\0’结尾。程序可以使用字符串在表中的偏移来引用字符串，这样在 ELF 中引用字符串只需要给出数组下标即可。字符串表在 ELF 中也以节(Section)的形式保存。特别的， <strong>.shstrtab</strong> 是专供 <strong>section name</strong> 的字符串表， <strong>.dynstr</strong> 表示动态链接的字符串表。</p>
+<p>(7) <strong>Symbol Tables</strong>：符号表，通常分为 <strong>.dynsym</strong> 和 <strong>.symtab</strong> ，前者包含参与动态链接的符号，是后者的一个功能子集。在链接过程中，我们将函数和变量统称为 <strong>符号</strong>，函数名和变量名就是 <strong>符号名</strong>。每个符号条目都包含一个叫做 <strong>符号值</strong> (Symbol Value)的字段，对于变量和函数，符号值通常表示符号在其所属节中的偏移，链接完成后表示为其虚拟地址。因为链接过程会将多个不同的目标文件合并在一起，而不同的目标文件之间会相互引用变量和函数，所以链接器就需要借助符号表完成 <strong>符号解析</strong> (Symbol Resolution)和 <strong>重定位</strong> (Relocation)的工作。</p>
+<p>(8) <strong>Section Header Table</strong>：是一个重要的部分，它描述了 ELF 文件包含的所有节的信息，比如每个节的节名、节长度、在文件中的偏移、读写权限和一些节的其他属性。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="n">Elf32_Word</span><span class="w"> </span><span class="n">sh_name</span><span class="p">;</span><span class="w">   </span><span class="c1">//节区名，是节区头部字符串表节区（Section Header String Table Section）的索引。名字是一个 NULL 结尾的字符串。</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="n">Elf32_Word</span><span class="w"> </span><span class="n">sh_type</span><span class="p">;</span><span class="w">    </span><span class="c1">//为节区类型</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="n">Elf32_Word</span><span class="w"> </span><span class="n">sh_flags</span><span class="p">;</span><span class="w">    </span><span class="c1">//节区标志</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="n">Elf32_Addr</span><span class="w"> </span><span class="n">sh_addr</span><span class="p">;</span><span class="w">    </span><span class="c1">//如果节区将出现在进程的内存映像中，此成员给出节区的第一个字节应处的位置。否则，此字段为 0。</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="n">Elf32_Off</span><span class="w"> </span><span class="n">sh_offset</span><span class="p">;</span><span class="w">    </span><span class="c1">//此成员的取值给出节区的第一个字节与文件头之间的偏移。</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="n">Elf32_Word</span><span class="w"> </span><span class="n">sh_size</span><span class="p">;</span><span class="w">   </span><span class="c1">//此 成 员 给 出 节 区 的 长 度 （ 字 节 数 ）。</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="n">Elf32_Word</span><span class="w"> </span><span class="n">sh_link</span><span class="p">;</span><span class="w">   </span><span class="c1">//此成员给出节区头部表索引链接。其具体的解释依赖于节区类型。</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="n">Elf32_Word</span><span class="w"> </span><span class="n">sh_info</span><span class="p">;</span><span class="w">       </span><span class="c1">//此成员给出附加信息，其解释依赖于节区类型。</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="n">Elf32_Word</span><span class="w"> </span><span class="n">sh_addralign</span><span class="p">;</span><span class="w">    </span><span class="c1">//某些节区带有地址对齐约束.</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="n">Elf32_Word</span><span class="w"> </span><span class="n">sh_entsize</span><span class="p">;</span><span class="w">    </span><span class="c1">//某些节区中包含固定大小的项目，如符号表。对于这类节区，此成员给出每个表项的长度字节数。</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="p">}</span><span class="n">Elf32_Shdr</span><span class="p">;</span>
+</code></pre></div>
+<div align="center"><strong>一些基本节区名称及其作用</strong></div>
+
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>属性</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.bss</td>
+<td>SHT_NOBITS</td>
+<td>SHF_ALLOC + SHF_WRITE</td>
+<td>包含将出现在程序的内存映像中的未初始化数据。根据定义，当程序开始执行，系统将把这些数据初始化为 0。此节区不占用文件空间。</td>
+</tr>
+<tr>
+<td>.comment</td>
+<td>SHT_PROGBITS</td>
+<td>(无)</td>
+<td>包含版本控制信息。</td>
+</tr>
+<tr>
+<td>.data</td>
+<td>SHT_PROGBITS</td>
+<td>SHF_ALLOC + SHF_WRITE</td>
+<td>这些节区包含初始化了的数据，将出现在程序的内存映像中。</td>
+</tr>
+<tr>
+<td>.data1</td>
+<td>SHT_PROGBITS</td>
+<td>SHF_ALLOC + SHF_WRITE</td>
+<td>这些节区包含初始化了的数据，将出现在程序的内存映像中。</td>
+</tr>
+<tr>
+<td>.debug</td>
+<td>SHT_PROGBITS</td>
+<td>(无)</td>
+<td>此节区包含用于符号调试的信息。</td>
+</tr>
+<tr>
+<td>.dynamic</td>
+<td>SHT_DYNAMIC</td>
+<td></td>
+<td>此节区包含动态链接信息。节区的属性将包含 SHF_ALLOC 位。SHF_WRITE 位是否被设置取决于处理器。</td>
+</tr>
+<tr>
+<td>.dynstr</td>
+<td>SHT_STRTAB</td>
+<td>SHF_ALLOC</td>
+<td>此节区包含用于动态链接的字符串，大多数情况下这些字符串代表了与符号表项相关的名称。</td>
+</tr>
+<tr>
+<td>.dynsym</td>
+<td>SHT_DYNSYM</td>
+<td>SHF_ALLOC</td>
+<td>此节区包含了动态链接符号表。</td>
+</tr>
+<tr>
+<td>.fini</td>
+<td>SHT_PROGBITS</td>
+<td>SHF_ALLOC + SHF_EXECINSTR</td>
+<td>此节区包含了可执行的指令，是进程终止代码的一部分。程序正常退出时，系统将安排执行这里的代码。</td>
+</tr>
+<tr>
+<td>.got</td>
+<td>SHT_PROGBITS</td>
+<td></td>
+<td>此节区包含全局偏移表。</td>
+</tr>
+<tr>
+<td>.hash</td>
+<td>SHT_HASH</td>
+<td>SHF_ALLOC</td>
+<td>此节区包含了一个符号哈希表。</td>
+</tr>
+<tr>
+<td>.init</td>
+<td>SHT_PROGBITS</td>
+<td>SHF_ALLOC + SHF_EXECINSTR</td>
+<td>此节区包含了可执行指令，是进程初始化代码的一部分。当程序开始执行时，系统要在开始调用主程序入口之前（通常指 C 语言的 main 函数）执行这些代码。</td>
+</tr>
+<tr>
+<td>.interp</td>
+<td>SHT_PROGBITS</td>
+<td></td>
+<td>此节区包含程序解释器的路径名。如果程序包含一个可加载的段，段中包含此节区，那么节区的属性将包含 SHF_ALLOC 位，否则该位为 0。</td>
+</tr>
+<tr>
+<td>.line</td>
+<td>SHT_PROGBITS</td>
+<td>(无)</td>
+<td>此节区包含符号调试的行号信息，其中描述了源程序与机器指令之间的对应关系。其内容是未定义的。</td>
+</tr>
+<tr>
+<td>.note</td>
+<td>SHT_NOTE</td>
+<td>(无)</td>
+<td>此节区中包含注释信息，有独立的格式。</td>
+</tr>
+<tr>
+<td>.plt</td>
+<td>SHT_PROGBITS</td>
+<td></td>
+<td>此节区包含过程链接表（procedure linkage table）。</td>
+</tr>
+<tr>
+<td>.relname .relaname</td>
+<td>SHT_REL SHT_RELA</td>
+<td></td>
+<td>这些节区中包含了重定位信息。如果文件中包含可加载的段，段中有重定位内容，节区的属性将包含 SHF_ALLOC 位，否则该位置 0。传统上 name 根据重定位所适用的节区给定。例如 .text 节区的重定位节区名字将是：.rel.text 或者 .rela.text。</td>
+</tr>
+<tr>
+<td>.rodata .rodata1</td>
+<td>SHT_PROGBITS</td>
+<td>SHF_ALLOC</td>
+<td>这些节区包含只读数据，这些数据通常参与进程映像的不可写段。</td>
+</tr>
+<tr>
+<td>.shstrtab</td>
+<td>SHT_STRTAB</td>
+<td></td>
+<td>此节区包含节区名称。</td>
+</tr>
+<tr>
+<td>.strtab</td>
+<td>SHT_STRTAB</td>
+<td></td>
+<td>此节区包含字符串，通常是代表与符号表项相关的名称。如果文件拥有一个可加载的段，段中包含符号串表，节区的属性将包含 SHF_ALLOC 位，否则该位为 0。</td>
+</tr>
+<tr>
+<td>.symtab</td>
+<td>SHT_SYMTAB</td>
+<td></td>
+<td>此节区包含一个符号表。如果文件中包含一个可加载的段，并且该段中包含符号表，那么节区的属性中包含 SHF_ALLOC 位，否则该位置为 0。</td>
+</tr>
+<tr>
+<td>.text</td>
+<td>SHT_PROGBITS</td>
+<td>SHF_ALLOC + SHF_EXECINSTR</td>
+<td>此节区包含程序的可执行指令。</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">但是 <strong>ELF</strong> 文件并不只有链接视角哦~</p>
+<p>如果读者感兴趣的话，可以去了解一下运行视角下的 ELF 结构，在这个结构下我们不再以“节”进行划分，而是以“段(Segment)”进行。<br>
+程序加载时依赖 Program Header Table，而非 Section Header Table。</p>
+</div>
+<hr>
+<h2 id="pe">PE<a class="headerlink" href="#pe" title="Permanent link">¶</a></h2>
+<p>下面我们来介绍 <strong>PE</strong> 文件：实际上 PE 与 ELF 文件基本相同，也是采用了基于节的格式。</p>
+<p>在支持该扩展的编译器（如 GCC 或 MSVC）中，可以通过编译器指令将变量或函数放入自定义节（使用 GCC 中 <strong><code>__attribute__(section('name'))</code></strong> 扩展属性）。</p>
+<p>在此之前，我们来了解一些基本概念：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Name</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Image File</td>
+<td style="text-align: left;"><strong>镜像文件</strong>：包含以 EXE 文件为代表的 可执行文件、以 DLL 文件为代表的 动态链接库。因为他们常常被直接“复制”到内存中执行，有“镜像”的某种意思。</td>
+</tr>
+<tr>
+<td style="text-align: center;">Section</td>
+<td style="text-align: left;"><strong>节</strong>：是 PE 文件中 <strong>代码</strong> 或 <strong>数据</strong> 的基本单元。从功能角度可以粗略分为 <strong>代码类节</strong> 和 <strong>数据类节</strong> ，但实际 PE 文件中存在多种不同用途的节。</td>
+</tr>
+<tr>
+<td style="text-align: center;">VA</td>
+<td style="text-align: left;"><strong>虚拟地址</strong>：英文全称 <strong>Virtual Address</strong>。即为在内存中的地址。</td>
+</tr>
+<tr>
+<td style="text-align: center;">RVA</td>
+<td style="text-align: left;"><strong>相对基址偏移</strong>：英文全称 <strong>Relative Virtual Address</strong>。偏移(相对虚拟地址)。相对镜像基址的偏移。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pe_1">PE 文件结构<a class="headerlink" href="#pe_1" title="Permanent link">¶</a></h3>
+<p><img alt="pefile" src="../Images/p2-1.png" width="40%"></p>
+<p><strong>DOS 头</strong>：是用来兼容 MS-DOS 操作系统的，目的是当这个文件在 MS-DOS 上运行时提示一段文字，大部分情况下是：This program cannot be run in DOS mode. 还有一个目的，就是指明 NT 头在文件中的位置。</p>
+<p><strong>NT 头</strong>：包含 windows PE 文件的主要信息，其中包括一个 'PE' 字样的签名，PE 文件头(IMAGE_FILE_HEADER) 和 PE 可选头(IMAGE_OPTIONAL_HEADER32或IMAGE_OPTIONAL_HEADER64)。</p>
+<p><strong>节表</strong>：是 PE 文件后续节的描述，Windows 根据节表的描述加载每个节。</p>
+<p><strong>节</strong>：每个节实际上是一个容器，可以包含代码、数据 等等，每个节可以有独立的内存权限，比如代码节默认有读/执行权限，节的名字和数量可以自己定义，未必是上图中的三个。</p>
+<p>此处我们可以看到，其与 ELF 文件的结构大差不差，而且这几个常见的节名称作用也都是差不多的，这里就不再重复了。</p>
+<h3 id="rva-va">RVA 与 VA 的关系<a class="headerlink" href="#rva-va" title="Permanent link">¶</a></h3>
+<p>在我们执行一个 PE 文件之后，这个 PE 文件会被装载到内存中，之后这个 PE 文件中的每一个部分都会有一个固定的虚拟地址(VA)，我们通常叫做内存地址。其中，一个 PE 文件最头部的地址叫做基地址（ImageBase），也可以简单理解为开始地址。此后，以基地址为基础，后面的所有地址都会有自己的相对基址偏移（RVA），也就是其虚拟地址与基地址的差值，称为偏移量。</p>
+<p>我们可以用一个简单的公式来计算虚拟地址： <strong><code>VA = ImageBase + RVA</code></strong> 。</p>
+<p>由此我们可以知道：</p>
+<p>假如一个 PE 文件的头地址 ImageBase 为 0x140000000，其中的某一个虚拟地址 VA 为 0x140000EF48，那么该地址相对于头地址的偏移量 RVA = 0x140000EF48 - 0x140000000 = 0xEF48</p>
+<hr>
+<p>那在逆向工程的过程当中，我们如何来辨别这两种文件呢？</p>
+<p>我们将其拖到 xdbg 中，查看 HEX 窗口，在右侧的字符串区域，可以找到答案。</p>
+<p>ELF 文件会出现 “ELF” 相关的字符串，一般都是出现在头部；PE 文件在其头部有 “MZ” 字样，其附近还会出现 “DOS” 以及 “PE” 等关键字样。</p>
+<p>通过这些特征，我们即可方便又快速地找到其文件类型。</p>
+<p>当然了，我们还可以使用查壳工具进行辨别，如使用Detect It Easy(DIE)。</p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 存储结构"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        存储结构
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../StartWithIDA/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: 从零开始的IDA"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        从零开始的IDA
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#_1">可执行文件</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#elf">ELF</a>
+        
+      </li>
+    
+      <li>
+        <a href="#pe">PE</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#pe_1">PE 文件结构</a>
+        
+      </li>
+    
+      <li>
+        <a href="#rva-va">RVA 与 VA 的关系</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

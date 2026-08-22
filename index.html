@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hello CTF — 从零开始，拿下你的第一面 flag</title>
+<link rel="stylesheet" href="/shell/shell.css">
+<style>
+  /* ===================== 页面级样式（外壳在 /shell/shell.css） ===================== */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.7;
+    transition: background .25s, color .25s;
+  }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--hl); }
+
+  section { padding: 46px 0 8px; }
+
+  /* ===================== Banner（Hero + 渐隐日历） ===================== */
+  .banner {
+    position: relative; margin-top: 26px;
+    border: 1px solid var(--line); border-radius: 26px;
+    background:
+      radial-gradient(640px 320px at 88% -10%, rgba(37, 99, 235, .09), transparent 62%),
+      radial-gradient(520px 280px at -5% 110%, rgba(34, 211, 238, .08), transparent 60%),
+      var(--wash);
+    padding: 54px 56px 46px;
+    overflow: hidden;
+  }
+  .banner::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background-image: radial-gradient(rgba(37, 99, 235, .14) 1px, transparent 1px);
+    background-size: 22px 22px;
+    -webkit-mask-image: linear-gradient(115deg, transparent 30%, #000 90%);
+    mask-image: linear-gradient(115deg, transparent 30%, #000 90%);
+  }
+  [data-theme="dark"] .banner::before { background-image: radial-gradient(rgba(96, 165, 250, .16) 1px, transparent 1px); }
+  .banner-grid {
+    position: relative;
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(440px, 500px);
+    gap: 48px; align-items: start;
+  }
+
+  .kicker { font-family: var(--mono); font-size: 14px; color: var(--accent); min-height: 24px; letter-spacing: .02em; }
+  .cursor { display: inline-block; width: 9px; height: 17px; background: var(--accent); vertical-align: -3px; animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  .hero h1 {
+    font-size: clamp(38px, 4.2vw, 58px);
+    font-weight: 800; letter-spacing: -.04em; line-height: 1.14;
+    margin: 16px 0 18px;
+  }
+  .hero h1 .hl { background: linear-gradient(transparent 60%, var(--hl) 60%); white-space: nowrap; }
+  .hero .sub { font-size: 16px; color: var(--ink-2); max-width: 520px; }
+  .cta-row { display: flex; gap: 14px; margin-top: 28px; flex-wrap: wrap; align-items: center; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 9px;
+    padding: 13px 28px; border-radius: 12px; font-size: 15px; font-weight: 700;
+    transition: transform .16s ease, box-shadow .16s ease, border-color .16s;
+  }
+  .btn .ic { width: 17px; height: 17px; }
+  .btn-dark { background: var(--ink); color: var(--paper); box-shadow: 0 12px 26px -12px rgba(15,23,42,.55); }
+  .btn-dark:hover { transform: translateY(-2px); box-shadow: var(--shadow-pop); }
+  .btn-line { border: 1.5px solid var(--line); color: var(--ink); background: transparent; }
+  .btn-line:hover { border-color: var(--ink); transform: translateY(-2px); }
+  .btn .arr { transition: transform .16s; }
+  .btn:hover .arr { transform: translateX(4px); }
+
+  /* 日历：无框、无底色、无阴影——只有文字和色条，边缘径向渐隐融入 banner */
+  .cal {
+    position: relative;
+    padding: 4px 8px 0;
+    -webkit-mask-image: radial-gradient(118% 125% at 50% 40%, #000 55%, transparent 94%);
+    mask-image: radial-gradient(118% 125% at 50% 40%, #000 55%, transparent 94%);
+  }
+  .cal-head { display: flex; align-items: center; justify-content: space-between; padding: 8px 14px 0; }
+  .cal-title { font-weight: 800; font-size: 23px; letter-spacing: -.025em; }
+  .cal-title span { font-family: var(--mono); font-weight: 600; color: var(--accent); font-size: 11.5px; letter-spacing: .16em; margin-left: 11px; }
+  .cal-nav { display: flex; gap: 5px; align-items: center; }
+  .cal-nav button {
+    height: 29px; min-width: 29px; border-radius: 8px; border: 1px solid var(--line);
+    background: transparent; color: var(--ink-2); cursor: pointer; font-family: var(--mono);
+    font-size: 14px; padding: 0 6px; transition: all .15s;
+  }
+  .cal-nav button:hover { border-color: var(--ink); color: var(--ink); }
+  .cal-dow, .cal-days { display: grid; grid-template-columns: repeat(7, 1fr); }
+  .cal-dow span { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; color: var(--ink-3); text-align: center; padding: 12px 0 2px; }
+  .day {
+    position: relative; min-height: 55px; padding: 7px 8px;
+    font-size: 12.5px; color: var(--ink-2);
+    cursor: default;
+  }
+  .day .num { transition: color .15s; }
+  .day:hover .num { color: var(--accent); }
+  .day.dim { color: var(--ink-3); opacity: .38; }
+  .day.today .num {
+    background: var(--accent); color: #fff; font-weight: 700;
+    width: 23px; height: 23px; border-radius: 7px; display: inline-grid; place-items: center;
+  }
+  .day.sel .num {
+    box-shadow: 0 0 0 1.5px var(--accent);
+    width: 23px; height: 23px; border-radius: 7px;
+    display: inline-grid; place-items: center;
+  }
+  .bars { position: absolute; left: 7px; right: 7px; bottom: 7px; display: flex; flex-direction: column; gap: 2.5px; }
+  .bar { height: 4px; border-radius: 2px; }
+
+  /* 日历头部：区域循环切换按钮（与翻月按钮同款边框） */
+  .seg-cycle {
+    display: inline-flex; align-items: center; gap: 6px;
+    height: 29px; padding: 0 11px; margin-right: 8px;
+    border: 1px solid var(--line); border-radius: 8px; background: transparent;
+    color: var(--ink-2); cursor: pointer;
+    font-family: var(--mono); font-size: 11.5px;
+    transition: all .15s;
+  }
+  .seg-cycle:hover { border-color: var(--ink); color: var(--ink); }
+  .seg-cycle .ic { width: 13px; height: 13px; color: var(--ink-3); }
+  .seg-cycle:hover .ic { color: var(--accent); }
+
+  /* 日期悬浮详情框 */
+  .pop {
+    position: fixed; z-index: 80; width: 280px;
+    background: var(--paper); border: 1px solid var(--line); border-radius: 14px;
+    box-shadow: var(--shadow-pop); padding: 12px 14px;
+    animation: popin .14s ease;
+  }
+  @keyframes popin { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+  .pop-date { font-family: var(--mono); font-size: 11px; color: var(--ink-3); letter-spacing: .1em; padding: 0 2px 4px; }
+  .pop-ev { display: flex; gap: 10px; padding: 9px 2px 3px; border-top: 1px dashed var(--line); align-items: flex-start; }
+  .pop-ev .dotc { width: 8px; height: 8px; border-radius: 3px; margin-top: 6px; flex-shrink: 0; }
+  .pop-ev .n { font-weight: 700; font-size: 13px; line-height: 1.5; }
+  .pop-ev .n a:hover { color: var(--accent); }
+  .pop-ev .n .tag { font-family: var(--mono); font-size: 9.5px; font-weight: 700; padding: 1px 6px; border-radius: 5px; margin-left: 6px; vertical-align: 1px; }
+  .pop-ev .n .tag.cn { color: var(--cn); background: var(--cn-soft); }
+  .pop-ev .n .tag.intl { color: var(--intl); background: var(--intl-soft); }
+  .pop-ev .t { font-family: var(--mono); font-size: 11px; color: var(--ink-3); margin-top: 3px; }
+  .pop-empty { font-size: 12.5px; color: var(--ink-3); padding: 6px 2px 4px; }
+
+  /* 权重设置齿轮（与翻月按钮同款边框） */
+  .gear-btn {
+    height: 29px; width: 29px; border-radius: 8px; border: 1px solid var(--line);
+    background: transparent; color: var(--ink-3); cursor: pointer;
+    display: grid; place-items: center; transition: all .15s; margin-left: 5px;
+  }
+  .gear-btn:hover { border-color: var(--ink); color: var(--ink); }
+  .gear-btn.on { color: var(--accent); border-color: var(--accent); }
+  .gear-btn .ic { width: 15px; height: 15px; }
+  .pop-gear { width: 250px; }
+  .pop-gear .t { font-family: var(--mono); font-size: 11px; color: var(--ink-3); letter-spacing: .1em; padding: 0 2px 8px; }
+  .pop-gear .wrow { display: flex; align-items: center; gap: 10px; padding: 4px 2px 6px; }
+  .pop-gear input[type="range"] { flex: 1; accent-color: var(--accent); }
+  .pop-gear input[type="number"] {
+    width: 62px; border: 1px solid var(--line); border-radius: 8px;
+    background: var(--paper); color: var(--ink);
+    font-family: var(--mono); font-size: 13px; padding: 4px 8px; outline: none;
+  }
+  .pop-gear input[type="number"]:focus { border-color: var(--accent); }
+  .pop-gear .note { font-size: 11px; color: var(--ink-3); padding: 4px 2px 2px; }
+
+  /* ===================== 倒计时一排（撑满无留白） ===================== */
+  .cd-row { display: flex; gap: 14px; margin-top: 16px; }
+  .cd-card {
+    position: relative;
+    flex: 1 1 0; min-width: 0;
+    display: flex; align-items: center; gap: 13px;
+    border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--paper); padding: 13px 16px;
+    transition: transform .15s, border-color .15s;
+  }
+  .cd-card:hover { transform: translateY(-2px); border-color: var(--ink); }
+  /* 新生赛：右上角「新人推荐」挂角标签 */
+  .cd-card .fresh-badge {
+    position: absolute; top: -1px; right: 14px;
+    font-family: var(--mono); font-size: 9.5px; font-weight: 700; letter-spacing: .06em;
+    color: #fff; background: var(--accent);
+    padding: 2px 8px 3px; border-radius: 0 0 7px 7px;
+  }
+  .cd-card .edge { width: 4px; align-self: stretch; border-radius: 2px; flex-shrink: 0; }
+  .cd-card .info { min-width: 0; flex: 1; }
+  .cd-card .name { font-weight: 700; font-size: 13.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .cd-card .name .tag { font-family: var(--mono); font-size: 9.5px; font-weight: 700; padding: 1px 6px; border-radius: 5px; margin-right: 7px; vertical-align: 1px; }
+  .cd-card .name .tag.cn { color: var(--cn); background: var(--cn-soft); }
+  .cd-card .name .tag.intl { color: var(--intl); background: var(--intl-soft); }
+  .cd-card .meta { font-size: 11px; color: var(--ink-3); font-family: var(--mono); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .cd-card .cd { font-family: var(--mono); font-size: 15px; font-weight: 700; color: var(--accent); letter-spacing: -.02em; flex-shrink: 0; }
+  .cd-cap { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 11px; letter-spacing: .12em; color: var(--ink-3); margin: 26px 2px 10px; }
+  .cd-cap a:hover { color: var(--accent); }
+  /* 可折叠排（LONG / PENDING）：点标题展开，默认收起 */
+  .cap-toggle { cursor: pointer; user-select: none; transition: color .15s; }
+  .cap-toggle:hover { color: var(--ink-2); }
+  .cap-toggle .caret { font-size: 12px; }
+  /* display:flex 会盖过 hidden 属性的默认隐藏，需显式声明 */
+  .cd-cap[hidden], .pd-row[hidden] { display: none; }
+
+  /* ===================== 时间待定 / 长周期一排 ===================== */
+  .pd-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pd-item {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-size: 12.5px; font-weight: 600;
+    border: 1px dashed var(--line); border-radius: 999px;
+    padding: 5px 14px; color: var(--ink-2);
+    transition: border-color .15s, color .15s;
+  }
+  .pd-item:hover { border-color: var(--accent); color: var(--accent); }
+  .pd-item .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--cn); flex: none; }
+  .pd-item .lg-tag {
+    font-family: var(--mono); font-size: 9.5px; font-weight: 700;
+    background: var(--wash); border: 1px solid var(--line);
+    border-radius: 5px; padding: 1px 6px; color: var(--ink-3);
+  }
+  .pd-item .lg-tag.cn { color: var(--cn); background: var(--cn-soft); border-color: transparent; }
+  .pd-item .lg-tag.intl { color: var(--intl); background: var(--intl-soft); border-color: transparent; }
+  .pd-item .lg-time { font-family: var(--mono); font-size: 11px; color: var(--ink-3); font-weight: 400; }
+
+  /* ===================== 快速开始弹窗 ===================== */
+  .modal-mask {
+    position: fixed; inset: 0; z-index: 90;
+    background: rgba(15, 23, 42, .42);
+    -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+    display: grid; place-items: center; padding: 20px;
+    animation: fadein .16s ease;
+  }
+  @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+  .modal-mask[hidden] { display: none; }
+  .modal {
+    width: min(520px, 100%);
+    background: var(--paper); border: 1px solid var(--line);
+    border-radius: 20px; box-shadow: var(--shadow-pop);
+    padding: 26px 26px 18px;
+    animation: popin .18s ease;
+  }
+  .modal-cap { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; color: var(--accent); }
+  .modal-title { font-size: 21px; font-weight: 800; letter-spacing: -.02em; margin: 6px 0 4px; }
+  .modal-sub { font-size: 13px; color: var(--ink-2); margin-bottom: 16px; }
+  .opt {
+    display: flex; align-items: center; gap: 14px;
+    border: 1px solid var(--line); border-radius: 14px;
+    padding: 14px 16px; margin-bottom: 10px; cursor: pointer;
+    transition: transform .15s, border-color .15s, box-shadow .15s;
+  }
+  .opt:hover { transform: translateY(-2px); border-color: var(--ink); box-shadow: var(--shadow-pop); }
+  .opt .oicon {
+    width: 40px; height: 40px; border-radius: 11px; flex-shrink: 0;
+    background: var(--wash); border: 1px solid var(--line);
+    display: grid; place-items: center; color: var(--ink); transition: all .15s;
+  }
+  .opt:hover .oicon { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .opt .oicon .ic { width: 19px; height: 19px; }
+  .opt .ot { font-weight: 800; font-size: 14.5px; }
+  .opt .ot .rec {
+    font-family: var(--mono); font-size: 9.5px; font-weight: 700;
+    color: var(--accent); background: var(--accent-soft);
+    border-radius: 5px; padding: 1px 6px; margin-left: 7px; vertical-align: 1px;
+  }
+  .opt .od { font-size: 12.5px; color: var(--ink-2); margin-top: 2px; }
+  .opt .ogo { margin-left: auto; color: var(--ink-3); transition: all .15s; }
+  .opt:hover .ogo { color: var(--accent); transform: translateX(3px); }
+  .modal-foot { text-align: center; font-size: 11px; color: var(--ink-3); padding-top: 8px; font-family: var(--mono); }
+
+  /* ===================== CTF 导航 / 项目推荐 卡片 ===================== */
+  .nav-cap2 { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; color: var(--ink-3); margin-bottom: 12px; }
+  .nav-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .proj-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .proj {
+    border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 18px 20px; background: var(--paper);
+    transition: transform .16s, border-color .16s, box-shadow .16s;
+  }
+  .proj:hover { transform: translateY(-3px); border-color: var(--ink); box-shadow: var(--shadow-pop); }
+  .proj .t { font-weight: 800; font-size: 14.5px; display: flex; gap: 9px; align-items: center; }
+  .proj .t .ic { color: var(--ink-3); transition: color .16s; }
+  .proj:hover .t .ic { color: var(--accent); }
+  .proj .d { font-size: 12.5px; color: var(--ink-2); margin-top: 5px; }
+  .proj.ad {
+    border-style: dashed; border-width: 1.5px; background: transparent;
+    display: grid; place-items: center; text-align: center; color: var(--ink-3);
+  }
+  .proj.ad .t { justify-content: center; color: var(--ink-3); }
+  .proj.ad:hover { border-color: var(--accent); color: var(--accent); box-shadow: none; }
+  .proj.ad:hover .t { color: var(--accent); }
+
+  /* ===================== 页脚 ===================== */
+  footer { margin-top: 60px; border-top: 1px solid var(--line); }
+  .foot-inner {
+    display: flex; justify-content: space-between; align-items: center; gap: 20px;
+    padding: 22px 0; font-size: 13px; color: var(--ink-3); flex-wrap: wrap;
+  }
+  .foot-inner .links { display: flex; gap: 18px; font-family: var(--mono); font-size: 12px; }
+  .foot-inner .links a:hover { color: var(--accent); }
+
+  /* ===================== 响应式 ===================== */
+  @media (max-width: 1280px) {
+    .banner-grid { grid-template-columns: minmax(0, 1fr) minmax(400px, 450px); gap: 32px; }
+  }
+  @media (max-width: 1180px) {
+    .cd-row { flex-wrap: wrap; }
+    .cd-card { flex: 1 1 45%; }
+    .nav-grid { grid-template-columns: repeat(2, 1fr); }
+    .proj-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 1080px) {
+    .banner { padding: 40px 28px; }
+    .banner-grid { grid-template-columns: 1fr; }
+    .cal { max-width: 560px; }
+  }
+  @media (max-width: 860px) {
+    .banner { margin-top: 72px; padding: 34px 22px; }
+  }
+  @media (max-width: 560px) {
+    .cd-card { flex: 1 1 100%; padding: 11px 12px; gap: 10px; }
+    .cd-card .name { font-size: 12.5px; }
+    .cd-card .cd { font-size: 12px; }
+    .nav-grid { grid-template-columns: 1fr; }
+    .proj-grid { grid-template-columns: 1fr; }
+    /* 日历头部：标题不换行，工具行放不下就整体换行 */
+    .cal-head { flex-wrap: wrap; row-gap: 8px; }
+    .cal-title { font-size: 17px; white-space: nowrap; }
+    .cal-title span { display: none; }
+    .cal-nav button { height: 26px; min-width: 26px; }
+    .seg-cycle { font-size: 11px; }
+  }
+</style>
+</head>
+<body>
+
+<script src="/shell/search.js"></script>
+<script src="/shell/shell.js"></script>
+<script>Shell.mount({ active: "home" });</script>
+
+<!-- ===================== 主区 ===================== -->
+<div class="main">
+<div class="container">
+
+  <!-- Banner：Hero + 渐隐日历 -->
+  <div class="banner">
+    <div class="banner-grid">
+      <div class="hero">
+        <div class="kicker"><span id="typewriter"></span><span class="cursor"></span></div>
+        <h1>从零开始，<br>拿下你的第一面 <span class="hl">flag</span>。</h1>
+        <p class="sub">开源、免费、新手友好的 CTF 夺旗赛入门教程。<br>从环境搭建到打进第一场比赛，每一步都有题可练。</p>
+        <div class="cta-row">
+          <a class="btn btn-dark" id="startBtn" href="#"><svg class="ic"><use href="#i-flag"/></svg>快速开始 <span class="arr"><svg class="ic"><use href="#i-arrow"/></svg></span></a>
+          <a class="btn btn-line" href="./submit_event.html"><svg class="ic"><use href="#i-calendar"/></svg>提交比赛</a>
+        </div>
+      </div>
+
+      <!-- 无边框日历：边缘渐隐融入 banner -->
+      <div class="cal">
+        <div class="cal-head">
+          <div class="cal-title" id="calTitle">—<span></span></div>
+          <div style="display:flex;align-items:center">
+            <button class="seg-cycle" id="segCycle" title="点击切换赛事范围">
+              <svg class="ic"><use href="#i-globe"/></svg><span id="segLabel">国内</span>
+            </button>
+            <div class="cal-nav">
+              <button id="prevM" aria-label="上个月">‹</button>
+              <button id="todayM" aria-label="回到今天" style="font-size:12px;padding:0 10px">今天</button>
+              <button id="nextM" aria-label="下个月">›</button>
+            </div>
+            <button class="gear-btn" id="evGear" aria-label="赛事显示设置" title="赛事显示设置"><svg class="ic"><use href="#i-gear"/></svg></button>
+          </div>
+        </div>
+        <div class="cal-dow"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span></div>
+        <div class="cal-days" id="calDays"></div>
+      </div>
+    </div>
+
+    <!-- 正在进行一排：仅当前有比赛在进行时显示 -->
+    <div class="cd-cap" id="ocCap" hidden><span>ONCOMING · 正在进行</span></div>
+    <div class="cd-row" id="ocRow"></div>
+
+    <!-- 倒计时一排：撑满 banner 宽度 -->
+    <div class="cd-cap"><span>UPCOMING · 即将开始</span><a href="./sidebar/events.html">→ 全部赛事</a></div>
+    <div class="cd-row" id="cdRow"></div>
+
+    <!-- 长周期赛事：持续超过 7 天，不上日历格；点标题展开，默认收起 -->
+    <div class="cd-cap cap-toggle" id="lgCap" hidden><span>LONG · 长周期赛事</span><span class="caret">▸</span></div>
+    <div class="pd-row" id="lgRow" hidden></div>
+
+    <!-- 时间待定：已官宣但未公布具体时间的国内赛事；点标题展开，默认收起 -->
+    <div class="cd-cap cap-toggle" id="pdCap" hidden><span>PENDING · 时间待定</span><span class="caret">▸</span></div>
+    <div class="pd-row" id="pdRow" hidden></div>
+  </div>
+
+  <!-- CTF 导航（数据驱动：index_content.json 的 navCards，可在管理面板维护） -->
+  <section id="nav-cards">
+    <div class="sec-head">
+      <div class="sec-title">CTF 导航</div>
+      <a class="sec-more" href="./hc-appendix/">→ 更多资源见附录</a>
+    </div>
+    <div id="navCards"></div>
+  </section>
+
+  <!-- 项目推荐（数据驱动：index_content.json 的 projects） -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-title">项目推荐</div>
+      <a class="sec-more" href="https://github.com/ProbiusOfficial" target="_blank" rel="noopener">→ GitHub @ProbiusOfficial</a>
+    </div>
+    <div class="proj-grid" id="projCards"></div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="foot-inner">
+      <span>© 2026 探姬 · Hello CTF — 向每一位开源贡献者致敬</span>
+      <div class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a><a href="https://www.nssctf.cn/" target="_blank" rel="noopener">NSSCTF</a><a href="https://github.com/CTF-Archives" target="_blank" rel="noopener">CTF-Archives</a><a href="./sidebar/feedback.html">QQ 群</a><a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</div>
+
+<!-- 快速开始弹窗：三条入门路径 -->
+<div class="modal-mask" id="startModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-label="快速开始">
+    <div class="modal-cap">GET STARTED</div>
+    <div class="modal-title">从哪里开始？</div>
+    <p class="modal-sub">三条路，选一条最适合你的。</p>
+    <a class="opt" href="./hc-start/">
+      <span class="oicon"><svg class="ic"><use href="#i-flag"/></svg></span>
+      <div>
+        <div class="ot">快速开始<span class="rec">推荐新手</span></div>
+        <div class="od">一篇 10 分钟的入门指南：CTF 是什么、怎么学、从哪学</div>
+      </div>
+      <span class="ogo"><svg class="ic"><use href="#i-arrow"/></svg></span>
+    </a>
+    <a class="opt" href="./sidebar/first-flag.html">
+      <span class="oicon"><svg class="ic"><use href="#i-zap"/></svg></span>
+      <div>
+        <div class="ot">CTF 初体验</div>
+        <div class="od">不看教程直接上手：跟着引导亲手解出第一道题，感受夺旗的瞬间</div>
+      </div>
+      <span class="ogo"><svg class="ic"><use href="#i-arrow"/></svg></span>
+    </a>
+    <a class="opt" href="./hc-preface/">
+      <span class="oicon"><svg class="ic"><use href="#i-book"/></svg></span>
+      <div>
+        <div class="ot">自由浏览文档</div>
+        <div class="od">已经有基础？直接进入完整教程目录，自己挑想看的</div>
+      </div>
+      <span class="ogo"><svg class="ic"><use href="#i-arrow"/></svg></span>
+    </a>
+    <div class="modal-foot">ESC 关闭 · 选错了也没关系，左侧导航随时能回来</div>
+  </div>
+</div>
+
+<script>
+/* ============ 赛事数据：实时读取 build.py 生成的 JSON ============ */
+let EVENTS = [];
+const PALETTE = ["#ef4444", "#f97316", "#eab308", "#22c55e", "#06b6d4", "#3b82f6", "#8b5cf6", "#ec4899", "#14b8a6", "#f43f5e"];
+
+/* 每场比赛一个高区分度颜色：跨色相色板，按开始时间稳定分配（不随刷新变化） */
+function assignColors(events) {
+  [...events].sort((a, b) => a.start < b.start ? -1 : 1)
+    .forEach((e, i) => { e.color = PALETTE[i % PALETTE.length]; });
+}
+function parseCnTime(s) {  /* "2026年07月17日 19:00" → ISO */
+  const m = (s || "").match(/(\d{4})年(\d{1,2})月(\d{1,2})日\s+(\d{1,2}):(\d{2})/);
+  if (!m) return null;
+  const p = n => String(n).padStart(2, "0");
+  return `${m[1]}-${p(m[2])}-${p(m[3])}T${p(m[4])}:${m[5]}:00+08:00`;
+}
+function parseGlobalTime(s) {  /* "2026-08-05 15:00:00 - 2026-08-06 03:00:00 UTC+8" → [ISO, ISO] */
+  const m = (s || "").match(/(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2}):\d{2}\s*-\s*(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2}):\d{2}/);
+  return m ? [`${m[1]}T${m[2]}:00+08:00`, `${m[3]}T${m[4]}:00+08:00`] : [null, null];
+}
+async function loadEvents() {
+  const events = [];
+  try {
+    const cn = await (await fetch("./Event/json/CN.json")).json();
+    for (const e of (cn.data && cn.data.result) || []) {
+      if (e.pending) {
+        PENDING.push({ name: e.name, url: e.link || "#" });
+        continue;
+      }
+      const start = parseCnTime(e.comp_time_start);
+      const end = parseCnTime(e.comp_time_end);
+      if (!start || !end) continue;
+      events.push({
+        name: e.name, region: "cn", start, end,
+        form: (e.detail || "").replace(/^赛制\/类型:\s*/, "").split("\n")[0],
+        url: e.link || "#",
+        freshman: e.freshman === true
+      });
+    }
+  } catch (err) { console.warn("CN 赛事加载失败", err); }
+  try {
+    const gl = await (await fetch("./Event/json/Global.json")).json();
+    for (const e of gl || []) {
+      const [start, end] = parseGlobalTime(e["比赛时间"]);
+      if (!start || !end) continue;
+      events.push({
+        name: e["比赛名称"], region: "intl", start, end,
+        form: e["比赛形式"] || "", url: e["比赛链接"] || "#",
+        weight: parseFloat(e["比赛权重"]) || 0
+      });
+    }
+  } catch (err) { console.warn("Global 赛事加载失败", err); }
+  EVENTS = events;
+  assignColors(EVENTS);
+  renderPending();
+  renderLong();
+  document.dispatchEvent(new Event("events-ready"));
+}
+loadEvents();
+
+/* 长周期判定：持续超过 7 天 */
+function isLongEvent(e) {
+  return new Date(e.end) - new Date(e.start) > 7 * 864e5;
+}
+
+/* 时间待定一排（国内赛事 pending） */
+const PENDING = [];
+function renderPending() {
+  const cap = document.getElementById("pdCap");
+  const row = document.getElementById("pdRow");
+  if (!PENDING.length) { cap.hidden = true; row.innerHTML = ""; return; }
+  cap.hidden = false;
+  row.innerHTML = PENDING.map(e =>
+    '<a class="pd-item" href="' + e.url + '" target="_blank" rel="noopener">' +
+    '<span class="dot"></span>' + e.name + "</a>"
+  ).join("");
+}
+
+/* 长周期赛事一排（>7 天且未上日历格，标注持续时间 + 时间段） */
+function renderLong() {
+  const cap = document.getElementById("lgCap");
+  const row = document.getElementById("lgRow");
+  const longs = EVENTS.filter(e => isLongEvent(e) && !onCalendar(e))
+    .sort((a, b) => a.start < b.start ? -1 : 1);
+  if (!longs.length) { cap.hidden = true; row.innerHTML = ""; return; }
+  cap.hidden = false;
+  row.innerHTML = longs.map(e =>
+    '<a class="pd-item" href="' + e.url + '" target="_blank" rel="noopener" title="比赛持续时间很长">' +
+    '<span class="lg-tag ' + e.region + '">' + (e.region === "cn" ? "国内" : "国际") + "</span>" + e.name +
+    '<span class="lg-time">' + e.start.slice(5, 10) + " → " + e.end.slice(5, 10) + "</span></a>"
+  ).join("");
+}
+document.addEventListener("events-filter", renderLong);
+
+/* LONG / PENDING 两排：点标题收起/展开，默认收起并记住选择 */
+function setupCollapse(capId, rowId, storageKey) {
+  const cap = document.getElementById(capId);
+  const row = document.getElementById(rowId);
+  const caret = cap.querySelector(".caret");
+  function apply(open) {
+    row.hidden = !open;
+    caret.textContent = open ? "▾" : "▸";
+  }
+  apply(localStorage.getItem(storageKey) === "1");
+  cap.addEventListener("click", () => {
+    const open = row.hidden;
+    localStorage.setItem(storageKey, open ? "1" : "0");
+    apply(open);
+  });
+}
+setupCollapse("lgCap", "lgRow", "hc-cap-long");
+setupCollapse("pdCap", "pdRow", "hc-cap-pending");
+
+/* 国际赛权重过滤（与赛事中心页共享设置，默认 ≥50；国内赛事不受影响） */
+let weightMin = +(localStorage.getItem("hc-ev-weight") ?? 50);
+function passWeight(e) { return e.region !== "intl" || (e.weight || 0) >= weightMin; }
+
+/* 长周期赛事时间轴：默认隐藏超过 7 天的比赛，可在齿轮设置里放开 */
+let hideLong = localStorage.getItem("hc-ev-hide-long") !== "0";
+function onCalendar(e) { return !isLongEvent(e) || !hideLong; }
+
+/* ============ 打字机 ============ */
+(function () {
+  const lines = [
+    "$ whoami → future_ctf_player",
+    "$ hello-ctf --init",
+    "$ cat flag{w31c0me_t0_ctf}"
+  ];
+  const el = document.getElementById("typewriter");
+  let li = 0, ci = 0, deleting = false;
+  function tick() {
+    const line = lines[li];
+    if (!deleting) {
+      el.textContent = line.slice(0, ++ci);
+      if (ci === line.length) { deleting = true; return setTimeout(tick, 2200); }
+      setTimeout(tick, 55);
+    } else {
+      el.textContent = line.slice(0, --ci);
+      if (ci === 0) { deleting = false; li = (li + 1) % lines.length; return setTimeout(tick, 400); }
+      setTimeout(tick, 22);
+    }
+  }
+  tick();
+})();
+
+/* ============ 日历（点击日期看详情 + 国内/国外筛选） ============ */
+const CAL = (function () {
+  const daysEl = document.getElementById("calDays");
+  const titleEl = document.getElementById("calTitle");
+  const now = new Date();
+  let viewY = now.getFullYear(), viewM = now.getMonth();
+  let regionFilter = "cn";  /* 默认只看国内赛事 */
+  let selDate = null;
+
+  /* 悬浮详情框挂在 body 上，避免被日历边缘渐隐遮罩影响 */
+  const pop = document.createElement("div");
+  pop.className = "pop";
+  pop.hidden = true;
+  document.body.appendChild(pop);
+
+  function iso(y, m, d) {
+    return y + "-" + String(m + 1).padStart(2, "0") + "-" + String(d).padStart(2, "0");
+  }
+  function visibleEvents() {
+    return EVENTS.filter(e => (regionFilter === "all" || e.region === regionFilter) && passWeight(e));
+  }
+  /* 日历默认只显示 ≤7 天的赛事，齿轮设置里可放开长周期赛事 */
+  function calEvents() {
+    return visibleEvents().filter(onCalendar);
+  }
+  function eventsOn(dateStr) {
+    return calEvents().filter(e => dateStr >= e.start.slice(0, 10) && dateStr <= e.end.slice(0, 10));
+  }
+  function hidePop() {
+    pop.hidden = true;
+    selDate = null;
+    daysEl.querySelectorAll(".day.sel").forEach(d => d.classList.remove("sel"));
+  }
+  function showPop(cell, dateStr) {
+    const evs = eventsOn(dateStr);
+    pop.innerHTML = '<div class="pop-date">' + dateStr + "</div>" +
+      (evs.length
+        ? evs.map(e =>
+            '<div class="pop-ev">' +
+              '<span class="dotc" style="background:' + e.color + '"></span>' +
+              '<div><div class="n"><a href="' + e.url + '" target="_blank" rel="noopener">' + e.name + "</a>" +
+                '<span class="tag ' + e.region + '">' + (e.region === "cn" ? "国内" : "国际") + "</span></div>" +
+              '<div class="t">' + e.start.slice(0, 16).replace("T", " ") + " → " + e.end.slice(0, 16).replace("T", " ") + " · " + e.form + "</div></div>" +
+            "</div>"
+          ).join("")
+        : '<div class="pop-empty">这一天没有进行中的比赛' + (regionFilter !== "all" ? "（当前筛选下）" : "") + "</div>");
+    pop.hidden = false;
+    const r = cell.getBoundingClientRect();
+    let x = r.left + r.width / 2 - 140;
+    x = Math.max(10, Math.min(x, window.innerWidth - 290));
+    let y = r.bottom + 8;
+    if (y + pop.offsetHeight > window.innerHeight - 10) y = r.top - pop.offsetHeight - 8;
+    pop.style.left = x + "px";
+    pop.style.top = y + "px";
+  }
+
+  function render() {
+    const first = new Date(viewY, viewM, 1);
+    const startOffset = (first.getDay() + 6) % 7;
+    const daysInMonth = new Date(viewY, viewM + 1, 0).getDate();
+    const prevDays = new Date(viewY, viewM, 0).getDate();
+    titleEl.innerHTML = viewY + " 年 " + (viewM + 1) + " 月<span>" +
+      first.toLocaleString("en-US", { month: "long" }).toUpperCase() + "</span>";
+
+    const evs = calEvents();
+    let html = "";
+    const total = Math.ceil((startOffset + daysInMonth) / 7) * 7;
+    for (let i = 0; i < total; i++) {
+      const dNum = i - startOffset + 1;
+      let y = viewY, m = viewM, d = dNum, dim = false;
+      if (dNum < 1) { m = viewM - 1; d = prevDays + dNum; dim = true; if (m < 0) { m = 11; y--; } }
+      else if (dNum > daysInMonth) { m = viewM + 1; d = dNum - daysInMonth; dim = true; if (m > 11) { m = 0; y++; } }
+      const dateStr = iso(y, m, d);
+      const isToday = dateStr === iso(now.getFullYear(), now.getMonth(), now.getDate());
+      let bars = "";
+      for (const ev of evs) {
+        if (dateStr >= ev.start.slice(0, 10) && dateStr <= ev.end.slice(0, 10))
+          bars += '<span class="bar" style="background:' + ev.color + '" title="' + ev.name + '"></span>';
+      }
+      html += '<div class="day' + (dim ? " dim" : "") + (isToday ? " today" : "") + '" data-date="' + dateStr + '">' +
+        '<span class="num">' + d + "</span>" +
+        (bars ? '<div class="bars">' + bars + "</div>" : "") + "</div>";
+    }
+    daysEl.innerHTML = html;
+  }
+
+  /* 点击日期 → 悬浮框（再点一次关闭） */
+  daysEl.addEventListener("click", e => {
+    const cell = e.target.closest(".day");
+    if (!cell) return;
+    if (selDate === cell.dataset.date && !pop.hidden) { hidePop(); return; }
+    hidePop();
+    selDate = cell.dataset.date;
+    cell.classList.add("sel");
+    showPop(cell, selDate);
+  });
+  document.addEventListener("click", e => {
+    if (!pop.hidden && !e.target.closest(".pop") && !e.target.closest(".day")) hidePop();
+  });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") hidePop(); });
+
+  /* 区域循环切换：国内 → 国外 → 所有 */
+  const SEG_ORDER = [["cn", "国内"], ["intl", "国外"], ["all", "所有"]];
+  document.getElementById("segCycle").addEventListener("click", () => {
+    const idx = SEG_ORDER.findIndex(([v]) => v === regionFilter);
+    const [next, label] = SEG_ORDER[(idx + 1) % SEG_ORDER.length];
+    regionFilter = next;
+    document.getElementById("segLabel").textContent = label;
+    hidePop();
+    render();
+    document.dispatchEvent(new CustomEvent("region-filter", { detail: regionFilter }));
+  });
+
+  document.getElementById("prevM").onclick = () => { viewM--; if (viewM < 0) { viewM = 11; viewY--; } hidePop(); render(); };
+  document.getElementById("nextM").onclick = () => { viewM++; if (viewM > 11) { viewM = 0; viewY++; } hidePop(); render(); };
+  document.getElementById("todayM").onclick = () => { viewY = now.getFullYear(); viewM = now.getMonth(); hidePop(); render(); };
+  render();
+  document.addEventListener("events-ready", render);
+  document.addEventListener("events-filter", render);
+  return { now };
+})();
+
+/* ============ 正在进行 / 即将开始两排（跟随日历的区域筛选，各最多 3 条） ============ */
+(function () {
+  const ocCap = document.getElementById("ocCap");
+  const ocRow = document.getElementById("ocRow");
+  const row = document.getElementById("cdRow");
+  let regionFilter = "cn";  /* 默认只看国内赛事 */
+
+  function card(e) {
+    return '<a class="cd-card" href="' + e.url + '" target="_blank" rel="noopener">' +
+      (e.freshman ? '<span class="fresh-badge">新人推荐</span>' : "") +
+      '<span class="edge" style="background:' + e.color + '"></span>' +
+      '<div class="info">' +
+        '<div class="name" title="' + e.name.replace(/"/g, "&quot;") + '"><span class="tag ' + e.region + '">' + (e.region === "cn" ? "国内" : "国际") + "</span>" + e.name + "</div>" +
+        '<div class="meta">' + e.start.slice(5, 10) + " → " + e.end.slice(5, 10) + " · " + e.form + "</div>" +
+      "</div>" +
+      '<div class="cd" data-start="' + e.start + '">--</div>' +
+    "</a>";
+  }
+
+  function build() {
+    const todayStr = new Date().toISOString().slice(0, 10);
+    const inScope = e => (regionFilter === "all" || e.region === regionFilter) && passWeight(e);
+    /* 正在进行：今天落在起止时间内；新生赛优先排最前 */
+    const ongoing = EVENTS
+      .filter(e => e.start.slice(0, 10) <= todayStr && e.end.slice(0, 10) >= todayStr && inScope(e))
+      .sort((a, b) => (b.freshman - a.freshman) || (a.end < b.end ? -1 : 1))
+      .slice(0, 3);
+    ocCap.hidden = !ongoing.length;
+    ocRow.innerHTML = ongoing.map(card).join("");
+    /* 即将开始：开始时间在未来；新生赛优先排最前 */
+    const upcoming = EVENTS
+      .filter(e => e.start.slice(0, 10) > todayStr && inScope(e))
+      .sort((a, b) => (b.freshman - a.freshman) || (a.start < b.start ? -1 : 1))
+      .slice(0, 3);
+    row.innerHTML = upcoming.map(card).join("") ||
+      '<div style="font-size:13px;color:var(--ink-3);padding:4px 2px">当前筛选下近期暂无赛事 · 点日历右上角的范围按钮切换看看 →</div>';
+  }
+  build();
+  document.addEventListener("region-filter", e => { regionFilter = e.detail; build(); });
+  document.addEventListener("events-ready", build);
+  document.addEventListener("events-filter", build);
+
+  function pad(n) { return String(n).padStart(2, "0"); }
+  function tick() {
+    const now = Date.now();
+    document.querySelectorAll("#cdRow .cd, #ocRow .cd").forEach(el => {
+      const diff = new Date(el.dataset.start).getTime() - now;
+      if (diff <= 0) { el.textContent = "进行中"; return; }
+      const d = Math.floor(diff / 864e5);
+      const h = Math.floor(diff % 864e5 / 36e5);
+      const m = Math.floor(diff % 36e5 / 6e4);
+      const s = Math.floor(diff % 6e4 / 1e3);
+      el.textContent = d > 0 ? d + "d " + pad(h) + ":" + pad(m) : pad(h) + ":" + pad(m) + ":" + pad(s);
+    });
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+
+/* ============ 快速开始弹窗 ============ */
+(function () {
+  const modal = document.getElementById("startModal");
+  document.getElementById("startBtn").addEventListener("click", e => {
+    e.preventDefault();
+    modal.hidden = false;
+  });
+  modal.addEventListener("click", e => { if (e.target === modal) modal.hidden = true; });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") modal.hidden = true; });
+})();
+
+/* ============ 国际赛权重设置齿轮（与赛事中心页共享设置） ============ */
+(function () {
+  const gear = document.getElementById("evGear");
+  const pop = document.createElement("div");
+  pop.className = "pop pop-gear";
+  pop.hidden = true;
+  document.body.appendChild(pop);
+  function renderPop() {
+    pop.innerHTML = '<div class="t">国际赛权重过滤</div>' +
+      '<div class="wrow">' +
+        '<input type="range" id="wRange" min="0" max="100" step="1" value="' + weightMin + '">' +
+        '<input type="number" id="wNum" min="0" max="100" value="' + weightMin + '">' +
+      "</div>" +
+      '<div class="note">只显示权重 ≥ 该值的国际赛（0 = 全部）<br>国内赛事不受影响 · 与赛事中心页共享设置</div>' +
+      '<div class="t" style="padding-top:10px">日历时间轴</div>' +
+      '<label class="wrow" style="cursor:pointer;user-select:none">' +
+        '<input type="checkbox" id="hideLong"' + (hideLong ? " checked" : "") + ' style="accent-color:var(--accent);flex:none;margin:0;">' +
+        '<span style="font-size:12.5px">不显示超过 7 天的比赛时间轴</span>' +
+      "</label>" +
+      '<div class="note">被隐藏的长周期赛事收录在下方 LONG 一排</div>';
+    const range = pop.querySelector("#wRange");
+    const num = pop.querySelector("#wNum");
+    function apply(v) {
+      v = Math.max(0, Math.min(100, Math.round(+v) || 0));
+      weightMin = v;
+      range.value = v;
+      num.value = v;
+      localStorage.setItem("hc-ev-weight", v);
+      document.dispatchEvent(new Event("events-filter"));
+    }
+    range.oninput = e => apply(e.target.value);
+    num.onchange = e => apply(e.target.value);
+    pop.querySelector("#hideLong").onchange = e => {
+      hideLong = e.target.checked;
+      localStorage.setItem("hc-ev-hide-long", hideLong ? "1" : "0");
+      document.dispatchEvent(new Event("events-filter"));
+    };
+  }
+  gear.onclick = e => {
+    e.stopPropagation();
+    if (!pop.hidden) { pop.hidden = true; gear.classList.remove("on"); return; }
+    renderPop();
+    pop.hidden = false;
+    gear.classList.add("on");
+    const r = gear.getBoundingClientRect();
+    pop.style.left = Math.max(10, Math.min(r.right - 250, window.innerWidth - 260)) + "px";
+    pop.style.top = (r.bottom + 8) + "px";
+  };
+  document.addEventListener("click", e => {
+    if (!pop.hidden && !e.target.closest(".pop-gear") && !e.target.closest("#evGear")) {
+      pop.hidden = true;
+      gear.classList.remove("on");
+    }
+  });
+})();
+
+/* ============ CTF 导航 + 项目推荐卡片（index_content.json，可在管理面板维护；失败用内置兜底） ============ */
+(function () {
+  const FALLBACK = [
+    { group: "PRACTICE · 靶场", title: "循镜靶场", url: "https://platform.cyclens.tech/", desc: "综合 CTF 练习平台" },
+    { group: "PRACTICE · 靶场", title: "NSSCTF", url: "https://www.nssctf.cn/", desc: "本站教程例题直达平台" },
+    { group: "PRACTICE · 靶场", title: "CTFshow", url: "https://ctf.show/", desc: "新手友好的刷题平台" },
+    { group: "PRACTICE · 靶场", title: "CTF2（原BUU）", url: "https://ctf2.dasctf.com/", desc: "经典题库，Writeup 丰富" },
+    { group: "PRACTICE · 靶场", title: "CTFHub", url: "https://ctfhub.com/", desc: "技能树式闯关学习" },
+    { group: "COMMUNITY · 社区", title: "先知社区", url: "https://xz.aliyun.com/", desc: "阿里安全运营的技术社区" },
+    { group: "COMMUNITY · 社区", title: "看雪论坛", url: "https://bbs.kanxue.com/", desc: "二进制安全老牌社区" },
+    { group: "COMMUNITY · 社区", title: "FreeBuf", url: "https://www.freebuf.com/", desc: "安全行业资讯与干货" }
+  ];
+  const FALLBACK_PROJECTS = [
+    { title: "CTF-OS", url: "https://github.com/ProbiusOfficial/CTF-OS", desc: "为 CTF 选手打造的开箱即用操作系统", icon: "i-terminal" },
+    { title: "RCE-labs", url: "https://github.com/ProbiusOfficial/RCE-labs", desc: "命令执行漏洞靶场", icon: "i-target" },
+    { title: "PHPSerialize-labs", url: "https://github.com/ProbiusOfficial/PHPSerialize-labs", desc: "PHP 反序列化靶场", icon: "i-target" },
+    { title: "PHPinclude-labs", url: "https://github.com/ProbiusOfficial/PHPinclude-labs", desc: "文件包含漏洞靶场", icon: "i-target" },
+    { title: "n3tfl0w-labs", url: "https://github.com/ProbiusOfficial/n3tfl0w-labs", desc: "流量分析靶场", icon: "i-target" },
+    { title: "hello-ssrf", url: "https://github.com/ProbiusOfficial/hello-ssrf", desc: "SSRF 漏洞靶场", icon: "i-target" },
+    { title: "CTF-Archives", url: "https://github.com/CTF-Archives", desc: "历届赛事题目归档仓库", icon: "i-archive" }
+  ];
+  function renderNav(cards) {
+    const groups = {};
+    cards.forEach(c => {
+      const g = c.group || "其他";
+      (groups[g] = groups[g] || []).push(c);
+    });
+    document.getElementById("navCards").innerHTML = Object.entries(groups).map(([g, items], gi) =>
+      '<div class="nav-cap2">' + g + "</div>" +
+      '<div class="nav-grid"' + (gi === 0 ? ' style="margin-bottom:22px"' : "") + ">" +
+      items.map(c =>
+        '<a class="proj" href="' + c.url + '" target="_blank" rel="noopener">' +
+          '<div class="t"><svg class="ic"><use href="#i-target"/></svg>' + c.title + "</div>" +
+          '<div class="d">' + (c.desc || "") + "</div>" +
+        "</a>"
+      ).join("") + "</div>"
+    ).join("");
+  }
+  function renderProjects(projects) {
+    document.getElementById("projCards").innerHTML = projects.map(c =>
+      '<a class="proj" href="' + c.url + '" target="_blank" rel="noopener">' +
+        '<div class="t"><svg class="ic"><use href="#' + (c.icon || "i-target") + '"/></svg>' + c.title + "</div>" +
+        '<div class="d">' + (c.desc || "") + "</div>" +
+      "</a>"
+    ).join("") +
+    '<a class="proj ad"><div><div class="t">广告位招租</div><div class="d">你的项目 / 平台可以出现在这里</div></div></a>';
+  }
+  fetch("./index_content.json")
+    .then(r => r.json())
+    .then(data => {
+      renderNav(Array.isArray(data.navCards) && data.navCards.length ? data.navCards : FALLBACK);
+      renderProjects(Array.isArray(data.projects) && data.projects.length ? data.projects : FALLBACK_PROJECTS);
+    })
+    .catch(() => { renderNav(FALLBACK); renderProjects(FALLBACK_PROJECTS); });
+})();
+</script>
+</body>
+</html>

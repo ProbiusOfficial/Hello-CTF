@@ -1,0 +1,1408 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Docker环境 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link on" href="./">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="linuxdocker">在Linux上部署Docker环境<a class="headerlink" href="#linuxdocker" title="Permanent link">¶</a></h1>
+<p>本文也有配套视频，建议结合食用：(给个三连吧www)
+<a href="https://www.bilibili.com/video/BV1684y1z7L6">https://www.bilibili.com/video/BV1684y1z7L6</a></p>
+<h2 id="about">About<a class="headerlink" href="#about" title="Permanent link">¶</a></h2>
+<p>本文档完整的流程可以帮助您在 <strong>Kali Linux</strong> 上完成Docker环境，并且基于 VSCode 的Remote 功能，利用SSH协议，构建 VSCode + SSH + Docker 的工作流，提高效率。
+同样，本文档也考虑了非Kali，用于开发/生产环境的 <strong>Ubuntu / Debian</strong> 系统 ，如果您想要在开发/生产中使用该工作流，可以直接从 <strong>Get Docker</strong> 或者 <strong>Build SSH + VSCode + Docker Workflow</strong> 章节开始。
+笔者水平有限，错误疏漏之处在所难免，烦请各位师傅斧正。
+以及非常感谢 <strong>陈橘墨 (@<em>Randark_JMT</em>) 师傅</strong> 提供的帮助。</p>
+<h2 id="get-kali">Get Kali<a class="headerlink" href="#get-kali" title="Permanent link">¶</a></h2>
+<h3 id="download">Download<a class="headerlink" href="#download" title="Permanent link">¶</a></h3>
+<p>在Kali官网下载即可，建议直接下载封装好的虚拟机版本：
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108984.png">
+解压下载好的压缩包到您想要放置虚拟机的位置，然后双击配置文件直接打开自动添加，或者在VMware中手动添加：
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108041.png">
+添加完成后，启动即可：
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108250.png">
+（当然，作为Docker Runner，您可能需要设置一个稍微大点的内存值）
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108214.png"></p>
+<h3 id="change-source">Change Source？<a class="headerlink" href="#change-source" title="Permanent link">¶</a></h3>
+<p>笔者并不建议换源，Kali官方源的速度还是不错的，换源可能会导致您软件管理出现问题。</p>
+<h2 id="get-docker">Get Docker<a class="headerlink" href="#get-docker" title="Permanent link">¶</a></h2>
+<h3 id="install">Install<a class="headerlink" href="#install" title="Permanent link">¶</a></h3>
+<p>Docker安装目前有两个版本，一个是官方的 <strong>docker.ce</strong> 版本，一个是有Debian团队维护的 <strong><a href="http://docker.io/">docker.io</a></strong> 版本。<br>
+之前有争议说 <a href="http://docker.io/">docker.io</a> 是旧版本的Docker 而新版的Docker是 docker.ce<br>
+然而docker.io的版本有时会比docker.ce高，事实上，两者只是负责维护的组织不同，前者是Debian官方维护，后者则为Docker官方维护，并没有新旧之分：</p>
+<h4 id="dockerio"><a href="http://docker.io/">docker.io</a><a class="headerlink" href="#dockerio" title="Permanent link">¶</a></h4>
+<p>该版本由Debian团队维护，采用 apt 的方式管理依赖<br>
+安装过程：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>docker.io
+</code></pre></div>
+<p><img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108106.png">
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108155.png">
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108090.png"></p>
+<h4 id="dockerce">docker.ce<a class="headerlink" href="#dockerce" title="Permanent link">¶</a></h4>
+<p>由Docker官方维护的版本，采用 go 的方式管理依赖，如果您要在开发/生产环境中使用Docker，推荐使用该版本。<br>
+如果您的Linux版本为Ubuntu/Debian，可以使用以下命令自动安装：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>wget<span class="w"> </span>-qO-<span class="w"> </span>https://get.docker.com/<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
+</code></pre></div>
+<p>（注意，Docker并不支持Kali一键安装，同样笔者也不推荐您用Kali作为开发生产环境，Kali满足日常需要，使用io版本即可，当然您也可以使用.ce版本的手动安装）</p>
+<p>手动安装：<br>
+可以参考<a href="https://docs.docker.com/engine/install/debian/">Docker官方的 Docker Engine安装步骤</a><br>
+但是该步骤在 Kali Linux上面可能会存在一定问题，以Kali为例，完整的安装流程如下：  </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span>ca-certificates<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span>curl<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span>gnupg<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span>lsb-release
+</code></pre></div>
+<p><img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108273.png"><br>
+选项选择Yes就好。<br>
+然后按照官网提示，添加Docker官方的 GPG key：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/etc/apt/keyrings
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://download.docker.com/linux/debian/gpg<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>gpg<span class="w"> </span>--dearmor<span class="w"> </span>-o<span class="w"> </span>/etc/apt/keyrings/docker.gpg
+</code></pre></div>
+<p>然后设置仓库：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">echo</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="s2">"deb [arch=</span><span class="k">$(</span>dpkg<span class="w"> </span>--print-architecture<span class="k">)</span><span class="s2"> signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="s2">  </span><span class="k">$(</span>lsb_release<span class="w"> </span>-cs<span class="k">)</span><span class="s2"> stable"</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/sources.list.d/docker.list<span class="w"> </span>&gt;<span class="w"> </span>/dev/null
+</code></pre></div>
+<p>然后开始安装：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>docker-ce<span class="w"> </span>docker-ce-cli<span class="w"> </span>containerd.io<span class="w"> </span>docker-compose-plugin
+</code></pre></div>
+<p>随后，如果您是Kali Linux，您可能会遭遇以下报错：</p>
+<p><img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108058.png">
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108673.png"><br>
+这是由于Docker官方并没有提供直接支持Kali的源，所以我们使用Debian的源就好：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">printf</span><span class="w"> </span><span class="s2">"%s\n"</span><span class="w"> </span><span class="s2">"deb [arch=amd64] https://download.docker.com/linux/debian buster stable"</span><span class="w"> </span><span class="p">|</span><span class="se">\</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/sources.list.d/docker-ce.list
+</code></pre></div>
+<p>并且添加对应的密钥：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://download.docker.com/linux/debian/gpg<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>apt-key<span class="w"> </span>add<span class="w"> </span>-
+</code></pre></div>
+<p>注意不要忘了给密钥相应权限：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>chmod<span class="w"> </span>a+r<span class="w"> </span>/etc/apt/keyrings/docker.gpg
+</code></pre></div>
+<p>此时再跑一次 <code>sudo apt-get update</code>:</p>
+<p>您可能会遇到一个找不到的源，这个是正常的。
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108201.png"></p>
+<p>接下来安装Docker：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>docker-ce<span class="w"> </span>docker-ce-cli<span class="w"> </span>containerd.io<span class="w"> </span>docker-compose-plugin
+</code></pre></div>
+<p>就能正常获取了：
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108660.png"></p>
+<p>安装完成后，运行hello-world容器，得到图示则安装成功。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sudo<span class="w"> </span>docker<span class="w"> </span>run<span class="w"> </span>hello-world
+</code></pre></div>
+<p><img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108202.png"></p>
+<h3 id="docker-hub">Docker Hub<a class="headerlink" href="#docker-hub" title="Permanent link">¶</a></h3>
+<p>尝试登录您的**Docker Hub**账号：
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108423.png"><br>
+如果出现类似错误，请手动配置DNS：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo<span class="w"> </span>vim<span class="w"> </span>/etc/resolv.conf
+</code></pre></div>
+<p><img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108043.png"><br>
+保存，再次尝试即可成功登录：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108243.png"></p>
+<h2 id="build-ssh-vscode-docker-workflow">Build SSH + VSCode + Docker Workflow<a class="headerlink" href="#build-ssh-vscode-docker-workflow" title="Permanent link">¶</a></h2>
+<p>该步骤适用于支持SSH协议的Linux <del>（废话，哪个Linux没有个SSH）</del> ，除了在本地的Kali或者其他Linux上面构建，也支持远程构建该工作流。</p>
+<h3 id="start-ssh-service">Start SSH Service<a class="headerlink" href="#start-ssh-service" title="Permanent link">¶</a></h3>
+<h4 id="kali-linux">Kali Linux<a class="headerlink" href="#kali-linux" title="Permanent link">¶</a></h4>
+<p>Kali虚拟机默认是没有开启SSH服务的 （SSH状态：<code>/etc/init.d/ssh status</code>）
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108687.png"><br>
+所以需要手动启动一下：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>sudo<span class="w"> </span>/etc/init.d/ssh<span class="w"> </span>start<span class="w"> </span>
+</code></pre></div>
+<p>当然，为了方便，我们将ssh添加到开机自启中：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>sudo<span class="w"> </span>update-rc.d<span class="w"> </span>ssh<span class="w"> </span><span class="nb">enable</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="c1"># Or use:</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>ssh.service
+</code></pre></div>
+<p><img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108870.png"><br>
+启动之后就可以开始后面的步骤了。</p>
+<h4 id="ubuntu">Ubuntu<a class="headerlink" href="#ubuntu" title="Permanent link">¶</a></h4>
+<p>由于Ubuntu默认不自带openssh-server，所以这里需要手动安装。
+安装openssh-server：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>openssh-server
+</code></pre></div>
+<p>安装完成后启动服务：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>sudo<span class="w"> </span>service<span class="w"> </span>ssh<span class="w"> </span>start
+</code></pre></div>
+<h3 id="get-remote-ssh-extension">Get Remote - SSH Extension<a class="headerlink" href="#get-remote-ssh-extension" title="Permanent link">¶</a></h3>
+<p>为了使用VSCode的远程SSH功能 您可能需要在扩展中安装<code>Remote - SSH</code>插件：
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108363.png"></p>
+<h3 id="let-vscode-connect-to-host">Let VSCode Connect to Host<a class="headerlink" href="#let-vscode-connect-to-host" title="Permanent link">¶</a></h3>
+<p>连接方式有两种：<code>密码连接</code> 和 <code>SSH的公私钥</code>。
+一般情况下我们使用密码连接，这样的方法安全性较低，而且每次连接和每次切换目录的时候都会要求输入密码，所以在确保能够密码连接情况下，我们可以进一步使用公私钥验证的方式来提升安全性和优化操作友好性。</p>
+<h4 id="using-password-connection">Using Password Connection<a class="headerlink" href="#using-password-connection" title="Permanent link">¶</a></h4>
+<p>打开VSCode，点击左下角的远程连接（绿色的部分）<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108580.png"><br>
+接着在弹出的窗口中选择 Connect to Host<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108159.png"><br>
+选择 <code>Add New SSH Host</code>：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108672.png"><br>
+按照要求输入对应的指令：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108860.png"><br>
+IP可通过 <code>ip a</code> 获取<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108321.png"><br>
+<code>ssh kali@192.168.28.145 -A</code><br>
+保存位置默认第一个就好：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108500.png"><br>
+然后连接：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108023.png"><br>
+选择对应的系统：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108268.png"><br>
+选择继续：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108889.png"><br>
+输入密码：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108092.png"><br>
+初始化完成后就连接上了：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108596.png">  </p>
+<h4 id="using-public-and-private-keys">Using Public and Private Keys<a class="headerlink" href="#using-public-and-private-keys" title="Permanent link">¶</a></h4>
+<h5 id="create-public-and-private-keys">Create Public and Private Keys<a class="headerlink" href="#create-public-and-private-keys" title="Permanent link">¶</a></h5>
+<p>首先在本机上生成对应的公钥私钥：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>ssh-keygen
+</code></pre></div>
+<p><img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108885.png"></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>Enter file in which to save the key (C:\Users\Probius/.ssh/id_rsa):
+</code></pre></div>
+<p>输入保存路径，如果为空默认为 <code>C:\Users\USERNAME\.ssh\id_rsa</code>，这里笔者直接输入了名字，让其以该名字直接保存在当前目录</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Enter passphrase (empty for no passphrase):
+</code></pre></div>
+<p>输入私钥密码，为空则没有</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>Enter same passphrase again:
+</code></pre></div>
+<p>注意：如果您使用了私钥密码，那么在进行ssh登录的时候，会提示您输入私钥密码，相当于再使用公私钥登录的情况下又加了一层密码，安全性有很大的提升，但是这样会变得和密码登录一样每次都要输入，这里笔者建议，如果是本地一路回车就好了，如果是远程资源的管理，可以综合安全性考虑</p>
+<p>生成过后，得到的<code>id_rsa.pub</code>(Kali_test.pub)是 <strong>公钥</strong> ，<code>id_rsa</code>(Kali_test)是 <strong>私钥</strong><br>
+将得到的私钥放在我们的.ssh(C:\Users\USERNAME\.ssh\)中。<br>
+(您也可以在生成的时候就让他放置在此，当然这并不是重点）</p>
+<h5 id="configure-remote-host">Configure Remote Host<a class="headerlink" href="#configure-remote-host" title="Permanent link">¶</a></h5>
+<p>将得到的公钥上传到 Kali/服务器中对应用户的.ssh文件夹中(请确保该文件夹至少有700的权限)：
+（注意 Kali默认没有该文件夹，需要用户手动创建，并且赋700权限 <code>mkdir ~/.ssh</code> ）
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108425.png"><br>
+在此处打开终端，用公钥文件来生成 authorized_keys：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>cat<span class="w"> </span>id_rsa.pub<span class="w"> </span>&gt;&gt;<span class="w"> </span>authorized_keys
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="c1"># 此处即 cat Kali_test.pub &gt;&gt; authorized_keys</span>
+</code></pre></div>
+<p><img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108635.png"><br>
+由于Linux系统对.ssh拥有比较严格的权限限制，请确保权限配置正确：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>authorized_keys
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">700</span><span class="w"> </span>~/.ssh
+</code></pre></div>
+<p>编辑ssh配置文件</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>sudo<span class="w"> </span>vim<span class="w"> </span>/etc/ssh/sshd_config
+</code></pre></div>
+<p>确保拥有以下条目：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>RSAAuthentication yes
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>PubkeyAuthentication yes
+</code></pre></div>
+<p>注意Kali的SSH默认配置是没有上述两项的，需要自行添加：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108226.png"><br>
+然后搞定一切后，重启SSH服务：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>sudo<span class="w"> </span>service<span class="w"> </span>ssh<span class="w"> </span>restart
+</code></pre></div>
+<p>Linux部分的配置这样就搞定啦~<br>
+（在您确保您的连接无误后，如果是服务器等远程设备，可以在config中关闭密码登录以提升安全性：
+<code>PasswordAuthentication no</code>）</p>
+<h5 id="configure-local-host">Configure Local Host<a class="headerlink" href="#configure-local-host" title="Permanent link">¶</a></h5>
+<p>然后是Windows，也就是VSCode这边的配置：</p>
+<p>添加New Host：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108830.png"></p>
+<p>使用：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>ssh<span class="w"> </span>USERNAME@IP<span class="w"> </span>-i<span class="w"> </span>C:<span class="se">\\</span>Users<span class="se">\\</span>USERNAME<span class="se">\\</span>.ssh<span class="se">\\</span>RSA_ID
+</code></pre></div>
+<p>（注意使用指令添加时，务必使用双斜杠）<br>
+当然，也可以在已经添加的配置文件上改：</p>
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>Host IP
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>    HostName HOSTNAME
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>    User USERNAME
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>    IdentityFile C:\Users\USERNAME\.ssh\Kali_test
+</code></pre></div>
+(根据自己的实际配置修改IP、HOSTNAME、USERNAME值)
+<p>如果操作无误，且没有设置私钥密码，那么点击连接之后无需其他额外操作即可连接；如果设置了私钥密码，那么按照提示输入即可。</p>
+<h5 id="other-about-ssh-key-login">Other - About SSH Key Login<a class="headerlink" href="#other-about-ssh-key-login" title="Permanent link">¶</a></h5>
+<p>关于SSH密钥登录的更多知识可以看这一篇文章：<a href="https://webdoc.p2hp.com/ssh/key.html">SSH 密钥登录</a></p>
+<h3 id="get-docker-extension">Get Docker Extension<a class="headerlink" href="#get-docker-extension" title="Permanent link">¶</a></h3>
+<h4 id="install_1">Install<a class="headerlink" href="#install_1" title="Permanent link">¶</a></h4>
+<p><img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108387.png"><br>
+（当然 如果显示的是 <code>安装</code>也是一样的）<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108927.png"></p>
+<h4 id="common-problem-solution">Common Problem Solution<a class="headerlink" href="#common-problem-solution" title="Permanent link">¶</a></h4>
+<p>如果您安装Docker时使用自动安装，应该不会遇到该问题，自动安装的脚本会自动完成用户组添加的操作。<br>
+由于权限原因，我们可能无法访问到 <code>/var/run/docker.sock</code><br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108599.png"></p>
+<h5 id="by-adding-user-group">By Adding User Group<a class="headerlink" href="#by-adding-user-group" title="Permanent link">¶</a></h5>
+<p>一劳永逸的解决权限问题，将当前用户组添加到Docker组即可。
+创建Docker用户组，默认安装时就会自动创建，所以执行可能会显示<code>exist</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>sudo<span class="w"> </span>groupadd<span class="w"> </span>docker<span class="w"> </span>
+</code></pre></div>
+<p>添加当前用户到该组：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>docker<span class="w"> </span><span class="si">${</span><span class="nv">USER</span><span class="si">}</span><span class="w"> </span>
+</code></pre></div>
+<p>然后重新启动容器服务：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>docker<span class="w"> </span>
+</code></pre></div>
+<p>再次重新登入即可，如果重新登录之后依旧报错无法读取，请尝试重启：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>reboot
+</code></pre></div>
+<h5 id="by-chmod-command">By chmod Command<a class="headerlink" href="#by-chmod-command" title="Permanent link">¶</a></h5>
+<p>也可以使用<code>sudo chmod 777 /var/run/docker.sock</code>，但是每次重启之后权限都会重置，不推荐<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108210.png"><br>
+然后就能正常访问了：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108359.png"></p>
+<h3 id="start-using-docker">Start Using Docker<a class="headerlink" href="#start-using-docker" title="Permanent link">¶</a></h3>
+<p>（以下操作使用 <strong>Docker Hub</strong> 演示）
+因为在安装Docker的时候登录过Docker Hub，所以这里连接之后，系统会自动获取您的凭证，您可以在这查看您的Docker Hub仓库：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108556.png"><br>
+当然，您也可以添加其他仓库，具体的用法可以参考官方文档：</p>
+<h4 id="pull-images">Pull Images<a class="headerlink" href="#pull-images" title="Permanent link">¶</a></h4>
+<p>当然 对于自己仓库的镜像还是比较方便的233：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108132.png"><br>
+当然如果是公开镜像的话 还是免不了指令啦，不过还是比较方便的，旁边就是终端：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108350.png"><br>
+完成之后就能在IMAGES栏看到了：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108863.png"></p>
+<h4 id="run-docker">Run Docker<a class="headerlink" href="#run-docker" title="Permanent link">¶</a></h4>
+<p>运行容器有两个选项Run / Run Interactive</p>
+<h5 id="run">Run<a class="headerlink" href="#run" title="Permanent link">¶</a></h5>
+<p>默认后台运行，Run执行后效果和在Linux执行 -d的效果相同：
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108098.png">
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108618.png"></p>
+<h5 id="run-interactive">Run Interactive<a class="headerlink" href="#run-interactive" title="Permanent link">¶</a></h5>
+<p>该选项运行执行后，除了运行容器，还会跳到容器的汇总shell处，这里会实时打印容器日志，<br>
+效果和 <code>View Log</code>效果相同：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108893.png"></p>
+<h4 id="view-log">View Log<a class="headerlink" href="#view-log" title="Permanent link">¶</a></h4>
+<p>直达容器后台日志，如果在运行的时候选择<code>Run Interactive</code>那么也会跳转到该log页面。<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108575.png"><br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108780.png"></p>
+<h4 id="attach-shell">Attach Shell<a class="headerlink" href="#attach-shell" title="Permanent link">¶</a></h4>
+<p>右键选中之后可以直接建立一个容器内部的shell，省去<code>docker exec -i -t ID /bin/bash</code><br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108362.png"><br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108563.png"></p>
+<h4 id="edit-container">Edit Container<a class="headerlink" href="#edit-container" title="Permanent link">¶</a></h4>
+<p>在CONTAINERS中下拉一个容器的file可以对其进行查看和编辑：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108051.png"><br>
+可以看到对于容器来说 修改是即时的（支持热更新的）<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108737.png"></p>
+<h4 id="attach-container-advanced-edit">Attach Container (Advanced Edit?)<a class="headerlink" href="#attach-container-advanced-edit" title="Permanent link">¶</a></h4>
+<p>我们也可以用VSCode建立类似SSH的连接，直接连接到整个容器：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108906.png"><br>
+并且操作同步：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108429.png"><br>
+而且容器支持文件拖拽，相比单纯的COPY指令 拥有更好的体验（个人感觉</p>
+<h4 id="port-forward">Port Forward<a class="headerlink" href="#port-forward" title="Permanent link">¶</a></h4>
+<p>通过SSH直接将远程端口转发到本地，免除防火墙困扰ww<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108117.png"><br>
+一般来讲在您启动容器的时候 VSCode会自动配置 当然为了更好的区分和避免冲突 也可以手动分配<br>
+配置如图：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108383.png"></p>
+<h4 id="open-in-browser">Open in Browser<a class="headerlink" href="#open-in-browser" title="Permanent link">¶</a></h4>
+<p>如果您配置完成了端口转发(或者VSCode自动为您完成配置) 那么点击Open in Browser将在您的默认浏览器中快速打开该端口对应的页面：<br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108971.png"><br>
+<img alt="image.png" src="https://nssctf.wdf.ink/img/WDTJ/202302072108177.png"></p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../CTFtool/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 工具一览"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        工具一览
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../Crypto/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: Crypto环境设置"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        Crypto环境设置
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#linuxdocker">在Linux上部署Docker环境</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#about">About</a>
+        
+      </li>
+    
+      <li>
+        <a href="#get-kali">Get Kali</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#download">Download</a>
+        
+      </li>
+    
+      <li>
+        <a href="#change-source">Change Source？</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#get-docker">Get Docker</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#install">Install</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#dockerio">docker.io</a>
+        
+      </li>
+    
+      <li>
+        <a href="#dockerce">docker.ce</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#docker-hub">Docker Hub</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#build-ssh-vscode-docker-workflow">Build SSH + VSCode + Docker Workflow</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#start-ssh-service">Start SSH Service</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#kali-linux">Kali Linux</a>
+        
+      </li>
+    
+      <li>
+        <a href="#ubuntu">Ubuntu</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#get-remote-ssh-extension">Get Remote - SSH Extension</a>
+        
+      </li>
+    
+      <li>
+        <a href="#let-vscode-connect-to-host">Let VSCode Connect to Host</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#using-password-connection">Using Password Connection</a>
+        
+      </li>
+    
+      <li>
+        <a href="#using-public-and-private-keys">Using Public and Private Keys</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#create-public-and-private-keys">Create Public and Private Keys</a>
+        
+      </li>
+    
+      <li>
+        <a href="#configure-remote-host">Configure Remote Host</a>
+        
+      </li>
+    
+      <li>
+        <a href="#configure-local-host">Configure Local Host</a>
+        
+      </li>
+    
+      <li>
+        <a href="#other-about-ssh-key-login">Other - About SSH Key Login</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#get-docker-extension">Get Docker Extension</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#install_1">Install</a>
+        
+      </li>
+    
+      <li>
+        <a href="#common-problem-solution">Common Problem Solution</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#by-adding-user-group">By Adding User Group</a>
+        
+      </li>
+    
+      <li>
+        <a href="#by-chmod-command">By chmod Command</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#start-using-docker">Start Using Docker</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#pull-images">Pull Images</a>
+        
+      </li>
+    
+      <li>
+        <a href="#run-docker">Run Docker</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#run">Run</a>
+        
+      </li>
+    
+      <li>
+        <a href="#run-interactive">Run Interactive</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#view-log">View Log</a>
+        
+      </li>
+    
+      <li>
+        <a href="#attach-shell">Attach Shell</a>
+        
+      </li>
+    
+      <li>
+        <a href="#edit-container">Edit Container</a>
+        
+      </li>
+    
+      <li>
+        <a href="#attach-container-advanced-edit">Attach Container (Advanced Edit?)</a>
+        
+      </li>
+    
+      <li>
+        <a href="#port-forward">Port Forward</a>
+        
+      </li>
+    
+      <li>
+        <a href="#open-in-browser">Open in Browser</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

