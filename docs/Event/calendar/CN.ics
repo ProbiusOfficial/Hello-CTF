@@ -8,25 +8,16 @@ SUMMARY:2026年电信和互联网行业网络安全管理员职业技能竞赛
 DTSTART:20261030T040000Z
 DTEND:20261030T100000Z
 UID:8cdb996b9b98d26819b91f0c2abe8955
-DTSTAMP:20260822T005813Z
+DTSTAMP:20260823T010245Z
 URL:https://mp.weixin.qq.com/s/DFokodTJ4nm30TQ7ffzWug
 DESCRIPTION:https://mp.weixin.qq.com/s/DFokodTJ4nm30TQ7ffzWug | 竞赛分为选拔赛和全国总决赛两个阶段。（一）选拔赛阶段：2026年10月30日前完成（二）全国总决赛阶段：2026年11月30日前完成由竞赛组委会统一组织全国总决赛。比赛时间未定，详细见https://mp.weixin.qq.com/s/DFokodTJ4nm30TQ7ffzWug
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:第六届极客少年挑战赛（决赛）
-DTSTART:20260822T160000Z
-DTEND:20260823T155900Z
-UID:c43f15f74b4b5085d804705f449bc36b
-DTSTAMP:20260822T005813Z
-URL:https://mp.weixin.qq.com/s/qFyd2QmUWUSIjubxinTsnA
-DESCRIPTION:https://mp.weixin.qq.com/s/qFyd2QmUWUSIjubxinTsnA | 赛制/类型:线下CTF解题赛（决赛）地点：四川大学网络空间安全学院靶场（成都）面向全国在校中小学生
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:第七届“蒙古马杯”学生组网络安全竞赛（决赛）
 DTSTART:20260826T160000Z
 DTEND:20260830T155900Z
 UID:0e79786a29ac16e5801d1523d8d4dfb5
-DTSTAMP:20260822T005813Z
+DTSTAMP:20260823T010245Z
 URL:https://www.imnu.edu.cn/info/1311/117361.htm
 DESCRIPTION:https://www.imnu.edu.cn/info/1311/117361.htm | 赛制/类型:线下决赛地点：呼和浩特市（具体地点待通知）
 END:VEVENT
@@ -35,7 +26,7 @@ SUMMARY:第二届“湾区杯”网络安全大赛（初赛）
 DTSTART:20260827T160000Z
 DTEND:20260828T155900Z
 UID:59a150e17f899a2ddd77df9d8b110509
-DTSTAMP:20260822T005813Z
+DTSTAMP:20260823T010245Z
 URL:https://race.cinsa.org.cn/
 DESCRIPTION:https://race.cinsa.org.cn/ | 赛制/类型:线上初赛指导：广东省委网信办等；报名截止08-24；决赛9月网络安全周期间；增设青少年赛道
 END:VEVENT
@@ -44,7 +35,7 @@ SUMMARY:宁波市第九届网络安全大赛（决赛）
 DTSTART:20260828T160000Z
 DTEND:20260829T155900Z
 UID:c29707e9e0704e09bb378ffd833f3504
-DTSTAMP:20260822T005813Z
+DTSTAMP:20260823T010245Z
 URL:https://ningbo.dasctf.com
 DESCRIPTION:https://ningbo.dasctf.com | 赛制/类型:线下决赛地点：宁波
 END:VEVENT
@@ -53,7 +44,7 @@ SUMMARY:第二届 OpenHarmony CTF 智能漏洞挖掘赛（决赛提交）
 DTSTART:20260831T160000Z
 DTEND:20260930T155900Z
 UID:b138e76457318e58ce51e62757371816
-DTSTAMP:20260822T005813Z
+DTSTAMP:20260823T010245Z
 URL:https://thuctf.tsinghua.edu.cn/harmonyctf/games/2
 DESCRIPTION:https://thuctf.tsinghua.edu.cn/harmonyctf/games/2 | 赛制/类型:线上提交（决赛阶段）主办方：清华大学；现场决赛时间地点待定
 END:VEVENT
@@ -62,7 +53,7 @@ SUMMARY:2026年京津冀大学生信息安全网络攻防大赛（初赛）
 DTSTART:20260912T160000Z
 DTEND:20260913T155900Z
 UID:6623d811e58989b24e4085f2b5048da2
-DTSTAMP:20260822T005813Z
+DTSTAMP:20260823T010245Z
 URL:https://www.tjise.edu.cn/info/1008/5580.htm
 DESCRIPTION:https://www.tjise.edu.cn/info/1008/5580.htm | 赛制/类型:线上初赛（理论+CTF夺旗）主办：天津市教委、北京市教委、河北省教育厅；报名07-01至09-10；面向京津冀本科高校在校生
 END:VEVENT
@@ -71,7 +62,7 @@ SUMMARY:2026年京津冀大学生信息安全网络攻防大赛（决赛）
 DTSTART:20261010T160000Z
 DTEND:20261011T155900Z
 UID:cb9e5c77b58dd0fda94672017dbb1242
-DTSTAMP:20260822T005813Z
+DTSTAMP:20260823T010245Z
 URL:https://www.tjise.edu.cn/info/1008/5580.htm
 DESCRIPTION:https://www.tjise.edu.cn/info/1008/5580.htm | 赛制/类型:线下决赛（渗透测试+应急响应）地点：天津市大学软件学院（天津）
 END:VEVENT
@@ -80,7 +71,7 @@ SUMMARY:第五届中国研究生网络安全创新大赛（实网对抗初赛）
 DTSTART:20261023T160000Z
 DTEND:20261024T155900Z
 UID:bbda4cac0f016734a19d119b98faebeb
-DTSTAMP:20260822T005813Z
+DTSTAMP:20260823T010245Z
 URL:https://cpipc.acge.org.cn/cw/contestNews/detail/2c90800c8093eef401809d33b36f0652/2c9080199ed8b78d019ed96ceea21560
 DESCRIPTION:https://cpipc.acge.org.cn/cw/contestNews/detail/2c90800c8093eef401809d33b36f0652/2c9080199ed8b78d019ed96ceea21560 | 赛制/类型:CTF夺旗（实网对抗赛初赛）主办：教育部学位中心等；报名截止10-18
 END:VEVENT
@@ -89,7 +80,7 @@ SUMMARY:BITs2CTF 2026（初赛）
 DTSTART:20261024T020000Z
 DTEND:20261025T020000Z
 UID:82195a44ff47202e48014662bc7fb9b6
-DTSTAMP:20260822T005813Z
+DTSTAMP:20260823T010245Z
 URL:https://zone.ci/secarticles/wx/553536.html
 DESCRIPTION:https://zone.ci/secarticles/wx/553536.html | 赛制/类型:线上Jeopardy解题赛（初赛，24h）主办：北京理工大学BITs2Sys战队；校级学科竞赛
 END:VEVENT
@@ -98,7 +89,7 @@ SUMMARY:BITs2CTF 2026（决赛）
 DTSTART:20261101T010000Z
 DTEND:20261101T090000Z
 UID:7af0323cedad1857a04f24b226742942
-DTSTAMP:20260822T005813Z
+DTSTAMP:20260823T010245Z
 URL:https://zone.ci/secarticles/wx/553536.html
 DESCRIPTION:https://zone.ci/secarticles/wx/553536.html | 赛制/类型:线下决赛地点：北京理工大学良乡校区（北京）
 END:VEVENT
@@ -107,7 +98,7 @@ SUMMARY:第五届中国研究生网络安全创新大赛（决赛）
 DTSTART:20261225T160000Z
 DTEND:20261227T155900Z
 UID:c52d0032687d0f50737a24e4bf57ec93
-DTSTAMP:20260822T005813Z
+DTSTAMP:20260823T010245Z
 URL:https://cpipc.acge.org.cn/cw/contestNews/detail/2c90800c8093eef401809d33b36f0652/2c9080199ed8b78d019ed96ceea21560
 DESCRIPTION:https://cpipc.acge.org.cn/cw/contestNews/detail/2c90800c8093eef401809d33b36f0652/2c9080199ed8b78d019ed96ceea21560 | 赛制/类型:AWDPlus+靶场渗透（决赛）地点：哈尔滨市南岗区
 END:VEVENT
@@ -116,16 +107,25 @@ SUMMARY:MoeCTF 2026
 DTSTART:20260809T010000Z
 DTEND:20261009T090000Z
 UID:d7d0ddf05659e99afecc0fe4a4f64a42
-DTSTAMP:20260822T005813Z
+DTSTAMP:20260823T010245Z
 URL:https://ctf.xidian.edu.cn/games/37/
 DESCRIPTION:https://ctf.xidian.edu.cn/games/37/ | 面向26级新生比赛赛制：单人线上解题模式。比赛内容：涵盖Web安全与渗透测试、软件逆向工程、二进制漏洞利用、现代密码学、取证与安全杂项、Python沙箱逃逸、开发与运维基础、美工设计等。赛事官方QQ群1033688742
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:第六届极客少年挑战赛（决赛）
+DTSTART:20260822T160000Z
+DTEND:20260823T155900Z
+UID:c43f15f74b4b5085d804705f449bc36b
+DTSTAMP:20260823T010245Z
+URL:https://mp.weixin.qq.com/s/qFyd2QmUWUSIjubxinTsnA
+DESCRIPTION:https://mp.weixin.qq.com/s/qFyd2QmUWUSIjubxinTsnA | 赛制/类型:线下CTF解题赛（决赛）地点：四川大学网络空间安全学院靶场（成都）面向全国在校中小学生
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:NepCTF 2026
 DTSTART:20260717T110000Z
 DTEND:20260719T110000Z
 UID:5c3e3a0fdfd9286419803c19e710f43a
-DTSTAMP:20260822T005813Z
+DTSTAMP:20260823T010245Z
 URL:https://www.nepctf.com/
 DESCRIPTION:https://www.nepctf.com/ | 赛制/类型:线上Jeopardy解题赛
 END:VEVENT
@@ -134,7 +134,7 @@ SUMMARY:第二届 OpenHarmony CTF 智能漏洞挖掘赛（初赛）
 DTSTART:20260731T160000Z
 DTEND:20260821T155900Z
 UID:e006323de7b28d48953677603e6a140f
-DTSTAMP:20260822T005813Z
+DTSTAMP:20260823T010245Z
 URL:https://thuctf.tsinghua.edu.cn/harmonyctf/games/2
 DESCRIPTION:https://thuctf.tsinghua.edu.cn/harmonyctf/games/2 | 赛制/类型:线上Jeopardy解题赛（初赛）主办方：清华大学（XCTF外卡赛，冠军直通第十一届XCTF总决赛）面向中国大陆及港澳台高校在读学生；决赛提交期9月，现场决赛时间待定
 END:VEVENT
@@ -143,7 +143,7 @@ SUMMARY:宁波市第九届网络安全大赛（初赛）
 DTSTART:20260807T160000Z
 DTEND:20260808T155900Z
 UID:aa3706e9533638e32430ffda941c2ba3
-DTSTAMP:20260822T005813Z
+DTSTAMP:20260823T010245Z
 URL:https://ningbo.dasctf.com
 DESCRIPTION:https://ningbo.dasctf.com | 赛制/类型:线上解题赛（初赛）指导：宁波市公安局；报名已于07-22截止
 END:VEVENT
@@ -152,7 +152,7 @@ SUMMARY:第七届“蒙古马杯”学生组网络安全竞赛（预赛）
 DTSTART:20260809T160000Z
 DTEND:20260810T155900Z
 UID:bf4e10750795ca80c10426bab4e125c0
-DTSTAMP:20260822T005813Z
+DTSTAMP:20260823T010245Z
 URL:https://www.imnu.edu.cn/info/1311/117361.htm
 DESCRIPTION:https://www.imnu.edu.cn/info/1311/117361.htm | 赛制/类型:线上预赛（含CTF夺旗赛）2026年全区教育系统网络安全竞赛
 END:VEVENT
@@ -161,7 +161,7 @@ SUMMARY:第九届西湖论剑·中国杭州网络安全技能大赛（初赛）
 DTSTART:20260821T050000Z
 DTEND:20260821T100000Z
 UID:b03b160fb8019696a16d8115c7ce14a4
-DTSTAMP:20260822T005813Z
+DTSTAMP:20260823T010245Z
 URL:https://www.hangzhou.gov.cn/col/col812266/art/2026/art_483d44943a4f4b898e1998389d4ee3b0.html
 DESCRIPTION:https://www.hangzhou.gov.cn/col/col812266/art/2026/art_483d44943a4f4b898e1998389d4ee3b0.html | 赛制/类型:线上初赛（首次引入AIAgent解题夺旗赛制）指导：杭州市公安局等；报名截止08-1016:00；决赛9月底前
 END:VEVENT

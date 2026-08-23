@@ -19,14 +19,6 @@
                 "status": "时间待定"
             },
             {
-                "name": "第六届极客少年挑战赛（决赛）",
-                "link": "https://mp.weixin.qq.com/s/qFyd2QmUWUSIjubxinTsnA",
-                "comp_time_start": "2026年08月23日 00:00",
-                "comp_time_end": "2026年08月23日 23:59",
-                "detail": "赛制/类型: 线下 CTF 解题赛（决赛）\n地点：四川大学网络空间安全学院靶场（成都）\n面向全国在校中小学生",
-                "status": "即将开始"
-            },
-            {
                 "name": "第七届“蒙古马杯”学生组网络安全竞赛（决赛）",
                 "link": "https://www.imnu.edu.cn/info/1311/117361.htm",
                 "comp_time_start": "2026年08月27日 00:00",
@@ -113,6 +105,14 @@
                 "comp_time_end": "2026年10月09日 17:00",
                 "detail": "面向 26 级新生\n比赛赛制：单人线上解题模式。\n比赛内容：涵盖 Web 安全与渗透测试、软件逆向工程、二进制漏洞利用、现代密码学、取证与安全杂项、Python 沙箱逃逸、开发与运维基础、美工设计等。\n赛事官方 QQ 群 1033688742",
                 "freshman": true,
+                "status": "正在进行"
+            },
+            {
+                "name": "第六届极客少年挑战赛（决赛）",
+                "link": "https://mp.weixin.qq.com/s/qFyd2QmUWUSIjubxinTsnA",
+                "comp_time_start": "2026年08月23日 00:00",
+                "comp_time_end": "2026年08月23日 23:59",
+                "detail": "赛制/类型: 线下 CTF 解题赛（决赛）\n地点：四川大学网络空间安全学院靶场（成都）\n面向全国在校中小学生",
                 "status": "正在进行"
             },
             {
