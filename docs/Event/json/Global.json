@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "PECAN+ CTF 2026",
-        "比赛时间": "2026-08-23 09:00:00 - 2026-08-23 13:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3411.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://pecanplus.org/",
-        "比赛标志": "https://ctftime.org/media/events/pecanlogo_1.png",
-        "比赛权重": "0",
-        "赛事主办": "PECAN+ (https://ctftime.org/team/250009)",
-        "比赛ID": "973",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "COMPFEST CTF 2026 (EXTENDED CHECK DESCRIPTION)",
         "比赛时间": "2026-08-29 08:00:00 - 2026-08-30 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3290.ics",
@@ -69,6 +57,18 @@
         "比赛权重": "25.00",
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "1314",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "DiceCTF 2026 Finals",
+        "比赛时间": "2026-08-30 00:00:00 - 2026-08-31 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3416.ics",
+        "比赛形式": "Hack quest",
+        "比赛链接": "https://ctf.dicega.ng/",
+        "比赛标志": "https://ctftime.org/media/events/dice.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "DiceGang (https://ctftime.org/team/109452)",
+        "比赛ID": "568",
         "比赛状态": "oncoming"
     },
     {
@@ -285,6 +285,18 @@
         "比赛权重": "0",
         "赛事主办": "UWSP Pointers (https://ctftime.org/team/231536)",
         "比赛ID": "963",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "SCAN 2026 Final",
+        "比赛时间": "2026-09-28 09:00:00 - 2026-09-28 16:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3417.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://scan.sx/",
+        "比赛标志": "https://ctftime.org/media/events/32x32_icon_1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "D Asset Inc. (https://ctftime.org/team/310109)",
+        "比赛ID": "1190",
         "比赛状态": "oncoming"
     },
     {
@@ -564,40 +576,16 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "BrunnerCTF 2026",
-        "比赛时间": "2026-08-21 20:00:00 - 2026-08-23 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3065.ics",
+        "比赛名称": "PECAN+ CTF 2026",
+        "比赛时间": "2026-08-23 09:00:00 - 2026-08-23 13:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3411.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.brunnerne.dk/",
-        "比赛标志": "https://ctftime.org/media/events/Logo_-_2-7.png",
-        "比赛权重": "24.66",
-        "赛事主办": "Brunnerne (https://ctftime.org/team/155032)",
-        "比赛ID": "1341",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "z0d1ak CTF Qualifiers",
-        "比赛时间": "2026-08-22 00:00:00 - 2026-08-23 12:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3370.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.z0d1ak.org/",
-        "比赛标志": "https://ctftime.org/media/events/Zodiak_CTF_Logo.png",
+        "比赛链接": "https://pecanplus.org/",
+        "比赛标志": "https://ctftime.org/media/events/pecanlogo_1.png",
         "比赛权重": "0",
-        "赛事主办": "z0d1ak (https://ctftime.org/team/373452)",
-        "比赛ID": "1648",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "E0F CTF",
-        "比赛时间": "2026-08-22 15:00:00 - 2026-08-23 15:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3400.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.e0f.team/",
-        "比赛标志": "https://ctftime.org/media/events/eofctff.png",
-        "比赛权重": "0",
-        "赛事主办": "Group 0x1A (https://ctftime.org/team/418959)",
-        "比赛ID": "1478",
-        "比赛状态": "nowrunning"
+        "赛事主办": "PECAN+ (https://ctftime.org/team/250009)",
+        "比赛ID": "973",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "TallDwarf Hosting: Hosting Takeover",
@@ -609,19 +597,19 @@
         "比赛权重": "0",
         "赛事主办": "TallDwarf Hosting (https://ctftime.org/team/443103)",
         "比赛ID": "1664",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
-        "比赛名称": "PECAN+ CTF 2026",
-        "比赛时间": "2026-08-23 09:00:00 - 2026-08-23 13:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3411.ics",
+        "比赛名称": "E0F CTF",
+        "比赛时间": "2026-08-22 15:00:00 - 2026-08-23 15:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3400.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://pecanplus.org/",
-        "比赛标志": "https://ctftime.org/media/events/pecanlogo_1.png",
+        "比赛链接": "https://ctf.e0f.team/",
+        "比赛标志": "https://ctftime.org/media/events/eofctff.png",
         "比赛权重": "0",
-        "赛事主办": "PECAN+ (https://ctftime.org/team/250009)",
-        "比赛ID": "973",
-        "比赛状态": "nowrunning"
+        "赛事主办": "Group 0x1A (https://ctftime.org/team/418959)",
+        "比赛ID": "1478",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "$N1PH€RS 3.0 CTF",
@@ -636,6 +624,30 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "Haruulzangi CTF 2026 Qualifier",
+        "比赛时间": "2026-08-22 09:00:00 - 2026-08-23 09:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3379.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2026.haruulzangi.mn/",
+        "比赛标志": "https://ctftime.org/media/events/haruul_zangi_logo_updated_2.png",
+        "比赛权重": "0",
+        "赛事主办": "haruulzangi-organizers (https://ctftime.org/team/266812)",
+        "比赛ID": "985",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "z0d1ak CTF Qualifiers",
+        "比赛时间": "2026-08-22 00:00:00 - 2026-08-23 12:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3370.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.z0d1ak.org/",
+        "比赛标志": "https://ctftime.org/media/events/Zodiak_CTF_Logo.png",
+        "比赛权重": "0",
+        "赛事主办": "z0d1ak (https://ctftime.org/team/373452)",
+        "比赛ID": "1648",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "PwnSec CTF 2026 [postponed]",
         "比赛时间": "2026-08-21 22:00:00 - 2026-08-22 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3159.ics",
@@ -645,6 +657,18 @@
         "比赛权重": "33.89",
         "赛事主办": "PwnSec (https://ctftime.org/team/28797)",
         "比赛ID": "1150",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "BrunnerCTF 2026",
+        "比赛时间": "2026-08-21 20:00:00 - 2026-08-23 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3065.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.brunnerne.dk/",
+        "比赛标志": "https://ctftime.org/media/events/Logo_-_2-7.png",
+        "比赛权重": "24.66",
+        "赛事主办": "Brunnerne (https://ctftime.org/team/155032)",
+        "比赛ID": "1341",
         "比赛状态": "past"
     },
     {
@@ -666,7 +690,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://0xv01d-ctf.xyz/",
         "比赛标志": "",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "OxV01D (https://ctftime.org/team/427687)",
         "比赛ID": "1587",
         "比赛状态": "past"
@@ -834,7 +858,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://scan.sx/",
         "比赛标志": "https://ctftime.org/media/events/32x32_icon.png",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "D Asset Inc. (https://ctftime.org/team/310109)",
         "比赛ID": "1190",
         "比赛状态": "past"
@@ -1749,78 +1773,6 @@
         "比赛权重": "20.14",
         "赛事主办": "fibonhack (https://ctftime.org/team/117538)",
         "比赛ID": "880",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BKISC CTF 2026",
-        "比赛时间": "2026-05-09 09:00:00 - 2026-05-10 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/2927.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.bkisc.com/",
-        "比赛标志": "https://ctftime.org/media/events/logo_1_1.jpg",
-        "比赛权重": "25.00",
-        "赛事主办": "BKISC (https://ctftime.org/team/199510)",
-        "比赛ID": "1390",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "plfanzen CFT 2026",
-        "比赛时间": "2026-05-09 00:00:00 - 2026-05-10 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3090.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://plfanzen.lol/",
-        "比赛标志": "https://ctftime.org/media/events/hloe.png",
-        "比赛权重": "25.00",
-        "赛事主办": "plfanzen (https://ctftime.org/team/418962)",
-        "比赛ID": "1491",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Break The Syntax CTF 2026",
-        "比赛时间": "2026-05-09 00:00:00 - 2026-05-10 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3137.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://bts2026.wh.edu.pl/",
-        "比赛标志": "https://ctftime.org/media/events/Logo_15.png",
-        "比赛权重": "56.25",
-        "赛事主办": "PWr Synt@x Err0r (https://ctftime.org/team/88205)",
-        "比赛ID": "558",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "PHONIX VIPER NOVA CTF#2",
-        "比赛时间": "2026-05-08 18:00:00 - 2026-05-11 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3018.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://pwnctf.ro/",
-        "比赛标志": "https://ctftime.org/media/events/0b084a17fe379613dd5be4f540c64249.png",
-        "比赛权重": "0.00",
-        "赛事主办": "PH03N1X V1P3R N0V4 CTF (https://ctftime.org/team/395369)",
-        "比赛ID": "1374",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "THCon 2K26 CTF",
-        "比赛时间": "2026-05-07 19:00:00 - 2026-05-08 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3186.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://thcon.party/",
-        "比赛标志": "https://ctftime.org/media/events/logo_123.png",
-        "比赛权重": "34.67",
-        "赛事主办": "pony7 (https://ctftime.org/team/20769)",
-        "比赛ID": "181",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "RAZER CTF 2026",
-        "比赛时间": "2026-05-05 14:30:00 - 2026-05-06 14:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3241.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.droidecks.sbs/",
-        "比赛标志": "https://ctftime.org/media/events/logo_125.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Droidex (https://ctftime.org/team/430693)",
-        "比赛ID": "1568",
         "比赛状态": "past"
     }
 ]
