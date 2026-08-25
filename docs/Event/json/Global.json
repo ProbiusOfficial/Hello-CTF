@@ -444,6 +444,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "HKCERT CTF 2026 (Qualifying Round)",
+        "比赛时间": "2026-11-06 18:00:00 - 2026-11-07 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3418.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.hkcert.org/",
+        "比赛标志": "https://ctftime.org/media/events/CTF_2026_1.png",
+        "比赛权重": "10.31",
+        "赛事主办": "HKCERT (https://ctftime.org/team/134746)",
+        "比赛ID": "529",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "PINK+ CTF 2026",
         "比赛时间": "2026-11-06 20:00:00 - 2026-11-09 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3331.ics",
@@ -537,6 +549,18 @@
         "比赛权重": "0",
         "赛事主办": "Seize da Flaq (https://ctftime.org/team/442848)",
         "比赛ID": "1657",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Crate-CTF 2026",
+        "比赛时间": "2026-11-21 21:00:00 - 2026-11-22 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3336.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://foi.se/cratectf",
+        "比赛标志": "https://ctftime.org/media/events/CTF_2026.png",
+        "比赛权重": "37.00",
+        "赛事主办": "Crate-CTF (https://ctftime.org/team/352250)",
+        "比赛ID": "1172",
         "比赛状态": "oncoming"
     },
     {
@@ -738,7 +762,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://gaslightctf.cooking/",
         "比赛标志": "https://ctftime.org/media/events/icon_9.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "gaslighting (https://ctftime.org/team/299906)",
         "比赛ID": "1517",
         "比赛状态": "past"
