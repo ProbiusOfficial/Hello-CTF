@@ -278,5 +278,3 @@ IL1101 / RPIT / LLN0 / gocb5
 真正的问题是 "变电站基础配置文件 SCD 存在错误"
 
 所以 flag 是 `flag{scdisbad}`
-
-### 黑客的大意

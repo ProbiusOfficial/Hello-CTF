@@ -105,3 +105,59 @@ LSIS FEnet 报文由 20 字节的专有头部 + 具体数据/命令体组成
 | U    | 0x5558 | 模拟数据寄存器 |
 
 ## 实战案例
+
+### 协议精准定位分析（LSIS XGB Fast Ethernet 模块协议）
+
+![pasted_1784850075270_zndenz.png](https://pic1.imgdb.cn/i/033ujJ4cdjTwY1uZIgceHD.png)
+
+**此题与常规的 LSIS FEnet 协议不一样**
+
+查看会话只有这一组通信
+
+![pasted_1784914009843_mjyxfu.png](https://pic1.imgdb.cn/i/033v9SHWsfBGmTZ6XHLGU1.png)
+
+考察 LSIS FEnet 协议，过滤出有用的 TCP 协议
+
+```bash
+ip.src == 192.168.2.191 &&
+ip.dst == 192.168.2.186 &&
+tcp.dstport == 2004 &&
+tcp.len > 0
+```
+
+![pasted_1784914376192_9yykba.png](https://pic1.imgdb.cn/i/033v9bbOWIdSrhNFVOfwwn.png)
+
+第一个包的 Data 如下
+
+```
+4c 53 49 53 2d 58 47 54  00 00 00 00  a0 33  00 00  16 00
+03 47 58 00 14 00  00 00 01 00  06 00  25 4d 42 32 30 30
+04 00  7d 00 00 00
+```
+
+按照 PDF 解析如下：
+
+|     偏移 | 字节数 | 值                               | 说明                                            |
+| -----: | --: | ------------------------------- | --------------------------------------------- |
+| `0x00` |  10 | `4c 53 49 53 2d 58 47 54 00 00` | Company ID / LSIS ID，ASCII 为 `"LSIS-XGT\0\0"` |
+| `0x0A` |   2 | `00 00`                         | PLC Information，PLC 信息字段，本报文值为 `0x0000`       |
+| `0x0C` |   1 | `a0`                            | CPU Information，CPU 类型/系列标识，值为 `0xA0`         |
+| `0x0D` |   1 | `33`                            | Frame Direction，`0x33` 表示客户端发往 PLC 的请求帧       |
+| `0x0E` |   2 | `00 00`                         | Invoke ID / Frame Order No.，请求序号，本报文为 `0`     |
+| `0x10` |   2 | `16 00`                         | Application Data Length，小端 `0x0016 = 22` 字节   |
+| `0x12` |   1 | `03`                            | Position Information，模块/站点位置信息                |
+| `0x13` |   1 | `47`                            | Header Checksum，XGT 头部校验和                     |
+| `0x14` |   2 | `58 00`                         | Command，写请求，协议记作 `0x5800`                     |
+| `0x16` |   2 | `14 00`                         | Data Type，连续字节类型，协议记作 `0x1400`                |
+| `0x18` |   2 | `00 00`                         | Reserved，保留字段                                 |
+| `0x1A` |   2 | `01 00`                         | Number of Blocks，小端值 `1`，本次操作包含 1 个变量块        |
+| `0x1C` |   2 | `06 00`                         | Variable Name Length，变量名长度为 6 字节              |
+| `0x1E` |   6 | `25 4d 42 32 30 30`             | 变量名 ASCII：`"%MB200"`                          |
+| `0x24` |   2 | `04 00`                         | Data Count / Data Length，后续写入数据长度为 4 字节       |
+| `0x26` |   4 | `7d 00 00 00`                   | 写入 `%MB200` 的连续 4 字节数据                        |
+
+而 `7d` 刚好是 `}`，所以写入的数据是倒序的，把所有数据取出来过后得到 flag
+
+```
+flag{c93650241853da240f9760531a79cbcf}
+```

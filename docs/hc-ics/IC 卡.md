@@ -21,35 +21,45 @@ comments: true
 
 ## 扇区与十六进制地址的对应
 
-扇区 0：000–0CF （4 块 × 16 字节 = 64 字节，0x40 长）
+MIFARE Classic 1K 共 16 个扇区，每个扇区包含 4 个块，每块 16 字节，因此每个扇区占：
 
-扇区 1：040–07F
+4 × 16 = 64 字节 = 0x40 字节
 
-扇区 2：080–0BF … 以此类推
+所以扇区 n 的起始偏移为：
 
-```
-00000000  xx xx xx xx xx xx xx xx  xx xx xx xx xx xx xx xx  | 块0 数据
-00000010  xx xx xx xx xx xx xx xx  xx xx xx xx xx xx xx xx  | 块1 数据
-00000020  xx xx xx xx xx xx xx xx  xx xx xx xx xx xx xx xx  | 块2 数据
-00000030  AA AA AA AA AA AA BB BB  BB CC CC CC BB BB BB BB  | 块3 控制块
-```
+起始地址 = n × 0x40
 
-块 3（每扇区最后一块）是特殊的控制块，结构固定：
+结束地址 = (n + 1) × 0x40 - 1
 
-- 字节 0~5：密钥 A（6 字节，若未更改常为 FF FF FF FF FF FF）
+例如：
 
-- 字节 6~8：访问控制位（3 字节，决定读写权限）
+- 扇区 0：`000–03F`
+  
+- 扇区 1：`040–07F`
+  
+- 扇区 2：`080–0BF`
+  
+- 扇区 3：`0C0–0FF`
+  
+- 扇区 4：`100–13F`
+  
+- ...
+  
+- 扇区 15：`3C0–3FF`
 
-- 字节 9：可选数据（通常 00）
-
-- 字节 10~15：密钥 B（6 字节，默认也常是 FF FF FF FF FF FF 或用于控制）
+整个 MIFARE Classic 1K Dump 的地址范围为：`000–3FF`，共 `0x400 = 1024` 字节
 
 ## 访问控制字节的十六进制规律
 
 以常见门禁卡为例，若块 3 为：
 
 ```
-FF FF FF FF FF FF  78 77 88  C1 00  FF FF FF FF FF FF
+FF FF FF FF FF FF  78 77 88  C1  FF FF FF FF FF FF
+│                 │         │   │
+│                 │         │   └─ Key B：6 字节
+│                 │         └──── GPB / 用户字节：1 字节
+│                 └────────────── Access Bits：3 字节
+└──────────────────────────────── Key A：6 字节
 ```
 
 - 78 77 88 就是访问控制位（以及它的非值，实际存储是取反备份）

@@ -37,17 +37,26 @@ MMS 中几乎都用上下文特定的构造标签（如 0xA0、0xA1 等）
 
 ### 顶层的 MMS PDU 类型
 
-MMS 定义了以下几种顶层 PDU，每一类都有一个固定的标签：
+MMS 顶层 PDU 使用 ASN.1 BER 编码中的 Context-specific 标签。
+对于 `[0]`～`[13]` 这类低编号标签，其顶层 BER Tag 可直接对应为
+`A0`～`AD`。
 
-| PDU 类型                  | 对应的顶层标签 | 说明                                       |
-|---------------------------|---------------|--------------------------------------------|
-| confirmed-RequestPDU      | A0            | 客户端请求（需要响应）                     |
-| confirmed-ResponsePDU     | A1            | 服务端对请求的响应                         |
-| unconfirmed-PDU           | A2            | 单向报文（如信息报告，无需确认）           |
-| initiate-RequestPDU       | A8            | 连接发起方协商能力                         |
-| initiate-ResponsePDU      | A9            | 连接响应方协商能力                         |
-| conclude-RequestPDU       | AC            | 请求释放连接                               |
-| 等等…                     |               |                                            |
+| PDU 类型                  | ASN.1 标签 | BER 顶层标签 | 说明 |
+|---------------------------|-----------:|-------------:|------|
+| confirmed-RequestPDU      | [0]  | A0 | 确认请求，需要对端响应 |
+| confirmed-ResponsePDU     | [1]  | A1 | 对确认请求的正常响应 |
+| confirmed-ErrorPDU        | [2]  | A2 | 对确认请求返回的错误 |
+| unconfirmed-PDU           | [3]  | A3 | 无确认报文，如 InformationReport |
+| rejectPDU                 | [4]  | A4 | 拒绝某个 MMS PDU |
+| cancel-RequestPDU         | [5]  | A5 | 取消请求 |
+| cancel-ResponsePDU        | [6]  | A6 | 取消响应 |
+| cancel-ErrorPDU           | [7]  | A7 | 取消操作错误 |
+| initiate-RequestPDU       | [8]  | A8 | MMS 会话初始化请求 |
+| initiate-ResponsePDU      | [9]  | A9 | MMS 会话初始化响应 |
+| initiate-ErrorPDU         | [10] | AA | 初始化过程错误 |
+| conclude-RequestPDU       | [11] | AB | 请求结束 MMS 会话 |
+| conclude-ResponsePDU      | [12] | AC | 对结束会话请求的响应 |
+| conclude-ErrorPDU         | [13] | AD | 结束会话过程错误 |
 
 ## 实战案例
 
