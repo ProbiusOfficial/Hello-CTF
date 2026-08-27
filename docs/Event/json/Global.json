@@ -316,7 +316,7 @@
         "比赛时间": "2026-10-03 17:00:00 - 2026-10-05 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3364.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://quals.securinets.tn/",
+        "比赛链接": "https://ctf.securinets.tn/",
         "比赛标志": "https://ctftime.org/media/events/logo_red_copy_1_2.jpg",
         "比赛权重": "85.12",
         "赛事主办": "Securinets (https://ctftime.org/team/5084)",
@@ -513,6 +513,18 @@
         "比赛权重": "0.00",
         "赛事主办": "wolvsec (https://ctftime.org/team/83621)",
         "比赛ID": "766",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "EyesOpenCTF 7th edition",
+        "比赛时间": "2026-11-20 18:00:00 - 2026-11-22 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3419.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://eyesopensecurity.com/ctf-briefing.html",
+        "比赛标志": "https://ctftime.org/media/events/Template_Speaker_-_2026_4.png",
+        "比赛权重": "0.00",
+        "赛事主办": "EyesOpen_Security (https://ctftime.org/team/200580)",
+        "比赛ID": "847",
         "比赛状态": "oncoming"
     },
     {
@@ -762,7 +774,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://gaslightctf.cooking/",
         "比赛标志": "https://ctftime.org/media/events/icon_9.png",
-        "比赛权重": "25.00",
+        "比赛权重": "24.75",
         "赛事主办": "gaslighting (https://ctftime.org/team/299906)",
         "比赛ID": "1517",
         "比赛状态": "past"
