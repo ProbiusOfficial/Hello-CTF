@@ -404,7 +404,7 @@ john --mask='?l?lq?lb?l' word.hash
 
 ![](https://pic1.imgdb.cn/item/6875c86b58cb8da5c8af33f1.png)
 
-得先破解宏，将 word 文件用压缩包方式打开，找到 `vbaProject.bin` 文件以十六进制方式查看，将  `DBP`  改为  `DBX`  并保存，[参考博客](https://blog.csdn.net/Cody_Ren/article/details/100895394)
+得先破解宏，将 word 文件用压缩包方式打开，找到 `vbaProject.bin` 文件以十六进制方式查看，将  `DPB`  改为  `DPX`  并保存，[参考博客](https://blog.csdn.net/Cody_Ren/article/details/100895394)
 
 ![](https://pic1.imgdb.cn/item/6875cd5458cb8da5c8af6f97.png)
 
