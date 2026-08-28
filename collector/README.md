@@ -25,7 +25,10 @@ python3 app.py                              # 默认 0.0.0.0:9100
 ```
 
 可选环境变量：`COLLECTOR_PORT`（默认 9100）、`COLLECTOR_FILE`（消息存储路径，
-容器内默认 `/data/messages.json`，裸机默认同目录 `messages.json`）。
+容器内默认 `/data/messages.json`，裸机默认同目录 `messages.json`）、
+`COLLECTOR_PUSH_URL`（[Server酱³](https://doc.sc3.ft07.com/zh/serverchan3) 推送地址，
+形如 `https://<uid>.push.ft07.com/send/<sendkey>.send`，设置后新留言实时推送到手机，
+推送失败不影响提交）。
 建议前面套一层 Caddy/Nginx 上 HTTPS。
 
 ## 接口

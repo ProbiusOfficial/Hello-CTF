@@ -13,14 +13,18 @@
   POST /api/messages/delete   删除消息 {"id": N}（需 X-Token 头）
 
 配置（环境变量）：
-  COLLECTOR_TOKEN  管理端令牌，必填（面板侧填同一个值）
-  COLLECTOR_PORT   监听端口，默认 9100
-  COLLECTOR_FILE   消息存储文件，默认同目录 messages.json
+  COLLECTOR_TOKEN     管理端令牌，必填（面板侧填同一个值）
+  COLLECTOR_PORT      监听端口，默认 9100
+  COLLECTOR_FILE      消息存储文件，默认同目录 messages.json
+  COLLECTOR_PUSH_URL  Server酱³ 推送地址（https://<uid>.push.ft07.com/send/<sendkey>.send），
+                      可选，设置后新留言会推送到手机；推送失败不影响提交
 """
 import json
 import os
 import threading
 import time
+import urllib.parse
+import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 TOKEN = os.environ.get("COLLECTOR_TOKEN", "")
@@ -29,8 +33,43 @@ STORE = os.environ.get(
     "COLLECTOR_FILE",
     os.path.join(os.path.dirname(os.path.abspath(__file__)), "messages.json"),
 )
+PUSH_URL = os.environ.get("COLLECTOR_PUSH_URL", "")
 
 _lock = threading.Lock()
+
+
+def _push_notify(msg):
+    """Server酱³ 推送新留言。后台线程执行，失败只打印日志，不影响提交响应。"""
+    if not PUSH_URL:
+        return
+
+    def _send():
+        try:
+            type_label = {"event": "赛事提交", "feedback": "页面反馈"}.get(
+                msg["type"], msg["type"]
+            )
+            content = msg["content"]
+            if not isinstance(content, str):
+                content = json.dumps(content, ensure_ascii=False, indent=2)
+            query = urllib.parse.urlencode(
+                {
+                    "title": f"Hello-CTF 新留言 · {type_label}",
+                    "desp": f"标题：{msg['title']}\n\n{content}"[:1000],
+                }
+            )
+            req = urllib.request.Request(
+                f"{PUSH_URL}?{query}",
+                # ft07 会拦 urllib 默认 UA
+                headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/126.0"},
+            )
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                result = json.loads(resp.read().decode("utf-8"))
+            if result.get("code", 0) != 0:
+                print(f"留言推送失败：{result}")
+        except Exception as e:
+            print(f"留言推送失败：{e}")
+
+    threading.Thread(target=_send, daemon=True).start()
 
 
 def _load():
@@ -119,6 +158,7 @@ class Handler(BaseHTTPRequestHandler):
                 }
                 messages.append(msg)
                 _save(messages)
+            _push_notify(msg)
             return self._send(200, {"ok": True, "id": msg["id"]}, cors=True)
 
         if self.path == "/api/messages/delete":

@@ -9,6 +9,8 @@ services:
     environment:
       # 必填：管理接口令牌，面板 inbox_token 填同一个值
       COLLECTOR_TOKEN: ${COLLECTOR_TOKEN:?请在 .env 或环境变量中设置 COLLECTOR_TOKEN}
+      # 可选：Server酱³ 推送地址，设置后新留言推送到手机
+      COLLECTOR_PUSH_URL: ${COLLECTOR_PUSH_URL:-}
     volumes:
       # 消息持久化到宿主机 ./data/messages.json
       - ./data:/data
