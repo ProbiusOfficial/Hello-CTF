@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "COMPFEST CTF 2026 (EXTENDED CHECK DESCRIPTION)",
-        "比赛时间": "2026-08-29 08:00:00 - 2026-08-30 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3290.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://mirror-ctf.compfest.id/",
-        "比赛标志": "",
-        "比赛权重": "96.00",
-        "赛事主办": "CSUI (https://ctftime.org/team/70551)",
-        "比赛ID": "502",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "BlackHat MEA CTF Qualification 2026",
         "比赛时间": "2026-08-29 15:00:00 - 2026-08-30 15:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3385.ics",
@@ -245,7 +233,7 @@
         "添加日历": "https://ctftime.org/event/3312.ics",
         "比赛形式": "Attack-Defense",
         "比赛链接": "https://2026.faustctf.net/",
-        "比赛标志": "",
+        "比赛标志": "https://ctftime.org/media/events/faustctf2026.png",
         "比赛权重": "72.29",
         "赛事主办": "FAUST (https://ctftime.org/team/550)",
         "比赛ID": "117",
@@ -598,6 +586,18 @@
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "59",
         "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "COMPFEST CTF 2026 (EXTENDED CHECK DESCRIPTION)",
+        "比赛时间": "2026-08-29 08:00:00 - 2026-08-30 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3290.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://mirror-ctf.compfest.id/",
+        "比赛标志": "",
+        "比赛权重": "96.00",
+        "赛事主办": "CSUI (https://ctftime.org/team/70551)",
+        "比赛ID": "502",
+        "比赛状态": "nowrunning"
     },
     {
         "比赛名称": "PECAN+ CTF 2026",
