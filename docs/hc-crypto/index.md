@@ -5,8 +5,8 @@ comments: true
 
 # Crypto | 密码学
 
-<div class="center-table" markdown>
+## 内容导读
 
-![前言](../assets/covers/Crypto.png){ width="70%" }
-
-</div>
+- **环境配置**：SageMath、Python 等密码学解题环境的搭建。
+- **基础知识**：前情提要与编码基础，正式学密码之前的铺垫。
+- **密码体系**：古典密码与现代密码——古典多在 MISC 中考察，现代密码（分组、序列、公钥体制）是比赛主体。

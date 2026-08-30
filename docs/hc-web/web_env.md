@@ -57,7 +57,7 @@ Python 适合写爆破脚本、数据处理、简单自动化与调用各类安�
 
 虚拟机用于在隔离环境中跑 **Linux 发行版**（如 Kali、Ubuntu 等）、旧版系统或出题人提供的镜像，避免污染物理机，也方便做快照回滚。常见方案包括 **VMware Workstation**、**VirtualBox** 等；分配内存与磁盘时给 Docker、IDE 和浏览器留足余量即可。
 
-更完整的「Linux + Docker + 远程开发」工作流可参考站内 [在 Linux 上部署 Docker 环境](./Docker_On_Linux.md) 等文档，按需取用。
+更完整的「Linux + Docker + 远程开发」工作流可参考站内 [在 Linux 上部署 Docker 环境](./docker_install.md) 等文档，按需取用。
 
 ## 容器
 
@@ -65,7 +65,7 @@ Python 适合写爆破脚本、数据处理、简单自动化与调用各类安�
 
 建议至少熟悉：**镜像与容器的概念**、用 **Docker**（或兼容实现）拉取镜像、启动/停止容器、查看日志、进入容器执行命令；若题目附件是 `Dockerfile` 或 `docker-compose.yml`，能按说明 build 并 run 即可上手做题。
 
-安装与日常命令因系统而异，Windows 可使用 **Docker Desktop**，Linux 可参考 [在 Linux 上部署 Docker 环境](./Docker_On_Linux.md)。Kubernetes 等编排工具属于进阶内容，入门阶段不必强求。
+安装与日常命令因系统而异，Windows 可使用 **Docker Desktop**，Linux 可参考 [在 Linux 上部署 Docker 环境](./docker_install.md)。Kubernetes 等编排工具属于进阶内容，入门阶段不必强求。
 
 ---
 

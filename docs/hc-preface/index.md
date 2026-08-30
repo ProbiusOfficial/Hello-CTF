@@ -5,8 +5,8 @@ comments: true
 
 # 前言
 
-<div class="center-table" markdown>
+## 内容导读
 
-![前言](../assets/covers/Preface.png){ width="70%" }
-
-</div>
+- **关于本书**：这个项目是什么、为谁而写、内容如何组织。
+- **食用方法**：如何高效使用本站——导航结构、搜索、评论区与互动方式。
+- **加入我们**：如何为本书纠错、补充内容或参与维护。

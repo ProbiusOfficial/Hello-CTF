@@ -5,12 +5,6 @@ comments: true
 
 # Web | 网络攻防
 
-<div class="center-table" markdown>
-
-![Web](../assets/covers/Web.png){ width="70%" }
-
-</div>
-
 Web 是 CTF 中题量最大、入门门槛最低、上限也最高的方向。这部分章节不是按"前端语法 → 后端语言 → 漏洞"的学院派顺序组织的，而是按一条真正能走通的 CTF 学习路径组织的。开始之前，先花几分钟读完这篇导语——它决定了你应该怎么用这本书。
 
 ## 从题中学

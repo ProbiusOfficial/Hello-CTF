@@ -5,10 +5,7 @@ comments: true
 
 # AI | 人工智能
 
-## 呜呜呜，板块还在施工捏
+## 内容导读
 
-<div class="center-table" markdown>
-
-![AI](../assets/covers/AI.png){ width="70%" }
-
-</div>
+- **初识 AI**：人工智能安全方向的基本概念与版图。
+- **你的第一个神经网络**：动手实现一个 MLP，为后续的安全话题建立直觉。

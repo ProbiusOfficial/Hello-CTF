@@ -194,14 +194,6 @@ nav:
       - 食用方法: hc-preface/usage.md
       - 加入我们: hc-preface/join.md
 
-    - 环境设置:
-      - hc-env/index.md
-      - 工具一览: hc-env/CTFtool.md
-      - Docker环境: hc-env/Docker_On_Linux.md
-      # - Web环境设置: hc-env/Web.md
-      # - MISC环境设置: hc-env/MISC.md
-      - Crypto环境设置: hc-env/Crypto.md
-
     - MISC | 杂项:
       - hc-misc/index.md
       - 信息收集: hc-misc/osint.md
@@ -222,6 +214,8 @@ nav:
     - Web | 网络攻防:
       - hc-web/index.md
       - 环境与工具:
+        - Web环境设置: hc-web/web_env.md
+        - Docker安装配置: hc-web/docker_install.md
         - Docker与漏洞环境: hc-web/docker_env.md
         - 虚拟机与网络模拟: hc-web/vm_lab.md
         - Burp Suite: hc-web/burp.md
@@ -290,6 +284,7 @@ nav:
 
     - Crypto | 密码学:
       - hc-crypto/index.md
+      - 环境配置: hc-crypto/env.md
       - 基础知识:
         - 前情提要: hc-crypto/Recap.md
         - 编码基础: hc-crypto/Encode.md
