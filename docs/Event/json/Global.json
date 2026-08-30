@@ -1,65 +1,5 @@
 [
     {
-        "比赛名称": "BlackHat MEA CTF Qualification 2026",
-        "比赛时间": "2026-08-29 15:00:00 - 2026-08-30 15:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3385.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://blackhatmea.com/capture-the-flag",
-        "比赛标志": "https://ctftime.org/media/events/9f419586e0dedbff0130e6f487ddc54c.png",
-        "比赛权重": "8.10",
-        "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
-        "比赛ID": "826",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "ASIS CTF Quals 2026",
-        "比赛时间": "2026-08-29 22:00:00 - 2026-08-30 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3033.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://asisctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/asis_logo_1.png",
-        "比赛权重": "90.53",
-        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
-        "比赛ID": "55",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "UND CyberHawks National CTF Competition 2026 Qualifiers",
-        "比赛时间": "2026-08-29 22:00:00 - 2026-08-30 13:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3347.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hackthebox.com/event/details/und-cyberhawks-national-ctf-competition-2026-qualifiers-3444",
-        "比赛标志": "https://ctftime.org/media/events/banner_1.jpg",
-        "比赛权重": "0",
-        "赛事主办": "UND CyberHawks (https://ctftime.org/team/439400)",
-        "比赛ID": "1627",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "Iran Tech Olympics CTF 2026",
-        "比赛时间": "2026-08-29 22:00:00 - 2026-08-30 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3413.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.olympics.tech/",
-        "比赛标志": "https://ctftime.org/media/events/irantech.jpg",
-        "比赛权重": "25.00",
-        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
-        "比赛ID": "1314",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "DiceCTF 2026 Finals",
-        "比赛时间": "2026-08-30 00:00:00 - 2026-08-31 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3416.ics",
-        "比赛形式": "Hack quest",
-        "比赛链接": "https://ctf.dicega.ng/",
-        "比赛标志": "https://ctftime.org/media/events/dice.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "DiceGang (https://ctftime.org/team/109452)",
-        "比赛ID": "568",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "NNS CTF 2026",
         "比赛时间": "2026-09-05 00:00:00 - 2026-09-07 00:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3097.ics",
@@ -588,6 +528,66 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "BlackHat MEA CTF Qualification 2026",
+        "比赛时间": "2026-08-29 15:00:00 - 2026-08-30 15:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3385.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://blackhatmea.com/capture-the-flag",
+        "比赛标志": "https://ctftime.org/media/events/9f419586e0dedbff0130e6f487ddc54c.png",
+        "比赛权重": "8.10",
+        "赛事主办": "SAFCSP (https://ctftime.org/team/54707)",
+        "比赛ID": "826",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "ASIS CTF Quals 2026",
+        "比赛时间": "2026-08-29 22:00:00 - 2026-08-30 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3033.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://asisctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/asis_logo_1.png",
+        "比赛权重": "90.53",
+        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
+        "比赛ID": "55",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "UND CyberHawks National CTF Competition 2026 Qualifiers",
+        "比赛时间": "2026-08-29 22:00:00 - 2026-08-30 13:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3347.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.hackthebox.com/event/details/und-cyberhawks-national-ctf-competition-2026-qualifiers-3444",
+        "比赛标志": "https://ctftime.org/media/events/banner_1.jpg",
+        "比赛权重": "0",
+        "赛事主办": "UND CyberHawks (https://ctftime.org/team/439400)",
+        "比赛ID": "1627",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Iran Tech Olympics CTF 2026",
+        "比赛时间": "2026-08-29 22:00:00 - 2026-08-30 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3413.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.olympics.tech/",
+        "比赛标志": "https://ctftime.org/media/events/irantech.jpg",
+        "比赛权重": "25.00",
+        "赛事主办": "ASIS (https://ctftime.org/team/4140)",
+        "比赛ID": "1314",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "DiceCTF 2026 Finals",
+        "比赛时间": "2026-08-30 00:00:00 - 2026-08-31 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3416.ics",
+        "比赛形式": "Hack quest",
+        "比赛链接": "https://ctf.dicega.ng/",
+        "比赛标志": "https://ctftime.org/media/events/dice.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "DiceGang (https://ctftime.org/team/109452)",
+        "比赛ID": "568",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "COMPFEST CTF 2026 (EXTENDED CHECK DESCRIPTION)",
         "比赛时间": "2026-08-29 08:00:00 - 2026-08-30 08:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3290.ics",
@@ -597,7 +597,7 @@
         "比赛权重": "96.00",
         "赛事主办": "CSUI (https://ctftime.org/team/70551)",
         "比赛ID": "502",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "PECAN+ CTF 2026",
@@ -642,7 +642,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://stjctf2026.tamilctf.com/",
         "比赛标志": "https://ctftime.org/media/events/Ex0rcists_logo.jpg",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "Ex0rcists (https://ctftime.org/team/311156)",
         "比赛ID": "1668",
         "比赛状态": "past"
@@ -654,7 +654,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://2026.haruulzangi.mn/",
         "比赛标志": "https://ctftime.org/media/events/haruul_zangi_logo_updated_2.png",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "haruulzangi-organizers (https://ctftime.org/team/266812)",
         "比赛ID": "985",
         "比赛状态": "past"
@@ -1785,18 +1785,6 @@
         "比赛权重": "25.00",
         "赛事主办": "Maltego OSINT (https://ctftime.org/team/433400)",
         "比赛ID": "1586",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "From Dusk Till Dawn Quals",
-        "比赛时间": "2026-05-09 17:00:00 - 2026-05-10 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3111.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://till-dawn.fibonhack.it/",
-        "比赛标志": "https://ctftime.org/media/events/From_Dusk_Till_Dawn_-_pixel_-_square.jpg",
-        "比赛权重": "20.14",
-        "赛事主办": "fibonhack (https://ctftime.org/team/117538)",
-        "比赛ID": "880",
         "比赛状态": "past"
     }
 ]
