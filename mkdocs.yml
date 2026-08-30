@@ -205,42 +205,97 @@ nav:
     - MISC | 杂项:
       - hc-misc/index.md
       - 信息收集: hc-misc/osint.md
-      - 编码扩展: hc-misc/Encode_extra.md
-      - 文件基础: hc-misc/file.md
-      - 压缩包: hc-misc/Archivefile.md
-      - 图片隐写: hc-misc/stego.md
-      - 文件隐写: hc-misc/file_stego.md
-      - 音频隐写: hc-misc/audio_stego.md
-      - 流量分析: hc-misc/pcap.md
-      - 工控类: hc-misc/industrial.md
-      - 内存取证: hc-misc/memory.md
+      - 文件与编码基础:
+        - 编码扩展: hc-misc/Encode_extra.md
+        - 文件基础: hc-misc/file.md
+        - 压缩包: hc-misc/Archivefile.md
+      - 隐写分析:
+        - 图片隐写: hc-misc/stego.md
+        - 文件隐写: hc-misc/file_stego.md
+        - 音频隐写: hc-misc/audio_stego.md
+      - 取证分析:
+        - 流量分析: hc-misc/pcap.md
+        - 内存取证: hc-misc/memory.md
+        - 工控类: hc-misc/industrial.md
       - 附:文件签名表 : hc-misc/file_sign.md
 
     - Web | 网络攻防:
       - hc-web/index.md
+      - 环境与工具:
+        - Docker与漏洞环境: hc-web/docker_env.md
+        - 虚拟机与网络模拟: hc-web/vm_lab.md
+        - Burp Suite: hc-web/burp.md
+        - Python脚本: hc-web/py_script.md
+        - HTTP协议: hc-web/http.md
       - Web入门题单: hc-web/web_start.md
-      - 敏感信息泄露: hc-web/sensitive_info.md
-      - PHP基础: hc-web/php_basic.md
-      - PHP反序列化基础: hc-web/php_unser_base.md
-      - SQL注入: hc-web/sql_injection.md
-      - XSS攻击: hc-web/xss.md
-      - 文件包含: hc-web/include.md
-      - SSTI注入: hc-web/ssti.md
-      - XXE注入: hc-web/xxe.md
-      - SSRF注入: hc-web/ssrf.md
-      - PHP 代码审计: hc-web/php_code_audit.md
-      - RCE: hc-web/rce.md
-      - 文件上传: hc-web/file_upload.md
-      - 目录穿越: hc-web/dir_traversal.md
+      - 信息收集:
+        - 敏感信息泄露: hc-web/sensitive_info.md
+      - PHP专题:
+        - PHP特性与常见绕过: hc-web/php_features.md
+        - PHP基础: hc-web/php_basic.md
+        - PHP反序列化: hc-web/php_unser.md
+        - PHP代码审计: hc-web/php_code_audit.md
+      - 注入类漏洞:
+        - SQL注入: hc-web/sql_injection.md
+        - NoSQL注入: hc-web/nosql.md
+        - XSS攻击: hc-web/xss.md
+        - CSRF攻击: hc-web/csrf.md
+        - SSTI注入: hc-web/ssti.md
+        - XXE注入: hc-web/xxe.md
+        - SSRF注入: hc-web/ssrf.md
+      - 文件类漏洞:
+        - 文件上传: hc-web/file_upload.md
+        - 文件包含: hc-web/include.md
+        - 目录穿越: hc-web/dir_traversal.md
+        - 任意文件读取: hc-web/any_file_read.md
+      - 命令与代码执行:
+        - RCE: hc-web/rce.md
+      - 会话与认证安全: hc-web/session_jwt.md
       - 逻辑漏洞: hc-web/logical_vuln.md
-      - 任意文件读取: hc-web/any_file_read.md
+      - 语言扩展 | 世界不止有PHP:
+        - Python反序列化: hc-web/py_unser.md
+        - Python沙箱逃逸: hc-web/py_sandbox.md
+        - Flask安全: hc-web/flask_sec.md
+        - 原型链污染: hc-web/prototype_pollution.md
+        - JS沙箱逃逸: hc-web/js_sandbox.md
+        - JS逆向: hc-web/js_reverse.md
+        - Java安全基础: hc-web/java_basic.md
+        - Java反序列化: hc-web/java_unser.md
+        - Spring漏洞: hc-web/spring.md
+        - Java代码审计: hc-web/java_audit.md
+      - 进阶专题:
+        - WAF绕过: hc-web/waf_bypass.md
+        - 请求走私: hc-web/http_smuggling.md
+        - 缓存投毒: hc-web/cache_poisoning.md
+        - XS-Leaks: hc-web/xs_leaks.md
+        - 密码学应用题: hc-web/web_crypto.md
+        - 云与容器安全: hc-web/cloud_container.md
+      - 实战能力:
+        - 渗透链路基础:
+          - 渗透流程总览: hc-web/pentest_flow.md
+          - 两层网络实战: hc-web/two_layer.md
+          - 立足点建立: hc-web/foothold.md
+          - 内网信息收集: hc-web/internal_recon.md
+          - 代理与隧道: hc-web/proxy_tunnel.md
+        - 多层网络渗透:
+          - 三层网络实战: hc-web/three_layer.md
+          - 多层网络综合: hc-web/multi_layer.md
+          - 域渗透入门: hc-web/ad_basic.md
+          - 横向移动: hc-web/lateral.md
+        - 对抗与综合:
+          - AWD模式: hc-web/awd.md
+          - Web与二进制结合: hc-web/web_pwn.md
+          - Nday利用: hc-web/nday.md
+          - Writeup复盘方法: hc-web/review.md
 
     - Crypto | 密码学:
       - hc-crypto/index.md
-      - 前情提要: hc-crypto/Recap.md
-      - 编码基础: hc-crypto/Encode.md
-      - 古典密码: hc-crypto/Classicalcipher.md
-      - 现代密码: hc-crypto/Moderncipher.md
+      - 基础知识:
+        - 前情提要: hc-crypto/Recap.md
+        - 编码基础: hc-crypto/Encode.md
+      - 密码体系:
+        - 古典密码: hc-crypto/Classicalcipher.md
+        - 现代密码: hc-crypto/Moderncipher.md
 
     - Reverse | 逆向工程:
       - hc-reverse/index.md
@@ -281,13 +336,16 @@ nav:
 
     - Pwn | 二进制安全:
       - hc-pwn/index.md
-      - wsl2下的环境配置: hc-pwn/wsl2_environment.md
-      - 汇编语言(x86): hc-pwn/Asm_x86.md
-      - 栈上数组越界&栈溢出: hc-pwn/Stack_Overflow.md
-      - ROP入门: hc-pwn/ROP.md
-      - 常见的ROP技巧: hc-pwn/ROP_Tricks.md
-      - ROP进阶: hc-pwn/rop_add_v1.md
-      - 常见保护: hc-pwn/Protections.md
+      - 环境与基础:
+        - wsl2下的环境配置: hc-pwn/wsl2_environment.md
+        - 汇编语言(x86): hc-pwn/Asm_x86.md
+        - 常见保护: hc-pwn/Protections.md
+      - 栈溢出:
+        - 栈上数组越界&栈溢出: hc-pwn/Stack_Overflow.md
+      - ROP利用:
+        - ROP入门: hc-pwn/ROP.md
+        - 常见的ROP技巧: hc-pwn/ROP_Tricks.md
+        - ROP进阶: hc-pwn/rop_add_v1.md
 
     - AWD | 攻防模式:
       - AWD介绍: hc-awd/awd_about.md

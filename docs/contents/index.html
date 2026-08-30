@@ -93,12 +93,14 @@
   }
   .sub-cap::after { content: ""; flex: 1; height: 1px; background: var(--line); }
 
-  /* 宽卡片内的双栏列表 */
+  /* 宽卡片内的双栏/三栏列表 */
   .cols { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 24px; }
+  .cols-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 24px; }
 
   @media (max-width: 900px) {
     .grid { grid-template-columns: 1fr; }
     .cols { grid-template-columns: 1fr; }
+    .cols-3 { grid-template-columns: 1fr; }
     .wrap { padding: 30px 18px 70px; }
   }
 </style>
@@ -169,30 +171,84 @@
         </ul>
       </section>
 
-      <section class="card">
+      <section class="card wide">
         <div class="card-head">
           <svg class="ic"><use href="#i-globe"/></svg>
           <h2>Web<span>网络攻防</span></h2>
         </div>
-        <ul class="toc">
-          <li><a class="home" href="/hc-web/">Web 入门 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="/hc-web/web_start/">Web入门题单 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="/hc-web/sensitive_info/">敏感信息泄露 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="/hc-web/php_basic/">PHP基础 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="/hc-web/php_unser_base/">PHP反序列化基础 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="/hc-web/sql_injection/">SQL注入 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="/hc-web/xss/">XSS攻击 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="/hc-web/include/">文件包含 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="/hc-web/ssti/">SSTI注入 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="/hc-web/xxe/">XXE注入 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="/hc-web/ssrf/">SSRF注入 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="/hc-web/php_code_audit/">PHP 代码审计 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="/hc-web/rce/">RCE <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="/hc-web/file_upload/">文件上传 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="/hc-web/dir_traversal/">目录穿越 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="/hc-web/logical_vuln/">逻辑漏洞 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="/hc-web/any_file_read/">任意文件读取 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
-        </ul>
+        <div class="cols-3">
+          <ul class="toc">
+            <li><a class="home" href="/hc-web/">Web 入门（导语） <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li class="sub-cap">环境与工具</li>
+            <li><a href="/hc-web/docker_env/">Docker与漏洞环境 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/vm_lab/">虚拟机与网络模拟 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/burp/">Burp Suite <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/py_script/">Python脚本 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/http/">HTTP协议 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/web_start/">Web入门题单 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li class="sub-cap">信息收集</li>
+            <li><a href="/hc-web/sensitive_info/">敏感信息泄露 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li class="sub-cap">PHP专题</li>
+            <li><a href="/hc-web/php_features/">PHP特性与常见绕过 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/php_basic/">PHP基础 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/php_unser/">PHP反序列化 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/php_code_audit/">PHP代码审计 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+          </ul>
+          <ul class="toc">
+            <li class="sub-cap">注入类漏洞</li>
+            <li><a href="/hc-web/sql_injection/">SQL注入 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/nosql/">NoSQL注入 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/xss/">XSS攻击 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/csrf/">CSRF攻击 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/ssti/">SSTI注入 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/xxe/">XXE注入 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/ssrf/">SSRF注入 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li class="sub-cap">文件类漏洞</li>
+            <li><a href="/hc-web/file_upload/">文件上传 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/include/">文件包含 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/dir_traversal/">目录穿越 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/any_file_read/">任意文件读取 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li class="sub-cap">命令与代码执行</li>
+            <li><a href="/hc-web/rce/">RCE <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li class="sub-cap">会话与逻辑</li>
+            <li><a href="/hc-web/session_jwt/">会话与认证安全 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/logical_vuln/">逻辑漏洞 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+          </ul>
+          <ul class="toc">
+            <li class="sub-cap">语言扩展 | 世界不止有PHP</li>
+            <li><a href="/hc-web/py_unser/">Python反序列化 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/py_sandbox/">Python沙箱逃逸 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/flask_sec/">Flask安全 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/prototype_pollution/">原型链污染 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/js_sandbox/">JS沙箱逃逸 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/js_reverse/">JS逆向 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/java_basic/">Java安全基础 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/java_unser/">Java反序列化 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/spring/">Spring漏洞 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/java_audit/">Java代码审计 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li class="sub-cap">进阶专题</li>
+            <li><a href="/hc-web/waf_bypass/">WAF绕过 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/http_smuggling/">请求走私 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/cache_poisoning/">缓存投毒 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/xs_leaks/">XS-Leaks <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/web_crypto/">密码学应用题 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/cloud_container/">云与容器安全 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li class="sub-cap">实战能力</li>
+            <li><a href="/hc-web/pentest_flow/">渗透流程总览 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/two_layer/">两层网络实战 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/foothold/">立足点建立 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/internal_recon/">内网信息收集 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/proxy_tunnel/">代理与隧道 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/three_layer/">三层网络实战 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/multi_layer/">多层网络综合 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/ad_basic/">域渗透入门 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/lateral/">横向移动 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/awd/">AWD模式 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/web_pwn/">Web与二进制结合 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/nday/">Nday利用 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="/hc-web/review/">Writeup复盘方法 <svg class="ic arr"><use href="#i-arrow"/></svg></a></li>
+          </ul>
+        </div>
       </section>
 
       <section class="card">

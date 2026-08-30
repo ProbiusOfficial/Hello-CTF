@@ -578,9 +578,9 @@ if(!is_dir($dir)){
 
 ![](https://pic1.imgdb.cn/item/687c934e58cb8da5c8c85f59.png)
 
-`%00` 是 URL 编码中**空字节（null byte，\x00）**的表示方式
+`%00` 是 URL 编码中 **空字节（null byte，\x00）** 的表示方式
 
-空字节在**C 语言等底层语言**中，常用作字符串的结束标志
+空字节在 **C 语言等底层语言** 中，常用作字符串的结束标志
 
 例如，`char filename[100] = "shell.php\x00.jpg";`  实际上等同于  `shell.php`，`\x00`  之后的内容被忽略
 

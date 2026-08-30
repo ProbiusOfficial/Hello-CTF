@@ -149,7 +149,7 @@ sudo docker run hello-world
 
 ### Docker Hub
 
-尝试登录您的**Docker Hub**账号：
+尝试登录您的 **Docker Hub** 账号：
 ![image.png](https://nssctf.wdf.ink/img/WDTJ/202302072108423.png)  
 如果出现类似错误，请手动配置DNS：
 

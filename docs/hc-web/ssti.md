@@ -48,7 +48,7 @@ SELECT username,password FROM users WHERE id = "1" union select 1,group_concat(s
 
 这时候不仅会查询 `id=1`的数据，还会把所有数据库的名字一同查询出来。
 
-同样的 **「模板注入 SSTI(Server-Side Template Injection)」** 也一样，**数据传递**就是可控的输入点，以 **Jinja2** 举例，Jinja2 在渲染的时候会把`{{}}`包裹的内容当做变量解析替换，所以当我们传入 `{{表达式}}` 时，表达式就会被渲染器执行。
+同样的 **「模板注入 SSTI(Server-Side Template Injection)」** 也一样，**数据传递** 就是可控的输入点，以 **Jinja2** 举例，Jinja2 在渲染的时候会把`{{}}`包裹的内容当做变量解析替换，所以当我们传入 `{{表达式}}` 时，表达式就会被渲染器执行。
 
 比如下面的示例代码：
 

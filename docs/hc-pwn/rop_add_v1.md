@@ -234,7 +234,7 @@ p.interactive()
 它常见于没有现成 `pop rdx ; ret`、`pop rsi ; ret` 等 gadget 的场景。
 
 > 先提醒一句：`ret2csu` 的可用性和具体形态取决于实际二进制。  
-> 新工具链下，经典 gadget 可能变少，甚至根本没有，所以一定要以**你手上的反汇编结果**为准。
+> 新工具链下，经典 gadget 可能变少，甚至根本没有，所以一定要以 **你手上的反汇编结果** 为准。
 
 下面这个例子里，我们主要关注两段：
 
@@ -318,7 +318,7 @@ def build_ret2csu(func_ptr_addr, edi, rsi, rdx, next_rip):
 
 这个版本的重点不是“万能模板”，而是提醒你两件事：
 
-- 要按**实际 pop 顺序**摆参数
+- 要按 **实际 pop 顺序** 摆参数
 - 要把 gadget 后续会额外消耗的栈空间一起算进去
 
 ### 题目
@@ -565,7 +565,7 @@ struct pt_regs {
 };
 ```
 
-再看看**sigcontext**结构体，这个尤为重要，是SROP的核心结构体
+再看看 **sigcontext** 结构体，这个尤为重要，是SROP的核心结构体
 
 ```C
 struct rt_sigframe {

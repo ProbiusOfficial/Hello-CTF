@@ -327,7 +327,7 @@ if __name__ == "__main__":
 隐写信息藏在 **Base64 填充部分（`=`的位置）**：
 
 - 当原始数据长度 **不是3的倍数** 时，Base64编码末尾会有`=`填充（1或2个）
-- 这些`=`的位置对应的**最后几个有效 Base64 字符**可以被修改而不影响解码结果
+- 这些`=`的位置对应的 **最后几个有效 Base64 字符** 可以被修改而不影响解码结果
 - 脚本通过比较 **原始 Base64** 和 **重新编码后的 Base64** 的差异来提取隐藏信息
 
 **解题思路：**
@@ -1203,13 +1203,13 @@ python2 GitHack.py http://challenge-397308928286c868.sandbox.ctfhub.com:10800/.g
 
 执行 `git stash list` 发现有 stash
 
-`git stash list` 用于**查看 Git 暂存栈（stash stack）中的所有保存项**
+`git stash list` 用于 **查看 Git 暂存栈（stash stack）中的所有保存项**
 
 ![](https://pic1.imgdb.cn/item/6878c23f58cb8da5c8beb69a.png)
 
 执行 `git stash pop` 发现从 git 栈中弹出来一个文件，这个文件的内容就是 flag
 
-`git stash pop` 用于**将最近的 stash 应用到当前分支，并自动从 stash 列表中删除该记录**
+`git stash pop` 用于 **将最近的 stash 应用到当前分支，并自动从 stash 列表中删除该记录**
 
 ![](https://pic1.imgdb.cn/item/6878c35458cb8da5c8beb7bb.png)
 

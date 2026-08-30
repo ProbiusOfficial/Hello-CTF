@@ -76,7 +76,7 @@ $sql = "SELECT username,password FROM users WHERE id = 1 union select username,p
 
 常用语法：
 
-- `SELECT` 是 SQL 语言中最核心、最常用的命令，用于从数据库中**查询（检索）** 数据
+- `SELECT` 是 SQL 语言中最核心、最常用的命令，用于从数据库中 **查询（检索）** 数据
 
   ```sql
   SELECT 列名1, 列名2, ... FROM 表名 WHERE 条件
@@ -2857,14 +2857,14 @@ const users = await User.find({
 
 **2. `email.startsWith("{") && email.endsWith("}")`**
 
-- 检查 **email 参数**是否是一个以 `{` 开头、以 `}` 结尾的字符串
+- 检查 **email 参数** 是否是一个以 `{` 开头、以 `}` 结尾的字符串
 - 例如：
   - `"test@example.com"` → `false`
   - `"{\"$ne\":null}"` → `true`
 
 **3. 三元运算符 `? JSON.parse(email) : email`**
 
-- 如果 `email` 是一个看起来像 **JSON 对象**的字符串，就执行 `JSON.parse(email)` → 得到一个 **JS 对象**
+- 如果 `email` 是一个看起来像 **JSON 对象** 的字符串，就执行 `JSON.parse(email)` → 得到一个 **JS 对象**
 - 否则，就直接使用普通字符串
 
 这样写的结果是

@@ -16,7 +16,7 @@ comments: true
 
 #### 栅栏密码 Rail-fence
 
-**栅栏密码(Rail-fence Cipher)** 就是把要加密的明文分成N个一组，然后把每组的第1个字符组合，每组第2个字符组合...每组的第N(最后一个分组可能不足N个)个字符组合，最后把他们全部连接起来就是密文，这里以**key=2**栏栅栏加密为例。
+**栅栏密码(Rail-fence Cipher)** 就是把要加密的明文分成N个一组，然后把每组的第1个字符组合，每组第2个字符组合...每组的第N(最后一个分组可能不足N个)个字符组合，最后把他们全部连接起来就是密文，这里以 **key=2** 栏栅栏加密为例。
 
 ```
 明文：Squdgy fez, blank jimp crwth vox
@@ -97,7 +97,7 @@ comments: true
 
 #### 培根密码 Bacon
 
-**培根密码**，又名**倍康尼密码(Bacon's cipher)** 是由[法兰西斯·培根](https://zh.wikipedia.org/wiki/法兰西斯·培根)发明的一种[隐写术](https://zh.wikipedia.org/wiki/隐写术)。
+**培根密码**，又名 **倍康尼密码(Bacon's cipher)** 是由[法兰西斯·培根](https://zh.wikipedia.org/wiki/法兰西斯·培根)发明的一种[隐写术](https://zh.wikipedia.org/wiki/隐写术)。
 
 加密时，[明文](https://zh.wikipedia.org/wiki/明文)中的每个字母都会转换成一组五个英文字母。其转换依靠下表：
 
