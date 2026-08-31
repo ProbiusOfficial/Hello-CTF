@@ -23,7 +23,12 @@ comments: true
 | 差分曼彻斯特 | 边界翻转规律 | 首位参照位,看位首是否跳变 |
 | 格雷编码 | 二进制但多位变化平滑 | `g→b: b1=g1, bi=bi-1^gi` |
 | 字母表编码 | 数字→字母(A=1)或反 | `chr(64+n)`;注意 A=0 变体 |
-| URL/Unicode/HTML实体 | `%xx`、`\uXXXX`、`&#x;` | CyberChef URL Decode / unescape |
+| URL编码/Unicode/HTML实体 | `%xx`、`\uXXXX`、`&#x;` | CyberChef URL Decode / unescape |
+| ASCII编码 | 十进制数字串(如 `72 101 108`) | `chr(n)` 逐个转换;注意 0x00-0x7f 范围 |
+| 进制转换 | 二/八/十/十六进制互转的长数字串 | `int(s, base)`;逐字符(每字符独立进制)或整串 |
+| Brainfuck编码 | `+-<>[].,` 八字符 | 通用解释器执行;变体( Ook!/Spoon!)先映射回 BF |
+| XXencoding | `+-0-9A-Za-z` 字符集(uuencode 系) | CyberChef From XXencoding;同族 uuencode/Base64 前身 |
+| 霍夫曼编码 | 给出码表 + 01 位流 | 按码表建树逐位解码;未给码表时由频率重建 |
 
 ## 多层嵌套处理
 

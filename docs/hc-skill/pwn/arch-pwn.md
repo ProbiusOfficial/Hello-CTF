@@ -50,7 +50,7 @@ gdb-multiarch -ex 'set arch arm' -ex 'target remote :1234'
 - rv32/rv64;ABI:a0-a7 传参;`rdynamic` 缺符号时 GLIBC 符号版本补丁执行(Pwn2Win 2018)。
 - 自定义扩展指令集(逆向向,→ [Reverse](../reverse/index.md));srdnlenCTF 2026 RISC-V 分析;EHAX 2026 RISC-V 题。
 
-## 其他平台
+## 其他架构PWN(小众平台)
 
 - **m68k(Motorola 68000)**:两段式 shellcode(HackIT 2017);复古平台(老游戏机、工业设备)。
 - **Xtensa(ESP32)**:ROM symbol map 辅助逆向(Insomni'hack 2017)→ [IoT](../iot/index.md)。

@@ -52,6 +52,8 @@ comments: true
 - 自定义 VM/字节码解释器:指令调度越界、栈机深度不检查、寄存器索引 OOB。
 - 解释器逃逸族:CPU 模拟器 print opcode 的 Python eval 注入(Midnight Sun CTF 2018);Unicorn sysenter/冷门 syscall 绕黑名单(Meepwn CTF Quals 2018);自定义 VM swap 指针自覆写(HITCON 2018);Lua 游戏逻辑整数下流(ASIS CTF Finals 2017);Ruby TracePoint 沙箱逃逸(HITCON 2017)。
 - bf/JIT 类:Brainfuck JIT 括号不平衡 → RWX shellcode(VuwCTF 2025);GC null-ref 级联损坏(DiceCTF 2026);io_uring UAF SQE 注入(ApoorvCTF 2026)。
+- 沙箱逃逸(Sandbox Escape)与 VM Escape 的通用判定:沙箱边界 = 哪些 syscall/能力被过滤;逃逸 = 找过滤器未覆盖的语义等价路径(→ [栈漏洞利用](stack-exploit.md) RETF/x32、[渗透测试](../pen/index.md))。
+- **Browser PWN**:V8/SpiderMonkey 引擎漏洞(CVE 样本复刻)→ JIT 编译器类型混淆、Array slice 越界(WebKit CVE-2016-4622,Codegate 2019);V8 Math.random 可预测(XorShift128+,→ [Crypto-MT19937](../crypto/mt19937.md));Electron 渲染进程 RCE 面(→ [WEB-XSS](../web/xss.md) Electron 节)。需要引擎调试环境(d8/gdb + debug symbols),CTF 出现于高阶场。
 - Python/marshal 沙箱 → [Misc](../misc/index.md) pyjail。
 
 ## 工具速查

@@ -41,6 +41,17 @@ comments: true
 - ZIP 未加密条目的 CRC32 是明文的哈希:文件 ≤4-6 字节时全空间暴力还原内容(弱工具脚本)。
 - 套娃场景:多层压缩包每层都是小 CRC 题。
 
+## 压缩包结构分析
+
+- **ZIP 结构**:local file header(PK\x03\x04)→ central directory(PK\x01\x02)→ EOCD(PK\x05\x06);三处记录的偏移/标志位需自洽——伪加密、修复题都在改这些字段。
+- 010 Editor 的 `ZIP.bt`/`RAR.bt` 模板逐字段可视化;`zipinfo -v`、`rar vt` 命令行查看结构详情。
+- 日期时间字段、Made by 版本、NTFS 扩展字段(高精度时间戳)都是隐写候选位。
+
+## 注释查看
+
+- ZIP:`zipinfo -z x.zip` / 010 看 EOCD 注释段;分卷压缩注释常藏下一层密码。
+- RAR:`rar vt x.rar` 显示注释块;7z:`7z l -slt`。
+
 ## 套娃与结构技巧
 
 - 嵌套 zip + 密码互相引用(密码在上层包文件名/注释);`binwalk -Me` 自动解。

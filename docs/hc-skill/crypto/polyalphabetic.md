@@ -21,7 +21,7 @@ comments: true
 
 - 5x5 字母矩阵(去 Q 或 I/J 合并),双字母加密(同行取右、同列取下、矩形取对角)。
 - 破解:双字母频率 + 已知明文片段模拟;或 hill-climbing 全矩阵搜索。
-- 变体:Two-square、Four-square 同族。
+- 变体:**二方密码(Two-square)/四方密码(Four-square)**——两个/四个 5x5 矩阵做双字母替换,破法同 Playfair(双字母频率 + 已知明文模拟);国内资料常按"二方/四方密码"称呼。
 
 ## 棋盘密码(Polybius)
 

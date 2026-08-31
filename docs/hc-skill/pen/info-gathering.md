@@ -41,6 +41,13 @@ comments: true
 - 结果处理:误报验证(手工 PoC 复现)优先于数量;高危面(未授权/RCE)优先打点。
 - 红线注意:扫描可能打挂脆弱设备(工控/老系统,→ [ICS](../ics/index.md)),需白名单沟通。
 
+## 人的信息面(OSINT/社工前置)
+
+- **OSINT**:开源情报总入口——域名资产(上文)+ 人的痕迹:GitHub/Gitee(代码、commit 邮箱)、招聘站(技术栈与团队规模)、领英/脉脉(组织架构)、朋友圈/微博(行程与内部照片)。
+- **员工信息收集**:姓名-职位-邮箱格式推断(`first.last@`、`flast@`)、离职入职痕迹、组织架构图(Hunter/Excel 全网扫描)、技术论坛 ID 关联。
+- **邮件收集**:theHarvester/snallygaster 打掠 MX 与公开泄露库(HIBP)、SMTP 用户枚举(`RCPT TO` 探测)、GitHub 泄露的通讯录/签名档;收集结果直接喂钓鱼(→ [社会工程](social-engineering.md))。
+- **社会工程学**:当信息收集本身通过"问人"完成——假扮员工/供应商致电前台与 IT 服务台套取信息(授权演练内);产出直接作为钓鱼话术素材。
+
 ## 转向
 
 - 漏洞验证利用 → [漏洞利用](exploitation.md);Web 侦察细节 → [WEB-信息搜集](../web/info-gathering.md)

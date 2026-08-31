@@ -53,6 +53,26 @@ comments: true
 - disable_functions 绕过:LD_PRELOAD + mail()/imap、PHP7 OPcache 二进制 webshell(ALICTF 2016)、`scandir` 替代目录列举(MetaCTF Flash 2026)。
 - 其他入口:日志包含(`session.upload_progress`、NGINX access log)、`session` 文件包含。
 
+## 模板注入(PHP 侧)
+
+- **Twig**:`{{7*7}}` 探测;RCE 走 `{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("id")}}`(Twig <3.14 常用链);新版用 `map/filter` 回调。
+- **Smarty**:`{php}` 标签(旧版)、`{$smarty.template}` 信息泄露;CVE-2017-1000480(注释注入 `getStreamVariable`)、CVE-2021-26120(`{math}` 执行);静态方法 `{Smarty_Internal_Write_File::...}`。
+- 文件读取:模板引擎的 include/display 路径可控 → 任意文件读(→ [文件泄露](file-leak.md) 衔接)。
+
+## 框架漏洞(指纹命中即打 N-Day)
+
+- **Laravel**:debug 模式(`/_ignition/execute-solution` RCE,CVE-2021-3129)、`APP_KEY` 泄露 → 反序列化 RCE(phpggc Laravel 链)。
+- **ThinkPHP**:5.x `s=` 路由 RCE(2018 年国内爆发,`\think\app\invokefunction`)、多版本反序列化链;国内赛事与实战出现率最高。
+- **Yii/CodeIgniter/CakePHP**:cookie 反序列化、phar 入口扫描。
+- 通用路径:composer.json 定位框架与版本 → phpggc 找链 → 找反序列化入口(cookie/phar/上传)。
+
+## 代码审计(面向 PHP 源码题)
+
+- 入口追踪:路由分发 → 参数接收(`$_GET/$_POST/php://input`)→ 危险函数汇(eval/system/include/unserialize/extract/preg_replace)。
+- 审计工具:Seay(国内)、RIPS 思路;`grep -rn "危险函数"` + 人工回溯数据流。
+- 代码混淆:php-obfuscator/源码加密(eval-gz-inflate 套娃)→ 动态 dump(`hook eval` 打印解密后源码)。
+- 衔接:反序列化 POP 链与伪协议见上文;变量覆盖三件套见上文。
+
 ## 工具速查
 
 ```bash

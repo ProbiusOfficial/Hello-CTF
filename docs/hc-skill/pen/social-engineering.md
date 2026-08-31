@@ -43,6 +43,11 @@ comments: true
 - 蜜罐反向(攻击者视角的 decoy):假登录页收集员工密码输入行为、热点钓鱼(evil twin AP,→ [IoT-无线安全](../iot/wireless.md))、诱导二维码。
 - Baiting:带标签的 U 盘/充电线投放;技术支持诈骗话术(诱导执行命令)。
 
+## 恶意载荷投递(社工的落地环节)
+
+- **恶意软件传播**(经社工通道):邮件附件(宏文档/lnk/chm/iso 镜像绕 Mark-of-the-Web)、即时通讯文件(伪装简历/发票)、假更新包(仿官网下载站)、U 盘投放(BadUSB,→ 物理入侵节);载荷免杀与 C2 上线 → [后渗透](post-exploitation.md)。
+- **恶意链接**:仿冒域名(homoglyph/短链/重定向链)→ 凭据钓鱼页(反代式抓凭据)或浏览器漏洞/exploit kit(历史场景);二维码钓鱼(quishing)绕邮件网关;链接检测对抗(域名新注册、CDN 中转、点击时再跳)。
+
 ## 转向
 
 - OSINT 手法 → [WEB-信息搜集](../web/info-gathering.md)/[Misc](../misc/index.md);载荷技术 → [后渗透](post-exploitation.md)

@@ -43,6 +43,14 @@ comments: true
 - Python 内存源码恢复(pyrasite,Insomni'hack 2017)。
 - SQLite 编辑历史从 diff 表重建(Google CTF 2017);Kyoto Cabinet 哈希库取证(ASIS CTF 2018)。
 
+## 平台与介质专项取证
+
+- **macOS 内存取证**:格式相对统一但生态工具少——内存里 `strings` + Volatility 3 的 mac 插件族(pslist/bash);Keychain 导出破解(chainbreaker);APFS 快照恢复历史文件(srdnlenCTF 2026);HFS+ 资源叉藏二进制(CONFidence CTF 2017)。
+- **U盘取证(USB 存储介质)**:注册表 `USBSTOR` 枚举插入历史(设备型号/序列号/首次插入时间)、`setupapi.dev.log` 的设备安装时间线、`MountedDevices` 盘符分配;取出 U 盘本体 → 删除文件恢复(Sleuth Kit)+ 分区表异常检查;Windows 事件 20001/20003(驱动安装)交叉验证。
+- **数据库取证**:SQLite(浏览器/APP 常用)——主文件 + `journal/WAL` 恢复已删数据、`freelist` 页 carving、编辑历史从 diff 表重建(Google CTF 2017);MySQL:ibd 文件页级解析(innodb_unicode 工具族)、binlog 重放还原变更;序列类型字节解析(RITSEC 2018)。
+- **浏览器取证**:Chrome/Edge——`History`(SQLite:URL/下载/时间戳 epoch 1607 基准)、`Cookies`(加密值 + DPAPI 解密)、`Login Data`(AES-GCM 密钥在 Local State,经 DPAPI)、`Cache` 目录 carving;Firefox——`places.sqlite`、`logins.json` + `key4.db` 解密;时间线拼接 = 用户行为还原。
+- **安全事件分析**:取证向的事件定位入口——先时间锚(告警/已知恶意文件时间)→ 该时间窗内的进程创建/网络连接/文件落盘/注册表改动 → 三视图(→ [应急响应](../ir/index.md))对齐;取证输出(IOC + 时间线 + 影响面)是最终交付物。
+
 ## 工具速查
 
 ```bash

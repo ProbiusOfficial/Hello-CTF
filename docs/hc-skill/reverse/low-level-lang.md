@@ -46,6 +46,13 @@ comments: true
 - 版本敏感:字节码随 Python 版本变,`xdis`/`decompyle3`/`pycdc` 按版本选;VuwCTF 2025 版本特化题。
 - Pyarmor 加壳(→ [Python程序逆向](python-reverse.md))。
 
+## 其他低级语言分析
+
+- 自定义 ISA/微码类:按 dispatch 循环逐 opcode 恢复语义(→ [静态分析对抗](anti-static.md) VM 节的通用流程)。
+- eBPF 字节码:`bpftool prog dump xlated`;JIT 后的 x64 对照分析(Midnight Sun CTF 2018 BPF JIT 反推)。
+- WebGL/shader(GLSL/HLSL):文本级"汇编",按渲染管线语义读(ApoorvCTF 2026 shader VM)。
+- 固件微控制器汇编(Xtensa/AVR/PIC):查指令手册 + qemu/avrdude 辅助(→ [IoT-固件分析](../iot/firmware.md))。
+
 ## 工具速查
 
 ```bash

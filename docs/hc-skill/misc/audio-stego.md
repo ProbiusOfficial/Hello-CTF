@@ -44,6 +44,11 @@ comments: true
 - Morse:morse2ascii/multimon-ng;键盘敲击声侧信道(ApoorvCTF 2026);Voyager 金唱片音频(0xFun 2026)。
 - MIDI:Note-On/Off 音高对编码(X-MAS CTF 2018);字节拍(bytebeat)合成代码识别(RITSEC 2018)。
 - WAV 经 UART 解码:音频其实是串口信号(EasyCTF 2017);TTL/电平信号分析。
+- **音频倒放**:Audacity Effect → Reverse,倒放后听摩斯/语音(ASIS CTF Finals 2013 同源套路)。
+- **MP3位隐写**:MP3Stego 即 MP3 压缩层 LSB——MP3 帧的 scalefactor/主数据位携带信息,工具 MP3StegoDecode 族;无工具时用 l3dec 类比对重编码差异。
+- **WAV高低频提取**:高频段(>15kHz)藏数据/图片——Audacity 频谱上限拉满;低频段(<50Hz)藏摩斯;分频带分别 `ffmpeg -af highpass/lowpass` 提取后按位还原。
+- **曼彻斯特解码(音频载波)**:音频承载曼彻斯特编码信号(先解调成位流再按曼彻斯特还原,→ [Crypto-编码与解码](../crypto/encoding.md) 曼彻斯特条目)。
+- **调幅调频混音(AM/FM 混合)**:多载波信号,先锁一个载波解调,残差里再解第二载波(GNU Radio 流图/URH 分步); stereo 声道的 L-R 差值是常见藏匿处。
 - 音乐音程隐写(DefCamp 2017);steghide 也支持 wav。
 
 ## 工具速查

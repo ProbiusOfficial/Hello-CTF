@@ -36,20 +36,43 @@ comments: true
 
 | 场景 | 攻击 | 备注 |
 | --- | --- | --- |
-| e 小 + m 小 | 直接开 e 次根 | m^e < n 时 |
-| e 小 + 多密文同 m | Hastad 广播,CRT 合并开根 | 带线性 padding → CRT+Coppersmith(PlaidCTF 2017) |
-| d 小 | Wiener(e 很大) | 格/连分数 |
+| e 小 + m 小(小公钥指数攻击) | 直接开 e 次根 | m^e < n 时 |
+| e 小 + 多密文同 m(Broadcast Attack) | Hastad 广播,CRT 合并开根 | 带线性 padding → CRT+Coppersmith(PlaidCTF 2017) |
+| d 小(低解密指数攻击) | Wiener(e 很大) | 格/连分数;更大范围用 Boneh-Durfee |
+| d < N^0.292 | Boneh-Durfee 格攻击 | Wiener 的格化推广,SA 系工具现成实现 |
 | p±1 平滑 | Pollard p-1 / Williams p+1 | |
 | 两密文线性相关 (e=3) | Franklin-Reiter 多项式 GCD(N1CTF 2018) | |
-| LSB oracle | 二分搜索 log2(n) 次(Rabin 版 PlaidCTF 2016;噪声版 SharifCTF 后处理纠错) | |
+| LSB/parity oracle | 二分搜索 log2(n) 次(Rabin 版 PlaidCTF 2016;噪声版 SharifCTF 后处理纠错) | RSA parity oracle 即 LSB 奇偶 oracle |
 | Manger oracle | 倍增+二分 ~128 次恢复 AES 密钥;OAEP 时序版(2018) | |
 | 共模攻击 | 两密文同 n 不同 e 互素 → 扩展 GCD | |
-| dp/dq/qinv 泄露 | 逐 k 迭代 `(dp·e-1)/k+1` 为素即 p(0CTF 2016) | |
+| 模不互素(共享素因子) | batch GCD / `gcd(n1,n2)` | 多把公钥共享素因子(2016-2019 各赛常出) |
+| dp/dq/qinv 泄露(dp&dq泄漏攻击) | 逐 k 迭代 `(dp·e-1)/k+1` 为素即 p(0CTF 2016) | 见例题节 |
 | n=p²q | Schmidt-Samoa 类结构 | 2018+ |
 | phi 的倍数泄露 | Miller-Rabin 平方根技巧分解(≥1/2 成功率) | `e·d-1` 即 phi 倍数 |
 | 同态解密绕过 | oracle 拒解 c → 解 `c·r^e` 再除 r(ectf 2016) | |
 | 小素因子 CRT | 试除 + 逐素域解 + CRT 合并(Hack the Vote 2016) | |
-| Montgomery 时序 | 泄露额外减法次数按位恢复密钥(DEF CON 2017) | |
+| Montgomery 时序(RSA侧信道攻击) | 泄露额外减法次数按位恢复密钥(DEF CON 2017) | |
+| Known High Bits(已知素数高位) | Coppersmith `small_roots` | p 高位泄露即够,X=低位上界 |
+
+## Rabin算法
+
+`c = m² mod n` 的平方根体制(等价于 e=2 的 RSA):
+
+- 解密:p、q 已知时开平方根得 ±r、±s 四个根,CRT 组合;正确明文需冗余校验(如后缀标记)。
+- **LSB/parity oracle**:乘法同态 `c·4 mod n` 使明文翻倍,oracle 告知奇偶 → 二分恢复 log2(n) 次(PlaidCTF 2016);含噪版后处理纠错(SharifCTF)。
+- 变体:多项式素数 Rabin(2018);四根枚举绕"无冗余无唯一解"的实现缺陷。
+- 与 RSA 关系:p=q 时 n=p² 在整数域直接开平方(验证绕过场景,→ 上文 p=q 条目)。
+
+## RSA签名伪造(RSA 数字签名族)
+
+textbook RSA(无 padding)签名 = 私钥运算,天然带同态:
+
+- **乘法同态伪造**:目标消息被黑名单 → 分解为两因子分别签名后相乘(MMA CTF 2015)。
+- **低指数伪造**:e=3 构造带 PKCS#1 v1.5 前缀值的立方根,尾部垃圾吸收余数(Bleichenbacher,Google CTF 2017)。
+- **e=1 + 自定模数**:验签端接受 (n,e) 时 e=1、`n = sig - pad(msg)`(BackdoorCTF 2018)。
+- **CRT 故障攻击**:`gcd(s⁻ᵉ·s' - 1, n)` 单条错误签名泄漏因子(Bellcore,CSAW CTF 2016)。
+
+完整签名体系攻击(ElGamal/DSA/ECDSA)→ [电子签名](digital-signature.md)。
 
 ## 中国剩余定理
 
@@ -84,7 +107,7 @@ sage: f = x*... ; f.small_roots(X=2^256, beta=0.5)   # Coppersmith
 
 ## 例题
 
-### Wiener 小私钥攻击(d < N^0.25)
+### Wiener 小私钥攻击(d < N^0.25,低解密指数攻击)
 
 e 巨大(接近 n)即提示 d 很小,对 `e/n` 做连分数展开,在收敛分数中检验 `phi=(e·d-1)/k` 是否合法(反推 p+q 后判别式开方为整数):
 
@@ -118,6 +141,8 @@ d = wiener_attack(e, n); m = pow(c, d, n)
 ```
 
 也可直接 `pip install owiener`。原理:`k/φ ≈ d/n` 的连分数收敛分数中必含 `k/d`。
+
+**Wiener 打不动时(d ∈ [N^0.25, N^0.292))**:升级 Boneh-Durfee 格攻击——把 `ed ≡ 1 (mod φ)` 的关系改写为模 e 多项式小根问题,构造二维格归约求小向量,界从 N^0.25 提升到 N^0.292;`github.com/mimoo/RSA-and-LLL` 有现成实现(SageMath),参数 `m,t` 调格维度。判据:Wiener 失败 + e 巨大 + d 明显小于 sqrt(n) 即上 Boneh-Durfee。
 
 ### Fermat 分解(p、q 相邻)
 

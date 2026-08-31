@@ -51,6 +51,13 @@ comments: true
 - serde_json schema 恢复(结构体字段从序列化代码还原);xmmword 常量提取 IDAPython(Insomnihack 2019)。
 - 编译器漏洞利用:#25860 生命周期逃逸(Hack.lu 2018);`#[no_mangle]` libc 覆写绕 seccomp。
 
+## 其他高级语言逆向
+
+- **AutoIt**:编译为 `a3x` 脚本(exe 自解包),`Exe2Aut`/MyAut2Exe 直接还原脚本源码;脚本本身是明文逻辑,还原后按脚本审计。
+- **Lua逆向分析**:游戏/嵌入式内置解释器;字节码(`.luac`)用 unluac 还原(注意 chunk 头版本),或 luadec;opcode 被魔改时按 dispatch 表重映射。
+- **Nim/Zig/Vala**:新兴语言,特征是 runtime 符号(`NimMain`/zig panic handler);按 C 系思路分析 + 符号恢复。
+- 通用思路:先识别运行时特征(字符串/入口函数),找对应社区反编译工具,没有工具时按 C 系 ABI 人工还原。
+
 ## 其他语言
 
 - **Swift**:demangle(swift-**);iOS 场景。

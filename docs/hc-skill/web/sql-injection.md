@@ -52,10 +52,21 @@ comments: true
 
 ## 高级变体
 
-- MySQL 列截断:varchar 超长截断注册 `admin+空格` 伪造管理员(VolgaCTF 2014)。
+- **堆叠注入(stack injections)**:`;` 多语句执行,依赖驱动是否支持(`mysqli_multi_query`、SQL Server 天然支持;Python 常用驱动默认禁)→ 新建用户/改数据直取。
+- **无列名盲注**:表名列名被 WAF 或无权限时,用 `select '1','2' union select ...` 按位比较或 `substr((select concat(col1,col2) from t limit 1),1,1)` 逐位拖;`order by` 判列数 + 别名位移。
+- **UDF提权**(MySQL → 系统):有 `secure_file_priv` 写权限与插件目录写权限时,写入 `lib_mysqludf_sys.so` → `create function sys_exec` → 命令执行(国内实战与 Web 题中"从 SQLi 到 shell"的直通车)。
+- **文件操作**:`load_file('/flag')` 读、`into outfile/dumpfile` 写 webshell(需 secure_file_priv 与写权限;`dumpfile` 不加转义适合二进制)。
+- MySQL 列截断:varchar 超长截断注册 `admin+空格` 伪造管理员(VolgaCTF 2014,约束攻击/约束漏洞族)。
 - `sys.schema_table_statistics` / `mysql.innodb_table_stats` 替代被禁的 information_schema(N1CTF 2018)。
 - 会话变量双值注入(MeePwn CTF 2017);QR 码内容进 SQL(H4ckIT CTF 2016)。
+- **二次注入(存储型注入)**:恶意 payload 先存库(注册名/昵称),在另一处查询时被拼接执行——转义只发生在入库时,出库后无防护;盲注拖库同理可走存储通道。
 - LDAP 注入通配符突破(CSAW 2018);XPath 盲注(BaltCTF 2013)。
+
+## 盲注变体小结
+
+- **布尔盲注(比较盲注)**:构造真/假条件观察页面差异,`ascii(substr())` 逐字符;LIKE 通配符加速。
+- **无列名盲注**:连列名都不给,比较法/位移法直接拖数据。
+- **时间盲注**:sleep/benchmark/randomblob 拖时(→ 无回显盲注节)。
 
 ## 工具速查
 

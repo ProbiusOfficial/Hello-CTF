@@ -38,6 +38,23 @@ comments: true
 - 还原:OLLVM-deobfuscation 工具链;Unicorn+angr 路径符号化;最新版(Obfuscator-LLVM 4.0 复刻、Arxan 类商用)。
 - VMProtect/Themida 商业壳(→ 下文 VM 小节 + 动态工具链)。
 
+## 加壳与脱壳
+
+- 常见壳:UPX(`upx -d` 一键脱)、ASPack/Themida/VMProtect(Windows)、自定义壳(魔数/入口特征识别,DIE/ExeinfoPE 指纹)。
+- 脱壳通用法:单步跟踪到 OEP( ESP 定律/内存断点)、运行时 dump(Scylla 重建 IAT);虚拟机壳转 VM 逆向(见下节)。
+- 壳与静态对抗的关系:壳的本质是"解密器 + 反调试"组合,先脱壳再回常规分析流程。
+
+## 代码自解密(SMC)
+
+- 程序运行时解密自身代码段(XOR/RC4 常见),静态看到的密文区不可读。
+- 还原:定位解密函数,提取 key/算法后对密文区手动解密;或 dump 运行时解密后的内存段(`.text` 解密完成瞬间)再静态分析。
+
+## 其他静态分析对抗
+
+- 资源段藏代码(PE overlay/资源目录 → [可执行文件逆向](executable.md) 附加数据)。
+- 导入表清空(API 动态调用,见下节)、假入口、假字符串迷雾。
+- 反编译器定向攻击:构造让反编译器崩溃/误判的类型与代码(ghidra/ida bug 触发)。
+
 ## Virtual Machine
 
 - 自定义 VM 逆向通用流程:

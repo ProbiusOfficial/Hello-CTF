@@ -17,7 +17,13 @@ comments: true
 - ICMP:payload 隐写(字节旋转 HackIM 2016)、时序通道(DefCamp 2018)、长度通道(TokyoWesterns 2018)。
 - TCP flag 隐蔽通道(BearCatCTF 2026);包间隔时序编码(EHAX 2026);TCP Fast Open SYN 载荷命令注入(Insomnihack 2019)。
 - 5G/NR 协议分析;SAP Dialog 协议解密(GreHack CTF 2016);RADIUS 共享密钥破解(radius2john,UConn CyberSEED 2017);NTLMv2 hash 提取破解(Pragyan 2026);SMB RID 循环(Midnight 2026)、Timeroasting/MS-SNTP(Midnight 2026)。
-- 蓝牙:RFCOMM 包重组(HITCON 2018);蓝牙音频/串口流。
+- 蓝牙:HCI log 与 RFCOMM 包重组(HITCON 2018);**蓝牙流量分析**:btsnoop_hci.log 用 Wireshark 蓝牙解析,GATT 特征值读写即数据流;经典蓝牙音频流(A2DP)与 SPP 串口数据分离。
+- **ADB流量分析**:5555 端口的 ADB 协议(cnxd 服务流)——Wireshark 无原生解析,按 ADB 协议帧(CONN/AUTH/OPEN/WRTE)手工还原 shell 会话与推送文件;`adbsnapshot` 类工具辅助。
+- **MQTT 流量分析**:1883 明文主题与 payload 直接读——订阅 `#`(通配)语义上等于"看全部消息";CONNECT 报文里的 clientId/凭证是隐写/情报点;8883 TLS 场景 → 加密流量节。
+- **SMB流量分析**:会话建立(NEGOTIATE/SESSION SETUP)→ NTLMv2 hash 抓取破解(→ [应急响应-流量分析](../ir/traffic-analysis.md));SMB2 文件读写(CREATE/READ)按文件 ID 重组传输内容;RID 枚举(Midnight 2026)。
+- **Telnet 流量分析**:全明文交互,Follow TCP Stream 即完整会话(登录凭证、执行命令逐字可见);IAC 协商字节(0xFF)需过滤后再读。
+- **加密流量分析**:无密钥时的指纹学——JA3/JA3S(TLS 握手指纹)、包长/时序统计、SNI 与目标不一致检测(→ [应急响应-流量分析](../ir/traffic-analysis.md) 数据加密流量节);有侧信息(内存密钥/日志)→ 解密还原。
+- **无线密码破解**:WPA/WEP 四步握手 + 字典(aircrack-ng / hashcat -m 22000)、PMKID 无客户端攻击(→ [IoT-无线安全](../iot/wireless.md) Wi-Fi 节)。
 - WiFi:WPA/WEP 解密(aircrack-ng + 握手包,DefCamp CTF 2016)。
 
 ## 硬件通讯协议

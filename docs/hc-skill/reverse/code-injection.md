@@ -14,7 +14,8 @@ comments: true
 ## 远程线程注入
 
 - 经典链:`OpenProcess` → `VirtualAllocEx` → `WriteProcessMemory` → `CreateRemoteThread`(LoadLibrary/函数地址)。
-- 变体:`NtCreateThreadEx`、APC 注入(`QueueUserAPC`)、`RtlCreateUserThread`。
+- 变体:`NtCreateThreadEx`、**APC注入**(`QueueUserAPC`:把执行函数挂到目标线程 APC 队列,线程可警报时执行;早鸟 Early Bird 变体在进程初始化即注入)、`RtlCreateUserThread`。
+- **DLL反射加载(Reflective DLL Injection)**:不落盘、不经 LoadLibrary——DLL 自带 loader 在内存中完成节表映射与重定位;特征:内存中无文件路径对应的映像;dump 后按内存对齐修复(pe-sieve 自动)。
 - 逆向:扫 API 导入组合;注入的 shellcode 在 `VirtualAllocEx` 后 dump。
 - 父子进程互动:parent patch child 经 `strace process_vm_writev`(Google CTF Quals 2018)→ Linux 侧等价手法。
 
@@ -43,6 +44,19 @@ comments: true
 - 识别:进程内存映像与磁盘文件不一致(ghost 进程);`Process Hollowing` 检测对比 PEB 的 ImageBase。
 - 变体:Process Doppelgänging(NTFS 事务)、transacted hollowing。
 - 逆向:dump 无载体内存映像(pe-sieve/Scylla)再静态分析。
+
+## SSDT Hook(内核层)
+
+- 修改内核 `KeServiceDescriptorTable`(SSDT)系统服务分发表项指向 hook 函数——用户态 API 的"源头"被改。
+- 识别:内核模块分析中 sys_call_table 项指向非 nt 模块地址;ARK 工具(Autoruns/PowerTool 类)对照。
+- 逆向场景:rootkit 样本分析(→ [恶意代码分析](../ics/malware.md)),先 dump 被 hook 的服务号再追 hook 函数逻辑;x64 下 SSDT 钩子受 PatchGuard 限制,样本多用驱动回调替代。
+
+## 其他代码注入
+
+- 进程镂空以外的内存加载:Hollowing 变体(Process Doppelgänging NTFS 事务、transacted hollowing,见 Process Hollowing 节)。
+- Shellcode 注入框架:sRDI/Donut(任意 DLL/exe → PIC shellcode)——样本里见到 Donut 特征头先解包。
+- 内核态注入:APC(内核)、IdeaNomad 类;驱动加载点分析。
+- 排查清单:谁能写内存(VirtualAllocEx/WriteProcessMemory/NtMapViewOfSection 交叉引用)+ 谁能起执行线程(CreateRemoteThread/APC/Rtl)。
 
 ## Message Hook
 

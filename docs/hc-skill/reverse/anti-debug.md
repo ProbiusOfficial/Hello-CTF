@@ -36,21 +36,41 @@ comments: true
 - 绕过:patch 回调表、调试器设置断在 tls_callback_0。
 - Windows 驱动/服务常叠加以错开分析者注意力(→ [异常处理](exception-handling.md))。
 
+## 基于断点检测
+
+- 软件断点:INT3 扫描(代码段 hash 比对/直接扫 0xCC)、CRC 自校验。
+- 硬件断点:Dr0-Dr3 调试地址寄存器检查(`GetThreadContext`)。
+- 单步检测:pushfq 检查陷阱标志(TF);trap-flag 自检 + cmovz 补丁器(Hack.lu 2018)。
+
+## 基于异常
+
+- INT3/除零/访问违例触发异常:正常程序走 except/SEH 继续,被调试器接管则回调不执行 → 以"异常回调是否被调用"判调试存在(→ [异常处理](exception-handling.md) 全套机制)。
+- 调试器配置"异常传给程序"即可正常通过。
+
+## 基于沙箱检测
+
+- 反VM/反沙箱(CPUID hypervisor 位、MAC 前缀、核数/内存阈值、VMware Tools 注册表痕迹、用户交互检测)——见下节,与动态调试对抗常叠加出现。
+
+## 其他动态调试对抗
+
+- 反插桩:Frida 检测(端口 27042、"frida" 字符串、gum-js-loop 线程)、Pin/DynamoRIO 特征。
+- 代码完整性 self-hashing(运行时 CRC 校验自身)→ patch 前先 patch 校验函数。
+- 时间锁定:二进制带日期 key 过期拒跑(Hack.lu 2017)——改系统时间或 patch 校验。
+
 ## 基于时间差检测
 
 - `rdtsc` 差值、`QueryPerformanceCounter`、`GetTickCount`:单步导致时间异常。
 - 绕过:hook 时间函数返回固定值;ScyllaHide 的 time 加速;`LD_PRELOAD time()` 冻结(EKOPARTY 2017);unicorn 模拟时指令计数补偿。
 - 时间锁定:二进制带日期 key,过期拒跑(Hack.lu 2017)——反向:改系统时间/patch 校验。
 
-## 基于调试器特征检测
+## 基于调试器特征检测(断点/单步/异常)
 
-- 断点检测:INT3 扫描(代码段 hash 比对/直接扫 0xCC)、硬件断点寄存器(Dr0-Dr3)。
+- 软件断点检测:INT3 扫描(代码段 hash 比对/直接扫 0xCC);硬件断点检测:Dr0-Dr3 调试寄存器(`GetThreadContext`)。
 - 单步检测:pushfq 检查陷阱标志(TF);trap-flag 自检 + cmovz 补丁器(Hack.lu 2018)。
-- 异常法:INT3/SEH 被调试器吃掉则回调不触发(→ [异常处理](exception-handling.md))。
-- 代码完整性:self-hashing(运行时校验自身 CRC)→ patch 前先 patch 校验函数。
+- 基于异常:INT3/除零/访问违例——正常程序走 except/SEH 继续,被调试器接管则回调不执行,以"回调是否触发"判调试(→ [异常处理](exception-handling.md));调试器设"异常传给程序"即可通过。
 - 信号类:SIGILL 切换执行模式(Hack.lu 2015)、SIGFPE handler mprotect 代码变异(Hack.lu 2018)、fork+pipe 死分支(RCTF 2017)。
 
-## 反VM/反沙箱
+## 反VM/反沙箱(基于沙箱检测)
 
 - CPUID hypervisor 位;MAC 地址前缀;CPU 核数/内存/磁盘大小阈值。
 - 注册表/文件痕迹(VMware Tools、VBoxService);用户交互检测(鼠标移动、对话框)。

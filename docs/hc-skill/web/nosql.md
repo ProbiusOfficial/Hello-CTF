@@ -38,6 +38,10 @@ comments: true
 
 - `{"$or":[{},{}]}`、`{"$ne":null}`、`{"$exists":true}` 全匹配绕过登录。
 - `login?user[$ne]=x&pass[$ne]=y` 组合拿到首个匹配用户。
+- **盲注攻击**:无直接回显时靠布尔差异/时延逐字符恢复——
+  - `$regex` 前缀逐步:`user[$regex]=^a` → `^ad` → …(布尔盲注);
+  - `$where` 注入 `sleep(5000)||this.password[0]=='a'`(时间盲注);
+  - `$gt/$lt` 比较法二分(比正则快,按字典序收敛)。
 - Redis:`config set dir`/`set` 未授权写文件思路(注入拼命令场景)。
 
 ## 联合查询攻击
