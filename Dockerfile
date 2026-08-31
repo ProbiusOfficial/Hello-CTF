@@ -2,7 +2,8 @@ FROM python:3.12.12-alpine
 
 ENV PIP_INDEX_URL=https://mirrors.aliyun.com/pypi/simple/
 RUN pip install --upgrade pip
-RUN apk add --no-cache build-base
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/' /etc/apk/repositories \
+    && apk add --no-cache build-base
 
 WORKDIR /Hello-CTF
 
