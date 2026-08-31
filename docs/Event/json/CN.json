@@ -92,14 +92,6 @@
                 "status": "正在进行"
             },
             {
-                "name": "第七届“蒙古马杯”学生组网络安全竞赛（决赛）",
-                "link": "https://www.imnu.edu.cn/info/1311/117361.htm",
-                "comp_time_start": "2026年08月27日 00:00",
-                "comp_time_end": "2026年08月30日 23:59",
-                "detail": "赛制/类型: 线下决赛\n地点：呼和浩特市（具体地点待通知）",
-                "status": "正在进行"
-            },
-            {
                 "name": "NepCTF 2026",
                 "link": "https://www.nepctf.com/",
                 "comp_time_start": "2026年07月17日 19:00",
@@ -145,6 +137,14 @@
                 "comp_time_start": "2026年08月23日 00:00",
                 "comp_time_end": "2026年08月23日 23:59",
                 "detail": "赛制/类型: 线下 CTF 解题赛（决赛）\n地点：四川大学网络空间安全学院靶场（成都）\n面向全国在校中小学生",
+                "status": "已经结束"
+            },
+            {
+                "name": "第七届“蒙古马杯”学生组网络安全竞赛（决赛）",
+                "link": "https://www.imnu.edu.cn/info/1311/117361.htm",
+                "comp_time_start": "2026年08月27日 00:00",
+                "comp_time_end": "2026年08月30日 23:59",
+                "detail": "赛制/类型: 线下决赛\n地点：呼和浩特市（具体地点待通知）",
                 "status": "已经结束"
             },
             {
