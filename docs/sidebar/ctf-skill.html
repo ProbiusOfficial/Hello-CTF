@@ -34,6 +34,11 @@
   }
   .page-head h1 .hl { background: linear-gradient(transparent 60%, var(--hl) 60%); }
   .page-head .sub { font-size: 14.5px; color: var(--ink-2); max-width: 640px; }
+  .page-head .sub code {
+    font-family: var(--mono); font-size: 12.5px;
+    background: var(--wash); border: 1px solid var(--line);
+    border-radius: 6px; padding: 1.5px 7px; white-space: nowrap;
+  }
   .stats { font-family: var(--mono); font-size: 12px; color: var(--ink-3); margin-top: 12px; }
   .stats strong { color: var(--ink-2); font-weight: 600; }
 
@@ -128,8 +133,12 @@
       <p class="sub">基于国内 CTF 竞赛体系整理。选择一个方向，按知识域逐层深入，快速定位你需要学习的知识点。</p>
       <p class="sub" style="margin-top:6px">
         <svg class="ic" style="width:14px;height:14px;vertical-align:-2px;color:var(--accent)"><use href="#i-bot"/></svg>
-        也可以<strong>下载给 AI 使用</strong>：把技能树数据喂给你的 AI 助手，让它按知识域为你规划学习路线、出题或查漏补缺。
-        <a href="./ctf_skill_data.json" download="hello-ctf-skill.json" style="color:var(--accent);font-family:var(--mono);font-size:12.5px;margin-left:6px">↓ 下载 SKILL 数据（JSON）</a>
+        也可以<strong>安装给 AI 助手使用</strong>：技能树已按 Agent Skills 规范封装（仓库根目录含 SKILL.md），在终端执行
+        <code>npx skills add ProbiusOfficial/Hello-CTF</code>
+        即可安装到 Claude Code / Kimi Code CLI / Codex 等编程助手，让 AI 按知识域为你规划学习路线、解题或查漏补缺。
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/blob/main/SKILL.md" target="_blank" rel="noopener" style="color:var(--accent);font-family:var(--mono);font-size:12.5px;margin-left:6px">查看 SKILL.md</a>
+        <span style="color:var(--ink-3);margin:0 4px">·</span>
+        <a href="./ctf_skill_data.json" download="hello-ctf-skill.json" style="color:var(--accent);font-family:var(--mono);font-size:12.5px">↓ 原始数据（JSON）</a>
       </p>
       <div class="stats">共 <strong id="categoryCount">0</strong> 个方向 · 涵盖 <strong id="skillCount">0</strong> 个知识域</div>
     </header>
