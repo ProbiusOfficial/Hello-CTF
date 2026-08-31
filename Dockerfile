@@ -1,6 +1,6 @@
 FROM python:3.12.12-alpine
 
-ENV PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple
+ENV PIP_INDEX_URL=https://mirrors.aliyun.com/pypi/simple/
 RUN pip install --upgrade pip
 RUN apk add --no-cache build-base
 
