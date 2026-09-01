@@ -19,14 +19,6 @@
                 "status": "时间待定"
             },
             {
-                "name": "第二届 OpenHarmony CTF 智能漏洞挖掘赛（决赛提交）",
-                "link": "https://thuctf.tsinghua.edu.cn/harmonyctf/games/2",
-                "comp_time_start": "2026年09月01日 00:00",
-                "comp_time_end": "2026年09月30日 23:59",
-                "detail": "赛制/类型: 线上提交（决赛阶段）\n主办方：清华大学；现场决赛时间地点待定",
-                "status": "即将开始"
-            },
-            {
                 "name": "第二届“湾区杯”网络安全大赛（初赛）",
                 "link": "https://race.cinsa.org.cn/",
                 "comp_time_start": "2026年09月04日 15:30",
@@ -89,6 +81,14 @@
                 "comp_time_end": "2026年10月09日 17:00",
                 "detail": "面向 26 级新生\n比赛赛制：单人线上解题模式。\n比赛内容：涵盖 Web 安全与渗透测试、软件逆向工程、二进制漏洞利用、现代密码学、取证与安全杂项、Python 沙箱逃逸、开发与运维基础、美工设计等。\n赛事官方 QQ 群 1033688742",
                 "freshman": true,
+                "status": "正在进行"
+            },
+            {
+                "name": "第二届 OpenHarmony CTF 智能漏洞挖掘赛（决赛提交）",
+                "link": "https://thuctf.tsinghua.edu.cn/harmonyctf/games/2",
+                "comp_time_start": "2026年09月01日 00:00",
+                "comp_time_end": "2026年09月30日 23:59",
+                "detail": "赛制/类型: 线上提交（决赛阶段）\n主办方：清华大学；现场决赛时间地点待定",
                 "status": "正在进行"
             },
             {
