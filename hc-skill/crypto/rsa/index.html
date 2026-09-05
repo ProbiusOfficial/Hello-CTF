@@ -1,0 +1,1466 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>RSA | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../../shell/shell.css">
+  <link rel="stylesheet" href="../../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../../shell/search.js"></script>
+  <script src="../../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <div class="tn-group">文件与编码基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">隐写分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">取证分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/industrial/">工控类</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <div class="tn-group">环境与工具</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/web_env/">Web环境设置</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/docker_install/">Docker安装配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/docker_env/">Docker与漏洞环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/vm_lab/">虚拟机与网络模拟</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/burp/">Burp Suite</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/py_script/">Python脚本</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/http/">HTTP协议</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <div class="tn-group">信息收集</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">PHP专题</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/php_features/">PHP特性与常见绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/php_unser/">PHP反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/php_code_audit/">PHP代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">注入类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/nosql/">NoSQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/csrf/">CSRF攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">文件类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">命令与代码执行</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/rce/">RCE</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/session_jwt/">会话与认证安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <div class="tn-group">语言扩展 | 世界不止有PHP</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/py_unser/">Python反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/py_sandbox/">Python沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/flask_sec/">Flask安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/prototype_pollution/">原型链污染</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/js_sandbox/">JS沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/js_reverse/">JS逆向</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/java_basic/">Java安全基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/java_unser/">Java反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/spring/">Spring漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/java_audit/">Java代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">进阶专题</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/waf_bypass/">WAF绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/http_smuggling/">请求走私</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/cache_poisoning/">缓存投毒</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/xs_leaks/">XS-Leaks</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/web_crypto/">密码学应用题</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/cloud_container/">云与容器安全</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">实战能力</div>
+      
+  
+    
+      <div class="tn-group">渗透链路基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/pentest_flow/">渗透流程总览</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/two_layer/">两层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/foothold/">立足点建立</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/internal_recon/">内网信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/proxy_tunnel/">代理与隧道</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">多层网络渗透</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/three_layer/">三层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/multi_layer/">多层网络综合</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/ad_basic/">域渗透入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/lateral/">横向移动</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">对抗与综合</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/awd/">AWD模式</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/web_pwn/">Web与二进制结合</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/nday/">Nday利用</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/review/">Writeup复盘方法</a>
+    
+  
+
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-crypto/env/">环境配置</a>
+    
+  
+    
+      <div class="tn-group">基础知识</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-crypto/Encode/">编码基础</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">密码体系</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <div class="tn-group">环境与基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/Protections/">常见保护</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">栈溢出</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">ROP利用</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="rsa">RSA<a class="headerlink" href="#rsa" title="Permanent link">¶</a></h1>
+<blockquote>
+<p>CRYPTO · 知识域。RSA 攻击全谱系,密码学方向第一大题库。标签:<strong>e和phi不互素</strong>、<strong>暴力分解N</strong>、<strong>p&amp;q不当分解N</strong>、<strong>中国剩余定理</strong>、<strong>提取PEM文件信息</strong>、<strong>私钥文件修复</strong>。</p>
+</blockquote>
+<h2 id="_1">触发特征<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<ul>
+<li>题面给 n, e, c 三元组;PEM 公钥文件;多个密文/多组公钥。</li>
+<li>起手体检:<code>n</code> 位长 → <code>factordb</code> 查已知分解 → <code>e</code> 大小 → 密文间关系。</li>
+</ul>
+<h2 id="n">暴力分解N<a class="headerlink" href="#n" title="Permanent link">¶</a></h2>
+<ul>
+<li>小 N(&lt;256 bit):yafu / msieve / SageMath <code>factor</code>。</li>
+<li>在线:factordb.com;<code>sympy.factorint</code> 试小因子。</li>
+<li>试除结构:p = next_prime(2^k+small)(2019)、多素数 N(直接 sympy 分解)、受限数字素数(逐位从 LSB 确定剪枝,2018)。</li>
+<li><strong>Fermat 分解</strong>:p,q 相邻(<code>q=next_prime(p)</code>)或 <code>q≈k·p</code>(Coppersmith 广义,→ 下文);<code>isqrt</code> 迭代。</li>
+<li><strong>Pollard p-1</strong>:p-1 平滑 → <code>pow(a, lcm(1..B), n)</code> gcd;变体 p+1(Williams)。</li>
+<li><strong>batch GCD</strong>:多把公钥共享素因子(2016-2019 各赛常出);N1·N2 gcd。</li>
+<li><strong>Coppersmith</strong>:已知素数高位(部分密钥泄露)→ <code>f.small_roots()</code>(SageMath);线性相关素数 <code>q=k·p+δ</code> 近似 <code>sqrt(k·n)</code> 后 small_roots(ASIS CTF 2018)。</li>
+</ul>
+<h2 id="pqn">p&amp;q不当分解N<a class="headerlink" href="#pqn" title="Permanent link">¶</a></h2>
+<ul>
+<li>p、q 相邻/相近:Fermat;p、q 来自同一 PRNG 种子(→ <a href="../mt19937/">MT19937</a>);<code>p = kp·B + tp</code> 基表示结构暴力(BACKDOOR 风格)。</li>
+<li>p=q:验签端 <code>phi=(p-1)^2</code> 错误 → 解密失败泄露密文(2018)。</li>
+<li>共享素数:batch GCD;ROCA 漏洞指纹检测(CVE-2017-15361,roca-detect)。</li>
+</ul>
+<h2 id="ephi">e和phi不互素<a class="headerlink" href="#ephi" title="Permanent link">¶</a></h2>
+<ul>
+<li><code>g = gcd(e,phi) &gt; 1</code>:令 <code>e' = e/g</code>,算 <code>d' = e'^-1 mod phi</code>,得 <code>m^g mod n</code> 后**在整数域开 g 次方**;g 与素因子结构耦合时逐素数域开根再 CRT 枚举组合(2018 cube root CRT)。</li>
+<li>e=1 直接得 m;e 过大 → 对应 d 小(Wiener)。</li>
+</ul>
+<h2 id="_2">经典攻击速查<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>攻击</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>e 小 + m 小(小公钥指数攻击)</td>
+<td>直接开 e 次根</td>
+<td>m^e &lt; n 时</td>
+</tr>
+<tr>
+<td>e 小 + 多密文同 m(Broadcast Attack)</td>
+<td>Hastad 广播,CRT 合并开根</td>
+<td>带线性 padding → CRT+Coppersmith(PlaidCTF 2017)</td>
+</tr>
+<tr>
+<td>d 小(低解密指数攻击)</td>
+<td>Wiener(e 很大)</td>
+<td>格/连分数;更大范围用 Boneh-Durfee</td>
+</tr>
+<tr>
+<td>d &lt; N^0.292</td>
+<td>Boneh-Durfee 格攻击</td>
+<td>Wiener 的格化推广,SA 系工具现成实现</td>
+</tr>
+<tr>
+<td>p±1 平滑</td>
+<td>Pollard p-1 / Williams p+1</td>
+<td></td>
+</tr>
+<tr>
+<td>两密文线性相关 (e=3)</td>
+<td>Franklin-Reiter 多项式 GCD(N1CTF 2018)</td>
+<td></td>
+</tr>
+<tr>
+<td>LSB/parity oracle</td>
+<td>二分搜索 log2(n) 次(Rabin 版 PlaidCTF 2016;噪声版 SharifCTF 后处理纠错)</td>
+<td>RSA parity oracle 即 LSB 奇偶 oracle</td>
+</tr>
+<tr>
+<td>Manger oracle</td>
+<td>倍增+二分 ~128 次恢复 AES 密钥;OAEP 时序版(2018)</td>
+<td></td>
+</tr>
+<tr>
+<td>共模攻击</td>
+<td>两密文同 n 不同 e 互素 → 扩展 GCD</td>
+<td></td>
+</tr>
+<tr>
+<td>模不互素(共享素因子)</td>
+<td>batch GCD / <code>gcd(n1,n2)</code></td>
+<td>多把公钥共享素因子(2016-2019 各赛常出)</td>
+</tr>
+<tr>
+<td>dp/dq/qinv 泄露(dp&amp;dq泄漏攻击)</td>
+<td>逐 k 迭代 <code>(dp·e-1)/k+1</code> 为素即 p(0CTF 2016)</td>
+<td>见例题节</td>
+</tr>
+<tr>
+<td>n=p²q</td>
+<td>Schmidt-Samoa 类结构</td>
+<td>2018+</td>
+</tr>
+<tr>
+<td>phi 的倍数泄露</td>
+<td>Miller-Rabin 平方根技巧分解(≥½ 成功率)</td>
+<td><code>e·d-1</code> 即 phi 倍数</td>
+</tr>
+<tr>
+<td>同态解密绕过</td>
+<td>oracle 拒解 c → 解 <code>c·r^e</code> 再除 r(ectf 2016)</td>
+<td></td>
+</tr>
+<tr>
+<td>小素因子 CRT</td>
+<td>试除 + 逐素域解 + CRT 合并(Hack the Vote 2016)</td>
+<td></td>
+</tr>
+<tr>
+<td>Montgomery 时序(RSA侧信道攻击)</td>
+<td>泄露额外减法次数按位恢复密钥(DEF CON 2017)</td>
+<td></td>
+</tr>
+<tr>
+<td>Known High Bits(已知素数高位)</td>
+<td>Coppersmith <code>small_roots</code></td>
+<td>p 高位泄露即够,X=低位上界</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rabin">Rabin算法<a class="headerlink" href="#rabin" title="Permanent link">¶</a></h2>
+<p><code>c = m² mod n</code> 的平方根体制(等价于 e=2 的 RSA):</p>
+<ul>
+<li>解密:p、q 已知时开平方根得 ±r、±s 四个根,CRT 组合;正确明文需冗余校验(如后缀标记)。</li>
+<li><strong>LSB/parity oracle</strong>:乘法同态 <code>c·4 mod n</code> 使明文翻倍,oracle 告知奇偶 → 二分恢复 log2(n) 次(PlaidCTF 2016);含噪版后处理纠错(SharifCTF)。</li>
+<li>变体:多项式素数 Rabin(2018);四根枚举绕"无冗余无唯一解"的实现缺陷。</li>
+<li>与 RSA 关系:p=q 时 n=p² 在整数域直接开平方(验证绕过场景,→ 上文 p=q 条目)。</li>
+</ul>
+<h2 id="rsarsa">RSA签名伪造(RSA 数字签名族)<a class="headerlink" href="#rsarsa" title="Permanent link">¶</a></h2>
+<p>textbook RSA(无 padding)签名 = 私钥运算,天然带同态:</p>
+<ul>
+<li><strong>乘法同态伪造</strong>:目标消息被黑名单 → 分解为两因子分别签名后相乘(MMA CTF 2015)。</li>
+<li><strong>低指数伪造</strong>:e=3 构造带 <a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/PKCS/issues/1" title="GitHub Issue: squidfunk/PKCS #1">PKCS#1</a> v1.5 前缀值的立方根,尾部垃圾吸收余数(Bleichenbacher,Google CTF 2017)。</li>
+<li><strong>e=1 + 自定模数</strong>:验签端接受 (n,e) 时 e=1、<code>n = sig - pad(msg)</code>(BackdoorCTF 2018)。</li>
+<li><strong>CRT 故障攻击</strong>:<code>gcd(s⁻ᵉ·s' - 1, n)</code> 单条错误签名泄漏因子(Bellcore,CSAW CTF 2016)。</li>
+</ul>
+<p>完整签名体系攻击(ElGamal/DSA/ECDSA)→ <a href="../digital-signature/">电子签名</a>。</p>
+<h2 id="_3">中国剩余定理<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<ul>
+<li>CRT 合并广播密文;多模数残余 <code>r = flag mod f</code> 收集后 GF(2)[x] CRT(多项式域,2018)。</li>
+<li>Hensel 引理:p^k 上多项式根逐级提升(2018)。</li>
+<li>Rabin 四平方根 CRT 组合(2018)。</li>
+</ul>
+<h2 id="pem">提取PEM文件信息<a class="headerlink" href="#pem" title="Permanent link">¶</a></h2>
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>openssl<span class="w"> </span>rsa<span class="w"> </span>-pubin<span class="w"> </span>-in<span class="w"> </span>key.pub<span class="w"> </span>-text<span class="w"> </span>-noout<span class="w">     </span><span class="c1"># n, e</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>openssl<span class="w"> </span>asn1parse<span class="w"> </span>-in<span class="w"> </span>key.pem<span class="w">                   </span><span class="c1"># 完整结构</span>
+</code></pre></div>
+- 多文件比对 n/gcd;<code>bit_length()</code> 快速判位长;私钥文件直接 <code>openssl rsa -in key.pem -text -noout</code>。
+<h2 id="_4">私钥文件修复<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<ul>
+<li>PEM 缺头/损坏:补 <code>-----BEGIN...</code> 头、base64 对齐;DER 解析定位 asn1 断点。</li>
+<li>部分字段泄露(dp/dq/qinv)→ 上述恢复攻击;PEM 中 p 泄露一半字节 → Coppersmith。</li>
+<li>工具:RsaCtfTool <code>--attack</code> 全家桶、<code>rsatool</code> 重建 PEM。</li>
+</ul>
+<h2 id="_5">工具速查<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>RsaCtfTool.py<span class="w"> </span>--publickey<span class="w"> </span>key.pub<span class="w"> </span>--uncipherfile<span class="w"> </span>flag.enc
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sage:<span class="w"> </span><span class="nv">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>x*...<span class="w"> </span><span class="p">;</span><span class="w"> </span>f.small_roots<span class="o">(</span><span class="nv">X</span><span class="o">=</span><span class="m">2</span>^256,<span class="w"> </span><span class="nv">beta</span><span class="o">=</span><span class="m">0</span>.5<span class="o">)</span><span class="w">   </span><span class="c1"># Coppersmith</span>
+</code></pre></div>
+<h2 id="_6">转向<a class="headerlink" href="#_6" title="Permanent link">¶</a></h2>
+<ul>
+<li>多组公钥/签名体系 → <a href="../digital-signature/">电子签名</a>;大数运算细节 → <a href="../math/">数理</a></li>
+</ul>
+<h2 id="_7">例题<a class="headerlink" href="#_7" title="Permanent link">¶</a></h2>
+<h3 id="wiener-d-n025">Wiener 小私钥攻击(d &lt; N^0.25,低解密指数攻击)<a class="headerlink" href="#wiener-d-n025" title="Permanent link">¶</a></h3>
+<p>e 巨大(接近 n)即提示 d 很小,对 <code>e/n</code> 做连分数展开,在收敛分数中检验 <code>phi=(e·d-1)/k</code> 是否合法(反推 p+q 后判别式开方为整数):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">wiener_attack</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">continued_fraction</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">den</span><span class="p">):</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>        <span class="n">cf</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        <span class="k">while</span> <span class="n">den</span><span class="p">:</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>            <span class="n">q</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="nb">divmod</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">den</span><span class="p">)</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>            <span class="n">cf</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">q</span><span class="p">);</span> <span class="n">num</span><span class="p">,</span> <span class="n">den</span> <span class="o">=</span> <span class="n">den</span><span class="p">,</span> <span class="n">r</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>        <span class="k">return</span> <span class="n">cf</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">convergents</span><span class="p">(</span><span class="n">cf</span><span class="p">):</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>        <span class="n">convs</span> <span class="o">=</span> <span class="p">[];</span> <span class="n">h0</span><span class="p">,</span> <span class="n">h1</span><span class="p">,</span> <span class="n">k0</span><span class="p">,</span> <span class="n">k1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>        <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">cf</span><span class="p">:</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>            <span class="n">h0</span><span class="p">,</span> <span class="n">h1</span> <span class="o">=</span> <span class="n">h1</span><span class="p">,</span> <span class="n">a</span><span class="o">*</span><span class="n">h1</span> <span class="o">+</span> <span class="n">h0</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>            <span class="n">k0</span><span class="p">,</span> <span class="n">k1</span> <span class="o">=</span> <span class="n">k1</span><span class="p">,</span> <span class="n">a</span><span class="o">*</span><span class="n">k1</span> <span class="o">+</span> <span class="n">k0</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>            <span class="n">convs</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">h1</span><span class="p">,</span> <span class="n">k1</span><span class="p">))</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>        <span class="k">return</span> <span class="n">convs</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    <span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">isqrt</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">convergents</span><span class="p">(</span><span class="n">continued_fraction</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">n</span><span class="p">)):</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>        <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="p">(</span><span class="n">e</span><span class="o">*</span><span class="n">d</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">k</span><span class="p">:</span> <span class="k">continue</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>        <span class="n">phi</span> <span class="o">=</span> <span class="p">(</span><span class="n">e</span><span class="o">*</span><span class="n">d</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="n">k</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>        <span class="n">s</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="n">phi</span> <span class="o">+</span> <span class="mi">1</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>        <span class="n">disc</span> <span class="o">=</span> <span class="n">s</span><span class="o">*</span><span class="n">s</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">n</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>        <span class="k">if</span> <span class="n">disc</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span> <span class="k">continue</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>        <span class="n">t</span> <span class="o">=</span> <span class="n">isqrt</span><span class="p">(</span><span class="n">disc</span><span class="p">)</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>        <span class="k">if</span> <span class="n">t</span><span class="o">*</span><span class="n">t</span> <span class="o">==</span> <span class="n">disc</span><span class="p">:</span> <span class="k">return</span> <span class="n">d</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>    <span class="k">return</span> <span class="kc">None</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="n">d</span> <span class="o">=</span> <span class="n">wiener_attack</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span> <span class="n">m</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</code></pre></div>
+<p>也可直接 <code>pip install owiener</code>。原理:<code>k/φ ≈ d/n</code> 的连分数收敛分数中必含 <code>k/d</code>。</p>
+<p><strong>Wiener 打不动时(d ∈ [N^0.25, N^0.292))</strong>:升级 Boneh-Durfee 格攻击——把 <code>ed ≡ 1 (mod φ)</code> 的关系改写为模 e 多项式小根问题,构造二维格归约求小向量,界从 N^0.25 提升到 N^0.292;<code>github.com/mimoo/RSA-and-LLL</code> 有现成实现(SageMath),参数 <code>m,t</code> 调格维度。判据:Wiener 失败 + e 巨大 + d 明显小于 sqrt(n) 即上 Boneh-Durfee。</p>
+<h3 id="fermat-pq">Fermat 分解(p、q 相邻)<a class="headerlink" href="#fermat-pq" title="Permanent link">¶</a></h3>
+<p><code>q = next_prime(p)</code> 时 <code>|p-q|</code> 小,从 <code>sqrt(n)</code> 向下找第一个整除的素数:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">prevprime</span><span class="p">,</span> <span class="n">isqrt</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">root</span> <span class="o">=</span> <span class="n">isqrt</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">p</span> <span class="o">=</span> <span class="n">prevprime</span><span class="p">(</span><span class="n">root</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">while</span> <span class="n">n</span> <span class="o">%</span> <span class="n">p</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="n">p</span> <span class="o">=</span> <span class="n">prevprime</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">q</span> <span class="o">=</span> <span class="n">n</span> <span class="o">//</span> <span class="n">p</span>
+</code></pre></div>
+<p>多层变体:1024 层嵌套加密、每层素数位长递增——逐层倒序解密即可。</p>
+<h3 id="coppersmith-q-kpasis-ctf-2018">Coppersmith:线性相关素数 q ≈ k·p(ASIS CTF 2018)<a class="headerlink" href="#coppersmith-q-kpasis-ctf-2018" title="Permanent link">¶</a></h3>
+<p>已知 <code>q ~ k·p</code>(k 公开)时 <code>q ~ sqrt(k·n)</code>,对误差项跑 small_roots——Fermat 的推广:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># SageMath</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">qbar</span> <span class="o">=</span> <span class="n">isqrt</span><span class="p">(</span><span class="mi">4</span> <span class="o">*</span> <span class="n">n</span><span class="p">)</span>                 <span class="c1"># k=4 时</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">R</span><span class="o">.&lt;</span><span class="n">x</span><span class="o">&gt;</span> <span class="o">=</span> <span class="n">PolynomialRing</span><span class="p">(</span><span class="n">Zmod</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">f</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">qbar</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">roots</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">small_roots</span><span class="p">(</span><span class="n">X</span><span class="o">=</span><span class="mi">2</span><span class="o">^</span><span class="mi">200</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">q</span> <span class="o">=</span> <span class="n">qbar</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">roots</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span> <span class="n">p</span> <span class="o">=</span> <span class="n">n</span> <span class="o">//</span> <span class="n">q</span>
+</code></pre></div>
+<h3 id="franklin-reiter-e3n1ctf-2018">Franklin-Reiter 相关消息攻击 e=3(N1CTF 2018)<a class="headerlink" href="#franklin-reiter-e3n1ctf-2018" title="Permanent link">¶</a></h3>
+<p>同一明文 m 加已知线性 padding 加密两次(padding 差已知),多项式 GCD 直接出 m:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># SageMath</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">franklin_reiter</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">pad1</span><span class="p">,</span> <span class="n">pad2</span><span class="p">,</span> <span class="n">c1</span><span class="p">,</span> <span class="n">c2</span><span class="p">):</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="n">R</span><span class="o">.&lt;</span><span class="n">X</span><span class="o">&gt;</span> <span class="o">=</span> <span class="n">PolynomialRing</span><span class="p">(</span><span class="n">Zmod</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="n">f1</span> <span class="o">=</span> <span class="p">(</span><span class="n">X</span> <span class="o">+</span> <span class="n">pad1</span><span class="p">)</span><span class="o">^</span><span class="mi">3</span> <span class="o">-</span> <span class="n">c1</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="n">f2</span> <span class="o">=</span> <span class="p">(</span><span class="n">X</span> <span class="o">+</span> <span class="n">pad2</span><span class="p">)</span><span class="o">^</span><span class="mi">3</span> <span class="o">-</span> <span class="n">c2</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="k">return</span> <span class="o">-</span><span class="n">gcd</span><span class="p">(</span><span class="n">f1</span><span class="p">,</span> <span class="n">f2</span><span class="p">)</span><span class="o">.</span><span class="n">coefficients</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div>
+<h3 id="crt-dpdqqinv0ctf-2016">CRT 部分私钥泄露恢复 dp/dq/qinv(0CTF 2016)<a class="headerlink" href="#crt-dpdqqinv0ctf-2016" title="Permanent link">¶</a></h3>
+<p>PEM 文件尾部泄露出 dp 即够:<code>dp = d mod (p-1)</code>,枚举 k 检验 <code>(dp·e-1)/k + 1</code> 是否为素数,O(e) 秒出:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">gmpy2</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">e</span><span class="p">):</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="n">p_candidate</span> <span class="o">=</span> <span class="p">(</span><span class="n">dp</span> <span class="o">*</span> <span class="n">e</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="n">k</span> <span class="o">+</span> <span class="mi">1</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="k">if</span> <span class="n">gmpy2</span><span class="o">.</span><span class="n">is_prime</span><span class="p">(</span><span class="n">p_candidate</span><span class="p">):</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="n">p</span> <span class="o">=</span> <span class="n">p_candidate</span><span class="p">;</span> <span class="k">break</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="c1"># 同法从 dq 恢复 q;用 qinv·q % p == 1 校验</span>
+</code></pre></div>
+<p>关键认知:<strong>CRT 指数泄露即等于整把私钥泄露</strong>。</p>
+<h3 id="rsa_1">多素数 RSA<a class="headerlink" href="#rsa_1" title="Permanent link">¶</a></h3>
+<p>N 为多个小素数之积时先分解再合成 phi:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">factorint</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">factors</span> <span class="o">=</span> <span class="n">factorint</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>              <span class="c1"># {p1: e1, p2: e2, ...}</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">phi</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="k">for</span> <span class="n">p</span><span class="p">,</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">factors</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="n">phi</span> <span class="o">*=</span> <span class="p">(</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">p</span><span class="o">**</span><span class="p">(</span><span class="n">e</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">d</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">phi</span><span class="p">);</span> <span class="n">m</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</code></pre></div></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+
+<!-- Link to next page -->
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#rsa">RSA</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_1">触发特征</a>
+        
+      </li>
+    
+      <li>
+        <a href="#n">暴力分解N</a>
+        
+      </li>
+    
+      <li>
+        <a href="#pqn">p&amp;q不当分解N</a>
+        
+      </li>
+    
+      <li>
+        <a href="#ephi">e和phi不互素</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_2">经典攻击速查</a>
+        
+      </li>
+    
+      <li>
+        <a href="#rabin">Rabin算法</a>
+        
+      </li>
+    
+      <li>
+        <a href="#rsarsa">RSA签名伪造(RSA 数字签名族)</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">中国剩余定理</a>
+        
+      </li>
+    
+      <li>
+        <a href="#pem">提取PEM文件信息</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_4">私钥文件修复</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">工具速查</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_6">转向</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_7">例题</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#wiener-d-n025">Wiener 小私钥攻击(d &lt; N^0.25,低解密指数攻击)</a>
+        
+      </li>
+    
+      <li>
+        <a href="#fermat-pq">Fermat 分解(p、q 相邻)</a>
+        
+      </li>
+    
+      <li>
+        <a href="#coppersmith-q-kpasis-ctf-2018">Coppersmith:线性相关素数 q ≈ k·p(ASIS CTF 2018)</a>
+        
+      </li>
+    
+      <li>
+        <a href="#franklin-reiter-e3n1ctf-2018">Franklin-Reiter 相关消息攻击 e=3(N1CTF 2018)</a>
+        
+      </li>
+    
+      <li>
+        <a href="#crt-dpdqqinv0ctf-2016">CRT 部分私钥泄露恢复 dp/dq/qinv(0CTF 2016)</a>
+        
+      </li>
+    
+      <li>
+        <a href="#rsa_1">多素数 RSA</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../../javascripts/statis.js"></script>
+  
+    <script src="../../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

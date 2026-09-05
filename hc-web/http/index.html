@@ -1,0 +1,1606 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>HTTP协议 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <div class="tn-group">文件与编码基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">隐写分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">取证分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Web | 网络攻防</a>
+    
+  
+    
+      <div class="tn-group">环境与工具</div>
+      
+  
+    
+      <a class="tn-link" href="../web_env/">Web环境设置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_install/">Docker安装配置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_env/">Docker与漏洞环境</a>
+    
+  
+    
+      <a class="tn-link" href="../vm_lab/">虚拟机与网络模拟</a>
+    
+  
+    
+      <a class="tn-link" href="../burp/">Burp Suite</a>
+    
+  
+    
+      <a class="tn-link" href="../py_script/">Python脚本</a>
+    
+  
+    
+      <a class="tn-link on" href="./">HTTP协议</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../web_start/">Web入门题单</a>
+    
+  
+    
+      <div class="tn-group">信息收集</div>
+      
+  
+    
+      <a class="tn-link" href="../sensitive_info/">敏感信息泄露</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">PHP专题</div>
+      
+  
+    
+      <a class="tn-link" href="../php_features/">PHP特性与常见绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../php_unser/">PHP反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../php_code_audit/">PHP代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">注入类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../nosql/">NoSQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../csrf/">CSRF攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../ssrf/">SSRF注入</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">文件类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../any_file_read/">任意文件读取</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">命令与代码执行</div>
+      
+  
+    
+      <a class="tn-link" href="../rce/">RCE</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../session_jwt/">会话与认证安全</a>
+    
+  
+    
+      <a class="tn-link" href="../logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <div class="tn-group">语言扩展 | 世界不止有PHP</div>
+      
+  
+    
+      <a class="tn-link" href="../py_unser/">Python反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../py_sandbox/">Python沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../flask_sec/">Flask安全</a>
+    
+  
+    
+      <a class="tn-link" href="../prototype_pollution/">原型链污染</a>
+    
+  
+    
+      <a class="tn-link" href="../js_sandbox/">JS沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../js_reverse/">JS逆向</a>
+    
+  
+    
+      <a class="tn-link" href="../java_basic/">Java安全基础</a>
+    
+  
+    
+      <a class="tn-link" href="../java_unser/">Java反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../spring/">Spring漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../java_audit/">Java代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">进阶专题</div>
+      
+  
+    
+      <a class="tn-link" href="../waf_bypass/">WAF绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../http_smuggling/">请求走私</a>
+    
+  
+    
+      <a class="tn-link" href="../cache_poisoning/">缓存投毒</a>
+    
+  
+    
+      <a class="tn-link" href="../xs_leaks/">XS-Leaks</a>
+    
+  
+    
+      <a class="tn-link" href="../web_crypto/">密码学应用题</a>
+    
+  
+    
+      <a class="tn-link" href="../cloud_container/">云与容器安全</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">实战能力</div>
+      
+  
+    
+      <div class="tn-group">渗透链路基础</div>
+      
+  
+    
+      <a class="tn-link" href="../pentest_flow/">渗透流程总览</a>
+    
+  
+    
+      <a class="tn-link" href="../two_layer/">两层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../foothold/">立足点建立</a>
+    
+  
+    
+      <a class="tn-link" href="../internal_recon/">内网信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../proxy_tunnel/">代理与隧道</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">多层网络渗透</div>
+      
+  
+    
+      <a class="tn-link" href="../three_layer/">三层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../multi_layer/">多层网络综合</a>
+    
+  
+    
+      <a class="tn-link" href="../ad_basic/">域渗透入门</a>
+    
+  
+    
+      <a class="tn-link" href="../lateral/">横向移动</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">对抗与综合</div>
+      
+  
+    
+      <a class="tn-link" href="../awd/">AWD模式</a>
+    
+  
+    
+      <a class="tn-link" href="../web_pwn/">Web与二进制结合</a>
+    
+  
+    
+      <a class="tn-link" href="../nday/">Nday利用</a>
+    
+  
+    
+      <a class="tn-link" href="../review/">Writeup复盘方法</a>
+    
+  
+
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/env/">环境配置</a>
+    
+  
+    
+      <div class="tn-group">基础知识</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">密码体系</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <div class="tn-group">环境与基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">栈溢出</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">ROP利用</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="http">HTTP协议<a class="headerlink" href="#http" title="Permanent link">¶</a></h1>
+<p>HTTP 是 Web 题的"通用语言"：无论是 SQL注入、XSS攻击 还是 文件上传，最终都要落到一个 HTTP 请求上。很多入门题（改 UA、改 Referer、伪造 XFF、弱 Cookie）本质上就是在考你是否看得懂、改得动一个 HTTP 报文。本章不展开 RFC，只讲做题够用的部分：先抓一个真实的包逐行读，再讲方法与 Header 的常见考点，最后简单说清 Cookie/Session 的传输方式和 HTTPS 抓包。</p>
+<h2 id="_1">从一次抓包读起<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<h3 id="_2">抓一个完整的请求<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p>打开 Burp Suite，浏览器代理指向 <code>127.0.0.1:8080</code>，随便访问一个登录页并提交表单，在 Burp 的 HTTP history 里能看到类似这样的原始请求：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">POST</span> <span class="nn">/login.php</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">challenge.example.com</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="na">User-Agent</span><span class="o">:</span> <span class="l">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="na">Accept</span><span class="o">:</span> <span class="l">text/html,application/xhtml+xml</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="na">Accept-Language</span><span class="o">:</span> <span class="l">zh-CN,zh;q=0.9</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="na">Referer</span><span class="o">:</span> <span class="l">http://challenge.example.com/login.php</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/x-www-form-urlencoded</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="na">Content-Length</span><span class="o">:</span> <span class="l">29</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="na">Cookie</span><span class="o">:</span> <span class="l">PHPSESSID=a1b2c3d4e5f6; role=guest</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="na">Connection</span><span class="o">:</span> <span class="l">close</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="nt">username</span><span class="o">=</span><span class="s">admin</span><span class="p">&amp;</span><span class="nt">password</span><span class="o">=</span><span class="s">123456</span>
+</code></pre></div>
+<p>以及服务器返回的响应：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="na">Date</span><span class="o">:</span> <span class="l">Wed, 12 Jun 2024 08:00:00 GMT</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="na">Server</span><span class="o">:</span> <span class="l">Apache/2.4.41 (Ubuntu)</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="na">Set-Cookie</span><span class="o">:</span> <span class="l">role=user; Path=/; HttpOnly</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="na">Content-Type</span><span class="o">:</span> <span class="l">text/html; charset=utf-8</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="na">Content-Length</span><span class="o">:</span> <span class="l">512</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;&lt;</span><span class="nt">body</span><span class="p">&gt;&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Login Failed<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>下面把这两段报文拆开，逐块讲清楚。</p>
+<h3 id="_3">请求行<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<p>请求的第一行叫 <strong>请求行（Request Line）</strong>，由三部分组成，空格分隔：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nf">POST</span> <span class="nn">/login.php</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+</code></pre></div>
+<ul>
+<li><code>POST</code>：请求方法（Method），告诉服务器"我要提交数据"，详见下文的方法小节。</li>
+<li><code>/login.php</code>：请求路径（Request-URI），即 URL 去掉协议和域名后的部分。CTF 中改路径是基本功——目录穿越、任意文件读取 等章节里的 payload 都是在这里做文章。</li>
+<li><code>HTTP/1.1</code>：协议版本。做题时几乎不需要关心，知道有 1.1 和 2 即可；Burp Repeater 里改包一般用 1.1。</li>
+</ul>
+<h3 id="header">请求头（Header）<a class="headerlink" href="#header" title="Permanent link">¶</a></h3>
+<p>从第二行开始，到第一个空行为止，是 <strong>请求头</strong>。每行一个 <code>字段名: 值</code>，顺序无关。Header 是 CTF 出题的重灾区，上面抓包里加粗关注的几个：</p>
+<ul>
+<li><code>Host</code>：目标域名。虚拟主机靠它区分站点，SSRF 和一些越权题会考 Host 头伪造。</li>
+<li><code>User-Agent</code>：客户端身份。经典考点：题目要求"请使用 xxx 浏览器访问"，改它就行。</li>
+<li><code>Referer</code>：从哪个页面跳转过来的。经典考点："只能从某页面访问"，直接改 Referer 绕过。</li>
+<li><code>Cookie</code>：携带会话凭证，单独在后面的 Cookie 小节讲。</li>
+<li><code>Content-Type</code>：告诉服务器 Body 的格式。改它可以绕过部分校验（如文件上传时改成 <code>image/png</code>），也能触发 XXE（改成 <code>application/xml</code>）等漏洞。</li>
+</ul>
+<p><strong>空行</strong> 是请求头与请求体的分界，千万不能丢——Burp Repeater 里如果删了空行，服务器会把 Body 当成畸形的 Header 处理。</p>
+<h3 id="body">请求体（Body）<a class="headerlink" href="#body" title="Permanent link">¶</a></h3>
+<p>空行之后的部分是 <strong>请求体</strong>，只有 POST/PUT 等方法才有。最常见的是表单格式：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="err">username=admin&amp;password=123456</span>
+</code></pre></div>
+<p>即 <code>键=值&amp;键=值</code>，与 <code>Content-Type: application/x-www-form-urlencoded</code> 对应。其他常见格式：</p>
+<ul>
+<li><code>application/json</code>：<code>{"username":"admin"}</code>，注意 PHP 里 json 格式不走 <code>$_POST</code>，要读 <code>php://input</code>。</li>
+<li><code>multipart/form-data</code>：文件上传用的格式，Body 被 boundary 分成多段，细节见 文件上传 章节。</li>
+</ul>
+<h3 id="_4">响应行与状态码<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<p>响应的第一行是 <strong>状态行</strong>：<code>协议版本 状态码 状态短语</code>。状态码三位数字，第一位是类别，CTF 里常见的就这几个：</p>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>含义</th>
+<th>CTF 中的意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>200</code></td>
+<td>成功</td>
+<td>正常返回，flag 常常就藏在页面里</td>
+</tr>
+<tr>
+<td><code>301/302</code></td>
+<td>重定向</td>
+<td>跳转到新地址，<strong>Location 头指向的页面可能没做权限校验</strong>，在 Burp 里别跟着跳转，直接看本次响应体</td>
+</tr>
+<tr>
+<td><code>401</code></td>
+<td>未认证</td>
+<td>需要登录，常见于 HTTP Basic Auth</td>
+</tr>
+<tr>
+<td><code>403</code></td>
+<td>禁止访问</td>
+<td>有东西但不让看，试试目录穿越、改 UA/IP 头等绕过</td>
+</tr>
+<tr>
+<td><code>404</code></td>
+<td>不存在</td>
+<td>扫目录时的"基准值"，区别 403 和 404 很重要</td>
+</tr>
+<tr>
+<td><code>500</code></td>
+<td>服务器错误</td>
+<td>参数可能打进了危险函数，配合报错信息往往有戏（如 SQL注入 的报错注入）</td>
+</tr>
+</tbody>
+</table>
+<p>响应头里值得关注的有 <code>Set-Cookie</code>（服务器下发 Cookie）、<code>Location</code>（302 跳转目标）、<code>Server</code>（泄露中间件版本，属于 敏感信息泄露 的范畴）。</p>
+<h3 id="curl">自己动手：用 curl 复现这个包<a class="headerlink" href="#curl" title="Permanent link">¶</a></h3>
+<p>不依赖 Burp，命令行也能构造同样的请求：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>curl<span class="w"> </span>-v<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s1">'http://challenge.example.com/login.php'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span>-H<span class="w"> </span><span class="s1">'Referer: http://challenge.example.com/admin'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span>-H<span class="w"> </span><span class="s1">'Cookie: PHPSESSID=a1b2c3d4e5f6; role=admin'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">'username=admin&amp;password=123456'</span>
+</code></pre></div>
+<ul>
+<li><code>-v</code>：打印完整的请求和响应头，相当于"抓包"。</li>
+<li><code>-X POST</code>：指定方法；<code>-d</code> 携带 Body 时默认就是 POST。</li>
+<li><code>-H</code>：自定义任意 Header，做题时 90% 的操作就是用它改头。</li>
+</ul>
+<p>建议读者现在就用 <code>-v</code> 抓一个自己访问任意网站的包，对照上面的结构读一遍。</p>
+<h2 id="_5">常见请求方法<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>语义</th>
+<th>CTF 考点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET</code></td>
+<td>获取资源，参数放在 URL query 里</td>
+<td>参数直接可见可改，是注入题的主战场</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td>提交数据，参数放在 Body</td>
+<td>表单登录、文件上传；注意 Body 格式由 Content-Type 决定</td>
+</tr>
+<tr>
+<td><code>PUT</code></td>
+<td>上传/替换资源</td>
+<td>若服务器开启 WebDAV 且配置不当，<code>PUT /shell.php</code> 直接 getshell</td>
+</tr>
+<tr>
+<td><code>DELETE</code></td>
+<td>删除资源</td>
+<td>同上，危险的 HTTP 方法应当被禁用</td>
+</tr>
+<tr>
+<td><code>HEAD</code></td>
+<td>只要响应头，不要 Body</td>
+<td>探测文件是否存在，比 GET 快</td>
+</tr>
+<tr>
+<td><code>OPTIONS</code></td>
+<td>询问服务器支持哪些方法</td>
+<td>响应的 <code>Allow</code> 头会暴露可用的方法，信息收集时常用</td>
+</tr>
+</tbody>
+</table>
+<p>一个典型考法：题目对 GET/POST 做了过滤，但代码里用了 <code>$_REQUEST</code> 或允许其他方法，换成 <code>PUT</code> 或 <code>X-HTTP-Method-Override</code> 头就能绕过。遇到"方法被拦"的 405 响应，先 <code>OPTIONS</code> 一下看看还支持什么。</p>
+<h2 id="header-ctf">常见 Header 的 CTF 考点<a class="headerlink" href="#header-ctf" title="Permanent link">¶</a></h2>
+<p>这一节是全章最"应试"的部分，每个 Header 配一个最小示例。</p>
+<h3 id="host">Host<a class="headerlink" href="#host" title="Permanent link">¶</a></h3>
+<p>同一台服务器托管多个站点时，靠 Host 头区分。考点：</p>
+<ul>
+<li>越权访问内部 vhost：<code>Host: admin.internal</code>，配合 SSRF 章节食用。</li>
+<li>密码重置投毒：重置链接的域名取自 Host 头，改成攻击者域名可劫持 token。</li>
+</ul>
+<h3 id="user-agent">User-Agent<a class="headerlink" href="#user-agent" title="Permanent link">¶</a></h3>
+<p>服务器靠 UA 判断客户端类型。最经典的入门题：</p>
+<blockquote>
+<p>"请使用 HAHA 浏览器访问本站"</p>
+</blockquote>
+<p>在 Burp Repeater 或 curl 里改一行即可：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>curl<span class="w"> </span>-v<span class="w"> </span><span class="s1">'http://challenge.example.com/'</span><span class="w"> </span>-A<span class="w"> </span><span class="s1">'HAHA Browser 1.0'</span>
+</code></pre></div>
+<p>另一种考法：页面只把 flag 回显给搜索引擎爬虫，UA 改成 <code>Baiduspider</code> 或 <code>Googlebot</code> 即可。还有一种进阶考法是把 UA 原样写进日志或页面，造成 UA 头注入（XSS 或 SQL注入），思路见对应章节。</p>
+<h3 id="referer">Referer<a class="headerlink" href="#referer" title="Permanent link">¶</a></h3>
+<p>表示请求来源页面。经典考点：</p>
+<blockquote>
+<p>"本页面只允许从 index.php 跳转访问"</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>curl<span class="w"> </span>-v<span class="w"> </span><span class="s1">'http://challenge.example.com/secret.php'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span>-H<span class="w"> </span><span class="s1">'Referer: http://challenge.example.com/index.php'</span>
+</code></pre></div>
+<p>Referer 是客户端发的，<strong>任何"基于 Referer 的访问控制"都等于没有控制</strong>——这也是 逻辑漏洞 章节反复强调的一点。</p>
+<h3 id="x-forwarded-forxff">X-Forwarded-For（XFF）<a class="headerlink" href="#x-forwarded-forxff" title="Permanent link">¶</a></h3>
+<p>反向代理会把真实客户端 IP 写进 <code>X-Forwarded-For</code> 头。如果后端用 <code>$_SERVER['HTTP_X_FORWARDED_FOR']</code> 取 IP 来做限制（比如"仅允许本地访问"），直接伪造：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>curl<span class="w"> </span>-v<span class="w"> </span><span class="s1">'http://challenge.example.com/admin.php'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span>-H<span class="w"> </span><span class="s1">'X-Forwarded-For: 127.0.0.1'</span>
+</code></pre></div>
+<p>同类头还有 <code>X-Real-IP</code>、<code>X-Client-IP</code>、<code>Client-IP</code>，一个不行就换着试。更隐蔽的写法是 <code>127.0.0.1</code> 的变形（如 <code>127.1</code>），取决于后端解析方式。</p>
+<h3 id="content-type">Content-Type<a class="headerlink" href="#content-type" title="Permanent link">¶</a></h3>
+<p>决定服务器如何解析 Body，考点集中在三处：</p>
+<ol>
+<li><strong>文件上传绕过</strong>：上传 PHP 时把 <code>Content-Type</code> 从 <code>application/octet-stream</code> 改成 <code>image/png</code>，骗过只校验头的代码，详见 文件上传 章节。</li>
+<li><strong>XXE 触发</strong>：把 <code>Content-Type</code> 改成 <code>application/xml</code> 并提交 XML Body，见 XXE注入 章节。</li>
+<li><strong>PHP 解析差异</strong>：<code>application/json</code> 的 Body 要用 <code>file_get_contents('php://input')</code> 读取，不少"提交了参数却没效果"的疑惑都源于此。</li>
+</ol>
+<h3 id="_6">其他值得记住的<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<ul>
+<li><code>Accept</code> / <code>Accept-Language</code>：偶尔有题要求"请使用某国语言"，改 <code>Accept-Language: en-US</code>。</li>
+<li><code>Authorization</code>：HTTP Basic Auth 用，格式是 <code>Basic base64(user:pass)</code>，弱口令爆破的对象。</li>
+<li><code>Origin</code>：CORS 相关，部分逻辑漏洞题会考 Origin 校验缺失。</li>
+</ul>
+<h2 id="cookie-session">Cookie 与 Session（传输层面）<a class="headerlink" href="#cookie-session" title="Permanent link">¶</a></h2>
+<p>这一节只讲"Cookie 是怎么在网线上跑的"，认证逻辑的安全问题（伪造、篡改、会话固定等）留给「会话与认证安全」章节。</p>
+<h3 id="cookie">Cookie 的一生<a class="headerlink" href="#cookie" title="Permanent link">¶</a></h3>
+<p>Cookie 是服务器通过响应头 <strong>下发</strong>、浏览器在后续请求中 <strong>自动带回</strong> 的一小段键值对：</p>
+<p>服务器下发：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="na">Set-Cookie</span><span class="o">:</span> <span class="l">PHPSESSID=a1b2c3d4e5f6; Path=/; HttpOnly</span>
+</code></pre></div>
+<p>浏览器之后每个请求都会带上：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nf">GET</span> <span class="nn">/profile.php</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">challenge.example.com</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="na">Cookie</span><span class="o">:</span> <span class="l">PHPSESSID=a1b2c3d4e5f6</span>
+</code></pre></div>
+<p>要点就三个：</p>
+<ul>
+<li>Cookie 存在 <strong>客户端</strong>，所以客户端可以任意查看和修改——<code>role=guest</code> 改成 <code>role=admin</code> 就是这么来的。</li>
+<li><code>Set-Cookie</code> 的常用属性：<code>Path</code>（生效路径）、<code>HttpOnly</code>（禁止 JS 读取，防 XSS 偷 Cookie）、<code>Secure</code>（仅 HTTPS 传输）。</li>
+<li>在 Burp 里直接改请求头的 <code>Cookie</code> 值，是 Web 题最高频的操作之一。</li>
+</ul>
+<h3 id="session">Session 是什么<a class="headerlink" href="#session" title="Permanent link">¶</a></h3>
+<p>Session 数据存在 <strong>服务器端</strong>，客户端只拿一个编号（Session ID，通常通过 <code>PHPSESSID</code> 之类的 Cookie 携带）。服务器收到请求后，拿 ID 去查对应的会话数据，从而知道"你是谁"。</p>
+<p>用一句话区分：<strong>Cookie 是"数据放在你手里"，Session 是"数据放在服务器、你只拿钥匙"</strong>。所以 <code>role=admin</code> 这种明文 Cookie 可以直接改，而 Session 只能寄希望于预测 Session ID 或服务端逻辑缺陷。</p>
+<h3 id="_7">最小实验<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p>用 curl 观察一次完整的会话建立过程：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># 第一次请求：-c 保存服务器下发的 Cookie 到文件</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>curl<span class="w"> </span>-v<span class="w"> </span>-c<span class="w"> </span>cookies.txt<span class="w"> </span><span class="s1">'http://challenge.example.com/login.php'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">'username=admin&amp;password=123456'</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="c1"># 后续请求：-b 带上保存的 Cookie</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>curl<span class="w"> </span>-v<span class="w"> </span>-b<span class="w"> </span>cookies.txt<span class="w"> </span><span class="s1">'http://challenge.example.com/profile.php'</span>
+</code></pre></div>
+<p>注意第一次请求响应里的 <code>Set-Cookie</code>，和第二次请求里的 <code>Cookie</code>——这就是会话在传输层面的全部真相。</p>
+<h2 id="https">HTTPS 与证书抓包<a class="headerlink" href="#https" title="Permanent link">¶</a></h2>
+<p>HTTPS = HTTP + TLS，报文内容与明文 HTTP <strong>完全一样</strong>，只是套了一层加密。所以本章讲的所有内容对 HTTPS 同样适用，区别只在于抓包环节。</p>
+<h3 id="https_1">为什么 HTTPS 抓不到明文<a class="headerlink" href="#https_1" title="Permanent link">¶</a></h3>
+<p>Burp 是中间人代理：浏览器把加密流量发给 Burp，Burp 解密后再用自己的证书加密发给服务器（反之亦然）。浏览器默认不信任 Burp 自签的 CA 证书，会报"证书不受信任"，这就是 HTTPS 站点在 Burp 下抓不到/报错的原因。</p>
+<h3 id="burp-https">让 Burp 能抓 HTTPS<a class="headerlink" href="#burp-https" title="Permanent link">¶</a></h3>
+<p>三步即可：</p>
+<ol>
+<li>浏览器代理指向 Burp（<code>127.0.0.1:8080</code>）后，访问 <code>http://burp</code> 或 <code>http://127.0.0.1:8080/cert</code>，下载 CA 证书 <code>cacert.der</code>。</li>
+<li>把证书导入浏览器（Firefox：设置 → 隐私与安全 → 查看证书 → 导入，并勾选"信任由此证书颁发机构标识的网站"）。</li>
+<li>重新访问 HTTPS 站点，Burp 里即可看到明文。</li>
+</ol>
+<p>命令行场景更简单，<code>curl -k</code> 直接跳过证书校验：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>curl<span class="w"> </span>-kv<span class="w"> </span><span class="s1">'https://challenge.example.com/'</span><span class="w"> </span>-x<span class="w"> </span>http://127.0.0.1:8080
+</code></pre></div>
+<p>其中 <code>-x</code> 指定走 Burp 代理。做题时 <code>-k</code> 几乎是必加参数，因为很多靶机用的是自签证书。</p>
+<h2 id="header_1">例题：一道经典的 Header 综合题<a class="headerlink" href="#header_1" title="Permanent link">¶</a></h2>
+<p>用一个虚构但极具代表性的入门题，把本章内容串起来走完一遍完整流程。</p>
+<blockquote>
+<p>题目：访问 <code>http://challenge.example.com:8080/</code>，页面显示：
+"只有使用 HAHA 浏览器，并且从 index.html 跳转过来说"我是内网用户"的人，才能获得 flag。"</p>
+</blockquote>
+<h3 id="_8">第一步：抓包看原始请求<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
+<p>正常访问，Burp 里抓到：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nf">GET</span> <span class="nn">/</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">challenge.example.com:8080</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="na">User-Agent</span><span class="o">:</span> <span class="l">Mozilla/5.0 (Windows NT 10.0; Win64; x64)</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="na">Accept</span><span class="o">:</span> <span class="l">text/html</span>
+</code></pre></div>
+<p>响应 <code>200 OK</code>，页面提示条件不满足。三个线索逐一拆解：</p>
+<ul>
+<li>"HAHA 浏览器" → 改 <code>User-Agent</code></li>
+<li>"从 index.html 跳转过来" → 改 <code>Referer</code></li>
+<li>"我是内网用户" → 伪造来源 IP，改 <code>X-Forwarded-For</code></li>
+</ul>
+<h3 id="_9">第二步：逐个条件尝试<a class="headerlink" href="#_9" title="Permanent link">¶</a></h3>
+<p>先在 Burp Repeater 里只改 UA：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nf">GET</span> <span class="nn">/</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">challenge.example.com:8080</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="na">User-Agent</span><span class="o">:</span> <span class="l">HAHA Browser</span>
+</code></pre></div>
+<p>页面提示变成"浏览器对了，但你不是从 index.html 来的"——逐条提示是这类题的常见设计，照着提示加 Header 即可。加上 Referer：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="err">Referer: http://challenge.example.com:8080/index.html</span>
+</code></pre></div>
+<p>提示再变成"你不是内网用户"。加上 XFF：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="err">X-Forwarded-For: 127.0.0.1</span>
+</code></pre></div>
+<p>页面回显 <code>flag{http_header_m4ster}</code>，解题完成。</p>
+<h3 id="curl_1">第三步：用 curl 一把梭<a class="headerlink" href="#curl_1" title="Permanent link">¶</a></h3>
+<p>脱离 Burp，一条命令也能做完：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>curl<span class="w"> </span>-v<span class="w"> </span><span class="s1">'http://challenge.example.com:8080/'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span>-A<span class="w"> </span><span class="s1">'HAHA Browser'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">  </span>-H<span class="w"> </span><span class="s1">'Referer: http://challenge.example.com:8080/index.html'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">  </span>-H<span class="w"> </span><span class="s1">'X-Forwarded-For: 127.0.0.1'</span>
+</code></pre></div>
+<h3 id="_10">小结<a class="headerlink" href="#_10" title="Permanent link">¶</a></h3>
+<p>这类题的全部套路就是：<strong>读提示 → 定位对应的 Header → 改包重发</strong>。真正的难点从来不在改包本身，而在于你能认出每个提示对应 HTTP 协议里的哪个字段——这正是本章存在的意义。同类型的题目可以在 Web入门题单 里找到大量练习。</p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../py_script/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: Python脚本"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        Python脚本
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../web_start/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: Web入门题单"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        Web入门题单
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#http">HTTP协议</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_1">从一次抓包读起</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_2">抓一个完整的请求</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">请求行</a>
+        
+      </li>
+    
+      <li>
+        <a href="#header">请求头（Header）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#body">请求体（Body）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_4">响应行与状态码</a>
+        
+      </li>
+    
+      <li>
+        <a href="#curl">自己动手：用 curl 复现这个包</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_5">常见请求方法</a>
+        
+      </li>
+    
+      <li>
+        <a href="#header-ctf">常见 Header 的 CTF 考点</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#host">Host</a>
+        
+      </li>
+    
+      <li>
+        <a href="#user-agent">User-Agent</a>
+        
+      </li>
+    
+      <li>
+        <a href="#referer">Referer</a>
+        
+      </li>
+    
+      <li>
+        <a href="#x-forwarded-forxff">X-Forwarded-For（XFF）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#content-type">Content-Type</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_6">其他值得记住的</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#cookie-session">Cookie 与 Session（传输层面）</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#cookie">Cookie 的一生</a>
+        
+      </li>
+    
+      <li>
+        <a href="#session">Session 是什么</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_7">最小实验</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#https">HTTPS 与证书抓包</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#https_1">为什么 HTTPS 抓不到明文</a>
+        
+      </li>
+    
+      <li>
+        <a href="#burp-https">让 Burp 能抓 HTTPS</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#header_1">例题：一道经典的 Header 综合题</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_8">第一步：抓包看原始请求</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_9">第二步：逐个条件尝试</a>
+        
+      </li>
+    
+      <li>
+        <a href="#curl_1">第三步：用 curl 一把梭</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_10">小结</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>
