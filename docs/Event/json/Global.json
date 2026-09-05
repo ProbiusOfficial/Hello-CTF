@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "NNS CTF 2026",
-        "比赛时间": "2026-09-05 00:00:00 - 2026-09-07 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3097.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nnsc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/Logo_D_1.png",
-        "比赛权重": "25.00",
-        "赛事主办": "Norske Nøkkelsnikere (https://ctftime.org/team/222749)",
-        "比赛ID": "1256",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "TFC CTF 2026",
         "比赛时间": "2026-09-05 18:00:00 - 2026-09-06 18:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3344.ics",
@@ -120,6 +108,30 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Cyber League 2026 - Major",
+        "比赛时间": "2026-09-19 10:00:00 - 2026-09-20 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3412.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cyberleague.co/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "DIV0-N0H4TS (https://ctftime.org/team/354275)",
+        "比赛ID": "1183",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Haruulzangi CTF 2026 Semi-Final",
+        "比赛时间": "2026-09-19 10:00:00 - 2026-09-19 16:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3431.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2026.haruulzangi.mn/",
+        "比赛标志": "https://ctftime.org/media/events/haruul_zangi_logo_updated_3.png",
+        "比赛权重": "0.00",
+        "赛事主办": "haruulzangi-organizers (https://ctftime.org/team/266812)",
+        "比赛ID": "985",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "WATCHLIST",
         "比赛时间": "2026-09-19 11:30:00 - 2026-09-20 11:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3326.ics",
@@ -129,6 +141,18 @@
         "比赛权重": "0.00",
         "赛事主办": "WatchList CTF (https://ctftime.org/team/436923)",
         "比赛ID": "1614",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "z0d1ak CTF Finals",
+        "比赛时间": "2026-09-19 11:30:00 - 2026-09-19 20:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3428.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.z0d1ak.org/",
+        "比赛标志": "https://ctftime.org/media/events/Zodiak_CTF_Logo_1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "z0d1ak (https://ctftime.org/team/373452)",
+        "比赛ID": "1648",
         "比赛状态": "oncoming"
     },
     {
@@ -153,6 +177,30 @@
         "比赛权重": "23.71",
         "赛事主办": "0bscuri7y (https://ctftime.org/team/370140)",
         "比赛ID": "1360",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "LUN4R CTF Quals",
+        "比赛时间": "2026-09-20 12:30:00 - 2026-09-21 00:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3435.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://lunar.rootriet.in/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "b33tro0t (https://ctftime.org/team/380826)",
+        "比赛ID": "1685",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "FlightPath2026",
+        "比赛时间": "2026-09-25 21:30:00 - 2026-09-28 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3422.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://setyourvector.org/",
+        "比赛标志": "https://ctftime.org/media/events/logo_136.png",
+        "比赛权重": "0",
+        "赛事主办": "ĀYŌDÈ (https://ctftime.org/team/418961)",
+        "比赛ID": "1632",
         "比赛状态": "oncoming"
     },
     {
@@ -273,6 +321,18 @@
         "比赛权重": "25.00",
         "赛事主办": "Crimson Defense (https://ctftime.org/team/65283)",
         "比赛ID": "1363",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "AltayCTF 2026",
+        "比赛时间": "2026-10-04 11:00:00 - 2026-10-04 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3432.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://university.altayctf.ru/2026",
+        "比赛标志": "https://ctftime.org/media/events/0_2_1.png",
+        "比赛权重": "0",
+        "赛事主办": "SharLike (https://ctftime.org/team/16172)",
+        "比赛ID": "111",
         "比赛状态": "oncoming"
     },
     {
@@ -538,6 +598,18 @@
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "59",
         "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "NNS CTF 2026",
+        "比赛时间": "2026-09-05 00:00:00 - 2026-09-07 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3097.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nnsc.tf/",
+        "比赛标志": "https://ctftime.org/media/events/Logo_D_1.png",
+        "比赛权重": "25.00",
+        "赛事主办": "Norske Nøkkelsnikere (https://ctftime.org/team/222749)",
+        "比赛ID": "1256",
+        "比赛状态": "nowrunning"
     },
     {
         "比赛名称": "DiceCTF 2026 Finals",
