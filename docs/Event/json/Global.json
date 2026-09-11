@@ -312,6 +312,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Narxoz CTF",
+        "比赛时间": "2026-10-10 18:00:00 - 2026-10-11 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3437.ics",
+        "比赛形式": "Hack quest",
+        "比赛链接": "https://narxploit.narxoz.kz/register.html",
+        "比赛标志": "https://ctftime.org/media/events/photo_2026-08-29_21-55-09.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "NarXploit (https://ctftime.org/team/392547)",
+        "比赛ID": "1686",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "GaianSpace CTF 2026",
         "比赛时间": "2026-10-11 05:00:00 - 2026-10-15 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3354.ics",
@@ -537,6 +549,18 @@
         "比赛权重": "37.00",
         "赛事主办": "Crate-CTF (https://ctftime.org/team/352250)",
         "比赛ID": "1172",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "CyberSci Regional Qualifiers 2026-27",
+        "比赛时间": "2026-11-21 23:00:00 - 2026-11-22 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3436.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cybersecuritychallenge.ca/",
+        "比赛标志": "https://ctftime.org/media/events/9f5bd4404f2ff231cca6e261cdcd0419.jpg",
+        "比赛权重": "0",
+        "赛事主办": "CyberSciOrganizers (https://ctftime.org/team/157536)",
+        "比赛ID": "643",
         "比赛状态": "oncoming"
     },
     {
