@@ -1,0 +1,195 @@
+/* ============================================================
+   Hello-CTF 共享外壳 shell.css
+   适用：首页 / mkdocs 文档页（经 overrides 注入）/ sidebar 独立页
+   只包含外壳层样式：设计 token、侧边栏、项目动态面板、移动端。
+   页面级样式（banner、日历、卡片等）不放在这里。
+   ============================================================ */
+
+:root {
+  color-scheme: light; /* 让原生控件（日期/时间选择器等）默认亮色 */
+  --ink: #0f172a;
+  --ink-2: #475569;
+  --ink-3: #94a3b8;
+  --line: #e6eaf1;
+  --paper: #ffffff;
+  --wash: #f8fafc;
+  --accent: #2563eb;
+  --accent-soft: #eff6ff;
+  --hl: #bfdbfe;
+  --cn: #059669;
+  --cn-soft: #ecfdf5;
+  --intl: #7c3aed;
+  --intl-soft: #faf5ff;
+  --mono: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --sans: Inter, -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  --side-w: 248px;
+  --radius: 14px;
+  --shadow-pop: 0 18px 40px -18px rgba(15, 23, 42, .28);
+}
+[data-theme="dark"] {
+  color-scheme: dark; /* 原生控件跟随暗色 */
+  --ink: #e6eaf3;
+  --ink-2: #9aa7bd;
+  --ink-3: #64748b;
+  --line: #232c3f;
+  --paper: #0d1220;
+  --wash: #111830;
+  --accent: #60a5fa;
+  --accent-soft: rgba(96, 165, 250, .12);
+  --hl: rgba(96, 165, 250, .35);
+  --cn-soft: rgba(5, 150, 105, .15);
+  --intl-soft: rgba(124, 58, 237, .15);
+  --shadow-pop: 0 18px 40px -18px rgba(0, 0, 0, .6);
+}
+/* mkdocs 文档页（Material）暗色方案同样让原生控件跟随 */
+[data-md-color-scheme="slate"] { color-scheme: dark; }
+
+.ic {
+  width: 16px; height: 16px; flex-shrink: 0;
+  fill: none; stroke: currentColor; stroke-width: 1.8;
+  stroke-linecap: round; stroke-linejoin: round;
+  vertical-align: -3px;
+}
+
+/* ===================== 侧边栏 ===================== */
+.sidebar {
+  position: fixed; inset: 0 auto 0 0; width: var(--side-w);
+  border-right: 1px solid var(--line);
+  background: var(--paper);
+  display: flex; flex-direction: column;
+  padding: 26px 16px 18px;
+  z-index: 60;
+  transition: transform .28s ease, width .22s ease, background .25s;
+}
+.logo { font-size: 19px; font-weight: 800; letter-spacing: -.02em; padding: 4px 12px 22px; display: flex; align-items: center; gap: 10px; color: var(--ink); }
+.logo .mark {
+  width: 27px; height: 27px; border-radius: 8px; background: var(--ink); color: var(--paper);
+  display: grid; place-items: center; flex-shrink: 0;
+}
+.logo .mark .ic { width: 15px; height: 15px; stroke-width: 2; }
+.logo em { font-style: normal; color: var(--accent); }
+.nav { flex: 1; overflow-y: auto; scrollbar-width: none; }
+.nav::-webkit-scrollbar { display: none; }
+.nav-wrap { position: relative; flex: 1; display: flex; flex-direction: column; min-height: 0; }
+.nav-btn {
+  position: absolute; left: 50%; transform: translateX(-50%); z-index: 5;
+  width: 26px; height: 22px; border: 1px solid var(--line); border-radius: 8px;
+  background: var(--paper); color: var(--ink-3); cursor: pointer;
+  display: grid; place-items: center;
+  box-shadow: 0 4px 10px -4px rgba(15, 23, 42, .25);
+  transition: color .15s, border-color .15s;
+}
+.nav-btn:hover { color: var(--accent); border-color: var(--accent); }
+.nav-btn.up { top: -2px; }
+.nav-btn.down { bottom: -2px; }
+.nav-btn[hidden] { display: none; }
+.nav-btn .ic { width: 14px; height: 14px; }
+.nav-cap {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .14em;
+  color: var(--ink-3); padding: 16px 12px 6px;
+}
+.nav-item {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 13.5px; color: var(--ink-2);
+  padding: 7px 12px; border-radius: 9px; cursor: pointer;
+  transition: background .15s, color .15s;
+  text-decoration: none;
+}
+.nav-item:hover { background: var(--wash); color: var(--ink); }
+.nav-item.on { background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+.nav-item .idx { margin-left: auto; font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); }
+.nav-item.on .idx { color: var(--accent); }
+.side-foot { border-top: 1px solid var(--line); padding-top: 12px; }
+.theme-btn {
+  width: 100%; display: flex; align-items: center; gap: 9px;
+  font-size: 13px; color: var(--ink-2); font-family: var(--sans);
+  background: none; border: 1px solid var(--line); border-radius: 10px;
+  padding: 9px 12px; cursor: pointer; transition: all .15s;
+}
+.theme-btn:hover { border-color: var(--ink); color: var(--ink); }
+
+/* ===================== 侧边栏收起（仅图标，悬停图标浮出文字，展开只靠按钮） ===================== */
+.main { margin-left: var(--side-w); min-height: 100vh; transition: margin-left .22s ease; }
+.collapse-btn { margin-bottom: 8px; }
+#collapseIcon { transform: rotate(180deg); transition: transform .2s; }
+body.rail #collapseIcon { transform: rotate(0); }
+body.rail .sidebar { width: 70px; }
+body.rail .main { margin-left: 70px; }
+body.rail .logo,
+body.rail .nav-item,
+body.rail .theme-btn,
+body.rail .collapse-btn { font-size: 0; gap: 0; justify-content: center; }
+body.rail .nav-cap { display: none; }
+body.rail .nav-item { position: relative; }
+body.rail .feed-badge {
+  position: absolute; top: 3px; right: 7px;
+  min-width: 8px; height: 8px; padding: 0; font-size: 0;
+}
+body.rail .nav-item:hover::after {
+  content: attr(data-label);
+  position: absolute; left: calc(100% + 12px); top: 50%;
+  transform: translateY(-50%);
+  background: var(--ink); color: var(--paper);
+  font-size: 12px; font-weight: 600; font-family: var(--sans);
+  padding: 5px 11px; border-radius: 8px; white-space: nowrap;
+  z-index: 90; pointer-events: none;
+  box-shadow: var(--shadow-pop);
+}
+body.rail .feed-panel { left: 82px; }
+
+/* ===================== 项目动态：logo 下入口 + 小红点 + 弹出面板 ===================== */
+.feed-badge {
+  margin-left: auto; background: #ef4444; color: #fff;
+  font-family: var(--mono); font-size: 10px; font-weight: 700;
+  min-width: 17px; height: 17px; border-radius: 999px;
+  display: inline-grid; place-items: center; padding: 0 5px;
+}
+.feed-badge[hidden] { display: none; }
+.feed-panel {
+  position: fixed; left: calc(var(--side-w) + 12px); top: 118px; z-index: 70;
+  width: 360px; max-height: 72vh; overflow-y: auto; scrollbar-width: thin;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 16px;
+  box-shadow: var(--shadow-pop); padding: 18px 20px;
+  animation: shell-popin .15s ease;
+}
+.feed-panel[hidden] { display: none; }
+@keyframes shell-popin { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.fp-cap { font-family: var(--mono); font-size: 10.5px; letter-spacing: .14em; color: var(--ink-3); padding-bottom: 4px; }
+.fp-item { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; color: var(--ink-2); padding: 7px 0; border-bottom: 1px dashed var(--line); }
+.fp-item .date { font-family: var(--mono); font-size: 11px; color: var(--ink-3); flex-shrink: 0; }
+.fp-note { font-size: 11px; color: var(--ink-3); padding-top: 10px; font-family: var(--mono); }
+
+/* ===================== 通用内容布局 ===================== */
+.container { max-width: 1440px; margin: 0 auto; padding: 0 44px; }
+.sec-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 20px; }
+.sec-title { font-size: 21px; font-weight: 800; letter-spacing: -.02em; display: flex; align-items: center; gap: 11px; }
+.sec-title::before { content: ""; width: 22px; height: 3px; border-radius: 2px; background: var(--accent); }
+.sec-more { font-family: var(--mono); font-size: 12.5px; color: var(--ink-3); transition: color .15s; text-decoration: none; }
+.sec-more:hover { color: var(--accent); }
+
+/* ===================== 移动端 ===================== */
+.menu-btn {
+  display: none; position: fixed; top: 16px; left: 16px; z-index: 70;
+  width: 42px; height: 42px; border-radius: 12px;
+  border: 1px solid var(--line); background: var(--paper); color: var(--ink);
+  font-size: 17px; cursor: pointer; box-shadow: var(--shadow-pop);
+}
+.overlay { display: none; position: fixed; inset: 0; background: rgba(15,23,42,.4); z-index: 55; }
+
+@media (max-width: 860px) {
+  .sidebar { transform: translateX(-100%); box-shadow: var(--shadow-pop); }
+  .sidebar.open { transform: translateX(0); }
+  .overlay.show { display: block; }
+  .menu-btn { display: block; }
+  .main { margin-left: 0; }
+  .container { padding: 0 18px; }
+  body.rail .main { margin-left: 0; }
+  body.rail .sidebar { width: var(--side-w); }
+  body.rail .logo,
+  body.rail .nav-item,
+  body.rail .theme-btn,
+  body.rail .collapse-btn { font-size: 13.5px; gap: 10px; justify-content: flex-start; }
+  body.rail .nav-cap { display: block; }
+  body.rail .nav-item:hover::after { display: none; }
+  .feed-panel { left: 12px; right: 12px; width: auto; }
+}

