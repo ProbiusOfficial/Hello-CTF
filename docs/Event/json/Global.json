@@ -1,29 +1,5 @@
 [
     {
-        "比赛名称": "K17 CTF 2026",
-        "比赛时间": "2026-09-11 18:00:00 - 2026-09-13 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3145.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://k17ctf.secso.cc/",
-        "比赛标志": "https://ctftime.org/media/events/k17_logo_draft_square.png",
-        "比赛权重": "24.83",
-        "赛事主办": "K17 (https://ctftime.org/team/17058)",
-        "比赛ID": "1385",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "CAT CTF 26",
-        "比赛时间": "2026-09-11 20:00:00 - 2026-09-12 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3360.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.catreloaded.org/",
-        "比赛标志": "https://ctftime.org/media/events/0e9402efa19b3a103472f4f94b47f442_1_1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "0xL4ugh (https://ctftime.org/team/132776)",
-        "比赛ID": "1400",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "PwnSec CTF 2026",
         "比赛时间": "2026-09-12 22:00:00 - 2026-09-13 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3159.ics",
@@ -600,6 +576,30 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "K17 CTF 2026",
+        "比赛时间": "2026-09-11 18:00:00 - 2026-09-13 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3145.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://scoreboard.k17ctf.secso.cc/",
+        "比赛标志": "https://ctftime.org/media/events/k17_logo_draft_square.png",
+        "比赛权重": "24.83",
+        "赛事主办": "K17 (https://ctftime.org/team/17058)",
+        "比赛ID": "1385",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CAT CTF 26",
+        "比赛时间": "2026-09-11 20:00:00 - 2026-09-12 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3360.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.catreloaded.org/",
+        "比赛标志": "https://ctftime.org/media/events/0e9402efa19b3a103472f4f94b47f442_1_1.png",
+        "比赛权重": "0",
+        "赛事主办": "0xL4ugh (https://ctftime.org/team/132776)",
+        "比赛ID": "1400",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "SUNCTF 2026",
         "比赛时间": "2026-09-06 08:00:00 - 2026-09-06 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3389.ics",
@@ -858,7 +858,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.thryvectf.org/",
         "比赛标志": "https://ctftime.org/media/events/thryvelogo_4.jpeg",
-        "比赛权重": "24.48",
+        "比赛权重": "24.50",
         "赛事主办": "Thryve (https://ctftime.org/team/419961)",
         "比赛ID": "1610",
         "比赛状态": "past"
