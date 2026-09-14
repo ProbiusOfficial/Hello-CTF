@@ -552,18 +552,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "K17 CTF 2026 [Ended]",
-        "比赛时间": "2026-09-11 18:00:00 - 2026-09-13 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3145.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://scoreboard.k17ctf.secso.cc/",
-        "比赛标志": "https://ctftime.org/media/events/k17_logo_draft_square.png",
-        "比赛权重": "24.83",
-        "赛事主办": "K17 (https://ctftime.org/team/17058)",
-        "比赛ID": "1385",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "PwnSec CTF 2026",
         "比赛时间": "2026-09-12 22:00:00 - 2026-09-13 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3159.ics",
@@ -573,7 +561,7 @@
         "比赛权重": "33.89",
         "赛事主办": "PwnSec (https://ctftime.org/team/28797)",
         "比赛ID": "1150",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "CAT CTF 26",
@@ -585,6 +573,18 @@
         "比赛权重": "0",
         "赛事主办": "0xL4ugh (https://ctftime.org/team/132776)",
         "比赛ID": "1400",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "K17 CTF 2026",
+        "比赛时间": "2026-09-11 18:00:00 - 2026-09-13 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3145.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://scoreboard.k17ctf.secso.cc/",
+        "比赛标志": "https://ctftime.org/media/events/k17_logo_draft_square.png",
+        "比赛权重": "24.83",
+        "赛事主办": "K17 (https://ctftime.org/team/17058)",
+        "比赛ID": "1385",
         "比赛状态": "past"
     },
     {
@@ -1749,30 +1749,6 @@
         "比赛权重": "32.59",
         "赛事主办": "DaVinciCode (https://ctftime.org/team/112645)",
         "比赛ID": "582",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "TJCTF 2026",
-        "比赛时间": "2026-05-16 00:00:00 - 2026-05-18 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3195.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://tjctf.org/",
-        "比赛标志": "https://ctftime.org/media/events/logo_96_1_1.png",
-        "比赛权重": "65.05",
-        "赛事主办": "tjcsc (https://ctftime.org/team/53812)",
-        "比赛ID": "144",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SamaraCTF 2026",
-        "比赛时间": "2026-05-15 23:00:00 - 2026-05-17 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3306.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://samara.volgactf.ru/",
-        "比赛标志": "https://ctftime.org/media/events/SamaraCTF_logo_square.png",
-        "比赛权重": "25.00",
-        "赛事主办": "SamaraCTF.ru (https://ctftime.org/team/436135)",
-        "比赛ID": "1606",
         "比赛状态": "past"
     }
 ]
