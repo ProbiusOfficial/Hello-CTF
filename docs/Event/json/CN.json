@@ -76,14 +76,6 @@
                 "status": "正在进行"
             },
             {
-                "name": "NepCTF 2026",
-                "link": "https://www.nepctf.com/",
-                "comp_time_start": "2026年07月17日 19:00",
-                "comp_time_end": "2026年07月19日 19:00",
-                "detail": "赛制/类型: 线上Jeopardy解题赛",
-                "status": "已经结束"
-            },
-            {
                 "name": "第二届 OpenHarmony CTF 智能漏洞挖掘赛（初赛）",
                 "link": "https://thuctf.tsinghua.edu.cn/harmonyctf/games/2",
                 "comp_time_start": "2026年08月01日 00:00",
@@ -156,7 +148,7 @@
                 "status": "已经结束"
             }
         ],
-        "total": 19,
+        "total": 18,
         "page": 1,
         "size": 20
     },
