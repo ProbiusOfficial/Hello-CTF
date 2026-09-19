@@ -1,65 +1,5 @@
 [
     {
-        "比赛名称": "NullOrigin CTF Qualifiers",
-        "比赛时间": "2026-09-18 12:30:00 - 2026-09-19 00:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3346.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nullorigin.cyberhx.com/",
-        "比赛标志": "https://ctftime.org/media/events/722217335_18086037686297664_317017320748858629_n.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "CyberXoX (https://ctftime.org/team/374041)",
-        "比赛ID": "1633",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "DefCamp Capture the Flag (D-CTF) 2026 Quals",
-        "比赛时间": "2026-09-18 18:00:00 - 2026-09-20 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3392.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dctf26-quals.cyber-edu.co/",
-        "比赛标志": "https://ctftime.org/media/events/2c31f15c30b130055d9133f2390adf6c.jpg",
-        "比赛权重": "69.75",
-        "赛事主办": "CCSIR.org (https://ctftime.org/team/9831)",
-        "比赛ID": "73",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "CSAW CTF Qualification Round 2026",
-        "比赛时间": "2026-09-19 00:00:00 - 2026-09-21 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3355.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.csaw.io/",
-        "比赛标志": "https://ctftime.org/media/events/csawlogo_1.png",
-        "比赛权重": "10.93",
-        "赛事主办": "NYUSEC (https://ctftime.org/team/439)",
-        "比赛ID": "18",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "Cyber League 2026 - Major",
-        "比赛时间": "2026-09-19 10:00:00 - 2026-09-20 10:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3412.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cyberleague.co/",
-        "比赛标志": "",
-        "比赛权重": "0.00",
-        "赛事主办": "DIV0-N0H4TS (https://ctftime.org/team/354275)",
-        "比赛ID": "1183",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "Haruulzangi CTF 2026 Semi-Final",
-        "比赛时间": "2026-09-19 10:00:00 - 2026-09-19 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3431.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2026.haruulzangi.mn/",
-        "比赛标志": "https://ctftime.org/media/events/haruul_zangi_logo_updated_3.png",
-        "比赛权重": "0.00",
-        "赛事主办": "haruulzangi-organizers (https://ctftime.org/team/266812)",
-        "比赛ID": "985",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "WATCHLIST",
         "比赛时间": "2026-09-19 11:30:00 - 2026-09-20 11:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3326.ics",
@@ -646,6 +586,66 @@
         "赛事主办": "ASIS (https://ctftime.org/team/4140)",
         "比赛ID": "59",
         "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "DefCamp Capture the Flag (D-CTF) 2026 Quals",
+        "比赛时间": "2026-09-18 18:00:00 - 2026-09-20 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3392.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://dctf26-quals.cyber-edu.co/",
+        "比赛标志": "https://ctftime.org/media/events/2c31f15c30b130055d9133f2390adf6c.jpg",
+        "比赛权重": "69.75",
+        "赛事主办": "CCSIR.org (https://ctftime.org/team/9831)",
+        "比赛ID": "73",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CSAW CTF Qualification Round 2026",
+        "比赛时间": "2026-09-19 00:00:00 - 2026-09-21 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3355.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.csaw.io/",
+        "比赛标志": "https://ctftime.org/media/events/csawlogo_1.png",
+        "比赛权重": "10.93",
+        "赛事主办": "NYUSEC (https://ctftime.org/team/439)",
+        "比赛ID": "18",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Cyber League 2026 - Major",
+        "比赛时间": "2026-09-19 10:00:00 - 2026-09-20 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3412.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cyberleague.co/",
+        "比赛标志": "",
+        "比赛权重": "0",
+        "赛事主办": "DIV0-N0H4TS (https://ctftime.org/team/354275)",
+        "比赛ID": "1183",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Haruulzangi CTF 2026 Semi-Final",
+        "比赛时间": "2026-09-19 10:00:00 - 2026-09-19 16:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3431.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2026.haruulzangi.mn/",
+        "比赛标志": "https://ctftime.org/media/events/haruul_zangi_logo_updated_3.png",
+        "比赛权重": "0.00",
+        "赛事主办": "haruulzangi-organizers (https://ctftime.org/team/266812)",
+        "比赛ID": "985",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "NullOrigin CTF Qualifiers",
+        "比赛时间": "2026-09-18 12:30:00 - 2026-09-19 00:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3346.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nullorigin.cyberhx.com/",
+        "比赛标志": "https://ctftime.org/media/events/722217335_18086037686297664_317017320748858629_n.jpg",
+        "比赛权重": "0",
+        "赛事主办": "CyberXoX (https://ctftime.org/team/374041)",
+        "比赛ID": "1633",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "VolgaCTF 2026 Final",
@@ -1833,18 +1833,6 @@
         "比赛权重": "19.48",
         "赛事主办": "OxV01D (https://ctftime.org/team/427687)",
         "比赛ID": "1587",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "UralCUP 2026 // Quals",
-        "比赛时间": "2026-05-17 13:00:00 - 2026-05-17 21:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3214.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://uralctf.org/",
-        "比赛标志": "https://ctftime.org/media/events/2876b94b571c4f41b7a235d7d6050a8c_1.jpg",
-        "比赛权重": "0",
-        "赛事主办": "TyumGUard (https://ctftime.org/team/380152)",
-        "比赛ID": "1417",
         "比赛状态": "past"
     }
 ]
