@@ -1,53 +1,5 @@
 [
     {
-        "比赛名称": "WATCHLIST",
-        "比赛时间": "2026-09-19 11:30:00 - 2026-09-20 11:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3326.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.xposedornot.com/",
-        "比赛标志": "https://ctftime.org/media/events/WatchList_Twitter_Profile.png",
-        "比赛权重": "0.00",
-        "赛事主办": "WatchList CTF (https://ctftime.org/team/436923)",
-        "比赛ID": "1614",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "z0d1ak CTF Finals",
-        "比赛时间": "2026-09-19 11:30:00 - 2026-09-19 20:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3428.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.z0d1ak.org/",
-        "比赛标志": "https://ctftime.org/media/events/Zodiak_CTF_Logo_1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "z0d1ak (https://ctftime.org/team/373452)",
-        "比赛ID": "1648",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "OmniCTF 2026 Finals",
-        "比赛时间": "2026-09-19 14:00:00 - 2026-09-20 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3401.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://omnictf.com/",
-        "比赛标志": "https://ctftime.org/media/events/Untitled_5.png",
-        "比赛权重": "0.00",
-        "赛事主办": "OmniCYBR (https://ctftime.org/team/383015)",
-        "比赛ID": "1412",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "07CTF 2026",
-        "比赛时间": "2026-09-19 20:00:00 - 2026-09-20 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3365.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.0bscuri7y.in/",
-        "比赛标志": "https://ctftime.org/media/events/logo_112_1.png",
-        "比赛权重": "23.71",
-        "赛事主办": "0bscuri7y (https://ctftime.org/team/370140)",
-        "比赛ID": "1360",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "LUN4R CTF Quals",
         "比赛时间": "2026-09-20 12:30:00 - 2026-09-21 00:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3435.ics",
@@ -612,6 +564,54 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "WATCHLIST",
+        "比赛时间": "2026-09-19 11:30:00 - 2026-09-20 11:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3326.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.xposedornot.com/",
+        "比赛标志": "https://ctftime.org/media/events/WatchList_Twitter_Profile.png",
+        "比赛权重": "0",
+        "赛事主办": "WatchList CTF (https://ctftime.org/team/436923)",
+        "比赛ID": "1614",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "07CTF 2026",
+        "比赛时间": "2026-09-19 20:00:00 - 2026-09-20 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3365.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.0bscuri7y.in/",
+        "比赛标志": "https://ctftime.org/media/events/logo_112_1.png",
+        "比赛权重": "23.71",
+        "赛事主办": "0bscuri7y (https://ctftime.org/team/370140)",
+        "比赛ID": "1360",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "OmniCTF 2026 Finals",
+        "比赛时间": "2026-09-19 14:00:00 - 2026-09-20 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3401.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://omnictf.com/",
+        "比赛标志": "https://ctftime.org/media/events/Untitled_5.png",
+        "比赛权重": "0.00",
+        "赛事主办": "OmniCYBR (https://ctftime.org/team/383015)",
+        "比赛ID": "1412",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "z0d1ak CTF Finals",
+        "比赛时间": "2026-09-19 11:30:00 - 2026-09-19 20:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3428.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.z0d1ak.org/",
+        "比赛标志": "https://ctftime.org/media/events/Zodiak_CTF_Logo_1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "z0d1ak (https://ctftime.org/team/373452)",
+        "比赛ID": "1648",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "Cyber League 2026 - Major",
         "比赛时间": "2026-09-19 10:00:00 - 2026-09-20 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3412.ics",
@@ -621,7 +621,7 @@
         "比赛权重": "0",
         "赛事主办": "DIV0-N0H4TS (https://ctftime.org/team/354275)",
         "比赛ID": "1183",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Haruulzangi CTF 2026 Semi-Final",
@@ -633,7 +633,7 @@
         "比赛权重": "0.00",
         "赛事主办": "haruulzangi-organizers (https://ctftime.org/team/266812)",
         "比赛ID": "985",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "NullOrigin CTF Qualifiers",
@@ -678,7 +678,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.catreloaded.org/",
         "比赛标志": "https://ctftime.org/media/events/0e9402efa19b3a103472f4f94b47f442_1_1.png",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "0xL4ugh (https://ctftime.org/team/132776)",
         "比赛ID": "1400",
         "比赛状态": "past"
@@ -1785,54 +1785,6 @@
         "比赛权重": "0",
         "赛事主办": "Hack4Krak (https://ctftime.org/team/385787)",
         "比赛ID": "1335",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "ZeroDayTM CTF",
-        "比赛时间": "2026-05-23 15:00:00 - 2026-05-23 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3298.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.info.uvt.ro/invite/ckhbsit2kfmk",
-        "比赛标志": "https://ctftime.org/media/events/zeroday-logo.jpg",
-        "比赛权重": "0",
-        "赛事主办": "ZeroDayTM (https://ctftime.org/team/427754)",
-        "比赛ID": "1603",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DEF CON CTF Qualifier 2026",
-        "比赛时间": "2026-05-23 05:00:00 - 2026-05-25 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3205.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://bbbirds.org/",
-        "比赛标志": "",
-        "比赛权重": "63.22",
-        "赛事主办": "Benevolent Bureau of Birds (https://ctftime.org/team/425757)",
-        "比赛ID": "1",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Hack for a Change 2026 May: UN SDG 1",
-        "比赛时间": "2026-05-19 08:00:00 - 2026-05-22 07:59:59 UTC+8",
-        "添加日历": "https://ctftime.org/event/3277.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.hackforachange.org/",
-        "比赛标志": "https://ctftime.org/media/events/logo_127.png",
-        "比赛权重": "24.53",
-        "赛事主办": "Hack for a Change (https://ctftime.org/team/419248)",
-        "比赛ID": "1492",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "0xV01D CTF 2026",
-        "比赛时间": "2026-05-18 12:00:00 - 2026-05-20 12:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3269.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://0xv01d-ctf.xyz/",
-        "比赛标志": "",
-        "比赛权重": "19.48",
-        "赛事主办": "OxV01D (https://ctftime.org/team/427687)",
-        "比赛ID": "1587",
         "比赛状态": "past"
     }
 ]
