@@ -1,14 +1,38 @@
 [
     {
-        "比赛名称": "LUN4R CTF Quals",
-        "比赛时间": "2026-09-20 12:30:00 - 2026-09-21 00:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3435.ics",
+        "比赛名称": "BreachPoint 2026",
+        "比赛时间": "2026-09-25 12:00:00 - 2026-09-26 16:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3451.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://lunar.rootriet.in/",
-        "比赛标志": "",
+        "比赛链接": "https://breachpoint.axios.live/",
+        "比赛标志": "https://ctftime.org/media/events/logo-brc.jpg",
         "比赛权重": "0.00",
-        "赛事主办": "b33tro0t (https://ctftime.org/team/380826)",
-        "比赛ID": "1685",
+        "赛事主办": "pulse_0x1337 (https://ctftime.org/team/448857)",
+        "比赛ID": "1703",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Null Origin CTF 2026: Grand finale",
+        "比赛时间": "2026-09-25 12:30:00 - 2026-09-26 00:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3454.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nullorigin.cyberhx.com/",
+        "比赛标志": "https://ctftime.org/media/events/file_0000000065a081fa80a2e85b40506ca9.png",
+        "比赛权重": "0.00",
+        "赛事主办": "CyberXoX (https://ctftime.org/team/374041)",
+        "比赛ID": "1633",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "NileCTF",
+        "比赛时间": "2026-09-25 20:00:00 - 2026-09-27 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3449.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nilectf.com/register",
+        "比赛标志": "https://ctftime.org/media/events/logo_1000x1000.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Cyb3r_Ph4nt0ms (https://ctftime.org/team/386121)",
+        "比赛ID": "1634",
         "比赛状态": "oncoming"
     },
     {
@@ -540,40 +564,16 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "DefCamp Capture the Flag (D-CTF) 2026 Quals",
-        "比赛时间": "2026-09-18 18:00:00 - 2026-09-20 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3392.ics",
+        "比赛名称": "LUN4R CTF Quals",
+        "比赛时间": "2026-09-20 12:30:00 - 2026-09-21 00:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3435.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://dctf26-quals.cyber-edu.co/",
-        "比赛标志": "https://ctftime.org/media/events/2c31f15c30b130055d9133f2390adf6c.jpg",
-        "比赛权重": "69.75",
-        "赛事主办": "CCSIR.org (https://ctftime.org/team/9831)",
-        "比赛ID": "73",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "CSAW CTF Qualification Round 2026",
-        "比赛时间": "2026-09-19 00:00:00 - 2026-09-21 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3355.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.csaw.io/",
-        "比赛标志": "https://ctftime.org/media/events/csawlogo_1.png",
-        "比赛权重": "10.93",
-        "赛事主办": "NYUSEC (https://ctftime.org/team/439)",
-        "比赛ID": "18",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "WATCHLIST",
-        "比赛时间": "2026-09-19 11:30:00 - 2026-09-20 11:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3326.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.xposedornot.com/",
-        "比赛标志": "https://ctftime.org/media/events/WatchList_Twitter_Profile.png",
+        "比赛链接": "https://lunar.rootriet.in/",
+        "比赛标志": "",
         "比赛权重": "0",
-        "赛事主办": "WatchList CTF (https://ctftime.org/team/436923)",
-        "比赛ID": "1614",
-        "比赛状态": "nowrunning"
+        "赛事主办": "b33tro0t (https://ctftime.org/team/380826)",
+        "比赛ID": "1685",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "07CTF 2026",
@@ -585,7 +585,7 @@
         "比赛权重": "23.71",
         "赛事主办": "0bscuri7y (https://ctftime.org/team/370140)",
         "比赛ID": "1360",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "OmniCTF 2026 Finals",
@@ -612,6 +612,18 @@
         "比赛状态": "past"
     },
     {
+        "比赛名称": "WATCHLIST",
+        "比赛时间": "2026-09-19 11:30:00 - 2026-09-20 11:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3326.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.xposedornot.com/",
+        "比赛标志": "https://ctftime.org/media/events/WatchList_Twitter_Profile.png",
+        "比赛权重": "0",
+        "赛事主办": "WatchList CTF (https://ctftime.org/team/436923)",
+        "比赛ID": "1614",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "Cyber League 2026 - Major",
         "比赛时间": "2026-09-19 10:00:00 - 2026-09-20 10:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3412.ics",
@@ -633,6 +645,30 @@
         "比赛权重": "0.00",
         "赛事主办": "haruulzangi-organizers (https://ctftime.org/team/266812)",
         "比赛ID": "985",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "CSAW CTF Qualification Round 2026",
+        "比赛时间": "2026-09-19 00:00:00 - 2026-09-21 00:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3355.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.csaw.io/",
+        "比赛标志": "https://ctftime.org/media/events/csawlogo_1.png",
+        "比赛权重": "10.93",
+        "赛事主办": "NYUSEC (https://ctftime.org/team/439)",
+        "比赛ID": "18",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "DefCamp Capture the Flag (D-CTF) 2026 Quals",
+        "比赛时间": "2026-09-18 18:00:00 - 2026-09-20 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3392.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://dctf26-quals.cyber-edu.co/",
+        "比赛标志": "https://ctftime.org/media/events/2c31f15c30b130055d9133f2390adf6c.jpg",
+        "比赛权重": "69.75",
+        "赛事主办": "CCSIR.org (https://ctftime.org/team/9831)",
+        "比赛ID": "73",
         "比赛状态": "past"
     },
     {
@@ -1725,66 +1761,6 @@
         "比赛权重": "25.00",
         "赛事主办": "ExploitsFromHeaven1337 (https://ctftime.org/team/435592)",
         "比赛ID": "1601",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Hackअस्त्र",
-        "比赛时间": "2026-05-29 18:15:00 - 2026-05-31 01:15:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3270.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hackastra.tech/",
-        "比赛标志": "https://ctftime.org/media/events/Logo_16.png",
-        "比赛权重": "25.00",
-        "赛事主办": "Ethical HCK (https://ctftime.org/team/434372)",
-        "比赛ID": "1591",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "ZEROBREACH CTF",
-        "比赛时间": "2026-05-24 12:30:00 - 2026-05-25 00:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3271.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.cyberspacevr.in/",
-        "比赛标志": "https://ctftime.org/media/events/WhatsApp_Image_2026-05-03_at_1.43.58_AM_1.jpeg",
-        "比赛权重": "0.00",
-        "赛事主办": "CyberSpaceVR (https://ctftime.org/team/434393)",
-        "比赛ID": "1592",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SecLeaf Q2 CTF 2026",
-        "比赛时间": "2026-05-23 22:00:00 - 2026-05-24 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3136.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://secleaf.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/CTF_3.png",
-        "比赛权重": "0.00",
-        "赛事主办": "SecLeaf (https://ctftime.org/team/421974)",
-        "比赛ID": "1509",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Panther CTF 2026",
-        "比赛时间": "2026-05-23 16:30:00 - 2026-05-24 16:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3264.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://pantherctf.secleaf.tech/",
-        "比赛标志": "https://ctftime.org/media/events/download_1.jpg",
-        "比赛权重": "0",
-        "赛事主办": "SecLeaf (https://ctftime.org/team/421974)",
-        "比赛ID": "1509",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Hack4Krak CTF 2026 - High School Edition",
-        "比赛时间": "2026-05-23 16:00:00 - 2026-05-24 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3284.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hack4krak.pl/",
-        "比赛标志": "https://ctftime.org/media/events/192620743.png",
-        "比赛权重": "0",
-        "赛事主办": "Hack4Krak (https://ctftime.org/team/385787)",
-        "比赛ID": "1335",
         "比赛状态": "past"
     }
 ]
