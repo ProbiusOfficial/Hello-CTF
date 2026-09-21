@@ -211,6 +211,18 @@ nav:
         - 工控类: hc-misc/industrial.md
       - 附:文件签名表 : hc-misc/file_sign.md
 
+    - ICS | 工控安全:
+      - S7comm 协议: hc-ics/S7comm 协议.md
+      - COTP 协议: hc-ics/COTP 协议.md
+      - MMS 协议: hc-ics/MMS 协议.md
+      - Omron Fins 协议: hc-ics/Omron Fins 协议.md
+      - LSIS FEnet 协议: hc-ics/LSIS FEnet 协议.md
+      - JT/T 808 协议: hc-ics/JT T 808 协议.md
+      - MQTT 协议: hc-ics/MQTT 协议.md
+      - IC 卡: hc-ics/IC 卡.md
+      - 1527 芯片: hc-ics/1527 芯片.md
+      - SCD 配置信息: hc-ics/SCD 配置信息.md
+
     - Web | 网络攻防:
       - hc-web/index.md
       - 环境与工具:
