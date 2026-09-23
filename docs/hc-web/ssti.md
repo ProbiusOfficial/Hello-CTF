@@ -215,7 +215,7 @@ __mro__              查看继承关系和调用顺序，返回元组。此属�
 
 ```Python
 >>> ().__class__.__base__.__subclasses__()
->>> ().__class__.__bases__[0]__subclasses__()
+>>> ().__class__.__bases__[0].__subclasses__()
 >>> ().__class__.__mro__[-1].__subclasses__()
 ```
 
