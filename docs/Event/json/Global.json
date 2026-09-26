@@ -1,65 +1,5 @@
 [
     {
-        "比赛名称": "BreachPoint 2026",
-        "比赛时间": "2026-09-25 12:00:00 - 2026-09-26 16:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3451.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://breachpoint.axios.live/",
-        "比赛标志": "https://ctftime.org/media/events/logo-brc.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "pulse_0x1337 (https://ctftime.org/team/448857)",
-        "比赛ID": "1703",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "Null Origin CTF 2026: Grand finale",
-        "比赛时间": "2026-09-25 12:30:00 - 2026-09-26 00:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3454.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nullorigin.cyberhx.com/",
-        "比赛标志": "https://ctftime.org/media/events/file_0000000065a081fa80a2e85b40506ca9.png",
-        "比赛权重": "0.00",
-        "赛事主办": "CyberXoX (https://ctftime.org/team/374041)",
-        "比赛ID": "1633",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "NileCTF",
-        "比赛时间": "2026-09-25 20:00:00 - 2026-09-27 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3449.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nilectf.com/register",
-        "比赛标志": "https://ctftime.org/media/events/logo_1000x1000.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Cyb3r_Ph4nt0ms (https://ctftime.org/team/386121)",
-        "比赛ID": "1634",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "FlightPath2026",
-        "比赛时间": "2026-09-25 21:30:00 - 2026-09-28 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3422.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://setyourvector.org/",
-        "比赛标志": "https://ctftime.org/media/events/logo_136.png",
-        "比赛权重": "0",
-        "赛事主办": "ĀYŌDÈ (https://ctftime.org/team/418961)",
-        "比赛ID": "1632",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "BCS CTF 2026",
-        "比赛时间": "2026-09-25 22:00:00 - 2026-09-27 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3374.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.bcsictfest.com/",
-        "比赛标志": "https://ctftime.org/media/events/logo_134.png",
-        "比赛权重": "0.00",
-        "赛事主办": "bdhxgrp (https://ctftime.org/team/193805)",
-        "比赛ID": "1653",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "H7CTF 2026 Quals",
         "比赛时间": "2026-09-26 11:30:00 - 2026-09-27 23:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3093.ics",
@@ -564,6 +504,66 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "BreachPoint 2026",
+        "比赛时间": "2026-09-25 12:00:00 - 2026-09-26 16:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3451.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://breachpoint.axios.live/",
+        "比赛标志": "https://ctftime.org/media/events/logo-brc.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "pulse_0x1337 (https://ctftime.org/team/448857)",
+        "比赛ID": "1703",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "NileCTF",
+        "比赛时间": "2026-09-25 20:00:00 - 2026-09-27 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3449.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nilectf.com/register",
+        "比赛标志": "https://ctftime.org/media/events/logo_1000x1000.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Cyb3r_Ph4nt0ms (https://ctftime.org/team/386121)",
+        "比赛ID": "1634",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "FlightPath2026",
+        "比赛时间": "2026-09-25 21:30:00 - 2026-09-28 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3422.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://setyourvector.org/",
+        "比赛标志": "https://ctftime.org/media/events/logo_136.png",
+        "比赛权重": "0",
+        "赛事主办": "ĀYŌDÈ (https://ctftime.org/team/418961)",
+        "比赛ID": "1632",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "BCS CTF 2026",
+        "比赛时间": "2026-09-25 22:00:00 - 2026-09-27 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3374.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bcsictfest.com/",
+        "比赛标志": "https://ctftime.org/media/events/logo_134.png",
+        "比赛权重": "0",
+        "赛事主办": "bdhxgrp (https://ctftime.org/team/193805)",
+        "比赛ID": "1653",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Null Origin CTF 2026: Grand finale",
+        "比赛时间": "2026-09-25 12:30:00 - 2026-09-26 00:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3454.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nullorigin.cyberhx.com/",
+        "比赛标志": "https://ctftime.org/media/events/file_0000000065a081fa80a2e85b40506ca9.png",
+        "比赛权重": "0.00",
+        "赛事主办": "CyberXoX (https://ctftime.org/team/374041)",
+        "比赛ID": "1633",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "LUN4R CTF Quals",
         "比赛时间": "2026-09-20 12:30:00 - 2026-09-21 00:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3435.ics",
@@ -678,7 +678,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://nullorigin.cyberhx.com/",
         "比赛标志": "https://ctftime.org/media/events/722217335_18086037686297664_317017320748858629_n.jpg",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "CyberXoX (https://ctftime.org/team/374041)",
         "比赛ID": "1633",
         "比赛状态": "past"
@@ -1749,18 +1749,6 @@
         "比赛权重": "0.00",
         "赛事主办": "Hardware CTF (https://ctftime.org/team/274600)",
         "比赛ID": "1021",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "HASBLCTF26",
-        "比赛时间": "2026-05-30 01:00:00 - 2026-06-01 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3301.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.hasblctf.tech/",
-        "比赛标志": "https://ctftime.org/media/events/logo_128.png",
-        "比赛权重": "25.00",
-        "赛事主办": "ExploitsFromHeaven1337 (https://ctftime.org/team/435592)",
-        "比赛ID": "1601",
         "比赛状态": "past"
     }
 ]
