@@ -1,41 +1,5 @@
 [
     {
-        "比赛名称": "H7CTF 2026 Quals",
-        "比赛时间": "2026-09-26 11:30:00 - 2026-09-27 23:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3093.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2026.h7tex.com/",
-        "比赛标志": "https://ctftime.org/media/events/IMG-20251015-WA0045.jpg",
-        "比赛权重": "27.49",
-        "赛事主办": "H7Tex (https://ctftime.org/team/281844)",
-        "比赛ID": "1169",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "FAUST CTF 2026",
-        "比赛时间": "2026-09-26 20:00:00 - 2026-09-27 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3312.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://2026.faustctf.net/",
-        "比赛标志": "https://ctftime.org/media/events/faustctf2026.png",
-        "比赛权重": "72.29",
-        "赛事主办": "FAUST (https://ctftime.org/team/550)",
-        "比赛ID": "117",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "SunshineCTF 2026",
-        "比赛时间": "2026-09-26 22:00:00 - 2026-09-28 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3399.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://sunshinectf.org/",
-        "比赛标志": "https://ctftime.org/media/events/sunshinectf25_logo.png",
-        "比赛权重": "51.63",
-        "赛事主办": "Knightsec (https://ctftime.org/team/2500)",
-        "比赛ID": "137",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Pointer Overflow CTF - 2026",
         "比赛时间": "2026-09-27 22:00:00 - 2026-12-06 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3020.ics",
@@ -504,18 +468,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "BreachPoint 2026",
-        "比赛时间": "2026-09-25 12:00:00 - 2026-09-26 16:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3451.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://breachpoint.axios.live/",
-        "比赛标志": "https://ctftime.org/media/events/logo-brc.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "pulse_0x1337 (https://ctftime.org/team/448857)",
-        "比赛ID": "1703",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "NileCTF",
         "比赛时间": "2026-09-25 20:00:00 - 2026-09-27 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3449.ics",
@@ -552,6 +504,42 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "H7CTF 2026 Quals",
+        "比赛时间": "2026-09-26 11:30:00 - 2026-09-27 23:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3093.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://2026.h7tex.com/",
+        "比赛标志": "https://ctftime.org/media/events/IMG-20251015-WA0045.jpg",
+        "比赛权重": "27.49",
+        "赛事主办": "H7Tex (https://ctftime.org/team/281844)",
+        "比赛ID": "1169",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "SunshineCTF 2026",
+        "比赛时间": "2026-09-26 22:00:00 - 2026-09-28 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3399.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://sunshinectf.org/",
+        "比赛标志": "https://ctftime.org/media/events/sunshinectf25_logo.png",
+        "比赛权重": "51.63",
+        "赛事主办": "Knightsec (https://ctftime.org/team/2500)",
+        "比赛ID": "137",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "FAUST CTF 2026",
+        "比赛时间": "2026-09-26 20:00:00 - 2026-09-27 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3312.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "https://2026.faustctf.net/",
+        "比赛标志": "https://ctftime.org/media/events/faustctf2026.png",
+        "比赛权重": "72.29",
+        "赛事主办": "FAUST (https://ctftime.org/team/550)",
+        "比赛ID": "117",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "Null Origin CTF 2026: Grand finale",
         "比赛时间": "2026-09-25 12:30:00 - 2026-09-26 00:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3454.ics",
@@ -561,6 +549,18 @@
         "比赛权重": "0.00",
         "赛事主办": "CyberXoX (https://ctftime.org/team/374041)",
         "比赛ID": "1633",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "BreachPoint 2026",
+        "比赛时间": "2026-09-25 12:00:00 - 2026-09-26 16:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3451.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://breachpoint.axios.live/",
+        "比赛标志": "https://ctftime.org/media/events/logo-brc.jpg",
+        "比赛权重": "0.00",
+        "赛事主办": "pulse_0x1337 (https://ctftime.org/team/448857)",
+        "比赛ID": "1703",
         "比赛状态": "past"
     },
     {
@@ -630,7 +630,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://cyberleague.co/",
         "比赛标志": "",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "DIV0-N0H4TS (https://ctftime.org/team/354275)",
         "比赛ID": "1183",
         "比赛状态": "past"
@@ -1725,30 +1725,6 @@
         "比赛权重": "53.29",
         "赛事主办": "BYU Cyberia (https://ctftime.org/team/155711)",
         "比赛ID": "768",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "THEM?!CTF 2026",
-        "比赛时间": "2026-05-30 02:00:00 - 2026-06-01 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3209.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.themctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/THEMCTF_2026_logo_black.png",
-        "比赛权重": "25.00",
-        "赛事主办": "THEM?! (https://ctftime.org/team/387399)",
-        "比赛ID": "1536",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Hardwear.io USA 2026 Hardware CTF",
-        "比赛时间": "2026-05-30 01:00:00 - 2026-05-31 04:50:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3174.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://hwc.tf/",
-        "比赛标志": "https://ctftime.org/media/events/logohwcolor_17.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Hardware CTF (https://ctftime.org/team/274600)",
-        "比赛ID": "1021",
         "比赛状态": "past"
     }
 ]
