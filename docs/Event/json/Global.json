@@ -24,18 +24,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Securinets CTF Quals 2026",
-        "比赛时间": "2026-10-03 17:00:00 - 2026-10-05 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3364.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.securinets.tn/",
-        "比赛标志": "https://ctftime.org/media/events/logo_red_copy_1_2.jpg",
-        "比赛权重": "85.12",
-        "赛事主办": "Securinets (https://ctftime.org/team/5084)",
-        "比赛ID": "105",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "CubeCTF 2026",
         "比赛时间": "2026-10-03 22:00:00 - 2026-10-04 06:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3352.ics",
@@ -117,6 +105,18 @@
         "比赛权重": "0.00",
         "赛事主办": "GaianSpace (https://ctftime.org/team/373034)",
         "比赛ID": "1284",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "Securinets CTF Quals 2026",
+        "比赛时间": "2026-10-17 17:00:00 - 2026-10-19 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3364.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.securinets.tn/",
+        "比赛标志": "https://ctftime.org/media/events/logo_red_copy_1_2.jpg",
+        "比赛权重": "85.12",
+        "赛事主办": "Securinets (https://ctftime.org/team/5084)",
+        "比赛ID": "105",
         "比赛状态": "oncoming"
     },
     {
@@ -444,18 +444,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "SunshineCTF 2026",
-        "比赛时间": "2026-09-26 22:00:00 - 2026-09-28 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3399.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://sunshinectf.org/",
-        "比赛标志": "https://ctftime.org/media/events/sunshinectf25_logo.png",
-        "比赛权重": "51.63",
-        "赛事主办": "Knightsec (https://ctftime.org/team/2500)",
-        "比赛ID": "137",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "Pointer Overflow CTF - 2026",
         "比赛时间": "2026-09-27 22:00:00 - 2026-12-06 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3020.ics",
@@ -477,7 +465,19 @@
         "比赛权重": "0.00",
         "赛事主办": "D Asset Inc. (https://ctftime.org/team/310109)",
         "比赛ID": "1190",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "SunshineCTF 2026",
+        "比赛时间": "2026-09-26 22:00:00 - 2026-09-28 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3399.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://sunshinectf.org/",
+        "比赛标志": "https://ctftime.org/media/events/sunshinectf25_logo.png",
+        "比赛权重": "51.63",
+        "赛事主办": "Knightsec (https://ctftime.org/team/2500)",
+        "比赛ID": "137",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "FAUST CTF 2026",
@@ -1653,30 +1653,6 @@
         "比赛权重": "69.00",
         "赛事主办": "KITCTF (https://ctftime.org/team/7221)",
         "比赛ID": "854",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "bhackari CTF 2026",
-        "比赛时间": "2026-05-30 18:00:00 - 2026-05-31 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3302.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.bhackari.it/",
-        "比赛标志": "https://ctftime.org/media/events/bhackari_logo_squared_white.png",
-        "比赛权重": "24.75",
-        "赛事主办": "bhackari (https://ctftime.org/team/194130)",
-        "比赛ID": "1602",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Pwn2Play Open CTF",
-        "比赛时间": "2026-05-30 17:00:00 - 2026-05-31 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3220.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://pwn2play.biterra.co/",
-        "比赛标志": "https://ctftime.org/media/events/2025.png",
-        "比赛权重": "0",
-        "赛事主办": "DMUHackers26 (https://ctftime.org/team/392860)",
-        "比赛ID": "1556",
         "比赛状态": "past"
     }
 ]
