@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "CSS CTF 2026: Return of Nexus",
-        "比赛时间": "2026-09-30 14:00:00 - 2026-10-02 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3434.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.cybersecurity.sydney/",
-        "比赛标志": "https://ctftime.org/media/events/dbdeeab4624f46479b54527337e9e860.png",
-        "比赛权重": "0.00",
-        "赛事主办": "suɐǝpodᴉʇuɐ (https://ctftime.org/team/382153)",
-        "比赛ID": "1669",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Hacker's Gambit 2026 (Round 1 – Online Qualifier)",
         "比赛时间": "2026-10-02 14:30:00 - 2026-10-04 14:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3380.ics",
@@ -465,6 +453,18 @@
         "比赛权重": "0",
         "赛事主办": "UWSP Pointers (https://ctftime.org/team/231536)",
         "比赛ID": "963",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CSS CTF 2026: Return of Nexus",
+        "比赛时间": "2026-09-30 14:00:00 - 2026-10-02 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3434.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.cybersecurity.sydney/",
+        "比赛标志": "https://ctftime.org/media/events/dbdeeab4624f46479b54527337e9e860.png",
+        "比赛权重": "0",
+        "赛事主办": "suɐǝpodᴉʇuɐ (https://ctftime.org/team/382153)",
+        "比赛ID": "1669",
         "比赛状态": "nowrunning"
     },
     {

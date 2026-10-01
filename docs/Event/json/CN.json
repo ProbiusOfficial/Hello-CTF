@@ -68,14 +68,6 @@
                 "status": "正在进行"
             },
             {
-                "name": "第二届 OpenHarmony CTF 智能漏洞挖掘赛（决赛提交）",
-                "link": "https://thuctf.tsinghua.edu.cn/harmonyctf/games/2",
-                "comp_time_start": "2026年09月01日 00:00",
-                "comp_time_end": "2026年09月30日 23:59",
-                "detail": "赛制/类型: 线上提交（决赛阶段）\n主办方：清华大学；现场决赛时间地点待定",
-                "status": "正在进行"
-            },
-            {
                 "name": "第二届 OpenHarmony CTF 智能漏洞挖掘赛（初赛）",
                 "link": "https://thuctf.tsinghua.edu.cn/harmonyctf/games/2",
                 "comp_time_start": "2026年08月01日 00:00",
@@ -129,6 +121,14 @@
                 "comp_time_start": "2026年08月29日 00:00",
                 "comp_time_end": "2026年08月29日 23:59",
                 "detail": "赛制/类型: 线下决赛\n地点：宁波",
+                "status": "已经结束"
+            },
+            {
+                "name": "第二届 OpenHarmony CTF 智能漏洞挖掘赛（决赛提交）",
+                "link": "https://thuctf.tsinghua.edu.cn/harmonyctf/games/2",
+                "comp_time_start": "2026年09月01日 00:00",
+                "comp_time_end": "2026年09月30日 23:59",
+                "detail": "赛制/类型: 线上提交（决赛阶段）\n主办方：清华大学；现场决赛时间地点待定",
                 "status": "已经结束"
             },
             {
