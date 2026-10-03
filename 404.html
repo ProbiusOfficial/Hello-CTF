@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 - Hello CTF</title>
+<link rel="icon" href="/assets/images/favicon.png">
+<link rel="stylesheet" href="/shell/shell.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--paper); color: var(--ink); font-family: var(--sans); line-height: 1.7; transition: background .25s, color .25s; }
+  a { color: inherit; text-decoration: none; }
+  .nf-wrap {
+    min-height: 100vh; display: grid; place-items: center; padding: 40px 20px;
+    background:
+      radial-gradient(640px 320px at 85% -10%, rgba(37, 99, 235, .08), transparent 62%),
+      radial-gradient(520px 280px at 0% 110%, rgba(34, 211, 238, .07), transparent 60%);
+  }
+  .nf-box { text-align: center; max-width: 480px; }
+  .nf-code {
+    font-family: var(--mono); font-size: clamp(72px, 14vw, 120px); font-weight: 700;
+    letter-spacing: -.04em; line-height: 1;
+  }
+  .nf-code em { font-style: normal; color: var(--accent); }
+  .nf-title { font-size: 22px; font-weight: 800; letter-spacing: -.02em; margin: 18px 0 10px; }
+  .nf-sub { font-size: 14.5px; color: var(--ink-2); margin-bottom: 28px; }
+  .nf-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 24px; border-radius: 12px; font-size: 14.5px; font-weight: 700;
+    transition: transform .16s, box-shadow .16s, border-color .16s;
+  }
+  .btn-dark { background: var(--ink); color: var(--paper); box-shadow: 0 12px 26px -12px rgba(15,23,42,.55); }
+  .btn-dark:hover { transform: translateY(-2px); box-shadow: var(--shadow-pop); }
+  .btn-line { border: 1.5px solid var(--line); color: var(--ink); }
+  .btn-line:hover { border-color: var(--ink); transform: translateY(-2px); }
+  .nf-hint { margin-top: 26px; font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
+  .nf-hint kbd {
+    border: 1px solid var(--line); border-radius: 6px; padding: 1px 7px;
+    font-family: inherit; background: var(--wash);
+  }
+</style>
+</head>
+<body>
+<script src="/shell/search.js"></script>
+<script src="/shell/shell.js"></script>
+<script>
+  /* 旧赛事页路径（/Event/、/event 及子页，无扩展名的）统一跳新赛事中心 */
+  (function () {
+    var p = location.pathname;
+    if (/^\/event/i.test(p) && !/\.[a-z0-9]+$/i.test(p)) {
+      location.replace("/sidebar/events.html");
+    }
+  })();
+</script>
+<script>Shell.mount({ active: "" });</script>
+
+<div class="main">
+  <div class="nf-wrap">
+    <div class="nf-box">
+      <div class="nf-code">4<em>0</em>4</div>
+      <div class="nf-title">这个页面走丢了</div>
+      <p class="nf-sub">链接可能已过期，或者页面在最近的站点重构中搬了家。</p>
+      <div class="nf-btns">
+        <a class="btn btn-dark" href="/index.html">返回首页</a>
+        <a class="btn btn-line" href="/hc-start/">去看文档</a>
+      </div>
+      <div class="nf-hint">找不到的内容，试试 <kbd>Ctrl</kbd> + <kbd>K</kbd> 全局搜索</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

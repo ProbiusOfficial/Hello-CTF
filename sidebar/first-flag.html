@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CTF 初体验 - Hello CTF</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTF/main/docs/assets/images/favicon.png">
+<link rel="stylesheet" href="/shell/shell.css">
+<script>
+  if (localStorage.getItem('hc-theme') === 'dark') document.documentElement.dataset.theme = 'dark';
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: var(--sans); line-height: 1.7;
+    transition: background .25s, color .25s;
+  }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--hl); }
+  [hidden] { display: none !important; }
+
+  .wrap { max-width: 860px; margin: 0 auto; padding: 44px 32px 90px; }
+
+  /* ===================== 页头 ===================== */
+  .kicker { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; color: var(--accent); }
+  .page-head h1 {
+    font-size: clamp(30px, 3.4vw, 40px);
+    font-weight: 800; letter-spacing: -.03em; line-height: 1.2;
+    margin: 12px 0 10px;
+  }
+  .page-head h1 .hl { background: linear-gradient(transparent 60%, var(--hl) 60%); }
+  .page-head .sub { font-size: 14.5px; color: var(--ink-2); max-width: 640px; }
+  .progress {
+    font-family: var(--mono); font-size: 12px; letter-spacing: .14em;
+    color: var(--ink-3); margin-top: 14px;
+  }
+  .progress strong { color: var(--accent); font-weight: 600; }
+
+  /* ===================== 题目卡 ===================== */
+  .chal {
+    display: flex; gap: 22px;
+    border: 1px solid var(--line); border-left-width: 3px; border-radius: var(--radius);
+    background: var(--paper); padding: 24px 26px; margin-top: 22px;
+    transition: border-color .18s, box-shadow .18s;
+  }
+  .chal:hover { box-shadow: var(--shadow-pop); }
+  .chal.done { border-left-color: var(--accent); }
+  .chal .num {
+    font-family: var(--mono); font-size: 30px; font-weight: 600;
+    color: var(--ink-3); line-height: 1; padding-top: 4px; flex-shrink: 0;
+    transition: color .18s;
+  }
+  .chal.done .num { color: var(--accent); }
+  .chal-body { flex: 1; min-width: 0; }
+  .chal h2 { font-size: 17px; font-weight: 800; letter-spacing: -.01em; }
+  .chal .story { font-size: 13px; color: var(--ink-2); margin-top: 4px; }
+
+  .puzzle {
+    font-family: var(--mono); font-size: 13px; word-break: break-all;
+    background: var(--wash); border: 1px solid var(--line); border-radius: 10px;
+    padding: 13px 16px; margin-top: 14px; color: var(--ink);
+  }
+
+  /* ===================== 提示折叠块 ===================== */
+  details { margin-top: 12px; }
+  summary {
+    font-family: var(--mono); font-size: 12px; color: var(--ink-3);
+    cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 6px;
+    transition: color .15s; user-select: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary .ic { width: 12px; height: 12px; transition: transform .15s; }
+  details[open] summary .ic { transform: rotate(90deg); }
+  summary:hover { color: var(--accent); }
+  .hints { margin-top: 8px; display: flex; flex-direction: column; gap: 6px; }
+  .hints .hint {
+    font-size: 12.5px; color: var(--ink-2);
+    border-left: 2px solid var(--hl); padding: 2px 0 2px 12px;
+  }
+  .hints .hint code {
+    font-family: var(--mono); font-size: 11.5px;
+    background: var(--wash); border: 1px solid var(--line);
+    border-radius: 5px; padding: 1px 6px;
+  }
+
+  /* ===================== flag 提交行 ===================== */
+  .submit-row { display: flex; gap: 10px; margin-top: 16px; }
+  .flag-input {
+    flex: 1; min-width: 0;
+    font-family: var(--mono); font-size: 13px;
+    border: 1px solid var(--line); border-radius: 10px;
+    background: var(--paper); color: var(--ink);
+    padding: 10px 14px; outline: none;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .flag-input::placeholder { color: var(--ink-3); }
+  .flag-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  .flag-input.ok { border-color: var(--cn); box-shadow: 0 0 0 3px var(--cn-soft); }
+  .flag-input:disabled { opacity: .8; cursor: default; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; flex-shrink: 0;
+    padding: 10px 20px; border-radius: 10px; font-size: 13px; font-weight: 700;
+    border: none; cursor: pointer; font-family: var(--sans);
+    transition: transform .16s ease, box-shadow .16s ease;
+  }
+  .btn-dark { background: var(--ink); color: var(--paper); box-shadow: 0 12px 26px -12px rgba(15,23,42,.55); }
+  .btn-dark:hover { transform: translateY(-2px); box-shadow: var(--shadow-pop); }
+  .btn-dark:disabled { opacity: .5; cursor: default; }
+  .btn-dark:disabled:hover { transform: none; box-shadow: 0 12px 26px -12px rgba(15,23,42,.55); }
+  .btn-line {
+    border: 1.5px solid var(--line); color: var(--ink); background: transparent;
+    text-decoration: none;
+  }
+  .btn-line:hover { border-color: var(--ink); transform: translateY(-2px); }
+
+  .verdict { font-family: var(--mono); font-size: 12px; margin-top: 8px; min-height: 18px; }
+  .verdict.ok { color: var(--cn); }
+  .verdict.no { color: #ef4444; }
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-6px); }
+    40%, 80% { transform: translateX(6px); }
+  }
+  .chal.shake { animation: shake .4s ease; border-color: #ef4444; }
+
+  /* ===================== 通关横幅 ===================== */
+  .finale {
+    border: 1px solid var(--accent); border-radius: var(--radius);
+    background: var(--accent-soft);
+    padding: 30px 30px 26px; margin-top: 30px; text-align: center;
+  }
+  .finale .f-kicker { font-family: var(--mono); font-size: 11px; letter-spacing: .16em; color: var(--accent); }
+  .finale h2 { font-size: 22px; font-weight: 800; letter-spacing: -.02em; margin: 8px 0 6px; }
+  .finale p { font-size: 13.5px; color: var(--ink-2); }
+  .finale .f-actions { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+  .finale .btn { text-decoration: none; }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 30px 18px 70px; }
+    .chal { gap: 14px; padding: 20px 18px; }
+    .chal .num { font-size: 22px; }
+    .submit-row { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<div class="main">
+  <div class="wrap">
+
+    <header class="page-head">
+      <div class="kicker">FIRST FLAG · CTF 初体验</div>
+      <h1>亲手拿下你的<span class="hl">第一面 flag</span>。</h1>
+      <p class="sub">不看教程，直接上手：3 道题由浅入深，全部在浏览器内完成。解出答案、提交 flag，体验完整的夺旗流程。</p>
+      <div class="progress">PROGRESS <strong id="progressNum">0</strong>/3</div>
+    </header>
+
+    <!-- 第 1 题「签到」 -->
+    <section class="chal" id="chal1">
+      <div class="num">01</div>
+      <div class="chal-body">
+        <h2>签到</h2>
+        <p class="story">每场比赛都有一道签到题，flag 就藏在赛场最显眼——或者说最"不起眼"的地方。</p>
+        <div class="puzzle">这行不是题目，题目就是这个页面本身。flag 已经交到你手里了，只是你还没看见它。</div>
+        <details>
+          <summary><svg class="ic"><use href="#i-arrow"/></svg>需要提示？</summary>
+          <div class="hints">
+            <div class="hint">提示 1：flag 长什么样？<code>flag{花括号里是内容}</code>——先认出它的形状。</div>
+            <div class="hint">提示 2：右键页面 →「查看网页源代码」，Ctrl+F 搜 <code>flag{</code>。看源码是 CTF 选手的基本功。</div>
+          </div>
+        </details>
+        <div class="submit-row">
+          <input class="flag-input" type="text" placeholder="flag{...}" autocomplete="off" spellcheck="false">
+          <button class="btn btn-dark" type="button">提交</button>
+        </div>
+        <div class="verdict"></div>
+      </div>
+    </section>
+
+    <!-- 第 2 题「编码不是加密」 -->
+    <section class="chal" id="chal2">
+      <div class="num">02</div>
+      <div class="chal-body">
+        <h2>编码不是加密</h2>
+        <p class="story">出题人留下一串神秘字符，临走前嘟囔了一句："这只是编码，不是加密。"</p>
+        <div class="puzzle">ZmxhZ3tiYXNlNjRfaXNfbm90X2VuY3J5cHR9</div>
+        <details>
+          <summary><svg class="ic"><use href="#i-arrow"/></svg>需要提示？</summary>
+          <div class="hints">
+            <div class="hint">提示 1：只含字母、数字和 <code>+ / =</code>，结尾还带个 <code>=</code>——这是 Base64 编码的典型长相。编码只是换种写法，谁都能还原。</div>
+            <div class="hint">提示 2：按 F12 打开浏览器控制台，输入 <code>atob("那串字符")</code> 回车，浏览器自己就能解码。</div>
+          </div>
+        </details>
+        <div class="submit-row">
+          <input class="flag-input" type="text" placeholder="flag{...}" autocomplete="off" spellcheck="false">
+          <button class="btn btn-dark" type="button">提交</button>
+        </div>
+        <div class="verdict"></div>
+      </div>
+    </section>
+
+    <!-- 第 3 题「凯撒的回信」 -->
+    <section class="chal" id="chal3">
+      <div class="num">03</div>
+      <div class="chal-body">
+        <h2>凯撒的回信</h2>
+        <p class="story">两千年前，凯撒大帝给前线写信时会把字母统一往后挪几位。这封信看起来也有 flag 的形状，但字母全"歪"了。</p>
+        <div class="puzzle">iodj{fdhvdu_lv_hdvb}</div>
+        <details>
+          <summary><svg class="ic"><use href="#i-arrow"/></svg>需要提示？</summary>
+          <div class="hints">
+            <div class="hint">提示 1：注意它也有 <code>flag{}</code> 的形状（这里是 <code>iodj{}</code>），说明每个字母被统一偏移了——这就是凯撒密码。</div>
+            <div class="hint">提示 2：试试每个字母往前数 3 位（d→a，e→b，f→c……），<code>i</code> 往前 3 位是什么？</div>
+          </div>
+        </details>
+        <div class="submit-row">
+          <input class="flag-input" type="text" placeholder="flag{...}" autocomplete="off" spellcheck="false">
+          <button class="btn btn-dark" type="button">提交</button>
+        </div>
+        <div class="verdict"></div>
+      </div>
+    </section>
+
+    <!-- 通关横幅 -->
+    <div class="finale" id="finale" hidden>
+      <div class="f-kicker">ALL CLEAR</div>
+      <h2>3/3 —— 你已经交出三面 flag 了</h2>
+      <p>看源码、认编码、破古典密码——这些都是真实 CTF 比赛里的日常。接下来，选条路继续。</p>
+      <div class="f-actions">
+        <a class="btn btn-dark" href="../hc-web/web_start/">去打 Web 入门题单</a>
+        <a class="btn btn-line" href="./directions.html">去看方向一览</a>
+        <a class="btn btn-line" href="/">回首页</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- hint: 签到题的 flag 就在这里： flag{w31c0me_t0_ctf} -->
+
+<script src="/shell/search.js"></script>
+<script src="/shell/shell.js"></script>
+<script>Shell.mount({ active: "" });</script>
+<script>
+(function () {
+  /* 每题答案的 SHA-256(hex)。教学页不防作弊：愿意翻代码的同学已经学到东西了。 */
+  var DIGESTS = {
+    chal1: '8a5a913d557d774a5d8414b740bea2973064fc1aa33d4fd17b6efd129b95baea',
+    chal2: 'f300bf36da75f68fc63b483ed90ffd9c5445c754afe4eb699e119559779f56ed',
+    chal3: '27ef7776125bad87e26ad7aae1431507abf20752b9daad5263d6a189ad7a0f07'
+  };
+  /* crypto.subtle 不可用（非安全上下文）时的降级明文比对，base64 存放 */
+  var FALLBACK = {
+    chal1: 'ZmxhZ3t3MzFjMG1lX3QwX2N0Zn0=',
+    chal2: 'ZmxhZ3tiYXNlNjRfaXNfbm90X2VuY3J5cHR9',
+    chal3: 'ZmxhZ3tjYWVzYXJfaXNfZWFzeX0='
+  };
+
+  var solved = 0;
+  var progressNum = document.getElementById('progressNum');
+  var finale = document.getElementById('finale');
+
+  function sha256hex(text) {
+    if (!window.crypto || !crypto.subtle || !crypto.subtle.digest) {
+      return Promise.resolve(null);
+    }
+    var data = new TextEncoder().encode(text);
+    return crypto.subtle.digest('SHA-256', data).then(function (buf) {
+      return Array.prototype.map.call(new Uint8Array(buf), function (b) {
+        return ('0' + b.toString(16)).slice(-2);
+      }).join('');
+    }).catch(function () { return null; });
+  }
+
+  function check(id, value) {
+    return sha256hex(value).then(function (hex) {
+      if (hex !== null) return hex === DIGESTS[id];
+      /* 降级：明文比对（教学页，不防作弊） */
+      return value === atob(FALLBACK[id]);
+    });
+  }
+
+  document.querySelectorAll('.chal').forEach(function (card) {
+    var input = card.querySelector('.flag-input');
+    var btn = card.querySelector('.btn-dark');
+    var verdict = card.querySelector('.verdict');
+
+    function submit() {
+      if (card.classList.contains('done')) return;
+      var value = input.value.trim();
+      if (!value) {
+        verdict.textContent = '先输入点什么再提交';
+        verdict.className = 'verdict no';
+        return;
+      }
+      check(card.id, value).then(function (ok) {
+        if (ok) {
+          card.classList.add('done');
+          input.classList.add('ok');
+          input.disabled = true;
+          btn.disabled = true;
+          verdict.textContent = '✔ 正确';
+          verdict.className = 'verdict ok';
+          solved++;
+          progressNum.textContent = solved;
+          if (solved === 3) {
+            finale.hidden = false;
+            finale.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        } else {
+          verdict.textContent = '再想想？';
+          verdict.className = 'verdict no';
+          card.classList.remove('shake');
+          void card.offsetWidth; /* 重启动画 */
+          card.classList.add('shake');
+        }
+      });
+    }
+
+    btn.addEventListener('click', submit);
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') submit();
+    });
+  });
+})();
+</script>
+</body>
+</html>
