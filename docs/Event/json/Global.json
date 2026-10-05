@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Africa battleCTF 2026 Qualifier",
-        "比赛时间": "2026-10-05 07:00:00 - 2026-11-05 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3462.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.bugpwn.com/",
-        "比赛标志": "https://ctftime.org/media/events/Blue_Cartoon_April_Fools_Day_Instagram_Post.png",
-        "比赛权重": "0",
-        "赛事主办": "BUG PWN (https://ctftime.org/team/182428)",
-        "比赛ID": "968",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "ByteMe CTF 26",
         "比赛时间": "2026-10-09 12:30:00 - 2026-10-09 20:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3438.ics",
@@ -48,12 +36,12 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "isfcr{ctf} 2026 Quals",
+        "比赛名称": "Cryovault 2026 Quals",
         "比赛时间": "2026-10-10 12:30:00 - 2026-10-11 12:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3441.ics",
         "比赛形式": "Jeopardy",
         "比赛链接": "https://isfcr.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/v7_1.png",
+        "比赛标志": "https://ctftime.org/media/events/v7_1.jpg",
         "比赛权重": "0.00",
         "赛事主办": "ISFCR PESU (https://ctftime.org/team/166645)",
         "比赛ID": "942",
@@ -105,6 +93,18 @@
         "比赛权重": "85.12",
         "赛事主办": "Securinets (https://ctftime.org/team/5084)",
         "比赛ID": "105",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "SOLAR CTF 2026",
+        "比赛时间": "2026-10-17 17:00:00 - 2026-10-18 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3471.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://solarctf.ru/",
+        "比赛标志": "https://ctftime.org/media/events/ctf_time_4.png",
+        "比赛权重": "0",
+        "赛事主办": "SOLARCTF (https://ctftime.org/team/451200)",
+        "比赛ID": "1723",
         "比赛状态": "oncoming"
     },
     {
@@ -192,12 +192,12 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "isfcr{ctf} 2026 Finals",
+        "比赛名称": "Cryovault 2026 Finals",
         "比赛时间": "2026-10-24 11:30:00 - 2026-10-25 14:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3442.ics",
         "比赛形式": "Jeopardy",
         "比赛链接": "https://isfcr.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/v7_2.png",
+        "比赛标志": "https://ctftime.org/media/events/v7_2.jpg",
         "比赛权重": "0.00",
         "赛事主办": "ISFCR PESU (https://ctftime.org/team/166645)",
         "比赛ID": "942",
@@ -213,18 +213,6 @@
         "比赛权重": "0.00",
         "赛事主办": "H7Tex (https://ctftime.org/team/281844)",
         "比赛ID": "1169",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "VOID CTF Qualifiers",
-        "比赛时间": "2026-10-25 02:30:00 - 2026-10-26 02:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3468.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.void-society.in/",
-        "比赛标志": "https://ctftime.org/media/events/void-ctf-logo.png",
-        "比赛权重": "0.00",
-        "赛事主办": "void-society (https://ctftime.org/team/407696)",
-        "比赛ID": "1720",
         "比赛状态": "oncoming"
     },
     {
@@ -552,27 +540,15 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Hacker's Gambit 2026 (Round 1 – Online Qualifier)",
-        "比赛时间": "2026-10-02 14:30:00 - 2026-10-04 14:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3380.ics",
+        "比赛名称": "Africa battleCTF 2026 Qualifier",
+        "比赛时间": "2026-10-05 07:00:00 - 2026-11-05 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3462.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://unstop.com/p/hackers-gambit-2026-jaihind-college-of-engineering-kuran-1723293",
-        "比赛标志": "https://ctftime.org/media/events/tanmay.png",
+        "比赛链接": "https://ctf.bugpwn.com/",
+        "比赛标志": "https://ctftime.org/media/events/Blue_Cartoon_April_Fools_Day_Instagram_Post.png",
         "比赛权重": "0",
-        "赛事主办": "JCOE Cyber Sentinels (https://ctftime.org/team/405374)",
-        "比赛ID": "1415",
-        "比赛状态": "nowrunning"
-    },
-    {
-        "比赛名称": "Lun4R CTF Final",
-        "比赛时间": "2026-10-03 13:30:00 - 2026-10-04 13:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3465.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.rootriet.in/",
-        "比赛标志": "",
-        "比赛权重": "0.00",
-        "赛事主办": "b33tro0t (https://ctftime.org/team/380826)",
-        "比赛ID": "1685",
+        "赛事主办": "BUG PWN (https://ctftime.org/team/182428)",
+        "比赛ID": "968",
         "比赛状态": "nowrunning"
     },
     {
@@ -585,7 +561,7 @@
         "比赛权重": "0",
         "赛事主办": "SharLike (https://ctftime.org/team/16172)",
         "比赛ID": "111",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "CDCTF 2026",
@@ -609,6 +585,30 @@
         "比赛权重": "24.71",
         "赛事主办": "CubeMastery (https://ctftime.org/team/168744)",
         "比赛ID": "1277",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Lun4R CTF Final",
+        "比赛时间": "2026-10-03 13:30:00 - 2026-10-04 13:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3465.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.rootriet.in/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "b33tro0t (https://ctftime.org/team/380826)",
+        "比赛ID": "1685",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Hacker's Gambit 2026 (Round 1 – Online Qualifier)",
+        "比赛时间": "2026-10-02 14:30:00 - 2026-10-04 14:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3380.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://unstop.com/p/hackers-gambit-2026-jaihind-college-of-engineering-kuran-1723293",
+        "比赛标志": "https://ctftime.org/media/events/tanmay.png",
+        "比赛权重": "0",
+        "赛事主办": "JCOE Cyber Sentinels (https://ctftime.org/team/405374)",
+        "比赛ID": "1415",
         "比赛状态": "past"
     },
     {
@@ -678,7 +678,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.bcsictfest.com/",
         "比赛标志": "https://ctftime.org/media/events/logo_134.png",
-        "比赛权重": "0",
+        "比赛权重": "23.33",
         "赛事主办": "bdhxgrp (https://ctftime.org/team/193805)",
         "比赛ID": "1653",
         "比赛状态": "past"
@@ -1749,42 +1749,6 @@
         "比赛权重": "25.00",
         "赛事主办": "KyteBytes (https://ctftime.org/team/424457)",
         "比赛ID": "1596",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "CyberSibir2026",
-        "比赛时间": "2026-06-09 11:30:00 - 2026-06-09 20:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3332.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://masksafe.ru/cyberv/2026/ctf",
-        "比赛标志": "https://ctftime.org/media/events/logoeye.jpg",
-        "比赛权重": "0",
-        "赛事主办": "keva (https://ctftime.org/team/2980)",
-        "比赛ID": "162",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DalCTF 2026",
-        "比赛时间": "2026-06-06 21:00:00 - 2026-06-07 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3320.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://dalctf2026.com/",
-        "比赛标志": "https://ctftime.org/media/events/logo_square_1.png",
-        "比赛权重": "24.90",
-        "赛事主办": "Status 418 (https://ctftime.org/team/361970)",
-        "比赛ID": "1615",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SAS CTF 2026 Quals",
-        "比赛时间": "2026-06-06 20:00:00 - 2026-06-07 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3109.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.thesascon.com/",
-        "比赛标志": "https://ctftime.org/media/events/SAS26_temp.png",
-        "比赛权重": "31.00",
-        "赛事主办": "Drovosec, SAS CREW (https://ctftime.org/team/210132, https://ctftime.org/team/283057)",
-        "比赛ID": "1081",
         "比赛状态": "past"
     }
 ]
