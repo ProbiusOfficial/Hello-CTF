@@ -19,14 +19,6 @@
                 "status": "时间待定"
             },
             {
-                "name": "2026年京津冀大学生信息安全网络攻防大赛（决赛）",
-                "link": "https://www.tjise.edu.cn/info/1008/5580.htm",
-                "comp_time_start": "2026年10月11日 00:00",
-                "comp_time_end": "2026年10月11日 23:59",
-                "detail": "赛制/类型: 线下决赛（渗透测试+应急响应）\n地点：天津市大学软件学院（天津）",
-                "status": "即将开始"
-            },
-            {
                 "name": "第五届中国研究生网络安全创新大赛（实网对抗初赛）",
                 "link": "https://cpipc.acge.org.cn/cw/contestNews/detail/2c90800c8093eef401809d33b36f0652/2c9080199ed8b78d019ed96ceea21560",
                 "comp_time_start": "2026年10月24日 00:00",
@@ -57,6 +49,14 @@
                 "comp_time_end": "2026年12月27日 23:59",
                 "detail": "赛制/类型: AWD Plus + 靶场渗透（决赛）\n地点：哈尔滨市南岗区",
                 "status": "即将开始"
+            },
+            {
+                "name": "2026年京津冀大学生信息安全网络攻防大赛（决赛）",
+                "link": "https://www.tjise.edu.cn/info/1008/5580.htm",
+                "comp_time_start": "2026年10月11日 00:00",
+                "comp_time_end": "2026年10月11日 23:59",
+                "detail": "赛制/类型: 线下决赛（渗透测试+应急响应）\n地点：天津市大学软件学院（天津）",
+                "status": "正在进行"
             },
             {
                 "name": "第二届 OpenHarmony CTF 智能漏洞挖掘赛（初赛）",
