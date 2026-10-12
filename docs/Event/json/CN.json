@@ -51,14 +51,6 @@
                 "status": "即将开始"
             },
             {
-                "name": "2026年京津冀大学生信息安全网络攻防大赛（决赛）",
-                "link": "https://www.tjise.edu.cn/info/1008/5580.htm",
-                "comp_time_start": "2026年10月11日 00:00",
-                "comp_time_end": "2026年10月11日 23:59",
-                "detail": "赛制/类型: 线下决赛（渗透测试+应急响应）\n地点：天津市大学软件学院（天津）",
-                "status": "正在进行"
-            },
-            {
                 "name": "第二届 OpenHarmony CTF 智能漏洞挖掘赛（初赛）",
                 "link": "https://thuctf.tsinghua.edu.cn/harmonyctf/games/2",
                 "comp_time_start": "2026年08月01日 00:00",
@@ -129,6 +121,14 @@
                 "comp_time_start": "2026年09月13日 00:00",
                 "comp_time_end": "2026年09月13日 23:59",
                 "detail": "赛制/类型: 线上初赛（理论+CTF夺旗）\n主办：天津市教委、北京市教委、河北省教育厅；报名 07-01 至 09-10；面向京津冀本科高校在校生",
+                "status": "已经结束"
+            },
+            {
+                "name": "2026年京津冀大学生信息安全网络攻防大赛（决赛）",
+                "link": "https://www.tjise.edu.cn/info/1008/5580.htm",
+                "comp_time_start": "2026年10月11日 00:00",
+                "comp_time_end": "2026年10月11日 23:59",
+                "detail": "赛制/类型: 线下决赛（渗透测试+应急响应）\n地点：天津市大学软件学院（天津）",
                 "status": "已经结束"
             }
         ],
