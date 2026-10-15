@@ -525,7 +525,7 @@
         "比赛权重": "0",
         "赛事主办": "GaianSpace (https://ctftime.org/team/373034)",
         "比赛ID": "1284",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Narxoz CTF",
@@ -1713,18 +1713,6 @@
         "比赛权重": "88.82",
         "赛事主办": "Google CTF (https://ctftime.org/team/23929)",
         "比赛ID": "141",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "RIFFHACK: Black Market Break-In",
-        "比赛时间": "2026-06-19 20:00:00 - 2026-06-22 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3297.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://riffhack.biterra.co/",
-        "比赛标志": "https://ctftime.org/media/events/image_1_1.png",
-        "比赛权重": "0",
-        "赛事主办": "Biterra (https://ctftime.org/team/414340)",
-        "比赛ID": "1457",
         "比赛状态": "past"
     }
 ]
