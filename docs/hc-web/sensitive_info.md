@@ -70,8 +70,8 @@ perl rip-svn.pl -u http://challenge-f54504e10cb99eb1.sandbox.ctfhub.com:10800/.s
 - **内容**：伪 XML 格式或纯文本
 - **历史遗留**，现代 1.7+ 使用 `wc.db` 替代
 
-```
-plaintext复制编辑dir
+```text
+dir
 9
 https://svn.example.com/repo
 ...
