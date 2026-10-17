@@ -1,0 +1,1626 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>密码学应用题 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <div class="tn-group">文件与编码基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">隐写分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">取证分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Web | 网络攻防</a>
+    
+  
+    
+      <div class="tn-group">环境与工具</div>
+      
+  
+    
+      <a class="tn-link" href="../web_env/">Web环境设置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_install/">Docker安装配置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_env/">Docker与漏洞环境</a>
+    
+  
+    
+      <a class="tn-link" href="../vm_lab/">虚拟机与网络模拟</a>
+    
+  
+    
+      <a class="tn-link" href="../burp/">Burp Suite</a>
+    
+  
+    
+      <a class="tn-link" href="../py_script/">Python脚本</a>
+    
+  
+    
+      <a class="tn-link" href="../http/">HTTP协议</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../web_start/">Web入门题单</a>
+    
+  
+    
+      <div class="tn-group">信息收集</div>
+      
+  
+    
+      <a class="tn-link" href="../sensitive_info/">敏感信息泄露</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">PHP专题</div>
+      
+  
+    
+      <a class="tn-link" href="../php_features/">PHP特性与常见绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../php_unser/">PHP反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../php_code_audit/">PHP代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">注入类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../nosql/">NoSQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../csrf/">CSRF攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../ssrf/">SSRF注入</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">文件类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../any_file_read/">任意文件读取</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">命令与代码执行</div>
+      
+  
+    
+      <a class="tn-link" href="../rce/">RCE</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../session_jwt/">会话与认证安全</a>
+    
+  
+    
+      <a class="tn-link" href="../logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <div class="tn-group">语言扩展 | 世界不止有PHP</div>
+      
+  
+    
+      <a class="tn-link" href="../py_unser/">Python反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../py_sandbox/">Python沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../flask_sec/">Flask安全</a>
+    
+  
+    
+      <a class="tn-link" href="../prototype_pollution/">原型链污染</a>
+    
+  
+    
+      <a class="tn-link" href="../js_sandbox/">JS沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../js_reverse/">JS逆向</a>
+    
+  
+    
+      <a class="tn-link" href="../java_basic/">Java安全基础</a>
+    
+  
+    
+      <a class="tn-link" href="../java_unser/">Java反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../spring/">Spring漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../java_audit/">Java代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">进阶专题</div>
+      
+  
+    
+      <a class="tn-link" href="../waf_bypass/">WAF绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../http_smuggling/">请求走私</a>
+    
+  
+    
+      <a class="tn-link" href="../cache_poisoning/">缓存投毒</a>
+    
+  
+    
+      <a class="tn-link" href="../xs_leaks/">XS-Leaks</a>
+    
+  
+    
+      <a class="tn-link on" href="./">密码学应用题</a>
+    
+  
+    
+      <a class="tn-link" href="../cloud_container/">云与容器安全</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">实战能力</div>
+      
+  
+    
+      <div class="tn-group">渗透链路基础</div>
+      
+  
+    
+      <a class="tn-link" href="../pentest_flow/">渗透流程总览</a>
+    
+  
+    
+      <a class="tn-link" href="../two_layer/">两层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../foothold/">立足点建立</a>
+    
+  
+    
+      <a class="tn-link" href="../internal_recon/">内网信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../proxy_tunnel/">代理与隧道</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">多层网络渗透</div>
+      
+  
+    
+      <a class="tn-link" href="../three_layer/">三层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../multi_layer/">多层网络综合</a>
+    
+  
+    
+      <a class="tn-link" href="../ad_basic/">域渗透入门</a>
+    
+  
+    
+      <a class="tn-link" href="../lateral/">横向移动</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">对抗与综合</div>
+      
+  
+    
+      <a class="tn-link" href="../awd/">AWD模式</a>
+    
+  
+    
+      <a class="tn-link" href="../web_pwn/">Web与二进制结合</a>
+    
+  
+    
+      <a class="tn-link" href="../nday/">Nday利用</a>
+    
+  
+    
+      <a class="tn-link" href="../review/">Writeup复盘方法</a>
+    
+  
+
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/env/">环境配置</a>
+    
+  
+    
+      <div class="tn-group">基础知识</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">密码体系</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <div class="tn-group">环境与基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">栈溢出</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">ROP利用</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="_1">密码学应用题<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<p>在 Web 方向的题目中，密码学通常不是作为理论考点出现，而是作为 <strong>应用漏洞</strong> 出现：开发者错误地使用分组模式、错误地设计校验逻辑、错误地使用随机数生成器。本节只讲 Web 语境下的密码学应用，关于古典密码、现代密码算法的理论推导，请参考本书 Crypto 部分的相关章节。</p>
+<p>本节覆盖 CTF Web 题中最高频的几类考点：ECB 分组重排、CBC 比特翻转、Padding Oracle、哈希长度扩展攻击以及 PHP 随机数预测。目标只有一个：看完能动手做题。</p>
+<h2 id="_2">前置知识：分组密码与填充<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<p>AES 是一种分组密码，一次只能加密固定长度（16 字节）的数据。为了加密任意长度的明文，需要两个机制：</p>
+<ul>
+<li><strong>工作模式</strong>：ECB、CBC 等，决定多个分组之间如何关联。</li>
+<li><strong>填充（Padding）</strong>：最常见的是 <a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/PKCS/issues/7" title="GitHub Issue: squidfunk/PKCS #7">PKCS#7</a>，把明文补齐到 16 的整数倍。规则很简单：缺 N 个字节就补 N 个值为 N 的字节。例如缺 3 字节就补 <code>\x03\x03\x03</code>；恰好整除则额外补一整块 16 个 <code>\x10</code>。解密后校验填充是否合法——这个"校验"就是 Padding Oracle 攻击的入口。</li>
+</ul>
+<p>PHP 中常见的加密写法：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nv">$cipher</span> <span class="o">=</span> <span class="nb">openssl_encrypt</span><span class="p">(</span><span class="nv">$data</span><span class="p">,</span> <span class="s1">'AES-128-ECB'</span><span class="p">,</span> <span class="nv">$key</span><span class="p">);</span>          <span class="c1">// ECB 模式</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nv">$cipher</span> <span class="o">=</span> <span class="nb">openssl_encrypt</span><span class="p">(</span><span class="nv">$data</span><span class="p">,</span> <span class="s1">'AES-128-CBC'</span><span class="p">,</span> <span class="nv">$key</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">$iv</span><span class="p">);</span>  <span class="c1">// CBC 模式，需要 IV</span>
+</code></pre></div>
+<h2 id="ecb">ECB 分组重排<a class="headerlink" href="#ecb" title="Permanent link">¶</a></h2>
+<h3 id="_3">原理<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<p>ECB（Electronic Codebook）模式下，每个 16 字节的明文块独立加密，<strong>相同的明文块永远得到相同的密文块</strong>，块与块之间毫无关联。这带来两个致命问题：</p>
+<ol>
+<li><strong>块可交换/可替换</strong>：攻击者可以把密文按 16 字节切开，随意调换、复制、替换其中的块，解密后得到对应调换过的明文。</li>
+<li><strong>逐字节探测</strong>：如果攻击者能控制明文的一部分（比如用户名），而密文中又拼接了秘密信息（比如 flag），就可以一次一个字节地把秘密"撞"出来。</li>
+</ol>
+<h3 id="ecb_1">例题一：ECB 块交换提权<a class="headerlink" href="#ecb_1" title="Permanent link">¶</a></h3>
+<p>题目源码：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nv">$key</span> <span class="o">=</span> <span class="nb">getenv</span><span class="p">(</span><span class="s1">'KEY'</span><span class="p">);</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nv">$user</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'user'</span><span class="p">]</span> <span class="o">??</span> <span class="s1">'guest'</span><span class="p">;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nv">$plain</span> <span class="o">=</span> <span class="s2">"user=</span><span class="si">$user</span><span class="s2">&amp;role=guest"</span><span class="p">;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nv">$cipher</span> <span class="o">=</span> <span class="nb">openssl_encrypt</span><span class="p">(</span><span class="nv">$plain</span><span class="p">,</span> <span class="s1">'AES-128-ECB'</span><span class="p">,</span> <span class="nv">$key</span><span class="p">);</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'token'</span><span class="p">]))</span> <span class="p">{</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="nv">$dec</span> <span class="o">=</span> <span class="nb">openssl_decrypt</span><span class="p">(</span><span class="nb">base64_decode</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'token'</span><span class="p">]),</span> <span class="s1">'AES-128-ECB'</span><span class="p">,</span> <span class="nv">$key</span><span class="p">);</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="k">if</span> <span class="p">(</span><span class="nb">strpos</span><span class="p">(</span><span class="nv">$dec</span><span class="p">,</span> <span class="s1">'role=admin'</span><span class="p">)</span> <span class="o">!==</span> <span class="k">false</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>        <span class="k">echo</span> <span class="nb">getenv</span><span class="p">(</span><span class="s1">'FLAG'</span><span class="p">);</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>        <span class="k">echo</span> <span class="s1">'not admin'</span><span class="p">;</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="p">}</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="p">}</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="k">echo</span> <span class="nb">base64_encode</span><span class="p">(</span><span class="nv">$cipher</span><span class="p">);</span>
+</code></pre></div>
+<p>明文按块排列如下（每块 16 字节）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>user=guest&amp;role= | guest\x0c\x0c\x0c...  (填充)
+</code></pre></div>
+<p>目标：构造出包含 <code>role=admin</code> 的密文。</p>
+<p><strong>推导</strong>：构造一个特殊的 <code>user</code>，让 <code>role=admin</code> 恰好单独占满一个块。<code>user=</code> 占 5 字节，补 11 个 <code>a</code> 填满第一块；<code>role=admin</code> 是 10 字节，后面再补 6 个 <code>a</code> 填满第二块。即 <code>user</code> 参数取</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>"aaaaaaaaaaa" + "role=admin" + "aaaaaa"
+</code></pre></div>
+<p>明文分块为：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>块1: user=aaaaaaaaaaa
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>块2: role=adminaaaaaa
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>块3: &amp;role=guest\x05\x05\x05\x05\x05   (PKCS#7 填充)
+</code></pre></div>
+<p>拿到密文后按 16 字节切开：<code>C1 | C2 | C3</code>。把 <code>C2</code>（解出 <code>role=adminaaaaaa</code> 的块）和 <code>C3</code>（解出 <code>&amp;role=guest</code> 的块）交换或直接用 <code>C1 | C2</code> 拼接提交：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>token = base64encode(C1 || C2)
+</code></pre></div>
+<p>解密结果为 <code>user=aaaaaaaaaaarole=adminaaaaaa</code>，包含 <code>role=admin</code>，拿到 flag。Python 利用脚本：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">base64</span><span class="o">,</span><span class="w"> </span><span class="nn">requests</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">url</span> <span class="o">=</span> <span class="s1">'http://target/'</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">payload_user</span> <span class="o">=</span> <span class="s1">'a'</span> <span class="o">*</span> <span class="mi">11</span> <span class="o">+</span> <span class="s1">'role=admin'</span> <span class="o">+</span> <span class="s1">'a'</span> <span class="o">*</span> <span class="mi">6</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">'user'</span><span class="p">:</span> <span class="n">payload_user</span><span class="p">})</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="n">ct</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="n">blocks</span> <span class="o">=</span> <span class="p">[</span><span class="n">ct</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">16</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">ct</span><span class="p">),</span> <span class="mi">16</span><span class="p">)]</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="n">token</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">blocks</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">blocks</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">'token'</span><span class="p">:</span> <span class="n">token</span><span class="p">})</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="ecb-byte-at-a-time">例题二：ECB 逐字节探测（Byte-at-a-time）<a class="headerlink" href="#ecb-byte-at-a-time" title="Permanent link">¶</a></h3>
+<p>题目特征：服务端把你提交的输入和 flag 拼接后加密返回：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nv">$key</span> <span class="o">=</span> <span class="nb">getenv</span><span class="p">(</span><span class="s1">'KEY'</span><span class="p">);</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nv">$flag</span> <span class="o">=</span> <span class="nb">getenv</span><span class="p">(</span><span class="s1">'FLAG'</span><span class="p">);</span> <span class="c1">// 未知</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nv">$input</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'data'</span><span class="p">]</span> <span class="o">??</span> <span class="s1">''</span><span class="p">;</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="nv">$plain</span> <span class="o">=</span> <span class="nv">$input</span> <span class="o">.</span> <span class="nv">$flag</span><span class="p">;</span>          <span class="c1">// 攻击者输入在前，秘密在后</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="k">echo</span> <span class="nb">base64_encode</span><span class="p">(</span><span class="nb">openssl_encrypt</span><span class="p">(</span><span class="nv">$plain</span><span class="p">,</span> <span class="s1">'AES-128-ECB'</span><span class="p">,</span> <span class="nv">$key</span><span class="p">));</span>
+</code></pre></div>
+<p><strong>原理推导</strong>：假设 flag 未知，我们先提交 15 个 <code>a</code>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>明文: aaaaaaaaaaaaaaa | F...............
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>      块1(15个a+flag第1字节)
+</code></pre></div>
+<p>块 1 的前 15 字节我们已知，第 16 字节是 flag 的第一个字符（记为 <code>c1</code>）。记下此时块 1 的密文 <code>T</code>。然后暴力枚举：提交 <code>aaaaaaaaaaaaaaa</code> + <code>X</code>（X 遍历所有可见字符），当某个 X 使块 1 密文等于 <code>T</code> 时，<code>X == c1</code>。</p>
+<p>接着提交 14 个 <code>a</code>，则块 1 的第 15、16 字节是 <code>c1c2</code>，同样方法撞出 <code>c2</code>。依此类推，每轮猜一个字节，直到把 flag 全部猜完。每猜一个字节最多 256 次请求（实际只枚举可见字符，几十次即可）。</p>
+<p>利用脚本：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">base64</span><span class="o">,</span><span class="w"> </span><span class="nn">requests</span><span class="o">,</span><span class="w"> </span><span class="nn">string</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">url</span> <span class="o">=</span> <span class="s1">'http://target/'</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">enc</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">'data'</span><span class="p">:</span> <span class="n">data</span><span class="p">})</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    <span class="k">return</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="c1"># 1. 先确定 flag 长度：不断增加填充，观察密文长度跳变</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="n">base_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">enc</span><span class="p">(</span><span class="s1">''</span><span class="p">))</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">enc</span><span class="p">(</span><span class="s1">'a'</span> <span class="o">*</span> <span class="n">n</span><span class="p">))</span> <span class="o">==</span> <span class="n">base_len</span><span class="p">:</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>    <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="n">flag_len</span> <span class="o">=</span> <span class="n">base_len</span> <span class="o">-</span> <span class="n">n</span>  <span class="c1"># 粗略估计，实际题目需结合块边界细算</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="n">flag</span> <span class="o">=</span> <span class="s1">''</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="n">charset</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">printable</span>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">flag_len</span><span class="p">):</span>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>    <span class="n">pad</span> <span class="o">=</span> <span class="s1">'a'</span> <span class="o">*</span> <span class="p">(</span><span class="mi">15</span> <span class="o">-</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">16</span><span class="p">)</span>          <span class="c1"># 让未知字节落在某块末尾</span>
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>    <span class="n">block_idx</span> <span class="o">=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pad</span><span class="p">)</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span> <span class="o">//</span> <span class="mi">16</span>   <span class="c1"># 目标块序号</span>
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>    <span class="n">target</span> <span class="o">=</span> <span class="n">enc</span><span class="p">(</span><span class="n">pad</span><span class="p">)[</span><span class="n">block_idx</span><span class="o">*</span><span class="mi">16</span><span class="p">:(</span><span class="n">block_idx</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">16</span><span class="p">]</span>
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">charset</span><span class="p">:</span>
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>        <span class="n">trial</span> <span class="o">=</span> <span class="n">pad</span> <span class="o">+</span> <span class="n">flag</span> <span class="o">+</span> <span class="n">c</span>
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>        <span class="k">if</span> <span class="n">enc</span><span class="p">(</span><span class="n">trial</span><span class="p">)[</span><span class="n">block_idx</span><span class="o">*</span><span class="mi">16</span><span class="p">:(</span><span class="n">block_idx</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">16</span><span class="p">]</span> <span class="o">==</span> <span class="n">target</span><span class="p">:</span>
+<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>            <span class="n">flag</span> <span class="o">+=</span> <span class="n">c</span>
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>            <span class="k">break</span>
+<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>防御与识别</strong>：做题时看到密文按块重复、或改输入导致密文只有部分块变化，基本就是 ECB。防御上应使用 CBC/GCM 等带 IV 的模式。</p>
+<h2 id="cbc">CBC 比特翻转<a class="headerlink" href="#cbc" title="Permanent link">¶</a></h2>
+<h3 id="_4">原理<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<p>CBC（Cipher Block Chaining）模式中，每个明文块先与前一个密文块异或再加密：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>加密: C[i] = E(P[i] XOR C[i-1])，C[0] 用 IV 代替
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>解密: P[i] = D(C[i]) XOR C[i-1]
+</code></pre></div>
+<p>注意解密公式：<code>P[i]</code> 由 <code>D(C[i])</code>（固定值，我们只改密文不改密钥）和 <code>C[i-1]</code>（上一个密文块，攻击者可控）异或得到。因此：</p>
+<blockquote>
+<p><strong>修改 <code>C[i-1]</code> 的第 k 个字节，<code>P[i]</code> 的第 k 个字节就会跟着变，变化量就是我们异或进去的值。</strong></p>
+</blockquote>
+<p>代价是：<code>C[i-1]</code> 被改动后，它自己解出的 <code>P[i-1]</code> 会变成乱码（因为 <code>D</code> 输入被破坏了）。所以通常改第一块明文要动 IV（IV 没有"前一块"，不会产生乱码），改后面的块则要忍受前一块变乱码，或想办法修复。</p>
+<p>公式化：想把 <code>P[i]</code> 改成 <code>P'[i]</code>，只需：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>C'[i-1] = C[i-1] XOR P[i] XOR P'[i]
+</code></pre></div>
+<p>因为 <code>P'[i] = D(C[i]) XOR C'[i-1] = P[i] XOR C[i-1] XOR C'[i-1]</code>。</p>
+<h3 id="_5">例题：登录态翻转<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<p>题目源码：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="nv">$key</span> <span class="o">=</span> <span class="nb">getenv</span><span class="p">(</span><span class="s1">'KEY'</span><span class="p">);</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="nv">$iv</span>  <span class="o">=</span> <span class="nb">random_bytes</span><span class="p">(</span><span class="mi">16</span><span class="p">);</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="nv">$user</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'user'</span><span class="p">]</span> <span class="o">??</span> <span class="s1">'guest'</span><span class="p">;</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="nv">$plain</span> <span class="o">=</span> <span class="s2">"user=</span><span class="si">$user</span><span class="s2">&amp;role=guest"</span><span class="p">;</span>   <span class="c1">// role 固定为 guest</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="nv">$ct</span> <span class="o">=</span> <span class="nb">openssl_encrypt</span><span class="p">(</span><span class="nv">$plain</span><span class="p">,</span> <span class="s1">'AES-128-CBC'</span><span class="p">,</span> <span class="nv">$key</span><span class="p">,</span> <span class="nx">OPENSSL_RAW_DATA</span><span class="p">,</span> <span class="nv">$iv</span><span class="p">);</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="nv">$cookie</span> <span class="o">=</span> <span class="nb">base64_encode</span><span class="p">(</span><span class="nv">$iv</span> <span class="o">.</span> <span class="nv">$ct</span><span class="p">);</span> <span class="c1">// IV 拼在密文前面下发</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'cookie'</span><span class="p">]))</span> <span class="p">{</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>    <span class="nv">$raw</span> <span class="o">=</span> <span class="nb">base64_decode</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'cookie'</span><span class="p">]);</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>    <span class="nv">$iv</span>  <span class="o">=</span> <span class="nb">substr</span><span class="p">(</span><span class="nv">$raw</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">16</span><span class="p">);</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>    <span class="nv">$ct</span>  <span class="o">=</span> <span class="nb">substr</span><span class="p">(</span><span class="nv">$raw</span><span class="p">,</span> <span class="mi">16</span><span class="p">);</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>    <span class="nv">$dec</span> <span class="o">=</span> <span class="nb">openssl_decrypt</span><span class="p">(</span><span class="nv">$ct</span><span class="p">,</span> <span class="s1">'AES-128-CBC'</span><span class="p">,</span> <span class="nv">$key</span><span class="p">,</span> <span class="nx">OPENSSL_RAW_DATA</span><span class="p">,</span> <span class="nv">$iv</span><span class="p">);</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>    <span class="k">if</span> <span class="p">(</span><span class="nv">$dec</span> <span class="o">&amp;&amp;</span> <span class="nb">strpos</span><span class="p">(</span><span class="nv">$dec</span><span class="p">,</span> <span class="s1">'role=admin'</span><span class="p">)</span> <span class="o">!==</span> <span class="k">false</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>        <span class="k">echo</span> <span class="nb">getenv</span><span class="p">(</span><span class="s1">'FLAG'</span><span class="p">);</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>    <span class="p">}</span>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="p">}</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="k">echo</span> <span class="nv">$cookie</span><span class="p">;</span>
+</code></pre></div>
+<p><strong>推导</strong>：注意这道题的校验是 <code>strpos</code> 找子串，而 <code>user</code> 参数本身就会拼进明文。令 <code>$user = "xxxxx&amp;role=admin"</code>，明文为：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>块1: user=xxxxx&amp;role=a
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>块2: dmin&amp;role=guest\x01   (PKCS#7 填充)
+</code></pre></div>
+<p><code>role=admin</code> 已经直接出现在明文里，根本不需要比特翻转——这说明本题的考点其实是 <strong>注入分隔符</strong>。为了演示真正的比特翻转，把校验改成全等比较的经典题：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="nv">$key</span> <span class="o">=</span> <span class="nb">getenv</span><span class="p">(</span><span class="s1">'KEY'</span><span class="p">);</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="nv">$iv</span>  <span class="o">=</span> <span class="nb">random_bytes</span><span class="p">(</span><span class="mi">16</span><span class="p">);</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="nv">$plain</span> <span class="o">=</span> <span class="s2">"role=guest;uid=1000;"</span><span class="p">;</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="nv">$ct</span> <span class="o">=</span> <span class="nb">openssl_encrypt</span><span class="p">(</span><span class="nv">$plain</span><span class="p">,</span> <span class="s1">'AES-128-CBC'</span><span class="p">,</span> <span class="nv">$key</span><span class="p">,</span> <span class="nx">OPENSSL_RAW_DATA</span><span class="p">,</span> <span class="nv">$iv</span><span class="p">);</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="nv">$cookie</span> <span class="o">=</span> <span class="nb">base64_encode</span><span class="p">(</span><span class="nv">$iv</span> <span class="o">.</span> <span class="nv">$ct</span><span class="p">);</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'cookie'</span><span class="p">]))</span> <span class="p">{</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>    <span class="nv">$raw</span> <span class="o">=</span> <span class="nb">base64_decode</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'cookie'</span><span class="p">]);</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>    <span class="nv">$dec</span> <span class="o">=</span> <span class="nb">openssl_decrypt</span><span class="p">(</span><span class="nb">substr</span><span class="p">(</span><span class="nv">$raw</span><span class="p">,</span> <span class="mi">16</span><span class="p">),</span> <span class="s1">'AES-128-CBC'</span><span class="p">,</span> <span class="nv">$key</span><span class="p">,</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>                           <span class="nx">OPENSSL_RAW_DATA</span><span class="p">,</span> <span class="nb">substr</span><span class="p">(</span><span class="nv">$raw</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">16</span><span class="p">));</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>    <span class="k">if</span> <span class="p">(</span><span class="nv">$dec</span> <span class="o">===</span> <span class="s1">'role=admin;uid=1000;'</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>        <span class="k">echo</span> <span class="nb">getenv</span><span class="p">(</span><span class="s1">'FLAG'</span><span class="p">);</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a>    <span class="p">}</span>
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="p">}</span>
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a><span class="k">echo</span> <span class="nv">$cookie</span><span class="p">;</span>
+</code></pre></div>
+<p>明文 <code>role=guest;uid=1000;</code> 长 20 字节，分两块：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>块1: role=guest;uid=1
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>块2: 000;\x0c\x0c...（填充12字节）
+</code></pre></div>
+<p>目标：把 <code>guest</code> 翻成 <code>admin</code>。<code>guest</code> 在块 1 的第 6~10 字节（偏移 5~9）。要改块 1 的明文，需异或 IV（IV 没有前一个密文块，不会产生乱码块）：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">base64</span><span class="o">,</span><span class="w"> </span><span class="nn">requests</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="n">url</span> <span class="o">=</span> <span class="s1">'http://target/'</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="n">cookie</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="n">iv</span><span class="p">,</span> <span class="n">ct</span> <span class="o">=</span> <span class="n">cookie</span><span class="p">[:</span><span class="mi">16</span><span class="p">],</span> <span class="n">cookie</span><span class="p">[</span><span class="mi">16</span><span class="p">:]</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="n">old</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">'guest'</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="n">new</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">'admin'</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="n">off</span> <span class="o">=</span> <span class="mi">5</span>  <span class="c1"># 'guest' 在第一块中的起始偏移</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="n">iv_new</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="n">iv</span><span class="p">)</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a>    <span class="n">iv_new</span><span class="p">[</span><span class="n">off</span> <span class="o">+</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">iv</span><span class="p">[</span><span class="n">off</span> <span class="o">+</span> <span class="n">i</span><span class="p">]</span> <span class="o">^</span> <span class="n">old</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">^</span> <span class="n">new</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a>
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="n">payload</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="n">iv_new</span><span class="p">)</span> <span class="o">+</span> <span class="n">ct</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">'cookie'</span><span class="p">:</span> <span class="n">payload</span><span class="p">})</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</code></pre></div>
+<p>核心就是公式 <code>IV' = IV XOR "guest" XOR "admin"</code>（对应字节位置）。提交后解密出的第一块变成 <code>role=admin;uid=1</code>，第二块不变，整体与期望明文完全相等，拿到 flag。</p>
+<h2 id="padding-oracle">Padding Oracle<a class="headerlink" href="#padding-oracle" title="Permanent link">¶</a></h2>
+<h3 id="_6">原理<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<p>承接 CBC 的解密公式 <code>P[i] = D(C[i]) XOR C[i-1]</code>。如果服务端在解密后会 <strong>校验 <a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/PKCS/issues/7" title="GitHub Issue: squidfunk/PKCS #7">PKCS#7</a> 填充并给出不同的响应</strong>（比如填充错误返回 500，填充正确但业务校验失败返回 200/403），这个"填充是否合法"的 1 bit 信息就构成一个 Oracle，可以把任意密文块逐字节解出来——<strong>不需要知道密钥</strong>。</p>
+<p>以最后一个字节为例。设我们要解 <code>P[i]</code> 的最后一字节，记 <code>D(C[i])</code> 的最后一字节为 <code>d</code>（固定未知）。我们伪造 <code>C'[i-1]</code>，不断枚举其最后一字节 <code>x</code>，发送 <code>C'[i-1] || C[i]</code> 给服务器。当服务器返回"填充合法"时，说明解密结果最后一字节是 <code>\x01</code>（合法填充的一种），即：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>d XOR x = 0x01  =&gt;  d = x XOR 0x01  =&gt;  P[i]最后一字节 = d XOR C[i-1]最后一字节
+</code></pre></div>
+<p>接着构造让最后两字节为 <code>\x02\x02</code>：最后一字节用已解出的 <code>d</code> 反推固定，枚举倒数第二字节，直到服务器再次报填充合法。依此类推，16 字节全部解出，每字节最多 256 次请求。对每个密文块重复此过程，即可解开整个密文；反过来也能用它 <strong>加密任意明文</strong>（从后往前构造）。</p>
+<h3 id="_7">利用思路（做题步骤）<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<ol>
+<li>找到一个能提交密文、且服务端对不同解密结果有 <strong>可区分响应</strong> 的点（状态码、响应内容、响应时间的差异都算）。</li>
+<li>写脚本枚举：每次把目标块 <code>C[i]</code> 配上伪造的前一块 <code>R</code>（全零初始化），从最后一个字节开始，令 <code>R[15]</code> 遍历 0~255，记录使填充合法的值。</li>
+<li>注意 <code>\x01</code> 的歧义：如果明文末字节本身就是 <code>\x01</code>，伪造时可能误判，一般通过再改动倒数第二字节验证来排除。</li>
+<li>解出明文后若题目要求伪造明文（如 <code>role=admin</code>），反向构造密文即可。</li>
+</ol>
+<p>成熟工具可直接用：<code>padbuster</code>（Perl 老牌工具）、Python 的 <code>paddingoracle</code> 库，或自己按上面逻辑写 30 行脚本。</p>
+<h3 id="_8">例题思路<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
+<p>经典题目形态（如 Jarvis OJ 的 Shiro 反序列化前的 Padding Oracle、或各类"加密 cookie 登录"题）：cookie 是 <code>IV || AES-CBC(username)</code>，登录时解密，填充错误返回错误页面 A，填充正确但用户不存在返回页面 B。用 padbuster：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>padbuster<span class="w"> </span><span class="s2">"http://target/login"</span><span class="w"> </span><span class="s2">"抓到的cookie值"</span><span class="w"> </span><span class="m">16</span><span class="w"> </span>--cookies<span class="w"> </span><span class="s2">"auth=抓到的cookie值"</span><span class="w"> </span>-encoding<span class="w"> </span><span class="m">0</span>
+</code></pre></div>
+<p>解出明文结构后，再用 padbuster 的加密模式伪造 <code>admin</code> 的 cookie：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>padbuster<span class="w"> </span><span class="s2">"http://target/login"</span><span class="w"> </span><span class="s2">"cookie"</span><span class="w"> </span><span class="m">16</span><span class="w"> </span>--cookies<span class="w"> </span><span class="s2">"auth=cookie"</span><span class="w"> </span>-encoding<span class="w"> </span><span class="m">0</span><span class="w"> </span>-plaintext<span class="w"> </span><span class="s2">"user=admin"</span>
+</code></pre></div>
+<p>拿到伪造 cookie 替换后即为 admin 身份。</p>
+<h2 id="length-extension">哈希长度扩展攻击（Length Extension）<a class="headerlink" href="#length-extension" title="Permanent link">¶</a></h2>
+<h3 id="_9">原理<a class="headerlink" href="#_9" title="Permanent link">¶</a></h3>
+<p>MD5、SHA1、SHA256 等基于 Merkle–Damgård 结构的哈希，计算过程是"状态机"：把消息分块，逐块更新内部状态，最后的内部状态就是哈希值。这意味着：</p>
+<blockquote>
+<p>知道 <code>H(secret || data)</code> 和 <code>secret</code> 的 <strong>长度</strong>（不需要知道内容），就可以把哈希值当作中间状态，继续追加数据，算出 <code>H(secret || data || padding || append)</code> 的合法哈希。</p>
+</blockquote>
+<p>如果服务端用 <code>md5($secret . $data)</code> 做签名校验，攻击者就能在不知道 <code>$secret</code> 的情况下，伪造出追加了恶意内容（如 <code>&amp;role=admin</code>）的合法签名。注意 <code>sha256($data . $secret)</code>（秘密在后）<strong>不受</strong> 此攻击影响；HMAC 也不受影响。</p>
+<h3 id="hashpump">工具：hashpump<a class="headerlink" href="#hashpump" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># 安装</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/mheistermann/HashPump.git<span class="w">  </span><span class="c1"># 或 apt install hashpump / pip 等</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="c1"># 用法: hashpump -s 已知签名 -d 已知数据 -k 密钥长度 -a 追加数据</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>hashpump<span class="w"> </span>-s<span class="w"> </span><span class="s1">'571580b26c65f306376d4f64e53cb5c7'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="w">         </span>-d<span class="w"> </span><span class="s1">'user=guest'</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="w">         </span>-k<span class="w"> </span><span class="m">16</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="w">         </span>-a<span class="w"> </span><span class="s1">'&amp;role=admin'</span>
+</code></pre></div>
+<p>输出两行：新的签名，以及包含填充的新数据（中间会有 <code>%80</code>、<code>%00</code> 之类的 URL 编码字节，直接作为参数提交即可）。密钥长度不知道就枚举（比如 8~32）逐个试。</p>
+<h3 id="_10">例题<a class="headerlink" href="#_10" title="Permanent link">¶</a></h3>
+<p>题目源码：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="nv">$secret</span> <span class="o">=</span> <span class="nb">getenv</span><span class="p">(</span><span class="s1">'SECRET'</span><span class="p">);</span> <span class="c1">// 未知，长度已知为 16（或需枚举）</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="nv">$data</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'data'</span><span class="p">]</span> <span class="o">??</span> <span class="s1">''</span><span class="p">;</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="nv">$sign</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'sign'</span><span class="p">]</span> <span class="o">??</span> <span class="s1">''</span><span class="p">;</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="k">if</span> <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$data</span><span class="p">))</span> <span class="p">{</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>    <span class="nv">$d</span> <span class="o">=</span> <span class="s1">'user=guest'</span><span class="p">;</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>    <span class="k">echo</span> <span class="s1">'data='</span> <span class="o">.</span> <span class="nv">$d</span> <span class="o">.</span> <span class="s1">'&amp;sign='</span> <span class="o">.</span> <span class="nb">md5</span><span class="p">(</span><span class="nv">$secret</span> <span class="o">.</span> <span class="nv">$d</span><span class="p">);</span>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>    <span class="k">if</span> <span class="p">(</span><span class="nb">md5</span><span class="p">(</span><span class="nv">$secret</span> <span class="o">.</span> <span class="nv">$data</span><span class="p">)</span> <span class="o">===</span> <span class="nv">$sign</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>        <span class="nb">parse_str</span><span class="p">(</span><span class="nv">$data</span><span class="p">,</span> <span class="nv">$p</span><span class="p">);</span>
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>        <span class="k">if</span> <span class="p">((</span><span class="nv">$p</span><span class="p">[</span><span class="s1">'role'</span><span class="p">]</span> <span class="o">??</span> <span class="s1">''</span><span class="p">)</span> <span class="o">===</span> <span class="s1">'admin'</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>            <span class="k">echo</span> <span class="nb">getenv</span><span class="p">(</span><span class="s1">'FLAG'</span><span class="p">);</span>
+<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>        <span class="p">}</span>
+<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a>    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a>        <span class="k">echo</span> <span class="s1">'bad sign'</span><span class="p">;</span>
+<a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a>    <span class="p">}</span>
+<a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>解题过程</strong>：</p>
+<ol>
+<li>直接访问拿到 <code>data=user=guest&amp;sign=57158...</code>。</li>
+<li>用 hashpump 扩展：</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>hashpump<span class="w"> </span>-s<span class="w"> </span><span class="s1">'571580b26c65f306376d4f64e53cb5c7'</span><span class="w"> </span>-d<span class="w"> </span><span class="s1">'user=guest'</span><span class="w"> </span>-k<span class="w"> </span><span class="m">16</span><span class="w"> </span>-a<span class="w"> </span><span class="s1">'&amp;role=admin'</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="c1"># 输出:</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="c1"># 新签名: 9f2c...</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="c1"># 新数据: user=guest\x80\x00\x00...\xd0\x00\x00\x00\x00\x00\x00\x00&amp;role=admin</span>
+</code></pre></div>
+<ol>
+<li>把新数据 URL 编码后连同新签名提交：</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="err">GET /?data=user%3dguest%80%00%00%00%00%00%00%00%00%d0%00%00%00%00%00%00%00%26role%3dadmin&amp;sign=9f2c...</span>
+</code></pre></div>
+<p>服务端计算 <code>md5($secret . $data)</code>：由于 <code>$secret . $data</code> 正好等于 <code>secret || user=guest || glue padding || &amp;role=admin</code>，其 MD5 与 hashpump 算出的新签名一致，校验通过；<code>parse_str</code> 解析出 <code>role=admin</code>，拿到 flag。</p>
+<p>若密钥长度未知，写个循环枚举 <code>-k 8..32</code>，看哪个长度返回的不是 <code>bad sign</code>。</p>
+<h2 id="mt_rand">随机数问题：mt_rand 预测<a class="headerlink" href="#mt_rand" title="Permanent link">¶</a></h2>
+<h3 id="_11">原理<a class="headerlink" href="#_11" title="Permanent link">¶</a></h3>
+<p>PHP 的 <code>mt_rand()</code> 基于梅森旋转算法（Mersenne Twister），<strong>不是密码学安全的随机数</strong>。问题有二：</p>
+<ol>
+<li><strong>同种子同序列</strong>：<code>mt_srand($seed)</code> 播种后，整个随机序列完全确定。如果种子可猜（如时间戳、<code>getmypid()</code>、0~2^31 的小范围值），攻击者可以爆破种子，复现全部"随机"输出——token、密码重置链接、加密密钥全部泄露。</li>
+<li><strong>状态可恢复</strong>：MT19937 的内部状态只有 624 个 32 位整数。只要能拿到 624 个连续的 32 位输出（或等价信息），就能还原整个状态，预测之后（甚至回溯之前）的所有输出。相关工具：<code>php_mt_seed</code>（已知少量输出爆破种子）、<code>mt19937</code> 状态恢复脚本。</li>
+</ol>
+<p><code>random_bytes()</code> / <code>random_int()</code> 是安全的，不受影响；<code>rand()</code>（libc 随机数）同样弱。</p>
+<h3 id="_12">例题<a class="headerlink" href="#_12" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="c1">// 重置密码功能</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="nb">mt_srand</span><span class="p">(</span><span class="nb">time</span><span class="p">());</span>   <span class="c1">// 种子是当前时间戳！</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="nv">$token</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">16</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>    <span class="nv">$token</span> <span class="o">.=</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">mt_rand</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">));</span>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="p">}</span>
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a><span class="c1">// 把 token 作为 admin 的重置凭证写入 session/数据库</span>
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="k">if</span> <span class="p">((</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'token'</span><span class="p">]</span> <span class="o">??</span> <span class="s1">''</span><span class="p">)</span> <span class="o">===</span> <span class="nb">base64_encode</span><span class="p">(</span><span class="nv">$token</span><span class="p">))</span> <span class="p">{</span>
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a>    <span class="k">echo</span> <span class="nb">getenv</span><span class="p">(</span><span class="s1">'FLAG'</span><span class="p">);</span>
+<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>解题过程</strong>：种子是 <code>time()</code>，而响应头的 <code>Date</code> 字段（或服务端时间可通过其他途径得知）直接给出种子。本地复现：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="nb">mt_srand</span><span class="p">(</span><span class="mi">1699999999</span><span class="p">);</span>  <span class="c1">// 用响应头 Date 换算出的时间戳</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="nv">$token</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">16</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>    <span class="nv">$token</span> <span class="o">.=</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">mt_rand</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">));</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="p">}</span>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="k">echo</span> <span class="nb">base64_encode</span><span class="p">(</span><span class="nv">$token</span><span class="p">);</span>
+</code></pre></div>
+<p>把时间戳前后各枚举几秒（请求发出到服务端执行可能有 1~2 秒偏差），逐个提交即可命中。另一种常见形态是种子为 <code>mt_rand()</code> 默认值或进程 PID，用 <code>php_mt_seed</code> 爆破：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="c1"># 已知一次 mt_rand(0, 1000000) 的输出为 834721，爆破种子</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>php_mt_seed<span class="w"> </span><span class="m">834721</span>
+</code></pre></div>
+<p>得到种子后本地 <code>mt_srand($seed)</code> 重放整个序列，预测出题目后续的 token。</p>
+<p><strong>做题 checklist</strong>：看到 PHP 生成 token / 密钥 / 文件名时用了 <code>mt_rand</code>、<code>rand</code>、<code>uniqid</code>、<code>time()</code> 拼接 MD5，都应首先怀疑可预测。<code>uniqid()</code> 本质也是微秒时间戳，配合 <code>Date</code> 头可爆破。</p>
+<h2 id="_13">小结<a class="headerlink" href="#_13" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">考点</th>
+<th style="text-align: left;">根因</th>
+<th style="text-align: left;">关键抓手</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ECB 重排/探测</td>
+<td style="text-align: left;">块间独立、同明文同密文</td>
+<td style="text-align: left;">16 字节切分，块交换或逐字节撞</td>
+</tr>
+<tr>
+<td style="text-align: left;">CBC 比特翻转</td>
+<td style="text-align: left;"><code>P[i] = D(C[i]) XOR C[i-1]</code>，前块可控</td>
+<td style="text-align: left;"><code>C'[i-1] = C[i-1] XOR P XOR P'</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Padding Oracle</td>
+<td style="text-align: left;">填充校验结果可区分</td>
+<td style="text-align: left;">逐字节枚举，每字节 ≤256 次</td>
+</tr>
+<tr>
+<td style="text-align: left;">长度扩展</td>
+<td style="text-align: left;">MD 结构哈希的状态延续</td>
+<td style="text-align: left;">hashpump，需知秘密长度</td>
+</tr>
+<tr>
+<td style="text-align: left;">mt_rand 预测</td>
+<td style="text-align: left;">种子可猜 / 状态可恢复</td>
+<td style="text-align: left;"><code>Date</code> 头、php_mt_seed</td>
+</tr>
+</tbody>
+</table>
+<p>这类题往往还会和本书其他章节联动：解出的密文里可能是 PHP 反序列化串（见「PHP反序列化」），伪造的 cookie 可能用于越权（见「逻辑漏洞」），随机数问题常出现在找回密码流程中。审计时只要见到 <code>openssl_encrypt</code>、<code>md5($secret...)</code>、<code>mt_rand</code>，就该条件反射地检查本节列出的几个坑。</p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../xs_leaks/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: XS-Leaks"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        XS-Leaks
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../cloud_container/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: 云与容器安全"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        云与容器安全
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#_1">密码学应用题</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_2">前置知识：分组密码与填充</a>
+        
+      </li>
+    
+      <li>
+        <a href="#ecb">ECB 分组重排</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_3">原理</a>
+        
+      </li>
+    
+      <li>
+        <a href="#ecb_1">例题一：ECB 块交换提权</a>
+        
+      </li>
+    
+      <li>
+        <a href="#ecb-byte-at-a-time">例题二：ECB 逐字节探测（Byte-at-a-time）</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#cbc">CBC 比特翻转</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_4">原理</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">例题：登录态翻转</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#padding-oracle">Padding Oracle</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_6">原理</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_7">利用思路（做题步骤）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_8">例题思路</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#length-extension">哈希长度扩展攻击（Length Extension）</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_9">原理</a>
+        
+      </li>
+    
+      <li>
+        <a href="#hashpump">工具：hashpump</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_10">例题</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#mt_rand">随机数问题：mt_rand 预测</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_11">原理</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_12">例题</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_13">小结</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

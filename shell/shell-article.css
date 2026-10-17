@@ -1,0 +1,121 @@
+/* ============================================================
+   Hello-CTF 文档页布局 shell-article.css（C 阶段）
+   material 只保留文章排版 CSS（.md-typeset 等），页面骨架全部是我们的。
+   ============================================================ */
+
+:root {
+  --md-text-font: "Noto Sans SC", var(--sans);
+  --md-code-font: "JetBrains Mono", var(--mono);
+}
+
+body {
+  background: var(--md-default-bg-color, var(--paper));
+  color: var(--md-default-fg-color, var(--ink));
+  margin: 0;
+}
+
+/* ===================== 顶部文档导航 ===================== */
+.hc-topnav {
+  position: sticky; top: 0; z-index: 40;
+  background: var(--md-default-bg-color, var(--paper));
+  border-bottom: 1px solid var(--line);
+}
+.hc-topnav-inner {
+  display: flex; gap: 2px; align-items: stretch;
+  max-width: 1200px; margin: 0 auto; padding: 0 44px;
+  overflow-x: auto; scrollbar-width: none;
+}
+.hc-topnav-inner::-webkit-scrollbar { display: none; }
+.tn-item { position: relative; font-size: 13.5px; color: var(--ink-2); white-space: nowrap; display: flex; }
+.tn-label, .tn-single {
+  display: flex; align-items: center; gap: 5px;
+  padding: 13px 12px; cursor: pointer;
+  text-decoration: none; color: inherit;
+}
+.tn-label .tn-ico, .tn-single .tn-ico { width: 14px; height: 14px; color: var(--ink-3); }
+.tn-item:hover .tn-ico, .tn-item.on .tn-ico { color: var(--accent); }
+.tn-label .tn-chev { width: 12px; height: 12px; color: var(--ink-3); transition: transform .2s; }
+.tn-item:hover { color: var(--ink); }
+.tn-item:hover .tn-chev { transform: rotate(180deg); }
+.tn-item.on { color: var(--accent); font-weight: 700; }
+.tn-item.on::after {
+  content: ""; position: absolute; left: 12px; right: 12px; bottom: -1px;
+  height: 2px; border-radius: 2px; background: var(--accent);
+}
+.tn-drop {
+  display: none; position: fixed; top: 0; left: 0; z-index: 90;
+  min-width: 210px; max-height: 62vh; overflow-y: auto; scrollbar-width: thin;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 12px;
+  box-shadow: var(--shadow-pop); padding: 8px;
+}
+.tn-item:hover .tn-drop, .tn-item:focus-within .tn-drop { display: block; }
+.tn-link { display: block; padding: 6px 10px; font-size: 13px; color: var(--ink-2); border-radius: 8px; text-decoration: none; font-weight: 400; }
+.tn-link:hover { background: var(--wash); color: var(--ink); }
+.tn-link.on { color: var(--accent); background: var(--accent-soft); font-weight: 700; }
+.tn-group { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; color: var(--ink-3); padding: 9px 10px 3px; }
+
+/* ===================== 文章 + TOC 双栏 ===================== */
+.doc-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 240px;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 44px 24px;
+}
+.hc-article { min-width: 0; }
+
+.hc-toc {
+  position: sticky; top: 32px; align-self: start;
+  max-height: calc(100vh - 64px); overflow-y: auto; scrollbar-width: thin;
+  border-left: 1px solid var(--line); padding-left: 16px;
+  font-size: 12.5px;
+}
+.hc-toc-cap { font-family: var(--mono); font-size: 10.5px; letter-spacing: .14em; color: var(--ink-3); margin-bottom: 8px; }
+.hc-toc ul { list-style: none; padding-left: 0; margin: 0; }
+.hc-toc ul ul { padding-left: 12px; }
+.hc-toc li { margin: 0; }
+.hc-toc a { color: var(--ink-2); text-decoration: none; display: block; padding: 3px 0; line-height: 1.55; }
+.hc-toc a:hover, .hc-toc a.on { color: var(--accent); }
+
+/* ===================== 页脚 ===================== */
+.hc-footer {
+  border-top: 1px solid var(--line); margin-top: 40px;
+  padding: 22px 44px; font-size: 13px; color: var(--ink-3);
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+}
+.hc-footer .links a { color: inherit; text-decoration: none; margin-left: 16px; font-family: var(--mono); font-size: 12px; }
+.hc-footer .links a:hover { color: var(--accent); }
+
+/* ===================== 侧栏内的文档目录树 ===================== */
+.hc-doc-nav-slot { margin: 2px 0 4px; }
+#hcDocNav { background: transparent; width: auto; }
+#hcDocNav .md-nav__list { padding: 0; }
+#hcDocNav .md-nav__list .md-nav__list { padding-left: 10px; }
+#hcDocNav .md-nav__link { font-size: 12.5px; padding: 5px 10px; border-radius: 8px; color: var(--ink-2); }
+#hcDocNav .md-nav__link:hover { background: var(--wash); color: var(--ink); }
+#hcDocNav .md-nav__link--active { color: var(--accent); font-weight: 700; background: var(--accent-soft); }
+#hcDocNav .md-nav__icon { display: none; }
+#hcDocNav .md-nav__title { display: none; }
+
+/* ===================== 代码复制按钮（material bundle 移除后自实现） ===================== */
+.md-typeset pre { position: relative; }
+.hc-copy {
+  position: absolute; top: 6px; right: 6px; z-index: 2;
+  font-family: var(--mono); font-size: 10.5px;
+  border: 1px solid var(--line); border-radius: 6px;
+  background: var(--paper); color: var(--ink-3);
+  padding: 2px 8px; cursor: pointer; opacity: 0; transition: opacity .15s;
+}
+.md-typeset pre:hover .hc-copy { opacity: 1; }
+.hc-copy:hover { color: var(--accent); border-color: var(--accent); }
+
+/* ===================== 响应式 ===================== */
+@media (max-width: 1180px) {
+  .doc-layout { grid-template-columns: minmax(0, 1fr); }
+  .hc-toc { display: none; }
+}
+@media (max-width: 860px) {
+  .doc-layout { padding: 76px 18px 24px; }
+  .hc-footer { padding: 18px; }
+}
