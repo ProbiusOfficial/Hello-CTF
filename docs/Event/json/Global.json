@@ -1,41 +1,5 @@
 [
     {
-        "比赛名称": "Securinets CTF Quals 2026",
-        "比赛时间": "2026-10-17 17:00:00 - 2026-10-19 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3364.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.securinets.tn/",
-        "比赛标志": "https://ctftime.org/media/events/logo_red_copy_1_2.jpg",
-        "比赛权重": "85.12",
-        "赛事主办": "Securinets (https://ctftime.org/team/5084)",
-        "比赛ID": "105",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "SOLAR CTF 2026",
-        "比赛时间": "2026-10-17 17:00:00 - 2026-10-18 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3471.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://solarctf.ru/",
-        "比赛标志": "https://ctftime.org/media/events/ctf_time_4.png",
-        "比赛权重": "0",
-        "赛事主办": "SOLARCTF (https://ctftime.org/team/451200)",
-        "比赛ID": "1723",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "DEADFACE CTF 2026",
-        "比赛时间": "2026-10-17 22:00:00 - 2026-10-19 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3279.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.deadface.io/",
-        "比赛标志": "https://ctftime.org/media/events/logo_deadface_ctf_2026.png",
-        "比赛权重": "35.39",
-        "赛事主办": "Cyber Hacktics (https://ctftime.org/team/127017)",
-        "比赛ID": "487",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "SAS CTF 2026 Finals",
         "比赛时间": "2026-10-20 11:00:00 - 2026-10-20 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3409.ics",
@@ -180,6 +144,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "CTF@AC26 - Finals",
+        "比赛时间": "2026-10-30 18:00:00 - 2026-11-01 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3463.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.ac.upt.ro/",
+        "比赛标志": "https://ctftime.org/media/events/CTFAC26_1.png",
+        "比赛权重": "25.00",
+        "赛事主办": "UPT-CTF (https://ctftime.org/team/276942)",
+        "比赛ID": "1337",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "HI Cyber Con 2026 CTF",
         "比赛时间": "2026-10-30 22:00:00 - 2026-11-01 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3460.ics",
@@ -213,6 +189,18 @@
         "比赛权重": "0.00",
         "赛事主办": "ctfcup (https://ctftime.org/team/203499)",
         "比赛ID": "864",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "StealthCup 2026",
+        "比赛时间": "2026-10-31 21:00:00 - 2026-11-01 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3482.ics",
+        "比赛形式": "Hack quest",
+        "比赛链接": "https://stealth.ait.ac.at/",
+        "比赛标志": "",
+        "比赛权重": "0.00",
+        "赛事主办": "0x01DA (https://ctftime.org/team/104949)",
+        "比赛ID": "1248",
         "比赛状态": "oncoming"
     },
     {
@@ -444,6 +432,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "bi0sCTF 2026",
+        "比赛时间": "2026-12-05 13:00:00 - 2026-12-07 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3480.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bi0s.in/",
+        "比赛标志": "https://ctftime.org/media/events/dark-logo_1.png",
+        "比赛权重": "79.51",
+        "赛事主办": "bi0s (https://ctftime.org/team/662)",
+        "比赛ID": "31",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "niteCTF 2026",
         "比赛时间": "2026-12-11 20:00:00 - 2026-12-13 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3367.ics",
@@ -504,6 +504,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Undutmaning 2027",
+        "比赛时间": "2027-03-20 19:00:00 - 2027-03-21 03:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3481.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://undutmaning.se/",
+        "比赛标志": "https://ctftime.org/media/events/Undutmaning_ctfd_1.jpg",
+        "比赛权重": "44.75",
+        "赛事主办": "Undutmaning (https://ctftime.org/team/212504)",
+        "比赛ID": "885",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Pointer Overflow CTF - 2026",
         "比赛时间": "2026-09-27 22:00:00 - 2026-12-06 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3020.ics",
@@ -525,6 +537,42 @@
         "比赛权重": "0",
         "赛事主办": "BUG PWN (https://ctftime.org/team/182428)",
         "比赛ID": "968",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Securinets CTF Quals 2026",
+        "比赛时间": "2026-10-17 17:00:00 - 2026-10-19 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3364.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.securinets.tn/",
+        "比赛标志": "https://ctftime.org/media/events/logo_red_copy_1_2.jpg",
+        "比赛权重": "85.12",
+        "赛事主办": "Securinets (https://ctftime.org/team/5084)",
+        "比赛ID": "105",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "SOLAR CTF 2026",
+        "比赛时间": "2026-10-17 17:00:00 - 2026-10-18 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3471.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://solarctf.ru/",
+        "比赛标志": "https://ctftime.org/media/events/ctf_time_4.png",
+        "比赛权重": "0",
+        "赛事主办": "SOLARCTF (https://ctftime.org/team/451200)",
+        "比赛ID": "1723",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "DEADFACE CTF 2026",
+        "比赛时间": "2026-10-17 22:00:00 - 2026-10-19 08:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3279.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.deadface.io/",
+        "比赛标志": "https://ctftime.org/media/events/logo_deadface_ctf_2026.png",
+        "比赛权重": "35.39",
+        "赛事主办": "Cyber Hacktics (https://ctftime.org/team/127017)",
+        "比赛ID": "487",
         "比赛状态": "nowrunning"
     },
     {
@@ -594,7 +642,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.kbxac.xyz/",
         "比赛标志": "https://ctftime.org/media/events/kbxac_1.png",
-        "比赛权重": "0",
+        "比赛权重": "24.75",
         "赛事主办": "kBxAc (https://ctftime.org/team/358282)",
         "比赛ID": "1699",
         "比赛状态": "past"
