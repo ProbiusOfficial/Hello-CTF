@@ -149,7 +149,7 @@
         "添加日历": "https://ctftime.org/event/3460.ics",
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.hiddeninvestigations.net/",
-        "比赛标志": "https://ctftime.org/media/events/HI_Cyber_Con_2026_CTFtime_Logo.png",
+        "比赛标志": "https://ctftime.org/media/events/HI_Cyber_Con_2026__CTFtime_Logo__Transparent.png",
         "比赛权重": "0.00",
         "赛事主办": "Hidden Investigations (https://ctftime.org/team/188318)",
         "比赛ID": "1704",
@@ -594,7 +594,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://gaian.space/ctf",
         "比赛标志": "https://ctftime.org/media/events/gaianspace-logo-new_1.png",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "GaianSpace (https://ctftime.org/team/373034)",
         "比赛ID": "1284",
         "比赛状态": "past"
