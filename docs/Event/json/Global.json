@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "cruXipher 2026 - ATMoS '26, BITS Hyderabad",
-        "比赛时间": "2026-10-23 08:30:00 - 2026-10-25 08:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3369.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cruxipher.crux-bphc.com/",
-        "比赛标志": "https://ctftime.org/media/events/cruX_logo_1.png",
-        "比赛权重": "0.00",
-        "赛事主办": "CRUx BPHC (https://ctftime.org/team/270645)",
-        "比赛ID": "1004",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "CREST CTF 2.0",
         "比赛时间": "2026-10-23 13:30:00 - 2026-10-23 19:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3477.ics",
@@ -401,7 +389,7 @@
         "添加日历": "https://ctftime.org/event/3485.ics",
         "比赛形式": "Jeopardy",
         "比赛链接": "https://l3m0nctf.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/icon-512.png",
+        "比赛标志": "https://ctftime.org/media/events/logo_4.jpeg",
         "比赛权重": "0.00",
         "赛事主办": "L3m0n CTF (https://ctftime.org/team/417627)",
         "比赛ID": "1468",
@@ -537,6 +525,18 @@
         "比赛权重": "0",
         "赛事主办": "BUG PWN (https://ctftime.org/team/182428)",
         "比赛ID": "968",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "cruXipher 2026 - ATMoS '26, BITS Hyderabad",
+        "比赛时间": "2026-10-23 08:30:00 - 2026-10-25 08:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3369.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cruxipher.crux-bphc.com/",
+        "比赛标志": "https://ctftime.org/media/events/Frame_6_2.png",
+        "比赛权重": "0",
+        "赛事主办": "CRUx BPHC (https://ctftime.org/team/270645)",
+        "比赛ID": "1004",
         "比赛状态": "nowrunning"
     },
     {
