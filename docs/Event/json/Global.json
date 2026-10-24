@@ -1,53 +1,5 @@
 [
     {
-        "比赛名称": "CREST CTF 2.0",
-        "比赛时间": "2026-10-23 13:30:00 - 2026-10-23 19:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3477.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://crest.ctf7.com/",
-        "比赛标志": "https://ctftime.org/media/events/WhatsApp_Image_2026-10-11_at_14.32.54.jpeg",
-        "比赛权重": "0",
-        "赛事主办": "CREST (https://ctftime.org/team/418000)",
-        "比赛ID": "1469",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "HITCON CTF 2026",
-        "比赛时间": "2026-10-23 22:00:00 - 2026-10-25 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3340.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf2026.hitcon.org/",
-        "比赛标志": "https://ctftime.org/media/events/63dc69a784f6f69a935d3cd01afa2fa7.jpg",
-        "比赛权重": "91.16",
-        "赛事主办": "HITCON (https://ctftime.org/team/8299)",
-        "比赛ID": "79",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "RSTCON 2026 CTF",
-        "比赛时间": "2026-10-24 01:00:00 - 2026-10-26 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3377.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.rstcon.org/",
-        "比赛标志": "https://ctftime.org/media/events/RSTCON-BLK_1.png",
-        "比赛权重": "25.00",
-        "赛事主办": "RSTCON (https://ctftime.org/team/281202)",
-        "比赛ID": "1125",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "Hack.lu CTF 2026",
-        "比赛时间": "2026-10-24 02:00:00 - 2026-10-26 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3207.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://flu.xxx/",
-        "比赛标志": "https://ctftime.org/media/events/hacklu25.jpg",
-        "比赛权重": "94.74",
-        "赛事主办": "FluxFingers (https://ctftime.org/team/551)",
-        "比赛ID": "8",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Cryovault 2026 Finals",
         "比赛时间": "2026-10-24 11:30:00 - 2026-10-25 14:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3442.ics",
@@ -348,6 +300,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "Cyber Ninja CTF 2026 - BLACKOUT",
+        "比赛时间": "2026-11-21 17:00:00 - 2026-11-22 17:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3490.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.cyber-ninja-ctf.fr/",
+        "比赛标志": "https://ctftime.org/media/events/66a76ec5022678cdd16d2d5a_Design_sans_titre_14.png",
+        "比赛权重": "0",
+        "赛事主办": "OteriHack (https://ctftime.org/team/190074)",
+        "比赛ID": "1739",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "Crate-CTF 2026",
         "比赛时间": "2026-11-21 21:00:00 - 2026-11-22 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3336.ics",
@@ -540,6 +504,54 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "HITCON CTF 2026",
+        "比赛时间": "2026-10-23 22:00:00 - 2026-10-25 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3340.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf2026.hitcon.org/",
+        "比赛标志": "https://ctftime.org/media/events/63dc69a784f6f69a935d3cd01afa2fa7.jpg",
+        "比赛权重": "91.16",
+        "赛事主办": "HITCON (https://ctftime.org/team/8299)",
+        "比赛ID": "79",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "RSTCON 2026 CTF",
+        "比赛时间": "2026-10-24 01:00:00 - 2026-10-26 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3377.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.rstcon.org/",
+        "比赛标志": "https://ctftime.org/media/events/RSTCON-BLK_1.png",
+        "比赛权重": "25.00",
+        "赛事主办": "RSTCON (https://ctftime.org/team/281202)",
+        "比赛ID": "1125",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Hack.lu CTF 2026",
+        "比赛时间": "2026-10-24 02:00:00 - 2026-10-26 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3207.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://flu.xxx/",
+        "比赛标志": "https://ctftime.org/media/events/hacklu25.jpg",
+        "比赛权重": "94.74",
+        "赛事主办": "FluxFingers (https://ctftime.org/team/551)",
+        "比赛ID": "8",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CREST CTF 2.0",
+        "比赛时间": "2026-10-23 13:30:00 - 2026-10-23 19:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3477.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://crest.ctf7.com/",
+        "比赛标志": "https://ctftime.org/media/events/WhatsApp_Image_2026-10-11_at_14.32.54.jpeg",
+        "比赛权重": "0",
+        "赛事主办": "CREST (https://ctftime.org/team/418000)",
+        "比赛ID": "1469",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "SAS CTF 2026 Finals",
         "比赛时间": "2026-10-20 11:00:00 - 2026-10-20 22:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3409.ics",
@@ -547,7 +559,7 @@
         "比赛链接": "https://ctf.thesascon.com/",
         "比赛标志": "https://ctftime.org/media/events/SAS26_temp_1.png",
         "比赛权重": "49.50",
-        "赛事主办": "SAS CREW (https://ctftime.org/team/283057)",
+        "赛事主办": "Drovosec, SAS CREW (https://ctftime.org/team/210132, https://ctftime.org/team/283057)",
         "比赛ID": "1081",
         "比赛状态": "past"
     },
@@ -1725,18 +1737,6 @@
         "比赛权重": "25.00",
         "赛事主办": "Mntcrl (https://ctftime.org/team/195096)",
         "比赛ID": "1583",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "SekaiCTF 2026",
-        "比赛时间": "2026-06-27 16:00:00 - 2026-06-29 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3113.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.sekai.team/",
-        "比赛标志": "https://ctftime.org/media/events/sekai2_SEKAI_CTF_Square_Black_BG.r_1_1_1_1.png",
-        "比赛权重": "79.25",
-        "赛事主办": "Project Sekai (https://ctftime.org/team/169557)",
-        "比赛ID": "769",
         "比赛状态": "past"
     }
 ]
