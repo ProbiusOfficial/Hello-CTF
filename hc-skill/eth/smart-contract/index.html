@@ -1,0 +1,1256 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>智能合约 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../../shell/shell.css">
+  <link rel="stylesheet" href="../../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../../shell/search.js"></script>
+  <script src="../../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <div class="tn-group">文件与编码基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">隐写分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">取证分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/industrial/">工控类</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <div class="tn-group">环境与工具</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/web_env/">Web环境设置</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/docker_install/">Docker安装配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/docker_env/">Docker与漏洞环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/vm_lab/">虚拟机与网络模拟</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/burp/">Burp Suite</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/py_script/">Python脚本</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/http/">HTTP协议</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <div class="tn-group">信息收集</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">PHP专题</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/php_features/">PHP特性与常见绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/php_unser/">PHP反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/php_code_audit/">PHP代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">注入类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/nosql/">NoSQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/csrf/">CSRF攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">文件类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">命令与代码执行</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/rce/">RCE</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/session_jwt/">会话与认证安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <div class="tn-group">语言扩展 | 世界不止有PHP</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/py_unser/">Python反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/py_sandbox/">Python沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/flask_sec/">Flask安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/prototype_pollution/">原型链污染</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/js_sandbox/">JS沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/js_reverse/">JS逆向</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/java_basic/">Java安全基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/java_unser/">Java反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/spring/">Spring漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/java_audit/">Java代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">进阶专题</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/waf_bypass/">WAF绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/http_smuggling/">请求走私</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/cache_poisoning/">缓存投毒</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/xs_leaks/">XS-Leaks</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/web_crypto/">密码学应用题</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/cloud_container/">云与容器安全</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">实战能力</div>
+      
+  
+    
+      <div class="tn-group">渗透链路基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/pentest_flow/">渗透流程总览</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/two_layer/">两层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/foothold/">立足点建立</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/internal_recon/">内网信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/proxy_tunnel/">代理与隧道</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">多层网络渗透</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/three_layer/">三层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/multi_layer/">多层网络综合</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/ad_basic/">域渗透入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/lateral/">横向移动</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">对抗与综合</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-web/awd/">AWD模式</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/web_pwn/">Web与二进制结合</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/nday/">Nday利用</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-web/review/">Writeup复盘方法</a>
+    
+  
+
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-crypto/env/">环境配置</a>
+    
+  
+    
+      <div class="tn-group">基础知识</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-crypto/Encode/">编码基础</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">密码体系</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <div class="tn-group">环境与基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/Protections/">常见保护</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">栈溢出</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">ROP利用</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="_1">智能合约<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<blockquote>
+<p>ETH · 知识域。合约漏洞利用主战场。标签:<strong>合约漏洞分析</strong>、<strong>合约代码审计</strong>、<strong>合约逻辑漏洞</strong>、<strong>合约权限控制</strong>、<strong>合约重入攻击</strong>、<strong>合约溢出漏洞</strong>。</p>
+</blockquote>
+<h2 id="_2">触发特征<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<ul>
+<li>Ethernaut/Damn Vulnerable DeFi/paradigm-ctf 形态:部署实例 → 让 <code>isSolved()</code> 为真。</li>
+</ul>
+<h2 id="dao">重入攻击(DAO 模式)<a class="headerlink" href="#dao" title="Permanent link">¶</a></h2>
+<ul>
+<li>经典:external call(转账)在状态更新前 → 回调再入取款(DefCamp 2017 原型 DAO 事件)。</li>
+<li>变体:ERC777 hook 重入、ERC721 <code>onReceived</code> 重入、<code>receive/fallback</code> 逻辑。</li>
+<li>检查点:状态更新与外部调用顺序;reentrancy guard 缺失;<strong>跨函数重入</strong>(经共享状态变量)。</li>
+</ul>
+<h2 id="_3">溢出漏洞<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<ul>
+<li>Solidity &lt;0.8 无内置检查:加/减/乘溢出(<code>SafeMath</code> 缺失);0.8+ 用 unchecked 块的溢出。</li>
+<li>类型截断:uint256→uint32 强转;epoch 时间截断。</li>
+<li>变体:批量铸造数组长度伪造(短地址历史攻击)。</li>
+</ul>
+<h2 id="_4">权限控制<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<ul>
+<li><code>tx.origin</code> 鉴权(钓鱼合约代发交易绕过);<code>msg.sender</code> 与 delegatecall 上下文混淆。</li>
+<li><strong>delegatecall 存储上下文滥用</strong>:库/代理调用下存储槽错位覆盖 owner(EHAX 2026)。</li>
+<li>初始化函数未设防(可重复 init);<code>selfdestruct</code> 强制注 ETH 破坏"余额等于 X"判定(0.8 后 selfdestruct 仍可强制发币给合约)。
+-修饰器逻辑 bug:非真条件短路。</li>
+</ul>
+<h2 id="_5">逻辑漏洞<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
+<ul>
+<li>整数精度:除法先乘后除顺序、精度丢失套利偏差。</li>
+<li>预言机操纵:spot price(.balance/getReserves)被闪电贷操纵;TWAP 短窗操纵。</li>
+<li>闪电贷组合攻击:无自有资金完成"需要大量本金"的操作(damnvulnerabledefi 核心思想)。</li>
+<li>合约随机数问题:块变量(blockhash/timestamp/prevrandao)可预测/可操纵;commit-reveal 缺失。</li>
+<li>DoS:revert 拒绝(循环内退款给恶意合约)、gas 耗尽(无上限循环)。</li>
+</ul>
+<h2 id="proxy">Proxy模式漏洞(代理与升级)<a class="headerlink" href="#proxy" title="Permanent link">¶</a></h2>
+<ul>
+<li><strong>EIP-1967 代理利用</strong>:implementation slot 劫持、未初始化的 implementation 直接 init(原题范式)。</li>
+<li>UUPS 升级函数无权限 → 自升级恶意逻辑;存储碰撞(变量槽位重叠)。</li>
+<li>ABI Coder v1/v2 差异:dirty address 位绕过;非标准 calldata 编码解析分歧;bytes32 字符串编码。</li>
+<li><strong>Solidity transient storage</strong>(0.8.28-0.8.33):helper 冲突清零导致的重入窗口(0xFun 2026 系列)。</li>
+<li>CBOR 元数据剥离:codehash 判定绕过。</li>
+</ul>
+<h2 id="erc20">合约代币标准与授权漏洞(ERC20 系)<a class="headerlink" href="#erc20" title="Permanent link">¶</a></h2>
+<ul>
+<li><strong>ERC20 漏洞</strong>:approve 竞态(先 approve 新额度前旧额度仍可被 spender 用掉——先减到 0 再 approve);decimals 处理错误导致数量放大;transfer 返回值未检查(bool false 静默失败,非 revert)→ 记账错乱;<code>transferFrom</code> 边界。</li>
+<li><strong>合约授权漏洞</strong>:无限授权(<code>approve(type(uint256).max)</code>)后代币被任意划走(钓鱼签名/恶意合约,链上钓鱼主通道,→ <a href="../transaction/">交易分析</a> 钓鱼模式);permit2 离线签名钓鱼;<code>increaseAllowance</code> 实现错误。</li>
+<li><strong>合约多重签名漏洞</strong>:签名收集流程竞态(门限恰好达成瞬间状态变更)、owner 重复签名计数、execute 与 confirm 未分离导致的单签执行。</li>
+</ul>
+<h2 id="_6">合约实现细节漏洞<a class="headerlink" href="#_6" title="Permanent link">¶</a></h2>
+<ul>
+<li><strong>合约函数可见性</strong>:本应 external/private 的函数被标 public → 关键初始化/清算函数可被任意调用;initializer 未加防重入标志(→ 权限控制节初始化)。</li>
+<li><strong>合约函数选择器冲突</strong>:两个函数 4 字节选择器相同(EIP-165 思想的滥用)→ 调用 A 实际进 B;Solidity 0.4.22 前 <code>fallback</code> 与函数选择器碰撞的历史 CVE。</li>
+<li><strong>合约短地址攻击</strong>:ABI 编码在 calldata 尾部缺字节时,部分旧路由器/pad 逻辑会错位解析参数(ERC20 transfer 地址尾零被吃)——现代编译器已校验 calldata 长度,CTF 场景经手写汇编/低级调用复刻。</li>
+<li><strong>合约编译器漏洞</strong>:Solidity 版本锁定后查编译器已知 bug(abi.encodePacked 哈希碰撞、0.8 前 unchecked 溢出、optimizer 缺陷列表,SWC 注册表);<code>forge inspect</code> 看编译器版本匹配。</li>
+<li><strong>Gas限制与操控(Gas Griefing)</strong>,即合约拒绝服务攻击:循环无上限 → 阻塞调用(out of gas DoS);强制小 gas 转发(63/64 规则)让 fallback 逻辑失效;<code>gasleft()</code> 当随机数/条件 → 可被 gas 操纵。</li>
+<li><strong>合约自毁漏洞</strong>:未鉴权的 <code>selfdestruct</code>/<code>suicide</code> → 强制转 ETH 破坏"余额==X"不变量、销毁金库(0.8 后 selfdestruct 仅剩强制发 ETH 语义,仍可用于不变量攻击);代理合约被 selfdestruct 后逻辑永久丢失。</li>
+<li>
+<p><strong>合约时间戳依赖</strong>:<code>block.timestamp</code>(可被矿工/出块者 ±数秒操纵)与 <code>block.number</code> 参与关键判定 → 竞标的最后一刻操纵(→ 逻辑漏洞节随机数条目同源)。</p>
+</li>
+<li>
+<p><strong>Groth16 证明伪造</strong>:setup 参数 delta==gamma 时直接构造假证明(A=alpha,B=beta,C=-vk_x);无 nullifier 追踪时无限重放(DiceCTF 2026 治理场景)。</p>
+</li>
+<li><strong>DV-SNARG 伪造</strong>:oracle 下学习秘密 v 后 CRS 消除伪造;KZG 配对 oracle 恢复置换(→ <a href="../../crypto/z3/">Crypto-Z3</a>/<a href="../../crypto/ecc/">ECC</a>)。</li>
+<li>Phantom market 不结算 + 强注资金组合(DiceCTF 2026)。</li>
+</ul>
+<h2 id="_7">合约访问控制(权限面补充)<a class="headerlink" href="#_7" title="Permanent link">¶</a></h2>
+<ul>
+<li>访问控制缺失总检:external 函数逐个过"谁能调"——modifier 缺失、msg.sender 与 tx.origin 混用、角色检查写错(<code>require(hasRole(x))</code> 参数序)、代理上下文下的权限存储错位(delegatecall 上下文,→ 权限控制节)。</li>
+<li>角色管理漏洞:OpenZeppelin AccessControl 的 grant/revoke 流程滥用、角色继承链过宽、admin 角色单点。</li>
+<li>合约整数溢出在代币语义下的放大:mint/burn 路径的 unchecked 运算 → 凭空增发/余额下溢成天文数字(→ 溢出漏洞节)。</li>
+</ul>
+<h2 id="_8">审计工具与流程<a class="headerlink" href="#_8" title="Permanent link">¶</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>slither<span class="w"> </span>./target<span class="w"> </span>--print<span class="w"> </span>inheritance-graph<span class="w">   </span><span class="c1"># 静态审计</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>echidna-test<span class="w"> </span>contract.yaml<span class="w">                   </span><span class="c1"># 性质 fuzz</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>forge<span class="w"> </span><span class="nb">test</span><span class="w"> </span>-vvv<span class="w">                              </span><span class="c1"># 写 PoC 测试</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># 审计清单:重入 → 权限 → 溢出 → 预言机 → 随机数 → 升级 → DoS</span>
+</code></pre></div>
+<h2 id="_9">转向<a class="headerlink" href="#_9" title="Permanent link">¶</a></h2>
+<ul>
+<li>密码学组件(Groth16/KZG)→ <a href="../../crypto/ecc/">Crypto-ECC</a>;链下基础设施(Web/API)→ <a href="../../web/">WEB</a></li>
+</ul></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+
+<!-- Link to next page -->
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#_1">智能合约</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_2">触发特征</a>
+        
+      </li>
+    
+      <li>
+        <a href="#dao">重入攻击(DAO 模式)</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">溢出漏洞</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_4">权限控制</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">逻辑漏洞</a>
+        
+      </li>
+    
+      <li>
+        <a href="#proxy">Proxy模式漏洞(代理与升级)</a>
+        
+      </li>
+    
+      <li>
+        <a href="#erc20">合约代币标准与授权漏洞(ERC20 系)</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_6">合约实现细节漏洞</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_7">合约访问控制(权限面补充)</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_8">审计工具与流程</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_9">转向</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../../javascripts/statis.js"></script>
+  
+    <script src="../../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

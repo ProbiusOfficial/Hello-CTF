@@ -1,0 +1,1392 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>内网信息收集 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <div class="tn-group">文件与编码基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">隐写分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">取证分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Web | 网络攻防</a>
+    
+  
+    
+      <div class="tn-group">环境与工具</div>
+      
+  
+    
+      <a class="tn-link" href="../web_env/">Web环境设置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_install/">Docker安装配置</a>
+    
+  
+    
+      <a class="tn-link" href="../docker_env/">Docker与漏洞环境</a>
+    
+  
+    
+      <a class="tn-link" href="../vm_lab/">虚拟机与网络模拟</a>
+    
+  
+    
+      <a class="tn-link" href="../burp/">Burp Suite</a>
+    
+  
+    
+      <a class="tn-link" href="../py_script/">Python脚本</a>
+    
+  
+    
+      <a class="tn-link" href="../http/">HTTP协议</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../web_start/">Web入门题单</a>
+    
+  
+    
+      <div class="tn-group">信息收集</div>
+      
+  
+    
+      <a class="tn-link" href="../sensitive_info/">敏感信息泄露</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">PHP专题</div>
+      
+  
+    
+      <a class="tn-link" href="../php_features/">PHP特性与常见绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../php_unser/">PHP反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../php_code_audit/">PHP代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">注入类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../nosql/">NoSQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../csrf/">CSRF攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../ssrf/">SSRF注入</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">文件类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../any_file_read/">任意文件读取</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">命令与代码执行</div>
+      
+  
+    
+      <a class="tn-link" href="../rce/">RCE</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../session_jwt/">会话与认证安全</a>
+    
+  
+    
+      <a class="tn-link" href="../logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <div class="tn-group">语言扩展 | 世界不止有PHP</div>
+      
+  
+    
+      <a class="tn-link" href="../py_unser/">Python反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../py_sandbox/">Python沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../flask_sec/">Flask安全</a>
+    
+  
+    
+      <a class="tn-link" href="../prototype_pollution/">原型链污染</a>
+    
+  
+    
+      <a class="tn-link" href="../js_sandbox/">JS沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../js_reverse/">JS逆向</a>
+    
+  
+    
+      <a class="tn-link" href="../java_basic/">Java安全基础</a>
+    
+  
+    
+      <a class="tn-link" href="../java_unser/">Java反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../spring/">Spring漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../java_audit/">Java代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">进阶专题</div>
+      
+  
+    
+      <a class="tn-link" href="../waf_bypass/">WAF绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../http_smuggling/">请求走私</a>
+    
+  
+    
+      <a class="tn-link" href="../cache_poisoning/">缓存投毒</a>
+    
+  
+    
+      <a class="tn-link" href="../xs_leaks/">XS-Leaks</a>
+    
+  
+    
+      <a class="tn-link" href="../web_crypto/">密码学应用题</a>
+    
+  
+    
+      <a class="tn-link" href="../cloud_container/">云与容器安全</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">实战能力</div>
+      
+  
+    
+      <div class="tn-group">渗透链路基础</div>
+      
+  
+    
+      <a class="tn-link" href="../pentest_flow/">渗透流程总览</a>
+    
+  
+    
+      <a class="tn-link" href="../two_layer/">两层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../foothold/">立足点建立</a>
+    
+  
+    
+      <a class="tn-link on" href="./">内网信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../proxy_tunnel/">代理与隧道</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">多层网络渗透</div>
+      
+  
+    
+      <a class="tn-link" href="../three_layer/">三层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../multi_layer/">多层网络综合</a>
+    
+  
+    
+      <a class="tn-link" href="../ad_basic/">域渗透入门</a>
+    
+  
+    
+      <a class="tn-link" href="../lateral/">横向移动</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">对抗与综合</div>
+      
+  
+    
+      <a class="tn-link" href="../awd/">AWD模式</a>
+    
+  
+    
+      <a class="tn-link" href="../web_pwn/">Web与二进制结合</a>
+    
+  
+    
+      <a class="tn-link" href="../nday/">Nday利用</a>
+    
+  
+    
+      <a class="tn-link" href="../review/">Writeup复盘方法</a>
+    
+  
+
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/env/">环境配置</a>
+    
+  
+    
+      <div class="tn-group">基础知识</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">密码体系</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <div class="tn-group">环境与基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">栈溢出</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">ROP利用</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="_1">内网信息收集<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<p>在 CTF 的内网渗透题（尤其是 AWD、多层网络架构的综合渗透题）中，当你通过 <a href="../rce/">RCE</a>、<a href="../file_upload/">文件上传</a> 或 <a href="../ssrf/">SSRF</a> 等手段拿到第一台跳板机（边界机）的 shell 后，真正的挑战才刚刚开始：flag 往往不在边界机上，而在内网某台不直接对外的机器上。要从跳板机走到目标机，第一步永远是 <strong>信息收集</strong>——搞清楚自己在哪、周围有什么、下一步能打谁。</p>
+<p>本章按「本机 → 网段 → 内网资产」的顺序展开，最后给出一份可直接照着执行的清单。</p>
+<h2 id="_2">本机信息搜集<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<p>拿到 shell 的第一件事不是乱扫，而是先摸清楚本机。本机信息有三个价值：确认权限和系统类型（决定后续用什么命令和工具）、找到网卡和网段（决定扫哪里）、翻到凭据（直接用于横向移动）。</p>
+<h3 id="linux">Linux 常用命令<a class="headerlink" href="#linux" title="Permanent link">¶</a></h3>
+<p><strong>系统信息</strong>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>uname<span class="w"> </span>-a<span class="w">            </span><span class="c1"># 内核版本，判断能否用脏牛之类的内核提权漏洞</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>cat<span class="w"> </span>/etc/os-release<span class="w"> </span><span class="c1"># 发行版信息</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>hostname<span class="w">            </span><span class="c1"># 主机名，有时直接提示角色（如 db01、web02）</span>
+</code></pre></div>
+<p><strong>用户与权限</strong>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>id<span class="w">                  </span><span class="c1"># 当前用户及所属组，重点看是否在 sudo / docker / lxd 组</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>whoami
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>cat<span class="w"> </span>/etc/passwd<span class="w">     </span><span class="c1"># 系统上有哪些用户，找出可登录的（shell 为 /bin/bash 的）</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>sudo<span class="w"> </span>-l<span class="w">             </span><span class="c1"># 当前用户能以 sudo 执行什么命令，免密的直接提权</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>ls<span class="w"> </span>-la<span class="w"> </span>/home/<span class="w">       </span><span class="c1"># 各用户家目录，翻 .bash_history、.ssh/ 往往有惊喜</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nb">history</span><span class="w">             </span><span class="c1"># 当前 shell 的历史命令，管理员手滑输过的密码可能在里面</span>
+</code></pre></div>
+<p><strong>进程与服务</strong>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ps<span class="w"> </span>aux<span class="w">              </span><span class="c1"># 全部进程，找数据库、中间件、运维脚本的痕迹</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>ss<span class="w"> </span>-tlnp<span class="w">            </span><span class="c1"># 监听端口与对应进程（老系统用 netstat -tlnp）</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>crontab<span class="w"> </span>-l<span class="w">          </span><span class="c1"># 当前用户计划任务</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>ls<span class="w"> </span>/etc/cron.d/<span class="w">     </span><span class="c1"># 系统计划任务，运维脚本可能硬编码密码</span>
+</code></pre></div>
+<p><strong>网络连接</strong>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ip<span class="w"> </span>addr<span class="w">             </span><span class="c1"># 网卡与 IP，确认有几张网卡、各自网段（老系统用 ifconfig）</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>ip<span class="w"> </span>route<span class="w">            </span><span class="c1"># 路由表，找默认网关和其他可达网段</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>ss<span class="w"> </span>-tnp<span class="w">             </span><span class="c1"># 当前建立的 TCP 连接，看本机在和谁通信</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>cat<span class="w"> </span>/etc/hosts<span class="w">      </span><span class="c1"># 静态域名映射，常泄露内网主机名和 IP</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>arp<span class="w"> </span>-a<span class="w">              </span><span class="c1"># ARP 缓存，近期通信过的同网段主机（也可 cat /proc/net/arp）</span>
+</code></pre></div>
+<p><strong>敏感文件与凭据</strong>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ls<span class="w"> </span>-la<span class="w"> </span>~/.ssh/<span class="w">                        </span><span class="c1"># id_rsa、authorized_keys、known_hosts</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>cat<span class="w"> </span>~/.ssh/known_hosts<span class="w">                </span><span class="c1"># 这台机器 ssh 连过哪些主机，等于一张内网地图</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>find<span class="w"> </span>/<span class="w"> </span>-name<span class="w"> </span><span class="s2">"*.conf"</span><span class="w"> </span>-o<span class="w"> </span>-name<span class="w"> </span><span class="s2">"config*.php"</span><span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w"> </span><span class="p">|</span><span class="w"> </span>head
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>grep<span class="w"> </span>-rn<span class="w"> </span><span class="s2">"password"</span><span class="w"> </span>/var/www/html/<span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w">    </span><span class="c1"># Web 目录里翻数据库密码</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>cat<span class="w"> </span>/var/www/html/config.php<span class="w">          </span><span class="c1"># 站点配置里的数据库凭据，库和后台经常不同机</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>find<span class="w"> </span>/<span class="w"> </span>-name<span class="w"> </span><span class="s2">"flag*"</span><span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w">      </span><span class="c1"># CTF 题别忘了直接找 flag</span>
+</code></pre></div>
+<h3 id="windows">Windows 常用命令<a class="headerlink" href="#windows" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>systeminfo                :: 系统版本、补丁情况、域信息
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>whoami /all               :: 当前用户、组、特权
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>net user                  :: 本地用户列表
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>net user administrator    :: 查看某用户详情
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>tasklist /svc             :: 进程与对应服务
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>netstat -ano              :: 端口与连接，配合 tasklist 按 PID 找进程
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>ipconfig /all             :: 网卡、IP、DNS、域
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>route print               :: 路由表
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>arp -a                    :: ARP 缓存
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>netsh firewall show state :: 防火墙状态（决定能不能扫出去）
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>type C:\Users\*\Desktop\flag.txt    :: CTF 题惯例位置
+</code></pre></div>
+<p>凭据方面，Windows 重点关注浏览器/远程桌面保存的密码、<code>C:\Windows\System32\config\</code> 下的 SAM/SYSTEM 文件（需要高权限导出），以及各类配置文件中写死的密码。在 CTF 里更常见的是直接翻翻桌面、Web 根目录和计划任务脚本。</p>
+<div class="admonition tip">
+<p class="admonition-title">记忆口诀</p>
+<p>先 <code>id</code> / <code>whoami</code> 看权限，再 <code>ip addr</code> / <code>ipconfig</code> 看网段，然后 <code>ss -tlnp</code> / <code>netstat</code> 看端口，最后翻配置文件和历史命令找凭据。四步走完，本机就摸清了。</p>
+</div>
+<h2 id="_3">网段测绘思路<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<p>知道了本机 IP（比如 <code>172.18.0.2</code>），下一个问题是：<strong>还有哪些网段可达、网段里有哪些存活主机</strong>。</p>
+<h3 id="_4">确认可达网段<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>多张网卡</strong>：<code>ip addr</code> 出现两个以上非 <code>lo</code> 接口，说明机器跨在多个网络之间，每个接口的网段都要探测。这是多层内网题的常见设计——边界机连外网和一个内网段，内网机再连更深的网段。</li>
+<li><strong>路由表</strong>：<code>ip route</code> 里的非默认路由条目（如 <code>10.1.0.0/24 via 172.18.0.1</code>）直接告诉你还能到达哪些网段。</li>
+<li><strong>ARP 缓存与 known_hosts</strong>：<code>arp -a</code> 给出同网段近期通信过的主机，<code>~/.ssh/known_hosts</code> 给出管理员登录过的机器。这两处是零噪音的"免费情报"，优先看。</li>
+</ul>
+<h3 id="_5">存活主机探测<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<p>确定了网段（如 <code>172.18.0.0/24</code>），先找哪些 IP 是活的，再扫端口，避免对 254 个地址全端口扫描浪费时间。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># ICMP ping 扫，可能被防火墙拦</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="k">$(</span>seq<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">254</span><span class="k">)</span><span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">1</span><span class="w"> </span>-W<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">172</span>.18.0.<span class="nv">$i</span><span class="w"> </span><span class="p">&amp;</span><span class="w"> </span><span class="k">done</span><span class="p">;</span><span class="w"> </span><span class="nb">wait</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># ARP 探测（仅限同网段二层，但几乎无法被拦，最可靠）</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>arp-scan<span class="w"> </span>-l<span class="w">            </span><span class="c1"># 需要安装 arp-scan</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="c1"># 或用 nmap 的 ARP ping：</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>nmap<span class="w"> </span>-sn<span class="w"> </span>-PR<span class="w"> </span><span class="m">172</span>.18.0.0/24
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="c1"># 无工具纯 shell 兜底：对常见端口发 TCP 连接测试</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="k">$(</span>seq<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">254</span><span class="k">)</span><span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="o">(</span><span class="nb">echo</span><span class="w"> </span>&gt;<span class="w"> </span>/dev/tcp/172.18.0.<span class="nv">$i</span>/80<span class="o">)</span><span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">"172.18.0.</span><span class="nv">$i</span><span class="s2">:80 open"</span><span class="w"> </span><span class="p">&amp;</span><span class="w"> </span><span class="k">done</span><span class="p">;</span><span class="w"> </span><span class="nb">wait</span>
+</code></pre></div>
+<p>实际做题时的取舍：同网段优先 ARP 探测（快、难拦截）；跨网段用 ICMP 加常见 TCP 端口（80/445/22/3389）组合探测。拿到存活列表后再进入下一步的端口扫描。</p>
+<h2 id="_6">资产扫描与端口探测<a class="headerlink" href="#_6" title="Permanent link">¶</a></h2>
+<p>存活主机有了，就要弄清楚每台机器开了什么服务。三个工具的取舍是 CTF 内网题的基本功。</p>
+<h3 id="nmap">nmap：精准但重<a class="headerlink" href="#nmap" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>nmap<span class="w"> </span>-sT<span class="w"> </span>-Pn<span class="w"> </span>-p<span class="w"> </span><span class="m">22</span>,80,443,445,3306,6379,8080<span class="w"> </span><span class="m">172</span>.18.0.5<span class="w">   </span><span class="c1"># 指定常见端口快速扫</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>nmap<span class="w"> </span>-sT<span class="w"> </span>-Pn<span class="w"> </span>-p-<span class="w"> </span><span class="m">172</span>.18.0.5<span class="w">                               </span><span class="c1"># 全端口，CTF 中冷门端口常藏 flag</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>nmap<span class="w"> </span>-sV<span class="w"> </span>-sC<span class="w"> </span>-p<span class="w"> </span><span class="m">80</span><span class="w"> </span><span class="m">172</span>.18.0.5<span class="w">                             </span><span class="c1"># 服务版本识别 + 默认脚本</span>
+</code></pre></div>
+<ul>
+<li>跳板机没有公网时用 <code>-sT</code>（TCP connect 扫描），不依赖 raw socket 权限；有 root 才用 <code>-sS</code>（SYN 半开扫描，更快更隐蔽）。</li>
+<li><code>-Pn</code> 跳过主机存活检测，直接扫端口——目标禁 ping 时必加。</li>
+<li>nmap 的优点是 <code>-sV</code>/<code>-sC</code> 能识别服务版本甚至跑出 banner 里的 flag；缺点是体积大，内网靶机上经常没有，需要静态编译版或代理转发扫描。</li>
+</ul>
+<h3 id="fscan">fscan：内网一把梭<a class="headerlink" href="#fscan" title="Permanent link">¶</a></h3>
+<p><a href="https://github.com/shadow1ng/fscan">fscan</a> 是 Go 写的单文件内网扫描器，扔上去就能跑，是 CTF 内网题最常用的工具：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>chmod<span class="w"> </span>+x<span class="w"> </span>fscan
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>./fscan<span class="w"> </span>-h<span class="w"> </span><span class="m">172</span>.18.0.0/24<span class="w"> </span>-o<span class="w"> </span>result.txt
+</code></pre></div>
+<p>一条命令默认完成：存活探测 → 常见端口扫描 → 服务识别（Web 标题、Redis/SSH/MySQL banner）→ 弱口令爆破（SSH、MySQL、Redis 未授权）→ 部分漏洞探测（MS17-010 等）。CTF 里 fscan 的输出经常直接给出下一个突破口，比如某台机器 Redis 6379 未授权访问，或者 Web 服务标题里就写着线索。</p>
+<p>注意 fscan 默认行为较"重"（会爆破），在 AWD 对抗环境中可能触发告警；只想安静扫端口时用 <code>-nopoc -nobr</code> 关掉漏洞探测和爆破。</p>
+<h3 id="masscan">masscan：速度优先<a class="headerlink" href="#masscan" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>masscan<span class="w"> </span>-p<span class="w"> </span><span class="m">1</span>-65535<span class="w"> </span><span class="m">172</span>.18.0.0/24<span class="w"> </span>--rate<span class="w"> </span><span class="m">1000</span>
+</code></pre></div>
+<p>masscan 全端口扫一个 /24 只要几十秒，但它只做端口开放探测，不做服务识别，且需要 raw socket（通常要 root）。在 CTF 中它的典型用法是配合 nmap：masscan 快速圈出开放端口，nmap 再对这些端口做 <code>-sV</code> 精细识别。</p>
+<p><strong>三者取舍一句话</strong>：机器上有哪个用哪个；都能装的话，fscan 一把梭出概貌，nmap 对可疑端口做版本识别，masscan 只在大网段全端口普查时上场。</p>
+<h2 id="_7">收集到的信息如何指导下一步<a class="headerlink" href="#_7" title="Permanent link">¶</a></h2>
+<p>信息收集不是目的，每一条信息都应该对应一个动作。常见的对应关系：</p>
+<ul>
+<li><strong><code>/etc/hosts</code> 或 known_hosts 里的主机名</strong> → 这些就是内网拓扑，优先探测它们。</li>
+<li><strong>Web 配置里的数据库密码</strong> → 数据库往往在另一台内网机上，密码可能复用——拿它去试 SSH 和其他服务（这在「横向移动」一章会详细展开）。</li>
+<li><strong>fscan 报出 Redis 6379 未授权</strong> → 结合 <a href="../ssrf/">SSRF</a> 学到的 gopher 打 Redis 思路，写计划任务或 SSH key 拿 shell。</li>
+<li><strong>开了 80/8080 的内网 Web</strong> → 内网服务常是"弱防护"，把外网学到的 SQL注入、文件包含、反序列化再试一遍；内网 CMS 还经常保留默认口令。</li>
+<li><strong>445 / 3389 开放的 Windows</strong> → 试 SMB 弱口令、MS17-010，或拿收集到的密码远程登录。</li>
+<li><strong><code>history</code> / 计划任务里的运维脚本</strong> → 脚本里常硬编码其他机器的账号密码，是最直接的横向跳板。</li>
+</ul>
+<p>原则只有一条：<strong>每收集到一条信息，都问一句"这能让我到达哪台新机器、拿到什么新权限"</strong>。收集和攻击交替进行，一步步向 flag 所在的内网深处推进，这正是「横向移动」章要系统讲的内容。</p>
+<h2 id="flag">典型例题：多层内网中的第二面 flag<a class="headerlink" href="#flag" title="Permanent link">¶</a></h2>
+<p>题目描述：一个 PHP 站点存在命令执行漏洞，提示"真正的 flag 在内网"。这是 CTF 综合渗透题的经典模板。</p>
+<p><strong>第一步：拿到边界机 shell</strong>。通过命令执行漏洞执行 <code>id</code>，回显 <code>uid=33(www-data)</code>。确认拿到的是 Web 服务权限。</p>
+<p><strong>第二步：本机信息搜集</strong>。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>ip<span class="w"> </span>addr
+</code></pre></div>
+<p>发现除了 <code>eth0: 172.20.0.2/24</code> 外还有一块 <code>eth1: 192.168.1.2/24</code>——机器跨两个网段，内网入口就是 <code>192.168.1.0/24</code>。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>cat<span class="w"> </span>/var/www/html/config.php
+</code></pre></div>
+<p>拿到数据库密码 <code>Passw0rd@2024</code>，先记下来。再找一找有没有直接的情报：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>arp<span class="w"> </span>-a<span class="p">;</span><span class="w"> </span>cat<span class="w"> </span>/root/.ssh/known_hosts<span class="w"> </span><span class="m">2</span>&gt;/dev/null
+</code></pre></div>
+<p>ARP 缓存显示 <code>192.168.1.10</code>，说明这台机器近期和同网段的 .10 通信过——优先目标锁定。</p>
+<p><strong>第三步：存活与端口探测</strong>。跳板机没有 nmap，上传静态编译的 fscan：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>./fscan<span class="w"> </span>-h<span class="w"> </span><span class="m">192</span>.168.1.0/24<span class="w"> </span>-nopoc<span class="w"> </span>-nobr<span class="w"> </span>-o<span class="w"> </span>result.txt
+</code></pre></div>
+<p>结果中 <code>192.168.1.10</code> 开放了 <code>80</code> 和 <code>6379</code>（Redis）。80 端口的 Web 标题显示是内部运维系统。</p>
+<p><strong>第四步：利用信息打下一台</strong>。边界机无法直接访问外网，但浏览器侧可以通过题目的 SSRF 点或在边界机上用 curl 访问内网：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>curl<span class="w"> </span>http://192.168.1.10/
+</code></pre></div>
+<p>页面是登录框，想起第二步翻到的数据库密码 <code>Passw0rd@2024</code>——密码复用是内网常态，用 <code>admin / Passw0rd@2024</code> 尝试登录，成功进入后台，页面中放着第二段 flag。</p>
+<p>如果登录失败，下一步就是结合 <a href="../ssrf/">SSRF</a> 的 gopher 协议打法，从 6379 端口的 Redis 未授权访问写入 SSH key 或计划任务，同样能拿下 .10。</p>
+<p><strong>复盘本题的信息链</strong>：双网卡（发现内网段）→ 配置文件（凭据）→ ARP 缓存（锁定目标）→ fscan（确认服务）→ 密码复用（拿下内网机）。每一步都用上了上一步收集到的信息。</p>
+<h2 id="_8">信息收集清单<a class="headerlink" href="#_8" title="Permanent link">¶</a></h2>
+<p>拿到内网 shell 后按此清单逐项执行，基本不会漏掉关键信息：</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> <strong>权限</strong>：<code>id</code> / <code>whoami /all</code>，确认当前用户和所属组</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> <strong>系统</strong>：<code>uname -a</code> / <code>systeminfo</code>，判断系统类型与提权方向</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> <strong>网络</strong>：<code>ip addr</code> + <code>ip route</code> / <code>ipconfig /all</code> + <code>route print</code>，列出所有网卡与可达网段</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> <strong>免费情报</strong>：<code>arp -a</code>、<code>/etc/hosts</code>、<code>~/.ssh/known_hosts</code>、<code>history</code> / <code>~/.bash_history</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> <strong>监听端口</strong>：<code>ss -tlnp</code> / <code>netstat -ano</code>，本机自己开了什么服务</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> <strong>凭据</strong>：Web 配置文件、计划任务脚本、<code>~/.ssh/id_rsa</code>，全部记录备用</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> <strong>顺手找 flag</strong>：<code>find / -name "flag*" 2&gt;/dev/null</code>，CTF 题先排除 flag 就在本机的情况</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> <strong>存活探测</strong>：同网段 ARP 探测，跨网段 ping + 常见 TCP 端口</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> <strong>端口扫描</strong>：fscan 出概貌（<code>-nopoc -nobr</code> 保持安静），nmap <code>-sV</code> 识别可疑服务，大网段全端口用 masscan</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> <strong>建立信息-动作映射</strong>：每条信息标注"能用它打谁"，形成下一步攻击计划</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> <strong>持续迭代</strong>：每拿下一台新机器，从头把这份清单再执行一遍</li>
+</ul>
+<p>信息收集的水平决定了内网渗透的速度。把这份清单练成肌肉记忆，再结合「横向移动」一章的技术，多层内网题就有清晰的推进路线了。</p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../foothold/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 立足点建立"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        立足点建立
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../proxy_tunnel/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: 代理与隧道"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        代理与隧道
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#_1">内网信息收集</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_2">本机信息搜集</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#linux">Linux 常用命令</a>
+        
+      </li>
+    
+      <li>
+        <a href="#windows">Windows 常用命令</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_3">网段测绘思路</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_4">确认可达网段</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">存活主机探测</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_6">资产扫描与端口探测</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#nmap">nmap：精准但重</a>
+        
+      </li>
+    
+      <li>
+        <a href="#fscan">fscan：内网一把梭</a>
+        
+      </li>
+    
+      <li>
+        <a href="#masscan">masscan：速度优先</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+      <li>
+        <a href="#_7">收集到的信息如何指导下一步</a>
+        
+      </li>
+    
+      <li>
+        <a href="#flag">典型例题：多层内网中的第二面 flag</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_8">信息收集清单</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>
