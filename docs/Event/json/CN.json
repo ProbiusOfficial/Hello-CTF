@@ -35,22 +35,6 @@
                 "status": "即将开始"
             },
             {
-                "name": "第五届中国研究生网络安全创新大赛（实网对抗初赛）",
-                "link": "https://cpipc.acge.org.cn/cw/contestNews/detail/2c90800c8093eef401809d33b36f0652/2c9080199ed8b78d019ed96ceea21560",
-                "comp_time_start": "2026年10月24日 00:00",
-                "comp_time_end": "2026年10月24日 23:59",
-                "detail": "赛制/类型: CTF 夺旗（实网对抗赛初赛）\n主办：教育部学位中心等；报名截止 10-18",
-                "status": "正在进行"
-            },
-            {
-                "name": "BITs2CTF 2026（初赛）",
-                "link": "https://zone.ci/secarticles/wx/553536.html",
-                "comp_time_start": "2026年10月24日 10:00",
-                "comp_time_end": "2026年10月25日 10:00",
-                "detail": "赛制/类型: 线上Jeopardy解题赛（初赛，24h）\n主办：北京理工大学 BITs2Sys 战队；校级学科竞赛",
-                "status": "正在进行"
-            },
-            {
                 "name": "MoeCTF 2026",
                 "link": "https://ctf.xidian.edu.cn/games/37/",
                 "comp_time_start": "2026年08月09日 09:00",
@@ -105,6 +89,22 @@
                 "comp_time_start": "2026年10月11日 00:00",
                 "comp_time_end": "2026年10月11日 23:59",
                 "detail": "赛制/类型: 线下决赛（渗透测试+应急响应）\n地点：天津市大学软件学院（天津）",
+                "status": "已经结束"
+            },
+            {
+                "name": "第五届中国研究生网络安全创新大赛（实网对抗初赛）",
+                "link": "https://cpipc.acge.org.cn/cw/contestNews/detail/2c90800c8093eef401809d33b36f0652/2c9080199ed8b78d019ed96ceea21560",
+                "comp_time_start": "2026年10月24日 00:00",
+                "comp_time_end": "2026年10月24日 23:59",
+                "detail": "赛制/类型: CTF 夺旗（实网对抗赛初赛）\n主办：教育部学位中心等；报名截止 10-18",
+                "status": "已经结束"
+            },
+            {
+                "name": "BITs2CTF 2026（初赛）",
+                "link": "https://zone.ci/secarticles/wx/553536.html",
+                "comp_time_start": "2026年10月24日 10:00",
+                "comp_time_end": "2026年10月25日 10:00",
+                "detail": "赛制/类型: 线上Jeopardy解题赛（初赛，24h）\n主办：北京理工大学 BITs2Sys 战队；校级学科竞赛",
                 "status": "已经结束"
             }
         ],
