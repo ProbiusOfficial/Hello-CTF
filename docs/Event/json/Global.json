@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Sudocrypt v16.0",
-        "比赛时间": "2026-10-27 11:30:00 - 2026-10-28 23:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3443.ics",
-        "比赛形式": "Hack quest",
-        "比赛链接": "https://sudocrypt.com/",
-        "比赛标志": "https://ctftime.org/media/events/WhatsApp_Image_2026-09-14_at_12.17.30.jpeg",
-        "比赛权重": "0.00",
-        "赛事主办": "exunclan (https://ctftime.org/team/83987)",
-        "比赛ID": "869",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Srdnlen CTF 2026 Finals (Sardinia Cyber Camp)",
         "比赛时间": "2026-10-29 17:00:00 - 2026-10-30 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3444.ics",
@@ -501,6 +489,18 @@
         "比赛权重": "0",
         "赛事主办": "BUG PWN (https://ctftime.org/team/182428)",
         "比赛ID": "968",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Sudocrypt v16.0",
+        "比赛时间": "2026-10-27 11:30:00 - 2026-10-28 23:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3443.ics",
+        "比赛形式": "Hack quest",
+        "比赛链接": "https://sudocrypt.com/",
+        "比赛标志": "https://ctftime.org/media/events/WhatsApp_Image_2026-09-14_at_12.17.30.jpeg",
+        "比赛权重": "0.00",
+        "赛事主办": "exunclan (https://ctftime.org/team/83987)",
+        "比赛ID": "869",
         "比赛状态": "nowrunning"
     },
     {
