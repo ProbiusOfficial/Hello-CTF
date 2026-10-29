@@ -501,7 +501,7 @@
         "比赛权重": "0.00",
         "赛事主办": "exunclan (https://ctftime.org/team/83987)",
         "比赛ID": "869",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "BSides Peoria CTF 2026",
@@ -1689,18 +1689,6 @@
         "比赛权重": "24.90",
         "赛事主办": "1940 (https://ctftime.org/team/307762)",
         "比赛ID": "1650",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BroncoCTF 2026",
-        "比赛时间": "2026-07-12 00:00:00 - 2026-07-13 00:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3144.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://broncoctf.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/horse.png",
-        "比赛权重": "17.41",
-        "赛事主办": "BroncoSec (https://ctftime.org/team/112673)",
-        "比赛ID": "1017",
         "比赛状态": "past"
     }
 ]

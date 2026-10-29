@@ -52,14 +52,6 @@
                 "status": "已经结束"
             },
             {
-                "name": "宁波市第九届网络安全大赛（决赛）",
-                "link": "https://ningbo.dasctf.com",
-                "comp_time_start": "2026年08月29日 00:00",
-                "comp_time_end": "2026年08月29日 23:59",
-                "detail": "赛制/类型: 线下决赛\n地点：宁波",
-                "status": "已经结束"
-            },
-            {
                 "name": "第二届 OpenHarmony CTF 智能漏洞挖掘赛（决赛提交）",
                 "link": "https://thuctf.tsinghua.edu.cn/harmonyctf/games/2",
                 "comp_time_start": "2026年09月01日 00:00",
@@ -108,7 +100,7 @@
                 "status": "已经结束"
             }
         ],
-        "total": 13,
+        "total": 12,
         "page": 1,
         "size": 20
     },
