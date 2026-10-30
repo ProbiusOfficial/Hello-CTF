@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Srdnlen CTF 2026 Finals (Sardinia Cyber Camp)",
-        "比赛时间": "2026-10-29 17:00:00 - 2026-10-30 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3444.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.srdnlen.it/",
-        "比赛标志": "https://ctftime.org/media/events/e04b66f1d17c437f935e29d0fbe7beed_2.png",
-        "比赛权重": "25.00",
-        "赛事主办": "Srdnlen (https://ctftime.org/team/83421)",
-        "比赛ID": "840",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Hacker's Gambit 2026 (Round 2 – Grand Finale)",
         "比赛时间": "2026-10-30 14:30:00 - 2026-10-31 14:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3381.ics",
@@ -490,6 +478,18 @@
         "赛事主办": "BUG PWN (https://ctftime.org/team/182428)",
         "比赛ID": "968",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Srdnlen CTF 2026 Finals (Sardinia Cyber Camp)",
+        "比赛时间": "2026-10-29 17:00:00 - 2026-10-30 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3444.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.srdnlen.it/",
+        "比赛标志": "https://ctftime.org/media/events/e04b66f1d17c437f935e29d0fbe7beed_2.png",
+        "比赛权重": "25.00",
+        "赛事主办": "Srdnlen (https://ctftime.org/team/83421)",
+        "比赛ID": "840",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Sudocrypt v16.0",
@@ -1677,18 +1677,6 @@
         "比赛权重": "0",
         "赛事主办": "Mont5ab El2hwa (https://ctftime.org/team/402823)",
         "比赛ID": "1637",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Clash of Cybers I",
-        "比赛时间": "2026-07-13 16:00:00 - 2026-07-14 16:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3368.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://1940-team.com/games/2",
-        "比赛标志": "https://ctftime.org/media/events/CLASH_1.png",
-        "比赛权重": "24.90",
-        "赛事主办": "1940 (https://ctftime.org/team/307762)",
-        "比赛ID": "1650",
         "比赛状态": "past"
     }
 ]
