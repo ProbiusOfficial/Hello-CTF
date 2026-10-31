@@ -1,65 +1,5 @@
 [
     {
-        "比赛名称": "Hacker's Gambit 2026 (Round 2 – Grand Finale)",
-        "比赛时间": "2026-10-30 14:30:00 - 2026-10-31 14:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3381.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://unstop.com/p/hackers-gambit-2026-jaihind-college-of-engineering-kuran-1723293",
-        "比赛标志": "https://ctftime.org/media/events/tanmay_2.png",
-        "比赛权重": "0.00",
-        "赛事主办": "JCOE Cyber Sentinels (https://ctftime.org/team/405374)",
-        "比赛ID": "1415",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "CTF@AC26 - Finals",
-        "比赛时间": "2026-10-30 18:00:00 - 2026-11-01 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3463.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.ac.upt.ro/",
-        "比赛标志": "https://ctftime.org/media/events/CTFAC26_1.png",
-        "比赛权重": "25.00",
-        "赛事主办": "UPT-CTF (https://ctftime.org/team/276942)",
-        "比赛ID": "1337",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "HI Cyber Con 2026 CTF",
-        "比赛时间": "2026-10-30 22:00:00 - 2026-11-01 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3460.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hiddeninvestigations.net/",
-        "比赛标志": "https://ctftime.org/media/events/HI_Cyber_Con_2026__CTFtime_Logo__Transparent.png",
-        "比赛权重": "0.00",
-        "赛事主办": "Hidden Investigations (https://ctftime.org/team/188318)",
-        "比赛ID": "1704",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "2026 Qiangwang Challenge on Cyber Mimic Defense Qualification",
-        "比赛时间": "2026-10-31 10:00:00 - 2026-11-01 10:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3459.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://nest.pmlabs.com.cn/en/events/qiangwang-9/registration",
-        "比赛标志": "https://ctftime.org/media/events/logo_139.png",
-        "比赛权重": "0.00",
-        "赛事主办": "LoveFromMimic (https://ctftime.org/team/364644)",
-        "比赛ID": "1212",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "HAM-DEFCON",
-        "比赛时间": "2026-10-31 11:30:00 - 2026-10-31 15:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3491.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "http://defcon.hamarc.tech/",
-        "比赛标志": "https://ctftime.org/media/events/hamarc.png",
-        "比赛权重": "0",
-        "赛事主办": "HAMARC (https://ctftime.org/team/452464)",
-        "比赛ID": "1742",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Russian CTF Cup X Qualifier",
         "比赛时间": "2026-10-31 17:00:00 - 2026-11-01 17:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3469.ics",
@@ -264,18 +204,6 @@
         "比赛状态": "oncoming"
     },
     {
-        "比赛名称": "Cyber Ninja CTF 2026 - BLACKOUT",
-        "比赛时间": "2026-11-21 17:00:00 - 2026-11-22 17:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3490.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://www.cyber-ninja-ctf.fr/",
-        "比赛标志": "https://ctftime.org/media/events/66a76ec5022678cdd16d2d5a_Design_sans_titre_14.png",
-        "比赛权重": "0",
-        "赛事主办": "OteriHack (https://ctftime.org/team/190074)",
-        "比赛ID": "1739",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Crate-CTF 2026",
         "比赛时间": "2026-11-21 21:00:00 - 2026-11-22 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3336.ics",
@@ -477,6 +405,66 @@
         "比赛权重": "0",
         "赛事主办": "BUG PWN (https://ctftime.org/team/182428)",
         "比赛ID": "968",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Hacker's Gambit 2026 (Round 2 – Grand Finale)",
+        "比赛时间": "2026-10-30 14:30:00 - 2026-10-31 14:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3381.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://unstop.com/p/hackers-gambit-2026-jaihind-college-of-engineering-kuran-1723293",
+        "比赛标志": "https://ctftime.org/media/events/tanmay_2.png",
+        "比赛权重": "0.00",
+        "赛事主办": "JCOE Cyber Sentinels (https://ctftime.org/team/405374)",
+        "比赛ID": "1415",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "CTF@AC26 - Finals",
+        "比赛时间": "2026-10-30 18:00:00 - 2026-11-01 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3463.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.ac.upt.ro/",
+        "比赛标志": "https://ctftime.org/media/events/CTFAC26_1.png",
+        "比赛权重": "25.00",
+        "赛事主办": "UPT-CTF (https://ctftime.org/team/276942)",
+        "比赛ID": "1337",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "HI Cyber Con 2026 CTF",
+        "比赛时间": "2026-10-30 22:00:00 - 2026-11-01 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3460.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.hiddeninvestigations.net/",
+        "比赛标志": "https://ctftime.org/media/events/HI_Cyber_Con_2026__CTFtime_Logo__Transparent.png",
+        "比赛权重": "0",
+        "赛事主办": "Hidden Investigations (https://ctftime.org/team/188318)",
+        "比赛ID": "1704",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "2026 Qiangwang Challenge on Cyber Mimic Defense Qualification",
+        "比赛时间": "2026-10-31 10:00:00 - 2026-11-01 10:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3459.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://nest.pmlabs.com.cn/en/events/qiangwang-9/registration",
+        "比赛标志": "https://ctftime.org/media/events/logo_139.png",
+        "比赛权重": "0",
+        "赛事主办": "LoveFromMimic (https://ctftime.org/team/364644)",
+        "比赛ID": "1212",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "HAM-DEFCON",
+        "比赛时间": "2026-10-31 11:30:00 - 2026-10-31 15:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3491.ics",
+        "比赛形式": "Attack-Defense",
+        "比赛链接": "http://defcon.hamarc.tech/",
+        "比赛标志": "https://ctftime.org/media/events/hamarc.png",
+        "比赛权重": "0",
+        "赛事主办": "HAMARC (https://ctftime.org/team/452464)",
+        "比赛ID": "1742",
         "比赛状态": "nowrunning"
     },
     {
