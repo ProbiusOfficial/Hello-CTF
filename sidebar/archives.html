@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>历史比赛附件 - Hello CTF</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTF/main/docs/assets/images/favicon.png">
+<link rel="stylesheet" href="/shell/shell.css">
+<script>
+  if (localStorage.getItem('hc-theme') === 'dark') document.documentElement.dataset.theme = 'dark';
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: var(--sans); line-height: 1.7;
+    transition: background .25s, color .25s;
+  }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--hl); }
+  [hidden] { display: none !important; }
+
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 44px 32px 90px; }
+
+  /* ===================== 页头 ===================== */
+  .kicker { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; color: var(--accent); }
+  .page-head h1 {
+    font-size: clamp(30px, 3.4vw, 40px);
+    font-weight: 800; letter-spacing: -.03em; line-height: 1.2;
+    margin: 12px 0 10px;
+  }
+  .page-head h1 .hl { background: linear-gradient(transparent 60%, var(--hl) 60%); }
+  .page-head .sub { font-size: 14.5px; color: var(--ink-2); max-width: 640px; }
+  .stats { font-family: var(--mono); font-size: 12px; color: var(--ink-3); margin-top: 12px; }
+  .stats strong { color: var(--ink-2); font-weight: 600; }
+
+  /* ===================== 主按钮 ===================== */
+  .cta-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 22px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 9px;
+    padding: 11px 24px; border-radius: 12px; font-size: 14px; font-weight: 700;
+    transition: transform .16s ease, box-shadow .16s ease;
+  }
+  .btn .ic { width: 16px; height: 16px; }
+  .btn-dark { background: var(--ink); color: var(--paper); box-shadow: 0 12px 26px -12px rgba(15,23,42,.55); }
+  .btn-dark:hover { transform: translateY(-2px); box-shadow: var(--shadow-pop); }
+  .cta-note { font-size: 12px; color: var(--ink-3); }
+
+  /* ===================== 搜索 ===================== */
+  .search-box {
+    display: flex; align-items: center; gap: 10px;
+    border: 1px solid var(--line); border-radius: 12px;
+    background: var(--paper); padding: 11px 16px; margin-top: 26px;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .search-box:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  .search-box > .ic { color: var(--ink-3); }
+  .search-box input {
+    flex: 1; border: none; outline: none; background: transparent;
+    color: var(--ink); font-family: var(--sans); font-size: 14px;
+  }
+  .search-box input::placeholder { color: var(--ink-3); }
+  .search-clear {
+    border: none; background: none; cursor: pointer; padding: 2px;
+    color: var(--ink-3); display: grid; place-items: center;
+    transition: color .15s;
+  }
+  .search-clear:hover { color: var(--ink); }
+
+  /* ===================== 年份 chips ===================== */
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .chip {
+    font-family: var(--mono); font-size: 12px;
+    padding: 5px 13px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--paper); color: var(--ink-2);
+    cursor: pointer; transition: border-color .15s, color .15s, background .15s;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--accent); }
+  .chip.on { background: var(--accent-soft); color: var(--accent); border-color: transparent; font-weight: 600; }
+
+  /* ===================== 年份分组 ===================== */
+  .g-title {
+    display: flex; align-items: center; gap: 11px;
+    font-family: var(--mono); font-size: 13px; letter-spacing: .14em;
+    color: var(--ink-2); margin: 36px 0 14px;
+  }
+  .g-title::before { content: ""; width: 22px; height: 3px; border-radius: 2px; background: var(--accent); }
+  .g-title .n { color: var(--ink-3); }
+
+  /* ===================== 比赛条目（列表行） ===================== */
+  .rows { display: flex; flex-direction: column; gap: 10px; }
+  .row {
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 18px;
+    border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--paper); padding: 15px 20px;
+    transition: border-color .16s, box-shadow .16s;
+  }
+  .row:hover { border-color: var(--ink); box-shadow: var(--shadow-pop); }
+  .row-main { min-width: 0; }
+  .row-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .row-head h3 { font-size: 14px; font-weight: 700; }
+  .stars { font-family: var(--mono); font-size: 11px; color: var(--ink-3); flex-shrink: 0; }
+  .row .d { font-size: 12.5px; color: var(--ink-2); margin-top: 4px; }
+  .row-links { display: flex; flex-wrap: wrap; gap: 6px; flex-shrink: 0; padding-top: 2px; }
+  .repo {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-family: var(--mono); font-size: 11px;
+    padding: 3.5px 11px; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--ink-2);
+    transition: border-color .15s, color .15s;
+  }
+  .repo .ic { width: 12px; height: 12px; }
+  .repo:hover { border-color: var(--accent); color: var(--accent); }
+
+  .empty { text-align: center; padding: 70px 0; color: var(--ink-3); font-size: 13.5px; }
+
+  @media (max-width: 640px) {
+    .row { flex-direction: column; gap: 10px; }
+    .wrap { padding: 30px 18px 70px; }
+  }
+</style>
+</head>
+<body>
+<div class="main">
+  <div class="wrap">
+
+    <header class="page-head">
+      <div class="kicker">ARCHIVES · 比赛附件</div>
+      <h1>历届 CTF 比赛 <span class="hl">附件归档</span>。</h1>
+      <p class="sub">CTF-Archives 组织收录的历届 CTF 比赛附件归档，按年份整理，便于查找和学习。</p>
+      <div class="stats">跨越 <strong id="yearCount">0</strong> 个年份 · 共 <strong id="compCount">0</strong> 场比赛</div>
+      <div class="cta-row">
+        <a class="btn btn-dark" href="https://github.com/CTF-Archives" target="_blank" rel="noopener noreferrer">
+          <svg class="ic"><use href="#i-link"/></svg>提交 Writeup
+        </a>
+        <span class="cta-note">通过 GitHub PR / Issue 提交你的题解</span>
+      </div>
+    </header>
+
+    <div class="search-box">
+      <svg class="ic"><use href="#i-search"/></svg>
+      <input id="searchInput" type="text" placeholder="搜索比赛名称或描述 ...">
+      <button id="clearSearch" class="search-clear" hidden aria-label="清空搜索">
+        <svg class="ic" style="width:14px;height:14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+
+    <div class="chips" id="yearChips">
+      <button class="chip on" data-year="all">全部</button>
+    </div>
+
+    <div id="groups"></div>
+
+    <div class="empty" id="empty" hidden>
+      <p>没有找到匹配的比赛</p>
+      <p style="font-size:12px;margin-top:4px">试试换个关键词</p>
+    </div>
+
+  </div>
+</div>
+
+<script src="/shell/search.js"></script>
+<script src="/shell/shell.js"></script>
+<script>Shell.mount({ active: "archives" });</script>
+<script>
+(function () {
+  var allData = [];
+  var activeYear = 'all';
+  var searchQuery = '';
+  var debounceTimer;
+
+  var chipsEl = document.getElementById('yearChips');
+  var groupsEl = document.getElementById('groups');
+  var emptyEl = document.getElementById('empty');
+
+  function rowHTML(comp) {
+    var stars = comp.stars > 0 ? '<span class="stars">★ ' + comp.stars + '</span>' : '';
+    var links = comp.repos.map(function (r) {
+      return '<a class="repo" href="' + r.url + '" target="_blank" rel="noopener noreferrer">' +
+        '<svg class="ic"><use href="#i-link"/></svg>' + r.label + '</a>';
+    }).join('');
+    return '<div class="row">' +
+      '<div class="row-main">' +
+        '<div class="row-head"><h3>' + comp.name + '</h3>' + stars + '</div>' +
+        '<p class="d">' + comp.desc + '</p>' +
+      '</div>' +
+      '<div class="row-links">' + links + '</div>' +
+      '</div>';
+  }
+
+  function render() {
+    var kw = searchQuery ? searchQuery.toLowerCase().split(/\s+/).filter(Boolean) : [];
+    var html = '';
+    var totalVisible = 0;
+
+    allData.forEach(function (yearGroup) {
+      if (activeYear !== 'all' && yearGroup.year !== activeYear) return;
+
+      var filtered = yearGroup.competitions;
+      if (kw.length > 0) {
+        filtered = filtered.filter(function (comp) {
+          var hay = (comp.name + ' ' + comp.desc).toLowerCase();
+          for (var i = 0; i < kw.length; i++) {
+            if (hay.indexOf(kw[i]) === -1) return false;
+          }
+          return true;
+        });
+      }
+      if (filtered.length === 0) return;
+      totalVisible += filtered.length;
+
+      html += '<div class="g-title">' + yearGroup.year + '<span class="n">' + filtered.length + ' 场</span></div>';
+      html += '<div class="rows">' + filtered.map(rowHTML).join('') + '</div>';
+    });
+
+    groupsEl.innerHTML = html;
+    emptyEl.hidden = totalVisible > 0;
+  }
+
+  function buildYearChips() {
+    allData.forEach(function (g) {
+      var b = document.createElement('button');
+      b.className = 'chip';
+      b.dataset.year = g.year;
+      b.textContent = g.year;
+      chipsEl.appendChild(b);
+    });
+  }
+
+  chipsEl.addEventListener('click', function (e) {
+    var chip = e.target.closest('.chip');
+    if (!chip) return;
+    chipsEl.querySelectorAll('.chip').forEach(function (c) { c.classList.remove('on'); });
+    chip.classList.add('on');
+    activeYear = chip.dataset.year;
+    render();
+  });
+
+  var searchInput = document.getElementById('searchInput');
+  var clearBtn = document.getElementById('clearSearch');
+  searchInput.addEventListener('input', function () {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(function () {
+      searchQuery = searchInput.value.trim();
+      clearBtn.hidden = !searchQuery;
+      render();
+    }, 180);
+  });
+  clearBtn.addEventListener('click', function () {
+    searchInput.value = '';
+    searchQuery = '';
+    clearBtn.hidden = true;
+    render();
+    searchInput.focus();
+  });
+
+  fetch('./archives_data.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      allData = data;
+      var totalComps = data.reduce(function (sum, g) { return sum + g.competitions.length; }, 0);
+      document.getElementById('yearCount').textContent = data.length;
+      document.getElementById('compCount').textContent = totalComps;
+      buildYearChips();
+      render();
+    })
+    .catch(function (err) {
+      console.error('Failed to load archives data:', err);
+      groupsEl.innerHTML = '<p class="empty">数据加载失败，请刷新重试。</p>';
+    });
+})();
+</script>
+</body>
+</html>
