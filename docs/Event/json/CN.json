@@ -27,14 +27,6 @@
                 "status": "即将开始"
             },
             {
-                "name": "BITs2CTF 2026（决赛）",
-                "link": "https://zone.ci/secarticles/wx/553536.html",
-                "comp_time_start": "2026年11月01日 09:00",
-                "comp_time_end": "2026年11月01日 17:00",
-                "detail": "赛制/类型: 线下决赛\n地点：北京理工大学良乡校区（北京）",
-                "status": "正在进行"
-            },
-            {
                 "name": "MoeCTF 2026",
                 "link": "https://ctf.xidian.edu.cn/games/37/",
                 "comp_time_start": "2026年08月09日 09:00",
@@ -89,6 +81,14 @@
                 "comp_time_start": "2026年10月24日 10:00",
                 "comp_time_end": "2026年10月25日 10:00",
                 "detail": "赛制/类型: 线上Jeopardy解题赛（初赛，24h）\n主办：北京理工大学 BITs2Sys 战队；校级学科竞赛",
+                "status": "已经结束"
+            },
+            {
+                "name": "BITs2CTF 2026（决赛）",
+                "link": "https://zone.ci/secarticles/wx/553536.html",
+                "comp_time_start": "2026年11月01日 09:00",
+                "comp_time_end": "2026年11月01日 17:00",
+                "detail": "赛制/类型: 线下决赛\n地点：北京理工大学良乡校区（北京）",
                 "status": "已经结束"
             }
         ],
