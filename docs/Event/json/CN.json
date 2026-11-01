@@ -19,20 +19,20 @@
                 "status": "时间待定"
             },
             {
-                "name": "BITs2CTF 2026（决赛）",
-                "link": "https://zone.ci/secarticles/wx/553536.html",
-                "comp_time_start": "2026年11月01日 09:00",
-                "comp_time_end": "2026年11月01日 17:00",
-                "detail": "赛制/类型: 线下决赛\n地点：北京理工大学良乡校区（北京）",
-                "status": "即将开始"
-            },
-            {
                 "name": "第五届中国研究生网络安全创新大赛（决赛）",
                 "link": "https://cpipc.acge.org.cn/cw/contestNews/detail/2c90800c8093eef401809d33b36f0652/2c9080199ed8b78d019ed96ceea21560",
                 "comp_time_start": "2026年12月26日 00:00",
                 "comp_time_end": "2026年12月27日 23:59",
                 "detail": "赛制/类型: AWD Plus + 靶场渗透（决赛）\n地点：哈尔滨市南岗区",
                 "status": "即将开始"
+            },
+            {
+                "name": "BITs2CTF 2026（决赛）",
+                "link": "https://zone.ci/secarticles/wx/553536.html",
+                "comp_time_start": "2026年11月01日 09:00",
+                "comp_time_end": "2026年11月01日 17:00",
+                "detail": "赛制/类型: 线下决赛\n地点：北京理工大学良乡校区（北京）",
+                "status": "正在进行"
             },
             {
                 "name": "MoeCTF 2026",
