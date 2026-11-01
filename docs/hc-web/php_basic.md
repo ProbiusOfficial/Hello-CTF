@@ -568,7 +568,7 @@ if((string)$str1 !== (string)$str2 && md5($str1)===md5($str2)){
 
 **说人话就是 md5 一样，但内容完全不一样的字符串**
 
-关于 md5 碰撞可以翻阅这篇论文：https://www.iacr.org/cryptodb/archive/2005/EUROCRYPT/2868/2868.pdf
+关于 md5 碰撞可以翻阅这篇论文：https://iacr.org/archive/eurocrypt2005/34940019/34940019.pdf
 
 这里我们先用工具跑一下，使用 FastColl 对 md5 进行一个简单碰撞
 
