@@ -353,6 +353,8 @@ nav:
         - ROP入门: hc-pwn/ROP.md
         - 常见的ROP技巧: hc-pwn/ROP_Tricks.md
         - ROP进阶: hc-pwn/rop_add_v1.md
+      - Linux Kernel Pwn:
+        - 内核基础：hc-pwn/kernel_base_knowlegde.md
 
     - AWD | 攻防模式:
       - AWD介绍: hc-awd/awd_about.md
