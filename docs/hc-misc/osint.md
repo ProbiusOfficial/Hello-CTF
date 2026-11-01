@@ -169,6 +169,7 @@ flag{v1.8.36}
 | 网站名称与网址                                               | 描述                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [lyzem.com](https://lyzem.com/)                              | Telegram搜索引擎。                                           |
+| [TGScope](https://tgscope.io/)                               | Telegram频道搜索引擎，按语义而非仅按名称匹配公开频道，支持任意语言。 |
 | [Social Mapper](https://github.com/Greenwolf/social_mapper)  | 由Trustwave公司SpiderLabs开源的社交媒体枚举和关联工具，通过人脸识别关联人物侧写。 |
 | [Sniff-Paste](https://github.com/needmorecowbell/sniff-paste) | 针对Pastebin的开源情报收集工具。                             |
 | [Linkedin2Username](https://github.com/initstring/linkedin2username) | 通过Linkedin领英获取相关公司员工列表的工具。                 |
