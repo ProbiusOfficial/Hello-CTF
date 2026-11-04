@@ -120,6 +120,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "h4ckc0n 2026",
+        "比赛时间": "2026-11-14 23:30:00 - 2026-11-15 23:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3464.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://h4ckc0n.in/",
+        "比赛标志": "https://ctftime.org/media/events/images_1.jpeg",
+        "比赛权重": "24.23",
+        "赛事主办": "d4rkc0de (https://ctftime.org/team/15154)",
+        "比赛ID": "115",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "InIt CTF",
         "比赛时间": "2026-11-14 23:30:00 - 2026-11-15 07:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3467.ics",
@@ -160,7 +172,7 @@
         "比赛时间": "2026-11-21 07:00:00 - 2026-11-22 07:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3425.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://outbackoverflow26.hscyber.org/",
+        "比赛链接": "http://ctf.hscyber.org/",
         "比赛标志": "https://ctftime.org/media/events/logo_137.png",
         "比赛权重": "0.00",
         "赛事主办": "HSCC (https://ctftime.org/team/446734)",
@@ -273,6 +285,18 @@
         "比赛权重": "79.51",
         "赛事主办": "bi0s (https://ctftime.org/team/662)",
         "比赛ID": "31",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "OTERIA Cyber Cup #4",
+        "比赛时间": "2026-12-05 17:00:00 - 2026-12-06 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3493.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://www.oteria-cyber-cup.fr/",
+        "比赛标志": "",
+        "比赛权重": "0",
+        "赛事主办": "OteriHack (https://ctftime.org/team/190074)",
+        "比赛ID": "1740",
         "比赛状态": "oncoming"
     },
     {
