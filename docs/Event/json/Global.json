@@ -396,18 +396,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Africa battleCTF 2026 Qualifier",
-        "比赛时间": "2026-10-05 07:00:00 - 2026-11-05 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3462.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.bugpwn.com/",
-        "比赛标志": "https://ctftime.org/media/events/Blue_Cartoon_April_Fools_Day_Instagram_Post.png",
-        "比赛权重": "0",
-        "赛事主办": "BUG PWN (https://ctftime.org/team/182428)",
-        "比赛ID": "968",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "StealthCup 2026",
         "比赛时间": "2026-10-31 21:00:00 - 2026-11-01 05:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3482.ics",
@@ -753,6 +741,18 @@
         "比赛权重": "0",
         "赛事主办": "OWASP_PCCOE-CORE (https://ctftime.org/team/206360)",
         "比赛ID": "1678",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Africa battleCTF 2026 Qualifier",
+        "比赛时间": "2026-10-05 07:00:00 - 2026-11-05 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3462.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.bugpwn.com/",
+        "比赛标志": "https://ctftime.org/media/events/Blue_Cartoon_April_Fools_Day_Instagram_Post.png",
+        "比赛权重": "0",
+        "赛事主办": "BUG PWN (https://ctftime.org/team/182428)",
+        "比赛ID": "968",
         "比赛状态": "past"
     },
     {
@@ -1593,18 +1593,6 @@
         "比赛权重": "0.00",
         "赛事主办": "CODEGATE (https://ctftime.org/team/39352)",
         "比赛ID": "4",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "BDSec CTF 2026",
-        "比赛时间": "2026-07-20 23:00:00 - 2026-07-21 23:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3349.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://2026.bdsec-ctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/bdsec-ctf-logo_2.png",
-        "比赛权重": "15.62",
-        "赛事主办": "Knight Squad (https://ctftime.org/team/141739)",
-        "比赛ID": "811",
         "比赛状态": "past"
     }
 ]
