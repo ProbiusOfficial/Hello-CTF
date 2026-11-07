@@ -382,9 +382,8 @@ p.sendafter(b"Read 2\n", payload)
 p.interactive()
 ```
 
-> [!TIP]
->
-> 在栈迁移的环境下通过ROP调用`system`函数时，需要注意`system`函数需要大量的栈空间，栈顶（低地址）一侧需要 **预留0x600字节以上** 的栈空间。
+!!! tip
+    在栈迁移的环境下通过ROP调用`system`函数时，需要注意`system`函数需要大量的栈空间，栈顶（低地址）一侧需要 **预留0x600字节以上** 的栈空间。
 
 对于这个exp，第一次栈迁移泄露libc基地址的栈帧的变化如下，第二次栈迁移调用`system`同理，这里不重复演示了（从第一次`call read`开始）：
 
@@ -416,7 +415,8 @@ int main() {
 
 这里只有一次往`rbp-0x1000`的位置写入0x1010长度的内容的机会。很显然，这里无法提供足够的空间构造ROP链，也没机会提前写入ROP链。
 
-那么真的没办法了吗？
+!!!question
+    那么真的没办法了吗？
 
 我们先来回想一下栈迁移的流程，通过函数结尾`leave`控制`RBP`寄存器，然后通过再次`leave`控制`RSP`寄存器。同时我们再看上面的汇编中的`read`：
 
@@ -490,8 +490,104 @@ p.interactive()
 
 ### 堆与栈迁移
 
+#### setcontext 迁移法
+
+~以下由EROORvbsyes续写~
+
 用`setcontext`开头的一个一段gadget可以控制大部分寄存器，其中就包括`RSP`寄存器。
 
-具体用法：
+话不多说，我们直接上汇编把他讲清楚(汇编来自libc-2.35_x64)
 
-咕咕咕
+```asm
+.text:00000000000539E0 setcontext      proc near               ; CODE XREF: sub_5A0C0+80↓p
+.text:00000000000539E0                                         ; DATA XREF: LOAD:0000000000006AB0↑o
+.text:00000000000539E0 ; __unwind {
+.text:00000000000539E0                 endbr64
+.text:00000000000539E4                 push    rdi
+.text:00000000000539E5                 lea     rsi, [rdi+128h] ; nset
+.text:00000000000539EC                 xor     edx, edx        ; oset
+.text:00000000000539EE                 mov     edi, 2          ; how
+.text:00000000000539F3                 mov     r10d, 8         ; sigsetsize
+.text:00000000000539F9                 mov     eax, 0Eh
+.text:00000000000539FE                 syscall                 ; LINUX - sys_rt_sigprocmask
+.text:0000000000053A00                 pop     rdx
+.text:0000000000053A01                 cmp     rax, 0FFFFFFFFFFFFF001h
+.text:0000000000053A07                 jnb     loc_53B2F
+.text:0000000000053A0D                 mov     rcx, [rdx+0E0h]
+.text:0000000000053A14                 fldenv  byte ptr [rcx]
+.text:0000000000053A16                 ldmxcsr dword ptr [rdx+1C0h]
+.text:0000000000053A1D                 mov     rsp, [rdx+0A0h] //标号1
+.text:0000000000053A24                 mov     rbx, [rdx+80h]
+.text:0000000000053A2B                 mov     rbp, [rdx+78h]
+.text:0000000000053A2F                 mov     r12, [rdx+48h]
+.text:0000000000053A33                 mov     r13, [rdx+50h]
+.text:0000000000053A37                 mov     r14, [rdx+58h]
+.text:0000000000053A3B                 mov     r15, [rdx+60h]
+.text:0000000000053A3F                 test    dword ptr fs:48h, 2
+.text:0000000000053A4B                 jz      loc_53B06  //标号2
+.text:0000000000053A51                 mov     rsi, [rdx+3A8h]
+.text:0000000000053A58                 mov     rdi, rsi
+.text:0000000000053A5B                 mov     rcx, [rdx+3B0h]
+.text:0000000000053A62                 cmp     rcx, fs:78h
+.text:0000000000053A6B                 jz      short loc_53AA5
+.........
+.text:0000000000053B06                 mov     rcx, [rdx+0A8h]//标号3
+.text:0000000000053B0D                 push    rcx
+.text:0000000000053B0E                 mov     rsi, [rdx+70h]
+.text:0000000000053B12                 mov     rdi, [rdx+68h]
+.text:0000000000053B16                 mov     rcx, [rdx+98h]
+.text:0000000000053B1D                 mov     r8, [rdx+28h]
+.text:0000000000053B21                 mov     r9, [rdx+30h]
+.text:0000000000053B25                 mov     rdx, [rdx+88h]
+.text:0000000000053B25 ; } // starts at 539E0
+.text:0000000000053B2C ; __unwind {
+.text:0000000000053B2C                 xor     eax, eax 
+.text:0000000000053B2E                 retn //标号4
+.text:0000000000053B2F ; ---------------------------------------------------------------------------
+.text:0000000000053B2F
+.text:0000000000053B2F loc_53B2F:                              ; CODE XREF: setcontext+27↑j
+.text:0000000000053B2F                 mov     rcx, cs:off_219E10
+.text:0000000000053B36                 neg     eax
+.text:0000000000053B38                 mov     fs:[rcx], eax
+.text:0000000000053B3B                 or      rax, 0FFFFFFFFFFFFFFFFh
+.text:0000000000053B3F                 retn
+.text:0000000000053B3F ; } // starts at 53B2C
+.text:0000000000053B3F setcontext      endp ; sp-analysis failed
+```
+
+我们利用`setcontext`时，肯定先要让控制流跳转到一条我们可以控制的地方。那么这里的[标号1]就是我们要跳转控制rsp的地方。
+
+`mov     rsp, [rdx+0A0h]`里面rsp会被修改为rdx+0xA0指向内存的64位值，这样我们就可以在控制rdx的前提下控制rsp完成栈迁移。但是无法ret回去又变成了一个问题。
+
+但是，我们看[标号2]上面的对比，`test    dword ptr fs:48h, 2`,代码进行了和fs段上的0x48处值和2的比较，我们查阅资料，发现在多数libc正常执行流中，fs[0x48]总为0，这样test指令会设置零标志（ZF=1），紧接着的 `jz loc_53B06` 就会跳转。`loc_53B06`是什么地方呢？我们继续看[标号3]。
+
+!!! info
+    在 glibc 的常规执行流中，fs:48h 对应的线程标志字段的 bit 1 在大多数情况下是 0。只有在特定条件（如程序确实创建了多个线程并触发了相关内部逻辑）下才会被置位。如果程序启用了某些安全机制（如 CET 影子栈），或 glibc 的线程本地存储状态被修改，该位可能被置位，导致跳转不成立，从而使利用链中断。因此，在实际利用时，需要根据目标环境确认这一点。
+
+其中`mov     rcx, [rdx+0A8h]`后面就是跳转过去执行的代码，该片段完成了一系列寄存器设置，然后再`xor eax,eax`清空了rax寄存器，最后ret。
+
+!!! attention
+    在执行了`mov     rsp, [rdx+0A0h]`之后，程序读取的栈数据全是我们伪造的栈，另外其他寄存器都是由我们的`rdx`决定的(除了eax)。那有人就会问了，这样不会造成内存泄露吗?emm.....这就不是我们攻击者该考虑的事了 :)
+
+那么我们执行了之后可以实现以下效果
+
+- rsp = [rdx+0xA0]
+- rbx = [rdx+0x80]
+- rbp = [rdx+0x78]
+- r12 = [rdx+0x48]
+- r13 = [rdx+0x50]
+- r14 = [rdx+0x58]
+- r15 = [rdx+0x60]
+- rsi = [rdx+0x70] //参数寄存器2
+- rdi = [rdx+0x68] //参数寄存器1
+- rcx = [rdx+0x98] //参数寄存器4
+- r8 = [rdx+0x28] //参数寄存器5
+- r9 = [rdx+0x30] //参数寄存器6
+- rdx = [rdx+0x88] //参数寄存器3 此时rdx重新被赋值
+- eax = 0
+- 假栈顶部被赋值为[rdx+0A8h]
+
+!!! warning
+    因为假栈顶部被push赋值为`[rdx+0A8h]`,（注意此时[假栈指针-0x8]本身不能是不可解析地址，否则会PG_FAULT，所以我们都是建立在[rdx+0xA0]=fake_rsp+0x8的基础上阐述的）,所以当程序在进行`ret`的时候会弹出栈顶`[rdx+0A8h]`的值当作返回地址跳转，也就是说在设置`rdx`可控内存时我们就要设置`[rdx+0A8h]`为要返回的函数或代码片段。
+
+至此`setcontext`栈迁移法结束
