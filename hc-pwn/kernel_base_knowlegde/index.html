@@ -1,0 +1,1569 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>内核基础 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <div class="tn-group">文件与编码基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">隐写分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">取证分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>ICS | 工控安全<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ics/S7comm%20%E5%8D%8F%E8%AE%AE/">S7comm 协议</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ics/COTP%20%E5%8D%8F%E8%AE%AE/">COTP 协议</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ics/MMS%20%E5%8D%8F%E8%AE%AE/">MMS 协议</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ics/Omron%20Fins%20%E5%8D%8F%E8%AE%AE/">Omron Fins 协议</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ics/LSIS%20FEnet%20%E5%8D%8F%E8%AE%AE/">LSIS FEnet 协议</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ics/JT%20T%20808%20%E5%8D%8F%E8%AE%AE/">JT/T 808 协议</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ics/MQTT%20%E5%8D%8F%E8%AE%AE/">MQTT 协议</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ics/IC%20%E5%8D%A1/">IC 卡</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ics/1527%20%E8%8A%AF%E7%89%87/">1527 芯片</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ics/SCD%20%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/">SCD 配置信息</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <div class="tn-group">环境与工具</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/web_env/">Web环境设置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/docker_install/">Docker安装配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/docker_env/">Docker与漏洞环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/vm_lab/">虚拟机与网络模拟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/burp/">Burp Suite</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/py_script/">Python脚本</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/http/">HTTP协议</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <div class="tn-group">信息收集</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">PHP专题</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/php_features/">PHP特性与常见绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_unser/">PHP反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_code_audit/">PHP代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">注入类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/nosql/">NoSQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/csrf/">CSRF攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">文件类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">命令与代码执行</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/rce/">RCE</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/session_jwt/">会话与认证安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <div class="tn-group">语言扩展 | 世界不止有PHP</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/py_unser/">Python反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/py_sandbox/">Python沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/flask_sec/">Flask安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/prototype_pollution/">原型链污染</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/js_sandbox/">JS沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/js_reverse/">JS逆向</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/java_basic/">Java安全基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/java_unser/">Java反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/spring/">Spring漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/java_audit/">Java代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">进阶专题</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/waf_bypass/">WAF绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/http_smuggling/">请求走私</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/cache_poisoning/">缓存投毒</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xs_leaks/">XS-Leaks</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_crypto/">密码学应用题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/cloud_container/">云与容器安全</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">实战能力</div>
+      
+  
+    
+      <div class="tn-group">渗透链路基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/pentest_flow/">渗透流程总览</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/two_layer/">两层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/foothold/">立足点建立</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/internal_recon/">内网信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/proxy_tunnel/">代理与隧道</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">多层网络渗透</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/three_layer/">三层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/multi_layer/">多层网络综合</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ad_basic/">域渗透入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/lateral/">横向移动</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">对抗与综合</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/awd/">AWD模式</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_pwn/">Web与二进制结合</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/nday/">Nday利用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/review/">Writeup复盘方法</a>
+    
+  
+
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/env/">环境配置</a>
+    
+  
+    
+      <div class="tn-group">基础知识</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">密码体系</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../">Pwn | 二进制安全</a>
+    
+  
+    
+      <div class="tn-group">环境与基础</div>
+      
+  
+    
+      <a class="tn-link" href="../wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../Protections/">常见保护</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">栈溢出</div>
+      
+  
+    
+      <a class="tn-link" href="../Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">ROP利用</div>
+      
+  
+    
+      <a class="tn-link" href="../ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../rop_add_v1/">ROP进阶</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">Linux Kernel Pwn</div>
+      
+  
+    
+      <a class="tn-link on" href="./">内核基础</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="linux-pwn">Linux 内核 PWN 基础<a class="headerlink" href="#linux-pwn" title="Permanent link">¶</a></h1>
+<p>本文档基于6.x版本内核</p>
+<h2 id="_1">整体架构图<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>第 0 章  环境搭建：QEMU + initramfs + GDB
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>第 1 章  内核视角基础：syscall、地址空间、SLUB
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>第 2 章  内核 PWN 的利用模型与漏洞分类
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>第 3 章  堆利用核心：SLUB 与 Slab 喷射
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>第 4 章  提权原语：cred、commit_creds 与 modprobe_path
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>第 5 章  控制流劫持：ret2usr 与内核 ROP
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>第 6 章  栈与竞态：栈溢出、double-fetch、race
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>第 7 章  保护机制与绕过：KASLR / SMEP / SMAP / KPTI / FGKASLR
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>第 8 章  实战模板：从漏洞到稳定 exploit
+</code></pre></div>
+<p>配套视频资源：<a href="https://www.bilibili.com/video/BV1Pef2BXE6S">【CTF-Pwn基础教程-Kernel-Pwn-第一课-内核基础】</a></p>
+<p><em>本节作者:EROORvbsyes</em></p>
+<h2 id="0-qemu-initramfs-gdb">第 0 章 环境搭建：QEMU + initramfs + GDB<a class="headerlink" href="#0-qemu-initramfs-gdb" title="Permanent link">¶</a></h2>
+<p><strong>核心内容</strong>：构建一个“可换内核版本、可开关 mitigation、可 GDB 调试、可投放 exploit”的标准化工作站。内核 PWN 不存在“用 Docker 代替 QEMU”的捷径，QEMU + initramfs 是唯一与真实题目和 kernelCTF 对齐的路径。</p>
+<p><strong>必须覆盖的点</strong>：</p>
+<ul>
+<li><strong>工具链</strong>：<code>build-essential</code>、<code>qemu-system-x86</code>、<code>gdb-multiarch</code>、<code>cpio</code>、<code>libelf-dev</code>、<code>libssl-dev</code>、<code>flex</code>、<code>bison</code>。推荐 WSL2 + Ubuntu 22.04，避免 gcc-13 对旧内核模块的兼容问题。</li>
+<li><strong>典型题目包结构</strong>：<code>bzImage</code>（压缩内核，题目常给这个）、<code>vmlinux</code>（带符号，GDB 用，我们解题常用）、<code>initramfs.cpio.gz</code>、<code>vuln.ko</code>、<code>run.sh</code>。</li>
+<li><strong>initramfs 修改流程</strong>：解包 → 修改 <code>init</code>（CTF 学习时可临时切 root，真实题目通常保持 <code>setuid 1000</code>） → 重新打包 <code>find . | cpio -o --format=newc | gzip &gt; ../initramfs.cpio.gz</code>。</li>
+<li><strong>QEMU 启动参数模板</strong>：<code>-m [内核内存，例如256M] -kernel [内核文件] -initrd [根文件系统] -cpu [CPU参数，例如kvm64,+smep,+smap] -append [启动参数，例如"console=ttyS0 nokaslr quiet oops=panic panic=1"] -nographic -s</code>。<code>-s</code> 开启 GDB 端口 1234。</li>
+<li><strong>参数与保护的对应关系</strong>：<code>+smep</code> / <code>+smap</code> 决定能否 ret2usr；<code>nokaslr</code> / <code>kaslr</code> 决定是否需要 leak；<code>pti=on</code> 决定返回用户态是否需要 KPTI trampoline。</li>
+<li><strong>GDB 调试</strong>：<code>target remote :1234</code>，<code>b commit_creds</code>，结合 pwndbg/GEF 的内核结构体支持。</li>
+</ul>
+<h2 id="1-syscallslub">第 1 章 内核视角基础：syscall、地址空间、SLUB<a class="headerlink" href="#1-syscallslub" title="Permanent link">¶</a></h2>
+<p><strong>核心内容</strong>：从用户态 PWN 的已知概念出发，重新校准内核 PWN 的底层模型。</p>
+<p><strong>必须了解的点</strong>：</p>
+<ul>
+<li><strong>Ring 与状态切换</strong>：以intel CPU为例，CPU中分为4层0-3 Ring，可执行命令的权限逐级递减，一般来说我们只涉及到Ring0/ Ring3。要从用户态进入内核，<code>syscall</code> / <code>sysenter</code> 进入内核，相反<code>iret</code> / <code>sysret</code> 返回用户态；其中<code>swapgs</code> 是在返回路径中切换页表的角色。（页表：是虚拟空间对应物理地址的很多张表，决定了虚拟地址如何计算得到物理地址）</li>
+<li><strong>内核共享地址空间</strong>：内核是单一 monolithic 地址空间，任何子系统的漏洞都可能危及整机。与用户态进程每次 <code>exec</code> 重新随机化不同，内核布局在**启动时固定**，直到下一次重启。</li>
+<li><strong>内核权限管理</strong>：在内核中程序所持有的权限通过cred结构体表示，uid,euid,gid,egid为0即该进程被视为root权限运行。</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">cred</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w"> </span><span class="n">atomic_t</span><span class="w"> </span><span class="n">usage</span><span class="p">;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="cp">#ifdef CONFIG_DEBUG_CREDENTIALS</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w"> </span><span class="n">atomic_t</span><span class="w"> </span><span class="n">subscribers</span><span class="p">;</span><span class="w"> </span><span class="cm">/* number of processes subscribed */</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w"> </span><span class="kt">void</span><span class="w">  </span><span class="o">*</span><span class="n">put_addr</span><span class="p">;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="n">magic</span><span class="p">;</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="cp">#define CRED_MAGIC 0x43736564</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="cp">#define CRED_MAGIC_DEAD 0x44656144</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="cp">#endif</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w"> </span><span class="n">kuid_t</span><span class="w">  </span><span class="n">uid</span><span class="p">;</span><span class="w">  </span><span class="cm">/* real UID of the task */</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w"> </span><span class="n">kgid_t</span><span class="w">  </span><span class="n">gid</span><span class="p">;</span><span class="w">  </span><span class="cm">/* real GID of the task */</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w"> </span><span class="n">kuid_t</span><span class="w">  </span><span class="n">suid</span><span class="p">;</span><span class="w">  </span><span class="cm">/* saved UID of the task */</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w"> </span><span class="n">kgid_t</span><span class="w">  </span><span class="n">sgid</span><span class="p">;</span><span class="w">  </span><span class="cm">/* saved GID of the task */</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w"> </span><span class="n">kuid_t</span><span class="w">  </span><span class="n">euid</span><span class="p">;</span><span class="w">  </span><span class="cm">/* effective UID of the task */</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w"> </span><span class="n">kgid_t</span><span class="w">  </span><span class="n">egid</span><span class="p">;</span><span class="w">  </span><span class="cm">/* effective GID of the task */</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w"> </span><span class="n">kuid_t</span><span class="w">  </span><span class="n">fsuid</span><span class="p">;</span><span class="w">  </span><span class="cm">/* UID for VFS ops */</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w"> </span><span class="n">kgid_t</span><span class="w">  </span><span class="n">fsgid</span><span class="p">;</span><span class="w">  </span><span class="cm">/* GID for VFS ops */</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="n">securebits</span><span class="p">;</span><span class="w"> </span><span class="cm">/* SUID-less security management */</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w"> </span><span class="n">kernel_cap_t</span><span class="w"> </span><span class="n">cap_inheritable</span><span class="p">;</span><span class="w"> </span><span class="cm">/* caps our children can inherit */</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w"> </span><span class="n">kernel_cap_t</span><span class="w"> </span><span class="n">cap_permitted</span><span class="p">;</span><span class="w"> </span><span class="cm">/* caps we're permitted */</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w"> </span><span class="n">kernel_cap_t</span><span class="w"> </span><span class="n">cap_effective</span><span class="p">;</span><span class="w"> </span><span class="cm">/* caps we can actually use */</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w"> </span><span class="n">kernel_cap_t</span><span class="w"> </span><span class="n">cap_bset</span><span class="p">;</span><span class="w"> </span><span class="cm">/* capability bounding set */</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w"> </span><span class="n">kernel_cap_t</span><span class="w"> </span><span class="n">cap_ambient</span><span class="p">;</span><span class="w"> </span><span class="cm">/* Ambient capability set */</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="cp">#ifdef CONFIG_KEYS</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">jit_keyring</span><span class="p">;</span><span class="w"> </span><span class="cm">/* default keyring to attach requested</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="cm">      * keys to */</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">key</span><span class="w"> </span><span class="o">*</span><span class="n">session_keyring</span><span class="p">;</span><span class="w"> </span><span class="cm">/* keyring inherited over fork */</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">key</span><span class="w"> </span><span class="o">*</span><span class="n">process_keyring</span><span class="p">;</span><span class="w"> </span><span class="cm">/* keyring private to this process */</span>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">key</span><span class="w"> </span><span class="o">*</span><span class="n">thread_keyring</span><span class="p">;</span><span class="w"> </span><span class="cm">/* keyring private to this thread */</span>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">key</span><span class="w"> </span><span class="o">*</span><span class="n">request_key_auth</span><span class="p">;</span><span class="w"> </span><span class="cm">/* assumed request_key authority */</span>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="cp">#endif</span>
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="cp">#ifdef CONFIG_SECURITY</span>
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="w"> </span><span class="kt">void</span><span class="w">  </span><span class="o">*</span><span class="n">security</span><span class="p">;</span><span class="w"> </span><span class="cm">/* LSM security */</span>
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="cp">#endif</span>
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">user_struct</span><span class="w"> </span><span class="o">*</span><span class="n">user</span><span class="p">;</span><span class="w"> </span><span class="cm">/* real user ID subscription */</span>
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">user_namespace</span><span class="w"> </span><span class="o">*</span><span class="n">user_ns</span><span class="p">;</span><span class="w"> </span><span class="cm">/* user_ns the caps and keyrings are relative to. */</span>
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">ucounts</span><span class="w"> </span><span class="o">*</span><span class="n">ucounts</span><span class="p">;</span>
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">group_info</span><span class="w"> </span><span class="o">*</span><span class="n">group_info</span><span class="p">;</span><span class="w"> </span><span class="cm">/* supplementary groups for euid/fsgid */</span>
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="w"> </span><span class="cm">/* RCU deletion */</span>
+<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a><span class="w"> </span><span class="k">union</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a><span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">non_rcu</span><span class="p">;</span><span class="w">   </span><span class="cm">/* Can we skip RCU deletion? */</span>
+<a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a><span class="w">  </span><span class="k">struct</span><span class="w"> </span><span class="nc">rcu_head</span><span class="w"> </span><span class="n">rcu</span><span class="p">;</span><span class="w">  </span><span class="cm">/* RCU deletion hook */</span>
+<a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a><span class="w"> </span><span class="p">};</span>
+<a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a><span class="p">}</span><span class="w"> </span><span class="n">__randomize_layout</span><span class="p">;</span>
+</code></pre></div>
+<p><strong>UID/GID 族</strong>：uid、euid、suid、fsuid 以及对应的 GID。将 euid 等字段置 0 是“直接改 cred”路线的最小操作，但要注意 fsuid 影响文件访问判定，只改 euid 在某些场景下并不等于完整 root。</p>
+<p><strong>capability 集合</strong>： <code>cap_effective</code>、<code>cap_permitted</code>、<code>cap_inheritable</code>、<code>cap_bset</code>、<code>cap_ambient</code>。其中 <code>cap_effective</code> 是内核实际用来判定是否具有相应特权(例如发出ping包需要具有CAP_NET_RAW特权)的那一组位，只改 UID 而不改 capability，在现代内核上可能不足以完成所有提权动作；直接覆盖 cred 时，通常需要把 capability 字段一并设为全 1（或至少 CAP_FULL_SET 对应的位图）。</p>
+<p><strong>user_namespace * 指针</strong>：这是 cred 中容易被忽略但对提权语义至关重要的字段。一个 capability 永远相对于某个 user namespace 才有意义。这意味着 cred 的覆盖不仅要改数值，还要考虑目标进程当前所处的 namespace 上下文。例如我们的EXP如果不具备相应的特权，我们就可以内部自己创建一个namespace，在自己的namespace中拥有相应特权。</p>
+<ul>
+<li><strong>SLUB 分配器的最小必要模型</strong>：</li>
+<li>内核中每一个最小内存分配单位被称为<code>obj</code>，和用户态的<code>chunk</code>含义差不多</li>
+<li><code>kmalloc(size)</code> 向上对齐到 <code>kmalloc-{32, 64, 96, 128, 192, 256, 512, ...}</code> cache。</li>
+<li>每个 CPU 有 <code>cpu_slab</code>，<code>freelist</code> 是**对象内嵌指针**，fast path 无锁 pop。</li>
+<li><code>kfree</code> 将对象 push 回 per-CPU freelist；free 完的对象**立刻**可被下一次同 cache 分配拿走——这是 UAF reclaim 的基础。</li>
+<li>专用 cache（如 <code>cred_jar</code>）与通用 <code>kmalloc-N</code> cache 的隔离：跨 <code>cache</code> 覆盖需要 <code>cross-cache</code> 技术。</li>
+<li>
+<p>与用户态的chunk不同，内核态中正在使用的obj中是**不存在元数据**的，只有在空闲的时候被挂载到freelist链表上，其中存储数据的区域才会有一个next指针，指向下一个空闲obj。同时Linux为了防御堆溢出攻击，给next指针添加了早obj中的偏移，由s-&gt;offset决定。</p>
+</li>
+<li>
+<p><strong><code>task_struct</code> 与 <code>cred</code> 的关系</strong>：内核中使用task_struct表示一个进程，内核通过 <code>task_struct-&gt;cred</code> 索引权限凭证；<code>cred</code> 中的 <code>uid/euid/gid/egid</code> 全为 0 即视为 root 权限。</p>
+</li>
+</ul>
+<h2 id="2-pwn">第 2 章 内核 PWN 的利用模型与漏洞分类<a class="headerlink" href="#2-pwn" title="Permanent link">¶</a></h2>
+<p><strong>核心内容</strong>：建立一条从“漏洞”到“root”的通用流水线，以及按原语（primitive）而非按 CVE 编号来归类漏洞的思维方式。</p>
+<p><strong>必须覆盖的点</strong>：</p>
+<ul>
+<li><strong>五步利用模型</strong>：</li>
+<li>发现漏洞（UAF、OOB、race、integer overflow、type confusion）；</li>
+<li>构建原语（arbitrary read、arbitrary write、controlled RIP）；</li>
+<li>绕过保护（KASLR、SMEP、SMAP、KPTI）；</li>
+<li>提权（<code>commit_creds</code>、<code>modprobe_path</code>、namespace escape）；</li>
+<li>干净返回用户态（KPTI trampoline、<code>iretq</code> / <code>swapgs</code>）。</li>
+<li><strong>漏洞分类框架</strong>：</li>
+<li><strong>空间安全</strong>：栈溢出、堆溢出（SLUB）、OOB read/write、off-by-one。</li>
+<li><strong>时间安全</strong>：UAF、double-free、未初始化内存使用。UAF 已是 Linux 内核中被利用最多的单一漏洞类别。这一漏洞类别在用户态比较少见。</li>
+<li><strong>类型安全</strong>：type confusion、错误的 <code>container_of()</code>。</li>
+<li><strong>竞态与输入验证</strong>：double-fetch、spinlock/mutex race、整数溢出导致的大小计算错误。</li>
+<li><strong>文件系统/命题漏洞</strong>: 利用出题人的疏忽巧妙借助文件系统漏洞/OOM Killer提权</li>
+<li><strong>CVE提权</strong>: 例如Copy Fail/Dirty Frag</li>
+<li><strong>漏洞类型到利用基线的快速映射</strong>：栈溢出 → Canary + KASLR 绕过 + ROP；堆溢出 → slab 喷射覆盖相邻对象；UAF → 重新申请同 slab 对象；任意读写 → 直接改 <code>cred</code> 或 <code>modprobe_path</code>。</li>
+</ul>
+<h2 id="3-slub-slab">第 3 章 堆利用核心：SLUB 与 Slab 喷射<a class="headerlink" href="#3-slub-slab" title="Permanent link">¶</a></h2>
+<p><strong>核心内容</strong>：内核 PWN 的主战场。用户态 glibc heap 的 tcache / fastbin 技巧在这里**全部作废**，必须围绕 SLUB 的 per-CPU freelist 和对象生命周期重新建立直觉。</p>
+<p><strong>必须覆盖的点</strong>：</p>
+<ul>
+<li><strong>SLUB 对象生命周期</strong>：<code>kmalloc</code> → per-CPU freelist → per-CPU partial list → per-node partial list → 新 slab page；<code>kfree</code> 的逆过程。</li>
+<li><strong>Slab 喷射四步法</strong>：</li>
+<li>确定目标对象的 cache（按大小匹配）；</li>
+<li>排空已有空闲对象（喷射 dummy allocation）；</li>
+<li>触发漏洞释放目标对象；</li>
+<li>喷射同大小替换对象，落在 freed slot 上。</li>
+<li><strong>经典喷射对象</strong>：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>对象</th>
+<th>分配方式</th>
+<th>cache 大小</th>
+<th>利用价值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>msg_msg</code></td>
+<td><code>msgsnd()</code></td>
+<td>可控（<code>kmalloc-N</code>）</td>
+<td>任意 size 可控数据、头部可控，适合 reclaim 和 leak</td>
+</tr>
+<tr>
+<td><code>pipe_buffer</code></td>
+<td><code>pipe()</code> + <code>splice()</code></td>
+<td><code>kmalloc-64</code>（40 字节）</td>
+<td>含 <code>ops</code> 函数表指针，UAF 后可劫持 RIP</td>
+</tr>
+<tr>
+<td><code>sk_buff</code></td>
+<td>网络数据包</td>
+<td>多种</td>
+<td>大数据喷射、跨 cache</td>
+</tr>
+<tr>
+<td><code>setxattr</code></td>
+<td><code>setxattr()</code></td>
+<td>可控</td>
+<td>快速堆喷</td>
+</tr>
+</tbody>
+</table>
+<p><code>msg_msg</code> 通过 <code>msgsnd</code> 分配、<code>msgrcv</code> 释放；<code>pipe_buffer</code> 的 <code>ops</code> 指针在 <code>release()</code> 时被调用，是天然的控制流劫持点。
+  <strong>经典跳转劫持对象</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>对象</th>
+<th>劫持虚表</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pipe_buffer</code></td>
+<td><code>pipe_buffer_ops</code></td>
+</tr>
+<tr>
+<td><code>seq_operations</code></td>
+<td><code>seq_operations_ops</code></td>
+</tr>
+<tr>
+<td><code>tty_struct</code></td>
+<td><code>pipe_buffer_ops</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Double-free 与 freelist 腐蚀</strong>：SLUB 上 double-free 可以让 freelist 指向同一对象，下一次分配可能返回**任意指针**（如果 freelist 被控制）。</li>
+<li><strong>Cross-cache attack</strong>：当目标对象在专用 cache（如 <code>cred_jar</code>）中，无法直接用 <code>kmalloc-N</code> 覆盖时，通过耗尽 slab 页、迫使页返回 buddy allocator，再用其他 cache 重新占据同一物理页。</li>
+<li><strong>Freelist 硬化</strong>：<code>SLAB_FREELIST_RANDOM</code> 随机化 slab 内分配顺序，<code>SLAB_FREELIST_HARDENED</code> 对 freelist 指针做 XOR 编码（类似 glibc safe-linking），直接影响喷射可靠性。</li>
+</ul>
+<h2 id="4-credcommit_creds-modprobe_path">第 4 章 提权原语：cred、commit_creds 与 modprobe_path<a class="headerlink" href="#4-credcommit_creds-modprobe_path" title="Permanent link">¶</a></h2>
+<p><strong>核心内容</strong>：拿到任意写或 RIP 控制之后，<strong>最终要把权限变成 root</strong>。这一章聚焦两个最常用的终点：直接改 <code>cred</code>，以及劫持 <code>modprobe_path</code>。</p>
+<p><strong>必须覆盖的点</strong>：</p>
+<ul>
+<li><strong><code>cred</code> 直接覆盖</strong>：定位 <code>current-&gt;cred</code>，将 <code>uid/euid/gid/egid</code> 置 0 即可提权，无需调用 <code>commit_creds</code>。<code>cred_jar</code> 的对象大小为 184 字节，<code>objs_per_slab=42</code>（典型 Ubuntu 6.17 配置），是 cross-cache 或同 cache 覆盖的常见目标。</li>
+<li><strong>标准 ROP 提权链</strong>：<code>commit_creds(prepare_kernel_cred(NULL))</code>。<code>prepare_kernel_cred(NULL)</code> 创建带 root 权限的新 cred(高版本内核不可用)，<code>commit_creds</code> 将其安装到当前进程。</li>
+<li><strong><code>modprobe_path</code> 覆盖</strong>：<code>modprobe_path</code> 是内核 <code>.data</code> 中的全局字符串（默认 <code>/sbin/modprobe</code>）。将其改写为攻击者控制的脚本路径，触发未知格式二进制执行，内核会以 root 调用该路径，脚本中完成 <code>chmod</code> / 读 flag。需注意 <code>STATIC_USERMODEHELPER</code> 会阻断该技术。</li>
+<li><strong>选择逻辑</strong>：有任意写且能定位 <code>cred</code> → 直接改 <code>cred</code>，最稳定；有 RIP 控制但没有任意写 → ROP <code>commit_creds</code> 或覆盖 <code>modprobe_path</code>（后者需要 leak 到 <code>.data</code> 地址）。</li>
+</ul>
+<h2 id="5-ret2usr-rop">第 5 章 控制流劫持：ret2usr 与内核 ROP<a class="headerlink" href="#5-ret2usr-rop" title="Permanent link">¶</a></h2>
+<p><strong>核心内容</strong>：当漏洞提供了**函数指针覆盖**或**返回地址覆盖**时，如何接管 RIP 并执行提权逻辑。</p>
+<p><strong>必须覆盖的点</strong>：</p>
+<ul>
+<li><strong>ret2usr</strong>：在没有 SMEP/SMAP 的情况下，将内核函数指针直接指向用户态映射的 shellcode。这是最原始的内核控制流劫持技术；一旦开启 SMEP，该路径失效。</li>
+<li><strong>内核 ROP 的必要性</strong>：SMEP 阻止内核执行用户页，SMAP 阻止内核直接读写用户页，因此 ROP 链必须**完全位于内核空间**（堆喷的 <code>msg_msg</code>、<code>pipe_buffer</code> 数据区，或内核栈上可控制的内容）。</li>
+<li><strong>栈迁移</strong>：当可控数据在堆上而非栈上时，用 <code>leave; ret</code> 或 <code>xchg esp, eax</code> 等 gadget 将栈指针迁移到堆上的 ROP 链。</li>
+<li><strong>返回用户态</strong>：ROP 提权完成后，不能简单地 <code>ret</code> 回用户态。需要经过 KPTI trampoline（<code>swapgs_restore_regs_and_return_to_usermode</code>），或在无 KPTI 时手动构造 <code>swapgs; iretq</code> 序列，恢复用户态 CS/SS/RFLAGS/RSP/RIP。</li>
+</ul>
+<h2 id="6-double-fetchrace">第 6 章 栈与竞态：栈溢出、double-fetch、race<a class="headerlink" href="#6-double-fetchrace" title="Permanent link">¶</a></h2>
+<p><strong>核心内容</strong>：堆利用之外的两类重要漏洞面，在真实 CVE 和 kernelCTF 中占比不容忽视。</p>
+<p><strong>必须覆盖的点</strong>：</p>
+<ul>
+<li><strong>内核栈溢出</strong>：内核栈通常 16 KiB（x86-64），没有用户态那样的 guard page 隔离；历史上默认不启用栈金丝雀，现在虽有 <code>-fstack-protector</code>，但并非全量覆盖。典型来源是 <code>copy_from_user</code> 长度可控。利用需要金丝雀 leak（或绕过）+ KASLR 绕过 + ROP。</li>
+<li><strong>Double-fetch</strong>：用户指针被内核访问两次——第一次验证，第二次使用；攻击者在两次访问之间通过另一线程修改数据。经典模式：先验证 <code>size</code>，再 <code>copy_from_user</code> 时 <code>size</code> 已被改大 → 堆溢出。可利用 <code>userfaultfd</code> 或 FUSE 拉长窗口。</li>
+<li><strong>Race condition</strong>：自旋锁/互斥锁的释放-重获间隙、缺失锁保护、或 COW 路径的时序窗口（DirtyCOW 类）。利用需要多线程 pin 核、扩大窗口或使用 <code>userfaultfd</code> 精确控制时序。</li>
+</ul>
+<h2 id="7-kaslr-smep-smap-kpti-fgkaslr">第 7 章 保护机制与绕过：KASLR / SMEP / SMAP / KPTI / FGKASLR<a class="headerlink" href="#7-kaslr-smep-smap-kpti-fgkaslr" title="Permanent link">¶</a></h2>
+<p><strong>核心内容</strong>：现代内核 PWN 的“门槛层”。不了解保护状态， exploit 无法稳定；了解之后，绕过路径基本是模块化的。</p>
+<p><strong>必须覆盖的点</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>保护</th>
+<th>作用</th>
+<th>绕过基线</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>KASLR</strong></td>
+<td>随机化内核代码/数据基址</td>
+<td>栈 leak、堆对象 leak、<code>msg_msg</code> 越界读、侧信道</td>
+</tr>
+<tr>
+<td><strong>SMEP</strong></td>
+<td>内核态不可执行用户页</td>
+<td>内核 ROP；CR4 翻转（需 native write gadget）</td>
+</tr>
+<tr>
+<td><strong>SMAP</strong></td>
+<td>内核态不可访问用户页</td>
+<td>ROP 链放在内核堆；用 <code>stac</code> / <code>clac</code> gadget</td>
+</tr>
+<tr>
+<td><strong>KPTI</strong></td>
+<td>用户页表与内核页表分离</td>
+<td><code>swapgs_restore_regs_and_return_to_usermode</code> trampoline</td>
+</tr>
+<tr>
+<td><strong>FGKASLR</strong></td>
+<td>函数粒度的 <code>.text</code> 随机化</td>
+<td>利用未随机化的 <code>.text</code> 区段或 <code>__ksymtab</code> 相对偏移解析</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>FGKASLR 的特殊性</strong>：它不是整体基址随机化，而是函数级重排。稳定 gadget 和 <code>__ksymtab</code>（导出符号表）的相对偏移是常见突破口。</li>
+<li><strong>保护状态的第一动作</strong>：拿到题目后**先读 <code>run.sh</code>**，确认 <code>smep</code> / <code>smap</code> / <code>kpti</code> / <code>kaslr</code> / <code>oops=panic</code> 的开关状态，再决定利用路线。</li>
+<li><strong><code>oops=panic</code> 的影响</strong>：任何导致内核 oops 的错误都会直接 panic，exploit 必须**一次成功**，调试时可以先去掉该参数降低难度。</li>
+</ul>
+<h2 id="8-exploit">第 8 章 实战模板：从漏洞到稳定 exploit<a class="headerlink" href="#8-exploit" title="Permanent link">¶</a></h2>
+<p><strong>核心内容</strong>：把前七章的能力收敛为一个可复用的 exploit 骨架，并建立“先 leak、再原语、后提权、最后稳定返回”的工程化习惯。</p>
+<p><strong>必须覆盖的 exploit 骨架结构</strong>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// 0. 保存用户态上下文（用于最终返回）</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">save_state</span><span class="p">();</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1">// 1. 打开漏洞设备</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kt">int</span><span class="w"> </span><span class="n">fd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">open</span><span class="p">(</span><span class="s">"/dev/vuln"</span><span class="p">,</span><span class="w"> </span><span class="n">O_RDWR</span><span class="p">);</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1">// 2. Leak（如有 KASLR）</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1">//    - 利用漏洞读内核指针 / msg_msg 越界读 / pipe_buffer 残留</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1">//    得到 kernel_base 或 cred 地址</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1">// 3. 构建原语</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="c1">//    - 堆 UAF：free 目标 -&gt; slab spray 替换对象</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="c1">//    - 任意写：覆盖函数指针 / cred / modprobe_path</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="c1">//    - RIP 控制：构造 ROP 链到内核堆</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="c1">// 4. 提权</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="c1">//    commit_creds(prepare_kernel_cred(NULL))</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="c1">//    或 cred-&gt;uid = 0</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="c1">//    或 overwrite modprobe_path</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="c1">// 5. 干净返回用户态</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="c1">//    KPTI trampoline / swapgs; iretq</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="c1">// 6. 起 shell / 读 flag</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="n">system</span><span class="p">(</span><span class="s">"/bin/sh"</span><span class="p">);</span><span class="w"> </span><span class="c1">//推荐使用SYS_execve系统调用起 shell，避免栈平衡</span>
+</code></pre></div>
+<p><strong>稳定化清单</strong>：</p>
+<ul>
+<li>在 <code>nokaslr</code> 下验证 exploit 逻辑，再开启 KASLR 调试 leak。</li>
+<li>堆喷数量需要根据 <code>objs_per_slab</code> 和 slab 页大小估算，不是越多越好；过多喷射可能触发内存压力或打乱 per-CPU freelist 布局。</li>
+<li>如果目标环境有 <code>oops=panic</code>，在触发漏洞前完成所有可能失败的准备（leak 失败应干净退出，而不是让内核 panic）。</li>
+</ul></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../rop_add_v1/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: ROP进阶"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        ROP进阶
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../../hc-awd/awd_about/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: AWD介绍"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        AWD介绍
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#linux-pwn">Linux 内核 PWN 基础</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_1">整体架构图</a>
+        
+      </li>
+    
+      <li>
+        <a href="#0-qemu-initramfs-gdb">第 0 章 环境搭建：QEMU + initramfs + GDB</a>
+        
+      </li>
+    
+      <li>
+        <a href="#1-syscallslub">第 1 章 内核视角基础：syscall、地址空间、SLUB</a>
+        
+      </li>
+    
+      <li>
+        <a href="#2-pwn">第 2 章 内核 PWN 的利用模型与漏洞分类</a>
+        
+      </li>
+    
+      <li>
+        <a href="#3-slub-slab">第 3 章 堆利用核心：SLUB 与 Slab 喷射</a>
+        
+      </li>
+    
+      <li>
+        <a href="#4-credcommit_creds-modprobe_path">第 4 章 提权原语：cred、commit_creds 与 modprobe_path</a>
+        
+      </li>
+    
+      <li>
+        <a href="#5-ret2usr-rop">第 5 章 控制流劫持：ret2usr 与内核 ROP</a>
+        
+      </li>
+    
+      <li>
+        <a href="#6-double-fetchrace">第 6 章 栈与竞态：栈溢出、double-fetch、race</a>
+        
+      </li>
+    
+      <li>
+        <a href="#7-kaslr-smep-smap-kpti-fgkaslr">第 7 章 保护机制与绕过：KASLR / SMEP / SMAP / KPTI / FGKASLR</a>
+        
+      </li>
+    
+      <li>
+        <a href="#8-exploit">第 8 章 实战模板：从漏洞到稳定 exploit</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>
