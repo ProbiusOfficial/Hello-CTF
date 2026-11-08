@@ -1,17 +1,5 @@
 [
     {
-        "比赛名称": "Mimic",
-        "比赛时间": "2026-11-07 20:00:00 - 2026-11-08 20:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3455.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.rarebytehub.com/events/mimic",
-        "比赛标志": "https://ctftime.org/media/events/rare-byte-hub_1.png",
-        "比赛权重": "0",
-        "赛事主办": "Rare Byte Hub (https://ctftime.org/team/445438)",
-        "比赛ID": "1707",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "CyberZerk CTF 2026",
         "比赛时间": "2026-11-09 21:00:00 - 2026-11-23 01:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3499.ics",
@@ -360,18 +348,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "HKCERT CTF 2026 (Qualifying Round)",
-        "比赛时间": "2026-11-06 18:00:00 - 2026-11-07 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3418.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.hkcert.org/",
-        "比赛标志": "https://ctftime.org/media/events/CTF_2026_1.png",
-        "比赛权重": "10.31",
-        "赛事主办": "Black Bauhinia, HKCERT (https://ctftime.org/team/83678, https://ctftime.org/team/134746)",
-        "比赛ID": "529",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "PINK+ CTF 2026",
         "比赛时间": "2026-11-06 20:00:00 - 2026-11-09 20:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3331.ics",
@@ -396,15 +372,15 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "SpookyCTF 2026",
-        "比赛时间": "2026-11-07 01:00:00 - 2026-11-08 01:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3339.ics",
+        "比赛名称": "Mimic",
+        "比赛时间": "2026-11-07 20:00:00 - 2026-11-08 20:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3455.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://spooky.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/spookyctf_2026_1.PNG",
+        "比赛链接": "https://ctf.rarebytehub.com/events/mimic",
+        "比赛标志": "https://ctftime.org/media/events/rare-byte-hub_1.png",
         "比赛权重": "0",
-        "赛事主办": "Cyber Security Network (https://ctftime.org/team/214936)",
-        "比赛ID": "987",
+        "赛事主办": "Rare Byte Hub (https://ctftime.org/team/445438)",
+        "比赛ID": "1707",
         "比赛状态": "nowrunning"
     },
     {
@@ -417,6 +393,30 @@
         "比赛权重": "0.00",
         "赛事主办": "BlackAlps (https://ctftime.org/team/89021)",
         "比赛ID": "375",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "SpookyCTF 2026",
+        "比赛时间": "2026-11-07 01:00:00 - 2026-11-08 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3339.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://spooky.ctfd.io/",
+        "比赛标志": "https://ctftime.org/media/events/spookyctf_2026_1.PNG",
+        "比赛权重": "0",
+        "赛事主办": "Cyber Security Network (https://ctftime.org/team/214936)",
+        "比赛ID": "987",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "HKCERT CTF 2026 (Qualifying Round)",
+        "比赛时间": "2026-11-06 18:00:00 - 2026-11-07 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3418.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf.hkcert.org/",
+        "比赛标志": "https://ctftime.org/media/events/CTF_2026_1.png",
+        "比赛权重": "10.31",
+        "赛事主办": "Black Bauhinia, HKCERT (https://ctftime.org/team/83678, https://ctftime.org/team/134746)",
+        "比赛ID": "529",
         "比赛状态": "past"
     },
     {
@@ -462,7 +462,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://nest.pmlabs.com.cn/en/events/qiangwang-9/registration",
         "比赛标志": "https://ctftime.org/media/events/logo_139.png",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "LoveFromMimic (https://ctftime.org/team/364644)",
         "比赛ID": "1212",
         "比赛状态": "past"
@@ -1581,30 +1581,6 @@
         "比赛权重": "69.22",
         "赛事主办": "D^3CTF Organizers (https://ctftime.org/team/91096)",
         "比赛ID": "387",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DIVER OSINT CTF 2026",
-        "比赛时间": "2026-07-25 11:10:00 - 2026-07-26 11:10:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3268.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctfd.diverctf.org/",
-        "比赛标志": "https://ctftime.org/media/events/circle-white-simple-01.png",
-        "比赛权重": "0.00",
-        "赛事主办": "diver_osint (https://ctftime.org/team/299569)",
-        "比赛ID": "1111",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "jailCTF 2026",
-        "比赛时间": "2026-07-25 04:00:00 - 2026-07-28 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3286.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.pyjail.club/",
-        "比赛标志": "https://ctftime.org/media/events/jailctf_1.png",
-        "比赛权重": "0",
-        "赛事主办": "jailctf (https://ctftime.org/team/311088)",
-        "比赛ID": "1152",
         "比赛状态": "past"
     }
 ]
