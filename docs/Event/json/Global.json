@@ -1,41 +1,5 @@
 [
     {
-        "比赛名称": "TVX CTF 2026",
-        "比赛时间": "2026-11-13 18:00:00 - 2026-11-14 04:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3486.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf-techvisions.com/",
-        "比赛标志": "https://ctftime.org/media/events/photo_2026-10-17_18-01-04.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Tech Visions (https://ctftime.org/team/452398)",
-        "比赛ID": "1738",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "Platypwn 2026",
-        "比赛时间": "2026-11-14 01:00:00 - 2026-11-14 19:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3082.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://platypwnies.de/events/platypwn/",
-        "比赛标志": "https://ctftime.org/media/events/platypwnies-512_1_1.png",
-        "比赛权重": "37.00",
-        "赛事主办": "Platypwnies (https://ctftime.org/team/112550)",
-        "比赛ID": "979",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "WolvCTF 2026",
-        "比赛时间": "2026-11-14 07:00:00 - 2026-11-16 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3049.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://wolvctf.io/",
-        "比赛标志": "https://ctftime.org/media/events/wolverine-logo-square1_1.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "wolvsec (https://ctftime.org/team/83621)",
-        "比赛ID": "766",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "h4ckc0n 2026",
         "比赛时间": "2026-11-14 23:30:00 - 2026-11-15 23:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3464.ics",
@@ -334,6 +298,42 @@
         "赛事主办": "NYUSEC (https://ctftime.org/team/439)",
         "比赛ID": "19",
         "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Platypwn 2026",
+        "比赛时间": "2026-11-14 01:00:00 - 2026-11-14 19:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3082.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://platypwn.ctf.platypwnies.de/",
+        "比赛标志": "https://ctftime.org/media/events/platypwnies-512_1_1.png",
+        "比赛权重": "37.00",
+        "赛事主办": "Platypwnies (https://ctftime.org/team/112550)",
+        "比赛ID": "979",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "WolvCTF 2026",
+        "比赛时间": "2026-11-14 07:00:00 - 2026-11-16 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3049.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://wolvctf.io/",
+        "比赛标志": "https://ctftime.org/media/events/wolverine-logo-square1_1.jpg",
+        "比赛权重": "0",
+        "赛事主办": "wolvsec (https://ctftime.org/team/83621)",
+        "比赛ID": "766",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "TVX CTF 2026",
+        "比赛时间": "2026-11-13 18:00:00 - 2026-11-14 04:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3486.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://ctf-techvisions.com/",
+        "比赛标志": "https://ctftime.org/media/events/photo_2026-10-17_18-01-04.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Tech Visions (https://ctftime.org/team/452398)",
+        "比赛ID": "1738",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "Mimic",
@@ -1521,18 +1521,6 @@
         "比赛权重": "25.00",
         "赛事主办": "VuwCTF (https://ctftime.org/team/378359)",
         "比赛ID": "1434",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "L3akCTF 2026",
-        "比赛时间": "2026-08-01 02:00:00 - 2026-08-03 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3061.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.l3ak.team/",
-        "比赛标志": "https://ctftime.org/media/events/6a9256e0b32707195ff9fe31b358a0e6.png",
-        "比赛权重": "34.47",
-        "赛事主办": "L3ak (https://ctftime.org/team/220336)",
-        "比赛ID": "1077",
         "比赛状态": "past"
     }
 ]
