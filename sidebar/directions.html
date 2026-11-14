@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>方向一览 - Hello CTF</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTF/main/docs/assets/images/favicon.png">
+<link rel="stylesheet" href="/shell/shell.css">
+<script>
+  if (localStorage.getItem('hc-theme') === 'dark') document.documentElement.dataset.theme = 'dark';
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: var(--sans); line-height: 1.7;
+    transition: background .25s, color .25s;
+  }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--hl); }
+
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 44px 32px 90px; }
+
+  /* ===================== 页头 ===================== */
+  .kicker { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; color: var(--accent); }
+  .page-head h1 {
+    font-size: clamp(30px, 3.4vw, 40px);
+    font-weight: 800; letter-spacing: -.03em; line-height: 1.2;
+    margin: 12px 0 10px;
+  }
+  .page-head h1 .hl { background: linear-gradient(transparent 60%, var(--hl) 60%); }
+  .page-head .sub { font-size: 14.5px; color: var(--ink-2); max-width: 640px; }
+
+  /* ===================== 引导条 ===================== */
+  .guide {
+    display: flex; align-items: center; gap: 10px 22px; flex-wrap: wrap;
+    border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--wash); padding: 14px 20px; margin-top: 26px;
+  }
+  .guide .g-label {
+    font-family: var(--mono); font-size: 11px; letter-spacing: .14em;
+    color: var(--ink-3); flex-shrink: 0;
+  }
+  .guide a {
+    font-family: var(--mono); font-size: 12.5px; color: var(--ink-2);
+    display: inline-flex; align-items: center; gap: 6px;
+    transition: color .15s;
+  }
+  .guide a .arr { width: 12px; height: 12px; color: var(--ink-3); transition: transform .15s, color .15s; }
+  .guide a:hover { color: var(--accent); }
+  .guide a:hover .arr { transform: translateX(3px); color: var(--accent); }
+  .guide a strong { color: var(--ink); font-weight: 600; }
+  .guide a:hover strong { color: var(--accent); }
+
+  /* ===================== 方向卡片 ===================== */
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 30px; }
+  .card {
+    display: flex; flex-direction: column;
+    border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--paper); padding: 26px 28px 22px;
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s;
+  }
+  .card:hover { transform: translateY(-3px); border-color: var(--ink); box-shadow: var(--shadow-pop); }
+  .card-head { display: flex; align-items: center; gap: 14px; }
+  .card-head .ic { width: 26px; height: 26px; color: var(--ink-3); flex-shrink: 0; transition: color .16s; }
+  .card:hover .card-head .ic { color: var(--accent); }
+  .card-head h2 { font-size: 21px; font-weight: 800; letter-spacing: -.02em; }
+  .card-head h2 span { font-family: var(--mono); font-size: 12px; font-weight: 600; color: var(--ink-3); letter-spacing: .1em; margin-left: 8px; }
+  .tagline { font-size: 13.5px; color: var(--ink-2); margin-top: 10px; }
+
+  .meta { margin-top: 16px; display: flex; flex-direction: column; gap: 6px; }
+  .meta .m { font-size: 12.5px; color: var(--ink-2); display: flex; gap: 10px; }
+  .meta .k {
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em;
+    color: var(--ink-3); flex-shrink: 0; padding-top: 3px; width: 62px;
+  }
+
+  .learn { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+  .pill {
+    font-family: var(--mono); font-size: 11px;
+    padding: 3px 10px; border-radius: 999px;
+    background: var(--accent-soft); color: var(--accent);
+  }
+
+  .card-foot { display: flex; align-items: center; gap: 10px; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 8px 18px; border-radius: 10px; font-size: 13px; font-weight: 700;
+    transition: transform .16s ease, box-shadow .16s ease, border-color .16s;
+  }
+  .btn .ic { width: 13px; height: 13px; }
+  .btn-dark { background: var(--ink); color: var(--paper); box-shadow: 0 12px 26px -12px rgba(15,23,42,.55); }
+  .btn-dark:hover { transform: translateY(-2px); box-shadow: var(--shadow-pop); }
+  .btn-line { border: 1.5px solid var(--line); color: var(--ink); background: transparent; }
+  .btn-line:hover { border-color: var(--ink); transform: translateY(-2px); }
+
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: 1fr; }
+    .wrap { padding: 30px 18px 70px; }
+  }
+</style>
+</head>
+<body>
+<div class="main">
+  <div class="wrap">
+
+    <header class="page-head">
+      <div class="kicker">DIRECTIONS · 方向一览</div>
+      <h1>选择你的第一个<span class="hl">方向</span>。</h1>
+      <p class="sub">CTF 主要有六大方向，区别在哪、该选哪个——这一页讲清楚。不用纠结太久：先做出一道题，比选对方向更重要。</p>
+    </header>
+
+    <div class="guide">
+      <span class="g-label">不知道怎么选？</span>
+      <a href="#misc">零基础尝鲜 <svg class="ic arr"><use href="#i-arrow"/></svg> <strong>Misc</strong></a>
+      <a href="#web">会 PHP / Python <svg class="ic arr"><use href="#i-arrow"/></svg> <strong>Web</strong></a>
+      <a href="#crypto">数学好 <svg class="ic arr"><use href="#i-arrow"/></svg> <strong>Crypto</strong></a>
+      <a href="#reverse">喜欢底层 <svg class="ic arr"><use href="#i-arrow"/></svg> <strong>Reverse / Pwn</strong></a>
+    </div>
+
+    <div class="grid">
+
+      <section class="card" id="web">
+        <div class="card-head">
+          <svg class="ic"><use href="#i-globe"/></svg>
+          <h2>Web<span>网络攻防</span></h2>
+        </div>
+        <p class="tagline">漏洞利用入门首选，队伍里人数最多的方向。</p>
+        <div class="meta">
+          <div class="m"><span class="k">适合谁</span><span>会点 PHP / Python，想快速做出题的人。</span></div>
+          <div class="m"><span class="k">前置基础</span><span>基本 HTTP 常识，PHP 基础（站内有课）。</span></div>
+        </div>
+        <div class="learn">
+          <span class="pill">SQL注入</span><span class="pill">XSS</span><span class="pill">文件上传</span>
+          <span class="pill">反序列化</span><span class="pill">SSRF</span><span class="pill">SSTI</span>
+        </div>
+        <div class="card-foot">
+          <a class="btn btn-dark" href="../hc-web/php_basic/">第一课 <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-line" href="../hc-web/">进入方向</a>
+        </div>
+      </section>
+
+      <section class="card" id="misc">
+        <div class="card-head">
+          <svg class="ic"><use href="#i-puzzle"/></svg>
+          <h2>Misc<span>杂项</span></h2>
+        </div>
+        <p class="tagline">脑洞与工具的综合运用，零基础尝鲜首选。</p>
+        <div class="meta">
+          <div class="m"><span class="k">适合谁</span><span>完全零基础、想先感受夺旗快感的人。</span></div>
+          <div class="m"><span class="k">前置基础</span><span>几乎没有，会用电脑就行。</span></div>
+        </div>
+        <div class="learn">
+          <span class="pill">编码</span><span class="pill">压缩包</span><span class="pill">图片隐写</span>
+          <span class="pill">流量分析</span><span class="pill">内存取证</span>
+        </div>
+        <div class="card-foot">
+          <a class="btn btn-dark" href="../hc-misc/Encode_extra/">第一课 <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-line" href="../hc-misc/">进入方向</a>
+        </div>
+      </section>
+
+      <section class="card" id="crypto">
+        <div class="card-head">
+          <svg class="ic"><use href="#i-lock"/></svg>
+          <h2>Crypto<span>密码学</span></h2>
+        </div>
+        <p class="tagline">与数学和推导为伴的方向。</p>
+        <div class="meta">
+          <div class="m"><span class="k">适合谁</span><span>喜欢数学推导、有耐心的同学。</span></div>
+          <div class="m"><span class="k">前置基础</span><span>基础数论（模运算），Python。</span></div>
+        </div>
+        <div class="learn">
+          <span class="pill">编码基础</span><span class="pill">古典密码</span><span class="pill">RSA</span><span class="pill">AES</span>
+        </div>
+        <div class="card-foot">
+          <a class="btn btn-dark" href="../hc-crypto/Encode/">第一课 <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-line" href="../hc-crypto/">进入方向</a>
+        </div>
+      </section>
+
+      <section class="card" id="reverse">
+        <div class="card-head">
+          <svg class="ic"><use href="#i-cpu"/></svg>
+          <h2>Reverse<span>逆向工程</span></h2>
+        </div>
+        <p class="tagline">从二进制里读出程序的秘密。</p>
+        <div class="meta">
+          <div class="m"><span class="k">适合谁</span><span>愿意和汇编、调试器较劲的人。</span></div>
+          <div class="m"><span class="k">前置基础</span><span>C 语言基础，一点计算机组成常识。</span></div>
+        </div>
+        <div class="learn">
+          <span class="pill">IDA</span><span class="pill">汇编</span><span class="pill">花指令</span>
+          <span class="pill">加壳</span><span class="pill">反调试</span>
+        </div>
+        <div class="card-foot">
+          <a class="btn btn-dark" href="../hc-reverse/StartWithIDA/">第一课 <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-line" href="../hc-reverse/">进入方向</a>
+        </div>
+      </section>
+
+      <section class="card" id="pwn">
+        <div class="card-head">
+          <svg class="ic"><use href="#i-terminal"/></svg>
+          <h2>Pwn<span>二进制安全</span></h2>
+        </div>
+        <p class="tagline">CTF 里天花板最高也最硬核的方向。</p>
+        <div class="meta">
+          <div class="m"><span class="k">适合谁</span><span>有 C 和汇编底子、想挑战漏洞利用的人。</span></div>
+          <div class="m"><span class="k">前置基础</span><span>C 语言、x86 汇编、Linux 基础（建议先配好 WSL2 环境，站内有教程）。</span></div>
+        </div>
+        <div class="learn">
+          <span class="pill">栈溢出</span><span class="pill">ROP</span><span class="pill">堆利用</span><span class="pill">保护绕过</span>
+        </div>
+        <div class="card-foot">
+          <a class="btn btn-dark" href="../hc-pwn/Stack_Overflow/">第一课 <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-line" href="../hc-pwn/">进入方向</a>
+        </div>
+      </section>
+
+      <section class="card" id="ai">
+        <div class="card-head">
+          <svg class="ic"><use href="#i-bot"/></svg>
+          <h2>AI 安全 &amp; 区块链<span>新兴赛道</span></h2>
+        </div>
+        <p class="tagline">新兴赛道，竞赛加分项。</p>
+        <div class="meta">
+          <div class="m"><span class="k">适合谁</span><span>已在主流方向入门、想拓宽边界的同学。</span></div>
+          <div class="m"><span class="k">前置基础</span><span>Python；区块链方向建议先了解智能合约概念。</span></div>
+        </div>
+        <div class="learn">
+          <span class="pill">神经网络基础</span><span class="pill">对抗样本</span><span class="pill">Move 合约</span>
+        </div>
+        <div class="card-foot">
+          <a class="btn btn-dark" href="../hc-ai/What_is_AI/">第一课 <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-line" href="../hc-ai/">进入方向</a>
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+</div>
+
+<script src="/shell/search.js"></script>
+<script src="/shell/shell.js"></script>
+<script>Shell.mount({ active: "directions" });</script>
+</body>
+</html>
