@@ -348,28 +348,16 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "Algolympiad CTF 2026",
-        "比赛时间": "2026-11-13 22:00:00 - 2026-11-15 22:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3501.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cyber.algolymp.com/events/a814a7cc-4e23-45f6-a51e-f071aadc8942?lang=en",
-        "比赛标志": "https://ctftime.org/media/events/logo_20.jpg",
-        "比赛权重": "0",
-        "赛事主办": "Algolymp CTF Team (https://ctftime.org/team/441610)",
-        "比赛ID": "1762",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "h4ckc0n 2026",
         "比赛时间": "2026-11-14 23:30:00 - 2026-11-15 23:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3464.ics",
         "比赛形式": "Jeopardy",
-        "比赛链接": "https://h4ckc0n.ctfd.io/",
+        "比赛链接": "http://h4ckc0n.centralindia.cloudapp.azure.com/",
         "比赛标志": "https://ctftime.org/media/events/images_1.jpeg",
         "比赛权重": "24.23",
         "赛事主办": "d4rkc0de (https://ctftime.org/team/15154)",
         "比赛ID": "115",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
     },
     {
         "比赛名称": "InIt CTF",
@@ -393,6 +381,18 @@
         "比赛权重": "37.00",
         "赛事主办": "Platypwnies (https://ctftime.org/team/112550)",
         "比赛ID": "979",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Algolympiad CTF 2026",
+        "比赛时间": "2026-11-13 22:00:00 - 2026-11-15 22:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3501.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cyber.algolymp.com/events/a814a7cc-4e23-45f6-a51e-f071aadc8942?lang=en",
+        "比赛标志": "https://ctftime.org/media/events/logo_20.jpg",
+        "比赛权重": "0",
+        "赛事主办": "Algolymp CTF Team (https://ctftime.org/team/441610)",
+        "比赛ID": "1762",
         "比赛状态": "past"
     },
     {
@@ -474,7 +474,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://2026.chronos-security.ro/",
         "比赛标志": "",
-        "比赛权重": "0",
+        "比赛权重": "25.00",
         "赛事主办": "Chronos Security (https://ctftime.org/team/395297)",
         "比赛ID": "1373",
         "比赛状态": "past"
@@ -1545,30 +1545,6 @@
         "比赛权重": "0",
         "赛事主办": "robotichackingcommunity (https://ctftime.org/team/436123)",
         "比赛ID": "1605",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "AEROSPACE VILLAGE STARPWN CTF",
-        "比赛时间": "2026-08-07 01:00:00 - 2026-08-10 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3342.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://starpwn.ctfd.io/",
-        "比赛标志": "https://ctftime.org/media/events/ctftime_logo_1.png",
-        "比赛权重": "24.65",
-        "赛事主办": "Visionspace (https://ctftime.org/team/383284)",
-        "比赛ID": "1322",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "Kali Team - CTF 26",
-        "比赛时间": "2026-08-05 15:00:00 - 2026-08-06 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3328.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://kali-team.online/",
-        "比赛标志": "https://ctftime.org/media/events/1ec82fa0-76a8-4693-9acc-fe4cc3c3b91f.png",
-        "比赛权重": "25.00",
-        "赛事主办": "Kali Team (https://ctftime.org/team/387378)",
-        "比赛ID": "1622",
         "比赛状态": "past"
     }
 ]
