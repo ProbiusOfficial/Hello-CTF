@@ -96,6 +96,18 @@
         "比赛状态": "oncoming"
     },
     {
+        "比赛名称": "N0v4CTF 2026",
+        "比赛时间": "2026-11-28 01:00:00 - 2026-11-29 01:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3512.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://n0v4ctf.devs.surf/",
+        "比赛标志": "https://ctftime.org/media/events/7b7122f8-2612-4678-b769-2d5ef3630813.png",
+        "比赛权重": "0.00",
+        "赛事主办": "NovaRun (https://ctftime.org/team/435904)",
+        "比赛ID": "1771",
+        "比赛状态": "oncoming"
+    },
+    {
         "比赛名称": "LakeCTF Quals 26-27",
         "比赛时间": "2026-11-28 02:00:00 - 2026-11-29 02:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3474.ics",
@@ -249,6 +261,18 @@
         "比赛权重": "77.38",
         "赛事主办": "InfoSecIITR (https://ctftime.org/team/16691)",
         "比赛ID": "49",
+        "比赛状态": "oncoming"
+    },
+    {
+        "比赛名称": "idktheCTF 2026",
+        "比赛时间": "2026-12-26 09:00:00 - 2026-12-28 12:59:59 UTC+8",
+        "添加日历": "https://ctftime.org/event/3429.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf.idktheflag.sh/",
+        "比赛标志": "https://ctftime.org/media/events/f80d057ee038a0fa050cfbe48060411f_1.png",
+        "比赛权重": "0.00",
+        "赛事主办": "idktheflag (https://ctftime.org/team/419270)",
+        "比赛ID": "1607",
         "比赛状态": "oncoming"
     },
     {
