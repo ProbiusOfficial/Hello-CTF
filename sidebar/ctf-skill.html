@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>helloctf-skill - Hello CTF</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTF/main/docs/assets/images/favicon.png">
+<link rel="stylesheet" href="/shell/shell.css">
+<script>
+  if (localStorage.getItem('hc-theme') === 'dark') document.documentElement.dataset.theme = 'dark';
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: var(--sans); line-height: 1.7;
+    transition: background .25s, color .25s;
+  }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--hl); }
+  [hidden] { display: none !important; }
+
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 44px 32px 90px; }
+
+  /* ===================== 页头 ===================== */
+  .kicker { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; color: var(--accent); }
+  .page-head h1 {
+    font-size: clamp(30px, 3.4vw, 40px);
+    font-weight: 800; letter-spacing: -.03em; line-height: 1.2;
+    margin: 12px 0 10px;
+  }
+  .page-head h1 .hl { background: linear-gradient(transparent 60%, var(--hl) 60%); }
+  .page-head .sub { font-size: 14.5px; color: var(--ink-2); max-width: 640px; }
+  .page-head .sub code {
+    font-family: var(--mono); font-size: 12.5px;
+    background: var(--wash); border: 1px solid var(--line);
+    border-radius: 6px; padding: 1.5px 7px; white-space: nowrap;
+  }
+  .stats { font-family: var(--mono); font-size: 12px; color: var(--ink-3); margin-top: 12px; }
+  .stats strong { color: var(--ink-2); font-weight: 600; }
+
+  /* ===================== 搜索 ===================== */
+  .search-box {
+    display: flex; align-items: center; gap: 10px;
+    border: 1px solid var(--line); border-radius: 12px;
+    background: var(--paper); padding: 11px 16px; margin-top: 26px;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .search-box:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  .search-box > .ic { color: var(--ink-3); }
+  .search-box input {
+    flex: 1; border: none; outline: none; background: transparent;
+    color: var(--ink); font-family: var(--sans); font-size: 14px;
+  }
+  .search-box input::placeholder { color: var(--ink-3); }
+  .search-clear {
+    border: none; background: none; cursor: pointer; padding: 2px;
+    color: var(--ink-3); display: grid; place-items: center;
+    transition: color .15s;
+  }
+  .search-clear:hover { color: var(--ink); }
+
+  /* ===================== 方向选择器（图标卡片） ===================== */
+  .dir-row {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+    gap: 10px; margin-top: 22px;
+  }
+  .dir-card {
+    display: flex; flex-direction: column; align-items: flex-start; gap: 2px;
+    border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--paper); padding: 13px 14px; cursor: pointer;
+    font-family: var(--sans); text-align: left;
+    transition: transform .16s ease, box-shadow .16s ease, border-color .16s, background .16s;
+  }
+  .dir-card .ic { width: 20px; height: 20px; color: var(--ink-3); margin-bottom: 7px; transition: color .16s; }
+  .dir-card .nm { font-family: var(--mono); font-weight: 600; font-size: 13px; color: var(--ink); letter-spacing: .02em; }
+  .dir-card .lb { font-size: 11.5px; color: var(--ink-2); }
+  .dir-card .ct { font-family: var(--mono); font-size: 10px; color: var(--ink-3); margin-top: 4px; }
+  .dir-card:hover { transform: translateY(-2px); border-color: var(--ink); box-shadow: var(--shadow-pop); }
+  .dir-card:hover .ic { color: var(--accent); }
+  .dir-card.on { background: var(--accent-soft); border-color: transparent; }
+  .dir-card.on .ic, .dir-card.on .nm { color: var(--accent); }
+  .dir-card.on .lb { color: var(--accent); opacity: .75; }
+
+  /* ===================== 分组小标题 ===================== */
+  .g-title {
+    display: flex; align-items: center; gap: 11px; flex-wrap: wrap;
+    font-family: var(--mono); font-size: 12px; letter-spacing: .14em;
+    color: var(--ink-2); margin: 38px 0 6px;
+  }
+  .g-title::before { content: ""; width: 22px; height: 3px; border-radius: 2px; background: var(--accent); }
+  .g-title .n { color: var(--ink-3); }
+  .dir-desc { font-size: 12.5px; color: var(--ink-2); max-width: 760px; margin-bottom: 14px; }
+
+  /* ===================== 知识域卡片 ===================== */
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .card {
+    display: block; border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--paper); padding: 16px 18px;
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s;
+  }
+  a.card:hover { transform: translateY(-3px); border-color: var(--ink); box-shadow: var(--shadow-pop); }
+  .card h3 { font-size: 14px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+  .card h3 .arr { width: 14px; height: 14px; color: var(--ink-3); margin-left: auto; transition: transform .16s, color .16s; }
+  a.card:hover h3 .arr { transform: translateX(3px); color: var(--accent); }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .pill {
+    font-family: var(--mono); font-size: 10.5px;
+    padding: 2.5px 9px; border-radius: 999px;
+    background: var(--wash); color: var(--ink-2); border: 1px solid var(--line);
+  }
+
+  .empty { text-align: center; padding: 70px 0; color: var(--ink-3); font-size: 13.5px; }
+
+  @media (max-width: 1180px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px) {
+    .grid { grid-template-columns: 1fr; }
+    .dir-row { grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); }
+    .wrap { padding: 30px 18px 70px; }
+  }
+</style>
+</head>
+<body>
+<div class="main">
+  <div class="wrap">
+
+    <header class="page-head">
+      <div class="kicker">SKILL TREE · 技能树</div>
+      <h1>CTF 各方向 <span class="hl">知识技能树</span>。</h1>
+      <p class="sub">基于国内 CTF 竞赛体系整理。选择一个方向，按知识域逐层深入，快速定位你需要学习的知识点。</p>
+      <p class="sub" style="margin-top:6px">
+        <svg class="ic" style="width:14px;height:14px;vertical-align:-2px;color:var(--accent)"><use href="#i-bot"/></svg>
+        也可以<strong>安装给 AI 助手使用</strong>：技能树已按 Agent Skills 规范封装（仓库根目录含 SKILL.md），在终端执行
+        <code>npx skills add ProbiusOfficial/Hello-CTF</code>
+        即可安装到 Claude Code / Kimi Code CLI / Codex 等编程助手，让 AI 按知识域为你规划学习路线、解题或查漏补缺。
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/blob/main/SKILL.md" target="_blank" rel="noopener" style="color:var(--accent);font-family:var(--mono);font-size:12.5px;margin-left:6px">查看 SKILL.md</a>
+        <span style="color:var(--ink-3);margin:0 4px">·</span>
+        <a href="./ctf_skill_data.json" download="hello-ctf-skill.json" style="color:var(--accent);font-family:var(--mono);font-size:12.5px">↓ 原始数据（JSON）</a>
+      </p>
+      <div class="stats">共 <strong id="categoryCount">0</strong> 个方向 · 涵盖 <strong id="skillCount">0</strong> 个知识域</div>
+    </header>
+
+    <div class="search-box">
+      <svg class="ic"><use href="#i-search"/></svg>
+      <input id="searchInput" type="text" placeholder="搜索方向、知识域或标签 ...">
+      <button id="clearSearch" class="search-clear" hidden aria-label="清空搜索">
+        <svg class="ic" style="width:14px;height:14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+
+    <div class="dir-row" id="dirRow"></div>
+
+    <div id="content"></div>
+
+    <div class="empty" id="empty" hidden>
+      <p>没有找到匹配的方向或知识域</p>
+      <p style="font-size:12px;margin-top:4px">试试换个关键词</p>
+    </div>
+
+  </div>
+</div>
+
+<script src="/shell/search.js"></script>
+<script src="/shell/shell.js"></script>
+<script>Shell.mount({ active: "skill" });</script>
+<script>
+(function () {
+  /* 数据 icon 字段 -> /shell/icons.svg sprite id（无名图标的映射到近义图标） */
+  var ICON_MAP = {
+    globe: 'i-globe', key: 'i-lock', puzzle: 'i-puzzle', terminal: 'i-terminal',
+    cpu: 'i-cpu', sparkles: 'i-bot', cloud: 'i-zap', shield: 'i-shield',
+    cube: 'i-link', cog: 'i-wrench', wifi: 'i-tree', bell: 'i-mega', crosshair: 'i-target'
+  };
+
+  var allCategories = [];
+  var selected = null;
+  var searchQuery = '';
+  var debounceTimer;
+
+  var dirRow = document.getElementById('dirRow');
+  var contentEl = document.getElementById('content');
+  var emptyEl = document.getElementById('empty');
+
+  function icon(name) {
+    return '<svg class="ic"><use href="#' + (ICON_MAP[name] || 'i-puzzle') + '"/></svg>';
+  }
+
+  function kws() {
+    return searchQuery ? searchQuery.toLowerCase().split(/\s+/).filter(Boolean) : [];
+  }
+
+  function matchAll(hay, kw) {
+    for (var i = 0; i < kw.length; i++) {
+      if (hay.indexOf(kw[i]) === -1) return false;
+    }
+    return true;
+  }
+
+  /* 返回 { show, subs }：方向本身命中则展示全部子类，否则只展示命中的子类 */
+  function visibleSubs(cat, kw) {
+    if (!kw.length) return { show: true, subs: cat.subcategories };
+    var selfHay = (cat.name + ' ' + cat.label + ' ' + cat.desc).toLowerCase();
+    if (matchAll(selfHay, kw)) return { show: true, subs: cat.subcategories };
+    var subs = cat.subcategories.filter(function (s) {
+      var hay = (s.name + ' ' + (s.tags || []).join(' ')).toLowerCase();
+      return matchAll(hay, kw);
+    });
+    return { show: subs.length > 0, subs: subs };
+  }
+
+  function subCardHTML(cat, sub) {
+    var tags = (sub.tags || []).map(function (t) { return '<span class="pill">' + t + '</span>'; }).join('');
+    return '<a class="card" href="../hc-skill/' + cat.id + '/' + sub.slug + '/">' +
+      '<h3>' + sub.name + '<svg class="ic arr"><use href="#i-arrow"/></svg></h3>' +
+      (tags ? '<div class="tags">' + tags + '</div>' : '') +
+      '</a>';
+  }
+
+  function render() {
+    var kw = kws();
+    var html = '';
+    var shown = 0;
+    allCategories.forEach(function (cat) {
+      if (selected && cat.id !== selected) return;
+      var v = visibleSubs(cat, kw);
+      if (!v.show) return;
+      shown++;
+      html += '<section>' +
+        '<div class="g-title">' + cat.name + ' · ' + cat.label + '<span class="n">' + v.subs.length + ' 知识域</span></div>' +
+        '<p class="dir-desc">' + cat.desc + '</p>' +
+        '<div class="grid">' + v.subs.map(function (s) { return subCardHTML(cat, s); }).join('') + '</div>' +
+        '</section>';
+    });
+    contentEl.innerHTML = html;
+    emptyEl.hidden = shown > 0;
+  }
+
+  function buildDirRow() {
+    dirRow.innerHTML = allCategories.map(function (cat) {
+      return '<button class="dir-card" data-id="' + cat.id + '">' +
+        icon(cat.icon) +
+        '<span class="nm">' + cat.name + '</span>' +
+        '<span class="lb">' + cat.label + '</span>' +
+        '<span class="ct">' + cat.subcategories.length + ' 知识域</span>' +
+        '</button>';
+    }).join('');
+  }
+
+  dirRow.addEventListener('click', function (e) {
+    var card = e.target.closest('.dir-card');
+    if (!card) return;
+    var id = card.dataset.id;
+    selected = (selected === id) ? null : id;
+    dirRow.querySelectorAll('.dir-card').forEach(function (c) {
+      c.classList.toggle('on', c.dataset.id === selected);
+    });
+    render();
+  });
+
+  var searchInput = document.getElementById('searchInput');
+  var clearBtn = document.getElementById('clearSearch');
+  searchInput.addEventListener('input', function () {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(function () {
+      searchQuery = searchInput.value.trim();
+      clearBtn.hidden = !searchQuery;
+      render();
+    }, 180);
+  });
+  clearBtn.addEventListener('click', function () {
+    searchInput.value = '';
+    searchQuery = '';
+    clearBtn.hidden = true;
+    render();
+    searchInput.focus();
+  });
+
+  fetch('./ctf_skill_data.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      allCategories = data;
+      var totalSubs = data.reduce(function (sum, c) { return sum + c.subcategories.length; }, 0);
+      document.getElementById('categoryCount').textContent = data.length;
+      document.getElementById('skillCount').textContent = totalSubs;
+      buildDirRow();
+      render();
+    })
+    .catch(function (err) {
+      console.error('Failed to load skill data:', err);
+      contentEl.innerHTML = '<p class="empty">数据加载失败，请刷新重试。</p>';
+    });
+})();
+</script>
+</body>
+</html>
