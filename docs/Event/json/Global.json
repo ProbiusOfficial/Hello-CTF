@@ -1,53 +1,5 @@
 [
     {
-        "比赛名称": "EyesOpenCTF 7th edition",
-        "比赛时间": "2026-11-20 18:00:00 - 2026-11-22 18:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3419.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://eyesopensecurity.com/ctf-briefing.html",
-        "比赛标志": "https://ctftime.org/media/events/Template_Speaker_-_2026_4.png",
-        "比赛权重": "0.00",
-        "赛事主办": "EyesOpen_Security (https://ctftime.org/team/200580)",
-        "比赛ID": "847",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "GlacierCTF 2026",
-        "比赛时间": "2026-11-21 02:00:00 - 2026-11-22 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3337.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://glacierctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/glacierlogo_1.png",
-        "比赛权重": "73.17",
-        "赛事主办": "LosFuzzys (https://ctftime.org/team/8323)",
-        "比赛ID": "863",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "WolvCTF 2026",
-        "比赛时间": "2026-11-21 07:00:00 - 2026-11-23 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3049.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://wolvctf.io/",
-        "比赛标志": "https://ctftime.org/media/events/wolverine-logo-square1_1.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "wolvsec (https://ctftime.org/team/83621)",
-        "比赛ID": "766",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "Outback Overflow",
-        "比赛时间": "2026-11-21 07:00:00 - 2026-11-22 07:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3425.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "http://ctf.hscyber.org/",
-        "比赛标志": "https://ctftime.org/media/events/logo_137.png",
-        "比赛权重": "0.00",
-        "赛事主办": "HSCC (https://ctftime.org/team/446734)",
-        "比赛ID": "1683",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "Seize da Flaq",
         "比赛时间": "2026-11-21 14:30:00 - 2026-11-22 10:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3408.ics",
@@ -384,6 +336,54 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "EyesOpenCTF 7th edition",
+        "比赛时间": "2026-11-20 18:00:00 - 2026-11-22 18:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3419.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://eyesopensecurity.com/ctf-briefing.html",
+        "比赛标志": "https://ctftime.org/media/events/Template_Speaker_-_2026_4.png",
+        "比赛权重": "0",
+        "赛事主办": "EyesOpen_Security (https://ctftime.org/team/200580)",
+        "比赛ID": "847",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "GlacierCTF 2026",
+        "比赛时间": "2026-11-21 02:00:00 - 2026-11-22 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3337.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://glacierctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/glacierlogo_1.png",
+        "比赛权重": "73.17",
+        "赛事主办": "LosFuzzys (https://ctftime.org/team/8323)",
+        "比赛ID": "863",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "WolvCTF 2026",
+        "比赛时间": "2026-11-21 07:00:00 - 2026-11-23 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3049.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://wolvctf.io/",
+        "比赛标志": "https://ctftime.org/media/events/wolverine-logo-square1_1.jpg",
+        "比赛权重": "0",
+        "赛事主办": "wolvsec (https://ctftime.org/team/83621)",
+        "比赛ID": "766",
+        "比赛状态": "nowrunning"
+    },
+    {
+        "比赛名称": "Outback Overflow",
+        "比赛时间": "2026-11-21 07:00:00 - 2026-11-22 07:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3425.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "http://ctf.hscyber.org/",
+        "比赛标志": "https://ctftime.org/media/events/logo_137.png",
+        "比赛权重": "0",
+        "赛事主办": "HSCC (https://ctftime.org/team/446734)",
+        "比赛ID": "1683",
+        "比赛状态": "nowrunning"
+    },
+    {
         "比赛名称": "InIt CTF",
         "比赛时间": "2026-11-14 23:30:00 - 2026-11-15 07:30:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3467.ics",
@@ -462,7 +462,7 @@
         "比赛形式": "Jeopardy",
         "比赛链接": "https://ctf.wraven.org/",
         "比赛标志": "https://ctftime.org/media/events/event-logo-2048.png",
-        "比赛权重": "0",
+        "比赛权重": "0.00",
         "赛事主办": "ECX Inc. (https://ctftime.org/team/3602)",
         "比赛ID": "1761",
         "比赛状态": "past"
