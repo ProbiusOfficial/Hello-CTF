@@ -1,41 +1,5 @@
 [
     {
-        "比赛名称": "Seize da Flaq",
-        "比赛时间": "2026-11-21 14:30:00 - 2026-11-22 10:30:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3408.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://seizedaflaq.cyberonites.com/",
-        "比赛标志": "https://ctftime.org/media/events/SDF_1.jpeg",
-        "比赛权重": "0",
-        "赛事主办": "Seize da Flaq (https://ctftime.org/team/442848)",
-        "比赛ID": "1657",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "Crate-CTF 2026",
-        "比赛时间": "2026-11-21 21:00:00 - 2026-11-22 05:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3336.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://foi.se/cratectf",
-        "比赛标志": "https://ctftime.org/media/events/CTF_2026_2.png",
-        "比赛权重": "37.00",
-        "赛事主办": "Crate-CTF (https://ctftime.org/team/352250)",
-        "比赛ID": "1172",
-        "比赛状态": "oncoming"
-    },
-    {
-        "比赛名称": "CyberSci Regional Qualifiers 2026-27",
-        "比赛时间": "2026-11-21 23:00:00 - 2026-11-22 06:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3436.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://cybersecuritychallenge.ca/",
-        "比赛标志": "https://ctftime.org/media/events/9f5bd4404f2ff231cca6e261cdcd0419.jpg",
-        "比赛权重": "0",
-        "赛事主办": "CyberSciOrganizers (https://ctftime.org/team/157536)",
-        "比赛ID": "643",
-        "比赛状态": "oncoming"
-    },
-    {
         "比赛名称": "RedReaper CTF",
         "比赛时间": "2026-11-27 19:00:00 - 2026-11-28 03:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3502.ics",
@@ -348,18 +312,6 @@
         "比赛状态": "nowrunning"
     },
     {
-        "比赛名称": "GlacierCTF 2026",
-        "比赛时间": "2026-11-21 02:00:00 - 2026-11-22 02:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3337.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://glacierctf.com/",
-        "比赛标志": "https://ctftime.org/media/events/glacierlogo_1.png",
-        "比赛权重": "73.17",
-        "赛事主办": "LosFuzzys (https://ctftime.org/team/8323)",
-        "比赛ID": "863",
-        "比赛状态": "nowrunning"
-    },
-    {
         "比赛名称": "WolvCTF 2026",
         "比赛时间": "2026-11-21 07:00:00 - 2026-11-23 07:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3049.ics",
@@ -372,6 +324,42 @@
         "比赛状态": "nowrunning"
     },
     {
+        "比赛名称": "CyberSci Regional Qualifiers 2026-27",
+        "比赛时间": "2026-11-21 23:00:00 - 2026-11-22 06:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3436.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://cybersecuritychallenge.ca/",
+        "比赛标志": "https://ctftime.org/media/events/9f5bd4404f2ff231cca6e261cdcd0419.jpg",
+        "比赛权重": "0",
+        "赛事主办": "CyberSciOrganizers (https://ctftime.org/team/157536)",
+        "比赛ID": "643",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Crate-CTF 2026",
+        "比赛时间": "2026-11-21 21:00:00 - 2026-11-22 05:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3336.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://foi.se/cratectf",
+        "比赛标志": "https://ctftime.org/media/events/CTF_2026_2.png",
+        "比赛权重": "37.00",
+        "赛事主办": "Crate-CTF (https://ctftime.org/team/352250)",
+        "比赛ID": "1172",
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "Seize da Flaq",
+        "比赛时间": "2026-11-21 14:30:00 - 2026-11-22 10:30:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3408.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://seizedaflaq.cyberonites.com/",
+        "比赛标志": "https://ctftime.org/media/events/SDF_1.jpeg",
+        "比赛权重": "0",
+        "赛事主办": "Seize da Flaq (https://ctftime.org/team/442848)",
+        "比赛ID": "1657",
+        "比赛状态": "past"
+    },
+    {
         "比赛名称": "Outback Overflow",
         "比赛时间": "2026-11-21 07:00:00 - 2026-11-22 07:00:00 UTC+8",
         "添加日历": "https://ctftime.org/event/3425.ics",
@@ -381,7 +369,19 @@
         "比赛权重": "0",
         "赛事主办": "HSCC (https://ctftime.org/team/446734)",
         "比赛ID": "1683",
-        "比赛状态": "nowrunning"
+        "比赛状态": "past"
+    },
+    {
+        "比赛名称": "GlacierCTF 2026",
+        "比赛时间": "2026-11-21 02:00:00 - 2026-11-22 02:00:00 UTC+8",
+        "添加日历": "https://ctftime.org/event/3337.ics",
+        "比赛形式": "Jeopardy",
+        "比赛链接": "https://glacierctf.com/",
+        "比赛标志": "https://ctftime.org/media/events/glacierlogo_1.png",
+        "比赛权重": "73.17",
+        "赛事主办": "LosFuzzys (https://ctftime.org/team/8323)",
+        "比赛ID": "863",
+        "比赛状态": "past"
     },
     {
         "比赛名称": "InIt CTF",
@@ -1521,66 +1521,6 @@
         "比赛权重": "0",
         "赛事主办": "Mont5ab El2hwa (https://ctftime.org/team/402823)",
         "比赛ID": "1637",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "The heart of Sysola",
-        "比赛时间": "2026-08-08 21:00:00 - 2026-08-09 09:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3382.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://caplag.ru/competitions/the-heart-of-sysola",
-        "比赛标志": "https://ctftime.org/media/events/photo_2026-07-23_13-34-47.jpg",
-        "比赛权重": "0.00",
-        "赛事主办": "Caplag (https://ctftime.org/team/423152)",
-        "比赛ID": "1652",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "scriptCTF 2026",
-        "比赛时间": "2026-08-08 08:00:00 - 2026-08-10 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3052.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://ctf.scriptsorcerers.xyz/",
-        "比赛标志": "https://ctftime.org/media/events/final_logo_1.png",
-        "比赛权重": "24.70",
-        "赛事主办": "ScriptSorcerers (https://ctftime.org/team/284260)",
-        "比赛ID": "1318",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "UIUCTF 2026",
-        "比赛时间": "2026-08-08 08:00:00 - 2026-08-10 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3148.ics",
-        "比赛形式": "Jeopardy",
-        "比赛链接": "https://uiuc.tf/",
-        "比赛标志": "",
-        "比赛权重": "69.35",
-        "赛事主办": "SIGPwny (https://ctftime.org/team/27763)",
-        "比赛ID": "95",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "DEF CON CTF 2026",
-        "比赛时间": "2026-08-08 00:00:00 - 2026-08-10 03:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3322.ics",
-        "比赛形式": "Attack-Defense",
-        "比赛链接": "https://bbbirds.org/",
-        "比赛标志": "",
-        "比赛权重": "0.00",
-        "赛事主办": "Benevolent Bureau of Birds (https://ctftime.org/team/425757)",
-        "比赛ID": "2",
-        "比赛状态": "past"
-    },
-    {
-        "比赛名称": "RoboHack AI CTF (Robotic Hacking Community at DEFCON 34)",
-        "比赛时间": "2026-08-07 08:00:00 - 2026-08-09 08:00:00 UTC+8",
-        "添加日历": "https://ctftime.org/event/3305.ics",
-        "比赛形式": "Hack quest",
-        "比赛链接": "https://www.robotichackingcommunity.com/",
-        "比赛标志": "https://ctftime.org/media/events/Robotic_Hacking_Community_on_black-h_1.png",
-        "比赛权重": "0",
-        "赛事主办": "robotichackingcommunity (https://ctftime.org/team/436123)",
-        "比赛ID": "1605",
         "比赛状态": "past"
     }
 ]
