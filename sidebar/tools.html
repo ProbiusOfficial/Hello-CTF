@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>工具 / MCP - Hello CTF</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ProbiusOfficial/Hello-CTF/main/docs/assets/images/favicon.png">
+<link rel="stylesheet" href="/shell/shell.css">
+<script>
+  if (localStorage.getItem('hc-theme') === 'dark') document.documentElement.dataset.theme = 'dark';
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: var(--sans); line-height: 1.7;
+    transition: background .25s, color .25s;
+  }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--hl); }
+  [hidden] { display: none !important; }
+
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 44px 32px 90px; }
+
+  /* ===================== 页头 ===================== */
+  .kicker { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; color: var(--accent); }
+  .page-head h1 {
+    font-size: clamp(30px, 3.4vw, 40px);
+    font-weight: 800; letter-spacing: -.03em; line-height: 1.2;
+    margin: 12px 0 10px;
+  }
+  .page-head h1 .hl { background: linear-gradient(transparent 60%, var(--hl) 60%); }
+  .page-head .sub { font-size: 14.5px; color: var(--ink-2); max-width: 640px; }
+  .stats { font-family: var(--mono); font-size: 12px; color: var(--ink-3); margin-top: 12px; }
+  .stats strong { color: var(--ink-2); font-weight: 600; }
+
+  /* ===================== 搜索 ===================== */
+  .search-box {
+    display: flex; align-items: center; gap: 10px;
+    border: 1px solid var(--line); border-radius: 12px;
+    background: var(--paper); padding: 11px 16px; margin-top: 26px;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .search-box:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  .search-box > .ic { color: var(--ink-3); }
+  .search-box input {
+    flex: 1; border: none; outline: none; background: transparent;
+    color: var(--ink); font-family: var(--sans); font-size: 14px;
+  }
+  .search-box input::placeholder { color: var(--ink-3); }
+  .search-clear {
+    border: none; background: none; cursor: pointer; padding: 2px;
+    color: var(--ink-3); display: grid; place-items: center;
+    transition: color .15s;
+  }
+  .search-clear:hover { color: var(--ink); }
+
+  /* ===================== 标签筛选 chips ===================== */
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .chip {
+    font-family: var(--mono); font-size: 12px;
+    padding: 5px 13px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--paper); color: var(--ink-2);
+    cursor: pointer; transition: border-color .15s, color .15s, background .15s;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--accent); }
+  .chip.on { background: var(--accent-soft); color: var(--accent); border-color: transparent; font-weight: 600; }
+
+  /* ===================== 分组小标题 ===================== */
+  .g-title {
+    display: flex; align-items: center; gap: 11px;
+    font-family: var(--mono); font-size: 12px; letter-spacing: .14em;
+    color: var(--ink-2); margin: 36px 0 14px;
+  }
+  .g-title::before { content: ""; width: 22px; height: 3px; border-radius: 2px; background: var(--accent); }
+  .g-title .n { color: var(--ink-3); }
+
+  /* ===================== 卡片 ===================== */
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .card {
+    display: block; border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--paper); padding: 18px 20px;
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s;
+  }
+  a.card:hover { transform: translateY(-3px); border-color: var(--ink); box-shadow: var(--shadow-pop); }
+  .card h3 { font-size: 14.5px; font-weight: 700; }
+  .card .d {
+    font-size: 12.5px; color: var(--ink-2); margin-top: 6px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .pill {
+    font-family: var(--mono); font-size: 10.5px;
+    padding: 2.5px 9px; border-radius: 999px;
+    background: var(--wash); color: var(--ink-2); border: 1px solid var(--line);
+  }
+
+  .empty { text-align: center; padding: 70px 0; color: var(--ink-3); font-size: 13.5px; }
+
+  @media (max-width: 1180px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px) {
+    .grid { grid-template-columns: 1fr; }
+    .wrap { padding: 30px 18px 70px; }
+  }
+</style>
+</head>
+<body>
+<div class="main">
+  <div class="wrap">
+
+    <header class="page-head">
+      <div class="kicker">TOOLS · 工具一览</div>
+      <h1>趁手的 <span class="hl">工具</span>，一半的胜利。</h1>
+      <p class="sub">CTF 常用工具合集，涵盖 Web 安全、MISC、密码学、逆向、PWN、AWD 等方向。快速搜索，找到你需要的工具。</p>
+      <div class="stats">共 <strong id="toolCount">0</strong> 个工具 · 显示 <strong id="visibleCount">0</strong> 个</div>
+    </header>
+
+    <div class="search-box">
+      <svg class="ic"><use href="#i-search"/></svg>
+      <input id="searchInput" type="text" placeholder="搜索工具名称、描述或标签 ...">
+      <button id="clearSearch" class="search-clear" hidden aria-label="清空搜索">
+        <svg class="ic" style="width:14px;height:14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+
+    <div class="chips" id="tagChips">
+      <button class="chip on" data-tag="all">全部</button>
+    </div>
+
+    <div id="groups"></div>
+
+    <div class="empty" id="empty" hidden>
+      <p>没有找到匹配的工具</p>
+      <p style="font-size:12px;margin-top:4px">试试换个关键词或清除筛选条件</p>
+    </div>
+
+  </div>
+</div>
+
+<script src="/shell/search.js"></script>
+<script src="/shell/shell.js"></script>
+<script>Shell.mount({ active: "tools" });</script>
+<script>
+(function () {
+  var TAG_ORDER = ['效率软件','环境基础','Web工具','编码解密','文本工具','隐写工具','取证工具','MISC解题','密码学','逆向工具','PWN工具','AWD工具'];
+
+  var allTools = [];
+  var activeTags = new Set();
+  var searchQuery = '';
+  var debounceTimer;
+
+  var chipsEl = document.getElementById('tagChips');
+  var groupsEl = document.getElementById('groups');
+  var emptyEl = document.getElementById('empty');
+
+  function matches(t) {
+    if (searchQuery) {
+      var hay = (t.name + ' ' + t.desc + ' ' + t.tags.join(' ')).toLowerCase();
+      var kws = searchQuery.toLowerCase().split(/\s+/).filter(Boolean);
+      for (var i = 0; i < kws.length; i++) {
+        if (hay.indexOf(kws[i]) === -1) return false;
+      }
+    }
+    if (activeTags.size > 0) {
+      var ok = false;
+      for (var j = 0; j < t.tags.length; j++) {
+        if (activeTags.has(t.tags[j])) { ok = true; break; }
+      }
+      if (!ok) return false;
+    }
+    return true;
+  }
+
+  function cardHTML(t) {
+    var tags = t.tags.map(function (g) { return '<span class="pill">' + g + '</span>'; }).join('');
+    var inner = '<h3>' + t.name + '</h3><p class="d">' + t.desc + '</p><div class="tags">' + tags + '</div>';
+    if (t.url && t.url !== '#') {
+      return '<a class="card" href="' + t.url + '" target="_blank" rel="noopener noreferrer">' + inner + '</a>';
+    }
+    return '<div class="card">' + inner + '</div>';
+  }
+
+  function render() {
+    var visible = allTools.filter(matches);
+    document.getElementById('visibleCount').textContent = visible.length;
+
+    var byTag = {};
+    visible.forEach(function (t) {
+      var g = t.tags[0] || '其他';
+      (byTag[g] = byTag[g] || []).push(t);
+    });
+
+    var html = '';
+    TAG_ORDER.concat(['其他']).forEach(function (tag) {
+      var list = byTag[tag];
+      if (!list || !list.length) return;
+      html += '<div class="g-title">' + tag + '<span class="n">' + list.length + '</span></div>';
+      html += '<div class="grid">' + list.map(cardHTML).join('') + '</div>';
+    });
+    groupsEl.innerHTML = html;
+    emptyEl.hidden = visible.length > 0;
+  }
+
+  function buildChips() {
+    var present = new Set();
+    allTools.forEach(function (t) { t.tags.forEach(function (g) { present.add(g); }); });
+    TAG_ORDER.forEach(function (tag) {
+      if (!present.has(tag)) return;
+      var b = document.createElement('button');
+      b.className = 'chip';
+      b.dataset.tag = tag;
+      b.textContent = tag;
+      chipsEl.appendChild(b);
+    });
+  }
+
+  chipsEl.addEventListener('click', function (e) {
+    var chip = e.target.closest('.chip');
+    if (!chip) return;
+    var tag = chip.dataset.tag;
+    if (tag === 'all') {
+      activeTags.clear();
+      chipsEl.querySelectorAll('.chip').forEach(function (c) { c.classList.remove('on'); });
+      chip.classList.add('on');
+    } else {
+      chipsEl.querySelector('.chip[data-tag="all"]').classList.remove('on');
+      if (activeTags.has(tag)) {
+        activeTags.delete(tag);
+        chip.classList.remove('on');
+        if (activeTags.size === 0) chipsEl.querySelector('.chip[data-tag="all"]').classList.add('on');
+      } else {
+        activeTags.add(tag);
+        chip.classList.add('on');
+      }
+    }
+    render();
+  });
+
+  var searchInput = document.getElementById('searchInput');
+  var clearBtn = document.getElementById('clearSearch');
+  searchInput.addEventListener('input', function () {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(function () {
+      searchQuery = searchInput.value.trim();
+      clearBtn.hidden = !searchQuery;
+      render();
+    }, 180);
+  });
+  clearBtn.addEventListener('click', function () {
+    searchInput.value = '';
+    searchQuery = '';
+    clearBtn.hidden = true;
+    render();
+    searchInput.focus();
+  });
+
+  fetch('./tools_data.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      allTools = data;
+      document.getElementById('toolCount').textContent = data.length;
+      buildChips();
+      render();
+    })
+    .catch(function (err) {
+      console.error('Failed to load tools data:', err);
+      groupsEl.innerHTML = '<p class="empty">数据加载失败，请刷新重试。</p>';
+    });
+})();
+</script>
+</body>
+</html>

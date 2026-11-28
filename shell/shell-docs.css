@@ -1,0 +1,73 @@
+/* ============================================================
+   Hello-CTF 外壳 × mkdocs-material 集成层 shell-docs.css
+   只含文档页需要的部分：设计 token、项目动态面板、站点导航注入组、
+   头部红点按钮。不引入完整 shell.css（避免与 material 布局冲突）。
+   ============================================================ */
+
+:root {
+  --ink: #0f172a;
+  --ink-2: #475569;
+  --ink-3: #94a3b8;
+  --line: #e6eaf1;
+  --paper: #ffffff;
+  --wash: #f8fafc;
+  --accent: #2563eb;
+  --accent-soft: #eff6ff;
+  --mono: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --sans: Inter, -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  --shadow-pop: 0 18px 40px -18px rgba(15, 23, 42, .28);
+}
+/* 暗色：跟随 material 的 slate 方案（body 属性），同时兼容 shell 的 data-theme */
+body[data-md-color-scheme="slate"],
+[data-theme="dark"] {
+  --ink: #e6eaf3;
+  --ink-2: #9aa7bd;
+  --ink-3: #64748b;
+  --line: #232c3f;
+  --paper: #0d1220;
+  --wash: #111830;
+  --accent: #60a5fa;
+  --accent-soft: rgba(96, 165, 250, .12);
+  --shadow-pop: 0 18px 40px -18px rgba(0, 0, 0, .6);
+}
+
+/* ===================== 项目动态面板（挂在 body 下） ===================== */
+/* 红点基础样式在 shell.css；这里的绝对定位只作用于头部按钮（.hc-feed-btn）内的红点 */
+.hc-feed-btn { position: relative; }
+.hc-feed-btn .feed-badge {
+  position: absolute; top: 2px; right: 2px;
+  min-width: 15px; height: 15px; padding: 0 4px;
+  font-size: 9px;
+  pointer-events: none;
+}
+.feed-panel {
+  position: fixed; right: 16px; top: 56px; z-index: 70;
+  width: 360px; max-width: calc(100vw - 32px); max-height: 72vh;
+  overflow-y: auto; scrollbar-width: thin;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 16px;
+  box-shadow: var(--shadow-pop); padding: 18px 20px;
+  animation: shell-popin .15s ease;
+}
+.feed-panel[hidden] { display: none; }
+@keyframes shell-popin { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.fp-cap { font-family: var(--mono); font-size: 10.5px; letter-spacing: .14em; color: var(--ink-3); padding-bottom: 4px; }
+.fp-item { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; color: var(--ink-2); padding: 7px 0; border-bottom: 1px dashed var(--line); }
+.fp-item .date { font-family: var(--mono); font-size: 11px; color: var(--ink-3); flex-shrink: 0; }
+.fp-note { font-size: 11px; color: var(--ink-3); padding-top: 10px; font-family: var(--mono); }
+
+/* ===================== 侧栏注入的站点导航组 ===================== */
+.hc-site-nav { border-top: 1px solid var(--line); margin-top: 8px; }
+.hc-nav-cap {
+  font-family: var(--mono); font-size: .55rem; letter-spacing: .14em;
+  color: var(--ink-3) !important; padding: .7rem .8rem .3rem;
+  text-transform: none;
+}
+.md-nav__link--hc::before {
+  content: "→";
+  font-family: var(--mono);
+  margin-right: .35rem;
+  color: var(--ink-3);
+}
+.md-nav__link--hc:hover::before { color: var(--hc-accent, var(--accent)); }
+
+/* slate 下 header 顶部颜色适配（primary: black 已接近，微调即可） */

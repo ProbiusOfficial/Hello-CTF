@@ -1,0 +1,501 @@
+[
+  {
+    "year": "2025",
+    "competitions": [
+      {
+        "name": "第十九届CISCN暨第三届\"长城杯\" 半决赛",
+        "desc": "第十九届全国大学生信息安全竞赛（创新实践能力赛）暨第三届“长城杯”网数智安全大赛（防护赛）半决赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2025-CCB-CISCN-Semis" }
+        ],
+        "stars": 11
+      },
+      {
+        "name": "第十九届CISCN暨第三届\"长城杯\" 初赛",
+        "desc": "第十九届全国大学生信息安全竞赛（创新实践能力赛）暨第三届“长城杯”网数智安全大赛（防护赛）初赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2025-CCB-CISCN-Quals" }
+        ],
+        "stars": 15
+      },
+      {
+        "name": "HKCERT CTF 2025",
+        "desc": "第六届“香港网安夺旗赛2025”(HKCERT CTF)",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/HKCERTCTF2025Quals" }
+        ],
+        "stars": 1
+      },
+      {
+        "name": "第五届\"鹏城杯\" 初赛",
+        "desc": "第五届“鹏城杯”联邦网络靶场协同攻防演练 初赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2025-pengchengcup-quals" }
+        ],
+        "stars": 1
+      },
+      {
+        "name": "第九届\"强网杯\"",
+        "desc": "第九届“强网杯”全国网络安全挑战赛",
+        "repos": [
+          { "label": "线上赛", "url": "https://github.com/CTF-Archives/2025-qwbs9-quals" },
+          { "label": "线下决赛", "url": "https://github.com/CTF-Archives/2025-qwbs9-final" }
+        ],
+        "stars": 2
+      },
+      {
+        "name": "\"古剑山\"第三届全国大学生网络攻防大赛",
+        "desc": "“古剑山”第三届全国大学生网络攻防大赛 初赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/GuJianShanCTF2025" }
+        ],
+        "stars": 3
+      },
+      {
+        "name": "\"鹏云杯\"第十二届山东省大学生网络安全技能大赛",
+        "desc": "“鹏云杯”第十二届山东省大学生网络安全技能大赛网络安全技术爱好者线上选拔赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2025-SDNISC-haixuan" }
+        ],
+        "stars": 0
+      },
+      {
+        "name": "江苏省第七届大学生网络空间安全知识技能大赛",
+        "desc": "2025年江苏省第七届大学生网络空间安全知识技能大赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2025-jswa" }
+        ],
+        "stars": 0
+      },
+      {
+        "name": "第三届\"陇剑杯\"网络安全大赛 决赛",
+        "desc": "第三届“陇剑杯”网络安全大赛 决赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2025-LongjianCup-Finals" }
+        ],
+        "stars": 13
+      },
+      {
+        "name": "2025 湾区杯网络安全大赛 初赛",
+        "desc": "2025 湾区杯网络安全大赛 —— 初赛（院校组）",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2025-WQB-Quals" }
+        ],
+        "stars": 1
+      },
+      {
+        "name": "2025 第五届极客少年挑战赛",
+        "desc": "2025 第五届极客少年挑战赛（含初赛与决赛）",
+        "repos": [
+          { "label": "初赛", "url": "https://github.com/CTF-Archives/2025-jksn-quals" },
+          { "label": "决赛", "url": "https://github.com/CTF-Archives/2025-jksn-final" }
+        ],
+        "stars": 3
+      },
+      {
+        "name": "第十八届CISCN 总决赛",
+        "desc": "第十八届全国大学生信息安全竞赛创新实践能力赛(总决赛)",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2025-CISCN-Finals" }
+        ],
+        "stars": 12
+      },
+      {
+        "name": "2025 蓝桥杯网络安全赛 全国总决赛",
+        "desc": "2025 蓝桥杯决赛题目",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2025-LanqiaoCup-Finals" }
+        ],
+        "stars": 7
+      },
+      {
+        "name": "第一届 OpenHarmony CTF 专项赛",
+        "desc": "第一届 OpenHarmony CTF 专项赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2025-OpenHarmonyCTF" }
+        ],
+        "stars": 1
+      },
+      {
+        "name": "2025 ISCC 信息安全与对抗技术竞赛",
+        "desc": "2025年信息安全与对抗技术竞赛分析",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2025-ISCC-Analysis" }
+        ],
+        "stars": 0
+      },
+      {
+        "name": "2025 长城杯铁人三项赛 总决赛",
+        "desc": "2025年长城杯铁人三项赛（防护赛）总决赛赛题附件",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2025-ccb-final" }
+        ],
+        "stars": 3
+      },
+      {
+        "name": "2025 能源网络安全大赛",
+        "desc": "2025年能源网络安全大赛【社会组】【电网 发电 油气组】题目附件",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/energyCTF2025" }
+        ],
+        "stars": 17
+      },
+      {
+        "name": "第八届工业信息安全技能大赛 决赛",
+        "desc": "2025 第八届工业信息安全技能大赛 决赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2025-gyxxaqjnds-Finals" }
+        ],
+        "stars": 12
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "competitions": [
+      {
+        "name": "第十八届CISCN暨第二届\"长城杯\"",
+        "desc": "第十八届全国大学生信息安全竞赛（创新实践能力赛）暨第二届“长城杯”铁人三项赛（防护赛）",
+        "repos": [
+          { "label": "初赛", "url": "https://github.com/CTF-Archives/2024-CCB-CISCN-Quals" },
+          { "label": "半决赛", "url": "https://github.com/CTF-Archives/2024-CCB-CISCN-Semis" }
+        ],
+        "stars": 26
+      },
+      {
+        "name": "第十七届CISCN",
+        "desc": "第十七届全国大学生信息安全竞赛（创新实践能力赛）",
+        "repos": [
+          { "label": "线上初赛", "url": "https://github.com/CTF-Archives/2024-CISCN-Quals" },
+          { "label": "华东南分区赛", "url": "https://github.com/CTF-Archives/2024-CISCN-SouthEast" },
+          { "label": "决赛-AWDP", "url": "https://github.com/CTF-Archives/2024-CISCN-Finals-AWDP" },
+          { "label": "决赛-工控赛道", "url": "https://github.com/CTF-Archives/2024-CISCN-Finals-ICS" },
+          { "label": "决赛-车联网", "url": "https://github.com/CTF-Archives/2024-CISCN-Finals-V2X" },
+          { "label": "决赛-可信计算", "url": "https://github.com/CTF-Archives/2024-CISCN-Finals-trustai" },
+          { "label": "决赛-Build", "url": "https://github.com/CTF-Archives/2024-CISCN-Finals-Build" }
+        ],
+        "stars": 44
+      },
+      {
+        "name": "第九届\"楚慧杯\"",
+        "desc": "2024 年第九届“楚慧杯”湖北省网络与数据安全实践能力竞赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2024-chb" }
+        ],
+        "stars": 1
+      },
+      {
+        "name": "2024 \"强网杯\"青少年专项赛",
+        "desc": "2024 “强网杯”青少年专项赛（含创新赛）",
+        "repos": [
+          { "label": "专项赛", "url": "https://github.com/CTF-Archives/2024-qwb-qsnxbs" },
+          { "label": "创新赛", "url": "https://github.com/CTF-Archives/2024-qwqsncx" }
+        ],
+        "stars": 7
+      },
+      {
+        "name": "第四届网鼎杯",
+        "desc": "第四届网鼎杯网络安全大赛",
+        "repos": [
+          { "label": "青龙场 初赛", "url": "https://github.com/CTF-Archives/2024-wdb-qinglong" },
+          { "label": "白虎场 初赛", "url": "https://github.com/CTF-Archives/2024-wdb-baihu" },
+          { "label": "朱雀场 初赛", "url": "https://github.com/CTF-Archives/2024-wdb-zhuque" },
+          { "label": "半决赛-CTF", "url": "https://github.com/CTF-Archives/2024-wdb-Semis-CTF" },
+          { "label": "半决赛-安全运营", "url": "https://github.com/CTF-Archives/2024-wdb-Semis-IncidentResponse" }
+        ],
+        "stars": 56
+      },
+      {
+        "name": "浙江省大学生信息安全大赛 2024",
+        "desc": "2024 浙江省大学生信息安全大赛",
+        "repos": [
+          { "label": "预赛", "url": "https://github.com/CTF-Archives/2024-zjsdxs-qualifier" },
+          { "label": "决赛", "url": "https://github.com/CTF-Archives/2024-zjsdxs-Finals" }
+        ],
+        "stars": 2
+      },
+      {
+        "name": "2024 鹏城杯 线上初赛",
+        "desc": "2024 鹏城杯 线上初赛附件",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2024-pengchengcup-quals" }
+        ],
+        "stars": 2
+      },
+      {
+        "name": "第二届\"数信杯\"数据安全大赛 2024",
+        "desc": "第二届数据安全大赛“数信杯”2024",
+        "repos": [
+          { "label": "数据安全赛道", "url": "https://github.com/CTF-Archives/2024-ShuXinCup-sjaq" },
+          { "label": "总决赛", "url": "https://github.com/CTF-Archives/2024-Shuxincup-Finals" }
+        ],
+        "stars": 24
+      },
+      {
+        "name": "NewStar CTF 2024",
+        "desc": "面向高校新生的网络安全竞赛 NewStar CTF 2024",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2024-newstar" }
+        ],
+        "stars": 8
+      },
+      {
+        "name": "第八届\"强网杯\"",
+        "desc": "第八届“强网杯”全国网络安全挑战赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2024-qwbs8" }
+        ],
+        "stars": 26
+      },
+      {
+        "name": "2024 第八届工业信息安全大赛 三峡赛",
+        "desc": "2024第八届工业信息安全大赛 三峡赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2024-sanxia" }
+        ],
+        "stars": 0
+      },
+      {
+        "name": "第二届\"商密杯\" 2024",
+        "desc": "2024 第二届“商密杯”密码应用安全挑战赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2024-shangmicup" }
+        ],
+        "stars": 6
+      },
+      {
+        "name": "2024 \"羊城杯\" 大学生组",
+        "desc": "2024“羊城杯”CTF大赛 大学生组",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2024-YCB-Undergraduate" }
+        ],
+        "stars": 6
+      },
+      {
+        "name": "2024 \"鼎峰极客\"网络安全挑战赛",
+        "desc": "2024 “鼎峰极客” 网络安全挑战赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2024-dfjk" }
+        ],
+        "stars": 9
+      },
+      {
+        "name": "2024 四川省\"熊猫杯\"",
+        "desc": "2024 四川省“熊猫杯”网络安全竞赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2024-PandaCupCTF" }
+        ],
+        "stars": 2
+      },
+      {
+        "name": "2024 蓝桥杯网络安全赛 全国总决赛",
+        "desc": "蓝桥杯 2024 网络安全赛 全国总决赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2024-LanqiaoCup-Finals" }
+        ],
+        "stars": 13
+      },
+      {
+        "name": "2024 ISCC 信息安全与对抗技术竞赛",
+        "desc": "2024年第21届信息安全与对抗技术竞赛",
+        "repos": [
+          { "label": "赛题", "url": "https://github.com/CTF-Archives/2024-ISCC-Quals" },
+          { "label": "分析", "url": "https://github.com/CTF-Archives/2024-ISCC-Analysis" }
+        ],
+        "stars": 29
+      },
+      {
+        "name": "2024 高校网络安全管理运维赛 (OMCTF)",
+        "desc": "2024高校网络安全管理运维赛 附件归档 OMCTF2024",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2024-OMCTF" }
+        ],
+        "stars": 40
+      },
+      {
+        "name": "VNCTF 2024",
+        "desc": "VNCTF2024 Misc 题目源码",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2024-VNCTF-OnlyLocalSql" }
+        ],
+        "stars": 4
+      }
+    ]
+  },
+  {
+    "year": "2023",
+    "competitions": [
+      {
+        "name": "\"强网杯\" S6 青少年专项赛",
+        "desc": "强网杯 S6 青少年专项赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2023-qwbS6qsn" }
+        ],
+        "stars": 0
+      },
+      {
+        "name": "西湖论剑 2023 网络安全技能大赛 决赛",
+        "desc": "西湖论剑 网络安全技能大赛 决赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2023-xhlj" }
+        ],
+        "stars": 24
+      },
+      {
+        "name": "第七届\"强网杯\"",
+        "desc": "2023 第七届强网杯全国网络安全挑战赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2023-qwbs7" }
+        ],
+        "stars": 30
+      },
+      {
+        "name": "浙江省大学生信息安全大赛 2023",
+        "desc": "2023 浙江省大学生信息安全大赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2023-zjsdxs" }
+        ],
+        "stars": 22
+      },
+      {
+        "name": "2023 福建省工业赛 CTF",
+        "desc": "2023 福建省工业赛 CTF",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2023-fjgys" }
+        ],
+        "stars": 2
+      },
+      {
+        "name": "第一届福建省大学生数据安全知识竞赛",
+        "desc": "第一届 福建省大学生数据安全知识竞赛",
+        "repos": [
+          { "label": "竞赛附件", "url": "https://github.com/CTF-Archives/2023-fjsdxssjan" },
+          { "label": "pwn-fuduji", "url": "https://github.com/CTF-Archives/2023-fjdxssjan-pwn-fuduji" }
+        ],
+        "stars": 3
+      },
+      {
+        "name": "ISCC 2023",
+        "desc": "ISCC 2023 信息安全与对抗技术竞赛",
+        "repos": [
+          { "label": "赛题", "url": "https://github.com/CTF-Archives/2023-ISCC-Group-stage-match" },
+          { "label": "分析", "url": "https://github.com/CTF-Archives/2023-ISCC-Analysis" }
+        ],
+        "stars": 4
+      },
+      {
+        "name": "2023 \"陇剑杯\" 线上初赛",
+        "desc": "2023 陇剑杯 线上初赛附件",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2023-longjiancup" }
+        ],
+        "stars": 32
+      },
+      {
+        "name": "2023 蓝帽杯 线上初赛",
+        "desc": "2023 蓝帽杯 线上初赛",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2023-Bluehat-Quals" }
+        ],
+        "stars": 4
+      },
+      {
+        "name": "沈阳车联安全挑战杯 2023",
+        "desc": "沈阳车联安全挑战杯",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2023-ShenYangCarSecurity-CTF" }
+        ],
+        "stars": 3
+      },
+      {
+        "name": "NSSCTF Round 12",
+        "desc": "NSSCTF Round 12 赛题附件",
+        "repos": [
+          { "label": "strange-python", "url": "https://github.com/CTF-Archives/NSSCTF-Round12-strange-python" },
+          { "label": "ability", "url": "https://github.com/CTF-Archives/NSSCTF-Round12-ability" },
+          { "label": "Secrets-in-the-Shadow", "url": "https://github.com/CTF-Archives/NSSCTF-Round12-Secrets-in-the-Shadow" }
+        ],
+        "stars": 0
+      },
+      {
+        "name": "NSSCTF Round 15",
+        "desc": "NSSCTF Round 15 赛题附件",
+        "repos": [
+          { "label": "magic-docker", "url": "https://github.com/CTF-Archives/NSSCTF-Round15-magic-docker" }
+        ],
+        "stars": 0
+      },
+      {
+        "name": "CISCN 2023 (单题)",
+        "desc": "2023 全国大学生信息安全竞赛部分题目",
+        "repos": [
+          { "label": "misc-pyshell", "url": "https://github.com/CTF-Archives/2023-ciscn-misc-pyshell" }
+        ],
+        "stars": 1
+      },
+      {
+        "name": "*CTF 2023",
+        "desc": "*CTF2023 “DeadGame” WriteUp & Attachments",
+        "repos": [
+          { "label": "DeadGame", "url": "https://github.com/CTF-Archives/2023-StarCTF-DeadGame" }
+        ],
+        "stars": 0
+      },
+      {
+        "name": "NISA 2023",
+        "desc": "NISA 2023 赛题附件",
+        "repos": [
+          { "label": "crooooooon", "url": "https://github.com/CTF-Archives/2023-NISA2023-crooooooon" },
+          { "label": "capabilities", "url": "https://github.com/CTF-Archives/2023-NISA2023-capabilities" },
+          { "label": "suuuuudo", "url": "https://github.com/CTF-Archives/2023-NISA2023-suuuuudo" }
+        ],
+        "stars": 0
+      },
+      {
+        "name": "HGAME 2023",
+        "desc": "HGAME 2023 赛题附件（含 Week1-4 多方向题目）",
+        "repos": [
+          { "label": "题目合集 (17个仓库)", "url": "https://github.com/orgs/CTF-Archives/repositories?q=2023-hgame" }
+        ],
+        "stars": 1
+      }
+    ]
+  },
+  {
+    "year": "2022",
+    "competitions": [
+      {
+        "name": "西湖论剑 2022",
+        "desc": "2022 西湖论剑大赛赛题附件（含 Web/Pwn/Crypto 多方向）",
+        "repos": [
+          { "label": "题目合集 (11个仓库)", "url": "https://github.com/orgs/CTF-Archives/repositories?q=2022-xhlj" }
+        ],
+        "stars": 9
+      },
+      {
+        "name": "2022 美团高校赛",
+        "desc": "2022 美团高校赛赛题附件（含 Web/Pwn 多方向）",
+        "repos": [
+          { "label": "题目合集 (5个仓库)", "url": "https://github.com/orgs/CTF-Archives/repositories?q=2022-mtgxs" }
+        ],
+        "stars": 1
+      },
+      {
+        "name": "2022 长城杯 高校组",
+        "desc": "2022 长城杯 高校组赛题附件（含 Web/Pwn）",
+        "repos": [
+          { "label": "题目合集 (3个仓库)", "url": "https://github.com/orgs/CTF-Archives/repositories?q=2022-ccbgx" }
+        ],
+        "stars": 1
+      },
+      {
+        "name": "2022 CTF Dynamic Misc",
+        "desc": "Some dynamic MISC challenges from 2022",
+        "repos": [
+          { "label": "仓库", "url": "https://github.com/CTF-Archives/2022-CTF-Dynamic-Misc" }
+        ],
+        "stars": 1
+      }
+    ]
+  }
+]

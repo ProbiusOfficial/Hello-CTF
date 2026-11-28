@@ -1,0 +1,1793 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>S7comm 协议 | Hello CTF</title>
+  
+  <meta name="description" content="开源免费、新手友好的CTF(Capture The Flag,夺旗赛)入门教程">
+  <link rel="icon" href="../../assets/images/favicon.png">
+
+  <!-- 字体（与首页同源） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- material 文章排版 CSS（pin 9.7.7 的 hash 文件名，升级主题时同步更新） -->
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+  <!-- Hello-CTF 外壳 -->
+  <link rel="stylesheet" href="../../shell/shell.css">
+  <link rel="stylesheet" href="../../shell/shell-docs.css">
+  <link rel="stylesheet" href="../../shell/shell-article.css">
+
+  <!-- 站点原有 extra_css（katex CDN / extra.css / bannerSlider.css 等） -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+  
+
+  <!-- admonition 等组件的图标 SVG 变量（原由 material base.html 注入） -->
+  
+
+
+
+  
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V9998CDNR1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V9998CDNR1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V9998CDNR1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+</head>
+<body data-md-color-scheme="default">
+
+  <!-- 主题初始化（先于渲染，避免闪烁）：hc-theme → shell data-theme + material slate -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+      if (t) {
+        document.documentElement.dataset.theme = t;
+        document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+      }
+    })();
+    window.__md_palette_sync = function (t) {
+      document.body.setAttribute("data-md-color-scheme", t === "dark" ? "slate" : "default");
+    };
+  </script>
+
+  <script src="../../shell/search.js"></script>
+  <script src="../../shell/shell.js"></script>
+  <script>Shell.mount({ active: "" });</script>
+
+  <!-- 主区：顶部文档导航 + 文章 + TOC -->
+  <div class="main">
+    <nav class="hc-topnav" aria-label="文档导航">
+      <div class="hc-topnav-inner">
+        
+          
+          
+            <a class="tn-item tn-single" href="../../hc-start/"><svg class="ic tn-ico"><use href="#i-book"/></svg>快速开始</a>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>前言<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-preface/">前言</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/about/">关于本书</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/usage/">食用方法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-preface/join/">加入我们</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-puzzle"/></svg>MISC<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-misc/">MISC | 杂项</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/osint/">信息收集</a>
+    
+  
+    
+      <div class="tn-group">文件与编码基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/Encode_extra/">编码扩展</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file/">文件基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/Archivefile/">压缩包</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">隐写分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/stego/">图片隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_stego/">文件隐写</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/audio_stego/">音频隐写</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">取证分析</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-misc/pcap/">流量分析</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/memory/">内存取证</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/industrial/">工控类</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-misc/file_sign/">附:文件签名表</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item on">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-book"/></svg>ICS | 工控安全<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link on" href="./">S7comm 协议</a>
+    
+  
+    
+      <a class="tn-link" href="../COTP%20%E5%8D%8F%E8%AE%AE/">COTP 协议</a>
+    
+  
+    
+      <a class="tn-link" href="../MMS%20%E5%8D%8F%E8%AE%AE/">MMS 协议</a>
+    
+  
+    
+      <a class="tn-link" href="../Omron%20Fins%20%E5%8D%8F%E8%AE%AE/">Omron Fins 协议</a>
+    
+  
+    
+      <a class="tn-link" href="../LSIS%20FEnet%20%E5%8D%8F%E8%AE%AE/">LSIS FEnet 协议</a>
+    
+  
+    
+      <a class="tn-link" href="../JT%20T%20808%20%E5%8D%8F%E8%AE%AE/">JT/T 808 协议</a>
+    
+  
+    
+      <a class="tn-link" href="../MQTT%20%E5%8D%8F%E8%AE%AE/">MQTT 协议</a>
+    
+  
+    
+      <a class="tn-link" href="../IC%20%E5%8D%A1/">IC 卡</a>
+    
+  
+    
+      <a class="tn-link" href="../1527%20%E8%8A%AF%E7%89%87/">1527 芯片</a>
+    
+  
+    
+      <a class="tn-link" href="../SCD%20%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/">SCD 配置信息</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-globe"/></svg>Web<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-web/">Web | 网络攻防</a>
+    
+  
+    
+      <div class="tn-group">环境与工具</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/web_env/">Web环境设置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/docker_install/">Docker安装配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/docker_env/">Docker与漏洞环境</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/vm_lab/">虚拟机与网络模拟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/burp/">Burp Suite</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/py_script/">Python脚本</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/http/">HTTP协议</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_start/">Web入门题单</a>
+    
+  
+    
+      <div class="tn-group">信息收集</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/sensitive_info/">敏感信息泄露</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">PHP专题</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/php_features/">PHP特性与常见绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_basic/">PHP基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_unser/">PHP反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/php_code_audit/">PHP代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">注入类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/sql_injection/">SQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/nosql/">NoSQL注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xss/">XSS攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/csrf/">CSRF攻击</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssti/">SSTI注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xxe/">XXE注入</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ssrf/">SSRF注入</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">文件类漏洞</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/file_upload/">文件上传</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/include/">文件包含</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/dir_traversal/">目录穿越</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/any_file_read/">任意文件读取</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">命令与代码执行</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/rce/">RCE</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/session_jwt/">会话与认证安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/logical_vuln/">逻辑漏洞</a>
+    
+  
+    
+      <div class="tn-group">语言扩展 | 世界不止有PHP</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/py_unser/">Python反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/py_sandbox/">Python沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/flask_sec/">Flask安全</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/prototype_pollution/">原型链污染</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/js_sandbox/">JS沙箱逃逸</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/js_reverse/">JS逆向</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/java_basic/">Java安全基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/java_unser/">Java反序列化</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/spring/">Spring漏洞</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/java_audit/">Java代码审计</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">进阶专题</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/waf_bypass/">WAF绕过</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/http_smuggling/">请求走私</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/cache_poisoning/">缓存投毒</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/xs_leaks/">XS-Leaks</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_crypto/">密码学应用题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/cloud_container/">云与容器安全</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">实战能力</div>
+      
+  
+    
+      <div class="tn-group">渗透链路基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/pentest_flow/">渗透流程总览</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/two_layer/">两层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/foothold/">立足点建立</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/internal_recon/">内网信息收集</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/proxy_tunnel/">代理与隧道</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">多层网络渗透</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/three_layer/">三层网络实战</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/multi_layer/">多层网络综合</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/ad_basic/">域渗透入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/lateral/">横向移动</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">对抗与综合</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-web/awd/">AWD模式</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/web_pwn/">Web与二进制结合</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/nday/">Nday利用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-web/review/">Writeup复盘方法</a>
+    
+  
+
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-lock"/></svg>Crypto<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-crypto/">Crypto | 密码学</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/env/">环境配置</a>
+    
+  
+    
+      <div class="tn-group">基础知识</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Recap/">前情提要</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Encode/">编码基础</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">密码体系</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Classicalcipher/">古典密码</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-crypto/Moderncipher/">现代密码</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-cpu"/></svg>Reverse<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-reverse/">逆向工程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%95%E5%AF%BC%E7%AF%87%EF%BC%9A%E7%81%B5%E9%AD%82FAQ/">引导篇：灵魂FAQ</a>
+    
+  
+    
+      <div class="tn-group">编译与可执行文件</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">C语言基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">存储结构</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9A%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/">可执行文件</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">交互式反汇编工具IDA</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/StartWithIDA/">从零开始的IDA</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/IDA%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95/">IDA动态调试</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">常见算法</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97/">基本运算</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%BC%96%E7%A0%81%E5%9F%BA%E7%A1%80/">编码基础</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%AD%97%E8%8A%82%E6%B5%81%E7%AE%97%E6%B3%95/">字节流算法</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81/">分组密码</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/z3%E7%BA%A6%E6%9D%9F%E6%B1%82%E8%A7%A3/">z3约束求解</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Quick%20Start%EF%BC%9AASM%E6%B1%87%E7%BC%96/">x86 汇编初步</a>
+    
+  
+    
+      <div class="tn-group">代码保护与对抗</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%8A%B1%E6%8C%87%E4%BB%A4/">花指令</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%A3%B3/">加壳</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/VM/">VM</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/SMC/">SMC</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/TLS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/">TLS回调函数</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E5%8F%8D%E8%B0%83%E8%AF%95/">反调试</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E6%8E%A7%E5%88%B6%E6%B5%81%E5%B9%B3%E5%9D%A6%E5%8C%96/">控制流平坦化</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/">符号执行</a>
+    
+  
+    
+      <div class="tn-group">语言与框架</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Python/">Python</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/NET/">.NET</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Rust/">Rust</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/JavaScript/">JavaScript</a>
+    
+  
+
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/Android/">Android平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-reverse/%E8%A7%A3%E9%A2%98%E6%8A%80%E5%B7%A7/">解题技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-terminal"/></svg>Pwn<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-pwn/">Pwn | 二进制安全</a>
+    
+  
+    
+      <div class="tn-group">环境与基础</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/wsl2_environment/">wsl2下的环境配置</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Asm_x86/">汇编语言(x86)</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Protections/">常见保护</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">栈溢出</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/Stack_Overflow/">栈上数组越界&栈溢出</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">ROP利用</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP/">ROP入门</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/ROP_Tricks/">常见的ROP技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-pwn/rop_add_v1/">ROP进阶</a>
+    
+  
+
+    
+  
+    
+      <div class="tn-group">Linux Kernel Pwn</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-pwn/kernel_base_knowlegde/">内核基础</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-shield"/></svg>AWD<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_about/">AWD介绍</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_platform/">AWD平台</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_web.exp/">【WEB】AWD技巧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-awd/awd_pwn.exp/">【PWN】AWD技巧</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-bot"/></svg>AI<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-ai/">AI | 人工智能</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/What_is_AI/">初识AI</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-ai/MLP/">你的第一个神经网络</a>
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-link"/></svg>区块链<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <div class="tn-group">Move</div>
+      
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x00/">从0开始的签到题</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x01/">独特的所有权</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x02/">神奇的时钟</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x03/">对象与燃气</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-blockchain/Move/0x04/">多样的泛型</a>
+    
+  
+
+    
+  
+</div>
+            </div>
+          
+        
+          
+          
+            <div class="tn-item">
+              <span class="tn-label"><svg class="ic tn-ico"><use href="#i-tag"/></svg>附录<svg class="ic tn-chev"><use href="#i-chev-down"/></svg></span>
+              <div class="tn-drop">
+  
+    
+      <a class="tn-link" href="../../hc-appendix/how-to-ask/">提问的智慧</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/NSSCTF_Usage/">NSSCTF平台使用</a>
+    
+  
+    
+      <a class="tn-link" href="../../hc-appendix/book/">推荐书单</a>
+    
+  
+</div>
+            </div>
+          
+        
+      </div>
+    </nav>
+    <div class="doc-layout">
+      <article class="md-typeset hc-article">
+        <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<div><h1 id="s7comm">S7comm 协议<a class="headerlink" href="#s7comm" title="Permanent link">¶</a></h1>
+<h2 id="_1">概述<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<p>S7comm 是西门子专有的工业控制协议，主要用于西门子S7-300/400系列PLC（可编程逻辑控制器）的编程、数据交换和诊断</p>
+<h2 id="_2">报文结构<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<p>一个典型的 S7comm 报文由三部分组成：</p>
+<ul>
+<li>
+<p>Header (头部)：固定 12 字节，包含协议标识、PDU 类型等关键信息。</p>
+</li>
+<li>
+<p>Parameter (参数)：长度可变，包含具体的功能码（如读取、写入）及其参数</p>
+</li>
+<li>
+<p>Data (数据)：长度可变，在写入等操作中携带实际数据</p>
+</li>
+</ul>
+<h2 id="_3">通信过程<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<p>Wireshark 可以清晰捕捉到 S7 通信的建立过程，分为三步：</p>
+<ul>
+<li>
+<p>TCP 三次握手：客户端通过 TCP 端口 102 与 PLC 建立连接</p>
+</li>
+<li>
+<p>COTP 层连接：双方交换 COTP 连接请求和确认报文，协商通信参数</p>
+</li>
+<li>
+<p>S7comm 层会话建立：客户端发送功能码为 <code>0xf0</code> 的 "建立通信" 请求，双方协商 S7comm 层参数，完成连接</p>
+</li>
+</ul>
+<h2 id="_4">核心功能码<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">功能码</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>0x00</strong></td>
+<td style="text-align: left;">CPU 服务</td>
+<td style="text-align: left;">用于执行与 CPU 本身相关的系统级功能</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>0xF0</strong></td>
+<td style="text-align: left;">建立通信</td>
+<td style="text-align: left;">在数据传输前，用于协商通信参数，如 PDU 大小</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>0x04</strong></td>
+<td style="text-align: left;">读取变量</td>
+<td style="text-align: left;">请求读取 PLC 中一个或多个变量的值</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>0x05</strong></td>
+<td style="text-align: left;">写入变量</td>
+<td style="text-align: left;">请求向 PLC 写入一个或多个变量的值</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>0x1A</strong></td>
+<td style="text-align: left;">请求下载</td>
+<td style="text-align: left;">开始下载程序块或数据块前的请求</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>0x1B</strong></td>
+<td style="text-align: left;">下载块</td>
+<td style="text-align: left;">传输程序块或数据块的实际数据内容</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>0x1C</strong></td>
+<td style="text-align: left;">下载结束</td>
+<td style="text-align: left;">通知 PLC 下载过程已全部完成</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>0x1D</strong></td>
+<td style="text-align: left;">开始上传</td>
+<td style="text-align: left;">开始从 PLC 上传程序块或数据块</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>0x1E</strong></td>
+<td style="text-align: left;">上传</td>
+<td style="text-align: left;">传输从 PLC 上传的数据内容</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>0x1F</strong></td>
+<td style="text-align: left;">上传结束</td>
+<td style="text-align: left;">通知上位机上传过程已全部完成</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>0x28</strong></td>
+<td style="text-align: left;">PLC 控制</td>
+<td style="text-align: left;">用于远程控制 PLC 的运行模式，例如启动（Start）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>0x29</strong></td>
+<td style="text-align: left;">停止 PLC</td>
+<td style="text-align: left;">远程停止 PLC 的运行</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">实战案例<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
+<h3 id="s7-s7comm">S7 协议恶意攻击分析（S7comm 协议）<a class="headerlink" href="#s7-s7comm" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6a33579da6693733f7e20ba4.png"></p>
+<p>题目说了是 "突然发生停机事件"，所以推测是 <code>0x29</code> 或者 <code>0x28</code>，直接过滤出来</p>
+<p><code>P_PROGRAM</code> 是实现 PLC 模式转换的关键服务。它主要包含两种操作：</p>
+<ul>
+<li>
+<p>启动：将 PLC 从停止状态切换至运行状态</p>
+</li>
+<li>
+<p>停止：将 PLC 从运行状态切换至停止状态</p>
+</li>
+</ul>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6a335e6aa6693733f7e20e73.png"></p>
+<p>本题的 flag 是 <code>flag{3201414d}</code></p>
+<h3 id="s7comm_1">上位机通讯异常分析（S7comm 协议）<a class="headerlink" href="#s7comm_1" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6a335ee3a6693733f7e20ea6.png"></p>
+<p>题目说 "无法查询控制设备异常情况"</p>
+<p>观察数据包发现功能码都是 <code>0x04</code>，所以判断是因为响应不正常才导致的 "无法查询"</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6a3362e1a6693733f7e23913.png"></p>
+<p>我们随便一个响应来分析一下结构</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6a336422a6693733f7e239a4.png"></p>
+<p>📦 1. Header (头部) — 确认响应类型</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">字段</th>
+<th style="text-align: left;">值</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Protocol Id</td>
+<td style="text-align: left;">0x32</td>
+<td style="text-align: left;">S7 协议固定标识，表明这是 S7comm 报文</td>
+</tr>
+<tr>
+<td style="text-align: left;">ROSCTR</td>
+<td style="text-align: left;">Ack_Data (3)</td>
+<td style="text-align: left;">表示这是一个数据确认包，即对请求的响应并携带数据</td>
+</tr>
+<tr>
+<td style="text-align: left;">PDU Reference</td>
+<td style="text-align: left;">52417</td>
+<td style="text-align: left;">用于匹配请求与响应的流水号</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parameter length</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">参数部分的长度为 2 字节（仅包含 "Item count"）</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data length</td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">数据部分的长度为 6 字节（包含 1 个数据项的元信息+实际值）</td>
+</tr>
+<tr>
+<td style="text-align: left;">Error class / code</td>
+<td style="text-align: left;">0x00 / 0x00</td>
+<td style="text-align: left;">无错误，表示操作成功</td>
+</tr>
+</tbody>
+</table>
+<p>📋 2. Parameter (参数) — 确认读取内容</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">字段</th>
+<th style="text-align: left;">值</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Function</td>
+<td style="text-align: left;">Read Var (0x04)</td>
+<td style="text-align: left;">响应的是 "读取变量" 请求</td>
+</tr>
+<tr>
+<td style="text-align: left;">Item count</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">数据部分包含 1个 数据项，与请求中的项数对应</td>
+</tr>
+</tbody>
+</table>
+<p>💾 3. Data (数据) — 实际读取到的值</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">字段</th>
+<th style="text-align: left;">值</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Return code</td>
+<td style="text-align: left;">Success (0xff)</td>
+<td style="text-align: left;">该项读取成功</td>
+</tr>
+<tr>
+<td style="text-align: left;">Transport size</td>
+<td style="text-align: left;">BYTE/WORD/DWORD (0x04)</td>
+<td style="text-align: left;">表示数据长度以字节为单位，且 "Length" 字段按字节计数</td>
+</tr>
+<tr>
+<td style="text-align: left;">Length</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">数据长度为 2个字节</td>
+</tr>
+<tr>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;">01 00</td>
+<td style="text-align: left;">实际读取到的原始值，按大端序存储</td>
+</tr>
+</tbody>
+</table>
+<p>可以看到 <code>Return code</code> 的值决定是否读取成功，成功的话为 <code>0xff</code></p>
+<p>我们右键这个值，选择 "准备作为过滤器" → "选中"</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6a338bb791b65c4475ab01af.png"></p>
+<p>然后加上 <code>!</code> 筛选出没有读取成功的流量包</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6a338c3291b65c4475ab0218.png"></p>
+<p>其 <code>data</code> 内容就是 <code>flag{010400100100}</code></p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6a338c6091b65c4475ab2cbe.png"></p>
+<h3 id="s7comm_2">工控协议数据分析（S7comm 协议）<a class="headerlink" href="#s7comm_2" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6a33af1a91b65c4475abac4f.png"></p>
+<p>题目说 "获取到了哪些信息"，过滤协议可以看到全部都是 <code>0x04</code> 和 <code>0x05</code> 的流量</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6a33e3ef91b65c4475ad0a3d.png"></p>
+<p>过滤 <code>s7comm.param.func == 0x05</code> 可以看到多次写入，每个写入包的 <code>data</code> 字段里都有类似内容：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>01100110
+</code></pre></div>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6a33e52d91b65c4475ad0a98.png"></p>
+<p>提取出来拼接转成 ASCII 码得到 <code>flag{flag_is_here}</code></p>
+<h3 id="s7-s7comm_1">异常的 S7 数据（S7comm 协议）<a class="headerlink" href="#s7-s7comm_1" title="Permanent link">¶</a></h3>
+<p>大概看了一下，全是 <code>0x05</code> 功能码</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6a34018a91b65c4475ada627.png"></p>
+<p>绝大多数写入数据都以 <code>ffff</code> 开头</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6a340e2591b65c4475adf946.png"></p>
+<p>右键作为过滤器应用</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6a34100c91b65c4475adf96f.png"></p>
+<p>WireShark 生成的语法是 <code>s7comm.resp.data == ff:ff:96:e7:8f:51:c4:d0:3a:2b</code></p>
+<p>我们更改为 <code>s7comm.resp.data[0:2] != ff:ff</code>，筛选出数据包</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6a34106e91b65c4475adf978.png"></p>
+<p>所以 flag 是 <code>flag{FFAD28A0CE69DB34751F}</code></p>
+<h3 id="fuzzs7comm">黑客的 Fuzz（S7comm 协议）<a class="headerlink" href="#fuzzs7comm" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6a36f15e2830ce602a50ec82.png"></p>
+<p>打开流量包过滤 <code>s7comm</code>，全是写入和读取变量</p>
+<p>题目说的是 FUZZ，所以重点应该看读取的流量，功能码为 <code>0x04</code></p>
+<p>FUZZ 的参数每次请求肯定都是不一样的</p>
+<p>最后比对发现就 Address 字段的最后一个字节每次不一样</p>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6a36f3272830ce602a50ed24.png"></p>
+<p>编写脚本提取</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">struct</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># 打开 pcapng 文件并读取全部内容</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">pcap</span> <span class="o">=</span> <span class="s2">"s7.pcapng"</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">raw</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">pcap</span><span class="p">,</span> <span class="s2">"rb"</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="c1"># 默认使用小端字节序</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">endian</span> <span class="o">=</span> <span class="s2">"&lt;"</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># 当前读取偏移</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">off</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="c1"># 存放提取出的隐藏数据</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">hidden</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">()</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="k">def</span><span class="w"> </span><span class="nf">parse_tcp</span><span class="p">(</span><span class="n">pkt</span><span class="p">):</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">    </span><span class="sd">"""解析以太网帧中的 TCP 报文，返回 (src_ip, dst_ip, src_port, dst_port, payload)"""</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    <span class="c1"># 以太网帧最小长度 14 字节（目的 MAC + 源 MAC + 类型）</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">pkt</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">14</span><span class="p">:</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>        <span class="k">return</span> <span class="kc">None</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>    <span class="c1"># 以太类型字段（大端）</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>    <span class="n">eth_type</span> <span class="o">=</span> <span class="nb">int</span><span class="o">.</span><span class="n">from_bytes</span><span class="p">(</span><span class="n">pkt</span><span class="p">[</span><span class="mi">12</span><span class="p">:</span><span class="mi">14</span><span class="p">],</span> <span class="s2">"big"</span><span class="p">)</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>    <span class="n">pos</span> <span class="o">=</span> <span class="mi">14</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>    <span class="c1"># 若存在 802.1Q VLAN 标签（0x8100），再读取内层类型</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>    <span class="k">if</span> <span class="n">eth_type</span> <span class="o">==</span> <span class="mh">0x8100</span><span class="p">:</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>        <span class="n">eth_type</span> <span class="o">=</span> <span class="nb">int</span><span class="o">.</span><span class="n">from_bytes</span><span class="p">(</span><span class="n">pkt</span><span class="p">[</span><span class="mi">16</span><span class="p">:</span><span class="mi">18</span><span class="p">],</span> <span class="s2">"big"</span><span class="p">)</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>        <span class="n">pos</span> <span class="o">=</span> <span class="mi">18</span>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>    <span class="c1"># 只处理 IPv4（0x0800）</span>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>    <span class="k">if</span> <span class="n">eth_type</span> <span class="o">!=</span> <span class="mh">0x0800</span><span class="p">:</span>
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>        <span class="k">return</span> <span class="kc">None</span>
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>    <span class="c1"># IP 头部长度（ihl * 4 字节）</span>
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>    <span class="n">ihl</span> <span class="o">=</span> <span class="p">(</span><span class="n">pkt</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x0f</span><span class="p">)</span> <span class="o">*</span> <span class="mi">4</span>
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>    <span class="c1"># IP 协议字段（6 = TCP）</span>
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>    <span class="n">proto</span> <span class="o">=</span> <span class="n">pkt</span><span class="p">[</span><span class="n">pos</span> <span class="o">+</span> <span class="mi">9</span><span class="p">]</span>
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>    <span class="k">if</span> <span class="n">proto</span> <span class="o">!=</span> <span class="mi">6</span><span class="p">:</span>
+<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>        <span class="k">return</span> <span class="kc">None</span>
+<a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>
+<a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>    <span class="c1"># 源 IP 和目标 IP（点分十进制）</span>
+<a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a>    <span class="n">src</span> <span class="o">=</span> <span class="s2">"."</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">pkt</span><span class="p">[</span><span class="n">pos</span> <span class="o">+</span> <span class="mi">12</span><span class="p">:</span><span class="n">pos</span> <span class="o">+</span> <span class="mi">16</span><span class="p">]))</span>
+<a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>    <span class="n">dst</span> <span class="o">=</span> <span class="s2">"."</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">pkt</span><span class="p">[</span><span class="n">pos</span> <span class="o">+</span> <span class="mi">16</span><span class="p">:</span><span class="n">pos</span> <span class="o">+</span> <span class="mi">20</span><span class="p">]))</span>
+<a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a>
+<a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a>    <span class="c1"># TCP 首部起始位置</span>
+<a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a>    <span class="n">tcp</span> <span class="o">=</span> <span class="n">pos</span> <span class="o">+</span> <span class="n">ihl</span>
+<a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a>    <span class="c1"># 源端口、目的端口</span>
+<a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a>    <span class="n">sport</span> <span class="o">=</span> <span class="nb">int</span><span class="o">.</span><span class="n">from_bytes</span><span class="p">(</span><span class="n">pkt</span><span class="p">[</span><span class="n">tcp</span><span class="p">:</span><span class="n">tcp</span> <span class="o">+</span> <span class="mi">2</span><span class="p">],</span> <span class="s2">"big"</span><span class="p">)</span>
+<a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a>    <span class="n">dport</span> <span class="o">=</span> <span class="nb">int</span><span class="o">.</span><span class="n">from_bytes</span><span class="p">(</span><span class="n">pkt</span><span class="p">[</span><span class="n">tcp</span> <span class="o">+</span> <span class="mi">2</span><span class="p">:</span><span class="n">tcp</span> <span class="o">+</span> <span class="mi">4</span><span class="p">],</span> <span class="s2">"big"</span><span class="p">)</span>
+<a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a>    <span class="c1"># TCP 数据偏移（4 位，单位 4 字节）</span>
+<a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a>    <span class="n">doff</span> <span class="o">=</span> <span class="p">(</span><span class="n">pkt</span><span class="p">[</span><span class="n">tcp</span> <span class="o">+</span> <span class="mi">12</span><span class="p">]</span> <span class="o">&gt;&gt;</span> <span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="mi">4</span>
+<a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a>
+<a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a>    <span class="c1"># TCP 有效载荷</span>
+<a id="__codelineno-1-55" name="__codelineno-1-55" href="#__codelineno-1-55"></a>    <span class="n">payload</span> <span class="o">=</span> <span class="n">pkt</span><span class="p">[</span><span class="n">tcp</span> <span class="o">+</span> <span class="n">doff</span><span class="p">:]</span>
+<a id="__codelineno-1-56" name="__codelineno-1-56" href="#__codelineno-1-56"></a>    <span class="k">return</span> <span class="n">src</span><span class="p">,</span> <span class="n">dst</span><span class="p">,</span> <span class="n">sport</span><span class="p">,</span> <span class="n">dport</span><span class="p">,</span> <span class="n">payload</span>
+<a id="__codelineno-1-57" name="__codelineno-1-57" href="#__codelineno-1-57"></a>
+<a id="__codelineno-1-58" name="__codelineno-1-58" href="#__codelineno-1-58"></a><span class="c1"># 解析 pcapng 文件：逐块读取</span>
+<a id="__codelineno-1-59" name="__codelineno-1-59" href="#__codelineno-1-59"></a><span class="k">while</span> <span class="n">off</span> <span class="o">+</span> <span class="mi">12</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">raw</span><span class="p">):</span>
+<a id="__codelineno-1-60" name="__codelineno-1-60" href="#__codelineno-1-60"></a>    <span class="c1"># 块类型和块长度（使用当前字节序）</span>
+<a id="__codelineno-1-61" name="__codelineno-1-61" href="#__codelineno-1-61"></a>    <span class="n">block_type</span><span class="p">,</span> <span class="n">block_len</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="n">endian</span> <span class="o">+</span> <span class="s2">"II"</span><span class="p">,</span> <span class="n">raw</span><span class="p">[</span><span class="n">off</span><span class="p">:</span><span class="n">off</span> <span class="o">+</span> <span class="mi">8</span><span class="p">])</span>
+<a id="__codelineno-1-62" name="__codelineno-1-62" href="#__codelineno-1-62"></a>
+<a id="__codelineno-1-63" name="__codelineno-1-63" href="#__codelineno-1-63"></a>    <span class="c1"># 块长度不合理则退出</span>
+<a id="__codelineno-1-64" name="__codelineno-1-64" href="#__codelineno-1-64"></a>    <span class="k">if</span> <span class="n">block_len</span> <span class="o">&lt;</span> <span class="mi">12</span> <span class="ow">or</span> <span class="n">off</span> <span class="o">+</span> <span class="n">block_len</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">raw</span><span class="p">):</span>
+<a id="__codelineno-1-65" name="__codelineno-1-65" href="#__codelineno-1-65"></a>        <span class="k">break</span>
+<a id="__codelineno-1-66" name="__codelineno-1-66" href="#__codelineno-1-66"></a>
+<a id="__codelineno-1-67" name="__codelineno-1-67" href="#__codelineno-1-67"></a>    <span class="c1"># 块体（去除头部类型/长度和尾部重复长度）</span>
+<a id="__codelineno-1-68" name="__codelineno-1-68" href="#__codelineno-1-68"></a>    <span class="n">body</span> <span class="o">=</span> <span class="n">raw</span><span class="p">[</span><span class="n">off</span> <span class="o">+</span> <span class="mi">8</span><span class="p">:</span><span class="n">off</span> <span class="o">+</span> <span class="n">block_len</span> <span class="o">-</span> <span class="mi">4</span><span class="p">]</span>
+<a id="__codelineno-1-69" name="__codelineno-1-69" href="#__codelineno-1-69"></a>
+<a id="__codelineno-1-70" name="__codelineno-1-70" href="#__codelineno-1-70"></a>    <span class="c1"># 块类型 0x0A0D0D0A 是 Section Header Block（SHB），用于判断字节序</span>
+<a id="__codelineno-1-71" name="__codelineno-1-71" href="#__codelineno-1-71"></a>    <span class="k">if</span> <span class="n">block_type</span> <span class="o">==</span> <span class="mh">0x0A0D0D0A</span><span class="p">:</span>
+<a id="__codelineno-1-72" name="__codelineno-1-72" href="#__codelineno-1-72"></a>        <span class="c1"># 魔术数字判断大小端：b"\x4d\x3c\x2b\x1a" 表示小端，否则大端</span>
+<a id="__codelineno-1-73" name="__codelineno-1-73" href="#__codelineno-1-73"></a>        <span class="n">endian</span> <span class="o">=</span> <span class="s2">"&lt;"</span> <span class="k">if</span> <span class="n">body</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="sa">b</span><span class="s2">"</span><span class="se">\x4d\x3c\x2b\x1a</span><span class="s2">"</span> <span class="k">else</span> <span class="s2">"&gt;"</span>
+<a id="__codelineno-1-74" name="__codelineno-1-74" href="#__codelineno-1-74"></a>
+<a id="__codelineno-1-75" name="__codelineno-1-75" href="#__codelineno-1-75"></a>    <span class="c1"># 块类型 6 是 Enhanced Packet Block（EPB），包含数据包</span>
+<a id="__codelineno-1-76" name="__codelineno-1-76" href="#__codelineno-1-76"></a>    <span class="k">elif</span> <span class="n">block_type</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+<a id="__codelineno-1-77" name="__codelineno-1-77" href="#__codelineno-1-77"></a>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">body</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">20</span><span class="p">:</span>
+<a id="__codelineno-1-78" name="__codelineno-1-78" href="#__codelineno-1-78"></a>            <span class="c1"># 块选项中的捕获长度（caplen）在固定字段的第三个 int 里</span>
+<a id="__codelineno-1-79" name="__codelineno-1-79" href="#__codelineno-1-79"></a>            <span class="n">caplen</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="n">endian</span> <span class="o">+</span> <span class="s2">"IIIII"</span><span class="p">,</span> <span class="n">body</span><span class="p">[:</span><span class="mi">20</span><span class="p">])[</span><span class="mi">3</span><span class="p">]</span>
+<a id="__codelineno-1-80" name="__codelineno-1-80" href="#__codelineno-1-80"></a>            <span class="c1"># 提取数据包字节</span>
+<a id="__codelineno-1-81" name="__codelineno-1-81" href="#__codelineno-1-81"></a>            <span class="n">pkt</span> <span class="o">=</span> <span class="n">body</span><span class="p">[</span><span class="mi">20</span><span class="p">:</span><span class="mi">20</span> <span class="o">+</span> <span class="n">caplen</span><span class="p">]</span>
+<a id="__codelineno-1-82" name="__codelineno-1-82" href="#__codelineno-1-82"></a>
+<a id="__codelineno-1-83" name="__codelineno-1-83" href="#__codelineno-1-83"></a>            <span class="c1"># 解析 TCP 报文</span>
+<a id="__codelineno-1-84" name="__codelineno-1-84" href="#__codelineno-1-84"></a>            <span class="n">parsed</span> <span class="o">=</span> <span class="n">parse_tcp</span><span class="p">(</span><span class="n">pkt</span><span class="p">)</span>
+<a id="__codelineno-1-85" name="__codelineno-1-85" href="#__codelineno-1-85"></a>            <span class="k">if</span> <span class="n">parsed</span><span class="p">:</span>
+<a id="__codelineno-1-86" name="__codelineno-1-86" href="#__codelineno-1-86"></a>                <span class="n">src</span><span class="p">,</span> <span class="n">dst</span><span class="p">,</span> <span class="n">sport</span><span class="p">,</span> <span class="n">dport</span><span class="p">,</span> <span class="n">payload</span> <span class="o">=</span> <span class="n">parsed</span>
+<a id="__codelineno-1-87" name="__codelineno-1-87" href="#__codelineno-1-87"></a>
+<a id="__codelineno-1-88" name="__codelineno-1-88" href="#__codelineno-1-88"></a>                <span class="c1"># 只取攻击者发往 PLC 102 端口的数据</span>
+<a id="__codelineno-1-89" name="__codelineno-1-89" href="#__codelineno-1-89"></a>                <span class="k">if</span> <span class="n">dport</span> <span class="o">==</span> <span class="mi">102</span> <span class="ow">and</span> <span class="n">payload</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="sa">b</span><span class="s2">"</span><span class="se">\x03\x00</span><span class="s2">"</span><span class="p">):</span>
+<a id="__codelineno-1-90" name="__codelineno-1-90" href="#__codelineno-1-90"></a>                    <span class="c1"># S7Comm Job 包，Read Var 功能，固定长度 31</span>
+<a id="__codelineno-1-91" name="__codelineno-1-91" href="#__codelineno-1-91"></a>                    <span class="k">if</span> <span class="p">(</span>
+<a id="__codelineno-1-92" name="__codelineno-1-92" href="#__codelineno-1-92"></a>                        <span class="nb">len</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">31</span>
+<a id="__codelineno-1-93" name="__codelineno-1-93" href="#__codelineno-1-93"></a>                        <span class="ow">and</span> <span class="n">payload</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">==</span> <span class="mh">0x32</span>   <span class="c1"># 功能码：Read Var</span>
+<a id="__codelineno-1-94" name="__codelineno-1-94" href="#__codelineno-1-94"></a>                        <span class="ow">and</span> <span class="n">payload</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="o">==</span> <span class="mh">0x01</span>   <span class="c1"># 读取变量数量：1</span>
+<a id="__codelineno-1-95" name="__codelineno-1-95" href="#__codelineno-1-95"></a>                        <span class="ow">and</span> <span class="n">payload</span><span class="p">[</span><span class="mi">17</span><span class="p">]</span> <span class="o">==</span> <span class="mh">0x04</span>  <span class="c1"># 数据长度：4 字节</span>
+<a id="__codelineno-1-96" name="__codelineno-1-96" href="#__codelineno-1-96"></a>                    <span class="p">):</span>
+<a id="__codelineno-1-97" name="__codelineno-1-97" href="#__codelineno-1-97"></a>                        <span class="c1"># 提取最后一个字节（读取到的数据）</span>
+<a id="__codelineno-1-98" name="__codelineno-1-98" href="#__codelineno-1-98"></a>                        <span class="n">hidden</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">payload</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<a id="__codelineno-1-99" name="__codelineno-1-99" href="#__codelineno-1-99"></a>
+<a id="__codelineno-1-100" name="__codelineno-1-100" href="#__codelineno-1-100"></a>    <span class="c1"># 移动到下一个块</span>
+<a id="__codelineno-1-101" name="__codelineno-1-101" href="#__codelineno-1-101"></a>    <span class="n">off</span> <span class="o">+=</span> <span class="n">block_len</span>
+<a id="__codelineno-1-102" name="__codelineno-1-102" href="#__codelineno-1-102"></a>
+<a id="__codelineno-1-103" name="__codelineno-1-103" href="#__codelineno-1-103"></a><span class="c1"># 将隐藏数据写入文件</span>
+<a id="__codelineno-1-104" name="__codelineno-1-104" href="#__codelineno-1-104"></a><span class="nb">open</span><span class="p">(</span><span class="s2">"hidden"</span><span class="p">,</span> <span class="s2">"wb"</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">hidden</span><span class="p">)</span>
+<a id="__codelineno-1-105" name="__codelineno-1-105" href="#__codelineno-1-105"></a>
+<a id="__codelineno-1-106" name="__codelineno-1-106" href="#__codelineno-1-106"></a><span class="c1"># 打印恢复信息</span>
+<a id="__codelineno-1-107" name="__codelineno-1-107" href="#__codelineno-1-107"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"hidden length:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">hidden</span><span class="p">))</span>
+<a id="__codelineno-1-108" name="__codelineno-1-108" href="#__codelineno-1-108"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"file header:"</span><span class="p">,</span> <span class="n">hidden</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">hex</span><span class="p">())</span>
+<a id="__codelineno-1-109" name="__codelineno-1-109" href="#__codelineno-1-109"></a>
+<a id="__codelineno-1-110" name="__codelineno-1-110" href="#__codelineno-1-110"></a><span class="c1"># 搜索 flag 并输出</span>
+<a id="__codelineno-1-111" name="__codelineno-1-111" href="#__codelineno-1-111"></a><span class="n">flags</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">rb</span><span class="s2">"flag\{[^}]+\}"</span><span class="p">,</span> <span class="n">hidden</span><span class="p">)</span>
+<a id="__codelineno-1-112" name="__codelineno-1-112" href="#__codelineno-1-112"></a><span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">flags</span><span class="p">:</span>
+<a id="__codelineno-1-113" name="__codelineno-1-113" href="#__codelineno-1-113"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
+</code></pre></div>
+<p>最后得到 flag：<code>flag{50f84daf3a6dfd6a9f20c9f8ef428942}</code></p>
+<h3 id="s7comm_3">被篡改的数据（S7comm 协议）<a class="headerlink" href="#s7comm_3" title="Permanent link">¶</a></h3>
+<p><img alt="" src="https://pic1.imgdb.cn/item/6a36f5672830ce602a50ee0a.png"></p>
+<p>"被大量修改的数据" 对应的写入内容，也就是功能码 <code>0x05</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">struct</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">socket</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># 读取 pcapng 文件</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">pcap</span> <span class="o">=</span> <span class="s2">"/mnt/data/s702(1).pcapng"</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">data</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">pcap</span><span class="p">,</span> <span class="s2">"rb"</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1"># -------- 解析 pcapng 块 --------</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">packets</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="n">off</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="n">endian</span> <span class="o">=</span> <span class="s2">"&lt;"</span>  <span class="c1"># 默认小端</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="k">while</span> <span class="n">off</span> <span class="o">+</span> <span class="mi">12</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    <span class="c1"># 块类型和块总长度（含固定尾）</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    <span class="n">block_type</span><span class="p">,</span> <span class="n">block_len</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="n">endian</span> <span class="o">+</span> <span class="s2">"II"</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="n">off</span><span class="p">:</span><span class="n">off</span><span class="o">+</span><span class="mi">8</span><span class="p">])</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>    <span class="k">if</span> <span class="n">block_len</span> <span class="o">&lt;</span> <span class="mi">12</span> <span class="ow">or</span> <span class="n">off</span> <span class="o">+</span> <span class="n">block_len</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>        <span class="k">break</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>    <span class="n">body</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">off</span><span class="o">+</span><span class="mi">8</span><span class="p">:</span><span class="n">off</span><span class="o">+</span><span class="n">block_len</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span>  <span class="c1"># 排除尾部的块总长度字段</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>    <span class="c1"># Section Header Block (SHB)</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>    <span class="k">if</span> <span class="n">block_type</span> <span class="o">==</span> <span class="mh">0x0A0D0D0A</span><span class="p">:</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>        <span class="c1"># 字节序标记：0x1A2B3C4D 表示大端</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>        <span class="n">endian</span> <span class="o">=</span> <span class="s2">"&gt;"</span> <span class="k">if</span> <span class="n">body</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="sa">b</span><span class="s2">"</span><span class="se">\x1a\x2b\x3c\x4d</span><span class="s2">"</span> <span class="k">else</span> <span class="s2">"&lt;"</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>    <span class="c1"># Enhanced Packet Block (EPB)</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>    <span class="k">elif</span> <span class="n">block_type</span> <span class="o">==</span> <span class="mh">0x00000006</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">body</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">20</span><span class="p">:</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>        <span class="c1"># 接口ID、时间戳高低位、捕获长度、原始长度</span>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>        <span class="n">iface</span><span class="p">,</span> <span class="n">ts_high</span><span class="p">,</span> <span class="n">ts_low</span><span class="p">,</span> <span class="n">cap_len</span><span class="p">,</span> <span class="n">orig_len</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>            <span class="n">endian</span> <span class="o">+</span> <span class="s2">"IIIII"</span><span class="p">,</span> <span class="n">body</span><span class="p">[:</span><span class="mi">20</span><span class="p">]</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>        <span class="p">)</span>
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>        <span class="c1"># 提取实际捕获的报文数据</span>
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>        <span class="n">packets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">body</span><span class="p">[</span><span class="mi">20</span><span class="p">:</span><span class="mi">20</span><span class="o">+</span><span class="n">cap_len</span><span class="p">])</span>
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>
+<a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a>    <span class="n">off</span> <span class="o">+=</span> <span class="n">block_len</span>
+<a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a>
+<a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a>
+<a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_tcp_payload</span><span class="p">(</span><span class="n">pkt</span><span class="p">):</span>
+<a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a><span class="w">    </span><span class="sd">"""从原始以太网帧中提取 TCP 载荷及四元组"""</span>
+<a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">pkt</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">54</span><span class="p">:</span>  <span class="c1"># 最小长度：以太网14 + IP20 + TCP20</span>
+<a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a>        <span class="k">return</span> <span class="kc">None</span>
+<a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a>
+<a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a>    <span class="c1"># 以太网类型必须为 IPv4 (0x0800)</span>
+<a id="__codelineno-2-45" name="__codelineno-2-45" href="#__codelineno-2-45"></a>    <span class="k">if</span> <span class="n">pkt</span><span class="p">[</span><span class="mi">12</span><span class="p">:</span><span class="mi">14</span><span class="p">]</span> <span class="o">!=</span> <span class="sa">b</span><span class="s2">"</span><span class="se">\x08\x00</span><span class="s2">"</span><span class="p">:</span>
+<a id="__codelineno-2-46" name="__codelineno-2-46" href="#__codelineno-2-46"></a>        <span class="k">return</span> <span class="kc">None</span>
+<a id="__codelineno-2-47" name="__codelineno-2-47" href="#__codelineno-2-47"></a>
+<a id="__codelineno-2-48" name="__codelineno-2-48" href="#__codelineno-2-48"></a>    <span class="c1"># IP 协议字段必须为 TCP (6)</span>
+<a id="__codelineno-2-49" name="__codelineno-2-49" href="#__codelineno-2-49"></a>    <span class="k">if</span> <span class="n">pkt</span><span class="p">[</span><span class="mi">23</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">6</span><span class="p">:</span>
+<a id="__codelineno-2-50" name="__codelineno-2-50" href="#__codelineno-2-50"></a>        <span class="k">return</span> <span class="kc">None</span>
+<a id="__codelineno-2-51" name="__codelineno-2-51" href="#__codelineno-2-51"></a>
+<a id="__codelineno-2-52" name="__codelineno-2-52" href="#__codelineno-2-52"></a>    <span class="c1"># IP 头长度（IHL）及偏移</span>
+<a id="__codelineno-2-53" name="__codelineno-2-53" href="#__codelineno-2-53"></a>    <span class="n">ihl</span> <span class="o">=</span> <span class="p">(</span><span class="n">pkt</span><span class="p">[</span><span class="mi">14</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x0F</span><span class="p">)</span> <span class="o">*</span> <span class="mi">4</span>
+<a id="__codelineno-2-54" name="__codelineno-2-54" href="#__codelineno-2-54"></a>    <span class="n">ip_start</span> <span class="o">=</span> <span class="mi">14</span>
+<a id="__codelineno-2-55" name="__codelineno-2-55" href="#__codelineno-2-55"></a>    <span class="n">tcp_start</span> <span class="o">=</span> <span class="n">ip_start</span> <span class="o">+</span> <span class="n">ihl</span>
+<a id="__codelineno-2-56" name="__codelineno-2-56" href="#__codelineno-2-56"></a>
+<a id="__codelineno-2-57" name="__codelineno-2-57" href="#__codelineno-2-57"></a>    <span class="c1"># 源IP、目的IP</span>
+<a id="__codelineno-2-58" name="__codelineno-2-58" href="#__codelineno-2-58"></a>    <span class="n">src</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">inet_ntoa</span><span class="p">(</span><span class="n">pkt</span><span class="p">[</span><span class="n">ip_start</span><span class="o">+</span><span class="mi">12</span><span class="p">:</span><span class="n">ip_start</span><span class="o">+</span><span class="mi">16</span><span class="p">])</span>
+<a id="__codelineno-2-59" name="__codelineno-2-59" href="#__codelineno-2-59"></a>    <span class="n">dst</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">inet_ntoa</span><span class="p">(</span><span class="n">pkt</span><span class="p">[</span><span class="n">ip_start</span><span class="o">+</span><span class="mi">16</span><span class="p">:</span><span class="n">ip_start</span><span class="o">+</span><span class="mi">20</span><span class="p">])</span>
+<a id="__codelineno-2-60" name="__codelineno-2-60" href="#__codelineno-2-60"></a>
+<a id="__codelineno-2-61" name="__codelineno-2-61" href="#__codelineno-2-61"></a>    <span class="n">tcp</span> <span class="o">=</span> <span class="n">pkt</span><span class="p">[</span><span class="n">tcp_start</span><span class="p">:]</span>
+<a id="__codelineno-2-62" name="__codelineno-2-62" href="#__codelineno-2-62"></a>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tcp</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">:</span>
+<a id="__codelineno-2-63" name="__codelineno-2-63" href="#__codelineno-2-63"></a>        <span class="k">return</span> <span class="kc">None</span>
+<a id="__codelineno-2-64" name="__codelineno-2-64" href="#__codelineno-2-64"></a>
+<a id="__codelineno-2-65" name="__codelineno-2-65" href="#__codelineno-2-65"></a>    <span class="c1"># 源端口、目的端口</span>
+<a id="__codelineno-2-66" name="__codelineno-2-66" href="#__codelineno-2-66"></a>    <span class="n">sport</span><span class="p">,</span> <span class="n">dport</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="s2">"!HH"</span><span class="p">,</span> <span class="n">tcp</span><span class="p">[:</span><span class="mi">4</span><span class="p">])</span>
+<a id="__codelineno-2-67" name="__codelineno-2-67" href="#__codelineno-2-67"></a>    <span class="c1"># TCP 数据偏移</span>
+<a id="__codelineno-2-68" name="__codelineno-2-68" href="#__codelineno-2-68"></a>    <span class="n">data_offset</span> <span class="o">=</span> <span class="p">(</span><span class="n">tcp</span><span class="p">[</span><span class="mi">12</span><span class="p">]</span> <span class="o">&gt;&gt;</span> <span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="mi">4</span>
+<a id="__codelineno-2-69" name="__codelineno-2-69" href="#__codelineno-2-69"></a>    <span class="n">payload</span> <span class="o">=</span> <span class="n">tcp</span><span class="p">[</span><span class="n">data_offset</span><span class="p">:]</span>
+<a id="__codelineno-2-70" name="__codelineno-2-70" href="#__codelineno-2-70"></a>
+<a id="__codelineno-2-71" name="__codelineno-2-71" href="#__codelineno-2-71"></a>    <span class="k">return</span> <span class="n">src</span><span class="p">,</span> <span class="n">sport</span><span class="p">,</span> <span class="n">dst</span><span class="p">,</span> <span class="n">dport</span><span class="p">,</span> <span class="n">payload</span>
+<a id="__codelineno-2-72" name="__codelineno-2-72" href="#__codelineno-2-72"></a>
+<a id="__codelineno-2-73" name="__codelineno-2-73" href="#__codelineno-2-73"></a>
+<a id="__codelineno-2-74" name="__codelineno-2-74" href="#__codelineno-2-74"></a><span class="k">def</span><span class="w"> </span><span class="nf">parse_s7_write_values</span><span class="p">(</span><span class="n">payload</span><span class="p">):</span>
+<a id="__codelineno-2-75" name="__codelineno-2-75" href="#__codelineno-2-75"></a><span class="w">    </span><span class="sd">"""从 TCP 载荷中提取 S7 写变量操作的写入值（每次写1字节）"""</span>
+<a id="__codelineno-2-76" name="__codelineno-2-76" href="#__codelineno-2-76"></a>    <span class="n">values</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-2-77" name="__codelineno-2-77" href="#__codelineno-2-77"></a>    <span class="n">off</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-2-78" name="__codelineno-2-78" href="#__codelineno-2-78"></a>
+<a id="__codelineno-2-79" name="__codelineno-2-79" href="#__codelineno-2-79"></a>    <span class="k">while</span> <span class="n">off</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">payload</span><span class="p">):</span>
+<a id="__codelineno-2-80" name="__codelineno-2-80" href="#__codelineno-2-80"></a>        <span class="c1"># TPKT 头部：版本 0x03，保留 0x00，总长度</span>
+<a id="__codelineno-2-81" name="__codelineno-2-81" href="#__codelineno-2-81"></a>        <span class="k">if</span> <span class="n">payload</span><span class="p">[</span><span class="n">off</span><span class="p">:</span><span class="n">off</span><span class="o">+</span><span class="mi">2</span><span class="p">]</span> <span class="o">!=</span> <span class="sa">b</span><span class="s2">"</span><span class="se">\x03\x00</span><span class="s2">"</span><span class="p">:</span>
+<a id="__codelineno-2-82" name="__codelineno-2-82" href="#__codelineno-2-82"></a>            <span class="k">break</span>
+<a id="__codelineno-2-83" name="__codelineno-2-83" href="#__codelineno-2-83"></a>
+<a id="__codelineno-2-84" name="__codelineno-2-84" href="#__codelineno-2-84"></a>        <span class="n">tpkt_len</span> <span class="o">=</span> <span class="nb">int</span><span class="o">.</span><span class="n">from_bytes</span><span class="p">(</span><span class="n">payload</span><span class="p">[</span><span class="n">off</span><span class="o">+</span><span class="mi">2</span><span class="p">:</span><span class="n">off</span><span class="o">+</span><span class="mi">4</span><span class="p">],</span> <span class="s2">"big"</span><span class="p">)</span>
+<a id="__codelineno-2-85" name="__codelineno-2-85" href="#__codelineno-2-85"></a>        <span class="n">tpkt</span> <span class="o">=</span> <span class="n">payload</span><span class="p">[</span><span class="n">off</span><span class="p">:</span><span class="n">off</span><span class="o">+</span><span class="n">tpkt_len</span><span class="p">]</span>
+<a id="__codelineno-2-86" name="__codelineno-2-86" href="#__codelineno-2-86"></a>
+<a id="__codelineno-2-87" name="__codelineno-2-87" href="#__codelineno-2-87"></a>        <span class="c1"># COTP 数据 TPDU：DT Data (0x0f) 且最后字节 0x80 表示数据</span>
+<a id="__codelineno-2-88" name="__codelineno-2-88" href="#__codelineno-2-88"></a>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tpkt</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">17</span> <span class="ow">and</span> <span class="n">tpkt</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span> <span class="o">==</span> <span class="sa">b</span><span class="s2">"</span><span class="se">\x02\xf0\x80</span><span class="s2">"</span><span class="p">:</span>
+<a id="__codelineno-2-89" name="__codelineno-2-89" href="#__codelineno-2-89"></a>            <span class="n">s7</span> <span class="o">=</span> <span class="n">tpkt</span><span class="p">[</span><span class="mi">7</span><span class="p">:]</span>
+<a id="__codelineno-2-90" name="__codelineno-2-90" href="#__codelineno-2-90"></a>
+<a id="__codelineno-2-91" name="__codelineno-2-91" href="#__codelineno-2-91"></a>            <span class="c1"># S7 协议标识 (0x32)</span>
+<a id="__codelineno-2-92" name="__codelineno-2-92" href="#__codelineno-2-92"></a>            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s7</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">10</span> <span class="ow">and</span> <span class="n">s7</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mh">0x32</span><span class="p">:</span>
+<a id="__codelineno-2-93" name="__codelineno-2-93" href="#__codelineno-2-93"></a>                <span class="n">rosctr</span> <span class="o">=</span> <span class="n">s7</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># 报文类型</span>
+<a id="__codelineno-2-94" name="__codelineno-2-94" href="#__codelineno-2-94"></a>
+<a id="__codelineno-2-95" name="__codelineno-2-95" href="#__codelineno-2-95"></a>                <span class="c1"># 0x01 = Job（请求）</span>
+<a id="__codelineno-2-96" name="__codelineno-2-96" href="#__codelineno-2-96"></a>                <span class="k">if</span> <span class="n">rosctr</span> <span class="o">==</span> <span class="mh">0x01</span><span class="p">:</span>
+<a id="__codelineno-2-97" name="__codelineno-2-97" href="#__codelineno-2-97"></a>                    <span class="c1"># 参数长度、数据长度</span>
+<a id="__codelineno-2-98" name="__codelineno-2-98" href="#__codelineno-2-98"></a>                    <span class="n">param_len</span> <span class="o">=</span> <span class="nb">int</span><span class="o">.</span><span class="n">from_bytes</span><span class="p">(</span><span class="n">s7</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="mi">8</span><span class="p">],</span> <span class="s2">"big"</span><span class="p">)</span>
+<a id="__codelineno-2-99" name="__codelineno-2-99" href="#__codelineno-2-99"></a>                    <span class="n">data_len</span> <span class="o">=</span> <span class="nb">int</span><span class="o">.</span><span class="n">from_bytes</span><span class="p">(</span><span class="n">s7</span><span class="p">[</span><span class="mi">8</span><span class="p">:</span><span class="mi">10</span><span class="p">],</span> <span class="s2">"big"</span><span class="p">)</span>
+<a id="__codelineno-2-100" name="__codelineno-2-100" href="#__codelineno-2-100"></a>
+<a id="__codelineno-2-101" name="__codelineno-2-101" href="#__codelineno-2-101"></a>                    <span class="n">param</span> <span class="o">=</span> <span class="n">s7</span><span class="p">[</span><span class="mi">10</span><span class="p">:</span><span class="mi">10</span><span class="o">+</span><span class="n">param_len</span><span class="p">]</span>
+<a id="__codelineno-2-102" name="__codelineno-2-102" href="#__codelineno-2-102"></a>                    <span class="n">d</span> <span class="o">=</span> <span class="n">s7</span><span class="p">[</span><span class="mi">10</span><span class="o">+</span><span class="n">param_len</span><span class="p">:</span><span class="mi">10</span><span class="o">+</span><span class="n">param_len</span><span class="o">+</span><span class="n">data_len</span><span class="p">]</span>
+<a id="__codelineno-2-103" name="__codelineno-2-103" href="#__codelineno-2-103"></a>
+<a id="__codelineno-2-104" name="__codelineno-2-104" href="#__codelineno-2-104"></a>                    <span class="c1"># 功能码 0x05 = 写变量</span>
+<a id="__codelineno-2-105" name="__codelineno-2-105" href="#__codelineno-2-105"></a>                    <span class="k">if</span> <span class="n">param</span> <span class="ow">and</span> <span class="n">param</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mh">0x05</span><span class="p">:</span>
+<a id="__codelineno-2-106" name="__codelineno-2-106" href="#__codelineno-2-106"></a>                        <span class="c1"># 本题每次写入 1 字节，S7 写数据前 4 字节为：</span>
+<a id="__codelineno-2-107" name="__codelineno-2-107" href="#__codelineno-2-107"></a>                        <span class="c1"># 保留/传输大小/位长度</span>
+<a id="__codelineno-2-108" name="__codelineno-2-108" href="#__codelineno-2-108"></a>                        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">5</span><span class="p">:</span>
+<a id="__codelineno-2-109" name="__codelineno-2-109" href="#__codelineno-2-109"></a>                            <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>  <span class="c1"># 提取写入值</span>
+<a id="__codelineno-2-110" name="__codelineno-2-110" href="#__codelineno-2-110"></a>
+<a id="__codelineno-2-111" name="__codelineno-2-111" href="#__codelineno-2-111"></a>        <span class="n">off</span> <span class="o">+=</span> <span class="n">tpkt_len</span>
+<a id="__codelineno-2-112" name="__codelineno-2-112" href="#__codelineno-2-112"></a>
+<a id="__codelineno-2-113" name="__codelineno-2-113" href="#__codelineno-2-113"></a>    <span class="k">return</span> <span class="n">values</span>
+<a id="__codelineno-2-114" name="__codelineno-2-114" href="#__codelineno-2-114"></a>
+<a id="__codelineno-2-115" name="__codelineno-2-115" href="#__codelineno-2-115"></a>
+<a id="__codelineno-2-116" name="__codelineno-2-116" href="#__codelineno-2-116"></a><span class="c1"># 累积所有写入值，拼接成字节序列</span>
+<a id="__codelineno-2-117" name="__codelineno-2-117" href="#__codelineno-2-117"></a><span class="n">seq</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">""</span>
+<a id="__codelineno-2-118" name="__codelineno-2-118" href="#__codelineno-2-118"></a>
+<a id="__codelineno-2-119" name="__codelineno-2-119" href="#__codelineno-2-119"></a><span class="k">for</span> <span class="n">pkt</span> <span class="ow">in</span> <span class="n">packets</span><span class="p">:</span>
+<a id="__codelineno-2-120" name="__codelineno-2-120" href="#__codelineno-2-120"></a>    <span class="n">item</span> <span class="o">=</span> <span class="n">get_tcp_payload</span><span class="p">(</span><span class="n">pkt</span><span class="p">)</span>
+<a id="__codelineno-2-121" name="__codelineno-2-121" href="#__codelineno-2-121"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">item</span><span class="p">:</span>
+<a id="__codelineno-2-122" name="__codelineno-2-122" href="#__codelineno-2-122"></a>        <span class="k">continue</span>
+<a id="__codelineno-2-123" name="__codelineno-2-123" href="#__codelineno-2-123"></a>
+<a id="__codelineno-2-124" name="__codelineno-2-124" href="#__codelineno-2-124"></a>    <span class="n">src</span><span class="p">,</span> <span class="n">sport</span><span class="p">,</span> <span class="n">dst</span><span class="p">,</span> <span class="n">dport</span><span class="p">,</span> <span class="n">payload</span> <span class="o">=</span> <span class="n">item</span>
+<a id="__codelineno-2-125" name="__codelineno-2-125" href="#__codelineno-2-125"></a>
+<a id="__codelineno-2-126" name="__codelineno-2-126" href="#__codelineno-2-126"></a>    <span class="c1"># 只看上位机 (192.168.88.2) 发给 PLC (192.168.88.23) 端口 102 的 S7 写入</span>
+<a id="__codelineno-2-127" name="__codelineno-2-127" href="#__codelineno-2-127"></a>    <span class="k">if</span> <span class="n">src</span> <span class="o">==</span> <span class="s2">"192.168.88.2"</span> <span class="ow">and</span> <span class="n">dst</span> <span class="o">==</span> <span class="s2">"192.168.88.23"</span> <span class="ow">and</span> <span class="n">dport</span> <span class="o">==</span> <span class="mi">102</span><span class="p">:</span>
+<a id="__codelineno-2-128" name="__codelineno-2-128" href="#__codelineno-2-128"></a>        <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">parse_s7_write_values</span><span class="p">(</span><span class="n">payload</span><span class="p">):</span>
+<a id="__codelineno-2-129" name="__codelineno-2-129" href="#__codelineno-2-129"></a>            <span class="n">seq</span> <span class="o">+=</span> <span class="n">v</span>
+<a id="__codelineno-2-130" name="__codelineno-2-130" href="#__codelineno-2-130"></a>
+<a id="__codelineno-2-131" name="__codelineno-2-131" href="#__codelineno-2-131"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"extracted length:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq</span><span class="p">))</span>
+<a id="__codelineno-2-132" name="__codelineno-2-132" href="#__codelineno-2-132"></a>
+<a id="__codelineno-2-133" name="__codelineno-2-133" href="#__codelineno-2-133"></a><span class="c1"># 在累积的序列中搜索 flag{...} 模式</span>
+<a id="__codelineno-2-134" name="__codelineno-2-134" href="#__codelineno-2-134"></a><span class="n">m</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">rb</span><span class="s2">"flag\{[^}]+\}"</span><span class="p">,</span> <span class="n">seq</span><span class="p">)</span>
+<a id="__codelineno-2-135" name="__codelineno-2-135" href="#__codelineno-2-135"></a><span class="k">if</span> <span class="n">m</span><span class="p">:</span>
+<a id="__codelineno-2-136" name="__codelineno-2-136" href="#__codelineno-2-136"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
+<a id="__codelineno-2-137" name="__codelineno-2-137" href="#__codelineno-2-137"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-2-138" name="__codelineno-2-138" href="#__codelineno-2-138"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"not found"</span><span class="p">)</span>
+</code></pre></div>
+<p>得到 <code>flag{931377ad4a}</code></p></div>
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+  
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../../hc-misc/file_sign/"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 附:文件签名表"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        附:文件签名表
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="../COTP%20%E5%8D%8F%E8%AE%AE/"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: COTP 协议"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        COTP 协议
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+  <h2 id="__comments">评论</h2>
+
+  <!-- giscus：主题与外壳 hc-theme 同步（初始 + 切换时 postMessage） -->
+  <script src="https://giscus.app/client.js"
+    data-repo="ProbiusOfficial/Hello-CTF"
+    data-repo-id="R_kgDOJXX6hg"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOJXX6hs4CXmuV"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script>
+  <script>
+    (function () {
+      var script = document.querySelector("script[src*=giscus]");
+      function currentTheme() {
+        var t = null;
+        try { t = localStorage.getItem("hc-theme"); } catch (e) {}
+        return t === "dark" ? "dark" : "light";
+      }
+      /* 初始主题：giscus 加载前写入 data-theme */
+      script.setAttribute("data-theme", currentTheme());
+      /* 外壳主题切换 → 通知 giscus iframe 换肤（由 shell.js 广播 hc-theme-change） */
+      document.addEventListener("hc-theme-change", function (e) {
+        var theme = e.detail === "dark" ? "dark" : "light";
+        var iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: theme } } },
+            "https://giscus.app"
+          );
+        }
+      });
+    })();
+  </script>
+
+  <!-- 评论区显示优化 -->
+  <style>
+    #__comments {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line, #e6eaf1);
+      font-size: 1rem;
+    }
+    .giscus, .giscus-frame { width: 100%; }
+    .giscus-frame { border: none; color-scheme: light; }
+    [data-md-color-scheme="slate"] .giscus-frame { color-scheme: dark; }
+  </style>
+
+
+<!-- 才懒得给你加空格呢 给你塞个 Pangu.js 哼！ -->
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pangu.simple@1.0.5/dist/browser/pangu.js"></script>
+  <script>
+    pangu.spacingPage();
+  </script>
+</head>
+      </article>
+      
+        <aside class="hc-toc">
+          <div class="hc-toc-cap">ON THIS PAGE</div>
+          
+  <ul>
+    
+      <li>
+        <a href="#s7comm">S7comm 协议</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#_1">概述</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_2">报文结构</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_3">通信过程</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_4">核心功能码</a>
+        
+      </li>
+    
+      <li>
+        <a href="#_5">实战案例</a>
+        
+  <ul>
+    
+      <li>
+        <a href="#s7-s7comm">S7 协议恶意攻击分析（S7comm 协议）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#s7comm_1">上位机通讯异常分析（S7comm 协议）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#s7comm_2">工控协议数据分析（S7comm 协议）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#s7-s7comm_1">异常的 S7 数据（S7comm 协议）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#fuzzs7comm">黑客的 Fuzz（S7comm 协议）</a>
+        
+      </li>
+    
+      <li>
+        <a href="#s7comm_3">被篡改的数据（S7comm 协议）</a>
+        
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+      </li>
+    
+  </ul>
+
+        </aside>
+      
+    </div>
+    <footer class="hc-footer">
+      <span>© 2026 探姬 · Hello CTF</span>
+      <span class="links">
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/ProbiusOfficial/Hello-CTF/pulls" target="_blank" rel="noopener">参与共建</a>
+        <a href="../../sidebar/feedback.html">反馈与群聊</a>
+      </span>
+    </footer>
+  </div>
+
+  <!-- 站点原有 extra_javascript（baidu_SEO / katex / statis / FullCalendar 等） -->
+  
+    <script src="../../javascripts/baidu_SEO.js"></script>
+  
+    <script src="../../javascripts/katex.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  
+    <script src="../../javascripts/statis.js"></script>
+  
+    <script src="../../javascripts/FullCalendar.js"></script>
+  
+    <script src="../../shell/feedback-widget.js"></script>
+  
+
+  <!-- mermaid（material bundle 移除后自行加载） -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.mermaid) return;
+      document.querySelectorAll("pre.mermaid").forEach(function (el) {
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = el.textContent;
+        el.replaceWith(div);
+      });
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+        mermaid.run({ querySelector: ".mermaid" });
+      } catch (e) {}
+    });
+  </script>
+
+  <!-- 代码复制按钮（material bundle 移除后自实现） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".md-typeset pre").forEach(function (pre) {
+        if (pre.querySelector(".hc-copy") || pre.classList.contains("mermaid")) return;
+        var btn = document.createElement("button");
+        btn.className = "hc-copy";
+        btn.textContent = "复制";
+        btn.onclick = function () {
+          var text = pre.innerText.replace(/^复制\n/, "");
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = "已复制";
+            setTimeout(function () { btn.textContent = "复制"; }, 1500);
+          });
+        };
+        pre.appendChild(btn);
+      });
+    });
+  </script>
+
+  <!-- TOC 滚动高亮 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var links = Array.from(document.querySelectorAll(".hc-toc a"));
+      if (!links.length) return;
+      var map = links.map(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+        return el ? { a: a, el: el } : null;
+      }).filter(Boolean);
+      function spy() {
+        var current = null;
+        map.forEach(function (m) { if (m.el.getBoundingClientRect().top <= 80) current = m; });
+        links.forEach(function (a) { a.classList.remove("on"); });
+        if (current) current.a.classList.add("on");
+      }
+      document.addEventListener("scroll", spy, { passive: true });
+      spy();
+    });
+  </script>
+
+  <!-- 顶部导航下拉：fixed 定位避开 overflow 裁剪 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".tn-item").forEach(function (item) {
+        var drop = item.querySelector(".tn-drop");
+        if (!drop) return;
+        item.addEventListener("mouseenter", function () {
+          var r = item.getBoundingClientRect();
+          drop.style.top = r.bottom + "px";
+          var left = Math.min(r.left, window.innerWidth - 240);
+          drop.style.left = Math.max(10, left) + "px";
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>
